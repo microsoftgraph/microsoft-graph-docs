@@ -2,7 +2,7 @@
 title: "Get attachment"
 description: "Read the properties and relationships of an attachment, attached to an event, "
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

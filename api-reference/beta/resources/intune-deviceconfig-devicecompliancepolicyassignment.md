@@ -1,7 +1,7 @@
 ---
 title: "deviceCompliancePolicyAssignment resource type"
 description: "Device compliance policy assignment."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

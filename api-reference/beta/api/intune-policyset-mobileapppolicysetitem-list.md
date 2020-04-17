@@ -1,7 +1,7 @@
 ---
 title: "List mobileAppPolicySetItems"
 description: "List properties and relationships of the mobileAppPolicySetItem objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -85,8 +85,6 @@ Content-Length: 687
   ]
 }
 ```
-
-
 
 
 

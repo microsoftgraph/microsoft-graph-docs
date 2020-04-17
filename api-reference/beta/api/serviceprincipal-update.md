@@ -3,8 +3,8 @@ title: "Update serviceprincipal"
 description: "Update the properties of serviceprincipal object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "sureshja"
 ---
 
 # Update serviceprincipal

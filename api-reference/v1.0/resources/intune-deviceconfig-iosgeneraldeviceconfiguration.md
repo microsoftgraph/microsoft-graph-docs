@@ -1,7 +1,7 @@
 ---
 title: "iosGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iosGeneralDeviceConfiguration resource."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -409,6 +409,9 @@ Here is a JSON representation of the resource.
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
+
+
+
 
 
 

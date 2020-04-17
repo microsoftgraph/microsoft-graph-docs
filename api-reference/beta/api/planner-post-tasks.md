@@ -67,7 +67,7 @@ Content-length: 285
       "@odata.type": "#microsoft.graph.plannerAssignment",
       "orderHint": " !"
     }
-  },
+  }
 }
 ```
 # [JavaScript](#tab/javascript)

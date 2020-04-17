@@ -2,7 +2,7 @@
 title: "List groups"
 description: "List all the groups available in an organization, including but not limited to Office 365 Groups."
 localization_priority: Priority
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -10,6 +10,7 @@ doc_type: apiPageType
 # List groups
 
 Namespace: microsoft.graph
+
 List all the groups in an organization, including but not limited to Office 365 Groups. 
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.

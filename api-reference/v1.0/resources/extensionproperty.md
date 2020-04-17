@@ -2,7 +2,7 @@
 title: "extensionProperty resource type"
 description: "Represents a directory extension"
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---

@@ -1,9 +1,9 @@
 ---
 title: "Create user"
 description: "Create a new user."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 

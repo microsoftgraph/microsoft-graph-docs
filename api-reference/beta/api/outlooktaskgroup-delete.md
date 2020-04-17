@@ -1,7 +1,7 @@
 ---
 title: "Delete outlookTaskGroup"
 description: "Delete the specified outlookTaskGroup."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

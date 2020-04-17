@@ -1,7 +1,7 @@
 ---
 title: "Update defaultManagedAppProtection"
 description: "Update the properties of a defaultManagedAppProtection object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -371,8 +371,6 @@ Content-Length: 4695
   "appActionIfAndroidDeviceModelNotAllowed": "wipe"
 }
 ```
-
-
 
 
 

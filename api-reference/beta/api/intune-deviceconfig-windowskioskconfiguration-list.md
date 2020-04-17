@@ -1,7 +1,7 @@
 ---
 title: "List windowsKioskConfigurations"
 description: "List properties and relationships of the windowsKioskConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -153,8 +153,6 @@ Content-Length: 3366
   ]
 }
 ```
-
-
 
 
 

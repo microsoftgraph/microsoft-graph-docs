@@ -214,10 +214,6 @@ time, so it is important that all apps be able to handle the [basic error codes]
 | **virusSuspicious**                | This document is suspicious and may have a virus.
 | **zeroOrFewerResultsRequested**    | Zero or fewer results requested.
 
-<!-- ##Additional Resources##
-
-- [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
 
 <!-- {
   "type": "#page.annotation",

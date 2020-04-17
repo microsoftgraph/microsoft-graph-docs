@@ -3,8 +3,8 @@ title: "extensionSchemaProperty resource type"
 description: "Use the **extensionSchemaProperty** resource to define a property's name and its type, as part of a schemaExtension definition."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "keylimesoda"
 ---
 
 # extensionSchemaProperty resource type

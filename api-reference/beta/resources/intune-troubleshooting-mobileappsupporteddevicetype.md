@@ -1,7 +1,7 @@
 ---
 title: "mobileAppSupportedDeviceType resource type"
 description: "Device properties"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "Create androidCompliancePolicy"
 description: "Create a new androidCompliancePolicy object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -155,6 +155,8 @@ Content-Length: 1331
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
 
 
 

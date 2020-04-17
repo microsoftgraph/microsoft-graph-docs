@@ -1,9 +1,9 @@
 ---
 title: "List contactFolders"
 description: "Get the contact folder collection in the default Contacts folder of the signed-in user."
-author: "dkershaw10"
+author: "kevinbellinger"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

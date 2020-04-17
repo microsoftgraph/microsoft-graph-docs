@@ -1,7 +1,7 @@
 ---
 title: "Create deviceHealthScript"
 description: "Create a new deviceHealthScript object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -125,8 +125,6 @@ Content-Length: 747
   "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
-
 
 
 

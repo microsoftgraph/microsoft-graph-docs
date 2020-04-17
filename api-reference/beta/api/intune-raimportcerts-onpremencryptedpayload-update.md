@@ -1,7 +1,7 @@
 ---
 title: "Update onPremEncryptedPayload"
 description: "Update the properties of a onPremEncryptedPayload object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -127,8 +127,6 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
-
-
 
 
 

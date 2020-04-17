@@ -1,7 +1,7 @@
 ---
 title: "Update administrativeunit"
 description: "Update the properties of an administrativeUnit object."
-author: "davidmu1"
+author: "anandyadavMSFT"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

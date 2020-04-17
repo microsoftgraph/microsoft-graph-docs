@@ -2,7 +2,7 @@
 title: "tokenLifetimePolicy resource type"
 description: "Represents a policy that can control the lifetime of an access token issued by Azure Active Directory."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---

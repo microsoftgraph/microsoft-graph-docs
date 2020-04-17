@@ -73,5 +73,3 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection resource collection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows information protection store app](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Windows information protection wipe action](intune-mam-windowsinformationprotectionwipeaction.md)
-
-

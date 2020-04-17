@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationSettingState resource type"
 description: "Device Configuration Setting State for a given device."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -32,6 +32,7 @@ Device Configuration Setting State for a given device.
 |userPrincipalName|String|UserPrincipalName.|
 |sources|[settingSource](../resources/intune-deviceconfig-settingsource.md) collection|Contributing policies|
 |currentValue|String|Current value of setting on device|
+|settingInstanceId|String|SettingInstanceId|
 
 ## Relationships
 None
@@ -63,7 +64,8 @@ Here is a JSON representation of the resource.
       "displayName": "String"
     }
   ],
-  "currentValue": "String"
+  "currentValue": "String",
+  "settingInstanceId": "String"
 }
 ```
 

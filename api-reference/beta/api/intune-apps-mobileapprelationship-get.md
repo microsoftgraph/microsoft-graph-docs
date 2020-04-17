@@ -1,7 +1,7 @@
 ---
 title: "Get mobileAppRelationship"
 description: "Read properties and relationships of the mobileAppRelationship object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -74,8 +74,6 @@ Content-Length: 226
   }
 }
 ```
-
-
 
 
 

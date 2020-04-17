@@ -1,7 +1,7 @@
 ---
 title: "iosEduCertificateSettings resource type"
 description: "Trusted Root and PFX certificates for iOS EDU."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

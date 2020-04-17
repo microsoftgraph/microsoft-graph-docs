@@ -28,7 +28,8 @@
       href: /graph/paging?context=graph/api/1.0
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/1.0
-    - name: Batch requests
+    - name: Batching
+      displayName: Batch requests
       href: /graph/json-batching?context=graph/api/1.0
     - name: Throttling
       href: /graph/throttling?context=graph/api/1.0
@@ -41,8 +42,8 @@
         href: /graph/tutorials/change-notifications
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/1.0
-    - name: Track changes
-      displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users
+    - name: Change tracking
+      displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
       items:
       - name: Overview
         href: /graph/delta-query-overview?context=graph/api/1.0
@@ -720,6 +721,15 @@
           href: api/calendargroup-list-calendars.md
         - name: Create calendar in calendar group
           href: api/calendargroup-post-calendars.md
+      - name: Calendar permission
+        href: resources/calendarpermission.md
+        items:
+        - name: Get
+          href: api/calendarpermission-get.md
+        - name: Update
+          href: api/calendarpermission-update.md
+        - name: Delete
+          href: api/calendarpermission-delete.md
       - name: Categories
         href: resources/outlookcategory.md
         items:
@@ -800,6 +810,10 @@
           href: api/call-unmute.md
         - name: Mute application
           href: api/call-mute.md
+        - name: Update recording status
+          href: api/call-updaterecordingstatus.md
+        - name: Log teleconference device quality data
+          href: api/call-logteleconferencedevicequality.md
       - name: Online meeting
         href: resources/onlinemeeting.md
         items:
@@ -3217,6 +3231,8 @@
           href: api/drive-sharedwithme.md
         - name: Get special folder
           href: api/drive-get-specialfolder.md
+        - name: List followed items
+          href: api/drive-list-following.md
       - name: Drive items
         href: resources/driveitem.md
         items:
@@ -3226,6 +3242,10 @@
           href: api/driveitem-get.md
         - name: Get thumbnails
           href: api/driveitem-list-thumbnails.md
+        - name: Check in files
+          href: api/driveitem-checkin.md
+        - name: Check out files
+          href: api/driveitem-checkout.md 
         - name: Create folder
           href: api/driveitem-post-children.md
         - name: Update item
@@ -3250,6 +3270,10 @@
           href: api/driveitem-delta.md
         - name: List versions
           href: api/driveitem-list-versions.md
+        - name: Follow item
+          href: api/driveitem-follow.md
+        - name: Unfollow item
+          href: api/driveitem-unfollow.md
         - name: Preview item
           href: api/driveitem-preview.md
         - name: Get item analytics
@@ -3261,6 +3285,8 @@
           href: api/driveitem-createlink.md
         - name: Use sharing links
           href: api/shares-get.md
+        - name: Grant access to sharing link
+          href: api/permission-grant.md
         - name: List permissions
           href: api/driveitem-list-permissions.md
         - name: Add permissions
@@ -3289,6 +3315,8 @@
           href: api/application-update.md
         - name: Delete application
           href: api/application-delete.md
+        - name: Get delta
+          href: api/application-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: Get deleted application
@@ -3313,6 +3341,18 @@
           href: api/application-post-owners.md
         - name: Remove owner
           href: api/application-delete-owners.md
+        - name: Add token issuance policy
+          href: api/application-post-tokenissuancepolicies.md
+        - name: List token issuance policies
+          href: api/application-list-tokenissuancepolicies.md
+        - name: Remove token issuance policy
+          href: api/application-delete-tokenissuancepolicies.md
+        - name: Add token lifetime policy
+          href: api/application-post-tokenlifetimepolicies.md
+        - name: List token lifetime policies
+          href: api/application-list-tokenlifetimepolicies.md
+        - name: Remove token lifetime policy
+          href: api/application-delete-tokenlifetimepolicies.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
@@ -3480,6 +3520,28 @@
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
+      - name: Information protection
+        items:
+        - name: Threat assessment
+          items:
+          - name: Overview
+            href: resources/threatassessment-api-overview.md
+          - name: Threat assessment request
+            href: resources/threatassessmentrequest.md
+          - name: Mail assessment request
+            href: resources/mailassessmentrequest.md
+          - name: Email file assessment request
+            href: resources/emailfileassessmentrequest.md
+          - name: File assessment request
+            href: resources/fileAssessmentRequest.md
+          - name: URL assessment request
+            href: resources/urlassessmentrequest.md
+          - name: List
+            href: api/informationprotection-list-threatassessmentrequests.md
+          - name: Create
+            href: api/informationprotection-post-threatassessmentrequests.md
+          - name: Get
+            href: api/threatassessmentrequest-get.md
       - name: Invitation manager
         href: resources/invitation.md
         items:
@@ -3499,12 +3561,89 @@
           href: api/orgcontact-list.md
         - name: Get org contact
           href: api/orgcontact-get.md
-        - name: List direct reports
-          href: api/orgcontact-list-directreports.md  
-        - name: List memberOf
-          href: api/orgcontact-list-memberof.md
-        - name: Get manager
-          href: api/orgcontact-get-manager.md
+        - name: Get org contact delta
+          href: api/orgcontact-delta.md
+        - name: Groups
+          href: resources/group.md
+          items:
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get member groups
+            href: api/orgcontact-getmembergroups.md
+          - name: Check member groups
+            href: api/orgcontact-checkmembergroups.md
+        - name: Org hierarchy
+          href: resources/directoryobject.md
+          items:
+          - name: List direct reports
+            href: api/orgcontact-list-directreports.md  
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get manager
+            href: api/orgcontact-get-manager.md
+          - name: Get member objects
+            href: api/orgcontact-getmemberobjects.md
+      - name: Policy
+        href: resources/policy-overview.md
+        items:
+        - name: Activity-based timeout policy
+          href: resources/activitybasedtimeoutpolicy.md
+          items:
+          - name: List
+            href: api/activitybasedtimeoutpolicy-list.md
+          - name: Create
+            href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+          - name: Get
+            href: api/activitybasedtimeoutpolicy-get.md
+          - name: Update
+            href: api/activitybasedtimeoutpolicy-update.md
+          - name: Delete
+            href: api/activitybasedtimeoutpolicy-delete.md
+        - name: Home realm discovery policy
+          href: resources/homerealmdiscoverypolicy.md
+          items:
+          - name: List
+            href: api/homerealmdiscoverypolicy-list.md
+          - name: Create
+            href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+          - name: Get
+            href: api/homerealmdiscoverypolicy-get.md
+          - name: Update
+            href: api/homerealmdiscoverypolicy-update.md
+          - name: Delete
+            href: api/homerealmdiscoverypolicy-delete.md
+          - name: List applied to applications
+            href: api/homerealmdiscoverypolicy-list-appliesto.md
+        - name: Token issuance policy
+          href: resources/tokenissuancepolicy.md
+          items:
+          - name: List
+            href: api/tokenissuancepolicy-list.md
+          - name: Create
+            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md          
+          - name: Get
+            href: api/tokenissuancepolicy-get.md
+          - name: Update
+            href: api/tokenissuancepolicy-update.md
+          - name: Delete
+            href: api/tokenissuancepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenissuancepolicy-list-appliesto.md
+        - name: Token lifetime policy
+          href: resources/tokenlifetimepolicy.md
+          items:
+          - name: List
+            href: api/tokenlifetimepolicy-list.md
+          - name: Create
+            href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+          - name: Get
+            href: api/tokenlifetimepolicy-get.md
+          - name: Update
+            href: api/tokenlifetimepolicy-update.md
+          - name: Delete
+            href: api/tokenlifetimepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenlifetimepolicy-list-appliesto.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:
@@ -4117,6 +4256,10 @@
           href: api/site-list-subsites.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+        - name: Follow site
+          href: api/site-follow.md
+        - name: Unfollow site
+          href: api/site-unfollow.md
       - name: Lists
         href: resources/list.md
         items:

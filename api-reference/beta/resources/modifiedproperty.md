@@ -2,7 +2,7 @@
 title: "modifiedProperty resource type"
 description: "Describes the changes performed in the target system."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

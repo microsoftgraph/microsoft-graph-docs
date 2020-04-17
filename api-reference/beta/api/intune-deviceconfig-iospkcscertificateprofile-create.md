@@ -1,7 +1,7 @@
 ---
 title: "Create iosPkcsCertificateProfile"
 description: "Create a new iosPkcsCertificateProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -198,8 +198,6 @@ Content-Length: 1996
   ]
 }
 ```
-
-
 
 
 

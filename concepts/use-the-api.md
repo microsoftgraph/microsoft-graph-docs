@@ -104,6 +104,33 @@ Aside from OData query options, some methods require parameter values specified 
 GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:00.0000000&endDateTime=2019-09-01T17:00:00.0000000
 ```
 
+## Tools for interacting with Microsoft Graph
+
+### Graph Explorer
+
+Graph Explorer is a web-based tool that you can use to build and test requests using Microsoft Graph APIs. You can access Graph Explorer at: `https://developer.microsoft.com/graph/graph-explorer`.
+
+You can either access demo data without signing in, or you can sign in to a tenant of your own. Use the following steps to build the request:
+
+1. Select the HTTP method.
+2. Select the version of API that you want to use.
+3. Type the query in the request text box.
+4. Select **Run Query**. 
+
+The following example shows a request that returns information about users in the demo tenant:
+
+![Screenshot of Graph Explorer with a GET user request highlighted](./images/graph-explorer.png)
+
+Sample queries are provided in Graph Explorer to enable you to more quickly run common requests. To see the samples that are available, select **show more samples**. Select **On** for the set of samples that you want to see, and then after closing the selection window, you should see a list of predefined requests.
+
+A status code and message are displayed after a request is sent and the response is shown in the **Response Preview** tab.
+
+### Postman
+
+Postman is a tool that you can use to build and test requests using the Microsoft Graph APIs. You can download Postman at: `https://www.getpostman.com/`. To interact with Microsoft Graph in Postman, you use the Microsoft Graph collection.
+
+For more information, see [Use Postman with the Microsoft Graph API](https://docs.microsoft.comgraph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
+
 ## Next steps
 
-You're ready to get up and running with Microsoft Graph. To learn more, go to the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out some requests, try the [Quick Start](https://developer.microsoft.com/graph/quick-start), or get started using one of our [SDKs and code samples](https://developer.microsoft.com/graph/code-samples-and-sdks).
+You're ready to get up and running with Microsoft Graph. Try the [Quick Start](https://developer.microsoft.com/graph/quick-start), or get started using one of our [SDKs and code samples](https://developer.microsoft.com/graph/code-samples-and-sdks).

@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingCollectionConstraint resource type"
 description: "Constraint that enforces the maximum number of elements a collection"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

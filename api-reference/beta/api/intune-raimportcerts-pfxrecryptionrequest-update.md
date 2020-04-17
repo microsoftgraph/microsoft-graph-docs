@@ -1,7 +1,7 @@
 ---
 title: "Update pfxRecryptionRequest"
 description: "Update the properties of a pfxRecryptionRequest object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -115,8 +115,6 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceOwnerType enum type"
 description: "Owner type of device."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

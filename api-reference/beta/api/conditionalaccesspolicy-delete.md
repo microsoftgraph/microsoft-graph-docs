@@ -2,7 +2,7 @@
 title: "Delete conditionalAccessPolicy"
 description: "Delete a conditionalAccessPolicy."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /conditionalAccess/policies/{id}
+DELETE /identity/conditionalAccess/policies/{id}
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
+DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-conditionalaccesspolicy-csharp-snippets.md)]

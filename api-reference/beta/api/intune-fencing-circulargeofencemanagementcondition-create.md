@@ -1,7 +1,7 @@
 ---
 title: "Create circularGeofenceManagementCondition"
 description: "Create a new circularGeofenceManagementCondition object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -114,8 +114,6 @@ Content-Length: 612
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
-
 
 
 

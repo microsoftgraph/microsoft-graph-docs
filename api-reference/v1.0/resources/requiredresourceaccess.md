@@ -4,7 +4,7 @@ description: "Specifies the set of OAuth 2.0 permission scopes and app roles."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # requiredResourceAccess resource type

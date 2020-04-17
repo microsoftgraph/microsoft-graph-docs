@@ -2,7 +2,7 @@
 title: "Delete homeRealmDiscoveryPolicy"
 description: "Delete homeRealmDiscoveryPolicy."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

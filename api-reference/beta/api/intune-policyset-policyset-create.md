@@ -1,7 +1,7 @@
 ---
 title: "Create policySet"
 description: "Create a new policySet object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -111,8 +111,6 @@ Content-Length: 489
   ]
 }
 ```
-
-
 
 
 

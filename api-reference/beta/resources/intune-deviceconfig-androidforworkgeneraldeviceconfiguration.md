@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkGeneralDeviceConfiguration resource type"
 description: "Android For Work general device configuration."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

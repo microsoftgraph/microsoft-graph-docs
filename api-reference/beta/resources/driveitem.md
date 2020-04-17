@@ -195,6 +195,8 @@ Removing file permissions for a user may not immediately invalidate the URL.
 | [Copy item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Search items](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [List changes in a drive](../api/driveitem-delta.md)     | `GET /drive/root/delta`
+| [Follow item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [Unfollow item](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [List thumbnails](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Create sharing link](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
@@ -202,6 +204,8 @@ Removing file permissions for a user may not immediately invalidate the URL.
 | [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -221,7 +225,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [folder]: folder.md
 [getting previous versions]: ../api/driveitem-list-versions.md
 [getting thumbnails]: ../api/driveitem-list-thumbnails.md
-[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[getWebSocket]: ../api/subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md

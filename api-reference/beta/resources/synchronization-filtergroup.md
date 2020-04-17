@@ -1,9 +1,9 @@
 ---
 title: "filterGroup resource type"
-description: "Defines a set of clauses that an object must satisfy to be considered in scope. An object is considered in scope for the group (the group is evaluated to `true`) only if all the clauses of the group are evaluated to `true`."
+description: "Defines a set of clauses that an object must satisfy to be considered in scope."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

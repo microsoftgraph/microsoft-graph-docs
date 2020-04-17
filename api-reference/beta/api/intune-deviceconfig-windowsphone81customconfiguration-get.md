@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhone81CustomConfiguration"
 description: "Read properties and relationships of the windowsPhone81CustomConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -114,8 +114,6 @@ Content-Length: 1576
   }
 }
 ```
-
-
 
 
 

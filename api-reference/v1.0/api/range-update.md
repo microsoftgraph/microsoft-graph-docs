@@ -67,7 +67,7 @@ Content-length: 169
 
 {
 "values" : [["Hello", "100"],["1/1/2016", null]],
-"formula" : [[null, null], [null, "=B1*2"]],
+"formulas" : [[null, null], [null, "=B1*2"]],
 "numberFormat" : [[null,null], ["m-ddd", null]]
 }
 ```

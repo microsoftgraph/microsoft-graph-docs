@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementCachedReportConfigurations"
 description: "List properties and relationships of the deviceManagementCachedReportConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -82,8 +82,6 @@ Content-Length: 519
   ]
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "androidKeyguardFeature enum type"
 description: "Android keyguard feature."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

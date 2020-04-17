@@ -1,7 +1,7 @@
 ---
 title: "iosCertificateProfileBase resource type"
 description: "iOS certificate profile base."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

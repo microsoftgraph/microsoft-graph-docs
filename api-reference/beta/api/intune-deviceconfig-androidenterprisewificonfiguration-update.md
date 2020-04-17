@@ -1,7 +1,7 @@
 ---
 title: "Update androidEnterpriseWiFiConfiguration"
 description: "Update the properties of a androidEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -190,8 +190,6 @@ Content-Length: 1871
   "preSharedKey": "Pre Shared Key value"
 }
 ```
-
-
 
 
 

@@ -2,7 +2,7 @@
 title: "orgContact: List memberOf"
 description: "Retrieve the list of groups and adminstrative units the contact is a member of."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

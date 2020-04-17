@@ -3,8 +3,8 @@ title: "servicePrincipal: List oAuth2Permissiongrants"
 description: "Retrieve a list of oAuth2Permissiongrant objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "sureshja"
 ---
 
 # servicePrincipal: List oAuth2Permissiongrants

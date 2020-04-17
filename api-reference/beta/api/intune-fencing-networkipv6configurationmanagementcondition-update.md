@@ -1,7 +1,7 @@
 ---
 title: "Update networkIPv6ConfigurationManagementCondition"
 description: "Update the properties of a networkIPv6ConfigurationManagementCondition object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -125,8 +125,6 @@ Content-Length: 651
   ]
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Get androidManagedStoreApp"
 description: "Read properties and relationships of the androidManagedStoreApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1241
+Content-Length: 1439
 
 {
   "value": {
@@ -101,12 +101,17 @@ Content-Length: 1241
     "appStoreUrl": "https://example.com/appStoreUrl/",
     "isPrivate": true,
     "isSystemApp": true,
+    "appTracks": [
+      {
+        "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+        "trackId": "Track Id value",
+        "trackAlias": "Track Alias value"
+      }
+    ],
     "supportsOemConfig": true
   }
 }
 ```
-
-
 
 
 

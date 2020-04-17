@@ -1,7 +1,7 @@
 ---
 title: "Create roleDefinition"
 description: "Create a new roleDefinition object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -121,6 +121,8 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
+
+
 
 
 

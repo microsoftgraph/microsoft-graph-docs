@@ -1,7 +1,7 @@
 ---
 title: "bitLockerSystemDrivePolicy resource type"
 description: "BitLocker Encryption Base Policies."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

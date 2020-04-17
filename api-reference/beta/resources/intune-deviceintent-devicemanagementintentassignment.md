@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementIntentAssignment resource type"
 description: "Intent assignment entity"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

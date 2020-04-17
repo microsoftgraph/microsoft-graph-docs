@@ -1,7 +1,7 @@
 ---
 title: "Update iosLobApp"
 description: "Update the properties of a iosLobApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -198,8 +198,6 @@ Content-Length: 1583
   "identityVersion": "Identity Version value"
 }
 ```
-
-
 
 
 

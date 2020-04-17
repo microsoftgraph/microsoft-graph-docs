@@ -17,18 +17,18 @@ Represents detailed information about phone numbers associated with a user in va
 
 ## Methods
 
-| Method                                     | Return Type               | Description                                            |
-|:-------------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [Get itemPhone](../api/itemphone-get.md)   | [itemPhone](itemphone.md) | Read the properties and relationships of an **itemPhone** object. |
-| [Update itemPhone](../api/itemphone-update.md)       | [itemPhone](itemphone.md) | Update an **itemPhone** object.                               |
-| [Delete itemPhone](../api/itemphone-delete.md)       | None                      | Delete an **itemPhone** object.                               |
+| Method                                               | Return Type               | Description                                                       |
+|:-----------------------------------------------------|:--------------------------|:------------------------------------------------------------------|
+| [Get itemPhone](../api/itemphone-get.md)             | [itemPhone](itemphone.md) | Read the properties and relationships of an **itemPhone** object. |
+| [Update itemPhone](../api/itemphone-update.md)       | [itemPhone](itemphone.md) | Update an **itemPhone** object.                                   |
+| [Delete itemPhone](../api/itemphone-delete.md)       | None                      | Delete an **itemPhone** object.                                   |
 
 ## Properties
 
 | Property     | Type        | Description                                                                                                                     |
 |:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
 |displayName   |String       | Contains a friendly name for the phone number.                                                                                  |
-|number        |String       | Contains the phone number.                                                                                                       |
+|number        |String       | Contains the phone number.                                                                                                      |
 |type          |string       | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## Relationships

@@ -1,7 +1,7 @@
 ---
 title: "Update androidManagedStoreAppConfiguration"
 description: "Update the properties of a androidManagedStoreAppConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -60,6 +60,7 @@ The following table shows the properties that are required when you create the [
 |payloadJson|String|Android Enterprise app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
 |appSupportsOemConfig|Boolean|Whether or not this AppConfig is an OEMConfig policy.|
+|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise profile applicability (AndroidWorkProfile, DeviceOwner, or default (applies to both)). Possible values are: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 
 
 
@@ -73,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 Content-type: application/json
-Content-length: 592
+Content-length: 641
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -95,7 +96,8 @@ Content-length: 592
       "action": "autoGrant"
     }
   ],
-  "appSupportsOemConfig": true
+  "appSupportsOemConfig": true,
+  "profileApplicability": "androidWorkProfile"
 }
 ```
 
@@ -104,7 +106,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 764
+Content-Length: 813
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -129,11 +131,10 @@ Content-Length: 764
       "action": "autoGrant"
     }
   ],
-  "appSupportsOemConfig": true
+  "appSupportsOemConfig": true,
+  "profileApplicability": "androidWorkProfile"
 }
 ```
-
-
 
 
 

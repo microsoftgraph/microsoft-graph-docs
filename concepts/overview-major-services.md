@@ -79,6 +79,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 |Devices and apps | Intune | Enrolls and configures devices, and manages mobile applications in your organization. | [Intune devices and apps overview](intune-concept-overview.md) |
+| Universal Print (preview) | Universal Print | Universal Print is a Microsoft 365 cloud-based print infrastructure that enables a simple, rich and secure print experience for users and reduces administrative and management effort for IT. | [Universal Print API overview](universal-print-concept-overview.md) |
 
 
 ## Security
@@ -120,7 +121,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Customer booking (preview) | Microsoft Bookings | Targets small businesses to enable their customers to book services directly on the web or Facebook. Lets business operators manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](booking-concept-overview.md) |
+| Customer booking (preview) | Microsoft Bookings | Targets organizations to enable their users and customers to book services directly on the web or Facebook. Lets business providers manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](booking-concept-overview.md) |
 | Financials (preview) | Dynamics 365 Business Central | Enables management of financial data, automation and securing of the supply chain, sales management and improved customer service, management of projects, and optimazation of operations with the all-in-one business management solution.| [Business Central API overview](dynamics-business-central-concept-overview.md) |
 
 

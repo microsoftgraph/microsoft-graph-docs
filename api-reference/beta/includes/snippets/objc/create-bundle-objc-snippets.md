@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphDriveItem *driveItem = [[MSGraphDriveItem alloc] init];
 [driveItem setName:@"Just some files"];
-[driveItem set@name.conflictBehavior:@"rename"];
+[driveItem set@microsoft.graph.conflictBehavior:@"rename"];
 MSGraphBundle *bundle = [[MSGraphBundle alloc] init];
 [driveItem setBundle:bundle];
 NSMutableArray *childrenList = [[NSMutableArray alloc] init];

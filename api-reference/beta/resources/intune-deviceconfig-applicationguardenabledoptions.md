@@ -1,7 +1,7 @@
 ---
 title: "applicationGuardEnabledOptions enum type"
 description: "Possible values for ApplicationGuardEnabledOptions"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

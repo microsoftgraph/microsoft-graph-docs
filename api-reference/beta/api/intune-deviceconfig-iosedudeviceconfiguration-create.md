@@ -1,7 +1,7 @@
 ---
 title: "Create iosEduDeviceConfiguration"
 description: "Create a new iosEduDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -219,8 +219,6 @@ Content-Length: 2855
   }
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create microsoftStoreForBusinessApp"
 description: "Create a new microsoftStoreForBusinessApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -172,8 +172,6 @@ Content-Length: 1304
   }
 }
 ```
-
-
 
 
 

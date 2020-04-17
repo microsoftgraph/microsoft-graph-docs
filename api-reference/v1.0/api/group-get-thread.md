@@ -1,7 +1,7 @@
 ---
 title: "Get conversation thread"
 description: "Get a thread object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -10,6 +10,7 @@ doc_type: apiPageType
 # Get conversation thread
 
 Namespace: microsoft.graph
+
 Get a [thread](../resources/conversationthread.md) object.
 
 ## Permissions

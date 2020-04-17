@@ -3,8 +3,8 @@ title: "List unfamiliarLocationRiskEvents"
 description: "Retrieve a list of unfamiliarlocationriskevent objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "cloudhandler"
 ---
 
 # List unfamiliarLocationRiskEvents

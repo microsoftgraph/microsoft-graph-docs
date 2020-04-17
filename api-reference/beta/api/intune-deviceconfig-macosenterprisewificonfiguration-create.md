@@ -1,7 +1,7 @@
 ---
 title: "Create macOSEnterpriseWiFiConfiguration"
 description: "Create a new macOSEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -202,8 +202,6 @@ Content-Length: 2030
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
-
 
 
 

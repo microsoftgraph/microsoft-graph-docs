@@ -1,7 +1,7 @@
 ---
 title: "Create iosManagedAppProtection"
 description: "Create a new iosManagedAppProtection object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -189,6 +189,8 @@ Content-Length: 1740
   "faceIdBlocked": true
 }
 ```
+
+
 
 
 

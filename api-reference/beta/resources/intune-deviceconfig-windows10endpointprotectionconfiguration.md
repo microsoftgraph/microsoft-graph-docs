@@ -1,7 +1,7 @@
 ---
 title: "windows10EndpointProtectionConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the Windows10EndpointProtectionConfiguration resource."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -222,18 +222,29 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker Removable Drive Policy.|
 |bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|This setting initiates a client-driven recovery password rotation after an OS drive recovery (either by using bootmgr or WinRE). Possible values are: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
 |defenderDisableScanArchiveFiles|Boolean|Allows or disallows scanning of archives.|
+|defenderAllowScanArchiveFiles|Boolean|Allows or disallows scanning of archives.|
 |defenderDisableBehaviorMonitoring|Boolean|Allows or disallows Windows Defender Behavior Monitoring functionality.|
+|defenderAllowBehaviorMonitoring|Boolean|Allows or disallows Windows Defender Behavior Monitoring functionality.|
 |defenderDisableCloudProtection|Boolean|To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.|
+|defenderAllowCloudProtection|Boolean|To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.|
 |defenderEnableScanIncomingMail|Boolean|Allows or disallows scanning of email.|
 |defenderEnableScanMappedNetworkDrivesDuringFullScan|Boolean|Allows or disallows a full scan of mapped network drives.|
 |defenderDisableScanRemovableDrivesDuringFullScan|Boolean|Allows or disallows a full scan of removable drives. During a quick scan, removable drives may still be scanned.|
+|defenderAllowScanRemovableDrivesDuringFullScan|Boolean|Allows or disallows a full scan of removable drives. During a quick scan, removable drives may still be scanned.|
 |defenderDisableScanDownloads|Boolean|Allows or disallows Windows Defender IOAVP Protection functionality.|
+|defenderAllowScanDownloads|Boolean|Allows or disallows Windows Defender IOAVP Protection functionality.|
 |defenderDisableIntrusionPreventionSystem|Boolean|Allows or disallows Windows Defender Intrusion Prevention functionality.|
+|defenderAllowIntrusionPreventionSystem|Boolean|Allows or disallows Windows Defender Intrusion Prevention functionality.|
 |defenderDisableOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
+|defenderAllowOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
 |defenderDisableRealTimeMonitoring|Boolean|Allows or disallows Windows Defender Realtime Monitoring functionality.|
+|defenderAllowRealTimeMonitoring|Boolean|Allows or disallows Windows Defender Realtime Monitoring functionality.|
 |defenderDisableScanNetworkFiles|Boolean|Allows or disallows a scanning of network files.|
+|defenderAllowScanNetworkFiles|Boolean|Allows or disallows a scanning of network files.|
 |defenderDisableScanScriptsLoadedInInternetExplorer|Boolean|Allows or disallows Windows Defender Script Scanning functionality.|
+|defenderAllowScanScriptsLoadedInInternetExplorer|Boolean|Allows or disallows Windows Defender Script Scanning functionality.|
 |defenderBlockEndUserAccess|Boolean|Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.|
+|defenderAllowEndUserAccess|Boolean|Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.|
 |defenderScanMaxCpuPercentage|Int32|Represents the average CPU load factor for the Windows Defender scan (in percent). The default value is 50. Valid values 0 to 100|
 |defenderCheckForSignaturesBeforeRunningScan|Boolean|This policy setting allows you to manage whether a check for new virus and spyware definitions will occur before running a scan.|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Added in Windows 10, version 1709. This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer. This feature requires the "Join Microsoft MAPS" setting enabled in order to function. Possible values are: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
@@ -251,6 +262,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |defenderScheduledQuickScanTime|TimeOfDay|Selects the time of day that the Windows Defender quick scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120|
 |defenderScheduledScanDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Selects the day that the Windows Defender scan should run. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
 |defenderScheduledScanTime|TimeOfDay|Selects the time of day that the Windows Defender scan should run.|
+|defenderSignatureUpdateIntervalInHours|Int32|Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval. Valid values 0 to 24|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Checks for the user consent level in Windows Defender to send data. Possible values are: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.|
 
@@ -956,18 +968,29 @@ Here is a JSON representation of the resource.
   },
   "bitLockerRecoveryPasswordRotation": "String",
   "defenderDisableScanArchiveFiles": true,
+  "defenderAllowScanArchiveFiles": true,
   "defenderDisableBehaviorMonitoring": true,
+  "defenderAllowBehaviorMonitoring": true,
   "defenderDisableCloudProtection": true,
+  "defenderAllowCloudProtection": true,
   "defenderEnableScanIncomingMail": true,
   "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
   "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderAllowScanRemovableDrivesDuringFullScan": true,
   "defenderDisableScanDownloads": true,
+  "defenderAllowScanDownloads": true,
   "defenderDisableIntrusionPreventionSystem": true,
+  "defenderAllowIntrusionPreventionSystem": true,
   "defenderDisableOnAccessProtection": true,
+  "defenderAllowOnAccessProtection": true,
   "defenderDisableRealTimeMonitoring": true,
+  "defenderAllowRealTimeMonitoring": true,
   "defenderDisableScanNetworkFiles": true,
+  "defenderAllowScanNetworkFiles": true,
   "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderAllowScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderAllowEndUserAccess": true,
   "defenderScanMaxCpuPercentage": 1024,
   "defenderCheckForSignaturesBeforeRunningScan": true,
   "defenderCloudBlockLevel": "String",
@@ -991,6 +1014,7 @@ Here is a JSON representation of the resource.
   "defenderScheduledQuickScanTime": "String (time of day)",
   "defenderScheduledScanDay": "String",
   "defenderScheduledScanTime": "String (time of day)",
+  "defenderSignatureUpdateIntervalInHours": 1024,
   "defenderSubmitSamplesConsentType": "String",
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",

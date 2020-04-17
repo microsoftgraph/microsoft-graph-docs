@@ -1,7 +1,7 @@
 ---
 title: "Create iosDeviceFeaturesConfiguration"
 description: "Create a new iosDeviceFeaturesConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -506,8 +506,6 @@ Content-Length: 6888
   }
 }
 ```
-
-
 
 
 

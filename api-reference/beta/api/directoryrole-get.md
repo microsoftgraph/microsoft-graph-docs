@@ -1,7 +1,7 @@
 ---
 title: "Get directoryRole"
 description: "Retrieve the properties of a directoryRole object."
-author: "davidmu1"
+author: "abhijeetsinha"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

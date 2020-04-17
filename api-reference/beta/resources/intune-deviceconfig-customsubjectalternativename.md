@@ -1,7 +1,7 @@
 ---
 title: "customSubjectAlternativeName resource type"
 description: "Custom Subject Alternative Name definition"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

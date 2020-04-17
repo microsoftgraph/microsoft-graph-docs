@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceEncryptionState resource type"
 description: "Encryption report per device"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

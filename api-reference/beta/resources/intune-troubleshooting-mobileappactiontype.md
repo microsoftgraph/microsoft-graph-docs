@@ -1,7 +1,7 @@
 ---
 title: "mobileAppActionType enum type"
 description: "Defines the Action Types for an Intune Application."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

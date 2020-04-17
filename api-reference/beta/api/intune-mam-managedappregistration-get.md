@@ -1,7 +1,7 @@
 ---
 title: "Get managedAppRegistration"
 description: "Read properties and relationships of the managedAppRegistration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -92,8 +92,6 @@ Content-Length: 956
   }
 }
 ```
-
-
 
 
 

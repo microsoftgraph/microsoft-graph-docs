@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementIntentUserStateSummary"
 description: "Update the properties of a deviceManagementIntentUserStateSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -96,8 +96,6 @@ Content-Length: 247
   "successCount": 12
 }
 ```
-
-
 
 
 

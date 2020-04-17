@@ -2,7 +2,7 @@
 title: "Create conditionalAccessPolicy"
 description: "Create a new conditionalAccessPolicy."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -21,16 +21,19 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess and Application.Read.All |
+|Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
+
+> [!NOTE]
+> This API has a [known issue](/graph/known-issues#permissions) related to permissions.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /conditionalAccess/policies
+POST /identity/conditionalAccess/policies
 ```
 
 ## Request headers
@@ -67,7 +70,7 @@ The following example shows a common request to require multi-factor authenticat
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/policies
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/policies
 Content-type: application/json
 
 {
@@ -197,7 +200,7 @@ This example assumes that the named location with id = 198ad66e-87b3-4157-85a3-8
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/policies
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/policies
 Content-type: application/json
 
 {
@@ -312,7 +315,7 @@ The following is an example of the request to use all the conditions/controls.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/policies
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/policies
 Content-type: application/json
 
 {

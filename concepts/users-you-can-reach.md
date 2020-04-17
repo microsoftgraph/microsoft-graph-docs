@@ -20,17 +20,18 @@ Use Microsoft Graph to reach users with Microsoft personal accounts, such as @ou
 
 Use Microsoft Graph to reach users and organizations that have licenses to Microsoft 365 services for business, enterprise or education. These Microsoft 365 services include:
 
--	Office 365
--	Enterprise Mobility + Security
--	Windows 10
+- Office 365
+- Enterprise Mobility + Security
+- Windows 10
 
 With their consent, you can use Microsoft Graph to get access to users and organizational data according to the services they are licensed to and the services and features available in Microsoft Graph. To learn more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
 ### Worldwide, multigeo, and national clouds
+
 The services in Microsoft Graph are part of the Microsoft worldwide cloud. In addition, Microsoft offers:
 
--	Multigeo capabilities for multinational organizations with multiple geographic regions and/or countries within their existing tenant.
--	National cloud deployments for US government, Germany, and Azure and Office 365 operated by 21Vianet in China.
+- Multigeo capabilities for multinational organizations with multiple geographic regions and/or countries within their existing tenant.
+- National cloud deployments for US government, Germany, and Azure and Office 365 operated by 21Vianet in China.
 
 With their consent, you can use Microsoft Graph to reach users and organizations whose services are in the worldwide cloud, including organizations with multigeo services, and you can also use Microsoft Graph to access users and organizations in national cloud deployments, but special considerations are required for cloud sovereignty. To find out more, see [National cloud deployments](deployments.md).
 

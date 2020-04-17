@@ -1,7 +1,7 @@
 ---
 title: "iosAvailableUpdateVersion resource type"
 description: "iOS available update version details"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

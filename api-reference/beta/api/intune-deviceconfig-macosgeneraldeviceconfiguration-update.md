@@ -1,7 +1,7 @@
 ---
 title: "Update macOSGeneralDeviceConfiguration"
 description: "Update the properties of a macOSGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -315,8 +315,6 @@ Content-Length: 3318
   "iCloudBlockActivityContinuation": true
 }
 ```
-
-
 
 
 

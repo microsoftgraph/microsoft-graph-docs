@@ -1,7 +1,7 @@
 ---
 title: "getGlobalScriptHighestAvailableVersion action"
 description: "Update the Proprietary Device Health Script"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -66,8 +66,6 @@ Content-Length: 68
   "value": "Get Global Script Highest Available Version value"
 }
 ```
-
-
 
 
 

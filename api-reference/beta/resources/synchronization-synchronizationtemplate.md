@@ -1,9 +1,9 @@
 ---
 title: "synchronizationTemplate resource type"
-description: " anyone can retrieve the template to see the default settings, including the synchronization schema."
+description: "Provides pre-configured synchronization settings for a particular application."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

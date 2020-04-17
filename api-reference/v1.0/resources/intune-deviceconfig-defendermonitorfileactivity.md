@@ -1,7 +1,7 @@
 ---
 title: "defenderMonitorFileActivity enum type"
 description: "Possible values for monitoring file activity."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -23,6 +23,9 @@ Possible values for monitoring file activity.
 |monitorAllFiles|2|Monitor all files.|
 |monitorIncomingFilesOnly|3| Monitor incoming files only.|
 |monitorOutgoingFilesOnly|4|Monitor outgoing files only.|
+
+
+
 
 
 

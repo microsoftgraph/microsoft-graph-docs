@@ -1,7 +1,7 @@
 ---
 title: "Create appleEnrollmentProfileAssignment"
 description: "Create a new appleEnrollmentProfileAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -88,8 +88,6 @@ Content-Length: 221
   }
 }
 ```
-
-
 
 
 

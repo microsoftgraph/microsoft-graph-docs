@@ -1,7 +1,7 @@
 ---
 title: "Get networkIPv6ConfigurationManagementCondition"
 description: "Read properties and relationships of the networkIPv6ConfigurationManagementCondition object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -90,8 +90,6 @@ Content-Length: 708
   }
 }
 ```
-
-
 
 
 

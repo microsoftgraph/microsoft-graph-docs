@@ -2,7 +2,7 @@
 title: "Create namedLocation"
 description: "Create a new namedLocation."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /conditionalAccess/namedLocations
+POST /identity/conditionalAccess/namedLocations
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 Content-type: application/json
 
 {
@@ -140,7 +140,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 Content-type: application/json
 
 {

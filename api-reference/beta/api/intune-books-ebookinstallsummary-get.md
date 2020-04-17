@@ -1,7 +1,7 @@
 ---
 title: "Get eBookInstallSummary"
 description: "Read properties and relationships of the eBookInstallSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -78,8 +78,6 @@ Content-Length: 320
   }
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "updateClassification enum type"
 description: "Possible values for automatic update classification."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

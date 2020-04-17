@@ -1,7 +1,7 @@
 ---
 title: "Create iosikEv2VpnConfiguration"
 description: "Create a new iosikEv2VpnConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -423,8 +423,6 @@ Content-Length: 5156
   "enableAlwaysOnConfiguration": true
 }
 ```
-
-
 
 
 

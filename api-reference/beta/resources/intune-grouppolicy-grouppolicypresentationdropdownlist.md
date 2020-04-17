@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyPresentationDropdownList resource type"
 description: "Represents an ADMX dropdownList element and an ADMX enum element."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

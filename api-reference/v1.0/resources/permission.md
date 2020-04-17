@@ -69,7 +69,7 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
 
-## Roles enumeration
+### Roles property values
 
 | Role        | Details                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
@@ -117,6 +117,25 @@ An edit link provides read and write access to an item.
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
   "shareId": "!LKj1lkdlals90j1nlkascl"
+}
+```
+
+### Existing access link
+
+This link does not grant any additional privileges to the user.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
+
+```json
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "roles": ["read"],
+  "link": {
+    "scope": "existingAccess",
+    "type": "view",
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
+  },
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -175,6 +194,7 @@ property will contain the information about the account that redeemed the permis
 | [Add](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
 | [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 
 ## Remarks

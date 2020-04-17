@@ -1,7 +1,7 @@
 ---
 title: "redirectSingleSignOnExtension resource type"
 description: "Represents an Apple Single Sign-On Extension."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

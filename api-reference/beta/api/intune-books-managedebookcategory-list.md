@@ -1,7 +1,7 @@
 ---
 title: "List managedEBookCategories"
 description: "List properties and relationships of the managedEBookCategory objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -74,8 +74,6 @@ Content-Length: 264
   ]
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkCustomConfiguration resource type"
 description: "Android For Work custom configuration"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "cartToClassAssociation resource type"
 description: "CartToClassAssociation for associating device carts with classrooms."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

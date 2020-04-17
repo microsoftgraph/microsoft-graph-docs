@@ -1,7 +1,7 @@
 ---
 title: "chassisType enum type"
 description: "Chassis type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

@@ -2,7 +2,7 @@
 title: "message: delta"
 description: "Get a set of messages that have been added, deleted, or updated in a specified folder."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

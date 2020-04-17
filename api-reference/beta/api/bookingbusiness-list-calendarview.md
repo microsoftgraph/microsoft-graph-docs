@@ -2,7 +2,7 @@
 title: "List Bookings calendarView"
 description: "Get the collection of bookingAppointment objects for a bookingBusiness, that occurs in the specified date range."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---

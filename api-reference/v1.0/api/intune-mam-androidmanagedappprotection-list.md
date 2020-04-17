@@ -1,7 +1,7 @@
 ---
 title: "List androidManagedAppProtections"
 description: "List properties and relationships of the androidManagedAppProtection objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -109,6 +109,8 @@ Content-Length: 2065
   ]
 }
 ```
+
+
 
 
 

@@ -5,7 +5,7 @@ localization_priority: Normal
 author: vogtn
 ---
 
-# People-Picker component
+# People-Picker component in the Microsoft Graph Toolkit
 
 You can use the `mgt-people-picker` web component search for a specified number of people and render the list of results via Microsoft Graph. By default, the component will search for all people; you can also define a group property to further filter the results.
 
@@ -13,17 +13,15 @@ If the number of people to display exceeds the `show-max` value, not all people 
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/jdv38fg0/)
+The following example shows the `mgt-people-picker` component. Start searching for a name to see the results render and use the code editor to see how [properties](#properties) change the behavior of the component.
 
-```html
-<mgt-people-picker></mgt-people-picker>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
-![mgt-people-picker](./images/mgt-people-picker-image.png)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people-picker--people-picker&source=docs)
 
 ## Properties
 
-By default, the `mgt-people-picker` component fetches events from the `/me/people` endpoint. Use the following attributes to change this behavior.
+By default, the `mgt-people-picker` component fetches people from the `/me/people` endpoint. Use the following attributes to change this behavior.
 
 | Attribute | Property | Description                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -62,6 +60,14 @@ You can populate selected people data by doing one of the following:
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
+## Events
+
+The following events are fired from the component.
+
+| Event | Description |
+| --- | --- |
+| `selectionChanged` | The user added or removed a person from the list of selected/picked people.|
+
 ## CSS custom properties
 
 The `mgt-people-picker` component defines the following CSS custom properties.
@@ -79,10 +85,12 @@ mgt-people-picker {
 
 | Data type | Data context | Description |
 | --- | --- | --- |
+| default | null: no data | The template used to override the rendering of the entire component.
 | loading | null: no data | The template used to render the state of picker while request to graph is being made. |
-| error | null: no data| The template used if user search returns no users. |
-| selected-person |person: The person details object| The template to render selected people. |
-| person | person: The person details object| The template to render people in the dropdown. |
+| error | null: no data | The template used if user search returns no users. |
+| no-data | null: no data | An alternative template used if user search returns no users. |
+| selected-person | person: The person details object | The template to render selected people. |
+| person | person: The person details object | The template to render people in the dropdown. |
 
 The following examples shows how to use the `error` template.
 
@@ -107,3 +115,19 @@ This component uses the following Microsoft Graph APIs and permissions.
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
+
+| Method | Description |
+| - | - |
+| renderInput | Renders the input text box. |
+| renderSelectedPeople | Renders the selected people tokens. |
+| renderSelectedPerson | Renders an individual person token. |
+| renderFlyout | Renders the flyout chrome. |
+| renderFlyoutContent | Renders the appropriate state in the results flyout. |
+| renderLoading | Renders the loading state. |
+| renderNoData | Renders the state when no results are found for the search query. |
+| renderSearchResults | Renders the list of search results. |
+| renderPersonResult | Renders an individual person search result. |

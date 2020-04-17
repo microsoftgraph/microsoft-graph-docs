@@ -2,7 +2,7 @@
 title: "attachment: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of a file so as to attach the file to the specified message."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---

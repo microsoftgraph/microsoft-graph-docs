@@ -1,7 +1,7 @@
 ---
 title: "intuneBrandingProfile resource type"
 description: "This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

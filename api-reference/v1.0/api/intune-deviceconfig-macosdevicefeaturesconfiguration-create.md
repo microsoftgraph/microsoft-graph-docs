@@ -1,7 +1,7 @@
 ---
 title: "Create macOSDeviceFeaturesConfiguration"
 description: "Create a new macOSDeviceFeaturesConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -92,6 +92,8 @@ Content-Length: 342
   "version": 7
 }
 ```
+
+
 
 
 

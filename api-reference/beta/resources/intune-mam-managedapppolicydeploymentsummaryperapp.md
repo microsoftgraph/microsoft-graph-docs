@@ -1,7 +1,7 @@
 ---
 title: "managedAppPolicyDeploymentSummaryPerApp resource type"
 description: "Represents policy deployment summary per app."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

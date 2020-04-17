@@ -1,7 +1,7 @@
 ---
 title: "iosRedirectSingleSignOnExtension resource type"
 description: "Represents a Redirect-type Single Sign-On extension profile for iOS devices."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

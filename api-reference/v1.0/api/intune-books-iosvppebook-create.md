@@ -1,7 +1,7 @@
 ---
 title: "Create iosVppEBook"
 description: "Create a new iosVppEBook object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -140,6 +140,8 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
+
 
 
 

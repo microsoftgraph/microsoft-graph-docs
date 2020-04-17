@@ -115,7 +115,7 @@ const conditionalAccessPolicy = {
     }
 };
 
-let res = await client.api('/conditionalAccess/policies')
+let res = await client.api('/identity/conditionalAccess/policies')
 	.version('beta')
 	.post(conditionalAccessPolicy);
 

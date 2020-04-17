@@ -1,7 +1,7 @@
 ---
 title: "Get macOSGeneralDeviceConfiguration"
 description: "Read properties and relationships of the macOSGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -162,8 +162,6 @@ Content-Length: 3517
   }
 }
 ```
-
-
 
 
 

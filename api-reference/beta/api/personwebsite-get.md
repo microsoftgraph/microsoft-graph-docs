@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/me/profile/websites/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

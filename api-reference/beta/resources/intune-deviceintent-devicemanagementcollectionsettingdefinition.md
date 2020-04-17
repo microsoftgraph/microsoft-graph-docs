@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementCollectionSettingDefinition resource type"
 description: "Entity representing the defintion for a collection setting"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

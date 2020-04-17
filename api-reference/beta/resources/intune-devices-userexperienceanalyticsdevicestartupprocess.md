@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsDeviceStartupProcess resource type"
 description: "The user experience analytics device startup process details."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

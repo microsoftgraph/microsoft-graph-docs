@@ -2,7 +2,7 @@
 title: "List members"
 description: "Get a list of the group's direct members. A group can have users, organizational contacts, and other groups as members."
 localization_priority: Priority
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All  |
+|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, GroupMember.Read.All, Group.Read.All, Directory.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, Group.Read.All, Directory.Read.All |
+|Application | User.Read.All, GroupMember.Read.All, Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

@@ -146,7 +146,7 @@ var conditionalAccessPolicy = new ConditionalAccessPolicy
 	}
 };
 
-await graphClient.ConditionalAccess.Policies
+await graphClient.Identity.ConditionalAccess.Policies
 	.Request()
 	.AddAsync(conditionalAccessPolicy);
 

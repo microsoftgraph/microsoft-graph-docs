@@ -1,7 +1,7 @@
 ---
 title: "Get androidManagedStoreAppConfiguration"
 description: "Read properties and relationships of the androidManagedStoreAppConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 829
+Content-Length: 880
 
 {
   "value": {
@@ -89,12 +89,11 @@ Content-Length: 829
         "action": "autoGrant"
       }
     ],
-    "appSupportsOemConfig": true
+    "appSupportsOemConfig": true,
+    "profileApplicability": "androidWorkProfile"
   }
 }
 ```
-
-
 
 
 

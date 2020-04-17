@@ -1,7 +1,7 @@
 ---
 title: "vpnDnsRule resource type"
 description: "VPN DNS Rule definition."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

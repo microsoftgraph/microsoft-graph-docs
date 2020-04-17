@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionNetworkLearningSummary resource type"
 description: "Windows Information Protection Network learning Summary entity."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

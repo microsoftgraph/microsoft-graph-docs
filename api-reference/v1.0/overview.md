@@ -2,8 +2,8 @@
 title: "Microsoft Graph REST API v1.0 reference"
 description: "Welcome to Microsoft Graph REST API reference for the v1.0 endpoint."
 localization_priority: Priority
-author: ""
-ms.prod: ""
+author: "angelgolfer-ms"
+ms.prod: "non-product-specific"
 doc_type: conceptualPageType
 ---
 
@@ -50,7 +50,7 @@ Find more information about [versioning and support](/graph/versioning-and-suppo
 Microsoft Graph API requests to the v1.0 endpoint use the following pattern:
 
 ```
-	https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
+https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).

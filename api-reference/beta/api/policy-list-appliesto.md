@@ -4,7 +4,7 @@ description: "Get the application and service principal objects with the specifi
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "dkershaw10"
 ---
 
 # List applications and service principals with specific policy assigned

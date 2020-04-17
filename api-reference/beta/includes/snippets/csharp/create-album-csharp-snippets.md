@@ -11,7 +11,7 @@ var driveItem = new DriveItem
 	Name = "My Day at the Beach",
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"@name.conflictBehavior","rename"}
+		{"@microsoft.graph.conflictBehavior","rename"}
 	},
 	Bundle = new Bundle
 	{

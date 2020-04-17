@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementExchangeDeviceClass resource type"
 description: "Device Class in Exchange."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

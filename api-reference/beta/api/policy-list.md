@@ -4,7 +4,7 @@ description: "Get all policy objects in the directory."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "dkershaw10"
 ---
 
 # List Policies

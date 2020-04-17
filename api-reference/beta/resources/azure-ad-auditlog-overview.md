@@ -3,8 +3,8 @@ title: "Azure AD audit log API overview"
 description: "Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs."
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "kholtz"
 ---
 
 # Azure AD audit log API overview

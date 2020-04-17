@@ -1,8 +1,8 @@
 ---
 title: "deviceManagement resource type"
-description: "The deviceManagement resource represents a container whose contents vary according to workflow, including:  "
+description: "The deviceManagement resource represents a container whose contents vary according to workflow."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -137,7 +137,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |userExperienceAnalyticsDeviceStartupHistory|userExperienceAnalyticsDeviceStartupHistory collection|User experience analytics device Startup History|
 |userExperienceAnalyticsDeviceStartupProcesses|userExperienceAnalyticsDeviceStartupProcess collection|User experience analytics device Startup Processes|
 |userExperienceAnalyticsDeviceStartupProcessPerformance|userExperienceAnalyticsDeviceStartupProcessPerformance collection|User experience analytics device Startup Process Performance|
-|userExperienceAnalyticsStartupScoreHistory|userExperienceAnalyticsStartupScoreHistory collection|User experience analytics device Startup Score History|
 |**Enrollment**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) collection|This collections of multiple DEP tokens per-tenant.|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|The imported device identities.|
@@ -173,8 +172,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |derivedCredentials|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) collection|Collection of Derived credential settings associated with account.|
 |**Remote access**|
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) collection|Collection of PFX certificates associated with a user.|
-|**Remote assistance**|
-|remoteAssistancePartners|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) collection|The remote assist partners.|
 |**Role based access control (RBAC)**|
 |resourceOperations|[resourceOperation](../resources/intune-rbac-resourceoperation.md) collection|The Resource Operations.|
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) collection|The Role Assignments.|

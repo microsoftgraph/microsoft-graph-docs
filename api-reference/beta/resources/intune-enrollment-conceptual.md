@@ -55,4 +55,3 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Windows device usage type](intune-enrollment-windowsdeviceusagetype.md)
 - [Windows enrollment status screen settings](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Windows user type](intune-enrollment-windowsusertype.md)
-

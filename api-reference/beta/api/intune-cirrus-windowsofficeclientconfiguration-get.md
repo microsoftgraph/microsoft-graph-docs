@@ -2,7 +2,7 @@
 title: "Get windowsOfficeClientConfiguration"
 description: "Get a specific non-security policy windowsOfficeClientConfiguration object."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
@@ -36,7 +36,7 @@ GET /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -98,8 +98,6 @@ Content-Length: 1144
   }
 }
 ```
-
-
 
 
 

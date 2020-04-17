@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var {id} = await graphClient.Policies["activityBasedTimeoutPolicies"].{id}
+var activityBasedTimeoutPolicy = await graphClient.Policies.ActivityBasedTimeoutPolicies["{id}"]
 	.Request()
 	.GetAsync();
 

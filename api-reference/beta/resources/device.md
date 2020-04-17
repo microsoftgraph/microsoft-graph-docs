@@ -1,8 +1,8 @@
 ---
 title: "device resource type"
-description: "Represents a device registered in the directory. Devices are created in the cloud using the Device Registration Service or by Intune. They're used by conditional access policies for multi-factor authentication. These devices can range from desktop and laptop machines to phones and tablets. Inherits from directoryObject."
+description: "Represents a device registered in the directory."
 localization_priority: Normal
-author: "davidmu1"
+author: "spunukol"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

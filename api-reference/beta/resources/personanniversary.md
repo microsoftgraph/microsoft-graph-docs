@@ -19,17 +19,17 @@ Inherits from [itemFacet](itemFacet.md).
 
 ## Methods
 
-| Method                                                   | Return Type                               | Description                                                    |
-|:---------------------------------------------------------|:------------------------------------------|:---------------------------------------------------------------|
+| Method                                                   | Return Type                               | Description                                                              |
+|:---------------------------------------------------------|:------------------------------------------|:-------------------------------------------------------------------------|
 | [Get personAnniversary](../api/personanniversary-get.md) | [personAnniversary](personanniversary.md) | Read the properties and relationships of a **personAnniversary** object. |
-| [Update](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | Update a **personAnniversary** object.                               |
-| [Delete](../api/personanniversary-delete.md)             | None                                      | Delete a **personAnniversary** object.                               |
+| [Update](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | Update a **personAnniversary** object.                                   |
+| [Delete](../api/personanniversary-delete.md)             | None                                      | Delete a **personAnniversary** object.                                   |
 
 ## Properties
 
 | Property     | Type        | Description                                                      |
 |:-------------|:------------|:-----------------------------------------------------------------|
-|date          |Date         | Contains the date associated with the anniversary type.         |
+|date          |Date         | Contains the date associated with the anniversary type.          |
 |type          |string       | Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## Relationships
@@ -38,7 +38,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource. 
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

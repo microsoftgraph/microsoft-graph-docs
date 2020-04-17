@@ -2,7 +2,7 @@
 title: "officeConfigurationAssignmentTarget resource type"
 description: "Office Client Configuration Assignment Target."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---

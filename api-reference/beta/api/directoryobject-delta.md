@@ -2,7 +2,7 @@
 title: "directoryObject: delta"
 description: "Get newly created, updated, or deleted directory objects of the following types: user, group and organizational contact, in a single delta query. See Track changes for details."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted directory objects of the following types: [user](../resources/user.md), [group](../resources/group.md) and [organizational contact](../resources/orgcontact.md), in a single delta query. See [Track changes](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted directory objects of the following types: [user](../resources/user.md), [group](../resources/group.md) and [organizational contact](../resources/orgcontact.md), in a single delta query. See [change tracking](/graph/delta-query-overview) for details.
 
 ## Permissions
 

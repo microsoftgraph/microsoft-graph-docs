@@ -18,6 +18,8 @@ var @event = new Event
 	Recurrence = null,
 	ICalUId = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
+	IsOnlineMeeting = true,
+	OnlineMeetingProvider = "teamsForBusiness",
 	IsReminderOn = true
 };
 

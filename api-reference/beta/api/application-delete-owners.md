@@ -1,7 +1,7 @@
 ---
 title: "Remove owner"
 description: "Remove an owner from an application."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/{id}/owners/{id}/$ref
+DELETE /applications/{id}/owners/{id}/$ref
 
 ```
 ## Request headers
@@ -55,14 +55,7 @@ The following example shows the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
-Content-type: application/json
-Content-length: 30
-
-{
-"@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
-}
-
+DELETE https://graph.microsoft.com/beta/applications/{id}/owners/{id}/$ref
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-delete-owners-csharp-snippets.md)]

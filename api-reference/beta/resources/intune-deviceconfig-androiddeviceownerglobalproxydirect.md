@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerGlobalProxyDirect resource type"
 description: "Android Device Owner Global Proxy Direct."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "Update event"
 description: "Update the properties of the event object."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -60,9 +60,11 @@ In the request body, supply the values for relevant fields that should be update
 | end|DateTimeTimeZone|The date, time, and time zone that the event ends.|
 |importance|String|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
+|isOnlineMeeting|Boolean| `True` if this event has online meeting information, `false` otherwise. Default is false. Optional.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |location|[Location](../resources/location.md)|The location of the event.|
 |locations|[location](../resources/location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
+|onlineMeetingProvider|onlineMeetingProviderType| Represents the online meeting service provider. The possible values are `teamsForBusiness`, `skypeForBusiness`, and `skypeForConsumer`. Optional. |
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
@@ -84,7 +86,7 @@ If successful, this method returns a `200 OK` response code and updated [event](
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request.
 
@@ -108,6 +110,8 @@ Content-length: 285
   "recurrence": null,
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true
 }
 ```
@@ -126,7 +130,7 @@ Content-length: 285
 ---
 
 
-##### Response
+### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -149,7 +153,14 @@ Content-length: 285
   "recurrence": null,  
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
+  "isReminderOn": true,
+  "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
+        "conferenceId": "177513992",
+        "tollNumber": "+91 22 6241 6885"
+  }
 }
 ```
 
