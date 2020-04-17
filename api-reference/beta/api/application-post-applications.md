@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Create a new [application](../resources/application.md) object.
 
 >[!NOTE]
-> If you are configuring [Azure AD Application Proxy](https://aka.ms/whyappproxy) to provide secure remote access to an application, this a two-step process to setup. After [creating the application](../api/application-post-applications.md), the Application Proxy settings for can be configured by [updating the application's](../api/application-update.md) onPremisesPublishing properties.
+> If you are configuring [Azure AD Application Proxy](https://aka.ms/whyappproxy) to provide secure remote access to an application, this a two-step process to setup. After [creating the application](../api/application-post-applications.md), the Application Proxy settings are configured by [updating the application's](../api/application-update.md) onPremisesPublishing properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
