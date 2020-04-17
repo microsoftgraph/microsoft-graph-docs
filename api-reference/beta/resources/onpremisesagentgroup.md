@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents on-premises agents group. Agent groups enable a tenant admin to assign specific [agents](onpremisesagent.md) to serve specific [published on-premises resources](publishedresource.md).
+Represents on-premises agents group. Tenant administrators can assign specific [on-premises agents](onpremisesagent.md) to serve specific [published on-premises resources](publishedresource.md).
 
 ## Methods
 
@@ -22,8 +22,10 @@ Represents on-premises agents group. Agent groups enable a tenant admin to assig
 | [List onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups collection | Get an **onPremisesAgentGroup** objects collection. |
 | [Get onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Read the properties and relationships of an **onPremisesAgentGroup** object. |
 | [Create onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new **onPremisesAgentGroup**. |
+|[Add onPremisesAgent](../api/onpremisesagent-post-agentgroups.md) |[connector](connector.md)| Add an onPremisesAgent to the onPremisesAgentGroup by posting to the onPremisesAgentGroup collection. |
 | [Update onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Update an **onPremisesAgentGroup** object. |
 | [Delete  onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | None | Delete an **onPremisesAgentGroup** object. |
+
 
 ## Properties
 
@@ -32,7 +34,7 @@ Represents on-premises agents group. Agent groups enable a tenant admin to assig
 |displayName|String|Display name of the **onPremisesAgentGroup**.|
 |id|String| The object ID of the **onPremisesAgentGroup**. Read-only.|
 |isDefault|Boolean|Indicates if the **onPremisesAgentGroup** is the default agent group. Only a single agent group can be the default **onPremisesAgentGroup** and is set by the system.|
-|publishingType|string| Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|string| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## Relationships
 
