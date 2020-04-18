@@ -33,7 +33,7 @@ Represents on-premises published resource. A tenant administrator could publish 
 |:-------------|:------------|:------------|
 |displayName|String| Display Name of the publishedResource.|
 |id|String| The object id of the publishedResource. Read-only.|
-|publishingType|string| Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|string| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 |resourceName|String|Name of the publishedResource.|
 
 ## Relationships
