@@ -105,11 +105,34 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+  "allowedAudiences": "organization",
   "categories": [
     "professional"
   ],
+  "collaborationTags": [],
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
   "displayName": "Artificial Intelligence",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "Profile",
+        "id": null
+    }
+  },
   "proficiency": "advancedProfessional",
+  "source": null,
   "webUrl": "https://www.microsoft.com/aischool"
 }
 ```

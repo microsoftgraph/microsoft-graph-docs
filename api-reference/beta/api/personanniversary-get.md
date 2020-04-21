@@ -21,16 +21,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Delegated (work or school account)     | User.Read, User.ReadWrite                                                        |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite                                                        |
+| Application                            | User.Read.All, User.ReadWrite.All                                                |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /user/profile/anniversaries/{id}
+GET /me/profile/anniversaries/{id}
 ```
 
 ## Optional query parameters
@@ -50,6 +50,7 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -106,8 +107,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "allowedAudiences": "organization",
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "date": "1980-01-08",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "source": "SharePoint UPA",
+  "type": "birthday"
 }
 ```
 

@@ -19,11 +19,11 @@ Retrieve the properties and relationships of a [languageProficiency](../resource
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -50,6 +50,7 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -88,7 +89,6 @@ GET https://graph.microsoft.com/beta/me/profile/languages/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -106,9 +106,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+    "allowedAudiences": "contacts",
+    "createdBy": {
+        "device": null,
+        "user": null,
+        "application": {
+            "displayName": "AAD",
+            "id": null
+        }
+    },
+    "createdDateTime": "2020-02-18T16:07:14Z",
+    "displayName": "English (United States)",
+    "id": "7a521b6f-3ab8-4b94-9099-7f8eb4447f8e",
+    "inference": null,
+    "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+    "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+    "reading": "advancedProfessional",
+    "source": "LinkedIn",
+    "spoken": "advancedProfessional",
+    "tag": "en-US",
+    "written": "advancedProfessional",
 }
 ```
 

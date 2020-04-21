@@ -40,7 +40,6 @@ PATCH /me/profile/webAccounts/{id}
 | Authorization  | Bearer {token}. Required.   |
 | Content-Type   | application/json. Required. |
 
-
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.

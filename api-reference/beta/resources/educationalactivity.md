@@ -64,8 +64,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "completionMonthYear": "20-05-2012",
-  "endMonthYear": "20-05-2012",
+  "completionMonthYear": "2012-05-20",
+  "endMonthYear": "2012-05-20",
   "institution": {
   "description": "Leading educational institute for consulting and IT training",
   "displayName": "Microsoft University",
@@ -91,7 +91,7 @@ The following is a JSON representation of the resource.
     "notes": null,
     "webUrl": "www.microsoftuniversity.com/master-of-it-consulting"
   },
-  "startMonthYear": "01-08-2010"
+  "startMonthYear": "2010-08-01"
 }
 ```
 

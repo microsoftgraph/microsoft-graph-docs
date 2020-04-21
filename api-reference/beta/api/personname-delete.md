@@ -35,7 +35,7 @@ DELETE /me/profile/names/{id}
 
 ## Request headers
 
-| Name           |Description                  | 
+| Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
 | Content-Type   | application/json. Required. |

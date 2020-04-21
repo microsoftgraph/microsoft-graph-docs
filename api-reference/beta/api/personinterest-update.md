@@ -73,11 +73,8 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "personal"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
 }
 ```
 # [C#](#tab/csharp)
@@ -112,12 +109,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "allowedAudiences": "organization",
+  "categories": ["Personal", "Sports"],
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "displayName": "European Football",
+  "description": "European football, or football is one of the world's most popular sports.",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "source": "SharePoint UPA",
+  "webUrl": "https://www.uefa.com"
 }
 ```
 

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/emails/{id} 
+PATCH /me/profile/emails/{id}
 ```
 
 ## Request headers
@@ -71,9 +71,8 @@ PATCH https://graph.microsoft.com/beta/me/profile/emails/{id}
 Content-type: application/json
 
 {
-  "address": "address-value",
-  "displayName": "displayName-value",
-  "type": "type-value"
+
+  "displayName": "Primary Email Address"
 }
 ```
 # [C#](#tab/csharp)
@@ -108,9 +107,31 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "address": "address-value",
-  "displayName": "displayName-value",
-  "type": "type-value"
+  "address": "irenak@contoso.com",
+  "allowedAudiences": "organization",
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "AAD",
+        "id": null
+    }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "displayName": "Primary Email Address",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "source": null,
+  "type": "mobile"
 }
 ```
 

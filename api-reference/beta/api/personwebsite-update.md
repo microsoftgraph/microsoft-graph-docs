@@ -71,11 +71,10 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "sports"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "Lyn Damer are a football club in the Norwegian womens elite division.",
+  "webUrl": "https://www.lyndamer.no"
 }
 ```
 
@@ -97,11 +96,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "sports"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "Lyn Damer are a football club in the Norwegian womens elite division.",
+  "displayName": "Lyn Damer",
+  "webUrl": "https://www.lyndamer.no"
 }
 ```
 

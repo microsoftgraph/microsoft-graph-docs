@@ -44,11 +44,13 @@ PATCH /me/profile/languages/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description                                                                                                                                                 |
-|:-------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String       | Contains the long-form name for the language in question.                                                                                                   |
-|proficiency   |string       | Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
-|tag           |String       | Contains the 4 character BCP47 name for the language (en-US, no-NB, en-AU)                                                                                  |
+| Property             | Type                                        | Description                                                                                                                                                                                    |
+|:---------------------|:--------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|displayName           |String                                       | Contains the long-form name for the language.                                                                                                                                                  |
+|reading               |string                                       | Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.                                   |
+|spoken                |string                                       | Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.                                   |
+|tag                   |String                                       | Contains the four-character BCP47 name for the language (en-US, no-NB, en-AU).                                                                                                                 |
+|written               |string                                       | Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.                                   |
 
 ## Response
 
@@ -71,9 +73,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/languages/{id}
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+  "spoken": "advancedProfessional"
 }
 ```
 # [C#](#tab/csharp)
@@ -108,9 +108,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+    "allowedAudiences": "contacts",
+    "createdBy": {
+        "device": null,
+        "user": null,
+        "application": {
+            "displayName": "AAD",
+            "id": null
+        }
+    },
+    "createdDateTime": "2020-02-18T16:07:14Z",
+    "displayName": "English (United States)",
+    "id": "7a521b6f-3ab8-4b94-9099-7f8eb4447f8e",
+    "inference": null,
+    "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+    "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+    "reading": "advancedProfessional",
+    "source": "LinkedIn",
+    "spoken": "advancedProfessional",
+    "tag": "en-US",
+    "written": "advancedProfessional",
 }
 ```
 
