@@ -45,7 +45,7 @@ This resource type inherits from [itemFacet](itemfacet.md).
 
 ## Relationships
 
-None 
+None.
 
 ## JSON representation
 

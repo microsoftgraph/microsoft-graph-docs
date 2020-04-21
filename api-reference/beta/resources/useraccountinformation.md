@@ -19,8 +19,8 @@ Inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 
-| Method                                                             | Return Type                                         | Description                                                         |
-|:-------------------------------------------------------------------|:----------------------------------------------------|:--------------------------------------------------------------------|
+| Method                                                             | Return Type                                         | Description                                                                   |
+|:-------------------------------------------------------------------|:----------------------------------------------------|:------------------------------------------------------------------------------|
 | [Get userAccountInformation](../api/useraccountinformation-get.md) | [userAccountInformation](useraccountinformation.md) | Read the properties and relationships of a **userAccountInformation** object. |
 
 ## Properties
@@ -87,7 +87,7 @@ The following is a JSON representation of the resource.
         "locale": "en-AU",
         "displayName": "English (Australian)"
       },
-  "source": null,    
+  "source": null,
   "userPrincipalName": "ikoren@contoso.com"
 }
 ```
