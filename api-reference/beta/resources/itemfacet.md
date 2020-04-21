@@ -22,7 +22,7 @@ Represents the abstract base type that all resource types in the [profile](profi
 |allowedAudiences      |string                                  | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
 |createdBy             |[identitySet](identityset.md)           | When the entity was originally created.                                                                                                                                                        |
 |createdDateTime       |DateTimeOffset                          |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|id                    |String                                  | Read-only.                                                                                                                                                                                     | 
+|id                    |String                                  | Read-only.                                                                                                                                                                                     |
 |inference             |[inferenceData](inferencedata.md)       | Contains inference detail if the entity is inferred.                                                                                                                                           |
 |lastModifiedBy        |[identitySet](identityset.md)           | Identifier of the partner or user who last modified the entity.                                                                                                                                |
 |lastModifiedDateTime  |DateTimeOffset                          |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -48,13 +48,31 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "allowedAudiences": "string",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "inference": {"@odata.type": "microsoft.graph.inferenceData"},
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)"
+  "allowedAudiences": "organization",
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": {
+    "confidenceScore": "0.373334442213456",
+    "userHasVerifiedAccuracy": "False"
+  },
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "source": "SharePoint UPA",
 }
 ```
 

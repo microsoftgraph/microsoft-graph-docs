@@ -39,10 +39,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "description": "String",
-  "displayName": "String",
-  "location": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "webUrl": "String"
+  "description": "Our State is Colorado, but Rams are built on a global scale. We unite in Fort Collins, where our diverse backgrounds, cultures, and experiences strengthen our community.",
+  "displayName": "Colorado State University",
+  "location": null,
+  "webUrl": "https:www.colostate.edu"
 }
 ```
 

@@ -36,8 +36,8 @@ Inherits from [itemFacet](itemfacet.md).
 |createdBy             |[identitySet](identityset.md)                | When the entity was originally created.                                                                                                                                                        |
 |createdDateTime       |DateTimeOffset                               |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |detail                |[positionDetail](positiondetail.md)          | Contains detail about the user's role on the project.                                                                                                                                          |
-|displayName           |String                                       |Contains a friendly name for the project.                                                                                                                                                       | 
-|id                    |String                                       | Read-only.                                                                                                                                                                                     | 
+|displayName           |String                                       |Contains a friendly name for the project.                                                                                                                                                       |
+|id                    |String                                       | Read-only.                                                                                                                                                                                     |
 |inference             |[inferenceData](inferencedata.md)            | Contains inference detail if the entity is inferred.                                                                                                                                           |
 |lastModifiedBy        |[identitySet](identityset.md)                | Identifier of the partner or user who last modified the entity.                                                                                                                                |
 |lastModifiedDateTime  |DateTimeOffset                               |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -78,7 +78,7 @@ The following is a JSON representation of the resource.
     },
     "createdDateTime": "2020-02-18T16:07:14Z",
     "detail": null,
-    "displayName": "Corporate Marketing Guidelines Review",    
+    "displayName": "Corporate Marketing Guidelines Review",
     "id": "f7cb9d97-149a-4113-a67c-5ea8b08b7ec4",
     "inference": null,
     "lastModifiedBy": {
@@ -90,7 +90,7 @@ The following is a JSON representation of the resource.
         }
     },
     "lastModifiedDateTime": "2020-02-18T16:07:14Z",
-    "source": null,    
+    "source": null,
     "sponsors": []
 }
 ```

@@ -41,12 +41,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "department": "String",
-  "displayName": "String",
-  "officeLocation": "String",
-  "pronunciation": "String",
-  "webUrl": "String"
+  "displayName": "Contoso Ltd.",
+  "pronunciation": null,
+  "department": "Finance",
+  "officeLocation": "12/1110",
+  "webUrl": null,
+  "address": {
+      "type": "business",
+      "postOfficeBox": null,
+      "street": "30 Isabella St., Second Floor",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "countryOrRegion": "US",
+      "postalCode": "15212"
+  }
 }
 ```
 

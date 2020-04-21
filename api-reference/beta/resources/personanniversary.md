@@ -19,18 +19,26 @@ Inherits from [itemFacet](itemFacet.md).
 
 ## Methods
 
-| Method                                                   | Return Type                               | Description                                                    |
-|:---------------------------------------------------------|:------------------------------------------|:---------------------------------------------------------------|
+| Method                                                   | Return Type                               | Description                                                              |
+|:---------------------------------------------------------|:------------------------------------------|:-------------------------------------------------------------------------|
 | [Get personAnniversary](../api/personanniversary-get.md) | [personAnniversary](personanniversary.md) | Read the properties and relationships of a **personAnniversary** object. |
-| [Update](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | Update a **personAnniversary** object.                               |
-| [Delete](../api/personanniversary-delete.md)             | None                                      | Delete a **personAnniversary** object.                               |
+| [Update](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | Update a **personAnniversary** object.                                   |
+| [Delete](../api/personanniversary-delete.md)             | None                                      | Delete a **personAnniversary** object.                                   |
 
 ## Properties
 
-| Property     | Type        | Description                                                      |
-|:-------------|:------------|:-----------------------------------------------------------------|
-|date          |Date         | Contains the date associated with the anniversary type.         |
-|type          |string       | Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
+| Property             | Type                                        | Description                                                                                                                                                                                    |
+|:---------------------|:--------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|allowedAudiences      |string                                       | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
+|createdBy             |[identitySet](identityset.md)                | When the entity was originally created.                                                                                                                                                        |
+|createdDateTime       |DateTimeOffset                               |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|date                  |Date                                         | Contains the date associated with the anniversary type.                                                                                                                                        |
+|id                    |String                                       | Read-only.                                                                                                                                                                                     |
+|inference             |[inferenceData](inferencedata.md)            | Contains inference detail if the entity is inferred.                                                                                                                                           |
+|lastModifiedBy        |[identitySet](identityset.md)                | Identifier of the partner or user who last modified the entity.                                                                                                                                |
+|lastModifiedDateTime  |DateTimeOffset                               |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|source                |[personDataSource](personDataSource.md)      |Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                 |
+|type                  |string                                       | Possible values are: `birthday`, `wedding`, `unknownFutureValue`.                                                                                                                              |
 
 ## Relationships
 
@@ -38,7 +46,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource. 
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -46,13 +54,36 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.personAnniversary",
-  "baseType": ""
+  "baseType": "microsoft.graph.itemfacet",
+  "keyProperty": "id"
 }-->
 
 ```json
 {
-  "date": "String (timestamp)",
-  "type": "string"
+  "allowedAudiences": "organization",
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "date": "1980-01-08",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "source": "SharePoint UPA",
+  "type": "birthday"
 }
 ```
 
