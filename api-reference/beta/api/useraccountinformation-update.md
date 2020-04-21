@@ -72,13 +72,10 @@ PATCH https://graph.microsoft.com/beta/me/profile/account/{id}
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
   "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
+    "locale": "en-AU",
+    "displayName": "English (Australian)"
   },
-  "userPrincipalName": "userPrincipalName-value"
 }
 ```
 # [C#](#tab/csharp)
@@ -113,13 +110,35 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
-  "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
+  "allowedAudiences": "organization",
+  "ageGroup": "3",
+  "countryCode": "NO",
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "AAD",
+        "id": null
+    }
   },
-  "userPrincipalName": "userPrincipalName-value"
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "preferredLanguageTag": {
+        "locale": "en-AU",
+        "displayName": "English (Australian)"
+      },
+  "source": null,
+  "userPrincipalName": "ikoren@contoso.com"
 }
 ```
 

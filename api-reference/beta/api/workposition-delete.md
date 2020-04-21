@@ -40,7 +40,6 @@ DELETE /me/profile/positions/{id}
 | Authorization  | Bearer {token}. Required.   |
 | Content-Type   | application/json. Required. |
 
-
 ## Request body
 
 Do not supply a request body for this method.
@@ -77,7 +76,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/positions/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
