@@ -9668,6 +9668,15 @@
             href: api/unifiedroleassignmentmultiple-update.md
           - name: Delete 
             href: api/unifiedroleassignmentmultiple-delete.md
+      - name: SCIM
+        href: resources/user.md
+        items:
+        - name: List users
+          href: api/user-list-SCIM.md
+        - name: Create user 
+          href: api/user-post-users-scim.md
+        - name: Get user 
+          href: api/user-get-SCIM.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
