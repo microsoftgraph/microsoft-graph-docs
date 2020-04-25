@@ -16,7 +16,7 @@ Retrieve a list of [user](../resources/user.md) objects.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /scim/users
+GET /users
 ```
 
 ## Request headers
@@ -45,10 +45,9 @@ By default, only only the id and userName are returned.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_users"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/scim/users
+GET https://graph.microsoft.com/beta/users
 ```
 
 ##### Response
