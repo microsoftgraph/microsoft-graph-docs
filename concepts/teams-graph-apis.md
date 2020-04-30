@@ -9,7 +9,9 @@ doc_type: conceptualPageType
 
 # Use the Microsoft Graph API to work with Microsoft Teams
 
-[!INCLUDE [beta-disclaimer](microsoft-graph-docs/api-reference/includes/beta-disclaimer.md)]
+<!-- markdownlint-disable MD041-->
+
+[!IMPORTANT] APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
 Microsoft Teams is a chat-based workspace in Office 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more.
 
