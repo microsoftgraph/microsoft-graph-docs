@@ -17,13 +17,13 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 | Resource | Methods |
 |:---------------|:--------|
-|[team](../resources/team.md)| [List your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](/graph/api/group-delete?view=graph-rest-1.0), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [remove owner](../api/group-delete-owners.md), [get files](drive.md), [get notebook](/graph/api/resources/notebook?view=graph-rest-1.0), [get plans](plannergroup.md), [get calendar](event.md) |
-|[channel](../resources/channel.md)|[List](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [update](../api/channel-patch.md), [delete](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[List](../api/teamstab-list.md), [create](../api/teamstab-add.md), [read](../api/teamstab-get.md), [update](../api/teamstab-update.md), [delete](../api/teamstab-delete.md) |
-|[teamsApp](../resources/teamsapp.md)|[List](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
-|[chatMessage](../resources/chatmessage.md) (preview)| [List](../api/channel-list-messages.md), [send](../api/channel-post-messages.md), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
+|[team](api-reference/v1.0/resources/team.md)| [List your teams](api-reference/v1.0/api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](api-reference/v1.0/api/team-put-teams.md), [read](api-reference/v1.0/api/team-get.md), [update](api-reference/v1.0/api/team-update.md), [delete](/graph/api/group-delete?view=graph-rest-1.0), [clone](api-reference/v1.0/api/team-clone.md), [archive](api-reference/v1.0/api/team-archive.md), [unarchive](api-reference/v1.0/api/team-unarchive.md) |
+|[group](api-reference/v1.0/resources/group.md)| [Add member](api-reference/v1.0/api/group-post-members.md), [remove member](api-reference/v1.0/api/group-delete-members.md), [add owner](api-reference/v1.0/api/group-post-owners.md), [remove owner](api-reference/v1.0/api/group-delete-owners.md), [get files](drive.md), [get notebook](/graph/api/resources/notebook?view=graph-rest-1.0), [get plans](plannergroup.md), [get calendar](event.md) |
+|[channel](api-reference/v1.0/resources/channel.md)|[List](api-reference/v1.0/api/channel-list.md), [create](api-reference/v1.0/api/channel-post.md), [read](api-reference/v1.0/api/channel-get.md), [update](api-reference/v1.0/api/channel-patch.md), [delete](../api/channel-delete.md)|
+|[teamsTab](api-reference/v1.0/resources/teamstab.md) |[List](api-reference/v1.0/api/teamstab-list.md), [create](api-reference/v1.0/api/teamstab-add.md), [read](api-reference/v1.0/api/teamstab-get.md), [update](api-reference/v1.0/api/teamstab-update.md), [delete](api-reference/v1.0/api/teamstab-delete.md) |
+|[teamsApp](api-reference/v1.0/resources/teamsapp.md)|[List](api-reference/v1.0/api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](api-reference/v1.0/api/teamsapp-delete.md)|
+|[teamsAppInstallation](api-reference/v1.0/resources/teamsappinstallation.md)| [List](api-reference/v1.0/api/teamsappinstallation-list.md), [install](api-reference/v1.0/api/teamsappinstallation-add.md), [upgrade](api-reference/v1.0/api/teamsappinstallation-delete.md), [remove](api-reference/v1.0/api/teamsappinstallation-delete.md) |
+|[chatMessage](api-reference/v1.0/resources/chatmessage.md) (preview)| [List](api-reference/v1.0/api/channel-list-messages.md), [send](api-reference/v1.0/api/channel-post-messages.md), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
 |[call](/graph/api/resources/communications-api-overview.md) (preview) | [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
 |[schedule](/graph/api/resources/schedule?view=graph-rest-beta) (preview)| [Create or replace](/graph/api/team-put-schedule?view=graph-rest-beta), [get](/graph/api/schedule-get?view=graph-rest-beta), [share](/graph/api/schedule-share?view=graph-rest-beta) |
 |[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [List](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [Get](/graph/api/schedulinggroup-get?view=graph-rest-beta), [Replace](/graph/api/schedulinggroup-put?view=graph-rest-beta), [Delete](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
@@ -47,7 +47,7 @@ See also [throttling limits for Microsoft Teams services](/graph/throttling).
 
 ## Teams and groups
 
-In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Office 365 groups address the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and Office 365 groups, such as group calendar, files, notes, photo, plans, and so on. The main difference between a [team](team.md) and an Office 365 group is the mode of communication between members. Team members communicate by persistent chat in the context of a specific team. Office 365 group members communicate by group conversations, which are email conversations that occur in the context of a group in Outlook.
+In Microsoft Graph, Microsoft Teams is represented by a [group](api-reference/v1.0/resources/group.md) resource. Both Microsoft Teams and Office 365 groups address the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and Office 365 groups, such as group calendar, files, notes, photo, plans, and so on. The main difference between a [team](team.md) and an Office 365 group is the mode of communication between members. Team members communicate by persistent chat in the context of a specific team. Office 365 group members communicate by group conversations, which are email conversations that occur in the context of a group in Outlook.
 
 Any group that has a team has a **resourceProvisioningOptions** property that contains "Team".
 
@@ -57,9 +57,9 @@ otherwise, you'll get incorrect results when you list all teams.
 
 The following are the differences at the API level between teams and groups:
 
-- Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the [channel](../resources/channel.md) and [chatMessage](../resources/chatmessage.md) resources.
-- Group conversations are available only to Office 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources.
-- The [List joined teams](../api/user-list-joinedteams.md) method applies only to Microsoft Teams.
+- Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the [channel](api-reference/v1.0/resources/channel.md) and [chatMessage](api-reference/v1.0/resources/chatmessage.md) resources.
+- Group conversations are available only to Office 365 groups. This feature is hierarchically represented by the [conversation](api-reference/v1.0/resources/conversation.md), [conversationThread](api-reference/v1.0/resources/conversationthread.md), and [post](api-reference/v1.0/resources/post.md) resources.
+- The [List joined teams](api-reference/v1.0/api/user-list-joinedteams.md) method applies only to Microsoft Teams.
 - [Calling and online meeting APIs](./communications-api-overview.md) apply only to Microsoft Teams.
 - See also the [known issues](/graph/known-issues) for these APIs.
 
@@ -67,15 +67,15 @@ The following are the differences at the API level between teams and groups:
 
 ## Membership changes in Microsoft Teams
 
-To add members and owners to a team, change the membership of the [group](../resources/group.md) with the same ID.
+To add members and owners to a team, change the membership of the [group](api-reference/v1.0/resources/group.md) with the same ID.
 
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Add member](../api/group-post-members.md)	| POST	    | /groups/{id}/members/$ref  |
-| [Remove member](../api/group-delete-members.md)	| DELETE	| /groups/{id}/members/{userId}/$ref |
-| [Add owner](../api/group-post-owners.md)     | POST	    | /groups/{id}/owners/$ref |
-| [Remove owner](../api/group-delete-owners.md)	| DELETE	| /groups/{id}/owners/{userId}/$ref |
-| [Update team](../api/team-update.md)	| PATCH     | /teams/{id} |
+| [Add member](api-reference/v1.0/api/group-post-members.md)	| POST	    | /groups/{id}/members/$ref  |
+| [Remove member](api-reference/v1.0/api/group-delete-members.md)	| DELETE	| /groups/{id}/members/{userId}/$ref |
+| [Add owner](api-reference/v1.0/api/group-post-owners.md)     | POST	    | /groups/{id}/owners/$ref |
+| [Remove owner](api-reference/v1.0/api/group-delete-owners.md)	| DELETE	| /groups/{id}/owners/{userId}/$ref |
+| [Update team](api-reference/v1.0/api/team-update.md)	| PATCH     | /teams/{id} |
 
 We recommend that when you add an owner, you also add that user as a member.
 If a team has an owner who is not also a member, ownership and membership changes might not show up immediately in Microsoft Teams.
@@ -108,8 +108,8 @@ If none of those users are signed in to the Microsoft Teams application/website,
 ## Polling requirements
 
 If your app polls to see whether a resource has changed, you can only do that once per day. 
-([teamsAsyncOperation](teamsasyncoperation.md) is an exception in that it's intended to be polled frequently.) 
-If you need to hear about changes more frequently than that, you should [create a subscription](../api/subscription-post-subscriptions.md) to that resource and receive change notifications (webhooks). 
+([teamsAsyncOperation](api-reference/beta/resources/teamsasyncoperation.md) is an exception in that it's intended to be polled frequently.) 
+If you need to hear about changes more frequently than that, you should [create a subscription](api-reference/v1.0/api/subscription-post-subscriptions.md) to that resource and receive change notifications (webhooks). 
 If you don't find support for the type of subscription you need, we encourage you to provide feedback via [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
 
 When polling for new messages, you must specify a date range where supported. For details, see [get channel messages delta](/graph/api/chatmessage-delta?view=graph-rest-beta).
