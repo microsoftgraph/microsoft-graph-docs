@@ -23,16 +23,20 @@ Represents a document being printed.
 | [Create uploadSession](../api/printdocument-put-uploadsession.md) | [printUploadSession](printuploadsession.md) | Create an upload session to upload data to a [printDocument](printdocument.md). |
 | [Delete uploadSession](../api/printdocument-delete-uploadsession.md) | None | Read the properties and relationships of the printer object. |
 | [Upload data](../api/printdocument-post-uploadsession.md) | [printUploadSession](printuploadsession.md) | Upload data to a [printDocument](printdocument.md) by using an existing upload session. |
-| [uploadData](../api/printdocument-uploaddata.md) | None | Upload a single binary segment of the **printDocument**. Deprecated. |
 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The document's identifier. Read-only.|
 |displayName|String|The document's name. Read-only.|
-|mimeType|String|The document's MIME type. Read-only.|
-|sizeInBytes|Int64|The document's size in bytes. Read-only.|
-|documentConfiguration|[printerDocumentConfiguration](printerdocumentconfiguration.md) |A group of settings that a printer should use to print a document. Read-only.|
+|contentType|String|The document's MIME type. Read-only.|
+|size|Int64|The document's size in bytes. Read-only.|
+|configuration|[printerDocumentConfiguration](printerdocumentconfiguration.md) |A group of settings that a printer should use to print a document. Read-only.|
+
+## Relationships
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|uploadSession|[printUploadSession](printuploadsession.md) collection|The upload session used to upload data to this document.|
 
 ## JSON representation
 
@@ -49,19 +53,10 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
-  "mimeType": "String",
-  "sizeInBytes": 12345,
-  "documentConfiguration": {
-    "pageRanges": [ {"@odata.type": "microsoft.graph.printPageRange"} ],
-    "printQuality": "String",
-    "printResolutionInDpi": 123456,
-    "feedDirection": "String",
-    "orientation": "String",
-    "duplexConfiguration": "String",
-    "copies": 123456,
-    "colorConfiguration": "String",
-  }
+  "displayName": "String",
+  "contentType": "String",
+  "size": 12345,
+  "configuration": {"@odata.type": "microsoft.graph.printDocumentConfiguration"}
 }
 
 ```
