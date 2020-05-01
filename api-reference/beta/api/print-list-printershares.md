@@ -103,7 +103,7 @@ Content-length: 269
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List printershares",
+  "description": "List printerShares",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
