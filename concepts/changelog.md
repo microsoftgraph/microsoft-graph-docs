@@ -17,14 +17,10 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Change | beta | Changed the type of the **shares** property to **printerShare collection** on the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
-| Change | beta | Deprecated the **name** property on the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity. |
-| Change | beta | Deprecated the **name** and **acceptingJobs** properties on the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
-| Change | beta | Deprecated the **printerShares** property on the [print](/graph/api/resources/print?view=graph-rest-beta) entity.<br/> Soon, URL paths such as "/print/printerShares/\*" will stop working. Use "/print/shares/\*" instead. |
-| Change | beta | Deprecated the **registeredBy** property on the [printer](/graph/api/resources/printerShare?view=graph-rest-beta) entity. |
-| Addition | beta | Added the **shares** property on the [print](/graph/api/resources/print?view=graph-rest-beta) entity. |
-| Addition | beta | Added **displayName** and **isAcceptingJobs** properties to the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
-| Addition | beta | Added properties to the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity: <br/> <ul><li>**manufacturer**</li><li>**model**</li><li>**isAcceptingJobs**</li><li>**defaults**</li><li>**capabilities**</li><li>**location**</li><li>**status**</li><li>**jobs**</li></ul> |
+| Change | beta | Renamed properties on the [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) entity: <br/> <ul><li>**name** -> **displayName**</li><li>**mimeType** -> **contentType**</li><li>**sizeInBytes** -> **size**</li><li>**documentConfiguration** -> **configuration**</li></ul> |
+| Addition | v1.0 | Added new entity [printUploadSession](/graph/api/resources/printuploadsession?view=graph-rest-1.0). |
+| Addition | beta | Added the **uploadSession** relationship to the [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) entity. |
+| Addition | beta | Added methods to the [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) entity: <br/> <ul><li>**Get upload session**</li><li>**Create upload session**</li><li>**Delete upload session**</li><li>**Upload data**</li></ul> |
 
 ### Identity and access (Azure AD)
 

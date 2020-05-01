@@ -1,5 +1,5 @@
 ---
-title: Get shares
+title: Get printerShares
 description: Retrieve a list of printer shares.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List shares
+# List printerShares
 
 Namespace: microsoft.graph
 
@@ -54,7 +54,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_shares"
+  "name": "get_printershares"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printerShares
@@ -103,7 +103,7 @@ Content-length: 269
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List shares",
+  "description": "List printershares",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
