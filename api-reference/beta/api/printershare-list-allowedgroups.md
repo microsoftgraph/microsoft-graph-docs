@@ -29,7 +29,7 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/shares/{id}/allowedGroups
+GET /print/printerShares/{id}/allowedGroups
 ```
 
 ## Request headers
@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "get_allowedGroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups
+GET https://graph.microsoft.com/beta/print/printerShares/{id}/allowedGroups
 ```
 ##### Response
 The following is an example of the response.

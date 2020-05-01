@@ -29,7 +29,7 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/shares
+GET /print/printerShares
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ The following is an example of the request.
   "name": "get_shares"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/shares
+GET https://graph.microsoft.com/beta/print/printerShares
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printershares-csharp-snippets.md)]
@@ -88,7 +88,7 @@ Content-type: application/json
 Content-length: 269
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printerShares",
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

@@ -29,7 +29,6 @@ Represents a document being printed.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The document's identifier. Read-only.|
-|name|String|The document's name. Read-only. Deprecated.|
 |displayName|String|The document's name. Read-only.|
 |mimeType|String|The document's MIME type. Read-only.|
 |sizeInBytes|Int64|The document's size in bytes. Read-only.|

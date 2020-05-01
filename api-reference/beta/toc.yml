@@ -1125,9 +1125,9 @@
           href: resources/printershare.md
           items:
           - name: List
-            href: api/print-list-shares.md
+            href: api/print-list-printershares.md
           - name: Create
-            href: api/print-post-shares.md
+            href: api/print-post-printershares.md
           - name: Get
             href: api/printershare-get.md
           - name: Update

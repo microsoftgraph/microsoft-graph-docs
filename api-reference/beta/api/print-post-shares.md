@@ -29,7 +29,7 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/shares
+POST /print/printerShares
 ```
 ## Request headers
 | Name          | Description   |
@@ -57,7 +57,7 @@ The following is an example of the request.
   "name": "create_printershare_from_print"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/shares
+POST https://graph.microsoft.com/beta/print/printerShares
 Content-type: application/json
 Content-length: 114
 
@@ -94,7 +94,7 @@ Content-type: application/json
 Content-length: 233
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printerShares/$entity",
     "id": "7361c7c1-ff07-4565-9897-bef6895a7d04",
     "name": "ShareName",
     "createdDateTime": "2020-02-04T00:00:00.0000000Z"
