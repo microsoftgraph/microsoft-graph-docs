@@ -46,9 +46,11 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 The body of the request defines properties of the sharing link your application is requesting.
 The request should be a JSON object with the following properties.
 
-|   Name    |  Type  |                                 Description                                  |
-| :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
+|   Name       |  Type  |                                 Description                                  |
+| :------------| :----- | :--------------------------------------------------------------------------- |
+| **type**     | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
+| **password** | string | The password of the sharing link that is set by the creator. Optional and OneDrive Personal only.
+| **expirationDateTime** | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
 | **scope** | string | Optional. The scope of link to create. Either `anonymous` or `organization`. |
 
 
@@ -99,6 +101,7 @@ Content-type: application/json
 
 {
   "type": "view",
+  "password": "ThisIsMyPrivatePassword",
   "scope": "anonymous"
 }
 ```
@@ -140,7 +143,8 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
+  "hasPassword": true
 }
 ```
 
@@ -203,7 +207,7 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
 }
 ```
 

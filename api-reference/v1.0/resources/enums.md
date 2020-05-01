@@ -7,9 +7,16 @@ author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
 
-# Enum values
 
 Namespace: microsoft.graph
+
+### attachmentType values
+
+| Member
+|:--------------
+| file
+| item
+| reference
 
 ### contactRelationship values
 

@@ -99,6 +99,8 @@ items:
             href: outlook-get-shared-events-calendars.md
           - name: Create shared events
             href: outlook-create-event-in-shared-delegated-calendar.md
+          - name: Attach large files
+            href: outlook-large-attachments.md
           - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Cloud communications
@@ -185,7 +187,7 @@ items:
             href: outlook-organize-messages.md
           - name: Get MIME content
             href: outlook-get-mime-message.md
-          - name: Attach large files (preview)
+          - name: Attach large files
             href: outlook-large-attachments.md
           - name: Get shared messages
             href: outlook-share-messages-folders.md

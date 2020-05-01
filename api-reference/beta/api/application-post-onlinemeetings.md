@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported                               |
 | Application                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **Note:** Application permissions are deprecated and will be removed in July 2020. To create an online meeting using application permissions, see [Create event](user-post-events.md).
+> \* **Note:** Application permissions are deprecated and will be removed in July 2020. To create an Outlook event instead, using application permissions, see [Create event](user-post-events.md).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

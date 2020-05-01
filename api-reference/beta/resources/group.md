@@ -138,7 +138,9 @@ This resource supports:
 |preferredLanguage|String|The preferred language for an Office 365 group. Should follow ISO 639-1 Code; for example "en-US". <br><br>Returned by default. |
 |proxyAddresses|String collection| Email addresses for the group that direct to the same group mailbox. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. The **any** operator is required for filter expressions on multi-valued properties. <br><br>Returned by default. Read-only. Not nullable. Supports $filter. |
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/grouplifecyclepolicy-renewgroup.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only.|
-|securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports $filter.|
+|resourceBehaviorOptions|String collection|Specifies the group behaviors that can be set for an Office 365 group during creation. This can be set only as part of creation (POST). Possible values are `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`.  More details are available later in this topic.|
+|resourceProvisioningOptions|String collection|Specifies the group resources that are provisioned as part of Office 365 group creation, that are not normally part of default group creation. Possible value is `Teams`. More details are available later in this topic.|
+|securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports `$filter`.|
 |securityIdentifier|String|Security identifier of the group, used in Windows scenarios. <br><br>Returned by default.|
 |theme|String|Specifies an Office 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` or `Red`. <br><br>Returned by default. |
 |unseenConversationsCount|Int32|Count of conversations that have been delivered one or more new posts since the signed-in user's last visit to the group. This property is the same as **unseenCount**. <br><br>Returned only on $select.|
@@ -156,6 +158,25 @@ Here's what each **visibility** property value means:
 | Private | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
 | Hiddenmembership | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
 
+### Provisioning and configuring groups
+
+You can further configure groups using the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties.
+
+**resourceBehaviorOptions** is a string collection that specifies the group behaviors that can be set for an Office 365 group. This can be set only as part of creation (POST):
+
+| resourceBehaviorOptions   |Description|Default if not set|
+|:---------------|:--------|:-----------|
+| AllowOnlyMembersToPost|Only group *members* can post conversations to the group.|Any user in the organization can post conversations to the group.|
+| HideGroupInOutlook|This group will be hidden in Outlook experiences.|All groups will be visible and discoverable in Outlook experiences.|
+| SubscribeNewGroupMembers|Group members are subscribed to receive group conversations. |Group members do not receive group conversations.|
+| WelcomeEmailDisabled|A welcome email is sent to a new member on joining the group.|Welcome emails are not sent to new members.|
+
+**resourceProvisioningOptions** is a string collection that specifies the group resources that are provisioned as part of Office 365 group creation, that are not normally part of default group creation.
+
+| resourceProvisioningOptions   |Description| Default if not set |
+|:---------------|:--------|:------------|
+| Teams|Provision this group as a team. Additionally, this property can be added to the **resourceProvisioningOptions** string collection through a PATCH operation, in order to convert an existing Office 365 group to a team.| The group is a regular Office 365 group without Teams capabilities.|
+
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -163,7 +184,7 @@ Here's what each **visibility** property value means:
 |calendar|[calendar](calendar.md)|The group's calendar. Read-only.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. **Note:** This is not set if the user is an administrator. Read-only.|
 |drive|[drive](drive.md)|The group's default drive. Read-only.|
 |drives|[drive](drive.md) collection|The group's drives. Read-only.|
 |endpoints|[Endpoint](endpoint.md) collection| Endpoints for the group. Read-only. Nullable.|
@@ -184,7 +205,7 @@ Here's what each **visibility** property value means:
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 
 ## JSON representation
-The following is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -259,6 +280,8 @@ The following is a JSON representation of the resource
   "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
+  "resourceBehaviorOptions": ["String"],
+  "resourceProvisioningOptions": ["String"],
   "securityEnabled": true,
   "securityIdentifier": "string",
   "unseenConversationsCount": 1024,

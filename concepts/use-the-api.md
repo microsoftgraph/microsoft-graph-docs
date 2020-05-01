@@ -129,7 +129,7 @@ A status code and message are displayed after a request is sent and the response
 
 Postman is a tool that you can use to build and test requests using the Microsoft Graph APIs. You can download Postman at: `https://www.getpostman.com/`. To interact with Microsoft Graph in Postman, you use the Microsoft Graph collection.
 
-For more information, see [Use Postman with the Microsoft Graph API](https://docs.microsoft.comgraph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
+For more information, see [Use Postman with the Microsoft Graph API](https://docs.microsoft.com/graph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
 
 ## Next steps
 

@@ -22,6 +22,7 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
   - For each **calendar**, specify the allowed and the default online meeting providers.
   - Create or update an [event](/graph/api/resources/event?view=graph-rest-1.0) to be available online, and provide details for attendees to join the meeting online. 
   - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a [known issue](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) with the **onlineMeetingUrl** property.
+- Add [file attachments up to 150MB](outlook-large-attachments.md) to an [event](/graph/api/resources/event?view=graph-rest-1.0).
 
 ### Files
 - [Check out](/graph/api/driveitem-checkout?view=graph-rest-1.0) or [check in](/graph/api/driveitem-checkin?view=graph-rest-1.0) a file to OneDrive to manage updating the file and making updates available to others when the updates are ready.
@@ -29,6 +30,12 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 ### Identity and access
 - To manage roles and assign access to resources in role-based access control (RBAC) providers such as Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0). The **unifiedRoleAssignmentMultiple** resource supports defining a single role over an array of scopes, and assigning the role to multiple principals (such as users).
 - Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-1.0) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-1.0). This is a [breaking change](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-1.0/) to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0), and [tokenIssuancePolicy](/graph/api/resources/tokenissuancetimepolicy?view=graph-rest-1.0). 
+
+### Mail
+Add [file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-1.0).
+
+### Sites and lists
+[List sites](/graph/api/sites-list-followed?view=graph-rest-1.0) that the signed-in user has followed.
 
 ## April 2020: New in preview only
 

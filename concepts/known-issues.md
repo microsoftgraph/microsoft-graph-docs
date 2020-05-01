@@ -73,6 +73,9 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 * [Listing the user's calendars](/graph/api/user-list-calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
 * You can also [list the events](/graph/api/calendar-list-events?view=graph-rest-1.0) of an ICS-based calendar.
 
+### Attaching large files to events
+An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) succeeds only if the message or event is in the signed-in user's mailbox.
+
 ### onlineMeetingUrl property support for Microsoft Teams
 
 Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event?view=graph-rest-1.0) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
@@ -305,7 +308,7 @@ As JSON batching matures, these limitations will be removed.
 ## Mail (Outlook)
 
 ### Attaching large files to messages
-An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) succeeds only if the message is in the signed-in user's mailbox.
+An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) succeeds only if the message or event is in the signed-in user's mailbox.
 
 ### The comment parameter for creating a draft
 
