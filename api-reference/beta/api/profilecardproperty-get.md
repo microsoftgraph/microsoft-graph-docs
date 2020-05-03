@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of profilecardproperty object.
+Retrieve the properties and relationships of profilecardproperty collection which contains the profile card customizations present in your Microsoft 365 organization.
 
 ## Permissions
 
@@ -19,16 +19,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.Read, User.Read.All                    |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
+
+_Note: The profileCardProperties object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties
 ```
 
 ## Optional query parameters
@@ -60,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties
 ```
 
 ### Response
@@ -80,14 +82,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "directoryPropertyName": "directoryPropertyName-value",
+  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
-      "displayName": "displayName-value",
+      "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "languageTag-value",
-          "displayName": "displayName-value"
+          "languageTag": "ru-RU",
+          "displayName": "центр затрат"
         }
       ]
     }

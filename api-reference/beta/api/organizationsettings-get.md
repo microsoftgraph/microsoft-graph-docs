@@ -1,6 +1,6 @@
 ---
 title: "Get organizationSettings"
-description: "Retrieve the properties and relationships of organizationsettings object."
+description: "Retrieve the properties and relationships of organizationSettings object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of organizationsettings object.
+Retrieve the properties and relationships of organizationsettings object when signed in as a Tenant Administrator.
 
 ## Permissions
 
@@ -19,16 +19,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.Read, User.Read.All                    |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
+
+_Note: The organizationSettings object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+GET https://graph.microsoft.com/beta/organization/settings
 ```
 
 ## Optional query parameters
@@ -37,9 +39,10 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token} |
+| Name          |Description                  |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}              |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -60,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+GET https://graph.microsoft.com/beta/organization/settings
 ```
 
 ### Response

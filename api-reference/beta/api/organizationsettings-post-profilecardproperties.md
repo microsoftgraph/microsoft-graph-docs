@@ -19,23 +19,26 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
+
+_Note: The profileCardProperties object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+POST https://graph.microsoft.com/beta/organization/settings/profileCardProperties
 ```
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Name          |Description                  |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}              |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -56,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+POST https://graph.microsoft.com/beta/organization/settings/profileCardProperties
 Content-type: application/json
 
 {
@@ -92,14 +95,14 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "directoryPropertyName": "directoryPropertyName-value",
+  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
-      "displayName": "displayName-value",
+      "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "languageTag-value",
-          "displayName": "displayName-value"
+          "languageTag": "ru-RU",
+          "displayName": "центр затрат"
         }
       ]
     }

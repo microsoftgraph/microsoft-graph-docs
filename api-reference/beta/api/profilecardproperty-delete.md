@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete profileCardProperty.
+Delete profileCardProperty and remove all customizations from the profile card within your Microsoft 365 Tenant.
 
 ## Permissions
 
@@ -19,22 +19,24 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
+
+_Note: The profileCardProperties object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties
 ```
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description    |
+|:--------------|:---------------|
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -56,7 +58,7 @@ The following is an example of the request.
 }-->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties
 ```
 
 ### Response
