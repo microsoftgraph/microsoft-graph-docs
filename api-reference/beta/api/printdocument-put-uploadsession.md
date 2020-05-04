@@ -101,7 +101,7 @@ Etag: <eTag_Value>
       "id": "853364e6-6be9-4003-ad9b-acab84b41643"
     }
   },
-  "nextExpectedRanges": [
+  "missingRanges": [
     { 
       "start" : "0",
       "end" : "1023"

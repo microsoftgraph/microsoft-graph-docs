@@ -1,5 +1,5 @@
 ---
-title: "printJob: startPrintJob"
+title: "printJob: start"
 description: Submits the print job to the associated printer. It will be printed once any existing pending jobs are completed, aborted or canceled.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# printJob: startPrintJob
+# printJob: start
 
 Namespace: microsoft.graph
 
@@ -28,7 +28,7 @@ In addition to the following permissions, the user's tenant must have an active 
 
 ## HTTP request
 ```http
-POST /print/printers/{id}/jobs/{id}/startPrintJob
+POST /print/printers/{id}/jobs/{id}/start
 ```
 ## Request headers
 | Name          | Description   |
@@ -47,7 +47,7 @@ The following example shows how to call this API.
 ##### Request
 
 ```http
-POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/startPrintJob
+POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/start
 ```
 
 ##### Response

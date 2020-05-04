@@ -27,7 +27,7 @@ To get started with the Universal Print API:
 
 1. [Create a print job](/graph/api/printer-post-jobs?view=graph-rest-beta) and store the resulting document ID.
 2. [Upload document data](/graph/api/printdocument-uploaddata?view=graph-rest-beta) to the document.
-3. [Start the print job](/graph/api/printjob-startprintjob?view=graph-rest-beta).
+3. [Start the print job](/graph/api/printjob-start?view=graph-rest-beta).
 
 ### Manage printers
 

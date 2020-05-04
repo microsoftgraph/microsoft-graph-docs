@@ -1087,9 +1087,9 @@
           - name: Get
             href: api/printjob-get.md
           - name: Start
-            href: api/printjob-startprintjob.md
+            href: api/printjob-start.md
           - name: Cancel
-            href: api/printjob-cancelprintjob.md
+            href: api/printjob-cancel.md
         - name: Printers
           href: resources/printer.md
           items:

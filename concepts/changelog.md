@@ -17,6 +17,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
+| Change | beta | Renamed properties on the [integerRange](/graph/api/resources/integerrange?view=graph-rest-beta) entity: <br/> <ul><li>**minimum** -> **start**</li><li>**maximum** -> **end**</li></ul> |
+| Change | beta | Renamed print job actions on the [printJob](/graph/api/resources/printjob?view=graph-rest-beta) entity: <br/> <ul><li>**startPrintJob** -> **start**</li><li>**cancelPrintJob** -> **cancel**</li></ul> |
 | Change | beta | Renamed properties on the [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) entity: <br/> <ul><li>**name** -> **displayName**</li><li>**mimeType** -> **contentType**</li><li>**sizeInBytes** -> **size**</li><li>**documentConfiguration** -> **configuration**</li></ul> |
 | Addition | v1.0 | Added new entity [printUploadSession](/graph/api/resources/printuploadsession?view=graph-rest-1.0). |
 | Addition | beta | Added the **uploadSession** relationship to the [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) entity. |

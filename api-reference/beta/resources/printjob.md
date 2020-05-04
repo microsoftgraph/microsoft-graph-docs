@@ -21,8 +21,8 @@ Represents a print job that has been queued for a printer.
 |:-------------|:------------|:------------|
 | [Get](../api/printjob-get.md) | [printJob](printjob.md) | Read properties and relationships of printJob object. |
 | [Create](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job object. |
-| [Start](../api/printjob-startprintjob.md)|None|Start the print job.|
-| [Cancel](../api/printjob-cancelprintjob.md)|None|Cancel the print job.|
+| [Start](../api/printjob-start.md)|None|Start the print job.|
+| [Cancel](../api/printjob-cancel.md)|None|Cancel the print job.|
 
 ## Properties
 | Property     | Type        | Description |

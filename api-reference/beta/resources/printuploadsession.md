@@ -32,7 +32,7 @@ Represents an active upload session to add document data to a print job. Only on
 |createdBy|[identitySet](identitySet.md)|The user and/or app that created the upload session. Read-only.|
 |documentName|String|The name of the document being uploaded. Read-only.|
 |expiryDateTime|DateTimeOffset|The upload session's expiration time. Read-only.|
-|nextExpectedRanges|[integerRange](integerrange.md) collection|The required content ranges that have not yet been uploaded. Read-only.|
+|missingRanges|[integerRange](integerrange.md) collection|The required content ranges that have not yet been uploaded. Read-only.|
 |size|Int64|The size of the document to be uploaded, in bytes. Read-only.|
 
 ## JSON representation
@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "documentName": "String",
   "expiryDateTime": "String (timestamp)",
-  "nextExpectedRanges": [{"@odata.type": "microsoft.graph.integerRange"}],
+  "missingRanges": [{"@odata.type": "microsoft.graph.integerRange"}],
   "size": 123456
 }
 

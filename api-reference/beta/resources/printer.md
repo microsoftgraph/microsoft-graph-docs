@@ -25,7 +25,7 @@ Represents a physical printer device that has been registered with the Universal
 | [getCapabilities](../api/printer-getcapabilities.md) | [printerCapabilities](printercapabilities.md) | Get a list of capabilities for the printer. |
 | [resetDefaults](../api/printer-resetdefaults.md) | None | Reset a printer's default settings. |
 | [List jobs](../api/printer-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printer. |
-| [Create job](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printer. To start printing the job, use [startPrintJob](../api/printjob-startprintjob.md). |
+| [Create job](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printer. To start printing the job, use [start](../api/printjob-start.md). |
 | [List connectors](../api/printer-list-connectors.md) | [printConnector](printconnector.md) collection | Get a list of connectors that this printer is associated with. |
 | [List allowedUsers](../api/printer-list-allowedusers.md) | [printUserIdentity](printuseridentity.md) collection | Retrieve a list of users who have been granted access to submit print jobs to the associated printer. |
 | [Add allowedUser](../api/printer-post-allowedusers.md) | None | Grant the specified user access to submit print jobs to the associated printer. |

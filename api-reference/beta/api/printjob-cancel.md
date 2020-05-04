@@ -1,5 +1,5 @@
 ---
-title: "printJob: cancelPrintJob"
+title: "printJob: cancel"
 description: Cancel a print job.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# printJob: cancelPrintJob
+# printJob: cancel
 
 Namespace: microsoft.graph
 
@@ -29,7 +29,7 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printers/{id}/jobs/{id}/cancelPrintJob
+POST /print/printers/{id}/jobs/{id}/cancel
 ```
 ## Request headers
 | Name          | Description   |
@@ -49,25 +49,11 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "printjob-cancelprintjob"
+  "name": "printjob-cancel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancelPrintJob
+POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-cancelprintjob-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-cancelprintjob-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printjob-cancelprintjob-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ##### Response
 The following is an example of the response. 
@@ -84,7 +70,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "printJob: cancelPrintJob",
+  "description": "printJob: cancel",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
