@@ -1,6 +1,6 @@
 ---
 title: "displayNameLocalization resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "The displayNameLocalization type provides the ability for an administrator to customize the string used in a shared Microsoft 365 experience."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The displayNameLocalization type provides the ability for an administrator to customize the string used in a shared Microsoft 365 experience.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String||
-|languageTag|String||
+|displayName   |String       | If present the value of this field contains the displayName string that has been set for the language present in the languageTag field.|
+|languageTag   |String       | Provides the language culture-code and friendly name of the language that the displayName field has been provided in.                  |
 
 ## JSON representation
 
@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "String",
-  "languageTag": "String"
+  "displayName": "ru-RU",
+  "languageTag": "центр затрат"
 }
 ```
 

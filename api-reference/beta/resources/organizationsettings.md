@@ -1,6 +1,6 @@
 ---
 title: "organizationSettings resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "The organizationSettings resource contains settings which are applicable to the organization or the user objects within it."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The organizationSettings resource contains settings which are applicable to the [organization](organization.md) or which should be applied to [user](user.md) objects within the organization.
 
 ## Methods
 
