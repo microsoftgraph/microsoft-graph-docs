@@ -22,7 +22,7 @@ Represents a document being printed.
 | [Get uploadSession](../api/printdocument-get-uploadsession.md) | [printUploadSession](printuploadsession.md) | Read details of an upload session. |
 | [Create uploadSession](../api/printdocument-put-uploadsession.md) | [printUploadSession](printuploadsession.md) | Create an upload session to upload data to a [printDocument](printdocument.md). |
 | [Delete uploadSession](../api/printdocument-delete-uploadsession.md) | None | Read the properties and relationships of the printer object. |
-| [Upload data](../api/printdocument-post-uploadsession.md) | [printUploadSession](printuploadsession.md) | Upload data to a [printDocument](printdocument.md) by using an existing upload session. |
+| [Upload data](../api/printdocument-put-uploadsession-value.md) | [printUploadSession](printuploadsession.md) | Upload data to a [printDocument](printdocument.md) by using an existing upload session. |
 
 ## Properties
 | Property     | Type        | Description |
