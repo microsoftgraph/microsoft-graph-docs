@@ -4,7 +4,7 @@ description: "A unit of non-work in the schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
-doc_type: resourcePageType_
+doc_type: resourcePageType
 ---
 
 # timeOff resource type

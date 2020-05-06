@@ -4,7 +4,7 @@ description: "A logical grouping of members in the schedule (usually by role)."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
-doc_type: resourcePageType_
+doc_type: resourcePageType
 ---
 
 # schedulingGroup resource type
