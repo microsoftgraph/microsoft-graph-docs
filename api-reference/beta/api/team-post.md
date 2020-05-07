@@ -136,7 +136,7 @@ Content-Type: application/json
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
                     "name": "A Pinned Website",
                     "configuration": {
-                        "contentUrl": "/microsoftteams/microsoft-teams"
+                        "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {

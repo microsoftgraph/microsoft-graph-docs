@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/timeOffRequests/approve
+POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 ```
 
 ## Request headers
@@ -69,7 +69,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/timeOffRequests/approve
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 Content-type: application/json
 
 {

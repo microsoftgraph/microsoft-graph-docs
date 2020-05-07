@@ -21,7 +21,7 @@ A unit of non-work in a schedule.
 |:---------------|:--------|:----------|
 |[Create](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Create a new **timeOff** object.|
 |[List](../api/schedule-list-timesoff.md) | [timeOff](timeoff.md) collection | Get the list of **timeOff** objects in this schedule.|
-|[Get (../api/timeoff-get.md) | [timeOff](timeoff.md) | Get a **timeOff** object by ID.|
+|[Get](../api/timeoff-get.md) | [timeOff](timeoff.md) | Get a **timeOff** object by ID.|
 |[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Replace a **timeOff** object.|
 |[Delete](../api/timeoff-delete.md) | None | Delete a **timeOff** object from the schedule.|
 
