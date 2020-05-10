@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/account
+GET /me/profile/accounts
+GET /users/{id|userPrincipalName}/profile/accounts
 ```
 
 ## Optional query parameters
@@ -73,7 +74,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/profile/account
+GET https://graph.microsoft.com/beta/me/profile/accounts
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-account-csharp-snippets.md)]

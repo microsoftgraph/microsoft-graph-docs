@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/websites
+GET /users/{id|userPrincipalName}/profile/websites
 ```
 
 ## Optional query parameters

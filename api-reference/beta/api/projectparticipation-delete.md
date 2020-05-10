@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /me/profile/projects/{id}
+DELETE /users/{id|userPrincipalName}/profile/projects/{id}
 ```
 
 ## Request headers

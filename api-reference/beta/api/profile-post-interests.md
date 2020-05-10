@@ -29,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /user/profile/interests
+POST /me/profile/interests
+POST /users/{id|userPrincipalName}/profile/interests
 ```
 
 ## Request headers

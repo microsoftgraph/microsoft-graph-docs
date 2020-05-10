@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/skills
+POST /users/{id|userPrincipalName}/profile/skills
 ```
 
 ## Request headers

@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/skills/{id}
+GET /users/{id|userPrincipalName}/profile/skills/{id}
 ```
 
 ## Optional query parameters

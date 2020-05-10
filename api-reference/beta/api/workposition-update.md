@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 PATCH /me/profile/positions/{id}
+PATCH /users/{id|userPrincipalName}/profile/positions/{id}
 ```
 
 ## Request headers
