@@ -19,29 +19,20 @@ Inherits from [itemFacet](itemfacet.md).
 
 ## Methods
  
-| Method                                                                  | Return Type                             | Description                                                               |
-|:------------------------------------------------------------------------|:----------------------------------------|:--------------------------------------------------------------------------|
-| [Get skillProficiency](../api/skillproficiency-get.md)                  | [skillProficiency](skillproficiency.md) | Read the properties and relationships of a **skillProficiency** object.   |
-| [Update skillProficiency](../api/skillproficiency-update.md)            | [skillProficiency](skillproficiency.md) | Update a **skillProficiency** object.                                     |
-| [Delete skillProficiency](../api/skillproficiency-delete.md)            | None                                    | Delete a **skillProficiency** object.                                     |
+| Method                                                         | Return Type                             | Description                                                             |
+|:---------------------------------------------------------------|:----------------------------------------|:------------------------------------------------------------------------|
+| [Get skillProficiency](../api/skillproficiency-get.md)         | [skillProficiency](skillproficiency.md) | Read the properties and relationships of a **skillProficiency** object. |
+| [Update skillProficiency](../api/skillproficiency-update.md)   | [skillProficiency](skillproficiency.md) | Update a **skillProficiency** object.                                   |
+| [Delete skillProficiency](../api/skillproficiency-delete.md)   | None                                    | Delete a **skillProficiency** object.                                   |
 
 ## Properties
 
-| Property             | Type             | Description                                                                                                                                                                                                              |
-|:---------------------|:-----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|allowedAudiences      |string                                     | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                    |
-|categories            |String collection                          | Contains categories a user has associated with the skill (for example, personal, professional, hobby).                                                                                          |
-|collaborationTags     |String collection                          | Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.                |
-|createdBy             |[identitySet](identityset.md)              | When the entity was originally created.                                                                                                                                                         |
-|createdDateTime       |DateTimeOffset                             |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
-|displayName           |String                                     | Contains a friendly name for the skill.                                                                                                                                                         |
-|id                    |String                                     | Read-only.                                                                                                                                                                                      | 
-|inference             |[inferenceData](inferencedata.md)          | Contains inference detail if the entity is inferred.                                                                                                                                            |
-|lastModifiedBy        |[identitySet](identityset.md)              | Identifier of the partner or user who last modified the entity.                                                                                                                                 |
-|lastModifiedDateTime  |DateTimeOffset                             | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|proficiency           |string                                     | Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.                                                             |
-|source                |[personDataSource](persondataource.md)     |Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                  |
-|webUrl                |String                                     | Contains a link to an information source about the skill.                                                                                                                                       |
+| Property     | Type             | Description                                                                                                                        |
+|:-------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+|categories    |String collection | Contains categories a user has associated with the skill (for example, personal, professional, hobby).                             |
+|displayName   |String            | Contains a friendly name for the skill.                                                                                            |
+|proficiency   |string            | Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
+|webUrl        |String            | Contains a link to an information source about the skill.                                                                          |
 
 ## Relationships
 

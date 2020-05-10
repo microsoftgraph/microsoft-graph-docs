@@ -27,21 +27,10 @@ This resource type inherits from [itemFacet](itemfacet.md).
 
 ## Properties
 
-| Property             | Type                                        | Description                                                                                                                                                                                     |
-|:---------------------|:--------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|allowedAudiences      |string                                       | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                    |
-|categories            |String collection                            | Contains categories a user has associated with the position (for example, digital transformation, people).                                                                                      |
-|colleagues            |Collection [relatedPerson](relatedperson.md) | Contains a collection of a users colleagues for the specified position.                                                                                                                         |
-|createdBy             |[identitySet](identityset.md)                | When the entity was originally created.                                                                                                                                                         |
-|createdDateTime       |DateTimeOffset                               | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|detail                |[positionDetail](positiondetail.md)          | Contains detail about the user's current and previous employment positions.                                                                                                                     |
-|id                    |String                                       | Read-only.                                                                                                                                                                                      |
-|inference             |[inferenceData](inferencedata.md)            | Contains inference detail if the entity is inferred.                                                                                                                                            |
-|isCurrent             |Boolean                                      | Denotes if the position is current for the user.                                                                                                                                                |
-|lastModifiedBy        |[identitySet](identityset.md)                | Identifier of the partner or user who last modified the entity.                                                                                                                                 |
-|lastModifiedDateTime  |DateTimeOffset                               | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|manager               |[relatedPerson](relatedperson.md)            | Contains details of the users manager for the specified position.                                                                                                                               |
-|source                |[personDataSource](persondatasource.md)      | Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                 |
+| Property             | Type                                | Description                                                                                                |
+|:---------------------|:------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+|categories            | String collection                   | Contains categories a user has associated with the position (for example, digital transformation, people). |
+|detail                | [positionDetail](positiondetail.md) | Contains detail about the user's current and previous employment positions.                                |
 
 ## Relationships
 

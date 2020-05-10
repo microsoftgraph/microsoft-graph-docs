@@ -27,21 +27,13 @@ This resource type inherits from [itemFacet](itemfacet.md).
 
 ## Properties
 
-| Property             | Type                                      | Description                                                                                                                                                                                     |
-|:---------------------|:------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|allowedAudiences      |string                                     | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                    |
-|createdBy             |[identitySet](identityset.md)              | When the entity was originally created.                                                                                                                                                         |
-|createdDateTime       |DateTimeOffset                             |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
-|description           |String                                     | Contains the description the user has provided for the account on the service being referenced.                                                                                                 |
-|id                    |String                                     | Read-only.                                                                                                                                                                                      | 
-|inference             |[inferenceData](inferencedata.md)          | Contains inference detail if the entity is inferred.                                                                                                                                            |
-|lastModifiedBy        |[identitySet](identityset.md)              | Identifier of the partner or user who last modified the entity.                                                                                                                                 |
-|lastModifiedDateTime  |DateTimeOffset                             | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|service               |[serviceInformation](serviceinformation.md)| Contains basic detail about the service that is being associated.                                                                                                                               |
-|source                |[personDataSource](persondataource.md)     |Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                  |
-|statusMessage         |String                                     | Contains a status message from the cloud service if provided or synchronized.                                                                                                                   |
-|userId                |String                                     | The user name  displayed for the webaccount.                                                                                                                                                    |
-|webUrl                |String                                     | Contains a link to the user's profile on the cloud service if one exists.                                                                                                                       |
+| Property     | Type                                      | Description                                                                                    |
+|:-------------|:------------------------------------------|:-----------------------------------------------------------------------------------------------|
+|description   |String                                     | Contains the description the user has provided for the account on the service being referenced.|
+|service       |[serviceInformation](serviceinformation.md)| Contains basic detail about the service that is being associated.                              |
+|statusMessage |String                                     | Contains a status message from the cloud service if provided or synchronized.                  |
+|userId        |String                                     | The user name  displayed for the webaccount.                                                   |
+|webUrl        |String                                     | Contains a link to the user's profile on the cloud service if one exists.                      |
 
 ## Relationships
 

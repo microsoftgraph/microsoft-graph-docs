@@ -17,27 +17,19 @@ Represents detailed information about phone numbers associated with a user in va
 
 ## Methods
 
-| Method                                           | Return Type               | Description                                                       |
-|:-------------------------------------------------|:--------------------------|:------------------------------------------------------------------|
-| [Get itemPhone](../api/itemphone-get.md)         | [itemPhone](itemphone.md) | Read the properties and relationships of an **itemPhone** object. |
-| [Update itemPhone](../api/itemphone-update.md)   | [itemPhone](itemphone.md) | Update an **itemPhone** object.                                   |
-| [Delete itemPhone](../api/itemphone-delete.md)   | None                      | Delete an **itemPhone** object.                                   |
+| Method                                               | Return Type               | Description                                                       |
+|:-----------------------------------------------------|:--------------------------|:------------------------------------------------------------------|
+| [Get itemPhone](../api/itemphone-get.md)             | [itemPhone](itemphone.md) | Read the properties and relationships of an **itemPhone** object. |
+| [Update itemPhone](../api/itemphone-update.md)       | [itemPhone](itemphone.md) | Update an **itemPhone** object.                                   |
+| [Delete itemPhone](../api/itemphone-delete.md)       | None                      | Delete an **itemPhone** object.                                   |
 
 ## Properties
 
-| Property             | Type                                   | Description                                                                                                                                                                                    |
-|:---------------------|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|allowedAudiences      |string                                  | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
-|createdBy             |[identitySet](identityset.md)           | When the entity was originally created.                                                                                                                                                        |
-|createdDateTime       |DateTimeOffset                          |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|displayName           |String                                  | Contains a friendly name for the phone number.                                                                                                                                                 |
-|id                    |String                                  | Read-only.                                                                                                                                                                                     |
-|inference             |[inferenceData](inferencedata.md)       | Contains inference detail if the entity is inferred.                                                                                                                                           |
-|lastModifiedBy        |[identitySet](identityset.md)           | Identifier of the partner or user who last modified the entity.                                                                                                                                |
-|lastModifiedDateTime  |DateTimeOffset                          |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|number                |String                                  | Contains the phone number.                                                                                                                                                                     |
-|source                |[personDataSource](personDataSource.md) |Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                 |
-|type                  |string                                  | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.                                                               |
+| Property     | Type        | Description                                                                                                                     |
+|:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
+|displayName   |String       | Contains a friendly name for the phone number.                                                                                  |
+|number        |String       | Contains the phone number.                                                                                                      |
+|type          |string       | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## Relationships
 

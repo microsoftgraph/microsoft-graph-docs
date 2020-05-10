@@ -19,28 +19,20 @@ Inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 
-| Method                                                         | Return Type                       | Description                                                                    |
-|:---------------------------------------------------------------|:----------------------------------|:-------------------------------------------------------------------------------|
-| [Get personWebsite](../api/personwebsite-get.md)               | [personWebsite](personwebsite.md) | Read the properties and relationships of a **personWebsite** object.           |
-| [Update personWebsite](../api/personwebsite-update.md)         | [personWebsite](personwebsite.md) | Update a **personWebsite** object.                                             |
-| [Delete personWebsite](../api/personwebsite-delete.md)         | None                              | Delete a **personWebsite** object.                                             |
+| Method                                                         | Return Type                       | Description                                                          |
+|:---------------------------------------------------------------|:----------------------------------|:---------------------------------------------------------------------|
+| [Get personWebsite](../api/personwebsite-get.md)               | [personWebsite](personwebsite.md) | Read the properties and relationships of a **personWebsite** object. |
+| [Update personWebsite](../api/personwebsite-update.md)         | [personWebsite](personwebsite.md) | Update a **personWebsite** object.                                   |
+| [Delete personWebsite](../api/personwebsite-delete.md)         | None                              | Delete a **personWebsite** object.                                   |
 
 ## Properties
 
-| Property             | Type                                   | Description                                                                                                                                                                                    |
-|:---------------------|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|allowedAudiences      |string                                  | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
-|categories            |String collection                       | Contains categories a user has associated with the website (for example, personal, recipes).                                                                                                   |
-|createdBy             |[identitySet](identityset.md)           | When the entity was originally created.                                                                                                                                                        |
-|createdDateTime       |DateTimeOffset                          |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|description           |String                                  | Contains a description of the website.                                                                                                                                                         |
-|displayName           |String                                  | Contains a friendly name for the website.                                                                                                                                                      |
-|id                    |String                                  | Read-only.                                                                                                                                                                                     |
-|inference             |[inferenceData](inferencedata.md)       | Contains inference detail if the entity is inferred.                                                                                                                                           |
-|lastModifiedBy        |[identitySet](identityset.md)           | Identifier of the partner or user who last modified the entity.                                                                                                                                |
-|lastModifiedDateTime  |DateTimeOffset                          |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|source                |[personDataSource](personDataSource.md) |Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                 |
-|webUrl                |String                                  | Contains a link to the website itself.                                              |
+| Property     | Type              | Description                                                                                   |
+|:-------------|:------------------|:----------------------------------------------------------------------------------------------|
+|categories    |String collection  | Contains categories a user has associated with the website (for example, personal, recipes).  |
+|description   |String             | Contains a description of the website.                                                        |
+|displayName   |String             | Contains a friendly name for the website.                                                     |
+|webUrl        |String             | Contains a link to the website itself.                                                        |
 
 ## Relationships
 

@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/educationalActivities
-GET /users/{id|userPrincipalName}/profile/educationalActivities
 ```
 
 ## Optional query parameters
