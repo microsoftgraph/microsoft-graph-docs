@@ -1,5 +1,5 @@
 ---
-title: "List account"
+title: "List accounts"
 description: "Retrieve a list of useraccountinformation objects."
 localization_priority: Normal
 author: "kevinbellinger"
