@@ -4,7 +4,7 @@ description: "Represents an activity in a shift."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
-doc_type: resourcePageType
+doc_type: resourcePageType_
 ---
 
 # shiftActivity resource type

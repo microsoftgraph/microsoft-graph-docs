@@ -12,7 +12,6 @@ const client = Client.init(options);
 
 const permission = {
   type: "view",
-  password: "ThisIsMyPrivatePassword",
   scope: "anonymous"
 };
 
