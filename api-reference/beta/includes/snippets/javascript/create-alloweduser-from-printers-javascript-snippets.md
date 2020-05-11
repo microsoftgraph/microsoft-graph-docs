@@ -14,7 +14,7 @@ const printUserIdentity = {
   @odata.id: "https://graph.microsoft.com/beta/users/{id}"
 };
 
-let res = await client.api('/print/printers/{id}/allowedUsers/$ref')
+let res = await client.api('/print/printerShares/{id}/allowedUsers/$ref')
 	.version('beta')
 	.post(printUserIdentity);
 

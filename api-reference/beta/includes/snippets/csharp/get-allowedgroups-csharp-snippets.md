@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var allowedGroups = await graphClient.Print.Printers["{id}"].AllowedGroups
+var allowedGroups = await graphClient.Print.PrinterShares["{id}"].AllowedGroups
 	.Request()
 	.GetAsync();
 

@@ -457,10 +457,18 @@ items:
             href: sdks/sdk-installation.md
           - name: Create a client
             href: sdks/create-client.md
+          - name: Customize a client
+            href: sdks/customize-client.md
           - name: Choose an authentication provider
             href: sdks/choose-authentication-providers.md
           - name: Create requests
             href: sdks/create-requests.md
+          - name: Page through a collection
+            href: sdks/paging.md
+          - name: Create a batch request
+            href: sdks/batch-requests.md
+          - name: Upload large files
+            href: sdks/large-file-upload.md
       - name: Use the toolkit
         items:
           - name: Toolkit overview

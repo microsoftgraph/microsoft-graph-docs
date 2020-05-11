@@ -10,8 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drives/{drive-id}/items/{item-id}/analytics')
+let res = await client.api('/me/followedSites')
 	.version('beta')
-	.get();
+	.post();
 
 ```
