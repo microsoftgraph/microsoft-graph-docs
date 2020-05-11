@@ -46,6 +46,10 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |kernelExtensionOverridesAllowed|Boolean|If set to true, users can approve additional kernel extensions not explicitly allowed by configurations profiles.|
 |kernelExtensionAllowedTeamIdentifiers|String collection|All kernel extensions validly signed by the team identifiers in this list will be allowed to load.|
 |kernelExtensionsAllowed|[macOSKernelExtension](../resources/intune-deviceconfig-macoskernelextension.md) collection|A list of kernel extensions that will be allowed to load. . This collection can contain a maximum of 500 elements.|
+|systemExtensionsBlockOverride|Boolean|Gets or sets whether to allow the user to approve additional system extensions not explicitly allowed by configuration profiles.|
+|systemExtensionsAllowedTeamIdentifiers|String collection|Gets or sets a list of allowed team identifiers. Any system extension signed with any of the specified team identifiers will be approved.|
+|systemExtensionsAllowed|[macOSSystemExtension](../resources/intune-deviceconfig-macossystemextension.md) collection|Gets or sets a list of allowed macOS system extensions. This collection can contain a maximum of 500 elements.|
+|systemExtensionsAllowedTypes|[macOSSystemExtensionTypeMapping](../resources/intune-deviceconfig-macossystemextensiontypemapping.md) collection|Gets or sets a list of allowed macOS system extension types. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -109,6 +113,24 @@ Here is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.macOSKernelExtension",
       "teamIdentifier": "String",
       "bundleId": "String"
+    }
+  ],
+  "systemExtensionsBlockOverride": true,
+  "systemExtensionsAllowedTeamIdentifiers": [
+    "String"
+  ],
+  "systemExtensionsAllowed": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtension",
+      "teamIdentifier": "String",
+      "bundleId": "String"
+    }
+  ],
+  "systemExtensionsAllowedTypes": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+      "teamIdentifier": "String",
+      "allowedTypes": "String"
     }
   ]
 }

@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 596
+Content-Length: 670
 
 {
   "value": [
@@ -75,7 +75,10 @@ Content-Length: 596
       "managementAgent": "mdm",
       "ownerType": "company",
       "deviceCompliancePolicyName": "Device Compliance Policy Name value",
-      "deviceCompliancePolicyId": "Device Compliance Policy Id value"
+      "deviceCompliancePolicyId": "Device Compliance Policy Id value",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }

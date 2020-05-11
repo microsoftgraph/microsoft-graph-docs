@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 576
+Content-Length: 615
 
 {
   "value": [
@@ -73,7 +73,8 @@ Content-Length: 576
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
       "expression": {
-        "@odata.type": "microsoft.graph.managementConditionExpression"
+        "@odata.type": "microsoft.graph.managementConditionExpressionString",
+        "value": "Value value"
       },
       "eTag": "ETag value",
       "applicablePlatforms": [

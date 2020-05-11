@@ -71,14 +71,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managementConditionStatements
 Content-type: application/json
-Content-length: 323
+Content-length: 358
 
 {
   "@odata.type": "#microsoft.graph.managementConditionStatement",
   "displayName": "Display Name value",
   "description": "Description value",
   "expression": {
-    "@odata.type": "microsoft.graph.managementConditionExpression"
+    "@odata.type": "microsoft.graph.managementConditionExpressionString",
+    "value": "Value value"
   },
   "eTag": "ETag value",
   "applicablePlatforms": [
@@ -92,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 491
+Content-Length: 526
 
 {
   "@odata.type": "#microsoft.graph.managementConditionStatement",
@@ -102,7 +103,8 @@ Content-Length: 491
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
   "expression": {
-    "@odata.type": "microsoft.graph.managementConditionExpression"
+    "@odata.type": "microsoft.graph.managementConditionExpressionString",
+    "value": "Value value"
   },
   "eTag": "ETag value",
   "applicablePlatforms": [

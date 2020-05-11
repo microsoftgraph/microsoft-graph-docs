@@ -75,7 +75,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2017
+Content-length: 1919
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -121,9 +121,7 @@ Content-length: 2017
     ],
     "enterpriseIPRanges": [
       {
-        "@odata.type": "microsoft.graph.iPv6Range",
-        "lowerAddress": "Lower Address value",
-        "upperAddress": "Upper Address value"
+        "@odata.type": "microsoft.graph.ipRange"
       }
     ],
     "enterpriseInternalProxyServers": [
@@ -146,7 +144,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2189
+Content-Length: 2091
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -195,9 +193,7 @@ Content-Length: 2189
     ],
     "enterpriseIPRanges": [
       {
-        "@odata.type": "microsoft.graph.iPv6Range",
-        "lowerAddress": "Lower Address value",
-        "upperAddress": "Upper Address value"
+        "@odata.type": "microsoft.graph.ipRange"
       }
     ],
     "enterpriseInternalProxyServers": [

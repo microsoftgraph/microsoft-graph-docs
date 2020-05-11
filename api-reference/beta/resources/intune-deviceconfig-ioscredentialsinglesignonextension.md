@@ -50,9 +50,8 @@ Here is a JSON representation of the resource.
   "realm": "String",
   "configurations": [
     {
-      "@odata.type": "microsoft.graph.keyStringValuePair",
-      "key": "String",
-      "value": "String"
+      "@odata.type": "microsoft.graph.keyTypedValuePair",
+      "key": "String"
     }
   ]
 }

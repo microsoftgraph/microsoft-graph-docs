@@ -48,7 +48,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "String (identifier)",
-  "value": "<Unknown Primitive Type Edm.Double>",
+  "value": "4.2",
   "unit": "String"
 }
 ```

@@ -38,7 +38,7 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.insightValueDouble",
-  "value": "<Unknown Primitive Type Edm.Double>"
+  "value": "4.2"
 }
 ```
 

@@ -1,13 +1,13 @@
 ---
-title: "deviceAndAppManagementAssignmentFilterType enum type"
-description: "Represents type of the assignment filter."
+title: "joinType enum type"
+description: "Device enrollment join type."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
-# deviceAndAppManagementAssignmentFilterType enum type
+# joinType enum type
 
 Namespace: microsoft.graph
 
@@ -15,14 +15,15 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Represents type of the assignment filter.
+Device enrollment join type.
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|Default value. Do not use.|
-|include|1|Indicates in-filter, rule matching will offer the payload to devices.|
-|exclude|2|Indicates out-filter, rule matching will not offer the payload to devices.|
+|unknown|0|Unknown enrollment join type.|
+|azureADJoined|1|The device is joined by Azure AD.|
+|azureADRegistered|2|The device is registered by Azure AD.|
+|hybridAzureADJoined|3|The device is joined by hybrid Azure AD.|
 
 
 

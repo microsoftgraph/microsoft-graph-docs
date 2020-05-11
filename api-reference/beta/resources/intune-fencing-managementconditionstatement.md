@@ -63,7 +63,8 @@ Here is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)",
   "expression": {
-    "@odata.type": "microsoft.graph.managementConditionExpression"
+    "@odata.type": "microsoft.graph.managementConditionExpressionString",
+    "value": "String"
   },
   "eTag": "String",
   "applicablePlatforms": [

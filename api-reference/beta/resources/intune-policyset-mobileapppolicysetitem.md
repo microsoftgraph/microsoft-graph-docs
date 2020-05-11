@@ -71,7 +71,9 @@ Here is a JSON representation of the resource.
   ],
   "intent": "String",
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "String",
+    "uninstallOnDeviceRemoval": true
   }
 }
 ```

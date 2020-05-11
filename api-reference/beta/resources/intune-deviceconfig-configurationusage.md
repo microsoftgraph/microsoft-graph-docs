@@ -23,6 +23,7 @@ Possible values of the ConfigurationUsage list.
 |blocked|0|Disallowed.|
 |required|1|Required.|
 |allowed|2|Optional.|
+|notConfigured|3|Not Configured.|
 
 
 

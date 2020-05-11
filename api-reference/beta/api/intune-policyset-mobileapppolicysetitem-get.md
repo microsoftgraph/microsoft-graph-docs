@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 641
+Content-Length: 741
 
 {
   "value": {
@@ -81,7 +81,9 @@ Content-Length: 641
     ],
     "intent": "required",
     "settings": {
-      "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+      "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+      "vpnConfigurationId": "Vpn Configuration Id value",
+      "uninstallOnDeviceRemoval": true
     }
   }
 }

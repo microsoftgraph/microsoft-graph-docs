@@ -29,6 +29,7 @@ Not yet documented
 |customTextNotification|6|Not yet documented|
 |rebootNow|7|Not yet documented|
 |setDeviceName|8|Not yet documented|
+|syncDevice|9|Not yet documented|
 
 
 

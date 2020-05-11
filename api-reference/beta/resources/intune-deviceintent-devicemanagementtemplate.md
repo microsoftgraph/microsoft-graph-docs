@@ -39,6 +39,7 @@ Entity that represents a defined collection of device settings
 |intentCount|Int32|Number of Intents created from this template.|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|The template's type. Possible values are: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`.|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|The template's platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
+|templateSubtype|[deviceManagementTemplateSubtype](../resources/intune-deviceintent-devicemanagementtemplatesubtype.md)|The template's subtype. Possible values are: `none`, `firewall`, `diskEncryption`, `attackSurfaceReduction`, `endpointDetectionReponse`, `accountProtection`, `antivirus`.|
 |publishedDateTime|DateTimeOffset|When the template was published|
 
 ## Relationships
@@ -67,6 +68,7 @@ Here is a JSON representation of the resource.
   "intentCount": 1024,
   "templateType": "String",
   "platformType": "String",
+  "templateSubtype": "String",
   "publishedDateTime": "String (timestamp)"
 }
 ```

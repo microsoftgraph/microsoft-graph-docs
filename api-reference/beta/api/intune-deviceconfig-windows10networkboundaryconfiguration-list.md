@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2474
+Content-Length: 2368
 
 {
   "value": [
@@ -112,9 +112,7 @@ Content-Length: 2474
         ],
         "enterpriseIPRanges": [
           {
-            "@odata.type": "microsoft.graph.iPv6Range",
-            "lowerAddress": "Lower Address value",
-            "upperAddress": "Upper Address value"
+            "@odata.type": "microsoft.graph.ipRange"
           }
         ],
         "enterpriseInternalProxyServers": [

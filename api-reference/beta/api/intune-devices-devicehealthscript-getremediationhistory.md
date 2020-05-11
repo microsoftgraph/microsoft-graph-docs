@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 420
+Content-Length: 397
 
 {
   "value": {
@@ -69,7 +69,7 @@ Content-Length: 420
     "historyData": [
       {
         "@odata.type": "microsoft.graph.deviceHealthScriptRemediationHistoryData",
-        "date": "<Unknown Primitive Type Edm.Date>",
+        "date": "2016-12-31",
         "remediatedDeviceCount": 5,
         "noIssueDeviceCount": 2
       }

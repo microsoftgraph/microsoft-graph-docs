@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 270
+Content-Length: 258
 
 {
   "value": [
@@ -68,7 +68,7 @@ Content-Length: 270
       "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
       "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
       }
     }
   ]

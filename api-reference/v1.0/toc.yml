@@ -346,6 +346,12 @@
             href: api/outlookuser-list-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
+      - name: People
+        items:
+        - name: Person
+          href: resources/person.md
+        - name: List people
+          href: api/user-list-people.md
       - name: Photo
         href: resources/profilephoto.md
         items:
@@ -3915,9 +3921,10 @@
       items:
       - name: Overview
         href: resources/social-overview.md
-      - name: Person
-        href: resources/person.md
+      - name: People
         items:
+        - name: Person
+          href: resources/person.md
         - name: List people
           href: api/user-list-people.md
       - name: Insights

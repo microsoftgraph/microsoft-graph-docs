@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5232
+Content-Length: 5122
 
 {
   "value": [
@@ -146,9 +146,7 @@ Content-Length: 5232
           "displayName": "Display Name value",
           "ranges": [
             {
-              "@odata.type": "microsoft.graph.iPv6Range",
-              "lowerAddress": "Lower Address value",
-              "upperAddress": "Upper Address value"
+              "@odata.type": "microsoft.graph.ipRange"
             }
           ]
         }

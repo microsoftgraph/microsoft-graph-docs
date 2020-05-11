@@ -40,7 +40,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.keyRealValuePair",
   "key": "String",
-  "value": "<Unknown Primitive Type Edm.Double>"
+  "value": "4.2"
 }
 ```
 

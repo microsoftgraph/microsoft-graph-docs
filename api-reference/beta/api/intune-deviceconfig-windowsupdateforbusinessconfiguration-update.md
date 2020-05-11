@@ -109,7 +109,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2840
+Content-length: 2794
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -160,8 +160,8 @@ Content-length: 2840
   "businessReadyUpdatesOnly": "all",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek",
-  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "qualityUpdatesPauseStartDate": "2016-12-31",
+  "featureUpdatesPauseStartDate": "2016-12-31",
   "featureUpdatesRollbackWindowInDays": 2,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
@@ -188,7 +188,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3012
+Content-Length: 2966
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -242,8 +242,8 @@ Content-Length: 3012
   "businessReadyUpdatesOnly": "all",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek",
-  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "qualityUpdatesPauseStartDate": "2016-12-31",
+  "featureUpdatesPauseStartDate": "2016-12-31",
   "featureUpdatesRollbackWindowInDays": 2,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,

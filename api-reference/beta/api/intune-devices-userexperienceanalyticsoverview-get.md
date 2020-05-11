@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 872
+Content-Length: 853
 
 {
   "value": {
@@ -80,7 +80,7 @@ Content-Length: 872
         "values": [
           {
             "@odata.type": "microsoft.graph.insightValueDouble",
-            "value": "<Unknown Primitive Type Edm.Double>"
+            "value": 1.6666666666666667
           }
         ],
         "severity": "informational"

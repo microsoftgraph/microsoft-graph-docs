@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1014
+Content-Length: 1063
 
 {
   "value": [
@@ -83,7 +83,8 @@ Content-Length: 1014
       ],
       "userId": "User Id value",
       "appIdentifier": {
-        "@odata.type": "microsoft.graph.mobileAppIdentifier"
+        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+        "packageId": "Package Id value"
       },
       "id": "5496aa60-aa60-5496-60aa-965460aa9654",
       "version": "Version value"

@@ -1,13 +1,13 @@
 ---
-title: "hourlySchedule resource type"
-description: "Hourly run schedule of a recurring device management script."
+title: "deviceHealthScriptRunSchedule resource type"
+description: "Base type of Device health script run schedule."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
-# hourlySchedule resource type
+# deviceHealthScriptRunSchedule resource type
 
 Namespace: microsoft.graph
 
@@ -15,15 +15,12 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Hourly run schedule of a recurring device management script.
-
-
-Inherits from [runSchedule](../resources/intune-devices-runschedule.md)
+Base type of Device health script run schedule.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|interval|Int32|Interval in number of hours|
+|interval|Int32|The x value of every x hours for hourly schedule, every x days for Daily Schedule, every x weeks for weekly schedule, every x months for Monthly Schedule. Valid values 1 to 23|
 
 ## Relationships
 None
@@ -32,12 +29,12 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.hourlySchedule"
+  "@odata.type": "microsoft.graph.deviceHealthScriptRunSchedule"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.hourlySchedule",
+  "@odata.type": "#microsoft.graph.deviceHealthScriptRunSchedule",
   "interval": 1024
 }
 ```

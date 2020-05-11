@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1660
+Content-Length: 2278
 
 {
   "value": {
@@ -110,6 +110,24 @@ Content-Length: 1660
         "@odata.type": "microsoft.graph.macOSKernelExtension",
         "teamIdentifier": "Team Identifier value",
         "bundleId": "Bundle Id value"
+      }
+    ],
+    "systemExtensionsBlockOverride": true,
+    "systemExtensionsAllowedTeamIdentifiers": [
+      "System Extensions Allowed Team Identifiers value"
+    ],
+    "systemExtensionsAllowed": [
+      {
+        "@odata.type": "microsoft.graph.macOSSystemExtension",
+        "teamIdentifier": "Team Identifier value",
+        "bundleId": "Bundle Id value"
+      }
+    ],
+    "systemExtensionsAllowedTypes": [
+      {
+        "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+        "teamIdentifier": "Team Identifier value",
+        "allowedTypes": "networkExtensionsAllowed"
       }
     ]
   }

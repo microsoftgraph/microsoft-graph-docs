@@ -30,6 +30,7 @@ ManagedDevices that are scheduled for retire
 |ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Managed Device ManagedDeviceOwnerType. Possible values are: `unknown`, `company`, `personal`.|
 |deviceCompliancePolicyName|String|Device Compliance Policy Name|
 |deviceCompliancePolicyId|String|Device Compliance PolicyId|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 ## Relationships
 None
@@ -53,7 +54,10 @@ Here is a JSON representation of the resource.
   "managementAgent": "String",
   "ownerType": "String",
   "deviceCompliancePolicyName": "String",
-  "deviceCompliancePolicyId": "String"
+  "deviceCompliancePolicyId": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 

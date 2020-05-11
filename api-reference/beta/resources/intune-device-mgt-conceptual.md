@@ -1,7 +1,7 @@
 ---
 title: "Device management in Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define manage devices for a tenant organization."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -31,7 +31,6 @@ Namespace: microsoft.graph
 - [Bulk managed device action result](intune-devices-bulkmanageddeviceactionresult.md)
 - [Chassis type](intune-devices-chassistype.md)
 - [Circular geofence management condition](intune-fencing-circulargeofencemanagementcondition.md)
-- [Co management eligible type](intune-devices-comanagementeligibletype.md)
 - [Compliance state](intune-devices-compliancestate.md)
 - [Configuration manager action](intune-devices-configurationmanageraction.md)
 - [Configuration manager action delivery status](intune-devices-configurationmanageractiondeliverystatus.md)
@@ -41,12 +40,10 @@ Namespace: microsoft.graph
 - [Configuration manager client health state](intune-devices-configurationmanagerclienthealthstate.md)
 - [Configuration manager client information](intune-devices-configurationmanagerclientinformation.md)
 - [Configuration manager client state](intune-devices-configurationmanagerclientstate.md)
-- [Daily schedule](intune-devices-dailyschedule.md)
 - [Data sharing consent](intune-devices-datasharingconsent.md)
 - [Delete user from shared Apple device action result](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [Detected app](intune-devices-detectedapp.md)
 - [Device action result](intune-devices-deviceactionresult.md)
-- [Device and app management assignment filter type](intune-esim-deviceandappmanagementassignmentfiltertype.md)
 - [Device enrollment failure reason](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Device exchange access state summary](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Device geolocation](intune-devices-devicegeolocation.md)
@@ -56,11 +53,20 @@ Namespace: microsoft.graph
 - [Device health attestation state](intune-devices-devicehealthattestationstate.md)
 - [Device health script](intune-devices-devicehealthscript.md)
 - [Device health script assignment](intune-devices-devicehealthscriptassignment.md)
+- [Device health script boolean parameter](intune-devices-devicehealthscriptbooleanparameter.md)
+- [Device health script daily schedule](intune-devices-devicehealthscriptdailyschedule.md)
 - [Device health script device state](intune-devices-devicehealthscriptdevicestate.md)
+- [Device health script hourly schedule](intune-devices-devicehealthscripthourlyschedule.md)
+- [Device health script integer parameter](intune-devices-devicehealthscriptintegerparameter.md)
+- [Device health script parameter](intune-devices-devicehealthscriptparameter.md)
 - [Device health script remediation history](intune-devices-devicehealthscriptremediationhistory.md)
 - [Device health script remediation history data](intune-devices-devicehealthscriptremediationhistorydata.md)
 - [Device health script remediation summary](intune-devices-devicehealthscriptremediationsummary.md)
+- [Device health script run once schedule](intune-devices-devicehealthscriptrunonceschedule.md)
+- [Device health script run schedule](intune-devices-devicehealthscriptrunschedule.md)
 - [Device health script run summary](intune-devices-devicehealthscriptrunsummary.md)
+- [Device health script string parameter](intune-devices-devicehealthscriptstringparameter.md)
+- [Device health script time schedule](intune-devices-devicehealthscripttimeschedule.md)
 - [Device management abstract complex setting definition](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Device management abstract complex setting instance](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Device management autopilot event](intune-troubleshooting-devicemanagementautopilotevent.md)
@@ -116,6 +122,7 @@ Namespace: microsoft.graph
 - [Device management subscriptions](intune-devices-devicemanagementsubscriptions.md)
 - [Device management template](intune-deviceintent-devicemanagementtemplate.md)
 - [Device management template setting category](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [Device management template subtype](intune-deviceintent-devicemanagementtemplatesubtype.md)
 - [Device management template type](intune-deviceintent-devicemanagementtemplatetype.md)
 - [Device management troubleshooting error details](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [Device management troubleshooting error resource](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
@@ -135,9 +142,9 @@ Namespace: microsoft.graph
 - [Global device health script state](intune-devices-globaldevicehealthscriptstate.md)
 - [Hardware information](intune-devices-hardwareinformation.md)
 - [Health state](intune-devices-healthstate.md)
-- [Hourly schedule](intune-devices-hourlyschedule.md)
 - [Insight value double](intune-devices-insightvaluedouble.md)
 - [Insight value int](intune-devices-insightvalueint.md)
+- [Join type](intune-devices-jointype.md)
 - [Localized notification message](intune-notification-localizednotificationmessage.md)
 - [Locate device action result](intune-devices-locatedeviceactionresult.md)
 - [Location management condition](intune-fencing-locationmanagementcondition.md)
@@ -177,12 +184,13 @@ Namespace: microsoft.graph
 - [Remediation state](intune-devices-remediationstate.md)
 - [Remote action](intune-devices-remoteaction.md)
 - [Remote action audit](intune-devices-remoteactionaudit.md)
+- [Remote assistance on-boarding status](intune-remoteassistance-remoteassistanceonboardingstatus.md)
+- [Remote assistance partner](intune-remoteassistance-remoteassistancepartner.md)
 - [Remote lock action result](intune-devices-remotelockactionresult.md)
 - [Reset passcode action result](intune-devices-resetpasscodeactionresult.md)
 - [Revoke apple VPP licenses action result](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Role scope tag info](intune-auditing-rolescopetaginfo.md)
 - [Rotate BitLocker keys device action result](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
-- [Run schedule](intune-devices-runschedule.md)
 - [Security baseline category state summary](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Security baseline compliance state](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Security baseline device state](intune-deviceintent-securitybaselinedevicestate.md)
@@ -232,5 +240,3 @@ Namespace: microsoft.graph
 - [Windows management app](intune-devices-windowsmanagementapp.md)
 - [Windows management app health state](intune-devices-windowsmanagementapphealthstate.md)
 - [Windows protection state](intune-devices-windowsprotectionstate.md)
-
-

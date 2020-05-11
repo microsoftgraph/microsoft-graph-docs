@@ -1,7 +1,7 @@
 ---
 title: "Device configuration in Microsoft Intune - Microsoft Gaaph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define configure devices for a tenant organization."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -32,6 +32,7 @@ The following Graph resources are available to manage settings and features on d
 - [Android device owner compliance policy](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Android device owner default app permission policy type](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Android device owner derived credential authentication configuration](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
+- [Android device owner enrollment profile type](intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)
 - [Android device owner enterprise Wi-Fi configuration](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Android device owner general device configuration](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Android device owner global proxy](intune-deviceconfig-androiddeviceownerglobalproxy.md)
@@ -226,6 +227,7 @@ The following Graph resources are available to manage settings and features on d
 - [Encryption report policy details](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [Encryption state](intune-deviceconfig-encryptionstate.md)
 - [Extended key usage](intune-deviceconfig-extendedkeyusage.md)
+- [Feature flighted configuration](intune-deviceconfig-featureflightedconfiguration.md)
 - [File vault state](intune-deviceconfig-filevaultstate.md)
 - [Firewall certificate revocation list check method type](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [Firewall packet queueing method type](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
@@ -335,6 +337,7 @@ The following Graph resources are available to manage settings and features on d
 - [Local security options minimum session security](intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)
 - [Local security options smart card removal behavior type](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [Local security options standard user elevation prompt behavior type](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
+- [macOS apple event receiver](intune-deviceconfig-macosappleeventreceiver.md)
 - [macOS associated domains key/value pair](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
 - [macOS certificate profile base](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS compliance policy](intune-deviceconfig-macoscompliancepolicy.md)
@@ -354,9 +357,14 @@ The following Graph resources are available to manage settings and features on d
 - [macOS kernel extension](intune-deviceconfig-macoskernelextension.md)
 - [macOS launch item](intune-deviceconfig-macoslaunchitem.md)
 - [macOS PKCS certificate profile](intune-deviceconfig-macospkcscertificateprofile.md)
+- [macOS privacy access control item](intune-deviceconfig-macosprivacyaccesscontrolitem.md)
+- [macOS process identifier type](intune-deviceconfig-macosprocessidentifiertype.md)
 - [macOS redirect single sign on extension](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [macOS SCEP certificate profile](intune-deviceconfig-macosscepcertificateprofile.md)
 - [macOS single sign on extension](intune-deviceconfig-macossinglesignonextension.md)
+- [macOS system extension](intune-deviceconfig-macossystemextension.md)
+- [macOS system extension type](intune-deviceconfig-macossystemextensiontype.md)
+- [macOS system extension type mapping](intune-deviceconfig-macossystemextensiontypemapping.md)
 - [macOS trusted root certificate](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN configuration](intune-deviceconfig-macosvpnconfiguration.md)
 - [macOS Wi-Fi configuration](intune-deviceconfig-macoswificonfiguration.md)

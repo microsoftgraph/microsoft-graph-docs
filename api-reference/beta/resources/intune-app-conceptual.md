@@ -1,7 +1,7 @@
 ---
 title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -38,7 +38,6 @@ The following Graph resources are available to manage app protection polices in 
 - [Android managed store account enrollment target](intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)
 - [Android managed store account enterprise settings](intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)
 - [Android managed store app](intune-apps-androidmanagedstoreapp.md)
-- [Android managed store app assignment settings](intune-apps-androidmanagedstoreappassignmentsettings.md)
 - [Android managed store app configuration](intune-apps-androidmanagedstoreappconfiguration.md)
 - [Android managed store app configuration schema](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Android managed store app configuration schema item](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
@@ -134,7 +133,6 @@ The following Graph resources are available to manage app protection polices in 
 - [VPP licensing type](intune-apps-vpplicensingtype.md)
 - [Web app](intune-apps-webapp.md)
 - [Win32 LOB app](intune-apps-win32lobapp.md)
-- [Win32 LOB app delivery optimization priority](intune-apps-win32lobappdeliveryoptimizationpriority.md)
 - [Win32 LOB app detection](intune-apps-win32lobappdetection.md)
 - [Win32 LOB app detection operator](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB app file system detection](intune-apps-win32lobappfilesystemdetection.md)

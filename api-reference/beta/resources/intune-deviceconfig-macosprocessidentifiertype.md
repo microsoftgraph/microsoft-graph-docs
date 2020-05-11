@@ -1,13 +1,13 @@
 ---
-title: "coManagementEligibleType enum type"
-description: "Not yet documented"
+title: "macOSProcessIdentifierType enum type"
+description: "Process identifier types for MacOS Privacy Preferences"
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
-# coManagementEligibleType enum type
+# macOSProcessIdentifierType enum type
 
 Namespace: microsoft.graph
 
@@ -15,15 +15,13 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Process identifier types for MacOS Privacy Preferences
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|coManaged|1|Not yet documented|
-|eligible|2|Not yet documented|
-|eligibleButNotAadJoined|3|Not yet documented|
-|needsOSUpdate|4|Not yet documented|
+|bundleID|1|Indicates an app with a bundle ID.|
+|path|2|Indicates a file path for a process.|
 
 
 
