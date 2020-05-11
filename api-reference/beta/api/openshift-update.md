@@ -42,7 +42,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+Provide the modified [openshift](../resources/openshift.md) object in the request body for this method.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
+PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
 Content-type: application/json
 
 {

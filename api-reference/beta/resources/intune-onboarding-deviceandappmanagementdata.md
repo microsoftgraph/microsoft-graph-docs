@@ -35,7 +35,7 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementData",
-  "content": "<Unknown Primitive Type Edm.Stream>"
+  "content": "Stream"
 }
 ```
 

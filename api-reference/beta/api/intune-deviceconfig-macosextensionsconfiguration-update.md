@@ -64,6 +64,10 @@ The following table shows the properties that are required when you create the [
 |kernelExtensionOverridesAllowed|Boolean|If set to true, users can approve additional kernel extensions not explicitly allowed by configurations profiles.|
 |kernelExtensionAllowedTeamIdentifiers|String collection|All kernel extensions validly signed by the team identifiers in this list will be allowed to load.|
 |kernelExtensionsAllowed|[macOSKernelExtension](../resources/intune-deviceconfig-macoskernelextension.md) collection|A list of kernel extensions that will be allowed to load. . This collection can contain a maximum of 500 elements.|
+|systemExtensionsBlockOverride|Boolean|Gets or sets whether to allow the user to approve additional system extensions not explicitly allowed by configuration profiles.|
+|systemExtensionsAllowedTeamIdentifiers|String collection|Gets or sets a list of allowed team identifiers. Any system extension signed with any of the specified team identifiers will be approved.|
+|systemExtensionsAllowed|[macOSSystemExtension](../resources/intune-deviceconfig-macossystemextension.md) collection|Gets or sets a list of allowed macOS system extensions. This collection can contain a maximum of 500 elements.|
+|systemExtensionsAllowedTypes|[macOSSystemExtensionTypeMapping](../resources/intune-deviceconfig-macossystemextensiontypemapping.md) collection|Gets or sets a list of allowed macOS system extension types. This collection can contain a maximum of 500 elements.|
 
 
 
@@ -77,7 +81,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1383
+Content-length: 1965
 
 {
   "@odata.type": "#microsoft.graph.macOSExtensionsConfiguration",
@@ -119,6 +123,24 @@ Content-length: 1383
       "teamIdentifier": "Team Identifier value",
       "bundleId": "Bundle Id value"
     }
+  ],
+  "systemExtensionsBlockOverride": true,
+  "systemExtensionsAllowedTeamIdentifiers": [
+    "System Extensions Allowed Team Identifiers value"
+  ],
+  "systemExtensionsAllowed": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtension",
+      "teamIdentifier": "Team Identifier value",
+      "bundleId": "Bundle Id value"
+    }
+  ],
+  "systemExtensionsAllowedTypes": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+      "teamIdentifier": "Team Identifier value",
+      "allowedTypes": "networkExtensionsAllowed"
+    }
   ]
 }
 ```
@@ -128,7 +150,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1555
+Content-Length: 2137
 
 {
   "@odata.type": "#microsoft.graph.macOSExtensionsConfiguration",
@@ -172,6 +194,24 @@ Content-Length: 1555
       "@odata.type": "microsoft.graph.macOSKernelExtension",
       "teamIdentifier": "Team Identifier value",
       "bundleId": "Bundle Id value"
+    }
+  ],
+  "systemExtensionsBlockOverride": true,
+  "systemExtensionsAllowedTeamIdentifiers": [
+    "System Extensions Allowed Team Identifiers value"
+  ],
+  "systemExtensionsAllowed": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtension",
+      "teamIdentifier": "Team Identifier value",
+      "bundleId": "Bundle Id value"
+    }
+  ],
+  "systemExtensionsAllowedTypes": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+      "teamIdentifier": "Team Identifier value",
+      "allowedTypes": "networkExtensionsAllowed"
     }
   ]
 }

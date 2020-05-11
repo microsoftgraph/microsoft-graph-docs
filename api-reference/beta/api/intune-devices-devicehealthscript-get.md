@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 802
+Content-Length: 1488
 
 {
   "value": {
@@ -84,7 +84,27 @@ Content-Length: 802
       "Role Scope Tag Ids value"
     ],
     "isGlobalScript": true,
-    "highestAvailableVersion": "Highest Available Version value"
+    "highestAvailableVersion": "Highest Available Version value",
+    "detectionScriptParameters": [
+      {
+        "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+        "name": "Name value",
+        "description": "Description value",
+        "isRequired": true,
+        "applyDefaultValueWhenNotAssigned": true,
+        "defaultValue": "Default Value value"
+      }
+    ],
+    "remediationScriptParameters": [
+      {
+        "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+        "name": "Name value",
+        "description": "Description value",
+        "isRequired": true,
+        "applyDefaultValueWhenNotAssigned": true,
+        "defaultValue": "Default Value value"
+      }
+    ]
   }
 }
 ```

@@ -70,9 +70,9 @@ Here is a JSON representation of the resource.
   "applicablePlatforms": [
     "String"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": "4.2",
+  "longitude": "4.2",
+  "radiusInMeters": 4.2
 }
 ```
 

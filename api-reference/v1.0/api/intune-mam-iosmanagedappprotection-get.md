@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1839
+Content-Length: 1942
 
 {
   "value": {
@@ -100,17 +100,16 @@ Content-Length: 1839
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
     "minimumWarningAppVersion": "Minimum Warning App Version value",
+    "managedBrowser": "microsoftEdge",
     "isAssigned": true,
     "appDataEncryptionType": "afterDeviceRestart",
     "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
     "deployedAppCount": 0,
-    "faceIdBlocked": true
+    "faceIdBlocked": true,
+    "customBrowserProtocol": "Custom Browser Protocol value"
   }
 }
 ```
-
-
-
 
 
 

@@ -74,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1301
+Content-length: 1248
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkCustomConfiguration",
@@ -108,12 +108,10 @@ Content-length: 1301
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value",
-      "value": 5,
-      "isReadOnly": true
+      "omaUri": "Oma Uri value"
     }
   ]
 }
@@ -124,7 +122,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1473
+Content-Length: 1420
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkCustomConfiguration",
@@ -161,12 +159,10 @@ Content-Length: 1473
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value",
-      "value": 5,
-      "isReadOnly": true
+      "omaUri": "Oma Uri value"
     }
   ]
 }

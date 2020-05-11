@@ -54,9 +54,7 @@ Here is a JSON representation of the resource.
   ],
   "enterpriseIPRanges": [
     {
-      "@odata.type": "microsoft.graph.iPv6Range",
-      "lowerAddress": "String",
-      "upperAddress": "String"
+      "@odata.type": "microsoft.graph.ipRange"
     }
   ],
   "enterpriseInternalProxyServers": [

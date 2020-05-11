@@ -1,6 +1,6 @@
 ---
 title: "deviceManagement resource type"
-description: "The deviceManagement resource represents a container whose contents vary according to workflow."
+description: "The deviceManagement resource represents a container whose contents vary according to workflow, including:  "
 localization_priority: Normal
 author: "dougeby"
 ms.prod: "intune"
@@ -172,6 +172,8 @@ The deviceManagement resource represents a container whose contents vary accordi
 |derivedCredentials|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) collection|Collection of Derived credential settings associated with account.|
 |**Remote access**|
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) collection|Collection of PFX certificates associated with a user.|
+|**Remote assistance**|
+|remoteAssistancePartners|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) collection|The remote assist partners.|
 |**Role based access control (RBAC)**|
 |resourceOperations|[resourceOperation](../resources/intune-rbac-resourceoperation.md) collection|The Resource Operations.|
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) collection|The Role Assignments.|

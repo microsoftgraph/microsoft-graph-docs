@@ -43,6 +43,7 @@ Hardware information of a given device.
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Virtualization-based security status. . Possible values are: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Local System Authority (LSA) credential guard status. . Possible values are: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 |osBuildNumber|String|Operating System Build Number on Android device|
+|operatingSystemProductType|Int32|Int that specifies the Windows Operating System ProductType. More details here https://go.microsoft.com/fwlink/?linkid=2126950. Valid values 0 to 2147483647|
 
 ## Relationships
 None
@@ -87,7 +88,8 @@ Here is a JSON representation of the resource.
   "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
   "deviceGuardVirtualizationBasedSecurityState": "String",
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
-  "osBuildNumber": "String"
+  "osBuildNumber": "String",
+  "operatingSystemProductType": 1024
 }
 ```
 

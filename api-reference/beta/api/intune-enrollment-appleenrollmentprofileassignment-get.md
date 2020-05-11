@@ -63,14 +63,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 250
+Content-Length: 238
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.appleEnrollmentProfileAssignment",
     "id": "5b603771-3771-5b60-7137-605b7137605b",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
     }
   }
 }

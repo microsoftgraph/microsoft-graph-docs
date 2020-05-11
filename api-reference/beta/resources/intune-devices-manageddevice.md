@@ -76,7 +76,7 @@ Devices that are managed or pre-enrolled through Intune
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. This property is read-only.|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
 |azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`, `androidEnterpriseDedicatedDevice`, `androidEnterpriseFullyManaged`, `androidEnterpriseCorporateWorkProfile`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indicates if Lost mode is enabled or disabled. This property is read-only. Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. This property is read-only.|
 |emailAddress|String|Email(s) for the user associated with the device. This property is read-only.|
@@ -127,6 +127,8 @@ Devices that are managed or pre-enrolled through Intune
 |physicalMemoryInBytes|Int64|Total Memory in Bytes. This property is read-only.|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Processor architecture. This property is read-only. Possible values are: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
 |specificationVersion|String|Specification version. This property is read-only.|
+|joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type. Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
+|skuFamily|String|Device sku family|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -182,7 +184,8 @@ Here is a JSON representation of the resource.
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
     "deviceGuardVirtualizationBasedSecurityState": "String",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
-    "osBuildNumber": "String"
+    "osBuildNumber": "String",
+    "operatingSystemProductType": 1024
   },
   "ownerType": "String",
   "managedDeviceOwnerType": "String",
@@ -321,7 +324,9 @@ Here is a JSON representation of the resource.
   "ethernetMacAddress": "String",
   "physicalMemoryInBytes": 1024,
   "processorArchitecture": "String",
-  "specificationVersion": "String"
+  "specificationVersion": "String",
+  "joinType": "String",
+  "skuFamily": "String"
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "Shared resources in Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that support multiple workflows for a tenant organization."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "intune"
 ---
 
@@ -22,6 +22,7 @@ The following Graph resources are shared between Intune workflows:
 - [All devices assignment target](intune-shared-alldevicesassignmenttarget.md)
 - [All licensed users assignment target](intune-shared-alllicensedusersassignmenttarget.md)
 - [Android managed app protection](intune-shared-androidmanagedappprotection.md)
+- [Android managed store app assignment settings](intune-shared-androidmanagedstoreappassignmentsettings.md)
 - [Company portal action](intune-shared-companyportalaction.md)
 - [Company portal blocked action](intune-shared-companyportalblockedaction.md)
 - [Compliance status](intune-shared-compliancestatus.md)
@@ -79,6 +80,7 @@ The following Graph resources are shared between Intune workflows:
 - [VPP token account type](intune-shared-vpptokenaccounttype.md)
 - [VPP token action failure reason](intune-shared-vpptokenactionfailurereason.md)
 - [Win32 LOB app assignment settings](intune-shared-win32lobappassignmentsettings.md)
+- [Win32 LOB app delivery optimization priority](intune-shared-win32lobappdeliveryoptimizationpriority.md)
 - [Win32 LOB app notification](intune-shared-win32lobappnotification.md)
 - [Win32 LOB app restart settings](intune-shared-win32lobapprestartsettings.md)
 - [Windows AppX app assignment settings](intune-shared-windowsappxappassignmentsettings.md)
@@ -86,4 +88,3 @@ The following Graph resources are shared between Intune workflows:
 - [Windows domain join configuration](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows universal AppX app assignment settings](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Windows update state](intune-shared-windowsupdatestate.md)
-

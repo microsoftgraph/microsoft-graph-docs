@@ -91,6 +91,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |classroomForceRequestPermissionToLeaveClasses|Boolean|Indicates whether a student enrolled in an unmanaged course via Classroom will be required to request permission from the teacher when attempting to leave the course. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
 |classroomForceUnpromptedAppAndDeviceLock|Boolean|Indicates whether or not to allow the teacher to lock apps or the device without prompting the student. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
 |iCloudBlockActivityContinuation|Boolean|Indicates whether or not to block the user from continuing work that they started on a MacOS device on another iOS or MacOS device (MacOS 10.15 or later).|
+|privacyAccessControls|[macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md) collection|List of privacy preference policy controls. This collection can contain a maximum of 10000 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -202,7 +203,46 @@ Here is a JSON representation of the resource.
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "String",
+      "identifier": "String",
+      "identifierType": "String",
+      "codeRequirement": "String",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "String",
+      "accessibility": "String",
+      "addressBook": "String",
+      "calendar": "String",
+      "reminders": "String",
+      "photos": "String",
+      "mediaLibrary": "String",
+      "fileProviderPresence": "String",
+      "systemPolicyAllFiles": "String",
+      "systemPolicySystemAdminFiles": "String",
+      "systemPolicyDesktopFolder": "String",
+      "systemPolicyDocumentsFolder": "String",
+      "systemPolicyDownloadsFolder": "String",
+      "systemPolicyNetworkVolumes": "String",
+      "systemPolicyRemovableVolumes": "String",
+      "postEvent": "String",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "String",
+          "identifier": "String",
+          "identifierType": "String",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
 
