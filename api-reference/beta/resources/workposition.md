@@ -52,55 +52,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "allowedAudiences": "organization",
-  "categories": null,
-  "colleagues": [],
-   "createdBy": {
-      "device": null,
-      "user": null,
-      "application": {
-          "displayName": "AAD",
-          "id": null
-      }
-  },
-  "createdDateTime": "2020-02-18T16:07:14Z",
-  "detail": {
-      "description": null,
-      "endMonthYear": null,
-      "jobTitle": "Auditor",
-      "startMonthYear": "2001-01-01",
-      "summary": null,
-      "company": {
-          "displayName": "Contoso Ltd.",
-          "pronunciation": null,
-          "department": "Finance",
-          "officeLocation": "12/1110",
-          "webUrl": null,
-          "address": {
-              "type": "business",
-              "postOfficeBox": null,
-              "street": "30 Isabella St., Second Floor",
-              "city": "Pittsburgh",
-              "state": "PA",
-              "countryOrRegion": "US",
-              "postalCode": "15212"
-          }
-      }
-  },
-  "id": "1b9e024d-0df8-4b57-af2b-dae70db4f356",
-  "inference": null,
-  "isCurrent": "True",
-  "lastModifiedBy": {
-      "device": null,
-      "user": null,
-      "application": {
-          "displayName": "AAD",
-          "id": null
-      }
-  },
-  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
-  "manager": null,
-  "source": null
+  "allowedAudiences": "string",
+  "inference": {"@odata.type": "microsoft.graph.inferenceData"},
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "categories": ["String"],
+  "detail": {"@odata.type": "microsoft.graph.positionDetail"}
 }
 ```
 

@@ -99,7 +99,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.webAccount"
+  "@odata.type": "microsoft.graph.webAccount",
   "baseType": "microsoft.graph.itemfacet",
   "keyProperty": "id"
 } -->

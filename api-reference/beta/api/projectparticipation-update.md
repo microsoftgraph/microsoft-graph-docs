@@ -90,7 +90,6 @@ Content-type: application/json
   "role": "project member",
   "startMonthYear": "2019-03-23",
   "summary": "Worked as an ML specialist on a project for Contoso to better analyse their customers behaviors on the website."
-  },
 }
 ```
 # [C#](#tab/csharp)
