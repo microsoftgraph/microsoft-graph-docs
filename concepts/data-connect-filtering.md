@@ -19,7 +19,7 @@ You can run pipelines on a set of users. The following are the options for user 
 
 Specify your user selection in the SourceDataSet of the Azure Data Factory copy activity. To run on a list of groups, add a new field **allowedGroups** under **typeProperties** and set this to a list of up to 10 groups' **Object Ids** separated by commas. If no groups are specified by default, data will be extracted for the entire organization. 
 
-To specify a predicate to run on the entire tenant, add a new field **userScopeFilterUri** under **typeProperties** and set this to the predicate. The predicate format should match the query format of Microsoft Graph APIs. For example, if you want to limit the selection to users who work in the Finance department, you can use `https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'`.
+To specify a predicate to run on the entire tenant, add a new field **userScopeFilterUri** under **typeProperties** and set this to the predicate. The predicate format should match the query format of Microsoft Graph APIs. For example, if you want to limit the selection to users who work in the Finance department, you can use `https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'`. If you want to limit the selection to one user, you can use `https://graph.microsoft.com/v1.0/users?$filter=mail eq 'contosouser1@contoso.com'`.
 
 Your query will only return users within the Office 365 organization that you're querying. Guest users and non-user mailboxes will not be returned.
 

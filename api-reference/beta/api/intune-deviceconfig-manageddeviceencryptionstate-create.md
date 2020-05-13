@@ -1,7 +1,7 @@
 ---
 title: "Create managedDeviceEncryptionState"
 description: "Create a new managedDeviceEncryptionState object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -126,8 +126,6 @@ Content-Length: 753
   ]
 }
 ```
-
-
 
 
 

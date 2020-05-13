@@ -1,7 +1,7 @@
 ---
 title: "Get userExperienceAnalyticsDevicePerformance"
 description: "Read properties and relationships of the userExperienceAnalyticsDevicePerformance object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -86,8 +86,6 @@ Content-Length: 629
   }
 }
 ```
-
-
 
 
 

@@ -4,7 +4,7 @@ description: "Get the policy objects assigned to an application or service princ
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "dkershaw10"
 ---
 
 # List Policies assigned to Application or Service Principal

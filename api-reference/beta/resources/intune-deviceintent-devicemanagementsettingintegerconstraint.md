@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingIntegerConstraint resource type"
 description: "Constraint enforcing the permitted value range for an integer setting"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

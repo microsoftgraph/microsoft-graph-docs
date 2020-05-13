@@ -1,7 +1,7 @@
 ---
 title: "configurationManagerClientInformation resource type"
 description: "Configuration Manager client information synced from SCCM"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -21,6 +21,7 @@ Configuration Manager client information synced from SCCM
 |Property|Type|Description|
 |:---|:---|:---|
 |clientIdentifier|String|Configuration Manager Client Id from SCCM|
+|isBlocked|Boolean|Configuration Manager Client blocked status from SCCM|
 
 ## Relationships
 None
@@ -35,7 +36,8 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationManagerClientInformation",
-  "clientIdentifier": "String"
+  "clientIdentifier": "String",
+  "isBlocked": true
 }
 ```
 

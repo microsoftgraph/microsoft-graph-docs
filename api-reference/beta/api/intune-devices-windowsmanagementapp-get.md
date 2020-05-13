@@ -1,7 +1,7 @@
 ---
 title: "Get windowsManagementApp"
 description: "Read properties and relationships of the windowsManagementApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -73,8 +73,6 @@ Content-Length: 186
   }
 }
 ```
-
-
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Get personInterest"
-description: "Retrieve the properties and relationships of a personinterest object."
+description: "Retrieve the properties and relationships of a personInterest object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"

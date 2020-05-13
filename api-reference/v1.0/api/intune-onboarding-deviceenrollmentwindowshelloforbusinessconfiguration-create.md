@@ -1,7 +1,7 @@
 ---
 title: "Create deviceEnrollmentWindowsHelloForBusinessConfiguration"
 description: "Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -131,6 +131,8 @@ Content-Length: 801
   "enhancedBiometricsState": "enabled"
 }
 ```
+
+
 
 
 

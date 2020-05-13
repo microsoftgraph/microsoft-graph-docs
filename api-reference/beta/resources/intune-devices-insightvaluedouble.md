@@ -1,7 +1,7 @@
 ---
 title: "insightValueDouble resource type"
 description: "The value in an user experience analytics insight."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -38,7 +38,7 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.insightValueDouble",
-  "value": "<Unknown Primitive Type Edm.Double>"
+  "value": "4.2"
 }
 ```
 

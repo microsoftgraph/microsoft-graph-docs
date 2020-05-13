@@ -3,7 +3,7 @@ title: "List messages"
 description: "Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). "
 localization_priority: Normal
 doc_type: apiPageType
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 ---
 
@@ -19,17 +19,17 @@ Depending on the page size and mailbox data, getting messages from a mailbox can
 
 Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses. This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items. It's therefore possible that even in the initial response, the `$skip` value is larger than the page size. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
-You can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.
-
-Note that by default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
-to [find details of each mention in a message](../api/message-get.md#request-2).
+You can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user. See an [example](#request-2) below. 
+By default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
+to [find details of each mention in a message](../api/message-get.md#example-2).
 
 There are two scenarios where an app can get messages in another user's mail folder:
 
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-share-messages-folders).
 
-
+> **Note** Be aware of the [known issue](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams) that this operation includes Microsoft Teams chat messages in its response.
+ 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

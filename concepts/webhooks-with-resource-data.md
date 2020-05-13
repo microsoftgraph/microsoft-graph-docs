@@ -86,7 +86,6 @@ Content-Type: application/json
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificateId": "{custom ID}",
-  "encryptionCertificateThumbprint": "{thumbprint from the certificate}",
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secret client state}"
 }
@@ -325,7 +324,7 @@ Here is an example of the properties included in the JWT token that are needed f
 // add Microsoft.IdentityModel.Protocols.OpenIdConnect and System.IdentityModel.Tokens.Jwt nuget packages to your project
 public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable<string> appIds)
 {
-    var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>("https://login.microsoftonline.com/common/.well-known/openid-configuration", new OpenIdConnectConfigurationRetriever());
+    var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>("https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration", new OpenIdConnectConfigurationRetriever());
     var openIdConfig = await configurationManager.GetConfigurationAsync();
     var handler = new JwtSecurityTokenHandler();
     try
@@ -346,6 +345,96 @@ public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable
     {
 	Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
 	return false;
+    }
+}
+```
+```java
+private boolean IsValidationTokenValid(String[] appIds, String tenantId, String serializedToken) {
+	try {
+	    JwkKeyResolver jwksResolver = new JwkKeyResolver();
+	    Jws<Claims> token = Jwts.parserBuilder()
+		.setSigningKeyResolver(jwksResolver)
+		.build()
+		.parseClaimsJws(serializedToken);
+	    Claims body = token.getBody();
+	    String audience = body.getAudience();
+	    boolean isAudienceValid = false;
+	    for(String appId : appIds) {
+		isAudienceValid = isAudienceValid || appId.equals(audience);
+	    }
+	    boolean isTenantValid = body.getIssuer().endsWith(tenantId + "/");
+	    return isAudienceValid  && isTenantValid; //nbf,exp and signature are already validated by library
+	} catch (Exception e) {
+	    LOGGER.error("could not validate token");
+	    LOGGER.error(e.getMessage());
+	    return false;
+	}
+}
+```
+```JavaScript
+import jwt from 'jsonwebtoken';
+import jkwsClient from 'jwks-rsa';
+
+const client = jkwsClient({
+  jwksUri: 'https://login.microsoftonline.com/common/discovery/v2.0/keys'
+});
+
+export function getKey(header, callback) {
+  client.getSigningKey(header.kid, (err, key) => {
+    var signingKey = key.publicKey || key.rsaPublicKey;
+    callback(null, signingKey);
+  });
+}
+
+export function isTokenValid(token, appId, tenantId) {
+  return new Promise((resolve) => {
+    const options = {
+      audience: [appId],
+      issuer: [`https://sts.windows.net/${tenantId}/`]
+    };
+    jwt.verify(token, getKey, options, (err) => {
+      if (err) {
+        // eslint-disable-next-line no-console
+        console.error(err);
+        resolve(false);
+      } else {
+        resolve(true);
+      }
+    });
+  });
+}
+```
+For the Java sample to work, you will also need to implement the `JwkKeyResolver`.  
+```java
+package com.example.restservice;
+
+import com.auth0.jwk.JwkProvider;
+import com.auth0.jwk.UrlJwkProvider;
+import com.auth0.jwk.Jwk;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwsHeader;
+import io.jsonwebtoken.SigningKeyResolverAdapter;
+import java.security.Key;
+import java.net.URI;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class JwkKeyResolver extends SigningKeyResolverAdapter {
+    private JwkProvider keyStore;
+    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+    public JwkKeyResolver() throws java.net.URISyntaxException, java.net.MalformedURLException {
+        this.keyStore = new UrlJwkProvider((new URI("https://login.microsoftonline.com/common/discovery/keys").toURL()));
+    }
+    @Override
+    public Key resolveSigningKey(JwsHeader jwsHeader, Claims claims) {
+        try {
+            String keyId = jwsHeader.getKeyId();
+            Jwk pub = keyStore.get(keyId);
+            return pub.getPublicKey();
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return null;
+        }
     }
 }
 ```
@@ -476,6 +565,26 @@ byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP:
 
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
+```Java
+String storename = ""; //name/path of the jks store
+String storepass = ""; //password used to open the jks store
+String alias = ""; //alias of the certificate when store in the jks store, should be passed as encryptionCertificateId when subscribing and retrieved from the notification
+KeyStore ks = KeyStore.getInstance("JKS");
+ks.load(new FileInputStream(storename), storepass.toCharArray());
+Key asymmetricKey = ks.getKey(alias, storepass.toCharArray());
+byte[] encryptedSymetricKey = Base64.decodeBase64("<value from dataKey property>");
+Cipher cipher = Cipher.getInstance("RSA/ECB/OAEPWithSHA1AndMGF1Padding");
+cipher.init(Cipher.DECRYPT_MODE, asymmetricKey);
+byte[] decryptedSymmetricKey = cipher.doFinal(encryptedSymetricKey);
+// Can now use decryptedSymmetricKey with the AES algorithm.
+```
+```JavaScript
+const base64encodedKey = 'base 64 encoded dataKey value';
+const asymetricPrivateKey = 'pem encoded private key';
+const decodedKey = Buffer.from(base64encodedKey, 'base64');
+const decryptedSymetricKey = crypto.privateDecrypt(asymetricPrivateKey, decodedKey);
+// Can now use decryptedSymmetricKey with the AES algorithm.
+```
 
 #### Compare data signature using HMAC-SHA256
 
@@ -490,6 +599,37 @@ using (HMACSHA256 hmac = new HMACSHA256(decryptedSymmetricKey))
     actualSignature = hmac.ComputeHash(encryptedPayload);
 }
 if (actualSignature.SequenceEqual(expectedSignature))
+{
+    // Continue with decryption of the encryptedPayload.
+}
+else
+{
+    // Do not attempt to decrypt encryptedPayload. Assume notification payload has been tampered with and investigate.
+}
+```
+```Java
+byte[] decryptedSymmetricKey = "<the aes key decrypted in the previous step>";
+byte[] decodedEncryptedData = Base64.decodeBase64("data property from encryptedContent object");
+Mac mac = Mac.getInstance("HMACSHA256");
+SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "HMACSHA256");
+mac.init(skey);
+byte[] hashedData = mac.doFinal(decodedEncryptedData);
+String encodedHashedData = new String(Base64.encodeBase64(hashedData));
+if (comparisonSignature.equals(encodedHashedData))
+{
+    // Continue with decryption of the encryptedPayload.
+}
+else
+{
+    // Do not attempt to decrypt encryptedPayload. Assume notification payload has been tampered with and investigate.
+}
+```
+```JavaScript
+const decryptedSymetricKey = []; //Buffer provided by previous step
+const base64encodedSignature = 'base64 encodded value from the dataSignature property';
+const hmac = crypto.createHmac('sha256', decryptedSymetricKey);
+hmac.write(base64encodedPayload, 'base64');
+if(base64encodedSignature === hmac.digest('base64'))
 {
     // Continue with decryption of the encryptedPayload.
 }
@@ -532,6 +672,22 @@ using (var decryptor = aesProvider.CreateDecryptor())
 }
 
 // decryptedResourceData now contains a JSON string that represents the resource.
+```
+```Java
+SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "AES");
+IvParameterSpec ivspec = new IvParameterSpec(Arrays.copyOf(decryptedSymmetricKey, 16));
+Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
+cipher.init(Cipher.DECRYPT_MODE, skey, ivspec);
+String decryptedResourceData = new String(cipher.doFinal(Base64.decodeBase64(encryptedData)));
+```
+```JavaScript
+const base64encodedPayload = 'base64 encoded value from data property';
+const decryptedSymetricKey = []; //Buffer provided by previous step
+const iv = Buffer.alloc(16, 0);
+decryptedSymetricKey.copy(iv, 0, 0, 16);
+const decipher = crypto.createDecipheriv('aes-256-cbc', decryptedSymetricKey, iv);
+let decryptedPayload = decipher.update(base64encodedPayload, 'base64', 'utf8');
+decryptedPayload += decipher.final('utf8');
 ```
 
 ## See also

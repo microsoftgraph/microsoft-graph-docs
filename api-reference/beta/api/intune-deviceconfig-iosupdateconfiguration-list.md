@@ -1,7 +1,7 @@
 ---
 title: "List iosUpdateConfigurations"
 description: "List properties and relationships of the iosUpdateConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -121,8 +121,6 @@ Content-Length: 2005
   ]
 }
 ```
-
-
 
 
 

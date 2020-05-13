@@ -1,7 +1,7 @@
 ---
 title: "hasCustomRoleScopeTag function"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -67,8 +67,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
-
 
 
 

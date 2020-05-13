@@ -1,7 +1,7 @@
 ---
 title: "Create enrollmentProfile"
 description: "Create a new enrollmentProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -99,8 +99,6 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsRegressionSummary"
 description: "Update the properties of a userExperienceAnalyticsRegressionSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -81,8 +81,6 @@ Content-Length: 131
   "id": "41683327-3327-4168-2733-684127336841"
 }
 ```
-
-
 
 
 

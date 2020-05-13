@@ -1,7 +1,7 @@
 ---
 title: "omaSettingInteger resource type"
 description: "OMA Settings Integer definition."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -45,6 +45,9 @@ Here is a JSON representation of the resource.
   "value": 1024
 }
 ```
+
+
+
 
 
 

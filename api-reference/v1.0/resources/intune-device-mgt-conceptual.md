@@ -1,7 +1,7 @@
 ---
 title: "Device management in Microsoft Intune"
 description: "Device management resources in Microsoft Intune"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: conceptualPageType
@@ -53,4 +53,7 @@ Namespace: microsoft.graph
 - [Windows device account](intune-devices-windowsdeviceaccount.md)
 - [Windows device AD account](intune-devices-windowsdeviceadaccount.md)
 - [Windows device Azure AD account](intune-devices-windowsdeviceazureadaccount.md)
+
+
+
 

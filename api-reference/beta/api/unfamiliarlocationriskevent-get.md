@@ -3,8 +3,8 @@ title: "Get unfamiliarLocationRiskEvent"
 description: "Retrieve the properties and relationships of an unfamiliarlocationriskevent object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "cloudhandler"
 ---
 
 # Get unfamiliarLocationRiskEvent

@@ -1,7 +1,7 @@
 ---
 title: "Update managedEBookAssignment"
 description: "Update the properties of a managedEBookAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -64,12 +64,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 Content-type: application/json
-Content-length: 194
+Content-length: 188
 
 {
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "installIntent": "required"
 }
@@ -80,19 +80,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 243
+Content-Length: 237
 
 {
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
   "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "installIntent": "required"
 }
 ```
-
-
 
 
 

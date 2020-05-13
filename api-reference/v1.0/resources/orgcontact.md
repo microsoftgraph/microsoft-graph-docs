@@ -2,7 +2,7 @@
 title: "orgContact resource type"
 description: "Represents an organizational contact"
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Represents an organizational contact. Organizational contacts are managed by an organization's administrators and are different from [personal contacts](contact.md). Additionally, organizational contacts are either synchronized from on-premises directories or from Exchange Online, and are read-only.
 
 Inherits from [directoryObject](directoryobject.md).
+
+This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/orgcontact-delta.md) function.
 
 ## Methods
 

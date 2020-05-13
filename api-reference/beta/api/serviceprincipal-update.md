@@ -3,8 +3,8 @@ title: "Update serviceprincipal"
 description: "Update the properties of serviceprincipal object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "sureshja"
 ---
 
 # Update serviceprincipal
@@ -54,7 +54,7 @@ In the request body, supply the values for relevant fields that should be update
 |publisherName|String|The display name of the tenant in which the associated application is specified.|
 |replyUrls|String|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application.                            **Notes**: not nullable.            |
 |samlMetadataUrl|String|            |
-|servicePrincipalNames|String|The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Notes**: not nullable, the **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
+|servicePrincipalNames|String|The URIs that identify the associated application. For more information, see [Application Objects and Service Principal Objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).                            **Notes**: Not nullable. The **any** operator is required for filter expressions on multi-valued properties; for more information, see [Supported Queries, Filters, and Paging Options](https://docs.microsoft.com/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-supported-queries-filters-and-paging-options).            |
 |tags|String|                                        **Notes**: not nullable.            |
 
 ## Response

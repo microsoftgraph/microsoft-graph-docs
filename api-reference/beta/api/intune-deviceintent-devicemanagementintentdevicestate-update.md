@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementIntentDeviceState"
 description: "Update the properties of a deviceManagementIntentDeviceState object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -99,8 +99,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
-
 
 
 

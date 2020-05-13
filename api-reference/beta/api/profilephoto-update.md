@@ -14,12 +14,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there
-is currently a limit of 4MB on the total size of each REST request, this limits the size of the photo
-you can add to under 4MB.
+is currently a limit of 8MB on the total size of each REST request, this limits the size of the photo
+you can add to under 8MB.
 
 Use only PUT for this operation in the beta version.
-
-> **Note** The update photo operation in beta supports only the user's work or school mailboxes and not personal mailboxes.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

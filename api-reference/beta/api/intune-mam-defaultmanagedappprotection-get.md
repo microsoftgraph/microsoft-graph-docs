@@ -1,7 +1,7 @@
 ---
 title: "Get defaultManagedAppProtection"
 description: "Read properties and relationships of the defaultManagedAppProtection object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -178,8 +178,6 @@ Content-Length: 4930
   }
 }
 ```
-
-
 
 
 

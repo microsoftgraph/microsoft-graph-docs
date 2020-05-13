@@ -2,7 +2,7 @@
 title: "UserFlow resource type"
 description: "Identity user flows are built-in authentication journeys"
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---

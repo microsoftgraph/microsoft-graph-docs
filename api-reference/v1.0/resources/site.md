@@ -25,6 +25,9 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource. 
 | [Get activities by interval][] | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.
 | [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match keywords provided.
+| [Follow site][]          | collection of site | Follow a user's site or multiple sites.
+| [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.
+| [List followed sites][]  | collection of site | List the sites that have been followed by the signed in user.
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -34,6 +37,9 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Get activities by interval]: ../api/itemactivitystat-getactivitybyinterval.md
 [Search for sites]: ../api/site-search.md
 [itemActivityStat]: itemactivitystat.md
+[Follow site]: ../api/site-follow.md
+[Unfollow site]: ../api/site-unfollow.md
+[List followed sites]: ../api/sites-list-followed.md
 
 ## Properties
 
@@ -51,6 +57,17 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **siteCollection**       | [siteCollection](sitecollection.md) | Provides details about the site's site collection. Available only on the root site. Read-only. |
 | **webUrl**               | string (url)                        | URL that displays the item in the browser. Read-only.                                          |
 
+### id property
+A **site** is identified by a unique ID that is a composite of the following values:
+* Site collection hostname (contoso.sharepoint.com)
+* Site collection unique ID (GUID)
+* Site unique ID (GUID)
+  
+The `root` identifier always references the root site for a given target, as follows:
+
+* `/sites/root`: The tenant root site.
+* `/groups/{group-id}/sites/root`: The group's team site.
+  
 ## Relationships
 
 | Relationship      | Type                             | Description

@@ -2,7 +2,7 @@
 title: "windowsOfficeClientSecurityConfiguration resource type"
 description: "Not yet documented"
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---

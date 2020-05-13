@@ -1,7 +1,7 @@
 ---
 title: "Delete event"
 description: "Delete event."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete event.
+Removes the specified [event](../resources/event.md) from the containing calendar. 
+
+If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -1,7 +1,7 @@
 ---
 title: "Create microsoftStoreForBusinessContainedApp"
 description: "Create a new microsoftStoreForBusinessContainedApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -86,8 +86,6 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "List managedAppConfigurations"
 description: "List properties and relationships of the managedAppConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -88,8 +88,6 @@ Content-Length: 666
   ]
 }
 ```
-
-
 
 
 

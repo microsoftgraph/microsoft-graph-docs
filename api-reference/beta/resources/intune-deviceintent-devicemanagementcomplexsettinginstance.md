@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementComplexSettingInstance resource type"
 description: "A setting instance representing a complex value"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

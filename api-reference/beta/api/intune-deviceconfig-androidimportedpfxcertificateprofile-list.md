@@ -1,7 +1,7 @@
 ---
 title: "List androidImportedPFXCertificateProfiles"
 description: "List properties and relationships of the androidImportedPFXCertificateProfile objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -115,8 +115,6 @@ Content-Length: 1877
   ]
 }
 ```
-
-
 
 
 

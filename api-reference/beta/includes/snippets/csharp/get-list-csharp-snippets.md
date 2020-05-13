@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var list = await graphClient.Sites["{site-id}"].Lists["{list-id}"]
+var list = await graphClient.Sites["{site-id}"].Lists["{list-title}"]
 	.Request()
 	.GetAsync();
 

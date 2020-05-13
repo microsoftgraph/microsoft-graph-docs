@@ -2,7 +2,7 @@
 title: "Get unifiedRoleAssignment"
 description: "Retrieve the properties and relationships of a unifiedRoleAssignment object."
 localization_priority: Normal
-author: "davidmu1"
+author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -51,11 +51,14 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1 : Get details of a role assignment
+
+#### Request
 
 The following is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,7 +84,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lA
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -100,12 +103,92 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
     "id": "lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1",
+    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
     "principalId": "4ab0b690-479b-47ff-af8f-2576cf521872",
-    "resourceScope": "/",
-    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0"
 }
 ```
 
+### Example 2: Get details of a role assignment with `$expand`
+
+#### Request
+
+The following is an example of the request with the `$expand` query parameter.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignment"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition,principal,directoryScope
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "id": "lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1",
+    "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
+    "roleDefinition": {
+      "id": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
+      "displayName": "Billing Administrator",
+      "description": "Can perform common billing related tasks like updating payment information.",
+      "rolePermissions": [
+        {
+          "allowedResourceActions": [
+            "microsoft.commerce.billing/allEntities/allTasks",
+            "microsoft.directory/organization/basic/update",
+          ],
+          "excludedResourceActions": []
+        }],
+      "isEnabled": true,
+      },
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "principal": {
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+      "id": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d ",
+      "userPrincipalName": "alice@contoso.com",
+      "displayName": "Alice Smith"
+    },
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScope": {
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization/$entity",
+      "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
+      "displayName": "Contoso_Seattle_Admins"
+    }
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

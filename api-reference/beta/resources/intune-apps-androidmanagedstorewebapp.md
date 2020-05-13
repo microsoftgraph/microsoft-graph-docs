@@ -1,7 +1,7 @@
 ---
 title: "androidManagedStoreWebApp resource type"
 description: "Contains properties and inherited properties for web apps configured to be distributed via the managed Android app store."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -57,6 +57,7 @@ Inherits from [androidManagedStoreApp](../resources/intune-apps-androidmanagedst
 |appStoreUrl|String|The Play for Work Store app URL. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |isPrivate|Boolean|Indicates whether the app is only available to a given enterprise's users. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |isSystemApp|Boolean|Indicates whether the app is a preinstalled system app. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appTracks|[androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md) collection|The tracks that are visible to this enterprise. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |supportsOemConfig|Boolean|Whether this app supports OEMConfig policy. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 ## Relationships
@@ -111,6 +112,13 @@ Here is a JSON representation of the resource.
   "appStoreUrl": "String",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "String",
+      "trackAlias": "String"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```

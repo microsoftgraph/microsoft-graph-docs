@@ -1,7 +1,7 @@
 ---
 title: "directoryAudit resource type"
 description: "Represents the directory audit items and its collection."
-author: "dhanyahk"
+author: "SarahBar"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType

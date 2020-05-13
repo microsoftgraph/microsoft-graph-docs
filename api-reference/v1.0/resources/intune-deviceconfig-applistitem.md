@@ -1,7 +1,7 @@
 ---
 title: "appListItem resource type"
 description: "Represents an app in the list of managed applications"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -42,6 +42,9 @@ Here is a JSON representation of the resource.
   "appId": "String"
 }
 ```
+
+
+
 
 
 

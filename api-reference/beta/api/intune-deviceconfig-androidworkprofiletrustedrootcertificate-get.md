@@ -1,7 +1,7 @@
 ---
 title: "Get androidWorkProfileTrustedRootCertificate"
 description: "Read properties and relationships of the androidWorkProfileTrustedRootCertificate object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -32,8 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidWorkProfileCertificateProfileBase/rootCertificate
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/rootCertificate
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidWorkProfileEnterpriseWiFiConfiguration/rootCertificateForServerValidation
 ```
 
@@ -57,7 +56,7 @@ If successful, this method returns a `200 OK` response code and [androidWorkProf
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/rootCertificate
 ```
 
 ### Response
@@ -106,8 +105,6 @@ Content-Length: 1410
   }
 }
 ```
-
-
 
 
 

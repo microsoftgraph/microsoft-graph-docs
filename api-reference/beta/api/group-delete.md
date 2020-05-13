@@ -1,7 +1,7 @@
 ---
 title: "Delete group - Microsoft Graph API"
-description: "Describes the delete method of the group resource (entity) of the Microsoft Graph API (REST)."
-author: "dkershaw10"
+description: "Delete a group resource."
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

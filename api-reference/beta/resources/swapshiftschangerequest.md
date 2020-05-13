@@ -29,7 +29,7 @@ Represents a type of shift request to swap a [shift](../resources/shift.md) with
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|recipientShiftId|String|ID of the recipient of the swap request. This is the user with whom the request is to swap.|
+|recipientShiftId|String|Shift ID for the recipient user with whom the request is to swap.|
 
 ## Relationships
 

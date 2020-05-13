@@ -1,7 +1,7 @@
 ---
 title: "Update managedDeviceMobileAppConfigurationUserSummary"
 description: "Update the properties of a managedDeviceMobileAppConfigurationUserSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -105,8 +105,6 @@ Content-Length: 370
   "configurationVersion": 4
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Manage apps using Microsoft Intune"
 description: "The following Graph resources are available to manage mobile apps in Intune:  "
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: conceptualPageType
@@ -71,4 +71,7 @@ The following Graph resources are available to manage mobile apps in Intune:
 - [Windows minimum operating system](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
+
+
+
 

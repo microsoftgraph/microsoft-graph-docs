@@ -1,7 +1,7 @@
 ---
 title: "Create pfxRecryptionRequest"
 description: "Create a new pfxRecryptionRequest object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -115,8 +115,6 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
-
 
 
 

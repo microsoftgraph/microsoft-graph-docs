@@ -1,7 +1,7 @@
 ---
 title: "List directory settings"
 description: "Retrieve a list of directory setting objects."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

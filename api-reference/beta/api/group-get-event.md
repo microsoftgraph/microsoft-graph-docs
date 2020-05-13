@@ -1,7 +1,7 @@
 ---
 title: "Get event"
 description: "Get an event object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -106,6 +106,7 @@ Content-length: 1728
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,

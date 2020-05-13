@@ -14,7 +14,7 @@ const approve = {
   message: "Approved!"
 };
 
-let res = await client.api('/teams/schedule/offerShiftRequests/approve')
+let res = await client.api('/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve')
 	.version('beta')
 	.post(approve);
 

@@ -1,7 +1,7 @@
 ---
 title: "localSecurityOptionsInformationShownOnLockScreenType enum type"
 description: "Possible values for LocalSecurityOptionsInformationShownOnLockScreenType"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

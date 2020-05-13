@@ -1,7 +1,7 @@
 ---
 title: "iosCertificateProfile resource type"
 description: "Device Configuration."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

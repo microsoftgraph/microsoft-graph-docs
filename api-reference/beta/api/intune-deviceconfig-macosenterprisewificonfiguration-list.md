@@ -1,7 +1,7 @@
 ---
 title: "List macOSEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the macOSEnterpriseWiFiConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -120,8 +120,6 @@ Content-Length: 2263
   ]
 }
 ```
-
-
 
 
 

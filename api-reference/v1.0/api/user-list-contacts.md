@@ -1,9 +1,9 @@
 ---
 title: "List contacts"
 description: "Get a contact collection from the default contacts folder of the signed-in user."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

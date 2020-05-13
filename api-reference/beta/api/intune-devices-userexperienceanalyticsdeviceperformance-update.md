@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsDevicePerformance"
 description: "Update the properties of a userExperienceAnalyticsDevicePerformance object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -123,8 +123,6 @@ Content-Length: 578
   "responsiveDesktopTimeInMs": 9
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementIntentAssignment"
 description: "Create a new deviceManagementIntentAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,12 +63,12 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/assignments
 Content-type: application/json
-Content-length: 172
+Content-length: 160
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
@@ -78,18 +78,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 221
+Content-Length: 209
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
   "id": "bedc5365-5365-bedc-6553-dcbe6553dcbe",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
-
-
 
 
 

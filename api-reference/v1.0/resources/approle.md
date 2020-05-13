@@ -4,7 +4,7 @@ description: "Represents an application role that may be requested by a client a
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # appRole resource type

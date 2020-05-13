@@ -1,7 +1,7 @@
 ---
 title: "Create deviceComplianceSettingState"
 description: "Create a new deviceComplianceSettingState object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -112,6 +112,8 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
 
 
 

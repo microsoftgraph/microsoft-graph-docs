@@ -1,7 +1,7 @@
 ---
 title: "Create appleEnrollmentProfileAssignment"
 description: "Create a new appleEnrollmentProfileAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,12 +63,12 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}/assignments
 Content-type: application/json
-Content-length: 172
+Content-length: 160
 
 {
   "@odata.type": "#microsoft.graph.appleEnrollmentProfileAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
@@ -78,18 +78,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 221
+Content-Length: 209
 
 {
   "@odata.type": "#microsoft.graph.appleEnrollmentProfileAssignment",
   "id": "5b603771-3771-5b60-7137-605b7137605b",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
-
-
 
 
 

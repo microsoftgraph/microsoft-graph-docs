@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const {id} = {
+const activityBasedTimeoutPolicy = {
   definition: [
     "definition-value"
   ],
@@ -21,6 +21,6 @@ const {id} = {
 
 let res = await client.api('/policies/activityBasedTimeoutPolicies/{id}')
 	.version('beta')
-	.update({id});
+	.update(activityBasedTimeoutPolicy);
 
 ```

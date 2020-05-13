@@ -1,7 +1,7 @@
 ---
 title: "Update windows10GeneralConfiguration"
 description: "Update the properties of a windows10GeneralConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -104,6 +104,7 @@ The following table shows the properties that are required when you create the [
 |searchDisableIndexingRemovableDrive|Boolean|Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.|
 |searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
 |searchBlockWebResults|Boolean|Indicates whether or not to block the web search.|
+|findMyFiles|[enablement](../resources/intune-shared-enablement.md)|Controls if the user can configure search to Find My Files mode, which searches files in secondary hard drives and also outside of the user profile. Find My Files does not allow users to search files or locations to which they do not have access. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Specify whether to allow automatic device encryption during OOBE when the device is Azure AD joined (desktop only).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
@@ -159,42 +160,42 @@ The following table shows the properties that are required when you create the [
 |cellularBlockDataWhenRoaming|Boolean|Whether or not to Block the user from using data over cellular while roaming.|
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
 |cellularBlockVpnWhenRoaming|Boolean|Whether or not to Block the user from using VPN when roaming over cellular.|
-|cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Whether or not to allow the cellular data channel on the device. If not configured, the cellular data channel is allowed and the user can turn it off. Possible values are: `blocked`, `required`, `allowed`.|
-|defenderBlockEndUserAccess|Boolean|Whether or not to block end user access to Defender.|
-|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Number of days before deleting quarantined malware. Valid values 0 to 90|
-|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Gets or sets Defender’s actions to take on detected Malware per threat level.|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender day of the week for the system scan. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
-|defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
-|defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
-|defenderScanMaxCpu|Int32|Max CPU usage percentage during scan. Valid values 0 to 100|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Value for monitoring file activity. Possible values are: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
-|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: `deviceDefault`, `block`, `audit`.|
-|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: `userDefined`, `enable`, `auditMode`.|
-|defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
-|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|The configuration for how to prompt user for sample submission. Possible values are: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
-|defenderRequireBehaviorMonitoring|Boolean|Indicates whether or not to require behavior monitoring.|
-|defenderRequireCloudProtection|Boolean|Indicates whether or not to require cloud protection.|
-|defenderRequireNetworkInspectionSystem|Boolean|Indicates whether or not to require network inspection system.|
+|cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Whether or not to allow the cellular data channel on the device. If not configured, the cellular data channel is allowed and the user can turn it off. Possible values are: `blocked`, `required`, `allowed`, `notConfigured`.|
 |defenderRequireRealTimeMonitoring|Boolean|Indicates whether or not to require real time monitoring.|
-|defenderScanArchiveFiles|Boolean|Indicates whether or not to scan archive files.|
+|defenderRequireBehaviorMonitoring|Boolean|Indicates whether or not to require behavior monitoring.|
+|defenderRequireNetworkInspectionSystem|Boolean|Indicates whether or not to require network inspection system.|
 |defenderScanDownloads|Boolean|Indicates whether or not to scan downloads.|
 |defenderScheduleScanEnableLowCpuPriority|Boolean|When enabled, low CPU priority will be used during scheduled scans.|
 |defenderDisableCatchupQuickScan|Boolean|When blocked, catch-up scans for scheduled quick scans will be turned off.|
 |defenderDisableCatchupFullScan|Boolean|When blocked, catch-up scans for scheduled full scans will be turned off.|
-|defenderScanNetworkFiles|Boolean|Indicates whether or not to scan files opened from a network folder.|
-|defenderScanIncomingMail|Boolean|Indicates whether or not to scan incoming mail messages.|
-|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Indicates whether or not to scan mapped network drives during full scan.|
-|defenderScanRemovableDrivesDuringFullScan|Boolean|Indicates whether or not to scan removable drives during full scan.|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|Indicates whether or not to scan scripts loaded in Internet Explorer browser.|
+|defenderBlockEndUserAccess|Boolean|Whether or not to block end user access to Defender.|
 |defenderSignatureUpdateIntervalInHours|Int32|The signature update interval in hours. Specify 0 not to check. Valid values 0 to 24|
-|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|The defender system scan type. Possible values are: `userDefined`, `disabled`, `quick`, `full`.|
-|defenderScheduledScanTime|TimeOfDay|The defender time for the system scan.|
-|defenderScheduledQuickScanTime|TimeOfDay|The time to perform a daily quick scan.|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Value for monitoring file activity. Possible values are: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
+|defenderDaysBeforeDeletingQuarantinedMalware|Int32|Number of days before deleting quarantined malware. Valid values 0 to 90|
+|defenderScanMaxCpu|Int32|Max CPU usage percentage during scan. Valid values 0 to 100|
+|defenderScanArchiveFiles|Boolean|Indicates whether or not to scan archive files.|
+|defenderScanIncomingMail|Boolean|Indicates whether or not to scan incoming mail messages.|
+|defenderScanRemovableDrivesDuringFullScan|Boolean|Indicates whether or not to scan removable drives during full scan.|
+|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Indicates whether or not to scan mapped network drives during full scan.|
+|defenderScanNetworkFiles|Boolean|Indicates whether or not to scan files opened from a network folder.|
+|defenderRequireCloudProtection|Boolean|Indicates whether or not to require cloud protection.|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Specifies the level of cloud-delivered protection. Possible values are: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
 |defenderCloudExtendedTimeout|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |defenderCloudExtendedTimeoutInSeconds|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
-|defenderBlockOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
+|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|The configuration for how to prompt user for sample submission. Possible values are: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
+|defenderScheduledQuickScanTime|TimeOfDay|The time to perform a daily quick scan.|
+|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|The defender system scan type. Possible values are: `userDefined`, `disabled`, `quick`, `full`.|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender day of the week for the system scan. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
+|defenderScheduledScanTime|TimeOfDay|The defender time for the system scan.|
+|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: `deviceDefault`, `block`, `audit`.|
+|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Gets or sets Defender’s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Checks for the user consent level in Windows Defender to send data. Possible values are: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
+|defenderBlockOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
+|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Gets or sets Defender’s actions to take on detected Malware per threat level.|
+|defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
+|defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
+|defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
 |lockScreenAllowTimeoutConfiguration|Boolean|Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to block action center notifications over lock screen.|
 |lockScreenBlockCortana|Boolean|Indicates whether or not the user can interact with Cortana using speech while the system is locked.|
@@ -218,6 +219,7 @@ The following table shows the properties that are required when you create the [
 |privacyBlockInputPersonalization|Boolean|Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
 |privacyBlockPublishUserActivities|Boolean|Blocks the shared experiences/discovery of recently used resources in task switcher etc.|
 |privacyBlockActivityFeed|Boolean|Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
+|activateAppsWithVoice|[enablement](../resources/intune-shared-enablement.md)|Specifies if Windows apps can be activated by voice. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
 |startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Enabling this policy hides the change account setting from appearing in the user tile in the start menu.|
@@ -340,6 +342,7 @@ The following table shows the properties that are required when you create the [
 |dataProtectionBlockDirectMemoryAccess|Boolean|This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.|
 |appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.​|
 |uninstallBuiltInApps|Boolean|Indicates whether or not to uninstall a fixed list of built-in Windows apps.|
+|configureTimeZone|String|Specifies the time zone to be applied to the device. This is the standard Windows name for the target time zone.|
 
 
 
@@ -353,7 +356,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 14888
+Content-length: 15009
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -439,6 +442,7 @@ Content-length: 14888
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
   "searchBlockWebResults": true,
+  "findMyFiles": "enabled",
   "securityBlockAzureADJoinedDevicesAutoEncryption": true,
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
@@ -501,8 +505,37 @@ Content-length: 14888
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
   "cellularData": "required",
+  "defenderRequireRealTimeMonitoring": true,
+  "defenderRequireBehaviorMonitoring": true,
+  "defenderRequireNetworkInspectionSystem": true,
+  "defenderScanDownloads": true,
+  "defenderScheduleScanEnableLowCpuPriority": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderDisableCatchupFullScan": true,
+  "defenderScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderSignatureUpdateIntervalInHours": 6,
+  "defenderMonitorFileActivity": "disable",
   "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderScanMaxCpu": 2,
+  "defenderScanArchiveFiles": true,
+  "defenderScanIncomingMail": true,
+  "defenderScanRemovableDrivesDuringFullScan": true,
+  "defenderScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderScanNetworkFiles": true,
+  "defenderRequireCloudProtection": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderPromptForSampleSubmission": "alwaysPrompt",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScanType": "disabled",
+  "defenderSystemScanSchedule": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderPotentiallyUnwantedAppAction": "block",
+  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderBlockOnAccessProtection": true,
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
     "lowSeverity": "clean",
@@ -510,44 +543,15 @@ Content-length: 14888
     "highSeverity": "clean",
     "severeSeverity": "clean"
   },
-  "defenderSystemScanSchedule": "everyday",
-  "defenderFilesAndFoldersToExclude": [
-    "Defender Files And Folders To Exclude value"
-  ],
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 2,
-  "defenderMonitorFileActivity": "disable",
-  "defenderPotentiallyUnwantedAppAction": "block",
-  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
-  "defenderPromptForSampleSubmission": "alwaysPrompt",
-  "defenderRequireBehaviorMonitoring": true,
-  "defenderRequireCloudProtection": true,
-  "defenderRequireNetworkInspectionSystem": true,
-  "defenderRequireRealTimeMonitoring": true,
-  "defenderScanArchiveFiles": true,
-  "defenderScanDownloads": true,
-  "defenderScheduleScanEnableLowCpuPriority": true,
-  "defenderDisableCatchupQuickScan": true,
-  "defenderDisableCatchupFullScan": true,
-  "defenderScanNetworkFiles": true,
-  "defenderScanIncomingMail": true,
-  "defenderScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderScanRemovableDrivesDuringFullScan": true,
-  "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 6,
-  "defenderScanType": "disabled",
-  "defenderScheduledScanTime": "11:59:10.9990000",
-  "defenderScheduledQuickScanTime": "11:58:49.3840000",
-  "defenderCloudBlockLevel": "high",
-  "defenderCloudExtendedTimeout": 12,
-  "defenderCloudExtendedTimeoutInSeconds": 5,
-  "defenderBlockOnAccessProtection": true,
-  "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -571,6 +575,7 @@ Content-length: 14888
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
+  "activateAppsWithVoice": "enabled",
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -705,7 +710,8 @@ Content-length: 14888
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "App Management Package Family Names To Launch After Log On value"
   ],
-  "uninstallBuiltInApps": true
+  "uninstallBuiltInApps": true,
+  "configureTimeZone": "Configure Time Zone value"
 }
 ```
 
@@ -714,7 +720,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 15060
+Content-Length: 15181
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -803,6 +809,7 @@ Content-Length: 15060
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
   "searchBlockWebResults": true,
+  "findMyFiles": "enabled",
   "securityBlockAzureADJoinedDevicesAutoEncryption": true,
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
@@ -865,8 +872,37 @@ Content-Length: 15060
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
   "cellularData": "required",
+  "defenderRequireRealTimeMonitoring": true,
+  "defenderRequireBehaviorMonitoring": true,
+  "defenderRequireNetworkInspectionSystem": true,
+  "defenderScanDownloads": true,
+  "defenderScheduleScanEnableLowCpuPriority": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderDisableCatchupFullScan": true,
+  "defenderScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderSignatureUpdateIntervalInHours": 6,
+  "defenderMonitorFileActivity": "disable",
   "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderScanMaxCpu": 2,
+  "defenderScanArchiveFiles": true,
+  "defenderScanIncomingMail": true,
+  "defenderScanRemovableDrivesDuringFullScan": true,
+  "defenderScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderScanNetworkFiles": true,
+  "defenderRequireCloudProtection": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderPromptForSampleSubmission": "alwaysPrompt",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScanType": "disabled",
+  "defenderSystemScanSchedule": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderPotentiallyUnwantedAppAction": "block",
+  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderBlockOnAccessProtection": true,
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
     "lowSeverity": "clean",
@@ -874,44 +910,15 @@ Content-Length: 15060
     "highSeverity": "clean",
     "severeSeverity": "clean"
   },
-  "defenderSystemScanSchedule": "everyday",
-  "defenderFilesAndFoldersToExclude": [
-    "Defender Files And Folders To Exclude value"
-  ],
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 2,
-  "defenderMonitorFileActivity": "disable",
-  "defenderPotentiallyUnwantedAppAction": "block",
-  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
-  "defenderPromptForSampleSubmission": "alwaysPrompt",
-  "defenderRequireBehaviorMonitoring": true,
-  "defenderRequireCloudProtection": true,
-  "defenderRequireNetworkInspectionSystem": true,
-  "defenderRequireRealTimeMonitoring": true,
-  "defenderScanArchiveFiles": true,
-  "defenderScanDownloads": true,
-  "defenderScheduleScanEnableLowCpuPriority": true,
-  "defenderDisableCatchupQuickScan": true,
-  "defenderDisableCatchupFullScan": true,
-  "defenderScanNetworkFiles": true,
-  "defenderScanIncomingMail": true,
-  "defenderScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderScanRemovableDrivesDuringFullScan": true,
-  "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 6,
-  "defenderScanType": "disabled",
-  "defenderScheduledScanTime": "11:59:10.9990000",
-  "defenderScheduledQuickScanTime": "11:58:49.3840000",
-  "defenderCloudBlockLevel": "high",
-  "defenderCloudExtendedTimeout": 12,
-  "defenderCloudExtendedTimeoutInSeconds": 5,
-  "defenderBlockOnAccessProtection": true,
-  "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -935,6 +942,7 @@ Content-Length: 15060
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
+  "activateAppsWithVoice": "enabled",
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -1069,11 +1077,10 @@ Content-Length: 15060
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "App Management Package Family Names To Launch After Log On value"
   ],
-  "uninstallBuiltInApps": true
+  "uninstallBuiltInApps": true,
+  "configureTimeZone": "Configure Time Zone value"
 }
 ```
-
-
 
 
 

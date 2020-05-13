@@ -2,7 +2,7 @@
 title: "keyValue resource type"
 description: "Provides additional relevant information about the sign-in request"
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---

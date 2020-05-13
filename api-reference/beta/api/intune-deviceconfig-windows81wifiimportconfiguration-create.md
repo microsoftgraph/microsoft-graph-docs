@@ -1,7 +1,7 @@
 ---
 title: "Create windows81WifiImportConfiguration"
 description: "Create a new windows81WifiImportConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -159,8 +159,6 @@ Content-Length: 1326
   "payload": "cGF5bG9hZA=="
 }
 ```
-
-
 
 
 

@@ -15,7 +15,6 @@ MSGraphAccessPackageAssignmentPolicy *accessPackageAssignmentPolicy = [[MSGraphA
 [accessPackageAssignmentPolicy setAccessPackageId:@"56ff43fd-6b05-48df-9634-956a777fce6d"];
 [accessPackageAssignmentPolicy setDisplayName:@"direct"];
 [accessPackageAssignmentPolicy setDescription:@"direct assignments by administrator"];
-[accessPackageAssignmentPolicy setIsDenyPolicy: false];
 [accessPackageAssignmentPolicy setAccessReviewSettings: null];
 MSGraphRequestorSettings *requestorSettings = [[MSGraphRequestorSettings alloc] init];
 [requestorSettings setScopeType:@"NoSubjects"];

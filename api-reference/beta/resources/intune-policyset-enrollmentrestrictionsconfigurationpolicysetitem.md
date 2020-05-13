@@ -1,7 +1,7 @@
 ---
 title: "enrollmentRestrictionsConfigurationPolicySetItem resource type"
 description: "A class containing the properties used for enrollment restriction PolicySetItem."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

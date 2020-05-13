@@ -1,7 +1,7 @@
 ---
 title: "Create attachment"
 description: "Use this API to add an attachment to an outlookTask."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -125,7 +125,7 @@ HTTP 201 Created
 Here is an example which attaches an event with another event as an item attachment.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "add_item_attachment_to_task"
 }-->
 

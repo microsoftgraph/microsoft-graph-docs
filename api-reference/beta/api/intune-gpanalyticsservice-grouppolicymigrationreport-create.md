@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyMigrationReport"
 description: "Create a new groupPolicyMigrationReport object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -115,8 +115,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
-
 
 
 

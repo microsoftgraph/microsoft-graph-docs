@@ -48,7 +48,7 @@ This method supports the following OData query parameters to help customize the 
 
 ## Request headers
 
-| Name           |Description                   |
+| Name           | Description                  |
 |:---------------|:-----------------------------|
 | Authorization  | Bearer {token}. Required.    |
 | Content-Type   | application/json. Required.  |

@@ -1,7 +1,7 @@
 ---
 title: "assign action"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -64,7 +64,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/assign
 
 Content-type: application/json
-Content-length: 550
+Content-length: 538
 
 {
   "deviceManagementScriptGroupAssignments": [
@@ -79,7 +79,7 @@ Content-length: 550
       "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
       "id": "a87a601e-601e-a87a-1e60-7aa81e607aa8",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
       }
     }
   ]
@@ -91,8 +91,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

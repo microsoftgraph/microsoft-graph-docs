@@ -1,7 +1,7 @@
 ---
 title: "managedAppOperation resource type"
 description: "Represents an operation applied against an app registration."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -54,6 +54,9 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
+
+
+
 
 
 

@@ -2,12 +2,12 @@
 title: "stsPolicy resource type"
 description: "Represents an abstract base type for policy types that control Microsoft identity platform behavior."
 localization_priority: Normal
-author: "davidmu1"
+author: "lujiangfeng666"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# policyBase resource type
+# stsPolicy resource type
 
 Namespace: microsoft.graph
 

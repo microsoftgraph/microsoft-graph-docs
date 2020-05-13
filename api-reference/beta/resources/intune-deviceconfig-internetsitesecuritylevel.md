@@ -1,7 +1,7 @@
 ---
 title: "internetSiteSecurityLevel enum type"
 description: "Possible values for internet site security level."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

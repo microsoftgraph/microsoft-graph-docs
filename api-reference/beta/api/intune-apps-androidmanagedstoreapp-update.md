@@ -1,7 +1,7 @@
 ---
 title: "Update androidManagedStoreApp"
 description: "Update the properties of a androidManagedStoreApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -75,6 +75,7 @@ The following table shows the properties that are required when you create the [
 |appStoreUrl|String|The Play for Work Store app URL.|
 |isPrivate|Boolean|Indicates whether the app is only available to a given enterprise's users.|
 |isSystemApp|Boolean|Indicates whether the app is a preinstalled system app.|
+|appTracks|[androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md) collection|The tracks that are visible to this enterprise.|
 |supportsOemConfig|Boolean|Whether this app supports OEMConfig policy.|
 
 
@@ -89,7 +90,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 984
+Content-length: 1168
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -121,6 +122,13 @@ Content-length: 984
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
@@ -130,7 +138,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1156
+Content-Length: 1340
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -165,11 +173,16 @@ Content-Length: 1156
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
-
-
 
 
 

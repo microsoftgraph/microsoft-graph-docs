@@ -1,7 +1,7 @@
 ---
 title: "mobileAppTroubleshootingAppPolicyCreationHistory resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

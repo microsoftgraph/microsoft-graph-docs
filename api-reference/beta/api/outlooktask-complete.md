@@ -2,7 +2,7 @@
 title: "outlookTask: complete"
 description: "Complete an Outlook task which sets the **completedDateTime** property to the current date, "
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the androidDeviceOwnerGeneralDeviceConfiguration resource."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -53,6 +53,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering.|
 |certificateCredentialConfigurationDisabled|Boolean|Indicates whether or not to block users from any certificate credential configuration.|
+|microsoftLauncherConfigurationEnabled|Boolean|Indicates whether or not to you want configure Microsoft Launcher.|
+|enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Indicates which enrollment profile you want to configure. Possible values are: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
 |dataRoamingBlocked|Boolean|Indicates whether or not to block a user from data roaming.|
 |dateTimeConfigurationBlocked|Boolean|Indicates whether or not to block the user from manually changing the date or time on the device|
 |factoryResetDeviceAdministratorEmails|String collection|List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.|
@@ -175,6 +177,8 @@ Here is a JSON representation of the resource.
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "microsoftLauncherConfigurationEnabled": true,
+  "enrollmentProfile": "String",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [

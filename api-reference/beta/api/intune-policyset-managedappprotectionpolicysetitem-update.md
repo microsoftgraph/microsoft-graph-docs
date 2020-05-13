@@ -1,7 +1,7 @@
 ---
 title: "Update managedAppProtectionPolicySetItem"
 description: "Update the properties of a managedAppProtectionPolicySetItem object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -110,8 +110,6 @@ Content-Length: 561
   "targetedAppManagementLevels": "Targeted App Management Levels value"
 }
 ```
-
-
 
 
 

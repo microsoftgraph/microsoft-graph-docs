@@ -11,7 +11,6 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 	AccessPackageId = "56ff43fd-6b05-48df-9634-956a777fce6d",
 	DisplayName = "direct",
 	Description = "direct assignments by administrator",
-	IsDenyPolicy = false,
 	AccessReviewSettings = null,
 	RequestorSettings = new RequestorSettings
 	{

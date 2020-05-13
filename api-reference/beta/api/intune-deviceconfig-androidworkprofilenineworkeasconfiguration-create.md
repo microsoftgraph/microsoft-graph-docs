@@ -1,7 +1,7 @@
 ---
 title: "Create androidWorkProfileNineWorkEasConfiguration"
 description: "Create a new androidWorkProfileNineWorkEasConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -177,8 +177,6 @@ Content-Length: 1515
   "syncTasks": true
 }
 ```
-
-
 
 
 

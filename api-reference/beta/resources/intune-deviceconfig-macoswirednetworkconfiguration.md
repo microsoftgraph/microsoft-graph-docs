@@ -1,7 +1,7 @@
 ---
 title: "macOSWiredNetworkConfiguration resource type"
 description: "MacOS wired network configuration profile."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "Create userExperienceAnalyticsDeviceStartupProcess"
 description: "Create a new userExperienceAnalyticsDeviceStartupProcess object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -96,8 +96,6 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
-
-
 
 
 

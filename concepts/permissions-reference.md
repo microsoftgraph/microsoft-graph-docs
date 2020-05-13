@@ -173,7 +173,7 @@ None.
 
 #### Delegated
 
-* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings`)
 
 #### Application
 
@@ -317,6 +317,40 @@ Administrators can configure [application access policy](auth-limit-mailbox-acce
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+## Channel permissions ([private preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Channel.ReadBasic.All_ (private preview)| Read the names and descriptions of channels. | Read channel names and channel descriptions, on behalf of the signed-in user.	| No | No |
+| _Channel.Create_ (private preview)| Create channels. | Create channels in any team, on behalf of the signed-in user.	| Yes | No |
+| _Channel.Delete.All_ (private preview)| Delete channels. | Delete channels in any team, on behalf of the signed-in user.	| Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Channel.ReadBasic.All_ (private preview)| Read the names and descriptions  of all channels. | Read all channel names and channel descriptions, without a signed-in user.	| Yes | No |
+| _Channel.Create_ (private preview)| Create channels. | Create channels in any team, without a signed-in user.	| Yes | No |
+| _Channel.Delete.All_ (private preview)| Delete channels. | Delete channels in any team, without a signed-in user.	| Yes | No |
+
+## Channel settings permissions ([private preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ChannelSettings.Read.All_ (private preview)| Read the names, descriptions, and settings of channels. | Read all channel names, channel descriptions, and channel settings, on behalf of the signed-in user.	| Yes | No |
+| _ChannelSettings.ReadWrite.All_ (private preview)| Read and write the names, descriptions, and settings of channels. | Read and write the names, descriptions, and settings of all channels, on behalf of the signed-in user.	| Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ChannelSettings.Read.All_ (private preview)| Read the names, descriptions, and settings of all channels. | Read all channel names, channel descriptions, and channel settings, without a signed-in user.	| Yes | No |
+| _ChannelSettings.ReadWrite.All_ (private preview)| Read and write the names, descriptions, and settings of all channels. | Read and write the names, descriptions, and settings of all channels, without a signed-in user.	| Yes | No |
+
 ## Calls permissions
 
 #### Delegated permissions
@@ -382,18 +416,22 @@ None.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
-## Channel message permissions
+## Channel message permissions ([private preview](#permissions-availability-status))
 
 #### Delegated permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_ChannelMessage.Delete_ (private preview)|Delete user's channel messages |Allows an app to delete channel messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
+|_ChannelMessage.Edit_ (private preview)|Edit user's channel messages |Allows an app to edit channel messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
+|_ChannelMessage.Read.All_ (private preview)|Read user channel messages  |Allows an app to read a channel's messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
+|_ChannelMessage.Send_ (private preview)|Send channel messages |Allows an app to send channel messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_ChannelMessage.Read.All_ |Read all channel messages  |Allows the app to read all channel messages in Microsoft Teams, without a signed-in user. |Yes | No |
-|_ChannelMessage.Send_ |Send channel messages |Allows an app to send channel messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
 |_ChannelMessage.UpdatePolicyViolation.All_ |Flag channel messages for violating policy |Allows the app to update Microsoft Teams channel messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 
 > **Note:** See also [Group.Read.All](#group-permissions).
@@ -414,21 +452,25 @@ None.
 |_ChannelMember.Read.All_ (private preview)|Read the members of all channels. |Read the members of all channels, without a signed-in user. |Yes | No |
 |_ChannelMember.ReadWrite.All_ (private preview)| Add and remove members from all channels. |Add and remove members from all channels, without a signed-in user. Also allows changing a member's role, for example from owner to non-owner. | Yes | No |
 
-## Chats permissions
+## Chats permissions ([private preview](#permissions-availability-status))
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read_ |Read your chat messages  |Allows an app to read your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
+|_Chat.ReadBasic_ (private preview)|Read names and members of user chat threads  |Allows an app to read the members and descriptions of 1:1 and group chats threads, on behalf of the signed-in user. |No | No |
 |_Chat.ReadWrite_ |Read your chat messages and send new ones  |Allows an app to read and send your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
+|_Chat.Send_ (private preview)|Send user chat messages  |Allows an app to send 1:1 and group chat messages in Microsoft Teams, on behalf of the signed-in user. |No | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |Read all chat messages  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
+|_Chat.ReadBasic.All_ (private preview)|Read names and members of user chat threads  |Read names and members of all chat threads. |No | No |
 |_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
+|_Chat.Send.All_ (private preview)|Send user chat messages  |Allows an app to send 1:1 and group chat messages in Microsoft Teams without a signed-in user. |No | No |
 
 > **Note:** For messages in a channel, see [ChannelMessage permissions](#channel-message-permissions).
 
@@ -699,6 +741,8 @@ For application permissions, there are some limitations for the APIs that are su
 
 In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
+To set an Office 365 group's **preferredDataLocation** attribute, an app needs Directory.ReadWrite.All permission. When users in a multi-geo environment create an Office 365 group, the **preferredDataLocation** value for the group is automatically set to that of the user. For more information about groups' preferred data location, see [Create an Office 365 group with a specific PDL](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
+
 Group permissions are used to control access to [Microsoft Teams](/graph/api/resources/teams-api-overview) resources and APIs. Personal Microsoft accounts are not supported.
 
 Group permissions are also used to control access to [Microsoft Planner](/graph/api/resources/planner-overview) resources and APIs. Only delegated permissions are supported for Microsoft Planner APIs; application permissions are not supported. Personal Microsoft accounts are not supported.
@@ -902,7 +946,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Read user mail | Allows the app to read email in user mailboxes. | No | Yes
-| _Mail.ReadBasic_ |    Read user basic mail | Allows the app to read email in the signed-in user's mailbox, except for **body**, **bodyPreview**, **uniqueBody**, **attachments**, **extensions**, and any extended properties. Does not include permissions to search messages. | No | Yes
+| _Mail.ReadBasic_ |    Read user basic mail | Allows the app to read email in the signed-in user's mailbox, except for **body**, **bodyPreview**, **uniqueBody**, **attachments**, **extensions**, and any extended properties. Does not include permissions to search messages. | No | No
 | _Mail.ReadWrite_ |    Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.| No | Yes
 | _Mail.Read.Shared_ |    Read user and shared mail | Allows the app to read mail that the user can access, including the user's own and shared mail. | No | No
 | _Mail.ReadWrite.Shared_ |    Read and write user and shared mail | Allows the app to create, read, update, and delete mail that the user has permission to access, including the user's own and shared mail. Does not include permission to send mail. | No | No
@@ -1232,6 +1276,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Policy.Read.All_ | Read your organization's policies | Allows the app to read your organization's policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.ApplicationConfiguration_ | Read and write your organization's application configuration policies | Allows the app to read and write your organization's application configuration policies on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.ConditionalAccess_ | Read and write your organization's conditional access policies | Allows the app to read and write your organization's conditional access policies on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write your organization's feature rollout policies | Allows the app to read and write your organization's feature rollout policies on behalf of the signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes | No |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies on behalf of the signed-in user. | Yes | No |
@@ -1241,6 +1286,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Policy.Read.All_ | Read your organization's policies | Allows the app to read all your organization's policies without a signed in user. | Yes |
+| _Policy.Read.ApplicationConfiguration_ | Read your organization's application configuration policies | Allows the app to read all your organization's application configuration policies without a signed in user. | Yes |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write feature rollout policies | Allows the app to read and write feature rollout policies without a signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies without a signed in user. | Yes |
 
@@ -1251,7 +1297,8 @@ The following usages are valid for both delegated and application permissions:
 * _Policy.Read.All_: Read your organization's policies (`GET /policies`)
 * _Policy.Read.All_: Read your organization's trust framework policies (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_: Read your organization's feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.ConditionalAccess_: Read and write your organization's conditional access policies (`POST /beta/conditionalAccess/policies`)
+* _Policy.ReadWrite.ApplicationConfiguration: Read and write your organization's application configuration policies (`POST /beta/policies/tokenLifetimePolicies`)
+* _Policy.ReadWrite.ConditionalAccess_: Read and write your organization's conditional access policies (`POST /beta/identity/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_: Read and write your organization's feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_: Read and write your organization's trust framework policies (`POST /beta/trustFramework/policies`)
 
@@ -1265,8 +1312,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Presence.Read_ | Read user's presence information | Allows the app to read presence information on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
-| _Presence.Read.All_ |   Read presence information of all users in your organization | Allows the app to read presence information of all users in the directory on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
+| _Presence.Read_ | Read user's presence information | Allows the app to read presence information on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | No |
+| _Presence.Read.All_ |   Read presence information of all users in your organization | Allows the app to read presence information of all users in the directory on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | No |
 
 ### Example usage
 
@@ -1513,6 +1560,36 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Team permissions ([private preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Teams.ReadBasic.All_ (private preview)| Read the names and descriptions of teams | Read the names and descriptions of teams, on behalf of the signed-in user.	| No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Teams.ReadBasic.All_ (private preview)| Get a list of all teams | Get a list of all teams, without a signed-in user.	| Yes | No |
+
+## Team settings permissions ([private preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsSettings.Read.All_ (private preview)| Read teams' settings | Read this team's settings, on behalf of the signed-in user.	| Yes | No |
+| _TeamsSettings.ReadWrite.All_ (private preview)| Read and change teams' settings | Read and change all teams' settings, on behalf of the signed-in user.	| Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsSettings.Read.All_ (private preview)| Read all teams' settings | Read this team's settings, without a signed-in user.	| Yes | No |
+| _TeamsSettings.ReadWrite.All_ (private preview)| Read and change all teams' settings. | Read and change all teams' settings, without a signed-in user.	| Yes | No |
+
 ## Teams activity permissions ([private preview](#permissions-availability-status))
 
 #### Delegated permissions
@@ -1652,6 +1729,7 @@ Threat assessment permissions are valid only on work or school accounts.
 | _User.ReadWrite.All_ |     Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. Also allows the app to create and delete users as well as reset user passwords on behalf of the signed-in user. | Yes | No |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, on behalf of the signed-in user. | Yes | No |
 | _User.Export.All_       |    Export users' data | Allows the app to export an organizational user's data, when performed by a Company Administrator.| Yes | No |
+| _User.ManageIdentities.All_       |    Manage user identities | Allows an application to read, update and delete identities that are associated with a user's account, that the signed-in user has access to. This controls which identities your users can sign-in with. | Yes | No |
 
 
 #### Application permissions
@@ -1662,6 +1740,7 @@ Threat assessment permissions are valid only on work or school accounts.
 | _User.ReadWrite.All_ |   Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.  Also allows the app to create and delete non-administrative users. Does not allow reset of user passwords. | Yes |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, without a signed-in user. | Yes |
 | _User.Export.All_       |    Export users' data | Allows the app to export organizational users' data, without a signed-in user.| Yes |
+| _User.ManageIdentities.All_       |    Manage all user identities | Allows an application to read, update and delete identities that are associated with a user's account, without a signed in user. This controls which identities users can sign-in with. |  Yes |
 
 ### Remarks
 
@@ -1711,6 +1790,8 @@ The _User.ReadBasic.All_ permission constrains app access to a limited set of pr
 
 To read the group memberships of a user (`memberOf`), the app must have either [_Group.Read.All_](#group-permissions) or [_Group.ReadWrite.All_](#group-permissions). However, if the user also has membership in a [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) or an [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta), the app will need effective permissions to read those resources too, or Microsoft Graph will return an error. This means the app will also need [Directory permissions](#directory-permissions), and, for delegated permissions, the signed-in user will also need sufficient privileges in the organization to access directory roles and administrative units.
 
+With the _User.ManageIdentities.All_ delegated or application permission, it is possible to update the identities (`identities`) of a user. This includes federated (or social identities) or local identities with email or name-based sign-in names.
+
 ### Example usage
 
 #### Delegated
@@ -1719,7 +1800,6 @@ To read the group memberships of a user (`memberOf`), the app must have either [
 * _User.ReadWrite_: Update the photo of the signed-in user (`PUT /me/photo/$value`).
 * _User.ReadBasic.All_: Find all users whose name starts with "David" (`GET /users?$filter=startswith(displayName,'David')`).
 * _User.Read.All_: Read a user's manager (`GET /user/{id | userPrincipalName}/manager`).
-
 
 #### Application
 
@@ -1755,16 +1835,16 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 
 ---
 
-## User authentication method permissions ([private preview](#permissions-availability-status))
+## User authentication method permissions ([preview](#permissions-availability-status))
 
 #### Delegated permissions
 
 |Permission                              |Display String                        |Description        |Admin Consent Required | Microsoft Account supported |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
-|_UserAuthenticationMethod.Read_ (private preview)        |Read own authentication methods       |Allows the app to read the signed-in user's authentication methods, including phone numbers and Authenticator app settings. This does not allow the app to see secret information like the signed-in user's passwords, or to sign-in or otherwise use the signed-in user's authentication methods. |Yes|No|
-|_UserAuthenticationMethod.Read.All_ (private preview)    |Read users' authentication methods    |Allows the app to read authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
-|_UserAuthenticationMethod.ReadWrite_ (private preview)   |Manage own authentication methods     |Allows the app to read and write the signed-in user's authentication methods, including phone numbers and Authenticator app settings. This does not allow the app to see secret information like the signed-in user's passwords, or to sign-in or otherwise use the signed-in user's authentication methods. |Yes|No|
-|_UserAuthenticationMethod.ReadWrite.All_ (private preview)|Manage users' authentication methods  |Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
+|_UserAuthenticationMethod.Read_ (preview)        |Read own authentication methods       |Allows the app to read the signed-in user's authentication methods, including phone numbers and Authenticator app settings. This does not allow the app to see secret information like the signed-in user's passwords, or to sign-in or otherwise use the signed-in user's authentication methods. |Yes|No|
+|_UserAuthenticationMethod.Read.All_ (preview)    |Read users' authentication methods    |Allows the app to read authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
+|_UserAuthenticationMethod.ReadWrite_ (preview)   |Manage own authentication methods     |Allows the app to read and write the signed-in user's authentication methods, including phone numbers and Authenticator app settings. This does not allow the app to see secret information like the signed-in user's passwords, or to sign-in or otherwise use the signed-in user's authentication methods. |Yes|No|
+|_UserAuthenticationMethod.ReadWrite.All_ (preview)|Manage users' authentication methods  |Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |Yes|No|
 
 #### Application permissions
 

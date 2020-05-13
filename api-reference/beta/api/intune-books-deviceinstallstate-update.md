@@ -1,7 +1,7 @@
 ---
 title: "Update deviceInstallState"
 description: "Update the properties of a deviceInstallState object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -106,8 +106,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
 
 
 

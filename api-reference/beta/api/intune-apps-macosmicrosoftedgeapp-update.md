@@ -1,7 +1,7 @@
 ---
 title: "Update macOSMicrosoftEdgeApp"
 description: "Update the properties of a macOSMicrosoftEdgeApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -147,8 +147,6 @@ Content-Length: 914
   "channel": "beta"
 }
 ```
-
-
 
 
 

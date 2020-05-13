@@ -1,7 +1,7 @@
 ---
 title: "Create roleScopeTag"
 description: "Create a new roleScopeTag object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -91,8 +91,6 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
-
-
 
 
 

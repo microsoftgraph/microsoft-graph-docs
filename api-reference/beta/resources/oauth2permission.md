@@ -3,8 +3,8 @@ title: "oAuth2Permission resource type"
 description: "Represents an OAuth 2.0 delegated permission scope. The specified OAuth 2.0 delegated permission scopes may be requested by client applications (through the **requiredResourceAccess** collection on the application object) when calling a resource application. The **appRoles** property of the servicePrincipal entity and of the application entity is a collection of **oAuth2Permission**."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "psignoret"
 ---
 
 # oAuth2Permission resource type

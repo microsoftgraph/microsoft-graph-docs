@@ -2,7 +2,7 @@
 title: "Update ipnamedlocation"
 description: "Update the properties of an ipNamedLocation object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /conditionalAccess/namedLocations/{id}
+PATCH /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## Request headers
@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
+PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
 Content-type: application/json
 
 {

@@ -1,7 +1,7 @@
 ---
 title: "List deviceConfigurationUserStatuses"
 description: "List properties and relationships of the deviceConfigurationUserStatus objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -74,6 +74,8 @@ Content-Length: 400
   ]
 }
 ```
+
+
 
 
 

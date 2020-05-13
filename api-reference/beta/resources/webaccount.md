@@ -19,11 +19,11 @@ This resource type inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 
-| Method                                     | Return Type                 | Description                                             |
-|:-------------------------------------------|:----------------------------|:--------------------------------------------------------|
-| [Get webAccount](../api/webaccount-get.md) | [webAccount](webaccount.md) | Read the properties and relationships of a **webAccount** object. |
-| [Update webAccount](../api/webaccount-update.md)      | [webAccount](webaccount.md) | Update a **webAccount** object.                               |
-| [Delete webAccount](../api/webaccount-delete.md)      | None                        | Delete a **webAccount** object.                               |
+| Method                                                | Return Type                 | Description                                                       |
+|:------------------------------------------------------|:----------------------------|:------------------------------------------------------------------|
+| [Get webAccount](../api/webaccount-get.md)            | [webAccount](webaccount.md) | Read the properties and relationships of a **webAccount** object. |
+| [Update webAccount](../api/webaccount-update.md)      | [webAccount](webaccount.md) | Update a **webAccount** object.                                   |
+| [Delete webAccount](../api/webaccount-delete.md)      | None                        | Delete a **webAccount** object.                                   |
 
 ## Properties
 

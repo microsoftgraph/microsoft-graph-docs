@@ -1,7 +1,7 @@
 ---
 title: "Update macOSMdatpApp"
 description: "Update the properties of a macOSMdatpApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -144,8 +144,6 @@ Content-Length: 884
   "dependentAppCount": 1
 }
 ```
-
-
 
 
 

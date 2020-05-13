@@ -1,7 +1,7 @@
 ---
 title: "Update appleUserInitiatedEnrollmentProfile"
 description: "Update the properties of a appleUserInitiatedEnrollmentProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -115,8 +115,6 @@ Content-Length: 611
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 

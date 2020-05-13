@@ -1,7 +1,7 @@
 ---
 title: "List deviceEnrollmentWindowsHelloForBusinessConfigurations"
 description: "List properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 956
+Content-Length: 1030
 
 {
   "value": [
@@ -73,6 +73,9 @@ Content-Length: 956
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "version": 7,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "pinMinimumLength": 0,
       "pinMaximumLength": 0,
       "pinUppercaseCharactersUsage": "required",
@@ -90,8 +93,6 @@ Content-Length: 956
   ]
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "List windowsUpdateForBusinessConfigurations"
 description: "List properties and relationships of the windowsUpdateForBusinessConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3329
+Content-Length: 3283
 
 {
   "value": [
@@ -117,8 +117,8 @@ Content-Length: 3329
       "businessReadyUpdatesOnly": "all",
       "skipChecksBeforeRestart": true,
       "updateWeeks": "firstWeek",
-      "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-      "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+      "qualityUpdatesPauseStartDate": "2016-12-31",
+      "featureUpdatesPauseStartDate": "2016-12-31",
       "featureUpdatesRollbackWindowInDays": 2,
       "qualityUpdatesWillBeRolledBack": true,
       "featureUpdatesWillBeRolledBack": true,
@@ -141,8 +141,6 @@ Content-Length: 3329
   ]
 }
 ```
-
-
 
 
 

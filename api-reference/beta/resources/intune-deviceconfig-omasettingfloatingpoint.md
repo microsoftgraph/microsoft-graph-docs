@@ -1,7 +1,7 @@
 ---
 title: "omaSettingFloatingPoint resource type"
 description: "OMA Settings Floating Point definition."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -44,7 +44,7 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": "<Unknown Primitive Type Edm.Single>"
+  "value": 4.2
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "group: checkMemberGroups"
-description: "Check for membership in the specified list of groups. Returns from the list those groups of which"
-author: "dkershaw10"
+description: "Check for membership in the specified list of groups."
+author: "yyuank"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType

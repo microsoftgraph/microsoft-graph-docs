@@ -1,7 +1,7 @@
 ---
 title: "List mobileAppAssignments"
 description: "List properties and relationships of the mobileAppAssignment objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 460
+Content-Length: 558
 
 {
   "value": [
@@ -69,10 +69,12 @@ Content-Length: 460
       "id": "591620b7-20b7-5916-b720-1659b7201659",
       "intent": "required",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       },
       "settings": {
-        "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+        "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+        "vpnConfigurationId": "Vpn Configuration Id value",
+        "uninstallOnDeviceRemoval": true
       },
       "source": "policySets",
       "sourceId": "Source Id value"
@@ -80,8 +82,6 @@ Content-Length: 460
   ]
 }
 ```
-
-
 
 
 

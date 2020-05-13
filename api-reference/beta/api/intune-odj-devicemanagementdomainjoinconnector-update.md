@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementDomainJoinConnector"
 description: "Update the properties of a deviceManagementDomainJoinConnector object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -93,8 +93,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
-
 
 
 

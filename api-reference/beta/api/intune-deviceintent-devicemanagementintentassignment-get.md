@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementIntentAssignment"
 description: "Read properties and relationships of the deviceManagementIntentAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,20 +63,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 250
+Content-Length: 238
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
     "id": "bedc5365-5365-bedc-6553-dcbe6553dcbe",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
     }
   }
 }
 ```
-
-
 
 
 

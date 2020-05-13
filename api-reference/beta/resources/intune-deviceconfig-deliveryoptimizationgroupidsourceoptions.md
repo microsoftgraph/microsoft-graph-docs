@@ -1,7 +1,7 @@
 ---
 title: "deliveryOptimizationGroupIdSourceOptions resource type"
 description: "Group id options type"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

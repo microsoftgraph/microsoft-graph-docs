@@ -1,7 +1,7 @@
 ---
 title: "Create windowsInformationProtectionPolicy"
 description: "Create a new windowsInformationProtectionPolicy object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -386,6 +386,8 @@ Content-Length: 4577
   "daysWithoutContactBeforeUnenroll": 0
 }
 ```
+
+
 
 
 

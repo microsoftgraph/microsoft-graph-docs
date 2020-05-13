@@ -1,7 +1,7 @@
 ---
 title: "List windowsManagedDevices"
 description: "List properties and relationships of the windowsManagedDevice objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8419
+Content-Length: 8628
 
 {
   "value": [
@@ -103,7 +103,8 @@ Content-Length: 8419
         "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
         "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
         "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
-        "osBuildNumber": "Os Build Number value"
+        "osBuildNumber": "Os Build Number value",
+        "operatingSystemProductType": 10
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",
@@ -236,17 +237,19 @@ Content-Length: 8419
       },
       "configurationManagerClientInformation": {
         "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-        "clientIdentifier": "Client Identifier value"
+        "clientIdentifier": "Client Identifier value",
+        "isBlocked": true
       },
       "ethernetMacAddress": "Ethernet Mac Address value",
       "physicalMemoryInBytes": 5,
-      "processorArchitecture": "x86"
+      "processorArchitecture": "x86",
+      "specificationVersion": "Specification Version value",
+      "joinType": "azureADJoined",
+      "skuFamily": "Sku Family value"
     }
   ]
 }
 ```
-
-
 
 
 

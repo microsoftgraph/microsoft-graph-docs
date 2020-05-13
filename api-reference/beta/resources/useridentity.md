@@ -1,8 +1,8 @@
 ---
 title: "userIdentity type"
-description: "For the Azure AD access reviews, this type represents an Azure AD user identity for a reviewer of an access review.  "
+description: "Represents an Azure AD user identity for a reviewer of an access review."
 localization_priority: Normal
-author: "dkershaw10"
+author: "krbain"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

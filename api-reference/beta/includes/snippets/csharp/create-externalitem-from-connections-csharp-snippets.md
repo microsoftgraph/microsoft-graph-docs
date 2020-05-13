@@ -24,7 +24,11 @@ var externalItem = new ExternalItem
 		Priority = 1,
 		Assignee = "john@contoso.com"
 	},
-	Content = "Textual content of the file"
+	Content = new ExternalItemContent
+	{
+		Value = "<h1>Error in payment gateway</h1><p>Error details...</p>",
+		Type = ExternalItemContentType.Html
+	}
 };
 
 await graphClient.Connections["contosohr"].Items["TSP228082938"]

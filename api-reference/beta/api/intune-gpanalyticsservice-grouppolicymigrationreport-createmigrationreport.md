@@ -1,7 +1,7 @@
 ---
 title: "createMigrationReport action"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,12 +63,16 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/createMigrationReport
 
 Content-type: application/json
-Content-length: 191
+Content-length: 438
 
 {
   "groupPolicyObjectFile": {
-    "@odata.type": "microsoft.graph.groupPolicyObjectFile",
+    "@odata.type": "#microsoft.graph.groupPolicyObjectFile",
+    "id": "65c0499d-499d-65c0-9d49-c0659d49c065",
+    "groupPolicyObjectId": "ca1c97af-97af-ca1c-af97-1ccaaf971cca",
     "ouDistinguishedName": "Ou Distinguished Name value",
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "content": "Content value"
   }
 }
@@ -85,8 +89,6 @@ Content-Length: 48
   "value": "Create Migration Report value"
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Update windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary"
 description: "Update the properties of a windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -87,8 +87,6 @@ Content-Length: 215
   "failedDeviceCount": 1
 }
 ```
-
-
 
 
 

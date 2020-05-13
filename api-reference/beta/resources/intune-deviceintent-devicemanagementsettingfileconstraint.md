@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingFileConstraint resource type"
 description: "Constraint enforcing the file extension is acceptable for a given setting"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

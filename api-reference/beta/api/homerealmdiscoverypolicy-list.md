@@ -2,7 +2,7 @@
 title: "List homeRealmDiscoveryPolicies"
 description: "Get a list of homeRealmDiscoveryPolicy objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "hpsin"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All |
+| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All |
+| Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 ## HTTP request
 

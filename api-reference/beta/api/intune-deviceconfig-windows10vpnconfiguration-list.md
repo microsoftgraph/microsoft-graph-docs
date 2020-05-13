@@ -1,7 +1,7 @@
 ---
 title: "List windows10VpnConfigurations"
 description: "List properties and relationships of the windows10VpnConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -209,8 +209,6 @@ Content-Length: 4921
   ]
 }
 ```
-
-
 
 
 

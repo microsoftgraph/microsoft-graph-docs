@@ -3,8 +3,8 @@ title: "Assign Policy"
 description: "Assigns a policy to an application or service principal."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "dkershaw10"
 ---
 
 # Assign Policy

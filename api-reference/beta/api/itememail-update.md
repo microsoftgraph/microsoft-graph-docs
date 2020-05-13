@@ -1,6 +1,6 @@
 ---
 title: "Update itememail"
-description: "Update the properties of an itememail object in a user's profile."
+description: "Update the properties of an itemEmail object in a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -46,7 +46,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description                                                              |
 |:-------------|:------------|:-------------------------------------------------------------------------|
-|address       |String       | The email address itself.                                                | 
+|address       |String       | The email address itself.                                                |
 |displayName   |String       | The name or label a user has associated with a particular email address. |
 |type          |string       | Possible values are: `unknown`, `work`, `personal`, `main`, `other`.     |
 
@@ -75,6 +75,7 @@ Content-type: application/json
   "displayName": "Primary Email Address"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-itememail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,7 +89,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

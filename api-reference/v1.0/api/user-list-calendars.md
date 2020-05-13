@@ -2,8 +2,8 @@
 title: "List calendars"
 description: "Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group. "
 localization_priority: Priority
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "harini84"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/calendars
 
 ---
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -110,6 +110,12 @@ Content-type: application/json
             "canShare":true,
             "canViewPrivateItems":true,
             "canEdit":true,
+            "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+            "defaultOnlineMeetingProvider": "teamsForBusiness",
+            "isTallyingResponses": true,
+            "isRemovable": false,
             "owner":{
                 "name":"Samantha Booth",
                 "address":"samanthab@adatum.onmicrosoft.com"

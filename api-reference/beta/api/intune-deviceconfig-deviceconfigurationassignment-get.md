@@ -1,7 +1,7 @@
 ---
 title: "Get deviceConfigurationAssignment"
 description: "Read properties and relationships of the deviceConfigurationAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -72,22 +72,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 312
+Content-Length: 300
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
     "id": "d59b6342-6342-d59b-4263-9bd542639bd5",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
     },
     "source": "policySets",
     "sourceId": "Source Id value"
   }
 }
 ```
-
-
 
 
 

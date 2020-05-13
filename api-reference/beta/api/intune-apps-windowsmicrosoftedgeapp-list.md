@@ -1,7 +1,7 @@
 ---
 title: "List windowsMicrosoftEdgeApps"
 description: "List properties and relationships of the windowsMicrosoftEdgeApp objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -96,8 +96,6 @@ Content-Length: 1118
   ]
 }
 ```
-
-
 
 
 

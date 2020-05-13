@@ -1,7 +1,7 @@
 ---
 title: "List windows10GeneralConfigurations"
 description: "List properties and relationships of the windows10GeneralConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 16505
+Content-Length: 16638
 
 {
   "value": [
@@ -152,6 +152,7 @@ Content-Length: 16505
       "searchDisableIndexingRemovableDrive": true,
       "searchEnableAutomaticIndexSizeManangement": true,
       "searchBlockWebResults": true,
+      "findMyFiles": "enabled",
       "securityBlockAzureADJoinedDevicesAutoEncryption": true,
       "diagnosticsDataSubmissionMode": "none",
       "oneDriveDisableFileSync": true,
@@ -214,8 +215,37 @@ Content-Length: 16505
       "cellularBlockVpn": true,
       "cellularBlockVpnWhenRoaming": true,
       "cellularData": "required",
+      "defenderRequireRealTimeMonitoring": true,
+      "defenderRequireBehaviorMonitoring": true,
+      "defenderRequireNetworkInspectionSystem": true,
+      "defenderScanDownloads": true,
+      "defenderScheduleScanEnableLowCpuPriority": true,
+      "defenderDisableCatchupQuickScan": true,
+      "defenderDisableCatchupFullScan": true,
+      "defenderScanScriptsLoadedInInternetExplorer": true,
       "defenderBlockEndUserAccess": true,
+      "defenderSignatureUpdateIntervalInHours": 6,
+      "defenderMonitorFileActivity": "disable",
       "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+      "defenderScanMaxCpu": 2,
+      "defenderScanArchiveFiles": true,
+      "defenderScanIncomingMail": true,
+      "defenderScanRemovableDrivesDuringFullScan": true,
+      "defenderScanMappedNetworkDrivesDuringFullScan": true,
+      "defenderScanNetworkFiles": true,
+      "defenderRequireCloudProtection": true,
+      "defenderCloudBlockLevel": "high",
+      "defenderCloudExtendedTimeout": 12,
+      "defenderCloudExtendedTimeoutInSeconds": 5,
+      "defenderPromptForSampleSubmission": "alwaysPrompt",
+      "defenderScheduledQuickScanTime": "11:58:49.3840000",
+      "defenderScanType": "disabled",
+      "defenderSystemScanSchedule": "everyday",
+      "defenderScheduledScanTime": "11:59:10.9990000",
+      "defenderPotentiallyUnwantedAppAction": "block",
+      "defenderPotentiallyUnwantedAppActionSetting": "enable",
+      "defenderSubmitSamplesConsentType": "alwaysPrompt",
+      "defenderBlockOnAccessProtection": true,
       "defenderDetectedMalwareActions": {
         "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
         "lowSeverity": "clean",
@@ -223,44 +253,15 @@ Content-Length: 16505
         "highSeverity": "clean",
         "severeSeverity": "clean"
       },
-      "defenderSystemScanSchedule": "everyday",
-      "defenderFilesAndFoldersToExclude": [
-        "Defender Files And Folders To Exclude value"
-      ],
       "defenderFileExtensionsToExclude": [
         "Defender File Extensions To Exclude value"
       ],
-      "defenderScanMaxCpu": 2,
-      "defenderMonitorFileActivity": "disable",
-      "defenderPotentiallyUnwantedAppAction": "block",
-      "defenderPotentiallyUnwantedAppActionSetting": "enable",
+      "defenderFilesAndFoldersToExclude": [
+        "Defender Files And Folders To Exclude value"
+      ],
       "defenderProcessesToExclude": [
         "Defender Processes To Exclude value"
       ],
-      "defenderPromptForSampleSubmission": "alwaysPrompt",
-      "defenderRequireBehaviorMonitoring": true,
-      "defenderRequireCloudProtection": true,
-      "defenderRequireNetworkInspectionSystem": true,
-      "defenderRequireRealTimeMonitoring": true,
-      "defenderScanArchiveFiles": true,
-      "defenderScanDownloads": true,
-      "defenderScheduleScanEnableLowCpuPriority": true,
-      "defenderDisableCatchupQuickScan": true,
-      "defenderDisableCatchupFullScan": true,
-      "defenderScanNetworkFiles": true,
-      "defenderScanIncomingMail": true,
-      "defenderScanMappedNetworkDrivesDuringFullScan": true,
-      "defenderScanRemovableDrivesDuringFullScan": true,
-      "defenderScanScriptsLoadedInInternetExplorer": true,
-      "defenderSignatureUpdateIntervalInHours": 6,
-      "defenderScanType": "disabled",
-      "defenderScheduledScanTime": "11:59:10.9990000",
-      "defenderScheduledQuickScanTime": "11:58:49.3840000",
-      "defenderCloudBlockLevel": "high",
-      "defenderCloudExtendedTimeout": 12,
-      "defenderCloudExtendedTimeoutInSeconds": 5,
-      "defenderBlockOnAccessProtection": true,
-      "defenderSubmitSamplesConsentType": "alwaysPrompt",
       "lockScreenAllowTimeoutConfiguration": true,
       "lockScreenBlockActionCenterNotifications": true,
       "lockScreenBlockCortana": true,
@@ -284,6 +285,7 @@ Content-Length: 16505
       "privacyBlockInputPersonalization": true,
       "privacyBlockPublishUserActivities": true,
       "privacyBlockActivityFeed": true,
+      "activateAppsWithVoice": "enabled",
       "startBlockUnpinningAppsFromTaskbar": true,
       "startMenuAppListVisibility": "collapse",
       "startMenuHideChangeAccountSettings": true,
@@ -418,13 +420,12 @@ Content-Length: 16505
       "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
         "App Management Package Family Names To Launch After Log On value"
       ],
-      "uninstallBuiltInApps": true
+      "uninstallBuiltInApps": true,
+      "configureTimeZone": "Configure Time Zone value"
     }
   ]
 }
 ```
-
-
 
 
 

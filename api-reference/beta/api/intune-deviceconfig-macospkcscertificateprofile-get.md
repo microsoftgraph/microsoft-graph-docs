@@ -1,7 +1,7 @@
 ---
 title: "Get macOSPkcsCertificateProfile"
 description: "Read properties and relationships of the macOSPkcsCertificateProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -123,8 +123,6 @@ Content-Length: 2150
   }
 }
 ```
-
-
 
 
 

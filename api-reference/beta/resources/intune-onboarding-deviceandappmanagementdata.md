@@ -1,7 +1,7 @@
 ---
 title: "deviceAndAppManagementData resource type"
 description: "Exported Data"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -35,7 +35,7 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementData",
-  "content": "<Unknown Primitive Type Edm.Stream>"
+  "content": "Stream"
 }
 ```
 

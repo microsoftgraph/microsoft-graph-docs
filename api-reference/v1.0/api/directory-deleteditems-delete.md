@@ -1,7 +1,7 @@
 ---
 title: "Permanently delete an item from deleted items"
 description: "Permanently deletes an item from deleted items."
-author: "davidmu1"
+author: "keylimesoda"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

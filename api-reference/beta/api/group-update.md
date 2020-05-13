@@ -1,7 +1,7 @@
 ---
 title: "Update group"
 description: "Update the properties of a [group](../resources/group.md) object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

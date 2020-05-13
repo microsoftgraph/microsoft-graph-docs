@@ -1,7 +1,7 @@
 ---
 title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -42,10 +42,12 @@ The following Graph resources are available to manage app protection polices in 
 - [Android managed store app configuration schema](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Android managed store app configuration schema item](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Android managed store app configuration schema item data type](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
+- [Android managed store app track](intune-apps-androidmanagedstoreapptrack.md)
 - [Android managed store web app](intune-apps-androidmanagedstorewebapp.md)
 - [Android minimum operating system](intune-apps-androidminimumoperatingsystem.md)
 - [Android permission action](intune-apps-androidpermissionaction.md)
 - [Android permission action type](intune-apps-androidpermissionactiontype.md)
+- [Android profile applicability](intune-apps-androidprofileapplicability.md)
 - [Android store app](intune-apps-androidstoreapp.md)
 - [App configuration setting item](intune-apps-appconfigurationsettingitem.md)
 - [Certificate status](intune-apps-certificatestatus.md)

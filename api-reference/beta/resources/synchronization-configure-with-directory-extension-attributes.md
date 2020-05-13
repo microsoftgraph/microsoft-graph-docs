@@ -1,9 +1,9 @@
 ---
 title: "Configure synchronization with directory extension attributes"
-description: "You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes. This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce. In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD. "
+description: "Customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes."
 localization_priority: Normal
 doc_type: conceptualPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

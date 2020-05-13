@@ -2,7 +2,7 @@
 title: "List officeClientConfigurations"
 description: "Get all policies."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
@@ -97,8 +97,6 @@ Content-Length: 1207
   ]
 }
 ```
-
-
 
 
 

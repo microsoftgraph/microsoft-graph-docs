@@ -1,7 +1,7 @@
 ---
 title: "Create iosManagedAppProtection"
 description: "Create a new iosManagedAppProtection object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -262,8 +262,6 @@ Content-Length: 2795
   "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
-
-
 
 
 

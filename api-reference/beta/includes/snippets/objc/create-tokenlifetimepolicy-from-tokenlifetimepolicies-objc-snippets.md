@@ -11,16 +11,16 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphPolicy *policy = [[MSGraphPolicy alloc] init];
+MSGraphTokenLifetimePolicy *tokenLifetimePolicy = [[MSGraphTokenLifetimePolicy alloc] init];
 NSMutableArray *definitionList = [[NSMutableArray alloc] init];
 [definitionList addObject: @"definition-value"];
-[policy setDefinition:definitionList];
-[policy setDisplayName:@"displayName-value"];
-[policy setIsOrganizationDefault: true];
+[tokenLifetimePolicy setDefinition:definitionList];
+[tokenLifetimePolicy setDisplayName:@"displayName-value"];
+[tokenLifetimePolicy setIsOrganizationDefault: true];
 
 NSError *error;
-NSData *policyData = [policy getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:policyData];
+NSData *tokenLifetimePolicyData = [tokenLifetimePolicy getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:tokenLifetimePolicyData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

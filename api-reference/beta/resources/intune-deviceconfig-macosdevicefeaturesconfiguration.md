@@ -1,7 +1,7 @@
 ---
 title: "macOSDeviceFeaturesConfiguration resource type"
 description: "MacOS device features configuration profile."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -161,10 +161,50 @@ Here is a JSON representation of the resource.
     }
   ],
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.singleSignOnExtension"
+    "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "domains": [
+      "String"
+    ],
+    "realm": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyStringValuePair",
+        "key": "String",
+        "value": "String"
+      }
+    ]
   },
   "macOSSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
+    "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
+    "realm": "String",
+    "domains": [
+      "String"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "String",
+    "credentialBundleIdAccessControlList": [
+      "String"
+    ],
+    "domainRealms": [
+      "String"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 1024,
+    "passwordExpirationNotificationDays": 1024,
+    "userPrincipalName": "String",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 1024,
+    "passwordMinimumLength": 1024,
+    "passwordMinimumAgeDays": 1024,
+    "passwordRequirementsDescription": "String",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "String",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "String"
   }
 }
 ```

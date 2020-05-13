@@ -1,8 +1,8 @@
 ---
 title: "List group members"
-description: "Get a list of the group's direct members. A group can have users, contacts, devices, service principals, and other groups as members. This operation is not transitive."
+description: "Get a list of the group's direct members."
 localization_priority: Normal
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

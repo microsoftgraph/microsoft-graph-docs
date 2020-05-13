@@ -1,7 +1,7 @@
 ---
 title: "deliveryOptimizationGroupIdCustom resource type"
 description: "Custom group id type"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

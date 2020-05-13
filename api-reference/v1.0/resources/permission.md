@@ -27,9 +27,12 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "link",
     "grantedTo",
+    "grantedToIdentities",
     "invitation",
     "inheritedFrom",
-    "shareId"
+    "shareId",
+    "expirationDateTime",
+    "hasPassword"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
@@ -39,11 +42,14 @@ Here is a JSON representation of the resource
 {
   "id": "string (identifier)",
   "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
+  "grantedToIdentities": [{"@odata.type": "microsoft.graph.identitySet"}],
   "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
   "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
   "link": {"@odata.type": "microsoft.graph.sharingLink"},
   "roles": ["string"],
-  "shareId": "string"
+  "shareId": "string",
+  "expirationDateTime": "string (timestamp)",
+  "hasPassword": "boolean"
 }
 ```
 
@@ -53,11 +59,14 @@ Here is a JSON representation of the resource
 |:--------------|:------------------------------------------|:-----------------
 | id            | String                                    | The unique identifier of the permission among all permissions on the item. Read-only.
 | grantedTo     | [IdentitySet](identityset.md)             | For user type permissions, the details of the users & applications for this permission. Read-only.
+| grantedToIdentities | Collection([IdentitySet](identityset.md)) | For link type permissions, the details of the users to whom permission was granted. Read-only.
 | invitation    | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only.
 | inheritedFrom | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
 | link          | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only.
 | roles         | Collection of String                      | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.
 | shareId       | String                                    | A unique token that can be used to access this shared item via the [**shares** API](../api/shares-get.md). Read-only.
+| expirationDateTime  | DateTimeOffset              | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
+| hasPassword         | Boolean                     | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
@@ -69,7 +78,7 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
 
-## Roles enumeration
+### Roles property values
 
 | Role        | Details                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
@@ -99,7 +108,8 @@ A view link provides read-only access to an item.
     "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
-  "shareId": "!LKj1lkdlals90j1nlkascl"
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -116,7 +126,59 @@ An edit link provides read and write access to an item.
     "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
-  "shareId": "!LKj1lkdlals90j1nlkascl"
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+### Specific people link
+
+This link provides read and write access to the specific people in the `grantedToIdentities` collection.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
+
+```json
+{
+  "id": "3",
+  "grantedToIdentities": [
+    {
+       "user": {
+        "id": "35fij1974gb8832",
+        "displayName": "Misty Suarez"
+      }
+    },
+    {
+       "user": {
+        "id": "9397721fh4hgh73",
+        "displayName": "Judith Clemons"
+      }
+    }
+  ],
+  "roles": ["write"],
+  "link": {
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/a577ghg9hgh737613bmbjf839026561fmzhsr85ng9f3hjck2t5s",
+    "application": { "id": "1234", "displayName": "Sample Application" }
+  },
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+
+### Existing access link
+
+This link does not grant any additional privileges to the user.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
+
+```json
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "roles": ["read"],
+  "link": {
+    "scope": "existingAccess",
+    "type": "view",
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
+  },
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -140,7 +202,8 @@ signs in.
     "email": "jd@gmail.com",
     "signInRequired": true
   },
-  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U"
+  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -162,7 +225,8 @@ property will contain the information about the account that redeemed the permis
     "email": "jd@outlook.com",
     "signInRequired": true
   },
-  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U"
+  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -175,6 +239,7 @@ property will contain the information about the account that redeemed the permis
 | [Add](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
 | [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 
 ## Remarks

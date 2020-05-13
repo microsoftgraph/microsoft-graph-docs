@@ -1,7 +1,7 @@
 ---
 title: "List endpoints"
 description: "Retrieve a list of endpoint objects."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

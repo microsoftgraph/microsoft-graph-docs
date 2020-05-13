@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsOverview"
 description: "Update the properties of a userExperienceAnalyticsOverview object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -69,7 +69,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 760
+Content-length: 741
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -84,7 +84,7 @@ Content-length: 760
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": 1.6666666666666667
         }
       ],
       "severity": "informational"
@@ -101,7 +101,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 809
+Content-Length: 790
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -117,7 +117,7 @@ Content-Length: 809
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": 1.6666666666666667
         }
       ],
       "severity": "informational"
@@ -128,8 +128,6 @@ Content-Length: 809
   "bestPracticesHealthState": "insufficientData"
 }
 ```
-
-
 
 
 

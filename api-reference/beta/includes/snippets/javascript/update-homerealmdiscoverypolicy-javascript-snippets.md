@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const {id} = {
+const homeRealmDiscoveryPolicy = {
   definition: [
     "definition-value"
   ],
@@ -21,6 +21,6 @@ const {id} = {
 
 let res = await client.api('/policies/homeRealmDiscoveryPolicies/{id}')
 	.version('beta')
-	.update({id});
+	.update(homeRealmDiscoveryPolicy);
 
 ```

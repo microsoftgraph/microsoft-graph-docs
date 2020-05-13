@@ -3,8 +3,8 @@ title: "List privilegedApproval"
 description: "Retrieve a list of privilegedapproval objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # List privilegedApproval

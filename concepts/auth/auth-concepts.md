@@ -26,10 +26,9 @@ EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uS
 To call Microsoft Graph, you attach the access token as a Bearer token to the Authorization header in an HTTP request. For example, the following call that returns the profile information of the signed-in user (the access token has been shortened for readability):
 
 ```http
-HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/ HTTP/1.1
+Host: graph.microsoft.com
 Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-Host: graph.microsoft.com`
-GET https://graph.microsoft.com/v1.0/me/
 ```
 
 ## Register your app with the Microsoft identity platform

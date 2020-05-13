@@ -3,7 +3,7 @@ title: "Create identityProvider"
 description: "Create a new identityProvider by specifying display name, identityProvider type, client ID, and client secret."
 localization_priority: Normal
 doc_type: apiPageType
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 ---
 
