@@ -1,7 +1,7 @@
 ---
 title: "Get deviceCompliancePolicyDeviceStateSummary"
 description: "Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -81,8 +81,6 @@ Content-Length: 439
   }
 }
 ```
-
-
 
 
 

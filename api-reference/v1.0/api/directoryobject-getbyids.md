@@ -1,20 +1,17 @@
 ---
-title: "Get directory objects from a list of ids"
-description: "select` query option is not available for this operation."
-author: "davidmu1"
+title: "directoryObject: getByIds"
+description: "Returns the directory objects specified in a list of IDs."
+author: "keylimesoda"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get directory objects from a list of ids
+# directoryObject: getByIds
 
 Namespace: microsoft.graph
 
-Returns the directory objects specified in a list of IDs.
-
->[!NOTE]
->The directory objects returned are the full objects containing all their properties. The `$select` query option is not available for this operation.
+Return the directory objects specified in a list of IDs.
 
 >[!NOTE]
 >This API has a [known issue](/graph/known-issues#incomplete-objects-when-using-getbyids-request). Not all directory objects returned are the full objects containing all their properties.
@@ -22,7 +19,7 @@ Returns the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 * Resolve IDs returned by functions (that return collections of IDs) such as [getMemberObjects](directoryobject-getmemberobjects.md) or [getMemberGroups](directoryobject-getmembergroups.md)  to their backing directory objects.
-* Resolve ids persisted in an external store by the application to their backing directory objects.
+* Resolve IDs persisted in an external store by the application to their backing directory objects.
 
 ## Permissions
 
@@ -50,7 +47,7 @@ POST /directoryObjects/getByIds
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | string | application/json  |
+| Content-type  | string | application/json. Required.  |
 
 ## Request body
 
@@ -58,16 +55,16 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter   | Type |Description|
 |:---------------|:--------|:----------|
-|ids|String collection| A collection of IDs for which to return objects. You can specify up to 1000 IDs. |
+|ids|String collection| A collection of IDs for which to return objects.  The IDs are GUIDs, represented as strings.  You can specify up to 1000 IDs. |
 |types|String collection| A collection of resource types that specifies the set of resource collections to search. If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), which contains all of the resource types defined in the directory. Any object that derives from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) may be specified in the collection; for example: [user](/graph/api/resources/user?view=graph-rest-v1.0), [group](/graph/api/resources/group?view=graph-rest-v1.0), [device](/graph/api/resources/device?view=graph-rest-v1.0), and so on. To search for references to a [Cloud Solution Provider](https://partner.microsoft.com/en-us/cloud-solution-provider) partner organization specify [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0). If not specified, the default is [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), which contains all of the resource types defined in the directory, except for references to a [Cloud Solution Provider](https://partner.microsoft.com/en-us/cloud-solution-provider) partner organization. The values are not case sensitive.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and String collection object in the response body.
+If successful, this method returns a `200 OK` response code and a string collection object in the response body.
 
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -104,9 +101,9 @@ Content-type: application/json
 ---
 
 
-##### Response
+### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

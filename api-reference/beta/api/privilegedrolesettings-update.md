@@ -4,7 +4,7 @@ description: "Update the role settings for the given role setting. A privilegedR
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "shauliu"
 ---
 
 # Update privilegedRoleSettings

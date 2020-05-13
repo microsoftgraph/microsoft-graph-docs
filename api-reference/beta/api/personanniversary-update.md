@@ -1,6 +1,6 @@
 ---
 title: "Update personAnniversary"
-description: "Update the properties of personanniversary object."
+description: "Update the properties of personAnniversary object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -86,7 +86,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -1,7 +1,7 @@
 ---
 title: "policySetItem resource type"
 description: "A class containing the properties used for PolicySet Item."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

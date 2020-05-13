@@ -2,7 +2,7 @@
 title: "attachment: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of a file so as to attach the file to the specified message."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
@@ -13,26 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified [message](../resources/message.md).
+Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to an Outlook item. The item can be a [message](../resources/message.md) or [event](../resources/event.md).
 
-Use this approach to attach a file to a **message** when the file size is between 3 MB and 150 MB. To attach a file that's smaller than 3 MB,  [POST on the attachments navigation property](message-post-attachments.md). 
+Use this approach to attach a file if the file size is between 3 MB and 150 MB. To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this [for a message](message-post-attachments.md) or [for an event](event-post-attachments.md). 
 
 As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
 
-The following are the steps to attach a file using an upload session:
+The following are the steps to attach a file to an Outlook item using an upload session:
 
-1. Create an upload session
-2. Within that upload session, iteratively upload ranges of bytes (up to 4 MB each time) until all the bytes of the file have been uploaded, and the file is attached to the specified message
-3. Save the ID for the attachment for future access
-4. Optional: Delete the upload session 
+1. Create an upload session.
+2. Within that upload session, iteratively upload ranges of bytes (up to 4 MB each time) until all the bytes of the file have been uploaded, and the file is attached to the specified item.
+3. Save the ID for the attachment for future access.
+4. Optional: Delete the upload session.
 
-See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
+See [attach large files to Outlook messages or events](/graph/outlook-large-attachments) for an example.
 
 > [!TIP]
 > Exchange Online lets administrators customize the message size limit for Office 365 mailboxes,  including any message attachments. By default, this message size limit is 35 MB. Find out how to [customize the maximum message size](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) to support attachments larger than the default limit for your tenant. 
 
 > [!IMPORTANT] 
-> Be aware of a [known issue](/graph/known-issues#attaching-large-files-to-messages) if you're attaching to a message in a shared or delegated mailbox.
+> Be aware of a [known issue](/graph/known-issues#attaching-large-files-to-messages) if you're attaching a large file to a message or event in a shared or delegated mailbox.
 
 
 ## Permissions
@@ -47,8 +47,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+To create an upload session for attaching a file to an **event**: 
 
+<!-- { "blockType": "ignored" } -->
+```http
+POST /me/events/{id}/attachments/createUploadSession
+```
+
+To create an upload session for attaching a file to a **message**: 
+
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/attachments/createUploadSession
 ```
@@ -83,7 +91,7 @@ If successful, this method returns a `201 Created` response code and a new [uplo
 
 ## Examples
 
-The following example shows how to create an upload session that you can use in subsequent file upload operations.
+The following example shows how to create an upload session that you can use in subsequent file upload operations to the specified message.
 
 ### Request
 

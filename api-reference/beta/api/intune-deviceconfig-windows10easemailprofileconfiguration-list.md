@@ -1,7 +1,7 @@
 ---
 title: "List windows10EasEmailProfileConfigurations"
 description: "List properties and relationships of the windows10EasEmailProfileConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -115,8 +115,6 @@ Content-Length: 1911
   ]
 }
 ```
-
-
 
 
 

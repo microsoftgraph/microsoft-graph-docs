@@ -1,7 +1,7 @@
 ---
 title: "List termsAndConditionsGroupAssignments"
 description: "List properties and relationships of the termsAndConditionsGroupAssignment objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -72,8 +72,6 @@ Content-Length: 214
   ]
 }
 ```
-
-
 
 
 

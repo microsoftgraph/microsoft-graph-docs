@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementComparisonResult enum type"
 description: "Setting comparison result type"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

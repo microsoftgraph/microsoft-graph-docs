@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var namedLocations = await graphClient.ConditionalAccess.NamedLocations
+var namedLocations = await graphClient.Identity.ConditionalAccess.NamedLocations
 	.Request()
 	.Filter("microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')")
 	.GetAsync();

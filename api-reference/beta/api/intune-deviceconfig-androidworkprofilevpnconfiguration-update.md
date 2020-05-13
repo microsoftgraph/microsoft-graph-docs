@@ -1,7 +1,7 @@
 ---
 title: "Update androidWorkProfileVpnConfiguration"
 description: "Update the properties of a androidWorkProfileVpnConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -216,8 +216,6 @@ Content-Length: 1934
   "authenticationMethod": "usernameAndPassword"
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Update windowsDeliveryOptimizationConfiguration"
 description: "Update the properties of a windowsDeliveryOptimizationConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -224,8 +224,6 @@ Content-Length: 2211
   "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create macOSVpnConfiguration"
 description: "Create a new macOSVpnConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -280,8 +280,6 @@ Content-Length: 2802
   "optInToDeviceIdSharing": true
 }
 ```
-
-
 
 
 

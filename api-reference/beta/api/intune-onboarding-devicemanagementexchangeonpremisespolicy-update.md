@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementExchangeOnPremisesPolicy"
 description: "Update the properties of a deviceManagementExchangeOnPremisesPolicy object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -126,8 +126,6 @@ Content-Length: 714
   ]
 }
 ```
-
-
 
 
 

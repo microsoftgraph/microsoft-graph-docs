@@ -1,7 +1,7 @@
 ---
 title: "windowsUpdateForBusinessConfiguration resource type"
 description: "Windows Update for business configuration."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -154,8 +154,8 @@ Here is a JSON representation of the resource.
   "businessReadyUpdatesOnly": "String",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "String",
-  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "qualityUpdatesPauseStartDate": "String (Date)",
+  "featureUpdatesPauseStartDate": "String (Date)",
   "featureUpdatesRollbackWindowInDays": 1024,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,

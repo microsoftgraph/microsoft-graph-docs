@@ -2,7 +2,7 @@
 title: "Get calendar"
 description: "Get the properties and relationships of a calendar object. The calendar can be one for a user, "
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -112,6 +112,7 @@ Content-type: application/json
     "color": "auto",
     "isDefaultCalendar": false,
     "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+    "calendarGroupId":null,
     "canShare":true,
     "canViewPrivateItems":true,
     "hexColor": "",

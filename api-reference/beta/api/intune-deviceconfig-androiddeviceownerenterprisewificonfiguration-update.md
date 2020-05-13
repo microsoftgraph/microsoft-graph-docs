@@ -1,7 +1,7 @@
 ---
 title: "Update androidDeviceOwnerEnterpriseWiFiConfiguration"
 description: "Update the properties of a androidDeviceOwnerEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -187,8 +187,6 @@ Content-Length: 1784
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
-
 
 
 

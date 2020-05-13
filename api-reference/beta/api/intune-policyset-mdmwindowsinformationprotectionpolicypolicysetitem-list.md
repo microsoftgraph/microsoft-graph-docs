@@ -1,7 +1,7 @@
 ---
 title: "List mdmWindowsInformationProtectionPolicyPolicySetItems"
 description: "List properties and relationships of the mdmWindowsInformationProtectionPolicyPolicySetItem objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -81,8 +81,6 @@ Content-Length: 585
   ]
 }
 ```
-
-
 
 
 

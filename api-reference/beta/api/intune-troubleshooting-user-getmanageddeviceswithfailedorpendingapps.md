@@ -1,7 +1,7 @@
 ---
 title: "getManagedDevicesWithFailedOrPendingApps function"
 description: "Retrieves the list of devices with failed or pending apps"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -72,8 +72,6 @@ Content-Length: 187
   ]
 }
 ```
-
-
 
 
 

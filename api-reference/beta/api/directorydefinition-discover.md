@@ -2,7 +2,7 @@
 title: "directoryDefinition: discover"
 description: "Discover the latest schema definition for provisioning to an application. "
 localization_priority: Normal
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

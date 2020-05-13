@@ -1,7 +1,7 @@
 ---
 title: "Get conversation"
 description: "Get a conversation object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

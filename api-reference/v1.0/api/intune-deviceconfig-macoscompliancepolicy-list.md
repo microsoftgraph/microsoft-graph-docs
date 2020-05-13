@@ -1,7 +1,7 @@
 ---
 title: "List macOSCompliancePolicies"
 description: "List properties and relationships of the macOSCompliancePolicy objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -91,6 +91,8 @@ Content-Length: 1150
   ]
 }
 ```
+
+
 
 
 

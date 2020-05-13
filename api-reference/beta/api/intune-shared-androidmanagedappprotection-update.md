@@ -1,7 +1,7 @@
 ---
 title: "Update androidManagedAppProtection"
 description: "Update the properties of a androidManagedAppProtection object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -274,8 +274,6 @@ Content-Length: 3139
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
-
-
 
 
 

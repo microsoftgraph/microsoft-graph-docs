@@ -1,7 +1,7 @@
 ---
 title: "iosSoftwareUpdateScheduleType enum type"
 description: "Update schedule type for iOS software updates."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

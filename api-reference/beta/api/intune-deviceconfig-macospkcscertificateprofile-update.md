@@ -1,7 +1,7 @@
 ---
 title: "Update macOSPkcsCertificateProfile"
 description: "Update the properties of a macOSPkcsCertificateProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -202,8 +202,6 @@ Content-Length: 2029
   "allowAllAppsAccess": true
 }
 ```
-
-
 
 
 

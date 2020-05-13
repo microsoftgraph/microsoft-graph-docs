@@ -2,7 +2,7 @@
 title: "accessReview resource type"
 description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
 localization_priority: Normal
-author: "davidmu1"
+author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessReview` represents an access review.  
+Represents an Azure AD [access review](accessreviews-root.md).  
 
 
 ## Methods
@@ -103,9 +103,9 @@ Here is a JSON representation of the resource.
 
 ```
 
-## The accessReviewSettings type
+## accessReviewSettings resource type
 
-The `accessReviewSettings` provides additional settings when creating an access review, to control the feature behavior when starting an access review.  This type has the following properties: 
+The **accessReviewSettings** resource type provides additional settings when creating an access review, to control the feature behavior when starting an access review. This type has the following properties. 
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
@@ -119,18 +119,18 @@ The `accessReviewSettings` provides additional settings when creating an access 
 | `autoApplyReviewResultsEnabled`|`Boolean` | Flag to indicate whether auto-apply capability, to automatically change the target object access resource, is enabled.  If not enabled, a user must, after the review completes, apply the access review. |
 | `accessRecommendationsEnabled`|`Boolean` | Flag to indicate whether showing recommendations to reviewers is enabled. |
 
-## The autoReviewSettings type
+## autoReviewSettings resource type
 
-The `autoReviewSettings` is embedded within the access review settings, and specifies the behavior for the feature when an access review completes.  The type has one property, `notReviewedResult`.
+The **autoReviewSettings** resource type is embedded within the access review settings, and along with **autoReviewEnabled**, specifies the behavior for the feature when an access review completes. The resource has one property, **notReviewedResult**. If you don't want to have a review decision recorded unless the reviewer makes an explicit choice, set **autoReviewEnabled** to false. If you want to have the system provide a decision even if the reviewer does not make a choice, set **autoReviewEnabled** to `true` and include **autoReviewSettings** with the **notReviewedResult** property. Then, when a review completes, based on the **notReviewedResult** property, the decision will be recorded to either `Approve` or `Deny`.   
 
 | Property                     | Type     | Description                          |
 | :--------------------------- | :------  | :----------                          |
-| `notReviewedResult`          |`String`  | Must be one of `Approve`, `Deny`, or `Recommendation`. |
+| `notReviewedResult`          |`String`  | Must be one of `Approve`, `Deny`, or `Recommendation`.  If `Recommendation`, then `accessRecommendationsEnabled` in the settings should also be set to true. |
 
 
-## The accessReviewRecurrenceSettings type
+## accessReviewRecurrenceSettings resource type
 
-The `accessReviewRecurrenceSettings` is embedded within the access review settings, and specifies that the access review recurs at regular intervals.  This type has the following properties:
+The **accessReviewRecurrenceSettings** resource type is embedded within the access review settings, and specifies that the access review recurs at regular intervals.  This type has the following properties.
 
 | Property                     | Type                                                                                                          | Description |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |

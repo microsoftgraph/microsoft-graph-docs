@@ -1,7 +1,7 @@
 ---
 title: "keyRealValuePair resource type"
 description: "A key-value pair with a string key and a real (floating-point) value."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -40,7 +40,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.keyRealValuePair",
   "key": "String",
-  "value": "<Unknown Primitive Type Edm.Double>"
+  "value": "4.2"
 }
 ```
 

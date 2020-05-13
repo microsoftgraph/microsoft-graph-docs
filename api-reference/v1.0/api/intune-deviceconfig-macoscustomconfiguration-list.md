@@ -1,7 +1,7 @@
 ---
 title: "List macOSCustomConfigurations"
 description: "List properties and relationships of the macOSCustomConfiguration objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -77,6 +77,8 @@ Content-Length: 526
   ]
 }
 ```
+
+
 
 
 

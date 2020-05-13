@@ -1,7 +1,7 @@
 ---
 title: "List windows81SCEPCertificateProfiles"
 description: "List properties and relationships of the windows81SCEPCertificateProfile objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -131,8 +131,6 @@ Content-Length: 2473
   ]
 }
 ```
-
-
 
 
 

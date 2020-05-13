@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyMigrationReport resource type"
 description: "The Group Policy migration report."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

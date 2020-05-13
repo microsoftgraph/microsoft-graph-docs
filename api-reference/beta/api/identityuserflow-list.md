@@ -2,7 +2,7 @@
 title: "List userFlows"
 description: "Retrieve a list of userFlow objects."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

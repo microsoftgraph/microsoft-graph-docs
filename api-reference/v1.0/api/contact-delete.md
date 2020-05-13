@@ -1,7 +1,7 @@
 ---
 title: "Delete contact"
 description: "Delete a contact."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

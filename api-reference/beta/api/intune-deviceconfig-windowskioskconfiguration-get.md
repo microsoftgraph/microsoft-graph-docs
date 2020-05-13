@@ -1,7 +1,7 @@
 ---
 title: "Get windowsKioskConfiguration"
 description: "Read properties and relationships of the windowsKioskConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -155,8 +155,6 @@ Content-Length: 3186
   }
 }
 ```
-
-
 
 
 

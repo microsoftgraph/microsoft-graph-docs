@@ -1,7 +1,7 @@
 ---
 title: "Get policySetAssignment"
 description: "Read properties and relationships of the policySetAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 303
+Content-Length: 291
 
 {
   "value": {
@@ -71,13 +71,11 @@ Content-Length: 303
     "id": "0a8e7d40-7d40-0a8e-407d-8e0a407d8e0a",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
     }
   }
 }
 ```
-
-
 
 
 

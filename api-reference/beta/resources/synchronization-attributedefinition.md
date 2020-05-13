@@ -3,7 +3,7 @@ title: "attributeDefinition resource type"
 description: "Describes an attribute of an object."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

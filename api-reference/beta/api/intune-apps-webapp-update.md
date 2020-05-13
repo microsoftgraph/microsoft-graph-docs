@@ -1,7 +1,7 @@
 ---
 title: "Update webApp"
 description: "Update the properties of a webApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -150,8 +150,6 @@ Content-Length: 951
   "useManagedBrowser": true
 }
 ```
-
-
 
 
 

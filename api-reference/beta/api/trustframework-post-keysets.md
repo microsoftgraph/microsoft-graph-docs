@@ -2,7 +2,7 @@
 title: "Create trustFrameworkKeySet"
 description: "Create a new **trustFrameworkKeySet** object."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

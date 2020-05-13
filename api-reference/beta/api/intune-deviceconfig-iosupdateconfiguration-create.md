@@ -1,7 +1,7 @@
 ---
 title: "Create iosUpdateConfiguration"
 description: "Create a new iosUpdateConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -197,8 +197,6 @@ Content-Length: 1768
   ]
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "macOSMdatpApp resource type"
 description: "Contains properties and inherited properties for the macOS Microsoft Defender Advanced Threat Protection (MDATP) App."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

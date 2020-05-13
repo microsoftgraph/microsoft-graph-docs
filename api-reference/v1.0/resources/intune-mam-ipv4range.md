@@ -1,7 +1,7 @@
 ---
 title: "iPv4Range resource type"
 description: "IPv4 Range definition."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -41,6 +41,9 @@ Here is a JSON representation of the resource.
   "upperAddress": "String"
 }
 ```
+
+
+
 
 
 

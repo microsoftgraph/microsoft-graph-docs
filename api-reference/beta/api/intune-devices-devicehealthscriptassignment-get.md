@@ -1,7 +1,7 @@
 ---
 title: "Get deviceHealthScriptAssignment"
 description: "Read properties and relationships of the deviceHealthScriptAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,24 +63,25 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 363
+Content-Length: 451
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
     "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
     },
     "runRemediationScript": true,
     "runSchedule": {
-      "@odata.type": "microsoft.graph.runSchedule"
+      "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+      "interval": 8,
+      "useUtc": true,
+      "time": "11:58:36.2550000"
     }
   }
 }
 ```
-
-
 
 
 

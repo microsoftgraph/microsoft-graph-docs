@@ -1,7 +1,7 @@
 ---
 title: "List mobileAppInstallStatuses"
 description: "List properties and relationships of the mobileAppInstallStatus objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -84,8 +84,6 @@ Content-Length: 693
   ]
 }
 ```
-
-
 
 
 

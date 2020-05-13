@@ -1,7 +1,7 @@
 ---
 title: "Update userExperienceAnalyticsDeviceStartupHistory"
 description: "Update the properties of a userExperienceAnalyticsDeviceStartupHistory object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -120,8 +120,6 @@ Content-Length: 582
   "operatingSystemVersion": "Operating System Version value"
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "vpnLocalIdentifier enum type"
 description: "The type of VPN local identifier"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

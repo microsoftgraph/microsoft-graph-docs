@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionResourceCollection resource type"
 description: "Windows Information Protection Resource Collection"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

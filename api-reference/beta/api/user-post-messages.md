@@ -2,8 +2,8 @@
 title: "Create Message"
 description: "Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "svpsiva"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Get userAccountInformation"
-description: "Retrieve the properties and relationships of useraccountinformation object."
+description: "Retrieve the properties and relationships of userAccountInformation object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "Profile"
@@ -40,8 +40,8 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          |Description                |
+|:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
 
 ## Request body

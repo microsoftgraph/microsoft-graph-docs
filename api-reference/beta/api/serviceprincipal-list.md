@@ -3,8 +3,8 @@ title: "List servicePrincipals"
 description: "Retrieve a list of servicePrincipal objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "sureshja"
 ---
 
 # List servicePrincipals

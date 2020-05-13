@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtection resource type"
 description: "Policy for Windows information protection to configure detailed management settings"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -201,6 +201,9 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
+
+
+
 
 
 

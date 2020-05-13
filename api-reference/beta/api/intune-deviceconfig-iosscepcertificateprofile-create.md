@@ -1,7 +1,7 @@
 ---
 title: "Create iosScepCertificateProfile"
 description: "Create a new iosScepCertificateProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -217,8 +217,6 @@ Content-Length: 2104
   ]
 }
 ```
-
-
 
 
 

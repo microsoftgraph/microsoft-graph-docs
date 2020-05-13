@@ -1,10 +1,10 @@
 ---
 title: "passwordCredential resource type"
-description: "Contains a password credential associated with an application or a service principal. The **passwordCredentials** property of the servicePrincipal entity and of the application entity is a collection of **passwordCredential**."
+description: "Contains a password credential associated with an application or a service principal."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # passwordCredential resource type

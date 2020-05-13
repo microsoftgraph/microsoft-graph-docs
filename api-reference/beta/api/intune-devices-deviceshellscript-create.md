@@ -1,7 +1,7 @@
 ---
 title: "Create deviceShellScript"
 description: "Create a new deviceShellScript object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -48,6 +48,9 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
+|executionFrequency|Duration|The interval for script to run. If not defined the script will run once|
+|retryCount|Int32|Number of times for the script to be retried if it fails|
+|blockExecutionNotifications|Boolean|Does not notify the user a script is being executed|
 |id|String|Unique Identifier for the device management script.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
@@ -70,10 +73,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts
 Content-type: application/json
-Content-length: 305
+Content-length: 409
 
 {
   "@odata.type": "#microsoft.graph.deviceShellScript",
+  "executionFrequency": "PT2M43.444327S",
+  "retryCount": 10,
+  "blockExecutionNotifications": true,
   "displayName": "Display Name value",
   "description": "Description value",
   "scriptContent": "c2NyaXB0Q29udGVudA==",
@@ -90,10 +96,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 477
+Content-Length: 581
 
 {
   "@odata.type": "#microsoft.graph.deviceShellScript",
+  "executionFrequency": "PT2M43.444327S",
+  "retryCount": 10,
+  "blockExecutionNotifications": true,
   "id": "ca9e0ad8-0ad8-ca9e-d80a-9ecad80a9eca",
   "displayName": "Display Name value",
   "description": "Description value",
@@ -107,8 +116,6 @@ Content-Length: 477
   ]
 }
 ```
-
-
 
 
 

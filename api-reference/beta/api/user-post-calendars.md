@@ -1,9 +1,9 @@
 ---
 title: "Create Calendar"
 description: "Use this API to create a new calendar for a user."
-author: "dkershaw10"
+author: "harini84"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -94,6 +94,7 @@ Content-type: application/json
     "color":"auto",
     "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+    "calendarGroupId":null,
     "canShare":true,
     "canViewPrivateItems":true,
     "hexColor": "",

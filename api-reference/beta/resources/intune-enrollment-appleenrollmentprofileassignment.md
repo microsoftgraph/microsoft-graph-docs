@@ -1,7 +1,7 @@
 ---
 title: "appleEnrollmentProfileAssignment resource type"
 description: "An assignment of an Apple profile."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -48,7 +48,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.appleEnrollmentProfileAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```

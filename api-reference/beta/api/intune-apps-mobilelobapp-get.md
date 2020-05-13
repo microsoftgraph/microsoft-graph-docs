@@ -1,7 +1,7 @@
 ---
 title: "Get mobileLobApp"
 description: "Read properties and relationships of the mobileLobApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -100,8 +100,6 @@ Content-Length: 1071
   }
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "List deleted items owned by a user"
 description: "Retrieves a list of recently deleted items owned by the specified user.  "
-author: "davidmu1"
+author: "keylimesoda"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

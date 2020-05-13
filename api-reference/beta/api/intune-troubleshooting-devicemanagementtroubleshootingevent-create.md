@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementTroubleshootingEvent"
 description: "Create a new deviceManagementTroubleshootingEvent object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -134,8 +134,6 @@ Content-Length: 901
   ]
 }
 ```
-
-
 
 
 

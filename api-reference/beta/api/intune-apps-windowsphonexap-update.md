@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhoneXAP"
 description: "Update the properties of a windowsPhoneXAP object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -184,8 +184,6 @@ Content-Length: 1409
   "identityVersion": "Identity Version value"
 }
 ```
-
-
 
 
 

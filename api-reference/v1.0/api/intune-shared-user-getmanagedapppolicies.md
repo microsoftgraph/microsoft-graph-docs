@@ -1,7 +1,7 @@
 ---
 title: "getManagedAppPolicies function"
 description: "Gets app restrictions for a given user."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -77,6 +77,8 @@ Content-Length: 401
   ]
 }
 ```
+
+
 
 
 

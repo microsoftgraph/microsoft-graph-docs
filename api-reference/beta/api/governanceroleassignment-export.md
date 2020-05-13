@@ -3,8 +3,8 @@ title: "Export governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests in the format `application/octet-stream`, which can be parsed as a .csv file in the browser."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # Export governanceRoleAssignmentRequests
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | PrivilegedAccess.Read.AzureResources |
 
 
 ## HTTP request

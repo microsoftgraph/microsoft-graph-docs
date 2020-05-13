@@ -38,13 +38,13 @@ GET /users/{id|userPrincipalName}/profile/positions/{id}
 
 This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-|Name            |Value    |Description                                                                                                                                                                 |
-|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Limits the response to only those objects which contain the specified criteria.                                                                                             |
+|Name            |Value    |Description                                                                                                                                                                      |
+|:---------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|$filter         |string   |Limits the response to only those objects which contain the specified criteria.                                                                                                  |
 |$orderby        |string   |By default, the objects in the response are sorted by their **createdDateTime** value in a query. You can change the order of the of the response using the `$orderby` parameter.|
-|$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                        |
-|$skip           |int      |Skip the first n results, useful for paging.                                                                                                                                |
-|$top            |int      |Number of results to be returned.                                                                                                                                           |
+|$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                             |
+|$skip           |int      |Skip the first n results, useful for paging.                                                                                                                                     |
+|$top            |int      |Number of results to be returned.                                                                                                                                                |
 
 ## Request headers
 

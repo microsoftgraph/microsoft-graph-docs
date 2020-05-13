@@ -2,7 +2,7 @@
 title: "List extensionProperties"
 description: "Retrieve a list of extensionproperty objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

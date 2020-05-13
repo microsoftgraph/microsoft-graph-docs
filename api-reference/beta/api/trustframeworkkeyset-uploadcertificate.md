@@ -2,7 +2,7 @@
 title: "trustFrameworkKeySet: uploadCertificate"
 description: "Upload a certificate to a keyset."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

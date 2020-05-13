@@ -77,7 +77,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/languages/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

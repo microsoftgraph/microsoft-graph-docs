@@ -1,7 +1,7 @@
 ---
 title: "exportMobileConfig function"
 description: "Exports the mobile configuration"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -66,8 +66,6 @@ Content-Length: 45
   "value": "Export Mobile Config value"
 }
 ```
-
-
 
 
 

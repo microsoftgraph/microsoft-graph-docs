@@ -1,7 +1,7 @@
 ---
 title: "Update windowsDomainJoinConfiguration"
 description: "Update the properties of a windowsDomainJoinConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -124,8 +124,6 @@ Content-Length: 521
   "activeDirectoryDomainName": "Active Directory Domain Name value"
 }
 ```
-
-
 
 
 

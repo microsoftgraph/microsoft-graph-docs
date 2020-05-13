@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhone81CertificateProfileBase"
 description: "Read properties and relationships of the windowsPhone81CertificateProfileBase object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -115,8 +115,6 @@ Content-Length: 1783
   }
 }
 ```
-
-
 
 
 

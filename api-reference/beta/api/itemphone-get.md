@@ -1,6 +1,6 @@
 ---
 title: "Get itemPhone"
-description: "Retrieve the properties and relationships of an itemphone object."
+description: "Retrieve the properties and relationships of an itemPhone object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/me/profile/phones/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -1,7 +1,7 @@
 ---
 title: "Get managedAndroidStoreApp"
 description: "Read properties and relationships of the managedAndroidStoreApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -118,8 +118,6 @@ Content-Length: 1547
   }
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "List deviceComplianceUserStatuses"
 description: "List properties and relationships of the deviceComplianceUserStatus objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -76,8 +76,6 @@ Content-Length: 397
   ]
 }
 ```
-
-
 
 
 

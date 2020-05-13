@@ -17,14 +17,21 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 ## Methods
 
-|  Method       |  Return Type  | Description|
-|:---------------|:--------|:----------|
-|[List chats](../api/chat-list.md) | [chat](channel.md) collection | Get the list of chats a user is part of.|
-|[Get chat](../api/chat-get.md) | [chat](channel.md) | Read properties and relationships of the chat.|
-|[List chat members](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) collection | Get the list of all users in the chat.|
-|[Get chat member](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat.|
-|[List messages in a chat](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a 1:1 or group chat. |
-|[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
+|  Method       |  Return Type  | Description| Permissions |
+|:---------------|:--------|:----------|-----------|
+|[List chats](../api/chat-list.md) | [chat](channel.md) collection | Get the list of chats a user is part of.| **Delegated only** |
+|[Get chat](../api/chat-get.md) | [chat](channel.md) | Read properties and relationships of the chat.| Delegated and application |
+|[List chat members](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) collection | Get the list of all users in the chat.| Delegated and application (see below) |
+|[Get chat member](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat.| Delegated and application (see note) |
+|[List messages in a chat](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a 1:1 or group chat. | Delegated and application (see note) |
+|[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. | Delegated and application (see note) |
+
+> **Note:** 
+When using application permissions, be sure you know how you're going to get the chat ID. 
+Because listing chats with application permissions is not supported, 
+not all scenarios are possible. 
+It is possible to get chat IDs with delegated permissions,
+and from [change notifications for /chats/allMessages](../api/subscription-post-subscriptions.md) with application permissions.
 
 ## Properties
 

@@ -4,7 +4,7 @@ description: "Contains a key credential associated with an application or a serv
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # keyCredential resource type

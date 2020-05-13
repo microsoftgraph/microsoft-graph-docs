@@ -2,7 +2,7 @@
 title: "group resource type"
 description: "Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, or a security group. "
 localization_priority: Priority
-author: "dkershaw10" 
+author: "yyuank" 
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -164,7 +164,7 @@ Here's what each **visibility** property value means:
 |members|[directoryObject](directoryobject.md) collection| Users and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups) Nullable.|
 |membersWithLicenseErrors|[User](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
 |onenote|[Onenote](onenote.md)| Read-only.|
-|owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 10 owners. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups). Nullable.|
+|owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 100 owners. HTTP Methods: GET (supported for all groups), POST (supported for Office 365 groups, security groups and mail-enabled security groups), DELETE (supported for Office 365 groups and security groups). Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
 |planner|[plannerGroup](plannergroup.md)| Entry-point to Planner resource that might exist for a Unified Group.|

@@ -1,9 +1,9 @@
 ---
 title: "List ownedDevices"
 description: "Get the list of devices that are owned by the user."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 

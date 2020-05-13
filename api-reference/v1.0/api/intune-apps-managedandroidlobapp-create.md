@@ -1,7 +1,7 @@
 ---
 title: "Create managedAndroidLobApp"
 description: "Create a new managedAndroidLobApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -171,6 +171,8 @@ Content-Length: 1325
   "versionCode": "Version Code value"
 }
 ```
+
+
 
 
 

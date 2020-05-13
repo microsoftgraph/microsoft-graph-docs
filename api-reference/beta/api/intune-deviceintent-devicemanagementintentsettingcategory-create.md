@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementIntentSettingCategory"
 description: "Create a new deviceManagementIntentSettingCategory object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -87,8 +87,6 @@ Content-Length: 199
   "hasRequiredSetting": true
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Update termsAndConditions"
 description: "Update the properties of a termsAndConditions object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -102,6 +102,8 @@ Content-Length: 445
   "version": 7
 }
 ```
+
+
 
 
 

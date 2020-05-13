@@ -1,9 +1,9 @@
 ---
 title: "groupSettingTemplate resource type"
-description: "Group setting templates represent system-defined settings available to the tenant. Group settings can be created based on the available **groupSettingTemplates**, and values changed from their preset defaults. Group setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific group settings. Currently, the only templates available apply to Office 365 groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group."
+description: "Group setting templates represent system-defined settings available to the tenant."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "yyuank"
+ms.prod: "groups"
 doc_type: resourcePageType
 ---
 

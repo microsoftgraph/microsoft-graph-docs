@@ -1,7 +1,7 @@
 ---
 title: "androidMobileAppIdentifier resource type"
 description: "The identifier for an Android app."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType

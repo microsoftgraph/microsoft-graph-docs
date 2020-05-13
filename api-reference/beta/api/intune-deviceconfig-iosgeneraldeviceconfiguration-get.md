@@ -1,7 +1,7 @@
 ---
 title: "Get iosGeneralDeviceConfiguration"
 description: "Read properties and relationships of the iosGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -361,8 +361,6 @@ Content-Length: 11287
   }
 }
 ```
-
-
 
 
 

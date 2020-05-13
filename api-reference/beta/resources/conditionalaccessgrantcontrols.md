@@ -2,7 +2,7 @@
 title: "conditionalAccessGrantControls resource type"
 description: "Represents grant controls that must be fulfilled to pass the policy."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

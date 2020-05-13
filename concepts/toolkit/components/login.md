@@ -13,11 +13,11 @@ A Login component is a button and flyout control to facilitate Microsoft identit
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/scb9muh4)
+The following example shows the `mgt-login` component with a signed-in user. 
 
-```html
-<mgt-login></mgt-login>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-login--login&source=docs" height="350"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
 
 ## Using the control without an authentication provider
 
@@ -33,8 +33,8 @@ The following example sets the person details.
 let loginControl = document.getElementById('myLoginControl');
 loginControl.userDetails = {
     displayName: 'Nikola Metulev',
-    email: 'nikola@contoso.com',
-    profileImage: 'url'
+    mail: 'nikola@contoso.com',
+    personImage: 'url'
 }
 ```
 
@@ -84,3 +84,26 @@ This component uses the [Person component](./person.md) to display the user and 
 ## Authentication
 
 The login control uses the global authentication provider described in the [authentication documentation](./../providers.md). 
+
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
+
+| Method | Description |
+| - | - |
+| renderButton | Renders the button chrome. |
+| renderButtonContent | Renders the button content. |
+| renderFlyout | Renders the flyout chrome. |
+| renderFlyoutContent | Renders the flyout content. |
+
+### Bring your own flyout
+
+It is possible to use your own flyout component in place of the built-in one, by overriding the `renderFlyout()` method and providing the new flyout.
+
+In this case, ensure the login component continues to work as expected by overriding the `protected` flyout display methods to update the visibility of your alternative flyout.
+
+| Method | Description |
+| - | - |
+| hideFlyout | Dismisses the flyout. |
+| showFlyout | Displays the flyout. |
+| toggleFlyout | Toggles the state of the flyout. |

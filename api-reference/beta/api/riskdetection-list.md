@@ -2,7 +2,7 @@
 title: "List riskDetection"
 description: "Retrieve the properties of a collection of **riskDetection** object."
 localization_priority: Normal
-author: "davidmu1"
+author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

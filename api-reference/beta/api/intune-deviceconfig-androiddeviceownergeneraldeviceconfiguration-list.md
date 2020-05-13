@@ -1,7 +1,7 @@
 ---
 title: "List androidDeviceOwnerGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5047
+Content-Length: 5148
 
 {
   "value": [
@@ -108,6 +108,8 @@ Content-Length: 5047
       "cameraBlocked": true,
       "cellularBlockWiFiTethering": true,
       "certificateCredentialConfigurationDisabled": true,
+      "microsoftLauncherConfigurationEnabled": true,
+      "enrollmentProfile": "dedicatedDevice",
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
       "factoryResetDeviceAdministratorEmails": [
@@ -187,8 +189,6 @@ Content-Length: 5047
   ]
 }
 ```
-
-
 
 
 

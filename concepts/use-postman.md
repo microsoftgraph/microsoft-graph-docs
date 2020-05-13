@@ -17,30 +17,7 @@ This article explains how to get up and running with Postman and Microsoft Graph
 You can access the collection in Postman in two ways: by consuming it or by contributing to it. You will need to have [Postman](https://www.getpostman.com/) running on your computer first.
 
 ### Consume the collection
-Consuming the collection is the easiest way to get started with Microsoft Graph APIs. The [Postman sharing link](https://www.getpostman.com/collections/d89a737b5f0c0825898a) will launch Postman.
-
-The advantage to using the shared collection is that new requests will automatically show for you without any additional steps.
-
-After you have the collection, you'll need to set up the environment variables:
-
-1. Choose **File | Import ...**.
-2. Select **Import From Link**.
-3. Copy and paste the following URL and choose **Import**.
- 
-    ```
-    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json
-    ```
-
-You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to  [set up your environment](#using-the-collection).
-
-### Contribute to the collection
-If you want to contribute your own requests, you will need to fork the [Microsoft Graph Postman collections](https://github.com/microsoftgraph/microsoftgraph-postman-collections) github repo. 
-
-For details about how to do this, watch the following video.
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/4tg-OBdv_8o]
-
-To import the Postman collections:
+Consuming the collection is the easiest way to get started with Microsoft Graph APIs. To import the Postman collections:
 
 1. Download and register for [Postman](https://www.getpostman.com/).
 2. Choose **File | Import ...**.
@@ -56,7 +33,7 @@ To import the Postman collections:
 
     ```
 
-You should now see the **Microsoft Graph** collection on the **Collections** pane.
+You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to  [set up your environment](#using-the-collection).
 
 ## Using the collection
 After you have the **Microsoft Graph** collection and the **Microsoftr Graph environment** in Postman, follow these steps.
@@ -100,3 +77,11 @@ If you don't want to store user names and passwords in environment variables tha
 6. Copy the access token, open your environment variables, and paste it into the **UserAccessToken** field.
 
 Now all your requests will work.
+
+
+### Contribute to the collection
+If you want to contribute your own requests, you will need to fork the [Microsoft Graph Postman collections](https://github.com/microsoftgraph/microsoftgraph-postman-collections) github repo. 
+
+For details about how to do this, watch the following video.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/4tg-OBdv_8o]

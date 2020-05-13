@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceRemoteAction enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -29,6 +29,7 @@ Not yet documented
 |customTextNotification|6|Not yet documented|
 |rebootNow|7|Not yet documented|
 |setDeviceName|8|Not yet documented|
+|syncDevice|9|Not yet documented|
 
 
 

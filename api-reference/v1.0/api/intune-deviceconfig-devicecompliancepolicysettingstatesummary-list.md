@@ -1,7 +1,7 @@
 ---
 title: "List deviceCompliancePolicySettingStateSummaries"
 description: "List properties and relationships of the deviceCompliancePolicySettingStateSummary objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -79,6 +79,8 @@ Content-Length: 521
   ]
 }
 ```
+
+
 
 
 

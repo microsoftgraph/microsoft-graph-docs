@@ -1,7 +1,7 @@
 ---
 title: "Create windows10SecureAssessmentConfiguration"
 description: "Create a new windows10SecureAssessmentConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -107,6 +107,8 @@ Content-Length: 531
   "allowTextSuggestion": true
 }
 ```
+
+
 
 
 

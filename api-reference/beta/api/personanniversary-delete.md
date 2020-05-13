@@ -77,7 +77,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

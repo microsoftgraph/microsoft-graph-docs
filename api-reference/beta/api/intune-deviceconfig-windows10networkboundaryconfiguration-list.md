@@ -1,7 +1,7 @@
 ---
 title: "List windows10NetworkBoundaryConfigurations"
 description: "List properties and relationships of the windows10NetworkBoundaryConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2474
+Content-Length: 2368
 
 {
   "value": [
@@ -112,9 +112,7 @@ Content-Length: 2474
         ],
         "enterpriseIPRanges": [
           {
-            "@odata.type": "microsoft.graph.iPv6Range",
-            "lowerAddress": "Lower Address value",
-            "upperAddress": "Upper Address value"
+            "@odata.type": "microsoft.graph.ipRange"
           }
         ],
         "enterpriseInternalProxyServers": [
@@ -133,8 +131,6 @@ Content-Length: 2474
   ]
 }
 ```
-
-
 
 
 

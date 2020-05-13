@@ -1,7 +1,7 @@
 ---
 title: "certificateIssuanceStates enum type"
 description: "Certificate Issuance State Options."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType

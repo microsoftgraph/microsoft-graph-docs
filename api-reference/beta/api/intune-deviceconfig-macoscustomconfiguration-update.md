@@ -1,7 +1,7 @@
 ---
 title: "Update macOSCustomConfiguration"
 description: "Update the properties of a macOSCustomConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -160,8 +160,6 @@ Content-Length: 1318
   "payload": "cGF5bG9hZA=="
 }
 ```
-
-
 
 
 

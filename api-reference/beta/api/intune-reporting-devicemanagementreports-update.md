@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementReports"
 description: "Update the properties of a deviceManagementReports object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -81,8 +81,6 @@ Content-Length: 114
   "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
 }
 ```
-
-
 
 
 

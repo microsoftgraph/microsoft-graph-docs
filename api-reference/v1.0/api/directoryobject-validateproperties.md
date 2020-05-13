@@ -2,7 +2,7 @@
 title: "directoryObject: validateProperties"
 description: "Validate that an Office 365 group's display name or mail nickname complies with naming policies."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

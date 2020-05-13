@@ -53,6 +53,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
+  "following": [{"@odata.type": "microsoft.graph.driveItem"}],
   "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "string (timestamp)",
@@ -93,6 +94,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 | Relationship | Type                                 | Description
 |:-------------|:-------------------------------------|:-----------------------
+| following    | [DriveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
 | items        | [DriveItem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
 | root         | [DriveItem](driveitem.md)            | The root folder of the drive. Read-only.
 | special      | [DriveItem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
@@ -106,10 +108,11 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | [Get root folder for user's default Drive][item-get]       | `GET /drive/root`           |
 | [List children under the Drive][item-children]             | `GET /drive/root/children`  |
 | [List changes for all Items in the Drive][item-changes]    | `GET /drive/root/delta`     |
+| [List user's followed driveItems][drive-following]         | `Get /drive/followed`       |
 | [Search for Items in the Drive][item-search]               | `GET /drive/root/search`    |
 | [Access special folder](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
-In the previous table, the examples use `/drive`, but other pathes are valid too.
+In the previous table, the examples use `/drive`, but other paths are valid too.
 
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
@@ -120,6 +123,7 @@ In the previous table, the examples use `/drive`, but other pathes are valid too
 [item-changes]: ../api/driveitem-delta.md
 [item-search]: ../api/driveitem-search.md
 [item-children]: ../api/driveitem-list-children.md
+[drive-following]: ../api/drive-list-following.md
 
 
 <!-- {

@@ -1,7 +1,7 @@
 ---
 title: "List windows10GeneralConfigurations"
 description: "List properties and relationships of the windows10GeneralConfiguration objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -300,6 +300,8 @@ Content-Length: 10959
   ]
 }
 ```
+
+
 
 
 

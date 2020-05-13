@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkNineWorkEasConfiguration"
 description: "Update the properties of a androidForWorkNineWorkEasConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -178,8 +178,6 @@ Content-Length: 1511
   "syncTasks": true
 }
 ```
-
-
 
 
 

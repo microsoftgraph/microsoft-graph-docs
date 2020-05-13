@@ -2,7 +2,7 @@
 title: "Update calendar"
 description: "Update the properties of a calendar object. The calendar can be one for a user, "
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -61,7 +61,7 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example updates the name of the signed-in user's default calendar.
 
 # [HTTP](#tab/http)
@@ -95,7 +95,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -116,6 +116,12 @@ Content-type: application/json
     "canShare":true,
     "canViewPrivateItems":true,
     "canEdit":true,
+    "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+    "defaultOnlineMeetingProvider": "teamsForBusiness",
+    "isTallyingResponses": true,
+    "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"

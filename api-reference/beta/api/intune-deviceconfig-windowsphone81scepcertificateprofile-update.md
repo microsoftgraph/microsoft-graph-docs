@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81SCEPCertificateProfile"
 description: "Update the properties of a windowsPhone81SCEPCertificateProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -206,8 +206,6 @@ Content-Length: 1977
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
-
 
 
 

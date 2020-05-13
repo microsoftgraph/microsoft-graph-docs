@@ -1,7 +1,7 @@
 ---
 title: "androidWorkProfileCertificateProfileBase resource type"
 description: "Android Work Profile certificate profile base."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Android Work Profile certificate profile base.
 
 
-Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
+Inherits from [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)
 
 ## Methods
 |Method|Return Type|Description|

@@ -3,7 +3,7 @@ title: "stringKeyObjectValuePair resource type"
 description: "Represents a key-value pair where the key is a string and the value is an arbitrary JSON object. This is an OData open type that expects to have a property named `value` that is a valid JSON object."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
