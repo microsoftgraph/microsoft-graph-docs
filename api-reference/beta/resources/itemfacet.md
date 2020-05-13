@@ -48,31 +48,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "allowedAudiences": "organization",
-  "createdBy": {
-    "device": null,
-    "user": null,
-    "application": {
-        "displayName": "UPA",
-        "id": null
-    }
-  },
-  "createdDateTime": "2020-02-18T16:07:14Z",
-  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "@odata.type": "#microsoft.graph.itemFacet",
+  "id": "String (identifier)",
+  "allowedAudiences": "String",
   "inference": {
-    "confidenceScore": "0.373334442213456",
-    "userHasVerifiedAccuracy": "False"
+    "@odata.type": "microsoft.graph.inferenceData"
   },
-  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {
-    "device": null,
-    "user": null,
-    "application": {
-        "displayName": "UPA",
-        "id": null
-    }
-  },
-  "source": "SharePoint UPA",
+    "@odata.type": "microsoft.graph.identitySet"
+  }
 }
 ```
 
