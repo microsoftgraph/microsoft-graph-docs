@@ -44,7 +44,7 @@ where files are shared, and where tabs are added.
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
-
+|[filesFolder](../api/channel-get-filesFolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
 
 ## JSON representation
 
