@@ -1,5 +1,5 @@
-- name: Reference
-  items:
+name: Reference
+items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
   - name: Get auth tokens
@@ -110,10 +110,18 @@
         href: /graph/sdks/sdk-installation?context=graph/api/1.0
       - name: Create a client
         href: /graph/sdks/create-client?context=graph/api/1.0
+      - name: Customize a client
+        href: /graph/sdks/customize-client?context=graph/api/1.0
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
       - name: Create requests
-        href: /graph/sdks/create-requests?context=graph/api/1.0        
+        href: /graph/sdks/create-requests?context=graph/api/1.0
+      - name: Page through a collection
+        href: /graph/sdks/paging?context=graph/api/1.0
+      - name: Create a batch request
+        href: /graph/sdks/batch-requests?context=graph/api/1.0
+      - name: Upload large files
+        href: /graph/sdks/large-file-upload?context=graph/api/1.0
   - name: Use the toolkit
     items:
       - name: Toolkit overview
@@ -214,7 +222,7 @@
         - name: List contacts
           href: api/user-list-contacts.md
         - name: List contact folders
-          href: api/user-list-contactfolders.md      
+          href: api/user-list-contactfolders.md
       - name: Directory objects
         href: resources/directoryobject.md
         items:
@@ -235,7 +243,7 @@
         - name: List created objects
           href: api/user-list-createdobjects.md
         - name: List license details
-          href: api/user-list-licensedetails.md 
+          href: api/user-list-licensedetails.md
         - name: List owned devices
           href: api/user-list-owneddevices.md
         - name: List owned objects
@@ -243,9 +251,9 @@
         - name: List registered devices
           href: api/user-list-registereddevices.md
         - name: Reprocess license assignment
-          href: api/user-reprocesslicenseassignment.md 
+          href: api/user-reprocesslicenseassignment.md
         - name: Revoke sign-in session
-          href: api/user-revokesigninsessions.md  
+          href: api/user-revokesigninsessions.md
       - name: Drive
         href: resources/drive.md
         items:
@@ -280,7 +288,7 @@
           - name: Get settings
             href: api/usersettings-get.md
           - name: Update settings
-            href: api/usersettings-update.md     
+            href: api/usersettings-update.md
       - name: Mail
         href: resources/message.md
         items:
@@ -295,7 +303,7 @@
         - name: Get mail tips
           href: api/user-getmailtips.md
         - name: List mail folders
-          href: api/user-list-mailfolders.md 
+          href: api/user-list-mailfolders.md
         - name: List messages
           href: api/user-list-messages.md
         - name: List overrides
@@ -303,14 +311,14 @@
         - name: List rules
           href: api/mailfolder-list-messagerules.md
         - name: Send mail
-          href: api/user-sendmail.md 
+          href: api/user-sendmail.md
       - name: Notes
         href: resources/onenote.md
         items:
         - name: Create notebook
           href: api/onenote-post-notebooks.md
         - name: List notebooks
-          href: api/onenote-list-notebooks.md  
+          href: api/onenote-list-notebooks.md
       - name: Org hierarchy
         href: resources/organization.md
         items:
@@ -793,7 +801,7 @@
         - name: Transfer
           href: api/call-transfer.md
         - name: Keep alive
-          href: api/call-keepalive.md          
+          href: api/call-keepalive.md
         - name: IVR scenarios
           href: resources/calls-api-ivr-overview.md
           items:
@@ -832,7 +840,7 @@
         - name: Get
           href: api/onlinemeeting-get.md
         - name: Delete
-          href: api/onlinemeeting-delete.md             
+          href: api/onlinemeeting-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -3255,7 +3263,7 @@
         - name: Check in files
           href: api/driveitem-checkin.md
         - name: Check out files
-          href: api/driveitem-checkout.md 
+          href: api/driveitem-checkout.md
         - name: Create folder
           href: api/driveitem-post-children.md
         - name: Update item
@@ -3586,7 +3594,7 @@
           href: resources/directoryobject.md
           items:
           - name: List direct reports
-            href: api/orgcontact-list-directreports.md  
+            href: api/orgcontact-list-directreports.md
           - name: List memberOf
             href: api/orgcontact-list-memberof.md
           - name: Get manager
@@ -3630,7 +3638,7 @@
           - name: List
             href: api/tokenissuancepolicy-list.md
           - name: Create
-            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md          
+            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
           - name: Get
             href: api/tokenissuancepolicy-get.md
           - name: Update
@@ -4462,6 +4470,17 @@
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
+      - name: Chat message
+        href: resources/chatmessage.md
+        items:
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
       - name: App Catalog
         href: resources/teamsapp.md
         items:

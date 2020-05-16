@@ -1,5 +1,5 @@
-- name: Reference
-  items:
+name: Reference
+items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
   - name: Get auth tokens
@@ -112,10 +112,18 @@
         href: /graph/sdks/sdk-installation?context=graph/api/beta
       - name: Create a client
         href: /graph/sdks/create-client?context=graph/api/beta
+      - name: Customize a client
+        href: /graph/sdks/customize-client?context=graph/api/beta
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
       - name: Create requests
         href: /graph/sdks/create-requests?context=graph/api/beta
+      - name: Page through a collection
+        href: /graph/sdks/paging?context=graph/api/beta
+      - name: Create a batch request
+        href: /graph/sdks/batch-requests?context=graph/api/beta
+      - name: Upload large files
+        href: /graph/sdks/large-file-upload?context=graph/api/beta
   - name: Use the toolkit
     items:
       - name: Toolkit overview
@@ -390,7 +398,7 @@
           href: api/planneruser-update.md
       - name: Profile (preview)
         items:
-        - name: Profile 
+        - name: Profile
           href: resources/profile.md
         - name: Get user's profile
           href: api/profile-get.md
@@ -429,6 +437,8 @@
           href: api/group-post-groups.md
         - name: Delete group
           href: api/group-delete.md
+        - name: Evaluate dynamic membership
+          href: api/group-evaluatedynamicmembership.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Get delta
@@ -682,7 +692,7 @@
         - name: Add attachment
           href: api/event-post-attachments.md
         - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md          
+          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -8474,7 +8484,7 @@
         - name: Check in files
           href: api/driveitem-checkin.md
         - name: Check out files
-          href: api/driveitem-checkout.md 
+          href: api/driveitem-checkout.md
         - name: Create folder
           href: api/driveitem-post-children.md
         - name: Update item
@@ -8949,7 +8959,7 @@
           - name: List provisioning
             href: api/provisioningobjectsummary-list.md
       - name: Authentication methods
-        items: 
+        items:
         - name: Overview
           href: resources/authenticationmethods-overview.md
         - name: Authentication method
@@ -9720,15 +9730,15 @@
         - name: Role assignment multiple
           href: resources/unifiedroleassignmentmultiple.md
           items:
-          - name: List 
+          - name: List
             href: api/unifiedroleassignmentmultiple-list.md
-          - name: Create 
+          - name: Create
             href: api/unifiedroleassignmentmultiple-post.md
-          - name: Get 
+          - name: Get
             href: api/unifiedroleassignmentmultiple-get.md
-          - name: Update 
+          - name: Update
             href: api/unifiedroleassignmentmultiple-update.md
-          - name: Delete 
+          - name: Delete
             href: api/unifiedroleassignmentmultiple-delete.md
       - name: Service principal
         href: resources/serviceprincipal.md
@@ -11097,6 +11107,20 @@
       - name: Chat message
         href: resources/chatmessage.md
         items:
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content

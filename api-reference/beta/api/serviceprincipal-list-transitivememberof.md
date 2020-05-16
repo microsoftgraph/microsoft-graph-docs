@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/memberOf
+GET /servicePrincipals/{id}/transitiveMemberOf
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -109,7 +109,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List servicePrincipal memberOf",
+  "description": "List servicePrincipal transitiveMemberOf",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

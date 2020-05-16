@@ -52,7 +52,7 @@ where files are shared, and where tabs are added.
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable. Currently this API only supports reading but will eventually support writing messages too.|
+|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
 |filesFolder|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|

@@ -1,12 +1,12 @@
 ---
-title: "Online meetings overview"
+title: "Use the cloud communications API to create or join online meetings"
 description: "You'll have the flexibility to create a meeting that takes place in the future, or instantaneously"
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 ---
 
-# Online meetings overview
+# Use the cloud communications API to create or join online meetings
 
 Online meetings provide the ability to specify certain details, such as the subject of the meeting, and who all the attendees are. You can also set the date and time for when the meeting starts and ends.
 
@@ -30,3 +30,4 @@ After an online meeting is created, users can join in two ways:
 ## See also
 
 - [Online meeting permissions](/graph/permissions-reference#online-meetings-permissions)
+- [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md)

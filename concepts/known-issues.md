@@ -1,13 +1,17 @@
 ---
 title: "Known issues with Microsoft Graph"
-description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
+description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
 localization_priority: Priority
 ---
 
 # Known issues with Microsoft Graph
 
-This article describes known issues with Microsoft Graph. For information about the latest updates, see the [Microsoft Graph changelog](changelog.md).
+This article describes known issues with Microsoft Graph. 
+
+To report a known issue, see the [Microsoft Graph support](https://developer.microsoft.com/graph/support) page.
+
+For information about the latest updates to the Microsoft Graph API, see the [Microsoft Graph changelog](changelog.md).
 
 ## Bookings
 
