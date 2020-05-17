@@ -173,7 +173,7 @@ None.
 
 #### Delegated
 
-* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings`)
+* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
 
 #### Application
 
@@ -258,9 +258,9 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Bookings.Read.All_ |  Allows an app to read Bookings appointments, businesses, customers, services, and staff on behalf of the signed-in user. | Intended for read-only applications. Typical target user is the customer of a booking business. | No | No |
-| _BookingsAppointment.ReadWrite.All_ | Allows an app to read and write Bookings appointments and customers, and additionally allows reading businesses, services, and staff on behalf of the signed-in user. | Intended for scheduling applications which need to manipulate appointments and customers. Cannot change fundamental information about the booking business, nor its services and staff members. Typical target user is the customer of a booking business.| No | No |
+| _Bookings.ReadWrite.Appointments_ | Allows an app to read and write Bookings appointments and customers, and additionally allows reading businesses, services, and staff on behalf of the signed-in user. | Intended for scheduling applications which need to manipulate appointments and customers. Cannot change fundamental information about the booking business, nor its services and staff members. Typical target user is the customer of a booking business.| No | No |
 | _Bookings.ReadWrite.All_ | Allows an app to read and write Bookings appointments, businesses, customers, services, and staff on behalf of the signed-in user. Does not allow create, delete, or publish of Bookings businesses. | Intended for management applications that manipulate existing businesses, their services and staff members. Cannot create, delete, or change the publishing status of a booking business. Typical target user is the support staff of an organization.| No | No |
-| _Bookings.Manage.All_ | Allows an app to read, write, and manage Bookings appointments, businesses, customers, services, and staff on behalf of the signed-in user.  | Allows the app to have full access. <br>Intended for a full management experience. Typical target user is the administrator of an organization.| No | No |
+| _Bookings.Manage_ | Allows an app to read, write, and manage Bookings appointments, businesses, customers, services, and staff on behalf of the signed-in user.  | Allows the app to have full access. <br>Intended for a full management experience. Typical target user is the administrator of an organization.| No | No |
 
 #### Application permissions
 
@@ -271,9 +271,9 @@ None.
 #### Delegated
 
 * _Bookings.Read.All_: Get the ID and names of the collection of Bookings businesses that has been created for a tenant (`GET /bookingBusinesses`).
-* _BookingsAppointment.ReadWrite.All_: Create an appointment for a service at a Bookings business (`POST /bookingBusinesses/{id}/appointments`).
+* _Bookings.ReadWrite.Appointments_: Create an appointment for a service at a Bookings business (`POST /bookingBusinesses/{id}/appointments`).
 * _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
-* _Bookings.Manage.All_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
+* _Bookings.Manage_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
 
 ## Calendars permissions
 
@@ -316,40 +316,6 @@ Administrators can configure [application access policy](auth-limit-mailbox-acce
 
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-
-## Channel permissions ([private preview](#permissions-availability-status))
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ (private preview)| Read the names and descriptions of channels. | Read channel names and channel descriptions, on behalf of the signed-in user.	| No | No |
-| _Channel.Create_ (private preview)| Create channels. | Create channels in any team, on behalf of the signed-in user.	| Yes | No |
-| _Channel.Delete.All_ (private preview)| Delete channels. | Delete channels in any team, on behalf of the signed-in user.	| Yes | No |
-
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ (private preview)| Read the names and descriptions  of all channels. | Read all channel names and channel descriptions, without a signed-in user.	| Yes | No |
-| _Channel.Create_ (private preview)| Create channels. | Create channels in any team, without a signed-in user.	| Yes | No |
-| _Channel.Delete.All_ (private preview)| Delete channels. | Delete channels in any team, without a signed-in user.	| Yes | No |
-
-## Channel settings permissions ([private preview](#permissions-availability-status))
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings.Read.All_ (private preview)| Read the names, descriptions, and settings of channels. | Read all channel names, channel descriptions, and channel settings, on behalf of the signed-in user.	| Yes | No |
-| _ChannelSettings.ReadWrite.All_ (private preview)| Read and write the names, descriptions, and settings of channels. | Read and write the names, descriptions, and settings of all channels, on behalf of the signed-in user.	| Yes | No |
-
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings.Read.All_ (private preview)| Read the names, descriptions, and settings of all channels. | Read all channel names, channel descriptions, and channel settings, without a signed-in user.	| Yes | No |
-| _ChannelSettings.ReadWrite.All_ (private preview)| Read and write the names, descriptions, and settings of all channels. | Read and write the names, descriptions, and settings of all channels, without a signed-in user.	| Yes | No |
 
 ## Calls permissions
 
@@ -416,22 +382,18 @@ None.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
-## Channel message permissions ([private preview](#permissions-availability-status))
+## Channel message permissions
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMessage.Delete_ (private preview)|Delete user's channel messages |Allows an app to delete channel messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
-|_ChannelMessage.Edit_ (private preview)|Edit user's channel messages |Allows an app to edit channel messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
-|_ChannelMessage.Read.All_ (private preview)|Read user channel messages  |Allows an app to read a channel's messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
-|_ChannelMessage.Send_ (private preview)|Send channel messages |Allows an app to send channel messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
+None.
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_ChannelMessage.Read.All_ |Read all channel messages  |Allows the app to read all channel messages in Microsoft Teams, without a signed-in user. |Yes | No |
+|_ChannelMessage.Send_ |Send channel messages |Allows an app to send channel messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
 |_ChannelMessage.UpdatePolicyViolation.All_ |Flag channel messages for violating policy |Allows the app to update Microsoft Teams channel messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 
 > **Note:** See also [Group.Read.All](#group-permissions).
@@ -452,27 +414,23 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |_ChannelMember.Read.All_ (private preview)|Read the members of all channels. |Read the members of all channels, without a signed-in user. |Yes | No |
 |_ChannelMember.ReadWrite.All_ (private preview)| Add and remove members from all channels. |Add and remove members from all channels, without a signed-in user. Also allows changing a member's role, for example from owner to non-owner. | Yes | No |
 
-## Chats permissions ([private preview](#permissions-availability-status))
+## Chats permissions
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read_ |Read your chat messages  |Allows an app to read your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
-|_Chat.ReadBasic_ (private preview)|Read names and members of user chat threads  |Allows an app to read the members and descriptions of 1:1 and group chats threads, on behalf of the signed-in user. |No | No |
 |_Chat.ReadWrite_ |Read your chat messages and send new ones  |Allows an app to read and send your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
-|_Chat.Send_ (private preview)|Send user chat messages  |Allows an app to send 1:1 and group chat messages in Microsoft Teams, on behalf of the signed-in user. |No | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |Read all chat messages  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
-|_Chat.ReadBasic.All_ (private preview)|Read names and members of user chat threads  |Read names and members of all chat threads. |No | No |
 |_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
-|_Chat.Send.All_ (private preview)|Send user chat messages  |Allows an app to send 1:1 and group chat messages in Microsoft Teams without a signed-in user. |No | No |
 
-> **Note:** For messages in a channel, see [ChannelMessage permissions](#channel-message-permissions-private-preview).
+> **Note:** For messages in a channel, see [ChannelMessage permissions](#channel-message-permissions).
 
 ## Contacts permissions
 
@@ -1378,6 +1336,29 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Resource specific permissions (RSC)
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|TeamSettings.Read.Group | Get the settings for this team.|Allows the app to read this team's settings.| No | No|
+|TeamSettings.Edit.Group|Update the settings for this team.| Allows the app to edit this team's settings.| No | No|
+|ChannelSettings.Read.Group|Get the channel names, channel descriptions, and, channel settings for this team​.|Allows the app to read this team's channel names, channel descriptions, and channel settings.| No | No|
+|ChannelSettings.Edit.Group|Update the channel names, channel descriptions, and channel settings for this team.​|Allows the app to edit this team's channel names, channel descriptions, and channel settings. | No | No|
+|Channel.Create.Group|Create channels for this team.​|Allows the app to create channels for this team. | No | No|
+|Channel.Delete.Group|Delete channels in this team.​| Allows the app to delete this team's channels.| No | No|
+|ChannelMessage.Read.Group |Get this team's channel messages.​| Allows the app to read this team's channel messages.| No | No|
+|TeamsApp.Read.Group|Get a list of this team's installed apps.| Allows the app to read this team's installed apps.| No | No|
+|TeamsTab.Read.Group|Get a list of this team's tabs.|Allows the app to read this team's installed tabs.| No | No|
+|TeamsTab.Create.Group|Create tabs in this team.​| Allows the app to create tabs for this team. | No | No|
+|TeamsTab.Edit.Group|Update this team's tabs.​|Allows the app to edit this team's tabs.| No | No|
+|TeamsTab.Delete.Group|Delete this team's tabs.​|Allows the app to delete this team's tabs.| No | No|
+|Member.Read.Group|Get this team's members.​| Allows the app to read this team's members. | No | No|
+|Owner.Read.Group|Get this team's owners.​| Allows the app to read this team's owners.| No | No|
+
+---
+
 ## Role management permissions
 
 #### Delegated permissions
@@ -1559,36 +1540,6 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
-
-## Team permissions ([private preview](#permissions-availability-status))
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Teams.ReadBasic.All_ (private preview)| Read the names and descriptions of teams | Read the names and descriptions of teams, on behalf of the signed-in user.	| No | No |
-
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Teams.ReadBasic.All_ (private preview)| Get a list of all teams | Get a list of all teams, without a signed-in user.	| Yes | No |
-
-## Team settings permissions ([private preview](#permissions-availability-status))
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsSettings.Read.All_ (private preview)| Read teams' settings | Read this team's settings, on behalf of the signed-in user.	| Yes | No |
-| _TeamsSettings.ReadWrite.All_ (private preview)| Read and change teams' settings | Read and change all teams' settings, on behalf of the signed-in user.	| Yes | No |
-
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsSettings.Read.All_ (private preview)| Read all teams' settings | Read this team's settings, without a signed-in user.	| Yes | No |
-| _TeamsSettings.ReadWrite.All_ (private preview)| Read and change all teams' settings. | Read and change all teams' settings, without a signed-in user.	| Yes | No |
 
 ## Teams activity permissions ([private preview](#permissions-availability-status))
 
