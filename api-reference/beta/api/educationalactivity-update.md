@@ -1,5 +1,5 @@
 ---
-title: "Update educationalactivity"
+title: "Update educationalActivity"
 description: "Update the properties of an educationalActivity object."
 localization_priority: Normal
 author: "kevinbellinger"
