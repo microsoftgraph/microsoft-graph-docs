@@ -7,9 +7,8 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-## primaryChannel
+# primaryChannel
 
-Namespace: microsoft.graph
 
 
 A navigation property of a [team](../resources/team.md) that allows access to its default channel, **General**.

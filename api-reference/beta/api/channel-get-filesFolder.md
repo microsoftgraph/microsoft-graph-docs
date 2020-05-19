@@ -8,7 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get filesFolder
-Namespace: microsoft.graph
+
 
 
 Retrieve the filesFolder navigation path of a [channel](../resources/channel.md). It is the metadata for the location where the channel files are stored.

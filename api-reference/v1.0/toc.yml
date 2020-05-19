@@ -3258,8 +3258,6 @@
           href: api/driveitem-checkout.md 
         - name: Create folder
           href: api/driveitem-post-children.md
-        - name: Get filesFolder
-          href: api/channel-get-filesFolder.md
         - name: Update item
           href: api/driveitem-update.md
         - name: Delete item
@@ -4408,6 +4406,8 @@
           href: api/user-list-joinedteams.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/1.0
+          name: Primary channel
+          href: api/team-primaryChannel.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -4456,16 +4456,16 @@
         items:
         - name: List channels
           href: api/channel-list.md
-        - name: Primary channel
-          href: api/team-primaryChannel.md
         - name: Get channel
-          href: api/channel-get.md
+          href: api/channel-get.md.
         - name: Create channel
           href: api/channel-post.md
         - name: Update channel
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+          name: Get filesFolder
+          href: api/channel-get-filesFolder.md
       - name: App Catalog
         href: resources/teamsapp.md
         items:

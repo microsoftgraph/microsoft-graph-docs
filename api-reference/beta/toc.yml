@@ -8477,8 +8477,6 @@
           href: api/driveitem-checkout.md 
         - name: Create folder
           href: api/driveitem-post-children.md
-        - name: Get filesFolder
-          href: api/channel-get-filesFolder.md
         - name: Update item
           href: api/driveitem-update.md
         - name: Delete item
@@ -11005,6 +11003,8 @@
           href: api/team-get-photo.md
         - name: Update team photo
           href: api/team-update-photo.md
+          name: Primary channel
+          href: api/team-primaryChannel.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -11053,8 +11053,6 @@
         items:
         - name: List channels
           href: api/channel-list.md
-        - name: Primary channel
-          href: api/team-primaryChannel.md
         - name: Create channel
           href: api/channel-post.md
         - name: Get channel
@@ -11083,6 +11081,8 @@
           href: api/conversationmember-delete.md
         - name: Update the role of a member in channel
           href: api/conversationmember-update.md
+          name: Get filesFolder
+          href: api/channel-get-filesFolder.md
       - name: Chat
         href: resources/chat.md
         items:
