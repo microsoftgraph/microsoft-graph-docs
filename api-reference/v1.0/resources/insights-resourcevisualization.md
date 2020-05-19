@@ -80,7 +80,7 @@ Here is a JSON representation of the resource
 Example query:
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-> For `spsite` you may need to sort by `lastUsed/lastAccessedDateTime` desc in order to retrieve valid results
+For `spsite` you may need to sort by `lastUsed/lastAccessedDateTime` desc in order to retrieve valid results
 
 ## containerType property values
 The supported types can differ based on containers from which [officeGraphInsights](officegraphinsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
