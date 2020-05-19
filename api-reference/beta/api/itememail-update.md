@@ -1,5 +1,5 @@
 ---
-title: "Update itememail"
+title: "Update itemEmail"
 description: "Update the properties of an itemEmail object in a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"

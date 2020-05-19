@@ -25,11 +25,18 @@ Represents detailed information about phone numbers associated with a user in va
 
 ## Properties
 
-| Property     | Type        | Description                                                                                                                     |
-|:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String       | Contains a friendly name for the phone number.                                                                                  |
-|number        |String       | Contains the phone number.                                                                                                      |
-|type          |string       | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+| Property             | Type                            | Description                                                                                                                     |
+|:---------------------|:--------------------------------|:--------------------------------------------------------------------------------------------------------------------------------|
+|displayName           |String                           | Contains a friendly name for the phone number.                                                                                  |
+|number                |String                           | Contains the phone number.                                                                                                      |
+|type                  |string                           | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|allowedAudiences      |string                           | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
+|createdBy             |[identitySet](identityset.md)    | When the entity was originally created.                                                                                                                                                        |
+|createdDateTime       |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|id                    |String                           | Read-only.                                                                                                                                                                                     |
+|inference             |[inferenceData](inferencedata.md)| Contains inference detail if the entity is inferred.                                                                                                                                           |
+|lastModifiedBy        |[identitySet](identityset.md)    | Identifier of the partner or user who last modified the entity.                                                                                                                                |
+|lastModifiedDateTime  |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ## Relationships
 

@@ -1,5 +1,5 @@
 ---
-title: "Update itemphone"
+title: "Update itemPhone"
 description: "Update the properties of an itemPhone object."
 localization_priority: Normal
 author: "kevinbellinger"

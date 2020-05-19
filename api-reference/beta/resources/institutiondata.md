@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
   "description": "Our State is Colorado, but Rams are built on a global scale. We unite in Fort Collins, where our diverse backgrounds, cultures, and experiences strengthen our community.",
   "displayName": "Colorado State University",
   "location": null,
-  "webUrl": "https:www.colostate.edu"
+  "webUrl": "https://www.colostate.edu"
 }
 ```
 
