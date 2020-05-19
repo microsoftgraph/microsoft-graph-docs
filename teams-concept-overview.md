@@ -103,12 +103,12 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 
 Looking for the API reference for this service?
 
-See the [Teams API in Microsoft Graph](/graph/api/resources/teams-api-overview?view=graph-rest-1.0).
+See the [Teams API in Microsoft Graph](/graph/api/resources/teams-api-overview?view=graph-rest).
 
 ## Next steps
 
 - Watch the [overview video](https://aka.ms/teamsgraph/v1/video).
-- Learn how to [use the Microsoft Teams API](/graph/api/resources/teams-api-overview?view=graph-rest-1.0).
+- Learn how to [use the Microsoft Teams API](/graph/api/resources/teams-api-overview?view=graph-rest).
 - Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0), and [group](/graph/api/resources/group?view=graph-rest-1.0) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/microsoftteams/platform/concepts/concepts-overview).
