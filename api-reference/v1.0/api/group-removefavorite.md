@@ -10,6 +10,7 @@ doc_type: apiPageType
 # group: removeFavorite
 
 Namespace: microsoft.graph
+
 Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.
 
 ## Permissions

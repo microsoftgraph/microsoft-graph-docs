@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported                               |
 | Application                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **Note:** Application permissions are deprecated and will be removed in July 2020. To create an Outlook event instead, using application permissions, see [Create event](user-post-events.md).
+>**Note:** Creating an online meeting with an application token will be supported in the near future. We will provide additional application policies that will be complementary to the application based permission scope. As of now, we encourage you to use the /me path with a user token
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,6 @@ POST /app/onlineMeetings
 POST /communications/onlineMeetings
 POST /me/onlineMeetings
 ```
-> **Note:** The `/app` or `/communications` path with an application token is deprecated. Going forward, use the /me path with a user token to create online meetings.
 
 ## Request headers
 | Name          | Description               |
@@ -57,9 +56,6 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 ### Example 1: Create an online meeting with application token
 
 #### Request
-
-> [!Note]
-> Online meeting creation using an application token is deprecated and support will be removed in July 2020. Use the /me path with a user token to create online meetings going forward.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -11,22 +11,6 @@ const options = {
 const client = Client.init(options);
 
 const servicePrincipal = {
-  accountEnabled: true,
-  addIns: [
-    {
-      id: "id-value",
-      type: "type-value",
-      properties: [
-        {
-          key: "key-value",
-          value: "value-value"
-        }
-      ]
-    }
-  ],
-  appDisplayName: "appDisplayName-value",
-  appId: "appId-value",
-  appOwnerOrganizationId: "appOwnerOrganizationId-value",
   appRoleAssignmentRequired: true
 };
 

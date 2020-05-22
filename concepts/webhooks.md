@@ -1,6 +1,6 @@
 ---
 title: "Set up notifications for changes in user data"
-description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
+description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
 author: "baywet"
 ms.prod: "non-product-specific"
 localization_priority: Priority
@@ -9,9 +9,9 @@ ms.custom: graphiamtop20
 
 # Set up notifications for changes in user data
 
-The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
+The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
 
-After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
+After Microsoft Graph accepts the subscription request, it pushes change notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
@@ -19,7 +19,7 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
 > [!div class="nextstepaction"]
 > [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
 
-By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with notifications.
+By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
 An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notificatios, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
 
@@ -75,7 +75,7 @@ When the limits are exceeded, attempts to create a subscription will result in a
 
 - Azure AD B2C tenants are not supported.
 
-- Notification for user entities are not supported for personal Microsoft accounts.
+- Changfe notification for user entities are not supported for personal Microsoft accounts.
 
 - A [known issue](known-issues.md#change-notifications) exists with user and group subscriptions.
 
@@ -93,7 +93,7 @@ Use:
 
 Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
 
-Apps can also unsubscribe at any time to stop getting notifications.
+Apps can also unsubscribe at any time to stop getting change notifications.
 
 ## Managing subscriptions
 
@@ -101,7 +101,7 @@ Clients can create subscriptions, renew subscriptions, and delete subscriptions.
 
 ### Creating a subscription
 
-Creating a subscription is the first step to start receiving notifications for a resource. The subscription process is as follows:
+Creating a subscription is the first step to start receiving change notifications for a resource. The subscription process is as follows:
 
 1. The client sends a subscription (POST) request for a specific resource.
 
@@ -114,7 +114,7 @@ Creating a subscription is the first step to start receiving notifications for a
 
 1. The Microsoft Graph sends a response back to the client.
 
-The client must store the subscription ID to correlate notifications with the subscription.
+The client must store the subscription ID to correlate change notifications with the subscription.
 
 #### Subscription request example
 
@@ -134,7 +134,7 @@ The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` proper
 
 The `resource` property specifies the resource that will be monitored for changes. For example, you can create a subscription to a specific mail folder: `me/mailFolders('inbox')/messages` or on behalf of a user given by an administrator  consent: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
-Although `clientState` is not required, you must include it to comply with our recommended notification handling process. Setting this property will allow you to confirm that notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
+Although `clientState` is not required, you must include it to comply with our recommended change notification handling process. Setting this property will allow you to confirm that change notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.
 
@@ -182,7 +182,7 @@ If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/gra
 
 ### Deleting a subscription
 
-The client can stop receiving notifications by deleting the subscription using its ID.
+The client can stop receiving change notifications by deleting the subscription using its ID.
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
@@ -190,25 +190,25 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 If successful, Microsoft Graph returns a `204 No Content` code.
 
-## Notifications
+## Change notifications
 
-The client starts receiving notifications after creating the subscription. Microsoft Graph sends a POST request to the notification URL when the resource changes. Notification are sent only for the changes of the type specified in the subscription, for example, `created`.
+The client starts receiving change notifications after creating the subscription. Microsoft Graph sends a POST request to the notification URL when the resource changes. Change notifications are sent only for the changes of the type specified in the subscription, for example, `created`.
 
-> **Note:** When using multiple subscriptions that monitor the same resource type and use the same notification URL, a POST can be sent that will contain multiple notifications with different subscription IDs. There is no guarantee that all notifications in the POST will belong to a single subscription.
+> **Note:** When using multiple subscriptions that monitor the same resource type and use the same notification URL, a POST can be sent that will contain multiple change notifications with different subscription IDs. There is no guarantee that all change notifications in the POST will belong to a single subscription.
 
 ### Notification properties
 
-The notification object has the following properties:
+The change notification object has the following properties:
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
 | subscriptionId | string | The ID of the subscription that generated the notification. |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
 | clientState | string | The `clientState` property specified in the subscription request (if any). |
-| changeType | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
+| changeType | string | The event type that caused the change notification. For example, `created` on mail receive, or `updated` on marking a message read. |
 | resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |
 | resourceData | object | The content of this property depends on the type of resource being subscribed to. |
-| tenantId | string | The ID of the tenant the notification originated from. |
+| tenantId | string | The ID of the tenant the change notification originated from. |
 
 For example, for Outlook resources, `resourceData` contains the following fields:
 
@@ -219,11 +219,11 @@ For example, for Outlook resources, `resourceData` contains the following fields
 | @odata.etag | string | The HTTP entity tag that represents the version of the object. |
 | id | string | The identifier of the object. |
 
-> **Note:** The `id` value provided in `resourceData` is valid at the time the notification was generated. Some actions, such as moving a message to another folder, may result in the `id` no longer being valid when the notification is processed.
+> **Note:** The `id` value provided in `resourceData` is valid at the time the change notification was generated. Some actions, such as moving a message to another folder, may result in the `id` no longer being valid when the change notification is processed.
 
-### Notification example
+### Change notification example
 
-When the user receives an email, Microsoft Graph sends a notification like the following:
+When the user receives an email, Microsoft Graph sends a change notification like the following:
 
 ```json
 {
@@ -247,23 +247,23 @@ When the user receives an email, Microsoft Graph sends a notification like the f
 }
 ```
 
-Note the `value` field is an array of objects. When there are many queued notifications, Microsoft Graph may send multiple items in a single request. Notifications from different subscriptions can be included in the same notification request.
+Note the `value` field is an array of objects. When there are many queued change notifications, Microsoft Graph may send multiple items in a single request. Change notifications from different subscriptions can be included in the same request.
 
-### Processing the notification
+### Processing the change notification
 
-Each notification received by your app should be processed. The following are the minimum tasks that your app must perform to process a notification:
+Each change notification received by your app should be processed. The following are the minimum tasks that your app must perform to process a change notification:
 
-1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the notification a number of times, for a period of about 4 hours; after that, the notification will be dropped and won't be delivered.
+1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the change notification a number of times, for a period of about 4 hours; after that, the change notification will be dropped and won't be delivered.
 
-    > **Note:** Send a `202 - Accepted` status code as soon as you receive the notification, even before validating its authenticity. You are simply acknowledging the receipt of the notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance.
+    > **Note:** Send a `202 - Accepted` status code as soon as you receive the change notification, even before validating its authenticity. You are simply acknowledging the receipt of the change notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance.
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
-    > **Note:** If this isn't true, you should not consider this a valid notification. It is possible that the notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the notification comes from and take appropriate action.
+    > **Note:** If this isn't true, you should not consider this a valid change notification. It is possible that the change notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
 
 1. Update your application based on your business logic.
 
-Repeat for other notifications in the request.
+Repeat for other change notifications in the request.
 
 ## Code samples
 
@@ -273,6 +273,12 @@ The following code samples are available on GitHub.
 - [Microsoft Graph Webhooks Sample for Node.js](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample)
 - [Microsoft Graph Webhooks Sample for ASP.NET Core](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)
 - [Microsoft Graph Webhooks Sample for Java Spring](https://github.com/microsoftgraph/java-spring-webhooks-sample)
+
+## Firewall configuration
+
+You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
+
+> **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
 ## See also
 

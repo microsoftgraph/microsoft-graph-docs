@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All |
+|Application | TeamSettings.Read.Group ([RSC](https://aka.ms/teams-rsc)), TeamSettings.Edit.Group ([RSC](https://aka.ms/teams-rsc)), Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -45,8 +45,8 @@ This endpoint will return the metadata of the photo. If no size is specified, th
 }-->
 
 ```http
-GET /beta/teams/{id}/photo
-GET /beta/teams/{id}/photo/{size}
+GET /teams/{id}/photo
+GET /teams/{id}/photo/{size}
 ```
 
 ### Get the photo

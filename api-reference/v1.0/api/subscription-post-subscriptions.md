@@ -1,6 +1,6 @@
 ---
 title: "Create subscription"
-description: "Subscribes a listener application to receive notifications when data on the Microsoft Graph changes."
+description: "Subscribes a listener application to receive change notifications when data on the Microsoft Graph changes."
 localization_priority: Priority
 author: "baywet"
 ms.prod: ""
@@ -11,11 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Subscribes a listener application to receive notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
+Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
 
 ## Permissions
 
- Creating a subscription requires read scope to the resource. For example, to get notifications on messages, your app needs the `Mail.Read` permission. 
+ Creating a subscription requires read scope to the resource. For example, to get change notifications on messages, your app needs the `Mail.Read` permission. 
  
  Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,7 +34,7 @@ Subscribes a listener application to receive notifications when the requested ty
 
 > **Note:** There are additional limitations for subscriptions on OneDrive and Outlook items. The limitations apply to creating as well as managing subscriptions (getting, updating, and deleting subscriptions).
 
-- On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
+- On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
 
 - In Outlook, delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. That means, for example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user's mailbox.
 - To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
@@ -65,7 +65,7 @@ If successful, this method returns `201 Created` response code and a [subscripti
 
 ##### Request
 
-Here is an example of the request to send a notification when the user receives a new mail.
+Here is an example of the request to send a change notification when the user receives a new mail.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -15,7 +15,7 @@ var printerShare = new PrinterShare
 	}
 };
 
-await graphClient.Print.PrinterShares
+await graphClient.Print.Shares
 	.Request()
 	.AddAsync(printerShare);
 

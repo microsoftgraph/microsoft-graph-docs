@@ -19,7 +19,7 @@ Represents a printer that is intended to be discoverable by users and printing a
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/print-list-printershares.md) | [printerShare](printershare.md) collection | Get a list of printer shares in the tenant. |
+| [List](../api/print-list-shares.md) | [printerShare](printershare.md) collection | Get a list of printer shares in the tenant. |
 | [Get](../api/printershare-get.md) | [printerShare](printershare.md) | Read properties and relationships of a **printerShare** object. |
 | [Update](../api/printershare-update.md) | [printerShare](printershare.md) | Update a **printerShare** object. |
 | [Delete](../api/printershare-delete.md) | None | Unshare a printer. |
@@ -34,8 +34,15 @@ Represents a printer that is intended to be discoverable by users and printing a
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String| The printerShare's identifier. Read-only.|
-|name|String|The name of the printer share that print clients should display.|
+|displayName|String|The name of the printer share that print clients should display.|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the printer share was created. Read-only.|
+|manufacturer|String|The manufacturer reported by the printer associated with this printer share. Read-only.|
+|model|String|The model name reported by the printer associated with this printer share. Read-only.|
+|isAcceptingJobs|Boolean|Whether the printer associated with this printer share is currently accepting new print jobs.|
+|defaults|[printerDefaults](printerdefaults.md)|The default print settings of the printer associated with this printer share.|
+|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share.|
+|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer associated with this printer share.|
+|status|[printerStatus](printerstatus.md)|The processing status, including any errors, of the printer associated with this printer share. Read-only.|
 
 ## Relationships
 | Relationship | Type        | Description |
@@ -43,6 +50,7 @@ Represents a printer that is intended to be discoverable by users and printing a
 |printer|[printer](printer.md)|The printer that this printer share is related to. |
 |allowedUsers|[printUserIdentity](printuseridentity.md) collection|The users who have access to print using the printer.|
 |allowedGroups|[printIdentity](printidentity.md)|The groups whose users have access to print using the printer.|
+|jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer associated with this printer share.|
 
 ## JSON representation
 

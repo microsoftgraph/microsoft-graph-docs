@@ -11,7 +11,7 @@ String comment = "comment-value";
 boolean sendResponse = true;
 
 graphClient.me().events("{id}")
-	.tentativelyAccept(sendResponse,comment)
+	.tentativelyAccept(null,sendResponse,comment)
 	.buildRequest()
 	.post();
 

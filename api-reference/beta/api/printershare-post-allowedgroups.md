@@ -29,7 +29,7 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /print/printerShares/{id}/allowedGroups/$ref
+POST /print/shares/{id}/allowedGroups/$ref
 ```
 ## Request headers
 | Name          | Description   |
@@ -54,7 +54,7 @@ The following is an example of the request.
   "name": "create_allowedgroup_from_printers"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printerShares/{id}/allowedGroups/$ref
+POST https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/$ref
 Content-type: application/json
 Content-length: 67
 

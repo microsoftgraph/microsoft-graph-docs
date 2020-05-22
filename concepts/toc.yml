@@ -39,6 +39,8 @@ items:
             href: /graph/tutorials/android
           - name: Angular
             href: /graph/tutorials/angular
+          - name: ASP.NET Core
+            href: /graph/tutorials/aspnet-core
           - name: ASP.NET
             href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Microsoft Flow
@@ -91,6 +93,8 @@ items:
             href: outlook-calendar-meeting-proposals.md
           - name: Organize or attend online meetings
             href: outlook-calendar-online-meetings.md
+          - name: Choose an online meeting API
+            href: choose-online-meeting-api.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
           - name: Share or delegate calendar
@@ -115,6 +119,8 @@ items:
             href: cloud-communications-media.md
           - name: Online meetings
             href: cloud-communications-online-meetings.md
+          - name: Choose an online meeting API
+            href: choose-online-meeting-api.md
           - name: Call records (preview)
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
@@ -174,8 +180,12 @@ items:
         href: dynamics-business-central-concept-overview.md
         displayname: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
-        href: azuread-identity-access-management-concept-overview.md
-        displaName: Azure AD, Microsoft identity platform
+        displayName: Azure AD, Microsoft identity platform
+        items:
+          - name: Overview
+            href: azuread-identity-access-management-concept-overview.md
+          - name: Authentication methods
+            href: authenticationmethods-get-started.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -319,6 +329,8 @@ items:
             href: teams-create-group-and-team.md
           - name: List all teams
             href: teams-list-all-teams.md
+          - name: Choose an online meeting API
+            href: choose-online-meeting-api.md
           - name: Configuring built-in tabs
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs

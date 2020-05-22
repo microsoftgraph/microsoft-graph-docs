@@ -30,12 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 GET /contacts
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query_parameters) to help customize the response, including `$search`, `$count`, and `$filter`. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required. |
+| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -43,8 +44,13 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [orgContact](../resources/orgcontact.md) objects in the response body.
-## Example
-##### Request
+
+## Examples
+
+### Example 1: Get organizational contacts for an organization
+
+#### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -69,8 +75,11 @@ GET https://graph.microsoft.com/beta/contacts
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+
+Here is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,25 +94,196 @@ Content-length: 222
 {
   "value": [
     {
+      "companyName":"Contoso",
+      "department":"Accounting",
+      "displayName":"Eric Solomon",
+      "givenName":"Eric",
+      "jobTitle":"Accountant",
+      "mail":"erics@contoso.com",
+      "mailNickname":"erics",
+      "surname":"Solomon",
       "addresses":[
-          {
-            "city": "string",
-            "countryOrRegion": "string",
-            "officeLocation": "string",
-            "postalCode": "string",
-            "state": "string",
-            "street": "string"
-          }
+        {
+          "city":"MyCity",
+          "countryOrRegion":"United States",
+          "officeLocation":"MyCity",
+          "postalCode":"98000",
+          "state":"WA",
+          "street":"Contoso Way"
+        }
       ],
-      "companyName": "companyName-value",
-      "department": "department-value",
-      "displayName": "displayName-value",
       "phones":[
-          {
-            "type": "string",
-            "number": "string"
-          }
+        {
+          "number":"111-1111",
+          "type":"businessFax"
+        }
       ]
+    }
+  ]
+}
+```
+
+### Example 2: Get only a count of organizational contacts
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/contacts/$count
+ConsistencyLevel: eventual
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+893
+
+### Example 3: Use $filter and $top to get one organizational contact with a display name that starts with 'a' including a count of returned objects
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/contacts?$filter=startswith(displayName,'A')&$count=true&$top=1&$orderby=displayName
+ConsistencyLevel: eventual
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#contacts",
+  "@odata.count":1,
+  "value":[
+    {
+      "displayName":"Abigail Jackson",
+      "mail":"abigailJ@contoso.com",
+      "mailNickname":"abigailJ"
+    }
+  ]
+}
+```
+
+### Example 4: Use $search to get organizational contacts with display names that contain the letters 'wa' including a count of returned objects
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_phone_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/contacts?$search="displayName:wa"&$count=true
+ConsistencyLevel: eventual
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-phone-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-phone-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-phone-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#contacts",
+  "@odata.count":22,
+  "value":[
+    {
+      "displayName":"Nicole Wagner",
+      "mail":"nicolewa@contoso.com",
+      "mailNickname":"nicolewa"
     }
   ]
 }

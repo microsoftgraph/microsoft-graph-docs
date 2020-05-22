@@ -14,7 +14,7 @@ var printUserIdentity = new PrintUserIdentity
 	}
 };
 
-await graphClient.Print.PrinterShares["{id}"].AllowedUsers.References
+await graphClient.Print.Shares["{id}"].AllowedUsers.References
 	.Request()
 	.AddAsync(printUserIdentity);
 

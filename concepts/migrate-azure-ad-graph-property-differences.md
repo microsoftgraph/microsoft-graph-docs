@@ -167,16 +167,19 @@ The Azure AD Graph ServiceEndpoint resource is renamed to endpoint in Microsoft 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **applicationTemplateId** | beta  &nbsp;-&nbsp; _Not yet available_ <br> v1.0  &nbsp;-&nbsp; _Not yet available_ | |
-| **appOwnerTenantId** | beta&nbsp;-&nbsp;**appOwnerOrganizationId** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
-| **informationalUrls**| beta&nbsp;-&nbsp;_Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
-| **preferredSingleSignOnMode** | beta&nbsp;-&nbsp;_Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
-| **preferredTokenSigningKeyEndDateTime** | beta&nbsp;-&nbsp;_Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
-| **samlSingleSignOnSettings** | beta&nbsp;-&nbsp;_Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
+| **applicationTemplateId** | beta  &nbsp;-&nbsp;**applicationTemplateId** <br> v1.0  &nbsp;-&nbsp; _Not yet available_ | |
+| **appOwnerTenantId** | beta&nbsp;-&nbsp;**appOwnerOrganizationId** <br> v1.0 &nbsp;-&nbsp;**appOwnerOrganizationId** | Renamed. |
+| **informationalUrls**| beta &nbsp;-&nbsp;**info** <br> v1.0 &nbsp;-&nbsp; **info** | |
+| **notificationEmailAddresses** | beta&nbsp;-&nbsp;**notificationEmailAddresses** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
+| **oauth2Permissions** | beta  &nbsp;-&nbsp;**publishedPermissionScopes** <br> v1.0  &nbsp;-&nbsp;**oauth2PermissionScopes** | Renamed. |
+| **preferredSingleSignOnMode** | beta&nbsp;-&nbsp;**preferredSingleSignOnMode** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
+| **preferredTokenSigningKeyEndDateTime** | beta&nbsp;-&nbsp;**preferredTokenSigningKeyEndDateTime** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
+| **preferredTokenSigningKeyThumbprint** | beta&nbsp;-&nbsp;**preferredTokenSigningKeyThumbprint** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
+| **samlSingleSignOnSettings** | beta&nbsp;-&nbsp;**samlSingleSignOnSettings** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
 | **servicePrincipalType** | beta&nbsp;-&nbsp;_Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
 | **signInAudience** | beta&nbsp;-&nbsp;_Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
 | **tokenEncryptionKeyId** | beta&nbsp;-&nbsp;_Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
-| **serviceEndpoints** | beta&nbsp;-&nbsp;_Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
+| **serviceEndpoints** | beta&nbsp;-&nbsp;**endpoint** <br> v1.0 &nbsp;-&nbsp;**endpoint** | Renamed. |
 
 ## TenantDetails property differences
 

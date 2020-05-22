@@ -6,11 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-DirectoryObject directoryObject = new DirectoryObject();
-directoryObject.Id = "{id}";
+Group group = new Group();
+group.additionalDataManager().put("members@odata.bind", new JsonPrimitive("[
+  "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+  "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+  "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+]"));
 
-graphClient.groups("{id}").members().references()
+graphClient.groups("{id}")
 	.buildRequest()
-	.post(directoryObject);
+	.patch(group);
 
 ```

@@ -12,13 +12,17 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of an [application](../resources/application.md) object.
+
+> [!IMPORTANT]
+> Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password for an application.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Directory.AccessAsUser.All    |
+|Delegated (work or school account) |  Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -31,7 +35,7 @@ PATCH /applications/{id}
 | Name       | Description|
 |:-----------|:----------|
 | Authorization | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
@@ -49,7 +53,6 @@ In the request body, supply the values for relevant fields that should be update
 | logo | Stream | The main logo for the application. Not nullable. |
 | optionalClaims | optionalClaims | Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [optional claims](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) for more information. |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md) |Specifies parental control settings for an application. |
-| passwordCredentials | [passwordCredential](../resources/passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 | publicClient | [publicClientApplication](../resources/publicclientapplication.md) | Specifies settings for installed clients such as desktop or mobile devices. |
 | requiredResourceAccess |[requiredResourceAccess](../resources/requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
 | signInAudience | String | Specifies what Microsoft accounts are supported for the current application. Supported values are:<ul><li>`AzureADMyOrg`: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>`AzureADMultipleOrgs`: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>`AzureADandPersonalMicrosoftAccount`: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul> | `AzureADandPersonalMicrosoftAccount` |

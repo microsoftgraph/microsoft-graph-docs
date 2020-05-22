@@ -29,7 +29,7 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/printerShares/{id}/allowedUsers
+GET /print/shares/{id}/allowedUsers
 ```
 
 ## Request headers
@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "get_allowedUsers"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers
+GET https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-allowedusers-csharp-snippets.md)]

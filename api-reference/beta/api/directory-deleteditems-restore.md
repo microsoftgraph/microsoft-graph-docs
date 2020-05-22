@@ -22,9 +22,30 @@ A recently deleted item will remain available for up to 30 days. After 30 days, 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-* For applications: Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All
-* For users: User.ReadWrite.All, Directory.AccessAsUser.All
-* For groups: Group.ReadWrite.All, Directory.AccessAsUser.All
+### For applications:
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
+
+
+### For users:
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application | User.ReadWrite.All |
+
+### For groups:
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

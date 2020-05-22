@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Auditlogs.Read.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
@@ -35,12 +36,14 @@ GET /users
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response, including `$search`, `$count`, and `$filter`. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
 ## Request headers
-| Header        | Value                      |
-|:--------------|:---------------------------|
+
+| Header | Value |
+|:------ |:----- |
 | Authorization | Bearer {token} (required)  |
+| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
 
@@ -50,9 +53,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.
 
-## Example
+## Examples
 
-### Example 1: List all users
+### Example 1: Get all users
 
 #### Request
 
@@ -80,8 +83,7 @@ GET https://graph.microsoft.com/beta/users
 
 ---
 
-
-##### Response
+#### Response
 
 The following is an example of the response. 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -95,32 +97,24 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 608
 
 {
-  "value": [
+  "value":[
     {
-      "businessPhones": [
-        "businessPhones-value"
-      ],
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "jobTitle": "jobTitle-value",
-      "mail": "mail-value",
-      "mobilePhone": "mobilePhone-value",
-      "officeLocation": "officeLocation-value",
-      "preferredLanguage": "preferredLanguage-value",
-      "surname": "surname-value",
-      "userPrincipalName": "userPrincipalName-value",
-      "id": "id-value"
+      "displayName":"contoso1",
+      "mail":"'contoso1@gmail.com",
+      "mailNickname":"contoso1_gmail.com#EXT#",
+      "otherMails":["contoso1@gmail.com"],
+      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
 }
 ```
 
-### Example 2: Find a user account using a sign-in name
+### Example 2: Get a user account using a sign-in name
 
-Find a user account in a B2C tenant, using a sign-in name (also known as a local account). This request can be used by a helpdesk to find a customer's user account, in a B2C tenant (in this example the B2C tenant is contoso.onmicrosoft.com).
+Find a user account using a sign-in name (also known as a local account).
 
 >[!NOTE]
 >When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**.
@@ -151,7 +145,6 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 ---
 
-
 #### Response
 
 The following is an example of the response. 
@@ -166,19 +159,17 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 108
 
 {
   "value": [
     {
-      "displayName": "John Smith",
-      "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
+      "displayName": "John Smith"
     }
   ]
 }
 ```
 
-### Example 3:  List users including their last sign-in time
+### Example 3: Get users including their last sign-in time
 
 #### Request
 
@@ -206,7 +197,6 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -370,6 +360,231 @@ Content-type: application/json
         "lastSignInDateTime": "2019-04-29T02:16:18Z",
         "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
       }
+    }
+  ]
+}
+```
+
+### Example 6: Get only a count of users
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/$count
+ConsistencyLevel: eventual
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+893
+
+
+### Example 7: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
+ConsistencyLevel: eventual
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
+  "@odata.count":1,
+  "value":[
+    {
+      "displayName":"a",
+      "mail":"a@contoso.com",
+      "mailNickname":"a_contoso.com#EXT#",
+      "otherMails":["a@contoso.com"],
+      "proxyAddresses":["SMTP:a@contoso.com"],
+      "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
+    }
+  ]
+}
+```
+
+### Example 8: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_wa_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$search="displayName:wa"&$orderby=displayName&$count=true
+ConsistencyLevel: eventual
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-wa-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-wa-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-wa-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Oscar Ward",
+      "givenName":"Oscar",
+      "mail":"oscarward@contoso.com",
+      "mailNickname":"oscward",
+      "userPrincipalName":"oscarward@contoso.com"
+    }
+  ]
+}
+
+```
+
+### Example 9: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_to_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$search="displayName:wa" OR "displayName:to"&$orderbydisplayName&$count=true
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+The following is an example of the response. 
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Oscar Ward",
+      "givenName":"Oscar",
+      "mail":"oscarward@contoso.com",
+      "mailNickname":"oscward",
+      "userPrincipalName":"oscarward@contoso.com"
+    },
+    {
+      "displayName":"contoso1",
+      "mail":"'contoso1@gmail.com",
+      "mailNickname":"contoso1_gmail.com#EXT#",
+      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
 }

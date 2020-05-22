@@ -29,7 +29,7 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShares/{id}/allowedGroups/{id}/$ref
+DELETE /print/shares/{id}/allowedGroups/{id}/$ref
 ```
 ## Request headers
 | Name          | Description   |
@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "delete_allowedgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedGroup/{id}/$ref
+DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroup/{id}/$ref
 ```
 ##### Response
 The following is an example of the response.

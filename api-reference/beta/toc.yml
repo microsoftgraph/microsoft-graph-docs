@@ -1,5 +1,5 @@
-- name: Reference
-  items:
+name: Reference
+items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
   - name: Get auth tokens
@@ -112,10 +112,18 @@
         href: /graph/sdks/sdk-installation?context=graph/api/beta
       - name: Create a client
         href: /graph/sdks/create-client?context=graph/api/beta
+      - name: Customize a client
+        href: /graph/sdks/customize-client?context=graph/api/beta
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
       - name: Create requests
         href: /graph/sdks/create-requests?context=graph/api/beta
+      - name: Page through a collection
+        href: /graph/sdks/paging?context=graph/api/beta
+      - name: Create a batch request
+        href: /graph/sdks/batch-requests?context=graph/api/beta
+      - name: Upload large files
+        href: /graph/sdks/large-file-upload?context=graph/api/beta
   - name: Use the toolkit
     items:
       - name: Toolkit overview
@@ -182,6 +190,15 @@
           href: api/user-delete.md
         - name: Get delta
           href: api/user-delta.md
+      - name: App role assignments
+        href: resources/approleassignment.md
+        items:
+        - name: List app role assignments
+          href: api/user-list-approleassignments.md
+        - name: Add app role assignment
+          href: api/user-post-approleassignments.md
+        - name: Remove app role assignment
+          href: api/user-delete-approleassignments.md
       - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
@@ -221,6 +238,10 @@
           href: api/user-list-contacts.md
         - name: List contact folders
           href: api/user-list-contactfolders.md
+      - name: Delegated permission grants
+        items:
+        - name: List delegated permission grants
+          href: api/user-list-oauth2permissiongrants.md
       - name: Directory objects
         href: resources/directoryobject.md
         items:
@@ -390,7 +411,7 @@
           href: api/planneruser-update.md
       - name: Profile (preview)
         items:
-        - name: Profile 
+        - name: Profile
           href: resources/profile.md
         - name: Get user's profile
           href: api/profile-get.md
@@ -429,6 +450,8 @@
           href: api/group-post-groups.md
         - name: Delete group
           href: api/group-delete.md
+        - name: Evaluate dynamic membership
+          href: api/group-evaluatedynamicmembership.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Get delta
@@ -479,6 +502,15 @@
           href: api/group-update.md
         - name: Validate properties
           href: api/group-validateproperties.md
+      - name: App role assignments
+        href: resources/approleassignment.md
+        items:
+        - name: List app role assignments
+          href: api/group-list-approleassignments.md
+        - name: Add app role assignment
+          href: api/group-post-approleassignments.md
+        - name: Remove app role assignment
+          href: api/group-delete-approleassignments.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -682,7 +714,7 @@
         - name: Add attachment
           href: api/event-post-attachments.md
         - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md          
+          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -874,7 +906,7 @@
           items:
           - name: Play prompt
             href: api/call-playprompt.md
-          - name: Record
+          - name: Record response
             href: api/call-record.md
           - name: Cancel media processing
             href: api/call-cancelmediaprocessing.md
@@ -1071,7 +1103,7 @@
         - name: Print
           href: resources/print.md
           displayName: Universal Print
-        - name: Connectors
+        - name: Print connector
           href: resources/printconnector.md
           items:
           - name: List
@@ -1082,7 +1114,7 @@
             href: api/printconnector-update.md
           - name: Delete
             href: api/printconnector-delete.md
-        - name: Print jobs
+        - name: Print job
           href: resources/printjob.md
           items:
           - name: Create
@@ -1093,7 +1125,7 @@
             href: api/printjob-startprintjob.md
           - name: Cancel
             href: api/printjob-cancelprintjob.md
-        - name: Printers
+        - name: Printer
           href: resources/printer.md
           items:
           - name: List
@@ -1124,13 +1156,13 @@
             href: api/printer-delete-alloweduser.md
           - name: Reset defaults
             href: api/printer-resetdefaults.md
-        - name: Printer shares
+        - name: Printer share
           href: resources/printershare.md
           items:
           - name: List
-            href: api/print-list-printershares.md
+            href: api/print-list-shares.md
           - name: Create
-            href: api/print-post-printershares.md
+            href: api/print-post-shares.md
           - name: Get
             href: api/printershare-get.md
           - name: Update
@@ -1173,7 +1205,7 @@
               href: api/reportroot-list-dailyprintusagesummariesbyuser.md
             - name: List monthly reports by user
               href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
-        - name: Services
+        - name: Print service
           href: resources/printservice.md
           items:
           - name: List
@@ -1187,7 +1219,7 @@
               href: api/printserviceendpoint-get.md
             - name: List a service's endpoints
               href: api/printservice-list-endpoints.md
-        - name: Settings
+        - name: Print settings
           href: resources/printsettings.md
           items:
           - name: Get
@@ -8474,7 +8506,7 @@
         - name: Check in files
           href: api/driveitem-checkin.md
         - name: Check out files
-          href: api/driveitem-checkout.md 
+          href: api/driveitem-checkout.md
         - name: Create folder
           href: api/driveitem-post-children.md
         - name: Update item
@@ -8869,15 +8901,6 @@
           href: api/administrativeunit-get-scopedrolemembers.md
         - name: Remove a scoped-role administrator
           href: api/administrativeunit-delete-scopedrolemembers.md
-      - name: App role assignment
-        href: resources/approleassignment.md
-        items:
-        - name: Get appRoleAssignment
-          href: api/approleassignment-get.md
-        - name: Update approleassignment
-          href: api/approleassignment-update.md
-        - name: Delete appRoleAssignment
-          href: api/approleassignment-delete.md
       - name: Application
         href: resources/application.md
         items:
@@ -8901,22 +8924,42 @@
           href: api/directory-deleteditems-delete.md
         - name: Restore deleted application
           href: api/directory-deleteditems-restore.md
-        - name: Add password
-          href: api/application-addpassword.md
-        - name: Remove password
-          href: api/application-removepassword.md
-        - name: Create extension
-          href: api/application-post-extensionproperty.md
-        - name: List extensions
-          href: api/application-list-extensionproperty.md
-        - name: Delete extension
-          href: api/application-delete-extensionproperty.md
-        - name: List owners
-          href: api/application-list-owners.md
-        - name: Add owner
-          href: api/application-post-owners.md
-        - name: Remove owner
-          href: api/application-delete-owners.md
+        - name: Certificates & secrets
+          items:
+          - name: Add password
+            href: api/application-addpassword.md
+          - name: Remove password
+            href: api/application-removepassword.md
+          - name: Add key
+            href: api/application-addkey.md
+          - name: Remove key
+            href: api/application-removekey.md
+        - name: Extensions
+          items:
+          - name: List extensions
+            href: api/application-list-extensionproperty.md
+          - name: Create extension
+            href: api/application-post-extensionproperty.md
+          - name: Delete extension
+            href: api/application-delete-extensionproperty.md
+        - name: Owners
+          items:
+          - name: List owners
+            href: api/application-list-owners.md
+          - name: Add owner
+            href: api/application-post-owners.md
+          - name: Remove owner
+            href: api/application-delete-owners.md
+        - name: Policies
+          items:
+          - name: List assigned policies
+            href: api/policy-list-assigned.md
+          - name: Assign tokenLifetimePolicy
+            href: api/application-post-tokenlifetimepolicies.md
+          - name: List tokenLifetimePolicies
+            href: api/application-list-tokenlifetimepolicies.md
+          - name: Remove tokenLifetimePolicy
+            href: api/application-delete-tokenlifetimepolicies.md
         - name: Application template
           href: resources/applicationtemplate.md
           items:
@@ -8949,7 +8992,7 @@
           - name: List provisioning
             href: api/provisioningobjectsummary-list.md
       - name: Authentication methods
-        items: 
+        items:
         - name: Overview
           href: resources/authenticationmethods-overview.md
         - name: Authentication method
@@ -9341,23 +9384,6 @@
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
-      - name: Information protection
-        items:
-        - name: Labels
-          href: resources/informationprotectionlabel.md
-          items:
-          - name: List labels
-            href: api/informationprotectionpolicy-list-labels.md
-          - name: Get label
-            href: api/informationprotectionlabel-get.md
-          - name: Evaluate application
-            href: api/informationprotectionlabel-evaluateapplication.md
-          - name: Evaluate classification result
-            href: api/informationprotectionlabel-evaluateclassificationresults.md
-          - name: Evaluate removal
-            href: api/informationprotectionlabel-evaluateremoval.md
-          - name: Extract label
-            href: api/informationprotectionlabel-extractlabel.md
         - name: Threat assessment
           items:
           - name: Overview
@@ -9383,16 +9409,18 @@
         items:
         - name: Create invitation
           href: api/invitation-post.md
-      - name: Oauth2 permission grant
+      - name: Delegated permission grants
         href: resources/oauth2permissiongrant.md
         items:
-        - name: List
+        - name: List delegated permission grants
           href: api/oauth2permissiongrant-list.md
-        - name: Get
+        - name: Get delegated permission grants
           href: api/oauth2permissiongrant-get.md
-        - name: Update
+        - name: Create delegated permission grant
+          href: api/oauth2permissiongrant-post.md
+        - name: Update delegated permission grant
           href: api/oauth2permissiongrant-update.md
-        - name: Delete
+        - name: Delete delegated permission grant
           href: api/oauth2permissiongrant-delete.md
         - name: Get delta
           href: api/oauth2permissiongrant-delta.md
@@ -9720,41 +9748,118 @@
         - name: Role assignment multiple
           href: resources/unifiedroleassignmentmultiple.md
           items:
-          - name: List 
+          - name: List
             href: api/unifiedroleassignmentmultiple-list.md
-          - name: Create 
+          - name: Create
             href: api/unifiedroleassignmentmultiple-post.md
-          - name: Get 
+          - name: Get
             href: api/unifiedroleassignmentmultiple-get.md
-          - name: Update 
+          - name: Update
             href: api/unifiedroleassignmentmultiple-update.md
-          - name: Delete 
+          - name: Delete
             href: api/unifiedroleassignmentmultiple-delete.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
         - name: List service principal
           href: api/serviceprincipal-list.md
+        - name: Create service principal
+          href: api/serviceprincipal-post-serviceprincipals.md
         - name: Get service principal
           href: api/serviceprincipal-get.md
         - name: Update service principal
           href: api/serviceprincipal-update.md
         - name: Delete service principal
           href: api/serviceprincipal-delete.md
-        - name: Add password
-          href: api/serviceprincipal-addpassword.md
-        - name: Remove password
-          href: api/serviceprincipal-removepassword.md
-        - name: Check member objects
-          href: api/serviceprincipal-checkmemberobjects.md
-        - name: Create password single sign on credentials
-          href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
-        - name: Get password single sign on credentials
-          href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
-        - name: Update password single sign on credentials
-          href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
-        - name: Delete password single sign on credentials
-          href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
+        - name: List createdObjects
+          href: api/serviceprincipal-list-createdobjects.md
+        - name: List ownedObjects
+          href: api/serviceprincipal-list-ownedobjects.md
+        - name: delta
+          href: api/serviceprincipal-delta.md
+        - name: App role assignments
+          href: resources/approleassignment.md
+          items:
+          - name: List app role assignments
+            href: api/serviceprincipal-list-approleassignments.md
+          - name: Add app role assignment
+            href: api/serviceprincipal-post-approleassignments.md
+          - name: Remove app role assignment
+            href: api/serviceprincipal-delete-approleassignments.md
+          - name: List app role assigned to
+            href: api/serviceprincipal-list-approleassignedto.md
+          - name: Add app role assigned to
+            href: api/serviceprincipal-post-approleassignedto.md
+          - name: Remove app role assigned to
+            href: api/serviceprincipal-delete-approleassignedto.md
+        - name: Certificates and secrets
+          items:
+          - name: Add password
+            href: api/serviceprincipal-addpassword.md
+          - name: Remove password
+            href: api/serviceprincipal-removepassword.md
+          - name: Add key
+            href: api/serviceprincipal-addkey.md
+          - name: Remove key
+            href: api/serviceprincipal-removekey.md
+        - name: Delegated permission grants
+          items:
+          - name: List delegated permission grants
+            href: api/serviceprincipal-list-oauth2permissiongrants.md
+        - name: Membership
+          items:
+          - name: List memberOf
+            href: api/serviceprincipal-list-memberof.md
+          - name: List transitive memberOf
+            href: api/serviceprincipal-list-transitivememberof.md
+          - name: checkMemberGroups
+            href: api/serviceprincipal-checkmembergroups.md
+          - name: checkMemberObjects
+            href: api/serviceprincipal-checkmemberobjects.md
+          - name: getMemberGroups
+            href: api/serviceprincipal-getmembergroups.md
+          - name: getMemberObjects
+            href: api/serviceprincipal-getmemberobjects.md
+        - name: Owners
+          items:
+          - name: List owners
+            href: api/serviceprincipal-list-owners.md
+          - name: Add owner
+            href: api/serviceprincipal-post-owners.md
+          - name: Remove owner
+            href: api/serviceprincipal-delete-owners.md
+        - name: Policies
+          items:
+          - name: List assigned policies
+            href: api/policy-list-assigned.md
+          - name: Assign claimsMappingPolicy
+            href: api/serviceprincipal-post-claimsmappingpolicies.md
+          - name: List claimsMappingPolicies]
+            href: api/serviceprincipal-list-claimsmappingpolicies.md
+          - name: Remove claimsMappingPolicy
+            href: api/serviceprincipal-delete-claimsmappingpolicies.md
+          - name: Assign homeRealmDiscoveryPolicy
+            href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+          - name: List homeRealmDiscoveryPolicies
+            href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+          - name: Remove homeRealmDiscoveryPolicy
+            href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Assign tokenLifetimePolicy
+            href: api/application-post-tokenlifetimepolicies.md
+          - name: List tokenLifetimePolicies
+            href: api/application-list-tokenlifetimepolicies.md
+          - name: Remove tokenLifetimePolicy
+            href: api/application-delete-tokenlifetimepolicies.md
+        - name: Single sign on
+          items:
+          - name: Create password single sign on credentials
+            href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+          - name: Get password single sign on credentials
+            href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+          - name: Update password single sign on credentials
+            href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+          - name: Delete password single sign on credentials
+            href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
       - name: Subscribed sku
         href: resources/subscribedsku.md
         items:
@@ -10773,6 +10878,23 @@
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Information protection
+        items:
+        - name: Labels
+          href: resources/informationprotectionlabel.md
+          items:
+          - name: List labels
+            href: api/informationprotectionpolicy-list-labels.md
+          - name: Get label
+            href: api/informationprotectionlabel-get.md
+          - name: Evaluate application
+            href: api/informationprotectionlabel-evaluateapplication.md
+          - name: Evaluate classification result
+            href: api/informationprotectionlabel-evaluateclassificationresults.md
+          - name: Evaluate removal
+            href: api/informationprotectionlabel-evaluateremoval.md
+          - name: Extract label
+            href: api/informationprotectionlabel-extractlabel.md
       - name: Secure scores
         href: resources/securescores.md
         items:
@@ -11101,6 +11223,20 @@
       - name: Chat message
         href: resources/chatmessage.md
         items:
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content

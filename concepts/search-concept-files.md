@@ -17,7 +17,7 @@ You can use the Microsoft Search API to search files stored in SharePoint or One
 You can use KQL in search terms of queries for SharePoint and OneDrive. For example:
 
 - `"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.
-- `"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.
 
 In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.
 

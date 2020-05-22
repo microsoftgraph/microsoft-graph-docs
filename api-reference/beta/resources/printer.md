@@ -38,22 +38,21 @@ Represents a physical printer device that has been registered with the Universal
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The document's identifier. Read-only.|
-|name|String|The name of the printer.|
+|displayName|String|The name of the printer.|
 |manufacturer|String|The manufacturer reported by the printer. Read-only.|
 |model|String|The model name reported by the printer. Read-only.|
-|registeredBy|[printUserIdentity](printuseridentity.md)|The user who registered the printer.|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the printer was registered. Read-only.|
 |status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors. Read-only.|
 |isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
-|acceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
+|isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer.|
 |defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings.|
 
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer. Read-only. Nullable.|
-|shares|[printerShare](printershare.md)| The printerShare that is associated with the printer. Read-only. Nullable.|
+|jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer.|
+|shares|[printerShare](printershare.md) collection| The list of printerShares that are associated with the printer. Read-only. Nullable.|
 |connectors|[printConnector](printconnector.md)|The connectors that are associated with the printer.|
 |allowedUsers|[printUserIdentity](printuseridentity.md) collection|The users who have access to print using the printer.|
 |allowedGroups|[printIdentity](printidentity.md)|The groups whose users have access to print using the printer.|

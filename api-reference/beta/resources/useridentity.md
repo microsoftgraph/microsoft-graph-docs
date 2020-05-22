@@ -23,7 +23,8 @@ This type inherits from [identity](identity.md) and has one additional property,
 None.  You would include objects of this type in the body of a request when [creating an accessReview](../api/accessreview-create.md).
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property | Type | Description|
 |:---------------|:--------|:----------|
 | `displayName` | `String` | The identity's display name. Note that this may not always be available or up-to-date.    |
 | `id`          | `String` | Unique identifier for the identity.  |
@@ -41,11 +42,11 @@ None.
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method | Return Type Description|
 |:---------------|:--------|:----------|
-|[Get accessReview reviewers](../api/accessreview-listreviewers.md) |		[userIdentity](useridentity.md) collection|	Get the reviewers of an accessReview. |
-|[Add accessReview reviewer](../api/accessreview-addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
-|[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
+|[Get accessReview reviewers](../api/accessreview-listreviewers.md) | [userIdentity](useridentity.md) collection| Get the reviewers of an accessReview. |
+|[Add accessReview reviewer](../api/accessreview-addreviewer.md) | None. | Add a reviewer to an accessReview. |
+|[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None. |Remove a reviewer from an accessReview. |
 
 ## JSON representation
 

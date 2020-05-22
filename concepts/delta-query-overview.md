@@ -180,7 +180,7 @@ Delta queries are available for customers hosted on the public cloud and Microso
 
 ### Token duration
 
-Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For identity objects (**directoryObject**, **directoryRole**, **group**, **orgContact**, **user**), the limit is 30 days.
+Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 30 days.
 
 ## Prerequisites
 
