@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "primaryChannel"
 description: "It is a navigation property of a team."
@@ -58,3 +59,5 @@ If successful, this method returns a `200 OK` response code and a [channel](../r
   "suppressions": [
   ]
 }-->
+=======
+>>>>>>> parent of 8e62fee7a9... Merge branch 'meenakshi' of https://github.com/Y-Meenakshi/microsoft-graph-docs into meenakshi

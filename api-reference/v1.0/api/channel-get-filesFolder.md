@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Get filesFolder"
 description: "Retrieve the filesFolder of a channel."
@@ -56,3 +57,5 @@ If successful, this method returns a `200 OK` response code and  [driveItem](../
   "suppressions": [
   ]
 }-->
+=======
+>>>>>>> parent of 8e62fee7a9... Merge branch 'meenakshi' of https://github.com/Y-Meenakshi/microsoft-graph-docs into meenakshi
