@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 A navigation property of a [team](../resources/team.md) that allows access to its default channel, **General**.
 
 ## Permissions

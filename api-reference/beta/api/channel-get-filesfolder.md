@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Retrieve the filesFolder navigation path of a [channel](../resources/channel.md). It is the metadata for the location where the channel files are stored.
 
