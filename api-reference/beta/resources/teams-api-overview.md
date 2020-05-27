@@ -23,8 +23,8 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 |[teamsTab](../resources/teamstab.md) |[List](../api/teamstab-list.md), [create](../api/teamstab-add.md), [read](../api/teamstab-get.md), [update](../api/teamstab-update.md), [delete](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[List](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
-|[chatMessage](../resources/chatmessage.md) (preview)| [List](../api/channel-list-messages.md), [send](../api/channel-post-messages.md), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
-|[call](/graph/api/resources/communications-api-overview.md) (preview) | [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (preview)| [List](/graph/api/channel-list-messages?view=graph-rest-beta), [send](/graph/api/channel-post-messages?view=graph-rest-beta), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
+| [call](/graph/api/resources/call?view=graph-rest-beta) (preview)| [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
 |[schedule](/graph/api/resources/schedule?view=graph-rest-beta) (preview)| [Create or replace](/graph/api/team-put-schedule?view=graph-rest-beta), [get](/graph/api/schedule-get?view=graph-rest-beta), [share](/graph/api/schedule-share?view=graph-rest-beta) |
 |[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [List](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [Get](/graph/api/schedulinggroup-get?view=graph-rest-beta), [Replace](/graph/api/schedulinggroup-put?view=graph-rest-beta), [Delete](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
 |[shift](/graph/api/resources/shift?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-shifts?view=graph-rest-beta), [List](/graph/api/schedule-list-shifts?view=graph-rest-beta), [Get](/graph/api/shift-get?view=graph-rest-beta), [Replace](/graph/api/shift-put?view=graph-rest-beta), [Delete](/graph/api/shift-delete?view=graph-rest-beta) |
@@ -123,9 +123,7 @@ Apps that don't follow these polling requirements will be considered in violatio
 [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
 or the suspension or termination of your use of the Microsoft APIs.
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## See also
 
-[Microsoft Teams API overview](/graph/teams-concept-overview)
+- [Microsoft Teams API overview](/graph/teams-concept-overview)
+- Sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)
