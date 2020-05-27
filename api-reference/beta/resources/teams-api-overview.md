@@ -123,6 +123,9 @@ Apps that don't follow these polling requirements will be considered in violatio
 [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
 or the suspension or termination of your use of the Microsoft APIs.
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 ## See also
 
 [Microsoft Teams API overview](/graph/teams-concept-overview)

@@ -4,7 +4,7 @@ description: "Used to record when a user, group, or service principal is assigne
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # appRoleAssignment resource type

@@ -63,6 +63,8 @@ PATCH /subscriptions/{id}
 
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
 
+For details about how errors are returned, see [Error responses][error-response].
+
 ## Example
 
 ##### Request
@@ -124,6 +126,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2"
 }
 ```
+
+[error-response]: /graph/errors
 
 <!--
 {

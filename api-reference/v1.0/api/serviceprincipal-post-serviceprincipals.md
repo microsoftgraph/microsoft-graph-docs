@@ -1,7 +1,7 @@
 ---
 title: "Create serviceprincipal"
 description: "Create a new serviceprincipal object."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"

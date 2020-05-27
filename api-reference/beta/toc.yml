@@ -1010,7 +1010,7 @@ items:
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
-    - name: Customer booking
+    - name: Customer booking (preview)
       displayName: Bookings, Microsoft Bookings
       items:
       - name: Overview
@@ -10240,7 +10240,7 @@ items:
         items:
         - name: Get resource
           href: api/resource-get.md
-    - name: Notifications
+    - name: Notifications (preview)
       items:
       - name: Overview
         href: resources/notifications-api-overview.md

@@ -118,6 +118,8 @@ The school data sync management APIs support the following scenarios:
 - [Get status of a sync](../api/educationsynchronizationprofilestatus-get.md)
 - [Get synchronization errors](../api/educationsynchronizationerrors-get.md)
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 Use the Microsoft Graph education APIs to build education solutions that access student assignments and school rosters. To learn more:

@@ -26,6 +26,9 @@ https://graph.microsoft.com/beta/{resource}?[query_parameters]
 
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) in the beta endpoint.
+
 ## See also
 
 - [Overview of Microsoft Graph](/graph/overview)

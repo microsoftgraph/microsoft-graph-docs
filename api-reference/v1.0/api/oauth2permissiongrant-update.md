@@ -4,7 +4,7 @@ description: "Update the properties of an oAuth2PermissionGrant, representing a 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # Update a delegated permission grant (oAuth2PermissionGrant)

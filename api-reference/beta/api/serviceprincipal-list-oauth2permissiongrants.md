@@ -4,7 +4,7 @@ description: "Retrieve a list of oAuth2PermissionGrant objects, representing del
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # List oauth2PermissionGrants

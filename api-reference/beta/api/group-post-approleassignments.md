@@ -4,7 +4,7 @@ description: "Grant an app role assignment to a group."
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # Grant an appRoleAssignment to a group

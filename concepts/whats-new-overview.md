@@ -27,6 +27,12 @@ Use the many new features of [Graph Explorer](https://developer.microsoft.com/en
 
 See [New Graph Explorer is now GA](https://developer.microsoft.com/graph/blogs/new-graph-explorer-is-now-ga/) for more details.
 
+### Identity and access
+- GA of the [service principals API] in v1.0 - use [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) in production apps to programmatically manage instances of applications and control what an application can do within your tenant. You can control who can use an application, what resources the application has access to, such as adding password credentials, rolling expiring certificates, and managing delegated permission grants and application role assignments.
+- GA of the [appRoleAssignment](/graph/api/resources/appRoleAssignment?view=graph-rest-1.0) API, which records the assignment of an [appRole](/graph/api/resources/approle?view=graph-rest-1.0) (representing the `roles` claim in ID tokens and access tokens) to a [user](/graph/api/resources/user?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0), or [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).
+- Use the delegated or application permission of `AppRoleAssignment.ReadWrite.All` to allow an app to manage grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, respectively with or without the signed-in user.
+
+
 ### Microsoft Graph SDKs
 See new SDK guidance on the following:
 - [Paging](/graph/sdks/paging)
@@ -60,11 +66,17 @@ Intune [May](changelog.md#may-2020) updates in beta.
 - Specify the resources to provision in the **resourceProvisioningOptions** property that are normally not part of the default [group](/graph/api/resources/group?view=graph-rest-beta) creation. Currently supported is provisioning a group as a [team](/graph/api/resources/team?view=graph-rest-beta) with Microsoft Teams capabilities.
 
 ### Identity and access
+- Apply OData system query options (`$count`, `$filter`, `$search`) when getting collections of entities that are derived from [directoryObject](). 
+You can [search for soecific tokens](/graph/query-parameters?#using-search-on-directory-object-collections) in the **displayName** and **description** properties 
+of these entities, and use OData cast to trim **directoryObject** results to certain derived types. See more details in 
+[Build advanced queries in Microsoft Graph with $count, $filter, $search, and $orderby](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
 - As part of the [identity protection API](/graph/api/resources/identityprotection-root?view=graph-rest-beta), use the **riskEventType** property to [get the type of risk detected](/graph/api/riskdetection-get?view=graph-rest-beta), or [get the type of risk in a user's history](/graph/api/riskyuser-list-history?view=graph-rest-beta). Do not use the **riskType** property as it has been deprecated.
 - Specify client application types in the **clientAppTypes** property of the [condition set](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) for a [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
+- Use the delegated permission of `EntitlementManagement.Read.All` to allow an app to read access packages and related entitlement management resources on behalf of the signed-in user.
 
 ### Teamwork
-Teams apps that [support single sign-on (SSO)](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) can specify the `WebApplicationInfo.id` from the Teams app manifest, in the **azureADAppId** property of the [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).
+- Teams apps that [support single sign-on (SSO)](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) can specify the `WebApplicationInfo.id` from the Teams app manifest, in the **azureADAppId** property of the [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).
+- Use [finer grained permissions](/graph/permissions-reference#teams-resource-specific-consent-permissions) to access [team](/graph/api/resources/team?view=graph-rest-beta) and [channel](/graph/api/resources/channel?view=graph-rest-beta) resources.
 
 
 ## April 2020: New and generally available

@@ -4,7 +4,7 @@ description: "Retrieve a list of directoryobject objects."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # servicePrincipal: List createdObjects

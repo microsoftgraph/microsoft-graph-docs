@@ -27,7 +27,7 @@ Choose the calendar API for a streamlined, built-in integration with Outlook cal
   - Attendees can click in the join-Teams-meeting blob to join meeting over the Internet or by dialing in.
   - Attendees can use other rich features of Teams, including video conferencing and meeting lobby, if configured.
 
-> **Note:** Integration with Outlook calendar assumes an administrator has set up Outlook for online meetings. [Verify](outlook-calendar-online-meetings.md#calendars-and-online-meeting-providers) the support before using the API.
+> **Note:** Integration with Outlook calendar assumes an administrator has set up Outlook for online meetings. [Verify](/microsoftteams/exchange-teams-interact) the support before using the API.
 
 Choose the cloud communications API for flexibility and broader programmatic support:
 - Apps have more flexibility to further integrate the API results with line of business and other apps. The API is decoupled with any specific calendar, and does not create an event in any calendar.

@@ -32,7 +32,7 @@ To begin tracking changes, you make a request that includes the delta function o
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeunits/delta
+GET /administrativeUnits/delta
 ```
 
 ## Query parameters
