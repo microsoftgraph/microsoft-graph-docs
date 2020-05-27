@@ -4529,8 +4529,8 @@ items:
           href: api/user-list-joinedteams.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/1.0
-        - name: Primary channel
-          href: api/team-primarychannel.md
+        - name: Get primary channel
+          href: api/team-get-primarychannel.md
       - name: Group (team)
         href: resources/group.md
         items:
