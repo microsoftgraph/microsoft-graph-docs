@@ -11121,8 +11121,8 @@ items:
           href: api/user-list-joinedteams.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/beta
-        - name: Primary channel
-          href: api/team-primarychannel.md
+        - name: Get primary channel
+          href: api/team-get-primarychannel.md
         - name: Get team photo
           href: api/team-get-photo.md
         - name: Update team photo
