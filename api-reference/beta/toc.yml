@@ -11121,6 +11121,8 @@ items:
           href: api/user-list-joinedteams.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/beta
+        - name: Get primary channel
+          href: api/team-get-primarychannel.md
         - name: Get team photo
           href: api/team-get-photo.md
         - name: Update team photo
@@ -11181,6 +11183,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Get filesfolder
+          href: api/channel-get-filesfolder.md
         - name: List channel messages
           href: api/channel-list-messages.md
         - name: Get channel messages delta
