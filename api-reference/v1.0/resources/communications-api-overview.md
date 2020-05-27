@@ -42,6 +42,9 @@ The following table lists some of the common uses for the communications API.
 | participant                         | [participant properties](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
 | onlineMeeting                            | [onlineMeeting properties](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 ## See also
 
 - [Communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)

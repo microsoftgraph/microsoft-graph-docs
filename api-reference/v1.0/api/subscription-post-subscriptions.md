@@ -60,6 +60,7 @@ POST /subscriptions
 ## Response
 
 If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
+For details about how errors are returned, see [Error responses][error-response].
 
 ## Example
 
@@ -155,6 +156,8 @@ Content-length: 252
 ## Notification endpoint validation
 
 The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
+
+[error-response]: /graph/errors
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

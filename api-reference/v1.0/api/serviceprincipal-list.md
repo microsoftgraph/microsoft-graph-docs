@@ -1,7 +1,7 @@
 ---
 title: "List servicePrincipals"
 description: "Retrieve a list of servicePrincipal objects."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

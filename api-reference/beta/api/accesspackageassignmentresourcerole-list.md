@@ -37,6 +37,9 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+For example, to retrieve only access package assignment resource roles for a particular user, you can include a query with a filter targeting the object ID of that user `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'`.
+
+
 ## Request headers
 
 | Name      |Description|

@@ -4,7 +4,7 @@ description: "Update the properties of serviceprincipal object."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # Update servicePrincipal

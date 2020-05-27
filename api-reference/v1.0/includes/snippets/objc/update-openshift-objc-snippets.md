@@ -8,7 +8,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]]];
-[urlRequest setHTTPMethod:@"PUT"];
+[urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphOpenShift *openShift = [[MSGraphOpenShift alloc] init];

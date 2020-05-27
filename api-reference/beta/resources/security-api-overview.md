@@ -99,6 +99,9 @@ The following are some of the most popular requests for working with the Microso
 
 You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph Security API entities.
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for these API sets.
+
 ## Next steps
 
 The Microsoft Graph Security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:

@@ -36,7 +36,7 @@ var locationConstraint = new LocationConstraint
 var timeConstraint = new TimeConstraint
 {
 	ActivityDomain = ActivityDomain.Work,
-	Timeslots = new List<TimeSlot>()
+	TimeSlots = new List<TimeSlot>()
 	{
 		new TimeSlot
 		{

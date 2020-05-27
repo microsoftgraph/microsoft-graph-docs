@@ -56,6 +56,10 @@ The following table lists some common use cases for Azure AD resources.
 | Invite external (guest) users to an organization. | [invitation](../resources/invitation.md) | [What is Azure AD B2B collaboration?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
 | **Access reviews** | | |
 | Ensure group memberships and application access rights are correct with access reviews | [access reviews API](../resources/accessreviews-root.md) |[Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 ## Next steps
 Directory resources and APIs can open up new ways for you to engage with users and manage their experiences with Microsoft Graph. To learn more:
 

@@ -4,7 +4,7 @@ description: "Represents the SAML single sign-on settings."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # samlSingleSignOnSettings resource type

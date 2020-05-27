@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of single oAuth2Permissi
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # Get a delegated permission grant (oAuth2PermissionGrant)

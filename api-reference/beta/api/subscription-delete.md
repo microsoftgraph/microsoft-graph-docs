@@ -65,6 +65,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
+For details about how errors are returned, see [Error responses][error-response].
+
 ## Example
 
 ##### Request
@@ -107,6 +109,8 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+[error-response]: /graph/errors
 
 <!--
 {

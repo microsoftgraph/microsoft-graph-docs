@@ -106,3 +106,6 @@ The following are the possible values for the limit types.
 All Planer API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
 The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+

@@ -1,7 +1,7 @@
 ---
 title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of serviceprincipal object."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

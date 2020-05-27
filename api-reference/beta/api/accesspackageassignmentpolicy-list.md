@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects.   The resulting list includes all the assignment policies which the caller has access to read, across all catalogs and access packages.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects. If the delegated user is in a directory role, the resulting list includes all the assignment policies that the caller has access to read, across all catalogs and access packages.  If the delegated user is an access package manager or catalog owner, they should instead retrieve the policies for the access packages they can read with [list accessPackages](accesspackage-list.md) by including `$expand=accessPackageAssignmentPolicies` as a query parameter.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve a access package assignment policy with a specified display name, include `$filter=displayName eq 'Employee sales support'` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve an access package assignment policy with a specified display name, include `$filter=displayName eq 'Employee sales support'` in the query. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

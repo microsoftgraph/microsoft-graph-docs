@@ -4,7 +4,7 @@ description: "Delete an appRoleAssignment from a service principal."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # Delete an appRoleAssignment granted to a service principal

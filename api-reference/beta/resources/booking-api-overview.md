@@ -91,6 +91,8 @@ The following table lists the common operations for a business in the Bookings A
 | Get appointments in a date range | [bookingBusiness](bookingbusiness.md) | [List Bookings calendarView](../api/bookingbusiness-list-calendarview.md) |
 | Get currency | [bookingCurrency](bookingcurrency.md) | [Methods of bookingCurrency](bookingcurrency.md#methods) |
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## See also
 

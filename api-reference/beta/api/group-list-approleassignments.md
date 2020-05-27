@@ -4,7 +4,7 @@ description: "Retrieve the list of appRoleAssignments that have been granted to 
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # List appRoleAssignments granted to a group

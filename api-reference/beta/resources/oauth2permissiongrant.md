@@ -4,7 +4,7 @@ description: "Represents the delegated permissions (OAuth 2.0 scopes) which have
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # oAuth2PermissionGrant resource type
