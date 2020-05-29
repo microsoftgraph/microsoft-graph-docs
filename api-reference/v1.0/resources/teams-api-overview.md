@@ -23,7 +23,11 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
 |[chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)| [List](/graph/api/channel-list-messages?view=graph-rest-beta), [send](/graph/api/channel-post-messages?view=graph-rest-beta), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | [call](/graph/api/resources/call?view=graph-rest-beta)| [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
+=======
+|[call](/graph/api/resources/call?view=graph-rest-beta)| [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
+>>>>>>> parent of 42d7497eb3... Update teams-api-overview.md
 =======
 |[call](/graph/api/resources/call?view=graph-rest-beta)| [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
 >>>>>>> parent of 42d7497eb3... Update teams-api-overview.md
@@ -32,6 +36,7 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 |[shift](/graph/api/resources/shift?view=graph-rest-beta)| [Create](/graph/api/schedule-post-shifts?view=graph-rest-beta), [List](/graph/api/schedule-list-shifts?view=graph-rest-beta), [Get](/graph/api/shift-get?view=graph-rest-beta), [Replace](/graph/api/shift-put?view=graph-rest-beta), [Delete](/graph/api/shift-delete?view=graph-rest-beta) |
 |[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta)| [Create](/graph/api/schedule-post-timesoff?view=graph-rest-beta), [List](/graph/api/schedule-list-timesoff?view=graph-rest-beta), [Get](/graph/api/timeoff-get?view=graph-rest-beta), [Replace](/graph/api/timeoff-put?view=graph-rest-beta), [Delete](/graph/api/timeoff-delete?view=graph-rest-beta) |
 |[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta)| [Create](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta), [List](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta), [Get](/graph/api/timeoffreason-get?view=graph-rest-beta), [Replace](/graph/api/timeoffreason-put?view=graph-rest-beta), [Delete](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 ## Microsoft Teams limits
@@ -47,6 +52,8 @@ can also come into play.
 Files inside channels are stored in SharePoint; [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) apply.
 
 See also [throttling limits for Microsoft Teams services](/graph/throttling).
+=======
+>>>>>>> parent of 42d7497eb3... Update teams-api-overview.md
 =======
 >>>>>>> parent of 42d7497eb3... Update teams-api-overview.md
 
