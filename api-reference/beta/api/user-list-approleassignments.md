@@ -4,7 +4,7 @@ description: "Retrieve the list of app role assignments granted to a user."
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # List appRoleAssignments granted to a user

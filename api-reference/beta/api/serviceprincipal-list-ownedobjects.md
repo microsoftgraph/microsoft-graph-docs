@@ -4,7 +4,7 @@ description: "Retrieve a list of objects owned by the servicePrincipal.  This co
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # servicePrincipals: List ownedObjects

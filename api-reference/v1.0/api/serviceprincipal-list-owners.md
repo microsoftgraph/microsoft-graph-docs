@@ -4,7 +4,7 @@ description: "Retrieve a list of owners of the servicePrincipal."
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # servicePrincipals: List owners

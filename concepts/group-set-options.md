@@ -23,7 +23,7 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 | AllowOnlyMembersToPost|Only group *members* can post conversations to the group.|Any user in the organization can post conversations to the group.|
 | HideGroupInOutlook|This group is hidden in Outlook experiences.|All groups are visible and discoverable in Outlook experiences.|
 | SubscribeNewGroupMembers|Group members are subscribed to receive group conversations. |Group members do not receive group conversations.|
-| WelcomeEmailDisabled|A welcome email is sent to a new member on joining the group.|Welcome emails are not sent to new members.|
+| WelcomeEmailDisabled|Welcome emails are not sent to new members.|A welcome email is sent to a new member on joining the group.|
 
 **resourceProvisioningOptions** is a string collection that specifies group resources to be provisioned as part of creating the Microsoft 365 group, that are not normally part of default group creation.
 

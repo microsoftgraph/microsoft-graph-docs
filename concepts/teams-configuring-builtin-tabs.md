@@ -13,6 +13,15 @@ you need to know the `teamsAppId` of the app, and the
 `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` to provide for that kind of app.
 This article explains how to get those values for the built-in tab types.
 
+## Custom tabs
+
+To use Microsoft Graph to configure a tab associated with a [tab provider](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) that you wrote,
+identify the `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl`
+that the app's [configuration UI provides to Microsoft Teams](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest),
+and pass the same `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` values to Microsoft Graph.
+
+The `teamsAppId` is the same as the `id` in the [app manifest schema for Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema).
+
 ## Website tabs
 
 For website tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.web`. The following is the configuration.
@@ -61,3 +70,71 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
   }
 }
 ```
+
+## Document library tabs
+
+For document library tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.files.sharepoint`. 
+The following is the configuration.
+
+| Property   | Type        | Description                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | Empty string ("")                                        |
+| contentUrl | string      | The URL of the root folder of the document library. You can find this URL by opening the SharePoint folder in your browser, copying the URL, and deleting "/Forms/AllItems.aspx" and everything after that. |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      | Null                                                     |
+
+### Example: Create a configured document library tab
+
+The following example creates a configured Word tab.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+    "displayName": "Document%20Library1",
+    "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
+    "configuration": {
+        "entityId": "",
+        "contentUrl": "https://microsoft.sharepoint.com/teams/WWWtest/Shared%20Documents",
+        "removeUrl": null,
+        "websiteUrl": null
+    }
+}
+```
+
+## Wiki tabs
+
+For wiki tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.wiki`.
+Wiki tabs do not support configuration through Graph.
+Note, however, that there isn't much to configure --
+in an un-configured wiki tab, the first user just needs to select **Set up tab** to configure it.
+
+## Planner tabs
+
+For Planner tabs, the teamsAppId is `com.microsoft.teamspace.tab.planner`. 
+Configuration is not supported.
+
+## Microsoft Stream tabs
+
+For Microsoft Stream tabs, the `teamsAppId` is `com.microsoftstream.embed.skypeteamstab`. 
+Configuration is not supported.
+
+## Microsoft Forms tabs
+
+For Microsoft Forms tabs, the `teamsAppId` is `81fef3a6-72aa-4648-a763-de824aeafb7d`.
+Configuration is not supported.
+
+## OneNote tabs
+
+For OneNote tabs, the `teamsAppId` is `0d820ecd-def2-4297-adad-78056cde7c78`. 
+Configuration is not supported.
+
+## Power BI tabs
+
+For Power BI tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.powerbi`.
+Configuration is not supported.
+
+## SharePoint page and list tabs
+
+For SharePoint page and list tabs, the `teamsAppId` is `2a527703-1f6f-4559-a332-d8a7d288cd88`.
+Configuration is not supported.
+If you want to configure the tab, consider using a Website tab.

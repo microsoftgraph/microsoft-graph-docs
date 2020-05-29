@@ -4,7 +4,7 @@ description: "Grant an app role assignment to a service principal."
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # Grant an appRoleAssignment for a service principal

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignment](../resources/accesspackageassignment.md) objects.  The resulting list includes all the assignments, current and well as expired, that the caller has access to read, across all catalogs and access packages.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignment](../resources/accesspackageassignment.md) objects. The resulting list includes all the assignments, current and well as expired, that the caller has access to read, across all catalogs and access packages.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to also return the target user and access package, include `$expand=target,accessPackage`. To retrieve only delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`. To retrieve only assignments for a particular user, you can include a query with assignments targeting the object ID of that user `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.  To retrieve only assignments for a particular user and a particular access package, you can include a query with assignments targeting that access package and the object ID of that user `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.
+This method supports some of the OData query parameters to help customize the response. For example, to also return the target subject and access package, include `$expand=target,accessPackage`. To retrieve only delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`. To retrieve only assignments for a particular user, you can include a query with assignments targeting the object ID of that user: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.  To retrieve only assignments for a particular user and a particular access package, you can include a query with assignments targeting that access package and the object ID of that user: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.
 
 For general information, see [OData query parameters](/graph/query-parameters).
 

@@ -128,6 +128,8 @@ Namespace: microsoft.graph.callRecords
 | unknown
 | frequency24GHz
 | frequency50GHz
+| frequency60GHz
+| unknownFutureValue
 
 ### wifiRadioType values
 

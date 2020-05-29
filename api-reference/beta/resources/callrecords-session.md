@@ -18,8 +18,10 @@ in the case of a Conference call.
 
 ## Methods
 
-No methods exist to directly access sessions. Please use the [Get callRecord](../api/callrecords-callrecord-get.md)
-api with `$expand=sessions` to get the sessions for a [callRecord](callrecords-callrecord.md).
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [List sessions](../api/callrecords-session-list.md) | [microsoft.graph.callRecords.session](callrecords-session.md) collection | Retrieve the list of sessions associated with a [callRecord](callrecords-callrecord.md) object.
+ |
 
 ## Properties
 

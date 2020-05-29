@@ -4,7 +4,7 @@ description: "Retrieve a list of servicePrincipal objects."
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # List servicePrincipals
