@@ -4,7 +4,7 @@ description: "Get the groups and directory roles that this service principal is 
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # List servicePrincipal transitive memberOf

@@ -4,7 +4,7 @@ description: "Delete servicePrincipal."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # Delete servicePrincipal

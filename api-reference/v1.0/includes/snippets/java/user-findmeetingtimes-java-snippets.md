@@ -31,18 +31,18 @@ locationConstraint.locations = locationsList;
 
 TimeConstraint timeConstraint = new TimeConstraint();
 timeConstraint.activityDomain = ActivityDomain.WORK;
-LinkedList<TimeSlot> timeslotsList = new LinkedList<TimeSlot>();
-TimeSlot timeslots = new TimeSlot();
+LinkedList<TimeSlot> timeSlotsList = new LinkedList<TimeSlot>();
+TimeSlot timeSlots = new TimeSlot();
 DateTimeTimeZone start = new DateTimeTimeZone();
 start.dateTime = "2019-04-16T09:00:00";
 start.timeZone = "Pacific Standard Time";
-timeslots.start = start;
+timeSlots.start = start;
 DateTimeTimeZone end = new DateTimeTimeZone();
 end.dateTime = "2019-04-18T17:00:00";
 end.timeZone = "Pacific Standard Time";
-timeslots.end = end;
-timeslotsList.add(timeslots);
-timeConstraint.timeslots = timeslotsList;
+timeSlots.end = end;
+timeSlotsList.add(timeSlots);
+timeConstraint.timeSlots = timeSlotsList;
 
 boolean isOrganizerOptional = false;
 

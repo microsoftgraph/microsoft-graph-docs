@@ -4,7 +4,7 @@ description: "Create an oAuth2PermissionGrant object, representing a delegated p
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # Create a delegated permission grant (oAuth2PermissionGrant)

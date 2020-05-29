@@ -4,7 +4,7 @@ description: "Get the list of groups and directory roles that this service princ
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # servicePrincipal: getMemberObjects

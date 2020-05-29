@@ -20,6 +20,7 @@ Represents a single peer-to-peer call or a group call between multiple participa
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read properties and relationships of callRecord object. |
+
 ## Properties
 
 | Property     | Type        | Description |
