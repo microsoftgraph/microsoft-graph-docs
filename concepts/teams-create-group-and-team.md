@@ -100,7 +100,9 @@ To add members after a team is created, you use the [add member](/graph/api/grou
 
 2. The background process is triggered only if one or more users in the team (owner or member) is active in the Teams desktop client. Launching the Teams application and/or having it running constitutes activity — a user does not need to visit the team that is being modified specifically.
 
-    >**Note:** The Teams mobile clients do not trigger the membership sync. At least one user should be on the desktop client to that ensure this background process goes smoothly.
+    >**Note:** The Teams mobile clients do not trigger the membership sync. At least one user should be on the desktop client to ensure that this background process goes smoothly.
+
+To add bulk members after a team is created, use the [add bulk members](/graph/api/team-add-bulkmembers?view=graph-rest-1.0) operation.
 
 ## Checklist for validation
 
