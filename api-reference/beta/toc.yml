@@ -11213,6 +11213,8 @@ items:
           href: api/team-update.md
         - name: Delete team
           href: api/group-delete.md
+        - name: Add bulk members
+          href: api/team-add-bulkmembers.md 
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
