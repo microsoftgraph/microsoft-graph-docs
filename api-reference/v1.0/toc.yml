@@ -4583,6 +4583,8 @@ items:
           href: api/team-get.md
         - name: Update team
           href: api/team-update.md
+        - name: Add bulk members
+          href: api/team-add-bulkmembers.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
