@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam emails, phishing URLs or malware attachments they receive to Microsoft. The policy check result and rescan result can help tenant administrators understand the threat scanning verdict and adjust their organizational policy.
 
+The APIs will get only the Admin submissions and won't retrieve the user Admissions
+
 ## Authorization
 
 Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access threat assessment resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Threat assessment permissions](/graph/permissions-reference#threat-assessment-permissions).
