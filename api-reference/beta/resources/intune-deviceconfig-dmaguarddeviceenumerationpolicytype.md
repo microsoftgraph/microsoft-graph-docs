@@ -20,7 +20,7 @@ Possible values of the DmaGuardDeviceEnumerationPolicy.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|deviceDefault|0|Default value. Devices with DMA remapping incompatible drivers will only be enumerated after the user unlocks the screen.|
+|deviceDefault|0|Default value. Devices with [DMA remapping](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers) incompatible drivers will only be enumerated after the user unlocks the screen.|
 |blockAll|1|Devices with DMA remapping incompatible drivers will never be allowed to start and perform DMA at any time.|
 |allowAll|2|All external DMA capable PCIe devices will be enumerated at any time.|
 
