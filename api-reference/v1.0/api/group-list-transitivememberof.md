@@ -107,6 +107,12 @@ Content-type: application/json
   ]
 }
 ```
+<<<<<<< Updated upstream
+=======
+## See also
+
+[Create a group and team](/graph/teams-create-group-and-team)
+>>>>>>> Stashed changes
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
