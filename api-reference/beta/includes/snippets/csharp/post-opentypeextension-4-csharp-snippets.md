@@ -13,22 +13,16 @@ var post = new Post
 		ContentType = BodyType.Html,
 		Content = "<html><body><div><div><div><div>When and where? </div></div></div></div></body></html>"
 	},
-	Extensions = new List<Extension>()
+	Extensions = (IPostExtensionsCollectionPage)new List<Extension>()
 	{
-		new Extension
+		new OpenTypeExtension
 		{
+			ExtensionName = "Com.Contoso.HR",
 			AdditionalData = new Dictionary<string, object>()
 			{
-				{"@odata.type","microsoft.graph.openTypeExtension"}
-			},
-			ExtensionName = "Com.Contoso.HR",
-			CompanyName = "Contoso",
-			ExpirationDate = "2015-07-03T13:04:00Z",
-			TopPicks = new List<String>()
-			{
-				"Employees only",
-				"Add spouse or guest",
-				"Add family"
+				{"companyName", "Contoso"},
+				{"expirationDate", "2015-07-03T13:04:00Z"},
+				{"topPicks", "[\"Employees only\",\"Add spouse or guest\",\"Add family\"]"}
 			}
 		}
 	}

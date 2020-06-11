@@ -8,12 +8,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var contentInfo = new ContentInfo
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"metadata@odata.type","#Collection(microsoft.graph.keyValuePair)"},
-		{"state@odata.type","#microsoft.graph.contentState"},
-		{"format@odata.type","#microsoft.graph.contentFormat"}
-	},
 	Format = ContentFormat.Default,
 	Identifier = null,
 	State = ContentState.Rest,
@@ -54,22 +48,28 @@ var contentInfo = new ContentInfo
 			Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
 			Value = "00000000-0000-0000-0000-000000000000"
 		}
+	},
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"format@odata.type", "#microsoft.graph.contentFormat"},
+		{"state@odata.type", "#microsoft.graph.contentState"},
+		{"metadata@odata.type", "#Collection(microsoft.graph.keyValuePair)"}
 	}
 };
 
 var labelingOptions = new LabelingOptions
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"extendedProperties@odata.type","#Collection(microsoft.graph.keyValuePair)"},
-		{"labelId@odata.type","#Guid"},
-		{"assignmentMethod@odata.type","#microsoft.graph.assignmentMethod"}
-	},
 	AssignmentMethod = AssignmentMethod.Standard,
 	LabelId = Guid.Parse("97309856-9c28-4ac6-9382-5f8bc20c457b"),
 	DowngradeJustification = null,
 	ExtendedProperties = new List<KeyValuePair>()
 	{
+	},
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"assignmentMethod@odata.type", "#microsoft.graph.assignmentMethod"},
+		{"labelId@odata.type", "#Guid"},
+		{"extendedProperties@odata.type", "#Collection(microsoft.graph.keyValuePair)"}
 	}
 };
 

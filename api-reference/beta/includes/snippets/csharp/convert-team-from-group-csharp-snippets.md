@@ -8,12 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var team = new Team
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"group@odata.bind","https://graph.microsoft.com/v1.0/groups('groupId')"},
-		{"template@odata.bind","https://graph.microsoft.com/beta/teamsTemplates('standard')"}
-	},
-	Channels = new List<Channel>()
+	Channels = (ITeamChannelsCollectionPage)new List<Channel>()
 	{
 		new Channel
 		{
@@ -34,22 +29,27 @@ var team = new Team
 		AllowCreateUpdateRemoveTabs = false,
 		AllowCreateUpdateRemoveConnectors = false
 	},
-	InstalledApps = new List<TeamsAppInstallation>()
+	InstalledApps = (ITeamInstalledAppsCollectionPage)new List<TeamsAppInstallation>()
 	{
 		new TeamsAppInstallation
 		{
 			AdditionalData = new Dictionary<string, object>()
 			{
-				{"teamsApp@odata.bind","https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"}
+				{"teamsApp@odata.bind", "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"}
 			}
 		},
 		new TeamsAppInstallation
 		{
 			AdditionalData = new Dictionary<string, object>()
 			{
-				{"teamsApp@odata.bind","https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"}
+				{"teamsApp@odata.bind", "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"}
 			}
 		}
+	},
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('standard')"},
+		{"group@odata.bind", "https://graph.microsoft.com/v1.0/groups('groupId')"}
 	}
 };
 

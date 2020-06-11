@@ -32,7 +32,7 @@ Because user and group are so frequently used, these resources appear first.  Ot
 | **lastDirSyncDateTime** | beta &nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br> v1.0 &nbsp;-&nbsp; **onPremisesLastSyncDateTime** | |
 | **mobile** | beta  &nbsp;-&nbsp; **mobilePhone** <br> v1.0 &nbsp;-&nbsp; **mobilePhone** | |
 | **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
-| **refreshTokensValidFromDateTime** | beta&nbsp;-&nbsp;**signinSessionsValidFromDateTime**<br>v1.0&nbsp;-&nbsp;_Not yet available_ | |
+| **refreshTokensValidFromDateTime** | beta&nbsp;-&nbsp;**signinSessionsValidFromDateTime**<br>v1.0&nbsp;-&nbsp;**signinSessionsValidFromDateTime** | |
 | **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> v1.0 &nbsp;-&nbsp; **identities/signInType** | This property is now part of the [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) resource.|
 | **telephoneNumber** | beta  &nbsp;-&nbsp; **businessPhones** <br> v1.0 &nbsp;-&nbsp; **businessPhones** | |
 | **thumbnailPhoto** | beta  &nbsp;-&nbsp; **photo**, photos <br> v1.0 &nbsp;-&nbsp; **photo**, photos | The Azure AD thumbnail photo is not available through Microsoft Graph.  Use the [photo API](/graph/api/resources/profilephoto?view=graph-rest-1.0) instead. |
@@ -141,8 +141,8 @@ The Azure AD Graph directoryObjectReference resource has been renamed to directo
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **expiryTime** | beta&nbsp;-&nbsp;**expiryTime** <br> v1.0&nbsp;-&nbsp;_Not&nbsp;yet&nbsp;available_ | This property is not used and will likely be removed in Microsoft Graph. |
-| **startTime** | beta&nbsp;-&nbsp;**startTime** <br> v1.0&nbsp;-&nbsp;_Not&nbsp;yet&nbsp;available_  | This property is not used and will likely be removed in Microsoft Graph. |
+| **expiryTime** | beta&nbsp;-&nbsp;**expiryTime** <br> v1.0&nbsp;-&nbsp;_Removed_ | This property is not used and is removed in Microsoft Graph v1.0. |
+| **startTime** | beta&nbsp;-&nbsp;**startTime** <br> v1.0&nbsp;-&nbsp;_Removed_  | This property is not used and is removed in Microsoft Graph v1.0. |
 
 ## Policy property differences
 

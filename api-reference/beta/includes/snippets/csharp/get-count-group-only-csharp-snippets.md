@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var int32 = await graphClient.ServicePrincipals["{id}"].MemberOf.Microsoft.graph.group.$count
+var int32 = await graphClient.ServicePrincipals["{id}"].MemberOf.$count
 	.Request()
 	.Header("ConsistencyLevel","eventual")
 	.GetAsync();

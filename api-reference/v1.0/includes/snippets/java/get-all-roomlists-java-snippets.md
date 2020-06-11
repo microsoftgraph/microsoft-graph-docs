@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IRoomListCollectionPage microsoft.graph.roomlist = graphClient.places().microsoft.graph.roomlist()
+IRoomListCollectionPage roomlist = graphClient.places().microsoft.graph.roomlist()
 	.buildRequest()
 	.get();
 

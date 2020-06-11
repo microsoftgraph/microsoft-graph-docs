@@ -10,7 +10,7 @@ var keyCredential = new KeyCredential
 {
 	Type = "X509CertAndPassword",
 	Usage = "Sign",
-	Key = "MIIDYDCCAki..."
+	Key = Encoding.ASCII.GetBytes("MIIDYDCCAki...")
 };
 
 var passwordCredential = new PasswordCredential

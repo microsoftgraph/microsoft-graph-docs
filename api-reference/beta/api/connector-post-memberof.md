@@ -44,6 +44,8 @@ If successful, this method returns `201 Created` response code and [connectorGro
 ## Example
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_connectorgroup_from_connector"
@@ -58,6 +60,12 @@ Content-length: 99
   "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-connectorgroup-from-connector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

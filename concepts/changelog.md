@@ -37,6 +37,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **OnPremisesPublishing** property to [Update Application](/graph/api/application-update?view=graph-rest-beta). |
 | Addition | beta | Added new resources [authenticationFlowsPolicy](/graph/api/resources/authenticationflowspolicy?view=graph-rest-beta) and [selfServiceSignUpAuthenticationFlowConfiguration](/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-beta) and [get](/graph/api/authenticationflowspolicy-get?view=graph-rest-beta) and [update](/graph/api/authenticationflowspolicy-update?view=graph-rest-beta) operations.|
 
+### Security
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition | beta and v1.0 | Added the following properties to the [alert](/graph/api/resources/alert?view=graph-rest-1.0) entity:  **incidentIds**, [securityResources](/graph/api/resources/securityResource?view=graph-rest-1.0) - **resource**, **resourceType**,[networkConnection](/graph/api/resources/networkconnection?view=graph-rest-1.0) - **sourceLocation**, **destinationLocation**.|
+
 ### Teamwork
 
 | **Change type** | **Version** | **Description**                          |
@@ -56,9 +62,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta | Added the [changeNotification](/graph/api/resources/change-notification?view=graph-rest-beta), [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta), and [changeNotificationEncryptedContent](/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta) resources for the [change notification](/graph/api/concepts/webhooks) API. |
+| Addition | beta | Added the [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta), [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta), and [changeNotificationEncryptedContent](/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta) resources for the [change notification](/graph/api/concepts/webhooks) API. |
 | Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) in [Microsoft Cloud for US Government](deployments.md). |
-| Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) to Azure Active Directory objects (Users, Groups) in [Microsoft Cloud China operated by 21Vianet](deployments.md). |
+
 
 ### Cloud communications | Call records
 
@@ -70,9 +76,9 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | v1.0 | Added new entities:<br /><li>[callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0)</li> <li>[session](/graph/api/resources/callrecords-session?view=graph-rest-1.0)</li> <li>[segment](/graph/api/resources/callrecords-segment?view=graph-rest-1.0)</li>|
 | Addition | v1.0 | Added new complex types:<br /><li>[endpoint](/graph/api/resources/callrecords-endpoint?view=graph-rest-1.0)</li> <li>[participantEndpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-1.0)</li> <li>[serviceEndpoint](/graph/api/resources/callrecords-serviceendpoint?view=graph-rest-1.0)</li> <li>[userAgent](/graph/api/resources/callrecords-useragent?view=graph-rest-1.0)</li> <li>[serviceUserAgent](/graph/api/resources/callrecords-serviceuseragent?view=graph-rest-1.0)</li> <li>[clientUserAgent](/graph/api/resources/callrecords-clientuseragent?view=graph-rest-1.0)</li> <li>[userfeedback](/graph/api/resources/callrecords-userfeedback?view=graph-rest-1.0)</li> <li>[feedbackTokenSet](/graph/api/resources/callrecords-feedbacktokenset?view=graph-rest-1.0)</li> <li>[media](/graph/api/resources/callrecords-media?view=graph-rest-1.0)</li> <li>[mediaStream](/graph/api/resources/callrecords-mediastream?view=graph-rest-1.0)</li> <li>[networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-1.0)</li> <li>[deviceInfo](/graph/api/resources/callrecords-deviceinfo?view=graph-rest-1.0)</li> <li>[failureInfo](/graph/api/resources/callrecords-failureinfo?view=graph-rest-1.0)</li> |
 | Addition | v1.0 | Added support for [webhook](webhooks.md) subscriptions to call records.|
-| Change | beta | Added `frequency60GHz` and `unknownFutureValue` to the **microsoft.graph.callRecords.wifiBand** enum.|
-| Change | beta | Added `voicemail` to the **microsoft.graph.callRecords.serviceRole** enum.|
-| Addition | beta | Added the [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta) API. |
+| Change | v1.0 | Added `frequency60GHz` and `unknownFutureValue` to the **microsoft.graph.callRecords.wifiBand** enum.|
+| Change | v1.0 | Added `voicemail` to the **microsoft.graph.callRecords.serviceRole** enum.|
+| Addition | v1.0 | Added the [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta) API. |
 
 ### Devices and apps | Cloud printing
 
@@ -83,7 +89,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Change | beta | Deprecated the **name** and **acceptingJobs** properties on the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
 | Change | beta | Deprecated the **printerShares** navigation property on the [print](/graph/api/resources/print?view=graph-rest-beta) entity.<br/> Soon, URL paths such as "/print/printerShares/\*" will stop working. Use "/print/shares/\*" instead. |
 | Change | beta | Deprecated the **registeredBy** property on the [printer](/graph/api/resources/printerShare?view=graph-rest-beta) entity. |
-| Addition | beta | Added the **shares** navigation property on the [print](/graph/api/resources/print?view=graph-rest-beta) entity. |
+| Addition | beta | Added the **shared** navigation property on the [print](/graph/api/resources/print?view=graph-rest-beta) entity. |
 | Addition | beta | Added **displayName** and **isAcceptingJobs** properties to the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
 | Addition | beta | Added properties to the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity: <br/> <ul><li>**manufacturer**</li><li>**model**</li><li>**isAcceptingJobs**</li><li>**defaults**</li><li>**capabilities**</li><li>**location**</li><li>**status**</li><li>**jobs**</li></ul> |
 
@@ -125,6 +131,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Addition|beta|Added the [evaluateDynamicMembership](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta) action on [group](/graph/api/resources/group?view=graph-rest-beta). Also added these supporting resource types:<ul><li>[evaluateDynamicMembershipResult](/graph/api/resources/evaluatedynamicmembershipresult?view=graph-rest-beta)</li><li>[expressionEvaluationDetails](/graph/api/resources/expressionevaluationdetails?view=graph-rest-beta)</li><li>[propertyToEvaluate](/graph/api/resources/propertytoevaluate?view=graph-rest-beta)</li></ul>|
 | Addition | beta | Added the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) entity.|
 | Addition | v1.0 | Added the **onPremisesDomainName**, **onPremisesNetBiosName** and **onPremisesSamAccountName** properties to the [group](/graph/api/resources/group?view=graph-rest-1.0) entity.|
+| Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) to the **group** resource in [Microsoft Cloud China operated by 21Vianet](deployments.md). |
 
 ### Identity and access
 
@@ -160,11 +167,12 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added the **externalUserState** and **externalUserStateChangeDateTime** properties to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
+| Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) to the **user** resource in [Microsoft Cloud China operated by 21Vianet](deployments.md). |
+
 
 ## April 2020
 
 ### Calendar
-
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Addition | v1.0 | Added new entity [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0). |

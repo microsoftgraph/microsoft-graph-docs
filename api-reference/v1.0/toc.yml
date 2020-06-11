@@ -4660,9 +4660,10 @@ items:
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
-      - name: App Catalog
-        href: resources/teamsapp.md
+      - name: App catalog
         items:
+        - name: App in catalog
+          href: resources/teamsapp.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog

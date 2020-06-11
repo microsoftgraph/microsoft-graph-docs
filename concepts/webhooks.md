@@ -192,15 +192,16 @@ If successful, Microsoft Graph returns a `204 No Content` code.
 
 ## Change notifications
 
-The client starts receiving change notifications after creating the subscription. Microsoft Graph sends a POST request to the notification URL when the resource changes. Change notifications are sent only for the changes of the type specified in the subscription, for example, `created`.
+With a client subscribing to changes to a resource, Microsoft Graph sends a `POST` request to the notification URL whenever the resource changes. It sends notifications only for changes of the type that's specified in the subscription, for example, `created`.
 
-> **Note:** When using multiple subscriptions that monitor the same resource type and use the same notification URL, a POST can be sent that will contain multiple change notifications with different subscription IDs. There is no guarantee that all change notifications in the POST will belong to a single subscription.
+> **Note:** If a client has multiple subscriptions that monitor the same resource and use the same notification URL, Microsoft Graph can send multiple change notifications that correspond to different subscriptions, each showing the corresponding subscription ID. There is no guarantee that all change notifications in the `POST` request belong to a single subscription.
 
 ### Change notification example
 
-> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
+This section shows an example of a notification for a message creation. When the user receives an email, Microsoft Graph sends a change notification as shown in the following example.
+Note that the notification is in a collection represented in the `value` field. See [changeNotificationCollection](/graph/api/resources/changenotificationcollection) for details of the notification payload. 
 
-When the user receives an email, Microsoft Graph sends a change notification like the following:
+When many changes occur, Microsoft Graph may send multiple notifications that correspond to different subscriptions in the same `POST` request.
 
 ```json
 {
@@ -208,29 +209,27 @@ When the user receives an email, Microsoft Graph sends a change notification lik
     {
       "id": "lsgTZMr9KwAAA",
       "sequenceNumber": 10,
-      "subscriptionId":"<subscription_guid>",
+      "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
       "changeType":"created",
-      "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "resource":"users/{user_guid}@{tenant_guid}/messages/{long_id_string}",
       "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
-        "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
+        "@odata.id":"Users/{user_guid}@{tenant_guid}/Messages/{long_id_string}",
         "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-        "id":"<long_id_string>"
+        "id":"{long_id_string}"
       }
     }
   ]
 }
 ```
 
-> **Note:** the `value` field is an array of objects. When many change notifications are queued, Microsoft Graph might send multiple items in a single request. Change notifications from different subscriptions can be included in the same request.
-
 ### Processing the change notification
 
-Each change notification received by your app should be processed. The following are the minimum tasks that your app must perform to process a change notification:
+Your process should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification:
 
 1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the change notification a number of times, for a period of about 4 hours; after that, the change notification will be dropped and won't be delivered.
 
@@ -264,6 +263,8 @@ You can optionally configure the firewall that protects your notification URL to
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type
+- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type
 - [Change notifications tutorial](/graph/tutorials/change-notifications)
 - [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
 

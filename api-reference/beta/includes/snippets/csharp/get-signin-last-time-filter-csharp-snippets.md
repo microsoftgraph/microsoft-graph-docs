@@ -9,10 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var users = await graphClient.Users
 	.Request()
 	.Filter("startswith(displayName,'Eric'),")
-	.Select( e => new {
-			 e.DisplayName,
-			 e.SignInActivity 
-			 })
+	.Select("displayName,signInActivity")
 	.GetAsync();
 
 ```

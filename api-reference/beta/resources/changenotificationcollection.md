@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of subscription notifications sent to the subscriber.
+Represents a collection of resource change notifications sent to the subscriber.
 
 For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
 

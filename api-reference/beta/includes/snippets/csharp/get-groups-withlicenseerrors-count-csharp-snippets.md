@@ -10,10 +10,7 @@ var groups = await graphClient.Groups
 	.Request()
 	.Header("ConsistencyLevel","eventual")
 	.Filter("hasMembersWithLicenseErrors+eq+true,")
-	.Select( e => new {
-			 e.Id,
-			 e.DisplayName 
-			 })
+	.Select("id,displayName")
 	.GetAsync();
 
 ```

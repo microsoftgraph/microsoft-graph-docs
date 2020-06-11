@@ -10,7 +10,7 @@ var printIdentity = new PrintIdentity
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"@odata.id","https://graph.microsoft.com/beta/groups/{id}"}
+		{"@odata.id", "https://graph.microsoft.com/beta/groups/{id}"}
 	}
 };
 
