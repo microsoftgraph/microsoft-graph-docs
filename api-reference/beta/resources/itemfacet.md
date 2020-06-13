@@ -17,7 +17,7 @@ Represents the abstract base type that all resource types in the [profile](profi
 
 ## Properties
 
-| Property             | Type                            | Description                                                                                                                                                                                    |
+| Property             | Type                           | Description                                                                                                                                                                                    |
 |:---------------------|:--------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |allowedAudiences      |string                           | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
 |createdBy             |[identitySet](identityset.md)    | When the entity was originally created.                                                                                                                                                        |
