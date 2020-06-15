@@ -112,6 +112,9 @@ A URL constructed with only the hostname and siteCollection (`SPSite`) ID will p
 GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id}
 ```
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 [site]: site.md
 [list]: list.md
 [drive]: drive.md

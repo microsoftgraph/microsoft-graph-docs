@@ -96,8 +96,9 @@ const options: any = {
 
 ```java
 // Get an input stream for the file
-InputStream fileStream = new FileInputStream(localFilePath);
-long streamSize = (long)fileStream.available();
+File file = new File(localFilePath);
+InputStream fileStream = new FileInputStream(file);
+long streamSize = file.length();
 
 // Create a callback used by the upload provider
 IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {

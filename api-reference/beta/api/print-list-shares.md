@@ -60,15 +60,15 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/print/shares
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-printershares-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-shares-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-printershares-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-shares-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-printershares-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-shares-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

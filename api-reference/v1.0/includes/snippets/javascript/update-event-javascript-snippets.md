@@ -22,7 +22,8 @@ const event = {
   reminderMinutesBeforeStart: 99,
   isOnlineMeeting: true,
   onlineMeetingProvider: "teamsForBusiness",
-  isReminderOn: true
+  isReminderOn: true,
+  categories: ["Red category"]
 };
 
 let res = await client.api('/me/events/{id}')

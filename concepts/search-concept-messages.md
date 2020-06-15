@@ -38,7 +38,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.message"
+        "message"
       ],
       "query": {
         "query_string": {
@@ -114,7 +114,8 @@ The following is an example of the response, which contains one message that mat
 ```
 
 ### Example 2: Search top results messages
-The following example uses the search query shown in [Example 1](#example-1), and sorts the results by relevance. 
+
+The following example uses the search query shown in Example 1, and sorts the results by relevance. 
 
 <!-- markdownlint-disable MD024 -->
 #### Request
@@ -129,7 +130,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.message"
+        "message"
       ],
       "query": {
         "query_string": {

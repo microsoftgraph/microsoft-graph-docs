@@ -55,6 +55,9 @@ https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) in the v1.0 endpoint.
+
 ## Connect with us
 
 Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632).

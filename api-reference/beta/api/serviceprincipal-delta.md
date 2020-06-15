@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 
 ## Permissions
 
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.All, Directory.Read.All |
+|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -65,14 +65,13 @@ _id_ property is always returned.
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
-| Content-Type  | application/json |
 
 ## Request body
 Do not supply a request body for this method.
 
 ### Response
 
-If successful, this method returns `200 OK` response code and [servicePrincipal](../resources/serviceprincipal.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
+If successful, this method returns a `200 OK` response code and [servicePrincipal](../resources/serviceprincipal.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
 
 - If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
 
@@ -82,8 +81,8 @@ See:</br>
 - [Using Delta Query](/graph/delta-query-overview) for more details</br>
 - [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
 
-### Example
-##### Request
+## Example
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,8 +107,8 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 ---
 
 
-##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+>Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- { 
   "blockType": "response",
   "truncated": true,

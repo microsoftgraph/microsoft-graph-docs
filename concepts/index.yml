@@ -88,7 +88,7 @@ conceptualContent:
           text: Use the SDKs
         - url: /graph/toolkit/overview
           itemType: overview
-          text: Use the toolkit (preview)
+          text: Use the toolkit
 
 additionalContent:
   sections:

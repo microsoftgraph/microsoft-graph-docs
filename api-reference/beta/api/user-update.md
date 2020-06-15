@@ -87,6 +87,9 @@ In the request body, supply the values for relevant fields that should be update
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **user** instance.
 
+> [!NOTE] 
+> The follow properties cannot be updated using an application-only context: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code.

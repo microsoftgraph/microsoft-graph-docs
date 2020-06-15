@@ -14,7 +14,7 @@ const oAuth2PermissionGrant = {
   scope: "scope-value"
 };
 
-let res = await client.api('/oAuth2Permissiongrants/{id}')
+let res = await client.api('/oauth2PermissionGrants/{id}')
 	.version('beta')
 	.update(oAuth2PermissionGrant);
 

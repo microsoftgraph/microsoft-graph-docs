@@ -16,6 +16,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
+          - text: ASP.NET Core
+            url: /graph/tutorials/aspnet-core
           - text: ASP.NET
             url: /learn/modules/msgraph-build-aspnetmvc-apps
           - text: Node.js

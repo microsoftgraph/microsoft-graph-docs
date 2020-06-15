@@ -112,3 +112,6 @@ The search API has the following limitations:
   - Sort **message** or **event** type results by date.
 
   - Sort **driveItem**, **externalFile**, or **externalItem** type results by relevance.
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

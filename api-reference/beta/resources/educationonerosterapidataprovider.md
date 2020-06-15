@@ -52,3 +52,15 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }
 ```
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2020-05-06 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "educationOneRosterApiDataProvider resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.settings"
+  ]
+}-->

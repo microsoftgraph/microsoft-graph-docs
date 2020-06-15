@@ -8,9 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var analytics = await graphClient.Me.Analytics
 	.Request()
-	.Select( e => new {
-			 e.Settings 
-			 })
+	.Select("Settings")
 	.GetAsync();
 
 var settings = analytics.Settings;

@@ -46,6 +46,9 @@ The following are current knownlimitations:
 - Refining and sorting results is not supported.
 - Result ranking is best effort.
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 ## Next steps
 
 - See the [Microsoft Search API overview](/graph/search-concept-overview).

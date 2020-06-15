@@ -14,7 +14,7 @@ const decline = {
   message: "message-value"
 };
 
-let res = await client.api('/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline')
+let res = await client.api('/teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline')
 	.version('beta')
 	.post(decline);
 

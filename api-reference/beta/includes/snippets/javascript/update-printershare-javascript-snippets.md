@@ -15,7 +15,7 @@ const printerShare = {
   printer@odata.bind: "https://graph.microsoft.com/beta/print/printers/{id}"
 };
 
-let res = await client.api('/print/printerShares/{id}')
+let res = await client.api('/print/shares/{id}')
 	.version('beta')
 	.update(printerShare);
 

@@ -110,4 +110,5 @@ Microsoft Graph allows your app to create [sharing links](../api/driveitem-creat
 
 Microsoft Graph also provides a way for your app to [access shared content](../api/shares-get.md) directly from a sharing link.
 
- 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

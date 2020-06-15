@@ -11,7 +11,7 @@ var comment = "comment-value";
 var sendResponse = true;
 
 await graphClient.Me.Events["{id}"]
-	.TentativelyAccept(sendResponse,comment)
+	.TentativelyAccept(null,sendResponse,comment)
 	.Request()
 	.PostAsync();
 

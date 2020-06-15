@@ -1,6 +1,6 @@
 ---
 title: "National cloud deployments"
-description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services that are confined within the geographic borders of specific countries and operated by local personnel."
+description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds."
 ---
 
 # National cloud deployments
@@ -69,7 +69,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Reports  |➖| ✔ |➖|
-| Change notifications (webhooks)  | ➖|✔* |✔* |
+| Change notifications (webhooks)  | ✔ |✔ |✔* |
 | Delta query | ➖ | ✔ | ➖ |
 | Directory schema extensions |➖|➖|➖|
 | Open type extensions|➖|➖|➖|
@@ -79,7 +79,6 @@ The following additional Microsoft Graph features are available in preview (on t
 * Organizational Contacts
 * Applications
 * Service Principals
-* Change notifications (webhooks)
 
 (*) Limited support for Exchange and OneDrive services only. Azure AD services are not supported. 
 

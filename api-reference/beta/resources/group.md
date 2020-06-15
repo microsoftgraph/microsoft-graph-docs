@@ -46,7 +46,7 @@ This resource supports:
 |[Add member](../api/group-post-members.md) |[directoryObject](directoryobject.md)| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
 |[Remove member](../api/group-delete-members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
 |[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administrative units that this group is a direct member of from the memberOf navigation property.|
-|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that this user is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
+|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|Check for membership in a list of groups. The function is transitive.|
 |[checkMemberObjects](../api/group-checkmemberobjects.md)|String collection|Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive.|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
@@ -60,6 +60,11 @@ This resource supports:
 |[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. |
 |[assignLicense](../api/group-assignlicense.md) | [group](group.md) |Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription.|
+|[evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Evaluate whether a user or device is or would be a member of a dynamic group. |
+|**App role assignments**| | |
+|[List appRoleAssignments](../api/group-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get the apps and app roles which this group has been assigned.|
+|[Add appRoleAssignment](../api/group-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Assign an app role to this group.|]
+|[Remove appRoleAssignment](../api/group-delete-approleassignments.md) | None. | Remove an app role assignment from this group.|
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|
@@ -94,7 +99,7 @@ This resource supports:
 |**User settings**| | |
 |[addFavorite](../api/group-addfavorite.md)|None|Add the group to the list of the signed-in user's favorite groups. Supported for only Office 365 groups.|
 |[removeFavorite](../api/group-removefavorite.md)|None|Remove the group from the list of the signed-in user's favorite groups. Supported for Office 365 Groups only.|
-|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administative units that this user is a direct member of, from the **memberOf** navigation property.|
+|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administrative units that this user is a direct member of, from the **memberOf** navigation property.|
 |[List joinedTeams](../api/user-list-joinedteams.md) |[group](group.md) collection| Get the Microsoft Teams that the user is a direct member of.|
 |[subscribeByMail](../api/group-subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the signed-in user to receive email conversations. Supported for Office 365 Groups only.|
 |[unsubscribeByMail](../api/group-unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the signed-in user from receive email conversations. Supported for Office 365 Groups only.|
@@ -138,8 +143,8 @@ This resource supports:
 |preferredLanguage|String|The preferred language for an Office 365 group. Should follow ISO 639-1 Code; for example "en-US". <br><br>Returned by default. |
 |proxyAddresses|String collection| Email addresses for the group that direct to the same group mailbox. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. The **any** operator is required for filter expressions on multi-valued properties. <br><br>Returned by default. Read-only. Not nullable. Supports $filter. |
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/grouplifecyclepolicy-renewgroup.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only.|
-|resourceBehaviorOptions|String collection|Specifies the group behaviors that can be set for an Office 365 group during creation. This can be set only as part of creation (POST). Possible values are `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`.  More details are available later in this topic.|
-|resourceProvisioningOptions|String collection|Specifies the group resources that are provisioned as part of Office 365 group creation, that are not normally part of default group creation. Possible value is `Teams`. More details are available later in this topic.|
+|resourceBehaviorOptions|String collection|Specifies the group behaviors that can be set for an Office 365 group during creation. This can be set only as part of creation (POST). Possible values are `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. For more information, see [Set Microsoft 365 group behaviors and provisioning options](/graph/group-set-options).|
+|resourceProvisioningOptions|String collection|Specifies the group resources that are provisioned as part of Office 365 group creation, that are not normally part of default group creation. Possible value is `Team`. For more information, see [Set Microsoft 365 group behaviors and provisioning options](/graph/group-set-options).|
 |securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports `$filter`.|
 |securityIdentifier|String|Security identifier of the group, used in Windows scenarios. <br><br>Returned by default.|
 |theme|String|Specifies an Office 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` or `Red`. <br><br>Returned by default. |
@@ -158,24 +163,6 @@ Here's what each **visibility** property value means:
 | Private | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
 | Hiddenmembership | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
 
-### Provisioning and configuring groups
-
-You can further configure groups using the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties.
-
-**resourceBehaviorOptions** is a string collection that specifies the group behaviors that can be set for an Office 365 group. This can be set only as part of creation (POST):
-
-| resourceBehaviorOptions   |Description|Default if not set|
-|:---------------|:--------|:-----------|
-| AllowOnlyMembersToPost|Only group *members* can post conversations to the group.|Any user in the organization can post conversations to the group.|
-| HideGroupInOutlook|This group will be hidden in Outlook experiences.|All groups will be visible and discoverable in Outlook experiences.|
-| SubscribeNewGroupMembers|Group members are subscribed to receive group conversations. |Group members do not receive group conversations.|
-| WelcomeEmailDisabled|A welcome email is sent to a new member on joining the group.|Welcome emails are not sent to new members.|
-
-**resourceProvisioningOptions** is a string collection that specifies the group resources that are provisioned as part of Office 365 group creation, that are not normally part of default group creation.
-
-| resourceProvisioningOptions   |Description| Default if not set |
-|:---------------|:--------|:------------|
-| Teams|Provision this group as a team. Additionally, this property can be added to the **resourceProvisioningOptions** string collection through a PATCH operation, in order to convert an existing Office 365 group to a team.| The group is a regular Office 365 group without Teams capabilities.|
 
 ## Relationships
 | Relationship | Type	|Description|

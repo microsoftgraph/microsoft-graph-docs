@@ -18,7 +18,7 @@ var quality = new TeleconferenceDeviceQuality
 		new TeleconferenceDeviceAudioQuality
 		{
 			ChannelIndex = 1,
-			MediaDuration = "PT20M",
+			MediaDuration = new Duration("PT20M"),
 			NetworkLinkSpeedInBytes = 13000,
 			LocalIPAddress = "127.0.0.1",
 			LocalPort = 6300,
@@ -30,19 +30,19 @@ var quality = new TeleconferenceDeviceQuality
 			AverageOutboundPacketLossRateInPercentage = 0.02,
 			MaximumInboundPacketLossRateInPercentage = 0.05,
 			MaximumOutboundPacketLossRateInPercentage = 0.06,
-			AverageInboundRoundTripDelay = "PT0.03S",
-			AverageOutboundRoundTripDelay = "PT0.04S",
-			MaximumInboundRoundTripDelay = "PT0.13S",
-			MaximumOutboundRoundTripDelay = "PT0.14S",
-			AverageInboundJitter = "PT0.01S",
-			AverageOutboundJitter = "PT0.015S",
-			MaximumInboundJitter = "PT0.023S",
-			MaximumOutboundJitter = "PT0.024S"
+			AverageInboundRoundTripDelay = new Duration("PT0.03S"),
+			AverageOutboundRoundTripDelay = new Duration("PT0.04S"),
+			MaximumInboundRoundTripDelay = new Duration("PT0.13S"),
+			MaximumOutboundRoundTripDelay = new Duration("PT0.14S"),
+			AverageInboundJitter = new Duration("PT0.01S"),
+			AverageOutboundJitter = new Duration("PT0.015S"),
+			MaximumInboundJitter = new Duration("PT0.023S"),
+			MaximumOutboundJitter = new Duration("PT0.024S")
 		},
 		new TeleconferenceDeviceVideoQuality
 		{
 			ChannelIndex = 1,
-			MediaDuration = "PT20M",
+			MediaDuration = new Duration("PT20M"),
 			NetworkLinkSpeedInBytes = 13000,
 			LocalIPAddress = "127.0.0.1",
 			LocalPort = 6300,
@@ -54,19 +54,19 @@ var quality = new TeleconferenceDeviceQuality
 			AverageOutboundPacketLossRateInPercentage = 0.02,
 			MaximumInboundPacketLossRateInPercentage = 0.05,
 			MaximumOutboundPacketLossRateInPercentage = 0.06,
-			AverageInboundRoundTripDelay = "PT0.03S",
-			AverageOutboundRoundTripDelay = "PT0.04S",
-			MaximumInboundRoundTripDelay = "PT0.13S",
-			MaximumOutboundRoundTripDelay = "PT0.14S",
-			AverageInboundJitter = "PT0.01S",
-			AverageOutboundJitter = "PT0.015S",
-			MaximumInboundJitter = "PT0.023S",
-			MaximumOutboundJitter = "PT0.024S"
+			AverageInboundRoundTripDelay = new Duration("PT0.03S"),
+			AverageOutboundRoundTripDelay = new Duration("PT0.04S"),
+			MaximumInboundRoundTripDelay = new Duration("PT0.13S"),
+			MaximumOutboundRoundTripDelay = new Duration("PT0.14S"),
+			AverageInboundJitter = new Duration("PT0.01S"),
+			AverageOutboundJitter = new Duration("PT0.015S"),
+			MaximumInboundJitter = new Duration("PT0.023S"),
+			MaximumOutboundJitter = new Duration("PT0.024S")
 		},
 		new TeleconferenceDeviceScreenSharingQuality
 		{
 			ChannelIndex = 1,
-			MediaDuration = "PT20M",
+			MediaDuration = new Duration("PT20M"),
 			NetworkLinkSpeedInBytes = 13000,
 			LocalIPAddress = "127.0.0.1",
 			LocalPort = 6300,
@@ -78,14 +78,14 @@ var quality = new TeleconferenceDeviceQuality
 			AverageOutboundPacketLossRateInPercentage = 0.02,
 			MaximumInboundPacketLossRateInPercentage = 0.05,
 			MaximumOutboundPacketLossRateInPercentage = 0.06,
-			AverageInboundRoundTripDelay = "PT0.03S",
-			AverageOutboundRoundTripDelay = "PT0.04S",
-			MaximumInboundRoundTripDelay = "PT0.13S",
-			MaximumOutboundRoundTripDelay = "PT0.14S",
-			AverageInboundJitter = "PT0.01S",
-			AverageOutboundJitter = "PT0.015S",
-			MaximumInboundJitter = "PT0.023S",
-			MaximumOutboundJitter = "PT0.024S"
+			AverageInboundRoundTripDelay = new Duration("PT0.03S"),
+			AverageOutboundRoundTripDelay = new Duration("PT0.04S"),
+			MaximumInboundRoundTripDelay = new Duration("PT0.13S"),
+			MaximumOutboundRoundTripDelay = new Duration("PT0.14S"),
+			AverageInboundJitter = new Duration("PT0.01S"),
+			AverageOutboundJitter = new Duration("PT0.015S"),
+			MaximumInboundJitter = new Duration("PT0.023S"),
+			MaximumOutboundJitter = new Duration("PT0.024S")
 		}
 	}
 };

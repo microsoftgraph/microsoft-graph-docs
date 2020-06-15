@@ -35,7 +35,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ### Exceptions
 * The `$expand` and `select` operators are supported for the `share` navigation property, but not for `jobs`.
-* Some operators are not supported: `$count`, `$orderby`, `$search`.
+* Some operators are not supported: `$count`, `$search`.
 
 ## Request headers
 | Name      |Description|

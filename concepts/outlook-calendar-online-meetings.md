@@ -31,7 +31,7 @@ Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvide
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/calendar
+GET https://graph.microsoft.com/v1.0/me/calendar
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-support-for-online-meeting-providers-csharp-snippets.md)]
@@ -43,6 +43,10 @@ GET https://graph.microsoft.com/beta/me/calendar
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendar-support-for-online-meeting-providers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-calendar-support-for-online-meeting-providers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -60,17 +64,13 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/calendar/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/calendar/$entity",
     "id": "AQMkADAwAGVAAAJfygAAAA==",
     "name": "Calendar",
     "color": "auto",
-    "hexColor": "",
-    "isDefaultCalendar": true,
     "changeKey": "NEXywgsVrkeNsFsyVyRrtAAAAAACOg==",
     "canShare": true,
     "canViewPrivateItems": true,
-    "isShared": false,
-    "isSharedWithMe": false,
     "canEdit": true,
     "allowedOnlineMeetingProviders": [
         "teamsForBusiness",
@@ -104,7 +104,7 @@ You can create a meeting and allow attendees to join the meeting online, by sett
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/events
+POST https://graph.microsoft.com/v1.0/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 
@@ -151,6 +151,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-meeting-enable-online-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-meeting-enable-online-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -166,7 +170,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
     "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAASBUEsA==\"",
     "id": "AAMkADAAABIGYDZAAA=",
     "createdDateTime": "2019-11-15T01:55:54.8022848Z",
@@ -175,7 +179,7 @@ Content-type: application/json
     "categories": [],
     "originalStartTimeZone": "Pacific Standard Time",
     "originalEndTimeZone": "Pacific Standard Time",
-    "uid": "040000008200E00074C5B7101A82E008000000006CF8FDD0579BD501000000000000000010000000A030302E234C194F90824DFA6A17FB61",
+    "iCalUId": "040000008200E00074C5B7101A82E0080000000076B29D94B32CD6010000000000000000100000005F31C591C3C328459653D025BD277439",
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
@@ -271,7 +275,7 @@ Attendees and organizers can use the **isOnlineMeeting** property to verify if a
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDZAAA=?$select=isOnlineMeeting,onlineMeetingProvider,onlineMeeting
+GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGu0AABIGYDZAAA=?$select=isOnlineMeeting,onlineMeetingProvider,onlineMeeting
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-online-meeting-info-csharp-snippets.md)]
@@ -283,6 +287,10 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDZAAA=?$select=is
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-online-meeting-info-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-online-meeting-info-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -300,7 +308,7 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(isOnlineMeeting,onlineMeetingProvider,onlineMeeting)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(isOnlineMeeting,onlineMeetingProvider,onlineMeeting)/$entity",
     "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAASBUExA==\"",
     "id": "AAMkADAGu0AABIGYDZAAA=",
     "isOnlineMeeting": true,
@@ -331,7 +339,7 @@ You can change an existing **event** to make it available as an online meeting, 
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDaAAA=
+PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAGu0AABIGYDaAAA=
 
 {
   "isOnlineMeeting": true,
@@ -350,6 +358,10 @@ PATCH https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDaAAA=
 [!INCLUDE [sample-code](../includes/snippets/objc/update-meeting-online-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-meeting-online-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -365,7 +377,7 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
     "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAASBUFEA==\"",
     "id": "AAMkADAGu0AABIGYDaAAA=",
     "createdDateTime": "2019-11-15T02:13:38.5558455Z",
@@ -374,7 +386,7 @@ Content-type: application/json
     "categories": [],
     "originalStartTimeZone": "Pacific Standard Time",
     "originalEndTimeZone": "Pacific Standard Time",
-    "uid": "040000008200E00074C5B7101A82E00800000000CD93094B5A9BD501000000000000000010000000A16AF77C6F6C254EA13F69C3B2808B4A",
+    "iCalUId": "040000008200E00074C5B7101A82E00800000000CD93094B5A9BD501000000000000000010000000A16AF77C6F6C254EA13F69C3B2808B4A",
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
@@ -413,36 +425,16 @@ Content-type: application/json
     },
     "location": {
         "displayName": "Conf Room Baker",
-        "locationUri": "Baker@contoso.onmicrosoft.com",
         "locationType": "conferenceRoom",
         "uniqueId": "Baker@contoso.onmicrosoft.com",
-        "uniqueIdType": "directory",
-        "address": {
-            "type": "unknown",
-            "street": "",
-            "city": "",
-            "state": "",
-            "countryOrRegion": "",
-            "postalCode": ""
-        },
-        "coordinates": {}
+        "uniqueIdType": "directory"
     },
     "locations": [
         {
             "displayName": "Conf Room Baker",
-            "locationUri": "Baker@contoso.onmicrosoft.com",
             "locationType": "conferenceRoom",
             "uniqueId": "Baker@contoso.onmicrosoft.com",
-            "uniqueIdType": "directory",
-            "address": {
-                "type": "unknown",
-                "street": "",
-                "city": "",
-                "state": "",
-                "countryOrRegion": "",
-                "postalCode": ""
-            },
-            "coordinates": {}
+            "uniqueIdType": "directory"
         }
     ],
     "attendees": [
@@ -455,17 +447,6 @@ Content-type: application/json
             "emailAddress": {
                 "name": "Adele Vance",
                 "address": "AdeleV@contoso.OnMicrosoft.com"
-            }
-        },
-        {
-            "type": "resource",
-            "status": {
-                "response": "accepted",
-                "time": "2019-11-15T02:13:42.6568849Z"
-            },
-            "emailAddress": {
-                "name": "Conf Room Baker",
-                "address": "Baker@contoso.onmicrosoft.com"
             }
         }
     ],
@@ -486,7 +467,10 @@ Content-type: application/json
 
 
 ## See also
-- For information on Microsoft Teams interoperability with Office 365, see [coexistence and upgrade settings](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+- For information on Microsoft Teams interoperability with Office 365, see:
+  - [How Exchange and Microsoft Teams interact](/microsoftteams/exchange-teams-interact)
+  - [Setting your coexistence and upgrade settings](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
+- [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md)
 - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
 - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
 - [Propose meeting times in an Outlook calendar (preview)](outlook-calendar-meeting-proposals.md)

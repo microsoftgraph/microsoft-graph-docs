@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var riskDetections = await graphClient.RiskDetections
 	.Request()
-	.Filter("riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'")
+	.Filter("riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'")
 	.GetAsync();
 
 ```

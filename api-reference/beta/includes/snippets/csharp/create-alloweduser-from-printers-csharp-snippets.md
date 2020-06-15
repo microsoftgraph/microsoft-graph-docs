@@ -10,11 +10,11 @@ var printUserIdentity = new PrintUserIdentity
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"@odata.id","https://graph.microsoft.com/beta/users/{id}"}
+		{"@odata.id", "https://graph.microsoft.com/beta/users/{id}"}
 	}
 };
 
-await graphClient.Print.PrinterShares["{id}"].AllowedUsers.References
+await graphClient.Print.Shares["{id}"].AllowedUsers.References
 	.Request()
 	.AddAsync(printUserIdentity);
 

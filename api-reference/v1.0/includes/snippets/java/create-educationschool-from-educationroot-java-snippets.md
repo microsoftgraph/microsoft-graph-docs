@@ -9,7 +9,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 EducationSchool educationSchool = new EducationSchool();
 educationSchool.displayName = "Fabrikam High School";
 educationSchool.description = "Magnate school for the arts. Los Angeles School District";
-educationSchool.status = "String";
 educationSchool.externalSource = EducationExternalSource.SIS;
 educationSchool.principalEmail = "AmyR@fabrikam.com";
 educationSchool.principalName = "Amy Roebuck";

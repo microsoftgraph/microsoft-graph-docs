@@ -108,7 +108,76 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a directory-scoped roleAssignmentMultiple with `$expand`
+### Example 2: Get a roleAssignmentMultiple in Intune assigned to a group
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignmentmultiple"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments?$filter = principalIds/any(x:x eq '564ae70c-73d9-476b-820b-fb61eb7384b9')
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignmentmultiple-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignmentmultiple-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/deviceManagement/roleAssignments",
+    "@odata.count": 7,
+    "value": [
+        {
+            "id": "893fc648-73fc-482b-b964-ddd1cabf0db4",
+            "condition": null,
+            "displayName": "Assign Contoso_App_Admin to School Admin",
+            "description": "test",
+            "roleDefinitionId": "2f9f4f7e-2d13-427b-adf2-361a1eef7ae8",
+            "principalIds": [
+                "564ae70c-73d9-476b-820b-fb61eb7384b9"
+            ],
+            "directoryScopeIds": [],
+            "appScopeIds": [
+                "0",
+                "AllLicensedUsers"
+            ]
+        }
+    ]
+}
+```
+
+### Example 3: Get a directory-scoped roleAssignmentMultiple with `$expand`
 
 #### Request
 

@@ -28,7 +28,7 @@ A GET request with the delta function returns either:
 
 State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the next round.
 
-For more information, see the [delta query](/graph/delta-query-overview.md) documentation.
+For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
 ## Permissions
 
@@ -36,9 +36,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type                        |Permissions (from least to most privileged)  |
 |---------------------------------------|---------------------------------------------|
-|Delegated (work or school account)     |ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All          |
+|Delegated (work or school account)     | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account) |Not Supported                                |
-|Application                            |ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All          |
+|Application                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).

@@ -1,7 +1,6 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
 title: Get a SharePoint list
 localization_priority: Priority
 ms.prod: "sharepoint"
@@ -30,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-title}
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-title}
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: getMemberGroups"
 description: "Get the list of groups that this service principal is a member of.  The check is transitive."
-localization_priority: Normal
+localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "sureshja"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of groups that this service principal is a member of.  The check is transitive.
+Get the list of groups that this [servicePrincipal](../resources/serviceprincipal.md) is a member of.  The check is transitive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,9 +32,10 @@ POST /servicePrincipals/{id}/getMemberGroups
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization | Bearer {token}. Required.  |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -45,11 +46,11 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and String collection object in the response body.
+If successful, this method returns a `200 OK` response code and a String collection object in the response body.
 
-## Example
+## Examples
 Here is an example of how to call this API.
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -81,8 +82,9 @@ Content-length: 33
 ---
 
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. 
+>Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

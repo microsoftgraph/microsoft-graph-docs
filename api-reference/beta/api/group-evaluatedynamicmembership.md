@@ -202,6 +202,7 @@ Content-type: application/json
   }
 }
 ```
+
 ## See also
 
 [Create a group and team](/graph/teams-create-group-and-team)

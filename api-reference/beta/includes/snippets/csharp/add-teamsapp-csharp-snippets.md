@@ -10,7 +10,7 @@ var teamsAppInstallation = new TeamsAppInstallation
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"teamsApp@odata.bind","https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"}
+		{"teamsApp@odata.bind", "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"}
 	}
 };
 

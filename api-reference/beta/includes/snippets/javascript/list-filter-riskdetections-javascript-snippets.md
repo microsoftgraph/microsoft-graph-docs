@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let res = await client.api('/riskDetections')
 	.version('beta')
-	.filter('riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'')
+	.filter('riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'')
 	.get();
 
 ```

@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var synchronizationSchema = new SynchronizationSchema
 {
-	Directories = new List<DirectoryDefinition>()
+	Directories = (ISynchronizationSchemaDirectoriesCollectionPage)new List<DirectoryDefinition>()
 	{
 		new DirectoryDefinition
 		{
