@@ -13,10 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft 365 RBAC role management entity. Provides access to role definitions and role assignments surfaced from RBAC providers. Currently directory (Azure AD) and  deviceManagement (Intune) providers are supported. 
+Represents a Microsoft 365 RBAC role management entity. Provides access to role definitions and role assignments surfaced from RBAC providers. Currently directory (Azure AD), entitlementManagement (Azure AD entitlement management) and  deviceManagement (Intune) providers are supported.
 
 For more information, see: 
 * [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+* [Delegation and roles in Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-delegate).
 * [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)
 
 ## Methods
@@ -33,6 +34,7 @@ None.
 |:-------------|:------------|:------------|
 |directory|[rbacApplication](rbacapplication.md)| Read-only. Nullable.|
 |deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Read-only. Nullable.|
+|entitlementManagement|[rbacApplication](rbacapplication.md)| Read-only. Nullable.|
 
 ## JSON representation
 
