@@ -1,7 +1,7 @@
 ---
 title: "Get event"
 description: "Get an event object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

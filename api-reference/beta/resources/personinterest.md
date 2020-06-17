@@ -19,20 +19,20 @@ Inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:---------------------------------------------------|:------------------------------------|:------------------------------------------------------------|
-| [Get personInterest](../api/personinterest-get.md) | [personInterest](personinterest.md) | Read the properties and relationships of a **personInterest** object. |
-| [Update personInterest](../api/personinterest-update.md)          | [personInterest](personinterest.md) | Update a **personInterest** object.                               |
-| [Delete personInterest](../api/personinterest-delete.md)          | None                                | Delete a **personInterest** object.                               |
+| Method                                                    | Return Type                         | Description                                                           |
+|:----------------------------------------------------------|:------------------------------------|:----------------------------------------------------------------------|
+| [Get personInterest](../api/personinterest-get.md)        | [personInterest](personinterest.md) | Read the properties and relationships of a **personInterest** object. |
+| [Update personInterest](../api/personinterest-update.md)  | [personInterest](personinterest.md) | Update a **personInterest** object.                                   |
+| [Delete personInterest](../api/personinterest-delete.md)  | None                                | Delete a **personInterest** object.                                   |
 
 ## Properties
 
-| Property     | Type             | Description                                                                          |
-|:-------------|:-----------------|:-------------------------------------------------------------------------------------|
+| Property     | Type             | Description                                                                                    |
+|:-------------|:-----------------|:-----------------------------------------------------------------------------------------------|
 |categories    |String collection | Contains categories a user has associated with the interest (for example, personal, recipies). |
-|description   |String            | Contains a description of the interest.                                              |
-|displayName   |String            | Contains a friendly name for the interest.                                           |
-|webUrl        |String            | Contains a link to a web page or resource about the interest.                         |
+|description   |String            | Contains a description of the interest.                                                        |
+|displayName   |String            | Contains a friendly name for the interest.                                                     |
+|webUrl        |String            | Contains a link to a web page or resource about the interest.                                  |
 
 ## Relationships
 
@@ -40,7 +40,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource. 
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

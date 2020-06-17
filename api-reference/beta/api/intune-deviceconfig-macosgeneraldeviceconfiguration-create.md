@@ -1,13 +1,15 @@
 ---
 title: "Create macOSGeneralDeviceConfiguration"
 description: "Create a new macOSGeneralDeviceConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create macOSGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -106,6 +108,7 @@ The following table shows the properties that are required when you create the m
 |classroomForceRequestPermissionToLeaveClasses|Boolean|Indicates whether a student enrolled in an unmanaged course via Classroom will be required to request permission from the teacher when attempting to leave the course. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
 |classroomForceUnpromptedAppAndDeviceLock|Boolean|Indicates whether or not to allow the teacher to lock apps or the device without prompting the student. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
 |iCloudBlockActivityContinuation|Boolean|Indicates whether or not to block the user from continuing work that they started on a MacOS device on another iOS or MacOS device (MacOS 10.15 or later).|
+|privacyAccessControls|[macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md) collection|List of privacy preference policy controls. This collection can contain a maximum of 10000 elements.|
 
 
 
@@ -119,7 +122,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3146
+Content-length: 4545
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -208,7 +211,46 @@ Content-length: 3146
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "Display Name value",
+      "identifier": "Identifier value",
+      "identifierType": "path",
+      "codeRequirement": "Code Requirement value",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "enabled",
+      "accessibility": "enabled",
+      "addressBook": "enabled",
+      "calendar": "enabled",
+      "reminders": "enabled",
+      "photos": "enabled",
+      "mediaLibrary": "enabled",
+      "fileProviderPresence": "enabled",
+      "systemPolicyAllFiles": "enabled",
+      "systemPolicySystemAdminFiles": "enabled",
+      "systemPolicyDesktopFolder": "enabled",
+      "systemPolicyDocumentsFolder": "enabled",
+      "systemPolicyDownloadsFolder": "enabled",
+      "systemPolicyNetworkVolumes": "enabled",
+      "systemPolicyRemovableVolumes": "enabled",
+      "postEvent": "enabled",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "Code Requirement value",
+          "identifier": "Identifier value",
+          "identifierType": "path",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -217,7 +259,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3318
+Content-Length: 4717
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -309,10 +351,48 @@ Content-Length: 3318
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "Display Name value",
+      "identifier": "Identifier value",
+      "identifierType": "path",
+      "codeRequirement": "Code Requirement value",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "enabled",
+      "accessibility": "enabled",
+      "addressBook": "enabled",
+      "calendar": "enabled",
+      "reminders": "enabled",
+      "photos": "enabled",
+      "mediaLibrary": "enabled",
+      "fileProviderPresence": "enabled",
+      "systemPolicyAllFiles": "enabled",
+      "systemPolicySystemAdminFiles": "enabled",
+      "systemPolicyDesktopFolder": "enabled",
+      "systemPolicyDocumentsFolder": "enabled",
+      "systemPolicyDownloadsFolder": "enabled",
+      "systemPolicyNetworkVolumes": "enabled",
+      "systemPolicyRemovableVolumes": "enabled",
+      "postEvent": "enabled",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "Code Requirement value",
+          "identifier": "Identifier value",
+          "identifierType": "path",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
-
 
 
 

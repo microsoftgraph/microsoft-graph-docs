@@ -1,13 +1,15 @@
 ---
 title: "androidForWorkAppConfigurationSchema resource type"
 description: "Schema describing an Android for Work application's custom configurations."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidForWorkAppConfigurationSchema resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

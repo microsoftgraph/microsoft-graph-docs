@@ -67,6 +67,8 @@ The CSV file has the following headers for columns.
 - Send
 - Receive
 - Read
+- Meeting Created
+- Meeting Interacted
 - Report Date
 - Report Period
 

@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerEnrollmentProfile resource type"
-description: "Enrollment Profile used to enroll COSU devices using Google's Cloud Management."
-author: "davidmu1"
+description: "Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management."
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -9,11 +9,13 @@ doc_type: resourcePageType
 
 # androidDeviceOwnerEnrollmentProfile resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
+Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
 
 ## Methods
 |Method|Return Type|Description|

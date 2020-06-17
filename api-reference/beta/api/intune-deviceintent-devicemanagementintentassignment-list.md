@@ -1,13 +1,15 @@
 ---
 title: "List deviceManagementIntentAssignments"
 description: "List properties and relationships of the deviceManagementIntentAssignment objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List deviceManagementIntentAssignments
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 274
+Content-Length: 437
 
 {
   "value": [
@@ -66,13 +68,14 @@ Content-Length: 274
       "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
       "id": "bedc5365-5365-bedc-6553-dcbe6553dcbe",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]
 }
 ```
-
 
 
 

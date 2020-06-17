@@ -1,13 +1,15 @@
 ---
 title: "advancedThreatProtectionOnboardingDeviceSettingState resource type"
 description: "ATP onboarding State for a given device."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # advancedThreatProtectionOnboardingDeviceSettingState resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -28,7 +30,7 @@ ATP onboarding State for a given device.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `blackberry`, `palm`, `unknown`.|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `blackberry`, `palm`, `unknown`.|
 |setting|String|The setting class name and property name.|
 |settingName|String|The Setting Name that is being reported|
 |deviceId|String|The Device Id that is being reported|

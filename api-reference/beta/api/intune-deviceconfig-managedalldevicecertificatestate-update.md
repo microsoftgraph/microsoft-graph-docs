@@ -1,13 +1,15 @@
 ---
 title: "Update managedAllDeviceCertificateState"
 description: "Update the properties of a managedAllDeviceCertificateState object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update managedAllDeviceCertificateState
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,6 +60,7 @@ The following table shows the properties that are required when you create the [
 |certificateKeyUsages|Int32|Key Usage|
 |certificateExtendedKeyUsages|String|Enhanced Key Usage|
 |certificateIssuanceDateTime|DateTimeOffset|Issuance date|
+|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|The time the revoke status was last changed|
 
 
 
@@ -85,7 +88,8 @@ Content-length: 735
   "certificateSubjectName": "Certificate Subject Name value",
   "certificateKeyUsages": 4,
   "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
 
@@ -109,10 +113,10 @@ Content-Length: 784
   "certificateSubjectName": "Certificate Subject Name value",
   "certificateKeyUsages": 4,
   "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
+  "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

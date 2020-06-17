@@ -1,13 +1,15 @@
 ---
 title: "getGlobalScriptHighestAvailableVersion action"
 description: "Update the Proprietary Device Health Script"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # getGlobalScriptHighestAvailableVersion action
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -64,7 +66,6 @@ Content-Length: 68
   "value": "Get Global Script Highest Available Version value"
 }
 ```
-
 
 
 

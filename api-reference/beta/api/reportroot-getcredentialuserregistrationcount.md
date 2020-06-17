@@ -2,7 +2,7 @@
 title: "reportRoot: getCredentialUserRegistrationCount"
 description: "Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities."
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "reports"
 doc_type: "apiPageType"
 ---

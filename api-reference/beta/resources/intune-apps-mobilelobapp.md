@@ -1,13 +1,15 @@
 ---
 title: "mobileLobApp resource type"
 description: "An abstract base class containing properties for all mobile line of business apps."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # mobileLobApp resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

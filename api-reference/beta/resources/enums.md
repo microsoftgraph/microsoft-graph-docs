@@ -7,7 +7,6 @@ ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
-# Enum values
 
 Namespace: microsoft.graph
 
@@ -45,11 +44,10 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|microsoft.graph.event|
-|microsoft.graph.message|
-|microsoft.graph.driveItem|
-|microsoft.graph.externalFile|
-|microsoft.graph.externalItem|
+|event|
+|message|
+|driveItem|
+|externalItem|
 
 ### contactRelationship values
 

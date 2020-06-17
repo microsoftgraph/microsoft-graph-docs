@@ -2,7 +2,7 @@
 title: "conditionalAccessUsers resource type"
 description: "Represents users, groups, and roles included in and excluded from the policy scope."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

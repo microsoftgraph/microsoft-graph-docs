@@ -2,7 +2,7 @@
 title: "Create unifiedRoleDefinition"
 description: "Create a new unifiedRoleDefinition object."
 localization_priority: Normal
-author: "davidmu1"
+author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory |
+| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory |
+| Application                            | RoleManagement.ReadWrite.Directory |
 
 ## HTTP request
 
@@ -60,6 +60,7 @@ If successful, this method returns `201 Created` response code and a new [unifie
 ### Request
 
 The following is an example of creating a custom role.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +105,6 @@ Content-type: application/json
 ### Response
 
 The following is an example of the response.
-
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -124,9 +124,6 @@ Content-type: application/json
     "displayName": "Application Registration Support Administrator",
     "isBuiltIn": false,
     "isEnabled": true,
-    "resourceScopes": [
-        "/"
-    ],
     "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
     "version": null,
     "rolePermissions": [

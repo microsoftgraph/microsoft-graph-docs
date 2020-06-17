@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: enumPageType
 ---
 
-#teamsAppInstalledState enum type
+# teamsAppInstalledState enum type
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "androidDeviceOwnerGlobalProxy resource type"
 description: "Android Device Owner Global Proxy."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidDeviceOwnerGlobalProxy resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

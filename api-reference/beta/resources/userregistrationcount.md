@@ -2,7 +2,7 @@
 title: "userRegistrationCount resource type"
 description: "Represents the registration count and status for users in your tenant."
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "reports"
 doc_type: "resourcePageType"
 ---

@@ -1,13 +1,15 @@
 ---
 title: "windowsKioskAzureADUser resource type"
 description: "The class used to identify an AzureAD user account for the kiosk configuration"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsKioskAzureADUser resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,13 +1,15 @@
 ---
 title: "Create windowsUniversalAppXContainedApp"
 description: "Create a new windowsUniversalAppXContainedApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windowsUniversalAppXContainedApp
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -84,7 +86,6 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

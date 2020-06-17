@@ -2,7 +2,7 @@
 title: "Delete tokenIssuancePolicy"
 description: "Delete tokenIssuancePolicy."
 localization_priority: Normal
-author: "davidmu1"
+author: "luleonpla"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

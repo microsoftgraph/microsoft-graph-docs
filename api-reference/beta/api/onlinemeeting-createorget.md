@@ -1,6 +1,6 @@
 ---
 title: "onlineMeeting: createOrGet"
-description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID."
+description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the **onlineMeeting** object with that external ID."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -50,10 +50,14 @@ In the request body, provide a JSON object with the following parameters.
 | startDateTime    | DateTime                                 | The meeting start time in UTC. |
 | subject          | String                                   | The subject of the online meeting. |
 
->**Note:** If the 'startDateTime' and 'endDateTime' are not provided, the values will default to the datetime value that is default to the system. In C#, that value is  "01/01/0001"
+>**Note:** If the `startDateTime` and `endDateTime` are not provided, the `startDateTime` will default to the current dateTime value and `endDateTime` value will equal the startDateTime + 1 hour. 
+
+>If the `startDateTime` is provided, but `endDateTime` is not, the `endDateTime` value will equal the `startDateTime` + 1 hour. 
+
+>An error will be thrown if the `endDateTime` is provided without the `startDateTime` or if the `endDateTime` is earlier than the `startDateTime`.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+If successful, this method returns a `201 Created` response code if a new meeting is created, or a `200 OK` response code if an existing meeting is retrieved. In both cases, an [onlineMeeting](../resources/onlinemeeting.md) object is returned in the response body.
 
 ## Examples
 
@@ -149,7 +153,7 @@ Content-Type: application/json
           "@odata.type": "#microsoft.graph.identity",
           "id": "d4a060b5-a8fc-450c-837b-750b2c280000",
           "tenantId": "72f988bf-86f1-41af-91ab-2d7cd0110000",
-          "displayName": "Heidi Steen",
+          "displayName": "Tyler Stein",
           "identityProvider": "AAD"
         }
       },
@@ -163,7 +167,7 @@ Content-Type: application/json
           "user": {
             "@odata.type": "#microsoft.graph.identity",
             "id": "1f35f2e6-9cab-44ad-8d5a-b74c14720000",
-            "displayName": "Joe Doe",
+            "displayName": "Jasmine Miller",
             "identityProvider": "MSA"
           }
         },
@@ -179,7 +183,7 @@ Content-Type: application/json
   "audioConferencing": {
     "@odata.type": "#microsoft.graph.audioConferencing",
     "conferenceId": "804980000",
-    "tollNumber": "+1 647-749-0000",
+    "tollNumber": "555-749-0000",
     "dialinUrl": "https://dialin.teams.microsoft.com/8bf6e654-57eb-4b85-aeaf-36c84429b2fe?id=804980000"
   },
   "chatInfo": {
@@ -187,7 +191,7 @@ Content-Type: application/json
     "threadId": "19:meeting_MWE2Y2U2NGYtMjk4Ni00NjYyLWEyMjItYjk3MGU4YzFh0000@thread.v2",
     "messageId": "0"
   },
-  "videoTeleconferenceId": "7166440000",
+  "videoTeleconferenceId": "5556440000",
   "externalId": "7eb8263f-d0e0-4149-bb1c-1f0476083c56",
   "id": "d4a060b5-a8fc-450c-837b-750b2c2869b5_19:meeting_MWE2Y2U2NGYtMjk4Ni00NjYyLWEyMjItYjk3MGU4YzFh0000@thread.v2",
   "@odata.context": "http://localhost/$metadata#onlineMeetings/$entity",

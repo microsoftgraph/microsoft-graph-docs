@@ -2,7 +2,7 @@
 title: "List policies"
 description: "Retrieve a list of conditionalAccessPolicy objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -111,10 +111,13 @@ Content-type: application/json
             "sessionControls": null,
             "conditions": {
                 "signInRiskLevels": [],
-                "clientAppTypes": [],
+                "clientAppTypes": [
+                    "all"
+                ],
                 "platforms": null,
                 "locations": null,
                 "deviceStates": null,
+                "devices": null,
                 "applications": {
                     "includeApplications": [
                         "None"
@@ -151,10 +154,13 @@ Content-type: application/json
             "sessionControls": null,
             "conditions": {
                 "signInRiskLevels": [],
-                "clientAppTypes": [],
+                "clientAppTypes": [
+                    "all"
+                ],
                 "platforms": null,
                 "locations": null,
                 "deviceStates": null,
+                "devices": null,
                 "applications": {
                     "includeApplications": [
                         "None"

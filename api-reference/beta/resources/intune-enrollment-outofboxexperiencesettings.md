@@ -1,13 +1,15 @@
 ---
 title: "outOfBoxExperienceSettings resource type"
 description: "Out of box experience setting"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # outOfBoxExperienceSettings resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

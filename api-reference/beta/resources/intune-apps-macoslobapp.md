@@ -1,13 +1,15 @@
 ---
 title: "macOSLobApp resource type"
 description: "Contains properties and inherited properties for the MacOS LOB App."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # macOSLobApp resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

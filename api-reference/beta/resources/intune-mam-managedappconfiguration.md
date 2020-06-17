@@ -1,13 +1,15 @@
 ---
 title: "managedAppConfiguration resource type"
 description: "Configuration used to deliver a set of custom settings as-is to apps for users to whom the configuration is scoped"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # managedAppConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

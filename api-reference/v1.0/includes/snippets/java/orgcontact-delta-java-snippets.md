@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-OrgContact orgContact = graphClient.contacts("delta")
+IOrgContactDeltaCollectionPage delta = graphClient.contacts()
+	.delta()
 	.buildRequest()
 	.get();
 

@@ -1,13 +1,15 @@
 ---
 title: "Create managedAndroidLobApp"
 description: "Create a new managedAndroidLobApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create managedAndroidLobApp
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -205,7 +207,6 @@ Content-Length: 1663
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

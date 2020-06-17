@@ -27,15 +27,15 @@ Inherits from [itemFacet](itemfacet.md).
 
 ## Properties
 
-| Property     | Type                              | Description |
-|:-------------|:----------------------------------|:------------|
+| Property     | Type                              | Description                                                                                                  |
+|:-------------|:----------------------------------|:-------------------------------------------------------------------------------------------------------------|
 |displayName   |String                             | Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device. |
 |first         |String                             | First Name of the user.                                                                                      |
 |initials      |String                             | Initials of the user.                                                                                        |
 |languageTag   |String                             | Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.                        |
 |last          |String                             | Last Name of the user.                                                                                       |
 |maiden        |String                             | Maiden Name of the user.                                                                                     |
-|middle        |String                             | Middlie Name of the user.                                                                                    | 
+|middle        |String                             | Middlie Name of the user.                                                                                    |
 |nickname      |String                             | Nickname of the user.                                                                                        |
 |pronunciation |[yomiPersonName](yomipersonname.md)| Guidance on how to pronounce the users name.                                                                 |
 |suffix        |String                             | Designators used after the users name (eg: PhD.)                                                             |

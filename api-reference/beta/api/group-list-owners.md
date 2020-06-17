@@ -1,8 +1,8 @@
 ---
 title: "List owners"
-description: "Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
+description: "Retrieve a list of the group's owners."
 localization_priority: Normal
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All and User.ReadBasic.All, Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All    |
+|Delegated (work or school account) | Group.Read.All and User.ReadBasic.All, Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All, Group.Read.All and User.Read.All and Application.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All |
+|Application | Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All, Group.Read.All and User.Read.All and Application.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

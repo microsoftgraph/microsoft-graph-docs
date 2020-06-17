@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/oAuth2Permissiongrants/{id}')
+let res = await client.api('/oauth2PermissionGrants/{id}')
 	.version('beta')
 	.get();
 

@@ -1,13 +1,15 @@
 ---
 title: "Create mobileAppProvisioningConfigGroupAssignment"
 description: "Create a new mobileAppProvisioningConfigGroupAssignment object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create mobileAppProvisioningConfigGroupAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -82,7 +84,6 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
-
 
 
 

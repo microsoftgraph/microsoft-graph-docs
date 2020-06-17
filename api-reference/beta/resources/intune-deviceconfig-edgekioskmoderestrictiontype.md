@@ -1,13 +1,15 @@
 ---
 title: "edgeKioskModeRestrictionType enum type"
 description: "Specify how the Microsoft Edge settings are restricted based on kiosk mode."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # edgeKioskModeRestrictionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

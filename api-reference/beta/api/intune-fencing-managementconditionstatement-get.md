@@ -1,13 +1,15 @@
 ---
 title: "Get managementConditionStatement"
 description: "Read properties and relationships of the managementConditionStatement object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get managementConditionStatement
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -62,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 536
+Content-Length: 573
 
 {
   "value": {
@@ -73,7 +75,8 @@ Content-Length: 536
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
     "expression": {
-      "@odata.type": "microsoft.graph.managementConditionExpression"
+      "@odata.type": "microsoft.graph.managementConditionExpressionString",
+      "value": "Value value"
     },
     "eTag": "ETag value",
     "applicablePlatforms": [
@@ -82,7 +85,6 @@ Content-Length: 536
   }
 }
 ```
-
 
 
 

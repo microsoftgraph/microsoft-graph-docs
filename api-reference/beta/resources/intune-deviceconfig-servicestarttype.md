@@ -1,13 +1,15 @@
 ---
 title: "serviceStartType enum type"
 description: "Possible values of xbox service start type"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # serviceStartType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

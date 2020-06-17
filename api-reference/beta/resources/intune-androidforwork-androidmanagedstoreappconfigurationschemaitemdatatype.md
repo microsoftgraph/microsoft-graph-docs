@@ -1,13 +1,15 @@
 ---
 title: "androidManagedStoreAppConfigurationSchemaItemDataType enum type"
 description: "Data type for a configuration item inside an Android application's custom configuration schema"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # androidManagedStoreAppConfigurationSchemaItemDataType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

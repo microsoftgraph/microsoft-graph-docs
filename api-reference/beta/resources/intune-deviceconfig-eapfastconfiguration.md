@@ -1,13 +1,15 @@
 ---
 title: "eapFastConfiguration enum type"
 description: "Available settings for EAP-FAST Configuration."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # eapFastConfiguration enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

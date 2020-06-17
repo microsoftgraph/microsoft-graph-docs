@@ -1,7 +1,7 @@
 ---
 title: "deviceCategory resource type"
 description: "These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -51,6 +51,9 @@ Here is a JSON representation of the resource.
   "description": "String"
 }
 ```
+
+
+
 
 
 

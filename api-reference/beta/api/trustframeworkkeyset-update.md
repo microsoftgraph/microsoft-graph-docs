@@ -2,7 +2,7 @@
 title: "Update trustFrameworkKeySet"
 description: "Update the properties of a **trustFrameworkKeySet** object."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

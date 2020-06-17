@@ -1,13 +1,15 @@
 ---
 title: "userExperienceAnalyticsBaseline resource type"
 description: "The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # userExperienceAnalyticsBaseline resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

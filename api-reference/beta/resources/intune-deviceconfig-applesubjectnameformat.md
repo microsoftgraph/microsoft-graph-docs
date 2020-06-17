@@ -1,13 +1,15 @@
 ---
 title: "appleSubjectNameFormat enum type"
 description: "Subject Name Format Options for Apple devices."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # appleSubjectNameFormat enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

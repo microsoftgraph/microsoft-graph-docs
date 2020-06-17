@@ -1,13 +1,15 @@
 ---
 title: "complianceManagementPartner resource type"
 description: "Compliance management partner for all platforms"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # complianceManagementPartner resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -66,7 +68,9 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ],
@@ -74,7 +78,9 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ],
@@ -82,7 +88,9 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ],
@@ -90,7 +98,9 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "String",
+        "deviceAndAppManagementAssignmentFilterType": "String"
       }
     }
   ]

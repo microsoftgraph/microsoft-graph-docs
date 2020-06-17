@@ -30,7 +30,7 @@ In addition to the following permissions, the user's tenant must have an active 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/printers/{id}
-GET /print/printerShares/{id}/printer
+GET /print/shares/{id}/printer
 ```
 
 ## Optional query parameters

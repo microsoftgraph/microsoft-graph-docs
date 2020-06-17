@@ -1,13 +1,15 @@
 ---
 title: "assign action"
 description: "Not yet documented"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # assign action
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/assign
 
 Content-type: application/json
-Content-length: 280
+Content-length: 443
 
 {
   "assignments": [
@@ -69,7 +71,9 @@ Content-length: 280
       "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
       "id": "bedc5365-5365-bedc-6553-dcbe6553dcbe",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]
@@ -81,7 +85,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

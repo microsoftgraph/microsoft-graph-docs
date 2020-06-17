@@ -204,6 +204,8 @@ Removing file permissions for a user may not immediately invalidate the URL.
 | [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [Get analytics]: ../api/itemanalytics-get.md

@@ -1,13 +1,15 @@
 ---
 title: "Get windowsUpdateForBusinessConfiguration"
 description: "Read properties and relationships of the windowsUpdateForBusinessConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windowsUpdateForBusinessConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3173
+Content-Length: 3127
 
 {
   "value": {
@@ -118,8 +120,8 @@ Content-Length: 3173
     "businessReadyUpdatesOnly": "all",
     "skipChecksBeforeRestart": true,
     "updateWeeks": "firstWeek",
-    "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-    "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+    "qualityUpdatesPauseStartDate": "2016-12-31",
+    "featureUpdatesPauseStartDate": "2016-12-31",
     "featureUpdatesRollbackWindowInDays": 2,
     "qualityUpdatesWillBeRolledBack": true,
     "featureUpdatesWillBeRolledBack": true,
@@ -141,7 +143,6 @@ Content-Length: 3173
   }
 }
 ```
-
 
 
 

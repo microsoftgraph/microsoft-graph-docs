@@ -21,7 +21,7 @@ Represents information about the network used in a call.
 |:-------------|:------------|:------------|
 |bandwidthLowEventRatio|Double|Fraction of the call that the media endpoint detected the available bandwidth or bandwidth policy was low enough to cause poor quality of the audio sent.|
 |basicServiceSetIdentifier|String|The wireless LAN basic service set identifier of the media endpoint used to connect to the network.|
-|connectionType|String|Type of network used by the media endpoint. Possible values are: `unknown`, `wired`, `wifi`, `mobile`, `tunnel`, `unknownFutureValue`.|
+|connectionType|microsoft.graph.callRecords.networkConnectionType|Type of network used by the media endpoint. Possible values are: `unknown`, `wired`, `wifi`, `mobile`, `tunnel`, `unknownFutureValue`.|
 |delayEventRatio|Double|Fraction of the call that the media endpoint detected the network delay was significant enough to impact the ability to have real-time two-way communication.|
 |dnsSuffix|String|DNS suffix associated with the network adapter of the media endpoint.|
 |ipAddress|String|IP address of the media endpoint.|
@@ -34,12 +34,12 @@ Represents information about the network used in a call.
 |relayPort|Int32|Network port number allocated on the media relay server by the media endpoint.|
 |sentQualityEventRatio|Double|Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.|
 |subnet|String|Subnet used for media stream by the media endpoint.|
-|wifiBand|String|WiFi band used by the media endpoint. Possible values are: `unknown`, `frequency24GHz`, `frequency50GHz`.|
+|wifiBand|microsoft.graph.callRecords.wifiBand|WiFi band used by the media endpoint. Possible values are: `unknown`, `frequency24GHz`, `frequency50GHz`, `frequency60GHz`, `unknownFutureValue`.|
 |wifiBatteryCharge|Int32|Estimated remaining battery charge in percentage reported by the media endpoint.|
 |wifiChannel|Int32|WiFi channel used by the media endpoint.|
 |wifiMicrosoftDriver|String|Name of the Microsoft WiFi driver used by the media endpoint. Value may be localized based on the language used by endpoint.|
 |wifiMicrosoftDriverVersion|String|Version of the Microsoft WiFi driver used by the media endpoint.|
-|wifiRadioType|String|Type of WiFi radio used by the media endpoint. Possible values are: `unknown`, `wifi80211a`, `wifi80211b`, `wifi80211g`, `wifi80211n`, `wifi80211ac`, `wifi80211ax`, `unknownFutureValue`.|
+|wifiRadioType|microsoft.graph.callRecords.wifiRadioType|Type of WiFi radio used by the media endpoint. Possible values are: `unknown`, `wifi80211a`, `wifi80211b`, `wifi80211g`, `wifi80211n`, `wifi80211ac`, `wifi80211ax`, `unknownFutureValue`.|
 |wifiSignalStrength|Int32|WiFi signal strength in percentage reported by the media endpoint.|
 |wifiVendorDriver|String|Name of the WiFi driver used by the media endpoint. Value may be localized based on the language used by endpoint.|
 |wifiVendorDriverVersion|String|Version of the WiFi driver used by the media endpoint.|

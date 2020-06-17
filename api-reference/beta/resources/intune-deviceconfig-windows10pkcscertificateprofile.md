@@ -1,13 +1,15 @@
 ---
 title: "windows10PkcsCertificateProfile resource type"
 description: "Windows 10 Desktop and Mobile PKCS certificate profile"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windows10PkcsCertificateProfile resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

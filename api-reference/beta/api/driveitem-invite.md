@@ -218,7 +218,7 @@ Apps are not required to handle these.
 ## Remarks
 
 * [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) cannot create or modify permissions on the root DriveItem.
-* For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration-values).
+* For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
 
 ## Error responses
 

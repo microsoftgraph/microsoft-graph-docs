@@ -1,13 +1,15 @@
 ---
 title: "policyPlatformType enum type"
 description: "Suppoorted platform types for policies."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # policyPlatformType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -26,6 +28,7 @@ Suppoorted platform types for policies.
 |windows81AndLater|5|Windows 8.1 and later|
 |windows10AndLater|6|Windows 10 and later.|
 |androidWorkProfile|7|AndroidWorkProfile.|
+|windows10XProfile|8|Windows10XProfile.|
 |all|100|All platforms.|
 
 

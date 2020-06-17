@@ -74,3 +74,16 @@ The following is a JSON representation of the **educationSynchronizationProfile*
     "handleSpecialCharacterConstraint": "Boolean"
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2020-05-06 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "educationSynchronizationProfile resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: microsoft.graph.educationSynchronizationProfile/dataProvider:\r\n      Referenced type microsoft.graph.educationSynchronizationDataProvider is not defined in the doc set! Potential suggestion: UNKNOWN"
+  ]
+}-->

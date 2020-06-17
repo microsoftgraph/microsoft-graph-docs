@@ -31,6 +31,7 @@ The Microsoft Graph Toolkit includes a collection of web components for the most
 |[People picker](./components/people-picker.md)|Provides the ability to search for people and renders the list of results.|
 |[Person card](./components/person-card.md)|A flyout used on the person component to display more profile information about a user.|
 |[Get](./components/get.md)|Make a GET query to any Microsoft Graph API directly in your HTML.|
+|[Channel picker](./components/teams-channel-picker.md)|Provides the ability to search for Microsoft Teams channels to select a channel from a rendered list of results.|
 
 ### Providers
 

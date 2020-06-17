@@ -1,13 +1,15 @@
 ---
 title: "Create androidForWorkTrustedRootCertificate"
 description: "Create a new androidForWorkTrustedRootCertificate object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create androidForWorkTrustedRootCertificate
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -154,7 +156,6 @@ Content-Length: 1319
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

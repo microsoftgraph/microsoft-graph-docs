@@ -2,7 +2,7 @@
 title: "Create featureRolloutPolicy"
 description: "Create a new featureRolloutPolicy object."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

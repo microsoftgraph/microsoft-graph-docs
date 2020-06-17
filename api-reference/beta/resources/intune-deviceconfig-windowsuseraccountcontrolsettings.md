@@ -1,13 +1,15 @@
 ---
 title: "windowsUserAccountControlSettings enum type"
 description: "Possible values for Windows user account control settings."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # windowsUserAccountControlSettings enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/educationalActivities 
+GET /me/profile/educationalActivities
 ```
 
 ## Optional query parameters

@@ -2,7 +2,7 @@
 title: "Get identitySecurityDefaultsEnforcementPolicy"
 description: "Retrieve the properties and relationships of identitysecuritydefaultsenforcementpolicy object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

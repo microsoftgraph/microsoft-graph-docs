@@ -2,7 +2,7 @@
 title: "group resource type"
 description: "Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a team in Microsoft Teams, or a security group."
 localization_priority: Priority
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -46,7 +46,7 @@ This resource supports:
 |[Add member](../api/group-post-members.md) |[directoryObject](directoryobject.md)| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
 |[Remove member](../api/group-delete-members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
 |[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administrative units that this group is a direct member of from the memberOf navigation property.|
-|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that this user is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
+|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|Check for membership in a list of groups. The function is transitive.|
 |[checkMemberObjects](../api/group-checkmemberobjects.md)|String collection|Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive.|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
@@ -60,6 +60,11 @@ This resource supports:
 |[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. |
 |[assignLicense](../api/group-assignlicense.md) | [group](group.md) |Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription.|
+|[evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Evaluate whether a user or device is or would be a member of a dynamic group. |
+|**App role assignments**| | |
+|[List appRoleAssignments](../api/group-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get the apps and app roles which this group has been assigned.|
+|[Add appRoleAssignment](../api/group-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Assign an app role to this group.|]
+|[Remove appRoleAssignment](../api/group-delete-approleassignments.md) | None. | Remove an app role assignment from this group.|
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|
@@ -94,7 +99,7 @@ This resource supports:
 |**User settings**| | |
 |[addFavorite](../api/group-addfavorite.md)|None|Add the group to the list of the signed-in user's favorite groups. Supported for only Office 365 groups.|
 |[removeFavorite](../api/group-removefavorite.md)|None|Remove the group from the list of the signed-in user's favorite groups. Supported for Office 365 Groups only.|
-|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administative units that this user is a direct member of, from the **memberOf** navigation property.|
+|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administrative units that this user is a direct member of, from the **memberOf** navigation property.|
 |[List joinedTeams](../api/user-list-joinedteams.md) |[group](group.md) collection| Get the Microsoft Teams that the user is a direct member of.|
 |[subscribeByMail](../api/group-subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the signed-in user to receive email conversations. Supported for Office 365 Groups only.|
 |[unsubscribeByMail](../api/group-unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the signed-in user from receive email conversations. Supported for Office 365 Groups only.|
@@ -109,6 +114,7 @@ This resource supports:
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the group. <br><br>Returned only on $select. Read-only.|
 |autoSubscribeNewMembers|Boolean|Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default value is **false**. <br><br>Returned only on $select.|
 |classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorysetting.md) value, based on the [template definition](directorysettingtemplate.md).<br><br>Returned by default.|
+|createdByAppId|String|App ID of the app used to create the group. Can be null for some groups. <br><br>Returned by default. Read-only. Supports $filter.|
 |createdDateTime|DateTimeOffset| Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only. |
 |deletedDateTime|DateTimeOffset| For some Azure Active Directory objects (user, group, application), if the object is deleted, it is first logically deleted, and this property is updated with the date and time when the object was deleted. Otherwise this property is null. If the object is restored, this property is updated to null. |
 |description|String|An optional description for the group. <br><br>Returned by default.|
@@ -137,7 +143,9 @@ This resource supports:
 |preferredLanguage|String|The preferred language for an Office 365 group. Should follow ISO 639-1 Code; for example "en-US". <br><br>Returned by default. |
 |proxyAddresses|String collection| Email addresses for the group that direct to the same group mailbox. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. The **any** operator is required for filter expressions on multi-valued properties. <br><br>Returned by default. Read-only. Not nullable. Supports $filter. |
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/grouplifecyclepolicy-renewgroup.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only.|
-|securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports $filter.|
+|resourceBehaviorOptions|String collection|Specifies the group behaviors that can be set for an Office 365 group during creation. This can be set only as part of creation (POST). Possible values are `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. For more information, see [Set Microsoft 365 group behaviors and provisioning options](/graph/group-set-options).|
+|resourceProvisioningOptions|String collection|Specifies the group resources that are provisioned as part of Office 365 group creation, that are not normally part of default group creation. Possible value is `Team`. For more information, see [Set Microsoft 365 group behaviors and provisioning options](/graph/group-set-options).|
+|securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports `$filter`.|
 |securityIdentifier|String|Security identifier of the group, used in Windows scenarios. <br><br>Returned by default.|
 |theme|String|Specifies an Office 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` or `Red`. <br><br>Returned by default. |
 |unseenConversationsCount|Int32|Count of conversations that have been delivered one or more new posts since the signed-in user's last visit to the group. This property is the same as **unseenCount**. <br><br>Returned only on $select.|
@@ -155,6 +163,7 @@ Here's what each **visibility** property value means:
 | Private | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
 | Hiddenmembership | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
 
+
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
@@ -162,7 +171,7 @@ Here's what each **visibility** property value means:
 |calendar|[calendar](calendar.md)|The group's calendar. Read-only.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. **Note:** This is not set if the user is an administrator. Read-only.|
 |drive|[drive](drive.md)|The group's default drive. Read-only.|
 |drives|[drive](drive.md) collection|The group's drives. Read-only.|
 |endpoints|[Endpoint](endpoint.md) collection| Endpoints for the group. Read-only. Nullable.|
@@ -183,7 +192,7 @@ Here's what each **visibility** property value means:
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 
 ## JSON representation
-The following is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -232,6 +241,7 @@ The following is a JSON representation of the resource
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "description": "string",
@@ -257,6 +267,8 @@ The following is a JSON representation of the resource
   "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
+  "resourceBehaviorOptions": ["String"],
+  "resourceProvisioningOptions": ["String"],
   "securityEnabled": true,
   "securityIdentifier": "string",
   "unseenConversationsCount": 1024,

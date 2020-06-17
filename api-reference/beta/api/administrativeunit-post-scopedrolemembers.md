@@ -2,7 +2,7 @@
 title: "Add a scopedRoleMember"
 description: "Add a new scopedRoleMembership. NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships."
 localization_priority: Normal
-author: "davidmu1"
+author: "anandyadavMSFT"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

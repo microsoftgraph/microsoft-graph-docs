@@ -1,13 +1,15 @@
 ---
 title: "Create userExperienceAnalyticsBaseline"
 description: "Create a new userExperienceAnalyticsBaseline object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create userExperienceAnalyticsBaseline
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -90,7 +92,6 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
 
 
 

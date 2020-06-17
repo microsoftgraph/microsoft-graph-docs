@@ -39,6 +39,14 @@ Represents video teleconferencing device media quality data.
 |remoteIPAddress|String|The remote IP address for the media session.|
 |remotePort|Int32|The remote media port.|
 
+### Derived types
+
+| Type                                                 | Description                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [teleconferenceDeviceAudioQuality](teleconferencedeviceaudioquality.md)    | Video teleconferencing device audio quality data.                          |
+| [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)    | Video teleconferencing device video quality data.                          |
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | Video teleconferencing device screen-sharing quality data. |
+
 ## JSON representation
 
 The following is a JSON representation of the resource.

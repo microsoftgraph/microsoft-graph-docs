@@ -11,11 +11,11 @@ var printerShare = new PrinterShare
 	Name = "ShareName",
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"printer@odata.bind","https://graph.microsoft.com/beta/print/printers/{id}"}
+		{"printer@odata.bind", "https://graph.microsoft.com/beta/print/printers/{id}"}
 	}
 };
 
-await graphClient.Print.PrinterShares["{id}"]
+await graphClient.Print.Shares["{id}"]
 	.Request()
 	.UpdateAsync(printerShare);
 

@@ -1,13 +1,15 @@
 ---
 title: "windowsStartMenuModeType enum type"
 description: "Type of display modes for the start menu."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # windowsStartMenuModeType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,13 +1,15 @@
 ---
 title: "List macOSDeviceFeaturesConfigurations"
 description: "List properties and relationships of the macOSDeviceFeaturesConfiguration objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List macOSDeviceFeaturesConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2985
+Content-Length: 6245
 
 {
   "value": [
@@ -137,16 +139,100 @@ Content-Length: 2985
         }
       ],
       "singleSignOnExtension": {
-        "@odata.type": "microsoft.graph.singleSignOnExtension"
+        "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+        "extensionIdentifier": "Extension Identifier value",
+        "teamIdentifier": "Team Identifier value",
+        "domains": [
+          "Domains value"
+        ],
+        "realm": "Realm value",
+        "configurations": [
+          {
+            "@odata.type": "microsoft.graph.keyStringValuePair",
+            "key": "Key value",
+            "value": "Value value"
+          }
+        ]
       },
       "macOSSingleSignOnExtension": {
-        "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
-      }
+        "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
+        "realm": "Realm value",
+        "domains": [
+          "Domains value"
+        ],
+        "blockAutomaticLogin": true,
+        "cacheName": "Cache Name value",
+        "credentialBundleIdAccessControlList": [
+          "Credential Bundle Id Access Control List value"
+        ],
+        "domainRealms": [
+          "Domain Realms value"
+        ],
+        "isDefaultRealm": true,
+        "passwordBlockModification": true,
+        "passwordExpirationDays": 6,
+        "passwordExpirationNotificationDays": 2,
+        "userPrincipalName": "User Principal Name value",
+        "passwordRequireActiveDirectoryComplexity": true,
+        "passwordPreviousPasswordBlockCount": 2,
+        "passwordMinimumLength": 5,
+        "passwordMinimumAgeDays": 6,
+        "passwordRequirementsDescription": "Password Requirements Description value",
+        "requireUserPresence": true,
+        "activeDirectorySiteCode": "Active Directory Site Code value",
+        "passwordEnableLocalSync": true,
+        "blockActiveDirectorySiteAutoDiscovery": true,
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+      },
+      "contentCachingEnabled": true,
+      "contentCachingType": "userContentOnly",
+      "contentCachingMaxSizeBytes": 10,
+      "contentCachingDataPath": "Content Caching Data Path value",
+      "contentCachingDisableConnectionSharing": true,
+      "contentCachingForceConnectionSharing": true,
+      "contentCachingClientPolicy": "clientsInLocalNetwork",
+      "contentCachingClientListenRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv6Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "contentCachingPeerPolicy": "peersInLocalNetwork",
+      "contentCachingPeerListenRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv6Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "contentCachingPeerFilterRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv6Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "contentCachingParentSelectionPolicy": "roundRobin",
+      "contentCachingParents": [
+        "Content Caching Parents value"
+      ],
+      "contentCachingLogClientIdentities": true,
+      "contentCachingPublicRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv6Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "contentCachingBlockDeletion": true,
+      "contentCachingShowAlerts": true,
+      "contentCachingKeepAwake": true,
+      "contentCachingPort": 2
     }
   ]
 }
 ```
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "Update microsoftStoreForBusinessContainedApp"
 description: "Update the properties of a microsoftStoreForBusinessContainedApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update microsoftStoreForBusinessContainedApp
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -84,7 +86,6 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

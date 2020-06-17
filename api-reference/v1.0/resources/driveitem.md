@@ -200,6 +200,8 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | [Delete permission](../api/permission-delete.md)         | No Content | Removes the permission from the driveItem.
 | [Get WebSocket channel][getWebSocket]                    | [subscription][] | Receives near-real-time change notifications for a drive using socket.io.
 | [Preview item][item-preview]                             | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.
+| [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [Get analytics]: ../api/itemanalytics-get.md

@@ -1,5 +1,5 @@
 ---
-title: "Universal Print API overview"
+title: "Universal Print cloud printing API overview"
 description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
 author: "braedenp-msft"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "universal-print"
 ms.custom: scenarios:getting-started
 ---
 
-# Universal Print API overview
+# Universal Print cloud printing API overview
 
 Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft.
 
@@ -51,7 +51,7 @@ Keeping track of an organization's printers, printer configurations, and printer
 
 ### Seamlessly replace or update printer hardware
 
-Printers are not visible to users until they are [shared](/graph/api/print-post-printershares?view=graph-rest-beta), providing administrators fine-grained control over which printer hardware is available at a given time.
+Printers are not visible to users until they are [shared](/graph/api/print-post-shares?view=graph-rest-beta), providing administrators fine-grained control over which printer hardware is available at a given time.
 
 Sharing a printer creates a [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resource that can be updated at any time to point to a different printer, making it easy to replace broken printer hardware or take printers offline for maintenance.
 

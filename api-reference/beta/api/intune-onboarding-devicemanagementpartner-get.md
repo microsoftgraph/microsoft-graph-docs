@@ -1,13 +1,15 @@
 ---
 title: "Get deviceManagementPartner"
 description: "Read properties and relationships of the deviceManagementPartner object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get deviceManagementPartner
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1005
+Content-Length: 1184
 
 {
   "value": {
@@ -81,14 +83,15 @@ Content-Length: 1005
       {
         "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+          "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+          "deviceAndAppManagementAssignmentFilterType": "include"
         }
       }
     ]
   }
 }
 ```
-
 
 
 

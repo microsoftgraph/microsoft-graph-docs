@@ -1,13 +1,15 @@
 ---
 title: "Get windows81GeneralConfiguration"
 description: "Read properties and relationships of the windows81GeneralConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windows81GeneralConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -137,7 +139,6 @@ Content-Length: 3022
   }
 }
 ```
-
 
 
 

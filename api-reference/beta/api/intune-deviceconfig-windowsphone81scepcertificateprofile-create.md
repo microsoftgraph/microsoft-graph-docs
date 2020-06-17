@@ -1,13 +1,15 @@
 ---
 title: "Create windowsPhone81SCEPCertificateProfile"
 description: "Create a new windowsPhone81SCEPCertificateProfile object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windowsPhone81SCEPCertificateProfile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -203,7 +205,6 @@ Content-Length: 1977
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
 
 
 

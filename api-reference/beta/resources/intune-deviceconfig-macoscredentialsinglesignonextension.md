@@ -1,13 +1,15 @@
 ---
 title: "macOSCredentialSingleSignOnExtension resource type"
 description: "Represents a Credential-type Single Sign-On extension profile for macOS devices."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # macOSCredentialSingleSignOnExtension resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

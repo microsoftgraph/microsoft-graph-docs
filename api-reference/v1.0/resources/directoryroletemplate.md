@@ -1,8 +1,8 @@
 ---
 title: "directoryRoleTemplate resource type"
-description: "Represents a directory role template. A directory role template specifies the property values of a directory role (directoryRole). There is an associated directory role template object for each of the directory roles that may be activated in a tenant."
+description: "Represents a directory role template."
 localization_priority: Normal
-author: "davidmu1"
+author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

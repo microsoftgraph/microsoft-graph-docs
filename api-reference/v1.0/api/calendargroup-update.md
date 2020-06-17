@@ -1,7 +1,7 @@
 ---
 title: "Update calendargroup"
 description: "Update the properties of calendargroup object."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

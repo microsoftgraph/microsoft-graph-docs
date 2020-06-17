@@ -4,7 +4,7 @@ description: "Get the policy objects assigned to an application or service princ
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "dkershaw10"
 ---
 
 # List Policies assigned to Application or Service Principal
@@ -33,9 +33,9 @@ GET /applications/{id}/policies
 > Note: The "id" in the request is the "id" property of the application or service principal, not the "appid" property.
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name           | Description                |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 Do not supply a request body for this method.

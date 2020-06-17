@@ -14,11 +14,11 @@ A handful of Azure AD Graph methods have also changed.  If a method is **not** s
 
 |Azure AD Graph <br>(v1.6) method |Microsoft Graph<br>(resource/method)|Comments|
 |---|---|---|
-| getAvailableExtensionProperties | beta - _Not available_ <br> v1.0 - _Not available_ |  |
-| getObjectsByObjectId | beta&nbsp;-&nbsp;directory/getByIds <br> v1.0 - directory/getByIds | |
-| invalidateAllRefreshTokens | beta - revokeSignInSessions <br> v1.0 - revokeSignInSessions | |
-| isMemberOf | beta - _Not planned_ <br> v1.0 - _Not planned_ | Use checkMemberGroups instead. |
-| restore | beta&nbsp;-&nbsp;restore&nbsp;(applications,&nbsp;users,&nbsp;and&nbsp;groups)<br> v1.0&nbsp;-&nbsp;restore&nbsp;(users&nbsp;and&nbsp;groups) | You can also view deleted applications, users, and groups and permanently delete them. |
+| getAvailableExtensionProperties | beta&nbsp;-&nbsp;_Not available_ <br> v1.0&nbsp;-&nbsp;[getAvailableExtensionProperties](/graph/api/application-getavailableextensionproperties?view=graph-rest-1.0) |  |
+| getObjectsByObjectId | beta&nbsp;-&nbsp;[directoryObjects/getByIds](/graph/api/directoryobject-getbyids?view=graph-rest-beta) <br> v1.0&nbsp;-&nbsp;[directoryObjects/getByIds](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) | |
+| invalidateAllRefreshTokens | beta&nbsp;-&nbsp;[revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-beta) <br> v1.0&nbsp;-&nbsp;[revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) | |
+| isMemberOf | beta&nbsp;-&nbsp;_Not planned_ <br> v1.0&nbsp;-&nbsp;_Not planned_ | Use checkMemberGroups instead. |
+| restore | beta&nbsp;-&nbsp;[restore&nbsp;(applications,&nbsp;users,&nbsp;and&nbsp;groups)](/graph/api/directory-deleteditems-restore?view=graph-rest-beta)<br> v1.0&nbsp;-&nbsp;[restore&nbsp;(applications,&nbsp;users,&nbsp;and&nbsp;groups)](/graph/api/directory-deleteditems-restore?view=graph-rest-1.0) | You can also view deleted applications, users, and groups and permanently delete them. |
 
 ## Next Steps
 

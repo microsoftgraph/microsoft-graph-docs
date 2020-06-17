@@ -2,12 +2,14 @@
 title: "reportRoot resource type"
 description: "The resource that represents an instance of a device or troubleshooting report, depending on context."
 localization_priority: Normal
-author: "davidmu1"
+author: "dougeby"
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # reportRoot resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

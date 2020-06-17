@@ -3,7 +3,7 @@ title: "Delete identityProvider"
 description: "Delete an existing identityProvider."
 localization_priority: Normal
 doc_type: apiPageType
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 ---
 

@@ -1,13 +1,15 @@
 ---
 title: "Get windows10VpnConfiguration"
 description: "Read properties and relationships of the windows10VpnConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windows10VpnConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4629
+Content-Length: 4950
 
 {
   "value": {
@@ -205,11 +207,19 @@ Content-Length: 4629
     ],
     "trustedNetworkDomains": [
       "Trusted Network Domains value"
-    ]
+    ],
+    "cryptographySuite": {
+      "@odata.type": "microsoft.graph.cryptographySuite",
+      "encryptionMethod": "des",
+      "integrityCheckMethod": "sha1_96",
+      "dhGroup": "group2",
+      "cipherTransformConstants": "des",
+      "authenticationTransformConstants": "sha1_96",
+      "pfsGroup": "pfs2"
+    }
   }
 }
 ```
-
 
 
 

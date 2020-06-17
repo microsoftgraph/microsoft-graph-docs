@@ -1,13 +1,15 @@
 ---
 title: "Get managedAppRegistration"
 description: "Read properties and relationships of the managedAppRegistration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get managedAppRegistration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 956
+Content-Length: 1003
 
 {
   "value": {
@@ -83,14 +85,14 @@ Content-Length: 956
     ],
     "userId": "User Id value",
     "appIdentifier": {
-      "@odata.type": "microsoft.graph.mobileAppIdentifier"
+      "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+      "packageId": "Package Id value"
     },
     "id": "5496aa60-aa60-5496-60aa-965460aa9654",
     "version": "Version value"
   }
 }
 ```
-
 
 
 

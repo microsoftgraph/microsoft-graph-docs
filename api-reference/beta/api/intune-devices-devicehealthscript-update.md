@@ -1,13 +1,15 @@
 ---
 title: "Update deviceHealthScript"
 description: "Update the properties of a deviceHealthScript object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update deviceHealthScript
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -48,6 +50,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Unique Identifier for the device health script|
 |publisher|String|Name of the device health script publisher|
+|version|String|Version of the device health script|
 |displayName|String|Name of the device health script|
 |description|String|Description of the device health script|
 |detectionScriptContent|Binary|The entire content of the detection powershell script|
@@ -58,6 +61,10 @@ The following table shows the properties that are required when you create the [
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked|
 |runAs32Bit|Boolean|Indicate whether PowerShell script(s) should run as 32-bit|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for the device health script|
+|isGlobalScript|Boolean|Determines if this is Microsoft Proprietary Script. Proprietary scripts are read-only|
+|highestAvailableVersion|String|Highest available version for a Microsoft Proprietary script|
+|detectionScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) collection|List of ComplexType DetectionScriptParameters objects.|
+|remediationScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) collection|List of ComplexType RemediationScriptParameters objects.|
 
 
 
@@ -71,11 +78,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 Content-type: application/json
-Content-length: 575
+Content-length: 1221
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
   "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
@@ -85,8 +93,30 @@ Content-length: 575
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value",
+  "detectionScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ],
+  "remediationScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
   ]
- }
+}
 ```
 
 ### Response
@@ -94,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 747
+Content-Length: 1393
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -114,10 +144,29 @@ Content-Length: 747
     "Role Scope Tag Ids value"
   ],
   "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value"
+  "highestAvailableVersion": "Highest Available Version value",
+  "detectionScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ],
+  "remediationScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ]
 }
 ```
-
 
 
 

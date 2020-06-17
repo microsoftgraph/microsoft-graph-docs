@@ -1,13 +1,15 @@
 ---
 title: "groupPolicyPresentationLongDecimalTextBox resource type"
 description: "Represents an ADMX longDecimalTextBox element and an ADMX longDecimal element."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationLongDecimalTextBox resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

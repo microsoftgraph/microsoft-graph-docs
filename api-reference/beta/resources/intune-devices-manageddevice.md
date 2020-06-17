@@ -1,13 +1,15 @@
 ---
 title: "managedDevice resource type"
 description: "Devices that are managed or pre-enrolled through Intune"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # managedDevice resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -64,7 +66,7 @@ Devices that are managed or pre-enrolled through Intune
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. This property is read-only.|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. This property is read-only. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. This property is read-only.|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `blackberry`, `palm`, `unknown`.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. This property is read-only.|
 |managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
@@ -74,7 +76,7 @@ Devices that are managed or pre-enrolled through Intune
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. This property is read-only.|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
 |azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`, `androidEnterpriseDedicatedDevice`, `androidEnterpriseFullyManaged`, `androidEnterpriseCorporateWorkProfile`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indicates if Lost mode is enabled or disabled. This property is read-only. Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. This property is read-only.|
 |emailAddress|String|Email(s) for the user associated with the device. This property is read-only.|
@@ -124,6 +126,9 @@ Devices that are managed or pre-enrolled through Intune
 |ethernetMacAddress|String|Ethernet MAC. This property is read-only.|
 |physicalMemoryInBytes|Int64|Total Memory in Bytes. This property is read-only.|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Processor architecture. This property is read-only. Possible values are: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
+|specificationVersion|String|Specification version. This property is read-only.|
+|joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type. Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
+|skuFamily|String|Device sku family|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -179,7 +184,8 @@ Here is a JSON representation of the resource.
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
     "deviceGuardVirtualizationBasedSecurityState": "String",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
-    "osBuildNumber": "String"
+    "osBuildNumber": "String",
+    "operatingSystemProductType": 1024
   },
   "ownerType": "String",
   "managedDeviceOwnerType": "String",
@@ -317,7 +323,10 @@ Here is a JSON representation of the resource.
   },
   "ethernetMacAddress": "String",
   "physicalMemoryInBytes": 1024,
-  "processorArchitecture": "String"
+  "processorArchitecture": "String",
+  "specificationVersion": "String",
+  "joinType": "String",
+  "skuFamily": "String"
 }
 ```
 

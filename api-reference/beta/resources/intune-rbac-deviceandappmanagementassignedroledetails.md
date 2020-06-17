@@ -1,13 +1,15 @@
 ---
 title: "deviceAndAppManagementAssignedRoleDetails resource type"
 description: "The set of Role Definitions and Role Assignments assigned to a user."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceAndAppManagementAssignedRoleDetails resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

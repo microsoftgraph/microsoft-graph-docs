@@ -1,13 +1,15 @@
 ---
 title: "importedDeviceIdentityResult resource type"
 description: "The importedDeviceIdentityResult resource represents the result of attempting to import a device identity."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # importedDeviceIdentityResult resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

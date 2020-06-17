@@ -1,13 +1,15 @@
 ---
 title: "Create windows10VpnConfiguration"
 description: "Create a new windows10VpnConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windows10VpnConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -83,6 +85,7 @@ The following table shows the properties that are required when you create the w
 |routes|[vpnRoute](../resources/intune-deviceconfig-vpnroute.md) collection|Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.|
 |dnsRules|[vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md) collection|DNS rules. This collection can contain a maximum of 1000 elements.|
 |trustedNetworkDomains|String collection|Trusted Network Domains|
+|cryptographySuite|[cryptographySuite](../resources/intune-deviceconfig-cryptographysuite.md)|Cryptography Suite security settings for IKEv2 VPN in Windows10 and above |
 
 
 
@@ -96,7 +99,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4160
+Content-length: 4463
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -234,7 +237,16 @@ Content-length: 4160
   ],
   "trustedNetworkDomains": [
     "Trusted Network Domains value"
-  ]
+  ],
+  "cryptographySuite": {
+    "@odata.type": "microsoft.graph.cryptographySuite",
+    "encryptionMethod": "des",
+    "integrityCheckMethod": "sha1_96",
+    "dhGroup": "group2",
+    "cipherTransformConstants": "des",
+    "authenticationTransformConstants": "sha1_96",
+    "pfsGroup": "pfs2"
+  }
 }
 ```
 
@@ -243,7 +255,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4332
+Content-Length: 4635
 
 {
   "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
@@ -384,10 +396,18 @@ Content-Length: 4332
   ],
   "trustedNetworkDomains": [
     "Trusted Network Domains value"
-  ]
+  ],
+  "cryptographySuite": {
+    "@odata.type": "microsoft.graph.cryptographySuite",
+    "encryptionMethod": "des",
+    "integrityCheckMethod": "sha1_96",
+    "dhGroup": "group2",
+    "cipherTransformConstants": "des",
+    "authenticationTransformConstants": "sha1_96",
+    "pfsGroup": "pfs2"
+  }
 }
 ```
-
 
 
 

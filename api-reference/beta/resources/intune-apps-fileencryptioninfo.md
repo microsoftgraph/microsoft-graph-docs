@@ -1,13 +1,15 @@
 ---
 title: "fileEncryptionInfo resource type"
 description: "Contains properties for file encryption information for the content version of a line of business app."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # fileEncryptionInfo resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

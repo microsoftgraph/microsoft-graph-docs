@@ -1,13 +1,15 @@
 ---
 title: "Get iosVppEBookAssignment"
 description: "Read properties and relationships of the iosVppEBookAssignment object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get iosVppEBookAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,20 +63,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 273
+Content-Length: 444
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
     "id": "48f05789-5789-48f0-8957-f0488957f048",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+      "deviceAndAppManagementAssignmentFilterType": "include"
     },
     "installIntent": "required"
   }
 }
 ```
-
 
 
 

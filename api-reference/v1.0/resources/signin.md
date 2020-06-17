@@ -1,7 +1,7 @@
 ---
 title: "signIn resource type"
 description: "Details user and application sign-in activity for a tenant (directory)."
-author: "dhanyahk"
+author: "kholtz"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType

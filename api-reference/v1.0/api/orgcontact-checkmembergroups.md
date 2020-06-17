@@ -2,7 +2,7 @@
 title: "orgContact: checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those group IDs of which the organizational contact has a direct or transitive membership."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

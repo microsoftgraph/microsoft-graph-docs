@@ -1,13 +1,15 @@
 ---
 title: "Update androidForWorkPkcsCertificateProfile"
 description: "Update the properties of a androidForWorkPkcsCertificateProfile object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update androidForWorkPkcsCertificateProfile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -191,7 +193,6 @@ Content-Length: 1910
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
 
 
 

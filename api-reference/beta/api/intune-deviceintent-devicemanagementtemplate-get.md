@@ -1,13 +1,15 @@
 ---
 title: "Get deviceManagementTemplate"
 description: "Read properties and relationships of the deviceManagementTemplate object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get deviceManagementTemplate
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -62,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 459
+Content-Length: 495
 
 {
   "value": {
@@ -75,11 +77,11 @@ Content-Length: 459
     "intentCount": 11,
     "templateType": "specializedDevices",
     "platformType": "androidForWork",
+    "templateSubtype": "firewall",
     "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
   }
 }
 ```
-
 
 
 

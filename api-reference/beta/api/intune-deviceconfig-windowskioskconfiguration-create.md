@@ -1,13 +1,15 @@
 ---
 title: "Create windowsKioskConfiguration"
 description: "Create a new windowsKioskConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windowsKioskConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -260,7 +262,6 @@ Content-Length: 3001
   }
 }
 ```
-
 
 
 

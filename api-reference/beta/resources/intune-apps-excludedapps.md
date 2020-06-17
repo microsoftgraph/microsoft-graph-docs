@@ -1,13 +1,15 @@
 ---
 title: "excludedApps resource type"
 description: "Contains properties for Excluded Office365 Apps."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # excludedApps resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -19,6 +21,7 @@ Contains properties for Excluded Office365 Apps.
 |Property|Type|Description|
 |:---|:---|:---|
 |access|Boolean|The value for if MS Office Access should be excluded or not.|
+|bing|Boolean|The value for if Microsoft Search as default should be excluded or not.|
 |excel|Boolean|The value for if MS Office Excel should be excluded or not.|
 |groove|Boolean|The value for if MS Office OneDrive for Business - Groove should be excluded or not.|
 |infoPath|Boolean|The value for if MS Office InfoPath should be excluded or not.|
@@ -47,6 +50,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.excludedApps",
   "access": true,
+  "bing": true,
   "excel": true,
   "groove": true,
   "infoPath": true,

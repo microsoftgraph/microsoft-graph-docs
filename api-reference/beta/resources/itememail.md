@@ -17,11 +17,11 @@ Represents detailed information about email addresses associated with the user.
 
 ## Methods
 
-| Method                                   | Return Type               | Description                                            |
-|:-----------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [Get](../api/itememail-get.md) | [itemEmail](itememail.md) | Read properties and relationships of an **itemEmail** object. |
-| [Update](../api/itememail-update.md)     | [itemEmail](itememail.md) | Update an **itemEmail** object.                               |
-| [Delete](../api/itememail-delete.md)     | None                      | Delete an **itemEmail** object.                               |
+| Method                                   | Return Type               | Description                                                      |
+|:-----------------------------------------|:--------------------------|:-----------------------------------------------------------------|
+| [Get](../api/itememail-get.md)           | [itemEmail](itememail.md) | Read properties and relationships of an **itemEmail** object.    |
+| [Update](../api/itememail-update.md)     | [itemEmail](itememail.md) | Update an **itemEmail** object.                                  |
+| [Delete](../api/itememail-delete.md)     | None                      | Delete an **itemEmail** object.                                  |
 
 ## Properties
 

@@ -1,7 +1,7 @@
 ---
 title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -42,10 +42,12 @@ The following Graph resources are available to manage app protection polices in 
 - [Android managed store app configuration schema](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Android managed store app configuration schema item](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Android managed store app configuration schema item data type](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
+- [Android managed store app track](intune-apps-androidmanagedstoreapptrack.md)
 - [Android managed store web app](intune-apps-androidmanagedstorewebapp.md)
 - [Android minimum operating system](intune-apps-androidminimumoperatingsystem.md)
 - [Android permission action](intune-apps-androidpermissionaction.md)
 - [Android permission action type](intune-apps-androidpermissionactiontype.md)
+- [Android profile applicability](intune-apps-androidprofileapplicability.md)
 - [Android store app](intune-apps-androidstoreapp.md)
 - [App configuration setting item](intune-apps-appconfigurationsettingitem.md)
 - [Certificate status](intune-apps-certificatestatus.md)
@@ -131,26 +133,35 @@ The following Graph resources are available to manage app protection polices in 
 - [VPP licensing type](intune-apps-vpplicensingtype.md)
 - [Web app](intune-apps-webapp.md)
 - [Win32 LOB app](intune-apps-win32lobapp.md)
-- [Win32 LOB app delivery optimization priority](intune-apps-win32lobappdeliveryoptimizationpriority.md)
 - [Win32 LOB app detection](intune-apps-win32lobappdetection.md)
 - [Win32 LOB app detection operator](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB app file system detection](intune-apps-win32lobappfilesystemdetection.md)
 - [Win32 LOB app file system detection type](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Win32 LOB app file system operation type](intune-apps-win32lobappfilesystemoperationtype.md)
 - [Win32 LOB app file system requirement](intune-apps-win32lobappfilesystemrequirement.md)
+- [Win32 LOB app file system rule](intune-apps-win32lobappfilesystemrule.md)
 - [Win32 LOB app install experience](intune-apps-win32lobappinstallexperience.md)
 - [Win32 LOB app msi information](intune-apps-win32lobappmsiinformation.md)
 - [Win32 LOB app msi package type](intune-apps-win32lobappmsipackagetype.md)
 - [Win32 LOB app power shell script detection](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Win32 LOB app power shell script detection type](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Win32 LOB app power shell script requirement](intune-apps-win32lobapppowershellscriptrequirement.md)
+- [Win32 LOB app power shell script rule](intune-apps-win32lobapppowershellscriptrule.md)
 - [Win32 LOB app product code detection](intune-apps-win32lobappproductcodedetection.md)
+- [Win32 LOB app product code rule](intune-apps-win32lobappproductcoderule.md)
 - [Win32 LOB app registry detection](intune-apps-win32lobappregistrydetection.md)
 - [Win32 LOB app registry detection type](intune-apps-win32lobappregistrydetectiontype.md)
 - [Win32 LOB app registry requirement](intune-apps-win32lobappregistryrequirement.md)
+- [Win32 LOB app registry rule](intune-apps-win32lobappregistryrule.md)
+- [Win32 LOB app registry rule operation type](intune-apps-win32lobappregistryruleoperationtype.md)
 - [Win32 LOB app requirement](intune-apps-win32lobapprequirement.md)
 - [Win32 LOB app restart behavior](intune-apps-win32lobapprestartbehavior.md)
 - [Win32 LOB app return code](intune-apps-win32lobappreturncode.md)
 - [Win32 LOB app return code type](intune-apps-win32lobappreturncodetype.md)
+- [Win32 LOB app rule](intune-apps-win32lobapprule.md)
+- [Win32 LOB app rule operator](intune-apps-win32lobappruleoperator.md)
+- [Win32 LOB app rule type](intune-apps-win32lobappruletype.md)
+- [Win32 LOB power shell script rule operation type](intune-apps-win32lobpowershellscriptruleoperationtype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Windows architecture](intune-apps-windowsarchitecture.md)
 - [Windows device type](intune-apps-windowsdevicetype.md)

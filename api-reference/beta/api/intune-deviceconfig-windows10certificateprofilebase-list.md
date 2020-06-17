@@ -1,13 +1,15 @@
 ---
 title: "List windows10CertificateProfileBases"
 description: "List properties and relationships of the windows10CertificateProfileBase objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List windows10CertificateProfileBases
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -106,7 +108,6 @@ Content-Length: 1668
   ]
 }
 ```
-
 
 
 

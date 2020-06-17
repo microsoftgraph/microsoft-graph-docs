@@ -1,13 +1,15 @@
 ---
 title: "deviceAppManagementTaskStatus enum type"
 description: "Device app management task status."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # deviceAppManagementTaskStatus enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

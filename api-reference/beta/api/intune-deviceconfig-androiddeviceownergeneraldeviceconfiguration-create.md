@@ -1,13 +1,15 @@
 ---
 title: "Create androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Create a new androidDeviceOwnerGeneralDeviceConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create androidDeviceOwnerGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -68,6 +70,17 @@ The following table shows the properties that are required when you create the a
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering.|
 |certificateCredentialConfigurationDisabled|Boolean|Indicates whether or not to block users from any certificate credential configuration.|
+|microsoftLauncherConfigurationEnabled|Boolean|Indicates whether or not to you want configure Microsoft Launcher.|
+|microsoftLauncherCustomWallpaperEnabled|Boolean|Indicates whether or not to configure the wallpaper on the targeted devices.|
+|microsoftLauncherCustomWallpaperImageUrl|String|Indicates the URL for the image file to use as the wallpaper on the targeted devices.|
+|microsoftLauncherCustomWallpaperAllowUserModification|Boolean|Indicates whether or not the user can modify the wallpaper to personalize their device.|
+|microsoftLauncherFeedEnabled|Boolean|Indicates whether or not you want to enable the launcher feed on the device.|
+|microsoftLauncherFeedAllowUserModification|Boolean|Indicates whether or not the user can modify the launcher feed on the device.|
+|microsoftLauncherDockPresenceConfiguration|[microsoftLauncherDockPresence](../resources/intune-deviceconfig-microsoftlauncherdockpresence.md)|Indicates whether or not you want to configure the device dock. Possible values are: `notConfigured`, `show`, `hide`, `disabled`.|
+|microsoftLauncherDockPresenceAllowUserModification|Boolean|Indicates whether or not the user can modify the device dock configuration on the device.|
+|microsoftLauncherSearchBarPlacementConfiguration|[microsoftLauncherSearchBarPlacement](../resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md)|Indicates the search bar placement configuration on the device. Possible values are: `notConfigured`, `top`, `bottom`, `hide`.|
+|microsoftLauncherSearchBarPlacementAllowUserModification|Boolean|Indicates whether the user can modify the search bar placement on the device.|
+|enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Indicates which enrollment profile you want to configure. Possible values are: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
 |dataRoamingBlocked|Boolean|Indicates whether or not to block a user from data roaming.|
 |dateTimeConfigurationBlocked|Boolean|Indicates whether or not to block the user from manually changing the date or time on the device|
 |factoryResetDeviceAdministratorEmails|String collection|List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.|
@@ -139,7 +152,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4374
+Content-length: 5044
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -181,6 +194,17 @@ Content-length: 4374
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "microsoftLauncherConfigurationEnabled": true,
+  "microsoftLauncherCustomWallpaperEnabled": true,
+  "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
+  "microsoftLauncherCustomWallpaperAllowUserModification": true,
+  "microsoftLauncherFeedEnabled": true,
+  "microsoftLauncherFeedAllowUserModification": true,
+  "microsoftLauncherDockPresenceConfiguration": "show",
+  "microsoftLauncherDockPresenceAllowUserModification": true,
+  "microsoftLauncherSearchBarPlacementConfiguration": "top",
+  "microsoftLauncherSearchBarPlacementAllowUserModification": true,
+  "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [
@@ -264,7 +288,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4546
+Content-Length: 5216
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -309,6 +333,17 @@ Content-Length: 4546
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "microsoftLauncherConfigurationEnabled": true,
+  "microsoftLauncherCustomWallpaperEnabled": true,
+  "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
+  "microsoftLauncherCustomWallpaperAllowUserModification": true,
+  "microsoftLauncherFeedEnabled": true,
+  "microsoftLauncherFeedAllowUserModification": true,
+  "microsoftLauncherDockPresenceConfiguration": "show",
+  "microsoftLauncherDockPresenceAllowUserModification": true,
+  "microsoftLauncherSearchBarPlacementConfiguration": "top",
+  "microsoftLauncherSearchBarPlacementAllowUserModification": true,
+  "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [
@@ -386,7 +421,6 @@ Content-Length: 4546
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
-
 
 
 

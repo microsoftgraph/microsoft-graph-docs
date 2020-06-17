@@ -1,13 +1,15 @@
 ---
 title: "managedAppDataTransferLevel enum type"
 description: "Data can be transferred from/to these classes of apps"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # managedAppDataTransferLevel enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

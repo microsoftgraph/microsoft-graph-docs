@@ -1,13 +1,15 @@
 ---
 title: "securityBaselineDeviceState resource type"
 description: "The security baseline compliance state summary of the security baseline for a device."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # securityBaselineDeviceState resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

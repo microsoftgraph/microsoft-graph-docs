@@ -1,7 +1,7 @@
 ---
 title: "managedAppRegistration resource type"
 description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow. The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -86,6 +86,9 @@ Here is a JSON representation of the resource.
   ],
 }
 -->
+
+
+
 
 
 

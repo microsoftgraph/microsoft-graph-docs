@@ -9,8 +9,6 @@ doc_type: "resourcePageType"
 
 # urlAssessmentRequest resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Used to create and retrieve a URL threat assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
 
 ## Methods

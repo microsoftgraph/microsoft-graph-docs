@@ -12,7 +12,7 @@ var privilegedApproval = new PrivilegedApproval
 	RoleId = "roleId-value",
 	ApprovalType = "approvalType-value",
 	ApprovalState = ApprovalState.Pending,
-	ApprovalDuration = "datetime-value"
+	ApprovalDuration = new Duration("datetime-value")
 };
 
 await graphClient.PrivilegedApproval

@@ -8,10 +8,12 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 String type = "view";
 
+String password = "ThisIsMyPrivatePassword";
+
 String scope = "anonymous";
 
 graphClient.me().drive().items("{item-id}")
-	.createLink(type,scope)
+	.createLink(type,scope,null,password,null)
 	.buildRequest()
 	.post();
 

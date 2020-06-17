@@ -1,7 +1,7 @@
 ---
 title: "Working with groups in Microsoft Graph"
 description: "Groups are collections of users and other principals who share access to resources in Microsoft services or in your app. Microsoft Graph provides APIs that you can use to create and manage different types of groups and group functionality according to your scenario. All group-related operations in Microsoft Graph require administrator consent."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: conceptualPageType
@@ -136,3 +136,6 @@ Using Microsoft Graph, you can perform the following common operations.
 | List the members of a group, and add or remove members. | [user](user.md) <br/> [group](group.md)| [List members](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md)|
 | Determine whether a user is a member of a group, get all the groups the user is a member of. | [user](user.md) <br/> [group](group.md)| [Check member groups](../api/group-checkmembergroups.md) <br/> [Get member groups](../api/group-getmembergroups.md)|
 | List the owners of a group, and add or remove owners. | [user](user.md) <br/> [group](group.md)| [List owners](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md)|
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

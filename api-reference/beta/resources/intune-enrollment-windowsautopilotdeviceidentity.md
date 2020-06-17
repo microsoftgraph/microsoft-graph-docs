@@ -1,13 +1,15 @@
 ---
 title: "windowsAutopilotDeviceIdentity resource type"
 description: "The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsAutopilotDeviceIdentity resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

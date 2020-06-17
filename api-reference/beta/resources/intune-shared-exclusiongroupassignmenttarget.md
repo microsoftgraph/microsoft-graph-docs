@@ -1,13 +1,15 @@
 ---
 title: "exclusionGroupAssignmentTarget resource type"
 description: "Represents a group that should be excluded from an assignment."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # exclusionGroupAssignmentTarget resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,8 @@ Inherits from [groupAssignmentTarget](../resources/intune-shared-groupassignment
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|deviceAndAppManagementAssignmentFilterId|String|The Id of the filter for the target assignment. Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
+|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|The type of filter of the target assignment i.e. Exclude or Include. Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Possible values are: `none`, `include`.|
 |groupId|String|The group Id that is the target of the assignment. Inherited from [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 
 ## Relationships
@@ -36,6 +40,8 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+  "deviceAndAppManagementAssignmentFilterId": "String",
+  "deviceAndAppManagementAssignmentFilterType": "String",
   "groupId": "String"
 }
 ```

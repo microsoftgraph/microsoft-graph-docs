@@ -1,0 +1,70 @@
+### YamlMime:Landing
+
+title: Microsoft Graph tutorials
+summary: Microsoft Graph tutorials are step-by-step training exercises that guide you through creating a basic application that accesses data via the Microsoft Graph.
+
+metadata:
+  title: Microsoft Graph tutorials
+  description: Microsoft Graph tutorials are step-by-step training exercises that guide you through creating a basic application that accesses data via the Microsoft Graph.
+  ms.topic: landing-page
+  author: jasonjoh
+  ms.author: jasonjoh
+  ms.date: 04/02/2020
+
+landingContent:
+  - title: Build your first server-side app
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: ASP.NET Core
+            url: /graph/tutorials/aspnet-core
+          - text: ASP.NET
+            url: /learn/modules/msgraph-build-aspnetmvc-apps
+          - text: Node.js
+            url: /graph/tutorials/node
+          - text: PHP
+            url: /graph/tutorials/php
+          - text: Python
+            url: /graph/tutorials/python
+          - text: Ruby
+            url: /graph/tutorials/ruby
+  - title: Build your first native app
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: .NET Core
+            url: /graph/tutorials/dotnet-core
+          - text: Android
+            url: /graph/tutorials/android
+          - text: iOS Objective-C
+            url: /graph/tutorials/ios-objectivec
+          - text: iOS Swift
+            url: /graph/tutorials/ios-swift
+          - text: Java
+            url: /graph/tutorials/java
+          - text: React Native
+            url: /graph/tutorials/react-native
+          - text: UWP
+            url: /graph/tutorials/uwp
+          - text: Xamarin
+            url: /graph/tutorials/xamarin
+  - title: Build your first single-page app
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Angular
+            url: /graph/tutorials/angular
+          - text: JavaScript
+            url: /graph/tutorials/javascript
+          - text: React
+            url: /graph/tutorials/react
+  - title: Scenarios
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Change notifications and delta query
+            url: /learn/modules/msgraph-changenotifications-trackchanges
+          - text: Optimize data usage with query parameters
+            url: /learn/modules/optimize-data-usage
+          - text: Optimize network traffic
+            url: /learn/modules/optimize-network-traffic

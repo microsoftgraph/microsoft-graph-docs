@@ -1,13 +1,15 @@
 ---
 title: "Create androidManagedStoreWebApp"
 description: "Create a new androidManagedStoreWebApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create androidManagedStoreWebApp
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -71,6 +73,7 @@ The following table shows the properties that are required when you create the a
 |appStoreUrl|String|The Play for Work Store app URL. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |isPrivate|Boolean|Indicates whether the app is only available to a given enterprise's users. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |isSystemApp|Boolean|Indicates whether the app is a preinstalled system app. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appTracks|[androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md) collection|The tracks that are visible to this enterprise. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |supportsOemConfig|Boolean|Whether this app supports OEMConfig policy. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
@@ -85,7 +88,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 987
+Content-length: 1171
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
@@ -117,6 +120,13 @@ Content-length: 987
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
@@ -126,7 +136,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1159
+Content-Length: 1343
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
@@ -161,10 +171,16 @@ Content-Length: 1159
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
-
 
 
 

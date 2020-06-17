@@ -1,13 +1,15 @@
 ---
 title: "Create deviceManagementScript"
 description: "Create a new deviceManagementScript object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create deviceManagementScript
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -53,7 +55,7 @@ The following table shows the properties that are required when you create the d
 |id|String|Unique Identifier for the device management script.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|The interval for script to run. If not defined the script will run once|
+|runSchedule|runSchedule|The interval for script to run. If not defined the script will run once|
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only.|
@@ -122,7 +124,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

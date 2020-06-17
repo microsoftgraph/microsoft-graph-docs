@@ -58,7 +58,7 @@ The calendar API helps customers navigate their day and enhance productivity:
 Outlook and the calendar API offer many smart conveniences to schedule events:
 
 - Through Outlook calendar app settings, customers can enable automatic adding of events from emails, such as flight, hotel, or dining reservations, and billing invoices. Once added, you can interact with these events just like any other [event](/graph/api/resources/event?view=graph-rest-1.0) objects in the user's mailbox, and build creative scenarios upon this Outlook capability.
-- In Outlook, booking a meeting room is as straight-forward as adding an attendee to the **event**. The calendar API represents a meeting room as an [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) object. You can [get rooms (preview)](/graph/api/user-findrooms?view=graph-rest-beta) and [get room lists (preview)](/graph/api/user-findroomlists?view=graph-rest-beta) that are available in a tenant. To organize a meeting in a specific room, assign it to the **location** property of the **event**.<sup>**</sup>
+- In Outlook, booking a meeting room is as straight-forward as adding an attendee to the **event**. The calendar API represents a meeting room as an [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) object. You can [get rooms](/graph/api/place-list#example-1-list-all-the-rooms-defined-in-the-tenant) and [get room lists](/graph/api/place-list#example-2-list-all-the-room-lists-defined-in-the-tenant) that are available in a tenant. To organize a meeting in a specific room, assign it to the **location** property of the **event**.<sup>**</sup>
 - You can [look up the free/busy information for users and resources](outlook-get-free-busy-schedule.md) for a specific time period. You can then use this data to apply to different scenarios including resource planning and event scheduling.<sup>**</sup>
 - If your scenario involves scheduling meetings at an optimal time, you can consider [using findMeetingTimes to identify possible times or locations to meet](findmeetingtimes-example.md). The [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) function considers the free/busy status of the attendees, and any preferred rooms, time, and other constraints you provide. If the first try doesn't return a common meeting time, check the reason, adjust your criteria and call **findMeetingTimes** again.<sup>**</sup>
 
@@ -69,11 +69,11 @@ With globalization, today's business meetings often involve attendees participat
 - As an example in Outlook, customers can organize a meeting and include attendees joining from a conference room in Seattle, a coffee shop in Paris, and a home office in China. Programmatically, the event **locations** property, which is a collection of [location](/graph/api/resources/location?view=graph-rest-1.0) objects, can reflect this level of details in **displayName** and **locationType** for each **location**. See an [example](/graph/api/event-get?view=graph-rest-1.0#request-2).
 - Outlook gives customers the flexibility to organize events and specify a time zone for each of the start and end times of an event. To support this flexibility, by default, the calendar API returns the **start** and **end** times of an **event** in UTC, and provides the **originalStartTimeZone** and **originalEndTimeZone** properties to note the time zones used when the event was created.
 - Alternatively, you can specify the `Prefer: outlook.timezone="{time zone name}"` header so that a GET event operation returns **start** and **end** in the time zone you specify. The time zone name can be any of those supported by Windows, as well as those on this [list](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). See an [example](/graph/api/event-get?view=graph-rest-1.0#request-1) of the `Prefer` header in use.
-- Available in preview in the beta version only: organizations that support online meeting providers can set up Outlook calendars to use these providers. You can conveniently [organize or attend events in these calendars as online meetings](outlook-calendar-online-meetings.md).
+- Organizations that support online meeting providers, such as Microsoft Teams and Skype, can set up Outlook calendars to use these providers. You can conveniently [organize or attend events in these calendars as online meetings](outlook-calendar-online-meetings.md).
 
-## Build apps with location awareness and provide intelligent context (preview)
+## Build apps with location awareness and provide intelligent context
 
-Use the [places API](/graph/api/resources/place?view=graph-rest-beta) (preview) to help users navigate to a place, or provide an intelligent solution based on the user's location. The following are some example scenarios:
+Use the [places API](/graph/api/resources/place) to help users navigate to a place, or provide an intelligent solution based on the user's location. The following are some example scenarios:
 
 - Incorporate place details in calendar events to help users navigate their day and enhance productivity.<sup>**</sup>
 - Catering applications can use the places API to assist venue navigation and set up.<sup>**</sup>
@@ -109,6 +109,7 @@ Looking for the API reference for this service?
   - [Use Outlook to organize or attend meetings online (preview)](outlook-calendar-online-meetings.md)
   - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
   - [Getting shared events](outlook-get-shared-events-calendars.md)
+  - [Attaching large files to Outlook messages or events](outlook-large-attachments.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
 - Take a look at the Outlook [calendar API](/graph/api/resources/calendar?view=graph-rest-1.0) reference.
 

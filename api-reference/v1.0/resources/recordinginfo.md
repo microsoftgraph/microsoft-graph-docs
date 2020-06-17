@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
+  "initiator": {"@odata.type": "#microsoft.graph.identitySet"},
   "recordingStatus": "unknown | notRecording | recording | failed"
 }
 ```

@@ -25,9 +25,9 @@ highlightedContent:
     - title: Graph Explorer
       itemType: deploy
       url: https://developer.microsoft.com/graph/graph-explorer/
-    - title: Use the API
+    - title: What's new in Microsoft Graph
       itemType: overview
-      url: /graph/use-the-api
+      url: /graph/whats-new-overview
     - title: Microsoft Graph REST API v1.0
       itemType: reference
       url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
@@ -40,9 +40,6 @@ conceptualContent:
   items:
     - title: Explore
       links:
-        - url: /graph/whats-new-overview
-          itemType: overview
-          text: What's new in Microsoft Graph
         - url: /graph/users-you-can-reach
           itemType: concept
           text: Users you can reach
@@ -91,7 +88,7 @@ conceptualContent:
           text: Use the SDKs
         - url: /graph/toolkit/overview
           itemType: overview
-          text: Use the toolkit (preview)
+          text: Use the toolkit
 
 additionalContent:
   sections:

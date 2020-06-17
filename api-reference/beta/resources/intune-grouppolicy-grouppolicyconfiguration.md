@@ -1,13 +1,15 @@
 ---
 title: "groupPolicyConfiguration resource type"
 description: "The group policy configuration entity contains the configured values for one or more group policy definitions."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

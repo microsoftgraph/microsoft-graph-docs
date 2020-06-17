@@ -4,7 +4,7 @@ description: "Basic profile information of the application."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # informationalUrl resource type

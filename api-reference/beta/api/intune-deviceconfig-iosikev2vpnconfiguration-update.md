@@ -1,13 +1,15 @@
 ---
 title: "Update iosikEv2VpnConfiguration"
 description: "Update the properties of a iosikEv2VpnConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update iosikEv2VpnConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -422,7 +424,6 @@ Content-Length: 5156
   "enableAlwaysOnConfiguration": true
 }
 ```
-
 
 
 

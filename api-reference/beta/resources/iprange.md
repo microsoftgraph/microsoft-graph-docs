@@ -2,7 +2,7 @@
 title: "ipRange resource type"
 description: "IP range base class for representing IPV4 and IPV6 address ranges."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

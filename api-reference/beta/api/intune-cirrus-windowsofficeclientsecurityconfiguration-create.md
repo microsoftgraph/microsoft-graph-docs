@@ -2,12 +2,14 @@
 title: "Create windowsOfficeClientSecurityConfiguration"
 description: "Create a new windowsOfficeClientSecurityConfiguration object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dougeby"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windowsOfficeClientSecurityConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -141,7 +143,6 @@ Content-Length: 1077
   ]
 }
 ```
-
 
 
 

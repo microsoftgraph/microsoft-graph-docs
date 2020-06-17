@@ -1,13 +1,15 @@
 ---
 title: "generateApplePushNotificationCertificateSigningRequest action"
 description: "Download Apple push notification certificate signing request"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # generateApplePushNotificationCertificateSigningRequest action
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -64,7 +66,6 @@ Content-Length: 85
   "value": "Generate Apple Push Notification Certificate Signing Request value"
 }
 ```
-
 
 
 

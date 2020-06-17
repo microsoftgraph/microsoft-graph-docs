@@ -1,13 +1,15 @@
 ---
 title: "Get termsAndConditionsAssignment"
 description: "Read properties and relationships of the termsAndConditionsAssignment object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get termsAndConditionsAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,19 +63,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 246
+Content-Length: 405
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
     "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+      "deviceAndAppManagementAssignmentFilterType": "include"
     }
   }
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "Delete trustFrameworkKeySet"
 description: "Delete a **trustFrameworkKeySet** object."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

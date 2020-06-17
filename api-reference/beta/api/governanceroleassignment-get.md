@@ -3,8 +3,8 @@ title: "Get governanceRoleAssignment"
 description: "Retrieve the properties and relationships of a governanceRoleAssignment."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
-ms.prod: "microsoft-identitiy-platform"
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # Get governanceRoleAssignment

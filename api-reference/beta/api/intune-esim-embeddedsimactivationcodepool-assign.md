@@ -1,13 +1,15 @@
 ---
 title: "assign action"
 description: "Not yet documented"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # assign action
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,7 +63,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assign
 
 Content-type: application/json
-Content-length: 287
+Content-length: 456
 
 {
   "assignments": [
@@ -69,7 +71,9 @@ Content-length: 287
       "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
       "id": "e7304dcc-4dcc-e730-cc4d-30e7cc4d30e7",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]
@@ -81,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 450
 
 {
   "value": [
@@ -89,13 +93,14 @@ Content-Length: 281
       "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
       "id": "e7304dcc-4dcc-e730-cc4d-30e7cc4d30e7",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]
 }
 ```
-
 
 
 

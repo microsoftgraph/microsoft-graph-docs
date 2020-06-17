@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var orgContact = await graphClient.Contacts["delta"]
+var delta = await graphClient.Contacts
+	.Delta()
 	.Request()
 	.GetAsync();
 

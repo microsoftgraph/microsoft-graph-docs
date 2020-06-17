@@ -15,7 +15,7 @@ var groupSetting = new GroupSetting
 		new SettingValue
 		{
 			Name = "AllowToAddGuests",
-			Value = false
+			Value = "false"
 		}
 	}
 };

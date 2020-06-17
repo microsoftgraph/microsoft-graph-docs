@@ -1,13 +1,15 @@
 ---
 title: "managedAppClipboardSharingLevel enum type"
 description: "Represents the level to which the device's clipboard may be shared between apps"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # managedAppClipboardSharingLevel enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

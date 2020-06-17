@@ -1,13 +1,15 @@
 ---
 title: "certificateConnectorSetting resource type"
 description: "Certificate connector settings."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # certificateConnectorSetting resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,7 +1,7 @@
 ---
 title: "ratingAppsType enum type"
 description: "Apps rating as in media content"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -24,6 +24,9 @@ Apps rating as in media content
 |agesAbove9|3|9+, age 9 and above|
 |agesAbove12|4|12+, age 12 and above |
 |agesAbove17|5|17+, age 17 and above|
+
+
+
 
 
 

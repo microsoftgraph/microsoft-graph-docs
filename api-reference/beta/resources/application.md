@@ -33,29 +33,36 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Get deleted application](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
 |[Permanently delete application](../api/directory-deleteditems-delete.md) | None | Permanently delete an applications. |
 |[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
-|[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
-|[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
-| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
-| [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
-| [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
-|[Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Assign a tokenLifetimePolicy to this object.|
-|[List tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Get all tokenLifetimePolicies assigned to this object.|
-|[Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Remove a tokenLifetimePolicy from this object.|
-|[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
-|[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Add an owner by posting to the owners collection.|
-|[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application.|
 |[delta](../api/application-delta.md)|[application](application.md) collection| Get incremental changes for applications. |
 |[Create call](../api/application-post-calls.md)|[call](call.md)|Create a new call by posting to the calls collection.|
 |[Create online meeting](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Create a new online meeting by posting to the onlineMeetings collection.|
+|**Certificates and secrets**| | |
+|[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
+|[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
+|[Add key](../api/application-addkey.md)|[keyCredential](keycredential.md)|Add a key credential to an application.|
+|[Remove key](../api/application-removekey.md)|None|Remove a key credential from an application.|
+|**Extensions**| | |
+| [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
+| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
+| [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
+|**Owners**| | |
+|[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
+|[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Add an owner by posting to the owners collection.|
+|[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application.|
+|**Policies**| | |
+|[List assigned policies](../api/policy-list-assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
+|[Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Assign a tokenLifetimePolicy to this object.|
+|[List tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Get all tokenLifetimePolicies assigned to this object.|
+|[Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Remove a tokenLifetimePolicy from this object.|
 
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| addIns | [addIn](addin.md) | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on. |
+| addIns | [addIn](addin.md) collection | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on. |
 | api | [apiApplication](apiapplication.md) | Specifies settings for an application that implements a web API. |
 | appId | String | The unique identifier for the application that is assigned to an application by Azure AD. Not nullable. Read-only. |
-| appRoles | [appRole](approle.md) collection | The collection of application roles that an application may declare. These roles can be assigned to users, groups, or service principals. Not nullable. |
+| appRoles | [appRole](approle.md) collection | The collection of roles declared by the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or other applications' service principals. Not nullable. |
 | createdDateTime | DateTimeOffset | The date and time the application was registered. Read-only. |
 | deletedDateTime | DateTimeOffset | The date and time the application was deleted. Read-only. |
 | displayName | String | The display name for the application. |
@@ -67,6 +74,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application Not nullable. |
 | logo | Stream | The main logo for the application. Not nullable. |
 | oauth2RequiredPostResponse | Boolean | Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow POST requests, as opposed to GET requests. The default is false, which specifies that only GET requests will be allowed. |
+| onPremisesPublishing |[onPremisesPublishing](onpremisespublishing.md)| Represents the set of properties required for configuring Application Proxy for this application. Configuring these properties allow you to publish your on-premises application for secure remote access. |
 | optionalClaims | [optionalClaims](optionalclaims.md) | Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [provide optional claims to your Azure AD app](/azure/active-directory/develop/active-directory-optional-claims) for more information.|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Specifies parental control settings for an application. |
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
@@ -106,7 +114,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "addIns": {"@odata.type": "microsoft.graph.addIn"},
+  "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
   "api": {"@odata.type": "microsoft.graph.apiApplication"},
   "appId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],

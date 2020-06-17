@@ -1,13 +1,15 @@
 ---
 title: "Update mobileAppInstallStatus"
 description: "Update the properties of a mobileAppInstallStatus object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update mobileAppInstallStatus
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -116,7 +118,6 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
-
 
 
 

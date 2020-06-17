@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementTroubleshootingEvent resource type"
 description: "Event representing an general failure."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementTroubleshootingEvent resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -2,7 +2,7 @@
 title: "Create conditionalAccessPolicy"
 description: "Create a new conditionalAccessPolicy."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------------|
 |Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
 
 > [!NOTE]
 > This API has a [known issue](/graph/known-issues#permissions) related to permissions.
@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a new [cond
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
 #### Request
-The following example shows a common request to require multi-factor authentication for access to Exchange Online from a browser or modern auth client outside of trusted locations for a particular group.
+The following example shows a common request to require multi-factor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.
 
 >**Note:** You must set up your trusted locations before using this operation.
 
@@ -78,7 +78,7 @@ Content-type: application/json
     "state": "enabled",
     "conditions": {
         "clientAppTypes": [
-            "modern",
+            "mobileAppsAndDesktopClients",
             "browser"
         ],
         "applications": {
@@ -146,7 +146,7 @@ Content-type: application/json
     "conditions": {
         "signInRiskLevels": [],
         "clientAppTypes": [
-            "modern",
+            "mobileAppsAndDesktopClients",
             "browser"
         ],
         "platforms": null,
@@ -208,11 +208,7 @@ Content-type: application/json
     "state": "enabled",
     "conditions": {
         "clientAppTypes": [
-            "modern",
-            "browser",
-            "easSupported",
-            "easUnsupported",
-            "other"
+            "all"
         ],
         "applications": {
             "includeApplications": [
@@ -262,11 +258,7 @@ Content-type: application/json
     "conditions": {
         "signInRiskLevels": [],
         "clientAppTypes": [
-            "modern",
-            "browser",
-            "easSupported",
-            "easUnsupported",
-            "other"
+            "all"
         ],
         "platforms": null,
         "deviceStates": null,
@@ -327,9 +319,8 @@ Content-type: application/json
             "medium"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -451,9 +442,8 @@ Content-type: application/json
             "medium"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -544,6 +534,122 @@ Content-type: application/json
             "type": "hours",
             "isEnabled": true
         }
+    }
+}
+```
+
+### Example 4: Require MFA to Exchange Online from non-complaint devices
+
+>**Note:** We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use **devices** condition.
+
+#### Request
+The following example shows a request to require MFA to Exchange Online from non-complaint devices.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/policies
+Content-type: application/json
+
+{
+    "displayName": "Require MFA to EXO from non-complaint devices.",
+    "state": "enabled",
+    "conditions": {
+        "applications": {
+            "includeApplications": [
+                "00000002-0000-0ff1-ce00-000000000000"
+            ]
+        },
+        "users": {
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+        },
+        "devices": {
+            "includeDeviceStates": [
+                "All"
+            ],
+            "excludeDeviceStates": [
+                "Compliant"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ]
+    }
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/policies/$entity",
+     "id": "b3f1298e-8e93-49af-bdbf-94cf7d453ca3",
+    "displayName": "Require MFA to EXO from non-complaint devices.",
+    "createdDateTime": "2020-04-01T00:55:12.9571747Z",
+    "modifiedDateTime": null,
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "applications": {
+            "includeApplications": [
+                "00000002-0000-0ff1-ce00-000000000000"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeProtectionLevels": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [
+                "ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"
+            ],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": []
+        },
+        "devices": {
+            "includeDeviceStates": [
+                "All"
+            ],
+            "excludeDeviceStates": [
+                "Compliant"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
     }
 }
 ```

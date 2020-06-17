@@ -12,7 +12,7 @@ In Outlook, customers can share a calendar with other users and let them view, c
 
 Programmatically, Microsoft Graph supports reading or writing events in calendars that have been shared by other users, as well as reading the shared calendars, and updating the calendar name for sharees. The support also applies to calendars that have been delegated. The rest of this article walks through creating a meeting event in a shared or delegated calendar. For getting events, refer to [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md).
 
-The walkthrough below uses the example scenario where Alex has delegated his primary calendar to Adele in Outlook, and kept the default Outlook mailbox setting to direct meeting requests and responses to only delegates. (In the beta version, this setting corresponds to the **delegateMeetingMessageDeliveryOptions** property of Alex' [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) set as the default value `sendToDelegateOnly`.) 
+The walkthrough below uses the example scenario where Alex has delegated his primary calendar to Adele in Outlook, and kept the default Outlook mailbox setting to direct meeting requests and responses to only delegates. (This setting corresponds to the **delegateMeetingMessageDeliveryOptions** property of Alex' [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) set as the default value `sendToDelegateOnly`.) 
 
 The walkthrough describes a few subsequent steps:
 1. [Adele gets the calendar that Alex has delegated to her](#step-1-adele-gets-the-delegated-calendar).

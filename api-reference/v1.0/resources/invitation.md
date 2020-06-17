@@ -2,7 +2,7 @@
 title: "invitation resource type"
 description: "Represents an invitation that is used to add external users to an organization."
 localization_priority: Priority
-author: "davidmu1"
+author: "elisolMS"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

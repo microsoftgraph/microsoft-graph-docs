@@ -32,7 +32,7 @@ displayName: "Lunch"
 draftOpenShift: null
 };
 
-let res = await client.api('/teams/{id}/schedule/openShifts/{openShiftId}')
+let res = await client.api('/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8')
 	.version('beta')
 	.put(openShift);
 

@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementExchangeOnPremisesPolicy resource type"
 description: "Singleton entity which represents the Exchange OnPremises policy configured for a tenant."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementExchangeOnPremisesPolicy resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

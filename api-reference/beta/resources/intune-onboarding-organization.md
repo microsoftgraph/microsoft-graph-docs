@@ -1,13 +1,15 @@
 ---
 title: "organization resource type"
 description: "The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # organization resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

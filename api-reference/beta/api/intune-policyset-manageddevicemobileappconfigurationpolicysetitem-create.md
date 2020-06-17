@@ -1,13 +1,15 @@
 ---
 title: "Create managedDeviceMobileAppConfigurationPolicySetItem"
 description: "Create a new managedDeviceMobileAppConfigurationPolicySetItem object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create managedDeviceMobileAppConfigurationPolicySetItem
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -105,7 +107,6 @@ Content-Length: 502
   ]
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "List services"
 description: "Get a list of bookingService objects in the specified bookingbusiness."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---

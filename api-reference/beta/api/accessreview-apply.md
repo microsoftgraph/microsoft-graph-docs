@@ -2,7 +2,7 @@
 title: "Apply accessReview"
 description: "In the Azure AD access reviews feature, apply the decisions of a completed accessReview.  The target object can be either a one-time access review, or an instance of a recurring access review.  "
 localization_priority: Normal
-author: "davidmu1"
+author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

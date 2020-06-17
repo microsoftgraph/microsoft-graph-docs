@@ -3,7 +3,7 @@ title: "synchronizationTaskExecution resource type"
 description: "Summarizes the results of the synchronization job run."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

@@ -1,13 +1,15 @@
 ---
 title: "Get win32LobApp"
 description: "Read properties and relationships of the win32LobApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get win32LobApp
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3242
+Content-Length: 3625
 
 {
   "value": {
@@ -136,6 +138,18 @@ Content-Length: 3242
         "detectionType": "exists"
       }
     ],
+    "rules": [
+      {
+        "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+        "ruleType": "requirement",
+        "check32BitOn64System": true,
+        "keyPath": "Key Path value",
+        "valueName": "Value Name value",
+        "operationType": "exists",
+        "operator": "equal",
+        "comparisonValue": "Comparison Value value"
+      }
+    ],
     "installExperience": {
       "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
       "runAsAccount": "user",
@@ -163,7 +177,6 @@ Content-Length: 3242
   }
 }
 ```
-
 
 
 

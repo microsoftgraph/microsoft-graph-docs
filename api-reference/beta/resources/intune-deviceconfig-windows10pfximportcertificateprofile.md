@@ -1,13 +1,15 @@
 ---
 title: "windows10PFXImportCertificateProfile resource type"
 description: "Deprecated"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windows10PFXImportCertificateProfile resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

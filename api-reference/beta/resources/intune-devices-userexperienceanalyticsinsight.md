@@ -1,13 +1,15 @@
 ---
 title: "userExperienceAnalyticsInsight resource type"
 description: "The user experience analytics insight is the recomendation to improve the user experience analytics score."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # userExperienceAnalyticsInsight resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -41,7 +43,7 @@ Here is a JSON representation of the resource.
   "values": [
     {
       "@odata.type": "microsoft.graph.insightValueDouble",
-      "value": "<Unknown Primitive Type Edm.Double>"
+      "value": "4.2"
     }
   ],
   "severity": "String"

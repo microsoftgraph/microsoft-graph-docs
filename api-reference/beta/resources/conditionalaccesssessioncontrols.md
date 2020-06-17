@@ -2,7 +2,7 @@
 title: "conditionalAccessSessionControls resource type"
 description: "Represents a complex type of session controls that is enforced after sign-in."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

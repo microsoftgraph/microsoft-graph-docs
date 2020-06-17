@@ -6,13 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var orgContact = await graphClient.Contacts["delta"]
+var delta = await graphClient.Contacts
+	.Delta()
 	.Request()
-	.Select( e => new {
-			 e.DisplayName,
-			 e.JobTitle,
-			 e.Mail 
-			 })
+	.Select("displayName,jobTitle,mail")
 	.GetAsync();
 
 ```

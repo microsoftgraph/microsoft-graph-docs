@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Share or delegate a calendar in Outlook (preview)
+# Share or delegate a calendar in Outlook
 
 In Outlook, a calendar owner can share the calendar with another user. The owner can specify which information in non-private events is viewable, and can give write access to the calendar to users in the same organization. 
 
@@ -28,13 +28,13 @@ This article describes programmatically carrying out the following tasks with a 
 - [Get or set mailbox setting to receive meeting requests and responses for a delegated calendar](#get-or-set-mailbox-setting-to-receive-meeting-requests-and-responses).
 - [Delete a sharee or delegate of a calendar](#delete-a-sharee-or-delegate-of-a-calendar).
 
-> [!NOTE]
-> The preceding tasks use API for calendar sharing and delegation that is [in preview and available only in the beta version](versioning-and-support.md#beta-version), with the exception of these four [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) properties: **canEdit**, **canShare**, **canViewPrivateItems**, and **owner**.
-
 Apps can also do the following using API that is generally available:
 
 - [Get shared or delegated Outlook calendar or its events](outlook-get-shared-events-calendars.md)
 - [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md)
+
+> [!NOTE]
+> The properties and API for calendar sharing and delegating as described in this topic are currently available in the v1.0 endpoint, with the exception of the calendar properties **isShared** and **isSharedWithMe**. These two properties are exposed in only the beta endpoint.
 
 ## Get calendar information about sharees and delegates, and update individual permissions
 
@@ -43,7 +43,7 @@ In this section:
 - [Calendar owner: Get sharing or delegation information and permissions](#calendar-owner-get-sharing-or-delegation-information-and-permissions)
 - [Calendar owner: Update permissions for an existing sharee or delegate on a calendar](#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)
 
-Each calendar is associated with a collection of [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta) objects, each of which describes a sharee or delegate and the associated permission that the calendar owner has set up. The [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values?view=graph-rest-beta) enumeration defines the range of permissions that Microsoft Graph supports:
+Each calendar is associated with a collection of [calendarPermission](/graph/api/resources/calendarpermission) objects, each of which describes a sharee or delegate and the associated permission that the calendar owner has set up. The [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values) enumeration defines the range of permissions that Microsoft Graph supports:
 
 - `none`
     This value applies to only `My Organization` which does not have any permissions to the calendar. It doesn't apply to individual users, as only users with permissions are associated with a **calendarPermission** object for the calendar.
@@ -292,7 +292,6 @@ Content-type: application/json
     "name": "Calendar",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": true,
     "changeKey": "NEXywgsVrkeNsFsyVyRrtAAAAAACOg==",
     "canShare": true,
     "canViewPrivateItems": true,
@@ -371,7 +370,6 @@ Content-type: application/json
     "name": "Alex Wilber",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": false,
     "changeKey": "E6LznKWmX0KTsAD9qRJjeAAAYWo3EQ==",
     "canShare": false,
     "canViewPrivateItems": true,
@@ -401,7 +399,7 @@ In this section:
 
 Depending on the level of delegation a calendar owner prefers, the owner can specify who should receive meeting requests and responses to manage meetings on the calendar. 
 
-Programmatically, you can get or set the **delegateMeetingMessageDeliveryOptions** property of the calendar owner's [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) to specify to whom Outlook should direct [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta) and [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) instances:
+Programmatically, you can get or set the **delegateMeetingMessageDeliveryOptions** property of the calendar owner's [mailboxSettings](/graph/api/resources/mailboxsettings) to specify to whom Outlook should direct [eventMessageRequest](/graph/api/resources/eventmessagerequest) and [eventMessageResponse](/graph/api/resources/eventmessageresponse) instances:
 
 - `sendToDelegateOnly`
 
@@ -600,4 +598,4 @@ Find out more about:
 - [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md)
 - [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md)
 - [Why integrate with Outlook calendar](outlook-calendar-concept-overview.md)
-- The [calendar API](/graph/api/resources/calendar?view=graph-rest-beta) in Microsoft Graph beta.
+- The [calendar API](/graph/api/resources/calendar) in Microsoft Graph beta.

@@ -1,13 +1,15 @@
 ---
 title: "List deviceManagementCollectionSettingDefinitions"
 description: "List properties and relationships of the deviceManagementCollectionSettingDefinition objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List deviceManagementCollectionSettingDefinitions
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -104,7 +106,6 @@ Content-Length: 1213
   ]
 }
 ```
-
 
 
 

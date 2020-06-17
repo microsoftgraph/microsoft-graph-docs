@@ -32,6 +32,12 @@ In addition to the following permissions, the user's tenant must have an active 
 GET /print/printers/{id}/jobs
 ```
 
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+### Exceptions
+Some operators are not supported: `$count`, `$search`, `$filter`.
+
 ## Request headers
 | Name      |Description|
 |:----------|:----------|

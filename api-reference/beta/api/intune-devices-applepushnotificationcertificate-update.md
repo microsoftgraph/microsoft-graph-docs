@@ -1,13 +1,15 @@
 ---
 title: "Update applePushNotificationCertificate"
 description: "Update the properties of a applePushNotificationCertificate object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update applePushNotificationCertificate
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -102,7 +104,6 @@ Content-Length: 594
   "certificate": "Certificate value"
 }
 ```
-
 
 
 

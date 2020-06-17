@@ -1,13 +1,15 @@
 ---
 title: "Create deviceManagementCollectionSettingInstance"
 description: "Create a new deviceManagementCollectionSettingInstance object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create deviceManagementCollectionSettingInstance
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -88,7 +90,6 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

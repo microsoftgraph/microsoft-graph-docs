@@ -1,13 +1,15 @@
 ---
 title: "deviceShellScript resource type"
 description: "Intune will provide customer the ability to run their Shell scripts on the enrolled Mac OS devices. The script can be run once or periodically."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceShellScript resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -28,18 +30,18 @@ Intune will provide customer the ability to run their Shell scripts on the enrol
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|executionFrequency|Duration|The interval for script to run. If not defined the script runs once.|
-|retryCount|Int32|The number of times for the script to be retried if it fails.|
-|blockExecutionNotifications|Boolean|Indicates whether the user is notified when a script runs.|
+|executionFrequency|Duration|The interval for script to run. If not defined the script will run once|
+|retryCount|Int32|Number of times for the script to be retried if it fails|
+|blockExecutionNotifications|Boolean|Does not notify the user a script is being executed|
 |id|String|Unique Identifier for the device management script.|
-|displayName|String|The name of the device management script.|
+|displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
-|fileName|String|The script file name.|
-|roleScopeTagIds|String collection|The list of Scope Tag IDs for this PowerShellScript instance.|
+|fileName|String|Script file name.|
+|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance.|
 
 ## Relationships
 |Relationship|Type|Description|

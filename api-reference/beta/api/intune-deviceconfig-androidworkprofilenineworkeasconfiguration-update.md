@@ -1,13 +1,15 @@
 ---
 title: "Update androidWorkProfileNineWorkEasConfiguration"
 description: "Update the properties of a androidWorkProfileNineWorkEasConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update androidWorkProfileNineWorkEasConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -176,7 +178,6 @@ Content-Length: 1515
   "syncTasks": true
 }
 ```
-
 
 
 

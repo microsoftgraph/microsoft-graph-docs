@@ -2,12 +2,14 @@
 title: "Get windowsOfficeClientSecurityConfiguration"
 description: "Get a specific security policy windowsOfficeClientSecurityConfiguration object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dougeby"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windowsOfficeClientSecurityConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -34,7 +36,7 @@ GET /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -96,7 +98,6 @@ Content-Length: 1152
   }
 }
 ```
-
 
 
 

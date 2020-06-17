@@ -1,13 +1,15 @@
 ---
 title: "Create windows10NetworkBoundaryConfiguration"
 description: "Create a new windows10NetworkBoundaryConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windows10NetworkBoundaryConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -72,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2017
+Content-length: 1919
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -118,9 +120,7 @@ Content-length: 2017
     ],
     "enterpriseIPRanges": [
       {
-        "@odata.type": "microsoft.graph.iPv6Range",
-        "lowerAddress": "Lower Address value",
-        "upperAddress": "Upper Address value"
+        "@odata.type": "microsoft.graph.ipRange"
       }
     ],
     "enterpriseInternalProxyServers": [
@@ -143,7 +143,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2189
+Content-Length: 2091
 
 {
   "@odata.type": "#microsoft.graph.windows10NetworkBoundaryConfiguration",
@@ -192,9 +192,7 @@ Content-Length: 2189
     ],
     "enterpriseIPRanges": [
       {
-        "@odata.type": "microsoft.graph.iPv6Range",
-        "lowerAddress": "Lower Address value",
-        "upperAddress": "Upper Address value"
+        "@odata.type": "microsoft.graph.ipRange"
       }
     ],
     "enterpriseInternalProxyServers": [
@@ -211,7 +209,6 @@ Content-Length: 2189
   }
 }
 ```
-
 
 
 

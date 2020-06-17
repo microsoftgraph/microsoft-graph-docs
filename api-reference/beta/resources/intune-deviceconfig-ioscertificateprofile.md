@@ -1,13 +1,15 @@
 ---
 title: "iosCertificateProfile resource type"
 description: "Device Configuration."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # iosCertificateProfile resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -16,7 +18,7 @@ doc_type: resourcePageType
 Device Configuration.
 
 
-Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
+Inherits from [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)
 
 ## Methods
 |Method|Return Type|Description|

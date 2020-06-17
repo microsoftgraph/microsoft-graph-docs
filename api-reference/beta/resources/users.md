@@ -1,8 +1,8 @@
 ---
 title: "Working with users in Microsoft Graph"
-description: "You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
+description: "Build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
 localization_priority: Priority
-author: "dkershaw10"
+author: "krbain"
 ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
@@ -59,3 +59,6 @@ For details and a list of all the properties, see the [user](user.md) object.
 |[`/users/{id}/drive`](../api/drive-get.md)| Gets the user's OneDrive file store. |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Lists the groups that the user is a member of. |
 |[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Lists the Microsoft Teams that the user is a member of. |
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

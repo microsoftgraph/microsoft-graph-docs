@@ -1,19 +1,19 @@
 ---
-title: "Create application"
-description: "Use this API to create a new application."
+title: "Add an application to a connectorGroup"
+description: "Use this API to assign an app to a connector group"
 localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+author: "japere"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
-
-# Create application
+# Add an application to a connectorGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new application.
+Add an [application](../resources/application.md) to a [connectorGroup](../resources/connectorgroup.md).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -21,12 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectorGroups/{id}/applications
+POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
 
 ```
 ## Request headers
@@ -44,19 +44,35 @@ If successful, this method returns `201 Created` response code and [application]
 ## Example
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_application_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectorGroups/{id}/applications
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
 Content-type: application/json
 Content-length: 329
 
 {
-  "@odata.id": "https://graph.microsoft.com/{ver}/applications/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/applications/{id}"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-application-from-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-application-from-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-application-from-connectorgroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 In the request body, supply a JSON representation of [application](../resources/application.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

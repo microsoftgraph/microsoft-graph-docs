@@ -2,7 +2,7 @@
 title: "Remove claimsMappingPolicy"
 description: "Remove a claimsMappingPolicy from a servicePrincipal."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}$ref
+DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}/$ref
 ```
 
 ## Request headers

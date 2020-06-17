@@ -1,13 +1,15 @@
 ---
 title: "mobileAppIntentAndState resource type"
 description: "MobileApp Intent and Install State for a given device."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # mobileAppIntentAndState resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,8 +1,8 @@
 ---
 title: "Create a directory setting"
-description: "Use this API to create a new setting, based on the templates available in directorySettingTemplates. These settings can be at the tenant-level or at an object level (currently only for groups). The creation request must provide settingValues for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available."
+description: "Use this API to create a new setting, based on the templates available in directorySettingTemplates."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

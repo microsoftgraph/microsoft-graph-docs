@@ -2,7 +2,7 @@
 title: "List riskDetection"
 description: "Retrieve the properties of a collection of **riskDetection** object."
 localization_priority: Normal
-author: "davidmu1"
+author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -104,7 +104,7 @@ Content-type: application/json
     "id": "6a5874ca-abcd-9d82-5ad39bd71600",
     "requestId": "6a5874ca-abcd-9d82-5ad39bd71600",
     "correlationId": "abcd74ca-9823-4b1c-9d82-5ad39bd71600",
-    "riskType": "unfamiliarFeatures",
+    "riskEventType": "unfamiliarFeatures",
     "riskState": "remediated",
     "riskLevel": "medium",
     "riskDetail": "userPerformedSecuredPasswordReset",
@@ -145,7 +145,7 @@ The following example shows how to use `$filter` to get the collection of risk d
 } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/riskDetections?$filter=riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
+GET https://graph.microsoft.com/beta/riskDetections?$filter=riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskdetections-csharp-snippets.md)]
@@ -182,7 +182,7 @@ Content-type: application/json
     "id": "1d68fc3d60d012ff80ad4b16818bf304df1bde295fdf1db31fa5389ba9532cd1",
     "requestId": "3295073e-04b1-4871-9d15-c1f871b41100",
     "correlationId": "f141d8e5-93e9-4fd0-9eb0-c40e5f8fc092",
-    "riskType": "unfamiliarFeatures",
+    "riskEventType": "unfamiliarFeatures",
     "riskState": "atRisk",
     "riskLevel": "medium",
     "riskDetail": "none",

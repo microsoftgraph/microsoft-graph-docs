@@ -1,13 +1,15 @@
 ---
 title: "groupPolicyPresentationValueLongDecimal resource type"
 description: "The entity represents an unsigned long value of a long decimal text box presentation on a policy definition."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueLongDecimal resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementIntent resource type"
 description: "Entity that represents an intent to apply settings to a device"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementIntent resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -25,6 +27,7 @@ Entity that represents an intent to apply settings to a device
 |[Update deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Update the properties of a [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object.|
 |[updateSettings action](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|None|Not yet documented|
 |[migrateToTemplate action](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|None|Not yet documented|
+|[createCopy action](../api/intune-deviceintent-devicemanagementintent-createcopy.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Not yet documented|
 |[assign action](../api/intune-deviceintent-devicemanagementintent-assign.md)|None|Not yet documented|
 |[compare function](../api/intune-deviceintent-devicemanagementintent-compare.md)|[deviceManagementSettingComparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md) collection|Not yet documented|
 

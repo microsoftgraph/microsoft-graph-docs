@@ -1,13 +1,15 @@
 ---
 title: "networkIPv4ConfigurationManagementCondition resource type"
 description: "IPv4 configuration-based management conditions may be defined that will trigger when a device detects certain IP network settings. An IP config management conditions will only be considered TRUE when the network connection is active."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # networkIPv4ConfigurationManagementCondition resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

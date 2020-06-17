@@ -1,13 +1,15 @@
 ---
 title: "Update deviceManagementDerivedCredentialSettings"
 description: "Update the properties of a deviceManagementDerivedCredentialSettings object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update deviceManagementDerivedCredentialSettings
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -92,7 +94,6 @@ Content-Length: 132
   "id": "bc650741-0741-bc65-4107-65bc410765bc"
 }
 ```
-
 
 
 

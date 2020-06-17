@@ -2,7 +2,7 @@
 title: "Get countryNamedLocation"
 description: "Retrieve the properties and relationships of a countryNamedlocation object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{userId}/settings/shiftPreferences
+PUT /users/{userId}/settings/shiftPreferences
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ GET /users/{userId}/settings/shiftPreferences
 | Content-Type  | application/json. Required.  |
 
 ## Request body
-Provide the new [shiftPreferences](../resources/shiftpreferences.md) object in the request body for this method.
+In the request body, supply a JSON representation of a [shiftPreferences](../resources/shiftpreferences.md) object.
 
 ## Response
 

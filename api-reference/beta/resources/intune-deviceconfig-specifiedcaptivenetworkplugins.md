@@ -1,13 +1,15 @@
 ---
 title: "specifiedCaptiveNetworkPlugins resource type"
 description: "Specifies all the Captive network plugins allowed during the IKEv2 AlwaysOn VPN connection"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # specifiedCaptiveNetworkPlugins resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

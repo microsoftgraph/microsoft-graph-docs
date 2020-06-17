@@ -1,13 +1,15 @@
 ---
 title: "androidForWorkCustomConfiguration resource type"
 description: "Android For Work custom configuration"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidForWorkCustomConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -98,12 +100,10 @@ Here is a JSON representation of the resource.
   "version": 1024,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "String",
       "description": "String",
-      "omaUri": "String",
-      "value": 1024,
-      "isReadOnly": true
+      "omaUri": "String"
     }
   ]
 }

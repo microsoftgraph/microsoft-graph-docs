@@ -28,7 +28,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.event"
+        "event"
       ],
       "query": {
         "query_string": {

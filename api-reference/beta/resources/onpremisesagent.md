@@ -2,7 +2,7 @@
 title: "onPremisesAgent resource type"
 description: "onPremisesAgent resource type."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
@@ -32,7 +32,7 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 |id|String| The object id of the onPremisesAgent. Read-only.|
 |machineName|String|The name of the machine that the aggent is running on. Read-only|
 |status|string| Possible values are: `active`, `inactive`.|
-|publishingType|string| Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|string| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## Relationships
 

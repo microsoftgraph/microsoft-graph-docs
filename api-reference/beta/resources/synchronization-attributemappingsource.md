@@ -1,9 +1,9 @@
 ---
 title: "attributeMappingSource resource type"
-description: "Defines how a value should be extracted (or transformed) from the source object. For example, it can be a simple value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes. "
+description: "Defines how a value should be extracted (or transformed) from the source object."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

@@ -2,7 +2,7 @@
 title: "onPremisesProvisioningError resource type"
 description: "Represents directory synchronization errors for the user group and contact resources when synchronizing on-premises directories to Azure Active Directory."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

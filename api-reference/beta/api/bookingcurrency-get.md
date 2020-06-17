@@ -2,7 +2,7 @@
 title: "Get bookingCurrency"
 description: "Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---

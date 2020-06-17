@@ -2,7 +2,7 @@
 title: "orgContact resource type"
 description: "Represents an organizational contact"
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

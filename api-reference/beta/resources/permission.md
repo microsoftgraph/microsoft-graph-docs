@@ -71,7 +71,7 @@ Here is a JSON representation of the resource.
 | expirationDateTime  | DateTimeOffset              | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
 | hasPassword         | Boolean                     | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
 
-### Roles enumeration values
+### Roles property values
 
 | Value        | Details                                                                        |
 |:------------|:-------------------------------------------------------------------------------|

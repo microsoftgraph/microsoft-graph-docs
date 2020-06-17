@@ -1,13 +1,15 @@
 ---
 title: "iosRedirectSingleSignOnExtension resource type"
 description: "Represents a Redirect-type Single Sign-On extension profile for iOS devices."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # iosRedirectSingleSignOnExtension resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -43,9 +45,8 @@ Here is a JSON representation of the resource.
   "teamIdentifier": "String",
   "configurations": [
     {
-      "@odata.type": "microsoft.graph.keyStringValuePair",
-      "key": "String",
-      "value": "String"
+      "@odata.type": "microsoft.graph.keyTypedValuePair",
+      "key": "String"
     }
   ],
   "urlPrefixes": [

@@ -1,13 +1,15 @@
 ---
 title: "vppTokenActionResult resource type"
 description: "The status of the action performed with an Apple Volume Purchase Program token."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # vppTokenActionResult resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,7 +1,7 @@
 ---
 title: "Update domain"
 description: "Update the properties of domain object."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

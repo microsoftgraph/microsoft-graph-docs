@@ -1,13 +1,15 @@
 ---
 title: "windows10VpnAuthenticationMethod enum type"
 description: "Windows 10 VPN connection types."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # windows10VpnAuthenticationMethod enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

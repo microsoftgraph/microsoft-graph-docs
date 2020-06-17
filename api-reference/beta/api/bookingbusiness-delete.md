@@ -2,7 +2,7 @@
 title: "Delete bookingBusiness"
 description: "Delete a bookingBusiness object."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---

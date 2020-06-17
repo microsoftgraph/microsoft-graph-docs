@@ -1,13 +1,15 @@
 ---
 title: "androidDeviceOwnerCertificateProfileBase resource type"
 description: "Android Device Owner certificate profile base."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidDeviceOwnerCertificateProfileBase resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -16,7 +18,7 @@ doc_type: resourcePageType
 Android Device Owner certificate profile base.
 
 
-Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
+Inherits from [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)
 
 ## Methods
 |Method|Return Type|Description|

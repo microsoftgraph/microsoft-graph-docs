@@ -1,13 +1,15 @@
 ---
 title: "defenderPromptForSampleSubmission enum type"
 description: "Possible values for prompting user for samples submission."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # defenderPromptForSampleSubmission enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,7 +22,7 @@ Possible values for prompting user for samples submission.
 |:---|:---|:---|
 |userDefined|0|User Defined, default value, no intent.|
 |alwaysPrompt|1|Always prompt.|
-|promptBeforeSendingPersonalData|2|Prompt before sending personal data.|
+|promptBeforeSendingPersonalData|2|Send safe samples automatically.|
 |neverSendData|3|Never send data.|
 |sendAllDataWithoutPrompting|4|Send all data without prompting.|
 

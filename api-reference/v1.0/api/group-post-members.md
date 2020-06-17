@@ -2,7 +2,7 @@
 title: "Add member"
 description: "Add a member to an Office 365 group, a security group, or a mail-enabled security group through the **members** navigation property."
 localization_priority: Priority
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Add a member to an Office 365 group or a security group through the **members** navigation property.
 
-You can add users, organizational contacts, or other groups. 
+You can add users, organizational contacts, service principals or other groups. 
 
 > [!IMPORTANT]
 > You can only add users to security and Office 365 groups managed through the cloud.
@@ -45,7 +45,8 @@ In the request body, supply a JSON representation of a [directoryObject](../reso
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
+### Example 1: Add a member to a group
 #### Request
 The following is an example of the request.
 
@@ -61,6 +62,59 @@ Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+}
+```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-member-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-member-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-member-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-member-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Add multiple members to a group in a single request
+This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Note that up to 20 members can be added in a single request. The POST operation is not supported.
+#### Request
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_member_from_group"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/groups/{id}
+Content-type: application/json
+Content-length: 30
+
+{
+  "members@odata.bind": [
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+    ]
 }
 ```
 # [JavaScript](#tab/javascript)

@@ -1,13 +1,15 @@
 ---
 title: "deviceType enum type"
 description: "Device type."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # deviceType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -38,6 +40,7 @@ Device type.
 |androidForWork|17|Android for work device.|
 |androidEnterprise|18|Android enterprise device.|
 |windows10x|19|Windows 10x device.|
+|androidnGMS|20|Android non Google managed device.|
 |blackberry|100|Blackberry.|
 |palm|101|Palm.|
 |unknown|255|Represents that the device type is unknown.|

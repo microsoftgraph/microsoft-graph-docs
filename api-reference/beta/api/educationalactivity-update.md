@@ -1,6 +1,6 @@
 ---
 title: "Update educationalactivity"
-description: "Update the properties of an educationalactivity object."
+description: "Update the properties of an educationalActivity object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -63,6 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_educationalactivity"
@@ -103,6 +104,7 @@ Content-type: application/json
   "startMonthYear": "datetime-value"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -116,7 +118,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

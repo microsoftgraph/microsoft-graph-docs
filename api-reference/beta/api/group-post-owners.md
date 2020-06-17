@@ -1,8 +1,8 @@
 ---
 title: "Add group owner"
-description: "Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
+description: "Add a user to the group's owners."
 localization_priority: Normal
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

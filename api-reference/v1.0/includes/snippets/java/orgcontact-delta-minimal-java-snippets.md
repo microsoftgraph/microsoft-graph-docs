@@ -9,7 +9,8 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "return=minimal"));
 
-OrgContact orgContact = graphClient.contacts("delta")
+IOrgContactDeltaCollectionPage delta = graphClient.contacts()
+	.delta()
 	.buildRequest( requestOptions )
 	.select("displayName,jobTitle,mail")
 	.get();

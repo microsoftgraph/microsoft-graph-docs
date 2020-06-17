@@ -1,13 +1,15 @@
 ---
 title: "Create windows10TeamGeneralConfiguration"
 description: "Create a new windows10TeamGeneralConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windows10TeamGeneralConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -208,7 +210,6 @@ Content-Length: 2187
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
-
 
 
 

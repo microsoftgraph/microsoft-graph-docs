@@ -1,13 +1,15 @@
 ---
 title: "Update mobileAppInstallSummary"
 description: "Update the properties of a mobileAppInstallSummary object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update mobileAppInstallSummary
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -109,7 +111,6 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
-
 
 
 

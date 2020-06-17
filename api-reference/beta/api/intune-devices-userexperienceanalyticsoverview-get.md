@@ -1,13 +1,15 @@
 ---
 title: "Get userExperienceAnalyticsOverview"
 description: "Read properties and relationships of the userExperienceAnalyticsOverview object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get userExperienceAnalyticsOverview
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 872
+Content-Length: 853
 
 {
   "value": {
@@ -78,7 +80,7 @@ Content-Length: 872
         "values": [
           {
             "@odata.type": "microsoft.graph.insightValueDouble",
-            "value": "<Unknown Primitive Type Edm.Double>"
+            "value": 1.6666666666666667
           }
         ],
         "severity": "informational"
@@ -90,7 +92,6 @@ Content-Length: 872
   }
 }
 ```
-
 
 
 

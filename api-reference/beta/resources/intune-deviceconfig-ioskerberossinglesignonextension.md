@@ -1,13 +1,15 @@
 ---
 title: "iosKerberosSingleSignOnExtension resource type"
 description: "Represents a Kerberos-type Single Sign-On extension profile for iOS devices."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # iosKerberosSingleSignOnExtension resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

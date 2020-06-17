@@ -1,13 +1,15 @@
 ---
 title: "Create deviceComplianceScheduledActionForRule"
 description: "Create a new deviceComplianceScheduledActionForRule object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create deviceComplianceScheduledActionForRule
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -82,7 +84,6 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
 
 
 

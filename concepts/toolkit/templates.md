@@ -53,7 +53,7 @@ Many templates allow binding of data that is passed to the template as data cont
 </template>
 ```
 
-This format can also be used inside of attributes:
+This format can also be used inside attributes:
 
 ```html
 <template data-type="event">
@@ -62,6 +62,16 @@ This format can also be used inside of attributes:
 ```
 
 > **Note:** You can also expand objects such as `{{event}}` and they will render as JSON strings. This can be useful when you're developing the templates.
+
+### Change binding syntax
+
+By default, to expand an expression, you use double curly brackets ( `{{expression}}` ). However, you can change this syntax for environments where the double curly bracket syntax is already used. For example, the following example uses double square brackets ( `[[expression]]` ).
+
+```ts
+import { TemplateHelper } from '@microsoft/mgt';
+
+TemplateHelper.setBindingSyntax('[[', ']]');
+```
 
 ## Data context helper properties
 
@@ -117,54 +127,110 @@ There will be cases where the data context object contains loop and you will nee
 </template>
 ```
 
-## Converters
+## Template context
+
+In scenarios where you need to convert data in your bindings, bind to events, or just use external data in your templates bindings, the templates support binding to external data context. You can add additional template context in two ways:
+
+1. Directly on the component.
+
+    Each component defines the `templateContext` property, which you can use to pass additional data to any template in the component. 
+
+    ```ts
+    document.querySelector('mgt-agenda').templateContext = {
+
+      someObject: {},
+      formatDate: (date: Date) => { /* format date and return */ },
+      someEventHandler: (e) => { /* handleEvent */  }
+
+    }
+    ```
+
+    The properties in the `templateContext` object will now be available to be used in the binding expressions in the template.
+
+2. Globally for all components.
+
+    The `TemplateHelper` class exposes the `globalContext` object to add data or functions that should be globally available for all components.
+
+    ```ts
+    import { TemplateHelper } from '@microsoft/mgt';
+
+    TemplateHelper.globalContext.someObject = {};
+    TemplateHelper.globalContext.formatDate = (date: Date) => { /* format date and return */ };
+    TemplateHelper.globalContext.someEventHandler = (e) => { /* handleEvent */  }
+    ```
+
+
+
+### Converters
 
 In many cases, you might want to transform the data before presenting it in the template. For example, you might want to properly format a date before it is rendered. In these cases, you might want to use a template converter.
 
-To use a template converter, you first need to define a function that will do the conversion. For example, you might define a function to format a date.
+To use a template converter, you first need to define a function that will do the conversion. For example, you might define a function to convert an event object to a formatted time range.
 
 ```ts
-getTimeRange(event) {
-  // TODO: format a string from the event object as you wish
-  // timeRange = ...
+document.querySelector('mgt-agenda').templateContext = {
 
-  return timeRange;
+  getTimeRange: (event) => {
+    // TODO: format a string from the event object as you wish
+    // timeRange = ...
+
+    return timeRange;
+  }
+
 }
 ```
 
-Then define a new converter on the element and name it as you see fit.
+To use the converter in your template, use it as if you would use a function in code behind.
+
+```html
+<template data-type="event">
+  <div>{{ getTimeRange(event) }}</div>
+</template>
+```
+
+### Event or property binding
+
+The `data-props` attribute allows you to add an event listener or set a property value directly in your templates. 
+
+```html
+<template>
+    <button data-props="{{@click: myEvent, myProp: value}}"></button>
+</template>
+```
+
+The data-props accepts a comma delimited string for each property or event handler you might want to set. 
+
+To add an event handler, prefix the name of the event with `@`. The event handler will need to be available in the `templateContext` of the element.
 
 ```ts
-let agenda = document.querySelector('mgt-agenda');
-agenda.templateConverters["myConverter"] = getTimeRange;
+document.querySelector('mgt-agenda').templateContext = {
+
+  someEventHandler: (e, context, root) => { /* handleEvent */  }
+
+}
 ```
 
-To use the converter in your template, use the triple curly brackets.
-
 ```html
-<template data-type="event">
-  <div>{{{ myConverter(event) }}}</div>
+<template>
+    <button data-props="{{@click: someEventHandler}}"></button>
 </template>
 ```
 
-You can also use built-in functions without defining template converter.
+The event args, data context, and the root element of the template are passed to the event handler as parameters.
 
-```html
-<template data-type="event">
-  <div>{{{ event.subject.toUpperCase() }}}</div>
-</template>
-```
 
-## Template Rendered Event
+## Template rendered event
 
-In certain cases, you might want to get a reference to the rendered element. This can be useful for adding event listeners to elements in the template. In this scenario, you might use the `templateRendered` event.
+In certain cases, you might want to get a reference to the rendered element. This can be useful if you want to handle the rendering of the content yourself, or you want to modify the rendered element.
+
+In this scenario, you can use the `templateRendered` event, which fires after the template has been rendered.
 
 ```ts
 let agenda = document.querySelector('mgt-agenda');
 agenda.addEventListener('templateRendered', (e) => { });
 ```
 
-The event details will contain reference to the element that is being rendered, the data context object, and the type of the template.
+The event details will contain a reference to the element that is being rendered, the data context object, and the type of the template.
 
 ```ts
 agenda.addEventListener('templateRendered', (e) => { 

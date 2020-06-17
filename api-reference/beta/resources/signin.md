@@ -2,7 +2,7 @@
 title: "signIn resource type"
 doc_type: resourcePageType
 description: "Provides details about user or application sign-in activity in your directory."
-author: "davidmu1"
+author: "kholtz"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---

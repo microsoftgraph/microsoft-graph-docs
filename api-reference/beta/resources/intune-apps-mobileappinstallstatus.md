@@ -1,13 +1,15 @@
 ---
 title: "mobileAppInstallStatus resource type"
 description: "Contains properties for the installation state of a mobile app for a device."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # mobileAppInstallStatus resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
