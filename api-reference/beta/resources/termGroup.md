@@ -58,6 +58,7 @@ Here is a JSON representation of a **group** resource.
 
 [identitySet]: identitySet.md
 [microsoft.graph.termStore.set]: termSet.md
+[microsoft.graph.termStore.store]: termStore.md
 
 <!--
 {
