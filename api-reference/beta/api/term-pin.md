@@ -76,10 +76,10 @@ All default properties will be returned from the actual call.
 <!--
 {
   "type": "#page.annotation",
-  "description": "Post term entity in termStore",
+  "description": "Create a pinned term entity in termStore",
   "keywords": "term,termStore",
   "section": "documentation",
-  "tocPath": "termStore/Post term",
+  "tocPath": "termStore/Pinned term",
   "suppressions": [
   ]
 }
