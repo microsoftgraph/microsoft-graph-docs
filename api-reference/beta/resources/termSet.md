@@ -68,7 +68,7 @@ Here is a JSON representation of a **set** resource.
 [microsoft.graph.termStore.relation]: termRelation.md
 [microsoft.graph.termStore.store]: termStore.md
 [microsoft.graph.termStore.localizedName]: termstoreLocalizedNameFacet.md
-[microsoft.graph.keyValue]: termStoreKeyValue.md
+[microsoft.graph.keyValue]: keyValue.md
 
 <!--
 {
