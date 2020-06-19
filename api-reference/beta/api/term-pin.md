@@ -71,3 +71,16 @@ All default properties will be returned from the actual call.
 [microsoft.graph.termStore.set]: ../resources/termSet.md
 [microsoft.graph.termStore.term]: ../resources/term.md
 [microsoft.graph.termStore.relation]: ../resources/termRelation.md
+
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Post term entity in termStore",
+  "keywords": "term,termStore",
+  "section": "documentation",
+  "tocPath": "termStore/Post term",
+  "suppressions": [
+  ]
+}
+-->
