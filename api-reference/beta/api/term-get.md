@@ -60,3 +60,15 @@ Content-type: application/json
 ```
 
 [microsoft.graph.termStore.term]: ../resources/term.md
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get term entity in termStore",
+  "keywords": "term,termStore",
+  "section": "documentation",
+  "tocPath": "termStore/Get term",
+  "suppressions": [
+  ]
+}
+-->
