@@ -68,7 +68,7 @@ Here is a JSON representation of a **term** resource.
 [microsoft.graph.termStore.localizedLabel]: termLocalizedLabelFacet.md
 [microsoft.graph.termStore.term]: term.md
 [microsoft.graph.termStore.set]: termSet.md
-[microsoft.graph.termStore.relations]: termRelation.md
+[microsoft.graph.termStore.relation]: termRelation.md
 [microsoft.graph.termStore.localizedDescription]: termLocalizedDescriptionFacet.md
 [microsoft.graph.keyValue]: keyValue.md
 [microsoft.graph.termStore.store]: termStore.md
