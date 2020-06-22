@@ -47,8 +47,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type                                        | Description                                                                                                 |
 |:-------------|:--------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-|categories|String collection                                | Contains categories a user has associated with the position. (eg: digital transformation, ms graph, people) |
-|detail    |[positionDetail](../resources/positiondetail.md) | Contains detail about a users work position.                                                                |
+|categories    |String collection                                | Contains categories a user has associated with the position. (eg: digital transformation, ms graph, people) |
+|detail        |[positionDetail](../resources/positiondetail.md) | Contains detail about a users work position.                                                                |
 
 ## Response
 

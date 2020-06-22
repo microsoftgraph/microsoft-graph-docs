@@ -125,7 +125,7 @@ Content-type: application/json
                 }
             }
         }
-    ],
+    ]
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

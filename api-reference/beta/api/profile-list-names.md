@@ -82,7 +82,6 @@ GET https://graph.microsoft.com/beta/me/profile/names
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -128,7 +127,7 @@ Content-type: application/json
                 }
             }
         }
-    ],
+    ]
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
