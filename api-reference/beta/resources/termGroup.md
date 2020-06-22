@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: TermGroup
+doc_type: "resourcePageType"
+description: "Describes the termGroup entity in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 
 # Group resource type
