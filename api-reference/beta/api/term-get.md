@@ -3,6 +3,9 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: Get a Taxonomy term in termStore
+doc_type: "apiPageType"
+description: "Retrieves a given term in the termStore"
+localization_priority: Normal
 ---
 # Get microsoft.graph.termStore.term
 
