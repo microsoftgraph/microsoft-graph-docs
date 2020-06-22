@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: Reuse a term under another term
+doc_type: "apiPageType"
+description: "Reuse a given term in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # Reuse a microsoft.graph.termStore.term  under another microsoft.graph.termStore.term
 
