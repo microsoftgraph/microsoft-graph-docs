@@ -4,6 +4,8 @@ ms.author: mopathak
 ms.date: 18/06/2020
 title: Term
 doc_type: "resourcePageType"
+description: "Retrieves a given term in the termStore"
+localization_priority: Normal
 ms.prod: "sharepoint-taxonomy"
 ---
 # Term resource type
