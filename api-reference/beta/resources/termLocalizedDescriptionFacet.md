@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: Term LocalizedDescription facet
+doc_type: "resourcePageType"
+description: "Describes the facet for localized description in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # TermStoreLocalizedDescription resource type
 
