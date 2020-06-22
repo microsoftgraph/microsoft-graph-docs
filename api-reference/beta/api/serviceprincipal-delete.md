@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete servicePrincipal.
+Delete a [servicePrincipal](../resources/serviceprincipal.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,15 +41,17 @@ Do not supply a request body for this method.
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Example
-##### Request
+## Examples
+### Request
 Here is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_serviceprincipal"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}
 ```
@@ -67,12 +69,13 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}
 
 ---
 
-##### Response
+### Response
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

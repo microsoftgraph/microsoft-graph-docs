@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4306
+Content-Length: 5905
 
 {
   "value": {
@@ -186,7 +186,52 @@ Content-Length: 4306
       "passwordEnableLocalSync": true,
       "blockActiveDirectorySiteAutoDiscovery": true,
       "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
-    }
+    },
+    "contentCachingEnabled": true,
+    "contentCachingType": "userContentOnly",
+    "contentCachingMaxSizeBytes": 10,
+    "contentCachingDataPath": "Content Caching Data Path value",
+    "contentCachingDisableConnectionSharing": true,
+    "contentCachingForceConnectionSharing": true,
+    "contentCachingClientPolicy": "clientsInLocalNetwork",
+    "contentCachingClientListenRanges": [
+      {
+        "@odata.type": "microsoft.graph.iPv6Range",
+        "lowerAddress": "Lower Address value",
+        "upperAddress": "Upper Address value"
+      }
+    ],
+    "contentCachingPeerPolicy": "peersInLocalNetwork",
+    "contentCachingPeerListenRanges": [
+      {
+        "@odata.type": "microsoft.graph.iPv6Range",
+        "lowerAddress": "Lower Address value",
+        "upperAddress": "Upper Address value"
+      }
+    ],
+    "contentCachingPeerFilterRanges": [
+      {
+        "@odata.type": "microsoft.graph.iPv6Range",
+        "lowerAddress": "Lower Address value",
+        "upperAddress": "Upper Address value"
+      }
+    ],
+    "contentCachingParentSelectionPolicy": "roundRobin",
+    "contentCachingParents": [
+      "Content Caching Parents value"
+    ],
+    "contentCachingLogClientIdentities": true,
+    "contentCachingPublicRanges": [
+      {
+        "@odata.type": "microsoft.graph.iPv6Range",
+        "lowerAddress": "Lower Address value",
+        "upperAddress": "Upper Address value"
+      }
+    ],
+    "contentCachingBlockDeletion": true,
+    "contentCachingShowAlerts": true,
+    "contentCachingKeepAwake": true,
+    "contentCachingPort": 2
   }
 }
 ```

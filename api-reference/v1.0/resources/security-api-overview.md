@@ -78,6 +78,9 @@ Engage with the community:
 - [Join the tech community](https://aka.ms/graphsecuritycommunity)
 - [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for these API sets.
+
 ## Next steps
 
 The Microsoft Graph Security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:

@@ -26,6 +26,8 @@ The type of VPN security association encryption algorithm
 |aes128|3|AES-128|
 |aes128Gcm|4|AES-128-GCM (16-octet ICV)|
 |aes256Gcm|5|AES-256-GCM (16-octet ICV)|
+|aes192|6|AES-192|
+|aes192Gcm|7|AES-192-GCM|
 
 
 

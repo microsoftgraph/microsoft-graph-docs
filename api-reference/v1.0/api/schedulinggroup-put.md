@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+PATCH /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ The following is an example of the request.
   "name": "schedule-put-schedulinggroups"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 Content-type: application/json
 Prefer: return=representation
 

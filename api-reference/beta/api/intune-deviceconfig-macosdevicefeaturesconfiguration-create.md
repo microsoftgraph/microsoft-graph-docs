@@ -82,6 +82,25 @@ The following table shows the properties that are required when you create the m
 |associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Gets or sets a list that maps apps to their associated domains. The key should match the app's ID, and the value should be a string in the form of "service:domain" where domain is a fully qualified hostname (e.g. webcredentials:example.com). This collection can contain a maximum of 500 elements.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Gets or sets a single sign-on extension profile. Deprecated: use MacOSSingleSignOnExtension instead.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
+|contentCachingEnabled|Boolean|Enables content caching and prevents it from being disabled by the user.|
+|contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determines what type of content is allowed to be cached by Apple's content caching service. Possible values are: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
+|contentCachingMaxSizeBytes|Int32|The maximum number of bytes of disk space that will be used for the content cache. A value of 0 (default) indicates unlimited disk space. |
+|contentCachingDataPath|String|The path to the directory used to store cached content. The value must be (or end with) /Library/Application Support/Apple/AssetCache/Data|
+|contentCachingDisableConnectionSharing|Boolean|Disables internet connection sharing.|
+|contentCachingForceConnectionSharing|Boolean|Forces internet connection sharing. contentCachingDisableConnectionSharing overrides this setting.|
+|contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|Determines the method in which content caching servers will listen for clients. Possible values are: `notConfigured`, `clientsInLocalNetwork`, `clientsWithSamePublicIpAddress`, `clientsInCustomLocalNetworks`, `clientsInCustomLocalNetworksWithFallback`.|
+|contentCachingClientListenRanges|[ipRange](../resources/intune-shared-iprange.md) collection|A list of custom IP ranges content caches will use to listen for clients. This collection can contain a maximum of 500 elements.|
+|contentCachingPeerPolicy|[macOSContentCachingPeerPolicy](../resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md)|Determines the method in which content caches peer with other caches. Possible values are: `notConfigured`, `peersInLocalNetwork`, `peersWithSamePublicIpAddress`, `peersInCustomLocalNetworks`.|
+|contentCachingPeerListenRanges|[ipRange](../resources/intune-shared-iprange.md) collection|A list of custom IP ranges content caches will use to listen for peer caches. This collection can contain a maximum of 500 elements.|
+|contentCachingPeerFilterRanges|[ipRange](../resources/intune-shared-iprange.md) collection|A list of custom IP ranges content caches will use to query for content from peers caches. This collection can contain a maximum of 500 elements.|
+|contentCachingParentSelectionPolicy|[macOSContentCachingParentSelectionPolicy](../resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)|Determines the method in which content caching servers will select parents if multiple are present. Possible values are: `notConfigured`, `roundRobin`, `firstAvailable`, `urlPathHash`, `random`, `stickyAvailable`.|
+|contentCachingParents|String collection|A list of IP addresses representing parent content caches.|
+|contentCachingLogClientIdentities|Boolean|Enables logging of IP addresses and ports of clients that request cached content.|
+|contentCachingPublicRanges|[ipRange](../resources/intune-shared-iprange.md) collection|A list of custom IP ranges that Apple's content caching service should use to match clients to content caches. This collection can contain a maximum of 500 elements.|
+|contentCachingBlockDeletion|Boolean|Prevents content caches from purging content to free up disk space for other apps.|
+|contentCachingShowAlerts|Boolean|Display content caching alerts as system notifications.|
+|contentCachingKeepAwake|Boolean|Prevent the device from sleeping if content caching is enabled.|
+|contentCachingPort|Int32|Sets the port used for content caching. If the value is 0, a random available port will be selected. Valid values 0 to 65535|
 
 
 
@@ -95,7 +114,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3879
+Content-length: 5388
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -212,7 +231,52 @@ Content-length: 3879
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
-  }
+  },
+  "contentCachingEnabled": true,
+  "contentCachingType": "userContentOnly",
+  "contentCachingMaxSizeBytes": 10,
+  "contentCachingDataPath": "Content Caching Data Path value",
+  "contentCachingDisableConnectionSharing": true,
+  "contentCachingForceConnectionSharing": true,
+  "contentCachingClientPolicy": "clientsInLocalNetwork",
+  "contentCachingClientListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerPolicy": "peersInLocalNetwork",
+  "contentCachingPeerListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerFilterRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingParentSelectionPolicy": "roundRobin",
+  "contentCachingParents": [
+    "Content Caching Parents value"
+  ],
+  "contentCachingLogClientIdentities": true,
+  "contentCachingPublicRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingBlockDeletion": true,
+  "contentCachingShowAlerts": true,
+  "contentCachingKeepAwake": true,
+  "contentCachingPort": 2
 }
 ```
 
@@ -221,7 +285,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4051
+Content-Length: 5560
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -341,7 +405,52 @@ Content-Length: 4051
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
-  }
+  },
+  "contentCachingEnabled": true,
+  "contentCachingType": "userContentOnly",
+  "contentCachingMaxSizeBytes": 10,
+  "contentCachingDataPath": "Content Caching Data Path value",
+  "contentCachingDisableConnectionSharing": true,
+  "contentCachingForceConnectionSharing": true,
+  "contentCachingClientPolicy": "clientsInLocalNetwork",
+  "contentCachingClientListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerPolicy": "peersInLocalNetwork",
+  "contentCachingPeerListenRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingPeerFilterRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingParentSelectionPolicy": "roundRobin",
+  "contentCachingParents": [
+    "Content Caching Parents value"
+  ],
+  "contentCachingLogClientIdentities": true,
+  "contentCachingPublicRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range",
+      "lowerAddress": "Lower Address value",
+      "upperAddress": "Upper Address value"
+    }
+  ],
+  "contentCachingBlockDeletion": true,
+  "contentCachingShowAlerts": true,
+  "contentCachingKeepAwake": true,
+  "contentCachingPort": 2
 }
 ```
 

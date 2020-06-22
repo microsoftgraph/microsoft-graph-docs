@@ -24,6 +24,7 @@ Branding Options for the Message Template. Branding is defined in the Intune Adm
 |includeCompanyLogo|1|Include Company Logo.|
 |includeCompanyName|2|Include Company Name.|
 |includeContactInformation|4|Include Contact Info.|
+|includeCompanyPortalLink|8|Include Company Portal Link.|
 
 
 

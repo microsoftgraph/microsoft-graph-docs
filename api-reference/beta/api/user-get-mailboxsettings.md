@@ -25,6 +25,7 @@ receipt of their email)
 - time format
 - time zone
 - [working hours](../resources/workinghours.md)
+- [user purpose](../resources/userpurpose.md)
 
 Users can set their preferred date and time formats using Outlook on the web. Users can choose one of the supported [short date](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats. This `GET` operation returns the format the user has chosen.
 
@@ -49,7 +50,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, or working hours:
+To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, working hours, or user purpose:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -72,6 +73,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
+
+GET /me/mailboxSettings/userPurpose
+GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
 ## Optional query parameters
 This method supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -95,13 +99,14 @@ If successful, this method returns a `200 OK` response code and one of the follo
 - string (for **timeFormat**)
 - string (for **timeZone**)
 - [workingHours](../resources/workinghours.md)
+- [userPurpose](../resources/userpurpose.md)
 
 ## Examples
 
 ### Example 1
 #### Request 
 The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format, 
-locale (language and country/region), time format, time zone, and working hours.
+locale (language and country/region), time format, time zone, working hours, and user purpose.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -172,6 +177,9 @@ Content-type: application/json
         "timeZone":{
             "name":"Pacific Standard Time"
         }
+    },
+    "userPurpose": {
+        "value": "user"
     },
     "dateFormat": "MM/dd/yyyy",
     "timeFormat": "hh:mm tt",
@@ -291,6 +299,36 @@ Content-type: application/json
             "year":0
         }
     }
+}
+```
+
+### Example 4
+#### Request
+The fourth example gets specifically the [user purpose](../resources/userpurpose.md) settings of the signed-in user's mailbox.
+<!-- {
+  "blockType": "request",
+  "name": "get_mailboxsettings_4"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
+```
+#### Response
+The response includes only the [user purpose](../resources/userpurpose.md) settings.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_mailboxsettings_4",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userPurpose"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('622eaaff-0683-4862-9de4-f2ec83c2bd98')/mailboxSettings/userPurpose",
+    "value": "user"
 }
 ```
 

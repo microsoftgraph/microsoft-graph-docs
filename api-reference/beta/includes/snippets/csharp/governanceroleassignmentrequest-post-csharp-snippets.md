@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest
+var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequestObject
 {
 	RoleDefinitionId = "0e88fd18-50f5-4ee1-9104-01c3ed910065",
 	ResourceId = "e5e7d29d-5465-45ac-885f-4716a5ee74b5",

@@ -41,7 +41,7 @@ The details of one version of a [teamsApp](teamsapp.md).
 }
 ```
 
-# See also
+## See also
 
 - [teamsApp](teamsapp.md)
 - [teamsAppInstallation](teamsappinstallation.md)

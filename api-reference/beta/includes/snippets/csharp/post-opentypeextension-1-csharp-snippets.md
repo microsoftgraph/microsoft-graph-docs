@@ -24,14 +24,17 @@ var message = new Message
 			}
 		}
 	},
-	Extensions = new List<Extension>()
+	Extensions = (IMessageExtensionsCollectionPage)new List<Extension>()
 	{
 		new OpenTypeExtension
 		{
 			ExtensionName = "Com.Contoso.Referral",
-			CompanyName = "Wingtip Toys",
-			ExpirationDate = "2015-12-30T11:00:00Z",
-			DealValue = 10000
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"companyName", "Wingtip Toys"},
+				{"expirationDate", "2015-12-30T11:00:00Z"},
+				{"dealValue", "10000"}
+			}
 		}
 	}
 };

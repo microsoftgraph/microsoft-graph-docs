@@ -10,7 +10,7 @@ var agreement = new Agreement
 {
 	DisplayName = "MSGraph Sample",
 	IsViewingBeforeAcceptanceRequired = true,
-	Files = new List<AgreementFile>()
+	Files = (IAgreementFilesCollectionPage)new List<AgreementFile>()
 	{
 		new AgreementFile
 		{
@@ -19,7 +19,7 @@ var agreement = new Agreement
 			IsDefault = true,
 			FileData = new AgreementFileData
 			{
-				Data = "SGVsbG8gd29ybGQ="
+				Data = Encoding.ASCII.GetBytes("SGVsbG8gd29ybGQ=")
 			}
 		}
 	}

@@ -34,6 +34,6 @@ var openShift = new OpenShift
 
 await graphClient.Teams["{id}"].Schedule.OpenShifts["OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
 	.Request()
-	.PutAsync(openShift);
+	.UpdateAsync(openShift);
 
 ```

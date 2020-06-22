@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var accessPackageResourceRequest = new AccessPackageResourceRequest
+var accessPackageResourceRequest = new AccessPackageResourceRequestObject
 {
 	CatalogId = "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
 	RequestType = "AdminAdd",

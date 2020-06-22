@@ -32,6 +32,6 @@ const shiftPreferences = {
 };
 
 let res = await client.api('/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences')
-	.put(shiftPreferences);
+	.update(shiftPreferences);
 
 ```

@@ -28,7 +28,7 @@ A GET request with the delta function returns either:
 
 State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the next round.
 
-For more information, see the [delta query](/graph/delta-query-overview.md) documentation.
+For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
 ## Permissions
 
@@ -36,9 +36,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type                        |Permissions (from least to most privileged)  |
 |---------------------------------------|---------------------------------------------|
-|Delegated (work or school account)     |ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All          |
+|Delegated (work or school account)     | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account) |Not Supported                                |
-|Application                            |ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All          |
+|Application                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -138,7 +140,7 @@ The response includes two messages and a `@odata.nextLink` response header with 
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -235,7 +237,7 @@ The second response returns the next 2 messages and a `@odata.nextLink` response
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -332,7 +334,7 @@ The third response returns the only remaining messages in the channel and a `@od
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -406,7 +408,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

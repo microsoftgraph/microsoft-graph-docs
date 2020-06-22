@@ -9,14 +9,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var driveItem = new DriveItem
 {
 	Name = "Just some files",
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@microsoft.graph.conflictBehavior","rename"}
-	},
 	Bundle = new Bundle
 	{
 	},
-	Children = new List<DriveItem>()
+	Children = (IDriveItemChildrenCollectionPage)new List<DriveItem>()
 	{
 		new DriveItem
 		{
@@ -26,6 +22,10 @@ var driveItem = new DriveItem
 		{
 			Id = "1234qwerty"
 		}
+	},
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@microsoft.graph.conflictBehavior", "rename"}
 	}
 };
 

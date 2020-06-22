@@ -36,7 +36,7 @@ Consuming the collection is the easiest way to get started with Microsoft Graph 
 You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to  [set up your environment](#using-the-collection).
 
 ## Using the collection
-After you have the **Microsoft Graph** collection and the **Microsoftr Graph environment** in Postman, follow these steps.
+After you have the **Microsoft Graph** collection and the **Microsoft Graph environment** in Postman, follow these steps.
 
 ### Set up application API calls
 

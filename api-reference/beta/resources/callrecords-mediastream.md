@@ -41,7 +41,7 @@ Represents information about a media stream between two endpoints in a call.
 |packetUtilization|Int64|Packet count for the stream.|
 |postForwardErrorCorrectionPacketLossRate|Double|Packet loss rate after FEC has been applied aggregated across all video streams and codecs.|
 |startDateTime|DateTimeOffset|UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|streamDirection|String|Indicates the direction of the media stream. Possible values are: `callerToCallee`, `calleeToCaller`.|
+|streamDirection|microsoft.graph.callRecords.mediaStreamDirection|Indicates the direction of the media stream. Possible values are: `callerToCallee`, `calleeToCaller`.|
 |streamId|String|Unique identifier for the stream.|
 |wasMediaBypassed|Boolean|True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false otherwise.|
 

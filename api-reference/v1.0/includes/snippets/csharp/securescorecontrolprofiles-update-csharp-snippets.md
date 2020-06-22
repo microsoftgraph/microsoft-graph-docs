@@ -8,15 +8,18 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var secureScoreControlProfile = new SecureScoreControlProfile
 {
-	AssignedTo = "",
-	Comment = "control is reviewed",
-	State = "Reviewed",
 	VendorInformation = new SecurityVendorInformation
 	{
 		Provider = "SecureScore",
 		ProviderVersion = null,
 		SubProvider = null,
 		Vendor = "Microsoft"
+	},
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"assignedTo", ""},
+		{"comment", "control is reviewed"},
+		{"state", "Reviewed"}
 	}
 };
 

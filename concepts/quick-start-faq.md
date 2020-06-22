@@ -23,6 +23,13 @@ The quick starts involve four steps:
 
 When you complete the quick start, you have an app that's ready to run.
 
+## Prerequisites
+
+All quick start samples require access to either a personal Microsoft account with a mailbox on Outlook.com, or a Microsoft work or school account with an Exchange Online mailbox. If you don't have a Microsoft account, there are a couple of options to get a free account:
+
+- You can [sign up for a new personal Microsoft account](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1).
+- You can [sign up for the Office 365 Developer Program](https://developer.microsoft.com/office/dev-program) to get a free Office 365 subscription.
+
 ## General quick start sample questions
 
 <!-- markdownlint-disable MD026 -->
@@ -35,9 +42,6 @@ Absolutely! Each quick start download is based on a [Microsoft Graph tutorial](t
 
 - Build the code yourself by following the step-by-step tutorial.
 - Download the completed project from the corresponding GitHub repository and follow the instructions in the README to configure and run the sample.
-
-> [!NOTE]
-> We are in the process of generating tutorials for each of the platforms that currently have a quick start. Some of the quick starts do not have corresponding tutorials yet.
 
 #### Tutorials and GitHub repositories
 
@@ -79,6 +83,12 @@ This is caused by an [issue with Visual Studio and the Roslyn compiler](https://
 ### I'm getting "AADSTS50011: The reply url specified in the request does not match the reply urls configured for the application" when running a quick start.
 
 This indicates a problem with the application registration for the quick start. When you download a quick start from the [Microsoft Graph Quick Starts page](https://developer.microsoft.com/graph/quick-start), we create the application registration for you, and configure a reply URL (also known as a redirect URL) that matches the default URL used by the sample project. If you change the URL, the app registration will no longer match and could cause this error. To resolve this error, consult the README.md file included with the quick start project for instructions on how to create an app registration and configure it in the sample code.
+
+### After signing in, I'm told I need admin approval.
+
+After signing into one of the quick start samples, you may see a message that says **Need admin approval** "XXX Tutorial needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it." This isn't a bug with the sample! None of the quick starts request any Graph permission scopes that *by default* require admin consent. Tenant administrators can disable your ability to consent to Graph permissions scopes for any apps that they have not approved. In that case, you'll see this error.
+
+You'll need to work with your administrators to get approval, use a personal Microsoft account (Outlook.com), or use a test Microsoft 365 tenant with Exchange Online.
 
 ## Didn't find what you need?
 

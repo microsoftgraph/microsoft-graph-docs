@@ -15,7 +15,7 @@ var groupSetting = new GroupSetting
 		new SettingValue
 		{
 			Name = "EnableMIPLabels",
-			Value = false
+			Value = "false"
 		},
 		new SettingValue
 		{
@@ -25,7 +25,7 @@ var groupSetting = new GroupSetting
 		new SettingValue
 		{
 			Name = "EnableMSStandardBlockedWords",
-			Value = false
+			Value = "false"
 		},
 		new SettingValue
 		{
@@ -45,12 +45,12 @@ var groupSetting = new GroupSetting
 		new SettingValue
 		{
 			Name = "AllowGuestsToBeGroupOwner",
-			Value = false
+			Value = "false"
 		},
 		new SettingValue
 		{
 			Name = "AllowGuestsToAccessGroups",
-			Value = true
+			Value = "true"
 		},
 		new SettingValue
 		{
@@ -65,7 +65,7 @@ var groupSetting = new GroupSetting
 		new SettingValue
 		{
 			Name = "AllowToAddGuests",
-			Value = true
+			Value = "true"
 		},
 		new SettingValue
 		{
@@ -80,7 +80,7 @@ var groupSetting = new GroupSetting
 		new SettingValue
 		{
 			Name = "EnableGroupCreation",
-			Value = true
+			Value = "true"
 		}
 	}
 };

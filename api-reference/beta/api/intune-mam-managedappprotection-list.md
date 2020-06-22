@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2589
+Content-Length: 2637
 
 {
   "value": [
@@ -120,7 +120,8 @@ Content-Length: 2589
       "allowedDataIngestionLocations": [
         "sharePoint"
       ],
-      "appActionIfUnableToAuthenticateUser": "wipe"
+      "appActionIfUnableToAuthenticateUser": "wipe",
+      "dialerRestrictionLevel": "managedApps"
     }
   ]
 }

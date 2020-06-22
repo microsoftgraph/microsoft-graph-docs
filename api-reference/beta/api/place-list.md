@@ -65,6 +65,8 @@ This method supports the following query parameters to help customize the respon
 - $filter
 - $select
 - $top
+- $skip
+- $count=true
 
 Use $top to customize the page size. The default page size is 100.
 

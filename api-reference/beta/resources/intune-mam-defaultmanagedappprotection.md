@@ -79,6 +79,7 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |blockDataIngestionIntoOrganizationDocuments|Boolean|Indicates whether a user can bring data into org documents. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
+|dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
@@ -113,6 +114,9 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |minimumWipeCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or the company data on the app will be wiped|
 |allowedAndroidDeviceModels|String collection|List of device models allowed, as a string, for the managed app to work. (Android Only)|
 |appActionIfAndroidDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. (Android Only). Possible values are: `block`, `wipe`, `warn`.|
+|customDialerAppProtocol|String|Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.|
+|customDialerAppPackageId|String|PackageId of a custom dialer app to click-to-open a phone number on Android.|
+|customDialerAppDisplayName|String|Friendly name of a custom dialer app to click-to-open a phone number on Android.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -184,6 +188,7 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "appActionIfUnableToAuthenticateUser": "String",
+  "dialerRestrictionLevel": "String",
   "appDataEncryptionType": "String",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -237,7 +242,10 @@ Here is a JSON representation of the resource.
   "allowedAndroidDeviceModels": [
     "String"
   ],
-  "appActionIfAndroidDeviceModelNotAllowed": "String"
+  "appActionIfAndroidDeviceModelNotAllowed": "String",
+  "customDialerAppProtocol": "String",
+  "customDialerAppPackageId": "String",
+  "customDialerAppDisplayName": "String"
 }
 ```
 

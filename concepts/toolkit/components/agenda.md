@@ -86,10 +86,10 @@ The `mgt-agenda` component supports several [templates](../templates.md) that al
 | --- | --- | --- |
 | `default` | `events`: list of event objects | The default template replaces the entire component with your own. |
 | `event` | `event`: event object | The template used to render each event. |
+| `event-other` | `event`: event object | The template used to render additional content for each event. |
 | `header` | `header`: string | The template used to render the header for each day. |
-| `other` | `event`: event object | The template used to render additional content for each event. |
-| `no-data` | No data context is passed | The template used when no events are available. |
 | `loading` | No data context is passed | The template used when data is loading. |
+| `no-data` | No data context is passed | The template used when no events are available. |
 
 The following examples illustrates how to use the `event` template:
 

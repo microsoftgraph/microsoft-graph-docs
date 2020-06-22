@@ -138,6 +138,7 @@ Content-type: application/json
     }
   ],
   "id": "String (identifier)",
+  "incidentIds": ["String"],
   "lastModifiedDateTime": "String (timestamp)",
   "malwareStates": [
     {
@@ -153,6 +154,7 @@ Content-type: application/json
       "applicationName": "String",
       "destinationAddress": "String",
       "destinationDomain": "String",
+      "destinationLocation": "String",
       "destinationPort": "String",
       "destinationUrl": "String",
       "direction": "@odata.type: microsoft.graph.connectionDirection",
@@ -165,6 +167,7 @@ Content-type: application/json
       "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
       "riskScore": "String",
       "sourceAddress": "String",
+      "sourceLocation": "String",
       "sourcePort": "String",
       "status": "@odata.type: microsoft.graph.connectionStatus",
       "urlParameters": "String"
@@ -204,6 +207,12 @@ Content-type: application/json
       "valueType": "@odata.type: microsoft.graph.registryValueType"
     }
   ],
+   "securityResources": [
+    {
+      "resource": "String",
+      "resourceType": "@odata.type: microsoft.graph.securityResourceType"
+    }
+   ],
   "severity": "@odata.type: microsoft.graph.alertSeverity",
   "sourceMaterials": ["String"],
   "status": "@odata.type: microsoft.graph.alertStatus",

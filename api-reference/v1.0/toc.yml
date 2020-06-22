@@ -188,6 +188,15 @@ items:
           href: api/user-delete.md
         - name: Get delta
           href: api/user-delta.md
+      - name: App role assignments
+        href: resources/approleassignment.md
+        items:
+        - name: List
+          href: api/user-list-approleassignments.md
+        - name: Add
+          href: api/user-post-approleassignments.md
+        - name: Remove
+          href: api/user-delete-approleassignments.md
       - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
@@ -223,6 +232,10 @@ items:
           href: api/user-list-contacts.md
         - name: List contact folders
           href: api/user-list-contactfolders.md
+      - name: Delegated permission grants
+        items:
+        - name: List
+          href: api/user-list-oauth2permissiongrants.md
       - name: Directory objects
         href: resources/directoryobject.md
         items:
@@ -454,6 +467,15 @@ items:
             href: api/grouplifecyclepolicy-removegroup.md
         - name: Validate properties
           href: api/group-validateproperties.md
+      - name: App role assignments
+        href: resources/approleassignment.md
+        items:
+        - name: List
+          href: api/group-list-approleassignments.md
+        - name: Add
+          href: api/group-post-approleassignments.md
+        - name: Remove
+          href: api/group-delete-approleassignments.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -778,6 +800,38 @@ items:
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+        - name: Place
+          items:
+          - name: Place
+            href: resources/place.md
+          - name: Room type
+            href: resources/room.md
+          - name: Room list type
+            href: resources/roomlist.md
+          - name: List places
+            href: api/place-list.md
+          - name: Get place
+            href: api/place-get.md
+          - name: Update place
+            href: api/place-update.md
+    - name: Change notifications
+      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      items:
+      - name: Overview
+        href: resources/webhooks.md
+      - name: Subscription
+        href: resources/subscription.md
+        items:
+        - name: List subscription
+          href: api/subscription-list.md
+        - name: Get subscription
+          href: api/subscription-get.md
+        - name: Create subscription
+          href: api/subscription-post-subscriptions.md
+        - name: Update subscription
+          href: api/subscription-update.md
+        - name: Delete subscription
+          href: api/subscription-delete.md
     - name: Cloud communications
       displayName: Cloud communications
       items:
@@ -807,7 +861,7 @@ items:
           items:
           - name: Play prompt
             href: api/call-playprompt.md
-          - name: Record
+          - name: Record response
             href: api/call-record.md
           - name: Subscribe to tone
             href: api/call-subscribetotone.md
@@ -841,6 +895,24 @@ items:
           href: api/onlinemeeting-get.md
         - name: Delete
           href: api/onlinemeeting-delete.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
+      - name: Call records
+        items:
+        - name: Overview
+          href: resources/callrecords-api-overview.md
+        - name: Call record
+          items:
+          - name: Call record
+            href: resources/callrecords-callrecord.md
+          - name: Get call record
+            href: api/callrecords-callrecord-get.md
+        - name: Session
+          items:
+          - name: Session
+            href: resources/callrecords-session.md
+          - name: List sessions
+            href: api/callrecords-session-list.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -3229,6 +3301,34 @@ items:
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+    - name: Extensions
+      items:
+      - name: Open extensions
+        href: resources/opentypeextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+        - name: Update open extension
+          href: api/opentypeextension-update.md
+        - name: Delete open extension
+          href: api/opentypeextension-delete.md
+      - name: Schema extensions
+        href: resources/schemaextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: List schema extensions
+          href: api/schemaextension-list.md
+        - name: Create schema extension
+          href: api/schemaextension-post-schemaextensions.md
+        - name: Get schema extension
+          href: api/schemaextension-get.md
+        - name: Update schema extension
+          href: api/schemaextension-update.md
+        - name: Delete schema extension
+          href: api/schemaextension-delete.md 
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
@@ -3343,34 +3443,32 @@ items:
           href: api/directory-deleteditems-delete.md
         - name: Restore deleted application
           href: api/directory-deleteditems-restore.md
-        - name: Add password
-          href: api/application-addpassword.md
-        - name: Remove password
-          href: api/application-removepassword.md
-        - name: Create extension
-          href: api/application-post-extensionproperty.md
-        - name: List extensions
-          href: api/application-list-extensionproperty.md
-        - name: Delete extension
-          href: api/application-delete-extensionproperty.md
-        - name: List owners
-          href: api/application-list-owners.md
-        - name: Add owner
-          href: api/application-post-owners.md
-        - name: Remove owner
-          href: api/application-delete-owners.md
-        - name: Add token issuance policy
-          href: api/application-post-tokenissuancepolicies.md
-        - name: List token issuance policies
-          href: api/application-list-tokenissuancepolicies.md
-        - name: Remove token issuance policy
-          href: api/application-delete-tokenissuancepolicies.md
-        - name: Add token lifetime policy
-          href: api/application-post-tokenlifetimepolicies.md
-        - name: List token lifetime policies
-          href: api/application-list-tokenlifetimepolicies.md
-        - name: Remove token lifetime policy
-          href: api/application-delete-tokenlifetimepolicies.md
+        - name: Certificates and secrets
+          items:
+          - name: Add password
+            href: api/application-addpassword.md
+          - name: Remove password
+            href: api/application-removepassword.md
+          - name: Add key
+            href: api/application-addkey.md
+          - name: Remove key
+            href: api/application-removekey.md
+        - name: Extensions
+          items:
+          - name: List
+            href: api/application-list-extensionproperty.md
+          - name: Create
+            href: api/application-post-extensionproperty.md
+          - name: Delete
+            href: api/application-delete-extensionproperty.md
+        - name: Owners
+          items:
+          - name: List
+            href: api/application-list-owners.md
+          - name: Add
+            href: api/application-post-owners.md
+          - name: Remove
+            href: api/application-delete-owners.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
@@ -3411,6 +3509,19 @@ items:
         items:
         - name: Get data policy operation
           href: api/datapolicyoperation-get.md
+      - name: Delegated permission grants
+        href: resources/oauth2permissiongrant.md
+        items:
+        - name: List
+          href: api/oauth2permissiongrant-list.md
+        - name: Create
+          href: api/oauth2permissiongrant-post.md
+        - name: Get
+          href: api/oauth2permissiongrant-get.md
+        - name: Update
+          href: api/oauth2permissiongrant-update.md
+        - name: Delete
+          href: api/oauth2permissiongrant-delete.md
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -3662,6 +3773,74 @@ items:
             href: api/tokenlifetimepolicy-delete.md
           - name: List applied to applications
             href: api/tokenlifetimepolicy-list-appliesto.md
+      - name: Service principal
+        href: resources/serviceprincipal.md
+        items:
+        - name: List
+          href: api/serviceprincipal-list.md
+        - name: Create
+          href: api/serviceprincipal-post-serviceprincipals.md
+        - name: Get
+          href: api/serviceprincipal-get.md
+        - name: Update
+          href: api/serviceprincipal-update.md
+        - name: Delete
+          href: api/serviceprincipal-delete.md
+        - name: List created objects
+          href: api/serviceprincipal-list-createdobjects.md
+        - name: List owned objects
+          href: api/serviceprincipal-list-ownedobjects.md
+        - name: App role assignments
+          href: resources/approleassignment.md
+          items:
+          - name: List
+            href: api/serviceprincipal-list-approleassignments.md
+          - name: Add
+            href: api/serviceprincipal-post-approleassignments.md
+          - name: Remove
+            href: api/serviceprincipal-delete-approleassignments.md
+          - name: List assigned to
+            href: api/serviceprincipal-list-approleassignedto.md
+          - name: Add assigned to
+            href: api/serviceprincipal-post-approleassignedto.md
+          - name: Remove assigned to
+            href: api/serviceprincipal-delete-approleassignedto.md
+        - name: Certificates and secrets
+          items:
+          - name: Add password
+            href: api/serviceprincipal-addpassword.md
+          - name: Remove password
+            href: api/serviceprincipal-removepassword.md
+          - name: Add key
+            href: api/serviceprincipal-addkey.md
+          - name: Remove key
+            href: api/serviceprincipal-removekey.md
+        - name: Delegated permission grants
+          items:
+          - name: List
+            href: api/serviceprincipal-list-oauth2permissiongrants.md
+        - name: Membership
+          items:
+          - name: List member of
+            href: api/serviceprincipal-list-memberof.md
+          - name: List transitive member of
+            href: api/serviceprincipal-list-transitivememberof.md
+          - name: Check member groups
+            href: api/serviceprincipal-checkmembergroups.md
+          - name: Check member objects
+            href: api/serviceprincipal-checkmemberobjects.md
+          - name: Get member groups
+            href: api/serviceprincipal-getmembergroups.md
+          - name: Get member objects
+            href: api/serviceprincipal-getmemberobjects.md
+        - name: Owners
+          items:
+          - name: List
+            href: api/serviceprincipal-list-owners.md
+          - name: Add
+            href: api/serviceprincipal-post-owners.md
+          - name: Remove
+            href: api/serviceprincipal-delete-owners.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:
@@ -4414,6 +4593,8 @@ items:
           href: api/user-list-joinedteams.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/1.0
+        - name: Get primary channel
+          href: api/team-get-primarychannel.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -4470,6 +4651,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Get files folder
+          href: api/channel-get-filesfolder.md
         - name: Send message
           href: api/channel-post-messages.md
         - name: Reply to message
@@ -4481,9 +4664,10 @@ items:
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
-      - name: App Catalog
-        href: resources/teamsapp.md
+      - name: App catalog
         items:
+        - name: App in catalog
+          href: resources/teamsapp.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
@@ -4842,50 +5026,3 @@ items:
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
-    - name: Tools
-      expanded: true
-      items:
-      - name: Open extensions
-        href: resources/opentypeextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-        items:
-        - name: Create open extension
-          href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
-          href: api/opentypeextension-get.md
-        - name: Update open extension
-          href: api/opentypeextension-update.md
-        - name: Delete open extension
-          href: api/opentypeextension-delete.md
-      - name: Schema extensions
-        href: resources/schemaextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-        items:
-        - name: List schema extensions
-          href: api/schemaextension-list.md
-        - name: Create schema extension
-          href: api/schemaextension-post-schemaextensions.md
-        - name: Get schema extension
-          href: api/schemaextension-get.md
-        - name: Update schema extension
-          href: api/schemaextension-update.md
-        - name: Delete schema extension
-          href: api/schemaextension-delete.md
-      - name: Change notifications
-        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
-        items:
-        - name: Overview
-          href: resources/webhooks.md
-        - name: Subscription
-          href: resources/subscription.md
-          items:
-          - name: List subscription
-            href: api/subscription-list.md
-          - name: Get subscription
-            href: api/subscription-get.md
-          - name: Create subscription
-            href: api/subscription-post-subscriptions.md
-          - name: Update subscription
-            href: api/subscription-update.md
-          - name: Delete subscription
-            href: api/subscription-delete.md

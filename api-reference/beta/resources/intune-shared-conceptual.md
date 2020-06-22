@@ -26,6 +26,7 @@ The following Graph resources are shared between Intune workflows:
 - [Company portal action](intune-shared-companyportalaction.md)
 - [Company portal blocked action](intune-shared-companyportalblockedaction.md)
 - [Compliance status](intune-shared-compliancestatus.md)
+- [Device and app management assignment filter type](intune-shared-deviceandappmanagementassignmentfiltertype.md)
 - [Device and app management assignment source](intune-shared-deviceandappmanagementassignmentsource.md)
 - [Device and app management assignment target](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [Device app management](intune-shared-deviceappmanagement.md)

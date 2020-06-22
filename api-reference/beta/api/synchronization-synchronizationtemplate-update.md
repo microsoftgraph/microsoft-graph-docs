@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT application/{id}/synchronization/templates/{templateId}
+PATCH application/{id}/synchronization/templates/{templateId}
 ```
 
 ## Request headers

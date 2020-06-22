@@ -41,6 +41,7 @@ Not yet documented
 |certificateKeyUsages|Int32|Key Usage|
 |certificateExtendedKeyUsages|String|Enhanced Key Usage|
 |certificateIssuanceDateTime|DateTimeOffset|Issuance date|
+|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|The time the revoke status was last changed|
 
 ## Relationships
 None
@@ -67,7 +68,8 @@ Here is a JSON representation of the resource.
   "certificateSubjectName": "String",
   "certificateKeyUsages": 1024,
   "certificateExtendedKeyUsages": "String",
-  "certificateIssuanceDateTime": "String (timestamp)"
+  "certificateIssuanceDateTime": "String (timestamp)",
+  "certificateRevokeStatusLastChangeDateTime": "String (timestamp)"
 }
 ```
 

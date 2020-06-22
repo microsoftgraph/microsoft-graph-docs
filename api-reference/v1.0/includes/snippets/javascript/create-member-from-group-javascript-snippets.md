@@ -10,11 +10,15 @@ const options = {
 
 const client = Client.init(options);
 
-const directoryObject = {
-  @odata.id: "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+const group = {
+  members@odata.bind: [
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+    ]
 };
 
-let res = await client.api('/groups/{id}/members/$ref')
-	.post(directoryObject);
+let res = await client.api('/groups/{id}')
+	.update(group);
 
 ```

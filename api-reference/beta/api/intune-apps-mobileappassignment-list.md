@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 558
+Content-Length: 733
 
 {
   "value": [
@@ -69,7 +69,9 @@ Content-Length: 558
       "id": "591620b7-20b7-5916-b720-1659b7201659",
       "intent": "required",
       "target": {
-        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       },
       "settings": {
         "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",

@@ -63,6 +63,7 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |minimumCpuSpeedInMHz|Int32|The value for the minimum CPU speed which is required to install this app.|
 |detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md) collection|The detection rules to detect Win32 Line of Business (LoB) app.|
 |requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md) collection|The requirement rules to detect Win32 Line of Business (LoB) app.|
+|rules|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md) collection|The detection and requirement rules for this app.|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|The install experience for this app.|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) collection|The return codes for post installation behavior.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|The MSI details if this Win32 app is an MSI app.|
@@ -157,6 +158,18 @@ Here is a JSON representation of the resource.
       "keyPath": "String",
       "valueName": "String",
       "detectionType": "String"
+    }
+  ],
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "String",
+      "check32BitOn64System": true,
+      "keyPath": "String",
+      "valueName": "String",
+      "operationType": "String",
+      "operator": "String",
+      "comparisonValue": "String"
     }
   ],
   "installExperience": {

@@ -10,7 +10,7 @@ var educationUser = new EducationUser
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"@odata.id","https://graph.microsoft.com/v1.0/education/users/14008"}
+		{"@odata.id", "https://graph.microsoft.com/v1.0/education/users/14008"}
 	}
 };
 

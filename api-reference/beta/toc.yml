@@ -190,6 +190,15 @@ items:
           href: api/user-delete.md
         - name: Get delta
           href: api/user-delta.md
+      - name: App role assignments
+        href: resources/approleassignment.md
+        items:
+        - name: List app role assignments
+          href: api/user-list-approleassignments.md
+        - name: Add app role assignment
+          href: api/user-post-approleassignments.md
+        - name: Remove app role assignment
+          href: api/user-delete-approleassignments.md
       - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
@@ -229,6 +238,10 @@ items:
           href: api/user-list-contacts.md
         - name: List contact folders
           href: api/user-list-contactfolders.md
+      - name: Delegated permission grants
+        items:
+        - name: List delegated permission grants
+          href: api/user-list-oauth2permissiongrants.md
       - name: Directory objects
         href: resources/directoryobject.md
         items:
@@ -289,14 +302,6 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Content discovery settings
-          items:
-          - name: User settings
-            href: resources/usersettings.md
-          - name: Get settings
-            href: api/usersettings-get.md
-          - name: Update settings
-            href: api/usersettings-update.md
       - name: Mail
         href: resources/message.md
         items:
@@ -396,6 +401,13 @@ items:
           href: api/planneruser-list-tasks.md
         - name: Update settings
           href: api/planneruser-update.md
+      - name: Preferred languages and regional formats (preview)
+        href: resources/regionalandlanguagesettings.md
+        items:
+        - name: Get
+          href: api/regionalandlanguagesettings-get.md
+        - name: Update
+          href: api/regionalandlanguagesettings-update.md   
       - name: Profile (preview)
         items:
         - name: Profile
@@ -403,7 +415,7 @@ items:
         - name: Get user's profile
           href: api/profile-get.md
         - name: Delete user's profile
-          href: api/profile-delete.md
+          href: api/profile-delete.md      
       - name: Teamwork
         items:
         - name: Installed app
@@ -416,6 +428,14 @@ items:
           href: api/user-upgrade-teamsappinstallation.md
         - name: Uninstall app
           href: api/user-delete-teamsappinstallation.md
+      - name: User settings
+        items:
+        - name: User settings
+          href: resources/usersettings.md
+        - name: Get settings
+          href: api/usersettings-get.md
+        - name: Update settings
+          href: api/usersettings-update.md
     - name: Groups
       items:
       - name: Overview
@@ -489,6 +509,15 @@ items:
           href: api/group-update.md
         - name: Validate properties
           href: api/group-validateproperties.md
+      - name: App role assignments
+        href: resources/approleassignment.md
+        items:
+        - name: List app role assignments
+          href: api/group-list-approleassignments.md
+        - name: Add app role assignment
+          href: api/group-post-approleassignments.md
+        - name: Remove app role assignment
+          href: api/group-delete-approleassignments.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -855,6 +884,26 @@ items:
             href: api/place-get.md
           - name: Update place
             href: api/place-update.md
+    - name: Change notifications
+      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      items:
+      - name: Overview
+        href: resources/webhooks.md
+      - name: Subscription
+        href: resources/subscription.md
+        items:
+        - name: List
+          href: api/subscription-list.md
+        - name: Create
+          href: api/subscription-post-subscriptions.md
+        - name: Get
+          href: api/subscription-get.md
+        - name: Update
+          href: api/subscription-update.md
+        - name: Delete
+          href: api/subscription-delete.md
+      - name: Change notification collection
+        href: resources/changenotificationcollection.md
     - name: Cloud communications
       displayName: Cloud communications
       items:
@@ -884,7 +933,7 @@ items:
           items:
           - name: Play prompt
             href: api/call-playprompt.md
-          - name: Record
+          - name: Record response
             href: api/call-record.md
           - name: Cancel media processing
             href: api/call-cancelmediaprocessing.md
@@ -946,14 +995,22 @@ items:
           href: api/presence-get.md
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
-      - name: Call records (preview)
+      - name: Call records
         items:
         - name: Overview
           href: resources/callrecords-api-overview.md
         - name: Call record
-          href: resources/callrecords-callrecord.md
-        - name: Get call record
-          href: api/callrecords-callrecord-get.md
+          items:
+          - name: Call record
+            href: resources/callrecords-callrecord.md
+          - name: Get call record
+            href: api/callrecords-callrecord-get.md
+        - name: Session
+          items:
+          - name: Session
+            href: resources/callrecords-session.md
+          - name: List sessions
+            href: api/callrecords-session-list.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -988,7 +1045,7 @@ items:
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
-    - name: Customer booking
+    - name: Customer booking (preview)
       displayName: Bookings, Microsoft Bookings
       items:
       - name: Overview
@@ -1081,7 +1138,7 @@ items:
         - name: Print
           href: resources/print.md
           displayName: Universal Print
-        - name: Connectors
+        - name: Print connector
           href: resources/printconnector.md
           items:
           - name: List
@@ -1092,7 +1149,7 @@ items:
             href: api/printconnector-update.md
           - name: Delete
             href: api/printconnector-delete.md
-        - name: Print jobs
+        - name: Print job
           href: resources/printjob.md
           items:
           - name: Create
@@ -1103,7 +1160,7 @@ items:
             href: api/printjob-startprintjob.md
           - name: Cancel
             href: api/printjob-cancelprintjob.md
-        - name: Printers
+        - name: Printer
           href: resources/printer.md
           items:
           - name: List
@@ -1134,7 +1191,7 @@ items:
             href: api/printer-delete-alloweduser.md
           - name: Reset defaults
             href: api/printer-resetdefaults.md
-        - name: Printer shares
+        - name: Printer share
           href: resources/printershare.md
           items:
           - name: List
@@ -1183,7 +1240,7 @@ items:
               href: api/reportroot-list-dailyprintusagesummariesbyuser.md
             - name: List monthly reports by user
               href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
-        - name: Services
+        - name: Print service
           href: resources/printservice.md
           items:
           - name: List
@@ -1197,7 +1254,7 @@ items:
               href: api/printserviceendpoint-get.md
             - name: List a service's endpoints
               href: api/printservice-list-endpoints.md
-        - name: Settings
+        - name: Print settings
           href: resources/printsettings.md
           items:
           - name: Get
@@ -2152,8 +2209,12 @@ items:
             href: resources/intune-apps-win32lobappfilesystemdetection.md
           - name: Win32 LOB app file system detection type
             href: resources/intune-apps-win32lobappfilesystemdetectiontype.md
+          - name: Win32 LOB app file system operation type
+            href: resources/intune-apps-win32lobappfilesystemoperationtype.md
           - name: Win32 LOB app file system requirement
             href: resources/intune-apps-win32lobappfilesystemrequirement.md
+          - name: Win32 LOB app file system rule
+            href: resources/intune-apps-win32lobappfilesystemrule.md
           - name: Win32 LOB app install experience
             href: resources/intune-apps-win32lobappinstallexperience.md
           - name: Win32 LOB app msi information
@@ -2166,14 +2227,22 @@ items:
             href: resources/intune-apps-win32lobapppowershellscriptdetectiontype.md
           - name: Win32 LOB app power shell script requirement
             href: resources/intune-apps-win32lobapppowershellscriptrequirement.md
+          - name: Win32 LOB app power shell script rule
+            href: resources/intune-apps-win32lobapppowershellscriptrule.md
           - name: Win32 LOB app product code detection
             href: resources/intune-apps-win32lobappproductcodedetection.md
+          - name: Win32 LOB app product code rule
+            href: resources/intune-apps-win32lobappproductcoderule.md
           - name: Win32 LOB app registry detection
             href: resources/intune-apps-win32lobappregistrydetection.md
           - name: Win32 LOB app registry detection type
             href: resources/intune-apps-win32lobappregistrydetectiontype.md
           - name: Win32 LOB app registry requirement
             href: resources/intune-apps-win32lobappregistryrequirement.md
+          - name: Win32 LOB app registry rule
+            href: resources/intune-apps-win32lobappregistryrule.md
+          - name: Win32 LOB app registry rule operation type
+            href: resources/intune-apps-win32lobappregistryruleoperationtype.md
           - name: Win32 LOB app requirement
             href: resources/intune-apps-win32lobapprequirement.md
           - name: Win32 LOB app restart behavior
@@ -2182,6 +2251,14 @@ items:
             href: resources/intune-apps-win32lobappreturncode.md
           - name: Win32 LOB app return code type
             href: resources/intune-apps-win32lobappreturncodetype.md
+          - name: Win32 LOB app rule
+            href: resources/intune-apps-win32lobapprule.md
+          - name: Win32 LOB app rule operator
+            href: resources/intune-apps-win32lobappruleoperator.md
+          - name: Win32 LOB app rule type
+            href: resources/intune-apps-win32lobappruletype.md
+          - name: Win32 LOB power shell script rule operation type
+            href: resources/intune-apps-win32lobpowershellscriptruleoperationtype.md
           - name: Windows AppX
             href: resources/intune-apps-windowsappx.md
             items:
@@ -2852,6 +2929,19 @@ items:
               href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
+          - name: Android device owner PKCS certificate profile
+            href: resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-list.md
+            - name: Get
+              href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-get.md
+            - name: Create
+              href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-update.md
           - name: Android device owner play store mode
             href: resources/intune-deviceconfig-androiddeviceownerplaystoremode.md
           - name: Android device owner required password type
@@ -3444,6 +3534,8 @@ items:
             href: resources/intune-deviceconfig-applicationguardblockfiletransfertype.md
           - name: Application guard enabled options
             href: resources/intune-deviceconfig-applicationguardenabledoptions.md
+          - name: Authentication transform constant
+            href: resources/intune-deviceconfig-authenticationtransformconstant.md
           - name: Auto restart notification dismissal method
             href: resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md
           - name: Automatic update mode
@@ -3489,14 +3581,20 @@ items:
             href: resources/intune-deviceconfig-certificatevalidityperiodscale.md
           - name: Change uefi settings permission
             href: resources/intune-deviceconfig-changeuefisettingspermission.md
+          - name: Code
+            href: resources/intune-deviceconfig-code.md
           - name: Configuration usage
             href: resources/intune-deviceconfig-configurationusage.md
           - name: Credential single sign on extension
             href: resources/intune-deviceconfig-credentialsinglesignonextension.md
+          - name: Cryptography suite
+            href: resources/intune-deviceconfig-cryptographysuite.md
           - name: Custom subject alternative name
             href: resources/intune-deviceconfig-customsubjectalternativename.md
           - name: Custom update time window
             href: resources/intune-deviceconfig-customupdatetimewindow.md
+          - name: Data type
+            href: resources/intune-deviceconfig-datatype.md
           - name: Day of week
             href: resources/intune-deviceconfig-dayofweek.md
           - name: Default device compliance policy
@@ -3621,6 +3719,8 @@ items:
               href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-get.md
             - name: Update
               href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-update.md
+          - name: Device compliance policy script
+            href: resources/intune-deviceconfig-devicecompliancepolicyscript.md
           - name: Device compliance policy setting state
             href: resources/intune-deviceconfig-devicecompliancepolicysettingstate.md
           - name: Device compliance policy setting state summary
@@ -3649,6 +3749,14 @@ items:
               href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-delete.md
             - name: Update
               href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-update.md
+          - name: Device compliance script error
+            href: resources/intune-deviceconfig-devicecompliancescripterror.md
+          - name: Device compliance script rule
+            href: resources/intune-deviceconfig-devicecompliancescriptrule.md
+          - name: Device compliance script rule error
+            href: resources/intune-deviceconfig-devicecompliancescriptruleerror.md
+          - name: Device compliance script validation result
+            href: resources/intune-deviceconfig-devicecompliancescriptvalidationresult.md
           - name: Device compliance setting state
             href: resources/intune-deviceconfig-devicecompliancesettingstate.md
             items:
@@ -3789,6 +3897,8 @@ items:
             href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md
           - name: Device management applicability rule type
             href: resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md
+          - name: Device management certification authority
+            href: resources/intune-deviceconfig-devicemanagementcertificationauthority.md
           - name: Device management settings
             href: resources/intune-deviceconfig-devicemanagementsettings.md
           - name: Device management user rights local user or group
@@ -3801,6 +3911,8 @@ items:
             href: resources/intune-deviceconfig-devicetypes.md
           - name: Diagnostic data submission mode
             href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
+          - name: Diffie hellman group
+            href: resources/intune-deviceconfig-diffiehellmangroup.md
           - name: DMA guard device enumeration policy type
             href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
           - name: Domain name source
@@ -4641,6 +4753,14 @@ items:
               href: api/intune-deviceconfig-macoscompliancepolicy-delete.md
             - name: Update
               href: api/intune-deviceconfig-macoscompliancepolicy-update.md
+          - name: macOS content caching client policy
+            href: resources/intune-deviceconfig-macoscontentcachingclientpolicy.md
+          - name: macOS content caching parent selection policy
+            href: resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md
+          - name: macOS content caching peer policy
+            href: resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md
+          - name: macOS content caching type
+            href: resources/intune-deviceconfig-macoscontentcachingtype.md
           - name: macOS credential single sign on extension
             href: resources/intune-deviceconfig-macoscredentialsinglesignonextension.md
           - name: macOS custom app configuration
@@ -4914,6 +5034,10 @@ items:
             href: resources/intune-deviceconfig-mediacontentratingunitedstates.md
           - name: Metered connection limit type
             href: resources/intune-deviceconfig-meteredconnectionlimittype.md
+          - name: Microsoft launcher dock presence
+            href: resources/intune-deviceconfig-microsoftlauncherdockpresence.md
+          - name: Microsoft launcher search bar placement
+            href: resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md
           - name: Miracast channel
             href: resources/intune-deviceconfig-miracastchannel.md
           - name: NDES connector
@@ -4970,6 +5094,10 @@ items:
               href: api/intune-raimportcerts-onpremencryptedpayload-update.md
           - name: Operating system version range
             href: resources/intune-deviceconfig-operatingsystemversionrange.md
+          - name: Operator
+            href: resources/intune-deviceconfig-operator.md
+          - name: Perfect forward secrecy group
+            href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
           - name: Pfx recryption request
             href: resources/intune-raimportcerts-pfxrecryptionrequest.md
             items:
@@ -5956,6 +6084,25 @@ items:
               href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
             - name: Update
               href: api/intune-fencing-circulargeofencemanagementcondition-update.md
+          - name: Comanaged devices summary
+            href: resources/intune-devices-comanageddevicessummary.md
+          - name: Comanagement eligible device
+            href: resources/intune-devices-comanagementeligibledevice.md
+            items:
+            - name: List
+              href: api/intune-devices-comanagementeligibledevice-list.md
+            - name: Get
+              href: api/intune-devices-comanagementeligibledevice-get.md
+            - name: Create
+              href: api/intune-devices-comanagementeligibledevice-create.md
+            - name: Delete
+              href: api/intune-devices-comanagementeligibledevice-delete.md
+            - name: Update
+              href: api/intune-devices-comanagementeligibledevice-update.md
+          - name: Comanagement eligible devices summary
+            href: resources/intune-devices-comanagementeligibledevicessummary.md
+          - name: Comanagement eligible type
+            href: resources/intune-devices-comanagementeligibletype.md
           - name: Compliance state
             href: resources/intune-devices-compliancestate.md
           - name: Configuration manager action
@@ -6008,6 +6155,41 @@ items:
               href: api/intune-devices-detectedapp-update.md
           - name: Device action result
             href: resources/intune-devices-deviceactionresult.md
+          - name: Device compliance script
+            href: resources/intune-devices-devicecompliancescript.md
+            items:
+            - name: List
+              href: api/intune-devices-devicecompliancescript-list.md
+            - name: Get
+              href: api/intune-devices-devicecompliancescript-get.md
+            - name: Create
+              href: api/intune-devices-devicecompliancescript-create.md
+            - name: Delete
+              href: api/intune-devices-devicecompliancescript-delete.md
+            - name: Update
+              href: api/intune-devices-devicecompliancescript-update.md
+            - name: assign action
+              href: api/intune-devices-devicecompliancescript-assign.md
+          - name: Device compliance script device state
+            href: resources/intune-devices-devicecompliancescriptdevicestate.md
+            items:
+            - name: List
+              href: api/intune-devices-devicecompliancescriptdevicestate-list.md
+            - name: Get
+              href: api/intune-devices-devicecompliancescriptdevicestate-get.md
+            - name: Create
+              href: api/intune-devices-devicecompliancescriptdevicestate-create.md
+            - name: Delete
+              href: api/intune-devices-devicecompliancescriptdevicestate-delete.md
+            - name: Update
+              href: api/intune-devices-devicecompliancescriptdevicestate-update.md
+          - name: Device compliance script run summary
+            href: resources/intune-devices-devicecompliancescriptrunsummary.md
+            items:
+            - name: Get
+              href: api/intune-devices-devicecompliancescriptrunsummary-get.md
+            - name: Update
+              href: api/intune-devices-devicecompliancescriptrunsummary-update.md
           - name: Device enrollment failure reason
             href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
           - name: Device exchange access state summary
@@ -7084,6 +7266,8 @@ items:
               href: api/intune-devices-userexperienceanalyticsscorehistory-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsscorehistory-update.md
+          - name: User experience analytics settings
+            href: resources/intune-devices-userexperienceanalyticssettings.md
           - name: User experience analytics summarized by
             href: resources/intune-devices-userexperienceanalyticssummarizedby.md
           - name: Variable management condition expression
@@ -7300,6 +7484,8 @@ items:
               href: api/intune-mam-managedappoperation-delete.md
             - name: Update
               href: api/intune-mam-managedappoperation-update.md
+          - name: Managed app phone number redirect level
+            href: resources/intune-mam-managedappphonenumberredirectlevel.md
           - name: Managed app PIN character set
             href: resources/intune-mam-managedapppincharacterset.md
           - name: Managed app policy
@@ -7877,6 +8063,8 @@ items:
             href: resources/intune-shared-companyportalblockedaction.md
           - name: Compliance status
             href: resources/intune-shared-compliancestatus.md
+          - name: Device and app management assignment filter type
+            href: resources/intune-shared-deviceandappmanagementassignmentfiltertype.md
           - name: Device and app management assignment source
             href: resources/intune-shared-deviceandappmanagementassignmentsource.md
           - name: Device and app management assignment target
@@ -8450,6 +8638,34 @@ items:
         items:
         - name: Get sync errors
           href: api/educationsynchronizationerrors-get.md
+    - name: Extensions
+      items:
+      - name: Open extensions
+        href: resources/opentypeextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+        - name: Update open extension
+          href: api/opentypeextension-update.md
+        - name: Delete open extension
+          href: api/opentypeextension-delete.md
+      - name: Schema extensions
+        href: resources/schemaextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: List schema extensions
+          href: api/schemaextension-list.md
+        - name: Create schema extension
+          href: api/schemaextension-post-schemaextensions.md
+        - name: Get schema extension
+          href: api/schemaextension-get.md
+        - name: Update schema extension
+          href: api/schemaextension-update.md
+        - name: Delete schema extension
+          href: api/schemaextension-delete.md
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
@@ -8879,15 +9095,6 @@ items:
           href: api/administrativeunit-get-scopedrolemembers.md
         - name: Remove a scoped-role administrator
           href: api/administrativeunit-delete-scopedrolemembers.md
-      - name: App role assignment
-        href: resources/approleassignment.md
-        items:
-        - name: Get appRoleAssignment
-          href: api/approleassignment-get.md
-        - name: Update approleassignment
-          href: api/approleassignment-update.md
-        - name: Delete appRoleAssignment
-          href: api/approleassignment-delete.md
       - name: Application
         href: resources/application.md
         items:
@@ -8911,22 +9118,42 @@ items:
           href: api/directory-deleteditems-delete.md
         - name: Restore deleted application
           href: api/directory-deleteditems-restore.md
-        - name: Add password
-          href: api/application-addpassword.md
-        - name: Remove password
-          href: api/application-removepassword.md
-        - name: Create extension
-          href: api/application-post-extensionproperty.md
-        - name: List extensions
-          href: api/application-list-extensionproperty.md
-        - name: Delete extension
-          href: api/application-delete-extensionproperty.md
-        - name: List owners
-          href: api/application-list-owners.md
-        - name: Add owner
-          href: api/application-post-owners.md
-        - name: Remove owner
-          href: api/application-delete-owners.md
+        - name: Certificates & secrets
+          items:
+          - name: Add password
+            href: api/application-addpassword.md
+          - name: Remove password
+            href: api/application-removepassword.md
+          - name: Add key
+            href: api/application-addkey.md
+          - name: Remove key
+            href: api/application-removekey.md
+        - name: Extensions
+          items:
+          - name: List extensions
+            href: api/application-list-extensionproperty.md
+          - name: Create extension
+            href: api/application-post-extensionproperty.md
+          - name: Delete extension
+            href: api/application-delete-extensionproperty.md
+        - name: Owners
+          items:
+          - name: List owners
+            href: api/application-list-owners.md
+          - name: Add owner
+            href: api/application-post-owners.md
+          - name: Remove owner
+            href: api/application-delete-owners.md
+        - name: Policies
+          items:
+          - name: List assigned policies
+            href: api/policy-list-assigned.md
+          - name: Assign tokenLifetimePolicy
+            href: api/application-post-tokenlifetimepolicies.md
+          - name: List tokenLifetimePolicies
+            href: api/application-list-tokenlifetimepolicies.md
+          - name: Remove tokenLifetimePolicy
+            href: api/application-delete-tokenlifetimepolicies.md
         - name: Application template
           href: resources/applicationtemplate.md
           items:
@@ -8958,6 +9185,15 @@ items:
           items:
           - name: List provisioning
             href: api/provisioningobjectsummary-list.md
+      - name: Authentication flows policy
+        items:
+        - name: Authentication flows policy
+          href: resources/authenticationflowspolicy.md
+          items:
+          - name: Get
+            href: api/authenticationflowspolicy-get.md
+          - name: Update
+            href: api/authenticationflowspolicy-update.md
       - name: Authentication methods
         items:
         - name: Overview
@@ -9076,6 +9312,21 @@ items:
         items:
         - name: Get data policy operation
           href: api/datapolicyoperation-get.md
+      - name: Delegated permission grants
+        href: resources/oauth2permissiongrant.md
+        items:
+        - name: List delegated permission grants
+          href: api/oauth2permissiongrant-list.md
+        - name: Get delegated permission grants
+          href: api/oauth2permissiongrant-get.md
+        - name: Create delegated permission grant
+          href: api/oauth2permissiongrant-post.md
+        - name: Update delegated permission grant
+          href: api/oauth2permissiongrant-update.md
+        - name: Delete delegated permission grant
+          href: api/oauth2permissiongrant-delete.md
+        - name: Get delta
+          href: api/oauth2permissiongrant-delta.md
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -9352,22 +9603,7 @@ items:
         - name: Delete identity provider
           href: api/identityprovider-delete.md
       - name: Information protection
-        items:
-        - name: Labels
-          href: resources/informationprotectionlabel.md
-          items:
-          - name: List labels
-            href: api/informationprotectionpolicy-list-labels.md
-          - name: Get label
-            href: api/informationprotectionlabel-get.md
-          - name: Evaluate application
-            href: api/informationprotectionlabel-evaluateapplication.md
-          - name: Evaluate classification result
-            href: api/informationprotectionlabel-evaluateclassificationresults.md
-          - name: Evaluate removal
-            href: api/informationprotectionlabel-evaluateremoval.md
-          - name: Extract label
-            href: api/informationprotectionlabel-extractlabel.md
+        items:    
         - name: Threat assessment
           items:
           - name: Overview
@@ -9393,19 +9629,6 @@ items:
         items:
         - name: Create invitation
           href: api/invitation-post.md
-      - name: Oauth2 permission grant
-        href: resources/oauth2permissiongrant.md
-        items:
-        - name: List
-          href: api/oauth2permissiongrant-list.md
-        - name: Get
-          href: api/oauth2permissiongrant-get.md
-        - name: Update
-          href: api/oauth2permissiongrant-update.md
-        - name: Delete
-          href: api/oauth2permissiongrant-delete.md
-        - name: Get delta
-          href: api/oauth2permissiongrant-delta.md
       - name: On-premises publishing
         href: resources/onpremisespublishingprofile-root.md
         items:
@@ -9457,6 +9680,36 @@ items:
                 href: api/publishedresource-post-agentgroups.md
               - name: Remove from agent group
                 href: api/publishedresource-delete-agentgroups.md
+          - name: connector
+            href: resources/connector.md
+            items:
+              - name: List
+                href: api/connector-list.md
+              - name: Get
+                href: api/connector-get.md
+              - name: List memberOf
+                href: api/connector-list-memberof.md 
+              - name: Add connector to connectorGroup
+                href: api/connector-post-memberof.md
+          - name: connector group
+            href: resources/connectorgroup.md
+            items:
+              - name: List                 
+                href: api/connectorgroup-list.md
+              - name: Get
+                href: api/connectorgroup-get.md 
+              - name: Update
+                href: api/connectorgroup-update.md
+              - name: Delete
+                href: api/connectorgroup-delete.md
+              - name: List applications
+                href: api/connectorgroup-list-applications.md
+              - name: List members
+                href: api/connectorgroup-list-members.md
+              - name: Add connector
+                href: api/connectorgroup-post-members.md
+              - name: Add application
+                href: api/connectorgroup-post-applications.md
       - name: Organization
         href: resources/organization.md
         items:
@@ -9513,6 +9766,13 @@ items:
             href: api/activitybasedtimeoutpolicy-update.md
           - name: Delete
             href: api/activitybasedtimeoutpolicy-delete.md
+        - name: Authorization policy
+          href: resources/authorizationpolicy.md
+          items:
+          - name: Get
+            href: api/authorizationpolicy-get.md
+          - name: Update
+            href: api/authorizationpolicy-update.md
         - name: Claims mapping policy
           href: resources/claimsmappingpolicy.md
           items:
@@ -9745,26 +10005,103 @@ items:
         items:
         - name: List service principal
           href: api/serviceprincipal-list.md
+        - name: Create service principal
+          href: api/serviceprincipal-post-serviceprincipals.md
         - name: Get service principal
           href: api/serviceprincipal-get.md
         - name: Update service principal
           href: api/serviceprincipal-update.md
         - name: Delete service principal
           href: api/serviceprincipal-delete.md
-        - name: Add password
-          href: api/serviceprincipal-addpassword.md
-        - name: Remove password
-          href: api/serviceprincipal-removepassword.md
-        - name: Check member objects
-          href: api/serviceprincipal-checkmemberobjects.md
-        - name: Create password single sign on credentials
-          href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
-        - name: Get password single sign on credentials
-          href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
-        - name: Update password single sign on credentials
-          href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
-        - name: Delete password single sign on credentials
-          href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
+        - name: List createdObjects
+          href: api/serviceprincipal-list-createdobjects.md
+        - name: List ownedObjects
+          href: api/serviceprincipal-list-ownedobjects.md
+        - name: delta
+          href: api/serviceprincipal-delta.md
+        - name: App role assignments
+          href: resources/approleassignment.md
+          items:
+          - name: List app role assignments
+            href: api/serviceprincipal-list-approleassignments.md
+          - name: Add app role assignment
+            href: api/serviceprincipal-post-approleassignments.md
+          - name: Remove app role assignment
+            href: api/serviceprincipal-delete-approleassignments.md
+          - name: List app role assigned to
+            href: api/serviceprincipal-list-approleassignedto.md
+          - name: Add app role assigned to
+            href: api/serviceprincipal-post-approleassignedto.md
+          - name: Remove app role assigned to
+            href: api/serviceprincipal-delete-approleassignedto.md
+        - name: Certificates and secrets
+          items:
+          - name: Add password
+            href: api/serviceprincipal-addpassword.md
+          - name: Remove password
+            href: api/serviceprincipal-removepassword.md
+          - name: Add key
+            href: api/serviceprincipal-addkey.md
+          - name: Remove key
+            href: api/serviceprincipal-removekey.md
+        - name: Delegated permission grants
+          items:
+          - name: List delegated permission grants
+            href: api/serviceprincipal-list-oauth2permissiongrants.md
+        - name: Membership
+          items:
+          - name: List memberOf
+            href: api/serviceprincipal-list-memberof.md
+          - name: List transitive memberOf
+            href: api/serviceprincipal-list-transitivememberof.md
+          - name: checkMemberGroups
+            href: api/serviceprincipal-checkmembergroups.md
+          - name: checkMemberObjects
+            href: api/serviceprincipal-checkmemberobjects.md
+          - name: getMemberGroups
+            href: api/serviceprincipal-getmembergroups.md
+          - name: getMemberObjects
+            href: api/serviceprincipal-getmemberobjects.md
+        - name: Owners
+          items:
+          - name: List owners
+            href: api/serviceprincipal-list-owners.md
+          - name: Add owner
+            href: api/serviceprincipal-post-owners.md
+          - name: Remove owner
+            href: api/serviceprincipal-delete-owners.md
+        - name: Policies
+          items:
+          - name: List assigned policies
+            href: api/policy-list-assigned.md
+          - name: Assign claimsMappingPolicy
+            href: api/serviceprincipal-post-claimsmappingpolicies.md
+          - name: List claimsMappingPolicies]
+            href: api/serviceprincipal-list-claimsmappingpolicies.md
+          - name: Remove claimsMappingPolicy
+            href: api/serviceprincipal-delete-claimsmappingpolicies.md
+          - name: Assign homeRealmDiscoveryPolicy
+            href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+          - name: List homeRealmDiscoveryPolicies
+            href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+          - name: Remove homeRealmDiscoveryPolicy
+            href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Assign tokenLifetimePolicy
+            href: api/application-post-tokenlifetimepolicies.md
+          - name: List tokenLifetimePolicies
+            href: api/application-list-tokenlifetimepolicies.md
+          - name: Remove tokenLifetimePolicy
+            href: api/application-delete-tokenlifetimepolicies.md
+        - name: Single sign on
+          items:
+          - name: Create password single sign on credentials
+            href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+          - name: Get password single sign on credentials
+            href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+          - name: Update password single sign on credentials
+            href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+          - name: Delete password single sign on credentials
+            href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
       - name: Subscribed sku
         href: resources/subscribedsku.md
         items:
@@ -10145,7 +10482,7 @@ items:
         items:
         - name: Get resource
           href: api/resource-get.md
-    - name: Notifications
+    - name: Notifications (preview)
       items:
       - name: Overview
         href: resources/notifications-api-overview.md
@@ -10783,6 +11120,23 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Information protection
+        items:
+        - name: Labels
+          href: resources/informationprotectionlabel.md
+          items:
+          - name: List labels
+            href: api/informationprotectionpolicy-list-labels.md
+          - name: Get label
+            href: api/informationprotectionlabel-get.md
+          - name: Evaluate application
+            href: api/informationprotectionlabel-evaluateapplication.md
+          - name: Evaluate classification result
+            href: api/informationprotectionlabel-evaluateclassificationresults.md
+          - name: Evaluate removal
+            href: api/informationprotectionlabel-evaluateremoval.md
+          - name: Extract label
+            href: api/informationprotectionlabel-extractlabel.md
       - name: Secure scores
         href: resources/securescores.md
         items:
@@ -11009,6 +11363,8 @@ items:
           href: api/user-list-joinedteams.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/beta
+        - name: Get primary channel
+          href: api/team-get-primarychannel.md
         - name: Get team photo
           href: api/team-get-photo.md
         - name: Update team photo
@@ -11069,6 +11425,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Get files folder
+          href: api/channel-get-filesfolder.md
         - name: List channel messages
           href: api/channel-list-messages.md
         - name: Get channel messages delta
@@ -11125,9 +11483,10 @@ items:
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
-      - name: App Catalog
-        href: resources/teamsapp.md
+      - name: App catalog
         items:
+        - name: App in catalog
+          href: resources/teamsapp.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
@@ -11596,50 +11955,3 @@ items:
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
-    - name: Tools
-      expanded: true
-      items:
-      - name: Open extensions
-        href: resources/opentypeextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-        items:
-        - name: Create open extension
-          href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
-          href: api/opentypeextension-get.md
-        - name: Update open extension
-          href: api/opentypeextension-update.md
-        - name: Delete open extension
-          href: api/opentypeextension-delete.md
-      - name: Schema extensions
-        href: resources/schemaextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-        items:
-        - name: List schema extensions
-          href: api/schemaextension-list.md
-        - name: Create schema extension
-          href: api/schemaextension-post-schemaextensions.md
-        - name: Get schema extension
-          href: api/schemaextension-get.md
-        - name: Update schema extension
-          href: api/schemaextension-update.md
-        - name: Delete schema extension
-          href: api/schemaextension-delete.md
-      - name: Change notifications
-        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
-        items:
-        - name: Overview
-          href: resources/webhooks.md
-        - name: Subscription
-          href: resources/subscription.md
-          items:
-          - name: List subscription
-            href: api/subscription-list.md
-          - name: Get subscription
-            href: api/subscription-get.md
-          - name: Create subscription
-            href: api/subscription-post-subscriptions.md
-          - name: Update subscription
-            href: api/subscription-update.md
-          - name: Delete subscription
-            href: api/subscription-delete.md

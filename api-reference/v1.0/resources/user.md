@@ -29,10 +29,14 @@ This resource supports:
 | [Update user](../api/user-update.md) | [user](user.md) | Update user object. |
 | [Delete user](../api/user-delete.md) | None | Delete user object. |
 | [Get delta](../api/user-delta.md) | [user](user.md) collection | Get incremental changes for users. |
-| **Calendar** |||
-| [Create calendar](../api/user-post-calendars.md) | [calendar](calendar.md) | Create a new Calendar by posting to the calendars collection. |
-| [Create calendarGroup](../api/user-post-calendargroups.md) | [calendarGroup](calendargroup.md) | Create a new CalendarGroup by posting to the calendarGroups collection. |
-| [Create event](../api/user-post-events.md) | [event](event.md)| Create a new Event by posting to the events collection. |
+| **App role assignments** | | |
+|[List appRoleAssignments](../api/user-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get the apps and app roles which this user has been assigned.|
+|[Add appRoleAssignment](../api/user-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Assign an app role to this user.|]
+|[Remove appRoleAssignment](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from this user.|
+| **Calendar** ||| 
+| [Create calendar](../api/user-post-calendars.md) | [Calendar](calendar.md) | Create a new Calendar by posting to the calendars collection.|
+| [Create calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Create a new CalendarGroup by posting to the calendarGroups collection. |
+| [Create event](../api/user-post-events.md) | [event](event.md) | Create a new event by posting to the events collection. |
 | [findMeetingTimes](../api/user-findmeetingtimes.md) | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) | Find time and locations to meet based on attendee availability, location, or time constraints. |
 | [getSchedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period. |
 | [List calendars](../api/user-list-calendars.md) | [calendar](calendar.md) collection | Get a Calendar object collection. |
@@ -128,6 +132,8 @@ This resource supports:
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |employeeId|String|The employee identifier assigned to the user by the organization. Supports $filter.|
+|externalUserState|String|For an external user invited to the tenant using the [invitation API](../api/invitation-post.md), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users. <br><br>Returned only on `$select`. Supports `$filter` with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`.|
+|externalUserStateChangeDateTime|DateTimeOffset|Shows the timestamp for the latest change to the **externalUserState** property. <br><br>Returned only on `$select`.|
 |faxNumber|String|The fax number of the user.|
 |givenName|String|The given name (first name) of the user. Supports $filter.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -207,7 +213,7 @@ The age group and minor consent properties are optional properties used by Azure
 | Value    | #  |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `ageGroup` has been set for the user.|
-|minor|1|The user is consider a minor.|
+|minor|1|The user is considered a minor.|
 |notAdult|2|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user’s age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
 |adult|3|The user should be a treated as an adult.|
 

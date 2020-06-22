@@ -33,9 +33,9 @@ GET /applications/{id}/policies
 > Note: The "id" in the request is the "id" property of the application or service principal, not the "appid" property.
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name           | Description                |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 Do not supply a request body for this method.

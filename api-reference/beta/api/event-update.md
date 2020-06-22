@@ -58,7 +58,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:------------|
 | attendees|Attendee|The collection of attendees for the event.|
 | body|ItemBody|The body of the message associated with the event.|
-| categories|String|The categories associated with the event.|
+| categories|String collection|The categories associated with the event.|
 | end|DateTimeTimeZone|The date, time, and time zone that the event ends. |
 | importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
@@ -114,7 +114,8 @@ Content-length: 285
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
-  "isReminderOn": true
+  "isReminderOn": true,
+  "categories": ["Red category"]
 }
 ```
 # [C#](#tab/csharp)

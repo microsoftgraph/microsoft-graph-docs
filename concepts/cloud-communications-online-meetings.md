@@ -23,7 +23,7 @@ When all the participants leave the group call, the group call will end. Partici
 ## Join an online meeting
 After an online meeting is created, users can join in two ways:
 
-1. Through the browser, using the **joinURL** that was returned as part of the [meeting coordinates](/graph/api/resources/onlinemeeting).
+1. Through the browser, using the **joinWebURL** that was returned as part of the [meeting coordinates](/graph/api/resources/onlinemeeting).
 
 2. Through the [create call API](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media), which requires that you provide the [meeting coordinates](/graph/api/resources/onlinemeeting), ([organizermeetinginfo](/graph/api/resources/organizermeetinginfo), and [chatInfo](/graph/api/resources/chatinfo)).
 

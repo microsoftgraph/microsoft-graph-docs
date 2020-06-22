@@ -20,9 +20,12 @@ var externalItem = new ExternalItem
 	},
 	Properties = new Properties
 	{
-		Title = "Error in the payment gateway",
-		Priority = 1,
-		Assignee = "john@contoso.com"
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"title", "Error in the payment gateway"},
+			{"priority", "1"},
+			{"assignee", "john@contoso.com"}
+		}
 	},
 	Content = new ExternalItemContent
 	{

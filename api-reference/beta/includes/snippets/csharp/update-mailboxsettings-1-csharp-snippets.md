@@ -8,10 +8,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailboxSettings = new MailboxSettings
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.context","https://graph.microsoft.com/beta/$metadata#Me/mailboxSettings"}
-	},
 	AutomaticRepliesSetting = new AutomaticRepliesSetting
 	{
 		Status = AutomaticRepliesStatus.Scheduled,
@@ -25,6 +21,10 @@ var mailboxSettings = new MailboxSettings
 			DateTime = "2016-03-28T18:00:00",
 			TimeZone = "UTC"
 		}
+	},
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.context", "https://graph.microsoft.com/beta/$metadata#Me/mailboxSettings"}
 	}
 };
 

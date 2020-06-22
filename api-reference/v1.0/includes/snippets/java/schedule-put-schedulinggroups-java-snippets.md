@@ -19,6 +19,6 @@ schedulingGroup.userIds = userIdsList;
 
 graphClient.teams("{teamId}").schedule().schedulingGroups("{schedulingGroupId}")
 	.buildRequest( requestOptions )
-	.put(schedulingGroup);
+	.patch(schedulingGroup);
 
 ```

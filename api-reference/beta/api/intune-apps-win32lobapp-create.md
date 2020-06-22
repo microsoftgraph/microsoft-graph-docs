@@ -79,6 +79,7 @@ The following table shows the properties that are required when you create the w
 |minimumCpuSpeedInMHz|Int32|The value for the minimum CPU speed which is required to install this app.|
 |detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md) collection|The detection rules to detect Win32 Line of Business (LoB) app.|
 |requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md) collection|The requirement rules to detect Win32 Line of Business (LoB) app.|
+|rules|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md) collection|The detection and requirement rules for this app.|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|The install experience for this app.|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) collection|The return codes for post installation behavior.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|The MSI details if this Win32 app is an MSI app.|
@@ -97,7 +98,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2865
+Content-length: 3224
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -166,6 +167,18 @@ Content-length: 2865
       "detectionType": "exists"
     }
   ],
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "requirement",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "operationType": "exists",
+      "operator": "equal",
+      "comparisonValue": "Comparison Value value"
+    }
+  ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "user",
@@ -198,7 +211,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3037
+Content-Length: 3396
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -268,6 +281,18 @@ Content-Length: 3037
       "keyPath": "Key Path value",
       "valueName": "Value Name value",
       "detectionType": "exists"
+    }
+  ],
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "requirement",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "operationType": "exists",
+      "operator": "equal",
+      "comparisonValue": "Comparison Value value"
     }
   ],
   "installExperience": {

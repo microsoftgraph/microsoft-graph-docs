@@ -69,6 +69,9 @@ The rostering APIs support the following scenarios:
 
 <!-- Should you list delete scenarios here as well? -->
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 ## Next steps
 Use the Microsoft Graph education APIs to build education solutions that access school rosters. To learn more:
 
