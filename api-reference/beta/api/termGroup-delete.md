@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 06/18/2020
 title: Delete a termGroup
+doc_type: "apiPageType"
+description: "Delete a termGroup in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # Delete a microsoft.graph.term.group
 
@@ -44,3 +48,15 @@ HTTP/1.1 204 No Content
 [microsoft.graph.termStore.group]: ../resources/termGroup.md
 [microsoft.graph.termStore.store]: ../resources/termStore.md
 [microsoft.graph.termStore.set]: ../resources/termSet.md
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Delete a termGroup entity in termStore",
+  "keywords": "term,termStore",
+  "section": "documentation",
+  "tocPath": "termStore/Delete termGroup",
+  "suppressions": [
+  ]
+}
+-->
