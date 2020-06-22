@@ -10,6 +10,8 @@ ms.prod: "sharepoint-taxonomy"
 ---
 # Get children of microsoft.graph.termStore.term
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Return all children of a [microsoft.graph.termStore.term].
 
 ## Permissions
