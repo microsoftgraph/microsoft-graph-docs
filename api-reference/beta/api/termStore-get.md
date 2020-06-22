@@ -3,6 +3,10 @@ author: Mohit Pathak
 ms.author: Mohit Pathak
 ms.date: 05/17/2019
 title: Get a termStore
+doc_type: "apiPageType"
+description: "Retrieves the store in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # Get a microsoft.graph.termStore.store
 
@@ -51,3 +55,15 @@ HTTP/1.1 200 OK
 
 [microsoft.graph.termStore.store]: ../resources/termStore.md
 [microsoft.graph.termStore.group]: ../resources/termGroup.md
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get termStore entity in termStore",
+  "keywords": "term,termStore",
+  "section": "documentation",
+  "tocPath": "termStore/Get termStore",
+  "suppressions": [
+  ]
+}
+-->
