@@ -3,6 +3,8 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: Term
+doc_type: "resourcePageType"
+ms.prod: "sharepoint-taxonomy"
 ---
 # Term resource type
 
