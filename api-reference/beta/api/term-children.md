@@ -10,7 +10,7 @@ ms.prod: "sharepoint-taxonomy"
 ---
 # Get children of microsoft.graph.termStore.term
 
-Return all children of a [microsoft.graph.termStore.term][].
+Return all children of a [microsoft.graph.termStore.term].
 
 ## Permissions
 
@@ -87,7 +87,7 @@ Content-type: application/json
   "description": "Get children of a term or termSet in termStore",
   "keywords": "term,termStore",
   "section": "documentation",
-  "tocPath": "termStore/Get term children",
+  "tocPath": "termStore/Get termchildren",
   "suppressions": [
   ]
 }
