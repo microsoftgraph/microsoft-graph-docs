@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: TermStore localized name facet
+doc_type: "resourcePageType"
+description: "Facet for localized names in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # TermStoreLocalizedName resource type
 
