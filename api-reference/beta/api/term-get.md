@@ -6,6 +6,7 @@ title: Get a Taxonomy term in termStore
 doc_type: "apiPageType"
 description: "Retrieves a given term in the termStore"
 localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # Get microsoft.graph.termStore.term
 
