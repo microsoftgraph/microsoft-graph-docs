@@ -3,6 +3,11 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 06/18/2020
 title: Get a termSet
+doc_type: "apiPageType"
+description: "Get a termSet in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
+
 ---
 # Get a microsoft.graph.termStore.set
 
@@ -67,4 +72,15 @@ All default properties will be returned from the actual call.
 [microsoft.graph.termStore.set]: ../resources/termSet.md
 [microsoft.graph.termStore.store]: ../resources/termStore.md
 
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get termSet entity in termStore",
+  "keywords": "term,termStore",
+  "section": "documentation",
+  "tocPath": "termStore/Get termSet",
+  "suppressions": [
+  ]
+}
+-->
 
