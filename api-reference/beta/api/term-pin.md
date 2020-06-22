@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: Pin a term under another term
+doc_type: "apiPageType"
+description: "Pin a given term in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # Pin a microsoft.graph.termStore.term  under another microsoft.graph.termStore.term
 
