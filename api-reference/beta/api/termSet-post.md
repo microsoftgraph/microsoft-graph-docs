@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: Create a Taxonomy termSet in termStore
+doc_type: "apiPageType"
+description: "Create a termSet in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # Create a new microsoft.graph.termStore.set
 
@@ -67,3 +71,16 @@ All default properties will be returned from the actual call.
 [microsoft.graph.termStore.set]: ../resources/termSet.md
 [microsoft.graph.termStore.group]: ../resources/termGroup.md
 [microsoft.graph.termStore.term]: ../resources/term.md
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Create a termSet entity in termStore",
+  "keywords": "term,termStore",
+  "section": "documentation",
+  "tocPath": "termStore/Create termSet",
+  "suppressions": [
+  ]
+}
+-->
+
