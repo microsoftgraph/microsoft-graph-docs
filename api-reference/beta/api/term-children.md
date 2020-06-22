@@ -2,7 +2,7 @@
 author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
-title: Get children of a term
+title: Get children of a term or termSet
 doc_type: "apiPageType"
 description: "Get children of a given term in the termStore"
 localization_priority: Normal
@@ -84,7 +84,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get term entity in termStore",
+  "description": "Get children of a term or termSet in termStore",
   "keywords": "term,termStore",
   "section": "documentation",
   "tocPath": "termStore/Get term children",
