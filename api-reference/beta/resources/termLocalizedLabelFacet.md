@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: Term Label
+doc_type: "resourcePageType"
+description: "Describes the facet for labels of terms in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # LocalizedLabel resource type
 
