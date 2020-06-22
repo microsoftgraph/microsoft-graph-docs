@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/20200
 title: Create a Taxonomy term in termStore
+doc_type: "apiPageType"
+description: "Retrieves a given term in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # Create a new microsoft.graph.termStore.term
 
