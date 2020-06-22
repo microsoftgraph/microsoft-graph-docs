@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 05/17/2019
 title: Create a termGroup
+doc_type: "apiPageType"
+description: "Create a termGroup in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # Create a microsoft.graph.termStore.group
 
@@ -63,3 +67,15 @@ All default properties will be returned from the actual call.
 [microsoft.graph.termStore.term]: ../resources/term.md
 [microsoft.graph.termStore.group]: ../resources/termGroup.md
 [microsoft.graph.termStore.store]: ../resources/termStore.md
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Create a termGroup entity in termStore",
+  "keywords": "term,termStore",
+  "section": "documentation",
+  "tocPath": "termStore/Create termGroup",
+  "suppressions": [
+  ]
+}
+-->
