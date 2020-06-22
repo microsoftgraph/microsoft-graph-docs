@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: Get children of a term
+doc_type: "apiPageType"
+description: "Get children of a given term in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # Get children of microsoft.graph.termStore.term
 
@@ -76,3 +80,14 @@ Content-type: application/json
 
 [microsoft.graph.termStore.term]: ../resources/term.md
 [microsoft.graph.termStore.set]: ../resources/termSet.md
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get term entity in termStore",
+  "keywords": "term,termStore",
+  "section": "documentation",
+  "tocPath": "termStore/Get term children",
+  "suppressions": [
+  ]
+}
