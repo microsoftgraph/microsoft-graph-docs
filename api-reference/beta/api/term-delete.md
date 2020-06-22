@@ -3,6 +3,10 @@ author: mpathak123
 ms.author: mopathak
 ms.date: 18/06/2020
 title: Delete a Taxonomy term in termStore
+doc_type: "apiPageType"
+description: "Delete a given term in the termStore"
+localization_priority: Normal
+ms.prod: "sharepoint-taxonomy"
 ---
 # Delete microsoft.graph.termStore.term
 
@@ -10,7 +14,7 @@ Delete a [microsoft.graph.termStore.term][] within a termSet.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -48,3 +52,15 @@ HTTP/1.1 204 No Content
 
 
 [microsoft.graph.termStore.term]: ../resources/term.md
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Delete a term entity in termStore",
+  "keywords": "term,termStore",
+  "section": "documentation",
+  "tocPath": "termStore/Delete term",
+  "suppressions": [
+  ]
+}
+-->
