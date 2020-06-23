@@ -70,36 +70,38 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/me/profile/positions/{id}
 Content-type: application/json
 
- {
-  "categories": [],
-  "allowedAudiences": "organization",
+{
+  "categories": [
+    "consulting"
+  ],
   "detail": {
-      "description": null,
-      "endMonthYear": null,
-      "jobTitle": "Auditor",
-      "startMonthYear": "2001-01-01",
-      "summary": null,
-      "company": {
-          "displayName": "Contoso Ltd.",
-          "pronunciation": null,
-          "department": "Finance",
-          "officeLocation": "12/1110",
-          "webUrl": null,
-          "address": {
-              "type": "business",
-              "postOfficeBox": null,
-              "street": "30 Isabella St., Second Floor",
-              "city": "Pittsburgh",
-              "state": "PA",
-              "countryOrRegion": "US",
-              "postalCode": "15212"
-          }
-      }
-  },
-  "manager": null,
-  "colleagues": [],
-  "isCurrent": "True",
+    "company": {
+      "displayName": "Contoso Ltd.",
+      "pronunciation": "Con ToSo L. t. d.",
+      "department": "Finance",
+      "officeLocation": "12/2110",
+      "address": {
+        "type": "business",
+        "postOfficeBox": null,
+        "street": "30 Isabella St., Second Floor",
+        "city": "Anchorage",
+        "state": "AK",
+        "countryOrRegion": "US",
+        "postalCode": "83933"
+      },
+      "webUrl": "www.contoso.com"
+    },
+    "description": "Consulting role at Contoso",
+    "endMonthYear": "2020-05",
+    "jobTitle": "Consultant II",
+    "role": "Consulting",
+    "startMonthYear": "2019-05",
+    "summary": "One year engagement on Finance team at Contoso"
+  }
 }
+
+
+
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workposition-csharp-snippets.md)]
