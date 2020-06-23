@@ -51,11 +51,11 @@ In the request body, supply the values for relevant fields that should be update
 |type          |string       | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 |source                |String                           |Identifier of the source from where the data is originally fetched from.|
 |allowedAudiences      |string                           | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
-|createdBy             |[identitySet](identityset.md)    | When the entity was originally created.                                                                                                                                                        |
+|createdBy             |[identitySet](../resources/identityset.md)    | When the entity was originally created.                                                                                                                                                        |
 |createdDateTime       |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id                    |String                           | Read-only.                                                                                                                                                                                     |
-|inference             |[inferenceData](inferencedata.md)| Contains inference detail if the entity is inferred.                                                                                                                                           |
-|lastModifiedBy        |[identitySet](identityset.md)    | Identifier of the partner or user who last modified the entity.                                                                                                                                |
+|inference             |[inferenceData](../resources/inferencedata.md)| Contains inference detail if the entity is inferred.                                                                                                                                           |
+|lastModifiedBy        |[identitySet](../resources/identityset.md)    | Identifier of the partner or user who last modified the entity.                                                                                                                                |
 |lastModifiedDateTime  |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ## Response
