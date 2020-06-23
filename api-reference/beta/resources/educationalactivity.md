@@ -64,6 +64,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "allowedAudiences": "string",
+  "inference": {"@odata.type": "microsoft.graph.inferenceData"},
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "completionMonthYear": "2012-05-20",
   "endMonthYear": "2012-05-20",
   "institution": {

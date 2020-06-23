@@ -112,18 +112,18 @@ Content-type: application/json
   "completionMonthYear": "2012-05-20",
   "endMonthYear": "2012-05-20",
   "institution": {
-  "description": "Leading educational institute for consulting and IT training",
-  "displayName": "Microsoft University",
-  "location": {
-    "type": "Business",
-    "postOfficeBox": null,
-    "street": "1 Microsoft Way",
-    "city": "Redmond",
-    "state": "WA",
-    "countryOrRegion": "United States",
-    "postalCode": "98052"
-  },
-  "webUrl": "www.microsoftuniversity.com"
+    "description": "Leading educational institute for consulting and IT training",
+    "displayName": "Microsoft University",
+    "location": {
+      "type": "Business",
+      "postOfficeBox": null,
+      "street": "1 Microsoft Way",
+      "city": "Redmond",
+      "state": "WA",
+      "countryOrRegion": "United States",
+      "postalCode": "98052"
+    },
+    "webUrl": "www.microsoftuniversity.com"
   },
   "program": {
     "abbreviation": "MBA",
