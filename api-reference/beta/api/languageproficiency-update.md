@@ -115,32 +115,18 @@ Content-type: application/json
 
 {
     "allowedAudiences": "contacts",
-    "createdBy": {
-        "device": null,
-        "user": null,
-        "application": {
-            "displayName": "AAD",
-            "id": null
-        }
-    },
+    "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
     "createdDateTime": "2020-02-18T16:07:14Z",
     "displayName": "English (United States)",
     "id": "7a521b6f-3ab8-4b94-9099-7f8eb4447f8e",
     "inference": null,
     "lastModifiedDateTime": "2020-02-18T16:07:14Z",
-    "lastModifiedBy": {
-    "device": null,
-    "user": null,
-    "application": {
-        "displayName": "UPA",
-        "id": null
-    }
-  },
+    "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
     "reading": "advancedProfessional",
     "source": "LinkedIn",
     "spoken": "advancedProfessional",
     "tag": "en-US",
-    "written": "advancedProfessional",
+    "written": "advancedProfessional"
 }
 ```
 
