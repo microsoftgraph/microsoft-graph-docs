@@ -77,8 +77,7 @@ DELETE https://graph.microsoft.com/beta/me/profile
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
+t
 ### Response
 
 The following is an example of the response.

@@ -81,6 +81,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |deviceCategories|[deviceCategory](../resources/intune-shared-devicecategory.md) collection|The list of device categories with the tenant.|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection|The list of device enrollment configurations|
 |deviceManagementPartners|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) collection|The list of Device Management Partners configured by the tenant.|
+|complianceManagementPartners|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) collection|The list of Compliance Management Partners configured by the tenant.|
 |exchangeConnectors|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) collection|The list of Exchange Connectors configured by the tenant.|
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) collection|The list of Mobile threat Defense connectors configured by the tenant.|
 |**RBAC**|

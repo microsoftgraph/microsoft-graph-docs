@@ -12,22 +12,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphServicePrincipal *servicePrincipal = [[MSGraphServicePrincipal alloc] init];
-[servicePrincipal setAccountEnabled: true];
-NSMutableArray *addInsList = [[NSMutableArray alloc] init];
-MSGraphAddIn *addIns = [[MSGraphAddIn alloc] init];
-[addIns setId:@"id-value"];
-[addIns setType:@"type-value"];
-NSMutableArray *propertiesList = [[NSMutableArray alloc] init];
-MSGraphKeyValue *properties = [[MSGraphKeyValue alloc] init];
-[properties setKey:@"key-value"];
-[properties setValue:@"value-value"];
-[propertiesList addObject: properties];
-[addIns setProperties:propertiesList];
-[addInsList addObject: addIns];
-[servicePrincipal setAddIns:addInsList];
-[servicePrincipal setAppDisplayName:@"appDisplayName-value"];
-[servicePrincipal setAppId:@"appId-value"];
-[servicePrincipal setAppOwnerOrganizationId:@"appOwnerOrganizationId-value"];
 [servicePrincipal setAppRoleAssignmentRequired: true];
 
 NSError *error;

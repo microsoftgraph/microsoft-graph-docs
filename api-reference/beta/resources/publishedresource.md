@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents on-premises published resource. A tenant administrator could publish various types of on-premises resources - enterprise applications, domain controllers, servers, etc. [On-premises agents](onpremisesagent.md) installed by a tenant administrator can be configured to access/handle requests to a particular published resource.
+Represents on-premises published resource. A tenant administrator can publish various types of on-premises resources - enterprise applications, domain controllers, servers, etc. [On-premises agents](onpremisesagent.md) installed by a tenant administrator can be configured to access/handle requests to a particular published resource.
 
 ## Methods
 
@@ -33,7 +33,7 @@ Represents on-premises published resource. A tenant administrator could publish 
 |:-------------|:------------|:------------|
 |displayName|String| Display Name of the publishedResource.|
 |id|String| The object id of the publishedResource. Read-only.|
-|publishingType|string| Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|string| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 |resourceName|String|Name of the publishedResource.|
 
 ## Relationships

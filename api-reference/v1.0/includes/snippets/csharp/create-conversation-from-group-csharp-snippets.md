@@ -9,11 +9,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversation = new Conversation
 {
 	Topic = "New locations for this quarter",
-	Threads = new List<ConversationThread>()
+	Threads = (IConversationThreadsCollectionPage)new List<ConversationThread>()
 	{
 		new ConversationThread
 		{
-			Posts = new List<Post>()
+			Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
 			{
 				new Post
 				{

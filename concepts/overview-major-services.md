@@ -1,6 +1,6 @@
 ---
 title: "Major services and features in Microsoft Graph"
-description: "Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365, using REST APIs and client libraries. Additionally, it offers security and social intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. "
+description: "Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365, using REST APIs and client libraries. Additionally, it offers security and social intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. "
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.custom: scenarios:getting-started
@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Major services and features in Microsoft Graph
 
-Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365, using REST APIs and client libraries. Additionally, it offers security and intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. 
+Microsoft Graph enables you to integrate with the best of Microsoft 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365, using REST APIs and client libraries. Additionally, it offers security and intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. 
 
 ## Users and groups
 
@@ -16,12 +16,12 @@ At the core of Microsoft Graph are the concepts of the user and group.
 
 A _user_ in Microsoft Graph is one among the millions who use Microsoft 365 cloud services. It is the focal point whose identity is protected and access is well managed. The user's data is what drives businesses. Microsoft Graph services makes this data available to businesses in rich contexts, real-time updates, and deep insights, and, always only with the appropriate permissions.
 
-An Office 365 _group_ is the fundamental entity that lets users collaborate. It integrates with other services, enabling richer scenarios in task planning, teamwork, education, and more. 
+A Microsoft 365 _group_ is the fundamental entity that lets users collaborate. It integrates with other services, enabling richer scenarios in task planning, teamwork, education, and more. 
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Users | Azure AD and most productivity, collaboration, intelligence, and education services | The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](azuread-users-concept-overview.md)|
-|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | An Office 365 group provides the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Office 365 groups in Microsoft Graph](office365-groups-concept-overview.md) |
+|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | A Microsoft 365 group provides the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Microsoft 365 groups in Microsoft Graph](office365-groups-concept-overview.md) |
 
 ## Connecting users' data, Microsoft 365 services, and your apps
 
@@ -45,11 +45,11 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Calendar | Outlook  | Lets users set up appointments and meetings on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and contacts. | [Outlook calendar overview](outlook-calendar-concept-overview.md)  |
+| Calendar | Outlook  | Lets users set up appointments and meetings on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Microsoft 365 that also lets users manage emails and contacts. | [Outlook calendar overview](outlook-calendar-concept-overview.md)  |
 | Files | OneDrive and SharePoint | Manages and shares user files on OneDrive and SharePoint. | [OneDrive files storage overview](onedrive-concept-overview.md) |
-| Mail | Outlook | Lets users communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. It is part of the Outlook communication hub in Office 365 that also lets users manage contacts and schedule meetings. | [Outlook mail overview](outlook-mail-concept-overview.md) |
+| Mail | Outlook | Lets users communicate, organize messages, and manage priorities in their workflows, on the web, mobile and desktop devices. It is part of the Outlook communication hub in Microsoft 365 that also lets users manage contacts and schedule meetings. | [Outlook mail overview](outlook-mail-concept-overview.md) |
 | Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote notes overview](integrate-with-onenote.md) |
-| Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Office 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](outlook-contacts-concept-overview.md) |
+| Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Microsoft 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](outlook-contacts-concept-overview.md) |
 | Workbooks and charts | Excel | Lets users use Excel spreadsheets to do complex calculations, track, analyze, and visualize data, and generate professional reports. | [Excel workbooks and charts overview](excel-concept-overview.md) |
 
 
@@ -59,8 +59,9 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 -->
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Sites and lists  | SharePoint | Web-based platform for users and Office 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](sharepoint-concept-overview.md) | 
-|Tasks and plans | Planner | Enables users in Office 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](planner-concept-overview.md) |
+| Cloud communications | Microsoft Teams, Skype | Lets apps and services interact with users through various communications related features, for example, enabling bots to handle calls, integrating online meetings in line of business scenarios, showing users' presence status (preview), and looking up records for calls and online meetings (preview). |
+| Sites and lists  | SharePoint | Web-based platform for users and Microsoft 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](sharepoint-concept-overview.md) | 
+|Tasks and plans | Planner | Enables users in Microsoft 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](planner-concept-overview.md) |
 |Teamwork |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](teams-concept-overview.md) |
 
 
@@ -122,7 +123,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Customer booking (preview) | Microsoft Bookings | Targets organizations to enable their users and customers to book services directly on the web or Facebook. Lets business providers manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](booking-concept-overview.md) |
-| Financials (preview) | Dynamics 365 Business Central | Enables management of financial data, automation and securing of the supply chain, sales management and improved customer service, management of projects, and optimazation of operations with the all-in-one business management solution.| [Business Central API overview](dynamics-business-central-concept-overview.md) |
+| Financials (preview) | Dynamics 365 Business Central | Enables management of financial data, automation and securing of the supply chain, sales management and improved customer service, management of projects, and optimization of operations with the all-in-one business management solution.| [Business Central API overview](dynamics-business-central-concept-overview.md) |
 
 
 ## Next steps

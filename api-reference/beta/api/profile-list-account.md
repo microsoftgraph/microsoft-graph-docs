@@ -136,7 +136,7 @@ Content-type: application/json
         "locale": "en-AU",
         "displayName": "English (Australian)"
       },
-  "source": null,    
+  "source": null,
   "userPrincipalName": "ikoren@contoso.com"
 }
 ```

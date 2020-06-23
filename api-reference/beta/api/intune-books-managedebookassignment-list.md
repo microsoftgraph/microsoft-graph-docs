@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 294
+Content-Length: 469
 
 {
   "value": [
@@ -68,7 +68,9 @@ Content-Length: 294
       "@odata.type": "#microsoft.graph.managedEBookAssignment",
       "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
       "target": {
-        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       },
       "installIntent": "required"
     }

@@ -33,6 +33,9 @@ Apps can also do the following using API that is generally available:
 - [Get shared or delegated Outlook calendar or its events](outlook-get-shared-events-calendars.md)
 - [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md)
 
+> [!NOTE]
+> The properties and API for calendar sharing and delegating as described in this topic are currently available in the v1.0 endpoint, with the exception of the calendar properties **isShared** and **isSharedWithMe**. These two properties are exposed in only the beta endpoint.
+
 ## Get calendar information about sharees and delegates, and update individual permissions
 
 In this section:
@@ -289,7 +292,6 @@ Content-type: application/json
     "name": "Calendar",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": true,
     "changeKey": "NEXywgsVrkeNsFsyVyRrtAAAAAACOg==",
     "canShare": true,
     "canViewPrivateItems": true,
@@ -368,7 +370,6 @@ Content-type: application/json
     "name": "Alex Wilber",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": false,
     "changeKey": "E6LznKWmX0KTsAD9qRJjeAAAYWo3EQ==",
     "canShare": false,
     "canViewPrivateItems": true,

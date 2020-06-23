@@ -21,9 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|For **user** or **chat** resource:<br/>Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application| For **user** or **chat** resource:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All |
+|Delegated (work or school account)| For **user** or **chat** resource: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource: ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| For **user** or **chat** resource: Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).

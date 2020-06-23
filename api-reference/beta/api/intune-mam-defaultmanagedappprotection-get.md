@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4930
+Content-Length: 5190
 
 {
   "value": {
@@ -121,6 +121,7 @@ Content-Length: 4930
       "sharePoint"
     ],
     "appActionIfUnableToAuthenticateUser": "wipe",
+    "dialerRestrictionLevel": "managedApps",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -174,7 +175,10 @@ Content-Length: 4930
     "allowedAndroidDeviceModels": [
       "Allowed Android Device Models value"
     ],
-    "appActionIfAndroidDeviceModelNotAllowed": "wipe"
+    "appActionIfAndroidDeviceModelNotAllowed": "wipe",
+    "customDialerAppProtocol": "Custom Dialer App Protocol value",
+    "customDialerAppPackageId": "Custom Dialer App Package Id value",
+    "customDialerAppDisplayName": "Custom Dialer App Display Name value"
   }
 }
 ```

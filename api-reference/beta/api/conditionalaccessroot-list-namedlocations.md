@@ -2,7 +2,7 @@
 title: "List namedLocations"
 description: "Get a list of namedLocation objects."
 localization_priority: Normal
-author: "dkershaw10"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

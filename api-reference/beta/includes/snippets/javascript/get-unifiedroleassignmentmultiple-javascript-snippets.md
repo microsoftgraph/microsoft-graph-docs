@@ -10,8 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/roleManagement/deviceManagement/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1')
+let res = await client.api('/roleManagement/deviceManagement/roleAssignments')
 	.version('beta')
+	.filter(' principalIds/any(x:x eq '564ae70c-73d9-476b-820b-fb61eb7384b9')')
 	.get();
 
 ```

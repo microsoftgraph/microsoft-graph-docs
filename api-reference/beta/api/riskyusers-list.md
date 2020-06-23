@@ -89,7 +89,6 @@ Content-type: application/json
         {
             "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
             "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-            "isGuest": true,
             "isProcessing": true,
             "isDeleted": true,
             "riskDetail": "adminConfirmedSigninCompromised",
@@ -147,7 +146,6 @@ Content-type: application/json
         {
             "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
             "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
-            "isGuest": false,
             "isProcessing": true,
             "isDeleted": false,
             "riskDetail": "none",

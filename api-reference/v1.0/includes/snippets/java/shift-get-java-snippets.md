@@ -32,6 +32,6 @@ shiftPreferences.availability = availabilityList;
 
 graphClient.users("871dbd5c-3a6a-4392-bfe1-042452793a50").settings().shiftPreferences()
 	.buildRequest()
-	.put(shiftPreferences);
+	.patch(shiftPreferences);
 
 ```

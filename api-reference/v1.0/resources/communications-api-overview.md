@@ -22,6 +22,7 @@ One of the following [permissions](https://docs.microsoft.com/graph/permissions-
 |:------------------------------------|:---------------------------------------------|
 | Calling                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | Meetings                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
+| Call records             | CallRecords.Read.All |
 
 ## Common use cases
 
@@ -33,6 +34,7 @@ The following table lists some of the common uses for the communications API.
 |IVR calls   |     | [Methods for IVR](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
 | Call controls (participant) | [Participant](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0)   ||
 |Meetings|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Methods for meetings](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
+| Retrieving call records | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) | [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-1.0) |
 
 ## Common properties
 
@@ -41,6 +43,10 @@ The following table lists some of the common uses for the communications API.
 | call                               | [call properties](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#properties)  |
 | participant                         | [participant properties](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
 | onlineMeeting                            | [onlineMeeting properties](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
+| callRecord | [callRecord properties](/graph/api/resources/callrecords-callrecord#properties) |
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## See also
 

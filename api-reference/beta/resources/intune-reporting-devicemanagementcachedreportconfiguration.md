@@ -34,6 +34,7 @@ Entity representing the configuration of a cached report
 |filter|String|Filters applied on report creation.|
 |select|String collection|Columns selected from the report|
 |orderBy|String collection|Ordering of columns in the report|
+|metadata|String|Caller-managed metadata associated with the report|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed|
 |expirationDateTime|DateTimeOffset|Time that the cached report expires|
@@ -61,6 +62,7 @@ Here is a JSON representation of the resource.
   "orderBy": [
     "String"
   ],
+  "metadata": "String",
   "status": "String",
   "lastRefreshDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)"

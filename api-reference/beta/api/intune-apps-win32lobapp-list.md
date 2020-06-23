@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3442
+Content-Length: 3849
 
 {
   "value": [
@@ -132,6 +132,18 @@ Content-Length: 3442
           "keyPath": "Key Path value",
           "valueName": "Value Name value",
           "detectionType": "exists"
+        }
+      ],
+      "rules": [
+        {
+          "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+          "ruleType": "requirement",
+          "check32BitOn64System": true,
+          "keyPath": "Key Path value",
+          "valueName": "Value Name value",
+          "operationType": "exists",
+          "operator": "equal",
+          "comparisonValue": "Comparison Value value"
         }
       ],
       "installExperience": {

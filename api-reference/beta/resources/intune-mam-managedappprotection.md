@@ -77,6 +77,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |blockDataIngestionIntoOrganizationDocuments|Boolean|Indicates whether a user can bring data into org documents.|
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data.|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Possible values are: `block`, `wipe`, `warn`.|
+|dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
 
 ## Relationships
 None
@@ -144,7 +145,8 @@ Here is a JSON representation of the resource.
   "allowedDataIngestionLocations": [
     "String"
   ],
-  "appActionIfUnableToAuthenticateUser": "String"
+  "appActionIfUnableToAuthenticateUser": "String",
+  "dialerRestrictionLevel": "String"
 }
 ```
 

@@ -11,8 +11,8 @@ var printer = new Printer
 	Name = "PrinterName",
 	Location = new PrinterLocation
 	{
-		Latitude = 1.1,
-		Longitude = 2.2,
+		Latitude = 1.1f,
+		Longitude = 2.2f,
 		AltitudeInMeters = 3
 	}
 };

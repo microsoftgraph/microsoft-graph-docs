@@ -73,7 +73,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 Content-type: application/json
-Content-length: 897
+Content-length: 1072
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -91,7 +91,9 @@ Content-length: 897
     {
       "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]
@@ -103,7 +105,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 946
+Content-Length: 1121
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -122,7 +124,9 @@ Content-Length: 946
     {
       "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]

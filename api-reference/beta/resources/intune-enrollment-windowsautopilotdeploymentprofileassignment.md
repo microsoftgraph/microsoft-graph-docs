@@ -50,7 +50,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsAutopilotDeploymentProfileAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "String",
+    "deviceAndAppManagementAssignmentFilterType": "String"
   },
   "source": "String",
   "sourceId": "String"

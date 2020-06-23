@@ -39,6 +39,8 @@ items:
             href: /graph/tutorials/android
           - name: Angular
             href: /graph/tutorials/angular
+          - name: ASP.NET Core
+            href: /graph/tutorials/aspnet-core
           - name: ASP.NET
             href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Microsoft Flow
@@ -119,7 +121,7 @@ items:
             href: cloud-communications-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
-          - name: Call records (preview)
+          - name: Call records
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md

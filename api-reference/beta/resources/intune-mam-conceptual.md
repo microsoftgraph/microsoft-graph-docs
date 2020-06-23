@@ -43,6 +43,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app flagged reason](intune-mam-managedappflaggedreason.md)
 - [Managed app notification restriction](intune-mam-managedappnotificationrestriction.md)
 - [Managed app operation](intune-mam-managedappoperation.md)
+- [Managed app phone number redirect level](intune-mam-managedappphonenumberredirectlevel.md)
 - [Managed app PIN character set](intune-mam-managedapppincharacterset.md)
 - [Managed app policy](intune-mam-managedapppolicy.md)
 - [Managed app policy deployment summary](intune-mam-managedapppolicydeploymentsummary.md)

@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Device Configuration.
 
 
-Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
+Inherits from [featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)
 
 ## Methods
 |Method|Return Type|Description|

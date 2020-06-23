@@ -14,15 +14,7 @@ var queryOptions = new List<QueryOption>()
 
 var instances = await graphClient.Me.Events["AAMkAGUzYRgWAAA="].Instances
 	.Request( queryOptions )
-	.Select( e => new {
-			 e.Subject,
-			 e.BodyPreview,
-			 e.SeriesMasterId,
-			 e.Type,
-			 e.Recurrence,
-			 e.Start,
-			 e.End 
-			 })
+	.Select("subject,bodyPreview,seriesMasterId,type,recurrence,start,end")
 	.GetAsync();
 
 ```

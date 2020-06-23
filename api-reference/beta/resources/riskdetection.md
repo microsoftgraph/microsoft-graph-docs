@@ -45,7 +45,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`activity`|`activityType`|Indicates the activity type the detected risk is linked to. The possible values are signin, user, unknownFutureValue. |
 |`tokenIssuerType`|`tokenIssuerType`|Indicates the type of token issuer for the detected sign-in risk. The possible values are AzureAD, ADFederationServices, and unknownFutureValue. |
 |`ipAddress`|`string`|Provides the IP address of the client from where the risk occurred. |
-|`location`|[`signInLocation`](signinlocation.md)|Location of the sign-in. |
+|`location`|[signInLocation](signinlocation.md)|Location of the sign-in. |
 |`activityDateTime`|`datetimeoffset`|Date and time that the risky activity occurred. |
 |`detectedDateTime`|`datetimeoffset`|Date and time that the risk was detected. |
 |`lastUpdatedDateTime`|`datetime`|Date and time that the risk detection was last updated. |

@@ -106,7 +106,7 @@ Here is a JSON representation of the resource
 |conversationIndex|Edm.Binary|Indicates the position of the message within the conversation.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
-|flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
+|flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The owner of the mailbox from which the message is sent. In most cases, this value is the same as the **sender** property, except for sharing or delegation scenarios. The value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String| Unique identifier for the message. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |

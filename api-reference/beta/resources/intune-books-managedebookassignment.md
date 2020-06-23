@@ -49,7 +49,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "String",
+    "deviceAndAppManagementAssignmentFilterType": "String"
   },
   "installIntent": "String"
 }

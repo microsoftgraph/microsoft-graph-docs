@@ -1,6 +1,6 @@
 ---
 title: "Create subscription"
-description: "Subscribes a listener application to receive notifications when data on the Microsoft Graph changes."
+description: "Subscribes a listener application to receive change notifications when data on the Microsoft Graph changes."
 localization_priority: Priority
 author: "baywet"
 ms.prod: ""
@@ -11,16 +11,17 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Subscribes a listener application to receive notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
+Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
 
 ## Permissions
 
- Creating a subscription requires read scope to the resource. For example, to get notifications on messages, your app needs the `Mail.Read` permission. 
+ Creating a subscription requires read scope to the resource. For example, to get change notifications on messages, your app needs the `Mail.Read` permission. 
  
  Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
@@ -34,7 +35,7 @@ Subscribes a listener application to receive notifications when the requested ty
 
 > **Note:** There are additional limitations for subscriptions on OneDrive and Outlook items. The limitations apply to creating as well as managing subscriptions (getting, updating, and deleting subscriptions).
 
-- On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
+- On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
 
 - In Outlook, delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. That means, for example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user's mailbox.
 - To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
@@ -60,12 +61,13 @@ POST /subscriptions
 ## Response
 
 If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
+For details about how errors are returned, see [Error responses][error-response].
 
 ## Example
 
 ##### Request
 
-Here is an example of the request to send a notification when the user receives a new mail.
+Here is an example of the request to send a change notification when the user receives a new mail.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,6 +125,7 @@ The following are valid values for the resource property of the subscription:
 |Drives|me/drive/root|
 |List|sites/{site-id}/lists/{list-id}|
 |Security alert|security/alerts?$filter=status eq 'New'|
+|Call records|communications/callRecords|
 
 ##### Response
 
@@ -155,6 +158,8 @@ Content-length: 252
 ## Notification endpoint validation
 
 The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
+
+[error-response]: /graph/errors
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

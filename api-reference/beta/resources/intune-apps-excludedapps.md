@@ -21,6 +21,7 @@ Contains properties for Excluded Office365 Apps.
 |Property|Type|Description|
 |:---|:---|:---|
 |access|Boolean|The value for if MS Office Access should be excluded or not.|
+|bing|Boolean|The value for if Microsoft Search as default should be excluded or not.|
 |excel|Boolean|The value for if MS Office Excel should be excluded or not.|
 |groove|Boolean|The value for if MS Office OneDrive for Business - Groove should be excluded or not.|
 |infoPath|Boolean|The value for if MS Office InfoPath should be excluded or not.|
@@ -49,6 +50,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.excludedApps",
   "access": true,
+  "bing": true,
   "excel": true,
   "groove": true,
   "infoPath": true,

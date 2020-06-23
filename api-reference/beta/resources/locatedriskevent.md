@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) that is based on location data. Located risk event types include:
+A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) that is based on location data. Located risk event types include:
 * [sign-ins from anonymous IP addresses](anonymousipriskevent.md)
 * [sign-ins from malware-infected devices](malwareriskevent.md)
 * [impossible travel to atypical locations](impossibletravelriskevent.md)
 * [sign-ins from suspicious IP addresses](suspiciousipriskevent.md)
 * [sign-ins from unfamiliar locations](unfamiliarlocationriskevent.md)
-Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## Methods

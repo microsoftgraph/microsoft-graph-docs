@@ -56,7 +56,7 @@ For more information about working with groups and members in teams, see [Use th
 |:---------------|:--------|:----------|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
-|primaryChannel|[channel](channel.md)| The general channel for the team. | 
+|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. | 
 
 ## JSON representation
 

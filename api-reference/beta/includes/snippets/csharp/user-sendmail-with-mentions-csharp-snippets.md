@@ -20,7 +20,7 @@ var message = new Message
 			}
 		}
 	},
-	Mentions = new List<Mention>()
+	Mentions = (IMessageMentionsCollectionPage)new List<Mention>()
 	{
 		new Mention
 		{

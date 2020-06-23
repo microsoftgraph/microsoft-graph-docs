@@ -77,7 +77,8 @@ Content-Length: 869
       "certificateSubjectName": "Certificate Subject Name value",
       "certificateKeyUsages": 4,
       "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-      "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
+      "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
+      "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
     }
   ]
 }

@@ -10,11 +10,7 @@ var delta = await graphClient.Groups
 	.Delta()
 	.Request()
 	.Header("Prefer","return=minimal")
-	.Select( e => new {
-			 e.DisplayName,
-			 e.Description,
-			 e.MailNickname 
-			 })
+	.Select("displayName,description,mailNickname")
 	.GetAsync();
 
 ```

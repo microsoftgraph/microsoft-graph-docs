@@ -53,7 +53,7 @@ Many templates allow binding of data that is passed to the template as data cont
 </template>
 ```
 
-This format can also be used inside of attributes:
+This format can also be used inside attributes:
 
 ```html
 <template data-type="event">
@@ -62,6 +62,16 @@ This format can also be used inside of attributes:
 ```
 
 > **Note:** You can also expand objects such as `{{event}}` and they will render as JSON strings. This can be useful when you're developing the templates.
+
+### Change binding syntax
+
+By default, to expand an expression, you use double curly brackets ( `{{expression}}` ). However, you can change this syntax for environments where the double curly bracket syntax is already used. For example, the following example uses double square brackets ( `[[expression]]` ).
+
+```ts
+import { TemplateHelper } from '@microsoft/mgt';
+
+TemplateHelper.setBindingSyntax('[[', ']]');
+```
 
 ## Data context helper properties
 
@@ -117,23 +127,39 @@ There will be cases where the data context object contains loop and you will nee
 </template>
 ```
 
-## TemplateContext
+## Template context
 
-Each component in the Microsoft Graph Toolkit defines the `templateContext` property, which you can use to pass additional data to any template in the component. 
+In scenarios where you need to convert data in your bindings, bind to events, or just use external data in your templates bindings, the templates support binding to external data context. You can add additional template context in two ways:
 
-```ts
-document.querySelector('mgt-agenda').templateContext = {
+1. Directly on the component.
 
-  someObject: {},
-  formatDate: (date: Date) => { /* format date and return */ },
-  someEventHandler: (e) => { /* handleEvent */  }
+    Each component defines the `templateContext` property, which you can use to pass additional data to any template in the component. 
 
-}
-```
+    ```ts
+    document.querySelector('mgt-agenda').templateContext = {
 
-The properties in the `templateContext` object will now be available to be used in the binding expressions in the template.
+      someObject: {},
+      formatDate: (date: Date) => { /* format date and return */ },
+      someEventHandler: (e) => { /* handleEvent */  }
 
-This can be useful in many scenarios, such as converting data in your bindings, or binding to events. 
+    }
+    ```
+
+    The properties in the `templateContext` object will now be available to be used in the binding expressions in the template.
+
+2. Globally for all components.
+
+    The `TemplateHelper` class exposes the `globalContext` object to add data or functions that should be globally available for all components.
+
+    ```ts
+    import { TemplateHelper } from '@microsoft/mgt';
+
+    TemplateHelper.globalContext.someObject = {};
+    TemplateHelper.globalContext.formatDate = (date: Date) => { /* format date and return */ };
+    TemplateHelper.globalContext.someEventHandler = (e) => { /* handleEvent */  }
+    ```
+
+
 
 ### Converters
 

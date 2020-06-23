@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var offerShiftRequest = new OfferShiftRequest
+var offerShiftRequest = new OfferShiftRequestObject
 {
 	SenderShiftId = "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29",
 	SenderMessage = "Having a family emergency, could you take this shift for me?",

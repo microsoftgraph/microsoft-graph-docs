@@ -14,7 +14,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphEducationSchool *educationSchool = [[MSGraphEducationSchool alloc] init];
 [educationSchool setDisplayName:@"Fabrikam High School"];
 [educationSchool setDescription:@"Magnate school for the arts. Los Angeles School District"];
-[educationSchool setStatus:@"String"];
 [educationSchool setExternalSource: [MSGraphEducationExternalSource sis]];
 [educationSchool setPrincipalEmail:@"AmyR@fabrikam.com"];
 [educationSchool setPrincipalName:@"Amy Roebuck"];

@@ -7,9 +7,7 @@ author: vogtn
 
 # People-Picker component in the Microsoft Graph Toolkit
 
-You can use the `mgt-people-picker` web component search for a specified number of people and render the list of results via Microsoft Graph. By default, the component will search for all people; you can also define a group property to further filter the results.
-
-If the number of people to display exceeds the `show-max` value, not all people returned will be displayed in the search list.
+You can use the `mgt-people-picker` web component to search for people and/or groups. By default, the component will search for all people and users in the organization, but you can change the behavior to also search for groups, or only groups. You can also filter the search to a specific group.
 
 ## Example
 
@@ -21,14 +19,16 @@ The following example shows the `mgt-people-picker` component. Start searching f
 
 ## Properties
 
-By default, the `mgt-people-picker` component fetches people from the `/me/people` endpoint. Use the following attributes to change this behavior.
+By default, the `mgt-people-picker` component fetches people from the `/me/people` and `/users` endpoints. Use the following attributes to change this behavior.
 
 | Attribute | Property | Description                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
-| people   | people    | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
-| group    | group     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
-|  selected-people  | selectedPeople     | An array of type  `person`, representing people selected in the component. Set this value to choose selected people by default.|
+| group-id    | groupId     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
+| type     | type      | The type of entities to search for. Available options are: `person`, `group`, `any`. Default value is `person`. This attribute has no effect if `group-id` property is set.                                                                            |
+| group-type     | groupType      | The group type to search for. Available options are: `unified`, `security`, `mailenabledsecurity`, `distribution`, `any`. Default value is `any`. This attribute has no effect if the `type` property is set to `person`.                                                                           |
+|  selected-people  | selectedPeople     | An array of selected people. Set this value to select people programmatically.|
+| people   | people    | An array of people found and rendered in the search result |
 
 The following is a `show-max` example.
 
@@ -74,8 +74,24 @@ The `mgt-people-picker` component defines the following CSS custom properties.
 
 ```css
 mgt-people-picker {
-  --people-list-background-color: blue; /* Background-color for people under search */
-  --accent-color: green; /* Color for separator of search input box and people */
+    --input-border: 2px rgba(255, 255, 255, 0.5) solid; /* sets all input area border */
+
+      /* OR individual input border sides */
+    --input-border-bottom: 2px rgba(255, 255, 255, 0.5) solid;
+    --input-border-right: 2px rgba(255, 255, 255, 0.5) solid;
+    --input-border-left: 2px rgba(255, 255, 255, 0.5) solid;
+    --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
+
+    --input-background-color: #1f1f1f; /* input area background color */
+    --input-hover-color: #008394; /* input area border hover color */
+    --input-focus-color: #0f78d4; /* input area border focus color */
+
+    --dropdown-background-color: #1f1f1f; /* selection area background color */
+    --dropdown-item-hover-background: #333d47; /* person background color on hover */
+
+    --font-color: white; /* input area border focus color */
+    --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
+    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
 }
 ```
 
@@ -109,8 +125,10 @@ This component uses the following Microsoft Graph APIs and permissions.
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
-| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read        |
-| [/users/${userPrincipleName} ](/graph/api/user-list-people?view=graph-rest-1.0)  | User.Readbasic.All |
+| [/users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
+| [/groups](/group-list?view=graph-rest-beta)  | Group.Read.All |
+| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All        |
+| [/users/${userPrincipleName} ](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
 
 ## Authentication
 

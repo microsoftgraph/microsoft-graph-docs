@@ -31,7 +31,7 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## Optional query parameters
-This method does **not** support [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
+This method supports the `$select` query parameter. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Name      |Description|

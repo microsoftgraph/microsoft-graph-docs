@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /users/{userId}/settings/shiftPreferences
+PATCH /users/{userId}/settings/shiftPreferences
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ The following is an example of the request.
   "name": "shift-get"
 }-->
 ```msgraph-interactive
-PUT https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
+PATCH https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 Content-type: application/json
 
 {

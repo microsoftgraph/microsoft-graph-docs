@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Renew a subscription by extending its expiry time.
 
-Subscriptions expire after a length of time that varies by resource type. In order to avoid missing notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](../resources/subscription.md) for maximum length of a subscription for each resource type.
+Subscriptions expire after a length of time that varies by resource type. In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](../resources/subscription.md) for maximum length of a subscription for each resource type.
 
 ## Permissions
 
@@ -21,6 +21,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) | Not supported | Not supported | CallRecords.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
@@ -34,7 +35,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 > **Note:** There are additional limitations for subscriptions on OneDrive and Outlook items. The limitations apply to creating as well as managing subscriptions (getting, updating, and deleting subscriptions).
 
-- On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other driveItem objects in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
+- On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other driveItem objects in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
 
 - In Outlook, delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. That means, for example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user's mailbox.
 - To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
@@ -60,6 +61,8 @@ PATCH /subscriptions/{id}
 ## Response
 
 If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.
+
+For details about how errors are returned, see [Error responses][error-response].
 
 ## Example
 
@@ -126,6 +129,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2"
 }
 ```
+
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

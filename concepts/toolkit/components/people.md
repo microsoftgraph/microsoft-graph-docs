@@ -29,7 +29,9 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | people | people | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
 | group-id | groupId | Retrieves people from a specific Microsoft Graph from the respective ID. |
 | user-ids | userIds | Given an array of Microsoft Graph user `ids`, the component will render these users.  |
+| people-queries | peopleQueries | Given an array of person queries (names, upns, emails), the component will render these users. |
 | person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
+| show-presence | showPresence | A boolean to determine whether to show person presence badge on person image. |
 
 
 The following example sets the maximum number of people to show.

@@ -45,7 +45,6 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessageMention"
 }-->
 

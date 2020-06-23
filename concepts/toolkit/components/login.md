@@ -77,6 +77,17 @@ The following events are fired from the control.
 | `logoutInitiated` | The user started to logout - cancelable. |
 | `logoutCompleted` | The user signed out. |
 
+## Templates
+
+The `mgt-login` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the values listed in the following table. 
+
+| Data type | Data context | Description |
+| --- | --- | --- |
+| signed-in-button-content | personDetails: person object, `personImage`: person image string | The template used to render the content in the button when the user is signed in. |
+| signed-out-button-content | null | The template used to render the content in the button when the user is not signed in. |
+| flyout-commands | handleSignOut: sign out function | The template used to render the commands in the flyout |
+| flyout-person-details | personDetails: person object, personImage: person image string | The template used to render the person details in the flyout. |
+
 ## Microsoft Graph permissions
 
 This component uses the [Person component](./person.md) to display the user and inherits all permissions. 
@@ -93,8 +104,12 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | - | - |
 | renderButton | Renders the button chrome. |
 | renderButtonContent | Renders the button content. |
+| renderSignedInButtonContent | Render the button content when the user is signed in. |
+| renderSignedOutButtonContent | Render the button content when the user is not signed in. |
 | renderFlyout | Renders the flyout chrome. |
 | renderFlyoutContent | Renders the flyout content. |
+| renderFlyoutPersonDetails | Render the flyout person details. |
+| renderFlyoutCommands | Render the flyout commands. |
 
 ### Bring your own flyout
 

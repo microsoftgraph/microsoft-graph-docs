@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1005
+Content-Length: 1184
 
 {
   "value": {
@@ -83,7 +83,9 @@ Content-Length: 1005
       {
         "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
         "target": {
-          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+          "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+          "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+          "deviceAndAppManagementAssignmentFilterType": "include"
         }
       }
     ]

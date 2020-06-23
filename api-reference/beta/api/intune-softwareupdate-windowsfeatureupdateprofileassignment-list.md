@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 279
+Content-Length: 454
 
 {
   "value": [
@@ -68,7 +68,9 @@ Content-Length: 279
       "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfileAssignment",
       "id": "567a744f-744f-567a-4f74-7a564f747a56",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       }
     }
   ]

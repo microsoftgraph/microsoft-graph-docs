@@ -23,7 +23,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Outlook [event][] | Changes to all events in a user's mailbox:<br>`/users/{id}/events` | No |
 | Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox:<br>`/users/{id}/contacts` | No |
 | [user][] | Changes to all users:<br>`/users` <br>Changes to a specific user:<br>`/users/{id}`| No |
-| [group][] | Changes to all groups:<br>`/groups` <br>Changes to a specific group:<br>`/groups/{id}` | No |
+| [group][] | Changes to all groups:<br>`/groups` <br>Changes to a specific group:<br>`/groups/{id}`<br>Changes to owners of a specific group:<br>`/groups/{id}/owners`<br>Changes to members of a specific group:<br>`/groups/{id}/members` | No |
 | Office 365 group [conversation][] | Changes to a group's conversations:<br>`groups/{id}/conversations` | No |
 | [driveItem][] on OneDrive (personal) | Changes to content within the hierarchy of _any folder_:<br>`/users/{id}/drive/root` | No |
 | [driveItem][] on OneDrive for Business | Changes to content within the hierarchy of the _root folder_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | No |
