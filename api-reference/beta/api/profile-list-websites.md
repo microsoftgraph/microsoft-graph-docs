@@ -109,38 +109,12 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "allowedAudiences": "organization",
-      "categories": [
-        {"sports", "personal"}
-      ],
-      "createdBy": {
-        "device": null,
-        "user": null,
-        "application": {
-            "displayName": "AAD",
-            "id": null
-        }
-      },
-      "createdDateTime": "2020-02-18T16:07:14Z",
-      "description": "Football club in the English Premier League",
-      "displayName": "Chelsea FC",
-      "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
-      "inference": null,
-      "lastModifiedBy": {
-        "device": null,
-        "user": null,
-        "application": {
-            "displayName": "UPA",
-            "id": null
-        }
-      },
-      "lastModifiedDateTime": "2020-02-18T16:07:14Z",
-      "source": null,
-      "webUrl": "https://www.chelseafc.com"
-    }
-  ]
+  "categories": [
+    "categories-value"
+  ],
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "webUrl": "webUrl-value"
 }
 ```
 

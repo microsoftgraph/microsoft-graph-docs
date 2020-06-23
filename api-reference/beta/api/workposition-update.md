@@ -99,10 +99,8 @@ Content-type: application/json
     "summary": "One year engagement on Finance team at Contoso"
   }
 }
-
-
-
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workposition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

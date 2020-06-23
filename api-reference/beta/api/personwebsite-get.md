@@ -107,11 +107,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "sports"
+    "categories-value"
   ],
-  "description": "Lyn Damer are a football club in the Norwegian womens elite division.",
-  "displayName": "Lyn Damer",
-  "webUrl": "https://www.lyndamer.no"
+  "description": "description-value",
+  "displayName": "displayName-value",
+  "webUrl": "webUrl-value"
 }
 ```
 
