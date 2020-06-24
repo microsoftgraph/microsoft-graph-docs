@@ -86,26 +86,12 @@ Content-type: application/json
   "allowedAudiences": "organization",
   "ageGroup": "3",
   "countryCode": "NO",
-  "createdBy": {
-    "device": null,
-    "user": null,
-    "application": {
-        "displayName": "AAD",
-        "id": null
-    }
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "2020-02-18T16:07:14Z",
   "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
   "inference": null,
   "lastModifiedDateTime": "2020-02-18T16:07:14Z",
-  "lastModifiedBy": {
-    "device": null,
-    "user": null,
-    "application": {
-        "displayName": "UPA",
-        "id": null
-    }
-  },
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "preferredLanguageTag": {
         "locale": "en-AU",
         "displayName": "English (Australian)"
