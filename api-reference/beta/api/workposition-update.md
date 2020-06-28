@@ -30,8 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
+<<<<<<< HEAD
 PATCH /me/profile/positions/{id}
 PATCH /users/{id|userPrincipalName}/profile/positions/{id}
+=======
+PATCH /me/profile/positions/{id} 
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 ```
 
 ## Request headers
@@ -70,6 +74,7 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/me/profile/positions/{id}
 Content-type: application/json
 
+<<<<<<< HEAD
 {
   "categories": [
     "consulting"
@@ -98,6 +103,37 @@ Content-type: application/json
     "startMonthYear": "2019-05",
     "summary": "One year engagement on Finance team at Contoso"
   }
+=======
+ {
+  "categories": [],
+  "allowedAudiences": "organization",
+  "detail": {
+      "description": null,
+      "endMonthYear": null,
+      "jobTitle": "Auditor",
+      "startMonthYear": "2001-01-01",
+      "summary": null,
+      "company": {
+          "displayName": "Contoso Ltd.",
+          "pronunciation": null,
+          "department": "Finance",
+          "officeLocation": "12/1110",
+          "webUrl": null,
+          "address": {
+              "type": "business",
+              "postOfficeBox": null,
+              "street": "30 Isabella St., Second Floor",
+              "city": "Pittsburgh",
+              "state": "PA",
+              "countryOrRegion": "US",
+              "postalCode": "15212"
+          }
+      }
+  },
+  "manager": null,
+  "colleagues": [],
+  "isCurrent": "True",
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 }
 ```
 

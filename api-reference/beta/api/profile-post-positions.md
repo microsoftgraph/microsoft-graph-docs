@@ -91,7 +91,11 @@ Content-type: application/json
   },
   "manager": null,
   "colleagues": [],
+<<<<<<< HEAD
   "isCurrent": "True"
+=======
+  "isCurrent": "True",
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 }
 ```
 

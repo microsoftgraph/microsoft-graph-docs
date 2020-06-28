@@ -17,6 +17,7 @@ Represents the abstract base type that all resource types in the [profile](profi
 
 ## Properties
 
+<<<<<<< HEAD
 | Property             | Type                           | Description                                                                                                                                                                                    |
 |:---------------------|:--------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |allowedAudiences      |string                           | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
@@ -26,6 +27,18 @@ Represents the abstract base type that all resource types in the [profile](profi
 |inference             |[inferenceData](inferencedata.md)| Contains inference detail if the entity is inferred.                                                                                                                                           |
 |lastModifiedBy        |[identitySet](identityset.md)    | Identifier of the partner or user who last modified the entity.                                                                                                                                |
 |lastModifiedDateTime  |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+=======
+| Property             | Type                                   | Description                                                                                                                                                                                    |
+|:---------------------|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|allowedAudiences      |string                                  | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
+|createdBy             |[identitySet](identityset.md)           | When the entity was originally created.                                                                                                                                                        |
+|createdDateTime       |DateTimeOffset                          |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|id                    |String                                  | Read-only.                                                                                                                                                                                     | 
+|inference             |[inferenceData](inferencedata.md)       | Contains inference detail if the entity is inferred.                                                                                                                                           |
+|lastModifiedBy        |[identitySet](identityset.md)           | Identifier of the partner or user who last modified the entity.                                                                                                                                |
+|lastModifiedDateTime  |DateTimeOffset                          |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|source                |[personDataSource](personDataSource.md) |Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                 |
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 
 ## Relationships
 

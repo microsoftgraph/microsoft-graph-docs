@@ -38,9 +38,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "String",
-  "relationship": "String",
-  "userPrincipalName": "String"
+  "displayName": "Megan Bowen",
+  "relationship": "Manager",
+  "userPrincipalName": "megan.bowen@contoso.com"
 }
 ```
 

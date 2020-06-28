@@ -65,9 +65,15 @@ Content-type: application/json
 
         {
             "address": "IrenaK@M365x214355.onmicrosoft.com",
+<<<<<<< HEAD
             "displayName": "Business Email Address",
             "type": "main",
             "allowedAudiences": "organization"
+=======
+            "displayName": Business Email Address,
+            "type": "main",
+            "allowedAudiences": "organization",
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
         }
 ```
 
@@ -89,7 +95,11 @@ Content-type: application/json
 
         {
             "address": "IrenaK@M365x214355.onmicrosoft.com",
+<<<<<<< HEAD
             "displayName": "Business Email Address",
+=======
+            "displayName": Business Email Address,
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
             "type": "main",
             "allowedAudiences": "organization",
             "createdDateTime": "2020-02-13T08:07:14Z",
@@ -102,7 +112,11 @@ Content-type: application/json
                     "displayName": null,
                     "id": "12345-235435-554332-234433-223444"
                 },
+<<<<<<< HEAD
                 "application": null
+=======
+                "application": null,
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
             }
         }
 ```

@@ -50,7 +50,10 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
+<<<<<<< HEAD
 | Content-Type   | application/json. Required. |
+=======
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 
 ## Request body
 

@@ -109,12 +109,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+<<<<<<< HEAD
   "categories": [
     "categories-value"
   ],
   "description": "description-value",
   "displayName": "displayName-value",
   "webUrl": "webUrl-value"
+=======
+  "value": [
+    {
+      "categories": [
+        {"sports", "personal"}
+      ],
+      "description": "Football club in the English Premier League",
+      "displayName": "Chelsea FC",
+      "webUrl": "https://www.chelseafc.com"
+    }
+  ]
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 }
 ```
 

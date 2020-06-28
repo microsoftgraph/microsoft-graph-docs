@@ -27,6 +27,7 @@ Inherits from [itemFacet](itemfacet.md).
 
 ## Properties
 
+<<<<<<< HEAD
 | Property     | Type                              | Description                                                                                                  |
 |:-------------|:----------------------------------|:-------------------------------------------------------------------------------------------------------------|
 |displayName   |String                             | Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device. |
@@ -40,6 +41,29 @@ Inherits from [itemFacet](itemfacet.md).
 |pronunciation |[yomiPersonName](yomipersonname.md)| Guidance on how to pronounce the users name.                                                                 |
 |suffix        |String                             | Designators used after the users name (eg: PhD.)                                                             |
 |title         |String                             | Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)                                            |
+=======
+| Property             | Type                                   | Description                                                                                                                                                                                     |
+|:---------------------|:---------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|allowedAudiences      |string                                  | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                    |
+|createdBy             |[identitySet](identityset.md)           | When the entity was originally created.                                                                                                                                                         |
+|createdDateTime       |DateTimeOffset                          | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|displayName           |String                                  | Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.                                                                                    |
+|first                 |String                                  | First Name of the user.                                                                                                                                                                         |
+|id                    |String                                  | Read-only.                                                                                                                                                                                      | 
+|inference             |[inferenceData](inferencedata.md)       | Contains inference detail if the entity is inferred.                                                                                                                                            |
+|initials              |String                                  | Initials of the user.                                                                                                                                                                           |
+|languageTag           |String                                  | Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.                                                                                                           |
+|last                  |String                                  | Last Name of the user.                                                                                                                                                                          |
+|lastModifiedBy        |[identitySet](identityset.md)           | Identifier of the partner or user who last modified the entity.                                                                                                                                 |
+|lastModifiedDateTime  |DateTimeOffset                          | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|maiden                |String                                  | Maiden Name of the user.                                                                                                                                                                        |
+|middle                |String                                  | Middlie Name of the user.                                                                                                                                                                       | 
+|nickname              |String                                  | Nickname of the user.                                                                                                                                                                           |
+|pronunciation         |[yomiPersonName](yomipersonname.md)     | Guidance on how to pronounce the users name.                                                                                                                                                    |
+|source                |[personDataSource](personDataSource.md) | Identifies the source of the data (UserProvided, Profile, Admin, LinkedIn etc.)                                                                                                                 |
+|suffix                |String                                  | Designators used after the users name (eg: PhD.)                                                                                                                                                |
+|title                 |String                                  | Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)                                                                                                                               |
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 
 ## Relationships
 

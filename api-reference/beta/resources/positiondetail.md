@@ -42,13 +42,27 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "company": {"@odata.type": "microsoft.graph.companyDetail"},
-  "description": "String",
-  "endMonthYear": "String (timestamp)",
-  "jobTitle": "String",
-  "role": "String",
-  "startMonthYear": "String (timestamp)",
-  "summary": "String"
+  "company": {
+      "displayName": "Contoso Ltd.",
+      "pronunciation": null,
+      "department": "Finance",
+      "officeLocation": "12/1110",
+      "webUrl": null,
+      "address": {
+          "type": "business",
+          "postOfficeBox": null,
+          "street": "30 Isabella St., Second Floor",
+          "city": "Pittsburgh",
+          "state": "PA",
+          "countryOrRegion": "US",
+          "postalCode": "15212"
+      }
+  },
+  "description": null,
+  "endMonthYear": null,
+  "jobTitle": "Auditor",
+  "startMonthYear": "2001-01-01",
+  "summary": null
 }
 ```
 

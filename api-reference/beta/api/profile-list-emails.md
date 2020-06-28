@@ -21,9 +21,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
+<<<<<<< HEAD
 | Delegated (work or school account)     | User.Read, User.ReadWrite  |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite |
 | Application                            | User.Read.All, User.ReadWrite.All                            |
+=======
+| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 
 ## HTTP request
 
@@ -50,7 +56,10 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
+<<<<<<< HEAD
 | Content-Type   | application/json. Required. |
+=======
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 
 ## Request body
 
@@ -127,7 +136,11 @@ Content-type: application/json
                 }
             }
         }
+<<<<<<< HEAD
     ]
+=======
+    ],
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

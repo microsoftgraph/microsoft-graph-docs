@@ -30,8 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
+<<<<<<< HEAD
 GET /me/profile/positions/{id}
 GET /users/{id|userPrincipalName}/profile/positions/{id}
+=======
+GET /me/profile/positions/{id} 
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 ```
 
 ## Optional query parameters

@@ -64,6 +64,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+<<<<<<< HEAD
   "allowedAudiences": "string",
   "inference": {"@odata.type": "microsoft.graph.inferenceData"},
   "id": "String (identifier)",
@@ -99,6 +100,13 @@ The following is a JSON representation of the resource.
     "webUrl": "www.microsoftuniversity.com/master-of-it-consulting"
   },
   "startMonthYear": "2010-08-01"
+=======
+  "completionMonthYear": "String (timestamp)",
+  "endMonthYear": "String (timestamp)",
+  "institution": {"@odata.type": "microsoft.graph.institutionData"},
+  "program": {"@odata.type": "microsoft.graph.educationalActivityDetail"},
+  "startMonthYear": "String (timestamp)" 
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 }
 ```
 

@@ -110,6 +110,7 @@ Content-type: application/json
   "categories": [
     "professional"
   ],
+<<<<<<< HEAD
   "collaborationTags": [],
   "createdBy": {
     "device": null,
@@ -134,6 +135,10 @@ Content-type: application/json
   },
   "proficiency": "advancedProfessional",
   "source": null,
+=======
+  "displayName": "Artificial Intelligence",
+  "proficiency": "advancedProfessional",
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
   "webUrl": "https://www.microsoft.com/aischool"
 }
 ```

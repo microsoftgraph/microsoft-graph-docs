@@ -37,8 +37,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "name": "String",
-  "webUrl": "String"
+  "name": "Skype",
+  "webUrl": "https://www.skype.com"
 }
 ```
 

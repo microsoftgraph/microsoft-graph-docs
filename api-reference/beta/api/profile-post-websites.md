@@ -69,7 +69,11 @@ Content-type: application/json
   "categories": [
     "sports, personal"
   ],
+<<<<<<< HEAD
   "description": "Football club in the English Premier League",
+=======
+  "description": "Online home of Chelsea FC a football club in the English Premier League.",
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
   "displayName": "Chelsea FC",
   "webUrl": "https://www.chelseafc.com"
 }
@@ -108,6 +112,7 @@ Content-type: application/json
 {
   "allowedAudiences": "organization",
   "categories": [
+<<<<<<< HEAD
     {"sports", "personal"}
   ],
   "createdBy": {
@@ -133,6 +138,12 @@ Content-type: application/json
   },
   "lastModifiedDateTime": "2020-02-18T16:07:14Z",
   "source": null, 
+=======
+    "sports, personal"
+  ],
+  "description": "Online home of Chelsea FC a football club in the English Premier League.",
+  "displayName": "Chelsea FC",
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
   "webUrl": "https://www.chelseafc.com"
 }
 ```

@@ -30,8 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
+<<<<<<< HEAD
 GET /me/profile/webAccounts/{id}
 GET /users/{id|userPrincipalName}/profile/webAccounts/{id}
+=======
+GET /me/profile/webAccounts/{id} 
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 ```
 
 ## Optional query parameters
@@ -99,7 +103,11 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+<<<<<<< HEAD
   "@odata.type": "microsoft.graph.webAccount",
+=======
+  "@odata.type": "microsoft.graph.webAccount"
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
   "baseType": "microsoft.graph.itemfacet",
   "keyProperty": "id"
 } -->

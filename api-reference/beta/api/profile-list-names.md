@@ -127,7 +127,11 @@ Content-type: application/json
                 }
             }
         }
+<<<<<<< HEAD
     ]
+=======
+    ],
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 title: "List accounts"
 description: "Retrieve a list of userAccountInformation objects."
+=======
+title: "List account"
+description: "Retrieve a list of useraccountinformation objects."
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -136,7 +141,11 @@ Content-type: application/json
         "locale": "en-AU",
         "displayName": "English (Australian)"
       },
+<<<<<<< HEAD
   "source": null,
+=======
+  "source": null,    
+>>>>>>> 7b7c7db48621b45f30c875e5e31daa28a9c5452c
   "userPrincipalName": "ikoren@contoso.com"
 }
 ```
