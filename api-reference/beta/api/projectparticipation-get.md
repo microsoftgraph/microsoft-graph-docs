@@ -19,11 +19,11 @@ Retrieve the properties and relationships of a [projectParticipation](../resourc
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Permission type                        | Permissions (from least to most privileged)                  |
+|:---------------------------------------|:-------------------------------------------------------------|
+| Delegated (work or school account)     | User.Read, User.ReadWrite                                    |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite                                    |
+| Application                            | User.Read.All, User.ReadWrite.All                            |
 
 ## HTTP request
 
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/projects/{id}
+GET /users/{id|userPrincipalName}/profile/projects/{id}
 ```
 
 ## Optional query parameters
@@ -50,6 +51,7 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -110,60 +112,26 @@ Content-type: application/json
     "categories-value"
   ],
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
+    "displayName": "Contoso Intelligence Team",
+    "pronunciation": null,
+    "department": "Contoso Int.",
+    "officeLocation": null,
+    "address": [],
+    "webUrl": null
   },
-  "displayName": "displayName-value",
+  "displayName": "Customer Analytics",
   "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
+    "company": [],
+    "displayName": "Customer Analytics",
+    "description": "Understanding our customers better",
+    "endMonthYear": "2020-04-21",
+    "jobTitle": "ML Specialist",
+    "role": "project member",
+    "startMonthYear": "2019-03-23",
+    "summary": "Worked as an ML specialist on a project for Contoso to better analyse their customers behaviors on the website."
   },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+  "colleagues": [],
+  "sponsors": []
 }
 ```
 

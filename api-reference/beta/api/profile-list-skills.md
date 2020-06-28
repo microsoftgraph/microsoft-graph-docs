@@ -19,11 +19,11 @@ Retrieve a list of [skillProficiency](../resources/skillproficiency.md) objects 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Permission type                        | Permissions (from least to most privileged)                |
+|:---------------------------------------|:-----------------------------------------------------------|
+| Delegated (work or school account)     | User.Read, User.ReadWrite                                  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite                                  |
+| Application                            | User.Read.All, User.ReadWrite.All      |
 
 ## HTTP request
 
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/skills
+GET /users/{id|userPrincipalName}/profile/skills
 ```
 
 ## Optional query parameters
@@ -89,7 +90,6 @@ GET https://graph.microsoft.com/beta/me/profile/skills
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -107,18 +107,104 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{
-  "value": [
-    {
-      "categories": [
-        "categories-value"
-      ],
-      "displayName": "displayName-value",
-      "proficiency": "proficiency-value",
-      "webUrl": "webUrl-value"
-    }
-  ]
-}
+"skills@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/skills",
+    "skills": [
+        {
+            "categories": [],
+            "displayName": "Marketing Communications",
+            "proficiency": "advancedWorking",
+            "webUrl": null,
+            "allowedAudiences": "organization",
+            "createdDateTime": "2020-02-18T16:07:14Z",
+            "inference": null,
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+            "id": "6ee6e598-3406-433b-9fe3-ce2e7f6cbf04",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "UPA",
+                    "id": null
+                }
+            }
+        },
+        {
+            "categories": [],
+            "displayName": "Sales Cycle Control and Reporting Systems",
+            "proficiency": "advancedProfessional",
+            "webUrl": null,
+            "allowedAudiences": "everyone",
+            "createdDateTime": "2020-02-18T16:07:14Z",
+            "inference": null,
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+            "id": "9394ac8f-c715-4a7c-9c19-f7714fdb4de8",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "UPA",
+                    "id": null
+                }
+            }
+        },
+        {
+            "categories": [],
+            "displayName": "Audit Training",
+            "proficiency": null,
+            "webUrl": null,
+            "allowedAudiences": "everyone",
+            "createdDateTime": "2020-02-18T16:07:14Z",
+            "inference": null,
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+            "id": "be12f963-79bc-42a3-a76f-9bb84b065e49",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "UPA",
+                    "id": null
+                }
+            }
+        },
+        {
+            "categories": [],
+            "displayName": "Total Quality Management",
+            "proficiency": null,
+            "webUrl": null,
+            "allowedAudiences": "me",
+            "createdDateTime": "2020-02-18T16:07:14Z",
+            "inference": null,
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+            "id": "57ef6feb-1151-43a2-a752-c5663662717a",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "UPA",
+                    "id": null
+                }
+            }
+        },
+        {
+            "categories": [],
+            "displayName": "Quantitative Marketing Analysis",
+            "proficiency": "limitedWorking",
+            "webUrl": null,
+            "allowedAudiences": "everyone",
+            "createdDateTime": "2020-02-18T16:07:14Z",
+            "inference": null,
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+            "id": "9c16f8e8-a96e-412d-a51f-d7fd8cf0f514",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "UPA",
+                    "id": null
+                }
+            }
+        }
+    ]
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

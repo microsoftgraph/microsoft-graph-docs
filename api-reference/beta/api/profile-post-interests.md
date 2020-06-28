@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /user/profile/interests
+POST /me/profile/interests
+POST /users/{id|userPrincipalName}/profile/interests
 ```
 
 ## Request headers
@@ -66,11 +67,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "Sports Teams"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "Established in 1905, Chelsea FC has their home at Stamford Bridge Stadium and are known as the Pride of London.",
+  "displayName": "Chelsea Football Club",
+  "webUrl": "www.chelseafc.com"
 }
 ```
 # [C#](#tab/csharp)
@@ -106,11 +107,11 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "Sports Teams"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "Established in 1905, Chelsea FC has their home at Stamford Bridge Stadium and are known as the Pride of London.",
+  "displayName": "Chelsea Football Club",
+  "webUrl": "www.chelseafc.com"
 }
 ```
 

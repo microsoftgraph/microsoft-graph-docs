@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Delegated (work or school account)     | User.Read, User.ReadWrite |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite |
+| Application                            | User.Read.All, User.ReadWrite.All                            |
 
 ## HTTP request
 
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/names
+GET /users/{id|userPrincipalName}/profile/names
 ```
 
 ## Optional query parameters
@@ -81,7 +82,6 @@ GET https://graph.microsoft.com/beta/me/profile/names
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -99,18 +99,35 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "first": "first-value",
-      "initials": "initials-value",
-      "last": "last-value",
-      "languageTag": "languageTag-value",
-      "maiden": "maiden-value"
-    }
-  ]
-}
+ "names@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/names",
+    "names": [
+        {
+            "displayName": "Irena Koren",
+            "first": "Irena",
+            "initials": "",
+            "last": "Koren",
+            "languageTag": null,
+            "maiden": null,
+            "middle": null,
+            "nickname": null,
+            "suffix": null,
+            "title": null,
+            "pronunciation": null,
+            "allowedAudiences": "everyone",
+            "createdDateTime": "2020-02-18T16:07:14Z",
+            "inference": null,
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+            "id": "7d31dbdd-fe6b-4e2d-8e74-60ddc5eaf0c1",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "AAD",
+                    "id": null
+                }
+            }
+        }
+    ]
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -38,6 +38,7 @@ DELETE /me/profile/interests/{id}
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -75,7 +76,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/interests/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

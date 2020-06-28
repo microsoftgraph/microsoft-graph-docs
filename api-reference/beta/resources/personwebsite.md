@@ -48,11 +48,19 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.personWebsite",
-  "baseType": ""
+  "baseType": "microsoft.graph.itemfacet",
+  "keyProperty": "id"
 }-->
 
 ```json
 {
+  "allowedAudiences": "string",
+  "inference": {"@odata.type": "microsoft.graph.inferenceData"},
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "categories": ["String"],
   "description": "String",
   "displayName": "String",

@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/me/profile/phones
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -106,15 +105,27 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "type": "type-value",
-      "number": "number-value"
-    }
-  ]
-}
+    "phones@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/phones",
+    "phones": [
+        {
+            "displayName": null,
+            "type": "business",
+            "number": "+1 412 555 0109",
+            "allowedAudiences": "organization",
+            "createdDateTime": "2020-02-18T16:07:14Z",
+            "inference": null,
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+            "id": "a545e073-999d-4813-9cc5-b6f45a6560f8",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "AAD",
+                    "id": null
+                }
+            }
+        }
+    ]
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

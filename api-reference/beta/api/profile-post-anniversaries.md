@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/profile/anniversaries 
+POST /me/profile/anniversaries
+POST /users/{id|userPrincipalName}/profile/anniversaries
 ```
 
 ## Request headers
@@ -65,8 +66,8 @@ POST https://graph.microsoft.com/beta/me/profile/anniversaries
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "type": "Wedding",
+  "date": "19-07-2015"
 }
 ```
 # [C#](#tab/csharp)
@@ -82,7 +83,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -101,8 +101,8 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "type": "Wedding",
+  "date": "19-07-2015"
 }
 ```
 

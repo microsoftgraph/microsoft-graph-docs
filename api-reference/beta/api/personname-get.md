@@ -19,11 +19,11 @@ Retrieve the properties and relationships of a [personName](../resources/personn
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Permission type                        | Permissions (from least to most privileged)   |
+|:---------------------------------------|:----------------------------------------------|
+| Delegated (work or school account)     | User.Read, User.ReadWrite                     |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite                     |
+| Application                            | User.Read.All, User.ReadWrite.All             |
 
 ## HTTP request
 
@@ -106,12 +106,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+    "displayName": "Irena Koren",
+    "first": "Irena",
+    "initials": "",
+    "last": "Koren",
+    "languageTag": null,
+    "maiden": null,
+    "middle": null,
+    "nickname": "Reena",
+    "suffix": null,
+    "title": null,
+    "pronunciation": null,
+    "allowedAudiences": "everyone",
+    "createdDateTime": "2020-02-18T16:07:14Z",
+    "inference": null,
+    "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+    "id": "7d31dbdd-fe6b-4e2d-8e74-60ddc5eaf0c1",
+    "createdBy": {
+        "device": null,
+        "user": null,
+        "application": {
+            "displayName": "AAD",
+            "id": null
+        }
+    }
 }
 ```
 

@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/account/{id}
+PATCH /me/profile/accounts/{id}
+PATCH /users/{id|userPrincipalName}/profile/accounts/{id}
 ```
 
 ## Request headers
@@ -72,13 +73,10 @@ PATCH https://graph.microsoft.com/beta/me/profile/account/{id}
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
   "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
+    "locale": "en-AU",
+    "displayName": "English (Australian)"
   },
-  "userPrincipalName": "userPrincipalName-value"
 }
 ```
 # [C#](#tab/csharp)
@@ -113,13 +111,21 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
+  "allowedAudiences": "organization",
+  "ageGroup": "3",
+  "countryCode": "NO",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
-  },
-  "userPrincipalName": "userPrincipalName-value"
+        "locale": "en-AU",
+        "displayName": "English (Australian)"
+      },
+  "source": null,
+  "userPrincipalName": "ikoren@contoso.com"
 }
 ```
 

@@ -19,11 +19,11 @@ Retrieves a list of [itemEmail](../resources/itememail.md) objects from a user's
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                      |
+|:---------------------------------------|:---------------------------------------------------------------------------------|
+| Delegated (work or school account)     | User.Read, User.ReadWrite  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite |
+| Application                            | User.Read.All, User.ReadWrite.All                            |
 
 ## HTTP request
 
@@ -50,7 +50,7 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
-
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -75,6 +75,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/emails
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-emails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,7 +89,6 @@ GET https://graph.microsoft.com/beta/me/profile/emails
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -107,15 +107,27 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{
-  "value": [
-    {
-      "address": "address-value",
-      "displayName": "displayName-value",
-      "type": "type-value"
-    }
-  ]
-}
+    "emails@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/emails",
+    "emails": [
+        {
+            "address": "IrenaK@M365x214355.onmicrosoft.com",
+            "displayName": Business Email Address,
+            "type": "main",
+            "allowedAudiences": "organization",
+            "createdDateTime": "2020-02-13T08:07:14Z",
+            "inference": null,
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+            "id": "cd404929-f35f-4a24-8a02-b625755dcdb2",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "AAD",
+                    "id": null
+                }
+            }
+        }
+    ]
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

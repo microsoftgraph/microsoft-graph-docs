@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegated (work or school account)     | User.Read, User.ReadWrite |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite |
+| Application                            | User.Read.All, User.ReadWrite.All |
 
 ## HTTP request
 
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/languages
+GET /users/{id|userPrincipalName}/profile/languages
 ```
 
 ## Optional query parameters
@@ -50,6 +51,7 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -88,7 +90,6 @@ GET https://graph.microsoft.com/beta/me/profile/languages
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -106,15 +107,29 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "tag": "tag-value",
-      "proficiency": "proficiency-value"
-    }
-  ]
-}
+    "languages@odata.context": "https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/profile/languages",
+    "languages": [
+        {
+            "displayName": "English (United States)",
+            "tag": "en-US",
+            "spoken": "advancedProfessional",
+            "written": "advancedProfessional",
+            "reading": "advancedProfessional",
+            "allowedAudiences": "contacts",
+            "createdDateTime": "2020-02-18T16:07:14Z",
+            "inference": null,
+            "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+            "id": "7a521b6f-3ab8-4b94-9099-7f8eb4447f8e",
+            "createdBy": {
+                "device": null,
+                "user": null,
+                "application": {
+                    "displayName": "AAD",
+                    "id": null
+                }
+            }
+        }
+    ]
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

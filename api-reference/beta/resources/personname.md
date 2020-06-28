@@ -55,22 +55,45 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.personName",
-  "baseType": ""
+  "baseType": "microsoft.graph.itemfacet",
+  "keyProperty": "id"
 }-->
 
 ```json
 {
-  "displayName": "String",
-  "first": "String",
-  "initials": "String",
-  "languageTag": "String",
-  "last": "String",
-  "maiden": "String",
-  "middle": "String",
-  "nickname": "String",
-  "pronunciation": {"@odata.type": "microsoft.graph.yomiPersonName"},
-  "suffix": "String",
-  "title": "String"
+  "allowedAudiences": "everyone",
+  "createdBy": {
+      "device": null,
+      "user": null,
+      "application": {
+          "displayName": "AAD",
+          "id": null
+      }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "displayName": "Irena Koren",
+  "first": "Irena",
+  "id": "7d31dbdd-fe6b-4e2d-8e74-60ddc5eaf0c1",
+  "inference": null,
+  "initials": "",
+  "languageTag": null,
+  "last": "Koren",
+  "lastModifiedBy": {
+      "device": null,
+      "user": null,
+      "application": {
+          "displayName": "AAD",
+          "id": null
+      }
+  },
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "maiden": null,
+  "middle": null,
+  "nickname": null,
+  "pronunciation": null,
+  "source": null,
+  "suffix": null,
+  "title": null
 }
 ```
 

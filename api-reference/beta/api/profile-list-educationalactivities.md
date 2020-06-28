@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Delegated (work or school account)     | User.Read, User.ReadWrite |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite |
+| Application                            | User.Read.All, User.ReadWrite.All                            |
 
 ## HTTP request
 
@@ -50,7 +50,7 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
-
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -75,6 +75,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/educationalActivities
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,7 +89,6 @@ GET https://graph.microsoft.com/beta/me/profile/educationalActivities
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -110,34 +110,34 @@ Content-type: application/json
 {
   "value": [
     {
-      "completionMonthYear": "datetime-value",
-      "endMonthYear": "datetime-value",
+      "completionMonthYear": "20-05-2012",
+      "endMonthYear": "20-05-2012",
       "institution": {
-        "description": "description-value",
-        "displayName": "displayName-value",
+        "description": "Leading educational institute for consulting and IT training",
+        "displayName": "Microsoft University",
         "location": {
-          "type": "type-value",
-          "postOfficeBox": "postOfficeBox-value",
-          "street": "street-value",
-          "city": "city-value",
-          "state": "state-value",
-          "countryOrRegion": "countryOrRegion-value",
-          "postalCode": "postalCode-value"
+          "type": "Business",
+          "postOfficeBox": null,
+          "street": "1 Microsoft Way",
+          "city": "Redmond",
+          "state": "WA",
+          "countryOrRegion": "United States",
+          "postalCode": "98052"
         },
-        "webUrl": "webUrl-value"
+        "webUrl": "www.microsoftuniversity.com"
       },
       "program": {
-        "abbreviation": "abbreviation-value",
-        "activities": "activities-value",
-        "awards": "awards-value",
-        "description": "description-value",
-        "displayName": "displayName-value",
-        "fieldsOfStudy": "fieldsOfStudy-value",
-        "grade": "grade-value",
-        "notes": "notes-value",
-        "webUrl": "webUrl-value"
+        "abbreviation": "MBA",
+        "activities": "Varsity Soccer",
+        "awards": null,
+        "description": "Strategy and Implementation focus.",
+        "displayName": "Master of IT Consulting",
+        "fieldsOfStudy": "Strategy, Consulting",
+        "grade": "3.9",
+        "notes": null,
+        "webUrl": "www.microsoftuniversity.com/master-of-it-consulting"
       },
-      "startMonthYear": "datetime-value"
+      "startMonthYear": "01-08-2010"
     }
   ]
 }

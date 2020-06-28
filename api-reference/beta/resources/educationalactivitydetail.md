@@ -44,15 +44,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "abbreviation": "String",
-  "activities": "String",
-  "awards": "String",
-  "description": "String",
-  "displayName": "String",
-  "fieldsOfStudy": "String",
-  "grade": "String",
-  "notes": "String",
-  "webUrl": "String"
+  "abbreviation": "MBA",
+  "activities": "Varsity Soccer",
+  "awards": null,
+  "description": "Strategy and Implementation focus.",
+  "displayName": "Master of IT Consulting",
+  "fieldsOfStudy": "Strategy, Consulting",
+  "grade": "3.9",
+  "notes": null,
+  "webUrl": "www.microsoftuniversity.com/master-of-it-consulting"
 }
 ```
 

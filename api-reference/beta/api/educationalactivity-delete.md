@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/educationalActivities/{id} 
+DELETE /me/profile/educationalActivities/{id}
 ```
 
 ## Request headers
@@ -38,6 +38,7 @@ DELETE /me/profile/educationalActivities/{id}
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/anniversaries/{id} 
+PATCH /me/profile/anniversaries/{id}
 ```
 
 ## Request headers
@@ -48,6 +48,14 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:-----------------------------------------------------------------|
 |date          |Date         | Contains the date associated with the anniversary type.          |
 |type          |string       | Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
+|allowedAudiences      |string                           | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
+|createdBy             |[identitySet](../resources/identityset.md)    | When the entity was originally created.                                                                                                                                                        |
+|createdDateTime       |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|id                    |String                           | Read-only.                                                                                                                                                                                     |
+|inference             |[inferenceData](../resources/inferencedata.md)| Contains inference detail if the entity is inferred.                                                                                                                                           |
+|lastModifiedBy        |[identitySet](../resources/identityset.md)    | Identifier of the partner or user who last modified the entity.                                                                                                                                |
+|lastModifiedDateTime  |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|source                |String                           |Identify the source from where the data is originally fetched from.
 
 ## Response
 
@@ -70,8 +78,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "type": "birthday",
 }
 ```
 # [C#](#tab/csharp)
@@ -105,8 +112,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "allowedAudiences": "organization",
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "date": "1980-01-08",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "source": "SharePoint UPA",
+  "type": "birthday"
 }
 ```
 

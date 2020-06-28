@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/webAccounts
+POST /users/{id|userPrincipalName}/profile/webAccounts
 ```
 
 ## Request headers
@@ -65,14 +66,14 @@ POST https://graph.microsoft.com/beta/me/profile/webAccounts
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "userId": "userId-value",
+  "description": "My Skype Account",
+  "userId": "ikoren",
   "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
+    "name": "Skype",
+    "webUrl": "https://www.skype.com"
   },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+  "statusMessage": "Hello World!",
+  "webUrl": "https//www.skype.com/profile/ikoren"
 }
 ```
 # [C#](#tab/csharp)
@@ -88,7 +89,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -107,14 +107,14 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "userId": "userId-value",
+  "description": "My Skype Account",
+  "userId": "ikoren",
   "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
+    "name": "Skype",
+    "webUrl": "https://www.skype.com"
   },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+  "statusMessage": "Hello World!",
+  "webUrl": "https//www.skype.com/profile/ikoren"
 }
 ```
 

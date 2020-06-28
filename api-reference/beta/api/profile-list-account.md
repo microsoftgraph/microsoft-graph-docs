@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves properties related to the user's accounts from the [profile](../resources/profile.md).
+Retrieves properties related to the user's account from the [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -21,16 +21,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Delegated (work or school account)     | User.Read, User.ReadWrite |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite |
+| Application                            | User.Read.All, User.ReadWrite.All                            |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/account
+GET /me/profile/accounts
+GET /users/{id|userPrincipalName}/profile/accounts
 ```
 
 ## Optional query parameters
@@ -73,7 +74,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/profile/account
+GET https://graph.microsoft.com/beta/me/profile/accounts
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-account-csharp-snippets.md)]
@@ -108,17 +109,35 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "ageGroup": "ageGroup-value",
-      "countryCode": "countryCode-value",
-      "preferredLanguageTag": {
-        "locale": "locale-value",
-        "displayName": "displayName-value"
-      },
-      "userPrincipalName": "userPrincipalName-value"
+  "allowedAudiences": "organization",
+  "ageGroup": "3",
+  "countryCode": "NO",
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "AAD",
+        "id": null
     }
-  ]
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "preferredLanguageTag": {
+        "locale": "en-AU",
+        "displayName": "English (Australian)"
+      },
+  "source": null,
+  "userPrincipalName": "ikoren@contoso.com"
 }
 ```
 

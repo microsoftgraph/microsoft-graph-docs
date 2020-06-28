@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 PATCH /me/profile/positions/{id}
+PATCH /users/{id|userPrincipalName}/profile/positions/{id}
 ```
 
 ## Request headers
@@ -40,15 +41,14 @@ PATCH /me/profile/positions/{id}
 | Authorization  | Bearer {token}. Required.   |
 | Content-Type   | application/json. Required. |
 
-
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type                                        | Description                                                                                                 |
 |:-------------|:--------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-|categories|String collection                                | Contains categories a user has associated with the position. (eg: digital transformation, ms graph, people) |
-|detail    |[positionDetail](../resources/positiondetail.md) | Contains detail about a users work position.                                                                |
+|categories    |String collection                                | Contains categories a user has associated with the position. (eg: digital transformation, ms graph, people) |
+|detail        |[positionDetail](../resources/positiondetail.md) | Contains detail about a users work position.                                                                |
 
 ## Response
 
@@ -72,34 +72,35 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "consulting"
   ],
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
+      "displayName": "Contoso Ltd.",
+      "pronunciation": "Con ToSo L. t. d.",
+      "department": "Finance",
+      "officeLocation": "12/2110",
       "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+        "type": "business",
+        "postOfficeBox": null,
+        "street": "30 Isabella St., Second Floor",
+        "city": "Anchorage",
+        "state": "AK",
+        "countryOrRegion": "US",
+        "postalCode": "83933"
       },
-      "webUrl": "webUrl-value"
+      "webUrl": "www.contoso.com"
     },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
+    "description": "Consulting role at Contoso",
+    "endMonthYear": "2020-05",
+    "jobTitle": "Consultant II",
+    "role": "Consulting",
+    "startMonthYear": "2019-05",
+    "summary": "One year engagement on Finance team at Contoso"
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workposition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,7 +115,6 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -124,7 +124,9 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workPosition"
+  "@odata.type": "microsoft.graph.workPosition",
+  "baseType": "microsoft.graph.itemfacet",
+  "keyProperty": "id"
 } -->
 
 ```http
@@ -132,32 +134,45 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
+  "categories": [],
+  "allowedAudiences": "organization",
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "id": "1b9e024d-0df8-4b57-af2b-dae70db4f356",
   "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
+      "description": null,
+      "endMonthYear": null,
+      "jobTitle": "Auditor",
+      "startMonthYear": "2001-01-01",
+      "summary": null,
+      "company": {
+          "displayName": "Contoso Ltd.",
+          "pronunciation": null,
+          "department": "Finance",
+          "officeLocation": "12/1110",
+          "webUrl": null,
+          "address": {
+              "type": "business",
+              "postOfficeBox": null,
+              "street": "30 Isabella St., Second Floor",
+              "city": "Pittsburgh",
+              "state": "PA",
+              "countryOrRegion": "US",
+              "postalCode": "15212"
+          }
+      }
+  },
+  "manager": null,
+  "colleagues": [],
+  "isCurrent": "True",
+  "createdBy": {
+      "device": null,
+      "user": null,
+      "application": {
+          "displayName": "AAD",
+          "id": null
+      }
   }
 }
 ```

@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /me/profile/positions/{id}
+DELETE /users/{id|userPrincipalName}/profile/positions/{id}
 ```
 
 ## Request headers
@@ -39,7 +40,6 @@ DELETE /me/profile/positions/{id}
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
 | Content-Type   | application/json. Required. |
-
 
 ## Request body
 
@@ -77,7 +77,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/positions/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

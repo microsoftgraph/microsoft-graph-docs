@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/positions
+POST /users/{id|userPrincipalName}/profile/positions
 ```
 
 ## Request headers
@@ -62,34 +63,35 @@ The following is an example of the request.
 POST https://graph.microsoft.com/Beta/me/profile/positions
 Content-type: application/json
 
-{
-  "categories": [
-    "categories-value"
-  ],
+ {
+  "categories": [],
+  "allowedAudiences": "organization",
   "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  }
+      "description": null,
+      "endMonthYear": null,
+      "jobTitle": "Auditor",
+      "startMonthYear": "2001-01-01",
+      "summary": null,
+      "company": {
+          "displayName": "Contoso Ltd.",
+          "pronunciation": null,
+          "department": "Finance",
+          "officeLocation": "12/1110",
+          "webUrl": null,
+          "address": {
+              "type": "business",
+              "postOfficeBox": null,
+              "street": "30 Isabella St., Second Floor",
+              "city": "Pittsburgh",
+              "state": "PA",
+              "countryOrRegion": "US",
+              "postalCode": "15212"
+          }
+      }
+  },
+  "manager": null,
+  "colleagues": [],
+  "isCurrent": "True"
 }
 ```
 
@@ -110,32 +112,45 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
+  "categories": [],
+  "allowedAudiences": "organization",
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "id": "1b9e024d-0df8-4b57-af2b-dae70db4f356",
   "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
+      "description": null,
+      "endMonthYear": null,
+      "jobTitle": "Auditor",
+      "startMonthYear": "2001-01-01",
+      "summary": null,
+      "company": {
+          "displayName": "Contoso Ltd.",
+          "pronunciation": null,
+          "department": "Finance",
+          "officeLocation": "12/1110",
+          "webUrl": null,
+          "address": {
+              "type": "business",
+              "postOfficeBox": null,
+              "street": "30 Isabella St., Second Floor",
+              "city": "Pittsburgh",
+              "state": "PA",
+              "countryOrRegion": "US",
+              "postalCode": "15212"
+          }
+      }
+  },
+  "manager": null,
+  "colleagues": [],
+  "isCurrent": "True",
+  "createdBy": {
+      "device": null,
+      "user": null,
+      "application": {
+          "displayName": "AAD",
+          "id": null
+      }
   }
 }
 ```

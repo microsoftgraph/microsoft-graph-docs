@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /user/profile/account{id}
+DELETE /user/profile/accounts/{id}
+DELETE /users/{id|userPrincipalName}/profile/accounts/{id}
 ```
 
 ## Request headers

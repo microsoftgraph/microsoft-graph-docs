@@ -27,11 +27,22 @@ Inherits from [itemFacet](itemFacet.md).
 
 ## Properties
 
-| Property     | Type        | Description                                                                                                                                                 |
-|:-------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String       | Contains the long-form name for the language.                                                                                                               |
-|proficiency   |string       | Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
-|tag           |String       | Contains the four-character BCP47 name for the language (en-US, no-NB, en-AU).                                                                              |
+| Property             | Type                            | Description                                                                                                                                                 |
+|:---------------------|:--------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|displayName           |String                           | Contains the long-form name for the language.                                                                                                               |
+|proficiency           |string                           | Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+|tag                   |String                           | Contains the four-character BCP47 name for the language (en-US, no-NB, en-AU).                                                                              |
+|allowedAudiences      |string                           | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
+|createdBy             |[identitySet](identityset.md)    | When the entity was originally created.                                                                                                                                                        |
+|createdDateTime       |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|id                    |String                           | Read-only.                                                                                                                                                                                     |
+|inference             |[inferenceData](inferencedata.md)| Contains inference detail if the entity is inferred.                                                                                                                                           |
+|lastModifiedBy        |[identitySet](identityset.md)    | Identifier of the partner or user who last modified the entity.                                                                                                                                |
+|lastModifiedDateTime  |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|reading               |String                           |Contains information on teh reading language proficiency level.                                                                                                                                 |
+|source                |String                           |Contains the source where the value is originally fetched from.                                                                                                                                 |
+|spoken                |String                           |Contains information on the spoken language proficiency level.                                                                                                                                  |
+|written               |String                           |Contains information on the written language proficiency level.                                                                                                                                 |
 
 ## Relationships
 
@@ -47,14 +58,39 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.languageProficiency",
-  "baseType": ""
+  "baseType": "microsoft.graph.itemfacet",
+  "keyProperty": "id"
 }-->
 
 ```json
 {
-  "displayName": "String",
-  "proficiency": "string",
-  "tag": "String"
+    "allowedAudiences": "contacts",
+    "createdBy": {
+        "device": null,
+        "user": null,
+        "application": {
+            "displayName": "AAD",
+            "id": null
+        }
+    },
+    "createdDateTime": "2020-02-18T16:07:14Z",
+    "displayName": "English (United States)",
+    "id": "7a521b6f-3ab8-4b94-9099-7f8eb4447f8e",
+    "inference": null,
+    "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+    "lastModifiedBy": {
+      "device": null,
+      "user": null,
+      "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+    "reading": "advancedProfessional",
+    "source": "LinkedIn",
+    "spoken": "advancedProfessional",
+    "tag": "en-US",
+    "written": "advancedProfessional"
 }
 ```
 

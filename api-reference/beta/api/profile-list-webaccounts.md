@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/webAccounts
+GET /users/{id|userPrincipalName}/profile/webAccounts
 ```
 
 ## Optional query parameters
@@ -88,7 +89,6 @@ GET https://graph.microsoft.com/beta/me/profile/webAccounts
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -109,14 +109,14 @@ Content-type: application/json
 {
   "value": [
     {
-      "description": "description-value",
-      "userId": "userId-value",
+      "description": "Skype for Life",
+      "userId": "irena.koren",
       "service": {
-        "name": "name-value",
-        "webUrl": "webUrl-value"
+        "name": "Skype",
+        "webUrl": "http://www.skype.com"
       },
-      "statusMessage": "statusMessage-value",
-      "webUrl": "webUrl-value"
+      "statusMessage": "Hello World!",
+      "webUrl": "https://www.skype.com/irena.koren"
     }
   ]
 }

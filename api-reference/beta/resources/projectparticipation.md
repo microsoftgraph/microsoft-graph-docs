@@ -50,17 +50,40 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.projectParticipation",
-  "baseType": ""
+  "baseType": "microsoft.graph.itemfacet",
+  "keyProperty": "id"
 }-->
 
 ```json
 {
-  "categories": ["String"],
-  "client": {"@odata.type": "microsoft.graph.companyDetail"},
-  "colleagues": [{"@odata.type": "microsoft.graph.relatedPerson"}],
-  "detail": {"@odata.type": "microsoft.graph.positionDetail"},
-  "displayName": "String",
-  "sponsors": [{"@odata.type": "microsoft.graph.relatedPerson"}]
+    "allowedAudiences": "everyone",
+    "categories": [],
+    "client": null,
+    "colleagues": [],
+    "createdBy": {
+        "device": null,
+        "user": null,
+        "application": {
+            "displayName": "UPA",
+            "id": null
+        }
+    },
+    "createdDateTime": "2020-02-18T16:07:14Z",
+    "detail": null,
+    "displayName": "Corporate Marketing Guidelines Review",
+    "id": "f7cb9d97-149a-4113-a67c-5ea8b08b7ec4",
+    "inference": null,
+    "lastModifiedBy": {
+        "device": null,
+        "user": null,
+        "application": {
+            "displayName": "UPA",
+            "id": null
+        }
+    },
+    "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+    "source": null,
+    "sponsors": []
 }
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "Update educationalactivity"
+title: "Update educationalActivity"
 description: "Update the properties of an educationalActivity object."
 localization_priority: Normal
 author: "kevinbellinger"
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/educationalActivities/{id} 
+PATCH /me/profile/educationalActivities/{id}
 ```
 
 ## Request headers
@@ -74,34 +74,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 Content-type: application/json
 
 {
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
-  "institution": {
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "location": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
-  },
-  "program": {
-    "abbreviation": "abbreviation-value",
-    "activities": "activities-value",
-    "awards": "awards-value",
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "fieldsOfStudy": "fieldsOfStudy-value",
-    "grade": "grade-value",
-    "notes": "notes-value",
-    "webUrl": "webUrl-value"
-  },
-  "startMonthYear": "datetime-value"
+  "completionMonthYear": "2012-05-20"
 }
 ```
 
@@ -136,34 +109,34 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
+  "completionMonthYear": "2012-05-20",
+  "endMonthYear": "2012-05-20",
   "institution": {
-    "description": "description-value",
-    "displayName": "displayName-value",
+    "description": "Leading educational institute for consulting and IT training",
+    "displayName": "Microsoft University",
     "location": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+      "type": "Business",
+      "postOfficeBox": null,
+      "street": "1 Microsoft Way",
+      "city": "Redmond",
+      "state": "WA",
+      "countryOrRegion": "United States",
+      "postalCode": "98052"
     },
-    "webUrl": "webUrl-value"
+    "webUrl": "www.microsoftuniversity.com"
   },
   "program": {
-    "abbreviation": "abbreviation-value",
-    "activities": "activities-value",
-    "awards": "awards-value",
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "fieldsOfStudy": "fieldsOfStudy-value",
-    "grade": "grade-value",
-    "notes": "notes-value",
-    "webUrl": "webUrl-value"
+    "abbreviation": "MBA",
+    "activities": "Varsity Soccer",
+    "awards": null,
+    "description": "Strategy and Implementation focus.",
+    "displayName": "Master of IT Consulting",
+    "fieldsOfStudy": "Strategy, Consulting",
+    "grade": "3.9",
+    "notes": null,
+    "webUrl": "www.microsoftuniversity.com/master-of-it-consulting"
   },
-  "startMonthYear": "datetime-value"
+  "startMonthYear": "2010-08-01"
 }
 ```
 

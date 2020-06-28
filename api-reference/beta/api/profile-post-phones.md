@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/phones
+POST /users/{id|userPrincipalName}/profile/phones
 ```
 
 ## Request headers
@@ -65,9 +66,10 @@ POST https://graph.microsoft.com/beta/me/profile/phones
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "type": "type-value",
-  "number": "number-value"
+  "displayName": null,
+  "type": "business",
+  "number": "+1 412 555 0109",
+  "allowedAudiences": "organization",
 }
 ```
 # [C#](#tab/csharp)
@@ -102,9 +104,22 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "type": "type-value",
-  "number": "number-value"
+    "displayName": null,
+    "type": "business",
+    "number": "+1 412 555 0109",
+    "allowedAudiences": "organization",
+    "createdDateTime": "2020-02-18T16:07:14Z",
+    "inference": null,
+    "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+    "id": "a545e073-999d-4813-9cc5-b6f45a6560f8",
+    "createdBy": {
+        "device": null,
+        "user": null,
+        "application": {
+            "displayName": "AAD",
+            "id": null
+        }
+    }
 }
 ```
 

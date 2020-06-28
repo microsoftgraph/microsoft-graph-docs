@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 PATCH /me/profile/projects/{id}
+PATCH /users/{id|userPrincipalName}/profile/projects/{id}
 ```
 
 ## Request headers
@@ -76,63 +77,19 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "machine learning"
   ],
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
+    "displayName": "Contoso Intelligence Team",
+    "department": "Contoso Int."
   },
-  "displayName": "displayName-value",
-  "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+  "displayName": "Customer Analytics",
+  "description": "Understanding our customers better",
+  "endMonthYear": "2020-04-21",
+  "jobTitle": "ML Specialist",
+  "role": "project member",
+  "startMonthYear": "2019-03-23",
+  "summary": "Worked as an ML specialist on a project for Contoso to better analyse their customers behaviors on the website."
 }
 ```
 # [C#](#tab/csharp)
@@ -168,63 +125,29 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "machine learning"
   ],
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
+    "displayName": "Contoso Intelligence Team",
+    "pronunciation": null,
+    "department": "Contoso Int.",
+    "officeLocation": null,
+    "address": [],
+    "webUrl": null
   },
-  "displayName": "displayName-value",
+  "displayName": "Customer Analytics",
   "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
+    "company": [],
+    "displayName": "Customer Analytics",
+    "description": "Understanding our customers better",
+    "endMonthYear": "2020-04-21",
+    "jobTitle": "ML Specialist",
+    "role": "project member",
+    "startMonthYear": "2019-03-23",
+    "summary": "Worked as an ML specialist on a project for Contoso to better analyse their customers behaviors on the website."
   },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+  "colleagues": [],
+  "sponsors": []
 }
 ```
 

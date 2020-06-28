@@ -1,5 +1,5 @@
 ---
-title: "Update itemphone"
+title: "Update itemPhone"
 description: "Update the properties of an itemPhone object."
 localization_priority: Normal
 author: "kevinbellinger"
@@ -49,6 +49,14 @@ In the request body, supply the values for relevant fields that should be update
 |displayName   |String       | Contains a friendly name for the phone number.                                                                                  |
 |number        |String       | Contains the phone number.                                                                                                      |
 |type          |string       | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|source                |String                           |Identifier of the source from where the data is originally fetched from.|
+|allowedAudiences      |string                           | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
+|createdBy             |[identitySet](../resources/identityset.md)    | When the entity was originally created.                                                                                                                                                        |
+|createdDateTime       |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|id                    |String                           | Read-only.                                                                                                                                                                                     |
+|inference             |[inferenceData](../resources/inferencedata.md)| Contains inference detail if the entity is inferred.                                                                                                                                           |
+|lastModifiedBy        |[identitySet](../resources/identityset.md)    | Identifier of the partner or user who last modified the entity.                                                                                                                                |
+|lastModifiedDateTime  |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ## Response
 
@@ -71,9 +79,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/phones/{id}
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "type": "type-value",
-  "number": "number-value"
+  "allowedAudiences": "organization",
 }
 ```
 # [C#](#tab/csharp)
@@ -107,9 +113,31 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "type": "type-value",
-  "number": "number-value"
+  "allowedAudiences": "organization",
+  "createdBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "AAD",
+        "id": null
+    }
+  },
+  "createdDateTime": "2020-02-18T16:07:14Z",
+  "displayName": "Main Phone",
+  "id": "61f64b68-198d-4f21-88f9-d73fe674ad7c",
+  "inference": null,
+  "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+  "lastModifiedBy": {
+    "device": null,
+    "user": null,
+    "application": {
+        "displayName": "UPA",
+        "id": null
+    }
+  },
+  "number": "+1 484 4444 3553",
+  "source": null,
+  "type": "mobile"
 }
 ```
 

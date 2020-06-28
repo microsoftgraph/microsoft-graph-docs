@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/languages
+POST /users/{id|userPrincipalName}/profile/languages
 ```
 
 ## Request headers
@@ -65,9 +66,12 @@ POST https://graph.microsoft.com/beta/me/profile/languages
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+  "displayName": "English (United States)",
+  "tag": "en-US",
+  "spoken": "advancedProfessional",
+  "written": "advancedProfessional",
+  "reading": "advancedProfessional",
+  "allowedAudiences": "contacts",
 }
 ```
 # [C#](#tab/csharp)
@@ -83,7 +87,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -102,9 +105,24 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+    "displayName": "English (United States)",
+    "tag": "en-US",
+    "spoken": "advancedProfessional",
+    "written": "advancedProfessional",
+    "reading": "advancedProfessional",
+    "allowedAudiences": "contacts",
+    "createdDateTime": "2020-02-18T16:07:14Z",
+    "inference": null,
+    "lastModifiedDateTime": "2020-02-18T16:07:14Z",
+    "id": "7a521b6f-3ab8-4b94-9099-7f8eb4447f8e",
+    "createdBy": {
+        "device": null,
+        "user": null,
+        "application": {
+            "displayName": "AAD",
+            "id": null
+        }
+    }
 }
 ```
 

@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Delegated (work or school account)     | User.Read, User.ReadWrite  |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite  |
+| Application                            | User.Read.All, User.ReadWrite.All                            |
 
 ## HTTP request
 
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/interests
+GET /users/{id|userPrincipalName}/profile/interests
 ```
 
 ## Optional query parameters
@@ -50,7 +51,7 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
-
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -111,11 +112,11 @@ Content-type: application/json
   "value": [
     {
       "categories": [
-        "categories-value"
+        "Sports Teams"
       ],
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "webUrl": "webUrl-value"
+      "description": "Established in 1905, Chelsea FC has their home at Stamford Bridge Stadium and are known as the Pride of London.",
+      "displayName": "Chelsea Football Club",
+      "webUrl": "www.chelseafc.com"
     }
   ]
 }
