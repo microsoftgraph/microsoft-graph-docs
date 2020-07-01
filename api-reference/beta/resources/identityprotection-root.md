@@ -21,7 +21,6 @@ Identity Protection is a tool that allows organizations to discover, investigate
 
 * [signIn](signin.md) - Query Microsoft Graph for information about Azure AD sign-ins with specific properties related to risk state, detail, and level. A sign-in risk represents the probability that a given authentication request isn’t authorized by the identity owner. These risks can be calculated in real-time or calculated offline using Microsoft’s internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
 
-* [identityRiskEvents](identityriskevent.md) - Query Microsoft Graph for a list of risk detections and associated information. This API is deprecated; we recommend that you use **riskDetections** instead.
 
 >[!NOTE]
 >The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).

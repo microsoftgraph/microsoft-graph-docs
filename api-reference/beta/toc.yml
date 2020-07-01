@@ -9545,37 +9545,6 @@ items:
       - name: Identity protection
         href: resources/identityprotection-root.md
         items:
-        - name: Identity risk events
-          href: resources/identityriskevent.md
-          items:
-          - name: List identityRiskEvent
-            href: api/identityriskevent-list.md
-          - name: Get identityRiskEvent
-            href: api/identityriskevent-get.md
-          - name: List anonymousIpRiskEvent
-            href: api/anonymousipriskevent-list.md
-          - name: Get anonymousIpRiskEvent
-            href: api/anonymousipriskevent-get.md
-          - name: List impossibleTravelRiskEvent
-            href: api/impossibletravelriskevent-list.md
-          - name: Get impossibleTravelRiskEvent
-            href: api/impossibletravelriskevent-get.md
-          - name: List leakedCredentialsRiskEvent
-            href: api/leakedcredentialsriskevent-list.md
-          - name: Get leakedCredentialsRiskEvent
-            href: api/leakedcredentialsriskevent-get.md
-          - name: List malwareRiskEvent
-            href: api/malwareriskevent-list.md
-          - name: Get malwareRiskEvent
-            href: api/malwareriskevent-get.md
-          - name: List suspiciousIpRiskEvent
-            href: api/suspiciousipriskevent-list.md
-          - name: Get suspiciousIpRiskEvent
-            href: api/suspiciousipriskevent-get.md
-          - name: List unfamiliarLocationRiskEvent
-            href: api/unfamiliarlocationriskevent-list.md
-          - name: Get unfamiliarLocationRiskEvent
-            href: api/unfamiliarlocationriskevent-get.md
         - name: Risk detection
           href: resources/riskdetection.md
           items:
