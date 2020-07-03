@@ -75,7 +75,8 @@ GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{exte
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
-
+>**Note:** that equals signs inside the $expand extensions expression need to be uri encoded, thus sections like `$expand=extensions($filter=id eq '{extensionId}')` should be transmitted as `$expand=extensions($filter%3Did eq '{extensionId}')`  
+Failing to correctly encode the = symbol will result in an HTTP 400 with the message: Parsing OData Select and Expand failed: Found an unbalanced bracket expression.
 
 For the device, group, organization, and user resource types, you must also use a `$select` parameter to include
 the **id** property and any other properties you want from the resource instance:
