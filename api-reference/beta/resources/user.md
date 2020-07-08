@@ -168,7 +168,7 @@ This resource supports:
 | id | String | The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). <br><br>Returned by default. Not nullable. Read-only.|
 | identities | [objectIdentity](objectIdentity.md) collection | Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same **signInType** value. <br><br>Returned only on $select. Supports $filter. |
 | imAddresses | String collection | The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
-| infoCatalogs | String collection | Identifies the info segments assigned to the group. Returned by default. |
+| infoCatalogs | String collection | Identifies the info segments assigned to the user. Returned by default. |
 | interests | String collection | A list for the user to describe their interests. <br><br>Returned only on $select. |
 | isResourceAccount | Boolean | `true` if the user is a resource account; otherwise, `false`. Null value should be considered `false`. <br><br>Returned only on $select. |
 | jobTitle | String | The user’s job title. <br><br>Returned by default. Supports $filter.|
