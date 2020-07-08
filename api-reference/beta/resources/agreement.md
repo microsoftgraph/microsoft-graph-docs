@@ -23,7 +23,7 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 | [List agreements](../api/agreement-list.md) | [agreement](agreement.md) collection | Get an agreement object collection. |
 | [Get agreement](../api/agreement-get.md) | [agreement](agreement.md) | Read properties and relationships of an agreement object. |
 | [Update agreement](../api/agreement-update.md) | [agreement](agreement.md) | Update an agreement object. |
-| [Delete agreement](../api/agreement-delete.md) | None | Delete an agreement object. |
+| [Delete agreement](../api/agreement-delete.md) | None | Delete an agreement object |
 <!--
 | [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
 | [List files](../api/agreement-list-files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
