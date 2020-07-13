@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# printJob: cancelPrintJob
+# Cancel printJob
 
 Namespace: microsoft.graph
 
