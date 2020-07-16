@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Get todoTaskList
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Read the properties and relationships of a [todoTaskList](../resources/todotasklist.md) object.
 
 ## Permissions

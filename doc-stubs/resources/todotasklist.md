@@ -1,9 +1,9 @@
 ---
 title: "todoTaskList resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A list that contains To Do tasks (collection of todoTasks objects)."
+author: "avijityadav"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "To Do"
 doc_type: resourcePageType
 ---
 
@@ -11,10 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+A list that contains To Do tasks (collection of [todoTasks](./todotask.md) objects). 
 
-Inherits from [entity](../resources/entity.md).
+In To Do, There are some default Task lists created My Day, Important, Planned, Assigned to You, Flagged emails and Tasks.  You cannot rename or delete these task lists but you can create additional task lists.
+
+This resource supports
+* Adding your data to custom properties as [extensions](/graph/extensibility-overview)
+* Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions and updates.
+
 
 ## Methods
 |Method|Return type|Description|
