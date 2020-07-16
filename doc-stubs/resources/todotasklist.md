@@ -3,7 +3,7 @@ title: "todoTaskList resource type"
 description: "A list that contains To Do tasks (collection of todoTasks objects)."
 author: "avijityadav"
 localization_priority: Normal
-ms.prod: "To Do"
+ms.prod: "Microsoft To Do"
 doc_type: resourcePageType
 ---
 
@@ -15,40 +15,36 @@ Namespace: microsoft.graph
 
 A list that contains To Do tasks (collection of [todoTasks](./todotask.md) objects). 
 
-In To Do, There are some default Task lists created My Day, Important, Planned, Assigned to You, Flagged emails and Tasks.  You cannot rename or delete these task lists but you can create additional task lists.
+In To Do, There are some default Task lists like Flagged emails and Tasks.  You cannot rename or delete these task lists but you can create additional task lists.
 
 This resource supports
 * Adding your data to custom properties as [extensions](/graph/extensibility-overview)
 * Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions and updates.
 
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List todoTaskLists](../api/todotasklist-list.md)|[todoTaskList](../resources/todotasklist.md) collection|Get a list of the [todoTaskList](../resources/todotasklist.md) objects and their properties.|
-|[Create todoTaskList](../api/todotasklist-post-lists.md)|[todoTaskList](../resources/todotasklist.md)|Create a new [todoTaskList](../resources/todotasklist.md) object.|
-|[Get todoTaskList](../api/todotasklist-get.md)|[todoTaskList](../resources/todotasklist.md)|Read the properties and relationships of a [todoTaskList](../resources/todotasklist.md) object.|
-|[Update todoTaskList](../api/todotasklist-update.md)|[todoTaskList](../resources/todotasklist.md)|Update the properties of a [todoTaskList](../resources/todotasklist.md) object.|
-|[Delete todoTaskList](../api/todotasklist-delete.md)|None|Deletes a [todoTaskList](../resources/todotasklist.md) object.|
-|[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](../resources/todotask.md) collection|Get the todoTasks from the tasks navigation property.|
-|[Create tasks](../api/todotasklist-post-tasks.md)|[todoTask](../resources/todotask.md)|Create a new tasks object.|
-|[Get tasks](../api/todotasklist-get-todotask.md)|[todoTask](../resources/todotask.md)|Read the properties and relationships of a [todoTask](../resources/todotask.md) object.|
-|[Update tasks](../api/todotasklist-update-tasks.md)|[todoTask](../resources/todotask.md)|Update the properties of a tasks object.|
-|[Delete tasks](../api/todotasklist-delete-tasks.md)|None|Delete a [todoTask](../resources/todotask.md) object.|
+|[List todoTaskLists](../api/todoTaskList-list.md)|[todoTaskList](../resources/todoTaskList.md) collection|Get all the [todoTaskLists](../resources/todoTaskList.md) in the users mailbox.|
+|[Create todoTaskList](../api/todoTaskList-post-lists.md)|[todoTaskList](../resources/todoTaskList.md)|Create a new [todoTaskList](../resources/todoTaskList.md) object.|
+|[Get todoTaskList](../api/todoTaskList-get.md)|[todoTaskList](../resources/todoTaskList.md)|Read the properties and relationships of the specified [todoTaskList](../resources/todoTaskList.md).|
+|[Update todoTaskList](../api/todoTaskList-update.md)|[todoTaskList](../resources/todoTaskList.md)| Update the writable properties of the specified [todoTaskList](../resources/todoTaskList.md).|
+|[Delete todoTaskList](../api/todoTaskList-delete.md)|None| Delete the specified [todoTaskList](../resources/todoTaskList.md) .|
+|[List tasks](../api/todoTaskList-list-tasks.md)|[todoTask](../resources/task.md) collection|Get all the To Do tasks in the specified [todoTaskList](../resources/todoTaskList.md)|
+|[Create task](../api/todoTaskList-post-tasks.md)|[todoTask](../resources/task.md)| Create an Outlook To Do in the specified [todoTaskList](../resources/todoTaskList.md)|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|isOwner|Boolean|**TODO: Add Description**|
-|isShared|Boolean|**TODO: Add Description**|
-|wellknownListName|wellknownListName|**TODO: Add Description**. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|displayName|String|The name of the task list.|
+|id|String| The identifier of the task list, unique in the user's mailbox. Read-only. Inherited from [entity](../resources/entity.md)|
+|isOwner|Boolean| True if the user is owner of the given task list.|
+|isShared|Boolean| True if the task list is shared with other users|
+|wellknownListName|wellknownListName| Property indicating the well known list name if the given list is a well know list. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|tasks|[todoTask](../resources/todotask.md) collection|**TODO: Add Description**|
+|tasks|[task](../resources/task.md) collection|The tasks in this task list. Read-only. Nullable.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
