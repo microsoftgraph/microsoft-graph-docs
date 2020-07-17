@@ -9458,6 +9458,10 @@ items:
             href: api/device-post-registeredowners.md
           - name: Create registered user
             href: api/device-post-registeredusers.md
+          - name: Remove registered owner
+            href: api/device-delete-registeredowners.md
+          - name: Remove registered user
+            href: api/device-delete-registeredusers.md
           - name: List device groups
             href: api/device-list-memberof.md
           - name: List device transitive groups

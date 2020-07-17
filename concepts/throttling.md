@@ -57,13 +57,19 @@ The following resources currently provide a `Retry-After` header:
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
+- [Threat assessment request](/graph/api/resources/threatassessmentrequest)
+- [Mail assessment request](/graph/api/resources/mailassessmentrequest)
+- [Email file assessment request](/graph/api/resources/emailfileassessmentrequest)
+- [File assessment request](/graph/api/resources/fileassessmentrequest)
+- [URL assessment request](/graph/api/resources/urlassessmentrequest)
+- [Threat assessment result](/graph/api/resources/threatassessmentresult)
 - [Trending](/graph/api/resources/insights-trending)
 - [Used insight](/graph/api/resources/insights-used)
 - [Shared insight](/graph/api/resources/insights-shared)
 - [User settings](/graph/api/resources/usersettings)
 - [Invitation](/graph/api/resources/invitation)
 
-For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
+For a broader discussion of throttling in the Microsoft Cloud, see [Throttling pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
 > [!NOTE]
 > If no `Retry-After` header is provided by the response, we recommend implementing an exponential backoff retry policy. You can also implement [more advanced patterns](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) when building large-scale applications.
@@ -172,6 +178,17 @@ A maximum of 3000 messages per app per day can be sent to a given channel.
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
+### Information protection
+
+The following limits apply to any request on `/informationProtection`.
+
+| Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
+|---------------------------|-------------------------------------------------------------|------------------------------------------------------|
+| POST                      | 150 requests per 15 minutes and 10000 requests per 24 hours | 1 request per 15 minutes and 3 requests per 24 hours |
+
+The preceding limits apply to the following resources:  
+threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
+
 ### Identity protection and conditional access service limits
 
 | Request type | Limit per tenant |
@@ -182,6 +199,7 @@ The preceding limits apply to the following resources:
 riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
 
 > **Note:** at the moment the resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+
 ### Insights service limits
 
 The following limits apply to any request on `me/insights` or `users/{id}/insights`.

@@ -297,7 +297,6 @@ The following is a JSON representation of the resource.
   "preferredLanguage": "string",
   "theme": "string"
 }
-
 ```
 
 ## See also

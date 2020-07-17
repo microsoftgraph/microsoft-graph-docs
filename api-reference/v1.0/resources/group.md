@@ -363,7 +363,6 @@ The following is a JSON representation of the resource.
   "sites": [ { "@odata.type": "microsoft.graph.site" } ],
   "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
 }
-
 ```
 
 ## See also
