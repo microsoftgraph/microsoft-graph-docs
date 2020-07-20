@@ -86,6 +86,58 @@ If you're using the es6 modules from the npm package, make sure to include polyf
 
 If you're using the mgt-loader.js script from the bundle on unpkg, the polyfills are already included.
 
+### Sharepoint
+
+If you plan to support IE11 in your SPFx webparts, the following process describes the necessary steps to ensure cross-browser compatibility: 
+
+1. Install the following packages:
+```cmd
+npm install -D babel-loader @babel/core @babel/preset-env webpack
+npm install -D @webcomponents/webcomponentsjs regenerator-runtime core-js
+npm install @microsoft/mgt
+```
+
+2. Insert the following config in your gulpfile.js just above your build.initialze(gulp);
+```ts
+build.configureWebpack.mergeConfig({
+  additionalConfiguration: (generatedConfiguration) => {
+    generatedConfiguration.module.rules.push(
+      {
+        test: /\.m?js$/, use:
+        {
+          loader: "babel-loader",
+          options:
+          {
+            presets: [["@babel/preset-env",
+              {
+                targets: {
+                  "ie": "11"
+                }
+              }]]
+          }
+        }
+      }
+    );
+
+    return generatedConfiguration;
+  }
+});
+```
+
+
+3. In your *WebPart.ts file, import the following polyfills before import of the providers
+```ts
+import 'regenerator-runtime/runtime';
+import 'core-js/es/number';
+import 'core-js/es/math';
+import 'core-js/es/string';
+import 'core-js/es/date';
+import 'core-js/es/array';
+import 'core-js/es/regexp';
+import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
+```
+
+To learn more, see [sharepoint provider](./providers/sharepoint.md).
 
 ## Using the components with React, Angular, and other frameworks
 
@@ -190,3 +242,4 @@ Finally, use the component as you normally would in your template.
 ```html
 <mgt-person [personDetails]="person" show-name></mgt-person>
 ```
+

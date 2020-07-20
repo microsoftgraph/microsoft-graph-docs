@@ -35,6 +35,7 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |id|String|Unique GUID for the enrollment profile.|
 |displayName|String|Display name for the enrollment profile.|
 |description|String|Description for the enrollment profile.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
 |lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
 |tokenValue|String|Value of the most recently created token for this enrollment profile.|
@@ -63,6 +64,7 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
+  "enrollmentMode": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "tokenValue": "String",

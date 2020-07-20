@@ -47,9 +47,11 @@ Content-Type: application/json
       "from": 0,
       "size": 25,
       "stored_fields": [
-        "title",
-        "priority",
-        "description"
+        "number",
+        "shortdescription",
+        "syscreatedon",
+        "accessurl",
+        "previewContent"
       ]
     }
   ]

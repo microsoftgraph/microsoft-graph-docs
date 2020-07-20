@@ -20,6 +20,7 @@ You can use Intune app protection policies to help protect your company’s data
 
 The following Graph resources are available to manage app protection polices in Intune:
 
+- [Android device owner enrollment mode](intune-androidforwork-androiddeviceownerenrollmentmode.md)
 - [Android device owner enrollment profile](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
 - [Android enrollment company code](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android for Work app](intune-apps-androidforworkapp.md)

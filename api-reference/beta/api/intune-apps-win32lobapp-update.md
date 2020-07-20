@@ -87,6 +87,7 @@ The following table shows the properties that are required when you create the [
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|The MSI details if this Win32 app is an MSI app.|
 |setupFilePath|String|The relative path of the setup file in the encrypted Win32LobApp package.|
 |installLanguage|String|Not yet documented|
+|minimumSupportedWindowsRelease|String|The value for the minimum supported windows release.|
 
 
 
@@ -100,7 +101,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 3224
+Content-length: 3304
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -204,7 +205,8 @@ Content-length: 3224
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "installLanguage": "Install Language value"
+  "installLanguage": "Install Language value",
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
 
@@ -213,7 +215,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3396
+Content-Length: 3476
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -320,7 +322,8 @@ Content-Length: 3396
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "installLanguage": "Install Language value"
+  "installLanguage": "Install Language value",
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
 

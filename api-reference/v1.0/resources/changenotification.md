@@ -28,7 +28,6 @@ None.
 | id | string | Unique ID for the notification. Optional. |
 | resource | string | The URI of the resource that emitted the change notification relative to `https://graph.microsoft.com`. Required. |
 | resourceData | [microsoft.graph.resourceData](resourcedata.md) | The content of this property depends on the type of resource being subscribed to. Required. |
-| sequenceNumber | int | A number in sequence for a notification, to help the client app identify if notifications are in sequence or if a notification is missing. Optional. |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. Required. |
 | subscriptionId | string | The unique identifier of the subscription that generated the notification. |
 | tenantId | guid | The unique identifier of the tenant from which the change notification originated. |
@@ -55,7 +54,6 @@ The following is a JSON representation of the resource.
   "changeType": "created",
   "clientState": "client state provided when creating subscription",
   "id": "15ee1d1f-af7b-42d9-885b-9d00db065dd9",
-  "sequenceNumber": 20,
   "tenantId": "2c937fad-a8a7-496c-b0e4-bf77dcc7eb2a",
   "subscriptionExpirationDateTime": "2020-04-12T23:20:50.52Z",
   "resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",

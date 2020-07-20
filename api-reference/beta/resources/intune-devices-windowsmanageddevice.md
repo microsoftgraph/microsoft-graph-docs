@@ -115,6 +115,7 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

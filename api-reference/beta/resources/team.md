@@ -26,9 +26,13 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Get team](../api/team-get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](/graph/api/group-delete?view=graph-rest-1.0) | None |Delete the team and its associated group. |
-|[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
+|[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the conversationMembers from the members navigation property.|
+|[Add members](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member.|
+|[Remove members](../api/team-delete-members.md)|None|Delete a [conversationMember](../resources/conversationmember.md) object.|
+|[Change member's role](../api/conversationmember-update.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
+|[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 |[List all teams](/graph/teams-list-all-teams) | [group](group.md) collection | List all groups that have teams. |
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
@@ -59,8 +63,10 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |:---------------|:--------|:----------|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
+|members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user delegated permissions, no owner can be specified (the current user is the owner). Owner must be specified as an object ID (GUID), not a UPN. |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
+|photo|[profilePhoto](../resources/profilephoto.md)|The team photo.|
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. | 
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates). |
@@ -94,7 +100,6 @@ The following is a JSON representation of the resource.
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

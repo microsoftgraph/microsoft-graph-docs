@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
+Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties) from Microsoft 365.
 
-A GET photo method first attempts to retrieve the specified photo from Microsoft 365. If the photo is not available in Microsoft 365, the API attempts to retrieve the photo from Azure Active Directory.
+> **Note**: When attempting to GET a **user** photo, this operation first attempts to retrieve the specified photo from Microsoft 365. If the photo is not available in Microsoft 365, the API attempts to retrieve the photo from Azure Active Directory.
 
 The supported sizes of HD photos in Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.

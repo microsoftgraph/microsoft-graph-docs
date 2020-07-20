@@ -8,6 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var unifiedRoleAssignmentMultiple = new UnifiedRoleAssignmentMultiple
 {
+	DisplayName = "My test role assignment 1",
 	RoleDefinitionId = "c2cf284d-6c41-4e6b-afac-4b80928c9034",
 	PrincipalIds = new List<String>()
 	{

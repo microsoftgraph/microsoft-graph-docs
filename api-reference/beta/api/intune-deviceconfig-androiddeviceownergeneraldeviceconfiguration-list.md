@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5761
+Content-Length: 6112
 
 {
   "value": [
@@ -117,7 +117,6 @@ Content-Length: 5761
       "microsoftLauncherDockPresenceConfiguration": "show",
       "microsoftLauncherDockPresenceAllowUserModification": true,
       "microsoftLauncherSearchBarPlacementConfiguration": "top",
-      "microsoftLauncherSearchBarPlacementAllowUserModification": true,
       "enrollmentProfile": "dedicatedDevice",
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
@@ -152,6 +151,16 @@ Content-Length: 5761
       "kioskModeWiFiConfigurationEnabled": true,
       "kioskModeFlashlightConfigurationEnabled": true,
       "kioskModeMediaVolumeConfigurationEnabled": true,
+      "kioskModeShowDeviceInfo": true,
+      "kioskModeManagedSettingsEntryDisabled": true,
+      "kioskModeDebugMenuEasyAccessEnabled": true,
+      "kioskModeShowAppNotificationBadge": true,
+      "kioskModeScreenOrientation": "portrait",
+      "kioskModeIconSize": "smallest",
+      "kioskModeFolderIcon": "darkSquare",
+      "kioskModeWifiAllowedSsids": [
+        "Kiosk Mode Wifi Allowed Ssids value"
+      ],
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,
       "nfcBlockOutgoingBeam": true,

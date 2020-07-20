@@ -27,6 +27,9 @@ Inherits from [stsPolicy](stsPolicy.md).
 | [Update homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-update.md) | None | Update a homeRealmDiscoveryPolicy object. |
 | [Delete homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-delete.md) | None | Delete a homeRealmDiscoveryPolicy object. |
 | [List appliesTo](../api/homerealmdiscoverypolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [Assign homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md) | None | Assign a homeRealmDiscoveryPolicy object to a [servicePrincipal](serviceprincipal.md) object. |
+| [List assigned homeRealmDiscoveryPolicy](../api/serviceprincipal-list-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection | List the homeRealmDiscoveryPolicy objects that are assigned to a [servicePrincipal](serviceprincipal.md) object. |
+| [Remove homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md) | None | Remove a homeRealmDiscoveryPolicy object from a [servicePrincipal](serviceprincipal.md) object. |
 
 ## Properties
 

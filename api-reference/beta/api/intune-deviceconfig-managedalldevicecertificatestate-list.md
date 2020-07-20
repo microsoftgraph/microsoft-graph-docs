@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 869
+Content-Length: 958
 
 {
   "value": [
@@ -68,6 +68,7 @@ Content-Length: 869
       "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
       "id": "987c6a17-6a17-987c-176a-7c98176a7c98",
       "certificateRevokeStatus": "pending",
+      "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:34.9547208-08:00",
       "managedDeviceDisplayName": "Managed Device Display Name value",
       "userPrincipalName": "User Principal Name value",
       "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
@@ -77,8 +78,7 @@ Content-Length: 869
       "certificateSubjectName": "Certificate Subject Name value",
       "certificateKeyUsages": 4,
       "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-      "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
-      "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
+      "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
     }
   ]
 }

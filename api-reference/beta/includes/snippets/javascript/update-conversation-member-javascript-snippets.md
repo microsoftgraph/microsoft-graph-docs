@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const conversationMember = {
+  @odata.type:"#microsoft.graph.aadUserConversationMember",
   roles: ["owner"]
 };
 

@@ -80,6 +80,16 @@ items:
         href: azuread-users-concept-overview.md
       - name: Groups
         href: office365-groups-concept-overview.md
+      - name: Applications
+        items:    
+          - name: Overview
+            href: applications-concept-overview.md
+          - name: Automate SAML-based SSO configuration
+            href: https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api?context=/graph/context
+          - name: Configure application proxy
+            href: application-proxy-configure-api.md
+          - name: Configure provisioning
+            href: https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api?context=/graph/context
       - name: Calendar
         displayName: Outlook
         items:
@@ -125,8 +135,6 @@ items:
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md
-          - name: Limits
-            href: cloud-communications-limits.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -265,6 +273,8 @@ items:
             href: social-intel-concept-overview.md
           - name: Get information about relevant people
             href: people-example.md
+          - name: Customize the profile card (preview)
+            href: add-properties-profilecard.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
         items:

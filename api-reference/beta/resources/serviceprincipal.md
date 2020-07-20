@@ -55,13 +55,15 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[Remove owner](../api/serviceprincipal-delete-owners.md) |None| Remove an owner from a serviceprincipal.|
 |**Policies**| | |
-|[List assigned policies](../api/policy-list-assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[Assign claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Assign a claimsMappingPolicy to this object.|
 |[List claimsMappingPolicies](../api/serviceprincipal-list-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Get all claimsMappingPolicies assigned to this object.|
-|[Remove claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Remove a tokenLifetimePolicy from this object.|
+|[Remove claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) collection| Remove a claimsMappingPolicy from this object.|
 |[Assign homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection| Assign a homeRealmDiscoveryPolicy to this object.|
 |[List homeRealmDiscoveryPolicies](../api/serviceprincipal-list-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection| Get all homeRealmDiscoveryPolicies assigned to this object.|
 |[Remove homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection| Remove a homeRealmDiscoveryPolicy from this object.|
+|[Assign tokenIssuancePolicy](../api/application-post-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) collection| Assign a tokenIssuancePolicy to this object.|
+|[List tokenIssuancePolicies](../api/application-list-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) collection| Get all tokenIssuancePolicies assigned to this object.|
+|[Remove tokenIssuancePolicy](../api/application-delete-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) collection| Remove a tokenIssuancePolicy from this object.|
 |[Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Assign a tokenLifetimePolicy to this object.|
 |[List tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Get all tokenLifetimePolicies assigned to this object.|
 |[Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Remove a tokenLifetimePolicy from this object.|
@@ -114,16 +116,16 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |:---------------|:--------|:----------|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Principals (users, groups, and service principals) that are assigned to this service principal. Read-only.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Applications that this service principal is assigned to. Read-only. Nullable.|
+|claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) collection|The claimsMappingPolicies assigned to this service principal.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects created by this service principal. Read-only. Nullable.|
 |endpoints|[endpoint](endpoint.md) collection|Endpoints available for discovery. Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.|
+|homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection|The homeRealmDiscoveryPolicies assigned to this service principal.|
 |memberOf|[directoryObject](directoryobject.md) collection|Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable.|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by this service principal. Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of this servicePrincipal. The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object. Read-only. Nullable.|
-|policy|[policy](policy.md) collection|The policies assigned to this service principal.|
-|claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) collection|The claimsMappingPolicies assigned to this service principal.|
-|homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homeRealmDiscoveryPolicy.md) collection|The homeRealmDiscoveryPolicies assigned to this service principal.|
-|tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) collection|The tokenLifetimePolicies assigned to this service principal.|
+|tokenIssuancePolicies|[tokenIssuancePolicy](tokenissuancepolicy.md) collection|The tokenIssuancePolicies assigned to this service principal.|
+|tokenLifetimePolicies|[tokenLifetimePolicy](tokenlifetimepolicy.md) collection|The tokenLifetimePolicies assigned to this service principal.|
 
 ## JSON representation
 

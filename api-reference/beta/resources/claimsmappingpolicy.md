@@ -33,6 +33,9 @@ Inherits from [stsPolicy](stsPolicy.md).
 | [Update claimsMappingPolicy](../api/claimsmappingpolicy-update.md) | None | Update a claimsMappingPolicy object. |
 | [Delete claimsMappingPolicy](../api/claimsmappingpolicy-delete.md) | None | Delete a claimsMappingPolicy object. |
 | [List appliesTo](../api/claimsmappingpolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [Assign claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md) | None | Assign a claimsMappingPolicy to a [servicePrincipal](serviceprincipal.md) object. |
+| [List assigned claimsMappingPolicy](../api/serviceprincipal-list-claimsmappingpolicies.md) | [claimsMappingPolicy](claimsmappingpolicy.md) collection | List the claimsMappingPolicy objects that are assigned to a [servicePrincipal](serviceprincipal.md) object. |
+| [Remove claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md) | None | Remove a claimsMappingPolicy from a [servicePrincipal](serviceprincipal.md) object. |
 
 ## Properties
 

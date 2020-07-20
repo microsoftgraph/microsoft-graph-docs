@@ -29,6 +29,9 @@ Inherits from [stsPolicy](stsPolicy.md).
 | [Update tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | None | Update a tokenLifetimePolicy object. |
 | [Delete tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | None | Delete a tokenLifetimePolicy object. |
 | [List appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md) | None | Assign a tokenLifetimePolicy object to an [application](application.md) or [servicePrincipal](serviceprincipal.md) object. |
+| [List assigned tokenLifetimePolicy](../api/application-list-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) collection | List the tokenLifetimePolicy objects that are assigned to an [application](application.md) or [servicePrincipal](serviceprincipal.md) object. |
+| [Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md) | None | Remove a tokenLifetimePolicy object from an [application](application.md) or [servicePrincipal](serviceprincipal.md) object. |
 
 ## Properties
 

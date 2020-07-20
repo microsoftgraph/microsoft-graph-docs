@@ -94,7 +94,7 @@ Looking for the API reference for this service?
 
 - Use bots to [get started](cloud-communications-get-started.md).
 - Learn more about [calls](cloud-communications-calls.md), [media](cloud-communications-media.md), and [online meetings](cloud-communications-online-meetings.md).
-- View the API usage [limits](cloud-communications-limits.md).
+- View the API usage [limits](throttling.md#cloud-communication-service-limits).
 - Learn how to [manage phone numbers](cloud-communications-phone-number.md) for your bots.
 
 ## See also

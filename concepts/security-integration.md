@@ -19,6 +19,8 @@ You can connect with the Microsoft Graph Security API using any of the following
 | Solution type | Name | Connector | Announcement |
 |:-----|:--------|:--------|:----------|
 | SIEM |Splunk Enterprise and Splunk Cloud|[Microsoft Graph Security API Add-On for Splunk](https://aka.ms/graphsecuritysplunkaddon) | [Blog post](https://aka.ms/graphsecuritysplunkaddonblogpost)<br>[Splunk on Cloud blog post](https://aka.ms/graphsecuritysplunkcloudblogpost)|
+| SIEM |QRadar|[Microsoft Graph Security API Protocol and supported QRadar DSMs](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_logsource_Microsoft_Graph_Security_protocol.html)| - |
+| ITSM |ServiceNow|[Microsoft Graph Security API alert ingestion integration](https://docs.servicenow.com/bundle/orlando-security-management/page/product/secops-integration-sir/secops-integration-ms-graph/concept/ms-graph-about.html)| - |
 | SOAR | Azure Logic Apps / Microsoft Flow | [Microsoft Graph Security connector for Azure Logic Apps, Microsoft Flow and PowerApps](https://aka.ms/graphsecurityconnectors) | [Blog post](https://aka.ms/graphsecurityconnectorsblogpost) |
 | Automation | PowerShell module | [Microsoft Graph Security PowerShell Module](https://aka.ms/graphsecuritypowershellmodule) | [Blog post](https://aka.ms/graphsecuritypowershellmodulepost) |
 | Reporting | Power BI | [Microsoft Graph Security connector for Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc) | [Blog post](https://aka.ms/graphsecuritypowerbiconnectorblogpost) |

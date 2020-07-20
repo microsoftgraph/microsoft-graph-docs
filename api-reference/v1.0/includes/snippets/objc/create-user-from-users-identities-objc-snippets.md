@@ -32,6 +32,7 @@ MSGraphObjectIdentity *identities = [[MSGraphObjectIdentity alloc] init];
 [user setIdentities:identitiesList];
 MSGraphPasswordProfile *passwordProfile = [[MSGraphPasswordProfile alloc] init];
 [passwordProfile setPassword:@"password-value"];
+[passwordProfile setForceChangePasswordNextSignIn: false];
 [user setPasswordProfile:passwordProfile];
 [user setPasswordPolicies:@"DisablePasswordExpiration"];
 

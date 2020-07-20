@@ -79,7 +79,7 @@ mgt-person {
   --font-size: 14px;
   --font-weight: 500;
   --color: black;
-  --background-color: #ffffff;
+  --presence-background-color: #ffffff;
   --text-transform: none;
   --line2-font-size: 12px;
   --line2-font-weight: 400;

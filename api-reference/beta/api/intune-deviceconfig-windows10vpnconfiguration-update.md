@@ -71,7 +71,7 @@ The following table shows the properties that are required when you create the [
 |enableDeviceTunnel|Boolean|Enable device tunnel.|
 |enableDnsRegistration|Boolean|Enable IP address registration with internal DNS.|
 |dnsSuffixes|String collection|Specify DNS suffixes to add to the DNS search list to properly route short names.|
-|authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`.|
+|authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `customEapXml`, `derivedCredential`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |enableConditionalAccess|Boolean|Enable conditional access.|
 |enableSingleSignOnWithAlternateCertificate|Boolean|Enable single sign-on (SSO) with alternate certificate.|

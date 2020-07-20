@@ -30,6 +30,7 @@ Device operating system summary.
 |androidDeviceAdminCount|Int32|Number of device admin Android devices.|
 |androidFullyManagedCount|Int32|Number of fully managed Android devices.|
 |androidWorkProfileCount|Int32|Number of work profile Android devices.|
+|androidCorporateWorkProfileCount|Int32|The count of Corporate work profile Android devices. Also known as Corporate Owned Personally Enabled (COPE). Valid values -1 to 2147483647|
 |configMgrDeviceCount|Int32|Number of ConfigMgr managed devices.|
 
 ## Relationships
@@ -55,6 +56,7 @@ Here is a JSON representation of the resource.
   "androidDeviceAdminCount": 1024,
   "androidFullyManagedCount": 1024,
   "androidWorkProfileCount": 1024,
+  "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024
 }
 ```

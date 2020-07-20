@@ -1,0 +1,256 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "05856c58-6d67-4549-8444-303804773439",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relyingPartyDetailedSummary,listing",
+          "ChangeType": "Addition",
+          "Description": "Added a new resource type [relyingPartyDetailedSummary](https://docs.microsoft.com/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](https://docs.microsoft.com/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.",
+          "Target": "relyingPartyDetailedSummary,listing"
+        }
+      ],
+      "Id": "05856c58-6d67-4549-8444-303804773439",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-04-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d9a16dff-ca55-4629-8aba-7a281d98fe19",
+          "ApiChange": "Property",
+          "ChangedApiName": "Meeting Created,Meeting Interacted",
+          "ChangeType": "Addition",
+          "Description": "Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityCounts](https://docs.microsoft.com/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API CSV entity.",
+          "Target": "getEmailActivityCounts"
+        },
+        {
+          "Id": "d9a16dff-ca55-4629-8aba-7a281d98fe19",
+          "ApiChange": "Property",
+          "ChangedApiName": "Meeting Created,Meeting Interacted",
+          "ChangeType": "Addition",
+          "Description": "Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityUserCounts](https://docs.microsoft.com/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API CSV entity.",
+          "Target": "getEmailActivityUserCounts"
+        },
+        {
+          "Id": "d9a16dff-ca55-4629-8aba-7a281d98fe19",
+          "ApiChange": "Property",
+          "ChangedApiName": "Meeting Created,Meeting Interacted",
+          "ChangeType": "Addition",
+          "Description": "Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityuserDetail](https://docs.microsoft.com/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API CSV entity.",
+          "Target": "getEmailActivityuserDetail"
+        }
+      ],
+      "Id": "d9a16dff-ca55-4629-8aba-7a281d98fe19",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-04-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6310f567-e600-4880-8b05-022360d46d6f",
+          "ApiChange": "Property",
+          "ChangedApiName": "networkDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added **networkDisplayName** property to the [yammerGroupsActivityDetail](https://docs.microsoft.com/graph/api/resources/yammerGroupsActivityDetail?view=graph-rest-beta) entity.",
+          "Target": "yammerGroupsActivityDetail"
+        }
+      ],
+      "Id": "6310f567-e600-4880-8b05-022360d46d6f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-03-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6310f567-e600-4880-8b05-022360d46d6f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Authorization for APIs to read Office 365 usage reports",
+          "ChangeType": "Change",
+          "Description": "For delegated permissions to allow apps to read Office 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles. For more details, see [Authorization for APIs to read Office 365 usage reports](https://docs.microsoft.com/graph/reportroot-authorization?view=graph-rest-1.0).",
+          "Target": "Authorization for APIs to read Office 365 usage reports"
+        }
+      ],
+      "Id": "6310f567-e600-4880-8b05-022360d46d6f",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-03-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fc1299cb-288f-4bc1-9c4b-2ad56709afed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Authorization for APIs to read Office 365 usage reports",
+          "ChangeType": "Change",
+          "Description": "For delegated permissions to allow apps to read Office 365 service usage reports on behalf of a user, the tenant administrator must have assigned the user an Azure AD limited administrator role. For more details, see [Authorization for APIs to read Office 365 usage reports](https://docs.microsoft.com/graph/reportroot-authorization?view=graph-rest-1.0).",
+          "Target": "Authorization for APIs to read Office 365 usage reports"
+        }
+      ],
+      "Id": "fc1299cb-288f-4bc1-9c4b-2ad56709afed",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-12-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "56abb2aa-bab1-4374-8149-76755e2e3ce8",
+          "ApiChange": "Property",
+          "ChangedApiName": "deletedItemCount,deletedItemSizeInBytes",
+          "ChangeType": "Addition",
+          "Description": "Added the **deletedItemCount** and **deletedItemSizeInBytes** property to the [mailboxUsageDetail](https://docs.microsoft.com/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) entity.",
+          "Target": "mailboxUsageDetail"
+        },
+        {
+          "Id": "56abb2aa-bab1-4374-8149-76755e2e3ce8",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupId",
+          "ChangeType": "Addition",
+          "Description": "Added the **groupId** property to the [office365GroupsActivityDetail](https://docs.microsoft.com/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) entity.",
+          "Target": "office365GroupsActivityDetail"
+        },
+        {
+          "Id": "56abb2aa-bab1-4374-8149-76755e2e3ce8",
+          "ApiChange": "Property",
+          "ChangedApiName": "ownerPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](https://docs.microsoft.com/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) entity.",
+          "Target": "oneDriveUsageAccountDetail"
+        },
+        {
+          "Id": "56abb2aa-bab1-4374-8149-76755e2e3ce8",
+          "ApiChange": "Property",
+          "ChangedApiName": "ownerPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the **ownerPrincipalName** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) entity.",
+          "Target": "sharePointSiteUsageDetail"
+        },
+        {
+          "Id": "56abb2aa-bab1-4374-8149-76755e2e3ce8",
+          "ApiChange": "Property",
+          "ChangedApiName": "office365Active,office365Inactive",
+          "ChangeType": "Addition",
+          "Description": "Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](https://docs.microsoft.com/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.",
+          "Target": "office365ServicesUserCounts"
+        }
+      ],
+      "Id": "56abb2aa-bab1-4374-8149-76755e2e3ce8",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-08-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1fa2e841-8de8-4673-abea-a872d3754e0b",
+          "ApiChange": "Property",
+          "ChangedApiName": "deletedItemCount",
+          "ChangeType": "Addition",
+          "Description": "Added **deletedItemCount** property to the [mailboxUsageDetail](https://docs.microsoft.com/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) entity.",
+          "Target": "mailboxUsageDetail"
+        },
+        {
+          "Id": "1fa2e841-8de8-4673-abea-a872d3754e0b",
+          "ApiChange": "Property",
+          "ChangedApiName": "deletedItemSizeInBytes",
+          "ChangeType": "Addition",
+          "Description": "Added **deletedItemSizeInBytes** property to the [mailboxUsageDetail](https://docs.microsoft.com/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) entity.",
+          "Target": "mailboxUsageDetail"
+        },
+        {
+          "Id": "1fa2e841-8de8-4673-abea-a872d3754e0b",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupId",
+          "ChangeType": "Addition",
+          "Description": "Added **groupId** property to the [office365GroupsActivityDetail](https://docs.microsoft.com/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) entity.",
+          "Target": "office365GroupsActivityDetail"
+        }
+      ],
+      "Id": "1fa2e841-8de8-4673-abea-a872d3754e0b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-07-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5254492b-602c-4b30-af9d-f7b8d9b2dee0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reportroot-getcredentialusagesummary,reportroot-getcredentialuserregistrationcount,reportroot-list-credentialuserregistrationdetails,reportroot-list-usercredentialusagedetails",
+          "ChangeType": "Addition",
+          "Description": "Added new reports for retrieving user registration and usage information:, \u003Cul\u003E\u003Cli\u003E[reportroot-getcredentialusagesummary](https://docs.microsoft.com/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.\u003C/li\u003E\u003Cli\u003E[reportroot-getcredentialuserregistrationcount](https://docs.microsoft.com/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-credentialuserregistrationdetails](https://docs.microsoft.com/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.\u003C/li\u003E\u003Cli\u003E[reportroot-list-usercredentialusagedetails](https://docs.microsoft.com/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - Reports usage of self-service password reset for a user.\u003C/li\u003E\u003C/ul\u003E",
+          "Target": "reportroot-getcredentialusagesummary,reportroot-getcredentialuserregistrationcount,reportroot-list-credentialuserregistrationdetails,reportroot-list-usercredentialusagedetails"
+        }
+      ],
+      "Id": "5254492b-602c-4b30-af9d-f7b8d9b2dee0",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-06-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a3b23e5e-7834-4f1f-86e6-5867b15bc50c",
+          "ApiChange": "Property",
+          "ChangedApiName": "ownerPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](https://docs.microsoft.com/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) entity.",
+          "Target": "oneDriveUsageAccountDetail"
+        },
+        {
+          "Id": "a3b23e5e-7834-4f1f-86e6-5867b15bc50c",
+          "ApiChange": "Property",
+          "ChangedApiName": "ownerPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added **ownerPrincipalName** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) entity.",
+          "Target": "sharePointSiteUsageDetail"
+        }
+      ],
+      "Id": "a3b23e5e-7834-4f1f-86e6-5867b15bc50c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-05-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1c75e31b-15e6-4016-90dc-0d9c9d28a543",
+          "ApiChange": "Property",
+          "ChangedApiName": "office365Active,office365Inactive",
+          "ChangeType": "Addition",
+          "Description": "Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](https://docs.microsoft.com/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.",
+          "Target": "office365ServicesUserCounts"
+        }
+      ],
+      "Id": "1c75e31b-15e6-4016-90dc-0d9c9d28a543",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-01-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    }
+  ]
+}

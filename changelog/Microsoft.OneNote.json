@@ -1,0 +1,22 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "2602ceb4-168d-45ea-adc7-27b9b66565fa",
+          "ApiChange": "method",
+          "ChangedApiName": "getNotebookFromWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [getNotebookFromWebUrl](https://docs.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) method.",
+          "Target": "getNotebookFromWebUrl"
+        }
+      ],
+      "Id": "2602ceb4-168d-45ea-adc7-27b9b66565fa",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-02-01T00:00:00",
+      "WorkloadArea": "Notes",
+      "SubArea": ""
+    }
+  ]
+}

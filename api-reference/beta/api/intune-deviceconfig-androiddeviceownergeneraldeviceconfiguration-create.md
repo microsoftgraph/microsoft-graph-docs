@@ -79,7 +79,6 @@ The following table shows the properties that are required when you create the a
 |microsoftLauncherDockPresenceConfiguration|[microsoftLauncherDockPresence](../resources/intune-deviceconfig-microsoftlauncherdockpresence.md)|Indicates whether or not you want to configure the device dock. Possible values are: `notConfigured`, `show`, `hide`, `disabled`.|
 |microsoftLauncherDockPresenceAllowUserModification|Boolean|Indicates whether or not the user can modify the device dock configuration on the device.|
 |microsoftLauncherSearchBarPlacementConfiguration|[microsoftLauncherSearchBarPlacement](../resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md)|Indicates the search bar placement configuration on the device. Possible values are: `notConfigured`, `top`, `bottom`, `hide`.|
-|microsoftLauncherSearchBarPlacementAllowUserModification|Boolean|Indicates whether the user can modify the search bar placement on the device.|
 |enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Indicates which enrollment profile you want to configure. Possible values are: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
 |dataRoamingBlocked|Boolean|Indicates whether or not to block a user from data roaming.|
 |dateTimeConfigurationBlocked|Boolean|Indicates whether or not to block the user from manually changing the date or time on the device|
@@ -101,6 +100,14 @@ The following table shows the properties that are required when you create the a
 |kioskModeWiFiConfigurationEnabled|Boolean|Whether or not to allow a user to configure Wi-Fi settings in Kiosk Mode.|
 |kioskModeFlashlightConfigurationEnabled|Boolean|Whether or not to allow a user to use the flashlight in Kiosk Mode.|
 |kioskModeMediaVolumeConfigurationEnabled|Boolean|Whether or not to allow a user to change the media volume in Kiosk Mode.|
+|kioskModeShowDeviceInfo|Boolean|Whether or not to allow a user to access basic device information.|
+|kioskModeManagedSettingsEntryDisabled|Boolean|Whether or not to display the Managed Settings entry point on the managed home screen in Kiosk Mode.|
+|kioskModeDebugMenuEasyAccessEnabled|Boolean|Whether or not to allow a user to easy access to the debug menu in Kiosk Mode.|
+|kioskModeShowAppNotificationBadge|Boolean|Whether or not to display application notification badges in Kiosk Mode.|
+|kioskModeScreenOrientation|[androidDeviceOwnerKioskModeScreenOrientation](../resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)|Screen orientation configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `portrait`, `landscape`, `autoRotate`.|
+|kioskModeIconSize|[androidDeviceOwnerKioskModeIconSize](../resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)|Icon size configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `smallest`, `small`, `regular`, `large`, `largest`.|
+|kioskModeFolderIcon|[androidDeviceOwnerKioskModeFolderIcon](../resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)|Folder icon configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `darkSquare`, `darkCircle`, `lightSquare`, `lightCircle`.|
+|kioskModeWifiAllowedSsids|String collection|The restricted set of WIFI SSIDs available for the user to configure in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |microphoneForceMute|Boolean|Indicates whether or not to block unmuting the microphone on the device.|
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
@@ -152,7 +159,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 5044
+Content-length: 5359
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -203,7 +210,6 @@ Content-length: 5044
   "microsoftLauncherDockPresenceConfiguration": "show",
   "microsoftLauncherDockPresenceAllowUserModification": true,
   "microsoftLauncherSearchBarPlacementConfiguration": "top",
-  "microsoftLauncherSearchBarPlacementAllowUserModification": true,
   "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
@@ -238,6 +244,16 @@ Content-length: 5044
   "kioskModeWiFiConfigurationEnabled": true,
   "kioskModeFlashlightConfigurationEnabled": true,
   "kioskModeMediaVolumeConfigurationEnabled": true,
+  "kioskModeShowDeviceInfo": true,
+  "kioskModeManagedSettingsEntryDisabled": true,
+  "kioskModeDebugMenuEasyAccessEnabled": true,
+  "kioskModeShowAppNotificationBadge": true,
+  "kioskModeScreenOrientation": "portrait",
+  "kioskModeIconSize": "smallest",
+  "kioskModeFolderIcon": "darkSquare",
+  "kioskModeWifiAllowedSsids": [
+    "Kiosk Mode Wifi Allowed Ssids value"
+  ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -288,7 +304,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5216
+Content-Length: 5531
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -342,7 +358,6 @@ Content-Length: 5216
   "microsoftLauncherDockPresenceConfiguration": "show",
   "microsoftLauncherDockPresenceAllowUserModification": true,
   "microsoftLauncherSearchBarPlacementConfiguration": "top",
-  "microsoftLauncherSearchBarPlacementAllowUserModification": true,
   "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
@@ -377,6 +392,16 @@ Content-Length: 5216
   "kioskModeWiFiConfigurationEnabled": true,
   "kioskModeFlashlightConfigurationEnabled": true,
   "kioskModeMediaVolumeConfigurationEnabled": true,
+  "kioskModeShowDeviceInfo": true,
+  "kioskModeManagedSettingsEntryDisabled": true,
+  "kioskModeDebugMenuEasyAccessEnabled": true,
+  "kioskModeShowAppNotificationBadge": true,
+  "kioskModeScreenOrientation": "portrait",
+  "kioskModeIconSize": "smallest",
+  "kioskModeFolderIcon": "darkSquare",
+  "kioskModeWifiAllowedSsids": [
+    "Kiosk Mode Wifi Allowed Ssids value"
+  ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,

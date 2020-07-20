@@ -19,6 +19,8 @@ you can add to under 8MB.
 
 Use only PUT for this operation in the beta version.
 
+> **Note**:  When updating the **user** photo, this operation first attempts to update the photo in Microsoft 365. If that fails (due to the user not having a mailbox), this API will attempt to update the photo in Azure Active Directory.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | For **user** resource:<br/>User.ReadWrite.All<br /><br />For **group** resource:<br />Group.ReadWrite.All<br /><br />For **contact** resource:<br />Contacts.ReadWrite |
 
-> **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service).
+> **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Updating the photo of the signed-in user only requires User.ReadWrite permission.
 
 > **Note:**  There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
 
@@ -55,6 +57,7 @@ In the request body, include the binary data of the photo in the request body.
 ## Response
 
 If successful, this method returns a `200 OK` response code.
+
 ## Example
 ##### Request
 Here is an example of the request.

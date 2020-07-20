@@ -18,13 +18,13 @@ Retrieve a list of print jobs associated with the [printer](../resources/printer
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printer](printer-get.md) access, and one of the permissions listed in the following table.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Users.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

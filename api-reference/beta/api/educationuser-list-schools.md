@@ -73,17 +73,17 @@ GET https://graph.microsoft.com/beta/education/me/schools
 ```
 
 # [C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

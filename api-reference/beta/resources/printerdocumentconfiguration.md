@@ -103,6 +103,7 @@ A group of settings that a printer should use to print a document.
 |stapleDualTop|29|Staple the document twice along the top edge.|
 |stapleDualRight|30|Staple the document twice along the right edge.|
 |stapleDualBottom|31|Staple the document twice along the bottom edge.|
+|unknownFutureValue|32|Evolvable enumeration sentinel value. Do not use.|
 
 ### printMultipageLayout values
 

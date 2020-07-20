@@ -31,6 +31,7 @@ Not yet documented
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revoke status. Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.|
+|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|The time the revoke status was last changed|
 |managedDeviceDisplayName|String|Device display name|
 |userPrincipalName|String|User principal name|
 |certificateExpirationDateTime|DateTimeOffset|Certificate expiry date|
@@ -41,7 +42,6 @@ Not yet documented
 |certificateKeyUsages|Int32|Key Usage|
 |certificateExtendedKeyUsages|String|Enhanced Key Usage|
 |certificateIssuanceDateTime|DateTimeOffset|Issuance date|
-|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|The time the revoke status was last changed|
 
 ## Relationships
 None
@@ -59,6 +59,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
   "id": "String (identifier)",
   "certificateRevokeStatus": "String",
+  "certificateRevokeStatusLastChangeDateTime": "String (timestamp)",
   "managedDeviceDisplayName": "String",
   "userPrincipalName": "String",
   "certificateExpirationDateTime": "String (timestamp)",
@@ -68,8 +69,7 @@ Here is a JSON representation of the resource.
   "certificateSubjectName": "String",
   "certificateKeyUsages": 1024,
   "certificateExtendedKeyUsages": "String",
-  "certificateIssuanceDateTime": "String (timestamp)",
-  "certificateRevokeStatusLastChangeDateTime": "String (timestamp)"
+  "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
 

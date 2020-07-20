@@ -7,3 +7,4 @@ nuget.exe
 apidoc.exe
 *.dll
 .vs/
+.DS_Store

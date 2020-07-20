@@ -18,13 +18,15 @@ Update the properties of a [printer](../resources/printer.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+In addition to the following permissions, the user's tenant must have an active Universal Print subscription. 
+
+Only the app that registered the printer is allowed to update the printer using application permissions.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Users.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application|Printer.ReadWrite.All|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,20 +37,39 @@ PATCH /print/printers/{id}
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required.|
+| Content-type  | `application/json` when using delegated permissions, `application/ipp` when using application permissions. Required.|
 
 ## Request body
-In the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+
+### Delegated permissions and JSON payload
+
+If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |location|[printerLocation](../resources/printerlocation.md)|The physical and/or organizational location of the printer.|
 |name|String|The name of the printer.|
 
+### Application permissions and IPP payload
+
+If using application permissions, the request body contains a binary stream representing the Printer Attributes group in [IPP encoding](https://tools.ietf.org/html/rfc8010).
+
+The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 4.2](https://tools.ietf.org/html/rfc8011#section-4.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 4.4](https://tools.ietf.org/html/rfc8011#section-4.4) Printer Description Attributes, and any attribute extensions supported by the Printer. The value(s) of each Printer attribute
+supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object. For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.
+
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [printer](../resources/printer.md) object in the response body.
+
+### Delegated permissions and JSON payload
+
+If using delegated permissions, if successful, this method returns a `200 OK` response code and an updated [printer](../resources/printer.md) object in the response body.
+
+### Application permissions and IPP payload
+
+If using application permissions, if successful, this method returns `204 No content` response code. It does not return anything in the response body.
+
 ## Example
-##### Request
+
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -84,7 +105,7 @@ Content-length: 124
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {

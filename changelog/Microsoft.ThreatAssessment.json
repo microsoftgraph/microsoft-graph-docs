@@ -1,0 +1,92 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "ba40d88f-34f6-4799-aa48-c97eeb619a1d",
+          "ApiChange": "Property",
+          "ChangedApiName": "incidentIds,resource,resourceType,sourceLocation,destinationLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the following properties to the [alert](https://docs.microsoft.com/graph/api/resources/alert?view=graph-rest-1.0) entity:  **incidentIds**, [securityResources](https://docs.microsoft.com/graph/api/resources/securityResource?view=graph-rest-1.0) - **resource**, **resourceType**,[networkConnection](https://docs.microsoft.com/graph/api/resources/networkconnection?view=graph-rest-1.0) - **sourceLocation**, **destinationLocation**.",
+          "Target": "alert,securityResources,networkConnection"
+        }
+      ],
+      "Id": "ba40d88f-34f6-4799-aa48-c97eeb619a1d",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-06-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "dfd87582-7138-4cd4-bd36-fbce1d05fc0c",
+          "ApiChange": "method",
+          "ChangedApiName": "comments,Closed in IPC,Closed in MCAS",
+          "ChangeType": "Change",
+          "Description": "The [Update alert](https://docs.microsoft.com/graph/api/alert-update?view=graph-rest-1.0) method now updates the **comments** field with the following values only: ,  **Closed in IPC**, **Closed in MCAS**.",
+          "Target": "Update alert"
+        }
+      ],
+      "Id": "dfd87582-7138-4cd4-bd36-fbce1d05fc0c",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-01-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "813d420f-f1b5-4a9b-9fcd-fbb401940eb7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the Secure Score APIs to the [security API](https://docs.microsoft.com/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations:, [secureScore](https://docs.microsoft.com/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities), [List secureScores](https://docs.microsoft.com/graph/api/securescores-list?view=graph-rest-1.0), [secureScoreControlProfile](https://docs.microsoft.com/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0), [List secureScoreControlProfiles](https://docs.microsoft.com/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0), [Update secureScoreControlProfile](https://docs.microsoft.com/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)",
+          "Target": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile"
+        }
+      ],
+      "Id": "813d420f-f1b5-4a9b-9fcd-fbb401940eb7",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-05-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f07f1230-0bb1-45ca-8212-b7c88695a8cb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators",
+          "ChangeType": "Addition",
+          "Description": "Added the threat intelligence (TI) indicator APIs to the [security API](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [tiindicator](https://docs.microsoft.com/graph/api/resources/tiindicator?view=graph-rest-beta) (and related entities),  [Get tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-get?view=graph-rest-beta), [Create tiIndicator](https://docs.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta), [List tiIndicators](https://docs.microsoft.com/graph/api/tiindicators-list?view=graph-rest-beta), [Update tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-update?view=graph-rest-beta) , [Delete tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-delete?view=graph-rest-beta) , [deleteTiIndicators](https://docs.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta) , [deleteTiIndicatorsByExternalId](https://docs.microsoft.com/graph/api/tiindicator-deletetiindicatorsbyexternalid?view=graph-rest-beta) , [submitTiIndicators](https://docs.microsoft.com/graph/api/tiindicator-submittiindicators?view=graph-rest-beta) , [updateTiIndicators](https://docs.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)",
+          "Target": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators"
+        },
+        {
+          "Id": "f07f1230-0bb1-45ca-8212-b7c88695a8cb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction",
+          "ChangeType": "Addition",
+          "Description": "Added the security action APIs to the [security API](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [securityAction](https://docs.microsoft.com/graph/api/resources/securityaction?view=graph-rest-beta) (and related entities),  [Get securityAction](https://docs.microsoft.com/graph/api/securityaction-get?view=graph-rest-beta), [Create securityAction](https://docs.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta), [List securityAction](https://docs.microsoft.com/graph/api/securityactions-list?view=graph-rest-beta), [Cancel securityAction](https://docs.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)",
+          "Target": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction"
+        },
+        {
+          "Id": "f07f1230-0bb1-45ca-8212-b7c88695a8cb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "historyStates,updateAlerts",
+          "ChangeType": "Addition",
+          "Description": "Introduced new complex type [historyStates](https://docs.microsoft.com/graph/api/resources/alerthistorystate?view=graph-rest-beta) collection to alert. \u003C/br\u003EAdded [updateAlerts](https://docs.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-beta) functionality to update multiple alerts in one request.",
+          "Target": "historyStates,updateAlerts"
+        }
+      ],
+      "Id": "f07f1230-0bb1-45ca-8212-b7c88695a8cb",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-02-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    }
+  ]
+}

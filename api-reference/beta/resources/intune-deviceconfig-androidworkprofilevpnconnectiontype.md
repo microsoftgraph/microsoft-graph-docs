@@ -27,6 +27,7 @@ Android Work Profile VPN connection type.
 |checkPointCapsuleVpn|4|Check Point Capsule VPN.|
 |citrix|5|Citrix|
 |paloAltoGlobalProtect|6|Palo Alto Networks GlobalProtect.|
+|microsoftTunnel|7|Microsoft Tunnel.|
 
 
 

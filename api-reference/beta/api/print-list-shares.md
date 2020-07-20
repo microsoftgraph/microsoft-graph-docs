@@ -35,6 +35,8 @@ GET /print/shares
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+To see a list of each printer share's capabilities, include the optional `$select=capabilities` query parameter.
+
 ### Exceptions
 Some operators are not supported: `$count`, `$orderby`, `$search`.
 

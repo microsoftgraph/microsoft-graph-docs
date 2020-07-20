@@ -43,12 +43,16 @@ Inherits from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfigurati
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
 |connectionName|String|Connection name displayed to the user. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |role|String|Role when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |realm|String|Realm when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`.|
+|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.|
+|proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy server.|
+|targetedPackageIds|String collection|Targeted App package IDs.|
+|alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
+|alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -117,7 +121,18 @@ Here is a JSON representation of the resource.
       "isDefaultServer": true
     }
   ],
-  "connectionType": "String"
+  "connectionType": "String",
+  "proxyServer": {
+    "@odata.type": "microsoft.graph.vpnProxyServer",
+    "automaticConfigurationScriptUrl": "String",
+    "address": "String",
+    "port": 1024
+  },
+  "targetedPackageIds": [
+    "String"
+  ],
+  "alwaysOn": true,
+  "alwaysOnLockdown": true
 }
 ```
 

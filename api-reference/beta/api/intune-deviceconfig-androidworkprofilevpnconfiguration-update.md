@@ -62,14 +62,18 @@ The following table shows the properties that are required when you create the [
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |connectionName|String|Connection name displayed to the user.|
-|connectionType|[androidWorkProfileVpnConnectionType](../resources/intune-deviceconfig-androidworkprofilevpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `paloAltoGlobalProtect`.|
+|connectionType|[androidWorkProfileVpnConnectionType](../resources/intune-deviceconfig-androidworkprofilevpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `paloAltoGlobalProtect`, `microsoftTunnel`.|
 |role|String|Role when connection type is set to Pulse Secure.|
 |realm|String|Realm when connection type is set to Pulse Secure.|
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements.|
 |fingerprint|String|Fingerprint is a string that will be used to verify the VPN server can be trusted, which is only applicable when connection type is Check Point Capsule VPN.|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
 |customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
-|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
+|proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy server.|
+|targetedPackageIds|String collection|Targeted App package IDs.|
+|alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
+|alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 
 
 
@@ -83,7 +87,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1762
+Content-length: 2103
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileVpnConfiguration",
@@ -142,7 +146,18 @@ Content-length: 1762
       "value": "Value value"
     }
   ],
-  "authenticationMethod": "usernameAndPassword"
+  "authenticationMethod": "usernameAndPassword",
+  "proxyServer": {
+    "@odata.type": "microsoft.graph.vpnProxyServer",
+    "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+    "address": "Address value",
+    "port": 4
+  },
+  "targetedPackageIds": [
+    "Targeted Package Ids value"
+  ],
+  "alwaysOn": true,
+  "alwaysOnLockdown": true
 }
 ```
 
@@ -151,7 +166,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1934
+Content-Length: 2275
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileVpnConfiguration",
@@ -213,7 +228,18 @@ Content-Length: 1934
       "value": "Value value"
     }
   ],
-  "authenticationMethod": "usernameAndPassword"
+  "authenticationMethod": "usernameAndPassword",
+  "proxyServer": {
+    "@odata.type": "microsoft.graph.vpnProxyServer",
+    "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+    "address": "Address value",
+    "port": 4
+  },
+  "targetedPackageIds": [
+    "Targeted Package Ids value"
+  ],
+  "alwaysOn": true,
+  "alwaysOnLockdown": true
 }
 ```
 

@@ -1,0 +1,22 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "4678f203-5fda-45a7-b9f4-ea46441ca97d",
+          "ApiChange": "Property",
+          "ChangedApiName": "priority",
+          "ChangeType": "Addition",
+          "Description": "Added the **priority** property to the [plannerTask](https://docs.microsoft.com/graph/api/resources/plannertask?view=graph-rest-beta) entity.",
+          "Target": "plannerTask"
+        }
+      ],
+      "Id": "4678f203-5fda-45a7-b9f4-ea46441ca97d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-08-01T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    }
+  ]
+}

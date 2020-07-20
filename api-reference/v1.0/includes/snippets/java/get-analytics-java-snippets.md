@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ISiteCollectionPage followedSites = graphClient.me().followedSites()
+ItemAnalytics itemAnalytics = graphClient.drives("{drive-id}").items("{item-id}").analytics()
 	.buildRequest()
 	.get();
 

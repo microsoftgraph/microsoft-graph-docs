@@ -100,8 +100,8 @@ properties:
 
 | Property name  | Value                  | Description\                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **code**       | string                 | An error code string for the error that occured                                                            |
-| **message**    | string                 | A developer ready message about the error that occured. This should not be displayed to the user directly. |
+| **code**       | string                 | An error code string for the error that occurred                                                            |
+| **message**    | string                 | A developer ready message about the error that occurred. This should not be displayed to the user directly. |
 | **innererror** | error object           | Optional. Additional error objects that may be more specific than the top level error.                     |
 
 <!--<a name="msg_code_property"> </a> -->

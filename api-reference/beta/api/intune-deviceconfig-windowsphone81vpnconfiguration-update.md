@@ -71,7 +71,7 @@ The following table shows the properties that are required when you create the [
 |proxyServer|[windows81VpnProxyServer](../resources/intune-deviceconfig-windows81vpnproxyserver.md)|Proxy Server. Inherited from [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |bypassVpnOnCompanyWifi|Boolean|Bypass VPN on company Wi-Fi.|
 |bypassVpnOnHomeWifi|Boolean|Bypass VPN on home Wi-Fi.|
-|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |dnsSuffixSearchList|String collection|DNS suffix search list.|
 

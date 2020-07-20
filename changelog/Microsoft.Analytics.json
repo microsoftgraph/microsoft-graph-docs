@@ -1,0 +1,74 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "13a644b5-d34f-4466-b461-e22d12bf154b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?",
+          "ChangeType": "Addition",
+          "Description": "Insights API is available in v1.0. This includes the [officeGraphInsights](https://docs.microsoft.com/graph/api/resources/officegraphinsights?view=graph-rest-1.0), [trending](https://docs.microsoft.com/graph/api/resources/insights-trending?view=graph-rest-1.0), [usedInsight](https://docs.microsoft.com/graph/api/resources/insights-used?view=graph-rest-1.0), and [sharedInsight](https://docs.microsoft.com/graph/api/resources/insights-shared?view=graph-rest-1.0) resources, and related types and methods. See [Why integrate with document-based insights?](social-intel-concept-overview.md#why-integrate-with-document-based-insights) for more information.",
+          "Target": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?"
+        }
+      ],
+      "Id": "13a644b5-d34f-4466-b461-e22d12bf154b",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-12-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": "Insights"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "59da2663-2468-4d38-b6e7-5d1ffd941c10",
+          "ApiChange": "method",
+          "ChangedApiName": "profile API",
+          "ChangeType": "Addition",
+          "Description": "Added the [profile API](https://docs.microsoft.com/graph/api/resources/profile?view=graph-rest-beta) and associated methods.",
+          "Target": "profile API"
+        }
+      ],
+      "Id": "59da2663-2468-4d38-b6e7-5d1ffd941c10",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Profile"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b8ea34ce-8842-499c-8190-a9252471337b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analytics API",
+          "ChangeType": "Addition",
+          "Description": "Introduced the new workplace intelligence [analytics API](https://docs.microsoft.com/graph/api/resources/useranalytics?view=graph-rest-beta) that enables you to get analytics about how users spend their time on various activities during and outside of working hours, including calls, chats (instant messages), emails, focus work, and meetings.",
+          "Target": "analytics API"
+        },
+        {
+          "Id": "b8ea34ce-8842-499c-8190-a9252471337b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settings API,analytics API",
+          "ChangeType": "Addition",
+          "Description": "Introduced the new workplace intelligence [settings API](https://docs.microsoft.com/graph/api/resources/settings?view=graph-rest-beta) that represents the current required settings for a user to use the [analytics API](https://docs.microsoft.com/graph/api/resources/useranalytics?view=graph-rest-beta).",
+          "Target": "settings API,analytics API"
+        },
+        {
+          "Id": "b8ea34ce-8842-499c-8190-a9252471337b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics",
+          "ChangeType": "Addition",
+          "Description": "Introduced the new [activityStatistics](https://docs.microsoft.com/graph/api/resources/activitystatistics?view=graph-rest-beta) resource type and the following new resource types that are derived from it: [callActivityStatistics](https://docs.microsoft.com/graph/api/resources/callactivitystatistics?view=graph-rest-beta), [chatActivityStatistics](https://docs.microsoft.com/graph/api/resources/chatactivitystatistics?view=graph-rest-beta),[emailActivityStatistics](https://docs.microsoft.com/graph/api/resources/emailactivitystatistics?view=graph-rest-beta), [focusActivityStatistics](https://docs.microsoft.com/graph/api/resources/focusactivitystatistics?view=graph-rest-beta), and [meetingActivityStatistics](https://docs.microsoft.com/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta).",
+          "Target": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics"
+        }
+      ],
+      "Id": "b8ea34ce-8842-499c-8190-a9252471337b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-08-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Analytics"
+    }
+  ]
+}

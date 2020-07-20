@@ -524,6 +524,20 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _ChatMessage.Send_ (private preview) | Send user chat messages | Allows an app to send 1:1 and group chat messages in Microsoft Teams, on behalf of the signed-in user. | No | No |
 
+## Cloud printing permissions
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Printer.ReadWrite.All_ | Read and update printers | Allows the application to read and update printers without a signed-in user. Does not allow creating (registering) or deleting (unregistering) printers. | Yes |
+| _PrintJob.Read.All_ | Read print jobs | Allows the application to read the metadata and document content of print jobs without a signed-in user. | Yes |
+| _PrintJob.ReadBasic.All_ | Read basic information for print jobs | Allows the application to read the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Yes |
+| _PrintJob.ReadWrite.All_ | Read and write print jobs | Allows the application to read and update the metadata and document content of print jobs without a signed-in user. | Yes |
+| _PrintJob.ReadWriteBasic.All_ | Read and write basic information for print jobs | Allows the application to read and update the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Yes |
+
+---
+
 ## Contacts permissions
 
 #### Delegated permissions

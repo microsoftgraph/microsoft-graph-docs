@@ -1,0 +1,110 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "5263cd4c-32bb-49ef-ba70-e950ce732503",
+          "ApiChange": "Resource",
+          "ChangedApiName": "changeNotification,changeNotificationCollection,changeNotificationEncryptedContent,change notification",
+          "ChangeType": "Addition",
+          "Description": "Added the [changeNotification](https://docs.microsoft.com/graph/api/resources/changenotification?view=graph-rest-beta), [changeNotificationCollection](https://docs.microsoft.com/graph/api/resources/changenotificationcollection?view=graph-rest-beta), and [changeNotificationEncryptedContent](https://docs.microsoft.com/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta) resources for the [change notification](https://docs.microsoft.com/graph/api/concepts/webhooks) API.",
+          "Target": "changeNotification,changeNotificationCollection,changeNotificationEncryptedContent,change notification"
+        }
+      ],
+      "Id": "5263cd4c-32bb-49ef-ba70-e950ce732503",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-05-01T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5263cd4c-32bb-49ef-ba70-e950ce732503",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subscription,Microsoft Cloud for US Government",
+          "ChangeType": "Addition",
+          "Description": "Added support for [subscription](https://docs.microsoft.com/graph/api/resources/subscription) in [Microsoft Cloud for US Government](deployments.md).",
+          "Target": "subscription,Microsoft Cloud for US Government"
+        }
+      ],
+      "Id": "5263cd4c-32bb-49ef-ba70-e950ce732503",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-05-01T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ea6f3be6-1825-40ad-b418-552b600431ec",
+          "ApiChange": "Property",
+          "ChangedApiName": "chatMessage,Set up change notifications for chat messages, including message properties (preview)",
+          "ChangeType": "Addition",
+          "Description": "Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](https://docs.microsoft.com/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).",
+          "Target": "chatMessage,Set up change notifications for chat messages, including message properties (preview)"
+        }
+      ],
+      "Id": "ea6f3be6-1825-40ad-b418-552b600431ec",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-12-01T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b5aee945-0d57-44c6-b7b7-b9d1ca1ecff9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Create and send notifications",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create and send notifications](https://docs.microsoft.com/graph/api/user-post-notifications?view=graph-rest-beta) API to enable targeting users without managing the on-behalf-of tokens.",
+          "Target": "Create and send notifications"
+        },
+        {
+          "Id": "b5aee945-0d57-44c6-b7b7-b9d1ca1ecff9",
+          "ApiChange": "Property",
+          "ChangedApiName": "targetPolicy",
+          "ChangeType": "Addition",
+          "Description": "Introduced the **targetPolicy** property on the [notification](https://docs.microsoft.com/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable web endpoints to be targeted via webpush.",
+          "Target": "notification"
+        },
+        {
+          "Id": "b5aee945-0d57-44c6-b7b7-b9d1ca1ecff9",
+          "ApiChange": "Property",
+          "ChangedApiName": "fallbackPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **fallbackPolicy** property on the [notification](https://docs.microsoft.com/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable guaranteed delivery on iOS for high-priority notifications.",
+          "Target": "notification"
+        }
+      ],
+      "Id": "b5aee945-0d57-44c6-b7b7-b9d1ca1ecff9",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-10-01T00:00:00",
+      "WorkloadArea": "Notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a98cbffc-c376-400b-aed6-dc16cc9ffa01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subscriptionRemoved,missed",
+          "ChangeType": "Addition",
+          "Description": "Added two types of lifecycle notifications, **subscriptionRemoved** and **missed**, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](webhooks-outlook-authz.md).",
+          "Target": "Reduce missing subscriptions and notifications for Outlook resources (preview)"
+        }
+      ],
+      "Id": "a98cbffc-c376-400b-aed6-dc16cc9ffa01",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-04-01T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    }
+  ]
+}

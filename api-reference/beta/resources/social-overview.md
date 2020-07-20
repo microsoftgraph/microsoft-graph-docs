@@ -32,6 +32,14 @@ People who seek to contextualize others within their organization commonly view 
 
 The [profile](../resources/profile.md) resource is a rich source of information about people within a tenant and provides a lightweight mechanism for storing and retrieving information about a person. 
 
+## Personalize people experiences within your organization
+
+Feature: Profile card customization (preview)
+
+Provides the ability for an administrator to customize the information shown on the profile card used across Microsoft 365 within their organization.
+
+The [profileCardProperty](../resources/profileCardProperty.md) resource represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared, people experience.
+
 ## Help users get the most relevant documents for their work
 
 Feature: Document insights

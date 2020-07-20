@@ -1,0 +1,134 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "f188e6e3-e2e7-49ef-b61c-ebf620a1f82e",
+          "ApiChange": "Property",
+          "ChangedApiName": "followedSites",
+          "ChangeType": "Addition",
+          "Description": "Added the **followedSites** navigation property to the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta) entity to [list the sites followed by the signed-in user](https://docs.microsoft.com/graph/api/sites-list-followed?view=graph-rest-beta).",
+          "Target": "user,list the sites followed by the signed-in user"
+        }
+      ],
+      "Id": "f188e6e3-e2e7-49ef-b61c-ebf620a1f82e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-04-01T00:00:00",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f188e6e3-e2e7-49ef-b61c-ebf620a1f82e",
+          "ApiChange": "Property",
+          "ChangedApiName": "followedSites",
+          "ChangeType": "Addition",
+          "Description": "Added the **followedSites** navigation property to the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) entity to [list the sites followed by the signed-in user](https://docs.microsoft.com/graph/api/sites-list-followed?view=graph-rest-1.0).",
+          "Target": "user,list the sites followed by the signed-in user"
+        },
+        {
+          "Id": "f188e6e3-e2e7-49ef-b61c-ebf620a1f82e",
+          "ApiChange": "Property",
+          "ChangedApiName": "dataLocatonCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **dataLocatonCode** property on the [siteCollection](https://docs.microsoft.com/graph/api/resources/sitecollection?view=graph-rest-1.0) resource.",
+          "Target": "siteCollection"
+        },
+        {
+          "Id": "f188e6e3-e2e7-49ef-b61c-ebf620a1f82e",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property on the [sharepointIds](https://docs.microsoft.com/graph/api/resources/sharepointids?view=graph-rest-1.0) resource.",
+          "Target": "sharepointIds"
+        }
+      ],
+      "Id": "f188e6e3-e2e7-49ef-b61c-ebf620a1f82e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-04-01T00:00:00",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5639d105-b2d3-439f-8bc8-4ba72d27895e",
+          "ApiChange": "Property",
+          "ChangedApiName": "followSite,user",
+          "ChangeType": "Addition",
+          "Description": "Added the [followSite](https://docs.microsoft.com/graph/api/site-follow?view=graph-rest-1.0) navigation property to the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) entity.",
+          "Target": "followSite,user"
+        },
+        {
+          "Id": "5639d105-b2d3-439f-8bc8-4ba72d27895e",
+          "ApiChange": "Property",
+          "ChangedApiName": "unfollowSite,user",
+          "ChangeType": "Addition",
+          "Description": "Added the [unfollowSite](https://docs.microsoft.com/graph/api/site-unfollow?view=graph-rest-1.0) navigation property to the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) entity.",
+          "Target": "unfollowSite,user"
+        },
+        {
+          "Id": "5639d105-b2d3-439f-8bc8-4ba72d27895e",
+          "ApiChange": "Property",
+          "ChangedApiName": "subscriptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **subscriptions** navigation property to the [list](https://docs.microsoft.com/graph/api/resources/list?view=graph-rest-1.0) entity.",
+          "Target": "list"
+        }
+      ],
+      "Id": "5639d105-b2d3-439f-8bc8-4ba72d27895e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-03-01T00:00:00",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c73d472e-c085-4706-8b76-774bf3904c59",
+          "ApiChange": "Property",
+          "ChangedApiName": "subscriptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **subscriptions** navigation property to the [list](https://docs.microsoft.com/graph/api/resources/list?view=graph-rest-beta) entity.",
+          "Target": "list"
+        }
+      ],
+      "Id": "c73d472e-c085-4706-8b76-774bf3904c59",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-07-01T00:00:00",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6f672ab9-e034-44d7-8041-0ad8931b6e34",
+          "ApiChange": "Property",
+          "ChangedApiName": "followSite,user",
+          "ChangeType": "Addition",
+          "Description": "Added the [followSite](https://docs.microsoft.com/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Target": "followSite,user"
+        },
+        {
+          "Id": "6f672ab9-e034-44d7-8041-0ad8931b6e34",
+          "ApiChange": "Property",
+          "ChangedApiName": "unfollowSite,user",
+          "ChangeType": "Addition",
+          "Description": "Added the [unfollowSite](https://docs.microsoft.com/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Target": "unfollowSite,user"
+        }
+      ],
+      "Id": "6f672ab9-e034-44d7-8041-0ad8931b6e34",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-06-01T00:00:00",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    }
+  ]
+}

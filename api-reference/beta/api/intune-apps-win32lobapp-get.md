@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3625
+Content-Length: 3707
 
 {
   "value": {
@@ -173,7 +173,8 @@ Content-Length: 3625
       "publisher": "Publisher value"
     },
     "setupFilePath": "Setup File Path value",
-    "installLanguage": "Install Language value"
+    "installLanguage": "Install Language value",
+    "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
   }
 }
 ```

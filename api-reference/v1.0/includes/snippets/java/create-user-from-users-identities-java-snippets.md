@@ -27,6 +27,7 @@ identitiesList.add(identities2);
 user.identities = identitiesList;
 PasswordProfile passwordProfile = new PasswordProfile();
 passwordProfile.password = "password-value";
+passwordProfile.forceChangePasswordNextSignIn = false;
 user.passwordProfile = passwordProfile;
 user.passwordPolicies = "DisablePasswordExpiration";
 

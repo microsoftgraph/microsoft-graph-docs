@@ -79,6 +79,7 @@ Represents the printer's default settings. Check the printer's [capabilities](..
 |stapleDualTop|29|Staple the document twice along the top edge.|
 |stapleDualRight|30|Staple the document twice along the right edge.|
 |stapleDualBottom|31|Staple the document twice along the bottom edge.|
+|unknownFutureValue|32|Evolvable enumeration sentinel value. Do not use.|
 
 ## printOrientation values
 
@@ -88,24 +89,6 @@ Represents the printer's default settings. Check the printer's [capabilities](..
 |landscape|4|The printer will print impressions in the "landscape" orientation.|
 |reverseLandscape|5|The printer will print impressions in the "reverse landscape" orientation.|
 |reversePortrait|6|The printer will print impressions in the "reverse portrait" orientation.|
-
-### printMediaType values
-
-|Member|Value|Description|
-|:---|:---|:---|
-|stationery|0|Standard sheets of paper.|
-|transparency|1|Transparency film used with overhead projectors.|
-|envelope|2|An envelope.|
-|envelopePlain|3|A plain envelope.|
-|continuous|4|A continuous roll of paper.|
-|screen|5|A digital screen.|
-|screenPaged|6|A digital screen with support for paging.|
-|continuousLong|7|A long continuous roll of paper.|
-|continuousShort|8|A short continuous roll of paper.|
-|envelopeWindow|9|An envelope with a transparent window cut-out.|
-|multiPartForm|10|A multi-part perforated form.|
-|multiLayer|11|A multi-layer medium.|
-|labels|12|A sheet with label cut-outs.|
 
 ### printQuality values
 

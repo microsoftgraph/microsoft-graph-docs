@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2207
+Content-Length: 2592
 
 {
   "value": [
@@ -125,7 +125,18 @@ Content-Length: 2207
           "value": "Value value"
         }
       ],
-      "authenticationMethod": "usernameAndPassword"
+      "authenticationMethod": "usernameAndPassword",
+      "proxyServer": {
+        "@odata.type": "microsoft.graph.vpnProxyServer",
+        "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+        "address": "Address value",
+        "port": 4
+      },
+      "targetedPackageIds": [
+        "Targeted Package Ids value"
+      ],
+      "alwaysOn": true,
+      "alwaysOnLockdown": true
     }
   ]
 }

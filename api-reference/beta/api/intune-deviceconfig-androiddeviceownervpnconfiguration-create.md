@@ -60,12 +60,16 @@ The following table shows the properties that are required when you create the a
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
 |connectionName|String|Connection name displayed to the user. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |role|String|Role when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |realm|String|Realm when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`.|
+|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.|
+|proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy server.|
+|targetedPackageIds|String collection|Targeted App package IDs.|
+|alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
+|alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 
 
 
@@ -79,7 +83,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1417
+Content-length: 1758
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
@@ -123,7 +127,18 @@ Content-length: 1417
       "isDefaultServer": true
     }
   ],
-  "connectionType": "pulseSecure"
+  "connectionType": "pulseSecure",
+  "proxyServer": {
+    "@odata.type": "microsoft.graph.vpnProxyServer",
+    "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+    "address": "Address value",
+    "port": 4
+  },
+  "targetedPackageIds": [
+    "Targeted Package Ids value"
+  ],
+  "alwaysOn": true,
+  "alwaysOnLockdown": true
 }
 ```
 
@@ -132,7 +147,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1589
+Content-Length: 1930
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
@@ -179,7 +194,18 @@ Content-Length: 1589
       "isDefaultServer": true
     }
   ],
-  "connectionType": "pulseSecure"
+  "connectionType": "pulseSecure",
+  "proxyServer": {
+    "@odata.type": "microsoft.graph.vpnProxyServer",
+    "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+    "address": "Address value",
+    "port": 4
+  },
+  "targetedPackageIds": [
+    "Targeted Package Ids value"
+  ],
+  "alwaysOn": true,
+  "alwaysOnLockdown": true
 }
 ```
 

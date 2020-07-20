@@ -28,6 +28,7 @@ Devices that are managed or pre-enrolled through Intune
 |[setDeviceName action](../api/intune-devices-manageddevice-setdevicename.md)|None|Set device name of the device.|
 |[rotateFileVaultKey action](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|None|Not yet documented|
 |[getFileVaultKey function](../api/intune-devices-manageddevice-getfilevaultkey.md)|String|Not yet documented|
+|[createDeviceLogCollectionRequest action](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Not yet documented|
 |[retire action](../api/intune-devices-manageddevice-retire.md)|None|Retire a device|
 |[wipe action](../api/intune-devices-manageddevice-wipe.md)|None|Wipe a device|
 |[resetPasscode action](../api/intune-devices-manageddevice-resetpasscode.md)|None|Reset passcode|
@@ -137,6 +138,7 @@ Devices that are managed or pre-enrolled through Intune
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status.|
 |users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device.|
+|logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

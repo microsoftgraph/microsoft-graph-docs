@@ -52,6 +52,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Unique GUID for the enrollment profile.|
 |displayName|String|Display name for the enrollment profile.|
 |description|String|Description for the enrollment profile.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
 |lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
 |tokenValue|String|Value of the most recently created token for this enrollment profile.|
@@ -74,13 +75,14 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
-Content-length: 627
+Content-length: 678
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
   "accountId": "Account Id value",
   "displayName": "Display Name value",
   "description": "Description value",
+  "enrollmentMode": "corporateOwnedFullyManaged",
   "tokenValue": "Token Value value",
   "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
@@ -102,7 +104,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 799
+Content-Length: 850
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -110,6 +112,7 @@ Content-Length: 799
   "id": "a8d0245e-245e-a8d0-5e24-d0a85e24d0a8",
   "displayName": "Display Name value",
   "description": "Description value",
+  "enrollmentMode": "corporateOwnedFullyManaged",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "tokenValue": "Token Value value",

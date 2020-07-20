@@ -1,0 +1,110 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mgt-get",
+          "ChangeType": "Addition",
+          "Description": "Added the [mgt-get](https://docs.microsoft.com/graph/toolkit/components/get) component.",
+          "Target": "mgt-get"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Proxy provider",
+          "ChangeType": "Addition",
+          "Description": "Added [Proxy provider](https://docs.microsoft.com/graph/toolkit/providers/proxy).",
+          "Target": "Proxy provider"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inherit-details",
+          "ChangeType": "Addition",
+          "Description": "Added the **inherit-details** attribute to the [person card component](https://docs.microsoft.com/graph/toolkit/components/person).",
+          "Target": "person card component"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Property",
+          "ChangedApiName": "selectedPeople",
+          "ChangeType": "Addition",
+          "Description": "Added the **selectedPeople** property to the [people picker component](https://docs.microsoft.com/graph/toolkit/components/people-picker).",
+          "Target": "people picker component"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loading,error",
+          "ChangeType": "Addition",
+          "Description": "Added the **loading** and **error** templates to the [people picker component](https://docs.microsoft.com/graph/toolkit/components/people-picker).",
+          "Target": "people picker component"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "task,task-details",
+          "ChangeType": "Addition",
+          "Description": "Added the **task** and **task-details** templates to the [tasks component](https://docs.microsoft.com/graph/toolkit/components/tasks).",
+          "Target": "tasks component"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Property",
+          "ChangedApiName": "isNewTaskVisible",
+          "ChangeType": "Addition",
+          "Description": "Added the **isNewTaskVisible** property to the [tasks component](https://docs.microsoft.com/graph/toolkit/components/tasks).",
+          "Target": "tasks component"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "group-id",
+          "ChangeType": "Addition",
+          "Description": "Added the **group-id** attribute to the [tasks component](https://docs.microsoft.com/graph/toolkit/components/tasks).",
+          "Target": "tasks component"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Property",
+          "ChangedApiName": "taskFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **taskFilter** property to the [tasks component](https://docs.microsoft.com/graph/toolkit/components/tasks).",
+          "Target": "tasks component"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventClick",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventClick** event to the [agenda component](https://docs.microsoft.com/graph/toolkit/components/agenda).",
+          "Target": "agenda component"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "person-card",
+          "ChangeType": "Addition",
+          "Description": "Added the **person-card** attribute to the [people component](https://docs.microsoft.com/graph/toolkit/components/people).",
+          "Target": "people component"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "user-ids",
+          "ChangeType": "Addition",
+          "Description": "Added the **user-ids** attribute to the [people component](https://docs.microsoft.com/graph/toolkit/components/people).",
+          "Target": "people component"
+        }
+      ],
+      "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-12-01T00:00:00",
+      "WorkloadArea": "Microsoft Graph Toolkit",
+      "SubArea": ""
+    }
+  ]
+}

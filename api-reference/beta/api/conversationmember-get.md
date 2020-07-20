@@ -92,6 +92,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http

@@ -9,7 +9,11 @@ ms.custom: scenarios:getting-started
 
 # Overview of people and workplace intelligence in Microsoft Graph
 
-The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
+The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. 
+
+The profile API lets you, as app developers, model and represent people in Microsoft 365 services, and the profile card API lets administrators control the information showing on users' profile cards in the organization.
+
+As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
 
 - "Who should this user contact for information on this topic?"
 - "Which documents are most interesting to this person?"
@@ -54,6 +58,13 @@ GET /me/people/?$search="topic:beetle"
 
 A fuzzy search in the topic data index return instances that mean the beetle insect, the iconic Volkswagen Beetle car, the Beatles band, and other definitions.
 
+## Why integrate with the profile API (preview)?
+
+The [profile](/graph/api/resources/profile) API represents the next generation in modeling and representing people in Microsoft 365 services. Profile data can be used together with people data to build customized experiences based on Microsoft Graph.
+
+## Why configure profile cards in your organization (preview)?
+
+Profile cards let users in an organization see information about one another, such as their names and contact information. Administrators can use the [profile card](/graph/api/resources/profilecardproperty) API to customize how information about their organization surfaces within Microsoft 365 people experiences.
 
 ## Why integrate with document-based insights?
 
@@ -90,23 +101,20 @@ The insights API provides a similar functionality with the [used](/graph/api/res
 [MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/index) provides insight into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
 
 The analytics API enables you to synchronize or integrate user analytics data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users keep track of all their work and social activities and plan their day all within one app.
-
-## Why integrate with the profile API (preview)?
-
-The [profile](/graph/api/resources/profile?view=graph-rest-beta) API represents the next generation in modeling and representing people in Microsoft 365 services. Profile data can be used together with people data to build customized experiences based on Microsoft Graph. 
-
+ 
 ## API reference
 
 Looking for the API reference for these services?
 
-- [People API](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [Analytics API (preview)](/graph/api/resources/useranalytics?view=graph-rest-beta)
-- [Profile API (preview)](/graph/api/resources/profile?view=graph-rest-beta)
+- [Use the Microsoft Graph API to integrate people and workplace intelligence in an app](/graph/api/resources/social-overview)
+- The People API [person](/graph/api/resources/person) resource
+- [Profile (preview)](/graph/api/resources/profile) resource
+- [Profile card property (preview)](/graph/api/resources/profilecardproperty) resource
+- [Insights API](/graph/api/resources/officegraphinsights)
+- [Analytics API (preview)](/graph/api/resources/useranalytics)
 
 ## Next steps
 
 * Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People**, **Insights**, and **Analytics**.
-* Find more about the [people API](people-example.md) and the [person](/graph/api/resources/person?view=graph-rest-1.0) entity.
-* To get started with insights API, see [Office Graph insights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0).
-* Find more about the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).
-* Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta).
+* Find more about the [people API](people-example.md).
+* See how to [customize the profile card](add-properties-profilecard.md).
