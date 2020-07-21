@@ -13,7 +13,7 @@ Groups are collections of [users](user.md) and other principals who share access
 
 > **Note**: Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
 
-| Type              | Use case | groupType | mail-enabled | security-enabled | Can be created and managed via API? |
+| Type              | Use case | groupTypes | mail-enabled | security-enabled | Can be created and managed via API? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
 | [Microsoft 365 groups](#microsoft-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes |
 | [Security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources. | `[]` | `false` | `true` | Yes |
@@ -93,7 +93,7 @@ The following is a JSON representation of a security group.
 ```
 ## Dynamic membership
 
-All types of groups can have dynamic membership rules that automatically add or remove members from the group based on user properties. For example, a "Marketing employees" group would include every user with the department property set to "Marketing", so that new marketing employees are automatically added to the group and employees who leave the department are automatically removed from the group. This rule can be specified in a "membershipRule" field during group creation as `"membershipRule": 'user.department -eq "Marketing"'`. GroupType must also include `"DynamicMembership"`. The following request creates a new Microsoft 365 group for the marketing employees:
+All types of groups can have dynamic membership rules that automatically add or remove members from the group based on user properties. For example, a "Marketing employees" group would include every user with the department property set to "Marketing", so that new marketing employees are automatically added to the group and employees who leave the department are automatically removed from the group. This rule can be specified in a "membershipRule" field during group creation as `"membershipRule": 'user.department -eq "Marketing"'`. GroupTypes must also include `"DynamicMembership"`. The following request creates a new Microsoft 365 group for the marketing employees:
 
 ```http
 POST https://graph.microsoft.com/beta/groups
