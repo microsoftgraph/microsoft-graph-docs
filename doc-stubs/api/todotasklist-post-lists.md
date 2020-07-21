@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read|
+|Delegated (personal Microsoft account)|Tasks.Read|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /lists
+POST /me/todo/lists
 ```
 
 ## Request headers
@@ -44,12 +44,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|displayName|String|**TODO: Add Description**|
-|isOwner|Boolean|**TODO: Add Description**|
-|isShared|Boolean|**TODO: Add Description**|
-|wellknownListName|wellknownListName|**TODO: Add Description**. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
-
+|displayName|String|Field indicating title of the task list.|
 
 
 ## Response
@@ -65,16 +60,12 @@ If successful, this method returns a `201 Created` response code and a [todoTask
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/lists
+POST https://graph.microsoft.com/beta/me/todo/lists
 Content-Type: application/json
-Content-length: 167
+Content-length: 60
 
 {
-  "@odata.type": "#microsoft.graph.todoTaskList",
-  "displayName": "String",
-  "isOwner": "Boolean",
-  "isShared": "Boolean",
-  "wellknownListName": "String"
+  "displayName": "Travel items",
 }
 ```
 
@@ -92,11 +83,11 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.todoTaskList",
-  "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
-  "displayName": "String",
-  "isOwner": "Boolean",
-  "isShared": "Boolean",
-  "wellknownListName": "String"
+  "id": "AAMkADIyAAAhrbPWAAA=",
+  "displayName": "Travel items",
+  "isOwner": true,
+  "isShared": false,
+  "wellknownListName": "none"
 }
 ```
 

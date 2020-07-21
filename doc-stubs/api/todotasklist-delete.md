@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read|
+|Delegated (personal Microsoft account)|Tasks.Read|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /lists/{listsId}
+DELETE /me/todo/lists/{listId}
 ```
 
 ## Request headers
@@ -52,12 +52,12 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/lists/{listsId}
+DELETE https://graph.microsoft.com/beta/me/lists/AAMkADIyAAAhrbPXAAA=
 ```
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

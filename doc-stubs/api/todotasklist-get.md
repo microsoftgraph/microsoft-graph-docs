@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read|
+|Delegated (personal Microsoft account)|Tasks.Read|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /lists/{listsId}
+GET /me/todo/lists/{listsId}
 ```
 
 ## Optional query parameters
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [todoTaskList]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/lists/{listsId}
+GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAhrbPXAAA=
 ```
 
 
@@ -70,14 +70,15 @@ GET https://graph.microsoft.com/beta/lists/{listsId}
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": {
     "@odata.type": "#microsoft.graph.todoTaskList",
-    "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
-    "displayName": "String",
-    "isOwner": "Boolean",
-    "isShared": "Boolean",
-    "wellknownListName": "String"
+    "id": "AAMkADIyAAAAABrJAAA=",
+    "displayName": "Demo TaskList",
+    "isOwner": true,
+    "isShared": false,
+    "wellknownListName": "none"
   }
 }
 ```

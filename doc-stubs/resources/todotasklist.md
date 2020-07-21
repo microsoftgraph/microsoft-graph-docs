@@ -21,28 +21,23 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List todoTaskLists](../api/todotasklist-list.md)|[todoTaskList](../resources/todotasklist.md) collection|Get a list of the [todoTaskList](../resources/todotasklist.md) objects and their properties.|
 |[Create todoTaskList](../api/todotasklist-post-lists.md)|[todoTaskList](../resources/todotasklist.md)|Create a new [todoTaskList](../resources/todotasklist.md) object.|
-|[Get todoTaskList](../api/todotasklist-get.md)|[todoTaskList](../resources/todotasklist.md)|Read the properties and relationships of a [todoTaskList](../resources/todotasklist.md) object.|
-|[Update todoTaskList](../api/todotasklist-update.md)|[todoTaskList](../resources/todotasklist.md)|Update the properties of a [todoTaskList](../resources/todotasklist.md) object.|
-|[Delete todoTaskList](../api/todotasklist-delete.md)|None|Deletes a [todoTaskList](../resources/todotasklist.md) object.|
-|[List tasks](../api/todotasklist-list-tasks.md)|[todoTask](../resources/todotask.md) collection|Get the todoTasks from the tasks navigation property.|
-|[Create tasks](../api/todotasklist-post-tasks.md)|[todoTask](../resources/todotask.md)|Create a new tasks object.|
-|[Get tasks](../api/todotasklist-get-todotask.md)|[todoTask](../resources/todotask.md)|Read the properties and relationships of a [todoTask](../resources/todotask.md) object.|
-|[Update tasks](../api/todotasklist-update-tasks.md)|[todoTask](../resources/todotask.md)|Update the properties of a tasks object.|
-|[Delete tasks](../api/todotasklist-delete-tasks.md)|None|Delete a [todoTask](../resources/todotask.md) object.|
+|[Get todoTaskList](../api/todotasklist-get.md)|[todoTaskList](../resources/todotasklist.md)|Read the properties and relationships of a [todoTaskList](../resources/todotasklist.md) object with the given id.|
+|[Update todoTaskList](../api/todotasklist-update.md)|[todoTaskList](../resources/todotasklist.md)|Update the properties of a [todoTaskList](../resources/todotasklist.md) object with the given id.|
+|[Delete todoTaskList](../api/todotasklist-delete.md)|None|Deletes a [todoTaskList](../resources/todotasklist.md) object with the given id.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|isOwner|Boolean|**TODO: Add Description**|
-|isShared|Boolean|**TODO: Add Description**|
-|wellknownListName|wellknownListName|**TODO: Add Description**. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|displayName|String|Field indicating title of the task list.|
+|id|String|Server generated Id for the task list Inherited from [entity](../resources/entity.md)|
+|isOwner|Boolean|True if the given user is owner of the given task list.|
+|isShared|Boolean|True if the given task list is shared with other users.|
+|wellknownListName|String|Indicates the well known list name if the given list is a well known list. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|tasks|[todoTask](../resources/todotask.md) collection|**TODO: Add Description**|
+|tasks|[todoTask](../resources/todotask.md) collection|The tasks in this task list. Read-only. Nullable.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

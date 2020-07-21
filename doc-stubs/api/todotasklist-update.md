@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /lists/{listsId}
+PATCH /me/todo/lists/{listId}
 ```
 
 ## Request headers
@@ -44,11 +44,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|displayName|String|**TODO: Add Description**|
-|isOwner|Boolean|**TODO: Add Description**|
-|isShared|Boolean|**TODO: Add Description**|
-|wellknownListName|wellknownListName|**TODO: Add Description**. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|displayName|String|Field indicating updated title of the task list.|
 
 
 
@@ -65,16 +61,12 @@ If successful, this method returns a `200 OK` response code and an updated [todo
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/lists/{listsId}
+PATCH https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAhrbPWAAA=
 Content-Type: application/json
 Content-length: 167
 
 {
-  "@odata.type": "#microsoft.graph.todoTaskList",
-  "displayName": "String",
-  "isOwner": "Boolean",
-  "isShared": "Boolean",
-  "wellknownListName": "String"
+  "displayName": "Vacation Plan",
 }
 ```
 
@@ -91,11 +83,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.todoTaskList",
-  "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
-  "displayName": "String",
-  "isOwner": "Boolean",
-  "isShared": "Boolean",
-  "wellknownListName": "String"
+  "id": "AAMkADIyAAAhrbPWAAA=",
+  "displayName": "Vacation Plan",
+  "isOwner": true,
+  "isShared": false,
+  "wellknownListName": "none"
 }
 ```
 
