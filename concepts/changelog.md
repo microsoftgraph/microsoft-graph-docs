@@ -13,11 +13,19 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## July 2020
 
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) operation for meeting updates.|
+| Addition | Beta | The [presence](/graph/api/resources/presence) resource now supports [change notifications](/graph/webhooks). |
+
+
 ### Change notifications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Removal | beta and v1.0 | Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) type.|
-| Addition | Beta | Adds [presence](/api/resources/presence) (preview) to resources supported for [change notifications](/graph/webhooks). |
+| Addition | Beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
 
 ### Devices and apps | Cloud printing
 
@@ -62,20 +70,51 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **azureAD** member to the [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **derivedCredential** member to the [windows10VpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-windows10vpnauthenticationmethod?view=graph-rest-beta) enum type|
 
+### Extensions | Schema extensions
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0          | The [schema extensions](/graph/api/resources/schemaextension) feature is now generally available in [Microsoft Cloud for US Government](/graph/deployments). |
+
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition|v1.0|Added the [getAvailableExtensionProperties](/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) method to the [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.|
 | Addition | beta | Added the **settings** navigation property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
 | Addition | beta | Added the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity.  |
 | Addition | beta | Added the **profileCardProperties** navigation property to the **organizationSettings** entity. |
 | Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta) entity. <br/> [Update profileCardProperty](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
+| Addition | beta and v1.0 | Added the following operations to [devices](/graph/api/resources/device): <br/> [Delete registered owner](/graph/api/delete-registeredowners) <br/> [Delete registered user](/graph/api/delete-registeredusers)|
+| Addition | beta and v1.0 | Added the following operations to [devices](/graph/api/resources/device): <br/> [Delete registered owner](/graph/api/device-delete-registeredowners) <br/> [Delete registered user](/graph/api/delete-registeredusers)|
+| Addition | v1.0 | Added the **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**, and **theme** properties to the [group](/graph/api/resources/group?view=graph-rest-v1.0) entity. |
+| Addition | beta | Added the **infoCatalogs** property to the [group](/graph/api/resources/group?view=graph-rest-beta) entity and the [user](/graph/api/resources/user?view=graph-rest-beta) entity. |
+| Addition | beta | Added the **userRiskLevels** property to the [conditionalAccessConditionSet](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) entity. |
+| Addition | beta | Added the **passwordChange** grant control to the [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) entity. |
+| Addition | beta | Added the **id** property to the [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta) entity. |
+| Addition | beta | Added the [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) method to the [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta) resource|
+| Addition | beta | Added the [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta) entity. |
 
-### Identity and access (Azure AD) | Conditional access
+### People and workplace intelligence | Profile card customization
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **profileCardProperties** navigation property to the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity. |
+| Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
 
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | beta | Added the **userRiskLevels** property to the [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) entity. |
-| Addition | beta | Added the **passwordChange** grant control to the [conditionalaccessgrantcontrols](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) entity. |
+
+### Workbooks and charts
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Addition|beta|Added the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) relationship to the [Workbook](/graph/api/resources/workbook?view=graph-rest-beta) entity. |
+|Addition|beta|Added the  [Get workbookOperation](/graph/api/resources/workbookoperation-get?view=graph-rest-beta) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity. |
+
+
+### Teamwork
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | beta, v1.0 | Added new permissions [TeamsAppInstallation.ReadForTeam](/graph/permissions-reference#Teams-app-installation-permissions), 
+[TeamsAppInstallation.ReadWriteForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions), 
+[TeamsAppInstallation.ReadWriteForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions). |
 
 ## June 2020
 

@@ -22,7 +22,7 @@ Represents a physical printer device that has been registered with the Universal
 | [Create](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Create (register) a new printer with Universal Print. |
 | [Get](../api/printer-get.md) | [printer](printer.md) | Read the properties and relationships of the printer object. |
 | [Update](../api/printer-update.md) | [printer](printer.md) | Update the printer object. |
-| [Delete](../api/printer-delete.md) | None | Unregister the physical printerfrom the Universal Print service. |
+| [Delete](../api/printer-delete.md) | None | Unregister the physical printer from the Universal Print service. |
 | [getCapabilities](../api/printer-getcapabilities.md) | [printerCapabilities](printercapabilities.md) | Get a list of capabilities for the printer. |
 | [resetDefaults](../api/printer-resetdefaults.md) | None | Reset a printer's default settings. |
 | [List jobs](../api/printer-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printer. |
@@ -90,7 +90,6 @@ The following is a JSON representation of the resource.
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
