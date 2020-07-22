@@ -224,7 +224,21 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
- > **Note:** With Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), like [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0), you cannot combine `$orderby` with `$filter` expressions. 
+> **Note:** Combining `$orderby` and `$filter` query parameters is supported on the beta endpoint for the following AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
+>
+>- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
+>- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
+>- [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
+>- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
+>- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+>- [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta)
+>
+> To use `$orderby` and `$filter` together, you need to:
+>
+> - Add `$count=true` to the query parameters
+> - Add `ConsistencyLevel: eventual` request header
+>
+> See [optional user query parameters](/graph/api/user-list?view=graph-rest-beta&tabs=http#optional-query-parameters) for more information.
 
 ## search parameter
 

@@ -3679,6 +3679,8 @@ items:
             href: api/directoryobject-get.md
           - name: Delete directory object
             href: api/directoryobject-delete.md
+          - name: Get available extension properties
+            href: api/directoryobject-getavailableextensionproperties.md
           - name: Get member objects
             href: api/directoryobject-getmemberobjects.md
           - name: Get member groups
