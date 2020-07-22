@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -71,10 +71,10 @@ Content-length: 166
 
 {
   "@odata.type": "#microsoft.graph.linkedResource",
-  "webUrl": "String",
-  "applicationName": "String",
-  "displayName": "String",
-  "externalId": "String"
+  "webUrl": "http:://microsoft.com",
+  "applicationName": "Microsoft",
+  "displayName": "Microsoft",
+  "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
 
@@ -92,10 +92,10 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.linkedResource",
   "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
-  "webUrl": "String",
-  "applicationName": "String",
-  "displayName": "String",
-  "externalId": "String"
+  "webUrl": "http:://microsoft.com",
+  "applicationName": "Microsoft",
+  "displayName": "Microsoft",
+  "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
 

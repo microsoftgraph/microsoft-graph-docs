@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -44,11 +44,11 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|webUrl|String|**TODO: Add Description**|
-|applicationName|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|externalId|String|**TODO: Add Description**|
+|id|String|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
+|webUrl|String|Deeplink to the linked entity |
+|applicationName|String|Field indicating app name of the source that is sending the linked entity |
+|displayName|String|Field indicating title of the linked entity. |
+|externalId|String|Id of the object that is associated with this task on the third-party/partner system |
 
 
 
@@ -72,9 +72,10 @@ Content-length: 166
 {
   "@odata.type": "#microsoft.graph.linkedResource",
   "webUrl": "String",
-  "applicationName": "String",
-  "displayName": "String",
-  "externalId": "String"
+  "webUrl": "http:://microsoft.com",
+  "applicationName": "Microsoft",
+  "displayName": "Microsoft",
+  "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
 
@@ -93,10 +94,10 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.linkedResource",
   "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
-  "webUrl": "String",
-  "applicationName": "String",
-  "displayName": "String",
-  "externalId": "String"
+  "webUrl": "http:://microsoft.com",
+  "applicationName": "Microsoft",
+  "displayName": "Microsoft",
+  "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
 
