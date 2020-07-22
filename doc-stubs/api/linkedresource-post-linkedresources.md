@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -28,7 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /linkedResources
+POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
+
+POST /me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
 ```
 
 ## Request headers
@@ -44,13 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|webUrl|String|**TODO: Add Description**|
-|applicationName|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|externalId|String|**TODO: Add Description**|
-
-
+|applicationName|String|Field indicating app name of the source that is sending the linked entity|
 
 ## Response
 
@@ -65,7 +61,10 @@ If successful, this method returns a `201 Created` response code and a [linkedRe
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/linkedResources
+POST https://graph.microsoft.com/beta/users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
+
+POST https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
+
 Content-Type: application/json
 Content-length: 166
 
