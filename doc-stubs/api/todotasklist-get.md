@@ -52,10 +52,11 @@ If successful, this method returns a `200 OK` response code and a [todoTaskList]
 <!-- {
   "blockType": "request",
   "name": "get_todotasklist"
+  "sampleKeys": ["AAMkADIyAAAAABrJAAA="],
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/todo/lists/AAMkADIyAAAAABrJAAA=
+GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAAABrJAAA=
 ```
 
 
@@ -73,7 +74,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.todoTaskList",
-    "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
+    "id": "AAMkADIyAAAAABrJAAA=",
     "displayName": "Monthly tasks",
     "isOwner": "true",
     "isShared": "false",

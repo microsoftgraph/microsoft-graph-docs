@@ -1,5 +1,5 @@
 ---
-title: "taskList resource type"
+title: "todoTaskList resource type"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo
 doc_type: resourcePageType
 ---
 
-# taskList resource type
+# todoTaskList resource type
 
 Namespace: microsoft.graph
 
@@ -19,13 +19,13 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List TaskLists](../api/taskList-list.md)|[taskList](../resources/taskList.md) collection|Get all the [taskLists](../resources/taskList.md) in the users mailbox.|
-|[Create taskList](../api/taskList-post-lists.md)|[taskList](../resources/taskList.md)|Create a new [taskList](../resources/taskList.md) object.|
-|[Get taskList](../api/taskList-get.md)|[taskList](../resources/taskList.md)|Read the properties and relationships of the specified [taskList](../resources/taskList.md).|
-|[Update taskList](../api/taskList-update.md)|[taskList](../resources/taskList.md)| Update the writable properties of the specified [taskList](../resources/taskList.md).|
-|[Delete taskList](../api/taskList-delete.md)|None| Delete the specified [taskList](../resources/taskList.md) .|
-|[List tasks](../api/taskList-list-tasks.md)|[task](../resources/task.md) collection|Get all the To Do tasks in the specified list.|
-|[Create task](../api/taskList-post-tasks.md)|[task](../resources/task.md)| Create an Outlook To Do in the specified task list|
+|[List todoTaskLists](../api/todoTaskList-list.md)|[todoTaskList](../resources/todoTaskList.md) collection|Get all the [todoTaskLists](../resources/todoTaskList.md) in the users mailbox.|
+|[Create todoTaskList](../api/todoTaskList-post-lists.md)|[todoTaskList](../resources/todoTaskList.md)|Create a new [todoTaskList](../resources/todoTaskList.md) object.|
+|[Get todoTaskList](../api/todoTaskList-get.md)|[todoTaskList](../resources/todoTaskList.md)|Read the properties and relationships of the specified [todoTaskList](../resources/todoTaskList.md).|
+|[Update todoTaskList](../api/todoTaskList-update.md)|[todoTaskList](../resources/todoTaskList.md)| Update the writable properties of the specified [todoTaskList](../resources/todoTaskList.md).|
+|[Delete todoTaskList](../api/todoTaskList-delete.md)|None| Delete the specified [todoTaskList](../resources/todoTaskList.md) .|
+|[List tasks](../api/todoTaskList-list-tasks.md)|[todoTask](../resources/task.md) collection|Get all the To Do tasks in the specified list.|
+|[Create task](../api/todoTaskList-post-tasks.md)|[todoTask](../resources/task.md)| Create an Outlook To Do in the specified task list|
 
 ## Properties
 |Property|Type|Description|
@@ -46,14 +46,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.taskList",
+  "@odata.type": "microsoft.graph.todoTaskList",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.taskList",
+  "@odata.type": "#microsoft.graph.todoTaskList",
   "id": "String (identifier)",
   "displayName": "String",
   "isOwner": "Boolean",
