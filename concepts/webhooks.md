@@ -30,6 +30,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Outlook [message][]
 - Outlook [event][]
 - Outlook personal [contact][]
+- [list][]
 - [user][]
 - [group][]
 - Microsoft 365 group [conversation][]
@@ -47,7 +48,7 @@ Or to a top-level resource:
 `/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`, or `/communications/presences`
 
 Or to a specific resource instance:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`
+`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`
 
 Or to any folder in a user's personal OneDrive:
 `/drives/{id}/root`
@@ -149,22 +150,28 @@ If successful, Microsoft Graph returns a `201 Created` code and a [subscription]
 
 Microsoft Graph validates the notification endpoint provided in the `notificationUrl` property of the subscription request before creating the subscription. The validation process occurs as follows:
 
-1. Microsoft Graph sends a POST request to the notification URL:
+1. Microsoft Graph encodes a validation token and includes it in a POST request to the notification URL:
 
     ``` http
     Content-Type: text/plain; charset=utf-8
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-    > **Important:** Since the `validationToken` is a query parameter it must be properly decoded by the client, as per HTTP coding practices. If the client does not decode the token, and instead uses the encoded value in the next step (response), validation will fail. Also, the client should treat the token value as opaque since the token format may change in the future, without notice.
+1. The client must properly decode the `validationToken` provided in the preceding step, and escape any HTML/JavaScript.
 
-1. The client must provide a response with the following characteristics within 10 seconds:
+   Escaping is a good practice because malicious actors can use the notification endpoint for cross-site scripting type of attacks.
 
-    - A 200 (OK) status code.
-    - The content type must be `text/plain`.
-    - The body must include the validation token provided by Microsoft Graph.
+   In general, treat the validation token value as opaque, as the token format can generally change without notice. Microsoft Graph never sends any value containing HTML or JavaScript code.
 
-The client should discard the validation token after providing it in the response.
+1. The client must provide a response with the following characteristics within 10 seconds of step 1:
+
+    - A status code of `HTTP 200 OK`.
+    - A content type of `text/plain`.
+    - A body that includes the _decoded_ validation token.
+
+    The client should discard the validation token after providing it in the response.
+
+    > **Important:** If the client returns an encoded validation token, the validation will fail.
 
 Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
 
@@ -285,3 +292,4 @@ You can optionally configure the firewall that protects your notification URL to
 [callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
+[list]: /graph/api/resources/list

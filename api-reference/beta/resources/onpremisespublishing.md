@@ -19,6 +19,8 @@ An **onPremisesPublishing** object represents the set of properties for configur
 
 After [instantiating a custom application](../api/applicationtemplate-instantiate.md) or [creating an application](../api/application-post-applications.md), the Application Proxy settings for the application can be configured by [updating the application's](../api/application-update.md) onPremisesPublishing properties.
 
+For a tutorial about configuring Application Proxy, see [Automate the configuration of Application Proxy using the Microsoft Graph API](https://docs.microsoft.com/graph/application-proxy-configure-api).
+
 ## Properties
 
 | Property|Type|Description|

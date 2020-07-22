@@ -1081,6 +1081,16 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "api-reference\\beta\\api\\device_delete_registeredowners.md",
+            "redirect_url": "/graph/api/device-delete-registeredowners?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference\\beta\\api\\device_delete_registeredusers.md",
+            "redirect_url": "/graph/api/device-delete-registeredusers?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "api-reference\\beta\\api\\device_update.md",
             "redirect_url": "/graph/api/device-update?view=graph-rest-beta",
             "redirect_document_id": true
@@ -18153,6 +18163,16 @@
         {
             "source_path": "api-reference\\v1.0\\api\\device_post_registeredusers.md",
             "redirect_url": "/graph/api/device-post-registeredusers?view=graph-rest-1.0",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference\\v1.0\\api\\device_delete_registeredowners.md",
+            "redirect_url": "/graph/api/device-delete-registeredowners?view=graph-rest-1.0",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference\\v1.0\\api\\device_delete_registeredusers.md",
+            "redirect_url": "/graph/api/device-delete-registeredusers?view=graph-rest-1.0",
             "redirect_document_id": true
         },
         {
