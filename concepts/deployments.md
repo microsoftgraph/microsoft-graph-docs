@@ -78,16 +78,19 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Teams | ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Reports  |➖| ✔ |➖|
+| Organizational contacts  |✔| ➖ |➖|
+| Applications  |✔| ➖ |➖|
+| Service principals  |✔| ➖ |➖|
 | Change notifications (webhooks)  | ✔ |✔ |✔* |
 | Delta query | ➖ | ✔ | ➖ |
-| Directory schema extensions |➖|➖|➖|
+| Directory schema extensions |✔|➖|➖|
 | Open type extensions|➖|➖|➖|
   
-The following additional Microsoft Graph features are available in preview (on the `/beta` endpoint) across all national cloud deployments, except where noted:
+The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are availalbe in Microsoft Cloud for US Government only):
 
-* Organizational Contacts
+* Organizational contacts
 * Applications
-* Service Principals
+* Service principals
 
 (*) Limited support for Exchange and OneDrive services only. Azure AD services are not supported. 
 

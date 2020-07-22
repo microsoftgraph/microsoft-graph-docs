@@ -1,17 +1,17 @@
 ﻿{
-  "changelog": [
+  "Changelogs": [
     {
       "ChangeList": [
         {
-          "Id": "ba40d88f-34f6-4799-aa48-c97eeb619a1d",
+          "Id": "6fa828dd-0d03-4446-bb02-3a018a3cb21c",
           "ApiChange": "Property",
           "ChangedApiName": "incidentIds,resource,resourceType,sourceLocation,destinationLocation",
           "ChangeType": "Addition",
-          "Description": "Added the following properties to the [alert](https://docs.microsoft.com/graph/api/resources/alert?view=graph-rest-1.0) entity:  **incidentIds**, [securityResources](https://docs.microsoft.com/graph/api/resources/securityResource?view=graph-rest-1.0) - **resource**, **resourceType**,[networkConnection](https://docs.microsoft.com/graph/api/resources/networkconnection?view=graph-rest-1.0) - **sourceLocation**, **destinationLocation**.",
+          "Description": "Added the following properties to the [alert](/graph/api/resources/alert?view=graph-rest-1.0) entity:  **incidentIds**, [securityResources](/graph/api/resources/securityResource?view=graph-rest-1.0) - **resource**, **resourceType**,[networkConnection](/graph/api/resources/networkconnection?view=graph-rest-1.0) - **sourceLocation**, **destinationLocation**.",
           "Target": "alert,securityResources,networkConnection"
         }
       ],
-      "Id": "ba40d88f-34f6-4799-aa48-c97eeb619a1d",
+      "Id": "6fa828dd-0d03-4446-bb02-3a018a3cb21c",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -21,15 +21,15 @@
     {
       "ChangeList": [
         {
-          "Id": "dfd87582-7138-4cd4-bd36-fbce1d05fc0c",
+          "Id": "adc35762-7972-45df-88c0-f41beba5fa5c",
           "ApiChange": "method",
           "ChangedApiName": "comments,Closed in IPC,Closed in MCAS",
           "ChangeType": "Change",
-          "Description": "The [Update alert](https://docs.microsoft.com/graph/api/alert-update?view=graph-rest-1.0) method now updates the **comments** field with the following values only: ,  **Closed in IPC**, **Closed in MCAS**.",
+          "Description": "The [Update alert](/graph/api/alert-update?view=graph-rest-1.0\u0026tabs=http) method now updates the **comments** field with the following values only: ,  **Closed in IPC**, **Closed in MCAS**.",
           "Target": "Update alert"
         }
       ],
-      "Id": "dfd87582-7138-4cd4-bd36-fbce1d05fc0c",
+      "Id": "adc35762-7972-45df-88c0-f41beba5fa5c",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-01-01T00:00:00",
@@ -39,15 +39,15 @@
     {
       "ChangeList": [
         {
-          "Id": "813d420f-f1b5-4a9b-9fcd-fbb401940eb7",
+          "Id": "9be80852-a1ff-4459-ab68-bdf068e86aed",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile",
           "ChangeType": "Addition",
-          "Description": "Added the Secure Score APIs to the [security API](https://docs.microsoft.com/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations:, [secureScore](https://docs.microsoft.com/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities), [List secureScores](https://docs.microsoft.com/graph/api/securescores-list?view=graph-rest-1.0), [secureScoreControlProfile](https://docs.microsoft.com/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0), [List secureScoreControlProfiles](https://docs.microsoft.com/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0), [Update secureScoreControlProfile](https://docs.microsoft.com/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)",
+          "Description": "Added the Secure Score APIs to the [security API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations:, [secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities), [List secureScores](/graph/api/securescores-list?view=graph-rest-1.0), [secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0), [List secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0), [Update secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)",
           "Target": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile"
         }
       ],
-      "Id": "813d420f-f1b5-4a9b-9fcd-fbb401940eb7",
+      "Id": "9be80852-a1ff-4459-ab68-bdf068e86aed",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-05-01T00:00:00",
@@ -57,34 +57,122 @@
     {
       "ChangeList": [
         {
-          "Id": "f07f1230-0bb1-45ca-8212-b7c88695a8cb",
+          "Id": "4dd5aad4-5306-4dd1-9ac8-e718e8718f25",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators",
           "ChangeType": "Addition",
-          "Description": "Added the threat intelligence (TI) indicator APIs to the [security API](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [tiindicator](https://docs.microsoft.com/graph/api/resources/tiindicator?view=graph-rest-beta) (and related entities),  [Get tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-get?view=graph-rest-beta), [Create tiIndicator](https://docs.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta), [List tiIndicators](https://docs.microsoft.com/graph/api/tiindicators-list?view=graph-rest-beta), [Update tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-update?view=graph-rest-beta) , [Delete tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-delete?view=graph-rest-beta) , [deleteTiIndicators](https://docs.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta) , [deleteTiIndicatorsByExternalId](https://docs.microsoft.com/graph/api/tiindicator-deletetiindicatorsbyexternalid?view=graph-rest-beta) , [submitTiIndicators](https://docs.microsoft.com/graph/api/tiindicator-submittiindicators?view=graph-rest-beta) , [updateTiIndicators](https://docs.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)",
+          "Description": "Added the threat intelligence (TI) indicator APIs to the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [tiindicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (and related entities),  [Get tiIndicator](/graph/api/tiindicator-get?view=graph-rest-beta), [Create tiIndicator](/graph/api/tiindicators-post?view=graph-rest-beta), [List tiIndicators](/graph/api/tiindicators-list?view=graph-rest-beta), [Update tiIndicator](/graph/api/tiindicator-update?view=graph-rest-beta) , [Delete tiIndicator](/graph/api/tiindicator-delete?view=graph-rest-beta) , [deleteTiIndicators](/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta) , [deleteTiIndicatorsByExternalId](/graph/api/tiindicator-deletetiindicatorsbyexternalid?view=graph-rest-beta) , [submitTiIndicators](/graph/api/tiindicator-submittiindicators?view=graph-rest-beta) , [updateTiIndicators](/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)",
           "Target": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators"
         },
         {
-          "Id": "f07f1230-0bb1-45ca-8212-b7c88695a8cb",
+          "Id": "4dd5aad4-5306-4dd1-9ac8-e718e8718f25",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction",
           "ChangeType": "Addition",
-          "Description": "Added the security action APIs to the [security API](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [securityAction](https://docs.microsoft.com/graph/api/resources/securityaction?view=graph-rest-beta) (and related entities),  [Get securityAction](https://docs.microsoft.com/graph/api/securityaction-get?view=graph-rest-beta), [Create securityAction](https://docs.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta), [List securityAction](https://docs.microsoft.com/graph/api/securityactions-list?view=graph-rest-beta), [Cancel securityAction](https://docs.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)",
+          "Description": "Added the security action APIs to the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [securityAction](/graph/api/resources/securityaction?view=graph-rest-beta) (and related entities),  [Get securityAction](/graph/api/securityaction-get?view=graph-rest-beta), [Create securityAction](/graph/api/securityactions-post?view=graph-rest-beta), [List securityAction](/graph/api/securityactions-list?view=graph-rest-beta), [Cancel securityAction](/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)",
           "Target": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction"
         },
         {
-          "Id": "f07f1230-0bb1-45ca-8212-b7c88695a8cb",
+          "Id": "4dd5aad4-5306-4dd1-9ac8-e718e8718f25",
           "ApiChange": "Resource",
           "ChangedApiName": "historyStates,updateAlerts",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [historyStates](https://docs.microsoft.com/graph/api/resources/alerthistorystate?view=graph-rest-beta) collection to alert. \u003C/br\u003EAdded [updateAlerts](https://docs.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-beta) functionality to update multiple alerts in one request.",
+          "Description": "Introduced new complex type [historyStates](/graph/api/resources/alerthistorystate?view=graph-rest-beta) collection to alert. \u003C/br\u003EAdded [updateAlerts](/graph/api/alert-updatealerts?view=graph-rest-beta) functionality to update multiple alerts in one request.",
           "Target": "historyStates,updateAlerts"
         }
       ],
-      "Id": "f07f1230-0bb1-45ca-8212-b7c88695a8cb",
+      "Id": "4dd5aad4-5306-4dd1-9ac8-e718e8718f25",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7d6334c8-86f0-4f70-9ed7-45a0d002e06a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceInformation",
+          "ChangeType": "Addition",
+          "Description": "Introduced new complex type [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta).",
+          "Target": "complianceInformation"
+        },
+        {
+          "Id": "7d6334c8-86f0-4f70-9ed7-45a0d002e06a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificationControl",
+          "ChangeType": "Addition",
+          "Description": "Introduced new complex type [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta).",
+          "Target": "certificationControl"
+        }
+      ],
+      "Id": "7d6334c8-86f0-4f70-9ed7-45a0d002e06a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-12-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "94328a5a-0560-4cc4-bd47-c9870c25b447",
+          "ApiChange": "Resource",
+          "ChangedApiName": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the Secure Score APIs to the [security API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta), including the following resources and operations:, [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (and related entities), [List secureScores](/graph/api/securescores-list?view=graph-rest-beta), [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta), [List secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta), [Update secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)",
+          "Target": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles"
+        },
+        {
+          "Id": "94328a5a-0560-4cc4-bd47-c9870c25b447",
+          "ApiChange": "Resource",
+          "ChangedApiName": "secureScoreControlStateUpdate",
+          "ChangeType": "Addition",
+          "Description": "Introduced new complex type [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta)",
+          "Target": "secureScoreControlStateUpdate"
+        }
+      ],
+      "Id": "94328a5a-0560-4cc4-bd47-c9870c25b447",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-09-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fac86acf-b364-4360-affe-412470819fbc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType",
+          "ChangeType": "Addition",
+          "Description": "Added new enum types:, [alertFeedback](/graph/api/resources/alertfeedbackenumtype?view=graph-rest-beta), [alertStatus](/graph/api/resources/alertstatusenumtype?view=graph-rest-beta), [alertType](/graph/api/resources/alerttypeenumtype?view=graph-rest-beta), [applicationPermissionsRequired](/graph/api/resources/applicationpermissionsrequiredenumtype?view=graph-rest-beta), [logonType](/graph/api/resources/logontypeenumtype?view=graph-rest-beta), [processIntegrityLevel](/graph/api/resources/processintegritylevelenumtype?view=graph-rest-beta), [securityNetworkProtocol](/graph/api/resources/securitynetworkprotocolenumtype?view=graph-rest-beta), [userAccountSecurityType](/graph/api/resources/useraccountsecuritytypeenumtype?view=graph-rest-beta), ",
+          "Target": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType"
+        }
+      ],
+      "Id": "fac86acf-b364-4360-affe-412470819fbc",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-06-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "101080d3-e9eb-40e6-9421-e9aeda821cac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API",
+          "ChangeType": "Addition",
+          "Description": "Added the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [alert](/graph/api/resources/alert?view=graph-rest-beta) (and related entities), [Get alert](/graph/api/alert-get?view=graph-rest-beta), [List alerts](/graph/api/alert-list?view=graph-rest-beta), [Update alert](/graph/api/alert-update?view=graph-rest-beta), , Added the following supporting documentation:, [Errors](/graph/api/resources/security-error-codes?view=graph-rest-beta), [Security solution integrations using the Microsoft Graph Security API](security-integration.md)",
+          "Target": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API"
+        }
+      ],
+      "Id": "101080d3-e9eb-40e6-9421-e9aeda821cac",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-04-01T00:00:00",
       "WorkloadArea": "Security",
       "SubArea": ""
     }
