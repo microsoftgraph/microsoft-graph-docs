@@ -1,57 +1,131 @@
 ﻿{
-  "changelog": [
+  "Changelogs": [
     {
       "ChangeList": [
         {
-          "Id": "a32bf908-92ef-472a-b161-f7160b7a879d",
+          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pendingOperations",
+          "ChangeType": "Addition",
+          "Description": "Added the [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-1.0) and [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-1.0) resources. The **pendingOperations** resource applies to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
+          "Target": "pendingOperations,pendingContentUpdate,driveItem"
+        },
+        {
+          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restore,driveItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [restore](/graph/api/driveitem-restore?view=graph-rest-1.0) action to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) resource.",
+          "Target": "restore,driveItem"
+        },
+        {
+          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "ApiChange": "Property",
+          "ChangedApiName": "orientation",
+          "ChangeType": "Addition",
+          "Description": "Added the **orientation** property to the [photo](/graph/api/resources/photo?view=graph-rest-1.0) resource.",
+          "Target": "photo"
+        },
+        {
+          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "ApiChange": "Property",
+          "ChangedApiName": "sha256Hash",
+          "ChangeType": "Addition",
+          "Description": "Added the **sha256Hash** property to the [hashes](/graph/api/resources/hashes?view=graph-rest-1.0) resource.",
+          "Target": "hashes"
+        },
+        {
+          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "deferCommit",
+          "ChangeType": "Addition",
+          "Description": "Added the **deferCommit** parameter to the [createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) action.",
+          "Target": "createUploadSession"
+        },
+        {
+          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "ApiChange": "Resource",
+          "ChangedApiName": "storagePlanInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [storagePlanInformation](/graph/api/resources/storagePlanInformation?view=graph-rest-1.0) resource. The **storagePlanInformation** resource applies to the [quota](/graph/api/resources/quota?view=graph-rest-1.0) resource.",
+          "Target": "storagePlanInformation,quota"
+        },
+        {
+          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "ApiChange": "Property",
+          "ChangedApiName": "fileSize",
+          "ChangeType": "Addition",
+          "Description": "Added the **fileSize** property to the [driveItemUploadableProperties](/graph/api/resources/driveItemUploadableProperties?view=graph-rest-1.0) resource.",
+          "Target": "driveItemUploadableProperties"
+        },
+        {
+          "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+          "ApiChange": "Property",
+          "ChangedApiName": "name",
+          "ChangeType": "Addition",
+          "Description": "Added the **name** property to the [contentTypeInfo](/graph/api/resources/contentTypeInfo?view=graph-rest-1.0) resource.",
+          "Target": "contentTypeInfo"
+        }
+      ],
+      "Id": "cbdb2a6c-69a6-494c-8d8f-5bc2d1552821",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-06-01T00:00:00",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
           "ApiChange": "Resource",
           "ChangedApiName": "check in,check out,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [check in](https://docs.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-v1.0) and [check out](https://docs.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-v1.0) actions on the [driveItem](https://docs.microsoft.com/graph/api/resources/driveitem?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [check in](/graph/api/driveitem-checkin?view=graph-rest-1.0) and [check out](/graph/api/driveitem-checkin?view=graph-rest-1.0) actions on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "check in,check out,driveItem"
         },
         {
-          "Id": "a32bf908-92ef-472a-b161-f7160b7a879d",
+          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,password,message",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime**, **password**, and **message** properties on the [createLink](https://docs.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **expirationDateTime**, **password**, and **message** properties on the [createLink](/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "createLink,driveItem"
         },
         {
-          "Id": "a32bf908-92ef-472a-b161-f7160b7a879d",
+          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
           "ApiChange": "Property",
           "ChangedApiName": "preventsDownload",
           "ChangeType": "Addition",
-          "Description": "Added the **preventsDownload** property on the [sharingLink](https://docs.microsoft.com/graph/api/resources/sharinglink?view=graph-rest-1.0) resource.",
+          "Description": "Added the **preventsDownload** property on the [sharingLink](/graph/api/resources/sharinglink?view=graph-rest-1.0) resource.",
           "Target": "sharingLink"
         },
         {
-          "Id": "a32bf908-92ef-472a-b161-f7160b7a879d",
+          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
           "ApiChange": "Property",
           "ChangedApiName": "permission",
           "ChangeType": "Addition",
-          "Description": "Added the **permission** property on the [sharedDriveItem](https://docs.microsoft.com/graph/api/resources/shareddriveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **permission** property on the [sharedDriveItem](/graph/api/resources/shareddriveitem?view=graph-rest-1.0) resource.",
           "Target": "sharedDriveItem"
         },
         {
-          "Id": "a32bf908-92ef-472a-b161-f7160b7a879d",
+          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,hasPassword,grantedToIdentities",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [permission](https://docs.microsoft.com/graph/api/resources/permission?view=graph-rest-1.0) resource.",
+          "Description": "Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [permission](/graph/api/resources/permission?view=graph-rest-1.0) resource.",
           "Target": "permission"
         },
         {
-          "Id": "a32bf908-92ef-472a-b161-f7160b7a879d",
+          "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime,password",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime**, and **password** properties on the [invite](https://docs.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](https://docs.microsoft.com/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **expirationDateTime**, and **password** properties on the [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "invite,driveItem"
         }
       ],
-      "Id": "a32bf908-92ef-472a-b161-f7160b7a879d",
+      "Id": "6957dd17-c2c8-4225-8536-67f97b9c4ce3",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-04-01T00:00:00",
@@ -61,47 +135,47 @@
     {
       "ChangeList": [
         {
-          "Id": "7bc57f12-a012-40ae-af73-bb4a2524bdf4",
+          "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
           "ApiChange": "Property",
           "ChangedApiName": "image,video",
           "ChangeType": "Addition",
-          "Description": "Added **image** and **video** properties on the [remoteItem](https://docs.microsoft.com/graph/api/resources/remoteitem?view=graph-rest-1.0) resource. These properties allow you to retrieve media type thumbnails when combined with an expand function.",
+          "Description": "Added **image** and **video** properties on the [remoteItem](/graph/api/resources/remoteitem?view=graph-rest-1.0) resource. These properties allow you to retrieve media type thumbnails when combined with an expand function.",
           "Target": "remoteItem"
         },
         {
-          "Id": "7bc57f12-a012-40ae-af73-bb4a2524bdf4",
+          "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
           "ApiChange": "Resource",
           "ChangedApiName": "grant",
           "ChangeType": "Addition",
-          "Description": "Added the **grant** action to the [permission](https://docs.microsoft.com/graph/api/resources/permission?view=graph-rest-1.0) entity.",
+          "Description": "Added the **grant** action to the [permission](/graph/api/resources/permission?view=graph-rest-1.0) entity.",
           "Target": "permission"
         },
         {
-          "Id": "7bc57f12-a012-40ae-af73-bb4a2524bdf4",
+          "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
           "ApiChange": "Property",
           "ChangedApiName": "following",
           "ChangeType": "Addition",
-          "Description": "Added the **following** navigation property to the [drive](https://docs.microsoft.com/graph/api/resources/drive?view=graph-rest-v1.0) entity.",
+          "Description": "Added the **following** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-1.0) entity.",
           "Target": "drive"
         },
         {
-          "Id": "7bc57f12-a012-40ae-af73-bb4a2524bdf4",
+          "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
           "ApiChange": "Resource",
           "ChangedApiName": "follow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [follow](https://docs.microsoft.com/graph/api/driveitem-follow?view=graph-rest-v1.0) action on [driveItem](https://docs.microsoft.com/graph/api/resources/driveitem?view=graph-rest-v1.0).",
+          "Description": "Added the [follow](/graph/api/driveitem-follow?view=graph-rest-1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).",
           "Target": "follow,driveItem"
         },
         {
-          "Id": "7bc57f12-a012-40ae-af73-bb4a2524bdf4",
+          "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
           "ApiChange": "Resource",
           "ChangedApiName": "unfollow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollow](https://docs.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-v1.0) action on [driveItem](https://docs.microsoft.com/graph/api/resources/driveitem?view=graph-rest-v1.0).",
+          "Description": "Added the [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).",
           "Target": "unfollow,driveItem"
         }
       ],
-      "Id": "7bc57f12-a012-40ae-af73-bb4a2524bdf4",
+      "Id": "9068d40d-37c2-48ce-bdc2-f5307fce675e",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -111,39 +185,39 @@
     {
       "ChangeList": [
         {
-          "Id": "bab67f5d-1567-4869-a097-4d130ce4249c",
+          "Id": "5fe3706e-4726-42ab-a05a-81e2b1ea078b",
           "ApiChange": "Resource",
           "ChangedApiName": "pendingOperations",
           "ChangeType": "Addition",
-          "Description": "Added the [pendingOperations](https://docs.microsoft.com/graph/api/resources/pendingOperations?view=graph-rest-beta) and [pendingContentUpdate](https://docs.microsoft.com/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) resources. The **pendingOperations** resource applies to the [driveItem](https://docs.microsoft.com/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-beta) and [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) resources. The **pendingOperations** resource applies to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "pendingOperations,pendingContentUpdate,driveItem"
         },
         {
-          "Id": "bab67f5d-1567-4869-a097-4d130ce4249c",
+          "Id": "5fe3706e-4726-42ab-a05a-81e2b1ea078b",
           "ApiChange": "Resource",
           "ChangedApiName": "restore,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [restore](https://docs.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta) action to the [driveItem](https://docs.microsoft.com/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Description": "Added the [restore](/graph/api/driveitem-restore?view=graph-rest-beta) action to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
           "Target": "restore,driveItem"
         },
         {
-          "Id": "bab67f5d-1567-4869-a097-4d130ce4249c",
+          "Id": "5fe3706e-4726-42ab-a05a-81e2b1ea078b",
           "ApiChange": "Property",
           "ChangedApiName": "orientation",
           "ChangeType": "Addition",
-          "Description": "Added the **orientation** property to the [photo](https://docs.microsoft.com/graph/api/resources/photo?view=graph-rest-beta) resource.",
+          "Description": "Added the **orientation** property to the [photo](/graph/api/resources/photo?view=graph-rest-beta) resource.",
           "Target": "photo"
         },
         {
-          "Id": "bab67f5d-1567-4869-a097-4d130ce4249c",
+          "Id": "5fe3706e-4726-42ab-a05a-81e2b1ea078b",
           "ApiChange": "Property",
           "ChangedApiName": "sha256Hash",
           "ChangeType": "Addition",
-          "Description": "Added the **sha256Hash** property to the [hashes](https://docs.microsoft.com/graph/api/resources/hashes?view=graph-rest-beta) resource.",
+          "Description": "Added the **sha256Hash** property to the [hashes](/graph/api/resources/hashes?view=graph-rest-beta) resource.",
           "Target": "hashes"
         }
       ],
-      "Id": "bab67f5d-1567-4869-a097-4d130ce4249c",
+      "Id": "5fe3706e-4726-42ab-a05a-81e2b1ea078b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
@@ -153,15 +227,15 @@
     {
       "ChangeList": [
         {
-          "Id": "3c5a8bb0-86bc-4199-a5c9-d5bb7ea32904",
+          "Id": "b19fe0ab-212e-4a63-bc84-7b5570fddcc1",
           "ApiChange": "Resource",
           "ChangedApiName": "unfollow,driveItem",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollow](https://docs.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-beta) action on [driveItem](https://docs.microsoft.com/graph/api/resources/driveitem?view=graph-rest-beta)",
+          "Description": "Added the [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-beta) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)",
           "Target": "unfollow,driveItem"
         }
       ],
-      "Id": "3c5a8bb0-86bc-4199-a5c9-d5bb7ea32904",
+      "Id": "b19fe0ab-212e-4a63-bc84-7b5570fddcc1",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
@@ -171,15 +245,15 @@
     {
       "ChangeList": [
         {
-          "Id": "fb80180c-6d69-4f10-8193-6a6bfad50e6e",
+          "Id": "d63cc1cf-7b19-424a-a9cf-578d4f5d0412",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDatetime,password",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDatetime** and **password** properties to the [createLink](https://docs.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-beta) action.",
+          "Description": "Added the **expirationDatetime** and **password** properties to the [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) action.",
           "Target": "createLink"
         }
       ],
-      "Id": "fb80180c-6d69-4f10-8193-6a6bfad50e6e",
+      "Id": "d63cc1cf-7b19-424a-a9cf-578d4f5d0412",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
@@ -189,47 +263,47 @@
     {
       "ChangeList": [
         {
-          "Id": "51aeaa48-4018-412f-929b-f1b72287aed4",
+          "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
           "ApiChange": "Resource",
           "ChangedApiName": "bundle",
           "ChangeType": "Addition",
-          "Description": "Added the [bundle](https://docs.microsoft.com/graph/api/resources/bundle?view=graph-rest-beta) complex type",
+          "Description": "Added the [bundle](/graph/api/resources/bundle?view=graph-rest-beta) complex type",
           "Target": "bundle"
         },
         {
-          "Id": "51aeaa48-4018-412f-929b-f1b72287aed4",
+          "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
           "ApiChange": "Resource",
           "ChangedApiName": "album",
           "ChangeType": "Addition",
-          "Description": "Added the [album](https://docs.microsoft.com/graph/api/resources/album?view=graph-rest-beta) complex type",
+          "Description": "Added the [album](/graph/api/resources/album?view=graph-rest-beta) complex type",
           "Target": "album"
         },
         {
-          "Id": "51aeaa48-4018-412f-929b-f1b72287aed4",
+          "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
           "ApiChange": "Property",
           "ChangedApiName": "bundles",
           "ChangeType": "Addition",
-          "Description": "Added the **bundles** navigation property to the [drive](https://docs.microsoft.com/graph/api/resources/drive?view=graph-rest-beta) entity",
+          "Description": "Added the **bundles** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-beta) entity",
           "Target": "drive"
         },
         {
-          "Id": "51aeaa48-4018-412f-929b-f1b72287aed4",
+          "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
           "ApiChange": "Property",
           "ChangedApiName": "bundle",
           "ChangeType": "Addition",
-          "Description": "Added the **bundle** property to the [driveItem](https://docs.microsoft.com/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Description": "Added the **bundle** property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity",
           "Target": "driveItem"
         },
         {
-          "Id": "51aeaa48-4018-412f-929b-f1b72287aed4",
+          "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
           "ApiChange": "Resource",
           "ChangedApiName": "grant",
           "ChangeType": "Addition",
-          "Description": "Added the **grant** action to the [permission](https://docs.microsoft.com/graph/api/resources/permission?view=graph-rest-beta) entity",
+          "Description": "Added the **grant** action to the [permission](/graph/api/resources/permission?view=graph-rest-beta) entity",
           "Target": "permission"
         }
       ],
-      "Id": "51aeaa48-4018-412f-929b-f1b72287aed4",
+      "Id": "78f81dad-21f2-4229-8c4d-be5e29e8b31b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
@@ -239,111 +313,111 @@
     {
       "ChangeList": [
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [driveItem](https://docs.microsoft.com/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **analytics** property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
           "Target": "driveItem"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [site](https://docs.microsoft.com/graph/api/resources/site?view=graph-rest-beta) entity.",
+          "Description": "Added the **analytics** property to the [site](/graph/api/resources/site?view=graph-rest-beta) entity.",
           "Target": "site"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
-          "Description": "Added the **analytics** property to the [listItem](https://docs.microsoft.com/graph/api/resources/listitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **analytics** property to the [listItem](/graph/api/resources/listitem?view=graph-rest-beta) entity.",
           "Target": "listItem"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](https://docs.microsoft.com/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
           "Target": "driveItem"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [site](https://docs.microsoft.com/graph/api/resources/site?view=graph-rest-beta) entity.",
+          "Description": "Added the **getActivitiesByInterval** function on the [site](/graph/api/resources/site?view=graph-rest-beta) entity.",
           "Target": "site"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
-          "Description": "Added the **getActivitiesByInterval** function on the [listItem](https://docs.microsoft.com/graph/api/resources/listitem?view=graph-rest-beta) entity.",
+          "Description": "Added the **getActivitiesByInterval** function on the [listItem](/graph/api/resources/listitem?view=graph-rest-beta) entity.",
           "Target": "listItem"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Resource",
           "ChangedApiName": "itemAnalytics",
           "ChangeType": "Addition",
-          "Description": "Added the [itemAnalytics](https://docs.microsoft.com/graph/api/resources/itemanalytics?view=graph-rest-beta) entity.",
+          "Description": "Added the [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta) entity.",
           "Target": "itemAnalytics"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Resource",
           "ChangedApiName": "itemActivityStat",
           "ChangeType": "Addition",
-          "Description": "Added the [itemActivityStat](https://docs.microsoft.com/graph/api/resources/itemactivity?view=graph-rest-beta) entity.",
+          "Description": "Added the [itemActivityStat](/graph/api/resources/itemactivity?view=graph-rest-beta) entity.",
           "Target": "itemActivityStat"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Resource",
           "ChangedApiName": "itemActionStat",
           "ChangeType": "Addition",
-          "Description": "Added the [itemActionStat](https://docs.microsoft.com/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type.",
+          "Description": "Added the [itemActionStat](/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type.",
           "Target": "itemActionStat"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Resource",
           "ChangedApiName": "accessAction",
           "ChangeType": "Addition",
-          "Description": "Added the [accessAction](https://docs.microsoft.com/graph/api/resources/accessaction?view=graph-rest-beta) complex type.",
+          "Description": "Added the [accessAction](/graph/api/resources/accessaction?view=graph-rest-beta) complex type.",
           "Target": "accessAction"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Resource",
           "ChangedApiName": "incompleteData",
           "ChangeType": "Addition",
-          "Description": "Added the [incompleteData](https://docs.microsoft.com/graph/api/resources/incompletedata?view=graph-rest-beta) complex type.",
+          "Description": "Added the [incompleteData](/graph/api/resources/incompletedata?view=graph-rest-beta) complex type.",
           "Target": "incompleteData"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Property",
           "ChangedApiName": "access",
           "ChangeType": "Addition",
-          "Description": "Added the **access** property to the [itemActivity](https://docs.microsoft.com/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
+          "Description": "Added the **access** property to the [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
           "Target": "itemActivity"
         },
         {
-          "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+          "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
           "ApiChange": "Property",
           "ChangedApiName": "location",
           "ChangeType": "Addition",
-          "Description": "Added the **location** property to the [itemActivity](https://docs.microsoft.com/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
+          "Description": "Added the **location** property to the [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
           "Target": "itemActivity"
         }
       ],
-      "Id": "4c70fc5f-71be-46c6-97fe-f46014c24ebb",
+      "Id": "bd028dbd-8d38-4697-bffd-a70f5e088909",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-04-01T00:00:00",
@@ -353,23 +427,23 @@
     {
       "ChangeList": [
         {
-          "Id": "a6caa9b7-1396-440c-9db4-ff85998fd24a",
+          "Id": "839dba53-23da-4ac6-888e-fc4c7fd2d548",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](https://docs.microsoft.com/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
+          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
           "Target": "driveItem_invite"
         },
         {
-          "Id": "a6caa9b7-1396-440c-9db4-ff85998fd24a",
+          "Id": "839dba53-23da-4ac6-888e-fc4c7fd2d548",
           "ApiChange": "Property",
           "ChangedApiName": "password",
           "ChangeType": "Addition",
-          "Description": "Added the **password** property to the [driveItem_invite](https://docs.microsoft.com/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
+          "Description": "Added the **password** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
           "Target": "driveItem_invite"
         }
       ],
-      "Id": "a6caa9b7-1396-440c-9db4-ff85998fd24a",
+      "Id": "839dba53-23da-4ac6-888e-fc4c7fd2d548",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
@@ -379,15 +453,15 @@
     {
       "ChangeList": [
         {
-          "Id": "a6caa9b7-1396-440c-9db4-ff85998fd24a",
+          "Id": "839dba53-23da-4ac6-888e-fc4c7fd2d548",
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptions** navigation property to the [driveItem](https://docs.microsoft.com/graph/api/resources/driveItem?view=graph-rest-1.0) entity",
+          "Description": "Added the **subscriptions** navigation property to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) entity",
           "Target": "driveItem"
         }
       ],
-      "Id": "a6caa9b7-1396-440c-9db4-ff85998fd24a",
+      "Id": "839dba53-23da-4ac6-888e-fc4c7fd2d548",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-03-01T00:00:00",
@@ -397,27 +471,845 @@
     {
       "ChangeList": [
         {
-          "Id": "79cdf6ac-53f5-4212-a39f-205b4bbe8d0d",
+          "Id": "480952a8-1602-4795-9b85-5da5022944b4",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](https://docs.microsoft.com/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
+          "Description": "Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type.",
           "Target": "driveItem_invite"
         },
         {
-          "Id": "79cdf6ac-53f5-4212-a39f-205b4bbe8d0d",
+          "Id": "480952a8-1602-4795-9b85-5da5022944b4",
           "ApiChange": "Property",
           "ChangedApiName": "password",
           "ChangeType": "Addition",
-          "Description": "Added the **password** property to the [driveItem_invite](https://docs.microsoft.com/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
+          "Description": "Added the **password** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type.",
           "Target": "driveItem_invite"
         }
       ],
-      "Id": "79cdf6ac-53f5-4212-a39f-205b4bbe8d0d",
+      "Id": "480952a8-1602-4795-9b85-5da5022944b4",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
       "WorkloadArea": "Files (OneDrive for Business)",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deferCommit",
+          "ChangeType": "Addition",
+          "Description": "Added the **deferCommit** argument to the [createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-beta) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)",
+          "Target": "createUploadSession,driveItem"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "storagePlanInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [storagePlanInformation](/graph/api/resources/storageplaninformation?view=graph-rest-beta) complex type",
+          "Target": "storagePlanInformation"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "storagePlanInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **storagePlanInformation** property to the [quota](/graph/api/resources/quota?view=graph-rest-beta) complex type",
+          "Target": "quota"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "following",
+          "ChangeType": "Addition",
+          "Description": "Added the **following** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-beta) entity",
+          "Target": "drive"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "follow,driveItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [follow](/graph/api/driveitem-follow?view=graph-rest-beta) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)",
+          "Target": "follow,driveItem"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasPassword",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasPassword** property to the [permission](/graph/api/resources/permission?view=graph-rest-beta) entity",
+          "Target": "permission"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "preventsDownload",
+          "ChangeType": "Addition",
+          "Description": "Added the **preventsDownload** property to the [sharingLink](/graph/api/resources/sharinglink?view=graph-rest-beta) complex type",
+          "Target": "sharingLink"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "permission",
+          "ChangeType": "Addition",
+          "Description": "Added the **permission** navigation property to the [sharedDriveItem](/graph/api/resources/shareddriveitem?view=graph-rest-beta) entity",
+          "Target": "sharedDriveItem"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "geolocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **geolocation** property to the [columnDefinition](/graph/api/resources/columndefinition?view=graph-rest-beta) entity",
+          "Target": "columnDefinition"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "geolocationColumn",
+          "ChangeType": "Addition",
+          "Description": "Added the [geolocationColumn](/graph/api/resources/geolocationcolumn?view=graph-rest-beta) complex type",
+          "Target": "geolocationColumn"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "analytics",
+          "ChangeType": "Addition",
+          "Description": "Added the **analytics** property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "analytics",
+          "ChangeType": "Addition",
+          "Description": "Added the **analytics** property to the [site](/graph/api/resources/site?view=graph-rest-beta) entity",
+          "Target": "site"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "analytics",
+          "ChangeType": "Addition",
+          "Description": "Added the **analytics** property to the [listItem](/graph/api/resources/listitem?view=graph-rest-beta) entity",
+          "Target": "listItem"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "getActivitiesByInterval",
+          "ChangeType": "Addition",
+          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "getActivitiesByInterval",
+          "ChangeType": "Addition",
+          "Description": "Added the **getActivitiesByInterval** function on the [site](/graph/api/resources/site?view=graph-rest-beta) entity",
+          "Target": "site"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "getActivitiesByInterval",
+          "ChangeType": "Addition",
+          "Description": "Added the **getActivitiesByInterval** function on the [listItem](/graph/api/resources/listitem?view=graph-rest-beta) entity",
+          "Target": "listItem"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemAnalytics",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemAnalytics](/graph/api/resources/itemanalytics?view=graph-rest-beta) entity",
+          "Target": "itemAnalytics"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemActivityStat",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemActivityStat](/graph/api/resources/itemactivity?view=graph-rest-beta) entity",
+          "Target": "itemActivityStat"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemActionStat",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemActionStat](/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type",
+          "Target": "itemActionStat"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessAction](/graph/api/resources/accessaction?view=graph-rest-beta) complex type",
+          "Target": "accessAction"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "incompleteData",
+          "ChangeType": "Addition",
+          "Description": "Added the [incompleteData](/graph/api/resources/incompletedata?view=graph-rest-beta) complex type",
+          "Target": "incompleteData"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "access",
+          "ChangeType": "Addition",
+          "Description": "Added the **access** property to the [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) complex type",
+          "Target": "itemActivity"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Property",
+          "ChangedApiName": "location",
+          "ChangeType": "Addition",
+          "Description": "Added the **location** property to the [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) complex type",
+          "Target": "itemActivity"
+        }
+      ],
+      "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-09-01T00:00:00",
+      "WorkloadArea": "Files, sites, and lists (OneDrive for Business and SharePoint)",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "preview",
+          "ChangeType": "Addition",
+          "Description": "Added the **preview** action on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemPreviewInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) complex type",
+          "Target": "itemPreviewInfo"
+        }
+      ],
+      "Id": "c581b044-8a7b-401c-a46e-7e5f51f4ffee",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2018-09-01T00:00:00",
+      "WorkloadArea": "Files, sites, and lists (OneDrive for Business and SharePoint)",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemPreviewInfo",
+          "ChangeType": "Addition",
+          "Description": "Added new complex type:, [itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-beta), ",
+          "Target": "itemPreviewInfo"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentTypeInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the \u003Cb\u003Ename\u003C/b\u003E property to the [contentTypeInfo](/graph/api/resources/contenttypeinfo?view=graph-rest-beta) complex type",
+          "Target": "contentTypeInfo"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Property",
+          "ChangedApiName": "deleteAction",
+          "ChangeType": "Addition",
+          "Description": "Added the \u003Cb\u003EobjectType\u003C/b\u003E property to the [deleteAction](/graph/api/resources/deleteaction?view=graph-rest-beta) complex type",
+          "Target": "deleteAction"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Property",
+          "ChangedApiName": "renameAction",
+          "ChangeType": "Addition",
+          "Description": "Added the \u003Cb\u003EnewName\u003C/b\u003E property to the [renameAction](/graph/api/resources/renameaction?view=graph-rest-beta) complex type",
+          "Target": "renameAction"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharepointIds",
+          "ChangeType": "Addition",
+          "Description": "Added the \u003Cb\u003EtenantId\u003C/b\u003E property to the [sharepointIds](/graph/api/resources/renameaction?view=graph-rest-beta) complex type",
+          "Target": "sharepointIds"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemActivityTimeSet",
+          "ChangeType": "Addition",
+          "Description": "Added the \u003Cb\u003ElastRecordedDateTime\u003C/b\u003E property to the [itemActivityTimeSet](/graph/api/resources/itemactivitytimeset?view=graph-rest-beta) complex type",
+          "Target": "itemActivityTimeSet"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Resource",
+          "ChangedApiName": "preview,driveItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [preview](/graph/api/driveitem-preview?view=graph-rest-beta) action for the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity",
+          "Target": "preview,driveItem"
+        }
+      ],
+      "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-03-01T00:00:00",
+      "WorkloadArea": "Files (OneDrive for Business)",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baseItemVersion,driveItemVersion,listItemVersion",
+          "ChangeType": "Addition",
+          "Description": "Added new entities:, [baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0), [driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0), [listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0), ",
+          "Target": "baseItemVersion,driveItemVersion,listItemVersion"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicationFacet",
+          "ChangeType": "Addition",
+          "Description": "Added new complex types:, [publicationFacet](/graph/api/resources/publicationfacet?view=graph-rest-1.0), ",
+          "Target": "publicationFacet"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Property",
+          "ChangedApiName": "driveItem",
+          "ChangeType": "Addition",
+          "Description": "Added the \u003Cb\u003Epublication\u003C/b\u003E property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Property",
+          "ChangedApiName": "driveItem",
+          "ChangeType": "Addition",
+          "Description": "Added the \u003Cb\u003Eversions\u003C/b\u003E navigation property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) entity",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Property",
+          "ChangedApiName": "listItem",
+          "ChangeType": "Addition",
+          "Description": "Added the \u003Cb\u003Eversions\u003C/b\u003E navigation property to the [listItem](/graph/api/resources/listitem?view=graph-rest-1.0) entity",
+          "Target": "listItem"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Property",
+          "ChangedApiName": "siteCollection",
+          "ChangeType": "Addition",
+          "Description": "Added the \u003Cb\u003Eroot\u003C/b\u003E property to the [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0) entity",
+          "Target": "siteCollection"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restoreVersion,driveItemVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [restoreVersion](/graph/api/driveitemversion-restore?view=graph-rest-1.0) action for the [driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0) entity",
+          "Target": "restoreVersion,driveItemVersion"
+        },
+        {
+          "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restoreVersion,listItemVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the [restoreVersion](/graph/api/listitemversion-restore?view=graph-rest-1.0) action for the [listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0) entity",
+          "Target": "restoreVersion,listItemVersion"
+        }
+      ],
+      "Id": "bbda80c1-1c97-4484-97fc-9bc907cdcc87",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2018-03-01T00:00:00",
+      "WorkloadArea": "Files (OneDrive for Business)",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Property",
+          "ChangedApiName": "system",
+          "ChangeType": "Addition",
+          "Description": "Added the **system** property to the [Drive][Drive-beta] resource.",
+          "Target": "Drive,Drive-beta"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activities",
+          "ChangeType": "Addition",
+          "Description": "Added the **activities** relationship to the [Drive][Drive-beta] resource.",
+          "Target": "Drive,Drive-beta"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Property",
+          "ChangedApiName": "publication",
+          "ChangeType": "Addition",
+          "Description": "Added the **publication** property to the [DriveItem][DriveItem-beta] resource.",
+          "Target": "DriveItem,DriveItem-beta"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activities,versions",
+          "ChangeType": "Addition",
+          "Description": "Added the **activities** and **versions** relationships to the [DriveItem][DriveItem-beta] resource.",
+          "Target": "DriveItem,DriveItem-beta"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "DriveItemVersion,DriveItemVersion-beta,ItemActivity,ItemActivity-beta",
+          "ChangeType": "Addition",
+          "Description": "Added new entities: [DriveItemVersion][DriveItemVersion-beta], [ItemActivity][ItemActivity-beta].",
+          "Target": "DriveItemVersion,DriveItemVersion-beta,ItemActivity,ItemActivity-beta"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "CommentAction,CommentAction-beta,CreateAction,CreateAction-beta,DeleteAction,DeleteAction-beta,EditAction,EditAction-beta,ItemActionSet,ItemActionSet-beta,ItemActivityTimeSet,ItemActivityTimeSet-beta,MentionAction,MentionAction-beta,MoveAction,MoveAction-beta,PublicationFacet,PublicationFacet-beta,RenameAction,RenameAction-beta,RestoreAction,RestoreAction-beta,ShareAction,ShareAction-beta,VersionAction,VersionAction-beta",
+          "ChangeType": "Addition",
+          "Description": "Added new complex types: [CommentAction][CommentAction-beta], [CreateAction][CreateAction-beta], [DeleteAction][DeleteAction-beta], [EditAction][EditAction-beta], [ItemActionSet][ItemActionSet-beta], [ItemActivityTimeSet][ItemActivityTimeSet-beta], [MentionAction][MentionAction-beta], [MoveAction][MoveAction-beta], [PublicationFacet][PublicationFacet-beta], [RenameAction][RenameAction-beta], [RestoreAction][RestoreAction-beta], [ShareAction][ShareAction-beta], and [VersionAction][VersionAction-beta].",
+          "Target": "CommentAction,CommentAction-beta,CreateAction,CreateAction-beta,DeleteAction,DeleteAction-beta,EditAction,EditAction-beta,ItemActionSet,ItemActionSet-beta,ItemActivityTimeSet,ItemActivityTimeSet-beta,MentionAction,MentionAction-beta,MoveAction,MoveAction-beta,PublicationFacet,PublicationFacet-beta,RenameAction,RenameAction-beta,RestoreAction,RestoreAction-beta,ShareAction,ShareAction-beta,VersionAction,VersionAction-beta"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Property",
+          "ChangedApiName": "driveType",
+          "ChangeType": "Addition",
+          "Description": "Added the **driveType** property to the [ItemReference][ItemReference-beta] complex type.",
+          "Target": "ItemReference,ItemReference-beta"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **tenantId** property from [SharepointIds][SharepointIds-beta] complex type.",
+          "Target": "SharepointIds,SharepointIds-beta"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "CheckIn,CheckIn-beta,CheckOut,CheckOut-beta,DriveItem,DriveItem-beta",
+          "ChangeType": "Addition",
+          "Description": "Added the [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] actions on the [DriveItem][DriveItem-beta] resource.",
+          "Target": "CheckIn,CheckIn-beta,CheckOut,CheckOut-beta,DriveItem,DriveItem-beta"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Property",
+          "ChangedApiName": "expirationDateTime,password,message,recipients",
+          "ChangeType": "Addition",
+          "Description": "Added the **expirationDateTime**, **password**, **message**, and **recipients** properties on the [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta] resource.",
+          "Target": "CreateLink,CreateLink-beta,DriveItem,DriveItem-beta"
+        }
+      ],
+      "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-09-01T00:00:00",
+      "WorkloadArea": "Files (OneDrive for Business)",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Property",
+          "ChangedApiName": "system",
+          "ChangeType": "Addition",
+          "Description": "Added the **system** property to the [Drive][] resource.",
+          "Target": "Drive,"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "list",
+          "ChangeType": "Addition",
+          "Description": "Added the **list** relationship to the [Drive][] resource.",
+          "Target": "Drive,"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "listItem",
+          "ChangeType": "Addition",
+          "Description": "Added the **listItem** relationship to the [DriveItem][] resource.",
+          "Target": "DriveItem,"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "list,listItem",
+          "ChangeType": "Addition",
+          "Description": "Added the **list** and **listItem** relationships to the [SharedDriveItem][] resource.",
+          "Target": "SharedDriveItem,"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "FolderView,",
+          "ChangeType": "Addition",
+          "Description": "Added new complex types: [FolderView][]",
+          "Target": "FolderView,"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Property",
+          "ChangedApiName": "view",
+          "ChangeType": "Addition",
+          "Description": "Added the **view** property to the [Folder][] complex type.",
+          "Target": "Folder,"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Property",
+          "ChangedApiName": "driveType",
+          "ChangeType": "Addition",
+          "Description": "Added the **driveType** property to the [ItemReference][] complex type.",
+          "Target": "ItemReference,"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Property",
+          "ChangedApiName": "audioBitsPerSample,audioChannels,audioFormat,audioSamplesPerSecond,fourCC,frameRate",
+          "ChangeType": "Addition",
+          "Description": "Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][] complex type.",
+          "Target": "Video,"
+        },
+        {
+          "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+          "ApiChange": "Property",
+          "ChangedApiName": "audioBitsPerSample,audioChannels,audioFormat,audioSamplesPerSecond,fourCC,frameRate",
+          "ChangeType": "Addition",
+          "Description": "Added the **audioBitsPerSample**, **audioChannels**, **audioFormat**, **audioSamplesPerSecond**, **fourCC** and **frameRate** properties to the [Video][Video-beta] complex type.",
+          "Target": "Video,Video-beta"
+        }
+      ],
+      "Id": "d54f4f20-bf8c-4183-87b4-23eb11e7b54c",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-09-01T00:00:00",
+      "WorkloadArea": "Files (OneDrive for Business)",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "configuratorUrl,webHtml,sharingLink,folderView,view,folder,listItem,driveItem,list,drive",
+          "ChangeType": "Change",
+          "Description": "Added the **configuratorUrl** and **webHtml** properties to **sharingLink**. ,  Added the **folderView** resource type and the **view** property to the **folder** resource type. ,  Added the **listItem** navigation property to **driveItem**. ,  Added the **list** navigation property to **drive**.",
+          "Target": ""
+        }
+      ],
+      "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "baseItem,driveItem",
+          "ChangeType": "Addition",
+          "Description": "Added the **baseItem** resource type, consisting of basic properties from **driveItem**.",
+          "Target": ""
+        },
+        {
+          "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "sourceItemId,thumbnail,siteUrl,sharepointIds,sharedBy,sharedDateTime,shared,shared,remoteItem,sharepointIds,drive,itemReference,lastAccessedDateTime,fileSystemInfo,driveItem,site,sharedDriveItem,parentReference,baseItem",
+          "ChangeType": "Addition",
+          "Description": "Added the **sourceItemId** property to **thumbnail**. ,  Added the **siteUrl** property to **sharepointIds**. ,  Added the **sharedBy** and **sharedDateTime** properties to **shared**. ,  Added the **shared** property to **remoteItem**. ,  Added the **sharepointIds** property to **drive** and **itemReference**. ,  Added **lastAccessedDateTime** to **fileSystemInfo**. ,  Added the **driveItem** and **site** navigation properties to **sharedDriveItem**. ,  Added the **parentReference** property to **baseItem**.",
+          "Target": ""
+        },
+        {
+          "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driveItem,sharedDriveItem,baseItem,identity",
+          "ChangeType": "Change",
+          "Description": "Changed **driveItem** and **sharedDriveItem** to inherit from **baseItem**. ,  Marked **identity** as an Open Type.",
+          "Target": ""
+        }
+      ],
+      "Id": "56d2b63f-142a-4346-bfe9-8aabc86ef0e0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _shared_ collection to allow accessing shared driveItems by shareId or sharing URL.",
+          "Target": ""
+        },
+        {
+          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _search_ function to a drive, which allows searching for more items than just those in the drive\u0027s root folder.",
+          "Target": ""
+        },
+        {
+          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added support for _createUploadSession_, which allows uploading files larger than 4 MB to OneDrive, OneDrive for Business, and SharePoint document libraries.",
+          "Target": ""
+        },
+        {
+          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _sharepointIds_ property to driveItem that returns traditional SharePoint API identifiers for driveItems stored in SharePoint.",
+          "Target": ""
+        },
+        {
+          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added additional properties on _remoteItem_.",
+          "Target": ""
+        },
+        {
+          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added the _quickXorHash_ value for files in OneDrive for Business.",
+          "Target": ""
+        },
+        {
+          "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added scope to the _createSharingLink_ to allow creating company sharable links or anonymous sharing links.",
+          "Target": ""
+        }
+      ],
+      "Id": "e1a3997a-6aff-4782-9bdc-81d4ea8ce12f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-09-01T00:00:00",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "ApiChange": "method",
+          "ChangedApiName": "CreateUploadSession,driveItem",
+          "ChangeType": "Addition",
+          "Description": "Added **CreateUploadSession** method on **driveItem**, which allows large file and resumable uploads.",
+          "Target": ""
+        },
+        {
+          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharepointIds,root",
+          "ChangeType": "Addition",
+          "Description": "Added properties for tracking SharePoint IDs on items from SharePoint (**sharepointIds**) and a property to identify root folders (**root**).",
+          "Target": ""
+        },
+        {
+          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Shares",
+          "ChangeType": "Addition",
+          "Description": "Added **Shares** root collection, which can be used with shareIds or sharing links to access shared items in OneDrive and SharePoint. Returns a new type, sharedDriveItem.",
+          "Target": ""
+        },
+        {
+          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "ApiChange": "method",
+          "ChangedApiName": "Invite",
+          "ChangeType": "Addition",
+          "Description": "Added **Invite** method on driveItem, which allows adding permissions to items.",
+          "Target": ""
+        },
+        {
+          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "ApiChange": "method",
+          "ChangedApiName": "Search",
+          "ChangeType": "Addition",
+          "Description": "Added **Search** method on drive, which allows searching across items in the drive and shared items.",
+          "Target": ""
+        },
+        {
+          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "ApiChange": "Property",
+          "ChangedApiName": "processingMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added **processingMetadata** property on file complex type quickXorHash property on hashes complex type.",
+          "Target": ""
+        },
+        {
+          "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+          "ApiChange": "Property",
+          "ChangedApiName": "quickXorHash",
+          "ChangeType": "Addition",
+          "Description": "Added **quickXorHash** property on hashes complex type.",
+          "Target": ""
+        }
+      ],
+      "Id": "34514922-af70-44b3-be37-130b8fc3467d",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-09-01T00:00:00",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _invite_ function to send a sharing invitation to an existing item. A sharing invitation creates a unique sharing link and sends an email to the recipient of the invitation that includes the sharing link. Example: POST /drive/items/{item-id}/invite.",
+          "Target": ""
+        }
+      ],
+      "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _recent_ function to list a set of items that have been recently used by the signed in user. This list includes items that are in the user\u0027s drive as well as items they have access tofrom other drives. Example: GET /me/drive/recent.",
+          "Target": ""
+        },
+        {
+          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _sharedWithMe_ function to list the set of items that are shared with the current user. Example: GET /me/drive/sharedWithMe.",
+          "Target": ""
+        },
+        {
+          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _remoteItem_ type to provide a link to an item in another drive.",
+          "Target": ""
+        },
+        {
+          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _sharingInvitation_ type to provide details of any associated sharing invitation for this permission.",
+          "Target": ""
+        },
+        {
+          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _delta_ function to track changes to items in a drive. Example: GET /me/drive/items/{item-id}/delta",
+          "Target": ""
+        },
+        {
+          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _copy_ that creates a copy of a _driveItem_ (including any children), under a new parent or with a new name. Example: POST /me/drive/items/{item-id}/copy.",
+          "Target": ""
+        },
+        {
+          "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "_conflictBehavior_ instance attributes is now applicable to _driveItem_.",
+          "Target": ""
+        }
+      ],
+      "Id": "5492edbb-9032-4b8b-a57e-b7b91fe146ef",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5b8d228e-51d5-4586-ac05-a46121a18839",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "New _remoteItem_ property on driveItem for Microsoft accounts.",
+          "Target": ""
+        }
+      ],
+      "Id": "5b8d228e-51d5-4586-ac05-a46121a18839",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-02-01T00:00:00",
+      "WorkloadArea": "Files",
       "SubArea": ""
     }
   ]
