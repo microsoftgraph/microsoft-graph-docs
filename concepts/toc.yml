@@ -362,6 +362,11 @@ items:
             href: excel-update-range-format.md
           - name: Write data to a workbook
             href: excel-write-to-workbook.md
+          - name: Resources
+            expanded: true
+            items:
+              - name: Error codes
+                href: workbook-error-codes.md
   - name: Develop
     expanded: true
     items:

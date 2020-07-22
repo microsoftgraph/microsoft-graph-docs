@@ -1,0 +1,5 @@
+labels:
+    - name: conflicting
+      labeled:
+        pr:
+          body: This pull request has conflicting changes, the author must resolve the conflicts before this pull request can be merged.
