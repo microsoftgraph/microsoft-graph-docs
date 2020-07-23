@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const channel = {
-  @odata.type: "#Microsoft.Teams.Core.channel",
+  @odata.type: "#Microsoft.Graph.channel",
   membershipType: "private",
   displayName: "My First Private Channel",
   description: "This is my first private channels",

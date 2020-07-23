@@ -542,6 +542,8 @@ Use the following properties to assign a user to the application.
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -558,6 +560,12 @@ Content-type: appRoleAssignments/json
   "resourceId":"b00c693f-9658-4c06-bd1b-c402c4653dea"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {

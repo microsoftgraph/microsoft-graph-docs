@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/informationprotection/policy/labels"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/informationProtection/policy/labels"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
