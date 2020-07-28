@@ -278,6 +278,20 @@ The following limits apply to any request on `/security`.
 The preceding limits apply to the following resources: 
 openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post, and user.
 
+### Files and lists service limits
+
+Service limits for OneDrive, OneDrive for Business, and SharePoint Online are not available. For more information, see [why can't you just tell me the exact throttling limits?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
+
+The preceding information applies to the following resources:  
+baseItem, baseItemVersion, columnDefinition, columnLink, contentType, drive, driveItem, driveItemVersion, fieldValueSet, itemActivity, itemActivityStat, itemAnalytics, list, listItem, listItemVersion, permission, sharedDriveItem, site, and thumbnailSet.
+
+### Tasks and plans service limits
+
+Service limits for Planner are not available.
+
+The preceding information applies to the following resources:  
+planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskBoardTaskFormat, plannerGroup, plannerPlan, plannerPlanDetails, plannerProgressTaskBoardTaskFormat, plannerTask, plannerTaskDetails, and plannerUser.
+
 ### Identity and access data policy operation service limits
 
 | Request type | Limit per tenant |

@@ -1,5 +1,5 @@
 ﻿{
-  "Changelogs": [
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "schema extensions,Microsoft Cloud for US Government",
           "ChangeType": "Addition",
-          "Description": "The [schema extensions](/graph/api/resources/schemaextension) feature is now generally available in [Microsoft Cloud for US Government](/graph/deployments).",
+          "Description": "The [schema extensions](https://docs.microsoft.com/en-us/graph/api/resources/schemaextension) feature is now generally available in [Microsoft Cloud for US Government](https://docs.microsoft.com/en-us/graph/deployments).",
           "Target": "schema extensions,Microsoft Cloud for US Government"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mgt-get",
           "ChangeType": "Addition",
-          "Description": "Added the [mgt-get](/graph/toolkit/components/get) component.",
+          "Description": "Added the [mgt-get](https://docs.microsoft.com/en-us/graph/toolkit/components/get) component.",
           "Target": "mgt-get"
         },
         {
@@ -33,7 +33,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Proxy provider",
           "ChangeType": "Addition",
-          "Description": "Added [Proxy provider](/graph/toolkit/providers/proxy).",
+          "Description": "Added [Proxy provider](https://docs.microsoft.com/en-us/graph/toolkit/providers/proxy).",
           "Target": "Proxy provider"
         },
         {
@@ -41,7 +41,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inherit-details",
           "ChangeType": "Addition",
-          "Description": "Added the **inherit-details** attribute to the [person card component](/graph/toolkit/components/person).",
+          "Description": "Added the **inherit-details** attribute to the [person card component](https://docs.microsoft.com/en-us/graph/toolkit/components/person).",
           "Target": "person card component"
         },
         {
@@ -49,7 +49,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "selectedPeople",
           "ChangeType": "Addition",
-          "Description": "Added the **selectedPeople** property to the [people picker component](/graph/toolkit/components/people-picker).",
+          "Description": "Added the **selectedPeople** property to the [people picker component](https://docs.microsoft.com/en-us/graph/toolkit/components/people-picker).",
           "Target": "people picker component"
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "loading,error",
           "ChangeType": "Addition",
-          "Description": "Added the **loading** and **error** templates to the [people picker component](/graph/toolkit/components/people-picker).",
+          "Description": "Added the **loading** and **error** templates to the [people picker component](https://docs.microsoft.com/en-us/graph/toolkit/components/people-picker).",
           "Target": "people picker component"
         },
         {
@@ -65,7 +65,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "task,task-details",
           "ChangeType": "Addition",
-          "Description": "Added the **task** and **task-details** templates to the [tasks component](/graph/toolkit/components/tasks).",
+          "Description": "Added the **task** and **task-details** templates to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
           "Target": "tasks component"
         },
         {
@@ -73,7 +73,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isNewTaskVisible",
           "ChangeType": "Addition",
-          "Description": "Added the **isNewTaskVisible** property to the [tasks component](/graph/toolkit/components/tasks).",
+          "Description": "Added the **isNewTaskVisible** property to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
           "Target": "tasks component"
         },
         {
@@ -81,7 +81,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "group-id",
           "ChangeType": "Addition",
-          "Description": "Added the **group-id** attribute to the [tasks component](/graph/toolkit/components/tasks).",
+          "Description": "Added the **group-id** attribute to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
           "Target": "tasks component"
         },
         {
@@ -89,7 +89,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "taskFilter",
           "ChangeType": "Addition",
-          "Description": "Added the **taskFilter** property to the [tasks component](/graph/toolkit/components/tasks).",
+          "Description": "Added the **taskFilter** property to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
           "Target": "tasks component"
         },
         {
@@ -97,7 +97,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "eventClick",
           "ChangeType": "Addition",
-          "Description": "Added the **eventClick** event to the [agenda component](/graph/toolkit/components/agenda).",
+          "Description": "Added the **eventClick** event to the [agenda component](https://docs.microsoft.com/en-us/graph/toolkit/components/agenda).",
           "Target": "agenda component"
         },
         {
@@ -105,7 +105,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "person-card",
           "ChangeType": "Addition",
-          "Description": "Added the **person-card** attribute to the [people component](/graph/toolkit/components/people).",
+          "Description": "Added the **person-card** attribute to the [people component](https://docs.microsoft.com/en-us/graph/toolkit/components/people).",
           "Target": "people component"
         },
         {
@@ -113,7 +113,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "user-ids",
           "ChangeType": "Addition",
-          "Description": "Added the **user-ids** attribute to the [people component](/graph/toolkit/components/people).",
+          "Description": "Added the **user-ids** attribute to the [people component](https://docs.microsoft.com/en-us/graph/toolkit/components/people).",
           "Target": "people component"
         }
       ],
@@ -131,7 +131,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowNewTimeProposals",
           "ChangeType": "Addition",
-          "Description": "Added the **allowNewTimeProposals** property to the [event](/graph/api/resources/event?view=graph-rest-beta) and [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta) entities.",
+          "Description": "Added the **allowNewTimeProposals** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) and [eventMessageRequest](https://docs.microsoft.com/en-us/graph/api/resources/eventmessagerequest?view=graph-rest-beta) entities.",
           "Target": "event,eventMessageRequest"
         },
         {
@@ -139,7 +139,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "proposedNewTime,event",
           "ChangeType": "Addition",
-          "Description": "Added the **proposedNewTime** optional parameter to the [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-beta) and [decline](/graph/api/event-decline?view=graph-rest-beta) methods of **event**.",
+          "Description": "Added the **proposedNewTime** optional parameter to the [tentativelyAccept](https://docs.microsoft.com/en-us/graph/api/event-tentativelyaccept?view=graph-rest-beta) and [decline](https://docs.microsoft.com/en-us/graph/api/event-decline?view=graph-rest-beta) methods of **event**.",
           "Target": "tentativelyAccept,decline"
         },
         {
@@ -147,7 +147,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "proposedNewTime,responseType",
           "ChangeType": "Addition",
-          "Description": "Added the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) entity that is based on [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-beta), and in addition, includes the **proposedNewTime** and **responseType** properties.",
+          "Description": "Added the [eventMessageResponse](https://docs.microsoft.com/en-us/graph/api/resources/eventmessageresponse?view=graph-rest-beta) entity that is based on [eventMessage](https://docs.microsoft.com/en-us/graph/api/resources/eventmessage?view=graph-rest-beta), and in addition, includes the **proposedNewTime** and **responseType** properties.",
           "Target": "eventMessageResponse,eventMessage"
         },
         {
@@ -155,7 +155,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "proposedNewTime",
           "ChangeType": "Addition",
-          "Description": "Added the **proposedNewTime** property to the [attendee](/graph/api/resources/attendee?view=graph-rest-beta) complex type.",
+          "Description": "Added the **proposedNewTime** property to the [attendee](https://docs.microsoft.com/en-us/graph/api/resources/attendee?view=graph-rest-beta) complex type.",
           "Target": "attendee"
         }
       ],
@@ -173,7 +173,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingBusiness,List,Create,Get,Update,Delete,Publish,Unpublish,Microsoft Bookings API",
           "ChangeType": "Addition",
-          "Description": "Added the [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta) entity and the following CRUD methods and actions: \u003Cbr\u003E [List](/graph/api/bookingbusiness-list?view=graph-rest-beta) \u003Cbr\u003E [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta) \u003Cbr\u003E [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta) \u003Cbr\u003E [Update](/graph/api/bookingbusiness-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta) \u003Cbr\u003E [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta) \u003Cbr\u003E [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). \u003Cbr\u003E Find out more about integrating with the [Microsoft Bookings API](booking-concept-overview.md).",
+          "Description": "Added the [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) entity and the following CRUD methods and actions: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-delete?view=graph-rest-beta) \u003Cbr\u003E [Publish](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-publish?view=graph-rest-beta) \u003Cbr\u003E [Unpublish](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). \u003Cbr\u003E Find out more about integrating with the [Microsoft Bookings API](booking-concept-overview.md).",
           "Target": "bookingBusiness,List,Create,Get,Update,Delete,Publish,Unpublish,Microsoft Bookings API"
         },
         {
@@ -181,7 +181,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingAppointment,List,Create,Get,Update,Delete,Cancel",
           "ChangeType": "Addition",
-          "Description": "Added the [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) entity and the following CRUD methods and action: \u003Cbr\u003E [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta) \u003Cbr\u003E [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) \u003Cbr\u003E [Get](/graph/api/bookingappointment-get?view=graph-rest-beta) \u003Cbr\u003E [Update](/graph/api/bookingappointment-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta) \u003Cbr\u003E [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta).",
+          "Description": "Added the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingappointment?view=graph-rest-beta) entity and the following CRUD methods and action: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingappointment-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingappointment-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingappointment-delete?view=graph-rest-beta) \u003Cbr\u003E [Cancel](https://docs.microsoft.com/en-us/graph/api/bookingappointment-cancel?view=graph-rest-beta).",
           "Target": "bookingAppointment,List,Create,Get,Update,Delete,Cancel"
         },
         {
@@ -189,7 +189,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingCurrency,List,Get",
           "ChangeType": "Addition",
-          "Description": "Added the [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta) entity and the following methods: \u003Cbr\u003E [List](/graph/api/bookingcurrency-list?view=graph-rest-beta) \u003Cbr\u003E [Get](/graph/api/bookingcurrency-get?view=graph-rest-beta).",
+          "Description": "Added the [bookingCurrency](https://docs.microsoft.com/en-us/graph/api/resources/bookingcurrency?view=graph-rest-beta) entity and the following methods: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingcurrency-list?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingcurrency-get?view=graph-rest-beta).",
           "Target": "bookingCurrency,List,Get"
         },
         {
@@ -197,7 +197,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingCustomer,List,Create,Get,Update,Delete",
           "ChangeType": "Addition",
-          "Description": "Added the [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) \u003Cbr\u003E [Create](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta) \u003Cbr\u003E [Get](/graph/api/bookingcustomer-get?view=graph-rest-beta) \u003Cbr\u003E [Update](/graph/api/bookingcustomer-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](/graph/api/bookingcustomer-delete?view=graph-rest-beta).",
+          "Description": "Added the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingcustomer?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-customers?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingcustomer-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingcustomer-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingcustomer-delete?view=graph-rest-beta).",
           "Target": "bookingCustomer,List,Create,Get,Update,Delete"
         },
         {
@@ -205,7 +205,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingService,List,Create,Get,Update,Delete",
           "ChangeType": "Addition",
-          "Description": "Added the [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [List](/graph/api/bookingbusiness-list-services?view=graph-rest-beta) \u003Cbr\u003E [Create](/graph/api/bookingbusiness-post-services?view=graph-rest-beta) \u003Cbr\u003E [Get](/graph/api/bookingservice-get?view=graph-rest-beta) \u003Cbr\u003E [Update](/graph/api/bookingservice-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](/graph/api/bookingservice-delete?view=graph-rest-beta).",
+          "Description": "Added the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingservice?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list-services?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-services?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingservice-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingservice-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingservice-delete?view=graph-rest-beta).",
           "Target": "bookingService,List,Create,Get,Update,Delete"
         },
         {
@@ -213,7 +213,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingStaffMember,List,Create,Get,Update,Delete",
           "ChangeType": "Addition",
-          "Description": "Added the [bookingStaffMember](/graph/api/resources/bookingstaffmember?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [List](/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta) \u003Cbr\u003E [Create](/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta) \u003Cbr\u003E [Get](/graph/api/bookingstaffmember-get?view=graph-rest-beta) \u003Cbr\u003E [Update](/graph/api/bookingstaffmember-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](/graph/api/bookingstaffmember-delete?view=graph-rest-beta).",
+          "Description": "Added the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingstaffmember?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingstaffmember-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingstaffmember-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingstaffmember-delete?view=graph-rest-beta).",
           "Target": "bookingStaffMember,List,Create,Get,Update,Delete"
         },
         {
@@ -221,7 +221,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "bookingNamedEntity,bookingPerson,bookingReminder,bookingWorkHours,bookingWorkTimeSlot",
           "ChangeType": "Addition",
-          "Description": "Added the following complex types: \u003Cbr\u003E [bookingNamedEntity](/graph/api/resources/bookingnamedentity?view=graph-rest-beta) \u003Cbr\u003E [bookingPerson](/graph/api/resources/bookingperson?view=graph-rest-beta) \u003Cbr\u003E [bookingReminder](/graph/api/resources/bookingreminder?view=graph-rest-beta) \u003Cbr\u003E [bookingWorkHours](/graph/api/resources/bookingworkhours?view=graph-rest-beta) \u003Cbr\u003E [bookingWorkTimeSlot](/graph/api/resources/bookingworktimeslot?view=graph-rest-beta).",
+          "Description": "Added the following complex types: \u003Cbr\u003E [bookingNamedEntity](https://docs.microsoft.com/en-us/graph/api/resources/bookingnamedentity?view=graph-rest-beta) \u003Cbr\u003E [bookingPerson](https://docs.microsoft.com/en-us/graph/api/resources/bookingperson?view=graph-rest-beta) \u003Cbr\u003E [bookingReminder](https://docs.microsoft.com/en-us/graph/api/resources/bookingreminder?view=graph-rest-beta) \u003Cbr\u003E [bookingWorkHours](https://docs.microsoft.com/en-us/graph/api/resources/bookingworkhours?view=graph-rest-beta) \u003Cbr\u003E [bookingWorkTimeSlot](https://docs.microsoft.com/en-us/graph/api/resources/bookingworktimeslot?view=graph-rest-beta).",
           "Target": "bookingNamedEntity,bookingPerson,bookingReminder,bookingWorkHours,bookingWorkTimeSlot"
         }
       ],
@@ -275,7 +275,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "users,groups",
           "ChangeType": "Change",
-          "Description": "Add additional optional query filtering capability (by id) to [users](/graph/api/user-delta?view=graph-rest-beta) and [groups](/graph/api/group-delta?view=graph-rest-beta).",
+          "Description": "Add additional optional query filtering capability (by id) to [users](https://docs.microsoft.com/en-us/graph/api/user-delta?view=graph-rest-beta) and [groups](https://docs.microsoft.com/en-us/graph/api/group-delta?view=graph-rest-beta).",
           "Target": "users,groups"
         }
       ],
@@ -311,7 +311,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "user",
           "ChangeType": "Change",
-          "Description": "Added deletedDateTime property to [user](/graph/api/resources/user?view=graph-rest-beta) entity.",
+          "Description": "Added deletedDateTime property to [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity.",
           "Target": "user"
         },
         {
@@ -319,7 +319,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "group",
           "ChangeType": "Change",
-          "Description": "Added deletedDateTime property to [group](/graph/api/resources/group?view=graph-rest-beta) entity.",
+          "Description": "Added deletedDateTime property to [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) entity.",
           "Target": "group"
         },
         {
@@ -327,7 +327,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "application",
           "ChangeType": "Change",
-          "Description": "Added deletedDateTime property to [application](/graph/api/resources/application?view=graph-rest-beta) entity.",
+          "Description": "Added deletedDateTime property to [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) entity.",
           "Target": "application"
         }
       ],
@@ -345,7 +345,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "domains,domain,domainDnsRecord,domainDnsCnameRecord,domainDnsMxRecord,domainDnsSrvRecord,domainDnsTxtRecord,domainDnsUnavailableRecord,verify",
           "ChangeType": "Addition",
-          "Description": "Added operations on [domains](/graph/api/resources/domain?view=graph-rest-1.0)., New entities:\u003C/br\u003E[domain](/graph/api/resources/domain?view=graph-rest-1.0), [domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-1.0), [domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-1.0), [domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-1.0), [domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-1.0), [domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-1.0), [domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-1.0), New actions:\u003C/br\u003E[verify](/graph/api/domain-verify?view=graph-rest-1.0)",
+          "Description": "Added operations on [domains](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0)., New entities:\u003C/br\u003E[domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0), [domainDnsRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnsrecord?view=graph-rest-1.0), [domainDnsCnameRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnscnamerecord?view=graph-rest-1.0), [domainDnsMxRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnsmxrecord?view=graph-rest-1.0), [domainDnsSrvRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnssrvrecord?view=graph-rest-1.0), [domainDnsTxtRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnstxtrecord?view=graph-rest-1.0), [domainDnsUnavailableRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-1.0), New actions:\u003C/br\u003E[verify](https://docs.microsoft.com/en-us/graph/api/domain-verify?view=graph-rest-1.0)",
           "Target": "domains,domain,domainDnsRecord,domainDnsCnameRecord,domainDnsMxRecord,domainDnsSrvRecord,domainDnsTxtRecord,domainDnsUnavailableRecord,verify"
         }
       ],
@@ -363,7 +363,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contract",
           "ChangeType": "Addition",
-          "Description": "New entity:\u003C/br\u003E[contract](/graph/api/resources/contract?view=graph-rest-1.0)",
+          "Description": "New entity:\u003C/br\u003E[contract](https://docs.microsoft.com/en-us/graph/api/resources/contract?view=graph-rest-1.0)",
           "Target": "contract"
         }
       ],
@@ -381,7 +381,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "licenseDetails",
           "ChangeType": "Addition",
-          "Description": "New entity:\u003C/br\u003E[licenseDetails](/graph/api/resources/licensedetails?view=graph-rest-1.0)",
+          "Description": "New entity:\u003C/br\u003E[licenseDetails](https://docs.microsoft.com/en-us/graph/api/resources/licensedetails?view=graph-rest-1.0)",
           "Target": "licenseDetails"
         },
         {
@@ -389,7 +389,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "licensedetails,users",
           "ChangeType": "Change",
-          "Description": "New [licensedetails](/graph/api/user-list-licensedetails?view=graph-rest-1.0) navigation property on [users](/graph/api/resources/user?view=graph-rest-1.0)",
+          "Description": "New [licensedetails](https://docs.microsoft.com/en-us/graph/api/user-list-licensedetails?view=graph-rest-1.0) navigation property on [users](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0)",
           "Target": "licensedetails,users"
         }
       ],
@@ -407,7 +407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "$expand",
           "ChangeType": "Addition",
-          "Description": "Support for **$expand** to [get open extensions](/graph/api/opentypeextension-get?view=graph-rest-1.0) in [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta).",
+          "Description": "Support for **$expand** to [get open extensions](https://docs.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-1.0) in [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta).",
           "Target": "get open extensions,administrativeUnit"
         }
       ],
@@ -425,7 +425,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "openTypeExtension,device,group,organization,user",
           "ChangeType": "Addition",
-          "Description": "Support for [openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-1.0) in the following resources - [device](/graph/api/resources/device?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0),[organization](/graph/api/resources/organization?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0).",
+          "Description": "Support for [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-1.0) in the following resources - [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0), [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0),[organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0), [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0).",
           "Target": "openTypeExtension,device,group,organization,user"
         },
         {
@@ -441,7 +441,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "$expand",
           "ChangeType": "Addition",
-          "Description": "Support for **$expand** to [get open extensions](/graph/api/opentypeextension-get?view=graph-rest-1.0) in the following resources: [device](/graph/api/resources/device?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0),[organization](/graph/api/resources/organization?view=graph-rest-1.0), [post](/graph/api/resources/post?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0).",
+          "Description": "Support for **$expand** to [get open extensions](https://docs.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-1.0) in the following resources: [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0), [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0),[organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0), [post](https://docs.microsoft.com/en-us/graph/api/resources/post?view=graph-rest-1.0), [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0).",
           "Target": "get open extensions,device,group,organization,post,user"
         }
       ],
@@ -459,7 +459,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "schemaExtension,contact,device,event,group,message,organization,post,user,administrativeUnit",
           "ChangeType": "Addition",
-          "Description": "New resource [schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0) and CRUD methods to manage extension definitions for the following resources: [contact](/graph/api/resources/contact?view=graph-rest-1.0), [device](/graph/api/resources/device?view=graph-rest-1.0), [event](/graph/api/resources/event?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [organization](/graph/api/resources/organization?view=graph-rest-1.0), [post](/graph/api/resources/post?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0). Note that support for [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) is still limited to the beta version as before.",
+          "Description": "New resource [schemaExtension](https://docs.microsoft.com/en-us/graph/api/resources/schemaextension?view=graph-rest-1.0) and CRUD methods to manage extension definitions for the following resources: [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0), [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0), [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0), [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0), [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0), [post](https://docs.microsoft.com/en-us/graph/api/resources/post?view=graph-rest-1.0), [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0). Note that support for [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta) is still limited to the beta version as before.",
           "Target": "schemaExtension,contact,device,event,group,message,organization,post,user,administrativeUnit"
         },
         {
@@ -467,7 +467,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contact,device,event,group,message,organization,post,user",
           "ChangeType": "Addition",
-          "Description": "The existing POST, GET, and PATCH methods of the following resources - [contact](/graph/api/resources/contact?view=graph-rest-1.0), [device](/graph/api/resources/device?view=graph-rest-1.0), [event](/graph/api/resources/event?view=graph-rest-1.0), [group](/graph/api/resources/group?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [organization](/graph/api/resources/organization?view=graph-rest-1.0), [post](/graph/api/resources/post?view=graph-rest-1.0), [user](/graph/api/resources/user?view=graph-rest-1.0) - now support adding, getting, and updating or deleting custom data stored as schema extensions in the corresponding resource instances.",
+          "Description": "The existing POST, GET, and PATCH methods of the following resources - [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0), [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0), [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0), [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0), [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0), [post](https://docs.microsoft.com/en-us/graph/api/resources/post?view=graph-rest-1.0), [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) - now support adding, getting, and updating or deleting custom data stored as schema extensions in the corresponding resource instances.",
           "Target": "contact,device,event,group,message,organization,post,user"
         },
         {
@@ -483,7 +483,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Deleting a schema extension definition",
           "ChangeType": "Change",
-          "Description": "[Deleting a schema extension definition](/graph/api/schemaextension-delete?view=graph-rest-1.0) no longer affects accessing custom data that has been added based on that definition.",
+          "Description": "[Deleting a schema extension definition](https://docs.microsoft.com/en-us/graph/api/schemaextension-delete?view=graph-rest-1.0) no longer affects accessing custom data that has been added based on that definition.",
           "Target": "Deleting a schema extension definition"
         },
         {
@@ -607,7 +607,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "daemon \u0026 long running processes in business scenarios",
           "ChangeType": "Addition",
-          "Description": "The v2.0 auth endpoint now supports the client_credentials OAuth grant, which can be used for [daemon \u0026 long running processes in business scenarios](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).",
+          "Description": "The v2.0 auth endpoint now supports the client_credentials OAuth grant, which can be used for [daemon \u0026 long running processes in business scenarios](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).",
           "Target": "daemon \u0026 long running processes in business scenarios"
         },
         {
@@ -615,7 +615,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "permission scopes that require administrator\u0027s consent,admin consent endpoint",
           "ChangeType": "Addition",
-          "Description": "The v2.0 auth endpoint now supports [permission scopes that require administrator\u0027s consent](permissions-reference.md), via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
+          "Description": "The v2.0 auth endpoint now supports [permission scopes that require administrator\u0027s consent](permissions-reference.md), via the [admin consent endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
           "Target": "permission scopes that require administrator\u0027s consent,admin consent endpoint"
         },
         {
@@ -623,7 +623,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "admin consent endpoint",
           "ChangeType": "Addition",
-          "Description": "The v2.0 auth endpoint now supports administrative consent for all users in a tenant, via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
+          "Description": "The v2.0 auth endpoint now supports administrative consent for all users in a tenant, via the [admin consent endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
           "Target": "admin consent endpoint"
         }
       ],

@@ -930,6 +930,23 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Information protection policy permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _InformationProtectionPolicy.Read_ |   Read user sensitivity labels and label policies | Allows an app to read information protection sensitivity labels and label policy settings, on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _InformationProtectionPolicy.Read.All_ |   Read all published labels and label policies for an organization | Allows an app to read published sensitivity labels and label policy settings for the entire organization or a specific user, without a signed in user. | Yes |
+
+---
+
+
 ## Intune device management permissions
 
 #### Delegated permissions

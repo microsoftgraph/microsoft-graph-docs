@@ -1,5 +1,5 @@
 ﻿{
-  "Changelogs": [
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "The [delta](/graph/api/event-delta?view=graph-rest-beta) function supports an additional scenario to get incremental changes (new, updated, or removed) of events in a user calendar without necessarily being bounded by a date range.",
+          "Description": "The [delta](https://docs.microsoft.com/en-us/graph/api/event-delta?view=graph-rest-beta) function supports an additional scenario to get incremental changes (new, updated, or removed) of events in a user calendar without necessarily being bounded by a date range.",
           "Target": "delta"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "place,room,roomList",
           "ChangeType": "Addition",
-          "Description": "Places API available in v1. Added the [place](/graph/api/resources/place?view=graph-rest-1.0), [room](/graph/api/resources/room?view=graph-rest-1.0), [roomList](/graph/api/resources/room?view=graph-rest-1.0) resources and their methods to provide rich details for locations in apps.",
+          "Description": "Places API available in v1. Added the [place](https://docs.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-1.0), [room](https://docs.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-1.0), [roomList](https://docs.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-1.0) resources and their methods to provide rich details for locations in apps.",
           "Target": "place,room,roomList"
         }
       ],
@@ -43,7 +43,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "places API",
           "ChangeType": "Addition",
-          "Description": "Added pagination support for the [places API](/graph/api/resources/place?view=graph-rest-beta).",
+          "Description": "Added pagination support for the [places API](https://docs.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta).",
           "Target": "places API"
         }
       ],
@@ -61,7 +61,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "calendarPermission",
           "ChangeType": "Addition",
-          "Description": "Added new entity [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0).",
+          "Description": "Added new entity [calendarPermission](https://docs.microsoft.com/en-us/graph/api/resources/calendarpermission?view=graph-rest-1.0).",
           "Target": "calendarPermission"
         },
         {
@@ -69,7 +69,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "get,update,delete,calendarPermission,calendar",
           "ChangeType": "Addition",
-          "Description": "Added [get](/graph/api/calendarpermission-get?view=graph-rest-1.0), [update](/graph/api/calendarpermission-update?view=graph-rest-1.0) and [delete](/graph/api/calendarpermission-delete?view=graph-rest-1.0) APIs to manage [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-1.0).",
+          "Description": "Added [get](https://docs.microsoft.com/en-us/graph/api/calendarpermission-get?view=graph-rest-1.0), [update](https://docs.microsoft.com/en-us/graph/api/calendarpermission-update?view=graph-rest-1.0) and [delete](https://docs.microsoft.com/en-us/graph/api/calendarpermission-delete?view=graph-rest-1.0) APIs to manage [calendarPermission](https://docs.microsoft.com/en-us/graph/api/resources/calendarpermission?view=graph-rest-1.0) resources on [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0).",
           "Target": "get,update,delete,calendarPermission,calendar"
         },
         {
@@ -77,7 +77,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onlineMeetingInfo",
           "ChangeType": "Addition",
-          "Description": "Added new complex type [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo?view=graph-rest-1.0).",
+          "Description": "Added new complex type [onlineMeetingInfo](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeetinginfo?view=graph-rest-1.0).",
           "Target": "onlineMeetingInfo"
         },
         {
@@ -85,7 +85,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isOnlineMeeting,onlineMeetingProvider,onlineMeeting,isOnlineMeeting,onlineMeetingProvider,event",
           "ChangeType": "Addition",
-          "Description": "Added the **isOnlineMeeting**, **onlineMeetingProvider** and **onlineMeeting** properties to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity. **isOnlineMeeting** and **onlineMeetingProvider** are optional parameters to the [create](/graph/api/user-post-events?view=graph-rest-1.0) and [update](/graph/api/event-update?view=graph-rest-1.0) methods of **event**.",
+          "Description": "Added the **isOnlineMeeting**, **onlineMeetingProvider** and **onlineMeeting** properties to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) entity. **isOnlineMeeting** and **onlineMeetingProvider** are optional parameters to the [create](https://docs.microsoft.com/en-us/graph/api/user-post-events?view=graph-rest-1.0) and [update](https://docs.microsoft.com/en-us/graph/api/event-update?view=graph-rest-1.0) methods of **event**.",
           "Target": "event,create,update"
         },
         {
@@ -93,7 +93,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "defaultOnlineMeetingProviders,allowedOnlineMeetingProviders",
           "ChangeType": "Addition",
-          "Description": "Added the **defaultOnlineMeetingProviders** and **allowedOnlineMeetingProviders** properties to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
+          "Description": "Added the **defaultOnlineMeetingProviders** and **allowedOnlineMeetingProviders** properties to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
           "Target": "calendar"
         },
         {
@@ -101,7 +101,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isTallyingResponses",
           "ChangeType": "Addition",
-          "Description": "Added the **isTallyingResponses** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
+          "Description": "Added the **isTallyingResponses** property to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
           "Target": "calendar"
         },
         {
@@ -109,7 +109,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isRemovable",
           "ChangeType": "Addition",
-          "Description": "Added the **isRemovable** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
+          "Description": "Added the **isRemovable** property to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
           "Target": "calendar"
         },
         {
@@ -117,7 +117,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "delegateMeetingMessageDeliveryOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) entity.",
+          "Description": "Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](https://docs.microsoft.com/en-us/graph/api/resources/mailboxSettings?view=graph-rest-1.0) entity.",
           "Target": "mailboxSettings"
         },
         {
@@ -125,7 +125,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "file attachments up to 150MB,event",
           "ChangeType": "Addition",
-          "Description": "Support for [file attachments up to 150MB](outlook-large-attachments.md) for an [event](/graph/api/resources/event?view=graph-rest-1.0) instance.",
+          "Description": "Support for [file attachments up to 150MB](outlook-large-attachments.md) for an [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) instance.",
           "Target": "file attachments up to 150MB,event"
         }
       ],
@@ -143,7 +143,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Adding file attachments up to 150MB,message",
           "ChangeType": "Addition",
-          "Description": "[Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-1.0) instance.",
+          "Description": "[Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) instance.",
           "Target": "Adding file attachments up to 150MB,message"
         },
         {
@@ -151,7 +151,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentType",
           "ChangeType": "Addition",
-          "Description": "The [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-1.0) complex type, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) action for the [attachment](/graph/api/resources/attachment?view=graph-rest-1.0) entity, and the **attachmentType** enumeration.",
+          "Description": "The [attachmentItem](https://docs.microsoft.com/en-us/graph/api/resources/attachmentitem?view=graph-rest-1.0) complex type, [createUploadSession](https://docs.microsoft.com/en-us/graph/api/attachment-createuploadsession?view=graph-rest-1.0) action for the [attachment](https://docs.microsoft.com/en-us/graph/api/resources/attachment?view=graph-rest-1.0) entity, and the **attachmentType** enumeration.",
           "Target": "attachmentItem,createUploadSession,attachment"
         }
       ],
@@ -169,7 +169,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "calendarGroupId",
           "ChangeType": "Addition",
-          "Description": "Added the **calendarGroupId** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity.",
+          "Description": "Added the **calendarGroupId** property to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) entity.",
           "Target": "calendar"
         },
         {
@@ -177,7 +177,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isDraft",
           "ChangeType": "Addition",
-          "Description": "Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity.",
+          "Description": "Added the **isDraft** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) entity.",
           "Target": "event"
         }
       ],
@@ -195,7 +195,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "update a room or roomlist",
           "ChangeType": "Addition",
-          "Description": "Added the ability to [update a room or roomlist](/graph/api/resources/place-get?view=graph-rest-beta).",
+          "Description": "Added the ability to [update a room or roomlist](https://docs.microsoft.com/en-us/graph/api/resources/place-get?view=graph-rest-beta).",
           "Target": "update a room or roomlist"
         }
       ],
@@ -213,7 +213,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Mail.ReadBasic,Mail.ReadBasic.All,create,get,update,delete",
           "ChangeType": "Addition",
-          "Description": "Added support for the [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) delegated permission and [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) application permission to [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [get](/graph/api/subscription-get?view=graph-rest-beta), [update](/graph/api/subscription-update?view=graph-rest-beta), and [delete](/graph/api/subscription-delete?view=graph-rest-beta) subscriptions for change notifications on message.",
+          "Description": "Added support for the [Mail.ReadBasic](https://docs.microsoft.com/en-us/graph/permissions-reference#mail-permissions) delegated permission and [Mail.ReadBasic.All](https://docs.microsoft.com/en-us/graph/permissions-reference#mail-permissions) application permission to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta), [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta), and [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) subscriptions for change notifications on message.",
           "Target": "Mail.ReadBasic,Mail.ReadBasic.All,create,get,update,delete"
         }
       ],
@@ -231,7 +231,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "conversationIndex",
           "ChangeType": "Addition",
-          "Description": "Added the **conversationIndex** property to [message](/graph/api/resources/message?view=graph-rest-1.0) and its derived type [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0).",
+          "Description": "Added the **conversationIndex** property to [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) and its derived type [eventMessage](https://docs.microsoft.com/en-us/graph/api/resources/eventmessage?view=graph-rest-1.0).",
           "Target": "message,eventMessage"
         },
         {
@@ -239,7 +239,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "List messages,Get message,List mail folders,Get mail folder,List child folders,List messages in folder,Get message delta,Get mail folder delta,Create,get,update,delete",
           "ChangeType": "Addition",
-          "Description": "Added support for the Mail.ReadBasic delegated permission and Mail.ReadBasic.All application permission to:\u003Cbr /\u003E- [List messages](/graph/api/user-list-messages?view=graph-rest-1.0)\u003Cbr /\u003E- [Get message](/graph/api/message-get?view=graph-rest-1.0) \u003Cbr /\u003E- [List mail folders](/graph/api/user-list-mailfolders?view=graph-rest-1.0)\u003Cbr /\u003E- [Get mail folder](/graph/api/mailfolder-get?view=graph-rest-1.0)\u003Cbr /\u003E- [List child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)\u003Cbr /\u003E- [List messages in folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)\u003Cbr /\u003E- [Get message delta](/graph/api/message-delta?view=graph-rest-1.0)\u003Cbr /\u003E- [Get mail folder delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) \u003Cbr /\u003E- [Create](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [get](/graph/api/subscription-get?view=graph-rest-1.0), [update](/graph/api/subscription-update?view=graph-rest-1.0), and [delete](/graph/api/subscription-delete?view=graph-rest-1.0) subscriptions for change notifications on message",
+          "Description": "Added support for the Mail.ReadBasic delegated permission and Mail.ReadBasic.All application permission to:\u003Cbr /\u003E- [List messages](https://docs.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-1.0)\u003Cbr /\u003E- [Get message](https://docs.microsoft.com/en-us/graph/api/message-get?view=graph-rest-1.0) \u003Cbr /\u003E- [List mail folders](https://docs.microsoft.com/en-us/graph/api/user-list-mailfolders?view=graph-rest-1.0)\u003Cbr /\u003E- [Get mail folder](https://docs.microsoft.com/en-us/graph/api/mailfolder-get?view=graph-rest-1.0)\u003Cbr /\u003E- [List child folders](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)\u003Cbr /\u003E- [List messages in folder](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)\u003Cbr /\u003E- [Get message delta](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-1.0)\u003Cbr /\u003E- [Get mail folder delta](https://docs.microsoft.com/en-us/graph/api/mailfolder-delta?view=graph-rest-1.0) \u003Cbr /\u003E- [Create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0), [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0), and [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0) subscriptions for change notifications on message",
           "Target": "List messages,Get message,List mail folders,Get mail folder,List child folders,List messages in folder,Get message delta,Get mail folder delta,Create,get,update,delete"
         }
       ],
@@ -257,7 +257,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Adding file attachments up to 150MB,message",
           "ChangeType": "Addition",
-          "Description": "[Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-beta) instance.",
+          "Description": "[Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) instance.",
           "Target": "Adding file attachments up to 150MB,message"
         },
         {
@@ -265,7 +265,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentType",
           "ChangeType": "Addition",
-          "Description": "The [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-beta) complex type, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) action for the [attachment](/graph/api/resources/attachment?view=graph-rest-beta) entity, and the **attachmentType** enumeration.",
+          "Description": "The [attachmentItem](https://docs.microsoft.com/en-us/graph/api/resources/attachmentitem?view=graph-rest-beta) complex type, [createUploadSession](https://docs.microsoft.com/en-us/graph/api/attachment-createuploadsession?view=graph-rest-beta) action for the [attachment](https://docs.microsoft.com/en-us/graph/api/resources/attachment?view=graph-rest-beta) entity, and the **attachmentType** enumeration.",
           "Target": "attachmentItem,createUploadSession,attachment"
         }
       ],
@@ -283,7 +283,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "get the raw contents of a file or item attachment",
           "ChangeType": "Addition",
-          "Description": "Added the capability to [get the raw contents of a file or item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, or group post.",
+          "Description": "Added the capability to [get the raw contents of a file or item attachment](https://docs.microsoft.com/en-us/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, or group post.",
           "Target": "get the raw contents of a file or item attachment"
         }
       ],
@@ -319,7 +319,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "room list",
           "ChangeType": "Addition",
-          "Description": "Added the [room list](/graph/api/resources/roomlist?view=graph-rest-beta) resource",
+          "Description": "Added the [room list](https://docs.microsoft.com/en-us/graph/api/resources/roomlist?view=graph-rest-beta) resource",
           "Target": "room list"
         },
         {
@@ -327,7 +327,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "room",
           "ChangeType": "Addition",
-          "Description": "Added the [room](/graph/api/resources/room?view=graph-rest-beta) resource",
+          "Description": "Added the [room](https://docs.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource",
           "Target": "room"
         },
         {
@@ -335,7 +335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "place",
           "ChangeType": "Addition",
-          "Description": "Added the [place](/graph/api/resources/place?view=graph-rest-beta) resource",
+          "Description": "Added the [place](https://docs.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource",
           "Target": "place"
         },
         {
@@ -361,7 +361,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "list mailfolders,get a mailfolder,list child folders,list messages in a mail folder,delta query for message,delta query for mailFolder",
           "ChangeType": "Addition",
-          "Description": "Added support for the Mail.ReadBasic.All application permission in mailFolder API: [list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic.All support in [delta query for message](/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).",
+          "Description": "Added support for the Mail.ReadBasic.All application permission in mailFolder API: [list mailfolders](https://docs.microsoft.com/en-us/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic.All support in [delta query for message](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-delta?view=graph-rest-beta).",
           "Target": "list mailfolders,get a mailfolder,list child folders,list messages in a mail folder,delta query for message,delta query for mailFolder"
         }
       ],
@@ -379,7 +379,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "list mailfolders,get a mailfolder,list child folders,list messages in a mail folder,delta query for message,delta query for mailFolder",
           "ChangeType": "Addition",
-          "Description": "Added support for the Mail.ReadBasic permission in mailFolder API: [list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic support in [delta query for message](/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).",
+          "Description": "Added support for the Mail.ReadBasic permission in mailFolder API: [list mailfolders](https://docs.microsoft.com/en-us/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic support in [delta query for message](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-delta?view=graph-rest-beta).",
           "Target": "list mailfolders,get a mailfolder,list child folders,list messages in a mail folder,delta query for message,delta query for mailFolder"
         }
       ],
@@ -415,7 +415,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailSearchFolder,mailFolder",
           "ChangeType": "Addition",
-          "Description": "Added the [mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) entity, which is derived from and supports the methods of the [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) entity.",
+          "Description": "Added the [mailSearchFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailsearchfolder?graph-rest-1.0) entity, which is derived from and supports the methods of the [mailFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailfolder?graph-rest-1.0) entity.",
           "Target": "mailSearchFolder,mailFolder"
         }
       ],
@@ -433,7 +433,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Mail.ReadBasic (preview) permission,List Messages,Get Message",
           "ChangeType": "Addition",
-          "Description": "Added support for a new [Mail.ReadBasic (preview) permission](permissions-reference.md#mail-permissions) for [List Messages](/graph/api/user-list-messages?view=graph-rest-beta) and [Get Message](/graph/api/message-get?view=graph-rest-beta).",
+          "Description": "Added support for a new [Mail.ReadBasic (preview) permission](permissions-reference.md#mail-permissions) for [List Messages](https://docs.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-beta) and [Get Message](https://docs.microsoft.com/en-us/graph/api/message-get?view=graph-rest-beta).",
           "Target": "Mail.ReadBasic (preview) permission,List Messages,Get Message"
         },
         {
@@ -449,7 +449,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "get the raw contents of a file or item attachment",
           "ChangeType": "Addition",
-          "Description": "Added the capability to [get the raw contents of a file or item attachment](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post.",
+          "Description": "Added the capability to [get the raw contents of a file or item attachment](https://docs.microsoft.com/en-us/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post.",
           "Target": "get the raw contents of a file or item attachment"
         }
       ],
@@ -467,7 +467,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "findMeetingTimes,February 2019",
           "ChangeType": "Change",
-          "Description": "Rolled back the type changes related to [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta) documented in [February 2019](#february-2019). The specific changes are listed in the following rows.",
+          "Description": "Rolled back the type changes related to [findMeetingTimes](https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-beta) documented in [February 2019](#february-2019). The specific changes are listed in the following rows.",
           "Target": "findMeetingTimes,February 2019"
         },
         {
@@ -475,7 +475,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "attendees,attendeeDataModel,locationConstraint,locationConstraints,timeConstraint,findMeetingTimesTimeConstraints",
           "ChangeType": "Change",
-          "Description": "Changed the data type of the following parameters of [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta): \u003Cbr\u003E**attendees**: from **attendeeDataModel** back to [attendeeBase](/graph/api/resources/attendeebase?view=graph-rest-beta) \u003Cbr\u003E**locationConstraint**: from **locationConstraints** back to [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) \u003Cbr\u003E **timeConstraint**: from **findMeetingTimesTimeConstraints** back to [timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta)",
+          "Description": "Changed the data type of the following parameters of [findMeetingTimes](https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-beta): \u003Cbr\u003E**attendees**: from **attendeeDataModel** back to [attendeeBase](https://docs.microsoft.com/en-us/graph/api/resources/attendeebase?view=graph-rest-beta) \u003Cbr\u003E**locationConstraint**: from **locationConstraints** back to [locationConstraint](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraint?view=graph-rest-beta) \u003Cbr\u003E **timeConstraint**: from **findMeetingTimesTimeConstraints** back to [timeConstraint](https://docs.microsoft.com/en-us/graph/api/resources/timeconstraint?view=graph-rest-beta)",
           "Target": "findMeetingTimes,attendeeBase,locationConstraint,timeConstraint"
         },
         {
@@ -483,7 +483,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "findMeetingTimes,findMeetingTimesResponse",
           "ChangeType": "Change",
-          "Description": "Changed the return type of **findMeetingTimes** from **findMeetingTimesResponse** back to [meetingTimeSuggestionsResult](/graph/api/resources/meetingTimeSuggestionsResult?view=graph-rest-beta)",
+          "Description": "Changed the return type of **findMeetingTimes** from **findMeetingTimesResponse** back to [meetingTimeSuggestionsResult](https://docs.microsoft.com/en-us/graph/api/resources/meetingTimeSuggestionsResult?view=graph-rest-beta)",
           "Target": "meetingTimeSuggestionsResult"
         },
         {
@@ -491,7 +491,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "locationDataModel",
           "ChangeType": "Change",
-          "Description": "Changed the base type of [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta) from **locationDataModel** back to [location](/graph/api/resources/location?view=graph-rest-beta)",
+          "Description": "Changed the base type of [locationConstraintItem](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraintitem?view=graph-rest-beta) from **locationDataModel** back to [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta)",
           "Target": "locationConstraintItem,location"
         },
         {
@@ -499,7 +499,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "attendeeAvailability,attendeeAvailabilityDataModel,locations,locationDataModel,meetingTimeSlot,meetingTimeSlotDataModel,organizerAvailability,availabilityStatus,freeBusyStatus",
           "ChangeType": "Change",
-          "Description": "Changed the data types of the following properties of [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): \u003Cbr\u003E **attendeeAvailability**: from collection of **attendeeAvailabilityDataModel** back to collection of [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) \u003Cbr\u003E **locations**: from collection of **locationDataModel** back to collection of [location](/graph/api/resources/location?view=graph-rest-beta) \u003Cbr\u003E **meetingTimeSlot**: from **meetingTimeSlotDataModel** back to [timeSlot](/graph/api/resources/timeslot?view=graph-rest-beta) \u003Cbr\u003E **organizerAvailability**: from **availabilityStatus** back to **freeBusyStatus**",
+          "Description": "Changed the data types of the following properties of [meetingTimeSuggestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): \u003Cbr\u003E **attendeeAvailability**: from collection of **attendeeAvailabilityDataModel** back to collection of [attendeeAvailability](https://docs.microsoft.com/en-us/graph/api/resources/attendeeavailability?view=graph-rest-beta) \u003Cbr\u003E **locations**: from collection of **locationDataModel** back to collection of [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) \u003Cbr\u003E **meetingTimeSlot**: from **meetingTimeSlotDataModel** back to [timeSlot](https://docs.microsoft.com/en-us/graph/api/resources/timeslot?view=graph-rest-beta) \u003Cbr\u003E **organizerAvailability**: from **availabilityStatus** back to **freeBusyStatus**",
           "Target": "meetingTimeSuggestion,attendeeAvailability,location,timeSlot"
         },
         {
@@ -523,7 +523,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attendeeAvailability,locationConstraint,meetingTimeSuggestionsResult,timeConstraint",
           "ChangeType": "Addition",
-          "Description": "Restored the following complex types: \u003Cbr\u003E [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) \u003Cbr\u003E [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) \u003Cbr\u003E [meetingTimeSuggestionsResult](/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) \u003Cbr\u003E[timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta)",
+          "Description": "Restored the following complex types: \u003Cbr\u003E [attendeeAvailability](https://docs.microsoft.com/en-us/graph/api/resources/attendeeavailability?view=graph-rest-beta) \u003Cbr\u003E [locationConstraint](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraint?view=graph-rest-beta) \u003Cbr\u003E [meetingTimeSuggestionsResult](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) \u003Cbr\u003E[timeConstraint](https://docs.microsoft.com/en-us/graph/api/resources/timeconstraint?view=graph-rest-beta)",
           "Target": "attendeeAvailability,locationConstraint,meetingTimeSuggestionsResult,timeConstraint"
         }
       ],
@@ -541,7 +541,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time",
           "ChangeType": "Addition",
-          "Description": "Added the [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) action, and the [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-1.0), and [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-1.0) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md).",
+          "Description": "Added the [getSchedule](https://docs.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-1.0) action, and the [freeBusyError](https://docs.microsoft.com/en-us/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](https://docs.microsoft.com/en-us/graph/api/resources/scheduleinformation?view=graph-rest-1.0), and [scheduleItem](https://docs.microsoft.com/en-us/graph/api/resources/scheduleitem?view=graph-rest-1.0) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md).",
           "Target": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time"
         }
       ],
@@ -559,7 +559,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "attendees,attendeeBase,locationConstraint,locationConstraint,timeConstraint,timeConstraint",
           "ChangeType": "Change",
-          "Description": "Changed the data type of the following parameters of [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta): \u003Cbr\u003E**attendees**: from **attendeeBase** to [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) \u003Cbr\u003E**locationConstraint**: from **locationConstraint** to [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) \u003Cbr\u003E **timeConstraint**: from **timeConstraint** to [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta)",
+          "Description": "Changed the data type of the following parameters of [findMeetingTimes](https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-beta): \u003Cbr\u003E**attendees**: from **attendeeBase** to [attendeeDataModel](https://docs.microsoft.com/en-us/graph/api/resources/attendeedatamodel?view=graph-rest-beta) \u003Cbr\u003E**locationConstraint**: from **locationConstraint** to [locationConstraints](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraints?view=graph-rest-beta) \u003Cbr\u003E **timeConstraint**: from **timeConstraint** to [findMeetingTimesTimeConstraints](https://docs.microsoft.com/en-us/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta)",
           "Target": "findMeetingTimes,attendeeDataModel,locationConstraints,findMeetingTimesTimeConstraints"
         },
         {
@@ -567,7 +567,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "findMeetingTimes,meetingTimeSuggestionsResult",
           "ChangeType": "Change",
-          "Description": "Changed the return type of **findMeetingTimes** from **meetingTimeSuggestionsResult** to [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta)",
+          "Description": "Changed the return type of **findMeetingTimes** from **meetingTimeSuggestionsResult** to [findMeetingTimesResponse](https://docs.microsoft.com/en-us/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta)",
           "Target": "findMeetingTimesResponse"
         },
         {
@@ -583,7 +583,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "locationConstraintItem,location,locationDataModel",
           "ChangeType": "Change",
-          "Description": "Changed the base type of [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta) from [location](/graph/api/resources/location?view=graph-rest-beta) to [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta)",
+          "Description": "Changed the base type of [locationConstraintItem](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraintitem?view=graph-rest-beta) from [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) to [locationDataModel](https://docs.microsoft.com/en-us/graph/api/resources/locationdatamodel?view=graph-rest-beta)",
           "Target": "locationConstraintItem,location,locationDataModel"
         },
         {
@@ -591,7 +591,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "attendeeAvailability,attendeeAvailability,locations,meetingTimeSlot,organizerAvailability,freeBusyStatus,availabilityStatus",
           "ChangeType": "Change",
-          "Description": "Changed the data types of the following properties of [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): \u003Cbr\u003E **attendeeAvailability**: from collection of **attendeeAvailability** to collection of [attendeeAvailabilityDataModel](/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) \u003Cbr\u003E **locations**: from collection of [location](/graph/api/resources/location?view=graph-rest-beta) to collection of [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) \u003Cbr\u003E **meetingTimeSlot**: from [timeSlot](/graph/api/resources/timeslot?view=graph-rest-beta) to [meetingTimeSlotDataModel](/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) \u003Cbr\u003E **organizerAvailability**: from **freeBusyStatus** to **availabilityStatus**",
+          "Description": "Changed the data types of the following properties of [meetingTimeSuggestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): \u003Cbr\u003E **attendeeAvailability**: from collection of **attendeeAvailability** to collection of [attendeeAvailabilityDataModel](https://docs.microsoft.com/en-us/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) \u003Cbr\u003E **locations**: from collection of [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) to collection of [locationDataModel](https://docs.microsoft.com/en-us/graph/api/resources/locationdatamodel?view=graph-rest-beta) \u003Cbr\u003E **meetingTimeSlot**: from [timeSlot](https://docs.microsoft.com/en-us/graph/api/resources/timeslot?view=graph-rest-beta) to [meetingTimeSlotDataModel](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) \u003Cbr\u003E **organizerAvailability**: from **freeBusyStatus** to **availabilityStatus**",
           "Target": "meetingTimeSuggestion,attendeeAvailabilityDataModel,location,locationDataModel,timeSlot,meetingTimeSlotDataModel"
         },
         {
@@ -599,7 +599,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attendeeAvailabilityDataModel,attendeeDataModel,findMeetingTimesResponse,findMeetingTimesTimeConstraints,locationConstraints,locationDataModel,meetingTimeSlotDataModel,postalAddress,searchWindowTimeSlot",
           "ChangeType": "Addition",
-          "Description": "New complex types: \u003Cbr\u003E [attendeeAvailabilityDataModel](/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) \u003Cbr\u003E [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) \u003Cbr\u003E [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) \u003Cbr\u003E [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta) \u003Cbr\u003E [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) \u003Cbr\u003E [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) \u003Cbr\u003E [meetingTimeSlotDataModel](/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) \u003Cbr\u003E [postalAddress](/graph/api/resources/postaladdress?view=graph-rest-beta) \u003Cbr\u003E [searchWindowTimeSlot](/graph/api/resources/searchwindowtimeslot?view=graph-rest-beta)",
+          "Description": "New complex types: \u003Cbr\u003E [attendeeAvailabilityDataModel](https://docs.microsoft.com/en-us/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) \u003Cbr\u003E [attendeeDataModel](https://docs.microsoft.com/en-us/graph/api/resources/attendeedatamodel?view=graph-rest-beta) \u003Cbr\u003E [findMeetingTimesResponse](https://docs.microsoft.com/en-us/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) \u003Cbr\u003E [findMeetingTimesTimeConstraints](https://docs.microsoft.com/en-us/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta) \u003Cbr\u003E [locationConstraints](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraints?view=graph-rest-beta) \u003Cbr\u003E [locationDataModel](https://docs.microsoft.com/en-us/graph/api/resources/locationdatamodel?view=graph-rest-beta) \u003Cbr\u003E [meetingTimeSlotDataModel](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) \u003Cbr\u003E [postalAddress](https://docs.microsoft.com/en-us/graph/api/resources/postaladdress?view=graph-rest-beta) \u003Cbr\u003E [searchWindowTimeSlot](https://docs.microsoft.com/en-us/graph/api/resources/searchwindowtimeslot?view=graph-rest-beta)",
           "Target": "attendeeAvailabilityDataModel,attendeeDataModel,findMeetingTimesResponse,findMeetingTimesTimeConstraints,locationConstraints,locationDataModel,meetingTimeSlotDataModel,postalAddress,searchWindowTimeSlot"
         },
         {
@@ -615,7 +615,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "order",
           "ChangeType": "Addition",
-          "Description": "Added the **order** property to [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta)",
+          "Description": "Added the **order** property to [meetingTimeSuggestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta)",
           "Target": "meetingTimeSuggestion"
         },
         {
@@ -641,7 +641,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "internetMessageHeaders",
           "ChangeType": "Addition",
-          "Description": "The **internetMessageHeaders** property of the [message](/graph/api/resources/message?view=graph-rest-1.0) entity is now writeable on message creation.",
+          "Description": "The **internetMessageHeaders** property of the [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) entity is now writeable on message creation.",
           "Target": "message"
         }
       ],
@@ -659,7 +659,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time",
           "ChangeType": "Addition",
-          "Description": "Added the [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) action, and the [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-beta), [scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-beta), and [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-beta) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md).",
+          "Description": "Added the [getSchedule](https://docs.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-beta) action, and the [freeBusyError](https://docs.microsoft.com/en-us/graph/api/resources/freebusyerror?view=graph-rest-beta), [scheduleInformation](https://docs.microsoft.com/en-us/graph/api/resources/scheduleinformation?view=graph-rest-beta), and [scheduleItem](https://docs.microsoft.com/en-us/graph/api/resources/scheduleitem?view=graph-rest-beta) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md).",
           "Target": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time"
         }
       ],
@@ -677,7 +677,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "typedEmailAddress",
           "ChangeType": "Addition",
-          "Description": "Added the complex type [typedEmailAddress](/graph/api/resources/typedemailaddress?view=graph-rest-beta).",
+          "Description": "Added the complex type [typedEmailAddress](https://docs.microsoft.com/en-us/graph/api/resources/typedemailaddress?view=graph-rest-beta).",
           "Target": "typedEmailAddress"
         },
         {
@@ -685,7 +685,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "emailAddresses,typedEmailAddress",
           "ChangeType": "Change",
-          "Description": "Changed the type of the **emailAddresses** property of [contact](/graph/api/resources/contact?view=graph-rest-beta) to be a collection of **typedEmailAddress** instances.",
+          "Description": "Changed the type of the **emailAddresses** property of [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) to be a collection of **typedEmailAddress** instances.",
           "Target": "contact"
         }
       ],
@@ -703,7 +703,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "locations",
           "ChangeType": "Addition",
-          "Description": "Added the **locations** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity to support organizing an event that attendees can attend from more than one location.",
+          "Description": "Added the **locations** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) entity to support organizing an event that attendees can attend from more than one location.",
           "Target": "event"
         },
         {
@@ -711,7 +711,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "locationType",
           "ChangeType": "Addition",
-          "Description": "Added the **locationType** property to the [location](/graph/api/resources/location?view=graph-rest-1.0) complex type.",
+          "Description": "Added the **locationType** property to the [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-1.0) complex type.",
           "Target": "location"
         },
         {
@@ -719,7 +719,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "uniqueId,uniqueIdType",
           "ChangeType": "Addition",
-          "Description": "Added the **uniqueId** and **uniqueIdType** properties to the [location](/graph/api/resources/location?view=graph-rest-1.0) complex type. These properties are only for internal use at this point.",
+          "Description": "Added the **uniqueId** and **uniqueIdType** properties to the [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-1.0) complex type. These properties are only for internal use at this point.",
           "Target": "location"
         }
       ],
@@ -737,7 +737,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailSearchFolder",
           "ChangeType": "Addition",
-          "Description": "Added [mailSearchFolder](/graph/api/resources/mailsearchfolder?view=graph-rest-beta).",
+          "Description": "Added [mailSearchFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailsearchfolder?view=graph-rest-beta).",
           "Target": "mailSearchFolder"
         },
         {
@@ -745,7 +745,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Create,Update",
           "ChangeType": "Addition",
-          "Description": "Added the following APIs for mail search folder: [Create](/graph/api/mailsearchfolder-post?view=graph-rest-beta), [Update](/graph/api/mailsearchfolder-update?view=graph-rest-beta).",
+          "Description": "Added the following APIs for mail search folder: [Create](https://docs.microsoft.com/en-us/graph/api/mailsearchfolder-post?view=graph-rest-beta), [Update](https://docs.microsoft.com/en-us/graph/api/mailsearchfolder-update?view=graph-rest-beta).",
           "Target": "Create,Update"
         },
         {
@@ -753,7 +753,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "delete mailFolder,get mailFolder,list child folders",
           "ChangeType": "Change",
-          "Description": "Added support for mail search folder to [delete mailFolder](/graph/api/mailfolder-delete?view=graph-rest-beta), [get mailFolder](/graph/api/mailfolder-get?view=graph-rest-beta), and [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta).",
+          "Description": "Added support for mail search folder to [delete mailFolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-delete?view=graph-rest-beta), [get mailFolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-get?view=graph-rest-beta), and [list child folders](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-beta).",
           "Target": "delete mailFolder,get mailFolder,list child folders"
         }
       ],
@@ -771,7 +771,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "flag",
           "ChangeType": "Addition",
-          "Description": "Added the **flag** property to the [message](/graph/api/resources/message?view=graph-rest-1.0) entity. Added the shared [followupFlag](/graph/api/resources/followupflag?view=graph-rest-1.0) complex type.",
+          "Description": "Added the **flag** property to the [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) entity. Added the shared [followupFlag](https://docs.microsoft.com/en-us/graph/api/resources/followupflag?view=graph-rest-1.0) complex type.",
           "Target": "message,followupFlag"
         },
         {
@@ -779,7 +779,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "internetMessageHeaders",
           "ChangeType": "Addition",
-          "Description": "Added the **internetMessageHeaders** property to the [message](/graph/api/resources/message?view=graph-rest-1.0) entity.",
+          "Description": "Added the **internetMessageHeaders** property to the [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) entity.",
           "Target": "message"
         },
         {
@@ -787,7 +787,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "internetMessageHeader",
           "ChangeType": "Addition",
-          "Description": "Added the [internetMessageHeader](/graph/api/resources/internetmessageheader?view=graph-rest-1.0) complex type.",
+          "Description": "Added the [internetMessageHeader](https://docs.microsoft.com/en-us/graph/api/resources/internetmessageheader?view=graph-rest-1.0) complex type.",
           "Target": "internetMessageHeader"
         },
         {
@@ -795,7 +795,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "messageRules,messageRules",
           "ChangeType": "Addition",
-          "Description": "Added the **messageRules** navigation property to the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) entity. **messageRules** is a collection of [messageRule](/graph/api/resources/messagerule?view=graph-rest-1.0) instances.",
+          "Description": "Added the **messageRules** navigation property to the [mailFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-1.0) entity. **messageRules** is a collection of [messageRule](https://docs.microsoft.com/en-us/graph/api/resources/messagerule?view=graph-rest-1.0) instances.",
           "Target": "mailFolder,messageRule"
         },
         {
@@ -803,7 +803,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "messageRule,messageRuleActions,messageRulePredicates,sizeRange",
           "ChangeType": "Addition",
-          "Description": "Added the [messageRule](/graph/api/resources/messagerule?view=graph-rest-1.0) entity, and [messageRuleActions](/graph/api/resources/messageruleactions?view=graph-rest-1.0), [messageRulePredicates](/graph/api/resources/messagerulepredicates?view=graph-rest-1.0), and [sizeRange](/graph/api/resources/sizerange?view=graph-rest-1.0) complex types.",
+          "Description": "Added the [messageRule](https://docs.microsoft.com/en-us/graph/api/resources/messagerule?view=graph-rest-1.0) entity, and [messageRuleActions](https://docs.microsoft.com/en-us/graph/api/resources/messageruleactions?view=graph-rest-1.0), [messageRulePredicates](https://docs.microsoft.com/en-us/graph/api/resources/messagerulepredicates?view=graph-rest-1.0), and [sizeRange](https://docs.microsoft.com/en-us/graph/api/resources/sizerange?view=graph-rest-1.0) complex types.",
           "Target": "messageRule,messageRuleActions,messageRulePredicates,sizeRange"
         },
         {
@@ -811,7 +811,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "create,list,get,update,delete",
           "ChangeType": "Addition",
-          "Description": "Added the following CRUD operations for message rules: [create](/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0), [list](/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0), [get](/graph/api/messagerule-get?view=graph-rest-1.0), [update](/graph/api/messagerule-update?view=graph-rest-1.0), and [delete](/graph/api/messagerule-delete?view=graph-rest-1.0).",
+          "Description": "Added the following CRUD operations for message rules: [create](https://docs.microsoft.com/en-us/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0), [list](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0), [get](https://docs.microsoft.com/en-us/graph/api/messagerule-get?view=graph-rest-1.0), [update](https://docs.microsoft.com/en-us/graph/api/messagerule-update?view=graph-rest-1.0), and [delete](https://docs.microsoft.com/en-us/graph/api/messagerule-delete?view=graph-rest-1.0).",
           "Target": "create,list,get,update,delete"
         }
       ],
@@ -829,7 +829,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "flag",
           "ChangeType": "Addition",
-          "Description": "Added the **flag** property to the [contact](/graph/api/resources/contact?view=graph-rest-1.0) entity. Added the shared [followupFlag](/graph/api/resources/followupflag?view=graph-rest-1.0) complex type.",
+          "Description": "Added the **flag** property to the [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0) entity. Added the shared [followupFlag](https://docs.microsoft.com/en-us/graph/api/resources/followupflag?view=graph-rest-1.0) complex type.",
           "Target": "contact,followupFlag"
         }
       ],
@@ -847,7 +847,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "get that shared mail folder,get the messages in that shared calendar",
           "ChangeType": "Change",
-          "Description": "This behavior enhancement is about getting a shared mail folder or its message contents, when a user has shared a mail folder with the signed-in user, or has delegated the user\u0027s mailbox to the signed-in user. In such situations, an app can specify that user\u0027s ID or user principal name to [get that shared mail folder](/graph/api/mailfolder-get?view=graph-rest-1.0), or [get the messages in that shared calendar](/graph/api/user-list-messages?view=graph-rest-1.0), as long as the signed-in user has provided delegated permissions to the app.",
+          "Description": "This behavior enhancement is about getting a shared mail folder or its message contents, when a user has shared a mail folder with the signed-in user, or has delegated the user\u0027s mailbox to the signed-in user. In such situations, an app can specify that user\u0027s ID or user principal name to [get that shared mail folder](https://docs.microsoft.com/en-us/graph/api/mailfolder-get?view=graph-rest-1.0), or [get the messages in that shared calendar](https://docs.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-1.0), as long as the signed-in user has provided delegated permissions to the app.",
           "Target": "get that shared mail folder,get the messages in that shared calendar"
         }
       ],
@@ -865,7 +865,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "findRoomLists,findRooms,user",
           "ChangeType": "Addition",
-          "Description": "Added the [findRoomLists](/graph/api/user-findroomlists?view=graph-rest-beta) and [findRooms](/graph/api/user-findrooms?view=graph-rest-beta) functions to the [user](/graph/api/resources/user?view=graph-rest-beta) entity.",
+          "Description": "Added the [findRoomLists](https://docs.microsoft.com/en-us/graph/api/user-findroomlists?view=graph-rest-beta) and [findRooms](https://docs.microsoft.com/en-us/graph/api/user-findrooms?view=graph-rest-beta) functions to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity.",
           "Target": "findRoomLists,findRooms,user"
         },
         {
@@ -873,7 +873,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "locations",
           "ChangeType": "Addition",
-          "Description": "Added the **locations** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity to support organizing an event that attendees can attend from more than one location.",
+          "Description": "Added the **locations** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) entity to support organizing an event that attendees can attend from more than one location.",
           "Target": "event"
         },
         {
@@ -881,7 +881,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "locationType",
           "ChangeType": "Addition",
-          "Description": "Added the **locationType** property to the [location](/graph/api/resources/location?view=graph-rest-beta) complex type.",
+          "Description": "Added the **locationType** property to the [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) complex type.",
           "Target": "location"
         },
         {
@@ -889,7 +889,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "uniqueId,uniqueIdType",
           "ChangeType": "Addition",
-          "Description": "Added the **uniqueId** and **uniqueIdType** properties to the [location](/graph/api/resources/location?view=graph-rest-beta) complex type. These properties are only for internal use at this point.",
+          "Description": "Added the **uniqueId** and **uniqueIdType** properties to the [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) complex type. These properties are only for internal use at this point.",
           "Target": "location"
         }
       ],
@@ -907,7 +907,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "get that shared calendar,get the events in that shared calendar",
           "ChangeType": "Change",
-          "Description": "This behavior enhancement is about getting a shared calendar or its event contents, when a user has shared a calendar with the signed-in user, or has delegated the user\u0027s mailbox to the signed-in user. In such situations, an app can specify that user\u0027s ID or user principal name to [get that shared calendar](/graph/api/calendar-get?view=graph-rest-1.0), or [get the events in that shared calendar](/graph/api/user-list-events?view=graph-rest-1.0), as long as the signed-in user has provided delegated permissions to the app.",
+          "Description": "This behavior enhancement is about getting a shared calendar or its event contents, when a user has shared a calendar with the signed-in user, or has delegated the user\u0027s mailbox to the signed-in user. In such situations, an app can specify that user\u0027s ID or user principal name to [get that shared calendar](https://docs.microsoft.com/en-us/graph/api/calendar-get?view=graph-rest-1.0), or [get the events in that shared calendar](https://docs.microsoft.com/en-us/graph/api/user-list-events?view=graph-rest-1.0), as long as the signed-in user has provided delegated permissions to the app.",
           "Target": "get that shared calendar,get the events in that shared calendar"
         }
       ],
@@ -925,7 +925,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "canEdit,canShare,canViewPrivateItems,owner",
           "ChangeType": "Addition",
-          "Description": "Promoted the following 4 [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) properties to v1.0: **canEdit**, **canShare**, **canViewPrivateItems**, and **owner**.",
+          "Description": "Promoted the following 4 [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0) properties to v1.0: **canEdit**, **canShare**, **canViewPrivateItems**, and **owner**.",
           "Target": "calendar"
         }
       ],
@@ -943,7 +943,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "event",
           "ChangeType": "Addition",
-          "Description": "Support getting an **event** body in plain text, as an alternative to the default HTML format. See [get](/graph/api/event-get?view=graph-rest-beta) and [list](/graph/api/user-list-events?view=graph-rest-beta) events for details.",
+          "Description": "Support getting an **event** body in plain text, as an alternative to the default HTML format. See [get](https://docs.microsoft.com/en-us/graph/api/event-get?view=graph-rest-beta) and [list](https://docs.microsoft.com/en-us/graph/api/user-list-events?view=graph-rest-beta) events for details.",
           "Target": "get,list"
         }
       ],
@@ -961,7 +961,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "findMeetingTimes,unrestricted,activityDomain,timeConstraint,findMeetingTimes",
           "ChangeType": "Addition",
-          "Description": "For **findMeetingTimes**, added new enum value **unrestricted** that you specify as the **activityDomain** property, part of the **timeConstraint** parameter. This lets **findMeetingTimes** look for times appropriate for the type of activity you\u0027re scheduling for. See details in the [request body](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body) section.",
+          "Description": "For **findMeetingTimes**, added new enum value **unrestricted** that you specify as the **activityDomain** property, part of the **timeConstraint** parameter. This lets **findMeetingTimes** look for times appropriate for the type of activity you\u0027re scheduling for. See details in the [request body](https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body) section.",
           "Target": "request body"
         }
       ],
@@ -979,7 +979,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "message",
           "ChangeType": "Change",
-          "Description": "Support getting a **message** body in plain text, as an alternative to the default HTML format. See [get](/graph/api/message-get?view=graph-rest-beta) and [list](/graph/api/user-list-messages?view=graph-rest-beta) events for details.",
+          "Description": "Support getting a **message** body in plain text, as an alternative to the default HTML format. See [get](https://docs.microsoft.com/en-us/graph/api/message-get?view=graph-rest-beta) and [list](https://docs.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-beta) events for details.",
           "Target": "get,list"
         }
       ],
@@ -997,7 +997,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "calendar",
           "ChangeType": "Addition",
-          "Description": "hexColor added to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) resource.",
+          "Description": "hexColor added to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource.",
           "Target": "calendar"
         }
       ],
@@ -1015,7 +1015,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "findMeetingTimes,user",
           "ChangeType": "Addition",
-          "Description": "New action [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) for the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Description": "New action [findMeetingTimes](https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-1.0) for the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
           "Target": "findMeetingTimes,user"
         },
         {
@@ -1023,7 +1023,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "attendeeBase",
           "ChangeType": "Addition",
-          "Description": "New complex type [attendeeBase](/graph/api/resources/attendeebase?view=graph-rest-1.0) which consists of a type property for the attendee type.",
+          "Description": "New complex type [attendeeBase](https://docs.microsoft.com/en-us/graph/api/resources/attendeebase?view=graph-rest-1.0) which consists of a type property for the attendee type.",
           "Target": "attendeeBase"
         },
         {
@@ -1031,7 +1031,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attendeeAvailability,locationConstraint,locationConstraintItem,meetingTimeSuggestion,meetingTimeSuggestionsResult,timeConstraint,timeSlot",
           "ChangeType": "Addition",
-          "Description": "New complex types:, [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-1.0), [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-1.0) , [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-1.0), [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-1.0), [meetingTimeSuggestionsResult](/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-1.0), [timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-1.0), [timeSlot](/graph/api/resources/timeslot?view=graph-rest-1.0)",
+          "Description": "New complex types:, [attendeeAvailability](https://docs.microsoft.com/en-us/graph/api/resources/attendeeavailability?view=graph-rest-1.0), [locationConstraint](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraint?view=graph-rest-1.0) , [locationConstraintItem](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraintitem?view=graph-rest-1.0), [meetingTimeSuggestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestion?view=graph-rest-1.0), [meetingTimeSuggestionsResult](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-1.0), [timeConstraint](https://docs.microsoft.com/en-us/graph/api/resources/timeconstraint?view=graph-rest-1.0), [timeSlot](https://docs.microsoft.com/en-us/graph/api/resources/timeslot?view=graph-rest-1.0)",
           "Target": "attendeeAvailability,locationConstraint,locationConstraintItem,meetingTimeSuggestion,meetingTimeSuggestionsResult,timeConstraint,timeSlot"
         },
         {
@@ -1039,7 +1039,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "status,type,emailAddress",
           "ChangeType": "Change",
-          "Description": "The [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) complex type is now derived from attendeeBase, which in turn is derived from [recipient](/graph/api/resources/recipient?view=graph-rest-1.0). Including the inherited properties, it consists of the same **status**, **type** and **emailAddress** properties as before.",
+          "Description": "The [attendee](https://docs.microsoft.com/en-us/graph/api/resources/attendee?view=graph-rest-1.0) complex type is now derived from attendeeBase, which in turn is derived from [recipient](https://docs.microsoft.com/en-us/graph/api/resources/recipient?view=graph-rest-1.0). Including the inherited properties, it consists of the same **status**, **type** and **emailAddress** properties as before.",
           "Target": "attendee,recipient"
         }
       ],
@@ -1057,7 +1057,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Extended properties",
           "ChangeType": "Addition",
-          "Description": "[Extended properties](/graph/api/resources/extended-properties-overview?view=graph-rest-1.0) are now supported by the following resources: message, mailFolder, event, calendar, contact, contactFolder, group event, group calendar, group post.",
+          "Description": "[Extended properties](https://docs.microsoft.com/en-us/graph/api/resources/extended-properties-overview?view=graph-rest-1.0) are now supported by the following resources: message, mailFolder, event, calendar, contact, contactFolder, group event, group calendar, group post.",
           "Target": "Extended properties"
         }
       ],
@@ -1075,7 +1075,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "forward",
           "ChangeType": "Addition",
-          "Description": "Added [forward](/graph/api/event-forward?view=graph-rest-beta) action to the event resource.",
+          "Description": "Added [forward](https://docs.microsoft.com/en-us/graph/api/event-forward?view=graph-rest-beta) action to the event resource.",
           "Target": "forward"
         },
         {
@@ -1083,7 +1083,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "canEdit,canShare,canViewPrivateItems,isShared,isShareWithMe,owner",
           "ChangeType": "Addition",
-          "Description": "Added the following properties to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) resource to support calendar sharing: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, **isShareWithMe**, and **owner**.",
+          "Description": "Added the following properties to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource to support calendar sharing: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, **isShareWithMe**, and **owner**.",
           "Target": "calendar"
         }
       ],
@@ -1101,7 +1101,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "onlineMeetingUrl",
           "ChangeType": "Addition",
-          "Description": "Added the **onlineMeetingUrl** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) resource.",
+          "Description": "Added the **onlineMeetingUrl** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) resource.",
           "Target": "event"
         }
       ],
@@ -1119,7 +1119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mention",
           "ChangeType": "Addition",
-          "Description": "Added support for creating, listing, getting, and deleting one or more instances of [mention](/graph/api/resources/mention?view=graph-rest-beta) in a message. Mentions support calling out to get the attention of other users in a message.",
+          "Description": "Added support for creating, listing, getting, and deleting one or more instances of [mention](https://docs.microsoft.com/en-us/graph/api/resources/mention?view=graph-rest-beta) in a message. Mentions support calling out to get the attention of other users in a message.",
           "Target": "mention"
         },
         {
@@ -1127,7 +1127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getMailTips,automaticRepliesMailTips,mailTips,mailTipsError",
           "ChangeType": "Addition",
-          "Description": "Added support for the [getMailTips](/graph/api/user-getmailtips?view=graph-rest-beta) action to get any MailTips for specific recipients. Added the following resources: [automaticRepliesMailTips](/graph/api/resources/automaticrepliesmailtips?view=graph-rest-beta), [mailTips](/graph/api/resources/mailtips?view=graph-rest-beta), [mailTipsError](/graph/api/resources/mailtipserror?view=graph-rest-beta).",
+          "Description": "Added support for the [getMailTips](https://docs.microsoft.com/en-us/graph/api/user-getmailtips?view=graph-rest-beta) action to get any MailTips for specific recipients. Added the following resources: [automaticRepliesMailTips](https://docs.microsoft.com/en-us/graph/api/resources/automaticrepliesmailtips?view=graph-rest-beta), [mailTips](https://docs.microsoft.com/en-us/graph/api/resources/mailtips?view=graph-rest-beta), [mailTipsError](https://docs.microsoft.com/en-us/graph/api/resources/mailtipserror?view=graph-rest-beta).",
           "Target": "getMailTips,automaticRepliesMailTips,mailTips,mailTipsError"
         }
       ],

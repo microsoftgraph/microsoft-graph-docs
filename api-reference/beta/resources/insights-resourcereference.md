@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
+Complex type containing properties of [itemInsights](iteminsights.md)
 
 ## JSON representation
 

@@ -5,6 +5,8 @@ name: PullRequestConflicting
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
+  push:
+    branches: [ master ]
   pull_request:
     types: [synchronize]
     branches: [ master ]
@@ -20,7 +22,8 @@ jobs:
     steps:
     - name: check if prs are dirty
       uses: eps1lon/actions-label-merge-conflict@releases/1.x
+      id: check
       with:
         dirtyLabel: "conflicting"
-        removeOnDirtyLabel: "ready to merge"
-        repoToken: "${{ secrets.GITHUB_TOKEN }}"
+        repoToken: "${{ secrets.LABELING_TOKEN }}"
+        continueOnMissingPermissions: true

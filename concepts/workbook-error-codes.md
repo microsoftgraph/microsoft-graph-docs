@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # Error codes for Workbooks and charts APIs in Microsoft Graph
 
-This article describes error codes that are returned by the Workbooks and charts APIs in Microsoft Graph when a request sent through the API fails. For more details about error responses and resource types in Microsoft Graph, see [Errors](/graph/errors.md).
+This article describes error codes that are returned by the Workbooks and charts APIs in Microsoft Graph when a request sent through the API fails. For more details about error responses and resource types in Microsoft Graph, see [Errors](/concepts/errors.md).
 
 ## Error code
 

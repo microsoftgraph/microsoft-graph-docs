@@ -6,21 +6,21 @@ localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Propose new meeting times in Outlook (preview)
+# Propose new meeting times in Outlook
 
 In Outlook, a meeting organizer can allow invitees to propose alternative meeting times, if they cannot meet at the original set date/time and accept tentatively or decline. The organizer can accept a proposal by adjusting the meeting time as appropriate.
 
 ## Example: attendee responds tentative and suggests a different date/time
 The following is an example where Alex invites Adele to lunch, Adele tentatively accepts and proposes an alternative date and time, and Alex accepts the proposal by adjusting the meeting accordingly:
 
-1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-beta) to `true` to let Adele suggest another time if she needs to.
+1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-1.0) to `true` to let Adele suggest another time if she needs to.
 
     <!-- {
       "blockType": "request",
       "name": "create_event"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events
+    POST https://graph.microsoft.com/v1.0/me/events
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -66,7 +66,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     Content-type: application/json
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBhkg==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",
@@ -146,14 +146,14 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     }
     ```
 
-2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta). She notices the **allowNewTimeProposals** property is set. [Using the **event** associated](/graph/api/eventmessage-get#example-2?view=graph-rest-beta) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
+2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0). She notices the **allowNewTimeProposals** property is set. [Using the **event** associated](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
 
     <!-- {
       "blockType": "request",
       "name": "event_tentativelyaccept"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
+    POST https://graph.microsoft.com/v1.0/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
     Content-type: application/json
 
     { 
@@ -183,7 +183,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     HTTP/1.1 202 Accepted
     ```
 
-3. Alex receives an email of the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) type. He notices the following:
+3. Alex receives an email of the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) type. He notices the following:
 
    - The subject includes a prefix and says "New Time Proposed: Let's go for lunch"
    - The sender is Adele Vance
@@ -195,7 +195,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "name": "get_messages"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/messages?$top=1
+    GET https://graph.microsoft.com/v1.0/me/messages?$top=1
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
@@ -214,8 +214,8 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     Preference-Applied: outlook.timezone="Pacific Standard Time"
 
     {
-       "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
-       "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$top=1&$skip=4"",
+       "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
+       "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=1&$skip=4"",
        "value": [
           {
             "@odata.type": "#microsoft.graph.eventMessageResponse",
@@ -249,7 +249,6 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             "isAllDay": false,
             "isDelegated": false,
             "responseType": "tentativelyAccepted",
-            "mentionsPreview": null,
             "recurrence": null,
             "body": {
                 "contentType": "html",
@@ -309,14 +308,14 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     }
     ```
 
-4. Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal. This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-beta) instance if the corresponding attendee has suggested an alternative meeting time. 
+4. Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal. This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) instance if the corresponding attendee has suggested an alternative meeting time. 
 
     <!-- {
       "blockType": "request",
       "name": "event_get"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
+    GET https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
@@ -330,7 +329,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     HTTP/1.1 200 Ok
 
     {
-        "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
+        "@odata.context": "https://graph.microsoft.com/testexchangev1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
         "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhEDMA==\"",
         "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
         "subject": "Let's go for lunch",
@@ -383,7 +382,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "name": "event_update"
     }-->
     ```http
-    PATCH https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
+    PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -411,7 +410,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     HTTP/1.1 200 Ok
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBizA==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",

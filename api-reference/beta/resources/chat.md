@@ -36,7 +36,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | id| String| The chat's unique identifier. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
-| lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was updated. Read-only.|
+| lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or membership changed. lastUpdatedDateTime is not updated when a message is sent to the chat. Read-only.|
 
 ## Relationships
 

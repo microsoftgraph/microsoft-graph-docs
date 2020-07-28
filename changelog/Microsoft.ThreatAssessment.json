@@ -1,5 +1,5 @@
 ﻿{
-  "Changelogs": [
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "incidentIds,resource,resourceType,sourceLocation,destinationLocation",
           "ChangeType": "Addition",
-          "Description": "Added the following properties to the [alert](/graph/api/resources/alert?view=graph-rest-1.0) entity:  **incidentIds**, [securityResources](/graph/api/resources/securityResource?view=graph-rest-1.0) - **resource**, **resourceType**,[networkConnection](/graph/api/resources/networkconnection?view=graph-rest-1.0) - **sourceLocation**, **destinationLocation**.",
+          "Description": "Added the following properties to the [alert](https://docs.microsoft.com/en-us/graph/api/resources/alert?view=graph-rest-1.0) entity:  **incidentIds**, [securityResources](https://docs.microsoft.com/en-us/graph/api/resources/securityResource?view=graph-rest-1.0) - **resource**, **resourceType**,[networkConnection](https://docs.microsoft.com/en-us/graph/api/resources/networkconnection?view=graph-rest-1.0) - **sourceLocation**, **destinationLocation**.",
           "Target": "alert,securityResources,networkConnection"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "method",
           "ChangedApiName": "comments,Closed in IPC,Closed in MCAS",
           "ChangeType": "Change",
-          "Description": "The [Update alert](/graph/api/alert-update?view=graph-rest-1.0\u0026tabs=http) method now updates the **comments** field with the following values only: ,  **Closed in IPC**, **Closed in MCAS**.",
+          "Description": "The [Update alert](https://docs.microsoft.com/en-us/graph/api/alert-update?view=graph-rest-1.0\u0026tabs=http) method now updates the **comments** field with the following values only: ,  **Closed in IPC**, **Closed in MCAS**.",
           "Target": "Update alert"
         }
       ],
@@ -43,7 +43,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile",
           "ChangeType": "Addition",
-          "Description": "Added the Secure Score APIs to the [security API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations:, [secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities), [List secureScores](/graph/api/securescores-list?view=graph-rest-1.0), [secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0), [List secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0), [Update secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)",
+          "Description": "Added the Secure Score APIs to the [security API](https://docs.microsoft.com/en-us/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations:, [secureScore](https://docs.microsoft.com/en-us/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities), [List secureScores](https://docs.microsoft.com/en-us/graph/api/securescores-list?view=graph-rest-1.0), [secureScoreControlProfile](https://docs.microsoft.com/en-us/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0), [List secureScoreControlProfiles](https://docs.microsoft.com/en-us/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0), [Update secureScoreControlProfile](https://docs.microsoft.com/en-us/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)",
           "Target": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile"
         }
       ],
@@ -61,7 +61,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators",
           "ChangeType": "Addition",
-          "Description": "Added the threat intelligence (TI) indicator APIs to the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [tiindicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (and related entities),  [Get tiIndicator](/graph/api/tiindicator-get?view=graph-rest-beta), [Create tiIndicator](/graph/api/tiindicators-post?view=graph-rest-beta), [List tiIndicators](/graph/api/tiindicators-list?view=graph-rest-beta), [Update tiIndicator](/graph/api/tiindicator-update?view=graph-rest-beta) , [Delete tiIndicator](/graph/api/tiindicator-delete?view=graph-rest-beta) , [deleteTiIndicators](/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta) , [deleteTiIndicatorsByExternalId](/graph/api/tiindicator-deletetiindicatorsbyexternalid?view=graph-rest-beta) , [submitTiIndicators](/graph/api/tiindicator-submittiindicators?view=graph-rest-beta) , [updateTiIndicators](/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)",
+          "Description": "Added the threat intelligence (TI) indicator APIs to the [security API](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [tiindicator](https://docs.microsoft.com/en-us/graph/api/resources/tiindicator?view=graph-rest-beta) (and related entities),  [Get tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicator-get?view=graph-rest-beta), [Create tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicators-post?view=graph-rest-beta), [List tiIndicators](https://docs.microsoft.com/en-us/graph/api/tiindicators-list?view=graph-rest-beta), [Update tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicator-update?view=graph-rest-beta) , [Delete tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicator-delete?view=graph-rest-beta) , [deleteTiIndicators](https://docs.microsoft.com/en-us/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta) , [deleteTiIndicatorsByExternalId](https://docs.microsoft.com/en-us/graph/api/tiindicator-deletetiindicatorsbyexternalid?view=graph-rest-beta) , [submitTiIndicators](https://docs.microsoft.com/en-us/graph/api/tiindicator-submittiindicators?view=graph-rest-beta) , [updateTiIndicators](https://docs.microsoft.com/en-us/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)",
           "Target": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators"
         },
         {
@@ -69,7 +69,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction",
           "ChangeType": "Addition",
-          "Description": "Added the security action APIs to the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [securityAction](/graph/api/resources/securityaction?view=graph-rest-beta) (and related entities),  [Get securityAction](/graph/api/securityaction-get?view=graph-rest-beta), [Create securityAction](/graph/api/securityactions-post?view=graph-rest-beta), [List securityAction](/graph/api/securityactions-list?view=graph-rest-beta), [Cancel securityAction](/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)",
+          "Description": "Added the security action APIs to the [security API](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [securityAction](https://docs.microsoft.com/en-us/graph/api/resources/securityaction?view=graph-rest-beta) (and related entities),  [Get securityAction](https://docs.microsoft.com/en-us/graph/api/securityaction-get?view=graph-rest-beta), [Create securityAction](https://docs.microsoft.com/en-us/graph/api/securityactions-post?view=graph-rest-beta), [List securityAction](https://docs.microsoft.com/en-us/graph/api/securityactions-list?view=graph-rest-beta), [Cancel securityAction](https://docs.microsoft.com/en-us/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)",
           "Target": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction"
         },
         {
@@ -77,7 +77,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "historyStates,updateAlerts",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [historyStates](/graph/api/resources/alerthistorystate?view=graph-rest-beta) collection to alert. \u003C/br\u003EAdded [updateAlerts](/graph/api/alert-updatealerts?view=graph-rest-beta) functionality to update multiple alerts in one request.",
+          "Description": "Introduced new complex type [historyStates](https://docs.microsoft.com/en-us/graph/api/resources/alerthistorystate?view=graph-rest-beta) collection to alert. \u003C/br\u003EAdded [updateAlerts](https://docs.microsoft.com/en-us/graph/api/alert-updatealerts?view=graph-rest-beta) functionality to update multiple alerts in one request.",
           "Target": "historyStates,updateAlerts"
         }
       ],
@@ -95,7 +95,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "complianceInformation",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta).",
+          "Description": "Introduced new complex type [complianceInformation](https://docs.microsoft.com/en-us/graph/api/complianceInformation/team?view=graph-rest-beta).",
           "Target": "complianceInformation"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "certificationControl",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta).",
+          "Description": "Introduced new complex type [certificationControl](https://docs.microsoft.com/en-us/graph/api/certificationControl/team?view=graph-rest-beta).",
           "Target": "certificationControl"
         }
       ],
@@ -121,7 +121,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles",
           "ChangeType": "Addition",
-          "Description": "Added the Secure Score APIs to the [security API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta), including the following resources and operations:, [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (and related entities), [List secureScores](/graph/api/securescores-list?view=graph-rest-beta), [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta), [List secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta), [Update secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)",
+          "Description": "Added the Secure Score APIs to the [security API](https://docs.microsoft.com/en-us/graph/api/resources/securescore-api-overview?view=graph-rest-beta), including the following resources and operations:, [secureScores](https://docs.microsoft.com/en-us/graph/api/resources/securescores?view=graph-rest-beta) (and related entities), [List secureScores](https://docs.microsoft.com/en-us/graph/api/securescores-list?view=graph-rest-beta), [secureScoreControlProfiles](https://docs.microsoft.com/en-us/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta), [List secureScoreControlProfiles](https://docs.microsoft.com/en-us/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta), [Update secureScoreControlProfiles](https://docs.microsoft.com/en-us/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)",
           "Target": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles"
         },
         {
@@ -129,7 +129,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "secureScoreControlStateUpdate",
           "ChangeType": "Addition",
-          "Description": "Introduced new complex type [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta)",
+          "Description": "Introduced new complex type [secureScoreControlStateUpdate](https://docs.microsoft.com/en-us/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta)",
           "Target": "secureScoreControlStateUpdate"
         }
       ],
@@ -147,7 +147,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType",
           "ChangeType": "Addition",
-          "Description": "Added new enum types:, [alertFeedback](/graph/api/resources/alertfeedbackenumtype?view=graph-rest-beta), [alertStatus](/graph/api/resources/alertstatusenumtype?view=graph-rest-beta), [alertType](/graph/api/resources/alerttypeenumtype?view=graph-rest-beta), [applicationPermissionsRequired](/graph/api/resources/applicationpermissionsrequiredenumtype?view=graph-rest-beta), [logonType](/graph/api/resources/logontypeenumtype?view=graph-rest-beta), [processIntegrityLevel](/graph/api/resources/processintegritylevelenumtype?view=graph-rest-beta), [securityNetworkProtocol](/graph/api/resources/securitynetworkprotocolenumtype?view=graph-rest-beta), [userAccountSecurityType](/graph/api/resources/useraccountsecuritytypeenumtype?view=graph-rest-beta), ",
+          "Description": "Added new enum types:, [alertFeedback](https://docs.microsoft.com/en-us/graph/api/resources/alertfeedbackenumtype?view=graph-rest-beta), [alertStatus](https://docs.microsoft.com/en-us/graph/api/resources/alertstatusenumtype?view=graph-rest-beta), [alertType](https://docs.microsoft.com/en-us/graph/api/resources/alerttypeenumtype?view=graph-rest-beta), [applicationPermissionsRequired](https://docs.microsoft.com/en-us/graph/api/resources/applicationpermissionsrequiredenumtype?view=graph-rest-beta), [logonType](https://docs.microsoft.com/en-us/graph/api/resources/logontypeenumtype?view=graph-rest-beta), [processIntegrityLevel](https://docs.microsoft.com/en-us/graph/api/resources/processintegritylevelenumtype?view=graph-rest-beta), [securityNetworkProtocol](https://docs.microsoft.com/en-us/graph/api/resources/securitynetworkprotocolenumtype?view=graph-rest-beta), [userAccountSecurityType](https://docs.microsoft.com/en-us/graph/api/resources/useraccountsecuritytypeenumtype?view=graph-rest-beta), ",
           "Target": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType"
         }
       ],
@@ -165,7 +165,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API",
           "ChangeType": "Addition",
-          "Description": "Added the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [alert](/graph/api/resources/alert?view=graph-rest-beta) (and related entities), [Get alert](/graph/api/alert-get?view=graph-rest-beta), [List alerts](/graph/api/alert-list?view=graph-rest-beta), [Update alert](/graph/api/alert-update?view=graph-rest-beta), , Added the following supporting documentation:, [Errors](/graph/api/resources/security-error-codes?view=graph-rest-beta), [Security solution integrations using the Microsoft Graph Security API](security-integration.md)",
+          "Description": "Added the [security API](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:, [alert](https://docs.microsoft.com/en-us/graph/api/resources/alert?view=graph-rest-beta) (and related entities), [Get alert](https://docs.microsoft.com/en-us/graph/api/alert-get?view=graph-rest-beta), [List alerts](https://docs.microsoft.com/en-us/graph/api/alert-list?view=graph-rest-beta), [Update alert](https://docs.microsoft.com/en-us/graph/api/alert-update?view=graph-rest-beta), , Added the following supporting documentation:, [Errors](https://docs.microsoft.com/en-us/graph/api/resources/security-error-codes?view=graph-rest-beta), [Security solution integrations using the Microsoft Graph Security API](security-integration.md)",
           "Target": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API"
         }
       ],

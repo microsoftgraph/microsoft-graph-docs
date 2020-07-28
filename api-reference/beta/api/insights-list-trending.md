@@ -27,6 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 Get a list of documents trending around the signed-in user or specified user:
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/insights/trending
@@ -34,6 +35,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 ```
 
 Expand the resource referenced by a **trending** insight:
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/insights/trending/{id}/resource
@@ -44,10 +46,12 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 You can use the `$filter` query parameter to filter trending items. For example, based on **type**:
+<!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/type eq 'PowerPoint'`
 
 Or based on **containerType**:
+<!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
@@ -67,14 +71,43 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a list of [trending](../resources/insights-trending.md) items in the response body. Each item contains visualization properties for displaying the item in your experience.
 
+If item insights of targeted user have been disabled, this method returns `403 Forbidden` and the following error:
+<!-- { "blockType": "ignored" } -->
+
+```
+{
+  "error": {
+    "code": "ItemInsightsDisabled",
+    "message": " The access to the requested resource is denied because item insights are disabled.",
+    "innerError": {
+      "requestId": "request-id",
+      "date": "date-time"
+    }
+  }
+}
+```
+For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md).
+
 ## Example
 #### Request
 Here is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_me_trending"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/insights/trending
 ```
 #### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call. See an example un-truncated response at the bottom of the page.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.trending",
+  "name": "get_me_trending"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -104,5 +137,3 @@ Content-length: 801
     ]
 }
 ```
-
-

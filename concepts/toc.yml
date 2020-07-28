@@ -99,7 +99,7 @@ items:
             href: findmeetingtimes-example.md
           - name: Get free/busy schedule
             href: outlook-get-free-busy-schedule.md
-          - name: Propose new meeting times (preview)
+          - name: Propose new meeting times
             href: outlook-calendar-meeting-proposals.md
           - name: Organize or attend online meetings
             href: outlook-calendar-online-meetings.md
@@ -275,6 +275,8 @@ items:
             href: people-example.md
           - name: Customize the profile card (preview)
             href: add-properties-profilecard.md
+          - name: Customize insights privacy (preview)
+            href: insights-customize-item-insights-privacy.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
         items:

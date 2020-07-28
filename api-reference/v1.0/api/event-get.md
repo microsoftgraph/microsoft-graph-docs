@@ -184,8 +184,18 @@ Content-length: 1928
         {
             "type":"required",
             "status":{
-                "response":"none",
+                "response":"tentativelyAccepted",
                 "time":"0001-01-01T00:00:00Z"
+            },
+            "proposedNewTime": {
+                "start": {
+                    "dateTime": "2019-08-16T12:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-08-16T14:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
             },
             "emailAddress":{
                 "name":"Dana Swope",

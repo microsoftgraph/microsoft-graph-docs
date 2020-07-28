@@ -1,5 +1,5 @@
 ﻿{
-  "Changelogs": [
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "geolocationColumn",
           "ChangeType": "Addition",
-          "Description": "Added the [geolocationColumn](/graph/api/resources/geolocationcolumn?view=graph-rest-1.0) resource. The **geolocationColumn** resource applies to the [columnDefinition](/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the [geolocationColumn](https://docs.microsoft.com/en-us/graph/api/resources/geolocationcolumn?view=graph-rest-1.0) resource. The **geolocationColumn** resource applies to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
           "Target": "geolocationColumn,columnDefinition"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "followedSites",
           "ChangeType": "Addition",
-          "Description": "Added the **followedSites** navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity to [list the sites followed by the signed-in user](/graph/api/sites-list-followed?view=graph-rest-beta).",
+          "Description": "Added the **followedSites** navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity to [list the sites followed by the signed-in user](https://docs.microsoft.com/en-us/graph/api/sites-list-followed?view=graph-rest-beta).",
           "Target": "user,list the sites followed by the signed-in user"
         }
       ],
@@ -43,7 +43,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "followedSites",
           "ChangeType": "Addition",
-          "Description": "Added the **followedSites** navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity to [list the sites followed by the signed-in user](/graph/api/sites-list-followed?view=graph-rest-1.0).",
+          "Description": "Added the **followedSites** navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity to [list the sites followed by the signed-in user](https://docs.microsoft.com/en-us/graph/api/sites-list-followed?view=graph-rest-1.0).",
           "Target": "user,list the sites followed by the signed-in user"
         },
         {
@@ -51,7 +51,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "dataLocatonCode",
           "ChangeType": "Addition",
-          "Description": "Added the **dataLocatonCode** property on the [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0) resource.",
+          "Description": "Added the **dataLocatonCode** property on the [siteCollection](https://docs.microsoft.com/en-us/graph/api/resources/sitecollection?view=graph-rest-1.0) resource.",
           "Target": "siteCollection"
         },
         {
@@ -59,7 +59,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "tenantId",
           "ChangeType": "Addition",
-          "Description": "Added the **tenantId** property on the [sharepointIds](/graph/api/resources/sharepointids?view=graph-rest-1.0) resource.",
+          "Description": "Added the **tenantId** property on the [sharepointIds](https://docs.microsoft.com/en-us/graph/api/resources/sharepointids?view=graph-rest-1.0) resource.",
           "Target": "sharepointIds"
         }
       ],
@@ -77,7 +77,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [followSite](/graph/api/site-follow?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity.",
+          "Description": "Added the [followSite](https://docs.microsoft.com/en-us/graph/api/site-follow?view=graph-rest-1.0) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity.",
           "Target": "followSite,user"
         },
         {
@@ -85,7 +85,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollowSite](/graph/api/site-unfollow?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity.",
+          "Description": "Added the [unfollowSite](https://docs.microsoft.com/en-us/graph/api/site-unfollow?view=graph-rest-1.0) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) entity.",
           "Target": "unfollowSite,user"
         },
         {
@@ -93,7 +93,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-1.0) entity.",
+          "Description": "Added the **subscriptions** navigation property to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) entity.",
           "Target": "list"
         }
       ],
@@ -111,7 +111,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
-          "Description": "Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-beta) entity.",
+          "Description": "Added the **subscriptions** navigation property to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) entity.",
           "Target": "list"
         }
       ],
@@ -129,7 +129,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [followSite](/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Description": "Added the [followSite](https://docs.microsoft.com/en-us/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
           "Target": "followSite,user"
         },
         {
@@ -137,7 +137,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Description": "Added the [unfollowSite](https://docs.microsoft.com/en-us/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
           "Target": "unfollowSite,user"
         }
       ],
@@ -217,7 +217,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "lists by ID,path/URL",
           "ChangeType": "Addition",
-          "Description": "Access to SharePoint sites and [lists by ID](/graph/api/list-get?view=graph-rest-beta) or [path/URL](/graph/api/baseitem-getbyurl?view=graph-rest-beta).",
+          "Description": "Access to SharePoint sites and [lists by ID](https://docs.microsoft.com/en-us/graph/api/list-get?view=graph-rest-beta) or [path/URL](https://docs.microsoft.com/en-us/graph/api/baseitem-getbyurl?view=graph-rest-beta).",
           "Target": "lists by ID,path/URL"
         },
         {
@@ -225,7 +225,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "listing, creating, getting, and deleting instances of listItem",
           "ChangeType": "Addition",
-          "Description": "Support for [listing, creating, getting, and deleting instances of listItem](/graph/api/resources/listitem?view=graph-rest-beta).",
+          "Description": "Support for [listing, creating, getting, and deleting instances of listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta).",
           "Target": "listing, creating, getting, and deleting instances of listItem"
         }
       ],

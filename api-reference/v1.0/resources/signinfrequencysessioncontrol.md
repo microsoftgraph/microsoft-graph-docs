@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Session control to enforce sign-in frequency. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
+Session control to enforce sign-in frequency. Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## Properties
 

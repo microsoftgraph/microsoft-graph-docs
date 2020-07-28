@@ -1,5 +1,5 @@
 ﻿{
-  "Changelogs": [
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "profileCardProperties",
           "ChangeType": "Addition",
-          "Description": "Added the **profileCardProperties** navigation property to the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity.",
+          "Description": "Added the **profileCardProperties** navigation property to the [organizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/organizationsettings?view=graph-rest-beta) entity.",
           "Target": "organizationSettings"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "profileCardProperty",
           "ChangeType": "Addition",
-          "Description": "Added the **profileCardProperty** entity and the following operations: ,  [List](/graph/api/organizationsettings-list-profilecardproperties) ,  [Create](/graph/api/organizationsettings-post-profilecardproperties) ,  [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) ,  [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta) ,  [Delete](/graph/api/profilecardproperty-delete)",
+          "Description": "Added the **profileCardProperty** entity and the following operations: ,  [List](https://docs.microsoft.com/en-us/graph/api/organizationsettings-list-profilecardproperties) ,  [Create](https://docs.microsoft.com/en-us/graph/api/organizationsettings-post-profilecardproperties) ,  [Get](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-get?view=graph-rest-beta) ,  [Update](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-update?view=graph-rest-beta) ,  [Delete](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-delete)",
           "Target": "List,Create,Get,Update,Delete"
         }
       ],
@@ -33,7 +33,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?",
           "ChangeType": "Addition",
-          "Description": "Insights API is available in v1.0. This includes the [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0), [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0), [usedInsight](/graph/api/resources/insights-used?view=graph-rest-1.0), and [sharedInsight](/graph/api/resources/insights-shared?view=graph-rest-1.0) resources, and related types and methods. See [Why integrate with document-based insights?](social-intel-concept-overview.md#why-integrate-with-document-based-insights) for more information.",
+          "Description": "Insights API is available in v1.0. This includes the [officeGraphInsights](https://docs.microsoft.com/en-us/graph/api/resources/officegraphinsights?view=graph-rest-1.0), [trending](https://docs.microsoft.com/en-us/graph/api/resources/insights-trending?view=graph-rest-1.0), [usedInsight](https://docs.microsoft.com/en-us/graph/api/resources/insights-used?view=graph-rest-1.0), and [sharedInsight](https://docs.microsoft.com/en-us/graph/api/resources/insights-shared?view=graph-rest-1.0) resources, and related types and methods. See [Why integrate with document-based insights?](social-intel-concept-overview.md#why-integrate-with-document-based-insights) for more information.",
           "Target": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?"
         }
       ],
@@ -51,7 +51,7 @@
           "ApiChange": "method",
           "ChangedApiName": "profile API",
           "ChangeType": "Addition",
-          "Description": "Added the [profile API](/graph/api/resources/profile?view=graph-rest-beta) and associated methods.",
+          "Description": "Added the [profile API](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta) and associated methods.",
           "Target": "profile API"
         }
       ],
@@ -69,7 +69,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "analytics API",
           "ChangeType": "Addition",
-          "Description": "Introduced the new workplace intelligence [analytics API](/graph/api/resources/useranalytics?view=graph-rest-beta) that enables you to get analytics about how users spend their time on various activities during and outside of working hours, including calls, chats (instant messages), emails, focus work, and meetings.",
+          "Description": "Introduced the new workplace intelligence [analytics API](https://docs.microsoft.com/en-us/graph/api/resources/useranalytics?view=graph-rest-beta) that enables you to get analytics about how users spend their time on various activities during and outside of working hours, including calls, chats (instant messages), emails, focus work, and meetings.",
           "Target": "analytics API"
         },
         {
@@ -77,7 +77,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "settings API,analytics API",
           "ChangeType": "Addition",
-          "Description": "Introduced the new workplace intelligence [settings API](/graph/api/resources/settings?view=graph-rest-beta) that represents the current required settings for a user to use the [analytics API](/graph/api/resources/useranalytics?view=graph-rest-beta).",
+          "Description": "Introduced the new workplace intelligence [settings API](https://docs.microsoft.com/en-us/graph/api/resources/settings?view=graph-rest-beta) that represents the current required settings for a user to use the [analytics API](https://docs.microsoft.com/en-us/graph/api/resources/useranalytics?view=graph-rest-beta).",
           "Target": "settings API,analytics API"
         },
         {
@@ -85,7 +85,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics",
           "ChangeType": "Addition",
-          "Description": "Introduced the new [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) resource type and the following new resource types that are derived from it: [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta), [chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta),[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta), [focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta), and [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta).",
+          "Description": "Introduced the new [activityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/activitystatistics?view=graph-rest-beta) resource type and the following new resource types that are derived from it: [callActivityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/callactivitystatistics?view=graph-rest-beta), [chatActivityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/chatactivitystatistics?view=graph-rest-beta),[emailActivityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/emailactivitystatistics?view=graph-rest-beta), [focusActivityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/focusactivitystatistics?view=graph-rest-beta), and [meetingActivityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta).",
           "Target": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics"
         }
       ],
@@ -103,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "settings,Get,Update",
           "ChangeType": "Addition",
-          "Description": "Added the [settings](/graph/api/resources/user-settings?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [Get](/graph/api/user-get-settings?view=graph-rest-beta) \u003Cbr\u003E [Update](/graph/api/user-update-settings?view=graph-rest-beta)",
+          "Description": "Added the [settings](https://docs.microsoft.com/en-us/graph/api/resources/user-settings?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/user-get-settings?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/user-update-settings?view=graph-rest-beta)",
           "Target": "settings,Get,Update"
         }
       ],
@@ -121,7 +121,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "People APIs,Get relevant information about people",
           "ChangeType": "Addition",
-          "Description": "Added the [People APIs](/graph/api/resources/person?view=graph-rest-1.0) to v1.0. For details about the People API, see [Get relevant information about people](people-example.md).",
+          "Description": "Added the [People APIs](https://docs.microsoft.com/en-us/graph/api/resources/person?view=graph-rest-1.0) to v1.0. For details about the People API, see [Get relevant information about people](people-example.md).",
           "Target": "People APIs,Get relevant information about people"
         },
         {
@@ -137,7 +137,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "personType",
           "ChangeType": "Addition",
-          "Description": "Added the [personType](/graph/api/resources/persontype?view=graph-rest-1.0) resource.",
+          "Description": "Added the [personType](https://docs.microsoft.com/en-us/graph/api/resources/persontype?view=graph-rest-1.0) resource.",
           "Target": "personType"
         },
         {
@@ -145,7 +145,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "rankedEmailAddress",
           "ChangeType": "Change",
-          "Description": "The [scoredEmailAddress](/graph/api/resources/scoredemailaddress?view=graph-rest-1.0) resource replaced the **rankedEmailAddress** resource.",
+          "Description": "The [scoredEmailAddress](https://docs.microsoft.com/en-us/graph/api/resources/scoredemailaddress?view=graph-rest-1.0) resource replaced the **rankedEmailAddress** resource.",
           "Target": "scoredEmailAddress"
         },
         {
@@ -153,7 +153,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "scoredEmailAddresses,emailAddresses,jobTitle,title,sources,mailboxType,personType,sources,mailboxType,imAddress",
           "ChangeType": "Change",
-          "Description": "The [person](/graph/api/resources/person?view=graph-rest-1.0) resource was updated as follows:\u003Cul\u003E\u003Cli\u003EThe **scoredEmailAddresses** property (a collection of [scoredEmailAddress](/graph/api/resources/scoredemailaddress?view=graph-rest-1.0) type) replaced the **emailAddresses** property\u003C/li\u003E\u003Cli\u003EThe **jobTitle** property replaced the **title** property\u003C/li\u003E\u003Cli\u003ERemoved **sources** and **mailboxType** properties\u003C/li\u003E\u003Cli\u003EThe **personType** property is now of [personType](/graph/api/resources/persontype?view=graph-rest-1.0) type instead of string type and replaces functionality of the previous **sources** and **mailboxType** properties\u003C/li\u003E\u003Cli\u003EAdded **imAddress** property\u003C/li\u003E\u003C/ul\u003E",
+          "Description": "The [person](https://docs.microsoft.com/en-us/graph/api/resources/person?view=graph-rest-1.0) resource was updated as follows:\u003Cul\u003E\u003Cli\u003EThe **scoredEmailAddresses** property (a collection of [scoredEmailAddress](https://docs.microsoft.com/en-us/graph/api/resources/scoredemailaddress?view=graph-rest-1.0) type) replaced the **emailAddresses** property\u003C/li\u003E\u003Cli\u003EThe **jobTitle** property replaced the **title** property\u003C/li\u003E\u003Cli\u003ERemoved **sources** and **mailboxType** properties\u003C/li\u003E\u003Cli\u003EThe **personType** property is now of [personType](https://docs.microsoft.com/en-us/graph/api/resources/persontype?view=graph-rest-1.0) type instead of string type and replaces functionality of the previous **sources** and **mailboxType** properties\u003C/li\u003E\u003Cli\u003EAdded **imAddress** property\u003C/li\u003E\u003C/ul\u003E",
           "Target": "person,scoredEmailAddress,personType"
         },
         {
@@ -179,7 +179,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Shared API,sharingDetail,insightIdentity",
           "ChangeType": "Addition",
-          "Description": "Added [Shared API](/graph/api/resources/insights-shared?view=graph-rest-beta).\u003Cbr /\u003ENew resources:\u003Cbr /\u003E[sharingDetail](/graph/api/resources/insights-sharingdetail?view=graph-rest-beta) \u003Cbr /\u003E[insightIdentity](/graph/api/resources/insights-insightidentity?view=graph-rest-beta) \u003Cbr /\u003E",
+          "Description": "Added [Shared API](https://docs.microsoft.com/en-us/graph/api/resources/insights-shared?view=graph-rest-beta).\u003Cbr /\u003ENew resources:\u003Cbr /\u003E[sharingDetail](https://docs.microsoft.com/en-us/graph/api/resources/insights-sharingdetail?view=graph-rest-beta) \u003Cbr /\u003E[insightIdentity](https://docs.microsoft.com/en-us/graph/api/resources/insights-insightidentity?view=graph-rest-beta) \u003Cbr /\u003E",
           "Target": "Shared API,sharingDetail,insightIdentity"
         },
         {
@@ -187,7 +187,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Used API,usageDetails",
           "ChangeType": "Addition",
-          "Description": "Added [Used API](/graph/api/resources/insights-used?view=graph-rest-beta).\u003Cbr /\u003ENew resources:\u003Cbr /\u003E[usageDetails](/graph/api/resources/insights-usagedetails?view=graph-rest-beta) \u003Cbr /\u003E",
+          "Description": "Added [Used API](https://docs.microsoft.com/en-us/graph/api/resources/insights-used?view=graph-rest-beta).\u003Cbr /\u003ENew resources:\u003Cbr /\u003E[usageDetails](https://docs.microsoft.com/en-us/graph/api/resources/insights-usagedetails?view=graph-rest-beta) \u003Cbr /\u003E",
           "Target": "Used API,usageDetails"
         },
         {
@@ -195,7 +195,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Type",
           "ChangeType": "Change",
-          "Description": "New **Type** property in the:\u003Cbr /\u003E[resourceVisualization](/graph/api/resources/insights-resourcevisualization?view=graph-rest-beta) resource. \u003Cbr /\u003E",
+          "Description": "New **Type** property in the:\u003Cbr /\u003E[resourceVisualization](https://docs.microsoft.com/en-us/graph/api/resources/insights-resourcevisualization?view=graph-rest-beta) resource. \u003Cbr /\u003E",
           "Target": "resourceVisualization"
         },
         {

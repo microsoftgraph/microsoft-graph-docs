@@ -1,5 +1,5 @@
 ﻿{
-  "Changelogs": [
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Financials API reference",
           "ChangeType": "Addition",
-          "Description": "Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](/graph/api/resources/dynamics-graph-reference?view=graph-rest-1.0).",
+          "Description": "Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](https://docs.microsoft.com/en-us/graph/api/resources/dynamics-graph-reference?view=graph-rest-1.0).",
           "Target": "Financials API reference"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Financials API reference",
           "ChangeType": "Addition",
-          "Description": "Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta)",
+          "Description": "Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](https://docs.microsoft.com/en-us/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta)",
           "Target": "Financials API reference"
         }
       ],

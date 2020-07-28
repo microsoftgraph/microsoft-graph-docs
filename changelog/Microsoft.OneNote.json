@@ -1,5 +1,5 @@
 ﻿{
-  "Changelogs": [
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -7,7 +7,7 @@
           "ApiChange": "method",
           "ChangedApiName": "getNotebookFromWebUrl",
           "ChangeType": "Addition",
-          "Description": "Added the [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) method.",
+          "Description": "Added the [getNotebookFromWebUrl](https://docs.microsoft.com/en-us/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) method.",
           "Target": "getNotebookFromWebUrl"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "CopyNotebook",
           "ChangeType": "Addition",
-          "Description": "Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](/graph/api/notebook-copynotebook?view=graph-rest-1.0).",
+          "Description": "Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](https://docs.microsoft.com/en-us/graph/api/notebook-copynotebook?view=graph-rest-1.0).",
           "Target": "CopyNotebook"
         }
       ],
@@ -43,7 +43,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "site",
           "ChangeType": "Addition",
-          "Description": "Added the [onenote](/graph/api/resources/onenote?view=graph-rest-1.0) navigation property to **site**.",
+          "Description": "Added the [onenote](https://docs.microsoft.com/en-us/graph/api/resources/onenote?view=graph-rest-1.0) navigation property to **site**.",
           "Target": "onenote"
         }
       ],

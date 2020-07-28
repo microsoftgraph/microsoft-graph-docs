@@ -1,5 +1,5 @@
 ﻿{
-  "Changelogs": [
+  "changelog": [
     {
       "ChangeList": [
         {
@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workbookOperation,Workbook",
           "ChangeType": "Addition",
-          "Description": "Added the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) relationship to the [Workbook](/graph/api/resources/workbook?view=graph-rest-beta) entity.",
+          "Description": "Added the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation?view=graph-rest-beta) relationship to the [Workbook](https://docs.microsoft.com/en-us/graph/api/resources/workbook?view=graph-rest-beta) entity.",
           "Target": "workbookOperation,Workbook"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get workbookOperation,workbookOperation",
           "ChangeType": "Addition",
-          "Description": "Added the  [Get workbookOperation](/graph/api/resources/workbookoperation-get?view=graph-rest-beta) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity.",
+          "Description": "Added the  [Get workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation-get?view=graph-rest-beta) method to the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation?view=graph-rest-beta) entity.",
           "Target": "Get workbookOperation,workbookOperation"
         }
       ],
@@ -33,7 +33,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "legacyId,id,legacyId",
           "ChangeType": "Change",
-          "Description": "Added the **legacyId** property to the [Excel Table](/graph/api/resources/table?view=graph-rest-1.0) entity. This will contain the numeric value identifier (string data type) that will remain constact for a given Excel table. This is provided as an additional metadata if the application relied on the legacy identifier used in older Excel client applications. Note: The **id** and **legacyId** property should be treated as an opaque string value and should not be parsed to any other type within your application.",
+          "Description": "Added the **legacyId** property to the [Excel Table](https://docs.microsoft.com/en-us/graph/api/resources/table?view=graph-rest-1.0) entity. This will contain the numeric value identifier (string data type) that will remain constact for a given Excel table. This is provided as an additional metadata if the application relied on the legacy identifier used in older Excel client applications. Note: The **id** and **legacyId** property should be treated as an opaque string value and should not be parsed to any other type within your application.",
           "Target": "Excel Table"
         }
       ],
@@ -87,7 +87,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Working with Excel in Microsoft Graph",
           "ChangeType": "Addition",
-          "Description": "We are adding new Excel REST APIs that let you read and modify data in an Excel workbook. It is now possible to build smart apps that allows users to get value out of the content stored in an Excel workbook by providing insights into the data. Take advantage of analytical powers of Excel, create tables and charts and extract visually appealing chart image - all from within your app. For details, see [Working with Excel in Microsoft Graph](/graph/api/resources/excel?view=graph-rest-beta).",
+          "Description": "We are adding new Excel REST APIs that let you read and modify data in an Excel workbook. It is now possible to build smart apps that allows users to get value out of the content stored in an Excel workbook by providing insights into the data. Take advantage of analytical powers of Excel, create tables and charts and extract visually appealing chart image - all from within your app. For details, see [Working with Excel in Microsoft Graph](https://docs.microsoft.com/en-us/graph/api/resources/excel?view=graph-rest-beta).",
           "Target": "Working with Excel in Microsoft Graph"
         }
       ],
