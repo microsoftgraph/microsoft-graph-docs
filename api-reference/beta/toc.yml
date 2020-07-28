@@ -10875,7 +10875,7 @@ items:
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Reports
       items:
-      - name: Activity reports
+      - name: Azure AD activity reports
         href: resources/azure-ad-auditlog-overview.md
         items:
         - name: Directory audit

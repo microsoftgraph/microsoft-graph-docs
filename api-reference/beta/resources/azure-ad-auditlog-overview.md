@@ -61,7 +61,7 @@ GET provisioning logs | [https://graph.microsoft.com/beta/auditLogs/provisioning
 
 ## What licenses do I need?
 
-Activity reports are available for features that you've licensed.  If you have a license for a specific feature, you also have access to the reports.
+Activity reports are available for features that you've licensed. If you have a license for a specific feature, you also have access to the reports.
 
 For example, you need an Azure AD Premium P1 license to access self-service password audit reports.  To learn more, see [Azure AD licensing](https://azure.microsoft.com/pricing/details/active-directory/).
 

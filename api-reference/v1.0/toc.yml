@@ -3773,23 +3773,6 @@ items:
               href: api/subscribedsku-get.md
       - name: Identity and sign-in
         items:
-        - name: Audit logs
-          href: resources/azure-ad-auditlog-overview.md
-          items:
-          - name: Directory audit
-            href: resources/directoryaudit.md
-            items:
-            - name: List directory audits
-              href: api/directoryaudit-list.md
-            - name: Get directory audit
-              href: api/directoryaudit-get.md
-          - name: Sign-in
-            href: resources/signin.md
-            items:
-            - name: List sign-ins
-              href: api/signin-list.md
-            - name: Get sign-in
-              href: api/signin-get.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -3873,28 +3856,6 @@ items:
             href: api/identityprovider-update.md
           - name: Delete identity provider
             href: api/identityprovider-delete.md
-        - name: Information protection
-          items:
-          - name: Threat assessment
-            items:
-            - name: Overview
-              href: resources/threatassessment-api-overview.md
-            - name: Threat assessment request
-              href: resources/threatassessmentrequest.md
-            - name: Mail assessment request
-              href: resources/mailassessmentrequest.md
-            - name: Email file assessment request
-              href: resources/emailfileassessmentrequest.md
-            - name: File assessment request
-              href: resources/fileAssessmentRequest.md
-            - name: URL assessment request
-              href: resources/urlassessmentrequest.md
-            - name: List
-              href: api/informationprotection-list-threatassessmentrequests.md
-            - name: Create
-              href: api/informationprotection-post-threatassessmentrequests.md
-            - name: Get
-              href: api/threatassessmentrequest-get.md
         - name: Invitation manager
           href: resources/invitation.md
           items:
@@ -4342,6 +4303,23 @@ items:
       items:
       - name: Overview
         href: resources/report.md
+      - name: Azure AD activity reports
+          href: resources/azure-ad-auditlog-overview.md
+          items:
+          - name: Directory audit
+            href: resources/directoryaudit.md
+            items:
+            - name: List directory audits
+              href: api/directoryaudit-list.md
+            - name: Get directory audit
+              href: api/directoryaudit-get.md
+          - name: Sign-in
+            href: resources/signin.md
+            items:
+            - name: List sign-ins
+              href: api/signin-list.md
+            - name: Get sign-in
+              href: api/signin-get.md
       - name: Microsoft Teams device usage
         href: resources/microsoft-teams-device-usage-reports.md
         items:
@@ -4552,6 +4530,28 @@ items:
           href: api/alert-get.md
         - name: Update alert
           href: api/alert-update.md
+      - name: Information protection
+          items:
+          - name: Threat assessment
+            items:
+            - name: Overview
+              href: resources/threatassessment-api-overview.md
+            - name: Threat assessment request
+              href: resources/threatassessmentrequest.md
+            - name: Mail assessment request
+              href: resources/mailassessmentrequest.md
+            - name: Email file assessment request
+              href: resources/emailfileassessmentrequest.md
+            - name: File assessment request
+              href: resources/fileAssessmentRequest.md
+            - name: URL assessment request
+              href: resources/urlassessmentrequest.md
+            - name: List
+              href: api/informationprotection-list-threatassessmentrequests.md
+            - name: Create
+              href: api/informationprotection-post-threatassessmentrequests.md
+            - name: Get
+              href: api/threatassessmentrequest-get.md
       - name: Secure scores
         href: resources/securescore.md
         items:
