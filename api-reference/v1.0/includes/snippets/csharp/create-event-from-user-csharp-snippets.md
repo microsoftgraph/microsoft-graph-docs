@@ -12,7 +12,7 @@ var @event = new Event
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Does late morning work for you?"
+		Content = "Does noon work for you?"
 	},
 	Start = new DateTimeTimeZone
 	{
@@ -39,7 +39,8 @@ var @event = new Event
 			},
 			Type = AttendeeType.Required
 		}
-	}
+	},
+	AllowNewTimeProposals = true
 };
 
 await graphClient.Me.Events

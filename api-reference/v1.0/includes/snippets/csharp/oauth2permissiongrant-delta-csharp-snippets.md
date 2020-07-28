@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var comments = await graphClient.Drive.Items["{id}"].Workbook.Comments
+var oAuth2PermissionGrant = await graphClient.Oauth2permissiongrants["delta"]
 	.Request()
 	.GetAsync();
 

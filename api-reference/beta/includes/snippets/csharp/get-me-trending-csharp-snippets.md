@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var comments = await graphClient.Drive.Items["{id}"].Workbook.Comments
+var trending = await graphClient.Me.Insights.Trending
 	.Request()
 	.GetAsync();
 

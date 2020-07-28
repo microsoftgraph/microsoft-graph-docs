@@ -63,6 +63,8 @@ If successful, this method returns a `200 OK` response code and [itemInsightsSet
 ### Request
 
 Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying users' item insights of a particular Azure AD group.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_iteminsightssettings"
@@ -76,6 +78,12 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-iteminsightssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 

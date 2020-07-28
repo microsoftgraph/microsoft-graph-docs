@@ -54,6 +54,8 @@ If successful, this action returns a `200 OK` response code and an [extensionPro
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getavailableextensionproperties"
@@ -69,6 +71,12 @@ Content-length: 43
   "isSyncedFromOnPremises": "Boolean"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getavailableextensionproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 > **Note:** The response object shown here might be shortened for readability.
