@@ -12,12 +12,8 @@ const client = Client.init(options);
 
 const conversationMember = {
     @odata.type: "#microsoft.graph.aadUserConversationMember",
-    roles: [
-        "owner"
-    ],
-    userId: "50dffbae-ad0f-428e-a86f-f53b0acfc641",
-    displayName: "Cameron White",
-    email: "CameronW@M365x987948.OnMicrosoft.com"
+    roles: ["owner"],
+    user@odata.bind: "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 };
 
 let res = await client.api('/teams/{id}/members')

@@ -65,6 +65,7 @@ Location locations2 = new Location();
 locations2.displayName = "Home Office";
 locationsList.add(locations2);
 event.locations = locationsList;
+event.allowNewTimeProposals = true;
 
 graphClient.me().events()
 	.buildRequest( requestOptions )

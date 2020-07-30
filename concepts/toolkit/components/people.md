@@ -88,6 +88,13 @@ This component uses the following Microsoft Graph APIs and permissions:
 | - | - |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
 
+When using the default templates, additional APIs and permissions are required. The default template for this component uses a [mgt-person](person.md) component, which requires the following.
+
+| Resource | Permission |
+| - | - |
+| [/users](/graph/api/user-list?view=graph-rest-1.0) | Users.ReadBasic.All |
+| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
+
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](./../providers.md).

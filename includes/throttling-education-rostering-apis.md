@@ -9,7 +9,7 @@ ms.topic: include
 
 | Request type | Limit per app for all tenants | Limit per app per tenant |
 | ------------ | ------- | ------- |
-| Any | 23000 requests per 10 seconds | 5000 requests per 10 seconds |
+| Any | 23000 requests per 10 seconds | 50000 requests per 10 seconds |
 
 The preceding limits apply to the following resources:  
 educationClass, educationOrganization, educationRoot, educationSchool, educationStudent, educationTeacher, educationTerm, educationUser.

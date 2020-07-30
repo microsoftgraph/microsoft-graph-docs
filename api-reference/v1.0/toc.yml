@@ -722,6 +722,8 @@ items:
           href: api/serviceprincipal-update.md
         - name: Delete
           href: api/serviceprincipal-delete.md
+        - name: Get delta
+          href: api/serviceprincipal-delta.md
         - name: List created objects
           href: api/serviceprincipal-list-createdobjects.md
         - name: List owned objects
@@ -3660,6 +3662,10 @@ items:
             href: api/device-post-registeredowners.md
           - name: Create registered user
             href: api/device-post-registeredusers.md
+          - name: Remove registered owner
+            href: api/device-delete-registeredowners.md
+          - name: Remove registered user
+            href: api/device-delete-registeredusers.md
           - name: List device groups
             href: api/device-list-memberof.md
           - name: List device transitive groups
@@ -3675,6 +3681,8 @@ items:
             href: api/directoryobject-get.md
           - name: Delete directory object
             href: api/directoryobject-delete.md
+          - name: Get available extension properties
+            href: api/directoryobject-getavailableextensionproperties.md
           - name: Get member objects
             href: api/directoryobject-getmemberobjects.md
           - name: Get member groups
@@ -3767,23 +3775,6 @@ items:
               href: api/subscribedsku-get.md
       - name: Identity and sign-in
         items:
-        - name: Audit logs
-          href: resources/azure-ad-auditlog-overview.md
-          items:
-          - name: Directory audit
-            href: resources/directoryaudit.md
-            items:
-            - name: List directory audits
-              href: api/directoryaudit-list.md
-            - name: Get directory audit
-              href: api/directoryaudit-get.md
-          - name: Sign-in
-            href: resources/signin.md
-            items:
-            - name: List sign-ins
-              href: api/signin-list.md
-            - name: Get sign-in
-              href: api/signin-get.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
@@ -3795,6 +3786,62 @@ items:
             href: api/certificatebasedauthconfiguration-get.md
           - name: Delete
             href: api/certificatebasedauthconfiguration-delete.md
+        - name: Conditional access
+          items:
+          - name: Policies
+            items:
+            - name: Conditional access policy
+              href: resources/conditionalaccesspolicy.md
+            - name: List
+              href: api/conditionalaccessroot-list-policies.md
+            - name: Create
+              href: api/conditionalaccessroot-post-policies.md
+            - name: Get
+              href: api/conditionalaccesspolicy-get.md
+            - name: Update
+              href: api/conditionalaccesspolicy-update.md
+            - name: Delete
+              href: api/conditionalaccesspolicy-delete.md
+          - name: Named locations
+            items:
+            - name: Named location
+              items:
+              - name: Named location
+                href: resources/namedlocation.md
+              - name: List
+                href: api/conditionalaccessroot-list-namedlocations.md
+              - name: Get
+                href: api/namedlocation-get.md
+              - name: Delete
+                href: api/namedlocation-delete.md
+            - name: Country named location
+              items:
+              - name: Country named location
+                href: resources/countrynamedlocation.md
+              - name: List
+                href: api/conditionalaccessroot-list-namedlocations.md
+              - name: Create
+                href: api/conditionalaccessroot-post-namedlocations.md
+              - name: Get
+                href: api/countrynamedlocation-get.md
+              - name: Update
+                href: api/countrynamedlocation-update.md
+              - name: Delete
+                href: api/countrynamedlocation-delete.md
+            - name: IP named location
+              items:
+              - name: IP named location
+                href: resources/ipnamedlocation.md
+              - name: List
+                href: api/conditionalaccessroot-list-namedlocations.md
+              - name: Create
+                href: api/conditionalaccessroot-post-namedlocations.md
+              - name: Get
+                href: api/ipnamedlocation-get.md
+              - name: Update
+                href: api/ipnamedlocation-update.md
+              - name: Delete
+                href: api/ipnamedlocation-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -3813,6 +3860,8 @@ items:
             href: api/oauth2permissiongrant-update.md
           - name: Delete
             href: api/oauth2permissiongrant-delete.md
+          - name: Get delta
+            href: api/oauth2permissiongrant-delta.md
         - name: Identity protection
           href: resources/identityprotectionroot.md
           items:
@@ -3851,28 +3900,6 @@ items:
             href: api/identityprovider-update.md
           - name: Delete identity provider
             href: api/identityprovider-delete.md
-        - name: Information protection
-          items:
-          - name: Threat assessment
-            items:
-            - name: Overview
-              href: resources/threatassessment-api-overview.md
-            - name: Threat assessment request
-              href: resources/threatassessmentrequest.md
-            - name: Mail assessment request
-              href: resources/mailassessmentrequest.md
-            - name: Email file assessment request
-              href: resources/emailfileassessmentrequest.md
-            - name: File assessment request
-              href: resources/fileAssessmentRequest.md
-            - name: URL assessment request
-              href: resources/urlassessmentrequest.md
-            - name: List
-              href: api/informationprotection-list-threatassessmentrequests.md
-            - name: Create
-              href: api/informationprotection-post-threatassessmentrequests.md
-            - name: Get
-              href: api/threatassessmentrequest-get.md
         - name: Invitation manager
           href: resources/invitation.md
           items:
@@ -3954,6 +3981,13 @@ items:
               href: api/tokenlifetimepolicy-delete.md
             - name: List applied to applications
               href: api/tokenlifetimepolicy-list-appliesto.md
+          - name: Security defaults policy
+            href: resources/identitysecuritydefaultsenforcementpolicy.md
+            items:
+            - name: Get
+              href: api/identitysecuritydefaultsenforcementpolicy-get.md
+            - name: Update
+              href: api/identitysecuritydefaultsenforcementpolicy-update.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
@@ -4320,6 +4354,23 @@ items:
       items:
       - name: Overview
         href: resources/report.md
+      - name: Azure AD activity
+        href: resources/azure-ad-auditlog-overview.md
+        items:
+        - name: Directory audit
+          href: resources/directoryaudit.md
+          items:
+          - name: List directory audits
+            href: api/directoryaudit-list.md
+          - name: Get directory audit
+            href: api/directoryaudit-get.md
+        - name: Sign-in
+          href: resources/signin.md
+          items:
+          - name: List sign-ins
+            href: api/signin-list.md
+          - name: Get sign-in
+            href: api/signin-get.md
       - name: Microsoft Teams device usage
         href: resources/microsoft-teams-device-usage-reports.md
         items:
@@ -4530,6 +4581,28 @@ items:
           href: api/alert-get.md
         - name: Update alert
           href: api/alert-update.md
+      - name: Information protection
+        items:
+        - name: Threat assessment
+          items:
+          - name: Overview
+            href: resources/threatassessment-api-overview.md
+          - name: Threat assessment request
+            href: resources/threatassessmentrequest.md
+          - name: Mail assessment request
+            href: resources/mailassessmentrequest.md
+          - name: Email file assessment request
+            href: resources/emailfileassessmentrequest.md
+          - name: File assessment request
+            href: resources/fileAssessmentRequest.md
+          - name: URL assessment request
+            href: resources/urlassessmentrequest.md
+          - name: List
+            href: api/informationprotection-list-threatassessmentrequests.md
+          - name: Create
+            href: api/informationprotection-post-threatassessmentrequests.md
+          - name: Get
+            href: api/threatassessmentrequest-get.md
       - name: Secure scores
         href: resources/securescore.md
         items:

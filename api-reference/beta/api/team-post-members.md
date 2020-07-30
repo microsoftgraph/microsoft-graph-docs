@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Create members
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).
 
 ## Permissions

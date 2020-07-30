@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var profileCardProperties = await graphClient.Organization["settings"].ProfileCardProperties
+var profileCardProperties = await graphClient.Organization["{organizationId}"].Settings.ProfileCardProperties
 	.Request()
 	.GetAsync();
 

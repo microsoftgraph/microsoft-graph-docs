@@ -48,7 +48,6 @@ The following is a JSON representation of the resource.
     "status": {"@odata.type": "microsoft.graph.printOperationStatus"},
     "createdDateTime": "2020-06-15T19:54:14.853Z"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -23,7 +23,7 @@ const customAttribute1 = {
   ]
 };
 
-let res = await client.api('/organization/settings/profileCardProperties/CustomAttribute1')
+let res = await client.api('/organization/{organizationId}/settings/profileCardProperties/CustomAttribute1')
 	.version('beta')
 	.update(customAttribute1);
 

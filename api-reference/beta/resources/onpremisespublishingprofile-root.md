@@ -18,6 +18,8 @@ Various Azure services (for example, Azure Active Directory Connect [Passthrough
 
 A tenant admin can configure for each **onPremisesPublishingProfile** the [time window](updatewindow.md) during which agents can receive updates or defer updates to the agents. The [updater configuration](hybridagentupdaterconfiguration.md) specified for an **onPremisesPublishingProfile** is applicable to all the agents within that **onPremisesPublishingProfile**.
 
+For a tutorial about configuring Application Proxy, see [Automate the configuration of Application Proxy using the Microsoft Graph API](https://docs.microsoft.com/graph/application-proxy-configure-api).
+
 ## See also
 
 - [On-premises agent](onpremisesagent.md)

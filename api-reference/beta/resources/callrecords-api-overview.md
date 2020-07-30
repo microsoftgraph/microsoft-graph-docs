@@ -22,6 +22,8 @@ The call records API is defined in the OData sub-namespace, `microsoft.graph.cal
 | [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
 | [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
 | [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[Get pstnCallLogRow](../api/callrecords-callrecord-getpstncalls.md) |
+| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [Get directRoutingLogRow](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 
 ## Call record structure
 

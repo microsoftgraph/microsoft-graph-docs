@@ -12,9 +12,10 @@ var conversationMember = new AadUserConversationMember
 	{
 		"owner"
 	},
-	UserId = "50dffbae-ad0f-428e-a86f-f53b0acfc641",
-	DisplayName = "Cameron White",
-	Email = "CameronW@M365x987948.OnMicrosoft.com"
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"user@odata.bind", "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"}
+	}
 };
 
 await graphClient.Teams["{id}"].Members

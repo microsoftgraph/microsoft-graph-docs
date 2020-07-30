@@ -1,12 +1,12 @@
 ---
-title: "Use Outlook to organize and attend meetings online"
-description: "In Outlook, a meeting organizer can allow invitees to propose alternative meeting times."
+title: "Use Outlook calendar to organize and enable online meetings"
+description: "In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Use Outlook to organize or attend meetings online
+# Use Outlook calendar to organize and enable online meetings
 
 In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers, with one of these providers being the default provider. You can [create](#create-and-enable-a-meeting-online) or [update](#update-a-meeting-to-enable-it-online) an [event](/graph/api/resources/event) in Outlook and allow attendees to join the meeting online using a supported provider. You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting. 
 

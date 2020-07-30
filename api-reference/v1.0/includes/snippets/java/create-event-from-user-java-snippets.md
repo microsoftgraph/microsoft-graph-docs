@@ -13,7 +13,7 @@ Event event = new Event();
 event.subject = "Let's go for lunch";
 ItemBody body = new ItemBody();
 body.contentType = BodyType.HTML;
-body.content = "Does late morning work for you?";
+body.content = "Does noon work for you?";
 event.body = body;
 DateTimeTimeZone start = new DateTimeTimeZone();
 start.dateTime = "2017-04-15T12:00:00";
@@ -35,6 +35,7 @@ attendees.emailAddress = emailAddress;
 attendees.type = AttendeeType.REQUIRED;
 attendeesList.add(attendees);
 event.attendees = attendeesList;
+event.allowNewTimeProposals = true;
 
 graphClient.me().events()
 	.buildRequest( requestOptions )

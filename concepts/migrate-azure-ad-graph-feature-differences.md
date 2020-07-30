@@ -23,6 +23,7 @@ This article explores how Microsoft Graph handles:
 If your app uses Azure AD Graph directory schema extensions, you can continue to use the same basic APIs (with Microsoft Graph request URLs) to:
 
 - Manage extension property definitions using the **extensionProperties** property on the [application][/graph/api/resources/application?view=graph-rest-v1.0) resource.
+- Get available extension properties using the [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0) action.
 - Read extension values using GET and `$select`
 - Search on extension values using GET and `$filter`
 - Update extension values using PATCH

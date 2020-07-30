@@ -25,7 +25,7 @@ const profileCardProperties = {
   ]
 };
 
-let res = await client.api('/organization/settings/profileCardProperties')
+let res = await client.api('/organization/{organizationId}/settings/profileCardProperties')
 	.version('beta')
 	.post(profileCardProperties);
 

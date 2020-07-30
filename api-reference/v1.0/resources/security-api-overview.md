@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph Security API"
-description: "The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API can be used as a federated security aggregation service to submit queries to all onboarded security providers to get aggregated responses. Use Microsoft Graph Security API to build applications that:"
+description: "The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners."
 localization_priority: Priority
 author: "preetikr"
 ms.prod: "security"
@@ -43,6 +43,10 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 \*\* Microsoft Defender Advanced Threat Protection requires additional [user roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph Security API. Only the users in both Microsoft Defender Advanced Threat Protection and Microsoft Graph Security API roles can have access to the Microsoft Defender Advanced Threat Protection data. Because application-only authentication is not limited by this, we recommend that you use an application-only authentication token.
 
 \*\*\* Azure Advanced Threat Protection alerts are available via the Microsoft Cloud App Security integration. This means you will get Azure Advanced Threat Protection alerts only if you have joined the [Unified SecOps preview program](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850) and connected Azure Advanced Threat Protection into Microsoft Cloud App Security.
+
+## Information protection
+
+The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam emails, phishing URLs or malware attachments they receive to Microsoft. The policy check result and rescan result can help tenant administrators understand the threat scanning verdict and adjust their organizational policy.
 
 ## Secure Score
 

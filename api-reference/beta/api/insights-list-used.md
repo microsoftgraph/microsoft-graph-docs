@@ -35,12 +35,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 - Get a list of documents that the signed-in user has modified:
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /me/insights/used
   ```
 
 - Get a list of documents that the specified user has modified:
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
@@ -49,6 +51,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 - Expand the resource referenced by a **used** insight:
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /me/insights/used/{id}/resource
   GET /users/{id | userPrincipalName}/insights/used/{id}/resource
@@ -88,6 +91,24 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a list of [used](../resources/insights-used.md) items in the response body.
+
+If item insights of targeted user have been disabled, this method returns `403 Forbidden` and the following error:
+<!-- { "blockType": "ignored" } -->
+
+```
+{
+  "error": {
+    "code": "ItemInsightsDisabled",
+    "message": " The access to the requested resource is denied because item insights are disabled.",
+    "innerError": {
+      "requestId": "request-id",
+      "date": "date-time"
+    }
+  }
+}
+```
+For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md). 
+
 ## Example
 
 ### Example 1: Return documents that user has modified

@@ -15,9 +15,6 @@ MSGraphConversationMember *conversationMember = [[MSGraphConversationMember allo
 NSMutableArray *rolesList = [[NSMutableArray alloc] init];
 [rolesList addObject: @"owner"];
 [conversationMember setRoles:rolesList];
-[conversationMember setUserId:@"50dffbae-ad0f-428e-a86f-f53b0acfc641"];
-[conversationMember setDisplayName:@"Cameron White"];
-[conversationMember setEmail:@"CameronW@M365x987948.OnMicrosoft.com"];
 
 NSError *error;
 NSData *conversationMemberData = [conversationMember getSerializedDataWithError:&error];

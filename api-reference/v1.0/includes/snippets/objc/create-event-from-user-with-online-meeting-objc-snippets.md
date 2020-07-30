@@ -38,6 +38,7 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 [attendees setType: [MSGraphAttendeeType required]];
 [attendeesList addObject: attendees];
 [event setAttendees:attendeesList];
+[event setAllowNewTimeProposals: true];
 [event setIsOnlineMeeting: true];
 [event setOnlineMeetingProvider: [MSGraphOnlineMeetingProviderType teamsForBusiness]];
 

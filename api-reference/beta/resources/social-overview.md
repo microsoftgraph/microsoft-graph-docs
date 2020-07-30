@@ -49,6 +49,7 @@ Use the insights API to identify the most relevant documents for a user:
 - List documents [trending around](../api/insights-list-trending.md) a user
 - List documents [used by](../api/insights-list-used.md) a user
 - List documents [shared with or shared by](../api/insights-list-shared.md) a user
+- Explore ways to [customize privacy settings for item insights](/graph/insights-customize-item-insights-privacy.md) in an organization.
 
 ## Manage @-Mentions
 

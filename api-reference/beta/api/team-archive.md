@@ -53,7 +53,7 @@ In the request, you may _optionally_ include the `shouldSetSpoSiteReadOnlyForMem
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-This optional parameter defines whether to set permissions for team members to read-only on the Sharepoint Online site associated with the team. Setting it to false or omitting the body altogether will result in this step being skipped.
+This optional parameter defines whether to set permissions for team members to read-only on the SharePoint Online site associated with the team. Setting it to false or omitting the body altogether will result in this step being skipped.
 
 ## Response
 

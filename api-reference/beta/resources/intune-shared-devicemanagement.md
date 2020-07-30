@@ -129,14 +129,14 @@ The deviceManagement resource represents a container whose contents vary accordi
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) collection|The list of device remote action audits with the tenant.|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) collection|The collection property of MobileAppTroubleshootingEvent.|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/userExperienceAnalyticsOverview.md)|User experience analytics overview|
-|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/userExperienceAnalyticsBaseline.md) collection|User experience analytics baselines|
-|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/userExperienceAnalyticsCategory.md) collection|User experience analytics categories|
-|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/userExperienceAnalyticsDevicePerformance.md) collection|User experience analytics device performance|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/userExperienceAnalyticsRegressionSummary.md)|User experience analytics regression summary|
-|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/userExperienceAnalyticsDeviceStartupHistory.md) collection|User experience analytics device Startup History|
-|userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/userExperienceAnalyticsDeviceStartupProcess.md) collection|User experience analytics device Startup Processes|
-|userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/userExperienceAnalyticsDeviceStartupProcessPerformance.md) collection|User experience analytics device Startup Process Performance|
+|userExperienceAnalyticsOverview||User experience analytics overview|
+|userExperienceAnalyticsBaselines||User experience analytics baselines|
+|userExperienceAnalyticsCategories||User experience analytics categories|
+|userExperienceAnalyticsDevicePerformance||User experience analytics device performance|
+|userExperienceAnalyticsRegressionSummary||User experience analytics regression summary|
+|userExperienceAnalyticsDeviceStartupHistory||User experience analytics device Startup History|
+|userExperienceAnalyticsDeviceStartupProcesses||User experience analytics device Startup Processes|
+|userExperienceAnalyticsDeviceStartupProcessPerformance||User experience analytics device Startup Process Performance|
 |**Enrollment**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) collection|This collections of multiple DEP tokens per-tenant.|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|The imported device identities.|

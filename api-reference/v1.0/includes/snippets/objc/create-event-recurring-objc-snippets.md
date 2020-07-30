@@ -51,6 +51,7 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 [attendees setType: [MSGraphAttendeeType required]];
 [attendeesList addObject: attendees];
 [event setAttendees:attendeesList];
+[event setAllowNewTimeProposals: true];
 
 NSError *error;
 NSData *eventData = [event getSerializedDataWithError:&error];

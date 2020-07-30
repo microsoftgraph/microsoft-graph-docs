@@ -118,12 +118,12 @@ Delta query is currently supported for the following resources.
 | Mail folders                                                   | [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) function of the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resource                                              |
 | Messages in a folder                                           | [delta](/graph/api/message-delta?view=graph-rest-1.0) function of the [message](/graph/api/resources/message?view=graph-rest-1.0) resource                                                       |
 | Organizational contacts                                        | [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) function of the [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource                                              |
-| OAuth2PermissionGrants (preview)                               | [delta](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) function of the [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) resource (preview) |
+| OAuth2PermissionGrants                               | [delta](/graph/api/oauth2permissiongrant-delta) function of the [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) resource |
 | Personal contact folders                                       | [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) function of the [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) resource                                     |
 | Personal contacts in a folder                                  | [delta](/graph/api/contact-delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource                                                       |
 | Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta) function of the all segment of [plannerUser](/graph/api/resources/planneruser) resource (preview)                                                     |
 | Schools (preview)                                              | [delta](/graph/api/educationschool-delta) function of the [educationSchool](/graph/api/resources/educationschool) resource (preview)                                                             |
-| Service principals (preview)                                   | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource (preview)                                                          |
+| Service principals                                   | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource                                                          |
 | Users                                                          | [delta](/graph/api/user-delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource                                                                |
 
 
@@ -185,7 +185,7 @@ Delta queries are available for customers hosted on the public cloud and Microso
 
 ### Token duration
 
-Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 7 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 7 days.
+Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 7 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 7 days. For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
 
 ## Prerequisites
 

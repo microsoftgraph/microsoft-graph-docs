@@ -29,7 +29,7 @@ To receive lifecycle notifications, you can use the existing **notificationUrl**
 
 ## Creating a subscription
 
-When creating a subscription, you can specify a separate endpoint using the **lifecycleNotificationUrl** property. If you specify the endpoint, all current and future types of lifecycle notifications will be delivered there. Otherwise, `subscriptionRemoved` and `missed` lifecycle notifications will be delivered to the existing **notificationUrl** for all existing subscriptions.
+When creating a subscription, you must specify a separate notification endpoint using the **lifecycleNotificationUrl** property. If you specify the endpoint, all current and future types of lifecycle notifications will be delivered there. Otherwise, `subscriptionRemoved` and `missed` lifecycle notifications will not be delivered.
 
 > **Note:** The **lifecycleNotificationUrl** property can only be set or read using Microsoft Graph beta APIs. However, subscriptions created using beta APIs are stored in the same production environment as those created using v1.0, so you can implement the new Outlook flow in addition to your subscriptions creating using v1.0 APIs.
 
@@ -55,7 +55,7 @@ Content-Type: application/json
 > **Note:** You need to validate both endpoints as described in [Managing subscriptions](webhooks.md#managing-subscriptions).
 If you choose to use the same URL for both endpoints you will receive and respond to two validation requests.
 
-> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property. Existing subscriptions without **lifecycleNotificationUrl** property will receive the `subscriptionRemoved` and `missed` lifecycle notifications via the **notificationUrl**. 
+> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property. Existing subscriptions without **lifecycleNotificationUrl** property will not receive the `subscriptionRemoved` and `missed`.
 
 ## Responding to subscriptionRemoved notifications
 
@@ -67,7 +67,7 @@ You can create a long-lived subscription (3 days), and change notifications will
     
     There is no set cadence for these events. They might occur frequently for some resources, and almost never for others.
 
-2. Microsoft Graph sends a `subscriptionRemoved` lifecycle notification to the **lifecycleNotificationUrl** (if specified), or the **notificationUrl**.  
+2. Microsoft Graph sends a `subscriptionRemoved` lifecycle notification to the **lifecycleNotificationUrl** (if specified).  
 
 3. You can respond to this lifecycle notification by creating a new subscription for the same resource. To do this, you need to present a valid access token; in some cases this means the app needs to re-authenticate the user to obtain a new valid access token.
 

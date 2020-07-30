@@ -59,7 +59,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 -->
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Cloud communications | Microsoft Teams, Skype | Lets apps and services interact with users through various communications related features, for example, enabling bots to handle calls, integrating online meetings in line of business scenarios, showing users' presence status (preview), and looking up records for calls and online meetings (preview). |
+| Cloud communications | Microsoft Teams, Skype | Lets apps and services interact with users through various communications related features, for example, enabling bots to handle calls, integrating online meetings in line of business scenarios, showing users' presence status (preview), and looking up records for calls and online meetings (preview). | [Cloud communications overview](cloud-communications-concept-overview.md) |
 | Sites and lists  | SharePoint | Web-based platform for users and Microsoft 365 groups to share, organize, manage, and discover content (including lists, files, and notes). | [SharePoint sites and content overview](sharepoint-concept-overview.md) | 
 |Tasks and plans | Planner | Enables users in Microsoft 365 groups to create plans, assign tasks, and track progress. | [Planner plans and tasks overview](planner-concept-overview.md) |
 |Teamwork |  Microsoft Teams | Digital hub and chat-based workspace for teams to share files, notes, calendar, and plans. | [Microsoft Teams teamwork overview](teams-concept-overview.md) |

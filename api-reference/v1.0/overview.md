@@ -49,7 +49,7 @@ Find more information about [versioning and support](/graph/versioning-and-suppo
 
 Microsoft Graph API requests to the v1.0 endpoint use the following pattern:
 
-```
+```http
 https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
