@@ -43,7 +43,7 @@ The following shows an example request to the `/authorize` endpoint.
 
 With the Microsoft identity platform endpoint, permissions are requested using the `scope` parameter. In this example, the Microsoft Graph permissions requested are for _User.Read_ and _Mail.Read_, which will allow the app to read the profile and mail of the signed-in user. The _offline\_access_ permission is requested so that the app can get a refresh token, which it can use to get a new access token when the current one expires.
 
-```
+```http
 // Line breaks for legibility only
 
 https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
@@ -69,7 +69,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 ### Consent experience
 
-At this point, the user will be asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter.  If the user has not consented to any of those permissions and if an administrator has not previously consented on behalf of all users in the organization, they will be asked to consent to the required permissions.  
+At this point, the user will be asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter.  If the user has not consented to any of those permissions and if an administrator has not previously consented on behalf of all users in the organization, they will be asked to consent to the required permissions.
 
 The following is an example of the consent dialog box presented for a Microsoft account user.
 
@@ -83,7 +83,7 @@ The following is an example of the consent dialog box presented for a Microsoft 
 
 If the user consents to the permissions your app requested, the response will contain the authorization code in the `code` parameter. Here is an example of a successful response to the previous request. Because the `response_mode` parameter in the request was set to `query`, the response is returned in the query string of the redirect URL.
 
-```
+```http
 GET https://localhost/myapp/?
 code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d
 &state=12345
@@ -100,7 +100,7 @@ Your app uses the authorization `code` received in the previous step to request 
 
 ### Token request
 
-```
+```http
 // Line breaks for legibility only
 
 POST /{tenant}/oauth2/v2.0/token HTTP/1.1
@@ -127,9 +127,9 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 ### Token response
 
-Although the access token is opaque to your app, the response contains a list of the permissions that the access token is good for in the `scope` parameter. 
+Although the access token is opaque to your app, the response contains a list of the permissions that the access token is good for in the `scope` parameter.
 
-```
+```json
 {
     "token_type": "Bearer",
     "scope": "user.read%20Fmail.read",
@@ -147,15 +147,15 @@ Although the access token is opaque to your app, the response contains a list of
 | access_token |The requested access token. Your app can use this token to call Microsoft Graph. |
 | refresh_token |An OAuth 2.0 refresh token. Your app can use this token to acquire additional access tokens after the current access token expires.  Refresh tokens are long-lived, and can be used to retain access to resources for extended periods of time.  For more detail, refer to the [v2.0 token reference](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
 
-
-> **Note**: In order to get a refresh_token `offline_access` need to be defined as a scope.
+> [!NOTE]
+> A refresh token is only included in the response if the `offline_access` scope was included in the authorization request.
 
 ## 4. Use the access token to call Microsoft Graph
 
 After you have an access token, you can use it to call Microsoft Graph by including it in the `Authorization` header of a request. The following request gets the profile of the signed-in user.
 
-```
-GET https://graph.microsoft.com/v1.0/me 
+```http
+GET https://graph.microsoft.com/v1.0/me
 Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
 Host: graph.microsoft.com
 
@@ -163,7 +163,7 @@ Host: graph.microsoft.com
 
 A successful response will look similar to the following (some response headers have been removed).
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
 request-id: f45d08c0-6901-473a-90f5-7867287de97f
@@ -197,7 +197,7 @@ Access tokens are short lived, and you must refresh them after they expire to co
 
 ### Request
 
-```
+```http
 // Line breaks for legibility only
 
 POST /common/oauth2/v2.0/token HTTP/1.1
@@ -225,7 +225,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 A successful token response will look similar to the following.
 
-```
+```json
 {
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik5HVEZ2ZEstZnl0aEV1Q...",
     "token_type": "Bearer",
@@ -234,6 +234,7 @@ A successful token response will look similar to the following.
     "refresh_token": "AwABAAAAvPM1KaPlrEqdFSBzjqfTGAMxZGUTdM0t4B4...",
 }
 ```
+
 | Parameter | Description |
 | --- | --- |
 | access_token |The requested access token. The app can use this token in calls to Microsoft Graph. |
@@ -275,4 +276,3 @@ For more information about getting access to Microsoft Graph on behalf of a user
 
 - For information about using the Microsoft identity platform endpoint with different kinds of apps, see the **Get Started** links in the [Microsoft identity platform developer documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). The documentation contains links to overview topics, quickstarts, tutorials, code samples and protocol documentation for different kinds of apps supported by the Microsoft identity platform endpoint.
 - For information about the Microsoft Authentication Library (MSAL) and server middleware available for use with the Microsoft identity platform endpoint, see [Microsoft Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
-
