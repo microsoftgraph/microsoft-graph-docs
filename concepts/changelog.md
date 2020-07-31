@@ -21,6 +21,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the **proposedNewTime** optional parameter to the [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) and [decline](/graph/api/event-decline?view=graph-rest-1.0) methods of **event**. |
 | Addition | v1.0 | Added the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) entity that is based on [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0), and in addition, includes the **proposedNewTime** and **responseType** properties. |
 | Addition | v1.0 | Added the **proposedNewTime** property to the [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) complex type. |
+| Addition | v1.0 | Added the **tenantType** property to the [organization](/graph/api/resources/organization?view=graph-rest-1.0) entity type. |
 
 ### Change notifications
 

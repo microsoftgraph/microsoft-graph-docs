@@ -54,6 +54,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | state | String | State name of the address for the organization. |
 | street | String | Street name of the address for organization. |
 | technicalNotificationMails | String collection | Not nullable. |
+| tenantType | String | The type of the Organization. The value can be either AAD or AAD B2C. |
 | verifiedDomains | [VerifiedDomain](verifieddomain.md) collection | The collection of domains associated with this tenant. Not nullable. |
 
 ## Relationships
