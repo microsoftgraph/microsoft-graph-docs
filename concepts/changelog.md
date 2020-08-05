@@ -11,6 +11,13 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## August 2020
+### Change notifications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Update | beta |Added inbound flow for provisioning for the [synchronization API](/graph/api/resources/synchronization-overview).|
+
 ## July 2020
 
 ### Change notifications
