@@ -56,7 +56,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property   | Type                                  | Description               |
 |:-----------|:--------------------------------------|:--------------------------|
 | acl        | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content    | String                                | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
+| content    | [externalItemContent](../resources/externalitemcontent.md) | A plain-text or HTML representation of the contents of the item. The text in this property is full-text indexed. |
 | properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md). |
 
 ### Updating the acl collection
@@ -144,7 +144,10 @@ Content-type: application/json
     "priority": 1,
     "assignee": "john@contoso.com"
   },
-  "content": "Textual content of the file"
+  "content": {
+    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
+    "type": "html"
+  }
 }
 ```
 

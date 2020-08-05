@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers
+GET /identityProtection/riskyUsers
 ```
 ## Optional query parameters
 This method supports `$filter` to customize the query response. See the example later in this topic. 
@@ -89,7 +90,6 @@ Content-type: application/json
         {
             "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
             "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-            "isGuest": true,
             "isProcessing": true,
             "isDeleted": true,
             "riskDetail": "adminConfirmedSigninCompromised",
@@ -113,7 +113,7 @@ The following example shows how to use `$filter` to get the collection of riskyU
   "name": "list_filter_riskyusers"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
+GET https://graph.microsoft.com/beta/identityProtection/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskyusers-csharp-snippets.md)]
@@ -147,7 +147,6 @@ Content-type: application/json
         {
             "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
             "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
-            "isGuest": false,
             "isProcessing": true,
             "isDeleted": false,
             "riskDetail": "none",

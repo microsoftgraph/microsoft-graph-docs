@@ -1,7 +1,7 @@
 ---
 title: "event resource type"
 description: "An event in a calendar."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: resourcePageType
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An event in a [user](user.md) calendar, or the default calendar of an Office 365 [group](group.md).
+An event in a [user](user.md) calendar, or the default calendar of a Microsoft 365 [group](group.md).
 
-The maximum number of attendees included in an **event**, and the maximum number of reciepients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+The maximum number of attendees included in an **event**, and the maximum number of recipients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 This resource supports:
 
@@ -122,7 +122,7 @@ Here is a JSON representation of the resource
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|The location of the event.|
 |locations|[Location](location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
-|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Details for an attendee to join the meeting online. Default is null. Read-only. <br>After you set the **isOnlineMeeting** and **onlineMeetingProvider** properties to enable a meeting online, Microsoft Graph initializes **onlineMeeting**. Whe set, the meeting remains available online, and you cannot change the **isOnlineMeeting**, **onlineMeetingProvider**, and **onlneMeeting** properties again.|
+|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Details for an attendee to join the meeting online. Default is null. Read-only. <br>After you set the **isOnlineMeeting** and **onlineMeetingProvider** properties to enable a meeting online, Microsoft Graph initializes **onlineMeeting**. When set, the meeting remains available online, and you cannot change the **isOnlineMeeting**, **onlineMeetingProvider**, and **onlneMeeting** properties again.|
 |onlineMeetingProvider|onlineMeetingProviderType| Represents the online meeting service provider. By default, **onlineMeetingProvider** is `unknown`. The possible values are `unknown`, `teamsForBusiness`, `skypeForBusiness`, and `skypeForConsumer`. Optional. <br> After you set **onlineMeetingProvider**, Microsoft Graph initializes **onlineMeeting**. Subsequently you cannot change **onlineMeetingProvider** again, and the meeting remains available online. |
 |onlineMeetingUrl|String|A URL for an online meeting. The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype. Read-only.<br>To access the URL to join an online meeting, use **joinUrl** which is exposed via the **onlineMeeting** property of the **event**. The **onlineMeetingUrl** property will be deprecated in the future. |
 |organizer|[Recipient](recipient.md)|The organizer of the event.|
@@ -140,7 +140,7 @@ Here is a JSON representation of the resource
 |subject|String|The text of the event's subject line.|
 |transactionId|String|A custom identifier specified by a client app for the server to avoid redundant [POST](../api/calendar-post-events.md) operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set **transactionId** when creating an event, you cannot change **transactionId** in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.|
 |type|String|The event type. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only|
-|uid|String|A unique identifier for calendar events. For recurring events, the value is the same for the series master and all of its occurences including exceptions. This property will replace the current iCalUid property defined in the [event resource](/graph/api/resources/event?view=graph-rest-1.0), which is different for each instance in a series.|
+|uid|String|A unique identifier for calendar events. For recurring events, the value is the same for the series master and all of its occurrences including exceptions. This property will replace the current iCalUid property defined in the [event resource](/graph/api/resources/event?view=graph-rest-1.0), which is different for each instance in a series.|
 |webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL can be accessed from within an iFrame.|
 
 > [!NOTE]

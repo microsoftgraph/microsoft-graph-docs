@@ -1,13 +1,15 @@
 ---
 title: "Get windowsAutopilotDeploymentProfileAssignment"
 description: "Read properties and relationships of the windowsAutopilotDeploymentProfileAssignment object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windowsAutopilotDeploymentProfileAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,21 +63,22 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 326
+Content-Length: 497
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsAutopilotDeploymentProfileAssignment",
     "id": "de7e1e1e-1e1e-de7e-1e1e-7ede1e1e7ede",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+      "deviceAndAppManagementAssignmentFilterType": "include"
     },
     "source": "policySets",
     "sourceId": "Source Id value"
   }
 }
 ```
-
 
 
 

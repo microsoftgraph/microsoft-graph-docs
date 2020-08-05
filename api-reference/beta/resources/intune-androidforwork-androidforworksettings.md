@@ -1,13 +1,15 @@
 ---
 title: "androidForWorkSettings resource type"
 description: "Settings for Android For Work."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidForWorkSettings resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

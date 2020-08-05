@@ -2,7 +2,7 @@
 title: "Create publishedResource"
 description: "Create a new **publishedResource** object."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

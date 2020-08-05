@@ -28,7 +28,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.event"
+        "event"
       ],
       "query": {
         "query_string": {
@@ -44,7 +44,7 @@ Content-Type: application/json
 
 ## Known limitations
 
-You can only access user’s own calendar. Shared calendar and delegated access schenarios are not supported.
+You can only access user’s own calendar. Shared calendar and delegated access scenarios are not supported.
 
 ## Next steps
 

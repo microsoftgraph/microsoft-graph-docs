@@ -1,7 +1,7 @@
 ---
 title: "Force domain deletion"
 description: "Deletes a domain using an asynchronous long-running operation."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -78,7 +78,7 @@ If successful, this method returns `HTTP/1.1 204 OK` status code.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/domains/{id}/forceDelete
+POST https://graph.microsoft.com/v1.0/domains/{id}/forceDelete
 Content-type: application/json
 Content-length: 33
 
@@ -96,6 +96,10 @@ Content-length: 33
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create termsAndConditions"
 description: "Create a new termsAndConditions object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -101,6 +101,8 @@ Content-Length: 445
   "version": 7
 }
 ```
+
+
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Update a group setting"
 description: "Update the properties of a specific group setting object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 doc_type: apiPageType
 ---
 

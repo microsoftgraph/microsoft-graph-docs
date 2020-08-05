@@ -11,7 +11,7 @@ ms.prod: "microsoft-identity-platform"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.
 

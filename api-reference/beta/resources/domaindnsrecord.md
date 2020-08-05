@@ -1,8 +1,8 @@
 ---
 title: "domainDnsRecord resource type"
-description: "For each domain in the tenant, you may be required to add DNS record(s) to the DNS zone file of the domain before the domain can be used by Microsoft Online Services. The **DomainDnsRecord** entity is used to present such DNS records. Base entity for DomainDnsCnameRecord, DomainDnsMxRecord, DomainDnsSrvRecord and DomainDnsTxtRecord entities."
+description: "The DomainDnsRecord entity is used to present DNS records."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "signInFrequencySessionControl resource type"
 description: "Session control to enforce signin frequency."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to enforce sign-in frequency. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
+Session control to enforce sign-in frequency. Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## Properties
 

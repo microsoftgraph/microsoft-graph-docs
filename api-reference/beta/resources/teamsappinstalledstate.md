@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-#teamsAppInstalledState enum type
+# teamsAppInstalledState enum type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

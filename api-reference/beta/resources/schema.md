@@ -29,7 +29,7 @@ Describes the type of content and how to index each property in items in a Micro
 | Property   | Type                               | Description                |
 |:-----------|:-----------------------------------|:---------------------------|
 | baseType   | String                             | Must be set to `microsoft.graph.externalItem`. Required. |
-| properties | [property](property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 64. |
+| properties | [property](property.md) collection | The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128. |
 
 ## Relationships
 

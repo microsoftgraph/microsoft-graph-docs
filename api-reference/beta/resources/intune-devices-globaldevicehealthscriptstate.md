@@ -1,13 +1,15 @@
 ---
 title: "globalDeviceHealthScriptState enum type"
 description: "Indicates whether global device health scripts are enabled and are in which state"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # globalDeviceHealthScriptState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

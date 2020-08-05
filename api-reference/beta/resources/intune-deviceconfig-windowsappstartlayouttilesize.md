@@ -1,13 +1,15 @@
 ---
 title: "windowsAppStartLayoutTileSize enum type"
 description: "The tile size of Windows app in the start layout."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # windowsAppStartLayoutTileSize enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

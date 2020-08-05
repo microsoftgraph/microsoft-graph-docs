@@ -2,7 +2,7 @@
 title: "Get calendar"
 description: "Get the properties and relationships of a calendar object. The calendar can be one for a user, "
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -12,7 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the properties and relationships of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
-or the default calendar of an Office 365 [group](../resources/group.md).
+or the default calendar of a Microsoft 365 [group](../resources/group.md).
 
 There are two scenarios where an app can get another user's calendar:
 
@@ -63,7 +63,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [calendar](../resources/calendar.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example gets the signed-in user's default calendar.
 
 # [HTTP](#tab/http)
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 
 ---
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -113,6 +113,12 @@ Content-type: application/json
     "canShare":true,
     "canViewPrivateItems":true,
     "canEdit":true,
+    "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+    "defaultOnlineMeetingProvider": "teamsForBusiness",
+    "isTallyingResponses": true,
+    "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"

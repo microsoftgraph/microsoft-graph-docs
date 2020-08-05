@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 const team = {
   memberSettings: {
+    allowCreatePrivateChannels: true,
     allowCreateUpdateChannels: true
   },
   messagingSettings: {

@@ -1,13 +1,15 @@
 ---
 title: "edgeTelemetryMode enum type"
 description: "Type of browsing data sent to Microsoft 365 analytics"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # edgeTelemetryMode enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,13 +1,17 @@
 ---
 title: "Known issues with Microsoft Graph"
-description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
+description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
 localization_priority: Priority
 ---
 
 # Known issues with Microsoft Graph
 
-This article describes known issues with Microsoft Graph. For information about the latest updates, see the [Microsoft Graph changelog](changelog.md).
+This article describes known issues with Microsoft Graph. 
+
+To report a known issue, see the [Microsoft Graph support](https://developer.microsoft.com/graph/support) page.
+
+For information about the latest updates to the Microsoft Graph API, see the [Microsoft Graph changelog](changelog.md).
 
 ## Bookings
 
@@ -73,11 +77,24 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 * [Listing the user's calendars](/graph/api/user-list-calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
 * You can also [list the events](/graph/api/calendar-list-events?view=graph-rest-1.0) of an ICS-based calendar.
 
+### Attaching large files to events
+An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) succeeds only if the message or event is in the signed-in user's mailbox.
+
 ### onlineMeetingUrl property support for Microsoft Teams
 
 Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event?view=graph-rest-1.0) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
 The beta version offers a workaround, where you can use the **onlineMeetingProvider** property of an [event](/graph/api/resources/event?view=graph-rest-beta) to verify if the provider is Microsoft Teams. Through the **onlineMeeting** property of the **event**, you can access the **joinUrl**.
+
+## Change notifications
+
+### Additional notifications for users
+
+[Subscriptions](/graph/api/resources/subscription) to changes for **user** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on user creation and user soft deletion.
+
+### Additional notifications for groups
+
+[Subscriptions](/graph/api/resources/subscription) to changes for **group** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on group creation and group soft deletion.
 
 ## Cloud communications 
 
@@ -212,16 +229,17 @@ Examples of group features that support delegated and app-only permissions:
 * Getting and updating group properties pertaining to group administration or management
 * Group [directory settings](/graph/api/resources/directoryobject?view=graph-rest-1.0), type, and synchronization
 * Group owners and membership
+* Getting group conversations and threads
 
 Examples of group features that support only delegated permissions:
 
-* Group conversations, events, photo
+* Group events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
 
 ### Policy
 
-Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App.
+Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Microsoft 365 group policies that are configured through Outlook Web App.
 
 ### Setting the allowExternalSenders property
 
@@ -295,7 +313,7 @@ As JSON batching matures, these limitations will be removed.
 ## Mail (Outlook)
 
 ### Attaching large files to messages
-An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) succeeds only if the message is in the signed-in user's mailbox.
+An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) succeeds only if the message or event is in the signed-in user's mailbox.
 
 ### The comment parameter for creating a draft
 
@@ -309,12 +327,13 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 
 ## Teamwork (Microsoft Teams)
 
-### GET /teams and POST /teams are not supported
+### GET /teams is not supported
 
-See [list all teams](teams-list-all-teams.md) and 
-[list your teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0)
-to get a list of teams.
-See [create team](/graph/api/team-put-teams?view=graph-rest-1.0) for creating teams.
+To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
+[list your teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
+
+### POST /teams is only available in beta
+To create teams in v1.0, see [create team](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### Missing teams in list all teams
 
@@ -329,20 +348,20 @@ In the future, we will set **resourceProvisioningOptions** on existing teams tha
 
 ### No instant access after creation
 
-Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response.
+Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response.
 
 ### Photo restrictions
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.
 Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
-	{
-	  "error": {
-	    "code": "ErrorNonExistentMailbox",
-	    "message": "The SMTP address has no mailbox associated with it."
-	  }
-	}
+{
+  "error": {
+    "code": "ErrorNonExistentMailbox",
+    "message": "The SMTP address has no mailbox associated with it."
+  }
+}
 ```
 
 ### Using delta query

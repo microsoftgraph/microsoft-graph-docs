@@ -1,13 +1,15 @@
 ---
 title: "localizedNotificationMessage resource type"
 description: "The text content of a Notification Message Template for the specified locale."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # localizedNotificationMessage resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

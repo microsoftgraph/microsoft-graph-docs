@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph API to work with Microsoft Teams"
-description: "Microsoft Teams is a chat-based workspace in Office 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more."
+description: "Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more."
 localization_priority: Priority
 author: "nkramer"
 ms.prod: "microsoft-teams"
@@ -11,25 +11,25 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Teams is a chat-based workspace in Office 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more.
+Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more.
 
 ## Key resources in Microsoft Teams
 
 | Resource | Methods |
 |:---------------|:--------|
-|[team](../resources/team.md)| [List your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](/graph/api/group-delete?view=graph-rest-1.0), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [remove owner](../api/group-delete-owners.md), [get files](drive.md), [get notebook](/graph/api/resources/notebook?view=graph-rest-1.0), [get plans](plannergroup.md), [get calendar](event.md) |
+|[team](../resources/team.md)| [List your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](../api/group-delete.md), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
+|[group](../resources/group.md)| [Add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [remove owner](../api/group-delete-owners.md), [get files](drive.md), [get notebook](../resources/notebook.md), [get plans](plannergroup.md), [get calendar](event.md) |
 |[channel](../resources/channel.md)|[List](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [update](../api/channel-patch.md), [delete](../api/channel-delete.md)|
 |[teamsTab](../resources/teamstab.md) |[List](../api/teamstab-list.md), [create](../api/teamstab-add.md), [read](../api/teamstab-get.md), [update](../api/teamstab-update.md), [delete](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[List](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
-|[chatMessage](../resources/chatmessage.md) (preview)| [List](../api/channel-list-messages.md), [send](../api/channel-post-messages.md), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
-|[call](/graph/api/resources/communications-api-overview.md) (preview) | [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
-|[schedule](/graph/api/resources/schedule?view=graph-rest-beta) (preview)| [Create or replace](/graph/api/team-put-schedule?view=graph-rest-beta), [get](/graph/api/schedule-get?view=graph-rest-beta), [share](/graph/api/schedule-share?view=graph-rest-beta) |
-|[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [List](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [Get](/graph/api/schedulinggroup-get?view=graph-rest-beta), [Replace](/graph/api/schedulinggroup-put?view=graph-rest-beta), [Delete](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
-|[shift](/graph/api/resources/shift?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-shifts?view=graph-rest-beta), [List](/graph/api/schedule-list-shifts?view=graph-rest-beta), [Get](/graph/api/shift-get?view=graph-rest-beta), [Replace](/graph/api/shift-put?view=graph-rest-beta), [Delete](/graph/api/shift-delete?view=graph-rest-beta) |
-|[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-timesoff?view=graph-rest-beta), [List](/graph/api/schedule-list-timesoff?view=graph-rest-beta), [Get](/graph/api/timeoff-get?view=graph-rest-beta), [Replace](/graph/api/timeoff-put?view=graph-rest-beta), [Delete](/graph/api/timeoff-delete?view=graph-rest-beta) |
-|[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta), [List](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta), [Get](/graph/api/timeoffreason-get?view=graph-rest-beta), [Replace](/graph/api/timeoffreason-put?view=graph-rest-beta), [Delete](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
+|[chatMessage](../resources/chatmessage.md)| [List](../api/channel-list-messages.md), [send](../api/channel-post-messages.md), [read](../api/channel-get-message.md) |
+| [call](../resources/call.md)| [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [update metadata](../api/call-updatemetadata.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md), [mute all participants](../api/participant-muteall.md) |
+|[schedule](../resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
+|[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
+|[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
+|[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
+|[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
 
 ## Microsoft Teams limits
 
@@ -47,7 +47,7 @@ See also [throttling limits for Microsoft Teams services](/graph/throttling).
 
 ## Teams and groups
 
-In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Office 365 groups address the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and Office 365 groups, such as group calendar, files, notes, photo, plans, and so on. The main difference between a [team](team.md) and an Office 365 group is the mode of communication between members. Team members communicate by persistent chat in the context of a specific team. Office 365 group members communicate by group conversations, which are email conversations that occur in the context of a group in Outlook.
+In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Microsoft 365 groups address the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and Microsoft 365 groups, such as group calendar, files, notes, photo, plans, and so on. The main difference between a [team](team.md) and a Microsoft 365 group is the mode of communication between members. Team members communicate by persistent chat in the context of a specific team. Microsoft 365 group members communicate by group conversations, which are email conversations that occur in the context of a group in Outlook.
 
 Any group that has a team has a **resourceProvisioningOptions** property that contains "Team".
 
@@ -58,7 +58,7 @@ otherwise, you'll get incorrect results when you list all teams.
 The following are the differences at the API level between teams and groups:
 
 - Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the [channel](../resources/channel.md) and [chatMessage](../resources/chatmessage.md) resources.
-- Group conversations are available only to Office 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources.
+- Group conversations are available only to Microsoft 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources.
 - The [List joined teams](../api/user-list-joinedteams.md) method applies only to Microsoft Teams.
 - [Calling and online meeting APIs](./communications-api-overview.md) apply only to Microsoft Teams.
 - See also the [known issues](/graph/known-issues) for these APIs.
@@ -112,7 +112,7 @@ If your app polls to see whether a resource has changed, you can only do that on
 If you need to hear about changes more frequently than that, you should [create a subscription](../api/subscription-post-subscriptions.md) to that resource and receive change notifications (webhooks). 
 If you don't find support for the type of subscription you need, we encourage you to provide feedback via [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
 
-When polling for new messages, you must specify a date range where supported. For details, see [get channel messages delta](/graph/api/chatmessage-delta?view=graph-rest-beta).
+When polling for new messages, you must specify a date range where supported. For details, see [get channel messages delta](../api/chatmessage-delta.md).
 
 Polling is doing a GET operation on a resource over and over again to see if that resource has changed. 
 You're allowed to GET the same resource multiple times a day, as long as it's not polling. 
@@ -123,6 +123,10 @@ Apps that don't follow these polling requirements will be considered in violatio
 [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
 or the suspension or termination of your use of the Microsoft APIs.
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 ## See also
 
-[Microsoft Teams API overview](/graph/teams-concept-overview)
+- [Microsoft Teams API overview](/graph/teams-concept-overview)
+- Sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)

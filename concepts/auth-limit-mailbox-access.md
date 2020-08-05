@@ -43,6 +43,8 @@ Note: Changes to application access policies can take up to 30 minutes to take e
 ## Supported permissions and additional resources
 Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that has been granted any of the following application permissions: 
 - Mail.Read
+- Mail.ReadBasic
+- Mail.ReadBasic.All
 - Mail.ReadWrite
 - Mail.Send
 - MailboxSettings.Read	

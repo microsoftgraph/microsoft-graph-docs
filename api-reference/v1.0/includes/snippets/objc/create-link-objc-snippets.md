@@ -16,6 +16,9 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 NSString *type = @"view";
 payloadDictionary[@"type"] = type;
 
+NSString *password = @"ThisIsMyPrivatePassword";
+payloadDictionary[@"password"] = password;
+
 NSString *scope = @"anonymous";
 payloadDictionary[@"scope"] = scope;
 

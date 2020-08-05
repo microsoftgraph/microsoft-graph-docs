@@ -2,7 +2,7 @@
 title: "Update bookingstaffmember"
 description: "Update the properties of a bookingStaffMember in the specified bookingbusiness."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
@@ -38,10 +38,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|True means that if the staff member is an Office 365 user, the Bookings API uses the staff member's personal calendar in Office 365 as well as the **workingHours** property to determine availability. |
+|availabilityIsAffectedByPersonalCalendar|Boolean|True means that if the staff member is a Microsoft 365 user, the Bookings API uses the staff member's personal calendar in Microsoft 365 as well as the **workingHours** property to determine availability. |
 |colorIndex|Int32|Identifies a color to represent the staff member. The color corresponds to the color palette in the **Staff details** page in the Bookings app.|
 |displayName|String|The name of the staff member, as displayed to customers.|
-|emailAddress|String|The email address of the staff member. This can be in the same Office 365 tenant as the business, or in a different email domain. This email address is used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business.|
+|emailAddress|String|The email address of the staff member. This can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address is used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business.|
 |role|string| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`.|
 |useBusinessHours|Boolean|True means the staff member's availability is determined by the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHouse** property setting.|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|

@@ -13,7 +13,6 @@ const client = Client.init(options);
 const educationSchool = {
   displayName: "Fabrikam High School",
   description: "Magnate school for the arts. Los Angeles School District",
-  status: "String",
   externalSource: "String",
   principalEmail: "AmyR@fabrikam.com",
   principalName: "Amy Roebuck",

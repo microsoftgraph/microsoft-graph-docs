@@ -2,7 +2,7 @@
 title: "Update unifiedRoleDefinition"
 description: "Update the properties of a unifiedRoleDefinition object."
 localization_priority: Normal
-author: "davidmu1"
+author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory |
+| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory |
+| Application                            | RoleManagement.ReadWrite.Directory |
 
 ## HTTP request
 
@@ -50,7 +50,7 @@ In the request body, supply the values for relevant fields that should be update
 |id|String| The unique identifier for the role definition. Key, not nullable, Read-only. |
 |isBuiltIn|Boolean| Flag indicating if the role definition is part of the default set included with the product or custom. Read-only. |
 |isEnabled|Boolean| Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true. |
-|resourceScopes|String collection| List of scopes permissions granted by the role definition apply to. Currently only "/" is supported. Read-only when isBuiltIn is true. |
+|resourceScopes|String collection| List of scopes permissions granted by the role definition apply to. Currently only "/" is supported. Read-only when isBuiltIn is true. **DO NOT USE. This property will be deprecated soon. Attach scope to role assignment.**|
 |rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| List of permissions included in the role. Read-only when isBuiltIn is true. Required. |
 |templateId|String| Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true. |
 |version|String| Indicates version of the role definition. Read-only when isBuiltIn is true.|
@@ -64,6 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [unif
 ### Request
 
 The following is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +108,6 @@ Content-type: application/json
 ### Response
 
 The following is an example of the response.
-
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {

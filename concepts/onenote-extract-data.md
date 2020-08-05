@@ -1,6 +1,6 @@
 ---
 title: "Use OneNote API div tags to extract data from captures "
-description: " Enterprise notebooks on Office 365"
+description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
@@ -8,7 +8,7 @@ ms.prod: "onenote"
 
 # Use OneNote API div tags to extract data from captures 
 
-**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
+**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
 Use the OneNote API to extract business card data from an image, or recipe and product data from a URL.
 

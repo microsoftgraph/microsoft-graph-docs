@@ -2,7 +2,7 @@
 title: "bookingAppointment: cancel"
 description: "Cancel the specified bookingAppointment in the specified bookingbusiness, and send a message to the involved customer and staff members."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---

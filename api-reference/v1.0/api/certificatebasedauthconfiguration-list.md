@@ -2,7 +2,7 @@
 title: "List certificateBasedAuthConfigurations"
 description: "Get a list of certificatebasedauthconfiguration objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

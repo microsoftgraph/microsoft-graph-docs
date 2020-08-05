@@ -43,7 +43,7 @@ where files are shared, and where tabs are added.
 |description|String|Optional textual description for the channel.|
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
 |id|String|The channel's unique identifier. Read-only.|
-|isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Default: `false`.|
+|isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and cannot be changed. Default: standard.|
@@ -52,10 +52,10 @@ where files are shared, and where tabs are added.
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable. Currently this API only supports reading but will eventually support writing messages too.|
+|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
-|filesFolder|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
+|[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
 
 ## JSON representation
 

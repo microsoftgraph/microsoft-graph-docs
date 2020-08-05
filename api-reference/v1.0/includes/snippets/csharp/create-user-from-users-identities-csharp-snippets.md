@@ -32,7 +32,8 @@ var user = new User
 	},
 	PasswordProfile = new PasswordProfile
 	{
-		Password = "password-value"
+		Password = "password-value",
+		ForceChangePasswordNextSignIn = false
 	},
 	PasswordPolicies = "DisablePasswordExpiration"
 };

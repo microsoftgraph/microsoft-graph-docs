@@ -100,8 +100,8 @@ properties:
 
 | Property name  | Value                  | Description\                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **code**       | string                 | An error code string for the error that occured                                                            |
-| **message**    | string                 | A developer ready message about the error that occured. This should not be displayed to the user directly. |
+| **code**       | string                 | An error code string for the error that occurred                                                            |
+| **message**    | string                 | A developer ready message about the error that occurred. This should not be displayed to the user directly. |
 | **innererror** | error object           | Optional. Additional error objects that may be more specific than the top level error.                     |
 
 <!--<a name="msg_code_property"> </a> -->
@@ -126,6 +126,7 @@ prepared to handle any one of these errors.
 | **resourceModified**      | The resource being updated has changed since the caller last read it, usually an eTag mismatch.
 | **resyncRequired**        | The delta token is no longer valid, and the app must reset the sync state.
 | **serviceNotAvailable**   | The service is not available. Try the request again after a delay. There may be a Retry-After header. 
+| **syncStateNotFound**     | The sync state generation is not found. The delta token is expired and data must be synchronized again. 
 | **quotaLimitReached**     | The user has reached their quota limit.
 | **unauthenticated**       | The caller is not authenticated.
 

@@ -3,8 +3,8 @@ title: "Delete programControl"
 description: "In the Azure AD access reviews feature, delete a programControl object.  This unlinks an access review from a program."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "markwahl-msft"
 ---
 
 # Delete programControl

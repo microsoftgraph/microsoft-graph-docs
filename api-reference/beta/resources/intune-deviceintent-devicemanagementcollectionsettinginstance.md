@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementCollectionSettingInstance resource type"
 description: "A setting instance representing a collection of values"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementCollectionSettingInstance resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

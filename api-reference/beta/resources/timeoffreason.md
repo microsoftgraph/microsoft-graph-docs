@@ -4,7 +4,7 @@ description: "A valid reason to take time-off in the schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
-doc_type: resourcePageType_
+doc_type: resourcePageType
 ---
 
 # timeOffReason resource type

@@ -1,6 +1,6 @@
 ---
 title: "Get educationalActivity"
-description: "Retrieve the properties and relationships of an educationalactivity object."
+description: "Retrieve the properties and relationships of an educationalActivity object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -47,9 +47,9 @@ This method supports the following OData query parameters to help customize the 
 
 ## Request headers
 
-| Name           |Description                  |
+|Name            |Description                  |
 |:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
+|Authorization   |Bearer {token}. Required.    |
 
 ## Request body
 
@@ -66,6 +66,7 @@ If successful, this method returns a `200 OK` response code and the requested [e
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationalactivity"
@@ -87,7 +88,6 @@ GET https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

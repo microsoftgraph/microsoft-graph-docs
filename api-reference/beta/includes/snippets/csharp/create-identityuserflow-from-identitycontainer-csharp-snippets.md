@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var identityUserFlow = new IdentityUserFlow
 {
 	UserFlowType = UserFlowType.SignUpOrSignIn,
-	UserFlowTypeVersion = 1
+	UserFlowTypeVersion = 1f
 };
 
 await graphClient.Identity.UserFlows

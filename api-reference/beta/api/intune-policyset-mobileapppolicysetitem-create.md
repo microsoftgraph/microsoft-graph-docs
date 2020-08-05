@@ -1,13 +1,15 @@
 ---
 title: "Create mobileAppPolicySetItem"
 description: "Create a new mobileAppPolicySetItem object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create mobileAppPolicySetItem
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -70,7 +72,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items
 Content-type: application/json
-Content-length: 418
+Content-length: 514
 
 {
   "@odata.type": "#microsoft.graph.mobileAppPolicySetItem",
@@ -84,7 +86,9 @@ Content-length: 418
   ],
   "intent": "required",
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "Vpn Configuration Id value",
+    "uninstallOnDeviceRemoval": true
   }
 }
 ```
@@ -94,7 +98,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 590
+Content-Length: 686
 
 {
   "@odata.type": "#microsoft.graph.mobileAppPolicySetItem",
@@ -111,11 +115,12 @@ Content-Length: 590
   ],
   "intent": "required",
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "Vpn Configuration Id value",
+    "uninstallOnDeviceRemoval": true
   }
 }
 ```
-
 
 
 

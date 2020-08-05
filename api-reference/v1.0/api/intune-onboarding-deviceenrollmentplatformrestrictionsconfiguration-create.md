@@ -1,7 +1,7 @@
 ---
 title: "Create deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Create a new deviceEnrollmentPlatformRestrictionsConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -170,6 +170,8 @@ Content-Length: 1822
   }
 }
 ```
+
+
 
 
 

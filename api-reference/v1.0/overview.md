@@ -31,11 +31,11 @@ A number of these services are designed to enable rich scenarios around a [user]
 8. Get the latest sales projection from a [chart](./resources/chart.md) in an Excel file in Lisa's OneDrive for Business.
 9. [Find the tasks assigned to Lisa in Planner](./api/planneruser-list-tasks.md).
 
-### Office 365 group use cases in v1.0
+### Microsoft 365 group use cases in v1.0
 
-1. Run a report on Office 365 groups in an organization and identify the group with the most [communication among group members](./api/reportroot-getoffice365groupsactivitycounts.md).
-2. [Find the plans of this Office 365 group](./api/plannergroup-list-plans.md), and the [assignment of tasks](./resources/plannerassignments.md) in that plan.
-3. [Start a new conversation](./api/group-post-conversations.md) in the Office 365 group to determine if members want to [create another group](./api/group-post-groups.md) to share the workload.
+1. Run a report on Microsoft 365 groups in an organization and identify the group with the most [communication among group members](./api/reportroot-getoffice365groupsactivitycounts.md).
+2. [Find the plans of this Microsoft 365 group](./api/plannergroup-list-plans.md), and the [assignment of tasks](./resources/plannerassignments.md) in that plan.
+3. [Start a new conversation](./api/group-post-conversations.md) in the Microsoft 365 group to determine if members want to [create another group](./api/group-post-groups.md) to share the workload.
 4. [Get the default notebook](./api/notebook-get.md) for the group and [create a page](./api/section-post-pages.md) to note the outcome of the investigation.
 
 ## Other API versions
@@ -49,11 +49,14 @@ Find more information about [versioning and support](/graph/versioning-and-suppo
 
 Microsoft Graph API requests to the v1.0 endpoint use the following pattern:
 
-```
+```http
 https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) in the v1.0 endpoint.
 
 ## Connect with us
 

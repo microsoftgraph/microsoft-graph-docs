@@ -1,13 +1,15 @@
 ---
-title: "coManagementEligibleType enum type"
+title: "comanagementEligibleType enum type"
 description: "Not yet documented"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
-# coManagementEligibleType enum type
+# comanagementEligibleType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -18,10 +20,11 @@ Not yet documented
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|coManaged|1|Not yet documented|
+|comanaged|1|Not yet documented|
 |eligible|2|Not yet documented|
-|eligibleButNotAadJoined|3|Not yet documented|
-|needsOSUpdate|4|Not yet documented|
+|eligibleButNotAzureAdJoined|3|Not yet documented|
+|needsOsUpdate|4|Not yet documented|
+|ineligible|5|Not yet documented|
 
 
 

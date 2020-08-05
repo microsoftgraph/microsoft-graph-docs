@@ -1,9 +1,9 @@
 ---
 title: "List joinedTeams"
 description: "Get the teams in Microsoft Teams that the user is a direct member of."
-author: "dkershaw10"
+author: "nkramer"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read.All, User.ReadWrite.All    |
+|Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, User.ReadWrite.All |
+|Application | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > Currently, with user delegated permissions this operation only works for the 'me' user. 
 > With application permissions, it works for all users by specifying  the specific user  id. 

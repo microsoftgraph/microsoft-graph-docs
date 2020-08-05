@@ -3,7 +3,7 @@ title: "attributeMapping resource type"
 description: "Defines how values for the given target attribute should flow during synchronization."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

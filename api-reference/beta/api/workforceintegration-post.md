@@ -50,9 +50,11 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ## Examples
 
-### Request
+### Example 1: Create a new workforceIntegration object.
 
-The following is an example of the request.
+#### Request
+
+The following is an example of a request to create a new **workforceIntegration** object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +93,7 @@ Content-type: application/json
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -119,6 +121,97 @@ Content-type: application/json
   "supports": "supports-value"
 }
 ```
+
+### Example 2: Create a new workforceIntegration with SwapRequest enabled for eligibility filtering
+
+The following is an example of a request with SwapRequest enabled for eligibility filtering. 
+
+#### Request
+
+```
+POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
+Authorization: Bearer {token}
+Content-type: application/json
+
+{
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": "My Secret"
+  },
+  "url": "https://ABCWorkforceIntegration.com/Contoso/",
+  "supports": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
+}
+
+```
+#### Response
+
+The following is an example of the response.
+```
+HTTP/1.1 200 OK
+{
+  "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": null
+  },
+  "url": "https://abcWorkforceIntegration.com/Contoso/",
+  "supports": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
+}
+
+```
+To update an existing **workforceIntegration** object with SwapRequest enabled for eligibility filtering, see the [Update](../api/workforceintegration-update.md) method.
+
+### Example 3: Fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
+
+The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
+
+### Request
+
+The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+
+```
+POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
+Accept-Language: en-us
+
+{
+  "requests": [
+  {
+     "id": "{shiftId}",
+     "method": "GET”,
+     "url": “/shifts/{shiftId}/requestableShifts?requestType={requestType}&startDateTime={startDateTime}&endDateTime={endDateTime}”
+   }]
+}
+```
+### Response
+
+The following is an example of the response from the workforce integration service.
+```
+HTTP/1.1 200 OK
+{
+  "responses": [
+  {
+    "body": {
+      "SHFT_6548f642-cbc1-4228-8621-054327576457",
+      "SHFT_6548f642-cbc1-4228-8621-054327571234"
+  }
+    "id": "{shiftId}",
+    "status: 200,
+    "body": {
+       "data": [{ShiftId}, {ShiftId}...]
+       "error": null
+    }
+  ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

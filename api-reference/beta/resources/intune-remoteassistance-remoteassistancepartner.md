@@ -1,13 +1,15 @@
 ---
 title: "remoteAssistancePartner resource type"
 description: "RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # remoteAssistancePartner resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -3,8 +3,8 @@ title: "List impossibleTravelRiskEvents"
 description: "Retrieve a list of impossibletravelriskevent objects."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "cloudhandler"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List impossibleTravelRiskEvents

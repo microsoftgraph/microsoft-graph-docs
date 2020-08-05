@@ -2,7 +2,7 @@
 title: "outlookGeoCoordinates resource type"
 description: "The geographic coordinates, elevation, and their degree of accuracy for a physical location."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

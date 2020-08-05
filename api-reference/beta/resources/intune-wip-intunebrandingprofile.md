@@ -1,13 +1,15 @@
 ---
 title: "intuneBrandingProfile resource type"
 description: "This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # intuneBrandingProfile resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

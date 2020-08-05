@@ -47,14 +47,24 @@ The following are examples of backward compatible changes:
 The following versions of the Microsoft Graph API are currently available.
 
 ### Beta version
-Exposed under `https://graph.microsoft.com/beta`, the Microsoft Graph API beta version contains features that are currently _**in preview**_. For beta API documentation, see [Microsoft Graph beta endpoint reference](/graph/api/overview?view=graph-rest-beta). Expect breaking changes to the beta version from time to time. Do not take a production dependency on /beta APIs.
+In general, APIs debut in the beta version and are accessible in the `https://graph.microsoft.com/beta` endpoint. For beta API documentation, see [Microsoft Graph beta endpoint reference](/graph/api/overview?view=graph-rest-beta). Expect breaking changes to the beta version from time to time. Do not take a production dependency on /beta APIs.
 
 We make no guarantees that a beta feature will be promoted to the current version. When the Microsoft Graph API team believes that a beta feature is ready for general availability (GA), we will add that feature to the latest current version. If the promotion of the feature would result in a breaking change to the current version, the version number will be incremented, with the new version becoming the current version.
 Our developer community can post feature request on [UserVoice](https://officespdev.uservoice.com/), including requests for new features as well as requests to promote existing beta APIs to the current version.
 
 ### Current version
 
-The current version of Microsoft Graph is v1.0. Exposed under `https://graph.microsoft.com/v1.0`, the Microsoft Graph API /v1.0 version contains features that are generally available and ready for production use. You can browse the documentation for the v1.0 APIs in the table of contents.
+The current version of Microsoft Graph is v1.0. Exposed under `https://graph.microsoft.com/v1.0`, the Microsoft Graph API /v1.0 version contains features that are generally available and ready for production use. Browse the [documentation for the v1.0 APIs](/graph/api/overview?view=graph-rest-1.0).
+
+## Preview status
+A feature or API is labelled as "(preview)" to indicate its behavior is _unique_ in the beta endpoint. 
+
+The behavior of most features and APIs in the v1.0 version is in parity with the beta version. "preview" qualifies a minority of features and APIs in one of the following two cases: 
+- Available in only beta
+- Available in beta differently than in v1
+
+Like any other API in the beta endpoint, APIs marked in the documentation as "(preview)" may experience breaking changes without notice. Do not access APIs from the beta endpoint in production apps.
+
 
 ### Deprecated and unsupported versions
 
@@ -64,4 +74,4 @@ There are currently no deprecated versions of Microsoft Graph.
 
 By using the Microsoft Graph APIs, you agree to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context).
 
-Your feedback is important to us. Connect with us on [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your questions with {MicrosoftGraph}.
+Your feedback is important to us. Connect with us on [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your questions with [microsoft-graph].

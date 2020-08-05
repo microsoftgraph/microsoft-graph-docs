@@ -22,8 +22,8 @@ the [userAgent](callrecords-useragent.md) type.
 |:-------------|:------------|:------------|
 |applicationVersion|String|Identifies the version of application software used by this endpoint.|
 |headerValue|String|User-agent header value reported by this endpoint.|
-|platform|String|Identifies the platform used by this endpoint. Possible values are: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
-|productFamily|String|Identifies the family of application software used by this endpoint. Possible values are: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
+|platform|microsoft.graph.callRecords.clientPlatform|Identifies the platform used by this endpoint. Possible values are: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
+|productFamily|microsoft.graph.callRecords.productFamily|Identifies the family of application software used by this endpoint. Possible values are: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
 
 ## JSON representation
 

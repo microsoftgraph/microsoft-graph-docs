@@ -26,6 +26,7 @@ The following example displays the signed-in user's Microsoft Planner tasks usin
 | data-source="todo/planner" | dataSource | An enumeration to configure the data source for tasks - either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
 | read-only | readOnly | A Boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`. |
 | hide-header | hideHeader | A Boolean to show or hide the header of the component. Default is `false`. |
+| hide-options | hideOptions | A Boolean to show or hide the options in tasks. Default is `false`.
 | initial-id="planner_id/folder_id" | initialId | A string ID to set the initially displayed planner or folder to the provided ID. |
 | initial-bucket-id="bucket_id" | initialBucketId | A string ID to set the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
 | target-id="planner_id/folder_id"| targetId | A string ID to lock the tasks interface to the provided planner or folder ID. |
@@ -97,6 +98,19 @@ mgt-tasks {
 --task-complete-header-color
 --task-complete-detail-color
 --task-complete-detail-icon-color
+
+--task-icon-background-completed
+--task-icon-background
+
+--task-icon-border-completed
+--task-icon-border
+
+--task-icon-color
+--task-icon-color-completed
+
+--task-icon-border-radius
+
+--task-icon-alignment: flex-start (default) | center | flex-end
 }
 ````
 

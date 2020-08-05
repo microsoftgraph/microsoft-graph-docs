@@ -1,13 +1,15 @@
 ---
 title: "Update macOSMicrosoftEdgeApp"
 description: "Update the properties of a macOSMicrosoftEdgeApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update macOSMicrosoftEdgeApp
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -145,7 +147,6 @@ Content-Length: 914
   "channel": "beta"
 }
 ```
-
 
 
 

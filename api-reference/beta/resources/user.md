@@ -1,9 +1,9 @@
 ---
 title: "user resource type"
 description: "Represents an Azure AD user account. Inherits from directoryObject."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: resourcePageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
+
+The **user** resource let apps specify user preferences for languages, and date/time formats for the user's primary Exchange mailboxes, and for the user's Azure AD profile. For more details, see [user preferences for languages and regional formats](#user-preferences-for-languages-and-regional-formats).
 
 For performance reasons, the [create](../api/user-post-users.md), [get](../api/user-get.md), and [list](../api/user-list.md) operations return only a subset of more commonly used properties by default. These default properties are noted in the [Properties](#properties) section. To get any of the properties that are not returned by default, specify them in a `$select` OData query option.
 
@@ -26,34 +28,38 @@ This resource supports:
 ## Methods
 
 | Method | Return Type | Description |
-|:-------|:------------|:------------|
+|:------ |:----------- |:----------- |
 | [List users](../api/user-list.md) | [user](user.md) collection | Get a list of user objects. |
 | [Create user](../api/user-post-users.md) | [user](user.md) | Create a new user object. |
 | [Get user](../api/user-get.md) | [user](user.md) | Read properties and relationships of user object. |
 | [Update user](../api/user-update.md) | [user](user.md) | Update user object. |
 | [Delete user](../api/user-delete.md) | None | Delete user object. |
 | [Get delta](../api/user-delta.md) | user collection | Get incremental changes for users. |
-| **Calendar** ||| 
-| [Create calendar](../api/user-post-calendars.md) | [Calendar](calendar.md) | Create a new Calendar by posting to the calendars collection.|
+| **App role assignments**|||
+| [List appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles which this user has been assigned. |
+| [Add appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this user. |
+| [Remove appRoleAssignment](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from this user. |
+| **Calendar** |||
+| [Create calendar](../api/user-post-calendars.md) | [Calendar](calendar.md) | Create a new Calendar by posting to the calendars collection. |
 | [Create calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Create a new CalendarGroup by posting to the calendarGroups collection. |
 | [Create event](../api/user-post-events.md) | [event](event.md) | Create a new event by posting to the events collection. |
 | [findMeetingTimes](../api/user-findmeetingtimes.md) | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) | Find time and locations to meet based on attendee availability, location, or time constraints. |
 | [findRooms](../api/user-findrooms.md) | [emailaddress.md](emailaddress.md) collection | Get all the meeting rooms in the user's tenant or in a specific room list. |
-| [findRoomLists](../api/user-findroomlists.md) | [emailaddress.md](emailaddress.md) collection | Get the room lists defined in a tenant.|
+| [findRoomLists](../api/user-findroomlists.md) | [emailaddress.md](emailaddress.md) collection | Get the room lists defined in a tenant. |
 | [getSchedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period. |
 | [List calendars](../api/user-list-calendars.md) | [Calendar](calendar.md) collection | Get a Calendar object collection. |
 | [List calendarGroups](../api/user-list-calendargroups.md) | [CalendarGroup](calendargroup.md) collection | Get a CalendarGroup object collection. |
 | [List calendarView](../api/user-list-calendarview.md) | [event](event.md) collection | Get an event object collection. |
 | [List events](../api/user-list-events.md) | [event](event.md) collection | Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters. |
-| [reminderView](../api/user-reminderview.md) | [Reminder](reminder.md) collection | Return a list of calendar reminders within the start and end times specified. |
-| **Contacts** |||
-| [Create contact](../api/user-post-contacts.md) | [contact](contact.md) | Create a new contact by posting to the contacts collection. |
+| [reminderView](../api/user-reminderview.md) | [Reminder](reminder.md) collection | Return a list of calendar reminders within the start and end times specified.|
+| **Contacts**|||
+| [Create contact](../api/user-post-contacts.md)| [contact](contact.md) | Create a new contact by posting to the contacts collection. |
 | [Create contactFolder](../api/user-post-contactfolders.md) | [contactFolder](contactfolder.md) | Create a new contactFolder by posting to the contactFolders collection. |
 | [List contacts](../api/user-list-contacts.md) | [contact](contact.md) collection | Get a contact collection from the default contacts folder of the signed-in user. |
 | [List contactFolders](../api/user-list-contactfolders.md) | [contactFolder](contactfolder.md) collection | Get the contact folder collection in the default contacts folder of the signed-in user. |
-| **Directory objects** |||
+| **Directory objects**|||
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription. |
-| [checkMemberGroups](../api/user-checkmembergroups.md) | String collection|Check for membership in a list of groups. The check is transitive. |
+| [checkMemberGroups](../api/user-checkmembergroups.md) | String collection | Check for membership in a list of groups. The check is transitive. |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. The check is transitive. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request, made by a company administrator to export an organizational user's data. |
 | [getByIds](../api/directoryobject-getbyids.md) | String collection | Returns the directory objects specified in a list of ids. |
@@ -73,26 +79,26 @@ This resource supports:
 | **Groups** |||
 | [List joinedTeams](../api/user-list-joinedteams.md) | [team](team.md) collection | Get the Microsoft Teams teams that the user is a direct member of from the joinedTeams navigation property. |
 | [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a direct member of from the memberOf navigation property. |
-| [List transitive memberOf](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups, directory roles, and administrative units that the user is a member of. This operation is transitive and includes the groups that the user is a nested member of. |
+| [List transitive memberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups, directory roles, and administrative units that the user is a member of. This operation is transitive and includes the groups that the user is a nested member of. |
 | **Insights** |||
 | [List shared](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Calculated insight that returns the list of files shared with a user. |
 | [List trending](../api/insights-list-trending.md) | [trending](insights-trending.md) collection | Calculated insight that returns the list of items trending around the user. |
 | [List used](../api/insights-list-used.md) | [usedInsight](insights-used.md) collection | Calculated insight that returns the list of files used with a user. |
 | **Mail** |||
-| [Create inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | Create a Focused Inbox override for a sender identified by an SMTP address. |
-| [Create mailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Create a new mailFolder by posting to the mailFolders collection. |
+| [Create inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | None | Create a Focused Inbox override for a sender identified by an SMTP address. |
+| [Create mailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Create a new mailFolder by posting to the mailFolders collection |
 | [Create message](../api/user-post-messages.md) | [message](message.md) | Create a message by posting to the messages collection. |
 | [Create messageRule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) | Create a messageRule object by specifying a set of conditions and actions. |
 | [getMailTips](../api/user-getmailtips.md) | [mailTips](mailtips.md) collection | Return the MailTips of one or more recipients as available to the signed-in user. |
 | [List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection | Get the mail folder collection under the root folder of the signed-in user. |
-| [List messages](../api/user-list-messages.md) | [message](message.md) collection| Get all the messages in the signed-in user's mailbox. |
+| [List messages](../api/user-list-messages.md) | [message](message.md) collection | Get all the messages in the signed-in user's mailbox. |
 | [List overrides](../api/inferenceclassification-list-overrides.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) collection | Get the Focused Inbox overrides that a user has set up to always classify messages from certain senders in specific ways. |
 | [List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection | Get all the messageRule objects defined for the user's inbox. |
 | [Send mail](../api/user-sendmail.md) | None | Send the message specified in the request body. |
 | **Notes** |||
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
 | [List notebooks](../api/onenote-list-notebooks.md) | [notebook](notebook.md) collection | Retrieve a list of notebook objects. |
-|**Open extensions**| | |
+| **Open extensions** |||
 | [Create open extension](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Create an open extension and add custom properties to a new or existing resource. |
 | [Get open extension](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) collection | Get an open extension identified by the extension name. |
 | **Org hierarchy** |||
@@ -104,7 +110,7 @@ This resource supports:
 | [Get supportedLanguages](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md) collection | Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server. |
 | [Get supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md collection) | Get the list of time zones that are supported for the user, as configured on the user's mailbox server. |
 | [Get user mailbox settings](../api/user-get-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Get the user's mailboxSettings. |
-| [List Outlook categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) collection | Get all the categories that have been defined for the user. |
+| [List Outlook categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) collection                                 | Get all the categories that have been defined for the user. |
 | [Translate Exchange Ids](../api/user-translateexchangeids.md) | [convertIdResult](convertidresult.md) collection | Translate identifiers of Outlook-related resources between formats. |
 | [Update user mailbox settings](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Enable, configure, or disable one or more user's mailboxSettings. |
 | **Outlook tasks** |||
@@ -119,18 +125,18 @@ This resource supports:
 | [Get plannerUser](../api/planneruser-get.md) | [plannerUser](planneruser.md) | Retrieve the properties and relationships of a plannerUser object. |
 | [List favoritePlans](../api/planneruser-list-favoriteplans.md) | [plannerPlan](plannerplan.md) collection | Retrieve a list of plannerPlans that are marked as favorite by a user. |
 | [List recentPlans](../api/planneruser-list-recentplans.md) | [plannerPlan](plannerplan.md) collection | Retrieve a list of plannerPlans recently viewed by a user. |
-| [List tasks](../api/planneruser-list-tasks.md) | [plannerTask](plannertask.md) collection | Get plannerTasks assigned to the user. |
+| [List tasks](../api/planneruser-list-tasks.md) | [plannerTask](plannertask.md) collection | Get plannerTasks assigned to the user.|
 | [Update plannerUser](../api/planneruser-update.md) | None | Update the properties of a plannerUser object. |
 | **Profile** |||
 | [Get profile](../api/profile-get.md) | [profile](profile.md) | Retrieve the properties and relationships of a profile object for a given user. |
 | [Delete profile](../api/profile-delete.md) | None | Delete profile object from a user's account. |
-| **Schema extensions** | | |
-| [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource.|
+| **Schema extensions** |||
+| [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource. |
 | **Teamwork** |||
 | [Install app for user](../api/user-add-teamsappinstallation.md) | None | Install an app in the personal scope of the specified user. |
 | [List apps installed for user](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | Retrieve the list of apps installed in the personal scope of the specified user. |
-| [Upgrade app](../api/user-upgrade-teamsappinstallation.md) | None | Upgrade an app installation in the personal scope of the specified user to the latest version of the app.
-| [Uninstall app for user](../api/user-delete-teamsappinstallation.md) | None | Uninstall an app from the personal scope of the specified user. |
+| [Upgrade app](../api/user-upgrade-teamsappinstallation.md) | None | Upgrade an app installation in the personal scope of the specified user to the latest version of the app. |
+| [Uninstall app for user](../api/user-delete-teamsappinstallation.md) | None  | Uninstall an app from the personal scope of the specified user. |
 | **User settings** |||
 | [Get settings](../api/usersettings-get.md) | [userSettings](usersettings.md) | Read the user and organization settings object. |
 | [Update settings](../api/usersettings-update.md) | [userSettings](usersettings.md) | Update the properties of the settings object. |
@@ -164,8 +170,9 @@ This resource supports:
 | id | String | The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). <br><br>Returned by default. Not nullable. Read-only.|
 | identities | [objectIdentity](objectIdentity.md) collection | Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same **signInType** value. <br><br>Returned only on $select. Supports $filter. |
 | imAddresses | String collection | The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
+| infoCatalogs | String collection | Identifies the info segments assigned to the user. Returned by default. |
 | interests | String collection | A list for the user to describe their interests. <br><br>Returned only on $select. |
-| isResourceAccount | Boolean | `true` if the user is a resource account; otherwise, `false`. Null value should be considered `false`. <br><br>Returned only on $select. |
+| isResourceAccount | Boolean | Do not use – reserved for future use. |
 | jobTitle | String | The user’s job title. <br><br>Returned by default. Supports $filter.|
 | lastPasswordChangeDateTime | DateTimeOffset | The time when this Azure AD user last changed their password. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` <br><br>Returned only on $select. |
 | legalAgeGroupClassification | String | Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.) <br><br>Returned only on $select. |
@@ -178,7 +185,7 @@ This resource supports:
 | officeLocation | String | The office location in the user's place of business. <br><br>Returned by default. |
 | onPremisesDistinguishedName | String | Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. <br><br>Returned only on $select. Read-only. |
 | onPremisesDomainName | String | Contains the on-premises `domainFQDN`, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. <br><br>Returned only on $select. Read-only. |
-| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, this set of properties is mastered on-premises and is read-only. For a cloud-only user (where `onPremisesSyncEnabled` is false), these properties may be set during creation or update. <br><br>Returned only on $select. |
+| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, the source of authority for this set of properties is the on-premises and is read-only and is read-only. For a cloud-only user (where `onPremisesSyncEnabled` is false), these properties may be set during creation or update. These extension attributes are also known as Exchange custom attributes 1-15. <br><br>Returned only on $select. |
 | onPremisesImmutableId | String | This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s `userPrincipalName` (UPN) property. **Important:** The **$** and **\_** characters cannot be used when specifying this property. <br><br>Returned only on $select. Supports $filter. |
 | onPremisesLastSyncDateTime | DateTimeOffset | Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned only on $select. Read-only. |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) collection | Errors when using Microsoft synchronization product during provisioning. <br><br>Returned only on $select. |
@@ -202,7 +209,7 @@ This resource supports:
 | showInAddressList | Boolean | `true` if the Outlook global address list should contain this user, otherwise `false`. If not set, this will be treated as `true`. For users invited through the invitation manager, this property will be set to `false`. <br><br>Returned only on $select.|
 | signInSessionsValidFromDateTime | DateTimeOffset | Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. <br><br>Returned only on $select. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 | skills | String collection | A list for the user to enumerate their skills. <br><br>Returned only on $select. |
-| signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user.<br><br>Supports $filter, but not with any other filterable properties. <br><br>Returned only on $select. Read-only. |
+| signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user.<br><br>Supports $filter, but not with any other filterable properties. <br><br>Returned only on $select. Read-only. <br>**Note:** Details for this property require an Azure AD Premium P1/P2 license.|
 | state | String | The state or province in the user's address. <br><br>Returned only on $select. Supports $filter. |
 | streetAddress | String | The street address of the user's place of business. <br><br>Returned only on $select.|
 | surname | String | The user's surname (family name or last name). <br><br>Returned by default. Supports $filter. |
@@ -269,7 +276,7 @@ The age group and minor consent properties are optional properties used by Azure
 |events|[event](event.md) collection|The user's events. Default is to show events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
-|insights|[officeGraphInsights](officegraphinsights.md) | Read-only. Nullable.|
+|insights|[itemInsights](iteminsights.md) | Read-only. Nullable.|
 |joinedGroups|[group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
@@ -288,6 +295,11 @@ The age group and minor consent properties are optional properties used by Azure
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
+
+### User preferences for languages and regional formats
+The **user** resource contains a [mailboxSettings](../resources/mailboxsettings.md) property which includes the user's preferred language, date and time formatting, default time zone, and other settings specifically for their primary Exchange mailbox. These preferences are targeted for mail clients and are only available if the user has a mailbox provisioned. You can choose to use **mailboxSettings** if your scenario focuses only on Outlook mail, calendar, contacts, or to-do tasks.
+
+In addition to **mailboxSettings**, **user** includes a relationship via [userSettings](../resources/usersettings.md) to [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md), the superset of language and regional formatting preferences that can be used by any application to provide the user with the best language and regional formatting experience. Use **userSettings** for a consistent experience across apps that tap into the Azure AD user profile to reflect the same user preferences.
 
 ## JSON representation
 
@@ -407,7 +419,7 @@ Here is a JSON representation of the resource
   "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "drive": {"@odata.type": "microsoft.graph.drive"},
   "drives": [{"@odata.type": "microsoft.graph.drive"}],
-  "insights": {"@odata.type": "microsoft.graph.officeGraphInsights"},
+  "insights": {"@odata.type": "microsoft.graph.iteminsights"},
   "settings": {"@odata.type": "microsoft.graph.userSettings"},
   "events": [{"@odata.type": "microsoft.graph.event"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],

@@ -31,6 +31,7 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
   "fNumber": 1.8,
   "focalLength": 22.5,
   "iso": 100,
+  "orientation": 3,
   "takenDateTime": "String (timestamp)"
 }
 ```
@@ -47,6 +48,7 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
 | **exposureNumerator**   | Double         | The numerator for the exposure time fraction from the camera. Read-only.
 | **focalLength**         | Double         | The focal length from the camera. Read-only.
 | **iso**                 | Int32          | The ISO value from the camera. Read-only.
+| **orientation**         | Int16          | The orientation value from the camera. Writable on OneDrive Personal.      |
 
 ## Remarks
 
@@ -56,7 +58,7 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
 <!-- {
   "type": "#page.annotation",
   "description": "The photo facet provides details about the camera and settings on the camera for photos.",
-  "keywords": "camera make,camera model, exposure, f-stop, iso",
+  "keywords": "camera make,camera model, exposure, f-stop, iso, orientation",
   "section": "documentation",
   "tocPath": "Facets/Photo"
 } -->

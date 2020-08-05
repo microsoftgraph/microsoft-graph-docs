@@ -32,9 +32,9 @@ SDKs are currently available for the following languages and platforms:
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
 - [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 
-## Office 365 developer subscription
+## Microsoft 365 developer subscription
 
-When building applications using Microsoft Graph, we recommend that you get a free Office 365 developer subscription by signing up for the [Office 365 Developer Program](https://aka.ms/OfficeDevProgram).
+When building applications using Microsoft Graph, we recommend that you get a free Microsoft 365 developer subscription by signing up for the [Microsoft 365 Developer Program](https://aka.ms/OfficeDevProgram).
 
 ## See also
 

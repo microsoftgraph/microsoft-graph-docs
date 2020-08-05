@@ -1,7 +1,7 @@
 ---
 title: "List windowsPhone81CustomConfigurations"
 description: "List properties and relationships of the windowsPhone81CustomConfiguration objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -83,6 +83,8 @@ Content-Length: 678
   ]
 }
 ```
+
+
 
 
 

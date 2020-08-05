@@ -20,7 +20,7 @@ Technology partners can integrate with the Microsoft platform using the Microsof
 
 The Microsoft Graph Security API is a unified API that provides a standard interface and uniform schema to integrate security alerts and threat intelligence from multiple sources, enrich alerts and data with contextual information, and automate security operations.
 
-The security API is part of the Microsoft Graph, which is a unified REST API for integrating data and intelligence from Microsoft and partner products and services. Using Microsoft Graph, customers and partners can rapidly build solutions that authenticate once and use a single API call to access or act on security insights from multiple security solutions. Additional value is uncovered when you explore the other [Microsoft Graph entities](https://docs.microsoft.com/graph/overview) (Office 365, Azure Active Directory, Intune, and more) to tie business context with your security insights.
+The security API is part of the Microsoft Graph, which is a unified REST API for integrating data and intelligence from Microsoft and partner products and services. Using Microsoft Graph, customers and partners can rapidly build solutions that authenticate once and use a single API call to access or act on security insights from multiple security solutions. Additional value is uncovered when you explore the other [Microsoft Graph entities](https://docs.microsoft.com/graph/overview) (Microsoft 365, Azure Active Directory, Intune, and more) to tie business context with your security insights.
 
 Microsoft enables technology partner integration in two key ways.
 

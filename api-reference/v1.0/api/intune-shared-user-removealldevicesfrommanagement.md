@@ -1,7 +1,7 @@
 ---
 title: "removeAllDevicesFromManagement action"
 description: "Retire all devices from management for this user"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -61,6 +61,8 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -35,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 To begin a large file upload, your app must first request a new upload session.
 This creates a temporary storage location where the bytes of the file will be saved until the complete file is uploaded.
 Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.
+Alternatively, you can defer final creation of the file in the destination until you explicitly make a request to complete the upload, by setting the `deferCommit` property in the request arguments.
 
 ### HTTP request
 
@@ -51,26 +52,28 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### Request body
 
 No request body is required.
-However, you can specify an `item` property in the request body, providing additional data about the file being uploaded.
+However, you can specify properties in the request body providing additional data about the file being uploaded and customizing the semantics of the upload operation.
 
+For example, the `item` property allows setting the following parameters:
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
+  "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
-  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "fileSize": 1234,
   "name": "filename.txt"
 }
 ```
 
-For example, to control the behavior if the filename is already taken, you can specify the conflict behavior property in the body of the request.
+The following example controls the behavior if the filename is already taken, and also specifies that the final file should not be created until an explicit completion request is made:
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
   "item": {
     "@microsoft.graph.conflictBehavior": "rename"
-  }
+  },
+  "deferCommit": true
 }
 ```
 
@@ -80,13 +83,12 @@ For example, to control the behavior if the filename is already taken, you can s
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` error response is returned. |
 
-## Properties
+## Parameters
 
-| Property             | Type               | Description
-|:---------------------|:-------------------|:---------------------------------
-| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal
-| fileSystemInfo       | [fileSystemInfo][] | File system information on client. Read-write.
-| name                 | String             | The name of the item (filename and extension). Read-write.
+| Parameter            | Type                          | Description
+|:---------------------|:------------------------------|:---------------------------------
+| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded
+| deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
 
 ### Request
 
@@ -112,6 +114,8 @@ Content-Type: application/json
 The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](../resources/uploadsession.md) resource.
 
 This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.
+
+If the `fileSize` parameter is specified and exceeds the available quota, a `507 Insufficent Storage` response will be returned and the upload session will not be created.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -207,7 +211,14 @@ Content-Type: application/json
 
 ## Completing a file
 
-When the last byte range of a file is received the server will response with an `HTTP 201 Created` or `HTTP 200 OK`.
+If `deferCommit` is false or unset, then the upload is automatically completed when the final byte range of the file is PUT to the upload URL.
+
+If `deferCommit` is true, you can explicitly complete the upload in two ways:
+- After the final byte range of the file is PUT to the upload URL, send a final POST request to the upload URL with zero-length content (currently only supported on OneDrive for Business and SharePoint).
+- After the final byte range of the file is PUT to the upload URL, send a final PUT request in the same way that you would [handle upload errors](#handle-upload-errors) (currently only supported on OneDrive Personal).
+
+
+When the upload is completed, the server will respond to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
 The response body will also include the default property set for the **driveItem** representing the completed file.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
@@ -233,6 +244,28 @@ Content-Type: application/json
   "file": { }
 }
 ```
+
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
+
+```
+POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
+Content-Length: 0
+```
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "912310013A123",
+  "name": "largefile.vhd",
+  "size": 128,
+  "file": { }
+}
+```
+
 
 ## Handling upload conflicts
 
@@ -380,7 +413,6 @@ how errors are returned.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
-[fileSystemInfo]: ../resources/filesysteminfo.md
 
 <!-- {
   "type": "#page.annotation",

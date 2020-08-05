@@ -1,7 +1,7 @@
 ---
 title: "List vppTokens"
 description: "List properties and relationships of the vppToken objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -80,6 +80,8 @@ Content-Length: 659
   ]
 }
 ```
+
+
 
 
 

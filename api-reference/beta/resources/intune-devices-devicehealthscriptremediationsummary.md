@@ -1,13 +1,15 @@
 ---
 title: "deviceHealthScriptRemediationSummary resource type"
 description: "The number of device health scripts deployed and the number of devices the scripts remediated."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceHealthScriptRemediationSummary resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

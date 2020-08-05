@@ -1,8 +1,8 @@
 ---
 title: "deviceDetail resource type"
-description: "Indicates device details associated with a device used for signing in. Includes information like device browser and  OS info, if device is Azure AD managed."
+description: "Indicates device details associated with a device used for signing in."
 localization_priority: Normal
-author: "davidmu1"
+author: "spunukol"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

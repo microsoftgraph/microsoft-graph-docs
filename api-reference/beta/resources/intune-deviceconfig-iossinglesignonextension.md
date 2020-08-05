@@ -1,13 +1,15 @@
 ---
 title: "iosSingleSignOnExtension resource type"
 description: "An abstract base class for all iOS-specific single sign-on extension types."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # iosSingleSignOnExtension resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

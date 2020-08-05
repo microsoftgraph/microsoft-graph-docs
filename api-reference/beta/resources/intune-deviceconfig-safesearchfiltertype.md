@@ -1,13 +1,15 @@
 ---
 title: "safeSearchFilterType enum type"
 description: "Specifies what level of safe search (filtering adult content) is required"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # safeSearchFilterType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

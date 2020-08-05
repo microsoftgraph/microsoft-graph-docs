@@ -1,7 +1,7 @@
 ---
 title: "Update message"
 description: "Update the properties of message object."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

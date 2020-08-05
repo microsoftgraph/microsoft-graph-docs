@@ -2,7 +2,7 @@
 title: "accessReview resource type"
 description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
 localization_priority: Normal
-author: "davidmu1"
+author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -59,7 +59,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-| `reviewers`               |[userIdentity](useridentity.md) collection                     | The collection of reviewers for an access review, if access review reviewerType is of type `delegate`. |
+| `reviewers`               |[userIdentity](useridentity.md) collection                     | The collection of reviewers for an access review, if access review reviewerType is of type `delegated`. |
 | `decisions`               |[accessReviewDecision](accessreviewdecision.md) collection | The collection of decisions for this access review. |
 | `myDecisions`             |[accessReviewDecision](accessreviewdecision.md) collection | The collection of decisions for the caller, if the caller is a reviewer. |
 | `instances`               |[accessReview](accessreview.md) collection         | The collection of access reviews instances past, present and future, if this object is a recurring access review. |
@@ -134,7 +134,7 @@ The **accessReviewRecurrenceSettings** resource type is embedded within the acce
 
 | Property                     | Type                                                                                                          | Description |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
-| `recurrenceType`|`String`    | The recurrence interval, which must be one of `onetime`, `weekly`, `monthly`, `quarterly`, or `annual`.                                                                   |
+| `recurrenceType`|`String`    | The recurrence interval, which must be one of `onetime`, `weekly`, `monthly`, `quarterly`, 'halfyearly' or `annual`.                                                                   |
 | `recurrenceEndType`|`String` | How the recurrence ends. If it is `never`, then there is no explicit end of the recurrence series. If it is `endBy`, then the recurrence ends at a certain date. If it is `occurrences`, then the series ends after `recurrenceCount` instances of the review have completed. |
 | `durationInDays`|`Int32`     | The duration in days for recurrence.                                                                              |
 | `recurrenceCount`|`Int32`    | The count of recurrences, if the value of `recurrenceEndType` is `occurrences`, or 0 otherwise.                                                        |

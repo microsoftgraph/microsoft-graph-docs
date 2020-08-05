@@ -3,7 +3,7 @@ title: "Create synchronizationJob"
 description: "Create new synchronization job with a default synchronization schema. The job is created in a disabled state. Call Start job to start synchronization."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

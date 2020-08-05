@@ -18,7 +18,7 @@ Initialize the provider inside the `onInit()` method of your web part.
 ```ts
 
 // import the providers at the top of the page
-import {Providers, SharePointProvider} from '@microsoft/mgt/dist/commonjs';
+import {Providers, SharePointProvider} from '@microsoft/mgt';
 
 // add the onInit() method if not already there in your web part class
 protected async onInit() {
@@ -52,3 +52,9 @@ After you've created a web part, and you're ready to use the components, you wil
 In short, it's important to add the right permission to your `package-solution.json`. You will need to upload a package of your web part to SharePoint and have an administrator approve the requested permissions.
 
 >**Tip:** if you're not sure what permissions to add, the documentation for each component includes all the permissions it needs.
+
+## Polyfills
+
+If you plan to support IE11 in your SPFx webparts, you must use polyfills.
+
+To learn more, see [get-started](../get-started.md#sharepoint).

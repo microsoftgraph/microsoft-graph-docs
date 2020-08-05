@@ -16,7 +16,10 @@ var participants = new List<InvitationParticipantInfo>()
 			User = new Identity
 			{
 				Id = "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
-				IdentityProvider = "AAD"
+				AdditionalData = new Dictionary<string, object>()
+				{
+					{"identityProvider", "AAD"}
+				}
 			}
 		}
 	}

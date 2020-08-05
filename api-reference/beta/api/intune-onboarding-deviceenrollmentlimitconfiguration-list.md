@@ -1,13 +1,15 @@
 ---
 title: "List deviceEnrollmentLimitConfigurations"
 description: "List properties and relationships of the deviceEnrollmentLimitConfiguration objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List deviceEnrollmentLimitConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 446
+Content-Length: 520
 
 {
   "value": [
@@ -71,12 +73,14 @@ Content-Length: 446
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "version": 7,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "limit": 5
     }
   ]
 }
 ```
-
 
 
 

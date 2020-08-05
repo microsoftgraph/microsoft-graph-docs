@@ -1,13 +1,15 @@
 ---
 title: "iosMobileAppIdentifier resource type"
 description: "The identifier for an iOS app."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # iosMobileAppIdentifier resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

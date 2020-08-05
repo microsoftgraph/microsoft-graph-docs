@@ -2,7 +2,7 @@
 title: "List tokenLifetimePolicies"
 description: "Get a list of tokenLifetimePolicy objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "lujiangfeng666"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

@@ -1,13 +1,15 @@
 ---
 title: "deliveryOptimizationBandwidthHoursWithPercentage resource type"
 description: "Bandwidth limit as a percentage with business hours."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deliveryOptimizationBandwidthHoursWithPercentage resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

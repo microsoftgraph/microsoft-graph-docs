@@ -1,7 +1,7 @@
 ---
 title: "List windows10CompliancePolicies"
 description: "List properties and relationships of the windows10CompliancePolicy objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -93,6 +93,8 @@ Content-Length: 1263
   ]
 }
 ```
+
+
 
 
 

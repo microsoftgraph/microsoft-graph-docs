@@ -26,6 +26,7 @@ Namespace: microsoft.graph
 | postedCount        | Int64   |
 | readCount          | Int64   |
 | likedCount         | Int64   |
+| networkDisplayName | String  |
 | reportPeriod       | String  |
 
 ## JSON representation
@@ -49,7 +50,8 @@ The following is a JSON representation of the resource.
   "memberCount": 1024, 
   "postedCount": 1024, 
   "readCount": 1024, 
-  "likedCount": 1024, 
+  "likedCount": 1024,
+  "networkDisplayName": "String",
   "reportPeriod": "String"
 }
 ```

@@ -2,7 +2,7 @@
 title: "provisioningStep resource type"
 description: "Describes the steps taken to perform an action. "
 localization_priority: Normal
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---

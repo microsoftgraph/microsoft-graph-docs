@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var roleAssignments = await graphClient.RoleManagement.Directory.RoleAssignments
 	.Request()
-	.Filter("principalId eq 'a98eb769-7bd4-4489-86f6-ad96e1d58b62'")
+	.Filter(" principalId eq 'f1847572-48aa-47aa-96a3-2ec61904f41f'")
 	.GetAsync();
 
 ```

@@ -2,7 +2,7 @@
 title: "Update activitybasedtimeoutpolicy"
 description: "Update the properties of an activityBasedTimeoutPolicy object."
 localization_priority: Normal
-author: "davidmu1"
+author: "lujiangfeng666"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

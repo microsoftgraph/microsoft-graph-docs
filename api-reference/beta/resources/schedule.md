@@ -4,7 +4,7 @@ description: "A collection of schedulingGroups, shifts, timeOffReasons and times
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
-doc_type: resourcePageType_
+doc_type: resourcePageType
 ---
 
 # schedule resource type

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var stream = "Binary data for the image"
+using var stream = new System.IO.MemoryStream(Encoding.UTF8.GetBytes("Binary data for the image"));
 
 await graphClient.Me.Photo.Content
 	.Request()

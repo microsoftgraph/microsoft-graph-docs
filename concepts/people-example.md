@@ -474,7 +474,7 @@ Content-type: application/json
 ### Types of results included
 By default, Microsoft Graph serves mailbox-only results, which do not include directory/organization results. To retrieve directory results, specify an HTTP header, as shown.
 
-```
+```http
 "X-PeopleQuery-QuerySources: Mailbox,Directory”
 ```
 ### Select the fields to return
@@ -823,7 +823,7 @@ The requests in this section allow you to search for people relevant to the sign
 
 Use the *$search* parameter to select people who meet a particular set of criteria.
 
-The following search query returns people relevant to `/me` whose **displayName** or *emailAddress" has a word that begins with the letter "j".
+The following search query returns people relevant to `/me` whose **displayName** or **emailAddress** has a word that begins with the letter "j".
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j

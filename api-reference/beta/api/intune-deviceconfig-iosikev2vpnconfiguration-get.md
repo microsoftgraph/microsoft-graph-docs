@@ -1,13 +1,15 @@
 ---
 title: "Get iosikEv2VpnConfiguration"
 description: "Read properties and relationships of the iosikEv2VpnConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get iosikEv2VpnConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5469
+Content-Length: 5744
 
 {
   "value": {
@@ -163,6 +165,15 @@ Content-Length: 5469
     "excludeList": [
       "Exclude List value"
     ],
+    "targetedMobileApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "childSecurityAssociationParameters": {
       "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
       "securityEncryptionAlgorithm": "des",
@@ -217,7 +228,6 @@ Content-Length: 5469
   }
 }
 ```
-
 
 
 

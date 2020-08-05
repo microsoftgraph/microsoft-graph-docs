@@ -41,7 +41,7 @@ Tag alerts with additional context or threat intelligence to inform response and
 
 ### Unlock security context to drive investigation
 
-Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Office 365) to bring business and security contexts together and improve threat response.
+Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Microsoft 365) to bring business and security contexts together and improve threat response.
 
 ### Automate security workflows and reporting
 

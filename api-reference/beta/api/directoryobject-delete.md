@@ -1,7 +1,7 @@
 ---
 title: "Delete directoryObject"
 description: "Delete directoryObject."
-author: "davidmu1"
+author: "keylimesoda"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

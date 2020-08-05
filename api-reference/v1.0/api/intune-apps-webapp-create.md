@@ -1,7 +1,7 @@
 ---
 title: "Create webApp"
 description: "Create a new webApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -130,6 +130,8 @@ Content-Length: 817
   "useManagedBrowser": true
 }
 ```
+
+
 
 
 

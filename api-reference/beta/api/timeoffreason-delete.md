@@ -1,7 +1,7 @@
 ---
 title: "Delete timeOffReason"
-description: "Mark a timeOffReason as inactive by setting the isActive property"
-author: "nkramer"
+description: "Mark a timeOffReason as inactive by setting the isActive property."
+author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property.
+Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property. Every team must include at least one **timeOffReason**.
 
-This method does not remove the specified [timeOffReason](../resources/timeoffreason.md) instance. [timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason remain assigned to this reason.
+This method does not remove the specified **timeOffReason** instance. [timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason remain assigned to this reason.
 
 ## Permissions
 

@@ -1,13 +1,15 @@
 ---
 title: "windowsInformationProtectionPinCharacterRequirements enum type"
 description: "Pin Character Requirements"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # windowsInformationProtectionPinCharacterRequirements enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

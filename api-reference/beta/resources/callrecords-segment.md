@@ -21,7 +21,8 @@ server-to-server communication required to connect the call.
 ## Methods
 
 No methods exist to directly access segments. Please use the [Get callRecord](../api/callrecords-callrecord-get.md)
-api with `$expand=sessions($expand=segments)` to get the segments for a [callRecord](callrecords-callrecord.md).
+api with `$expand=sessions($expand=segments)` or the [List session](../api/callrecords-session-list.md) api with
+`$expand=segments` to get the segments for a [callRecord](callrecords-callrecord.md).
 
 ## Properties
 

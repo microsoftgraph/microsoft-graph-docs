@@ -1,13 +1,15 @@
 ---
 title: "Delete deviceHealthScriptAssignment"
 description: "Deletes a deviceHealthScriptAssignment."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Delete deviceHealthScriptAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -31,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceHealthScriptAssignmentId}
+DELETE /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assignments/{deviceHealthScriptAssignmentId}
 ```
 
 ## Request headers
@@ -58,7 +61,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "remediationState enum type"
 description: "Indicates the type of execution status of the device management script."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # remediationState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

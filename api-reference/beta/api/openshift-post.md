@@ -33,10 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST /teams/{id}/schedule/openShifts
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-  
 ## Request headers
 
 | Name      |Description|
@@ -87,23 +83,7 @@ Content-length: 244
          }
       ]
    },
-   "draftOpenShift":{
-      "notes":"InventoryManagement",
-      "openSlotCount":3,
-      "displayName":"Dayshift",
-      "startDateTime":"2018-10-04T00: 58: 45.332Z",
-      "endDateTime":"2018-10-04T08: 58: 45.340Z",
-      "theme":"white",
-      "activities":[
-         {
-            "isPaid":true,
-            "startDateTime":"2018-10-04T00: 58: 45.340Z",
-            "endDateTime":"2018-10-04T07: 58: 45.332Z",
-            "code":"Break",
-            "displayName":"Lunch"
-         }
-      ]
-   },
+   "draftOpenShift":null,
    "createdDateTime":"2019-03-14T04: 32: 51.451Z",
    "lastModifiedDateTime":"2019-03-14T05: 32: 51.451Z",
    "lastModifiedBy":{
@@ -154,23 +134,7 @@ Content-type: application/json
     }
     ]
     },
-    "draftOpenShift": {
-    "notes": "Inventory Management",
-    "openSlotCount":3,
-    "displayName": "Day shift",
-    "startDateTime": "2018-10-04T00:58:45.332Z",
-    "endDateTime": "2018-10-04T08:58:45.340Z",
-    "theme": "white",
-    "activities": [
-    {
-    "isPaid": true,
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T07:58:45.332Z",
-    "code": "Break",
-    "displayName": "Lunch"
-    }
-    ]
-    },
+    "draftOpenShift": null,
     "createdDateTime": "2019-03-14T04:32:51.451Z",
     "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
     "lastModifiedBy": {

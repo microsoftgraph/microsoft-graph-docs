@@ -4,7 +4,7 @@ description: "Schema extensions allow you to define a schema to extend and add s
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "extensions"
 ---
 
 # schemaExtension resource type (schema extensions)
@@ -20,8 +20,8 @@ Schema extensions are supported by the following resource types:
 - [administrativeUnit](administrativeunit.md)
 - [contact](contact.md)
 - [device](device.md)
-- [event](event.md) on a user or Office 365 group calendar
-- [post](post.md) of an Office 365 group
+- [event](event.md) on a user or Microsoft 365 group calendar
+- [post](post.md) of a Microsoft 365 group
 - [group](group.md)
 - [message](message.md) 
 - [organization](organization.md)

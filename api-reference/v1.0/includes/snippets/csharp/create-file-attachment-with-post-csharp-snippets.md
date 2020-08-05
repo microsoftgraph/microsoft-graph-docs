@@ -13,12 +13,12 @@ var post = new Post
 		ContentType = BodyType.Text,
 		Content = "Which quarter does that file cover? See my attachment."
 	},
-	Attachments = new List<Attachment>()
+	Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
 	{
 		new FileAttachment
 		{
 			Name = "Another file as attachment",
-			ContentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+			ContentBytes = Encoding.ASCII.GetBytes("VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu")
 		}
 	}
 };

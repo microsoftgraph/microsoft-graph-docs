@@ -1,13 +1,15 @@
 ---
 title: "Update deviceHealthScriptAssignment"
 description: "Update the properties of a deviceHealthScriptAssignment object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update deviceHealthScriptAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -31,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceHealthScriptAssignmentId}
+PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assignments/{deviceHealthScriptAssignmentId}
 ```
 
 ## Request headers
@@ -49,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the device health script assignment entity. This property is read-only.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The Azure Active Directory group we are targeting the script to|
 |runRemediationScript|Boolean|Determine whether we want to run detection script only or run both detection script and remediation script|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Script run schedule for the target group|
+|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Script run schedule for the target group|
 
 
 
@@ -63,16 +66,21 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceHealthScriptAssignmentId}
 Content-type: application/json
-Content-length: 277
+Content-length: 526
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "runRemediationScript": true,
   "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 8,
+    "useUtc": true,
+    "time": "11:58:36.2550000"
   }
 }
 ```
@@ -82,21 +90,25 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 326
+Content-Length: 575
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "runRemediationScript": true,
   "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 8,
+    "useUtc": true,
+    "time": "11:58:36.2550000"
   }
 }
 ```
-
 
 
 

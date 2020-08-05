@@ -2,7 +2,7 @@
 title: "orgContact: checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those group IDs of which the organizational contact has a direct or transitive membership."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 Check for membership in the specified list of groups. Returns from the list those group IDs of which the [organizational contact](../resources/orgcontact.md) has a direct or transitive membership.
 
-You can check up to a maximum of 20 groups per request. This function supports Office 365 and other types of groups provisioned in Azure Active Directory (Azure AD).
+You can check up to a maximum of 20 groups per request. This function supports Microsoft 365 and other types of groups provisioned in Azure Active Directory (Azure AD).
 
 >[!NOTE]
->Office 365 groups cannot contain groups. Membership in an Office 365 group is always direct.
+>Microsoft 365 groups cannot contain groups. Membership in a Microsoft 365 group is always direct.
 
 
 ## Permissions

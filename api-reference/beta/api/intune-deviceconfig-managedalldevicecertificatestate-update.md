@@ -1,13 +1,15 @@
 ---
 title: "Update managedAllDeviceCertificateState"
 description: "Update the properties of a managedAllDeviceCertificateState object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update managedAllDeviceCertificateState
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -48,6 +50,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revoke status. Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.|
+|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|The time the revoke status was last changed|
 |managedDeviceDisplayName|String|Device display name|
 |userPrincipalName|String|User principal name|
 |certificateExpirationDateTime|DateTimeOffset|Certificate expiry date|
@@ -71,11 +74,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates/{managedAllDeviceCertificateStateId}
 Content-type: application/json
-Content-length: 735
+Content-length: 820
 
 {
   "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
   "certificateRevokeStatus": "pending",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:34.9547208-08:00",
   "managedDeviceDisplayName": "Managed Device Display Name value",
   "userPrincipalName": "User Principal Name value",
   "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
@@ -94,12 +98,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 784
+Content-Length: 869
 
 {
   "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
   "id": "987c6a17-6a17-987c-176a-7c98176a7c98",
   "certificateRevokeStatus": "pending",
+  "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:34.9547208-08:00",
   "managedDeviceDisplayName": "Managed Device Display Name value",
   "userPrincipalName": "User Principal Name value",
   "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
@@ -112,7 +117,6 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

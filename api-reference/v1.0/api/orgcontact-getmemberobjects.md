@@ -2,7 +2,7 @@
 title: "orgContact: getMemberObjects"
 description: "Return all the groups that this organizational contact is a member of. The check is transitive."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

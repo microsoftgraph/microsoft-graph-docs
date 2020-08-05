@@ -2,7 +2,7 @@
 title: "contactFolder: delta"
 description: "Get a set of contact folders that have been added, deleted, or removed from the user's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

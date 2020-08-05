@@ -34,7 +34,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.externalItem"
+        "externalItem"
       ],
       "contentSources": [
         "/external/connections/servicenow-connector-contoso"
@@ -47,9 +47,11 @@ Content-Type: application/json
       "from": 0,
       "size": 25,
       "stored_fields": [
-        "title",
-        "priority",
-        "description"
+        "number",
+        "shortdescription",
+        "syscreatedon",
+        "accessurl",
+        "previewContent"
       ]
     }
   ]
@@ -94,7 +96,7 @@ Content-Type: application/json
                   "shortdescription": "Contoso : Setting Office for the first time.",
                   "syscreatedon": "2019-08-09T01:53:26Z",
                   "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=004d8d931b0733004793877ddc4bcb29",
-                  "previewContent": "Description:  Setting Office for the first time.  Resolution:    To setup any Office app for the first time, tap any Office app like Word to launch it.    Tap Sign in if you already have a Microsoft Account or an Office 365 work or school account."
+                  "previewContent": "Description:  Setting Office for the first time.  Resolution:    To setup any Office app for the first time, tap any Office app like Word to launch it.    Tap Sign in if you already have a Microsoft Account or a Microsoft 365 work or school account."
                 }
               }
             }

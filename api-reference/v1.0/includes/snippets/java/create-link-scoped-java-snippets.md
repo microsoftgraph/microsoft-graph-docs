@@ -11,7 +11,7 @@ String type = "edit";
 String scope = "organization";
 
 graphClient.me().drive().items("{item-id}")
-	.createLink(type,scope)
+	.createLink(type,scope,null,null,null)
 	.buildRequest()
 	.post();
 

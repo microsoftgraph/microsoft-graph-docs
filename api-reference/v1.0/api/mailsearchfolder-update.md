@@ -2,7 +2,7 @@
 title: "Update mailSearchFolder"
 description: "Update the writable properties of a mailSearchFolder object."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

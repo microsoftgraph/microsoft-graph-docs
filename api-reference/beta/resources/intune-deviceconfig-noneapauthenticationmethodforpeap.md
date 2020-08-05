@@ -1,13 +1,15 @@
 ---
 title: "nonEapAuthenticationMethodForPeap enum type"
 description: "Non-EAP methods for authentication when PEAP is the selected EAP type."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # nonEapAuthenticationMethodForPeap enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

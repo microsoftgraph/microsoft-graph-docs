@@ -2,7 +2,7 @@
 title: "Azure AD access reviews"
 description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights."
 localization_priority: Normal
-author: "davidmu1"
+author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---

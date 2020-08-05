@@ -1,6 +1,6 @@
 ---
 title: "Use the Planner REST API"
-description: "You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365."
+description: "You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Microsoft 365."
 author: "TarkanSevilmis"
 localization_priority: Priority
 ms.prod: "planner"
@@ -11,13 +11,13 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.
+You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Microsoft 365.
 
-Before you get started with the Planner API, it will be helpful to understand how the main objects relate to each other as well as to Office 365 groups.
+Before you get started with the Planner API, it will be helpful to understand how the main objects relate to each other as well as to Microsoft 365 groups.
 
-## Office 365 Groups
+## Microsoft 365 groups
 
-Office 365 groups are the owners of the plans in the Planner API.
+Microsoft 365 groups are the owners of the plans in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
 ``` http
@@ -30,7 +30,7 @@ When [creating a new plan](../api/planner-post-plans.md), make a group its owner
 
 ## Plans
 
-[Plans](plannerplan.md) are the containers of [tasks](plannertask.md). 
+[Plans](plannerplan.md) are the containers of [tasks](plannertask.md).
 To [create a task in a plan](../api/planner-post-tasks.md), set the `planId` property on the task object to the ID of the plan while creating the task.
 Tasks currently cannot be created without plans.
 To [retrieve the tasks in a plan](../api/plannerplan-list-tasks.md), make the following HTTP request.
@@ -44,7 +44,7 @@ GET /planner/plans/{plan-id}/tasks
 Each task can be assigned to a user by adding an [assignment](plannerassignment.md) in the [assignments](plannerassignments.md) property on the task object.
 The ID of the user to assign the task is the name of the open property on `assignments`, and the `orderHint` property on the assignment must be specified.
 
-## Task and plan details 
+## Task and plan details
 
 Planner resources are arranged into basic objects and detail objects. Basic objects provide access to common properties of the resources, suitable for list views, while the detail objects provide access to large properties of the resources suitable for drill down views.
 
@@ -74,7 +74,7 @@ Users are subscribed to the following objects.
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Tasks                 | <ul><li>Created by the user</li><li>Assigned to the user</li><li>Belong to a plan that the user owns</li><li>Contained in a plan shared with the user through the plan's **SharedWith** collection</li> |
 | Plans                 | <ul><li>Shared with the user through the plan's **SharedWith** collection</li></ul>                                                                                                                     |
-| Buckets               | <ul><li>Contained in a plan shared with the user through the plan's **SharedWith** collection</li></ul>                                                                                                 |  |
+| Buckets               | <ul><li>Contained in a plan shared with the user through the plan's **SharedWith** collection</li></ul>                                                                                                 |
 
 ### <a name="objectcache">Populate the object cache for delta queries</a>
 
@@ -119,7 +119,7 @@ Planner's delta query call flow is as follows:
 ## Planner resource versioning
 
 Planner versions all resources using **etags**. These **etags** are returned with `@odata.etag` property on each resource. `PATCH` and `DELETE` requests require the last **etag** known by the client to be specified with a `If-Match` header.
-Planner allows changes to older versions of resources, if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which **etag** for the same resource is newer by calculating which **etag** value is greater in ordinal string comparison. 
+Planner allows changes to older versions of resources, if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which **etag** for the same resource is newer by calculating which **etag** value is greater in ordinal string comparison.
 Each resource has a unique **etag**. Etag values for different resources, including those with containment relationships, cannot be compared.
 The client apps are expected to handle versioning related [error codes](/graph/errors) **409** and **412** by reading the latest version of the item and resolving the conflicting changes.
 
@@ -158,8 +158,10 @@ The following are the possible values for the limit types.
 | MaximumContextsOnPlan         | The `contexts` property on the [plannerPlan](plannerplan.md) resource contains too many values.                                                                                                          |
 | MaximumPlannerPlans       | The group already contains a Plan. Currently, groups can only contain one Plan. **Note:** Some Microsoft apps can exceed this limit. In the future, we will extend this capability to all apps.                                                                                                      |
 
-### 412 Precondition Failed 
+### 412 Precondition Failed
 
 All Planer API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
 The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

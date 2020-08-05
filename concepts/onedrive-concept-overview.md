@@ -1,6 +1,6 @@
 ---
 title: "OneDrive file storage API overview"
-description: "OneDrive is the files hub in Office 365."
+description: "OneDrive is the files hub in Microsoft 365."
 localization_priority: Priority
 ms.prod: "onedrive"
 ms.custom: scenarios:getting-started
@@ -8,11 +8,11 @@ ms.custom: scenarios:getting-started
 
 # OneDrive file storage API overview
 
-OneDrive is the files hub in Office 365.
+OneDrive is the files hub in Microsoft 365.
 People work with files in a variety of contexts, like Microsoft Teams, groups, SharePoint, and more.
 With OneDrive, users can access these files no matter where they are stored, and with Microsoft Graph, you can use a single API to work with them.
 
-Files in Office 365 are stored in [drives][Drive API].
+Files in Microsoft 365 are stored in [drives][Drive API].
 Users can store files in a personal drive - their OneDrive - or in a shared drive powered by a [SharePoint][] document library.
 OneDrive's flexibility lets users collaborate however it works best for them.
 Users can share links to files, copy or move files to team drives, or even attach OneDrive files to mail messages in Outlook.

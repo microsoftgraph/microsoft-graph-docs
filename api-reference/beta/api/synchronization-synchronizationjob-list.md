@@ -3,7 +3,7 @@ title: "List synchronization jobs"
 description: "List existing jobs for a given application instance (service principal)."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Create rule"
 description: "Create a messageRule object by specifying a set of conditions and actions. "
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

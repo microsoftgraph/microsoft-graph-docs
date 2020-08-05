@@ -64,7 +64,7 @@ If the user has Microsoft Teams running, they might or might not see the app ins
 
 ## Get the chat thread ID
 
-When the app is installed for the user, the bot will get receive a `conversationUpdate` event that will contain the necessary information for it to send the proactive message. For more information, see [Bot events](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-notifications).
+When the app is installed for the user, the bot will get a `conversationUpdate` event that will contain the necessary information for it to send the proactive message. For more information, see [Bot events](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-notifications).
 
 If you lose the `chatThreadId`, you can find it again by calling:
 

@@ -105,6 +105,7 @@ To access the shared DriveItem resource, you will need to make a request using t
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
+By default, **sharedWithMe** returns items shared within your own tenant. To include items shared from external tenants, append `?allowexternal=true` to the GET request.
 
 <!--
 {

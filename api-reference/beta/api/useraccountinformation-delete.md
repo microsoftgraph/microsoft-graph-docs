@@ -35,7 +35,7 @@ DELETE /user/profile/account{id}
 
 ## Request headers
 
-| Name           |Description                 |
+| Name           | Description                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Required.  |
 

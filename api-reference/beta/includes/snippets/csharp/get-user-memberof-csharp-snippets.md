@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var memberOf = await graphClient.Me.MemberOf
+var memberOf = await graphClient.Users["{id}"].MemberOf
 	.Request()
 	.GetAsync();
 

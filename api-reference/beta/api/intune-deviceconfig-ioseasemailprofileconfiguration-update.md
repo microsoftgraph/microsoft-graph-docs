@@ -1,13 +1,15 @@
 ---
 title: "Update iosEasEmailProfileConfiguration"
 description: "Update the properties of a iosEasEmailProfileConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update iosEasEmailProfileConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -227,7 +229,6 @@ Content-Length: 2303
   "encryptionCertificateType": "certificate"
 }
 ```
-
 
 
 

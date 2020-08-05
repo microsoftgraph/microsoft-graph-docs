@@ -2,7 +2,7 @@
 title: "Update user mailbox settings"
 description: "Update one or more settings for the user's mailbox. This includes settings for automatic replies (notify people automatically upon receipt of their email), locale (language and country/region), time zone, and working hours."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -15,6 +15,7 @@ Enable, configure, or disable one or more of the following settings as part of a
 
 - [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)
 - dateFormat
+- delegateMeetingMessageDeliveryOptions
 - [locale](../resources/localeinfo.md) (language and country/region)
 - timeFormat
 - time zone
@@ -58,6 +59,7 @@ shouldn't include existing values that haven't changed. The following are the wr
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user. You can set such notifications for only a future date range.|
 |dateFormat|string|The date format for the user's mailbox.|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| If the user has a calendar delegate, this specifies whether the delegate, mailbox owner, or both receive meeting messages and meeting responses. Possible values are: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |language|[localeInfo](../resources/localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|

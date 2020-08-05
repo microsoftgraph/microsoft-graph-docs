@@ -11,9 +11,7 @@ var workbookNamedItem = new WorkbookNamedItem
 	Type = "type-value",
 	Scope = "scope-value",
 	Comment = "comment-value",
-	Value = new Json
-	{
-	},
+	Value = JToken.Parse("{}"),
 	Visible = true
 };
 

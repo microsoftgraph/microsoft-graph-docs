@@ -32,6 +32,9 @@ In addition to the following permissions, the user's tenant must have an active 
 GET /print/printers/{id}/connectors
 ```
 
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
@@ -94,7 +97,6 @@ Content-length: 1373
         "lastConnectionTime": "2020-02-04T07:00:00.0000000"
       },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
-      "registeredBy": {},
       "location": {
         "latitude": 1.1,
         "longitude": 2.2,

@@ -1,8 +1,8 @@
 ---
 title: "List members"
-description: "Get a list of the group's direct members. A group can have users, organizational contacts, and other groups as members."
+description: "Get a list of the group's direct members. A group can have users, organizational contacts, devices, service principals and other groups as members."
 localization_priority: Priority
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -10,17 +10,17 @@ doc_type: apiPageType
 # List members
 
 Namespace: microsoft.graph
-Get a list of the group's direct members. A group can have users, organizational contacts, and other groups as members.
-This operation is not transitive.
+
+Get a list of the group's direct members. A group can have users, organizational contacts, devices, service principals and other groups as members. Currently service principals are not listed as group members due to staged roll-out of service principals on Graph V1.0 endpoint. This operation is not transitive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All  |
+|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, GroupMember.Read.All, Group.Read.All, Directory.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, Group.Read.All, Directory.Read.All |
+|Application | User.Read.All, GroupMember.Read.All, Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

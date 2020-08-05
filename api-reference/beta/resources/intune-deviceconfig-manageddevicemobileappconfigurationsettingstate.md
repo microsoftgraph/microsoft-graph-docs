@@ -1,13 +1,15 @@
 ---
 title: "managedDeviceMobileAppConfigurationSettingState resource type"
 description: "Managed Device Mobile App Configuration Setting State for a given device."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # managedDeviceMobileAppConfigurationSettingState resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -30,6 +32,7 @@ Managed Device Mobile App Configuration Setting State for a given device.
 |userPrincipalName|String|UserPrincipalName.|
 |sources|[settingSource](../resources/intune-deviceconfig-settingsource.md) collection|Contributing policies|
 |currentValue|String|Current value of setting on device|
+|settingInstanceId|String|SettingInstanceId|
 
 ## Relationships
 None
@@ -61,7 +64,8 @@ Here is a JSON representation of the resource.
       "displayName": "String"
     }
   ],
-  "currentValue": "String"
+  "currentValue": "String",
+  "settingInstanceId": "String"
 }
 ```
 

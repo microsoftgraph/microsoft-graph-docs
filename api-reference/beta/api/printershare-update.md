@@ -31,7 +31,7 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /print/printerShares/{id}
+PATCH /print/shares/{id}
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "update_printershare"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/print/printerShares/{id}
+PATCH https://graph.microsoft.com/beta/print/shares/{id}
 Content-type: application/json
 Content-length: 109
 
@@ -98,7 +98,7 @@ Content-type: application/json
 Content-length: 225
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printerShares/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
   "name": "ShareName",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z"

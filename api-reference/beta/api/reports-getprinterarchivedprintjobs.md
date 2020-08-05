@@ -39,11 +39,11 @@ GET /reports/getPrinterArchivedPrintJobs
 
 ## Function parameters
 
-|Parameter|Type|Required?|Description|
-|-|-|-|-|-|
-|`printerId`|`Edm.String`|Yes|The ID of the printer to return data for.|
-|`periodStart`|`Edm.DateTimeOffset`|No|The start date (inclusive) for the time period to include data from.|
-|`periodEnd`|`Edm.DateTimeOffset`|No|The end date (inclusive) for the time period to include data from.|
+| Parameter     | Type                 | Required? | Description                                                          |
+|---------------|----------------------|-----------|----------------------------------------------------------------------|
+| `printerId`   | `Edm.String`         | Yes       | The ID of the printer to return data for.                            |
+| `periodStart` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. |
+| `periodEnd`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.   |
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [archivedPrintJob](../resources/archivedprintjob.md) objects in the response body.
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(p
 ```
 
 ##### Response
-The following is an example of the response. 
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

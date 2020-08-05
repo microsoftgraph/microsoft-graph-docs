@@ -1,13 +1,15 @@
 ---
 title: "androidForWorkCertificateProfileBase resource type"
 description: "Android For Work certificate profile base."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidForWorkCertificateProfileBase resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

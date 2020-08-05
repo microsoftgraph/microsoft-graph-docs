@@ -1,7 +1,7 @@
 ---
 title: "Create windowsMobileMSI"
 description: "Create a new windowsMobileMSI object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -145,6 +145,8 @@ Content-Length: 1027
   "ignoreVersionDetection": true
 }
 ```
+
+
 
 
 

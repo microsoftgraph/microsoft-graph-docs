@@ -1,13 +1,15 @@
 ---
 title: "win32LobAppReturnCodeType enum type"
 description: "Indicates the type of return code."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # win32LobAppReturnCodeType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

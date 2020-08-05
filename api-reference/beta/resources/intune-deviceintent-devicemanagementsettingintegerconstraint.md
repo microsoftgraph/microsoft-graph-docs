@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementSettingIntegerConstraint resource type"
 description: "Constraint enforcing the permitted value range for an integer setting"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementSettingIntegerConstraint resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

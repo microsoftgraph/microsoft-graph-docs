@@ -1,13 +1,15 @@
 ---
 title: "edgeSearchEngineCustom resource type"
 description: "Allows IT admins to set a custom default search engine for MDM-Controlled devices."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # edgeSearchEngineCustom resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

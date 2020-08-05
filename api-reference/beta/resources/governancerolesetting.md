@@ -1,10 +1,10 @@
 ---
 title: "governanceRoleSetting resource type"
-description: " rule, and so on."
+description: "Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # governanceRoleSetting resource type

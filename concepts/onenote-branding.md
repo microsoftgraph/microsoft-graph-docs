@@ -8,7 +8,7 @@ ms.prod: "onenote"
 
 # Branding guidelines for OneNote API developers 
  
-**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
+**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
 Follow the guidance in this article to best integrate the OneNote brand within your product and satisfy OneNote branding requirements.
 

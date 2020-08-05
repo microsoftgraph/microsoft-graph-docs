@@ -3,7 +3,7 @@ title: "Get open extension"
 description: "Get an open extension (openTypeExtension object) identified by name or fully qualified name."
 localization_priority: Priority
 author: "dkershaw10"
-ms.prod: ""
+ms.prod: "extensions"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ Depending on the resource that contains the extension and the permission type (d
 | [group event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
 | [group post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
-| [organization](../resources/organization.md) | User.Read | Not supported | Not supported |
+| [organization](../resources/organization.md) | User.Read | Not supported | Organization.Read.All |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
 

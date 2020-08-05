@@ -1,6 +1,6 @@
 ---
 title: "Create OneNote pages"
-description: " Enterprise notebooks on Office 365"
+description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
 localization_priority: Priority
 ms.prod: "onenote"
@@ -8,7 +8,7 @@ ms.prod: "onenote"
 
 # Create OneNote pages
 
-**Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
+**Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
 To create a OneNote page, you send a POST request to a *pages* endpoint. For example:
 

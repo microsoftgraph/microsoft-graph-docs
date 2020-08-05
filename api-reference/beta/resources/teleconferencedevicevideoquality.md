@@ -26,6 +26,12 @@ The **teleconferenceDeviceVideoQuality** resource inherits the properties from [
 |averageOutboundBitRate|Double|The average outbound stream video bit rate per second.|
 |averageOutboundFrameRate|Double|The average outbound stream video frame rate per second.|
 
+### Derived types
+
+| Type                                                 | Description                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | Video teleconferencing device screen-sharing quality data. |
+
 ## JSON representation
 
 The following is a JSON representation of the resource.

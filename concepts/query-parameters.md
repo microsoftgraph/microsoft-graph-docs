@@ -1,7 +1,7 @@
 ---
 title: "Use query parameters to customize responses"
-description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported."
-author: "baywet"
+description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response."
+author: "mumbi-o"
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
@@ -32,7 +32,7 @@ Click the examples to try them in [Graph Explorer][graph-explorer].
 | [$filter](#filter-parameter)       | Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
 | [$format](#format-parameter)       | Returns the results in the specified media format.|[`/users?$format=json`][format-example]
 | [$orderby](#orderby-parameter)     | Orders results.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | Returns results based on search criteria. Currently supported on **messages** and **person** collections.|[`/me/messages?$search=pizza`][search-example]
+| [$search](#search-parameter)       | Returns results based on search criteria. |[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Filters properties (columns).|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | Sets the page size of results. |[`/users?$top=2`][top-example]
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 Use the `$count` query parameter to include a count of the total number of items in a collection alongside the page of data values returned from Microsoft Graph. 
 
-For example, the following request will return both the **contact** collection of the current user, and the number of items in the **contact** collection in the `@odata.count` property.
+For example, the following request returns both the **contact** collection of the current user, and the number of items in the **contact** collection in the `@odata.count` property.
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
@@ -90,7 +90,13 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
->**Note:** `$count` is not supported for collections of resources that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) like collections of [users](/graph/api/resources/user?view=graph-rest-1.0) or [groups](/graph/api/resources/group?view=graph-rest-1.0).
+The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
+- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
+- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
+- [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
+- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
+- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+- [users](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta).
 
 ## expand parameter
 
@@ -120,9 +126,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 ## filter parameter
 
-Use the `$filter` query parameter to retrieve just a subset of a collection. 
+Use the `$filter` query parameter to retrieve just a subset of a collection. The `$filter` query parameter can also be used to retrieve relationships like members, memberOf, transitiveMembers, and transitiveMemberOf. For example, get all the security groups I'm a member of.
 
-For example, to find users whose display name starts with the letter 'J', use `startswith`.
+The following example can be used to find users whose display name starts with the letter 'J', use `startswith`.
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
@@ -133,6 +139,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 Support for `$filter` operators varies across Microsoft Graph APIs. The following logical operators are generally supported: 
 
 - equals (`eq`)
+- in (`in`)
 - not equals (`ne`)
 - greater than (`gt`)
 - greater than or equals (`ge`)
@@ -145,7 +152,7 @@ The `startswith` string operator is often supported. The `any` lambda operator i
 
 > **Note:** You must [specify properties in certain ways](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query) when using both `$filter` and `$orderby` in the same query to get messages.
 
-For some  usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
+For some usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
 
 The following table shows some examples that use the `$filter` query parameter.
 
@@ -153,14 +160,16 @@ The following table shows some examples that use the `$filter` query parameter.
 
 | Description | Example
 |:------------|:--------|
-| Search for users with the name Mary across multiple properties. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) 
-| Get all the signed-in user's events that start after 7/1/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) 
-| Get all emails from a specific address received by the signed-in user. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) 
-| Get all emails received by the signed-in user in April 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) 
-| Get all unread mail in the signed-in user's Inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) 
-| List all Office 365 groups in an organization. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) 
+| Search for users with the name Mary across multiple properties. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| Get all the signed-in user's events that start after 7/1/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
+| Get all emails from a specific address received by the signed-in user. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
+| Get all emails received by the signed-in user in April 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
+| Get all unread mail in the signed-in user's Inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
+| List all Microsoft 365 groups in an organization. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
 
-> **Note:** The following `$filter` operators are not supported for Azure AD resources:  `ne`, `gt`, `ge`, `lt`, `le`, and `not`. The `contains` string operator is currently not supported on any Microsoft Graph resources.
+> **Note:** Please read the documentation for the specific directory objects (Azure AD resources) to learn more about `$filter` operator support.
+> The `contains` string operator is currently not supported on any Microsoft Graph resources.
 
 ## format parameter
 
@@ -217,17 +226,29 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
- > **Note:** With Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), like [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0), you cannot combine `$orderby` with `$filter` expressions. 
+> **Note:** Combining `$orderby` and `$filter` query parameters is supported on the beta endpoint for the following AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
+>
+>- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
+>- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
+>- [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
+>- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
+>- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+>- [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta)
+>
+> To use `$orderby` and `$filter` together, you need to:
+>
+> - Add `$count=true` to the query parameters
+> - Add `ConsistencyLevel: eventual` request header
+>
+> See [optional user query parameters](/graph/api/user-list?view=graph-rest-beta&tabs=http#optional-query-parameters) for more information.
 
 ## search parameter
 
 Use the `$search` query parameter to restrict the results of a request to match a search criterion.
 
-> **Note:** You can currently search **only** [message](/graph/api/resources/message?view=graph-rest-1.0) and [person](/graph/api/resources/person?view=graph-rest-1.0) collections. A `$search` request returns up to 250 results. You cannot use [`$filter`](#filter-parameter) or [`$orderby`](#orderby-parameter) in a search request.
-
 ### Using $search on message collections
 
-You can search messages based on a value in specific message properties. The results of the search are sorted by the date and time that the message was sent.
+You can search messages based on a value in specific message properties. The results of the search are sorted by the date and time that the message was sent. A `$search` request returns up to 250 results.
 
 If you do a search on messages and specify only a value without specific message properties, the search is carried out on the default search properties of **from**, **subject**, and **body**.
 
@@ -239,7 +260,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 [Try in Graph Explorer][search-example]
 
-Alternatively, you can search messages by specifying message property names in the following table, that are recognized by the Keyword Query Language (KQL) syntax. These property names correspond to properties defined in the **message** entity of Microsoft Graph. Outlook and other Office 365 applications such as SharePoint support KQL syntax, providing the convenience of a common discovery domain for their data stores.
+Alternatively, you can search messages by specifying message property names in the following table, that are recognized by the Keyword Query Language (KQL) syntax. These property names correspond to properties defined in the **message** entity of Microsoft Graph. Outlook and other Microsoft 365 applications such as SharePoint support KQL syntax, providing the convenience of a common discovery domain for their data stores.
 
 
 | Searchable email property                | Description | Example 
@@ -249,7 +270,7 @@ Alternatively, you can search messages by specifying message property names in t
 | **body**           | The body of an email message.|[`me/messages?$search="body:excitement"`][search-body-example]
 | **cc**           | The **cc** field of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
 | **from**           | The sender of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
-| **hasAttachment** | True if an email message contains an attachment that is not an inline attachment, false otherwise. |[`me/messages?$search="hasAttachments=true"`][search-from-example]
+| **hasAttachment** | True if an email message contains an attachment that is not an inline attachment, false otherwise. |[`me/messages?$search="hasAttachments:true"`][search-from-example]
 | **importance**           | The importance of an email message, which a sender can specify when sending a message. The possible values are `low`, `medium`, or `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
 | **kind**           | The type of message. The possible values are `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks`, or `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
 | **participants**           | The **from**, **to**, **cc**, and **bcc** fields of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="participants:danas"`][search-part-example]
@@ -271,7 +292,7 @@ For more information about searchable email properties, KQL syntax, supported op
 
 ### Using $search on person collections
 
-You can use the Microsoft Graph People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. The People API supports the `$search` query parameter.
+You can use the Microsoft Graph People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. The People API supports the `$search` query parameter. A `$search` request returns up to 250 results.
 
 Searches on people occur on both the **displayName** and **emailAddress** properties of the [person](/graph/api/resources/person?view=graph-rest-1.0) resource.
 
@@ -329,6 +350,41 @@ Content-type: application/json
 ```
 
 To learn more about the People API, see [Get information about relevant people](./people-example.md#search-people).  
+
+### Using $search on directory object collections
+
+You can use the `$search` query parameter to restrict results based on a search criterion such as looking for words in strings delimited by spaces, casing, and character types (numbers and special characters). The tokenized search support works only on the displayName and description fields. Any field can be put in `$search`, fields other than **displayName** and **description** defaults to `$filter` startswith behavior. For example:
+
+`https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
+ 
+This looks for all groups with display names that look like "OneVideo". `$search` can be used together with `$filter` as well. For example: 
+ 
+`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"` 
+ 
+This looks for all mail-enabled groups with display names that look like "OneVideo". The results are restricted based on a logical conjunction (an "AND") of the `$filter` and the entire query in the `$search`. The search text is tokenized based on casing, but matches are performed in a case-insensitive manner. For example, "OneVideo" would be split into two input tokens "one" and "video", but matches properties in insensitive to case. 
+ 
+ 
+The syntax of search follows these rules: 
+ 
+- Generic format: $search="clause1" [AND | OR]  "[clauseX]". 
+- Any number of clauses is supported. Parentheses for precedence is also supported. 
+- The syntax for each clause is <property>:<text to search>. 
+- The property name must be specified in clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startswith" if search is not supported on the property. 
+- The whole clause part must be put inside double quotes.  
+- Logical operator 'AND' 'OR' must be put outside double quotes. They must be in upper case. 
+- Given that the whole clause part needs to be put inside double quotes, if <text to search> contains double quote and backslash, it needs to be escaped by backslash. No other characters need to be escaped. 
+
+The table below shows some examples. 
+ 
+
+| Object class | Description | Example |
+| ------------ | ----------- | ------- |
+| User | Address book display name of the user. |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
+| User | Address book display name or mail of the user. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
+| Group | Address book display name or description of the group. | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
+| Group | Address book display name on a mail enabled group. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
+
+Both the string inputs you provide in `$search`, as well as the searchable properties indicated above, are split up into parts by spaces, different casing, and character types (numbers and special characters).
 
 ## select parameter
 

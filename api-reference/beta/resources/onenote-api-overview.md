@@ -24,11 +24,11 @@ The `version` segment in the URL represents the version of Microsoft Graph that 
 - `v1.0` is for stable production code.
 - `beta` is to try out a feature that's in development. Features and functionality in the beta endpoint might change; we don't recommend that you use it in your production code.
 
-The location can be user notebooks on Office 365 or consumer OneDrive, group notebooks, or SharePoint site-hosted team notebooks on Office 365. 
+The location can be user notebooks on Microsoft 365 or consumer OneDrive, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365. 
 
 ![OneNote API development stack](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 
-### User notebooks
+## User notebooks
 To access personal notebooks on consumer OneDrive or OneDrive for Business, use one of the following URLs:
 
 ```
@@ -42,16 +42,19 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 > **Note:**
 > You can get user IDs by making a GET request on `https://graph.microsoft.com/v1.0/users`.
 
-### Group notebooks
+## Group notebooks
 
 To access notebooks that are owned by a group, use the following service root URL:
 
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
-### SharePoint site notebooks
+## SharePoint site notebooks
 To access notebooks that are owned by a SharePoint team site, use the following service root URL:
 
 ```
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

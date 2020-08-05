@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementSettingRegexConstraint resource type"
 description: "Constraint enforcing the setting matches against a given RegEx pattern"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementSettingRegexConstraint resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

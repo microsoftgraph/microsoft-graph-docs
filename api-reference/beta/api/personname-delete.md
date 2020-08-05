@@ -35,7 +35,7 @@ DELETE /me/profile/names/{id}
 
 ## Request headers
 
-| Name           |Description                  | 
+| Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
 | Content-Type   | application/json. Required. |
@@ -76,7 +76,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/names/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

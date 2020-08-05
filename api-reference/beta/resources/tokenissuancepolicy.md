@@ -2,7 +2,7 @@
 title: "tokenIssuancePolicy resource type"
 description: "Represents the policy to specify the characteristics of SAML tokens issued by Azure AD."
 localization_priority: Normal
-author: "davidmu1"
+author: "luleonpla"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---

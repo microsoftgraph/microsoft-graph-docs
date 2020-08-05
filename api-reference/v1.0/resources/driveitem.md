@@ -54,6 +54,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | name                 | String             | The name of the item (filename and extension). Read-write.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
+| pendingOperations    | [pendingOperations][] | If present, indicates that one or more operations that might affect the state of the driveItem are pending completion. Read-only.
 | photo                | [photo][]          | Photo metadata, if the item is a photo. Read-only.
 | publication          | [publicationFacet][] | Provides information about the published or checked-out state of an item, in locations that support such actions. This property is not returned by default. Read-only. |
 | remoteItem           | [remoteItem][]     | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
@@ -131,6 +132,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
   "package": { "@odata.type": "microsoft.graph.package" },
+  "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
   "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
@@ -191,13 +193,17 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | [Copy item](../api/driveitem-copy.md)                    | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy | Creates a copy of an driveItem (including any children).
 | [Search items](../api/driveitem-search.md)               | collection of driveItem | Search the hierarchy of items for items matching a query.
 | [List changes in a drive](../api/driveitem-delta.md)     | delta link | List any changes in the drive.
-| [List thumbnails](../api/driveitem-list-thumbnails.md)   | colletion of driveItem | List driveItems with their thumbnails. 
+| [Follow Item](../api/driveitem-follow.md)                | driveItem  | Follow a driveItem.
+| [Unfollow Item](../api/driveitem-unfollow.md)            | No content | Unfollow a driveItem.
+| [List thumbnails](../api/driveitem-list-thumbnails.md)   | collection of driveItem | List driveItems with their thumbnails. 
 | [Create sharing link](../api/driveitem-createlink.md)    | sharing link | Create a link to share the driveItem.
 | [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing ivite to a user.
 | [List permissions](../api/driveitem-list-permissions.md) | collection of [permission][] | Retrieves the collection of permissions on an driveItem.
 | [Delete permission](../api/permission-delete.md)         | No Content | Removes the permission from the driveItem.
 | [Get WebSocket channel][getWebSocket]                    | [subscription][] | Receives near-real-time change notifications for a drive using socket.io.
 | [Preview item][item-preview]                             | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.
+| [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -213,7 +219,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [folder]: folder.md
 [getting previous versions]: ../api/driveitem-list-versions.md
 [getting thumbnails]: ../api/driveitem-list-thumbnails.md
-[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[getWebSocket]: ../api/subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md
@@ -223,6 +229,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [listItem]: listitem.md
 [package]: package.md
 [permission]: permission.md
+[pendingOperations]: pendingoperations.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
 [root]: root.md

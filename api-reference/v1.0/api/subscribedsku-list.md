@@ -2,7 +2,7 @@
 title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
 localization_priority: Priority
-author: "davidmu1"
+author: "SumitParikh"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

@@ -8,11 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var users = await graphClient.Users
 	.Request()
-	.Select( e => new {
-			 e.DisplayName,
-			 e.UserPrincipalName,
-			 e.SignInActivity 
-			 })
+	.Select("displayName,userPrincipalName,signInActivity")
 	.GetAsync();
 
 ```

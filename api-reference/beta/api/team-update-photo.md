@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the photo (picture) for a team. The following are the supported sizes of HD photos in Office 365: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648 pixels. Photos can be any dimension if they are stored in Azure Active Directory.
+Update the photo (picture) for a team. The following are the supported sizes of HD photos in Microsoft 365: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648 pixels. Photos can be any dimension if they are stored in Azure Active Directory.
 
 > [!Note]
 > There is a limit of 4 MB on the total size of the request. This limits the photo size to less than 4 MB.
@@ -24,9 +24,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | TeamSettings.Edit.Group*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
+
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 
@@ -35,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 }-->
 
 ```http
-PUT /beta/teams/{id}/photo
+PUT /teams/{id}/photo
 ```
 
 ## Request headers

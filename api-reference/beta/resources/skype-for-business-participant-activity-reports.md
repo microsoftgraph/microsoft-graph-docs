@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 You can get details on conferencing activity across your organization. These details are very helpful when you are investigating, planning, and making other business decisions for your organization.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business conference participant activity](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - Skype for Business conference participant activity](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).
 
 ## Reports
 

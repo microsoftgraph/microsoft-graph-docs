@@ -10,16 +10,16 @@ var agreement = new Agreement
 {
 	DisplayName = "MSGraph Sample",
 	IsViewingBeforeAcceptanceRequired = true,
-	Files = new List<AgreementFile>()
+	Files = (IAgreementFilesCollectionPage)new List<AgreementFileLocalization>()
 	{
-		new AgreementFile
+		new AgreementFileLocalization
 		{
 			FileName = "TOU.pdf",
 			Language = "en",
 			IsDefault = true,
 			FileData = new AgreementFileData
 			{
-				Data = "SGVsbG8gd29ybGQ="
+				Data = Encoding.ASCII.GetBytes("SGVsbG8gd29ybGQ=")
 			}
 		}
 	}

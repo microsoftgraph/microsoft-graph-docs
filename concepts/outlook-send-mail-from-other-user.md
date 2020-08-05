@@ -53,13 +53,13 @@ This is exposed in Microsoft Graph as the `sender` (user that actually sent the 
 }
 ```
 
-A user can grant this permission for their own mailbox to another user by [using Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926). Administrators can grant this permission for any mailbox, group, or distribution list in the [Office 365 admin center](/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide).
+A user can grant this permission for their own mailbox to another user by [using Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926). Administrators can grant this permission for any mailbox, group, or distribution list in the [Microsoft 365 admin center](/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide).
 
 #### Send As
 
 With this permission, there is no indication that the message was sent as a different user. The `sender` and `from` properties have the same value.
 
-Users cannot grant this permission to their mailboxes. Admins can grant this permission in the Office 365 admin center.
+Users cannot grant this permission to their mailboxes. Admins can grant this permission in the Microsoft 365 admin center.
 
 ## Sending with Microsoft Graph
 

@@ -50,19 +50,39 @@ If successful, this method returns a `200 OK` response code and a [team](../reso
 ## Example
 #### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_team"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
@@ -72,24 +92,27 @@ Content-type: application/json
 Content-length: 401
 
 {
-  "isArchived" : false,
+  "isArchived": false,
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
+  },
   "memberSettings": {
     "allowCreateUpdateChannels": true,
     "allowDeleteChannels": true,
     "allowAddRemoveApps": true,
     "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
+    "allowCreateUpdateRemoveConnectors": true
   },
   "guestSettings": {
     "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
+    "allowDeleteChannels": true
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
     "allowOwnerDeleteMessages": true,
     "allowTeamMentions": true,
-    "allowChannelMentions": true    
+    "allowChannelMentions": true
   },
   "funSettings": {
     "allowGiphy": true,

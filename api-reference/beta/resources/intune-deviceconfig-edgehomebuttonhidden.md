@@ -1,13 +1,15 @@
 ---
 title: "edgeHomeButtonHidden resource type"
 description: "Hide the home button."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # edgeHomeButtonHidden resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

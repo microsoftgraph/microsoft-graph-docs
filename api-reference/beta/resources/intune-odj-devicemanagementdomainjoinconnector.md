@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementDomainJoinConnector resource type"
 description: "A Domain Join Connector is a connector that is responsible to allocate (and delete) machine account blobs"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementDomainJoinConnector resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

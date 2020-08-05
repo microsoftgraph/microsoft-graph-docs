@@ -2,7 +2,7 @@
 title: "List extensionProperties"
 description: "Retrieve a list of extensionproperty objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All |
+|Application | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## HTTP request
 

@@ -35,10 +35,11 @@ GET /groups/{group-id}/drive/items/{item-id}
 GET /groups/{group-id}/drive/root:/{item-path}
 GET /me/drive/items/{item-id}
 GET /me/drive/root:/{item-path}
-GET /sites/{siteId}/drive/items/{itemId}
-GET /sites/{siteId}/drive/root:/{item-path}
-GET /users/{userId}/drive/items/{itemId}
-GET /users/{userId}/drive/root:/{item-path}
+GET /sites/{site-id}/drive/items/{item-id}
+GET /sites/{site-id}/drive/root:/{item-path}
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem
+GET /users/{user-id}/drive/items/{item-id}
+GET /users/{user-id}/drive/root:/{item-path}
 ```
 
 ## Optional query parameters
@@ -46,6 +47,10 @@ GET /users/{userId}/drive/root:/{item-path}
 This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.
 
 You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.
+
+You can also use the `includeDeletedItems=true` query parameter to return deleted items.
+This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise will be ignored.
+This is currently only supported on OneDrive Personal.
 
 ## Optional request headers
 

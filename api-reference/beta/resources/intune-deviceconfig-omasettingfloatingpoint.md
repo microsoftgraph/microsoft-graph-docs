@@ -1,13 +1,15 @@
 ---
 title: "omaSettingFloatingPoint resource type"
 description: "OMA Settings Floating Point definition."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # omaSettingFloatingPoint resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -42,7 +44,7 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": "<Unknown Primitive Type Edm.Single>"
+  "value": 4.2
 }
 ```
 

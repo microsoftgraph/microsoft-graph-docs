@@ -1,7 +1,7 @@
 ---
 title: "ipRange resource type"
 description: "IP range base class for representing IPV4, IPV6 address ranges"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -34,6 +34,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
+
+
+
 
 
 

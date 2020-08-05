@@ -1,13 +1,15 @@
 ---
 title: "keyTypedValuePair resource type"
 description: "A key-value pair with a string key and a typed value."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # keyTypedValuePair resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

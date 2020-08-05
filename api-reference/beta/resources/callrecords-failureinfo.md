@@ -15,12 +15,19 @@ Namespace: microsoft.graph.callRecords
 
 Represents information about why a call or portion of a call failed.
 
+The failure can be of two types: 
+
+- Call setup failure
+- Mid-call drop
+
+If one or more media streams have any of these failures, that failure is propagated at the segment level. If one or more segments have any of these failures, that failure is propagated at the session level.
+
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |reason|String|Classification of why a call or portion of a call failed.|
-|stage|String|The stage when the failure occurred. Possible values are: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
+|stage|microsoft.graph.callRecords.failureStage|The stage when the failure occurred. Possible values are: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
 
 ## JSON representation
 

@@ -15,6 +15,8 @@ Contains information about a user's presence, including their availability and u
 
 > **Note:** This resource is currently only supported for Microsoft Teams users.
 
+This resource supports subscribing to [change notifications](/graph/webhooks).
+
 ## Methods
 
 | Method                                                            | Return Type                                       | Description                                  |

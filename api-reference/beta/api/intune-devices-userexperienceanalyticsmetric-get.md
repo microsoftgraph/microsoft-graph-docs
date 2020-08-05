@@ -1,13 +1,15 @@
 ---
 title: "Get userExperienceAnalyticsMetric"
 description: "Read properties and relationships of the userExperienceAnalyticsMetric object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get userExperienceAnalyticsMetric
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -64,18 +66,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 223
+Content-Length: 204
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
     "id": "1371822e-822e-1371-2e82-71132e827113",
-    "value": "<Unknown Primitive Type Edm.Double>",
+    "value": 1.6666666666666667,
     "unit": "Unit value"
   }
 }
 ```
-
 
 
 

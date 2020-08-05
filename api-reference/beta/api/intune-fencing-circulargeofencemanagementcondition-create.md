@@ -1,13 +1,15 @@
 ---
 title: "Create circularGeofenceManagementCondition"
 description: "Create a new circularGeofenceManagementCondition object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create circularGeofenceManagementCondition
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -71,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managementConditions
 Content-type: application/json
-Content-length: 444
+Content-length: 371
 
 {
   "@odata.type": "#microsoft.graph.circularGeofenceManagementCondition",
@@ -82,9 +84,9 @@ Content-length: 444
   "applicablePlatforms": [
     "androidForWork"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": 2.6666666666666665,
+  "longitude": 3.0,
+  "radiusInMeters": 4.666666666666667
 }
 ```
 
@@ -93,7 +95,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 612
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.circularGeofenceManagementCondition",
@@ -107,12 +109,11 @@ Content-Length: 612
   "applicablePlatforms": [
     "androidForWork"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": 2.6666666666666665,
+  "longitude": 3.0,
+  "radiusInMeters": 4.666666666666667
 }
 ```
-
 
 
 

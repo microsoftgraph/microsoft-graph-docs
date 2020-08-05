@@ -2,7 +2,7 @@
 title: "Get bookingCustomer"
 description: "Get the properties and relationships of a bookingCustomer object."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---

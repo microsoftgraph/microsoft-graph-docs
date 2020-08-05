@@ -14,7 +14,7 @@ var device = new Device
 		new AlternativeSecurityId
 		{
 			Type = 2,
-			Key = "base64Y3YxN2E1MWFlYw=="
+			Key = Encoding.ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
 		}
 	},
 	DeviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff",

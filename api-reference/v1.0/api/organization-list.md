@@ -2,7 +2,7 @@
 title: "List organization"
 description: "Retrieve a list of organization objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -53,7 +53,7 @@ Here is an example of the request.
   "name": "get_organization"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization
+GET https://graph.microsoft.com/v1.0/organization
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-csharp-snippets.md)]
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/organization
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

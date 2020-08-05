@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/me/events/AAMkADAGu0AABIGYDZAAA=')
-	.version('beta')
 	.select('isOnlineMeeting,onlineMeetingProvider,onlineMeeting')
 	.get();
 

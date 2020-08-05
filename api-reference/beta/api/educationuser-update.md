@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduRoster.ReadWrite.All                     |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /education/me
 PATCH /education/users/{id}
@@ -34,30 +36,29 @@ PATCH /education/users/{id}
 
 ## Request headers
 
-| Header        | Value                     |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json. Required.       |
+| Header        | Value                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property         | Type                                                 | Description                                                                                                                                      |
-| :--------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | String                                               | Display Name of User                                                                                                                             |
-| givenName        | String                                               | First Name                                                                                                                                       |
-| middleName       | String                                               | Middle Name of user                                                                                                                              |
-| surname          | String                                               | Surname of user                                                                                                                                  |
-| mail             | String                                               | email address                                                                                                                                    |
-| mobilePhone      | String                                               | Mobile number of user                                                                                                                            |
-| externalSource   | string                                               | Possible values are: `sis`, `manual`, `enum_sentinel`.                                                                                           |
-| externalSource   | string                                               | Where this user was created from.  Possible values are: `sis`, `manual`, `enum_sentinel`.                                                        |
-| mailingAddress   | [physicalAddress](../resources/physicaladdress.md)   | Mail address of user.                                                                                                                            |
-| residenceAddress | [physicalAddress](../resources/physicaladdress.md)   | Address where user lives.                                                                                                                        |
-| primaryRole      | string                                               | Default Role for a user.  The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`. |
-| student          | [educationStudent](../resources/educationstudent.md) | If the primary role is student, this block will contain student specific data.                                                                   |
-| teacher          | [educationTeacher](../resources/educationteacher.md) | If the primary role is teacher, this block will contain teacher specific data.                                                                   |
+| Property         | Type               | Description                                                                                                                                     |
+| :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName      | String             | Display Name of User                                                                                                                            |
+| givenName        | String             | First Name                                                                                                                                      |
+| middleName       | String             | Middle Name of user                                                                                                                             |
+| surname          | String             | Surname of user                                                                                                                                 |
+| mail             | String             | email address                                                                                                                                   |
+| mobilePhone      | String             | Mobile number of user                                                                                                                           |
+| externalSource   | string             | Where this user was created from. Possible values are: `sis`, `manual`, or `lms`.                                                               |
+| mailingAddress   | [physicalAddress]  | Mail address of user. Note: `type` and `postOfficeBox` are not supported for `educationUser` resources.                                         |
+| residenceAddress | [physicalAddress]  | Address where user lives. Note: `type` and `postOfficeBox` are not supported for `educationUser` resources.                                     |
+| primaryRole      | string             | Default Role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`. |
+| student          | [educationStudent] | If the primary role is student, this block will contain student specific data.                                                                  |
+| teacher          | [educationTeacher](../resources/educationteacher.md) | If the primary role is teacher, this block will contain teacher specific data.                                                                  |
 
 ## Response
 
@@ -70,10 +71,12 @@ If successful, this method returns a `200 OK` response code and updated [educati
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_educationuser"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/education/users/13020
 Content-type: application/json
@@ -86,15 +89,19 @@ Content-length: 508
   "surname": "Cazares",
 }
 ```
+
 # [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,6 +116,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "truncated": true,
   "@odata.type": "microsoft.graph.educationUser"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -165,3 +173,6 @@ Content-length: 508
   ]
 }
 -->
+
+[physicaladdress]: ../resources/physicaladdress.md
+[educationstudent]: ../resources/educationstudent.md

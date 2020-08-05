@@ -14,7 +14,7 @@ const approve = {
   message: "message-value"
 };
 
-let res = await client.api('/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approve')
+let res = await client.api('/teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approve')
 	.version('beta')
 	.post(approve);
 

@@ -1,13 +1,15 @@
 ---
 title: "Create deviceManagementCachedReportConfiguration"
 description: "Create a new deviceManagementCachedReportConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create deviceManagementCachedReportConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -51,6 +53,7 @@ The following table shows the properties that are required when you create the d
 |filter|String|Filters applied on report creation.|
 |select|String collection|Columns selected from the report|
 |orderBy|String collection|Ordering of columns in the report|
+|metadata|String|Caller-managed metadata associated with the report|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed|
 |expirationDateTime|DateTimeOffset|Time that the cached report expires|
@@ -67,7 +70,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/reports/cachedReportConfigurations
 Content-type: application/json
-Content-length: 385
+Content-length: 418
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementCachedReportConfiguration",
@@ -79,6 +82,7 @@ Content-length: 385
   "orderBy": [
     "Order By value"
   ],
+  "metadata": "Metadata value",
   "status": "notStarted",
   "lastRefreshDateTime": "2016-12-31T23:58:49.97047-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
@@ -90,7 +94,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 434
+Content-Length: 467
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementCachedReportConfiguration",
@@ -103,12 +107,12 @@ Content-Length: 434
   "orderBy": [
     "Order By value"
   ],
+  "metadata": "Metadata value",
   "status": "notStarted",
   "lastRefreshDateTime": "2016-12-31T23:58:49.97047-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

@@ -26,15 +26,18 @@ The following example uses the provider in HTML (via CDN).
 <mgt-teams-provider
   client-id="<YOUR_CLIENT_ID>"
   auth-popup-url="https://<YOUR-DOMAIN>.com/AUTH-PATH"
+  authority=""
 ></mgt-teams-provider>
 ```
 
 | Attribute | Description |
-| --- | --- | --- |
-| client-id   | String client ID (see Configure your Teams app). Required. |
-| auth-popup-url  | Absolute or relative path to the page that will handle auth in the popup (see Create the popup page). Required. |
+| --- | --- |
+| client-id   | String client ID (see [Configure your Teams app](#configure-your-teams-app). Required. |
+| auth-popup-url  | Absolute or relative path to the page that will handle auth in the popup (see [Create the popup page](#create-the-popup-page)). Required. |
 | scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional. |
 | depends-on | Element selector string of another higher-priority provider component. Optional. |
+| authority    | Authority string. The default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
+
 
 ### via NPM
 The following example uses the provider in JS modules (via NPM).

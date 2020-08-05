@@ -1,17 +1,17 @@
 ---
-title: "Working with Office 365 usage reports in Microsoft Graph"
-description: "With Microsoft Graph, you can access Office 365 usage reports resources to get the information about how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all."
+title: "Working with Microsoft 365 usage reports in Microsoft Graph"
+description: "With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all."
 localization_priority: Priority
 ms.prod: "reports"
 author: "pranoychaudhuri"
 doc_type: conceptualPageType
 ---
 
-# Working with Office 365 usage reports in Microsoft Graph
+# Working with Microsoft 365 usage reports in Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-With Microsoft Graph, you can access Office 365 usage reports resources to get the information about how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all.
+With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all.
 
 ## Authorization
 
@@ -41,6 +41,9 @@ The original Reports APIs have been updated so you can call the API for the spec
 | YammerActivity          | <ul><li>[getYammerActivityUserDetail](../api/reportroot-getyammeractivityuserdetail.md)</li><li>[getYammerActivityCounts](../api/reportroot-getyammeractivitycounts.md)</li><li>[getYammerActivityUserCounts](../api/reportroot-getyammeractivityusercounts.md)</li></ul> |
 | YammerDeviceUsage       | <ul><li>[getYammerDeviceUsageUserDetail](../api/reportroot-getyammerdeviceusageuserdetail.md)</li><li>[getYammerDeviceUsageDistributionUserCounts](../api/reportroot-getyammerdeviceusagedistributionusercounts.md)</li><li>[getYammerDeviceUsageUserCounts](../api/reportroot-getyammerdeviceusageusercounts.md)</li></ul> |
 | YammerGroupsActivity    | <ul><li>[getYammerGroupsActivityDetail](../api/reportroot-getyammergroupsactivitydetail.md)</li><li>[getYammerGroupsActivityGroupCounts](../api/reportroot-getyammergroupsactivitygroupcounts.md)</li><li>[getYammerGroupsActivityCounts](../api/reportroot-getyammergroupsactivitycounts.md)</li></ul> |
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object by using its URL path.
 
-The location can be user notebooks on Office 365, group notebooks, or SharePoint site-hosted team notebooks on Office 365.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

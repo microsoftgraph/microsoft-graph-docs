@@ -1,13 +1,15 @@
 ---
 title: "windowsUpdateState resource type"
 description: "Not yet documented"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsUpdateState resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -32,7 +34,7 @@ Not yet documented
 |userId|String|The id of the user.|
 |deviceDisplayName|String|Device display name.|
 |userPrincipalName|String|User principal name.|
-|status|windowsUpdateStatus|Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status||Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |qualityUpdateVersion|String|The Quality Update Version of the device.|
 |featureUpdateVersion|String|The current feature update version of the device.|
 |lastScanDateTime|DateTimeOffset|The date time that the Windows Update Agent did a successful scan.|

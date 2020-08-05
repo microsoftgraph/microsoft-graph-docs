@@ -8,21 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var index = 5;
 
-var values = new List<Json>()
-{
-	new List<Json>()
-{
-	1,
-	2,
-	3
-},
-	new List<Json>()
-{
-	4,
-	5,
-	6
-}
-};
+var values = JToken.Parse("[[1,2,3],[4,5,6]]");
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Rows
 	.Add(index,values)

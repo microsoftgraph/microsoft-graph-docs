@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityProviders/Amazon-OAuth')
+let res = await client.api('/identityProviders')
 	.version('beta')
 	.get();
 

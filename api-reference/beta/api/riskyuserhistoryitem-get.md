@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers/{userid}/history/{id}
+GET /identityProtection/riskyUsers/{userid}/history/{id}
 ```
 
 
@@ -44,8 +45,10 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object in the response body.
-## Example
-##### Request
+
+## Examples
+### Example 1: Get history of a risky user
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -71,7 +74,7 @@ GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e7
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -102,6 +105,63 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Get history of a risky user
+#### Request
+Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_riskyuser_historyitem",
+  "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyuser-historyitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-riskyuser-historyitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-riskyuser-historyitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskyUserHistoryItem"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+    "isDeleted": false,
+    "isGuest": false,
+    "isProcessing": false,
+    "riskLevel": "none",
+    "riskState": "remediated",
+    "riskDetail": "userPerformedSecuredPasswordReset",
+    "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
+    "userDisplayName": "Allan Deyoung",
+    "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+    "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+    "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
+    "activity": {
+        "eventTypes": [],
+        "detail": "userPerformedSecuredPasswordReset"
+    }
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

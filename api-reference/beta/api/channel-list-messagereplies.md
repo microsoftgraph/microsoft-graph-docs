@@ -22,9 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All,Group.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application| ChannelMessage.Read.All, Group.Read.All,Group.ReadWrite.All|
+|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -49,7 +51,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/channel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/chatmessage.md) objects in the response body.
 ## Example
 ##### Request
 In this example, the specified message has two replies. Each reply has one or more [chatMessageMention](../resources/chatmessagemention.md) objects.

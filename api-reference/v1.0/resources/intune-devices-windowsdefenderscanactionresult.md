@@ -1,7 +1,7 @@
 ---
 title: "windowsDefenderScanActionResult resource type"
 description: "Windows Defender last scan result"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -47,6 +47,9 @@ Here is a JSON representation of the resource.
   "scanType": "String"
 }
 ```
+
+
+
 
 
 

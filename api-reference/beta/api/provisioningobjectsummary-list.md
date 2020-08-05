@@ -2,7 +2,7 @@
 title: "List provisioningObjectSummary"
 description: "Get all provisioning events that occurred in your tenant."
 localization_priority: Normal
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -19,7 +19,7 @@ Get all provisioning events that occurred in your tenant, such as the deletion o
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
+|Permission type | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |

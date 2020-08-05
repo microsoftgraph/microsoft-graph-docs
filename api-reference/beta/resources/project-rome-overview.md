@@ -52,3 +52,5 @@ You can use the following Microsoft Graph APIs to communicate with other Windows
 - [Send a command to a device](../api/send-device-command.md)
 - [Get command status](../api/get-device-command-status.md)
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

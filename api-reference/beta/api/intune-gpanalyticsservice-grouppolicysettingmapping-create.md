@@ -1,13 +1,15 @@
 ---
 title: "Create groupPolicySettingMapping"
 description: "Create a new groupPolicySettingMapping object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create groupPolicySettingMapping
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -144,7 +146,6 @@ Content-Length: 1006
   "intuneSettingDefinitionId": "Intune Setting Definition Id value"
 }
 ```
-
 
 
 

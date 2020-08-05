@@ -1,13 +1,15 @@
 ---
 title: "Get windows10TeamGeneralConfiguration"
 description: "Read properties and relationships of the windows10TeamGeneralConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windows10TeamGeneralConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -122,7 +124,6 @@ Content-Length: 2310
   }
 }
 ```
-
 
 
 

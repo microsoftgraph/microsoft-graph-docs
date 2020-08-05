@@ -32,7 +32,8 @@ where files are shared, and where tabs are added.
 |[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property   | Type | Description|
 |:---------------|:--------|:----------|
 |description|String|Optional textual description for the channel.|
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
@@ -41,9 +42,12 @@ where files are shared, and where tabs are added.
 |webUrl|String|A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 
 ## Relationships
-| Relationship | Type	|Description|
+
+| Relationship | Type | Description|
 |:---------------|:--------|:----------|
+|messages|[chatMessage](./chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
+|[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
 
 
 ## JSON representation

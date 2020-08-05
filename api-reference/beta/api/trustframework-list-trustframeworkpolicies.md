@@ -2,7 +2,7 @@
 title: "List trustFrameworkPolicies"
 description: "This operation lists all trustFrameworkPolicy objects in an Azure AD B2C tenant."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

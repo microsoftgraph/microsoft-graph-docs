@@ -3,8 +3,8 @@ title: "Export governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests in the format `application/octet-stream`, which can be parsed as a .csv file in the browser."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
-ms.prod: "microsoft-identitiy-platform"
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # Export governanceRoleAssignmentRequests

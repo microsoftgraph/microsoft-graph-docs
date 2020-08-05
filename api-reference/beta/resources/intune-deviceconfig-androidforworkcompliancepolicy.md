@@ -1,13 +1,15 @@
 ---
 title: "androidForWorkCompliancePolicy resource type"
 description: "This class contains compliance settings for Android for Work."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidForWorkCompliancePolicy resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

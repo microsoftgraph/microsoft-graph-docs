@@ -1,13 +1,15 @@
 ---
 title: "windowsFeatureUpdateProfile resource type"
 description: "Windows Feature Update Profile"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsFeatureUpdateProfile resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -34,6 +36,7 @@ Windows Feature Update Profile
 |featureUpdateVersion|String|The feature update version that will be deployed to the devices targeted by this profile. The version could be any supported version for example 1709, 1803 or 1809 and so on.|
 |createdDateTime|DateTimeOffset|The date time that the profile was created.|
 |lastModifiedDateTime|DateTimeOffset|The date time that the profile was last modified.|
+|roleScopeTagIds|String collection|List of Scope Tags for this Feature Update entity.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -57,7 +60,10 @@ Here is a JSON representation of the resource.
   "description": "String",
   "featureUpdateVersion": "String",
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 

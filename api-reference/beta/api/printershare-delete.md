@@ -29,7 +29,7 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShares/{id}
+DELETE /print/shares/{id}
 DELETE /print/printers/{id}/share
 ```
 ## Request headers
@@ -53,7 +53,7 @@ The following is an example of the request.
   "name": "delete_printershare"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShares/{id}
+DELETE https://graph.microsoft.com/beta/print/shares/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-printershare-csharp-snippets.md)]

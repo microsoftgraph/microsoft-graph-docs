@@ -9,11 +9,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversation = new Conversation
 {
 	Topic = "Does anyone have a second?",
-	Threads = new List<ConversationThread>()
+	Threads = (IConversationThreadsCollectionPage)new List<ConversationThread>()
 	{
 		new ConversationThread
 		{
-			Posts = new List<Post>()
+			Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
 			{
 				new Post
 				{
@@ -22,22 +22,16 @@ var conversation = new Conversation
 						ContentType = BodyType.Html,
 						Content = "This is urgent!"
 					},
-					Extensions = new List<Extension>()
+					Extensions = (IPostExtensionsCollectionPage)new List<Extension>()
 					{
-						new Extension
+						new OpenTypeExtension
 						{
+							ExtensionName = "Com.Contoso.Benefits",
 							AdditionalData = new Dictionary<string, object>()
 							{
-								{"@odata.type","microsoft.graph.openTypeExtension"}
-							},
-							ExtensionName = "Com.Contoso.Benefits",
-							CompanyName = "Contoso",
-							ExpirationDate = "2016-08-03T11:00:00Z",
-							TopPicks = new List<String>()
-							{
-								"Employees only",
-								"Add spouse or guest",
-								"Add family"
+								{"companyName", "Contoso"},
+								{"expirationDate", "2016-08-03T11:00:00Z"},
+								{"topPicks", "[\"Employees only\",\"Add spouse or guest\",\"Add family\"]"}
 							}
 						}
 					}

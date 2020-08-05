@@ -1,13 +1,15 @@
 ---
 title: "groupPolicyPresentationValueMultiText resource type"
 description: "The entity represents a string value of a multi-line text box presentation on a policy definition."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueMultiText resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

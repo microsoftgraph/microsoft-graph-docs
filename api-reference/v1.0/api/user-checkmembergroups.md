@@ -1,9 +1,9 @@
 ---
 title: "checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those groups of which"
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 Check for membership in the specified list of groups. Returns from the list those groups of which
 the user has a direct or transitive membership.
 
-You can check up to a maximum of 20 groups per request. This function supports Office 365 and other
-types of groups provisioned in Azure AD. Note that Office 365 Groups cannot contain groups. So membership
-in an Office 365 Group is always direct.
+You can check up to a maximum of 20 groups per request. This function supports Microsoft 365 and other
+types of groups provisioned in Azure AD. Note that Microsoft 365 groups cannot contain groups. So membership
+in a Microsoft 365 group is always direct.
 
 ## Permissions
 

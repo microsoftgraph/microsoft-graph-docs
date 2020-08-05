@@ -2,7 +2,7 @@
 title: "Update countryNamedlocation"
 description: "Update the properties of a countryNamedLocation object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -21,16 +21,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess |
+| Delegated (work or school account)     | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /conditionalAccess/namedLocations/{id}
+PATCH /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## Request headers
@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
+PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
 Content-type: application/json
 
 {
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-countrynamedlocation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-countrynamedlocation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

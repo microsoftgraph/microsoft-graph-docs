@@ -1,13 +1,15 @@
 ---
 title: "androidPermissionAction resource type"
 description: "Mapping between an Android app permission and the action Android should take when that permission is requested."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidPermissionAction resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

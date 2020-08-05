@@ -30,7 +30,8 @@ const user = {
     }
   ],
   "passwordProfile" : {
-    password: "password-value"
+    password: "password-value",
+    forceChangePasswordNextSignIn: false
   },
   passwordPolicies: "DisablePasswordExpiration"
 };

@@ -1,7 +1,7 @@
 ---
 title: "event resource type"
 description: "An event in a calendar."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: resourcePageType
@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An event in a [user](user.md) calendar, or the default calendar of an Office 365 [group](group.md).
+An event in a [user](user.md) calendar, or the default calendar of a Microsoft 365 [group](group.md).
 
-The maximum number of attendees included in an **event**, and the maximum number of reciepients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+The maximum number of attendees included in an **event**, and the maximum number of recipients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 This resource supports:
 
@@ -60,6 +60,7 @@ by providing a [delta](../api/event-delta.md) function.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|allowNewTimeProposals| Boolean | `True` if the meeting organizer allows invitees to propose a new time when responding, `false` otherwise. Optional. Default is `true`. |
 |attendees|[attendee](attendee.md) collection|The collection of attendees for the event.|
 |body|[itemBody](itembody.md)|The body of the message associated with the event. It can be in HTML or text format.|
 |bodyPreview|String|The preview of the message associated with the event. It is in text format.|
@@ -73,11 +74,14 @@ by providing a [delta](../api/event-delta.md) function.
 |importance|importance|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
+|isOnlineMeeting|Boolean| `True` if this event has online meeting information, `false` otherwise. Default is false. Optional.|
 |isOrganizer|Boolean|Set to true if the calendar owner (specified by the **owner** property of the [calendar](calendar.md)) is the organizer of the event (specified by the **organizer** property of the **event**). This also applies if a delegate organized the event on behalf of the owner.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|The location of the event.|
 |locations|[location](location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
+|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Details for an attendee to join the meeting online. Read-only.|
+|onlineMeetingProvider|onlineMeetingProviderType| Represents the online meeting service provider. The possible values are `teamsForBusiness`, `skypeForBusiness`, and `skypeForConsumer`. Optional. |
 |onlineMeetingUrl|String|A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Skype meeting. Read-only.|
 |organizer|[recipient](recipient.md)|The organizer of the event.|
 |originalEndTimeZone|String|The end time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook.|
@@ -85,7 +89,7 @@ by providing a [delta](../api/event-delta.md) function.
 |originalStartTimeZone|String|The start time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
-|responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
+|responseRequested|Boolean|Default is true, which represents the organizer would like an invitee to send a response to the event.|
 |responseStatus|[responseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
 |sensitivity|sensitivity| The possible values are: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|The ID for the recurring series master item, if this event is part of a recurring series.|
@@ -186,6 +190,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
+  "allowNewTimeProposals": "Boolean",
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
@@ -199,11 +204,14 @@ Here is a JSON representation of the resource
   "importance": "String",
   "isAllDay": true,
   "isCancelled": true,
+  "isOnlineMeeting": true,
   "isOrganizer": true,
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
+  "onlineMeetingProvider": "string",
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",

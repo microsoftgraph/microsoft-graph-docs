@@ -2,7 +2,7 @@
 title: "List organization"
 description: "Retrieve a list of organization objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

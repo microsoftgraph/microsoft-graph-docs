@@ -1,7 +1,7 @@
 ---
 title: "termsAndConditions resource type"
 description: "A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -18,7 +18,7 @@ A termsAndConditions entity represents the metadata and contents of a given Term
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List termsAndConditionses](../api/intune-companyterms-termsandconditions-list.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) collection|List properties and relationships of the [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) objects.|
+|[List termsAndConditions](../api/intune-companyterms-termsandconditions-list.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) collection|List properties and relationships of the [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) objects.|
 |[Get termsAndConditions](../api/intune-companyterms-termsandconditions-get.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Read properties and relationships of the [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.|
 |[Create termsAndConditions](../api/intune-companyterms-termsandconditions-create.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Create a new [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.|
 |[Delete termsAndConditions](../api/intune-companyterms-termsandconditions-delete.md)|None|Deletes a [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
@@ -65,6 +65,9 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
+
+
+
 
 
 

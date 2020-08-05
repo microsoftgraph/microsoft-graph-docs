@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.me().drive().items("{id}").workbook().names("{name}")
+WorkbookRange workbookRange = graphClient.me().drive().items("{id}").workbook().names("{name}")
 	.range()
 	.buildRequest()
-	.post();
+	.get();
 
 ```

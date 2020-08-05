@@ -1,7 +1,7 @@
 ---
 title: "deviceExchangeAccessStateSummary resource type"
 description: "Device Exchange Access State summary"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -44,6 +44,9 @@ Here is a JSON representation of the resource.
   "unavailableDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

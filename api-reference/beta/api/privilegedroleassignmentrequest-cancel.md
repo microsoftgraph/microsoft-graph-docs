@@ -3,8 +3,8 @@ title: "Cancel privilegedRoleAssignmentRequest"
 description: "Cancel a privilegedRoleAssignmentRequest."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # Cancel privilegedRoleAssignmentRequest

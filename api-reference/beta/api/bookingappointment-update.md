@@ -2,7 +2,7 @@
 title: "Update bookingappointment"
 description: "Update the properties of a bookingAppointment object in the specified bookingbusiness."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---

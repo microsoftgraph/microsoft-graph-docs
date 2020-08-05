@@ -1,13 +1,15 @@
 ---
 title: "configurationUsage enum type"
 description: "Possible values of the ConfigurationUsage list."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # configurationUsage enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,6 +23,7 @@ Possible values of the ConfigurationUsage list.
 |blocked|0|Disallowed.|
 |required|1|Required.|
 |allowed|2|Optional.|
+|notConfigured|3|Not Configured.|
 
 
 

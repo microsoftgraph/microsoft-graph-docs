@@ -1,13 +1,15 @@
 ---
 title: "microsoftStoreForBusinessApp resource type"
 description: "Microsoft Store for Business Apps. This class does not support Create, Delete, or Update."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # microsoftStoreForBusinessApp resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

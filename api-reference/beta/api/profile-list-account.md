@@ -1,6 +1,6 @@
 ---
 title: "List accounts"
-description: "Retrieve a list of useraccountinformation objects."
+description: "Retrieve a list of userAccountInformation objects."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"

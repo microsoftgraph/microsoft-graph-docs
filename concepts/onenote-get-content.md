@@ -1,6 +1,6 @@
 ---
 title: "Get OneNote content and structure with Microsoft Graph"
-description: " Enterprise notebooks on Office 365"
+description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
 localization_priority: Priority
 ms.prod: "onenote"
@@ -8,7 +8,7 @@ ms.prod: "onenote"
 
 # Get OneNote content and structure with Microsoft Graph
 
-**Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
+**Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
 To get OneNote content and structure, you send a GET request to the target endpoint. For example:
 

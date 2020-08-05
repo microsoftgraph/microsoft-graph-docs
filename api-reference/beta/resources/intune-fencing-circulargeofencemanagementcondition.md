@@ -1,13 +1,15 @@
 ---
 title: "circularGeofenceManagementCondition resource type"
 description: "Contains the information to define a circular geo-fence management condition, an area of interest, to monitor."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # circularGeofenceManagementCondition resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -68,9 +70,9 @@ Here is a JSON representation of the resource.
   "applicablePlatforms": [
     "String"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": "4.2",
+  "longitude": "4.2",
+  "radiusInMeters": 4.2
 }
 ```
 

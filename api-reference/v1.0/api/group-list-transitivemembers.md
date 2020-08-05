@@ -1,7 +1,7 @@
 ---
 title: "List group transitive members"
 description: "Get a list of the group's members. A group can have users, devices, organizational contacts, and other groups as members. This operation is transitive and returns a flat list of all nested members."
-author: "anchanda"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All, Application.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, User.Read.All |
+|Application | Directory.Read.All, User.Read.All, Application.Read.All |
 
 >**Note:** To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
 

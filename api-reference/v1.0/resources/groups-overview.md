@@ -1,7 +1,7 @@
 ---
 title: "Working with groups in Microsoft Graph"
 description: "Groups are collections of users and other principals who share access to resources in Microsoft services or in your app. Microsoft Graph provides APIs that you can use to create and manage different types of groups and group functionality according to your scenario. All group-related operations in Microsoft Graph require administrator consent."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: conceptualPageType
@@ -13,15 +13,15 @@ Groups are collections of [users](user.md) and other principals who share access
 
 > **Note**: Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
 
-| Type              | Use case | groupType | mail-enabled | security-enabled | Can be created and managed via API? |
+| Type              | Use case | groupTypes | mail-enabled | security-enabled | Can be created and managed via API? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Office 365 groups](#office-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes |
+| [Microsoft 365 groups](#microsoft-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes |
 | [Security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources. | `[]` | `false` | `true` | Yes |
 | [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources, with a shared group mailbox. | `[]` | `true` | `true` | No |
-| Distribution groups | Distributing mail to the members of the group. It is recommended to use Office 365 groups due to the richer set of resources it provides. | `[]` | `true` | `false` | No |
+| Distribution groups | Distributing mail to the members of the group. It is recommended to use Microsoft 365 groups due to the richer set of resources it provides. | `[]` | `true` | `false` | No |
 
-## Office 365 groups
-The power of Office 365 groups is in its collaborative nature, perfect for people who work together on a project or a team. They are created with resources that members of the group share, including:
+## Microsoft 365 groups
+The power of Microsoft 365 groups is in its collaborative nature, perfect for people who work together on a project or a team. They are created with resources that members of the group share, including:
 
 - Outlook conversations
 - Outlook calendar
@@ -61,7 +61,7 @@ The following is a JSON representation of groups in Outlook.
     "visibility": "Public"
 }
 ```
-To learn more about Office 365 groups and the administrator experiences, see [Learn about Office 365 Groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+To learn more about Microsoft 365 groups and the administrator experiences, see [Learn about Microsoft 365 groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## Security groups and mail-enabled security groups
 
@@ -93,7 +93,7 @@ The following is a JSON representation of a security group.
 ```
 ## Dynamic membership
 
-All types of groups can have dynamic membership rules that automatically add or remove members from the group based on user properties. For example, a "Marketing employees" group would include every user with the department property set to "Marketing", so that new marketing employees are automatically added to the group and employees who leave the department are automatically removed from the group. This rule can be specified in a "membershipRule" field during group creation as `"membershipRule": 'user.department -eq "Marketing"'`. GroupType must also include `"DynamicMembership"`. The following request creates a new Office 365 group for the marketing employees:
+All types of groups can have dynamic membership rules that automatically add or remove members from the group based on user properties. For example, a "Marketing employees" group would include every user with the department property set to "Marketing", so that new marketing employees are automatically added to the group and employees who leave the department are automatically removed from the group. This rule can be specified in a "membershipRule" field during group creation as `"membershipRule": 'user.department -eq "Marketing"'`. GroupTypes must also include `"DynamicMembership"`. The following request creates a new Microsoft 365 group for the marketing employees:
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -118,11 +118,11 @@ To learn more about formulating membershipRules, see [Create attribute-based rul
 
 ## Other types of groups
 
-Office 365 groups in Yammer are used to facilitate user collaboration through Yammer posts. This type of group can be returned through a read request, but their posts can't be accessed through the API. When Yammer posts and conversation feeds are enabled on a group, default Office 365 group conversations are disabled. To learn more, see [Yammer developer API docs](https://developer.yammer.com/docs).
+Microsoft 365 groups in Yammer are used to facilitate user collaboration through Yammer posts. This type of group can be returned through a read request, but their posts can't be accessed through the API. When Yammer posts and conversation feeds are enabled on a group, default Microsoft 365 group conversations are disabled. To learn more, see [Yammer developer API docs](https://developer.yammer.com/docs).
 
 ## Group-based licensing
 
-You can use group-based licensing to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups and Office 365 groups that have `securityEnabled=TRUE`. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+You can use group-based licensing to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups and Microsoft 365 groups that have `securityEnabled=TRUE`. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## Common use cases
 
@@ -136,3 +136,6 @@ Using Microsoft Graph, you can perform the following common operations.
 | List the members of a group, and add or remove members. | [user](user.md) <br/> [group](group.md)| [List members](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md)|
 | Determine whether a user is a member of a group, get all the groups the user is a member of. | [user](user.md) <br/> [group](group.md)| [Check member groups](../api/group-checkmembergroups.md) <br/> [Get member groups](../api/group-getmembergroups.md)|
 | List the owners of a group, and add or remove owners. | [user](user.md) <br/> [group](group.md)| [List owners](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md)|
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

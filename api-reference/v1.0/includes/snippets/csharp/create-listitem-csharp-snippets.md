@@ -10,9 +10,12 @@ var listItem = new ListItem
 {
 	Fields = new FieldValueSet
 	{
-		Title = "Widget",
-		Color = "Purple",
-		Weight = 32
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"Title", "Widget"},
+			{"Color", "Purple"},
+			{"Weight", "32"}
+		}
 	}
 };
 

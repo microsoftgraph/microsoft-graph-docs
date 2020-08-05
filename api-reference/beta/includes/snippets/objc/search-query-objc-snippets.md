@@ -16,7 +16,7 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 NSMutableArray *requestsList = [[NSMutableArray alloc] init];
 MSGraphSearchRequest *requests = [[MSGraphSearchRequest alloc] init];
 NSMutableArray *entityTypesList = [[NSMutableArray alloc] init];
-[entityTypesList addObject: @"microsoft.graph.externalItem"];
+[entityTypesList addObject: @"externalItem"];
 [requests setEntityTypes:entityTypesList];
 NSMutableArray *contentSourcesList = [[NSMutableArray alloc] init];
 [contentSourcesList addObject: @"/external/connections/connectionfriendlyname"];

@@ -1,7 +1,7 @@
 ---
 title: "Get a member"
 description: "Use this API to get a specific member (user or group) in an administrative unit."
-author: "davidmu1"
+author: "anandyadavMSFT"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

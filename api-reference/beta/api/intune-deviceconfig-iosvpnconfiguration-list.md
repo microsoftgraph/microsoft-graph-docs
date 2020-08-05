@@ -1,13 +1,15 @@
 ---
 title: "List iosVpnConfigurations"
 description: "List properties and relationships of the iosVpnConfiguration objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List iosVpnConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3404
+Content-Length: 3697
 
 {
   "value": [
@@ -159,12 +161,20 @@ Content-Length: 3404
       "cloudName": "Cloud Name value",
       "excludeList": [
         "Exclude List value"
+      ],
+      "targetedMobileApps": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
       ]
     }
   ]
 }
 ```
-
 
 
 

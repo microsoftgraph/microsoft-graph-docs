@@ -14,8 +14,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphAttachment *attachment = [[MSGraphAttachment alloc] init];
 [attachment setName:@"Personal pictures"];
 [attachment setSourceUrl:@"https://contoso.com/personal/mario_contoso_net/Documents/Pics"];
-[attachment setProviderType:@"oneDriveConsumer"];
-[attachment setPermission:@"Edit"];
+[attachment setProviderType: [MSGraphReferenceAttachmentProvider oneDriveConsumer]];
+[attachment setPermission: [MSGraphReferenceAttachmentPermission edit]];
 [attachment setIsFolder:@"True"];
 
 NSError *error;

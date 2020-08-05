@@ -3,8 +3,8 @@ title: "Create agreement"
 description: "Create a new agreement object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "raprakasMSFT"
 ---
 
 # Create agreement

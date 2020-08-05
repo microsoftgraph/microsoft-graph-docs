@@ -2,7 +2,7 @@
 title: "List bookingBusinesses"
 description: "Get a collection of bookingbusiness objects that has been created for the tenant."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---

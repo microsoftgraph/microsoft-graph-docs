@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to close an existing workbook session. 
+Use this API to close an existing workbook session.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,9 +29,9 @@ POST /workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required. | | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Name                | Description                      |
+|:--------------------|:---------------------------------|
+| Authorization       | Bearer {token}. Required.        |
 | workbook-session-id | Workbook session Id to be closed |
 
 ## Request body
@@ -79,11 +79,11 @@ Content-length: 0
 ---
 
 
-Note that workbook-session-id header is required. 
+Note that workbook-session-id header is required.
 
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",

@@ -1,8 +1,8 @@
 ---
 title: "group: getMemberObjects"
-description: "Return all of the groups that this group is a member of. The check is transitive. Note: Groups cannot be members of directory roles, so no directory roles will be returned."
+description: "Return all of the groups that this group is a member of."
 localization_priority: Normal
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

@@ -31,7 +31,7 @@ Tap into other powerful OneNote features. The OneNote APIs in Microsoft Graph ru
 
 ### Reach millions of OneNote users on all major platforms
 
-Use OneNote to increase your app usage. OneNote is preinstalled on new Windows devices, and is available for most platforms, online, and as part of Office 365. When you publish apps that use the feature-rich OneNote environment, you have access to broad cross-platform market potential.
+Use OneNote to increase your app usage. OneNote is preinstalled on new Windows devices, and is available for most platforms, online, and as part of Microsoft 365. When you publish apps that use the feature-rich OneNote environment, you have access to broad cross-platform market potential.
 
 <!-- Might be good to show a few examples of Microsoft Graph API calls here, similar to what we have in the featured scenarios topic: featured_scenarios..md You could have an H2 section called "What can I do with OneNote APIs in Microsoft Graph?"-->
 

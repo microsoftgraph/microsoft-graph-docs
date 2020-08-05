@@ -1,13 +1,15 @@
 ---
 title: "Update deviceManagementDerivedCredentialSettings"
 description: "Update the properties of a deviceManagementDerivedCredentialSettings object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update deviceManagementDerivedCredentialSettings
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -59,8 +61,8 @@ The following table shows the properties that are required when you create the [
 |**RA Policy**|
 |helpUrl|String|The URL that will be accessible to end users as they retrieve a derived credential using the Company Portal.|
 |displayName|String|The display name for the profile.|
-|issuer|deviceManagementDerivedCredentialIssuer|The derived credential provider to use. Possible values are: `intercede`, `entrustDatacard`, `purebred`.|
-|notificationType|deviceManagementDerivedCredentialNotificationType|The methods used to inform the end user to open Company Portal to deliver Wi-Fi, VPN, or email profiles that use certificates to the device. Possible values are: `none`, `companyPortal`, `email`.|
+|issuer||The derived credential provider to use. Possible values are: `intercede`, `entrustDatacard`, `purebred`.|
+|notificationType||The methods used to inform the end user to open Company Portal to deliver Wi-Fi, VPN, or email profiles that use certificates to the device. Possible values are: `none`, `companyPortal`, `email`.|
 
 
 ## Response
@@ -92,7 +94,6 @@ Content-Length: 132
   "id": "bc650741-0741-bc65-4107-65bc410765bc"
 }
 ```
-
 
 
 

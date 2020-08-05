@@ -8,9 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var users = await graphClient.Users["AlexW@contoso.OnMicrosoft.com"]
 	.Request()
-	.Select( e => new {
-			 e.MailboxSettings 
-			 })
+	.Select("MailboxSettings")
 	.GetAsync();
 
 var mailboxSettings = users.MailboxSettings;

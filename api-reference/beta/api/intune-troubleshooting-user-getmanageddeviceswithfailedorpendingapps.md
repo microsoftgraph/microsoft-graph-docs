@@ -1,13 +1,15 @@
 ---
 title: "getManagedDevicesWithFailedOrPendingApps function"
 description: "Retrieves the list of devices with failed or pending apps"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # getManagedDevicesWithFailedOrPendingApps function
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -70,7 +72,6 @@ Content-Length: 187
   ]
 }
 ```
-
 
 
 

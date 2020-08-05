@@ -1,7 +1,7 @@
 ---
 title: "Create groupLifecyclePolicy"
 description: "Creates a new groupLifecyclePolicy."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

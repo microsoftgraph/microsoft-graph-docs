@@ -1,13 +1,15 @@
 ---
 title: "settingStateDeviceSummary resource type"
 description: "Device Compilance Policy and Configuration for a Setting State summary"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # settingStateDeviceSummary resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

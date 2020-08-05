@@ -12,9 +12,9 @@ Microsoft Graph is fully replacing Azure Active Directory (Azure AD) Graph. For 
 
 In addition, Microsoft Graph supports many new Azure AD datasets and features that are not available in Azure AD Graph. Switch to Microsoft Graph to take advantage of these new APIs, all through one single endpoint, including:
 
-- [Office 365 group management](/graph/office365-groups-concept-overview)
+- [Microsoft 365 group management](/graph/office365-groups-concept-overview)
 - [External user invitations](/graph/api/resources/invitation?view=graph-rest-1.0)
-- The ability to [restore users and Office 365 groups](/graph/api/resources/directory?view=graph-rest-1.0) after they've been deleted
+- The ability to [restore users and Microsoft 365 groups](/graph/api/resources/directory?view=graph-rest-1.0) after they've been deleted
 - [Webhook notifications on users and groups](/graph/webhooks?toc=./ref/toc.json&view=graph-rest-1.0)
 - Identity governance features such as:
   - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) to elevate users to privileged roles only when needed and for a limited time period

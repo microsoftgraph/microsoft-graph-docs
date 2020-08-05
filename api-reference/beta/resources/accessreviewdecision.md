@@ -1,8 +1,8 @@
 ---
 title: "accessReviewDecision resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewDecision` represents an Azure AD access review decision of a particular entity's access.  Within an access review, or an instance of a recurring access review, there is one `accessReviewDecision` per reviewed user.  For example, if a group has two guests and one non-guest as members, and an access review of guests is performed for that group, then there will be two access review decision objects.  If a reviewer changes their decision, or another reviewer overrides them, then the `accessReviewDecision` is updated."
+description: "The accessReviewDecision represents an Azure AD access review decision of a particular entity's access."
 localization_priority: Normal
-author: "davidmu1"
+author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

@@ -35,22 +35,23 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 
 ## Properties
 
-| Property            | Type                                  | Description                                        |
-| :------------------ | :------------------------------------ | :------------------------------------------------- |
-| id                  | String                                | GUID of this school.                               |
-| address             | [physicalAddress](physicaladdress.md) | Address of the school.                             |
-| createdBy           | [identitySet](identityset.md)         | Entity who created the school.                     |
-| description         | String                                | Description of the school.                         |
-| displayName         | String                                | Display name of the school.                        |
-| externalId          | String                                | ID of school in syncing system.                    |
-| externalPrincipalId | String                                | ID of principal in syncing system.                 |
-| externalSource      | string                                | Read-Only. Possible values are: `sis` or `manual`. |
-| highestGrade        | String                                | Highest grade taught.                              |
-| lowestGrade         | String                                | Lowest grade taught.                               |
-| phone               | String                                | Phone number of school.                            |
-| principalEmail      | String                                | Email address of the principal.                    |
-| principalName       | String                                | Name of the principal.                             |
-| schoolNumber        | String                                | School Number.                                     |
+| Property             | Type                                  | Description                                                                                                                                                          |
+| :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | String                                | GUID of this school.                                                                                                                                                 |
+| address              | [physicalAddress](physicaladdress.md) | Address of the school.                                                                                                                                               |
+| createdBy            | [identitySet](identityset.md)         | Entity who created the school.                                                                                                                                       |
+| description          | String                                | Description of the school.                                                                                                                                           |
+| displayName          | String                                | Display name of the school.                                                                                                                                          |
+| externalId           | String                                | ID of school in syncing system.                                                                                                                                      |
+| externalPrincipalId  | String                                | ID of principal in syncing system.                                                                                                                                   |
+| externalSource       | String                                | The type of external source this resource was generated from (automatically determined from `externalSourceDetail`). Possible values are: `sis`, `lms`, or `manual`. |
+| externalSourceDetail | String                                | The name of the external source this resources was generated from.                                                                                                   |
+| highestGrade         | String                                | Highest grade taught.                                                                                                                                                |
+| lowestGrade          | String                                | Lowest grade taught.                                                                                                                                                 |
+| phone                | String                                | Phone number of school.                                                                                                                                              |
+| principalEmail       | String                                | Email address of the principal.                                                                                                                                      |
+| principalName        | String                                | Name of the principal.                                                                                                                                               |
+| schoolNumber         | String                                | School Number.                                                                                                                                                       |
 
 ## Relationships
 
@@ -71,7 +72,6 @@ The following is a JSON representation of the resource.
 ],
 "@odata.type": "microsoft.graph.educationSchool"
 }-->
-
 
 ```json
 {
@@ -100,7 +100,7 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [ 
-    "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!" 
-  ]  
+  "suppressions": [
+    "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!"
+  ]
 }-->

@@ -32,7 +32,7 @@ const meetingTimeSuggestionsResult = {
   },  
   timeConstraint: {
     activityDomain:"work", 
-    timeslots: [ 
+    timeSlots: [ 
       { 
         start: { 
           dateTime: "2019-04-16T09:00:00",  

@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: enumPageType
 ---
 
-#teamVisibilityType enum type
+# teamVisibilityType enum type
 
 
 

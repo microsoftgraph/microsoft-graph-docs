@@ -73,7 +73,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/connections/contosohr/schema
+POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
 Prefer: respond-async
 
@@ -81,16 +81,21 @@ Prefer: respond-async
   "baseType": "microsoft.graph.externalItem",
   "properties": [
     {
-      "name": "title",
+      "name": "ticketTitle",
       "type": "String",
       "isSearchable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "labels": [
+        "title"
+      ]
     },
     {
       "name": "priority",
       "type": "String",
       "isQueryable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "isRefinable": "true",
+      "isSearchable": "false"
     },
     {
       "name": "assignee",

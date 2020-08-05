@@ -12,7 +12,6 @@ const client = Client.init(options);
 
 let res = await client.api('/communications/callRecords/{id}')
 	.version('beta')
-	.expand('sessions($expand=segments)')
 	.get();
 
 ```

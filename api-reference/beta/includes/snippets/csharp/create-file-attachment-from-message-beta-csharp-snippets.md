@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var attachment = new FileAttachment
 {
 	Name = "smile",
-	ContentBytes = "a0b1c76de9f7="
+	ContentBytes = Encoding.ASCII.GetBytes("a0b1c76de9f7=")
 };
 
 await graphClient.Me.Messages["AAMkpsDRVK"].Attachments

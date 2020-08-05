@@ -1,13 +1,15 @@
 ---
 title: "Update networkIPv4ConfigurationManagementCondition"
 description: "Update the properties of a networkIPv4ConfigurationManagementCondition object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update networkIPv4ConfigurationManagementCondition
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -126,7 +128,6 @@ Content-Length: 697
   ]
 }
 ```
-
 
 
 

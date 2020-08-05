@@ -17,17 +17,6 @@ A **site** resource represents a team site in SharePoint.
 
 [site]: ../resources/site.md
 
-A **site** is addressed by a unique identifier which is a composite ID of the following values:
-
-* Site collection hostname (contoso.sharepoint.com)
-* Site collection unique ID (GUID)
-* Site unique ID (GUID)
-
-There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:
-
-* `/sites/root`: The tenant root site.
-* `/groups/{group-id}/sites/root`: The group's team site.
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

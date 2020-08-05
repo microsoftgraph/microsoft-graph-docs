@@ -24,7 +24,7 @@ The search request to be sent to the query endpoint. It contains the type of ent
 |stored_fields|String collection |Contains the fields to be returned for earch _so urces object. Note this is only applicable when entityType=`externalItem` is specified in the response.|
 |contentSources|String collection|Contains the connection to be targeted. <br>Respect the following format : `/external/connections/connectionid` where `connectionid` is the ConnectionId been defined in the Connectors Administration <br> Note contentSource is only applicable when entityType=`externalItem`. |
 |enableTopResults|Boolean|This triggers hybrid sort for messages : the first 3 messages are the most relevant<br> This is only applicable for entityType=`message`.|
-|entityTypes|`entityType` collection| Possible values are: `event`, `message`, `driveItem`, `externalFile`, `externalItem`.|
+|entityTypes|`entityType` collection| Possible values are: `event`, `message`, `driveItem`, `externalItem`.|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result.|
 |query|[searchQuery](searchquery.md)|Contains the query terms.|
 |size|Int32|The size of the page to be retrieved.|

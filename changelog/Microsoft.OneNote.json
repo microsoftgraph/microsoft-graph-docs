@@ -1,0 +1,58 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "26635276-6c2d-4a8c-bc42-92728a487c84",
+          "ApiChange": "method",
+          "ChangedApiName": "getNotebookFromWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [getNotebookFromWebUrl](https://docs.microsoft.com/en-us/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) method.",
+          "Target": "getNotebookFromWebUrl"
+        }
+      ],
+      "Id": "26635276-6c2d-4a8c-bc42-92728a487c84",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-02-01T00:00:00",
+      "WorkloadArea": "Notes (OneNote)",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bafb9aeb-927d-4cd3-89d3-378566c346b1",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "CopyNotebook",
+          "ChangeType": "Addition",
+          "Description": "Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](https://docs.microsoft.com/en-us/graph/api/notebook-copynotebook?view=graph-rest-1.0).",
+          "Target": "CopyNotebook"
+        }
+      ],
+      "Id": "bafb9aeb-927d-4cd3-89d3-378566c346b1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-08-01T00:00:00",
+      "WorkloadArea": "Notes",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bafb9aeb-927d-4cd3-89d3-378566c346b1",
+          "ApiChange": "Property",
+          "ChangedApiName": "site",
+          "ChangeType": "Addition",
+          "Description": "Added the [onenote](https://docs.microsoft.com/en-us/graph/api/resources/onenote?view=graph-rest-1.0) navigation property to **site**.",
+          "Target": "onenote"
+        }
+      ],
+      "Id": "bafb9aeb-927d-4cd3-89d3-378566c346b1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-08-01T00:00:00",
+      "WorkloadArea": "Notes",
+      "SubArea": ""
+    }
+  ]
+}

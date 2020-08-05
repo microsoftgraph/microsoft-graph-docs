@@ -20,7 +20,7 @@ Organizations use labels to aid:
 
 ### Integrate with the ubiquitous labeling platform, servicing millions of users and devices
 
-More than a million organizations with tens of millions of users use Microsoft Information Protection to classify, label, and protect data.  In addition to Office 365, various data loss prevention (DLP) services, business intelligence platforms, and software-as-a-service (SaaS) solutions have [embraced Microsoft Information Protection](https://www.microsoft.com/security/technology/information-protection) labeling to provide a richer data classification experience. 
+More than a million organizations with tens of millions of users use Microsoft Information Protection to classify, label, and protect data.  In addition to Microsoft 365, various data loss prevention (DLP) services, business intelligence platforms, and software-as-a-service (SaaS) solutions have [embraced Microsoft Information Protection](https://www.microsoft.com/security/technology/information-protection) labeling to provide a richer data classification experience. 
 
 ### Label information in line-of-business applications
 

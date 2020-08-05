@@ -22,15 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.Read   |
+|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.Read.All, Chat.ReadWrite.All   |
-
-> [!NOTE]
-> With application permissions, getting a single chat is supported, but [getting a list of chats](chat-list.md) is not.
-
-> [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+|Application | Not supported. |
 
 ## HTTP request
 

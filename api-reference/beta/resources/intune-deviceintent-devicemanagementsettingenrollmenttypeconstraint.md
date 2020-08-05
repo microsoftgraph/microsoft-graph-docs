@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementSettingEnrollmentTypeConstraint resource type"
 description: "Constraint that enforces the enrollment types applied to a setting"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementSettingEnrollmentTypeConstraint resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

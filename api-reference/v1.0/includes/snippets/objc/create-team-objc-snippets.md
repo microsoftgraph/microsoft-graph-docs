@@ -13,6 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphTeam *team = [[MSGraphTeam alloc] init];
 MSGraphTeamMemberSettings *memberSettings = [[MSGraphTeamMemberSettings alloc] init];
+[memberSettings setAllowCreatePrivateChannels: true];
 [memberSettings setAllowCreateUpdateChannels: true];
 [team setMemberSettings:memberSettings];
 MSGraphTeamMessagingSettings *messagingSettings = [[MSGraphTeamMessagingSettings alloc] init];

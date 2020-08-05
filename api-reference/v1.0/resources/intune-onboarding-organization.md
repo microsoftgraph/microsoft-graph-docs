@@ -1,7 +1,7 @@
 ---
 title: "organization resource type"
 description: "The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -64,6 +64,9 @@ Here is a JSON representation of the resource.
 
 }
 -->
+
+
+
 
 
 

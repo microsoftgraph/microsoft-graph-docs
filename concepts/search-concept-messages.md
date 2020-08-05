@@ -38,7 +38,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.message"
+        "message"
       ],
       "query": {
         "query_string": {
@@ -81,7 +81,7 @@ The following is an example of the response, which contains one message that mat
                 "receivedDateTime": "2019-10-07T10:00:09Z",
                 "sentDateTime": "2019-10-07T09:59:52Z",
                 "hasAttachments": false,
-                "subject": "Weekly digest: Office 365 changes",
+                "subject": "Weekly digest: Microsoft 365 changes",
                 "bodyPreview": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a",
                 "importance": "normal",
                 "replyTo": [
@@ -114,7 +114,8 @@ The following is an example of the response, which contains one message that mat
 ```
 
 ### Example 2: Search top results messages
-The following example uses the search query shown in [Example 1](#example-1), and sorts the results by relevance. 
+
+The following example uses the search query shown in Example 1, and sorts the results by relevance. 
 
 <!-- markdownlint-disable MD024 -->
 #### Request
@@ -129,7 +130,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.message"
+        "message"
       ],
       "query": {
         "query_string": {

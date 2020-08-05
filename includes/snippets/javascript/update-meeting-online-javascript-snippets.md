@@ -16,7 +16,6 @@ const event = {
 };
 
 let res = await client.api('/me/events/AAMkADAGu0AABIGYDaAAA=')
-	.version('beta')
 	.update(event);
 
 ```

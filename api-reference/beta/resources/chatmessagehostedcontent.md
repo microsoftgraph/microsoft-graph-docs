@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents content hosted in a chat message, such as images or code snippets.
+Represents Teams content hosted in a chat message, such as images or code snippets.
+[File attachments](chatmessageattachment.md) are not hosted content,
+they are stored in SharePoint or OneDrive.
 
 ## Methods
 

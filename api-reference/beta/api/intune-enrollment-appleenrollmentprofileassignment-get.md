@@ -1,13 +1,15 @@
 ---
 title: "Get appleEnrollmentProfileAssignment"
 description: "Read properties and relationships of the appleEnrollmentProfileAssignment object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get appleEnrollmentProfileAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,19 +63,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 250
+Content-Length: 409
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.appleEnrollmentProfileAssignment",
     "id": "5b603771-3771-5b60-7137-605b7137605b",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+      "deviceAndAppManagementAssignmentFilterType": "include"
     }
   }
 }
 ```
-
 
 
 

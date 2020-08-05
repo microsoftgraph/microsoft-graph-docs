@@ -8,7 +8,7 @@ ms.prod: "data-connect"
 
 # Datasets, regions, and sinks that Microsoft Graph data connect supports
 
-Microsoft Graph data connect supports a variety of datasets, data regions, and storage locations in Microsoft Azure. This topic describes the supported datasets and how to access the dataset schemas, the Office 365 and Microsoft Azure regions that are supported, and the storage locations that data connect utilizes through Azure Data Factory.
+Microsoft Graph data connect supports a variety of datasets, data regions, and storage locations in Microsoft Azure. This topic describes the supported datasets and how to access the dataset schemas, the Microsoft 365 and Microsoft Azure regions that are supported, and the storage locations that data connect utilizes through Azure Data Factory.
 
 If you would like to request support for additional datasets, regions, or sinks, let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581).
 
@@ -36,7 +36,7 @@ Data connect supports the following datasets today. To view the schemas for each
 
 ## Regions
 
-Data connect supports extracting data from a variety of different Office 365 regions. To successfully move data from the Office 365 data center into your Microsoft Azure storage, the Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Office 365 data. The following table indicates which Office 365 regions are supported and the corresponding Azure regions required for data movement. 
+Data connect supports extracting data from a variety of different Microsoft 365 regions. To successfully move data from the Microsoft 365 data center into your Microsoft Azure storage, the Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data. The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement. 
 
 | Office region                    | Azure region                                |
 |----------------------------------|---------------------------------------------|
@@ -56,7 +56,7 @@ Sinks are the output location Data Factory uses to place data in Azure storage. 
 The following characteristics apply to sinks: 
 
 - The output files will be of format JSON lines. The output format is fixed and there is no support for modifying the format of the output. However, you can use Azure Data Factory to copy the result of a data connect pipeline into another storage mechanism (such as Azure SQL DB).
-- Service Principal authentication is the only supported authentication mechanism for all sink types in a copy activity with Office 365 as the source.
+- Service Principal authentication is the only supported authentication mechanism for all sink types in a copy activity with Microsoft 365 as the source.
 - When using Azure Storage Blob as the sink, you must ensure that your application has Storage Blob Data Contributor access to the Azure Storage Blob location.
 
 ## Next Steps

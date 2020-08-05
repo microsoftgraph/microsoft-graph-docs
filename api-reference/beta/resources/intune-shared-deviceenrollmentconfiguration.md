@@ -1,13 +1,15 @@
 ---
 title: "deviceEnrollmentConfiguration resource type"
 description: "The Base Class of Device Enrollment Configuration"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceEnrollmentConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

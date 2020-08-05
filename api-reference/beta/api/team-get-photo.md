@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Get the photo (picture) for a team, or metadata for the photo. In general, it is a best practice to first attempt to retrieve the metadata for the size of the photo you'd like to get to ensure that size is available. Once you have retrieved the metadata, use the `/$value` path to get the binary data for the photo.
 
-This method first attempts to retrieve the specified photo from Office 365. If the photo is not available in Office 365, it attempts to retrieve the photo from Azure Active Directory instead.
+This method first attempts to retrieve the specified photo from Microsoft 365. If the photo is not available in Microsoft 365, it attempts to retrieve the photo from Azure Active Directory instead.
 
-The following are the supported sizes of HD photos in Office 365: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648 pixels. Photos can be any dimension if they are stored in Azure Active Directory.
+The following are the supported sizes of HD photos in Microsoft 365: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648 pixels. Photos can be any dimension if they are stored in Azure Active Directory.
 
-You can get the metadata of the largest available photo, or optionally specify a size to get the metadata for that photo size. If the size you request is not available, you can still get a smaller size. For example, if the largest photo uploaded is 504x504 pixels, all but the 648x648 size of the photo will be available for download. If the specified size is not available in the Office 365 or in Azure Active Directory, the size 1x1 is returned with the rest of the metadata.
+You can get the metadata of the largest available photo, or optionally specify a size to get the metadata for that photo size. If the size you request is not available, you can still get a smaller size. For example, if the largest photo uploaded is 504x504 pixels, all but the 648x648 size of the photo will be available for download. If the specified size is not available in the Microsoft 365 or in Azure Active Directory, the size 1x1 is returned with the rest of the metadata.
 
 > [!Note]
 > There is a limit of 4 MB on the total size of the REST request. This limits the photo size to less than 4 MB.
@@ -30,9 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All |
+|Application | TeamSettings.Read.Group*, TeamSettings.Edit.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
+
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 
@@ -45,8 +49,8 @@ This endpoint will return the metadata of the photo. If no size is specified, th
 }-->
 
 ```http
-GET /beta/teams/{id}/photo
-GET /beta/teams/{id}/photo/{size}
+GET /teams/{id}/photo
+GET /teams/{id}/photo/{size}
 ```
 
 ### Get the photo
@@ -68,7 +72,7 @@ This method supports an optional path parameter to specify the size of the photo
 
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|size  |String  | A photo size. The supported sizes of HD photos on Office 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory. Optional.|
+|size  |String  | A photo size. The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory. Optional.|
 
 ## Request headers
 

@@ -12,7 +12,7 @@ Microsoft Graph data connect uses [Azure managed applications](https://docs.micr
 
 ## Policies
 
-The following Azure policies are supported for an Azure managed application built using Office 365 data:
+The following Azure policies are supported for an Azure managed application built using Microsoft 365 data:
 
 - [ADLS Gen1 Encryption Required Policy](https://docs.microsoft.com/azure/azure-policy/scripts/enforce-datalakestore-encryption)
 
@@ -22,7 +22,7 @@ If you would like to request support for additional policies , let us know on [U
 
 ## Licensing
 
-Access to the Microsoft Graph data connect toolset is available through Workplace Analytics, which is licensed on a per-user, per-month basis.  Organizations with Workplace Analytics can extend their insights from Office 365 data by granting and governing access to their data at scale to applications developed in-house or by independent software vendors (ISVs). To learn more, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).
+Access to the Microsoft Graph data connect toolset is available through Workplace Analytics, which is licensed on a per-user, per-month basis.  Organizations with Workplace Analytics can extend their insights from Microsoft 365 data by granting and governing access to their data at scale to applications developed in-house or by independent software vendors (ISVs). To learn more, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).
 
 If you’re an ISV, we also provide an option for you to build applications for customers who have not purchased Workplace Analytics. To do so, you must purchase enough licenses to associate them with all the users your application will access through Microsoft Graph data connect, for each customer who purchases your application. You can use this option along with Workplace Analytics licenses. You’ll need to take steps to associate instances of the Microsoft Graph data connect license with each of their customer installations.
 

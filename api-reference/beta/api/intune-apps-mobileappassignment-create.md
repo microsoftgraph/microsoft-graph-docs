@@ -1,13 +1,15 @@
 ---
 title: "Create mobileAppAssignment"
 description: "Create a new mobileAppAssignment object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create mobileAppAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -65,16 +67,20 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments
 Content-type: application/json
-Content-length: 334
+Content-length: 591
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "intent": "required",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "Vpn Configuration Id value",
+    "uninstallOnDeviceRemoval": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -86,23 +92,26 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 383
+Content-Length: 640
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "id": "591620b7-20b7-5916-b720-1659b7201659",
   "intent": "required",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "Vpn Configuration Id value",
+    "uninstallOnDeviceRemoval": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

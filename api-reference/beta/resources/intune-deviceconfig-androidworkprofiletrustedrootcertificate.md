@@ -1,13 +1,15 @@
 ---
 title: "androidWorkProfileTrustedRootCertificate resource type"
 description: "Android Work Profile Trusted Root Certificate configuration profile"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidWorkProfileTrustedRootCertificate resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

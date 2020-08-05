@@ -2,7 +2,7 @@
 title: "Update trustFrameworkPolicy"
 description: "This operation updates an existing trustFrameworkPolicy object, or if one doesn't exist, it creates one. "
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

@@ -1,13 +1,15 @@
 ---
 title: "windowsKioskActiveDirectoryGroup resource type"
 description: "The class used to identify an Azure Directory group for the kiosk configuration"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsKioskActiveDirectoryGroup resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

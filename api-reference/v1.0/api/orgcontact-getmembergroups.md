@@ -2,7 +2,7 @@
 title: "orgContact: getMemberGroups"
 description: "Return all the groups that the organizational contact is a member of."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 Return all the groups that the [organizational contact](../resources/orgcontact.md) is a member of. The check is transitive, unlike reading the **memberOf** navigation property, which returns only the groups that the user is a direct member of.
 
-This function supports Office 365 and other types of groups provisioned in Azure Active Directory (Azure AD). The maximum number of groups each request can return is 2046. 
+This function supports Microsoft 365 and other types of groups provisioned in Azure Active Directory (Azure AD). The maximum number of groups each request can return is 2046. 
 
 >[!NOTE]
->Office 365 groups cannot contain groups. Membership in an Office 365 group is always direct.
+>Microsoft 365 groups cannot contain groups. Membership in a Microsoft 365 group is always direct.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

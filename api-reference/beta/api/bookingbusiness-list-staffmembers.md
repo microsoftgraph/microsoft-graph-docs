@@ -2,7 +2,7 @@
 title: "List staffMembers"
 description: "Get a list of bookingStaffMember objects in the specified bookingbusiness."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---

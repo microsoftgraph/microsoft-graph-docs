@@ -3,8 +3,8 @@ title: "privilegedApproval resource type"
 description: "Represents an approval that is requested in Privileged Identity Management for getting into a role."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # privilegedApproval resource type

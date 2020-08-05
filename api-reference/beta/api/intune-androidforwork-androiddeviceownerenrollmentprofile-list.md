@@ -1,13 +1,15 @@
 ---
 title: "List androidDeviceOwnerEnrollmentProfiles"
 description: "List properties and relationships of the androidDeviceOwnerEnrollmentProfile objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List androidDeviceOwnerEnrollmentProfiles
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 912
+Content-Length: 967
 
 {
   "value": [
@@ -68,6 +70,7 @@ Content-Length: 912
       "id": "a8d0245e-245e-a8d0-5e24-d0a85e24d0a8",
       "displayName": "Display Name value",
       "description": "Description value",
+      "enrollmentMode": "corporateOwnedFullyManaged",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "tokenValue": "Token Value value",
@@ -87,7 +90,6 @@ Content-Length: 912
   ]
 }
 ```
-
 
 
 

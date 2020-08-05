@@ -1,7 +1,7 @@
 ---
 title: "Add a member"
 description: "Use this API to add a member (user or group) to an administrative unit."
-author: "davidmu1"
+author: "anandyadavMSFT"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

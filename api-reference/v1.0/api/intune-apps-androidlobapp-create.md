@@ -1,7 +1,7 @@
 ---
 title: "Create androidLobApp"
 description: "Create a new androidLobApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -165,6 +165,8 @@ Content-Length: 1247
   "versionCode": "Version Code value"
 }
 ```
+
+
 
 
 

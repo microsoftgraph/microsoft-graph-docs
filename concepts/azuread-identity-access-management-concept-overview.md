@@ -15,7 +15,7 @@ You can use the Azure AD REST APIs in Microsoft Graph to create unique workflows
 
 ## Why use the Azure AD APIs?
 
-More than 15 million organizations use Azure AD while subscribing to Microsoft cloud services like Office 365, Microsoft Azure, Enterprise Mobility Suite, or Microsoft 365.
+More than 15 million organizations use Azure AD while subscribing to Microsoft cloud services like Microsoft 365, Microsoft Azure, Enterprise Mobility Suite, or Microsoft 365.
 
 Enterprise developers use Microsoft Graph to integrate Azure AD identity management and other services to automate administrative workflows, such as employee onboarding (and termination), profile maintenance, license deployment, and more.
 
@@ -43,9 +43,9 @@ You can assign users to predefined Azure AD administrative [directory roles](/gr
 
 ### Partner tenant management
 
-Microsoft partners that resell and manage Microsoft Online Services (such as Office 365, Microsoft Azure, and CRM Online) can view the [organization tenants](/graph/api/resources/contract?view=graph-rest-1.0) they currently manage.
+Microsoft partners that resell and manage Microsoft Online Services (such as Microsoft 365, Microsoft Azure, and CRM Online) can view the [organization tenants](/graph/api/resources/contract?view=graph-rest-1.0) they currently manage.
 
-You can also [manage domains](/graph/api/resources/domain?view=graph-rest-1.0) associated with a tenant. Domain operations enable Microsoft partners to automate domain registration for services such as Office 365.
+You can also [manage domains](/graph/api/resources/domain?view=graph-rest-1.0) associated with a tenant. Domain operations enable Microsoft partners to automate domain registration for services such as Microsoft 365.
 
 ### Tenant management
 

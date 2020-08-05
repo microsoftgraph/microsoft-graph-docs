@@ -1,13 +1,15 @@
 ---
 title: "Update userExperienceAnalyticsMetric"
 description: "Update the properties of a userExperienceAnalyticsMetric object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update userExperienceAnalyticsMetric
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -65,11 +67,11 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression/{userExperienceAnalyticsMetricId}
 Content-type: application/json
-Content-length: 147
+Content-length: 128
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
-  "value": "<Unknown Primitive Type Edm.Double>",
+  "value": 1.6666666666666667,
   "unit": "Unit value"
 }
 ```
@@ -79,16 +81,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 196
+Content-Length: 177
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "1371822e-822e-1371-2e82-71132e827113",
-  "value": "<Unknown Primitive Type Edm.Double>",
+  "value": 1.6666666666666667,
   "unit": "Unit value"
 }
 ```
-
 
 
 

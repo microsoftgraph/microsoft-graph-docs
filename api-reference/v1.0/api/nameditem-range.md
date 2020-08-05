@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range
+GET /workbook/names/{name}/range
 
 ```
 ## Request headers
@@ -50,8 +50,8 @@ Here is an example of the request.
   "idempotent": true,
   "name": "nameditem_range"
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditem-range-csharp-snippets.md)]

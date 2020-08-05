@@ -8,15 +8,15 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var orgContact = new OrgContact
 {
-	BusinessPhones = new List<String>()
-	{
-		"businessPhones-value"
-	},
-	City = "city-value",
 	CompanyName = "companyName-value",
-	Country = "country-value",
 	Department = "department-value",
-	DisplayName = "displayName-value"
+	DisplayName = "displayName-value",
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"businessPhones", "[\"businessPhones-value\"]"},
+		{"city", "city-value"},
+		{"country", "country-value"}
+	}
 };
 
 await graphClient.Contacts["{id}"]

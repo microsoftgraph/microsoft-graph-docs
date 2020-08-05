@@ -3,8 +3,8 @@ title: "List governanceRoleSettings"
 description: "Retrieve a collection of governanceRoleSettings on a resource."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
-ms.prod: "microsoft-identitiy-platform"
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # List governanceRoleSettings

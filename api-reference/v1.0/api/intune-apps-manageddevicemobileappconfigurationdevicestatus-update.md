@@ -1,7 +1,7 @@
 ---
 title: "Update managedDeviceMobileAppConfigurationDeviceStatus"
 description: "Update the properties of a managedDeviceMobileAppConfigurationDeviceStatus object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -100,6 +100,8 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

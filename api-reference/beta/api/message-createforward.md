@@ -1,7 +1,7 @@
 ---
 title: "message: createForward"
 description: "Create a draft forward message to include a comment or update any message properties  "
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

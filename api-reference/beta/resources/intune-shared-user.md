@@ -1,13 +1,15 @@
 ---
 title: "user resource type"
 description: "Represents an Azure Active Directory user object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # user resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

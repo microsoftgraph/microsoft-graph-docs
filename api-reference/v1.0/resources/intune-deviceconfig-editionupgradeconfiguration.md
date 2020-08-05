@@ -1,7 +1,7 @@
 ---
 title: "editionUpgradeConfiguration resource type"
 description: "Windows 10 Edition Upgrade configuration."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -74,6 +74,9 @@ Here is a JSON representation of the resource.
   "productKey": "String"
 }
 ```
+
+
+
 
 
 

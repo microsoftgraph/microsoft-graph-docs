@@ -2,7 +2,7 @@
 title: "Get trustFrameworkPolicy"
 description: "This operation retrieves an existing trustFrameworkPolicy content from an Azure AD B2C tenant."
 localization_priority: Normal
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

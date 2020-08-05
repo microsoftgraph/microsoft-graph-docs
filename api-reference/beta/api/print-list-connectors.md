@@ -34,7 +34,7 @@ GET /print/connectors
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Exceptions
-* The `$count` and `$filter` operators are not supported.
+Some operators are not supported: `$count`, `$orderby`, `$search`, `$filter`.
 
 ## Request headers
 | Name      |Description|
@@ -98,7 +98,6 @@ Content-length: 1289
         "lastConnectionTime": "2020-02-04T07:00:00.0000000"
       },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
-      "registeredBy": {},
       "location": {
         "latitude": 1.1,
         "longitude": 2.2,

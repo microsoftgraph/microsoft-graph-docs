@@ -30,7 +30,7 @@ const call = {
     "audio"
   ],
   mediaConfig: {
-    @odata.type: "#microsoft.graph.serviceHostedMediaConfig",
+    @odata.type: "#microsoft.graph.serviceHostedMediaConfig"
   }
 };
 

@@ -1,9 +1,9 @@
 ---
 title: "synchronizationRule resource type"
-description: "Defines how the synchronization should be performed for the synchronization engine, including which objects to synchronize and in which direction, how objects from the source directory should be matched with objects in the target directory, and how attributes should be transformed when they're synchronized from the source to the target directory."
+description: "Defines how the synchronization should be performed for the synchronization engine."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

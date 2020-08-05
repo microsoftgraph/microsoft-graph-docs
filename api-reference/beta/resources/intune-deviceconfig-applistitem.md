@@ -1,13 +1,15 @@
 ---
 title: "appListItem resource type"
 description: "Represents an app in the list of managed applications"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # appListItem resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -21,7 +23,7 @@ Represents an app in the list of managed applications
 |name|String|The application name|
 |publisher|String|The publisher of the application|
 |appStoreUrl|String|The Store URL of the application|
-|appId|String|The application or bundle identifier of the application|
+|appId|String|The bundle identifier of the application|
 
 ## Relationships
 None

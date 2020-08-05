@@ -1,6 +1,6 @@
 ---
 title: "Use the Planner REST API"
-description: "You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365."
+description: "You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Microsoft 365."
 author: "TarkanSevilmis"
 localization_priority: Priority
 ms.prod: "planner"
@@ -9,13 +9,13 @@ doc_type: conceptualPageType
 
 # Use the Planner REST API
 
-You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.
+You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Microsoft 365.
 
-Before you get started with Planner API, you will want to understand how the main objects relate to each other as well as to Office 365 groups.
+Before you get started with Planner API, you will want to understand how the main objects relate to each other as well as to Microsoft 365 groups.
 
-## Office 365 Groups
+## Microsoft 365 groups
 
-Office 365 groups are the owners of the plans in the Planner API.
+Microsoft 365 groups are the owners of the plans in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
 ``` http
@@ -105,4 +105,7 @@ The following are the possible values for the limit types.
 
 All Planer API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
 The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 

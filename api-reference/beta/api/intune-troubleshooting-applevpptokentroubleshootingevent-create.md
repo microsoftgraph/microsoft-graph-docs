@@ -1,13 +1,15 @@
 ---
 title: "Create appleVppTokenTroubleshootingEvent"
 description: "Create a new appleVppTokenTroubleshootingEvent object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create appleVppTokenTroubleshootingEvent
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -135,7 +137,6 @@ Content-Length: 930
   "tokenId": "Token Id value"
 }
 ```
-
 
 
 

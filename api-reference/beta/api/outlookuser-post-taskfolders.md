@@ -2,7 +2,7 @@
 title: "Create outlookTaskFolder"
 description: "Create a task folder in the default task group (`My Tasks`) of the user's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

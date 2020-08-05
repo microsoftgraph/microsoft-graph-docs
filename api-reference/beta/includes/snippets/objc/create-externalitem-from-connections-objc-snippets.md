@@ -25,7 +25,10 @@ MSGraphProperties *properties = [[MSGraphProperties alloc] init];
 [properties setPriority: 1];
 [properties setAssignee:@"john@contoso.com"];
 [externalItem setProperties:properties];
-[externalItem setContent:@"Textual content of the file"];
+MSGraphExternalItemContent *content = [[MSGraphExternalItemContent alloc] init];
+[content setValue:@"<h1>Error in payment gateway</h1><p>Error details...</p>"];
+[content setType: [MSGraphExternalItemContentType html]];
+[externalItem setContent:content];
 
 NSError *error;
 NSData *externalItemData = [externalItem getSerializedDataWithError:&error];

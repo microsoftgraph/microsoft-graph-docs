@@ -17,7 +17,7 @@ This topic describes how to enable application access to partner-managed custome
 
 ## What is a partner-managed application
 
-The CSP program enables Microsoft’s partners to resell and manage Microsoft Online Services (such as Office 365, Microsoft Azure, and CRM Online) to customers. Management of customer services is done through Delegated Admin Privileges, which enables designated partner users (known as agents) to access and configure their customers’ environments.
+The CSP program enables Microsoft’s partners to resell and manage Microsoft Online Services (such as Microsoft 365, Microsoft Azure, and CRM Online) to customers. Management of customer services is done through Delegated Admin Privileges, which enables designated partner users (known as agents) to access and configure their customers’ environments.
 
 Additionally, as a partner developer, you can build a **partner-managed app** to manage your customers' Microsoft services. Partner-managed apps are often called *pre-consented* apps because all your customers are automatically pre-consented for your partner-managed apps. This means when a user from one of your customer tenants uses one of your partner-managed apps, the user can use it without being prompted to give consent. Partner-managed apps also inherit Delegated Admin Privileges, so your partner agents can also get privileged access to your customers through your partner-managed application.
 

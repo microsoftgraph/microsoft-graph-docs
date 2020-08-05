@@ -1,13 +1,15 @@
 ---
 title: "Get windows10NetworkBoundaryConfiguration"
 description: "Read properties and relationships of the windows10NetworkBoundaryConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windows10NetworkBoundaryConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2334
+Content-Length: 2232
 
 {
   "value": {
@@ -113,9 +115,7 @@ Content-Length: 2334
       ],
       "enterpriseIPRanges": [
         {
-          "@odata.type": "microsoft.graph.iPv6Range",
-          "lowerAddress": "Lower Address value",
-          "upperAddress": "Upper Address value"
+          "@odata.type": "microsoft.graph.ipRange"
         }
       ],
       "enterpriseInternalProxyServers": [
@@ -133,7 +133,6 @@ Content-Length: 2334
   }
 }
 ```
-
 
 
 

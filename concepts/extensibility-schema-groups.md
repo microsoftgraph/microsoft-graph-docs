@@ -10,9 +10,9 @@ ms.custom: graphiamtop20
 
 We're going to walk you through an example to demonstrate how to use *schema extensions*. 
 
-Imagine you're a developer in a Learning Management Software company called “Graph Learn” that builds training courses and materials for businesses.  Office 365 groups, with their rich collaborative experiences, 
+Imagine you're a developer in a Learning Management Software company called “Graph Learn” that builds training courses and materials for businesses.  Microsoft 365 groups, with their rich collaborative experiences, 
 is a fantastic way to deliver course content and record exercises among participants for both online courses and instructor-led courses.  You may want to make 
-those Office 365 groups used for training courses easily identifiable as training courses, which will allow other developers to discover your groups and build rich experiences on top of your learning courses.
+those Microsoft 365 groups used for training courses easily identifiable as training courses, which will allow other developers to discover your groups and build rich experiences on top of your learning courses.
 
 For this scenario, we're going to show you how to:
 
@@ -251,8 +251,8 @@ Content-length: 326
 
 - [Add custom data to resources using extensions](extensibility-overview.md)
 - [Add custom data to users using open extensions (preview)](extensibility-open-users.md)
-- [Office 365 domains](https://technet.microsoft.com/library/office-365-domains.aspx)
-- [Adding and Verifying a Domain for the NEW Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Microsoft 365 domains](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Adding and Verifying a Domain for the NEW Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension resource type](/graph/api/resources/schemaextension?view=graph-rest-1.0)
 - [List schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)
 - [Create schemaExtension](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)

@@ -2,7 +2,7 @@
 title: "Telecom expense management in Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to telecom expense management for a tenant organization."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "intune"
 ---
 

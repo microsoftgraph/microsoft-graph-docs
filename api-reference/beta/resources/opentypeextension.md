@@ -4,7 +4,7 @@ description: "Open extensions (formerly known as Office 365 data extensions) pro
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "extensions"
 ---
 
 # openTypeExtension resource type (open extensions)
@@ -88,7 +88,7 @@ None
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
 |[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |

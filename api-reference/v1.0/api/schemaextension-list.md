@@ -3,7 +3,7 @@ title: "List schemaExtensions"
 description: "Get a list of schemaExtension objects created by any apps you own in the current tenant (that can be "
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: ""
+ms.prod: "extensions"
 doc_type: apiPageType
 ---
 
@@ -14,15 +14,17 @@ Namespace: microsoft.graph
 Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be 
 **InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**. 
 
+> **Note:** The list will also contain schema extension definitions (marked as `Available`) created by other developers from other tenants. This is different from other APIs that only return tenant-specific data. Extension data created based on schema extension definitions is tenant-specific and can only be accessed by apps explicitly granted permission. 
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.Read, Application.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Application.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

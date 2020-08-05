@@ -7,7 +7,7 @@ ms.prod: ""
 author: ""
 ---
 
-# fileHashType enum
+# fileHashType enum type
 
 Namespace: microsoft.graph
 

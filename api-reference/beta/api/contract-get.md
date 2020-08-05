@@ -2,7 +2,7 @@
 title: "Get Contract"
 description: "Retrieve the properties and relationships of contract object."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

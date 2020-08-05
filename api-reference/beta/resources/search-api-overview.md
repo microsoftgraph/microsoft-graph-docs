@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Search API to query data"
-description: "Using the search API, apps can search Office 365 data in the context of the authenticated user"
+description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
 localization_priority: Priority
 author: "nmoreau"
 ms.prod: "search"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use the Microsoft Search API to query Office 365 data in your apps.
+You can use the Microsoft Search API to query Microsoft 365 data in your apps.
 
 Search requests run in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
 
@@ -112,3 +112,6 @@ The search API has the following limitations:
   - Sort **message** or **event** type results by date.
 
   - Sort **driveItem**, **externalFile**, or **externalItem** type results by relevance.
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

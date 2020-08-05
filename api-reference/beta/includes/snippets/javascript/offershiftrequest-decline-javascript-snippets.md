@@ -14,7 +14,7 @@ const decline = {
   message: "Sorry, you can't offer this shift."
 };
 
-let res = await client.api('/teams/schedule/offerShiftRequests/decline')
+let res = await client.api('/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline')
 	.version('beta')
 	.post(decline);
 

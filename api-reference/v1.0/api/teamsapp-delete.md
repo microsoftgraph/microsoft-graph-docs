@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
-| Delegated (work or school account)     | AppCatalog.ReadWrite.All |
+| Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported|
-| Application                            | Not supported|
+| Application                            | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -1,13 +1,15 @@
 ---
 title: "Update windowsInformationProtectionAppLockerFile"
 description: "Update the properties of a windowsInformationProtectionAppLockerFile object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update windowsInformationProtectionAppLockerFile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -94,7 +96,6 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
-
 
 
 

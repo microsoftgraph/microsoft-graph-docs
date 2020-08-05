@@ -1,7 +1,7 @@
 ---
 title: "Delete outlookTaskFolder"
 description: "Delete the specified Outlook task folder."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

@@ -11,9 +11,9 @@ var bookingBusiness = new BookingBusiness
 	Email = "admin@fabrikam.com",
 	SchedulingPolicy = new BookingSchedulingPolicy
 	{
-		TimeSlotInterval = "PT60M",
-		MinimumLeadTime = "P1D",
-		MaximumAdvance = "P30D",
+		TimeSlotInterval = new Duration("PT60M"),
+		MinimumLeadTime = new Duration("P1D"),
+		MaximumAdvance = new Duration("P30D"),
 		SendConfirmationsToOwner = true,
 		AllowStaffSelection = true
 	}

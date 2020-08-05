@@ -1,13 +1,15 @@
 ---
 title: "Create managedIOSLobApp"
 description: "Create a new managedIOSLobApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create managedIOSLobApp
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -200,7 +202,6 @@ Content-Length: 1661
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

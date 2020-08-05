@@ -360,9 +360,9 @@ The user's personal OneDrive for Business could not be retrieved. The following 
 
 | Cause | Resolution |
 |:------|:------|
-| The user's personal site has not been provisioned. | The user should open OneDrive for Business and follow any instructions to provision the site. If this fails, they should contact their Office 365 tenant administrator. |
+| The user's personal site has not been provisioned. | The user should open OneDrive for Business and follow any instructions to provision the site. If this fails, they should contact their Microsoft 365 tenant administrator. |
 | The user's personal site is currently being provisioned. | Try the request later. |
-| The user does not have a valid OneDrive for Business license. | The user should contact their Office 365 tenant administrator. |
+| The user does not have a valid OneDrive for Business license. | The user should contact their Microsoft 365 tenant administrator. |
 | A network issue prevented the request from being successfully sent. | Try the request later. |
 
 ### 30109

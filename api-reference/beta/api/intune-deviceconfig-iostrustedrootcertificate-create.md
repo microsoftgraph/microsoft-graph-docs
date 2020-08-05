@@ -1,13 +1,15 @@
 ---
 title: "Create iosTrustedRootCertificate"
 description: "Create a new iosTrustedRootCertificate object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create iosTrustedRootCertificate
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -153,7 +155,6 @@ Content-Length: 1308
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

@@ -46,6 +46,7 @@ attendees.emailAddress = emailAddress;
 attendees.type = AttendeeType.REQUIRED;
 attendeesList.add(attendees);
 event.attendees = attendeesList;
+event.allowNewTimeProposals = true;
 
 graphClient.me().events()
 	.buildRequest()

@@ -1,8 +1,8 @@
 ---
 title: "calendar resource type"
-description: "A calendar which is a container for events. It can be a calendar for a user, or the default calendar of an Office 365 group."
+description: "A calendar which is a container for events. It can be a calendar for a user, or the default calendar of a Microsoft 365 group."
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A calendar which is a container for events. It can be a calendar for a [user](user.md), or the default calendar of an Office 365 [group](group.md).
+A calendar which is a container for events. It can be a calendar for a [user](user.md), or the default calendar of a Microsoft 365 [group](group.md).
 
 > **Note:** There are a few minor differences in the way you can interact with user calendars and group calendars:
 
@@ -27,8 +27,8 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |:---------------|:--------|:----------|
 |[List calendars](../api/user-list-calendars.md)|[calendar](calendar.md) collection|Get all the user's calendars, or the calendars in the default or other specific calendar group.|
 |[Create calendar](../api/user-post-calendars.md) |[calendar](calendar.md)| Create a new calendar in the default calendar group or specified calendar group for a user.|
-|[Get calendar](../api/calendar-get.md) | [calendar](calendar.md) |Get the properties and relationships of a **calendar** object. The calendar can be one for a user, or the default calendar of an Office 365 group. |
-|[Update](../api/calendar-update.md) | [calendar](calendar.md)  |Update the properties of a **calendar** object. The calendar can be one for a user, or the default calendar of an Office 365 group. |
+|[Get calendar](../api/calendar-get.md) | [calendar](calendar.md) |Get the properties and relationships of a **calendar** object. The calendar can be one for a user, or the default calendar of a Microsoft 365 group. |
+|[Update](../api/calendar-update.md) | [calendar](calendar.md)  |Update the properties of a **calendar** object. The calendar can be one for a user, or the default calendar of a Microsoft 365 group. |
 |[Delete](../api/calendar-delete.md) | None |Delete calendar object. |
 |[List calendarView](../api/calendar-list-calendarview.md) |[event](event.md) collection| Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarview)` or from a specified calendar.|
 |[List events](../api/calendar-list-events.md) |[event](event.md) collection| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
@@ -55,7 +55,7 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |id|String|The calendar's unique identifier. Read-only.|
 |isDefaultCalendar|Boolean|True if this is the default calendar where new events are created by default, false otherwise.|
 |isRemovable|Boolean| Indicates whether this user calendar can be deleted from the user mailbox.|
-|isShared |Boolean |True if the user has shared the calendar with other users, false otherwise. Since only the user who created the calendar can share it, **isShared** and **isSharedWithMe** cannot be true for the same user. This property is set when sharing is initiated in an Outlook client, and can be reset when the sharing is cencelled through the client or the corresponding [calendarPermission](calendarpermission.md) resource. Read-only.|
+|isShared |Boolean |True if the user has shared the calendar with other users, false otherwise. Since only the user who created the calendar can share it, **isShared** and **isSharedWithMe** cannot be true for the same user. This property is set when sharing is initiated in an Outlook client, and can be reset when the sharing is cancelled through the client or the corresponding [calendarPermission](calendarpermission.md) resource. Read-only.|
 |isSharedWithMe |Boolean |True if the user has been shared this calendar, false otherwise. This property is always false for a calendar owner. This property is set when sharing is initiated in an Outlook client, and can be reset when the sharing is cancelled through the client or the corresponding [calendarPermission](calendarpermission.md) resource. Read-only. |
 |isTallyingResponses|Boolean|Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.|
 |name|String|The calendar name.|

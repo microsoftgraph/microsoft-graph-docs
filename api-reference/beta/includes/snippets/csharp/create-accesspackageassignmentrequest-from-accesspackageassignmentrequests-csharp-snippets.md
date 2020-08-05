@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var accessPackageAssignmentRequest = new AccessPackageAssignmentRequest
+var accessPackageAssignmentRequest = new AccessPackageAssignmentRequestObject
 {
 	RequestType = "AdminAdd",
 	AccessPackageAssignment = new AccessPackageAssignment

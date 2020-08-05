@@ -1,13 +1,15 @@
 ---
 title: "List androidManagedStoreAppConfigurations"
 description: "List properties and relationships of the androidManagedStoreAppConfiguration objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List androidManagedStoreAppConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 889
+Content-Length: 942
 
 {
   "value": [
@@ -85,12 +87,12 @@ Content-Length: 889
           "action": "autoGrant"
         }
       ],
-      "appSupportsOemConfig": true
+      "appSupportsOemConfig": true,
+      "profileApplicability": "androidWorkProfile"
     }
   ]
 }
 ```
-
 
 
 

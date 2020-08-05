@@ -2,7 +2,7 @@
 title: "cloudAppSecuritySessionControl resource type"
 description: "Session control used to enforce cloud app security checks."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

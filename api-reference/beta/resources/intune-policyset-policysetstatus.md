@@ -1,13 +1,15 @@
 ---
 title: "policySetStatus enum type"
 description: "The enum to specify the status of PolicySet."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # policySetStatus enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

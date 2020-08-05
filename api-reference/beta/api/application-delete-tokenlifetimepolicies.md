@@ -2,7 +2,7 @@
 title: "Remove tokenLifetimePolicy"
 description: "Remove a tokenLifetimePolicy from an application or servicePrincipal."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -17,7 +17,7 @@ Remove a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) from an [app
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following sets of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|

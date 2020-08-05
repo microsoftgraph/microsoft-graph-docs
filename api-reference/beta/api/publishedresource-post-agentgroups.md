@@ -2,7 +2,7 @@
 title: "Assign publishedResource to onPremisesAgentGroup"
 description: "Assign a **publishedResource** object to an **onPremisesAgentGroup** object."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

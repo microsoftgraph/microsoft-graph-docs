@@ -2,7 +2,7 @@
 title: "message: createReply"
 description: "Create a draft of the reply to the specified message. You can then update the draft to add reply content to the **body** or change other message properties, or, simply send the draft."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

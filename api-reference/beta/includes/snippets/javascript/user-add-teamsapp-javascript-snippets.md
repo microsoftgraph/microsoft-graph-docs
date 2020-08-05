@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const teamsAppInstallation = {
+const userScopeTeamsAppInstallation = {
    teamsApp@odata.bind:"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 };
 
 let res = await client.api('/users/{id}/teamwork/installedApps')
 	.version('beta')
-	.post(teamsAppInstallation);
+	.post(userScopeTeamsAppInstallation);
 
 ```

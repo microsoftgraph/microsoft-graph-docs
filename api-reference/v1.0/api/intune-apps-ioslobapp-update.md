@@ -1,7 +1,7 @@
 ---
 title: "Update iosLobApp"
 description: "Update the properties of a iosLobApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -175,6 +175,8 @@ Content-Length: 1401
   "buildNumber": "Build Number value"
 }
 ```
+
+
 
 
 

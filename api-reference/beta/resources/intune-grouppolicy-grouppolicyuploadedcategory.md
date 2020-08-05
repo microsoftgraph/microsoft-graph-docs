@@ -1,13 +1,15 @@
 ---
 title: "groupPolicyUploadedCategory resource type"
 description: "The category entity stores the category of a group policy definition"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyUploadedCategory resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

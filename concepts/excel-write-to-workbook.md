@@ -150,7 +150,7 @@ The `onWriteToExcel` function constructs the two-dimensional string array and pa
           .catch(err => console.error(err));
       }
 
-##See also
+## See also
 
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)

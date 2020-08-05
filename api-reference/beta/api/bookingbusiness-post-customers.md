@@ -2,7 +2,7 @@
 title: "Create bookingCustomer"
 description: "Create a new bookingCustomer object."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---

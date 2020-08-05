@@ -1,7 +1,7 @@
 ---
 title: "windowsDefenderAdvancedThreatProtectionConfiguration resource type"
 description: "Windows Defender AdvancedThreatProtection Configuration."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -70,6 +70,9 @@ Here is a JSON representation of the resource.
   "enableExpeditedTelemetryReporting": true
 }
 ```
+
+
+
 
 
 

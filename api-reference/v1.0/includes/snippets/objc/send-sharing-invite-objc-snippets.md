@@ -32,6 +32,13 @@ NSMutableArray *rolesList = [[NSMutableArray alloc] init];
 [rolesList addObject: @"write"];
 payloadDictionary[@"roles"] = rolesList;
 
+NSString *password = @"password123";
+payloadDictionary[@"password"] = password;
+
+NSString *expirationDateTimeDateTimeString = @"07/15/2018 14:00:00";
+NSDate *expirationDateTime = [NSDate ms_dateFromString: expirationDateTimeDateTimeString];
+payloadDictionary[@"expirationDateTime"] = expirationDateTime;
+
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];
 

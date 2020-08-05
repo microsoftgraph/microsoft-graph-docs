@@ -32,15 +32,17 @@ items:
       - name: Tutorials
         items:
           - name: Overview
-            href: tutorials.md
+            href: tutorials.yml
           - name: .NET Core
             href: /graph/tutorials/dotnet-core
           - name: Android
             href: /graph/tutorials/android
           - name: Angular
             href: /graph/tutorials/angular
+          - name: ASP.NET Core
+            href: /graph/tutorials/aspnet-core
           - name: ASP.NET
-            href: /graph/tutorials/aspnet
+            href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Microsoft Flow
             href: /graph/tutorials/flow
           - name: iOS Objective-C
@@ -78,6 +80,16 @@ items:
         href: azuread-users-concept-overview.md
       - name: Groups
         href: office365-groups-concept-overview.md
+      - name: Applications
+        items:    
+          - name: Overview
+            href: applications-concept-overview.md
+          - name: Automate SAML-based SSO configuration
+            href: application-saml-sso-configure-api.md
+          - name: Configure application proxy
+            href: application-proxy-configure-api.md
+          - name: Configure provisioning
+            href: https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api?context=/graph/context
       - name: Calendar
         displayName: Outlook
         items:
@@ -87,18 +99,22 @@ items:
             href: findmeetingtimes-example.md
           - name: Get free/busy schedule
             href: outlook-get-free-busy-schedule.md
-          - name: Propose new meeting times (preview)
+          - name: Propose new meeting times
             href: outlook-calendar-meeting-proposals.md
-          - name: Organize or attend online meetings (preview)
+          - name: Set event as online meeting
             href: outlook-calendar-online-meetings.md
+          - name: Choose an online meeting API
+            href: choose-online-meeting-api.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
-          - name: Share or delegate calendar (preview)
+          - name: Share or delegate calendar
             href: outlook-share-or-delegate-calendar.md
           - name: Get shared events
             href: outlook-get-shared-events-calendars.md
           - name: Create shared events
             href: outlook-create-event-in-shared-delegated-calendar.md
+          - name: Attach large files
+            href: outlook-large-attachments.md
           - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Cloud communications
@@ -113,12 +129,12 @@ items:
             href: cloud-communications-media.md
           - name: Online meetings
             href: cloud-communications-online-meetings.md
-          - name: Call records (preview)
+          - name: Choose an online meeting API
+            href: choose-online-meeting-api.md
+          - name: Call records
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md
-          - name: Limits
-            href: cloud-communications-limits.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -151,8 +167,14 @@ items:
           - name: Tips
             href: data-connect-tips.md
       - name: Devices and apps
-        href: intune-concept-overview.md
-        displayName: Intune
+        expanded: true
+        items:
+          - name: Cloud printing (preview)
+            href: universal-print-concept-overview.md
+            displayName: Universal Print
+          - name: Corporate management
+            href: intune-concept-overview.md
+            displayName: Intune
       - name: Education
         items:
           - name: Overview
@@ -166,11 +188,12 @@ items:
         href: dynamics-business-central-concept-overview.md
         displayname: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
-        href: azuread-identity-access-management-concept-overview.md
-        displaName: Azure AD, Microsoft identity platform
+        displayName: Azure AD, Microsoft identity platform
         items:
-          - name: Information Protection
-            href: information-protection-overview.md
+          - name: Overview
+            href: azuread-identity-access-management-concept-overview.md
+          - name: Authentication methods
+            href: authenticationmethods-get-started.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -182,7 +205,7 @@ items:
             href: outlook-organize-messages.md
           - name: Get MIME content
             href: outlook-get-mime-message.md
-          - name: Attach large files (preview)
+          - name: Attach large files
             href: outlook-large-attachments.md
           - name: Get shared messages
             href: outlook-share-messages-folders.md
@@ -250,6 +273,10 @@ items:
             href: social-intel-concept-overview.md
           - name: Get information about relevant people
             href: people-example.md
+          - name: Customize the profile card (preview)
+            href: add-properties-profilecard.md
+          - name: Customize insights privacy (preview)
+            href: insights-customize-item-insights-privacy.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
         items:
@@ -263,7 +290,7 @@ items:
         items:
           - name: Overview
             href: reportroot-concept-overview.md
-          - name: Authorization for Office 365 usage reports
+          - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
       - name: Search (preview)
         items:
@@ -295,6 +322,8 @@ items:
             href: security-authorization.md
           - name: Integrated solutions
             href: security-integration.md
+          - name: Information Protection
+            href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
       - name: Sites and lists
@@ -312,16 +341,14 @@ items:
             href: teams-create-group-and-team.md
           - name: List all teams
             href: teams-list-all-teams.md
+          - name: Choose an online meeting API
+            href: choose-online-meeting-api.md
           - name: Configuring built-in tabs
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
-      - name: Universal Print
-        items:
-          - name: Overview
-            href: universal-print-concept-overview.md
       - name: Workbooks and charts
         displayName: Excel
         items:
@@ -337,6 +364,11 @@ items:
             href: excel-update-range-format.md
           - name: Write data to a workbook
             href: excel-write-to-workbook.md
+          - name: Resources
+            expanded: true
+            items:
+              - name: Error codes
+                href: workbook-error-codes.md
   - name: Develop
     expanded: true
     items:
@@ -358,6 +390,8 @@ items:
             href: auth-cloudsolutionprovider.md
           - name: Limit mailbox access
             href: auth-limit-mailbox-access.md
+          - name: Resolve authorization errors
+            href: resolve-auth-errors.md
       - name: Use the API
         items:
           - name: Overview
@@ -368,7 +402,8 @@ items:
             href: paging.md
           - name: Use query parameters
             href: query-parameters.md
-          - name: Batch requests
+          - name: Batching
+            displayName: Batch requests
             href: json-batching.md
           - name: Throttling
             href: throttling.md
@@ -378,13 +413,13 @@ items:
               - name: Overview
                 href: webhooks.md
               - name: Tutorial
-                href: /graph/tutorials/change-notifications
+                href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Missing Outlook notifications (preview)
                 href: webhooks-outlook-authz.md
               - name: Notifications with resource data (preview)
                 href: webhooks-with-resource-data.md
-          - name: Track changes
-            displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
+          - name: Change tracking
+            displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
               - name: Overview
                 href: delta-query-overview.md
@@ -451,10 +486,18 @@ items:
             href: sdks/sdk-installation.md
           - name: Create a client
             href: sdks/create-client.md
+          - name: Customize a client
+            href: sdks/customize-client.md
           - name: Choose an authentication provider
             href: sdks/choose-authentication-providers.md
           - name: Create requests
             href: sdks/create-requests.md
+          - name: Page through a collection
+            href: sdks/paging.md
+          - name: Create a batch request
+            href: sdks/batch-requests.md
+          - name: Upload large files
+            href: sdks/large-file-upload.md
       - name: Use the toolkit
         items:
           - name: Toolkit overview
@@ -465,20 +508,22 @@ items:
             items:
               - name: Login
                 href: toolkit/components/login.md
+              - name: Get
+                href: toolkit/components/get.md
               - name: Person
                 href: toolkit/components/person.md
               - name: People
                 href: toolkit/components/people.md
+              - name: Person Card
+                href: toolkit/components/person-card.md
+              - name: People Picker
+                href: toolkit/components/people-picker.md
+              - name: Teams Channel Picker
+                href: toolkit/components/teams-channel-picker.md
               - name: Agenda
                 href: toolkit/components/agenda.md
               - name: Tasks
                 href: toolkit/components/tasks.md
-              - name: People Picker
-                href: toolkit/components/people-picker.md
-              - name: Person Card
-                href: toolkit/components/person-card.md
-              - name: Get
-                href: toolkit/components/get.md
           - name: Providers
             items:
               - name: Using the providers

@@ -1,6 +1,6 @@
 ---
 title: "Update itemphone"
-description: "Update the properties of an itemphone object."
+description: "Update the properties of an itemPhone object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/phones/{id} 
+PATCH /me/profile/phones/{id}
 ```
 
 ## Request headers
@@ -89,7 +89,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

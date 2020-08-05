@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Bookings API overview (preview)"
-description: "Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for small businesses and their customers. Any small business that provides service on an appointment basis, such as auto repair shops, hair salons, and law firms, can benefit from having their bookings managed so as to free up time for the more important task to grow their business. Microsoft Bookings is available to businesses that have an Office 365 Business Premium subscription."
-author: "angelgolfer-ms"
+description: "Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for organization and their users and customers."
+author: "arvindmicrosoft"
 localization_priority: Priority
 ms.prod: "bookings"
 ms.custom: scenarios:getting-started
@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Microsoft Bookings API overview (preview)
 
-Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for small businesses and their customers. Any small business that provides service on an appointment basis, such as auto repair shops, hair salons, and law firms, can benefit from having their bookings managed so as to free up time for the more important task to grow their business. Microsoft Bookings is available to businesses that have an Office 365 Business Premium subscription.
+Microsoft Bookings provides online and mobile apps that make appointment scheduling simple and efficient for small businesses and their customers. Any organization that provides service on an appointment basis, such as large scale enterprise companies, auto repair shops, hair salons, and law firms, can benefit from having their bookings managed so as to free up time for the more important task to grow their business. Microsoft Bookings is available to enterprise organziations and businesses that have a Microsoft 365 Business Premium subscription.
 
 ## Why integrate with Microsoft Bookings using Microsoft Graph?
 
@@ -37,6 +37,6 @@ See [Microsoft Bookings API in Microsoft Graph beta](/graph/api/resources/bookin
 
 Learn more about:
 
-- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) and other [Office 365 business apps](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) and other [Microsoft 365 business apps](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
 - [Using the Bookings API](/graph/api/resources/booking-api-overview?view=graph-rest-beta) in Microsoft Graph.
 

@@ -1,13 +1,15 @@
 ---
 title: "Create windows10CustomConfiguration"
 description: "Create a new windows10CustomConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windows10CustomConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -72,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1296
+Content-length: 1243
 
 {
   "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
@@ -106,12 +108,10 @@ Content-length: 1296
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value",
-      "value": 5,
-      "isReadOnly": true
+      "omaUri": "Oma Uri value"
     }
   ]
 }
@@ -122,7 +122,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1468
+Content-Length: 1415
 
 {
   "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
@@ -159,17 +159,14 @@ Content-Length: 1468
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value",
-      "value": 5,
-      "isReadOnly": true
+      "omaUri": "Oma Uri value"
     }
   ]
 }
 ```
-
 
 
 

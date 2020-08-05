@@ -1,6 +1,6 @@
 ---
 title: "Get userAccountInformation"
-description: "Retrieve the properties and relationships of useraccountinformation object."
+description: "Retrieve the properties and relationships of userAccountInformation object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "Profile"
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -39,8 +39,8 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          |Description                |
+|:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
 
 ## Request body

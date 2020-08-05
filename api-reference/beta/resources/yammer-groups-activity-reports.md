@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 You can gain insights into the activity of Yammer groups in your organization and see how many Yammer groups are being created and used.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
 
 ## Reports
 

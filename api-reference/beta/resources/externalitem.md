@@ -22,6 +22,7 @@ An item indexed via a Microsoft Search [connection](externalconnection.md).
 | Method                                                        | Return Type                     | Description |
 |:--------------------------------------------------------------|:--------------------------------|:--|
 | [Create externalItem](../api/externalconnection-put-items.md) | [externalItem](externalitem.md) | Create an externalItem. |
+| [Get externalItem](../api/externalitem-get.md)                | [externalItem](externalitem.md) | Get an externalItem.    |
 | [Update externalItem](../api/externalitem-update.md)          | [externalItem](externalitem.md) | Update an externalItem. |
 | [Delete externalItem](../api/externalitem-delete.md)          | None                            | Delete an externalItem. |
 
@@ -30,13 +31,13 @@ An item indexed via a Microsoft Search [connection](externalconnection.md).
 | Property   | Type                     | Description                          |
 |:-----------|:-------------------------|:-------------------------------------|
 | acl        | [acl](acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. Required. |
-| content    | String                   | A plain-text representation of the contents of the item. The text in this property is full-text indexed. Optional. |
+| content    | [externalItemContent](externalitemcontent.md) | A plain-text or HTML representation of the contents of the item. The text in this property is full-text indexed. Optional. |
 | id         | String                   | Developer-provided unique ID of the item within the containing [externalConnection](externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required. |
 | properties | Object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [externalConnection](externalconnection.md). Required. |
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
@@ -55,7 +56,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "acl": [{"@odata.type": "microsoft.graph.acl"}],
-  "content": "String",
+  "content": {"@odata.type": "microsoft.graph.externalItemContent"},
   "id": "String (identifier)",
   "properties": "Object"
 }

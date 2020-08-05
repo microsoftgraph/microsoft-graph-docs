@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| User.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
@@ -35,7 +35,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ### Exceptions
 * The `$expand` and `select` operators are supported for the `share` navigation property, but not for `jobs`.
-* The `$count` operator is not supported.
+* Some operators are not supported: `$count`, `$search`.
 
 ## Request headers
 | Name      |Description|
@@ -97,7 +97,6 @@ Content-length: 1526
       "isShared": true,
       "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
       "acceptingJobs": true,
-      "registeredBy": {},
       "status": {
         "processingState": "stopped",
         "processingStateReasons": ["disconnected"],

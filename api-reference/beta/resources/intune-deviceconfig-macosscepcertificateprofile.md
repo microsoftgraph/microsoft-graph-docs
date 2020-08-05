@@ -1,13 +1,15 @@
 ---
 title: "macOSScepCertificateProfile resource type"
 description: "Mac OS SCEP certificate profile."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # macOSScepCertificateProfile resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

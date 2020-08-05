@@ -8,6 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Team team = new Team();
 TeamMemberSettings memberSettings = new TeamMemberSettings();
+memberSettings.allowCreatePrivateChannels = true;
 memberSettings.allowCreateUpdateChannels = true;
 team.memberSettings = memberSettings;
 TeamMessagingSettings messagingSettings = new TeamMessagingSettings();

@@ -10,7 +10,7 @@ ms.custom: scenarios:getting-started
 # Microsoft Teams API overview
 
 [Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for teamwork and intelligent communications. 
-Built on the strength and scale of [Office 365](https://products.office.com/) with over 120 million users, 
+Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, 
 Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
 
 
@@ -36,7 +36,7 @@ When the business issue is resolved and you no longer need the team,
 use the Microsoft Teams API to [archive](/graph/api/team-archive?view=graph-rest-1.0)
 or [delete](/graph/api/group-delete?view=graph-rest-1.0) the team. 
 If you know the maximum duration of the team when you create it, 
-set an [Office 365 group expiration policy](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
+set an [Microsoft 365 group expiration policy](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
 for the team that automatically removes the team according to the policy.
 
 ### Get work done even when no one is around

@@ -32,7 +32,7 @@ Apply the following best practices for consent and authorization in your app:
 
 - **Use the correct permission type based on scenarios**. If you're building an interactive application where a signed in user is present, your application should use *delegated* permissions, where the application is delegated permission to act as the signed-in user when making calls to Microsoft Graph. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use application permissions.
 
-    >**Note:** Using application permissions for interactive scenarios can put your application at compliance and security risk. It can inadvertantly elevate a user's privileges to access data, circumnavigating policies configured by an administrator.
+    >**Note:** Using application permissions for interactive scenarios can put your application at compliance and security risk. It can inadvertently elevate a user's privileges to access data, circumnavigating policies configured by an administrator.
 <!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
 - **Be thoughtful when configuring your app**. This will directly affect end user and admin experiences, along with application adoption and security. For example:
 

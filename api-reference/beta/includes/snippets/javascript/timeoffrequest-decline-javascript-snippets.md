@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const timeOffRequest = {
+const decline = {
   message: "message-value"
 };
 
-let res = await client.api('/teams/{id}/schedule/timeOffRequests/decline')
+let res = await client.api('/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline')
 	.version('beta')
-	.post(timeOffRequest);
+	.post(decline);
 
 ```

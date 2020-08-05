@@ -3,7 +3,7 @@ title: "synchronizationSchedule resource type"
 description: "Defines the schedule used to run a synchronizationJob."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

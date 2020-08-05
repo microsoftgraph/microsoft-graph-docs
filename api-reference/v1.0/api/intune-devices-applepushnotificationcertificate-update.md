@@ -1,7 +1,7 @@
 ---
 title: "Update applePushNotificationCertificate"
 description: "Update the properties of a applePushNotificationCertificate object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -93,6 +93,8 @@ Content-Length: 384
   "certificate": "Certificate value"
 }
 ```
+
+
 
 
 

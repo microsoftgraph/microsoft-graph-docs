@@ -1,7 +1,7 @@
 ---
 title: "Update microsoftStoreForBusinessApp"
 description: "Update the properties of a microsoftStoreForBusinessApp object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -139,6 +139,8 @@ Content-Length: 941
   "packageIdentityName": "Package Identity Name value"
 }
 ```
+
+
 
 
 

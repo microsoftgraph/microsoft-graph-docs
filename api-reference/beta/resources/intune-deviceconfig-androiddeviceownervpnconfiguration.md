@@ -1,13 +1,15 @@
 ---
 title: "androidDeviceOwnerVpnConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Android Fully Managed device to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidDeviceOwnerVpnConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -41,12 +43,16 @@ Inherits from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfigurati
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
 |connectionName|String|Connection name displayed to the user. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |role|String|Role when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |realm|String|Realm when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`.|
+|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.|
+|proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy server.|
+|targetedPackageIds|String collection|Targeted App package IDs.|
+|alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
+|alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -59,6 +65,7 @@ Inherits from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfigurati
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |identityCertificate|[androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md)|Identity certificate for client authentication when authentication method is certificate.|
+|derivedCredentialSettings|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Tenant level settings for the Derived Credentials to be used for authentication.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -114,7 +121,18 @@ Here is a JSON representation of the resource.
       "isDefaultServer": true
     }
   ],
-  "connectionType": "String"
+  "connectionType": "String",
+  "proxyServer": {
+    "@odata.type": "microsoft.graph.vpnProxyServer",
+    "automaticConfigurationScriptUrl": "String",
+    "address": "String",
+    "port": 1024
+  },
+  "targetedPackageIds": [
+    "String"
+  ],
+  "alwaysOn": true,
+  "alwaysOnLockdown": true
 }
 ```
 

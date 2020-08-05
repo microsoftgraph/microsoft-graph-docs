@@ -1,13 +1,15 @@
 ---
 title: "androidForWorkAppConfigurationSchemaItem resource type"
 description: "Single configuration item inside an Android for Work application's custom configuration schema."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidForWorkAppConfigurationSchemaItem resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

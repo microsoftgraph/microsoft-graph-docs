@@ -15,7 +15,6 @@ const forceDelete = {
 };
 
 let res = await client.api('/domains/{id}/forceDelete')
-	.version('beta')
 	.post(forceDelete);
 
 ```

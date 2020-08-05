@@ -1,13 +1,15 @@
 ---
 title: "edgeHomeButtonConfiguration resource type"
 description: "The home button configuration base class used to identify the available options"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # edgeHomeButtonConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

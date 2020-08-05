@@ -14,7 +14,7 @@ The Microsoft Graph Security API supports two types of authorization:
 
 - **Application-level authorization** - There is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization. 
     >**Note:** This option can also support cases where Role-Based Access Control (RBAC) is managed by the application.
-- **User delegated authorization** - A user who is a member of the Azure AD tenant is signed in. The user must be a member of an Azure AD Limited Admin role - either Security Reader or Securty Administrator - in addition to the application having been granted the required permissions.
+- **User delegated authorization** - A user who is a member of the Azure AD tenant is signed in. The user must be a member of an Azure AD Limited Admin role - either Security Reader or Security Administrator - in addition to the application having been granted the required permissions.
 
 If you're calling the Microsoft Graph Security API from Graph Explorer:
 

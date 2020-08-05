@@ -22,6 +22,8 @@ A **place** object can be one of the following types:
 
 Both **room** and **roomList** are derived from the **place** object.
 
+By default, this operation returns 100 places per page. 
+
 Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
 ## Permissions
@@ -59,8 +61,16 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 >**Note**: To get rooms in a room list, you must specify the room list by its **emailAddress** property, not by its **id**. 
 
 ## Optional query parameters
+This method supports the following query parameters to help customize the response:
+- $filter
+- $select
+- $top
+- $skip
+- $count=true
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+Use $top to customize the page size. The default page size is 100.
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

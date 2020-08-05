@@ -1,13 +1,15 @@
 ---
 title: "managedDeviceMobileAppConfiguration resource type"
 description: "An abstract class for Mobile app configuration for enrolled devices."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # managedDeviceMobileAppConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

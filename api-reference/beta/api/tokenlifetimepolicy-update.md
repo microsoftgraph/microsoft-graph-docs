@@ -2,7 +2,7 @@
 title: "Update tokenlifetimepolicy"
 description: "Update the properties of tokenLifetimePolicy object."
 localization_priority: Normal
-author: "davidmu1"
+author: "lujiangfeng666"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

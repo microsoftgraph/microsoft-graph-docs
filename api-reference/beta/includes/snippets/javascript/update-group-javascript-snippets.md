@@ -11,14 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-  description: "description-value",
-  displayName: "displayName-value",
-  groupTypes: [
-    "groupTypes-value"
-  ],
-  mail: "mail-value",
-  mailEnabled: true,
-  mailNickname: "mailNickname-value"
+  assignedLabels: 
+  [
+    {
+        "labelId" : "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+    }
+  ]
 };
 
 let res = await client.api('/groups/{id}')

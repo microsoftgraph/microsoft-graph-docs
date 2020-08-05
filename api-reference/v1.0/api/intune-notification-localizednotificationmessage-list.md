@@ -1,7 +1,7 @@
 ---
 title: "List localizedNotificationMessages"
 description: "List properties and relationships of the localizedNotificationMessage objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -74,6 +74,8 @@ Content-Length: 374
   ]
 }
 ```
+
+
 
 
 

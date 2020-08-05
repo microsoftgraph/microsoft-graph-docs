@@ -4,7 +4,7 @@ description: ""
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: ""
+author: "markwahl-msft"
 ---
 
 # accessReviewSettings resource type

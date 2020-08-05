@@ -101,6 +101,8 @@ Depending on the current state, the owner app may be able to update or delete th
 | Available | <ul><li>The schema extension is available for use by all apps in any tenant. </li><li>After the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (as long as the app has permissions to that resource). The app can assign custom data when creating a new instance or updating an existing instance. </li><li>Only the owner app can update the extension definition with additive changes. No app can delete the extension definition in this state. </li><li>The owner app can move the schema extension from **Available** to the **Deprecated** state.</li></ul> |
 | Deprecated | <ul><li>The schema extension definition can no longer be read or modified. </li><li>No app can view, update, add new properties, or delete the extension. </li><li>Apps can, however, still read, update, or delete existing extension _property values_. </li></ul> |
 
+> **Note:** Schema extension definitions (marked as `Available`) created by other developers from other tenants are visible to all developers (by listing all schema extensions). This is different from other APIs that only return tenant-specific data. On the other hand, extension data created based on schema extension definitions, is tenant-specific and can only be accessed by apps explicitly granted permission. 
+
 ### Supported property data types
 
 The following data types are supported when defining a property in a schema extension:
@@ -154,6 +156,6 @@ For known limitations using extensions, see the [extensions section](known-issue
 
 ## See also
 
-- [Office 365 domains](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Microsoft 365 domains](https://technet.microsoft.com/library/office-365-domains.aspx)
 
-- [Adding and verifying a domain for an Office 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Adding and verifying a domain for a Microsoft 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

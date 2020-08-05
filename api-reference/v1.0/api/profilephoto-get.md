@@ -15,7 +15,7 @@ Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (
 
 > **Note** This operation in version 1.0 supports only a user's work or school mailboxes and not personal mailboxes.
 
-The supported sizes of HD photos on Office 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
+The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
 
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.
@@ -72,7 +72,7 @@ GET /groups/{id}/photos/{size}
 
 |Parameter|Type|Description|
 |:-----|:-----|:-----|
-|size  |String  | A photo size. The supported sizes of HD photos on Office 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory. |
+|size  |String  | A photo size. The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory. |
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.

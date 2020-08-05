@@ -19,7 +19,7 @@ Represents the feedback provided by the user an endpoint about the quality of th
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|rating|String|The rating provided by the user of this endpoint about the quality of this Session. Possible values are: `notRated`, `bad`, `poor`, `fair`, `good`, `excellent`, `unknownFutureValue`.|
+|rating|microsoft.graph.callRecords.userFeedbackRating|The rating provided by the user of this endpoint about the quality of this Session. Possible values are: `notRated`, `bad`, `poor`, `fair`, `good`, `excellent`, `unknownFutureValue`.|
 |text|String|The feedback text provided by the user of this endpoint for the session.|
 |tokens|[microsoft.graph.callRecords.feedbackTokenSet](callrecords-feedbacktokenset.md)|The set of feedback tokens provided by the user of this endpoint for the session. This is a set of Boolean properties. The property names should not be relied upon since they may change depending on what tokens are offered to the user.|
 

@@ -1,7 +1,7 @@
 ---
 title: "Create event"
 description: "Use this API to create a new event in the default or the specified calendar."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md). 
+Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md). 
 
 ## Permissions
 Depending on the type of calendar that the event is created in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

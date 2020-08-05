@@ -1,13 +1,15 @@
 ---
 title: "windows10NetworkProxyServer resource type"
 description: "Network Proxy Server Policy."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windows10NetworkProxyServer resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

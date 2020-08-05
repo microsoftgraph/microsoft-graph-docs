@@ -3,8 +3,8 @@ title: "List programControlTypes"
 description: "In the Azure AD access reviews feature, list all the programControlType objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "markwahl-msft"
 ---
 
 # List programControlTypes
@@ -96,7 +96,7 @@ Content-type: application/json
         },
         {
             "id": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-            "displayName": "Access Reviews for Office 365 Groups' membership"
+            "displayName": "Access Reviews for Microsoft 365 groups' membership"
         }
     ]
 }

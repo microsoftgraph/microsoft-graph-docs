@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerEnrollmentProfile resource type"
-description: "Enrollment Profile used to enroll COSU devices using Google's Cloud Management."
-author: "davidmu1"
+description: "Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management."
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -9,11 +9,13 @@ doc_type: resourcePageType
 
 # androidDeviceOwnerEnrollmentProfile resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
+Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
 
 ## Methods
 |Method|Return Type|Description|
@@ -33,6 +35,7 @@ Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
 |id|String|Unique GUID for the enrollment profile.|
 |displayName|String|Display name for the enrollment profile.|
 |description|String|Description for the enrollment profile.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
 |lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
 |tokenValue|String|Value of the most recently created token for this enrollment profile.|
@@ -61,6 +64,7 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
+  "enrollmentMode": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "tokenValue": "String",

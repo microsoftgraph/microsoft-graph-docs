@@ -26,7 +26,7 @@ var educationRubric = new EducationRubric
 			},
 			Grading = new EducationAssignmentPointsGradeType
 			{
-				MaxPoints = 2
+				MaxPoints = 2f
 			}
 		},
 		new RubricLevel
@@ -39,7 +39,7 @@ var educationRubric = new EducationRubric
 			},
 			Grading = new EducationAssignmentPointsGradeType
 			{
-				MaxPoints = 1
+				MaxPoints = 1f
 			}
 		}
 	},
@@ -71,7 +71,7 @@ var educationRubric = new EducationRubric
 					}
 				}
 			},
-			Weight = 50
+			Weight = 50f
 		},
 		new RubricQuality
 		{
@@ -99,7 +99,7 @@ var educationRubric = new EducationRubric
 					}
 				}
 			},
-			Weight = 50
+			Weight = 50f
 		}
 	},
 	Grading = new EducationAssignmentPointsGradeType

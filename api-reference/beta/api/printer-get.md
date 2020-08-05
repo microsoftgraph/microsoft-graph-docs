@@ -30,7 +30,7 @@ In addition to the following permissions, the user's tenant must have an active 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/printers/{id}
-GET /print/printerShares/{id}/printer
+GET /print/shares/{id}/printer
 ```
 
 ## Optional query parameters
@@ -93,7 +93,6 @@ Content-length: 1313
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "acceptingJobs": true,
-  "registeredBy": {},
   "status": {
     "processingState": "stopped",
     "processingStateReasons": ["disconnected"],

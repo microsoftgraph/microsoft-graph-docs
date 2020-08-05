@@ -46,7 +46,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |replyToId| string | Read-only. Id of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels not chats) |
 |from|[identitySet](identityset.md)| Read only. Details of the sender of the chat message.|
 |etag| string | Read-only. Version number of the chat message. |
-|messageType|chatMessageType|The type of chat message. The possible values are: `message`.|
+|messageType|string|The type of chat message. The possible values are: `message`.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the chat message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the chat message is created or edited, including when a reply is made (if it's a root chat message in a channel) or a reaction is added or removed. |
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the chat message was deleted, or null if not deleted. |
@@ -55,8 +55,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |summary|string| Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Currently supports user, bot, team, channel.|
-|importance| chatMessageImportance | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
-|reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
+|importance|string | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
+|reactions| [chatMessageReaction](./chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
 |locale|string|Locale of the chat message set by the client.|
 
 ## JSON representation
@@ -96,7 +96,7 @@ The following is a JSON representation of the resource.
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
   "policyViolation": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
+  "reactions":  "string",
   "locale": "string",
   "deleted": true
 }

@@ -1,13 +1,15 @@
 ---
 title: "androidDeviceOwnerVirtualHomeButtonType enum type"
 description: "Android Device Owner Kiosk Mode managed home screen virtual home button type."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # androidDeviceOwnerVirtualHomeButtonType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

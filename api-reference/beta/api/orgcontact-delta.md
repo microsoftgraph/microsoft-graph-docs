@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection. See [Track changes](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection. See [change tracking](/graph/delta-query-overview) for details.
 
 ## Permissions
 
@@ -105,6 +105,8 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 The following is an example of the request. Because there is no `$select` parameter, a default set of properties is tracked and returned.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgContact_delta"
@@ -113,6 +115,20 @@ The following is an example of the request. Because there is no `$select` parame
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts/delta
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response
@@ -157,6 +173,8 @@ Content-type: application/json
 
 The next example shows the initial request selecting three properties for change tracking, with default response behavior.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgcontact_delta_select"
@@ -165,6 +183,20 @@ The next example shows the initial request selecting three properties for change
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle,mail
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-delta-select-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-delta-select-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-delta-select-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -200,6 +232,8 @@ Content-type: application/json
 
 The next example shows the initial request selecting three properties for change tracking, with alternative minimal response behavior.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgcontact_delta_minimal"
@@ -209,6 +243,20 @@ The next example shows the initial request selecting three properties for change
 GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle,mail
 Prefer: return=minimal
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-delta-minimal-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-delta-minimal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-delta-minimal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

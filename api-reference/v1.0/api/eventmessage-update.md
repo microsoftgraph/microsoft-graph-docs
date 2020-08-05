@@ -1,7 +1,7 @@
 ---
 title: "Update eventMessage"
 description: "Update the properties of an eventMessage object."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

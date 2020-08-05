@@ -1,9 +1,9 @@
 ---
 title: "Delete a user - Microsoft Graph API"
 description: "Describes the delete method of the user resource (entity) of the Microsoft Graph API (REST)."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 
-## Request
+### Request
 
 Here is an example of the request.
 

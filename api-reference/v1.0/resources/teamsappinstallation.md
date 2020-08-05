@@ -49,7 +49,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part
 }
 ```
 
-# See also
+## See also
 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)

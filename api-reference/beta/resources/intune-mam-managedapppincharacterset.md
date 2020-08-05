@@ -1,13 +1,15 @@
 ---
 title: "managedAppPinCharacterSet enum type"
 description: "Character set which is to be used for a user's app PIN"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # managedAppPinCharacterSet enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

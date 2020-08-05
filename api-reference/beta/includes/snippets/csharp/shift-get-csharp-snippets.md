@@ -9,10 +9,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var shiftPreferences = new ShiftPreferences
 {
 	Id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7",
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.etag","1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"}
-	},
 	Availability = new List<ShiftAvailability>()
 	{
 		new ShiftAvailability
@@ -38,6 +34,10 @@ var shiftPreferences = new ShiftPreferences
 			TimeZone = "Pacific Standard Time",
 			TimeSlots = null
 		}
+	},
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.etag", "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"}
 	}
 };
 

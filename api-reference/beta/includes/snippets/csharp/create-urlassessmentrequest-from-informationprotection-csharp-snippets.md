@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var threatAssessmentRequest = new UrlAssessmentRequest
+var threatAssessmentRequest = new UrlAssessmentRequestObject
 {
 	Url = "http://test.com",
 	ExpectedAssessment = ThreatExpectedAssessment.Block,

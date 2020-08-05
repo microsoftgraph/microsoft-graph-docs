@@ -1,13 +1,15 @@
 ---
 title: "vpnServiceExceptionAction enum type"
 description: "The VPN action to take for a specific service."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # vpnServiceExceptionAction enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

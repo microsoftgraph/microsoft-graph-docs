@@ -14,8 +14,8 @@ var printConnector = new PrintConnector
 	AppVersion = "0.19.7338.23496",
 	Location = new PrinterLocation
 	{
-		Latitude = 1.1,
-		Longitude = 2.2,
+		Latitude = 1.1f,
+		Longitude = 2.2f,
 		AltitudeInMeters = 3
 	}
 };

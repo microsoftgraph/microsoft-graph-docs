@@ -2,7 +2,7 @@
 title: "Assign tokenLifetimePolicy"
 description: "Assign a tokenLifetimePolicy to an application or service principal."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

@@ -2,7 +2,7 @@
 title: "Update onPremisesPublishingProfile"
 description: "Update the properties of an onPremisesPublishingProfile object."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

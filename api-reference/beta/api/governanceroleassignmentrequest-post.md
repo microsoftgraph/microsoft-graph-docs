@@ -3,8 +3,8 @@ title: "Create governanceRoleAssignmentRequest"
 description: "Create a role assignment request to represent the operation you want on a role assignment. The following table lists the operations."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
-ms.prod: "microsoft-identitiy-platform"
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # Create governanceRoleAssignmentRequest

@@ -3,7 +3,7 @@ title: "Create schemaExtension"
 description: "Create a new schemaExtension definition to extend a supporting resource type."
 localization_priority: Priority
 author: "dkershaw10"
-ms.prod: ""
+ms.prod: "extensions"
 doc_type: apiPageType
 ---
 
@@ -26,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
+
+> [!NOTE]
+> Additionally for the delegated flow, the signed-in user must be the owner of the calling application OR the owner of the (application with the) `appId` used to set the **owner** property.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +54,7 @@ The following table shows the properties that are required when you create a sch
 |:---------------|:--------|:----------|
 |description|String|Description for the schema extension.|
 |id|String|The unique identifier for the schema extension definition. <br>You can assign a value in one of two ways: <ul><li>Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. As an example, `contoso_mySchema`. NOTE: Only verified domains under the following top-level domains are supported: `.com`,`.net`, `.gov`, `.edu` or `.org`. </li><li>Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.</li></ul>This property cannot be changed after creation. |
-|owner|String|(Optional) The `appId` of the application that is the owner of the schema extension. This property can be supplied on creation, to set the owner.  If not supplied, then the calling application's `appId` will be set as the owner. So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property. Once set, this property is read-only and cannot be changed.|
+|owner|String|(Optional) The `appId` of the application that is the owner of the schema extension. By default, the calling application's `appId` will be set as the owner. However, the property may be supplied on creation, to set the owner appId to something different from the calling app. In all cases, in the delegated flow, the signed-in user **must** be the owner of the application being set as the schema extension's owner. So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property, for an appId you own. Once set, this property is read-only and cannot be changed.|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
 |targetTypes|String collection|Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.|
 
@@ -61,12 +64,12 @@ If successful, this method returns `201 Created` response code and [schemaExtens
 
 ## Example
 
-##### Request 1
+### Example 1: Creating a schema extension using a verified domain
 
-The first example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the 
+#### Request
+
+This example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the 
 schema extension definition. The unique string is based on this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
-
-In the request body, supply a JSON representation of the [schemaExtension](../resources/schemaextension.md) object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -118,7 +121,7 @@ Content-type: application/json
 ---
 
 
-##### Response 1
+#### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -156,9 +159,11 @@ Content-length: 420
 }
 ```
 
-##### Request 2
+### Example 2: Creating a schema extension using just a name
 
-The second example shows specifying just a schema name, `courses`, in the **id** property in the request, together with the JSON representation of the rest of the 
+#### Request
+
+This example shows specifying just a schema name, `courses`, in the **id** property in the request, together with the JSON representation of the rest of the 
 properties in the [schemaExtension](../resources/schemaextension.md) object. Microsoft Graph will assign and return a unique string value in the response.
 
 
@@ -212,7 +217,7 @@ Content-type: application/json
 ---
 
 
-##### Response 2
+#### Response
 
 The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. 
 The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. 
@@ -252,6 +257,105 @@ Content-length: 420
 }
 ```
 
+### Example 3: Creating a schema extension setting the owner
+
+#### Request
+
+This example shows how to create a schema extension setting the **owner**.  In this scenario, the user of the application might not be the owner of the application (for example if you are using Microsoft Graph Explorer).  In this case you should set the **owner** property to the **appId** of an application you own, otherwise you won't be authorized to create a schema extension. Set the **owner** property in the request, together with the JSON representation of the rest of the 
+properties in the [schemaExtension](../resources/schemaextension.md) object.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_schemaextension_from_schemaextensions_3"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/schemaExtensions
+Content-type: application/json
+
+{
+    "id":"courses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "Group"
+    ],
+    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-schemaextension-from-schemaextensions-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-schemaextension-from-schemaextensions-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The response includes the **owner** set to the supplied value in the request. 
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 420
+
+{
+    "id": "extk9eruy7c_courses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "Group"
+    ],
+    "status": "InDevelopment",
+    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "String"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
 
 ## See also
 

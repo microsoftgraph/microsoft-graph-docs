@@ -24,13 +24,13 @@ var message = new Message
 			}
 		}
 	},
-	Attachments = new List<Attachment>()
+	Attachments = (IMessageAttachmentsCollectionPage)new List<Attachment>()
 	{
 		new FileAttachment
 		{
 			Name = "attachment.txt",
 			ContentType = "text/plain",
-			ContentBytes = "SGVsbG8gV29ybGQh"
+			ContentBytes = Encoding.ASCII.GetBytes("SGVsbG8gV29ybGQh")
 		}
 	}
 };

@@ -2,7 +2,7 @@
 title: "conditionalAccessSessionControl resource type"
 description: "Session control base type."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

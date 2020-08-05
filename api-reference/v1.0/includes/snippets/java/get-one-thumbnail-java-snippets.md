@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Content {size} = graphClient.me().drive().items("{item-id}").thumbnails("{thumb-id}").{size}()
+Content response = graphClient.me().drive().items("{item-id}").thumbnails("{thumb-id}").{size}()
 	.buildRequest()
 	.get();
 

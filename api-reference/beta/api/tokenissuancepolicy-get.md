@@ -2,7 +2,7 @@
 title: "Get tokenIssuancePolicy"
 description: "Retrieve the properties and relationships of tokenIssuancePolicy object."
 localization_priority: Normal
-author: "davidmu1"
+author: "luleonpla"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -64,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/tokenIssuancepolicies/{id}
+GET https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tokenissuancepolicy-csharp-snippets.md)]

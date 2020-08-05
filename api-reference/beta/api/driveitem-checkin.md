@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-description: "Check-in a checked out DriveItem resource, which makes the version of the document available to others."
-ms.date: 09/10/2017
-title: Check In Files
+description: "Check in a checked out DriveItem resource, which makes the version of the document available to others."
+title: "driveItem: checkin"
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Check-in changes to a DriveItem resource
+# driveItem: checkin
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check-in a checked out DriveItem resource, which makes the version of the document available to others.
+Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 ## Permissions
 
@@ -44,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 |   Name    | Value  |                                                Description                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | string | Optional. The desired status of the document after the check-in operation is complete. Can be `published` or unspecified. |
+| checkInAs | string | Optional. The status of the document after the check-in operation is complete. Can be `published` or unspecified. |
 | comment   | string | A check-in comment that is associated with the version.                                                   |
 
 ## Example

@@ -2,8 +2,8 @@
 title: "user: getMemberGroups"
 description: "Return all the groups that the user is a member of. The check is transitive, unlike reading the"
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "krbain"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 Return all the groups that the user is a member of. The check is transitive, unlike reading the
 [memberOf](../api/user-list-memberof.md) navigation property, which returns only the groups that the user is a direct member of.
 
-This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each
-request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is
+This function supports Microsoft 365 and other types of groups provisioned in Azure AD. The maximum number of groups each
+request can return is 2046. Note that Microsoft 365 groups cannot contain groups. So membership in a Microsoft 365 group is
 always direct.
 
 ## Permissions

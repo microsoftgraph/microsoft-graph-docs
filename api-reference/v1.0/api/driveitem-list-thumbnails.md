@@ -55,6 +55,9 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 This method supports the `$select` [OData puery parameter](/graph/query-parameters) to customize the response.
 
+Additionally, this method supports retrieving the thumbnail with the original orientation EXIF value and without the applied rotation by appending the `originalOrientation=true` query parameter.
+This is currently only supported on OneDrive Personal.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.

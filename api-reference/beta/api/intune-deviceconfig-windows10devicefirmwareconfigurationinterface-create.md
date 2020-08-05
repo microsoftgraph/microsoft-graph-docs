@@ -1,13 +1,15 @@
 ---
 title: "Create windows10DeviceFirmwareConfigurationInterface"
 description: "Create a new windows10DeviceFirmwareConfigurationInterface object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windows10DeviceFirmwareConfigurationInterface
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -169,7 +171,6 @@ Content-Length: 1481
   "bootFromBuiltInNetworkAdapters": "enabled"
 }
 ```
-
 
 
 

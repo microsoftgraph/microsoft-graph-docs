@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var expression = "Replace([preferredLanguage], "-", , , "_", ,  )";
+var expression = "Replace([preferredLanguage], \"-\", , , \"_\", ,  )";
 
-var targetAttributeDefinition = ;
+var targetAttributeDefinition = null;
 
 var testInputObject = new ExpressionInputObject
 {
@@ -18,208 +18,322 @@ var testInputObject = new ExpressionInputObject
 		new StringKeyObjectValuePair
 		{
 			Key = "objectId",
-			Value = "66E4A8CC-1B7B-435E-95F8-F06CEA133828"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "66E4A8CC-1B7B-435E-95F8-F06CEA133828"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "IsSoftDeleted",
-			Value = "false"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "false"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "accountEnabled",
-			Value = "true"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "true"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "streetAddress",
-			Value = "1 Redmond Way"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "1 Redmond Way"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "city",
-			Value = "Redmond"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Redmond"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "state",
-			Value = "WA"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "WA"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "postalCode",
-			Value = "98052"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "98052"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "country",
-			Value = "USA"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "USA"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "department",
-			Value = "Sales"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sales"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "displayName",
-			Value = "John Smith"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "John Smith"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute1",
-			Value = "Sample 1"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 1"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute2",
-			Value = "Sample 2"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 2"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute3",
-			Value = "Sample 3"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 3"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute4",
-			Value = "Sample 4"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 4"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute5",
-			Value = "Sample 5"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 5"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute6",
-			Value = "Sample 6"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 6"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute7",
-			Value = "Sample 1"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 1"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute8",
-			Value = "Sample 1"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 1"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute9",
-			Value = "Sample 1"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 1"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute10",
-			Value = "Sample 1"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 1"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute11",
-			Value = "Sample 1"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 1"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute12",
-			Value = "Sample 1"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 1"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute13",
-			Value = "Sample 1"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 1"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute14",
-			Value = "Sample 1"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 1"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "extensionAttribute15",
-			Value = "Sample 1"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Sample 1"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "givenName",
-			Value = "John"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "John"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "jobTitle",
-			Value = "Finance manager"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Finance manager"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "mail",
-			Value = "johns@contoso.com"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "johns@contoso.com"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "mailNickname",
-			Value = "johns"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "johns"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "manager",
-			Value = "maxs@contoso.com"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "maxs@contoso.com"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "mobile",
-			Value = "425-555-0010"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "425-555-0010"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "onPremisesSecurityIdentifier",
-			Value = "66E4A8CC-1B7B-435E-95F8-F06CEA133828"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "66E4A8CC-1B7B-435E-95F8-F06CEA133828"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "passwordProfile.password",
-			Value = ""
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", ""}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "physicalDeliveryOfficeName",
-			Value = "Main Office"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Main Office"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "preferredLanguage",
-			Value = "EN-US"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "EN-US"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "proxyAddresses",
-			Value = ""
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", ""}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "surname",
-			Value = "Smith"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "Smith"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "telephoneNumber",
-			Value = "425-555-0011"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "425-555-0011"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "userPrincipalName",
-			Value = "johns@contoso.com"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"value", "johns@contoso.com"}
+			}
 		},
 		new StringKeyObjectValuePair
 		{
 			Key = "appRoleAssignments",
 			AdditionalData = new Dictionary<string, object>()
 			{
-				{"value@odata.type","#Collection(String)"}
-			},
-			Value = new List<String>()
-			{
-				"Default Assignment"
+				{"value@odata.type", "#Collection(String)"},
+				{"value", "[\"Default Assignment\"]"}
 			}
 		}
 	}

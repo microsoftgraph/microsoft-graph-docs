@@ -118,6 +118,9 @@ A URL constructed with only the siteCollection (`SPSite`) ID will point to the r
 GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
 ```
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 [site]: site.md
 [list]: list.md
 [drive]: drive.md

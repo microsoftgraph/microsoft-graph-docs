@@ -1,13 +1,15 @@
 ---
 title: "Create windowsPrivacyDataAccessControlItem"
 description: "Create a new windowsPrivacyDataAccessControlItem object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windowsPrivacyDataAccessControlItem
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -91,7 +93,6 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "androidForWorkEnrollmentTarget enum type"
 description: "Android for Work device management targeting type for the account"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # androidForWorkEnrollmentTarget enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

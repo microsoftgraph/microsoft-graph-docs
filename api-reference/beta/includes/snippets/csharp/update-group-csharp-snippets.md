@@ -8,15 +8,13 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var group = new Group
 {
-	Description = "description-value",
-	DisplayName = "displayName-value",
-	GroupTypes = new List<String>()
+	AssignedLabels = new List<AssignedLabel>()
 	{
-		"groupTypes-value"
-	},
-	Mail = "mail-value",
-	MailEnabled = true,
-	MailNickname = "mailNickname-value"
+		new AssignedLabel
+		{
+			LabelId = "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+		}
+	}
 };
 
 await graphClient.Groups["{id}"]

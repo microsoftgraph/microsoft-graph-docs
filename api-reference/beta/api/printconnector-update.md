@@ -138,8 +138,7 @@ Content-length: 406
         "Red West"
     ],
     "stateOrProvince": "Washington"
-  },
-  "registeredBy": {}
+  }
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "device resource type"
 description: "Represents a device registered in the organization."
 localization_priority: Normal
-author: "davidmu1"
+author: "spunukol"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---

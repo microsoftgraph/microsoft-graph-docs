@@ -3,7 +3,7 @@ title: "synchronizationSchema: functions"
 description: "List all the functions currently supported in the attributeMappingSource."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

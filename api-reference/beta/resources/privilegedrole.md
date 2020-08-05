@@ -3,8 +3,8 @@ title: "privilegedRole resource type"
 description: "Represents an Azure AD administrator role, such as: **Global Administrator, Billing Administrator, Service Administrator, User Administrator, Password Administrator**, etc."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # privilegedRole resource type

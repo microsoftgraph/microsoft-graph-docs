@@ -1,13 +1,15 @@
 ---
 title: "win32LobAppPowerShellScriptDetectionType enum type"
 description: "Contains all supported Powershell Script output detection type."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # win32LobAppPowerShellScriptDetectionType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

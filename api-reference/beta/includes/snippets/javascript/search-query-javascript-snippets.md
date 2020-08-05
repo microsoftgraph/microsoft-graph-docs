@@ -14,7 +14,7 @@ const searchResponse = {
   requests: [
     {
       entityTypes: [
-        "microsoft.graph.externalItem"
+        "externalItem"
       ],
       contentSources: [
         "/external/connections/connectionfriendlyname"

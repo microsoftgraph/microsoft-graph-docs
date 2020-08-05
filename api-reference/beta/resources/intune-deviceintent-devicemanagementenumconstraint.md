@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementEnumConstraint resource type"
 description: "Constraint that enforces the setting value is from a permitted set of strings"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementEnumConstraint resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

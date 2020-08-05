@@ -1,9 +1,9 @@
 ---
 title: "parseExpressionResponse resource type"
-description: "Represents the response from the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action."
+description: "Represents the response from the synchronizationSchema: parseExpression action."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "deviceEnrollmentLimitConfiguration resource type"
 description: "Not yet documented"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -65,6 +65,9 @@ Here is a JSON representation of the resource.
   "limit": 1024
 }
 ```
+
+
+
 
 
 

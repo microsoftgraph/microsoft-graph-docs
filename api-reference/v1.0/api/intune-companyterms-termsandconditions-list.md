@@ -1,7 +1,7 @@
 ---
 title: "List termsAndConditionses"
 description: "List properties and relationships of the termsAndConditions objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -77,6 +77,8 @@ Content-Length: 518
   ]
 }
 ```
+
+
 
 
 

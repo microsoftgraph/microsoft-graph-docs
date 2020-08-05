@@ -1,7 +1,7 @@
 ---
 title: "Create iosCompliancePolicy"
 description: "Create a new iosCompliancePolicy object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -131,6 +131,8 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
+
+
 
 
 

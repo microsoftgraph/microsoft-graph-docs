@@ -12,14 +12,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphGroup *group = [[MSGraphGroup alloc] init];
-[group setDescription:@"description-value"];
-[group setDisplayName:@"displayName-value"];
-NSMutableArray *groupTypesList = [[NSMutableArray alloc] init];
-[groupTypesList addObject: @"groupTypes-value"];
-[group setGroupTypes:groupTypesList];
-[group setMail:@"mail-value"];
-[group setMailEnabled: true];
-[group setMailNickname:@"mailNickname-value"];
+NSMutableArray *assignedLabelsList = [[NSMutableArray alloc] init];
+MSGraphAssignedLabel *assignedLabels = [[MSGraphAssignedLabel alloc] init];
+[assignedLabels setLabelId:@"45cd0c48-c540-4358-ad79-a3658cdc5b88"];
+[assignedLabelsList addObject: assignedLabels];
+[group setAssignedLabels:assignedLabelsList];
 
 NSError *error;
 NSData *groupData = [group getSerializedDataWithError:&error];

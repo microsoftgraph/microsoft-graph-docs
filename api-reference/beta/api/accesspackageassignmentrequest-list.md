@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
+| Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve the access package of each request, include `$expand=accessPackage` in the query.  To retrieve only requests for a specific access package, include in the query a filter such as `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'`.
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve the access package of each request, include `$expand=accessPackage` in the query.  To retrieve only requests for a specific access package, include in the query a filter such as `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'`.  To retrieve the resulting assignment, include `$expand=accessPackageAssignment` in the query.
 For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers

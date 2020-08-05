@@ -2,12 +2,14 @@
 title: "officeUserCheckinSummary resource type"
 description: "Entity that describes  tenant check-in stats."
 localization_priority: Normal
-author: "davidmu1"
+author: "dougeby"
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # officeUserCheckinSummary resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,7 +1,7 @@
 ---
 title: "Get deviceCategory"
 description: "Read properties and relationships of the deviceCategory object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -78,6 +78,8 @@ Content-Length: 211
   }
 }
 ```
+
+
 
 
 

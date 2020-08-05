@@ -1,7 +1,7 @@
 ---
 title: "Update outlooktask"
 description: "Change writable properties of an Outlook task."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
