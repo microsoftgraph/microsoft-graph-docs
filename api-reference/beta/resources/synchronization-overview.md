@@ -3,7 +3,7 @@ title: "Azure AD synchronization API overview"
 description: "Automate the creation, maintenance, and removal of identities in cloud applications."
 localization_priority: Normal
 doc_type: conceptualPageType
-author: "ArvindHarinder1; dhanyahk"
+author: "ArvindHarinder1;"
 ms.prod: "microsoft-identity-platform"
 ---
 
