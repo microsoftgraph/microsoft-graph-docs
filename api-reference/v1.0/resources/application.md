@@ -83,6 +83,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | tokenEncryptionKeyId |String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Specifies the verified publisher of the application.|
 | web |[webApplication](webapplication.md)| Specifies settings for a web application. |
+| spa |[spaApplication](spaapplication.md)| Specifies settings for a single-page application. `spa` type redirect URIs notify the server to enable CORS and use the authorization code flow. |
 
 ## Relationships
 
