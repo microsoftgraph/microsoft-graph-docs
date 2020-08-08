@@ -28,10 +28,15 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
+To get a label available to the signed-in user or specified user:
 ```http
-GET /informationprotection/policy/labels/{id}
-GET /informationprotection/policy/labels
+GET /me/informationProtection/policy/labels/{id}
+GET /users/{id | user-principal-name}/informationProtection/policy/labels/{id}
+```
+
+To get a label available to the organization:
+```http
+GET /informationProtection/policy/labels/{id}
 ```
 
 ## Optional query parameters

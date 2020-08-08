@@ -209,7 +209,7 @@ This resource supports:
 | showInAddressList | Boolean | `true` if the Outlook global address list should contain this user, otherwise `false`. If not set, this will be treated as `true`. For users invited through the invitation manager, this property will be set to `false`. <br><br>Returned only on $select.|
 | signInSessionsValidFromDateTime | DateTimeOffset | Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. <br><br>Returned only on $select. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 | skills | String collection | A list for the user to enumerate their skills. <br><br>Returned only on $select. |
-| signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user.<br><br>Supports $filter, but not with any other filterable properties. <br><br>Returned only on $select. Read-only. |
+| signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user.<br><br>Supports $filter, but not with any other filterable properties. <br><br>Returned only on $select. Read-only. <br>**Note:** Details for this property require an Azure AD Premium P1/P2 license.|
 | state | String | The state or province in the user's address. <br><br>Returned only on $select. Supports $filter. |
 | streetAddress | String | The street address of the user's place of business. <br><br>Returned only on $select.|
 | surname | String | The user's surname (family name or last name). <br><br>Returned by default. Supports $filter. |
@@ -276,7 +276,7 @@ The age group and minor consent properties are optional properties used by Azure
 |events|[event](event.md) collection|The user's events. Default is to show events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
-|insights|[officeGraphInsights](officegraphinsights.md) | Read-only. Nullable.|
+|insights|[itemInsights](iteminsights.md) | Read-only. Nullable.|
 |joinedGroups|[group](group.md) collection| Read-only. Nullable.|
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
@@ -419,7 +419,7 @@ Here is a JSON representation of the resource
   "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "drive": {"@odata.type": "microsoft.graph.drive"},
   "drives": [{"@odata.type": "microsoft.graph.drive"}],
-  "insights": {"@odata.type": "microsoft.graph.officeGraphInsights"},
+  "insights": {"@odata.type": "microsoft.graph.iteminsights"},
   "settings": {"@odata.type": "microsoft.graph.userSettings"},
   "events": [{"@odata.type": "microsoft.graph.event"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],

@@ -8,13 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var directoryObject = new DirectoryObject
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"directoryObject", "{}"}
-	}
+	Id = "{id}"
 };
 
-await graphClient.Devices["{id}"].RegisteredUsers
+await graphClient.Devices["{id}"].RegisteredUsers.References
 	.Request()
 	.AddAsync(directoryObject);
 

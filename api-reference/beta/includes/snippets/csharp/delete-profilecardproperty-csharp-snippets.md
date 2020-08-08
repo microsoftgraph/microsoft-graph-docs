@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Organization["{organizationId}"].Settings.ProfileCardProperties.Fax
+await graphClient.Organization["{organizationId}"].Settings.ProfileCardProperties["fax"]
 	.Request()
 	.DeleteAsync();
 

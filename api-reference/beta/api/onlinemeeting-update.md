@@ -45,6 +45,8 @@ If successful, this method returns a `200 OK` response code and an [onlineMeetin
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_onlinemeeting_request"
@@ -53,14 +55,26 @@ If successful, this method returns a `200 OK` response code and an [onlineMeetin
 PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 Content-Type: application/json 
 
-{ 
-    "startDateTime": "2020-09-09T14:33:30.8546353-07:00", 
-
-    "endDateTime": "2020-09-09T15:03:30.8566356-07:00", 
-
-    "subject": "Patch Meeting Subject" 
-} 
+{
+  "startDateTime": "2020-09-09T14:33:30.8546353-07:00",
+  "endDateTime": "2020-09-09T15:03:30.8566356-07:00",
+  "subject": "Patch Meeting Subject"
+}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-onlinemeeting-request-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-onlinemeeting-request-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-onlinemeeting-request-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

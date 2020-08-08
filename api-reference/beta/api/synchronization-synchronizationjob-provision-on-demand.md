@@ -56,6 +56,8 @@ If successful, this method returns a `200 OK` response code and a stringKeyStrin
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_provisionondemand"
@@ -77,6 +79,12 @@ Content-length: 122
     }]
   }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

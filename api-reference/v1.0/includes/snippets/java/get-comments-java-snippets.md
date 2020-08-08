@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IWorkbookCommentCollectionPage comments = graphClient.drive().root().workbook().comments()
+IWorkbookCommentCollectionPage comments = graphClient.drive().items("{id}").workbook().comments()
 	.buildRequest()
 	.get();
 

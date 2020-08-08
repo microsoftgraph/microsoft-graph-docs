@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var identityProvider = await graphClient.IdentityProviders["Amazon-OAuth"]
+var identityProviders = await graphClient.IdentityProviders
 	.Request()
 	.GetAsync();
 

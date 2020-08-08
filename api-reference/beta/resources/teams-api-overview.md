@@ -43,7 +43,7 @@ can also come into play.
 
 Files inside channels are stored in SharePoint; [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) apply.
 
-See also [throttling limits for Microsoft Teams services](/graph/throttling).
+See also [throttling limits for Microsoft Teams services](/graph/throttling#microsoft-teams-service-limits).
 
 ## Teams and groups
 

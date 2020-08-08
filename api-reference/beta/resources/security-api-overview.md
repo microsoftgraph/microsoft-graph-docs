@@ -46,6 +46,12 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 \*\*\* Azure Advanced Threat Protection alerts are available via the Microsoft Cloud App Security integration. This means you will get Azure Advanced Threat Protection alerts only if you have joined the [Unified SecOps preview program](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850) and connected Azure Advanced Threat Protection into Microsoft Cloud App Security.
 
+## Information protection
+
+**Labels** - Information protection labels provide details about how to properly apply a sensitivity label to information. The information protection label API describes the configuration of sensitivity labels that apply to a user or tenant.
+
+**Threat assessment** - The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam emails, phishing URLs, or malware attachments they receive to Microsoft. The policy check result and rescan result can help tenant administrators understand the threat scanning verdict and adjust their organizational policy.
+
 ## Threat indicators (preview)
 
 Threat indicators, also referred to as indicators of compromise (IoCs), represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers can generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. These indicators are then used in various security tools to defend against related threats.

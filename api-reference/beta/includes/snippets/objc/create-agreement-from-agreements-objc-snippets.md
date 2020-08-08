@@ -15,7 +15,7 @@ MSGraphAgreement *agreement = [[MSGraphAgreement alloc] init];
 [agreement setDisplayName:@"MSGraph Sample"];
 [agreement setIsViewingBeforeAcceptanceRequired: true];
 NSMutableArray *filesList = [[NSMutableArray alloc] init];
-MSGraphAgreementFile *files = [[MSGraphAgreementFile alloc] init];
+MSGraphAgreementFileLocalization *files = [[MSGraphAgreementFileLocalization alloc] init];
 [files setFileName:@"TOU.pdf"];
 [files setLanguage:@"en"];
 [files setIsDefault: true];

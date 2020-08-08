@@ -2,7 +2,7 @@
 title: "identitySecurityDefaultsEnforcementPolicy resource type"
 description: "Represents the Azure Active Directory security defaults policy. Security defaults contain preconfigured security settings that protect against common attacks."
 localization_priority: Normal
-author: "dkershaw10"
+author: "rohinigoyal1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

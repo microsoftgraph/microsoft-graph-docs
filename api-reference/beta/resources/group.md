@@ -120,11 +120,12 @@ This resource supports:
 |description|String|An optional description for the group. <br><br>Returned by default.|
 |displayName|String|The display name for the group. This property is required when a group is created and cannot be cleared during updates. <br><br>Returned by default. Supports $filter and $orderby. |
 |expirationDateTime|DateTimeOffset| Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only. |
-|groupTypes|String collection| Specifies the group type and its membership.  <br><br>If the collection contains `Unified` then the group is a Microsoft 365 group; otherwise it's a security group.  <br><br>If the collection includes `DynamicMembership`, the group has dynamic membership; otherwise, membership is static.  <br><br>Returned by default. Supports $filter.|
+|groupTypes|String collection| Specifies the group type and its membership.  <br><br>If the collection contains `Unified`, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see [groups overview](groups-overview.md).<br><br>If the collection includes `DynamicMembership`, the group has dynamic membership; otherwise, membership is static.  <br><br>Returned by default. Supports $filter.|
 |hasMembersWithLicenseErrors|Boolean| Indicates whether there are members in this group that have license errors from its group-based license assignment. <br><br>This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being **true**).|
 |hideFromAddressLists |Boolean |True if the group is not displayed in certain parts of the Outlook user interface: in the **Address Book**, in address lists for selecting message recipients, and in the **Browse Groups** dialog for searching groups; false otherwise. Default value is **false**. <br><br>Returned only on $select.|
 |hideFromOutlookClients |Boolean |True if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise. Default value is **false**. <br><br>Returned only on $select.|
 |id|String|The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
+|isAssignableToRole|Boolean|Indicates whether this group can be assigned to an Azure Active Directory role or not.<br><br>This property can only be set while creating the group and is immutable. Only Global Administrator and Privileged Role Administrator roles can set this property. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Returned by default.|
 |infoCatalogs|String collection|Identifies the info segments assigned to the group. Returned by default.|
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is **true**. <br><br>Returned only on $select. |
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`. <br><br>Returned only on $select. Read-only. |
@@ -225,6 +226,7 @@ The following is a JSON representation of the resource.
     "assignedLicenses",
     "autoSubscribeNewMembers",
     "hasMembersWithLicenseErrors",
+    "isAssignableToRole",
     "isSubscribedByMail",
     "licenseProcessingState",
     "unseenConversationsCount",
@@ -253,6 +255,7 @@ The following is a JSON representation of the resource.
   "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isFavorite": true,
+  "isAssignableRole": false,
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
   "mail": "string",

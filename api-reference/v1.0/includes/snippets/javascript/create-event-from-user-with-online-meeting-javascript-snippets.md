@@ -36,6 +36,7 @@ const event = {
       type: "required"
     }
   ],
+  allowNewTimeProposals: true,
   isOnlineMeeting: true,
   onlineMeetingProvider: "teamsForBusiness"
 };

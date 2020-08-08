@@ -7,10 +7,10 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# getAvailableExtensionProperties
+# directoryObject: getAvailableExtensionProperties
 Namespace: microsoft.graph
 
-The getAvailableExtensionProperties action returns all or a filtered list of the directory extension properties that have been registered in a directory. The following entities support extension properties: user, group, organization, device, application, and servicePrincipal.
+Return all or a filtered list of the directory extension properties that have been registered in a directory. The following entities support extension properties: **user**, **group**, **organization**, **device**, **application**, and **servicePrincipal**.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,8 +44,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` to specify that only extension properties that are synced from the on-premises directory should be returned; `false` to specify that only extension properties that are not synced from the on-premises directory should be returned. If the parameter is omitted then all extension properties (both synced and non-synced) are returned.|
-
+|isSyncedFromOnPremises|Boolean|`true` to specify that only extension properties that are synced from the on-premises directory should be returned; `false` to specify that only extension properties that are not synced from the on-premises directory should be returned. If the parameter is omitted, all extension properties (both synced and non-synced) are returned.|
 
 ## Response
 
@@ -54,6 +53,7 @@ If successful, this action returns a `200 OK` response code and an [extensionPro
 ## Examples
 
 ### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getavailableextensionproperties"
@@ -69,6 +69,11 @@ Content-length: 43
   "isSyncedFromOnPremises": "Boolean"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getavailableextensionproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 > **Note:** The response object shown here might be shortened for readability.

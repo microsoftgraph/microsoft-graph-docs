@@ -45,41 +45,35 @@ The following sections describe the high-level components of the synchronization
 
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
-|directories            |[directoryDefinition](synchronization-directorydefinition.md) collection   |Describes directories and objects that are part of the [synchronizationJob](synchronization-synchronizationjob.md) or [synchronizationTemplate](synchronization-synchronizationtemplate.md). |
-|synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md) collection   |A collection of synchronization rules configured for the [synchronizationJob](synchronization-synchronizationjob.md) or [synchronizationTemplate](synchronization-synchronizationtemplate.md), |
+|id|String|Unique identifier for the schema.|
+|synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md) collection   |A collection of synchronization rules configured for the [synchronizationJob](synchronization-synchronizationjob.md) or [synchronizationTemplate](synchronization-synchronizationtemplate.md). |
 |version                |String                             |The version of the schema, updated automatically with every schema change.|
 
 
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|directories|[directoryDefinition](../resources/synchronization-directorydefinition.md) collection|Contains the collection of directories and all of their objects.|
+
 ## JSON representation
-
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.synchronizationSchema"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.synchronizationSchema",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-  "directories": [{"@odata.type": "microsoft.graph.directoryDefinition"}],
-  "provisioningTaskIdentifier": "String (identifier)",
-  "synchronizationRules": [{"@odata.type": "microsoft.graph.synchronizationRule"}],
+  "@odata.type": "#microsoft.graph.synchronizationSchema",
+  "id": "String (identifier)",
+  "synchronizationRules": [
+    {
+      "@odata.type": "microsoft.graph.synchronizationRule"
+    }
+  ],
   "version": "String"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "synchronizationSchema resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->

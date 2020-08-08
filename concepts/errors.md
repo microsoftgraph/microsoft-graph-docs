@@ -1,21 +1,12 @@
 ---
 title: "Microsoft Graph error responses and resource types"
-description: "  "
+description: "This topic describes some of the errors that can be returned in Microsoft Graph responses."
 localization_priority: Priority
 ---
 
 # Microsoft Graph error responses and resource types
 
-<!--In this article:
-  
--	[Status code](#msg-status-code)
--	[Error resource type](#msg-error-resource-type)
--	[Code property](#msg-code-property)
-
-<a name="msg_error_response"> </a> -->
-
-Errors in Microsoft Graph are returned using standard HTTP status codes, as well as a JSON error
-response object.
+Errors in Microsoft Graph are returned using standard HTTP status codes, as well as a JSON error response object.
 
 ## HTTP status codes
 
@@ -115,6 +106,7 @@ prepared to handle any one of these errors.
 |:--------------------------|:--------------
 | **accessDenied**          | The caller doesn't have permission to perform the action. 
 | **activityLimitReached**  | The app or user has been throttled.
+| **extensionError**        | The mailbox is located on premises and the Exchange server does not support federated Microsoft Graph requests, or an [application policy](/graph/auth-limit-mailbox-access) prevents the application from accessing the mailbox.
 | **generalException**      | An unspecified error has occurred.
 | **invalidRange**          | The specified byte range is invalid or unavailable.
 | **invalidRequest**        | The request is malformed or incorrect.

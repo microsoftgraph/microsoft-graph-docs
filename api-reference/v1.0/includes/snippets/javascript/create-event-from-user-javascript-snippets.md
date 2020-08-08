@@ -14,7 +14,7 @@ const event = {
   subject: "Let's go for lunch",
   body: {
     contentType: "HTML",
-    content: "Does late morning work for you?"
+    content: "Does noon work for you?"
   },
   start: {
       dateTime: "2017-04-15T12:00:00",
@@ -35,7 +35,8 @@ const event = {
       },
       type: "required"
     }
-  ]
+  ],
+  allowNewTimeProposals: true
 };
 
 let res = await client.api('/me/events')

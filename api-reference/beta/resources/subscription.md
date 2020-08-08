@@ -2,7 +2,7 @@
 title: "subscription resource type"
 description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
 localization_priority: Normal
-author: "baywet"
+author: "davidmu1"
 doc_type: resourcePageType
 ms.prod: ""
 ---
@@ -22,6 +22,7 @@ A subscription allows a client app to receive change notifications about changes
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
 - A [list][] under a SharePoint [site][]
 - A [message][], [event][], or [contact][] in Outlook
+- The [presence][] of a user in Microsoft Teams
 - A [user][] or [group][] in Azure Active Directory
 
 See [Use the Microsoft Graph API to get change notifications](webhooks.md) for the possible resource path values for each supported resource.
@@ -66,6 +67,7 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | SharePoint **list**    | 4230 minutes (under 3 days)    |
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
 | **user**, **group**, other directory resources   | 4230 minutes (under 3 days)    |
+| **presence**        | 60 minutes (1 hour) |
 
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
@@ -116,6 +118,7 @@ Here is a JSON representation of the resource.
 [alert]: ./alert.md
 [chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
+[presence]: ./presence.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

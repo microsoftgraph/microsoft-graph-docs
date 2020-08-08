@@ -44,6 +44,8 @@ items:
         href: /graph/webhooks-outlook-authz?context=graph/api/beta
       - name: Notifications with resource data (preview)
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
+      - name: Get notifications delivered different ways (preview)
+        href: /graph/change-notifications-delivery?context=graph/api/beta
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
@@ -293,8 +295,8 @@ items:
           href: api/user-list-transitivememberof.md
       - name: Insights
         items:
-        - name: Office Graph insights
-          href: resources/officegraphinsights.md
+        - name: Item insights
+          href: resources/iteminsights.md
           items:
           - name: List shared
             href: api/insights-list-shared.md
@@ -302,6 +304,14 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
+        - name: Control access to item insights
+          items:
+          - name: Item insights settings
+            href: resources/iteminsightssettings.md
+          - name: Get
+            href: api/iteminsightssettings-get.md
+          - name: Update
+            href: api/iteminsightssettings-update.md
       - name: Mail
         href: resources/message.md
         items:
@@ -969,11 +979,13 @@ items:
           href: resources/synchronization-configure-with-custom-target-attributes.md
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
+        - name: Acquire access token
+          href: api/synchronization-synchronization-acquireaccesstoken.md 
         - name: Directory definition
           href: resources/synchronization-directorydefinition.md
           items:
           - name: Discover
-            href: api/directorydefinition-discover.md
+            href: api/directorydefinition-discover.md  
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -993,6 +1005,8 @@ items:
             href: api/synchronization-synchronizationjob-delete.md
           - name: Provision on demand
             href: api/synchronization-synchronizationjob-provision-on-demand.md
+          - name: Validate credentials
+            href: api/synchronization-synchronizationjob-validatecredentials.md
         - name: Schema
           href: resources/synchronization-synchronizationschema.md
           items:
@@ -1309,26 +1323,6 @@ items:
             href: api/audioroutinggroup-delete.md
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
-      - name: Online meeting
-        href: resources/onlinemeeting.md
-        items:
-        - name: Create
-          href: api/application-post-onlinemeetings.md
-        - name: Get
-          href: api/onlinemeeting-get.md
-        - name: Update
-          href: api/onlinemeeting-patch.md          
-        - name: Delete
-          href: api/onlinemeeting-delete.md
-        - name: Create or get
-          href: api/onlinemeeting-createorget.md
-      - name: Presence
-        href: resources/presence.md
-        items:
-        - name: Get presence
-          href: api/presence-get.md
-        - name: Get presence for multiple users
-          href: api/cloudcommunications-getpresencesbyuserid.md
       - name: Call records
         items:
         - name: Overview
@@ -1337,14 +1331,90 @@ items:
           items:
           - name: Call record
             href: resources/callrecords-callrecord.md
-          - name: Get call record
+          - name: Get
             href: api/callrecords-callrecord-get.md
         - name: Session
           items:
           - name: Session
             href: resources/callrecords-session.md
-          - name: List sessions
+          - name: List
             href: api/callrecords-session-list.md
+        - name: PSTN calls
+          items:
+          - name: PSTN log row
+            href: resources/callrecords-pstncalllogrow.md
+          - name: List PSTN calls
+            href: api/callrecords-callrecord-getpstncalls.md
+        - name: Direct routing calls
+          items:
+          - name: Direct routing log row
+            href: resources/callrecords-directroutinglogrow.md
+          - name: List direct routing calls
+            href: api/callrecords-callrecord-getdirectroutingcalls.md
+      - name: Online meeting
+        href: resources/onlinemeeting.md
+        items:
+        - name: Create
+          href: api/application-post-onlinemeetings.md
+        - name: Get
+          href: api/onlinemeeting-get.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
+        - name: Update
+          href: api/onlinemeeting-update.md
+        - name: Delete
+          href: api/onlinemeeting-delete.md
+      - name: Presence (preview)
+        href: resources/presence.md
+        items:
+        - name: Get presence
+          href: api/presence-get.md
+        - name: Get presence for multiple users
+          href: api/cloudcommunications-getpresencesbyuserid.md
+    - name: Compliance (preview)
+      displayName: Compliance API, Microsoft Graph Compliance API
+      items:
+      - name: Overview
+        href: resources/complianceapioverview.md
+      - name: eDiscovery
+        items:
+        - name: Overview
+          href: resources/eDiscoveryapioverview.md
+        - name: eDiscovery case
+          href: resources/ediscoverycase.md
+          items:
+          - name: List
+            href: api/ediscoverycase-list.md
+          - name: Create
+            href: api/ediscoverycase-post.md
+          - name: Get
+            href: api/ediscoverycase-get.md
+          - name: Update
+            href: api/ediscoverycase-update.md
+          - name: Delete
+            href: api/ediscoverycase-delete.md
+        - name: eDiscovery Review set
+          href: resources/reviewset.md
+          items:
+          - name: List
+            href: api/reviewset-list.md
+          - name: Create
+            href: api/reviewset-post.md
+          - name: Get
+            href: api/reviewset-get.md
+        - name: Review set query
+          href: resources/reviewsetquery.md
+          items:
+          - name: List
+            href: api/reviewsetquery-list.md
+          - name: Create
+            href: api/reviewsetquery-post.md
+          - name: Get
+            href: api/reviewsetquery-get.md
+          - name: Update
+            href: api/reviewsetquery-update.md
+          - name: Delete
+            href: api/reviewsetquery-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -8540,8 +8610,6 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
-              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -9617,28 +9685,6 @@ items:
               href: api/subscribedsku-get.md
       - name: Identity and sign-in
         items:
-        - name: Audit logs
-          href: resources/azure-ad-auditlog-overview.md
-          items:
-          - name: Directory audit
-            href: resources/directoryaudit.md
-            items:
-            - name: List directory audits
-              href: api/directoryaudit-list.md
-            - name: Get directory audit
-              href: api/directoryaudit-get.md
-          - name: Sign-in
-            href: resources/signin.md
-            items:
-            - name: List sign-ins
-              href: api/signin-list.md
-            - name: Get sign-in
-              href: api/signin-get.md
-          - name: Provisioning logs
-            href: resources/provisioningobjectsummary.md
-            items:
-            - name: List provisioning
-              href: api/provisioningobjectsummary-list.md
         - name: Authentication flows policy
           items:
           - name: Authentication flows policy
@@ -9670,7 +9716,7 @@ items:
               href: api/passwordauthenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
-          - name: Phone
+            - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
             - name: List
@@ -9828,41 +9874,21 @@ items:
               href: api/riskyusers-confirmcompromised.md
             - name: Dismiss
               href: api/riskyusers-dismiss.md
-        - name: Information protection
-          items:    
-          - name: Threat assessment
-            items:
-            - name: Overview
-              href: resources/threatassessment-api-overview.md
-            - name: Threat assessment request
-              href: resources/threatassessmentrequest.md
-            - name: Mail assessment request
-              href: resources/mailassessmentrequest.md
-            - name: Email file assessment request
-              href: resources/emailfileassessmentrequest.md
-            - name: File assessment request
-              href: resources/fileAssessmentRequest.md
-            - name: Url assessment request
-              href: resources/urlassessmentrequest.md
-            - name: List
-              href: api/informationprotection-list-threatassessmentrequests.md
-            - name: Create
-              href: api/informationprotection-post-threatassessmentrequests.md
-            - name: Get
-              href: api/threatassessmentrequest-get.md
         - name: Identity provider
           href: resources/identityprovider.md
           items:
-          - name: List identity providers
+          - name: List
             href: api/identityprovider-list.md
-          - name: Create identity provider
+          - name: Create
             href: api/identityprovider-post-identityproviders.md
-          - name: Get identity provider
+          - name: Get
             href: api/identityprovider-get.md
-          - name: Update identity provider
+          - name: Update
             href: api/identityprovider-update.md
-          - name: Delete identity provider
+          - name: Delete
             href: api/identityprovider-delete.md
+          - name: List available provider types
+            href: api/identityprovider-list-availableprovidertypes.md
         - name: Invitation manager
           href: resources/invitation.md
           items:
@@ -10186,6 +10212,26 @@ items:
               href: api/accesspackage-list-accesspackageresourcerolescopes.md
             - name: Create
               href: api/accesspackage-post-accesspackageresourcerolescopes.md
+          - name: Connected organization
+            href: resources/connectedorganization.md
+            items:
+            - name: List
+              href: api/connectedorganization-list.md
+            - name: Create
+              href: api/connectedorganization-post.md
+            - name: Get
+              href: api/connectedorganization-get.md
+            - name: Update
+              href: api/connectedorganization-update.md
+            - name: Delete
+              href: api/connectedorganization-delete.md
+          - name: Entitlement management settings
+            href: resources/entitlementmanagementsettings.md
+            items:
+            - name: Get
+              href: api/entitlementmanagementsettings-get.md
+            - name: Update
+              href: api/entitlementmanagementsettings-update.md
         - name: Privileged Identity Management
           items:
           - name: Privileged Identity Management
@@ -10788,23 +10834,34 @@ items:
         - name: Delete
           href: api/profilecardproperty-delete.md    
       - name: Insights
-        href: resources/officegraphinsights.md
+        href: resources/iteminsights.md
         items:
-        - name: Trending
-          href: resources/insights-trending.md
-          items:
-          - name: List trending
-            href: api/insights-list-trending.md
-        - name: Used
-          href: resources/insights-used.md
-          items:
-          - name: List used
-            href: api/insights-list-used.md
-        - name: Shared
-          href: resources/insights-shared.md
-          items:
-          - name: List shared
-            href: api/insights-list-shared.md
+          - name: Item insights
+            href: resources/iteminsights.md
+            items:
+            - name: Shared
+              href: resources/insights-shared.md
+              items:
+              - name: List shared
+                href: api/insights-list-shared.md
+            - name: Trending
+              href: resources/insights-trending.md
+              items:
+              - name: List trending
+                href: api/insights-list-trending.md
+            - name: Used
+              href: resources/insights-used.md
+              items:
+              - name: List used
+                href: api/insights-list-used.md
+          - name: Control access to item insights
+            items:
+            - name: Item insights settings
+              href: resources/iteminsightssettings.md
+            - name: Get
+              href: api/iteminsightssettings-get.md
+            - name: Update
+              href: api/iteminsightssettings-update.md
       - name: Mention (preview)
         href: resources/mention.md
       - name: Analytics (preview)
@@ -10912,8 +10969,33 @@ items:
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Reports
       items:
+      - name: Azure AD activity reports
+        items:
+        - name: Overview
+          href: resources/azure-ad-auditlog-overview.md
+        - name: Directory audit
+          href: resources/directoryaudit.md
+          items:
+          - name: List directory audits
+            href: api/directoryaudit-list.md
+          - name: Get directory audit
+            href: api/directoryaudit-get.md
+        - name: Sign-in
+          href: resources/signin.md
+          items:
+          - name: List sign-ins
+            href: api/signin-list.md
+          - name: Get sign-in
+            href: api/signin-get.md
+        - name: Provisioning
+          href: resources/provisioningobjectsummary.md
+          items:
+          - name: List provisioning
+            href: api/provisioningobjectsummary-list.md
       - name: Identity and access reports
         items:
+        - name: Overview
+          href: resources/report-identity-access.md
         - name: AD FS application activity
           items:
           - name: Relying party detailed summary
@@ -11254,6 +11336,26 @@ items:
             href: api/informationprotectionlabel-evaluateremoval.md
           - name: Extract label
             href: api/informationprotectionlabel-extractlabel.md
+        - name: Threat assessment
+          items:
+          - name: Overview
+            href: resources/threatassessment-api-overview.md
+          - name: Threat assessment request
+            href: resources/threatassessmentrequest.md
+          - name: Mail assessment request
+            href: resources/mailassessmentrequest.md
+          - name: Email file assessment request
+            href: resources/emailfileassessmentrequest.md
+          - name: File assessment request
+            href: resources/fileAssessmentRequest.md
+          - name: Url assessment request
+            href: resources/urlassessmentrequest.md
+          - name: List
+            href: api/informationprotection-list-threatassessmentrequests.md
+          - name: Create
+            href: api/informationprotection-post-threatassessmentrequests.md
+          - name: Get
+            href: api/threatassessmentrequest-get.md
       - name: Secure scores
         href: resources/securescores.md
         items:
@@ -11352,6 +11454,62 @@ items:
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
+      - name: Taxonomy (preview)
+        displayname: Taxonomy API
+        items:
+        - name: Store
+          href: resources/termstore-store.md
+          items:
+          - name: Get
+            href: api/termstore-store-get.md        
+          - name: Update
+            href: api/termstore-store-update.md
+        - name: Group        
+          href: resources/termstore-group.md
+          items:        
+          - name: Create
+            href: api/termstore-group-post.md
+          - name: Get 
+            href: api/termstore-store-get-group.md          
+          - name: Delete
+            href: api/termstore-group-delete.md   
+          - name: List  
+            href: api/termstore-list-groups.md
+        - name: Set
+          href: resources/termstore-set.md
+          items:
+          - name: List 
+            href: api/termstore-group-list-sets.md
+          - name: List children
+            href: api/termstore-term-list-children.md
+          - name: Create 
+            href: api/termstore-set-post.md  
+          - name: Get 
+            href: api/termstore-set-get.md
+          - name: Update 
+            href: api/termstore-set-update.md
+          - name: Delete 
+            href: api/termstore-set-delete.md                  
+        - name: Term
+          href: resources/termstore-term.md
+          items:
+          - name: List children
+            href: api/termstore-term-list-children.md  
+          - name: Create 
+            href: api/termstore-term-post.md      
+          - name: Get 
+            href: api/termstore-term-get.md
+          - name: Update
+            href: api/termstore-term-update.md
+          - name: Delete 
+            href: api/termstore-term-delete.md                     
+        - name: Relation
+          href: resources/termstore-relation.md
+          items:
+          - name: List
+            href: api/termStore-term-list-relations.md
+          - name: Create
+            href: api/termStore-relation-post.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -12079,4 +12237,4 @@ items:
         - name: Add named item
           href: api/nameditem-add.md
         - name: List range
-          href: api/nameditem-range.md
+          href: api/nameditem-range.md      

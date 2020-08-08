@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /teams/{team-id}/members/{member-id}
+DELETE /teams/{team-id}/members/{membership-id}
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members
+DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members/{membership-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-members-from-team-csharp-snippets.md)]

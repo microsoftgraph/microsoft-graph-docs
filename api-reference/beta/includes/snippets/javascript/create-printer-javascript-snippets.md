@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const printer = {
+const create = {
   displayName: "Test Printer",
   manufacturer: "Test Printer Manufacturer",
   model: "Test Printer Model",
@@ -25,6 +25,6 @@ const printer = {
 
 let res = await client.api('/print/printers/create')
 	.version('beta')
-	.post(printer);
+	.post(create);
 
 ```
