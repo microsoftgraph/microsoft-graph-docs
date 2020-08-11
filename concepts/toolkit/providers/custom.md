@@ -82,7 +82,7 @@ The `Graph` class is a light wrapper on top of the Microsoft Graph SDK.
 
 ### Example
 
-All the providers extend the `IProvider` abstract class. For examples, take a look at the source code for any of the [existing providers](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/src/providers).
+All the providers extend the `IProvider` abstract class. For examples, take a look at the source code for any of the [existing providers](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers).
 
 ## Set the global provider
 

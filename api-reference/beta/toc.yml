@@ -11110,6 +11110,15 @@ items:
             href: api/reportroot-getoffice365activeusercounts.md
           - name: Get services user counts
             href: api/reportroot-getoffice365servicesusercounts.md
+        - name: Microsoft 365 Apps usage
+          href: resources/microsoft-365-apps-usage-report.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getm365appuserdetail.md
+          - name: Get user counts
+            href: api/reportroot-getm365appusercounts.md
+          - name: Get platform user counts
+            href: api/reportroot-getm365appplatformusercounts.md
         - name: Microsoft 365 groups activity
           href: resources/office-365-groups-activity-reports.md
           items:
@@ -11721,7 +11730,7 @@ items:
         - name: Get message reply
           href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-messages.md
+          href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Add a member to a channel
@@ -11742,9 +11751,11 @@ items:
         - name: Get chat member
           href: api/conversationmember-get.md
         - name: List messages in a chat
-          href: api/chatmessage-list.md
+          href: api/chat-list-message.md
         - name: Get message in chat
-          href: api/chatmessage-get.md
+          href: api/chat-get-message.md
+        - name: Send message in chat
+          href: api/chat-post-message.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -11759,7 +11770,7 @@ items:
         - name: Get message reply
           href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-messages.md
+          href: api/chatmessage-post.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: List hosted content

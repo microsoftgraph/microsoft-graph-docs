@@ -136,6 +136,8 @@ The following example creates a session using the long-running operation pattern
 
 ### Initial request to create session
 
+#### Request
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
 Prefer: respond-async
@@ -145,8 +147,7 @@ Content-type: application/json
 }
 ```
 
-### Response
-
+#### Response
 The long-running operation pattern will return a `202 Accepted` response similar to the following.
 
 ```http
@@ -178,6 +179,7 @@ The following example shows the response when the request fails.
 ```http
 HTTP/1.1 500 Internal Server Error
 Content-type: application/json
+
 {
   "error":{
     "code": "internalServerError",
@@ -192,11 +194,14 @@ Content-type: application/json
     }
   }
 }
-
+```
 
 ### Poll status of the long-running create session
 
+
 With the long-running operation pattern, you can get the creation status at specified location by using the following request. The suggested interval to poll status is around 30 seconds. The maximum interval should be no more than 4 minutes.
+
+#### Request
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
@@ -204,11 +209,14 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 }
 ```
 
+#### Response
+
 The following is the response when the operation has a status of `running`.
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": {operation-id},
     "status": "running"
@@ -220,6 +228,7 @@ The following is the response when the operation status is `succeeded`.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": {operation-id},
     "status": "succeeded",
@@ -232,6 +241,7 @@ The following is the response when the operation status is `failed`.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "id": {operation-id},
   "status": "failed",
@@ -254,6 +264,8 @@ For more details about errors, see [Error codes](/concepts/workbook-error-codes.
 
 ### Acquire session information
 
+#### Request
+
 With a status of `succeeded`, you can get the created session information through `resourceLocation` with a request similar to the following.
 
 ```http
@@ -262,11 +274,13 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ses
 }
 ```
 
+#### Response
 The following is the response.
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": "id-value",
     "persistChanges": true

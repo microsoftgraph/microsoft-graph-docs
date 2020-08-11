@@ -1,7 +1,40 @@
-﻿{
+{
   "changelog": [
     {
-      "ChangeList": [
+      "changeList": [
+        {
+          "Id": "13b64dd9-d3be-11ea-ade8-131d8461e1f7",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentBytes",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentBytes** property to [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource",
+          "Target": "chatMessageHostedContent"
+        },
+        {
+          "Id": "13b8b040-d3be-11ea-ade8-131d8461e1f7",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentType** property to [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource",
+          "Target": "chatMessageHostedContent"
+        },
+        {
+          "Id": "13b8b040-d3be-11ea-ade8-131d8461e1f7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessageHostedContent",
+          "ChangeType": "Addition",
+          "Description": "Added support for sending inline images in [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta) resource",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "13b186ad-d3be-11ea-ade8-131d8461e1f7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-08-01T06:13:11.586Z",
+      "WorkloadArea": "Teamwork (Microsoft Teams)"
+    },
+    {
+      "changeList": [
         {
           "Id": "7985e2f4-414d-4ab8-a468-631963705a8f",
           "ApiChange": "Resource",
@@ -19,7 +52,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "53444dc9-0cca-408c-8001-81d401cfae92",
           "ApiChange": "Property",
@@ -37,7 +70,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "53444dc9-0cca-408c-8001-81d401cfae92",
           "ApiChange": "Resource",
@@ -79,7 +112,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "6f127282-0b24-4b8c-b783-f756ade8e58a",
           "ApiChange": "Property",
@@ -105,7 +138,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "6f127282-0b24-4b8c-b783-f756ade8e58a",
           "ApiChange": "Resource",
@@ -123,7 +156,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "ec5287db-d952-4887-9e5c-6b6bff9f754a",
           "ApiChange": "method",
@@ -141,7 +174,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "b202bbaf-326d-427e-a6f3-6c3ef90fd3fa",
           "ApiChange": "Property",
@@ -167,7 +200,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "b202bbaf-326d-427e-a6f3-6c3ef90fd3fa",
           "ApiChange": "Resource",
@@ -185,7 +218,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "2ebe051e-1746-4758-86ed-88a62885e5dc",
           "ApiChange": "Resource",
@@ -211,7 +244,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "0379d2a6-e0f5-4b50-adbb-858a23a659b1",
           "ApiChange": "Resource",
@@ -253,7 +286,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "0b5f24a0-3190-451c-abea-86693c2038d6",
           "ApiChange": "Resource",
@@ -287,7 +320,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "f8949436-c021-4a32-8828-c0b965cb8674",
           "ApiChange": "method",
@@ -313,7 +346,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "f9379e8c-b936-4255-a59c-7b8bf9f5ef41",
           "ApiChange": "Property",
@@ -339,7 +372,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "e86427d1-0b4b-4eea-a037-99550a99f41c",
           "ApiChange": "Resource",
@@ -389,7 +422,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "1f61dc46-1a86-4106-8154-d2c3d39cfbeb",
           "ApiChange": "Resource",
@@ -455,7 +488,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "b59e3ac6-56ee-4171-98af-e5bc617471b0",
           "ApiChange": "Resource",
@@ -473,7 +506,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "7bc93eeb-6db0-4d62-8fad-c5998bba9990",
           "ApiChange": "Property",
@@ -507,7 +540,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "8a3d94e8-542d-4695-9b03-595c443e0180",
           "ApiChange": "Resource",
@@ -541,7 +574,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "8a3d94e8-542d-4695-9b03-595c443e0180",
           "ApiChange": "Resource",
@@ -567,7 +600,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "8cc06c6b-fde4-463e-8850-f848abbe23e5",
           "ApiChange": "Resource",
@@ -585,7 +618,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "d3f812fd-09b3-43b2-b041-8edc9eb17cdc",
           "ApiChange": "Resource",
@@ -627,7 +660,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "d3f812fd-09b3-43b2-b041-8edc9eb17cdc",
           "ApiChange": "Property",
@@ -653,7 +686,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "1b25c814-5ea1-4c09-b67f-13d0ea5a2493",
           "ApiChange": "Resource",
@@ -671,7 +704,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "bf4ac94a-35c1-48d2-a220-899f62b3a630",
           "ApiChange": "Resource",
@@ -809,7 +842,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "bf4ac94a-35c1-48d2-a220-899f62b3a630",
           "ApiChange": "Resource",
@@ -827,7 +860,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "ea243847-6e38-4dba-a7c3-5a58007ecbf0",
           "ApiChange": "Resource",
@@ -965,7 +998,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "ea243847-6e38-4dba-a7c3-5a58007ecbf0",
           "ApiChange": "Resource",
@@ -1079,7 +1112,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "a3c3f00c-1889-48df-bb07-aa592145d513",
           "ApiChange": "Resource",
@@ -1097,7 +1130,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "b9d8e86c-098c-4ea5-9d19-abf4138a0a1d",
           "ApiChange": "Resource",
@@ -1187,7 +1220,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "d50344e7-d022-4a46-a75a-5f0e5e64d023",
           "ApiChange": "Resource",
@@ -1445,7 +1478,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "68d48b4d-25d3-497f-a623-1203cf2c54c6",
           "ApiChange": "Resource",
@@ -1495,7 +1528,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "7c20c72d-222b-4533-a39c-fb1d90a24fd8",
           "ApiChange": "Resource",
@@ -1569,7 +1602,7 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [
+      "changeList": [
         {
           "Id": "d203b0c3-0e2d-4783-a644-a72206cb3312",
           "ApiChange": "Resource",
