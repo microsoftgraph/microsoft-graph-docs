@@ -88,9 +88,10 @@ Content-type: application/json
   "mailNickname": "mailNickname-value",
   "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
   "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
+    "forceChangePasswordNextSignIn": false,
     "password": "password-value"
-  }
+  },
+  "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
 # [C#](#tab/csharp)
