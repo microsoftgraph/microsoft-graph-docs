@@ -43,6 +43,7 @@ Represents a printer that is intended to be discoverable by users and printing a
 |capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer associated with this printer share.|
 |status|[printerStatus](printerstatus.md)|The processing status, including any errors, of the printer associated with this printer share. Read-only.|
+|allowAllUsers|Boolean|If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the `allowedUsers` and `allowedGroups` navigation properties.|
 
 ## Relationships
 | Relationship | Type        | Description |
