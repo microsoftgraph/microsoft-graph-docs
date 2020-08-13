@@ -13,14 +13,13 @@ const client = Client.init(options);
 const appRoleAssignment = Content-type: appRoleAssignments/json
 
 {
-  principalId: "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
+  principalId: "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
   principalType: "User",
-  appRoleId:"18d14569-c3bd-439b-9a66-3a2aee01d14f",
-  resourceId:"b00c693f-9658-4c06-bd1b-c402c4653dea"
+  appRoleId:"454dc4c2-8176-498e-99df-8c4efcde41ef",
+  resourceId:"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 };
 
-let res = await client.api('/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments')
-	.version('beta')
+let res = await client.api('/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/appRoleAssignments')
 	.post(appRoleAssignment);
 
 ```

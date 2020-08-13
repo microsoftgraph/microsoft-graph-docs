@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		MSGraphResponse *response = [[MSGraphResponse alloc] initWithData:data error:&nserror];
+		MSGraphProfileCardProperty *profileCardProperty = [[MSGraphProfileCardProperty alloc] initWithData:data error:&nserror];
 
 }];
 

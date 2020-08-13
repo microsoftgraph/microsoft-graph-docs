@@ -19,6 +19,7 @@ Returns the content appropriate for the context, including:
 
 - Device Configuration profile history reports.
 - Enrollment failure reports.
+- Microsoft 365 usage reports
 
 ## Properties
 |Property|Type|Description|

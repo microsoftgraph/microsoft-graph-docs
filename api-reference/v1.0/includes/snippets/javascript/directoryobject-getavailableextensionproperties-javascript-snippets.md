@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const directoryObject = Content-Type: application/json
+const extensionProperty = Content-Type: application/json
 Content-length: 43
 
 {
@@ -18,6 +18,6 @@ Content-length: 43
 };
 
 let res = await client.api('/directoryObjects/getAvailableExtensionProperties')
-	.post(directoryObject);
+	.post(extensionProperty);
 
 ```

@@ -11,6 +11,43 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## August 2020
+
+### Applications
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) property to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.
+
+### Change notifications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Change tracking through [delta queries](/graph/api/event-delta) is available for Microsoft Graph for US Government. |
+| Deletion | Beta | Removed the **includeProperties** property from the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) entity. This property is replaced by the **includeResourceData** property. |
+| Addition | Beta | Added the ability to get [change notifications delivered via Event Hub](change-notifications-delivery.md). |
+
+### Identity and access
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the following properties to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
+| Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
+
+### Reports | Microsoft 365 usage reports
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [getM365AppUserDetail](/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-beta) method. |
+| Addition | beta | Added the [getM365AppUserCounts](/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta) method. |
+| Addition | beta | Added the [getM365AppPlatformUserCounts](/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta) method. |
+
+### Teamwork 
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the **contentBytes** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource.|
+|Addition|beta|Added the **contentType** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource.|
+|Addition|beta|Added support for sending inline images to the [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta) resource.|
+
 ## July 2020
 
 ### Calendar
@@ -123,6 +160,7 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 | Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability to [servicePrincipal](/graph/api/serviceprincipal-delta). |
 | Addition | beta | Added the [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) to entitlement management.  |
 | Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability for [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta). |
+| Addition | Beta | Added new property **isAssignableToRole** to [group](/graph/api/resources/group?view=graph-rest-beta).|
 
 ### Identity and access | Identity and sign-in
 | **Change type** | **Version** | **Description**                  |
@@ -148,6 +186,12 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **profileCardProperties** navigation property to the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity. |
 | Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete). |
+
+### Sites and lists | Taxonomy
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Introduced the taxonomy API, including the [termStore.store](/graph/api/resources/termstore-store?view=graph-rest-beta), [termStore.term](/graph/api/resources/termstore-term?view=graph-rest-beta), [termStore.set](/graph/api/resources/termstore-set?view=graph-rest-beta), and [termStore.relation](/graph/api/resources/termstore-relation?view=graph-rest-beta) resources and associated methods. |
 
 ### Teamwork
 | **Change type** | **Version** | **Description**                          |
@@ -332,11 +376,6 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 | Addition | beta | Added the [regionalAndLanguageSettings-update](/graph/api/regionalandlanguagesettings-update) function on the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) resource.|
 | Change | beta | Added the [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings) relationship to the [userSettings](/graph/api/resources/userSettings) resource.|
 | Change | beta | Updated [User](/graph/api/resources/user?view=graph-rest-beta) resource with clarification between [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) and [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings).|
-
-### Users | Outlook settings
-
-| Change type | Version | Description                              |
-| :---------- | :------ | :--------------------------------------- |
 |Addition | Beta | Added the new **userPurpose** property to [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta). See [userPurpose resource type](/graph/api/resources/userPurpose?view=graph-rest-beta) for information on the supported use cases.|
 |Addition | Beta | Added new [userPurpose](/graph/api/resources/userPurpose?view=graph-rest-beta) complex type.|
 
@@ -490,8 +529,6 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Addition|beta|Added new entities:<br/>[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration?view=graph-rest-beta)<br/>[appleExpeditedCheckinConfigurationBase](/graph/api/resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase?view=graph-rest-beta)<br/>[groupPolicyOperation](/graph/api/resources/intune-grouppolicy-grouppolicyoperation?view=graph-rest-beta)<br/>[groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta)<br/>[iosExpeditedCheckinConfiguration](/graph/api/resources/intune-deviceconfig-iosexpeditedcheckinconfiguration?view=graph-rest-beta)<br/>[userExperienceAnalyticsScoreHistory](/graph/api/resources/intune-devices-userexperienceanalyticsscorehistory?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new complex types:<br/>[androidManagedStoreAppAssignmentSettings](/graph/api/resources/intune-apps-androidmanagedstoreappassignmentsettings?view=graph-rest-beta)<br/>[androidManagedStoreAppTrack](/graph/api/resources/intune-apps-androidmanagedstoreapptrack?view=graph-rest-beta)<br/>[appleAppListItem](/graph/api/resources/intune-deviceconfig-appleapplistitem?view=graph-rest-beta)<br/>[deviceHealthScriptRemediationHistory](/graph/api/resources/intune-devices-devicehealthscriptremediationhistory?view=graph-rest-beta)<br/>[deviceHealthScriptRemediationHistoryData](/graph/api/resources/intune-devices-devicehealthscriptremediationhistorydata?view=graph-rest-beta)<br/>[deviceManagementSettingAbstractImplementationConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingabstractimplementationconstraint?view=graph-rest-beta)<br/>[groupPolicyUploadedLanguageFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadedlanguagefile?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new enum types:<br/>[androidProfileApplicability](/graph/api/resources/intune-apps-androidprofileapplicability?view=graph-rest-beta)<br/>[groupPolicyOperationStatus](/graph/api/resources/intune-grouppolicy-grouppolicyoperationstatus?view=graph-rest-beta)<br/>[groupPolicyOperationType](/graph/api/resources/intune-grouppolicy-grouppolicyoperationtype?view=graph-rest-beta)<br/>[groupPolicyUploadedDefinitionFileStatus](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus?view=graph-rest-beta)<br/>|
-|Addition|beta|Added the [getAvailableExtensionProperties](o:getAvailableExtensionProperties?view=graph-rest-beta) action|
-|Addition|beta|Added the [getObjectsById](o:getObjectsById?view=graph-rest-beta) action|
 |Addition|beta|Added the [addLanguageFiles](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-addlanguagefiles?view=graph-rest-beta) action on [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) |
 |Addition|beta|Added the [removeLanguageFiles](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-removelanguagefiles?view=graph-rest-beta) action on [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) |
 |Addition|beta|Added the [updateLanguageFiles](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-updatelanguagefiles?view=graph-rest-beta) action on [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) |
@@ -627,14 +664,12 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Addition|beta|Added new entities:<br/>[deviceManagementAutopilotPolicyStatusDetail](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail?view=graph-rest-beta)<br/>[groupPolicyCategory](/graph/api/resources/intune-grouppolicy-grouppolicycategory?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new complex types:<br/>[configurationManagerActionResult](/graph/api/resources/intune-devices-configurationmanageractionresult?view=graph-rest-beta)<br/>[deviceHealthScriptRemediationSummary](/graph/api/resources/intune-devices-devicehealthscriptremediationsummary?view=graph-rest-beta)<br/>[deviceManagementSettingSddlConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingsddlconstraint?view=graph-rest-beta)<br/>[iosAzureAdSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-iosazureadsinglesignonextension?view=graph-rest-beta)<br/>[macOSAssociatedDomainsKeyValuePair](/graph/api/resources/intune-deviceconfig-macosassociateddomainskeyvaluepair?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new enum types:<br/>[configurationManagerActionDeliveryStatus](/graph/api/resources/intune-devices-configurationmanageractiondeliverystatus?view=graph-rest-beta)<br/>[deviceManagementAutopilotPolicyComplianceStatus](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus?view=graph-rest-beta)<br/>[deviceManagementAutopilotPolicyType](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicytype?view=graph-rest-beta)<br/>[win32LobAppDeliveryOptimizationPriority](/graph/api/resources/intune-apps-win32lobappdeliveryoptimizationpriority?view=graph-rest-beta)<br/>|
-|Addition|beta|Added the [getAvailableExtensionProperties](o:getAvailableExtensionProperties?view=graph-rest-beta) action|
-|Addition|beta|Added the [getObjectsById](o:getObjectsById?view=graph-rest-beta) action|
 |Addition|beta|Added the [generateApplePushNotificationCertificateSigningRequest](/graph/api/intune-devices-applepushnotificationcertificate-generateapplepushnotificationcertificatesigningrequest?view=graph-rest-beta?view=graph-rest-beta) action on [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate?view=graph-rest-beta) |
 |Addition|beta|Added the [generateEncryptionPublicKey](/graph/api/intune-enrollment-deponboardingsetting-generateencryptionpublickey?view=graph-rest-beta?view=graph-rest-beta) action on [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) |
 |Addition|beta|Added the [getSettingNonComplianceReport](/graph/api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport?view=graph-rest-beta?view=graph-rest-beta) action on [deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta) |
-|Addition|beta|Added the [getRemediationSummary](o:getRemediationSummary:Collection(microsoft.graph.deviceHealthScript?view=graph-rest-beta)?view=graph-rest-beta) function on [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) collection |
+|Addition|beta|Added the [getRemediationSummary](/graph/api/intune-devices-devicehealthscript-getremediationsummary?view=graph-rest-beta) function on [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) collection |
 |Deletion|beta|Removed the following complex types:<br/>**groupPolicyObjectFile**<br/>|
-|Deletion|beta|Removed the [createMigrationReport](o:createMigrationReport:Collection(microsoft.graph.groupPolicyMigrationReport?view=graph-rest-beta)?view=graph-rest-beta) action on [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport?view=graph-rest-beta) collection |
+|Deletion|beta|Removed the [createMigrationReport](/graph/api/intune-gpanalyticsservice-grouppolicymigrationreport-createmigrationreport?view=graph-rest-beta) action on [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport?view=graph-rest-beta) collection |
 |Deletion|beta|Removed the **groupPolicyObjectFiles** property from the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) entity|
 |Addition|beta|Added the **deviceId** property to the [deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent?view=graph-rest-beta) entity|
 |Addition|beta|Added the **groupPolicyCategoryId** property to the [groupPolicyDefinition](/graph/api/resources/intune-grouppolicy-grouppolicydefinition?view=graph-rest-beta) entity|
@@ -675,7 +710,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | beta | Added the [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta), which represents Azure Active Directory security defaults policy.|
 | Addition | beta | Added support for the `$top` and `$skiptoken` filters to support pagination on the [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list) method. |
 
-### Identity and access | Conditional access
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -815,7 +850,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Change | beta | Updated the [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta) with additional properties for requestor, approval and review settings.|
 | Addition | beta and v1.0 | Added application-level and delegated Policy.ReadWrite.ApplicationConfiguration permission for read and write operations on application configuration policies.|
 
-### Identity and access | Information protection
+### Security
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -914,8 +949,8 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 |Addition|beta|Added new entities:<br/>[deviceShellScript](/graph/api/resources/intune-devices-deviceshellscript?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new complex types:<br/>[deviceManagementSettingFileConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingfileconstraint?view=graph-rest-beta)<br/>[deviceManagementSettingProfileConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingprofileconstraint?view=graph-rest-beta)<br/>[redirectSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-redirectsinglesignonextension?view=graph-rest-beta)<br/>[retireScheduledManagedDevice](/graph/api/resources/intune-deviceconfig-retirescheduledmanageddevice?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new enum types:<br/>[defenderRealtimeScanDirection](/graph/api/resources/intune-deviceconfig-defenderrealtimescandirection?view=graph-rest-beta)<br/>[managedAppDataIngestionLocation](/graph/api/resources/intune-mam-managedappdataingestionlocation?view=graph-rest-beta)<br/>[managedDeviceArchitecture](/graph/api/resources/intune-devices-manageddevicearchitecture?view=graph-rest-beta)<br/>[mdmSupportedState](/graph/api/resources/intune-gpanalyticsservice-mdmsupportedstate?view=graph-rest-beta)<br/>[scheduledRetireState](/graph/api/resources/intune-deviceconfig-scheduledretirestate?view=graph-rest-beta)<br/>|
-|Addition|beta|Added the [getDevicesScheduledToRetire](o:getDevicesScheduledToRetire:Collection(microsoft.graph.deviceCompliancePolicy)) action on [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) collection |
-|Addition|beta|Added the [setScheduledRetireState](o:setScheduledRetireState:Collection(microsoft.graph.deviceCompliancePolicy)) action on [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) collection |
+|Addition|beta|Added the [getDevicesScheduledToRetire](/graph/api/intune-deviceconfig-devicecompliancepolicy-getdevicesscheduledtoretire?view=graph-rest-beta) action on [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) collection |
+|Addition|beta|Added the [setScheduledRetireState](/graph/api/intune-deviceconfig-devicecompliancepolicy-setscheduledretirestate?view=graph-rest-beta) action on [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) collection |
 |Addition|beta|Added the [wipe](/graph/api/intune-devices-manageddevice-wipe) action on [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
 |Deletion|beta|Removed the [wipe](/graph/api/intune-devices-manageddevice-wipe) action on [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
 |Addition|beta|Added the **advancedThreatProtectionRequiredSecurityLevel** and **securityBlockDeviceAdministratorManagedDevices** properties to the [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta) entity|
@@ -960,7 +995,7 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 | Addition | beta | Added the new entity type [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta). |
 |Addition|beta, v1.0|Added support for returning a limited amount of information when your application does not have access to some of the types in a response's collection. For more details, see [Limited information returned for inaccessible member objects](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
 
-### Identity and access | Information protection
+### Security
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1016,7 +1051,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta  | Added the ability to [update a room or roomlist](/graph/api/resources/place-get?view=graph-rest-beta).|
 
-### Cloud communications | Calls and online meetings
+### Cloud communications | Call
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -1094,7 +1129,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Addition | v1.0 | Added the [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) operation for the [group](/graph/api/resources/group?view=graph-rest-1.0) resource. |
 | Addition | v1.0 | Added the [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-1.0) operation for the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
 
-### Identity and access | Conditional access
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -1102,7 +1137,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Addition | beta | Added support for report-only state: `enabledForReportingButNotEnforced`.|
 | Change | beta | Updated the permissions required to perform write operations for both conditional access policies and named locations.|
 
-### Identity and access | Information protection
+### Security
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1275,7 +1310,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition | v1.0 | Added new complex type [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-1.0). |
 | Addition | v1.0 | Added new relationship for **certificateBasedAuthConfiguration** on the [organization](/graph/api/resources/organization?view=graph-rest-1.0) resource. This enables [certificate-based authentication in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
 
-### Identity and access | Conditional access
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -1283,7 +1318,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition | Beta | Added new complex types:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>|
 | Addition | Beta | Added the [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-beta), which represents named locations in Azure AD conditional access. |
 
-### Identity and access | Information protection
+### Security
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1339,11 +1374,6 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added the new **lastPasswordChangeDateTime** property to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
 | Addition | beta | Added the [user: reprocessLicenseAssignment API](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/user?view=graph-rest-beta). |
-
-### Users | Outlook settings
-
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
 | Addition        | V1.0        | The **dateFormat** and **timeFormat** properties to the [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) resource. The properties represent the user's preferred date and time formats.|
 
 ## September 2019
@@ -1378,7 +1408,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 |Addition|beta|Added the [triggerConfigurationManagerAction](/graph/api/intune-devices-manageddevice-triggerconfigurationmanageraction.md) action on [managedDevice](/graph/api/resources/intune-devices-manageddevice) |
 |Addition|beta|Added the [setPriority](/graph/api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority.md) action on [appleUserInitiatedEnrollmentProfile](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile) |
 |Addition|beta|Added the [assign](/graph/api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md) action on [windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile) |
-|Addition|beta|Added the [getExpiringVppTokenCount](o:getExpiringVppTokenCount:Collection(microsoft.graph.depOnboardingSetting)) function on [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting) collection |
+|Addition|beta|Added the [getExpiringVppTokenCount](/graph/api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount?view=graph-rest-beta) function on [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting) collection |
 |Addition|beta|Added the **deviceThreatProtectionEnabled**, **deviceThreatProtectionRequiredSecurityLevel**, **securityRequireSafetyNetAttestationBasicIntegrity** and **securityRequireSafetyNetAttestationCertifiedDevice** properties to the [androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy) entity|
 |Addition|beta|Added the **workProfileAllowWidgets** property to the [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration) entity|
 |Addition|beta|Added the **isPrivate** and **isSystemApp** properties to the [androidManagedStoreApp](/graph/api/resources/intune-apps-androidmanagedstoreapp) entity|
@@ -1422,7 +1452,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition        | beta        | Added new property **closeDateTime** to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).                                                                |
 | Change          | beta        | Changed property names **mkcd** to **projectId** and **url** to **hostWebUrl** in [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) resource. |
 
-### Cloud communications | Calls and online meetings
+### Cloud communications | Online meeting
 
 | **Change type** | **Version** | **Description**                                                                                                                                                      |
 |:----------------|:------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1472,11 +1502,6 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the **identities** property to the [user](/graph/api/resources/user?view=graph-rest-beta) resource. This property represents the set of identities that this user can use to sign in with.|
 | Addition        | v1.0          | Added the [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-1.0) method.|
-
-### Users | Outlook settings
-
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta        | The **dateFormat** and **timeFormat** properties to the [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) resource. The properties represent the user's preferred date and time formats.|
 
 ## August 2019
@@ -1570,7 +1595,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition        | v1.0  | Added the **ownerPrincipalName** property to the [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) entity.|
 | Addition        | v1.0  | Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.|
 
-### Social and workplace intelligence
+### People and workplace intelligence
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1691,7 +1716,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | beta | Added the [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta) resource. |
 | Addition | beta | Added new methods to the [user](/graph/api/resources/user?view=graph-rest-beta) resource enabling the following methods with personal apps for users: <br>[List apps installed for user](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[Install app for user](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[Uninstall app for user](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[Upgrade app installed for user](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
-### Calls and online meetings
+### Cloud communications
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -1705,7 +1730,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## June 2019
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -1738,7 +1763,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **sharedSecret** member to the [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **windows10Home**, **windows10HomeChina**, **windows10HomeN**, **windows10HomeSingleLanguage**, **windows10Mobile**, **windows10IoTCore** and **windows10IoTCoreCommercial** members to the [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) enum type|
 
-### Identity and access (Azure AD)
+### Identity and access
 
 | **Change type** | **Version** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:----------------|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1749,7 +1774,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | v1.0        | Added the **signInSessionsValidFromDateTime** property on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Addition        | v1.0        | Added the [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) action on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-### Mail (Outlook)
+### Mail
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1761,14 +1786,14 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :---------- | :--------------------------------------- |
 |Addition|beta| Added new reports for retrieving user registration and usage information:<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - Reports usage of self-service password reset for a user.</li></ul> |
 
-### Sites and lists (SharePoint)
+### Sites and lists
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the [followSite](/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
 | Addition        | Beta        | Added the [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1782,13 +1807,13 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## May 2019
 
-### Calendar, mail, personal contacts (Outlook)
+### Calendar, mail, personal contacts
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 and beta | Added the capability for administrators to limit app access to only specific mailboxes, even when an app has been granted application permissions to mail, mailbox settings, calendars, or contacts. For more details, see [Scoping application permissions to specific Exchange Online mailboxes](auth-limit-mailbox-access.md). |
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|beta|Added new entities:<br/>[deviceManagementDerivedCredentialSettings](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialsettings?view=graph-rest-beta)<br/>[iosDerivedCredentialAuthenticationConfiguration](/graph/api/resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration?view=graph-rest-beta)<br/>[securityBaselineCategoryStateSummary](/graph/api/resources/intune-deviceintent-securitybaselinecategorystatesummary?view=graph-rest-beta)<br/>|
@@ -1830,7 +1855,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **derivedCredential** member to the [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **derivedCredential** member to the [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta) enum type|
 
-### Files (OneDrive)
+### Files
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the [bundle](/graph/api/resources/bundle?view=graph-rest-beta) complex type |
@@ -1854,14 +1879,14 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added **assignedlabels** property to the [group](/graph/api/resources/group?view=graph-rest-beta) entity. This property represents the list of sensitivity label pairs (label ID, label name) associated with a group.
 
-### Identity and access (Azure AD) | Identity protection
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) entity. |
 | Addition | Beta | Added the [list history](/graph/api/riskyuser-list-history?view=graph-rest-beta) operation. |
 
-### Mail (Outlook)
+### Mail
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1880,7 +1905,7 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0       | Added the Secure Score APIs to the [security API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations:<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities)<br/>[List secureScores](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[List secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[Update secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -1891,13 +1916,13 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## April 2019
 
-### Change notifications (webhooks)
+### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added two types of lifecycle notifications, `subscriptionRemoved` and `missed`, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](webhooks-outlook-authz.md).|
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|beta|Added new entities:<br/>[androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy?view=graph-rest-beta)<br/><br/>[macOSExtensionsConfiguration](/graph/api/resources/intune-deviceconfig-macosextensionsconfiguration?view=graph-rest-beta)<br/><br/>[mobileAppDependency](/graph/api/resources/intune-apps-mobileappdependency?view=graph-rest-beta)<br/><br/>[mobileAppRelationship](/graph/api/resources/intune-apps-mobileapprelationship?view=graph-rest-beta)<br/><br/>|
@@ -1926,7 +1951,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **dependencyFailedToInstall**, **dependencyWithRequirementsNotMet**, **dependencyPendingReboot**, **dependencyWithAutoInstallDisabled**, **autoInstallDisabled**, **installingDependencies**, **powerShellScriptRequirementNotMet**, **registryRequirementNotMet** and **fileSystemRequirementNotMet** members to the [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)<br/> enum type|
 |Addition|beta|Added the **doesNotExist** member to the [win32LobAppFileSystemDetectionType](/graph/api/resources/intune-apps-win32lobappfilesystemdetectiontype?view=graph-rest-beta)<br/> enum type|
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|beta|Added new entities:<br/>[deviceManagementAbstractComplexSettingDefinition](/graph/api/resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition?view=graph-rest-beta)<br/>[deviceManagementAbstractComplexSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance?view=graph-rest-beta)<br/>[deviceManagementBooleanSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementbooleansettinginstance?view=graph-rest-beta)<br/>[deviceManagementCollectionSettingDefinition](/graph/api/resources/intune-deviceintent-devicemanagementcollectionsettingdefinition?view=graph-rest-beta)<br/>[deviceManagementCollectionSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementcollectionsettinginstance?view=graph-rest-beta)<br/>[deviceManagementComplexSettingDefinition](/graph/api/resources/intune-deviceintent-devicemanagementcomplexsettingdefinition?view=graph-rest-beta)<br/>[deviceManagementComplexSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementcomplexsettinginstance?view=graph-rest-beta)<br/>[deviceManagementIntegerSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementintegersettinginstance?view=graph-rest-beta)<br/>[deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta)<br/>[deviceManagementIntentAssignment](/graph/api/resources/intune-deviceintent-devicemanagementintentassignment?view=graph-rest-beta)<br/>[deviceManagementIntentDeviceSettingStateSummary](/graph/api/resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary?view=graph-rest-beta)<br/>[deviceManagementIntentDeviceState](/graph/api/resources/intune-deviceintent-devicemanagementintentdevicestate?view=graph-rest-beta)<br/>[deviceManagementIntentDeviceStateSummary](/graph/api/resources/intune-deviceintent-devicemanagementintentdevicestatesummary?view=graph-rest-beta)<br/>[deviceManagementIntentSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementintentsettingcategory?view=graph-rest-beta)<br/>[deviceManagementIntentUserState](/graph/api/resources/intune-deviceintent-devicemanagementintentuserstate?view=graph-rest-beta)<br/>[deviceManagementIntentUserStateSummary](/graph/api/resources/intune-deviceintent-devicemanagementintentuserstatesummary?view=graph-rest-beta)<br/>[deviceManagementSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementsettingcategory?view=graph-rest-beta)<br/>[deviceManagementSettingDefinition](/graph/api/resources/intune-deviceintent-devicemanagementsettingdefinition?view=graph-rest-beta)<br/>[deviceManagementSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementsettinginstance?view=graph-rest-beta)<br/>[deviceManagementStringSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementstringsettinginstance?view=graph-rest-beta)<br/>[deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta)<br/>[deviceManagementTemplateSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesettingcategory?view=graph-rest-beta)<br/>[securityBaselineDeviceState](/graph/api/resources/intune-deviceintent-securitybaselinedevicestate?view=graph-rest-beta)<br/>[securityBaselineSettingState](/graph/api/resources/intune-deviceintent-securitybaselinesettingstate?view=graph-rest-beta)<br/>[securityBaselineState](/graph/api/resources/intune-deviceintent-securitybaselinestate?view=graph-rest-beta)<br/>[securityBaselineStateSummary](/graph/api/resources/intune-deviceintent-securitybaselinestatesummary?view=graph-rest-beta)<br/>[securityBaselineTemplate](/graph/api/resources/intune-deviceintent-securitybaselinetemplate?view=graph-rest-beta)<br/>|
@@ -1938,7 +1963,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **intents**, **settingDefinitions**, **templates** and **categories** navigation properties to the [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) entity|
 |Addition|beta|Added the **securityBaselineStates** navigation property to the [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) entity|
 
-### Files, sites and lists (OneDrive for Business and SharePoint)
+### Sites and lists
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1956,7 +1981,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | v1.0        | Added the **access** property to the [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) complex type. |
 | Addition        | v1.0        | Added the **location** property to the [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) complex type. |
 
-### Identity and access (Azure AD)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1966,7 +1991,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | beta | Add the **revokeSignInSessions** action on the [user](/graph/api/resources/user?view=graph-rest-beta) resource. This is a rename of the **invalidateAllRefreshTokens** action, but both service actions will be supported to allow clients to migrate smoothly. In the next couple months the old service action, **invalidateAllRefreshTokens** will be removed. |
 | Addition | Beta |Introduced a new resource type [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta) to support [Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview). This resource type supports  [create](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [list](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [get](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [update](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), and [delete](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta) operations.|
 
-### Mail (Outlook)
+### Mail
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1974,7 +1999,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta          | Added the capability to [get the MIME content of a message](outlook-get-mime-message.md). |
 | Addition        | Beta          | Added the capability to [get the raw contents of a file or item attachment](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post. |
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1987,7 +2012,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## March 2019
 
-### Calendar (Outlook)
+### Calendar
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition | v1.0 | Added the [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) action, and the [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-1.0), and [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-1.0) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md). |
@@ -2000,14 +2025,14 @@ Debut of the places API which provides rich details for locations in apps.
 |Deletion | Beta | Enumerations: <br> **addressType** <br> **availabilityStatus** |
 |Addition | Beta | Restored the following complex types: <br> [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) <br> [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) <br> [meetingTimeSuggestionsResult](/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) <br>[timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta) |
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|beta|Added new entities:<br/>[windowsHealthMonitoringConfiguration](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringconfiguration?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new complex types:<br/>[windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new enum types:<br/>[androidManagedAppSafetyNetAppsVerificationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetappsverificationtype?view=graph-rest-beta)<br/>[androidManagedAppSafetyNetDeviceAttestationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype?view=graph-rest-beta)<br/>[windowsAutopilotDeviceType](/graph/api/resources/intune-enrollment-windowsautopilotdevicetype?view=graph-rest-beta)<br/>[windowsFirewallRuleInterfaceTypes](/graph/api/resources/intune-deviceconfig-windowsfirewallruleinterfacetypes?view=graph-rest-beta)<br/>[windowsFirewallRuleNetworkProfileTypes](/graph/api/resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes?view=graph-rest-beta)<br/>[windowsFirewallRuleTrafficDirectionType](/graph/api/resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype?view=graph-rest-beta)<br/>[windowsHealthMonitoringScope](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringscope?view=graph-rest-beta)<br/>[windowsUpdateNotificationDisplayOption](/graph/api/resources/intune-deviceconfig-windowsupdatenotificationdisplayoption?view=graph-rest-beta)<br/>|
-|Addition|beta|Added the [searchExistingIdentities](o:searchExistingIdentities:Collection(microsoft.graph.importedDeviceIdentity)) action on [importedDeviceIdentity](/graph/api/resources/intune-enrollment-importeddeviceidentity?view=graph-rest-beta) collection |
+|Addition|beta|Added the [searchExistingIdentities](/graph/api/intune-enrollment-importeddeviceidentity-searchexistingidentities?view=graph-rest-beta) action on [importedDeviceIdentity](/graph/api/resources/intune-enrollment-importeddeviceidentity?view=graph-rest-beta) collection |
 |Addition|beta|Added the [assignResourceAccountToDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice?view=graph-rest-beta) action on [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) |
 |Addition|beta|Added the [unassignResourceAccountFromDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice?view=graph-rest-beta) action on [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) |
 |Deletion|beta|Removed the following enum types:<br/>**defenderScheduleScanDay**<br/>|
@@ -2041,7 +2066,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | beta | Add the new [educationFormResource](/graph/api/resources/educationFormResource?view=graph-rest-beta) resource.|
 | Addition | beta | Add the **recipients** property on the [educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta) resource.|
 
-### Files (OneDrive for Business)
+### Files
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2049,13 +2074,13 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta        | Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type. |
 | Addition        | Beta        | Added the **password** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type. |
 
-### Financials (Dynamics 365 Business Central)
+### Financials
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](/graph/api/resources/dynamics-graph-reference?view=graph-rest-1.0).|
 
-### Identity and access (directory APIs)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2063,7 +2088,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | beta and v1.0 | Add the **complianceExpirationDateTime**, **profileType** and **systemLabels** properties on the [device](/graph/api/resources/device?view=graph-rest-1.0) resource.|
 | Addition | beta and v1.0 | Add the **isResourceAccount** property on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.|
 
-### Identity and access | Identity protection
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2071,7 +2096,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition |beta| Introduced [Dismiss riskyUsers](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta) method, which allows admins to dismiss users marked as risky in Azure AD Identity Protection. |
 |Addition |beta| Introduced **isProcessing** property to the [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta) resource. |
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2081,7 +2106,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## February 2019
 
-### Calendar (Outlook)
+### Calendar
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2095,7 +2120,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition | Beta | Added the **order** property to [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) |
 |Deletion | Beta | Removed the following complex types: <br> **attendeeAvailability** <br> **locationConstraint** <br> **meetingTimeSuggestionsResult** <br>**timeConstraint** |
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -2123,14 +2148,14 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition |beta|Introduced new relatedContacts property on [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).|
 |Addition |v1.0|Introduced new relatedContacts property on [educationUser](/graph/api/resources/educationUser?view=graph-rest-1.0).|
 
-### Files (OneDrive for Business)
+### Files
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type. |
 | Addition        | Beta        | Added the **password** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type. |
 
-### Identity and access (directory APIs)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2141,7 +2166,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Deletion | beta | The following derived types are no longer supported and have been removed: **targetResourceDevice**, **targetResourceDirectory**, **targetResourceGroup**, **targetResourcePolicy**, **targetResourceRole**, **targetResourceServicePrincipal**, **targetResourceUser**, and **targetResourceOther**. |
 | Addition |beta | Add the **passwordNotificationWindowInDays** and **passwordValidityPeriodInDays** properties on the [domain](/graph/api/resources/domain?view=graph-rest-beta) resource.|
 
-### Notes (OneNote)
+### Notes
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2155,7 +2180,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta       | Added the security action APIs to the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:<br/>[securityAction](/graph/api/resources/securityaction?view=graph-rest-beta) (and related entities)<br/> [Get securityAction](/graph/api/securityaction-get?view=graph-rest-beta)<br/>[Create securityAction](/graph/api/securityactions-post?view=graph-rest-beta)<br/>[List securityAction](/graph/api/securityactions-list?view=graph-rest-beta)<br/>[Cancel securityAction](/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)
 | Addition        | Beta        | Introduced new complex type [historyStates](/graph/api/resources/alerthistorystate?view=graph-rest-beta) collection to alert. </br>Added [updateAlerts](/graph/api/alert-updatealerts?view=graph-rest-beta) functionality to update multiple alerts in one request. |
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2169,7 +2194,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## January 2019
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -2194,13 +2219,13 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **mobileAppTroubleshootingEvents** navigation property to the [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) entity|
 |Addition|beta|Added the **appLogCollectionRequests** navigation property to the [mobileAppTroubleshootingEvent](/graph/api/resources/intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta) entity|
 
-### Identity and access (Azure AD)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition |v1.0|To support configuring an identity provider in an Azure AD B2C tenant, introduced new resource type [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-1.0) entity and the [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-1.0), [list](/graph/api/identityprovider-list?view=graph-rest-1.0), [get](/graph/api/identityprovider-get?view=graph-rest-1.0), [update](/graph/api/identityprovider-update?view=graph-rest-1.0), and [delete](/graph/api/identityprovider-delete?view=graph-rest-1.0) operations.|
 
-### Identity and access (directory APIs)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2219,7 +2244,7 @@ Debut of the places API which provides rich details for locations in apps.
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta  | Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.|
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2228,7 +2253,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## December 2018
 
-### Identity and access | Data policy operation
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2236,7 +2261,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition |v1.0| Added the [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) action on [users](/graph/api/resources/users?view=graph-rest-1.0). This action submits a data policy operation request to export personal data stored by Microsoft for a user. |
 |Addition |v1.0| Added method [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0). This retrieves properties of the dataPolicyOperation object.|
 
-### Identity and access (directory APIs)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2246,7 +2271,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | v1.0 | Added method `memberOf` to get a [devices](/graph/api/resources/device?view=graph-rest-1.0) direct [membership](/graph/api/device-list-memberOf?view=graph-rest-1.0). This method has been added for getting the list of memberships including nested memberships.|
 | Change    | Beta | Restructured the [organizational contacts](/graph/api/resources/orgcontact?view=graph-rest-beta) resource. The physical address properties (`city`, `country`, `postalCode`, `streetAddress`, and `state`) and `officeLocation` are now in an `addresses` collection (of new [physicalOfficeAddress](/graph/api/resources/physicalofficeaddress?view=graph-rest-beta) resource type), and `mobilePhone`, `businessPhones` and `faxNumber` are now in a `phones` collection. `companyName` and `imAddresses` have also been added|
 
-### Identity and access | Privileged Identity Management
+### Identity and access | Governance
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2264,7 +2289,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta        | Introduced new complex type [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta).|
 | Addition        | Beta        | Introduced new complex type [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta).|
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2289,13 +2314,13 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## November 2018
 
-### Identity and access | Data policy operations
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | beta        | Added new  **progress** property to [dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta). This specifies the progress of an operation.
 
-### Identity and access (directory APIs)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2313,7 +2338,7 @@ Debut of the places API which provides rich details for locations in apps.
 | :---------- | :----------------------------------------- | :--------------------------------------- |
 | Addition    | Beta version in Microsoft Graph China operated by 21Vianet | Added the following APIs:<br>[getEmailActivityUserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta)<br>[getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta)<br>[getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta)<br>[getEmailAppUsageUserDetail](/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta)<br>[getEmailAppUsageAppsUserCounts](/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta)<br>[getEmailAppUsageUserCounts](/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta)<br>[getEmailAppUsageVersionsUserCounts](/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta)<br>[getMailboxUsageDetail](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta)<br>[getMailboxUsageMailboxCounts](/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta)<br>[getMailboxUsageQuotaStatusMailboxCounts](/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta)<br>[getMailboxUsageStorage](/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta)<br>[getOffice365ActivationsUserDetail](/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta)<br>[getOffice365ActivationCounts](/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta)<br>[getOffice365ActivationsUserCounts](/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta)<br>[getOffice365ActiveUserDetail](/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta)<br>[getOffice365ActiveUserCounts](/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta)<br>[getOffice365ServicesUserCounts](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta)<br>[getOffice365GroupsActivityDetail](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta)<br> [getOffice365GroupsActivityCounts](/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta)<br>[getOffice365GroupsActivityGroupCounts](/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta)<br>[getOffice365GroupsActivityStorage](/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta)<br>[getOffice365GroupsActivityFileCounts](/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta)<br>[getOneDriveActivityUserDetail](/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta)<br>[getOneDriveActivityUserCounts](/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta)<br>[getOneDriveActivityFileCounts](/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta)<br>[getOneDriveUsageAccountDetail](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta)<br>[getOneDriveUsageAccountCounts](/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta)<br>[getOneDriveUsageFileCounts](/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta)<br>[getOneDriveUsageStorage](/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta)<br>[getSharePointActivityUserDetail](/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta)<br>[getSharePointActivityFileCounts](/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta)<br>[getSharePointActivityUserCounts](/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta)<br>[getSharePointActivityPages](/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta)<br>[getSharePointSiteUsageDetail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta)<br>[getSharePointSiteUsageFileCounts](/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta)<br>[getSharePointSiteUsageSiteCounts](/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta)<br>[getSharePointSiteUsageStorage](/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta)<br>[getSharePointSiteUsagePages](/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta)<br>[getSkypeForBusinessActivityUserDetail](/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta)<br>[getSkypeForBusinessActivityCounts](/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessActivityUserCounts](/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessDeviceUsageUserDetail](/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta)<br>[getSkypeForBusinessDeviceUsageDistributionUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessDeviceUsageUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessOrganizerActivityCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessOrganizerActivityUserCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessOrganizerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta)<br>[getSkypeForBusinessParticipantActivityCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessParticipantActivityUserCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessParticipantActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta)<br>[getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta). |
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2351,7 +2376,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## October 2018
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -2392,7 +2417,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareNameCount](/graph/api/resources/intune-devices-windowsmalwarenamecount?view=graph-rest-beta) complex type|
 |Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareStateCount](/graph/api/resources/intune-devices-windowsmalwarestatecount?view=graph-rest-beta) complex type|
 
-### Identity and access | Audit logs
+### Reports
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2401,7 +2426,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition |beta| Introduced additional sign-in properties in the [signIn API](/graph/api/resources/signin?view=graph-rest-beta), including `authenticationProcessingDetails`, `originalRequestID`, `isInteractive`, `tokenIssuerName`, `tokenIssuerType`, `correlationId`, and `processingTimeinMilliseconds`.|
 |Removal   |beta| Removed the property `isRisky`.|
 
-### Identity and access (directory APIs)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2413,13 +2438,13 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | Beta | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Addition | Beta | Added the **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** and **membersWithLicenseErrors** properties to [Group](/graph/api/resources/group?view=graph-rest-beta) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 
-### Identity and access | Identity protection
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition |beta| Introduced [riskyUsers API](/graph/api/resources/riskyuser?view=graph-rest-beta), which represents Azure AD users who are at risk, as detected by Azure AD Identity Protection. |
 
-### Identity and access | Privileged Identity Management
+### Identity and access | Governance
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2428,7 +2453,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | beta | Added [Update](/graph/api/privilegedrolesettings-update?view=graph-rest-beta) for [privilegedRoleSettings](/graph/api/resources/privilegedrolesettings?view=graph-rest-beta)|
 | Removal |beta| Deprecated the [Self Activate Role Assignment](/graph/api/privilegedrole_selfactivate?view=graph-rest-beta)|
 
-### Personal contacts (Outlook)
+### Personal contacts
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2439,24 +2464,34 @@ Debut of the places API which provides rich details for locations in apps.
 |:------------|:--------|:-----------------------------------------|
 | Addition    | v1.0    | Added the **Site ID** property to [getSharePointSiteUsageDetail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0). |
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added application permissions support to [archive team](/graph/api/team-archive?view=graph-rest-beta) and [unarchive team](/graph/api/team-unarchive?view=graph-rest-beta) APIs.|
 
-### Track changes
+### Identity and access
 
 | **Change type** | **Version** | **Description**                  |
 |:------------|:--------|:-----------------------------------------|
 | Addition    | Beta   | Added [delta query](delta-query-overview.md) capability for [directoryObject](/graph/api/directoryobject-delta?view=graph-rest-beta) |
-| Change      | v1.0 and beta  | Alternative behavior to return changed properties only in JSON response for [users](/graph/api/user-delta?view=graph-rest-1.0) and [groups](/graph/api/group-delta?view=graph-rest-1.0). |
 | Addition    | v1.0   | Added [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) function for [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) to support [change tracking using delta query](delta-query-overview.md). |
 
+### Users
+
+| **Change type** | **Version** | **Description**                  |
+|:------------|:--------|:-----------------------------------------|
+| Change      | v1.0 and beta  | Alternative behavior to return changed properties only in JSON response for [users](/graph/api/user-delta?view=graph-rest-1.0). |
+
+### Groups
+
+| **Change type** | **Version** | **Description**                  |
+|:------------|:--------|:-----------------------------------------|
+| Change      | v1.0 and beta  | Alternative behavior to return changed properties only in JSON response for [groups](/graph/api/group-delta?view=graph-rest-1.0). |
 
 ## September 2018
 
-### Calls and online meetings
+### Cloud communications
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2469,13 +2504,13 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta        | Added the [online meeting](/graph/api/resources/audioroutinggroup?view=graph-rest-beta) resource and APIs for managing Microsoft Teams online meetings. Initially, there is only one API for online meetings, to [retrieve an online meeting object](/graph/api/onlinemeeting-get?view=graph-rest-beta). A related resource for the [audio conference information](/graph/api/resources/audioconferencing?view=graph-rest-beta) associated with a meeting (e.g. dial-in URL, passcodes, and phone numbers) was also added. |
 | Addition        | Beta        | Many of the calls and meetings APIs take time to complete, so resources for these long-running operations were added: [calling-specific operations](/graph/api/resources/commsoperation?view=graph-rest-beta), [playing audio prompts](/graph/api/resources/playpromptoperation?view=graph-rest-beta), and [recording](/graph/api/resources/recordoperation?view=graph-rest-beta).  |
 
-### Data access (Microsoft Graph data connect)
+### Data access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition         | Not applicable| Introduced the ability to access Microsoft 365 data in bulk. For details, see [Microsoft Graph data connect (preview)](data-connect-overview.md).|
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|v1.0|Added the [assign](/graph/api/intune-apps-manageddevicemobileappconfiguration-assign?view=graph-rest-1.0) action on [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0) |
@@ -2518,7 +2553,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **paloAltoGlobalProtect** member to the [androidWorkProfileVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconnectiontype?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **remoteLock** member to the [deviceComplianceActionType](/graph/api/resources/intune-deviceconfig-devicecomplianceactiontype?view=graph-rest-beta) enum type|
 
-### Files, sites, and lists (OneDrive for Business and SharePoint)
+### Files
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2548,19 +2583,19 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | v1.0        | Added the **preview** action on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) entity |
 | Addition        | v1.0        | Added the [itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) complex type |
 
-### Financials (Dynamics 365 Business Central)
+### Financials
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta)
 
-### Mail (Outlook)
+### Mail
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0 and beta | The **internetMessageHeaders** property of the [message](/graph/api/resources/message?view=graph-rest-1.0) entity is now writeable on message creation. |
 
-### Notifications (Project Rome)
+### User notifications
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2574,7 +2609,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta       | Added the Secure Score APIs to the [security API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta), including the following resources and operations:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (and related entities)<br/>[List secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[List secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Update secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
 | Addition        | Beta        | Introduced new complex type [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) |
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2592,13 +2627,13 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## August 2018
 
-### Calendar (Outlook)
+### Calendar
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) action, and the [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-beta), [scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-beta), and [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-beta) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md). |
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -2678,7 +2713,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **wpa2Personal** and **wpa2Enterprise** members to the [wiFiSecurityType](/graph/api/resources/intune-deviceconfig-wifisecuritytype?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **enterpriseUnwantedSoftware**, **ransom** and **hipsRule** members to the [windowsMalwareCategory](/graph/api/resources/intune-devices-windowsmalwarecategory?view=graph-rest-beta) enum type|
 
-### Identity and access (directory APIs)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2687,7 +2722,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | v1.0 | Added  [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0) property to the [User](/graph/api/resources/user?view=graph-rest-1.0) entity that contains fifteen custom extension attribute properties. For an onPremisesSyncEnabled user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties may be set during creation or update.|
 |Addition|v1.0|Added the **onPremisesDomainName**, **onPremisesSamAccountName**, and **onPremisesUserPrincipalName** properties to the [User](/graph/api/resources/user?view=graph-rest-1.0) entity|
 
-### Mail (Outlook)
+### Mail
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2725,7 +2760,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | beta       | Added **wasRunning** property to [vulnerabilityState](/graph/api/resources/vulnerabilitystate?view=graph-rest-beta).|
 |Deletion|beta| Removed **name** property from [vulnerabilityState](/graph/api/resources/vulnerabilitystate?view=graph-rest-beta). |
 
-### Track changes
+### Applications
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2734,7 +2769,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## July 2018
 
-### Change notifications (webhooks)
+### Change notifications
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
 | Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. |
@@ -2745,19 +2780,19 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :---------- | :--------------------------------------- |
 | Change          | Beta        | The [application](/graph/api/resources/application?view=graph-rest-beta) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) APIs will be updated in preview (beta). The first set of changes will be applied on July 16, 2018. The changes include property renaming and restructuring. Most of the existing properties will not be available until the changes are completed. There will be new properties added. The changes will be released in preview (beta) prior to releasing to v1.0. |
 
-### Identity and access | Synchronization
+### Applications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added **progress** property to [sychronizationStatus](/graph/api/resources/synchronization-synchronizationstatus?view=graph-rest-beta) to permit clients to monitor the progress of a synchronization job.|
 
-### Personal contacts (Outlook)
+### Personal contacts
 | **Change type** | **Version**   | **Description**                          |
 |:--------------- |:------------- |:---------------------------------------- |
 |Addition |Beta | Added the complex type [typedEmailAddress](/graph/api/resources/typedemailaddress?view=graph-rest-beta). |
 |Change | Beta | Changed the type of the **emailAddresses** property of [contact](/graph/api/resources/contact?view=graph-rest-beta) to be a collection of **typedEmailAddress** instances.|
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2796,7 +2831,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## June 2018
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -2841,20 +2876,20 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **userRequestedInstall** member to the [mobileAppActionType](/graph/api/resources/intune-troubleshooting-mobileappactiontype?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **notConfigured** member to the [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) enum type
 
-### Identity and access (Azure AD)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta) feature to [Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-beta). |
 
-### Identity and access (directory APIs)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allows a client app to create, read, update, and delete applications and service principals as described in the [permissions topic](permissions-reference.md#application-resource-permissions). |
 | Addition | v1.0 | Added **ageGroup**, **legalAgeGroupClassification**, and **ConsentRequiredForMinor** properties to [user](/graph/api/resources/user?view=graph-rest-1.0) resource
 
-### Identity and access | Privileged Identity Management
+### Identity and access | Governance
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2874,7 +2909,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | beta        | Added new enum types:<br/>[alertFeedback](/graph/api/resources/alertfeedbackenumtype?view=graph-rest-beta)<br/>[alertStatus](/graph/api/resources/alertstatusenumtype?view=graph-rest-beta)<br/>[alertType](/graph/api/resources/alerttypeenumtype?view=graph-rest-beta)<br/>[applicationPermissionsRequired](/graph/api/resources/applicationpermissionsrequiredenumtype?view=graph-rest-beta)<br/>[logonType](/graph/api/resources/logontypeenumtype?view=graph-rest-beta)<br/>[processIntegrityLevel](/graph/api/resources/processintegritylevelenumtype?view=graph-rest-beta)<br/>[securityNetworkProtocol](/graph/api/resources/securitynetworkprotocolenumtype?view=graph-rest-beta)<br/>[userAccountSecurityType](/graph/api/resources/useraccountsecuritytypeenumtype?view=graph-rest-beta)<br/>
 
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition         | Beta          | Added team [archive](/graph/api/team-archive?view=graph-rest-beta) and [unarchive](/graph/api/team-unarchive?view=graph-rest-beta) APIs.|
@@ -2886,7 +2921,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## May 2018
 
-### Customer booking (Microsoft Bookings)
+### Customer booking
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2898,7 +2933,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta          | Added the [bookingStaffMember](/graph/api/resources/bookingstaffmember?view=graph-rest-beta) entity and the following CRUD methods: <br> [List](/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta) <br> [Get](/graph/api/bookingstaffmember-get?view=graph-rest-beta) <br> [Update](/graph/api/bookingstaffmember-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingstaffmember-delete?view=graph-rest-beta).|
 | Addition        | Beta          | Added the following complex types: <br> [bookingNamedEntity](/graph/api/resources/bookingnamedentity?view=graph-rest-beta) <br> [bookingPerson](/graph/api/resources/bookingperson?view=graph-rest-beta) <br> [bookingReminder](/graph/api/resources/bookingreminder?view=graph-rest-beta) <br> [bookingWorkHours](/graph/api/resources/bookingworkhours?view=graph-rest-beta) <br> [bookingWorkTimeSlot](/graph/api/resources/bookingworktimeslot?view=graph-rest-beta).|
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|beta|Added new entities:<br/>[androidWorkProfileCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta)<br/>[easEmailProfileConfigurationBase](/graph/api/resources/intune-deviceconfig-easemailprofileconfigurationbase?view=graph-rest-beta)<br/>[mobileAppIntentAndState](/graph/api/resources/intune-troubleshooting-mobileappintentandstate?view=graph-rest-beta)<br/>[mobileAppTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootingevent?view=graph-rest-beta)<br/>[unsupportedDeviceConfiguration](/graph/api/resources/intune-deviceconfig-unsupporteddeviceconfiguration?view=graph-rest-beta)<br/>[windowsKioskConfiguration](/graph/api/resources/intune-deviceconfig-windowskioskconfiguration?view=graph-rest-beta)<br/>|
@@ -2964,20 +2999,20 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0 and beta | Added the **importance** property to the [post](/graph/api/resources/post?view=graph-rest-1.0) entity. |
 
-### Identity and access (Azure AD)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Change           | Beta          | Renamed the **creatorUserId** property of the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) entity to **creatorId** to better reflect its meaning. |
 
-### Identity and access (directory APIs)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0        | Added [List deleted items owned by a user](/graph/api/directory-deleteditems-user-owned?view=graph-rest-1.0) action to [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-1.0) resource |
 | Addition | beta | Added the [getUserOwnedObjects](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta) function to the [directory](/graph/api/resources/directory?view=graph-rest-beta) resource to list the deleted groups owned by a given user. |
 
-### Social and workplace intelligence | Insights
+### People and workplace intelligence | Insights
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2986,7 +3021,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## April 2018
 
-### Calendar (Outlook)
+### Calendar
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2994,7 +3029,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | v1.0          | Added the **locationType** property to the [location](/graph/api/resources/location?view=graph-rest-1.0) complex type. |
 | Addition        | v1.0          | Added the **uniqueId** and **uniqueIdType** properties to the [location](/graph/api/resources/location?view=graph-rest-1.0) complex type. These properties are only for internal use at this point. |
 
-### Cross-device experiences (Project Rome)
+### Cross-device experiences
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3011,7 +3046,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | v.10 | Added [Project Rome overview](/graph/api/resources/project-rome-overview?view=graph-rest-1.0) |
 | Change | Beta | Added deep insert documentation to [Upsert Activity](/graph/api/projectrome-put-activity?view=graph-rest-beta) |
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|v1.0|Added new entities:<br/>[managedDeviceMobileAppConfigurationDeviceStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicestatus?view=graph-rest-1.0)<br/>|
@@ -3061,14 +3096,14 @@ Debut of the places API which provides rich details for locations in apps.
 |Change|Beta|Updated the text for description of the [educationSynchronizationError](/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta) resource type.|
 |Change|Beta|Updated the text for description of the [get sync errors](/graph/api/educationsynchronizationerrors-get?view=graph-rest-beta) API.|
 
-### Identity and access | Audit logs
+### Reports
 
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|Beta|Added the [directoryAudit](/graph/api/resources/directoryaudit?view=graph-rest-beta) and [signIn](/graph/api/resources/signin?view=graph-rest-beta) entities to support a new audit log API. |
 |Addition|Beta|Added the following resources to support the audit log API: [appIndentity](/graph/api/resources/appidentity?view=graph-rest-beta), [auditActivityInitiator](/graph/api/resources/auditactivityinitiator?view=graph-rest-beta), [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta), [deviceDetail](/graph/api/resources/devicedetail?view=graph-rest-beta), [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta), [modifiedProperty](/graph/api/resources/modifiedproperty?view=graph-rest-beta), [signinLocation](/graph/api/resources/signinlocation?view=graph-rest-beta), [signinStatus](/graph/api/resources/signinstatus?view=graph-rest-beta), [targetResource](/graph/api/resources/targetresource?view=graph-rest-beta), [targetResourceApp](/graph/api/resources/targetresourceapp?view=graph-rest-beta), [targetResourceDevice](/graph/api/resources/targetresourcedevice?view=graph-rest-beta), [targetResourceDirectory](/graph/api/resources/targetresourcedirectory?view=graph-rest-beta), [targetResourceGroup](/graph/api/resources/targetresourcegroup?view=graph-rest-beta), [targetResourceOther](/graph/api/resources/targetresourceother?view=graph-rest-beta), [targetResourcePolicy](/graph/api/resources/targetresourcepolicy?view=graph-rest-beta), [targetResourceRole](/graph/api/resources/targetresourcerole?view=graph-rest-beta), [targetResourceServicePrincipal](/graph/api/resources/targetresourceserviceprincipal?view=graph-rest-beta), [targetResourceUser](/graph/api/resources/targetresourceuser?view=graph-rest-beta), [userIdentity](/graph/api/resources/useridentity?view=graph-rest-beta) |
 
-### Identity and access (directory APIs)
+### Users
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3076,8 +3111,16 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | v1.0        | Added the **legalAgeGroup, ageGroup and consentProvidedForMinor** complex type to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity. |
 | Addition        | v1.0        | Added users and groups support to [webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) notification subscriptions. |
 | Addition        | beta        | Added [List deleted items owned by a user](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta) action to [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-beta) resource |
+| Addition        | v1.0        | Added the new **masterCategories** navigation property to the [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) entity. **masterCategories** is a collection of [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) objects. |
+| Addition        | v1.0        | Added the [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) entity. |
+| Addition        | v1.0        | Added the following CRUD operations for [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0): [create](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0), [get](/graph/api/outlookcategory-get?view=graph-rest-1.0), [update](/graph/api/outlookcategory-update?view=graph-rest-1.0), and [delete](/graph/api/outlookcategory-delete?view=graph-rest-1.0). |
+| Addition        | v1.0        | Added the new [supportedLanguages](/graph/api/outlookuser-supportedlanguages?view=graph-rest-1.0) function to the [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) entity. |
+| Addition        | v1.0        | Added the new [supportedTimeZones](/graph/api/outlookuser-supportedtimezones?view=graph-rest-1.0) function to the [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) entity. |
+|Addition | v1.0 | Added the new **workingHours** property to [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). See [workingHours resource type](/graph/api/resources/workinghours?view=graph-rest-1.0) for information on the supported use cases.|
+|Addition | v1.0 | Added the following new complex types: <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-1.0) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-1.0) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-1.0) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-1.0)|
 
-### Mail (Outlook)
+
+### Mail
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3091,7 +3134,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | Beta | Added the following APIs for mail search folder: [Create](/graph/api/mailsearchfolder-post?view=graph-rest-beta), [Update](/graph/api/mailsearchfolder-update?view=graph-rest-beta). |
 | Change | Beta | Added support for mail search folder to [delete mailFolder](/graph/api/mailfolder-delete?view=graph-rest-beta), [get mailFolder](/graph/api/mailfolder-get?view=graph-rest-beta), and [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). |
 
-### Personal contacts (Outlook)
+### Personal contacts
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3109,7 +3152,7 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta       | Added the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:<br/>[alert](/graph/api/resources/alert?view=graph-rest-beta) (and related entities)<br/>[Get alert](/graph/api/alert-get?view=graph-rest-beta)<br/>[List alerts](/graph/api/alert-list?view=graph-rest-beta)<br/>[Update alert](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>Added the following supporting documentation:<br/>[Errors](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[Security solution integrations using the Microsoft Graph Security API](security-integration.md)
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -3122,22 +3165,9 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|Beta|Added new webUrl property to [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 |Change|Beta|Updated the path to the [channel](/graph/api/resources/channel?view=graph-rest-beta) entity.|
 
-### Users | Outlook settings
-
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added the new **masterCategories** navigation property to the [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) entity. **masterCategories** is a collection of [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) objects. |
-| Addition        | v1.0        | Added the [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) entity. |
-| Addition        | v1.0        | Added the following CRUD operations for [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0): [create](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0), [get](/graph/api/outlookcategory-get?view=graph-rest-1.0), [update](/graph/api/outlookcategory-update?view=graph-rest-1.0), and [delete](/graph/api/outlookcategory-delete?view=graph-rest-1.0). |
-| Addition        | v1.0        | Added the new [supportedLanguages](/graph/api/outlookuser-supportedlanguages?view=graph-rest-1.0) function to the [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) entity. |
-| Addition        | v1.0        | Added the new [supportedTimeZones](/graph/api/outlookuser-supportedtimezones?view=graph-rest-1.0) function to the [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) entity. |
-|Addition | v1.0 | Added the new **workingHours** property to [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). See [workingHours resource type](/graph/api/resources/workinghours?view=graph-rest-1.0) for information on the supported use cases.|
-|Addition | v1.0 | Added the following new complex types: <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-1.0) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-1.0) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-1.0) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-1.0)|
-
-
 ## March 2018
 
-### Cross-device experiences (Project Rome)
+### Cross-device experiences
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3151,7 +3181,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Change | Beta | Added **activity** navigation property to [historyItem](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta) |
 | Change | Beta | Added new APIs to [Project Rome overview](/graph/api/resources/project-rome-overview?view=graph-rest-beta) |
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -3209,7 +3239,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **containedApps** navigation property to the [mobileAppContent](/graph/api/resources/intune-apps-mobileappcontent?view=graph-rest-beta) entity|
 |Addition|beta|Added the **committedContainedApps** navigation property to the [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta) entity|
 
-### Files (OneDrive for Business)
+### Files
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|v1.0|Added new entities:<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
@@ -3237,21 +3267,21 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | v1.0        | Added [List groupLifecyclePolicies](/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-1.0) function to [group](/graph/api/resources/group?view=graph-rest-1.0) |
 | Change | v1.0 | Added renewedDateTime property and [renew](/graph/api/group-renew?view=graph-rest-1.0) to [group](/graph/api/resources/group?view=graph-rest-1.0) |
 
-### Identity and access (Azure AD)
+### Identity and access
 
 |Change type|Version|Description|
 |:---|:---|:---|
 |Change|beta|Added the **applicationID** and **creatorUserID** properties to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) resource. |
 |Change|beta|Added the [list](/graph/api/subscription-list?view=graph-rest-beta) operation to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) entity. |
 
-### Identity and access | Data policy operations
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | beta        | Added new entity [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta). This represents a submitted data policy operation for tracking purposes.
 | Addition        | beta        | Added the [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) action on [users](/graph/api/resources/users?view=graph-rest-beta). This action submits a data policy operation request to export personal data stored by Microsoft for a user. |
 
-### Identity and access (directory APIs)
+### Identity and access
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3259,7 +3289,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta        | Added the **privacyProfile** complex type to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
 | Addition        | v1.0        | Added support for [restoring and permanently deleting users and groups](/graph/api/resources/directory?view=graph-rest-1.0). |
 
-### Identity and access | Terms of use
+### Identity and access | Governance
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3273,7 +3303,7 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :---------- | :--------------------------------------- |
 |Addition|beta|Added the **siteId** property to the [sharePointSiteUsageDetail](/graph/api/resources/sharepointsiteusagedetail?view=graph-rest-beta) entity.|
 
-### Workbooks and charts (Excel)
+### Workbooks and charts
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3282,7 +3312,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## February 2018
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|beta|Added new entities:<br/>[androidForWorkImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile?view=graph-rest-beta)<br/>[androidImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-androidimportedpfxcertificateprofile?view=graph-rest-beta)<br/>[importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)<br/>[iosImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-iosimportedpfxcertificateprofile?view=graph-rest-beta)<br/>[windows10ImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-windows10importedpfxcertificateprofile?view=graph-rest-beta)<br/>[windows10KioskConfiguration](/graph/api/resources/intune-deviceconfig-windows10kioskconfiguration?view=graph-rest-beta)<br/>[windowsPhone81ImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile?view=graph-rest-beta)<br/>|
@@ -3320,7 +3350,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition    | Beta    | Added the **activatedOnSharedComputer** property to the [userActivationCounts](/graph/api/resources/useractivationcounts?view=graph-rest-beta) entity.|
 | Addition    | Beta    | Added the **sharedComputerActivation** property to the [office365ActivationsUserCounts](/graph/api/resources/office365activationsusercounts?view=graph-rest-beta) entity.|
 
-### Tasks and plans (Planner)
+### Tasks and plans
 
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -3341,7 +3371,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|v1.0|Added [JSON batching](json-batching.md) support. Internal request limit set to 20.|
 |Change|Beta|Increased [JSON batching](json-batching.md) internal request limit from 5 to 20.|
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|v1.0|Added new entities:<br/>[androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-1.0)<br/>[androidCustomConfiguration](/graph/api/resources/intune-deviceconfig-androidcustomconfiguration?view=graph-rest-1.0)<br/>[androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-1.0)<br/>[androidLobApp](/graph/api/resources/intune-apps-androidlobapp?view=graph-rest-1.0)<br/>[androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-1.0)<br/>[androidManagedAppRegistration](/graph/api/resources/intune-mam-androidmanagedappregistration?view=graph-rest-1.0)<br/>[androidStoreApp](/graph/api/resources/intune-apps-androidstoreapp?view=graph-rest-1.0)<br/>[appleDeviceFeaturesConfigurationBase](/graph/api/resources/intune-deviceconfig-appledevicefeaturesconfigurationbase?view=graph-rest-1.0)<br/>[applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate?view=graph-rest-1.0)<br/>[defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-1.0)<br/>[detectedApp](/graph/api/resources/intune-devices-detectedapp?view=graph-rest-1.0)<br/>[deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-1.0)<br/>[deviceAndAppManagementRoleDefinition](/graph/api/resources/intune-rbac-deviceandappmanagementroledefinition?view=graph-rest-1.0)<br/>[deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0)<br/>[deviceCategory](/graph/api/resources/intune-shared-devicecategory?view=graph-rest-1.0)<br/>[deviceComplianceActionItem](/graph/api/resources/intune-deviceconfig-devicecomplianceactionitem?view=graph-rest-1.0)<br/>[deviceComplianceDeviceOverview](/graph/api/resources/intune-deviceconfig-devicecompliancedeviceoverview?view=graph-rest-1.0)<br/>[deviceComplianceDeviceStatus](/graph/api/resources/intune-deviceconfig-devicecompliancedevicestatus?view=graph-rest-1.0)<br/>[deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-1.0)<br/>[deviceCompliancePolicyAssignment](/graph/api/resources/intune-deviceconfig-devicecompliancepolicyassignment?view=graph-rest-1.0)<br/>[deviceCompliancePolicyDeviceStateSummary](/graph/api/resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary?view=graph-rest-1.0)<br/>[deviceCompliancePolicySettingStateSummary](/graph/api/resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary?view=graph-rest-1.0)<br/>[deviceCompliancePolicyState](/graph/api/resources/intune-deviceconfig-devicecompliancepolicystate?view=graph-rest-1.0)<br/>[deviceComplianceScheduledActionForRule](/graph/api/resources/intune-deviceconfig-devicecompliancescheduledactionforrule?view=graph-rest-1.0)<br/>[deviceComplianceSettingState](/graph/api/resources/intune-deviceconfig-devicecompliancesettingstate?view=graph-rest-1.0)<br/>[deviceComplianceUserOverview](/graph/api/resources/intune-deviceconfig-devicecomplianceuseroverview?view=graph-rest-1.0)<br/>[deviceComplianceUserStatus](/graph/api/resources/intune-deviceconfig-devicecomplianceuserstatus?view=graph-rest-1.0)<br/>[deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-1.0)<br/>[deviceConfigurationAssignment](/graph/api/resources/intune-deviceconfig-deviceconfigurationassignment?view=graph-rest-1.0)<br/>[deviceConfigurationDeviceOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationdeviceoverview?view=graph-rest-1.0)<br/>[deviceConfigurationDeviceStateSummary](/graph/api/resources/intune-deviceconfig-deviceconfigurationdevicestatesummary?view=graph-rest-1.0)<br/>[deviceConfigurationDeviceStatus](/graph/api/resources/intune-deviceconfig-deviceconfigurationdevicestatus?view=graph-rest-1.0)<br/>[deviceConfigurationState](/graph/api/resources/intune-deviceconfig-deviceconfigurationstate?view=graph-rest-1.0)<br/>[deviceConfigurationUserOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationuseroverview?view=graph-rest-1.0)<br/>[deviceConfigurationUserStatus](/graph/api/resources/intune-deviceconfig-deviceconfigurationuserstatus?view=graph-rest-1.0)<br/>[deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration?view=graph-rest-1.0)<br/>[deviceEnrollmentLimitConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentlimitconfiguration?view=graph-rest-1.0)<br/>[deviceEnrollmentPlatformRestrictionsConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration?view=graph-rest-1.0)<br/>[deviceEnrollmentWindowsHelloForBusinessConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration?view=graph-rest-1.0)<br/>[deviceInstallState](/graph/api/resources/intune-books-deviceinstallstate?view=graph-rest-1.0)<br/>[deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-1.0)<br/>[deviceManagementExchangeConnector](/graph/api/resources/intune-onboarding-devicemanagementexchangeconnector?view=graph-rest-1.0)<br/>[deviceManagementPartner](/graph/api/resources/intune-onboarding-devicemanagementpartner?view=graph-rest-1.0)<br/>[deviceManagementTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingevent?view=graph-rest-1.0)<br/>[eBookInstallSummary](/graph/api/resources/intune-books-ebookinstallsummary?view=graph-rest-1.0)<br/>[editionUpgradeConfiguration](/graph/api/resources/intune-deviceconfig-editionupgradeconfiguration?view=graph-rest-1.0)<br/>[enrollmentConfigurationAssignment](/graph/api/resources/intune-onboarding-enrollmentconfigurationassignment?view=graph-rest-1.0)<br/>[enrollmentTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-enrollmenttroubleshootingevent?view=graph-rest-1.0)<br/>[iosCertificateProfile](/graph/api/resources/intune-deviceconfig-ioscertificateprofile?view=graph-rest-1.0)<br/>[iosCompliancePolicy](/graph/api/resources/intune-deviceconfig-ioscompliancepolicy?view=graph-rest-1.0)<br/>[iosCustomConfiguration](/graph/api/resources/intune-deviceconfig-ioscustomconfiguration?view=graph-rest-1.0)<br/>[iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration?view=graph-rest-1.0)<br/>[iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-1.0)<br/>[iosLobApp](/graph/api/resources/intune-apps-ioslobapp?view=graph-rest-1.0)<br/>[iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-1.0)<br/>[iosManagedAppRegistration](/graph/api/resources/intune-mam-iosmanagedappregistration?view=graph-rest-1.0)<br/>[iosStoreApp](/graph/api/resources/intune-apps-iosstoreapp?view=graph-rest-1.0)<br/>[iosUpdateConfiguration](/graph/api/resources/intune-deviceconfig-iosupdateconfiguration?view=graph-rest-1.0)<br/>[iosUpdateDeviceStatus](/graph/api/resources/intune-deviceconfig-iosupdatedevicestatus?view=graph-rest-1.0)<br/>[iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-1.0)<br/>[iosVppEBook](/graph/api/resources/intune-books-iosvppebook?view=graph-rest-1.0)<br/>[iosVppEBookAssignment](/graph/api/resources/intune-books-iosvppebookassignment?view=graph-rest-1.0)<br/>[localizedNotificationMessage](/graph/api/resources/intune-notification-localizednotificationmessage?view=graph-rest-1.0)<br/>[macOSCompliancePolicy](/graph/api/resources/intune-deviceconfig-macoscompliancepolicy?view=graph-rest-1.0)<br/>[macOSCustomConfiguration](/graph/api/resources/intune-deviceconfig-macoscustomconfiguration?view=graph-rest-1.0)<br/>[macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-1.0)<br/>[macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-1.0)<br/>[macOSOfficeSuiteApp](/graph/api/resources/intune-apps-macosofficesuiteapp?view=graph-rest-1.0)<br/>[managedAndroidLobApp](/graph/api/resources/intune-apps-managedandroidlobapp?view=graph-rest-1.0)<br/>[managedAndroidStoreApp](/graph/api/resources/intune-apps-managedandroidstoreapp?view=graph-rest-1.0)<br/>[managedApp](/graph/api/resources/intune-apps-managedapp?view=graph-rest-1.0)<br/>[managedAppConfiguration](/graph/api/resources/intune-mam-managedappconfiguration?view=graph-rest-1.0)<br/>[managedAppOperation](/graph/api/resources/intune-mam-managedappoperation?view=graph-rest-1.0)<br/>[managedAppPolicy](/graph/api/resources/intune-mam-managedapppolicy?view=graph-rest-1.0)<br/>[managedAppPolicyDeploymentSummary](/graph/api/resources/intune-mam-managedapppolicydeploymentsummary?view=graph-rest-1.0)<br/>[managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-1.0)<br/>[managedAppRegistration](/graph/api/resources/intune-mam-managedappregistration?view=graph-rest-1.0)<br/>[managedAppStatus](/graph/api/resources/intune-mam-managedappstatus?view=graph-rest-1.0)<br/>[managedAppStatusRaw](/graph/api/resources/intune-mam-managedappstatusraw?view=graph-rest-1.0)<br/>[managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0)<br/>[managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0)<br/>[managedDeviceMobileAppConfigurationAssignment](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationassignment?view=graph-rest-1.0)<br/>[managedDeviceMobileAppConfigurationDeviceSummary](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicesummary?view=graph-rest-1.0)<br/>[managedDeviceMobileAppConfigurationUserStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationuserstatus?view=graph-rest-1.0)<br/>[managedDeviceMobileAppConfigurationUserSummary](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationusersummary?view=graph-rest-1.0)<br/>[managedDeviceOverview](/graph/api/resources/intune-devices-manageddeviceoverview?view=graph-rest-1.0)<br/>[managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-1.0)<br/>[managedEBookAssignment](/graph/api/resources/intune-books-managedebookassignment?view=graph-rest-1.0)<br/>[managedIOSLobApp](/graph/api/resources/intune-apps-managedioslobapp?view=graph-rest-1.0)<br/>[managedIOSStoreApp](/graph/api/resources/intune-apps-managediosstoreapp?view=graph-rest-1.0)<br/>[managedMobileApp](/graph/api/resources/intune-mam-managedmobileapp?view=graph-rest-1.0)<br/>[managedMobileLobApp](/graph/api/resources/intune-apps-managedmobilelobapp?view=graph-rest-1.0)<br/>[mdmWindowsInformationProtectionPolicy](/graph/api/resources/intune-mam?view=graph-rest-1.0mwindowsinformationprotectionpolicy)<br/>[microsoftStoreForBusinessApp](/graph/api/resources/intune-apps-microsoftstoreforbusinessapp?view=graph-rest-1.0)<br/>[mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-1.0)<br/>[mobileAppAssignment](/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-1.0)<br/>[mobileAppCategory](/graph/api/resources/intune-apps-mobileappcategory?view=graph-rest-1.0)<br/>[mobileAppContent](/graph/api/resources/intune-apps-mobileappcontent?view=graph-rest-1.0)<br/>[mobileAppContentFile](/graph/api/resources/intune-apps-mobileappcontentfile?view=graph-rest-1.0)<br/>[mobileLobApp](/graph/api/resources/intune-apps-mobilelobapp?view=graph-rest-1.0)<br/>[mobileThreatDefenseConnector](/graph/api/resources/intune-onboarding-mobilethreatdefenseconnector?view=graph-rest-1.0)<br/>[notificationMessageTemplate](/graph/api/resources/intune-notification-notificationmessagetemplate?view=graph-rest-1.0)<br/>[onPremisesConditionalAccessSettings](/graph/api/resources/intune-onboarding-onpremisesconditionalaccesssettings?view=graph-rest-1.0)<br/>[remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-1.0)<br/>[resourceOperation](/graph/api/resources/intune-rbac-resourceoperation?view=graph-rest-1.0)<br/>[roleAssignment](/graph/api/resources/intune-rbac-roleassignment?view=graph-rest-1.0)<br/>[roleDefinition](/graph/api/resources/intune-rbac-roledefinition?view=graph-rest-1.0)<br/>[settingStateDeviceSummary](/graph/api/resources/intune-deviceconfig-settingstatedevicesummary?view=graph-rest-1.0)<br/>[sharedPCConfiguration](/graph/api/resources/intune-deviceconfig-sharedpcconfiguration?view=graph-rest-1.0)<br/>[softwareUpdateStatusSummary](/graph/api/resources/intune-deviceconfig-softwareupdatestatussummary?view=graph-rest-1.0)<br/>[targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-1.0)<br/>targetedManagedAppPolicyAssignment<br/>[targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-1.0)<br/>[telecomExpenseManagementPartner](/graph/api/resources/intune-tem-telecomexpensemanagementpartner?view=graph-rest-1.0)<br/>[termsAndConditions](/graph/api/resources/intune-companyterms-termsandconditions?view=graph-rest-1.0)<br/>[termsAndConditionsAcceptanceStatus](/graph/api/resources/intune-companyterms-termsandconditionsacceptancestatus?view=graph-rest-1.0)<br/>[termsAndConditionsAssignment](/graph/api/resources/intune-companyterms-termsandconditionsassignment?view=graph-rest-1.0)<br/>[userInstallStateSummary](/graph/api/resources/intune-books-userinstallstatesummary?view=graph-rest-1.0)<br/>[webApp](/graph/api/resources/intune-apps-webapp?view=graph-rest-1.0)<br/>[windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-1.0)<br/>[windows10CustomConfiguration](/graph/api/resources/intune-deviceconfig-windows10customconfiguration?view=graph-rest-1.0)<br/>[windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-1.0)<br/>[windows10EnterpriseModernAppManagementConfiguration](/graph/api/resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration?view=graph-rest-1.0)<br/>[windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-1.0)<br/>[windows10MobileCompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10mobilecompliancepolicy?view=graph-rest-1.0)<br/>[windows10SecureAssessmentConfiguration](/graph/api/resources/intune-deviceconfig-windows10secureassessmentconfiguration?view=graph-rest-1.0)<br/>[windows10TeamGeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10teamgeneralconfiguration?view=graph-rest-1.0)<br/>[windows81CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows81compliancepolicy?view=graph-rest-1.0)<br/>[windows81GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows81generalconfiguration?view=graph-rest-1.0)<br/>[windowsDefenderAdvancedThreatProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration?view=graph-rest-1.0)<br/>[windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-1.0)<br/>[windowsInformationProtectionAppLearningSummary](/graph/api/resources/intune-wip-windowsinformationprotectionapplearningsummary?view=graph-rest-1.0)<br/>[windowsInformationProtectionAppLockerFile](/graph/api/resources/intune-mam-windowsinformationprotectionapplockerfile?view=graph-rest-1.0)<br/>[windowsInformationProtectionNetworkLearningSummary](/graph/api/resources/intune-wip-windowsinformationprotectionnetworklearningsummary?view=graph-rest-1.0)<br/>[windowsInformationProtectionPolicy](/graph/api/resources/intune-mam-windowsinformationprotectionpolicy?view=graph-rest-1.0)<br/>[windowsMobileMSI](/graph/api/resources/intune-apps-windowsmobilemsi?view=graph-rest-1.0)<br/>[windowsPhone81CompliancePolicy](/graph/api/resources/intune-deviceconfig-windowsphone81compliancepolicy?view=graph-rest-1.0)<br/>[windowsPhone81CustomConfiguration](/graph/api/resources/intune-deviceconfig-windowsphone81customconfiguration?view=graph-rest-1.0)<br/>[windowsPhone81GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windowsphone81generalconfiguration?view=graph-rest-1.0)<br/>[windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-1.0)<br/>[windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0)<br/>|
@@ -3487,7 +3517,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## December 2017
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -3529,22 +3559,27 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition    | v1.0    | Added the following APIs:<br>[getEmailActivityUserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-1.0)<br>[getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-1.0)<br>[getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0)<br>[getEmailAppUsageUserDetail](/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-1.0)<br>[getEmailAppUsageAppsUserCounts](/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-1.0)<br>[getEmailAppUsageUserCounts](/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-1.0)<br>[getEmailAppUsageVersionsUserCounts](/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-1.0)<br>[getMailboxUsageDetail](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0)<br>[getMailboxUsageMailboxCounts](/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-1.0)<br>[getMailboxUsageQuotaStatusMailboxCounts](/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-1.0)<br>[getMailboxUsageStorage](/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-1.0)<br>[getOffice365ActivationsUserDetail](/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0)<br>[getOffice365ActivationCounts](/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-1.0)<br>[getOffice365ActivationsUserCounts](/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-1.0)<br>[getOffice365ActiveUserDetail](/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-1.0)<br>[getOffice365ActiveUserCounts](/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-1.0)<br>[getOffice365ServicesUserCounts](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0)<br>[getOffice365GroupsActivityDetail](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0)<br> [getOffice365GroupsActivityCounts](/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-1.0)<br>[getOffice365GroupsActivityGroupCounts](/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-1.0)<br>[getOffice365GroupsActivityStorage](/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-1.0)<br>[getOffice365GroupsActivityFileCounts](/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-1.0)<br>[getOneDriveActivityUserDetail](/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-1.0)<br>[getOneDriveActivityUserCounts](/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-1.0)<br>[getOneDriveActivityFileCounts](/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-1.0)<br>[getOneDriveUsageAccountDetail](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0)<br>[getOneDriveUsageAccountCounts](/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-1.0)<br>[getOneDriveUsageFileCounts](/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-1.0)<br>[getOneDriveUsageStorage](/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-1.0)<br>[getSharePointActivityUserDetail](/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-1.0)<br>[getSharePointActivityFileCounts](/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-1.0)<br>[getSharePointActivityUserCounts](/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-1.0)<br>[getSharePointActivityPages](/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-1.0)<br>[getSharePointSiteUsageDetail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0)<br>[getSharePointSiteUsageFileCounts](/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-1.0)<br>[getSharePointSiteUsageSiteCounts](/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-1.0)<br>[getSharePointSiteUsageStorage](/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-1.0)<br>[getSharePointSiteUsagePages](/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-1.0)<br>[getSkypeForBusinessActivityUserDetail](/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-1.0)<br>[getSkypeForBusinessActivityCounts](/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-1.0)<br>[getSkypeForBusinessActivityUserCounts](/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessDeviceUsageUserDetail](/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-1.0)<br>[getSkypeForBusinessDeviceUsageDistributionUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessDeviceUsageUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessOrganizerActivityCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-1.0)<br>[getSkypeForBusinessOrganizerActivityUserCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessOrganizerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-1.0)<br>[getSkypeForBusinessParticipantActivityCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-1.0)<br>[getSkypeForBusinessParticipantActivityUserCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessParticipantActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-1.0)<br>[getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-1.0)<br>[getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-1.0)<br>[getYammerActivityUserDetail](/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-1.0)<br>[getYammerActivityCounts](/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0)<br>[getYammerActivityUserCounts](/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-1.0)<br>[getYammerDeviceUsageUserDetail](/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-1.0)<br>[getYammerDeviceUsageDistributionUserCounts](/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-1.0)<br>[getYammerDeviceUsageUserCounts](/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-1.0)<br>[getYammerGroupsActivityDetail](/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-1.0)<br>[getYammerGroupsActivityGroupCounts](/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-1.0)<br>[getYammerGroupsActivityCounts](/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-1.0).|
 | Addition    | Beta    | Added the following APIs:<br>[getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta)<br>[getTeamsUserActivityCounts](/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta)<br>[getTeamsUserActivityUserCounts](/graph/api/reportroot-getteamsuseractivityusercounts?view=graph-rest-beta)<br>[getTeamsDeviceUsageUserDetail](/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta)<br>[getTeamsDeviceUsageUserCounts](/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-beta)<br>[getTeamsDeviceUsageDistributionUserCounts](/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-beta) |
 
-### Track changes
+### Users
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Change      | v1.0    | Add optional delta query filtering capability to [users](/graph/api/user-delta?view=graph-rest-1.0) and [groups](/graph/api/group-delta?view=graph-rest-1.0). |
+| Change      | v1.0    | Add optional delta query filtering capability to [users](/graph/api/user-delta?view=graph-rest-1.0). |
 
+### Groups
+
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Change      | v1.0    | Add optional delta query filtering capability to [groups](/graph/api/group-delta?view=graph-rest-1.0). |
 
 ## November 2017
 
-### Change notifications (webhooks)
+### Change notifications
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
 | Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type) for drive root items. The new value is the supported maximum expiration time for drive root items. |
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|Beta|Added new entities:<br/>[auditEvent](/graph/api/resources/intune-auditing-auditevent?view=graph-rest-beta)<br/>[deviceManagementTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingevent?view=graph-rest-beta)<br/>[deviceSetupConfiguration](/graph/api/resources/intune-deviceconfig-devicesetupconfiguration?view=graph-rest-beta)<br/>[enrollmentTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-enrollmenttroubleshootingevent?view=graph-rest-beta)<br/>[macOSOfficeSuiteApp](/graph/api/resources/intune-apps-macosofficesuiteapp?view=graph-rest-beta)<br/>[microsoftStoreForBusinessApp](/graph/api/resources/intune-apps-microsoftstoreforbusinessapp?view=graph-rest-beta)<br/>[ndesConnector](/graph/api/resources/intune-deviceconfig-ndesconnector?view=graph-rest-beta)<br/>|
@@ -3599,7 +3634,7 @@ Debut of the places API which provides rich details for locations in apps.
 |:---|:---|:---|
 |Addition|Beta|Added support for education scenarios, including the following resources:<br/>[Schools](/graph/api/resources/educationschool?view=graph-rest-beta)<br/>[Classes](/graph/api/resources/educationclass?view=graph-rest-beta)<br/>[Users](/graph/api/resources/educationuser?view=graph-rest-beta)<br/>[Assignments](/graph/api/resources/educationassignment?view=graph-rest-beta)<br/>[Submissions](/graph/api/resources/educationsubmission?view=graph-rest-beta)<br/>See the resource topics for details about the methods that are available.|
 
-### Identity and access | Synchronization
+### Applications
 
 | Change type | Version | Description                              |
 | :---------- | :------ | :--------------------------------------- |
@@ -3613,7 +3648,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## October 2017
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|Beta|Added new entities:<br/>[androidDeviceComplianceLocalActionLockDeviceWithPasscode](/graph/api/resources/intune-deviceconfig-androiddevicecompliancelocalactionlockdevicewithpasscode?view=graph-rest-beta)<br/>[iosLobAppProvisioningConfigurationAssignment](/graph/api/resources/intune-apps-ioslobappprovisioningconfigurationassignment?view=graph-rest-beta)<br/>[iosVppEBookAssignment](/graph/api/resources/intune-books-iosvppebookassignment?view=graph-rest-beta)<br/>[managedDeviceMobileAppConfigurationAssignment](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationassignment?view=graph-rest-beta)<br/>[managedEBookAssignment](/graph/api/resources/intune-books-managedebookassignment?view=graph-rest-beta)<br/>[managedMobileApp](/graph/api/resources/intune-mam-managedmobileapp?view=graph-rest-beta)<br/>[mobileAppAssignment](/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-beta)<br/>[termsAndConditionsAssignment](/graph/api/resources/intune-companyterms-termsandconditionsassignment?view=graph-rest-beta)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta)<br/>[windows10PFXImportCertificateProfile](/graph/api/resources/intune-deviceconfig-windows10pfximportcertificateprofile?view=graph-rest-beta)<br/>[windowsAssignedAccessProfile](/graph/api/resources/intune-deviceconfig-windowsassignedaccessprofile?view=graph-rest-beta)<br/>[windowsDomainJoinConfiguration](/graph/api/resources/intune-deviceconfig-windowsdomainjoinconfiguration?view=graph-rest-beta)<br/>|
@@ -3674,13 +3709,13 @@ Debut of the places API which provides rich details for locations in apps.
 |Change|Beta|Changed the type of the following properties on the [deviceConfigurationSettingState](/graph/api/resources/intune-deviceconfig-deviceconfigurationsettingstate?view=graph-rest-beta) complex type:<br/>**errorCode** from Int32 to Int64<br/>|
 |Change|Beta|Changed the type of the following properties on the [windowsNetworkIsolationPolicy](/graph/api/resources/intune-deviceconfig-windowsnetworkisolationpolicy?view=graph-rest-beta) complex type:<br/>**enterpriseCloudResources** from [windowsNetworkIsolationCloudResourceCollection](/graph/api/resources/intune-deviceconfig-windowsnetworkisolationcloudresourcecollection?view=graph-rest-beta) to [proxiedDomain](/graph/api/resources/intune-deviceconfig-proxieddomain?view=graph-rest-beta) collection<br/>**enterpriseInternalProxyServers** from windowsNetworkIsolationResourceCollection to String collection<br/>**enterpriseIPRanges** from windowsNetworkIsolationIPRangeCollection to [ipRange](/graph/api/resources/intune-deviceconfig-iprange?view=graph-rest-beta) collection<br/>**enterpriseNetworkDomainNames** from windowsNetworkIsolationResourceCollection to String collection<br/>**enterpriseProxyServers** from windowsNetworkIsolationResourceCollection to String collection<br/>**neutralDomainResources** from windowsNetworkIsolationResourceCollection to String collection<br/>|
 
-### Identity and access (Azure AD)
+### Identity and access
 
 | Change type | Version | Description                              |
 | :---------- | :------ | :--------------------------------------- |
 |Addition|Beta|Added the [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-beta) entity and the [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta), [list](/graph/api/identityprovider-list?view=graph-rest-beta), [get](/graph/api/identityprovider-get?view=graph-rest-beta), [update](/graph/api/identityprovider-update?view=graph-rest-beta), and [delete](/graph/api/identityprovider-delete?view=graph-rest-beta) operations.|
 
-### Mail (Outlook)
+### Mail
 
 | Change type | Version | Description                              |
 | :---------- | :------ | :--------------------------------------- |
@@ -3708,14 +3743,14 @@ Debut of the places API which provides rich details for locations in apps.
 | Change      | Beta    | Added the [getYammerDeviceUsageUserDetail](/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-beta), [getYammerDeviceUsageDistributionUserCounts](/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-beta), and [getYammerDeviceUsageUserCounts](/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-beta) APIs. These replaced the YammerDeviceUsage API. |
 | Change      | Beta    | Added the [getYammerGroupsActivityDetail](/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-beta), [getYammerGroupsActivityGroupCounts](/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-beta), and [getYammerGroupsActivityCounts](/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta) APIs. These replaced the YammerGroupsActivity API. |
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|Beta|Added new [team](/graph/api/resources/team?view=graph-rest-beta) entity.|
 |Addition|Beta|Added [create](/graph/api/team-put-teams?view=graph-rest-beta), [get](/graph/api/team-get?view=graph-rest-beta), and [update](/graph/api/team-update?view=graph-rest-beta) operations on [team](/graph/api/resources/team?view=graph-rest-beta) entity.|
 
-### Users | Outlook settings
+### Users
 
 | Change type | Version | Description                              |
 | :---------- | :------ | :--------------------------------------- |
@@ -3725,7 +3760,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## September 2017
 
-### Calendar (Outlook)
+### Calendar
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -3735,7 +3770,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta          | Added the **uniqueId** and **uniqueIdType** properties to the [location](/graph/api/resources/location?view=graph-rest-beta) complex type. These properties are only for internal use at this point. |
 | Change          | v1.0 and beta | This behavior enhancement is about getting a shared calendar or its event contents, when a user has shared a calendar with the signed-in user, or has delegated the user's mailbox to the signed-in user. In such situations, an app can specify that user's ID or user principal name to [get that shared calendar](/graph/api/calendar-get?view=graph-rest-1.0), or [get the events in that shared calendar](/graph/api/user-list-events?view=graph-rest-1.0), as long as the signed-in user has provided delegated permissions to the app. |
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Corporate management
 
 | Change type | Version | Description                              |
 | :---------- | :------ | :--------------------------------------- |
@@ -3777,7 +3812,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Change      | Beta    | Added the **assignments** navigation property to the [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-beta) entity |
 | Change      | Beta    | Added the **assignments** navigation property to the [windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-beta) entity |
 
-### Files (OneDrive for Business)
+### Files
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3912,7 +3947,7 @@ Debut of the places API which provides rich details for locations in apps.
 [TextColumn]: /graph/api/resources/textcolumn?view=graph-rest-1.0
 
 
-### Users | Outlook settings
+### Users
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3966,7 +4001,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | v1.0 and Beta | Added the [onenote](/graph/api/resources/onenote?view=graph-rest-1.0) navigation property to **site**. |
 | Addition        | Beta          | Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](/graph/api/notebook-copynotebook?view=graph-rest-1.0). |
 
-### Social and workplace intelligence | People
+### People and workplace intelligence | People
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4013,7 +4048,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Change           | Beta    | Added the **settingName**, **userId**, **userName**, **userEmail** and **currentValue** properties to the [deviceConfigurationSettingState](/graph/api/resources/intune-deviceconfig-deviceconfigurationsettingstate?view=graph-rest-beta) complex type |
 | Change           | Beta    | Added the **unknownCount** property to the [deviceOperatingSystemSummary](/graph/api/resources/intune-devices-deviceoperatingsystemsummary?view=graph-rest-beta) complex type |
 
-### Identity and access | Group setting
+### Groups
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4090,7 +4125,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## May 2017
 
-### Identity and access | Application
+### Application
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4108,7 +4143,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta        | Added support for Project Rome, including [getting a list of devices](/graph/api/user-list-devices?view=graph-rest-beta), [sending a command to a device](/graph/api/send-device-command?view=graph-rest-beta), and [checking the status of a command](/graph/api/get-device-command-status?view=graph-rest-beta). |
 | Addition        | Beta        | Added support for user [activities](/graph/api/resources/projectrome-activity?view=graph-rest-beta) and [historyItems](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta), including [upserting an activity](/graph/api/projectrome-put-activity?view=graph-rest-beta) and [upserting a historyItem](/graph/api/projectrome-put-historyitem?view=graph-rest-beta). |
 
-### Identity and access | Administrative unit
+### Identity and access | Directory Management
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4181,7 +4216,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Change | Beta | Added the **configuratorUrl** and **webHtml** properties to **sharingLink**. <br/> Added the **folderView** resource type and the **view** property to the **folder** resource type. <br/> Added the **listItem** navigation property to **driveItem**. <br/> Added the **list** navigation property to **drive**.
 
 
-### Open extensions
+### Extensions | Open extensions
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -4191,7 +4226,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta          | Support for `$expand` to [get open extensions](/graph/api/opentypeextension-get?view=graph-rest-1.0) in [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta). |
 
 
-### Schema extensions
+### Extensions | Schema extensions
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -4208,7 +4243,7 @@ Debut of the places API which provides rich details for locations in apps.
 |:--------------|:----------|:--------------|
 | Addition | v1.0 and beta | Added the **drives** and **sites** navigation properties to **group**.
 
-### Social and workplace intelligence | Insights
+### People and workplace intelligence | Insights
 
 |**Change type**|**Version**|**Description**|
 |:-------------|:-----------|:--------------|
@@ -4328,7 +4363,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## April 2017
 
-### Identity and access | Administrative unit
+### Identity and access | Directory Management
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4513,14 +4548,14 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta        | New resource:</br>[contract](/graph/api/resources/contract?view=graph-rest-beta) |
 | Addition        | Beta        | Added functions on [domains](/graph/api/resources/domain?view=graph-rest-beta).<br/>New entities:</br>[domain](/graph/api/resources/domain?view=graph-rest-beta)<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-beta)<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-beta)<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-beta)<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-beta)<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-beta)<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-beta)<br/>New actions:</br>[forceDelete](/graph/api/domain-forcedelete?view=graph-rest-beta)</br>[verify](/graph/api/domain-verify?view=graph-rest-beta) |
 
-### Schema extensions
+### Extensions | Schema extensions
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Extend Microsoft Graph with application data by using [schema extensions](extensibility-overview.md#schema-extensions).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](extensibility-schema-groups.md) |
 | Addition        | Beta        | Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](extensibility-overview.md#schema-extensions) for details. |
 
-### Open extensions
+### Extensions | Open extensions
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -4652,7 +4687,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | v1.0 and beta | The v2.0 auth endpoint now supports [permission scopes that require administrator's consent](permissions-reference.md), via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
 | Addition        | v1.0 and beta | The v2.0 auth endpoint now supports administrative consent for all users in a tenant, via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
 
-### Identity and access | Invitation manager
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4661,7 +4696,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## September 2016
 
-### Identity and access | Application
+### Applications
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4703,13 +4738,13 @@ Added support for dynamic group membership through the public preview API, inclu
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Apps can use v1.0 Outlook Mail, Calendar, and Contacts APIs to access on-premises mailboxes in a hybrid deployment with Exchange 2016 Cumulative Update 3 (CU3). Find more details about REST API support in specific [hybrid deployments](hybrid-rest-support.md). **Note:** If you're using these sets of API in v1.0, you can now find your apps, including production apps, working for on-premises mailboxes that meet the specific hybrid deployment requirements. This capability is only in preview. |
 
-### Identity and access | Identity protection
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Change          | Beta        | As part of the schema change where the type of two location properties is being replaced by a new complex type in the identityRiskEvents endpoint, the following properties are changed/added in the identityRiskEvents endpoint:</br>**location**  changed from Edm.String to ComplexType signInLocation.<br/>**previousLocation** changed from Edm.String to ComplexType signInLocation.<br/>**signInLocation** new ComplexType that contains city, state, countryOrRegion and geoCoordinates properties.<br/>**geoCoordinates** new ComplexType that contains latitude and longitude properties. |
 
-### Identity and access | Invitation manager
+### Identity and access | Identity and sign-in
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4768,11 +4803,6 @@ Added support for dynamic group membership through the public preview API, inclu
 | Addition        | Beta        | Added **refreshTokensValidFromDateTime** read-only property to indicate when refresh or session tokens are valid from. Any tokens issued before this time are invalid, and any attempt to use them would force a new sign-in for the user. |
 | Addition        | Beta        | Added **showInAddressList** property to control if the Outlook global address list should contain this user. |
 | Addition        | Beta        | Added **invalidateAllRefreshTokens** service action that invalidates all of the user's refresh and session tokens issued to applications, by resetting the **refreshTokensValidFromDateTime** user property to the current date-time. |
-
-### Users | Outlook settings
-
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added the [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) complex type, which includes the **automaticRepliesSetting**, **timeZone**, and **language** properties. |
 | Addition        | v1.0        | Added the **mailboxSettings** property to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
 
@@ -4792,13 +4822,13 @@ Added support for dynamic group membership through the public preview API, inclu
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Excel REST API on Microsoft Graph is generally available. Now you can build rich and deep integrations with Excel workbooks in Microsoft 365. See the [Power your apps with the new Excel REST API on the Microsoft Graph](https://developer.microsoft.com/office/blogs/power-your-apps-with-the-new-excel-rest-api/) blog post for more details. |
 
-### Social and workplace intelligence | People
+### People and workplace intelligence | People
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Change          | Beta        | Property _WebSite_ is renamed to _Websites_. For details, see [Upcoming changes to Contacts and People APIs](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/). |
 
-### Identity and access | Privileged Identity Management
+### Identity and access | Governance
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4806,7 +4836,7 @@ Added support for dynamic group membership through the public preview API, inclu
 
 ## July 2016
 
-### Identity and access | Administrative unit
+### Identity and access | Directory Management
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4814,7 +4844,7 @@ Added support for dynamic group membership through the public preview API, inclu
 
 ## June 2016
 
-### Identity and access | Identity protection
+### Identity and access | Identity and sign-in
 
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:--------------|
@@ -4840,7 +4870,7 @@ Added support for dynamic group membership through the public preview API, inclu
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added _extensions_, which is abstract type to support the OData v4 open type openTypeExtension. |
 
-### Identity and access | Directory setting
+### Identity and access | Directory management
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4968,7 +4998,7 @@ Added support for dynamic group membership through the public preview API, inclu
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0 and beta | Added _sharingInvitation_ property to provide details of any associated sharing invitation for this permission. |
 
-### Social and workplace intelligence | People
+### People and workplace intelligence | People
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |

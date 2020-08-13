@@ -1,14 +1,14 @@
 ---
 title: "Set up change notifications that include resource data (preview)"
 description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Change notifications can include resource properties."
-author: "baywet"
+author: "davidmu1"
 ms.prod: "non-product-specific"
 localization_priority: Priority
 ---
 
 # Set up change notifications that include resource data (preview)
 
-Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message) in change notifications. Your app can then run its business logic without having to make a separate API call to fetch the changed resource. As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.
+Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Your app can then run its business logic without having to make a separate API call to fetch the changed resource. As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.
 
 Including resource data as part of change notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
@@ -27,12 +27,13 @@ In general, this type of change notifications include the following resource dat
 
 ## Supported resources
 
-Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (preview) resource supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
+Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (preview) as well as the Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta) (preview) resources supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
 
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
 - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
+- User's presence information update: `/communications/presences/{id}`
 
-The **chatMessage** resource supports including all the properties of a changed instance in a change notification. It does not support returning only selective properties of the instance. 
+The **chatMessage** and the **presence** resources support including all the properties of a changed instance in a change notification. They do not support returning only selective properties of the instance. 
 
 This article walks through an example of subscribing to change notifications of messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance.
 

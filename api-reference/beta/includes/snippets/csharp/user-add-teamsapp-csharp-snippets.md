@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var teamsAppInstallation = new TeamsAppInstallation
+var userScopeTeamsAppInstallation = new UserScopeTeamsAppInstallation
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
@@ -16,6 +16,6 @@ var teamsAppInstallation = new TeamsAppInstallation
 
 await graphClient.Users["{id}"].Teamwork.InstalledApps
 	.Request()
-	.AddAsync(teamsAppInstallation);
+	.AddAsync(userScopeTeamsAppInstallation);
 
 ```

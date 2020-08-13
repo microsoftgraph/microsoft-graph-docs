@@ -3,7 +3,25 @@
     {
       "ChangeList": [
         {
-          "Id": "4b7b500b-869e-4ea1-b1d6-65c9eea9c365",
+          "Id": "ee27c4ef-e19e-40d7-be77-24bb6141f0f9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.store,termStore.term,termStore.set,termStore.relation",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API, including the [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-beta), [termStore.term](https://docs.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-beta), [termStore.set](https://docs.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-beta), and [termStore.relation](https://docs.microsoft.com/en-us/graph/api/resources/termstore-relation?view=graph-rest-beta) resources and associated methods.",
+          "Target": "termStore.store,termStore.term,termStore.set,termStore.relation"
+        }
+      ],
+      "Id": "ee27c4ef-e19e-40d7-be77-24bb6141f0f9",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-07-01T00:00:00",
+      "WorkloadArea": "Sites and lists ",
+      "SubArea": " Taxonomy"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "555e2002-7ad3-4796-bb70-6ed09d1ea9c7",
           "ApiChange": "Resource",
           "ChangedApiName": "geolocationColumn",
           "ChangeType": "Addition",
@@ -11,7 +29,7 @@
           "Target": "geolocationColumn,columnDefinition"
         }
       ],
-      "Id": "4b7b500b-869e-4ea1-b1d6-65c9eea9c365",
+      "Id": "555e2002-7ad3-4796-bb70-6ed09d1ea9c7",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -21,7 +39,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d4ddd5f9-25f5-42ed-a4cd-d55e51f91eb4",
+          "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
           "ApiChange": "Property",
           "ChangedApiName": "followedSites",
           "ChangeType": "Addition",
@@ -29,7 +47,7 @@
           "Target": "user,list the sites followed by the signed-in user"
         }
       ],
-      "Id": "d4ddd5f9-25f5-42ed-a4cd-d55e51f91eb4",
+      "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
@@ -39,7 +57,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d4ddd5f9-25f5-42ed-a4cd-d55e51f91eb4",
+          "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
           "ApiChange": "Property",
           "ChangedApiName": "followedSites",
           "ChangeType": "Addition",
@@ -47,7 +65,7 @@
           "Target": "user,list the sites followed by the signed-in user"
         },
         {
-          "Id": "d4ddd5f9-25f5-42ed-a4cd-d55e51f91eb4",
+          "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
           "ApiChange": "Property",
           "ChangedApiName": "dataLocatonCode",
           "ChangeType": "Addition",
@@ -55,7 +73,7 @@
           "Target": "siteCollection"
         },
         {
-          "Id": "d4ddd5f9-25f5-42ed-a4cd-d55e51f91eb4",
+          "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
           "ApiChange": "Property",
           "ChangedApiName": "tenantId",
           "ChangeType": "Addition",
@@ -63,7 +81,7 @@
           "Target": "sharepointIds"
         }
       ],
-      "Id": "d4ddd5f9-25f5-42ed-a4cd-d55e51f91eb4",
+      "Id": "69dc54ba-6702-4e5c-acc9-3666fc0ec19f",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-04-01T00:00:00",
@@ -73,7 +91,7 @@
     {
       "ChangeList": [
         {
-          "Id": "4ff3eaed-fe5a-45f2-b46c-a7e9d43ebd7c",
+          "Id": "adff8f97-3d1f-4fcf-abf5-946824a82f40",
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
@@ -81,7 +99,7 @@
           "Target": "followSite,user"
         },
         {
-          "Id": "4ff3eaed-fe5a-45f2-b46c-a7e9d43ebd7c",
+          "Id": "adff8f97-3d1f-4fcf-abf5-946824a82f40",
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
@@ -89,7 +107,7 @@
           "Target": "unfollowSite,user"
         },
         {
-          "Id": "4ff3eaed-fe5a-45f2-b46c-a7e9d43ebd7c",
+          "Id": "adff8f97-3d1f-4fcf-abf5-946824a82f40",
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
@@ -97,17 +115,17 @@
           "Target": "list"
         }
       ],
-      "Id": "4ff3eaed-fe5a-45f2-b46c-a7e9d43ebd7c",
+      "Id": "adff8f97-3d1f-4fcf-abf5-946824a82f40",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
-      "WorkloadArea": "Sites",
+      "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "0ae4d2cd-ff8f-4dff-ba5d-5b1bdd3444e1",
+          "Id": "e892845a-c4e5-4035-a4b2-92574117856e",
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
@@ -115,17 +133,17 @@
           "Target": "list"
         }
       ],
-      "Id": "0ae4d2cd-ff8f-4dff-ba5d-5b1bdd3444e1",
+      "Id": "e892845a-c4e5-4035-a4b2-92574117856e",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
-      "WorkloadArea": "Sites (SharePoint)",
+      "WorkloadArea": "Sites",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "ab1b5376-1fb6-4fa0-8bc8-38f2c963c967",
+          "Id": "560ae293-c419-4a10-9299-c29926935364",
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
@@ -133,7 +151,7 @@
           "Target": "followSite,user"
         },
         {
-          "Id": "ab1b5376-1fb6-4fa0-8bc8-38f2c963c967",
+          "Id": "560ae293-c419-4a10-9299-c29926935364",
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
@@ -141,17 +159,131 @@
           "Target": "unfollowSite,user"
         }
       ],
-      "Id": "ab1b5376-1fb6-4fa0-8bc8-38f2c963c967",
+      "Id": "560ae293-c419-4a10-9299-c29926935364",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
-      "WorkloadArea": "Sites and lists (SharePoint)",
+      "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "146896ab-2947-4da5-afe3-e3375c0ef8ad",
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Property",
+          "ChangedApiName": "analytics",
+          "ChangeType": "Addition",
+          "Description": "Added the **analytics** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Property",
+          "ChangedApiName": "analytics",
+          "ChangeType": "Addition",
+          "Description": "Added the **analytics** property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity.",
+          "Target": "site"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Property",
+          "ChangedApiName": "analytics",
+          "ChangeType": "Addition",
+          "Description": "Added the **analytics** property to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity.",
+          "Target": "listItem"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "getActivitiesByInterval",
+          "ChangeType": "Addition",
+          "Description": "Added the **getActivitiesByInterval** function on the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) entity.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "getActivitiesByInterval",
+          "ChangeType": "Addition",
+          "Description": "Added the **getActivitiesByInterval** function on the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) entity.",
+          "Target": "site"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "getActivitiesByInterval",
+          "ChangeType": "Addition",
+          "Description": "Added the **getActivitiesByInterval** function on the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) entity.",
+          "Target": "listItem"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemAnalytics",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemAnalytics](https://docs.microsoft.com/en-us/graph/api/resources/itemanalytics?view=graph-rest-beta) entity.",
+          "Target": "itemAnalytics"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemActivityStat",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemActivityStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) entity.",
+          "Target": "itemActivityStat"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemActionStat",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemActionStat](https://docs.microsoft.com/en-us/graph/api/resources/itemactionstat?view=graph-rest-beta) complex type.",
+          "Target": "itemActionStat"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessAction](https://docs.microsoft.com/en-us/graph/api/resources/accessaction?view=graph-rest-beta) complex type.",
+          "Target": "accessAction"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "incompleteData",
+          "ChangeType": "Addition",
+          "Description": "Added the [incompleteData](https://docs.microsoft.com/en-us/graph/api/resources/incompletedata?view=graph-rest-beta) complex type.",
+          "Target": "incompleteData"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Property",
+          "ChangedApiName": "access",
+          "ChangeType": "Addition",
+          "Description": "Added the **access** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
+          "Target": "itemActivity"
+        },
+        {
+          "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+          "ApiChange": "Property",
+          "ChangedApiName": "location",
+          "ChangeType": "Addition",
+          "Description": "Added the **location** property to the [itemActivity](https://docs.microsoft.com/en-us/graph/api/resources/itemactivity?view=graph-rest-beta) complex type.",
+          "Target": "itemActivity"
+        }
+      ],
+      "Id": "32cd0d9e-d1c9-4df9-ad0c-a19d576ab1a8",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-04-01T00:00:00",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9d6765f8-cee7-4668-89bb-7fed34cfa98d",
           "ApiChange": "Resource",
           "ChangedApiName": "site",
           "ChangeType": "Change",
@@ -159,7 +291,7 @@
           "Target": ""
         }
       ],
-      "Id": "146896ab-2947-4da5-afe3-e3375c0ef8ad",
+      "Id": "9d6765f8-cee7-4668-89bb-7fed34cfa98d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -169,7 +301,7 @@
     {
       "ChangeList": [
         {
-          "Id": "146896ab-2947-4da5-afe3-e3375c0ef8ad",
+          "Id": "9d6765f8-cee7-4668-89bb-7fed34cfa98d",
           "ApiChange": "Resource",
           "ChangedApiName": "site,siteCollection",
           "ChangeType": "Addition",
@@ -177,7 +309,7 @@
           "Target": ""
         }
       ],
-      "Id": "146896ab-2947-4da5-afe3-e3375c0ef8ad",
+      "Id": "9d6765f8-cee7-4668-89bb-7fed34cfa98d",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -187,7 +319,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5a03b5b3-5fcd-419d-83ef-6eb79c644cf4",
+          "Id": "dea685cf-638a-4be1-99e5-a8e5e5f3300f",
           "ApiChange": "Property",
           "ChangedApiName": "sharepoint,sites,fieldDefinition,columnDefinition,siteCollectionId,siteId,site,sharepointIds,listItemId,listItem,sharepointIds,columnSet,listItem,fields,site",
           "ChangeType": "Change",
@@ -195,7 +327,7 @@
           "Target": ""
         },
         {
-          "Id": "5a03b5b3-5fcd-419d-83ef-6eb79c644cf4",
+          "Id": "dea685cf-638a-4be1-99e5-a8e5e5f3300f",
           "ApiChange": "Property",
           "ChangedApiName": "booleanColumn,calculatedColumn,choiceColumn,dateTimeColumn,lookupColumn,numberColumn,personOrGroupColumn,textColumn,displayName,site,columns,site,list,listItem,sharedDriveItem,sharepointIds,list,listItem,site,columnDefinition",
           "ChangeType": "Addition",
@@ -203,7 +335,7 @@
           "Target": ""
         }
       ],
-      "Id": "5a03b5b3-5fcd-419d-83ef-6eb79c644cf4",
+      "Id": "dea685cf-638a-4be1-99e5-a8e5e5f3300f",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -213,7 +345,7 @@
     {
       "ChangeList": [
         {
-          "Id": "7f3a3fcd-5494-4ec0-bac9-18bd911168c7",
+          "Id": "6c3b3f4c-1902-48e6-b8cb-c62cb7358f8d",
           "ApiChange": "Resource",
           "ChangedApiName": "lists by ID,path/URL",
           "ChangeType": "Addition",
@@ -221,7 +353,7 @@
           "Target": "lists by ID,path/URL"
         },
         {
-          "Id": "7f3a3fcd-5494-4ec0-bac9-18bd911168c7",
+          "Id": "6c3b3f4c-1902-48e6-b8cb-c62cb7358f8d",
           "ApiChange": "Resource",
           "ChangedApiName": "listing, creating, getting, and deleting instances of listItem",
           "ChangeType": "Addition",
@@ -229,7 +361,7 @@
           "Target": "listing, creating, getting, and deleting instances of listItem"
         }
       ],
-      "Id": "7f3a3fcd-5494-4ec0-bac9-18bd911168c7",
+      "Id": "6c3b3f4c-1902-48e6-b8cb-c62cb7358f8d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00",

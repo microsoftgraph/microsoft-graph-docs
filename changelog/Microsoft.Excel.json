@@ -3,25 +3,25 @@
     {
       "ChangeList": [
         {
-          "Id": "9860c241-a229-48c0-8b10-a28996e4632f",
+          "Id": "bba36a0a-f4c7-4e3a-a1cc-3510c632b7e2",
           "ApiChange": "Resource",
-          "ChangedApiName": "workbookOperation,Workbook",
+          "ChangedApiName": "workbookOperation,workbook",
           "ChangeType": "Addition",
-          "Description": "Added the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation?view=graph-rest-beta) relationship to the [Workbook](https://docs.microsoft.com/en-us/graph/api/resources/workbook?view=graph-rest-beta) entity.",
-          "Target": "workbookOperation,Workbook"
+          "Description": "Added the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation) relationship to the [workbook](https://docs.microsoft.com/en-us/graph/api/resources/workbook?view=graph-rest-beta) entity.",
+          "Target": "workbookOperation,workbook"
         },
         {
-          "Id": "9860c241-a229-48c0-8b10-a28996e4632f",
+          "Id": "bba36a0a-f4c7-4e3a-a1cc-3510c632b7e2",
           "ApiChange": "Resource",
           "ChangedApiName": "Get workbookOperation,workbookOperation",
           "ChangeType": "Addition",
-          "Description": "Added the  [Get workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation-get?view=graph-rest-beta) method to the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation?view=graph-rest-beta) entity.",
+          "Description": "Added the  [Get workbookOperation](https://docs.microsoft.com/en-us/graph/api/workbookoperation-get) method to the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation?view=graph-rest-beta) entity",
           "Target": "Get workbookOperation,workbookOperation"
         }
       ],
-      "Id": "9860c241-a229-48c0-8b10-a28996e4632f",
+      "Id": "bba36a0a-f4c7-4e3a-a1cc-3510c632b7e2",
       "Cloud": "prd",
-      "Version": "beta",
+      "Version": "v1.0",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Workbooks and charts",
       "SubArea": ""
@@ -29,7 +29,7 @@
     {
       "ChangeList": [
         {
-          "Id": "12b0a61a-f165-4ca6-b9cb-ceb0d94a55b8",
+          "Id": "ff98067a-4513-431a-a3a2-0e269d9e1e81",
           "ApiChange": "Property",
           "ChangedApiName": "legacyId,id,legacyId",
           "ChangeType": "Change",
@@ -37,17 +37,17 @@
           "Target": "Excel Table"
         }
       ],
-      "Id": "12b0a61a-f165-4ca6-b9cb-ceb0d94a55b8",
+      "Id": "ff98067a-4513-431a-a3a2-0e269d9e1e81",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-03-01T00:00:00",
-      "WorkloadArea": "Workbooks and charts (Excel)",
+      "WorkloadArea": "Workbooks and charts",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "b67d025f-a6ef-4e77-be68-c7d750666d1b",
+          "Id": "51b8b0d9-199f-4008-9da2-333fddf557bd",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -55,7 +55,7 @@
           "Target": ""
         }
       ],
-      "Id": "b67d025f-a6ef-4e77-be68-c7d750666d1b",
+      "Id": "51b8b0d9-199f-4008-9da2-333fddf557bd",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-12-01T00:00:00",
@@ -65,7 +65,7 @@
     {
       "ChangeList": [
         {
-          "Id": "3d9cf193-6584-4c42-ae8b-5145ac687240",
+          "Id": "dc8b9322-da66-4be6-bd0e-84be19ef99e8",
           "ApiChange": "Resource",
           "ChangedApiName": "Power your apps with the new Excel REST API on the Microsoft Graph",
           "ChangeType": "Addition",
@@ -73,7 +73,7 @@
           "Target": "Power your apps with the new Excel REST API on the Microsoft Graph"
         }
       ],
-      "Id": "3d9cf193-6584-4c42-ae8b-5145ac687240",
+      "Id": "dc8b9322-da66-4be6-bd0e-84be19ef99e8",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-08-01T00:00:00",
@@ -83,7 +83,7 @@
     {
       "ChangeList": [
         {
-          "Id": "016e5a27-fbd8-469c-bb62-e6c6cb4a844c",
+          "Id": "3c983c25-6600-4cb7-8471-6edf634911d3",
           "ApiChange": "Resource",
           "ChangedApiName": "Working with Excel in Microsoft Graph",
           "ChangeType": "Addition",
@@ -91,7 +91,7 @@
           "Target": "Working with Excel in Microsoft Graph"
         }
       ],
-      "Id": "016e5a27-fbd8-469c-bb62-e6c6cb4a844c",
+      "Id": "3c983c25-6600-4cb7-8471-6edf634911d3",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-03-01T00:00:00",

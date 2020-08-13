@@ -3,8 +3,8 @@ title: "agreementFile resource type"
 description: "Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file)."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: raprakasMSFT
 ---
 
 # agreementFile resource type
@@ -34,9 +34,13 @@ Represents a customizable terms of use agreement file that a tenant manages with
 |isDefault|Boolean|Indicates whether this is the default agreement file if none of the cultures matches the client preference. If none of the files are marked as default, the first one will be treated as the default. Read-only.|
 |language|String|Culture of the agreement file in the format languagecode2-country/regioncode2. languagecode2 is a lowercase two-letter code derived from ISO 639-1. country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US). Read-only.|
 
-## Relationships
-None.
 
+<!--
+## Relationships
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized version of the agreement files attached to the agreement.|
+-->
 
 ## JSON representation
 

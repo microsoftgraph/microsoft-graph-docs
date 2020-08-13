@@ -44,6 +44,8 @@ items:
         href: /graph/webhooks-outlook-authz?context=graph/api/beta
       - name: Notifications with resource data (preview)
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
+      - name: Get notifications delivered different ways (preview)
+        href: /graph/change-notifications-delivery?context=graph/api/beta
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
@@ -1321,24 +1323,6 @@ items:
             href: api/audioroutinggroup-delete.md
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
-      - name: Online meeting
-        href: resources/onlinemeeting.md
-        items:
-        - name: Create
-          href: api/application-post-onlinemeetings.md
-        - name: Get
-          href: api/onlinemeeting-get.md         
-        - name: Delete
-          href: api/onlinemeeting-delete.md
-        - name: Create or get
-          href: api/onlinemeeting-createorget.md
-      - name: Presence
-        href: resources/presence.md
-        items:
-        - name: Get presence
-          href: api/presence-get.md
-        - name: Get presence for multiple users
-          href: api/cloudcommunications-getpresencesbyuserid.md
       - name: Call records
         items:
         - name: Overview
@@ -1367,6 +1351,70 @@ items:
             href: resources/callrecords-directroutinglogrow.md
           - name: List direct routing calls
             href: api/callrecords-callrecord-getdirectroutingcalls.md
+      - name: Online meeting
+        href: resources/onlinemeeting.md
+        items:
+        - name: Create
+          href: api/application-post-onlinemeetings.md
+        - name: Get
+          href: api/onlinemeeting-get.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
+        - name: Update
+          href: api/onlinemeeting-update.md
+        - name: Delete
+          href: api/onlinemeeting-delete.md
+      - name: Presence (preview)
+        href: resources/presence.md
+        items:
+        - name: Get presence
+          href: api/presence-get.md
+        - name: Get presence for multiple users
+          href: api/cloudcommunications-getpresencesbyuserid.md
+    - name: Compliance (preview)
+      displayName: Compliance API, Microsoft Graph Compliance API
+      items:
+      - name: Overview
+        href: resources/complianceapioverview.md
+      - name: eDiscovery
+        items:
+        - name: Overview
+          href: resources/eDiscoveryapioverview.md
+        - name: eDiscovery case
+          href: resources/ediscoverycase.md
+          items:
+          - name: List
+            href: api/ediscoverycase-list.md
+          - name: Create
+            href: api/ediscoverycase-post.md
+          - name: Get
+            href: api/ediscoverycase-get.md
+          - name: Update
+            href: api/ediscoverycase-update.md
+          - name: Delete
+            href: api/ediscoverycase-delete.md
+        - name: eDiscovery Review set
+          href: resources/reviewset.md
+          items:
+          - name: List
+            href: api/reviewset-list.md
+          - name: Create
+            href: api/reviewset-post.md
+          - name: Get
+            href: api/reviewset-get.md
+        - name: Review set query
+          href: resources/reviewsetquery.md
+          items:
+          - name: List
+            href: api/reviewsetquery-list.md
+          - name: Create
+            href: api/reviewsetquery-post.md
+          - name: Get
+            href: api/reviewsetquery-get.md
+          - name: Update
+            href: api/reviewsetquery-update.md
+          - name: Delete
+            href: api/reviewsetquery-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -9668,7 +9716,7 @@ items:
               href: api/passwordauthenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
-            - name: Phone
+          - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
             - name: List
@@ -11062,6 +11110,15 @@ items:
             href: api/reportroot-getoffice365activeusercounts.md
           - name: Get services user counts
             href: api/reportroot-getoffice365servicesusercounts.md
+        - name: Microsoft 365 Apps usage
+          href: resources/microsoft-365-apps-usage-report.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getm365appuserdetail.md
+          - name: Get user counts
+            href: api/reportroot-getm365appusercounts.md
+          - name: Get platform user counts
+            href: api/reportroot-getm365appplatformusercounts.md
         - name: Microsoft 365 groups activity
           href: resources/office-365-groups-activity-reports.md
           items:
@@ -11244,50 +11301,6 @@ items:
             href: api/externalitem-update.md
           - name: Delete
             href: api/externalitem-delete.md
-    - name: Compliance
-      displayName: Compliance API, Microsoft Graph Compliance API
-      items:
-      - name: Overview
-        href: resources/complianceapioverview.md
-      - name: eDiscovery
-        items:
-        - name: Overview
-          href: resources/eDiscoveryapioverview.md
-        - name: eDiscovery case
-          href: resources/ediscoverycase.md
-          items:
-          - name: List
-            href: api/ediscoverycase-list.md
-          - name: Create
-            href: api/ediscoverycase-post.md
-          - name: Get
-            href: api/ediscoverycase-get.md
-          - name: Update
-            href: api/ediscoverycase-update.md
-          - name: Delete
-            href: api/ediscoverycase-delete.md
-        - name: eDiscovery Review set
-          href: resources/reviewset.md
-          items:
-          - name: List
-            href: api/reviewset-list.md
-          - name: Create
-            href: api/reviewset-post.md
-          - name: Get
-            href: api/reviewset-get.md
-        - name: Review set query
-          href: resources/reviewsetquery.md
-          items:
-          - name: List
-            href: api/reviewsetquery-list.md
-          - name: Create
-            href: api/reviewsetquery-post.md
-          - name: Get
-            href: api/reviewsetquery-get.md
-          - name: Update
-            href: api/reviewsetquery-update.md
-          - name: Delete
-            href: api/reviewsetquery-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
@@ -11450,6 +11463,62 @@ items:
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
+      - name: Taxonomy (preview)
+        displayname: Taxonomy API
+        items:
+        - name: Store
+          href: resources/termstore-store.md
+          items:
+          - name: Get
+            href: api/termstore-store-get.md        
+          - name: Update
+            href: api/termstore-store-update.md
+        - name: Group        
+          href: resources/termstore-group.md
+          items:        
+          - name: Create
+            href: api/termstore-group-post.md
+          - name: Get 
+            href: api/termstore-store-get-group.md          
+          - name: Delete
+            href: api/termstore-group-delete.md   
+          - name: List  
+            href: api/termstore-list-groups.md
+        - name: Set
+          href: resources/termstore-set.md
+          items:
+          - name: List 
+            href: api/termstore-group-list-sets.md
+          - name: List children
+            href: api/termstore-term-list-children.md
+          - name: Create 
+            href: api/termstore-set-post.md  
+          - name: Get 
+            href: api/termstore-set-get.md
+          - name: Update 
+            href: api/termstore-set-update.md
+          - name: Delete 
+            href: api/termstore-set-delete.md                  
+        - name: Term
+          href: resources/termstore-term.md
+          items:
+          - name: List children
+            href: api/termstore-term-list-children.md  
+          - name: Create 
+            href: api/termstore-term-post.md      
+          - name: Get 
+            href: api/termstore-term-get.md
+          - name: Update
+            href: api/termstore-term-update.md
+          - name: Delete 
+            href: api/termstore-term-delete.md                     
+        - name: Relation
+          href: resources/termstore-relation.md
+          items:
+          - name: List
+            href: api/termStore-term-list-relations.md
+          - name: Create
+            href: api/termStore-relation-post.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -11661,7 +11730,7 @@ items:
         - name: Get message reply
           href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-messages.md
+          href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Add a member to a channel
@@ -11682,9 +11751,11 @@ items:
         - name: Get chat member
           href: api/conversationmember-get.md
         - name: List messages in a chat
-          href: api/chatmessage-list.md
+          href: api/chat-list-message.md
         - name: Get message in chat
-          href: api/chatmessage-get.md
+          href: api/chat-get-message.md
+        - name: Send message in chat
+          href: api/chat-post-message.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -11699,7 +11770,7 @@ items:
         - name: Get message reply
           href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-messages.md
+          href: api/chatmessage-post.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: List hosted content
@@ -12177,4 +12248,4 @@ items:
         - name: Add named item
           href: api/nameditem-add.md
         - name: List range
-          href: api/nameditem-range.md
+          href: api/nameditem-range.md      

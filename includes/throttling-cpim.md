@@ -1,5 +1,5 @@
 ---
-author: "baywet"
+author: "davidmu1"
 localization_priority: Priority
 ms.prod: "msgraph"
 ms.topic: include

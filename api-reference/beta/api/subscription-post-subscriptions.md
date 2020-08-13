@@ -2,7 +2,7 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on a Microsoft Graph resource changes."
 localization_priority: Normal
-author: "baywet"
+author: "davidmu1"
 doc_type: apiPageType
 ms.prod: ""
 ---
@@ -18,7 +18,7 @@ Subscribes a listener application to receive change notifications when the reque
 ## Permissions
 
 Creating a subscription requires read permission to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. 
- 
+
  Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
@@ -36,25 +36,29 @@ Creating a subscription requires read permission to the resource. For example, t
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-### chatMessage (Microsoft Teams)
+### chatMessage
 
-**chatMessage** subscriptions with delegated permissions do not support resource data (**includeResourceData** must be `false`), 
-and do not require [encryption](/graph/webhooks-with-resource-data).
+**chatMessage** subscriptions with delegated permissions do not support resource data (**includeResourceData** must be `false`), and do not require [encryption](/graph/webhooks-with-resource-data).
 
-**chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+**chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Note:** `/teams/allMessages` and `/chats/allMessages` are currently in preview. During the preview, you may use this API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). However, users of apps that use the API might be required to have subscriptions to specific Microsoft 365 offerings. Upon general availability, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+> **Note:** `/teams/allMessages` and `/chats/allMessages` are currently in preview,
+and you may use this API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). 
+Starting in August 2020, it will only be available to users and tenants that have the [required licenses](/graph/teams-licenses). 
+Because `/teams/allMessages` and `/chats/allMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed. 
+In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
-### driveItem (OneDrive)
+### driveItem
 
 Additional limitations apply for subscriptions on OneDrive  items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
 
 On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
 
-### contact, event, and message (Outlook)
+### contact, event, and message
 
 Additional limitations apply for subscriptions on Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
 
@@ -63,6 +67,10 @@ Additional limitations apply for subscriptions on Outlook items. The limitations
 
   - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
   - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.
+
+### presence
+
+**presence** subscriptions require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified.
 
 ## HTTP request
 
@@ -126,22 +134,24 @@ Content-type: application/json
 
 ---
 
-
 The following are valid values for the resource property.
 
 | Resource type | Examples |
 |:------ |:----- |
-|Mail|me/mailfolders('inbox')/messages<br />me/messages|
-|Contacts|me/contacts|
-|Calendars|me/events|
-|Users|users|
-|Groups|groups|
-|Conversations|groups('*{id}*')/conversations|
-|Drives|me/drive/root|
-|List|sites/{site-id}/lists/{list-id}|
-|Security alert|security/alerts?$filter=status eq ‘New’|
-|Call records|communications/callRecords|
-|[Chat message](../resources/chatmessage.md) | chats/{id}/messages, chats/allMessages, teams/{id}/channels/{id}/messages, teams/allMessages |
+|[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
+|[Contacts](../resources/contact.md)|`me/contacts`|
+|[Conversations](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[Drives](../resources/driveitem.md)|`me/drive/root`|
+|[Events](../resources/event.md)|`me/events`|
+|[Groups](../resources/group.md)|`groups`|
+|[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
+|[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ({id},{id}…)` (multiple users)|
+|[Users](../resources/user.md)|`users`|
+|[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+
+> **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
 ### Response
 
@@ -173,7 +183,7 @@ Content-length: 252
 }
 ```
 
-## Notification endpoint validation
+### Notification endpoint validation
 
 The subscription notification endpoint (specified in the **notificationUrl** property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
 

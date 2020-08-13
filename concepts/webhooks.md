@@ -1,7 +1,7 @@
 ---
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
-author: "baywet"
+author: "davidmu1"
 ms.prod: "non-product-specific"
 localization_priority: Priority
 ms.custom: graphiamtop20
@@ -45,10 +45,10 @@ You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
 
 Or to a top-level resource:
-`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`, or `/communications/presences`
+`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`
 
 Or to a specific resource instance:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`
+`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`
 
 Or to any folder in a user's personal OneDrive:
 `/drives/{id}/root`
@@ -91,11 +91,16 @@ Use:
 
 `/users/{guid-user-id}/messages`
 
-### Teams resource limitations (preview)
+### Teams resource limitations
 
-A single active subscription per channel or chat per application is allowed.
+Each Teams resource has different subscription quotas.
 
-A maximum of 10000 active subscriptions per organization on chats and channels for all applications is allowed.
+- For subscriptions to **callRecords**:
+  - Per organization: 100 total subscriptions
+
+- For subscriptions to **chatMessages** (channels or chats) (preview):
+  - Per app and channel or chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
 
 ## Subscription lifetime
 
@@ -145,6 +150,8 @@ The `resource` property specifies the resource that will be monitored for change
 Although `clientState` is not required, you must include it to comply with our recommended change notification handling process. Setting this property will allow you to confirm that change notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.
+
+> **Note:** Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered.
 
 #### Notification endpoint validation
 
@@ -270,6 +277,27 @@ The following code samples are available on GitHub.
 You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
+
+## Latency
+
+The following table lists the latency to expect between an event happening in the service and the delivery of the change notification.
+
+| Resource | Average latency | Maximum latency |
+|:-----|:-----|:-----|
+|[callRecord][] | Less than 15 minutes | 60 minutes |
+|[chatMessage][] (preview) | Less than 10 seconds | 1 minute |
+|[contact][] | Unknown | Unknown |
+|[driveItem][] | Less than 1 minute | 5 minutes |
+|[event][] | Unknown | Unknown |
+|[group][] | Less than 2 minutes | 15 minutes |
+|[conversation][] | Unknown | Unknown |
+|[list][] | Less than 1 minute | 5 minutes |
+|[message][] | Unknown | Unknown |
+|[alert][] | Less than 3 minutes | 5 minutes |
+|[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[user][] | Less than 2 minutes | 15 minutes |
+
+>**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
 ## See also
 

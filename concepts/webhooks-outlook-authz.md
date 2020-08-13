@@ -1,7 +1,7 @@
 ---
 title: "Reduce missing subscriptions and change notifications for Outlook resources (preview)"
 description: "Outlook might suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `subscriptionRemoved` and `missed` - need to be handled to ensure uninterrupted delivery of change notifications."
-author: "baywet"
+author: "davidmu1"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---

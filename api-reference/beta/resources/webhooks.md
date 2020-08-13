@@ -2,7 +2,7 @@
 title: "Use the Microsoft Graph API to get change notifications"
 description: "The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see Set up notifications for changes in user data."
 localization_priority: Normal
-author: "baywet"
+author: "davidmu1"
 doc_type: conceptualPageType
 ms.prod: ""
 ---

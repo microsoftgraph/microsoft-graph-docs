@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
-author: "baywet"
+author: "davidmu1"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
@@ -43,31 +43,7 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 2. Retry the request.
 3. If the request fails again with a 429 error code, you are still being throttled. Continue to use the recommended `Retry-After` delay and retry the request until it succeeds.
 
-The following resources currently provide a `Retry-After` header:
-
-- [User](/graph/api/resources/user?view=graph-rest-1.0)
-- [Photo](/graph/api/resources/profilephoto?view=graph-rest-1.0)
-- [Mail](/graph/api/resources/message?view=graph-rest-1.0)
-- [Calendar (users and groups)](/graph/api/resources/event?view=graph-rest-1.0)
-- [Contact](/graph/api/resources/contact?view=graph-rest-1.0)
-- [Attachment](/graph/api/resources/attachment?view=graph-rest-1.0)
-- [Group conversations](/graph/api/resources/conversation?view=graph-rest-1.0)
-- [People and social](/graph/api/resources/social-overview?view=graph-rest-beta)
-- [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
-- [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
-- [Report](/graph/api/resources/report)
-- [Subscription](/graph/api/resources/subscription)
-- [Threat assessment request](/graph/api/resources/threatassessmentrequest)
-- [Mail assessment request](/graph/api/resources/mailassessmentrequest)
-- [Email file assessment request](/graph/api/resources/emailfileassessmentrequest)
-- [File assessment request](/graph/api/resources/fileassessmentrequest)
-- [URL assessment request](/graph/api/resources/urlassessmentrequest)
-- [Threat assessment result](/graph/api/resources/threatassessmentresult)
-- [Trending](/graph/api/resources/insights-trending)
-- [Used insight](/graph/api/resources/insights-used)
-- [Shared insight](/graph/api/resources/insights-shared)
-- [User settings](/graph/api/resources/usersettings)
-- [Invitation](/graph/api/resources/invitation)
+All the resources and APIs described in the [Service-specific limits](#service-specific-limits) section provide a `Retry-After` header except when noted.
 
 For a broader discussion of throttling in the Microsoft Cloud, see [Throttling pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -111,6 +87,14 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 #### Outlook service resources
 
 The following resources are provided by the Outlook service.
+
+##### Search API resources (preview)
+
+- [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
+
+##### Profile API resources
+
+- [Photo](/graph/api/resources/profilephoto?view=graph-rest-1.0)
 
 ##### Calendar API resources
 
@@ -193,7 +177,7 @@ Limits are expressed as requests per second (rps).
 | PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  | 
+| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
 | GET channel message  | 5 rps | 100 rps |
 | GET 1:1/group chat message  | 3 rps | 30 rps |
 | POST channel message | 2 rps | 20 rps |
@@ -207,6 +191,137 @@ A maximum of 3000 messages per app per day can be sent to a given channel.
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
+
+The preceding limits apply to the following resources:  
+aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessage, chatMessageHostedContent, conversationMember, offerShiftRequest, openShift, openShiftChangeRequest, schedule, scheduleChangeRequest, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamsTemplate, teamwork, timeOff, timeOffReason, timeOffRequest, userSettings, workforceIntegration.
+
+### Identity and access service limits
+
+These service limits apply to the following entities:
+
+- [Directory object](/graph/api/resources/directoryobject)
+- [Extension property](/graph/api/resources/extensionproperty)
+- [Administrative unit](/graph/api/resources/administrativeunit)
+- [Application](/graph/api/resources/application)
+- [Application role assignment](/graph/api/resources/approleassignment)
+- [Certificate based auth configuration](/graph/api/resources/certificatebasedauthconfiguration)
+- [Organizational contact](/graph/api/resources/orgcontact)
+- [Device](/graph/api/resources/device)
+- [Directory object partner reference](/graph/api/resources/directoryobjectpartnerreference)
+- [Directory role](/graph/api/resources/directoryrole)
+- [Directory role template](/graph/api/resources/directoryroletemplate)
+- [Domain](/graph/api/resources/domain)
+- [Domain dns record](/graph/api/resources/domaindnsrecord)
+- [Domain dns cname record](/graph/api/resources/domaindnscnamerecord)
+- [Domain dns mx record](/graph/api/resources/domaindnsmxrecord)
+- [Domain dns srv record](/graph/api/resources/domaindnssrvrecord)
+- [Domain dns txt record](/graph/api/resources/domaindnstxtrecord)
+- [Domain dns unavailable record](/graph/api/resources/domaindnsunavailablerecord)
+- [Endpoint](/graph/api/resources/endpoint)
+- [Extension property](/graph/api/resources/extensionproperty)
+- [License details](/graph/api/resources/licensedetails)
+- [Group](/graph/api/resources/group)
+- [Activity based timeout policy](/graph/api/resources/activitybasedtimeoutpolicy)
+- [Claims mapping policy](/graph/api/resources/claimsmappingpolicy)
+- [Home realm discovery policy](/graph/api/resources/homerealmdiscoverypolicy)
+- [Token issuance policy](/graph/api/resources/tokenissuancepolicy)
+- [Token lifetime policy](/graph/api/resources/tokenlifetimepolicy)
+- [Policy base](/graph/api/resources/policybase)
+- [Sts policy](/graph/api/resources/stspolicy)
+- [Contract](/graph/api/resources/contract)
+- [Service principal](/graph/api/resources/serviceprincipal)
+- [Subscribed sku](/graph/api/resources/subscribedsku)
+- [OAuth2 permission grant](/graph/api/resources/oauth2permissiongrant)
+- [Organization](/graph/api/resources/organization)
+- [User](/graph/api/resources/user)
+- [Group setting](/graph/api/resources/groupsetting)
+- [Group setting template](/graph/api/resources/groupsettingtemplate)
+
+#### Pattern
+
+Throttling is based on a token bucket algorithm, which works by adding individual costs of requests. The sum of request costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached, in situations when the services are under an important load or based on data volume for a specific tenant. The following table lists existing limits.
+
+| Limit type | Resource unit quota | Write quota |
+| ---------- | ----------- | -------------- |
+| application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
+| application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
+| tenant | Not Applicable | 9000 per 5 minutes |
+
+> **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
+
+The following table lists base request costs. Any requests not listed have a base cost of 1.
+
+| Operation | Request Path | Base Resource Unit Cost | Write Cost |
+| --------- | ------------ | ----------------- | ------------------ |
+| GET | `applications` | 2 | 0 |
+| GET | `applications/{id}/extensionProperties` | 2 | 0 |
+| GET | `contracts` | 3 | 0 |
+| POST | `directoryObjects/getByIds` |  3 | 0 |
+| GET | `domains/{id}/domainNameReferences` | 4 | 0 |
+| POST | `getObjectsById` | 3 | 0 |
+| GET | `groups/{id}/members` | 3 | 0 |
+| GET | `groups/{id}/transitiveMembers` | 5 | 0 |
+| POST | `isMemberOf` | 4 | 0 |
+| POST | `me/checkMemberGroups` | 4 | 0 |
+| POST | `me/checkMemberObjects` | 4 | 0 |
+| POST | `me/getMemberGroups` | 2 | 0 |
+| POST | `me/getMemberObjects` | 2 | 0 |
+| GET | `me/licenseDetails` | 2 | 0 |
+| GET | `me/memberOf` | 2 | 0 |
+| GET | `me/ownedObjects` | 2 | 0 |
+| GET | `me/transitiveMemberOf` | 2 | 0 |
+| GET | `oauth2PermissionGrants` | 2 | 0 |
+| GET | `oauth2PermissionGrants/{id}` | 2 | 0 |
+| GET | `servicePrincipals/{id}/appRoleAssignments` | 2 | 0 |
+| GET | `subscribedSkus` | 3 | 0 |
+| GET | `users` | 2 | 0 |
+| GET | Any identity path not listed in the table | 1 | 0 |
+| POST | Any identity path not listed in the table | 1 | 1 |
+| PATCH | Any identity path not listed in the table | 1 | 1 |
+| PUT | Any identity path not listed in the table | 1 | 1 |
+| DELETE | Any identity path not listed in the table | 1 | 1 |
+
+Other factors that affect a request cost:
+
+- Using `$select` decreases cost by 1
+- Using `$expand` increases cost by 1
+- Using `$top` with a value of less than 20 decreases cost by 1
+
+> **Note:** A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+
+#### Additional headers
+
+##### Request headers
+
+- **x-ms-throttle-priority** - If the header doesn't exist or is set to any other value, it indicates a normal request. We recommend setting priority to `high` only for the requests initiated by the user. The values of this header can be the following:
+  - Low - Indicates the request is low priority. Throttling this request doesn't cause user-visible failures.
+  - Normal - Default if no value is provided. Indicates that the request is default priority.
+  - High - Indicates that the request is high priority. Throttling this request causes user-visible failures.
+
+> **Note:** Should requests be throttled, low priority requests will be throttled first, normal priority requests second, and high priority requests last. Using the priority request header does not change the limits.
+
+##### Regular responses requests
+
+- **x-ms-resource-unit** - Indicates the resource unit used for this request. Values are positive integers.
+- **x-ms-throttle-limit-percentage** - Returned only when the application consumed more than 0.8 of its limit. The value ranges from 0.8 to 1.8 and is a percentage of the use of the limit. The value can be used by the callers to set up an alert and take action.
+
+##### Throttled responses requests
+
+- **x-ms-throttle-scope** - eg. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`. Indicates the scope of throttling with the following format `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>`:
+  - Scope: (string, required)
+    - Tenant_Application - All requests for a particular tenant for the current application.
+    - Tenant - All requests for the current tenant, regardless of the application.
+    - Application - All requests for the current application.
+  - Limit: (string, requied)
+    - Read: Read requests for the scope (GET)
+    - Write: Write requests for the scope (POST, PATCH, PUT, DELETE...)
+    - ReadWrite: All Requests for the scope (any)
+  - ApplicationId (Guid, required)
+  - TenantId|UserId|ResourceId: (Guid, required)
+- **x-ms-throttle-information** - Indicates the reason for throttling and can have any value (string). The value is provided for diagnostics and troubleshooting purposes, some examples include:
+  - CPULimitExceeded - Throttling is because the limit for cpu allocation is exceeded.
+  - WriteLimitExceeded - Throttling is because the write limit is exceeded.
+  - ResourceUnitLimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
 
 ### Information protection
 
@@ -239,6 +354,9 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
 
+The preceding limits apply to the following resources:  
+people, trending, usedinsight, sharedInsight.
+
 ### Microsoft Graph reports service limits
 
 The following limits apply to any request on `/reports`.
@@ -248,7 +366,9 @@ The following limits apply to any request on `/reports`.
 | Any request (CSV)         | 14 requests per 10 minutes   | 40 requests per 10 minutes |
 | Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
 
-The preceding limits apply individually to each report API. For example a request to Microsoft Teams user activity report API and a request to Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+
+The preceding limits apply to the **report** resource.  
 
 ### Invitation manager service limits
 

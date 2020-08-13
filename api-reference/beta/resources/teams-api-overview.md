@@ -23,8 +23,9 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 |[teamsTab](../resources/teamstab.md) |[List](../api/teamstab-list.md), [create](../api/teamstab-add.md), [read](../api/teamstab-get.md), [update](../api/teamstab-update.md), [delete](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[List](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
-|[chatMessage](../resources/chatmessage.md)| [List](../api/channel-list-messages.md), [send](../api/channel-post-messages.md), [read](../api/channel-get-message.md) |
-| [call](../resources/call.md)| [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [update metadata](../api/call-updatemetadata.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md), [mute all participants](../api/participant-muteall.md) |
+|[chatMessage](../resources/chatmessage.md)| [list in channel](../api/channel-list-messages.md), [list in chat](../api/chat-list-message.md), [send](../api/chatmessage-post.md), [read in channel](../api/channel-get-message.md), [read in chat](../api/chat-get-message.md)|
+|[chat](../resources/chat.md)| [list](../api/chat-list.md), [read](../api/chat-get.md),
+|[call](../resources/call.md)| [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [update metadata](../api/call-updatemetadata.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md), [mute all participants](../api/participant-muteall.md) |
 |[schedule](../resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
 |[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
@@ -43,7 +44,7 @@ can also come into play.
 
 Files inside channels are stored in SharePoint; [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) apply.
 
-See also [throttling limits for Microsoft Teams services](/graph/throttling).
+See also [throttling limits for Microsoft Teams services](/graph/throttling#microsoft-teams-service-limits).
 
 ## Teams and groups
 

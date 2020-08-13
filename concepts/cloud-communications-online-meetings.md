@@ -12,6 +12,8 @@ Online meetings provide the ability to specify certain details, such as the subj
 
 Online meetings provide the flexibility to create a meeting that takes place in the future, or instantaneously. The ability to set up a meeting that starts immediately after it is created is ideal for unexpected issues and other incidents that require the immediate attention of the attendees.
 
+> **Note** This set of APIs allows the flexibility and richer integration with Microsoft Teams or Skype capabilities; it does not update or create any event in a calendar. For a convenient approach to add an online meeting to an Outlook calendar, use the calendar API. See [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md) for more information.
+
 ## Create an online meeting
 
 When you create an online meeting, you'll receive [coordinates](/graph/api/resources/onlinemeeting) for the meeting. When participants join the meeting using these meeting coordinates, a group call is created.

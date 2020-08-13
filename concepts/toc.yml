@@ -85,11 +85,11 @@ items:
           - name: Overview
             href: applications-concept-overview.md
           - name: Automate SAML-based SSO configuration
-            href: https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api?context=/graph/context
+            href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
           - name: Configure provisioning
-            href: https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api?context=/graph/context
+            href: application-provisioning-configure-api.md
       - name: Calendar
         displayName: Outlook
         items:
@@ -101,7 +101,7 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propose new meeting times
             href: outlook-calendar-meeting-proposals.md
-          - name: Organize online meetings
+          - name: Set event as online meeting
             href: outlook-calendar-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
@@ -347,6 +347,8 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
+          - name: Licenses for subscribing to chat messages
+            href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
       - name: Workbooks and charts
@@ -364,11 +366,12 @@ items:
             href: excel-update-range-format.md
           - name: Write data to a workbook
             href: excel-write-to-workbook.md
-          - name: Resources
-            expanded: true
-            items:
-              - name: Error codes
-                href: workbook-error-codes.md
+          - name: Best practices
+            href: workbook-best-practice.md
+          - name: Error codes
+            href: workbook-error-codes.md
+          - name: Error handling
+            href: workbook-error-handling.md
   - name: Develop
     expanded: true
     items:
@@ -418,6 +421,8 @@ items:
                 href: webhooks-outlook-authz.md
               - name: Notifications with resource data (preview)
                 href: webhooks-with-resource-data.md
+              - name: Get notifications delivered different ways (preview)
+                href: change-notifications-delivery.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/{rbacApplication}/roleDefinitions/{id}
+GET /roleManagement/directory/roleDefinitions/{id}
 ```
 
 ## Optional query parameters
