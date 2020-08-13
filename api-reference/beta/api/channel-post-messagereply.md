@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new reply to a [message](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
+Create a new reply to a [chatMessage](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
@@ -46,8 +46,11 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
 ## Example
-##### Request
-Here is an example of the request.
+
+For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).
+
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,9 +83,9 @@ Content-type: application/json
 ---
 
 
-##### Response
+### Response
 
-Here is an example of the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

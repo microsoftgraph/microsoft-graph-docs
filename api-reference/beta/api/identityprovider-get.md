@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a JSON represent
 
 ## Examples
 
-### Example 1: Retrieves a specific **identityProvider**
+### Example 1: Retrieve a specific identityProvider
 
 #### Request
 
@@ -106,7 +106,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### Example 2: Retrieves a specific **openIDConnectProvider** (only for Azure AD B2C)
+### Example 2: Retrieve a specific openIDConnectProvider (only for Azure AD B2C)
 
 #### Request
 

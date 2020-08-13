@@ -1,6 +1,6 @@
 ---
 title: "Azure AD synchronization API overview"
-description: "Automate the creation, maintenance, and removal of identities in cloud applications."
+description: "Automate the provisioning of identities from HR systems, Active Directory, and Azure Active Directory to cloud applications."
 localization_priority: Normal
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
@@ -13,7 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the creation, maintenance, and removal of identities in cloud (software as a service, or SaaS) applications such as Dropbox, Salesforce, ServiceNow, and more. You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:
+Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the provisioning (creation, maintenance) and de-provisioning (removal) of identities from any of the following:
+- Active Directory to Azure AD
+- Workday to Azure AD
+- Azure AD to cloud applications such as Dropbox, Salesforce, ServiceNow, and more 
+
+You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:
 
 - Create, start, and stop synchronization jobs
 - Make changes to the synchronization schema for jobs

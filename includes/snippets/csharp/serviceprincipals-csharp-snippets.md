@@ -6,11 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var servicePrincipals = await graphClient.ServicePrincipals["b00c693f-9658-4c06-bd1b-c402c4653dea"]
-	.Request()
-	.Select("AppRoles")
-	.GetAsync();
+var claimsMappingPolicy = new ClaimsMappingPolicy
+{
+	Definition = new List<String>()
+	{
+		"{\"ClaimsMappingPolicy\": {\r\n                \"Version\": 1,\r\n                \"IncludeBasicClaimSet\": \"true\",\r\n                \"ClaimsSchema\": [\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"assignedroles\",\r\n                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"userprincipalname\",\r\n                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"900\",\r\n                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"assignedroles\",\r\n                        \"SamlClaimType\": \"appRoles\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"userprincipalname\",\r\n                        \"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"\r\n                    }\r\n                ]\r\n            }\r\n        }"
+	},
+	DisplayName = "AWS Claims policy",
+	IsOrganizationDefault = false
+};
 
-var appRoles = servicePrincipals.AppRoles;
+await graphClient.Policies.ClaimsMappingPolicies
+	.Request()
+	.AddAsync(claimsMappingPolicy);
 
 ```

@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "26635276-6c2d-4a8c-bc42-92728a487c84",
+          "Id": "4bf1f9d6-d52e-4df5-af39-8ea8f7a576e6",
           "ApiChange": "method",
           "ChangedApiName": "getNotebookFromWebUrl",
           "ChangeType": "Addition",
@@ -11,17 +11,17 @@
           "Target": "getNotebookFromWebUrl"
         }
       ],
-      "Id": "26635276-6c2d-4a8c-bc42-92728a487c84",
+      "Id": "4bf1f9d6-d52e-4df5-af39-8ea8f7a576e6",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-02-01T00:00:00",
-      "WorkloadArea": "Notes (OneNote)",
+      "WorkloadArea": "Notes",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "bafb9aeb-927d-4cd3-89d3-378566c346b1",
+          "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
           "ApiChange": "Parameter",
           "ChangedApiName": "CopyNotebook",
           "ChangeType": "Addition",
@@ -29,7 +29,7 @@
           "Target": "CopyNotebook"
         }
       ],
-      "Id": "bafb9aeb-927d-4cd3-89d3-378566c346b1",
+      "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-08-01T00:00:00",
@@ -39,7 +39,7 @@
     {
       "ChangeList": [
         {
-          "Id": "bafb9aeb-927d-4cd3-89d3-378566c346b1",
+          "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
           "ApiChange": "Property",
           "ChangedApiName": "site",
           "ChangeType": "Addition",
@@ -47,7 +47,7 @@
           "Target": "onenote"
         }
       ],
-      "Id": "bafb9aeb-927d-4cd3-89d3-378566c346b1",
+      "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-08-01T00:00:00",

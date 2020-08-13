@@ -38,6 +38,7 @@ The following are some additional errors that your app might encounter within th
 | **accessDenied**         | You cannot perform the requested operation.
 | **badRequestUncategorized**               | The request is malformed or incorrect.
 | **conflictUncategorized**                   | The current state conflicts with what the request expects.
+| **filteredRangeConflict**                   | The operation failed because it conflicts with a filtered range.
 | **forbiddenUncategorized**                    | The request is not allowed.
 | **gatewayTimeoutUncategorized**         | The service wasn’t able to complete the request within the time limit.
 | **generalException**         | There was an internal error while processing the request.
@@ -54,6 +55,7 @@ The following are some additional errors that your app might encounter within th
 | **invalidSessionUnsupportedWorkbook**              | The session specified in the request is invalid because the workbook contains unsupported features or exceeds the size limit.
 | **itemAlreadyExists**         | The resource being created already exists.
 | **itemNotFound**         | The requested resource doesn't exist.
+| **methodNotAllowed**              | The HTTP method specified in the request is not allowed on the resource.
 | **methodNotAllowedUncategorized**              | The HTTP method specified in the request is not allowed on the resource.
 | **nonBlankCellOffSheet**         | Can't insert new cells because it would push non-empty cells off the end of the worksheet.
 | **notFoundUncategorized**             | The requested resource cannot be found.

@@ -2,7 +2,7 @@
 title: "changeNotificationEncryptedContent resource type"
 description: "A subscription with resource data allows a client app to receive change notifications with changes to data in Microsoft Graph. The change notification encrypted content represents the encrypted data attached with the notification."
 localization_priority: Normal
-author: "baywet"
+author: "davidmu1"
 doc_type: resourcePageType
 ms.prod: ""
 ---

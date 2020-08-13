@@ -2,7 +2,7 @@
 title: "changeNotificationCollection resource type"
 description: "Represents a collection of subscription notifications sent to the subscriber."
 localization_priority: Normal
-author: "baywet"
+author: "davidmu1"
 doc_type: resourcePageType
 ms.prod: "non-product-specific"
 ---

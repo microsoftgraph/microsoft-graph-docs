@@ -2,7 +2,7 @@
 title: "Get subscription"
 description: "Retrieve the properties and relationships of a subscription."
 localization_priority: Normal
-author: "baywet"
+author: "davidmu1"
 doc_type: apiPageType
 ms.prod: ""
 ---

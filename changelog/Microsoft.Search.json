@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "803178f7-a6a6-48a5-9e28-195fce3acd85",
+          "Id": "a3167cba-ca2f-44fc-8e08-a327d1f316e8",
           "ApiChange": "Property",
           "ChangedApiName": "aliases,isRefinable,labels",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "property"
         },
         {
-          "Id": "803178f7-a6a6-48a5-9e28-195fce3acd85",
+          "Id": "a3167cba-ca2f-44fc-8e08-a327d1f316e8",
           "ApiChange": "Resource",
           "ChangedApiName": "get externalItem",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "get externalItem"
         }
       ],
-      "Id": "803178f7-a6a6-48a5-9e28-195fce3acd85",
+      "Id": "a3167cba-ca2f-44fc-8e08-a327d1f316e8",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -29,7 +29,7 @@
     {
       "ChangeList": [
         {
-          "Id": "2c626a4a-a503-4f45-acc7-f108b628a36a",
+          "Id": "fe33f4f4-4c67-4c68-853d-3b1aa6e77715",
           "ApiChange": "Resource",
           "ChangedApiName": "externalFile",
           "ChangeType": "Change",
@@ -37,7 +37,7 @@
           "Target": "externalFile"
         },
         {
-          "Id": "2c626a4a-a503-4f45-acc7-f108b628a36a",
+          "Id": "fe33f4f4-4c67-4c68-853d-3b1aa6e77715",
           "ApiChange": "Property",
           "ChangedApiName": "content,properties",
           "ChangeType": "Change",
@@ -45,7 +45,7 @@
           "Target": "externalItem"
         },
         {
-          "Id": "2c626a4a-a503-4f45-acc7-f108b628a36a",
+          "Id": "fe33f4f4-4c67-4c68-853d-3b1aa6e77715",
           "ApiChange": "Resource",
           "ChangedApiName": "Retry-After",
           "ChangeType": "Change",
@@ -53,7 +53,7 @@
           "Target": "externalItem"
         }
       ],
-      "Id": "2c626a4a-a503-4f45-acc7-f108b628a36a",
+      "Id": "fe33f4f4-4c67-4c68-853d-3b1aa6e77715",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -63,7 +63,7 @@
     {
       "ChangeList": [
         {
-          "Id": "bf0ed9f4-9788-420c-9561-bcc006e616b3",
+          "Id": "21d4f791-3cb9-4419-beec-0a4230335ade",
           "ApiChange": "Resource",
           "ChangedApiName": "Microsoft Search API,querying,indexing",
           "ChangeType": "Addition",
@@ -71,7 +71,7 @@
           "Target": "Microsoft Search API,querying,indexing"
         },
         {
-          "Id": "bf0ed9f4-9788-420c-9561-bcc006e616b3",
+          "Id": "21d4f791-3cb9-4419-beec-0a4230335ade",
           "ApiChange": "Resource",
           "ChangedApiName": "query",
           "ChangeType": "Addition",
@@ -79,7 +79,7 @@
           "Target": "query"
         },
         {
-          "Id": "bf0ed9f4-9788-420c-9561-bcc006e616b3",
+          "Id": "21d4f791-3cb9-4419-beec-0a4230335ade",
           "ApiChange": "Resource",
           "ChangedApiName": "searchRequest,searchQuery,searchQueryString,searchResponse,searchHitsContainer,searchHit",
           "ChangeType": "Addition",
@@ -87,7 +87,7 @@
           "Target": "searchRequest,searchQuery,searchQueryString,searchResponse,searchHitsContainer,searchHit"
         },
         {
-          "Id": "bf0ed9f4-9788-420c-9561-bcc006e616b3",
+          "Id": "21d4f791-3cb9-4419-beec-0a4230335ade",
           "ApiChange": "Resource",
           "ChangedApiName": "externalConnection,schema,externalItem,externalFile",
           "ChangeType": "Addition",
@@ -95,7 +95,7 @@
           "Target": "externalConnection,schema,externalItem,externalFile"
         }
       ],
-      "Id": "bf0ed9f4-9788-420c-9561-bcc006e616b3",
+      "Id": "21d4f791-3cb9-4419-beec-0a4230335ade",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",

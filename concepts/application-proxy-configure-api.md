@@ -542,8 +542,9 @@ Use the following properties to assign a user to the application.
 
 #### Request
 
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
@@ -558,6 +559,7 @@ Content-type: appRoleAssignments/json
   "resourceId":"b00c693f-9658-4c06-bd1b-c402c4653dea"
 }
 ```
+
 #### Response
 
 <!-- {

@@ -2,7 +2,7 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on a Microsoft Graph resource changes."
 localization_priority: Normal
-author: "baywet"
+author: "davidmu1"
 doc_type: apiPageType
 ms.prod: ""
 ---
@@ -18,7 +18,7 @@ Subscribes a listener application to receive change notifications when the reque
 ## Permissions
 
 Creating a subscription requires read permission to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. 
- 
+
  Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
@@ -46,7 +46,11 @@ Creating a subscription requires read permission to the resource. For example, t
 
 **chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Note:** `/teams/allMessages` and `/chats/allMessages` are currently in preview. During the preview, you may use this API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). However, users of apps that use the API might be required to have subscriptions to specific Microsoft 365 offerings. Upon general availability, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+> **Note:** `/teams/allMessages` and `/chats/allMessages` are currently in preview,
+and you may use this API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). 
+Starting in August 2020, it will only be available to users and tenants that have the [required licenses](/graph/teams-licenses). 
+Because `/teams/allMessages` and `/chats/allMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed. 
+In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
 ### driveItem
 
@@ -179,7 +183,7 @@ Content-length: 252
 }
 ```
 
-## Notification endpoint validation
+### Notification endpoint validation
 
 The subscription notification endpoint (specified in the **notificationUrl** property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
 

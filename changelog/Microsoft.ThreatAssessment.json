@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "6fa828dd-0d03-4446-bb02-3a018a3cb21c",
+          "Id": "e3622b25-a722-40ba-992f-197418e8cfa3",
           "ApiChange": "Property",
           "ChangedApiName": "incidentIds,resource,resourceType,sourceLocation,destinationLocation",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "alert,securityResources,networkConnection"
         }
       ],
-      "Id": "6fa828dd-0d03-4446-bb02-3a018a3cb21c",
+      "Id": "e3622b25-a722-40ba-992f-197418e8cfa3",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -21,7 +21,25 @@
     {
       "ChangeList": [
         {
-          "Id": "adc35762-7972-45df-88c0-f41beba5fa5c",
+          "Id": "7489b2ae-0ad0-45a0-8f81-4aca5a0d36a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "create,get,list,threatAssessmentRequest",
+          "ChangeType": "Addition",
+          "Description": "Added [create](https://docs.microsoft.com/en-us/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-1.0), [get](https://docs.microsoft.com/en-us/graph/api/threatassessmentrequest-get?view=graph-rest-1.0) and [list](https://docs.microsoft.com/en-us/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0) APIs to manage [threatAssessmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0) resources.",
+          "Target": "create,get,list,threatAssessmentRequest"
+        }
+      ],
+      "Id": "7489b2ae-0ad0-45a0-8f81-4aca5a0d36a9",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-02-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c4724881-15ff-4313-94c4-5392feccfabe",
           "ApiChange": "method",
           "ChangedApiName": "comments,Closed in IPC,Closed in MCAS",
           "ChangeType": "Change",
@@ -29,7 +47,7 @@
           "Target": "Update alert"
         }
       ],
-      "Id": "adc35762-7972-45df-88c0-f41beba5fa5c",
+      "Id": "c4724881-15ff-4313-94c4-5392feccfabe",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-01-01T00:00:00",
@@ -39,7 +57,245 @@
     {
       "ChangeList": [
         {
-          "Id": "9be80852-a1ff-4459-ab68-bdf068e86aed",
+          "Id": "dc24feab-df7f-4790-b841-341a736d1621",
+          "ApiChange": "Resource",
+          "ChangedApiName": "create,get,list,threatAssessmentRequest",
+          "ChangeType": "Addition",
+          "Description": "Added [create](https://docs.microsoft.com/en-us/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [get](https://docs.microsoft.com/en-us/graph/api/threatassessmentrequest-get?view=graph-rest-beta) and [list](https://docs.microsoft.com/en-us/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) APIs to manage [threatAssessmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta) resources.",
+          "Target": "create,get,list,threatAssessmentRequest"
+        },
+        {
+          "Id": "dc24feab-df7f-4790-b841-341a736d1621",
+          "ApiChange": "Resource",
+          "ChangedApiName": "evaluate application,evaluate classification,evaluate removal,extract label,list label,get label",
+          "ChangeType": "Addition",
+          "Description": "Added optional request header, User-Agent, to [evaluate application](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta), [evaluate classification](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta), [evaluate removal](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta), [extract label](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta), [list label](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-list-labels?view=graph-rest-beta), and [get label](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-get?view=graph-rest-beta).",
+          "Target": "evaluate application,evaluate classification,evaluate removal,extract label,list label,get label"
+        }
+      ],
+      "Id": "dc24feab-df7f-4790-b841-341a736d1621",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-12-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "30c4b758-b116-455f-9844-fa45678aa3cd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ThreatAssessment.ReadWrite.All,ThreatAssessment.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added new delegated and application permissions [ThreatAssessment.ReadWrite.All](permissions-reference.md#threat-assessment-permissions) and [ThreatAssessment.Read.All](permissions-reference.md#threat-assessment-permissions) to Read and write threat assessment requests",
+          "Target": "ThreatAssessment.ReadWrite.All,ThreatAssessment.Read.All"
+        }
+      ],
+      "Id": "30c4b758-b116-455f-9844-fa45678aa3cd",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detectedSensitiveContent",
+          "ChangeType": "Change",
+          "Description": "Changed **detectedSensitiveContent** entity name to [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
+          "Target": "classificationResult"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName,uniqueCount,matches",
+          "ChangeType": "Deletion",
+          "Description": "Removed **displayName**, **uniqueCount**, and **matches** properties from [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
+          "Target": "classificationResult"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "id,sensitiveTypeId",
+          "ChangeType": "Change",
+          "Description": "Changed **id** to **sensitiveTypeId** properties of [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
+          "Target": "classificationResult"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "confidence,confidenceLevel",
+          "ChangeType": "Change",
+          "Description": "Changed **confidence** to **confidenceLevel** property of [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta).",
+          "Target": "classificationResult"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "count",
+          "ChangeType": "Addition",
+          "Description": "Added **count** property to [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta)/.",
+          "Target": "classificationResult"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "actionSource",
+          "ChangeType": "Deletion",
+          "Description": "Removed **actionSource** property from [labelingOptions](https://docs.microsoft.com/en-us/graph/api/resources/labelingoptions?view=graph-rest-beta).",
+          "Target": "labelingOptions"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "auditInfo",
+          "ChangeType": "Deletion",
+          "Description": "Removed **auditInfo** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectByDoNotForwardAction",
+          "ChangeType": "Change",
+          "Description": "Changed **protectByDoNotForwardAction** to [protectDoNotForwardAction](https://docs.microsoft.com/en-us/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta).",
+          "Target": "protectDoNotForwardAction"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "alignment",
+          "ChangeType": "Addition",
+          "Description": "Added **alignment** property to [addContentHeaderAction](https://docs.microsoft.com/en-us/graph/api/resources/addcontentheaderaction?view=graph-rest-beta).",
+          "Target": "addContentHeaderAction"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "labelId,label",
+          "ChangeType": "Change",
+          "Description": "Changed **labelId** property to **label** in [recommendLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
+          "Target": "recommendLabelAction"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "classificationIds,responsibleSensitivityTypeIds",
+          "ChangeType": "Change",
+          "Description": "Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [recommendLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
+          "Target": "recommendLabelAction"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "actionSource",
+          "ChangeType": "Addition",
+          "Description": "Added **actionSource** property to [recommendLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/recommendedlabelaction?view=graph-rest-beta).",
+          "Target": "recommendLabelAction"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "labelId,label",
+          "ChangeType": "Change",
+          "Description": "Changed **labelId** property to **label** in [applyLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/applylabelaction?view=graph-rest-beta).",
+          "Target": "applyLabelAction"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "classificationIds,responsibleSensitivityTypeIds",
+          "ChangeType": "Change",
+          "Description": "Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [applyLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/applylabelaction?view=graph-rest-beta).",
+          "Target": "applyLabelAction"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Property",
+          "ChangedApiName": "actionSource",
+          "ChangeType": "Addition",
+          "Description": "Added **actionSource** property to [applyLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/applylabelaction?view=graph-rest-beta).",
+          "Target": "applyLabelAction"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "file,default",
+          "ChangeType": "Change",
+          "Description": "Change [contentFormat](https://docs.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta)) enum value **file** to **default**.",
+          "Target": "contentFormat"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mandatory",
+          "ChangeType": "Deletion",
+          "Description": "Removed **mandatory** value from [actionSource](https://docs.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta)) enum.",
+          "Target": "actionSource"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyDefault,default",
+          "ChangeType": "Change",
+          "Description": "Removed [actionSource](https://docs.microsoft.com/en-us/graph/api/resources/enums?view=graph-rest-beta)) enum value **policyDefault** to **default**.",
+          "Target": "actionSource"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "auditMetadataKey",
+          "ChangeType": "Deletion",
+          "Description": "Removed **auditMetadataKey**.",
+          "Target": ""
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applyLabel",
+          "ChangeType": "Change",
+          "Description": "Change **applyLabel** API to [evaluateApplication](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta).",
+          "Target": "evaluateApplication"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applyLabelFromClassification",
+          "ChangeType": "Change",
+          "Description": "Change **applyLabelFromClassification** API to [evaluateClassificationResults](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta).",
+          "Target": "evaluateClassificationResults"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removeLabel",
+          "ChangeType": "Change",
+          "Description": "Change **removeLabel** API to [evaluateRemoval](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta).",
+          "Target": "evaluateRemoval"
+        },
+        {
+          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "auditInfo",
+          "ChangeType": "Deletion",
+          "Description": "Removed **auditInfo** from [extractLabel](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta).",
+          "Target": "extractLabel"
+        }
+      ],
+      "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "94cf540d-3458-4c1d-adc7-bc3a16929f15",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile",
           "ChangeType": "Addition",
@@ -47,7 +303,7 @@
           "Target": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile"
         }
       ],
-      "Id": "9be80852-a1ff-4459-ab68-bdf068e86aed",
+      "Id": "94cf540d-3458-4c1d-adc7-bc3a16929f15",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-05-01T00:00:00",
@@ -57,7 +313,7 @@
     {
       "ChangeList": [
         {
-          "Id": "4dd5aad4-5306-4dd1-9ac8-e718e8718f25",
+          "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators",
           "ChangeType": "Addition",
@@ -65,7 +321,7 @@
           "Target": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators"
         },
         {
-          "Id": "4dd5aad4-5306-4dd1-9ac8-e718e8718f25",
+          "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction",
           "ChangeType": "Addition",
@@ -73,7 +329,7 @@
           "Target": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction"
         },
         {
-          "Id": "4dd5aad4-5306-4dd1-9ac8-e718e8718f25",
+          "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
           "ApiChange": "Resource",
           "ChangedApiName": "historyStates,updateAlerts",
           "ChangeType": "Addition",
@@ -81,7 +337,7 @@
           "Target": "historyStates,updateAlerts"
         }
       ],
-      "Id": "4dd5aad4-5306-4dd1-9ac8-e718e8718f25",
+      "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
@@ -91,7 +347,7 @@
     {
       "ChangeList": [
         {
-          "Id": "7d6334c8-86f0-4f70-9ed7-45a0d002e06a",
+          "Id": "f5e333e7-7650-4edb-b501-4889506269ac",
           "ApiChange": "Resource",
           "ChangedApiName": "complianceInformation",
           "ChangeType": "Addition",
@@ -99,7 +355,7 @@
           "Target": "complianceInformation"
         },
         {
-          "Id": "7d6334c8-86f0-4f70-9ed7-45a0d002e06a",
+          "Id": "f5e333e7-7650-4edb-b501-4889506269ac",
           "ApiChange": "Resource",
           "ChangedApiName": "certificationControl",
           "ChangeType": "Addition",
@@ -107,7 +363,7 @@
           "Target": "certificationControl"
         }
       ],
-      "Id": "7d6334c8-86f0-4f70-9ed7-45a0d002e06a",
+      "Id": "f5e333e7-7650-4edb-b501-4889506269ac",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-12-01T00:00:00",
@@ -117,7 +373,7 @@
     {
       "ChangeList": [
         {
-          "Id": "94328a5a-0560-4cc4-bd47-c9870c25b447",
+          "Id": "17c7650a-dfb5-4fee-a5c5-47fa69e7e26e",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles",
           "ChangeType": "Addition",
@@ -125,7 +381,7 @@
           "Target": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles"
         },
         {
-          "Id": "94328a5a-0560-4cc4-bd47-c9870c25b447",
+          "Id": "17c7650a-dfb5-4fee-a5c5-47fa69e7e26e",
           "ApiChange": "Resource",
           "ChangedApiName": "secureScoreControlStateUpdate",
           "ChangeType": "Addition",
@@ -133,7 +389,7 @@
           "Target": "secureScoreControlStateUpdate"
         }
       ],
-      "Id": "94328a5a-0560-4cc4-bd47-c9870c25b447",
+      "Id": "17c7650a-dfb5-4fee-a5c5-47fa69e7e26e",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
@@ -143,7 +399,7 @@
     {
       "ChangeList": [
         {
-          "Id": "fac86acf-b364-4360-affe-412470819fbc",
+          "Id": "0d2991d0-bac7-47f2-8bd3-8051d474856d",
           "ApiChange": "Resource",
           "ChangedApiName": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType",
           "ChangeType": "Addition",
@@ -151,7 +407,7 @@
           "Target": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType"
         }
       ],
-      "Id": "fac86acf-b364-4360-affe-412470819fbc",
+      "Id": "0d2991d0-bac7-47f2-8bd3-8051d474856d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00",
@@ -161,7 +417,7 @@
     {
       "ChangeList": [
         {
-          "Id": "101080d3-e9eb-40e6-9421-e9aeda821cac",
+          "Id": "790c5bc8-4999-48e0-b1eb-8e1493ff5b9c",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API",
           "ChangeType": "Addition",
@@ -169,7 +425,7 @@
           "Target": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API"
         }
       ],
-      "Id": "101080d3-e9eb-40e6-9421-e9aeda821cac",
+      "Id": "790c5bc8-4999-48e0-b1eb-8e1493ff5b9c",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",

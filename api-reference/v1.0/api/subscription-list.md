@@ -2,7 +2,7 @@
 title: "List subscriptions"
 description: "Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant."
 localization_priority: Priority
-author: "baywet"
+author: "davidmu1"
 ms.prod: ""
 doc_type: apiPageType
 ---
