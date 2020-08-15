@@ -242,7 +242,7 @@
           "ChangedApiName": "bookingService,List,Create,Get,Update,Delete",
           "ChangeType": "Addition",
           "Description": "Added the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingservice?view=graph-rest-beta) entity and the following CRUD methods: <br> [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list-services?view=graph-rest-beta) <br> [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-services?view=graph-rest-beta) <br> [Get](https://docs.microsoft.com/en-us/graph/api/bookingservice-get?view=graph-rest-beta) <br> [Update](https://docs.microsoft.com/en-us/graph/api/bookingservice-update?view=graph-rest-beta) <br> [Delete](https://docs.microsoft.com/en-us/graph/api/bookingservice-delete?view=graph-rest-beta).",
-          "Target": "bookingService,List,Create,Get,Update,Delete"
+          "Target": "bookingService, List, Create, Get, Update, Delete"
         },
         {
           "Id": "1e88e6e9-3086-4c28-9856-3624cad67e48",
