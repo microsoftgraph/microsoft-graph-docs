@@ -68,7 +68,7 @@ For information about how to create a Microsoft Teams application zip file, see 
 
 ### Response
 
-```
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
