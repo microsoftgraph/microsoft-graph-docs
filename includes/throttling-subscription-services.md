@@ -9,7 +9,7 @@ ms.topic: include
 
 | Request type | Limit per tenant for all apps | Limit per app per tenant |
 | ------------ | ------- | ------- |
-| POST, PUT, DELETE, PATCH | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
+| POST, PUT, DELETE, PATCH | 10000 requests per 20 seconds | 5000 requests per 20 seconds |
 | Any | 10000 requests per 20 seconds | 5000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  

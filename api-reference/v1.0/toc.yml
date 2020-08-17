@@ -4853,7 +4853,7 @@ items:
           href: api/teamsapp-list.md
         - name: Update app in catalog
           href: api/teamsapp-update.md
-        - name: Remove app from catalog
+        - name: Delete app from catalog
           href: api/teamsapp-delete.md
       - name: App
         items:
