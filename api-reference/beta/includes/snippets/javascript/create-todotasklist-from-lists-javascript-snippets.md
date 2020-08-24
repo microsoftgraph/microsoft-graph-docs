@@ -10,8 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/scopedRoleMemberOf')
+const lists = {
+  displayName: "Travel items",
+};
+
+let res = await client.api('/me/todo/lists')
 	.version('beta')
-	.get();
+	.post(lists);
 
 ```

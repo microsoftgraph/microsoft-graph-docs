@@ -6,8 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var scopedRoleMemberOf = await graphClient.Me.ScopedRoleMemberOf
+var application = new Application
+{
+	DisplayName = "Contoso IWA App",
+	SignInAudience = "AzureADMyOrg"
+};
+
+await graphClient.Applications
 	.Request()
-	.GetAsync();
+	.AddAsync(application);
 
 ```

@@ -10,8 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/scopedRoleMemberOf')
+const aAMkADIyAAAhrbPWAAA= = {
+  displayName: "Vacation Plan",
+};
+
+let res = await client.api('/me/todo/lists/AAMkADIyAAAhrbPWAAA=')
 	.version('beta')
-	.get();
+	.update(aAMkADIyAAAhrbPWAAA=);
 
 ```

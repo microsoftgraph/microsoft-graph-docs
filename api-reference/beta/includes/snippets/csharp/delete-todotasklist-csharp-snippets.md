@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var scopedRoleMemberOf = await graphClient.Me.ScopedRoleMemberOf
+await graphClient.Me.Todo.Lists.AAMkADIyAAAhrbPXAAA=
 	.Request()
-	.GetAsync();
+	.DeleteAsync();
 
 ```

@@ -10,8 +10,13 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/scopedRoleMemberOf')
+const application = {
+  displayName: "Contoso IWA App",
+  signInAudience:"AzureADMyOrg"
+};
+
+let res = await client.api('/applications')
 	.version('beta')
-	.get();
+	.post(application);
 
 ```
