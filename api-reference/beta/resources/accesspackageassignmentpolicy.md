@@ -46,6 +46,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Who can request this access package from this policy.|
+|questions|[question](question.md) collection|Questions to ask of the requestor.|
 
 
 ## Relationships
