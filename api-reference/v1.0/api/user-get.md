@@ -165,7 +165,7 @@ If you need a different property set, you can use the OData `$select` query para
 ##### Request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,createdDateTime
 ```
 ##### Response
 <!-- { "blockType": "ignored" } -->
@@ -177,7 +177,8 @@ Content-length: 491
 {
    "displayName": "displayName-value",
    "givenName": "givenName-value",
-   "postalCode": "postalCode-value"
+   "postalCode": "postalCode-value",
+   "createdDateTime":"The created date of the user object"
 }
 ```
 
