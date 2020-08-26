@@ -35,6 +35,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |originSystem|String|The type of the resource in the origin system, such as `SharePointOnline` or `AadGroup`.|
 |resourceType|String|The type of the resource, such as `Application` if it is an Azure AD connected application, or `SharePoint Online Site` for a SharePoint Online site.|
 |url|String|A unique resource locator for the resource, such as the URL for signing a user into an application.|
+|attributes|[resourceAttribute](resourceattribute.md) collection|Attributes to collect from the requestor. |
 
 ## Relationships
 

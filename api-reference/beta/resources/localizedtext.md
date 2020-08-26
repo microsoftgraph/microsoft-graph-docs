@@ -1,6 +1,6 @@
 ---
 title: "localizedText resource type"
-description: "The string variants for questions in an access package assignment policy."
+description: "A localized string variant for a question in an access package assignment policy."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
