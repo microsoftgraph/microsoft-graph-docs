@@ -30,7 +30,7 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id|String|A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde. Key. Not nullable. Read-only.|
+|id|String|The unique identifier for the object. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and do not rely on it being a GUID. Key. Not nullable. Read-only.|
 
 ## Relationships
 

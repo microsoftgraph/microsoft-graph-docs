@@ -36,7 +36,7 @@ Represents the details of one version of a [teamsApp](teamsapp.md).
   "id": "string",
   "teamsAppId": "string",
   "displayName": "string",
-  "version": "string",
+  "version": "string"
 }
 ```
 
