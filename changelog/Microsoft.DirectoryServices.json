@@ -1,24 +1,6 @@
 ﻿{
   "changelog": [
-    {
-      "ChangeList": [
-        {
-          "Id": "e15cc5fd-e7a5-11ea-a541-8f56854a98ac",
-          "ApiChange": "Property",
-          "ChangedApiName": "tenantType",
-          "ChangeType": "Addition",
-          "Description": "Added the **tenantType** property to [organization](/graph/api/resources/organization?view=graph-rest-1.0) resource",
-          "Target": "organization"
-        }
-      ],
-      "Id": "e1580140-e7a5-11ea-a541-8f56854a98ac",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2020-08-26T14:10:22.448Z",
-      "WorkloadArea": "Identity and access (Azure AD)",
-      "SubArea": null
-    },
-    {
+   {
       "ChangeList": [
         {
           "Id": "e15f289b-e7a5-11ea-a541-8f56854a98ac",
