@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Update outlooktaskfolder
+# Update outlooktaskfolder (deprecated)
 
 Namespace: microsoft.graph
 

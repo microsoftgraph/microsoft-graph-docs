@@ -47,8 +47,9 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-| `displayName`  |`String` | The connected organization name.  |
-| `description`  |`String` | The connected organization description. |
+| displayName  |String | The connected organization name.  |
+| description  |String | The connected organization description. |
+| state        |connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
 
 ## Response
 
@@ -71,7 +72,8 @@ Content-length: 100
 
 {
   "displayName":"Connected organization new name",
-  "description":"Connected organization new description"
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
 # [C#](#tab/csharp)
@@ -105,7 +107,8 @@ Content-type: application/json
 {
   "id": "006111db-0810-4494-a6df-904d368bd81b",
   "displayName":"Connected organization new name",
-  "description":"Connected organization new description"
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
 

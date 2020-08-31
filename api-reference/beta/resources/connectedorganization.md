@@ -42,6 +42,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), a connected
 |id|String| Read-only.|
 |modifiedBy|String|UPN of the user who last modified this resource. Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|state|connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
 
 ## Relationships
 
@@ -79,7 +80,8 @@ The following is a JSON representation of the resource.
       "tenantId": "String (identifier)",
       "displayName": "String"
     }
-  ]
+  ],
+  "state": "String"
 }
 ```
 
