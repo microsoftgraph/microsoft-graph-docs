@@ -58,6 +58,7 @@ In the request body, supply the values for relevant fields that should be update
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|
+|mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. <br><br>Supports $filter.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|

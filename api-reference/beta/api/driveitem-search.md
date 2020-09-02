@@ -58,7 +58,7 @@ The following example searches for a match for "Contoso Project" across several 
 <!-- { "blockType": "request", "name": "item_search" }-->
 
 ```msgraph-interactive
-GET /me/drive/root/search(q='Contoso Projec}')
+GET /me/drive/root/search(q='Contoso Project')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]

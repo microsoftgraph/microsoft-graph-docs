@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create attachment
+# Create attachment (deprecated)
 
 Namespace: microsoft.graph
 

@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create outlookTaskFolder
+# Create outlookTaskFolder (deprecated)
 
 Namespace: microsoft.graph
 

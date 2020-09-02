@@ -11,6 +11,14 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## September
+
+### Users
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Change | beta and v1.0 | Updated the mail property on the [user](/graph/api/resources/user) entity to be writeable. |
+
 ## August 2020
 
 ### Identity and access
@@ -29,6 +37,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **cancelledOccurrences**, **exceptionOccurrences**, and **occurrenceId** properties to the [event](/graph/api/resources/event?view=graph-rest-beta) entity.
 
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
+
 ### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -36,6 +50,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Change tracking through [delta queries](/graph/api/event-delta) is available for Microsoft Graph for US Government. |
 | Deletion | Beta | Removed the **includeProperties** property from the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) entity. This property is replaced by the **includeResourceData** property. |
 | Addition | Beta | Added the ability to get [change notifications delivered via Event Hub](change-notifications-delivery.md). |
+
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta and v1.0 | Added the **transcription** property to the [call](/graph/api/resources/call) entity.|
+| Addition | v1.0 | Added the **cancelMediaProcessing** API to the [call](/graph/api/resources/call) entity.|
 
 ### Devices and apps | Cloud printing
 
@@ -79,11 +100,23 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **iosAppStoreUpdateFailedToInstall**, **vppAppHasUpdateAvailable**, **userRejectedUpdate**, **managedAppNoLongerPresent**, **userRejectedInstall** and **userIsNotLoggedIntoAppStore** members to the [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta) enum type|
 
 ### Identity and access
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the following properties to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
 | Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 | Addition | beta | Added [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) internal and external sponsors to entitlement management.  |
+| Addition | beta | Added the inheritsPermissionsFrom property to the [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **connectedOrganizationState** enumeration type and the **state** property to the [connectedOrganization](/graph/api/resources/connectedOrganization?view=graph-rest-beta) resource.|
+| Change   | beta | Renamed **requestorSettings** allowed value from "AllExistingConnectedOrganizationSubjects" to "AllConfiguredConnectedOrganizationSubjects" |
+| Addition | beta | Added the following properties to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource type:<ul><li>**defaultUserRolePermissions**</li><li>**allowedToUseSSPR**</li><li>**allowedToSignUpEmailBasedSubscriptions**</li><li>**allowEmailVerifiedUsersToJoinOrganization**</li></ul>|
+
+### Identity and access | Identity and sign-in
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [b2cUserFlows](/graph/api/resources/b2cuserflows?view=graph-rest-beta) entity for managing user flows in an Azure Active Directory B2C tenant. |
+| Addition | beta | Added the [b2xUserFlows](/graph/api/resources/b2xuserflows?view=graph-rest-beta) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
 
 ### People and workplace intelligence | Profile
 
@@ -855,7 +888,6 @@ Added new APIs and resources for managing and printing to printers by using the 
 | Addition | beta | Added the [printSettings](/graph/api/resources/printsettings) complex type.|
 | Addition | beta | Added the [printUsageSummaryByPrinter](/graph/api/resources/printusagesummarybyprinter) entity.|
 | Addition | beta | Added the [printUsageSummaryByUser](/graph/api/resources/printusagesummarybyuser) entity.|
-
 
 ## February 2020
 
@@ -2797,7 +2829,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added  isMultipleDataLocationsForServicesEnabled property to [Organization](/graph/api/resources/organization?view=graph-rest-beta) resource that allows apps to verify that tenant is enabled for Multi-Geo capabilities. Added preferredDataLocation property to [user](/graph/api/resources/user?view=graph-rest-beta) and [group](/graph/api/resources/group?view=graph-rest-beta) resources that allow setting preferred data location for a user and group.|
+| Addition | v1.0 | Added the **isMultipleDataLocationsForServicesEnabled** property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) resource, which allows apps to verify that a tenant is enabled for multi-geo capabilities. Added the **preferredDataLocation** property to the [group](/graph/api/resources/group?view=graph-rest-beta) resource, which allows for setting a preferred data location for a group.|
 | Addition | v1.0 | Added  [onPremisesProvisioningErrors](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-1.0) property to the [User](/graph/api/resources/user?view=graph-rest-1.0) and [Group](/graph/api/resources/group?view=graph-rest-1.0) entities that represents directory synchronization errors when synchronizing on-premises directories to Azure Active Directory when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector).|
 | Addition | v1.0 | Added  [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0) property to the [User](/graph/api/resources/user?view=graph-rest-1.0) entity that contains fifteen custom extension attribute properties. For an onPremisesSyncEnabled user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties may be set during creation or update.|
 |Addition|v1.0|Added the **onPremisesDomainName**, **onPremisesSamAccountName**, and **onPremisesUserPrincipalName** properties to the [User](/graph/api/resources/user?view=graph-rest-1.0) entity|

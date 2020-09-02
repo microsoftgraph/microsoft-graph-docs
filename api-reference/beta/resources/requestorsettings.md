@@ -22,8 +22,8 @@ Used for the **requestorSettings** property of an [access package assignment pol
 |Users in your directory who are members of a group|`SpecificDirectorySubjects`|[groupMembers](groupmembers.md)|
 |Users in your directory with `userType` value of `member`|`AllExistingDirectoryMemberUsers`|empty array|
 |Users in your directory|`AllExistingDirectorySubjects`|empty array|
-|Users in specific other connected organizations already configured|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](connectedorganizationmembers.md)|
-|Users from any other connected organizations already configured|`AllExistingConnectedOrganizationSubjects`|empty array|
+|Users in specific connected organizations|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](connectedorganizationmembers.md)|
+|Users from any connected organizations that have the state property of the connected organization set to `configured`.|`AllConfiguredConnectedOrganizationSubjects`|empty array|
 |Any user|`AllExternalSubjects`|empty array|
 
 ## Properties
