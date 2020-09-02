@@ -18,13 +18,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Change | beta and v1.0 | Updated the mail property on the [user](/graph/api/resources/user) entity to be writeable. |
+| Addition | v1.0 |Added the **createdDateTime** property to the [user](/graph/api/resources/user) resource.|
 
 ## August 2020
-
-### Identity and access
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 |Added the createdDateTime property to the user resource.|
 
 ### Applications
 | **Change type** | **Version**   | **Description**                          |
