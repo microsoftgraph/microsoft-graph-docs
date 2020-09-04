@@ -19,7 +19,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ### Teamwork
 - Get the publishing status of a Microsoft Teams [app](/graph/api/resources/teamsapp) through the **publishingState** property of the [app definition](/graph/api/resources/teamsappdefinition). The possible status values are `submitted`, `published`, and `rejected`. See an [example](/graph/api/teamsapp-list?view=graph-rest-1.0&tabs=http#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state).
-- Use the `AppCatalog.Submit` delegated permission to allow a user to [submit an app](/graph/api/teamsapp-publish) and request administrator review. Use the same permssion for a user to [cancel](/graph/api/teamsapp-delete) an app submitted in the past that has not been published. 
+- Use the `AppCatalog.Submit` delegated permission to allow a user to [submit an app](/graph/api/teamsapp-publish) and request administrator review. Use the same permission for a user to [cancel](/graph/api/teamsapp-delete) an app submitted in the past that has not been published. 
 
 ## August 2020: New in preview only
 
@@ -38,7 +38,7 @@ Enhance programmatic support for scenarios involving a recurring [event](/graph/
 
 ### Devices and apps | Cloud printing
 - Grant all users and groups access to a [printer share](/graph/api/resources/printershare?view=graph-rest-beta) by using the **allowAllUser** property.
-- Use new delegated and application permissions to access or manage a [print document](/graph/api/resources/printDocument?view=graph-rest-beta), [print job](/graph/api/resources/printjob?view=graph-rest-beta), [printer](/graph/api/resources/printer?view=graph-rest-beta), [printer share](/graph/api/resources/printershare?view=graph-rest-beta), or [print task definition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta). For details, see cloud printing[August](changelog.md#august-2020) updates.
+- Use new delegated and application permissions to access or manage a [print document](/graph/api/resources/printDocument?view=graph-rest-beta), [print job](/graph/api/resources/printjob?view=graph-rest-beta), [printer](/graph/api/resources/printer?view=graph-rest-beta), [printer share](/graph/api/resources/printershare?view=graph-rest-beta), or [print task definition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta). For details, see cloud printing [August](changelog.md#august-2020) updates.
 
 ### Devices and apps | Corporate management
 Intune [August](changelog.md#august-2020) updates in beta.

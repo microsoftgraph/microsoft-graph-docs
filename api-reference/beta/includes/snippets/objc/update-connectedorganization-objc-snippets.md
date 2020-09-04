@@ -14,6 +14,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphConnectedOrganization *connectedOrganization = [[MSGraphConnectedOrganization alloc] init];
 [connectedOrganization setDisplayName:@"Connected organization new name"];
 [connectedOrganization setDescription:@"Connected organization new description"];
+[connectedOrganization setState:@"configured"];
 
 NSError *error;
 NSData *connectedOrganizationData = [connectedOrganization getSerializedDataWithError:&error];

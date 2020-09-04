@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **createdDateTime** property to [user](/graph/api/resources/user?view=graph-rest-1.0) resource",
+          "Description": "Added the **createdDateTime** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
           "Target": "user"
         }
       ],

@@ -1,6 +1,6 @@
 ---
 title: "call: cancelMediaProcessing"
-description: "Cancels media processing for any in-progress PlayPrompt or RecordResponse operations."
+description: "Cancels media processing for any in-progress playPrompt or recordResponse operations."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancels processing for any in-progress [play prompt](./call-playprompt.md) or [record response](./call-record.md) operations.
+Cancels processing for any in-progress media operations.
+
+Media operations refer to the IVR operations [playPrompt](./call-playprompt.md) and [recordResponse](./call-record.md), which are by default queued to process in order. The **cancelMediaProcessing** method cancels any operation that is in-process as well as operations that are queued. For example, this API can be used to clean up the IVR operation queue for a new media operation. However, it will not cancel a **ubscribeToTone** operation because it operates independent of any operation queue.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -137,7 +139,7 @@ Content-Type: application/json
           "@odata.type": "#microsoft.graph.resultInfo",
           "code": 400,
           "subcode": 8508,
-          "message": "Action falied, the operation was cancelled."
+          "message": "Action failed, the operation was cancelled."
         },
 		"recordingLocation": "",
         "recordingAccessToken": "",

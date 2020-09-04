@@ -37,6 +37,7 @@ A unifiedRoleDefinition is a collection of permissions listing the operations th
 |resourceScopes|String collection| List of scopes permissions granted by the role definition apply to. Currently only "/" is supported. Read-only when isBuiltIn is true. **DO NOT USE. This is going to be deprecated soon. Attach scope to role assignment** | 
 |rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) collection| List of permissions included in the role. Read-only when isBuiltIn is true. Required. |
 |templateId|String| Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true. |
+|inheritsPermissionsFrom| [unifiedRoleDefinition](unifiedroledefinition.md) collection| Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute. |
 |version|String| Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.|
 
 ## Relationships
@@ -67,6 +68,7 @@ The following is a JSON representation of the resource.
   "resourceScopes": ["String"],
   "rolePermissions": [{"@odata.type": "microsoft.graph.unifiedRolePermission"}],
   "templateId": "String",
+  "inheritsPermissionsFrom": [{"@odata.type": "microsoft.graph.unifiedRoleDefinition"}],
   "version": "String"
 }
 ```

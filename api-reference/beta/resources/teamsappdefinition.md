@@ -39,7 +39,7 @@ The details of one version of a [teamsApp](teamsapp.md).
   "id": "string",
   "teamsAppId": "string",
   "displayName": "Test App",
-  "version": "1.0.0",
+  "version": "1.0.0"
 }
 ```
 

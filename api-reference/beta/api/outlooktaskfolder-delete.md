@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Delete outlookTaskFolder
+# Delete outlookTaskFolder (deprecated)
 
 Namespace: microsoft.graph
 

@@ -14,8 +14,12 @@ const team = {
   template@odata.bind: "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   displayName: "My Sample Team",
   description: "My Sample Team’s Description",
-  owners@odata.bind: [
-    "https://graph.microsoft.com/beta/users('userId')"
+  members@odata.bind: [
+            {
+            @odata.type: "#microsoft.graph.aadUserConversationMember",
+            roles: ["owner"],
+            userId: "0040b377-61d8-43db-94f5-81374122dc7e"
+        }
   ]
 };
 
