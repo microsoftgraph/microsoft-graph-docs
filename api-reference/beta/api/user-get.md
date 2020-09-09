@@ -176,14 +176,14 @@ Content-length: 491
 
 ### Example 3: Users request using $select
 
-If you need a different property set, you can use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
+If you need a different property set, you can use the OData `$select` query parameter. For example, to return **displayName**, **givenName**, and **postalCode**, add the following to your query `$select=displayName,givenName,postalCode`.
 
-##### Request
+#### Request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,createdDateTime
 ```
-##### Response
+#### Response
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
