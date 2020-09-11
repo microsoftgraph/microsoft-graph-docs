@@ -11,34 +11,32 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new reply to a [message](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
+Create a new reply to a [chatMessage](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
-## Permissions
+> **Note**: It is a violation of the [terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | ChannelMessage.Send, Group.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-| Application                           | Not supported. |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/channels/{id}/messages/{id}/replies
 ```
-
 ## Request headers
-
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-
 In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
 ## Response
@@ -46,8 +44,11 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
 ## Example
-### Request
 
+For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).
+
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -55,7 +56,7 @@ If successful, this method returns `201 Created` response code with the [message
   "name": "post_reply_message"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/replies
+POST https://graph.microsoft.com/v1.0 /teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
 
 {
@@ -77,14 +78,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reply-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-reply-message-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
+
 
 ### Response
 
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
