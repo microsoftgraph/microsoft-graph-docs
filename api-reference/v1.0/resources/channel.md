@@ -1,7 +1,7 @@
 ---
 title: "channel resource type"
-description: "A channel is a collection of messages within a team. "
-author: "nkramer"
+description: "A channel is a collection of chatMessages within a team. "
+author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[Teams](../resources/team.md) are made up of channels, which are the conversations you have with your teammates. 
-Each channel is dedicated to a specific topic, department, or project.
-Channels are where the work actually gets done - where text, audio, and video conversations open to the whole team happen,
+[Teams](../resources/team.md) are made up of channels, which are the conversations you have with your teammates. Each channel is dedicated to a specific topic, department, or project. Channels are where the work actually gets done - where text, audio, and video conversations open to the whole team happen,
 where files are shared, and where tabs are added.
 
 ## Methods
@@ -25,37 +23,61 @@ where files are shared, and where tabs are added.
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
-|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
-|[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
-|[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
-|[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
+|[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
+|[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
+|[List channel members](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) collection| List the members of a channel. |
+|[Get channel member](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Get a member of a channel. |
+|[Add channel member](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel. Only supported for `channelType` of `private`.|
+|[Update channel member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member of a channel. Only supported for `channelType` of `private`.|
+|[Delete channel member](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a member of a channel. Only supported for `channelType` of `private`.|
+|[Create chatMessage in a channel](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
+|[Create chatMessage reply in a channel](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel.|
+|[Get files folder](../api/driveitem-get.md)| [driveItem](driveitem.md) | Retrieves the details of the SharePoint folder where the files for the channel are stored. |
 
 ## Properties
 
-| Property   | Type | Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |description|String|Optional textual description for the channel.|
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
+|id|String|The channel's unique identifier. Read-only.|
+|isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
-|id|String|The channels's unique identifier. Read-only.|
-|webUrl|String|A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
+|webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and cannot be changed. Default: standard.|
+|createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
+
+### Instance attributes
+
+Instance attributes are properties with special behaviors. These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
+
+| Property name| Type   | Description
+|:-----------------------|:-------|:-------------------------|
+|@microsoft.graph.channelCreationMode|string|Indicates that the channel is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
+
+> **Note**: `ChannelCreationMode`  is an enum that takes the value `migration`.
+
+For a POST request example, see [Request (create channel in migration state)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state).
 
 ## Relationships
 
-| Relationship | Type | Description|
+| Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](./chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
+|messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
+|members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
-
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "optionalProperties": [
+    "messages"
+  ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"
 }-->
@@ -64,20 +86,24 @@ Here is a JSON representation of the resource
 {
   "description": "string",
   "displayName": "string",
-  "email": "string (identifier)",
-  "id": "string",
-  "webUrl": "string"
+  "id": "string (identifier)",
+  "isFavoriteByDefault": true,
+  "email": "string",
+  "webUrl": "string",
+  "membershipType": "channelMembershipType",
+  "createdDateTime": "string (timestamp)"
 }
-
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "channel resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
