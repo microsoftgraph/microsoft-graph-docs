@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -24,7 +24,7 @@
           "ChangedApiName": "printTask,printTaskDefinition,printTaskStatus,printTaskTrigger",
           "ChangeType": "Addition",
           "Description": "Added the following resources to the Universal Print API: \u003Cul\u003E\u003Cli\u003E[printTask](https://docs.microsoft.com/en-us/graph/api/resources/printtask?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[printTaskDefinition](https://docs.microsoft.com/en-us/graph/api/resources/printtaskdefinition?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[printTaskStatus](https://docs.microsoft.com/en-us/graph/api/resources/printtaskstatus?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[printTaskTrigger](https://docs.microsoft.com/en-us/graph/api/resources/printtasktrigger?view=graph-rest-beta)\u003C/li\u003E\u003C/ul\u003E",
-          "Target": "printTask,printTaskDefinition,printTaskStatus,printTaskTrigger"
+          "Target": "printTask, printTaskDefinition, printTaskStatus, printTaskTrigger"
         },
         {
           "Id": "135e564d-8b5b-4af0-ad8e-0aea2a692996",

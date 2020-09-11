@@ -1,5 +1,5 @@
 ---
-title: "Use the Azure AD identity protection APIs (preview)"
+title: "Use the Azure AD identity protection APIs"
 description: "You can use Microsoft Graph to query the Identity Protection APIs to receive information about risk detected by Azure AD Identity Protection."
 author: "cloudhandler"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
 
-# Use the Azure AD identity protection API (preview)
+# Use the Azure AD identity protection API
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ Identity Protection is a tool that allows organizations to discover, investigate
 
 * [identityRiskEvents](identityriskevent.md) - Query Microsoft Graph for a list of risk detections and associated information. This API is deprecated; we recommend that you use **riskDetections** instead.
 
->[!NOTE]
+>[!CAUTION]
 >The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 ## See also

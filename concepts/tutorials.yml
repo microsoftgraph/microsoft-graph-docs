@@ -64,6 +64,10 @@ landingContent:
         links:
           - text: Azure Functions
             url: /graph/tutorials/azure-functions
+          - text: Power Automate
+            url: /graph/tutorials/power-automate
+          - text: SharePoint Framework
+            url: /graph/tutorials/spfx
   - title: Scenarios
     linkLists:
       - linkListType: tutorial

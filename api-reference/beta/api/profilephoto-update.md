@@ -13,11 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there
-is currently a limit of 8MB on the total size of each REST request, this limits the size of the photo
-you can add to under 8MB.
+Update the photo for any user in the tenant, including the signed-in user or the specified group or contact. Because there
+is currently a limit of 8MB on the total size of each REST request, the size of the photo you can add is limited to under 8MB.
 
-Use only PUT for this operation in the beta version.
+Only use PUT for this operation.
 
 > **Note**:  When updating the **user** photo, this operation first attempts to update the photo in Microsoft 365. If that fails (due to the user not having a mailbox), this API will attempt to update the photo in Azure Active Directory.
 
@@ -45,6 +44,14 @@ PUT /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
+
+To update the photo for a team:
+
+<!-- { "blockType": "ignored" } -->
+```http
+PUT /groups/{teamId}/photo/$value`
+```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -59,8 +66,8 @@ In the request body, include the binary data of the photo in the request body.
 If successful, this method returns a `200 OK` response code.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -84,8 +91,10 @@ Binary data for the image
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

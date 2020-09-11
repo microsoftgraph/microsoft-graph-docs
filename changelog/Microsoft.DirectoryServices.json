@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -40,7 +40,7 @@
           "ChangedApiName": "acquireAccessToken,synchronization",
           "ChangeType": "Addition",
           "Description": "Added the [acquireAccessToken](https://docs.microsoft.com/en-us/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) method to the [synchronization](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronization?view=graph-rest-beta) resource",
-          "Target": "acquireAccessToken,synchronization"
+          "Target": "acquireAccessToken, synchronization"
         },
         {
           "Id": "4d0e93d9-7b06-4b52-91d9-9766a15d3615",
@@ -82,7 +82,7 @@
           "ChangedApiName": "getAvailableExtensionProperties,directoryObject",
           "ChangeType": "Addition",
           "Description": "Added the [getAvailableExtensionProperties](https://docs.microsoft.com/en-us/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) method to the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
-          "Target": "getAvailableExtensionProperties,directoryObject"
+          "Target": "getAvailableExtensionProperties, directoryObject"
         },
         {
           "Id": "4d0e93d9-7b06-4b52-91d9-9766a15d3615",

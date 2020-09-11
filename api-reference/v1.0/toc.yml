@@ -122,6 +122,8 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/1.0
       - name: Upload large files
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
+      - name: Use beta API
+        href: /graph/sdks/use-beta?context=graph/api/1.0
   - name: Use the toolkit
     items:
       - name: Toolkit overview
@@ -584,18 +586,21 @@ items:
         - name: List children
           href: api/driveitem-list-children.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -970,8 +975,9 @@ items:
         - name: Delete
           href: api/calendarpermission-delete.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -983,36 +989,39 @@ items:
         - name: Delete category
           href: api/outlookcategory-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+      - name: Place
+        items:
         - name: Place
-          items:
-          - name: Place
-            href: resources/place.md
-          - name: Room type
-            href: resources/room.md
-          - name: Room list type
-            href: resources/roomlist.md
-          - name: List places
-            href: api/place-list.md
-          - name: Get place
-            href: api/place-get.md
-          - name: Update place
-            href: api/place-update.md
+          href: resources/place.md
+        - name: Room type
+          href: resources/room.md
+        - name: Room list type
+          href: resources/roomlist.md
+        - name: List places
+          href: api/place-list.md
+        - name: Get place
+          href: api/place-get.md
+        - name: Update place
+          href: api/place-update.md
     - name: Change notifications
       displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
@@ -1062,6 +1071,8 @@ items:
             href: api/call-playprompt.md
           - name: Record response
             href: api/call-record.md
+          - name: Cancel media processing
+            href: api/call-cancelmediaprocessing.md
           - name: Subscribe to tone
             href: api/call-subscribetotone.md
         - name: Participant
@@ -3527,7 +3538,7 @@ items:
         - name: Update schema extension
           href: api/schemaextension-update.md
         - name: Delete schema extension
-          href: api/schemaextension-delete.md 
+          href: api/schemaextension-delete.md
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
@@ -3904,7 +3915,7 @@ items:
           href: resources/invitation.md
           items:
           - name: Create invitation
-            href: api/invitation-post.md    
+            href: api/invitation-post.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -4054,8 +4065,9 @@ items:
         - name: Delete attachment
           href: api/attachment-delete.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -4137,18 +4149,21 @@ items:
         - name: Delete rule
           href: api/messagerule-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -4321,8 +4336,9 @@ items:
         - name: Get contact delta
           href: api/contact-delta.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -4334,18 +4350,21 @@ items:
         - name: Delete category
           href: api/outlookcategory-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property

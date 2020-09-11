@@ -32,7 +32,7 @@ Create new users in your organization or update the resources and relationships 
 
 You can view, query, and update user calendar and calendar groups associated with a user, including:
 
-- List and create events on a users calendar.
+- List and create events on a user's calendar.
 - View tasks assigned to a user.
 - Find free meeting times for a set of users.
 - Get a list of reminders set on a user's calendar.

@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/members/$ref
+POST /groups/{group-id}/members/$ref
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ The following is an example of the request.
   "name": "add_group_member"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/members/$ref
+POST https://graph.microsoft.com/beta/groups/{group-id}/members/$ref
 Content-type: application/json
 Content-length: 30
 

@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -24,7 +24,7 @@
           "ChangedApiName": "proposedNewTime,responseType",
           "ChangeType": "Addition",
           "Description": "Added the [eventMessageResponse](https://docs.microsoft.com/en-us/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) entity that is based on [eventMessage](https://docs.microsoft.com/en-us/graph/api/resources/eventmessage?view=graph-rest-1.0), and in addition, includes the **proposedNewTime** and **responseType** properties.",
-          "Target": "eventMessageResponse,eventMessage"
+          "Target": "eventMessageResponse, eventMessage"
         },
         {
           "Id": "db75e287-7a99-46be-983e-90825180bf6e",

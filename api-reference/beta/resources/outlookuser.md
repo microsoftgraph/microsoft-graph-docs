@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
 Represents the Outlook services available to a user.
 
 
@@ -22,14 +24,15 @@ Represents the Outlook services available to a user.
 |:---------------|:--------|:----------|
 |[Create category](../api/outlookuser-post-mastercategories.md) | [outlookCategory](outlookcategory.md) |Create an **outlookCategory** object in the user's master list of categories.|
 |[List categories](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) collection |Get all the categories that have been defined for the user.|
-|[Create outlookTaskFolder](../api/outlookuser-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Create a task folder in the default task group (`My Tasks`) of the user's mailbox.|
-|[List taskFolders](../api/outlookuser-list-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md) collection| Get all the Outlook task folders in the user's mailbox.|
-|[Create outlookTaskGroup](../api/outlookuser-post-taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md)| Create an Outlook task group in the user's mailbox.|
-|[List taskGroups](../api/outlookuser-list-taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md) collection| Get all the Outlook task groups in the user's mailbox.|
-|[Create outlookTask](../api/outlookuser-post-tasks.md) |[outlookTask](outlooktask.md)| Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.|
-|[List tasks](../api/outlookuser-list-tasks.md) |[outlookTask](outlooktask.md) collection| Get all the Outlook tasks in the user's mailbox.|
 |[supportedLanguages](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md) collection | Get the list of locales and languages that is supported for the user, as configured on the user's mailbox server. |
 |[supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md) collection | Get the list of time zones that is supported for the user, as configured on the user's mailbox server. |
+|[Create outlookTaskFolder](../api/outlookuser-post-taskfolders.md) (deprecated) |[outlookTaskFolder](outlooktaskfolder.md)| Create a task folder in the default task group (`My Tasks`) of the user's mailbox.|
+|[List taskFolders](../api/outlookuser-list-taskfolders.md) (deprecated) |[outlookTaskFolder](outlooktaskfolder.md) collection| Get all the Outlook task folders in the user's mailbox.|
+|[Create outlookTaskGroup](../api/outlookuser-post-taskgroups.md) (deprecated) |[outlookTaskGroup](outlooktaskgroup.md)| Create an Outlook task group in the user's mailbox.|
+|[List taskGroups](../api/outlookuser-list-taskgroups.md) (deprecated) |[outlookTaskGroup](outlooktaskgroup.md) collection| Get all the Outlook task groups in the user's mailbox.|
+|[Create outlookTask](../api/outlookuser-post-tasks.md) (deprecated) |[outlookTask](outlooktask.md)| Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.|
+|[List tasks](../api/outlookuser-list-tasks.md) (deprecated) |[outlookTask](outlooktask.md) collection| Get all the Outlook tasks in the user's mailbox.|
+
 
 
 ## Properties
@@ -39,9 +42,9 @@ None
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |masterCategories|[outlookCategory](../resources/outlookcategory.md) collection| A list of categories defined for the user. | 
-|taskFolders|[outlookTaskFolder](outlooktaskfolder.md) collection| The user's Outlook task folders. Read-only. Nullable.|
-|taskGroups|[outlookTaskGroup](outlooktaskgroup.md) collection| The user's Outlook task groups. Read-only. Nullable.|
-|tasks|[outlookTask](outlooktask.md) collection| The user's Outlook tasks. Read-only. Nullable.|
+|taskFolders (deprecated)|[outlookTaskFolder](outlooktaskfolder.md) collection| The user's Outlook task folders. Read-only. Nullable.|
+|taskGroups (deprecated)|[outlookTaskGroup](outlooktaskgroup.md) collection| The user's Outlook task groups. Read-only. Nullable.|
+|tasks (deprecated)|[outlookTask](outlooktask.md) collection| The user's Outlook tasks. Read-only. Nullable.|
 
 ## JSON representation
 

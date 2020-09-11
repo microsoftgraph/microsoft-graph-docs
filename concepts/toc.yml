@@ -44,8 +44,6 @@ items:
             href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Azure Functions
             href: /graph/tutorials/azure-functions
-          - name: Microsoft Flow
-            href: /graph/tutorials/flow
           - name: iOS Objective-C
             href: /graph/tutorials/ios-objectivec
           - name: iOS Swift
@@ -58,6 +56,8 @@ items:
             href: /graph/tutorials/node
           - name: PHP
             href: /graph/tutorials/php
+          - name: Power Automate
+            href: /graph/tutorials/power-automate
           - name: Python
             href: /graph/tutorials/python
           - name: React
@@ -66,6 +66,8 @@ items:
             href: /graph/tutorials/react-native
           - name: Ruby
             href: /graph/tutorials/ruby
+          - name: SharePoint Framework
+            href: /graph/tutorials/spfx
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -195,6 +197,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Authentication methods
             href: authenticationmethods-get-started.md
+          - name: Governance
+            items:
+              - name: Create an access package
+                href: tutorial-access-package-api.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -505,6 +511,8 @@ items:
             href: sdks/batch-requests.md
           - name: Upload large files
             href: sdks/large-file-upload.md
+          - name: Use beta API
+            href: sdks/use-beta.md
       - name: Use the toolkit
         items:
           - name: Toolkit overview

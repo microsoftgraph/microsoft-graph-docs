@@ -126,6 +126,8 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/beta
       - name: Upload large files
         href: /graph/sdks/large-file-upload?context=graph/api/beta
+      - name: Use beta API
+        href: /graph/sdks/use-beta?context=graph/api/beta
   - name: Use the toolkit
     items:
       - name: Toolkit overview
@@ -417,7 +419,7 @@ items:
         - name: Get
           href: api/regionalandlanguagesettings-get.md
         - name: Update
-          href: api/regionalandlanguagesettings-update.md   
+          href: api/regionalandlanguagesettings-update.md
       - name: Profile (preview)
         items:
         - name: Profile
@@ -425,7 +427,7 @@ items:
         - name: Get user's profile
           href: api/profile-get.md
         - name: Delete user's profile
-          href: api/profile-delete.md      
+          href: api/profile-delete.md
       - name: Teamwork
         items:
         - name: Installed app
@@ -618,18 +620,21 @@ items:
         - name: List children
           href: api/driveitem-list-children.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -692,7 +697,7 @@ items:
         - name: Get open extension
           href: api/opentypeextension-get.md
     - name: Applications
-      items: 
+      items:
       - name: Application
         href: resources/application.md
         items:
@@ -830,18 +835,18 @@ items:
           - name: Get
             href: api/connector-get.md
           - name: List memberOf
-            href: api/connector-list-memberof.md 
+            href: api/connector-list-memberof.md
           - name: Add connector to connectorGroup
             href: api/connector-post-memberof.md
         - name: Connector group
           href: resources/connectorgroup.md
           items:
-          - name: List                 
+          - name: List
             href: api/connectorgroup-list.md
           - name: Create
-            href: api/connectorgroup-post.md               
+            href: api/connectorgroup-post.md
           - name: Get
-            href: api/connectorgroup-get.md 
+            href: api/connectorgroup-get.md
           - name: Update
             href: api/connectorgroup-update.md
           - name: Delete
@@ -980,12 +985,12 @@ items:
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
         - name: Acquire access token
-          href: api/synchronization-synchronization-acquireaccesstoken.md 
+          href: api/synchronization-synchronization-acquireaccesstoken.md
         - name: Directory definition
           href: resources/synchronization-directorydefinition.md
           items:
           - name: Discover
-            href: api/directorydefinition-discover.md  
+            href: api/directorydefinition-discover.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -1187,8 +1192,9 @@ items:
         - name: Reminder view
           href: api/user-reminderview.md
       - name: Category
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -1200,18 +1206,21 @@ items:
         - name: Delete category
           href: api/outlookcategory-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -9685,7 +9694,7 @@ items:
           - name: Create appliesTo
             href: api/featurerolloutpolicy-post-appliesto.md
           - name: Delete appliesTo
-            href: api/featurerolloutpolicy-delete-appliesto.md      
+            href: api/featurerolloutpolicy-delete-appliesto.md
         - name: Organization
           href: resources/organization.md
           items:
@@ -9878,9 +9887,10 @@ items:
         - name: Identity protection
           href: resources/identityprotection-root.md
           items:
-          - name: Identity risk events
-            href: resources/identityriskevent.md
+          - name: Identity risk events (deprecated)
             items:
+            - name: Identity risk event
+              href: resources/identityriskevent.md
             - name: List identityRiskEvent
               href: api/identityriskevent-list.md
             - name: Get identityRiskEvent
@@ -9910,15 +9920,17 @@ items:
             - name: Get unfamiliarLocationRiskEvent
               href: api/unfamiliarlocationriskevent-get.md
           - name: Risk detection
-            href: resources/riskdetection.md
             items:
+            - name: Risk detection
+              href: resources/riskdetection.md
             - name: List risk detections
               href: api/riskdetection-list.md
             - name: Get risk detection
               href: api/riskdetection-get.md
           - name: Risky user
-            href: resources/riskyuser.md
             items:
+            - name: Risky user
+              href: resources/riskyuser.md
             - name: List risky users
               href: api/riskyusers-list.md
             - name: Get risky user
@@ -9930,8 +9942,11 @@ items:
             - name: Dismiss
               href: api/riskyusers-dismiss.md
         - name: Identity provider
-          href: resources/identityprovider.md
           items:
+          - name: Identity provider type
+            href: resources/identityprovider.md
+          - name: OpenID Connect identity provider type
+            href: resources/openidconnectprovider.md
           - name: List
             href: api/identityprovider-list.md
           - name: Create
@@ -10116,18 +10131,54 @@ items:
           - name: Delete
             href: api/trustframeworkpolicy-delete.md
         - name: User flows
-          href: resources/identityuserflow.md
           items:
-          - name: List
-            href: api/identityuserflow-list.md
-          - name: Create
-            href: api/identityuserflow-post-userflows.md
-          - name: Get
-            href: api/identityuserflow-get.md
-          - name: Delete
-            href: api/identityuserflow-delete.md
+          - name: User flow
+            href: resources/identityuserflow.md
+            items:
+            - name: List
+              href: api/identityuserflow-list.md
+            - name: Create
+              href: api/identityuserflow-post-userflows.md
+            - name: Get
+              href: api/identityuserflow-get.md
+            - name: Delete
+              href: api/identityuserflow-delete.md
+          - name: B2C user flows
+            href: resources/b2cuserflows.md
+            items:
+             - name: List
+               href: api/b2cuserflows-list.md
+             - name: Create
+               href: api/b2cuserflow-post-b2cuserflows.md
+             - name: Get
+               href: api/b2cuserflows-get.md
+             - name: Delete
+               href: api/b2cuserflows-get.md
+             - name: List identity providers
+               href: api/b2cuserflows-list-identityproviders.md
+             - name: Add identity provider
+               href: api/b2cuserflows-update-identityprovider.md
+             - name: Delete identity provider
+               href: api/b2cuserflows-delete-identityprovider.md
+          - name: Self-service sign up user flows
+            href: resources/b2xuserflows.md
+            items:
+             - name: List
+               href: api/b2xuserflows-list.md
+             - name: Create
+               href: api/b2xuserflow-post-b2xuserflows.md
+             - name: Get
+               href: api/b2xuserflows-get.md
+             - name: Delete
+               href: api/b2xuserflows-delete.md
+             - name: List identity providers
+               href: api/b2xuserflows-list-identityproviders.md
+             - name: Add identity provider
+               href: api/b2xuserflows-update-identityprovider.md
+             - name: Delete identity provider
+               href: api/b2xuserflows-delete-identityprovider.md
       - name: Governance
-        items: 
+        items:
         - name: Access reviews
           href: resources/accessreviews-root.md
           items:
@@ -10510,8 +10561,9 @@ items:
         - name: Delete attachment
           href: api/attachment-delete.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -10593,18 +10645,21 @@ items:
         - name: Delete rule
           href: api/messagerule-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -10736,13 +10791,13 @@ items:
           - name: List
             href: api/profile-list-accounts.md
           - name: Create
-            href: api/profile-post-accounts.md  
+            href: api/profile-post-accounts.md
           - name: Get
             href: api/useraccountinformation-get.md
           - name: Update
             href: api/useraccountinformation-update.md
           - name: Delete
-            href: api/useraccountinformation-delete.md  
+            href: api/useraccountinformation-delete.md
         - name: Addresses
           items:
           - name: Item address
@@ -11013,16 +11068,16 @@ items:
         items:
         - name: Profile card property
           href: resources/profilecardproperty.md
-        - name: List 
+        - name: List
           href: api/organizationsettings-list-profilecardproperties.md
         - name: Create
-          href: api/organizationsettings-post-profilecardproperties.md  
+          href: api/organizationsettings-post-profilecardproperties.md
         - name: Get
-          href: api/profilecardproperty-get.md    
+          href: api/profilecardproperty-get.md
         - name: Update
-          href: api/profilecardproperty-update.md  
+          href: api/profilecardproperty-update.md
         - name: Delete
-          href: api/profilecardproperty-delete.md    
+          href: api/profilecardproperty-delete.md
       - name: Insights
         href: resources/iteminsights.md
         items:
@@ -11103,8 +11158,9 @@ items:
         - name: Get open extension
           href: api/opentypeextension-get.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -11141,18 +11197,21 @@ items:
         - name: Get contact delta
           href: api/contact-delta.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -11660,48 +11719,48 @@ items:
           href: resources/termstore-store.md
           items:
           - name: Get
-            href: api/termstore-store-get.md        
+            href: api/termstore-store-get.md
           - name: Update
             href: api/termstore-store-update.md
-        - name: Group        
+        - name: Group
           href: resources/termstore-group.md
-          items:        
+          items:
           - name: Create
             href: api/termstore-group-post.md
-          - name: Get 
-            href: api/termstore-store-get-group.md          
+          - name: Get
+            href: api/termstore-store-get-group.md
           - name: Delete
-            href: api/termstore-group-delete.md   
-          - name: List  
+            href: api/termstore-group-delete.md
+          - name: List
             href: api/termstore-list-groups.md
         - name: Set
           href: resources/termstore-set.md
           items:
-          - name: List 
+          - name: List
             href: api/termstore-group-list-sets.md
           - name: List children
             href: api/termstore-term-list-children.md
-          - name: Create 
-            href: api/termstore-set-post.md  
-          - name: Get 
+          - name: Create
+            href: api/termstore-set-post.md
+          - name: Get
             href: api/termstore-set-get.md
-          - name: Update 
+          - name: Update
             href: api/termstore-set-update.md
-          - name: Delete 
-            href: api/termstore-set-delete.md                  
+          - name: Delete
+            href: api/termstore-set-delete.md
         - name: Term
           href: resources/termstore-term.md
           items:
           - name: List children
-            href: api/termstore-term-list-children.md  
-          - name: Create 
-            href: api/termstore-term-post.md      
-          - name: Get 
+            href: api/termstore-term-list-children.md
+          - name: Create
+            href: api/termstore-term-post.md
+          - name: Get
             href: api/termstore-term-get.md
           - name: Update
             href: api/termstore-term-update.md
-          - name: Delete 
-            href: api/termstore-term-delete.md                     
+          - name: Delete
+            href: api/termstore-term-delete.md
         - name: Relation
           href: resources/termstore-relation.md
           items:
@@ -11850,7 +11909,7 @@ items:
         - name: Get team photo
           href: api/team-get-photo.md
         - name: Update team photo
-          href: api/team-update-photo.md
+          href: api/profilephoto-update.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -12221,7 +12280,7 @@ items:
         - name: Delete task list
           href: api/todotasklist-delete.md
         - name: Get task list delta
-          href: api/todotasklist-delta.md 
+          href: api/todotasklist-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -12317,8 +12376,9 @@ items:
           - name: Create task folder in group
             href: api/outlooktaskfolder-post-tasks.md
         - name: Attachment
-          href: resources/attachment.md
           items:
+          - name: Attachment
+            href: resources/attachment.md
           - name: File attachment type
             href: resources/fileattachment.md
           - name: Item attachment type
@@ -12328,8 +12388,9 @@ items:
           - name: Delete attachment
             href: api/attachment-delete.md
         - name: Categories
-          href: resources/outlookcategory.md
           items:
+          - name: Category
+            href: resources/outlookcategory.md
           - name: List categories
             href: api/outlookuser-list-mastercategories.md
           - name: Create category
@@ -12341,21 +12402,24 @@ items:
           - name: Delete category
             href: api/outlookcategory-delete.md
         - name: Extended properties
-          href: resources/extended-properties-overview.md
           items:
+          - name: Overview
+            href: resources/extended-properties-overview.md
           - name: Single-value extended properties
-            href: resources/singlevaluelegacyextendedproperty.md
             items:
+            - name: Single-value extended property
+              href: resources/singlevaluelegacyextendedproperty.md
             - name: Create single-value property
               href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
             - name: Get single-value property
               href: api/singlevaluelegacyextendedproperty-get.md
-          - name: Multivalue extended properties
-            href: resources/multivaluelegacyextendedproperty.md
+          - name: Multi-value extended properties
             items:
-            - name: Create multivalue property
+            - name: Multi-value extended property
+              href: resources/multivaluelegacyextendedproperty.md
+            - name: Create multi-value property
               href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-            - name: Get multivalue property
+            - name: Get multi-value property
               href: api/multivaluelegacyextendedproperty-get.md
     - name: Workbooks and charts
       displayName: Excel
@@ -12493,4 +12557,4 @@ items:
         - name: Add named item
           href: api/nameditem-add.md
         - name: List range
-          href: api/nameditem-range.md      
+          href: api/nameditem-range.md

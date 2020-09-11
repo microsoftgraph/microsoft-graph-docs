@@ -218,7 +218,7 @@ Content-Type: application/json
 
 ### Response
 
-```
+``` http
 Location: https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/authentication/operations/74bfa1a6-c0e0-4957-8c37-f91048f4959e?aadgdc=BY01P&aadgsu=ssprprod-a
 ```
 

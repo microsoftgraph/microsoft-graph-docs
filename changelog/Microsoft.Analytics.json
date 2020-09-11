@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -16,7 +16,7 @@
           "ChangedApiName": "itemInsightsSettings",
           "ChangeType": "Addition",
           "Description": "Added the **itemInsightsSettings** entity and the following operations: ,  [Get itemInsightSettings](https://docs.microsoft.com/en-us/graph/api/iteminsightssettings-get?view=graph-rest-beta) ,  [Update itemInsightSettings](https://docs.microsoft.com/en-us/graph/api/iteminsightssettings-update?view=graph-rest-beta)",
-          "Target": "Get itemInsightSettings,Update itemInsightSettings"
+          "Target": "Get itemInsightSettings, Update itemInsightSettings"
         }
       ],
       "Id": "39cd76e7-31c8-41fd-84d0-e7a5502668fe",

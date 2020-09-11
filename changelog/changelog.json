@@ -23,7 +23,7 @@
         {
           "Id": "2d94636a-2d78-44d6-8b08-ff2a9121214b",
           "ApiChange": "Resource",
-          "ChangedApiName": "schema extensions,Microsoft Cloud for US Government",
+          "ChangedApiName": "schema extensions,Microsoft Cloud for US Government.",
           "ChangeType": "Addition",
           "Description": "The [schema extensions](https://docs.microsoft.com/en-us/graph/api/resources/schemaextension) feature is now generally available in [Microsoft Cloud for US Government](https://docs.microsoft.com/en-us/graph/deployments).",
           "Target": "schema extensions,Microsoft Cloud for US Government"

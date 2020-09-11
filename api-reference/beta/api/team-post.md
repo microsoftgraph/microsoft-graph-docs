@@ -1,6 +1,6 @@
 ---
-title: "Create a team"
-description: "Create new team."
+title: "Create team"
+description: "Create a new team."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -24,6 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application|Teamwork.Migrate.All|
 
 ## HTTP request
 
@@ -38,7 +39,7 @@ POST /teams
 | Header        | Value                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json          |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 

@@ -70,6 +70,8 @@ The CSV file has the following headers for columns.
 - Outlook 2007
 - Undetermined
 - Report Period
+- Outlook M365
+- Outlook 2019
 
 ### JSON
 
@@ -120,7 +122,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Outlook 2016,Outlook 2013,Outlook 2010,Outlook 2007,Undetermined,Report Period
+Report Refresh Date,Outlook 2016,Outlook 2013,Outlook 2010,Outlook 2007,Undetermined,Report Period,Outlook M365,Outlook 2019
 ```
 
 ### JSON
@@ -169,7 +171,9 @@ Content-Length: 275
       "outlook2010": 1, 
       "outlook2007": 0, 
       "undetermined": 1259, 
-      "reportPeriod": "7"
+      "reportPeriod": "7",
+      "outlookM365": 1350,
+      "outlook2019": 1200
     }
   ]
 }

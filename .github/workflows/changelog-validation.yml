@@ -1,0 +1,14 @@
+name: Validate changelog JSONs
+
+on: [pull_request,push]
+
+jobs:
+  verify-json-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Validate JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: /changelog/Changelog.Schema.json
+          INPUT_JSONS: /changelog/Manual.NonWorkloadChanges.json,/changelog/Microsoft.AAD.Reporting.json,/changelog/Microsoft.Analytics.json,/changelog/Microsoft.Excel.json,/changelog/changelog.json,/changelog/Microsoft.DirectoryServices.json,/changelog/Microsoft.EducationAssignment.json,/changelog/Microsoft.Exchange.json,/changelog/Microsoft.FileServices.json,/changelog/Microsoft.Intune.json,/changelog/Microsoft.NAV.json,/changelog/Microsoft.Office.Tasks.json,/changelog/Microsoft.OneNote.json,/changelog/Microsoft.Search.json,/changelog/Microsoft.SharePoint.json,/changelog/Microsoft.Skype.Calling.json,/changelog/Microsoft.SubscriptionServices.json,/changelog/Microsoft.Teams.Core.json,/changelog/Microsoft.ThreatAssessment.json

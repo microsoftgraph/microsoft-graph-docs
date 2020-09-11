@@ -26846,6 +26846,16 @@
             "source_path": "api-reference/beta/api/photo-delete.md",
             "redirect_url": "/graph/api/resources/profilephoto?view=graph-rest-beta",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/api/application-add-password.md",
+            "redirect_url": "/graph/api/application-addpassword?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "concepts/migrate-azure-ad-graph-overview.md",
+            "redirect_url": "/graph/migrate-azure-ad-graph-planning-checklist",
+            "redirect_document_id": false
         }
     ]
 }

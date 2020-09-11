@@ -20,6 +20,7 @@ MSGraphIdentitySource *identitySources = [[MSGraphIdentitySource alloc] init];
 [identitySources setDisplayName:@"example.com"];
 [identitySourcesList addObject: identitySources];
 [connectedOrganization setIdentitySources:identitySourcesList];
+[connectedOrganization setState:@"proposed"];
 
 NSError *error;
 NSData *connectedOrganizationData = [connectedOrganization getSerializedDataWithError:&error];
