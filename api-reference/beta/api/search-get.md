@@ -1,5 +1,5 @@
 ---
-title: "Search"
+title: "Search Get"
 description: "Retrieve the search resource used to execute queries SEARCHAPI1.0"
 localization_priority: Normal
 author: "nmoreau"

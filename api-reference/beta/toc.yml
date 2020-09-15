@@ -9942,8 +9942,11 @@ items:
             - name: Dismiss
               href: api/riskyusers-dismiss.md
         - name: Identity provider
-          href: resources/identityprovider.md
           items:
+          - name: Identity provider type
+            href: resources/identityprovider.md
+          - name: OpenID Connect identity provider type
+            href: resources/openidconnectprovider.md
           - name: List
             href: api/identityprovider-list.md
           - name: Create
@@ -10128,16 +10131,52 @@ items:
           - name: Delete
             href: api/trustframeworkpolicy-delete.md
         - name: User flows
-          href: resources/identityuserflow.md
           items:
-          - name: List
-            href: api/identityuserflow-list.md
-          - name: Create
-            href: api/identityuserflow-post-userflows.md
-          - name: Get
-            href: api/identityuserflow-get.md
-          - name: Delete
-            href: api/identityuserflow-delete.md
+          - name: User flow
+            href: resources/identityuserflow.md
+            items:
+            - name: List
+              href: api/identityuserflow-list.md
+            - name: Create
+              href: api/identityuserflow-post-userflows.md
+            - name: Get
+              href: api/identityuserflow-get.md
+            - name: Delete
+              href: api/identityuserflow-delete.md
+          - name: B2C user flows
+            href: resources/b2cuserflows.md
+            items:
+             - name: List
+               href: api/b2cuserflows-list.md
+             - name: Create
+               href: api/b2cuserflow-post-b2cuserflows.md
+             - name: Get
+               href: api/b2cuserflows-get.md
+             - name: Delete
+               href: api/b2cuserflows-get.md
+             - name: List identity providers
+               href: api/b2cuserflows-list-identityproviders.md
+             - name: Add identity provider
+               href: api/b2cuserflows-update-identityprovider.md
+             - name: Delete identity provider
+               href: api/b2cuserflows-delete-identityprovider.md
+          - name: Self-service sign up user flows
+            href: resources/b2xuserflows.md
+            items:
+             - name: List
+               href: api/b2xuserflows-list.md
+             - name: Create
+               href: api/b2xuserflow-post-b2xuserflows.md
+             - name: Get
+               href: api/b2xuserflows-get.md
+             - name: Delete
+               href: api/b2xuserflows-delete.md
+             - name: List identity providers
+               href: api/b2xuserflows-list-identityproviders.md
+             - name: Add identity provider
+               href: api/b2xuserflows-update-identityprovider.md
+             - name: Delete identity provider
+               href: api/b2xuserflows-delete-identityprovider.md
       - name: Governance
         items:
         - name: Access reviews
@@ -11870,7 +11909,7 @@ items:
         - name: Get team photo
           href: api/team-get-photo.md
         - name: Update team photo
-          href: api/team-update-photo.md
+          href: api/profilephoto-update.md
       - name: Group (team)
         href: resources/group.md
         items:

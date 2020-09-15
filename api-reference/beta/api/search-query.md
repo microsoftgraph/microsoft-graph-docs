@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Runs the query specified in the request body. Search results are provided in the response.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 ## Permissions
 

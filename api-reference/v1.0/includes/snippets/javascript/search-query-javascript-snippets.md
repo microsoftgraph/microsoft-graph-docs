@@ -26,7 +26,7 @@ const searchResponse = {
       },
       from: 0,
       size: 25,
-      fields: [
+      stored_fields: [
         "title",
         "description"
       ]

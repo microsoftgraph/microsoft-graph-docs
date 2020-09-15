@@ -1,19 +1,19 @@
 ---
-title: "Create Channel"
-description: "Create a new channel in a Microsoft Team, as specified in the request body."
+title: "Create channel"
+description: "Create new channel in a Microsoft Team, as specified in the request body."
 localization_priority: Normal
 author: "clearab"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create Channel
+# Create channel
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.
+Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Channel.Create.Group*, Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All    |
+|Application | Channel.Create.Group*, Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All|
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -40,7 +40,7 @@ POST /teams/{id}/channels
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of [channel](../resources/chan
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [channel](../resources/channel.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body.
 
 ## Examples
 

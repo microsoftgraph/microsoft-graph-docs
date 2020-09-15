@@ -17,7 +17,7 @@ MSGraphAcl *acl = [[MSGraphAcl alloc] init];
 [acl setType: [MSGraphAclType user]];
 [acl setValue:@"49103559-feac-4575-8b94-254814dfca72"];
 [acl setAccessType: [MSGraphAccessType deny]];
-[acl setIdentitySource:@"Azure Active Directory"];
+[acl setIdentitySource:@"azureActiveDirectory"];
 [aclList addObject: acl];
 [externalItem setAcl:aclList];
 MSGraphProperties *properties = [[MSGraphProperties alloc] init];

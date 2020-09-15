@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent a single result within the list of search results.
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Represent a single result within the list of search results.
 
 ## Properties
 
@@ -23,9 +23,14 @@ Represent a single result within the list of search results.
 |:-------------|:------------|:------------|
 |hitId|String|The internal identifier for the item.|
 |rank|Int32|The rank or the order of the result.|
-|summary|String|A summary of the result (if summary is available).|
 |contentSource|String|The name of the contentSource which the **externalItem** is part of .|
+|summary|String|A summary of the result (if summary is available).|
 |resource|[entity](entity.md)|The underlying Graph representation of the search result.|
+|_id (deprecated)|String| Renamed as **hitId**. The internal identifier for the item.|
+|_score (deprecated)|Int32|Renamed as **rank**. The score or the order of the result.|
+|_summary (deprecated)|String|Renamed as **summary**. A summary of the result (if summary is available).|
+|_sortField (deprecated)|String|This property has been removed.|
+|_source (deprecated)|[entity](entity.md)|Renamed as **resource**. The underlying Graph representation of the search result.|
 
 ## JSON representation
 
@@ -42,7 +47,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "_hitId": "String",
+  "hitId": "String",
   "rank": 1,
   "summary": "String",
   "contentSource": "String",

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var aAMkADIyAAAAABrJAAA= = await graphClient.Me.Todo.Lists.AAMkADIyAAAAABrJAAA=
+var todoTaskList = await graphClient.Me.Todo.Lists["AAMkADIyAAAAABrJAAA="]
 	.Request()
 	.GetAsync();
 

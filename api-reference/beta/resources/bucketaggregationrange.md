@@ -1,5 +1,5 @@
 ---
-title: "search: bucketaggregationrange"
+title: "bucketAggregationRange resource type"
 description: "Enables to specify some manual ranges in the aggregation request. This in only applicable to non string refiners : numeric and dates."
 localization_priority: Normal
 author: "nmoreau"
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# bucketaggregationrange resource type
+# bucketAggregationRange resource type
 
 Namespace: microsoft.graph
 
@@ -26,9 +26,18 @@ Enables to specify some manual ranges in the aggregation request. This in only a
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.bucketAggregationRange",
+  "baseType": null
+}-->
+
 ```json
 {
   "from": "String",
-  "to": "String",  
+  "to": "String" 
 }
 ```

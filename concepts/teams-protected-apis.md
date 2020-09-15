@@ -20,7 +20,7 @@ The following APIs are currently protected:
 * [Get a reply to a message](/graph/api/channel-get-messagereply?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * (List chats using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions) doesn't exist, with or without protected API access)
 * [List messages in a chat](/graph/api/chatmessage-list?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Get message in chat](/graph/api/chatmessage-get?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
+* [Get message in chat](/graph/api/chat-get-message?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Create subscription for new chat messages](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [List all hosted content](/graph/api/chatmessage-list-chatmessagehostedcontents?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Get hosted content](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)

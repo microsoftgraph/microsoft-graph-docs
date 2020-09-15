@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview.
+This action allows you to obtain a short-lived embeddable URL for an item in order to render a temporary preview.
 
 If you want to obtain long-lived embeddable links, use the [createLink][] API instead.
 
@@ -26,9 +26,9 @@ To learn more, including how to choose permissions, see [Permissions](/graph/per
 
 | Permission type                        | Permissions (from least to most privileged)
 |:---------------------------------------|:-------------------------------------------
-| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
-| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
-| Application                            | Not supported.
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+| Delegated (personal Microsoft account) | Not supported.
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
 
 ## HTTP request
 

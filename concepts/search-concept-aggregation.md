@@ -10,8 +10,6 @@ ms.prod: "search"
 
 Aggregation enable you to enrich search results by providing a representation of how the results are distributed in the index. 
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
-
 ## Example 1 : Request aggregations for a string property 
 
 ### Request
@@ -26,7 +24,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-          "driveItem"
+          "listItem"
       ],
       "query": {
           "queryString": "test"
@@ -77,19 +75,19 @@ Content-Type: application/json
                     "field": "FileType",
                     "buckets": [
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "docx",
                             "count": 5,
                             "aggregationFilterToken": "\"ǂǂ646f6378\""
                         },
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "xlsx",
                             "count": 3,
                             "aggregationFilterToken": "\"ǂǂ786c7378\""
                         },
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "pptx",
                             "count": 1,
                             "aggregationFilterToken": "\"ǂǂ70707478\""
@@ -101,7 +99,7 @@ Content-Type: application/json
                     "field": "contentclass",
                     "buckets": [
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "STS_ListItem_DocumentLibrary",
                             "count": 9,
                             "aggregationFilterToken": "\"ǂǂ5354535f4c6973744974656d5f446f63756d656e744c696272617279\""
@@ -182,19 +180,19 @@ Content-Type: application/json
                     "field": "Size",
                     "buckets": [
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "Less than 100",
                             "count": 0,
                             "aggregationFilterToken": "range(min, 100)"
                         },
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "100 up to 1000",
                             "count": 0,
                             "aggregationFilterToken": "range(100, 1000)"
                         },
                         {
-                            "@odata.type": "#microsoft.substrateSearch.searchHitsBucket",
+                            "@odata.type": "#microsoft.substrateSearch.searchBucket",
                             "key": "1000 and up",
                             "count": 9,
                             "aggregationFilterToken": "range(1000, max, to=\"le\")"
@@ -213,4 +211,4 @@ Content-Type: application/json
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?preserve-view=true)

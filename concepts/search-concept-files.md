@@ -10,11 +10,12 @@ ms.prod: "search"
 
 You can use the Microsoft Search API to search content stored in SharePoint or OneDrive. The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities. This enables you to return and promote the content that users care about, in a search experience that is consistent with search results in SharePoint.
 
+>[!WARNING]
+>The API Schema has changed : some properties in the request and response are deprecated. See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta#schema-change-deprecation-warning). The samples below use the up to date schema.
+
 The Search API lets you scope what content you want to retrieve in Sharepoint.
 
 You can control the scope of your request to SharepPoint and OneDrive by specifying the **entityType** on the [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta).
-
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 ## Example - Search Files
 

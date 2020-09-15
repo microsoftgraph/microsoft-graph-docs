@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Search API in Microsoft Graph to search custom types"
-description: "You can use the Microsoft Search API to import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) resource, and run search queries on this external content."
+description: "You can use the Microsoft Search API to import external data via the [externalItem](/graph/api/resources/externalitem?preserve-view=true) resource, and run search queries on this external content."
 author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
@@ -8,13 +8,16 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to search custom types ingested with the Microsoft Graph connectors
 
-You can use the Microsoft Search API to search accross content ingested via the [Microsoft Graph connectors](https://docs.microsoft.com/microsoftsearch/connectors-overview). The content can have been imported either via the [built in connectors](https://docs.microsoft.com/microsoftsearch/connectors-gallery) provided by Microsoft, or via a custom connectors implemented through the [Graph Connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta).
+You can use the Microsoft Search API to search accross content ingested via the [Microsoft Graph connectors](https://docs.microsoft.com/microsoftsearch/connectors-overview). The content can have been imported either via the [built in connectors](https://docs.microsoft.com/microsoftsearch/connectors-gallery) provided by Microsoft, or via a custom connectors implemented through the [Graph Connectors ingestion API](/graph/api/resources/indexing-api-overview?preserve-view=true).
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
+>[!WARNING]
+>The API Schema has changed : some properties in the request and response are deprecated. See [more details here](/graph/api/resources/search-api-overview?preserve-view=true#schema-change-deprecation-warning). The samples below use the up to date schema.
+
 Once the content has been ingested, you can use the search API to query that particular content.
 
-To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:
+To search for custom types, specify the following in the [query](/graph/api/search-query?preserve-view=true) method request body:
 
 - The **contentSources** property to include the connection ID that is assigned during the connector setup. It is possible to pass multiple connection ID to search accross multiple connections. The results will be a single list, ranked accross the multiple connections.
 
@@ -119,4 +122,4 @@ Content-Type: application/json
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?preserve-view=true)

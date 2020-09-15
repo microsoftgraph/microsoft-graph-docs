@@ -79,12 +79,17 @@ Follow these steps to enable pull printing:
 
 7. When the user selects one or more jobs to print, your application can [redirect the print job(s)](/graph/api/printjob-redirect?view=graph-rest-beta) to the physical printer and the job will start printing! The redirect call will only succeed if there is a [printTask](/graph/api/resources/printtask?view=graph-rest-beta) in `processing` state on the associated printer started by a trigger that this app created in step 4. The task will automatically be set to `completed` state after redirecting it.
 
+   >**NOTE:** Paused print jobs that are not redirected within 2 days will be deleted.
+
 ## API reference
 Looking for the API reference for this service?
 
 - [Universal Print API in Microsoft Graph beta](/graph/api/resources/print?view=graph-rest-beta)
 
+## Provide feedback
+
+We'd love to hear your feedback about the Universal Print APIs. Provide your suggestions on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+
 ## See also
 
 - [What is Universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)
-- We'd love to hear your feedback about the Universal Print APIs over at [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)!

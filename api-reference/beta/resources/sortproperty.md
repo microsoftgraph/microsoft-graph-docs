@@ -1,5 +1,5 @@
 ---
-title: "search: sortProperty"
+title: "sortProperty resource type"
 description: "Provides the option to sort search results."
 localization_priority: Normal
 author: "nmoreau"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the sort options to order search results
+Represents the sort options to order search results.
 
 ## Properties
 
@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "name": "",
+  "name": "String",
   "isDescending": "true"
 }
 ```

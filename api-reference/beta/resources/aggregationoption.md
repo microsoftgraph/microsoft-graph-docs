@@ -1,5 +1,5 @@
 ---
-title: "search: aggregationOption"
+title: "aggregationOption resource type"
 description: "Specifies the aggregationOption entity"
 localization_priority: Normal
 author: "nmoreau"
@@ -20,18 +20,27 @@ Specifies which aggregations should be returned alongside the search results.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |field|String|Specifies which field the aggregation should be computed on. Required.|
-|size|Int32|The number of [searchHitsBucket](searchHitsBucket.md) to be returned. This is not required when the range are provided manualy in the request specified. Optional.|
+|size|Int32|The number of [searchBucket](searchBucket.md) to be returned. This is not required when the range are provided manualy in the request specified. Optional.|
 |bucketDefinition|[bucketAggregationDefinition](bucketaggregationdefinition.md)|Specifies the criterias to compute the aggregations. Optional.|
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.aggregationOption",
+  "baseType": null
+}-->
+
 ```json
 {
-  "field": "true",
-  "size": "5",
-  "bucketDefinition": "@odata.type": "microsoft.graph.bucketAggregationDefinition"
+  "field": "String",
+  "size": 1024,
+  "bucketDefinition": {"@odata.type": "microsoft.graph.bucketAggregationDefinition"}
 }
 ```
 

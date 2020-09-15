@@ -1071,6 +1071,8 @@ items:
             href: api/call-playprompt.md
           - name: Record response
             href: api/call-record.md
+          - name: Cancel media processing
+            href: api/call-cancelmediaprocessing.md
           - name: Subscribe to tone
             href: api/call-subscribetotone.md
         - name: Participant

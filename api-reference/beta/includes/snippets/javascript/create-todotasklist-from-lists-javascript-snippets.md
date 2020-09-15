@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const lists = {
+const todoTaskList = {
   displayName: "Travel items",
 };
 
 let res = await client.api('/me/todo/lists')
 	.version('beta')
-	.post(lists);
+	.post(todoTaskList);
 
 ```

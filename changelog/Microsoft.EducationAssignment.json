@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -39,7 +39,7 @@
         {
           "Id": "48e0620e-acee-47f6-b9b9-dbca1b922f40",
           "ApiChange": "Resource",
-          "ChangedApiName": "lms,educationExternalSource",
+          "ChangedApiName": "lms, educationExternalSource",
           "ChangeType": "Change",
           "Description": "Added **lms** to the list of possible values for **educationExternalSource**.",
           "Target": ""

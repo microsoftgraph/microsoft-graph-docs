@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -48,7 +48,7 @@
           "ChangedApiName": "storagePlanInformation",
           "ChangeType": "Addition",
           "Description": "Added the [storagePlanInformation](https://docs.microsoft.com/en-us/graph/api/resources/storagePlanInformation?view=graph-rest-1.0) resource. The **storagePlanInformation** resource applies to the [quota](https://docs.microsoft.com/en-us/graph/api/resources/quota?view=graph-rest-1.0) resource.",
-          "Target": "storagePlanInformation,quota"
+          "Target": "storagePlanInformation, quota"
         },
         {
           "Id": "0d1e22ba-ddea-45b5-8aa4-7a5111e9a936",

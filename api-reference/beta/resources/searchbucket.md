@@ -1,5 +1,5 @@
 ---
-title: "search: searchHitsBucket"
+title: "searchBucket resource type"
 description: "Provides for a specific aggregation in the response, the value of a particular bucket."
 localization_priority: Normal
 author: "nmoreau"
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# searchHitsBucket resource type
+# searchBucket resource type
 
 Namespace: microsoft.graph
 
@@ -26,6 +26,15 @@ Provides for a specific aggregation in the response, the value of a particular b
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.searchBucket",
+  "baseType": null
+}-->
 
 ```json
 {

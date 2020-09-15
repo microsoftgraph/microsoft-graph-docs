@@ -48,7 +48,7 @@ Retry-After: 2.128
       "request-id": "94fb3b52-452a-4535-a601-69e0a90e3aa2",
       "status": "429"
     },
-    "message": "Please retry again laster."
+    "message": "Please retry again later."
   }
 }
 ```

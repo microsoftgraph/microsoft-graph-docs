@@ -15,7 +15,7 @@ var externalItem = new ExternalItem
 			Type = AclType.User,
 			Value = "49103559-feac-4575-8b94-254814dfca72",
 			AccessType = AccessType.Grant,
-			IdentitySource = "Azure Active Directory"
+			IdentitySource = "azureActiveDirectory"
 		}
 	}
 };

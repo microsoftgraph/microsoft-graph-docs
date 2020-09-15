@@ -29,7 +29,6 @@ MSGraphProperty *properties = [[MSGraphProperty alloc] init];
 [properties setType: [MSGraphPropertyType String]];
 [properties setIsQueryable:@"true"];
 [properties setIsRetrievable:@"true"];
-[properties setIsRefinable:@"true"];
 [properties setIsSearchable:@"false"];
 [propertiesList addObject: properties];
 MSGraphProperty *properties = [[MSGraphProperty alloc] init];

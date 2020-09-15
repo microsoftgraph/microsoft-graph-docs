@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const tasks = {
+const todoTask = {
   title:"A new task",
   linkedResources: [{
 			webUrl: "http://microsoft.com",
@@ -21,6 +21,6 @@ const tasks = {
 
 let res = await client.api('/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks')
 	.version('beta')
-	.post(tasks);
+	.post(todoTask);
 
 ```

@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -16,7 +16,7 @@
           "ChangedApiName": "Get workbookOperation,workbookOperation",
           "ChangeType": "Addition",
           "Description": "Added the  [Get workbookOperation](https://docs.microsoft.com/en-us/graph/api/workbookoperation-get) method to the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation?view=graph-rest-beta) entity",
-          "Target": "Get workbookOperation,workbookOperation"
+          "Target": "Get workbookOperation, workbookOperation."
         }
       ],
       "Id": "bba36a0a-f4c7-4e3a-a1cc-3510c632b7e2",

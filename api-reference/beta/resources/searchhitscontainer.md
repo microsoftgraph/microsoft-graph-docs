@@ -3,7 +3,7 @@ title: "searchHitsContainer resource type"
 description: "Description on searchHitContainer"
 localization_priority: Normal
 author: "nmoreau"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -28,11 +28,21 @@ Represent the list of search results.
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.searchHitsContainer",
+  "baseType": null
+}-->
+
+
 ```json
 {
   "hits": [{"@odata.type": "microsoft.graph.searchHit"}],
   "moreResultsAvailable": true,
   "total": 1024,
-  "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}]
+  "aggregations": [{"@odata.type": "microsoft.graph.searchAggregation"}]
 }
 ```

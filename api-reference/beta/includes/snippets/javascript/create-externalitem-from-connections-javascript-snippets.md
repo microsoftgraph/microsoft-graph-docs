@@ -17,7 +17,7 @@ const externalItem = {
       type: "user",
       value: "49103559-feac-4575-8b94-254814dfca72",
       accessType: "deny",
-      identitySource: "Azure Active Directory"
+      identitySource: "azureActiveDirectory"
     }
   ],
   properties: {

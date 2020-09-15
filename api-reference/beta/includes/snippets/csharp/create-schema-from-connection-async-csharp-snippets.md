@@ -28,7 +28,6 @@ var schema = new Schema
 			Type = PropertyType.String,
 			IsQueryable = true,
 			IsRetrievable = true,
-			IsRefinable = true,
 			IsSearchable = false
 		},
 		new Property

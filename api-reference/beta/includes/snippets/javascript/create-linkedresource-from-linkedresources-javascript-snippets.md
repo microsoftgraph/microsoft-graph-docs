@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const linkedResources = {
+const linkedResource = {
   @odata.type: "#microsoft.graph.linkedResource",
   webUrl: "http:://microsoft.com",
   applicationName: "Microsoft",
@@ -20,6 +20,6 @@ const linkedResources = {
 
 let res = await client.api('/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources')
 	.version('beta')
-	.post(linkedResources);
+	.post(linkedResource);
 
 ```

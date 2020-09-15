@@ -66,7 +66,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
-The following example shows how to create a group.
+The following example shows how to update a group.
 
 ### Request
 

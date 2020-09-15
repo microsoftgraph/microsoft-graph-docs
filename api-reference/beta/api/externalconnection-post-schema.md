@@ -94,7 +94,6 @@ Prefer: respond-async
       "type": "String",
       "isQueryable": "true",
       "isRetrievable": "true",
-      "isRefinable": "true",
       "isSearchable": "false"
     },
     {

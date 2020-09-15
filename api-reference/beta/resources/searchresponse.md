@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 The searchResponse contains the results from the search query.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## Properties
 
 | Property     | Type        | Description |

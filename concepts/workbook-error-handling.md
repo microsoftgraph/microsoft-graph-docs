@@ -115,7 +115,7 @@ For both the long-running operation pattern and the regular pattern, we recommen
 
 ### 3. Parse the top-level error code
 
-If you can't find the second-level error code listed in the [Error codes](workbook-error-codes.md) topic, we recommend that you follow the instructions provided for top-level errors, which are bound to the status code. For details about top-level error codes and messages, see [Error codes](workbook-error-codes.md).
+If you can't find the second-level error code listed in the [Error codes](workbook-error-codes.md#error-code) topic, we recommend that you follow the instructions provided for top-level errors, which are bound to the status code. For details about top-level error codes and messages, see [Detailed error codes](workbook-error-codes.md#detailed-error-code).
 
 ### 4. Parse the status code
 

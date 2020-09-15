@@ -1,0 +1,3636 @@
+{
+  "type": "object",
+  "properties": {
+    "changelog": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ChangeList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string"
+                    },
+                    "ApiChange": {
+                      "type": "string"
+                    },
+                    "ChangedApiName": {
+                      "type": "string"
+                    },
+                    "ChangeType": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Target": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "Id",
+                    "ApiChange",
+                    "ChangedApiName",
+                    "ChangeType",
+                    "Description",
+                    "Target"
+                  ]
+                }
+              ]
+            },
+            "Id": {
+              "type": "string"
+            },
+            "Cloud": {
+              "type": "string"
+            },
+            "Version": {
+              "type": "string"
+            },
+            "CreatedDateTime": {
+              "type": "string"
+            },
+            "WorkloadArea": {
+              "type": "string"
+            },
+            "SubArea": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "ChangeList",
+            "Id",
+            "Cloud",
+            "Version",
+            "CreatedDateTime",
+            "WorkloadArea",
+            "SubArea"
+          ]
+        }
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "changelog"
+  ]
+}

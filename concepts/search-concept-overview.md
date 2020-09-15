@@ -18,11 +18,11 @@ Microsoft Search is an enterprise search engine that delivers productivity gains
 
 ### One unified search endpoint for Microsoft cloud data
 
-The Microsoft Search API provides one unified search endpoint that you can use to [query](/graph/api/search-query?view=graph-rest-beta) data in the Microsoft cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - that Microsoft Search already indexes.
+The Microsoft Search API provides one unified search endpoint that you can use to [query](/graph/api/search-query?preserve-view=true) data in the Microsoft cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - that Microsoft Search already indexes.
 
 ### Include custom external data in search experience
 
-Customers who want to include data outside of the Microsoft cloud in their search experience can use [connectors](/microsoftsearch/connectors-overview) to connect to a specific data source such as an organization's human resources database or product catalog, and use the Microsoft Search API to seamlessly [query](/graph/search-concept-custom-types) the external data source. The [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) lists a number of ready-to-use connectors. Alternatively, customers can [build connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases), index external custom items, and query specific external data sources as well.
+Customers who want to include data outside of the Microsoft cloud in their search experience can use [connectors](/microsoftsearch/connectors-overview) to connect to a specific data source such as an organization's human resources database or product catalog, and use the Microsoft Search API to seamlessly [query](/graph/api/search-query?preserve-view=true) the external data source. The [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) lists a number of ready-to-use connectors. Alternatively, customers can [build connectors](/graph/api/resources/indexing-api-overview?preserve-view=true#common-use-cases), index external custom items, and query specific external data sources as well.
 
 ### Consistent, up-to-date search experience
 
@@ -32,16 +32,16 @@ When you use the Microsoft Search API, your customers benefit from more personal
 
 The Microsoft Search API supports searching the following content in the Microsoft cloud:
 
-- Outlook email [messages](/graph/api/resources/message?view=graph-rest-beta) and calendar [events](/graph/api/resources/event?view=graph-rest-beta) objects
-- SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem?view=graph-rest-beta)), [lists](/graph/api/resources/list?view=graph-rest-beta), [listItems](/graph/api/resources/listitem?view=graph-rest-beta), [sites](/graph/api/resources/site?view=graph-rest-beta) and [drives](/graph/api/resources/drive?view=graph-rest-beta)
-- Content ingested throught the Graph Connectors platform : [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta)
+- Outlook email [messages](/graph/api/resources/message?preserve-view=true) and calendar [events](/graph/api/resources/event?preserve-view=true) objects
+- SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem?preserve-view=true)), [lists](/graph/api/resources/list?preserve-view=true), [listItems](/graph/api/resources/listitem?preserve-view=true), [sites](/graph/api/resources/site?preserve-view=true) and [drives](/graph/api/resources/drive?preserve-view=true)
+- Content ingested throught the Graph Connectors platform : [externalItems](/graph/api/resources/externalitem?preserve-view=true)
 
 ## API reference
 
 Looking for the API reference for this service?
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
-- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?preserve-view=true)
+- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview?preserve-view=true)
 
 ## Next steps
 
