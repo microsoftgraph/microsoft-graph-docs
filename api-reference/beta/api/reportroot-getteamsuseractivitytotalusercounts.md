@@ -1,19 +1,19 @@
 ---
-title: "reportRoot: getTeamsUserActivityUserCounts"
-description: "Get the number of Microsoft Teams licensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings."
+title: "reportRoot: getTeamsUserActivityTotalUserCounts"
+description: "Get the number of Microsoft Teams licensed or non-licensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
 ---
 
-# reportRoot: getTeamsUserActivityUserCounts
+# reportRoot: getTeamsUserActivityTotalUserCounts
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of Microsoft Teams licensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.
+Get the number of Microsoft Teams licensed or non-licensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityUserCounts(period='D7')
+GET /reports/getTeamsUserActivityTotalUserCounts(period='D7')
 ```
 
 ## Function parameters
@@ -84,14 +84,13 @@ The following is an example that outputs CSV.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivityusercounts_csv"
+  "name": "reportroot_getteamsuseractivitytotalusercounts_csv"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalUserCounts(period='D7')?$format=text/csv
 ```
 
 
@@ -130,14 +129,13 @@ The following is an example that returns JSON.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivityusercounts_json"
+  "name": "reportroot_getteamsuseractivitytotalusercounts_json"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalUserCounts(period='D7')?$format=application/json
 ```
 
 

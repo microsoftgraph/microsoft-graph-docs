@@ -75,7 +75,16 @@ The CSV file has the following headers for columns.
 - Private Chat Message Count
 - Call Count
 - Meeting Count
+- Meetings Organized Count
+- Meetings Attended Count
+- AdHoc Meetings Organized Count
+- AdHoc Meetings Attended Count
+- Scheduled Meetings Organized Count
+- Audio Duration
+- Video Duration
+- Screen Share Duration
 - Has Other Action
+- Is Licensed
 - Report Period
 
 ### JSON
@@ -129,7 +138,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,AdHoc Meetings Organized Count,AdHoc Meetings Attended Count,Scheduled Meetings Organized Count,Audio Duration,Video Duration,Screen Share Duration,Has Other Action,Is Licensed,Report Period
 ```
 
 ### JSON
@@ -174,6 +183,7 @@ Content-Length: 452
     {
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
+      "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 
       "isDeleted": false, 
       "deletedDate": null, 
@@ -184,6 +194,14 @@ Content-Length: 452
       "privateChatMessageCount": 49, 
       "callCount": 2, 
       "meetingCount": 0, 
+      "meetingsOrganizedCount": 0, 
+      "meetingsAttendedCount": 0, 
+      "adHocMeetingsOrganizedCount": 0, 
+      "adHocMeetingsAttendedCount": 0, 
+      "scheduledMeetingsOrganizedCount": 0, 
+      "audioDuration": 00:00:00, 
+      "videoDuration": 00:00:00, 
+      "screenShareDuration": 00:00:00, 
       "hasOtherAction": true, 
       "reportPeriod": "7"
     }

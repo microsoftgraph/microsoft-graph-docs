@@ -13,6 +13,19 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## September 2020
 
+### Reports | Microsoft 365 usage reports
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **isLicensed**, **meetingsOrganizedCount**, **meetingsAttendedCount**, **adHocMeetingsOrganizedCount**, **adHocMeetingsAttendedCount**, **scheduledMeetingsOrganizedCount**, **audioDuration**, **videoDuration**, and **screenShareDuration** properties to the [getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta) API JSON and CSV entity. |
+| Addition | beta | Added the **isLicensed**, **usedChromeOS** and **usedLinux** properties to the [getTeamsDeviceUsageUserDetail](/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta) API JSON and CSV entity. |
+| Addition | beta | Added the **chromeOS** and **linux** properties to the [getTeamsDeviceUsageUserCounts](/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-beta) API JSON and CSV entity. |
+| Addition | beta | Added the **chromeOS** and **linux** properties to the [getTeamsDeviceUsageDistributionUserCounts](/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-beta) API JSON and CSV entity. |
+| Addition | beta | Added the [getTeamsUserActivityTotalCounts](/graph/api/reportRoot-getteamsuseractivitytotalcounts?view=graph-rest-beta) method. |
+| Addition | beta | Added the [getTeamsUserActivityTotalUserCounts](/graph/api/reportRoot-getteamsuseractivitytotalusercounts?view=graph-rest-beta) method. |
+| Addition | beta | Added the [getTeamsDeviceUsageTotalUserCounts](/graph/api/reportRoot-getteamsdeviceusagetotalusercounts?view=graph-rest-beta) method. |
+| Addition | beta | Added the [getTeamsDeviceUsageDistributionTotalUserCounts](/graph/api/reportRoot-getteamsdeviceusagedistributiontotalusercounts?view=graph-rest-beta) method. |
+
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |

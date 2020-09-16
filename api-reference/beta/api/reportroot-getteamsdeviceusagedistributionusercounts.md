@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsDeviceUsageDistributionUserCounts"
-description: "Get the number of Microsoft Teams unique users by device type over the selected time period."
+description: "Get the number of unique Microsoft Teams licensed users by device type over the selected time period."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of Microsoft Teams unique users by device type over the selected time period.
+Get the number of unique Microsoft Teams licensed users by device type over the selected time period.
 
 ## Permissions
 
@@ -68,6 +68,8 @@ The CSV file has the following headers for columns.
 - iOS
 - Mac
 - Windows
+- Chrome OS
+- Linux
 - Report Period
 
 ### JSON
@@ -83,7 +85,6 @@ The following is an example that outputs CSV.
 #### Request
 
 The following is an example of the request.
-
 
 <!-- {
   "blockType": "ignored",
@@ -119,7 +120,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Report Period
+Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Chrome OS,Linux,Report Period
 ```
 
 ### JSON
@@ -129,7 +130,6 @@ The following is an example that returns JSON.
 #### Request
 
 The following is an example of the request.
-
 
 <!-- {
   "blockType": "ignored",
@@ -169,6 +169,8 @@ Content-Length: 243
       "ios": 76, 
       "mac": 40, 
       "windows": 491, 
+      "chromeOS": 100, 
+      "linux": 60, 
       "reportPeriod": "7"
     }
   ]

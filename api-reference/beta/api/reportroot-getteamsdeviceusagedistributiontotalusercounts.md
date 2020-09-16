@@ -1,19 +1,19 @@
 ---
-title: "reportRoot: getTeamsUserActivityUserCounts"
-description: "Get the number of Microsoft Teams licensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings."
+title: "reportRoot: getTeamsDeviceUsageDistributionTotalUserCounts"
+description: "Get the number of unique Microsoft Teams licensed or non-licensed users by device type over the selected time period."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
 doc_type: apiPageType
 ---
 
-# reportRoot: getTeamsUserActivityUserCounts
+# reportRoot: getTeamsDeviceUsageDistributionTotalUserCounts
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of Microsoft Teams licensed users by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.
+Get the number of unique Microsoft Teams licensed or non-licensed users by device type over the selected time period.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityUserCounts(period='D7')
+GET /reports/getTeamsDeviceUsageDistributionTotalUserCounts(period='D7')
 ```
 
 ## Function parameters
@@ -62,17 +62,19 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- Report Date
-- Team Chat Messages
-- Private Chat Messages
-- Calls
-- Meetings
-- Other Actions
+- Web
+- Windows Phone
+- Android Phone
+- iOS
+- Mac
+- Windows
+- Chrome OS
+- Linux
 - Report Period
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[teamsUserActivityUserCounts](../resources/teamsuseractivityusercounts.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a **[teamsDeviceUsageDistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md)** object in the response body.
 
 ## Example
 
@@ -84,14 +86,13 @@ The following is an example that outputs CSV.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivityusercounts_csv"
+  "name": "reportroot_getteamsdeviceusagedistributiontotalusercounts_csv"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionTotalUserCounts(period='D7')?$format=text/csv
 ```
 
 
@@ -119,7 +120,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Other Actions,Report Period
+Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Chrome OS,Linux,Report Period
 ```
 
 ### JSON
@@ -130,14 +131,13 @@ The following is an example that returns JSON.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
-  "name": "reportroot_getteamsuseractivityusercounts_json"
+  "name": "reportroot_getteamsdeviceusagedistributiontotalusercounts_json"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserCounts(period='D7')?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionTotalUserCounts(period='D7')?$format=application/json
 ```
 
 
@@ -150,25 +150,27 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityUserCounts"
+  "@odata.type": "microsoft.graph.teamsDeviceUsageDistributionUserCounts"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 291
+Content-Length: 243
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserCounts)", 
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsDeviceUsageDistributionUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
-      "reportDate": "2017-09-01", 
-      "teamChatMessages": 30, 
-      "privateChatMessages": 21, 
-      "calls": 6, 
-      "meetings": 2, 
-      "otherActions": 17, 
+      "web": 51, 
+      "windowsPhone": 2, 
+      "androidPhone": 34, 
+      "ios": 76, 
+      "mac": 40, 
+      "windows": 491, 
+      "chromeOS": 100, 
+      "linux": 60, 
       "reportPeriod": "7"
     }
   ]
