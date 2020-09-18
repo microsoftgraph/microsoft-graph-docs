@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, GroupMember.Read.All, Group.Read.All, Directory.Read.All  |
+|Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Directory.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, GroupMember.Read.All, Group.Read.All, Directory.Read.All |
+|Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
