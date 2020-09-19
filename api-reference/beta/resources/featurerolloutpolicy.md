@@ -40,7 +40,7 @@ The following are pre-requisites for each of the features that are currently sup
 
 ### EmailAsAlternateId
 
-* Associate alternate email  with user accounts.
+* Enable [Alternate Login ID](/azure/active-directory/authentication/howto-authentication-use-email-signin) based on [these](/azure/active-directory/authentication/howto-authentication-use-email-signin#enable-user-sign-in-with-an-email-address) instructions.
 
 ## Methods
 
