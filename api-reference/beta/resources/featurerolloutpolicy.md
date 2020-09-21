@@ -60,7 +60,7 @@ The following are pre-requisites for each of the features that are currently sup
 |:-------------|:------------|:------------|
 |description|String|A description for this feature rollout policy.|
 |displayName|String|The display name for this  feature rollout policy.|
-|feature|stagedFeatureName| Possible values are: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
+|feature|stagedFeatureName| Possible values are: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`.|
 |id|String| Read-only.|
 |isAppliedToOrganization|Boolean|Indicates whether this feature rollout policy should be applied to the entire organization.|
 |isEnabled|Boolean|Indicates whether the feature rollout is enabled.|
