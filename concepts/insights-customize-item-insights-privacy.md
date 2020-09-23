@@ -19,7 +19,7 @@ While existing apps could continue to use **officeGraphInsights**, these apps sh
 ## How to customize item insights?
 By default, item insights are enabled for an organization. To disable item insights for all users in the organization, set the **isEnabledInOrganization** property to `false`. To disable item insights for a _subset_ of users in an Azure AD group, set the **disabledForGroup** property to the ID of that group; find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
-These settings provide flexibility for administrators to use Azure AD tools and disable item insights for only members of the specified group and not necessarily across the organization. Configure each of these properties by [updating item insights settings](/graph/api/iteminsightssettings-update?view=graph-rest-beta) in an app, PowerShell, or other applications with due permissions.
+These settings provide flexibility for administrators to use Azure AD tools and disable item insights for only members of the specified group and not necessarily across the organization. Configure each of these properties by [updating item insights settings](/graph/api/iteminsightssettings-update?view=graph-rest-beta) in Graph Explorer or PowerShell with due permissions.
 
 Keep in mind that the _global administrator role_ is required to read or update these settings. 
 
