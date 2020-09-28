@@ -18,7 +18,7 @@ Message search results are sorted by **receivedDateTime** in descending order.
 
 Message search applies to work or school accounts. Users can search their own mailbox, but can't search delegated mailboxes. For details, see [known limitations](#known-limitations).
 
-Message search also looks for attachments. The [supported file types](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for message attachment search are the same as those for SharePoint Online search.
+Message search also looks for attachments. The [supported file types](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for message attachment search are the same as those for SharePoint Online search.
 
 ## Example 1: Search messages in a user's mailbox
 

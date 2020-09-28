@@ -30,22 +30,21 @@ GA of the [administrative units API](/graph/api/resources/administrativeunit) th
 ### Reports
 [Get a report that includes the count of unique users](/graph/api/reportroot-getemailappusageversionsusercounts) for Outlook 2019 and for Outlook on Microsoft 365.
 
-<!--
-### Use the SDKs
-GA of the Microsoft Graph PowerShell SDK (https://github.com/microsoftgraph/msgraph-sdk-powershell) which enables access to the entire surface of Microsoft Graph in a straightforward and consistent way.
--->
-
 ### Teamwork
 - Get the **lastEditedDateTime** property to find out when a sender last edits a [chat message](/graph/api/resources/chatmessage).
 - Get the **lastModifiedDateTime** property to find out when a sender creates a chat message or when anyone modifies it in other ways, including adding or removing a reaction. 
+- [Get notifications on changes](webhooks.md) in [chat messages](/graph/api/resources/chatmessage).
+
+### Use the SDKs
+GA of the [Microsoft Graph PowerShell SDK](https://github.com/microsoftgraph/msgraph-sdk-powershell) which enables access to the entire surface of Microsoft Graph in a straightforward and consistent way.
 
 ### Use the Toolkit
 Try the new step-by-step getting-started tutorials for Microsoft Graph Toolkit and experience the convenience the toolkit brings:
-- [Build a web application in JavaScript](/graph/toolkit/get-started/build-a-web-app)
-- [Build a SharePoint web part](/graph/toolkit/get-started/build-a-sharepoint-web-part)
-- [Build a Microsoft Teams tab](/graph/toolkit/get-started/build-a-microsoft-teams-tab)
-- [Use the toolkit with React](/graph/toolkit/get-started/use-toolkit-with-react)
-- [Use the toolkit with Angular](/graph/toolkit/get-started/use-toolkit-with-angular)
+- [Build a web application in JavaScript](./toolkit/get-started/build-a-web-app.md)
+- [Build a SharePoint web part](./toolkit/get-started/build-a-sharepoint-web-part.md)
+- [Build a Microsoft Teams tab](./toolkit/get-started/build-a-microsoft-teams-tab.md)
+- [Use the toolkit with React](./toolkit/get-started/use-toolkit-with-react.md)
+- [Use the toolkit with Angular](./toolkit/get-started/use-toolkit-with-angular.md)
 
 ### Users
 Aside from getting the SMTP address of a [user](/graph/api/resources/user) through the **mail** property, you can now set that property and update the user's email address. 
@@ -72,10 +71,6 @@ Be able to include a [schedule](/graph/api/resources/requestschedule?view=graph-
 ### Identity and access | Identity and sign-in
 Organizations can [get](/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta&preserve-view=true) a [continuous access evaluation policy](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta&preserve-view=true) to manage authentication sessions in real time.
 
-### Teamwork
-- Get the date/time at which a Teams [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) or [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) is created.
-- [Update](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) the **policyViolation** property of a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) within a [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) or [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true), enabling data loss prevention (DLP) apps to monitor [chat message policy violation](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) to prevent messages from containing data that users are not supposed to send.
-
 ### Search
 
 - Use additional capabilities in the [Microsoft Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) for OneDrive, SharePoint, Microsoft Graph connectors: 
@@ -85,11 +80,18 @@ Organizations can [get](/graph/api/continuousaccessevaluationpolicy-get?view=gra
   - Get custom properties on [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) resources.
   - [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) search results for OneDrive and SharePoint on any sortable property.
   - [Refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) for OneDrive and SharePoint.
-- Query external data ingested by Microsoft Graph connectors across [more than one connection](/graph/search-concept-custom-types).
+- Query external data ingested by Microsoft Graph connectors across [more than one connection](./search-concept-custom-types.md).
 - Take advantage of enhanced content for Microsoft Graph connectors to learn about:
   - [Managing connections](search-index-manage-connections.md)
   - [Managing schema](search-index-manage-schema.md)
   - [Managing items](search-index-manage-items.md)
+- Track the state of a Microsoft Graph [connection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true).
+- Define an [external group](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) to set permissions on [external item](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) objects added to a Microsoft Graph [connection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true). External groups can represent non-Azure Active Directory groups or group-like constructs, such as business units, that determine permissions over the content in the external data source.
+
+### Teamwork
+- Get the date/time at which a Teams [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) or [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) is created.
+- [Update](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) the **policyViolation** property of a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) within a [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) or [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true), enabling data loss prevention (DLP) apps to monitor [chat message policy violation](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) to prevent messages from containing data that users are not supposed to send.
+
 
 ## August 2020: New and generally available
 
@@ -180,4 +182,3 @@ Here are some ways we can engage:
 - Browse details of Microsoft Graph API additions, and API behavior updates in the [changelog](changelog.md).
 - Find [highlights of earlier releases](whats-new-earlier.md).
 - Learn more about [versioning, support, and breaking change policies for Microsoft Graph](versioning-and-support.md).
-

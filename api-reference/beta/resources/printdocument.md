@@ -20,6 +20,7 @@ Represents a document being printed.
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [uploadData](../api/printdocument-uploaddata.md) | None | Upload a single binary segment of the **printDocument**. |
+| [Download binary file](../api/printdocument-get-file.md) | Download Url | Download the binary file associated with the **printDocument**. |
 
 ## Properties
 | Property     | Type        | Description |

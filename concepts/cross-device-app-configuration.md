@@ -65,14 +65,14 @@ You'll need to collect each of the platform-specific application IDs in order to
 
 To find the IDs:
 
-* **windows_universal** - Provide an AUMID for each UWP app. For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) and [Application](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** - Provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. For details, see For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** - Provide an AUMID for each UWP app. For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)) and [Application](/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** - Provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. For details, see For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** - For details, see [Change the package name](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** - For details, see [Bundle](https://developer.apple.com/documentation/foundation/bundle) and [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
 
 ### Step 3: Configure support for Microsoft account or Azure AD
-To enable cross-device experiences, your app users must sign in with either a [Microsoft account](https://account.microsoft.com/account) or an [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide) (Azure AD) account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
+To enable cross-device experiences, your app users must sign in with either a [Microsoft account](https://account.microsoft.com/account) or an [Azure Active Directory](/azure/active-directory/develop/active-directory-developers-guide) (Azure AD) account. You will provide the app ID/client IDs to support authentication as part of your cross-device app configuration to enable cross-platform support. You can provide up to 10 instances.
 
 You can find your existing app ID/client IDs or provision new ones by signing in to the [Application registration portal](https://apps.dev.microsoft.com) with your developer account. When you sign in to the portal, you can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and converged app IDs (GUIDs) are supported.   
 
@@ -90,7 +90,7 @@ If you've opted to configure your cross-device app in the Windows Dev Center, yo
 
 To find the IDs:
 
-* **Windows Notification Service** - See [Registering your app and receiving the credentials for your cloud service](https://docs.microsoft.com/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) and the [Application registration portal](https://apps.dev.microsoft.com).
+* **Windows Notification Service** - See [Registering your app and receiving the credentials for your cloud service](/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) and the [Application registration portal](https://apps.dev.microsoft.com).
 * **Apple Push Notification Service** -See [APNs Overview](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** - See [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -137,8 +137,8 @@ The following example includes all the valid platform identifiers currently acce
 
 To find the IDs:
 
-* **windows_universal** - Provide an AUMID for each UWP app. For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) and [Application](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** - Provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. For details, see For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** - Provide an AUMID for each UWP app. For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)) and [Application](/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** - Provide an AUMID for each app. For win32 apps, you'll need to use a script to retrieve this information. For details, see For details, see [Find the Application User Model ID of an installed app (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** - For details, see [Change the package name](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** - For details, see [Bundle](https://developer.apple.com/documentation/foundation/bundle) and [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – Sign in to the [Application registration portal](https://apps.dev.microsoft.com). You can view the App ID/client ID for any of your apps. Both Live SDK (hex values) and Converged app IDs (GUIDs) are supported.   
@@ -183,7 +183,7 @@ If you have an app using the activity feed API in Microsoft Graph, your host val
 
 ### Universal Windows apps
 If you have a Windows app, you will need to configure the host value in your app manifest before publishing data. For details, see 
-[uap5:UserActivity](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
+[uap5:UserActivity](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
 
 <!-- Removing until we add the details.
 ### iOS & Android apps
@@ -201,4 +201,4 @@ The following are some common issues that can occur with the activity feed API.
 The activity feed API ingests the cross-device app configuration asynchronously, so configuration errors might not be readily apparent when publishing user activities. In the event the service fails to ingest the JSON file, either due to TLS or formatting error, any activities that have been published will be attributed to the app ID that posted the activity, only. In the case of activities published via Microsoft Graph, this is the Microsoft account app ID used to authorize requests to Microsoft Graph. In the case of activities published via client-side APIs, the activity.applicationId will record the ID of the platform-specific app that posted the activity, only. This will prevent read and write operations on activities from any other platform-specific apps identified in the cross-device app configuration. 
 
 ### Platform will not initialize on Android or iOS
-The device relay API for Android or iOS requires the cross-device app configuration in order to instantiate connections to the Android or iOS app. In the event that the platform fails to initialize successfully, make sure you have correctly identified the Microsoft account app IDs and push notification credentials used to configure your cross-device app in the Windows Dev Center, and configure your client apps' host value with the domain that identifies your cross-device app. 
+The device relay API for Android or iOS requires the cross-device app configuration in order to instantiate connections to the Android or iOS app. In the event that the platform fails to initialize successfully, make sure you have correctly identified the Microsoft account app IDs and push notification credentials used to configure your cross-device app in the Windows Dev Center, and configure your client apps' host value with the domain that identifies your cross-device app.

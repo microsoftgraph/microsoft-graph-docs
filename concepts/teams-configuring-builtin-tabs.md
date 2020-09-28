@@ -15,12 +15,12 @@ This article explains how to get those values for the built-in tab types.
 
 ## Custom tabs
 
-To use Microsoft Graph to configure a tab associated with a [tab provider](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) that you wrote,
+To use Microsoft Graph to configure a tab associated with a [tab provider](/microsoftteams/platform/concepts/tabs/tabs-overview) that you wrote,
 identify the `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl`
-that the app's [configuration UI provides to Microsoft Teams](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest),
+that the app's [configuration UI provides to Microsoft Teams](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest),
 and pass the same `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` values to Microsoft Graph.
 
-The `teamsAppId` is the same as the `id` in the [app manifest schema for Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema).
+The `teamsAppId` is the same as the `id` in the [app manifest schema for Microsoft Teams](/microsoftteams/platform/resources/schema/manifest-schema).
 
 ## Website tabs
 

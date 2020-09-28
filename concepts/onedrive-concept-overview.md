@@ -73,7 +73,7 @@ Find out more about [using the OneDrive API][Drive API] in Microsoft Graph v1.0.
 
 [SharePoint]: sharepoint-concept-overview.md
 [file picker]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
-[file handler]: https://docs.microsoft.com/onedrive/developer/file-handlers
+[file handler]: /onedrive/developer/file-handlers
 [special folders]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
 [Notes API]: integrate-with-onenote.md
 [Excel API]: /graph/api/resources/excel?view=graph-rest-1.0

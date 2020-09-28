@@ -19,7 +19,7 @@ This topic covers how to get started using the Microsoft Graph Toolkit in a Micr
 
 ## Create a new Teams application with a custom tab
 
-The easiest way to create a new Teams app is to use the [Microsoft Teams Toolkit extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) for Visual Studio Code. Follow the instructions to [set up a new Teams project](https://docs.microsoft.com/microsoftteams/platform/toolkit/visual-studio-code-overview#set-up-a-new-teams-project). When you get to the **Add capabilities** screen, select **Tab**, and then **Personal tab**.
+The easiest way to create a new Teams app is to use the [Microsoft Teams Toolkit extension](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) for Visual Studio Code. Follow the instructions to [set up a new Teams project](/microsoftteams/platform/toolkit/visual-studio-code-overview#set-up-a-new-teams-project). When you get to the **Add capabilities** screen, select **Tab**, and then **Personal tab**.
 
 ## Set up ngrok and create a tunnel
 
@@ -32,7 +32,7 @@ In your project directory, locate the `.publish\Development.env` file and replac
 
 ## Add the Microsoft Graph Toolkit
 
-You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest).
+You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest).
 
 ### Use via mgt-loader
 To use the Toolkit and the Teams SDK via the loaders, add the following references to `public/index.html`:
@@ -85,7 +85,7 @@ Providers.globalProvider = new TeamsProvider ({
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application.
 
 ### Creating an app/client ID
-In order to get a client ID, you need to [register your application](https://docs.microsoft.com/graph/auth-register-app-v2) in Azure AD. Make sure to add your ngrok URL with the full path to the auth popup page to your redirect URIs (for example, `https://<YOUR_NGROK_URL>/auth.html`).
+In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD. Make sure to add your ngrok URL with the full path to the auth popup page to your redirect URIs (for example, `https://<YOUR_NGROK_URL>/auth.html`).
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
 
 ## Create the auth popup page
@@ -156,6 +156,3 @@ After your app has loaded, scroll down on the left menu and select **Test and Di
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
-
-
-

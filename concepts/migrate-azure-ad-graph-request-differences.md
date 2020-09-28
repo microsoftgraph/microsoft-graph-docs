@@ -96,8 +96,8 @@ The response for this request would include the address properties.  It also inc
 To learn more about:
 
 - Default properties on user, see [users](/graph/api/resources/users?view=graph-rest-1.0)
-- The `$select` parameter and other supported ODATA query parameters, see [Use query parameters to customize responses](/graph/query-parameters).
-- This and other recommended optimizations, see [Best practices](/graph/best-practices-concept).
+- The `$select` parameter and other supported ODATA query parameters, see [Use query parameters to customize responses](./query-parameters.md).
+- This and other recommended optimizations, see [Best practices](./best-practices-concept.md).
 
 ## Relationships and navigation properties
 
@@ -122,4 +122,3 @@ When migrating your apps to Microsoft Graph, look for requests that use `$link` 
 
 - Learn about [service feature differences](migrate-azure-ad-graph-feature-differences.md) between Azure AD Graph and Microsoft Graph.
 - Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
-

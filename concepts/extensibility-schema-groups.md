@@ -251,7 +251,7 @@ Content-length: 326
 
 - [Add custom data to resources using extensions](extensibility-overview.md)
 - [Add custom data to users using open extensions (preview)](extensibility-open-users.md)
-- [Microsoft 365 domains](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Microsoft 365 domains](/office365/servicedescriptions/office-365-platform-service-description/domains)
 - [Adding and Verifying a Domain for the NEW Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension resource type](/graph/api/resources/schemaextension?view=graph-rest-1.0)
 - [List schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)

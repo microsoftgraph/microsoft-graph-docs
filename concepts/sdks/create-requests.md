@@ -23,6 +23,10 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-read.md)]
 
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-read.md)]
+
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
@@ -42,6 +46,10 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-select.md)]
 
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-select.md)]
+
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
@@ -59,6 +67,10 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 # [TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-list.md)]
+
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-list.md)]
 
 # [PowerShell](#tab/PowerShell)
 
@@ -80,6 +92,10 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-index.md)]
 
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-index.md)]
+
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
@@ -97,6 +113,10 @@ You can use the `$expand` filter to request a related entity, or collection of e
 # [TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-expand.md)]
+
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-expand.md)]
 
 # [PowerShell](#tab/PowerShell)
 
@@ -116,6 +136,10 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-delete.md)]
 
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-delete.md)]
+
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
@@ -133,6 +157,10 @@ For SDKs that support a fluent style, new items can be added to collections with
 # [TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-create.md)]
+
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-create.md)]
 
 # [PowerShell](#tab/PowerShell)
 
@@ -152,6 +180,10 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-update.md)]
 
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-update.md)]
+
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
@@ -170,6 +202,10 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-headers.md)]
 
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-headers.md)]
+
 # [PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
@@ -187,6 +223,10 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 # [TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-queryparams.md)]
+
+# [Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-queryparams.md)]
 
 # [PowerShell](#tab/PowerShell)
 

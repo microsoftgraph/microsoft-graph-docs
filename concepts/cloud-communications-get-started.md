@@ -14,18 +14,18 @@ The cloud communications APIs in Microsoft Graph add a new dimension to how your
 
 Beore  you get started, it will be helpful to familiarize yourself with the following:
 
-- [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 (Azure AD) and how the service helps employees sign in and access resources.
-- The [Azure Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0) and its capabilities.
+- The [Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0) and its capabilities.
 
 ## Register a bot
 
 The terms "service application" and "bot" can be used interchangeably. You can either create a bot through the [Azure portal](https://azure.microsoft.com/features/azure-portal/) directly or register a bot that isn't hosted on Azure. 
 For more details about the bot registration process, see [Registering a calling bot](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). 
 
-To make things easier later, it's helpful to understand the different [types of permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) within Azure AD. Apps with delegated permissions require a signed-in user. Application-based permissions don't need a signed-in user, and can often run as a background service.
+To make things easier later, it's helpful to understand the different [types of permissions](/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) within Azure AD. Apps with delegated permissions require a signed-in user. Application-based permissions don't need a signed-in user, and can often run as a background service.
 
-After you register your bot, if you'd like to [add your bot to Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot), make sure you understand how to use [app studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio) and define the required metadata.
+After you register your bot, if you'd like to [add your bot to Microsoft Teams](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot), make sure you understand how to use [app studio](/microsoftteams/platform/get-started/get-started-app-studio) and define the required metadata.
 
 ## Manage the state of the bot
 

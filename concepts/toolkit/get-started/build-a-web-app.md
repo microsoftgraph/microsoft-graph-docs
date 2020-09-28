@@ -70,7 +70,7 @@ Providers.globalProvider = new MsalProvider({
 The client ID is the only property required to initialize the provider, but you can set additional options. For the full list, see [Msal Provider](../providers/msal.md).
 
 ### Creating an app/client ID
-In order to get a client ID, you need to [register your application](https://docs.microsoft.com/graph/auth-register-app-v2) in Azure AD. 
+In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD. 
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
 
 ## Add components

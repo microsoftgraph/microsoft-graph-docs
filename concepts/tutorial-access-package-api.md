@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Tutorial: Create an access package using Microsoft Graph APIs
 
-Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Azure Active Directory (Azure AD) entitlement management](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
+Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Azure Active Directory (Azure AD) entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
 
 In this tutorial, you've been asked to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
 
@@ -17,7 +17,7 @@ In this tutorial, you've been asked to develop code to create a package of resou
 ## Prerequisites
 
 To successfully complete this tutorial, make sure that you have the required prerequisites:
-- Azure AD entitlement management requires specific licenses. For more information, see [License requirements](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview#license-requirements). The following licenses are required in your tenant:
+- Azure AD entitlement management requires specific licenses. For more information, see [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). The following licenses are required in your tenant:
     - Azure AD Premium P2
     - Enterprise Mobility + Security (EMS) E5 license
 - This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. For this tutorial, the `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All` delegated permissions are needed. Complete the following steps to set permissions in Microsoft Graph Explorer:
@@ -720,12 +720,12 @@ No Content - 204
 In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do.
 
 
-- [Working with the Azure AD entitlement management API](https://docs.microsoft.com/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
-- [accessPackageCatalog](https://docs.microsoft.com/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
-- [accessPackageResourceRequest](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
-- [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta)
-- [accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
-- [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
-- [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
-- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0)
-- [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0)
+- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
+- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
+- [group](/graph/api/resources/group?view=graph-rest-1.0)
+- [user](/graph/api/resources/user?view=graph-rest-1.0)

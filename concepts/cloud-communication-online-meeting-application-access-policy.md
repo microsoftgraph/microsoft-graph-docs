@@ -23,7 +23,7 @@ To configure an application access policy and allow applications to access onlin
     - Identify the app’s application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Identify the user's user (object) ID in the [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
 
-2. Connect to Skype for Business PowerShell with adminitrator account. For details, see [Manage Skype for Business Online with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).
+2. Connect to Skype for Business PowerShell with adminitrator account. For details, see [Manage Skype for Business Online with PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).
 
 3. Create an application access policy containing a list of app IDs.
 
@@ -53,7 +53,7 @@ Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
 
-For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy).
+For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).
 
 ## Errors
 
@@ -77,8 +77,8 @@ Follow the steps in this article to create and/or grant an application access po
 ## See also
 
 - [Permissions reference](permissions-reference.md)
-- [New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy)
-- [Grant-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csapplicationaccesspolicy)
-- [Get-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/get-csapplicationaccesspolicy)
-- [Set-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/set-csapplicationaccesspolicy)
-- [Remove-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/remove-csapplicationaccesspolicy)
+- [New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)
+- [Grant-ApplicationAccessPolicy](/powershell/module/skype/grant-csapplicationaccesspolicy)
+- [Get-ApplicationAccessPolicy](/powershell/module/skype/get-csapplicationaccesspolicy)
+- [Set-ApplicationAccessPolicy](/powershell/module/skype/set-csapplicationaccesspolicy)
+- [Remove-ApplicationAccessPolicy](/powershell/module/skype/remove-csapplicationaccesspolicy)

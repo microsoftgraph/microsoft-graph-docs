@@ -51,6 +51,13 @@ The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgrap
 
 In order to call the beta API, you must install the [Microsoft Graph Beta Java SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Usage is the same as the non-beta SDK.
 
+```Java
+IGraphServiceClient graphClient = GraphServiceClient
+				.builder()
+				.authenticationProvider(authProvider)
+				.buildClient();
+```
+
 # [Objective-C](#tab/Objective-C)
 
 The [Microsoft Graph SDK for ObjC](https://github.com/microsoftgraph/msgraph-sdk-objc) requires you to build a URL string to the API you want to call. It provides a constant `MSGraphBaseURL` for the v1.0 endpoint. To use beta, you simply replace that with `https://graph.microsoft.com/beta`.

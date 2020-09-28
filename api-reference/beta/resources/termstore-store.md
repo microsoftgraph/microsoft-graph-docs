@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description
 |:---|:---|:---
-|defaultLanguageTag | String | Default language of the termstore.
+|defaultLanguageTag | String | Default language of the term store.
 |id|String | Unique identifier of the term store. Read-only.
 |languageTags | String collection | List of languages for the term store.
 

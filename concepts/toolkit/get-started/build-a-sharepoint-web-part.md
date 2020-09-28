@@ -7,7 +7,7 @@ author: elisenyang
 
 # Build a SharePoint web part with the Microsoft Graph Toolkit
 
-This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Getting started involves the following steps:
+This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint client-side web part](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Getting started involves the following steps:
 
 1. Set up your development environment and create a web part.
 2. Update TypeScript in your project.
@@ -20,7 +20,7 @@ This topic covers how to use Microsoft Graph Toolkit components in a [SharePoint
 
 ## Set up your SharePoint Framework development environment and create a new web part
 
-Follow the steps to [Set up your SharePoint Framework development environment](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) and then [create a new web part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
+Follow the steps to [Set up your SharePoint Framework development environment](/sharepoint/dev/spfx/set-up-your-development-environment) and then [create a new web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
 
 ## Update TypeScript in your project
 
@@ -191,5 +191,3 @@ Your hosted workbench will automatically open in your browser. Add your web part
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).
 - Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
-
-

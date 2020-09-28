@@ -460,7 +460,7 @@ The OneNote service root URL uses the following format for all calls to the OneN
 
 The `version` segment in the URL represents the version of Microsoft Graph that you want to use. `v1.0` is for stable production code. `beta` is to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code.
 
-`me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog).
+`me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Azure AD Graph API](/previous-versions/azure/ad/graph/api/api-catalog).
 
 
 > **Note:**
@@ -488,4 +488,4 @@ For more information about permission scopes and how they work, see [OneNote per
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)

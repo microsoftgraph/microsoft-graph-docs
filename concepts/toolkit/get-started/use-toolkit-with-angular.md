@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
 }
 ```
 ### Create an app/client ID
-In order to get a client ID, you need to [register your application](https://docs.microsoft.com/graph/auth-register-app-v2) in Azure AD. 
+In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD. 
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**.
 
 ## Add components

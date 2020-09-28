@@ -92,4 +92,4 @@ We'd love to hear your feedback about the Universal Print APIs. Provide your sug
 
 ## See also
 
-- [What is Universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)
+- [What is Universal Print](/universal-print/fundamentals/universal-print-whatis)

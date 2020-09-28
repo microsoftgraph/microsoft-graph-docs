@@ -33,7 +33,7 @@ This page shows you how to add and register an application using the **App regis
        - For web applications, provide the base URL of your app. For example, `http://localhost:31544` might be the URL for a web app running on your local machine. Users would use this URL to sign in to a web client application.
        - For public client applications, provide the URI used by Azure AD to return token responses. Enter a value specific to your application, such as `myapp://auth`.
 
-     To see specific examples for web applications or native applications, check out our [quickstarts](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+     To see specific examples for web applications or native applications, check out our [quickstarts](/azure/active-directory/develop/#quickstarts).
 
 1. When finished, select **Register**.
 
@@ -58,11 +58,11 @@ The following table shows the properties that you need to configure and copy for
 
 ## Next steps
 
-- Learn more about [permissions and consent](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent) or view the Microsoft Graph [permissions reference](permissions-reference.md).
+- Learn more about [permissions and consent](/azure/active-directory/develop/v2-permissions-and-consent) or view the Microsoft Graph [permissions reference](permissions-reference.md).
 - To enable additional configuration features in your application registration, such as credentials and permissions, and enable sign-in for users from other tenants, see these quickstarts:
-  - [Configure a client application to access web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
-  - [Configure an application to expose web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis)
-  - [Modify the accounts supported by an application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-modify-supported-accounts)
-- Choose a [quickstart](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts) to quickly build an app and add functionality like getting tokens, refreshing tokens, signing in a user, displaying some user info, and more.
-- Learn more about the two Azure AD objects that represent a registered application and the relationship between them: [Application objects and service principal objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
-- Learn more about the branding guidelines you should use when developing apps with [Branding guidelines for applications](https://docs.microsoft.com/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps).
+  - [Configure a client application to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
+  - [Configure an application to expose web APIs](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis)
+  - [Modify the accounts supported by an application](/azure/active-directory/develop/quickstart-modify-supported-accounts)
+- Choose a [quickstart](/azure/active-directory/develop/#quickstarts) to quickly build an app and add functionality like getting tokens, refreshing tokens, signing in a user, displaying some user info, and more.
+- Learn more about the two Azure AD objects that represent a registered application and the relationship between them: [Application objects and service principal objects](/azure/active-directory/develop/app-objects-and-service-principals).
+- Learn more about the branding guidelines you should use when developing apps with [Branding guidelines for applications](/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps).

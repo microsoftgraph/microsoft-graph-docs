@@ -29,7 +29,7 @@ If your app uses Azure AD Graph directory extensions, you can continue to use th
 - Update extension values using PATCH
 - Remove extension values using PATCH (set to **null**)
 
-Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory extensions. To learn more, see [schema extensions in add custom data](/graph/extensibility-overview#schema-extensions).
+Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory extensions. To learn more, see [schema extensions in add custom data](./extensibility-overview.md#schema-extensions).
 
 ### Recommended migration approach
 
@@ -55,7 +55,7 @@ To switch to the newer Microsoft Graph schema extension model, you'll need to:
 
 Azure AD Graph and Microsoft Graph let you track changes using queries.  The high-level approach is similar between the two APIs, but the syntax is different.
 
-Azure AD Graph calls these differential queries.  In Microsoft Graph, they're [delta queries](/graph/delta-query-overview).
+Azure AD Graph calls these differential queries.  In Microsoft Graph, they're [delta queries](./delta-query-overview.md).
 
 The following table highlights key similarities and differences:
 

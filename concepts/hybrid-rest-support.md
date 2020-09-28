@@ -53,6 +53,6 @@ be aware of the following deployment requirements:
 
 IT administrators can find more information in the following resources:
 
-- [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581(v=exchg.150).aspx)
+- [Exchange Server Hybrid Deployments](/exchange/exchange-hybrid)
 - [September 2016 Cumulative Update Release](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [On-Premises Architectural Requirements for the REST API](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)

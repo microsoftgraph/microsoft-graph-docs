@@ -28,10 +28,10 @@ Make sure you have the corresponding permissions to call the following APIs.
 
 |Resource type |Method |
 |---------|---------|
-|[applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[List applicationTemplate](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) <br>[Instantiate applicationTemplate](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)|
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0&tabs=http) <br> [Assign claimsMappingPolicies](https://docs.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)|
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)|[Update application](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-1.0&tabs=http)|
-|[claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Create claimsMappingPolicy](https://docs.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)
+|[applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[List applicationTemplate](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[Instantiate applicationTemplate](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
+|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Update servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Create appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [Assign claimsMappingPolicies](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
+|[applications](/graph/api/resources/application?view=graph-rest-1.0)|[Update application](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
+|[claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Create claimsMappingPolicy](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
 
 >[!NOTE]
 >The response objects shown in this article might be shortened for readability. All the properties will be returned from an actual call.
@@ -46,7 +46,7 @@ Make sure you have the corresponding permissions to call the following APIs.
 
 ### Retrieve the gallery application template identifier
 
-Applications in the Azure AD application gallery each have an [application template](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) that describes the metadata for that application. Using this template, you can create an instance of the application and service principal in your tenant for management.
+Applications in the Azure AD application gallery each have an [application template](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) that describes the metadata for that application. Using this template, you can create an instance of the application and service principal in your tenant for management.
 
 #### Request
 
@@ -114,10 +114,10 @@ Content-type: application/json
 
 ### Create the gallery application
 
-Using the template ID that you retrieved for your application in the last step, [create an instance](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http) of the application and service principal in your tenant.
+Using the template ID that you retrieved for your application in the last step, [create an instance](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) of the application and service principal in your tenant.
 
 > [!NOTE] 
-> You can use applicationTemplate API to instantiate [Non-Gallery apps](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+> You can use applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 > [!NOTE]
 > Allow some time for the app to be provisioned into your Azure AD tenant. It is not instant. One strategy is to do a GET query on the application / service principal object every 5-10 seconds until the query is successful.
@@ -218,7 +218,7 @@ Use the response from the previous call to retrieve and save the application obj
 ```
 ### Set single sign-on mode
 
-In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.
+In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.
 
 Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer. Also, make sure you are using the **servicePrincipal** ID that you obtained earlier.
 
@@ -321,9 +321,9 @@ HTTP/1.1 204
 ```
 ### Add app roles (Optional)
 
-If the application requires the role information in the token, add the definition of the roles in the application object. For AWS, you can [enable user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. 
+If the application requires the role information in the token, add the definition of the roles in the application object. For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. 
 
-For more information, see [Configure the role claim issued in the SAML token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management).
+For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 
 > [!NOTE] 
 > When adding app roles, don't modify the default app roles msiam_access. 
@@ -417,7 +417,7 @@ In addition to the basic claims, configure the following claims for Azure AD to 
 | roles | assignedroles |
 | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | userprincipalname |
 
-For more information, see [Customize claims emitted in token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping).
+For more information, see [Customize claims emitted in token](/azure/active-directory/develop/active-directory-claims-mapping).
 
 > [!NOTE]
 > Some keys in the claims mapping policy are case sensitive (for example, "Version"). If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.
@@ -514,7 +514,7 @@ HTTP/1.1 204
 
 ## Step 4: Configure signing certificate
 
-Using the [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default. Create your custom signing cert and assign it to the application. 
+Using the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default. Create your custom signing cert and assign it to the application. 
 
 ### Create a custom signing certificate
 
@@ -646,7 +646,7 @@ Add the following information to the service principal:
 * Password
 * Public key 
 
-Extract the private and public key Base64 encoded from the PFX file. To learn more about the properties, see [keyCredential resource type](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).
+Extract the private and public key Base64 encoded from the PFX file. To learn more about the properties, see [keyCredential resource type](/graph/api/resources/keycredential?view=graph-rest-1.0).
 
 Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential. You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint. See the previous C# reference code.
 
@@ -793,7 +793,7 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).
+For more information, see [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).
 
 ## Step 6: Configure the application side
 
@@ -804,5 +804,5 @@ Use the following URL to get the Azure AD SAML metadata for the specific configu
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
 ## Next steps
-- [Use Microsoft Graph APIs to configure user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-- [Use the AD FS application activity report to migrate applications to Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-application-activity)
+- [Use Microsoft Graph APIs to configure user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [Use the AD FS application activity report to migrate applications to Azure AD](/azure/active-directory/manage-apps/migrate-adfs-application-activity)

@@ -30,6 +30,7 @@ Install-Package Microsoft.Graph.Auth -IncludePrerelease
 The Microsoft Graph Java SDK is included in the following packages:
 
 - [microsoft-graph](https://github.com/microsoftgraph/msgraph-sdk-java) - Contains the models and request builders for accessing the `v1.0` endpoint with the fluent API.
+- [microsoft-graph-beta](https://github.com/microsoftgraph/msgraph-beta-sdk-java) - Contains the models and request builders for accessing the `beta` endpoint with the fluent API.
 - [microsoft-graph-core](https://github.com/microsoftgraph/msgraph-sdk-java-core) - The core library for making calls to Microsoft Graph.
 - [microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth) - Provides an authentication scenario-based wrapper of Microsoft Authentication Library (MSAL) for use with the Microsoft Graph SDK.
 
@@ -44,7 +45,7 @@ repository {
 
 dependency {
     // Include the sdk as a dependency
-    compile('com.microsoft.graph:microsoft-graph:1.2.+')
+    implementation 'com.microsoft.graph:microsoft-graph:2.+'
 }
 ```
 
@@ -56,7 +57,7 @@ Add the dependency in the dependencies element in pom.xml:
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>1.2.0</version>
+    <version>[2.0,)</version>
 </dependency>
 ```
 

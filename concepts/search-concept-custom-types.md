@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors
 
-Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](https://docs.microsoft.com/microsoftsearch/connectors-overview). The content is imported either via [built-in connectors](https://docs.microsoft.com/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
+Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview). The content is imported either via [built-in connectors](/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -30,7 +30,7 @@ TODOSEARCHAPI - Bug 1653398
 
 ## Example
 
-In this example, the content of the [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.
+In this example, the content of the [AdventureWorks](/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.
 
 ### Request
 

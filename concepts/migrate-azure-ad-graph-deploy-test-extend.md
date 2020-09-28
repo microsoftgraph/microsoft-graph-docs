@@ -27,10 +27,10 @@ This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-
     Now you've made the switch to Microsoft Graph, it's never been easier for you to unlock many more datasets and features that are now at your fingertips. 
     Microsoft Graph supports many new Azure AD datasets and features that are not available in Azure AD Graph, including: 
 
-    - [Microsoft 365 group management](/graph/office365-groups-concept-overview)
+    - [Microsoft 365 group management](./office365-groups-concept-overview.md)
     - [External user invitations](/graph/api/resources/invitation?view=graph-rest-1.0)
     - The ability to [restore users and Microsoft 365 groups](/graph/api/resources/directory?view=graph-rest-1.0) after they've been deleted
-    - [Webhook notifications on users and groups](/graph/webhooks?toc=./ref/toc.json&view=graph-rest-1.0)
+    - [Webhook notifications on users and groups](./webhooks.md?toc=.%252fref%252ftoc.json&view=graph-rest-1.0)
     - Identity governance features such as:
       - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) to elevate users to privileged roles only when needed and for a limited time period
       - [Access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta) for one-time or recurring access reviews for attestation of user's access rights
@@ -38,9 +38,9 @@ This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-
     - Security features such as:
       - [Identity risk events](/graph/api/resources/identityriskevent?view=graph-rest-1.0)
       - [Risky users](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-    - [Client libraries and samples](/graph/) available on many more platforms and languages. The Microsoft Graph SDKs provide a discoverable interface to easily access your data while transparently handling token acquisition, retry handling due to errors and throttling, secure redirect handling and model serialization and deserialization.
+    - [Client libraries and samples](./index.yml) available on many more platforms and languages. The Microsoft Graph SDKs provide a discoverable interface to easily access your data while transparently handling token acquisition, retry handling due to errors and throttling, secure redirect handling and model serialization and deserialization.
 
-    Microsoft Graph offers access to many more services than just Azure Active Directory. It's the [API gateway to Microsoft 365 services too](/graph/).
+    Microsoft Graph offers access to many more services than just Azure Active Directory. It's the [API gateway to Microsoft 365 services too](./index.yml).
     Check for new datasets and capabilities regularly.  
 
     - Take a look at [what you can do with Microsoft Graph](/graph/examples)
@@ -61,5 +61,5 @@ If you run into problems or need help during the migration process, you can:
 
 - Use [quick starts and samples](/graph/get-started) to come up to speed quickly.
 - Leverage [client libraries and SDKs](https://developer.microsoft.com/graph/get-started) to develop custom applications 
-- Explore [Microsoft Graph](/graph/overview) concepts and practices.
+- Explore [Microsoft Graph](./overview.md) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.

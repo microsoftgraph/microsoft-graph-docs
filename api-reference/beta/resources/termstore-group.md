@@ -60,7 +60,7 @@ The following is a JSON representation of a **group** resource.
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "scope" : "microsoft.graph.termStore.groupScope",
-  "displayName": "string",  
+  "displayName": "string" 
 }
 ```
 

@@ -24,7 +24,7 @@ To represent the session in the API, use the `workbook-session-id: {session-id}`
 Suggested [error handling](workbook-error-handling.md) for Excel APIs is based on request type, error code, and status code. The following are the request types:
 
 - **CreateSession request** - Used to create either a persistent or a non-persistent session. In a successful response, the session ID will be returned in the **id** property in the response body. For details, see [Create session](/graph/api/workbook-createsession?view=graph-rest-1.0).
-- **Sessionful request** - Subsequent requests that follow a CreateSession request. They usually include a `workbook-session-id: {session-id}` header. The exception is a poll status request, which uses the long-running operation pattern. For details, see [working with APIs that take a long time to complete](/graph/workbook-best-practice#working-with-apis-that-take-a-long-time-to-complete).
+- **Sessionful request** - Subsequent requests that follow a CreateSession request. They usually include a `workbook-session-id: {session-id}` header. The exception is a poll status request, which uses the long-running operation pattern. For details, see [working with APIs that take a long time to complete](./workbook-best-practice.md#working-with-apis-that-take-a-long-time-to-complete).
 - **Sessionless request** - Used in Sessionless mode. These requests don't have a `workbook-session-id: {session-id}` header.  
 
 ## Next steps

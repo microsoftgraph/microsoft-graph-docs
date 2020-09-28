@@ -28,4 +28,4 @@ Organizations that use Microsoft Teams to connect to the public switched telepho
 
 ## See also
 
-- [Call records permissions](/graph/permissions-reference#call-records-permissions)
+- [Call records permissions](./permissions-reference.md#call-records-permissions)

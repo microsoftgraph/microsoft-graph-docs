@@ -91,12 +91,12 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 
 The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
-- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
-- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
-- [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
-- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
-- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
-- [users](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta).
+- [application](/graph/api/resources/application?view=graph-rest-beta)
+- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
+- [device](/graph/api/resources/device?view=graph-rest-beta)
+- [group](/graph/api/resources/group?view=graph-rest-beta)
+- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+- [users](/graph/api/resources/user?view=graph-rest-beta).
 
 ## expand parameter
 
@@ -228,12 +228,12 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 > **Note:** Combining `$orderby` and `$filter` query parameters is supported on the beta endpoint for the following AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
 >
->- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
->- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
->- [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
->- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
->- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
->- [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta)
+>- [application](/graph/api/resources/application?view=graph-rest-beta)
+>- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
+>- [device](/graph/api/resources/device?view=graph-rest-beta)
+>- [group](/graph/api/resources/group?view=graph-rest-beta)
+>- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+>- [user](/graph/api/resources/user?view=graph-rest-beta)
 >
 > To use `$orderby` and `$filter` together, you need to:
 >
@@ -284,11 +284,11 @@ Alternatively, you can search messages by specifying message property names in t
 
 For more information about searchable email properties, KQL syntax, supported operators, and tips on searching, see the following articles:
 
-- [Searchable properties in Exchange](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
+- [Searchable properties in Exchange](/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
 
-- [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Message properties and search operators for In-Place eDiscovery in Exchange 2016](https://technet.microsoft.com/library/dn774955(v=exchg.160).aspx)
+- [Message properties and search operators for In-Place eDiscovery in Exchange 2016](/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators)
 
 ### Using $search on person collections
 
