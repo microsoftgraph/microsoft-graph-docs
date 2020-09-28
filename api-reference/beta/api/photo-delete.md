@@ -4,7 +4,7 @@ description: "Delete a photo."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "kevinbellinger"
 ---
 
 # Delete photo
