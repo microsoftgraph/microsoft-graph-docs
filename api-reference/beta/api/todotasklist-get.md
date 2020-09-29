@@ -76,10 +76,8 @@ GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAAABrJAAA=
 
 ---
 
-
-
 ### Response
-**Note:** Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call..
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

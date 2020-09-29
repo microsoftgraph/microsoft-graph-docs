@@ -1,5 +1,5 @@
 ---
-title: "Allow applicatiosn to access online meetings on behalf of a user"
+title: "Allow applications to access online meetings on behalf of a user"
 description: "Find out how to configure applications to access online meetings on behalf of a user."
 author: "frankpeng7"
 localization_priority: Normal

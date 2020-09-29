@@ -102,7 +102,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **schedule** property to [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) and [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) in entitlement management.|
 | Addition | beta | Added the [bitlockerRecoveryKey](/graph/api/resources/bitlockerRecoveryKey?view=graph-rest-beta) resource type.|
 | Addition | beta | Added the **volumeType** enumeration type.|
+| Addition | beta | Added the **directorySizeQuota** complex type to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
 | Addition | beta | Updated the **singleSignOnMode** property of [onpremisesPublishingSingleSignOn](/graph/api/resources/onpremisespublishingsinglesignon.md?view=graph-rest-beta) to include **aadHeaderBased** and **pingHeaderBased** as enumeration types.|
+
 
 ### Identity and access | Directory management
 
