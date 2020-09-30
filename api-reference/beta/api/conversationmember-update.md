@@ -33,7 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
-PATCH /teams/{id}/channels/{id}/members/{id}
+PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
+
 ```
 
 ## Request headers
