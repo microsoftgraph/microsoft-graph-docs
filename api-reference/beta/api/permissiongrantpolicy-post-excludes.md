@@ -41,11 +41,11 @@ POST /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## Request body
 
-In the request body, supply a JSON representation of an [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) object.
+In the request body, supply a JSON representation of an [delegatedPermissionClassification](../resources/delegatedPermissionClassification.md) object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [delegatedPermissionClassification](../resources/delegatedPermissionClassification.md) object in the response body.
 
 ## Examples
 
@@ -76,12 +76,13 @@ In this example, the delegated permission "User.Read" is being classified "low".
 
 ### Response
 
-Here is an example of the response.
+Here is an example of the response. 
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "@odata.type": "microsoft.graph.delegatedPermissionClassification"
 } -->
 

@@ -1,19 +1,19 @@
 ---
-title: "List delegatedPermissionClassifications for a service principal"
-description: "Retrieve a list of classifications given to delegated permissions exposed by an API's service principal."
+title: "List include condition sets for a permission grant policy"
+description: "Retrieve a list of the condition sets which describe conditions under which a permission grant event is included in a permission grant policy"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# List delegatedPermissionClassifications granted for a service principal
+# List include condition sets for a permission grant policy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) currently configured for the delegated permissions exposed by an API.
+Retrieve the condition sets which are *included* in a [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/delegatedPermissionClassifications
+GET /servicePrincipals/{id}/includes
 ```
 
 ## Optional query parameters
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) objects in the response body.
 
 ## Example
 
@@ -60,11 +60,11 @@ The following is an example of the request to retrieve the app roles assignments
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_get_delegatedpermissionclassification"
+  "name": "serviceprincipal_get_permissiongrantconditionset"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionClassifications
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/includes
 ```
 
 
@@ -76,7 +76,8 @@ Here is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.delegatedPermissionClassification",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.permissionGrantConditionSet",
   "isCollection": true
 } -->
 

@@ -76,6 +76,7 @@ Here is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "@odata.type": "microsoft.graph.delegatedPermissionClassification",
   "isCollection": true
 } -->
