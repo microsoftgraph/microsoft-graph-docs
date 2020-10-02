@@ -1,4 +1,4 @@
----
+﻿---
 title: "configurationManagerActionType enum type"
 description: "Action type on Configuration Manager client"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Action type on Configuration Manager client
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|refreshMachinePolicy|0|Refresh machine policy on Configuration Manager client|
-|refreshUserPolicy|1|Refresh user policy on Configuration Manager client|
-|wakeUpClient|2|Wake up Configuration Manager client|
-|appEvaluation|3|Evaluation application policy on Configuration Manager client|
 
-
-
-
-
-
+| Member               | Value | Description                                                   |
+| :------------------- | :---- | :------------------------------------------------------------ |
+| refreshMachinePolicy | 0     | Refresh machine policy on Configuration Manager client        |
+| refreshUserPolicy    | 1     | Refresh user policy on Configuration Manager client           |
+| wakeUpClient         | 2     | Wake up Configuration Manager client                          |
+| appEvaluation        | 3     | Evaluation application policy on Configuration Manager client |

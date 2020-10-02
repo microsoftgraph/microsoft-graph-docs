@@ -1,4 +1,4 @@
----
+﻿---
 title: "companyPortalAction enum type"
 description: "Action on a device that can be executed in the Company Portal"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Action on a device that can be executed in the Company Portal
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown device action|
-|remove|1|Remove device from Company Portal|
-|reset|2|Reset device enrolled in Company Portal|
 
-
-
-
-
-
+| Member  | Value | Description                             |
+| :------ | :---- | :-------------------------------------- |
+| unknown | 0     | Unknown device action                   |
+| remove  | 1     | Remove device from Company Portal       |
+| reset   | 2     | Reset device enrolled in Company Portal |

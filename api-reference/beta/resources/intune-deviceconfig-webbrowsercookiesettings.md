@@ -1,4 +1,4 @@
----
+﻿---
 title: "webBrowserCookieSettings enum type"
 description: "Web Browser Cookie Settings."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Web Browser Cookie Settings.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|browserDefault|0|Browser default value, no intent.|
-|blockAlways|1|Always block cookies.|
-|allowCurrentWebSite|2|Allow cookies from current Web site.|
-|allowFromWebsitesVisited|3|Allow Cookies from websites visited.|
-|allowAlways|4|Always allow cookies.|
 
-
-
-
-
-
+| Member                   | Value | Description                          |
+| :----------------------- | :---- | :----------------------------------- |
+| browserDefault           | 0     | Browser default value, no intent.    |
+| blockAlways              | 1     | Always block cookies.                |
+| allowCurrentWebSite      | 2     | Allow cookies from current Web site. |
+| allowFromWebsitesVisited | 3     | Allow Cookies from websites visited. |
+| allowAlways              | 4     | Always allow cookies.                |

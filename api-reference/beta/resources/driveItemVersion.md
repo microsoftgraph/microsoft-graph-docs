@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The DriveItemVersion resource represents a specific version of a DriveItem."
 ms.date: 09/17/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # DriveItemVersion resource type
 
 Namespace: microsoft.graph
@@ -15,16 +16,15 @@ Namespace: microsoft.graph
 
 The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).
 
-
 ## Tasks on DriveItemVersion resources
 
 The following tasks are available for driveItemVersion resources.
 
-|            Common task             |         HTTP method         |
-| :--------------------------------- | :-------------------------- |
-| [List versions][version-list]      | `GET /drive/items/{item-id}/versions`  |
-| [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
-| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
+| Common task                        | HTTP method                                                        |
+| :--------------------------------- | :----------------------------------------------------------------- |
+| [List versions][version-list]      | `GET /drive/items/{item-id}/versions`                              |
+| [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`                 |
+| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content`         |
 | [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
@@ -51,7 +51,7 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 
 ## Properties
 
-|      Property name       |                         Type                         |                               Description                               |
+| Property name            | Type                                                 | Description                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
@@ -63,7 +63,7 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 
 The following table defines the relationships that the **driveItemVersion** resource has to other resources.
 
-| Relationship name |  Type  |            Description             |
+| Relationship name | Type   | Description                        |
 | :---------------- | :----- | :--------------------------------- |
 | **content**       | Stream | The content stream of the version. |
 
@@ -77,5 +77,3 @@ The following table defines the relationships that the **driveItemVersion** reso
   "suppressions": []
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: printPageRange resource type
 description: Specifies the range of pages to be printed.
 author: braedenp-msft
@@ -16,10 +16,11 @@ Namespace: microsoft.graph
 Specifies the range of pages to be printed.
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|startPage|Int32|The start page (inclusive) for the range. Read-only.|
-|endPage|Int32|The end page (inclusive) for the range. Read-only.|
+
+| Property  | Type  | Description                                          |
+| :-------- | :---- | :--------------------------------------------------- |
+| startPage | Int32 | The start page (inclusive) for the range. Read-only. |
+| endPage   | Int32 | The end page (inclusive) for the range. Read-only.   |
 
 ## JSON representation
 
@@ -39,5 +40,3 @@ The following is a JSON representation of the resource.
   "endPage": 123456
 }
 ```
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Graph threat assessment API"
 description: "Microsoft Graph lets your app get authorized access to organization's threat assessment data."
 localization_priority: Priority
@@ -23,10 +23,10 @@ Microsoft Graph controls access to resources via permissions. You must specify t
 
 The Microsoft Graph threat assessment API provides methods to list, create, and get threat assessment requests and retrieve the assessment results.
 
-| Use cases | REST resources | See also |
-|:----------|:---------------|:---------|
+| Use cases                                        | REST resources                                                                                                                                                                                                                                                                                                                                             | See also                                                                                                                                                                                                                                                                   |
+| :----------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | List, create, and get threat assessment requests | [threatAssessmentRequest](../resources/threatassessmentrequest.md)<br> [mailAssessmentRequest](../resources/mailAssessmentRequest.md)<br> [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md)<br> [fileAssessmentRequest](../resources/fileAssessmentRequest.md)<br> [urlAssessmentRequest](../resources/urlAssessmentRequest.md)<br> | [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md)<br> [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md)<br> [List threatAssessmentRequest](../api/informationprotection-list-threatassessmentrequests.md) |
-| Get threat assessment results | [threatAssessmentResult](../resources/threatassessmentresult.md) | [Get threatAssessmentResult](../api/threatassessmentrequest-get.md#example-5-expand-threat-assessment-results-for-a-request)|
+| Get threat assessment results                    | [threatAssessmentResult](../resources/threatassessmentresult.md)                                                                                                                                                                                                                                                                                           | [Get threatAssessmentResult](../api/threatassessmentrequest-get.md#example-5-expand-threat-assessment-results-for-a-request)                                                                                                                                               |
 
 ## Next steps
 
@@ -34,5 +34,3 @@ Threat assessment resources and APIs can open up new ways for you to engage with
 
 - Drill down on the [methods](../resources/threatassessmentrequest.md#methods), [properties](../resources/threatassessmentrequest.md#properties), and [relationships](../resources/threatassessmentrequest.md#relationships) of the [threat assessment request](../resources/threatassessmentrequest.md) and [threat asessment result](../resources/threatAssessmentResult.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-

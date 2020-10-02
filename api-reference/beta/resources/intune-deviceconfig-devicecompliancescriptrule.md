@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceComplianceScriptRule resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|settingName|String|Setting name specified in the rule.|
-|operator|[operator](../resources/intune-deviceconfig-operator.md)|Operator specified in the rule. Possible values are: `none`, `and`, `or`, `isEquals`, `notEquals`, `greaterThan`, `lessThan`, `between`, `notBetween`, `greaterEquals`, `lessEquals`, `dayTimeBetween`, `beginsWith`, `notBeginsWith`, `endsWith`, `notEndsWith`, `contains`, `notContains`, `allOf`, `oneOf`, `noneOf`, `setEquals`, `orderedSetEquals`, `subsetOf`, `excludesAll`.|
-|dataType|[dataType](../resources/intune-deviceconfig-datatype.md)|Data type specified in the rule. Possible values are: `none`, `boolean`, `int64`, `double`, `string`, `dateTime`, `version`, `base64`, `xml`, `booleanArray`, `int64Array`, `doubleArray`, `stringArray`, `dateTimeArray`, `versionArray`.|
-|operand|String|Operand specified in the rule.|
+
+| Property    | Type                                                     | Description                                                                                                                                                                                                                                                                                                                                                                          |
+| :---------- | :------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| settingName | String                                                   | Setting name specified in the rule.                                                                                                                                                                                                                                                                                                                                                  |
+| operator    | [operator](../resources/intune-deviceconfig-operator.md) | Operator specified in the rule. Possible values are: `none`, `and`, `or`, `isEquals`, `notEquals`, `greaterThan`, `lessThan`, `between`, `notBetween`, `greaterEquals`, `lessEquals`, `dayTimeBetween`, `beginsWith`, `notBeginsWith`, `endsWith`, `notEndsWith`, `contains`, `notContains`, `allOf`, `oneOf`, `noneOf`, `setEquals`, `orderedSetEquals`, `subsetOf`, `excludesAll`. |
+| dataType    | [dataType](../resources/intune-deviceconfig-datatype.md) | Data type specified in the rule. Possible values are: `none`, `boolean`, `int64`, `double`, `string`, `dateTime`, `version`, `base64`, `xml`, `booleanArray`, `int64Array`, `doubleArray`, `stringArray`, `dateTimeArray`, `versionArray`.                                                                                                                                           |
+| operand     | String                                                   | Operand specified in the rule.                                                                                                                                                                                                                                                                                                                                                       |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceComplianceScriptRule"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceScriptRule",
   "settingName": "String",
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   "operand": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "objectDefinition resource type"
 description: "Describes an object and its attributes."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Describes an object and its attributes. Object definitions are part of [director
 
 ## Properties
 
-| Property      | Type      | Description    |
-|:--------------|:----------|:---------------|
-|attributes     |[attributeDefinition](synchronization-attributedefinition.md) collection    | Defines attributes of the object. |
-|metadata       |[metadataEntry](synchronization-metadataentry.md) collection   |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
-|name           |String     |Name of the object. Must be unique within a directory definition. Not nullable.|
+| Property   | Type                                                                     | Description                                                                                          |
+| :--------- | :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| attributes | [attributeDefinition](synchronization-attributedefinition.md) collection | Defines attributes of the object.                                                                    |
+| metadata   | [metadataEntry](synchronization-metadataentry.md) collection             | Additional extension properties. Unless mentioned explicitly, metadata values should not be changed. |
+| name       | String                                                                   | Name of the object. Must be unique within a directory definition. Not nullable.                      |
 
 ## JSON representation
 
@@ -438,6 +438,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -448,5 +449,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

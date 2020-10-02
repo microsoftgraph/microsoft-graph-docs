@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update remoteActionAudit"
 description: "Update the properties of a remoteActionAudit object."
 author: "dougeby"
@@ -18,57 +18,63 @@ Namespace: microsoft.graph
 Update the properties of a [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object.
 
 The following table shows the properties that are required when you create the [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Report Id.|
-|deviceDisplayName|String|Intune device name.|
-|userName|String|\[deprecated\] Please use InitiatedByUserPrincipalName instead.|
-|initiatedByUserPrincipalName|String|User who initiated the device action, format is UPN.|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`, `rotateBitLockerKeys`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
-|requestDateTime|DateTimeOffset|Time when the action was issued, given in UTC.|
-|deviceOwnerUserPrincipalName|String|Upn of the device owner.|
-|deviceIMEI|String|IMEI of the device.|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|managedDeviceId|String|Action target.|
-
-
+| Property                     | Type                                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| :--------------------------- | :---------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                           | String                                                      | Report Id.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| deviceDisplayName            | String                                                      | Intune device name.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| userName                     | String                                                      | \[deprecated\] Please use InitiatedByUserPrincipalName instead.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| initiatedByUserPrincipalName | String                                                      | User who initiated the device action, format is UPN.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| action                       | [remoteAction](../resources/intune-devices-remoteaction.md) | The action name. Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`, `rotateBitLockerKeys`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`. |
+| requestDateTime              | DateTimeOffset                                              | Time when the action was issued, given in UTC.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| deviceOwnerUserPrincipalName | String                                                      | Upn of the device owner.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| deviceIMEI                   | String                                                      | IMEI of the device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| actionState                  | [actionState](../resources/intune-shared-actionstate.md)    | Action state. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.                                                                                                                                                                                                                                                                                                                                                                                                   |
+| managedDeviceId              | String                                                      | Action target.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits/{remoteActionAuditId}
 Content-type: application/json
 Content-length: 504
@@ -88,8 +94,10 @@ Content-length: 504
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 553
@@ -108,9 +116,3 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
-
-
-
-
-

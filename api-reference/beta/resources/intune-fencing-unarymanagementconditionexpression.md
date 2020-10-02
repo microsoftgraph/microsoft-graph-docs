@@ -1,4 +1,4 @@
----
+﻿---
 title: "unaryManagementConditionExpression resource type"
 description: "A management condition expression that is evaluated using a unary operation."
 author: "dougeby"
@@ -17,26 +17,30 @@ Namespace: microsoft.graph
 
 A management condition expression that is evaluated using a unary operation.
 
-
 Inherits from [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|The operator used in the evaluation of the unary operation. Possible values are: `not`.|
-|operand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|The operand of the unary operation.|
+
+| Property | Type                                                                                                                            | Description                                                                             |
+| :------- | :------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------- |
+| operator | [unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md) | The operator used in the evaluation of the unary operation. Possible values are: `not`. |
+| operand  | [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)                         | The operand of the unary operation.                                                     |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unaryManagementConditionExpression"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.unaryManagementConditionExpression",
   "operator": "String",
@@ -158,9 +162,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

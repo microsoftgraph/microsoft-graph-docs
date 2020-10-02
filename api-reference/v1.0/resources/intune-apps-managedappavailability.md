@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppAvailability enum type"
 description: "A managed (MAM) application's availability."
 author: "dougeby"
@@ -16,16 +16,8 @@ Namespace: microsoft.graph
 A managed (MAM) application's availability.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|global|0|A globally available app to all tenants.|
-|lineOfBusiness|1|A line of business apps private to an organization.|
 
-
-
-
-
-
-
-
-
+| Member         | Value | Description                                         |
+| :------------- | :---- | :-------------------------------------------------- |
+| global         | 0     | A globally available app to all tenants.            |
+| lineOfBusiness | 1     | A line of business apps private to an organization. |

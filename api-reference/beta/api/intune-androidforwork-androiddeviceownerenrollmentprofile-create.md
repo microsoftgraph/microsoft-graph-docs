@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create androidDeviceOwnerEnrollmentProfile"
 description: "Create a new androidDeviceOwnerEnrollmentProfile object."
 author: "dougeby"
@@ -18,61 +18,67 @@ Namespace: microsoft.graph
 Create a new [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the androidDeviceOwnerEnrollmentProfile object.
 
 The following table shows the properties that are required when you create the androidDeviceOwnerEnrollmentProfile.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|accountId|String|Tenant GUID the enrollment profile belongs to.|
-|id|String|Unique GUID for the enrollment profile.|
-|displayName|String|Display name for the enrollment profile.|
-|description|String|Description for the enrollment profile.|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
-|createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
-|lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
-|tokenValue|String|Value of the most recently created token for this enrollment profile.|
-|tokenCreationDateTime|DateTimeOffset|Date time the most recently created token was created.|
-|tokenExpirationDateTime|DateTimeOffset|Date time the most recently created token will expire.|
-|enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
-|qrCodeContent|String|String used to generate a QR code for the token.|
-|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
-
-
+| Property                | Type                                                                                                       | Description                                                                                                                                                                       |
+| :---------------------- | :--------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| accountId               | String                                                                                                     | Tenant GUID the enrollment profile belongs to.                                                                                                                                    |
+| id                      | String                                                                                                     | Unique GUID for the enrollment profile.                                                                                                                                           |
+| displayName             | String                                                                                                     | Display name for the enrollment profile.                                                                                                                                          |
+| description             | String                                                                                                     | Description for the enrollment profile.                                                                                                                                           |
+| enrollmentMode          | [androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md) | The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`. |
+| createdDateTime         | DateTimeOffset                                                                                             | Date time the enrollment profile was created.                                                                                                                                     |
+| lastModifiedDateTime    | DateTimeOffset                                                                                             | Date time the enrollment profile was last modified.                                                                                                                               |
+| tokenValue              | String                                                                                                     | Value of the most recently created token for this enrollment profile.                                                                                                             |
+| tokenCreationDateTime   | DateTimeOffset                                                                                             | Date time the most recently created token was created.                                                                                                                            |
+| tokenExpirationDateTime | DateTimeOffset                                                                                             | Date time the most recently created token will expire.                                                                                                                            |
+| enrolledDeviceCount     | Int32                                                                                                      | Total number of Android devices that have enrolled using this enrollment profile.                                                                                                 |
+| qrCodeContent           | String                                                                                                     | String used to generate a QR code for the token.                                                                                                                                  |
+| qrCodeImage             | [mimeContent](../resources/intune-shared-mimecontent.md)                                                   | String used to generate a QR code for the token.                                                                                                                                  |
+| roleScopeTagIds         | String collection                                                                                          | List of Scope Tags for this Entity instance.                                                                                                                                      |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles
 Content-type: application/json
 Content-length: 678
@@ -100,8 +106,10 @@ Content-length: 678
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 850
@@ -130,9 +138,3 @@ Content-Length: 850
   ]
 }
 ```
-
-
-
-
-
-

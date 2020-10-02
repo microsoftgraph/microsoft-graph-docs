@@ -1,4 +1,4 @@
----
+﻿---
 title: "windows10AppType enum type"
 description: "Windows 10 Application type."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Windows 10 Application type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|desktop|0|Desktop.|
-|universal|1|Universal.|
 
-
-
-
-
-
+| Member    | Value | Description |
+| :-------- | :---- | :---------- |
+| desktop   | 0     | Desktop.    |
+| universal | 1     | Universal.  |

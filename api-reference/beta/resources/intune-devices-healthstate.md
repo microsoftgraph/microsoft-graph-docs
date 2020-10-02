@@ -1,4 +1,4 @@
----
+﻿---
 title: "healthState enum type"
 description: "Indicates health state of the Windows management app."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Indicates health state of the Windows management app.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown state.|
-|healthy|1|Healthy state.|
-|unhealthy|2|Unhealthy state.|
 
-
-
-
-
-
+| Member    | Value | Description      |
+| :-------- | :---- | :--------------- |
+| unknown   | 0     | Unknown state.   |
+| healthy   | 1     | Healthy state.   |
+| unhealthy | 2     | Unhealthy state. |

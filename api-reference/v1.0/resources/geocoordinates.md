@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -38,11 +38,11 @@ Here is a JSON representation of the resource
 
 ## Properties
 
-| Property  | Type   | Description
-|:----------|:-------|:--------------------------------------------------------
-| altitude  | Double | Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-| latitude  | Double | Optional. The latitude, in decimal, for the item. Read-only.
-| longitude | Double | Optional. The longitude, in decimal, for the item. Read-only.
+| Property  | Type   | Description                                                                         |
+| :-------- | :----- | :---------------------------------------------------------------------------------- |
+| altitude  | Double | Optional. The altitude (height), in feet,  above sea level for the item. Read-only. |
+| latitude  | Double | Optional. The latitude, in decimal, for the item. Read-only.                        |
+| longitude | Double | Optional. The longitude, in decimal, for the item. Read-only.                       |
 
 ## Remarks
 
@@ -55,4 +55,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Location"
 } -->
-

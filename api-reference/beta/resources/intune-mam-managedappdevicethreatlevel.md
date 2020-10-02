@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppDeviceThreatLevel enum type"
 description: "The maxium threat level allowed for an app to be compliant."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 The maxium threat level allowed for an app to be compliant.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Value not configured|
-|secured|1|Device needs to have no threat|
-|low|2|Device needs to have a low threat.|
-|medium|3|Device needs to have not more than medium threat.|
-|high|4|Device needs to have not more than high threat|
 
-
-
-
-
-
+| Member        | Value | Description                                       |
+| :------------ | :---- | :------------------------------------------------ |
+| notConfigured | 0     | Value not configured                              |
+| secured       | 1     | Device needs to have no threat                    |
+| low           | 2     | Device needs to have a low threat.                |
+| medium        | 3     | Device needs to have not more than medium threat. |
+| high          | 4     | Device needs to have not more than high threat    |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsFirewallRuleTrafficDirectionType enum type"
 description: "Firewall rule traffic directions."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Firewall rule traffic directions.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured.|
-|out|1|The rule applies to outbound traffic.|
-|in|2|The rule applies to inbound traffic.|
 
-
-
-
-
-
+| Member        | Value | Description                           |
+| :------------ | :---- | :------------------------------------ |
+| notConfigured | 0     | Not configured.                       |
+| out           | 1     | The rule applies to outbound traffic. |
+| in            | 2     | The rule applies to inbound traffic.  |

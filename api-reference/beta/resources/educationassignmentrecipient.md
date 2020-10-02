@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationAssignmentRecipient resource type"
 description: "Used within the **assignments.assignTo** property. This superclass is abstract and you cannot"
 localization_priority: Normal
@@ -17,10 +17,10 @@ Used within the **assignments.assignTo** property. This superclass is abstract a
 set the property in assignments to this value. This superclass represents who the
 assignment should be assigned to when the assignment is published.
 
-
 The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.
 
 ## Properties
+
 None.
 
 <!-- {
@@ -38,9 +38,9 @@ None.
 
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -51,5 +51,3 @@ None.
   "suppressions": []
 }
 -->
-
-

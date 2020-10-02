@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create featureRolloutPolicy"
 description: "Create a new featureRolloutPolicy object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout             |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ POST /directory/featureRolloutPolicies
 ## Request headers
 
 | Name          | Description   |
-|:--------------|:--------------|
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
@@ -45,11 +45,11 @@ In the request body, supply a JSON representation of [featureRolloutPolicy](../r
 
 The following table shows the properties that are required when you create a [featureRolloutPolicy](../resources/featurerolloutpolicy.md).
 
-| Parameter | Type | Description|
-|:---------------|:--------|:----------|
-|displayName |string |The display name for this feature rollout policy.|
-|feature |stagedFeatureName |The feature that would be rolled out using this policy.|
-|isEnabled |string |Indicates whether the feature rollout is enabled.|
+| Parameter   | Type              | Description                                             |
+| :---------- | :---------------- | :------------------------------------------------------ |
+| displayName | string            | The display name for this feature rollout policy.       |
+| feature     | stagedFeatureName | The feature that would be rolled out using this policy. |
+| isEnabled   | string            | Indicates whether the feature rollout is enabled.       |
 
 ## Response
 
@@ -62,6 +62,7 @@ If successful, this method returns a `201 Created` response code and a new [feat
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_featurerolloutpolicy_from_directory"
@@ -79,20 +80,23 @@ Content-type: application/json
   "isAppliedToOrganization": false
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-featurerolloutpolicy-from-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-featurerolloutpolicy-from-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-featurerolloutpolicy-from-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -122,6 +126,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create featureRolloutPolicy",
@@ -129,5 +134,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

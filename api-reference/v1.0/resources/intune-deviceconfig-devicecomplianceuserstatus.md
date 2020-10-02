@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceComplianceUserStatus resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,36 +16,42 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List deviceComplianceUserStatuses](../api/intune-deviceconfig-devicecomplianceuserstatus-list.md)|[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) collection|List properties and relationships of the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) objects.|
-|[Get deviceComplianceUserStatus](../api/intune-deviceconfig-devicecomplianceuserstatus-get.md)|[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md)|Read properties and relationships of the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.|
-|[Create deviceComplianceUserStatus](../api/intune-deviceconfig-devicecomplianceuserstatus-create.md)|[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md)|Create a new [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.|
-|[Delete deviceComplianceUserStatus](../api/intune-deviceconfig-devicecomplianceuserstatus-delete.md)|None|Deletes a [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md).|
-|[Update deviceComplianceUserStatus](../api/intune-deviceconfig-devicecomplianceuserstatus-update.md)|[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md)|Update the properties of a [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.|
+
+| Method                                                                                               | Return Type                                                                                             | Description                                                                                                                                    |
+| :--------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| [List deviceComplianceUserStatuses](../api/intune-deviceconfig-devicecomplianceuserstatus-list.md)   | [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) collection | List properties and relationships of the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) objects. |
+| [Get deviceComplianceUserStatus](../api/intune-deviceconfig-devicecomplianceuserstatus-get.md)       | [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md)            | Read properties and relationships of the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.  |
+| [Create deviceComplianceUserStatus](../api/intune-deviceconfig-devicecomplianceuserstatus-create.md) | [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md)            | Create a new [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.                              |
+| [Delete deviceComplianceUserStatus](../api/intune-deviceconfig-devicecomplianceuserstatus-delete.md) | None                                                                                                    | Deletes a [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md).                                        |
+| [Update deviceComplianceUserStatus](../api/intune-deviceconfig-devicecomplianceuserstatus-update.md) | [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md)            | Update the properties of a [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.                |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|userDisplayName|String|User name of the DevicePolicyStatus.|
-|devicesCount|Int32|Devices count for that user.|
-|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
-|userPrincipalName|String|UserPrincipalName.|
+
+| Property             | Type                                                               | Description                                                                                                                                                             |
+| :------------------- | :----------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | String                                                             | Key of the entity.                                                                                                                                                      |
+| userDisplayName      | String                                                             | User name of the DevicePolicyStatus.                                                                                                                                    |
+| devicesCount         | Int32                                                              | Devices count for that user.                                                                                                                                            |
+| status               | [complianceStatus](../resources/intune-shared-compliancestatus.md) | Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`. |
+| lastReportedDateTime | DateTimeOffset                                                     | Last modified date time of the policy report.                                                                                                                           |
+| userPrincipalName    | String                                                             | UserPrincipalName.                                                                                                                                                      |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceUserStatus"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceUserStatus",
   "id": "String (identifier)",
@@ -56,12 +62,3 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

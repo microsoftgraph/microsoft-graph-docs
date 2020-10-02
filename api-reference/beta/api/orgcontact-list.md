@@ -1,4 +1,4 @@
----
+﻿---
 title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
 localization_priority: Normal
@@ -16,29 +16,36 @@ Namespace: microsoft.graph
 Get the list of organizational contacts for this organization.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                  |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                               |
+| Application                            | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /contacts
 ```
+
 ## Optional query parameters
+
 This method supports the [OData query parameters](/graph/query_parameters) to help customize the response, including `$search`, `$count`, and `$filter`. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
 ## Request headers
-| Name       | Description|
-|:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+
+| Name             | Description                                                                                                                                                                                                       |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization    | Bearer {token}. Required.                                                                                                                                                                                         |
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -54,22 +61,28 @@ If successful, this method returns a `200 OK` response code and a collection of 
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_orgcontact"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-orgcontact-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-orgcontact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-orgcontact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,6 +99,7 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.orgcontact",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -129,30 +143,34 @@ Content-length: 222
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_count_only"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts/$count
 ConsistencyLevel: eventual
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -164,6 +182,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.orgcontact",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -177,30 +196,34 @@ Content-type: text/plain
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_a_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts?$filter=startswith(displayName,'A')&$count=true&$top=1&$orderby=displayName
 ConsistencyLevel: eventual
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -213,6 +236,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.orgcontact",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -236,30 +260,34 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_phone_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts?$search="displayName:wa"&$count=true
 ConsistencyLevel: eventual
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-phone-count-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-phone-count-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-phone-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -272,6 +300,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.orgcontact",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -291,6 +320,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -302,5 +332,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

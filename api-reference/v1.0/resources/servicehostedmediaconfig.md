@@ -1,4 +1,4 @@
----
+﻿---
 title: "serviceHostedMediaConfig resource type"
 description: "The serviceHostedMediaConfig type."
 author: "ananmishr"
@@ -15,10 +15,9 @@ The media that's hosted remotely. This is inherited from [mediaConfig](mediaconf
 
 ## Properties
 
-| Property                    | Type                                                        | Description                                       |
-| :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| preFetchMedia               | [mediaInfo](mediainfo.md) collection                        | The list of media to pre-fetch.                   |
-
+| Property      | Type                                 | Description                     |
+| :------------ | :----------------------------------- | :------------------------------ |
+| preFetchMedia | [mediaInfo](mediainfo.md) collection | The list of media to pre-fetch. |
 
 ## JSON representation
 
@@ -32,6 +31,7 @@ The following is a JSON representation of the resource.
   "baseType": "microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
 }-->
+
 ```json
 {
   "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ]
@@ -40,6 +40,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -50,4 +51,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

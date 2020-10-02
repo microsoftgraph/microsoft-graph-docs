@@ -1,4 +1,4 @@
----
+﻿---
 title: "commsNotification resource type"
 description: "Communications notification base type that is published by Communications servers to notify changes."
 author: "ananmishr"
@@ -14,10 +14,11 @@ Namespace: microsoft.graph
 Communications notification base type that is published by Communications servers to notify changes.
 
 ## Properties
-| Property	     | Type    | Description                                                |
-|:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | Possible values are: `created`, `updated`, `deleted`.      |
-| resourceUrl       | String  | URI of the resource that was changed.                      |
+
+| Property    | Type   | Description                                           |
+| :---------- | :----- | :---------------------------------------------------- |
+| changeType  | String | Possible values are: `created`, `updated`, `deleted`. |
+| resourceUrl | String | URI of the resource that was changed.                 |
 
 > **Note:** `resourceData` is available as additional data. It is either an entity or a collection of entities depending on the number of changes packaged in the notification.
 
@@ -33,6 +34,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.commsNotification",
   "openType": true
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotification",
@@ -44,6 +46,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -54,4 +57,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

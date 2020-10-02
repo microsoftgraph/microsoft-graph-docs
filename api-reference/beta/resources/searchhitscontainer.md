@@ -1,4 +1,4 @@
----
+﻿---
 title: "searchHitsContainer resource type"
 description: "Represent the list of search results."
 localization_priority: Normal
@@ -17,12 +17,12 @@ Represent the list of search results.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|hits|[searchHit](searchhit.md) collection|A collection of the search results.|
-|moreResultsAvailable|Boolean|Provides information if more results are available. Based on this information, you can adjust the **from** and **size** properties of the [searchRequest](searchrequest.md) accordingly.|
-|total|Int32|The total number of results. Note this is not the number of results on the page, but the total number of results satisfying the query.|
-|aggregations|[searchAggregation](searchaggregation.md) collection|Contains the collection of aggregations computed based on the provided [aggregationOption](aggregationoption.md) specified in the request.|
+| Property             | Type                                                 | Description                                                                                                                                                                              |
+| :------------------- | :--------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| hits                 | [searchHit](searchhit.md) collection                 | A collection of the search results.                                                                                                                                                      |
+| moreResultsAvailable | Boolean                                              | Provides information if more results are available. Based on this information, you can adjust the **from** and **size** properties of the [searchRequest](searchrequest.md) accordingly. |
+| total                | Int32                                                | The total number of results. Note this is not the number of results on the page, but the total number of results satisfying the query.                                                   |
+| aggregations         | [searchAggregation](searchaggregation.md) collection | Contains the collection of aggregations computed based on the provided [aggregationOption](aggregationoption.md) specified in the request.                                               |
 
 ## JSON representation
 
@@ -37,7 +37,6 @@ The following is a JSON representation of the resource.
   "baseType": null
 }-->
 
-
 ```json
 {
   "hits": [{"@odata.type": "microsoft.graph.searchHit"}],
@@ -47,9 +46,9 @@ The following is a JSON representation of the resource.
 }
 ```
 
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "searchHitsContainer resource",
@@ -57,5 +56,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

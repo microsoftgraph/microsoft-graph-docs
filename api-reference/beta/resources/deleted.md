@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The Deleted resource indicates that the item has been deleted."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # Deleted facet
 
 Namespace: microsoft.graph
@@ -30,24 +31,26 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.deleted"
 }-->
+
 ```json
 {
   "state": "string"
 }
 ```
+
 ## Properties
 
 | Property | Type   | Description                               |
-|:---------|:-------|:------------------------------------------|
+| :------- | :----- | :---------------------------------------- |
 | state    | String | Represents the state of the deleted item. |
 
 ## Remarks 
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -58,5 +61,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
-
-

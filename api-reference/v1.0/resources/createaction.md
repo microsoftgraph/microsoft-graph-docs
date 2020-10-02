@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: createAction resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # createAction resource type
 
 Namespace: microsoft.graph
@@ -35,6 +36,7 @@ None. This facet is a null or not-null value and contains no properties.
 {
 }
 ```
+
 <!--
 {
   "type": "#page.annotation",
@@ -45,4 +47,3 @@ None. This facet is a null or not-null value and contains no properties.
   "suppressions": []
 }
 -->
-

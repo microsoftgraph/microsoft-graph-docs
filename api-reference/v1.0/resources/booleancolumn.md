@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
@@ -8,6 +8,7 @@ description: "The booleanColumn on a columnDefinition resource indicates that th
 ms.prod: ""
 doc_type: resourcePageType
 ---
+
 # BooleanColumn resource type
 
 Namespace: microsoft.graph
@@ -17,6 +18,7 @@ The **booleanColumn** on a [columnDefinition](columndefinition.md) resource indi
 ## JSON representation
 
 Here is a JSON representation of a **booleanColumn** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.booleanColumn" } -->
 
 ```json
@@ -35,4 +37,3 @@ The **booleanColumn** resource contains no properties.
   "section": "documentation",
   "tocPath": "Resources/BooleanColumn"
 } -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update workforceintegration"
 description: "Update the properties of a workforceintegration object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Update the properties of a [workforceintegration](../resources/workforceintegrat
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |WorkforceIntegration.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -35,23 +35,23 @@ PATCH /teamwork/workforceIntegrations
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|apiVersion|Int32|API version for the call back url. Start with 1.|
-|displayName|String|Name of the workforce integration.|
-|encryption|workforceIntegrationEncryption|The workforce integration encryption resource. |
-|isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supports|string| Possible values are `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
-|supportedEntities|string| This property will replace **supports** in v1.0. We recommend that you use this property instead of **supports**. The **supports** property will still be supported in beta for the time being. Possible values are `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
-|url|String| Workforce Integration url for callbacks from the Shift service. |
+| Property          | Type                           | Description                                                                                                                                                                                                                                                                                                                                                                                              |
+| :---------------- | :----------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| apiVersion        | Int32                          | API version for the call back url. Start with 1.                                                                                                                                                                                                                                                                                                                                                         |
+| displayName       | String                         | Name of the workforce integration.                                                                                                                                                                                                                                                                                                                                                                       |
+| encryption        | workforceIntegrationEncryption | The workforce integration encryption resource.                                                                                                                                                                                                                                                                                                                                                           |
+| isActive          | Boolean                        | Indicates whether this workforce integration is currently active and available.                                                                                                                                                                                                                                                                                                                          |
+| supports          | string                         | Possible values are `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.                                                                                                                                                                                                 |
+| supportedEntities | string                         | This property will replace **supports** in v1.0. We recommend that you use this property instead of **supports**. The **supports** property will still be supported in beta for the time being. Possible values are `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase. |
+| url               | String                         | Workforce Integration url for callbacks from the Shift service.                                                                                                                                                                                                                                                                                                                                          |
 
 ## Response
 
@@ -68,6 +68,7 @@ The following example updates a **workforceIntegration** object.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_workforceintegration"
@@ -89,20 +90,23 @@ Content-type: application/json
   "supports": "supports-value"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workforceintegration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-workforceintegration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-workforceintegration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -140,6 +144,7 @@ The following example creates a new **workforceIntegration** with SwapRequest en
 #### Request
 
 The following is an example of the request. 
+
 ```
 POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
 Authorization: Bearer {token}
@@ -159,9 +164,11 @@ Content-type: application/json
 }
 
 ```
+
 #### Response
 
 The following is an example of the response.
+
 ```
 HTTP/1.1 200 OK
 {
@@ -179,6 +186,7 @@ HTTP/1.1 200 OK
 }
 
 ```
+
 To create a new **workforceIntegration** with SwapRequest enabled for eligibility filtering, see the [Create](../api/workforceintegration-post.md) method.
 
 ### Example 3: Fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
@@ -202,9 +210,11 @@ Accept-Language: en-us
    }]
 }
 ```
+
 #### Response
 
 The following is an example of the response from the workforce integration service.
+
 ```
 HTTP/1.1 200 OK
 {
@@ -224,9 +234,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update workforceintegration",
@@ -234,5 +244,3 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

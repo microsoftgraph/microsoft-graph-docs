@@ -1,4 +1,4 @@
----
+﻿---
 title: "appInstallControlType enum type"
 description: "App Install control Setting"
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 App Install control Setting
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured|
-|anywhere|1|Turn off app recommendations|
-|storeOnly|2|Allow apps from Store only|
-|recommendations|3|Show me app recommendations|
-|preferStore|4|Warn me before installing apps from outside the Store|
 
-
-
-
-
-
+| Member          | Value | Description                                           |
+| :-------------- | :---- | :---------------------------------------------------- |
+| notConfigured   | 0     | Not configured                                        |
+| anywhere        | 1     | Turn off app recommendations                          |
+| storeOnly       | 2     | Allow apps from Store only                            |
+| recommendations | 3     | Show me app recommendations                           |
+| preferStore     | 4     | Warn me before installing apps from outside the Store |

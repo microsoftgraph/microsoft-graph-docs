@@ -1,4 +1,4 @@
----
+﻿---
 title: "Azure AD authentication methods API overview"
 description: "Authentication methods are how users authenticate in Azure AD."
 localization_priority: Normal
@@ -24,14 +24,12 @@ The authentication method APIs are used to manage a user's authentication method
 
 ## What authentication methods can be managed in Microsoft Graph?
 
-|Authentication method       | Description |Examples     |
-|:---------------------------|:------------|:------------|
-|[passwordAuthenticationMethod](passwordauthenticationmethod.md)| A password is currently the default primary authentication method in Azure AD.|Reset a user's password|
-|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|A phone can be used by a user to authenticate using [SMS or voice calls](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods#phone-options) (as allowed by policy).|See a user's authentication phone numbers. Add, update, or remove a phone number to a user. Enable or disable a primary mobile phone for SMS sign-in.|
+| Authentication method                                           | Description                                                                                                                                                                                                     | Examples                                                                                                                                              |
+| :-------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [passwordAuthenticationMethod](passwordauthenticationmethod.md) | A password is currently the default primary authentication method in Azure AD.                                                                                                                                  | Reset a user's password                                                                                                                               |
+| [phoneAuthenticationMethod](phoneauthenticationmethod.md)       | A phone can be used by a user to authenticate using [SMS or voice calls](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods#phone-options) (as allowed by policy). | See a user's authentication phone numbers. Add, update, or remove a phone number to a user. Enable or disable a primary mobile phone for SMS sign-in. |
 
 ## Next steps
 
 * Review the authentication method types and their various methods.
 * Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-

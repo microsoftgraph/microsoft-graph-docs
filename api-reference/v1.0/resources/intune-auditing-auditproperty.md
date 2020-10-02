@@ -1,4 +1,4 @@
----
+﻿---
 title: "auditProperty resource type"
 description: "A class containing the properties for Audit Property."
 author: "dougeby"
@@ -16,23 +16,28 @@ Namespace: microsoft.graph
 A class containing the properties for Audit Property.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Display name.|
-|oldValue|String|Old value.|
-|newValue|String|New value.|
+
+| Property    | Type   | Description   |
+| :---------- | :----- | :------------ |
+| displayName | String | Display name. |
+| oldValue    | String | Old value.    |
+| newValue    | String | New value.    |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditProperty"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.auditProperty",
   "displayName": "String",
@@ -40,12 +45,3 @@ Here is a JSON representation of the resource.
   "newValue": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

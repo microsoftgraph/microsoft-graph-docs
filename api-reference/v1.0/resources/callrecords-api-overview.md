@@ -1,4 +1,4 @@
----
+﻿---
 title: "Working with the call records API in Microsoft Graph"
 description: "The Microsoft Graph call records API allows you to retrieve usage and diagnostics data for calls and online meetings within your organization."
 author: "stephenjust"
@@ -15,11 +15,11 @@ The call records API is defined in the OData sub-namespace, `microsoft.graph.cal
 
 ## Key resource types
 
-| Resource | Methods |
-| :-- | :-- |
-| [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
-| [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
-| [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
+| Resource                                | Methods                                                                                                         |
+| :-------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md)                                                          |
+| [session](callrecords-session.md)       | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
+| [segment](callrecords-segment.md)       | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
 
 ## Call record structure
 
@@ -36,4 +36,3 @@ In the diagram above, the numbers denote how many children of each type can be p
 ## See also
 
 - [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-1.0)
-

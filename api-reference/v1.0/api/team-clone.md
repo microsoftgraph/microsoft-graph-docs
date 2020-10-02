@@ -1,4 +1,4 @@
----
+﻿---
 title: "Clone a team"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
 author: "nkramer"
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Clone a team
 
 Namespace: microsoft.graph
-
-
 
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
 You can specify which parts of the team to clone:
@@ -35,34 +33,37 @@ The recommended delay between GETs is 5 seconds.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /teams/{id}/clone
 ```
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|classification|String (optional)|Describes a classification for the group (such as low, medium or high business impact). If classification is not specified, the classification will be copied from the original team/group.|
-|description|String (optional)|An optional description for the group. If this property is not specified, it will be left blank.|
-|displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property is not specified, it will be computed from the displayName. Known issue: this property is currently ignored.|
-|partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |A comma-separated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
-|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
+| Property       | Type                                                                | Description                                                                                                                                                                                                                                                                                                                                   |
+| :------------- | :------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| classification | String (optional)                                                   | Describes a classification for the group (such as low, medium or high business impact). If classification is not specified, the classification will be copied from the original team/group.                                                                                                                                                   |
+| description    | String (optional)                                                   | An optional description for the group. If this property is not specified, it will be left blank.                                                                                                                                                                                                                                              |
+| displayName    | String                                                              | The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.                                                                                                                                                                                     |
+| mailNickname   | String                                                              | The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property is not specified, it will be computed from the displayName. Known issue: this property is currently ignored.                                                                            |
+| partsToClone   | [clonableTeamParts](../resources/clonableteamparts.md)              | A comma-separated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".                                                                                                                                                                                                                                      |
+| visibility     | [teamVisibilityType](../resources/teamvisibilitytype.md) (optional) | Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership. |
 
 ## Response
 
@@ -70,14 +71,18 @@ If successful, this method will return a `202 Accepted` response code with a Loc
 When the operation is complete, the operation resource will tell you the id of the created team.
 
 ## Example
+
 #### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "clone_team"
 }-->
+
 ```http
 POST /teams/{id}/clone
 Content-Type: application/json
@@ -90,32 +95,39 @@ Content-Type: application/json
      "visibility": "public"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/clone-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/clone-team-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/clone-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/clone-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 Location: /teams({id})/operations({opId})
@@ -125,6 +137,7 @@ Content-Length: 0
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create Team",
@@ -132,4 +145,3 @@ Content-Length: 0
   "section": "documentation",
   "tocPath": ""
 }-->
-

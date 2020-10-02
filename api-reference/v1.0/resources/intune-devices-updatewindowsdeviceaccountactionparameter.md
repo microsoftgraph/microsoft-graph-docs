@@ -1,4 +1,4 @@
----
+﻿---
 title: "updateWindowsDeviceAccountActionParameter resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,26 +16,31 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceAccount|[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|Not yet documented|
-|passwordRotationEnabled|Boolean|Not yet documented|
-|calendarSyncEnabled|Boolean|Not yet documented|
-|deviceAccountEmail|String|Not yet documented|
-|exchangeServer|String|Not yet documented|
-|sessionInitiationProtocalAddress|String|Not yet documented|
+
+| Property                         | Type                                                                        | Description        |
+| :------------------------------- | :-------------------------------------------------------------------------- | :----------------- |
+| deviceAccount                    | [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) | Not yet documented |
+| passwordRotationEnabled          | Boolean                                                                     | Not yet documented |
+| calendarSyncEnabled              | Boolean                                                                     | Not yet documented |
+| deviceAccountEmail               | String                                                                      | Not yet documented |
+| exchangeServer                   | String                                                                      | Not yet documented |
+| sessionInitiationProtocalAddress | String                                                                      | Not yet documented |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.updateWindowsDeviceAccountActionParameter"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.updateWindowsDeviceAccountActionParameter",
   "deviceAccount": {
@@ -49,12 +54,3 @@ Here is a JSON representation of the resource.
   "sessionInitiationProtocalAddress": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

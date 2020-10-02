@@ -1,4 +1,4 @@
----
+﻿---
 title: "edgeSearchEngineType enum type"
 description: "Allows IT admind to set a predefined default search engine for MDM-Controlled devices"
 author: "dougeby"
@@ -16,16 +16,8 @@ Namespace: microsoft.graph
 Allows IT admind to set a predefined default search engine for MDM-Controlled devices
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|default|0|Uses factory settings of Edge to assign the default search engine as per the user market|
-|bing|1|Sets Bing as the default search engine|
 
-
-
-
-
-
-
-
-
+| Member  | Value | Description                                                                              |
+| :------ | :---- | :--------------------------------------------------------------------------------------- |
+| default | 0     | Uses factory settings of Edge to assign the default search engine as per the user market |
+| bing    | 1     | Sets Bing as the default search engine                                                   |

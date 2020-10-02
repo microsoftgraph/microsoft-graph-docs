@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get continuousAccessEvaluationPolicy"
 description: "Read the properties of a continuousAccessEvaluationPolicy object."
 author: "jerrysai"
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get continuousAccessEvaluationPolicy
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,30 +16,35 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)     | Policy.Read.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Policy.Read.All |
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.Read.All                             |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Policy.Read.All                             |
 
 ## HTTP request
 
 <!-- {  "blockType": "ignored"} -->
-``` http
+
+```http
 GET /identity/continuousAccessEvaluationPolicy
 ```
 
 ## Optional query parameters
+
 This method supports the '$select' OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -50,29 +56,33 @@ If successful, this method returns a `200 OK` response code and a [continuousAcc
 ### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_continuousaccessevaluationpolicy"
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/beta/identity/continuousAccessEvaluationPolicy
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-continuousaccessevaluationpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-continuousaccessevaluationpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-continuousaccessevaluationpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 
@@ -84,7 +94,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.continuousAccessEvaluationPolicy"
 } -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

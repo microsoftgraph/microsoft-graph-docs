@@ -1,4 +1,4 @@
----
+﻿---
 title: "appleAppListItem resource type"
 description: "Represents an app in the list of managed Apple applications"
 author: "dougeby"
@@ -17,28 +17,32 @@ Namespace: microsoft.graph
 
 Represents an app in the list of managed Apple applications
 
-
 Inherits from [appListItem](../resources/intune-deviceconfig-applistitem.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|name|String|The application name Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
-|publisher|String|The publisher of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
-|appStoreUrl|String|The Store URL of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
-|appId|String|The application or bundle identifier of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
+
+| Property    | Type   | Description                                                                                                                           |
+| :---------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| name        | String | The application name Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)                                    |
+| publisher   | String | The publisher of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)                        |
+| appStoreUrl | String | The Store URL of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)                        |
+| appId       | String | The application or bundle identifier of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md) |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appleAppListItem"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.appleAppListItem",
   "name": "String",
@@ -47,9 +51,3 @@ Here is a JSON representation of the resource.
   "appId": "String"
 }
 ```
-
-
-
-
-
-

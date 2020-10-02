@@ -1,4 +1,4 @@
----
+﻿---
 title: "itemInsights resource type"
 description: "Relationships between a user and items such as OneDrive for Business documents, calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for Business documents trending around users."
 author: "simonhult"
@@ -27,16 +27,16 @@ Update [itemInsightsSettings](iteminsightssettings.md) to disable item insights 
 
 ## Relationships
 
-| Relationship      | Type          | Description  |
-| ------------- |---------------| -------------|
-| trending    	| [trending](insights-trending.md) collection		| Calculated relationship identifying documents trending around a user. Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint. Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.|
-| used    	| [usedInsight](insights-used.md) collection		| Calculated relationship identifying the latest documents viewed and modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.|
-| shared    	| [sharedInsight](insights-shared.md) collection		| Calculated relationship identifying documents shared with or by the user, includes file attachments in emails and meetings, as well as URLs and Reference attachments to OneDrive for Business and SharePoint files found in emails, meetings, and Teams conversations. Ordered by recency of share.|
-
+| Relationship | Type                                           | Description                                                                                                                                                                                                                                                                                                                                                          |
+| ------------ | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| trending     | [trending](insights-trending.md) collection    | Calculated relationship identifying documents trending around a user. Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint. Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before. |
+| used         | [usedInsight](insights-used.md) collection     | Calculated relationship identifying the latest documents viewed and modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.                                                                                                                                                                                          |
+| shared       | [sharedInsight](insights-shared.md) collection | Calculated relationship identifying documents shared with or by the user, includes file attachments in emails and meetings, as well as URLs and Reference attachments to OneDrive for Business and SharePoint files found in emails, meetings, and Teams conversations. Ordered by recency of share.                                                                 |
 
 ## JSON representation
 
 Here is a JSON representation of the resource
+
 <!-- {
   "blockType": "resource",
   "keyProperty":"id",
@@ -57,5 +57,3 @@ Here is a JSON representation of the resource
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
-
-

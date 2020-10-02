@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "The ItemActivityTimeSet resource provides information about when an activity on an item took place."
 ms.date: 09/14/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # ItemActivityTimeSet resource type
 
 Namespace: microsoft.graph
@@ -37,10 +38,10 @@ The **ItemActivityTimeSet** resource provides information about when an [activit
 
 ## Properties
 
-| Property name    | Type           | Description
-|:-----------------|:---------------|:-----------------------------------------
-| observedDateTime | DateTimeOffset | When the activity was observed to take place.
-| recordedDateTime | DateTimeOffset | When the observation was recorded on the service.
+| Property name    | Type           | Description                                       |
+| :--------------- | :------------- | :------------------------------------------------ |
+| observedDateTime | DateTimeOffset | When the activity was observed to take place.     |
+| recordedDateTime | DateTimeOffset | When the observation was recorded on the service. |
 
 The difference between **observed** and **recorded** times is especially important for offline collaboration scenarios.
 If a user comments on a file while offline, the time that they make the comment is set as the **observedDateTime**.
@@ -60,5 +61,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

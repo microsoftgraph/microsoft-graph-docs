@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileAppSupportedDeviceType resource type"
 description: "Device properties"
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 Device properties
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|type|[deviceType](../resources/intune-shared-devicetype.md)|Device type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `cloudPC`, `blackberry`, `palm`, `unknown`.|
-|minimumOperatingSystemVersion|String|Minimum OS version|
-|maximumOperatingSystemVersion|String|Maximum OS version|
+
+| Property                      | Type                                                   | Description                                                                                                                                                                                                                                                                                                                                  |
+| :---------------------------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| type                          | [deviceType](../resources/intune-shared-devicetype.md) | Device type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `cloudPC`, `blackberry`, `palm`, `unknown`. |
+| minimumOperatingSystemVersion | String                                                 | Minimum OS version                                                                                                                                                                                                                                                                                                                           |
+| maximumOperatingSystemVersion | String                                                 | Maximum OS version                                                                                                                                                                                                                                                                                                                           |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppSupportedDeviceType"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mobileAppSupportedDeviceType",
   "type": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "maximumOperatingSystemVersion": "String"
 }
 ```
-
-
-
-
-
-

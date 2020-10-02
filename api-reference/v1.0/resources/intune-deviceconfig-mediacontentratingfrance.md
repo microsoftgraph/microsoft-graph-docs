@@ -1,4 +1,4 @@
----
+﻿---
 title: "mediaContentRatingFrance resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,34 +16,30 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|movieRating|[ratingFranceMoviesType](../resources/intune-deviceconfig-ratingfrancemoviestype.md)|Movies rating selected for France. Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
-|tvRating|[ratingFranceTelevisionType](../resources/intune-deviceconfig-ratingfrancetelevisiontype.md)|TV rating selected for France. Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.|
+
+| Property    | Type                                                                                         | Description                                                                                                                                     |
+| :---------- | :------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| movieRating | [ratingFranceMoviesType](../resources/intune-deviceconfig-ratingfrancemoviestype.md)         | Movies rating selected for France. Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`. |
+| tvRating    | [ratingFranceTelevisionType](../resources/intune-deviceconfig-ratingfrancetelevisiontype.md) | TV rating selected for France. Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.     |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingFrance"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingFrance",
   "movieRating": "String",
   "tvRating": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

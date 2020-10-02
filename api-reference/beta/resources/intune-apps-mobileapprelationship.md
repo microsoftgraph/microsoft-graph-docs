@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileAppRelationship resource type"
 description: "Describes a relationship between two mobile apps."
 author: "dougeby"
@@ -18,31 +18,37 @@ Namespace: microsoft.graph
 Describes a relationship between two mobile apps.
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List mobileAppRelationships](../api/intune-apps-mobileapprelationship-list.md)|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|List properties and relationships of the [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) objects.|
-|[Get mobileAppRelationship](../api/intune-apps-mobileapprelationship-get.md)|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|Read properties and relationships of the [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) object.|
+
+| Method                                                                          | Return Type                                                                           | Description                                                                                                                  |
+| :------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------- |
+| [List mobileAppRelationships](../api/intune-apps-mobileapprelationship-list.md) | [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection | List properties and relationships of the [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) objects. |
+| [Get mobileAppRelationship](../api/intune-apps-mobileapprelationship-get.md)    | [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)            | Read properties and relationships of the [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) object.  |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The relationship entity id.|
-|targetId|String|The target mobile app's app id.|
-|targetDisplayName|String|The target mobile app's display name.|
-|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target is a parent or child. Possible values are: `child`, `parent`.|
+
+| Property          | Type                                                                               | Description                                                                                                          |
+| :---------------- | :--------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
+| id                | String                                                                             | The relationship entity id.                                                                                          |
+| targetId          | String                                                                             | The target mobile app's app id.                                                                                      |
+| targetDisplayName | String                                                                             | The target mobile app's display name.                                                                                |
+| targetType        | [mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md) | The type of relationship indicating whether the target is a parent or child. Possible values are: `child`, `parent`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppRelationship"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mobileAppRelationship",
   "id": "String (identifier)",
@@ -51,9 +57,3 @@ Here is a JSON representation of the resource.
   "targetType": "String"
 }
 ```
-
-
-
-
-
-

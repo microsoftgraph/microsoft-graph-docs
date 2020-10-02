@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosDeviceType resource type"
 description: "Contains properties of the possible iOS device types the mobile app can run on."
 author: "dougeby"
@@ -16,34 +16,30 @@ Namespace: microsoft.graph
 Contains properties of the possible iOS device types the mobile app can run on.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|iPad|Boolean|Whether the app should run on iPads.|
-|iPhoneAndIPod|Boolean|Whether the app should run on iPhones and iPods.|
+
+| Property      | Type    | Description                                      |
+| :------------ | :------ | :----------------------------------------------- |
+| iPad          | Boolean | Whether the app should run on iPads.             |
+| iPhoneAndIPod | Boolean | Whether the app should run on iPhones and iPods. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosDeviceType"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosDeviceType",
   "iPad": true,
   "iPhoneAndIPod": true
 }
 ```
-
-
-
-
-
-
-
-
-

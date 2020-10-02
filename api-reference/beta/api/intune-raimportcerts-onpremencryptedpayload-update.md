@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update onPremEncryptedPayload"
 description: "Update the properties of a onPremEncryptedPayload object."
 author: "dougeby"
@@ -18,63 +18,69 @@ Namespace: microsoft.graph
 Update the properties of a [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object.
 
 The following table shows the properties that are required when you create the [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|tenantId|Guid|Not yet documented|
-|userId|Guid|Not yet documented|
-|deviceId|Guid|Not yet documented|
-|payloadId|Guid|Not yet documented|
-|deviceKeyThumbprint|String|Not yet documented|
-|cert1PayloadUUID|String|Not yet documented|
-|cert2PayloadUUID|String|Not yet documented|
-|cert3PayloadUUID|String|Not yet documented|
-|plistTemplate|String|Not yet documented|
-|encryptedBlob|Binary|Not yet documented|
-|payloadVersion|Int32|Not yet documented|
-|status|Int32|Not yet documented|
-|createdTime|DateTimeOffset|Not yet documented|
-|lastModifiedTime|DateTimeOffset|Not yet documented|
-|eTag|String|Not yet documented|
-|isDeleted|Boolean|Not yet documented|
-
-
+| Property            | Type           | Description        |
+| :------------------ | :------------- | :----------------- |
+| tenantId            | Guid           | Not yet documented |
+| userId              | Guid           | Not yet documented |
+| deviceId            | Guid           | Not yet documented |
+| payloadId           | Guid           | Not yet documented |
+| deviceKeyThumbprint | String         | Not yet documented |
+| cert1PayloadUUID    | String         | Not yet documented |
+| cert2PayloadUUID    | String         | Not yet documented |
+| cert3PayloadUUID    | String         | Not yet documented |
+| plistTemplate       | String         | Not yet documented |
+| encryptedBlob       | Binary         | Not yet documented |
+| payloadVersion      | Int32          | Not yet documented |
+| status              | Int32          | Not yet documented |
+| createdTime         | DateTimeOffset | Not yet documented |
+| lastModifiedTime    | DateTimeOffset | Not yet documented |
+| eTag                | String         | Not yet documented |
+| isDeleted           | Boolean        | Not yet documented |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 Content-type: application/json
 Content-length: 781
@@ -101,8 +107,10 @@ Content-length: 781
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 781
@@ -127,9 +135,3 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
-
-
-
-
-
-

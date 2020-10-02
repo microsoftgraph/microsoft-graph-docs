@@ -1,4 +1,4 @@
----
+﻿---
 title: "assign action"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,50 +18,56 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)||
-| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application||
-| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     |                                             |
+| &nbsp; &nbsp; **Onboarding**           | DeviceManagementServiceConfig.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            |                                             |
+| &nbsp; &nbsp; **Onboarding**           | DeviceManagementServiceConfig.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assign
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|enrollmentConfigurationAssignments|[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) collection|Not yet documented|
-
-
+| Property                           | Type                                                                                                                | Description        |
+| :--------------------------------- | :------------------------------------------------------------------------------------------------------------------ | :----------------- |
+| enrollmentConfigurationAssignments | [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) collection | Not yet documented |
 
 ## Response
+
 If successful, this action returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assign
 
 Content-type: application/json
@@ -81,16 +87,9 @@ Content-length: 304
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-
-
-
-

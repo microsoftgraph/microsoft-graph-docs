@@ -1,4 +1,4 @@
----
+﻿---
 author: rahmit
 description: "The sitePageData resource represents the properties of a webPart. As these properties vary by web part, this is an OpenType with no fixed properties."
 ms.date: 09/01/2018
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # sitePageData resource
 
 Namespace: microsoft.graph
@@ -32,6 +33,7 @@ The **sitePageData** resource represents the properties of a [webPart][]. As the
 ```
 
 ## Properties
+
 This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.
 
 <!--
@@ -44,5 +46,3 @@ This resource has no fixed properties, but is an OpenType containing all propert
   "suppressions": []
 }
 -->
-
-

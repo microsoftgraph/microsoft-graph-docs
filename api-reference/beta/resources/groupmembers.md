@@ -1,4 +1,4 @@
----
+﻿---
 title: "groupMembers complex type"
 description: "Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer."
 localization_priority: Normal
@@ -18,14 +18,13 @@ The `@odata.type` value "`#microsoft.graph.groupMembers`" indicates that this ty
 
 ## Properties
 
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| id |String | The ID of the group in Azure AD. |
-| description |String | The name of the group in Azure AD. Read only. |
-| isBackup | Boolean | For **groupMembers** in an approval stage, this property indicates that the group members are a backup fallback approver. |
+| Property    | Type    | Description                                                                                                               |
+| :---------- | :------ | :------------------------------------------------------------------------------------------------------------------------ |
+| id          | String  | The ID of the group in Azure AD.                                                                                          |
+| description | String  | The name of the group in Azure AD. Read only.                                                                             |
+| isBackup    | Boolean | For **groupMembers** in an approval stage, this property indicates that the group members are a backup fallback approver. |
 
 ## JSON representation
-
 
 The following is a JSON representation of the type.
 
@@ -46,10 +45,9 @@ The following is a JSON representation of the type.
 }
 ```
 
-
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "groupMembers complex type",
@@ -57,5 +55,3 @@ The following is a JSON representation of the type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

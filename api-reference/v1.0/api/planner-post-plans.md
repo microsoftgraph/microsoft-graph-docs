@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create plannerPlan"
 description: "Use this API to create a new **plannerPlan**."
 localization_priority: Normal
@@ -26,7 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-``` http
+
+```http
 POST /planner/plans
 ```
 
@@ -43,7 +44,6 @@ The **plannerPlan** owner property must be set to an id of a [group](../resource
 
 >**Note:** The user who is creating the plan must be a member of the group that will own the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
-
 ## Response
 
 If successful, this method returns `201 Created` response code and [plannerPlan](../resources/plannerplan.md) object in the response body.
@@ -56,13 +56,14 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 Here is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
 Content-length: 381
@@ -72,24 +73,28 @@ Content-length: 381
   "title": "title-value"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-plannerplan-from-planner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-plannerplan-from-planner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-plannerplan-from-planner-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-plannerplan-from-planner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.
 
@@ -102,7 +107,8 @@ Here is an example of the response. Note: The response object shown here may be 
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerPlan"
 } -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 357
@@ -125,6 +131,7 @@ Content-length: 357
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create plannerPlan",
@@ -134,4 +141,3 @@ Content-length: 357
   "suppressions": [
   ]
 }-->
-

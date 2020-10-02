@@ -1,4 +1,4 @@
----
+﻿---
 title: "group: getMemberGroups"
 description: "Return all the groups that the specified group is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the group is a direct member of."
 localization_priority: Normal
@@ -23,10 +23,10 @@ always direct.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                 |
-| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Permission type                        | Permissions (from least to most privileged)                                                                   |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
 | Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                              |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                |
 | Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
@@ -61,8 +61,8 @@ If successful, this method returns `200 OK` response code and String collection 
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_getmembergroups"
@@ -77,20 +77,23 @@ Content-length: 33
   "securityEnabledOnly": false
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-getmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-getmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-getmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -131,5 +134,3 @@ Content-length: 39
   ]
 }
 -->
-
-

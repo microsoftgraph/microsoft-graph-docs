@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update teamsApp"
 description: "Update an app previously published to the Microsoft Teams app catalog. "
 author: "nkramer"
@@ -23,12 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 >**Note:** Only global administrators can call this API.
 
-| Permission Type                        | Permissions (from least to most privileged)|
-|:----------------------------------     |:-------------|
+| Permission Type                        | Permissions (from least to most privileged)       |
+| :------------------------------------- | :------------------------------------------------ |
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | AppCatalog.Submit|
-| Delegated (personal Microsoft account) | Not supported|
-| Application                            | Not supported. |
+| Delegated (work or school account)     | AppCatalog.Submit                                 |
+| Delegated (personal Microsoft account) | Not supported                                     |
+| Application                            | Not supported.                                    |
 
 ## HTTP request
 
@@ -40,14 +40,14 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## Query parameters
 
-|Property|Type|Description|
-|----|----|----|
-|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
+| Property       | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                  |
+| -------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| requiresReview | Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly. |
 
 ## Request headers
 
-| Header        | Value           |
-|:--------------|:--------------  |
+| Header        | Value                      |
+| :------------ | :------------------------- |
 | Authorization | Bearer {token}. Required.  |
 | Content-Type  | application/zip. Required. |
 
@@ -65,6 +65,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example 1: Update an application previously published to the Microsoft Teams app catalog
 
+
+
 ### Request
 
 <!-- { "blockType": "ignored" } -->
@@ -78,6 +80,7 @@ Content-length: 244
 ```
 
 For details about the Teams application zip file, see [Create app package](/microsoftteams/platform/concepts/apps/apps-package).
+
 <!-- markdownlint-disable MD024 -->
 
 ### Response
@@ -86,11 +89,14 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example 2: Update a new version of an existing app for admin review prior to publication in the current tenant catalog
 
+
+
 ### Request
 
 <!-- markdownlint-disable MD034 -->
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
@@ -103,12 +109,13 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

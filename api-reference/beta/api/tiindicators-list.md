@@ -1,4 +1,4 @@
----
+﻿---
 title: "List threat intelligence indicators"
 description: "Retrieve a list of tiindicator objects."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Retrieve a list of [tiIndicator](../resources/tiindicator.md) objects.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type     | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy  |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ThreatIndicators.ReadWrite.OwnedBy          |
 
 ## HTTP request
 
@@ -39,8 +39,8 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description   |
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_tiindicators"
@@ -66,20 +67,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/tiIndicators
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tiindicators-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-tiindicators-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tiindicators-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -117,6 +121,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List tiIndicators",
@@ -126,5 +131,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

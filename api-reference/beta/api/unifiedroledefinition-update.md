@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update unifiedRoleDefinition"
 description: "Update the properties of a unifiedRoleDefinition object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefin
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | RoleManagement.ReadWrite.Directory          |
 
 ## HTTP request
 
@@ -35,26 +35,26 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|description|String| The description for the role definition. Read-only when isBuiltIn is true. |
-|displayName|String| The display name for the role definition. Read-only when isBuiltIn is true. Required.|
-|id|String| The unique identifier for the role definition. Key, not nullable, Read-only. |
-|isBuiltIn|Boolean| Flag indicating if the role definition is part of the default set included with the product or custom. Read-only. |
-|isEnabled|Boolean| Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true. |
-|resourceScopes|String collection| List of scopes permissions granted by the role definition apply to. Currently only "/" is supported. Read-only when isBuiltIn is true. **DO NOT USE. This property will be deprecated soon. Attach scope to role assignment.**|
-|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) collection| List of permissions included in the role. Read-only when isBuiltIn is true. Required. |
-|templateId|String| Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true. |
-|inheritsPermissionsFrom| [unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection| Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute. |
-|version|String| Indicates version of the role definition. Read-only when isBuiltIn is true.|
+| Property                | Type                                                                      | Description                                                                                                                                                                                                                    |
+| :---------------------- | :------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| description             | String                                                                    | The description for the role definition. Read-only when isBuiltIn is true.                                                                                                                                                     |
+| displayName             | String                                                                    | The display name for the role definition. Read-only when isBuiltIn is true. Required.                                                                                                                                          |
+| id                      | String                                                                    | The unique identifier for the role definition. Key, not nullable, Read-only.                                                                                                                                                   |
+| isBuiltIn               | Boolean                                                                   | Flag indicating if the role definition is part of the default set included with the product or custom. Read-only.                                                                                                              |
+| isEnabled               | Boolean                                                                   | Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.                                                                                    |
+| resourceScopes          | String collection                                                         | List of scopes permissions granted by the role definition apply to. Currently only "/" is supported. Read-only when isBuiltIn is true. **DO NOT USE. This property will be deprecated soon. Attach scope to role assignment.** |
+| rolePermissions         | [unifiedRolePermission](../resources/unifiedrolepermission.md) collection | List of permissions included in the role. Read-only when isBuiltIn is true. Required.                                                                                                                                          |
+| templateId              | String                                                                    | Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.                |
+| inheritsPermissionsFrom | [unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection | Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.                                                                                    |
+| version                 | String                                                                    | Indicates version of the role definition. Read-only when isBuiltIn is true.                                                                                                                                                    |
 
 ## Response
 
@@ -66,8 +66,8 @@ If successful, this method returns a `200 OK` response code and an updated [unif
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroledefinition"
@@ -91,20 +91,23 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedroledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedroledefinition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedroledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -125,6 +128,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update unifiedroledefinition",
@@ -132,5 +136,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

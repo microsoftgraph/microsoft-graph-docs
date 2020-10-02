@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update application"
 description: "Update the properties of an application object."
 author: "sureshja"
@@ -17,31 +17,36 @@ Update the properties of an [application](../resources/application.md) object.
 > Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password for an application.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)              |
+| :------------------------------------- | :------------------------------------------------------- |
+| Delegated (work or school account)     | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegated (personal Microsoft account) | Not supported.                                           |
+| Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /applications/{id}
 ```
+
 ## Request headers
-| Name       | Description|
-|:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
-| Content-Type | application/json. Required. |
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property                | Type                                                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|:------------------------|:----------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :---------------------- | :-------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | api                     | [apiApplication](../resources/apiapplication.md)                            | Specifies settings for an application that implements a web API.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | appRoles                | [appRole](../resources/approle.md) collection                               | The collection of application roles that an application may declare. These roles can be assigned to users, groups, or service principals. Not nullable.                                                                                                                                                                                                                                                                                                                                                                                                                |
 | displayName             | String                                                                      | The display name for the application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -63,16 +68,20 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 
 If successful, this method returns a `204 No Content` response code and does not return anything in the response body.
+
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_application"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/{id}
 Content-type: application/json
@@ -82,24 +91,28 @@ Content-length: 72
   "displayName": "New display name"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/update-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -108,12 +121,14 @@ Content-length: 72
   "truncated": true,
   "@odata.type": "microsoft.graph.application"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -125,4 +140,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-

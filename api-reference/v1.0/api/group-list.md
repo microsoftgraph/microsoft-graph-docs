@@ -1,4 +1,4 @@
----
+﻿---
 title: "List groups"
 description: "List all the groups available in an organization, including but not limited to Microsoft 365 groups."
 localization_priority: Priority
@@ -16,30 +16,38 @@ List all the groups in an organization, including but not limited to Microsoft 3
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                  |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                               |
+| Application                            | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups
 ```
 
 ## Optional query parameters
+
 To list only Microsoft 365 groups (aka unified groups), apply a filter on **groupTypes**:
+
 <!-- { "blockType": "ignored" } -->
+
 ```
 GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
 You can use the OData query option `$orderby` to sort groups in an organization by the **displayName**
 values, as shown in the following example:
+
 <!-- { "blockType": "ignored" } -->
+
 ```
 GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ```
@@ -47,14 +55,17 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body. The response includes only the default properties of each group.
 
 ## Example
@@ -66,31 +77,37 @@ If successful, this method returns a `200 OK` response code and collection of [g
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_groups"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-groups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -105,6 +122,7 @@ The following is an example of the response.
   "isCollection": true,
   "name": "get_groups"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -173,7 +191,6 @@ Content-type: application/json
 
 ```
 
-
 ### Example 2: Return a filtered list of group objects
 
 #### Request
@@ -181,31 +198,37 @@ Content-type: application/json
 This example uses a `$filter` query option to get those groups that have members with license errors from their group-based license assignments. It also uses a `$select` query option to get only the **id** and **displayName** properties of each group in the response, and not other default or non-default properties.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_groups_withlicenseerrors"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-withlicenseerrors-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-withlicenseerrors-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-withlicenseerrors-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-groups-withlicenseerrors-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -218,6 +241,7 @@ The following is an example of the response which includes only the requested pr
   "isCollection": true,
   "name": "get_groups_withlicenseerrors"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -237,9 +261,9 @@ Content-type: application/json
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List groups",
@@ -249,4 +273,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

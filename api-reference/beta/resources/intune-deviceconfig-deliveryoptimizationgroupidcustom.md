@@ -1,4 +1,4 @@
----
+﻿---
 title: "deliveryOptimizationGroupIdCustom resource type"
 description: "Custom group id type"
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 Custom group id type
 
-
 Inherits from [deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|groupIdCustom|String|Specifies an arbitrary group ID that the device belongs to|
+
+| Property      | Type   | Description                                                |
+| :------------ | :----- | :--------------------------------------------------------- |
+| groupIdCustom | String | Specifies an arbitrary group ID that the device belongs to |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdCustom"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deliveryOptimizationGroupIdCustom",
   "groupIdCustom": "String"
 }
 ```
-
-
-
-
-
-

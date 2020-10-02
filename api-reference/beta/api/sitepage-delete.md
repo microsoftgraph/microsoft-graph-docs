@@ -1,4 +1,4 @@
----
+﻿---
 author: rahmit
 description: "Removes a sitePage from the site pages list in a site."
 ms.date: 05/07/2018
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Delete page from the site pages list of a site
 
 Namespace: microsoft.graph
@@ -25,11 +26,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 >**Note:** To delete an item, the user must have granted the application write access to the item to be deleted.
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.ReadWrite.All                         |
 
 ## HTTP request
 
@@ -41,13 +42,14 @@ DELETE /sites/{site-id}/pages/{page-id}
 
 ## Optional request headers
 
-| Name       | Value | Description
-|:-----------|:------|:--------------------------------------------------------
-| _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
+| Name       | Value | Description                                                                                                                                                                             |
+| :--------- | :---- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 ## Request body
 
 Do not supply a request body with this method.
+
 <!-- TODO: should we provide a URL to recover/undelete the file, if one exists? -->
 
 ## Response
@@ -63,6 +65,7 @@ If successful, this call returns a `204 No Content` response to indicate that th
 ```http
 DELETE /sites/{site-id}/pages/{page-id}
 ```
+
 ##### Response
 
 <!-- { "blockType": "response" } -->
@@ -81,5 +84,3 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
-
-

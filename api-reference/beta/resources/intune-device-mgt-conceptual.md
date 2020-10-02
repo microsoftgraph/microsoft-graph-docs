@@ -1,4 +1,4 @@
----
+﻿---
 title: "Device management in Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define manage devices for a tenant organization."
 author: "dougeby"
@@ -263,5 +263,3 @@ Namespace: microsoft.graph
 - [Windows management app](intune-devices-windowsmanagementapp.md)
 - [Windows management app health state](intune-devices-windowsmanagementapphealthstate.md)
 - [Windows protection state](intune-devices-windowsprotectionstate.md)
-
-

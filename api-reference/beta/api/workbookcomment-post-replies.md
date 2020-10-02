@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create workbookCommentReply"
 description: "Create a new workbookCommentReply."
 localization_priority: Normal
@@ -18,10 +18,10 @@ Create a new [workbookCommentReply](../resources/workbookcommentreply.md) object
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Files.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Files.ReadWrite                             |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -33,8 +33,8 @@ POST /workbook/comments/{id}/replies
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -52,6 +52,7 @@ If successful, this method returns a `201 Created` response code and a new [work
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_workbookcommentreply_from_workbookcomment"
@@ -66,20 +67,23 @@ Content-type: application/json
   "contentType": "plain"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-workbookcommentreply-from-workbookcomment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-workbookcommentreply-from-workbookcomment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-workbookcommentreply-from-workbookcomment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -106,6 +110,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create workbookCommentReply",
@@ -113,5 +118,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

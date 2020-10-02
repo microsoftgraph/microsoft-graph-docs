@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete skillProficiency"
 description: "Delete skillProficiency."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Delete a [skillProficiency](../resources/skillproficiency.md) object from a user
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,11 +36,10 @@ DELETE /users/{id | userPrincipalName}/profile/skills/{id}
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
-
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -57,6 +56,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_skillproficiency"
@@ -65,15 +65,19 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/me/profile/skills/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-skillproficiency-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-skillproficiency-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-skillproficiency-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -91,5 +95,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

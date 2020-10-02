@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationSynchronizationError resource type"
 description: "Represents an error during school data profile validation and/or sync. A unique error is generated for every entry that fails to validate and/or synchronize with Azure Active Directory (Azure AD)."
 author: "mmast-msft"
@@ -54,5 +54,3 @@ Represents an error during school data profile validation and/or sync. A unique 
   "reportableIdentifier": "String"
 }
 ```
-
-

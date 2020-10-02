@@ -1,4 +1,4 @@
----
+﻿---
 title: "attachment resource type"
 description: "You can add related content to an event,"
 localization_priority: Normal
@@ -36,35 +36,36 @@ Outlook tasks do not support reference attachments.
 
 The following methods apply to any of the derived types of attachments (**fileAttachment**, **itemAttachment**, or **referenceAttachment**).
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Get attachment](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties, relationships, or raw contents of an attachment, attached to a user event, message, Outlook task, or post.|
-|[Add attachment to a user event](../api/event-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event in a user calendar.|
-|[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message. This operation limits the size of the attachment you can add to under 4 MB.|
-|[Create session to attach large file](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified **message**. The file size must be between 3MB and 150MB.|
-|[Add attachment to an Outlook task](../api/outlooktask-post-attachments.md) (deprecated) | [attachment](attachment.md) |Add a file or item attachment to an Outlook task.|
-|[Add attachment to a post](../api/post-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a group post.|
-|[List attachments of a user event](../api/event-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event in a user calendar. |
-|[List attachments of a message](../api/message-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
-|[List attachments of an Outlook task](../api/outlooktask-list-attachments.md) (deprecated) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task. |
-|[List attachments of a post](../api/post-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
-|[Delete](../api/attachment-delete.md) | None |Delete an attachment on an event, message, Outlook task, or post. |
+| Method                                                                                     | Return Type                            | Description                                                                                                                                                                             |
+| :----------------------------------------------------------------------------------------- | :------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Get attachment](../api/attachment-get.md)                                                 | [attachment](attachment.md)            | Read the properties, relationships, or raw contents of an attachment, attached to a user event, message, Outlook task, or post.                                                         |
+| [Add attachment to a user event](../api/event-post-attachments.md)                         | [attachment](attachment.md)            | Add a file, item, or link attachment to an event in a user calendar.                                                                                                                    |
+| [Add attachment to a message](../api/message-post-attachments.md)                          | [attachment](attachment.md)            | Add a file, item, or link attachment to a message. This operation limits the size of the attachment you can add to under 4 MB.                                                          |
+| [Create session to attach large file](../api/attachment-createuploadsession.md)            | [uploadSession](uploadsession.md)      | Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified **message**. The file size must be between 3MB and 150MB. |
+| [Add attachment to an Outlook task](../api/outlooktask-post-attachments.md) (deprecated)   | [attachment](attachment.md)            | Add a file or item attachment to an Outlook task.                                                                                                                                       |
+| [Add attachment to a post](../api/post-post-attachments.md)                                | [attachment](attachment.md)            | Add a file, item, or link attachment to a group post.                                                                                                                                   |
+| [List attachments of a user event](../api/event-list-attachments.md)                       | [attachment](attachment.md) collection | Get a list of attachments for an event in a user calendar.                                                                                                                              |
+| [List attachments of a message](../api/message-list-attachments.md)                        | [attachment](attachment.md) collection | Get a list of attachments for a message.                                                                                                                                                |
+| [List attachments of an Outlook task](../api/outlooktask-list-attachments.md) (deprecated) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task.                                                                                                                                          |
+| [List attachments of a post](../api/post-list-attachments.md)                              | [attachment](attachment.md) collection | Get a list of attachments for a post.                                                                                                                                                   |
+| [Delete](../api/attachment-delete.md)                                                      | None                                   | Delete an attachment on an event, message, Outlook task, or post.                                                                                                                       |
 
 ## Properties
 
 The following are the base properties of any attachment resource. Refer to the specific type of attachment ([fileAttachment](../resources/fileattachment.md),
 [itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceattachment.md)) for additional properties.
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|contentType|String|The MIME type.|
-|id|String| Read-only.|
-|isInline|Boolean|`true` if the attachment is an inline attachment; otherwise, `false`.|
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|name|String|The display name of the attachment. This does not need to be the actual file name.|
-|size|Int32|The length of the attachment in bytes.|
+| Property             | Type           | Description                                                                                                                                                                                      |
+| :------------------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| contentType          | String         | The MIME type.                                                                                                                                                                                   |
+| id                   | String         | Read-only.                                                                                                                                                                                       |
+| isInline             | Boolean        | `true` if the attachment is an inline attachment; otherwise, `false`.                                                                                                                            |
+| lastModifiedDateTime | DateTimeOffset | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
+| name                 | String         | The display name of the attachment. This does not need to be the actual file name.                                                                                                               |
+| size                 | Int32          | The length of the attachment in bytes.                                                                                                                                                           |
 
 ## Relationships
+
 None
 
 ## JSON representation
@@ -92,9 +93,9 @@ Here is a JSON representation of the resource
 
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -105,5 +106,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

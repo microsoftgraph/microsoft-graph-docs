@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationAssignmentIndividualRecipient resource type"
 description: "Used inside the assignment.assignTo property. When set to individual recipient list, selected students in the class will "
 localization_priority: Normal
@@ -19,9 +19,10 @@ receive a submission object when the assignment is published.
 This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|recipients|String collection|A collection of ids of the recipients.|
+
+| Property   | Type              | Description                            |
+| :--------- | :---------------- | :------------------------------------- |
+| recipients | String collection | A collection of ids of the recipients. |
 
 ## JSON representation
 
@@ -44,6 +45,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -54,5 +56,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

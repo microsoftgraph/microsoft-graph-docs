@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create localizedNotificationMessage"
 description: "Create a new localizedNotificationMessage object."
 author: "dougeby"
@@ -16,53 +16,59 @@ Namespace: microsoft.graph
 Create a new [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementServiceConfig.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the localizedNotificationMessage object.
 
 The following table shows the properties that are required when you create the localizedNotificationMessage.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
-|locale|String|The Locale for which this message is destined.|
-|subject|String|The Message Template Subject.|
-|messageTemplate|String|The Message Template content.|
-|isDefault|Boolean|Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset, set this property to true on another Localized Notification Message.|
-
-
+| Property             | Type           | Description                                                                                                                                                                                 |
+| :------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                   | String         | Key of the entity.                                                                                                                                                                          |
+| lastModifiedDateTime | DateTimeOffset | DateTime the object was last modified.                                                                                                                                                      |
+| locale               | String         | The Locale for which this message is destined.                                                                                                                                              |
+| subject              | String         | The Message Template Subject.                                                                                                                                                               |
+| messageTemplate      | String         | The Message Template content.                                                                                                                                                               |
+| isDefault            | Boolean        | Flag to indicate whether or not this is the default locale for language fallback. This flag can only be set. To unset, set this property to true on another Localized Notification Message. |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages
 Content-type: application/json
 Content-length: 200
@@ -77,8 +83,10 @@ Content-length: 200
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 313
@@ -93,12 +101,3 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsDeviceHealthState enum type"
 description: "Computer endpoint protection state"
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Computer endpoint protection state
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|clean|0|Computer is clean and no action is required|
-|fullScanPending|1|Computer is in pending full scan state|
-|rebootPending|2|Computer is in pending reboot state|
-|manualStepsPending|4|Computer is in pending manual steps state|
-|offlineScanPending|8|Computer is in pending offline scan state|
-|critical|16|Computer is in critical failure state|
 
-
-
-
-
-
+| Member             | Value | Description                                 |
+| :----------------- | :---- | :------------------------------------------ |
+| clean              | 0     | Computer is clean and no action is required |
+| fullScanPending    | 1     | Computer is in pending full scan state      |
+| rebootPending      | 2     | Computer is in pending reboot state         |
+| manualStepsPending | 4     | Computer is in pending manual steps state   |
+| offlineScanPending | 8     | Computer is in pending offline scan state   |
+| critical           | 16    | Computer is in critical failure state       |

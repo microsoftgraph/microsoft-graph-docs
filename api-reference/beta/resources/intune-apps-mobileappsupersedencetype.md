@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileAppSupersedenceType enum type"
 description: "Indicates the supersedence type associated with a relationship between two mobile apps."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Indicates the supersedence type associated with a relationship between two mobile apps.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|update|0|Indicates that the child app should be updated by the internal logic of the parent app.|
-|replace|1|Indicates that the child app should be uninstalled before installing the parent app.|
 
-
-
-
-
-
+| Member  | Value | Description                                                                             |
+| :------ | :---- | :-------------------------------------------------------------------------------------- |
+| update  | 0     | Indicates that the child app should be updated by the internal logic of the parent app. |
+| replace | 1     | Indicates that the child app should be uninstalled before installing the parent app.    |

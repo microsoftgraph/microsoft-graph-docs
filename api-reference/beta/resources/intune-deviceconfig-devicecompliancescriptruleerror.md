@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceComplianceScriptRuleError resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -17,27 +17,31 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-
 Inherits from [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|code|[code](../resources/intune-deviceconfig-code.md)|Error code. Inherited from [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md). Possible values are: `none`, `jsonFileInvalid`, `jsonFileMissing`, `jsonFileTooLarge`, `rulesMissing`, `duplicateRules`, `tooManyRulesSpecified`, `operatorMissing`, `operatorNotSupported`, `datatypeMissing`, `datatypeNotSupported`, `operatorDataTypeCombinationNotSupported`, `moreInfoUriMissing`, `moreInfoUriInvalid`, `moreInfoUriTooLarge`, `descriptionMissing`, `descriptionInvalid`, `descriptionTooLarge`, `titleMissing`, `titleInvalid`, `titleTooLarge`, `operandMissing`, `operandInvalid`, `operandTooLarge`, `settingNameMissing`, `settingNameInvalid`, `settingNameTooLarge`, `englishLocaleMissing`, `duplicateLocales`, `unrecognizedLocale`, `unknown`, `remediationStringsMissing`.|
-|message|String|Error message. Inherited from [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md)|
-|settingName|String|Setting name for the rule with error.|
+
+| Property    | Type                                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| :---------- | :----------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| code        | [code](../resources/intune-deviceconfig-code.md) | Error code. Inherited from [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md). Possible values are: `none`, `jsonFileInvalid`, `jsonFileMissing`, `jsonFileTooLarge`, `rulesMissing`, `duplicateRules`, `tooManyRulesSpecified`, `operatorMissing`, `operatorNotSupported`, `datatypeMissing`, `datatypeNotSupported`, `operatorDataTypeCombinationNotSupported`, `moreInfoUriMissing`, `moreInfoUriInvalid`, `moreInfoUriTooLarge`, `descriptionMissing`, `descriptionInvalid`, `descriptionTooLarge`, `titleMissing`, `titleInvalid`, `titleTooLarge`, `operandMissing`, `operandInvalid`, `operandTooLarge`, `settingNameMissing`, `settingNameInvalid`, `settingNameTooLarge`, `englishLocaleMissing`, `duplicateLocales`, `unrecognizedLocale`, `unknown`, `remediationStringsMissing`. |
+| message     | String                                           | Error message. Inherited from [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| settingName | String                                           | Setting name for the rule with error.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceComplianceScriptRuleError"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceScriptRuleError",
   "code": "String",
@@ -45,9 +49,3 @@ Here is a JSON representation of the resource.
   "settingName": "String"
 }
 ```
-
-
-
-
-
-

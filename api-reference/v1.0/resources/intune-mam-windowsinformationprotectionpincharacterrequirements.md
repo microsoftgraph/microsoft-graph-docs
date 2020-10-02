@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsInformationProtectionPinCharacterRequirements enum type"
 description: "Pin Character Requirements"
 author: "dougeby"
@@ -16,17 +16,9 @@ Namespace: microsoft.graph
 Pin Character Requirements
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notAllow|0|Not allow|
-|requireAtLeastOne|1|Require atleast one|
-|allow|2|Allow any number|
 
-
-
-
-
-
-
-
-
+| Member            | Value | Description         |
+| :---------------- | :---- | :------------------ |
+| notAllow          | 0     | Not allow           |
+| requireAtLeastOne | 1     | Require atleast one |
+| allow             | 2     | Allow any number    |

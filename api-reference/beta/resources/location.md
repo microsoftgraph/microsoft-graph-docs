@@ -1,4 +1,4 @@
----
+﻿---
 title: "Location resource type"
 description: "Represents location information of an event."
 localization_priority: Normal
@@ -23,26 +23,23 @@ you can specify the location as plain text (for example, "Harry's Bar"), or from
 
 Depending on how an event is created, expect Outlook to set the read-only **locationType** property differently. 
 
-| How event was created  | Property   | Expected value |
-|:----------|:-------|:--------------------------------|
-| [create event](../api/user-post-events.md) REST API | **locationType** | `default` |
-| User interface in Outlook | **locationType** | One of the following: <ul><li>`default` for a location entered as plain text.</li><li>`conferenceRoom` for a room provided by the Outlook rooms list.</li><li>Or, any of this list - `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress` - for a location from Bing Autosuggest or Bing local search.</li></ul> |
-
-
-
+| How event was created                               | Property         | Expected value                                                                                                                                                                                                                                                                                                                                                                          |
+| :-------------------------------------------------- | :--------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [create event](../api/user-post-events.md) REST API | **locationType** | `default`                                                                                                                                                                                                                                                                                                                                                                               |
+| User interface in Outlook                           | **locationType** | One of the following: <ul><li>`default` for a location entered as plain text.</li><li>`conferenceRoom` for a room provided by the Outlook rooms list.</li><li>Or, any of this list - `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress` - for a location from Bing Autosuggest or Bing local search.</li></ul> |
 
 ## Properties
-| Property  | Type   | Description                                                     |
-|:----------|:-------|:----------------------------------------------------------------|
-| address | [physicalAddress](physicaladdress.md) |The street address of the location. |
-| coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | The geographic coordinates and elevation of the location. |
-| displayName  | String | The name associated with the location.                       |
-| locationEmailAddress | String | Optional email address of the location. |
-| locationUri | String | Optional URI representing the location. |
-| locationType | locationType | The type of location. Possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Read-only.|
-| uniqueId | String | For internal use only.|
-| uniqueIdType | String | For internal use only. |
 
+| Property             | Type                                              | Description                                                                                                                                                                                                     |
+| :------------------- | :------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| address              | [physicalAddress](physicaladdress.md)             | The street address of the location.                                                                                                                                                                             |
+| coordinates          | [outlookGeoCoordinates](outlookgeocoordinates.md) | The geographic coordinates and elevation of the location.                                                                                                                                                       |
+| displayName          | String                                            | The name associated with the location.                                                                                                                                                                          |
+| locationEmailAddress | String                                            | Optional email address of the location.                                                                                                                                                                         |
+| locationUri          | String                                            | Optional URI representing the location.                                                                                                                                                                         |
+| locationType         | locationType                                      | The type of location. Possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Read-only. |
+| uniqueId             | String                                            | For internal use only.                                                                                                                                                                                          |
+| uniqueIdType         | String                                            | For internal use only.                                                                                                                                                                                          |
 
 ## JSON representation
 
@@ -53,6 +50,7 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
   ],
   "@odata.type": "microsoft.graph.location"
 }-->
+
 ```json
 {
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
@@ -67,10 +65,9 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
 
 ```
 
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -81,5 +78,3 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
   "suppressions": []
 }
 -->
-
-

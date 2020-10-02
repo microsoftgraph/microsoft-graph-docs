@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get itemInsights"
 description: "Retrieve properties of itemInsightsSettings object"
 author: "simonhult"
@@ -21,15 +21,16 @@ To learn how to customize item insights privacy for your organization, see [cust
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read, User.ReadWrite  |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | User.Read, User.ReadWrite                   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | User.Read, User.ReadWrite                   |
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -38,9 +39,9 @@ GET /organization/{organizationId}/settings/itemInsights
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -57,6 +58,7 @@ If successful, this method returns a `200 OK` response code and [itemInsightsSet
 ##### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_iteminsightssettings"
@@ -65,20 +67,23 @@ If successful, this method returns a `200 OK` response code and [itemInsightsSet
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/itemInsights
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-iteminsightssettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-iteminsightssettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-iteminsightssettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -101,5 +106,3 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
-
-

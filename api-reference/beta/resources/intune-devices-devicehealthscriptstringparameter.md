@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceHealthScriptStringParameter resource type"
 description: "Properties of the  String script parameter."
 author: "dougeby"
@@ -17,29 +17,33 @@ Namespace: microsoft.graph
 
 Properties of the  String script parameter.
 
-
 Inherits from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|name|String|The name of the param Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|String|The description of the param Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|isRequired|Boolean|Whether the param is required Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|Boolean|Whether Apply DefaultValue When Not Assigned Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|defaultValue|String|The default value of string param|
+
+| Property                         | Type    | Description                                                                                                                                           |
+| :------------------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name                             | String  | The name of the param Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)                        |
+| description                      | String  | The description of the param Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)                 |
+| isRequired                       | Boolean | Whether the param is required Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)                |
+| applyDefaultValueWhenNotAssigned | Boolean | Whether Apply DefaultValue When Not Assigned Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) |
+| defaultValue                     | String  | The default value of string param                                                                                                                     |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptStringParameter",
   "name": "String",
@@ -49,9 +53,3 @@ Here is a JSON representation of the resource.
   "defaultValue": "String"
 }
 ```
-
-
-
-
-
-

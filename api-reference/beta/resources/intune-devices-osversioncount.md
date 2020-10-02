@@ -1,4 +1,4 @@
----
+﻿---
 title: "osVersionCount resource type"
 description: "Count of devices with malware for each OS version"
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 Count of devices with malware for each OS version
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|osVersion|String|OS version|
-|deviceCount|Int32|Count of devices with malware for the OS version|
-|lastUpdateDateTime|DateTimeOffset|The Timestamp of the last update for the device count in UTC|
+
+| Property           | Type           | Description                                                  |
+| :----------------- | :------------- | :----------------------------------------------------------- |
+| osVersion          | String         | OS version                                                   |
+| deviceCount        | Int32          | Count of devices with malware for the OS version             |
+| lastUpdateDateTime | DateTimeOffset | The Timestamp of the last update for the device count in UTC |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.osVersionCount"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.osVersionCount",
   "osVersion": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "lastUpdateDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

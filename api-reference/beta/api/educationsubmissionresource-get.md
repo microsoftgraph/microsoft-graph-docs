@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get educationSubmissionResource"
 description: "Retrieves the properties of a specific resource associated with the submission. This resource is in the 'working' resource list and should be considered work in process by a student. This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment."
 author: "dipakboyed"
@@ -16,42 +16,58 @@ Namespace: microsoft.graph
 Retrieves the properties of a specific resource associated with the submission. This resource is in the "working" resource list and should be considered work in process by a student. This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+| Permission type                        | Permissions (from least to most privileged)                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported.                                                                                         |
+| Application                            | Not supported.                                                                                         |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.
+
 ## Example
+
 ##### Request
+
 The following is an example of the request.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_educationsubmissionresource"
 }-->
-```http 
+
+```http
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
+
 ##### Response
+
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -61,6 +77,7 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSubmissionResource"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -97,6 +114,7 @@ Content-length: 1152
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -107,5 +125,3 @@ Content-length: 1152
   "suppressions": []
 }
 -->
-
-

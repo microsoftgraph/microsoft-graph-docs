@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
 localization_priority: Priority
@@ -25,32 +25,32 @@ This section lists the common use cases of the **query** method, based on the pr
 
 Search requests run on behalf of the user. Search results are scoped to enforce any access control applied to the items.  For example, in the context of files, permissions on the files are evaluated as part of the search request. Users cannot access more items in a search than they can otherwise obtain from a corresponding GET operation with the same permissions and access control.
 
-| Use cases | Properties to define in the query request body |
-|:------------------|:---------|
-|[Scope search results based on entity types](#scope-search-based-on-entity-types)| **entityTypes** |
-|[Page results](#page-search-results) | **from** and **size** |
-|[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
-|[Get selected properties](#get-selected-properties) | **fields** |
-|[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
-|[Sort search results](#sort-search-results)| **sort** |
-|[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
-|[Search across Graph connectors](/graph/search-concept-custom-types)| **contentSources** |
+| Use cases                                                                         | Properties to define in the query request body |
+| :-------------------------------------------------------------------------------- | :--------------------------------------------- |
+| [Scope search results based on entity types](#scope-search-based-on-entity-types) | **entityTypes**                                |
+| [Page results](#page-search-results)                                              | **from** and **size**                          |
+| [Get the most relevant emails](#get-the-most-relevant-emails)                     | **enableTopResults**                           |
+| [Get selected properties](#get-selected-properties)                               | **fields**                                     |
+| [Use KQL in query terms](#keyword-query-language-kql-support)                     | **query**                                      |
+| [Sort search results](#sort-search-results)                                       | **sort**                                       |
+| [Refine results using aggregations](#refine-results-using-aggregations)           | **aggregations**                               |
+| [Search across Graph connectors](/graph/search-concept-custom-types)              | **contentSources**                             |
 
 ## Scope search based on entity types
 
 Define the scope of the search request using the **entityTypes** property in the **query** request payload.
 The following table describes the types available to query and the supported permissions to access the data.
 
-| EntityType | Permission scope required to access the items| Source| Comment|
-|:------------------|:---------|:---------|:---------|
-|[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange Online| Email messages.|
-|[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Calendar events. |
-|[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document libraries.|
-|[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Files, folders, pages, and news. |
-|[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
-|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
-|[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
-|[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
+| EntityType                      | Permission scope required to access the items                            | Source                     | Comment                                                                                                                    |
+| :------------------------------ | :----------------------------------------------------------------------- | :------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| [message](message.md)           | Mail.Read, Mail.ReadWrite                                                | Exchange Online            | Email messages.                                                                                                            |
+| [event](event.md)               | Calendars.Read, Calendars.ReadWrite                                      | Exchange Online            | Calendar events.                                                                                                           |
+| [drive](drive.md)               | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | SharePoint                 | Document libraries.                                                                                                        |
+| [driveItem](driveitem.md)       | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | SharePoint and OneDrive    | Files, folders, pages, and news.                                                                                           |
+| [list](list.md)                 | Sites.Read.All, Sites.ReadWrite.All                                      | SharePoint and OneDrive    | Lists. Note that document libraries are also returned as lists.                                                            |
+| [listItem](listitem.md)         | Sites.Read.All, Sites.ReadWrite.All                                      | SharePoint and OneDrive    | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
+| [site](site.md)                 | Sites.Read.All, Sites.ReadWrite.All                                      | SharePoint                 | Sites in SharePoint.                                                                                                       |
+| [externalItem](externalitem.md) | ExternalItem.Read.All                                                    | Microsoft Graph connectors | All content ingested with the Microsoft Graph connectors API.                                                              |
 
 ## Page search results
 
@@ -72,12 +72,12 @@ Best practices:
 - Specify a smaller first page in the initial request. For example, specify **from** as 0, **size** as 25.
 - Paginate subsequent pages by updating the **from** and **size** properties. You can increase the page size in each subsequent request. The following table shows an example.
 
-    | Page | from | size |
-    |:-----|:-----|:-----|
-    | 1    | 0 | 25 |
-    | 2    | 25 | 50 |
-    | 3    | 75 | 75 |
-    | 4    | 150 | 100 |
+| Page | from | size |
+| :--- | :--- | :--- |
+| 1    | 0    | 25   |
+| 2    | 25   | 50   |
+| 3    | 75   | 75   |
+| 4    | 150  | 100  |
 
 ## Get the most relevant emails
 
@@ -166,31 +166,17 @@ Properties used in a search request and response have been renamed or removed. I
 Start updating any existing apps to use current property and type names, and to get current property names in the response.
 For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
 
-| Resource                           | Change type   | Original property | Current property|
-|:-----------------------------------|:--------------|:------------------|:----------------|
-| [searchRequest](./searchrequest.md)| Rename property | **stored_fields** | **fields**      |
-| [searchQuery](./searchquery.md)    | Rename property | **query_string** | **queryString** |
-| [searchQueryString](./searchquerystring.md) | Deprecate resource | Not applicable | Not applicable |
-| [searchHit](./searchhit.md)        | Rename property | **_id** | **hitId** |
-| [searchHit](./searchhit.md)        | Rename property | **_score** | **rank** |
-| [searchHit](./searchhit.md)        | Remove property | **_sortField** | Not applicable |
-| [searchHit](./searchhit.md)        | Rename property | **_source** | **resource** |
-| [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
-
-## Search samples
-
-- Learn more about a few key use cases:
-  - [Search Outlook messages](/graph/search-concept-messages)
-  - [Search calendar events](/graph/search-concept-events)
-  - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
-  - [Search external content](/graph/search-concept-custom-types)
-  - [Sort search results](/graph/search-concept-sort)
-  - [Refine search results](/graph/search-concept-aggregation)
-
-- Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
+| Resource                                    | Change type        | Original property | Current property |
+| :------------------------------------------ | :----------------- | :---------------- | :--------------- |
+| [searchRequest](./searchrequest.md)         | Rename property    | **stored_fields** | **fields**       |
+| [searchQuery](./searchquery.md)             | Rename property    | **query_string**  | **queryString**  |
+| [searchQueryString](./searchquerystring.md) | Deprecate resource | Not applicable    | Not applicable   |
+| [searchHit](./searchhit.md)                 | Rename property    | **_id**           | **hitId**        |
+| [searchHit](./searchhit.md)                 | Rename property    | **_score**        | **rank**         |
+| [searchHit](./searchhit.md)                 | Remove property    | **_sortField**    | Not applicable   |
+| [searchHit](./searchhit.md)                 | Rename property    | **_source**       | **resource**     |
+| [searchHit](./searchhit.md)                 | Rename property    | **_summary**      | **summary**      |
 
 ## What's new
 
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-

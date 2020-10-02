@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceAppManagementTaskCategory enum type"
 description: "Device app management task category."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Device app management task category.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown source.|
-|advancedThreatProtection|1|Windows Defender ATP Threat & Vulnerability Management.|
 
-
-
-
-
-
+| Member                   | Value | Description                                             |
+| :----------------------- | :---- | :------------------------------------------------------ |
+| unknown                  | 0     | Unknown source.                                         |
+| advancedThreatProtection | 1     | Windows Defender ATP Threat & Vulnerability Management. |

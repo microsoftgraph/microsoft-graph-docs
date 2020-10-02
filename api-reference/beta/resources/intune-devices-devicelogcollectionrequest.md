@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceLogCollectionRequest resource type"
 description: "Windows Log Collection request entity."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Windows Log Collection request entity.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique identifier|
-|templateType|[deviceLogCollectionTemplateType](../resources/intune-devices-devicelogcollectiontemplatetype.md)|The template type that is sent with the collection request. Possible values are: `predefined`.|
+
+| Property     | Type                                                                                              | Description                                                                                    |
+| :----------- | :------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
+| id           | String                                                                                            | The unique identifier                                                                          |
+| templateType | [deviceLogCollectionTemplateType](../resources/intune-devices-devicelogcollectiontemplatetype.md) | The template type that is sent with the collection request. Possible values are: `predefined`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceLogCollectionRequest"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceLogCollectionRequest",
   "id": "String (identifier)",
   "templateType": "String"
 }
 ```
-
-
-
-
-
-

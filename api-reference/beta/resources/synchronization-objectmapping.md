@@ -1,4 +1,4 @@
----
+﻿---
 title: "objectMapping resource type"
 description: "Defines how a given object should be synchronized from source directory to target directory."
 localization_priority: Normal
@@ -19,16 +19,16 @@ Object mappings are the main part of the [synchronization rule](synchronization-
 
 ## Properties
 
-| Property      | Type      | Description    |
-|:--------------|:----------|:---------------|
-|attributeMappings  |[attributeMapping](synchronization-attributemapping.md) collection    | Attribute mappings define which attributes to map from the source object into the target object and how they should flow. A number of functions are available to support the transformation of the original source values.|
-|enabled        |Boolean    |When `true`, this object mapping will be processed during synchronization. When `false`, this object mapping will be skipped.|
-|flowTypes      |objectFlowTypes    |Which flow types are enabled for this object mapping. `Add` creates new objects in the target directory, `Update` modifies existing objects, and `Delete` deprovisions existing users. The default is `Add, Update, Delete`. |
-|metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
-|name           |String     |Human-friendly name of the object mapping.|
-|scope          |[filter](synchronization-filter.md)     |Defines a filter to be used when deciding whether a given object should be provisioned. For example, you might want to only provision users that are located in the US.|
-|sourceObjectName           |String     |Name of the object in the source directory. Must match the object name from the source [directory definition](synchronization-directorydefinition.md).|
-|targetObjectName           |String     |Name of the object in target directory. Must match the object name from the target [directory definition](synchronization-directorydefinition.md).|
+| Property          | Type                                                               | Description                                                                                                                                                                                                                  |
+| :---------------- | :----------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| attributeMappings | [attributeMapping](synchronization-attributemapping.md) collection | Attribute mappings define which attributes to map from the source object into the target object and how they should flow. A number of functions are available to support the transformation of the original source values.   |
+| enabled           | Boolean                                                            | When `true`, this object mapping will be processed during synchronization. When `false`, this object mapping will be skipped.                                                                                                |
+| flowTypes         | objectFlowTypes                                                    | Which flow types are enabled for this object mapping. `Add` creates new objects in the target directory, `Update` modifies existing objects, and `Delete` deprovisions existing users. The default is `Add, Update, Delete`. |
+| metadata          | metadataEntry collection                                           | Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.                                                                                                                         |
+| name              | String                                                             | Human-friendly name of the object mapping.                                                                                                                                                                                   |
+| scope             | [filter](synchronization-filter.md)                                | Defines a filter to be used when deciding whether a given object should be provisioned. For example, you might want to only provision users that are located in the US.                                                      |
+| sourceObjectName  | String                                                             | Name of the object in the source directory. Must match the object name from the source [directory definition](synchronization-directorydefinition.md).                                                                       |
+| targetObjectName  | String                                                             | Name of the object in target directory. Must match the object name from the target [directory definition](synchronization-directorydefinition.md).                                                                           |
 
 ## JSON representation
 
@@ -348,6 +348,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -358,5 +359,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

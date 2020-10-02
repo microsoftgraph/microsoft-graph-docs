@@ -1,4 +1,4 @@
----
+﻿---
 title: "event: delta"
 description: "Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events)"
 localization_priority: Normal
@@ -25,22 +25,23 @@ from the server every time.
 
 The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
 
-| Delta function on events  | Delta function on calendarView  |
-|:--------------------------|:---------------------------------------------------------|
+| Delta function on events                                                                                                                                                                                                                     | Delta function on calendarView                                                                 |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
 | Gets incremental changes of all the events in a calendar not bounded by a start and end date range. Alternatively, you can get incremental changes of the events in a calendar bounded by a start time, starting on or after that date/time. | Gets incremental changes of events within the start and end date/time of the **calendarView**. |
-| Returns only a limited set of **event** properties for performance reasons. Client to subsequently use `GET /events/{id}` to expand any events. | Server-side expansion returns a fuller set of **event** properties. |
-| Response includes single instances and recurring series master. | Response includes single instances, and occurrences and exceptions of recurring series. |
-| Applies to events in user calendars but not group calendars. | Applies to events in user and group calendars. |
-| Currently available only in the beta version. | Available in the v1.0 and beta versions. |
+| Returns only a limited set of **event** properties for performance reasons. Client to subsequently use `GET /events/{id}` to expand any events.                                                                                              | Server-side expansion returns a fuller set of **event** properties.                            |
+| Response includes single instances and recurring series master.                                                                                                                                                                              | Response includes single instances, and occurrences and exceptions of recurring series.        |
+| Applies to events in user calendars but not group calendars.                                                                                                                                                                                 | Applies to events in user and group calendars.                                                 |
+| Currently available only in the beta version.                                                                                                                                                                                                | Available in the v1.0 and beta versions.                                                       |
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
-|Application | Calendars.Read, Calendars.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Calendars.Read, Calendars.ReadWrite         |
+| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite         |
+| Application                            | Calendars.Read, Calendars.ReadWrite         |
 
 ## HTTP request
 
@@ -49,57 +50,68 @@ This section shows the HTTP request syntax for the initial **delta** function ca
 The query URL returned in a `nextLink` or `deltaLink` of a successful response includes a state token. For any subsequent **delta** function call, use the query URL in a `nextLink` or `deltaLink` preceding it.
 
 ### Delta function on events in a user calendar (preview)
+
 Apply the **delta** function on all the events or events starting on or after a specific date/time, in the specified user calendar(s):
 
 * To get incremental changes of all the events, or of events starting on or after the specified date/time _in the user's mailbox_:
+
   <!-- { "blockType": "ignored" } -->
-  ```http
+
+```http
   GET /me/events/delta 
   GET /users/{id | userPrincipalName}/events/delta 
 
   GET /me/events/delta?startDateTime={start_datetime}
   GET /users/{id | userPrincipalName}/events/delta?startDateTime={start_datetime}
-  ```
+```
 
 * To get incremental changes of all the events, or of events starting on or after the specified date/time _in the user's default calendar_:
+
   <!-- { "blockType": "ignored" } -->
-  ```http
+
+```http
   GET /me/calendar/events/delta 
   GET /users/{id | userPrincipalName}/calendar/events/delta 
 
   GET /me/calendar/events/delta?startDateTime={start_datetime} 
   GET /users/{id | userPrincipalName}/calendar/events/delta?startDateTime={start_datetime}
-  ```
+```
 
 * To get incremental changes of all the events, or of events starting on or after the specified date/time _in the specified user calendar_:
+
   <!-- { "blockType": "ignored" } -->
-  ```http
+
+```http
   GET /me/calendars/{id}/events/delta 
   GET /users/{id | userPrincipalName}/calendars/{id}/events/delta 
 
   GET /me/calendars/{id}/events/delta?startDateTime={start_datetime} 
   GET /users/{id | userPrincipalName}/calendars/{id}/events/delta?startDateTime={start_datetime}
-  ```
+```
 
 * To get incremental changes of all the events, or of events starting on or after the specified date/time _in the specified calendar of the default calendar group_:
+
   <!-- { "blockType": "ignored" } -->
-  ```http
+
+```http
   GET /me/calendargroup/calendars/{id}/events/delta 
   GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/delta 
 
   GET /me/calendargroup/calendars/{id}/events/delta?startDateTime={start_datetime} 
   GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/delta?startDateTime={start_datetime}
-  ```
+```
 
 * To get incremental changes all the events, or of events starting on or after the specified date/time _in the specified calendar group and calendar_:
+
   <!-- { "blockType": "ignored" } -->
-  ```http
+
+```http
   GET /me/calendargroups/{id}/calendars/{id}/events/delta 
   GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/delta 
 
   GET /me/calendargroups/{id}/calendars/{id}/events/delta?startDateTime={start_datetime} 
   GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/delta?startDateTime={start_datetime}
-  ```
+```
 
 <!-- Add back and fix html when group calendars are supported
 
@@ -117,28 +129,36 @@ Apply the **delta** function on all the events or events starting on or after a 
   -->
 
 ### Delta function on calendarView in a user calendar
+
 Apply the **delta** function on a range of events delimited by start and end date/times, in the specified user calendar:
 
 * To get incremental changes in a calendar view of _the user's default calendar_:
+
   <!-- { "blockType": "ignored" } -->
-  ```http
+
+```http
   GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
   GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
-  ```
+```
 
 * To get incremental changes in a calendar view of _the specified user calendar_:
+
   <!-- { "blockType": "ignored" } -->
-  ```http
+
+```http
   GET /me/calendars/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
   GET /users/{id}/calendars/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
-  ```
+```
 
 ### Delta function on calendarView in a group calendar
+
 * To get incremental changes in a calendar view of _a group's calendar_:
+
   <!-- { "blockType": "ignored" } -->
-  ```http
+
+```http
   GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
-  ```
+```
 
 ## Query parameters
 
@@ -149,31 +169,33 @@ into the token portion of the `nextLink` or `deltaLink` URL provided in the resp
 In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already
 includes the encoded, desired parameters.
 
-| Query parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". <br>The timezone is specified in the timezone offset portion of the parameter value, and is not impacted by the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.<br>Optional for **delta** on events in a calendar. <br>Required for **delta** on **calendarView**. |
-|endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00". <br>The timezone is specified in the timezone offset portion of the parameter value, and is not impacted by the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.<br>_Not supported_ by **delta** on events in a calendar. <br>Required for **delta** on **calendarView**.|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
+| Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| :-------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| startDateTime   | String | The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". <br>The timezone is specified in the timezone offset portion of the parameter value, and is not impacted by the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.<br>Optional for **delta** on events in a calendar. <br>Required for **delta** on **calendarView**.     |
+| endDateTime     | String | The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00". <br>The timezone is specified in the timezone offset portion of the parameter value, and is not impacted by the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.<br>_Not supported_ by **delta** on events in a calendar. <br>Required for **delta** on **calendarView**. |
+| $deltatoken     | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.                                                                                                       |
+| $skiptoken      | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view.                                                                                                                                                                                                                                                                  |
 
 Does not support `$expand`, `$filter`, `$orderby`, `$select`, and `$search`.
 
-
 ## Request headers
-| Name       | Type | Description |
-|:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | string  | application/json. Required. |
-| Prefer | string  | odata.maxpagesize={x}. Optional. |
-| Prefer | string | outlook.timezone={Time zone string}. Optional, UTC assumed if absent.|
+
+| Name          | Type   | Description                                                           |
+| :------------ | :----- | :-------------------------------------------------------------------- |
+| Authorization | string | Bearer {token}. Required.                                             |
+| Content-Type  | string | application/json. Required.                                           |
+| Prefer        | string | odata.maxpagesize={x}. Optional.                                      |
+| Prefer        | string | outlook.timezone={Time zone string}. Optional, UTC assumed if absent. |
 
 ## Response
 
 ### Delta function on events (preview)
+
 If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) collection in the response body. Each **event** in the response contains only 
 the **id**, **type**, **start** and **end** properties for performance reasons. Use `GET /events/{id}` subsequently to expand any events from the response.  
 
 ### Delta function on calendarView
+
 If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) collection in the response body.
 
 Expect to get all the properties you'd normally get from a `GET /calendarview` request. 
@@ -181,7 +203,9 @@ Expect to get all the properties you'd normally get from a `GET /calendarview` r
 ## Examples
 
 ### Example 1: Delta function on events in a calendar (preview)
+
 #### Request
+
 The following example shows the initial sync request to get events in the signed-in user's default calendar, that occur on or after the specified `startDateTime` parameter. The initial request does not include any state token. 
 
 The request uses the `Prefer: odata.maxpagesize` header to limit the maximum number of events in each response to 1. 
@@ -191,6 +215,7 @@ Continue calling the `delta` function by using the query returned in `@odata.nex
   "blockType": "request",
   "name": "event_delta_events"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar/events/delta?startDateTime=2020-06-12T00:00:00Z
 
@@ -213,6 +238,7 @@ The response below shows a _skipToken_ in an _\@odata.nextLink_ response header.
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -236,8 +262,8 @@ Content-type: application/json
 }
 ```
 
-
 ### Example 2: Delta function on calendarView
+
 #### Request
 
 The following example shows the initial sync request to get events in the specified calendar of the signed-in user, within the range of dates indicated by the **calendarView**. The initial request does not include any state token. 
@@ -247,26 +273,30 @@ Continue calling the `delta` function by using the query returned in `@odata.nex
 in the response.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADI5M1BbeAAA="],
   "name": "event_delta_calendarview"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendars/AAMkADI5M1BbeAAA=/calendarview/delta?startDateTime=2020-06-01T00:00:00Z&endDateTime=2020-06-10T00:00:00Z
 
 Prefer: odata.maxpagesize=2
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-calendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -278,6 +308,7 @@ getting all the changes for that round.
 The response below shows a _skipToken_ in an _\@odata.nextLink_ response header.
 
 Note: The response object shown here may be truncated for brevity. 
+
 <!-- {
   "blockType": "response",
   "name": "event_delta_calendarview",
@@ -285,6 +316,7 @@ Note: The response object shown here may be truncated for brevity.
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -472,6 +504,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -483,5 +516,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -8,6 +8,7 @@ ms.prod: "sharepoint"
 description: "Create a new folder or DriveItem in a Drive with a specified parent item or path."
 doc_type: apiPageType
 ---
+
 # Create a new folder in a drive
 
 Namespace: microsoft.graph
@@ -18,11 +19,11 @@ Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../re
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                      |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -51,8 +52,8 @@ If successful, this method returns `201 Created` response code and a [Driveitem]
 Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.
 The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
 ```http
@@ -65,24 +66,28 @@ Content-Type: application/json
   "@microsoft.graph.conflictBehavior": "rename"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-folder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-folder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-folder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-folder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -142,4 +147,3 @@ how errors are returned.
   "suppressions": [
   ]
 } -->
-

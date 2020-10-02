@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Get a DriveItem resource
 
 Namespace: microsoft.graph
@@ -19,11 +20,11 @@ Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                                                        |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All                                                                                   |
+| Application                            | Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All                              |
 
 > Note:
 > The `/teams` endpoint requires the use of Group.Read.All or Group.ReadWrite.All permissions.
@@ -59,7 +60,7 @@ This is currently only supported on OneDrive Personal.
 ## Optional request headers
 
 | Name          | Value  | Description                                                                                                                                              |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :------------ | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 ## Response
@@ -73,20 +74,25 @@ If successful, this method returns a `200 OK` response code and the [DriveItem](
 Here is an example of the request to the root folder of the user's OneDrive.
 
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
 ```msgraph-interactive
 GET /me/drive/root
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-metadata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-metadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -149,5 +155,3 @@ how errors are returned.
   ]
 }
 -->
-
-

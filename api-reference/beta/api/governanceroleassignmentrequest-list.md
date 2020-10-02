@@ -1,4 +1,4 @@
----
+﻿---
 title: "List governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests. "
 localization_priority: Normal
@@ -16,24 +16,28 @@ Namespace: microsoft.graph
 Retrieve a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.Read.AzureResources |
+| Permission type                        | Permissions                               |
+| :------------------------------------- | :---------------------------------------- |
+| Delegated (work or school account)     | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported.                            |
+| Application                            | PrivilegedAccess.Read.AzureResources      |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 List a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) on a resource.
-    
+
 >**Note:** Besides the permission scope, the request requires the requestor to have at least one role assignment on the resource.
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
+
 List a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) of mine.
 
 ```http
@@ -41,7 +45,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq
 ```
 
 List a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) that are pending administrator decisions.
-    
+
 >**Note:** Besides the permission scope, this request requires the requestor to have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 
 ```http
@@ -49,40 +53,51 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 ```
 
 ## Optional query parameters
+
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {code}|
+
+| Name          | Description   |
+| :------------ | :------------ |
+| Authorization | Bearer {code} |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) objects in the response body.
 
 ## Example
+
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
+
 Administrators query pending role assignment requests for subscription Wingtip Toys - Prod.
+
 ##### Request
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
+
 ##### Response
+
 Here is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -162,6 +177,7 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -172,5 +188,3 @@ Content-length: 279
   "suppressions": []
 }
 -->
-
-

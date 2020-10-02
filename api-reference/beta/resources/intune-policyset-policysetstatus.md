@@ -1,4 +1,4 @@
----
+﻿---
 title: "policySetStatus enum type"
 description: "The enum to specify the status of PolicySet."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 The enum to specify the status of PolicySet.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Default Value.|
-|validating|1|All PolicySet items are now validating for corresponding settings of workloads.|
-|partialSuccess|2|Post process complete for all PolicySet items but there are failures.|
-|success|3|All PolicySet items are deployed. Doesn’t mean that all deployment succeeded. |
-|error|4|PolicySet processing completely failed.|
-|notAssigned|5|PolicySet/PolicySetItem is not assigned to any group.|
 
-
-
-
-
-
+| Member         | Value | Description                                                                     |
+| :------------- | :---- | :------------------------------------------------------------------------------ |
+| unknown        | 0     | Default Value.                                                                  |
+| validating     | 1     | All PolicySet items are now validating for corresponding settings of workloads. |
+| partialSuccess | 2     | Post process complete for all PolicySet items but there are failures.           |
+| success        | 3     | All PolicySet items are deployed. Doesn’t mean that all deployment succeeded.   |
+| error          | 4     | PolicySet processing completely failed.                                         |
+| notAssigned    | 5     | PolicySet/PolicySetItem is not assigned to any group.                           |

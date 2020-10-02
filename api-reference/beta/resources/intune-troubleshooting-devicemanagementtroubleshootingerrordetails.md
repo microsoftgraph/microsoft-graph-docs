@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementTroubleshootingErrorDetails resource type"
 description: "Object containing detailed information about the error and its remediation."
 author: "dougeby"
@@ -18,25 +18,30 @@ Namespace: microsoft.graph
 Object containing detailed information about the error and its remediation.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|context|String|Not yet documented|
-|failure|String|Not yet documented|
-|failureDetails|String|The detailed description of what went wrong.|
-|remediation|String|The detailed description of how to remediate this issue.|
-|resources|[deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md) collection|Links to helpful documentation about this failure.|
+
+| Property       | Type                                                                                                                                           | Description                                              |
+| :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
+| context        | String                                                                                                                                         | Not yet documented                                       |
+| failure        | String                                                                                                                                         | Not yet documented                                       |
+| failureDetails | String                                                                                                                                         | The detailed description of what went wrong.             |
+| remediation    | String                                                                                                                                         | The detailed description of how to remediate this issue. |
+| resources      | [deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md) collection | Links to helpful documentation about this failure.       |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingErrorDetails",
   "context": "String",
@@ -52,9 +57,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

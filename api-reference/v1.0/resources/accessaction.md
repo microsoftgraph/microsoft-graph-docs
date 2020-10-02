@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: accessAction resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # accessAction resource type
 
 Namespace: microsoft.graph
@@ -34,7 +35,6 @@ This resource type has no properties.
 }
 ```
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -45,4 +45,3 @@ This resource type has no properties.
   "suppressions": []
 }
 -->
-

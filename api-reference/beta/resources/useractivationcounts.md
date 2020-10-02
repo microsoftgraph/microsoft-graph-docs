@@ -1,4 +1,4 @@
----
+﻿---
 title: "userActivationCounts resource type"
 description: "The following is a JSON representation of the resource."
 author: "krbain"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 ## Properties
 
-| Property          | Type   | Description                              |
-| :---------------- | :----- | ---------------------------------------- |
-| productType       | String | The product type, such as "Microsoft 365 ProPlus"or "Project Client". |
-| lastActivatedDate | Date   | The date of the latest activation.       |
-| windows           | Int64  | The activation count on Windows. This number includes every activation on any Windows computer. |
-| mac               | Int64  | The activation count on Mac OS.          |
-| windows10Mobile   | Int64  | The activation count on Windows 10 mobile. |
-| ios               | Int64  | The activation count on iOS.             |
-| android           | Int64  | The activation count on an Android device.  |
-| activatedOnSharedComputer   | Boolean | True if the user used the product on a shared computer before. |
+| Property                  | Type    | Description                                                                                     |
+| :------------------------ | :------ | ----------------------------------------------------------------------------------------------- |
+| productType               | String  | The product type, such as "Microsoft 365 ProPlus"or "Project Client".                           |
+| lastActivatedDate         | Date    | The date of the latest activation.                                                              |
+| windows                   | Int64   | The activation count on Windows. This number includes every activation on any Windows computer. |
+| mac                       | Int64   | The activation count on Mac OS.                                                                 |
+| windows10Mobile           | Int64   | The activation count on Windows 10 mobile.                                                      |
+| ios                       | Int64   | The activation count on iOS.                                                                    |
+| android                   | Int64   | The activation count on an Android device.                                                      |
+| activatedOnSharedComputer | Boolean | True if the user used the product on a shared computer before.                                  |
 
 ## JSON representation
 
@@ -45,5 +45,3 @@ The following is a JSON representation of the resource.
   "activatedOnSharedComputer": true 
 }
 ```
-
-

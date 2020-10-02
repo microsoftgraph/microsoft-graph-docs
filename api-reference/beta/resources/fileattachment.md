@@ -1,4 +1,4 @@
----
+﻿---
 title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event,"
 localization_priority: Normal
@@ -30,27 +30,28 @@ Derived from [attachment](attachment.md).
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read the properties, relationships, or raw contents of a fileAttachment object.|
-|[Delete](../api/attachment-delete.md) | None |Delete fileAttachment object. |
+| Method                                | Return Type                         | Description                                                                     |
+| :------------------------------------ | :---------------------------------- | :------------------------------------------------------------------------------ |
+| [Get](../api/attachment-get.md)       | [fileAttachment](fileattachment.md) | Read the properties, relationships, or raw contents of a fileAttachment object. |
+| [Delete](../api/attachment-delete.md) | None                                | Delete fileAttachment object.                                                   |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|contentBytes|Edm.Binary|The base64-encoded contents of the file.|
-|contentId|String|The ID of the attachment in the Exchange store.|
-|contentLocation|String|Do not use this property as it is not supported.|
-|contentType|String|The content type of the attachment.|
-|id|String|The attachment ID.|
-|isInline|Boolean|Set to true if this is an inline attachment.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified.|
-|name|String|The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.|
-|size|Int32|The size in bytes of the attachment.|
+
+| Property             | Type           | Description                                                                                                                                         |
+| :------------------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| contentBytes         | Edm.Binary     | The base64-encoded contents of the file.                                                                                                            |
+| contentId            | String         | The ID of the attachment in the Exchange store.                                                                                                     |
+| contentLocation      | String         | Do not use this property as it is not supported.                                                                                                    |
+| contentType          | String         | The content type of the attachment.                                                                                                                 |
+| id                   | String         | The attachment ID.                                                                                                                                  |
+| isInline             | Boolean        | Set to true if this is an inline attachment.                                                                                                        |
+| lastModifiedDateTime | DateTimeOffset | The date and time when the attachment was last modified.                                                                                            |
+| name                 | String         | The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name. |
+| size                 | Int32          | The size in bytes of the attachment.                                                                                                                |
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 
@@ -83,6 +84,7 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -93,5 +95,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

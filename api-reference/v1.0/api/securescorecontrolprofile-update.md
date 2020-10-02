@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update secureScoreControlProfile"
 description: "Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote."
 author: "preetikr"
@@ -17,11 +17,11 @@ Update an editable **secureScoreControlProfile** object within any integrated so
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |   SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | SecurityEvents.ReadWrite.All                |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | SecurityEvents.ReadWrite.All                |
 
 ## HTTP request
 
@@ -33,22 +33,21 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization  | Bearer {code}. Required.|
-|Prefer | return=representation. |
+| Name          | Description              |
+| :------------ | :----------------------- |
+| Authorization | Bearer {code}. Required. |
+| Prefer        | return=representation.   |
 
 ## Request body
 
 In the request body, supply a JSON representation of the values for relevant fields that should be updated. The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields. The following table lists the fields that can be updated for a **secureScoreControlProfile**. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|assignedTo|String|Name of the analyst the control is assigned to for triage, implementation, or remediation.|
-|comment|String|Analyst comments on the control (for customer control management).|
-|state| String|Analyst driven setting on the control. Possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
+| Property          | Type                                                                   | Description                                                                                                                                                                                               |
+| :---------------- | :--------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| assignedTo        | String                                                                 | Name of the analyst the control is assigned to for triage, implementation, or remediation.                                                                                                                |
+| comment           | String                                                                 | Analyst comments on the control (for customer control management).                                                                                                                                        |
+| state             | String                                                                 | Analyst driven setting on the control. Possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.                                                                                               |
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore;). **Provider and vendor fields are required.** |
-
 
 ## Response
 
@@ -60,11 +59,14 @@ If the optional request header is used, the method returns a `200 OK` response c
 
 ### Example 1: Request without Prefer header
 
+
+
 ### Request
 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "securescorecontrolprofiles_update"
@@ -87,28 +89,33 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
 The following is an example of a successful response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -225,4 +232,3 @@ Content-type: application/json
   ]
 }
 -->
-

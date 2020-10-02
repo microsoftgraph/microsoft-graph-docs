@@ -1,4 +1,4 @@
----
+﻿---
 title: "vppTokenAccountType enum type"
 description: "Possible types of an Apple Volume Purchase Program token."
 author: "dougeby"
@@ -16,16 +16,8 @@ Namespace: microsoft.graph
 Possible types of an Apple Volume Purchase Program token.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|business|0|Apple Volume Purchase Program token associated with an business program.|
-|education|1|Apple Volume Purchase Program token associated with an education program.|
 
-
-
-
-
-
-
-
-
+| Member    | Value | Description                                                               |
+| :-------- | :---- | :------------------------------------------------------------------------ |
+| business  | 0     | Apple Volume Purchase Program token associated with an business program.  |
+| education | 1     | Apple Volume Purchase Program token associated with an education program. |

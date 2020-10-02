@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
 localization_priority: Normal
@@ -42,21 +42,22 @@ See [Extended properties overview](../resources/extended-properties-overview.md)
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
+
 Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-----|:-----|:-----|:-----|
-| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| group [calendar](../resources/calendar.md) | Group.Read.All | Not supported | Not supported |
-| group [event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
-| group [post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
-| [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Outlook task](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Not supported |
-| [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Not supported |
+| Supported resource                                       | Delegated (work or school account) | Delegated (personal Microsoft account) | Application    |
+| :------------------------------------------------------- | :--------------------------------- | :------------------------------------- | :------------- |
+| [calendar](../resources/calendar.md)                     | Calendars.Read                     | Calendars.Read                         | Calendars.Read |
+| [contact](../resources/contact.md)                       | Contacts.Read                      | Contacts.Read                          | Contacts.Read  |
+| [contactFolder](../resources/contactfolder.md)           | Contacts.Read                      | Contacts.Read                          | Contacts.Read  |
+| [event](../resources/event.md)                           | Calendars.Read                     | Calendars.Read                         | Calendars.Read |
+| group [calendar](../resources/calendar.md)               | Group.Read.All                     | Not supported                          | Not supported  |
+| group [event](../resources/event.md)                     | Group.Read.All                     | Not supported                          | Not supported  |
+| group [post](../resources/post.md)                       | Group.Read.All                     | Not supported                          | Group.Read.All |
+| [mailFolder](../resources/mailfolder.md)                 | Mail.Read                          | Mail.Read                              | Mail.Read      |
+| [message](../resources/message.md)                       | Mail.Read                          | Mail.Read                              | Mail.Read      |
+| [Outlook task](../resources/outlooktask.md)              | Tasks.Read                         | Tasks.Read                             | Not supported  |
+| [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.Read                         | Tasks.Read                             | Not supported  |
 
 ## HTTP request
 
@@ -65,48 +66,66 @@ Get a resource instance expanded with the extended property which matches a filt
 [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
 
 Get a **message** instance:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
+
 Get a **mailFolder** instance:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get an **event** instance:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
+
 Get a **calendar** instance:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
+
 Get a **contact** instance:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
+
 Get a **contactFolder** instance:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get an **outlookTask** instance:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -115,8 +134,11 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=mu
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
+
 Get an **outlookTaskFolder** instance:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -125,29 +147,36 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expa
 ```
 
 Get a group **event** instance:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 Get a group **post** instance:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 ## Path parameters
-|**Parameter**|**Type**|**Description**|
-|:-----|:-----|:-----|
-|id_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+
+| **Parameter** | **Type** | **Description**                                                                                                                                                                                                 |
+| :------------ | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id_value      | String   | The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required. |
 
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -158,15 +187,19 @@ The response body includes an object representing the requested resource instanc
 [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object.
 
 ## Example
+
 ##### Request
+
 This example gets and expands the specified event by including a multi-value extended property. The filter returns the
 extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation`
 (with URL encoding removed here for ease of reading).
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
 ```
+
 ##### Response
 
 The response body includes all the properties of the specified event and extended property returned from the filter.
@@ -174,6 +207,7 @@ The response body includes all the properties of the specified event and extende
 Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -212,6 +246,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -222,5 +257,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

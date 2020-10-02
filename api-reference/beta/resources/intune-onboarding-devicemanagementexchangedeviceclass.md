@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementExchangeDeviceClass resource type"
 description: "Device Class in Exchange."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Device Class in Exchange.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|name|String|Name of the device class which will be impacted by this rule.|
-|type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|Type of device which is impacted by this rule e.g. Model, Family. Possible values are: `family`, `model`.|
+
+| Property | Type                                                                                                               | Description                                                                                               |
+| :------- | :----------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| name     | String                                                                                                             | Name of the device class which will be impacted by this rule.                                             |
+| type     | [deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md) | Type of device which is impacted by this rule e.g. Model, Family. Possible values are: `family`, `model`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementExchangeDeviceClass"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeDeviceClass",
   "name": "String",
   "type": "String"
 }
 ```
-
-
-
-
-
-

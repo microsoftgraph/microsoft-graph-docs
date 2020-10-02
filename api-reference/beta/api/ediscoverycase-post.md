@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create ediscoveryCase"
 description: "Use this API to create a new ediscoveryCase."
 localization_priority: Normal
@@ -18,10 +18,10 @@ Create a new [ediscoveryCase](../resources/ediscoverycase.md) object.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read      |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | User.Read                                   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -33,17 +33,17 @@ POST /compliance/ediscovery/cases
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
 
 In the request body, supply a JSON representation of an [ediscoveryCase](../resources/ediscoverycase.md) object. The following table lists properties that can be submitted with the call.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-| displayName  | string      | The name of the eDiscovery case. |
+| Property    | Type   | Description                      |
+| :---------- | :----- | :------------------------------- |
+| displayName | string | The name of the eDiscovery case. |
 
 ## Response
 
@@ -56,6 +56,7 @@ If successful, this method returns a `201 Created` response code and a new [edis
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "post_ediscoverycase"
@@ -69,20 +70,23 @@ Content-type: application/json
     "displayName": "My Case 1",
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-ediscoverycase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-ediscoverycase-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/post-ediscoverycase-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -128,6 +132,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create ediscoveryCase",
@@ -135,5 +140,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

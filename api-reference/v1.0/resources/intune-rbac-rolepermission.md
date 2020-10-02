@@ -1,4 +1,4 @@
----
+﻿---
 title: "rolePermission resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,21 +16,26 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) collection|Actions|
+
+| Property        | Type                                                                    | Description |
+| :-------------- | :---------------------------------------------------------------------- | :---------- |
+| resourceActions | [resourceAction](../resources/intune-rbac-resourceaction.md) collection | Actions     |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rolePermission"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.rolePermission",
   "resourceActions": [
@@ -46,12 +51,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

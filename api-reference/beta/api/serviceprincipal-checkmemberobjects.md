@@ -1,4 +1,4 @@
----
+﻿---
 title: "servicePrincipal: checkMemberObjects"
 description: "Check for membership in a list of groups, directory roles, or administrative units for the specified service principle object."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Check for membership in a list of groups, directory roles, or administrative uni
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All|
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                             |
+| :------------------------------------- | :---------------------------------------------------------------------- |
+| Delegated (work or school account)     | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                          |
+| Application                            | Directory.Read.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
 
@@ -35,18 +35,18 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Name          | Description      |
+| :------------ | :--------------- |
+| Authorization | Bearer {token}   |
 | Content-Type  | application/json |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|ids|String collection|A collection that contains the object IDs of the groups, directory roles, administrative units, or roleTemplate IDs of directory roles, in which to check membership. Up to 20 objects may be specified.|
+| Parameter | Type              | Description                                                                                                                                                                                              |
+| :-------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ids       | String collection | A collection that contains the object IDs of the groups, directory roles, administrative units, or roleTemplate IDs of directory roles, in which to check membership. Up to 20 objects may be specified. |
 
 ## Response
 
@@ -60,8 +60,8 @@ The following example shows how to call this API.
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_checkmemberobjects"
@@ -80,20 +80,23 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-checkmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-checkmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-checkmemberobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -122,6 +125,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "servicePrincipal: checkMemberObjects",
@@ -129,5 +133,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

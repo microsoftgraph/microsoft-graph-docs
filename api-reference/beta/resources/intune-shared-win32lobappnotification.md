@@ -1,4 +1,4 @@
----
+﻿---
 title: "win32LobAppNotification enum type"
 description: "Contains value for notification status."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Contains value for notification status.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|showAll|0|Show all notifications.|
-|showReboot|1|Only show restart notification and suppress other notifications.|
-|hideAll|2|Hide all notifications.|
 
-
-
-
-
-
+| Member     | Value | Description                                                      |
+| :--------- | :---- | :--------------------------------------------------------------- |
+| showAll    | 0     | Show all notifications.                                          |
+| showReboot | 1     | Only show restart notification and suppress other notifications. |
+| hideAll    | 2     | Hide all notifications.                                          |

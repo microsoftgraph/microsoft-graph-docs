@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update embeddedSIMActivationCodePool"
 description: "Update the properties of a embeddedSIMActivationCodePool object."
 author: "dougeby"
@@ -18,53 +18,59 @@ Namespace: microsoft.graph
 Update the properties of a [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) object.
 
 The following table shows the properties that are required when you create the [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Unique identifier for the embedded SIM activation code pool. System generated value assigned when created.|
-|displayName|String|The admin defined name of the embedded SIM activation code pool.|
-|createdDateTime|DateTimeOffset|The time the embedded SIM activation code pool was created. Generated service side.|
-|modifiedDateTime|DateTimeOffset|The time the embedded SIM activation code pool was last modified. Updated service side.|
-|activationCodes|[embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) collection|The activation codes which belong to this pool. This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune.|
-|activationCodeCount|Int32|The total count of activation codes which belong to this pool.|
-
-
+| Property            | Type                                                                                          | Description                                                                                                                                                                  |
+| :------------------ | :-------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                  | String                                                                                        | Unique identifier for the embedded SIM activation code pool. System generated value assigned when created.                                                                   |
+| displayName         | String                                                                                        | The admin defined name of the embedded SIM activation code pool.                                                                                                             |
+| createdDateTime     | DateTimeOffset                                                                                | The time the embedded SIM activation code pool was created. Generated service side.                                                                                          |
+| modifiedDateTime    | DateTimeOffset                                                                                | The time the embedded SIM activation code pool was last modified. Updated service side.                                                                                      |
+| activationCodes     | [embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md) collection | The activation codes which belong to this pool. This navigation property is used to post activation codes to Intune but cannot be used to read activation codes from Intune. |
+| activationCodeCount | Int32                                                                                         | The total count of activation codes which belong to this pool.                                                                                                               |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}
 Content-type: application/json
 Content-length: 460
@@ -85,8 +91,10 @@ Content-length: 460
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 628
@@ -108,9 +116,3 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
-
-
-
-
-
-

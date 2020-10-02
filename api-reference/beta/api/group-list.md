@@ -1,4 +1,4 @@
----
+﻿---
 title: "List groups"
 description: "List all the groups available in an organization, including but not limited to Microsoft 365 groups."
 localization_priority: Priority
@@ -21,15 +21,16 @@ This operation returns by default only a subset of the more commonly used proper
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                  |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                               |
+| Application                            | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups
 ```
@@ -37,26 +38,31 @@ GET /groups
 ## Optional query parameters
 
 To list only Microsoft 365 groups (aka unified groups), apply a filter on **groupTypes**:
+
 <!-- { "blockType": "ignored" } -->
+
 ```
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
 You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** 
 values, as shown in the following example:
+
 <!-- { "blockType": "ignored" } -->
+
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```
+
 You can also use the `$count` and `$search` query parameters to limit the response. The `$search` query parameter supports tokenization only on the **displayName** and **description** fields. Other fields default to `$filter` behavior. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
 For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name | Description |
-|:---- |:----------- |
-| Authorization  | Bearer {token}. Required. |
+| Name             | Description                                                                                                                                                                                                       |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization    | Bearer {token}. Required.                                                                                                                                                                                         |
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
@@ -76,22 +82,28 @@ If successful, this method returns a `200 OK` response code and collection of [g
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_groups"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -108,6 +120,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -189,30 +202,34 @@ Content-type: application/json
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_groups_withlicenseerrors_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$count=true&$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ConsistencyLevel: eventual
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-withlicenseerrors-count-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-withlicenseerrors-count-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-withlicenseerrors-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -224,6 +241,7 @@ The following is an example of the response which includes only the requested pr
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -250,30 +268,34 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_count_only"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/$count
 ConsistencyLevel: eventual
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -285,13 +307,13 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
 ```
 
 893
-
 
 ### Example 4: Use $filter and $top to get one group with a display name that starts with 'a' including a count of returned objects
 
@@ -305,6 +327,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_a_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
 ConsistencyLevel: eventual
@@ -335,6 +358,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -357,14 +381,34 @@ Content-type: application/json
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "ignored",
   "name": "get_video_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$search="displayName:Video"&$count=true
 ConsistencyLevel: eventual
 ```
+
+# [C#](#tab/csharp)
+
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-video-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-video-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+
+[!INCLUDE [sample-code](../includes/snippets/objc/get-video-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -377,6 +421,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -404,6 +449,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_video_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$search="displayName:Video" OR "description:prod"&$orderby=displayName&$count=true
 ConsistencyLevel: eventual
@@ -420,6 +466,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -442,8 +489,10 @@ Content-type: application/json
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -455,5 +504,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

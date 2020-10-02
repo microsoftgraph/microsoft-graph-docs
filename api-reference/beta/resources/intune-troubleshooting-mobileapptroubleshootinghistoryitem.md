@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileAppTroubleshootingHistoryItem resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 History Item contained in the Mobile App Troubleshooting Event.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|Time when the history item occurred.|
-|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation.|
+
+| Property                    | Type                                                                                                                              | Description                                                                 |
+| :-------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| occurrenceDateTime          | DateTimeOffset                                                                                                                    | Time when the history item occurred.                                        |
+| troubleshootingErrorDetails | [deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md) | Object containing detailed information about the error and its remediation. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppTroubleshootingHistoryItem"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mobileAppTroubleshootingHistoryItem",
   "occurrenceDateTime": "String (timestamp)",
@@ -53,9 +58,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

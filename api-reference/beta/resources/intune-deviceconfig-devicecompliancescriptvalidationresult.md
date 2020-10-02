@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceComplianceScriptValidationResult resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|rules|[deviceComplianceScriptRule](../resources/intune-deviceconfig-devicecompliancescriptrule.md) collection|Parsed rules from json.|
-|scriptErrors|[deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md) collection|Errors in json for the script.|
-|ruleErrors|[deviceComplianceScriptRuleError](../resources/intune-deviceconfig-devicecompliancescriptruleerror.md) collection|Errors in json for the script for rules.|
+
+| Property     | Type                                                                                                              | Description                              |
+| :----------- | :---------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
+| rules        | [deviceComplianceScriptRule](../resources/intune-deviceconfig-devicecompliancescriptrule.md) collection           | Parsed rules from json.                  |
+| scriptErrors | [deviceComplianceScriptError](../resources/intune-deviceconfig-devicecompliancescripterror.md) collection         | Errors in json for the script.           |
+| ruleErrors   | [deviceComplianceScriptRuleError](../resources/intune-deviceconfig-devicecompliancescriptruleerror.md) collection | Errors in json for the script for rules. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceComplianceScriptValidationResult"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceScriptValidationResult",
   "rules": [
@@ -63,9 +68,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

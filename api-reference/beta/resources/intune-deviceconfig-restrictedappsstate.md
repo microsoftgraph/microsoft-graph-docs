@@ -1,4 +1,4 @@
----
+﻿---
 title: "restrictedAppsState enum type"
 description: "Restricted apps state"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Restricted apps state
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|prohibitedApps|0|Prohibited apps|
-|notApprovedApps|1|Not approved apps|
 
-
-
-
-
-
+| Member          | Value | Description       |
+| :-------------- | :---- | :---------------- |
+| prohibitedApps  | 0     | Prohibited apps   |
+| notApprovedApps | 1     | Not approved apps |

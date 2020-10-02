@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create deviceHealthScriptAssignment"
 description: "Create a new deviceHealthScriptAssignment object."
 author: "dougeby"
@@ -18,52 +18,58 @@ Namespace: microsoft.graph
 Create a new [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| Permission type                        | Permissions (from most to least privileged)                                         |
+| :------------------------------------- | :---------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                      |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assignments
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the deviceHealthScriptAssignment object.
 
 The following table shows the properties that are required when you create the deviceHealthScriptAssignment.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the device health script assignment entity. This property is read-only.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The Azure Active Directory group we are targeting the script to|
-|runRemediationScript|Boolean|Determine whether we want to run detection script only or run both detection script and remediation script|
-|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Script run schedule for the target group|
-
-
+| Property             | Type                                                                                                           | Description                                                                                                |
+| :------------------- | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| id                   | String                                                                                                         | Key of the device health script assignment entity. This property is read-only.                             |
+| target               | [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md) | The Azure Active Directory group we are targeting the script to                                            |
+| runRemediationScript | Boolean                                                                                                        | Determine whether we want to run detection script only or run both detection script and remediation script |
+| runSchedule          | [deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)                  | Script run schedule for the target group                                                                   |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 Content-type: application/json
 Content-length: 526
@@ -86,8 +92,10 @@ Content-length: 526
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 575
@@ -109,9 +117,3 @@ Content-Length: 575
   }
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOSContentCachingType enum type"
 description: "Indicates the type of content allowed to be cached by Apple's content caching service."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Indicates the type of content allowed to be cached by Apple's content caching service.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Default. Both user iCloud data and non-iCloud data will be cached.|
-|userContentOnly|1|Allow Apple's content caching service to cache user iCloud data.|
-|sharedContentOnly|2|Allow Apple's content caching service to cache non-iCloud data (e.g. app and software updates).|
 
-
-
-
-
-
+| Member            | Value | Description                                                                                     |
+| :---------------- | :---- | :---------------------------------------------------------------------------------------------- |
+| notConfigured     | 0     | Default. Both user iCloud data and non-iCloud data will be cached.                              |
+| userContentOnly   | 1     | Allow Apple's content caching service to cache user iCloud data.                                |
+| sharedContentOnly | 2     | Allow Apple's content caching service to cache non-iCloud data (e.g. app and software updates). |

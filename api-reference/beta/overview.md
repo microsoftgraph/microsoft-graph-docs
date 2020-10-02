@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Graph beta endpoint reference"
 description: "The reference content in this section documents the Microsoft Graph beta endpoint. The beta endpoint includes APIs that are currently in preview and are not yet generally available. We invite you to try these APIs and provide your feedback via the following channels:"
 localization_priority: Priority
@@ -27,6 +27,7 @@ https://graph.microsoft.com/beta/{resource}?[query_parameters]
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) in the beta endpoint.
 
 ## See also
@@ -34,4 +35,3 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 - [Overview of Microsoft Graph](/graph/overview)
 - [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start)
-

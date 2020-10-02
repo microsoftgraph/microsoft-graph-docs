@@ -1,4 +1,4 @@
----
+﻿---
 title: "appleVpnAlwaysOnConfiguration resource type"
 description: "Always On VPN configuration for MacOS and iOS IKEv2"
 author: "dougeby"
@@ -18,30 +18,35 @@ Namespace: microsoft.graph
 Always On VPN configuration for MacOS and iOS IKEv2
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|tunnelConfiguration|[vpnTunnelConfigurationType](../resources/intune-deviceconfig-vpntunnelconfigurationtype.md)|Determines what connections the specific tunnel configuration applies to. Possible values are: `wifiAndCellular`, `cellular`, `wifi`.|
-|userToggleEnabled|Boolean|Allow the user to toggle the VPN configuration using the UI|
-|voicemailExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine whether voicemail service will be exempt from the always-on VPN connection. Possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
-|airPrintExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine whether AirPrint service will be exempt from the always-on VPN connection. Possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
-|cellularExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine whether Cellular service will be exempt from the always-on VPN connection. Possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
-|allowAllCaptiveNetworkPlugins|Boolean|Specifies whether traffic from all captive network plugins should be allowed outside the vpn|
-|allowedCaptiveNetworkPlugins|[specifiedCaptiveNetworkPlugins](../resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md)|Determines whether all, some, or no non-native captive networking apps are allowed|
-|allowCaptiveWebSheet|Boolean|Determines whether traffic from the Websheet app is allowed outside of the VPN|
-|natKeepAliveIntervalInSeconds|Int32|Specifies how often in seconds to send a network address translation keepalive package through the VPN|
-|natKeepAliveOffloadEnable|Boolean|Enable hardware offloading of NAT keepalive signals when the device is asleep|
+
+| Property                      | Type                                                                                                 | Description                                                                                                                                                            |
+| :---------------------------- | :--------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tunnelConfiguration           | [vpnTunnelConfigurationType](../resources/intune-deviceconfig-vpntunnelconfigurationtype.md)         | Determines what connections the specific tunnel configuration applies to. Possible values are: `wifiAndCellular`, `cellular`, `wifi`.                                  |
+| userToggleEnabled             | Boolean                                                                                              | Allow the user to toggle the VPN configuration using the UI                                                                                                            |
+| voicemailExceptionAction      | [vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)           | Determine whether voicemail service will be exempt from the always-on VPN connection. Possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`. |
+| airPrintExceptionAction       | [vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)           | Determine whether AirPrint service will be exempt from the always-on VPN connection. Possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.  |
+| cellularExceptionAction       | [vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)           | Determine whether Cellular service will be exempt from the always-on VPN connection. Possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.  |
+| allowAllCaptiveNetworkPlugins | Boolean                                                                                              | Specifies whether traffic from all captive network plugins should be allowed outside the vpn                                                                           |
+| allowedCaptiveNetworkPlugins  | [specifiedCaptiveNetworkPlugins](../resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md) | Determines whether all, some, or no non-native captive networking apps are allowed                                                                                     |
+| allowCaptiveWebSheet          | Boolean                                                                                              | Determines whether traffic from the Websheet app is allowed outside of the VPN                                                                                         |
+| natKeepAliveIntervalInSeconds | Int32                                                                                                | Specifies how often in seconds to send a network address translation keepalive package through the VPN                                                                 |
+| natKeepAliveOffloadEnable     | Boolean                                                                                              | Enable hardware offloading of NAT keepalive signals when the device is asleep                                                                                          |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appleVpnAlwaysOnConfiguration"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.appleVpnAlwaysOnConfiguration",
   "tunnelConfiguration": "String",
@@ -61,9 +66,3 @@ Here is a JSON representation of the resource.
   "natKeepAliveOffloadEnable": true
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "reportRoot: getSkypeForBusinessParticipantActivityCounts"
 description: "Get usage trends on the number and type of conference sessions that users from your organization participated in. Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - 3rd party."
 localization_priority: Normal
@@ -20,15 +20,14 @@ Get usage trends on the number and type of conference sessions that users from y
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Reports.Read.All                            |
 
 **Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
-
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -40,15 +39,15 @@ GET /reports/getSkypeForBusinessParticipantActivityCounts(period='{period_value}
 
 In the request URL, provide the following parameter with a valid value.
 
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
+| Parameter | Type   | Description                                                                                                                                                                                                                                                       |
+| :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Request headers
 
-| Name          | Description                              |
-| :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Required.                |
+| Name          | Description                                                                                                                                             |
+| :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Authorization | Bearer {token}. Required.                                                                                                                               |
 | If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response
@@ -74,7 +73,6 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-
 <!--{
   "blockType": "ignored",
   "isComposable": true,
@@ -84,7 +82,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessParticipantActivityCounts(period='D7')
 ```
-
 
 #### Response
 
@@ -112,8 +109,10 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,Report Date,Report Period,IM,Audio/Video,App Sharing,Web,Dial-in/out 3rd Party
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",
@@ -123,4 +122,3 @@ Report Refresh Date,Report Date,Report Period,IM,Audio/Video,App Sharing,Web,Dia
   "suppressions": [
   ]
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "skypeForBusinessActivityUserDetail resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
@@ -13,43 +13,43 @@ Namespace: microsoft.graph
 
 ## Properties
 
-| Property                                 | Type              |
-| :--------------------------------------- | :---------------- |
-| totalPeerToPeerSessionCount              | Int64             |
-| totalOrganizedConferenceCount            | Int64             |
-| totalParticipatedConferenceCount         | Int64             |
-| peerToPeerLastActivityDate               | Date              |
-| organizedConferenceLastActivityDate      | Date              |
-| participatedConferenceLastActivityDate   | Date              |
-| peerToPeerIMCount                        | Int64             |
-| peerToPeerAudioCount                     | Int64             |
-| peerToPeerAudioMinutes                   | Int64             |
-| peerToPeerVideoCount                     | Int64             |
-| peerToPeerVideoMinutes                   | Int64             |
-| peerToPeerAppSharingCount                | Int64             |
-| peerToPeerFileTransferCount              | Int64             |
-| organizedConferenceIMCount               | Int64             |
-| organizedConferenceAudioVideoCount       | Int64             |
-| organizedConferenceAudioVideoMinutes     | Int64             |
-| organizedConferenceAppSharingCount       | Int64             |
-| organizedConferenceWebCount              | Int64             |
-| organizedConferenceDialInOut3rdPartyCount | Int64             |
+| Property                                        | Type              |
+| :---------------------------------------------- | :---------------- |
+| totalPeerToPeerSessionCount                     | Int64             |
+| totalOrganizedConferenceCount                   | Int64             |
+| totalParticipatedConferenceCount                | Int64             |
+| peerToPeerLastActivityDate                      | Date              |
+| organizedConferenceLastActivityDate             | Date              |
+| participatedConferenceLastActivityDate          | Date              |
+| peerToPeerIMCount                               | Int64             |
+| peerToPeerAudioCount                            | Int64             |
+| peerToPeerAudioMinutes                          | Int64             |
+| peerToPeerVideoCount                            | Int64             |
+| peerToPeerVideoMinutes                          | Int64             |
+| peerToPeerAppSharingCount                       | Int64             |
+| peerToPeerFileTransferCount                     | Int64             |
+| organizedConferenceIMCount                      | Int64             |
+| organizedConferenceAudioVideoCount              | Int64             |
+| organizedConferenceAudioVideoMinutes            | Int64             |
+| organizedConferenceAppSharingCount              | Int64             |
+| organizedConferenceWebCount                     | Int64             |
+| organizedConferenceDialInOut3rdPartyCount       | Int64             |
 | organizedConferenceCloudDialInOutMicrosoftCount | Int64             |
-| organizedConferenceCloudDialInMicrosoftMinutes | Int64             |
+| organizedConferenceCloudDialInMicrosoftMinutes  | Int64             |
 | organizedConferenceCloudDialOutMicrosoftMinutes | Int64             |
-| participatedConferenceIMCount           | Int64             |
-| participatedConferenceAudioVideoCount   | Int64             |
-| participatedConferenceAudioVideoMinutes | Int64             |
-| participatedConferenceAppSharingCount   | Int64             |
-| participatedConferenceWebCount          | Int64             |
-| participatedConferenceDialInOut3rdPartyCount | Int64             |
-| reportRefreshDate                        | Date              |
-| userPrincipalName                        | String            |
-| isDeleted                                | Boolean           |
-| deletedDate                              | Date              |
-| lastActivityDate                         | Date              |
-| assignedProducts                         | String collection |
-| reportPeriod                             | String            |
+| participatedConferenceIMCount                   | Int64             |
+| participatedConferenceAudioVideoCount           | Int64             |
+| participatedConferenceAudioVideoMinutes         | Int64             |
+| participatedConferenceAppSharingCount           | Int64             |
+| participatedConferenceWebCount                  | Int64             |
+| participatedConferenceDialInOut3rdPartyCount    | Int64             |
+| reportRefreshDate                               | Date              |
+| userPrincipalName                               | String            |
+| isDeleted                                       | Boolean           |
+| deletedDate                                     | Date              |
+| lastActivityDate                                | Date              |
+| assignedProducts                                | String collection |
+| reportPeriod                                    | String            |
 
 ## JSON representation
 
@@ -99,5 +99,3 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
-
-

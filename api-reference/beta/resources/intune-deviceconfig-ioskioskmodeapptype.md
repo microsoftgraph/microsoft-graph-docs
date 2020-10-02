@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosKioskModeAppType enum type"
 description: "App source options for iOS kiosk mode."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 App source options for iOS kiosk mode.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Device default value, no intent.|
-|appStoreApp|1|The app to be run comes from the app store.|
-|managedApp|2|The app to be run is built into the device.|
-|builtInApp|3|The app to be run is a managed app.|
 
-
-
-
-
-
+| Member        | Value | Description                                 |
+| :------------ | :---- | :------------------------------------------ |
+| notConfigured | 0     | Device default value, no intent.            |
+| appStoreApp   | 1     | The app to be run comes from the app store. |
+| managedApp    | 2     | The app to be run is built into the device. |
+| builtInApp    | 3     | The app to be run is a managed app.         |

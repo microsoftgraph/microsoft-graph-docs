@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsAutopilotProfileAssignmentStatus enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,18 +18,13 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown assignment status|
-|assignedInSync|1|Assigned successfully in Intune and in sync with Windows auto pilot program|
-|assignedOutOfSync|2|Assigned successfully in Intune and not in sync with Windows auto pilot program|
-|assignedUnkownSyncState|3|Assigned successfully in Intune and either in-sync or out of sync with Windows auto pilot program|
-|notAssigned|4|Not assigned|
-|pending|5|Pending assignment|
-|failed|6| Assignment failed|
 
-
-
-
-
-
+| Member                  | Value | Description                                                                                       |
+| :---------------------- | :---- | :------------------------------------------------------------------------------------------------ |
+| unknown                 | 0     | Unknown assignment status                                                                         |
+| assignedInSync          | 1     | Assigned successfully in Intune and in sync with Windows auto pilot program                       |
+| assignedOutOfSync       | 2     | Assigned successfully in Intune and not in sync with Windows auto pilot program                   |
+| assignedUnkownSyncState | 3     | Assigned successfully in Intune and either in-sync or out of sync with Windows auto pilot program |
+| notAssigned             | 4     | Not assigned                                                                                      |
+| pending                 | 5     | Pending assignment                                                                                |
+| failed                  | 6     | Assignment failed                                                                                 |

@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
@@ -18,6 +18,7 @@ Represents the column values in a [listItem](listitem.md) resource.
 ## JSON representation
 
 Here is a JSON representation of a **fieldValueSet** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
       "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
        "baseType": "microsoft.graph.entity", "openType": true } -->
@@ -58,4 +59,3 @@ You may request up to 12 lookup fields in a single query, plus any number of reg
   "section": "documentation",
   "tocPath": "Resources/FieldValueSet"
 } -->
-

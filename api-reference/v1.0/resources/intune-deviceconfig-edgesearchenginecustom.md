@@ -1,4 +1,4 @@
----
+﻿---
 title: "edgeSearchEngineCustom resource type"
 description: "Allows IT admins to set a custom default search engine for MDM-Controlled devices."
 author: "dougeby"
@@ -15,36 +15,31 @@ Namespace: microsoft.graph
 
 Allows IT admins to set a custom default search engine for MDM-Controlled devices.
 
-
 Inherits from [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|edgeSearchEngineOpenSearchXmlUrl|String|Points to a https link containing the OpenSearch xml file that contains, at minimum, the short name and the URL to the search Engine.|
+
+| Property                         | Type   | Description                                                                                                                           |
+| :------------------------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| edgeSearchEngineOpenSearchXmlUrl | String | Points to a https link containing the OpenSearch xml file that contains, at minimum, the short name and the URL to the search Engine. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngineCustom"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngineCustom",
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

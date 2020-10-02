@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedDeviceRemoteAction enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,21 +18,16 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|retire|0|Not yet documented|
-|delete|1|Not yet documented|
-|fullScan|2|Not yet documented|
-|quickScan|3|Not yet documented|
-|signatureUpdate|4|Not yet documented|
-|wipe|5|Not yet documented|
-|customTextNotification|6|Not yet documented|
-|rebootNow|7|Not yet documented|
-|setDeviceName|8|Not yet documented|
-|syncDevice|9|Not yet documented|
 
-
-
-
-
-
+| Member                 | Value | Description        |
+| :--------------------- | :---- | :----------------- |
+| retire                 | 0     | Not yet documented |
+| delete                 | 1     | Not yet documented |
+| fullScan               | 2     | Not yet documented |
+| quickScan              | 3     | Not yet documented |
+| signatureUpdate        | 4     | Not yet documented |
+| wipe                   | 5     | Not yet documented |
+| customTextNotification | 6     | Not yet documented |
+| rebootNow              | 7     | Not yet documented |
+| setDeviceName          | 8     | Not yet documented |
+| syncDevice             | 9     | Not yet documented |

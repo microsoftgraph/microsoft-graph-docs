@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create account"
 description: "Create a new account object."
 author: "kevinbellinger"
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Create account
+
 Namespace: microsoft.graph
 
 Create a new [userAccountInformation](../resources/useraccountinformation.md) object in a user's [profile](../resources/profile.md).
@@ -17,7 +18,7 @@ Create a new [userAccountInformation](../resources/useraccountinformation.md) ob
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -28,29 +29,32 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /me/profile/accounts
 POST /users/{id | userPrincipalName}/profile/accounts
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the [userAccountInformation](../resources/useraccountinformation.md) object.
 
 The following table shows the properties that are required when you create a new [userAccountInformation](../resources/useraccountinformation.md) object.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|countryCode|String|Contains the two-character country code associated with the users account.  |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contains the language the user has associated as preferred for the account.   |
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+| Property             | Type                                                 | Description                                                                                                                                                                                                                                                                    |
+| :------------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences     | String                                               | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| countryCode          | String                                               | Contains the two-character country code associated with the users account.                                                                                                                                                                                                     |
+| inference            | [inferenceData](../resources/inferencedata.md)       | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| preferredLanguageTag | [localeInfo](../resources/localeinfo.md)             | Contains the language the user has associated as preferred for the account.                                                                                                                                                                                                    |
+| source               | [personDataSource](../resources/persondatasource.md) | Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                                                             |
 
 ## Response
 
@@ -59,12 +63,14 @@ If successful, this method returns a `201 Created` response code and a [userAcco
 ## Examples
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_useraccountinformation_from_profile"
 }
 -->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/me/profile/accounts
 Content-Type: application/json
 Content-length: 494
@@ -74,29 +80,36 @@ Content-length: 494
   "countryCode": "NO",
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-useraccountinformation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-useraccountinformation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-useraccountinformation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.userAccountInformation"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -129,5 +142,3 @@ Content-Type: application/json
   "userPrincipalName": "innocenty.popov@adventureworks.com"
 }
 ```
-
-

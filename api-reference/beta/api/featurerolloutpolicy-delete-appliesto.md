@@ -1,4 +1,4 @@
----
+﻿---
 title: "Remove appliesTo"
 description: "Remove a directoryObject from feature rollout."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Remove an appliesTo on a [featureRolloutPolicy](../resources/featurerolloutpolic
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout             |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ DELETE /directory/featureRolloutPolicies/{id}/appliesTo/{id}/$ref
 ## Request headers
 
 | Name          | Description   |
-|:--------------|:--------------|
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
@@ -54,6 +54,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_directoryobject_from_featurerolloutpolicy"
@@ -62,20 +63,23 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c/appliesTo/2441b489-4f12-4882-b039-8f6006bd66da/$ref
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-featurerolloutpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-directoryobject-from-featurerolloutpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directoryobject-from-featurerolloutpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -92,6 +96,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Remove appliesTo",
@@ -99,5 +104,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

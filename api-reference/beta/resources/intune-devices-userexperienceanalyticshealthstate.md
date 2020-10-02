@@ -1,4 +1,4 @@
----
+﻿---
 title: "userExperienceAnalyticsHealthState enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Not yet documented|
-|insufficientData|1|Not yet documented|
-|needsAttention|2|Not yet documented|
-|meetingGoals|3|Not yet documented|
 
-
-
-
-
-
+| Member           | Value | Description        |
+| :--------------- | :---- | :----------------- |
+| unknown          | 0     | Not yet documented |
+| insufficientData | 1     | Not yet documented |
+| needsAttention   | 2     | Not yet documented |
+| meetingGoals     | 3     | Not yet documented |

@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "The ShareAction resource provides information about an activity that shared an item."
 ms.date: 09/14/2017
@@ -34,9 +34,9 @@ The **ShareAction** resource provides information about an [activity][activity] 
 
 ## Properties
 
-| Property name | Type                       | Description
-|:--------------|:---------------------------|:-----------------------------
-| recipients    | [identitySet][] collection | The identities the item was shared with in this action.
+| Property name | Type                       | Description                                             |
+| :------------ | :------------------------- | :------------------------------------------------------ |
+| recipients    | [identitySet][] collection | The identities the item was shared with in this action. |
 
 [identitySet]: identityset.md
 
@@ -54,5 +54,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

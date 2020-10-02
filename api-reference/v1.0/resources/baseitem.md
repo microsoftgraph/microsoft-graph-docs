@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -8,6 +8,7 @@ description: "The baseItem resource is an abstract resource that contains a comm
 ms.prod: ""
 doc_type: resourcePageType
 ---
+
 # BaseItem resource type
 
 Namespace: microsoft.graph
@@ -65,10 +66,10 @@ Here is a JSON representation of a **baseItem** resource.
 
 ## Relationships
 
-| Relationship       | Type     | Description
-|:-------------------|:---------|:---------------------------------------------
-| createdByUser      | [user][] | Identity of the user who created the item. Read-only.
-| lastModifiedByUser | [user][] | Identity of the user who last modified the item. Read-only.
+| Relationship       | Type     | Description                                                 |
+| :----------------- | :------- | :---------------------------------------------------------- |
+| createdByUser      | [user][] | Identity of the user who created the item. Read-only.       |
+| lastModifiedByUser | [user][] | Identity of the user who last modified the item. Read-only. |
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
@@ -80,6 +81,7 @@ The `baseItem` type is not expected to be used directly.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "",
@@ -87,4 +89,3 @@ The `baseItem` type is not expected to be used directly.
   "section": "documentation",
   "tocPath": "Resources/BaseItem"
 } -->
-

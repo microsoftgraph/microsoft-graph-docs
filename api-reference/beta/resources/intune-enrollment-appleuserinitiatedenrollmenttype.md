@@ -1,4 +1,4 @@
----
+﻿---
 title: "appleUserInitiatedEnrollmentType enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown enrollment type|
-|device|1|Device enrollment type|
-|user|2|User enrollment type|
 
-
-
-
-
-
+| Member  | Value | Description             |
+| :------ | :---- | :---------------------- |
+| unknown | 0     | Unknown enrollment type |
+| device  | 1     | Device enrollment type  |
+| user    | 2     | User enrollment type    |

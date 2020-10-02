@@ -1,4 +1,4 @@
----
+﻿---
 title: "teamsUserActivityCounts resource type"
 description: "The following is a JSON representation of the resource."
 author: "nkramer"
@@ -23,7 +23,6 @@ Namespace: microsoft.graph
 | meetings            | Int64  |
 | reportPeriod        | String |
 
-
 ## JSON representation
 
 The following is a JSON representation of the resource.
@@ -44,5 +43,3 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
-
-

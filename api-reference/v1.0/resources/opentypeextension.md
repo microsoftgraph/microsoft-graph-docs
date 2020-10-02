@@ -1,4 +1,4 @@
----
+﻿---
 title: "openTypeExtension resource type (open extensions)"
 description: "Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph."
 localization_priority: Priority
@@ -21,18 +21,18 @@ Open extension example: [Add custom data to users using open extensions](/graph/
 
 Open extensions are supported by the following resources in the corresponding versions - general availability (GA: /v1.0 and /beta) or preview (/beta).
 
-|Resource |Version |
-|:---------------|:-------|
-| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | Preview only |
-| [Calendar event](event.md) | GA |
-| Group [calendar event](event.md) | GA |
-| Group conversation thread [post](post.md) | GA |
-| [device](device.md) | GA |
-| [group](group.md) | GA |
-| [message](message.md) | GA |
-| [organization](organization.md) | GA |
-| [Personal contact](contact.md) | GA |
-| [user](user.md) | GA |
+| Resource                                                                            | Version      |
+| :---------------------------------------------------------------------------------- | :----------- |
+| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta) | Preview only |
+| [Calendar event](event.md)                                                          | GA           |
+| Group [calendar event](event.md)                                                    | GA           |
+| Group conversation thread [post](post.md)                                           | GA           |
+| [device](device.md)                                                                 | GA           |
+| [group](group.md)                                                                   | GA           |
+| [message](message.md)                                                               | GA           |
+| [organization](organization.md)                                                     | GA           |
+| [Personal contact](contact.md)                                                      | GA           |
+| [user](user.md)                                                                     | GA           |
 
 ## Outlook-specific considerations
 
@@ -73,10 +73,10 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-|Property | Type | Description |
-|:---------------|:--------|:----------|
-|extensionName|String|A unique text identifier for an open type open extension. Required.|
-|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
+| Property      | Type   | Description                                                                                              |
+| :------------ | :----- | :------------------------------------------------------------------------------------------------------- |
+| extensionName | String | A unique text identifier for an open type open extension. Required.                                      |
+| id            | String | A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only. |
 
 ## Relationships
 
@@ -84,15 +84,16 @@ None
 
 ## Methods
 
-|Method | Return Type | Description |
-|:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md) that contains an openTypeExtension object | Create an openTypeExtension object in an existing or new resource instance.|
-|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
-|[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
-|[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
+| Method                                                       | Return Type                                                                                                                                                                                                                                | Description                                                                 |
+| :----------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| [Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md) that contains an openTypeExtension object | Create an openTypeExtension object in an existing or new resource instance. |
+| [Get](../api/opentypeextension-get.md)                       | [openTypeExtension](opentypeextension.md)                                                                                                                                                                                                  | Read properties and relationships of openTypeExtension object.              |
+| [Update](../api/opentypeextension-update.md)                 | [openTypeExtension](opentypeextension.md)                                                                                                                                                                                                  | Update openTypeExtension object.                                            |
+| [Delete](../api/opentypeextension-delete.md)                 | None                                                                                                                                                                                                                                       | Delete openTypeExtension object.                                            |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "openTypeExtension resource",
@@ -100,4 +101,3 @@ None
   "section": "documentation",
   "tocPath": ""
 }-->
-

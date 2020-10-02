@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The baseItem resource is an abstract resource that contains a common set of properties shared among several other resources types."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # BaseItem resource type
 
 Namespace: microsoft.graph
@@ -71,6 +72,7 @@ The `baseItem` type is not expected to be used directly.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -81,5 +83,3 @@ The `baseItem` type is not expected to be used directly.
   "suppressions": []
 }
 -->
-
-

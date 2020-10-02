@@ -1,4 +1,4 @@
----
+﻿---
 title: "groupPolicyCategory resource type"
 description: "The category entity stores the category of a group policy definition"
 author: "dougeby"
@@ -18,36 +18,42 @@ Namespace: microsoft.graph
 The category entity stores the category of a group policy definition
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[Get groupPolicyCategory](../api/intune-grouppolicy-grouppolicycategory-get.md)|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Read properties and relationships of the [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) object.|
-|[Update groupPolicyCategory](../api/intune-grouppolicy-grouppolicycategory-update.md)|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Update the properties of a [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) object.|
+
+| Method                                                                                | Return Type                                                                   | Description                                                                                                                    |
+| :------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| [Get groupPolicyCategory](../api/intune-grouppolicy-grouppolicycategory-get.md)       | [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) | Read properties and relationships of the [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) object. |
+| [Update groupPolicyCategory](../api/intune-grouppolicy-grouppolicycategory-update.md) | [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) | Update the properties of a [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) object.               |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|The string id of the category's display name|
-|isRoot|Boolean|Defines if the category is a root category|
-|id|String|Key of the entity.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
+
+| Property             | Type           | Description                                     |
+| :------------------- | :------------- | :---------------------------------------------- |
+| displayName          | String         | The string id of the category's display name    |
+| isRoot               | Boolean        | Defines if the category is a root category      |
+| id                   | String         | Key of the entity.                              |
+| lastModifiedDateTime | DateTimeOffset | The date and time the entity was last modified. |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|parent|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|The parent category|
-|children|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) collection|The children categories|
-|definitions|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) collection|The immediate GroupPolicyDefinition children of the category|
-|definitionFile|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|The id of the definition file the category came from|
+
+| Relationship   | Type                                                                                         | Description                                                  |
+| :------------- | :------------------------------------------------------------------------------------------- | :----------------------------------------------------------- |
+| parent         | [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)                | The parent category                                          |
+| children       | [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md) collection     | The children categories                                      |
+| definitions    | [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) collection | The immediate GroupPolicyDefinition children of the category |
+| definitionFile | [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)    | The id of the definition file the category came from         |
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.groupPolicyCategory"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.groupPolicyCategory",
   "displayName": "String",
@@ -56,9 +62,3 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

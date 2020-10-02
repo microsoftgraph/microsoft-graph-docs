@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Update the properties of the currently authenticated organization. In this case,
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type | Permissions (from least to most privileged) |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Organization.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application | Organization.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)            |
+| :------------------------------------- | :----------------------------------------------------- |
+| Delegated (work or school account)     | Organization.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                         |
+| Application                            | Organization.ReadWrite.All                             |
 
 ## HTTP request
 
@@ -35,23 +35,22 @@ PATCH /organization/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Content-Type   | application/json |
-
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property  | Type |Description|
-|:---------------|:--------|:----------|
-|marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
-|privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
-|securityComplianceNotificationMails|String collection||
-|securityComplianceNotificationPhones|String collection||
-|technicalNotificationMails|String collection|                                        **Notes**: not nullable.            |
+| Property                             | Type                                             | Description                                                                 |
+| :----------------------------------- | :----------------------------------------------- | :-------------------------------------------------------------------------- |
+| marketingNotificationEmails          | String collection                                | **Notes**: not nullable.                                                    |
+| privacyProfile                       | [privacyProfile](../resources/privacyprofile.md) | The privacy profile of an organization (set statementUrl and contactEmail). |
+| securityComplianceNotificationMails  | String collection                                |                                                                             |
+| securityComplianceNotificationPhones | String collection                                |                                                                             |
+| technicalNotificationMails           | String collection                                | **Notes**: not nullable.                                                    |
 
 Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **organization** instance.
@@ -61,10 +60,13 @@ add, update, or delete your own app-specific data in custom properties of an ext
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_organization"
@@ -87,24 +89,28 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-organization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
 
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,6 +132,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -137,5 +144,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "rbacApplicationMultiple resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,36 +18,36 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[Get rbacApplicationMultiple](../api/intune-rbac-rbacapplicationmultiple-get.md)|[rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md)|Read properties and relationships of the [rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md) object.|
-|[Update rbacApplicationMultiple](../api/intune-rbac-rbacapplicationmultiple-update.md)|[rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md)|Update the properties of a [rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md) object.|
+
+| Method                                                                                 | Return Type                                                                    | Description                                                                                                                     |
+| :------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| [Get rbacApplicationMultiple](../api/intune-rbac-rbacapplicationmultiple-get.md)       | [rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md) | Read properties and relationships of the [rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md) object. |
+| [Update rbacApplicationMultiple](../api/intune-rbac-rbacapplicationmultiple-update.md) | [rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md) | Update the properties of a [rbacApplicationMultiple](../resources/intune-rbac-rbacapplicationmultiple.md) object.               |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Not yet documented|
+
+| Property | Type   | Description        |
+| :------- | :----- | :----------------- |
+| id       | String | Not yet documented |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.rbacApplicationMultiple"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.rbacApplicationMultiple",
   "id": "String (identifier)"
 }
 ```
-
-
-
-
-
-

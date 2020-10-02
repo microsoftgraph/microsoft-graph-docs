@@ -1,4 +1,4 @@
----
+﻿---
 title: "win32LobAppDetection resource type"
 description: "Base class to detect a Win32 App"
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 Base class to detect a Win32 App
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppDetection"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.win32LobAppDetection"
 }
 ```
-
-
-
-
-
-

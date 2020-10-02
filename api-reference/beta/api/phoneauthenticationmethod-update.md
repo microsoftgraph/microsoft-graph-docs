@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update phoneAuthenticationMethod"
 description: "Update the phone number associated with a phoneAuthenticationMethod object."
 localization_priority: Normal
@@ -23,11 +23,11 @@ If a user is enabled by policy to use SMS to sign in and the `mobile` number is 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegated (work or school account)     | Not supported. | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application                            | Not supported. | Not supported. |
+| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged) |
+| :------------------------------------- | :--------------------------------------------------------- | :----------------------------------------------------------- |
+| Delegated (work or school account)     | Not supported.                                             | UserAuthenticationMethod.ReadWrite.All                       |
+| Delegated (personal Microsoft account) | Not supported.                                             | Not supported.                                               |
+| Application                            | Not supported.                                             | Not supported.                                               |
 
 For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
@@ -46,19 +46,19 @@ PUT /users/{id}/authentication/phoneMethods/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will be recalculated based on changes to other property values.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.|
-|phoneType|string| Possible values are: `mobile`, `alternateMobile`, or `office`.|
+| Property    | Type   | Description                                                                                                                                                                                                                                                                                               |
+| :---------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| phoneNumber | String | The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format. |
+| phoneType   | string | Possible values are: `mobile`, `alternateMobile`, or `office`.                                                                                                                                                                                                                                            |
 
 ## Response
 
@@ -71,6 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [phon
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_phoneauthenticationmethod"
@@ -85,20 +86,23 @@ Content-type: application/json
   "phoneType": "mobile",
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-phoneauthenticationmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-phoneauthenticationmethod-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-phoneauthenticationmethod-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -126,6 +130,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update phoneauthenticationmethod",
@@ -133,5 +138,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

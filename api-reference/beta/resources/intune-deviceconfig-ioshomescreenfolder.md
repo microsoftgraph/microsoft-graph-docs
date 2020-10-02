@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosHomeScreenFolder resource type"
 description: "A folder containing pages of apps on the Home Screen"
 author: "dougeby"
@@ -17,26 +17,30 @@ Namespace: microsoft.graph
 
 A folder containing pages of apps on the Home Screen
 
-
 Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|pages|[iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements.|
+
+| Property    | Type                                                                                              | Description                                                                                                              |
+| :---------- | :------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------- |
+| displayName | String                                                                                            | Name of the app Inherited from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)                |
+| pages       | [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md) collection | Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenFolder"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenFolder",
   "displayName": "String",
@@ -55,9 +59,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

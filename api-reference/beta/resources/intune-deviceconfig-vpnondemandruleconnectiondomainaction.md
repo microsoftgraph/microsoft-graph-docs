@@ -1,4 +1,4 @@
----
+﻿---
 title: "vpnOnDemandRuleConnectionDomainAction enum type"
 description: "VPN On-Demand Rule Connection Domain Action."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 VPN On-Demand Rule Connection Domain Action.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|connectIfNeeded|0|Connect if needed.|
-|neverConnect|1|Never connect.|
 
-
-
-
-
-
+| Member          | Value | Description        |
+| :-------------- | :---- | :----------------- |
+| connectIfNeeded | 0     | Connect if needed. |
+| neverConnect    | 1     | Never connect.     |

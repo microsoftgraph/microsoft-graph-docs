@@ -1,4 +1,4 @@
----
+﻿---
 title: "List chats"
 description: "Retrieve the list of chats for a user."
 author: "nkramer"
@@ -19,15 +19,16 @@ Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported.    |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Chat.ReadBasic, Chat.Read, Chat.ReadWrite   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/chats
 GET /users/{id}/chats
@@ -40,9 +41,9 @@ This operation does not currently support [OData query parameters](/graph/query-
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -59,39 +60,46 @@ If successful, this method returns a `200 OK` response code and a collection of 
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_chats"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/chats
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chats-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chats-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chats-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
 Here is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chat",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -130,6 +138,7 @@ Content-length: 262
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -141,5 +150,3 @@ Content-length: 262
   ]
 }
 -->
-
-

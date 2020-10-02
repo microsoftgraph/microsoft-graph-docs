@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create windowsAutopilotDeploymentProfilePolicySetItem"
 description: "Create a new windowsAutopilotDeploymentProfilePolicySetItem object."
 author: "dougeby"
@@ -18,56 +18,62 @@ Namespace: microsoft.graph
 Create a new [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceAppManagement/policySets/{policySetId}/items
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the windowsAutopilotDeploymentProfilePolicySetItem object.
 
 The following table shows the properties that are required when you create the windowsAutopilotDeploymentProfilePolicySetItem.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the MobileAppPolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|createdDateTime|DateTimeOffset|Creation time of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|lastModifiedDateTime|DateTimeOffset|Last modified time of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|payloadId|String|PayloadId of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|itemType|String|policySetType of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|displayName|String|DisplayName of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md). Possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Error code if any occured. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md). Possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|String collection|Tags of the guided deployment Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)|
-
-
+| Property             | Type                                                                | Description                                                                                                                                                                                                     |
+| :------------------- | :------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | String                                                              | Key of the MobileAppPolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)                                                                                               |
+| createdDateTime      | DateTimeOffset                                                      | Creation time of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)                                                                                              |
+| lastModifiedDateTime | DateTimeOffset                                                      | Last modified time of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)                                                                                         |
+| payloadId            | String                                                              | PayloadId of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)                                                                                                  |
+| itemType             | String                                                              | policySetType of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)                                                                                              |
+| displayName          | String                                                              | DisplayName of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)                                                                                                |
+| status               | [policySetStatus](../resources/intune-policyset-policysetstatus.md) | Status of the PolicySetItem. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md). Possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`. |
+| errorCode            | [errorCode](../resources/intune-policyset-errorcode.md)             | Error code if any occured. Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md). Possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.                               |
+| guidedDeploymentTags | String collection                                                   | Tags of the guided deployment Inherited from [policySetItem](../resources/intune-policyset-policysetitem.md)                                                                                                    |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items
 Content-type: application/json
 Content-length: 328
@@ -86,8 +92,10 @@ Content-length: 328
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 500
@@ -107,9 +115,3 @@ Content-Length: 500
   ]
 }
 ```
-
-
-
-
-
-

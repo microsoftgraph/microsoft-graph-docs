@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementIntentUserStateSummary resource type"
 description: "Entity that represents user state summary for an intent"
 author: "dougeby"
@@ -18,33 +18,39 @@ Namespace: microsoft.graph
 Entity that represents user state summary for an intent
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[Get deviceManagementIntentUserStateSummary](../api/intune-deviceintent-devicemanagementintentuserstatesummary-get.md)|[deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md)|Read properties and relationships of the [deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) object.|
-|[Update deviceManagementIntentUserStateSummary](../api/intune-deviceintent-devicemanagementintentuserstatesummary-update.md)|[deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md)|Update the properties of a [deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) object.|
+
+| Method                                                                                                                       | Return Type                                                                                                          | Description                                                                                                                                                           |
+| :--------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Get deviceManagementIntentUserStateSummary](../api/intune-deviceintent-devicemanagementintentuserstatesummary-get.md)       | [deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) | Read properties and relationships of the [deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) object. |
+| [Update deviceManagementIntentUserStateSummary](../api/intune-deviceintent-devicemanagementintentuserstatesummary-update.md) | [deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) | Update the properties of a [deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) object.               |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The ID|
-|conflictCount|Int32|Number of users in conflict|
-|errorCount|Int32|Number of error users|
-|failedCount|Int32|Number of failed users|
-|notApplicableCount|Int32|Number of not applicable users|
-|successCount|Int32|Number of succeeded users|
+
+| Property           | Type   | Description                    |
+| :----------------- | :----- | :----------------------------- |
+| id                 | String | The ID                         |
+| conflictCount      | Int32  | Number of users in conflict    |
+| errorCount         | Int32  | Number of error users          |
+| failedCount        | Int32  | Number of failed users         |
+| notApplicableCount | Int32  | Number of not applicable users |
+| successCount       | Int32  | Number of succeeded users      |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementIntentUserStateSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentUserStateSummary",
   "id": "String (identifier)",
@@ -55,9 +61,3 @@ Here is a JSON representation of the resource.
   "successCount": 1024
 }
 ```
-
-
-
-
-
-

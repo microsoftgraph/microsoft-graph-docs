@@ -1,4 +1,4 @@
----
+﻿---
 title: "unsupportedDeviceConfigurationDetail resource type"
 description: "A description of why an entity is unsupported."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 A description of why an entity is unsupported.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|message|String|A message explaining why an entity is unsupported.|
-|propertyName|String|If message is related to a specific property in the original entity, then the name of that property.|
+
+| Property     | Type   | Description                                                                                          |
+| :----------- | :----- | :--------------------------------------------------------------------------------------------------- |
+| message      | String | A message explaining why an entity is unsupported.                                                   |
+| propertyName | String | If message is related to a specific property in the original entity, then the name of that property. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unsupportedDeviceConfigurationDetail"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.unsupportedDeviceConfigurationDetail",
   "message": "String",
   "propertyName": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "powerActionType enum type"
 description: "Power action types"
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Power action types
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured|
-|noAction|1|No action|
-|sleep|2|Put device in sleep state|
-|hibernate|3|Put device in hibernate state|
-|shutdown|4|Shutdown device|
 
-
-
-
-
-
+| Member        | Value | Description                   |
+| :------------ | :---- | :---------------------------- |
+| notConfigured | 0     | Not configured                |
+| noAction      | 1     | No action                     |
+| sleep         | 2     | Put device in sleep state     |
+| hibernate     | 3     | Put device in hibernate state |
+| shutdown      | 4     | Shutdown device               |

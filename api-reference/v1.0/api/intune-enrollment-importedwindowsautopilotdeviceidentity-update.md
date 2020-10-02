@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update importedWindowsAutopilotDeviceIdentity"
 description: "Update the properties of a importedWindowsAutopilotDeviceIdentity object."
 author: "dougeby"
@@ -16,54 +16,60 @@ Namespace: microsoft.graph
 Update the properties of a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementServiceConfig.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.
 
 The following table shows the properties that are required when you create the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The GUID for the object|
-|orderIdentifier|String|Order Id of the Windows autopilot device.|
-|serialNumber|String|Serial number of the Windows autopilot device.|
-|productKey|String|Product Key of the Windows autopilot device.|
-|hardwareIdentifier|Binary|Hardware Blob of the Windows autopilot device.|
-|state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Current state of the imported device.|
-
-
+| Property           | Type                                                                                                                         | Description                                    |
+| :----------------- | :--------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------- |
+| id                 | String                                                                                                                       | The GUID for the object                        |
+| orderIdentifier    | String                                                                                                                       | Order Id of the Windows autopilot device.      |
+| serialNumber       | String                                                                                                                       | Serial number of the Windows autopilot device. |
+| productKey         | String                                                                                                                       | Product Key of the Windows autopilot device.   |
+| hardwareIdentifier | Binary                                                                                                                       | Hardware Blob of the Windows autopilot device. |
+| state              | [importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md) | Current state of the imported device.          |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 Content-type: application/json
 Content-length: 541
@@ -85,8 +91,10 @@ Content-length: 541
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 590
@@ -107,12 +115,3 @@ Content-Length: 590
   }
 }
 ```
-
-
-
-
-
-
-
-
-

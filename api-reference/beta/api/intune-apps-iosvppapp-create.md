@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create iosVppApp"
 description: "Create a new iosVppApp object."
 author: "dougeby"
@@ -18,79 +18,85 @@ Namespace: microsoft.graph
 Create a new [iosVppApp](../resources/intune-apps-iosvppapp.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementApps.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementApps.ReadWrite.All          |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceAppManagement/mobileApps
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the iosVppApp object.
 
 The following table shows the properties that are required when you create the iosVppApp.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|String|The description of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publisher|String|The publisher of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|privacyInformationUrl|String|The privacy statement Url. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|informationUrl|String|The more information Url. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
-|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|usedLicenseCount|Int32|The number of VPP licenses in use.|
-|totalLicenseCount|Int32|The total number of VPP licenses.|
-|releaseDateTime|DateTimeOffset|The VPP application release date and time.|
-|appStoreUrl|String|The store URL.|
-|licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|The supported License Type.|
-|applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|The applicable iOS Device Type.|
-|vppTokenOrganizationName|String|The organization associated with the Apple Volume Purchase Program Token|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
-|vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
-|bundleId|String|The Identity Name.|
-|vppTokenId|String|Identifier of the VPP token associated with this app.|
-|revokeLicenseActionResults|[iosVppAppRevokeLicensesActionResult](../resources/intune-apps-iosvppapprevokelicensesactionresult.md) collection|Results of revoke license actions on this app.|
-
-
+| Property                   | Type                                                                                                              | Description                                                                                                                                                                                                                    |
+| :------------------------- | :---------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                         | String                                                                                                            | Key of the entity. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                         |
+| displayName                | String                                                                                                            | The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                           |
+| description                | String                                                                                                            | The description of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                |
+| publisher                  | String                                                                                                            | The publisher of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                  |
+| largeIcon                  | [mimeContent](../resources/intune-shared-mimecontent.md)                                                          | The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                        |
+| createdDateTime            | DateTimeOffset                                                                                                    | The date and time the app was created. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                     |
+| lastModifiedDateTime       | DateTimeOffset                                                                                                    | The date and time the app was last modified. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                               |
+| isFeatured                 | Boolean                                                                                                           | The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                   |
+| privacyInformationUrl      | String                                                                                                            | The privacy statement Url. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                 |
+| informationUrl             | String                                                                                                            | The more information Url. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                  |
+| owner                      | String                                                                                                            | The owner of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                      |
+| developer                  | String                                                                                                            | The developer of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                  |
+| notes                      | String                                                                                                            | Notes for the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                         |
+| uploadState                | Int32                                                                                                             | The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                     |
+| publishingState            | [mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)                                  | The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`. |
+| isAssigned                 | Boolean                                                                                                           | The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                    |
+| roleScopeTagIds            | String collection                                                                                                 | List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                 |
+| dependentAppCount          | Int32                                                                                                             | The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                        |
+| supersedingAppCount        | Int32                                                                                                             | The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                       |
+| supersededAppCount         | Int32                                                                                                             | The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                 |
+| usedLicenseCount           | Int32                                                                                                             | The number of VPP licenses in use.                                                                                                                                                                                             |
+| totalLicenseCount          | Int32                                                                                                             | The total number of VPP licenses.                                                                                                                                                                                              |
+| releaseDateTime            | DateTimeOffset                                                                                                    | The VPP application release date and time.                                                                                                                                                                                     |
+| appStoreUrl                | String                                                                                                            | The store URL.                                                                                                                                                                                                                 |
+| licensingType              | [vppLicensingType](../resources/intune-apps-vpplicensingtype.md)                                                  | The supported License Type.                                                                                                                                                                                                    |
+| applicableDeviceType       | [iosDeviceType](../resources/intune-apps-iosdevicetype.md)                                                        | The applicable iOS Device Type.                                                                                                                                                                                                |
+| vppTokenOrganizationName   | String                                                                                                            | The organization associated with the Apple Volume Purchase Program Token                                                                                                                                                       |
+| vppTokenAccountType        | [vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)                                          | The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.                        |
+| vppTokenAppleId            | String                                                                                                            | The Apple Id associated with the given Apple Volume Purchase Program Token.                                                                                                                                                    |
+| bundleId                   | String                                                                                                            | The Identity Name.                                                                                                                                                                                                             |
+| vppTokenId                 | String                                                                                                            | Identifier of the VPP token associated with this app.                                                                                                                                                                          |
+| revokeLicenseActionResults | [iosVppAppRevokeLicensesActionResult](../resources/intune-apps-iosvppapprevokelicensesactionresult.md) collection | Results of revoke license actions on this app.                                                                                                                                                                                 |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosVppApp](../resources/intune-apps-iosvppapp.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
 Content-length: 2056
@@ -159,8 +165,10 @@ Content-length: 2056
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 2228
@@ -230,9 +238,3 @@ Content-Length: 2228
   ]
 }
 ```
-
-
-
-
-
-

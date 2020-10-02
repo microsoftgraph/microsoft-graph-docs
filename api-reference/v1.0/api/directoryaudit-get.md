@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get directoryAudit"
 description: "Describes the get method of the directoryAudit resource (entity) from the Microsoft Graph API."
 localization_priority: Normal
@@ -17,15 +17,16 @@ Get a specific Azure Active Directory audit log item. This includes an audit log
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
-|Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | AuditLog.Read.All and Directory.Read.All    |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | AuditLog.Read.All                           |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /auditLogs/directoryAudits/{id}
 ```
@@ -36,9 +37,9 @@ This method supports OData query parameters to help customize the response. For 
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {code}|
+| Name          | Description   |
+| :------------ | :------------ |
+| Authorization | Bearer {code} |
 
 ## Request body
 
@@ -55,6 +56,7 @@ If successful, this method returns a `200 OK` response code and [directoryAudit]
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_directoryaudit"
@@ -63,29 +65,34 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
 Here is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -146,6 +153,7 @@ Content-length: 218
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get directoryAudits",
@@ -155,4 +163,3 @@ Content-length: 218
   "suppressions": [
   ]
 }-->
-

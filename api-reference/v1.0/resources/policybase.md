@@ -1,4 +1,4 @@
----
+﻿---
 title: "policyBase resource type"
 description: "Represents an abstract base type for policy types to inherit from."
 localization_priority: Normal
@@ -19,11 +19,11 @@ None
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|id|String| Unique identifier for this policy. Read-only.|
-|description|String| Description for this policy.|
-|displayName|String| Display name for this policy. |
+| Property    | Type   | Description                                   |
+| :---------- | :----- | :-------------------------------------------- |
+| id          | String | Unique identifier for this policy. Read-only. |
+| description | String | Description for this policy.                  |
+| displayName | String | Display name for this policy.                 |
 
 ## Relationships
 
@@ -53,6 +53,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "policyBase resource",

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get windowsDomainJoinConfiguration"
 description: "Read properties and relationships of the windowsDomainJoinConfiguration object."
 author: "dougeby"
@@ -21,35 +21,39 @@ Read properties and relationships of the [windowsDomainJoinConfiguration](../res
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)||
-| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-| &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application||
-| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-| &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| Permission type                        | Permissions (from most to least privileged)                                         |
+| :------------------------------------- | :---------------------------------------------------------------------------------- |
+| Delegated (work or school account)     |                                                                                     |
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **Enrollment**           | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                      |
+| Application                            |                                                                                     |
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **Enrollment**           | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 
 ## HTTP Request
+
 **Device configuration**
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 **Enrollment**
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile/domainJoinConfiguration
 ```
 
@@ -59,10 +63,10 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 ## Request headers
 
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
 
@@ -78,7 +82,7 @@ If successful, this method returns a `200 OK` response code and [windowsDomainJo
 
 Here is an example of the request.
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
@@ -86,7 +90,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. Properties returned from an actual call depend on the context.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 560
@@ -106,15 +110,3 @@ Content-Length: 560
   }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

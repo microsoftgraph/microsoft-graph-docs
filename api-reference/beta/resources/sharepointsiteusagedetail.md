@@ -1,4 +1,4 @@
----
+﻿---
 title: "sharePointSiteUsageDetail resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 | Property                | Type    |
 | :---------------------- | :------ |
 | reportRefreshDate       | Date    |
-| siteId                  | Guid  |
+| siteId                  | Guid    |
 | siteUrl                 | String  |
 | ownerDisplayName        | String  |
 | ownerPrincipalName      | String  |
@@ -59,5 +59,3 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
-
-

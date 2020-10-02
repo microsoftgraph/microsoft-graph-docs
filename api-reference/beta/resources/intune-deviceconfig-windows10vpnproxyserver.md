@@ -1,4 +1,4 @@
----
+﻿---
 title: "windows10VpnProxyServer resource type"
 description: "VPN Proxy Server."
 author: "dougeby"
@@ -17,28 +17,32 @@ Namespace: microsoft.graph
 
 VPN Proxy Server.
 
-
 Inherits from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url. Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|address|String|Address. Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|port|Int32|Port. Valid values 0 to 65535 Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|bypassProxyServerForLocalAddress|Boolean|Bypass proxy server for local address.|
+
+| Property                         | Type    | Description                                                                                                                     |
+| :------------------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------ |
+| automaticConfigurationScriptUrl  | String  | Proxy's automatic configuration script url. Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md) |
+| address                          | String  | Address. Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)                                    |
+| port                             | Int32   | Port. Valid values 0 to 65535 Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)               |
+| bypassProxyServerForLocalAddress | Boolean | Bypass proxy server for local address.                                                                                          |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windows10VpnProxyServer"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windows10VpnProxyServer",
   "automaticConfigurationScriptUrl": "String",
@@ -47,9 +51,3 @@ Here is a JSON representation of the resource.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
-
-
-
-
-

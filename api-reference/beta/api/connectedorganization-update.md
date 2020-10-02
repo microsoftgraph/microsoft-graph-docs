@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update a connectedOrganization object"
 description: "Update a connectedOrganization object."
 author: "markwahl-msft"
@@ -16,13 +16,14 @@ Namespace: microsoft.graph
 Update a [connectedOrganization](../resources/connectedorganization.md) object to change one or more of its properties.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -30,26 +31,29 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the [connectedOrganization](../resources/connectedorganization.md) object.
 
 The following table shows the properties that are required when you update the [connectedOrganization](../resources/connectedorganization.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-| displayName  |String | The connected organization name.  |
-| description  |String | The connected organization description. |
-| state        |connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
+| Property    | Type                       | Description                                                                                                                                                                                                            |
+| :---------- | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName | String                     | The connected organization name.                                                                                                                                                                                       |
+| description | String                     | The connected organization description.                                                                                                                                                                                |
+| state       | connectedOrganizationState | The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`. |
 
 ## Response
 
@@ -60,12 +64,14 @@ If successful, this method returns a `204 Accepted` response code and a [connect
 ### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_connectedorganization"
 }
 -->
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 Content-Type: application/json
 Content-length: 100
@@ -76,31 +82,36 @@ Content-length: 100
   "state":"configured"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-connectedorganization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-connectedorganization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-connectedorganization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.connectedOrganization"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 204 Accepted
 Content-type: application/json
 
@@ -123,5 +134,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "positionDetail resource type"
 description: "positionDetail resource type"
 localization_priority: Normal
@@ -17,15 +17,15 @@ Represents information about positions related to entities within a user's [prof
 
 ## Properties
 
-| Property       | Type                             | Description                                            |
-|:---------------|:---------------------------------|:-------------------------------------------------------|
-|company         |[companyDetail](companydetail.md) | Detail about the company or employer.                  |
-|description     |String                            | Description of the position in question.               |
-|endMonthYear    |Date                              | When the position ended.                               |
-|jobTitle        |String                            | The title held when in that position.                  |
-|role            |String                            | The role the position entailed.                        |
-|startMonthYear  |Date                              | The start month and year of the position.              |
-|summary         |String                            |Short summary of the position.                          |
+| Property       | Type                              | Description                               |
+| :------------- | :-------------------------------- | :---------------------------------------- |
+| company        | [companyDetail](companydetail.md) | Detail about the company or employer.     |
+| description    | String                            | Description of the position in question.  |
+| endMonthYear   | Date                              | When the position ended.                  |
+| jobTitle       | String                            | The title held when in that position.     |
+| role           | String                            | The role the position entailed.           |
+| startMonthYear | Date                              | The start month and year of the position. |
+| summary        | String                            | Short summary of the position.            |
 
 ## JSON representation
 
@@ -54,6 +54,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "positionDetail resource",
@@ -61,4 +62,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "intendedPurpose enum type"
 description: "PFX Import Options."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 PFX Import Options.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unassigned|1|Unassigned|
-|smimeEncryption|2|SmimeEncryption|
-|smimeSigning|3|SmimeSigning|
-|vpn|4|VPN|
-|wifi|5|Wifi|
 
-
-
-
-
-
+| Member          | Value | Description     |
+| :-------------- | :---- | :-------------- |
+| unassigned      | 1     | Unassigned      |
+| smimeEncryption | 2     | SmimeEncryption |
+| smimeSigning    | 3     | SmimeSigning    |
+| vpn             | 4     | VPN             |
+| wifi            | 5     | Wifi            |

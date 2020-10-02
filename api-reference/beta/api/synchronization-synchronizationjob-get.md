@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get synchronizationJob"
 description: "Retrieve the existing synchronization job and its properties."
 localization_priority: Normal
@@ -16,25 +16,28 @@ Namespace: microsoft.graph
 Retrieve the existing synchronization job and its properties.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported.  |
-|Application                            |Not supported. | 
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Directory.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
 
 ## Request headers
 
-| Name           | Type    | Description|
-|:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
 
@@ -47,32 +50,39 @@ If successful, returns a `200 OK` response with a [synchronizationJob](../resour
 ## Example
 
 ##### Request
+
 The following is an example of a request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationjob"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationjob-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationjob-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationjob-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 The following is an example of a response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -82,6 +92,7 @@ The following is an example of a response.
   "truncated": true,
   "@odata.type": "microsoft.graph.synchronizationJob"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -131,6 +142,7 @@ Content-length: 2577
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -142,5 +154,3 @@ Content-length: 2577
   ]
 }
 -->
-
-

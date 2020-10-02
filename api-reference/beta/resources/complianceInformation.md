@@ -1,4 +1,4 @@
----
+﻿---
 title: " complianceInformation resource type"
 description: "This resource contains compliance data associated with secure score control."
 localization_priority: Normal
@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 Contains compliance data associated with secure score control.
 
-|Property |Type |Description |
-|:--|:--|:--|
-|certificationName | string | Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
-|certificationControls | [certificationControl](certificationcontrol.md) collection | Collection of the certification controls associated with certification |
+| Property              | Type                                                       | Description                                                                              |
+| :-------------------- | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
+| certificationName     | string                                                     | Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
+| certificationControls | [certificationControl](certificationcontrol.md) collection | Collection of the certification controls associated with certification                   |
 
 ## JSON representation
 
@@ -38,7 +38,6 @@ The following is a JSON representation of the resource.
 
 ```
 
-
 <!-- {
   "type": "#page.annotation",
   "description": "complianceInformation resource",
@@ -46,5 +45,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

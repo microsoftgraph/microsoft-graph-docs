@@ -1,4 +1,4 @@
----
+﻿---
 title: "userIdentity type"
 description: "Represents an Azure AD user identity for a reviewer of an access review."
 localization_priority: Normal
@@ -24,12 +24,12 @@ None.  You would include objects of this type in the body of a request when [cre
 
 ## Properties
 
-| Property | Type | Description|
-|:---------------|:--------|:----------|
-| `displayName` | `String` | The identity's display name. Note that this may not always be available or up-to-date.    |
-| `id`          | `String` | Unique identifier for the identity.  |
-| `ipAddress`| `String`| Indicates the client IP address used by user performing the activity (audit log only).|
-| `userPrincipalName`|`String` | The userPrincipalName attribute of the user. |
+| Property            | Type     | Description                                                                            |
+| :------------------ | :------- | :------------------------------------------------------------------------------------- |
+| `displayName`       | `String` | The identity's display name. Note that this may not always be available or up-to-date. |
+| `id`                | `String` | Unique identifier for the identity.                                                    |
+| `ipAddress`         | `String` | Indicates the client IP address used by user performing the activity (audit log only). |
+| `userPrincipalName` | `String` | The userPrincipalName attribute of the user.                                           |
 
 ## Remarks
 
@@ -43,7 +43,7 @@ None.
 ## See also
 
 | Method                                                                | Return Type                                | Description                             |
-|:----------------------------------------------------------------------|:-------------------------------------------|:----------------------------------------|
+| :-------------------------------------------------------------------- | :----------------------------------------- | :-------------------------------------- |
 | [Get accessReview reviewers](../api/accessreview-listreviewers.md)    | [userIdentity](useridentity.md) collection | Get the reviewers of an accessReview.   |
 | [Add accessReview reviewer](../api/accessreview-addreviewer.md)       | None.                                      | Add a reviewer to an accessReview.      |
 | [Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None.                                      | Remove a reviewer from an accessReview. |
@@ -80,5 +80,3 @@ Here is a JSON representation of the type.
   "suppressions": []
 }
 -->
-
-

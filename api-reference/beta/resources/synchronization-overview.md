@@ -1,4 +1,4 @@
----
+﻿---
 title: "Azure AD synchronization API overview"
 description: "Automate the provisioning of identities from HR systems, Active Directory, and Azure Active Directory to cloud applications."
 localization_priority: Normal
@@ -70,6 +70,7 @@ The following example shows how to find service principal object by display name
 **Request**
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 ```
@@ -77,6 +78,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayN
 **Response**
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 HTTP/1.1 200 OK
 {
@@ -100,13 +102,17 @@ HTTP/1.1 200 OK
 The following example shows how to find the service principal object by app ID.
 
 **Request**
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
 **Response**
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 HTTP/1.1 200 OK
 {
@@ -125,14 +131,18 @@ HTTP/1.1 200 OK
 The following example shows you how to list existing synchronization jobs.
 
 **Request**
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
 **Response**
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 HTTP/1.1 200 OK
 {
@@ -152,10 +162,13 @@ HTTP/1.1 200 OK
 ```
 
 ### Get synchronization job status
+
 The following example shows you how to get the status of a synchronization job.
 
 **Request**
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}
 
@@ -163,7 +176,9 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 ```
 
 **Response**
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
     HTTP/1.1 200 OK
     {
@@ -179,16 +194,21 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 ```
 
 ### Get synchronization schema
+
 The following example shows you how to get the synchronization schema.
 
 **Request**
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
 **Response**
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 HTTP/1.1 200 OK
 {
@@ -196,12 +216,8 @@ HTTP/1.1 200 OK
     "synchronizationRules": []
 }
 ```
+
 ## See also
 
 * [Configure synchronization with directory extension attributes](../resources/synchronization-configure-with-directory-extension-attributes.md)
 * [Configure synchronization with custom target attributes](../resources/synchronization-configure-with-custom-target-attributes.md)
-
-
-
-
-

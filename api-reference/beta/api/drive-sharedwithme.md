@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Retrieve a collection of DriveItem resources that have been shared with the owner of the Drive."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # List items shared with the signed-in user
 
 Namespace: microsoft.graph
@@ -19,38 +20,41 @@ Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that h
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                              |
+| :------------------------------------- | :----------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read.All, Files.ReadWrite.All                                      |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 **Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.
 Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.
 
 ## HTTP request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
 ```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/shared-with-me-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/shared-with-me-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/shared-with-me-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Response
 
@@ -105,6 +109,7 @@ To access the shared DriveItem resource, you will need to make a request using t
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
+
 By default, **sharedWithMe** returns items shared within your own tenant. To include items shared from external tenants, append `?allowexternal=true` to the GET request.
 
 <!--
@@ -118,5 +123,3 @@ By default, **sharedWithMe** returns items shared within your own tenant. To inc
   ]
 }
 -->
-
-

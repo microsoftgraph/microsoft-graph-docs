@@ -1,4 +1,4 @@
----
+﻿---
 title: "wiFiAuthenticationMethod enum type"
 description: "Wi-Fi authentication method."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Wi-Fi authentication method.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|certificate|0|Use an identity certificate for authentication.|
-|usernameAndPassword|1|Use username and password for authentication.|
-|derivedCredential|2|Use Derived Credential for authentication.|
 
-
-
-
-
-
+| Member              | Value | Description                                     |
+| :------------------ | :---- | :---------------------------------------------- |
+| certificate         | 0     | Use an identity certificate for authentication. |
+| usernameAndPassword | 1     | Use username and password for authentication.   |
+| derivedCredential   | 2     | Use Derived Credential for authentication.      |

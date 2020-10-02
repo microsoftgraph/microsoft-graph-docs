@@ -1,4 +1,4 @@
----
+﻿---
 title: "certificateRevocationStatus enum type"
 description: "Certificate Revocation Status."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Certificate Revocation Status.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Not revoked.|
-|pending|1|Revocation pending.|
-|issued|2|Revocation command issued.|
-|failed|3|Revocation failed.|
-|revoked|4|Revoked.|
 
-
-
-
-
-
+| Member  | Value | Description                |
+| :------ | :---- | :------------------------- |
+| none    | 0     | Not revoked.               |
+| pending | 1     | Revocation pending.        |
+| issued  | 2     | Revocation command issued. |
+| failed  | 3     | Revocation failed.         |
+| revoked | 4     | Revoked.                   |

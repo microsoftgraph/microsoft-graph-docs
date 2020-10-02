@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create unifiedRoleAssignment"
 description: "Create a new unifiedRoleAssignment object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) obje
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | RoleManagement.ReadWrite.Directory          |
 
 ## HTTP request
 
@@ -35,8 +35,8 @@ POST /roleManagement/directory/roleAssignments
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -55,8 +55,8 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 The following is an example of the request. Note the use of the roleTemplateId for roleDefinitionId. roleDefinitionId can be either the service-wide template Id or the directory-specific roleDefinitionId.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignment_from_rbacapplication"
@@ -73,20 +73,23 @@ Content-type: application/json
     "directoryScopeId": "/"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment-from-rbacapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-from-rbacapplication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -119,8 +122,8 @@ Content-type: application/json
 
 The following example assigns a principal User Admin role over an administrative unit.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignment_over_administrativeunit"
@@ -137,20 +140,23 @@ Content-type: application/json
     "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment-over-administrativeunit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment-over-administrativeunit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-over-administrativeunit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -179,6 +185,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create unifiedRoleAssignment",
@@ -186,5 +193,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

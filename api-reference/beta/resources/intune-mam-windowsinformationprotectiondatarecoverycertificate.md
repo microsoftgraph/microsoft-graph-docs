@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsInformationProtectionDataRecoveryCertificate resource type"
 description: "Windows Information Protection DataRecoveryCertificate"
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 Windows Information Protection DataRecoveryCertificate
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|subjectName|String|Data recovery Certificate subject name|
-|description|String|Data recovery Certificate description|
-|expirationDateTime|DateTimeOffset|Data recovery Certificate expiration datetime|
-|certificate|Binary|Data recovery Certificate|
+
+| Property           | Type           | Description                                   |
+| :----------------- | :------------- | :-------------------------------------------- |
+| subjectName        | String         | Data recovery Certificate subject name        |
+| description        | String         | Data recovery Certificate description         |
+| expirationDateTime | DateTimeOffset | Data recovery Certificate expiration datetime |
+| certificate        | Binary         | Data recovery Certificate                     |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionDataRecoveryCertificate"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate",
   "subjectName": "String",
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   "certificate": "binary"
 }
 ```
-
-
-
-
-
-

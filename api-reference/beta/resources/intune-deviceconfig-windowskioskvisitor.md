@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskVisitor resource type"
 description: "The class used to identify a visitor kiosk account"
 author: "dougeby"
@@ -17,31 +17,29 @@ Namespace: microsoft.graph
 
 The class used to identify a visitor kiosk account
 
-
 Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskVisitor"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskVisitor"
 }
 ```
-
-
-
-
-
-

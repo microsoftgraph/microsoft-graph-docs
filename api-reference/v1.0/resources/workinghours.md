@@ -1,4 +1,4 @@
----
+﻿---
 title: "workingHours resource type"
 description: "Represents the days of the week and hours in a specific time zone that the user works."
 localization_priority: Normal
@@ -23,14 +23,14 @@ to the destination time zone so that Outlook time values are displayed in local 
 When other people request work meetings with you in your usual place of work, they can still respect your working hours in the 
 appropriate time zone.
 
-
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-| daysOfWeek | dayOfWeek collection | The days of the week on which the user works. |
-| startTime | Edm.TimeOfDay | The time of the day that the user starts working. |
-| endTime | Edm.TimeOfDay | The time of the day that the user stops working. |
-| timeZone | [timeZoneBase](timezonebase.md) | The time zone to which the working hours apply. |
+
+| Property   | Type                            | Description                                       |
+| :--------- | :------------------------------ | :------------------------------------------------ |
+| daysOfWeek | dayOfWeek collection            | The days of the week on which the user works.     |
+| startTime  | Edm.TimeOfDay                   | The time of the day that the user starts working. |
+| endTime    | Edm.TimeOfDay                   | The time of the day that the user stops working.  |
+| timeZone   | [timeZoneBase](timezonebase.md) | The time zone to which the working hours apply.   |
 
 ## JSON representation
 
@@ -56,6 +56,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "workingHours resource",
@@ -67,4 +68,3 @@ Here is a JSON representation of the resource.
   ],
   "tocPath": ""
 }-->
-

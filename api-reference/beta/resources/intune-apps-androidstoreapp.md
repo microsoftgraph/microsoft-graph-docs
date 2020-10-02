@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidStoreApp resource type"
 description: "Contains properties and inherited properties for Android store apps."
 author: "dougeby"
@@ -17,65 +17,70 @@ Namespace: microsoft.graph
 
 Contains properties and inherited properties for Android store apps.
 
-
 Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List androidStoreApps](../api/intune-apps-androidstoreapp-list.md)|[androidStoreApp](../resources/intune-apps-androidstoreapp.md) collection|List properties and relationships of the [androidStoreApp](../resources/intune-apps-androidstoreapp.md) objects.|
-|[Get androidStoreApp](../api/intune-apps-androidstoreapp-get.md)|[androidStoreApp](../resources/intune-apps-androidstoreapp.md)|Read properties and relationships of the [androidStoreApp](../resources/intune-apps-androidstoreapp.md) object.|
-|[Create androidStoreApp](../api/intune-apps-androidstoreapp-create.md)|[androidStoreApp](../resources/intune-apps-androidstoreapp.md)|Create a new [androidStoreApp](../resources/intune-apps-androidstoreapp.md) object.|
-|[Delete androidStoreApp](../api/intune-apps-androidstoreapp-delete.md)|None|Deletes a [androidStoreApp](../resources/intune-apps-androidstoreapp.md).|
-|[Update androidStoreApp](../api/intune-apps-androidstoreapp-update.md)|[androidStoreApp](../resources/intune-apps-androidstoreapp.md)|Update the properties of a [androidStoreApp](../resources/intune-apps-androidstoreapp.md) object.|
+
+| Method                                                                 | Return Type                                                               | Description                                                                                                      |
+| :--------------------------------------------------------------------- | :------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------- |
+| [List androidStoreApps](../api/intune-apps-androidstoreapp-list.md)    | [androidStoreApp](../resources/intune-apps-androidstoreapp.md) collection | List properties and relationships of the [androidStoreApp](../resources/intune-apps-androidstoreapp.md) objects. |
+| [Get androidStoreApp](../api/intune-apps-androidstoreapp-get.md)       | [androidStoreApp](../resources/intune-apps-androidstoreapp.md)            | Read properties and relationships of the [androidStoreApp](../resources/intune-apps-androidstoreapp.md) object.  |
+| [Create androidStoreApp](../api/intune-apps-androidstoreapp-create.md) | [androidStoreApp](../resources/intune-apps-androidstoreapp.md)            | Create a new [androidStoreApp](../resources/intune-apps-androidstoreapp.md) object.                              |
+| [Delete androidStoreApp](../api/intune-apps-androidstoreapp-delete.md) | None                                                                      | Deletes a [androidStoreApp](../resources/intune-apps-androidstoreapp.md).                                        |
+| [Update androidStoreApp](../api/intune-apps-androidstoreapp-update.md) | [androidStoreApp](../resources/intune-apps-androidstoreapp.md)            | Update the properties of a [androidStoreApp](../resources/intune-apps-androidstoreapp.md) object.                |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|String|The description of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publisher|String|The publisher of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|privacyInformationUrl|String|The privacy statement Url. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|informationUrl|String|The more information Url. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
-|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|packageId|String|The package identifier.|
-|appIdentifier|String|The Identity Name.|
-|appStoreUrl|String|The Android app store URL.|
-|minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+
+| Property                        | Type                                                                                       | Description                                                                                                                                                                                                                    |
+| :------------------------------ | :----------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                              | String                                                                                     | Key of the entity. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                         |
+| displayName                     | String                                                                                     | The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                           |
+| description                     | String                                                                                     | The description of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                |
+| publisher                       | String                                                                                     | The publisher of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                  |
+| largeIcon                       | [mimeContent](../resources/intune-shared-mimecontent.md)                                   | The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                        |
+| createdDateTime                 | DateTimeOffset                                                                             | The date and time the app was created. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                     |
+| lastModifiedDateTime            | DateTimeOffset                                                                             | The date and time the app was last modified. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                               |
+| isFeatured                      | Boolean                                                                                    | The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                   |
+| privacyInformationUrl           | String                                                                                     | The privacy statement Url. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                 |
+| informationUrl                  | String                                                                                     | The more information Url. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                  |
+| owner                           | String                                                                                     | The owner of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                      |
+| developer                       | String                                                                                     | The developer of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                  |
+| notes                           | String                                                                                     | Notes for the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                                         |
+| uploadState                     | Int32                                                                                      | The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                     |
+| publishingState                 | [mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)           | The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`. |
+| isAssigned                      | Boolean                                                                                    | The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                    |
+| roleScopeTagIds                 | String collection                                                                          | List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                                 |
+| dependentAppCount               | Int32                                                                                      | The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                                        |
+| supersedingAppCount             | Int32                                                                                      | The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                       |
+| supersededAppCount              | Int32                                                                                      | The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                                                                                 |
+| packageId                       | String                                                                                     | The package identifier.                                                                                                                                                                                                        |
+| appIdentifier                   | String                                                                                     | The Identity Name.                                                                                                                                                                                                             |
+| appStoreUrl                     | String                                                                                     | The Android app store URL.                                                                                                                                                                                                     |
+| minimumSupportedOperatingSystem | [androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md) | The value for the minimum applicable operating system.                                                                                                                                                                         |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|categories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection|The list of categories for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|assignments|[mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection|The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|The set of direct relationships for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+
+| Relationship   | Type                                                                                    | Description                                                                                                              |
+| :------------- | :-------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| categories     | [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) collection           | The list of categories for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                 |
+| assignments    | [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) collection       | The list of group assignments for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)   |
+| installSummary | [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)          | Mobile App Install Summary. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)                          |
+| deviceStatuses | [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection | The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md) |
+| userStatuses   | [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection     | The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md) |
+| relationships  | [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection   | The set of direct relationships for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)        |
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidStoreApp"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.androidStoreApp",
   "id": "String (identifier)",
@@ -126,9 +131,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

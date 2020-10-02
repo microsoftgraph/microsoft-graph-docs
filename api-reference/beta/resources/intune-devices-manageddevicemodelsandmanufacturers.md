@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedDeviceModelsAndManufacturers resource type"
 description: "Models and Manufactures meatadata for managed devices in the account"
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 Models and Manufactures meatadata for managed devices in the account
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceModels|String collection|List of Models for managed devices in the account|
-|deviceManufacturers|String collection|List of Manufactures for managed devices in the account|
+
+| Property            | Type              | Description                                             |
+| :------------------ | :---------------- | :------------------------------------------------------ |
+| deviceModels        | String collection | List of Models for managed devices in the account       |
+| deviceManufacturers | String collection | List of Manufactures for managed devices in the account |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedDeviceModelsAndManufacturers"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.managedDeviceModelsAndManufacturers",
   "deviceModels": [
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

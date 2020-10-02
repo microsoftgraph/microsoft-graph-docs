@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: mentionAction resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
+
 # mentionAction resource type
 
 Namespace: microsoft.graph
@@ -19,9 +20,9 @@ The **MentionAction** resource provides information about an [activity][] that m
 
 ## Properties
 
-| Property name | Type                       | Description
-|:--------------|:---------------------------|:-----------------------------
-| mentionees    | [identitySet][] collection | The identities of the users mentioned in this action.
+| Property name | Type                       | Description                                           |
+| :------------ | :------------------------- | :---------------------------------------------------- |
+| mentionees    | [identitySet][] collection | The identities of the users mentioned in this action. |
 
 [identitySet]: identityset.md
 
@@ -49,4 +50,3 @@ The **MentionAction** resource provides information about an [activity][] that m
   "suppressions": []
 }
 -->
-

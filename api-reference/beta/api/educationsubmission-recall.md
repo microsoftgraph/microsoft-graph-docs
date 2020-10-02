@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationSubmission: recall"
 description: "Indicates that a student wants to take back a submission. This action can only be done by a student. "
 author: "dipakboyed"
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/recall
 ```
@@ -75,6 +76,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -85,5 +87,3 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "inkAccessSetting enum type"
 description: "Values for the InkWorkspaceAccess setting."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Values for the InkWorkspaceAccess setting.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured.|
-|enabled|1|Enabled.|
-|disabled|2|Disabled.|
 
-
-
-
-
-
+| Member        | Value | Description     |
+| :------------ | :---- | :-------------- |
+| notConfigured | 0     | Not configured. |
+| enabled       | 1     | Enabled.        |
+| disabled      | 2     | Disabled.       |

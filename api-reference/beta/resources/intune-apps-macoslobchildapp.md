@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOSLobChildApp resource type"
 description: "Contains properties the MacOS LOB App in a bundle package"
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 Contains properties the MacOS LOB App in a bundle package
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|bundleId|String|The Identity Name.|
-|buildNumber|String|The build number of MacOS Line of Business (LoB) app.|
-|versionNumber|String|The version number of MacOS Line of Business (LoB) app.|
+
+| Property      | Type   | Description                                             |
+| :------------ | :----- | :------------------------------------------------------ |
+| bundleId      | String | The Identity Name.                                      |
+| buildNumber   | String | The build number of MacOS Line of Business (LoB) app.   |
+| versionNumber | String | The version number of MacOS Line of Business (LoB) app. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOSLobChildApp"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.macOSLobChildApp",
   "bundleId": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "versionNumber": "String"
 }
 ```
-
-
-
-
-
-

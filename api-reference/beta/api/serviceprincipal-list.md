@@ -1,4 +1,4 @@
----
+﻿---
 title: "List servicePrincipals"
 description: "Retrieve a list of servicePrincipal objects."
 localization_priority: Priority
@@ -19,15 +19,16 @@ Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:--------------------|:---------------------------------------------------------|
-| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | Application.ReadWrite.All, Directory.Read.All |
+| Permission type                        | Permissions (from least to most privileged)                             |
+| :------------------------------------- | :---------------------------------------------------------------------- |
+| Delegated (work or school account)     | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                          |
+| Application                            | Application.ReadWrite.All, Directory.Read.All                           |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /servicePrincipals
 ```
@@ -38,9 +39,9 @@ This method supports the [OData query parameters](/graph/query_parameters) to he
 
 ## Request headers
 
-| Name | Description |
-|:---- |:----------- |
-| Authorization | Bearer {token}. Required. |
+| Name             | Description                                                                                                                                                                                                       |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization    | Bearer {token}. Required.                                                                                                                                                                                         |
 | ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
@@ -57,8 +58,8 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_serviceprincipal"
@@ -67,20 +68,23 @@ If successful, this method returns a `200 OK` response code and collection of [s
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/serviceprincipals
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-serviceprincipal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-serviceprincipal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -117,30 +121,34 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_count_only"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/$count
 ConsistencyLevel: eventual
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -152,13 +160,13 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.servicePrincipal",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
 ```
 
 893
-
 
 ### Example 3: Use $filter and $top to get one service principal with a display name that starts with 'a' including a count of returned objects
 
@@ -170,6 +178,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_a_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
 ConsistencyLevel: eventual
@@ -186,6 +195,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.servicePrincipal",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -211,30 +221,34 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_team_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals?$search="displayName:Team"&$count=true
 ConsistencyLevel: eventual
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-team-count-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-team-count-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-team-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -247,6 +261,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.servicePrincipal",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -265,8 +280,10 @@ Content-type: application/json
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -278,5 +295,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

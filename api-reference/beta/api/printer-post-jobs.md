@@ -1,4 +1,4 @@
----
+﻿---
 title: Create printJob
 description: Create a new printJob for a printer. 
 author: braedenp-msft
@@ -16,15 +16,16 @@ Namespace: microsoft.graph
 Create a new [printJob](../resources/printJob.md) for a [printer](../resources/printer.md). 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application| Not Supported. |
+| Permission type                        | Permissions (from least to most privileged)                                                      |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not Supported.                                                                                   |
+| Application                            | Not Supported.                                                                                   |
 
 ## HTTP request
 
@@ -33,41 +34,53 @@ POST print/printers/{id}/jobs
 ```
 
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of a [printJob](../resources/printjob.md) object, including one [printDocument](../resources/printDocument.md) object. The job and document IDs are set automatically during resource creation.
 
 Right now, Universal Print supports only one **printDocument** per **printJob** object.
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [printJob](../resources/printjob.md) object and associated [printDocument](../resources/printDocument.md) in the response body. 
+
 ## Example
+
 ##### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_printjob"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -76,6 +89,7 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.printJob"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

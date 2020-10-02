@@ -1,4 +1,4 @@
----
+﻿---
 title: "retireScheduledManagedDevice resource type"
 description: "ManagedDevices that are scheduled for retire"
 author: "dougeby"
@@ -18,31 +18,36 @@ Namespace: microsoft.graph
 ManagedDevices that are scheduled for retire
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|managedDeviceId|String|Managed DeviceId|
-|managedDeviceName|String|Managed Device Name|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Managed Device Device Type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `blackberry`, `palm`, `unknown`.|
-|complianceState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Managed Device ComplianceStatus. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|retireAfterDateTime|DateTimeOffset|Managed Device Retire After DateTime|
-|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Managed Device ManagementAgentType. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
-|ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Managed Device ManagedDeviceOwnerType. Possible values are: `unknown`, `company`, `personal`.|
-|deviceCompliancePolicyName|String|Device Compliance Policy Name|
-|deviceCompliancePolicyId|String|Device Compliance PolicyId|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+
+| Property                   | Type                                                                           | Description                                                                                                                                                                                                                                                                                                                                      |
+| :------------------------- | :----------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                         | String                                                                         | Key of the entity.                                                                                                                                                                                                                                                                                                                               |
+| managedDeviceId            | String                                                                         | Managed DeviceId                                                                                                                                                                                                                                                                                                                                 |
+| managedDeviceName          | String                                                                         | Managed Device Name                                                                                                                                                                                                                                                                                                                              |
+| deviceType                 | [deviceType](../resources/intune-shared-devicetype.md)                         | Managed Device Device Type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `blackberry`, `palm`, `unknown`. |
+| complianceState            | [complianceStatus](../resources/intune-shared-compliancestatus.md)             | Managed Device ComplianceStatus. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.                                                                                                                                                                                 |
+| retireAfterDateTime        | DateTimeOffset                                                                 | Managed Device Retire After DateTime                                                                                                                                                                                                                                                                                                             |
+| managementAgent            | [managementAgentType](../resources/intune-shared-managementagenttype.md)       | Managed Device ManagementAgentType. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.            |
+| ownerType                  | [managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md) | Managed Device ManagedDeviceOwnerType. Possible values are: `unknown`, `company`, `personal`.                                                                                                                                                                                                                                                    |
+| deviceCompliancePolicyName | String                                                                         | Device Compliance Policy Name                                                                                                                                                                                                                                                                                                                    |
+| deviceCompliancePolicyId   | String                                                                         | Device Compliance PolicyId                                                                                                                                                                                                                                                                                                                       |
+| roleScopeTagIds            | String collection                                                              | List of Scope Tags for this Entity instance.                                                                                                                                                                                                                                                                                                     |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.retireScheduledManagedDevice"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.retireScheduledManagedDevice",
   "id": "String (identifier)",
@@ -60,9 +65,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType enum type"
 description: "Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not Configured|
-|administrators|1|Administrators|
-|administratorsAndPowerUsers|2|Administrators and Power Users|
-|administratorsAndInteractiveUsers|3|Administrators and Interactive Users |
 
-
-
-
-
-
+| Member                            | Value | Description                          |
+| :-------------------------------- | :---- | :----------------------------------- |
+| notConfigured                     | 0     | Not Configured                       |
+| administrators                    | 1     | Administrators                       |
+| administratorsAndPowerUsers       | 2     | Administrators and Power Users       |
+| administratorsAndInteractiveUsers | 3     | Administrators and Interactive Users |

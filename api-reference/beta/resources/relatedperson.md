@@ -1,4 +1,4 @@
----
+﻿---
 title: "relatedPerson resource type"
 description: "relatedPerson resource type"
 localization_priority: Normal
@@ -17,11 +17,11 @@ Represents information about people related to information within a given entity
 
 ## Properties
 
-| Property        | Type        | Description                                                                                                                                                                                                                                     |
-|:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|displayName      |String       | Name of the person.                                                                                                                                                                                                                             |
-|relationship     |String       | Possible values are: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`.|
-|userPrincipalName|String       | Email address or reference to person within organization.                                                                                                                                                                                       |
+| Property          | Type   | Description                                                                                                                                                                                                                                      |
+| :---------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName       | String | Name of the person.                                                                                                                                                                                                                              |
+| relationship      | String | Possible values are: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`. |
+| userPrincipalName | String | Email address or reference to person within organization.                                                                                                                                                                                        |
 
 ## JSON representation
 
@@ -46,6 +46,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "relatedPerson resource",
@@ -53,5 +54,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

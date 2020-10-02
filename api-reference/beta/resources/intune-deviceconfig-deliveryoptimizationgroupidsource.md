@@ -1,4 +1,4 @@
----
+﻿---
 title: "deliveryOptimizationGroupIdSource resource type"
 description: "GroupId Support Types"
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 GroupId Support Types
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deliveryOptimizationGroupIdSource"
 }
 ```
-
-
-
-
-
-

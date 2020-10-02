@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create deviceConfigurationGroupAssignment"
 description: "Create a new deviceConfigurationGroupAssignment object."
 author: "dougeby"
@@ -18,20 +18,23 @@ Namespace: microsoft.graph
 Create a new [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate/groupAssignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/groupAssignments
@@ -45,32 +48,35 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the deviceConfigurationGroupAssignment object.
 
 The following table shows the properties that are required when you create the deviceConfigurationGroupAssignment.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|targetGroupId|String|The Id of the AAD group we are targeting the device configuration to.|
-|excludeGroup|Boolean|Indicates if this group is should be excluded. Defaults that the group should be included|
-
-
+| Property      | Type    | Description                                                                               |
+| :------------ | :------ | :---------------------------------------------------------------------------------------- |
+| id            | String  | Key of the entity.                                                                        |
+| targetGroupId | String  | The Id of the AAD group we are targeting the device configuration to.                     |
+| excludeGroup  | Boolean | Indicates if this group is should be excluded. Defaults that the group should be included |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments
 Content-type: application/json
 Content-length: 146
@@ -83,8 +89,10 @@ Content-length: 146
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 195
@@ -96,9 +104,3 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
-
-
-
-
-

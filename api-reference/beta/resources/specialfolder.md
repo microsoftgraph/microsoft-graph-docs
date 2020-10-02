@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The SpecialFolder resource groups special folder-related data items into a single structure."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # SpecialFolder resource type
 
 Namespace: microsoft.graph
@@ -35,6 +36,7 @@ If a user deletes one, it is recreated when written to again.
   ],
   "@odata.type": "microsoft.graph.specialFolder"
 }-->
+
 ```json
 {
   "name": "string"
@@ -43,16 +45,16 @@ If a user deletes one, it is recreated when written to again.
 
 ## Properties
 
-| Property  | Type   | Description                                                            |
-|:----------|:-------|:-----------------------------------------------------------------------|
-| name      | string | The unique identifier for this item in the `/drive/special` collection |
+| Property | Type   | Description                                                            |
+| :------- | :----- | :--------------------------------------------------------------------- |
+| name     | string | The unique identifier for this item in the `/drive/special` collection |
 
 ## Special folders
 
 Here are the special folders available in OneDrive Personal and OneDrive for Business.
 
 | Name        | Folder id    | Description                                                              |
-|:------------|:-------------|:-------------------------------------------------------------------------|
+| :---------- | :----------- | :----------------------------------------------------------------------- |
 | App Root    | `approot`    | The application's personal folder. Usually in `/Apps/{Application Name}` |
 | Camera Roll | `cameraroll` | The Camera Roll Backup folder. Not available in OneDrive for Business.   |
 | Documents   | `documents`  | The Documents folder.                                                    |
@@ -63,9 +65,9 @@ Here are the special folders available in OneDrive Personal and OneDrive for Bus
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -76,5 +78,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
-
-

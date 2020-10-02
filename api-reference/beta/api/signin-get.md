@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get signIn"
 doc_type: apiPageType
 description: "Get a signIn object that contains all sign-ins for an Azure Active Directory tenant."
@@ -19,17 +19,18 @@ Get a [signIn](../resources/signin.md) object that contains a specific user sign
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All | 
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | AuditLog.Read.All, Directory.Read.All       |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | AuditLog.Read.All, Directory.Read.All       |
 
 In addition, apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /auditLogs/signIns/{id}
 ```
@@ -40,8 +41,8 @@ This method supports OData query parameters to help customize the response. For 
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -60,24 +61,29 @@ If successful, this method returns a `200 OK` response code and a [signIn](../re
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_signin_1"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,7 +98,6 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.signIn"
 } -->
-
 
 ```http
 HTTP/1.1 200 OK
@@ -212,29 +217,33 @@ Content-length: 211
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_signin_2"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

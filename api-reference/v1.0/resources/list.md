@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
@@ -24,15 +24,15 @@ You can, however, create or update [list items][listItem].
 
 All examples below are relative to a site, eg: `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 
-| Common task               | HTTP method
-|:--------------------------|:------------------------------
-| [Get list][]              | GET /lists/{list-id}
-| [Create list][]           | POST /lists
-| [Enumerate list items][]  | GET /lists/{list-id}/items
-| [Update list item][]      | PATCH /lists/{list-id}/items/{item-id}
-| [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
-| [Create list item][]      | POST /lists/{list-id}
-| [Get WebSocket channel][] | GET /lists/{list-id}/subscriptions/socketIo
+| Common task               | HTTP method                                 |
+| :------------------------ | :------------------------------------------ |
+| [Get list][]              | GET /lists/{list-id}                        |
+| [Create list][]           | POST /lists                                 |
+| [Enumerate list items][]  | GET /lists/{list-id}/items                  |
+| [Update list item][]      | PATCH /lists/{list-id}/items/{item-id}      |
+| [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}     |
+| [Create list item][]      | POST /lists/{list-id}                       |
+| [Get WebSocket channel][] | GET /lists/{list-id}/subscriptions/socketIo |
 
 [Get list]: ../api/list-get.md
 [Create list]: ../api/list-create.md
@@ -91,39 +91,39 @@ Here is a JSON representation of a **list** resource.
 
 The **list** resource has the following properties.
 
-| Property name    | Type                             | Description
-|:-----------------|:---------------------------------|:---------------------------
-| **displayName**  | string                           | The displayable title of the list.
-| **list**         | [listInfo][]                     | Provides additional details about the list.
-| **system**       | [systemFacet][]                  | If present, indicates that this is a system-managed list. Read-only.
+| Property name   | Type            | Description                                                          |
+| :-------------- | :-------------- | :------------------------------------------------------------------- |
+| **displayName** | string          | The displayable title of the list.                                   |
+| **list**        | [listInfo][]    | Provides additional details about the list.                          |
+| **system**      | [systemFacet][] | If present, indicates that this is a system-managed list. Read-only. |
 
 The following properties are inherited from **[baseItem][]**.
 
-| Property name            | Type              | Description
-|:-------------------------|:------------------|:------------------------------
-| **id**                   | string            | The unique identifier of the item. Read-only.
-| **name**                 | string            | The name of the item.
-| **createdBy**            | [identitySet][]   | Identity of the creator of this item. Read-only.
-| **createdDateTime**      | DateTimeOffset    | The date and time the item was created. Read-only.
-| **description**          | string            | The descriptive text for the item.
-| **eTag**                 | string            | ETag for the item. Read-only.                                                          |
-| **lastModifiedBy**       | [identitySet][]   | Identity of the last modifier of this item. Read-only.
-| **lastModifiedDateTime** | DateTimeOffset    | The date and time the item was last modified. Read-only.
-| **parentReference**      | [itemReference][] | Parent information, if the item has a parent. Read-write.
-| **sharepointIds**        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-| **webUrl**               | string (url)      | URL that displays the item in the browser. Read-only.
+| Property name            | Type              | Description                                                              |
+| :----------------------- | :---------------- | :----------------------------------------------------------------------- |
+| **id**                   | string            | The unique identifier of the item. Read-only.                            |
+| **name**                 | string            | The name of the item.                                                    |
+| **createdBy**            | [identitySet][]   | Identity of the creator of this item. Read-only.                         |
+| **createdDateTime**      | DateTimeOffset    | The date and time the item was created. Read-only.                       |
+| **description**          | string            | The descriptive text for the item.                                       |
+| **eTag**                 | string            | ETag for the item. Read-only.                                            |
+| **lastModifiedBy**       | [identitySet][]   | Identity of the last modifier of this item. Read-only.                   |
+| **lastModifiedDateTime** | DateTimeOffset    | The date and time the item was last modified. Read-only.                 |
+| **parentReference**      | [itemReference][] | Parent information, if the item has a parent. Read-write.                |
+| **sharepointIds**        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only. |
+| **webUrl**               | string (url)      | URL that displays the item in the browser. Read-only.                    |
 
 ## Relationships
 
 The **list** resource has the following relationships to other resources.
 
-| Relationship name | Type                             | Description
-|:------------------|:---------------------------------|:----------------------
-| **drive**         | [drive][]                        | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
-| **items**         | Collection([listItem][])         | All items contained in the list.
-| **columns**       | Collection([columnDefinition][]) | The collection of field definitions for this list.
-| **contentTypes**  | Collection([contentType][])      | The collection of content types present in this list.
-| **subscriptions** | Collection([subscription][])     | The set of subscriptions on the list.
+| Relationship name | Type                             | Description                                                                                                         |
+| :---------------- | :------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
+| **drive**         | [drive][]                        | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem]. |
+| **items**         | Collection([listItem][])         | All items contained in the list.                                                                                    |
+| **columns**       | Collection([columnDefinition][]) | The collection of field definitions for this list.                                                                  |
+| **contentTypes**  | Collection([contentType][])      | The collection of content types present in this list.                                                               |
+| **subscriptions** | Collection([subscription][])     | The set of subscriptions on the list.                                                                               |
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -149,4 +149,3 @@ The **list** resource has the following relationships to other resources.
     "Lists": "#"
   }
 } -->
-

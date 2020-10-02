@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete unifiedRoleDefinition"
 description: "Delete a unifiedRoleDefinition object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | RoleManagement.ReadWrite.Directory          |
 
 ## HTTP request
 
@@ -36,8 +36,8 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -55,6 +55,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_unifiedroledefinition"
@@ -63,20 +64,23 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/f189965f-f560-4c59-9101-933d4c87a91a
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-unifiedroledefinition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-unifiedroledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -93,6 +97,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Delete unifiedRoleDefinition",
@@ -100,5 +105,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

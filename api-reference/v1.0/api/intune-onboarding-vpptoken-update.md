@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update vppToken"
 description: "Update the properties of a vppToken object."
 author: "dougeby"
@@ -16,59 +16,65 @@ Namespace: microsoft.graph
 Update the properties of a [vppToken](../resources/intune-onboarding-vpptoken.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementServiceConfig.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [vppToken](../resources/intune-onboarding-vpptoken.md) object.
 
 The following table shows the properties that are required when you create the [vppToken](../resources/intune-onboarding-vpptoken.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|This is automatically generated when the appleVolumePurchaseProgramToken is created. It is the Key of the entity.|
-|organizationName|String|The organization associated with the Apple Volume Purchase Program Token|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
-|appleId|String|The apple Id associated with the given Apple Volume Purchase Program Token.|
-|expirationDateTime|DateTimeOffset|The expiration date time of the Apple Volume Purchase Program Token.|
-|lastSyncDateTime|DateTimeOffset|The last time when an application sync was done with the Apple volume purchase program service using the Apple Volume Purchase Program Token.|
-|token|String|The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.|
-|lastModifiedDateTime|DateTimeOffset|Last modification date time associated with the Apple Volume Purchase Program Token.|
-|state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Possible values are: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
-|lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
-|automaticallyUpdateApps|Boolean|Whether or not apps for the VPP token will be automatically updated.|
-|countryOrRegion|String|Whether or not apps for the VPP token will be automatically updated.|
-
-
+| Property                | Type                                                                       | Description                                                                                                                                                                                                                                             |
+| :---------------------- | :------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                      | String                                                                     | This is automatically generated when the appleVolumePurchaseProgramToken is created. It is the Key of the entity.                                                                                                                                       |
+| organizationName        | String                                                                     | The organization associated with the Apple Volume Purchase Program Token                                                                                                                                                                                |
+| vppTokenAccountType     | [vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)   | The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.                                                 |
+| appleId                 | String                                                                     | The apple Id associated with the given Apple Volume Purchase Program Token.                                                                                                                                                                             |
+| expirationDateTime      | DateTimeOffset                                                             | The expiration date time of the Apple Volume Purchase Program Token.                                                                                                                                                                                    |
+| lastSyncDateTime        | DateTimeOffset                                                             | The last time when an application sync was done with the Apple volume purchase program service using the Apple Volume Purchase Program Token.                                                                                                           |
+| token                   | String                                                                     | The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.                                                                                                                                                       |
+| lastModifiedDateTime    | DateTimeOffset                                                             | Last modification date time associated with the Apple Volume Purchase Program Token.                                                                                                                                                                    |
+| state                   | [vppTokenState](../resources/intune-onboarding-vpptokenstate.md)           | Current state of the Apple Volume Purchase Program Token. Possible values are: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Possible values are: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.               |
+| lastSyncStatus          | [vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md) | Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`. Possible values are: `none`, `inProgress`, `completed`, `failed`. |
+| automaticallyUpdateApps | Boolean                                                                    | Whether or not apps for the VPP token will be automatically updated.                                                                                                                                                                                    |
+| countryOrRegion         | String                                                                     | Whether or not apps for the VPP token will be automatically updated.                                                                                                                                                                                    |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [vppToken](../resources/intune-onboarding-vpptoken.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenId}
 Content-type: application/json
 Content-length: 461
@@ -89,8 +95,10 @@ Content-length: 461
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 574
@@ -111,12 +119,3 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
-
-
-
-
-
-
-
-
-

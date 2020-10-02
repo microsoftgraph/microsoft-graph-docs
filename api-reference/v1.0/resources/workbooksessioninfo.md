@@ -1,4 +1,4 @@
----
+﻿---
 title: "workbookSessionInfo resource type"
 description: "Provides information about workbook session."
 author: "lumine2008"
@@ -12,7 +12,6 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Provides information about workbook session.
-
 
 ## JSON representation
 
@@ -33,9 +32,7 @@ Here is a JSON representation of the resource
 
 ## Properties
 
-| Property | Type  | Description                               |
-|:---------|:------|:------------------------------------------|
-| id  | string | Id of the workbook session. |
-| persistChanges | boolean |  `true` for persistent session. `false` for non-persistent session (view mode) |
-
-
+| Property       | Type    | Description                                                                   |
+| :------------- | :------ | :---------------------------------------------------------------------------- |
+| id             | string  | Id of the workbook session.                                                   |
+| persistChanges | boolean | `true` for persistent session. `false` for non-persistent session (view mode) |

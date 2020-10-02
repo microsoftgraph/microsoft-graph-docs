@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get namedLocation"
 description: "Retrieve the properties and relationships of a namedlocation object."
 localization_priority: Normal
@@ -18,10 +18,10 @@ Retrieve the properties and relationships of a [namedLocation](../resources/name
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.Read.All                             |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Policy.Read.All                             |
 
 ## HTTP request
 
@@ -37,8 +37,8 @@ This method supports the `select` OData query parameter to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -55,8 +55,8 @@ If successful, this method returns a `200 OK` response code and the requested [n
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_namedlocation"
@@ -65,24 +65,28 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-namedlocation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-namedlocation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-namedlocation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-namedlocation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -123,6 +127,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get namedLocation",
@@ -130,4 +135,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

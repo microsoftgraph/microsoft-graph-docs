@@ -1,4 +1,4 @@
----
+﻿---
 title: "List alerts"
 description: "Retrieve a list of alert objects."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Retrieve a list of [alert](../resources/alert.md) objects.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)           |
+| :------------------------------------- | :---------------------------------------------------- |
+| Delegated (work or school account)     | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                        |
+| Application                            | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## HTTP request
 
@@ -50,15 +50,15 @@ This method supports the following [OData query parameters](/graph/query-paramet
 
 The following table lists the `$filter` keywords by each vendor name.
 
-| Vendor name      |$filter keyword|
-|:----------|:----------|
-| Azure Advanced Threat Protection | Azure Advanced Threat Protection | 
-| Azure Security Center | ASC |
-| Microsoft Cloud App Security | MCAS |
-| Azure Active Directory Identity Protection | IPC |
-| Azure Sentinel | Azure Sentinel |
-| Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP |
-| Office 365 |  Not currently supported. |
+| Vendor name                                   | $filter keyword                  |
+| :-------------------------------------------- | :------------------------------- |
+| Azure Advanced Threat Protection              | Azure Advanced Threat Protection |
+| Azure Security Center                         | ASC                              |
+| Microsoft Cloud App Security                  | MCAS                             |
+| Azure Active Directory Identity Protection    | IPC                              |
+| Azure Sentinel                                | Azure Sentinel                   |
+| Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP           |
+| Office 365                                    | Not currently supported.         |
 
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
@@ -66,9 +66,9 @@ To return an alternative property set, use the OData `$select` query parameter t
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {code}. Required.|
+| Name          | Description              |
+| :------------ | :----------------------- |
+| Authorization | Bearer {code}. Required. |
 
 ## Request body
 
@@ -85,6 +85,7 @@ If successful, this method returns a `200 OK` response code and collection of **
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_alerts"
@@ -93,26 +94,30 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/alerts
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alerts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-alerts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alerts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -140,6 +145,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -151,5 +157,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

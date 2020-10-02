@@ -1,4 +1,4 @@
----
+﻿---
 title: "conditionalAccessSessionControl resource type"
 description: "Session control base type."
 localization_priority: Normal
@@ -17,9 +17,9 @@ Session control base type.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Specifies whether the session control is enabled. |
+| Property  | Type    | Description                                       |
+| :-------- | :------ | :------------------------------------------------ |
+| isEnabled | Boolean | Specifies whether the session control is enabled. |
 
 ## Relationships
 
@@ -46,6 +46,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "conditionalAccessSessionControl resource",
@@ -53,4 +54,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

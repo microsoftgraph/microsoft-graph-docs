@@ -1,4 +1,4 @@
----
+﻿---
 title: "administratorConfiguredDeviceComplianceState enum type"
 description: "Administrator configured device compliance state Enum"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Administrator configured device compliance state Enum
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|basedOnDeviceCompliancePolicy|0|Set compliance state based on other compliance polices|
-|nonCompliant|1|Set compliance to nonCompliant|
 
-
-
-
-
-
+| Member                        | Value | Description                                            |
+| :---------------------------- | :---- | :----------------------------------------------------- |
+| basedOnDeviceCompliancePolicy | 0     | Set compliance state based on other compliance polices |
+| nonCompliant                  | 1     | Set compliance to nonCompliant                         |

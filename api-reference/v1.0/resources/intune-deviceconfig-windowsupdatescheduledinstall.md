@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsUpdateScheduledInstall resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -15,38 +15,33 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-
 Inherits from [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Scheduled Install Day in week. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|scheduledInstallTime|TimeOfDay|Scheduled Install Time during day|
+
+| Property             | Type                                                                 | Description                                                                                                                                                  |
+| :------------------- | :------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| scheduledInstallDay  | [weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md) | Scheduled Install Day in week. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. |
+| scheduledInstallTime | TimeOfDay                                                            | Scheduled Install Time during day                                                                                                                            |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsUpdateScheduledInstall",
   "scheduledInstallDay": "String",
   "scheduledInstallTime": "String (time of day)"
 }
 ```
-
-
-
-
-
-
-
-
-

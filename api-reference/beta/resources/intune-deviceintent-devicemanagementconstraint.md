@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementConstraint resource type"
 description: "Base entity for a constraint"
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 Base entity for a constraint
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementConstraint"
 }
 ```
-
-
-
-
-
-

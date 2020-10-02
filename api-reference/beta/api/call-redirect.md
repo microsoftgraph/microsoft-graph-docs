@@ -1,4 +1,4 @@
----
+﻿---
 title: "call: redirect"
 description: "Redirect an incoming call."
 author: "ananmishr"
@@ -21,11 +21,11 @@ The bot is expected to redirect the call before the call times out. The current 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)         |
-| :-------------- | :-------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported                |
-| Delegated (personal Microsoft account) | Not Supported                |
-| Application     | Calls.Initiate.All                                  |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not Supported                               |
+| Delegated (personal Microsoft account) | Not Supported                               |
+| Application                            | Calls.Initiate.All                          |
 
 ## HTTP request
 
@@ -35,31 +35,34 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/redirect
 POST /communications/calls/{id}/redirect
 ```
+
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter      | Type    |Description|
-|:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If more than one target is specified, it's a simulring call. This means that all of the targets will be rang at the same time and only the first target that picks up will be connected. We support up to 25 targets for simulring.
-|targetDisposition|String|(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`. This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.|
-|timeout|Int32|The timeout (in seconds) for the redirect operation. The range of the timeout value is between 15 and 90 seconds inclusive. The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change). |
-|maskCallee|Boolean|Indicates whether the callee is to be hidden from the caller. If true, then the callee identity is the bot identity. Default: false.|
-|maskCaller|Boolean|Indicates whether the caller is to be hidden from the callee. If true, then the caller identity is the bot identity. Default: false.|
-|callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.|
+| Parameter         | Type                                                                              | Description                                                                                                                                                                                                                                                                            |
+| :---------------- | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| targets           | [invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection | The target participants of the redirect operation. If more than one target is specified, it's a simulring call. This means that all of the targets will be rang at the same time and only the first target that picks up will be connected. We support up to 25 targets for simulring. |
+| targetDisposition | String                                                                            | (Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`. This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.                                                      |
+| timeout           | Int32                                                                             | The timeout (in seconds) for the redirect operation. The range of the timeout value is between 15 and 90 seconds inclusive. The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).                                            |
+| maskCallee        | Boolean                                                                           | Indicates whether the callee is to be hidden from the caller. If true, then the callee identity is the bot identity. Default: false.                                                                                                                                                   |
+| maskCaller        | Boolean                                                                           | Indicates whether the caller is to be hidden from the callee. If true, then the caller identity is the bot identity. Default: false.                                                                                                                                                   |
+| callbackUri       | String                                                                            | This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.                                                                  |
 
 ## Response
+
 If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
+
 These examples will cover a workflow of an incoming call notification and how that call will be redirected.
 
 > **Note:** The response objects shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -67,11 +70,13 @@ These examples will cover a workflow of an incoming call notification and how th
 ### Example 1: Forward a Call to a Target
 
 ##### Notification - incoming
+
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
@@ -121,11 +126,13 @@ These examples will cover a workflow of an incoming call notification and how th
 ##### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request", 
   "name": "call-redirect"
 } -->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
 Content-Type: application/json
 
@@ -146,15 +153,19 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -166,16 +177,19 @@ Content-Type: application/json
   "blockType": "response", 
   "@odata.type": "microsoft.graph.None"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
+
 ##### Notification - terminated
 
 <!-- {
   "blockType": "example", 
   "name": "call-redirect"
 } -->
-``` http
+
+```http
 POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
 Content-Type: application/json
 ```
@@ -184,7 +198,8 @@ Content-Type: application/json
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
 } -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
@@ -239,7 +254,8 @@ Content-Type: application/json
   "blockType": "example", 
   "name": "call-redirect"
 } -->
-``` http
+
+```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
 ```
@@ -248,7 +264,8 @@ Content-Type: application/json
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
@@ -302,7 +319,7 @@ Content-Type: application/json
   "name": "call-redirect-simuring"
 } -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/communications/calls/481f0b00-ffff-4ca1-8c67-a5f1e31e8e82/redirect
 Content-Type: application/json
 
@@ -345,7 +362,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.None"
 } -->
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 
@@ -356,7 +373,7 @@ HTTP/1.1 202 Accepted
   "@odata.type": "microsoft.graph.commsNotifications"
 } -->
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
 Content-Type: application/json
 
@@ -408,6 +425,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -419,5 +437,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

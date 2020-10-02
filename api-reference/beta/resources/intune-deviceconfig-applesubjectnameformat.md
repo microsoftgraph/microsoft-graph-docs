@@ -1,4 +1,4 @@
----
+﻿---
 title: "appleSubjectNameFormat enum type"
 description: "Subject Name Format Options for Apple devices."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Subject Name Format Options for Apple devices.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|commonName|0|Common name.|
-|commonNameAsEmail|1|Common name as email.|
-|custom|2|Custom subject name format.|
-|commonNameIncludingEmail|3|Common Name Including Email.|
-|commonNameAsIMEI|5|Common Name As IMEI.|
-|commonNameAsSerialNumber|6|Common Name As Serial Number.|
 
-
-
-
-
-
+| Member                   | Value | Description                   |
+| :----------------------- | :---- | :---------------------------- |
+| commonName               | 0     | Common name.                  |
+| commonNameAsEmail        | 1     | Common name as email.         |
+| custom                   | 2     | Custom subject name format.   |
+| commonNameIncludingEmail | 3     | Common Name Including Email.  |
+| commonNameAsIMEI         | 5     | Common Name As IMEI.          |
+| commonNameAsSerialNumber | 6     | Common Name As Serial Number. |

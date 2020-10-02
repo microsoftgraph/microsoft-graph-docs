@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The FileSystemInfo resource contains properties that are reported by the device's local file system for the local version of an item."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # FileSystemInfo facet
 
 Namespace: microsoft.graph
@@ -76,5 +77,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
-
-

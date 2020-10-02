@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete certificateBasedAuthConfiguration"
 description: "Delete certificateBasedAuthConfiguration."
 localization_priority: Normal
@@ -18,10 +18,10 @@ Delete a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthCo
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Organization.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application    | Organization.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Organization.ReadWrite.All                  |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Organization.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -33,8 +33,8 @@ DELETE /organization/{id}/certificateBasedAuthConfiguration/{id}
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -52,6 +52,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_certificatebasedauthconfiguration"
@@ -60,24 +61,28 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfiguration/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-certificatebasedauthconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-certificatebasedauthconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-certificatebasedauthconfiguration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/delete-certificatebasedauthconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -94,6 +99,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Delete certificateBasedAuthConfiguration",
@@ -101,4 +107,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

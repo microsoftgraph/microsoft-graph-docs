@@ -1,4 +1,4 @@
----
+﻿---
 title: "informationProtectionLabel: listLabels"
 description: "Retrieve a list of information protection labels."
 localization_priority: Normal
@@ -28,13 +28,16 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 To get labels available to the signed-in user or specified user:
+
 ```http
 GET /me/informationProtection/policy/labels
 GET /users/{id | user-principal-name}/informationProtection/policy/labels
 ```
 
 To get labels available to the organization:
+
 ```http
 GET /informationProtection/policy/labels
 ```
@@ -65,6 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_labels"
@@ -73,20 +77,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-labels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-labels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-labels-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -142,6 +149,7 @@ User-agent: ContosoLOBApp/1.0
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List labels",
@@ -149,5 +157,3 @@ User-agent: ContosoLOBApp/1.0
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

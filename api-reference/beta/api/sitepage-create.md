@@ -1,4 +1,4 @@
----
+﻿---
 author: rahmit
 description: "Create a new sitePage in the site pages list in a site."
 ms.date: 05/07/2018
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Create a page in the site pages list of a site
 
 Namespace: microsoft.graph
@@ -19,11 +20,11 @@ Create a new [sitePage][] in the site pages [list][] in a [site][].
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.ReadWrite.All                         |
 
 ## HTTP request
 
@@ -41,8 +42,8 @@ In the request body, supply a JSON representation of the [sitePage][] resource t
 
 The following example shows how to create a new page.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```json
@@ -97,16 +98,18 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Response
 
@@ -208,5 +211,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

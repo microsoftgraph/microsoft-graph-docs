@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create workPosition"
 description: "Use this API to create a new workPosition."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Use this API to create a new [workPosition](../resources/workposition.md) in a u
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,10 +36,10 @@ POST /users/{id | userPrincipalName}/profile/positions
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -47,16 +47,16 @@ In the request body, supply a JSON representation of [workPosition](../resources
 
 The following table shows the properties that are possible to set when you create a new [workPosition](../resources/workPosition.md) object in a user's [profile](../resources/profile.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|String collection|Categories that the user has associated with this position.|
-|colleagues|[relatedPerson](../resources/relatedperson.md) collection|Colleagues that are associated with this position.|
-|detail|[positionDetail](../resources/positiondetail.md)|Contains detailed information about the position. |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|isCurrent|Boolean|Denotes whether or not the position is current.|
-|manager|[relatedPerson](../resources/relatedperson.md)|Contains detail of the user's manager in this position.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+| Property         | Type                                                      | Description                                                                                                                                                                                                                                                                    |
+| :--------------- | :-------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences | String                                                    | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| categories       | String collection                                         | Categories that the user has associated with this position.                                                                                                                                                                                                                    |
+| colleagues       | [relatedPerson](../resources/relatedperson.md) collection | Colleagues that are associated with this position.                                                                                                                                                                                                                             |
+| detail           | [positionDetail](../resources/positiondetail.md)          | Contains detailed information about the position.                                                                                                                                                                                                                              |
+| inference        | [inferenceData](../resources/inferencedata.md)            | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| isCurrent        | Boolean                                                   | Denotes whether or not the position is current.                                                                                                                                                                                                                                |
+| manager          | [relatedPerson](../resources/relatedperson.md)            | Contains detail of the user's manager in this position.                                                                                                                                                                                                                        |
+| source           | [personDataSource](../resources/persondatasource.md)      | Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                                                             |
 
 ## Response
 
@@ -69,6 +69,7 @@ If successful, this method returns `201, Created` response code and a new [workP
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_workposition_from_profile"
@@ -99,20 +100,23 @@ Content-type: application/json
   "isCurrent": true
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-workposition-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-workposition-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-workposition-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -183,5 +187,3 @@ Content-type: application/json
   "isCurrent": true
 }
 ```
-
-

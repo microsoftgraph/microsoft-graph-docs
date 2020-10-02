@@ -1,4 +1,4 @@
----
+﻿---
 title: "aggregationOption resource type"
 description: "Specifies the aggregationOption entity"
 localization_priority: Normal
@@ -17,11 +17,11 @@ Specifies which aggregations should be returned alongside the search results.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|field|String|Specifies the field in the schema of the specified entity type that aggregation should be computed on. Required.|
-|size|Int32|The number of [searchBucket](searchBucket.md) resources to be returned. This is not required when the range is provided manually in the search request. Optional.|
-|bucketDefinition|[bucketAggregationDefinition](bucketaggregationdefinition.md)|Specifies the criteria to compute an aggregation. Optional.|
+| Property         | Type                                                          | Description                                                                                                                                                       |
+| :--------------- | :------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| field            | String                                                        | Specifies the field in the schema of the specified entity type that aggregation should be computed on. Required.                                                  |
+| size             | Int32                                                         | The number of [searchBucket](searchBucket.md) resources to be returned. This is not required when the range is provided manually in the search request. Optional. |
+| bucketDefinition | [bucketAggregationDefinition](bucketaggregationdefinition.md) | Specifies the criteria to compute an aggregation. Optional.                                                                                                       |
 
 ## JSON representation
 
@@ -46,6 +46,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "sortProperty resource",

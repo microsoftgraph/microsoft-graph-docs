@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: itemActionStat resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # itemActionStat resource type
 
 Namespace: microsoft.graph
@@ -15,10 +16,10 @@ The **itemActionStat** resource provides aggregate details about an action over 
 
 ## Properties
 
-| Property    | Type  | Description
-|:------------|:------|:-------------------------------------------------------
-| actionCount | Int32 | The number of times the action took place. Read-only.
-| actorCount  | Int32 | The number of distinct actors that performed the action. Read-only.
+| Property    | Type  | Description                                                         |
+| :---------- | :---- | :------------------------------------------------------------------ |
+| actionCount | Int32 | The number of times the action took place. Read-only.               |
+| actorCount  | Int32 | The number of distinct actors that performed the action. Read-only. |
 
 ## JSON representation
 
@@ -45,4 +46,3 @@ The **itemActionStat** resource provides aggregate details about an action over 
   "suppressions": []
 }
 -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get governanceRoleAssignmentRequest"
 description: "Get a governanceRoleAssignmentRequest. "
 localization_priority: Normal
@@ -16,54 +16,68 @@ Namespace: microsoft.graph
 Get a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.Read.AzureResources |
+| Permission type                        | Permissions                               |
+| :------------------------------------- | :---------------------------------------- |
+| Delegated (work or school account)     | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported.                            |
+| Application                            | PrivilegedAccess.Read.AzureResources      |
 
 Besides the permission scope, it requires the requestor 
 *   to have at least one role assignment on the resource; or
 *   is the subject of the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {code}|
+
+| Name          | Description   |
+| :------------ | :------------ |
+| Authorization | Bearer {code} |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object in the response body.
 
 ## Example
+
 Get a role assignment request
+
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequest"
 }-->
+
 ##### Request
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/e68ff888-4af5-4ccb-8b74-39156090344b
 ```
+
 ##### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.governanceRoleAssignmentRequest"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -89,9 +103,9 @@ Content-length: 279
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -102,5 +116,3 @@ Content-length: 279
   "suppressions": []
 }
 -->
-
-

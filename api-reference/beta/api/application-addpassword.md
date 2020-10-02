@@ -1,4 +1,4 @@
----
+﻿---
 title: "application: addPassword"
 description: "Add a strong password to an application."
 localization_priority: Normal
@@ -19,10 +19,10 @@ Adds a strong password to an [application](../resources/application.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Application.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                       |
+| :------------------------------------- | :-------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegated (personal Microsoft account) | Application.ReadWrite.All                                                         |
 | Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
@@ -35,20 +35,20 @@ POST /applications/{id}/addPassword
 
 ## Request headers
 
-| Name           | Description                |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide an optional `passwordCredential` object with the following properties.
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-| displayName | String | Friendly name for the password. Optional. |
-| endDateTime | DateTimeOffset | The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional. The default value is "startDateTime + 2 years". |
-| startDateTime | DateTimeOffset | The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional. The default value is "now".|
+| Property      | Type           | Description                                                                                                                                                                                                                                                                                    |
+| :------------ | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName   | String         | Friendly name for the password. Optional.                                                                                                                                                                                                                                                      |
+| endDateTime   | DateTimeOffset | The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional. The default value is "startDateTime + 2 years".                                |
+| startDateTime | DateTimeOffset | The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional. The default value is "now". |
 
 ## Response
 
@@ -63,6 +63,7 @@ The following example shows how to call this API.
 The following is an example of the request. The **id** that is specified in the request is the value of the **id** property of the application, not the value of the **appId** property. 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "application_addpassword"
@@ -78,20 +79,23 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-addpassword-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/application-addpassword-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/application-addpassword-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -120,6 +124,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "application: addPassword",
@@ -127,5 +132,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

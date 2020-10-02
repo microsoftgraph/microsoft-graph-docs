@@ -1,4 +1,4 @@
----
+﻿---
 title: "Publish teamsapp"
 description: "Publish an app to the Microsoft Teams apps catalog. "
 author: "nkramer"
@@ -21,22 +21,24 @@ One of the following permissions is required to call this API. To learn more, in
 
 >**Note:** Only global administrators can call this API.
 
-| Permission Type                        | Permissions (from least to most privileged)|
-|:----------------------------------     |:-------------|
+| Permission Type                        | Permissions (from least to most privileged)       |
+| :------------------------------------- | :------------------------------------------------ |
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported|
-| Application                            | Not supported. |
+| Delegated (personal Microsoft account) | Not supported                                     |
+| Application                            | Not supported.                                    |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /appCatalogs/teamsApps
 ```
 
 ## Request headers
 
-| Header        | Value           |
-|:--------------|:--------------  |
+| Header        | Value                      |
+| :------------ | :------------------------- |
 | Authorization | Bearer {token}. Required.  |
 | Content-Type  | application/zip. Required. |
 

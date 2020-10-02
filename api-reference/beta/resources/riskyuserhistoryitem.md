@@ -1,4 +1,4 @@
----
+﻿---
 title: "riskyUserHistoryItem resource type"
 description: "Represents the risk history of Azure AD users"
 author: "cloudhandler"
@@ -16,18 +16,17 @@ Represents the risk history of an Azure AD user as determined by Azure AD Identi
 
 ## Methods
 
-| Method   | Return Type|Description|
-|:---------------|:--------|:----------|
-|[List history](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Get the risk history of an Azure AD user.|
-
+| Method                                           | Return Type                                                | Description                               |
+| :----------------------------------------------- | :--------------------------------------------------------- | :---------------------------------------- |
+| [List history](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection | Get the risk history of an Azure AD user. |
 
 ## Properties
 
-| Property       | Type    | Description |
-|:---------------|:--------|:------------|
-| userId         | string  | The id of the user. |
-| initiatedBy    | bool    | The id of actor that does the operation. |
-| activity       | [riskUserActivity](riskuseractivity.md)| The activity related to user risk level change. | 
+| Property    | Type                                    | Description                                     |
+| :---------- | :-------------------------------------- | :---------------------------------------------- |
+| userId      | string                                  | The id of the user.                             |
+| initiatedBy | bool                                    | The id of actor that does the operation.        |
+| activity    | [riskUserActivity](riskuseractivity.md) | The activity related to user risk level change. |
 
 ## JSON representation
 
@@ -46,7 +45,6 @@ Represents the risk history of an Azure AD user as determined by Azure AD Identi
 }
 ```
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -59,5 +57,3 @@ Represents the risk history of an Azure AD user as determined by Azure AD Identi
   ]
 }
 -->
-
-

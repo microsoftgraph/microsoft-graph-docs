@@ -1,4 +1,4 @@
----
+﻿---
 title: "teleconferenceDeviceVideoQuality resource type"
 description: "Represents video teleconferencing device video quality data."
 localization_priority: Normal
@@ -17,18 +17,18 @@ Represents video teleconferencing device video quality data.
 
 The **teleconferenceDeviceVideoQuality** resource inherits the properties from [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md), and includes the following additional properties.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|averageInboundBitRate|Double|The average inbound stream video bit rate per second.|
-|averageInboundFrameRate|Double|The average inbound stream video frame rate per second.|
-|averageOutboundBitRate|Double|The average outbound stream video bit rate per second.|
-|averageOutboundFrameRate|Double|The average outbound stream video frame rate per second.|
+| Property                 | Type   | Description                                              |
+| :----------------------- | :----- | :------------------------------------------------------- |
+| averageInboundBitRate    | Double | The average inbound stream video bit rate per second.    |
+| averageInboundFrameRate  | Double | The average inbound stream video frame rate per second.  |
+| averageOutboundBitRate   | Double | The average outbound stream video bit rate per second.   |
+| averageOutboundFrameRate | Double | The average outbound stream video frame rate per second. |
 
 ### Derived types
 
-| Type                                                 | Description                                                         |
-|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | Video teleconferencing device screen-sharing quality data. |
+| Type                                                                                    | Description                                                |
+| :-------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md) | Video teleconferencing device screen-sharing quality data. |
 
 ## JSON representation
 
@@ -75,6 +75,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "teleconferenceDeviceVideoQuality resource",
@@ -82,4 +83,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

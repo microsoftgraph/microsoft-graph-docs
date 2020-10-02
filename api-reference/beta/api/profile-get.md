@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get profile"
 description: "Retrieve the properties and relationships of profile object."
 localization_priority: Normal
@@ -22,7 +22,7 @@ The **profile** resource exposes various rich properties that are descriptive of
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
@@ -42,10 +42,10 @@ This method supports the `$select` query parameter. Specify a list of properties
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -64,6 +64,7 @@ The following is an example of the GET profile request.
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_profile"
@@ -72,15 +73,19 @@ The following is an example of the GET profile request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -285,6 +290,7 @@ The following is an example of using the $expand and $select query parameters to
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_profile"
@@ -293,15 +299,19 @@ The following is an example of using the $expand and $select query parameters to
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last),skills($select=displayName)
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -341,5 +351,3 @@ Content-type: application/json
   ]
 }
 ```
-
-

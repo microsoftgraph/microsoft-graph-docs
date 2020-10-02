@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationStudent resource type"
 description: "Additional information added to an educationUser that is present when the primaryRole of a user is `student`."
 author: "mmast-msft"
@@ -14,14 +14,15 @@ Namespace: microsoft.graph
 Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `student`.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|birthDate|Date| Birth date of the student.|
-|externalId|String| ID of the student in the source system.|
-|gender|educationGender| The possible values are: `female`, `male`, `other`, `unknownFutureValue`.|
-|grade|String|Current grade level of the student.|
-|graduationYear|String| Year the student is graduating from the school.|
-|studentNumber|String| Student Number.|
+
+| Property       | Type            | Description                                                               |
+| :------------- | :-------------- | :------------------------------------------------------------------------ |
+| birthDate      | Date            | Birth date of the student.                                                |
+| externalId     | String          | ID of the student in the source system.                                   |
+| gender         | educationGender | The possible values are: `female`, `male`, `other`, `unknownFutureValue`. |
+| grade          | String          | Current grade level of the student.                                       |
+| graduationYear | String          | Year the student is graduating from the school.                           |
+| studentNumber  | String          | Student Number.                                                           |
 
 ## JSON representation
 
@@ -48,6 +49,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationStudent resource",
@@ -55,4 +57,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

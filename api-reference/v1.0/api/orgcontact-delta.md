@@ -1,4 +1,4 @@
----
+﻿---
 title: "orgContact: delta"
 description: "Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection."
 localization_priority: Normal
@@ -17,18 +17,18 @@ Get newly created, updated, or deleted organizational contacts without having to
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.  |
-|Application | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                  |
+| :------------------------------------- | :------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                               |
+| Application                            | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
 
 To begin tracking changes, you make a request including the delta function on the contacts resource.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /contacts/delta
 ```
@@ -41,10 +41,10 @@ You only need to specify any query parameters once up front.
 
 In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response. That URL already includes the encoded parameters.
 
-| Query parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same organization contact collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL, including this token, in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked in the same organization contact collection. |
+| Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                                    |
+| :-------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $deltatoken     | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same organization contact collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL, including this token, in the first request of the next round of change tracking for that collection. |
+| $skiptoken      | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked in the same organization contact collection.                                                                                                                                                      |
 
 ### OData query parameters
 
@@ -55,12 +55,14 @@ This method supports optional OData query parameters to help customize the respo
   - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/contacts/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
 
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;. Required.|
-| Prefer | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
+
+| Name          | Description                                                                                                                                                                    |
+| :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer &lt;token&gt;. Required.                                                                                                                                                |
+| Prefer        | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -83,7 +85,6 @@ By default, requests using a `deltaLink` or `nextLink` return the same propertie
 - If the property has not changed, the old value is included in the response.
 - If the property has never been set before, it will not be included in the response at all.
 
-
 > **Note:** With this behavior, it is not possible to tell whether a property is changing by looking at the response. Also, the delta responses tend to be large because they contain all property values,as shown in [Example 2](#example-2-selecting-three-properties).
 
 ### Alternative: return only the changed properties
@@ -103,8 +104,8 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "orgContact_delta"
@@ -113,24 +114,28 @@ The following is an example of the request. There is no `$select` parameter, so 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contacts/delta
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -174,8 +179,8 @@ Content-type: application/json
 
 The next example shows the initial request selecting three properties for change tracking, with default response behavior.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "orgcontact_delta_select"
@@ -184,24 +189,28 @@ The next example shows the initial request selecting three properties for change
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contacts/delta?$select=displayName,jobTitle,mail
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-delta-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-delta-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-delta-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -237,8 +246,8 @@ Content-type: application/json
 
 The next example shows the initial request selecting three properties for change tracking, with alternative minimal response behavior.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "orgcontact_delta_minimal"
@@ -248,24 +257,28 @@ The next example shows the initial request selecting three properties for change
 GET https://graph.microsoft.com/v1.0/contacts/delta?$select=displayName,jobTitle,mail
 Prefer: return=minimal
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-delta-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/orgcontact-delta-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -293,12 +306,14 @@ Content-type: application/json
   ]
 }
 ```
+
 ## See also
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
 <!-- uuid: 3B5A9A7C-6324-432F-8C66-AC4883DD71EF
 2020-03-20 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -310,4 +325,3 @@ Content-type: application/json
   ]
 }
 -->
-

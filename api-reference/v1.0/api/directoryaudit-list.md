@@ -1,4 +1,4 @@
----
+﻿---
 title: "List directoryAudits"
 description: "Describes the list method of the directoryAudit resource (entity) from the Microsoft Graph API."
 localization_priority: Normal
@@ -35,7 +35,7 @@ GET /auditLogs/directoryaudits
 
 This method supports the following OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
 
-| Parameter                                                       | Description                                                                   | Example                                                                     |
+| Parameter                                                  | Description                                                                   | Example                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
 | [\$filter](/graph/query_parameters#filter-parameter)       | Filters results (rows).                                                       | `/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`         |
 | [\$top](/graph/query_parameters#top-parameter)             | Sets the page size of results.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
@@ -77,8 +77,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 Here is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_directoryaudit"
@@ -87,24 +87,28 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -175,6 +179,7 @@ Content-length: 271
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List directoryAudits",
@@ -184,4 +189,3 @@ Content-length: 271
   "suppressions": [
   ]
 }-->
-

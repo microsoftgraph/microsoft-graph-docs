@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskAppType enum type"
 description: "The type of Windows kiosk app."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 The type of Windows kiosk app.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown.|
-|store|1|Store App.|
-|desktop|2|Desktop App.|
-|aumId|3|Input by AUMID.|
 
-
-
-
-
-
+| Member  | Value | Description     |
+| :------ | :---- | :-------------- |
+| unknown | 0     | Unknown.        |
+| store   | 1     | Store App.      |
+| desktop | 2     | Desktop App.    |
+| aumId   | 3     | Input by AUMID. |

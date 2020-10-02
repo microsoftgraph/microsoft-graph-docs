@@ -1,4 +1,4 @@
----
+﻿---
 title: "event: dismissReminder"
 description: "Dismiss a reminder that has been triggered for an event in a user calendar."
 author: "harini84"
@@ -14,13 +14,14 @@ Namespace: microsoft.graph
 Dismiss a reminder that has been triggered for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
-|Application | Calendars.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Calendars.ReadWrite                         |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite                         |
+| Application                            | Calendars.ReadWrite                         |
 
 ## HTTP request
 
@@ -46,9 +47,10 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 <br/>
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 <br/>
 
@@ -61,10 +63,11 @@ If successful, this method returns `200 OK` response code. It does not return an
 Here is an example of how to call this API.
 
 ### Request
+
 Here is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "event_dismissreminder"
@@ -73,28 +76,33 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-dismissreminder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-dismissreminder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/event-dismissreminder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/event-dismissreminder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 <br/>
 
 ### Response
+
 Here is an example of the response.
 
 <!-- {
@@ -108,6 +116,7 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "event: dismissReminder",
@@ -117,4 +126,3 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
-

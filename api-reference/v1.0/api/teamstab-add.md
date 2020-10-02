@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add tab to channel"
 description: "Adds (pins) a tab to the specified channel within a team. "
 author: "nkramer"
@@ -11,32 +11,34 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
-
 Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 The corresponding app must already be [installed in the team](../api/teamsappinstallation-add.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.Create, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-| Application                            |TeamsTab.Create, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                           |
+| :------------------------------------- | :------------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | TeamsTab.Create, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                        |
+| Application                            | TeamsTab.Create, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /teams/{id}/channels/{id}/tabs
 ```
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -51,10 +53,12 @@ If successful, this method returns a `201 Created` response code.
 #### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 {
@@ -72,6 +76,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 #### Response
 
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -102,6 +107,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -111,4 +117,3 @@ Content-type: application/json
   "tocPath": ""
 }
 -->
-

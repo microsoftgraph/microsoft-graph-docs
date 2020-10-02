@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceEnrollmentPlatformRestriction resource type"
 description: "Platform specific enrollment restrictions"
 author: "dougeby"
@@ -18,25 +18,30 @@ Namespace: microsoft.graph
 Platform specific enrollment restrictions
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|platformBlocked|Boolean|Block the platform from enrolling|
-|personalDeviceEnrollmentBlocked|Boolean|Block personally owned devices from enrolling|
-|osMinimumVersion|String|Min OS version supported|
-|osMaximumVersion|String|Max OS version supported|
-|blockedManufacturers|String collection|Collection of blocked Manufacturers.|
+
+| Property                        | Type              | Description                                   |
+| :------------------------------ | :---------------- | :-------------------------------------------- |
+| platformBlocked                 | Boolean           | Block the platform from enrolling             |
+| personalDeviceEnrollmentBlocked | Boolean           | Block personally owned devices from enrolling |
+| osMinimumVersion                | String            | Min OS version supported                      |
+| osMaximumVersion                | String            | Max OS version supported                      |
+| blockedManufacturers            | String collection | Collection of blocked Manufacturers.          |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestriction",
   "platformBlocked": true,
@@ -48,9 +53,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

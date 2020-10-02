@@ -1,4 +1,4 @@
----
+﻿---
 title: "DriveItemVersion resource type"
 description: "The **DriveItemVersion** resource represents a specific version of a DriveItem."
 localization_priority: Normal
@@ -13,16 +13,15 @@ Namespace: microsoft.graph
 
 The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).
 
-
 ## Tasks on DriveItemVersion resources
 
 The following tasks are available for driveItemVersion resources.
 
-|            Common task             |         HTTP method         |
-| :--------------------------------- | :-------------------------- |
-| [List versions][version-list]      | `GET /drive/items/{item-id}/versions`  |
-| [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
-| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
+| Common task                        | HTTP method                                                        |
+| :--------------------------------- | :----------------------------------------------------------------- |
+| [List versions][version-list]      | `GET /drive/items/{item-id}/versions`                              |
+| [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`                 |
+| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content`         |
 | [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
@@ -54,7 +53,7 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 
 ## Properties
 
-|      Property name       |                         Type                         |                               Description                               |
+| Property name            | Type                                                 | Description                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | The ID of the version. Read-only.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
@@ -70,4 +69,3 @@ In the previous table, the examples use `/drive`, but there are many valid reque
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
-

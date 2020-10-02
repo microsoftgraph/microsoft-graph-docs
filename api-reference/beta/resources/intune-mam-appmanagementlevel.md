@@ -1,4 +1,4 @@
----
+﻿---
 title: "appManagementLevel enum type"
 description: "Management levels for apps"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Management levels for apps
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unspecified|0|Unspecified|
-|unmanaged|1|Unmanaged|
-|mdm|2|MDM|
-|androidEnterprise|4|Android Enterprise|
 
-
-
-
-
-
+| Member            | Value | Description        |
+| :---------------- | :---- | :----------------- |
+| unspecified       | 0     | Unspecified        |
+| unmanaged         | 1     | Unmanaged          |
+| mdm               | 2     | MDM                |
+| androidEnterprise | 4     | Android Enterprise |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create sideLoadingKey"
 description: "Create a new sideLoadingKey object."
 author: "dougeby"
@@ -18,53 +18,59 @@ Namespace: microsoft.graph
 Create a new [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementServiceConfig.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementServiceConfig.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceAppManagement/sideLoadingKeys
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the sideLoadingKey object.
 
 The following table shows the properties that are required when you create the sideLoadingKey.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Side Loading Key Unique Id.|
-|value|String|Side Loading Key Value, it is 5x5 value, seperated by hiphens.|
-|displayName|String|Side Loading Key Name displayed to the ITPro Admins.|
-|description|String|Side Loading Key description displayed to the ITPro Admins..|
-|totalActivation|Int32|Side Loading Key Total Activation displayed to the ITPro Admins.|
-|lastUpdatedDateTime|String|Side Loading Key Last Updated Date displayed to the ITPro Admins.|
-
-
+| Property            | Type   | Description                                                       |
+| :------------------ | :----- | :---------------------------------------------------------------- |
+| id                  | String | Side Loading Key Unique Id.                                       |
+| value               | String | Side Loading Key Value, it is 5x5 value, seperated by hiphens.    |
+| displayName         | String | Side Loading Key Name displayed to the ITPro Admins.              |
+| description         | String | Side Loading Key description displayed to the ITPro Admins..      |
+| totalActivation     | Int32  | Side Loading Key Total Activation displayed to the ITPro Admins.  |
+| lastUpdatedDateTime | String | Side Loading Key Last Updated Date displayed to the ITPro Admins. |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys
 Content-type: application/json
 Content-length: 246
@@ -80,8 +86,10 @@ Content-length: 246
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 295
@@ -96,9 +104,3 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
-
-
-
-
-

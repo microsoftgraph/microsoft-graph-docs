@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Retrieve the metadata for a specific version of a ListItem."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Get a ListItemVersion resource (preview)
 
 Namespace: microsoft.graph
@@ -19,12 +20,11 @@ Retrieve the metadata for a specific version of a [ListItem](../resources/listit
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|            Permission type             | Permissions (from least to most privileged) |
+| Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
 | Delegated (personal Microsoft account) | n/a                                         |
 | Application                            | Sites.Read.All, Sites.ReadWrite.All         |
-
 
 ## HTTP request
 
@@ -35,11 +35,9 @@ GET /sites/{site-id}/items/{item-id}/versions/{version-id}
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 ```
 
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [ListItemVersion](../resources/listitemversion.md) object in the response body.
-
 
 ## Example
 
@@ -86,5 +84,3 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
-
-

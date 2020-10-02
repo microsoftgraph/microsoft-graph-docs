@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 title: listItem resource
@@ -20,16 +20,16 @@ Column values in the list are available through the `fieldValueSet` dictionary.
 The following methods are available for **listItem** resources.
 All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.
 
-| Method                    | Return Type | Description
-|:-------------------------------|:-------------------|:------
-| [Get][]                   | listItem| Get an item in a list.
-| [Get column values][Get]       | listItem | Get column values from listItem.
-| [Get analytics][]              | [itemAnalytics][]| Get analytics for this resource. 
-| [Get activities by interval][] | [itemActivityStat][]| Get a collection of itemActivityStats within the specified time interval.
-| [Create][]                     | listItem | Create a new listItem in a list.
-| [Delete][]                     | No Content | Removes an item from a list.
-| [Update][]                     | [fieldValueSet][]| Update the properties on a listItem.
-| [Update column values][Update] | [fieldValueSet][]| Update column values on a listItem.
+| Method                         | Return Type          | Description                                                               |
+| :----------------------------- | :------------------- | :------------------------------------------------------------------------ |
+| [Get][]                        | listItem             | Get an item in a list.                                                    |
+| [Get column values][Get]       | listItem             | Get column values from listItem.                                          |
+| [Get analytics][]              | [itemAnalytics][]    | Get analytics for this resource.                                          |
+| [Get activities by interval][] | [itemActivityStat][] | Get a collection of itemActivityStats within the specified time interval. |
+| [Create][]                     | listItem             | Create a new listItem in a list.                                          |
+| [Delete][]                     | No Content           | Removes an item from a list.                                              |
+| [Update][]                     | [fieldValueSet][]    | Update the properties on a listItem.                                      |
+| [Update column values][Update] | [fieldValueSet][]    | Update column values on a listItem.                                       |
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -45,37 +45,37 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 
 The **listItem** resource has the following properties.
 
-| Property name | Type                | Description
-|:--------------|:--------------------|:-------------------------------
-| contentType   | [contentTypeInfo][] | The content type of this list item
+| Property name | Type                | Description                        |
+| :------------ | :------------------ | :--------------------------------- |
+| contentType   | [contentTypeInfo][] | The content type of this list item |
 
 The following properties are inherited from **[baseItem][]**.
 
-| Property name        | Type              | Description
-|:---------------------|:------------------|:----------------------------------
-| id                   | string            | The unique identifier of the item. Read-only.
-| name                 | string            | The name / title of the item.
-| createdBy            | [identitySet][]   | Identity of the creator of this item. Read-only.
-| createdDateTime      | DateTimeOffset    | The date and time the item was created. Read-only.
-| description          | string            | The descriptive text for the item.
-| eTag                 | string            | ETag for the item. Read-only.                                                          |
-| lastModifiedBy       | [identitySet][]   | Identity of the last modifier of this item. Read-only.
-| lastModifiedDateTime | DateTimeOffset    | The date and time the item was last modified. Read-only.
-| parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.
-| sharepointIds        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-| webUrl               | string (url)      | URL that displays the item in the browser. Read-only.
+| Property name        | Type              | Description                                                              |
+| :------------------- | :---------------- | :----------------------------------------------------------------------- |
+| id                   | string            | The unique identifier of the item. Read-only.                            |
+| name                 | string            | The name / title of the item.                                            |
+| createdBy            | [identitySet][]   | Identity of the creator of this item. Read-only.                         |
+| createdDateTime      | DateTimeOffset    | The date and time the item was created. Read-only.                       |
+| description          | string            | The descriptive text for the item.                                       |
+| eTag                 | string            | ETag for the item. Read-only.                                            |
+| lastModifiedBy       | [identitySet][]   | Identity of the last modifier of this item. Read-only.                   |
+| lastModifiedDateTime | DateTimeOffset    | The date and time the item was last modified. Read-only.                 |
+| parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.                |
+| sharepointIds        | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only. |
+| webUrl               | string (url)      | URL that displays the item in the browser. Read-only.                    |
 
 ## Relationships
 
  The **listItem** resource has the following relationships to other resources.
 
-| Relationship name | Type                           | Description
-|:------------------|:-------------------------------|:-------------------------------
-| activities        | [itemActivity][] collection    | The list of recent activities that took place on this item.
-| analytics         | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.
-| driveItem         | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**
-| fields            | [fieldValueSet][]              | The values of the columns set on this list item.
-| versions          | [listItemVersion][] collection | The list of previous versions of the list item.
+| Relationship name | Type                           | Description                                                                                        |
+| :---------------- | :----------------------------- | :------------------------------------------------------------------------------------------------- |
+| activities        | [itemActivity][] collection    | The list of recent activities that took place on this item.                                        |
+| analytics         | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.                                  |
+| driveItem         | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]** |
+| fields            | [fieldValueSet][]              | The values of the columns set on this list item.                                                   |
+| versions          | [listItemVersion][] collection | The list of previous versions of the list item.                                                    |
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -136,4 +136,3 @@ Here is a JSON representation of a **listItem** resource.
     "ListItem": "#"
   }
 } -->
-

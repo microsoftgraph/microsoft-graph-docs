@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete userAccountInformation"
 description: "Delete a userAccountInformation object."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Delete an [userAccountInformation](../resources/useraccountinformation.md) objec
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,9 +36,9 @@ DELETE /users/{id | userPrincipalName}/profile/accounts/{id}
 
 ## Request headers
 
-| Name           | Description                |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -53,6 +53,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_useraccountinformation"
@@ -74,4 +75,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-

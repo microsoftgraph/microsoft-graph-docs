@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceLogCollectionTemplateType enum type"
 description: "Enum for the template type used for collecting logs"
 author: "dougeby"
@@ -18,12 +18,7 @@ Namespace: microsoft.graph
 Enum for the template type used for collecting logs
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|predefined|0|Predefined template for what will be collected|
 
-
-
-
-
-
+| Member     | Value | Description                                    |
+| :--------- | :---- | :--------------------------------------------- |
+| predefined | 0     | Predefined template for what will be collected |

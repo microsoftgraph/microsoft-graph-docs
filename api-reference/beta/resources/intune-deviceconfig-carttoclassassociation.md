@@ -1,4 +1,4 @@
----
+﻿---
 title: "cartToClassAssociation resource type"
 description: "CartToClassAssociation for associating device carts with classrooms."
 author: "dougeby"
@@ -18,38 +18,44 @@ Namespace: microsoft.graph
 CartToClassAssociation for associating device carts with classrooms.
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) collection|List properties and relationships of the [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) objects.|
-|[Get cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-get.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Read properties and relationships of the [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.|
-|[Create cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-create.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Create a new [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.|
-|[Delete cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-delete.md)|None|Deletes a [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).|
-|[Update cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-update.md)|[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)|Update the properties of a [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.|
+
+| Method                                                                                       | Return Type                                                                                     | Description                                                                                                                            |
+| :------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| [List cartToClassAssociations](../api/intune-deviceconfig-carttoclassassociation-list.md)    | [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) collection | List properties and relationships of the [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) objects. |
+| [Get cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-get.md)       | [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)            | Read properties and relationships of the [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.  |
+| [Create cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-create.md) | [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)            | Create a new [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.                              |
+| [Delete cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-delete.md) | None                                                                                            | Deletes a [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).                                        |
+| [Update cartToClassAssociation](../api/intune-deviceconfig-carttoclassassociation-update.md) | [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)            | Update the properties of a [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.                |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|createdDateTime|DateTimeOffset|DateTime the object was created.|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
-|version|Int32|Version of the CartToClassAssociation.|
-|displayName|String|Admin provided name of the device configuration.|
-|description|String|Admin provided description of the CartToClassAssociation.|
-|deviceCartIds|String collection|Identifiers of device carts to be associated with classes.|
-|classroomIds|String collection|Identifiers of classrooms to be associated with device carts.|
+
+| Property             | Type              | Description                                                   |
+| :------------------- | :---------------- | :------------------------------------------------------------ |
+| id                   | String            | Key of the entity.                                            |
+| createdDateTime      | DateTimeOffset    | DateTime the object was created.                              |
+| lastModifiedDateTime | DateTimeOffset    | DateTime the object was last modified.                        |
+| version              | Int32             | Version of the CartToClassAssociation.                        |
+| displayName          | String            | Admin provided name of the device configuration.              |
+| description          | String            | Admin provided description of the CartToClassAssociation.     |
+| deviceCartIds        | String collection | Identifiers of device carts to be associated with classes.    |
+| classroomIds         | String collection | Identifiers of classrooms to be associated with device carts. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.cartToClassAssociation"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.cartToClassAssociation",
   "id": "String (identifier)",
@@ -66,9 +72,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

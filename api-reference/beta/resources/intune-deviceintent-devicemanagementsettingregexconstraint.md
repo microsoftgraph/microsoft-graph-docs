@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingRegexConstraint resource type"
 description: "Constraint enforcing the setting matches against a given RegEx pattern"
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 Constraint enforcing the setting matches against a given RegEx pattern
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|regex|String|The RegEx pattern to match against|
+
+| Property | Type   | Description                        |
+| :------- | :----- | :--------------------------------- |
+| regex    | String | The RegEx pattern to match against |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingRegexConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingRegexConstraint",
   "regex": "String"
 }
 ```
-
-
-
-
-
-

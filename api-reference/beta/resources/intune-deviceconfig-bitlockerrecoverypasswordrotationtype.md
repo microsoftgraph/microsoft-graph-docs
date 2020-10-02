@@ -1,4 +1,4 @@
----
+﻿---
 title: "bitLockerRecoveryPasswordRotationType enum type"
 description: "BitLocker recovery password rotation type"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 BitLocker recovery password rotation type
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured|
-|disabled|1|Recovery password rotation off|
-|enabledForAzureAd|2|Recovery password rotation on for Azure AD joined devices|
-|enabledForAzureAdAndHybrid|3|Recovery password rotation on for both Azure AD joined and hybrid joined devices|
 
-
-
-
-
-
+| Member                     | Value | Description                                                                      |
+| :------------------------- | :---- | :------------------------------------------------------------------------------- |
+| notConfigured              | 0     | Not configured                                                                   |
+| disabled                   | 1     | Recovery password rotation off                                                   |
+| enabledForAzureAd          | 2     | Recovery password rotation on for Azure AD joined devices                        |
+| enabledForAzureAdAndHybrid | 3     | Recovery password rotation on for both Azure AD joined and hybrid joined devices |

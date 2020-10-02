@@ -1,4 +1,4 @@
----
+﻿---
 title: "List identityProviders"
 description: "Retrieve a list of identityProvider objects."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Retrieve a list of [identityProviders](../resources/identityprovider.md) objects
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                            |
+| Application                            | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All |
 
 The work or school account needs to belong to one of the following roles:
 * Global administrator
@@ -39,9 +39,9 @@ GET /identityProviders
 
 ## Request headers
 
-|Name|Description|
-|:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -57,31 +57,34 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_identityprovider"
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -134,5 +137,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

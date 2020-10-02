@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementDerivedCredentialIssuer enum type"
 description: "Supported values for the derived credential issuer."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Supported values for the derived credential issuer.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|intercede|0|Intercede|
-|entrustDatacard|1|Entrust Datacard|
-|purebred|2|Purebred|
-|xTec|3|XTec|
 
-
-
-
-
-
+| Member          | Value | Description      |
+| :-------------- | :---- | :--------------- |
+| intercede       | 0     | Intercede        |
+| entrustDatacard | 1     | Entrust Datacard |
+| purebred        | 2     | Purebred         |
+| xTec            | 3     | XTec             |

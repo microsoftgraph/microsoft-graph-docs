@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update managedAppPolicyDeploymentSummary"
 description: "Update the properties of a managedAppPolicyDeploymentSummary object."
 author: "dougeby"
@@ -16,20 +16,23 @@ Namespace: microsoft.graph
 Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementApps.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/deploymentSummary
 PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/deploymentSummary
@@ -37,35 +40,38 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.
 
 The following table shows the properties that are required when you create the [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Not yet documented|
-|configurationDeployedUserCount|Int32|Not yet documented|
-|lastRefreshTime|DateTimeOffset|Not yet documented|
-|configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection|Not yet documented|
-|id|String|Key of the entity.|
-|version|String|Version of the entity.|
-
-
+| Property                             | Type                                                                                                                     | Description            |
+| :----------------------------------- | :----------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| displayName                          | String                                                                                                                   | Not yet documented     |
+| configurationDeployedUserCount       | Int32                                                                                                                    | Not yet documented     |
+| lastRefreshTime                      | DateTimeOffset                                                                                                           | Not yet documented     |
+| configurationDeploymentSummaryPerApp | [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection | Not yet documented     |
+| id                                   | String                                                                                                                   | Key of the entity.     |
+| version                              | String                                                                                                                   | Version of the entity. |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/deploymentSummary
 Content-type: application/json
 Content-length: 588
@@ -90,8 +96,10 @@ Content-length: 588
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 637
@@ -115,12 +123,3 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
-
-
-
-
-
-
-
-
-

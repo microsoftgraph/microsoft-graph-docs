@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get call"
 description: "Retrieve the properties and relationships of a call object."
 author: "ananmishr"
@@ -16,34 +16,42 @@ Namespace: microsoft.graph
 Retrieve the properties and relationships of a call object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported.                         |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | None.                                  |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not Supported.                              |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | None.                                       |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /app/calls/{id}
 GET /communications/calls/{id}
 ```
+
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
+
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.
 
 ## Examples
@@ -53,6 +61,7 @@ If successful, this method returns a `200 OK` response code and a [call](../reso
 ##### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get-call"
@@ -61,20 +70,23 @@ If successful, this method returns a `200 OK` response code and a [call](../reso
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -85,6 +97,7 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -157,32 +170,38 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
+
 ### Example 2: Getting a group call
 
 ##### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get-call"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -191,6 +210,7 @@ GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -273,6 +293,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -284,5 +305,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

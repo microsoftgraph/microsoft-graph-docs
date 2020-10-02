@@ -1,4 +1,4 @@
----
+﻿---
 title: "user: checkMemberObjects"
 description: "Check for membership in a list of group or directory roles for the specified user object."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Check for membership in a list of group or directory roles for the specified use
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br><br>In addition:<br><br><ul><li>If checking for membership in groups: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>If checking for membership in directory roles: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br>And:<ul><li>If checking for membership in groups: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>If checking for membership in directory roles: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br><br>In addition:<br><br><ul><li>If checking for membership in groups: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>If checking for membership in directory roles: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br>And:<ul><li>If checking for membership in groups: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>If checking for membership in directory roles: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All                                                 |
 
 ## HTTP request
 
@@ -34,18 +34,18 @@ POST /users/{id}/checkMemberObjects
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|ids|String collection|A collection that contains the object IDs of the groups, directory roles, or roleTemplate IDs of directory roles, in which to check membership. You can specify up to 20 objects.|
+| Parameter | Type              | Description                                                                                                                                                                       |
+| :-------- | :---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ids       | String collection | A collection that contains the object IDs of the groups, directory roles, or roleTemplate IDs of directory roles, in which to check membership. You can specify up to 20 objects. |
 
 ## Response
 
@@ -60,6 +60,7 @@ The following is an example of how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_checkmemberobjects"
@@ -78,24 +79,28 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-checkmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-checkmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/user-checkmemberobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/user-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -124,6 +129,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "user: checkMemberObjects",
@@ -131,4 +137,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

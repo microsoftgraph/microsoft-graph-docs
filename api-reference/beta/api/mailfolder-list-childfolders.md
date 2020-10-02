@@ -1,4 +1,4 @@
----
+﻿---
 title: "List childFolders"
 description: "Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level "
 author: "svpsiva"
@@ -20,11 +20,11 @@ folder collection and navigate to another folder.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | Mail.ReadBasic, Mail.Read, Mail.ReadWrite           |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite           |
-| Application                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite           |
+| Permission type                        | Permissions (from least to most privileged)   |
+| :------------------------------------- | :-------------------------------------------- |
+| Delegated (work or school account)     | Mail.ReadBasic, Mail.Read, Mail.ReadWrite     |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite     |
+| Application                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 
@@ -42,7 +42,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## Request headers
 
 | Name          | Type   | Description               |
-|:--------------|:-------|:--------------------------|
+| :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {token}. Required. |
 
 ## Request body
@@ -61,8 +61,8 @@ If successful, this method returns a `200 OK` response code and collection of [m
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "mailfolder_get_childfolders"
@@ -71,20 +71,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-get-childfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-get-childfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/mailfolder-get-childfolders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- markdownlint-disable MD024 -->
 
@@ -144,8 +147,8 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_childfolders_of_searchfolders"
@@ -154,20 +157,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-childfolders-of-searchfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-childfolders-of-searchfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-childfolders-of-searchfolders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -218,6 +224,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -229,5 +236,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

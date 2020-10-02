@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOSSoftwareUpdateDelayPolicy enum type"
 description: "Flag enum to determine whether to delay software updates for macOS."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Flag enum to determine whether to delay software updates for macOS.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Software update delays will not be enforced.|
-|delayOSUpdateVisibility|1|Force delays for OS software updates.|
-|delayAppUpdateVisibility|2|Force delays for app software updates.|
 
-
-
-
-
-
+| Member                   | Value | Description                                  |
+| :----------------------- | :---- | :------------------------------------------- |
+| none                     | 0     | Software update delays will not be enforced. |
+| delayOSUpdateVisibility  | 1     | Force delays for OS software updates.        |
+| delayAppUpdateVisibility | 2     | Force delays for app software updates.       |

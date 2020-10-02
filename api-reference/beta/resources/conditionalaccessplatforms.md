@@ -1,4 +1,4 @@
----
+﻿---
 title: "conditionalAccessPlatforms resource type"
 description: "Platforms included in and excluded from the policy scope."
 localization_priority: Normal
@@ -17,10 +17,10 @@ Platforms included in and excluded from the policy scope.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|includePlatforms|String collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.|
-|excludePlatforms|String collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.|
+| Property         | Type              | Description                                                                       |
+| :--------------- | :---------------- | :-------------------------------------------------------------------------------- |
+| includePlatforms | String collection | Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`. |
+| excludePlatforms | String collection | Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.        |
 
 ## Relationships
 
@@ -48,6 +48,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "conditionalAccessPlatforms resource",
@@ -55,4 +56,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

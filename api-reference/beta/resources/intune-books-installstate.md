@@ -1,4 +1,4 @@
----
+﻿---
 title: "installState enum type"
 description: "Possible values for install state."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Possible values for install state.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notApplicable|0|Not Applicable.|
-|installed|1|Installed.|
-|failed|2|Failed.|
-|notInstalled|3|Not Installed.|
-|uninstallFailed|4|Uninstall Failed.|
-|unknown|5|Unknown.|
 
-
-
-
-
-
+| Member          | Value | Description       |
+| :-------------- | :---- | :---------------- |
+| notApplicable   | 0     | Not Applicable.   |
+| installed       | 1     | Installed.        |
+| failed          | 2     | Failed.           |
+| notInstalled    | 3     | Not Installed.    |
+| uninstallFailed | 4     | Uninstall Failed. |
+| unknown         | 5     | Unknown.          |

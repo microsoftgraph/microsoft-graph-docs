@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceConfigurationUserStateSummary resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,35 +18,41 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[Get deviceConfigurationUserStateSummary](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|Read properties and relationships of the [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) object.|
-|[Update deviceConfigurationUserStateSummary](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|Update the properties of a [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) object.|
+
+| Method                                                                                                                 | Return Type                                                                                                    | Description                                                                                                                                                     |
+| :--------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Get deviceConfigurationUserStateSummary](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md)       | [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) | Read properties and relationships of the [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) object. |
+| [Update deviceConfigurationUserStateSummary](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md) | [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) | Update the properties of a [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) object.               |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|unknownUserCount|Int32|Number of unknown users|
-|notApplicableUserCount|Int32|Number of not applicable users|
-|compliantUserCount|Int32|Number of compliant users|
-|remediatedUserCount|Int32|Number of remediated users|
-|nonCompliantUserCount|Int32|Number of NonCompliant users|
-|errorUserCount|Int32|Number of error users|
-|conflictUserCount|Int32|Number of conflict users|
+
+| Property               | Type   | Description                    |
+| :--------------------- | :----- | :----------------------------- |
+| id                     | String | Key of the entity.             |
+| unknownUserCount       | Int32  | Number of unknown users        |
+| notApplicableUserCount | Int32  | Number of not applicable users |
+| compliantUserCount     | Int32  | Number of compliant users      |
+| remediatedUserCount    | Int32  | Number of remediated users     |
+| nonCompliantUserCount  | Int32  | Number of NonCompliant users   |
+| errorUserCount         | Int32  | Number of error users          |
+| conflictUserCount      | Int32  | Number of conflict users       |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationUserStateSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationUserStateSummary",
   "id": "String (identifier)",
@@ -59,9 +65,3 @@ Here is a JSON representation of the resource.
   "conflictUserCount": 1024
 }
 ```
-
-
-
-
-
-

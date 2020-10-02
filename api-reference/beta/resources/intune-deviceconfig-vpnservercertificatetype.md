@@ -1,4 +1,4 @@
----
+﻿---
 title: "vpnServerCertificateType enum type"
 description: "The type of certificate the VPN server will present to the VPN client for authentication"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 The type of certificate the VPN server will present to the VPN client for authentication
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|rsa|0|RSA|
-|ecdsa256|1|ECDSA256|
-|ecdsa384|2|ECDSA384|
-|ecdsa521|3|ECDSA521|
 
-
-
-
-
-
+| Member   | Value | Description |
+| :------- | :---- | :---------- |
+| rsa      | 0     | RSA         |
+| ecdsa256 | 1     | ECDSA256    |
+| ecdsa384 | 2     | ECDSA384    |
+| ecdsa521 | 3     | ECDSA521    |

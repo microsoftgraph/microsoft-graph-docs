@@ -1,4 +1,4 @@
----
+﻿---
 title: "bitlocker type"
 description: "BitLocker resource"
 author: "hafowler"
@@ -16,20 +16,25 @@ Namespace: microsoft.graph
 The parent resource for a stored BitLocker key with the navigation property **bitlockerRecoveryKey** which contains the actual recovery key.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List recoveryKeys](../api/bitlocker-list-recoverykeys.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection|Get a list of the bitlockerRecoveryKey objects and their properties.|
+
+| Method                                                     | Return type                                                             | Description                                                          |
+| :--------------------------------------------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------- |
+| [List recoveryKeys](../api/bitlocker-list-recoverykeys.md) | [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection | Get a list of the bitlockerRecoveryKey objects and their properties. |
 
 ## Properties
+
 None.
 
 ## Relationships
-| Relationship | Type | Description |
-|--|--|--|
+
+| Relationship | Type                                                                    | Description                                             |
+| ------------ | ----------------------------------------------------------------------- | ------------------------------------------------------- |
 | recoveryKeys | [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection | The recovery keys associated with the bitlocker entity. |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bitlocker",
@@ -37,9 +42,9 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.bitlocker"
 }
 ```
-

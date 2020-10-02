@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppPolicy resource type"
 description: "The ManagedAppPolicy resource represents a base type for platform specific policies."
 author: "dougeby"
@@ -16,34 +16,40 @@ Namespace: microsoft.graph
 The ManagedAppPolicy resource represents a base type for platform specific policies.
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List managedAppPolicies](../api/intune-mam-managedapppolicy-list.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|List properties and relationships of the [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) objects.|
-|[Get managedAppPolicy](../api/intune-mam-managedapppolicy-get.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Read properties and relationships of the [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) object.|
-|[targetApps action](../api/intune-mam-managedapppolicy-targetapps.md)|None|Not yet documented|
+
+| Method                                                                | Return Type                                                                | Description                                                                                                       |
+| :-------------------------------------------------------------------- | :------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| [List managedAppPolicies](../api/intune-mam-managedapppolicy-list.md) | [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection | List properties and relationships of the [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) objects. |
+| [Get managedAppPolicy](../api/intune-mam-managedapppolicy-get.md)     | [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)            | Read properties and relationships of the [managedAppPolicy](../resources/intune-mam-managedapppolicy.md) object.  |
+| [targetApps action](../api/intune-mam-managedapppolicy-targetapps.md) | None                                                                       | Not yet documented                                                                                                |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Policy display name.|
-|description|String|The policy's description.|
-|createdDateTime|DateTimeOffset|The date and time the policy was created.|
-|lastModifiedDateTime|DateTimeOffset|Last time the policy was modified.|
-|id|String|Key of the entity.|
-|version|String|Version of the entity.|
+
+| Property             | Type           | Description                               |
+| :------------------- | :------------- | :---------------------------------------- |
+| displayName          | String         | Policy display name.                      |
+| description          | String         | The policy's description.                 |
+| createdDateTime      | DateTimeOffset | The date and time the policy was created. |
+| lastModifiedDateTime | DateTimeOffset | Last time the policy was modified.        |
+| id                   | String         | Key of the entity.                        |
+| version              | String         | Version of the entity.                    |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppPolicy"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.managedAppPolicy",
   "displayName": "String",
@@ -54,12 +60,3 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

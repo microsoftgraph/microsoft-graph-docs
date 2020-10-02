@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get deviceAppManagement"
 description: "Read properties and relationships of the deviceAppManagement object."
 author: "dougeby"
@@ -21,22 +21,24 @@ Read properties and relationships of the [deviceAppManagement](../resources/intu
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).  Note that the appropriate permission varies according to the workflow.
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-| Delegated (work or school account) | |
-| &nbsp; &nbsp; **Apps**, **books**, **onboarding**, **Partner Integration**, or **Policy Set** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| |
-| &nbsp; &nbsp; **Apps**, **books**, **onboarding**, **Partner Integration**, or **Policy Set** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| Permission type                                                                               | Permissions (from most to least privileged)                                           |
+| :-------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ |
+| Delegated (work or school account)                                                            |                                                                                       |
+| &nbsp; &nbsp; **Apps**, **books**, **onboarding**, **Partner Integration**, or **Policy Set** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All                    |
+| &nbsp; &nbsp; **Device management**                                                           | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| Delegated (personal Microsoft account)                                                        | Not supported.                                                                        |
+| Application                                                                                   |                                                                                       |
+| &nbsp; &nbsp; **Apps**, **books**, **onboarding**, **Partner Integration**, or **Policy Set** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All                    |
+| &nbsp; &nbsp; **Device management**                                                           | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /deviceAppManagement
 ```
 
@@ -46,10 +48,10 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 ## Request headers
 
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
 
@@ -65,7 +67,7 @@ If successful, this method returns a `200 OK` response code and [deviceAppManage
 
 Here is an example of the request.
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceAppManagement
 ```
 
@@ -73,7 +75,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 133
@@ -85,15 +87,3 @@ Content-Length: 133
   }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

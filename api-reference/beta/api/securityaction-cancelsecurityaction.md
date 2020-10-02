@@ -1,4 +1,4 @@
----
+﻿---
 title: "securityAction: cancelSecurityAction"
 description: "Cancel a security operation."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Cancel a security operation.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | SecurityActions.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | SecurityActions.ReadWrite.All               |
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ POST /security/securityActions/{id}/cancelSecurityAction
 ## Request headers
 
 | Name          | Description   |
-|:--------------|:--------------|
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
@@ -56,6 +56,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "securityaction_cancelsecurityaction"
@@ -64,24 +65,28 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecurityAction
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/securityaction-cancelsecurityaction-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/securityaction-cancelsecurityaction-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/securityaction-cancelsecurityaction-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,6 +99,7 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "securityAction: cancelSecurityAction",
@@ -103,5 +109,3 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
-
-

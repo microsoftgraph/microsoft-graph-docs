@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get connectedOrganization"
 description: "Retrieve the properties and relationships of a connectedorganization object."
 author: "markwahl-msft"
@@ -19,11 +19,11 @@ Retrieve the properties and relationships of a [connectedOrganization](../resour
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
+| Permission type                        | Permissions (from most to least privileged)                         |
+| :------------------------------------- | :------------------------------------------------------------------ |
 | Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                                      |
+| Application                            | Not supported.                                                      |
 
 ## HTTP request
 
@@ -31,7 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
@@ -41,9 +42,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -58,39 +59,46 @@ If successful, this method returns a `200 OK` response code and a [connectedOrga
 ### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_connectedorganization"
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-connectedorganization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-connectedorganization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-connectedorganization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.connectedOrganization"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -114,6 +122,7 @@ Content-Type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get connectedOrganization",
@@ -121,5 +130,3 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

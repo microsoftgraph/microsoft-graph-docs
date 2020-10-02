@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingDependency resource type"
 description: "Dependency information for a setting"
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 Dependency information for a setting
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|definitionId|String|The setting definition ID of the setting depended on|
-|constraints|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) collection|Collection of constraints for the dependency setting value|
+
+| Property     | Type                                                                                                    | Description                                                |
+| :----------- | :------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------- |
+| definitionId | String                                                                                                  | The setting definition ID of the setting depended on       |
+| constraints  | [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) collection | Collection of constraints for the dependency setting value |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingDependency"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingDependency",
   "definitionId": "String",
@@ -47,9 +52,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "deliveryOptimizationBandwidthHoursWithPercentage resource type"
 description: "Bandwidth limit as a percentage with business hours."
 author: "dougeby"
@@ -17,26 +17,30 @@ Namespace: microsoft.graph
 
 Bandwidth limit as a percentage with business hours.
 
-
 Inherits from [deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|bandwidthBackgroundPercentageHours|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Background download percentage hours.|
-|bandwidthForegroundPercentageHours|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Foreground download percentage hours.|
+
+| Property                           | Type                                                                                                                                   | Description                           |
+| :--------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------ |
+| bandwidthBackgroundPercentageHours | [deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md) | Background download percentage hours. |
+| bandwidthForegroundPercentageHours | [deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md) | Foreground download percentage hours. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationBandwidthHoursWithPercentage"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deliveryOptimizationBandwidthHoursWithPercentage",
   "bandwidthBackgroundPercentageHours": {
@@ -55,9 +59,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

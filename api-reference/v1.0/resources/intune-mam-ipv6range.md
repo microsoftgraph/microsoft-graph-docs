@@ -1,4 +1,4 @@
----
+﻿---
 title: "iPv6Range resource type"
 description: "IPv6 Range definition."
 author: "dougeby"
@@ -15,38 +15,33 @@ Namespace: microsoft.graph
 
 IPv6 Range definition.
 
-
 Inherits from [ipRange](../resources/intune-mam-iprange.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|lowerAddress|String|Lower address|
-|upperAddress|String|Upper address|
+
+| Property     | Type   | Description   |
+| :----------- | :----- | :------------ |
+| lowerAddress | String | Lower address |
+| upperAddress | String | Upper address |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iPv6Range"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iPv6Range",
   "lowerAddress": "String",
   "upperAddress": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

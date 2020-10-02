@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingBooleanConstraint resource type"
 description: "Constraint the enforces a particular boolean value"
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 Constraint the enforces a particular boolean value
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|value|Boolean|The boolean value to compare against|
+
+| Property | Type    | Description                          |
+| :------- | :------ | :----------------------------------- |
+| value    | Boolean | The boolean value to compare against |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingBooleanConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingBooleanConstraint",
   "value": true
 }
 ```
-
-
-
-
-
-

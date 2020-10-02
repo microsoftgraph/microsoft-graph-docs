@@ -1,4 +1,4 @@
----
+﻿---
 title: "Device configuration in Microsoft Intune - Microsoft Gaaph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define configure devices for a tenant organization."
 author: "dougeby"
@@ -607,5 +607,3 @@ The following Graph resources are available to manage settings and features on d
 - [Windows Wi-Fi configuration](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi enterprise e a p configuration](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
 - [Wired network interface](intune-deviceconfig-wirednetworkinterface.md)
-
-

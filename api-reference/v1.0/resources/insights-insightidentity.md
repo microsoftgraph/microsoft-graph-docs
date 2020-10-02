@@ -1,4 +1,4 @@
----
+﻿---
 title: "insightIdentity"
 description: "Complex type containing properties of Shared items."
 author: "simonhult"
@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 Complex type containing properties of [sharedInsight](insights-shared.md) items. 
 
 ## JSON representation
+
 Here is a JSON representation of the resource
 
 <!-- {
@@ -22,6 +23,7 @@ Here is a JSON representation of the resource
   ],
   "@odata.type": "microsoft.graph.insightIdentity"
 }-->
+
 ```json
 {
   "displayName": "string",
@@ -32,9 +34,8 @@ Here is a JSON representation of the resource
 
 ## Properties
 
-| Property              | Type          | Description  |
-| -------------         |-----------    | -------------|
-| displayName      	| String	      | The display name of the user who shared the item. |
-| id     		  | String        | The id of the user who shared the item.     |
-| address      	      | String	    | The email address of the user who shared the item.  |
-
+| Property    | Type   | Description                                        |
+| ----------- | ------ | -------------------------------------------------- |
+| displayName | String | The display name of the user who shared the item.  |
+| id          | String | The id of the user who shared the item.            |
+| address     | String | The email address of the user who shared the item. |

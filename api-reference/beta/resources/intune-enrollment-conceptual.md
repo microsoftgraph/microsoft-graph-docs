@@ -1,4 +1,4 @@
----
+﻿---
 title: "Enroll corporate devices by using Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that enroll devices for a tenant organization."
 author: "dougeby"
@@ -56,5 +56,3 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Windows device usage type](intune-enrollment-windowsdeviceusagetype.md)
 - [Windows enrollment status screen settings](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Windows user type](intune-enrollment-windowsusertype.md)
-
-

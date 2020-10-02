@@ -1,4 +1,4 @@
----
+﻿---
 title: "List governanceRoleSettings"
 description: "Retrieve a collection of governanceRoleSettings on a resource."
 localization_priority: Normal
@@ -16,52 +16,68 @@ Namespace: microsoft.graph
 Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.Read.AzureResources |
+| Permission type                        | Permissions                               |
+| :------------------------------------- | :---------------------------------------- |
+| Delegated (work or school account)     | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported.                            |
+| Application                            | PrivilegedAccess.Read.AzureResources      |
 
 Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.
+
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /privilegedAccess/azureResources/resources/<resourceId>/roleSettings
 GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resourceId>'
 ```
+
 ## Optional query parameters
+
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {code}|
+
+| Name          | Description   |
+| :------------ | :------------ |
+| Authorization | Bearer {code} |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleSetting](../resources/governancerolesetting.md) objects in the response body.
 
 ## Example
+
 This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod. 
+
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"
 }-->
+
 ##### Request
+
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleSettings
 ```
+
 ##### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.governanceRoleSetting",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -171,6 +187,7 @@ Content-length: 463
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -181,5 +198,3 @@ Content-length: 463
   "suppressions": []
 }
 -->
-
-

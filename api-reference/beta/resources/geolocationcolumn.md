@@ -1,4 +1,4 @@
----
+﻿---
 author: kevklam
 description: "The geolocationColumn on a columnDefinition resource indicates that the column holds a geolocation."
 ms.date: 09/10/2018
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # geolocationColumn resource type
 
 Namespace: microsoft.graph
@@ -18,6 +19,7 @@ The **geolocationColumn** on a [columnDefinition](columndefinition.md) resource 
 ## JSON representation
 
 Here is a JSON representation of a **geolocationColumn** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.geolocationColumn" } -->
 
 ```json
@@ -39,5 +41,3 @@ The **geolocationColumn** resource contains no properties.
   "suppressions": []
 }
 -->
-
-

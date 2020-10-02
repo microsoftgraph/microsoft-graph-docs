@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -21,6 +21,7 @@ For example, an actor can be a user, device, or application.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity",
   "openType": true,
  "optionalProperties": ["displayName", "thumbnails"] } -->
+
 ```json
 {
   "displayName": "string",
@@ -31,10 +32,10 @@ For example, an actor can be a user, device, or application.
 
 ## Properties
 
-| Property    | Type   | Description                                                                                                                                                                                                                                                                                                           |
-|:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).     |
-| id          | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
+| Property    | Type   | Description                                                                                                                                                                                                                                                                                                          |
+| :---------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName | String | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md). |
+| id          | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                  |
 
 ## Remarks
 
@@ -43,6 +44,7 @@ In this case, the **displayName** property for the identity will be returned, bu
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Identity contains information about an app, user, or group.",
@@ -51,4 +53,3 @@ In this case, the **displayName** property for the identity will be returned, bu
   "tocPath": "Resources/Identity"
 
 } -->
-

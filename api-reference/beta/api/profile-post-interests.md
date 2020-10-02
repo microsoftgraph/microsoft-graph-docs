@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create personInterest"
 description: "Create a new personInterest."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Create a new [personInterest](../resources/personinterest.md] in a user's [profi
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,10 +36,10 @@ POST /users/{id | userPrincipalName}/profile/interests
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -47,16 +47,16 @@ In the request body, supply a JSON representation of the [personInterest](../res
 
 The following table shows the properties that are possible to set within a new [personInterest](../resources/personinterest.md) object in a user's [profile](../resources/profile.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|String collection|Contains categories a user has associated with the interest (for example, personal, recipies). |
-|collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
-|description|String|Contains a description of the interest.|
-|displayName|String|Contains a friendly name for the interest.  |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
-|webUrl|String|Contains a link to a web page or resource about the interest. |
+| Property          | Type                                                 | Description                                                                                                                                                                                                                                                                    |
+| :---------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences  | String                                               | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| categories        | String collection                                    | Contains categories a user has associated with the interest (for example, personal, recipies).                                                                                                                                                                                 |
+| collaborationTags | String collection                                    | Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.                                                                                               |
+| description       | String                                               | Contains a description of the interest.                                                                                                                                                                                                                                        |
+| displayName       | String                                               | Contains a friendly name for the interest.                                                                                                                                                                                                                                     |
+| inference         | [inferenceData](../resources/inferencedata.md)       | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| source            | [personDataSource](../resources/persondatasource.md) | Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                                                             |
+| webUrl            | String                                               | Contains a link to a web page or resource about the interest.                                                                                                                                                                                                                  |
 
 ## Response
 
@@ -69,6 +69,7 @@ If successful, this method returns a `201 Created` response code and a new [pers
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_personinterest_from_profile"
@@ -87,20 +88,23 @@ Content-type: application/json
   "webUrl": "https://www.chelseafc.com"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-personinterest-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-personinterest-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-personinterest-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -149,5 +153,3 @@ Content-type: application/json
   "collaborationTags": null
 }
 ```
-
-

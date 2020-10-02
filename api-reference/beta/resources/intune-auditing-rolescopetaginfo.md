@@ -1,4 +1,4 @@
----
+﻿---
 title: "roleScopeTagInfo resource type"
 description: "A class containing the properties of Role Scope Tag Object."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 A class containing the properties of Role Scope Tag Object.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Scope Tag Display name.|
-|roleScopeTagId|String|Scope Tag Id.|
+
+| Property       | Type   | Description             |
+| :------------- | :----- | :---------------------- |
+| displayName    | String | Scope Tag Display name. |
+| roleScopeTagId | String | Scope Tag Id.           |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.roleScopeTagInfo"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.roleScopeTagInfo",
   "displayName": "String",
   "roleScopeTagId": "String"
 }
 ```
-
-
-
-
-
-

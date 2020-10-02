@@ -1,4 +1,4 @@
----
+﻿---
 title: "groupPolicyDefinitionClassType enum type"
 description: "Group Policy Definition Class Type."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Group Policy Definition Class Type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|user|0|Identifies placement of the policy setting under the user configuration node.|
-|machine|1|Identifies placement of the policy setting under the computer configuration node.|
 
-
-
-
-
-
+| Member  | Value | Description                                                                       |
+| :------ | :---- | :-------------------------------------------------------------------------------- |
+| user    | 0     | Identifies placement of the policy setting under the user configuration node.     |
+| machine | 1     | Identifies placement of the policy setting under the computer configuration node. |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Working with files in Microsoft Graph"
 description: "You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries."
 localization_priority: Priority
@@ -57,30 +57,30 @@ The following is an example of a DriveItem resource:
 
 Most API requests for file interactions will use one of these base resources to access a **Drive** or **DriveItem**.
 
-| Path                               | Resource
-|------------------------------------|-----------------------------------------
-| `/me/drive`                        | User's OneDrive
-| `/me/drives`                       | Enumerate OneDrive resources available to the user.
-| `/drives/{drive-id}`               | Access a specific **Drive** by the drive's ID.
-| `/drives/{drive-id}/root/children` | Enumerate the **DriveItem** resources in the root of a specific **Drive**.
-| `/me/drive/items/{item-id}`        | Access a **DriveItem** in the user's OneDrive by its unique ID.
-| `/me/drive/special/{special-id}`   | Access a special (named) folder in the user's OneDrive by its known name.
-| `/users/{user-id}/drive`           | Access another user's OneDrive by using the user's unique ID.
-| `/groups/{group-id}/drive`         | Access the default document library for a group by the group's unique ID.
-| `/shares/{share-id}`               | Access a **DriveItem** by its **sharedId** or sharing URL.
-| `/sites/{site-id}/drive`           | Access the default **Drive** (document library) for the given [SharePoint][] [site][]
-| `/sites/{site-id}/drives`          | Enumerate the **Drives** (document libraries) under the given [SharePoint][] [site][]
+| Path                               | Resource                                                                              |
+| ---------------------------------- | ------------------------------------------------------------------------------------- |
+| `/me/drive`                        | User's OneDrive                                                                       |
+| `/me/drives`                       | Enumerate OneDrive resources available to the user.                                   |
+| `/drives/{drive-id}`               | Access a specific **Drive** by the drive's ID.                                        |
+| `/drives/{drive-id}/root/children` | Enumerate the **DriveItem** resources in the root of a specific **Drive**.            |
+| `/me/drive/items/{item-id}`        | Access a **DriveItem** in the user's OneDrive by its unique ID.                       |
+| `/me/drive/special/{special-id}`   | Access a special (named) folder in the user's OneDrive by its known name.             |
+| `/users/{user-id}/drive`           | Access another user's OneDrive by using the user's unique ID.                         |
+| `/groups/{group-id}/drive`         | Access the default document library for a group by the group's unique ID.             |
+| `/shares/{share-id}`               | Access a **DriveItem** by its **sharedId** or sharing URL.                            |
+| `/sites/{site-id}/drive`           | Access the default **Drive** (document library) for the given [SharePoint][] [site][] |
+| `/sites/{site-id}/drives`          | Enumerate the **Drives** (document libraries) under the given [SharePoint][] [site][] |
 
 In addition to addressing a **DriveItem** within a **Drive** by unique ID, your app can also address a **DriveItem** by relative path from a known resource.
 To address using a path, the colon (`:`) character is used to escape the relative path.
 This table provides an example of different ways to use the colon character to address an item by path.
 
-| Path | Resource |
-|---|---|
-| `/me/drive/root:/path/to/file` | Access a **DriveItem** by path relative to the user's OneDrive root folder. |
-| `/me/drive/items/{item-id}:/path/to/file` | Access a **DriveItem** by path relative to another item (a **DriveItem** with a **folder** facet). |
-| `/me/drive/root:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to the root of the user's OneDrive. |
-| `/me/drive/items/{item-id}:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to another item. |
+| Path                                                  | Resource                                                                                           |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `/me/drive/root:/path/to/file`                        | Access a **DriveItem** by path relative to the user's OneDrive root folder.                        |
+| `/me/drive/items/{item-id}:/path/to/file`             | Access a **DriveItem** by path relative to another item (a **DriveItem** with a **folder** facet). |
+| `/me/drive/root:/path/to/folder:/children`            | List the children of a **DriveItem** by path relative to the root of the user's OneDrive.          |
+| `/me/drive/items/{item-id}:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to another item.                             |
 
 ## Drive resource
 
@@ -113,8 +113,8 @@ Microsoft Graph allows your app to create [sharing links](../api/driveitem-creat
 Microsoft Graph also provides a way for your app to [access shared content](../api/shares-get.md) directly from a sharing link.
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 [SharePoint]: sharepoint.md
 [site]: site.md
-

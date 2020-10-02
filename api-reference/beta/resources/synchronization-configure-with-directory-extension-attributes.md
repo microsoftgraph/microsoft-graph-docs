@@ -1,4 +1,4 @@
----
+﻿---
 title: "Configure synchronization with directory extension attributes"
 description: "Customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes."
 localization_priority: Normal
@@ -83,34 +83,38 @@ You'll need the full name of the extension attribute. If you don't know the full
 * [Extending the Azure AD directory schema with custom properties](https://azure.microsoft.com/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
 * [Directory schema extensions | Graph API concepts](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
-
 ## Get the synchronization schema
+
 The following example shows how to get the synchronization schema.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationschema"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 
@@ -119,6 +123,7 @@ Authorization: Bearer {Token}
   "truncated": true,
   "@odata.type": "microsoft.graph.synchronizationSchema"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -225,7 +230,7 @@ Use a plain text editor of your choice (for example, [Notepad++](https://notepad
     - In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).
     - In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.
 
-    ```json
+```json
     {
         "directories": [
             {
@@ -272,7 +277,7 @@ Use a plain text editor of your choice (for example, [Notepad++](https://notepad
             },
         ]
     }
-    ```
+```
 
 ## Save the modified synchronization schema
 
@@ -290,8 +295,10 @@ HTTP/1.1 201 No Content
 ```
 
 If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get the synchronization schema",
@@ -301,5 +308,3 @@ If the schema was saved successfully, on the next iteration of the synchronizati
   "suppressions": [
   ]
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "pfxUserCertificate resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,47 +18,53 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List pfxUserCertificates](../api/intune-raimportcerts-pfxusercertificate-list.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) collection|List properties and relationships of the [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) objects.|
-|[Get pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-get.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|Read properties and relationships of the [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object.|
-|[Create pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-create.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|Create a new [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object.|
-|[Delete pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-delete.md)|None|Deletes a [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md).|
-|[Update pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-update.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|Update the properties of a [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object.|
+
+| Method                                                                                | Return Type                                                                              | Description                                                                                                                     |
+| :------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| [List pfxUserCertificates](../api/intune-raimportcerts-pfxusercertificate-list.md)    | [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) collection | List properties and relationships of the [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) objects. |
+| [Get pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-get.md)       | [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)            | Read properties and relationships of the [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object.  |
+| [Create pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-create.md) | [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)            | Create a new [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object.                              |
+| [Delete pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-delete.md) | None                                                                                     | Deletes a [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md).                                        |
+| [Update pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-update.md) | [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)            | Update the properties of a [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object.                |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|tenantId|Guid|Not yet documented|
-|userId|Guid|Not yet documented|
-|thumbprint|String|Not yet documented|
-|userUpn|String|Not yet documented|
-|encryptedPfxBlob|String|Not yet documented|
-|encryptedPfxPassword|String|Not yet documented|
-|certStartDate|DateTimeOffset|Not yet documented|
-|certExpirationDate|DateTimeOffset|Not yet documented|
-|providerName|String|Not yet documented|
-|encryptionKeyName|String|Not yet documented|
-|paddingScheme|Int32|Not yet documented|
-|status|Int32|Not yet documented|
-|intendedPurpose|Int32|Not yet documented|
-|createdTime|DateTimeOffset|Not yet documented|
-|isDeleted|Boolean|Not yet documented|
-|lastModifiedTime|DateTimeOffset|Not yet documented|
-|eTag|String|Not yet documented|
+
+| Property             | Type           | Description        |
+| :------------------- | :------------- | :----------------- |
+| tenantId             | Guid           | Not yet documented |
+| userId               | Guid           | Not yet documented |
+| thumbprint           | String         | Not yet documented |
+| userUpn              | String         | Not yet documented |
+| encryptedPfxBlob     | String         | Not yet documented |
+| encryptedPfxPassword | String         | Not yet documented |
+| certStartDate        | DateTimeOffset | Not yet documented |
+| certExpirationDate   | DateTimeOffset | Not yet documented |
+| providerName         | String         | Not yet documented |
+| encryptionKeyName    | String         | Not yet documented |
+| paddingScheme        | Int32          | Not yet documented |
+| status               | Int32          | Not yet documented |
+| intendedPurpose      | Int32          | Not yet documented |
+| createdTime          | DateTimeOffset | Not yet documented |
+| isDeleted            | Boolean        | Not yet documented |
+| lastModifiedTime     | DateTimeOffset | Not yet documented |
+| eTag                 | String         | Not yet documented |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.pfxUserCertificate"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.pfxUserCertificate",
   "tenantId": "Guid",
@@ -80,9 +86,3 @@ Here is a JSON representation of the resource.
   "eTag": "String"
 }
 ```
-
-
-
-
-
-

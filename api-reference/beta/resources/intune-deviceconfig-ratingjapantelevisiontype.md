@@ -1,4 +1,4 @@
----
+﻿---
 title: "ratingJapanTelevisionType enum type"
 description: "TV content rating labels in Japan"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 TV content rating labels in Japan
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|allAllowed|0|Default value, allow all TV shows content|
-|allBlocked|1|Do not allow any TV shows content|
-|explicitAllowed|2|All TV content is explicitly allowed|
 
-
-
-
-
-
+| Member          | Value | Description                               |
+| :-------------- | :---- | :---------------------------------------- |
+| allAllowed      | 0     | Default value, allow all TV shows content |
+| allBlocked      | 1     | Do not allow any TV shows content         |
+| explicitAllowed | 2     | All TV content is explicitly allowed      |

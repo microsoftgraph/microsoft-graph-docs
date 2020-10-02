@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get offerShiftRequest"
 description: "Retrieve the properties and relationships of an offerShiftRequest object."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Retrieve the properties and relationships of an [offerShiftRequest](../resources
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)                                    |
+| :------------------------------------- | :----------------------------------------------------------------------------- |
 | Delegated (work or school account)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Schedule.Read.All, Schedule.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                 |
+| Application                            | Schedule.Read.All, Schedule.ReadWrite.All                                      |
 
 ## HTTP request
 
@@ -39,8 +39,8 @@ This method does not support OData query parameters to customize the response.
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_offershiftrequest"
@@ -66,20 +67,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-offershiftrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-offershiftrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-offershiftrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -107,6 +111,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get offerShiftRequest",
@@ -114,5 +119,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosHomeScreenPage resource type"
 description: "A page containing apps and folders on the Home Screen"
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 A page containing apps and folders on the Home Screen
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Name of the page|
-|icons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection|A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements.|
+
+| Property    | Type                                                                                  | Description                                                                                            |
+| :---------- | :------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| displayName | String                                                                                | Name of the page                                                                                       |
+| icons       | [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection | A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenPage"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenPage",
   "displayName": "String",
@@ -58,9 +63,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

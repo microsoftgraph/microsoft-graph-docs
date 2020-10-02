@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceHealthScriptRemediationSummary resource type"
 description: "The number of device health scripts deployed and the number of devices the scripts remediated."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 The number of device health scripts deployed and the number of devices the scripts remediated.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|scriptCount|Int32|The number of device health scripts deployed.|
-|remediatedDeviceCount|Int32|The number of devices remediated by device health scripts.|
+
+| Property              | Type  | Description                                                |
+| :-------------------- | :---- | :--------------------------------------------------------- |
+| scriptCount           | Int32 | The number of device health scripts deployed.              |
+| remediatedDeviceCount | Int32 | The number of devices remediated by device health scripts. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceHealthScriptRemediationSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRemediationSummary",
   "scriptCount": 1024,
   "remediatedDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

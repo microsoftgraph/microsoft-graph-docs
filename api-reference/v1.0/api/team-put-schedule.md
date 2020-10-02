@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create or replace schedule"
 description: "Create or replace a **schedule** object."
 author: "akumar39"
@@ -20,16 +20,15 @@ During schedule provisioning, clients can use the [GET method](schedule-get.md) 
 
 Clients can also inspect the configuration of the schedule.
 
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Schedule.ReadWrite.All                      |
 
 ## HTTP request
 
@@ -41,10 +40,10 @@ PUT /teams/{teamId}/schedule
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json. Required.  |
+| Header        | Value                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -59,10 +58,12 @@ If successful, this method returns a `200 OK` response code and a [schedule](../
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "team-put-schedule"
 }-->
+
 ```http
 PUT https://graph.microsoft.com/v1/teams/{teamId}/schedule
 Content-type: application/json
@@ -72,14 +73,15 @@ Content-type: application/json
   "timeZone": "America/Chicago"
 }
 ```
----
 
+---
 
 ### Response
 
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,6 +109,7 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -118,4 +121,3 @@ Content-length: 401
   ]
 }
 -->
-

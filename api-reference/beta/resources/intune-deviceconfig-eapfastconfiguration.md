@@ -1,4 +1,4 @@
----
+﻿---
 title: "eapFastConfiguration enum type"
 description: "Available settings for EAP-FAST Configuration."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Available settings for EAP-FAST Configuration.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|noProtectedAccessCredential|0|Use EAP-FAST without Protected Access Credential (PAC).|
-|useProtectedAccessCredential|1|Use Protected Access Credential (PAC).|
-|useProtectedAccessCredentialAndProvision|2|Use Protected Access Credential (PAC) and Provision PAC.|
-|useProtectedAccessCredentialAndProvisionAnonymously|3|Use Protected Access Credential (PAC), Provision PAC, and do so anonymously.|
 
-
-
-
-
-
+| Member                                              | Value | Description                                                                  |
+| :-------------------------------------------------- | :---- | :--------------------------------------------------------------------------- |
+| noProtectedAccessCredential                         | 0     | Use EAP-FAST without Protected Access Credential (PAC).                      |
+| useProtectedAccessCredential                        | 1     | Use Protected Access Credential (PAC).                                       |
+| useProtectedAccessCredentialAndProvision            | 2     | Use Protected Access Credential (PAC) and Provision PAC.                     |
+| useProtectedAccessCredentialAndProvisionAnonymously | 3     | Use Protected Access Credential (PAC), Provision PAC, and do so anonymously. |

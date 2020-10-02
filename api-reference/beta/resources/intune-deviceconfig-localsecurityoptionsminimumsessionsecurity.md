@@ -1,4 +1,4 @@
----
+﻿---
 title: "localSecurityOptionsMinimumSessionSecurity enum type"
 description: "Possible values for LocalSecurityOptionsMinimumSessionSecurity"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for LocalSecurityOptionsMinimumSessionSecurity
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Send LM & NTLM responses|
-|requireNtmlV2SessionSecurity|1|Send LM & NTLM-use NTLMv2 session security if negotiated|
-|require128BitEncryption|2|Send LM & NTLM responses only|
-|ntlmV2And128BitEncryption|3|Send LM & NTLMv2 responses only|
 
-
-
-
-
-
+| Member                       | Value | Description                                              |
+| :--------------------------- | :---- | :------------------------------------------------------- |
+| none                         | 0     | Send LM & NTLM responses                                 |
+| requireNtmlV2SessionSecurity | 1     | Send LM & NTLM-use NTLMv2 session security if negotiated |
+| require128BitEncryption      | 2     | Send LM & NTLM responses only                            |
+| ntlmV2And128BitEncryption    | 3     | Send LM & NTLMv2 responses only                          |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "averageComparativeScore resource type"
 description: "Contains various different scores based on different scopes."
 localization_priority: Normal
@@ -15,10 +15,10 @@ Contains various different scores based on different scopes (for example, averag
 
 ## Properties
 
-|Property |Type |Description |
-|:--|:--|:--|
-|basis|String|Scope type. The possible values are: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
-|averageScore|Double|Average score within specified basis.|
+| Property     | Type   | Description                                                                       |
+| :----------- | :----- | :-------------------------------------------------------------------------------- |
+| basis        | String | Scope type. The possible values are: `AllTenants`, `TotalSeats`, `IndustryTypes`. |
+| averageScore | Double | Average score within specified basis.                                             |
 
 ## JSON representation
 
@@ -40,7 +40,6 @@ The following is a JSON representation of the resource.
 
 ```
 
-
 <!-- {
   "type": "#page.annotation",
   "description": "averageComparativeScore resource",
@@ -48,4 +47,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

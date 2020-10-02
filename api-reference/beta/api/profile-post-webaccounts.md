@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create webAccount"
 description: "Create a new webAccount object."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Create a new [webAccount](../resources/webaccount.md) object in a user's [profil
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,10 +36,10 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 
 ## Request headers
 
-| Name           | Description                 |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -47,16 +47,16 @@ In the request body, supply a JSON representation of [webAccount](../resources/w
 
 The following table shows the properties that are possible to set when you create a new [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Contains the description the user has provided for the account on the service being referenced.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|service|[serviceInformation](../resources/serviceinformation.md)| Contains basic detail about the service that is being associated. |
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
-|statusMessage|String|Contains a status message from the cloud service if provided or synchronized. |
-|userId|String|The user name  displayed for the webaccount.  |
-|webUrl|String|Contains a link to the user's profile on the cloud service if one exists.|
+| Property         | Type                                                     | Description                                                                                                                                                                                                                                                                    |
+| :--------------- | :------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences | String                                                   | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| description      | String                                                   | Contains the description the user has provided for the account on the service being referenced.                                                                                                                                                                                |
+| inference        | [inferenceData](../resources/inferencedata.md)           | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| service          | [serviceInformation](../resources/serviceinformation.md) | Contains basic detail about the service that is being associated.                                                                                                                                                                                                              |
+| source           | [personDataSource](../resources/persondatasource.md)     | Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                                                             |
+| statusMessage    | String                                                   | Contains a status message from the cloud service if provided or synchronized.                                                                                                                                                                                                  |
+| userId           | String                                                   | The user name  displayed for the webaccount.                                                                                                                                                                                                                                   |
+| webUrl           | String                                                   | Contains a link to the user's profile on the cloud service if one exists.                                                                                                                                                                                                      |
 
 ## Response
 
@@ -69,6 +69,7 @@ If successful, this method returns `201, Created` response code and a new [webAc
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_webaccount_from_profile"
@@ -87,20 +88,23 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-webaccount-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-webaccount-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-webaccount-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -151,5 +155,3 @@ Content-type: application/json
   "webUrl": "https://github.com/innocenty.popov"
 }
 ```
-
-

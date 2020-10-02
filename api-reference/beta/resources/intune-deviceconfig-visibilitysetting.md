@@ -1,4 +1,4 @@
----
+﻿---
 title: "visibilitySetting enum type"
 description: "Generic visibility state."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Generic visibility state.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured.|
-|hide|1|Hide.|
-|show|2|Show.|
 
-
-
-
-
-
+| Member        | Value | Description     |
+| :------------ | :---- | :-------------- |
+| notConfigured | 0     | Not configured. |
+| hide          | 1     | Hide.           |
+| show          | 2     | Show.           |

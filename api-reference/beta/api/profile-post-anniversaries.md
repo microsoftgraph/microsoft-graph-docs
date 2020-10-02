@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create personAnniversary"
 description: "Use this API to create a new personAnniversary."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Use this API to create a new [personAnniversary](../resources/personanniversary.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,10 +36,10 @@ POST /users/{id | userPrincipalName}/profile/anniversaries
 
 ## Request headers
 
-| Name      |Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -47,13 +47,13 @@ In the request body, supply a JSON representation of [personAnniversary](../reso
 
 The following table shows the properties that are possible to set within a new **personAnniversary**** object in a user's [profile](../resources/profile.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|date|Date|Contains the date associated with the anniversary type.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
-|type|anniversaryType|The type of anniversary the date represents. Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
+| Property         | Type                                                 | Description                                                                                                                                                                                                                                                                    |
+| :--------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences | String                                               | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| date             | Date                                                 | Contains the date associated with the anniversary type.                                                                                                                                                                                                                        |
+| inference        | [inferenceData](../resources/inferencedata.md)       | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| source           | [personDataSource](../resources/persondatasource.md) | Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                                                             |
+| type             | anniversaryType                                      | The type of anniversary the date represents. Possible values are: `birthday`, `wedding`, `unknownFutureValue`.                                                                                                                                                                 |
 
 ## Response
 
@@ -66,6 +66,7 @@ If successful, this method returns `201, Created` response code and a new [perso
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_personanniversary_from_profile"
@@ -80,15 +81,19 @@ Content-type: application/json
   "date": "1980-01-08"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-personanniversary-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-personanniversary-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-personanniversary-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -136,5 +141,3 @@ Content-type: application/json
   "date": "Date"
 }
 ```
-
-

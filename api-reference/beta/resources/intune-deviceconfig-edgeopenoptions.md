@@ -1,4 +1,4 @@
----
+﻿---
 title: "edgeOpenOptions enum type"
 description: "Possible values for the EdgeOpensWith setting."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Possible values for the EdgeOpensWith setting.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured.|
-|startPage|1|StartPage.|
-|newTabPage|2|NewTabPage.|
-|previousPages|3|PreviousPages.|
-|specificPages|4|SpecificPages.|
 
-
-
-
-
-
+| Member        | Value | Description     |
+| :------------ | :---- | :-------------- |
+| notConfigured | 0     | Not configured. |
+| startPage     | 1     | StartPage.      |
+| newTabPage    | 2     | NewTabPage.     |
+| previousPages | 3     | PreviousPages.  |
+| specificPages | 4     | SpecificPages.  |

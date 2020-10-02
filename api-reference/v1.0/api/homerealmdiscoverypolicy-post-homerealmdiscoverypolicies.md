@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create homeRealmDiscoveryPolicy"
 description: "Create a new homeRealmDiscoveryPolicy."
 localization_priority: Normal
@@ -11,8 +11,6 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-
-
 Create a new [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) object.
 
 ## Permissions
@@ -20,10 +18,10 @@ Create a new [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration   |
 
 ## HTTP request
 
@@ -35,10 +33,10 @@ POST policies/homeRealmDiscoveryPolicies
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -54,8 +52,8 @@ If successful, this method returns a `201 Created` response code and a new [home
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_homerealmdiscoverypolicy_from_homerealmdiscoverypolicies"
@@ -73,24 +71,28 @@ Content-type: application/json
   "isOrganizationDefault": true
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-homerealmdiscoverypolicy-from-homerealmdiscoverypolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-homerealmdiscoverypolicy-from-homerealmdiscoverypolicies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-homerealmdiscoverypolicy-from-homerealmdiscoverypolicies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-homerealmdiscoverypolicy-from-homerealmdiscoverypolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -120,6 +122,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create homeRealmDiscoveryPolicy",
@@ -127,4 +130,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

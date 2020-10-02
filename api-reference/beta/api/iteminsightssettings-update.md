@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update itemInsights"
 description: "Update properties of itemInsightsSettings object"
 author: "simonhult"
@@ -21,15 +21,16 @@ To learn how to customize item insights privacy for your organization, see [cust
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | User.ReadWrite                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | User.ReadWrite                              |
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -38,19 +39,19 @@ PATCH /organization/{organizationId}/settings/itemInsights
 
 ## Request headers
 
-| Header       | Value|
-|:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` if organization item insights are enabled; `false` if organization item insights are disabled for all users without exceptions. Default is `true`. Optional.|
-|disabledForGroup|String| The ID of an Azure AD group, of which the members' item insights are disabled. Default is `empty`. Optional.|
+| Property                | Type    | Description                                                                                                                                                         |
+| :---------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| isEnabledInOrganization | Boolean | `true` if organization item insights are enabled; `false` if organization item insights are disabled for all users without exceptions. Default is `true`. Optional. |
+| disabledForGroup        | String  | The ID of an Azure AD group, of which the members' item insights are disabled. Default is `empty`. Optional.                                                        |
 
 ## Response
 
@@ -65,6 +66,7 @@ If successful, this method returns a `200 OK` response code and [itemInsightsSet
 Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying users' item insights of a particular Azure AD group.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_iteminsightssettings"
@@ -78,24 +80,28 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-iteminsightssettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-iteminsightssettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-iteminsightssettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,5 +118,3 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
-
-

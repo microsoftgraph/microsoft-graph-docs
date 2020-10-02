@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: jeremyke
 title: Update a bundle
@@ -26,11 +26,11 @@ Any other change requests will be ignored.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.                             |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All   |
-|Application          | Not supported.                                           |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All        |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -42,10 +42,10 @@ PATCH /drive/items/{bundle-id}
 
 ## Request headers
 
-| Name          | Description  |
-|:------------- |:------------ |
-| Authorization | Bearer \{token\}. Required. |
-| if-match      | eTag. Optional. If this request header is included and the eTag provided does not match the current eTag on the buncle, a `412 Precondition Failed` response is returned.
+| Name          | Description                                                                                                                                                               |
+| :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Authorization | Bearer \{token\}. Required.                                                                                                                                               |
+| if-match      | eTag. Optional. If this request header is included and the eTag provided does not match the current eTag on the buncle, a `412 Precondition Failed` response is returned. |
 
 ## Request body
 
@@ -66,8 +66,8 @@ This example renames a bundle.
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
 ```json
@@ -78,20 +78,23 @@ Content-Type: application/json
   "name": "Shared legal agreements"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/rename-bundle-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/rename-bundle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/rename-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -112,7 +115,6 @@ Content-Type: application/json
 
 The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 [error-response]: /graph/errors
@@ -124,5 +126,3 @@ The response object shown here might be shortened for readability. All the prope
   "section": "documentation",
 	"tocPath": "Bundles/Update"
 } -->
-
-

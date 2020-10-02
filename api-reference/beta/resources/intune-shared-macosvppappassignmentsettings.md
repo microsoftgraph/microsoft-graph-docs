@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOsVppAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Mac VPP mobile app to a group."
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 Contains properties used to assign an Mac VPP mobile app to a group.
 
-
 Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|useDeviceLicensing|Boolean|Whether or not to use device licensing.|
+
+| Property           | Type    | Description                             |
+| :----------------- | :------ | :-------------------------------------- |
+| useDeviceLicensing | Boolean | Whether or not to use device licensing. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOsVppAppAssignmentSettings"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.macOsVppAppAssignmentSettings",
   "useDeviceLicensing": true
 }
 ```
-
-
-
-
-
-

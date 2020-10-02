@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create single-value extended property"
 description: "Create one or more single-value extended properties in a new or existing instance of a resource. "
 localization_priority: Normal
@@ -32,21 +32,23 @@ See [Extended properties overview](../resources/extended-properties-overview.md)
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
+
 Depending on the resource you're creating the extended property in and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-----|:-----|:-----|:-----|
-| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| group [calendar](../resources/calendar.md) | Group.ReadWrite.All | Not supported | Not supported |
-| group [event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
-| group [post](../resources/post.md) | Group.ReadWrite.All | Not supported | Not supported |
-| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
-| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| Supported resource                             | Delegated (work or school account) | Delegated (personal Microsoft account) | Application         |
+| :--------------------------------------------- | :--------------------------------- | :------------------------------------- | :------------------ |
+| [calendar](../resources/calendar.md)           | Calendars.ReadWrite                | Calendars.ReadWrite                    | Calendars.ReadWrite |
+| [contact](../resources/contact.md)             | Contacts.ReadWrite                 | Contacts.ReadWrite                     | Contacts.ReadWrite  |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite                 | Contacts.ReadWrite                     | Contacts.ReadWrite  |
+| [event](../resources/event.md)                 | Calendars.ReadWrite                | Calendars.ReadWrite                    | Calendars.ReadWrite |
+| group [calendar](../resources/calendar.md)     | Group.ReadWrite.All                | Not supported                          | Not supported       |
+| group [event](../resources/event.md)           | Group.ReadWrite.All                | Not supported                          | Not supported       |
+| group [post](../resources/post.md)             | Group.ReadWrite.All                | Not supported                          | Not supported       |
+| [mailFolder](../resources/mailfolder.md)       | Mail.ReadWrite                     | Mail.ReadWrite                         | Mail.ReadWrite      |
+| [message](../resources/message.md)             | Mail.ReadWrite                     | Mail.ReadWrite                         | Mail.ReadWrite      |
 
 ## HTTP request
+
 You can create extended properties in a new or existing resource instance.
 
 To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
@@ -60,6 +62,7 @@ see the corresponding topics for creating a [message](../resources/message.md), 
 The following is the syntax of the requests.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages
 POST /users/{id|userPrincipalName}/messages
@@ -96,6 +99,7 @@ request, and include the extended property in the request body.
 **Note** You cannot create an extended property in an existing group post.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /me/messages/{id}
 PATCH /users/{id|userPrincipalName}/messages/{id}
@@ -120,21 +124,22 @@ PATCH /groups/{id}/events/{id}
 ```
 
 ## Request headers
-| Name       | Value |
-|:---------------|:----------|
+
+| Name          | Value                     |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type | application/json |
+| Content-Type  | application/json          |
 
 ## Request body
 
 Provide a JSON body of each [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object in the
 **singleValueExtendedProperties** collection property of the resource instance.
 
-|Property|Type|Description|
-|:-----|:-----|:-----|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| An array of one or more single-valued extended properties. |
-|id|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
-|value|string|For each property in the **singleValueExtendedProperties** collection, specify the property value. Required.|
+| Property                      | Type                                                                                              | Description                                                                                                                                                                                                                                                                         |
+| :---------------------------- | :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| singleValueExtendedProperties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection | An array of one or more single-valued extended properties.                                                                                                                                                                                                                          |
+| id                            | String                                                                                            | For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required. |
+| value                         | string                                                                                            | For each property in the **singleValueExtendedProperties** collection, specify the property value. Required.                                                                                                                                                                        |
 
 When creating an extended property in a _new_ resource instance, in addition to the
 new **singleValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md),
@@ -143,11 +148,11 @@ new **singleValueExtendedProperties** collection, provide a JSON representation 
 ## Response
 
 #### Response code
+
 An operation successful in creating an extended property in a new resource instance returns `201 Created`, except in a new group post,
 depending on the method used, the operation can return `200 OK` or `202 Accepted`.
 
 In an existing resource instance, a successful create operation returns `200 OK`.
-
 
 #### Response body
 
@@ -157,9 +162,8 @@ created extended property, [get the instance expanded with the extended property
 When creating an extended property in a _new_ [group post](../resources/post.md) by replying to a thread or post, the response includes only
 a response code but not the new post nor the extended property.
 
-
-
 ## Example
+
 ##### Request 1
 
 The first example creates a new event and a single-value extended property in the same POST operation. Apart from the properties you'd normally
@@ -169,6 +173,7 @@ extended property, and the following for the property:
 - **value** specifies `Food` as the value of the `Fun` property.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/events
 Content-Type: application/json
@@ -213,7 +218,6 @@ The response does not include any newly created extended properties.
 
 To see the newly created extended property, [get the event expanded with the extended property](../api/singlevaluelegacyextendedproperty-get.md).
 
-
 ****
 
 ##### Request 2
@@ -225,6 +229,7 @@ extended property:
 - **value** specifies `Green` as the value of the `Color` property.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=
 
@@ -249,8 +254,10 @@ include the newly created extended property.
 To see the newly created extended property, [get the message expanded with the extended property](../api/singlevaluelegacyextendedproperty-get.md).
 
 <!-- This page was manually created. -->
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create a single-value extended property",
@@ -258,5 +265,3 @@ To see the newly created extended property, [get the message expanded with the e
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

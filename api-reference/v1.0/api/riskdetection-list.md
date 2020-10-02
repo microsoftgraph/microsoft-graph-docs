@@ -1,4 +1,4 @@
----
+﻿---
 title: "List riskDetections"
 description: "Get a list of the riskDetection objects and their properties."
 author: "cloudhandler"
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List riskDetections
+
 Namespace: microsoft.graph
 
 Get a list of the [riskDetection](../resources/riskdetection.md) objects and their properties.
@@ -16,13 +17,14 @@ Get a list of the [riskDetection](../resources/riskdetection.md) objects and the
 >You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskEvent.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskEvent.Read.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | IdentityRiskEvent.Read.All                  |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | IdentityRiskEvent.Read.All                  |
 
 ## HTTP request
 
@@ -30,19 +32,23 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /identityProtection/riskDetections
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -52,25 +58,29 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_riskdetection"
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "collection(microsoft.graph.riskDetection)"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -107,5 +117,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-

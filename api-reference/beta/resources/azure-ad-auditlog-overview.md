@@ -1,4 +1,4 @@
----
+﻿---
 title: "Activity reports API overview"
 description: "Use the activity reports API in Microsoft Graph to access the reports that Azure Active Directory creates to help you track user activity in a tenant."
 localization_priority: Priority
@@ -74,5 +74,3 @@ To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/detail
 - Review the [directoryAudit](directoryaudit.md) resource and actions.
 - Review the [signIn](signin.md) resource and actions. 
 - Review the [provisioningObjectSummary](provisioningobjectsummary.md) resource.
-
-

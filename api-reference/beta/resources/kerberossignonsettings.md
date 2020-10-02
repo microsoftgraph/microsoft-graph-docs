@@ -1,4 +1,4 @@
----
+﻿---
 title: "kerberosSignOnSettings resource type"
 description: "Represents the kerberos settings for an on-premises application published via Application Proxy."
 localization_priority: Normal
@@ -21,10 +21,10 @@ If you are configuring password-based single-sign this must be set using [create
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|kerberosServicePrincipalName|String| The Internal Application SPN of the application server. This SPN needs to be in the list of services to which the connector can present delegated credentials. |
-|kerberosSignOnMappingAttributeType|String| The Delegated Login Identity for the connector to use on behalf of your users. For more information, see [Working with different on-premises and cloud identities ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities). Possible values are: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`.|
+| Property                           | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| :--------------------------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| kerberosServicePrincipalName       | String | The Internal Application SPN of the application server. This SPN needs to be in the list of services to which the connector can present delegated credentials.                                                                                                                                                                                                                                                                                                                                                   |
+| kerberosSignOnMappingAttributeType | String | The Delegated Login Identity for the connector to use on behalf of your users. For more information, see [Working with different on-premises and cloud identities ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities). Possible values are: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`. |
 
 ## JSON representation
 
@@ -48,6 +48,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "kerberosSignOnSettings resource",
@@ -55,4 +56,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

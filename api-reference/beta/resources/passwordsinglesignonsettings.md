@@ -1,4 +1,4 @@
----
+﻿---
 title: "passwordSingleSignOnSettings resource type"
 description: "Settings related to Password-based single sign-on"
 localization_priority: Normal
@@ -15,9 +15,9 @@ Contains the collection of Password-based single sign-on settings.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|fields|[passwordSingleSignOnField](passwordsinglesignonfield.md) collection||
+| Property | Type                                                                 | Description |
+| :------- | :------------------------------------------------------------------- | :---------- |
+| fields   | [passwordSingleSignOnField](passwordsinglesignonfield.md) collection |             |
 
 ## JSON representation
 
@@ -40,6 +40,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "passwordSingleSignOnSettings resource",
@@ -47,4 +48,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

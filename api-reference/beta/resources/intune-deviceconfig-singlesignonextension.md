@@ -1,4 +1,4 @@
----
+﻿---
 title: "singleSignOnExtension resource type"
 description: "Represents an Apple Single Sign-On Extension."
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 Represents an Apple Single Sign-On Extension.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.singleSignOnExtension"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.singleSignOnExtension"
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get secureScore"
 description: "Retrieve the properties and relationships of a secureScore object."
 author: "preetikr"
@@ -17,11 +17,11 @@ Retrieve the properties and relationships of a [secureScore](../resources/secure
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All   |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)           |
+| :------------------------------------- | :---------------------------------------------------- |
+| Delegated (work or school account)     | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                        |
+| Application                            | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## HTTP request
 
@@ -33,9 +33,9 @@ GET /security/secureScores/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {code}. Required.|
+| Name          | Description              |
+| :------------ | :----------------------- |
+| Authorization | Bearer {code}. Required. |
 
 ## Request body
 
@@ -52,6 +52,7 @@ If successful, this method returns a `200 OK` response code and a **secureScore*
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_securescore"
@@ -60,28 +61,33 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/secureScores/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securescore-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-securescore-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securescore-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-securescore-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -153,4 +159,3 @@ Content-type: application/json
   ]
 }
 -->
-

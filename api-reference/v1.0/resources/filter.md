@@ -1,4 +1,4 @@
----
+﻿---
 title: "Filter resource type"
 description: "Manages the filtering of a table's column."
 localization_priority: Normal
@@ -13,19 +13,18 @@ Namespace: microsoft.graph
 
 Manages the filtering of a table's column.
 
-
 ## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Apply](../api/filter-apply.md)|None|Apply the given filter criteria on the given column.|
-|[Clear](../api/filter-clear.md)|None|Clear the filter on the given column.|
+| Method                          | Return Type | Description                                          |
+| :------------------------------ | :---------- | :--------------------------------------------------- |
+| [Apply](../api/filter-apply.md) | None        | Apply the given filter criteria on the given column. |
+| [Clear](../api/filter-clear.md) | None        | Clear the filter on the given column.                |
 
 ## Properties
 
-| Name | Type	|Description|
-|:---------------|:--------|:----------|
-|criteria|[WorkbookFilterCriteria](filtercriteria.md)|The currently applied filter on the given column. Read-only.|
+| Name     | Type                                        | Description                                                  |
+| :------- | :------------------------------------------ | :----------------------------------------------------------- |
+| criteria | [WorkbookFilterCriteria](filtercriteria.md) | The currently applied filter on the given column. Read-only. |
 
 ## JSON representation
 
@@ -48,6 +47,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Filter resource",
@@ -55,4 +55,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

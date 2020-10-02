@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get managedDevice"
 description: "Read properties and relationships of the managedDevice object."
 author: "dougeby"
@@ -16,51 +16,62 @@ Namespace: microsoft.graph
 Read properties and relationships of the [managedDevice](../resources/intune-devices-manageddevice.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged)                                           |
+| :------------------------------------- | :------------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                        |
+| Application                            | Not supported.                                                                        |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /users/{usersId}/managedDevices/{managedDeviceId}
 GET /deviceManagement/managedDevices/{managedDeviceId}
 GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and [managedDevice](../resources/intune-devices-manageddevice.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 GET https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 4920
@@ -168,12 +179,3 @@ Content-Length: 4920
   }
 }
 ```
-
-
-
-
-
-
-
-
-

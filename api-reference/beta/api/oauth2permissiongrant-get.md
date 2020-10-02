@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get an oAuth2PermissionGrant"
 description: "Retrieve the properties and relationships of single oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
@@ -23,11 +23,11 @@ An **oAuth2PermissionGrant** represents delegated permissions which have been gr
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                     |
+| :------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                  |
+| Application                            | Directory.Read.All, Directory.ReadWrite.All                                                                     |
 
 ## HTTP request
 
@@ -43,9 +43,9 @@ This method supports the [OData query parameters](/graph/query_parameters) to he
 
 ## Request headers
 
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
 
@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and [oAuth2Permissio
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_oAuth2PermissionGrant"
@@ -72,14 +73,17 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-oauth2permissiongrant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-oauth2permissiongrant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -116,6 +120,7 @@ Content-Length: 200
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -127,5 +132,3 @@ Content-Length: 200
   ]
 }
 -->
-
-

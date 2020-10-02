@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create userExperienceAnalyticsAppHealthApplicationPerformance"
 description: "Create a new userExperienceAnalyticsAppHealthApplicationPerformance object."
 author: "dougeby"
@@ -18,59 +18,65 @@ Namespace: microsoft.graph
 Create a new [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the userExperienceAnalyticsAppHealthApplicationPerformance object.
 
 The following table shows the properties that are required when you create the userExperienceAnalyticsAppHealthApplicationPerformance.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics app performance object.|
-|appHangCount|Int32|The number of hangs for the app. Valid values -2147483648 to 2147483647|
-|appHealthScore|Double|The health score of the app. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|appHealthStatus|String|The overall health status of the app.|
-|allOrgsHealthScore|Double|The median health score of the application across all organizations. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|activeDeviceCount|Int32|The number of devices where the app has been active. Valid values -2147483648 to 2147483647|
-|appName|String|The name of the application.|
-|appDisplayName|String|The friendly name of the application.|
-|appPublisher|String|The publisher of the application.|
-|appUsageDuration|Int32|The total usage time of the application in minutes. Valid values -2147483648 to 2147483647|
-|appCrashCount|Int32|The number of crashes for the app. Valid values -2147483648 to 2147483647|
-|meanTimeToFailureInMinutes|Int32|The mean time to failure for the app in minutes. Valid values -2147483648 to 2147483647|
-
-
+| Property                   | Type   | Description                                                                                                                       |
+| :------------------------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| id                         | String | The unique identifier of the user experience analytics app performance object.                                                    |
+| appHangCount               | Int32  | The number of hangs for the app. Valid values -2147483648 to 2147483647                                                           |
+| appHealthScore             | Double | The health score of the app. Valid values -1.79769313486232E+308 to 1.79769313486232E+308                                         |
+| appHealthStatus            | String | The overall health status of the app.                                                                                             |
+| allOrgsHealthScore         | Double | The median health score of the application across all organizations. Valid values -1.79769313486232E+308 to 1.79769313486232E+308 |
+| activeDeviceCount          | Int32  | The number of devices where the app has been active. Valid values -2147483648 to 2147483647                                       |
+| appName                    | String | The name of the application.                                                                                                      |
+| appDisplayName             | String | The friendly name of the application.                                                                                             |
+| appPublisher               | String | The publisher of the application.                                                                                                 |
+| appUsageDuration           | Int32  | The total usage time of the application in minutes. Valid values -2147483648 to 2147483647                                        |
+| appCrashCount              | Int32  | The number of crashes for the app. Valid values -2147483648 to 2147483647                                                         |
+| meanTimeToFailureInMinutes | Int32  | The mean time to failure for the app in minutes. Valid values -2147483648 to 2147483647                                           |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 Content-type: application/json
 Content-length: 473
@@ -92,8 +98,10 @@ Content-length: 473
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 522
@@ -114,9 +122,3 @@ Content-Length: 522
   "meanTimeToFailureInMinutes": 10
 }
 ```
-
-
-
-
-
-

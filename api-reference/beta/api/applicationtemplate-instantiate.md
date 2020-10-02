@@ -1,4 +1,4 @@
----
+﻿---
 title: "applicationTemplate: instantiate"
 description: "Use this API to create a new applicationTemplate"
 localization_priority: Normal
@@ -19,10 +19,10 @@ Add an instance of an application from the Azure AD application gallery into you
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)        |
+| :------------------------------------- | :------------------------------------------------- |
 | Delegated (work or school account)     | Application.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                     |
 | Application                            | Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
@@ -36,16 +36,16 @@ POST /applicationTemplates/{id}/instantiate
 ## Request headers
 
 | Name          | Description   |
-|:--------------|:--------------|
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String|Custom name of the application|
+| Parameter   | Type   | Description                    |
+| :---------- | :----- | :----------------------------- |
+| displayName | String | Custom name of the application |
 
 ## Response
 
@@ -63,6 +63,7 @@ The following is an example of the request.
 > You can use this API to instantiate [non-gallery apps](/azure/active-directory/manage-apps/add-non-gallery-app). Use the following ID for **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "applicationtemplate_instantiate"
@@ -76,20 +77,23 @@ Content-type: application/json
   "displayName": "My custom name"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/applicationtemplate-instantiate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/applicationtemplate-instantiate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -160,6 +164,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "applicationTemplate: instantiate",

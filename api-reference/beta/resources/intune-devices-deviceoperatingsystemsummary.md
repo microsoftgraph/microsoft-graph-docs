@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
 author: "dougeby"
@@ -18,33 +18,38 @@ Namespace: microsoft.graph
 Device operating system summary.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|androidCount|Int32|Number of android device count.|
-|iosCount|Int32|Number of iOS device count.|
-|macOSCount|Int32|Number of Mac OS X device count.|
-|windowsMobileCount|Int32|Number of Windows mobile device count.|
-|windowsCount|Int32|Number of Windows device count.|
-|unknownCount|Int32|Number of unknown device count.|
-|androidDedicatedCount|Int32|Number of dedicated Android devices.|
-|androidDeviceAdminCount|Int32|Number of device admin Android devices.|
-|androidFullyManagedCount|Int32|Number of fully managed Android devices.|
-|androidWorkProfileCount|Int32|Number of work profile Android devices.|
-|androidCorporateWorkProfileCount|Int32|The count of Corporate work profile Android devices. Also known as Corporate Owned Personally Enabled (COPE). Valid values -1 to 2147483647|
-|configMgrDeviceCount|Int32|Number of ConfigMgr managed devices.|
-|aospUserlessCount|Int32|Number of AOSP dedicated Android devices. Valid values 0 to 2147483647|
+
+| Property                         | Type  | Description                                                                                                                                 |
+| :------------------------------- | :---- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| androidCount                     | Int32 | Number of android device count.                                                                                                             |
+| iosCount                         | Int32 | Number of iOS device count.                                                                                                                 |
+| macOSCount                       | Int32 | Number of Mac OS X device count.                                                                                                            |
+| windowsMobileCount               | Int32 | Number of Windows mobile device count.                                                                                                      |
+| windowsCount                     | Int32 | Number of Windows device count.                                                                                                             |
+| unknownCount                     | Int32 | Number of unknown device count.                                                                                                             |
+| androidDedicatedCount            | Int32 | Number of dedicated Android devices.                                                                                                        |
+| androidDeviceAdminCount          | Int32 | Number of device admin Android devices.                                                                                                     |
+| androidFullyManagedCount         | Int32 | Number of fully managed Android devices.                                                                                                    |
+| androidWorkProfileCount          | Int32 | Number of work profile Android devices.                                                                                                     |
+| androidCorporateWorkProfileCount | Int32 | The count of Corporate work profile Android devices. Also known as Corporate Owned Personally Enabled (COPE). Valid values -1 to 2147483647 |
+| configMgrDeviceCount             | Int32 | Number of ConfigMgr managed devices.                                                                                                        |
+| aospUserlessCount                | Int32 | Number of AOSP dedicated Android devices. Valid values 0 to 2147483647                                                                      |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceOperatingSystemSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceOperatingSystemSummary",
   "androidCount": 1024,
@@ -62,9 +67,3 @@ Here is a JSON representation of the resource.
   "aospUserlessCount": 1024
 }
 ```
-
-
-
-
-
-

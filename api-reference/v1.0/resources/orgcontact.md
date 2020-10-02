@@ -1,4 +1,4 @@
----
+﻿---
 title: "orgContact resource type"
 description: "Represents an organizational contact"
 localization_priority: Normal
@@ -20,7 +20,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 ## Methods
 
 | Method                                                                  | Return Type                                      | Description                                                                                                                 |
-|:------------------------------------------------------------------------|:-------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
+| :---------------------------------------------------------------------- | :----------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
 | [List organizational contacts](../api/orgcontact-list.md)               | [orgContact](orgcontact.md)                      | List properties of organizational contacts.                                                                                 |
 | [Get organizational contact](../api/orgcontact-get.md)                  | [orgContact](orgcontact.md)                      | Read properties and relationships of an organizational contact.                                                             |
 | [Get manager](../api/orgcontact-get-manager.md)                         | [directoryObject](directoryobject.md)            | Get the organizational contact's manager.                                                                                   |
@@ -34,7 +34,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 ## Properties
 
 | Property                     | Type                                                                     | Description                                                                                                                                                                                                                                                                                |
-|:-----------------------------|:-------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :--------------------------- | :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | addresses                    | [physicalOfficeAddress](physicalofficeaddress.md) collection             | Postal addresses for this organizational contact. For now a contact can only have one physical address.                                                                                                                                                                                    |
 | companyName                  | String                                                                   | Name of the company that this organizational contact belong to.                                                                                                                                                                                                                            |
 | department                   | String                                                                   | The name for the department in which the contact works.                                                                                                                                                                                                                                    |
@@ -54,7 +54,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 ## Relationships
 
 | Relationship       | Type                                             | Description                                                                                                                        |
-|:-------------------|:-------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| :----------------- | :----------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
 | directReports      | [directoryObject](directoryobject.md) collection | The contact's direct reports. (The users and contacts that have their manager property set to this contact.)  Read-only. Nullable. |
 | manager            | [directoryObject](directoryobject.md)            | The user or contact that is this contact's manager. Read-only.                                                                     |
 | memberOf           | [directoryObject](directoryobject.md) collection | Groups that this contact is a member of. Read-only. Nullable.                                                                      |
@@ -98,6 +98,7 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -108,4 +109,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "importedWindowsAutopilotDeviceIdentityUploadStatus enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|noUpload|0|No upload status.|
-|pending|1|Pending status.|
-|complete|2|Complete status.|
-|error|3|Error status.|
 
-
-
-
-
-
+| Member   | Value | Description       |
+| :------- | :---- | :---------------- |
+| noUpload | 0     | No upload status. |
+| pending  | 1     | Pending status.   |
+| complete | 2     | Complete status.  |
+| error    | 3     | Error status.     |

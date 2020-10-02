@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsFirewallRuleInterfaceTypes enum type"
 description: "Flags representing firewall rule interface types."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Flags representing firewall rule interface types.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|No flags set.|
-|remoteAccess|1|The Remote Access interface type.|
-|wireless|2|The Wireless interface type.|
-|lan|4|The LAN interface type.|
 
-
-
-
-
-
+| Member        | Value | Description                       |
+| :------------ | :---- | :-------------------------------- |
+| notConfigured | 0     | No flags set.                     |
+| remoteAccess  | 1     | The Remote Access interface type. |
+| wireless      | 2     | The Wireless interface type.      |
+| lan           | 4     | The LAN interface type.           |

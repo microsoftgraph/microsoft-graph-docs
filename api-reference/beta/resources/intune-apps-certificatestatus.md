@@ -1,4 +1,4 @@
----
+﻿---
 title: "certificateStatus enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notProvisioned|0|Not yet documented|
-|provisioned|1|Not yet documented|
 
-
-
-
-
-
+| Member         | Value | Description        |
+| :------------- | :---- | :----------------- |
+| notProvisioned | 0     | Not yet documented |
+| provisioned    | 1     | Not yet documented |

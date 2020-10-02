@@ -1,4 +1,4 @@
----
+﻿---
 title: "win32LobAppRuleOperator enum type"
 description: "Contains properties for detection operator."
 author: "dougeby"
@@ -18,18 +18,13 @@ Namespace: microsoft.graph
 Contains properties for detection operator.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured.|
-|equal|1|Equal operator.|
-|notEqual|2|Not equal operator.|
-|greaterThan|4|Greater than operator.|
-|greaterThanOrEqual|5|Greater than or equal operator.|
-|lessThan|8|Less than operator.|
-|lessThanOrEqual|9|Less than or equal operator.|
 
-
-
-
-
-
+| Member             | Value | Description                     |
+| :----------------- | :---- | :------------------------------ |
+| notConfigured      | 0     | Not configured.                 |
+| equal              | 1     | Equal operator.                 |
+| notEqual           | 2     | Not equal operator.             |
+| greaterThan        | 4     | Greater than operator.          |
+| greaterThanOrEqual | 5     | Greater than or equal operator. |
+| lessThan           | 8     | Less than operator.             |
+| lessThanOrEqual    | 9     | Less than or equal operator.    |

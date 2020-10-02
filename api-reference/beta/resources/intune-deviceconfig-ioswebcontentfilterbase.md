@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosWebContentFilterBase resource type"
 description: "Represents an iOS Web Content Filter setting base type. An empty and abstract base. Caller should use one of derived types for configurations."
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 Represents an iOS Web Content Filter setting base type. An empty and abstract base. Caller should use one of derived types for configurations.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosWebContentFilterBase"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosWebContentFilterBase"
 }
 ```
-
-
-
-
-
-

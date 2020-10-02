@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "SharePoint can be configured to retain the history for list items."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Listing versions of a ListItem (preview)
 
 Namespace: microsoft.graph
@@ -21,12 +22,11 @@ Previous versions may be retained for a finite period of time depending on admin
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|            Permission type             | Permissions (from least to most privileged) |
+| Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
 | Delegated (personal Microsoft account) | n/a                                         |
 | Application                            | Sites.Read.All, Sites.ReadWrite.All         |
-
 
 ## HTTP request
 
@@ -40,7 +40,6 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [ListItemVersion](../resources/listitemversion.md) objects in the response body.
-
 
 ## Example
 
@@ -101,7 +100,6 @@ Content-Type: application/json
 }
 ```
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -112,5 +110,3 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
-
-

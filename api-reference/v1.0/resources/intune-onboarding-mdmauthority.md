@@ -1,4 +1,4 @@
----
+﻿---
 title: "mdmAuthority enum type"
 description: "Mobile device management authority."
 author: "dougeby"
@@ -16,18 +16,10 @@ Namespace: microsoft.graph
 Mobile device management authority.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown|
-|intune|1|Intune|
-|sccm|2|SCCM|
-|office365|3|Office365|
 
-
-
-
-
-
-
-
-
+| Member    | Value | Description |
+| :-------- | :---- | :---------- |
+| unknown   | 0     | Unknown     |
+| intune    | 1     | Intune      |
+| sccm      | 2     | SCCM        |
+| office365 | 3     | Office365   |

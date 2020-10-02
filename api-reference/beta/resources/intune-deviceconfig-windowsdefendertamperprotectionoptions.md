@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsDefenderTamperProtectionOptions enum type"
 description: "Defender TamperProtection setting options"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Defender TamperProtection setting options
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not Configured|
-|enable|1|Enable windows defender tamper protection|
-|disable|2|Disable windows defender tamper protection|
 
-
-
-
-
-
+| Member        | Value | Description                                |
+| :------------ | :---- | :----------------------------------------- |
+| notConfigured | 0     | Not Configured                             |
+| enable        | 1     | Enable windows defender tamper protection  |
+| disable       | 2     | Disable windows defender tamper protection |

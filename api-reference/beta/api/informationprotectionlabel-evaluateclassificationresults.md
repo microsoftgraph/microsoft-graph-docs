@@ -1,4 +1,4 @@
----
+﻿---
 title: "informationProtectionLabel: evaluateClassificationResults"
 description: "Evaluate which label to apply based on existing content info and a classification result."
 localization_priority: Normal
@@ -53,10 +53,10 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 
 ## Request headers
 
-| Name          | Description                                                                                                                                                           |
-| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authorization | Bearer {token}. Required.                                                                                                                                             |
-| Content-type  | application/json. Required.                                                                                                                                           |
+| Name          | Description                                                                                                                                                                       |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required.                                                                                                                                                         |
+| Content-type  | application/json. Required.                                                                                                                                                       |
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
@@ -81,6 +81,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "informationprotectionlabel_evaluateclassificationresults"
@@ -109,20 +110,23 @@ User-agent: ContosoLOBApp/1.0
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/informationprotectionlabel-evaluateclassificationresults-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/informationprotectionlabel-evaluateclassificationresults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-evaluateclassificationresults-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -206,6 +210,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "informationProtectionLabel: evaluateClassificationResults",
@@ -213,5 +218,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

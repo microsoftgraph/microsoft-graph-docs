@@ -1,4 +1,4 @@
----
+﻿---
 title: "vpnServer resource type"
 description: "VPN Server definition."
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 VPN Server definition.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|description|String|Description.|
-|address|String|Address (IP address, FQDN or URL)|
-|isDefaultServer|Boolean|Default server.|
+
+| Property        | Type    | Description                       |
+| :-------------- | :------ | :-------------------------------- |
+| description     | String  | Description.                      |
+| address         | String  | Address (IP address, FQDN or URL) |
+| isDefaultServer | Boolean | Default server.                   |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vpnServer"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.vpnServer",
   "description": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "isDefaultServer": true
 }
 ```
-
-
-
-
-
-

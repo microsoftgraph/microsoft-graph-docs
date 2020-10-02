@@ -1,4 +1,4 @@
----
+﻿---
 title: "directoryObject: validateProperties"
 description: "Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies."
 localization_priority: Normal
@@ -21,36 +21,40 @@ The following validations are performed for the display name and mail nickname p
 This API returns with the first failure encountered. If one or more properties fail multiple validations, only the property with the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                             |
+| :------------------------------------- | :-------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                          |
+| Application                            | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All        |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
-``` http
+
+```http
 POST /directoryObjects/validateProperties
 ```
 
 ## Request headers
 
-| Name           | Description      |
-|:---------------|:-----------------|
-| Authorization  | Bearer {code}. Required.   |
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {code}. Required.    |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type   |Description|
-|:---------------|:--------|:----------|
-|entityType|String| `Group` is the only supported entity type. |
-|displayName|String| The display name of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
-|mailNickname|String| The mail nickname of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
-|onBehalfOfUserId|Guid| The object ID of the user to impersonate when calling the API. The validation results are for the onBehalfOfUserId's attributes and roles. |
+| Parameter        | Type   | Description                                                                                                                                                      |
+| :--------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| entityType       | String | `Group` is the only supported entity type.                                                                                                                       |
+| displayName      | String | The display name of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required.  |
+| mailNickname     | String | The mail nickname of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
+| onBehalfOfUserId | Guid   | The object ID of the user to impersonate when calling the API. The validation results are for the onBehalfOfUserId's attributes and roles.                       |
 
 ## Response
 
@@ -67,11 +71,13 @@ This is an example of a successful validation request.
 ### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "directoryobject_validateproperties"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
 Content-length: 164
@@ -83,26 +89,31 @@ Content-length: 164
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-validateproperties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -110,6 +121,7 @@ HTTP/1.1 204 No Content
 This is an example of a request with validation errors.
 
 ### Request
+
 ```http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
@@ -124,6 +136,7 @@ Content-length: 164
 ```
 
 ### Response
+
 ```http
 HTTP/1.1 422 
 Content-Type: application/json
@@ -158,6 +171,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "directoryObject: validateProperties",
@@ -167,5 +181,3 @@ Content-Type: application/json
   "suppressions": [
   ]
 }-->
-
-

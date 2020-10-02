@@ -1,4 +1,4 @@
----
+﻿---
 title: "applicationGuardBlockClipboardSharingType enum type"
 description: "Possible values for applicationGuardBlockClipboardSharingType"
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Possible values for applicationGuardBlockClipboardSharingType
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not Configured|
-|blockBoth|1|Block clipboard to share data both from Host to Container and from Container to Host|
-|blockHostToContainer|2|Block clipboard to share data from Host to Container|
-|blockContainerToHost|3|Block clipboard to share data from Container to Host|
-|blockNone|4|Block clipboard to share data neither from Host to Container nor from Container to Host|
 
-
-
-
-
-
+| Member               | Value | Description                                                                             |
+| :------------------- | :---- | :-------------------------------------------------------------------------------------- |
+| notConfigured        | 0     | Not Configured                                                                          |
+| blockBoth            | 1     | Block clipboard to share data both from Host to Container and from Container to Host    |
+| blockHostToContainer | 2     | Block clipboard to share data from Host to Container                                    |
+| blockContainerToHost | 3     | Block clipboard to share data from Container to Host                                    |
+| blockNone            | 4     | Block clipboard to share data neither from Host to Container nor from Container to Host |

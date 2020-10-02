@@ -1,4 +1,4 @@
----
+﻿---
 title: "revokeAllLicenses action"
 description: "Revoke all assigned iOS VPP licenses for given app."
 author: "dougeby"
@@ -18,50 +18,56 @@ Namespace: microsoft.graph
 Revoke all assigned iOS VPP licenses for given app.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementApps.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementApps.ReadWrite.All          |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceAppManagement/mobileApps/{mobileAppId}/revokeAllLicenses
 POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app/revokeAllLicenses
 POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/revokeAllLicenses
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|notifyManagedDevices|Boolean|Boolean that indicates if revoke notification should be sent to device|
-
-
+| Property             | Type    | Description                                                            |
+| :------------------- | :------ | :--------------------------------------------------------------------- |
+| notifyManagedDevices | Boolean | Boolean that indicates if revoke notification should be sent to device |
 
 ## Response
+
 If successful, this action returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/revokeAllLicenses
 
 Content-type: application/json
@@ -73,13 +79,9 @@ Content-length: 36
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-

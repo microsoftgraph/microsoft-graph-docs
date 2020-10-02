@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceHealthScriptRunSchedule resource type"
 description: "Base type of Device health script run schedule."
 author: "dougeby"
@@ -18,29 +18,28 @@ Namespace: microsoft.graph
 Base type of Device health script run schedule.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|interval|Int32|The x value of every x hours for hourly schedule, every x days for Daily Schedule, every x weeks for weekly schedule, every x months for Monthly Schedule. Valid values 1 to 23|
+
+| Property | Type  | Description                                                                                                                                                                     |
+| :------- | :---- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| interval | Int32 | The x value of every x hours for hourly schedule, every x days for Daily Schedule, every x weeks for weekly schedule, every x months for Monthly Schedule. Valid values 1 to 23 |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceHealthScriptRunSchedule"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSchedule",
   "interval": 1024
 }
 ```
-
-
-
-
-
-

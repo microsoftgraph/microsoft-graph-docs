@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "The ItemActionSet resource provides information about the actions that made up an [activity][itemActivity] on an item."
 ms.date: 09/14/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # ItemActionSet resource type
 
 Namespace: microsoft.graph
@@ -48,18 +49,18 @@ The **ItemActionSet** resource provides information about the actions that made 
 Below are the actions that are available today.
 New actions may get logged in the future, so make sure your app is tolerant of handling an **itemActionSet** without any actions that your app understands.
 
-| Property name | Type              | Description
-|:--------------|:------------------|:-----------------------------------------
-| comment       | [commentAction][] | A comment was added to the item.
-| create        | [createAction][]  | An item was created.
-| delete        | [deleteAction][]  | An item was deleted.
-| edit          | [editAction][]    | An item was edited.
-| mention       | [mentionAction][] | A user was mentioned in the item.
-| move          | [moveAction][]    | An item was moved.
-| rename        | [renameAction][]  | An item was renamed.
-| restore       | [restoreAction][] | An item was restored.
-| share         | [shareAction][]   | An item was shared.
-| version       | [versionAction][] | An item was versioned.
+| Property name | Type              | Description                       |
+| :------------ | :---------------- | :-------------------------------- |
+| comment       | [commentAction][] | A comment was added to the item.  |
+| create        | [createAction][]  | An item was created.              |
+| delete        | [deleteAction][]  | An item was deleted.              |
+| edit          | [editAction][]    | An item was edited.               |
+| mention       | [mentionAction][] | A user was mentioned in the item. |
+| move          | [moveAction][]    | An item was moved.                |
+| rename        | [renameAction][]  | An item was renamed.              |
+| restore       | [restoreAction][] | An item was restored.             |
+| share         | [shareAction][]   | An item was shared.               |
+| version       | [versionAction][] | An item was versioned.            |
 
 [commentAction]: commentaction.md
 [createAction]: createaction.md
@@ -86,5 +87,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

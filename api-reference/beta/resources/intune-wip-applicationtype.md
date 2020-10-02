@@ -1,4 +1,4 @@
----
+﻿---
 title: "applicationType enum type"
 description: "Possible types of Application"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Possible types of Application
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|universal|1|The windows universal application|
-|desktop|2|The windows desktop application|
 
-
-
-
-
-
+| Member    | Value | Description                       |
+| :-------- | :---- | :-------------------------------- |
+| universal | 1     | The windows universal application |
+| desktop   | 2     | The windows desktop application   |

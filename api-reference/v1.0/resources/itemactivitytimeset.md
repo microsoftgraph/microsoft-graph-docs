@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: itemActivityTimeSet resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # itemActivityTimeSet resource type
 
 Namespace: microsoft.graph
@@ -19,10 +20,10 @@ The **itemActivityTimeSet** resource provides information about when an [activit
 
 ## Properties
 
-| Property name    | Type           | Description
-|:-----------------|:---------------|:-----------------------------------------
-| observedDateTime | DateTimeOffset | When the activity was observed to take place.
-| recordedDateTime | DateTimeOffset | When the observation was recorded on the service.
+| Property name    | Type           | Description                                       |
+| :--------------- | :------------- | :------------------------------------------------ |
+| observedDateTime | DateTimeOffset | When the activity was observed to take place.     |
+| recordedDateTime | DateTimeOffset | When the observation was recorded on the service. |
 
 The difference between **observed** and **recorded** times is especially important for offline collaboration scenarios.
 If a user comments on a file while offline, the time that they make the comment is set as the **observedDateTime**.
@@ -56,4 +57,3 @@ At a later time when the user re-connects to the cloud and the changes get uploa
   "suppressions": []
 }
 -->
-

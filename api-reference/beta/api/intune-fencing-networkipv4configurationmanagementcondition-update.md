@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update networkIPv4ConfigurationManagementCondition"
 description: "Update the properties of a networkIPv4ConfigurationManagementCondition object."
 author: "dougeby"
@@ -18,61 +18,67 @@ Namespace: microsoft.graph
 Update the properties of a [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/managementConditions/{managementConditionId}
 PATCH /deviceManagement/managementConditions/{managementConditionId}/managementConditionStatements/{managementConditionStatementId}/managementConditions/{managementConditionId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) object.
 
 The following table shows the properties that are required when you create the [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Unique identifier for the management condition. System generated value assigned when created. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|String|Unique name for the management condition. Used in management condition expressions. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|displayName|String|The admin defined name of the management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|String|The admin defined description of the management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|createdDateTime|DateTimeOffset|The time the management condition was created. Generated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|modifiedDateTime|DateTimeOffset|The time the management condition was last modified. Updated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|eTag|String|ETag of the management condition. Updated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection|The applicable platforms for this management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md). Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|ipV4Prefix|String|The IPv4 subnet to be connected to. e.g. 10.0.0.0/8|
-|ipV4Gateway|String|The IPv4 gateway address. e.g. 10.0.0.0|
-|ipV4DHCPServer|String|The IPv4 address of the DHCP server for the adapter.|
-|ipV4DNSServerList|String collection|The IPv4 DNS servers configured for the adapter.|
-|dnsSuffixList|String collection|Valid DNS suffixes for the current network. e.g. seattle.contoso.com|
-
-
+| Property            | Type                                                                              | Description                                                                                                                                                                                                                                                                                                      |
+| :------------------ | :-------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                  | String                                                                            | Unique identifier for the management condition. System generated value assigned when created. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)                                                                                                                           |
+| uniqueName          | String                                                                            | Unique name for the management condition. Used in management condition expressions. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)                                                                                                                                     |
+| displayName         | String                                                                            | The admin defined name of the management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)                                                                                                                                                                     |
+| description         | String                                                                            | The admin defined description of the management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)                                                                                                                                                              |
+| createdDateTime     | DateTimeOffset                                                                    | The time the management condition was created. Generated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)                                                                                                                                                  |
+| modifiedDateTime    | DateTimeOffset                                                                    | The time the management condition was last modified. Updated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)                                                                                                                                              |
+| eTag                | String                                                                            | ETag of the management condition. Updated service side. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md)                                                                                                                                                                 |
+| applicablePlatforms | [devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection | The applicable platforms for this management condition. Inherited from [managementCondition](../resources/intune-fencing-managementcondition.md). Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`. |
+| ipV4Prefix          | String                                                                            | The IPv4 subnet to be connected to. e.g. 10.0.0.0/8                                                                                                                                                                                                                                                              |
+| ipV4Gateway         | String                                                                            | The IPv4 gateway address. e.g. 10.0.0.0                                                                                                                                                                                                                                                                          |
+| ipV4DHCPServer      | String                                                                            | The IPv4 address of the DHCP server for the adapter.                                                                                                                                                                                                                                                             |
+| ipV4DNSServerList   | String collection                                                                 | The IPv4 DNS servers configured for the adapter.                                                                                                                                                                                                                                                                 |
+| dnsSuffixList       | String collection                                                                 | Valid DNS suffixes for the current network. e.g. seattle.contoso.com                                                                                                                                                                                                                                             |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managementConditions/{managementConditionId}
 Content-type: application/json
 Content-length: 529
@@ -99,8 +105,10 @@ Content-length: 529
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 697
@@ -128,9 +136,3 @@ Content-Length: 697
   ]
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create projectParticipation"
 description: "Use this API to create a new projectParticipation."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Use this API to create a new [projectParticipation](../resources/projectParticip
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,10 +36,10 @@ POST /users/{id | userPrincipalName}/profile/projects
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------                  |
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -47,20 +47,22 @@ In the request body, supply a JSON representation of [projectParticipation](../r
 
 The following table shows the properties that are possible to set when you create a new [projectParticipation](../resources/projectParticipation.md) object in a user's [profile](../resources/profile.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|String collection|Contains categories a user has associated with the project (for example, digital transformation, oil rig). |
-|client|[companyDetail](../resources/companydetail.md)|Contains detailed information about the client the project was for. |
-|collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
-|colleagues|[relatedPerson](../resources/relatedperson.md) collection|Lists people that also worked on the project. |
-|detail|[positionDetail](../resources/positiondetail.md)|Contains detail about the user's role on the project.|
-|displayName|String|Contains a friendly name for the project.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
-|sponsors|[relatedPerson](../resources/relatedperson.md) collection|The Person or people who sponsored the project.    |
+| Property          | Type                                                      | Description                                                                                                                                                                                                                                                                    |
+| :---------------- | :-------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences  | String                                                    | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| categories        | String collection                                         | Contains categories a user has associated with the project (for example, digital transformation, oil rig).                                                                                                                                                                     |
+| client            | [companyDetail](../resources/companydetail.md)            | Contains detailed information about the client the project was for.                                                                                                                                                                                                            |
+| collaborationTags | String collection                                         | Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.                                                                                               |
+| colleagues        | [relatedPerson](../resources/relatedperson.md) collection | Lists people that also worked on the project.                                                                                                                                                                                                                                  |
+| detail            | [positionDetail](../resources/positiondetail.md)          | Contains detail about the user's role on the project.                                                                                                                                                                                                                          |
+| displayName       | String                                                    | Contains a friendly name for the project.                                                                                                                                                                                                                                      |
+| inference         | [inferenceData](../resources/inferencedata.md)            | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| source            | [personDataSource](../resources/persondatasource.md)      | Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                                                             |
+| sponsors          | [relatedPerson](../resources/relatedperson.md) collection | The Person or people who sponsored the project.                                                                                                                                                                                                                                |
 
 ## Relationships
+
+
 
 ## Response
 
@@ -73,6 +75,7 @@ If successful, this method returns `201, Created` response code and a new [proje
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_projectparticipation_from_profile"
@@ -105,20 +108,23 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-projectparticipation-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-projectparticipation-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-projectparticipation-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -191,5 +197,3 @@ Content-type: application/json
   "sponsors": null
 }
 ```
-
-

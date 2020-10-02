@@ -1,4 +1,4 @@
----
+﻿---
 title: "usernameSource enum type"
 description: "Username source."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Username source.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userPrincipalName|0|User principal name.|
-|primarySmtpAddress|1|Primary SMTP address.|
-|samAccountName|2|The user sam account name.|
 
-
-
-
-
-
+| Member             | Value | Description                |
+| :----------------- | :---- | :------------------------- |
+| userPrincipalName  | 0     | User principal name.       |
+| primarySmtpAddress | 1     | Primary SMTP address.      |
+| samAccountName     | 2     | The user sam account name. |

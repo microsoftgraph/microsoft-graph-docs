@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementReportFileFormat enum type"
 description: "Possible values for the file format of a report"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Possible values for the file format of a report
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|csv|0|Comma-separated values|
-|pdf|1|Portable Document Format|
 
-
-
-
-
-
+| Member | Value | Description              |
+| :----- | :---- | :----------------------- |
+| csv    | 0     | Comma-separated values   |
+| pdf    | 1     | Portable Document Format |

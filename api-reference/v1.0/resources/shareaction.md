@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: shareAction resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # shareAction resource type
 
 Namespace: microsoft.graph
@@ -19,9 +20,9 @@ The **shareAction** resource provides information about an [activity][activity] 
 
 ## Properties
 
-| Property name | Type                       | Description
-|:--------------|:---------------------------|:-----------------------------
-| recipients    | [identitySet][] collection | The identities the item was shared with in this action.
+| Property name | Type                       | Description                                             |
+| :------------ | :------------------------- | :------------------------------------------------------ |
+| recipients    | [identitySet][] collection | The identities the item was shared with in this action. |
 
 [identitySet]: identityset.md
 
@@ -49,4 +50,3 @@ The **shareAction** resource provides information about an [activity][activity] 
   "suppressions": []
 }
 -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "regionalAndLanguageSettings resource type"
 description: "A resource representing a users regional and language preferences"
 localization_priority: Normal
@@ -18,13 +18,14 @@ An open type that represents a user's preferences for languages in various conte
 ## Methods
 
 | Method                                                 | Return Type                                                   | Description                                                                                        |
-|:-------------------------------------------------------|:--------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| :----------------------------------------------------- | :------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
 | [Get](../api/regionalAndLanguageSettings-get.md)       | [regionalAndLanguageSettings](regionalAndLanguageSettings.md) | Read properties of a **regionalAndLanguageSettings** object.                                       |
 | [Update](../api/regionalandlanguagesettings-update.md) | [regionalAndLanguageSettings](regionalAndLanguageSettings.md) | Update all or a subset of the properties of the **regionalAndLanguageSettings** object for a user. |
 
 ## Properties
+
 | Property                   | Type                                                  | Description                                                                                                                                                         |
-|----------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | defaultDisplayLanguage     | [localeInfo](localeinfo.md)                           | The  user's preferred user interface language (menus, buttons, ribbons, warning messages) for Microsoft web applications.<br><br>Returned by default. Not nullable. |
 | authoringLanguages         | localeInfo collection                                 | Prioritized list of languages the user reads and authors in.<br><br>Returned by default. Not nullable.                                                              |
 | defaultTranslationLanguage | localeInfo                                            | The language a user expects to have documents, emails, and messages translated into.<br><br>Returned by default.                                                    |
@@ -51,6 +52,7 @@ The following is a JSON definition of the resource.
     "regionalFormatOverrides":{"@odata.type":"microsoft.graph.regionalFormatOverrides"}
 }
 ```
+
 <!-- {
   "type": "#page.annotation",
   "description": "regionalAndLanguageSettings resource",
@@ -58,5 +60,3 @@ The following is a JSON definition of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

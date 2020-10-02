@@ -1,4 +1,4 @@
----
+﻿---
 title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
 localization_priority: Normal
@@ -45,7 +45,7 @@ The following are pre-requisites for each of the features that are currently sup
 ## Methods
 
 | Method                                                                         | Return Type                                     | Description                                                               |
-|:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
+| :----------------------------------------------------------------------------- | :---------------------------------------------- | :------------------------------------------------------------------------ |
 | [List featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve a list of featureRolloutPolicy objects.                          |
 | [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve the properties and relationships of featurerolloutpolicy object. |
 | [Create featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.                                 |
@@ -56,20 +56,20 @@ The following are pre-requisites for each of the features that are currently sup
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|description|String|A description for this feature rollout policy.|
-|displayName|String|The display name for this  feature rollout policy.|
-|feature|stagedFeatureName| Possible values are: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
-|id|String| Read-only.|
-|isAppliedToOrganization|Boolean|Indicates whether this feature rollout policy should be applied to the entire organization.|
-|isEnabled|Boolean|Indicates whether the feature rollout is enabled.|
+| Property                | Type              | Description                                                                                                |
+| :---------------------- | :---------------- | :--------------------------------------------------------------------------------------------------------- |
+| description             | String            | A description for this feature rollout policy.                                                             |
+| displayName             | String            | The display name for this  feature rollout policy.                                                         |
+| feature                 | stagedFeatureName | Possible values are: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`. |
+| id                      | String            | Read-only.                                                                                                 |
+| isAppliedToOrganization | Boolean           | Indicates whether this feature rollout policy should be applied to the entire organization.                |
+| isEnabled               | Boolean           | Indicates whether the feature rollout is enabled.                                                          |
 
 ## Relationships
 
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| Nullable. Specifies a list of directoryObjects that feature is enabled for.|
+| Relationship | Type                                             | Description                                                                 |
+| :----------- | :----------------------------------------------- | :-------------------------------------------------------------------------- |
+| appliesTo    | [directoryObject](directoryobject.md) collection | Nullable. Specifies a list of directoryObjects that feature is enabled for. |
 
 ## JSON representation
 
@@ -98,6 +98,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "featureRolloutPolicy resource",
@@ -105,5 +106,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

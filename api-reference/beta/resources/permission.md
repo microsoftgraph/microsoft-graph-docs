@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 title: permission resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # permission resource type
 
 Namespace: microsoft.graph
@@ -58,23 +59,23 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property            | Type                        | Description
-|:--------------------|:----------------------------|:-------------------------
-| id                  | String                      | The unique identifier of the permission among all permissions on the item. Read-only.
-| grantedTo           | [IdentitySet][]             | For user type permissions, the details of the users & applications for this permission. Read-only.
-| grantedToIdentities | Collection([IdentitySet][]) | For link type permissions, the details of the users to whom permission was granted. Read-only.
-| invitation          | [SharingInvitation][]       | Details of any associated sharing invitation for this permission. Read-only.
-| inheritedFrom       | [ItemReference][]           | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
-| link                | [SharingLink][]             | Provides the link details of the current permission, if it is a link type permissions. Read-only.
-| roles               | Collection(String)          | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.
-| shareId             | String                      | A unique token that can be used to access this shared item via the **[shares API][]**. Read-only.
-| expirationDateTime  | DateTimeOffset              | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
-| hasPassword         | Boolean                     | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
+| Property            | Type                        | Description                                                                                                                                                                               |
+| :------------------ | :-------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                  | String                      | The unique identifier of the permission among all permissions on the item. Read-only.                                                                                                     |
+| grantedTo           | [IdentitySet][]             | For user type permissions, the details of the users & applications for this permission. Read-only.                                                                                        |
+| grantedToIdentities | Collection([IdentitySet][]) | For link type permissions, the details of the users to whom permission was granted. Read-only.                                                                                            |
+| invitation          | [SharingInvitation][]       | Details of any associated sharing invitation for this permission. Read-only.                                                                                                              |
+| inheritedFrom       | [ItemReference][]           | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.                                                                           |
+| link                | [SharingLink][]             | Provides the link details of the current permission, if it is a link type permissions. Read-only.                                                                                         |
+| roles               | Collection(String)          | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.                                                                                                     |
+| shareId             | String                      | A unique token that can be used to access this shared item via the **[shares API][]**. Read-only.                                                                                         |
+| expirationDateTime  | DateTimeOffset              | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional. |
+| hasPassword         | Boolean                     | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.                                         |
 
 ### Roles property values
 
-| Role              | Details                                                                        |
-|:------------------|:-------------------------------------------------------------------------------|
+| Role            | Details                                                                        |
+| :-------------- | :----------------------------------------------------------------------------- |
 | read            | Provides the ability to read the metadata and contents of the item.            |
 | write           | Provides the ability to read and modify the metadata and contents of the item. |
 | sp.full control | For SharePoint and OneDrive for Business this represents the owner role.       |
@@ -234,16 +235,15 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 
 ## Methods
 
-| Method                                                   | REST Path
-|:---------------------------------------------------------|:-----------------------
-| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [Create link][createLink]                                | `POST /drive/items/{item-id}/createLink`
-| [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
-
+| Method                                                   | REST Path                                             |
+| :------------------------------------------------------- | :---------------------------------------------------- |
+| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`              |
+| [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`         |
+| [Create link][createLink]                                | `POST /drive/items/{item-id}/createLink`              |
+| [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`                  |
+| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`       |
+| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`      |
+| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant` |
 
 [createLink]: ../api/driveitem-createlink.md
 [grant]: ../api/permission-grant.md
@@ -256,6 +256,7 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -266,5 +267,3 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
   "suppressions": []
 }
 -->
-
-

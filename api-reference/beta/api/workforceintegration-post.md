@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create workforceIntegration"
 description: "Create a new workforceIntegration object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new [workforceIntegration](../resources/workforceintegration.md) object
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -35,10 +35,10 @@ POST /teamwork/workforceIntegrations
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -57,6 +57,7 @@ If successful, this method returns a `201 Created` response code and a new [work
 The following is an example of a request to create a new **workforceIntegration** object.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_workforceintegration_from_teamwork"
@@ -78,20 +79,23 @@ Content-type: application/json
   "supports": "supports-value"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-workforceintegration-from-teamwork-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-workforceintegration-from-teamwork-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-workforceintegration-from-teamwork-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -147,9 +151,11 @@ Content-type: application/json
 }
 
 ```
+
 #### Response
 
 The following is an example of the response.
+
 ```
 HTTP/1.1 200 OK
 {
@@ -167,6 +173,7 @@ HTTP/1.1 200 OK
 }
 
 ```
+
 To update an existing **workforceIntegration** object with SwapRequest enabled for eligibility filtering, see the [Update](../api/workforceintegration-update.md) method.
 
 ### Example 3: Fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
@@ -190,9 +197,11 @@ Accept-Language: en-us
    }]
 }
 ```
+
 ### Response
 
 The following is an example of the response from the workforce integration service.
+
 ```
 HTTP/1.1 200 OK
 {
@@ -212,9 +221,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create workforceIntegration",
@@ -222,5 +231,3 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "discoverySource enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|DiscoverySource is Unknown.|
-|adminImport|2|Device is imported by admin.|
-|deviceEnrollmentProgram|4|Device is added by Apple device enrollment program (Dep).|
 
-
-
-
-
-
+| Member                  | Value | Description                                               |
+| :---------------------- | :---- | :-------------------------------------------------------- |
+| unknown                 | 0     | DiscoverySource is Unknown.                               |
+| adminImport             | 2     | Device is imported by admin.                              |
+| deviceEnrollmentProgram | 4     | Device is added by Apple device enrollment program (Dep). |

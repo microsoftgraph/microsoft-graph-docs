@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add attachment"
 description: "Use this API to create a new Attachment."
 author: "svpsiva"
@@ -25,27 +25,33 @@ All these types of attachment resources are derived from the [attachment](../res
 resource. 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Mail.ReadWrite                              |
+| Delegated (personal Microsoft account) | Mail.ReadWrite                              |
+| Application                            | Mail.ReadWrite                              |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id|userPrincipalName}/messages/{id}/attachments
 ```
+
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+
+| Name          | Type   | Description                                            |
+| :------------ | :----- | :----------------------------------------------------- |
+| Authorization | string | Bearer {token}. Required.                              |
+| Content-Type  | string | Nature of the data in the body of an entity. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
 ## Response
@@ -55,13 +61,16 @@ If successful, this method returns `201 Created` response code and [Attachment](
 ## Example (file attachment)
 
 ##### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_eventmessage"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/messages/{id}/attachments
 Content-type: application/json
@@ -75,43 +84,49 @@ Content-type: application/json
   "contentBytes": "contentBytes-value"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 ```
-
 
 ## Example (item attachment)
 
 ##### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_item_attachment_from_eventmessage"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/attachments
 Content-type: application/json
@@ -122,34 +137,41 @@ Content-type: application/json
   "item": "message or event entity"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-item-attachment-from-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-item-attachment-from-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-item-attachment-from-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -161,5 +183,3 @@ HTTP 201 Created
   ]
 }
 -->
-
-

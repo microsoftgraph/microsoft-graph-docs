@@ -1,4 +1,4 @@
----
+﻿---
 title: "message: createForward"
 description: "Create a draft to forward the specified message. You can then update the draft to add content to the **body** or change other message properties, or, simply send the draft."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Create a draft to forward the specified [message](../resources/message.md). You 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Mail.ReadWrite                              |
+| Delegated (personal Microsoft account) | Mail.ReadWrite                              |
+| Application                            | Mail.ReadWrite                              |
 
 ## HTTP request
 
@@ -36,9 +36,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
 
@@ -57,6 +57,7 @@ Here is an example of how to call this API.
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "message_createforward"
@@ -65,28 +66,33 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createforward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-createforward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/message-createforward-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/message-createforward-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,6 +119,7 @@ Content-length: 248
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "message: createForward",
@@ -122,4 +129,3 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
-

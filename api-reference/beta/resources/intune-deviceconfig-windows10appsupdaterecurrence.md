@@ -1,4 +1,4 @@
----
+﻿---
 title: "windows10AppsUpdateRecurrence enum type"
 description: "Possible values for App update on Windows10 recurrence."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for App update on Windows10 recurrence.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Default value, specifies a single occurence.|
-|daily|1|Daily.|
-|weekly|2|Weekly.|
-|monthly|3|Monthly.|
 
-
-
-
-
-
+| Member  | Value | Description                                  |
+| :------ | :---- | :------------------------------------------- |
+| none    | 0     | Default value, specifies a single occurence. |
+| daily   | 1     | Daily.                                       |
+| weekly  | 2     | Weekly.                                      |
+| monthly | 3     | Monthly.                                     |

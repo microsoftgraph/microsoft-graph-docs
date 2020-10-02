@@ -1,4 +1,4 @@
----
+﻿---
 title: "Enroll devices for management in Intune"
 description: " (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like remote wipe, shared devices, or user affinity for a device."
 localization_priority: Normal
@@ -42,9 +42,3 @@ The following Graph resources are available to manage enrollment in Intune:
 - [VPP token state](intune-onboarding-vpptokenstate.md)
 - [VPP token sync status](intune-onboarding-vpptokensyncstatus.md)
 - [Windows Hello for business PIN usage](intune-onboarding-windowshelloforbusinesspinusage.md)
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceHealthScriptRemediationHistory resource type"
 description: "The number of devices remediated by a device health script on a given date with the last modified time."
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 The number of devices remediated by a device health script on a given date with the last modified time.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|lastModifiedDateTime|DateTimeOffset|The date on which the results history is calculated for the healthscript.|
-|historyData|[deviceHealthScriptRemediationHistoryData](../resources/intune-devices-devicehealthscriptremediationhistorydata.md) collection|The number of devices remediated by the device health script on the given date.|
+
+| Property             | Type                                                                                                                           | Description                                                                     |
+| :------------------- | :----------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
+| lastModifiedDateTime | DateTimeOffset                                                                                                                 | The date on which the results history is calculated for the healthscript.       |
+| historyData          | [deviceHealthScriptRemediationHistoryData](../resources/intune-devices-devicehealthscriptremediationhistorydata.md) collection | The number of devices remediated by the device health script on the given date. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceHealthScriptRemediationHistory"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRemediationHistory",
   "lastModifiedDateTime": "String (timestamp)",
@@ -47,9 +52,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

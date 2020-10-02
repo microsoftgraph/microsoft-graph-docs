@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: jeremyke
 title: Create bundle
@@ -22,11 +22,11 @@ Add a new [bundle][] to the user's drive.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.                             |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All   |
-|Application          | Not supported.                                           |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All        |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -38,8 +38,8 @@ POST /drive/bundles
 
 ## Request headers
 
-| Name          | Description  |
-|:------------- |:------------ |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
 | Authorization | Bearer \{token\}. Required. |
 
 ## Request body
@@ -62,8 +62,8 @@ This bundle can be used to share a collection of files with other users without 
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "create-bundle" } -->
 
 ```json
@@ -80,20 +80,23 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bundle-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-bundle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -120,8 +123,8 @@ The request to create a new photo album is similar, although inside the bundle f
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "create-album" } -->
 
 ```json
@@ -137,20 +140,23 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-album-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-album-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-album-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -178,7 +184,6 @@ OneDrive will append a number to the end of the bundle name.
 For example, `My Day at the Beach` would be renamed `My Day at the Beach 1`.
 If `My Day at the Beach 1` is taken, then the number would be incremented again until a unique bundle name is discovered.
 
-
 [error-response]: /graph/errors
 
 <!-- {
@@ -188,5 +193,3 @@ If `My Day at the Beach 1` is taken, then the number would be incremented again 
   "section": "documentation",
   "tocPath": "Bundles/Create"
 } -->
-
-

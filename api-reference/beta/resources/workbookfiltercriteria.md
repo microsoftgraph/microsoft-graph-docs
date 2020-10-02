@@ -1,4 +1,4 @@
----
+﻿---
 title: "workbookFilterCriteria resource type"
 description: "Represents the filtering criteria applied to a column."
 localization_priority: Normal
@@ -39,5 +39,3 @@ Here is a JSON representation of the resource.
   "operator":"string"
 }
 ```
-
-

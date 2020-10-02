@@ -1,4 +1,4 @@
----
+﻿---
 title: "photo resource type"
 description: "The photo resource provides photo and camera properties, for example, EXIF metadata, on a driveItem."
 ms.date: 09/10/2017
@@ -21,17 +21,17 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
 
 ## Properties
 
-| Property          | Type          | Description                                                                |
-|:------------------|:--------------|:---------------------------------------------------------------------------|
-|cameraMake         |String         | Camera manufacturer. Read-only.                                            |
-|cameraModel        |String         | Camera model. Read-only.                                                   |
-|exposureDenominator|Double         | The denominator for the exposure time fraction from the camera. Read-only. |
-|exposureNumerator  |Double         | The numerator for the exposure time fraction from the camera. Read-only.   |
-|fNumber            |Double         | The F-stop value from the camera. Read-only.                               |
-|focalLength        |Double         | The focal length from the camera. Read-only.                               |
-|iso                |Int32          | The ISO value from the camera. Read-only.                                  |
-|orientation        |Int16          | The orientation value from the camera. Writable on OneDrive Personal.      |
-|takenDateTime      |DateTimeOffset | The date and time the photo was taken in UTC time. Read-only.              |
+| Property            | Type           | Description                                                                |
+| :------------------ | :------------- | :------------------------------------------------------------------------- |
+| cameraMake          | String         | Camera manufacturer. Read-only.                                            |
+| cameraModel         | String         | Camera model. Read-only.                                                   |
+| exposureDenominator | Double         | The denominator for the exposure time fraction from the camera. Read-only. |
+| exposureNumerator   | Double         | The numerator for the exposure time fraction from the camera. Read-only.   |
+| fNumber             | Double         | The F-stop value from the camera. Read-only.                               |
+| focalLength         | Double         | The focal length from the camera. Read-only.                               |
+| iso                 | Int32          | The ISO value from the camera. Read-only.                                  |
+| orientation         | Int16          | The orientation value from the camera. Writable on OneDrive Personal.      |
+| takenDateTime       | DateTimeOffset | The date and time the photo was taken in UTC time. Read-only.              |
 
 ## JSON representation
 
@@ -62,6 +62,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "The photo resource provides details about the camera and settings on the camera for photos.",
@@ -69,5 +70,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

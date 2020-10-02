@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The publicationFacet resource provides details on the published status of a driveItemVersion or driveItem resource."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # PublicationFacet resource type
 
 Namespace: microsoft.graph
@@ -32,11 +33,10 @@ The **publicationFacet** resource provides details on the published status of a 
 
 ## Properties
 
-|   Property    |  Type  | Description |
-| :------------ | :----- | :---------- |
-| **level**     | String | The state of publication for this document. Either `published` or `checkout`. Read-only.  |
+| Property      | Type   | Description                                                                              |
+| :------------ | :----- | :--------------------------------------------------------------------------------------- |
+| **level**     | String | The state of publication for this document. Either `published` or `checkout`. Read-only. |
 | **versionId** | String | The unique identifier for the version that is visible to the current caller. Read-only.  |
-
 
 <!--
 {
@@ -48,5 +48,3 @@ The **publicationFacet** resource provides details on the published status of a 
   "suppressions": []
 }
 -->
-
-

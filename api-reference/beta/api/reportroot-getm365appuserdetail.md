@@ -1,4 +1,4 @@
----
+﻿---
 title: "reportRoot: getM365AppUserDetail"
 description: "Get a report that provides the details about which apps and platforms users have used."
 localization_priority: Normal
@@ -42,10 +42,10 @@ GET /reports/getM365AppUserDetail(date={date_value})
 
 In the request URL, provide the following parameter with a valid value.
 
-| Parameter | Type   | Description                                                                                                                                                                                                                                             |
-| :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Parameter | Type   | Description                                                                                                                                                                                                                                                     |
+| :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
-| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range.          |
+| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range.                  |
 
 > **Note:** You need to set either `period` or `date` in the URL.
 
@@ -131,9 +131,8 @@ The following is an example that outputs CSV.
 
 The following is an example of the request to get the **content** property.
 
-
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "reportroot_getM365AppUserCounDetail"
@@ -142,21 +141,23 @@ The following is an example of the request to get the **content** property.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=text/csv
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercoundetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getm365appusercoundetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercoundetail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 
@@ -193,9 +194,8 @@ The following is an example that returns JSON.
 
 The following is an example of the request to get the **content** property.
 
-
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "reportroot_getM365AppUserCountDetail"
@@ -204,21 +204,23 @@ The following is an example of the request to get the **content** property.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=application/json
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercountdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getm365appusercountdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercountdetail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 
@@ -288,8 +290,10 @@ Content-Length: 951
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",

@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosSingleSignOnExtension resource type"
 description: "An abstract base class for all iOS-specific single sign-on extension types."
 author: "dougeby"
@@ -17,31 +17,29 @@ Namespace: microsoft.graph
 
 An abstract base class for all iOS-specific single sign-on extension types.
 
-
 Inherits from [singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosSingleSignOnExtension"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosSingleSignOnExtension"
 }
 ```
-
-
-
-
-
-

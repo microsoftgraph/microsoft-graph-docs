@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceAppManagementTaskPriority enum type"
 description: "Device app management task priority."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Device app management task priority.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|No priority set.|
-|high|1|High priority.|
-|low|2|Low priority.|
 
-
-
-
-
-
+| Member | Value | Description      |
+| :----- | :---- | :--------------- |
+| none   | 0     | No priority set. |
+| high   | 1     | High priority.   |
+| low    | 2     | Low priority.    |

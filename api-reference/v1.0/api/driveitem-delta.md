@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -8,6 +8,7 @@ ms.prod: "sharepoint"
 description: "This method allows your app to track changes to a drive and its children over time."
 doc_type: apiPageType
 ---
+
 # Track changes for a Drive
 
 Namespace: microsoft.graph
@@ -30,11 +31,11 @@ Items with this property set should be removed from your local state.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                           |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All                                      |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## HTTP request
 
@@ -50,9 +51,9 @@ GET /users/{userId}/drive/root/delta
 
 ## Function parameters
 
-| Parameter   | Type  | Description                                                                                                                          |
-|:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | Optional. If unspecified, enumerates the hierarchy's current state. If `latest`, returns empty response with latest delta token. If a previous delta token, returns new state since that token.
+| Parameter | Type   | Description                                                                                                                                                                                     |
+| :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| token     | string | Optional. If unspecified, enumerates the hierarchy's current state. If `latest`, returns empty response with latest delta token. If a previous delta token, returns new state since that token. |
 
 ## Optional query parameters
 
@@ -64,10 +65,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 In addition to the collection of DriveItems, the response will also include one of the following properties:
 
-| Name                 | Value  | Description                                                                                                                                      |
-|:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
-| **\@odata.deltaLink** | url    | A URL returned instead of **\@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
+| Name                  | Value | Description                                                                                                                                      |
+| :-------------------- | :---- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **\@odata.nextLink**  | url   | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
+| **\@odata.deltaLink** | url   | A URL returned instead of **\@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future. |
 
 ## Example (Initial Request)
 
@@ -77,31 +78,35 @@ Here is an example of how to call this API to establish your local state.
 
 Here is an example of the initial request.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-delta-first-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-delta-first-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-delta-first-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-item-delta-first-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -146,31 +151,35 @@ Here is an example of how to call this API to update your local state.
 
 Here is an example request after the initial request.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-delta-last-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-delta-last-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-delta-last-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-item-delta-last-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -209,7 +218,7 @@ In these cases the service will return an `HTTP 410 Gone` error with an error re
 After finishing the full enumeration, compare the returned items with your local state and follow these instructions.
 
 | Error Type                       | Instructions                                                                                                                                                                                                                    |
-|:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
 | `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).                                       |
 
@@ -226,31 +235,35 @@ Using `delta` is the only way to guarantee that you've read all of the data you 
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```msgraph-interactive
 GET /me/drive/root/delta?token=latest
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-latest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-latest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-delta-latest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-delta-latest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -276,21 +289,21 @@ Content-type: application/json
 * Delta query will not return some DriveItem properties, depending on the operation and service type, as shown in the following tables.
 
     **OneDrive for Business**
-    
-    | Operation type | Properties omitted by delta query |
-    |---------|----------|
-    | Create/Modify | `ctag`, `lastModifiedBy` |
-    | Delete | `ctag`, `lastModifiedBy`, `name` |
 
+| Operation type | Properties omitted by delta query |
+| -------------- | --------------------------------- |
+| Create/Modify  | `ctag`, `lastModifiedBy`          |
+| Delete         | `ctag`, `lastModifiedBy`, `name`  |
 
     **OneDrive (consumer)**
-    
-    | Operation type | Properties omitted by delta query |
-    |---------|----------|
-    | Create/Modify | n/a |
-    | Delete | `ctag`, `size` |
+
+| Operation type | Properties omitted by delta query |
+| -------------- | --------------------------------- |
+| Create/Modify  | n/a                               |
+| Delete         | `ctag`, `size`                    |
 
 ## Scanning permissions hierarchies
+
 By default, the delta query response will include sharing information for all items in the query that changed even if they inherit their permissions from their parent and did not have direct sharing changes themselves. This typically then results in a follow up call to get the permission details for every item rather than just the ones whose sharing information changed. You can optimize your understanding of how permission changes happen by adding the `Prefer: hierarchicalsharing` header to your delta query request.
 
 When the `Prefer: hierarchicalsharing` header is provided, sharing information will be returned for the root of the permissions hierarchy, as well as items that explicitly have sharing changes. In cases where the sharing change is to remove sharing from an item, you will find an empty sharing facet to differentiate between items that inherit from their parent and those that are unique but have no sharing links. You will also see this empty sharing facet on the root of a permission hierarchy that is not shared to establish the initial scope.
@@ -315,4 +328,3 @@ In addition to the resync errors detailed above, see [Error Responses][error-res
   "suppressions": [
   ]
 } -->
-

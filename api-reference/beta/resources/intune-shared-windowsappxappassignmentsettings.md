@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsAppXAppAssignmentSettings resource type"
 description: "Contains properties used when assigning a Windows AppX mobile app to a group."
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 Contains properties used when assigning a Windows AppX mobile app to a group.
 
-
 Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|useDeviceContext|Boolean|Whether or not to use device execution context for Windows AppX mobile app.|
+
+| Property         | Type    | Description                                                                 |
+| :--------------- | :------ | :-------------------------------------------------------------------------- |
+| useDeviceContext | Boolean | Whether or not to use device execution context for Windows AppX mobile app. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsAppXAppAssignmentSettings"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsAppXAppAssignmentSettings",
   "useDeviceContext": true
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOSProcessIdentifierType enum type"
 description: "Process identifier types for MacOS Privacy Preferences"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Process identifier types for MacOS Privacy Preferences
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|bundleID|1|Indicates an app with a bundle ID.|
-|path|2|Indicates a file path for a process.|
 
-
-
-
-
-
+| Member   | Value | Description                          |
+| :------- | :---- | :----------------------------------- |
+| bundleID | 1     | Indicates an app with a bundle ID.   |
+| path     | 2     | Indicates a file path for a process. |

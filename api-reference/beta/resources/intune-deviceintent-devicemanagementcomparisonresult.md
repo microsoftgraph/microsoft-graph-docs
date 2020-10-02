@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementComparisonResult enum type"
 description: "Setting comparison result type"
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Setting comparison result type
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown setting comparison|
-|equal|1|The setting values are equal|
-|notEqual|2|The setting values are not equal|
-|added|3|The setting is added|
-|removed|4|The setting is removed|
 
-
-
-
-
-
+| Member   | Value | Description                      |
+| :------- | :---- | :------------------------------- |
+| unknown  | 0     | Unknown setting comparison       |
+| equal    | 1     | The setting values are equal     |
+| notEqual | 2     | The setting values are not equal |
+| added    | 3     | The setting is added             |
+| removed  | 4     | The setting is removed           |

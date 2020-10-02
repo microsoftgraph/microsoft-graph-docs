@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The driveItem resource represents a file, folder, or other item stored in a drive."
 ms.date: 09/10/2017
@@ -102,40 +102,40 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
 ## Properties
 
-| Property             | Type               | Description
-|:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only.
-| content              | Stream             | The content stream, if the item represents a file.
-| createdBy            | [identitySet][]    | Identity of the user, device, and application which created the item. Read-only.
-| createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
-| cTag                 | String             | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only.
-| deleted              | [deleted][]        | Information about the deleted state of the item. Read-only.
-| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal
-| eTag                 | String             | eTag for the entire item (metadata + content). Read-only.
-| file                 | [file][]           | File metadata, if the item is a file. Read-only.
-| fileSystemInfo       | [fileSystemInfo][] | File system information on client. Read-write.
-| folder               | [folder][]         | Folder metadata, if the item is a folder. Read-only.
-| id                   | String             | The unique identifier of the item within the Drive. Read-only.
-| image                | [image][]          | Image metadata, if the item is an image. Read-only.
-| lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application which last modified the item. Read-only.
-| lastModifiedDateTime | DateTimeOffset     | Date and time the item was last modified. Read-only.
-| location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
-| name                 | String             | The name of the item (filename and extension). Read-write.
-| package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
-| parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
-| pendingOperations    | [pendingOperations][] | If present, indicates that indicates that one or more operations that may affect the state of the driveItem are pending completion. Read-only.
-| photo                | [photo][]          | Photo metadata, if the item is a photo. Read-only.
-| publication          | [publicationFacet][] | Provides information about the published or checked-out state of an item, in locations that support such actions. This property is not returned by default. Read-only. |
-| remoteItem           | [remoteItem][]     | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
-| root                 | [root][]           | If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.
-| searchResult         | [searchResult][]   | Search metadata, if the item is from a search result. Read-only.
-| shared               | [shared][]         | Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.
-| sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-| size                 | Int64              | Size of the item in bytes. Read-only.
-| specialFolder        | [specialFolder][]  | If the current item is also available as a special folder, this facet is returned. Read-only.
-| video                | [video][]          | Video metadata, if the item is a video. Read-only.
-| webDavUrl            | String             | WebDAV compatible URL for the item.
-| webUrl               | String             | URL that displays the resource in the browser. Read-only.
+| Property             | Type                  | Description                                                                                                                                                               |
+| :------------------- | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| audio                | [audio][]             | Audio metadata, if the item is an audio file. Read-only.                                                                                                                  |
+| content              | Stream                | The content stream, if the item represents a file.                                                                                                                        |
+| createdBy            | [identitySet][]       | Identity of the user, device, and application which created the item. Read-only.                                                                                          |
+| createdDateTime      | DateTimeOffset        | Date and time of item creation. Read-only.                                                                                                                                |
+| cTag                 | String                | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only. |
+| deleted              | [deleted][]           | Information about the deleted state of the item. Read-only.                                                                                                               |
+| description          | String                | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal                                                                                    |
+| eTag                 | String                | eTag for the entire item (metadata + content). Read-only.                                                                                                                 |
+| file                 | [file][]              | File metadata, if the item is a file. Read-only.                                                                                                                          |
+| fileSystemInfo       | [fileSystemInfo][]    | File system information on client. Read-write.                                                                                                                            |
+| folder               | [folder][]            | Folder metadata, if the item is a folder. Read-only.                                                                                                                      |
+| id                   | String                | The unique identifier of the item within the Drive. Read-only.                                                                                                            |
+| image                | [image][]             | Image metadata, if the item is an image. Read-only.                                                                                                                       |
+| lastModifiedBy       | [identitySet][]       | Identity of the user, device, and application which last modified the item. Read-only.                                                                                    |
+| lastModifiedDateTime | DateTimeOffset        | Date and time the item was last modified. Read-only.                                                                                                                      |
+| location             | [geoCoordinates][]    | Location metadata, if the item has location data. Read-only.                                                                                                              |
+| name                 | String                | The name of the item (filename and extension). Read-write.                                                                                                                |
+| package              | [package][]           | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.         |
+| parentReference      | [itemReference][]     | Parent information, if the item has a parent. Read-write.                                                                                                                 |
+| pendingOperations    | [pendingOperations][] | If present, indicates that indicates that one or more operations that may affect the state of the driveItem are pending completion. Read-only.                            |
+| photo                | [photo][]             | Photo metadata, if the item is a photo. Read-only.                                                                                                                        |
+| publication          | [publicationFacet][]  | Provides information about the published or checked-out state of an item, in locations that support such actions. This property is not returned by default. Read-only.    |
+| remoteItem           | [remoteItem][]        | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.                                                                        |
+| root                 | [root][]              | If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.                                                                     |
+| searchResult         | [searchResult][]      | Search metadata, if the item is from a search result. Read-only.                                                                                                          |
+| shared               | [shared][]            | Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.                                               |
+| sharepointIds        | [sharepointIds][]     | Returns identifiers useful for SharePoint REST compatibility. Read-only.                                                                                                  |
+| size                 | Int64                 | Size of the item in bytes. Read-only.                                                                                                                                     |
+| specialFolder        | [specialFolder][]     | If the current item is also available as a special folder, this facet is returned. Read-only.                                                                             |
+| video                | [video][]             | Video metadata, if the item is a video. Read-only.                                                                                                                        |
+| webDavUrl            | String                | WebDAV compatible URL for the item.                                                                                                                                       |
+| webUrl               | String                | URL that displays the resource in the browser. Read-only.                                                                                                                 |
 
 **Note:** The eTag and cTag properties work differently on containers (folders).
 The cTag value is modified when content or metadata of any descendant of the folder is changed.
@@ -143,30 +143,30 @@ The eTag value is only modified when the folder's properties are changed, except
 
 ## Relationships
 
-| Relationship       | Type                        | Description
-|:-------------------|:----------------------------|:--------------------------
-| activities         | [itemActivity][] collection | The list of recent activities that took place on this item.
-| analytics          | [itemAnalytics][] resource  | Analytics about the view activities that took place on this item.
-| children           | driveItem collection        | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
-| createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
-| lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
-| listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
-| permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
-| subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
-| thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
-| versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
-| workbook           | [workbook][]                | For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
+| Relationship       | Type                            | Description                                                                                                                                |
+| :----------------- | :------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| activities         | [itemActivity][] collection     | The list of recent activities that took place on this item.                                                                                |
+| analytics          | [itemAnalytics][] resource      | Analytics about the view activities that took place on this item.                                                                          |
+| children           | driveItem collection            | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable. |
+| createdByUser      | [user][]                        | Identity of the user who created the item. Read-only.                                                                                      |
+| lastModifiedByUser | [user][]                        | Identity of the user who last modified the item. Read-only.                                                                                |
+| listItem           | [listItem][]                    | For drives in SharePoint, the associated document library list item. Read-only. Nullable.                                                  |
+| permissions        | [permission][] collection       | The set of permissions for the item. Read-only. Nullable.                                                                                  |
+| subscriptions      | [subscription][] collection     | The set of subscriptions on the item. Only supported on the root of a drive.                                                               |
+| thumbnails         | [thumbnailSet][] collection     | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.   |
+| versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.                          |
+| workbook           | [workbook][]                    | For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.                        |
 
 ## Instance Attributes
 
 Instance attributes are properties with special behaviors.
 These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
 
-| Property name                     | Type   | Description
-|:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | string | The conflict resolution behavior for actions that create a new item. You can use the values *fail*, *replace*, or *rename*. The default for PUT is *replace*. An item will never be returned with this annotation. Write-only.
-| @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication is not required with this URL. Read-only.
-| @microsoft.graph.sourceUrl        | string | When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.
+| Property name                     | Type   | Description                                                                                                                                                                                                                    |
+| :-------------------------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| @microsoft.graph.conflictBehavior | string | The conflict resolution behavior for actions that create a new item. You can use the values *fail*, *replace*, or *rename*. The default for PUT is *replace*. An item will never be returned with this annotation. Write-only. |
+| @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication is not required with this URL. Read-only.                                                                                                               |
+| @microsoft.graph.sourceUrl        | string | When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.                                                            |
 
 **Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
 The URL will only be available for a short period of time (1 hour) before it is invalidated.
@@ -176,36 +176,36 @@ Removing file permissions for a user may not immediately invalidate the URL.
 
 ## Methods
 
-| Method                                                   | REST Path
-|:---------------------------------------------------------|:------------------
-| [Get item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [List activities](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
-| [Get analytics][]                                        | `GET /drive/items/{item-id}/analytics`
-| [Get activities by interval][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
-| [List children](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [List versions](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [Create item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [Update item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [Upload content](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
-| [Download content](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [Download specific file format][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [Delete item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [Restore item](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
-| [Move item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [Copy item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [Search items](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [List changes in a drive](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [Follow item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
-| [Unfollow item](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
-| [List thumbnails](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [Create sharing link](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
-| [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+| Method                                                   | REST Path                                             |
+| :------------------------------------------------------- | :---------------------------------------------------- |
+| [Get item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`                          |
+| [List activities](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`               |
+| [Get analytics][]                                        | `GET /drive/items/{item-id}/analytics`                |
+| [Get activities by interval][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`  |
+| [List children](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`                 |
+| [List versions](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`                 |
+| [Create item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`                |
+| [Update item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`                        |
+| [Upload content](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`                  |
+| [Download content](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`                  |
+| [Download specific file format][download-format]         | `GET /drive/items/{item-id}/content?format={format}`  |
+| [Delete item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`                       |
+| [Restore item](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`                 |
+| [Move item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`                        |
+| [Copy item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`                    |
+| [Search items](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`         |
+| [List changes in a drive](../api/driveitem-delta.md)     | `GET /drive/root/delta`                               |
+| [Follow item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`      |
+| [Unfollow item](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`    |
+| [List thumbnails](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`               |
+| [Create sharing link](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`              |
+| [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`                  |
+| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`              |
+| [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}` |
+| [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`              |
+| [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`                 |
+| [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`       |
+| [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`      |
 
 [item-preview]: ../api/driveitem-preview.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -253,6 +253,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -266,5 +267,3 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
   "suppressions": []
 }
 -->
-
-

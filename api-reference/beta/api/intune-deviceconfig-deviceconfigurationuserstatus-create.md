@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create deviceConfigurationUserStatus"
 description: "Create a new deviceConfigurationUserStatus object."
 author: "dougeby"
@@ -18,20 +18,23 @@ Namespace: microsoft.graph
 Create a new [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate/userStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/userStatuses
@@ -45,35 +48,38 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the deviceConfigurationUserStatus object.
 
 The following table shows the properties that are required when you create the deviceConfigurationUserStatus.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|userDisplayName|String|User name of the DevicePolicyStatus.|
-|devicesCount|Int32|Devices count for that user.|
-|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
-|userPrincipalName|String|UserPrincipalName.|
-
-
+| Property             | Type                                                               | Description                                                                                                                                                             |
+| :------------------- | :----------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | String                                                             | Key of the entity.                                                                                                                                                      |
+| userDisplayName      | String                                                             | User name of the DevicePolicyStatus.                                                                                                                                    |
+| devicesCount         | Int32                                                              | Devices count for that user.                                                                                                                                            |
+| status               | [complianceStatus](../resources/intune-shared-compliancestatus.md) | Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`. |
+| lastReportedDateTime | DateTimeOffset                                                     | Last modified date time of the policy report.                                                                                                                           |
+| userPrincipalName    | String                                                             | UserPrincipalName.                                                                                                                                                      |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses
 Content-type: application/json
 Content-length: 290
@@ -89,8 +95,10 @@ Content-length: 290
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 339
@@ -105,9 +113,3 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
-

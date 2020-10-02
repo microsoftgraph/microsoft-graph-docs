@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 title: Get metadata for a list
 description: Return the metadata for a list.
@@ -6,6 +6,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Get metadata for a list
 
 Namespace: microsoft.graph
@@ -42,27 +43,30 @@ Do not supply a request body with this method.
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-list" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -87,28 +91,33 @@ Content-type: application/json
 With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.
 
 #### Request
+
 The following example shows how to get a list from a SharePoint Online list title.
 
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-list" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-title}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -134,27 +143,30 @@ With `select` and `expand` statements, you can retrieve list metadata, column de
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-multi-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-multi-expand-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-multi-expand-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -209,12 +221,14 @@ Content-type: application/json
   ]
 }
 ```
+
 #### Request
 
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 The following example shows how to get metadata for a list that contains three columns: Name, Quantity, and Category.
 [Managed Metadata](/sharepoint/managed-metadata) columns like ```Category``` return values as term ID and term name pair.
+
 ```http
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
 ```
@@ -282,5 +296,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

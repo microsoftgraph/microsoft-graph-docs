@@ -1,4 +1,4 @@
----
+﻿---
 title: "localizedLabel resource type"
 description: "Represents the label for a term in the term store."
 author: mohitpcad
@@ -18,23 +18,28 @@ Represents the label for a [term] in the term [store].
 Identifies the labels associated with a given term.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|isDefault|Boolean|Indicates whether the label is the default label.|
-|languageTag|String|The anguage tag for the label.|
-|name|String|The name of the label.|
+
+| Property    | Type    | Description                                       |
+| :---------- | :------ | :------------------------------------------------ |
+| isDefault   | Boolean | Indicates whether the label is the default label. |
+| languageTag | String  | The anguage tag for the label.                    |
+| name        | String  | The name of the label.                            |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.termStore.localizedLabel"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.termStore.localizedLabel",
   "name": "String",
@@ -43,13 +48,11 @@ The following is a JSON representation of the resource.
 }
 ```
 
-
 [microsoft.graph.termStore.term]: termstore-term.md
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
 [microsoft.graph.termStore.store]: termstore-store.md
 [term]: ../resources/termstore-term.md
 [store]: ../resources/termstore-store.md
-
 
 <!--
 {
@@ -64,5 +67,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

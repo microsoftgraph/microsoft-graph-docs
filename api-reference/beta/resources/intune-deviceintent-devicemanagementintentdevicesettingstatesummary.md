@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementIntentDeviceSettingStateSummary resource type"
 description: "Entity that represents device setting state summary for an intent"
 author: "dougeby"
@@ -18,38 +18,44 @@ Namespace: microsoft.graph
 Entity that represents device setting state summary for an intent
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List deviceManagementIntentDeviceSettingStateSummaries](../api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-list.md)|[deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) collection|List properties and relationships of the [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) objects.|
-|[Get deviceManagementIntentDeviceSettingStateSummary](../api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-get.md)|[deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)|Read properties and relationships of the [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) object.|
-|[Create deviceManagementIntentDeviceSettingStateSummary](../api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-create.md)|[deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)|Create a new [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) object.|
-|[Delete deviceManagementIntentDeviceSettingStateSummary](../api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-delete.md)|None|Deletes a [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md).|
-|[Update deviceManagementIntentDeviceSettingStateSummary](../api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-update.md)|[deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)|Update the properties of a [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) object.|
+
+| Method                                                                                                                                         | Return Type                                                                                                                                       | Description                                                                                                                                                                              |
+| :--------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [List deviceManagementIntentDeviceSettingStateSummaries](../api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-list.md)   | [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) collection | List properties and relationships of the [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) objects. |
+| [Get deviceManagementIntentDeviceSettingStateSummary](../api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-get.md)       | [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)            | Read properties and relationships of the [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) object.  |
+| [Create deviceManagementIntentDeviceSettingStateSummary](../api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-create.md) | [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)            | Create a new [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) object.                              |
+| [Delete deviceManagementIntentDeviceSettingStateSummary](../api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-delete.md) | None                                                                                                                                              | Deletes a [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md).                                        |
+| [Update deviceManagementIntentDeviceSettingStateSummary](../api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-update.md) | [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)            | Update the properties of a [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) object.                |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The ID|
-|settingName|String|Name of a setting|
-|compliantCount|Int32|Number of compliant devices|
-|conflictCount|Int32|Number of devices in conflict|
-|errorCount|Int32|Number of error devices|
-|nonCompliantCount|Int32|Number of non compliant devices|
-|notApplicableCount|Int32|Number of not applicable devices|
-|remediatedCount|Int32|Number of remediated devices|
+
+| Property           | Type   | Description                      |
+| :----------------- | :----- | :------------------------------- |
+| id                 | String | The ID                           |
+| settingName        | String | Name of a setting                |
+| compliantCount     | Int32  | Number of compliant devices      |
+| conflictCount      | Int32  | Number of devices in conflict    |
+| errorCount         | Int32  | Number of error devices          |
+| nonCompliantCount  | Int32  | Number of non compliant devices  |
+| notApplicableCount | Int32  | Number of not applicable devices |
+| remediatedCount    | Int32  | Number of remediated devices     |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementIntentDeviceSettingStateSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentDeviceSettingStateSummary",
   "id": "String (identifier)",
@@ -62,9 +68,3 @@ Here is a JSON representation of the resource.
   "remediatedCount": 1024
 }
 ```
-
-
-
-
-
-

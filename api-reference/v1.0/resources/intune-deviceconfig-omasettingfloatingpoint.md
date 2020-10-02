@@ -1,4 +1,4 @@
----
+﻿---
 title: "omaSettingFloatingPoint resource type"
 description: "OMA Settings Floating Point definition."
 author: "dougeby"
@@ -15,28 +15,32 @@ Namespace: microsoft.graph
 
 OMA Settings Floating Point definition.
 
-
 Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|value|Single|Value.|
+
+| Property    | Type   | Description                                                                               |
+| :---------- | :----- | :---------------------------------------------------------------------------------------- |
+| displayName | String | Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md) |
+| description | String | Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)  |
+| omaUri      | String | OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)          |
+| value       | Single | Value.                                                                                    |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingFloatingPoint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.omaSettingFloatingPoint",
   "displayName": "String",
@@ -45,12 +49,3 @@ Here is a JSON representation of the resource.
   "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "followupFlag resource type"
 description: "Allows setting a flag for the user to follow up on an item later. Supported items include message and contact."
 localization_priority: Normal
@@ -16,12 +16,13 @@ Namespace: microsoft.graph
 Allows setting a flag for the user to follow up on an item later. Supported items include [message](message.md) and [contact](contact.md).
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time that the follow-up was finished.|
-|dueDateTime|**dateTimeTimeZone**|The date and time that the follow up is to be finished. **Note**: To set the due date, you must also specify the `startDateTime`; otherwise, you will get a `400 Bad Request` response.|
-|flagStatus|String|The status for follow-up for an item. Possible values are `notFlagged`, `complete`, and `flagged`.|
-|startDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to begin.|
+
+| Property          | Type                                    | Description                                                                                                                                                                             |
+| :---------------- | :-------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| completedDateTime | [dateTimeTimeZone](datetimetimezone.md) | The date and time that the follow-up was finished.                                                                                                                                      |
+| dueDateTime       | **dateTimeTimeZone**                    | The date and time that the follow up is to be finished. **Note**: To set the due date, you must also specify the `startDateTime`; otherwise, you will get a `400 Bad Request` response. |
+| flagStatus        | String                                  | The status for follow-up for an item. Possible values are `notFlagged`, `complete`, and `flagged`.                                                                                      |
+| startDateTime     | **dateTimeTimeZone**                    | The date and time that the follow-up is to begin.                                                                                                                                       |
 
 ## JSON representation
 
@@ -47,6 +48,7 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -57,5 +59,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

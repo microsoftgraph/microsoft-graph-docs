@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOSAssociatedDomainsKeyValuePair resource type"
 description: "Key value pair for associated domains"
 author: "dougeby"
@@ -17,35 +17,33 @@ Namespace: microsoft.graph
 
 Key value pair for associated domains
 
-
 Inherits from [keyValuePair](../resources/intune-shared-keyvaluepair.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|name|String|Name for this key-value pair Inherited from [keyValuePair](../resources/intune-shared-keyvaluepair.md)|
-|value|String|Value for this key-value pair Inherited from [keyValuePair](../resources/intune-shared-keyvaluepair.md)|
+
+| Property | Type   | Description                                                                                             |
+| :------- | :----- | :------------------------------------------------------------------------------------------------------ |
+| name     | String | Name for this key-value pair Inherited from [keyValuePair](../resources/intune-shared-keyvaluepair.md)  |
+| value    | String | Value for this key-value pair Inherited from [keyValuePair](../resources/intune-shared-keyvaluepair.md) |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOSAssociatedDomainsKeyValuePair"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.macOSAssociatedDomainsKeyValuePair",
   "name": "String",
   "value": "String"
 }
 ```
-
-
-
-
-
-

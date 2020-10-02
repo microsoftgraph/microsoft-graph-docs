@@ -1,4 +1,4 @@
----
+﻿---
 title: "alert resource type"
 description: "Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified. Use alerts to unify and streamline security issue management across all integrated solutions. To learn more, see the sample queries in Graph Explorer."
 localization_priority: Priority
@@ -17,16 +17,16 @@ Alerts can be retrieved from different security providers listed in the [Microso
 
 ## Methods
 
-| Method   | Return Type|Description|
-|:---------------|:--------|:----------|
-|[Get alert](../api/alert-get.md) | [alert](alert.md) |Read properties and relationships of an alert object.|
-|[Update alert](../api/alert-update.md) | [alert](alert.md) |Update an alert object. |
-|[List alerts](../api/alert-list.md) | [alert](alert.md) collection |Get an alert object collection.|
+| Method                                 | Return Type                  | Description                                           |
+| :------------------------------------- | :--------------------------- | :---------------------------------------------------- |
+| [Get alert](../api/alert-get.md)       | [alert](alert.md)            | Read properties and relationships of an alert object. |
+| [Update alert](../api/alert-update.md) | [alert](alert.md)            | Update an alert object.                               |
+| [List alerts](../api/alert-list.md)    | [alert](alert.md) collection | Get an alert object collection.                       |
 
 ## Properties
 
 | Property             | Type                                                         | Description                                                                                                                                                                                                                                                                                          |
-|:---------------------|:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :------------------- | :----------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | activityGroupName    | String                                                       | Name or alias of the activity group (attacker) this alert is attributed to.                                                                                                                                                                                                                          |
 | assignedTo           | String                                                       | Name of the analyst the alert is assigned to for triage, investigation, or remediation (supports [update](../api/alert-update.md)).                                                                                                                                                                  |
 | azureSubscriptionId  | String                                                       | Azure subscription ID, present if this alert is related to an Azure resource.                                                                                                                                                                                                                        |
@@ -120,6 +120,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "alert resource",
@@ -127,4 +128,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

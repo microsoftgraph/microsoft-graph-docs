@@ -1,4 +1,4 @@
----
+﻿---
 title: "List unifiedRoleAssignmentMultiple"
 description: "Retrieve the properties and relationships of unifiedRoleAssignmentMultiple object."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Get a list of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignment
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                       |
+| :------------------------------------- | :---------------------------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                    |
+| Application                            | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ## HTTP request
 
@@ -34,12 +34,13 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## Optional query parameters
+
 You can filter on the `roleDefinitionId` or `principalId` properties. The `roleDefinitionId` property can be either a role object ID or a role template object ID. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name | Description |
-|:---- |:----------- |
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -103,6 +104,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List roleAssignmentsMultiple",
@@ -110,5 +112,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create securityAction"
 description: Create a new securityAction object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new [securityAction](../resources/securityaction.md) object.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | SecurityActions.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | SecurityActions.ReadWrite.All               |
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ POST /security/securityActions
 ## Request headers
 
 | Name          | Description   |
-|:--------------|:--------------|
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
@@ -54,6 +54,7 @@ If successful, this method returns `201 Created` response code and a [securityAc
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_securityaction_from_security"
@@ -78,20 +79,23 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-securityaction-from-security-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-securityaction-from-security-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-securityaction-from-security-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -135,6 +139,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create securityAction",
@@ -144,5 +149,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

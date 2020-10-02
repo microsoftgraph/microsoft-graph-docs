@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create team"
 description: "Create a new team."
 author: "nkramer"
@@ -19,12 +19,12 @@ Create a new [team](../resources/team.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
+| Permission type                        | Permissions (from least to most privileged)  |
+| :------------------------------------- | :------------------------------------------- |
 | Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                               |
 | Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
-|Application|Teamwork.Migrate.All|
+| Application                            | Teamwork.Migrate.All                         |
 
 ## HTTP request
 
@@ -36,9 +36,9 @@ POST /teams
 
 ## Request headers
 
-| Header        | Value                     |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Header        | Value                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -58,10 +58,12 @@ The following is an example of a minimal request. By omitting other properties, 
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_team_post"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -72,27 +74,32 @@ Content-Type: application/json
   "description": "My Sample Team’s Description"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 <!-- {
   "blockType": "response",
   "name": "create_team_post",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -108,10 +115,12 @@ The following is an example of a minimal request using application permissions. 
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -129,27 +138,32 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 <!-- {
   "blockType": "response",
   "name": "create_team_post_minimal",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -165,10 +179,12 @@ The following is a request with a full payload. The client can override values i
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_team_post_full_payload"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -253,27 +269,32 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-full-payload-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-full-payload-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-full-payload-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 <!-- {
   "blockType": "response",
   "name": "create_team_post_full_payload",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -292,14 +313,15 @@ A few thing to note about this call:
 * The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.
 * If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
 
-
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_team_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -309,27 +331,32 @@ Content-Type: application/json
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 <!-- {
   "blockType": "response",
   "name": "create_team_from_group",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -347,10 +374,12 @@ To learn more about supported base template types and supported properties, see 
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -385,27 +414,32 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_group",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -425,10 +459,12 @@ To learn more about supported base template types, see [Get started with Teams t
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -439,27 +475,32 @@ Content-Type: application/json
   "description": "My Class Team’s Description"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -477,10 +518,12 @@ To learn more about supported base template types and supported properties, see 
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard2"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -516,27 +559,32 @@ Content-Type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard2",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json

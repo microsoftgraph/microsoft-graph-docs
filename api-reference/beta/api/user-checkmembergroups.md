@@ -1,4 +1,4 @@
----
+﻿---
 title: "checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those groups of which"
 author: "krbain"
@@ -24,11 +24,11 @@ in a Microsoft 365 group is always direct.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                                        |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| Permission type                        | Permissions (from least to most privileged)                                                                                                                                                                                                                                                                               |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Delegated (work or school account)     | User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, User.ReadWrite.All and GroupMember.Read.All, User.ReadWrite.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                                                     |
-| Application                            | User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, User.ReadWrite.All and GroupMember.Read.All, User.ReadWrite.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                                                                                                                                                                                                            |
+| Application                            | User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, User.ReadWrite.All and GroupMember.Read.All, User.ReadWrite.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                                                 |
 
 ## HTTP request
 
@@ -49,8 +49,8 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter | Type   | Description           |
-| :-------- | :----- | :-------------------- |
+| Parameter | Type              | Description           |
+| :-------- | :---------------- | :-------------------- |
 | groupIds  | String collection | An array of group ids |
 
 ## Response
@@ -65,8 +65,8 @@ Here is an example of how to call this API.
 
 Here is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_checkmembergroups"
@@ -83,20 +83,23 @@ Content-length: 44
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-checkmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-checkmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/user-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -135,5 +138,3 @@ Content-length: 39
   ]
 }
 -->
-
-

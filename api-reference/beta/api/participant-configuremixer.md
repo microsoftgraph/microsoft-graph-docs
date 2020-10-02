@@ -1,4 +1,4 @@
----
+﻿---
 title: "participant: configureMixer"
 description: "Configure how audio is mixed for different participants in a multiparty conversation."
 author: "ananmishr"
@@ -16,50 +16,60 @@ Namespace: microsoft.graph
 Configure how audio is mixed for different participants in a multiparty conversation.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported        |
-| Delegated (personal Microsoft account) | Not Supported        |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Permission type                        | Permissions (from least to most privileged)            |
+| :------------------------------------- | :----------------------------------------------------- |
+| Delegated (work or school account)     | Not Supported                                          |
+| Delegated (personal Microsoft account) | Not Supported                                          |
+| Application                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /app/calls/{id}/participants/configureMixer
 POST /communications/calls/{id}/participants/configureMixer
 ```
+
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
+
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter      | Type    |Description|
-|:---------------|:--------|:----------|
-|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) collection| Configuration of mixer levels for given audio participant.|
-|clientContext|String|The client context.|
+| Parameter              | Type                                                                      | Description                                                |
+| :--------------------- | :------------------------------------------------------------------------ | :--------------------------------------------------------- |
+| participantMixerLevels | [participantMixerLevel](../resources/participantmixerlevel.md) collection | Configuration of mixer levels for given audio participant. |
+| clientContext          | String                                                                    | The client context.                                        |
 
 ## Response
+
 Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
+
 The following example shows how to call this API.
 
 ##### Request
+
 The following example shows the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "participant-configureMixer"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/configureMixer
 Content-Type: application/json
@@ -88,20 +98,23 @@ Content-Length: 501
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-configuremixer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-configuremixer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-configuremixer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -113,6 +126,7 @@ Content-Length: 501
   "truncated": true,
   "@odata.type": "microsoft.graph.commsOperation"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
@@ -137,6 +151,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -159,6 +174,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -170,5 +186,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

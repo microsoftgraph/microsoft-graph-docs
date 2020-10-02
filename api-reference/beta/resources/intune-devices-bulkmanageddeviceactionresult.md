@@ -1,4 +1,4 @@
----
+﻿---
 title: "bulkManagedDeviceActionResult resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|successfulDeviceIds|String collection|Successful devices|
-|failedDeviceIds|String collection|Failed devices|
-|notFoundDeviceIds|String collection|Not found devices|
-|notSupportedDeviceIds|String collection|Not supported devices|
+
+| Property              | Type              | Description           |
+| :-------------------- | :---------------- | :-------------------- |
+| successfulDeviceIds   | String collection | Successful devices    |
+| failedDeviceIds       | String collection | Failed devices        |
+| notFoundDeviceIds     | String collection | Not found devices     |
+| notSupportedDeviceIds | String collection | Not supported devices |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bulkManagedDeviceActionResult"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.bulkManagedDeviceActionResult",
   "successfulDeviceIds": [
@@ -52,9 +57,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

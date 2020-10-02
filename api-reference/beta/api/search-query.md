@@ -1,4 +1,4 @@
----
+﻿---
 title: "searchEntity: query"
 description: "Runs the query specified in the request body. Search results are provided in the response."
 localization_priority: Normal
@@ -21,11 +21,11 @@ Runs the query specified in the request body. Search results are provided in the
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)                                                                                                                    |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | Mail.Read, Mail.ReadWrite, Calendars.Read, Calendars.ReadWrite,Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, ExternalItem.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                                                 |
+| Application                            | Not supported.                                                                                                                                                 |
 
 ## HTTP request
 
@@ -35,23 +35,22 @@ POST /search/query
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
+| Parameter | Type                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| :-------- | :-------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| requests  | [searchRequest](../resources/searchrequest.md) collection | A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
 
 ## Response
 
 If successful, this method returns `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
- 
 
 ## Examples
 
@@ -60,6 +59,7 @@ If successful, this method returns `HTTP 200 OK` response code and a [searchResp
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "search_query"
@@ -91,20 +91,23 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/search-query-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -151,6 +154,7 @@ Content-type: application/json
 ```
 
 ## See also
+
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
@@ -158,9 +162,9 @@ Content-type: application/json
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregations) to refine search results
 
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "search: query",
@@ -168,5 +172,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

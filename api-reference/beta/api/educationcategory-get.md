@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get educationCategory"
 description: "Retrieve a category object."
 author: "mmast-msft"
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/classes/{id}/assignmentCategories/{id}
 ```
@@ -37,6 +38,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 This method supports the [OData query parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
+
 | Header        | Value                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
@@ -54,6 +56,7 @@ If successful, this method returns a `200 OK` response code and a [educationCate
 ##### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_assignments"
@@ -89,6 +92,7 @@ Content-length: 85
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -99,5 +103,3 @@ Content-length: 85
   "suppressions": []
 }
 -->
-
-

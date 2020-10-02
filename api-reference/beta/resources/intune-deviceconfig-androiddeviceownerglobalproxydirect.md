@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerGlobalProxyDirect resource type"
 description: "Android Device Owner Global Proxy Direct."
 author: "dougeby"
@@ -17,27 +17,31 @@ Namespace: microsoft.graph
 
 Android Device Owner Global Proxy Direct.
 
-
 Inherits from [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|host|String|The host name|
-|port|Int32|The port|
-|excludedHosts|String collection|The excluded hosts|
+
+| Property      | Type              | Description        |
+| :------------ | :---------------- | :----------------- |
+| host          | String            | The host name      |
+| port          | Int32             | The port           |
+| excludedHosts | String collection | The excluded hosts |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyDirect"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGlobalProxyDirect",
   "host": "String",
@@ -47,9 +51,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

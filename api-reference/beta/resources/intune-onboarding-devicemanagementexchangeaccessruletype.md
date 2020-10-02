@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementExchangeAccessRuleType enum type"
 description: "Criteria which defines the type of device this access rule will apply to"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Criteria which defines the type of device this access rule will apply to
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|family|0|Family of devices|
-|model|1|Specific model of device|
 
-
-
-
-
-
+| Member | Value | Description              |
+| :----- | :---- | :----------------------- |
+| family | 0     | Family of devices        |
+| model  | 1     | Specific model of device |

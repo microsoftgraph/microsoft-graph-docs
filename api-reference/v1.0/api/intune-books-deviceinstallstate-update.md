@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update deviceInstallState"
 description: "Update the properties of a deviceInstallState object."
 author: "dougeby"
@@ -16,57 +16,63 @@ Namespace: microsoft.graph
 Update the properties of a [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementApps.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId}
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates/{deviceInstallStateId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object.
 
 The following table shows the properties that are required when you create the [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|deviceName|String|Device name.|
-|deviceId|String|Device Id.|
-|lastSyncDateTime|DateTimeOffset|Last sync date and time.|
-|installState|[installState](../resources/intune-books-installstate.md)|The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|String|The error code for install failures.|
-|osVersion|String|OS Version.|
-|osDescription|String|OS Description.|
-|userName|String|Device User Name.|
-
-
+| Property         | Type                                                      | Description                                                                                                                                |
+| :--------------- | :-------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| id               | String                                                    | Key of the entity.                                                                                                                         |
+| deviceName       | String                                                    | Device name.                                                                                                                               |
+| deviceId         | String                                                    | Device Id.                                                                                                                                 |
+| lastSyncDateTime | DateTimeOffset                                            | Last sync date and time.                                                                                                                   |
+| installState     | [installState](../resources/intune-books-installstate.md) | The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`. |
+| errorCode        | String                                                    | The error code for install failures.                                                                                                       |
+| osVersion        | String                                                    | OS Version.                                                                                                                                |
+| osDescription    | String                                                    | OS Description.                                                                                                                            |
+| userName         | String                                                    | Device User Name.                                                                                                                          |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceInstallState](../resources/intune-books-deviceinstallstate.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId}
 Content-type: application/json
 Content-length: 374
@@ -85,8 +91,10 @@ Content-length: 374
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 423
@@ -104,12 +112,3 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsInformationProtectionIPRangeCollection resource type"
 description: "Windows Information Protection IP Range Collection"
 author: "dougeby"
@@ -16,22 +16,27 @@ Namespace: microsoft.graph
 Windows Information Protection IP Range Collection
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Display name|
-|ranges|[ipRange](../resources/intune-mam-iprange.md) collection|Collection of Internet protocol address ranges|
+
+| Property    | Type                                                     | Description                                    |
+| :---------- | :------------------------------------------------------- | :--------------------------------------------- |
+| displayName | String                                                   | Display name                                   |
+| ranges      | [ipRange](../resources/intune-mam-iprange.md) collection | Collection of Internet protocol address ranges |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionIPRangeCollection"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionIPRangeCollection",
   "displayName": "String",
@@ -44,12 +49,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

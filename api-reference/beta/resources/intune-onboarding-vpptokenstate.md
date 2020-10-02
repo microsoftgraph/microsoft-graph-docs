@@ -1,4 +1,4 @@
----
+﻿---
 title: "vppTokenState enum type"
 description: "Possible states associated with an Apple Volume Purchase Program token."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Possible states associated with an Apple Volume Purchase Program token.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Default state.|
-|valid|1|Token is valid.|
-|expired|2|Token is expired.|
-|invalid|3|Token is invalid.|
-|assignedToExternalMDM|4|Token is managed by another MDM Service.|
-|duplicateLocationId|5|Token is associated with the same location as another token on the account.|
 
-
-
-
-
-
+| Member                | Value | Description                                                                 |
+| :-------------------- | :---- | :-------------------------------------------------------------------------- |
+| unknown               | 0     | Default state.                                                              |
+| valid                 | 1     | Token is valid.                                                             |
+| expired               | 2     | Token is expired.                                                           |
+| invalid               | 3     | Token is invalid.                                                           |
+| assignedToExternalMDM | 4     | Token is managed by another MDM Service.                                    |
+| duplicateLocationId   | 5     | Token is associated with the same location as another token on the account. |

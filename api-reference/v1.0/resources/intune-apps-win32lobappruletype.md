@@ -1,4 +1,4 @@
----
+﻿---
 title: "win32LobAppRuleType enum type"
 description: "Contains rule types for Win32 LOB apps."
 author: "dougeby"
@@ -16,12 +16,8 @@ Namespace: microsoft.graph
 Contains rule types for Win32 LOB apps.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|detection|0|Detection rule.|
-|requirement|1|Requirement rule.|
 
-
-
-
-
+| Member      | Value | Description       |
+| :---------- | :---- | :---------------- |
+| detection   | 0     | Detection rule.   |
+| requirement | 1     | Requirement rule. |

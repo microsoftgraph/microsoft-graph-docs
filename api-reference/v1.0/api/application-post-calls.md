@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create call"
 description: "Create a new call."
 author: "ananmishr"
@@ -19,30 +19,35 @@ Create [call](../resources/call.md) enables your bot to create a new outgoing pe
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 
-| Permission type                        | Permissions (from least to most privileged)                                             |
-|:---------------------------------------|:----------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported                                                                           |
-| Delegated (personal Microsoft account) | Not Supported                                                                           |
+| Permission type                        | Permissions (from least to most privileged)                                                                 |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Not Supported                                                                                               |
+| Delegated (personal Microsoft account) | Not Supported                                                                                               |
 | Application                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
 > **Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the table above.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /communications/calls
 ```
 
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of a [call](../resources/call.md) object.
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.
 
 ## Examples
@@ -52,15 +57,17 @@ If successful, this method returns a `201 Created` response code and a [call](..
 > **Note:** This call needs the Calls.Initiate.All permission.
 
 ##### Request
+
 The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls
 Content-Type: application/json
@@ -89,24 +96,28 @@ Content-Type: application/json
   }
 }
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -117,6 +128,7 @@ Content-Type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
@@ -200,6 +212,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -218,6 +231,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 ##### Notification - established
 
 ```http
@@ -229,6 +243,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -254,15 +269,17 @@ Content-Type: application/json
 > **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
 ##### Request
+
 The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls
 Content-Type: application/json
@@ -305,19 +322,24 @@ Content-Type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-app-hosted-media-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-app-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-call-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -334,6 +356,7 @@ Content-Type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
@@ -528,6 +551,7 @@ Content-Type: application/json
 ```
 
 ### Example 5: Join scheduled meeting with service hosted media
+
 To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.
 This information can be obtained from the [Get Online Meetings API](../api/onlinemeeting-get.md) (VTC-based meetings only).
 
@@ -541,6 +565,7 @@ The values of authorization token, callback url, application id, application nam
   "name": "join-scheduled-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls
 Content-Type: application/json
@@ -585,6 +610,7 @@ Content-Type: application/json
   "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
+
 ##### Response
 
 <!-- {
@@ -592,6 +618,7 @@ Content-Type: application/json
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
@@ -675,6 +702,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -711,6 +739,7 @@ Content-Type: application/json
 }
 
 ```
+
 ##### Notification - established
 
 ```http
@@ -722,6 +751,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -757,6 +787,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 ##### Notification - roster
 
 ```http
@@ -769,6 +800,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.commsNotifications",
   "truncated": true
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -855,6 +887,7 @@ Content-Type: application/json
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
 ### Example 6: Join scheduled meeting with application hosted media
+
 Update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below.
 
 <!-- {
@@ -862,6 +895,7 @@ Update the media config with the [AppHostedMediaConfig](../resources/apphostedme
   "name": "join-scheduled-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls
 Content-Type: application/json
@@ -898,6 +932,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -909,4 +944,3 @@ Content-Type: application/json
   ]
 }
 -->
-

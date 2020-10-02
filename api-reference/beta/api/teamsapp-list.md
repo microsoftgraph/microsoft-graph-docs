@@ -1,4 +1,4 @@
----
+﻿---
 title: "List teamsApp"
 description: "List apps from the Microsoft Teams app catalog. "
 author: "nkramer"
@@ -20,11 +20,11 @@ This includes apps from the Microsoft Teams store, as well as apps from your org
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission Type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
+| Permission Type                        | Permissions (from least to most privileged)                                                |
+| :------------------------------------- | :----------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported                       |
-| Application                            | Not supported. |
+| Delegated (personal Microsoft account) | Not supported                                                                              |
+| Application                            | Not supported.                                                                             |
 
 ## HTTP request
 
@@ -45,7 +45,7 @@ Using `$expand=AppDefinitions` will return more information about the state of t
 ## Request headers
 
 | Header        | Value                     |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -64,8 +64,8 @@ The following example lists all applications that are specific to your tenant.
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp"
@@ -74,20 +74,23 @@ The following example lists all applications that are specific to your tenant.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- markdownlint-disable MD024 -->
 
@@ -123,8 +126,8 @@ The following example lists applications with a given ID.
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp"
@@ -133,20 +136,23 @@ The following example lists applications with a given ID.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -180,8 +186,8 @@ The following example lists applications with a given ID, and expands **appDefin
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp"
@@ -190,20 +196,23 @@ The following example lists applications with a given ID, and expands **appDefin
 ```msgraph-interactive
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -249,5 +258,3 @@ Content-Type: application/json
     ]
   }
 ```
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update audio routing group"
 description: "Modify sources and receivers of an audioRoutingGroup."
 author: "ananmishr"
@@ -16,50 +16,59 @@ Namespace: microsoft.graph
 Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)                |
-| :-------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported                       |
-| Delegated (personal Microsoft account) | Not Supported                       |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Permission type                        | Permissions (from least to most privileged)            |
+| :------------------------------------- | :----------------------------------------------------- |
+| Delegated (work or school account)     | Not Supported                                          |
+| Delegated (personal Microsoft account) | Not Supported                                          |
+| Application                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
 PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
+
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property       | Type    |Description|
-|:---------------|:--------|:----------|
-| receivers | String collection | The target participants in the audioRoutingGroup. |
-| routingMode | String | Possible values are: `oneToOne`, `multicast`. |
-| sources | String collection | The source participant in the audioRoutingGroup. |
+| Property    | Type              | Description                                       |
+| :---------- | :---------------- | :------------------------------------------------ |
+| receivers   | String collection | The target participants in the audioRoutingGroup. |
+| routingMode | String            | Possible values are: `oneToOne`, `multicast`.     |
+| sources     | String collection | The source participant in the audioRoutingGroup.  |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.
 
 ## Example
 
 ##### Request
+
 The following example shows the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update-audioRoutingGroup"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 Content-Type: application/json
@@ -76,15 +85,19 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-audioroutinggroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-audioroutinggroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-audioroutinggroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,6 +112,7 @@ Content-Type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.audioRoutingGroup"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -118,6 +132,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -129,5 +144,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

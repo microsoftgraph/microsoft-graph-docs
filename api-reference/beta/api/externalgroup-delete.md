@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete externalGroup"
 description: "Deletes an externalGroup object."
 author: "snlraju-msft"
@@ -20,7 +20,7 @@ Delete an [externalGroup](../resources/externalgroup.md) object.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from most to least privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not supported                               |
 | Delegated (personal Microsoft account) | Not supported                               |
 | Application                            | ExternalItem.ReadWrite.All                  |
@@ -32,14 +32,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-``` http
+```http
 DELETE /external/connections/{connectionId}/groups/{externalGroupId}
 ```
 
 ## Request headers
 
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -54,33 +54,37 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_externalgroup"
 }
 -->
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-externalgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-externalgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
+
 ### Response
 
 <!-- {
@@ -89,6 +93,6 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -1,4 +1,4 @@
----
+﻿---
 title: "insightValueDouble resource type"
 description: "The value in an user experience analytics insight."
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 The value in an user experience analytics insight.
 
-
 Inherits from [userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|value|Double|Not yet documented|
+
+| Property | Type   | Description        |
+| :------- | :----- | :----------------- |
+| value    | Double | Not yet documented |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.insightValueDouble"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.insightValueDouble",
   "value": "4.2"
 }
 ```
-
-
-
-
-
-

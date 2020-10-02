@@ -1,4 +1,4 @@
----
+﻿---
 title: "Planner: delta"
 description: "Retrieves changes to objects that the user is subscribed to."
 author: "TarkanSevilmis"
@@ -25,11 +25,11 @@ For more information about tracking changes in Microsoft Graph data, see [Use de
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -44,9 +44,9 @@ No additional query parameters (such as `$select`, `$expand`, or `$filter`) are 
 
 ## Request headers
 
-| Name           |Description                |
-|:---------------|:--------------------------|
-| Authorization  | Bearer {token}. Required. |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -68,8 +68,8 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 Here is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_delta"
@@ -78,22 +78,26 @@ Here is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/all/delta
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example of the response.
 
 >**Note:** The response object shown might be shortened for readability. All the changed properties will be returned from an actual call.
@@ -153,6 +157,7 @@ preference-applied: odata.track-changes, odata.track-changes
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -164,5 +169,3 @@ preference-applied: odata.track-changes, odata.track-changes
   ]
 }
 -->
-
-

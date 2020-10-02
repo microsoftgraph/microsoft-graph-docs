@@ -1,4 +1,4 @@
----
+﻿---
 title: "unifiedRolePermission resource type"
 description: "A directory role permission is a collection of allowed resource actions and conditions."
 localization_priority: Normal
@@ -17,10 +17,10 @@ Represents a collection of allowed resource actions and the conditions that must
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|allowedResourceActions|String collection| Set of tasks that can be perfomed on a resource. |
-|condition|String| Optional constraints that must be met for the permission to be effective. |
+| Property               | Type              | Description                                                               |
+| :--------------------- | :---------------- | :------------------------------------------------------------------------ |
+| allowedResourceActions | String collection | Set of tasks that can be perfomed on a resource.                          |
+| condition              | String            | Optional constraints that must be met for the permission to be effective. |
 
 ### allowedResourceActions property
 
@@ -29,6 +29,7 @@ The following is the schema for resource actions:
 ```
 <Namespace>/<Entity>/<PropertySet>/<Action>  
 ```
+
 For example: `microsoft.directory/applications/credentials/update`.  
 
 - Namespace - The services that exposes the task. For example, all tasks in Azure Active Directory use the namespace microsoft.directory.  
@@ -46,6 +47,7 @@ For example: `microsoft.directory/applications/credentials/update`.
   - AllTasks - Represents all CRUD operations (create, read, update, and delete). 
 
 ### condition property
+
 Conditions define constraints that must be met. For example, a requirement that the principal be an "owner" of the target. The following are the supported conditions:
 
 - Self: "@Subject.objectId == @Resource.objectId"
@@ -85,6 +87,7 @@ The following is a JSON representation of the resource.
   "condition": "String"
 }
 ```
+
 ## See also
 
 - [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) - For information about permissions for built-in directory roles.
@@ -92,6 +95,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "unifiedRolePermission resource",
@@ -99,5 +103,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

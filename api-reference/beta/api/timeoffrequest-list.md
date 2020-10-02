@@ -1,4 +1,4 @@
----
+﻿---
 title: "List timeOffRequests"
 description: "Retrieve a list of timeOffRequest objects in the team."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Retrieve a list of [timeoffrequest](../resources/timeoffrequest.md) objects in t
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+| Permission type                        | Permissions (from least to most privileged)                                    |
+| :------------------------------------- | :----------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                 |
+| Application                            | Schedule.Read.All*, Schedule.ReadWrite.All*                                    |
 
 >\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
@@ -43,8 +43,8 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -61,8 +61,8 @@ If successful, this method returns a `200 OK` response code and the requested [t
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_timeoffrequest"
@@ -71,15 +71,19 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-timeoffrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-timeoffrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-timeoffrequest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -117,6 +121,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List timeOffRequest",
@@ -124,5 +129,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

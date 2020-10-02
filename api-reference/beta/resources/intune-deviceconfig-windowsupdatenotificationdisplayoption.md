@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsUpdateNotificationDisplayOption enum type"
 description: "Windows Update Notification Display Options"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Windows Update Notification Display Options
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured|
-|defaultNotifications|1|Use the default Windows Update notifications.|
-|restartWarningsOnly|2|Turn off all notifications, excluding restart warnings.|
-|disableAllNotifications|3|Turn off all notifications, including restart warnings.|
 
-
-
-
-
-
+| Member                  | Value | Description                                             |
+| :---------------------- | :---- | :------------------------------------------------------ |
+| notConfigured           | 0     | Not configured                                          |
+| defaultNotifications    | 1     | Use the default Windows Update notifications.           |
+| restartWarningsOnly     | 2     | Turn off all notifications, excluding restart warnings. |
+| disableAllNotifications | 3     | Turn off all notifications, including restart warnings. |

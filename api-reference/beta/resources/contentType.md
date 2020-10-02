@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "The contentType resource represents a content type in SharePoint."
 ms.date: 09/12/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # ContentType resource type
 
 Namespace: microsoft.graph
@@ -22,6 +23,7 @@ Content types allow you to define a set of columns that must be present on every
 ## JSON representation
 
 Here is a JSON representation of a **contentType** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
 
 ```json
@@ -43,24 +45,24 @@ Here is a JSON representation of a **contentType** resource.
 
 ## Properties
 
-| Property name     | Type                 | Description
-|:------------------|:---------------------|:----------------------------------
-| **description**   | string               | The descriptive text for the item.
-| **group**         | string               | The name of the group this content type belongs to. Helps organize related content types.
-| **hidden**        | boolean              | Indicates whether the content type is hidden in the list's 'New' menu.
-| **id**            | string               | The unique identifier of the content type.
-| **inheritedFrom** | [itemReference][]    | If this content type is inherited from another scope (like a site), provides a reference to the item where the content type is defined.
-| **name**          | string               | The name of the content type.
-| **order**         | [contentTypeOrder][] | Specifies the order in which the content type appears in the selection UI.
-| **parentId**      | string               | The unique identifier of the content type.
-| **readOnly**      | boolean              | If `true`, the content type cannot be modified unless this value is first set to `false`.
-| **sealed**        | boolean              | If `true`, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
+| Property name     | Type                 | Description                                                                                                                                                    |
+| :---------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **description**   | string               | The descriptive text for the item.                                                                                                                             |
+| **group**         | string               | The name of the group this content type belongs to. Helps organize related content types.                                                                      |
+| **hidden**        | boolean              | Indicates whether the content type is hidden in the list's 'New' menu.                                                                                         |
+| **id**            | string               | The unique identifier of the content type.                                                                                                                     |
+| **inheritedFrom** | [itemReference][]    | If this content type is inherited from another scope (like a site), provides a reference to the item where the content type is defined.                        |
+| **name**          | string               | The name of the content type.                                                                                                                                  |
+| **order**         | [contentTypeOrder][] | Specifies the order in which the content type appears in the selection UI.                                                                                     |
+| **parentId**      | string               | The unique identifier of the content type.                                                                                                                     |
+| **readOnly**      | boolean              | If `true`, the content type cannot be modified unless this value is first set to `false`.                                                                      |
+| **sealed**        | boolean              | If `true`, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types. |
 
 ## Relationships
 
-| Property name   | Type                      | Description
-|:----------------|:--------------------------|:-------------------------------
-| **columnLinks** | [columnLink][] collection | The collection of columns that are required by this content type
+| Property name   | Type                      | Description                                                      |
+| :-------------- | :------------------------ | :--------------------------------------------------------------- |
+| **columnLinks** | [columnLink][] collection | The collection of columns that are required by this content type |
 
 See [Introduction to content types and content type publishing][contentTypeIntro] for more information.
 
@@ -79,5 +81,3 @@ See [Introduction to content types and content type publishing][contentTypeIntro
   "suppressions": []
 }
 -->
-
-

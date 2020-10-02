@@ -1,4 +1,4 @@
----
+﻿---
 title: "meetingCapability resource type"
 description: "Contains the capabilities of a meeting"
 author: "ananmishr"
@@ -18,7 +18,7 @@ Contains the capabilities of a meeting
 ## Properties
 
 | Property                          | Type    | Description                                                        |
-|:----------------------------------|:--------|:-------------------------------------------------------------------|
+| :-------------------------------- | :------ | :----------------------------------------------------------------- |
 | allowAnonymousUsersToDialOut      | Boolean | Indicates whether anonymous users dialout is allowed in a meeting. |
 | allowAnonymousUsersToStartMeeting | Boolean | Indicates whether anonymous users are allowed to start a meeting.  |
 | autoAdmittedUsers                 | String  | Possible values are: `everyoneInCompany`, `everyone`.              |
@@ -34,6 +34,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.meetingCapability"
 }-->
+
 ```json
 {
   "allowAnonymousUsersToDialOut": true,
@@ -44,6 +45,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -54,5 +56,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

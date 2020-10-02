@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create session"
 description: "Create a new workbook session. "
 author: "lumine2008"
@@ -33,25 +33,31 @@ In some cases, creating a new session requires an indeterminate time to complete
 This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Files.ReadWrite                             |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /workbook/createSession
 ```
+
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.
 
 ## Response
@@ -61,13 +67,16 @@ If successful, this method returns a `201 Created` response code and a [workbook
 ## Examples
 
 ### Example 1: Basic session creation
+
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_excel_session"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
@@ -77,15 +86,19 @@ Content-length: 52
   "persistChanges": true
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-excel-session-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-excel-session-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-excel-session-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -94,11 +107,13 @@ Content-length: 52
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.workbookSessionInfo"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -109,6 +124,7 @@ Content-length: 52
   "persistChanges": true
 }
 ```
+
 ### Example 2: Session creation with long-running operation pattern
 
 #### Request
@@ -123,12 +139,15 @@ Content-type: application/json
 ```
 
 #### Response
+
 >**Note:** The response object shown here might be shortened for readability. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.workbookSessionInfo"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
@@ -139,6 +158,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",
@@ -148,5 +168,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerBatteryPluggedMode enum type"
 description: "Android Device Owner possible values for states of the device's plugged-in power modes."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Android Device Owner possible values for states of the device's plugged-in power modes.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured; this value is ignored.|
-|ac|1|Power source is an AC charger.|
-|usb|2|Power source is a USB port.|
-|wireless|3|Power source is wireless.|
 
-
-
-
-
-
+| Member        | Value | Description                            |
+| :------------ | :---- | :------------------------------------- |
+| notConfigured | 0     | Not configured; this value is ignored. |
+| ac            | 1     | Power source is an AC charger.         |
+| usb           | 2     | Power source is a USB port.            |
+| wireless      | 3     | Power source is wireless.              |

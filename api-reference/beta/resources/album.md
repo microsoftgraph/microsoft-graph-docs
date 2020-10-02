@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: jeremyke
 title: album resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # album resource type
 
 Namespace: microsoft.graph
@@ -17,9 +18,9 @@ A photo album is a way to virtually group [driveItems][driveItem] with [photo][]
 
 ## Properties
 
-| Property name     | Type   | Description
-|:------------------|:-------|:------------------------------------------------
-| coverImageItemId | String | Unique identifier of the [driveItem][] that is the cover of the album.
+| Property name    | Type   | Description                                                            |
+| :--------------- | :----- | :--------------------------------------------------------------------- |
+| coverImageItemId | String | Unique identifier of the [driveItem][] that is the cover of the album. |
 
 **Note:** If a **coverImageItemId** has not been set before, the thumbnails for an album are chosen automatically.
 After **coverImageItemId** has been set, the thumbnails for an album will always be the item associated with that id.
@@ -39,5 +40,3 @@ To remove a custom-set cover, you can set the **coverImageItemId** property to n
 [bundle]: bundle.md
 [driveItem]: driveItem.md
 [photo]: photo.md
-
-

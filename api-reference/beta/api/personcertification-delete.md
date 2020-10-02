@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete personCertification"
 description: "Deletes an personCertification object."
 localization_priority: Normal
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Delete personCertification
+
 Namespace: microsoft.graph
 
 Deletes a [personCertification](../resources/personcertification.md) object from a user's [profile](../resources/profile.md).
@@ -16,11 +17,11 @@ Deletes a [personCertification](../resources/personcertification.md) object from
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All                            |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -28,17 +29,20 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 DELETE /me/profile/certifications/{id}
 DELETE /users/{id | userPrincipalName}/profile/certifications/{id}
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -48,24 +52,31 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_personCertification"
 }
 -->
-``` http
+
+```http
 DELETE https://graph.microsoft.com/beta/user/{userId}/profile/certifications/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -78,8 +89,7 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/certifications/{id
   "truncated": true
 }
 -->
-``` http
+
+```http
 HTTP/1.1 204 No Content
 ```
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Planner REST API"
 description: "You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Microsoft 365."
 author: "TarkanSevilmis"
@@ -18,7 +18,7 @@ Before you get started with Planner API, you will want to understand how the mai
 Microsoft 365 groups are the owners of the plans in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
-``` http
+```http
 GET /groups/{group-id}/planner/plans
 ```
 
@@ -33,7 +33,7 @@ To [create a task in a plan](../api/planner-post-tasks.md), set the `planId` pro
 Tasks currently cannot be created without plans.
 To [retrieve the tasks in a plan](../api/plannerplan-list-tasks.md), make the following HTTP request.
 
-``` http
+```http
 GET /planner/plans/{plan-id}/tasks
 ```
 
@@ -99,7 +99,7 @@ The following are the possible values for the limit types.
 | MaximumReferencesOnTask       | The `references` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
 | MaximumChecklistItemsOnTask   | The `checklist` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
 | MaximumAssigneesInTasks       | The `assignments` property on the [plannerTask](plannertask.md) resource contains too many values.                                                                                                       |
-| MaximumPlannerPlans       | The group already contains a Plan. Currently, groups can only contain one Plan. **Note:** Some Microsoft apps can exceed this limit. In the future, we will extend this capability to all apps.                                                                                                      |
+| MaximumPlannerPlans           | The group already contains a Plan. Currently, groups can only contain one Plan. **Note:** Some Microsoft apps can exceed this limit. In the future, we will extend this capability to all apps.          |
 
 ### 412 Precondition Failed 
 
@@ -107,6 +107,5 @@ All Planer API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` hea
 The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
-

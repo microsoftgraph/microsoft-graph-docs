@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get calendarPermission"
 description: "Get the properties and relationships of calendarpermission object."
 localization_priority: Normal
@@ -17,27 +17,33 @@ Get the specified permissions object of a user or group calendar that has been s
 
 Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-----|:-----|:-----|:-----|
-| user calendar | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
-| group calendar | Group.Read.All, Group.ReadWrite.All | Not supported. | Not supported. |
+| Calendar       | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application                         |
+| :------------- | :---------------------------------- | :------------------------------------- | :---------------------------------- |
+| user calendar  | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite    | Calendars.Read, Calendars.ReadWrite |
+| group calendar | Group.Read.All, Group.ReadWrite.All | Not supported.                         | Not supported.                      |
 
 ## HTTP request
 
 Get the specified permissions of a user's primary calendar:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /users/{id}/calendar/calendarPermissions/{id}
 ```
 
 Get the specified permissions of a group calendar:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}/calendar/calendarPermissions/{id}
 ```
 
 Get the specified permissions of the user calendar that contains the identified event:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
@@ -48,8 +54,8 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -67,6 +73,7 @@ If successful, this method returns a `200 OK` response code and the requested [c
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_calendarpermission"
@@ -75,20 +82,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarpermission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarpermission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendarpermission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -126,6 +136,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get calendarPermission",
@@ -133,5 +144,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

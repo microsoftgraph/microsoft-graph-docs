@@ -1,4 +1,4 @@
----
+﻿---
 title: "participantEndpoint resource type"
 description: "The participantEndpoint type"
 localization_priority: Normal
@@ -18,11 +18,11 @@ a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) ty
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
-|feedback|[microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md)|The feedback provided by the user of this endpoint about the quality of the session.|
-|identity|[identitySet](identityset.md)|Identity associated with the endpoint.|
+| Property  | Type                                                                    | Description                                                                          |
+| :-------- | :---------------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
+| userAgent | [microsoft.graph.callRecords.userAgent](callrecords-useragent.md)       | User-agent reported by this endpoint.                                                |
+| feedback  | [microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md) | The feedback provided by the user of this endpoint about the quality of the session. |
+| identity  | [identitySet](identityset.md)                                           | Identity associated with the endpoint.                                               |
 
 ## JSON representation
 
@@ -47,6 +47,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "participantEndpoint resource",
@@ -54,4 +55,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete teamsApp"
 description: "Delete a Teams app from an organization's app catalog (the tenant app catalog). "
 localization_priority: Normal
@@ -12,6 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 <!-- markdownlint-disable MD001 -->
+
 ### Delete an app from your organization's app catalog
 
 Delete an [app](../resources/teamsapp.md) from an organization's app catalog (the tenant app catalog). To delete an app, the **distributionMethod** property for the app must be set to `organization`.
@@ -24,18 +25,19 @@ One of the following permissions is required to call this API. To learn more, in
 
 >**Note:** Only global administrators can call this API.
 
-| Permission Type                        | Permissions (from least to most privileged)|
-|:----------------------------------     |:-------------|
+| Permission Type                        | Permissions (from least to most privileged)       |
+| :------------------------------------- | :------------------------------------------------ |
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | AppCatalog.Submit |
-| Delegated (personal Microsoft account) | Not supported|
-| Application                            | Not supported. |
+| Delegated (work or school account)     | AppCatalog.Submit                                 |
+| Delegated (personal Microsoft account) | Not supported                                     |
+| Application                            | Not supported.                                    |
 
 ## HTTP request
 
 To delete an app from the app catalog:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /appCatalogs/teamsApps/{id}
 ```
@@ -48,9 +50,9 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 ## Request headers
 
-| Header        | Value           |
-|:--------------|:--------------  |
-| Authorization | Bearer {token}. Required.  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -66,8 +68,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_teamsapp"
@@ -76,19 +78,24 @@ If successful, this method returns a `204 No Content` response code. It does not
 ```http
 DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/delete-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -107,4 +114,3 @@ DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ```http
 HTTP/1.1 204 No Content
 ```
-

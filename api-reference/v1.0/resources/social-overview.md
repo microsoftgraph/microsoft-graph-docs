@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Graph API to integrate people intelligence in an app"
 description: "Microsoft Graph enables access to useful data about people and documents they interact with."
 author: "simonhult"
@@ -26,7 +26,6 @@ To use the API, see the following:
 
 - [List people](../api/user-list-people.md)
 
-
 ## Help users get the most relevant documents for their work
 
 Feature: Document insights
@@ -38,4 +37,5 @@ Use the insights API to identify the most relevant documents for a user:
 - List documents [shared with or shared by](../api/insights-list-shared.md) a user
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

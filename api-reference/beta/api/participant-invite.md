@@ -1,4 +1,4 @@
----
+﻿---
 title: "participant: invite"
 description: "Invite participants to the active call."
 author: "ananmishr"
@@ -20,43 +20,50 @@ For more information about how to handle operations, see [commsoperation](../res
 >**Note:** This API is only supported for group calls.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)                |
-| :-------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Not supported                       |
-| Delegated (personal Microsoft account) | Not supported                       |
-| Application     | Calls.InitiateGroupCalls.All                               |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | Calls.InitiateGroupCalls.All                |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /app/calls/{id}/participants/invite
 POST /communications/calls/{id}/participants/invite
 ```
+
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter      | Type    |Description|
-|:---------------|:--------|:----------|
-|participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection| The participants to be invited.|
-|clientContext|String|Unique Client Context string. Max limit is 256 chars.|
+| Parameter     | Type                                                                              | Description                                           |
+| :------------ | :-------------------------------------------------------------------------------- | :---------------------------------------------------- |
+| participants  | [invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection | The participants to be invited.                       |
+| clientContext | String                                                                            | Unique Client Context string. Max limit is 256 chars. |
 
 ## Response
+
 If succsessful, this method returns a `200 OK` response code and a Location header with a URI to the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) created for this request. The body of the response contains the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) created.
 
 >**Note:** When this API returns a successful response, all participants will receive a roster update.
 
-
 ## Examples
+
 The following examples show how to call this API.
 
 > **Note:** The response objects might be shortened for readability. All the properties will be returned from an actual call.
@@ -66,10 +73,12 @@ The following examples show how to call this API.
 ##### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "participant-invite"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/invite
 Content-Type: application/json
@@ -93,20 +102,23 @@ Content-Length: 464
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -117,6 +129,7 @@ Content-Length: 464
   "truncated": true,
   "@odata.type": "microsoft.graph.inviteParticipantsOperation"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -158,6 +171,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 { 
    "@odata.type":"#microsoft.graph.commsNotifications",
@@ -203,6 +217,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
    "@odata.type":"#microsoft.graph.commsNotifications",
@@ -253,8 +268,8 @@ Content-Type: application/json
 
 ##### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "participant-invite-multiple"
@@ -294,15 +309,19 @@ Content-Type: application/json
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-multiple-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-multiple-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-multiple-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -361,16 +380,20 @@ Content-Type: application/json
 }
 
 ```
+
 ##### Notification - operation completed
+
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
 ```
+
 <!-- {
   "blockType": "example",
   "truncated": "true",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -415,7 +438,9 @@ Content-Type: application/json
 }
 
 ```
+
 ##### Notification - roster updated with participants added
+
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
@@ -427,7 +452,6 @@ Content-Type: application/json
 }-->
 
 ```json
-
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
@@ -501,11 +525,9 @@ Content-Type: application/json
 
 ### Example 3: Invite participants to a an existing group call, replacing an existing Peer-to-Peer call
 
-
 The invite API supports only one participant when replacing an existing peer-to-peer call. 
 When multiple participants are provided in the request body, only the first participant 
 will be read and the rest of the participants will be ignored.
-
 
 > **Note:** The invite API supports only one participant when `replacesCallId` is provided. 
 > For  details about using `replacesCallId` to replace an existing peer-to-peer call, 
@@ -514,6 +536,7 @@ will be read and the rest of the participants will be ignored.
 ##### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "participant-invite-existing"
@@ -541,20 +564,23 @@ Content-Type: application/json
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-existing-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-existing-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-existing-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -564,7 +590,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.inviteParticipantsOperation"
 }-->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -597,7 +623,7 @@ Content-Type: application/json
 
 ##### Notification - operation completed
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
 ```
@@ -701,6 +727,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -712,5 +739,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

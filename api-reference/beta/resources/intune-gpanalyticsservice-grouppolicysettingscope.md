@@ -1,4 +1,4 @@
----
+﻿---
 title: "groupPolicySettingScope enum type"
 description: "Scope of the group policy setting."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Scope of the group policy setting.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Device scope unknown|
-|device|1|Device scope|
-|user|2|User scope|
 
-
-
-
-
-
+| Member  | Value | Description          |
+| :------ | :---- | :------------------- |
+| unknown | 0     | Device scope unknown |
+| device  | 1     | Device scope         |
+| user    | 2     | User scope           |

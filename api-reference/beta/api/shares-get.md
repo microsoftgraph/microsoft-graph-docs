@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
 ---
+
 # Accessing shared DriveItems
 
 Namespace: microsoft.graph
@@ -19,11 +20,11 @@ To use a sharing URL with this API, your app needs to [transform the URL into a 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                      |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -36,7 +37,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 ### Path parameters
 
 | Parameter Name                 | Value    | Description                                                                         |
-|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| :----------------------------- | :------- | :---------------------------------------------------------------------------------- |
 | **shareIdOrEncodedSharingUrl** | `string` | Required. A sharing token as returned by the API or a properly encoded sharing URL. |
 
 ### Encoding sharing URLs
@@ -58,16 +59,16 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 ## Optional request headers
 
-| Name       | Type   | Description                                                    |
-|:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | Optional. Set to one of the `prefer` values documented below.  |
+| Name       | Type   | Description                                                   |
+| :--------- | :----- | :------------------------------------------------------------ |
+| **Prefer** | string | Optional. Set to one of the `prefer` values documented below. |
 
 ### Prefer header values
 
-| Name                          | Description                                                                                             |
-|:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| redeemSharingLink             | If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item    |
-| redeemSharingLinkIfNecessary  | Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request |
+| Name                         | Description                                                                                             |
+| :--------------------------- | :------------------------------------------------------------------------------------------------------ |
+| redeemSharingLink            | If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item    |
+| redeemSharingLinkIfNecessary | Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request |
 
 redeemSharingLink should be considered equivalent to the caller navigating to the sharing link the browser (accepting the sharing gesture),
 whereas redeemSharingLinkIfNecessary is intended for scenarios where the intention is simply to peek at the link's metadata.
@@ -82,27 +83,30 @@ If successful, this method returns a `200 OK` response code and a [sharedDriveIt
 
 Here is an example of the request to retrieve a shared item:
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
 ```msgraph-interactive
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-root-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-root-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -137,27 +141,30 @@ The **SharedDriveItem** resource includes a **root** and **items** relationships
 
 By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
 ```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-driveitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-driveitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -182,27 +189,30 @@ Content-Type: application/json
 
 By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-shared-driveitem-expand-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-shared-driveitem-expand-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-expand-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -255,5 +265,3 @@ how errors are returned.
   "suppressions": [
   ]
 } -->
-
-

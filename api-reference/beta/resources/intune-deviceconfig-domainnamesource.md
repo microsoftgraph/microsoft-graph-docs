@@ -1,4 +1,4 @@
----
+﻿---
 title: "domainNameSource enum type"
 description: "Domainname source."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Domainname source.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|fullDomainName|0|Full domain name.|
-|netBiosDomainName|1|net bios domain name.|
 
-
-
-
-
-
+| Member            | Value | Description           |
+| :---------------- | :---- | :-------------------- |
+| fullDomainName    | 0     | Full domain name.     |
+| netBiosDomainName | 1     | net bios domain name. |

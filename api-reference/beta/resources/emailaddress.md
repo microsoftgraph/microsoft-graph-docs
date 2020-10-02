@@ -1,4 +1,4 @@
----
+﻿---
 title: "emailAddress resource type"
 description: "Represents the name and SMTP address of an entity instance, for example, a message recipient or calendar owner."
 localization_priority: Normal
@@ -16,10 +16,11 @@ Namespace: microsoft.graph
 Represents the name and SMTP address of an entity instance, for example, a message recipient or calendar owner.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|address|String|The email address of an entity instance.|
-|name|String|The display name of an entity instance.|
+
+| Property | Type   | Description                              |
+| :------- | :----- | :--------------------------------------- |
+| address  | String | The email address of an entity instance. |
+| name     | String | The display name of an entity instance.  |
 
 ## JSON representation
 
@@ -43,6 +44,7 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -53,5 +55,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

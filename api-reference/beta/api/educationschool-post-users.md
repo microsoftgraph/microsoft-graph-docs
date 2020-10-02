@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add educationUser to an educationSchool"
 description: "Add a user to a school."
 author: "mmast-msft"
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /education/schools/{id}/users/$ref
 ```
@@ -53,8 +54,8 @@ If successful, this method returns a `204 No Content` response code and an [educ
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_educationuser_from_educationschool"
@@ -69,20 +70,23 @@ Content-length: 56
   "@odata.id":"https://graph.microsoft.com/beta/education/users/14008"
 }
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationuser-from-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationuser-from-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationuser-from-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -102,6 +106,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -113,5 +118,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

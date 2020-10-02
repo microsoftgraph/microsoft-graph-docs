@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The geoCoordinates resource provides geographic coordinates and elevation of a location based on metadata contained within the file."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # geoCoordinates resource type
 
 Namespace: microsoft.graph
@@ -21,11 +22,11 @@ If a [**driveItem**](driveitem.md) has a non-null **location** facet, the item r
 
 ## Properties
 
-| Property  | Type   | Description
-|:----------|:-------|:--------------------------------------------------------
-| altitude  | Double | Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-| latitude  | Double | Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
-| longitude | Double | Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+| Property  | Type   | Description                                                                         |
+| :-------- | :----- | :---------------------------------------------------------------------------------- |
+| altitude  | Double | Optional. The altitude (height), in feet,  above sea level for the item. Read-only. |
+| latitude  | Double | Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.    |
+| longitude | Double | Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.   |
 
 ## JSON representation
 
@@ -57,5 +58,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

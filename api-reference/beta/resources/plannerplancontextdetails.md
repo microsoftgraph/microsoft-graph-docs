@@ -1,4 +1,4 @@
----
+﻿---
 title: "plannerPlanContextDetails resource type"
 description: "The **plannerPlanContextDetails** resource contains additional information about a plannerPlanContext."
 localization_priority: Normal
@@ -16,9 +16,10 @@ Namespace: microsoft.graph
 The **plannerPlanContextDetails** resource contains additional information about a [plannerPlanContext](plannerplancontext.md).
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|url|String|URL of the user experience represented by the associated [plannerPlanContext](plannerplancontext.md). |
+
+| Property | Type   | Description                                                                                           |
+| :------- | :----- | :---------------------------------------------------------------------------------------------------- |
+| url      | String | URL of the user experience represented by the associated [plannerPlanContext](plannerplancontext.md). |
 
 ## JSON representation
 
@@ -41,6 +42,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -51,5 +53,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

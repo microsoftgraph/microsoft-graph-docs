@@ -1,4 +1,4 @@
----
+﻿---
 title: "windows10DeviceModeType enum type"
 description: "Windows 10 Device Mode type."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Windows 10 Device Mode type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|standardConfiguration|0|Standard Configuration|
-|sModeConfiguration|1|S Mode Configuration|
 
-
-
-
-
-
+| Member                | Value | Description            |
+| :-------------------- | :---- | :--------------------- |
+| standardConfiguration | 0     | Standard Configuration |
+| sModeConfiguration    | 1     | S Mode Configuration   |

@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 ms.date: 09/10/2017
@@ -8,6 +8,7 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
 ---
+
 # Enumerate activities (preview)
 
 Namespace: microsoft.graph
@@ -24,11 +25,11 @@ List the recent [activities](../resources/itemactivity.md) that took place on an
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+| Permission type                        | Permissions (from least to most privileged)                                                           |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                        |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## HTTP request
 
@@ -45,27 +46,30 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "list-activities" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-activities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -175,5 +179,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsFirewallRuleNetworkProfileTypes enum type"
 description: "Flags representing which network profile types apply to a firewall rule."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Flags representing which network profile types apply to a firewall rule.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|No flags set.|
-|domain|1|The profile for networks that are connected to domains.|
-|private|2|The profile for private networks.|
-|public|4|The profile for public networks.|
 
-
-
-
-
-
+| Member        | Value | Description                                             |
+| :------------ | :---- | :------------------------------------------------------ |
+| notConfigured | 0     | No flags set.                                           |
+| domain        | 1     | The profile for networks that are connected to domains. |
+| private       | 2     | The profile for private networks.                       |
+| public        | 4     | The profile for public networks.                        |

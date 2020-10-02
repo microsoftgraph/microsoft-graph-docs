@@ -1,4 +1,4 @@
----
+﻿---
 title: "userTeamwork resource type"
 description: "A container for Microsoft Teams features available per user. "
 author: "clearab"
@@ -15,15 +15,15 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 ## Properties
 
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-|id|string| A unique identifier. |
+| Property | Type   | Description          |
+| :------- | :----- | :------------------- |
+| id       | string | A unique identifier. |
 
 ## Relationships
 
-| Relationship | Type | Description |
-|:---------------|:--------|:----------|
-|installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in the personal scope of this user.|
+| Relationship  | Type                                                       | Description                                            |
+| :------------ | :--------------------------------------------------------- | :----------------------------------------------------- |
+| installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | The apps installed in the personal scope of this user. |
 
 ## JSON representation
 
@@ -44,6 +44,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -54,4 +55,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

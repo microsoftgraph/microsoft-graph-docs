@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Retrieve properties and relationships for a site resource."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Get a site resource
 
 Namespace: microsoft.graph
@@ -22,11 +23,11 @@ A **site** resource represents a team site in SharePoint.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ## Get the tenant's root site
 
@@ -59,27 +60,30 @@ GET /groups/{group-id}/sites/root
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-site" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -116,5 +120,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

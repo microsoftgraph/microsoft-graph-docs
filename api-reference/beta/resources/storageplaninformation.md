@@ -1,4 +1,4 @@
----
+﻿---
 author: psampath
 description: "The storagePlanInformation resource provides information about the drive's storage quota plans."
 ms.date: 06/20/2018
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # storagePlanInformation resource type
 
 Namespace: microsoft.graph
@@ -29,12 +30,12 @@ The **storagePlanInformation** resource provides information about the drive's s
 }
 
 ```
+
 ## Properties
 
-| Property name     | Type      | Description                                                             |
-|:------------------|:----------|:----------------------------------------------------------------------- |
-| upgradeAvailable  | Boolean   | Indicates if there are higher storage quota plans available. Read-only. |
-
+| Property name    | Type    | Description                                                             |
+| :--------------- | :------ | :---------------------------------------------------------------------- |
+| upgradeAvailable | Boolean | Indicates if there are higher storage quota plans available. Read-only. |
 
 <!--
 {
@@ -46,6 +47,3 @@ The **storagePlanInformation** resource provides information about the drive's s
   "suppressions": []
 }
 -->
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "wipe action"
 description: "Wipe a device"
 author: "dougeby"
@@ -18,20 +18,23 @@ Namespace: microsoft.graph
 Wipe a device
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)                                                          |
+| :------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                       |
+| Application                            | DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/managedDevices/{managedDeviceId}/wipe
 POST /deviceManagement/comanagedDevices/{managedDeviceId}/wipe
 POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice/wipe
@@ -42,33 +45,36 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|keepEnrollmentData|Boolean|Not yet documented|
-|keepUserData|Boolean|Not yet documented|
-|macOsUnlockCode|String|Not yet documented|
-|useProtectedWipe|Boolean|Not yet documented|
-
-
+| Property           | Type    | Description        |
+| :----------------- | :------ | :----------------- |
+| keepEnrollmentData | Boolean | Not yet documented |
+| keepUserData       | Boolean | Not yet documented |
+| macOsUnlockCode    | String  | Not yet documented |
+| useProtectedWipe   | Boolean | Not yet documented |
 
 ## Response
+
 If successful, this action returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
@@ -83,13 +89,9 @@ Content-length: 138
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-

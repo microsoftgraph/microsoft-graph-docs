@@ -1,4 +1,4 @@
----
+﻿---
 title: "informationProtectionLabel: evaluateRemoval"
 description: "Evaluate which label to remove and how to remove it based on existing content info."
 localization_priority: Normal
@@ -59,7 +59,6 @@ In the request body, provide a JSON object with the following parameters.
 | contentInfo            | [contentInfo](../resources/contentinfo.md)                       | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
 | downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Justification that must be provided by the user or application logic.                                                               |
 
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body. The [informationProtectionAction object](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs the application which metadata to remove. 
@@ -73,6 +72,7 @@ The following is an example of how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "informationprotectionlabel_evaluateremoval"
@@ -136,20 +136,23 @@ User-agent: ContosoLOBApp/1.0
     }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/informationprotectionlabel-evaluateremoval-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/informationprotectionlabel-evaluateremoval-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-evaluateremoval-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -190,6 +193,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "informationProtectionLabel: evaluateRemoval",
@@ -197,5 +201,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

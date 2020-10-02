@@ -1,4 +1,4 @@
----
+﻿---
 title: "microsoftLauncherSearchBarPlacement enum type"
 description: "Microsoft Launcher Search Bar Placement selection."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Microsoft Launcher Search Bar Placement selection.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured; this value is ignored.|
-|top|1|Indicates that the search bar will be displayed on the top of the device.|
-|bottom|2|Indicates that the search bar will be displayed on the bottom of the device.|
-|hide|3|Indicates that the search bar will be hidden on the device.|
 
-
-
-
-
-
+| Member        | Value | Description                                                                  |
+| :------------ | :---- | :--------------------------------------------------------------------------- |
+| notConfigured | 0     | Not configured; this value is ignored.                                       |
+| top           | 1     | Indicates that the search bar will be displayed on the top of the device.    |
+| bottom        | 2     | Indicates that the search bar will be displayed on the bottom of the device. |
+| hide          | 3     | Indicates that the search bar will be hidden on the device.                  |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create or replace an activity"
 description: "Create a new or replace an existing user activity for your app. If you'd like to create a user activity and its related **historyItems** in one request, you can use deep insert."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new or replace an existing user activity for your app. If you'd like to
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | UserActivity.ReadWrite.CreatedByApp |
-| Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp |
-| Application                            | Not supported.                      |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | UserActivity.ReadWrite.CreatedByApp         |
+| Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp         |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ PUT /me/activities/{appActivityId}
 ## Request headers
 
 | Name          | Type   | Description               |
-|:--------------|:-------|:--------------------------|
+| :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {token}. Required. |
 
 ## Request body
@@ -293,6 +293,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -303,5 +304,3 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
-
-

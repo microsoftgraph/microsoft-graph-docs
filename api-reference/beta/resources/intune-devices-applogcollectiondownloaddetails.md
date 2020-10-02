@@ -1,4 +1,4 @@
----
+﻿---
 title: "appLogCollectionDownloadDetails resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|downloadUrl|String|Download SAS Url for completed AppLogUploadRequest|
-|decryptionKey|String|DecryptionKey as string|
-|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm for Content. Possible values are: `aes256`.|
+
+| Property                  | Type                                                                                  | Description                                                     |
+| :------------------------ | :------------------------------------------------------------------------------------ | :-------------------------------------------------------------- |
+| downloadUrl               | String                                                                                | Download SAS Url for completed AppLogUploadRequest              |
+| decryptionKey             | String                                                                                | DecryptionKey as string                                         |
+| appLogDecryptionAlgorithm | [appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md) | DecryptionAlgorithm for Content. Possible values are: `aes256`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appLogCollectionDownloadDetails"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.appLogCollectionDownloadDetails",
   "downloadUrl": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "appLogDecryptionAlgorithm": "String"
 }
 ```
-
-
-
-
-
-

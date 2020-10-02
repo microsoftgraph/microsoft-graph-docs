@@ -1,4 +1,4 @@
----
+﻿---
 title: "suggestedEnrollmentLimit resource type"
 description: "The suggestedEnrollmentLimit resource represents the suggested enrollment limit when given an enrollment type."
 author: "dougeby"
@@ -18,29 +18,28 @@ Namespace: microsoft.graph
 The suggestedEnrollmentLimit resource represents the suggested enrollment limit when given an enrollment type.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|suggestedDailyLimit|Int32|The suggested enrollment limit within a day|
+
+| Property            | Type  | Description                                 |
+| :------------------ | :---- | :------------------------------------------ |
+| suggestedDailyLimit | Int32 | The suggested enrollment limit within a day |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.suggestedEnrollmentLimit"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.suggestedEnrollmentLimit",
   "suggestedDailyLimit": 1024
 }
 ```
-
-
-
-
-
-

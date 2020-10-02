@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The site resource provides metadata and relationships for a SharePoint site."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Priority
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # site resource type
 
 Namespace: microsoft.graph
@@ -17,20 +18,20 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Methods
 
-| Method                         | REST Path
-|:-------------------------------|:--------------------------------------------
-| [Get root site][]              | GET /sites/root
-| [Get site][]                   | GET /sites/{site-id}
-| [Get site by path][]           | GET /sites/{hostname}:/{site-path}
-| [Get site for a group][]       | GET /groups/{group-id}/sites/root
-| [Get analytics][]              | GET /sites/{site-id}/analytics
-| [Get activities by interval][] | GET /sites/{site-id}/getActivitiesByInterval
-| [List pages][]                 | GET /sites/{site-id}/pages
-| [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
-| [Search for sites][]           | GET /sites?search={query}
-| [Follow site][]                | POST /users/{user-id}/followedSites/add
-| [Unfollow site][]              | POST /users/{user-id}/followedSites/remove
-| [List followed sites][]        | GET /me/followedSites
+| Method                         | REST Path                                                   |
+| :----------------------------- | :---------------------------------------------------------- |
+| [Get root site][]              | GET /sites/root                                             |
+| [Get site][]                   | GET /sites/{site-id}                                        |
+| [Get site by path][]           | GET /sites/{hostname}:/{site-path}                          |
+| [Get site for a group][]       | GET /groups/{group-id}/sites/root                           |
+| [Get analytics][]              | GET /sites/{site-id}/analytics                              |
+| [Get activities by interval][] | GET /sites/{site-id}/getActivitiesByInterval                |
+| [List pages][]                 | GET /sites/{site-id}/pages                                  |
+| [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl |
+| [Search for sites][]           | GET /sites?search={query}                                   |
+| [Follow site][]                | POST /users/{user-id}/followedSites/add                     |
+| [Unfollow site][]              | POST /users/{user-id}/followedSites/remove                  |
+| [List followed sites][]        | GET /me/followedSites                                       |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -45,29 +46,29 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Unfollow site]: ../api/site-unfollow.md
 [List followed sites]: ../api/sites-list-followed.md
 
-
 ## Properties
 
-| Property name            | Type               | Description
-|:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.
-| **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
-| **description**          | string             | The descriptive text for the site.
+| Property name            | Type               | Description                                                                                    |
+| :----------------------- | :----------------- | :--------------------------------------------------------------------------------------------- |
+| **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.                                  |
+| **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.                                             |
+| **description**          | string             | The descriptive text for the site.                                                             |
 | **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
-| **displayName**          | string             | The full title for the site. Read-only.
-| **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.
-| **name**                 | string             | The name / title of the item.
-| **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.
-| **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-| **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
-| **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.
+| **displayName**          | string             | The full title for the site. Read-only.                                                        |
+| **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
+| **name**                 | string             | The name / title of the item.                                                                  |
+| **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.            |
+| **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
+| **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
+| **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.                                          |
 
 ### id property
+
 A **site** is identified by a unique ID that is a composite of the following values:
 * Site collection hostname (contoso.sharepoint.com)
 * Site collection unique ID (GUID)
 * Site unique ID (GUID)
-  
+
 The `root` identifier always references the root site for a given target, as follows:
 
 * `/sites/root`: The tenant root site.
@@ -75,17 +76,17 @@ The `root` identifier always references the root site for a given target, as fol
 
 ## Relationships
 
-| Relationship name | Type                             | Description
-|:------------------|:---------------------------------|:----------------------
-| **analytics**     | [itemAnalytics][] resource       | Analytics about the view activities that took place in this site.
-| **columns**       | Collection([columnDefinition][]) | The collection of column definitions reusable across lists under this site.
-| **contentTypes**  | Collection([contentType][])      | The collection of content types defined for this site.
-| **drive**         | [drive][]                        | The default drive (document library) for this site.
-| **drives**        | Collection([drive][])            | The collection of drives (document libraries) under this site.
-| **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
-| **lists**         | Collection([list][])             | The collection of lists under this site.
-| **pages**         | Collection([sitePage][])         | The collection of pages in the SitePages list in this site.
-| **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
+| Relationship name | Type                             | Description                                                                            |
+| :---------------- | :------------------------------- | :------------------------------------------------------------------------------------- |
+| **analytics**     | [itemAnalytics][] resource       | Analytics about the view activities that took place in this site.                      |
+| **columns**       | Collection([columnDefinition][]) | The collection of column definitions reusable across lists under this site.            |
+| **contentTypes**  | Collection([contentType][])      | The collection of content types defined for this site.                                 |
+| **drive**         | [drive][]                        | The default drive (document library) for this site.                                    |
+| **drives**        | Collection([drive][])            | The collection of drives (document libraries) under this site.                         |
+| **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated. |
+| **lists**         | Collection([list][])             | The collection of lists under this site.                                               |
+| **pages**         | Collection([sitePage][])         | The collection of pages in the SitePages list in this site.                            |
+| **sites**         | Collection([site][])             | The collection of the sub-sites under this site.                                       |
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -162,5 +163,3 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "suppressions": []
 }
 -->
-
-

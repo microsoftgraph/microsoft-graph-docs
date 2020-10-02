@@ -1,4 +1,4 @@
----
+﻿---
 title: "bitLockerRecoveryInformationType enum type"
 description: "BitLockerRecoveryInformationType types"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 BitLockerRecoveryInformationType types
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|passwordAndKey|1|Store recovery passwords and key packages.|
-|passwordOnly|2|Store recovery passwords only.|
 
-
-
-
-
-
+| Member         | Value | Description                                |
+| :------------- | :---- | :----------------------------------------- |
+| passwordAndKey | 1     | Store recovery passwords and key packages. |
+| passwordOnly   | 2     | Store recovery passwords only.             |

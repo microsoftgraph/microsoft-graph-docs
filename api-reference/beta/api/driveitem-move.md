@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Move a DriveItem to a new folder
 
 Namespace: microsoft.graph
@@ -21,13 +22,14 @@ Your app can combine moving an item to a new container and updating other proper
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                      |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -43,9 +45,9 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## Optional request headers
 
-| Name          | Type   | Description                                                                                                                                                         |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
+| Name     | Type   | Description                                                                                                                                                         |
+| :------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| if-match | String | If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned. |
 
 ## Request body
 
@@ -64,8 +66,8 @@ If successful, this method returns a `200 OK` response code and updated [DriveIt
 
 This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
 
 ```http
@@ -79,20 +81,23 @@ Content-type: application/json
   "name": "new-item-name.txt"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/move-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/move-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/move-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -134,5 +139,3 @@ how errors are returned.
   ]
 }
 -->
-
-

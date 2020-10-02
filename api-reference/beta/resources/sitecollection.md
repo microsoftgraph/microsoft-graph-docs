@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The siteCollection resource provides more information about a site collection."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # SiteCollection resource
 
 Namespace: microsoft.graph
@@ -39,16 +40,17 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property name        | Type     | Description
-|:---------------------|:---------|:---------------------------------------------------
-| **hostname**         | string   | The hostname for the site collection. Read-only.
-| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Read-only.
-| **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only.
+| Property name        | Type     | Description                                                                         |
+| :------------------- | :------- | :---------------------------------------------------------------------------------- |
+| **hostname**         | string   | The hostname for the site collection. Read-only.                                    |
+| **dataLocationCode** | string   | The geographic region code for where this site collection resides. Read-only.       |
+| **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only. |
 
 [root]: root.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -59,5 +61,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

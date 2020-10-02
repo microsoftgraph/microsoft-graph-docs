@@ -1,4 +1,4 @@
----
+﻿---
 title: "accessPackageSubject resource type"
 description: "In Azure AD entitlement management, a subject of an access package assignment."
 localization_priority: Normal
@@ -17,14 +17,14 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String|The display name of the subject.|
-|email|String|The email address of the subject.|
-|id|String| Read-only.|
-|objectId|String|The object ID of the subject.|
-|principalName|String|The principal name, if known, of the subject.|
-|type|String|The resource type of the subject.|
+| Property      | Type   | Description                                   |
+| :------------ | :----- | :-------------------------------------------- |
+| displayName   | String | The display name of the subject.              |
+| email         | String | The email address of the subject.             |
+| id            | String | Read-only.                                    |
+| objectId      | String | The object ID of the subject.                 |
+| principalName | String | The principal name, if known, of the subject. |
+| type          | String | The resource type of the subject.             |
 
 ## Relationships
 
@@ -57,6 +57,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "accessPackageSubject resource",
@@ -64,5 +65,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

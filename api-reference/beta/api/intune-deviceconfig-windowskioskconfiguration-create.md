@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create windowsKioskConfiguration"
 description: "Create a new windowsKioskConfiguration object."
 author: "dougeby"
@@ -18,69 +18,75 @@ Namespace: microsoft.graph
 Create a new [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/deviceConfigurations
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the windowsKioskConfiguration object.
 
 The following table shows the properties that are required when you create the windowsKioskConfiguration.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) collection|This policy setting allows to define a list of Kiosk profiles for a Kiosk configuration. This collection can contain a maximum of 3 elements.|
-|kioskBrowserDefaultUrl|String|Specify the default URL the browser should navigate to on launch.|
-|kioskBrowserEnableHomeButton|Boolean|Enable the kiosk browser's home button. By default, the home button is disabled.|
-|kioskBrowserEnableNavigationButtons|Boolean|Enable the kiosk browser's navigation buttons(forward/back). By default, the navigation buttons are disabled.|
-|kioskBrowserEnableEndSessionButton|Boolean|Enable the kiosk browser's end session button. By default, the end session button is disabled.|
-|kioskBrowserRestartOnIdleTimeInMinutes|Int32|Specify the number of minutes the session is idle until the kiosk browser restarts in a fresh state.  Valid values are 1-1440. Valid values 1 to 1440|
-|kioskBrowserBlockedURLs|String collection|Specify URLs that the kiosk browsers should not navigate to|
-|kioskBrowserBlockedUrlExceptions|String collection|Specify URLs that the kiosk browser is allowed to navigate to|
-|edgeKioskEnablePublicBrowsing|Boolean|Enable public browsing kiosk mode for the Microsoft Edge browser. The Default is false.|
-|windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|force update schedule for Kiosk devices.|
-
-
+| Property                                    | Type                                                                                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                                          | String                                                                                                                         | Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                                  |
+| lastModifiedDateTime                        | DateTimeOffset                                                                                                                 | DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                              |
+| roleScopeTagIds                             | String collection                                                                                                              | List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                        |
+| supportsScopeTags                           | Boolean                                                                                                                        | Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) |
+| deviceManagementApplicabilityRuleOsEdition  | [deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)   | The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                       |
+| deviceManagementApplicabilityRuleOsVersion  | [deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)   | The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                  |
+| deviceManagementApplicabilityRuleDeviceMode | [deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md) | The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                 |
+| createdDateTime                             | DateTimeOffset                                                                                                                 | DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                    |
+| description                                 | String                                                                                                                         | Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                             |
+| displayName                                 | String                                                                                                                         | Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                    |
+| version                                     | Int32                                                                                                                          | Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                |
+| kioskProfiles                               | [windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) collection                                      | This policy setting allows to define a list of Kiosk profiles for a Kiosk configuration. This collection can contain a maximum of 3 elements.                                                                                                                                                                                                                                                                                                                                               |
+| kioskBrowserDefaultUrl                      | String                                                                                                                         | Specify the default URL the browser should navigate to on launch.                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| kioskBrowserEnableHomeButton                | Boolean                                                                                                                        | Enable the kiosk browser's home button. By default, the home button is disabled.                                                                                                                                                                                                                                                                                                                                                                                                            |
+| kioskBrowserEnableNavigationButtons         | Boolean                                                                                                                        | Enable the kiosk browser's navigation buttons(forward/back). By default, the navigation buttons are disabled.                                                                                                                                                                                                                                                                                                                                                                               |
+| kioskBrowserEnableEndSessionButton          | Boolean                                                                                                                        | Enable the kiosk browser's end session button. By default, the end session button is disabled.                                                                                                                                                                                                                                                                                                                                                                                              |
+| kioskBrowserRestartOnIdleTimeInMinutes      | Int32                                                                                                                          | Specify the number of minutes the session is idle until the kiosk browser restarts in a fresh state.  Valid values are 1-1440. Valid values 1 to 1440                                                                                                                                                                                                                                                                                                                                       |
+| kioskBrowserBlockedURLs                     | String collection                                                                                                              | Specify URLs that the kiosk browsers should not navigate to                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| kioskBrowserBlockedUrlExceptions            | String collection                                                                                                              | Specify URLs that the kiosk browser is allowed to navigate to                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| edgeKioskEnablePublicBrowsing               | Boolean                                                                                                                        | Enable public browsing kiosk mode for the Microsoft Edge browser. The Default is false.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| windowsKioskForceUpdateSchedule             | [windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)                         | force update schedule for Kiosk devices.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 2829
@@ -170,8 +176,10 @@ Content-length: 2829
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 3001
@@ -262,9 +270,3 @@ Content-Length: 3001
   }
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "certificateConnectorSetting resource type"
 description: "Certificate connector settings."
 author: "dougeby"
@@ -18,26 +18,31 @@ Namespace: microsoft.graph
 Certificate connector settings.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|status|Int32|Certificate connector status|
-|certExpiryTime|DateTimeOffset|Certificate expire time|
-|enrollmentError|String|Certificate connector enrollment error|
-|lastConnectorConnectionTime|DateTimeOffset|Last time certificate connector connected|
-|connectorVersion|String|Version of certificate connector|
-|lastUploadVersion|Int64|Version of last uploaded certificate connector|
+
+| Property                    | Type           | Description                                    |
+| :-------------------------- | :------------- | :--------------------------------------------- |
+| status                      | Int32          | Certificate connector status                   |
+| certExpiryTime              | DateTimeOffset | Certificate expire time                        |
+| enrollmentError             | String         | Certificate connector enrollment error         |
+| lastConnectorConnectionTime | DateTimeOffset | Last time certificate connector connected      |
+| connectorVersion            | String         | Version of certificate connector               |
+| lastUploadVersion           | Int64          | Version of last uploaded certificate connector |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.certificateConnectorSetting"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.certificateConnectorSetting",
   "status": 1024,
@@ -48,9 +53,3 @@ Here is a JSON representation of the resource.
   "lastUploadVersion": 1024
 }
 ```
-
-
-
-
-
-

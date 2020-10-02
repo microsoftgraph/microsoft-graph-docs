@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
 localization_priority: Priority
@@ -19,49 +19,58 @@ When creating a new invitation you have several options available:
 2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources he has been invited to.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                  |
+| :------------------------------------- | :----------------------------------------------------------- |
+| Delegated (work or school account)     | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                               |
+| Application                            | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /invitations
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.
 
 The following table shows the properties that are required when you create a invitation.
 
-| Parameter | Type | Description|
-|:---------------|:--------|:----------|
-|invitedUserEmailAddress |string | The email address of the user you are inviting.|
-|inviteRedirectUrl |string |The URL that the user will be redirected to after redemption.|
+| Parameter               | Type   | Description                                                   |
+| :---------------------- | :----- | :------------------------------------------------------------ |
+| invitedUserEmailAddress | string | The email address of the user you are inviting.               |
+| inviteRedirectUrl       | string | The URL that the user will be redirected to after redemption. |
 
 ## Response
 
 If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.
 
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_invitation_post"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/invitations
 Content-type: application/json
@@ -72,32 +81,39 @@ Content-length: 551
   "inviteRedirectUrl": "https://myapp.com"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-invitation-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-invitation-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-invitation-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.invitation"
 } -->
+
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
@@ -134,4 +150,3 @@ Content-length: 551
       Property 'invitedUser' is of type Custom but has no custom members."
   ]
 }-->
-

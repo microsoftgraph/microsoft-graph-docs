@@ -1,4 +1,4 @@
----
+﻿---
 title: "signInAssistantOptions enum type"
 description: "Values for the SignInAssistantSettings."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Values for the SignInAssistantSettings.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured - wlidsvc Start will be set to SERVICE_DEMAND_START.|
-|disabled|1|Disabled - wlidsvc Start will be set to SERVICE_DISABLED.|
 
-
-
-
-
-
+| Member        | Value | Description                                                         |
+| :------------ | :---- | :------------------------------------------------------------------ |
+| notConfigured | 0     | Not configured - wlidsvc Start will be set to SERVICE_DEMAND_START. |
+| disabled      | 1     | Disabled - wlidsvc Start will be set to SERVICE_DISABLED.           |

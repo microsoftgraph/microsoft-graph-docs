@@ -1,4 +1,4 @@
----
+﻿---
 title: "call: transfer"
 description: "Transfer an active peer-to-peer call."
 author: "ananmishr"
@@ -18,51 +18,60 @@ Transfer an active peer-to-peer call.
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made. This is opposed to transfering the call directly.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)         |
-| :-------------- | :-------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported                |
-| Delegated (personal Microsoft account) | Not Supported                |
-| Application     | Calls.Initiate.All                                  |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not Supported                               |
+| Delegated (personal Microsoft account) | Not Supported                               |
+| Application                            | Calls.Initiate.All                          |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /communications/calls/{id}/transfer
 ```
 
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter      | Type    |Description|
-|:---------------|:--------|:----------|
-|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|The participant which is the target of the transfer.|
-|clientContext|String|Unique Client Context string. Max limit is 256 chars.|
+| Parameter      | Type                                                                   | Description                                           |
+| :------------- | :--------------------------------------------------------------------- | :---------------------------------------------------- |
+| transferTarget | [invitationParticipantInfo](../resources/invitationparticipantinfo.md) | The participant which is the target of the transfer.  |
+| clientContext  | String                                                                 | Unique Client Context string. Max limit is 256 chars. |
 
 ## Response
+
 If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
+
 These examples show the flow of an incoming call all the way to the different types of transfer notifications.
 
 ### Example 1: Call transfer
 
 ##### Request
+
 The following example shows the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "call-transfer"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/transfer
 Content-Type: application/json
@@ -82,24 +91,28 @@ Content-Length: 430
   "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/call-transfer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -110,6 +123,7 @@ Content-Length: 430
   "truncated": true,
   "@odata.type": "microsoft.graph.None"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -125,6 +139,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -155,6 +170,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -183,6 +199,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -219,6 +236,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -246,6 +264,7 @@ Content-Type: application/json
 ### Example 2: Consultative transfer
 
 ##### Request
+
 The following example shows the request.
 
 <!-- {
@@ -284,6 +303,7 @@ Content-Type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.None"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -299,6 +319,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -329,6 +350,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -357,6 +379,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -388,6 +411,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -414,6 +438,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -425,4 +450,3 @@ Content-Type: application/json
   ]
 }
 -->
-

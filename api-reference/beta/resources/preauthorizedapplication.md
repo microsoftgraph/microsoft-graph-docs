@@ -1,4 +1,4 @@
----
+﻿---
 title: "preAuthorizedApplication resource type"
 description: "Lists the pre-authorized client applications"
 localization_priority: Normal
@@ -17,12 +17,13 @@ Lists the client applications that are pre-authorized with the specified permiss
 
 ## Properties
 
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-|appId|String| The unique identifier for the application. |
-|permissionIds|String collection| The unique identifier for the [oauth2PermissionScopes](permissionscope.md) the application requires. |
+| Property      | Type              | Description                                                                                          |
+| :------------ | :---------------- | :--------------------------------------------------------------------------------------------------- |
+| appId         | String            | The unique identifier for the application.                                                           |
+| permissionIds | String collection | The unique identifier for the [oauth2PermissionScopes](permissionscope.md) the application requires. |
 
 ## JSON representation
+
 Here is a JSON representation of the resource.
 
 <!-- {
@@ -41,9 +42,9 @@ Here is a JSON representation of the resource.
 
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -54,5 +55,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

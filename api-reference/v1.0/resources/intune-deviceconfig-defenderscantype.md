@@ -1,4 +1,4 @@
----
+﻿---
 title: "defenderScanType enum type"
 description: "Possible values for system scan type."
 author: "dougeby"
@@ -16,18 +16,10 @@ Namespace: microsoft.graph
 Possible values for system scan type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userDefined|0|User Defined, default value, no intent.|
-|disabled|1|System scan disabled.|
-|quick|2|Quick system scan.|
-|full|3|Full system scan.|
 
-
-
-
-
-
-
-
-
+| Member      | Value | Description                             |
+| :---------- | :---- | :-------------------------------------- |
+| userDefined | 0     | User Defined, default value, no intent. |
+| disabled    | 1     | System scan disabled.                   |
+| quick       | 2     | Quick system scan.                      |
+| full        | 3     | Full system scan.                       |

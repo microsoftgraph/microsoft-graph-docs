@@ -1,4 +1,4 @@
----
+﻿---
 title: "workbookChartAxes resource type"
 description: "Represents the chart axes."
 author: "lumine2008"
@@ -15,19 +15,21 @@ Namespace: microsoft.graph
 
 Represents the chart axes.
 
-
 ## Methods
+
 None
 
 ## Properties
+
 None
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|categoryAxis|[workbookChartAxis](workbookchartaxis.md)|Represents the category axis in a chart. Read-only.|
-|seriesAxis|[workbookChartAxis](workbookchartaxis.md)|Represents the series axis of a 3-dimensional chart. Read-only.|
-|valueAxis|[workbookChartAxis](workbookchartaxis.md)|Represents the value axis in an axis. Read-only.|
+
+| Relationship | Type                                      | Description                                                     |
+| :----------- | :---------------------------------------- | :-------------------------------------------------------------- |
+| categoryAxis | [workbookChartAxis](workbookchartaxis.md) | Represents the category axis in a chart. Read-only.             |
+| seriesAxis   | [workbookChartAxis](workbookchartaxis.md) | Represents the series axis of a 3-dimensional chart. Read-only. |
+| valueAxis    | [workbookChartAxis](workbookchartaxis.md) | Represents the value axis in an axis. Read-only.                |
 
 ## JSON representation
 
@@ -51,6 +53,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -61,5 +64,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

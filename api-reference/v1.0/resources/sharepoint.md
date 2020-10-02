@@ -1,4 +1,4 @@
----
+﻿---
 title: "Working with SharePoint sites in Microsoft Graph"
 description: "The SharePoint API in Microsoft Graph supports the following core scenarios:"
 localization_priority: Priority
@@ -71,24 +71,24 @@ For efficiency, we recommend that you specify _select_ and _expand_ to only retu
 
 The following examples are relative to `https://graph.microsoft.com/v1.0`.
 
-| Path                                   | Description
-|:---------------------------------------|:------------------------------------
-| /sites/root                            | Organization's default [site][].
-| /sites/{site-id}                       | Access a specific [site][] by its ID.
-| /sites/{site-id}/drive                 | Access the default [drive](drive.md) (document library) for the given [site][].
-| /sites/{site-id}/drives                | Enumerate the [drives](drive.md) (document libraries) under the [site][].
-| /sites/{site-id}/sites                 | Enumerate the sub-sites under the [site][].
-| /sites/{site-id}/lists                 | Enumerate the [lists](list.md) under the [site](site.md).
-| /sites/{site-id}/lists/{list-id}/items | Enumerate the [listItems](listitem.md) under the [list](list.md).
-| /groups/{group-id}/sites/root          | Access a group's team [site][].
+| Path                                   | Description                                                                     |
+| :------------------------------------- | :------------------------------------------------------------------------------ |
+| /sites/root                            | Organization's default [site][].                                                |
+| /sites/{site-id}                       | Access a specific [site][] by its ID.                                           |
+| /sites/{site-id}/drive                 | Access the default [drive](drive.md) (document library) for the given [site][]. |
+| /sites/{site-id}/drives                | Enumerate the [drives](drive.md) (document libraries) under the [site][].       |
+| /sites/{site-id}/sites                 | Enumerate the sub-sites under the [site][].                                     |
+| /sites/{site-id}/lists                 | Enumerate the [lists](list.md) under the [site](site.md).                       |
+| /sites/{site-id}/lists/{list-id}/items | Enumerate the [listItems](listitem.md) under the [list](list.md).               |
+| /groups/{group-id}/sites/root          | Access a group's team [site][].                                                 |
 
 Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site.
 You can optionally transition back to addressing the resource model by putting another colon at the end.
 
-| Path                                           | Description
-|:-----------------------------------------------|:-----------------------------------
-| /sites/contoso.sharepoint.com:/teams/hr        | The site associated with https://contoso.sharepoint.com/teams/hr
-| /sites/contoso.sharepoint.com:/teams/hr:/drive | Access the default [drive](drive.md) for this site.
+| Path                                           | Description                                                      |
+| :--------------------------------------------- | :--------------------------------------------------------------- |
+| /sites/contoso.sharepoint.com:/teams/hr        | The site associated with https://contoso.sharepoint.com/teams/hr |
+| /sites/contoso.sharepoint.com:/teams/hr:/drive | Access the default [drive](drive.md) for this site.              |
 
 ## Note for existing SharePoint developers
 
@@ -100,6 +100,7 @@ Because IDs for sites are only unique within their site collection, addressing a
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id},{spweb-id}/
 ```
+
 A URL constructed with only the hostname will point to the root site (`SPWeb`) in the default site collection.
 
 ```http
@@ -119,6 +120,7 @@ GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
 ```
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 [site]: site.md
@@ -134,4 +136,3 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
   "tocPath": "Getting Started",
   "tocIndex": -100
 } -->
-

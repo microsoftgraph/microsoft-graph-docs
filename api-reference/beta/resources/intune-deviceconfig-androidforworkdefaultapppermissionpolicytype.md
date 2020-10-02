@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidForWorkDefaultAppPermissionPolicyType enum type"
 description: "Android For Work default app permission policy type."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Android For Work default app permission policy type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|deviceDefault|0|Device default value, no intent.|
-|prompt|1|Prompt.|
-|autoGrant|2|Auto grant.|
-|autoDeny|3|Auto deny.|
 
-
-
-
-
-
+| Member        | Value | Description                      |
+| :------------ | :---- | :------------------------------- |
+| deviceDefault | 0     | Device default value, no intent. |
+| prompt        | 1     | Prompt.                          |
+| autoGrant     | 2     | Auto grant.                      |
+| autoDeny      | 3     | Auto deny.                       |

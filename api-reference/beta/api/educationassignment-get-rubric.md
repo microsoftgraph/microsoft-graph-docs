@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get educationRubric attached to educationAssignment"
 description: "Get the educaitonRubric attached to an educationAssignment, if one exists."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Get the [educationRubric](../resources/educationrubric.md) object attached to an
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                                                                         |
+| Application                            | Not supported.                                                                                         |
 
 ## HTTP request
 
@@ -35,8 +35,8 @@ GET /education/classes/{id}/assignments/{id}/rubric
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -54,6 +54,7 @@ If successful, this method returns a `200 OK` response code and an [educationRub
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_rubric"
@@ -62,20 +63,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rubric-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-rubric-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rubric-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -186,6 +190,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List rubric",
@@ -193,5 +198,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

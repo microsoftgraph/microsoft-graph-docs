@@ -1,4 +1,4 @@
----
+﻿---
 title: "rgbColor resource type"
 description: "Color in RGB."
 author: "dougeby"
@@ -16,23 +16,28 @@ Namespace: microsoft.graph
 Color in RGB.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|r|Byte|Red value|
-|g|Byte|Green value|
-|b|Byte|Blue value|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
+| r        | Byte | Red value   |
+| g        | Byte | Green value |
+| b        | Byte | Blue value  |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rgbColor"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.rgbColor",
   "r": 1024,
@@ -40,12 +45,3 @@ Here is a JSON representation of the resource.
   "b": 1024
 }
 ```
-
-
-
-
-
-
-
-
-

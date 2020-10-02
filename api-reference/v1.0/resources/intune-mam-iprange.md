@@ -1,4 +1,4 @@
----
+﻿---
 title: "ipRange resource type"
 description: "IP range base class for representing IPV4, IPV6 address ranges"
 author: "dougeby"
@@ -16,30 +16,26 @@ Namespace: microsoft.graph
 IP range base class for representing IPV4, IPV6 address ranges
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ipRange"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
-
-
-
-
-
-
-
-
-

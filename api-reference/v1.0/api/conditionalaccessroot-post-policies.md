@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create conditionalAccessPolicy"
 description: "Create a new conditionalAccessPolicy."
 localization_priority: Normal
@@ -17,10 +17,10 @@ Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)                                  |
+| :------------------------------------- | :--------------------------------------------------------------------------- |
 | Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                                               |
 | Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
 
 ## HTTP request
@@ -33,8 +33,8 @@ POST /identity/conditionalAccess/policies
 
 ## Request headers
 
-| Name          | Description      |
-|:--------------|:-----------------|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
@@ -57,11 +57,13 @@ If successful, this method returns a `201 Created` response code and a new [cond
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
 #### Request
+
 The following example shows a common request to require multi-factor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.
 
 >**Note:** You must set up your trusted locations before using this operation.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -104,24 +106,28 @@ Content-type: application/json
     }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conditionalaccesspolicy-from-conditionalaccessroot-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conditionalaccesspolicy-from-conditionalaccessroot-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conditionalaccesspolicy-from-conditionalaccessroot-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ---
 
@@ -194,6 +200,7 @@ Content-type: application/json
 ### Example 2: Block access to Exchange Online from non-trusted regions
 
 #### Request
+
 The following example shows a request to block access to Exchange Online from non-trusted/unknown regions.
 This example assumes that the named location with id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponds to a list of non-trusted/unknown regions.
 
@@ -302,7 +309,9 @@ Content-type: application/json
 ### Example 3: Use all conditions and controls
 
 #### Request
+
 The following is an example of the request to use all the conditions and controls.
+
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -527,6 +536,7 @@ Content-type: application/json
 ### Example 4: Require MFA to Exchange Online from non-compliant devices
 
 #### Request
+
 The following example shows a request to require MFA to Exchange Online from non-compliant devices.
 
 <!-- {
@@ -623,6 +633,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create conditionalAccessPolicy",
@@ -630,4 +641,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

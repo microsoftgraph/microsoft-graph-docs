@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create an oAuth2PermissionGrant"
 description: "Create an oAuth2PermissionGrant object, representing a delegated permission grant."
 localization_priority: Normal
@@ -21,11 +21,11 @@ A delegated permission grant authorizes a client service principal (representing
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                              |
+| Application                            | Directory.ReadWrite.All                                                                     |
 
 ## HTTP request
 
@@ -37,9 +37,9 @@ POST /oauth2PermissionGrants
 
 ## Request headers
 
-| Name       | Type | Description |
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
 
@@ -54,6 +54,7 @@ If successful, this method returns a 200-series response code and a new [oAuth2P
 ### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "post_oAuth2PermissionGrant"
@@ -74,20 +75,23 @@ Content-Length: 30
   "expiryTime": "2016-10-19T10:37:00Z"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-oauth2permissiongrant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/post-oauth2permissiongrant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -115,6 +119,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -126,5 +131,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

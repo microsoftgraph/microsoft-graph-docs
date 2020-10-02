@@ -1,4 +1,4 @@
----
+﻿---
 title: printTaskStatus resource type
 description: Represents the current execution status of a printTask.
 author: braedenp-msft
@@ -20,20 +20,21 @@ Represents the current execution status of a [printTask](printtask.md).
 For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|state|printTaskProcessingState|The current processing state of the [printTask](printtask.md). Valid values are described in the following table.|
-|description|String|A human-readable description of the current processing state of the [printTask](printtask.md).|
+
+| Property    | Type                     | Description                                                                                                       |
+| :---------- | :----------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| state       | printTaskProcessingState | The current processing state of the [printTask](printtask.md). Valid values are described in the following table. |
+| description | String                   | A human-readable description of the current processing state of the [printTask](printtask.md).                    |
 
 ### printTaskProcessingState values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|pending|0|Task execution is pending.|
-|processing|1|Task execution is in progress.|
-|completed|2|Task execution has completed.|
-|aborted|3|Task execution was aborted.|
-|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+| Member             | Value | Description                                       |
+| :----------------- | :---- | :------------------------------------------------ |
+| pending            | 0     | Task execution is pending.                        |
+| processing         | 1     | Task execution is in progress.                    |
+| completed          | 2     | Task execution has completed.                     |
+| aborted            | 3     | Task execution was aborted.                       |
+| unknownFutureValue | 4     | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
 
@@ -56,6 +57,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "printTaskStatus resource",
@@ -63,5 +65,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

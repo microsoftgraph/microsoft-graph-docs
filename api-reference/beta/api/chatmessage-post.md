@@ -1,4 +1,4 @@
----
+﻿---
 title: "Send chatMessage in a channel or a chat"
 description: "Send a new chatMessage in the specified channel or a chat."
 localization_priority: Normal
@@ -24,22 +24,25 @@ Create a new [chatMessage](../resources/chatmessage.md) in the specified [channe
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions for Channel
+
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ChannelMessage.Send, Group.ReadWrite.All    |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ### Permissions for Chat
+
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ChatMessage.Send, Chat.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ChatMessage.Send, Chat.ReadWrite            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
 ### Sending message in a channel
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -47,6 +50,7 @@ POST /teams/{id}/channels/{id}/messages
 ```
 
 ### Sending replies in a channel
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -54,6 +58,7 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 ```
 
 ### Sending message in a chat
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -63,15 +68,14 @@ POST /users/{id}/chats/{id}/messages
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {code}. Required. |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {code}. Required.    |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object. Only the body property is mandatory; other properties are optional.
-
 
 ## Response
 
@@ -84,9 +88,11 @@ In the following examples, the URL can use the [HTTP syntax](#http-request) desc
 ### Example 1: Hello World
 
 #### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -102,20 +108,23 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -172,11 +181,14 @@ Content-length: 160
 ### Example 2: @mentions
 
 #### Request
+
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 Content-type: application/json
@@ -205,11 +217,13 @@ Content-type: application/json
 #### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -268,6 +282,7 @@ Content-length: 160
 ### Example 3: Cards
 
 #### Request
+
 The following is an example of the request.
 
 > **Note:** The attachment's ID must be unique and can be a new randomly generated GUID. However, the attachment's ID must be the same in the _body_ and _attachments_ elements.
@@ -276,6 +291,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 Content-type: application/json
@@ -302,11 +318,13 @@ Content-type: application/json
 #### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -359,6 +377,7 @@ Content-length: 160
 ### Example 4: File attachments
 
 #### Request
+
 The following is an example of the request.
 
 >**Note:** The file must already be in SharePoint. To find the file properties, GET the **driveItem** for the file. For example, /drives/{id}/items/{id}. Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.
@@ -367,6 +386,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 Content-type: application/json
@@ -390,11 +410,13 @@ Content-type: application/json
 #### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -447,6 +469,7 @@ Content-type: application/json
 ### Example 5: Sending inline images along with the message
 
 #### Request
+
 The following is an example of the request.
 
 > **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in body as `../hostedContents/1/$value`.)
@@ -457,6 +480,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 Content-type: application/json
@@ -479,11 +503,13 @@ Content-type: application/json
 #### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -533,6 +559,7 @@ Content-length: 160
 ### Example 6: Card with inline images
 
 #### Request
+
 The following is an example of the request.
 
 > **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to **1** and the reference in content as `../hostedContents/1/$value`.)
@@ -543,6 +570,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 Content-type: application/json
@@ -580,6 +608,7 @@ Content-type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -638,6 +667,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",

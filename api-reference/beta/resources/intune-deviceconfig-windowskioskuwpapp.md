@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskUWPApp resource type"
 description: "The base class for a type of apps"
 author: "dougeby"
@@ -17,31 +17,35 @@ Namespace: microsoft.graph
 
 The base class for a type of apps
 
-
 Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|String|Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|The app type Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Possible values are: `unknown`, `store`, `desktop`, `aumId`.|
-|autoLaunch|Boolean|Allow the app to be auto-launched in multi-app kiosk mode Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|appUserModelId|String|This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode|
-|appId|String|This references an Intune App that will be target to the same assignments as Kiosk configuration|
-|containedAppId|String|This references an contained App from an Intune App|
+
+| Property            | Type                                                                                               | Description                                                                                                                                                                                              |
+| :------------------ | :------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| startLayoutTileSize | [windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md) | The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Possible values are: `hidden`, `small`, `medium`, `wide`, `large`. |
+| name                | String                                                                                             | Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)                                                                     |
+| appType             | [windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)                     | The app type Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Possible values are: `unknown`, `store`, `desktop`, `aumId`.                                 |
+| autoLaunch          | Boolean                                                                                            | Allow the app to be auto-launched in multi-app kiosk mode Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)                                                  |
+| appUserModelId      | String                                                                                             | This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode                                                                                              |
+| appId               | String                                                                                             | This references an Intune App that will be target to the same assignments as Kiosk configuration                                                                                                         |
+| containedAppId      | String                                                                                             | This references an contained App from an Intune App                                                                                                                                                      |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskUWPApp"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskUWPApp",
   "startLayoutTileSize": "String",
@@ -53,9 +57,3 @@ Here is a JSON representation of the resource.
   "containedAppId": "String"
 }
 ```
-
-
-
-
-
-

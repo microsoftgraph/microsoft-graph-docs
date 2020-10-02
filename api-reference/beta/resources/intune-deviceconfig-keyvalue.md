@@ -1,4 +1,4 @@
----
+﻿---
 title: "keyValue resource type"
 description: "Key Value definition."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Key Value definition.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|key|String|Key.|
-|value|String|Value.|
+
+| Property | Type   | Description |
+| :------- | :----- | :---------- |
+| key      | String | Key.        |
+| value    | String | Value.      |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.keyValue"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.keyValue",
   "key": "String",
   "value": "String"
 }
 ```
-
-
-
-
-
-

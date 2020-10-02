@@ -1,4 +1,4 @@
----
+﻿---
 title: "nonEapAuthenticationMethodForPeap enum type"
 description: "Non-EAP methods for authentication when PEAP is the selected EAP type."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Non-EAP methods for authentication when PEAP is the selected EAP type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|None.|
-|microsoftChapVersionTwo|1|Microsoft CHAP Version 2 (MS-CHAP v2).|
 
-
-
-
-
-
+| Member                  | Value | Description                            |
+| :---------------------- | :---- | :------------------------------------- |
+| none                    | 0     | None.                                  |
+| microsoftChapVersionTwo | 1     | Microsoft CHAP Version 2 (MS-CHAP v2). |

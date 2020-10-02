@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.date: 09/10/2017
 title: File resource thype
@@ -36,10 +36,10 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property | Type                    | Description                                                                                                                                      |
-|:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Property | Type                | Description                                                                                                                                      |
+| :------- | :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------- |
 | hashes   | [Hashes](hashes.md) | Hashes of the file's binary content, if available. Read-only.                                                                                    |
-| mimeType | string                  | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. |
+| mimeType | string              | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. |
 
 ## Remarks 
 
@@ -52,4 +52,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/File"
 } -->
-

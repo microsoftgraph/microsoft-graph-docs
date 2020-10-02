@@ -1,4 +1,4 @@
----
+﻿---
 title: "emailSyncSchedule enum type"
 description: "Possible values for email sync schedule."
 author: "dougeby"
@@ -18,18 +18,13 @@ Namespace: microsoft.graph
 Possible values for email sync schedule.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userDefined|0|User Defined, default value, no intent.|
-|asMessagesArrive|1|Sync as messages arrive.|
-|manual|2|Sync manually.|
-|fifteenMinutes|3|Sync every fifteen minutes.|
-|thirtyMinutes|4|Sync every thirty minutes.|
-|sixtyMinutes|5|Sync every sixty minutes.|
-|basedOnMyUsage|6|Sync based on my usage.|
 
-
-
-
-
-
+| Member           | Value | Description                             |
+| :--------------- | :---- | :-------------------------------------- |
+| userDefined      | 0     | User Defined, default value, no intent. |
+| asMessagesArrive | 1     | Sync as messages arrive.                |
+| manual           | 2     | Sync manually.                          |
+| fifteenMinutes   | 3     | Sync every fifteen minutes.             |
+| thirtyMinutes    | 4     | Sync every thirty minutes.              |
+| sixtyMinutes     | 5     | Sync every sixty minutes.               |
+| basedOnMyUsage   | 6     | Sync based on my usage.                 |

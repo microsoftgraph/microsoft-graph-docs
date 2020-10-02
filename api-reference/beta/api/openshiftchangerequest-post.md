@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create openShiftChangeRequest"
 description: "Create an instance of an openShiftChangeRequest object."
 localization_priority: Normal
@@ -14,15 +14,16 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create instance of an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Schedule.ReadWrite.All*  |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Schedule.ReadWrite.All*                     |
 
 >\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
@@ -40,12 +41,13 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
+
 In the request body, provide a JSON representation of a new [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
 
 ## Response
@@ -57,6 +59,7 @@ If successful, this method returns a `200 OK` response code and the created [ope
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request"
 }-->
@@ -117,6 +120,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create openShiftRequest",
@@ -124,5 +128,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

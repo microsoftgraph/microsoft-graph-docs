@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update mobileAppIntentAndState"
 description: "Update the properties of a mobileAppIntentAndState object."
 author: "dougeby"
@@ -18,51 +18,57 @@ Namespace: microsoft.graph
 Update the properties of a [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.
 
 The following table shows the properties that are required when you create the [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|UUID for the object|
-|managedDeviceIdentifier|String|Device identifier created or collected by Intune.|
-|userId|String|Identifier for the user that tried to enroll the device.|
-|mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) collection|The list of payload intents and states for the tenant.|
-
-
+| Property                | Type                                                                                                             | Description                                              |
+| :---------------------- | :--------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
+| id                      | String                                                                                                           | UUID for the object                                      |
+| managedDeviceIdentifier | String                                                                                                           | Device identifier created or collected by Intune.        |
+| userId                  | String                                                                                                           | Identifier for the user that tried to enroll the device. |
+| mobileAppList           | [mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) collection | The list of payload intents and states for the tenant.   |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 Content-type: application/json
 Content-length: 831
@@ -93,8 +99,10 @@ Content-length: 831
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 880
@@ -124,9 +132,3 @@ Content-Length: 880
   ]
 }
 ```
-
-
-
-
-
-

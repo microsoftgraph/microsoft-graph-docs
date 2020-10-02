@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update a group setting"
 description: "Update the properties of a specific group setting object."
 author: "yyuank"
@@ -17,34 +17,35 @@ Update the properties of a [groupSetting](../resources/groupsetting.md) object f
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)         |
+| :------------------------------------- | :-------------------------------------------------- |
+| Delegated (work or school account)     | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                      |
+| Application                            | Directory.ReadWrite.All                             |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
-
-
 
 ```http
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
+
 ## Request headers
-| Name | Description |
-|:-----------|:-----------|
-| Authorization  | {token}. Required. |
-| Content-Type	| application/json	|
+
+| Name          | Description        |
+| :------------ | :----------------- |
+| Authorization | {token}. Required. |
+| Content-Type  | application/json   |
 
 ## Request body
+
 In the request body, supply the values for relevant fields that should be updated. 
 
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-| values | [settingValue](../resources/settingvalue.md) collection | The updated set of values. You must include the entire collection set. You cannot update a single set of values. |
+| Property | Type                                                    | Description                                                                                                      |
+| :------- | :------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------- |
+| values   | [settingValue](../resources/settingvalue.md) collection | The updated set of values. You must include the entire collection set. You cannot update a single set of values. |
 
 ## Response
 
@@ -58,12 +59,13 @@ In this example, `{id}` is the identifier of the tenant-wide groupSetting object
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_tenant_setting"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
 Content-type: application/json
@@ -131,24 +133,28 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-tenant-setting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-tenant-setting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tenant-setting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenant-setting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -156,6 +162,7 @@ Content-type: application/json
   "blockType": "response",
   "truncated": false
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -166,12 +173,13 @@ In this example, the first `{id}` in the request is the identifier of the group,
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{id}/settings/{id}
 Content-type: application/json
@@ -187,24 +195,28 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -212,12 +224,14 @@ Content-type: application/json
   "blockType": "response",
   "truncated": false
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update groupSetting",
@@ -227,4 +241,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

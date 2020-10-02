@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create relation"
 description: "Create a new relation object."
 author: mohitpcad
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Create relation
+
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,14 +16,14 @@ Namespace: microsoft.graph.termStore
 Create a new [relation](../resources/termstore-relation.md) object. These are used to create pinned and reused relations between terms or between a term and set. When creating a pinned/reused term between term and set then fromTerm in the post body must be null.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account) |TermStore.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
-
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | TermStore.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -30,28 +31,29 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /termStore/sets/{setId}/terms/{termId}/relations
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the [relation](../resources/termstore-relation.md) object.
 
 The following table shows the properties that are required when you create the [relation](../resources/termstore-relation.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|relationship|relationType|Type of relation to be created. Possible values are: `pin`, `reuse`.|
-|set| [microsoft.graph.termstore.set](../resources/termstore-set.md)| The set where the relationship needs to be created.
-|fromTerm| [microsoft.graph.termstore.term](../resources/termstore-term.md) | The term with which the relationship needs to be created.
-
-
+| Property     | Type                                                             | Description                                                          |
+| :----------- | :--------------------------------------------------------------- | :------------------------------------------------------------------- |
+| relationship | relationType                                                     | Type of relation to be created. Possible values are: `pin`, `reuse`. |
+| set          | [microsoft.graph.termstore.set](../resources/termstore-set.md)   | The set where the relationship needs to be created.                  |
+| fromTerm     | [microsoft.graph.termstore.term](../resources/termstore-term.md) | The term with which the relationship needs to be created.            |
 
 ## Response
 
@@ -61,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [relation
 
 ### Request
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}/relations
 Content-Type: application/json
 Content-length: 89
@@ -78,16 +80,18 @@ Content-length: 89
 }
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.termstore.relation"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 {
@@ -110,7 +114,6 @@ Content-Type: application/json
 [microsoft.graph.termStore.term]: ../resources/termstore-term.md
 [microsoft.graph.termStore.relation]: ../resources/termstore-relation.md
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -122,5 +125,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create educationalActivity"
 description: "Create a new educationalActivity."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Create a new [educationalActivity](../resources/educationalactivity.md) in a use
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,10 +36,10 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -47,16 +47,16 @@ In the request body, supply a JSON representation of an [educationalActivity](..
 
 The following table shows the properties that are possible to set when creating a new [educationalActivity](../resources/educationalactivity.md) object in a user's [profile](../resources/profile.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|completionMonthYear|Date|The month and year the user graduated or completed the activity. |
-|endMonthYear|Date|The month and year the user completed the educational activity referenced.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|institution|[institutionData](../resources/institutiondata.md)|Contains details of the institution studied at. |
-|program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contains extended information about the program or course.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
-|startMonthYear|Date|The month and year the user commenced the activity referenced.|
+| Property            | Type                                                                   | Description                                                                                                                                                                                                                                                                    |
+| :------------------ | :--------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences    | String                                                                 | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| completionMonthYear | Date                                                                   | The month and year the user graduated or completed the activity.                                                                                                                                                                                                               |
+| endMonthYear        | Date                                                                   | The month and year the user completed the educational activity referenced.                                                                                                                                                                                                     |
+| inference           | [inferenceData](../resources/inferencedata.md)                         | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| institution         | [institutionData](../resources/institutiondata.md)                     | Contains details of the institution studied at.                                                                                                                                                                                                                                |
+| program             | [educationalActivityDetail](../resources/educationalactivitydetail.md) | Contains extended information about the program or course.                                                                                                                                                                                                                     |
+| source              | [personDataSource](../resources/persondatasource.md)                   | Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                                                             |
+| startMonthYear      | Date                                                                   | The month and year the user commenced the activity referenced.                                                                                                                                                                                                                 |
 
 ## Response
 
@@ -69,6 +69,7 @@ If successful, this method returns a `201 Created` response code and a new [educ
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_educationalactivity_from_profile"
@@ -109,20 +110,23 @@ Content-type: application/json
   "startMonthYear": "Date"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationalactivity-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationalactivity-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationalactivity-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -193,5 +197,3 @@ Content-type: application/json
   "startMonthYear": "Date"
 }
 ```
-
-

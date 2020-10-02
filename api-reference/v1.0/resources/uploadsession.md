@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -35,12 +35,11 @@ Here is a JSON representation of the resource
 
 ## Properties
 
-
-| Property	     | Type              |Description
-|:-------------------|:------------------|:------------------------------------
-| expirationDateTime | DateTimeOffset    | The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-| nextExpectedRanges | String collection | A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (e.g. "0-26" to indicate the first 27 bytes of the file). When uploading files as Outlook attachments, instead of a collection of ranges, this property always indicates a single value "{start}", the location in the file where the next upload should begin.
-| uploadUrl          | String            | The URL endpoint that accepts PUT requests for byte ranges of the file.
+| Property           | Type              | Description                                                                                                                                                                                                                                                                                                                                                                                      |
+| :----------------- | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| expirationDateTime | DateTimeOffset    | The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration time is reached.                                                                                                                                                                                                                                                         |
+| nextExpectedRanges | String collection | A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (e.g. "0-26" to indicate the first 27 bytes of the file). When uploading files as Outlook attachments, instead of a collection of ranges, this property always indicates a single value "{start}", the location in the file where the next upload should begin. |
+| uploadUrl          | String            | The URL endpoint that accepts PUT requests for byte ranges of the file.                                                                                                                                                                                                                                                                                                                          |
 
 ## See also
 
@@ -49,10 +48,10 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "UploadSession is used to provide information about large file uploads.",
   "section": "documentation",
   "tocPath": "Resources/UploadSession"
 } -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedDeviceArchitecture enum type"
 description: "Processor architecture"
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Processor architecture
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown architecture|
-|x86|1|X86|
-|x64|2|X64|
-|arm|3|ARM|
-|arM64|4|ARM64|
 
-
-
-
-
-
+| Member  | Value | Description          |
+| :------ | :---- | :------------------- |
+| unknown | 0     | Unknown architecture |
+| x86     | 1     | X86                  |
+| x64     | 2     | X64                  |
+| arm     | 3     | ARM                  |
+| arM64   | 4     | ARM64                |

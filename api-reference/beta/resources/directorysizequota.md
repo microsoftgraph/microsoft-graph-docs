@@ -1,4 +1,4 @@
----
+﻿---
 title: "directorySizeQuota resource type"
 description: "Represents a company's used and total directory quota."
 localization_priority: Normal
@@ -14,10 +14,11 @@ author: "davidmu1"
 Represents a company's used and total directory quota.
 
 ## Properties
-| Property   | Type|Description|
-|:---------------|:--------|:----------|
-|used|Int32| Used amount of the directory quota. |
-|total|Int32| Total amount of the directory quota.|
+
+| Property | Type  | Description                          |
+| :------- | :---- | :----------------------------------- |
+| used     | Int32 | Used amount of the directory quota.  |
+| total    | Int32 | Total amount of the directory quota. |
 
 ## JSON representation
 

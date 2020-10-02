@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Profile API in Microsoft Graph to retrieve information about a given user or yourself"
 description: "Microsoft Graph applications can use the Profile API to retrieve the profile of another user. "
 author: "kevinbellinger"
@@ -22,7 +22,6 @@ To call the People API in Microsoft Graph, your app will need the appropriate pe
 ## View my profile
 
 The requests in this section get the people most relevant to the signed-in user (`/me`). These requests require the User.Read permission to be present for the signed-in user. 
-
 
 ```http
 GET https://graph.microsoft.com/beta/me/profile/
@@ -270,5 +269,3 @@ Content-type: application/json
     "webAccounts": []
 }
 ```
-
-

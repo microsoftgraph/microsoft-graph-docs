@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementExchangeConnectorSyncType enum type"
 description: "The type of Exchange Connector sync requested."
 author: "dougeby"
@@ -16,16 +16,8 @@ Namespace: microsoft.graph
 The type of Exchange Connector sync requested.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|fullSync|0|Discover all the device in Exchange.|
-|deltaSync|1|Discover only the device in Exchange which have updated during the delta sync window.|
 
-
-
-
-
-
-
-
-
+| Member    | Value | Description                                                                           |
+| :-------- | :---- | :------------------------------------------------------------------------------------ |
+| fullSync  | 0     | Discover all the device in Exchange.                                                  |
+| deltaSync | 1     | Discover only the device in Exchange which have updated during the delta sync window. |

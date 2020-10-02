@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Graph REST API v1.0 reference"
 description: "Welcome to Microsoft Graph REST API reference for the v1.0 endpoint."
 localization_priority: Priority
@@ -56,6 +56,7 @@ https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) in the v1.0 endpoint.
 
 ## Connect with us

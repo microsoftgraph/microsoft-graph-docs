@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosMobileAppIdentifier resource type"
 description: "The identifier for an iOS app."
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 The identifier for an iOS app.
 
-
 Inherits from [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|bundleId|String|The identifier for an app, as specified in the app store.|
+
+| Property | Type   | Description                                               |
+| :------- | :----- | :-------------------------------------------------------- |
+| bundleId | String | The identifier for an app, as specified in the app store. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosMobileAppIdentifier"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosMobileAppIdentifier",
   "bundleId": "String"
 }
 ```
-
-
-
-
-
-

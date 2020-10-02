@@ -1,4 +1,4 @@
----
+﻿---
 title: "mediaContentRatingJapan resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,34 +16,30 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|Movies rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
-|tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|TV rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.|
+
+| Property    | Type                                                                                       | Description                                                                                                                                     |
+| :---------- | :----------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| movieRating | [ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)         | Movies rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`. |
+| tvRating    | [ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md) | TV rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.                                               |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingJapan"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingJapan",
   "movieRating": "String",
   "tvRating": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskUser resource type"
 description: "The user base class used to identify the account info for the kiosk configuration"
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 The user base class used to identify the account info for the kiosk configuration
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskUser"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskUser"
 }
 ```
-
-
-
-
-
-

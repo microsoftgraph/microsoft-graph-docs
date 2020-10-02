@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementReportStatus enum type"
 description: "Possible statuses associated with a generated report"
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Possible statuses associated with a generated report
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Report generation status is unknown|
-|notStarted|1|Report generation has not started|
-|inProgress|2|Report generation is in progress|
-|completed|3|Report generation is completed|
-|failed|4|Report generation has failed|
 
-
-
-
-
-
+| Member     | Value | Description                         |
+| :--------- | :---- | :---------------------------------- |
+| unknown    | 0     | Report generation status is unknown |
+| notStarted | 1     | Report generation has not started   |
+| inProgress | 2     | Report generation is in progress    |
+| completed  | 3     | Report generation is completed      |
+| failed     | 4     | Report generation has failed        |

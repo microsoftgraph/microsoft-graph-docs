@@ -1,4 +1,4 @@
----
+﻿---
 title: "roleAssignmentScopeType enum type"
 description: "Specifies the type of scope for a Role Assignment."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Specifies the type of scope for a Role Assignment.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|resourceScope|0|Allow assignments to the specified ResourceScopes.|
-|allDevices|1|Allow assignments to all Intune devices.|
-|allLicensedUsers|2|Allow assignments to all Intune licensed users.|
-|allDevicesAndLicensedUsers|3|Allow assignments to all Intune devices and licensed users.|
 
-
-
-
-
-
+| Member                     | Value | Description                                                 |
+| :------------------------- | :---- | :---------------------------------------------------------- |
+| resourceScope              | 0     | Allow assignments to the specified ResourceScopes.          |
+| allDevices                 | 1     | Allow assignments to all Intune devices.                    |
+| allLicensedUsers           | 2     | Allow assignments to all Intune licensed users.             |
+| allDevicesAndLicensedUsers | 3     | Allow assignments to all Intune devices and licensed users. |

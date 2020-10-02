@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create accessPackageCatalog"
 description: "Create a new accessPackageCatalog."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new [accessPackageCatalog](../resources/accesspackagecatalog.md) object
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -35,10 +35,10 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
 | Authorization | Bearer \{token\}. Required. |
-| Content-Type  | application/json  |
+| Content-Type  | application/json            |
 
 ## Request body
 
@@ -55,6 +55,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_accesspackagecatalog_from_accesspackagecatalogs"
@@ -70,20 +71,23 @@ Content-type: application/json
   "isExternallyVisible": true
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackagecatalog-from-accesspackagecatalogs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackagecatalog-from-accesspackagecatalogs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackagecatalog-from-accesspackagecatalogs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -113,6 +117,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create accessPackageCatalog",
@@ -120,5 +125,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

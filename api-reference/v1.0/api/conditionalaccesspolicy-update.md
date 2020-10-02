@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update conditionalaccesspolicy"
 description: "Update the properties of a conditionalAccessPolicy object."
 localization_priority: Normal
@@ -17,10 +17,10 @@ Update the properties of a [conditionalAccessPolicy](../resources/conditionalacc
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)                                  |
+| :------------------------------------- | :--------------------------------------------------------------------------- |
 | Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                                               |
 | Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess and Application.Read.All |
 
 > [!NOTE]
@@ -36,8 +36,8 @@ PATCH /identity/conditionalAccess/policies/{id}
 
 ## Request headers
 
-| Name          | Description      |
-|:--------------|:-----------------|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
@@ -58,6 +58,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_conditionalaccesspolicy"
@@ -77,24 +78,28 @@ Content-type: application/json
     }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-conditionalaccesspolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-conditionalaccesspolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-conditionalaccesspolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/update-conditionalaccesspolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ---
 
@@ -113,6 +118,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update conditionalaccesspolicy",
@@ -120,4 +126,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceConfigurationTargetedUserAndDevice resource type"
 description: "Conflict summary for a set of device configuration policies."
 author: "dougeby"
@@ -18,26 +18,31 @@ Namespace: microsoft.graph
 Conflict summary for a set of device configuration policies.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceId|String|The id of the device in the checkin.|
-|deviceName|String|The name of the device in the checkin.|
-|userId|String|The id of the user in the checkin.|
-|userDisplayName|String|The display name of the user in the checkin|
-|userPrincipalName|String|The UPN of the user in the checkin.|
-|lastCheckinDateTime|DateTimeOffset|Last checkin time for this user/device pair.|
+
+| Property            | Type           | Description                                  |
+| :------------------ | :------------- | :------------------------------------------- |
+| deviceId            | String         | The id of the device in the checkin.         |
+| deviceName          | String         | The name of the device in the checkin.       |
+| userId              | String         | The id of the user in the checkin.           |
+| userDisplayName     | String         | The display name of the user in the checkin  |
+| userPrincipalName   | String         | The UPN of the user in the checkin.          |
+| lastCheckinDateTime | DateTimeOffset | Last checkin time for this user/device pair. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceConfigurationTargetedUserAndDevice"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationTargetedUserAndDevice",
   "deviceId": "String",
@@ -48,9 +53,3 @@ Here is a JSON representation of the resource.
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

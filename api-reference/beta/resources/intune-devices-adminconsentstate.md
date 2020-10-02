@@ -1,4 +1,4 @@
----
+﻿---
 title: "adminConsentState enum type"
 description: "Admin consent state."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Admin consent state.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Admin did not configure the item|
-|granted|1|Admin granted item|
-|notGranted|2|Admin deos not grant item|
 
-
-
-
-
-
+| Member        | Value | Description                      |
+| :------------ | :---- | :------------------------------- |
+| notConfigured | 0     | Admin did not configure the item |
+| granted       | 1     | Admin granted item               |
+| notGranted    | 2     | Admin deos not grant item        |

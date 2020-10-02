@@ -1,4 +1,4 @@
----
+﻿---
 title: "alert: updateAlerts"
 description: "Update multiple alerts in one request instead of multiple requests."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Update multiple alerts in one request instead of multiple requests.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account) |   SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | SecurityEvents.ReadWrite.All                |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | SecurityEvents.ReadWrite.All                |
 
 ## HTTP request
 
@@ -36,16 +36,16 @@ POST /security/alerts/updateAlerts
 ## Request headers
 
 | Name          | Description   |
-|:--------------|:--------------|
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters. Each entity must have **id** and **vendorInformation** properties. For details about properties that can be updated, see [update alert](alert-update.md).
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|value|[alert](../resources/alert.md) collection| Collection of alerts to update. Each entity must have **id**, **vendorInformation**, and other editable properties to be updated.|
+| Parameter | Type                                      | Description                                                                                                                       |
+| :-------- | :---------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| value     | [alert](../resources/alert.md) collection | Collection of alerts to update. Each entity must have **id**, **vendorInformation**, and other editable properties to be updated. |
 
 ## Response
 
@@ -60,6 +60,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "alert_updatealerts",
@@ -89,20 +90,23 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/alert-updatealerts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/alert-updatealerts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/alert-updatealerts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -138,6 +142,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "alert: updateAlerts",
@@ -147,5 +152,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

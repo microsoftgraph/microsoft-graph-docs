@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppClipboardSharingLevel enum type"
 description: "Represents the level to which the device's clipboard may be shared between apps"
 author: "dougeby"
@@ -16,18 +16,10 @@ Namespace: microsoft.graph
 Represents the level to which the device's clipboard may be shared between apps
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|allApps|0|Sharing is allowed between all apps, managed or not|
-|managedAppsWithPasteIn|1|Sharing is allowed between all managed apps with paste in enabled|
-|managedApps|2|Sharing is allowed between all managed apps|
-|blocked|3|Sharing between apps is disabled|
 
-
-
-
-
-
-
-
-
+| Member                 | Value | Description                                                       |
+| :--------------------- | :---- | :---------------------------------------------------------------- |
+| allApps                | 0     | Sharing is allowed between all apps, managed or not               |
+| managedAppsWithPasteIn | 1     | Sharing is allowed between all managed apps with paste in enabled |
+| managedApps            | 2     | Sharing is allowed between all managed apps                       |
+| blocked                | 3     | Sharing between apps is disabled                                  |

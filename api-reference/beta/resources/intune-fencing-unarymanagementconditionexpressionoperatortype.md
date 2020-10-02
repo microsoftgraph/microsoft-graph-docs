@@ -1,4 +1,4 @@
----
+﻿---
 title: "unaryManagementConditionExpressionOperatorType enum type"
 description: "Supported operators for unary management condition expressions"
 author: "dougeby"
@@ -18,12 +18,7 @@ Namespace: microsoft.graph
 Supported operators for unary management condition expressions
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|not|0|Negates the evaluation of the operand.|
 
-
-
-
-
-
+| Member | Value | Description                            |
+| :----- | :---- | :------------------------------------- |
+| not    | 0     | Negates the evaluation of the operand. |

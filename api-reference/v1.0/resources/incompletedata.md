@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: incompleteData resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # incompleteData resource type
 
 Namespace: microsoft.graph
@@ -16,10 +17,10 @@ The properties within might provide information about why the data is incomplete
 
 ## Properties
 
-| Property                  | Type           | Description
-|:--------------------------|:---------------|:--------------------------------
-| missingDataBeforeDateTime | DateTimeOffset | The service does not have source data before the specified time.
-| wasThrottled              | Boolean        | Some data was not recorded due to excessive activity.
+| Property                  | Type           | Description                                                      |
+| :------------------------ | :------------- | :--------------------------------------------------------------- |
+| missingDataBeforeDateTime | DateTimeOffset | The service does not have source data before the specified time. |
+| wasThrottled              | Boolean        | Some data was not recorded due to excessive activity.            |
 
 ## JSON representation
 
@@ -40,4 +41,3 @@ The properties within might provide information about why the data is incomplete
   "suppressions": []
 }
 -->
-

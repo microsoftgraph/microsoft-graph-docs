@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 localization_priority: Normal
@@ -21,24 +21,24 @@ Subscriptions expire after a length of time that varies by resource type. In ord
 
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-----|:-----|:-----|:-----|
-|[callRecord](../resources/callrecords-callrecord.md) | Not supported | Not supported | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Not supported | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Not supported | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
-|[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
-|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
-|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-|[group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
-|[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
-|[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
-|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
-|[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
-|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+| Supported resource                                                                                         | Delegated (work or school account)                           | Delegated (personal Microsoft account) | Application                  |
+| :--------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------------------------------------- | :--------------------------- |
+| [callRecord](../resources/callrecords-callrecord.md)                                                       | Not supported                                                | Not supported                          | CallRecords.Read.All         |
+| [chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages)                            | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Not supported                          | ChannelMessage.Read.All      |
+| [chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- all channel messages in organization) | Not supported                                                | Not supported                          | ChannelMessage.Read.All      |
+| [chatMessage](../resources/chatmessage.md) (/chats/{id}/messages)                                          | Chat.Read, Chat.ReadWrite                                    | Not supported                          | Chat.Read.All                |
+| [chatMessage](../resources/chatmessage.md) (/chats/getAllMessages -- all chat messages in organization)    | Not supported                                                | Not supported                          | Chat.Read.All                |
+| [contact](../resources/contact.md)                                                                         | Contacts.Read                                                | Contacts.Read                          | Contacts.Read                |
+| [driveItem](../resources/driveitem.md) (user's personal OneDrive)                                          | Not supported                                                | Files.ReadWrite                        | Not supported                |
+| [driveItem](../resources/driveitem.md) (OneDrive for Business)                                             | Files.ReadWrite.All                                          | Not supported                          | Files.ReadWrite.All          |
+| [event](../resources/event.md)                                                                             | Calendars.Read                                               | Calendars.Read                         | Calendars.Read               |
+| [group](../resources/group.md)                                                                             | Group.Read.All                                               | Not supported                          | Group.Read.All               |
+| [group conversation](../resources/conversation.md)                                                         | Group.Read.All                                               | Not supported                          | Not supported                |
+| [list](../resources/list.md)                                                                               | Sites.ReadWrite.All                                          | Not supported                          | Sites.ReadWrite.All          |
+| [message](../resources/message.md)                                                                         | Mail.ReadBasic, Mail.Read                                    | Mail.ReadBasic, Mail.Read              | Mail.ReadBasic, Mail.Read    |
+| [presence](../resources/presence.md)                                                                       | Presence.Read.All                                            | Not supported                          | Not supported                |
+| [security alert](../resources/alert.md)                                                                    | SecurityEvents.ReadWrite.All                                 | Not supported                          | SecurityEvents.ReadWrite.All |
+| [user](../resources/user.md)                                                                               | User.Read.All                                                | User.Read.All                          | User.Read.All                |
 
 ### chatMessage
 
@@ -79,9 +79,9 @@ PATCH /subscriptions/{id}
 
 ## Request headers
 
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Response
 
@@ -96,6 +96,7 @@ For details about how errors are returned, see [Error responses][error-response]
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
@@ -109,24 +110,28 @@ Content-type: application/json
    "expirationDateTime":"2016-11-22T18:23:45.9356913Z"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-subscription-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
 
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -167,5 +172,3 @@ Content-length: 252
   ]
 }
 -->
-
-

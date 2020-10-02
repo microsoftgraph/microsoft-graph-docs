@@ -1,4 +1,4 @@
----
+﻿---
 title: "shiftAvailability resource type"
 description: "Availability of the user to be scheduled for work and its recurrence pattern."
 localization_priority: Normal
@@ -15,11 +15,11 @@ Availability of the user to be scheduled for a [shift](shift.md) and its recurre
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|recurrence|[patternedRecurrence](patternedrecurrence.md)| Specifies the pattern for recurrence |
-|timeSlots|[timeRange](timerange.md) collection|The time slot(s) preferred by the user.|
-|timeZone|String|Specifies the time zone for the indicated time. |
+| Property   | Type                                          | Description                                     |
+| :--------- | :-------------------------------------------- | :---------------------------------------------- |
+| recurrence | [patternedRecurrence](patternedrecurrence.md) | Specifies the pattern for recurrence            |
+| timeSlots  | [timeRange](timerange.md) collection          | The time slot(s) preferred by the user.         |
+| timeZone   | String                                        | Specifies the time zone for the indicated time. |
 
 ## JSON representation
 
@@ -44,6 +44,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "shiftAvailability resource",
@@ -51,4 +52,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

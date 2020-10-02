@@ -1,4 +1,4 @@
----
+﻿---
 title: "Privileged Identity Management"
 description: "APIs for Azure AD Privileged Identity Management to manage Azure Active Directory roles and Azure resource roles."
 localization_priority: Priority
@@ -23,6 +23,7 @@ Namespace: microsoft.graph
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -33,5 +34,3 @@ Namespace: microsoft.graph
   "suppressions": []
 }
 -->
-
-

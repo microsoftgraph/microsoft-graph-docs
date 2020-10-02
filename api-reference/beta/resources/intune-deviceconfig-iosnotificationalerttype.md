@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosNotificationAlertType enum type"
 description: "Notification Settings Alert Type."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Notification Settings Alert Type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|deviceDefault|0|Device default value, no intent.|
-|banner|1|Banner.|
-|modal|2|Modal.|
-|none|3|None.|
 
-
-
-
-
-
+| Member        | Value | Description                      |
+| :------------ | :---- | :------------------------------- |
+| deviceDefault | 0     | Device default value, no intent. |
+| banner        | 1     | Banner.                          |
+| modal         | 2     | Modal.                           |
+| none          | 3     | None.                            |

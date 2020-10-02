@@ -1,4 +1,4 @@
----
+﻿---
 title: "omaSettingString resource type"
 description: "OMA Settings String definition."
 author: "dougeby"
@@ -17,28 +17,32 @@ Namespace: microsoft.graph
 
 OMA Settings String definition.
 
-
 Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|value|String|Value.|
+
+| Property    | Type   | Description                                                                               |
+| :---------- | :----- | :---------------------------------------------------------------------------------------- |
+| displayName | String | Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md) |
+| description | String | Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)  |
+| omaUri      | String | OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)          |
+| value       | String | Value.                                                                                    |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingString"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.omaSettingString",
   "displayName": "String",
@@ -47,9 +51,3 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
-
-
-
-
-
-

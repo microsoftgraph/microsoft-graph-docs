@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationOrganization resource type"
 description: "Abstract entity used to model the commonality between different organization types within the education sector."
 author: "mmast-msft"
@@ -14,15 +14,16 @@ Namespace: microsoft.graph
 Abstract entity used to model the commonality between different organization types within the education sector.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|description|String| Organization description.|
-|displayName|String| Organization display name.|
-|externalSource|educationExternalSource| Source where this organization was created from. The possible values are: `sis`, `manual`, `unknownFutureValue`.|
+
+| Property       | Type                    | Description                                                                                                      |
+| :------------- | :---------------------- | :--------------------------------------------------------------------------------------------------------------- |
+| description    | String                  | Organization description.                                                                                        |
+| displayName    | String                  | Organization display name.                                                                                       |
+| externalSource | educationExternalSource | Source where this organization was created from. The possible values are: `sis`, `manual`, `unknownFutureValue`. |
 
 ## Relationships
-None.
 
+None.
 
 ## JSON representation
 
@@ -49,6 +50,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationOrganization resource",
@@ -56,4 +58,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

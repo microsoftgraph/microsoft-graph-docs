@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: moveAction resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # moveAction resource type
 
 Namespace: microsoft.graph
@@ -19,10 +20,10 @@ The presence of the **moveAction** resource on an [**itemActivity**][activity] i
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| from          | string | The name of the location the item was moved from.
-| to            | string | The name of the location the item was moved to.
+| Property name | Type   | Description                                       |
+| :------------ | :----- | :------------------------------------------------ |
+| from          | string | The name of the location the item was moved from. |
+| to            | string | The name of the location the item was moved to.   |
 
 ## JSON representation
 
@@ -49,4 +50,3 @@ The presence of the **moveAction** resource on an [**itemActivity**][activity] i
   "suppressions": []
 }
 -->
-

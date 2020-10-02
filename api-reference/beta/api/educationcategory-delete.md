@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete educationCategory"
 description: "Delete an existing category."
 author: "dipakboyed"
@@ -53,8 +53,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_educationassignment"
@@ -63,20 +63,23 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCategories/19002
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -93,6 +96,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -104,5 +108,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

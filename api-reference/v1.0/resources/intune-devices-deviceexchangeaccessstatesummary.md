@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceExchangeAccessStateSummary resource type"
 description: "Device Exchange Access State summary"
 author: "dougeby"
@@ -16,25 +16,30 @@ Namespace: microsoft.graph
 Device Exchange Access State summary
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedDeviceCount|Int32|Total count of devices with Exchange Access State: Allowed.|
-|blockedDeviceCount|Int32|Total count of devices with Exchange Access State: Blocked.|
-|quarantinedDeviceCount|Int32|Total count of devices with Exchange Access State: Quarantined.|
-|unknownDeviceCount|Int32|Total count of devices with Exchange Access State: Unknown.|
-|unavailableDeviceCount|Int32|Total count of devices for which no Exchange Access State could be found.|
+
+| Property               | Type  | Description                                                               |
+| :--------------------- | :---- | :------------------------------------------------------------------------ |
+| allowedDeviceCount     | Int32 | Total count of devices with Exchange Access State: Allowed.               |
+| blockedDeviceCount     | Int32 | Total count of devices with Exchange Access State: Blocked.               |
+| quarantinedDeviceCount | Int32 | Total count of devices with Exchange Access State: Quarantined.           |
+| unknownDeviceCount     | Int32 | Total count of devices with Exchange Access State: Unknown.               |
+| unavailableDeviceCount | Int32 | Total count of devices for which no Exchange Access State could be found. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceExchangeAccessStateSummary",
   "allowedDeviceCount": 1024,
@@ -44,12 +49,3 @@ Here is a JSON representation of the resource.
   "unavailableDeviceCount": 1024
 }
 ```
-
-
-
-
-
-
-
-
-

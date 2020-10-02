@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceAndAppManagementAssignedRoleDetails resource type"
 description: "The set of Role Definitions and Role Assignments assigned to a user."
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 The set of Role Definitions and Role Assignments assigned to a user.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|roleDefinitionIds|String collection|Role Definition IDs for the specifc Role Definitions assigned to a user.|
-|roleAssignmentIds|String collection|Role Assignment IDs for the specifc Role Assignments assigned to a user.|
+
+| Property          | Type              | Description                                                              |
+| :---------------- | :---------------- | :----------------------------------------------------------------------- |
+| roleDefinitionIds | String collection | Role Definition IDs for the specifc Role Definitions assigned to a user. |
+| roleAssignmentIds | String collection | Role Assignment IDs for the specifc Role Assignments assigned to a user. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementAssignedRoleDetails"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignedRoleDetails",
   "roleDefinitionIds": [
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

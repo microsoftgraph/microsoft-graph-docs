@@ -1,4 +1,4 @@
----
+﻿---
 title: "vpnDeadPeerDetectionRate enum type"
 description: "Determines how often to check if a peer connection is still alive"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Determines how often to check if a peer connection is still alive
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|medium|0|Medium|
-|none|1|None|
-|low|2|Low|
-|high|3|High|
 
-
-
-
-
-
+| Member | Value | Description |
+| :----- | :---- | :---------- |
+| medium | 0     | Medium      |
+| none   | 1     | None        |
+| low    | 2     | Low         |
+| high   | 3     | High        |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "applicationSignInDetailedSummary resource type"
 description: "Represents an application sign-in summary."
 localization_priority: Normal
@@ -17,22 +17,23 @@ Represents an application sign-in summary.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                                                 | Return Type                                             | Description                                                                      |
+| :--------------------------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------- |
 | [Get applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|appDisplayName|String|Name of the application that the user signed in to.|
-|appId|String|  ID of the application that the user signed i nto.|
-|failedSignInCount|Int64|Count of failed sign-ins made by the application.|
-|successPercentage|Int32|Percentage of successful sign-ins made by the application.|
-|successfulSignInCount|Int64|Count of successful sign-ins made by the application.|
+
+| Property              | Type   | Description                                                |
+| :-------------------- | :----- | :--------------------------------------------------------- |
+| appDisplayName        | String | Name of the application that the user signed in to.        |
+| appId                 | String | ID of the application that the user signed i nto.          |
+| failedSignInCount     | Int64  | Count of failed sign-ins made by the application.          |
+| successPercentage     | Int32  | Percentage of successful sign-ins made by the application. |
+| successfulSignInCount | Int64  | Count of successful sign-ins made by the application.      |
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 
@@ -59,6 +60,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "applicationSignInSummary resource",
@@ -66,5 +68,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

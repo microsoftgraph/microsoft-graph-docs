@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "The presence of the CreateAction resource on an itemActivity indicates that the activity created an item."
 ms.date: 09/14/2017
@@ -51,5 +51,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

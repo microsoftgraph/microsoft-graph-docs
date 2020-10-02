@@ -1,4 +1,4 @@
----
+﻿---
 title: "installIntent enum type"
 description: "Possible values for the install intent chosen by the admin."
 author: "dougeby"
@@ -16,18 +16,10 @@ Namespace: microsoft.graph
 Possible values for the install intent chosen by the admin.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|available|0|Available install intent.|
-|required|1|Required install intent.|
-|uninstall|2|Uninstall install intent.|
-|availableWithoutEnrollment|3|Available without enrollment install intent.|
 
-
-
-
-
-
-
-
-
+| Member                     | Value | Description                                  |
+| :------------------------- | :---- | :------------------------------------------- |
+| available                  | 0     | Available install intent.                    |
+| required                   | 1     | Required install intent.                     |
+| uninstall                  | 2     | Uninstall install intent.                    |
+| availableWithoutEnrollment | 3     | Available without enrollment install intent. |

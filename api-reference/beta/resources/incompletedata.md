@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "The incompleteData facet indicates that a resource was generated with incomplete data."
 ms.date: 10/06/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # incompleteData resource type
 
 Namespace: microsoft.graph
@@ -29,10 +30,10 @@ The properties within may provide information about why there is incomplete data
 
 ## Properties
 
-| Property                  | Type           | Description
-|:--------------------------|:---------------|:--------------------------------
-| missingDataBeforeDateTime | DateTimeOffset | The service does not have source data before the specified time.
-| wasThrottled              | Boolean        | Some data was not recorded due to excessive activity.
+| Property                  | Type           | Description                                                      |
+| :------------------------ | :------------- | :--------------------------------------------------------------- |
+| missingDataBeforeDateTime | DateTimeOffset | The service does not have source data before the specified time. |
+| wasThrottled              | Boolean        | Some data was not recorded due to excessive activity.            |
 
 <!--
 {
@@ -42,5 +43,3 @@ The properties within may provide information about why there is incomplete data
   "suppressions": []
 }
 -->
-
-

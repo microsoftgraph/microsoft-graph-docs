@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingRequiredConstraint resource type"
 description: "Constraint that enforces a particular required setting that is not null/undefined/empty string/not configured"
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 Constraint that enforces a particular required setting that is not null/undefined/empty string/not configured
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|notConfiguredValue|String|List of value which means not configured for the setting|
+
+| Property           | Type   | Description                                              |
+| :----------------- | :----- | :------------------------------------------------------- |
+| notConfiguredValue | String | List of value which means not configured for the setting |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingRequiredConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingRequiredConstraint",
   "notConfiguredValue": "String"
 }
 ```
-
-
-
-
-
-

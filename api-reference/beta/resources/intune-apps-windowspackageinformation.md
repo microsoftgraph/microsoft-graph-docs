@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsPackageInformation resource type"
 description: "Contains properties for the package information for a Windows line of business app."
 author: "dougeby"
@@ -18,27 +18,32 @@ Namespace: microsoft.graph
 Contains properties for the package information for a Windows line of business app.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|displayName|String|The Display Name.|
-|identityName|String|The Identity Name.|
-|identityPublisher|String|The Identity Publisher.|
-|identityResourceIdentifier|String|The Identity Resource Identifier.|
-|identityVersion|String|The Identity Version.|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+
+| Property                        | Type                                                                                       | Description                                                                                                                   |
+| :------------------------------ | :----------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| applicableArchitecture          | [windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)                     | The Windows architecture for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`. |
+| displayName                     | String                                                                                     | The Display Name.                                                                                                             |
+| identityName                    | String                                                                                     | The Identity Name.                                                                                                            |
+| identityPublisher               | String                                                                                     | The Identity Publisher.                                                                                                       |
+| identityResourceIdentifier      | String                                                                                     | The Identity Resource Identifier.                                                                                             |
+| identityVersion                 | String                                                                                     | The Identity Version.                                                                                                         |
+| minimumSupportedOperatingSystem | [windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md) | The value for the minimum applicable operating system.                                                                        |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsPackageInformation"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsPackageInformation",
   "applicableArchitecture": "String",
@@ -61,9 +66,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

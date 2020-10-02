@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update educationalactivity"
 description: "Update the properties of an educationalActivity object."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Update the properties of an [educationalActivity](../resources/educationalactivi
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,24 +36,24 @@ PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|completionMonthYear|Date|The month and year the user graduated or completed the activity. |
-|endMonthYear|Date|The month and year the user completed the educational activity referenced.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|institution|[institutionData](../resources/institutiondata.md)|Contains details of the institution studied at. |
-|program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contains extended information about the program or course.|
-|startMonthYear|Date|The month and year the user commenced the activity referenced.|
+| Property            | Type                                                                   | Description                                                                                                                                                                                                                                                                    |
+| :------------------ | :--------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences    | String                                                                 | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| completionMonthYear | Date                                                                   | The month and year the user graduated or completed the activity.                                                                                                                                                                                                               |
+| endMonthYear        | Date                                                                   | The month and year the user completed the educational activity referenced.                                                                                                                                                                                                     |
+| inference           | [inferenceData](../resources/inferencedata.md)                         | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| institution         | [institutionData](../resources/institutiondata.md)                     | Contains details of the institution studied at.                                                                                                                                                                                                                                |
+| program             | [educationalActivityDetail](../resources/educationalactivitydetail.md) | Contains extended information about the program or course.                                                                                                                                                                                                                     |
+| startMonthYear      | Date                                                                   | The month and year the user commenced the activity referenced.                                                                                                                                                                                                                 |
 
 ## Response
 
@@ -92,14 +92,17 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationalactivity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -174,5 +177,3 @@ Content-type: application/json
   "startMonthYear": "Date"
 }
 ```
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "vpnTrafficRule resource type"
 description: "VPN Traffic Rule definition."
 author: "dougeby"
@@ -18,30 +18,35 @@ Namespace: microsoft.graph
 VPN Traffic Rule definition.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|name|String|Name.|
-|protocols|Int32|Protocols (0-255). Valid values 0 to 255|
-|localPortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md) collection|Local port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.|
-|remotePortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md) collection|Remote port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.|
-|localAddressRanges|[iPv4Range](../resources/intune-shared-ipv4range.md) collection|Local address range. This collection can contain a maximum of 500 elements.|
-|remoteAddressRanges|[iPv4Range](../resources/intune-shared-ipv4range.md) collection|Remote address range. This collection can contain a maximum of 500 elements.|
-|appId|String|App identifier, if this traffic rule is triggered by an app.|
-|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|App type, if this traffic rule is triggered by an app. Possible values are: `none`, `desktop`, `universal`.|
-|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|When app triggered, indicates whether to enable split tunneling along this route. Possible values are: `none`, `splitTunnel`, `forceTunnel`.|
-|claims|String|Claims associated with this traffic rule.|
+
+| Property            | Type                                                                                                   | Description                                                                                                                                  |
+| :------------------ | :----------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| name                | String                                                                                                 | Name.                                                                                                                                        |
+| protocols           | Int32                                                                                                  | Protocols (0-255). Valid values 0 to 255                                                                                                     |
+| localPortRanges     | [numberRange](../resources/intune-deviceconfig-numberrange.md) collection                              | Local port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.        |
+| remotePortRanges    | [numberRange](../resources/intune-deviceconfig-numberrange.md) collection                              | Remote port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.       |
+| localAddressRanges  | [iPv4Range](../resources/intune-shared-ipv4range.md) collection                                        | Local address range. This collection can contain a maximum of 500 elements.                                                                  |
+| remoteAddressRanges | [iPv4Range](../resources/intune-shared-ipv4range.md) collection                                        | Remote address range. This collection can contain a maximum of 500 elements.                                                                 |
+| appId               | String                                                                                                 | App identifier, if this traffic rule is triggered by an app.                                                                                 |
+| appType             | [vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)                     | App type, if this traffic rule is triggered by an app. Possible values are: `none`, `desktop`, `universal`.                                  |
+| routingPolicyType   | [vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md) | When app triggered, indicates whether to enable split tunneling along this route. Possible values are: `none`, `splitTunnel`, `forceTunnel`. |
+| claims              | String                                                                                                 | Claims associated with this traffic rule.                                                                                                    |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vpnTrafficRule"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.vpnTrafficRule",
   "name": "String",
@@ -80,9 +85,3 @@ Here is a JSON representation of the resource.
   "claims": "String"
 }
 ```
-
-
-
-
-
-

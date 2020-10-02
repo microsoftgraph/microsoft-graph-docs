@@ -1,4 +1,4 @@
----
+﻿---
 title: "group: checkMemberGroups"
 description: "Check for membership in the specified list of groups."
 author: "yyuank"
@@ -24,10 +24,10 @@ in a Microsoft 365 group is always direct.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                 |
-| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Permission type                        | Permissions (from least to most privileged)                                                                   |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
 | Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Not supported.                                                                              |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                |
 | Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
@@ -48,8 +48,8 @@ POST /groups/{id}/checkMemberGroups
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter | Type   | Description           |
-| :-------- | :----- | :-------------------- |
+| Parameter | Type              | Description           |
+| :-------- | :---------------- | :-------------------- |
 | groupIds  | String collection | An array of group ids |
 
 ## Response
@@ -64,8 +64,8 @@ Here is an example of how to call this API.
 
 Here is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_checkmembergroups"
@@ -82,20 +82,23 @@ Content-length: 44
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-checkmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-checkmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -134,5 +137,3 @@ Content-length: 39
   ]
 }
 -->
-
-

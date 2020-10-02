@@ -1,4 +1,4 @@
----
+﻿---
 title: "List threatAssessmentRequests"
 description: "Retrieve a list of threatassessmentrequest objects."
 localization_priority: Normal
@@ -27,10 +27,10 @@ A threat assessment request can be one of the following types:
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatAssessment.ReadWrite.All             |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ThreatAssessment.ReadWrite.All              |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | ThreatAssessment.Read.All                  |
+| Application                            | ThreatAssessment.Read.All                   |
 
 ## HTTP request
 
@@ -44,17 +44,17 @@ GET /informationProtection/threatAssessmentRequests
 
 This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-|Name            |Value    |Description                                                                                                                                                                 |
-|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Limits the response to only those objects which contain the specified criteria.                                                                                             |
-|$orderby        |string   |By default, the objects in the response are descending ordered by their **createdDateTime** value.                                                                          |
-|$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                        |
-|$skipToken      |string   |Retrieves the next page of results from result sets that span multiple pages.                                                                                               |
+| Name       | Value  | Description                                                                                                                          |
+| :--------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| $filter    | string | Limits the response to only those objects which contain the specified criteria.                                                      |
+| $orderby   | string | By default, the objects in the response are descending ordered by their **createdDateTime** value.                                   |
+| $select    | string | Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed. |
+| $skipToken | string | Retrieves the next page of results from result sets that span multiple pages.                                                        |
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -72,6 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_threatassessmentrequests"
@@ -80,20 +81,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentRequests
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-threatassessmentrequests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-threatassessmentrequests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-threatassessmentrequests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -195,6 +199,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List threatAssessmentRequests",
@@ -202,5 +207,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

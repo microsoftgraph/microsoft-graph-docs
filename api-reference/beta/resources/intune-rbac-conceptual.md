@@ -1,4 +1,4 @@
----
+﻿---
 title: "Role-based access control in Microsoft Intune"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) that define and manage role-based access control (RBAC) for a tenant organization."
 localization_priority: Normal
@@ -31,5 +31,3 @@ The following Graph resources are available to manage role-based access control 
 - [Role permission](intune-rbac-rolepermission.md)
 - [Role scope tag](intune-rbac-rolescopetag.md)
 - [Role scope tag auto assignment](intune-rbac-rolescopetagautoassignment.md)
-
-

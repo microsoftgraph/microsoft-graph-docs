@@ -1,4 +1,4 @@
----
+﻿---
 title: "List governanceRoleDefinitions"
 description: "Get a collection of governanceRoleDefinitions on a resource."
 localization_priority: Normal
@@ -15,51 +15,68 @@ Namespace: microsoft.graph
 Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.Read.AzureResources |
+| Permission type                        | Permissions                               |
+| :------------------------------------- | :---------------------------------------- |
+| Delegated (work or school account)     | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported.                            |
+| Application                            | PrivilegedAccess.Read.AzureResources      |
 
 Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions
 GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{resourceId}'
 ```
+
 ## Optional query parameters
+
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {code}|
+
+| Name          | Description   |
+| :------------ | :------------ |
+| Authorization | Bearer {code} |
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleDefinition](../resources/governanceroledefinition.md) objects in the response body.
+
 ## Example
+
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinitions"
 }-->
+
 This example shows how to get all role definitions of the subscription Wingtip Toys - Prod.
+
 ##### Request
+
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  
 ```
+
 ##### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.governanceRoleDefinition",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -93,9 +110,9 @@ Content-Length: 21906
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -106,5 +123,3 @@ Content-Length: 21906
   "suppressions": []
 }
 -->
-
-

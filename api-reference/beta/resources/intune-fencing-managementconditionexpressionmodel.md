@@ -1,4 +1,4 @@
----
+﻿---
 title: "managementConditionExpressionModel resource type"
 description: "A management condition expression model is an model representation of a management condition expression."
 author: "dougeby"
@@ -17,31 +17,29 @@ Namespace: microsoft.graph
 
 A management condition expression model is an model representation of a management condition expression.
 
-
 Inherits from [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managementConditionExpressionModel"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.managementConditionExpressionModel"
 }
 ```
-
-
-
-
-
-

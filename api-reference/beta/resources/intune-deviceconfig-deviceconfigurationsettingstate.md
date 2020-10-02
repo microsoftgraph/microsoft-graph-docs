@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceConfigurationSettingState resource type"
 description: "Device Configuration Setting State for a given device."
 author: "dougeby"
@@ -18,33 +18,38 @@ Namespace: microsoft.graph
 Device Configuration Setting State for a given device.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|setting|String|The setting that is being reported|
-|settingName|String|Localized/user friendly setting name that is being reported|
-|instanceDisplayName|String|Name of setting instance that is being reported.|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|errorCode|Int64|Error code for the setting|
-|errorDescription|String|Error description|
-|userId|String|UserId|
-|userName|String|UserName|
-|userEmail|String|UserEmail|
-|userPrincipalName|String|UserPrincipalName.|
-|sources|[settingSource](../resources/intune-deviceconfig-settingsource.md) collection|Contributing policies|
-|currentValue|String|Current value of setting on device|
-|settingInstanceId|String|SettingInstanceId|
+
+| Property            | Type                                                                          | Description                                                                                                                                                          |
+| :------------------ | :---------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| setting             | String                                                                        | The setting that is being reported                                                                                                                                   |
+| settingName         | String                                                                        | Localized/user friendly setting name that is being reported                                                                                                          |
+| instanceDisplayName | String                                                                        | Name of setting instance that is being reported.                                                                                                                     |
+| state               | [complianceStatus](../resources/intune-shared-compliancestatus.md)            | The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`. |
+| errorCode           | Int64                                                                         | Error code for the setting                                                                                                                                           |
+| errorDescription    | String                                                                        | Error description                                                                                                                                                    |
+| userId              | String                                                                        | UserId                                                                                                                                                               |
+| userName            | String                                                                        | UserName                                                                                                                                                             |
+| userEmail           | String                                                                        | UserEmail                                                                                                                                                            |
+| userPrincipalName   | String                                                                        | UserPrincipalName.                                                                                                                                                   |
+| sources             | [settingSource](../resources/intune-deviceconfig-settingsource.md) collection | Contributing policies                                                                                                                                                |
+| currentValue        | String                                                                        | Current value of setting on device                                                                                                                                   |
+| settingInstanceId   | String                                                                        | SettingInstanceId                                                                                                                                                    |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceConfigurationSettingState"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationSettingState",
   "setting": "String",
@@ -69,9 +74,3 @@ Here is a JSON representation of the resource.
   "settingInstanceId": "String"
 }
 ```
-
-
-
-
-
-

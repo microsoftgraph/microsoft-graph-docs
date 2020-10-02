@@ -1,4 +1,4 @@
----
+﻿---
 title: "groupPolicyUploadedDefinitionFileStatus enum type"
 description: "Type of Group Policy uploaded definition file status."
 author: "dougeby"
@@ -18,18 +18,13 @@ Namespace: microsoft.graph
 Type of Group Policy uploaded definition file status.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Group Policy uploaded definition file invalid upload status.|
-|uploadInProgress|1|Group Policy uploaded definition file upload in progress.|
-|available|2|Group Policy uploaded definition file available.|
-|assigned|3|Group Policy uploaded definition file assigned to policy.|
-|removalInProgress|4|Group Policy uploaded definition file removal in progress.|
-|uploadFailed|5|Group Policy uploaded definition file upload failed.|
-|removalFailed|6|Group Policy uploaded definition file removal failed.|
 
-
-
-
-
-
+| Member            | Value | Description                                                  |
+| :---------------- | :---- | :----------------------------------------------------------- |
+| none              | 0     | Group Policy uploaded definition file invalid upload status. |
+| uploadInProgress  | 1     | Group Policy uploaded definition file upload in progress.    |
+| available         | 2     | Group Policy uploaded definition file available.             |
+| assigned          | 3     | Group Policy uploaded definition file assigned to policy.    |
+| removalInProgress | 4     | Group Policy uploaded definition file removal in progress.   |
+| uploadFailed      | 5     | Group Policy uploaded definition file upload failed.         |
+| removalFailed     | 6     | Group Policy uploaded definition file removal failed.        |

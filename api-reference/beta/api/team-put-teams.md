@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create team from group"
 description: "Create a new team from a group."
 author: "nkramer"
@@ -27,11 +27,11 @@ The recommended pattern is to retry the Create team call three times, with a 10 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access groups that they are not a member of.
 
@@ -45,10 +45,10 @@ PUT /groups/{id}/team
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
 
@@ -65,10 +65,12 @@ If successful, this method should return a `201 Created` response code and a [te
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_team"
 }-->
+
 ```http
 PUT https://graph.microsoft.com/beta/groups/{id}/team
 Content-type: application/json
@@ -90,26 +92,30 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -154,6 +160,7 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -168,5 +175,3 @@ Content-length: 401
 ## See also
 
 - [Creating a group with a team](/graph/teams-create-group-and-team)
-
-

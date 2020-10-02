@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: jeremyke
 title: List bundles
@@ -20,11 +20,11 @@ Get a list of all the [bundles][bundle] in a user's drive.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.                             |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application          | Not supported.                                           |
+| Permission type                        | Permissions (from least to most privileged)                      |
+| :------------------------------------- | :--------------------------------------------------------------- |
+| Delegated (work or school account)     | Not supported.                                                   |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All |
+| Application                            | Not supported.                                                   |
 
 ## HTTP request
 
@@ -42,8 +42,8 @@ You can't use the `expand=children` query parameter when enumerating bundles.
 
 ## Request headers
 
-| Name          | Description  |
-|:------------- |:------------ |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
 | Authorization | Bearer \{token\}. Required. |
 
 ## Request body
@@ -64,27 +64,30 @@ To request an enumeration of all bundles defined in the drive, you can make a re
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-all-bundles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-all-bundles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-all-bundles-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -118,34 +121,36 @@ Content-type: application/json
 
 The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-
 ### Example 2: List all photo albums in a drive
 
 To filter the list of bundles returned from a request to the bundles collection, you can use the `filter` query string parameter to specify the type of bundle to return by checking for the existence of a facet on the bundle:
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20null
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-album-bundles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-album-bundles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-album-bundles-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -188,7 +193,6 @@ Content-type: application/json
 
 The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 [error-response]: /graph/errors
@@ -201,5 +205,3 @@ The response object shown here might be shortened for readability. All the prope
   "section": "documentation",
   "tocPath": "Bundles/List"
 } -->
-
-

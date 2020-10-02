@@ -1,4 +1,4 @@
----
+﻿---
 title: "ChartAreaFormat resource type"
 description: "Encapsulates the format properties for the overall chart area."
 author: "lumine2008"
@@ -13,18 +13,20 @@ Namespace: microsoft.graph
 
 Encapsulates the format properties for the overall chart area.
 
-
 ## Methods
+
 None
 
 ## Properties
+
 None
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of an object, which includes background formatting information. Read-only.|
-|font|[WorkbookChartFont](chartfont.md)|Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.|
+
+| Relationship | Type                              | Description                                                                                           |
+| :----------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| fill         | [WorkbookChartFill](chartfill.md) | Represents the fill format of an object, which includes background formatting information. Read-only. |
+| font         | [WorkbookChartFont](chartfont.md) | Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only. |
 
 ## JSON representation
 
@@ -46,6 +48,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "ChartAreaFormat resource",
@@ -53,4 +56,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

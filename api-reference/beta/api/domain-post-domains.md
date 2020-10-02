@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create domain"
 description: "Adds a domain to the tenant."
 author: "adimitui"
@@ -21,26 +21,29 @@ Adds a domain to the tenant.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Domain.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Directory.AccessAsUser.All                  |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Domain.ReadWrite.All                        |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /domains
 ```
+
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type  | application/json |
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, supply a JSON representation of [domain](../resources/domain.md) object.
 
 > The request body contains the id property for the new domain. Id is the only property that can be specified and it is required. The id property value is the fully qualified domain name to create.
@@ -50,6 +53,7 @@ In the request body, supply a JSON representation of [domain](../resources/domai
 If successful, this method returns `201 Created` response code and [domain](../resources/domain.md) object in the response body.
 
 ## Example
+
 ##### Request
 
 In the request body, supply a JSON representation of [domain](../resources/domain.md) object.
@@ -58,6 +62,7 @@ In the request body, supply a JSON representation of [domain](../resources/domai
   "blockType": "request",
   "id": "create_domain_from_domains"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/domains
 Content-type: application/json
@@ -69,12 +74,15 @@ Content-length: 192
 ```
 
 ##### Response
+
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.domain"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -93,6 +101,7 @@ Content-length: 192
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -103,5 +112,3 @@ Content-length: 192
   "suppressions": []
 }
 -->
-
-

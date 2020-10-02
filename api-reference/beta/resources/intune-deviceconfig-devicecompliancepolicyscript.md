@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceCompliancePolicyScript resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceComplianceScriptId|String|Device compliance script Id.|
-|rulesContent|Binary|Json of the rules.|
+
+| Property                 | Type   | Description                  |
+| :----------------------- | :----- | :--------------------------- |
+| deviceComplianceScriptId | String | Device compliance script Id. |
+| rulesContent             | Binary | Json of the rules.           |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceCompliancePolicyScript"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyScript",
   "deviceComplianceScriptId": "String",
   "rulesContent": "binary"
 }
 ```
-
-
-
-
-
-

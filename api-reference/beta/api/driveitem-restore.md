@@ -1,4 +1,4 @@
----
+﻿---
 title: "driveItem: restore"
 description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
 localization_priority: Normal
@@ -21,10 +21,10 @@ Restore a [driveItem](../resources/driveitem.md) that has been deleted and is cu
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Files.ReadWrite.All |
-| Application                            | Files.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Files.ReadWrite.All                         |
+| Application                            | Files.ReadWrite.All                         |
 
 ## HTTP request
 
@@ -36,18 +36,18 @@ POST /me/drive/items/{item-id}/restore
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter     | Type                                         | Description |
-|:--------------|:---------------------------------------------|:------------|
-|parentReference|[ItemReference](../resources/itemreference.md)| Optional. Reference to the parent item the deleted item will be restored to. |
-|name           |String                                        | Optional. The new name for the restored item. If this isn't provided, the same name will be used as the original. |
+| Parameter       | Type                                           | Description                                                                                                       |
+| :-------------- | :--------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the deleted item will be restored to.                                      |
+| name            | String                                         | Optional. The new name for the restored item. If this isn't provided, the same name will be used as the original. |
 
 ## Response
 
@@ -62,6 +62,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "restore-item",
@@ -80,20 +81,23 @@ Content-type: application/json
   "name": "String"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/restore-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/restore-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -121,6 +125,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Restore a DriveItem.",
@@ -128,5 +133,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Items/Restore"
 }-->
-
-

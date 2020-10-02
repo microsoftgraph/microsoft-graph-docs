@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosVppAppAssignmentSettings resource type"
 description: "Contains properties used to assign an iOS VPP mobile app to a group."
 author: "dougeby"
@@ -17,28 +17,32 @@ Namespace: microsoft.graph
 
 Contains properties used to assign an iOS VPP mobile app to a group.
 
-
 Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|useDeviceLicensing|Boolean|Whether or not to use device licensing.|
-|vpnConfigurationId|String|The VPN Configuration Id to apply for this app.|
-|**Apps**|
-|uninstallOnDeviceRemoval|Boolean|Whether or not to uninstall the app when device is removed from Intune.|
+
+| Property                 | Type    | Description                                                             |
+| :----------------------- | :------ | :---------------------------------------------------------------------- |
+| useDeviceLicensing       | Boolean | Whether or not to use device licensing.                                 |
+| vpnConfigurationId       | String  | The VPN Configuration Id to apply for this app.                         |
+| **Apps**                 |         |                                                                         |
+| uninstallOnDeviceRemoval | Boolean | Whether or not to uninstall the app when device is removed from Intune. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosVppAppAssignmentSettings"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosVppAppAssignmentSettings",
   "useDeviceLicensing": true,
@@ -46,9 +50,3 @@ Here is a JSON representation of the resource.
   "uninstallOnDeviceRemoval": true
 }
 ```
-
-
-
-
-
-

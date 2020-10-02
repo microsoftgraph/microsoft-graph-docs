@@ -1,4 +1,4 @@
----
+﻿---
 title: "platform enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown device platform|
-|ios|1|IOS device platform|
-|android|2|Android device platform|
-|windows|3|Windows device platform|
-|windowsMobile|4|WindowsMobile device platform|
-|macOS|5|Mac device platform|
 
-
-
-
-
-
+| Member        | Value | Description                   |
+| :------------ | :---- | :---------------------------- |
+| unknown       | 0     | Unknown device platform       |
+| ios           | 1     | IOS device platform           |
+| android       | 2     | Android device platform       |
+| windows       | 3     | Windows device platform       |
+| windowsMobile | 4     | WindowsMobile device platform |
+| macOS         | 5     | Mac device platform           |

@@ -1,4 +1,4 @@
----
+﻿---
 title: printJob resource type
 description: Represents a print job that has been queued for a printer.
 author: braedenp-msft
@@ -17,27 +17,29 @@ Represents a print job that has been queued for a printer.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get](../api/printjob-get.md) | [printJob](printjob.md) | Read properties and relationships of printJob object. |
-| [Create](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job object. |
-| [Start](../api/printjob-startprintjob.md)|None|Start the print job.|
-| [Cancel](../api/printjob-cancelprintjob.md)|None|Cancel the print job.|
+| Method                                                       | Return Type             | Description                                             |
+| :----------------------------------------------------------- | :---------------------- | :------------------------------------------------------ |
+| [Get](../api/printjob-get.md)                                | [printJob](printjob.md) | Read properties and relationships of printJob object.   |
+| [Create](../api/printer-post-jobs.md)                        | [printJob](printjob.md) | Create a new print job object.                          |
+| [Start](../api/printjob-startprintjob.md)                    | None                    | Start the print job.                                    |
+| [Cancel](../api/printjob-cancelprintjob.md)                  | None                    | Cancel the print job.                                   |
 | [Redirect (to another printer)](../api/printjob-redirect.md) | [printJob](printjob.md) | A print job that is queued for the destination printer. |
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|id|String|The printer's GUID. Read-only.|
-|createdDateTime|DateTimeOffset|The DateTimeOffset when the job was created. Read-only.|
-|status|[printJobStatus](printjobstatus.md)|The status of the print job. Read-only.|
+
+| Property        | Type                                | Description                                             |
+| :-------------- | :---------------------------------- | :------------------------------------------------------ |
+| id              | String                              | The printer's GUID. Read-only.                          |
+| createdDateTime | DateTimeOffset                      | The DateTimeOffset when the job was created. Read-only. |
+| status          | [printJobStatus](printjobstatus.md) | The status of the print job. Read-only.                 |
 
 ## Relationships
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|createdBy|[userIdentity](useridentity.md)| Read-only. Nullable.|
-|documents|[printDocument](printdocument.md) collection| Read-only.|
-|tasks|[printTask](printtask.md) collection|A list of [printTasks](printtask.md) that were triggered by this print job.|
+
+| Relationship | Type                                         | Description                                                                 |
+| :----------- | :------------------------------------------- | :-------------------------------------------------------------------------- |
+| createdBy    | [userIdentity](useridentity.md)              | Read-only. Nullable.                                                        |
+| documents    | [printDocument](printdocument.md) collection | Read-only.                                                                  |
+| tasks        | [printTask](printtask.md) collection         | A list of [printTasks](printtask.md) that were triggered by this print job. |
 
 ## JSON representation
 
@@ -66,6 +68,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "printJob resource",
@@ -73,4 +76,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus"
 description: "Update the properties of a windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus object."
 author: "dougeby"
@@ -18,57 +18,63 @@ Namespace: microsoft.graph
 Update the properties of a [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementApps.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementApps.ReadWrite.All          |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/deviceStatuses/{windowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) object.
 
 The following table shows the properties that are required when you create the [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|deviceName|String|Device name.|
-|deviceId|String|Device ID.|
-|lastSyncDateTime|DateTimeOffset|Last sync date time.|
-|osVersion|String|Windows OS Version.|
-|osDescription|String|Windows OS Version Description.|
-|deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|The deployment state of the policy. Possible values are: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
-|userName|String|The name of the user of this device.|
-|userPrincipalName|String|User Principal Name.|
-|policyVersion|String|Human readable version of the WindowsDefenderApplicationControl supplemental policy.|
-
-
+| Property          | Type                                                                                                                                                     | Description                                                                                                                            |
+| :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| id                | String                                                                                                                                                   | Key of the entity.                                                                                                                     |
+| deviceName        | String                                                                                                                                                   | Device name.                                                                                                                           |
+| deviceId          | String                                                                                                                                                   | Device ID.                                                                                                                             |
+| lastSyncDateTime  | DateTimeOffset                                                                                                                                           | Last sync date time.                                                                                                                   |
+| osVersion         | String                                                                                                                                                   | Windows OS Version.                                                                                                                    |
+| osDescription     | String                                                                                                                                                   | Windows OS Version Description.                                                                                                        |
+| deploymentStatus  | [windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md) | The deployment state of the policy. Possible values are: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`. |
+| userName          | String                                                                                                                                                   | The name of the user of this device.                                                                                                   |
+| userPrincipalName | String                                                                                                                                                   | User Principal Name.                                                                                                                   |
+| policyVersion     | String                                                                                                                                                   | Human readable version of the WindowsDefenderApplicationControl supplemental policy.                                                   |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/deviceStatuses/{windowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId}
 Content-type: application/json
 Content-length: 486
@@ -88,8 +94,10 @@ Content-length: 486
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 535
@@ -108,9 +116,3 @@ Content-Length: 535
   "policyVersion": "Policy Version value"
 }
 ```
-
-
-
-
-
-

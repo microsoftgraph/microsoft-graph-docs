@@ -1,4 +1,4 @@
----
+﻿---
 title: "List openShifts"
 description: "List openshift objects in a team."
 localization_priority: Normal
@@ -17,11 +17,11 @@ List [openShift](../resources/openshift.md) objects in a team.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)                                    |
+| :------------------------------------- | :----------------------------------------------------------------------------- |
 | Delegated (work or school account)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Schedule.Read.All, Schedule.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                 |
+| Application                            | Schedule.Read.All, Schedule.ReadWrite.All                                      |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -36,11 +36,11 @@ GET /teams/{id}/schedule/openShifts
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-  
+
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -57,8 +57,8 @@ If successful, this method returns a `200 OK` response code and all [openShift](
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_openshift"
@@ -67,26 +67,30 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShifts
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-openshift-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-openshift-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ---
-
 
 ### Response
 
@@ -161,6 +165,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List openShift",
@@ -168,4 +173,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

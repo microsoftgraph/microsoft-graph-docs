@@ -1,4 +1,4 @@
----
+﻿---
 title: "localSecurityOptionsSmartCardRemovalBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsSmartCardRemovalBehaviorType"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for LocalSecurityOptionsSmartCardRemovalBehaviorType
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|lockWorkstation|0|No Action|
-|noAction|1|Lock Workstation|
-|forceLogoff|2|Force Logoff|
-|disconnectRemoteDesktopSession|3|Disconnect if a remote Remote Desktop Services session|
 
-
-
-
-
-
+| Member                         | Value | Description                                            |
+| :----------------------------- | :---- | :----------------------------------------------------- |
+| lockWorkstation                | 0     | No Action                                              |
+| noAction                       | 1     | Lock Workstation                                       |
+| forceLogoff                    | 2     | Force Logoff                                           |
+| disconnectRemoteDesktopSession | 3     | Disconnect if a remote Remote Desktop Services session |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "teamsTemplate resource type"
 description: "Describes teamsTemplate entity."
 author: "nkramer"
@@ -15,9 +15,9 @@ A team template is a blueprint for creating a [team](../resources/team.md) in Mi
 
 ## Properties
 
-| Property            | Type     | Description |
-|:------------------- |:-------- |:----------- |
-| id                  | String   | Unique identifier of the template. Cannot be null. |
+| Property | Type   | Description                                        |
+| :------- | :----- | :------------------------------------------------- |
+| id       | String | Unique identifier of the template. Cannot be null. |
 
 ## JSON representation
 
@@ -36,5 +36,3 @@ A team template is a blueprint for creating a [team](../resources/team.md) in Mi
 ## See also
 
 - [team](team.md)
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerRequiredPasswordType enum type"
 description: "Android Device Owner policy required password type."
 author: "dougeby"
@@ -18,20 +18,15 @@ Namespace: microsoft.graph
 Android Device Owner policy required password type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|deviceDefault|0|Device default value, no intent.|
-|required|1|There must be a password set, but there are no restrictions on type.|
-|numeric|2|At least numeric.|
-|numericComplex|3|At least numeric with no repeating or ordered sequences.|
-|alphabetic|4|At least alphabetic password.|
-|alphanumeric|5|At least alphanumeric password|
-|alphanumericWithSymbols|6|At least alphanumeric with symbols.|
-|lowSecurityBiometric|7|Low security biometrics based password required.|
-|customPassword|8|Custom password set by the admin.|
 
-
-
-
-
-
+| Member                  | Value | Description                                                          |
+| :---------------------- | :---- | :------------------------------------------------------------------- |
+| deviceDefault           | 0     | Device default value, no intent.                                     |
+| required                | 1     | There must be a password set, but there are no restrictions on type. |
+| numeric                 | 2     | At least numeric.                                                    |
+| numericComplex          | 3     | At least numeric with no repeating or ordered sequences.             |
+| alphabetic              | 4     | At least alphabetic password.                                        |
+| alphanumeric            | 5     | At least alphanumeric password                                       |
+| alphanumericWithSymbols | 6     | At least alphanumeric with symbols.                                  |
+| lowSecurityBiometric    | 7     | Low security biometrics based password required.                     |
+| customPassword          | 8     | Custom password set by the admin.                                    |

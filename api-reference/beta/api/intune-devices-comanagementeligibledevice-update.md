@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update comanagementEligibleDevice"
 description: "Update the properties of a comanagementEligibleDevice object."
 author: "dougeby"
@@ -18,67 +18,73 @@ Namespace: microsoft.graph
 Update the properties of a [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) object.
 
 The following table shows the properties that are required when you create the [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Unique Id for the device|
-|deviceName|String|DeviceName|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|DeviceType. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `cloudPC`, `blackberry`, `palm`, `unknown`.|
-|clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus. Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
-|ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Possible values are: `unknown`, `company`, `personal`.|
-|managementAgents|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgents. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
-|managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState. Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
-|referenceId|String|ReferenceId|
-|mdmStatus|String|MDMStatus|
-|osVersion|String|OSVersion|
-|serialNumber|String|SerialNumber|
-|manufacturer|String|Manufacturer|
-|model|String|Model|
-|osDescription|String|OSDescription|
-|entitySource|Int32|EntitySource|
-|userId|String|UserId|
-|upn|String|UPN|
-|userEmail|String|UserEmail|
-|userName|String|UserName|
-|status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. Possible values are: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|
-
-
+| Property                 | Type                                                                                | Description                                                                                                                                                                                                                                                                                                                                 |
+| :----------------------- | :---------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                       | String                                                                              | Unique Id for the device                                                                                                                                                                                                                                                                                                                    |
+| deviceName               | String                                                                              | DeviceName                                                                                                                                                                                                                                                                                                                                  |
+| deviceType               | [deviceType](../resources/intune-shared-devicetype.md)                              | DeviceType. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `cloudPC`, `blackberry`, `palm`, `unknown`. |
+| clientRegistrationStatus | [deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)   | ClientRegistrationStatus. Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.                                                                                                                                                 |
+| ownerType                | [ownerType](../resources/intune-shared-ownertype.md)                                | OwnerType. Possible values are: `unknown`, `company`, `personal`.                                                                                                                                                                                                                                                                           |
+| managementAgents         | [managementAgentType](../resources/intune-shared-managementagenttype.md)            | ManagementAgents. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.                         |
+| managementState          | [managementState](../resources/intune-devices-managementstate.md)                   | ManagementState. Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.                                                                                                                  |
+| referenceId              | String                                                                              | ReferenceId                                                                                                                                                                                                                                                                                                                                 |
+| mdmStatus                | String                                                                              | MDMStatus                                                                                                                                                                                                                                                                                                                                   |
+| osVersion                | String                                                                              | OSVersion                                                                                                                                                                                                                                                                                                                                   |
+| serialNumber             | String                                                                              | SerialNumber                                                                                                                                                                                                                                                                                                                                |
+| manufacturer             | String                                                                              | Manufacturer                                                                                                                                                                                                                                                                                                                                |
+| model                    | String                                                                              | Model                                                                                                                                                                                                                                                                                                                                       |
+| osDescription            | String                                                                              | OSDescription                                                                                                                                                                                                                                                                                                                               |
+| entitySource             | Int32                                                                               | EntitySource                                                                                                                                                                                                                                                                                                                                |
+| userId                   | String                                                                              | UserId                                                                                                                                                                                                                                                                                                                                      |
+| upn                      | String                                                                              | UPN                                                                                                                                                                                                                                                                                                                                         |
+| userEmail                | String                                                                              | UserEmail                                                                                                                                                                                                                                                                                                                                   |
+| userName                 | String                                                                              | UserName                                                                                                                                                                                                                                                                                                                                    |
+| status                   | [comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md) | ComanagementEligibleStatus. Possible values are: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.                                                                                                                                                                                                     |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceId}
 Content-type: application/json
 Content-length: 714
@@ -108,8 +114,10 @@ Content-length: 714
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 763
@@ -138,9 +146,3 @@ Content-Length: 763
   "status": "eligible"
 }
 ```
-
-
-
-
-
-

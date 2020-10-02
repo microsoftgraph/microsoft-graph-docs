@@ -1,4 +1,4 @@
----
+﻿---
 title: "edgeHomeButtonHidden resource type"
 description: "Hide the home button."
 author: "dougeby"
@@ -17,31 +17,29 @@ Namespace: microsoft.graph
 
 Hide the home button.
 
-
 Inherits from [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeHomeButtonHidden"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.edgeHomeButtonHidden"
 }
 ```
-
-
-
-
-
-

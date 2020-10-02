@@ -1,4 +1,4 @@
----
+﻿---
 title: "customTimeZone resource type"
 description: "Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard."
 localization_priority: Normal
@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard.
 
-
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-| bias | Edm.Int32 | The time offset of the time zone from Coordinated Universal Time (UTC). This value is in minutes. Time zones that are ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.|
-| daylightOffset | [daylightTimeZoneOffset](daylighttimezoneoffset.md) | Specifies when the time zone switches from standard time to daylight saving time. |
-| name | string | The name of the custom time zone. |
-| standardOffset | [standardTimeZoneOffset](standardtimezoneoffset.md) | Specifies when the time zone switches from daylight saving time to standard time. |
 
+| Property       | Type                                                | Description                                                                                                                                                                                                       |
+| :------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| bias           | Edm.Int32                                           | The time offset of the time zone from Coordinated Universal Time (UTC). This value is in minutes. Time zones that are ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset. |
+| daylightOffset | [daylightTimeZoneOffset](daylighttimezoneoffset.md) | Specifies when the time zone switches from standard time to daylight saving time.                                                                                                                                 |
+| name           | string                                              | The name of the custom time zone.                                                                                                                                                                                 |
+| standardOffset | [standardTimeZoneOffset](standardtimezoneoffset.md) | Specifies when the time zone switches from daylight saving time to standard time.                                                                                                                                 |
 
 ## JSON representation
 
@@ -48,6 +47,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "customTimeZone resource",
@@ -55,4 +55,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

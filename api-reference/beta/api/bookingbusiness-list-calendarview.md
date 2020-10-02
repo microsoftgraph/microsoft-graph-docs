@@ -1,4 +1,4 @@
----
+﻿---
 title: "List Bookings calendarView"
 description: "Get the collection of bookingAppointment objects for a bookingBusiness, that occurs in the specified date range."
 localization_priority: Normal
@@ -16,16 +16,19 @@ Namespace: microsoft.graph
 Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md), that occurs in the specified date range.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+| Permission type                        | Permissions (from least to most privileged)                                                       |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                    |
+| Application                            | Not supported.                                                                                    |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 ```
@@ -34,62 +37,76 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 In the request URL, provide the following required query parameters with values.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|start|DateTimeOffset|The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.|
-|end|DateTimeOffset|The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.|
+| Parameter | Type           | Description                                                                                                                                                                                                                                                               |
+| :-------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| start     | DateTimeOffset | The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'. |
+| end       | DateTimeOffset | The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.        |
 
 The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and are not impacted by the value of the `Prefer: outlook.timezone` header if present.
 
 This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {code}|
+
+| Name          | Description   |
+| :------------ | :------------ |
+| Authorization | Bearer {code} |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.
 
 ## Example
+
 The following is an example of how to call this API.
+
 ##### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_getcalendarview"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusiness-getcalendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-getcalendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/bookingbusiness-getcalendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.bookingAppointment",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -271,6 +288,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",

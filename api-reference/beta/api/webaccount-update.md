@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update webAccount"
 description: "Update the properties of a webAccount object."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Update the properties of a [webAccount](../resources/webaccount.md) object in a 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,25 +36,24 @@ PATCH /users/{id | userPrincipalName}/profile/webAccounts/{id}
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
-
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Contains the description the user has provided for the account on the service being referenced.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|service|[serviceInformation](../resources/serviceinformation.md)| Contains basic detail about the service that is being associated. |
-|statusMessage|String|Contains a status message from the cloud service if provided or synchronized. |
-|userId|String|The user name  displayed for the webaccount.  |
-|webUrl|String|Contains a link to the user's profile on the cloud service if one exists.|
+| Property         | Type                                                     | Description                                                                                                                                                                                                                                                                    |
+| :--------------- | :------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences | String                                                   | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| description      | String                                                   | Contains the description the user has provided for the account on the service being referenced.                                                                                                                                                                                |
+| inference        | [inferenceData](../resources/inferencedata.md)           | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| service          | [serviceInformation](../resources/serviceinformation.md) | Contains basic detail about the service that is being associated.                                                                                                                                                                                                              |
+| statusMessage    | String                                                   | Contains a status message from the cloud service if provided or synchronized.                                                                                                                                                                                                  |
+| userId           | String                                                   | The user name  displayed for the webaccount.                                                                                                                                                                                                                                   |
+| webUrl           | String                                                   | Contains a link to the user's profile on the cloud service if one exists.                                                                                                                                                                                                      |
 
 ## Response
 
@@ -67,6 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [webA
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_webaccount"
@@ -80,20 +80,23 @@ Content-type: application/json
   "webUrl": "https://github.com/innocenty.popov"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-webaccount-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-webaccount-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-webaccount-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -144,5 +147,3 @@ Content-type: application/json
   "webUrl": "https://github.com/innocenty.popov"
 }
 ```
-
-

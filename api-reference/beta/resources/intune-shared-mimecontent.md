@@ -1,4 +1,4 @@
----
+﻿---
 title: "mimeContent resource type"
 description: "Contains properties for a generic mime content."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Contains properties for a generic mime content.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|type|String|Indicates the content mime type.|
-|value|Binary|The byte array that contains the actual content.|
+
+| Property | Type   | Description                                      |
+| :------- | :----- | :----------------------------------------------- |
+| type     | String | Indicates the content mime type.                 |
+| value    | Binary | The byte array that contains the actual content. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mimeContent"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mimeContent",
   "type": "String",
   "value": "binary"
 }
 ```
-
-
-
-
-
-

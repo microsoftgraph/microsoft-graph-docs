@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -8,6 +8,7 @@ ms.prod: "sharepoint"
 description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
 doc_type: apiPageType
 ---
+
 # Get a DriveItem resource
 
 Namespace: microsoft.graph
@@ -18,11 +19,11 @@ Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                           |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All                                      |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## HTTP request
 
@@ -55,7 +56,7 @@ This is currently only supported on OneDrive Personal.
 ## Optional request headers
 
 | Name          | Value  | Description                                                                                                                                              |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :------------ | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | if-none-match | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 ## Response
@@ -68,31 +69,35 @@ If successful, this method returns a `200 OK` response code and the [DriveItem](
 
 Here is an example of the request to the root folder of the user's OneDrive.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
 ```msgraph-interactive
 GET /me/drive/root
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-root-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-root-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-drive-root-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Response
 
@@ -149,4 +154,3 @@ how errors are returned.
   "suppressions": [
   ]
 } -->
-

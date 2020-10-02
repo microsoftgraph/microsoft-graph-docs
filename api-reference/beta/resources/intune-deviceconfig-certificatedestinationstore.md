@@ -1,4 +1,4 @@
----
+﻿---
 title: "certificateDestinationStore enum type"
 description: "Possible values for the Certificate Destination Store."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Possible values for the Certificate Destination Store.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|computerCertStoreRoot|0|Computer Certificate Store - Root.|
-|computerCertStoreIntermediate|1|Computer Certificate Store - Intermediate.|
-|userCertStoreIntermediate|2|User Certificate Store - Intermediate.|
 
-
-
-
-
-
+| Member                        | Value | Description                                |
+| :---------------------------- | :---- | :----------------------------------------- |
+| computerCertStoreRoot         | 0     | Computer Certificate Store - Root.         |
+| computerCertStoreIntermediate | 1     | Computer Certificate Store - Intermediate. |
+| userCertStoreIntermediate     | 2     | User Certificate Store - Intermediate.     |

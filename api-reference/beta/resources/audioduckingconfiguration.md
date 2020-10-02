@@ -1,4 +1,4 @@
----
+﻿---
 title: "audioDuckingConfiguration resource type"
 description: "Parameters for ducking of other sources (phasing in and out of other sources.)"
 author: "ananmishr"
@@ -17,12 +17,12 @@ Parameters for ducking of other sources (phasing in and out of other sources.)
 
 ## Properties
 
-| Property      | Type     | Description                                                                     |
-| :------------ | :------- | :-------------------------------------------------------------------------------|
-| lowerLevel    | Int64    | The volume of sources in percent when the sources are being ducked.             |
-| rampActive    | Int64    | The amount of time (in milliseconds) it takes for ducked sources to "fade out". |
-| rampInactive  | Int64    | The amount of time (in milliseconds) it takes for ducked sources to "fade in".  |
-| upperLevel    | Int64    | The volume of sources in percent when the sources are not being ducked.         |
+| Property     | Type  | Description                                                                     |
+| :----------- | :---- | :------------------------------------------------------------------------------ |
+| lowerLevel   | Int64 | The volume of sources in percent when the sources are being ducked.             |
+| rampActive   | Int64 | The amount of time (in milliseconds) it takes for ducked sources to "fade out". |
+| rampInactive | Int64 | The amount of time (in milliseconds) it takes for ducked sources to "fade in".  |
+| upperLevel   | Int64 | The volume of sources in percent when the sources are not being ducked.         |
 
 > **Note:** Ramp duration cannot be more than 5,000 milliseconds.
 
@@ -37,6 +37,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.audioDuckingConfiguration"
 }-->
+
 ```json
 {
   "lowerLevel": 20,
@@ -45,8 +46,10 @@ The following is a JSON representation of the resource.
   "upperLevel": 100
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -57,5 +60,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

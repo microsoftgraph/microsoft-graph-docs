@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosStoreAppAssignmentSettings resource type"
 description: "Contains properties used to assign an iOS Store mobile app to a group."
 author: "dougeby"
@@ -15,36 +15,31 @@ Namespace: microsoft.graph
 
 Contains properties used to assign an iOS Store mobile app to a group.
 
-
 Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|vpnConfigurationId|String|The VPN Configuration Id to apply for this app.|
+
+| Property           | Type   | Description                                     |
+| :----------------- | :----- | :---------------------------------------------- |
+| vpnConfigurationId | String | The VPN Configuration Id to apply for this app. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosStoreAppAssignmentSettings"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
   "vpnConfigurationId": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

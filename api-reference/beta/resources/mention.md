@@ -1,4 +1,4 @@
----
+﻿---
 title: "mention resource type"
 description: "Represents a notification to a person based on the person's email address."
 author: "simonhult"
@@ -34,7 +34,6 @@ Outlook lets the user select or enter a name to complete the @-mention. Outlook 
 signed-in user look up messages that mention the user, alerting the user to action items 
 or discussions, which allows for a faster response.
 
-
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -61,35 +60,38 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|application | String | The name of the application where the mention is created. Optional. Not used and defaulted as null for **message**. |
-|clientReference | String | A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for **message**. |
-|createdBy  | [emailAddress](../resources/emailaddress.md) | The email information of the user who made the mention. |
-|createdDateTime  |DateTimeOffset |The date and time that the mention is created on the client. |
-|deepLink | String | A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for **message**. |
-|id | String| The unique identifier of a mention in a resource instance.|
-|mentioned | [emailAddress](../resources/emailaddress.md) | The email information of the mentioned person. Required. |
-|mentionText | String | Optional. Not used and defaulted as null for **message**. To get the mentions in a message, see the **bodyPreview** property of the message instead. |
-|serverCreatedDateTime | DateTimeOffset | The date and time that the mention is created on the server. Optional. Not used and defaulted as null for **message**. |
+
+| Property              | Type                                         | Description                                                                                                                                          |
+| :-------------------- | :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| application           | String                                       | The name of the application where the mention is created. Optional. Not used and defaulted as null for **message**.                                  |
+| clientReference       | String                                       | A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for **message**.                     |
+| createdBy             | [emailAddress](../resources/emailaddress.md) | The email information of the user who made the mention.                                                                                              |
+| createdDateTime       | DateTimeOffset                               | The date and time that the mention is created on the client.                                                                                         |
+| deepLink              | String                                       | A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for **message**.                    |
+| id                    | String                                       | The unique identifier of a mention in a resource instance.                                                                                           |
+| mentioned             | [emailAddress](../resources/emailaddress.md) | The email information of the mentioned person. Required.                                                                                             |
+| mentionText           | String                                       | Optional. Not used and defaulted as null for **message**. To get the mentions in a message, see the **bodyPreview** property of the message instead. |
+| serverCreatedDateTime | DateTimeOffset                               | The date and time that the mention is created on the server. Optional. Not used and defaulted as null for **message**.                               |
 
 ## Relationships
-None
 
+None
 
 ## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Post](../api/user-sendmail.md#request-2) and send | None | Create and send mentions as part of a new message.|
-|[Post](../api/user-post-messages.md#request-2) to a new draft | [message](../resources/message.md) that contains one or more **mention** objects. | Create a draft of a new message and include one or more **mention** objects.|
-|[Get](../api/user-list-messages.md#request-2) messages mentioning me | [message](../resources/message.md) collection | Get all the messages in the signed-in user's mailbox that contain a **mention** of this user.|
-|[Get](../api/message-get.md#example-2) a message and its mentions | [message](../resources/message.md) collection | Get a message and expand the details of each **mention** in the message.|
-|[Delete](../api/message-delete.md#request-2) a mention | None |Deletes the specified mention in the specified message in the signed-in user's mailbox. |
+| Method                                                               | Return Type                                                                       | Description                                                                                   |
+| :------------------------------------------------------------------- | :-------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------- |
+| [Post](../api/user-sendmail.md#request-2) and send                   | None                                                                              | Create and send mentions as part of a new message.                                            |
+| [Post](../api/user-post-messages.md#request-2) to a new draft        | [message](../resources/message.md) that contains one or more **mention** objects. | Create a draft of a new message and include one or more **mention** objects.                  |
+| [Get](../api/user-list-messages.md#request-2) messages mentioning me | [message](../resources/message.md) collection                                     | Get all the messages in the signed-in user's mailbox that contain a **mention** of this user. |
+| [Get](../api/message-get.md#example-2) a message and its mentions    | [message](../resources/message.md) collection                                     | Get a message and expand the details of each **mention** in the message.                      |
+| [Delete](../api/message-delete.md#request-2) a mention               | None                                                                              | Deletes the specified mention in the specified message in the signed-in user's mailbox.       |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -100,5 +102,3 @@ None
   "suppressions": []
 }
 -->
-
-

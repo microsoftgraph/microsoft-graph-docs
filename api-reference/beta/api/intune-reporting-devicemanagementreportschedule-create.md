@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create deviceManagementReportSchedule"
 description: "Create a new deviceManagementReportSchedule object."
 author: "dougeby"
@@ -18,60 +18,66 @@ Namespace: microsoft.graph
 Create a new [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)                                                                                   |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/reports/reportSchedules
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the deviceManagementReportSchedule object.
 
 The following table shows the properties that are required when you create the deviceManagementReportSchedule.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Unique identifier for this entity|
-|reportScheduleName|String|Name of the schedule|
-|subject|String|Subject of the scheduled reports that are delivered|
-|emails|String collection|Emails to which the scheduled reports are delivered|
-|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequency of scheduled report delivery. Possible values are: `none`, `daily`, `weekly`, `monthly`.|
-|startDateTime|DateTimeOffset|Time that the delivery of the scheduled reports starts|
-|endDateTime|DateTimeOffset|Time that the delivery of the scheduled reports ends|
-|userId|String|The Id of the User who created the report|
-|reportName|String|Name of the report|
-|filter|String|Filters applied on the report|
-|select|String collection|Columns selected from the report|
-|orderBy|String collection|Ordering of columns in the report|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the scheduled report. Possible values are: `csv`, `pdf`.|
-
-
+| Property           | Type                                                                                                                    | Description                                                                                        |
+| :----------------- | :---------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- |
+| id                 | String                                                                                                                  | Unique identifier for this entity                                                                  |
+| reportScheduleName | String                                                                                                                  | Name of the schedule                                                                               |
+| subject            | String                                                                                                                  | Subject of the scheduled reports that are delivered                                                |
+| emails             | String collection                                                                                                       | Emails to which the scheduled reports are delivered                                                |
+| recurrence         | [deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md) | Frequency of scheduled report delivery. Possible values are: `none`, `daily`, `weekly`, `monthly`. |
+| startDateTime      | DateTimeOffset                                                                                                          | Time that the delivery of the scheduled reports starts                                             |
+| endDateTime        | DateTimeOffset                                                                                                          | Time that the delivery of the scheduled reports ends                                               |
+| userId             | String                                                                                                                  | The Id of the User who created the report                                                          |
+| reportName         | String                                                                                                                  | Name of the report                                                                                 |
+| filter             | String                                                                                                                  | Filters applied on the report                                                                      |
+| select             | String collection                                                                                                       | Columns selected from the report                                                                   |
+| orderBy            | String collection                                                                                                       | Ordering of columns in the report                                                                  |
+| format             | [deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)                   | Format of the scheduled report. Possible values are: `csv`, `pdf`.                                 |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/reports/reportSchedules
 Content-type: application/json
 Content-length: 539
@@ -100,8 +106,10 @@ Content-length: 539
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 588
@@ -129,9 +137,3 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
-
-
-
-
-

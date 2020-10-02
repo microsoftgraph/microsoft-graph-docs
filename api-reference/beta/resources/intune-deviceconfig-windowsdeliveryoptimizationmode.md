@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsDeliveryOptimizationMode enum type"
 description: "Delivery optimization mode for peer distribution"
 author: "dougeby"
@@ -18,18 +18,13 @@ Namespace: microsoft.graph
 Delivery optimization mode for peer distribution
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userDefined|0|Allow the user to set.|
-|httpOnly|1|HTTP only, no peering|
-|httpWithPeeringNat|2|OS default – Http blended with peering behind the same network address translator|
-|httpWithPeeringPrivateGroup|3|HTTP blended with peering across a private group|
-|httpWithInternetPeering|4|HTTP blended with Internet peering|
-|simpleDownload|99|Simple download mode with no peering|
-|bypassMode|100|Bypass mode. Do not use Delivery Optimization and use BITS instead|
 
-
-
-
-
-
+| Member                      | Value | Description                                                                       |
+| :-------------------------- | :---- | :-------------------------------------------------------------------------------- |
+| userDefined                 | 0     | Allow the user to set.                                                            |
+| httpOnly                    | 1     | HTTP only, no peering                                                             |
+| httpWithPeeringNat          | 2     | OS default – Http blended with peering behind the same network address translator |
+| httpWithPeeringPrivateGroup | 3     | HTTP blended with peering across a private group                                  |
+| httpWithInternetPeering     | 4     | HTTP blended with Internet peering                                                |
+| simpleDownload              | 99    | Simple download mode with no peering                                              |
+| bypassMode                  | 100   | Bypass mode. Do not use Delivery Optimization and use BITS instead                |

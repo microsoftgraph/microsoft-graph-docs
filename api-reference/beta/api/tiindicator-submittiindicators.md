@@ -1,4 +1,4 @@
----
+﻿---
 title: "tiIndicator: submitTiIndicators"
 description: "Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Upload multiple threat intelligence (TI) indicators in one request instead of mu
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ThreatIndicators.ReadWrite.OwnedBy          |
 
 ## HTTP request
 
@@ -36,16 +36,16 @@ POST /security/tiIndicators/submitTiIndicators
 ## Request headers
 
 | Name          | Description   |
-|:--------------|:--------------|
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|value|tiIndicator collection| JSON collection of **tiIndicators** to be created. |
+| Parameter | Type                   | Description                                        |
+| :-------- | :--------------------- | :------------------------------------------------- |
+| value     | tiIndicator collection | JSON collection of **tiIndicators** to be created. |
 
 For each tiIndicator, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one [email](../resources/tiindicator.md#indicator-observables---email), [file](../resources/tiindicator.md#indicator-observables---file), or [network](../resources/tiindicator.md#indicator-observables---network) observable, and the following required fields: `action`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`.
 
@@ -62,6 +62,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "tiindicator_submittiindicators",
@@ -109,20 +110,23 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/tiindicator-submittiindicators-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/tiindicator-submittiindicators-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/tiindicator-submittiindicators-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -160,6 +164,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "tiIndicator: submitTiIndicators",
@@ -169,5 +174,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

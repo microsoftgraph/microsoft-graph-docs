@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create unifiedRoleDefinition"
 description: "Create a new unifiedRoleDefinition object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obje
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | RoleManagement.ReadWrite.Directory          |
 
 ## HTTP request
 
@@ -35,8 +35,8 @@ POST /roleManagement/directory/roleDefinitions
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -45,11 +45,11 @@ In the request body, supply a JSON representation of [unifiedRoleDefinition](../
 
 The following table shows the properties that are required when you create a roleDefinition.
 
-| Parameter | Type | Description|
-|:---------------|:--------|:----------|
-|displayName |string |The display name for the role definition.|
-|isEnabled |Boolean |Flag indicating if the role is enabled for assignment. If false the role is not available for assignment.|
-|rolePermissions |[unifiedRolePermission](../resources/unifiedrolepermission.md) collection |List of permissions included in the role.|
+| Parameter       | Type                                                                      | Description                                                                                               |
+| :-------------- | :------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| displayName     | string                                                                    | The display name for the role definition.                                                                 |
+| isEnabled       | Boolean                                                                   | Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. |
+| rolePermissions | [unifiedRolePermission](../resources/unifiedrolepermission.md) collection | List of permissions included in the role.                                                                 |
 
 ## Response
 
@@ -61,8 +61,8 @@ If successful, this method returns `201 Created` response code and a new [unifie
 
 The following is an example of creating a custom role.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroledefinition_from_rbacapplication"
@@ -87,20 +87,23 @@ Content-type: application/json
     "isEnabled" : "true"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroledefinition-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroledefinition-from-rbacapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroledefinition-from-rbacapplication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -142,6 +145,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create unifiedRoleDefinition",
@@ -149,5 +153,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

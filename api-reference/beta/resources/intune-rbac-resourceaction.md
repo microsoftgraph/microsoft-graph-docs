@@ -1,4 +1,4 @@
----
+﻿---
 title: "resourceAction resource type"
 description: "Set of allowed and not allowed actions for a resource."
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 Set of allowed and not allowed actions for a resource.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedResourceActions|String collection|Allowed Actions|
-|notAllowedResourceActions|String collection|Not Allowed Actions.|
+
+| Property                  | Type              | Description          |
+| :------------------------ | :---------------- | :------------------- |
+| allowedResourceActions    | String collection | Allowed Actions      |
+| notAllowedResourceActions | String collection | Not Allowed Actions. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.resourceAction"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.resourceAction",
   "allowedResourceActions": [
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

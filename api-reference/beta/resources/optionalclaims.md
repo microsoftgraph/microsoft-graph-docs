@@ -1,4 +1,4 @@
----
+﻿---
 title: "optionalClaims type"
 description: "Declares the optional claims requested by an application."
 localization_priority: Normal
@@ -18,24 +18,26 @@ Declares the optional claims requested by an application. An application can con
 Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [provide optional claims to your Azure AD app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) for more information.
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|idToken|[optionalClaim](optionalclaim.md) collection| The optional claims returned in the JWT ID token. |
-|accessToken|[optionalClaim](optionalclaim.md) collection| The optional claims returned in the JWT access token. |
-|saml2Token|[optionalClaim](optionalclaim.md) collection| The optional claims returned in the SAML token.|
+
+| Property    | Type                                         | Description                                           |
+| :---------- | :------------------------------------------- | :---------------------------------------------------- |
+| idToken     | [optionalClaim](optionalclaim.md) collection | The optional claims returned in the JWT ID token.     |
+| accessToken | [optionalClaim](optionalclaim.md) collection | The optional claims returned in the JWT access token. |
+| saml2Token  | [optionalClaim](optionalclaim.md) collection | The optional claims returned in the SAML token.       |
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.optionalClaims"
 }-->
-``` json
+
+```json
 {
   "idToken": [{"@odata.type": "microsoft.graph.optionalClaim"}],
   "accessToken": [{"@odata.type": "microsoft.graph.optionalClaim"}],
   "saml2Token": [{"@odata.type": "microsoft.graph.optionalClaim"}]
 }
 ```
-
-

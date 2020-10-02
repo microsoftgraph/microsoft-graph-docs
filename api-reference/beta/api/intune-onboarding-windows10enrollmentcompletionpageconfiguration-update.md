@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update windows10EnrollmentCompletionPageConfiguration"
 description: "Update the properties of a windows10EnrollmentCompletionPageConfiguration object."
 author: "dougeby"
@@ -18,65 +18,71 @@ Namespace: microsoft.graph
 Update the properties of a [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementServiceConfig.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementServiceConfig.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) object.
 
 The following table shows the properties that are required when you create the [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Unique Identifier for the account Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|String|The display name of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|description|String|The description of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|priority|Int32|Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|createdDateTime|DateTimeOffset|Created date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|String collection|Optional role scope tags for the enrollment restrictions. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|Show or hide installation progress to user|
-|blockDeviceSetupRetryByUser|Boolean|Allow the user to retry the setup on installation failure|
-|allowDeviceResetOnInstallFailure|Boolean|Allow or block device reset on installation failure|
-|allowLogCollectionOnInstallFailure|Boolean|Allow or block log collection on installation failure|
-|customErrorMessage|String|Set custom error message to show upon installation failure|
-|installProgressTimeoutInMinutes|Int32|Set installation progress timeout in minutes|
-|allowDeviceUseOnInstallFailure|Boolean|Allow the user to continue using the device on installation failure|
-|selectedMobileAppIds|String collection|Selected applications to track the installation status|
-|trackInstallProgressForAutopilotOnly|Boolean|Only show installation progress for Autopilot enrollment scenarios|
-|disableUserStatusTrackingAfterFirstUser|Boolean|Only show installation progress for first user post enrollment|
-
-
+| Property                                | Type              | Description                                                                                                                                                                                                                                                                                |
+| :-------------------------------------- | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                                      | String            | Unique Identifier for the account Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)                                                                                                                                              |
+| displayName                             | String            | The display name of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)                                                                                                                        |
+| description                             | String            | The description of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)                                                                                                                         |
+| priority                                | Int32             | Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) |
+| createdDateTime                         | DateTimeOffset    | Created date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)                                                                                                                |
+| lastModifiedDateTime                    | DateTimeOffset    | Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)                                                                                                          |
+| version                                 | Int32             | The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)                                                                                                                             |
+| roleScopeTagIds                         | String collection | Optional role scope tags for the enrollment restrictions. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)                                                                                                                      |
+| showInstallationProgress                | Boolean           | Show or hide installation progress to user                                                                                                                                                                                                                                                 |
+| blockDeviceSetupRetryByUser             | Boolean           | Allow the user to retry the setup on installation failure                                                                                                                                                                                                                                  |
+| allowDeviceResetOnInstallFailure        | Boolean           | Allow or block device reset on installation failure                                                                                                                                                                                                                                        |
+| allowLogCollectionOnInstallFailure      | Boolean           | Allow or block log collection on installation failure                                                                                                                                                                                                                                      |
+| customErrorMessage                      | String            | Set custom error message to show upon installation failure                                                                                                                                                                                                                                 |
+| installProgressTimeoutInMinutes         | Int32             | Set installation progress timeout in minutes                                                                                                                                                                                                                                               |
+| allowDeviceUseOnInstallFailure          | Boolean           | Allow the user to continue using the device on installation failure                                                                                                                                                                                                                        |
+| selectedMobileAppIds                    | String collection | Selected applications to track the installation status                                                                                                                                                                                                                                     |
+| trackInstallProgressForAutopilotOnly    | Boolean           | Only show installation progress for Autopilot enrollment scenarios                                                                                                                                                                                                                         |
+| disableUserStatusTrackingAfterFirstUser | Boolean           | Only show installation progress for first user post enrollment                                                                                                                                                                                                                             |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
 Content-length: 746
@@ -106,8 +112,10 @@ Content-length: 746
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 918
@@ -138,9 +146,3 @@ Content-Length: 918
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
-
-
-
-
-

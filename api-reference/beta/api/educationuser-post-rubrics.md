@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create educationRubric"
 description: "Create a new educationRubric object."
 localization_priority: Normal
@@ -56,6 +56,7 @@ If successful, this method returns `201 Created` response code and a new [educat
 The following is an example of the request to post a credit rubric (a rubric with no points).
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_educationrubric_from_educationuser"
@@ -131,20 +132,23 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -238,6 +242,7 @@ Content-type: application/json
 ### Example 2: Posting a Points Rubric
 
 The following is an example of the request to post a rubric with points.
+
 <!-- {
   "blockType": "request",
   "name": "create_educationrubric_from_educationuser"
@@ -436,6 +441,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create educationRubric",
@@ -443,5 +449,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

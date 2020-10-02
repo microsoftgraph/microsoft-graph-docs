@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOSContentCachingPeerPolicy enum type"
 description: "Determines which content caches other content caches will peer with."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Determines which content caches other content caches will peer with.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Defaults to peers in local network.|
-|peersInLocalNetwork|1|Content caches will only peer with caches in their immediate local network.|
-|peersWithSamePublicIpAddress|2|Content caches will only peer with caches that share the same public IP address.|
-|peersInCustomLocalNetworks|3|Content caches will use contentCachingPeerFilterRanges and contentCachingPeerListenRanges to determine which caches to peer with.|
 
-
-
-
-
-
+| Member                       | Value | Description                                                                                                                       |
+| :--------------------------- | :---- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| notConfigured                | 0     | Defaults to peers in local network.                                                                                               |
+| peersInLocalNetwork          | 1     | Content caches will only peer with caches in their immediate local network.                                                       |
+| peersWithSamePublicIpAddress | 2     | Content caches will only peer with caches that share the same public IP address.                                                  |
+| peersInCustomLocalNetworks   | 3     | Content caches will use contentCachingPeerFilterRanges and contentCachingPeerListenRanges to determine which caches to peer with. |

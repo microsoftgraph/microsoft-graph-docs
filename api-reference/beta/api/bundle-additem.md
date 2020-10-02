@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: jeremyke
 title: Add item to a bundle
@@ -23,11 +23,11 @@ Add an additional [driveItem][] from a drive to a [bundle][].
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.                             |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All   |
-|Application          | Not supported.                                           |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All        |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -37,8 +37,8 @@ POST /drive/bundles/{bundle-id}/children
 
 ## Request headers
 
-| Name          | Description  |
-|:------------- |:------------ |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
 | Authorization | Bearer \{token\}. Required. |
 
 ## Request body
@@ -57,8 +57,8 @@ Read the [Error Responses][error-response] topic for more information about how 
 
 This request will add an existing item to the specified bundle.
 
-
 # [HTTP](#tab/http)
+
 <!-- {"blockType": "request", "name": "add-to-bundle", "isCollection": true, "@odata.type": "microsoft.graph.driveItem", "tags": "onedrive.only" } -->
 
 ```http
@@ -69,20 +69,23 @@ Content-Type: application/json
   "id": "123456!87"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-to-bundle-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-to-bundle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/add-to-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -100,5 +103,3 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation"
 } -->
-
-

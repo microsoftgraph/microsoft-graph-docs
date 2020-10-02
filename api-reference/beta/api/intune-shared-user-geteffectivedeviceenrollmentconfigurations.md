@@ -1,4 +1,4 @@
----
+﻿---
 title: "getEffectiveDeviceEnrollmentConfigurations function"
 description: "Not yet documented"
 author: "dougeby"
@@ -21,29 +21,31 @@ Not yet documented
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)||
-| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application||
-| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     |                                             |
+| &nbsp; &nbsp; **Onboarding**           | DeviceManagementServiceConfig.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            |                                             |
+| &nbsp; &nbsp; **Onboarding**           | DeviceManagementServiceConfig.ReadWrite.All |
+
 ## HTTP Request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 ```
 
 ## Request headers
 
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
 
@@ -59,7 +61,7 @@ If successful, this function returns a `200 OK` response code and a [deviceEnrol
 
 Here is an example of the request.
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 ```
 
@@ -67,7 +69,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}/getEffectiveDeviceEnrollmen
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 422
@@ -87,15 +89,3 @@ Content-Length: 422
   ]
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

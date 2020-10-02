@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosWallpaperDisplayLocation enum type"
 description: "An enum type for wallpaper display location specifier."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 An enum type for wallpaper display location specifier.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|No location specified for wallpaper display.|
-|lockScreen|1|A configured wallpaper image is displayed on Lock screen.|
-|homeScreen|2|A configured wallpaper image is displayed on Home (icon list) screen.|
-|lockAndHomeScreens|3|A configured wallpaper image is displayed on Lock screen and Home screen.|
 
-
-
-
-
-
+| Member             | Value | Description                                                               |
+| :----------------- | :---- | :------------------------------------------------------------------------ |
+| notConfigured      | 0     | No location specified for wallpaper display.                              |
+| lockScreen         | 1     | A configured wallpaper image is displayed on Lock screen.                 |
+| homeScreen         | 2     | A configured wallpaper image is displayed on Home (icon list) screen.     |
+| lockAndHomeScreens | 3     | A configured wallpaper image is displayed on Lock screen and Home screen. |

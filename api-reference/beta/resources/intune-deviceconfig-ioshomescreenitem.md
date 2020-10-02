@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosHomeScreenItem resource type"
 description: "Represents an item on the iOS Home Screen"
 author: "dougeby"
@@ -18,29 +18,28 @@ Namespace: microsoft.graph
 Represents an item on the iOS Home Screen
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Name of the app|
+
+| Property    | Type   | Description     |
+| :---------- | :----- | :-------------- |
+| displayName | String | Name of the app |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenItem"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenItem",
   "displayName": "String"
 }
 ```
-
-
-
-
-
-

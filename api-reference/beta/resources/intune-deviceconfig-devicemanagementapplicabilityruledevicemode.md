@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementApplicabilityRuleDeviceMode resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceMode|[windows10DeviceModeType](../resources/intune-deviceconfig-windows10devicemodetype.md)|Applicability rule for device mode. Possible values are: `standardConfiguration`, `sModeConfiguration`.|
-|name|String|Name for object.|
-|ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Applicability Rule type. Possible values are: `include`, `exclude`.|
+
+| Property   | Type                                                                                                               | Description                                                                                             |
+| :--------- | :----------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
+| deviceMode | [windows10DeviceModeType](../resources/intune-deviceconfig-windows10devicemodetype.md)                             | Applicability rule for device mode. Possible values are: `standardConfiguration`, `sModeConfiguration`. |
+| name       | String                                                                                                             | Name for object.                                                                                        |
+| ruleType   | [deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md) | Applicability Rule type. Possible values are: `include`, `exclude`.                                     |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
   "deviceMode": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "ruleType": "String"
 }
 ```
-
-
-
-
-
-

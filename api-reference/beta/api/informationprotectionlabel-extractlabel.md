@@ -1,4 +1,4 @@
----
+﻿---
 title: "informationProtectionLabel: extractLabel"
 description: "Retrieve informationProtectionContentLabel using metadata from a labeled object."
 localization_priority: Normal
@@ -65,6 +65,7 @@ The following is an example of how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "informationprotectionlabel_extractlabel"
@@ -124,20 +125,23 @@ User-agent: ContosoLOBApp/1.0
     }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/informationprotectionlabel-extractlabel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/informationprotectionlabel-extractlabel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-extractlabel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -173,6 +177,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "informationProtectionLabel: extractLabel",
@@ -180,5 +185,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

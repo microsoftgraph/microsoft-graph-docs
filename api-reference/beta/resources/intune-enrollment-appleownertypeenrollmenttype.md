@@ -1,4 +1,4 @@
----
+﻿---
 title: "appleOwnerTypeEnrollmentType resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|The owner type. Possible values are: `unknown`, `company`, `personal`.|
-|enrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|The enrollment type. Possible values are: `unknown`, `device`, `user`.|
+
+| Property       | Type                                                                                                   | Description                                                            |
+| :------------- | :----------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- |
+| ownerType      | [managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)                         | The owner type. Possible values are: `unknown`, `company`, `personal`. |
+| enrollmentType | [appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md) | The enrollment type. Possible values are: `unknown`, `device`, `user`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appleOwnerTypeEnrollmentType"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.appleOwnerTypeEnrollmentType",
   "ownerType": "String",
   "enrollmentType": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: trialBalance resource type 
 description: A trial balance object in Dynamics 365 Business Central. 
 services: project-madeira
@@ -19,31 +19,31 @@ Represents a trial balance in Dynamics 365 Business Central.
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Get trialBalance](../api/dynamics-trialbalance-get.md)|trialBalance|Gets a trial balance object.|
+| Method                                                  | Return Type  | Description                  |
+| :------------------------------------------------------ | :----------- | :--------------------------- |
+| [Get trialBalance](../api/dynamics-trialbalance-get.md) | trialBalance | Gets a trial balance object. |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|number|string|The G/L Account number for the trialBalance item|
-|accountId|GUID|The unique identifier for the G/L account of the record.|
-|accountType|string|The account type of the G/L account of the record.|
-|display|string|The G/L Account name for the trialBalance item.|
-|totalDebit|string|Represents total debit amount in G/L Account.|
-|totalCredit|string|Represents total credit amount in G/L Account.|
-|balanceAtDateDebit|string|Represents positive Balance at Date amount in G/L Account.|
-|balanceAtDateCredit|string|Represents negative Balance at Date amount in G/L Account.|
-|dateFilter|date|The date filter used to calculate the trialBalance items.|
 
+| Property            | Type   | Description                                                |
+| :------------------ | :----- | :--------------------------------------------------------- |
+| number              | string | The G/L Account number for the trialBalance item           |
+| accountId           | GUID   | The unique identifier for the G/L account of the record.   |
+| accountType         | string | The account type of the G/L account of the record.         |
+| display             | string | The G/L Account name for the trialBalance item.            |
+| totalDebit          | string | Represents total debit amount in G/L Account.              |
+| totalCredit         | string | Represents total credit amount in G/L Account.             |
+| balanceAtDateDebit  | string | Represents positive Balance at Date amount in G/L Account. |
+| balanceAtDateCredit | string | Represents negative Balance at Date amount in G/L Account. |
+| dateFilter          | date   | The date filter used to calculate the trialBalance items.  |
 
 ## Relationships
+
 None
 
 ## JSON representation
 
 Here is a JSON representation of the resource.
-
 
 ```json
 {
@@ -59,6 +59,3 @@ Here is a JSON representation of the resource.
 }
 
 ```
-
-
-

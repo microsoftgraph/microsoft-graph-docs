@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskAzureADGroup resource type"
 description: "The class used to identify an AzureAD group for the kiosk configuration"
 author: "dougeby"
@@ -17,35 +17,33 @@ Namespace: microsoft.graph
 
 The class used to identify an AzureAD group for the kiosk configuration
 
-
 Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|The display name of the AzureAD group that will be locked to this kiosk configuration|
-|groupId|String|The ID of the AzureAD group that will be locked to this kiosk configuration|
+
+| Property    | Type   | Description                                                                           |
+| :---------- | :----- | :------------------------------------------------------------------------------------ |
+| displayName | String | The display name of the AzureAD group that will be locked to this kiosk configuration |
+| groupId     | String | The ID of the AzureAD group that will be locked to this kiosk configuration           |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskAzureADGroup"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskAzureADGroup",
   "displayName": "String",
   "groupId": "String"
 }
 ```
-
-
-
-
-
-

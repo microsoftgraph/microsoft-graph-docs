@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementEnumValue resource type"
 description: "Definition information for an enum value"
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Definition information for an enum value
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|value|String|The raw enum value text|
-|displayName|String|Display name for this enum value|
+
+| Property    | Type   | Description                      |
+| :---------- | :----- | :------------------------------- |
+| value       | String | The raw enum value text          |
+| displayName | String | Display name for this enum value |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementEnumValue"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementEnumValue",
   "value": "String",
   "displayName": "String"
 }
 ```
-
-
-
-
-
-

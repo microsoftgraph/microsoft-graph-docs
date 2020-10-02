@@ -1,4 +1,4 @@
----
+﻿---
 title: "List messages"
 description: "Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). "
 localization_priority: Normal
@@ -29,21 +29,23 @@ There are two scenarios where an app can get messages in another user's mail fol
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-share-messages-folders).
 
 > **Note** Be aware of the [known issue](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams) that this operation includes Microsoft Teams chat messages in its response.
- 
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged)   |
+| :------------------------------------- | :-------------------------------------------- |
+| Delegated (work or school account)     | Mail.ReadBasic, Mail.Read, Mail.ReadWrite     |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite     |
+| Application                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 
 To get all the messages in a user's mailbox:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/messages
 GET /users/{id | userPrincipalName}/messages
@@ -52,6 +54,7 @@ GET /users/{id | userPrincipalName}/messages
 To get messages in a specific folder in the user's mailbox:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
@@ -60,17 +63,20 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 To get all the messages in the user's mailbox that include a **mention** of the user:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/messages?$filter=mentionsPreview/isMentioned eq true
 GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned eq true
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 You can use the `$filter` query parameter on the **mentionsPreview** property to get those messages that mention the signed-in user.
 
 ### Using filter and orderby in the same query
+
 When using `$filter` and `$orderby` in the same query to get messages, make sure to specify properties in the following ways:
 
 1. Properties that appear in `$orderby` must also appear in `$filter`. 
@@ -83,12 +89,14 @@ Failing to do this results in the following error:
 - Error message: `The restriction or sort order is too complex for this operation.`
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+
+| Name                              | Type   | Description                                                                                                                                                                                                                   |
+| :-------------------------------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization                     | string | Bearer {token}. Required.                                                                                                                                                                                                     |
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -96,32 +104,41 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [message](../resources/message.md) objects in the response body.
 
 ## Example
+
 ##### Request 1
+
 The first example gets the default, top 10 messages in the signed-in user's mailbox. It uses `$select` to return a subset of the properties of each message in the response. 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_messages"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-messages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response 1
+
 Here is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
 
 <!-- {
@@ -130,6 +147,7 @@ Here is an example of the response. To get the next page of messages, apply the 
   "@odata.type": "microsoft.graph.message",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -231,43 +249,52 @@ Content-type: application/json
 }
 ```
 
-
 ##### Request 2
+
 The next example filters all messages in the signed-in user's mailbox for those that mention the user. It also uses `$select` 
 to return a subset of the properties of each message in the response. 
 
 The example also incorporates URL encoding for the space characters in the query parameter string.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_messages_with_mentions"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMentioned%20eq%20true&$select=Subject,Sender,ReceivedDateTime,MentionsPreview
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messages-with-mentions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-messages-with-mentions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-with-mentions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response 2
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.message",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -313,32 +340,40 @@ Content-length: 987
 ```
 
 ##### Request 3
+
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** properties of each message in text format.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_messages_in_text"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messages-in-text-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-messages-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response 3
+
 Here is an example of the response. 
 
 <!--
@@ -351,6 +386,7 @@ Note: The response includes a `Preference-Applied: outlook.body-content-type` he
   "@odata.type": "microsoft.graph.message",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -408,6 +444,7 @@ Content-length: 2704
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -419,5 +456,3 @@ Content-length: 2704
   ]
 }
 -->
-
-

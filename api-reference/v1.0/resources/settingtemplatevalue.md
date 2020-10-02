@@ -1,4 +1,4 @@
----
+﻿---
 title: "settingTemplateValue resource type"
 description: "Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated."
 localization_priority: Normal
@@ -15,12 +15,12 @@ Represents an individual template setting definition, including the default valu
 
 ### Properties
 
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-|defaultValue|String| Default value for the setting. |
-|description|String| Description of the setting. |
-|name|String| Name of the setting. |
-|type|String| Type of the setting. |
+| Property     | Type   | Description                    |
+| :----------- | :----- | :----------------------------- |
+| defaultValue | String | Default value for the setting. |
+| description  | String | Description of the setting.    |
+| name         | String | Name of the setting.           |
+| type         | String | Type of the setting.           |
 
 ### JSON representation
 
@@ -44,9 +44,9 @@ Here is a JSON representation of the resource.
 
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "settingTemplateValue resource",
@@ -54,4 +54,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

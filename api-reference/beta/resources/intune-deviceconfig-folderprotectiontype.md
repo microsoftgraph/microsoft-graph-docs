@@ -1,4 +1,4 @@
----
+﻿---
 title: "folderProtectionType enum type"
 description: "Possible values of Folder Protection"
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Possible values of Folder Protection
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userDefined|0|Device default value, no intent.|
-|enable|1|Block functionality.|
-|auditMode|2|Allow functionality but generate logs.|
-|blockDiskModification|3|Block untrusted apps from writing to disk sectors.|
-|auditDiskModification|4|Generate logs when untrusted apps write to disk sectors.|
 
-
-
-
-
-
+| Member                | Value | Description                                              |
+| :-------------------- | :---- | :------------------------------------------------------- |
+| userDefined           | 0     | Device default value, no intent.                         |
+| enable                | 1     | Block functionality.                                     |
+| auditMode             | 2     | Allow functionality but generate logs.                   |
+| blockDiskModification | 3     | Block untrusted apps from writing to disk sectors.       |
+| auditDiskModification | 4     | Generate logs when untrusted apps write to disk sectors. |

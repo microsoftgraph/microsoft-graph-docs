@@ -1,4 +1,4 @@
----
+﻿---
 title: "reportRoot: getM365AppUserCounts"
 description: "Get a report that provides the trend in the number of active users for each app – Outlook, Word, Excel, PowerPoint, OneNote, and Teams - in your organization."
 localization_priority: Normal
@@ -41,8 +41,8 @@ GET /reports/getM365AppUserCounts(period='{period_value}')
 
 In the request URL, provide the following parameter with a valid value.
 
-| Parameter | Type   | Description                                                                                                                                                                                                                                                       |
-| :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Parameter | Type   | Description                                                                                                                                                                                                                                                               |
+| :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Optional query parameters
@@ -95,9 +95,8 @@ The following is an example that outputs CSV.
 
 The following is an example of the request to get the **content** property.
 
-
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "reportroot_getM365AppUserCounts_csv"
@@ -106,21 +105,23 @@ The following is an example of the request to get the **content** property.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getM365AppUserCounts(period='D7')/content?$format=text/csv
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercounts-csv-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getm365appusercounts-csv-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 
@@ -157,9 +158,8 @@ The following is an example that returns JSON.
 
 The following is an example of the request to get the **content** property.
 
-
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "reportroot_getM365AppUserCounts_json"
@@ -168,21 +168,23 @@ The following is an example of the request to get the **content** property.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getM365AppUserCounts(period='D7')/content?$format=application/json
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercounts-json-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getm365appusercounts-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercounts-json-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 
@@ -221,8 +223,10 @@ Content-Length: 188
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",

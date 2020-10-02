@@ -1,4 +1,4 @@
----
+﻿---
 title: "termstore enum values"
 description: "Microsoft Graph termstore enumeration values"
 doc_type: enumPageType
@@ -15,20 +15,20 @@ Namespace: microsoft.graph.termstore
 
 Specifies the value types relations can take in a termstore
 
-|Members|
-|:---|
-|pin|
-|reuse|
+| Members |
+| :------ |
+| pin     |
+| reuse   |
 
 ### termGroupScope values
 
 Specifies the values different group types can take within the termstore
 
-|Members|
-|:---|
-|global|
-|system|
-|siteCollection|
+| Members        |
+| :------------- |
+| global         |
+| system         |
+| siteCollection |
 
 <!--
 {
@@ -36,5 +36,3 @@ Specifies the values different group types can take within the termstore
   "namespace": "microsoft.graph.termstore"
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "governanceSubject resource type"
 description: "Represents users, groups, and service principals being managed in Privileged Identity Management (PIM)."
 localization_priority: Normal
@@ -15,19 +15,19 @@ Namespace: microsoft.graph
 
 Represents users, groups, and service principals being managed in Privileged Identity Management (PIM).
 
-
 ## Properties
-| Property	| Type	     |Description|
-|:----------|:----------|:----------|
-|id         |String     | The id of the subject.|
-|type       |String     |The type of the subject. The value can be ``User``, ``Group``, and ``ServicePrincipal``.|
-|displayName|String     |The display name of the subject.|
-|email      |String     |The email address of the user subject. If the subject is in other types, it is empty.|
-|principalName|String   |The principal name of the user subject. If the subject is in other types, it is empty.|
+
+| Property      | Type   | Description                                                                              |
+| :------------ | :----- | :--------------------------------------------------------------------------------------- |
+| id            | String | The id of the subject.                                                                   |
+| type          | String | The type of the subject. The value can be ``User``, ``Group``, and ``ServicePrincipal``. |
+| displayName   | String | The display name of the subject.                                                         |
+| email         | String | The email address of the user subject. If the subject is in other types, it is empty.    |
+| principalName | String | The principal name of the user subject. If the subject is in other types, it is empty.   |
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 
@@ -54,6 +54,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -64,5 +65,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

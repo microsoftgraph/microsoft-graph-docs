@@ -1,4 +1,4 @@
----
+﻿---
 title: "complianceManagementPartnerAssignment resource type"
 description: "User group targeting for Compliance Management Partner"
 author: "dougeby"
@@ -16,21 +16,26 @@ Namespace: microsoft.graph
 User group targeting for Compliance Management Partner
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Group assignment target.|
+
+| Property | Type                                                                                                           | Description              |
+| :------- | :------------------------------------------------------------------------------------------------------------- | :----------------------- |
+| target   | [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md) | Group assignment target. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartnerAssignment",
   "target": {
@@ -38,8 +43,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-

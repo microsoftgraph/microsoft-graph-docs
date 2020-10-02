@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "The itemActionStat resource provides aggregate details about an action over a period of time."
 ms.date: 09/14/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # itemActionStat resource type
 
 Namespace: microsoft.graph
@@ -32,10 +33,10 @@ The **itemActionStat** resource provides aggregate details about an action over 
 
 ## Properties
 
-| Property    | Type  | Description
-|:------------|:------|:-------------------------------------------------------
-| actionCount | Int32 | The number of times the action took place. Read-only.
-| actorCount  | Int32 | The number of distinct actors that performed the action. Read-only.
+| Property    | Type  | Description                                                         |
+| :---------- | :---- | :------------------------------------------------------------------ |
+| actionCount | Int32 | The number of times the action took place. Read-only.               |
+| actorCount  | Int32 | The number of distinct actors that performed the action. Read-only. |
 
 <!--
 {
@@ -47,5 +48,3 @@ The **itemActionStat** resource provides aggregate details about an action over 
   "suppressions": []
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: ItemActionSet resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # itemActionSet resource type
 
 Namespace: microsoft.graph
@@ -21,18 +22,18 @@ The **itemActionSet** resource provides information about the actions that made 
 
 The following actions are currently available. Because new actions might be added in the future, make sure that your app can handle an **itemActionSet** that includes unknown actions.
 
-| Property name | Type              | Description
-|:--------------|:------------------|:-----------------------------------------
-| comment       | [commentAction][] | A comment was added to the item.
-| create        | [createAction][]  | An item was created.
-| delete        | [deleteAction][]  | An item was deleted.
-| edit          | [editAction][]    | An item was edited.
-| mention       | [mentionAction][] | A user was mentioned in the item.
-| move          | [moveAction][]    | An item was moved.
-| rename        | [renameAction][]  | An item was renamed.
-| restore       | [restoreAction][] | An item was restored.
-| share         | [shareAction][]   | An item was shared.
-| version       | [versionAction][] | An item was versioned.
+| Property name | Type              | Description                       |
+| :------------ | :---------------- | :-------------------------------- |
+| comment       | [commentAction][] | A comment was added to the item.  |
+| create        | [createAction][]  | An item was created.              |
+| delete        | [deleteAction][]  | An item was deleted.              |
+| edit          | [editAction][]    | An item was edited.               |
+| mention       | [mentionAction][] | A user was mentioned in the item. |
+| move          | [moveAction][]    | An item was moved.                |
+| rename        | [renameAction][]  | An item was renamed.              |
+| restore       | [restoreAction][] | An item was restored.             |
+| share         | [shareAction][]   | An item was shared.               |
+| version       | [versionAction][] | An item was versioned.            |
 
 [commentAction]: commentaction.md
 [createAction]: createaction.md
@@ -81,4 +82,3 @@ The following actions are currently available. Because new actions might be adde
   "suppressions": []
 }
 -->
-

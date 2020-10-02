@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppNotificationRestriction enum type"
 description: "Restrict managed app notification"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Restrict managed app notification
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|allow|0|Share all notifications.|
-|blockOrganizationalData|1|Do not share Orgnizational data in notifications.|
-|block|2|Do not share notifications.|
 
-
-
-
-
-
+| Member                  | Value | Description                                       |
+| :---------------------- | :---- | :------------------------------------------------ |
+| allow                   | 0     | Share all notifications.                          |
+| blockOrganizationalData | 1     | Do not share Orgnizational data in notifications. |
+| block                   | 2     | Do not share notifications.                       |

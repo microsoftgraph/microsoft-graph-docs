@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppPhoneNumberRedirectLevel enum type"
 description: "The classes of apps that are allowed to click-to-open a phone number, for making phone calls or sending text messages."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 The classes of apps that are allowed to click-to-open a phone number, for making phone calls or sending text messages.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|allApps|0|Sharing is allowed to all apps.|
-|managedApps|1|Sharing is allowed to all managed apps.|
-|customApp|2|Sharing is allowed to a custom app.|
-|blocked|3|Sharing between apps is blocked.|
 
-
-
-
-
-
+| Member      | Value | Description                             |
+| :---------- | :---- | :-------------------------------------- |
+| allApps     | 0     | Sharing is allowed to all apps.         |
+| managedApps | 1     | Sharing is allowed to all managed apps. |
+| customApp   | 2     | Sharing is allowed to a custom app.     |
+| blocked     | 3     | Sharing between apps is blocked.        |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "wiFiSecurityType enum type"
 description: "Wi-Fi Security Types."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Wi-Fi Security Types.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|open|0|Open (No Authentication).|
-|wpaPersonal|1|WPA-Personal.|
-|wpaEnterprise|2|WPA-Enterprise. Must use IOSEnterpriseWifiConfiguration type to configure enterprise options.|
-|wep|3|WEP Encryption.|
-|wpa2Personal|4|WPA2-Personal.|
-|wpa2Enterprise|5|WPA2-Enterprise. Must use WindowsWifiEnterpriseEAPConfiguration type to configure enterprise options.|
 
-
-
-
-
-
+| Member         | Value | Description                                                                                           |
+| :------------- | :---- | :---------------------------------------------------------------------------------------------------- |
+| open           | 0     | Open (No Authentication).                                                                             |
+| wpaPersonal    | 1     | WPA-Personal.                                                                                         |
+| wpaEnterprise  | 2     | WPA-Enterprise. Must use IOSEnterpriseWifiConfiguration type to configure enterprise options.         |
+| wep            | 3     | WEP Encryption.                                                                                       |
+| wpa2Personal   | 4     | WPA2-Personal.                                                                                        |
+| wpa2Enterprise | 5     | WPA2-Enterprise. Must use WindowsWifiEnterpriseEAPConfiguration type to configure enterprise options. |

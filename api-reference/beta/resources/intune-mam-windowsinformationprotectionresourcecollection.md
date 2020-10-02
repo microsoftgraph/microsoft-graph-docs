@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsInformationProtectionResourceCollection resource type"
 description: "Windows Information Protection Resource Collection"
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 Windows Information Protection Resource Collection
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Display name|
-|resources|String collection|Collection of resources|
+
+| Property    | Type              | Description             |
+| :---------- | :---------------- | :---------------------- |
+| displayName | String            | Display name            |
+| resources   | String collection | Collection of resources |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionResourceCollection"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionResourceCollection",
   "displayName": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

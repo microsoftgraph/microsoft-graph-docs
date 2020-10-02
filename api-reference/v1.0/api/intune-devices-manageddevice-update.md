@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update managedDevice"
 description: "Update the properties of a managedDevice object."
 author: "dougeby"
@@ -16,96 +16,102 @@ Namespace: microsoft.graph
 Update the properties of a [managedDevice](../resources/intune-devices-manageddevice.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | Not supported.                               |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /users/{usersId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [managedDevice](../resources/intune-devices-manageddevice.md) object.
 
 The following table shows the properties that are required when you create the [managedDevice](../resources/intune-devices-manageddevice.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Unique Identifier for the device|
-|userId|String|Unique Identifier for the user associated with the device|
-|deviceName|String|Name of the device|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.|
-|deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) collection|List of ComplexType deviceActionResult objects.|
-|enrolledDateTime|DateTimeOffset|Enrollment time of the device.|
-|lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune.|
-|operatingSystem|String|Operating system of the device. Windows, iOS, etc.|
-|complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
-|jailBroken|String|whether the device is jail broken or rooted.|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
-|osVersion|String|Operating system version of the device.|
-|easActivated|Boolean|Whether the device is Exchange ActiveSync activated.|
-|easDeviceId|String|Exchange ActiveSync Id of the device.|
-|easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device.|
-|azureADRegistered|Boolean|Whether the device is Azure Active Directory registered.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
-|activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed.|
-|emailAddress|String|Email(s) for the user associated with the device|
-|azureADDeviceId|String|The unique identifier for the Azure Active Directory device. Read only.|
-|deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Device registration state. Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
-|deviceCategoryDisplayName|String|Device category display name|
-|isSupervised|Boolean|Device supervised status|
-|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Last time the device contacted Exchange.|
-|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|The Access State of the device in Exchange. Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
-|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
-|remoteAssistanceSessionUrl|String|Url that allows a Remote Assistance session to be established with the device.|
-|remoteAssistanceSessionErrorDetails|String|An error string that identifies issues when creating Remote Assistance session objects.|
-|isEncrypted|Boolean|Device encryption status|
-|userPrincipalName|String|Device user principal name|
-|model|String|Model of the device|
-|manufacturer|String|Manufacturer of the device|
-|imei|String|IMEI|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
-|serialNumber|String|SerialNumber|
-|phoneNumber|String|Phone number of the device|
-|androidSecurityPatchLevel|String|Android security patch level|
-|userDisplayName|String|User display name|
-|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr client enabled features|
-|wiFiMacAddress|String|Wi-Fi MAC|
-|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|The device health attestation state.|
-|subscriberCarrier|String|Subscriber Carrier|
-|meid|String|MEID|
-|totalStorageSpaceInBytes|Int64|Total Storage in Bytes|
-|freeStorageSpaceInBytes|Int64|Free Storage in Bytes|
-|managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name.|
-|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
-
-
+| Property                                  | Type                                                                                                                  | Description                                                                                                                                                                                                                                                                                                                                                                                    |
+| :---------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                                        | String                                                                                                                | Unique Identifier for the device                                                                                                                                                                                                                                                                                                                                                               |
+| userId                                    | String                                                                                                                | Unique Identifier for the user associated with the device                                                                                                                                                                                                                                                                                                                                      |
+| deviceName                                | String                                                                                                                | Name of the device                                                                                                                                                                                                                                                                                                                                                                             |
+| managedDeviceOwnerType                    | [managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)                                       | Ownership of the device. Can be 'company' or 'personal'. Possible values are: `unknown`, `company`, `personal`.                                                                                                                                                                                                                                                                                |
+| deviceActionResults                       | [deviceActionResult](../resources/intune-devices-deviceactionresult.md) collection                                    | List of ComplexType deviceActionResult objects.                                                                                                                                                                                                                                                                                                                                                |
+| enrolledDateTime                          | DateTimeOffset                                                                                                        | Enrollment time of the device.                                                                                                                                                                                                                                                                                                                                                                 |
+| lastSyncDateTime                          | DateTimeOffset                                                                                                        | The date and time that the device last completed a successful sync with Intune.                                                                                                                                                                                                                                                                                                                |
+| operatingSystem                           | String                                                                                                                | Operating system of the device. Windows, iOS, etc.                                                                                                                                                                                                                                                                                                                                             |
+| complianceState                           | [complianceState](../resources/intune-devices-compliancestate.md)                                                     | Compliance state of the device. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.                                                                                                                                                                                                                                            |
+| jailBroken                                | String                                                                                                                | whether the device is jail broken or rooted.                                                                                                                                                                                                                                                                                                                                                   |
+| managementAgent                           | [managementAgentType](../resources/intune-devices-managementagenttype.md)                                             | Management channel of the device. Intune, EAS, etc. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.                                                                                                 |
+| osVersion                                 | String                                                                                                                | Operating system version of the device.                                                                                                                                                                                                                                                                                                                                                        |
+| easActivated                              | Boolean                                                                                                               | Whether the device is Exchange ActiveSync activated.                                                                                                                                                                                                                                                                                                                                           |
+| easDeviceId                               | String                                                                                                                | Exchange ActiveSync Id of the device.                                                                                                                                                                                                                                                                                                                                                          |
+| easActivationDateTime                     | DateTimeOffset                                                                                                        | Exchange ActivationSync activation time of the device.                                                                                                                                                                                                                                                                                                                                         |
+| azureADRegistered                         | Boolean                                                                                                               | Whether the device is Azure Active Directory registered.                                                                                                                                                                                                                                                                                                                                       |
+| deviceEnrollmentType                      | [deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)                                            | Enrollment type of the device. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.                                                                                                            |
+| activationLockBypassCode                  | String                                                                                                                | Code that allows the Activation Lock on a device to be bypassed.                                                                                                                                                                                                                                                                                                                               |
+| emailAddress                              | String                                                                                                                | Email(s) for the user associated with the device                                                                                                                                                                                                                                                                                                                                               |
+| azureADDeviceId                           | String                                                                                                                | The unique identifier for the Azure Active Directory device. Read only.                                                                                                                                                                                                                                                                                                                        |
+| deviceRegistrationState                   | [deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)                                     | Device registration state. Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.                                                                                                                                                                                                   |
+| deviceCategoryDisplayName                 | String                                                                                                                | Device category display name                                                                                                                                                                                                                                                                                                                                                                   |
+| isSupervised                              | Boolean                                                                                                               | Device supervised status                                                                                                                                                                                                                                                                                                                                                                       |
+| exchangeLastSuccessfulSyncDateTime        | DateTimeOffset                                                                                                        | Last time the device contacted Exchange.                                                                                                                                                                                                                                                                                                                                                       |
+| exchangeAccessState                       | [deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)             | The Access State of the device in Exchange. Possible values are: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.                                                                                                                                                                                                                                                                       |
+| exchangeAccessStateReason                 | [deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md) | The reason for the device's access state in Exchange. Possible values are: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`. |
+| remoteAssistanceSessionUrl                | String                                                                                                                | Url that allows a Remote Assistance session to be established with the device.                                                                                                                                                                                                                                                                                                                 |
+| remoteAssistanceSessionErrorDetails       | String                                                                                                                | An error string that identifies issues when creating Remote Assistance session objects.                                                                                                                                                                                                                                                                                                        |
+| isEncrypted                               | Boolean                                                                                                               | Device encryption status                                                                                                                                                                                                                                                                                                                                                                       |
+| userPrincipalName                         | String                                                                                                                | Device user principal name                                                                                                                                                                                                                                                                                                                                                                     |
+| model                                     | String                                                                                                                | Model of the device                                                                                                                                                                                                                                                                                                                                                                            |
+| manufacturer                              | String                                                                                                                | Manufacturer of the device                                                                                                                                                                                                                                                                                                                                                                     |
+| imei                                      | String                                                                                                                | IMEI                                                                                                                                                                                                                                                                                                                                                                                           |
+| complianceGracePeriodExpirationDateTime   | DateTimeOffset                                                                                                        | The DateTime when device compliance grace period expires                                                                                                                                                                                                                                                                                                                                       |
+| serialNumber                              | String                                                                                                                | SerialNumber                                                                                                                                                                                                                                                                                                                                                                                   |
+| phoneNumber                               | String                                                                                                                | Phone number of the device                                                                                                                                                                                                                                                                                                                                                                     |
+| androidSecurityPatchLevel                 | String                                                                                                                | Android security patch level                                                                                                                                                                                                                                                                                                                                                                   |
+| userDisplayName                           | String                                                                                                                | User display name                                                                                                                                                                                                                                                                                                                                                                              |
+| configurationManagerClientEnabledFeatures | [configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md) | ConfigrMgr client enabled features                                                                                                                                                                                                                                                                                                                                                             |
+| wiFiMacAddress                            | String                                                                                                                | Wi-Fi MAC                                                                                                                                                                                                                                                                                                                                                                                      |
+| deviceHealthAttestationState              | [deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)                           | The device health attestation state.                                                                                                                                                                                                                                                                                                                                                           |
+| subscriberCarrier                         | String                                                                                                                | Subscriber Carrier                                                                                                                                                                                                                                                                                                                                                                             |
+| meid                                      | String                                                                                                                | MEID                                                                                                                                                                                                                                                                                                                                                                                           |
+| totalStorageSpaceInBytes                  | Int64                                                                                                                 | Total Storage in Bytes                                                                                                                                                                                                                                                                                                                                                                         |
+| freeStorageSpaceInBytes                   | Int64                                                                                                                 | Free Storage in Bytes                                                                                                                                                                                                                                                                                                                                                                          |
+| managedDeviceName                         | String                                                                                                                | Automatically generated name to identify a device. Can be overwritten to a user friendly name.                                                                                                                                                                                                                                                                                                 |
+| partnerReportedThreatState                | [managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)     | Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.                                                                                            |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [managedDevice](../resources/intune-devices-manageddevice.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
 Content-length: 4656
@@ -212,8 +218,10 @@ Content-length: 4656
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 4705
@@ -319,12 +327,3 @@ Content-Length: 4705
   "partnerReportedThreatState": "activated"
 }
 ```
-
-
-
-
-
-
-
-
-

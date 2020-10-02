@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete an appRoleAssignment granted for a service principal"
 description: "Delete an appRoleAssignment granted for a service principal."
 localization_priority: Normal
@@ -21,11 +21,11 @@ Deletes an [appRoleAssignment](../resources/approleassignment.md) that a user, g
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                 |
+| :------------------------------------- | :---------------------------------------------------------- |
+| Delegated (work or school account)     | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                              |
+| Application                            | AppRoleAssignment.ReadWrite.All                             |
 
 ## HTTP request
 
@@ -40,9 +40,9 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
 
@@ -58,8 +58,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 Here is an example of the request to delete an app role assignment from the resource service principal.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_delete_approleassignedto"
@@ -68,20 +68,23 @@ Here is an example of the request to delete an app role assignment from the reso
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignedto-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-delete-approleassignedto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delete-approleassignedto-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -98,6 +101,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -109,5 +113,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Using the Intune Graph API - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) you can use to manage your tenant organization, its devices, apps, access, and resources."
 author: "rolyon"
@@ -34,19 +34,15 @@ The following example shows how you can determine whether an application is inst
 
     https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
-
 ## Using Microsoft Graph permissions
 
 Microsof Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](https://docs.microsoft.com/graph/permissions-reference).
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next Steps
 
 - Learn [how to use Azure AD](https://docs.microsoft.com/intune/intune-graph-apis) to access the Microsoft Graph API for Intune.  
 - Explore the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples), which show how to use the Microsoft Graph API for Intune in context of working examples.
-
-
-
-

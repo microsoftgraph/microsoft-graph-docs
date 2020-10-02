@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update featureRolloutPolicy"
 description: "Update the properties of featurerolloutpolicy object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Update the properties of [featureRolloutPolicy](../resources/featurerolloutpolic
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout             |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -35,20 +35,20 @@ PATCH /directory/featureRolloutPolicies/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
+| Name          | Description   |
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|description|String|A description for this policy.|
-|displayName|String|The display name for this policy.|
-|isAppliedToOrganization|Boolean|Indicates whether this feature rollout policy should be applied to the entire organization.|
-|isEnabled|Boolean|Indicates whether the feature rollout is enabled.|
+| Property                | Type    | Description                                                                                 |
+| :---------------------- | :------ | :------------------------------------------------------------------------------------------ |
+| description             | String  | A description for this policy.                                                              |
+| displayName             | String  | The display name for this policy.                                                           |
+| isAppliedToOrganization | Boolean | Indicates whether this feature rollout policy should be applied to the entire organization. |
+| isEnabled               | Boolean | Indicates whether the feature rollout is enabled.                                           |
 
 ## Response
 
@@ -59,6 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [feat
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_featurerolloutpolicy"
@@ -95,6 +96,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update featurerolloutpolicy",
@@ -102,5 +104,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

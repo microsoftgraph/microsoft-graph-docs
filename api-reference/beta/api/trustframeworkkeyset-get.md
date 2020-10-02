@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get trustFrameworkKeySet"
 description: "Retrieve the properties and relationships of trustframeworkkeyset object."
 localization_priority: Normal
@@ -19,10 +19,10 @@ Retrieve the properties and associations for a [Trustframeworkkeyset](../resourc
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)                       |
+| :------------------------------------- | :---------------------------------------------------------------- |
 | Delegated (work or school account)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                                    |
 | Application                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 
 ## HTTP request
@@ -35,8 +35,8 @@ GET /trustFramework/keySets/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -54,6 +54,7 @@ If successful, this method returns a `200 OK` response code and the requested [t
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_trustframeworkkeyset"
@@ -62,20 +63,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-trustframeworkkeyset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-trustframeworkkeyset-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-trustframeworkkeyset-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -122,6 +126,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get trustFrameworkKeySet",
@@ -129,5 +134,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "windows10VpnProfileTarget enum type"
 description: "Windows 10 VPN profile target types."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Windows 10 VPN profile target types.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|user|0|User targeted VPN profile.|
-|device|1|Device targeted VPN profile.|
-|autoPilotDevice|2|AutoPilot Device targeted VPN profile.|
 
-
-
-
-
-
+| Member          | Value | Description                            |
+| :-------------- | :---- | :------------------------------------- |
+| user            | 0     | User targeted VPN profile.             |
+| device          | 1     | Device targeted VPN profile.           |
+| autoPilotDevice | 2     | AutoPilot Device targeted VPN profile. |

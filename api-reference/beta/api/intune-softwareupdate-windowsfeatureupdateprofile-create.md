@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create windowsFeatureUpdateProfile"
 description: "Create a new windowsFeatureUpdateProfile object."
 author: "dougeby"
@@ -18,54 +18,60 @@ Namespace: microsoft.graph
 Create a new [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/windowsFeatureUpdateProfiles
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the windowsFeatureUpdateProfile object.
 
 The following table shows the properties that are required when you create the windowsFeatureUpdateProfile.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The Identifier of the entity.|
-|displayName|String|The display name of the profile.|
-|description|String|The description of the profile which is specified by the user.|
-|featureUpdateVersion|String|The feature update version that will be deployed to the devices targeted by this profile. The version could be any supported version for example 1709, 1803 or 1809 and so on.|
-|createdDateTime|DateTimeOffset|The date time that the profile was created.|
-|lastModifiedDateTime|DateTimeOffset|The date time that the profile was last modified.|
-|roleScopeTagIds|String collection|List of Scope Tags for this Feature Update entity.|
-
-
+| Property             | Type              | Description                                                                                                                                                                    |
+| :------------------- | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | String            | The Identifier of the entity.                                                                                                                                                  |
+| displayName          | String            | The display name of the profile.                                                                                                                                               |
+| description          | String            | The description of the profile which is specified by the user.                                                                                                                 |
+| featureUpdateVersion | String            | The feature update version that will be deployed to the devices targeted by this profile. The version could be any supported version for example 1709, 1803 or 1809 and so on. |
+| createdDateTime      | DateTimeOffset    | The date time that the profile was created.                                                                                                                                    |
+| lastModifiedDateTime | DateTimeOffset    | The date time that the profile was last modified.                                                                                                                              |
+| roleScopeTagIds      | String collection | List of Scope Tags for this Feature Update entity.                                                                                                                             |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles
 Content-type: application/json
 Content-length: 269
@@ -82,8 +88,10 @@ Content-length: 269
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 441
@@ -101,9 +109,3 @@ Content-Length: 441
   ]
 }
 ```
-
-
-
-
-
-

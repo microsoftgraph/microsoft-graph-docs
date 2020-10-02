@@ -1,4 +1,4 @@
----
+﻿---
 title: "errorCode enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|noError|0|Default Value to indicate no error.|
-|unauthorized|1|The current user does not have access due to lack of RBAC permissions on the resource.|
-|notFound|2|The current user does not have access due to lack of RBAC Scope Tags on the resource.|
-|deleted|3|The resource has been deleted.|
 
-
-
-
-
-
+| Member       | Value | Description                                                                            |
+| :----------- | :---- | :------------------------------------------------------------------------------------- |
+| noError      | 0     | Default Value to indicate no error.                                                    |
+| unauthorized | 1     | The current user does not have access due to lack of RBAC permissions on the resource. |
+| notFound     | 2     | The current user does not have access due to lack of RBAC Scope Tags on the resource.  |
+| deleted      | 3     | The resource has been deleted.                                                         |

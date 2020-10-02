@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get device command status"
 description: "Get the status of a command on a device. For the  full list of status codes, see List of actionStatus."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Get the status of a command on a device. For the  full list of status codes, see
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Device.Command    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Device.Command                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -35,17 +35,19 @@ GET me/devices/{id}/commands/{id}
 
 ## Request headers
 
-| Header |Value
-|:----|:------|
-|Authorization| Bearer {token}. Required. |
-|Accept | application/json |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Accept        | application/json          |
 
 ## Response
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
 ```
+
 <!-- { "blockType": "ignored" } -->
 
 ```json
@@ -92,6 +94,7 @@ The following example shows the request.
   "blockType": "ignored",
   "name": "get_command"
 } -->
+
 ```http
 GET me/devices/{id}/commands/{id}
 Authorization: Bearer Eaeou....
@@ -101,12 +104,14 @@ Content-Type: application/json; charset=utf-8
 #### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "ignored",
   "truncated": false,
   "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 
@@ -126,21 +131,19 @@ HTTP/1.1 200 OK
 }
 ```
 
-
 ## Get command payload
 
 Get a response payload for a specific action on a device. The response payload is used when querying an app service to carry data back.
-
 
 ### Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Device.Command    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Device.Command                              |
+| Application                            | Not supported.                              |
 
 ### HTTP request
 
@@ -152,17 +155,19 @@ GET me/devices/{id}/command/{id}/responsePayload
 
 ### Request headers
 
-| Header |Value
-|:----|:------|
-|Authorization| Bearer {token}. Required. |
-|Accept | application/json |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Accept        | application/json          |
 
 ### Response
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 200 OK
 ```
+
 <!-- { "blockType": "ignored" } -->
 
 ```json
@@ -186,6 +191,7 @@ The following example shows the request.
   "blockType": "ignored",
   "name": "get_command_payload"
 } -->
+
 ```http
 GET me/devices/{id}/commands/{id}
 Authorization: Bearer Eaeou....
@@ -202,6 +208,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 
@@ -212,5 +219,3 @@ HTTP/1.1 200 OK
   "Type":"Ok"
 }
 ```
-
-

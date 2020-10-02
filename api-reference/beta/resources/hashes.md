@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The hashes resource groups available hashes into a single structure for an item."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # hashes resource type
 
 Namespace: microsoft.graph
@@ -20,11 +21,11 @@ Groups available hashes into a single structure for an item.
 
 ## Properties
 
-| Property         | Type   | Description                                                       |
-|:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
-| **sha256Hash**   | String | SHA256 hash for the contents of the file (if available). Read-only. |
-| **crc32Hash**    | String | The CRC32 value of the file (if available). Read-only.            |
+| Property         | Type   | Description                                                                                                                      |
+| :--------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------- |
+| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only.                                                                |
+| **sha256Hash**   | String | SHA256 hash for the contents of the file (if available). Read-only.                                                              |
+| **crc32Hash**    | String | The CRC32 value of the file (if available). Read-only.                                                                           |
 | **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
 
 > **Note:** In cases where the hash values are not available, the hash values on an item will be updated after the item is downloaded.
@@ -53,7 +54,6 @@ Here is a JSON representation of the resource.
 - For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 - To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -64,5 +64,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "cloudAppSecuritySessionControl resource type"
 description: "Session control used to enforce cloud app security checks."
 localization_priority: Normal
@@ -15,10 +15,10 @@ Session control used to enforce cloud app security checks. Inehrits from [Condit
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Specifies whether the session control is enabled. |
-|cloudAppSecurityType|String| Possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. For more information, see [Deploy Conditional Access App Control for featured apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad). |
+| Property             | Type    | Description                                                                                                                                                                                                                                            |
+| :------------------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| isEnabled            | Boolean | Specifies whether the session control is enabled.                                                                                                                                                                                                      |
+| cloudAppSecurityType | String  | Possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. For more information, see [Deploy Conditional Access App Control for featured apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad). |
 
 ## Relationships
 
@@ -46,6 +46,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "cloudAppSecuritySessionControl resource",
@@ -53,4 +54,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

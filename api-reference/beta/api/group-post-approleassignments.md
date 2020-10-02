@@ -1,4 +1,4 @@
----
+﻿---
 title: "Grant an appRoleAssignment to a group"
 description: "Grant an app role assignment to a group."
 localization_priority: Priority
@@ -25,15 +25,16 @@ Additional licenses might be required to [use a group to manage access to applic
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                 |
+| :------------------------------------- | :---------------------------------------------------------- |
+| Delegated (work or school account)     | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                              |
+| Application                            | AppRoleAssignment.ReadWrite.All                             |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/appRoleAssignments
 ```
@@ -43,10 +44,10 @@ POST /groups/{id}/appRoleAssignments
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -62,8 +63,8 @@ If successful, this method returns a `201 Created` response code and an [appRole
 
 Here is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_create_approleassignment"
@@ -80,20 +81,23 @@ Content-Length: 110
   "appRoleId": "appRoleId-value"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-create-approleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned group.
 
@@ -127,6 +131,7 @@ Content-length: 253
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -138,5 +143,3 @@ Content-length: 253
   ]
 }
 -->
-
-

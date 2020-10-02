@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerWiFiSecurityType enum type"
 description: "Wi-Fi Security Types for Android Device Owner."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Wi-Fi Security Types for Android Device Owner.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|open|0|Open (No Authentication).|
-|wep|1|WEP Encryption.|
-|wpaPersonal|2|WPA-Personal/WPA2-Personal.|
-|wpaEnterprise|4|WPA-Enterprise/WPA2-Enterprise. Must use AndroidDeviceOwnerEnterpriseWifiConfiguration type to configure enterprise options.|
 
-
-
-
-
-
+| Member        | Value | Description                                                                                                                  |
+| :------------ | :---- | :--------------------------------------------------------------------------------------------------------------------------- |
+| open          | 0     | Open (No Authentication).                                                                                                    |
+| wep           | 1     | WEP Encryption.                                                                                                              |
+| wpaPersonal   | 2     | WPA-Personal/WPA2-Personal.                                                                                                  |
+| wpaEnterprise | 4     | WPA-Enterprise/WPA2-Enterprise. Must use AndroidDeviceOwnerEnterpriseWifiConfiguration type to configure enterprise options. |

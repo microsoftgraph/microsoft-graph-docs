@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get userAccountInformation"
 description: "Retrieve the properties and relationships of userAccountInformation object."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Retrieve the properties and relationships of an [userAccountInformation](../reso
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
+| :------------------------------------- | :------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
@@ -40,8 +40,8 @@ This method supports the `$select` query parameter. Specify a list of properties
 
 ## Request headers
 
-| Name          |Description                |
-|:--------------|:--------------------------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -57,6 +57,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_useraccountinformation"
@@ -111,5 +112,3 @@ Content-type: application/json
   "userPrincipalName": "innocenty.popov@adventureworks.com"
 }
 ```
-
-

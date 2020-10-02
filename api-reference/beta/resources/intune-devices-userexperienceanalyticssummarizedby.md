@@ -1,4 +1,4 @@
----
+﻿---
 title: "userExperienceAnalyticsSummarizedBy enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Not yet documented|
-|model|1|Not yet documented|
-|allRegressions|3|Not yet documented|
-|modelRegression|4|Not yet documented|
-|manufacturerRegression|5|Not yet documented|
-|operatingSystemVersionRegression|6|Not yet documented|
 
-
-
-
-
-
+| Member                           | Value | Description        |
+| :------------------------------- | :---- | :----------------- |
+| none                             | 0     | Not yet documented |
+| model                            | 1     | Not yet documented |
+| allRegressions                   | 3     | Not yet documented |
+| modelRegression                  | 4     | Not yet documented |
+| manufacturerRegression           | 5     | Not yet documented |
+| operatingSystemVersionRegression | 6     | Not yet documented |

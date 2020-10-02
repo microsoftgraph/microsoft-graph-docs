@@ -1,4 +1,4 @@
----
+﻿---
 title: "plannerExternalReferences resource type"
 description: "The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the task details object. The value in the property-value pair is the externalReference object."
 localization_priority: Normal
@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [externalReference](plannerexternalreference.md) object.
 
-
 ## Properties
+
 Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.
 
 ## JSON representation
@@ -27,7 +27,6 @@ Here is a JSON representation of the resource
   "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerExternalReferences"
 }-->
-
 
 ```json
 {
@@ -65,6 +64,7 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "plannerExternalReferences resource",
@@ -72,4 +72,3 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
-

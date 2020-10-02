@@ -1,4 +1,4 @@
----
+﻿---
 title: "configurationUsage enum type"
 description: "Possible values of the ConfigurationUsage list."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values of the ConfigurationUsage list.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|blocked|0|Disallowed.|
-|required|1|Required.|
-|allowed|2|Optional.|
-|notConfigured|3|Not Configured.|
 
-
-
-
-
-
+| Member        | Value | Description     |
+| :------------ | :---- | :-------------- |
+| blocked       | 0     | Disallowed.     |
+| required      | 1     | Required.       |
+| allowed       | 2     | Optional.       |
+| notConfigured | 3     | Not Configured. |

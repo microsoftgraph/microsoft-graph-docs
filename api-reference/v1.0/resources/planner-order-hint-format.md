@@ -1,4 +1,4 @@
----
+﻿---
 title: "Using order hints in Planner"
 description: "`)"
 author: "TarkanSevilmis"
@@ -18,7 +18,7 @@ As an example, an item with order hint `a` (ordinal value 97) would be placed be
 The values for all order hints are calculated by the service. The client can reorder items by specifying the order hint for the item that got moved between two items with by setting the order hint to the following value: `<previous order hint> <next order hint>!`, where `<previous order hint>` is to be replaced by the order hint of the item that comes before the new desired location, and `<next order hint>` is to be replaced by the order hint of the item that comes after the new desired location. There is a space character between these order hint values, and the entire value is suffixed with `!`. If either item isn't present, empty string should be used instead. This value can also be composed of previous calculations, and can be used in the client to sort items exactly like service returned order hints. Once the client sends these values in an update, the service will calculate a short value that sorts in the desired location.
 
 **Please note** that in the following examples the actual order hint values are surrounded in single quote characters (`'`) for clarity, however these are not part of the data, and must not be sent to the service.
- 
+
 As an example, consider the following list of sorted order hints:
 
 1. Item 1 (Order Hint: `'5637'`)
@@ -71,11 +71,3 @@ Add the third item to bottom:
 1. Item 2 (Order Hint: `'  !!'`)
 2. Item 1 (Order Hint: `' !'`)
 3. Item 3 (Order Hint: `' ! !'`)
-
-
-
-
-
-
-
-

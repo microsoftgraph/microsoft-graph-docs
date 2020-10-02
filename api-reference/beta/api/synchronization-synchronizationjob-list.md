@@ -1,4 +1,4 @@
----
+﻿---
 title: "List synchronization jobs"
 description: "List existing jobs for a given application instance (service principal)."
 localization_priority: Normal
@@ -16,25 +16,28 @@ Namespace: microsoft.graph
 List existing jobs for a given application instance (service principal).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported. |
-|Application                            |Not supported. | 
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Directory.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/
 ```
 
 ## Request headers
 
-| Name           | Type    | Description|
-|:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
 
@@ -47,32 +50,39 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ##### Request
+
 The following is an example of a request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_jobs"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-jobs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-jobs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-jobs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 The following is an example of a response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -83,6 +93,7 @@ The following is an example of a response.
   "@odata.type": "microsoft.graph.synchronizationJob",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -117,6 +128,7 @@ Content-length: 2958
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -128,5 +140,3 @@ Content-length: 2958
   ]
 }
 -->
-
-

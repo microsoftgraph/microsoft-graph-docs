@@ -1,4 +1,4 @@
----
+﻿---
 title: "edgeHomeButtonConfiguration resource type"
 description: "The home button configuration base class used to identify the available options"
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 The home button configuration base class used to identify the available options
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.edgeHomeButtonConfiguration"
 }
 ```
-
-
-
-
-
-

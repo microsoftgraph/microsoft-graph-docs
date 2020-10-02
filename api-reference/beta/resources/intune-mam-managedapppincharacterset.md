@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppPinCharacterSet enum type"
 description: "Character set which is to be used for a user's app PIN"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Character set which is to be used for a user's app PIN
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|numeric|0|Numeric characters|
-|alphanumericAndSymbol|1|Alphanumeric and symbolic characters|
 
-
-
-
-
-
+| Member                | Value | Description                          |
+| :-------------------- | :---- | :----------------------------------- |
+| numeric               | 0     | Numeric characters                   |
+| alphanumericAndSymbol | 1     | Alphanumeric and symbolic characters |

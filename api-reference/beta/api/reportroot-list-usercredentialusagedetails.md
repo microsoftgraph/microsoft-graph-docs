@@ -1,4 +1,4 @@
----
+﻿---
 title: "List userCredentialUsageDetails"
 description: "Get a list of userCredentialUsageDetails objects for a given tenant."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Get a list of [userCredentialUsageDetails](../resources/usercredentialusagedetai
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Reports.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Reports.Read.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Reports.Read.All                            |
 
 ## HTTP request
 
@@ -37,22 +37,21 @@ GET /reports/userCredentialUsageDetails
 
 This function supports the optional OData query parameter **$filter**. You can apply **$filter** on one or more of the following properties of the [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) resource.
 
-| Properties | Description and example |
-|:--------- |:----------- |
-| feature | Filter by type of usage data that you want (registration vs reset). For example: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Supported filter operators: `eq` |
-| userDisplayName | Filter by user display name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
-| userPrincipalName  | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`.	Supported filter  operators: `eq` and `startswith()`. Supports case insensitive. |
-| isSuccess | Filter by status of the activity. For example: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Supported filter operators: `eq` and `orderby`. |
-| authMethod  | Filter by the authentication methods using during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`. Supported filter operators: `eq`. |
-| failureReason | Filter by failure reason (if the activity has failed). For example: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
-
+| Properties        | Description and example                                                                                                                                                                                                       |
+| :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| feature           | Filter by type of usage data that you want (registration vs reset). For example: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Supported filter operators: `eq`                                    |
+| userDisplayName   | Filter by user display name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive.                         |
+| userPrincipalName | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`.	Supported filter  operators: `eq` and `startswith()`. Supports case insensitive.                    |
+| isSuccess         | Filter by status of the activity. For example: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Supported filter operators: `eq` and `orderby`.                                                               |
+| authMethod        | Filter by the authentication methods using during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`. Supported filter operators: `eq`.            |
+| failureReason     | Filter by failure reason (if the activity has failed). For example: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token} |
-| Content-Type | application/json |
+| Name          | Description      |
+| :------------ | :--------------- |
+| Authorization | Bearer {token}   |
+| Content-Type  | application/json |
 
 ## Request body
 
@@ -71,6 +70,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_usercredentialusagedetails"
@@ -79,20 +79,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-usercredentialusagedetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-usercredentialusagedetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-usercredentialusagedetails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -131,6 +134,7 @@ Content-length: 258
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List userCredentialUsageDetails",
@@ -138,5 +142,3 @@ Content-length: 258
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

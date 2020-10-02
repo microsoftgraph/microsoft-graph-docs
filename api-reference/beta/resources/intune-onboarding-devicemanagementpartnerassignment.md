@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementPartnerAssignment resource type"
 description: "User group targeting for Device Management Partner"
 author: "dougeby"
@@ -18,21 +18,26 @@ Namespace: microsoft.graph
 User group targeting for Device Management Partner
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|User groups targeting for devices to be enrolled through partner.|
+
+| Property | Type                                                                                                           | Description                                                       |
+| :------- | :------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------- |
+| target   | [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md) | User groups targeting for devices to be enrolled through partner. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartnerAssignment",
   "target": {
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

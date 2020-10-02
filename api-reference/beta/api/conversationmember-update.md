@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update conversationMember"
 description: "Update the role of a conversationMember in a team or channel."
 author: "clearab"
@@ -24,14 +24,16 @@ or [channel](../resources/channel.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| In teams: TeamMember.ReadWrite.All<br/>In channels: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported|
-|Application| In teams: TeamMember.ReadWrite.All<br/>In channels:  ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission Type                        | Permissions (from least to most privileged)                                                                                    |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | In teams: TeamMember.ReadWrite.All<br/>In channels: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All  |
+| Delegated (personal Microsoft account) | Not supported                                                                                                                  |
+| Application                            | In teams: TeamMember.ReadWrite.All<br/>In channels:  ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored"} -->
+
 ```http
 PATCH /teams/{id}/members/{id}
 PATCH /teams/{id}/channels/{id}/members/{id}
@@ -39,17 +41,17 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
 In the request body, supply the values for the relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|roles|string collection|The roles for that user. Must be "owner" or empty. Guest users must always have role "guest" and cannot change. |
+| Property | Type              | Description                                                                                                     |
+| :------- | :---------------- | :-------------------------------------------------------------------------------------------------------------- |
+| roles    | string collection | The roles for that user. Must be "owner" or empty. Guest users must always have role "guest" and cannot change. |
 
 ## Response
 
@@ -62,10 +64,12 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_conversation_member"
 } -->
+
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
 content-type: application/json
@@ -76,31 +80,36 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-conversation-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-conversation-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-conversation-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -116,5 +125,3 @@ Content-length: 475
   "email": null
 }
 ```
-
-

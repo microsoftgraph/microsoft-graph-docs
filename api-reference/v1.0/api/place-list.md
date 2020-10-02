@@ -1,4 +1,4 @@
----
+﻿---
 title: "List places"
 description: "Retrieve a list of place objects."
 localization_priority: Normal
@@ -10,7 +10,6 @@ doc_type: "apiPageType"
 # List places
 
 Namespace: microsoft.graph
-
 
 Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
 
@@ -30,10 +29,10 @@ Compared with the [findRooms](https://docs.microsoft.com/graph/api/user-findroom
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Place.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application                            | Place.Read.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Place.Read.All                              |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | Place.Read.All                              |
 
 ## HTTP request
 
@@ -60,6 +59,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 >**Note**: To get rooms in a room list, you must specify the room list by its **emailAddress** property, not by its **id**.
 
 ## Optional query parameters
+
 This method supports the following query parameters to help customize the response:
 - `$filter`
 - `$select`
@@ -74,7 +74,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
 
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -93,9 +93,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows how to get all the [room](../resources/room.md) objects in the tenant.
 
-
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_all_rooms"
@@ -104,24 +103,28 @@ The following example shows how to get all the [room](../resources/room.md) obje
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/microsoft.graph.room
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-rooms-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-all-rooms-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-rooms-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -217,8 +220,8 @@ Content-type: application/json
 
 The following example shows how to get all the [roomList](../resources/roomlist.md) objects in the tenant.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_all_roomlists"
@@ -227,24 +230,28 @@ The following example shows how to get all the [roomList](../resources/roomlist.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/microsoft.graph.roomlist
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-roomlists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-all-roomlists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-roomlists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -305,8 +312,8 @@ Content-type: application/json
 
 The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_rooms_in_roomlist"
@@ -315,24 +322,28 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rooms-in-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-rooms-in-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rooms-in-roomlist-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -393,6 +404,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List places",
@@ -403,4 +415,3 @@ Content-type: application/json
     "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->
-

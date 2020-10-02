@@ -1,4 +1,4 @@
----
+﻿---
 title: "authenticationDetail resource type"
 description: "Provides the authentication details for a user sign-in, such as multi-factor authentication (MFA) information and PTA/PHS details."
 localization_priority: Normal
@@ -18,7 +18,7 @@ Provides the authentication details for a user sign-in, such as multi-factor aut
 ## Properties
 
 | Property                       | Type           | Description                                                                                                                                                                                                              |
-|:-------------------------------|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :----------------------------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | authenticationMethod           | String         | The type of authentication method used to perform this step of authentication. Possible values: `Password`, `SMS`, `Voice`, `Authenticator App`, `Software OATH token`, `Satisfied by token`.                            |
 | authenticationMethodDetail     | String         | Details about the authentication method used to perform this authentication step. For example, phone number (for SMS and voice), device name (for Authenticator app), and password source (e.g. cloud, AD FS, PTA, PHS). |
 | authenticationStepDateTime     | DateTimeOffset | Represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.                                           |
@@ -52,6 +52,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "authenticationDetail resource",
@@ -59,4 +60,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

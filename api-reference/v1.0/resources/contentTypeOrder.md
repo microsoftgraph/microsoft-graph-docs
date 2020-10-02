@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 ms.date: 09/13/2017
@@ -18,6 +18,7 @@ The **contentTypeOrder** resource specifies in which order the Content Type will
 ## JSON representation
 
 Here is a JSON representation of a **contentTypeOrder** resource.
+
 <!-- { "blockType": "resource", "@type": "microsoft.graph.contentTypeOrder", "@type.aka": "oneDrive.contentTypeOrderFacet" } -->
 
 ```json
@@ -29,10 +30,10 @@ Here is a JSON representation of a **contentTypeOrder** resource.
 
 ## Properties
 
-| Property name | Type    | Description
-|:--------------|:--------|:----------------------------------------------------
-| **default**   | boolean | Whether this is the default Content Type
-| **position**  | Int32   | Specifies the position in which the Content Type appears in the selection UI.
+| Property name | Type    | Description                                                                   |
+| :------------ | :------ | :---------------------------------------------------------------------------- |
+| **default**   | boolean | Whether this is the default Content Type                                      |
+| **position**  | Int32   | Specifies the position in which the Content Type appears in the selection UI. |
 
 <!-- {
   "type": "#page.annotation",
@@ -41,4 +42,3 @@ Here is a JSON representation of a **contentTypeOrder** resource.
   "section": "documentation",
   "tocPath": "Resources/ContentTypeOrder"
 } -->
-

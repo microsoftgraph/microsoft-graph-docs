@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get member groups"
 description: "Return all the groups that the specified user, group, service principal or directory object is a member of. This function is transitive."
 localization_priority: Normal
@@ -16,14 +16,14 @@ Namespace: microsoft.graph
 Return all the groups that the specified user, group, service principal or directory object is a member of. This function is transitive.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                                                                                      |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                                                                   |
+| Application                            | User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All                                                                                     |
 
 Use the follow scenario guidance to help determine which permission types to use:
 - Use User.Read and GroupMember.Read.All or User.Read and Group.Read.All permissions to get group memberships for the signed-in user.
@@ -33,7 +33,9 @@ Use the follow scenario guidance to help determine which permission types to use
 - Use Directory.Read.All permission to get group memberships for a directory object.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/getMemberGroups
 POST /users/{id | userPrincipalName}/getMemberGroups
@@ -41,18 +43,21 @@ POST /groups/{id}/getMemberGroups
 POST /servicePrincipals/{id}/getMemberGroups
 POST /directoryObjects/{id}/getMemberGroups
 ```
+
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | application/json  |
+
+| Name          | Type             | Description               |
+| :------------ | :--------------- | :------------------------ |
+| Authorization | string           | Bearer {token}. Required. |
+| Content-Type  | application/json |                           |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| **true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**. |
+| Parameter           | Type    | Description                                                                                                                                                                                                                                                                                    |
+| :------------------ | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| securityEnabledOnly | Boolean | **true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**. |
 
 ## Response
 
@@ -62,12 +67,13 @@ If successful, this method returns `200 OK` response code and String collection 
 
 ##### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getmembergroups"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/getMemberGroups
 Content-type: application/json
@@ -76,29 +82,35 @@ Content-type: application/json
   "securityEnabledOnly": true
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "string",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -115,6 +127,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -126,5 +139,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

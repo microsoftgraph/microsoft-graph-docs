@@ -1,4 +1,4 @@
----
+﻿---
 title: "Endpoint resource type"
 description: "Endpoints represent URLs for resources associated with an entity."
 localization_priority: Normal
@@ -15,27 +15,28 @@ Endpoints represent URLs for resources associated with an entity.  For example, 
 
 ## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[List endpoints](../api/group-list-endpoints.md) |[Endpoint](endpoint.md) collection| Get an endpoint object collection. |
-|[Get endpoint](../api/endpoint-get.md) | [Endpoint](endpoint.md) |Read properties and relationships of an endpoint object.|
+| Method                                           | Return Type                        | Description                                              |
+| :----------------------------------------------- | :--------------------------------- | :------------------------------------------------------- |
+| [List endpoints](../api/group-list-endpoints.md) | [Endpoint](endpoint.md) collection | Get an endpoint object collection.                       |
+| [Get endpoint](../api/endpoint-get.md)           | [Endpoint](endpoint.md)            | Read properties and relationships of an endpoint object. |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-| capability     | String  | Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.)  Not nullable. Read-only. |
-| id             | String  | Unique identifier for the endpoint; Key. Not nullable. Read-only.|
-| providerId     | String  | Application id of the publishing underlying service. Not nullable. Read-only.|
-| providerName   | String  | Name of the publishing underlying service. Read-only.|
-| providerResourceId|String| For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.|
-| uri            | String  | URL of the published resource. Not nullable. Read-only.|
+
+| Property           | Type   | Description                                                                                                                      |
+| :----------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------- |
+| capability         | String | Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.)  Not nullable. Read-only.   |
+| id                 | String | Unique identifier for the endpoint; Key. Not nullable. Read-only.                                                                |
+| providerId         | String | Application id of the publishing underlying service. Not nullable. Read-only.                                                    |
+| providerName       | String | Name of the publishing underlying service. Read-only.                                                                            |
+| providerResourceId | String | For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only. |
+| uri                | String | URL of the published resource. Not nullable. Read-only.                                                                          |
 
 ## Relationships
 
 None.
 
-
 ## JSON representation
+
 Here is a JSON representation of the resource.
 
 <!-- {
@@ -60,6 +61,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -72,4 +74,3 @@ Here is a JSON representation of the resource.
     ]
 }
 -->
-

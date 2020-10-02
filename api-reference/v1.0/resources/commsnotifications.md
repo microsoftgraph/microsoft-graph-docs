@@ -1,4 +1,4 @@
----
+﻿---
 title: "commsNotifications resource type"
 description: "List of notifications used by the Communications servers for sending multiple notifications in a single batch."
 author: "ananmishr"
@@ -15,9 +15,9 @@ List of notifications used by the Communications servers for sending multiple no
 
 ## Properties
 
-| Property       | Type                                                 | Description                                   |
-|:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| value          | [commsNotification](commsnotification.md) collection | The notification of a change in the resource. |
+| Property | Type                                                 | Description                                   |
+| :------- | :--------------------------------------------------- | :-------------------------------------------- |
+| value    | [commsNotification](commsnotification.md) collection | The notification of a change in the resource. |
 
 ## JSON representation
 
@@ -30,6 +30,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "value": [ { "@odata.type": "#microsoft.graph.commsNotification" } ]
@@ -38,6 +39,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -48,4 +50,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

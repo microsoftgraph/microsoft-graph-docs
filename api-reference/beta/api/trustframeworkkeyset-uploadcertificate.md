@@ -1,4 +1,4 @@
----
+﻿---
 title: "trustFrameworkKeySet: uploadCertificate"
 description: "Upload a certificate to a keyset."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Upload a certificate to a [trustFrameworkKeyset](../resources/trustframeworkkeys
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | TrustFrameworkKeySet.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All          |
 
 ## HTTP request
 
@@ -35,18 +35,18 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
-|Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|key|String| This is the field for sending certificate content. The value should be a base-64 encoded version of the actual certificate content. |
+| Parameter | Type   | Description                                                                                                                         |
+| :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------- |
+| key       | String | This is the field for sending certificate content. The value should be a base-64 encoded version of the actual certificate content. |
 
 ## Response
 
@@ -59,6 +59,7 @@ If successful, this method returns a `200 OK` response code and a new [trustFram
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "trustframeworkkeyset_uploadcertificate"
@@ -72,20 +73,23 @@ Content-type: application/json
   "key": "key-value"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-uploadcertificate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/trustframeworkkeyset-uploadcertificate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-uploadcertificate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -114,6 +118,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "trustFrameworkKeySet: uploadCertificate",
@@ -121,5 +126,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

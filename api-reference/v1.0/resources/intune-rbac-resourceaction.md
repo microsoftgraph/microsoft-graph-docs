@@ -1,4 +1,4 @@
----
+﻿---
 title: "resourceAction resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,22 +16,27 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedResourceActions|String collection|Allowed Actions|
-|notAllowedResourceActions|String collection|Not Allowed Actions|
+
+| Property                  | Type              | Description         |
+| :------------------------ | :---------------- | :------------------ |
+| allowedResourceActions    | String collection | Allowed Actions     |
+| notAllowedResourceActions | String collection | Not Allowed Actions |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.resourceAction"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.resourceAction",
   "allowedResourceActions": [
@@ -42,12 +47,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

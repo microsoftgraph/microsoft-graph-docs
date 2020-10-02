@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceAndAppManagementAssignmentTarget resource type"
 description: "Base type for assignment targets."
 author: "dougeby"
@@ -16,30 +16,26 @@ Namespace: microsoft.graph
 Base type for assignment targets.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"
 }
 ```
-
-
-
-
-
-
-
-
-

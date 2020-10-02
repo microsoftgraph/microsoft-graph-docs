@@ -1,4 +1,4 @@
----
+﻿---
 title: "vpnProxyServer resource type"
 description: "VPN Proxy Server."
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 VPN Proxy Server.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|automaticConfigurationScriptUrl|String|Proxy's automatic configuration script url.|
-|address|String|Address.|
-|port|Int32|Port. Valid values 0 to 65535|
+
+| Property                        | Type   | Description                                 |
+| :------------------------------ | :----- | :------------------------------------------ |
+| automaticConfigurationScriptUrl | String | Proxy's automatic configuration script url. |
+| address                         | String | Address.                                    |
+| port                            | Int32  | Port. Valid values 0 to 65535               |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vpnProxyServer"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.vpnProxyServer",
   "automaticConfigurationScriptUrl": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "port": 1024
 }
 ```
-
-
-
-
-
-

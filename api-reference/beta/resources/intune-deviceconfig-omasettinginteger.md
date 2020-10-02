@@ -1,4 +1,4 @@
----
+﻿---
 title: "omaSettingInteger resource type"
 description: "OMA Settings Integer definition."
 author: "dougeby"
@@ -17,29 +17,33 @@ Namespace: microsoft.graph
 
 OMA Settings Integer definition.
 
-
 Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|value|Int32|Value.|
-|isReadOnly|Boolean|By setting to true, the CSP (configuration service provider) specified in the OMA-URI will perform a get, instead of set|
+
+| Property    | Type    | Description                                                                                                              |
+| :---------- | :------ | :----------------------------------------------------------------------------------------------------------------------- |
+| displayName | String  | Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)                                |
+| description | String  | Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)                                 |
+| omaUri      | String  | OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)                                         |
+| value       | Int32   | Value.                                                                                                                   |
+| isReadOnly  | Boolean | By setting to true, the CSP (configuration service provider) specified in the OMA-URI will perform a get, instead of set |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingInteger"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.omaSettingInteger",
   "displayName": "String",
@@ -49,9 +53,3 @@ Here is a JSON representation of the resource.
   "isReadOnly": true
 }
 ```
-
-
-
-
-
-

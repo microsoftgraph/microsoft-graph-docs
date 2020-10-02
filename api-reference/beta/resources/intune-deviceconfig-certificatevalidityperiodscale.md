@@ -1,4 +1,4 @@
----
+﻿---
 title: "certificateValidityPeriodScale enum type"
 description: "Certificate Validity Period Options."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Certificate Validity Period Options.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|days|0|Days.|
-|months|1|Months.|
-|years|2|Years.|
 
-
-
-
-
-
+| Member | Value | Description |
+| :----- | :---- | :---------- |
+| days   | 0     | Days.       |
+| months | 1     | Months.     |
+| years  | 2     | Years.      |

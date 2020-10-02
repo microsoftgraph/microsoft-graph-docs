@@ -1,4 +1,4 @@
----
+﻿---
 title: "dateTimeTimeZone resource type"
 description: "Describes the date, time, and time zone of a point in time."
 localization_priority: Normal
@@ -16,10 +16,11 @@ Namespace: microsoft.graph
 Describes the date, time, and time zone of a point in time.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|dateTime|String|A single point of time in a combined date and time representation (`{date}T{time}`). For example, "2019-04-16T09:00:00".|
-|timeZone|String|Represents a time zone, for example, "Pacific Standard Time". See below for possible values.|
+
+| Property | Type   | Description                                                                                                              |
+| :------- | :----- | :----------------------------------------------------------------------------------------------------------------------- |
+| dateTime | String | A single point of time in a combined date and time representation (`{date}T{time}`). For example, "2019-04-16T09:00:00". |
+| timeZone | String | Represents a time zone, for example, "Pacific Standard Time". See below for possible values.                             |
 
 In general, the **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones), as well as the additional [time zones supported by the calendar API](#additional-time-zones).
 
@@ -247,6 +248,7 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -257,5 +259,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

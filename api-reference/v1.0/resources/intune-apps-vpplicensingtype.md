@@ -1,4 +1,4 @@
----
+﻿---
 title: "vppLicensingType resource type"
 description: "Contains properties for iOS Volume-Purchased Program (Vpp) Licensing Type."
 author: "dougeby"
@@ -16,34 +16,30 @@ Namespace: microsoft.graph
 Contains properties for iOS Volume-Purchased Program (Vpp) Licensing Type.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|supportsUserLicensing|Boolean|Whether the program supports the user licensing type.|
-|supportsDeviceLicensing|Boolean|Whether the program supports the device licensing type.|
+
+| Property                | Type    | Description                                             |
+| :---------------------- | :------ | :------------------------------------------------------ |
+| supportsUserLicensing   | Boolean | Whether the program supports the user licensing type.   |
+| supportsDeviceLicensing | Boolean | Whether the program supports the device licensing type. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vppLicensingType"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.vppLicensingType",
   "supportsUserLicensing": true,
   "supportsDeviceLicensing": true
 }
 ```
-
-
-
-
-
-
-
-
-

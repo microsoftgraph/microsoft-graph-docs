@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update openShift"
 description: "Update the properties of an openShift object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Update the properties of an [openShift](../resources/openshift.md) object.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -35,20 +35,20 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
 Provide the modified [openshift](../resources/openshift.md) object in the request body for this method.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|draftOpenShift|openShiftItem|An unpublished open shift.|
-|schedulingGroupId|String| Scheduling group id. |
-|sharedOpenShift|openShiftItem|A published open shift.|
+| Property          | Type          | Description                |
+| :---------------- | :------------ | :------------------------- |
+| draftOpenShift    | openShiftItem | An unpublished open shift. |
+| schedulingGroupId | String        | Scheduling group id.       |
+| sharedOpenShift   | openShiftItem | A published open shift.    |
 
 ## Response
 
@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [open
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_openshift"
@@ -92,20 +93,23 @@ Content-type: application/json
 "draftOpenShift": null
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-openshift-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-openshift-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-openshift-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -160,6 +164,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update openshift",
@@ -167,5 +172,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -35,6 +35,7 @@ If a user deletes one, it is recreated when written to again.
   ],
   "@odata.type": "microsoft.graph.specialFolder"
 }-->
+
 ```json
 {
   "name": "string"
@@ -43,16 +44,16 @@ If a user deletes one, it is recreated when written to again.
 
 ## Properties
 
-| Property  | Type   | Description                                                            |
-|:----------|:-------|:-----------------------------------------------------------------------|
-| name      | string | The unique identifier for this item in the `/drive/special` collection |
+| Property | Type   | Description                                                            |
+| :------- | :----- | :--------------------------------------------------------------------- |
+| name     | string | The unique identifier for this item in the `/drive/special` collection |
 
 ## Special folders
 
 Here are the special folders available in OneDrive Personal and OneDrive for Business.
 
 | Name        | Folder id    | Description                                                              |
-|:------------|:-------------|:-------------------------------------------------------------------------|
+| :---------- | :----------- | :----------------------------------------------------------------------- |
 | App Root    | `approot`    | The application's personal folder. Usually in `/Apps/{Application Name}` |
 | Camera Roll | `cameraroll` | The Camera Roll Backup folder. Not available in OneDrive for Business.   |
 | Documents   | `documents`  | The Documents folder.                                                    |
@@ -70,4 +71,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/SpecialFolder"
 } -->
-

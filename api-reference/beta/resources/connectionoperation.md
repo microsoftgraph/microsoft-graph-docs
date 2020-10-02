@@ -1,4 +1,4 @@
----
+﻿---
 title: "connectionOperation resource type"
 description: "Describes status of an asynchronous request to create a Microsoft Search connection schema."
 localization_priority: Normal
@@ -19,16 +19,16 @@ Describes status of an asynchronous request to create a Microsoft Search connect
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                                       | Return Type                                   | Description                                      |
+| :----------------------------------------------------------- | :-------------------------------------------- | :----------------------------------------------- |
 | [Get connectionOperation](../api/connectionoperation-get.md) | [connectionOperation](connectionoperation.md) | Read properties of a connectionOperation object. |
 
 ## Properties
 
-| Property | Type                          | Description                       |
-|:---------|:------------------------------|:----------------------------------|
-| error    | [errorDetail](errordetail.md) | If `status` is `failed`, provides more information about the error that caused the failure. |
-| id       | String                        | Unique identifier for the connectionOperation. Read-only. |
+| Property | Type                          | Description                                                                                                                  |
+| :------- | :---------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| error    | [errorDetail](errordetail.md) | If `status` is `failed`, provides more information about the error that caused the failure.                                  |
+| id       | String                        | Unique identifier for the connectionOperation. Read-only.                                                                    |
 | status   | string                        | Indicates the status of the asynchronous operation. Possible values are: `unspecified`, `inprogress`, `completed`, `failed`. |
 
 ## Relationships
@@ -59,6 +59,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "connectionOperation resource",
@@ -66,5 +67,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

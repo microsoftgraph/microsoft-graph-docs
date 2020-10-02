@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsVpnConnectionType enum type"
 description: "Windows VPN connection type."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Windows VPN connection type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|pulseSecure|0|Pulse Secure.|
-|f5EdgeClient|1|F5 Edge Client.|
-|dellSonicWallMobileConnect|2|Dell SonicWALL Mobile Connection.|
-|checkPointCapsuleVpn|3|Check Point Capsule VPN.|
 
-
-
-
-
-
+| Member                     | Value | Description                       |
+| :------------------------- | :---- | :-------------------------------- |
+| pulseSecure                | 0     | Pulse Secure.                     |
+| f5EdgeClient               | 1     | F5 Edge Client.                   |
+| dellSonicWallMobileConnect | 2     | Dell SonicWALL Mobile Connection. |
+| checkPointCapsuleVpn       | 3     | Check Point Capsule VPN.          |

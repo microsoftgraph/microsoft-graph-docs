@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskAppBase resource type"
 description: "The base class for a type of apps"
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 The base class for a type of apps
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|The app tile size for the start layout. Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|String|Represents the friendly name of an app|
-|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|The app type. Possible values are: `unknown`, `store`, `desktop`, `aumId`.|
-|autoLaunch|Boolean|Allow the app to be auto-launched in multi-app kiosk mode|
+
+| Property            | Type                                                                                               | Description                                                                                                |
+| :------------------ | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| startLayoutTileSize | [windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md) | The app tile size for the start layout. Possible values are: `hidden`, `small`, `medium`, `wide`, `large`. |
+| name                | String                                                                                             | Represents the friendly name of an app                                                                     |
+| appType             | [windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)                     | The app type. Possible values are: `unknown`, `store`, `desktop`, `aumId`.                                 |
+| autoLaunch          | Boolean                                                                                            | Allow the app to be auto-launched in multi-app kiosk mode                                                  |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskAppBase"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskAppBase",
   "startLayoutTileSize": "String",
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   "autoLaunch": true
 }
 ```
-
-
-
-
-
-

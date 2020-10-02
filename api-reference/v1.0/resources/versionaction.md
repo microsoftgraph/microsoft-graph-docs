@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: versionAction resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # versionAction resource type
 
 Namespace: microsoft.graph
@@ -19,9 +20,9 @@ The presence of the **versionAction** resource on an [**itemActivity**][activity
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| newVersion    | string | The name of the new version that was created by this action.
+| Property name | Type   | Description                                                  |
+| :------------ | :----- | :----------------------------------------------------------- |
+| newVersion    | string | The name of the new version that was created by this action. |
 
 ## JSON representation
 
@@ -47,4 +48,3 @@ The presence of the **versionAction** resource on an [**itemActivity**][activity
   "suppressions": []
 }
 -->
-

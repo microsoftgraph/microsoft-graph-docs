@@ -1,4 +1,4 @@
----
+﻿---
 title: "perfectForwardSecrecyGroup enum type"
 description: "Forward Secrecy Group values for Windows10 VPN policies with IKEv2 connection type."
 author: "dougeby"
@@ -18,18 +18,13 @@ Namespace: microsoft.graph
 Forward Secrecy Group values for Windows10 VPN policies with IKEv2 connection type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|pfs1|0|PFS1|
-|pfs2|1|PFS2|
-|pfs2048|2|PFS2048|
-|ecp256|3|ECP256|
-|ecp384|4|ECP384|
-|pfsMM|5|PFSMM|
-|pfs24|6|PFS24|
 
-
-
-
-
-
+| Member  | Value | Description |
+| :------ | :---- | :---------- |
+| pfs1    | 0     | PFS1        |
+| pfs2    | 1     | PFS2        |
+| pfs2048 | 2     | PFS2048     |
+| ecp256  | 3     | ECP256      |
+| ecp384  | 4     | ECP384      |
+| pfsMM   | 5     | PFSMM       |
+| pfs24   | 6     | PFS24       |

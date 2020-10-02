@@ -1,4 +1,4 @@
----
+﻿---
 title: "List appRoleAssignments granted to a service principal"
 description: "Retrieve the list of app role assignments granted to a service principal."
 localization_priority: Priority
@@ -23,15 +23,16 @@ App roles that are assigned to service principals are also known as [application
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                              |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                           |
+| Application                            | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /servicePrincipals/{id}/appRoleAssignments
 ```
@@ -42,9 +43,9 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request headers
 
-| Name           | Description                |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -60,8 +61,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request to retrieve the app roles that have been assigned to a service principal.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_get_approleassignments"
@@ -70,20 +71,23 @@ The following is an example of a request to retrieve the app roles that have bee
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-approleassignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-get-approleassignments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-get-approleassignments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -119,6 +123,7 @@ Content-length: 306
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",

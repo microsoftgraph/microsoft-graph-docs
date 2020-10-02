@@ -1,4 +1,4 @@
----
+﻿---
 title: "Outlook extended properties overview"
 description: "Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access "
 localization_priority: Normal
@@ -54,7 +54,6 @@ a single-value extended property to get all the instances that have that propert
 
 **Note** You cannot use the REST API to get all the extended properties of a specific instance in one call.
 
-
 ### id formats
 
 You can specify **id** of an extended property in one of three formats:
@@ -67,20 +66,19 @@ The next 2 tables describe these formats as applied to single and multi-value ex
 
 **Valid id formats for single-value extended properties**
 
-|**Format**|**Example**|**Description**|
-|:---------|:----------|:--------------|
-| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a string name.         |
-| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and a numeric identifier.  |
-| "{_type_} {_proptag_}"                    | ```"String 0x4001001E"```                                           | Identifies a pre-defined property by its property tag. |
+| **Format**                            | **Example**                                                             | **Description**                                                                            |
+| :------------------------------------ | :---------------------------------------------------------------------- | :----------------------------------------------------------------------------------------- |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) it belongs to, and a string name.        |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifies a property by the namespace (the GUID) it belongs to, and a numeric identifier. |
+| "{_type_} {_proptag_}"                | ```"String 0x4001001E"```                                               | Identifies a pre-defined property by its property tag.                                     |
 
 **Valid id formats for multi-value extended properties**
 
-|**Format**|**Example**|**Description**|
-|:---------|:----------|:--------------|
-| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) and a string name.         |
-| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by the namespace (the GUID) and a numeric identifier.   |
-| "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | Identifies a pre-defined property by its property tag. |
-
+| **Format**                            | **Example**                                                                  | **Description**                                                             |
+| :------------------------------------ | :--------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifies a property by the namespace (the GUID) and a string name.        |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifies a property by the namespace (the GUID) and a numeric identifier. |
+| "{_type_} {_proptag_}"                | ```"StringArray 0x4002101E"```                                               | Identifies a pre-defined property by its property tag.                      |
 
 Use either of the named property formats to define a single-value or multi-value extended property as a custom property. Among the two formats, the first one that takes a string name (**Name**) is the preferred format for ease of reference. Named properties have their [property identifiers](/office/client-developer/outlook/mapi/mapi-property-identifier-overview) in the 0x8000-0xfffe range.
 
@@ -102,6 +100,3 @@ Multi-value extended property operations:
 
 - [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty-get.md)
-
-
-

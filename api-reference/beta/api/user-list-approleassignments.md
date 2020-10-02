@@ -1,4 +1,4 @@
----
+﻿---
 title: "List appRoleAssignments granted to a user"
 description: "Retrieve the list of app role assignments granted to a user."
 localization_priority: Priority
@@ -19,15 +19,16 @@ Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                              |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                           |
+| Application                            | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /users/{id | userPrincipalName}/appRoleAssignments
 ```
@@ -38,9 +39,9 @@ This method supports the [OData query parameters](/graph/query_parameters) to he
 
 ## Request headers
 
-| Name           | Description                |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -56,8 +57,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 Here is an example of the request to retrieve the app roles that have been assigned to a user.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_get_approleassignments"
@@ -66,20 +67,23 @@ Here is an example of the request to retrieve the app roles that have been assig
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/appRoleAssignments
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-approleassignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-approleassignments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/user-get-approleassignments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -115,6 +119,7 @@ Content-length: 306
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -126,5 +131,3 @@ Content-length: 306
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "iPv4Range resource type"
 description: "IPv4 Range definition."
 author: "dougeby"
@@ -17,35 +17,33 @@ Namespace: microsoft.graph
 
 IPv4 Range definition.
 
-
 Inherits from [ipRange](../resources/intune-shared-iprange.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|lowerAddress|String|Lower address.|
-|upperAddress|String|Upper address.|
+
+| Property     | Type   | Description    |
+| :----------- | :----- | :------------- |
+| lowerAddress | String | Lower address. |
+| upperAddress | String | Upper address. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iPv4Range"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iPv4Range",
   "lowerAddress": "String",
   "upperAddress": "String"
 }
 ```
-
-
-
-
-
-

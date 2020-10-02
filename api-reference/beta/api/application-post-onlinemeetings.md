@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create onlineMeeting"
 description: "Create an online meeting on behalf of a user specified in the request body."
 author: "ananmishr"
@@ -18,12 +18,13 @@ Create an online meeting on behalf of a user by using the object ID (OID) in the
 > **Note**: The meeting does not show up on the user's calendar.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)           |
-| :------------------------------------- | :---------------------------------------------------- |
-| Delegated (work or school account)     | OnlineMeetings.ReadWrite                              |
-| Delegated (personal Microsoft account) | Not supported.                                        |
+| Permission type                        | Permissions (from least to most privileged)            |
+| :------------------------------------- | :----------------------------------------------------- |
+| Delegated (work or school account)     | OnlineMeetings.ReadWrite                               |
+| Delegated (personal Microsoft account) | Not supported.                                         |
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
@@ -32,13 +33,17 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 Request when using a delegated token:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/onlineMeetings
 ```
 
 Request when using an application token:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /users/{userId}/onlineMeetings
 ```
@@ -56,9 +61,11 @@ POST /users/{userId}/onlineMeetings
 If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
 
 ## Request body
+
 In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
 ## Examples
@@ -68,10 +75,12 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create-onlinemeeting-user-token"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
 Content-Type: application/json
@@ -82,22 +91,26 @@ Content-Type: application/json
   "subject":"User Token Meeting"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-user-token-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-user-token-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-user-token-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 >**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
@@ -144,6 +157,7 @@ Content-Type: application/json
   "subject": "User Token Meeting"
 }
 ```
+
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
 
 ```json
@@ -153,10 +167,10 @@ Content-Type: application/json
     }  
 ```
 
-
 ### Example 2: Create an online meeting in a Microsoft Teams channel with a user token
 
 #### Request
+
 >**Note:** The Object ID of the user token passed should be a member of the channel represented by threadid in the payload.
 
 ```http
@@ -172,6 +186,7 @@ Content-Type: application/json
   }
 }
 ```
+
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -222,6 +237,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -233,5 +249,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

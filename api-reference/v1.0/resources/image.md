@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -21,6 +21,7 @@ If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item repr
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
+
 ```json
 {
   "width": 100,
@@ -30,8 +31,8 @@ If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item repr
 
 ## Properties
 
-| Property   | Type  | Description                                |
-|:-----------|:------|:-------------------------------------------|
+| Property   | Type  | Description                                          |
+| :--------- | :---- | :--------------------------------------------------- |
 | **height** | Int32 | Optional. Height of the image, in pixels. Read-only. |
 | **width**  | Int32 | Optional. Width of the image, in pixels. Read-only.  |
 
@@ -41,7 +42,6 @@ In OneDrive for Business, this resource is returned on items that are expected t
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-
 <!-- {
   "type": "#page.annotation",
   "description": "The image facet describes properties of an image like width and height",
@@ -49,4 +49,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Image"
 } -->
-

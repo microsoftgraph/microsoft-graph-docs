@@ -1,4 +1,4 @@
----
+﻿---
 title: "comanagementEligibleDevicesSummary resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,25 +18,30 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|comanagedCount|Int32|Count of devices already Co-Managed|
-|eligibleCount|Int32|Count of devices fully eligible for Co-Management|
-|eligibleButNotAzureAdJoinedCount|Int32|Count of devices eligible for Co-Management but not yet joined to Azure Active Directory|
-|needsOsUpdateCount|Int32|Count of devices that will be eligible for Co-Management after an OS update|
-|ineligibleCount|Int32|Count of devices ineligible for Co-Management|
+
+| Property                         | Type  | Description                                                                              |
+| :------------------------------- | :---- | :--------------------------------------------------------------------------------------- |
+| comanagedCount                   | Int32 | Count of devices already Co-Managed                                                      |
+| eligibleCount                    | Int32 | Count of devices fully eligible for Co-Management                                        |
+| eligibleButNotAzureAdJoinedCount | Int32 | Count of devices eligible for Co-Management but not yet joined to Azure Active Directory |
+| needsOsUpdateCount               | Int32 | Count of devices that will be eligible for Co-Management after an OS update              |
+| ineligibleCount                  | Int32 | Count of devices ineligible for Co-Management                                            |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.comanagementEligibleDevicesSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.comanagementEligibleDevicesSummary",
   "comanagedCount": 1024,
@@ -46,9 +51,3 @@ Here is a JSON representation of the resource.
   "ineligibleCount": 1024
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "win32LobAppInstallExperience resource type"
 description: "Contains installation experience properties for a Win32 App"
 author: "dougeby"
@@ -16,28 +16,28 @@ Namespace: microsoft.graph
 Contains installation experience properties for a Win32 App
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Device restart behavior. Possible values are: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
+
+| Property              | Type                                                                                 | Description                                                                                      |
+| :-------------------- | :----------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
+| deviceRestartBehavior | [win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md) | Device restart behavior. Possible values are: `basedOnReturnCode`, `allow`, `suppress`, `force`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppInstallExperience"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.win32LobAppInstallExperience",
   "deviceRestartBehavior": "String"
 }
 ```
-
-
-
-
-

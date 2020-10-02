@@ -1,4 +1,4 @@
----
+﻿---
 title: "List provisioningObjectSummary"
 description: "Get all provisioning events that occurred in your tenant."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Get all provisioning events that occurred in your tenant, such as the deletion o
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
-|Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | AuditLog.Read.All and Directory.Read.All    |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | AuditLog.Read.All                           |
 
 ## HTTP request
 
@@ -37,43 +37,43 @@ GET /auditLogs/provisioning
 
 This method supports the following OData query parameters to help customize the response. Note that the filters are all case sensitive except for status. 
 
-|Name     |Description                            |Example|
-|:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
-|[$top](/graph/query-parameters#top-parameter)|Sets the page size of results.|`/auditLogs/provisioning?$top=20`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages. You must pass the top filter in the query to generate the token. You cannot specify the number of results to be skipped.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
+| Name                                                      | Description                                                                                                                                                                                            | Example                                                                                                        |
+| :-------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| [$filter](/graph/query-parameters#filter-parameter)       | Filters results (rows).                                                                                                                                                                                | /`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`                                 |
+| [$top](/graph/query-parameters#top-parameter)             | Sets the page size of results.                                                                                                                                                                         | `/auditLogs/provisioning?$top=20`                                                                              |
+| [$skiptoken](/graph/query-parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. You must pass the top filter in the query to generate the token. You cannot specify the number of results to be skipped. | `/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"` |
 
 For general information, see [OData query parameters](/graph/query_parameters).
 
 ### Attributes supported by the $filter parameter
 
-|Attribute name |Supported operators|
-|:----------------|:------|
-|id| eq, contains|
-|activityDateTime| eq|
-|tenantid|eq, contains|
-|jobid|eq, contains|
-|changeid|eq, contains|
-|cycleid|eq, contains|
-|action|eq, contains|
-|statusInfo/status|eq, contains|
-|sourceSystem/displayName|eq, contains|
-|targetSystem/displayName|eq, contains|
-|sourceIdentity/identityType|eq, contains|
-|targetIdentity/identityType|eq, contains|
-|sourceIdentity/id|eq, contains|
-|servicePrincipal/id|eq|
-|servicePrincipal/name|eq|
-|targetIdentity/id|eq, contains|
-|sourceIdentity/displayName|eq, contains|
-|targetIdentity/displayName|eq, contains|
-|initiatedBy/displayName|eq, contains|
+| Attribute name              | Supported operators |
+| :-------------------------- | :------------------ |
+| id                          | eq, contains        |
+| activityDateTime            | eq                  |
+| tenantid                    | eq, contains        |
+| jobid                       | eq, contains        |
+| changeid                    | eq, contains        |
+| cycleid                     | eq, contains        |
+| action                      | eq, contains        |
+| statusInfo/status           | eq, contains        |
+| sourceSystem/displayName    | eq, contains        |
+| targetSystem/displayName    | eq, contains        |
+| sourceIdentity/identityType | eq, contains        |
+| targetIdentity/identityType | eq, contains        |
+| sourceIdentity/id           | eq, contains        |
+| servicePrincipal/id         | eq                  |
+| servicePrincipal/name       | eq                  |
+| targetIdentity/id           | eq, contains        |
+| sourceIdentity/displayName  | eq, contains        |
+| targetIdentity/displayName  | eq, contains        |
+| initiatedBy/displayName     | eq, contains        |
 
 ## Request headers
 
-| Header        | Value                      |
-|:--------------|:---------------------------|
-| Authorization | Bearer {token} (required)  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token} (required) |
 
 ## Request body
 
@@ -87,11 +87,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Successful request
 
+
+
 ### Request
 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary"
@@ -100,20 +103,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -233,13 +239,17 @@ Content-type: application/json
 }
 
 ```
+
 ### Example 2: Error reponse
+
+
 
 ### Request
 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary_error"
@@ -248,20 +258,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-error-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-error-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-error-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -398,8 +411,10 @@ Content-type: application/json
 }
 
 ```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get provisioningObjectSummary",
@@ -407,5 +422,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "tiIndicator: deleteTiIndicatorsByExternalId"
 description: "Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, and the request contains external IDs instead of IDs."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Delete multiple threat intelligence (TI) indicators in one request instead of mu
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type  | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ThreatIndicators.ReadWrite.OwnedBy          |
 
 ## HTTP request
 
@@ -36,16 +36,16 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 ## Request headers
 
 | Name          | Description   |
-|:--------------|:--------------|
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|value|String collection| Collection of `externalIds` of the **tiIndicator** objects to be deleted. |
+| Parameter | Type              | Description                                                               |
+| :-------- | :---------------- | :------------------------------------------------------------------------ |
+| value     | String collection | Collection of `externalIds` of the **tiIndicator** objects to be deleted. |
 
 ## Response
 
@@ -60,6 +60,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "tiindicator_deletetiindicatorsbyexternalid",
@@ -77,20 +78,23 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/tiindicator-deletetiindicatorsbyexternalid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/tiindicator-deletetiindicatorsbyexternalid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/tiindicator-deletetiindicatorsbyexternalid-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -123,6 +127,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "tiIndicator: deleteTiIndicatorsByExternalId",
@@ -132,5 +137,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

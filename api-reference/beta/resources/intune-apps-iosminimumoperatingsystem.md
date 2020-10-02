@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosMinimumOperatingSystem resource type"
 description: "Contains properties of the minimum operating system required for an iOS mobile app."
 author: "dougeby"
@@ -18,26 +18,31 @@ Namespace: microsoft.graph
 Contains properties of the minimum operating system required for an iOS mobile app.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|v8_0|Boolean|Version 8.0 or later.|
-|v9_0|Boolean|Version 9.0 or later.|
-|v10_0|Boolean|Version 10.0 or later.|
-|v11_0|Boolean|Version 11.0 or later.|
-|v12_0|Boolean|Version 12.0 or later.|
-|v13_0|Boolean|Version 13.0 or later.|
+
+| Property | Type    | Description            |
+| :------- | :------ | :--------------------- |
+| v8_0     | Boolean | Version 8.0 or later.  |
+| v9_0     | Boolean | Version 9.0 or later.  |
+| v10_0    | Boolean | Version 10.0 or later. |
+| v11_0    | Boolean | Version 11.0 or later. |
+| v12_0    | Boolean | Version 12.0 or later. |
+| v13_0    | Boolean | Version 13.0 or later. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosMinimumOperatingSystem"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosMinimumOperatingSystem",
   "v8_0": true,
@@ -48,9 +53,3 @@ Here is a JSON representation of the resource.
   "v13_0": true
 }
 ```
-
-
-
-
-
-

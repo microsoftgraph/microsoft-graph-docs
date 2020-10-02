@@ -1,4 +1,4 @@
----
+﻿---
 title: "settings resource type"
 description: "The current required settings for a user to use the analytics API."
 localization_priority: Normal
@@ -19,17 +19,17 @@ For the analytics API to return results for users, they must have a cloud-hosted
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-[Get settings](../api/useranalytics-get-settings.md) | [settings](settings.md) | Get the following property settings for a user.|
+| Method                                               | Return Type             | Description                                     |
+| :--------------------------------------------------- | :---------------------- | :---------------------------------------------- |
+| [Get settings](../api/useranalytics-get-settings.md) | [settings](settings.md) | Get the following property settings for a user. |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|hasGraphMailbox|Boolean|Specifies if the user's primary mailbox is hosted in the cloud and is enabled for Microsoft Graph.|
-|hasLicense|Boolean|Specifies if the user has a MyAnalytics license assigned.|
-|hasOptedOut|Boolean|Specifies if the user opted out of MyAnalytics.|
+| Property        | Type    | Description                                                                                        |
+| :-------------- | :------ | :------------------------------------------------------------------------------------------------- |
+| hasGraphMailbox | Boolean | Specifies if the user's primary mailbox is hosted in the cloud and is enabled for Microsoft Graph. |
+| hasLicense      | Boolean | Specifies if the user has a MyAnalytics license assigned.                                          |
+| hasOptedOut     | Boolean | Specifies if the user opted out of MyAnalytics.                                                    |
 
 ## JSON representation
 
@@ -54,6 +54,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "settings resource",
@@ -61,4 +62,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

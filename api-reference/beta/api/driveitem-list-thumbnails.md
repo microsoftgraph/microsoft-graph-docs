@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Retrieve a collection of ThumbnailSet resources for a DriveItem resource."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # List thumbnails for a DriveItem
 
 Namespace: microsoft.graph
@@ -30,16 +31,15 @@ Here are the most common ones:
 * Upload a custom thumbnail for an item
 * Determine if a custom uploaded thumbnail exists
 
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                           |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All                                      |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## HTTP request
 
@@ -68,34 +68,36 @@ If successful, this method returns a `200 OK` response code and collection of [T
 
 Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-item-thumbnails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-item-thumbnails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-item-thumbnails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 This returns an array of available **thumbnailSets** for the item. 
 Any item in a drive can have zero or more thumbnails.
 
 **Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.
 For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.
-
 
 ### Response
 
@@ -123,34 +125,37 @@ Retrieve the metadata for a single thumbnail and size by addressing it directly 
 
 ### HTTP request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-one-thumbnail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-one-thumbnail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-one-thumbnail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Path parameters
 
-| Name         | Type   | Description                                                                              |
-|:-------------|:-------|:-----------------------------------------------------------------------------------------|
-| **item-id**  | string | The unique identifier for the item referenced.                                           |
-| **thumb-id** | number | The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0. |
+| Name         | Type   | Description                                                                                               |
+| :----------- | :----- | :-------------------------------------------------------------------------------------------------------- |
+| **item-id**  | string | The unique identifier for the item referenced.                                                            |
+| **thumb-id** | number | The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0.                  |
 | **size**     | string | The size of the thumbnail requested. This can be one of the standard sizes listed below or a custom size. |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
@@ -172,27 +177,30 @@ You can directly retrieve the content of the thumbnail by requesting the **conte
 
 ### HTTP request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -207,7 +215,6 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 Thumbnail URLs are cache-safe. The URL will change, if the item changes in a way that requires a new thumbnail to be generated.
 
-
 ## Getting thumbnails while listing DriveItems
 
 If you are retrieving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.
@@ -215,27 +222,30 @@ This enables your app to retrieve thumbnails and items in a single request, inst
 
 ### HTTP request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-while-listing-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-while-listing-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-while-listing-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -283,7 +293,7 @@ This table defines the possible thumbnail sizes.
 While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:
 
 | Name           | Resolution  | Aspect Ratio | Description                                                          |
-|:---------------|:------------|:-------------|:---------------------------------------------------------------------|
+| :------------- | :---------- | :----------- | :------------------------------------------------------------------- |
 | `small`        | 96 longest  | Original     | Small, highly compressed thumbnail cropped to a square aspect ratio. |
 | `medium`       | 176 longest | Original     | Cropped to the standard item size for the OneDrive web view.         |
 | `large`        | 800 longest | Original     | Thumbnail with the longest edge resized to 800 pixels.               |
@@ -296,27 +306,30 @@ While you can request any arbitrary thumbnail size, the defined values are likel
 In addition to the defined sizes, your app can request a custom thumbnail size by specifying the dimensions of the thumbnail prefixed with `c`.
 For example if your app needs thumbnails that are 300x400, it can request that size like this:
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request","name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-custom-size-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-custom-size-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-custom-size-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 Which responds with just the custom thumbnail size selected:
 
@@ -341,7 +354,7 @@ You can specify the following options after the size of the thumbnail requested:
 ### Examples of custom identifiers
 
 | Thumbnail identifier | Resolution             | Aspect ratio | Description                                                                                                                                         |
-|:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
+| :------------------- | :--------------------- | :----------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
 | c300x400             | Bounded by 300x400 box | Original     | Generate a thumbnail that fits inside a 300x400 pixel box, maintaining aspect ratio                                                                 |
 | c300x400_Crop        | 300x400                | Cropped      | Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box. |
 
@@ -377,5 +390,3 @@ how errors are returned.
   ]
 }
 -->
-
-

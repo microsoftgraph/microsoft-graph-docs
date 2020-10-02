@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create mobileAppContentFile"
 description: "Create a new mobileAppContentFile object."
 author: "dougeby"
@@ -16,57 +16,63 @@ Namespace: microsoft.graph
 Create a new [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementApps.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the mobileAppContentFile object.
 
 The following table shows the properties that are required when you create the mobileAppContentFile.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|azureStorageUri|String|The Azure Storage URI.|
-|isCommitted|Boolean|A value indicating whether the file is committed.|
-|id|String|The File Id.|
-|createdDateTime|DateTimeOffset|The time the file was created.|
-|name|String|the file name.|
-|size|Int64|The size of the file prior to encryption.|
-|sizeEncrypted|Int64|The size of the file after encryption.|
-|azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
-|manifest|Binary|The manifest information.|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-
-
+| Property                          | Type                                                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| :-------------------------------- | :--------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| azureStorageUri                   | String                                                                                         | The Azure Storage URI.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| isCommitted                       | Boolean                                                                                        | A value indicating whether the file is committed.                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| id                                | String                                                                                         | The File Id.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| createdDateTime                   | DateTimeOffset                                                                                 | The time the file was created.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| name                              | String                                                                                         | the file name.                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| size                              | Int64                                                                                          | The size of the file prior to encryption.                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| sizeEncrypted                     | Int64                                                                                          | The size of the file after encryption.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| azureStorageUriExpirationDateTime | DateTimeOffset                                                                                 | The time the Azure storage Uri expires.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| manifest                          | Binary                                                                                         | The manifest information.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| uploadState                       | [mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md) | The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`. |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files
 Content-type: application/json
 Content-length: 342
@@ -85,8 +91,10 @@ Content-length: 342
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 450
@@ -105,12 +113,3 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
-
-
-
-
-
-
-
-
-

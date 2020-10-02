@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementEnumConstraint resource type"
 description: "Constraint that enforces the setting value is from a permitted set of strings"
 author: "dougeby"
@@ -17,25 +17,29 @@ Namespace: microsoft.graph
 
 Constraint that enforces the setting value is from a permitted set of strings
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|values|[deviceManagementEnumValue](../resources/intune-deviceintent-devicemanagementenumvalue.md) collection|List of valid values for this string|
+
+| Property | Type                                                                                                  | Description                          |
+| :------- | :---------------------------------------------------------------------------------------------------- | :----------------------------------- |
+| values   | [deviceManagementEnumValue](../resources/intune-deviceintent-devicemanagementenumvalue.md) collection | List of valid values for this string |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementEnumConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementEnumConstraint",
   "values": [
@@ -47,9 +51,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

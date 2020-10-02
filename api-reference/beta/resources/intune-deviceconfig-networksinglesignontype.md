@@ -1,4 +1,4 @@
----
+﻿---
 title: "networkSingleSignOnType enum type"
 description: "Wi-Fi Network Single Sign On Type Settings."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Wi-Fi Network Single Sign On Type Settings.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|disabled|0|Disabled|
-|prelogon|1|Pre-Logon|
-|postlogon|2|Post-Logon|
 
-
-
-
-
-
+| Member    | Value | Description |
+| :-------- | :---- | :---------- |
+| disabled  | 0     | Disabled    |
+| prelogon  | 1     | Pre-Logon   |
+| postlogon | 2     | Post-Logon  |

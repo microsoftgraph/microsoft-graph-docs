@@ -1,4 +1,4 @@
----
+﻿---
 author: learafa
 title: Unfollow site
 description: Unfollow a user's site
@@ -6,6 +6,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Unfollow site 
 
 Namespace: microsoft.graph
@@ -16,7 +17,7 @@ Unfollow a user's [site](../resources/site.md) or multiple sites.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|            Permission type             | Permissions (from least to most privileged) |
+| Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Sites.ReadWrite.All                         |
 | Delegated (personal Microsoft account) | Not supported.                              |
@@ -34,10 +35,9 @@ POST /users/{user-id}/followedSites/remove
 
 In the request body, supply an array of JSON objects with the id parameter mentioned in the table below. 
 
-
-| Name                 | Value  | Description                                                            |
-|:---------------------|:-------|:-----------------------------------------------------------------------|
-|   id                 | string | The [unique identifier](../resources/site.md#id-property) of the item. |
+| Name | Value  | Description                                                            |
+| :--- | :----- | :--------------------------------------------------------------------- |
+| id   | string | The [unique identifier](../resources/site.md#id-property) of the item. |
 
 ## Response
 
@@ -50,8 +50,8 @@ The following example shows how to unfollow multiple sites.
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -70,24 +70,28 @@ Content-Type: application/json
     ] 
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/unfollow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/unfollow-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -126,7 +130,7 @@ Content-type: application/json
         }
     ]
 }
-```  
+```
 
 <!-- {
   "type": "#page.annotation",
@@ -137,4 +141,3 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
-

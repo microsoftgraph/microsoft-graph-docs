@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add attachment"
 description: "Use this API to add an attachment to an event. Since there"
 author: "svpsiva"
@@ -21,11 +21,11 @@ If an organizer adds an attachment to a meeting event, the organizer can subsequ
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
-|Application | Calendars.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Calendars.ReadWrite                         |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite                         |
+| Application                            | Calendars.ReadWrite                         |
 
 ## HTTP request
 
@@ -42,10 +42,10 @@ POST /groups/{id}/events/{id}/attachments
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+| Name          | Type   | Description                                            |
+| :------------ | :----- | :----------------------------------------------------- |
+| Authorization | string | Bearer {token}. Required.                              |
+| Content-Type  | string | Nature of the data in the body of an entity. Required. |
 
 ## Request body
 
@@ -62,6 +62,7 @@ If successful, this method returns `201 Created` response code and [attachment](
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event_beta"
@@ -78,26 +79,30 @@ Content-length: 151
     "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-event-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-event-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
 ### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_beta",
@@ -162,10 +167,10 @@ Content-length: 600
 }
 ```
 
-
 ### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",
@@ -199,6 +204,7 @@ Here is an example of a request that adds a reference attachment to an existing 
 The attachment points to a folder on OneDrive.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_event"
@@ -218,24 +224,28 @@ Content-length: 319
     "isFolder": "True"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-from-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-from-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
 Here is an example of a full response.
+
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_event",
@@ -266,6 +276,7 @@ HTTP 201 Created
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -275,5 +286,3 @@ HTTP 201 Created
   "tocPath": ""
 }
 -->
-
-

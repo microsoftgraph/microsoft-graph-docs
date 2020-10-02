@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -8,6 +8,7 @@ ms.prod: "sharepoint"
 description: "Delete a DriveItem by using its ID or path."
 doc_type: apiPageType
 ---
+
 # Delete a DriveItem
 
 Namespace: microsoft.graph
@@ -19,11 +20,11 @@ Note that deleting items using this method will move the items to the recycle bi
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                      |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -39,39 +40,43 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 ## Optional request headers
 
-| Name          | Type   | Description                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
+| Name     | Type   | Description                                                                                                                                                                                       |
+| :------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| if-match | String | If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 ## Example
 
 Here is an example of how to call this API.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "delete-drive-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 DELETE /me/drive/items/{item-id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-drive-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-drive-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-drive-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/delete-drive-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Response
 
@@ -99,4 +104,3 @@ how errors are returned.
   "suppressions": [
   ]
 } -->
-

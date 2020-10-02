@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get externalItem"
 description: "Get an externalItem."
 localization_priority: Normal
@@ -24,10 +24,10 @@ This API is provided for diagnostic purposes only. It is not intended to be used
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ExternalItem.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -39,10 +39,10 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 ## Path parameters
 
-| Parameter     | Type   | Description                                         |
-|:--------------|:-------|:----------------------------------------------------|
+| Parameter     | Type   | Description                                                                                  |
+| :------------ | :----- | :------------------------------------------------------------------------------------------- |
 | connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md).    |
 
 ## Optional query parameters
 
@@ -51,7 +51,7 @@ This method does not support optional query parameters to customize the response
 ## Request headers
 
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -73,7 +73,9 @@ GET https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
 ```
 
 <!-- markdownlint-disable MD024 -->
+
 ### Response
+
 <!-- markdownlint-enable MD024 -->
 
 The following is an example of the response.
@@ -117,6 +119,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get externalItem",

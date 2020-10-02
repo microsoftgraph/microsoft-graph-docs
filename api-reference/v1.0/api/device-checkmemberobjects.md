@@ -1,4 +1,4 @@
----
+﻿---
 title: "device: checkMemberObjects"
 description: "Check for membership in a list of groups or directory roles for the specified device object."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Check for membership in a list of groups or directory roles for the specified de
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)                             |
+| :------------------------------------- | :---------------------------------------------------------------------- |
 | Delegated (work or school account)     | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                          |
+| Application                            | Directory.Read.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
 
@@ -33,18 +33,18 @@ POST /devices/{id}/checkMemberObjects
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-| ids | String collection | A collection that contains the object IDs of the groups, directory roles, or roleTemplate IDs of directory roles, in which to check membership. You can specify up to 20 objects. |
+| Parameter | Type              | Description                                                                                                                                                                       |
+| :-------- | :---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ids       | String collection | A collection that contains the object IDs of the groups, directory roles, or roleTemplate IDs of directory roles, in which to check membership. You can specify up to 20 objects. |
 
 ## Response
 
@@ -59,6 +59,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "device_checkmemberobjects"
@@ -77,24 +78,28 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/device-checkmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/device-checkmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/device-checkmemberobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/device-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -123,6 +128,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "device: checkMemberObjects",
@@ -130,4 +136,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

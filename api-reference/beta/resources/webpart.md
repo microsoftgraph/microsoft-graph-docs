@@ -1,4 +1,4 @@
----
+﻿---
 author: rahmit
 description: "The webPart resource represents type and rendering information for a web part on a sitePage."
 ms.date: 09/01/2018
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # webPart resource
 
 Namespace: microsoft.graph
@@ -32,10 +33,10 @@ The **webPart** resource represents type and rendering information for a web par
 
 ## Properties
 
-| Property                | Type             | Description
-|:------------------------|:-----------------|:----------------------------------
-| **type**                | String           | A unique identifier specifying the webPart type. Read-only.
-| **data**                | [sitePageData][] | The required properties for the webPart (varies by webPart)
+| Property | Type             | Description                                                 |
+| :------- | :--------------- | :---------------------------------------------------------- |
+| **type** | String           | A unique identifier specifying the webPart type. Read-only. |
+| **data** | [sitePageData][] | The required properties for the webPart (varies by webPart) |
 
 [sitePageData]: sitepagedata.md
 
@@ -44,6 +45,7 @@ The **webPart** resource represents type and rendering information for a web par
 Web parts can define their own required properties under **data**.
 
 For more information about pages, see [sitePage](sitepage.md).
+
 <!--
 {
   "type": "#page.annotation",
@@ -54,5 +56,3 @@ For more information about pages, see [sitePage](sitepage.md).
   "suppressions": []
 }
 -->
-
-

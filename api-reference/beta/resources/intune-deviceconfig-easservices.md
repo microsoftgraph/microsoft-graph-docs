@@ -1,4 +1,4 @@
----
+﻿---
 title: "easServices enum type"
 description: "Exchange Active Sync services."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Exchange Active Sync services.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Not yet documented|
-|calendars|1|Enables synchronization of calendars.|
-|contacts|2|Enables synchronization of contacts.|
-|email|4|Enables synchronization of email.|
-|notes|8|Enables synchronization of notes.|
-|reminders|16|Enables synchronization of reminders.|
 
-
-
-
-
-
+| Member    | Value | Description                           |
+| :-------- | :---- | :------------------------------------ |
+| none      | 0     | Not yet documented                    |
+| calendars | 1     | Enables synchronization of calendars. |
+| contacts  | 2     | Enables synchronization of contacts.  |
+| email     | 4     | Enables synchronization of email.     |
+| notes     | 8     | Enables synchronization of notes.     |
+| reminders | 16    | Enables synchronization of reminders. |

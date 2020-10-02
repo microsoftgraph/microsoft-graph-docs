@@ -1,4 +1,4 @@
----
+﻿---
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
 localization_priority: Normal
@@ -14,47 +14,65 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get user's manager. Returns the user or contact assigned as the user's manager.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                |
+| :------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                             |
+| Application                            | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
 ## Request headers
-| Header       | Value|
-|:-----------|:------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
+
 ## Example
+
 ##### Request
+
 Here is an example of the request.
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
+
 ##### Response
+
 Here is an example of the response.
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -81,6 +99,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -91,5 +110,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

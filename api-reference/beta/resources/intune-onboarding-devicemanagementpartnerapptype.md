@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementPartnerAppType enum type"
 description: "Partner App Type."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Partner App Type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Partner App type is unknown.|
-|singleTenantApp|1|Partner App is Single tenant in AAD.|
-|multiTenantApp|2|Partner App is Multi tenant in AAD.|
 
-
-
-
-
-
+| Member          | Value | Description                          |
+| :-------------- | :---- | :----------------------------------- |
+| unknown         | 0     | Partner App type is unknown.         |
+| singleTenantApp | 1     | Partner App is Single tenant in AAD. |
+| multiTenantApp  | 2     | Partner App is Multi tenant in AAD.  |

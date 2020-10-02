@@ -1,4 +1,4 @@
----
+﻿---
 title: "List tabs in channel"
 description: "Retrieve the list of tabs in the specified channel within a team. "
 author: "nkramer"
@@ -16,12 +16,13 @@ Namespace: microsoft.graph
 Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.Read.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
+| Permission type                        | Permissions (from least to most privileged)                                                                                                                             |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | TeamsTab.Read.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All                                             |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                                                          |
 | Application                            | TeamsTab.Read.Group*, TeamsTab.Edit.Group*, TeamsTab.Read.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
@@ -39,26 +40,34 @@ GET /teams/{id}/channels/{id}/tabs
 This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.
 
 ## Example
+
 #### Request
+
 The following is an example of the request.
+
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teamsApp
 ```
 
 #### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json
@@ -97,8 +106,10 @@ Content-type: application/json
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -109,5 +120,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

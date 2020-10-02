@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get connectionOperation"
 description: "Retrieve the properties of a connectionOperation."
 localization_priority: Normal
@@ -22,10 +22,10 @@ Retrieve the properties of a [connectionOperation](../resources/connectionoperat
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ExternalItem.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ GET /external/connections/{connection-id}/operations/{operation-id}
 ## Request headers
 
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -56,6 +56,7 @@ If successful, this method returns a `200 OK` response code and the requested [c
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_connectionoperation"
@@ -64,23 +65,28 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/connections/contosohr/operations/3ed1595a-4bae-43c2-acda-ef973e581323
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-connectionoperation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-connectionoperation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-connectionoperation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
+
 ### Response
+
 <!-- markdownlint-enable MD024 -->
 
 The following is an example of the response.
@@ -107,6 +113,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get connectionOperation",
@@ -114,5 +121,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

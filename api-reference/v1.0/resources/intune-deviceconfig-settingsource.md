@@ -1,4 +1,4 @@
----
+﻿---
 title: "settingSource resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,34 +16,30 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Not yet documented|
-|displayName|String|Not yet documented|
+
+| Property    | Type   | Description        |
+| :---------- | :----- | :----------------- |
+| id          | String | Not yet documented |
+| displayName | String | Not yet documented |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.settingSource"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.settingSource",
   "id": "String (identifier)",
   "displayName": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "programResource resource type"
 description: "Represents a reference to an object which is the target of the access review."
 localization_priority: Normal
@@ -19,9 +19,9 @@ This type inherits from [identity](identity.md).
 
 ## Properties
 
-| Property | Type | Description |
-|:-------- |:---- |:----------- |
-| type | String | Type of the resource, indicating whether it is a group or an app. |
+| Property | Type   | Description                                                       |
+| :------- | :----- | :---------------------------------------------------------------- |
+| type     | String | Type of the resource, indicating whether it is a group or an app. |
 
 ## JSON representation
 
@@ -29,13 +29,16 @@ This type inherits from [identity](identity.md).
   "blockType": "resource",
   "@odata.type": "microsoft.graph.programResource"
 }-->
+
 ```json
 {
   "type": "string"
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",

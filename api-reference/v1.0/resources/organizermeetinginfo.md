@@ -1,4 +1,4 @@
----
+﻿---
 title: "organizerMeetingInfo resource type"
 description: "Contains details about the meeting organizer. "
 author: "ananmishr"
@@ -18,9 +18,9 @@ and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./to
 
 ## Properties
 
-| Property                     | Type                          | Description                                     |
-| :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| organizer                    | [identitySet](identityset.md) | The organizer Azure Active Directory identity.  |
+| Property  | Type                          | Description                                    |
+| :-------- | :---------------------------- | :--------------------------------------------- |
+| organizer | [identitySet](identityset.md) | The organizer Azure Active Directory identity. |
 
 ## JSON representation
 
@@ -33,6 +33,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
+
 ```json
 {
   "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
@@ -41,6 +42,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -51,4 +53,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create Message"
 description: "Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut."
 localization_priority: Priority
@@ -16,29 +16,35 @@ Use this API to create a draft of a new message. Drafts can be created in any fo
 While creating the draft in the same **POST** call, you can include an [attachment](../resources/attachment.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Mail.ReadWrite                              |
+| Delegated (personal Microsoft account) | Mail.ReadWrite                              |
+| Application                            | Mail.ReadWrite                              |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages
 POST /users/{id|userPrincipalName}/messages
 POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.
@@ -48,14 +54,18 @@ Since the **message** resource supports [extensions](/graph/extensibility-overvi
 If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
 
 ## Example
+
 ##### Request 1
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages
 Content-type: application/json
@@ -76,33 +86,42 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
+
 ##### Response 1
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -158,13 +177,16 @@ Content-type: application/json
 ```
 
 ##### Request 2
+
 The next example adds a couple of customer Internet message headers when creating the message draft.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages
 Content-type: application/json
@@ -194,33 +216,42 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-with-headers-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-with-headers-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-with-headers-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-with-headers-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
+
 ##### Response 2
+
 Here is an example of the response. Note: Internet message headers are not returned by default in a POST response. The response object shown here may also be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -281,13 +312,14 @@ Content-type: application/json
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
+
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create Message",
@@ -297,4 +329,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get participant"
 description: "Retrieve the properties and relationships of a **participant** object."
 author: "ananmishr"
@@ -15,63 +15,76 @@ Retrieve the properties and relationships of a **participant** object.
 
 ## Permissions
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported        |
-| Delegated (personal Microsoft account) | Not Supported        |
-| Application     | None                                        |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not Supported                               |
+| Delegated (personal Microsoft account) | Not Supported                               |
+| Application                            | None                                        |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /communications/calls/{id}/participants/{id}
 ```
 
 ## Optional query parameters
+
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [participant](../resources/participant.md) object in the response body.
 
 ## Example
 
 ##### Request
+
 The following example shows the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get-participant"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-participant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-participant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-participant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -82,6 +95,7 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
   "truncated": true,
   "@odata.type": "microsoft.graph.participant"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -123,6 +137,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -134,4 +149,3 @@ Content-Type: application/json
   ]
 }
 -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "List channel message replies"
 description: "List all the replies of a message in a channel of a team."
 author: "nkramer"
@@ -18,13 +18,14 @@ List all the replies of a [message](../resources/chatmessage.md) in a [channel](
 This method lists only the replies of the specified message, if any. To get the message itself, simply call [get channel message](channel-get-message.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+| Permission Type                        | Permissions (from least to most privileged)                                              |
+| -------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All                             |
+| Delegated (personal Microsoft account) | Not supported.                                                                           |
+| Application                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -32,7 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /teams/{id}/channels/{id}/messages/{id}/replies
 ```
@@ -43,52 +46,67 @@ You can use the [$top](/graph/query-parameters#top-parameter) query parameter to
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/chatmessage.md) objects in the response body.
+
 ## Example
+
 ##### Request
+
 In this example, the specified message has two replies. Each reply has one or more [chatMessageMention](../resources/chatmessagemention.md) objects.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype", "1555375673184"],
   "name": "get_channel_message_replies"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages/1555375673184/replies
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-message-replies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-message-replies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-message-replies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
+
 Here is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -211,6 +229,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -222,5 +241,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

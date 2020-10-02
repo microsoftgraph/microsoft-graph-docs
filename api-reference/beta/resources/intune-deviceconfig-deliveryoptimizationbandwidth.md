@@ -1,4 +1,4 @@
----
+﻿---
 title: "deliveryOptimizationBandwidth resource type"
 description: "Bandwidth restriction types"
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 Bandwidth restriction types
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deliveryOptimizationBandwidth"
 }
 ```
-
-
-
-
-
-

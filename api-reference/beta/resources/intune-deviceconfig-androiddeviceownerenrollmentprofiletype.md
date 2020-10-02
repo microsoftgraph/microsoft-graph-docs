@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerEnrollmentProfileType enum type"
 description: "Android Device Owner Enrollment Profile types."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Android Device Owner Enrollment Profile types.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured; this value is ignored.|
-|dedicatedDevice|1|Dedicated device.|
-|fullyManaged|2|Fully managed.|
 
-
-
-
-
-
+| Member          | Value | Description                            |
+| :-------------- | :---- | :------------------------------------- |
+| notConfigured   | 0     | Not configured; this value is ignored. |
+| dedicatedDevice | 1     | Dedicated device.                      |
+| fullyManaged    | 2     | Fully managed.                         |

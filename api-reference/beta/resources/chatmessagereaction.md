@@ -1,4 +1,4 @@
----
+﻿---
 title: "chatMessageReaction resource type"
 description: "Represents a reaction to a chatMessage entity. "
 localization_priority: Normal
@@ -19,11 +19,11 @@ An entity of type `chatMessageReaction` is returned as part of the [Get channel 
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|reactionType|String|Supported values are `like`, `angry`, `sad`, `laugh`, `heart`, `surprised`. |
-|user|[identitySet](identityset.md)|The user who reacted to the message.|
+| Property        | Type                          | Description                                                                                                                                                                                      |
+| :-------------- | :---------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| createdDateTime | DateTimeOffset                | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
+| reactionType    | String                        | Supported values are `like`, `angry`, `sad`, `laugh`, `heart`, `surprised`.                                                                                                                      |
+| user            | [identitySet](identityset.md) | The user who reacted to the message.                                                                                                                                                             |
 
 ## JSON representation
 
@@ -48,6 +48,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "chatMessageReaction resource",
@@ -55,5 +56,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

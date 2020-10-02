@@ -1,4 +1,4 @@
----
+﻿---
 title: "externalItem resource type"
 description: "An item added to a Microsoft Graph connection."
 localization_priority: Normal
@@ -19,8 +19,8 @@ An item added to a Microsoft Graph [connection](externalconnection.md).
 
 ## Methods
 
-| Method                                                        | Return Type                     | Description |
-|:--------------------------------------------------------------|:--------------------------------|:--|
+| Method                                                        | Return Type                     | Description             |
+| :------------------------------------------------------------ | :------------------------------ | :---------------------- |
 | [Create externalItem](../api/externalconnection-put-items.md) | [externalItem](externalitem.md) | Create an externalItem. |
 | [Get externalItem](../api/externalitem-get.md)                | [externalItem](externalitem.md) | Get an externalItem.    |
 | [Update externalItem](../api/externalitem-update.md)          | [externalItem](externalitem.md) | Update an externalItem. |
@@ -28,12 +28,12 @@ An item added to a Microsoft Graph [connection](externalconnection.md).
 
 ## Properties
 
-| Property   | Type                     | Description                          |
-|:-----------|:-------------------------|:-------------------------------------|
-| acl        | [acl](acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. Required. |
-| content    | [externalItemContent](externalitemcontent.md) | A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional. |
-| id         | String                   | Developer-provided unique ID of the item within the containing [externalConnection](externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required. |
-| properties | Object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [externalConnection](externalconnection.md). Required. |
+| Property   | Type                                          | Description                                                                                                                                                                   |
+| :--------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| acl        | [acl](acl.md) collection                      | An array of access control entries. Each entry specifies the access granted to a user or group. Required.                                                                     |
+| content    | [externalItemContent](externalitemcontent.md) | A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional.                                                           |
+| id         | String                                        | Developer-provided unique ID of the item within the containing [externalConnection](externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required.   |
+| properties | Object                                        | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [externalConnection](externalconnection.md). Required. |
 
 ## Relationships
 
@@ -64,6 +64,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "externalItem resource",

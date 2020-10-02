@@ -1,4 +1,4 @@
----
+﻿---
 title: "servicePrincipal: addPassword"
 description: "Add a strong password to a servicePrincipal."
 localization_priority: Normal
@@ -17,10 +17,10 @@ Add a strong password to a [servicePrincipal](../resources/serviceprincipal.md) 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
-| Delegated (personal Microsoft account) | Not supported. |
+| Permission type                        | Permissions (from least to most privileged)              |
+| :------------------------------------- | :------------------------------------------------------- |
+| Delegated (work or school account)     | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegated (personal Microsoft account) | Not supported.                                           |
 | Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
@@ -33,20 +33,20 @@ POST /servicePrincipals/{id}/addPassword
 
 ## Request headers
 
-| Name           | Description                |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide an optional `passwordCredential` object with the following properties.
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-| displayName | String | Friendly name for the password. Optional. |
-| endDateTime | DateTimeOffset | The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional. The default value is "startDateTime + 2 years". |
-| startDateTime | DateTimeOffset | The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional. The default value is "now".|
+| Property      | Type           | Description                                                                                                                                                                                                                                                                                    |
+| :------------ | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName   | String         | Friendly name for the password. Optional.                                                                                                                                                                                                                                                      |
+| endDateTime   | DateTimeOffset | The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional. The default value is "startDateTime + 2 years".                                |
+| startDateTime | DateTimeOffset | The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional. The default value is "now". |
 
 ## Response
 
@@ -61,6 +61,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "servicePrincipal_addpassword"
@@ -76,24 +77,28 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addpassword-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addpassword-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-addpassword-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addpassword-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -122,6 +127,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "servicePrincipal: addPassword",
@@ -129,4 +135,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

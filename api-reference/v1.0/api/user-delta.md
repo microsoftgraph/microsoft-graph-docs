@@ -1,4 +1,4 @@
----
+﻿---
 title: "user: delta"
 description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection."
 localization_priority: Priority
@@ -17,18 +17,18 @@ Get newly created, updated, or deleted users without having to perform a full re
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                                                               |
+| :------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                                            |
+| Application                            | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All                                                                            |
 
 ## HTTP request
 
 To begin tracking changes, you make a request including the delta function on the users resource.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /users/delta
 ```
@@ -41,10 +41,10 @@ You only need to specify any desired query parameters once upfront.
 
 In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
-| Query parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection. |
+| Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                  |
+| :-------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $deltatoken     | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection. |
+| $skiptoken      | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection.                                                                                                                                                         |
 
 ### OData query parameters
 
@@ -55,13 +55,15 @@ This method supports optional OData Query Parameters to help customize the respo
   - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/users/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
 
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;|
-| Content-Type  | application/json |
-| Prefer | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
+
+| Name          | Description                                                                                                                                                                    |
+| :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer &lt;token&gt;                                                                                                                                                           |
+| Content-Type  | application/json                                                                                                                                                               |
+| Prefer        | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -84,7 +86,6 @@ By default, requests using a `deltaLink` or `nextLink` return the same propertie
 - If the property has not changed, the old value is included in the response.
 - If the property has never been set before it will not be included in the response at all.
 
-
 > **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values  - as shown in [Example 2](#example-2-selecting-three-properties).
 
 ### Alternative: return only the changed properties
@@ -105,6 +106,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_delta"
@@ -113,24 +115,28 @@ The following is an example of the request. There is no `$select` parameter, so 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/delta
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/user-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -171,6 +177,7 @@ Content-type: application/json
   ]
 }
 ```
+
 ### Example 2: Selecting three properties
 
 #### Request
@@ -178,6 +185,7 @@ Content-type: application/json
 The next example shows the initial request selecting three properties for change tracking, with default response behavior.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_delta_select"
@@ -186,24 +194,28 @@ The next example shows the initial request selecting three properties for change
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-delta-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/user-delta-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -240,6 +252,7 @@ Content-type: application/json
 The next example shows the initial request selecting three properties for change tracking, with alternative minimal response behavior.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_delta_minimal"
@@ -249,24 +262,28 @@ The next example shows the initial request selecting three properties for change
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
 Prefer: return=minimal
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-delta-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/user-delta-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -294,6 +311,7 @@ Content-type: application/json
   ]
 }
 ```
+
 ## See also
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
@@ -301,6 +319,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "user: delta",
@@ -310,4 +329,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

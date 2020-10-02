@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationOutcome resource type"
 description: "The result of grading an assignment"
 localization_priority: Normal
@@ -17,8 +17,8 @@ The result of grading an assignment. This is a base class; the derived types are
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                                       | Return Type                             | Description                     |
+| :----------------------------------------------------------- | :-------------------------------------- | :------------------------------ |
 | [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Relationships
@@ -49,6 +49,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationOutcome resource",
@@ -56,4 +57,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create targetedManagedAppConfiguration"
 description: "Create a new targetedManagedAppConfiguration object."
 author: "dougeby"
@@ -18,61 +18,67 @@ Namespace: microsoft.graph
 Create a new [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)||
-| &nbsp; &nbsp; **Mobile app management (MAM)** | DeviceManagementApps.ReadWrite.All|
-| &nbsp; &nbsp; **Policy Set**  | DeviceManagementApps.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application||
-| &nbsp; &nbsp; **Mobile app management (MAM)** | DeviceManagementApps.ReadWrite.All|
-| &nbsp; &nbsp; **Policy Set**  | DeviceManagementApps.ReadWrite.All|
+| Permission type                               | Permissions (from most to least privileged) |
+| :-------------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)            |                                             |
+| &nbsp; &nbsp; **Mobile app management (MAM)** | DeviceManagementApps.ReadWrite.All          |
+| &nbsp; &nbsp; **Policy Set**                  | DeviceManagementApps.ReadWrite.All          |
+| Delegated (personal Microsoft account)        | Not supported.                              |
+| Application                                   |                                             |
+| &nbsp; &nbsp; **Mobile app management (MAM)** | DeviceManagementApps.ReadWrite.All          |
+| &nbsp; &nbsp; **Policy Set**                  | DeviceManagementApps.ReadWrite.All          |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceAppManagement/targetedManagedAppConfigurations
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the targetedManagedAppConfiguration object.
 
 The following table shows the properties that are required when you create the targetedManagedAppConfiguration.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Policy display name. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|customSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|
-|deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
-|isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not.|
-
-
+| Property             | Type                                                                  | Description                                                                                                                                                                                                                          |
+| :------------------- | :-------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName          | String                                                                | Policy display name. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)                                                                                                                                  |
+| description          | String                                                                | The policy's description. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)                                                                                                                             |
+| createdDateTime      | DateTimeOffset                                                        | The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)                                                                                                             |
+| lastModifiedDateTime | DateTimeOffset                                                        | Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)                                                                                                                    |
+| roleScopeTagIds      | String collection                                                     | List of Scope Tags for this Entity instance. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)                                                                                                          |
+| id                   | String                                                                | Key of the entity. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)                                                                                                                                    |
+| version              | String                                                                | Version of the entity. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)                                                                                                                                |
+| customSettings       | [keyValuePair](../resources/intune-shared-keyvaluepair.md) collection | A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) |
+| deployedAppCount     | Int32                                                                 | Count of apps to which the current policy is deployed.                                                                                                                                                                               |
+| isAssigned           | Boolean                                                               | Indicates if the policy is deployed to any inclusion groups or not.                                                                                                                                                                  |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/targetedManagedAppConfigurations
 Content-type: application/json
 Content-length: 450
@@ -98,8 +104,10 @@ Content-length: 450
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 622
@@ -126,12 +134,3 @@ Content-Length: 622
   "isAssigned": true
 }
 ```
-
-
-
-
-
-
-
-
-

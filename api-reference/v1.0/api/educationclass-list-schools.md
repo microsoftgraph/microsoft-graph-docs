@@ -1,4 +1,4 @@
----
+﻿---
 title: "List schools"
 description: "Retrieve a list of schools in which the class is taught."
 author: "mmast-msft"
@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/classes/{id}/schools
 ```
@@ -60,23 +61,28 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_schools"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -94,6 +100,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationSchool",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -135,6 +142,7 @@ Content-length: 892
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List schools",
@@ -144,4 +152,3 @@ Content-length: 892
   "suppressions": [
   ]
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "sharedInsight resource type"
 description: "An insight representing files shared with or by a specific user. The following shared files are supported:"
 author: "simonhult"
@@ -22,32 +22,35 @@ An insight representing files shared with or by a specific user. The following s
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List shared](../api/insights-list-shared.md) |[sharedInsight](insights-shared.md) collection| Get a list of shared files.|
+| Method                                        | Return Type                                    | Description                 |
+| :-------------------------------------------- | :--------------------------------------------- | :-------------------------- |
+| [List shared](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Get a list of shared files. |
 
 ## Properties
 
-| Property              | Type          	 		| Description  |
-| -------------         |---------------	 		| -------------|
-| id      				| String	 				| Unique identifier of the relationship. Read only. 	   |
-| lastShared			| [sharingDetail](insights-sharingdetail.md)				| Details about the shared item. Read only. 	   |
-| resourceVisualization	| [resourceVisualization](insights-resourcevisualization.md)				| Properties that you can use to visualize the document in your experience. Read-only	   |
-| resourceReference		| [resourceReference](insights-resourcereference.md)                      | Reference properties of the shared document, such as the url and type of the document. Read-only	   |
+| Property              | Type                                                       | Description                                                                                      |
+| --------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| id                    | String                                                     | Unique identifier of the relationship. Read only.                                                |
+| lastShared            | [sharingDetail](insights-sharingdetail.md)                 | Details about the shared item. Read only.                                                        |
+| resourceVisualization | [resourceVisualization](insights-resourcevisualization.md) | Properties that you can use to visualize the document in your experience. Read-only              |
+| resourceReference     | [resourceReference](insights-resourcereference.md)         | Reference properties of the shared document, such as the url and type of the document. Read-only |
 
 ## Relationships
 
-| Property      | Type          | Description  |
-| ------------- |---------------| -------------|
-| resource    	| entity collection	| Used for navigating to the item that was shared. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
+| Property | Type              | Description                                                                                                                                           |
+| -------- | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| resource | entity collection | Used for navigating to the item that was shared. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
 
 ## JSON representation
+
 Here is a JSON representation of the resource
+
 <!--{
   "blockType":"resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.sharedInsight"
 }-->
+
 ```json
 {
   "id": "string",
@@ -58,5 +61,3 @@ Here is a JSON representation of the resource
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
-
-

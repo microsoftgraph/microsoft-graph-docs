@@ -1,4 +1,4 @@
----
+﻿---
 title: "Working with education APIs in Microsoft Graph"
 description: "The education APIs in Microsoft Graph enhance Microsoft 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, and enrollments. This makes it easy for you to build solutions that integrate with educational resources."
 localization_priority: Priority
@@ -23,7 +23,7 @@ To deploy apps that are integrated with the Education APIs in Microsoft Graph, s
 
 To show a consent dialog box, use the following REST call.
 
-``` http
+```http
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
 client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 ```
@@ -78,4 +78,3 @@ Use the Microsoft Graph education APIs to build education solutions that access 
 
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-

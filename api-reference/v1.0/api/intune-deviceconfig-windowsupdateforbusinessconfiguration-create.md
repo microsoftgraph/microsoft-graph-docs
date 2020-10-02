@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create windowsUpdateForBusinessConfiguration"
 description: "Create a new windowsUpdateForBusinessConfiguration object."
 author: "dougeby"
@@ -16,66 +16,72 @@ Namespace: microsoft.graph
 Create a new [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/deviceConfigurations
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the windowsUpdateForBusinessConfiguration object.
 
 The following table shows the properties that are required when you create the windowsUpdateForBusinessConfiguration.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Delivery Optimization Mode. Possible values are: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
-|prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|The pre-release features. Possible values are: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
-|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
-|microsoftUpdateServiceAllowed|Boolean|Allow Microsoft Update Service|
-|driversExcluded|Boolean|Exclude Windows update Drivers|
-|installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|Installation schedule|
-|qualityUpdatesDeferralPeriodInDays|Int32|Defer Quality Updates by these many days|
-|featureUpdatesDeferralPeriodInDays|Int32|Defer Feature Updates by these many days|
-|qualityUpdatesPaused|Boolean|Pause Quality Updates|
-|featureUpdatesPaused|Boolean|Pause Feature Updates|
-|qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
-|featureUpdatesPauseExpiryDateTime|DateTimeOffset|Feature Updates Pause Expiry datetime|
-|businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Determines which branch devices will receive their updates from. Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-
-
+| Property                           | Type                                                                                                     | Description                                                                                                                                                                                                                               |
+| :--------------------------------- | :------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                                 | String                                                                                                   | Key of the entity. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)                                                                                                                          |
+| lastModifiedDateTime               | DateTimeOffset                                                                                           | DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)                                                                                                      |
+| createdDateTime                    | DateTimeOffset                                                                                           | DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)                                                                                                            |
+| description                        | String                                                                                                   | Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)                                                                                     |
+| displayName                        | String                                                                                                   | Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)                                                                                            |
+| version                            | Int32                                                                                                    | Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)                                                                                                        |
+| deliveryOptimizationMode           | [windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)   | Delivery Optimization Mode. Possible values are: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.                                               |
+| prereleaseFeatures                 | [prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)                             | The pre-release features. Possible values are: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.                                                                                                                |
+| automaticUpdateMode                | [automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)                           | Automatic update mode. Possible values are: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`. |
+| microsoftUpdateServiceAllowed      | Boolean                                                                                                  | Allow Microsoft Update Service                                                                                                                                                                                                            |
+| driversExcluded                    | Boolean                                                                                                  | Exclude Windows update Drivers                                                                                                                                                                                                            |
+| installationSchedule               | [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md) | Installation schedule                                                                                                                                                                                                                     |
+| qualityUpdatesDeferralPeriodInDays | Int32                                                                                                    | Defer Quality Updates by these many days                                                                                                                                                                                                  |
+| featureUpdatesDeferralPeriodInDays | Int32                                                                                                    | Defer Feature Updates by these many days                                                                                                                                                                                                  |
+| qualityUpdatesPaused               | Boolean                                                                                                  | Pause Quality Updates                                                                                                                                                                                                                     |
+| featureUpdatesPaused               | Boolean                                                                                                  | Pause Feature Updates                                                                                                                                                                                                                     |
+| qualityUpdatesPauseExpiryDateTime  | DateTimeOffset                                                                                           | Quality Updates Pause Expiry datetime                                                                                                                                                                                                     |
+| featureUpdatesPauseExpiryDateTime  | DateTimeOffset                                                                                           | Feature Updates Pause Expiry datetime                                                                                                                                                                                                     |
+| businessReadyUpdatesOnly           | [windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)                               | Determines which branch devices will receive their updates from. Possible values are: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.                      |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 910
@@ -106,8 +112,10 @@ Content-length: 910
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 1082
@@ -139,12 +147,3 @@ Content-Length: 1082
   "businessReadyUpdatesOnly": "all"
 }
 ```
-
-
-
-
-
-
-
-
-

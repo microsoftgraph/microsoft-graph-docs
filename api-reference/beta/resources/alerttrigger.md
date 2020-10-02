@@ -1,4 +1,4 @@
----
+﻿---
 title: "alertTrigger resource type"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Contains information about the properties that triggered a detection (properties
 
 ## Properties
 
-| Property   | Type|Description|
-|:---------------|:--------|:----------|
-|name|String|Name of the property serving as a detection trigger.|
-|type|String|Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.|
-|value|String|Value of the property serving as a detection trigger.|
+| Property | Type   | Description                                                                                       |
+| :------- | :----- | :------------------------------------------------------------------------------------------------ |
+| name     | String | Name of the property serving as a detection trigger.                                              |
+| type     | String | Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc. |
+| value    | String | Value of the property serving as a detection trigger.                                             |
 
 ## JSON representation
 
@@ -57,6 +57,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -67,5 +68,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

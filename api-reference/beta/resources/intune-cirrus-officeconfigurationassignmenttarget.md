@@ -1,4 +1,4 @@
----
+﻿---
 title: "officeConfigurationAssignmentTarget resource type"
 description: "Office Client Configuration Assignment Target."
 localization_priority: Normal
@@ -18,28 +18,27 @@ Namespace: microsoft.graph
 Office Client Configuration Assignment Target.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.officeConfigurationAssignmentTarget"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.officeConfigurationAssignmentTarget"
 }
 ```
-
-
-
-
-
-

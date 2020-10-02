@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationUser resource type"
 description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
 author: "mmast-msft"
@@ -127,15 +127,14 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationUser resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: Resource educationUser has documented navigation properties, but we thought it was a complex type!"
-  ]
+  "suppressions": []
 
 }-->
 
@@ -157,5 +156,3 @@ The following is a JSON representation of the resource.
 [educationonpremisesinfo]: educationonpremisesinfo.md
 [iso 3166 alpha-2]: https://www.iso.org/obp/ui/#search
 [rfc 822]: https://tools.ietf.org/html/rfc822
-
-

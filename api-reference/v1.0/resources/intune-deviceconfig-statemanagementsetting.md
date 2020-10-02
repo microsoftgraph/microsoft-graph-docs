@@ -1,4 +1,4 @@
----
+﻿---
 title: "stateManagementSetting enum type"
 description: "State Management Setting."
 author: "dougeby"
@@ -16,17 +16,9 @@ Namespace: microsoft.graph
 State Management Setting.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured.|
-|blocked|1|Blocked.|
-|allowed|2|Allowed.|
 
-
-
-
-
-
-
-
-
+| Member        | Value | Description     |
+| :------------ | :---- | :-------------- |
+| notConfigured | 0     | Not configured. |
+| blocked       | 1     | Blocked.        |
+| allowed       | 2     | Allowed.        |

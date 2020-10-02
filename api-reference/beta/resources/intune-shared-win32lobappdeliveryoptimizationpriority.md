@@ -1,4 +1,4 @@
----
+﻿---
 title: "win32LobAppDeliveryOptimizationPriority enum type"
 description: "Contains value for delivery optimization priority."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Contains value for delivery optimization priority.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured or background normal delivery optimization priority.|
-|foreground|1|Foreground delivery optimization priority.|
 
-
-
-
-
-
+| Member        | Value | Description                                                         |
+| :------------ | :---- | :------------------------------------------------------------------ |
+| notConfigured | 0     | Not configured or background normal delivery optimization priority. |
+| foreground    | 1     | Foreground delivery optimization priority.                          |

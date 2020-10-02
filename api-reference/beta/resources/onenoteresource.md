@@ -1,4 +1,4 @@
----
+﻿---
 title: "onenoteResource resource type"
 description: "An image or other file resource on a OneNote page. "
 localization_priority: Normal
@@ -32,6 +32,7 @@ You can get the binary data of a resource, but getting a JSON representation of 
 }
 
 ```
+
 Get the binary data of a specific resource by sending a GET request to the resource's `content` endpoint:
 
 ```
@@ -45,6 +46,7 @@ GET ../onenote/pages/{id}/content
 ```
 
 In the page HTML, an `img` tag includes endpoints for the original image resource in the `data-fullres-src` attribute and the optimized image in the `src` attribute:
+
 ```
 <img
     src="image-resource-url"
@@ -63,22 +65,25 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
 ```
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-| content | Edm.Stream||
-| contentUrl | String ||
+
+| Property   | Type       | Description |
+| :--------- | :--------- | :---------- |
+| content    | Edm.Stream |             |
+| contentUrl | String     |             |
 
 ## Relationships
+
 None.
 
-
 ## Methods
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get resource binary data](../api/resource-get.md) | Stream |Retrieve the binary data of a file or image resource.|
+
+| Method                                             | Return Type | Description                                           |
+| :------------------------------------------------- | :---------- | :---------------------------------------------------- |
+| [Get resource binary data](../api/resource-get.md) | Stream      | Retrieve the binary data of a file or image resource. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -89,5 +94,3 @@ None.
   "suppressions": []
 }
 -->
-
-

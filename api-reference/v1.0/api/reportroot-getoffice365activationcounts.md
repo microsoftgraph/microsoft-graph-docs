@@ -1,4 +1,4 @@
----
+﻿---
 title: "reportRoot: getOffice365ActivationCounts"
 description: "Get the count of Microsoft 365 activations on desktops and devices."
 localization_priority: Normal
@@ -20,15 +20,14 @@ Get the count of Microsoft 365 activations on desktops and devices.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Reports.Read.All                            |
 
 **Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
-
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -38,9 +37,9 @@ GET /reports/getOffice365ActivationCounts
 
 ## Request headers
 
-| Name          | Description                              |
-| :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Required.                |
+| Name          | Description                                                                                                                                             |
+| :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Authorization | Bearer {token}. Required.                                                                                                                               |
 | If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response
@@ -65,7 +64,6 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-
 <!--{
   "blockType": "ignored",
   "isComposable": true,
@@ -75,7 +73,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationCounts
 ```
-
 
 #### Response
 
@@ -103,8 +100,10 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,Product Type,Windows,Mac,Android,iOS,Windows 10 Mobile
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",
@@ -114,4 +113,3 @@ Report Refresh Date,Product Type,Windows,Mac,Android,iOS,Windows 10 Mobile
   "suppressions": [
   ]
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Manage Focused Inbox"
 description: "Focused Inbox allows you to view important messages in the `Focused` tab of the Inbox, and the rest of the Inbox messages in the `Other` tab. The classification system "
 localization_priority: Normal
@@ -41,11 +41,8 @@ including the Inbox.
 
 [Update the inferenceClassification property of a message](../api/message-update.md)
 
-
 **Using overrides to classify consistently per sender**
 
 [Create an override for a sender](../api/inferenceclassification-post-overrides.md) | [List all user overrides](../api/inferenceclassification-list-overrides.md) |
 
 [Update an override for a sender](../api/inferenceclassificationoverride-update.md) | [Delete a sender override](../api/inferenceclassificationoverride-delete.md)
-
-

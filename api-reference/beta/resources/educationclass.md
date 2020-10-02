@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationClass resource type"
 description: "Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID."
 localization_priority: Normal
@@ -99,6 +99,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.educationClass",
   "description": "educationUser resource",
@@ -121,5 +122,3 @@ The following is a JSON representation of the resource.
 [educationterm]: educationterm.md
 [identityset]: identityset.md
 [group]: group.md
-
-

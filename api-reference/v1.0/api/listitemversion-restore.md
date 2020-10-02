@@ -1,4 +1,4 @@
----
+﻿---
 title: "Restore a previous version of a ListItem"
 description: "Restore a previous version of a ListItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the item."
 localization_priority: Normal
@@ -17,7 +17,7 @@ Restore a previous version of a ListItem to be the current version. This will cr
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|            Permission type             |         Permissions (from least to most privileged)          |
+| Permission type                        | Permissions (from least to most privileged)                  |
 | :------------------------------------- | :----------------------------------------------------------- |
 | Delegated (work or school account)     | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 | Delegated (personal Microsoft account) | n/a                                                          |
@@ -40,31 +40,35 @@ No request body is required.
 
 This example restores a version of a listItem identified by `{item-id}` and `{version-id}`.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "restore-item-version-listItem", "scopes": "files.readwrite sites.readwrite.all", "target": "action", "tags": "service.graph service.sharepoint" } -->
 
 ```http
 POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-version-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/restore-item-version-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/restore-item-version-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/restore-item-version-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Response
 
@@ -85,4 +89,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 } -->
-

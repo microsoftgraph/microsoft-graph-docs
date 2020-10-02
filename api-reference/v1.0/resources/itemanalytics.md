@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: itemAnalytics resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # itemAnalytics resource type
 
 Namespace: microsoft.graph
@@ -19,10 +20,10 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 
 ## Properties
 
-| Property      | Type                 | Description
-|:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | Analytics over the item's lifespan.
-| lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
+| Property      | Type                 | Description                         |
+| :------------ | :------------------- | :---------------------------------- |
+| allTime       | [itemActivityStat][] | Analytics over the item's lifespan. |
+| lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.  |
 
 [itemActivityStat]: itemactivitystat.md
 [getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
@@ -42,6 +43,7 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
   "lastSevenDays": {"@odata.type": "microsoft.graph.itemActivityStat"}
 }
 ```
+
 <!--
 {
   "type": "#page.annotation",
@@ -52,4 +54,3 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
   "suppressions": []
 }
 -->
-

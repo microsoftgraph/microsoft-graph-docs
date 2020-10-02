@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "Get itemAnalytics about the views that took place under this resource."
 ms.date: 10/06/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
 ---
+
 # Get analytics
 
 Namespace: microsoft.graph
@@ -26,11 +27,11 @@ For a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+| Permission type                        | Permissions (from least to most privileged)                                                           |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                        |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## HTTP request
 
@@ -46,27 +47,30 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -103,5 +107,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

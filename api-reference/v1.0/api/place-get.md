@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get place"
 description: "Retrieve the properties and relationships of a place object."
 localization_priority: Normal
@@ -25,10 +25,10 @@ Both **room** and **roomList** are derived from the [place](../resources/place.m
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Place.Read.All |
-| Delegated (personal Microsoft account) | Not supported |
-| Application                            | Place.Read.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Place.Read.All                              |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | Place.Read.All                              |
 
 ## HTTP request
 
@@ -39,6 +39,7 @@ GET /places/{id}
 ```
 
 ## Optional query parameters
+
 Use `$select` to get specific **place** properties.
 
 For more information, see [OData query parameters](/graph/query-parameters).
@@ -46,7 +47,7 @@ For more information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
 
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -60,12 +61,13 @@ If successful, this method returns a `200 OK` response code and the requested [p
 ## Examples
 
 ### Example 1: Get a room
+
 #### Request
 
 The following example specifies the **id** of a **room** to get its properties.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_room"
@@ -74,24 +76,28 @@ The following example specifies the **id** of a **room** to get its properties.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-room-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-room-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-room-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-room-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -146,12 +152,13 @@ Content-type: application/json
 ```
 
 ### Example 2: Get a room list
+
 #### Request
 
 The following example specifies the **emailAddress** of a **roomList** to get its properties.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_roomlist"
@@ -160,25 +167,28 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-roomlist-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 #### Response
 
@@ -217,6 +227,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get place",
@@ -224,4 +235,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

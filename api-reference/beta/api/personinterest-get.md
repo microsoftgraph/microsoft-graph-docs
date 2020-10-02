@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get personInterest"
 description: "Retrieve the properties and relationships of a personInterest object."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a [personInterest](../resources/per
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
+| :------------------------------------- | :------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
@@ -40,9 +40,9 @@ This method supports the `$select` query parameter. Specify a list of properties
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -55,9 +55,11 @@ If successful, this method returns a `200 OK` response code and the requested [p
 ## Examples
 
 ### Request
+
 # [HTTP](#tab/http)
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_personinterest"
@@ -66,15 +68,19 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/interests/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-personinterest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-personinterest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-personinterest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -127,5 +133,3 @@ Content-type: application/json
   "collaborationTags": null
 }
 ```
-
-

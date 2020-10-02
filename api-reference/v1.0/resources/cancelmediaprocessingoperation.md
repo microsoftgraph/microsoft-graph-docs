@@ -1,4 +1,4 @@
---- 
+﻿---
 title: "cancelMediaProcessingOperation resource type"
 description: "This resource type is used to describe the response format of the cancel media processing operation."
 author: "ananmishr"
@@ -24,6 +24,7 @@ Describes the response format of the cancel media processing operation.
 | status        | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
@@ -37,6 +38,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.cancelMediaProcessingOperation"
 }-->
+
 ```json
 {
   "all": true,
@@ -49,6 +51,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "cancelMediaProcessingOperation resource",
@@ -56,4 +59,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

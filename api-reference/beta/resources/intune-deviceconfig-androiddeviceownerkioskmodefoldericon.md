@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerKioskModeFolderIcon enum type"
 description: "Android Device Owner Kiosk Mode folder icon type."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Android Device Owner Kiosk Mode folder icon type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured; this value is ignored.|
-|darkSquare|1|Folder icon appears as dark square.|
-|darkCircle|2|Folder icon appears as dark circle.|
-|lightSquare|3|Folder icon appears as light square.|
-|lightCircle|4|Folder icon appears as light circle  .|
 
-
-
-
-
-
+| Member        | Value | Description                            |
+| :------------ | :---- | :------------------------------------- |
+| notConfigured | 0     | Not configured; this value is ignored. |
+| darkSquare    | 1     | Folder icon appears as dark square.    |
+| darkCircle    | 2     | Folder icon appears as dark circle.    |
+| lightSquare   | 3     | Folder icon appears as light square.   |
+| lightCircle   | 4     | Folder icon appears as light circle  . |

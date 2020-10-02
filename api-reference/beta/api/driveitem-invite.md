@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Sends a sharing invitation for a DriveItem."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Send a sharing invitation
 
 Namespace: microsoft.graph
@@ -20,11 +21,11 @@ A sharing invitation provides permissions to the recipients and optionally sends
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                      |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -57,15 +58,15 @@ In the request body, provide a JSON object with the following parameters.
 }
 ```
 
-| Parameter        | Type                                            | Description                                                                                                |
-|:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | A collection of recipients who will receive access and the sharing invitation.                                            |
-| message          | String                                          | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters. |
-| requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
-| sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is just created (true).            |
-| roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
-| expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
-| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only
+| Parameter          | Type                                                         | Description                                                                                                                                      |
+| :----------------- | :----------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| recipients         | Collection([DriveRecipient](../resources/driverecipient.md)) | A collection of recipients who will receive access and the sharing invitation.                                                                   |
+| message            | String                                                       | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.                                       |
+| requireSignIn      | Boolean                                                      | Specifies where the recipient of the invitation is required to sign-in to view the shared item.                                                  |
+| sendInvitation     | Boolean                                                      | Specifies if an email or post is generated (false) or if the permission is just created (true).                                                  |
+| roles              | Collection(String)                                           | Specify the roles that are be granted to the recipients of the sharing invitation.                                                               |
+| expirationDateTime | DateTimeOffset                                               | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts. |
+| password           | String                                                       | The password set on the invite by the creator. Optional and OneDrive Personal only                                                               |
 
 ## Example
 
@@ -76,8 +77,8 @@ The invitation grants Ryan read-write access to the file.
 
 If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -98,20 +99,23 @@ Content-type: application/json
   "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -144,6 +148,7 @@ Content-type: application/json
   ]
 }
 ```
+
 ### Partial success response
 
 When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others.
@@ -201,17 +206,19 @@ Content-type: application/json
   ]
 }
 ```
+
 ### SendNotification errors
+
 The following are some additional errors that your app might encounter within the nested `innererror` objects when sending notification fails. 
 Apps are not required to handle these.
 
-| Code                           | Description
-|:-------------------------------|:--------------------------------------------------------------------------------------
-| accountVerificationRequired    | Account verification is required to unblock sending notifications.
-| hipCheckRequired               | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications.
-| exchangeInvalidUser            | Current user's mailbox was not found.
-| exchangeOutOfMailboxQuota      | Out of quota.
-| exchangeMaxRecipients          | Exceeded maximum number of recipients that can be sent notifications at the same time.
+| Code                        | Description                                                                            |
+| :-------------------------- | :------------------------------------------------------------------------------------- |
+| accountVerificationRequired | Account verification is required to unblock sending notifications.                     |
+| hipCheckRequired            | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications.  |
+| exchangeInvalidUser         | Current user's mailbox was not found.                                                  |
+| exchangeOutOfMailboxQuota   | Out of quota.                                                                          |
+| exchangeMaxRecipients       | Exceeded maximum number of recipients that can be sent notifications at the same time. |
 
 >**Note:** The service can add new error codes or stop returning old ones at any time.
 
@@ -224,7 +231,6 @@ Apps are not required to handle these.
 
 Read the [Error Responses][error-response] topic for more information about
 how errors are returned.
-
 
 [error-response]: /graph/errors
 
@@ -239,5 +245,3 @@ how errors are returned.
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "List signIns"
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API."
 localization_priority: Normal
@@ -17,15 +17,16 @@ Retrieve the Azure AD user sign-ins for your tenant. Sign-ins that are interacti
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
-|Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All and Directory.Read.All  |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | AuditLog.Read.All and Directory.Read.All    |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | AuditLog.Read.All and Directory.Read.All    |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET auditLogs/signIns
 ```
@@ -34,37 +35,37 @@ GET auditLogs/signIns
 
 This method supports the following OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
 
-|Name     |Description                            |Example|
-|:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query_parameters#filter-parameter)|Filters results (rows). |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
-|[$top](/graph/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](/graph/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+| Name                                                      | Description                                                                   | Example                                                             |
+| :-------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [$filter](/graph/query_parameters#filter-parameter)       | Filters results (rows).                                                       | `/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`         |
+| [$top](/graph/query_parameters#top-parameter)             | Sets the page size of results.                                                | `/auditLogs/signIns?$top=1`                                         |
+| [$skiptoken](/graph/query_parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. | `/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
 ### Attributes supported by $filter parameter
 
-|Attribute name |Supported operators|
-|:----------------|:------|
-|id|eq|
-|userId|eq|
-|appId|eq|
-|createdDateTime| eq, le, ge|
-|userDisplayName| eq, startswith|
-|userPrincipalName| eq, startswith|
-|appDisplayName| eq, startswith|
-|ipAddress| eq, startswith|
-|location/city| eq, startswith|
-|location/state| eq, startswith|
-|location/countryOrRegion| eq, startswith|
-|status/errorCode|eq|
-|initiatedBy/user/id|eq|
-|initiatedBy/user/displayName| eq|
-|initiatedBy/user/userPrincipalName| eq, startswith|
-|clientAppUsed| eq|
-|conditionalAccessStatus | eq|
-|deviceDetail/browser| eq, startswith|
-|deviceDetail/operatingSystem| eq, startswith|
-|correlationId| eq|
-|isRisky| eq|
+| Attribute name                     | Supported operators |
+| :--------------------------------- | :------------------ |
+| id                                 | eq                  |
+| userId                             | eq                  |
+| appId                              | eq                  |
+| createdDateTime                    | eq, le, ge          |
+| userDisplayName                    | eq, startswith      |
+| userPrincipalName                  | eq, startswith      |
+| appDisplayName                     | eq, startswith      |
+| ipAddress                          | eq, startswith      |
+| location/city                      | eq, startswith      |
+| location/state                     | eq, startswith      |
+| location/countryOrRegion           | eq, startswith      |
+| status/errorCode                   | eq                  |
+| initiatedBy/user/id                | eq                  |
+| initiatedBy/user/displayName       | eq                  |
+| initiatedBy/user/userPrincipalName | eq, startswith      |
+| clientAppUsed                      | eq                  |
+| conditionalAccessStatus            | eq                  |
+| deviceDetail/browser               | eq, startswith      |
+| deviceDetail/operatingSystem       | eq, startswith      |
+| correlationId                      | eq                  |
+| isRisky                            | eq                  |
 
 ## Response
 
@@ -76,33 +77,38 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 Here is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_signins"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-signins-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-signins-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/list-signins-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -115,6 +121,7 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.signIn",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -194,6 +201,7 @@ Content-length: 264
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List signIns",
@@ -203,4 +211,3 @@ Content-length: 264
   "suppressions": [
   ]
 }-->
-

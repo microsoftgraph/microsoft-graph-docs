@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update personWebsite"
 description: "Update the properties of a personWebsite object in a user's profile."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Update the properties of [personWebsite](../resources/personwebsite.md) object i
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
@@ -36,23 +36,23 @@ PATCH /users/{id | userPrincipalName}/profile/websites/{id}
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|String collection|Contains categories a user has associated with the website (for example, personal, recipes).|
-|description|String|Contains a description of the website.|
-|displayName|String|Contains a friendly name for the website.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|webUrl|String|Contains a link to the website itself.|
+| Property         | Type                                           | Description                                                                                                                                                                                                                                                                    |
+| :--------------- | :--------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences | String                                         | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| categories       | String collection                              | Contains categories a user has associated with the website (for example, personal, recipes).                                                                                                                                                                                   |
+| description      | String                                         | Contains a description of the website.                                                                                                                                                                                                                                         |
+| displayName      | String                                         | Contains a friendly name for the website.                                                                                                                                                                                                                                      |
+| inference        | [inferenceData](../resources/inferencedata.md) | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| webUrl           | String                                         | Contains a link to the website itself.                                                                                                                                                                                                                                         |
 
 ## Response
 
@@ -61,9 +61,11 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 ## Examples
 
 ### Request
+
 # [HTTP](#tab/http)
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_personwebsite"
@@ -77,15 +79,19 @@ Content-type: application/json
   "description": "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-personwebsite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-personwebsite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-personwebsite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -137,5 +143,3 @@ Content-type: application/json
   "webUrl": "www.lyndamer.no"
 }
 ```
-
-

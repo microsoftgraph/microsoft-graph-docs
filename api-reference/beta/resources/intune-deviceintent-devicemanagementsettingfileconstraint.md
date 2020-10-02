@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingFileConstraint resource type"
 description: "Constraint enforcing the file extension is acceptable for a given setting"
 author: "dougeby"
@@ -17,25 +17,29 @@ Namespace: microsoft.graph
 
 Constraint enforcing the file extension is acceptable for a given setting
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|supportedExtensions|String collection|Acceptable file extensions to upload for this setting|
+
+| Property            | Type              | Description                                           |
+| :------------------ | :---------------- | :---------------------------------------------------- |
+| supportedExtensions | String collection | Acceptable file extensions to upload for this setting |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingFileConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingFileConstraint",
   "supportedExtensions": [
@@ -43,9 +47,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

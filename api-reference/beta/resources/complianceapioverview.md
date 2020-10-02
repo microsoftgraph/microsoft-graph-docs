@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Graph compliance API"
 description: "The Microsoft Graph Compliance API provides a unified interface and schema to integrate with compliance solutions from Microsoft and ecosystem partners. This can help customers streamline their compliance operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards."
 localization_priority: Priority
@@ -30,6 +30,3 @@ Learn more about [Microsoft 365 eDiscovery APIs](ediscoveryapioverview.md).
 
 ??? Labels should be moved from security to here.  They are currently under a node called Information protection.
 -->
-
-
-

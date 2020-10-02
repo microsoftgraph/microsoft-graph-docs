@@ -1,4 +1,4 @@
----
+﻿---
 title: "mediaContentRatingIreland resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|movieRating|[ratingIrelandMoviesType](../resources/intune-deviceconfig-ratingirelandmoviestype.md)|Movies rating selected for Ireland. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.|
-|tvRating|[ratingIrelandTelevisionType](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|TV rating selected for Ireland. Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.|
+
+| Property    | Type                                                                                           | Description                                                                                                                                                                |
+| :---------- | :--------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| movieRating | [ratingIrelandMoviesType](../resources/intune-deviceconfig-ratingirelandmoviestype.md)         | Movies rating selected for Ireland. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`. |
+| tvRating    | [ratingIrelandTelevisionType](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md) | TV rating selected for Ireland. Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.                    |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingIreland"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingIreland",
   "movieRating": "String",
   "tvRating": "String"
 }
 ```
-
-
-
-
-
-

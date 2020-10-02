@@ -1,4 +1,4 @@
----
+﻿---
 title: "internetExplorerMessageSetting enum type"
 description: "What message will be displayed by Edge before switching to Internet Explorer."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 What message will be displayed by Edge before switching to Internet Explorer.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured.|
-|disabled|1|Disabled.|
-|enabled|2|Enabled.|
-|keepGoing|3|KeepGoing.|
 
-
-
-
-
-
+| Member        | Value | Description     |
+| :------------ | :---- | :-------------- |
+| notConfigured | 0     | Not configured. |
+| disabled      | 1     | Disabled.       |
+| enabled       | 2     | Enabled.        |
+| keepGoing     | 3     | KeepGoing.      |

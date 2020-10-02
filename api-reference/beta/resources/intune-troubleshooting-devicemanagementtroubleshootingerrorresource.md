@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementTroubleshootingErrorResource resource type"
 description: "Object representing a link to troubleshooting information, the link could be to the Azure Portal or a Microsoft doc."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Object representing a link to troubleshooting information, the link could be to the Azure Portal or a Microsoft doc.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|text|String|Not yet documented|
-|link|String|The link to the web resource. Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}|
+
+| Property | Type   | Description                                                                                                      |
+| :------- | :----- | :--------------------------------------------------------------------------------------------------------------- |
+| text     | String | Not yet documented                                                                                               |
+| link     | String | The link to the web resource. Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}} |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingErrorResource",
   "text": "String",
   "link": "String"
 }
 ```
-
-
-
-
-
-

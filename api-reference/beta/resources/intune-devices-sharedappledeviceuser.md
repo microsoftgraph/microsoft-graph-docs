@@ -1,4 +1,4 @@
----
+﻿---
 title: "sharedAppleDeviceUser resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|userPrincipalName|String|User name|
-|dataToSync|Boolean|Data to sync|
-|dataQuota|Int64|Data quota|
-|dataUsed|Int64|Data quota|
+
+| Property          | Type    | Description  |
+| :---------------- | :------ | :----------- |
+| userPrincipalName | String  | User name    |
+| dataToSync        | Boolean | Data to sync |
+| dataQuota         | Int64   | Data quota   |
+| dataUsed          | Int64   | Data quota   |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.sharedAppleDeviceUser"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.sharedAppleDeviceUser",
   "userPrincipalName": "String",
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   "dataUsed": 1024
 }
 ```
-
-
-
-
-
-

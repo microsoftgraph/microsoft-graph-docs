@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidForWorkVpnConnectionType enum type"
 description: "Android For Work VPN connection type."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Android For Work VPN connection type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|ciscoAnyConnect|0|Cisco AnyConnect.|
-|pulseSecure|1|Pulse Secure.|
-|f5EdgeClient|2|F5 Edge Client.|
-|dellSonicWallMobileConnect|3|Dell SonicWALL Mobile Connection.|
-|checkPointCapsuleVpn|4|Check Point Capsule VPN.|
-|citrix|5|Citrix|
 
-
-
-
-
-
+| Member                     | Value | Description                       |
+| :------------------------- | :---- | :-------------------------------- |
+| ciscoAnyConnect            | 0     | Cisco AnyConnect.                 |
+| pulseSecure                | 1     | Pulse Secure.                     |
+| f5EdgeClient               | 2     | F5 Edge Client.                   |
+| dellSonicWallMobileConnect | 3     | Dell SonicWALL Mobile Connection. |
+| checkPointCapsuleVpn       | 4     | Check Point Capsule VPN.          |
+| citrix                     | 5     | Citrix                            |

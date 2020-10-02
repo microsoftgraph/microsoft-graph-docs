@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedDeviceManagementFeatures enum type"
 description: "Device management features."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Device management features.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Unknown device management features.|
-|microsoftManagedDesktop|1|Microsoft Managed Desktop|
 
-
-
-
-
-
+| Member                  | Value | Description                         |
+| :---------------------- | :---- | :---------------------------------- |
+| none                    | 0     | Unknown device management features. |
+| microsoftManagedDesktop | 1     | Microsoft Managed Desktop           |

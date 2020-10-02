@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create schema"
 description: "Create the schema for a Microsoft Search connection."
 localization_priority: Normal
@@ -22,10 +22,10 @@ Create the schema for a Microsoft Search [connection](../resources/externalconne
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ExternalItem.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ POST /external/connections/{id}/schema
 ## Request headers
 
 | Name                  | Description                                                        |
-|:----------------------|:-------------------------------------------------------------------|
+| :-------------------- | :----------------------------------------------------------------- |
 | Authorization         | Bearer {token}. Required.                                          |
 | Content-Type          | application/json. Required.                                        |
 | Prefer: respond-async | Use this to cause the request to execute asynchronously. Optional. |
@@ -67,6 +67,7 @@ Without the `Prefer: respond-async` header included in the request, if successfu
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_schema_from_connection_async"
@@ -104,22 +105,28 @@ Prefer: respond-async
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-async-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-async-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-async-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 <!-- markdownlint-disable MD024 -->
+
 #### Response
+
 <!-- markdownlint-enable MD024 -->
 
 The following is an example of the response.
@@ -136,6 +143,7 @@ Location: https://graph.microsoft.com/beta/external/connections/contosohr/operat
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create externalItem",
@@ -143,5 +151,3 @@ Location: https://graph.microsoft.com/beta/external/connections/contosohr/operat
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

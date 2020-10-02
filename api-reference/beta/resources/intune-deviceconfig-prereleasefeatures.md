@@ -1,4 +1,4 @@
----
+﻿---
 title: "prereleaseFeatures enum type"
 description: "Possible values for pre-release features."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for pre-release features.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userDefined|0|User Defined, default value, no intent.|
-|settingsOnly|1|Settings only pre-release features.|
-|settingsAndExperimentations|2|Settings and experimentations pre-release features.|
-|notAllowed|3|Pre-release features not allowed.|
 
-
-
-
-
-
+| Member                      | Value | Description                                         |
+| :-------------------------- | :---- | :-------------------------------------------------- |
+| userDefined                 | 0     | User Defined, default value, no intent.             |
+| settingsOnly                | 1     | Settings only pre-release features.                 |
+| settingsAndExperimentations | 2     | Settings and experimentations pre-release features. |
+| notAllowed                  | 3     | Pre-release features not allowed.                   |

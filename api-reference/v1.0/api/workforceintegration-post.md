@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create workforceIntegration"
 description: "Create a new workforceIntegration object."
 localization_priority: Normal
@@ -19,10 +19,10 @@ You can set up which entities you want to receive Shifts synchronous change noti
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -36,10 +36,10 @@ POST /teamwork/workforceIntegrations
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -55,8 +55,8 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_workforceintegration_from_teamwork"
@@ -78,26 +78,30 @@ Content-type: application/json
   "supportedEntities": "supportedEntities-value"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-workforceintegration-from-teamwork-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-workforceintegration-from-teamwork-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-workforceintegration-from-teamwork-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-workforceintegration-from-teamwork-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ---
-
 
 ### Response
 
@@ -132,9 +136,12 @@ Content-type: application/json
 
 ### Use case: Create a new WorkforceIntegration with SwapRequest enabled for eligibility filtering
 
+
+
 ### Request
 
 The following is an example of the request. 
+
 ```
 POST https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/
 {
@@ -152,9 +159,11 @@ POST https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
+
 ### Response
 
 The following is an example of the response.
+
 ```
 HTTP/1.1 200 OK
 {
@@ -172,9 +181,11 @@ HTTP/1.1 200 OK
 }
 
 ```
+
 To see how to update an existing workforceintegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).
 
 ## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
+
 The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
 
 ### Request
@@ -193,9 +204,11 @@ Accept-Language: en-us
    }]
 }
 ```
+
 ### Response
 
 The following is an example of the response from the workforce integration service.
+
 ```
 HTTP/1.1 200 OK
 {
@@ -215,9 +228,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create workforceIntegration",
@@ -225,4 +238,3 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-

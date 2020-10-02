@@ -1,4 +1,4 @@
----
+﻿---
 title: "securityBaselineComplianceState enum type"
 description: "Security Baseline Compliance State"
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Security Baseline Compliance State
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown state|
-|secure|1|Secure state|
-|notApplicable|2|Not applicable state|
-|notSecure|3|Not secure state|
-|error|4|Error state|
-|conflict|5|Conflict state|
 
-
-
-
-
-
+| Member        | Value | Description          |
+| :------------ | :---- | :------------------- |
+| unknown       | 0     | Unknown state        |
+| secure        | 1     | Secure state         |
+| notApplicable | 2     | Not applicable state |
+| notSecure     | 3     | Not secure state     |
+| error         | 4     | Error state          |
+| conflict      | 5     | Conflict state       |

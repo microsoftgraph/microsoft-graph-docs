@@ -1,4 +1,4 @@
----
+﻿---
 title: "workbookRangeSort resource type"
 description: "Manages sorting operations on Range objects."
 author: "lumine2008"
@@ -15,17 +15,18 @@ Namespace: microsoft.graph
 
 Manages sorting operations on Range objects.
 
-
 ## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Apply](../api/rangesort-apply.md)|None|Perform a sort operation.|
+| Method                             | Return Type | Description               |
+| :--------------------------------- | :---------- | :------------------------ |
+| [Apply](../api/rangesort-apply.md) | None        | Perform a sort operation. |
 
 ## Properties
+
 None
 
 ## Relationships
+
 None
 
 <!-- {
@@ -44,6 +45,7 @@ None
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -54,5 +56,3 @@ None
   "suppressions": []
 }
 -->
-
-

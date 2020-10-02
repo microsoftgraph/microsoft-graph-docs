@@ -1,4 +1,4 @@
----
+﻿---
 title: "variableManagementConditionExpression resource type"
 description: "Evaluates the management condition state as a Boolean expression."
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 Evaluates the management condition state as a Boolean expression.
 
-
 Inherits from [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|managementConditionId|String|The management condition id that is used to evaluate the expression.|
+
+| Property              | Type   | Description                                                          |
+| :-------------------- | :----- | :------------------------------------------------------------------- |
+| managementConditionId | String | The management condition id that is used to evaluate the expression. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.variableManagementConditionExpression"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.variableManagementConditionExpression",
   "managementConditionId": "String"
 }
 ```
-
-
-
-
-
-

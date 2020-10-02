@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementAutopilotPolicyComplianceStatus enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Not yet documented|
-|compliant|1|Not yet documented|
-|installed|2|Not yet documented|
-|notCompliant|3|Not yet documented|
-|notInstalled|4|Not yet documented|
-|error|5|Not yet documented|
 
-
-
-
-
-
+| Member       | Value | Description        |
+| :----------- | :---- | :----------------- |
+| unknown      | 0     | Not yet documented |
+| compliant    | 1     | Not yet documented |
+| installed    | 2     | Not yet documented |
+| notCompliant | 3     | Not yet documented |
+| notInstalled | 4     | Not yet documented |
+| error        | 5     | Not yet documented |

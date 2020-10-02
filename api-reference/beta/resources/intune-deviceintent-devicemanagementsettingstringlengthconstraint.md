@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingStringLengthConstraint resource type"
 description: "Constraint enforcing a given string length range"
 author: "dougeby"
@@ -17,35 +17,33 @@ Namespace: microsoft.graph
 
 Constraint enforcing a given string length range
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|minimumLength|Int32|The minimum permitted string length|
-|maximumLength|Int32|The maximum permitted string length|
+
+| Property      | Type  | Description                         |
+| :------------ | :---- | :---------------------------------- |
+| minimumLength | Int32 | The minimum permitted string length |
+| maximumLength | Int32 | The maximum permitted string length |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingStringLengthConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingStringLengthConstraint",
   "minimumLength": 1024,
   "maximumLength": 1024
 }
 ```
-
-
-
-
-
-

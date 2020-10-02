@@ -1,4 +1,4 @@
----
+﻿---
 title: "tokenMeetingInfo resource type"
 description: "The tokenMeetingInfo type."
 author: "ananmishr"
@@ -19,9 +19,9 @@ In the event that a call is disconnected, this information can help you rejoin t
 
 ## Properties
 
-| Property                     | Type    | Description                                                                    |
-| :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| token                        | String  | The token used to join the call.                                                 |
+| Property | Type   | Description                      |
+| :------- | :----- | :------------------------------- |
+| token    | String | The token used to join the call. |
 
 ## JSON representation
 
@@ -34,6 +34,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
+
 ```json
 {
     "token": "String"
@@ -42,6 +43,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -52,5 +54,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

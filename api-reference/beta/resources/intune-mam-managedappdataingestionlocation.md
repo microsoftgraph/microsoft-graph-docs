@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppDataIngestionLocation enum type"
 description: "Locations which can be used to bring data into organization documents"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Locations which can be used to bring data into organization documents
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|oneDriveForBusiness|1|OneDrive for business|
-|sharePoint|2|SharePoint Online|
-|camera|3|The device's camera|
 
-
-
-
-
-
+| Member              | Value | Description           |
+| :------------------ | :---- | :-------------------- |
+| oneDriveForBusiness | 1     | OneDrive for business |
+| sharePoint          | 2     | SharePoint Online     |
+| camera              | 3     | The device's camera   |

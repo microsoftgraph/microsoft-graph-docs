@@ -1,4 +1,4 @@
----
+﻿---
 title: "defenderSubmitSamplesConsentType enum type"
 description: "Possible values for DefenderSubmitSamplesConsentType"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for DefenderSubmitSamplesConsentType
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|sendSafeSamplesAutomatically|0|Send safe samples automatically|
-|alwaysPrompt|1|Always prompt|
-|neverSend|2|Never send|
-|sendAllSamplesAutomatically|3|Send all samples automatically|
 
-
-
-
-
-
+| Member                       | Value | Description                     |
+| :--------------------------- | :---- | :------------------------------ |
+| sendSafeSamplesAutomatically | 0     | Send safe samples automatically |
+| alwaysPrompt                 | 1     | Always prompt                   |
+| neverSend                    | 2     | Never send                      |
+| sendAllSamplesAutomatically  | 3     | Send all samples automatically  |

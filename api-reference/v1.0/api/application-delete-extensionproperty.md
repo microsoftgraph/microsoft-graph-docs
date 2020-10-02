@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete extensionProperty"
 description: "Delete an extensionProperty."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Delete an [extensionProperty](../resources/extensionproperty.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)              |
+| :------------------------------------- | :------------------------------------------------------- |
+| Delegated (work or school account)     | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegated (personal Microsoft account) | Not supported.                                           |
+| Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
 
@@ -33,9 +33,9 @@ DELETE /applications/{id}/extensionProperties/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:----------|
-| Authorization  | Bearer {token}. Required.  |
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -52,6 +52,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_extensionproperty"
@@ -60,24 +61,28 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/applications/{id}/extensionProperties/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-extensionproperty-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-extensionproperty-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-extensionproperty-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/delete-extensionproperty-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -94,6 +99,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Delete extensionProperty",
@@ -101,4 +107,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

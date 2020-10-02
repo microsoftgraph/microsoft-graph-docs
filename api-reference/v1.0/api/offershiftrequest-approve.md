@@ -1,4 +1,4 @@
----
+﻿---
 title: "offerShiftRequest: approve"
 description: "Approve an offerShiftRequest object."
 localization_priority: Normal
@@ -18,11 +18,10 @@ Approve an [offerShiftRequest](../resources/offershiftrequest.md) object.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Schedule.ReadWrite.All |
-
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Schedule.ReadWrite.All                      |
 
 ## HTTP request
 
@@ -34,18 +33,18 @@ POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|message|String|Custom message sent on approval.|
+| Parameter | Type   | Description                      |
+| :-------- | :----- | :------------------------------- |
+| message   | String | Custom message sent on approval. |
 
 ## Response
 
@@ -57,8 +56,8 @@ If successful, this method returns a `200 OK` response code. It does not return 
 
 The following example shows a request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "offershiftrequest_approve"
@@ -72,19 +71,24 @@ Content-type: application/json
   "message": "Approved!"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/offershiftrequest-approve-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-approve-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/offershiftrequest-approve-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/offershiftrequest-approve-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,10 +96,10 @@ Content-type: application/json
 
 ---
 
-
 ### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,6 +112,7 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "offerShiftRequest: approve",
@@ -115,4 +120,3 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-

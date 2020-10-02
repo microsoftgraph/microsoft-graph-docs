@@ -1,4 +1,4 @@
----
+﻿---
 title: "List callRecord sessions"
 description: "Retrieve the list of session objects for a callRecord."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Retrieve the list of [sessions](../resources/callrecords-session.md) associated 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | CallRecords.Read.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | CallRecords.Read.All                        |
 
 ## HTTP request
 
@@ -39,8 +39,8 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -380,6 +380,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List sessions",
@@ -387,5 +388,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

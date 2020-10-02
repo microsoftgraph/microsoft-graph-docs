@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingIntegerConstraint resource type"
 description: "Constraint enforcing the permitted value range for an integer setting"
 author: "dougeby"
@@ -17,35 +17,33 @@ Namespace: microsoft.graph
 
 Constraint enforcing the permitted value range for an integer setting
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|minimumValue|Int32|The minimum permitted value|
-|maximumValue|Int32|The maximum permitted value|
+
+| Property     | Type  | Description                 |
+| :----------- | :---- | :-------------------------- |
+| minimumValue | Int32 | The minimum permitted value |
+| maximumValue | Int32 | The maximum permitted value |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingIntegerConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingIntegerConstraint",
   "minimumValue": 1024,
   "maximumValue": 1024
 }
 ```
-
-
-
-
-
-

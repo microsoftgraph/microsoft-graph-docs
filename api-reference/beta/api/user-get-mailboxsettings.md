@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get user mailbox settings"
 description: "Get the user's mailboxSettings. This includes settings for automatic replies (notify people automatically upon "
 localization_priority: Normal
@@ -34,24 +34,30 @@ Users can set the time zone they prefer on any Outlook client, by choosing from 
 This `GET` operation returns the user's preferred time zone in the format that the administrator has set up. If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md). Subsequently you will be able to get the time zone in that format. Alternatively, you can manage the format conversion separately in your app. 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
-|Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite    |
-|Application | MailboxSettings.Read, MailboxSettings.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged)     |
+| :------------------------------------- | :---------------------------------------------- |
+| Delegated (work or school account)     | MailboxSettings.Read, MailboxSettings.ReadWrite |
+| Delegated (personal Microsoft account) | MailboxSettings.Read, MailboxSettings.ReadWrite |
+| Application                            | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## HTTP request
+
 To get all the mailbox settings for a user:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
 To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, working hours, or user purpose:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -77,14 +83,19 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 GET /me/mailboxSettings/userPurpose
 GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
+
 ## Optional query parameters
+
 This method supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -104,35 +115,45 @@ If successful, this method returns a `200 OK` response code and one of the follo
 ## Examples
 
 ### Example 1
+
 #### Request 
+
 The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format, 
 locale (language and country/region), time format, time zone, working hours, and user purpose.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailboxSettings
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
+
 The response includes all the mailbox settings of the signed-in user. 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -188,34 +209,44 @@ Content-type: application/json
 ```
 
 ### Example 2
+
 #### Request
+
 The second example gets specifically the automatic replies settings of the signed-in user's mailbox.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_2"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
+
 The response includes only the automatic replies settings. 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -244,18 +275,25 @@ Content-type: application/json
 ```
 
 ### Example 3
+
 #### Request
+
 The third example gets specifically the working hour settings of the signed-in user's mailbox.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/mailboxSettings/workingHours
 ```
+
 #### Response
+
 The response includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md). 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",
@@ -303,32 +341,41 @@ Content-type: application/json
 ```
 
 ### Example 4
+
 #### Request
+
 The fourth example gets specifically the [user purpose](../resources/userpurpose.md) settings of the signed-in user's mailbox.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_4"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
+
 The response includes only the [user purpose](../resources/userpurpose.md) settings.
 
 <!-- {
@@ -350,6 +397,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -361,5 +409,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

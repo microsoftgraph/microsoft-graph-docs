@@ -1,4 +1,4 @@
----
+﻿---
 title: "callMediaState resource type"
 description: "Represents the media state for a call."
 author: "ananmishr"
@@ -11,14 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
 Represents the media state for a [call](call.md).
 
 ## Properties
 
-| Property            | Type    | Description                                                                    |
-|:--------------------|:--------|:-------------------------------------------------------------------------------|
-| audio           | String  | The audio media state. Possible values are: `active`, `inactive`. |
+| Property | Type   | Description                                                       |
+| :------- | :----- | :---------------------------------------------------------------- |
+| audio    | String | The audio media state. Possible values are: `active`, `inactive`. |
 
 ## JSON representation
 
@@ -31,6 +30,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.callMediaState"
 }-->
+
 ```json
 {
   "audio": "active | inactive",
@@ -39,6 +39,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "callMediaState resource",
@@ -46,4 +47,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

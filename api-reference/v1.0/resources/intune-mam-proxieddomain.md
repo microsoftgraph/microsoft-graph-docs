@@ -1,4 +1,4 @@
----
+﻿---
 title: "proxiedDomain resource type"
 description: "Proxied Domain"
 author: "dougeby"
@@ -16,34 +16,30 @@ Namespace: microsoft.graph
 Proxied Domain
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|ipAddressOrFQDN|String|The IP address or FQDN|
-|proxy|String|Proxy IP or FQDN|
+
+| Property        | Type   | Description            |
+| :-------------- | :----- | :--------------------- |
+| ipAddressOrFQDN | String | The IP address or FQDN |
+| proxy           | String | Proxy IP or FQDN       |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.proxiedDomain"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.proxiedDomain",
   "ipAddressOrFQDN": "String",
   "proxy": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

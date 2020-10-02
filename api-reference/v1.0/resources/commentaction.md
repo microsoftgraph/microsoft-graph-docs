@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: commentAction resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # commentAction resource type
 
 Namespace: microsoft.graph
@@ -19,11 +20,11 @@ The **commentAction** resource provides information about a comment [activity][]
 
 ## Properties
 
-| Property name    | Type                       | Description
-|:-----------------|:---------------------------|:-----------------------------
-| isReply          | boolean                    | If true, this activity was a reply to an existing comment thread.
-| parentAuthor     | [identitySet][]            | The identity of the user who started the comment thread.
-| participants     | [identitySet][] collection | The identities of the users participating in this comment thread.
+| Property name | Type                       | Description                                                       |
+| :------------ | :------------------------- | :---------------------------------------------------------------- |
+| isReply       | boolean                    | If true, this activity was a reply to an existing comment thread. |
+| parentAuthor  | [identitySet][]            | The identity of the user who started the comment thread.          |
+| participants  | [identitySet][] collection | The identities of the users participating in this comment thread. |
 
 [identitySet]: identityset.md
 
@@ -42,6 +43,7 @@ The **commentAction** resource provides information about a comment [activity][]
   "participants": [{"@odata.type": "microsoft.graph.identitySet"}]
 }
 ```
+
 <!--
 {
   "type": "#page.annotation",
@@ -52,4 +54,3 @@ The **commentAction** resource provides information about a comment [activity][]
   "suppressions": []
 }
 -->
-

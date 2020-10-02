@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceHealthScriptParameter resource type"
 description: "Base properties of the script parameter."
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 Base properties of the script parameter.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|name|String|The name of the param|
-|description|String|The description of the param|
-|isRequired|Boolean|Whether the param is required|
-|applyDefaultValueWhenNotAssigned|Boolean|Whether Apply DefaultValue When Not Assigned|
+
+| Property                         | Type    | Description                                  |
+| :------------------------------- | :------ | :------------------------------------------- |
+| name                             | String  | The name of the param                        |
+| description                      | String  | The description of the param                 |
+| isRequired                       | Boolean | Whether the param is required                |
+| applyDefaultValueWhenNotAssigned | Boolean | Whether Apply DefaultValue When Not Assigned |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceHealthScriptParameter"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptParameter",
   "name": "String",
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   "applyDefaultValueWhenNotAssigned": true
 }
 ```
-
-
-
-
-
-

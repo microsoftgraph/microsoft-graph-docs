@@ -1,4 +1,4 @@
----
+﻿---
 title: "SharePoint activity reports"
 description: "You can use the SharePoint activity reports to get the activity of every user licensed to use SharePoint by looking at their interaction with files. You can also look at the level of collaboration going on based on the number of files shared."
 localization_priority: Normal
@@ -17,10 +17,9 @@ You can use the SharePoint activity reports to get the activity of every user li
 
 ## Reports
 
-| Function                                 | Return Type | Description                              |
-| :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Get user detail](../api/reportroot-getsharepointactivityuserdetail.md) | Stream      | Get details about SharePoint activity by user. |
-| [Get file counts](../api/reportroot-getsharepointactivityfilecounts.md) | Stream      | Get the number of unique, licensed users who interacted with files stored on SharePoint sites. |
+| Function                                                                | Return Type | Description                                                                                                                                                                                           |
+| :---------------------------------------------------------------------- | :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Get user detail](../api/reportroot-getsharepointactivityuserdetail.md) | Stream      | Get details about SharePoint activity by user.                                                                                                                                                        |
+| [Get file counts](../api/reportroot-getsharepointactivityfilecounts.md) | Stream      | Get the number of unique, licensed users who interacted with files stored on SharePoint sites.                                                                                                        |
 | [Get user counts](../api/reportroot-getsharepointactivityusercounts.md) | Stream      | Get the trend in the number of active users. A user is considered active if he or she has executed a file activity (save, sync, modify, or share) or visited a page within the specified time period. |
-| [Get pages](../api/reportroot-getsharepointactivitypages.md) | Stream      | Get the number of unique pages visited by users. |
-
+| [Get pages](../api/reportroot-getsharepointactivitypages.md)            | Stream      | Get the number of unique pages visited by users.                                                                                                                                                      |

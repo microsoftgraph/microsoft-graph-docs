@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: renameAction resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # renameAction resource type
 
 Namespace: microsoft.graph
@@ -19,10 +20,10 @@ The presence of the **renameAction** resource on an [**itemActivity**][activity]
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| oldName       | string | The previous name of the item.
-| newName       | string | The new name of the item.
+| Property name | Type   | Description                    |
+| :------------ | :----- | :----------------------------- |
+| oldName       | string | The previous name of the item. |
+| newName       | string | The new name of the item.      |
 
 ## JSON representation
 
@@ -49,4 +50,3 @@ The presence of the **renameAction** resource on an [**itemActivity**][activity]
   "suppressions": []
 }
 -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "bookingNamedEntity resource type"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
 localization_priority: Normal
@@ -12,18 +12,19 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 This is a base type for Microsoft Bookings entities that provide a display name, for example, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|displayName|String|A name for the derived entity, which interfaces with customers.|
-|id|String| The ID for the derived entity. Read-only.|
+
+| Property    | Type   | Description                                                     |
+| :---------- | :----- | :-------------------------------------------------------------- |
+| displayName | String | A name for the derived entity, which interfaces with customers. |
+| id          | String | The ID for the derived entity. Read-only.                       |
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 
@@ -47,6 +48,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -57,5 +59,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

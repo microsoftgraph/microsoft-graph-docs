@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsAutopilotDeviceType enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|windowsPc|0|Windows PC|
-|surfaceHub2|1|Surface Hub 2|
-|holoLens|2|HoloLens|
 
-
-
-
-
-
+| Member      | Value | Description   |
+| :---------- | :---- | :------------ |
+| windowsPc   | 0     | Windows PC    |
+| surfaceHub2 | 1     | Surface Hub 2 |
+| holoLens    | 2     | HoloLens      |

@@ -1,4 +1,4 @@
----
+﻿---
 author: learafa
 ms.author: learafa
 title: Grant permission
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # permission: grant
 
 Namespace: microsoft.graph
@@ -17,11 +18,11 @@ Grant users access to a link represented by a [permission][].
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                   | Permissions (from least to most privileged)              |
-|:----------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported                                             |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -33,8 +34,8 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 ## Request headers
 
-| Name          | Description  |
-|:------------- |:------------ |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
 | Authorization | Bearer \{token\}. Required. |
 
 ## Request body
@@ -52,10 +53,10 @@ In the request body, provide a JSON object with the following parameters.
 }
 ```
 
-| Parameter          | Type                           | Description
-|:-------------------|:-------------------------------|:-------------------------
-| recipients         | Collection([driveRecipient][]) | A collection of recipients who will receive access.
-| roles              | Collection(String)             | If the link is an "existing access" link, specifies roles to be granted to the users. Otherwise must match the role of the link.
+| Parameter  | Type                           | Description                                                                                                                      |
+| :--------- | :----------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| recipients | Collection([driveRecipient][]) | A collection of recipients who will receive access.                                                                              |
+| roles      | Collection(String)             | If the link is an "existing access" link, specifies roles to be granted to the users. Otherwise must match the role of the link. |
 
 For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
 
@@ -67,15 +68,14 @@ A [permission][] representing the updated link will always be returned in the re
 
 Read the [Error Responses][error-response] topic for more info about how errors are returned.
 
-
 ## Example
 
 This example grants the users john@contoso.com and ryan@external.com access to a sharing link without modifying other existing permissions on the link.
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "permission-grant", "scopes": "files.readwrite", "target": "action" } -->
 
 ```json
@@ -94,24 +94,28 @@ Content-type: application/json
   "roles": ["read"]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/permission-grant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/permission-grant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/permission-grant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/permission-grant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -207,8 +211,6 @@ Content-type: application/json
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-
-
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
 [permission]: ../resources/permission.md
@@ -221,4 +223,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Add permissions"
 } -->
-

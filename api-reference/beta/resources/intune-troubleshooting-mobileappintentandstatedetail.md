@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileAppIntentAndStateDetail resource type"
 description: "Mobile App Intent and Install State for a given device."
 author: "dougeby"
@@ -18,26 +18,31 @@ Namespace: microsoft.graph
 Mobile App Intent and Install State for a given device.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|applicationId|String|MobieApp identifier.|
-|displayName|String|The admin provided or imported title of the app.|
-|mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md)|Mobile App Intent. Possible values are: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment`, `exclude`.|
-|displayVersion|String|Human readable version of the application|
-|installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|supportedDeviceTypes|[mobileAppSupportedDeviceType](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md) collection|The supported platforms for the app.|
+
+| Property             | Type                                                                                                           | Description                                                                                                                                                                                 |
+| :------------------- | :------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| applicationId        | String                                                                                                         | MobieApp identifier.                                                                                                                                                                        |
+| displayName          | String                                                                                                         | The admin provided or imported title of the app.                                                                                                                                            |
+| mobileAppIntent      | [mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md)                                      | Mobile App Intent. Possible values are: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment`, `exclude`. |
+| displayVersion       | String                                                                                                         | Human readable version of the application                                                                                                                                                   |
+| installState         | [resultantAppState](../resources/intune-shared-resultantappstate.md)                                           | The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.                                  |
+| supportedDeviceTypes | [mobileAppSupportedDeviceType](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md) collection | The supported platforms for the app.                                                                                                                                                        |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppIntentAndStateDetail"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mobileAppIntentAndStateDetail",
   "applicationId": "String",
@@ -55,9 +60,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

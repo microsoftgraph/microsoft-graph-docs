@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppPolicyDeploymentSummaryPerApp resource type"
 description: "Represents policy deployment summary per app."
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 Represents policy deployment summary per app.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Deployment of an app.|
-|configurationAppliedUserCount|Int32|Number of users the policy is applied.|
+
+| Property                      | Type                                                                  | Description                            |
+| :---------------------------- | :-------------------------------------------------------------------- | :------------------------------------- |
+| mobileAppIdentifier           | [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md) | Deployment of an app.                  |
+| configurationAppliedUserCount | Int32                                                                 | Number of users the policy is applied. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
   "mobileAppIdentifier": {
@@ -43,9 +48,3 @@ Here is a JSON representation of the resource.
   "configurationAppliedUserCount": 1024
 }
 ```
-
-
-
-
-
-

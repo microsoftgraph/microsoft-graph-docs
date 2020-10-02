@@ -1,4 +1,4 @@
----
+﻿---
 title: "appConfigurationSettingItem resource type"
 description: "Contains properties for App configuration setting item."
 author: "dougeby"
@@ -16,23 +16,28 @@ Namespace: microsoft.graph
 Contains properties for App configuration setting item.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|appConfigKey|String|app configuration key.|
-|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune-apps-mdmappconfigkeytype.md)|app configuration key type. Possible values are: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
-|appConfigKeyValue|String|app configuration key value.|
+
+| Property          | Type                                                                   | Description                                                                                                           |
+| :---------------- | :--------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
+| appConfigKey      | String                                                                 | app configuration key.                                                                                                |
+| appConfigKeyType  | [mdmAppConfigKeyType](../resources/intune-apps-mdmappconfigkeytype.md) | app configuration key type. Possible values are: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`. |
+| appConfigKeyValue | String                                                                 | app configuration key value.                                                                                          |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appConfigurationSettingItem"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.appConfigurationSettingItem",
   "appConfigKey": "String",
@@ -40,12 +45,3 @@ Here is a JSON representation of the resource.
   "appConfigKeyValue": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

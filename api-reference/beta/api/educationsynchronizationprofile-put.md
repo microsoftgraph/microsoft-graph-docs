@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update an educationSynchronizationProfile"
 description: "Update properties for an existing school data synchronization profile in the tenant."
 author: "mmast-msft"
@@ -16,39 +16,49 @@ Namespace: microsoft.graph
 Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions |
-|:-----------|:----------|
-| Delegated (work or school account) | EduAdministration.ReadWrite |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
+| Permission type                       | Permissions                 |
+| :------------------------------------ | :-------------------------- |
+| Delegated (work or school account)    | EduAdministration.ReadWrite |
+| Delegated (personal Microsoft account | Not supported.              |
+| Application                           | Not supported.              |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PUT /synchronizationProfiles
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
-| Content-Type | string | application/json. Required. |
+
+| Name          | Type   | Description                 |
+| :------------ | :----- | :-------------------------- |
+| Authorization | string | Bearer {token}. Required.   |
+| Content-Type  | string | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the [synchronizationProfile](../resources/educationsynchronizationprofile.md) object.
 
 ## Response
+
 If successful, this method returns a `202, Accepted` response code and a [synchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.
 
 ## Example
+
 ##### Request
+
 Here is an example of the request.
+
 <!-- {
   "blockType": "ignored",
   "name": "update_synchronizationProfile"
 }-->
+
 ```http
 PUT https://graph.microsoft.com/beta/education/synchronizationProfiles
 Content-type: application/json
@@ -97,6 +107,7 @@ Content-type: application/json
 ```
 
 ##### Response
+
 Here is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -106,6 +117,7 @@ Here is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-type: application/json
@@ -185,5 +197,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

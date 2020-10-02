@@ -1,4 +1,4 @@
----
+﻿---
 title: "configurationManagerAction resource type"
 description: "Parameter for action triggerConfigurationManagerAction"
 author: "dougeby"
@@ -18,29 +18,28 @@ Namespace: microsoft.graph
 Parameter for action triggerConfigurationManagerAction
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|action|[configurationManagerActionType](../resources/intune-devices-configurationmanageractiontype.md)|The action type to trigger on Configuration Manager client. Possible values are: `refreshMachinePolicy`, `refreshUserPolicy`, `wakeUpClient`, `appEvaluation`.|
+
+| Property | Type                                                                                            | Description                                                                                                                                                    |
+| :------- | :---------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| action   | [configurationManagerActionType](../resources/intune-devices-configurationmanageractiontype.md) | The action type to trigger on Configuration Manager client. Possible values are: `refreshMachinePolicy`, `refreshUserPolicy`, `wakeUpClient`, `appEvaluation`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.configurationManagerAction"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.configurationManagerAction",
   "action": "String"
 }
 ```
-
-
-
-
-
-

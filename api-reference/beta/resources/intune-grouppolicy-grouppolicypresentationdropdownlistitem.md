@@ -1,4 +1,4 @@
----
+﻿---
 title: "groupPolicyPresentationDropdownListItem resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Localized display name for the drop-down list item.|
-|value|String|Associated value for the drop-down list item|
+
+| Property    | Type   | Description                                         |
+| :---------- | :----- | :-------------------------------------------------- |
+| displayName | String | Localized display name for the drop-down list item. |
+| value       | String | Associated value for the drop-down list item        |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.groupPolicyPresentationDropdownListItem"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.groupPolicyPresentationDropdownListItem",
   "displayName": "String",
   "value": "String"
 }
 ```
-
-
-
-
-
-

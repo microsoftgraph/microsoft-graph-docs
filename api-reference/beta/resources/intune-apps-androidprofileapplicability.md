@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidProfileApplicability enum type"
 description: "Android profile applicability"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Android profile applicability
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|default|0|Not yet documented|
-|androidWorkProfile|1|Not yet documented|
-|androidDeviceOwner|2|Not yet documented|
 
-
-
-
-
-
+| Member             | Value | Description        |
+| :----------------- | :---- | :----------------- |
+| default            | 0     | Not yet documented |
+| androidWorkProfile | 1     | Not yet documented |
+| androidDeviceOwner | 2     | Not yet documented |

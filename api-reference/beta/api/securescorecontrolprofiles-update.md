@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update secureScoreControlProfiles"
 description: "Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Update an editable **secureScoreControlProfiles** property within any integrated
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |   SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | SecurityEvents.ReadWrite.All                |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | SecurityEvents.ReadWrite.All                |
 
 ## HTTP request
 
@@ -35,21 +35,20 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization  | Bearer {code}. Required.|
-|Prefer | return=representation. |
+| Name          | Description              |
+| :------------ | :----------------------- |
+| Authorization | Bearer {code}. Required. |
+| Prefer        | return=representation.   |
 
 ## Request body
 
 In the request body, supply a JSON representation of the values for relevant fields that should be updated. The following table lists the fields that can be updated for a secureScoreControlProfile. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|assignedTo|String|Name of the analyst the control is assigned to for triage, implementation, or remediation.|
-|tenantNote|String|Analyst comments on the control (for customer control management).|
-|controlStateUpdates| String|Analyst driven setting on the control. Possible values are: `ignore`, `thirdParty`, `reviewed`.|
-
+| Property            | Type   | Description                                                                                     |
+| :------------------ | :----- | :---------------------------------------------------------------------------------------------- |
+| assignedTo          | String | Name of the analyst the control is assigned to for triage, implementation, or remediation.      |
+| tenantNote          | String | Analyst comments on the control (for customer control management).                              |
+| controlStateUpdates | String | Analyst driven setting on the control. Possible values are: `ignore`, `thirdParty`, `reviewed`. |
 
 ## Response
 
@@ -64,6 +63,7 @@ If the optional request header is used, the method returns a `200 OK` response c
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "securescorecontrolprofiles_update"
@@ -77,24 +77,28 @@ Content-type: application/json
   "controlStateUpdates": "controlStateUpdates-value"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
 The following is an example of a successful response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,9 +108,6 @@ The following is an example of a successful response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-
-
 
 <!--
 {
@@ -119,5 +120,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get attachment"
 description: "Read the properties and relationships of an attachment, attached to an event, message, Outlook task, or post."
 localization_priority: Normal
@@ -27,17 +27,18 @@ All these types of attachment resources are derived from the [attachment](../res
 resource.
 
 ### Get the raw contents of a file or item attachment
+
 You can append the path segment `/$value` to get the raw contents of a file or item attachment. 
 
 For a file attachment, the content type is based on its original content type. See an [example](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) below.
 
 For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw contents returned is in MIME format.
 
-| Item attachment type  | Raw contents returned |
-|:-----------|:----------|
-| **contact** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format. See [example](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
-| **event** | iCal MIME format. See [example](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
-| **message** | MIME format. See [example](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+| Item attachment type | Raw contents returned                                                                                                                                 |
+| :------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **contact**          | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format. See [example](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **event**            | iCal MIME format. See [example](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).                                            |
+| **message**          | MIME format. See [example](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).                                |
 
 Attempting to get the `$value` of a reference attachment returns HTTP 405.
 
@@ -77,6 +78,7 @@ GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
 An attachment of a [message](../resources/message.md) in a user's mailbox:
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -87,6 +89,7 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
 An attachment of a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox:
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -97,6 +100,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{
 ```
 
 An attachment of a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox:
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -109,6 +113,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 The preceding example shows one level of nesting, but a message can be located in a child of a child and so on.
 
 An attachment of an [Outlook task](../resources/outlooktask.md):
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -119,6 +124,7 @@ GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
 An attachment of a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group:
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -134,9 +140,9 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 ## Request headers
 
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
 
@@ -161,6 +167,7 @@ If you're getting the raw contents of a file or item attachment, the response bo
 Here is an example of the request to get the properties of a file attachment on a message.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment_beta",
@@ -170,24 +177,28 @@ Here is an example of the request to get the properties of a file attachment on 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-file-attachment-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-file-attachment-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-file-attachment-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_beta",
@@ -221,6 +232,7 @@ Content-type: application/json
 The next example shows how to get an item attachment on a message. The properties of the **itemAttachment** are returned.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment",
@@ -230,23 +242,28 @@ The next example shows how to get an item attachment on a message. The propertie
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "get_item_attachment",
@@ -271,12 +288,14 @@ Content-type: application/json
 ```
 
 ### Example 3: Expand and get the properties of the item attached to a message
+
 #### Request
 
 The next example shows how to use `$expand` to get the properties of the item (contact, event, or message) that is attached to the message. In this example, that item is
 a message; the properties of that attached message are also returned.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_and_expand_item_attachment",
@@ -286,23 +305,28 @@ a message; the properties of that attached message are also returned.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-and-expand-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-and-expand-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-and-expand-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "get_and_expand_item_attachment",
@@ -388,6 +412,7 @@ Content-type: application/json
 Here is an example of the request to get a reference attachment on an event.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_reference_attachment",
@@ -397,23 +422,28 @@ Here is an example of the request to get a reference attachment on an event.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-reference-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-reference-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reference-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -443,12 +473,12 @@ Content-type: application/json
 }
 ```
 
-
 ### Example 5: Get the raw contents of a file attachment on a message
 
 #### Request
 
 Here is an example of the request to get the raw contents of a Word file that has been attached to a message.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_value_file_attachment",
@@ -460,6 +490,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 ```
 
 #### Response
+
 Here is an example of the response. 
 The actual response body includes the raw bytes of the file attachment, which are abbreviated here for brevity.
 
@@ -475,12 +506,12 @@ HTTP/1.1 200 OK
 {Raw bytes of the file}
 ```
 
-
 ### Example 6: Get the MIME raw contents of a contact attachment on a message
 
 #### Request
 
 Here is an example of the request to get the raw contents of a contact item that has been attached to a message. 
+
 <!-- {
   "blockType": "ignored",
   "name": "get_value_contact_attachment",
@@ -492,6 +523,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADI5MAAGjk2PxAAA=/attachmen
 ```
 
 #### Response
+
 Here is an example of the response. 
 
 <!-- {
@@ -499,6 +531,7 @@ Here is an example of the response.
   "name": "get_value_contact_attachment",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 
@@ -524,12 +557,12 @@ REV;VALUE=DATE-TIME:2019-04-09T02:13:31,161Z
 END:VCARD
 ```
 
-
 ### Example 7: Get the MIME raw contents of an event attachment on a message
 
 #### Request
 
 Here is an example of the request to get the raw contents of an event that has been attached to a message. 
+
 <!-- {
   "blockType": "ignored",
   "name": "get_value_event_attachment",
@@ -541,6 +574,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADVIOAAA=/attachments/AAMkA
 ```
 
 #### Response
+
 Here is an example of the response. 
 
 <!-- {
@@ -548,6 +582,7 @@ Here is an example of the response.
   "name": "get_value_event_attachment",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 
@@ -604,12 +639,12 @@ END:VEVENT
 END:VCALENDAR
 ```
 
-
 ### Example 8: Get the MIME raw contents of a meeting invitation item attachment on a message
 
 #### Request
 
 Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message. The **eventMessage** entity is based on the **message** type.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
@@ -621,6 +656,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKiAAA=/attachments/A
 ```
 
 #### Response
+
 Here is an example of the response. 
 
 The response body includes the **eventMessage** attachment in MIME format. The body of the  **eventMessage** is truncated for brevity. The full message body is returned from an actual call.
@@ -679,9 +715,9 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
 --_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_--
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",

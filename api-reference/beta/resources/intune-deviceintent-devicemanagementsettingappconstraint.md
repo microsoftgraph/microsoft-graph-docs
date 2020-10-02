@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingAppConstraint resource type"
 description: "Constraint enforcing the setting contains only vaild app types."
 author: "dougeby"
@@ -17,25 +17,29 @@ Namespace: microsoft.graph
 
 Constraint enforcing the setting contains only vaild app types.
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|supportedTypes|String collection|Acceptable app types to allow for this setting|
+
+| Property       | Type              | Description                                    |
+| :------------- | :---------------- | :--------------------------------------------- |
+| supportedTypes | String collection | Acceptable app types to allow for this setting |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingAppConstraint",
   "supportedTypes": [
@@ -43,9 +47,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

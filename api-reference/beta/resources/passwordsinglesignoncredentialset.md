@@ -1,4 +1,4 @@
----
+﻿---
 title: "passwordSingleSignOnCredentialSet resource type"
 description: "Indicates a set of credentials that completely define a sign in flow for a user or group to an application."
 localization_priority: Normal
@@ -17,10 +17,10 @@ Indicates a set of credentials that completely define a sign in flow for a user 
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|credentials|[credential](credential.md) collection|A list of credential objects that define the complete sign in flow.|
-|id|String|The ID of the user or group this credential set belongs to.|
+| Property    | Type                                   | Description                                                         |
+| :---------- | :------------------------------------- | :------------------------------------------------------------------ |
+| credentials | [credential](credential.md) collection | A list of credential objects that define the complete sign in flow. |
+| id          | String                                 | The ID of the user or group this credential set belongs to.         |
 
 ## JSON representation
 
@@ -44,6 +44,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "passwordSingleSignOnCredentialSet resource",
@@ -51,5 +52,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

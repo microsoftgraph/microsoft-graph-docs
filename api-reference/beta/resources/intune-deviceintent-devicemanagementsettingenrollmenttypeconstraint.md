@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingEnrollmentTypeConstraint resource type"
 description: "Constraint that enforces the enrollment types applied to a setting"
 author: "dougeby"
@@ -17,25 +17,29 @@ Namespace: microsoft.graph
 
 Constraint that enforces the enrollment types applied to a setting
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|enrollmentTypes|String collection|List of enrollment types|
+
+| Property        | Type              | Description              |
+| :-------------- | :---------------- | :----------------------- |
+| enrollmentTypes | String collection | List of enrollment types |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingEnrollmentTypeConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingEnrollmentTypeConstraint",
   "enrollmentTypes": [
@@ -43,9 +47,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "tiIndicator: updateTiIndicators"
 description: "Update multiple threat intelligence (TI) indicators in one request instead of multiple requests."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Update multiple threat intelligence (TI) indicators in one request instead of mu
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type   | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ThreatIndicators.ReadWrite.OwnedBy          |
 
 ## HTTP request
 
@@ -36,16 +36,16 @@ POST /security/tiIndicators/updateTiIndicators
 ## Request headers
 
 | Name          | Description   |
-|:--------------|:--------------|
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters. For details about properties that can be updated, see [update tiIndicator](tiindicator-update.md). Required fields for each tiIndicator are: `id`, `expirationDateTime`, `targetProduct`.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|value|tiIndicator collection| Collection of **tiIndicators** to update. Each entity must have **id** and other editable properties to be updated.|
+| Parameter | Type                   | Description                                                                                                         |
+| :-------- | :--------------------- | :------------------------------------------------------------------------------------------------------------------ |
+| value     | tiIndicator collection | Collection of **tiIndicators** to update. Each entity must have **id** and other editable properties to be updated. |
 
 ## Response
 
@@ -60,11 +60,13 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "tiindicator_updatetiindicators",
   "isCollection":true
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators
 Content-type: application/json
@@ -83,20 +85,23 @@ Content-type: application/json
 }
 
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/tiindicator-updatetiindicators-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/tiindicator-updatetiindicators-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/tiindicator-updatetiindicators-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -134,6 +139,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "tiIndicator: updateTiIndicators",
@@ -143,5 +149,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

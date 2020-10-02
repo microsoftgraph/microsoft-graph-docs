@@ -1,4 +1,4 @@
----
+﻿---
 title: "List sets"
 description: "Get a list of the set objects and their properties."
 author: mohitpcad
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List sets
+
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph.termStore
 Get a list of the [set](../resources/termstore-set.md) objects and their properties.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account) |TermStore.Read.All, TermStore.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | TermStore.Read.All, TermStore.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -30,19 +32,22 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-``` http
+```http
 GET /termStore/groups/{groupId}/sets
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -54,29 +59,32 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_set"
 }-->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-set-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-set-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-set-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
-
 
 ### Response
 
@@ -88,7 +96,7 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets
   "@odata.type": "collection(microsoft.graph.termStore.set)"
 } -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -121,5 +129,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementDomainJoinConnectorState enum type"
 description: "The ODJ request states."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 The ODJ request states.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|active|0|Connector is actively pinging Intune.|
-|error|1|There is no heart-beat from connector from last one hour.|
-|inactive|2|There is no heart-beat from connector from last 5 days.|
 
-
-
-
-
-
+| Member   | Value | Description                                               |
+| :------- | :---- | :-------------------------------------------------------- |
+| active   | 0     | Connector is actively pinging Intune.                     |
+| error    | 1     | There is no heart-beat from connector from last one hour. |
+| inactive | 2     | There is no heart-beat from connector from last 5 days.   |

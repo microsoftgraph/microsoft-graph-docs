@@ -1,4 +1,4 @@
----
+﻿---
 title: "officeUserCheckinSummary resource type"
 description: "Entity that describes  tenant check-in stats."
 localization_priority: Normal
@@ -18,32 +18,31 @@ Namespace: microsoft.graph
 Entity that describes  tenant check-in stats.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|succeededUserCount|Int32|Total successful user check ins for the last 3 months.|
-|failedUserCount|Int32|Total failed user check ins for the last 3 months.|
+
+| Property           | Type  | Description                                            |
+| :----------------- | :---- | :----------------------------------------------------- |
+| succeededUserCount | Int32 | Total successful user check ins for the last 3 months. |
+| failedUserCount    | Int32 | Total failed user check ins for the last 3 months.     |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.officeUserCheckinSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.officeUserCheckinSummary",
   "succeededUserCount": 1024,
   "failedUserCount": 1024
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add members to team"
 description: "Add a new member to a team."
 author: "nkramer"
@@ -8,18 +8,20 @@ doc_type: apiPageType
 ---
 
 # Create members
+
 Namespace: microsoft.graph
 
 Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)| TeamMember.ReadWrite.All|
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application| TeamMember.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | TeamMember.ReadWrite.All                    |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | TeamMember.ReadWrite.All                    |
 
 ## HTTP request
 
@@ -27,18 +29,21 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /teams/{teamsId}/members
 POST /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the [conversationMember](../resources/conversationmember.md) object.
 
 ## Response
@@ -52,12 +57,14 @@ For best results, stagger calls with a 2 second buffer.
 ### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_conversationmember_from_"
 }
 -->
-``` http
+
+```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/members
 Content-type: application/json
 Content-length: 26
@@ -68,33 +75,41 @@ Content-length: 26
     "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationmember-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversationmember-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversationmember-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversationmember-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.conversationMember"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

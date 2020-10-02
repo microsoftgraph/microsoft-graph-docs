@@ -1,4 +1,4 @@
----
+﻿---
 title: "savedUIStateGenerationOptions enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,16 +16,8 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Not yet documented|
-|omitSilverlightPolicyReferences|1|Not yet documented|
 
-
-
-
-
-
-
-
-
+| Member                          | Value | Description        |
+| :------------------------------ | :---- | :----------------- |
+| none                            | 0     | Not yet documented |
+| omitSilverlightPolicyReferences | 1     | Not yet documented |

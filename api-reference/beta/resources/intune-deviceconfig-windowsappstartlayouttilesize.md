@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsAppStartLayoutTileSize enum type"
 description: "The tile size of Windows app in the start layout."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 The tile size of Windows app in the start layout.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|hidden|0|Hidden.|
-|small|1|Small 1x1.|
-|medium|2|Medium 2x2.|
-|wide|3|Wide 4x2.|
-|large|4|Large 4x4.|
 
-
-
-
-
-
+| Member | Value | Description |
+| :----- | :---- | :---------- |
+| hidden | 0     | Hidden.     |
+| small  | 1     | Small 1x1.  |
+| medium | 2     | Medium 2x2. |
+| wide   | 3     | Wide 4x2.   |
+| large  | 4     | Large 4x4.  |

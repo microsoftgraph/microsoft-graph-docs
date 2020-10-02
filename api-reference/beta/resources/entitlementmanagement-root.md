@@ -1,4 +1,4 @@
----
+﻿---
 title: "Working with the Azure AD entitlement management API"
 description: "Govern access to resources including groups, apps and sites through Azure AD entitlement management"
 localization_priority: Normal
@@ -37,48 +37,48 @@ Note that the entitlement management feature, including the API, is included in 
 
 The following table lists the methods that you can use to interact with entitlement management-related resources.
 
-| Method		   | Return type	|Description|
-|:---------------|:--------|:----------|
-| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Read the properties of an **entitlementManagementSettings** object. |
-| [Update](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Update the properties of an **entitlementManagementSettings** object. |
-| [List accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of **accessPackage** objects. |
-| [Create accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Create a new **accessPackage** object. |
-| [Get accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Read properties and relationships of an **accessPackage** object. |
-| [Update accessPackage](../api/accesspackage-update.md)|None | Update the properties of an **accesspackage** object. |
-| [Delete accessPackage](../api/accesspackage-delete.md) | | Delete **accessPackage**. |
-| [List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve a list of **accessPackageResourceRoleScope** objects for an access package. |
-| [Create accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Create a new **accessPackageResourceRoleScope** object for an access package. |
-| [List accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection | Retrieve a list of **accessPackageAssignmentPolicy** objects. |
-| [Create accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Create a new **accessPackageAssignmentPolicy** object. |
-| [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Read properties and relationships of an **accessPackageAssignmentPolicy** object. |
-| [Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Update the properties of an **accessPackageAssignmentPolicy** object. |
-| [Delete accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md) | | Delete an **accessPackageAssignmentPolicy**. |
-| [List accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) collection | Retrieve a list of **accessPackageAssignmentRequest** objects. |
-| [Create accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Create a new **accessPackageAssignmentRequest**. |
-| [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Read properties and relationships of an **accessPackageAssignmentRequest** object. |
-| [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of **accessPackageAssignment** objects. |
-| [List accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection | Retrieve a list of **accessPackageAssignmentResourceRole** objects. |
-| [Get accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Retrieve a **accessPackageAssignmentResourceRole** object. |
-| [List accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md) collection | Retrieve a list of **accessPackageCatalogs** objects. |
-| [Create accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Create a new **accessPackageCatalog** object. |
-| [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an **accessPackageCatalog** object. |
-| [Update accessPackageCatalog](../api/accesspackagecatalog-update.md)|None | Update the properties of an **accessPackageCatalog** object. |
-| [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Delete an **accessPackageCatalog**. |
-| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of **accessPackageResource** objects. |
-| [List accessPackageCatalog resource roles](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of **accessPackageResourceRole** objects. |
-| [List accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection | Read properties and relationships of **accessPackageResourceRequest** objects. |
-| [Create accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Create a new **accessPackageResourceRequest** object. |
-| [List connectedOrganizations](../api/connectedorganization-list.md) | [connectedOrganization](connectedorganization.md) collection | Retrieve a list of **connectedOrganization** objects. |
-| [Create connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | Create a new **connectedOrganization** object. |
-| [Get connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Read properties and relationships of a **connectedOrganization** object. |
-| [Update connectedOrganization](../api/connectedorganization-update.md) |None | Update a **connectedOrganization**. |
-| [Delete connectedOrganization](../api/connectedorganization-delete.md) |None | Delete a **connectedOrganization**. |
-|[List internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of a **connectedOrganization's** internal sponsors. |
-|[List externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of a **connectedOrganization's** external sponsors. |
-|[Add internalSponsors](../api/connectedorganization-post-internalsponsors.md) | None | Add a user or group to a **connectedOrganization's** internal sponsors. |
-|[Add externalSponsors](../api/connectedorganization-post-externalsponsors.md) | None | Add a user or group to a **connectedOrganization's** external sponsors. |
-|[Remove internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | None | Remove a user or group from a **connectedOrganization's** internal sponsors. |
-|[Remove externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | None | Remove a user or group from a **connectedOrganization's** external sponsors. |
+| Method                                                                                                     | Return type                                                                              | Description                                                                          |
+| :--------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
+| [Get](../api/entitlementmanagementsettings-get.md)                                                         | [entitlementManagementSettings](entitlementmanagementsettings.md)                        | Read the properties of an **entitlementManagementSettings** object.                  |
+| [Update](../api/entitlementmanagementsettings-update.md)                                                   | [entitlementManagementSettings](entitlementmanagementsettings.md)                        | Update the properties of an **entitlementManagementSettings** object.                |
+| [List accessPackages](../api/accesspackage-list.md)                                                        | [accessPackage](accesspackage.md) collection                                             | Retrieve a list of **accessPackage** objects.                                        |
+| [Create accessPackage](../api/accesspackage-post.md)                                                       | [accessPackage](accesspackage.md)                                                        | Create a new **accessPackage** object.                                               |
+| [Get accessPackage](../api/accesspackage-get.md)                                                           | [accessPackage](accesspackage.md)                                                        | Read properties and relationships of an **accessPackage** object.                    |
+| [Update accessPackage](../api/accesspackage-update.md)                                                     | None                                                                                     | Update the properties of an **accesspackage** object.                                |
+| [Delete accessPackage](../api/accesspackage-delete.md)                                                     |                                                                                          | Delete **accessPackage**.                                                            |
+| [List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md)       | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection           | Retrieve a list of **accessPackageResourceRoleScope** objects for an access package. |
+| [Create accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md)      |                                                                                          | Create a new **accessPackageResourceRoleScope** object for an access package.        |
+| [List accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md)                       | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection             | Retrieve a list of **accessPackageAssignmentPolicy** objects.                        |
+| [Create accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md)                       | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)                        | Create a new **accessPackageAssignmentPolicy** object.                               |
+| [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md)                           | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)                        | Read properties and relationships of an **accessPackageAssignmentPolicy** object.    |
+| [Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)                     | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)                        | Update the properties of an **accessPackageAssignmentPolicy** object.                |
+| [Delete accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md)                     |                                                                                          | Delete an **accessPackageAssignmentPolicy**.                                         |
+| [List accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md)                      | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) collection           | Retrieve a list of **accessPackageAssignmentRequest** objects.                       |
+| [Create accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md)                     | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md)                      | Create a new **accessPackageAssignmentRequest**.                                     |
+| [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md)                         | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md)                      | Read properties and relationships of an **accessPackageAssignmentRequest** object.   |
+| [List accessPackageAssignments](../api/accesspackageassignment-list.md)                                    | [accessPackageAssignment](accesspackageassignment.md) collection                         | Retrieve a list of **accessPackageAssignment** objects.                              |
+| [List accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md)            | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection | Retrieve a list of **accessPackageAssignmentResourceRole** objects.                  |
+| [Get accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md)               | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)            | Retrieve a **accessPackageAssignmentResourceRole** object.                           |
+| [List accessPackageCatalogs](../api/accesspackagecatalog-list.md)                                          | [accessPackageCatalog](accesspackagecatalog.md) collection                               | Retrieve a list of **accessPackageCatalogs** objects.                                |
+| [Create accessPackageCatalog](../api/accesspackagecatalog-post.md)                                         | [accessPackageCatalog](accesspackagecatalog.md)                                          | Create a new **accessPackageCatalog** object.                                        |
+| [Get accessPackageCatalog](../api/accesspackagecatalog-get.md)                                             | [accessPackageCatalog](accesspackagecatalog.md)                                          | Read properties and relationships of an **accessPackageCatalog** object.             |
+| [Update accessPackageCatalog](../api/accesspackagecatalog-update.md)                                       | None                                                                                     | Update the properties of an **accessPackageCatalog** object.                         |
+| [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md)                                       |                                                                                          | Delete an **accessPackageCatalog**.                                                  |
+| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md)          | [accessPackageResource](accesspackageresource.md) collection                             | Retrieve a list of **accessPackageResource** objects.                                |
+| [List accessPackageCatalog resource roles](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection                     | Retrieve a list of **accessPackageResourceRole** objects.                            |
+| [List accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md)                          | [accessPackageResourceRequest](accesspackageresourcerequest.md) collection               | Read properties and relationships of **accessPackageResourceRequest** objects.       |
+| [Create accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md)                         | [accessPackageCatalog](accesspackageresourcerequest.md)                                  | Create a new **accessPackageResourceRequest** object.                                |
+| [List connectedOrganizations](../api/connectedorganization-list.md)                                        | [connectedOrganization](connectedorganization.md) collection                             | Retrieve a list of **connectedOrganization** objects.                                |
+| [Create connectedOrganization](../api/connectedorganization-post.md)                                       | [connectedOrganization](connectedorganization.md)                                        | Create a new **connectedOrganization** object.                                       |
+| [Get connectedOrganization](../api/connectedorganization-get.md)                                           | [connectedOrganization](connectedorganization.md)                                        | Read properties and relationships of a **connectedOrganization** object.             |
+| [Update connectedOrganization](../api/connectedorganization-update.md)                                     | None                                                                                     | Update a **connectedOrganization**.                                                  |
+| [Delete connectedOrganization](../api/connectedorganization-delete.md)                                     | None                                                                                     | Delete a **connectedOrganization**.                                                  |
+| [List internalSponsors](../api/connectedorganization-list-internalsponsors.md)                             | [directoryObject](directoryobject.md) collection                                         | Retrieve a list of a **connectedOrganization's** internal sponsors.                  |
+| [List externalSponsors](../api/connectedorganization-list-externalsponsors.md)                             | [directoryObject](directoryobject.md) collection                                         | Retrieve a list of a **connectedOrganization's** external sponsors.                  |
+| [Add internalSponsors](../api/connectedorganization-post-internalsponsors.md)                              | None                                                                                     | Add a user or group to a **connectedOrganization's** internal sponsors.              |
+| [Add externalSponsors](../api/connectedorganization-post-externalsponsors.md)                              | None                                                                                     | Add a user or group to a **connectedOrganization's** external sponsors.              |
+| [Remove internalSponsors](../api/connectedorganization-delete-internalsponsors.md)                         | None                                                                                     | Remove a user or group from a **connectedOrganization's** internal sponsors.         |
+| [Remove externalSponsors](../api/connectedorganization-delete-externalsponsors.md)                         | None                                                                                     | Remove a user or group from a **connectedOrganization's** external sponsors.         |
 
 ## Types
 
@@ -92,10 +92,9 @@ The following table lists the methods that you can use to interact with entitlem
 
  - [What is Azure AD entitlement management?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
 
-
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Service root",
@@ -103,5 +102,3 @@ The following table lists the methods that you can use to interact with entitlem
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

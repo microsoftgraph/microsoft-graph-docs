@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Graph Security API error responses"
 description: "Errors in the Microsoft Graph Security API are returned using the standard HTTP 206 Partial Content status code and are delivered via a warning header."
 author: "preetikr"
@@ -16,6 +16,7 @@ Errors in the Microsoft Graph Security API are returned using the standard HTTP 
 ## Errors
 
 The Microsoft Graph Security API is a federated service that receives multiple responses from all data providers. When an HTTP error is received by the Microsoft Graph Security API, it will send back a warning header in the following format:
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -59,4 +60,3 @@ A workaaround for this limit is to use the `$filter` OData query parameter with 
 ## See also
 
 If you’re having trouble with authorization, see [Authorization and the Microsoft Graph Security API](/graph/security-authorization).
-

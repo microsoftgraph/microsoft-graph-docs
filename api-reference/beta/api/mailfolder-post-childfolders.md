@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create mailFolder"
 description: "Use this API to create a new child mailFolder."
 author: "svpsiva"
@@ -19,11 +19,11 @@ Use this API to create a new child [mailFolder](../resources/mailfolder.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:----------------|:--------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Mail.ReadWrite                              |
+| Delegated (personal Microsoft account) | Mail.ReadWrite                              |
+| Application                            | Mail.ReadWrite                              |
 
 ## HTTP request
 
@@ -38,19 +38,19 @@ Specify the parent folder in the query URL as a folder ID, or a well-known folde
 
 ## Request headers
 
-| Header | Value |
-|:-------|:------|
-| Authorization | `Bearer {token}`. Required. |
-| Content-Type | `application/json`. Required. |
+| Header        | Value                         |
+| :------------ | :---------------------------- |
+| Authorization | `Bearer {token}`. Required.   |
+| Content-Type  | `application/json`. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a
 [MailFolder](../resources/mailfolder.md) object.
 
-| Parameter | Type | Description |
-|:----------|:-----|:------------|
-|displayName|String|The display name of the new folder.|
+| Parameter   | Type   | Description                         |
+| :---------- | :----- | :---------------------------------- |
+| displayName | String | The display name of the new folder. |
 
 ## Response
 
@@ -63,6 +63,7 @@ If successful, this method returns `201 Created` response code and a [mailFolder
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_mailfolder_from_mailfolder"
@@ -77,26 +78,30 @@ Content-length: 159
   "displayName": "displayName-value",
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-mailfolder-from-mailfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailfolder-from-mailfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailfolder-from-mailfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
 The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -120,6 +125,7 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -131,5 +137,3 @@ Content-length: 179
   ]
 }
 -->
-
-

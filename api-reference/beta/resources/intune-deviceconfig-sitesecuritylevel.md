@@ -1,4 +1,4 @@
----
+﻿---
 title: "siteSecurityLevel enum type"
 description: "Possible values for site security level."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Possible values for site security level.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userDefined|0|User Defined, default value, no intent.|
-|low|1|Low.|
-|mediumLow|2|Medium-low.|
-|medium|3|Medium.|
-|mediumHigh|4|Medium-high.|
-|high|5|High.|
 
-
-
-
-
-
+| Member      | Value | Description                             |
+| :---------- | :---- | :-------------------------------------- |
+| userDefined | 0     | User Defined, default value, no intent. |
+| low         | 1     | Low.                                    |
+| mediumLow   | 2     | Medium-low.                             |
+| medium      | 3     | Medium.                                 |
+| mediumHigh  | 4     | Medium-high.                            |
+| high        | 5     | High.                                   |

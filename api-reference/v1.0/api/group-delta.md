@@ -1,4 +1,4 @@
----
+﻿---
 title: "group: delta"
 description: "Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Get newly created, updated, or deleted groups, including group membership change
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                  |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                               |
+| Application                            | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
 
@@ -41,10 +41,10 @@ You only need to specify any desired query parameters once upfront.
 
 In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
-| Query parameter | Type  |Description|
-|:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same group collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same group collection. |
+| Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                   |
+| :-------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| $deltatoken     | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same group collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection. |
+| $skiptoken      | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same group collection.                                                                                                                                                         |
 
 ### OData query parameters
 
@@ -57,11 +57,11 @@ This method supports optional OData query parameters to help customize the respo
 
 ## Request headers
 
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;|
-| Content-Type  | application/json |
-| Prefer | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
+| Name          | Description                                                                                                                                                                    |
+| :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer &lt;token&gt;                                                                                                                                                           |
+| Content-Type  | application/json                                                                                                                                                               |
+| Prefer        | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
 
 ## Request body
 
@@ -87,7 +87,6 @@ By default, requests using a `deltaLink` or `nextLink` return the same propertie
 - If the property has not changed, the old value is included in the response.
 - If the property has never been set before it will not be included in the response at all.
 
-
 > **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values  - as shown in the [second example](#request-2) below.
 
 #### Alternative: return only the changed properties
@@ -106,6 +105,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -114,24 +114,28 @@ The following is an example of the request. There is no `$select` parameter, so 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response 1
 
@@ -184,6 +188,7 @@ Content-type: application/json
 The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_delta_with_select"
@@ -192,24 +197,28 @@ The next example shows the initial request selecting 3 properties for change tra
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,mailNickname
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-with-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-with-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-with-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-with-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response 2
 
@@ -244,6 +253,7 @@ Content-type: application/json
 The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_delta_minimal"
@@ -253,24 +263,28 @@ The next example shows the initial request selecting 3 properties for change tra
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,mailNickname
 Prefer: return=minimal
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response 3
 
@@ -306,6 +320,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "group: delta",
@@ -315,4 +330,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

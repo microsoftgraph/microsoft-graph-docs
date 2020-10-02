@@ -1,4 +1,4 @@
----
+﻿---
 title: "windows10AppsForceUpdateSchedule resource type"
 description: "Windows 10 force update schedule for Apps"
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 Windows 10 force update schedule for Apps
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|startDateTime|DateTimeOffset|The start time for the force restart.|
-|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Recurrence schedule. Possible values are: `none`, `daily`, `weekly`, `monthly`.|
-|runImmediatelyIfAfterStartDateTime|Boolean|If true, runs the task immediately if StartDateTime is in the past, else, runs at the next recurrence.|
+
+| Property                           | Type                                                                                               | Description                                                                                            |
+| :--------------------------------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| startDateTime                      | DateTimeOffset                                                                                     | The start time for the force restart.                                                                  |
+| recurrence                         | [windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md) | Recurrence schedule. Possible values are: `none`, `daily`, `weekly`, `monthly`.                        |
+| runImmediatelyIfAfterStartDateTime | Boolean                                                                                            | If true, runs the task immediately if StartDateTime is in the past, else, runs at the next recurrence. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windows10AppsForceUpdateSchedule",
   "startDateTime": "String (timestamp)",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
-
-
-
-
-

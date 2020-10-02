@@ -1,4 +1,4 @@
----
+﻿---
 title: "openShiftChangeRequest: approve"
 description: "Approve an openShiftChangeRequest request."
 localization_priority: Normal
@@ -18,10 +18,10 @@ Approve an [openShiftChangeRequest](../resources/openshiftchangerequest.md) obje
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Schedule.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Schedule.ReadWrite.All                      |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -35,18 +35,18 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/ap
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|message|String|A custom approval message.|
+| Parameter | Type   | Description                |
+| :-------- | :----- | :------------------------- |
+| message   | String | A custom approval message. |
 
 ## Response
 
@@ -59,6 +59,7 @@ The following example shows how to call this API.
 ### Request
 
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "openshiftchangerequest_approve"
@@ -76,6 +77,7 @@ Content-type: application/json
 ### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,6 +90,7 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "openShiftChangeRequest: approve",
@@ -95,4 +98,3 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-

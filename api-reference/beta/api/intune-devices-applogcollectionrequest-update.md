@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update appLogCollectionRequest"
 description: "Update the properties of a appLogCollectionRequest object."
 author: "dougeby"
@@ -18,52 +18,58 @@ Namespace: microsoft.graph
 Update the properties of a [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests/{appLogCollectionRequestId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object.
 
 The following table shows the properties that are required when you create the [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique Identifier. This is userId_DeviceId_AppId id.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Log upload status. Possible values are: `pending`, `completed`, `failed`.|
-|errorMessage|String|Error message if any during the upload process|
-|customLogFolders|String collection|List of log folders. |
-|completedDateTime|DateTimeOffset|Time at which the upload log request reached a terminal state|
-
-
+| Property          | Type                                                                  | Description                                                               |
+| :---------------- | :-------------------------------------------------------------------- | :------------------------------------------------------------------------ |
+| id                | String                                                                | The unique Identifier. This is userId_DeviceId_AppId id.                  |
+| status            | [appLogUploadState](../resources/intune-devices-apploguploadstate.md) | Log upload status. Possible values are: `pending`, `completed`, `failed`. |
+| errorMessage      | String                                                                | Error message if any during the upload process                            |
+| customLogFolders  | String collection                                                     | List of log folders.                                                      |
+| completedDateTime | DateTimeOffset                                                        | Time at which the upload log request reached a terminal state             |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests/{appLogCollectionRequestId}
 Content-type: application/json
 Content-length: 257
@@ -80,8 +86,10 @@ Content-length: 257
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 306
@@ -97,9 +105,3 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
-
-
-
-
-

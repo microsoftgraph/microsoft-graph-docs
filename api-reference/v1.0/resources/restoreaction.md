@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: restoreAction resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # restoreAction resource type
 
 Namespace: microsoft.graph
@@ -46,4 +47,3 @@ None. This facet is a null or not-null value and contains no properties.
   "suppressions": []
 }
 -->
-

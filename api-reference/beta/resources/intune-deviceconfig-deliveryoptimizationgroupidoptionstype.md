@@ -1,4 +1,4 @@
----
+﻿---
 title: "deliveryOptimizationGroupIdOptionsType enum type"
 description: "Possible values for the DeliveryOptimizationGroupIdOptionsType setting."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Possible values for the DeliveryOptimizationGroupIdOptionsType setting.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured.|
-|adSite|1|Active Directory site.|
-|authenticatedDomainSid|2|Authenticated domain SID.|
-|dhcpUserOption|3|DHCP user option.|
-|dnsSuffix|4|DNS suffix.|
 
-
-
-
-
-
+| Member                 | Value | Description               |
+| :--------------------- | :---- | :------------------------ |
+| notConfigured          | 0     | Not configured.           |
+| adSite                 | 1     | Active Directory site.    |
+| authenticatedDomainSid | 2     | Authenticated domain SID. |
+| dhcpUserOption         | 3     | DHCP user option.         |
+| dnsSuffix              | 4     | DNS suffix.               |

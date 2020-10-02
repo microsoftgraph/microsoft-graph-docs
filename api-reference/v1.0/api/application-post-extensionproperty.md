@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create extensionProperty"
 description: "Create a new extensionProperty."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Create a new [extensionProperty](../resources/extensionproperty.md) definition. 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)              |
+| :------------------------------------- | :------------------------------------------------------- |
+| Delegated (work or school account)     | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegated (personal Microsoft account) | Not supported.                                           |
+| Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
 
@@ -32,22 +32,21 @@ POST /applications/{id}/extensionProperties
 ```
 
 ## Request headers
-| Name       | Description|
-|:-----------|:----------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type | application/json. Required. |
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide an [extensionProperty](../resources/extensionproperty.md) object with the following properties.
 
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>|
-|name|String| Name of the extension property. Not nullable. |
-|targetObjects|String collection| Following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
-
+| Property      | Type              | Description                                                                                                                                                                                                                                                                                                                                                                               |
+| :------------ | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dataType      | String            | Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul> |
+| name          | String            | Name of the extension property. Not nullable.                                                                                                                                                                                                                                                                                                                                             |
+| targetObjects | String collection | Following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>                                                                                                                                                                                                                                      |
 
 ## Response
 
@@ -60,6 +59,7 @@ If successful, this method returns a `201 Created` response code and a new [exte
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_extensionproperty_from_application"
@@ -77,24 +77,28 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-extensionproperty-from-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-extensionproperty-from-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-extensionproperty-from-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-extensionproperty-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -125,6 +129,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create extensionProperty",
@@ -132,4 +137,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

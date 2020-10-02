@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "This resource provides information on the status of a asynchronous job progress."
 ms.date: 09/10/2017
@@ -34,7 +34,7 @@ The following API calls return **AsyncJobStatus** resources:
 ## Properties
 
 | Property name          | Type   | Description                                                                                |
-|:-----------------------|:-------|:-------------------------------------------------------------------------------------------|
+| :--------------------- | :----- | :----------------------------------------------------------------------------------------- |
 | **percentageComplete** | Double | A value between 0 and 100 that indicates the percentage complete.                          |
 | **status**             | String | A string value that maps to an enumeration of possible values about the status of the job. |
 
@@ -47,5 +47,3 @@ The following API calls return **AsyncJobStatus** resources:
   "suppressions": []
 }
 -->
-
-

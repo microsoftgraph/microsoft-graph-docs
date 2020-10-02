@@ -1,4 +1,4 @@
----
+﻿---
 title: "recipients resource type"
 description: "Here is a JSON representation of the resource"
 localization_priority: Normal
@@ -34,16 +34,19 @@ Here is a JSON representation of the resource
 }
 
 ```
+
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|alias|String||
-|email|String||
-|objectId|String||
-|permissionIdentityType|String||
+
+| Property               | Type   | Description |
+| :--------------------- | :----- | :---------- |
+| alias                  | String |             |
+| email                  | String |             |
+| objectId               | String |             |
+| permissionIdentityType | String |             |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -54,5 +57,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

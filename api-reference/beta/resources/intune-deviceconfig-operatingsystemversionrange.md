@@ -1,4 +1,4 @@
----
+﻿---
 title: "operatingSystemVersionRange resource type"
 description: "Operating System version range."
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 Operating System version range.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|description|String|The description of this range (e.g. Valid 1702 builds)|
-|lowestVersion|String|The lowest inclusive version that this range contains.|
-|highestVersion|String|The highest inclusive version that this range contains.|
+
+| Property       | Type   | Description                                             |
+| :------------- | :----- | :------------------------------------------------------ |
+| description    | String | The description of this range (e.g. Valid 1702 builds)  |
+| lowestVersion  | String | The lowest inclusive version that this range contains.  |
+| highestVersion | String | The highest inclusive version that this range contains. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.operatingSystemVersionRange"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.operatingSystemVersionRange",
   "description": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "highestVersion": "String"
 }
 ```
-
-
-
-
-
-

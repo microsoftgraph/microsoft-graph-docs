@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update notificationMessageTemplate"
 description: "Update the properties of a notificationMessageTemplate object."
 author: "dougeby"
@@ -18,53 +18,59 @@ Namespace: microsoft.graph
 Update the properties of a [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementServiceConfig.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementServiceConfig.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.
 
 The following table shows the properties that are required when you create the [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
-|displayName|String|Display name for the Notification Message Template.|
-|defaultLocale|String|The default locale to fallback onto when the requested locale is not available.|
-|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`, `includeCompanyPortalLink`.|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
-
-
+| Property             | Type                                                                                                           | Description                                                                                                                                                                                                               |
+| :------------------- | :------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                   | String                                                                                                         | Key of the entity.                                                                                                                                                                                                        |
+| lastModifiedDateTime | DateTimeOffset                                                                                                 | DateTime the object was last modified.                                                                                                                                                                                    |
+| displayName          | String                                                                                                         | Display name for the Notification Message Template.                                                                                                                                                                       |
+| defaultLocale        | String                                                                                                         | The default locale to fallback onto when the requested locale is not available.                                                                                                                                           |
+| brandingOptions      | [notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md) | The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`, `includeCompanyPortalLink`. |
+| roleScopeTagIds      | String collection                                                                                              | List of Scope Tags for this Entity instance.                                                                                                                                                                              |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 Content-type: application/json
 Content-length: 259
@@ -81,8 +87,10 @@ Content-length: 259
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 372
@@ -99,9 +107,3 @@ Content-Length: 372
   ]
 }
 ```
-
-
-
-
-
-

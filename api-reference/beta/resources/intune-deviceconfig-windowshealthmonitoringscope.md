@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsHealthMonitoringScope enum type"
 description: "Device health monitoring scope"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Device health monitoring scope
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|undefined|0|Undefined|
-|healthMonitoring|1|Basic events for windows device health monitoring|
-|bootPerformance|2|Boot performance events|
-|windowsUpdates|4|Windows updates events|
 
-
-
-
-
-
+| Member           | Value | Description                                       |
+| :--------------- | :---- | :------------------------------------------------ |
+| undefined        | 0     | Undefined                                         |
+| healthMonitoring | 1     | Basic events for windows device health monitoring |
+| bootPerformance  | 2     | Boot performance events                           |
+| windowsUpdates   | 4     | Windows updates events                            |

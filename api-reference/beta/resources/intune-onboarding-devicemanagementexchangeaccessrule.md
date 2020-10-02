@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementExchangeAccessRule resource type"
 description: "Device Access Rules in Exchange."
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 Device Access Rules in Exchange.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceClass|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|Device Class which will be impacted by this rule.|
-|accessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Access Level for Exchange granted by this rule. Possible values are: `none`, `allow`, `block`, `quarantine`.|
+
+| Property    | Type                                                                                                         | Description                                                                                                  |
+| :---------- | :----------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| deviceClass | [deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md) | Device Class which will be impacted by this rule.                                                            |
+| accessLevel | [deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md) | Access Level for Exchange granted by this rule. Possible values are: `none`, `allow`, `block`, `quarantine`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementExchangeAccessRule"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeAccessRule",
   "deviceClass": {
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   "accessLevel": "String"
 }
 ```
-
-
-
-
-
-

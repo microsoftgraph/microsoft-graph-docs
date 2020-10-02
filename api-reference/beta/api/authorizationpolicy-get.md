@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get authorizationPolicy"
 description: "Retrieve the properties and relationships of authorizationPolicy object."
 localization_priority: Normal
@@ -19,10 +19,10 @@ Retrieve the properties of an [authorizationPolicy](../resources/authorizationpo
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)     |
+| :------------------------------------- | :---------------------------------------------- |
 | Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.Authorization |
-| Delegated (personal Microsoft account) | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                  |
 | Application                            | Policy.Read.All, Policy.ReadWrite.Authorization |
 
 ## HTTP request
@@ -35,8 +35,8 @@ GET /policies/authorizationPolicy/authorizationPolicy
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -56,6 +56,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 ```
+
 ---
 
 ### Response
@@ -92,5 +93,3 @@ Content-type: application/json
     "allowEmailVerifiedUsersToJoinOrganization": true,
 }
 ```
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get skillProficiency"
 description: "Retrieve the properties and relationships of a skillproficiency object."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a [skillproficiency](../resources/s
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
+| :------------------------------------- | :------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
@@ -40,11 +40,10 @@ This method supports the `$select` query parameter. Specify a list of properties
 
 ## Request headers
 
-| Name           | Description                  |
-|:---------------|:-----------------------------|
-| Authorization  | Bearer {token}. Required.    |
-| Content-Type   | application/json. Required.  |
-
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -61,6 +60,7 @@ If successful, this method returns a `200 OK` response code and the requested [s
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_skillproficiency"
@@ -69,20 +69,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/skills/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-skillproficiency-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-skillproficiency-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-skillproficiency-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -134,5 +137,3 @@ Content-type: application/json
   ]
 }
 ```
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationSchool resource type"
 description: "A resource representing a school and used to manage the classes, teachers, and students of the represented school.  "
 localization_priority: Normal
@@ -87,6 +87,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationSchool resource",
@@ -94,4 +95,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

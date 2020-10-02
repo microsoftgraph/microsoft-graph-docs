@@ -1,4 +1,4 @@
----
+﻿---
 title: "userExperienceAnalyticsInsightValue resource type"
 description: "The value in an user experience analytics insight."
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 The value in an user experience analytics insight.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userExperienceAnalyticsInsightValue"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsInsightValue"
 }
 ```
-
-
-
-
-
-

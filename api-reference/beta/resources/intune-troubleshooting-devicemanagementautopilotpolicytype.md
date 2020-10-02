@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementAutopilotPolicyType enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Not yet documented|
-|application|3|Not yet documented|
-|appModel|7|Not yet documented|
-|configurationPolicy|12|Not yet documented|
 
-
-
-
-
-
+| Member              | Value | Description        |
+| :------------------ | :---- | :----------------- |
+| unknown             | 0     | Not yet documented |
+| application         | 3     | Not yet documented |
+| appModel            | 7     | Not yet documented |
+| configurationPolicy | 12    | Not yet documented |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "deliveryOptimizationMaxCacheSize resource type"
 description: "Delivery Optimization max cache size types."
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 Delivery Optimization max cache size types.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deliveryOptimizationMaxCacheSize"
 }
 ```
-
-
-
-
-
-

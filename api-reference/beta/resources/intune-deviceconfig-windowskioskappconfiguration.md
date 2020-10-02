@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskAppConfiguration resource type"
 description: "The app base class used to identify the application info for the kiosk configuration"
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 The app base class used to identify the application info for the kiosk configuration
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskAppConfiguration"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskAppConfiguration"
 }
 ```
-
-
-
-
-
-

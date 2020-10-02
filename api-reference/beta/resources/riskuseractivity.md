@@ -1,4 +1,4 @@
----
+﻿---
 title: "riskUserActivity resource type"
 description: author
 author: "cloudhandler"
@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 ## Properties
 
-| Property       | Type    |Description|
-|:---------------|:--------|:----------|
-| eventTypes | riskEventType collection |List of risk event types. Deprecated. Use **riskEventType** instead. |
-|riskEventType|string|The type of risk event detected. The possible values are `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `genericadminConfirmedUserCompromised`, `mcasImpossibleTravel`, `mcasSuspiciousInboxManipulationRules`, `investigationsThreatIntelligenceSigninLinked`, `maliciousIPAddressValidCredentialsBlockedIP`, and `unknownFutureValue`. |
-| detail     | riskDetail  | The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.  |
+| Property      | Type                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| :------------ | :----------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| eventTypes    | riskEventType collection | List of risk event types. Deprecated. Use **riskEventType** instead.                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| riskEventType | string                   | The type of risk event detected. The possible values are `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `genericadminConfirmedUserCompromised`, `mcasImpossibleTravel`, `mcasSuspiciousInboxManipulationRules`, `investigationsThreatIntelligenceSigninLinked`, `maliciousIPAddressValidCredentialsBlockedIP`, and `unknownFutureValue`. |
+| detail        | riskDetail               | The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.                                                                                                             |
 
 ## JSON representation
 
@@ -28,12 +28,14 @@ Namespace: microsoft.graph
   "optionalProperties": [ ],
   "@odata.type": "microsoft.graph.riskUserActivity"
 }-->
+
 ```json
 {
     "eventTypes": ["String"],
     "detail": "string"
 }
 ```
+
 <!--
 {
   "type": "#page.annotation",
@@ -44,5 +46,3 @@ Namespace: microsoft.graph
   "suppressions": []
 }
 -->
-
-

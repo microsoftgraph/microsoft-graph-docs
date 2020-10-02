@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The listInfo complex type provides additional information about a list."
 ms.date: 09/11/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # ListInfo resource
 
 Namespace: microsoft.graph
@@ -38,11 +39,11 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property name           | Type    | Description
-|:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | If `true`, indicates that content types are enabled for this list.
-| **hidden**              | Boolean | If `true`, indicates that the list is not normally visible in the SharePoint user experience.
-| **template**            | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more.
+| Property name           | Type    | Description                                                                                                                                                                                              |
+| :---------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **contentTypesEnabled** | Boolean | If `true`, indicates that content types are enabled for this list.                                                                                                                                       |
+| **hidden**              | Boolean | If `true`, indicates that the list is not normally visible in the SharePoint user experience.                                                                                                            |
+| **template**            | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more. |
 
 ### Remarks
 
@@ -52,6 +53,7 @@ For developers familiar with SharePoint's CSOM APIs, the `template` value corres
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -62,5 +64,3 @@ For developers familiar with SharePoint's CSOM APIs, the `template` value corres
   "suppressions": []
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "group: evaluateDynamicMembership"
 description: "Evaluate if a user or device is or would be a member of a dynamic group."
 author: "yyuank"
@@ -24,19 +24,19 @@ One of the following permissions is required to call this API. To learn more, in
 
 ### Evaluate dynamic membership with member ID and group ID
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Delegated (work or school account) | For user: Group.Read.All and User.Read.All, Directory.Read.All<br>For device: Group.Read.All and Device.Read.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Permission type                        | Permissions (from least to most privileged)                                                                                          |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | For user: Group.Read.All and User.Read.All, Directory.Read.All<br>For device: Group.Read.All and Device.Read.All, Directory.Read.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                       |
+| Application                            | Not supported.                                                                                                                       |
 
 ### Evaluate dynamic membership with member ID and membership rule
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Delegated (work or school account) | For user: User.Read.All, Directory.Read.All<br>For device: Device.Read.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Permission type                        | Permissions (from least to most privileged)                                                    |
+| :------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | For user: User.Read.All, Directory.Read.All<br>For device: Device.Read.All, Directory.Read.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                 |
+| Application                            | Not supported.                                                                                 |
 
 ## HTTP request
 
@@ -49,9 +49,9 @@ POST /groups/evaluateDynamicMembership
 
 ## Request headers
 
-| Name | Description |
-| :--- | :---------- |
-| Authorization | Bearer {token} |
+| Name          | Description      |
+| :------------ | :--------------- |
+| Authorization | Bearer {token}   |
 | Content-type  | application/json |
 
 ## Request body
@@ -60,10 +60,10 @@ In the request body, supply the required properties.
 
 The following table lists the properties that are required when you evaluate group membership.
 
-| Parameter | Type | Description |
-| :-------- | :--- | :---------- |
-| memberId | String collection | memberId is the object Id of the user or device to be evaluated. |
-| membershipRule | String collection | The rule that is used for membership evaluation. If this property is not provided, the rule for the existing group is evaluated. If this property is provided, the user or device is evaluated for possible membership in a group with the same rule. For more information, see [Dynamic membership rules for groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| Parameter      | Type              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| :------------- | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| memberId       | String collection | memberId is the object Id of the user or device to be evaluated.                                                                                                                                                                                                                                                                                                                                                                                 |
+| membershipRule | String collection | The rule that is used for membership evaluation. If this property is not provided, the rule for the existing group is evaluated. If this property is provided, the user or device is evaluated for possible membership in a group with the same rule. For more information, see [Dynamic membership rules for groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
 
 ## Response
 
@@ -77,8 +77,8 @@ If successful, this method returns a `200 OK` response code and an [evaluateDyna
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_evaluatedynamicmembership"
@@ -92,20 +92,23 @@ Content-type: application/json
   "memberId": "319b41e8-d9e4-42f8-bdc9-741113f48b33"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -143,8 +146,8 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_evaluatedynamicmembership"
@@ -159,20 +162,23 @@ Content-type: application/json
   "membershipRule": "(user.displayName -startsWith \"EndTestUser\")"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -217,5 +223,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

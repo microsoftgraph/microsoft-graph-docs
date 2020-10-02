@@ -1,4 +1,4 @@
----
+﻿---
 title: "officeConfigurationGroupAssignmentTarget resource type"
 description: "Office client configuration AAD group assignment target."
 localization_priority: Normal
@@ -20,30 +20,29 @@ Office client configuration AAD group assignment target.
 Inherits from [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|groupId|String|The Id of the AAD group we are targeting the device configuration to.|
+
+| Property | Type   | Description                                                           |
+| :------- | :----- | :-------------------------------------------------------------------- |
+| groupId  | String | The Id of the AAD group we are targeting the device configuration to. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.officeConfigurationGroupAssignmentTarget"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.officeConfigurationGroupAssignmentTarget",
   "groupId": "String"
 }
 ```
-
-
-
-
-
-

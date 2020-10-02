@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsInformationProtectionProxiedDomainCollection resource type"
 description: "Windows Information Protection Proxied Domain Collection"
 author: "dougeby"
@@ -16,22 +16,27 @@ Namespace: microsoft.graph
 Windows Information Protection Proxied Domain Collection
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Display name|
-|proxiedDomains|[proxiedDomain](../resources/intune-mam-proxieddomain.md) collection|Collection of proxied domains|
+
+| Property       | Type                                                                 | Description                   |
+| :------------- | :------------------------------------------------------------------- | :---------------------------- |
+| displayName    | String                                                               | Display name                  |
+| proxiedDomains | [proxiedDomain](../resources/intune-mam-proxieddomain.md) collection | Collection of proxied domains |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionProxiedDomainCollection"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionProxiedDomainCollection",
   "displayName": "String",
@@ -44,12 +49,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update officeClientConfigurationAssignment"
 description: "Update the properties of a officeClientConfigurationAssignment object."
 localization_priority: Normal
@@ -18,49 +18,55 @@ Namespace: microsoft.graph
 Update the properties of a [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Determine scopes **|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|**TODO: Determine scopes **|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | **TODO: Determine scopes **                 |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | **TODO: Determine scopes **                 |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object.
 
 The following table shows the properties that are required when you create the [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Not yet documented|
-|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Not yet documented|
-
-
+| Property | Type                                                                                                     | Description        |
+| :------- | :------------------------------------------------------------------------------------------------------- | :----------------- |
+| id       | String                                                                                                   | Not yet documented |
+| target   | [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md) | Not yet documented |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
 Content-type: application/json
 Content-length: 98
@@ -73,8 +79,10 @@ Content-length: 98
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 221
@@ -87,9 +95,3 @@ Content-Length: 221
   }
 }
 ```
-
-
-
-
-
-

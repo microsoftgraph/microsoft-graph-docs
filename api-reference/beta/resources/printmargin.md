@@ -1,4 +1,4 @@
----
+﻿---
 title: printMargin resource type
 description: Specifies the margin widths to use when printing.
 author: braedenp-msft
@@ -16,12 +16,13 @@ Namespace: microsoft.graph
 Specifies the margin widths to use when printing.
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|top|Int32|The margin in microns from the top edge.|
-|bottom|Int32|The margin in microns from the bottom edge.|
-|right|Int32|The margin in microns from the right edge.|
-|left|Int32|The margin in microns from the left edge.|
+
+| Property | Type  | Description                                 |
+| :------- | :---- | :------------------------------------------ |
+| top      | Int32 | The margin in microns from the top edge.    |
+| bottom   | Int32 | The margin in microns from the bottom edge. |
+| right    | Int32 | The margin in microns from the right edge.  |
+| left     | Int32 | The margin in microns from the left edge.   |
 
 ## JSON representation
 
@@ -46,6 +47,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "printMargin resource",
@@ -53,5 +55,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

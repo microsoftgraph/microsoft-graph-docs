@@ -1,4 +1,4 @@
----
+﻿---
 title: "specifiedCaptiveNetworkPlugins resource type"
 description: "Specifies all the Captive network plugins allowed during the IKEv2 AlwaysOn VPN connection"
 author: "dougeby"
@@ -18,21 +18,26 @@ Namespace: microsoft.graph
 Specifies all the Captive network plugins allowed during the IKEv2 AlwaysOn VPN connection
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedBundleIdentifiers|String collection|Address of the IKEv2 server. Must be a FQDN, UserFQDN, network address, or ASN1DN|
+
+| Property                 | Type              | Description                                                                       |
+| :----------------------- | :---------------- | :-------------------------------------------------------------------------------- |
+| allowedBundleIdentifiers | String collection | Address of the IKEv2 server. Must be a FQDN, UserFQDN, network address, or ASN1DN |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.specifiedCaptiveNetworkPlugins"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.specifiedCaptiveNetworkPlugins",
   "allowedBundleIdentifiers": [
@@ -40,9 +45,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

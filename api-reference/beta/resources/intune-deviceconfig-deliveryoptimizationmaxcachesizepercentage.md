@@ -1,4 +1,4 @@
----
+﻿---
 title: "deliveryOptimizationMaxCacheSizePercentage resource type"
 description: "Delivery Optimization Max cache size percentage types."
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 Delivery Optimization Max cache size percentage types.
 
-
 Inherits from [deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|maximumCacheSizePercentage|Int32|Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100). Valid values 1 to 100|
+
+| Property                   | Type  | Description                                                                                                                          |
+| :------------------------- | :---- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| maximumCacheSizePercentage | Int32 | Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100). Valid values 1 to 100 |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSizePercentage"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deliveryOptimizationMaxCacheSizePercentage",
   "maximumCacheSizePercentage": 1024
 }
 ```
-
-
-
-
-
-

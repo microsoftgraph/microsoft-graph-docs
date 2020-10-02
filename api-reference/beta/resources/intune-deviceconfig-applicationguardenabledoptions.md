@@ -1,4 +1,4 @@
----
+﻿---
 title: "applicationGuardEnabledOptions enum type"
 description: "Possible values for ApplicationGuardEnabledOptions"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for ApplicationGuardEnabledOptions
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not Configured|
-|enabledForEdge|1|Enabled For Edge|
-|enabledForOffice|2|Enabled For Office|
-|enabledForEdgeAndOffice|3|Enabled For Edge And Office|
 
-
-
-
-
-
+| Member                  | Value | Description                 |
+| :---------------------- | :---- | :-------------------------- |
+| notConfigured           | 0     | Not Configured              |
+| enabledForEdge          | 1     | Enabled For Edge            |
+| enabledForOffice        | 2     | Enabled For Office          |
+| enabledForEdgeAndOffice | 3     | Enabled For Edge And Office |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create unifiedRoleAssignmentMultiple"
 description: "Create a new unifiedRoleAssignmentMultiple object."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Create a new [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentm
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | DeviceManagementRBAC.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementRBAC.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementRBAC.ReadWrite.All          |
 
 ## HTTP request
 
@@ -35,10 +35,10 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 ## Request headers
 
-| Name | Description |
-|:---- |:----------- |
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -56,8 +56,8 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 The following is an example of the request. Note the use of the **roleTemplateId** for **roleDefinitionId**. **roleDefinitionId** can be either the service-wide template ID or the directory-specific **roleDefinitionId**.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignmentmultiple_from_rbacapplication"
@@ -75,20 +75,23 @@ Content-type: application/json
     "directoryScopeIds": ["28ca5a85-489a-49a0-b555-0a6d81e56f0d", "8152656a-cf9a-4928-a457-1512d4cae295"],
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignmentmultiple-from-rbacapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignmentmultiple-from-rbacapplication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -126,8 +129,8 @@ Use the following information for creating Intune role assignments:
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignmentmultiple_intune_specific"
@@ -145,20 +148,23 @@ Content-type: application/json
     "appScopeIds": ["allDevices"]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-intune-specific-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignmentmultiple-intune-specific-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignmentmultiple-intune-specific-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -187,6 +193,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create unifiedRoleAssignmentMultiple",
@@ -194,5 +201,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

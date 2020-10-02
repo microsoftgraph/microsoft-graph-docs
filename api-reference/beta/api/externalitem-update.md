@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update externalitem"
 description: "Update the properties of an externalitem."
 localization_priority: Normal
@@ -22,10 +22,10 @@ Update the properties of an [externalitem](../resources/externalitem.md).
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ExternalItem.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -37,15 +37,15 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## Path parameters
 
-| Parameter     | Type   | Description                                         |
-|:--------------|:-------|:----------------------------------------------------|
+| Parameter     | Type   | Description                                                                                  |
+| :------------ | :----- | :------------------------------------------------------------------------------------------- |
 | connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md).    |
 
 ## Request headers
 
 | Name          | Description                 |
-|:--------------|:----------------------------|
+| :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
@@ -53,11 +53,11 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties (excluding properties inside the `properties` object) that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. The following properties can be updated.
 
-| Property   | Type                                  | Description               |
-|:-----------|:--------------------------------------|:--------------------------|
-| acl        | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content    | [externalItemContent](../resources/externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed. |
-| properties | Object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md). |
+| Property   | Type                                                       | Description                                                                                                                                                                                   |
+| :--------- | :--------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| acl        | [acl](../resources/acl.md) collection                      | An array of access control entries. Each entry specifies the access granted to a user or group.                                                                                               |
+| content    | [externalItemContent](../resources/externalitemcontent.md) | A plain-text representation of the contents of the item. The text in this property is full-text indexed.                                                                                      |
+| properties | Object                                                     | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md). |
 
 ### Updating the acl collection
 
@@ -78,6 +78,7 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_externalitem"
@@ -98,23 +99,28 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-externalitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-externalitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-externalitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
+
 ### Response
+
 <!-- markdownlint-enable MD024 -->
 
 The following is an example of the response.
@@ -153,6 +159,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update externalitem",
@@ -163,5 +170,3 @@ Content-type: application/json
     "Error: update_externalitem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
-
-

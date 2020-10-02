@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get deviceCategory"
 description: "Read properties and relationships of the deviceCategory object."
 author: "dougeby"
@@ -21,15 +21,15 @@ Read properties and relationships of the [deviceCategory](../resources/intune-sh
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)||
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-| &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application||
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-| &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| Permission type                        | Permissions (from most to least privileged)                                           |
+| :------------------------------------- | :------------------------------------------------------------------------------------ |
+| Delegated (work or school account)     |                                                                                       |
+| &nbsp; &nbsp; **Device management**    | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **Onboarding**           | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                        |
+| Application                            |                                                                                       |
+| &nbsp; &nbsp; **Device management**    | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **Onboarding**           | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## HTTP Request
 
@@ -39,7 +39,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
@@ -49,7 +50,8 @@ GET /deviceManagement/deviceCategories/{deviceCategoryId}
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
@@ -59,10 +61,10 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 ## Request headers
 
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
 
@@ -78,7 +80,7 @@ If successful, this method returns a `200 OK` response code and [deviceCategory]
 
 Here is are examples of the request.
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 GET https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
 ```
@@ -87,7 +89,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCa
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. Properties returned from an actual call vary according to context.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 211
@@ -101,15 +103,3 @@ Content-Length: 211
   }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

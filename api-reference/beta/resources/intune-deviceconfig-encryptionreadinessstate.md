@@ -1,4 +1,4 @@
----
+﻿---
 title: "encryptionReadinessState enum type"
 description: "Encryption readiness state"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Encryption readiness state
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notReady|0|Not ready|
-|ready|1|Ready|
 
-
-
-
-
-
+| Member   | Value | Description |
+| :------- | :---- | :---------- |
+| notReady | 0     | Not ready   |
+| ready    | 1     | Ready       |

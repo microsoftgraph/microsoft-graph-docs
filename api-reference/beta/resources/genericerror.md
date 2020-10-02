@@ -1,4 +1,4 @@
----
+﻿---
 title: "genericError resource type"
 description: "A general-purpose error."
 localization_priority: Normal
@@ -17,10 +17,10 @@ A general-purpose error.
 
 ## Properties
 
-| Property | Type | Description |
-|:---------|:-----|:------------|
-| message | String | The error message. |
-| code | String | The error code. |
+| Property | Type   | Description        |
+| :------- | :----- | :----------------- |
+| message  | String | The error message. |
+| code     | String | The error code.    |
 
 ## JSON representation
 
@@ -39,5 +39,3 @@ Here is a JSON representation of the resource.
   "code": "String"
 }
 ```
-
-

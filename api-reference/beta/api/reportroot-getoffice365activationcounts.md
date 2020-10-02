@@ -1,4 +1,4 @@
----
+﻿---
 title: "reportRoot: getOffice365ActivationCounts"
 description: "Get the count of Microsoft 365 activations on desktops and devices."
 localization_priority: Normal
@@ -22,10 +22,10 @@ Get the count of Microsoft 365 activations on desktops and devices.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Reports.Read.All                            |
 
 **Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
@@ -79,7 +79,6 @@ The following is an example that outputs CSV.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getoffice365activationcounts_csv"
@@ -88,7 +87,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365ActivationCounts?$format=text/csv
 ```
-
 
 #### Response
 
@@ -125,7 +123,6 @@ The following is an example that returns JSON.
 
 The following example shows the request.
 
-
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getoffice365activationcounts_json"
@@ -134,7 +131,6 @@ The following example shows the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365ActivationCounts?$format=application/json
 ```
-
 
 #### Response
 
@@ -168,8 +164,10 @@ Content-Length: 268
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",
@@ -179,5 +177,3 @@ Content-Length: 268
   "suppressions": [
   ]
 }-->
-
-

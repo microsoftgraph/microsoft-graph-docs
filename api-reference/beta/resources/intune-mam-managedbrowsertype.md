@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedBrowserType enum type"
 description: "Type of managed browser"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Type of managed browser
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured|
-|microsoftEdge|1|Microsoft Edge|
 
-
-
-
-
-
+| Member        | Value | Description    |
+| :------------ | :---- | :------------- |
+| notConfigured | 0     | Not configured |
+| microsoftEdge | 1     | Microsoft Edge |

@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Retrieve the properties and relationships of a Drive resource."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Get Drive
 
 Namespace: microsoft.graph
@@ -21,11 +22,11 @@ A Drive is the top-level container for a file system, such as OneDrive or ShareP
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                           |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All                                      |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## Get current user's OneDrive
 
@@ -35,27 +36,30 @@ If a user's OneDrive is not provisioned but the user has a license to use OneDri
 
 ### HTTP request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-default-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-default-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-default-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Get a user's OneDrive
 
@@ -65,33 +69,36 @@ If a user's OneDrive is not provisioned but the user has a license to use OneDri
 
 ### HTTP request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
 
 ```msgraph-interactive
 GET /users/{idOrUserPrincipalName}/drive
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Path parameters
 
-| Parameter name | Value  | Description                                       |
-|:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | string | Required. The identifier for the user object who owns the OneDrive. |
+| Parameter name          | Value  | Description                                                         |
+| :---------------------- | :----- | :------------------------------------------------------------------ |
+| _idOrUserPrincipalName_ | string | Required. The identifier for the user object who owns the OneDrive. |
 
 ## Get the document library associated with a group
 
@@ -99,32 +106,35 @@ To access a Group's default document library, your app requests the **drive** re
 
 ### HTTP request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
 
 ```msgraph-interactive
 GET /groups/{groupId}/drive
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Path parameters
 
-| Parameter name | Value  | Description                                       |
-|:---------------|:-------|:--------------------------------------------------|
+| Parameter name | Value  | Description                                                             |
+| :------------- | :----- | :---------------------------------------------------------------------- |
 | _groupId_      | string | Required. The identifier for the group which owns the document library. |
 
 ## Get the document library for a site
@@ -133,32 +143,35 @@ To access a [Site's](../resources/site.md) default document library, your app re
 
 ### HTTP request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-drive-by-site-id", "scopes": "group.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{siteId}/drive
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-site-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-site-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-site-id-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Path parameters
 
-| Parameter name | Value  | Description                                       |
-|:---------------|:-------|:--------------------------------------------------|
+| Parameter name | Value  | Description                                                               |
+| :------------- | :----- | :------------------------------------------------------------------------ |
 | _siteId_       | string | Required. The identifier for the site that contains the document library. |
 
 ## Get a drive by ID
@@ -167,32 +180,35 @@ If you have the unique identifier for a drive, you can access it directly from t
 
 ### HTTP request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /drives/{driveId}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-drive-by-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-drive-by-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-id-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Path parameters
 
 | Parameter name | Value  | Description                                       |
-|:---------------|:-------|:--------------------------------------------------|
+| :------------- | :----- | :------------------------------------------------ |
 | _driveId_      | string | Required. The identifier for the drive requested. |
 
 ## Optional query parameters
@@ -245,5 +261,3 @@ If the drive does not exist and cannot be provisioned automatically (when using 
   ]
 }
 -->
-
-

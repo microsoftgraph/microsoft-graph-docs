@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update teamsApp"
 description: "Update an app previously published to a Teams app catalog. "
 author: "nkramer"
@@ -21,12 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 >**Note:** Only global administrators can call this API.
 
-| Permission Type                        | Permissions (from least to most privileged)|
-|:----------------------------------     |:-------------|
+| Permission Type                        | Permissions (from least to most privileged)       |
+| :------------------------------------- | :------------------------------------------------ |
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | AppCatalog.Submit|
-| Delegated (personal Microsoft account) | Not supported|
-| Application                            | Not supported. |
+| Delegated (work or school account)     | AppCatalog.Submit                                 |
+| Delegated (personal Microsoft account) | Not supported                                     |
+| Application                            | Not supported.                                    |
 
 ## HTTP request
 
@@ -38,8 +38,8 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## Request headers
 
-| Header        | Value           |
-|:--------------|:--------------  |
+| Header        | Value                      |
+| :------------ | :------------------------- |
 | Authorization | Bearer {token}. Required.  |
 | Content-Type  | application/zip. Required. |
 
@@ -57,11 +57,14 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example 1: Update an application previously published to the Microsoft Teams app catalog
 
+
+
 ### Request
 
 <!-- markdownlint-disable MD034 -->
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
@@ -74,16 +77,18 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- markdownlint-disable MD024 -->
 

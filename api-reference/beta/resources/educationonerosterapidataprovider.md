@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationOneRosterApiDataProvider resource"
 description: "Used to set up the school data synchronization profile when the OneRoster API is used as the input source."
 author: "mmast-msft"
@@ -69,6 +69,7 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2020-05-06 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationOneRosterApiDataProvider resource",
@@ -79,5 +80,3 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
       "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.settings"
   ]
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Graph API to work with Microsoft Teams"
 description: "Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more."
 localization_priority: Priority
@@ -15,21 +15,21 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 
 ## Key resources in Microsoft Teams
 
-| Resource | Methods |
-|:---------------|:--------|
-|[team](../resources/team.md)| [List your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](../api/group-delete.md), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [remove owner](../api/group-delete-owners.md), [get files](drive.md), [get notebook](../resources/notebook.md), [get plans](plannergroup.md), [get calendar](event.md) |
-|[channel](../resources/channel.md)|[List](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [update](../api/channel-patch.md), [delete](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[List](../api/teamstab-list.md), [create](../api/teamstab-add.md), [read](../api/teamstab-get.md), [update](../api/teamstab-update.md), [delete](../api/teamstab-delete.md) |
-|[teamsApp](../resources/teamsapp.md)|[List](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
-|[chatMessage](../resources/chatmessage.md)| [send](../api/channel-post-messages.md) |
-|[call](../resources/call.md)| [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md) |
-|[schedule](../resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
-|[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
-|[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
-|[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
-|[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
+| Resource                                                     | Methods                                                                                                                                                                                                                                                                                                                                               |
+| :----------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [team](../resources/team.md)                                 | [List your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](../api/group-delete.md), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md)         |
+| [group](../resources/group.md)                               | [Add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [remove owner](../api/group-delete-owners.md), [get files](drive.md), [get notebook](../resources/notebook.md), [get plans](plannergroup.md), [get calendar](event.md)                                         |
+| [channel](../resources/channel.md)                           | [List](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [update](../api/channel-patch.md), [delete](../api/channel-delete.md)                                                                                                                                                                                |
+| [teamsTab](../resources/teamstab.md)                         | [List](../api/teamstab-list.md), [create](../api/teamstab-add.md), [read](../api/teamstab-get.md), [update](../api/teamstab-update.md), [delete](../api/teamstab-delete.md)                                                                                                                                                                           |
+| [teamsApp](../resources/teamsapp.md)                         | [List](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)                                                                                                                                                                                                      |
+| [teamsAppInstallation](../resources/teamsappinstallation.md) | [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md)                                                                                                                                                         |
+| [chatMessage](../resources/chatmessage.md)                   | [send](../api/channel-post-messages.md)                                                                                                                                                                                                                                                                                                               |
+| [call](../resources/call.md)                                 | [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md) |
+| [schedule](../resources/schedule.md)                         | [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md)                                                                                                                                                                                                                                    |
+| [schedulingGroup](../resources/schedulinggroup.md)           | [Create](../api/schedule-post-schedulinggroups.md), [List](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md)                                                                                                                      |
+| [shift](../resources/shift.md)                               | [Create](../api/schedule-post-shifts.md), [List](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md)                                                                                                                                                                        |
+| [timeOff](../resources/timeoff.md)                           | [Create](../api/schedule-post-timesoff.md), [List](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md)                                                                                                                                                              |
+| [timeOffReason](../resources/timeoffreason.md)               | [Create](../api/schedule-post-timeoffreasons.md), [List](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md)                                                                                                                                |
 
 ## Microsoft Teams limits
 
@@ -69,13 +69,13 @@ The following are the differences at the API level between teams and groups:
 
 To add members and owners to a team, change the membership of the [group](../resources/group.md) with the same ID.
 
-| Use case      | Verb      | URL |
-| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Add member](../api/group-post-members.md)	| POST	    | /groups/{id}/members/$ref  |
-| [Remove member](../api/group-delete-members.md)	| DELETE	| /groups/{id}/members/{userId}/$ref |
-| [Add owner](../api/group-post-owners.md)     | POST	    | /groups/{id}/owners/$ref |
-| [Remove owner](../api/group-delete-owners.md)	| DELETE	| /groups/{id}/owners/{userId}/$ref |
-| [Update team](../api/team-update.md)	| PATCH     | /teams/{id} |
+| Use case                                        | Verb   | URL                                |
+| ----------------------------------------------- | ------ | ---------------------------------- |
+| [Add member](../api/group-post-members.md)      | POST   | /groups/{id}/members/$ref          |
+| [Remove member](../api/group-delete-members.md) | DELETE | /groups/{id}/members/{userId}/$ref |
+| [Add owner](../api/group-post-owners.md)        | POST   | /groups/{id}/owners/$ref           |
+| [Remove owner](../api/group-delete-owners.md)   | DELETE | /groups/{id}/owners/{userId}/$ref  |
+| [Update team](../api/team-update.md)            | PATCH  | /teams/{id}                        |
 
 We recommend that when you add an owner, you also add that user as a member.
 If a team has an owner who is not also a member, ownership and membership changes might not show up immediately in Microsoft Teams.
@@ -87,17 +87,17 @@ Known issue: when DELETE /groups/{id}/owners is called, the user is also removed
 
 When adding and removing members and owners, don't put braces { } around the ID.
 
-| Speed | Syntax |
-| ------ | ----- |
-| Fast | `https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref` |
-| Slow | `https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref` |
+| Speed | Syntax                                                                                                                               |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Fast  | `https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref`     |
+| Slow  | `https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref` |
 
 Similarly, if the `userId` in the URL or payload is expressed as a UPN rather than as a GUID, the performance will be slower.
 
-| Speed | Syntax |
-| ------ | ----- |
-| Fast | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
-| Slow | john@example.com |
+| Speed | Syntax                               |
+| ----- | ------------------------------------ |
+| Fast  | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
+| Slow  | john@example.com                     |
 
 When the slower path is taken, if a current team member or owner is signed in to the Microsoft Teams application/website, the change will be reflected within an hour.
 If none of those users are signed in to the Microsoft Teams application/website, the change will not be reflected until an hour after one of them signs in.
@@ -124,10 +124,10 @@ Apps that don't follow these polling requirements will be considered in violatio
 or the suspension or termination of your use of the Microsoft APIs.
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## See also
 
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
 - Sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)
-

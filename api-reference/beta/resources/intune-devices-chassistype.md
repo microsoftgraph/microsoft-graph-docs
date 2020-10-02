@@ -1,4 +1,4 @@
----
+﻿---
 title: "chassisType enum type"
 description: "Chassis type."
 author: "dougeby"
@@ -18,20 +18,15 @@ Namespace: microsoft.graph
 Chassis type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown.|
-|desktop|1|Desktop.|
-|laptop|2|Laptop.|
-|worksWorkstation|3|Workstation.|
-|enterpriseServer|4|Enterprise server.|
-|phone|100|Phone.|
-|tablet|101|Mobile tablet.|
-|mobileOther|102|Other mobile.|
-|mobileUnknown|103|Unknown mobile.|
 
-
-
-
-
-
+| Member           | Value | Description        |
+| :--------------- | :---- | :----------------- |
+| unknown          | 0     | Unknown.           |
+| desktop          | 1     | Desktop.           |
+| laptop           | 2     | Laptop.            |
+| worksWorkstation | 3     | Workstation.       |
+| enterpriseServer | 4     | Enterprise server. |
+| phone            | 100   | Phone.             |
+| tablet           | 101   | Mobile tablet.     |
+| mobileOther      | 102   | Other mobile.      |
+| mobileUnknown    | 103   | Unknown mobile.    |

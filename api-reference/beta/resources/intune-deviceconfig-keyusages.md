@@ -1,4 +1,4 @@
----
+﻿---
 title: "keyUsages enum type"
 description: "Key Usage Options."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Key Usage Options.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|keyEncipherment|1|Key Encipherment Usage.|
-|digitalSignature|2|Digital Signature Usage.|
 
-
-
-
-
-
+| Member           | Value | Description              |
+| :--------------- | :---- | :----------------------- |
+| keyEncipherment  | 1     | Key Encipherment Usage.  |
+| digitalSignature | 2     | Digital Signature Usage. |

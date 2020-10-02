@@ -1,4 +1,4 @@
----
+﻿---
 title: "report resource type"
 description: "A report that varies according to the workflow, either device configuration profile history or enrollment failures."
 localization_priority: Normal
@@ -17,9 +17,9 @@ A report that varies according to the workflow, either device configuration prof
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|content|Stream|Not yet documented|
+| Property | Type   | Description        |
+| :------- | :----- | :----------------- |
+| content  | Stream | Not yet documented |
 
 ## Relationships
 
@@ -28,19 +28,15 @@ None
 ## JSON Representation
 
 Here is a JSON representation of the resource.
+
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.report"
 }-->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.report",
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
-
-
-
-
-

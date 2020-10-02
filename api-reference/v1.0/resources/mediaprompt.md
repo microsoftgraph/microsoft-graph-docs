@@ -1,4 +1,4 @@
----
+﻿---
 title: "mediaPrompt resource type"
 description: "This resource type contains information about the audio file to be played and other additional settings."
 author: "ananmishr"
@@ -15,9 +15,9 @@ This resource type contains information about the audio file to be played and ot
 
 ## Properties
 
-| Property    | Type                      | Description                                                                     |
-| :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| mediaInfo   | [mediaInfo](mediainfo.md) | The media information                                                           |
+| Property  | Type                      | Description           |
+| :-------- | :------------------------ | :-------------------- |
+| mediaInfo | [mediaInfo](mediainfo.md) | The media information |
 
 ## JSON representation
 
@@ -39,6 +39,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -49,4 +50,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

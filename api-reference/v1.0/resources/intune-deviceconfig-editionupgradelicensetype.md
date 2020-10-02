@@ -1,4 +1,4 @@
----
+﻿---
 title: "editionUpgradeLicenseType enum type"
 description: "Edition Upgrade License type"
 author: "dougeby"
@@ -16,16 +16,8 @@ Namespace: microsoft.graph
 Edition Upgrade License type
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|productKey|0|Product Key Type|
-|licenseFile|1|License File Type|
 
-
-
-
-
-
-
-
-
+| Member      | Value | Description       |
+| :---------- | :---- | :---------------- |
+| productKey  | 0     | Product Key Type  |
+| licenseFile | 1     | License File Type |

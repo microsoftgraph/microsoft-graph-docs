@@ -1,4 +1,4 @@
----
+﻿---
 title: "subjectNameFormat enum type"
 description: "Subject Name Format Options."
 author: "dougeby"
@@ -18,20 +18,15 @@ Namespace: microsoft.graph
 Subject Name Format Options.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|commonName|0|Common name.|
-|commonNameIncludingEmail|1|Common Name Including Email.|
-|commonNameAsEmail|2|Common Name As Email.|
-|custom|3|Custom subject name format.|
-|commonNameAsIMEI|5|Common Name As IMEI.|
-|commonNameAsSerialNumber|6|Common Name As Serial Number.|
-|commonNameAsAadDeviceId|7|Common Name As Serial Number.|
-|commonNameAsIntuneDeviceId|8|Common Name As Serial Number.|
-|commonNameAsDurableDeviceId|9|Common Name As Serial Number.|
 
-
-
-
-
-
+| Member                      | Value | Description                   |
+| :-------------------------- | :---- | :---------------------------- |
+| commonName                  | 0     | Common name.                  |
+| commonNameIncludingEmail    | 1     | Common Name Including Email.  |
+| commonNameAsEmail           | 2     | Common Name As Email.         |
+| custom                      | 3     | Custom subject name format.   |
+| commonNameAsIMEI            | 5     | Common Name As IMEI.          |
+| commonNameAsSerialNumber    | 6     | Common Name As Serial Number. |
+| commonNameAsAadDeviceId     | 7     | Common Name As Serial Number. |
+| commonNameAsIntuneDeviceId  | 8     | Common Name As Serial Number. |
+| commonNameAsDurableDeviceId | 9     | Common Name As Serial Number. |

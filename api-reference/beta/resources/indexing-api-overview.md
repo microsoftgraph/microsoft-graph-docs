@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Search API to index data"
 description: "Use Microsoft Graph to index custom items in the Microsoft Search service."
 localization_priority: Priority
@@ -25,13 +25,13 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 2. [Create and register a schema](../api/externalconnection-post-schema.md) that describes the type and how to index the external data.
 3. [Index the data](../api/externalconnection-put-items.md) as an external item.
 
-| Use cases                                        | REST resources                              | See also |
-|:-------------------------------------------------|:--------------------------------------------|:--|
-| **Configuration actions**                        |                                             |   |
+| Use cases                                        | REST resources                              | See also                                                    |
+| :----------------------------------------------- | :------------------------------------------ | :---------------------------------------------------------- |
+| **Configuration actions**                        |                                             |                                                             |
 | Create, update, or delete a connection           | [externalConnection](externalconnection.md) | [externalConnection methods](externalconnection.md#methods) |
-| Register a schema for the external data          | [schema](schema.md)                         | [schema methods](schema.md#methods) |
-| **Indexing actions**                             |                                             |   |
-| Add, update or delete a custom item in the index | [externalItem](externalitem.md)             | [externalItem methods](externalItem.md#methods) |
+| Register a schema for the external data          | [schema](schema.md)                         | [schema methods](schema.md#methods)                         |
+| **Indexing actions**                             |                                             |                                                             |
+| Add, update or delete a custom item in the index | [externalItem](externalitem.md)             | [externalItem methods](externalItem.md#methods)             |
 
 ## Known limitations
 
@@ -47,6 +47,7 @@ The following are current knownlimitations:
 - Result ranking is best effort.
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
@@ -54,5 +55,3 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 - See the [Microsoft Search API overview](/graph/search-concept-overview).
 - Drill down on the methods, properties, and relationships of the [externalConnection](externalconnection.md), [schema](schema.md), and [externalItem](externalitem.md) resources.
 - Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
-
-

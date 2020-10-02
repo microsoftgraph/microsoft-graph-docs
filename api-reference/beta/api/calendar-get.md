@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get calendar"
 description: "Get the properties and relationships of a calendar object. The calendar can be one for a user, "
 localization_priority: Normal
@@ -21,25 +21,29 @@ There are two scenarios where an app can get another user's calendar:
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
 
-
 ## Permissions
+
 Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-----|:-----|:-----|:-----|
-| user calendar | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
-| group calendar | Group.Read.All, Group.ReadWrite.All | Not supported. | Not supported. |
-
+| Calendar       | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application                         |
+| :------------- | :---------------------------------- | :------------------------------------- | :---------------------------------- |
+| user calendar  | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite    | Calendars.Read, Calendars.ReadWrite |
+| group calendar | Group.Read.All, Group.ReadWrite.All | Not supported.                         | Not supported.                      |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 A user's or group's default [calendar](../resources/calendar.md).
+
 ```http
 GET /me/calendar
 GET /users/{id | userPrincipalName}/calendar
 GET /groups/{id}/calendar
 ```
+
 A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
+
 ```http
 GET /me/calendars/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}
@@ -47,59 +51,76 @@ GET /users/{id | userPrincipalName}/calendars/{id}
 GET /me/calendarGroup/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
+
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
+
 ```http
 GET /me/calendarGroups/{id}/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and [calendar](../resources/calendar.md) object in the response body.
+
 ## Example
+
 ##### Request
+
 The following example gets the signed-in user's default calendar.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_calendar"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.calendar"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -135,6 +156,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",

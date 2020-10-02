@@ -1,4 +1,4 @@
----
+﻿---
 title: "inferenceClassificationOverride resource type"
 description: "Represents a user's override for how incoming messages from a specific sender should always be classified as"
 localization_priority: Normal
@@ -16,24 +16,24 @@ Namespace: microsoft.graph
 Represents a user's override for how incoming messages from a specific sender should always be classified as
 in a [Focused Inbox](manage-focused-inbox.md).
 
-
 ## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)	|Change the **ClassifyAs** field of an override as specified. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | None |Delete an override specified by its ID. |
+| Method                                                     | Return Type                                                           | Description                                                  |
+| :--------------------------------------------------------- | :-------------------------------------------------------------------- | :----------------------------------------------------------- |
+| [Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) | Change the **ClassifyAs** field of an override as specified. |
+| [Delete](../api/inferenceclassificationoverride-delete.md) | None                                                                  | Delete an override specified by its ID.                      |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|classifyAs|string| Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.|
-|id|string| The unique identifier of the override. Read-only.|
-|senderEmailAddress|[emailAddress](emailaddress.md)|The email address information of the sender for whom the override is created.|
+
+| Property           | Type                            | Description                                                                                                                     |
+| :----------------- | :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------ |
+| classifyAs         | string                          | Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`. |
+| id                 | string                          | The unique identifier of the override. Read-only.                                                                               |
+| senderEmailAddress | [emailAddress](emailaddress.md) | The email address information of the sender for whom the override is created.                                                   |
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 
@@ -58,6 +58,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -68,5 +69,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

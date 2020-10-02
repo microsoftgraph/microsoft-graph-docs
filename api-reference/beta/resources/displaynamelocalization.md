@@ -1,4 +1,4 @@
----
+﻿---
 title: "displayNameLocalization resource type"
 description: "Provides the ability for an administrator to customize the string used in a shared Microsoft 365 experience."
 localization_priority: Normal
@@ -15,10 +15,10 @@ Provides the ability for an administrator to customize the string used in a shar
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName   |String       | If present, the value of this field contains the **displayName** string that has been set for the language present in the **languageTag** field.|
-|languageTag   |String       | Provides the language culture-code and friendly name of the language that the **displayName** field has been provided in.                  |
+| Property    | Type   | Description                                                                                                                                      |
+| :---------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName | String | If present, the value of this field contains the **displayName** string that has been set for the language present in the **languageTag** field. |
+| languageTag | String | Provides the language culture-code and friendly name of the language that the **displayName** field has been provided in.                        |
 
 ## JSON representation
 
@@ -42,6 +42,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "displayNameLocalization resource",
@@ -49,5 +50,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

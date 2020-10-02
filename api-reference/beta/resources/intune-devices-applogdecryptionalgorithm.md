@@ -1,4 +1,4 @@
----
+﻿---
 title: "appLogDecryptionAlgorithm enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,12 +18,7 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|aes256|0|Not yet documented|
 
-
-
-
-
-
+| Member | Value | Description        |
+| :----- | :---- | :----------------- |
+| aes256 | 0     | Not yet documented |

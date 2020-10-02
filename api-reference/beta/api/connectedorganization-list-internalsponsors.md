@@ -1,4 +1,4 @@
----
+﻿---
 title: "List internalSponsors"
 description: "Retrieve a list of connectedOrganization's internalSponsors."
 author: "markwahl-msft"
@@ -19,11 +19,11 @@ Retrieve a list of a [connectedOrganization](../resources/connectedorganization.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
+| Permission type                        | Permissions (from most to least privileged)                         |
+| :------------------------------------- | :------------------------------------------------------------------ |
 | Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                                      |
+| Application                            | Not supported.                                                      |
 
 ## HTTP request
 
@@ -31,16 +31,19 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}/internalSponsors
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -53,36 +56,41 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "connectedorganization_get_internalSponsors"
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}/internalSponsors
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/connectedorganization-get-internalsponsors-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/connectedorganization-get-internalsponsors-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/connectedorganization-get-internalsponsors-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,6 +98,7 @@ The following is an example of the response.
   "isCollection": true
 }
 -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -105,6 +114,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List internalSponsors",
@@ -112,5 +122,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

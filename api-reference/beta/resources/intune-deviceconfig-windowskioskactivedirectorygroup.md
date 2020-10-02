@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskActiveDirectoryGroup resource type"
 description: "The class used to identify an Azure Directory group for the kiosk configuration"
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 The class used to identify an Azure Directory group for the kiosk configuration
 
-
 Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|groupName|String|The name of the AD group that will be locked to this kiosk configuration|
+
+| Property  | Type   | Description                                                              |
+| :-------- | :----- | :----------------------------------------------------------------------- |
+| groupName | String | The name of the AD group that will be locked to this kiosk configuration |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskActiveDirectoryGroup"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskActiveDirectoryGroup",
   "groupName": "String"
 }
 ```
-
-
-
-
-
-

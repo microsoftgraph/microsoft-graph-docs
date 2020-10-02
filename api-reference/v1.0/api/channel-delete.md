@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete channel"
 description: "Delete the channel."
 author: "nkramer" 
@@ -19,27 +19,27 @@ Delete the [channel](../resources/channel.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.Delete.All, Group.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Channel.Delete.All, Channel.Delete.Group*, Group.ReadWrite.All, Directory.ReadWrite.All    |
-
-> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Group.ReadWrite.All                         |
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /teams/{id}/channels/{id}
 ```
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -58,6 +58,7 @@ The following is an example of the request.
 <!-- markdownlint-disable MD025 -->
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_channel"
@@ -66,19 +67,24 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/delete-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,7 +93,8 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 
 ### Response
 
-The following is an example of the response.
+The following is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -99,8 +106,8 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+
+<!-- {
   "type": "#page.annotation",
   "description": "Delete channel",
   "keywords": "",
@@ -108,5 +115,4 @@ HTTP/1.1 204 No Content
   "tocPath": "",
   "suppressions": [
   ]
-}
--->
+}-->

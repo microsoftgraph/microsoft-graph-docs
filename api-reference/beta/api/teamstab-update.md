@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update tab"
 description: "Update the properties of the specified tab."
 author: "nkramer"
@@ -17,31 +17,34 @@ Update the properties of the specified [tab](../resources/teamstab.md).
 This can be used to configure the content of the tab.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application                            | TeamsTab.Edit.Group*, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                |
+| :------------------------------------- | :----------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All                       |
+| Delegated (personal Microsoft account) | Not supported.                                                                             |
+| Application                            | TeamsTab.Edit.Group*, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
+
 ```http
 PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, supply a JSON representation of [tab](../resources/teamstab.md) object.
 
 ## Response
@@ -49,8 +52,11 @@ In the request body, supply a JSON representation of [tab](../resources/teamstab
 If successful, this method returns a `200 OK` response code.
 
 ## Example
+
 #### Request
+
 The following is an example of the request.
+
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
@@ -60,7 +66,9 @@ Content-length: 211
   "displayName": "My Contoso Tab - updated"
 }
 ```
+
 #### Response
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -86,6 +94,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -96,5 +105,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "bucketAggregationRange resource type"
 description: "Enables to specify some manual ranges in the aggregation request. This in only applicable to non string refiners : numeric and dates."
 localization_priority: Normal
@@ -17,10 +17,10 @@ Specifies the lower and upper limit to a range for aggregating search results. A
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|from|String| Defines the lower bound from which to compute the aggregation. This can be a numeric value or a string representation of a date using the `YYYY-MM-DDTHH:mm:ss.sssZ` format. Required.|
-|to|String| Defines the upper bound up to which to compute the aggregation. This can be a numeric value or a string representation of a date using the `YYYY-MM-DDTHH:mm:ss.sssZ` format. Required.|
+| Property | Type   | Description                                                                                                                                                                             |
+| :------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| from     | String | Defines the lower bound from which to compute the aggregation. This can be a numeric value or a string representation of a date using the `YYYY-MM-DDTHH:mm:ss.sssZ` format. Required.  |
+| to       | String | Defines the upper bound up to which to compute the aggregation. This can be a numeric value or a string representation of a date using the `YYYY-MM-DDTHH:mm:ss.sssZ` format. Required. |
 
 ## JSON representation
 

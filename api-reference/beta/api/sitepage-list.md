@@ -1,4 +1,4 @@
----
+﻿---
 author: rahmit
 description: "Get the collection of sitePage objects from the site pages [list] in a site. All pages in the site are returned (with pagination)."
 ms.date: 03/15/2018
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # List the pages in the site pages list of a site
 
 Namespace: microsoft.graph
@@ -23,11 +24,11 @@ Get the collection of [sitePage][] objects from the site pages [list][] in a sit
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ## HTTP request
 
@@ -239,5 +240,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

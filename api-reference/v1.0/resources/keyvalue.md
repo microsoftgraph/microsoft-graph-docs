@@ -1,4 +1,4 @@
----
+﻿---
 title: "keyValue resource type"
 description: "Standard key-value pair resource type."
 localization_priority: Normal
@@ -15,10 +15,10 @@ Represents a key-value pair.
 
 ## Properties
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|key|string| Key for the key-value pair. |
-|value|string| Value for the key-value pair.|
+| Property | Type   | Description                   |
+| :------- | :----- | :---------------------------- |
+| key      | string | Key for the key-value pair.   |
+| value    | string | Value for the key-value pair. |
 
 ## JSON representation
 
@@ -41,6 +41,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -50,4 +51,3 @@ Here is a JSON representation of the resource.
   "tocPath": ""
 }
 -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Enroll corporate-owned devices by using Intune"
 description: " (BYOD) scenario."
 author: "dougeby"
@@ -22,9 +22,3 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Imported windows autopilot device identity state](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
 - [Imported windows autopilot device identity upload](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
 - [Imported windows autopilot device identity upload status](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
-
-
-
-
-
-

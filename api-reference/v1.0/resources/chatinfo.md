@@ -1,4 +1,4 @@
----
+﻿---
 title: "chatInfo resource type"
 description: "Information about a message in Microsoft Teams."
 author: "ananmishr"
@@ -15,11 +15,11 @@ This contains information associated with Microsoft Teams meetings.
 
 ## Properties
 
-| Property            | Type    | Description|
-|:--------------------|:--------|:-----------|
-| messageId           | String  | The unique identifier of a message in a Microsoft Teams channel. |
-| replyChainMessageId | String  | The ID of the reply message. |
-| threadId            | String  | The unique identifier for a thread in Microsoft Teams. |
+| Property            | Type   | Description                                                      |
+| :------------------ | :----- | :--------------------------------------------------------------- |
+| messageId           | String | The unique identifier of a message in a Microsoft Teams channel. |
+| replyChainMessageId | String | The ID of the reply message.                                     |
+| threadId            | String | The unique identifier for a thread in Microsoft Teams.           |
 
 ## JSON representation
 
@@ -32,6 +32,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.chatInfo"
 }-->
+
 ```json
 {
   "messageId": "String",
@@ -42,6 +43,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -52,4 +54,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

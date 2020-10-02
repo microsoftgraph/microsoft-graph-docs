@@ -1,4 +1,4 @@
----
+﻿---
 title: "roleScopeTagAutoAssignment resource type"
 description: "Contains the properties for auto-assigning a Role Scope Tag to a group to be applied to Devices."
 author: "dougeby"
@@ -18,32 +18,38 @@ Namespace: microsoft.graph
 Contains the properties for auto-assigning a Role Scope Tag to a group to be applied to Devices.
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List roleScopeTagAutoAssignments](../api/intune-rbac-rolescopetagautoassignment-list.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) collection|List properties and relationships of the [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) objects.|
-|[Get roleScopeTagAutoAssignment](../api/intune-rbac-rolescopetagautoassignment-get.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Read properties and relationships of the [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) object.|
-|[Create roleScopeTagAutoAssignment](../api/intune-rbac-rolescopetagautoassignment-create.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Create a new [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) object.|
-|[Delete roleScopeTagAutoAssignment](../api/intune-rbac-rolescopetagautoassignment-delete.md)|None|Deletes a [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md).|
-|[Update roleScopeTagAutoAssignment](../api/intune-rbac-rolescopetagautoassignment-update.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Update the properties of a [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) object.|
+
+| Method                                                                                       | Return Type                                                                                     | Description                                                                                                                            |
+| :------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| [List roleScopeTagAutoAssignments](../api/intune-rbac-rolescopetagautoassignment-list.md)    | [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) collection | List properties and relationships of the [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) objects. |
+| [Get roleScopeTagAutoAssignment](../api/intune-rbac-rolescopetagautoassignment-get.md)       | [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)            | Read properties and relationships of the [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) object.  |
+| [Create roleScopeTagAutoAssignment](../api/intune-rbac-rolescopetagautoassignment-create.md) | [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)            | Create a new [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) object.                              |
+| [Delete roleScopeTagAutoAssignment](../api/intune-rbac-rolescopetagautoassignment-delete.md) | None                                                                                            | Deletes a [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md).                                        |
+| [Update roleScopeTagAutoAssignment](../api/intune-rbac-rolescopetagautoassignment-update.md) | [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)            | Update the properties of a [roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) object.                |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The auto-assignment target for the specific Role Scope Tag.|
+
+| Property | Type                                                                                                           | Description                                                 |
+| :------- | :------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
+| id       | String                                                                                                         | Key of the entity.                                          |
+| target   | [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md) | The auto-assignment target for the specific Role Scope Tag. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleScopeTagAutoAssignment"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
   "id": "String (identifier)",
@@ -54,9 +60,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

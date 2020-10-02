@@ -1,4 +1,4 @@
----
+﻿---
 title: "customUpdateTimeWindow resource type"
 description: "Custom update time window"
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 Custom update time window
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|startDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Start day of the time window. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|endDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|End day of the time window. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|startTime|TimeOfDay|Start time of the time window|
-|endTime|TimeOfDay|End time of the time window|
+
+| Property  | Type                                                       | Description                                                                                                                      |
+| :-------- | :--------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| startDay  | [dayOfWeek](../resources/intune-deviceconfig-dayofweek.md) | Start day of the time window. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. |
+| endDay    | [dayOfWeek](../resources/intune-deviceconfig-dayofweek.md) | End day of the time window. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.   |
+| startTime | TimeOfDay                                                  | Start time of the time window                                                                                                    |
+| endTime   | TimeOfDay                                                  | End time of the time window                                                                                                      |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customUpdateTimeWindow"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.customUpdateTimeWindow",
   "startDay": "String",
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   "endTime": "String (time of day)"
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "workbook resource type"
 description: "Contains related workbook objects such as worksheets, tables, ranges, and so on."
 localization_priority: Normal
@@ -15,23 +15,25 @@ Contains related workbook objects such as worksheets, tables, ranges, and so on.
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Create session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
-|[Close session](../api/workbook-closesession.md) | None |Close an existing session.|
-|[Refresh session](../api/workbook-refreshsession.md) | None |Refresh an existing session.|
+| Method                                               | Return Type                                   | Description                                                                |
+| :--------------------------------------------------- | :-------------------------------------------- | :------------------------------------------------------------------------- |
+| [Create session](../api/workbook-createsession.md)   | [workbookSessionInfo](workbooksessioninfo.md) | Create a workbook session to start a persistent or non-persistent session. |
+| [Close session](../api/workbook-closesession.md)     | None                                          | Close an existing session.                                                 |
+| [Refresh session](../api/workbook-refreshsession.md) | None                                          | Refresh an existing session.                                               |
 
 ## Properties
+
 None.
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|names|[workbookNamedItem](workbooknameditem.md) collection |Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
-|tables|[workbookTable](workbooktable.md) collection |Represents a collection of tables associated with the workbook. Read-only.|
-|worksheets|[workbookWorksheet](workbookworksheet.md) collection |Represents a collection of worksheets associated with the workbook. Read-only.|
-|workbbookApplication|[workbookApplication](workbookapplication.md) |Represents the Excel workbookApplication that manages the workbook.|
-|operations|[workbookOperation](workbookoperation.md) collection|The status of Workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the `Location` header is returned in the response. Read-only. Nullable.|
+
+| Relationship         | Type                                                 | Description                                                                                                                                                                                                            |
+| :------------------- | :--------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| names                | [workbookNamedItem](workbooknameditem.md) collection | Represents a collection of workbook scoped named items (named ranges and constants). Read-only.                                                                                                                        |
+| tables               | [workbookTable](workbooktable.md) collection         | Represents a collection of tables associated with the workbook. Read-only.                                                                                                                                             |
+| worksheets           | [workbookWorksheet](workbookworksheet.md) collection | Represents a collection of worksheets associated with the workbook. Read-only.                                                                                                                                         |
+| workbbookApplication | [workbookApplication](workbookapplication.md)        | Represents the Excel workbookApplication that manages the workbook.                                                                                                                                                    |
+| operations           | [workbookOperation](workbookoperation.md) collection | The status of Workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the `Location` header is returned in the response. Read-only. Nullable. |
 
 ## Functions
 
@@ -61,7 +63,7 @@ Inside a cell, the `vlookup` function looks like this:
 The example below shows how to call the `vlookup` function and pass these parameters with the Excel REST API.
 Request: 
 
-```http 
+```http
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
 content-type: Application/Json 
 authorization: Bearer {access-token} 
@@ -104,7 +106,7 @@ The example below shows how to call the `median` function and one or more input 
 
 Request: 
 
-```http 
+```http
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
 content-type: Application/Json 
 authorization: Bearer {access-token} 
@@ -132,6 +134,7 @@ content-type: application/json;odata.metadata
   "value": 30
 }
 ```
+
 ## JSON representation
 
 <!--{
@@ -140,7 +143,8 @@ content-type: application/json;odata.metadata
   "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.workbook"
 }-->
-``` json
+
+```json
 {
     "id": "string"
 }
@@ -148,6 +152,7 @@ content-type: application/json;odata.metadata
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Workbook resource",
@@ -155,5 +160,3 @@ content-type: application/json;odata.metadata
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

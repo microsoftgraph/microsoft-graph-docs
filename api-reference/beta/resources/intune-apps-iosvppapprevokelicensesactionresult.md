@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosVppAppRevokeLicensesActionResult resource type"
 description: "Defines results for actions on iOS Vpp Apps, contains inherited properties for ActionResult."
 author: "dougeby"
@@ -18,29 +18,34 @@ Namespace: microsoft.graph
 Defines results for actions on iOS Vpp Apps, contains inherited properties for ActionResult.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|userId|String|UserId associated with the action.|
-|managedDeviceId|String|DeviceId associated with the action.|
-|totalLicensesCount|Int32|A count of the number of licenses for which revoke was attempted.|
-|failedLicensesCount|Int32|A count of the number of licenses for which revoke failed.|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|The reason for the revoke licenses action failure. Possible values are: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
-|actionName|String|Action name|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|State of the action. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|startDateTime|DateTimeOffset|Time the action was initiated|
-|lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated|
+
+| Property            | Type                                                                                     | Description                                                                                                                                                                    |
+| :------------------ | :--------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| userId              | String                                                                                   | UserId associated with the action.                                                                                                                                             |
+| managedDeviceId     | String                                                                                   | DeviceId associated with the action.                                                                                                                                           |
+| totalLicensesCount  | Int32                                                                                    | A count of the number of licenses for which revoke was attempted.                                                                                                              |
+| failedLicensesCount | Int32                                                                                    | A count of the number of licenses for which revoke failed.                                                                                                                     |
+| actionFailureReason | [vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md) | The reason for the revoke licenses action failure. Possible values are: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`. |
+| actionName          | String                                                                                   | Action name                                                                                                                                                                    |
+| actionState         | [actionState](../resources/intune-shared-actionstate.md)                                 | State of the action. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.                                                           |
+| startDateTime       | DateTimeOffset                                                                           | Time the action was initiated                                                                                                                                                  |
+| lastUpdatedDateTime | DateTimeOffset                                                                           | Time the action state was last updated                                                                                                                                         |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosVppAppRevokeLicensesActionResult"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosVppAppRevokeLicensesActionResult",
   "userId": "String",
@@ -54,9 +59,3 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

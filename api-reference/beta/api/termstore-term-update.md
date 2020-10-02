@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update term"
 description: "Update the properties of a term object."
 author: mohitpcad
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Update term
+
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,14 +16,14 @@ Namespace: microsoft.graph.termStore
 Update the properties of a [term](../resources/termstore-term.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account) | TermStore.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
-
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | TermStore.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -30,28 +31,28 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }-->
 
-``` http
+```http
 PATCH /termStore/sets/{setId}/terms/{termId}
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the [term](../resources/termstore-term.md) object.
 
 The following table shows the properties that can be updated for a [term](../resources/termstore-term.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|labels of a term|
-|descriptions|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection|description about the term|
-|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|properties associated with the term|
-
-
+| Property     | Type                                                                                                        | Description                         |
+| :----------- | :---------------------------------------------------------------------------------------------------------- | :---------------------------------- |
+| labels       | [microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection             | labels of a term                    |
+| descriptions | [microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection | description about the term          |
+| properties   | [microsoft.graph.keyValue](../resources/keyvalue.md) collection                                             | properties associated with the term |
 
 ## Response
 
@@ -62,12 +63,13 @@ If successful, this method returns a `200 OK` response code and an updated [term
 ### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_term"
 } -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}
 Content-Type: application/json
 Content-length: 366
@@ -82,31 +84,35 @@ Content-length: 366
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-term-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-term-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-term-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.termStore.term"
 }-->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -135,5 +141,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

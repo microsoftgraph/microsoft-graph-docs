@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create externalItem"
 description: "Create a new externalItem."
 localization_priority: Normal
@@ -24,10 +24,10 @@ This API can be used to create a custom item. Specify the type you are creating 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ExternalItem.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -39,15 +39,15 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## Path parameters
 
-| Parameter     | Type   | Description                                         |
-|:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
+| Parameter     | Type   | Description                                                                                                                                                                                                                                            |
+| :------------ | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md)                                                                                                                                                           |
 | item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it is overwritten by the object sent in the body. |
 
 ## Request headers
 
 | Name          | Description                 |
-|:--------------|:----------------------------|
+| :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
@@ -65,20 +65,20 @@ Properties on an `externalItem` should use type specifiers in the payload in the
 
 - For `String` type properties, if the value contains non-ASCII characters.
 
-    ```json
+```json
     "description@odata.type": "String",
     "description": "Kandierte Äpfel"
-    ```
+```
 
 - For all collection types.
 
-    ```json
+```json
     "categories@odata.type": "Collection(String)"
     "categories": [
       "red",
       "blue"
     ]
-    ```
+```
 
     > [!IMPORTANT]
     > When including a property of type `Collection(DateTime)`, you must use the type specifier `Collection(DateTimeOffset)`.
@@ -96,6 +96,7 @@ If successful, this method returns `200 OK` response code.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_externalitem_from_connections"
@@ -132,23 +133,28 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-externalitem-from-connections-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-externalitem-from-connections-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-connections-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
+
 #### Response
+
 <!-- markdownlint-enable MD024 -->
 
 The following is an example of the response.
@@ -164,6 +170,7 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create externalItem",

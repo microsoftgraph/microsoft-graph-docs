@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create group"
 description: "Create a new Microsoft 365 group or security group."
 author: "yyuank"
@@ -23,42 +23,44 @@ This operation returns by default only a subset of the properties for each group
 >**Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                              |
+| :------------------------------------- | :----------------------------------------------------------------------- |
+| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                           |
+| Application                            | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All               |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups
 ```
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
 
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group. 
 
-| Property | Type | Description|
-|:---------------|:--------|:----------|
-| displayName | string | The name to display in the address book for the group. Required. |
-| description | string | A description for the group. Optional. |
-| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
-| mailNickname | string | The mail alias for the group. These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
-| owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
-| members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
-|visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
+| Property           | Type                                                          | Description                                                                                                                                                                       |
+| :----------------- | :------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName        | string                                                        | The name to display in the address book for the group. Required.                                                                                                                  |
+| description        | string                                                        | A description for the group. Optional.                                                                                                                                            |
+| isAssignableToRole | Boolean                                                       | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
+| mailEnabled        | boolean                                                       | Set to **true** for mail-enabled groups. Required.                                                                                                                                |
+| mailNickname       | string                                                        | The mail alias for the group. Required.                                                                                                                                           |
+| securityEnabled    | boolean                                                       | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required.                                                                                            |
+| owners             | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional.                                                                                                     |
+| members            | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional.                                                                                                    |
+| visibility         | String                                                        | Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).                     |
 
 > **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
@@ -74,10 +76,10 @@ Specify other writable properties as necessary for your group. For more informat
 
 Use the **groupTypes** property to control the type of group and its membership, as shown.
 
-| Type of group | Assigned membership | Dynamic membership |
-|:--------------|:------------------------|:---------------|
-| Microsoft 365 (aka unified group)| `["Unified"]` | `["Unified","DynamicMembership"]`
-| Dynamic | `[]` (_null_) | `["DynamicMembership"]`|
+| Type of group                     | Assigned membership | Dynamic membership                |
+| :-------------------------------- | :------------------ | :-------------------------------- |
+| Microsoft 365 (aka unified group) | `["Unified"]`       | `["Unified","DynamicMembership"]` |
+| Dynamic                           | `[]` (_null_)       | `["DynamicMembership"]`           |
 
 ## Response
 
@@ -94,11 +96,13 @@ The following example creates a Microsoft 365 group.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
 Content-length: 244
@@ -114,20 +118,23 @@ Content-length: 244
   "securityEnabled": false
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -141,7 +148,8 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -191,11 +199,13 @@ The following example creates a Microsoft 365 group with an owner and members sp
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
@@ -217,20 +227,23 @@ Content-Type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-prepopulated-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-prepopulated-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response 
 
@@ -244,7 +257,8 @@ The following is an example of a successful response. It includes only default p
   "@odata.type": "microsoft.graph.group",
   "name": "create_prepopulated_group"
 } -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -290,13 +304,14 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_role_enabled_group"
 }-->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
@@ -313,20 +328,23 @@ Content-Type: application/json
   "visibility" : "Private"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-role-enabled-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-role-enabled-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-role-enabled-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 > **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values. A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
 
@@ -340,7 +358,8 @@ The following is an example of the response. It includes only default properties
   "@odata.type": "microsoft.graph.group",
   "name": "create_role_enabled_group"
 } -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -386,9 +405,9 @@ Content-type: application/json
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -400,5 +419,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

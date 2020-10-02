@@ -1,4 +1,4 @@
----
+﻿---
 title: "managementCertificateWithThumbprint resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|thumbprint|String|The thumbprint of the management certificate|
-|certificate|String|The Base 64 encoded management certificate|
+
+| Property    | Type   | Description                                  |
+| :---------- | :----- | :------------------------------------------- |
+| thumbprint  | String | The thumbprint of the management certificate |
+| certificate | String | The Base 64 encoded management certificate   |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managementCertificateWithThumbprint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.managementCertificateWithThumbprint",
   "thumbprint": "String",
   "certificate": "String"
 }
 ```
-
-
-
-
-
-

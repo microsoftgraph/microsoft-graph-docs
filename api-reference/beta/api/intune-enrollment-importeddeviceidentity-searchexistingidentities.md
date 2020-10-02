@@ -1,4 +1,4 @@
----
+﻿---
 title: "searchExistingIdentities action"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,48 +18,54 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+| Permission type                        | Permissions (from most to least privileged)                                         |
+| :------------------------------------- | :---------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                      |
+| Application                            | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/importedDeviceIdentities/searchExistingIdentities
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|Not yet documented|
-
-
+| Property                 | Type                                                                                          | Description        |
+| :----------------------- | :-------------------------------------------------------------------------------------------- | :----------------- |
+| importedDeviceIdentities | [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection | Not yet documented |
 
 ## Response
+
 If successful, this action returns a `200 OK` response code and a [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentities/searchExistingIdentities
 
 Content-type: application/json
@@ -84,8 +90,10 @@ Content-length: 596
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 577
@@ -107,9 +115,3 @@ Content-Length: 577
   ]
 }
 ```
-
-
-
-
-
-

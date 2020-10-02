@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingProfileConstraint resource type"
 description: "Constraint enforcing a given profile metadata"
 author: "dougeby"
@@ -17,26 +17,30 @@ Namespace: microsoft.graph
 
 Constraint enforcing a given profile metadata
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|source|String|The source of the entity|
-|types|String collection|A collection of types this entity carries|
+
+| Property | Type              | Description                               |
+| :------- | :---------------- | :---------------------------------------- |
+| source   | String            | The source of the entity                  |
+| types    | String collection | A collection of types this entity carries |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingProfileConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingProfileConstraint",
   "source": "String",
@@ -45,9 +49,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

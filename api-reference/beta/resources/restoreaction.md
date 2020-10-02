@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: <decription>
 ms.date: 09/14/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # RestoreAction resource type
 
 Namespace: microsoft.graph
@@ -50,5 +51,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

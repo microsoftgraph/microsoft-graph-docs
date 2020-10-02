@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create profileCardProperty"
 description: "Use this API to create a new profileCardProperty."
 localization_priority: Normal
@@ -22,7 +22,7 @@ For more information on adding properties to the profile card for an organizatio
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
@@ -39,8 +39,8 @@ POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/pro
 
 ## Request headers
 
-| Name          |Description                  |
-|:--------------|:----------------------------|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
@@ -59,6 +59,7 @@ If successful, this method returns `201 Created` response code and a new [profil
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_profilecardproperty_from_organizationsettings"
@@ -83,20 +84,23 @@ Content-type: application/json
   ]
 }
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-profilecardproperty-from-organizationsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-profilecardproperty-from-organizationsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-profilecardproperty-from-organizationsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -132,6 +136,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create profileCardProperty",
@@ -139,5 +144,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

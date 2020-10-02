@@ -1,4 +1,4 @@
----
+﻿---
 title: "endpointSecurityConfigurationApplicablePlatform enum type"
 description: "The endpoint security configuration applicable platform."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 The endpoint security configuration applicable platform.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown.|
-|macOS|1|MacOS.|
-|windows10AndLater|2|Windows 10 and later.|
-|windows10AndWindowsServer|3|Windows 10 and Windows Server.|
 
-
-
-
-
-
+| Member                    | Value | Description                    |
+| :------------------------ | :---- | :----------------------------- |
+| unknown                   | 0     | Unknown.                       |
+| macOS                     | 1     | MacOS.                         |
+| windows10AndLater         | 2     | Windows 10 and later.          |
+| windows10AndWindowsServer | 3     | Windows 10 and Windows Server. |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "scheduledRetireState enum type"
 description: "Cancel or confirm scheduled retire "
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Cancel or confirm scheduled retire 
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|cancelRetire|0|Cancel retire.|
-|comfirmRetire|1|Retire these devices.|
 
-
-
-
-
-
+| Member        | Value | Description           |
+| :------------ | :---- | :-------------------- |
+| cancelRetire  | 0     | Cancel retire.        |
+| comfirmRetire | 1     | Retire these devices. |

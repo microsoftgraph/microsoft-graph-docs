@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskSingleUWPApp resource type"
 description: "The class used to identify the UWP app info for the kiosk configuration"
 author: "dougeby"
@@ -17,25 +17,29 @@ Namespace: microsoft.graph
 
 The class used to identify the UWP app info for the kiosk configuration
 
-
 Inherits from [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|uwpApp|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md)|This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode|
+
+| Property | Type                                                                         | Description                                                                                                 |
+| :------- | :--------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| uwpApp   | [windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md) | This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskSingleUWPApp"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskSingleUWPApp",
   "uwpApp": {
@@ -50,9 +54,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "passwordAuthenticationMethod: resetPassword"
 description: "Reset a user's password"
 localization_priority: Normal
@@ -23,11 +23,11 @@ This reset is a long-running operation and will return a link in the `Location` 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegated (work or school account)     | Not supported. | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application                            | Not supported. | Not supported. |
+| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged) |
+| :------------------------------------- | :--------------------------------------------------------- | :----------------------------------------------------------- |
+| Delegated (work or school account)     | Not supported.                                             | UserAuthenticationMethod.ReadWrite.All                       |
+| Delegated (personal Microsoft account) | Not supported.                                             | Not supported.                                               |
+| Application                            | Not supported.                                             | Not supported.                                               |
 
 For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
@@ -45,18 +45,18 @@ POST /users/{id}/authentication/passwordMethods/{id}/resetPassword
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|newPassword|String|The new password entered by the admin. Required for tenants with hybrid password scenarios. If omitted for a cloud-only password, the system returns a system-generated password. This is a unicode string with no other encoding. It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.|
+| Parameter   | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                       |
+| :---------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| newPassword | String | The new password entered by the admin. Required for tenants with hybrid password scenarios. If omitted for a cloud-only password, the system returns a system-generated password. This is a unicode string with no other encoding. It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements. |
 
 ## Response
 
@@ -66,10 +66,10 @@ If the caller did not submit a password, a Microsoft-generated password is provi
 
 ### Response headers
 
-| Name        | Description     |
-|:------------|:----------------|
-|Location     | URL to call to check the status of the operation.|
-|Retry-after  | Duration in seconds.|
+| Name        | Description                                       |
+| :---------- | :------------------------------------------------ |
+| Location    | URL to call to check the status of the operation. |
+| Retry-after | Duration in seconds.                              |
 
 ## Examples
 
@@ -82,6 +82,7 @@ The following example shows how to call this API when the caller submits a passw
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "passwordauthenticationmethod_resetpassword_adminprovided"
@@ -95,20 +96,23 @@ Content-type: application/json
   "newPassword": "newPassword-value",
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-adminprovided-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/passwordauthenticationmethod-resetpassword-adminprovided-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-adminprovided-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -129,6 +133,7 @@ Location: https://graph.microsoft.com/beta/users/{id}/authentication/operations/
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "passwordAuthenticationMethod: resetPassword",
@@ -146,6 +151,7 @@ The following example shows how to call this API when the caller does not submit
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "passwordauthenticationmethod_resetpassword_systemgenerated"
@@ -154,20 +160,23 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/authentication/passwordMethods/{id}/resetPassword
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-systemgenerated-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/passwordauthenticationmethod-resetpassword-systemgenerated-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-systemgenerated-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -193,6 +202,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "passwordAuthenticationMethod: resetPassword",
@@ -200,5 +210,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

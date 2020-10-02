@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create term"
 description: "Create a new term object."
 author: mohitpcad
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Create term
+
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,14 +16,14 @@ Namespace: microsoft.graph.termStore
 Create a new [term](../resources/termstore-term.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account) | TermStore.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
-
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | TermStore.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -30,27 +31,27 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 } -->
 
-``` http
+```http
 POST /termStore/sets/{setId}/children
 POST /termStore/sets/{setId}/terms/{termId}/children
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the [term](../resources/termstore-term.md) object.
 
 The following table shows the properties that are required when you create the [term](../resources/termstore-term.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|Label for the term to be created|
-
-
+| Property | Type                                                                                            | Description                      |
+| :------- | :---------------------------------------------------------------------------------------------- | :------------------------------- |
+| labels   | [microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection | Label for the term to be created |
 
 ## Response
 
@@ -61,12 +62,13 @@ If successful, this method returns a `201 Created` response code and a [term](..
 ### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_term_from_"
 } -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/termStore/sets/{setId}/terms
 Content-Type: application/json
 Content-length: 366
@@ -81,31 +83,35 @@ Content-length: 366
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-term-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-term-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-term-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.termStore.term"
 }-->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -137,5 +143,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

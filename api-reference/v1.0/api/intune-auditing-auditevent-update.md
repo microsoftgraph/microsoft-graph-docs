@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update auditEvent"
 description: "Update the properties of a auditEvent object."
 author: "dougeby"
@@ -16,59 +16,65 @@ Namespace: microsoft.graph
 Update the properties of a [auditEvent](../resources/intune-auditing-auditevent.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementApps.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [auditEvent](../resources/intune-auditing-auditevent.md) object.
 
 The following table shows the properties that are required when you create the [auditEvent](../resources/intune-auditing-auditevent.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|displayName|String|Event display name.|
-|componentName|String|Component name.|
-|actor|[auditActor](../resources/intune-auditing-auditactor.md)|AAD user and application that are associated with the audit event.|
-|activity|String|Friendly name of the activity.|
-|activityDateTime|DateTimeOffset|The date time in UTC when the activity was performed.|
-|activityType|String|The type of activity that was being performed.|
-|activityOperationType|String|The HTTP operation type of the activity.|
-|activityResult|String|The result of the activity.|
-|correlationId|Guid|The client request Id that is used to correlate activity within the system.|
-|resources|[auditResource](../resources/intune-auditing-auditresource.md) collection|Resources being modified.|
-|category|String|Audit category.|
-
-
+| Property              | Type                                                                      | Description                                                                 |
+| :-------------------- | :------------------------------------------------------------------------ | :-------------------------------------------------------------------------- |
+| id                    | String                                                                    | Key of the entity.                                                          |
+| displayName           | String                                                                    | Event display name.                                                         |
+| componentName         | String                                                                    | Component name.                                                             |
+| actor                 | [auditActor](../resources/intune-auditing-auditactor.md)                  | AAD user and application that are associated with the audit event.          |
+| activity              | String                                                                    | Friendly name of the activity.                                              |
+| activityDateTime      | DateTimeOffset                                                            | The date time in UTC when the activity was performed.                       |
+| activityType          | String                                                                    | The type of activity that was being performed.                              |
+| activityOperationType | String                                                                    | The HTTP operation type of the activity.                                    |
+| activityResult        | String                                                                    | The result of the activity.                                                 |
+| correlationId         | Guid                                                                      | The client request Id that is used to correlate activity within the system. |
+| resources             | [auditResource](../resources/intune-auditing-auditresource.md) collection | Resources being modified.                                                   |
+| category              | String                                                                    | Audit category.                                                             |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
 Content-length: 1390
@@ -117,8 +123,10 @@ Content-length: 1390
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1439
@@ -166,12 +174,3 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
-
-
-
-
-
-
-
-
-

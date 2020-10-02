@@ -1,4 +1,4 @@
----
+﻿---
 title: "userExperienceAnalyticsSettings resource type"
 description: "The user experience analytics insight is the recomendation to improve the user experience analytics score."
 author: "dougeby"
@@ -18,29 +18,28 @@ Namespace: microsoft.graph
 The user experience analytics insight is the recomendation to improve the user experience analytics score.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|configurationManagerDataConnectorConfigured|Boolean|True if Tenant attach is configured. If configured then SCCM tenant attached devices will show up in UXA reporting.|
+
+| Property                                    | Type    | Description                                                                                                         |
+| :------------------------------------------ | :------ | :------------------------------------------------------------------------------------------------------------------ |
+| configurationManagerDataConnectorConfigured | Boolean | True if Tenant attach is configured. If configured then SCCM tenant attached devices will show up in UXA reporting. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.userExperienceAnalyticsSettings"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsSettings",
   "configurationManagerDataConnectorConfigured": true
 }
 ```
-
-
-
-
-
-

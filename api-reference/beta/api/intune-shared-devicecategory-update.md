@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update deviceCategory"
 description: "Update the properties of a deviceCategory object."
 author: "dougeby"
@@ -21,15 +21,15 @@ Update the properties of a [deviceCategory](../resources/intune-shared-devicecat
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)||
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application||
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     |                                              |
+| &nbsp; &nbsp; **Device management**    | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Onboarding**           | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            |                                              |
+| &nbsp; &nbsp; **Device management**    | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Onboarding**           | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
 
@@ -39,7 +39,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
@@ -49,16 +50,17 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
 ## Request headers
 
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
 
@@ -66,12 +68,12 @@ In the request body, supply a JSON representation for the [deviceCategory](../re
 
 The following table shows the properties that are required when you create the [deviceCategory](../resources/intune-shared-devicecategory.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Unique identifier for the device category. Read-only.|
-|**Onboarding**|
-|description|String|Optional description for the device category.|
-|displayName|String|Display name for the device category.|
+| Property       | Type   | Description                                           |
+| :------------- | :----- | :---------------------------------------------------- |
+| id             | String | Unique identifier for the device category. Read-only. |
+| **Onboarding** |        |                                                       |
+| description    | String | Optional description for the device category.         |
+| displayName    | String | Display name for the device category.                 |
 
 ## Response
 
@@ -83,7 +85,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 
 Here are examples of the request.
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
 Content-type: application/json
 Content-length: 82
@@ -100,7 +102,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. Response properties will vary according to context.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 184
@@ -112,15 +114,3 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

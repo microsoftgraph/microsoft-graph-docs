@@ -1,4 +1,4 @@
----
+﻿---
 title: "sharedPCAllowedAccountType enum type"
 description: "Type of accounts that are allowed to share the PC."
 author: "dougeby"
@@ -16,16 +16,8 @@ Namespace: microsoft.graph
 Type of accounts that are allowed to share the PC.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|guest|1|Only guest accounts.|
-|domain|2|Only domain-joined accounts.|
 
-
-
-
-
-
-
-
-
+| Member | Value | Description                  |
+| :----- | :---- | :--------------------------- |
+| guest  | 1     | Only guest accounts.         |
+| domain | 2     | Only domain-joined accounts. |

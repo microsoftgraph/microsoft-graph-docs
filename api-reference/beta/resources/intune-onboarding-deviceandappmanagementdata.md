@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceAndAppManagementData resource type"
 description: "Exported Data"
 author: "dougeby"
@@ -18,29 +18,28 @@ Namespace: microsoft.graph
 Exported Data
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|content|Stream|Not yet documented|
+
+| Property | Type   | Description        |
+| :------- | :----- | :----------------- |
+| content  | Stream | Not yet documented |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementData"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementData",
   "content": "Stream"
 }
 ```
-
-
-
-
-
-

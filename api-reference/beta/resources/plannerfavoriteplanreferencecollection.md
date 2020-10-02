@@ -1,4 +1,4 @@
----
+﻿---
 title: "plannerFavoritePlanReferenceCollection resource type"
 description: " the value is the plannerFavoritePlanReference object."
 author: "TarkanSevilmis"
@@ -15,10 +15,9 @@ Namespace: microsoft.graph
 
 The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as a favorite by a user. This resource is an open type and is part of the [plannerUser](planneruser.md) object. The property name in the property-value pair is the ID of the corresponding plan; the value is the [plannerFavoritePlanReference](plannerfavoriteplanreference.md) object.
 
-
 ## Properties
-You can define the properties of this open type. The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objects. To remove an item in the favorites list, set the value of the property to `null`.
 
+You can define the properties of this open type. The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objects. To remove an item in the favorites list, set the value of the property to `null`.
 
 ## JSON representation
 
@@ -49,6 +48,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -59,5 +59,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

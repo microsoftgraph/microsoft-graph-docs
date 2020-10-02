@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -8,6 +8,7 @@ ms.prod: "sharepoint"
 description: "Use the special collection to access a special folder by name."
 doc_type: apiPageType
 ---
+
 # Get a special folder by name
 
 Namespace: microsoft.graph
@@ -24,7 +25,7 @@ Special folders are automatically created the first time an application attempts
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|            Permission type             |                                           Permissions (from least to most privileged)                                            |
+| Permission type                        | Permissions (from least to most privileged)                                                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                            |
 | Delegated (personal Microsoft account) | Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
@@ -32,44 +33,47 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-special-folder", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/special/{name}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-special-folder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-special-folder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-special-folder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-special-folder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Special folder names
 
 The follow special folder names are available in OneDrive and OneDrive for Business.
 
 | Name        | Folder id    | Description                                                              |
-|:------------|:-------------|:-------------------------------------------------------------------------|
+| :---------- | :----------- | :----------------------------------------------------------------------- |
 | Documents   | `documents`  | The Documents folder.                                                    |
 | Photos      | `photos`     | The Photos folder.                                                       |
 | Camera Roll | `cameraroll` | The Camera Roll Backup folder.                                           |
 | App Root    | `approot`    | The application's personal folder. Usually in `/Apps/{Application Name}` |
 | Music       | `music`      | The Music folder.                                                        |
-
 
 ### Optional query parameters
 
@@ -104,31 +108,35 @@ collection or use the [expand](/graph/query-parameters) option to expand the chi
 
 ### HTTP request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/special/{special-folder-name}/children
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-special-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-special-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-special-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-special-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -165,4 +173,3 @@ error if the special folder does not already exist.
   "suppressions": [
   ]
 } -->
-

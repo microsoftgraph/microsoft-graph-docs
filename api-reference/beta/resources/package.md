@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: " or a collection of items that should be treated as a collection instead of individual items."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # Package resource type
 
 Namespace: microsoft.graph
@@ -23,6 +24,7 @@ DriveItems with the **package** facet do not include a **folder** or **file** fa
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.package" } -->
+
 ```json
 {
   "type": "oneNote"
@@ -30,13 +32,12 @@ DriveItems with the **package** facet do not include a **folder** or **file** fa
 ```
 
 | Property Name | Type   | Description                                                                                                                                                                      |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :------------ | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **type**      | string | An string indicating the type of package. While `oneNote` is the only currently defined value, you should expect other package types to be returned and handle them accordingly. |
 
 ## Remarks 
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
-
 
 <!--
 {
@@ -47,5 +48,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
-
-

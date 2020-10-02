@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update settingStateDeviceSummary"
 description: "Update the properties of a settingStateDeviceSummary object."
 author: "dougeby"
@@ -18,20 +18,23 @@ Namespace: microsoft.graph
 Update the properties of a [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
@@ -46,39 +49,42 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) object.
 
 The following table shows the properties that are required when you create the [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|settingName|String|Name of the setting|
-|instancePath|String|Name of the InstancePath for the setting|
-|unknownDeviceCount|Int32|Device Unkown count for the setting|
-|notApplicableDeviceCount|Int32|Device Not Applicable count for the setting|
-|compliantDeviceCount|Int32|Device Compliant count for the setting|
-|remediatedDeviceCount|Int32|Device Compliant count for the setting|
-|nonCompliantDeviceCount|Int32|Device NonCompliant count for the setting|
-|errorDeviceCount|Int32|Device error count for the setting|
-|conflictDeviceCount|Int32|Device conflict error count for the setting|
-
-
+| Property                 | Type   | Description                                 |
+| :----------------------- | :----- | :------------------------------------------ |
+| id                       | String | Key of the entity.                          |
+| settingName              | String | Name of the setting                         |
+| instancePath             | String | Name of the InstancePath for the setting    |
+| unknownDeviceCount       | Int32  | Device Unkown count for the setting         |
+| notApplicableDeviceCount | Int32  | Device Not Applicable count for the setting |
+| compliantDeviceCount     | Int32  | Device Compliant count for the setting      |
+| remediatedDeviceCount    | Int32  | Device Compliant count for the setting      |
+| nonCompliantDeviceCount  | Int32  | Device NonCompliant count for the setting   |
+| errorDeviceCount         | Int32  | Device error count for the setting          |
+| conflictDeviceCount      | Int32  | Device conflict error count for the setting |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceSettingStateSummaries/{settingStateDeviceSummaryId}
 Content-type: application/json
 Content-length: 360
@@ -98,8 +104,10 @@ Content-length: 360
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 409
@@ -118,9 +126,3 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
-

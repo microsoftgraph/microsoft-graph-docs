@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -37,10 +37,10 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property       | Type           | Description
-|:---------------|:---------------|:-------------------------------------------
-| **childCount** | Int32          | Number of children contained immediately within this container.
-| **view**       | [folderView][] | A collection of properties defining the recommended view for the folder.
+| Property       | Type           | Description                                                              |
+| :------------- | :------------- | :----------------------------------------------------------------------- |
+| **childCount** | Int32          | Number of children contained immediately within this container.          |
+| **view**       | [folderView][] | A collection of properties defining the recommended view for the folder. |
 
 ## Remarks 
 
@@ -56,4 +56,3 @@ For more information about the facets on a DriveItem, see [DriveItem][].
   "section": "documentation",
   "tocPath": "Facets/Folder"
 } -->
-

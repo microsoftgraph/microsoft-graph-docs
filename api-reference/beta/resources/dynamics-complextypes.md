@@ -1,4 +1,4 @@
----
+﻿---
 title: complex types JSON 
 description: Complex data types in JSON for Dynamics 365 Business Central.
 services: project-madeira
@@ -22,13 +22,14 @@ These are the various complex types in Dynamics 365 Business Central. You can se
 Represents a Postal Address complex type in Dynamics 365 Business Central.
 
 ### Properties
-| Property	   | Type	    |Description             |
-|:-------------|:---------|:-----------------------|
-|street        |string    |Postal address street.  |
-|city          |string    |Postal address city.    |
-|state         |string    |Postal address state.   |
-|countryLetterCode|string |Postal address country letter code (two character word)|
-|postalCode    |string    |Postal address post code|
+
+| Property          | Type   | Description                                             |
+| :---------------- | :----- | :------------------------------------------------------ |
+| street            | string | Postal address street.                                  |
+| city              | string | Postal address city.                                    |
+| state             | string | Postal address state.                                   |
+| countryLetterCode | string | Postal address country letter code (two character word) |
+| postalCode        | string | Postal address post code                                |
 
 ```json
 "PostalAddress" 
@@ -39,7 +40,4 @@ Represents a Postal Address complex type in Dynamics 365 Business Central.
 "countryLetterCode": "string", 
 "postalCode": "string" 
 } 
- ```
-
-
-
+```

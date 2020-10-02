@@ -1,4 +1,4 @@
----
+﻿---
 title: "mailFolder: delta"
 description: "Get a set of mail folders that have been added, deleted, or removed from the user's mailbox."
 localization_priority: Normal
@@ -21,17 +21,19 @@ you can query for incremental changes in the mail folders. This allows you to ma
 a local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged)   |
+| :------------------------------------- | :-------------------------------------------- |
+| Delegated (work or school account)     | Mail.ReadBasic, Mail.Read, Mail.ReadWrite     |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite     |
+| Application                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/delta
 GET /users/{id}/mailFolders/delta
@@ -47,10 +49,10 @@ You only need to specify any desired query parameters once upfront.
 In subsequent requests, simply copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already 
 includes the encoded, desired parameters.
 
-| Query parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same mail folder collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same mail folder collection. |
+| Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                         |
+| :-------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| $deltatoken     | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same mail folder collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection. |
+| $skiptoken      | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same mail folder collection.                                                                                                                                                         |
 
 ### OData query parameters
 
@@ -58,18 +60,21 @@ You can use a `$select` query parameter as in any GET request to specify only th
 _id_ property is always returned. 
 
 ## Request headers
-| Name       | Type | Description |
-|:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type  | string  | application/json. Required. |
-| Prefer | string  | odata.maxpagesize={x}. Optional. |
+
+| Name          | Type   | Description                      |
+| :------------ | :----- | :------------------------------- |
+| Authorization | string | Bearer {token}. Required.        |
+| Content-Type  | string | application/json. Required.      |
+| Prefer        | string | odata.maxpagesize={x}. Optional. |
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and [mailFolder](../resources/mailfolder.md) collection object in the response body.
 
 ## Example
+
 ##### Request
+
 The following example shows how to make a single **delta** function call, and limit the maximum number of mail folders 
 in the response body to 2.
 
@@ -81,27 +86,30 @@ You can find a similar example that shows how to use the state tokens to track c
 between tracking mail folders and tracking messages in a folder are in the delta query request URLs, and the query responses 
 returning **mailFolder** rather than **message** collections.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "mailfolder_delta"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/delta
 
 Prefer: odata.maxpagesize=2
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -113,12 +121,14 @@ getting all the changes for that round.
 The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailFolder",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -146,6 +156,7 @@ Content-length: 254
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -157,5 +168,3 @@ Content-length: 254
   ]
 }
 -->
-
-

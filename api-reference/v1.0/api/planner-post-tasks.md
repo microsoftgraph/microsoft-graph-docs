@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create plannerTask"
 description: "Use this API to create a new **plannerTask**."
 localization_priority: Priority
@@ -12,26 +12,33 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Use this API to create a new **plannerTask**.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /planner/tasks
 ```
+
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
 The **plannerTask** planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's id.
 
@@ -42,14 +49,18 @@ If successful, this method returns `201 Created` response code and [plannerTask]
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_plannertask_from_planner"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/planner/tasks
 Content-type: application/json
@@ -67,24 +78,31 @@ Content-length: 285
   }
 }
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-plannertask-from-planner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-plannertask-from-planner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
+
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerTask"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -119,6 +137,7 @@ Content-length: 677
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create plannerTask",
@@ -128,4 +147,3 @@ Content-length: 677
   "suppressions": [
   ]
 }-->
-

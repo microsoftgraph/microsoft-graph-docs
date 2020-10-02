@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Graph API to integrate people and workplace intelligence in an app"
 description: "Microsoft Graph enables access to useful data about people, their profile, documents they interact with, and work patterns, and supports gestures in a user's social context."
 localization_priority: Priority
@@ -79,7 +79,6 @@ Include the next sentence when supporting events.
 
 - [Delete a mention](../api/message-delete.md#request-2) in a message
 
-
 ## Help users gain insights into their work patterns
 
 Feature: Analytics (preview)
@@ -90,6 +89,5 @@ Use the analytics API to get activity statistics and related settings for a user
 - [activityStatistics](../resources/activitystatistics.md): Gets data for the last complete week (or the specified time range) for the Microsoft 365 activities that a user spent time on, including the number of hours spent on [calls](callactivitystatistics.md), [chats (instant messages)](chatactivitystatistics.md), [email](emailactivitystatistics.md), and [meetings](meetingactivitystatistics.md) during and outside of working hours and the number of hours available for [focused work](focusactivitystatistics.md).
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for these API sets.
-
-

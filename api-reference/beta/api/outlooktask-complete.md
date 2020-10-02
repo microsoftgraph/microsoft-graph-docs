@@ -1,4 +1,4 @@
----
+﻿---
 title: "outlookTask: complete"
 description: "Complete an Outlook task which sets the **completedDateTime** property to the current date, "
 localization_priority: Normal
@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
-
 Complete an Outlook task which sets the **completedDateTime** property to the current date, and the **status** property to `completed`.
 
 If you are completing a task in a recurring series, in the response, the task collection will contain the completed task in the series, and the next task in the series.
@@ -28,11 +27,11 @@ By default, this operation (and the POST, GET, and PATCH task operations) return
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.ReadWrite    |
-|Delegated (personal Microsoft account) | Tasks.ReadWrite    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Tasks.ReadWrite                             |
+| Delegated (personal Microsoft account) | Tasks.ReadWrite                             |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -45,10 +44,10 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 
 ## Request headers
 
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.|
+| Name                     | Description                                                                                                                   |
+| :----------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| Authorization            | Bearer {token}. Required.                                                                                                     |
+| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional. |
 
 ## Request body
 
@@ -65,6 +64,7 @@ The following example marks the specified task as complete. It specifies Pacific
 ### Request
 
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "outlooktask_complete"
@@ -80,6 +80,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Here is an example of the response. The **completedDateTime** and other date-related properties in the response are expressed in PST.
 
 > **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -135,6 +136,7 @@ Content-length: 465
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -145,5 +147,3 @@ Content-length: 465
   "suppressions": []
 }
 -->
-
-

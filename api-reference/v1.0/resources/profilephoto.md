@@ -1,4 +1,4 @@
----
+﻿---
 title: "profilePhoto resource type"
 description: "A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64."
 localization_priority: Priority
@@ -18,21 +18,22 @@ The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Get profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Get the specified **profilePhoto** or its metadata (profilePhoto properties).|
-|[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any.|
+| Method                                         | Return Type                     | Description                                                                                                                     |
+| :--------------------------------------------- | :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------ |
+| [Get profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified **profilePhoto** or its metadata (profilePhoto properties).                                                   |
+| [Update](../api/profilephoto-update.md)        | [profilePhoto](profilephoto.md) | Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any. |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|id|string|Read-only.|
-|height|int32|The height of the photo. Read-only.|
-|width|int32|The width of the photo. Read-only.|
+
+| Property | Type   | Description                         |
+| :------- | :----- | :---------------------------------- |
+| id       | string | Read-only.                          |
+| height   | int32  | The height of the photo. Read-only. |
+| width    | int32  | The width of the photo. Read-only.  |
 
 ## Relationships
-None
 
+None
 
 ## JSON representation
 
@@ -54,8 +55,10 @@ Here is a JSON representation of the resource.
   "width": 240
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "profilePhoto resource",
@@ -63,4 +66,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

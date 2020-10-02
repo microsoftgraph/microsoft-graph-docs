@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get team photo"
 description: "Get the photo (picture) for a team."
 author: "clearab"
@@ -28,11 +28,11 @@ You can get the metadata of the largest available photo, or optionally specify a
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged)                                                                                                             |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                                          |
+| Application                            | Not supported.                                                                                                                                          |
 
 > **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
@@ -70,15 +70,15 @@ GET /beta/teams/{id}/photo/{size}/$value
 
 This method supports an optional path parameter to specify the size of the photo to be retrieved. You can specify any size up to the largest available size. Get the photo metadata to determine the largest size available.
 
-|**Parameter**|**Type**|**Description**|
-|:-----|:-----|:-----|
-|size  |String  | A photo size. The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory. Optional.|
+| **Parameter** | **Type** | **Description**                                                                                                                                                                                                                                    |
+| :------------ | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| size          | String   | A photo size. The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory. Optional. |
 
 ## Request headers
 
-| Header        | Value           |
-|:--------------|:--------------  |
-| Authorization | Bearer {token}. Required.  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -106,6 +106,7 @@ Here is an example of the request to get the metadata of the team photo.
   "blockType": "ignored",
   "name": "get_team_photo_metadata"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/photo
 ```
@@ -147,6 +148,7 @@ Here is an example of the request to get the team photo in a specific size.
   "blockType": "ignored",
   "name": "get_team_photo"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/photo/240x240/$value
 ```
@@ -157,6 +159,7 @@ Contains the binary data of the requested 240x240 photo. The HTTP response code 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -168,5 +171,3 @@ Contains the binary data of the requested 240x240 photo. The HTTP response code 
   ]
 }
 -->
-
-

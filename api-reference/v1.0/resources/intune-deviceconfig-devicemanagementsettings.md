@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettings resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,23 +16,28 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceComplianceCheckinThresholdDays|Int32|The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120|
-|isScheduledActionEnabled|Boolean|Is feature enabled or not for scheduled action for rule.|
-|secureByDefault|Boolean|Device should be noncompliant when there is no compliance policy targeted when this is true|
+
+| Property                             | Type    | Description                                                                                                 |
+| :----------------------------------- | :------ | :---------------------------------------------------------------------------------------------------------- |
+| deviceComplianceCheckinThresholdDays | Int32   | The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120 |
+| isScheduledActionEnabled             | Boolean | Is feature enabled or not for scheduled action for rule.                                                    |
+| secureByDefault                      | Boolean | Device should be noncompliant when there is no compliance policy targeted when this is true                 |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettings"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettings",
   "deviceComplianceCheckinThresholdDays": 1024,
@@ -40,12 +45,3 @@ Here is a JSON representation of the resource.
   "secureByDefault": true
 }
 ```
-
-
-
-
-
-
-
-
-

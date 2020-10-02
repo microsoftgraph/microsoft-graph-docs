@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSubscriptionState enum type"
 description: "Tenant mobile device management subscription state."
 author: "dougeby"
@@ -16,21 +16,13 @@ Namespace: microsoft.graph
 Tenant mobile device management subscription state.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|pending|0|Pending|
-|active|1|Active|
-|warning|2|Warning|
-|disabled|3|Disabled|
-|deleted|4|Deleted|
-|blocked|5|Blocked|
-|lockedOut|8|LockedOut|
 
-
-
-
-
-
-
-
-
+| Member    | Value | Description |
+| :-------- | :---- | :---------- |
+| pending   | 0     | Pending     |
+| active    | 1     | Active      |
+| warning   | 2     | Warning     |
+| disabled  | 3     | Disabled    |
+| deleted   | 4     | Deleted     |
+| blocked   | 5     | Blocked     |
+| lockedOut | 8     | LockedOut   |

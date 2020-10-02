@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceConfigurationDeviceOverview resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,37 +18,43 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[Get deviceConfigurationDeviceOverview](../api/intune-deviceconfig-deviceconfigurationdeviceoverview-get.md)|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Read properties and relationships of the [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) object.|
-|[Update deviceConfigurationDeviceOverview](../api/intune-deviceconfig-deviceconfigurationdeviceoverview-update.md)|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Update the properties of a [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) object.|
+
+| Method                                                                                                             | Return Type                                                                                                | Description                                                                                                                                                 |
+| :----------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Get deviceConfigurationDeviceOverview](../api/intune-deviceconfig-deviceconfigurationdeviceoverview-get.md)       | [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) | Read properties and relationships of the [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) object. |
+| [Update deviceConfigurationDeviceOverview](../api/intune-deviceconfig-deviceconfigurationdeviceoverview-update.md) | [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) | Update the properties of a [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) object.               |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|pendingCount|Int32|Number of pending devices|
-|notApplicableCount|Int32|Number of not applicable devices|
-|notApplicablePlatformCount|Int32|Number of not applicable devices due to mismatch platform and policy|
-|successCount|Int32|Number of succeeded devices|
-|errorCount|Int32|Number of error devices|
-|failedCount|Int32|Number of failed devices|
-|conflictCount|Int32|Number of devices in conflict|
-|lastUpdateDateTime|DateTimeOffset|Last update time|
-|configurationVersion|Int32|Version of the policy for that overview|
+
+| Property                   | Type           | Description                                                          |
+| :------------------------- | :------------- | :------------------------------------------------------------------- |
+| id                         | String         | Key of the entity.                                                   |
+| pendingCount               | Int32          | Number of pending devices                                            |
+| notApplicableCount         | Int32          | Number of not applicable devices                                     |
+| notApplicablePlatformCount | Int32          | Number of not applicable devices due to mismatch platform and policy |
+| successCount               | Int32          | Number of succeeded devices                                          |
+| errorCount                 | Int32          | Number of error devices                                              |
+| failedCount                | Int32          | Number of failed devices                                             |
+| conflictCount              | Int32          | Number of devices in conflict                                        |
+| lastUpdateDateTime         | DateTimeOffset | Last update time                                                     |
+| configurationVersion       | Int32          | Version of the policy for that overview                              |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationDeviceOverview"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationDeviceOverview",
   "id": "String (identifier)",
@@ -63,9 +69,3 @@ Here is a JSON representation of the resource.
   "configurationVersion": 1024
 }
 ```
-
-
-
-
-
-

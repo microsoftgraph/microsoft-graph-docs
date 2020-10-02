@@ -1,4 +1,4 @@
----
+﻿---
 title: "Configure synchronization with custom target attributes"
 description: "Customize your synchronization schema to include custom attributes that are defined in the target directory."
 localization_priority: Normal
@@ -49,7 +49,6 @@ Authorization: Bearer {Token}
 
 The `{servicePrincipalId}` is `167e33e9-f80e-490e-b4d8-698d4a80fb3e`.
 
-
 ## List synchronization jobs in the context of the service principal 
 
 The following example shows you how to get the `jobId` that you need to work with. Generally, the response returns only one job.
@@ -73,34 +72,38 @@ Authorization: Bearer {Token}
 
 The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.
 
-
 ## Get the synchronization schema
+
 The following example shows how to get the synchronization schema.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationschema"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationschema-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 
@@ -109,6 +112,7 @@ Authorization: Bearer {Token}
   "truncated": true,
   "@odata.type": "microsoft.graph.synchronizationSchema"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -279,8 +283,10 @@ HTTP/1.1 201 No Content
 ```
 
 If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get the synchronization schema",
@@ -290,5 +296,3 @@ If the schema was saved successfully, on the next iteration of the synchronizati
   "suppressions": [
   ]
 }-->
-
-

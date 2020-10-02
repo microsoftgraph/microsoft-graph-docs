@@ -1,4 +1,4 @@
----
+﻿---
 title: "calendarGroup resource type"
 description: "A group of user calendars."
 author: "harini84"
@@ -77,5 +77,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

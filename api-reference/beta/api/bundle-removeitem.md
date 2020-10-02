@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: jeremyke
 title: Remove item from bundle
@@ -20,11 +20,11 @@ Remove an item from a [bundle][].
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.                             |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All   |
-|Application          | Not supported.                                           |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All        |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -34,8 +34,8 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 ## Request headers
 
-| Name          | Description  |
-|:------------- |:------------ |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
 | Authorization | Bearer \{token\}. Required. |
 
 ## Request body
@@ -52,27 +52,30 @@ Read the [Error Responses][error-response] topic for more info about how errors 
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
 
 ```http
 DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item-id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-from-bundle-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-from-bundle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/remove-from-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -81,7 +84,6 @@ DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item
 ```http
 HTTP/1.1 204 No Content
 ```
-
 
 [bundle]: ../resources/bundle.md
 [error-response]: /graph/errors
@@ -92,5 +94,3 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation"
 } -->
-
-

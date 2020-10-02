@@ -1,4 +1,4 @@
----
+﻿---
 title: "call: unmute"
 description: "Allow the application to unmute itself."
 author: "ananmishr"
@@ -24,33 +24,39 @@ For more information about how to handle unmute operations, see [unmuteParticipa
 ## Permissions
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported.                               |
-| Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | None.                                        |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | None.                                       |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /app/calls/{id}/unmute
 POST /communications/calls/{id}/unmute
 ```
+
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter      | Type    |Description|
-|:---------------|:--------|:----------|
-|clientContext|String|The client context.|
+| Parameter     | Type   | Description         |
+| :------------ | :----- | :------------------ |
+| clientContext | String | The client context. |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) object in the response body.
 
 >**Note:** When this API returns a successful response, all participants will receive a roster update.
@@ -60,10 +66,12 @@ If successful, this method returns a `200 OK` response code and a [unmutePartici
 ##### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "call-unmute"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/unmute
 Content-Type: application/json
@@ -73,20 +81,23 @@ Content-Length: 46
   "clientContext": "clientContext-value"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-unmute-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-unmute-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/call-unmute-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -97,6 +108,7 @@ Content-Length: 46
   "truncated": true,
   "@odata.type": "microsoft.graph.unmuteParticipantOperation"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
@@ -109,6 +121,7 @@ Content-Length: 259
   "@odata.type": "microsoft.graph.unmuteParticipantOperation",
   "truncated": true
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.unmuteParticipantOperation",
@@ -130,6 +143,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -171,6 +185,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -182,5 +197,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

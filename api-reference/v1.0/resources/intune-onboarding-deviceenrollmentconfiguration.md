@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceEnrollmentConfiguration resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,38 +16,44 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List deviceEnrollmentConfigurations](../api/intune-onboarding-deviceenrollmentconfiguration-list.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection|List properties and relationships of the [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) objects.|
-|[Get deviceEnrollmentConfiguration](../api/intune-onboarding-deviceenrollmentconfiguration-get.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Read properties and relationships of the [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) object.|
-|[setPriority action](../api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md)|None|Not yet documented|
-|[assign action](../api/intune-onboarding-deviceenrollmentconfiguration-assign.md)|None|Not yet documented|
+
+| Method                                                                                                | Return Type                                                                                                 | Description                                                                                                                                        |
+| :---------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [List deviceEnrollmentConfigurations](../api/intune-onboarding-deviceenrollmentconfiguration-list.md) | [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection | List properties and relationships of the [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) objects. |
+| [Get deviceEnrollmentConfiguration](../api/intune-onboarding-deviceenrollmentconfiguration-get.md)    | [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)            | Read properties and relationships of the [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) object.  |
+| [setPriority action](../api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md)           | None                                                                                                        | Not yet documented                                                                                                                                 |
+| [assign action](../api/intune-onboarding-deviceenrollmentconfiguration-assign.md)                     | None                                                                                                        | Not yet documented                                                                                                                                 |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Not yet documented|
-|displayName|String|Not yet documented|
-|description|String|Not yet documented|
-|priority|Int32|Not yet documented|
-|createdDateTime|DateTimeOffset|Not yet documented|
-|lastModifiedDateTime|DateTimeOffset|Not yet documented|
-|version|Int32|Not yet documented|
+
+| Property             | Type           | Description        |
+| :------------------- | :------------- | :----------------- |
+| id                   | String         | Not yet documented |
+| displayName          | String         | Not yet documented |
+| description          | String         | Not yet documented |
+| priority             | Int32          | Not yet documented |
+| createdDateTime      | DateTimeOffset | Not yet documented |
+| lastModifiedDateTime | DateTimeOffset | Not yet documented |
+| version              | Int32          | Not yet documented |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|assignments|[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) collection|The list of group assignments for the device configuration profile.|
+
+| Relationship | Type                                                                                                                | Description                                                         |
+| :----------- | :------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------ |
+| assignments  | [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) collection | The list of group assignments for the device configuration profile. |
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceEnrollmentConfiguration"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentConfiguration",
   "id": "String (identifier)",
@@ -59,12 +65,3 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedDeviceCleanupSettings resource type"
 description: "Define the rule when the admin wants the devices to be cleaned up."
 author: "dougeby"
@@ -18,29 +18,28 @@ Namespace: microsoft.graph
 Define the rule when the admin wants the devices to be cleaned up.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceInactivityBeforeRetirementInDays|String|Number of days when the device has not contacted Intune.|
+
+| Property                               | Type   | Description                                              |
+| :------------------------------------- | :----- | :------------------------------------------------------- |
+| deviceInactivityBeforeRetirementInDays | String | Number of days when the device has not contacted Intune. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedDeviceCleanupSettings"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.managedDeviceCleanupSettings",
   "deviceInactivityBeforeRetirementInDays": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create responsibilities"
 description: "Create a new responsibilities object."
 author: "kevinbellinger"
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Create personResponsibility
+
 Namespace: microsoft.graph
 
 Create a new [personResponsibility](../resources/personresponsibility.md) object in a user's [profile](../resources/profile.md).
@@ -16,11 +17,11 @@ Create a new [personResponsibility](../resources/personresponsibility.md) object
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All                            |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -28,31 +29,34 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /me/profile/responsibilities
 POST /users/{id | userPrincipalName}/profile/responsibilities
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the [personResponsibility](../resources/personresponsibility.md) object.
 
 The following table shows the properties that are possible to set within a new [personResponsibility](../resources/personresponsibility.md) object in a user's [profile](../resources/profile.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
-|description|String|Description of the responsibility.|
-|displayName|String|Contains a friendly name for the responsibility. |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
-|webUrl|String|Contains a link to a web page or resource about the responsibility.|
+| Property          | Type                                                 | Description                                                                                                                                                                                                                                                                    |
+| :---------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences  | String                                               | The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| collaborationTags | String collection                                    | Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.                                                                                               |
+| description       | String                                               | Description of the responsibility.                                                                                                                                                                                                                                             |
+| displayName       | String                                               | Contains a friendly name for the responsibility.                                                                                                                                                                                                                               |
+| inference         | [inferenceData](../resources/inferencedata.md)       | Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                           |
+| source            | [personDataSource](../resources/persondatasource.md) | Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).                                                                                                                                                             |
+| webUrl            | String                                               | Contains a link to a web page or resource about the responsibility.                                                                                                                                                                                                            |
 
 ## Response
 
@@ -61,12 +65,14 @@ If successful, this method returns a `201 Created` response code and a [personRe
 ## Examples
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_personresponsibility_from_profile"
 }
 -->
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/me/profile/responsibilities
 Content-Type: application/json
 Content-length: 413
@@ -79,29 +85,36 @@ Content-length: 413
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.personResponsibility"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -136,5 +149,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-

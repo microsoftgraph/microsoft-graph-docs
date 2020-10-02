@@ -1,4 +1,4 @@
----
+﻿---
 title: "encryptionReportPolicyDetails resource type"
 description: "Policy Details for Encryption Report"
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Policy Details for Encryption Report
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|policyId|String|Policy Id for Encryption Report|
-|policyName|String|Policy Name for Encryption Report|
+
+| Property   | Type   | Description                       |
+| :--------- | :----- | :-------------------------------- |
+| policyId   | String | Policy Id for Encryption Report   |
+| policyName | String | Policy Name for Encryption Report |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.encryptionReportPolicyDetails"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.encryptionReportPolicyDetails",
   "policyId": "String",
   "policyName": "String"
 }
 ```
-
-
-
-
-
-

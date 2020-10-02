@@ -1,4 +1,4 @@
----
+﻿---
 title: "List names"
 description: "Retrieve a list of personName objects from a user's profile."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Retrieve a list of [personName](../resources/personname.md) objects from a user'
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
+| :------------------------------------- | :------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
@@ -38,20 +38,20 @@ GET /users/{id | userPrincipalName}/profile/names
 
 This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-|Name            |Value    |Description                                                                                                                                                                 |
-|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Limits the response to only those objects which contain the specified criteria.                                                                                             |
-|$orderby        |string   |By default the objects in the response are sorted by their createdDateTime value in a query. You can change the order of the of the response using the *$orderby* parameter.|
-|$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                        |
-|$skip           |int      |Skip the first n results, useful for paging.                                                                                                                                |
-|$top            |int      |Number of results to be returned.                                                                                                                                           |
+| Name     | Value  | Description                                                                                                                                                                  |
+| :------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $filter  | string | Limits the response to only those objects which contain the specified criteria.                                                                                              |
+| $orderby | string | By default the objects in the response are sorted by their createdDateTime value in a query. You can change the order of the of the response using the *$orderby* parameter. |
+| $select  | string | Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                         |
+| $skip    | int    | Skip the first n results, useful for paging.                                                                                                                                 |
+| $top     | int    | Number of results to be returned.                                                                                                                                            |
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -68,6 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_names"
@@ -76,15 +77,19 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/names
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-names-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-names-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-names-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -152,5 +157,3 @@ Content-type: application/json
   ]
 }
 ```
-
-

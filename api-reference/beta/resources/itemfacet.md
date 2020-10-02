@@ -1,4 +1,4 @@
----
+﻿---
 title: "itemFacet resource type"
 description: "itemFacet resource type"
 localization_priority: Normal
@@ -16,22 +16,26 @@ Namespace: microsoft.graph
 Represents the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|allowedAudiences|The audiences that are able to see the values contained within the associated entity. Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity.|
-|createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created.|
-|id|String|Identifier used for individually addressing an entity. Inherited from [entity](../resources/entity.md)|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity.|
-|lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values within an entity originated if synced from another service.|
+
+| Property             | Type                                                 | Description                                                                                                                                                                                                                        |
+| :------------------- | :--------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowedAudiences     | allowedAudiences                                     | The audiences that are able to see the values contained within the associated entity. Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`. |
+| createdBy            | [identitySet](../resources/identityset.md)           | Provides the identifier of the user and/or application that created the entity.                                                                                                                                                    |
+| createdDateTime      | DateTimeOffset                                       | Provides the dateTimeOffset for when the entity was created.                                                                                                                                                                       |
+| id                   | String                                               | Identifier used for individually addressing an entity. Inherited from [entity](../resources/entity.md)                                                                                                                             |
+| inference            | [inferenceData](../resources/inferencedata.md)       | Contains inference detail if the entity is inferred by the creating or modifying application.                                                                                                                                      |
+| lastModifiedBy       | [identitySet](../resources/identityset.md)           | Provides the identifier of the user and/or application that last modified the entity.                                                                                                                                              |
+| lastModifiedDateTime | DateTimeOffset                                       | Provides the dateTimeOffset for when the entity was created.                                                                                                                                                                       |
+| source               | [personDataSource](../resources/persondatasource.md) | Where the values within an entity originated if synced from another service.                                                                                                                                                       |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -40,7 +44,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.itemFacet",
   "id": "String (identifier)",
@@ -61,6 +66,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-
-
-

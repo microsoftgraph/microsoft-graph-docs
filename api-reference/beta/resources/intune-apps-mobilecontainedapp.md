@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileContainedApp resource type"
 description: "An abstract class that represents a contained app in a mobileApp acting as a package."
 author: "dougeby"
@@ -18,36 +18,36 @@ Namespace: microsoft.graph
 An abstract class that represents a contained app in a mobileApp acting as a package.
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List mobileContainedApps](../api/intune-apps-mobilecontainedapp-list.md)|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) collection|List properties and relationships of the [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) objects.|
-|[Get mobileContainedApp](../api/intune-apps-mobilecontainedapp-get.md)|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|Read properties and relationships of the [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) object.|
+
+| Method                                                                    | Return Type                                                                     | Description                                                                                                            |
+| :------------------------------------------------------------------------ | :------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------- |
+| [List mobileContainedApps](../api/intune-apps-mobilecontainedapp-list.md) | [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) collection | List properties and relationships of the [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) objects. |
+| [Get mobileContainedApp](../api/intune-apps-mobilecontainedapp-get.md)    | [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)            | Read properties and relationships of the [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) object.  |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
+
+| Property | Type   | Description        |
+| :------- | :----- | :----------------- |
+| id       | String | Key of the entity. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileContainedApp"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mobileContainedApp",
   "id": "String (identifier)"
 }
 ```
-
-
-
-
-
-

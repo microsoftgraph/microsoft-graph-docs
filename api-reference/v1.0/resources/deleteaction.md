@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 title: deleteAction resource type
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # deleteAction resource type
 
 Namespace: microsoft.graph
@@ -19,11 +20,10 @@ The presence of the **deleteAction** resource on an [**itemActivity**][activity]
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| name          | string | The name of the item that was deleted.
-| objectType    | string | `File` or `Folder`, depending on the type of the deleted item.
-
+| Property name | Type   | Description                                                    |
+| :------------ | :----- | :------------------------------------------------------------- |
+| name          | string | The name of the item that was deleted.                         |
+| objectType    | string | `File` or `Folder`, depending on the type of the deleted item. |
 
 ## JSON representation
 
@@ -50,4 +50,3 @@ The presence of the **deleteAction** resource on an [**itemActivity**][activity]
   "suppressions": []
 }
 -->
-

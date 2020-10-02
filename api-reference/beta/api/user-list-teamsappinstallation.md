@@ -1,4 +1,4 @@
----
+﻿---
 title: "List apps installed for user"
 description: "Retrieve the list of apps installed in the personal scope of the specified user."
 author: "clearab"
@@ -19,11 +19,11 @@ Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in t
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteForUser |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+| Permission type                        | Permissions (from least to most privileged)                                     |
+| :------------------------------------- | :------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteForUser         |
+| Delegated (personal Microsoft account) | Not supported.                                                                  |
+| Application                            | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## HTTP request
 
@@ -39,9 +39,9 @@ This method supports the $filter, $select, and $expand [OData query parameters](
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -60,32 +60,38 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps",
@@ -106,15 +112,18 @@ Content-type: application/json
   ]
 }
 ```
+
 ### Example 2: Get the names and other details of apps installed for the user
 
 #### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "ignored",
   "name": "user_list_teamsApps_details"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition
 ```
@@ -124,6 +133,7 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=t
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps_details",
@@ -171,6 +181,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "User list teamsAppInstallations",
@@ -178,5 +189,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

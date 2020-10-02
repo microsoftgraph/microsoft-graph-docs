@@ -1,4 +1,4 @@
----
+﻿---
 title: "segment resource type"
 description: "The segment type"
 localization_priority: Normal
@@ -26,15 +26,15 @@ api with `$expand=sessions($expand=segments)` or the [List session](../api/callr
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|id|String|Unique identifier for the segment. Read-only.|
-|caller|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that initiated this segment.|
-|callee|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that answered this segment.|
-|failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Failure information associated with the segment if it failed.|
-|media|[microsoft.graph.callRecords.media](callrecords-media.md) collection|Media associated with this segment.|
-|startDateTime|DateTimeOffset|UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|endDateTime|DateTimeOffset|UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+| Property      | Type                                                                  | Description                                                                                                                                                                                                                              |
+| :------------ | :-------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id            | String                                                                | Unique identifier for the segment. Read-only.                                                                                                                                                                                            |
+| caller        | [microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)       | Endpoint that initiated this segment.                                                                                                                                                                                                    |
+| callee        | [microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)       | Endpoint that answered this segment.                                                                                                                                                                                                     |
+| failureInfo   | [microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md) | Failure information associated with the segment if it failed.                                                                                                                                                                            |
+| media         | [microsoft.graph.callRecords.media](callrecords-media.md) collection  | Media associated with this segment.                                                                                                                                                                                                      |
+| startDateTime | DateTimeOffset                                                        | UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
+| endDateTime   | DateTimeOffset                                                        | UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`   |
 
 ## Relationships
 
@@ -68,6 +68,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "segment resource",
@@ -75,4 +76,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

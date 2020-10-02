@@ -1,4 +1,4 @@
----
+﻿---
 title: "diskType enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unkown|0|Not yet documented|
-|hdd|1|Not yet documented|
-|ssd|2|Not yet documented|
 
-
-
-
-
-
+| Member | Value | Description        |
+| :----- | :---- | :----------------- |
+| unkown | 0     | Not yet documented |
+| hdd    | 1     | Not yet documented |
+| ssd    | 2     | Not yet documented |

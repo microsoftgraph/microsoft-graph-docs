@@ -1,4 +1,4 @@
----
+﻿---
 title: "defenderSecurityCenterNotificationsFromAppType enum type"
 description: "Possible values for defenderSecurityCenterNotificationsFromApp"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Possible values for defenderSecurityCenterNotificationsFromApp
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not Configured|
-|blockNoncriticalNotifications|1|Block non-critical notifications|
-|blockAllNotifications|2|Block all notifications|
 
-
-
-
-
-
+| Member                        | Value | Description                      |
+| :---------------------------- | :---- | :------------------------------- |
+| notConfigured                 | 0     | Not Configured                   |
+| blockNoncriticalNotifications | 1     | Block non-critical notifications |
+| blockAllNotifications         | 2     | Block all notifications          |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create userExperienceAnalyticsMetricHistory"
 description: "Create a new userExperienceAnalyticsMetricHistory object."
 author: "dougeby"
@@ -18,49 +18,55 @@ Namespace: microsoft.graph
 Create a new [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/userExperienceAnalyticsMetricHistory
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the userExperienceAnalyticsMetricHistory object.
 
 The following table shows the properties that are required when you create the userExperienceAnalyticsMetricHistory.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics metric history.|
-|metricDateTime|DateTimeOffset|The user experience analytics metric date time.|
-
-
+| Property       | Type           | Description                                                            |
+| :------------- | :------------- | :--------------------------------------------------------------------- |
+| id             | String         | The unique identifier of the user experience analytics metric history. |
+| metricDateTime | DateTimeOffset | The user experience analytics metric date time.                        |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [userExperienceAnalyticsMetricHistory](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMetricHistory
 Content-type: application/json
 Content-length: 136
@@ -72,8 +78,10 @@ Content-length: 136
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 185
@@ -84,9 +92,3 @@ Content-Length: 185
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
 }
 ```
-
-
-
-
-
-

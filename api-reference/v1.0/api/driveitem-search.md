@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 07/07/2020
@@ -8,6 +8,7 @@ ms.prod: "sharepoint"
 description: "Search the hierarchy of items for items matching a query."
 doc_type: apiPageType
 ---
+
 # Search for a DriveItems within a drive
 
 Namespace: microsoft.graph
@@ -19,11 +20,11 @@ You can search within a folder hierarchy, a whole drive, or files shared with th
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                           |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All                                      |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## HTTP request
 
@@ -43,9 +44,9 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 ## Function parameters
 
-| Parameter | Type  | Description                                                                                                                          |
-|:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| q  | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
+| Parameter | Type   | Description                                                                                                                          |
+| :-------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| q         | string | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
 
 ## Example
 
@@ -53,31 +54,35 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 The following example searches for a match for "Contoso Project" across several fields in the signed-in user's drive items.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
 
 ```msgraph-interactive
 GET /me/drive/root/search(q='Contoso Project')
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/item-search-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/item-search-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/item-search-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -119,31 +124,35 @@ To broaden the search scope, use the **search** method on the [Drive](../resourc
 
 ### Example
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
 
 ```msgraph-interactive
 GET /me/drive/search(q='Contoso Project')
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-all-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/item-search-all-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/item-search-all-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/item-search-all-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -194,4 +203,3 @@ how errors are returned.
   "suppressions": [
   ]
 } -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "teamsAppInstallation resource type"
 description: "A teamsApp installed in a team. "
 author: "clearab"
@@ -15,25 +15,25 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List apps](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
-|[Add app](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
-|[Remove app](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
-|[Upgrade app](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app.|
+| Method                                                | Return Type                                     | Description                                |
+| :---------------------------------------------------- | :---------------------------------------------- | :----------------------------------------- |
+| [List apps](../api/teamsappinstallation-list.md)      | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.            |
+| [Add app](../api/teamsappinstallation-add.md)         | [teamsAppInstallation](teamsappinstallation.md) | Adds (installs) an app to a team.          |
+| [Remove app](../api/teamsappinstallation-delete.md)   | None                                            | Removes (uninstalls) an app from a team.   |
+| [Upgrade app](../api/teamsappinstallation-upgrade.md) | None                                            | Upgrades to the latest version of the app. |
 
 ## Properties
 
-| Property            | Type     | Description |
-|:------------------- |:-------- |:----------- |
-| id                  | string   | A unique id (not the teams appid). |
+| Property | Type   | Description                        |
+| :------- | :----- | :--------------------------------- |
+| id       | string | A unique id (not the teams appid). |
 
 ## Relationships
 
-| Relationship   | Type    | Description |
-|:---------------|:--------|:----------|
-|teamsApp|[teamsApp](teamsapp.md)| The app that is installed. |
-|teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| The details of this version of the app. |
+| Relationship       | Type                                        | Description                             |
+| :----------------- | :------------------------------------------ | :-------------------------------------- |
+| teamsApp           | [teamsApp](teamsapp.md)                     | The app that is installed.              |
+| teamsAppDefinition | [teamsAppDefinition](teamsappdefinition.md) | The details of this version of the app. |
 
 ## JSON representation
 
@@ -57,6 +57,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "teamsApp resource",
@@ -64,4 +65,3 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part
   "section": "documentation",
   "tocPath": ""
 }-->
-

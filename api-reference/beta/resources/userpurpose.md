@@ -1,4 +1,4 @@
----
+﻿---
 title: "userPurpose resource type"
 description: "Represents the user's recipient or mailbox type in Exchange Online."
 localization_priority: Normal
@@ -15,22 +15,23 @@ Namespace: microsoft.graph
 
 The purpose of the mailbox. Used to differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online.
 
-
 ## Properties
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|value|[mailboxRecipientType](#mailboxrecipienttype-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `unknown`, `user`, `linked`, `shared`, `room`, `equipment`, and `others`. See the next section for more information.|
+
+| Property | Type                                                 | Description                                                                                                                                                                                                   |
+| :------- | :--------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| value    | [mailboxRecipientType](#mailboxrecipienttype-values) | Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `unknown`, `user`, `linked`, `shared`, `room`, `equipment`, and `others`. See the next section for more information. |
 
 ### mailboxRecipientType values
-|Member|Description|
-|:---------------|:--------|
-|unknown|No information found about the mailbox.|
-|user|A user account with a mailbox in the local forest.|
-|linked|A mailbox linked to a user account in another forest.|
-|shared|A mailbox shared by two or more user accounts.|
-|room|A mailbox representing a conference room.|
-|equipment|A mailbox representing a piece of equipment.|
-|others|Mailbox found but user purpose is different from the ones specified above.|
+
+| Member    | Description                                                                |
+| :-------- | :------------------------------------------------------------------------- |
+| unknown   | No information found about the mailbox.                                    |
+| user      | A user account with a mailbox in the local forest.                         |
+| linked    | A mailbox linked to a user account in another forest.                      |
+| shared    | A mailbox shared by two or more user accounts.                             |
+| room      | A mailbox representing a conference room.                                  |
+| equipment | A mailbox representing a piece of equipment.                               |
+| others    | Mailbox found but user purpose is different from the ones specified above. |
 
 ## JSON representation
 
@@ -53,6 +54,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -63,5 +65,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

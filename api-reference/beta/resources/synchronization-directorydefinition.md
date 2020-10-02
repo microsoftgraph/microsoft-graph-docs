@@ -1,4 +1,4 @@
----
+﻿---
 title: "directoryDefinition resource type"
 description: "Provides the synchronization engine information about a directory and its objects."
 localization_priority: Normal
@@ -21,21 +21,21 @@ Directory definitions are updated as part of the [synchronization schema](synchr
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Discover directoryDefinition](../api/directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
+| Method                                                                 | Return Type                                                   | Description                                                    |
+| :--------------------------------------------------------------------- | :------------------------------------------------------------ | :------------------------------------------------------------- |
+| [Discover directoryDefinition](../api/directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) | Discover the schema and supported properties of the directory. |
 
 ## Properties
 
-| Property      | Type      | Description    |
-|:--------------|:----------|:---------------|
-|id           |String     |Directory identifier. Not nullable.|
-|metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
-|name           |String     |Name of the directory. Must be unique within the [synchronization schema](synchronization-synchronizationschema.md). Not nullable.|
-|objects        |[objectDefinition](synchronization-objectdefinition.md) collection    |Collection of objects supported by the directory.|
-|version|String|Read only value that indicates version discovered. Null if discovery has not yet occurred.|
-|discoveryDateTime|DateTimeOffset| Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|discoverabilities|string| Read only value indicating what type of discovery the app supports. Possible values are: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
+| Property          | Type                                                               | Description                                                                                                                                                                                                |
+| :---------------- | :----------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                | String                                                             | Directory identifier. Not nullable.                                                                                                                                                                        |
+| metadata          | metadataEntry collection                                           | Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.                                                                                                       |
+| name              | String                                                             | Name of the directory. Must be unique within the [synchronization schema](synchronization-synchronizationschema.md). Not nullable.                                                                         |
+| objects           | [objectDefinition](synchronization-objectdefinition.md) collection | Collection of objects supported by the directory.                                                                                                                                                          |
+| version           | String                                                             | Read only value that indicates version discovered. Null if discovery has not yet occurred.                                                                                                                 |
+| discoveryDateTime | DateTimeOffset                                                     | Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`                            |
+| discoverabilities | string                                                             | Read only value indicating what type of discovery the app supports. Possible values are: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`. |
 
 ## JSON representation
 
@@ -64,6 +64,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -74,5 +75,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

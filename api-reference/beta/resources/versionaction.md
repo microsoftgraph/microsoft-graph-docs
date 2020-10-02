@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "The presence of the VersionAction resource on an itemActivity indicates that the activity caused a new version to be created."
 ms.date: 09/14/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # VersionAction resource type
 
 Namespace: microsoft.graph
@@ -33,9 +34,9 @@ The presence of the **VersionAction** resource on an [**itemActivity**][activity
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| newVersion    | string | The name of the new version that was created by this action.
+| Property name | Type   | Description                                                  |
+| :------------ | :----- | :----------------------------------------------------------- |
+| newVersion    | string | The name of the new version that was created by this action. |
 
 ## Remarks
 
@@ -51,5 +52,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

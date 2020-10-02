@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update groupPolicyObjectFile"
 description: "Update the properties of a groupPolicyObjectFile object."
 author: "dougeby"
@@ -18,53 +18,59 @@ Namespace: microsoft.graph
 Update the properties of a [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) object.
 
 The following table shows the properties that are required when you create the [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Not yet documented|
-|groupPolicyObjectId|Guid|The Group Policy Object GUID from GPO Xml content|
-|ouDistinguishedName|String|The distinguished name of the OU.|
-|createdDateTime|DateTimeOffset|The date and time at which the GroupPolicy was first uploaded.|
-|lastModifiedDateTime|DateTimeOffset|The date and time at which the GroupPolicyObjectFile was last modified.|
-|content|String|The Group Policy Object file content.|
-
-
+| Property             | Type           | Description                                                             |
+| :------------------- | :------------- | :---------------------------------------------------------------------- |
+| id                   | String         | Not yet documented                                                      |
+| groupPolicyObjectId  | Guid           | The Group Policy Object GUID from GPO Xml content                       |
+| ouDistinguishedName  | String         | The distinguished name of the OU.                                       |
+| createdDateTime      | DateTimeOffset | The date and time at which the GroupPolicy was first uploaded.          |
+| lastModifiedDateTime | DateTimeOffset | The date and time at which the GroupPolicyObjectFile was last modified. |
+| content              | String         | The Group Policy Object file content.                                   |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 Content-type: application/json
 Content-length: 217
@@ -78,8 +84,10 @@ Content-length: 217
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 389
@@ -94,9 +102,3 @@ Content-Length: 389
   "content": "Content value"
 }
 ```
-
-
-
-
-
-

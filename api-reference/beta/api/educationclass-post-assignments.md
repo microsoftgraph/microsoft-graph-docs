@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create educationAssignment"
 description: "Creates a new assignment. Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publish is called.  "
 localization_priority: Normal
@@ -16,40 +16,50 @@ Namespace: microsoft.graph
 Creates a new assignment. Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publish is called.  
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+| Permission type                        | Permissions (from least to most privileged)             |
+| :------------------------------------- | :------------------------------------------------------ |
+| Delegated (work or school account)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported.                                          |
+| Application                            | Not supported.                                          |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /education/classes/{id}/assignments
 
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.
 
-
 ## Response
+
 If successful, this method returns a `201 Created` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.
 
 ## Example
+
 ##### Request
+
 The following is an example of the request.
+
 <!-- {
   "blockType": "ignored",
   "name": "create_educationassignment_from_educationclass"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11019/assignments
 Content-type: application/json
@@ -73,9 +83,11 @@ Content-length: 279
       "allowStudentsToAddResourcesToSubmission": true
 }
 ```
+
 In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.
 
 ##### Response
+
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -85,6 +97,7 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignment"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -132,6 +145,7 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -142,5 +156,3 @@ Content-length: 279
   "suppressions": []
 }
 -->
-
-

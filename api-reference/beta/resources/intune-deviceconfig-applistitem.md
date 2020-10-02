@@ -1,4 +1,4 @@
----
+﻿---
 title: "appListItem resource type"
 description: "Represents an app in the list of managed applications"
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 Represents an app in the list of managed applications
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|name|String|The application name|
-|publisher|String|The publisher of the application|
-|appStoreUrl|String|The Store URL of the application|
-|appId|String|The application or bundle identifier of the application|
+
+| Property    | Type   | Description                                             |
+| :---------- | :----- | :------------------------------------------------------ |
+| name        | String | The application name                                    |
+| publisher   | String | The publisher of the application                        |
+| appStoreUrl | String | The Store URL of the application                        |
+| appId       | String | The application or bundle identifier of the application |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appListItem"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.appListItem",
   "name": "String",
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   "appId": "String"
 }
 ```
-
-
-
-
-
-

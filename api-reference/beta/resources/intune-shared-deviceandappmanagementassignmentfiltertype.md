@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceAndAppManagementAssignmentFilterType enum type"
 description: "Represents type of the assignment filter."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Represents type of the assignment filter.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Default value. Do not use.|
-|include|1|Indicates in-filter, rule matching will offer the payload to devices.|
 
-
-
-
-
-
+| Member  | Value | Description                                                           |
+| :------ | :---- | :-------------------------------------------------------------------- |
+| none    | 0     | Default value. Do not use.                                            |
+| include | 1     | Indicates in-filter, rule matching will offer the payload to devices. |

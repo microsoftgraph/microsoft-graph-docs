@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The sharedDriveItem resource is returned when using the Shares API to access a shared driveItem."
 ms.date: 09/10/2017
@@ -55,20 +55,20 @@ The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and
 
 ## Relationships
 
-| Relationship name | Type                | Description
-| ------------------|:--------------------|:-----------------------------------
-| **driveItem**     | [**driveItem**][driveItem] | Used to access the underlying **driveItem**
-| **list**          | [**list**][list]           | Used to access the underlying **list**
-| **listItem**      | [**listItem**][listItem]   | Used to access the underlying **listItem**
-| **permission**    | [**permission**][permission] | Used to access the **permission** representing the underlying sharing link
-| **site**          | [**site**][site]           | Used to access the underlying **site**
+| Relationship name | Type                         | Description                                                                |
+| ----------------- | :--------------------------- | :------------------------------------------------------------------------- |
+| **driveItem**     | [**driveItem**][driveItem]   | Used to access the underlying **driveItem**                                |
+| **list**          | [**list**][list]             | Used to access the underlying **list**                                     |
+| **listItem**      | [**listItem**][listItem]     | Used to access the underlying **listItem**                                 |
+| **permission**    | [**permission**][permission] | Used to access the **permission** representing the underlying sharing link |
+| **site**          | [**site**][site]             | Used to access the underlying **site**                                     |
 
 Alternatively, for **driveItems** shared from personal OneDrive accounts, the following relationships may also be used.
 
-| Relationship name | Type                         | Description
-| ------------------|:-----------------------------|:-----------------------------------
-| **items**         | [**driveItem**][driveItem] collection | All driveItems contained in the sharing root. This collection cannot be enumerated.
-| **driveItem**     | [**driveItem**][driveItem]            | Used to access the underlying **driveItem**
+| Relationship name | Type                                  | Description                                                                         |
+| ----------------- | :------------------------------------ | :---------------------------------------------------------------------------------- |
+| **items**         | [**driveItem**][driveItem] collection | All driveItems contained in the sharing root. This collection cannot be enumerated. |
+| **driveItem**     | [**driveItem**][driveItem]            | Used to access the underlying **driveItem**                                         |
 
 [driveItem]: driveitem.md
 [list]: list.md
@@ -96,5 +96,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "suppressions": []
 }
 -->
-
-

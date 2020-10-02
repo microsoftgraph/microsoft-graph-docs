@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update deviceComplianceUserOverview"
 description: "Update the properties of a deviceComplianceUserOverview object."
 author: "dougeby"
@@ -18,56 +18,62 @@ Namespace: microsoft.graph
 Update the properties of a [deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md) object.
 
 The following table shows the properties that are required when you create the [deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|pendingCount|Int32|Number of pending Users|
-|notApplicableCount|Int32|Number of not applicable users|
-|successCount|Int32|Number of succeeded Users|
-|errorCount|Int32|Number of error Users|
-|failedCount|Int32|Number of failed Users|
-|conflictCount|Int32|Number of users in conflict|
-|lastUpdateDateTime|DateTimeOffset|Last update time|
-|configurationVersion|Int32|Version of the policy for that overview|
-
-
+| Property             | Type           | Description                             |
+| :------------------- | :------------- | :-------------------------------------- |
+| id                   | String         | Key of the entity.                      |
+| pendingCount         | Int32          | Number of pending Users                 |
+| notApplicableCount   | Int32          | Number of not applicable users          |
+| successCount         | Int32          | Number of succeeded Users               |
+| errorCount           | Int32          | Number of error Users                   |
+| failedCount          | Int32          | Number of failed Users                  |
+| conflictCount        | Int32          | Number of users in conflict             |
+| lastUpdateDateTime   | DateTimeOffset | Last update time                        |
+| configurationVersion | Int32          | Version of the policy for that overview |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatusOverview
 Content-type: application/json
 Content-length: 303
@@ -86,8 +92,10 @@ Content-length: 303
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 352
@@ -105,9 +113,3 @@ Content-Length: 352
   "configurationVersion": 4
 }
 ```
-
-
-
-
-
-

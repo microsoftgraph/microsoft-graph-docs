@@ -1,4 +1,4 @@
----
+﻿---
 title: "onlineMeeting resource type"
 description: "Contains information about a meeting."
 author: "ananmishr"
@@ -69,6 +69,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->
+
 ```json
 {
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
@@ -90,6 +91,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "onlineMeeting resource",
@@ -97,5 +99,3 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

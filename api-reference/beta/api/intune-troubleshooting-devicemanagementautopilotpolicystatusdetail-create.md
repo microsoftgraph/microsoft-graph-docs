@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create deviceManagementAutopilotPolicyStatusDetail"
 description: "Create a new deviceManagementAutopilotPolicyStatusDetail object."
 author: "dougeby"
@@ -18,53 +18,59 @@ Namespace: microsoft.graph
 Create a new [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the deviceManagementAutopilotPolicyStatusDetail object.
 
 The following table shows the properties that are required when you create the deviceManagementAutopilotPolicyStatusDetail.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|UUID for the object|
-|displayName|String|The friendly name of the policy.|
-|policyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|The type of policy. Possible values are: `unknown`, `application`, `appModel`, `configurationPolicy`.|
-|complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|The policy compliance status. Possible values are: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
-|trackedOnEnrollmentStatus|Boolean|Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session|
-|lastReportedDateTime|DateTimeOffset|Timestamp of the reported policy status|
-
-
+| Property                  | Type                                                                                                                                      | Description                                                                                                                      |
+| :------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| id                        | String                                                                                                                                    | UUID for the object                                                                                                              |
+| displayName               | String                                                                                                                                    | The friendly name of the policy.                                                                                                 |
+| policyType                | [deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)                         | The type of policy. Possible values are: `unknown`, `application`, `appModel`, `configurationPolicy`.                            |
+| complianceStatus          | [deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md) | The policy compliance status. Possible values are: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`. |
+| trackedOnEnrollmentStatus | Boolean                                                                                                                                   | Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session                                 |
+| lastReportedDateTime      | DateTimeOffset                                                                                                                            | Timestamp of the reported policy status                                                                                          |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails
 Content-type: application/json
 Content-length: 295
@@ -80,8 +86,10 @@ Content-length: 295
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 344
@@ -96,9 +104,3 @@ Content-Length: 344
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
-
-
-
-
-

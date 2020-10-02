@@ -1,4 +1,4 @@
----
+﻿---
 title: "teamsDeviceUsageUserDetail resource type"
 description: "The following is a JSON representation of the resource."
 author: "nkramer"
@@ -53,5 +53,3 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
-
-

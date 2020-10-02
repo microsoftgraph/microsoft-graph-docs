@@ -1,4 +1,4 @@
----
+﻿---
 title: "defenderRealtimeScanDirection enum type"
 description: "Possible values for monitoring file activity."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Possible values for monitoring file activity.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|monitorAllFiles|0|0 (default) – Monitor all files(bi-directional)|
-|monitorIncomingFilesOnly|1|Monitor incoming files only.|
-|monitorOutgoingFilesOnly|2|Monitor outgoing files only.|
 
-
-
-
-
-
+| Member                   | Value | Description                                     |
+| :----------------------- | :---- | :---------------------------------------------- |
+| monitorAllFiles          | 0     | 0 (default) – Monitor all files(bi-directional) |
+| monitorIncomingFilesOnly | 1     | Monitor incoming files only.                    |
+| monitorOutgoingFilesOnly | 2     | Monitor outgoing files only.                    |

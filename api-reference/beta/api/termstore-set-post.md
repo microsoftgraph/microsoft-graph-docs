@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create set"
 description: "Create a new set object."
 author: mohitpcad
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Create set
+
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,14 +16,14 @@ Namespace: microsoft.graph.termStore
 Create a new [set](../resources/termstore-set.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account) |TermStore.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
-
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | TermStore.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -30,27 +31,28 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /termStore/sets
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the [set](../resources/termstore-set.md) object.
 
 The following table shows the properties that are required when you create the [set](../resources/termstore-set.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|localizedNames|[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set to be created|
-|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|termstore-group under which the set needs to be created|
-
-
+| Property       | Type                                                                                          | Description                                             |
+| :------------- | :-------------------------------------------------------------------------------------------- | :------------------------------------------------------ |
+| localizedNames | [microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) collection | Name of the set to be created                           |
+| parentGroup    | [microsoft.graph.termstore.group](../resources/termstore-group.md)                            | termstore-group under which the set needs to be created |
 
 ## Response
 
@@ -59,7 +61,8 @@ If successful, this method returns a `201 Created` response code and a [set](../
 ## Examples
 
 ### Request
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/termStore/sets
 Content-Type: application/json
 Content-length: 288
@@ -78,16 +81,18 @@ Content-length: 288
 }
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.termstore.set"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 {
@@ -101,7 +106,6 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 [microsoft.graph.termStore.set]: ../resources/termstore-set.md
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
@@ -118,5 +122,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

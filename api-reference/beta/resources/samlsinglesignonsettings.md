@@ -1,4 +1,4 @@
----
+﻿---
 title: "samlSingleSignOnSettings resource type"
 description: "Represents the SAML single sign-on settings."
 localization_priority: Normal
@@ -15,12 +15,12 @@ Represents a container for settings related to SAML single sign-on.
 
 ## Properties
 
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-|relayState|String| The relative URI the service provider would redirect to after completion of the single sign-on flow. |
-
+| Property   | Type   | Description                                                                                          |
+| :--------- | :----- | :--------------------------------------------------------------------------------------------------- |
+| relayState | String | The relative URI the service provider would redirect to after completion of the single sign-on flow. |
 
 ## JSON representation
+
 Here is a JSON representation of the resource.
 
 <!-- {
@@ -37,9 +37,9 @@ Here is a JSON representation of the resource.
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -50,5 +50,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

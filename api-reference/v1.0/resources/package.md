@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -23,6 +23,7 @@ DriveItems with the **package** facet do not include a **folder** or **file** fa
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.package" } -->
+
 ```json
 {
   "type": "oneNote"
@@ -31,14 +32,13 @@ DriveItems with the **package** facet do not include a **folder** or **file** fa
 
 ## Properties
 
-| Property Name | Type   | Description                                                                                                                                                                      |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Property Name | Type   | Description                                                                                                                                                                     |
+| :------------ | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | type          | string | A string indicating the type of package. While `oneNote` is the only currently defined value, you should expect other package types to be returned and handle them accordingly. |
 
 ## Remarks 
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
-
 
 <!-- {
   "type": "#page.annotation",
@@ -47,4 +47,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Package"
 } -->
-

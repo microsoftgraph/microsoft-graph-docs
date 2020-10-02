@@ -1,4 +1,4 @@
----
+﻿---
 title: "updateClassification enum type"
 description: "Possible values for automatic update classification."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for automatic update classification.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userDefined|0|User Defined, default value, no intent.|
-|recommendedAndImportant|1|Recommended and important.|
-|important|2|Important.|
-|none|3|None.|
 
-
-
-
-
-
+| Member                  | Value | Description                             |
+| :---------------------- | :---- | :-------------------------------------- |
+| userDefined             | 0     | User Defined, default value, no intent. |
+| recommendedAndImportant | 1     | Recommended and important.              |
+| important               | 2     | Important.                              |
+| none                    | 3     | None.                                   |

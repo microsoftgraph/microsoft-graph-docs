@@ -1,4 +1,4 @@
----
+﻿---
 title: "enablement enum type"
 description: "Possible values of a property"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Possible values of a property
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Device default value, no intent.|
-|enabled|1|Enables the setting on the device.|
-|disabled|2|Disables the setting on the device.|
 
-
-
-
-
-
+| Member        | Value | Description                         |
+| :------------ | :---- | :---------------------------------- |
+| notConfigured | 0     | Device default value, no intent.    |
+| enabled       | 1     | Enables the setting on the device.  |
+| disabled      | 2     | Disables the setting on the device. |

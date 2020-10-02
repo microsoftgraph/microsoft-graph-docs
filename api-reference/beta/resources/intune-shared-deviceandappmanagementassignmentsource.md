@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceAndAppManagementAssignmentSource enum type"
 description: "Represents source of assignment."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Represents source of assignment.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|direct|0|Direct indicates a direct assignment.|
-|policySets|1|PolicySets indicates assignment was made via PolicySet assignment.|
 
-
-
-
-
-
+| Member     | Value | Description                                                        |
+| :--------- | :---- | :----------------------------------------------------------------- |
+| direct     | 0     | Direct indicates a direct assignment.                              |
+| policySets | 1     | PolicySets indicates assignment was made via PolicySet assignment. |

@@ -1,4 +1,4 @@
----
+﻿---
 author: "simonhult"
 description: "The personOrGroupColumn on a columnDefinition resource indicates that the column's values represent a person or group chosen from the directory."
 ms.date: 09/11/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
+
 # PersonOrGroupColumn resource type
 
 Namespace: microsoft.graph
@@ -18,6 +19,7 @@ The **personOrGroupColumn** on a [columnDefinition](columndefinition.md) resourc
 ## JSON representation
 
 Here is a JSON representation of a **personOrGroupColumn** resource.
+
 <!-- { "blockType": "resource", "@type": "microsoft.graph.personOrGroupColumn", "@property.aka": "chooseFromType=format" } -->
 
 ```json
@@ -30,16 +32,16 @@ Here is a JSON representation of a **personOrGroupColumn** resource.
 
 ## Properties
 
-| Property name              | Type    | Description
-|:---------------------------|:--------|:--------------------------------------
-| **allowMultipleSelection** | boolean | Indicates whether multiple values can be selected from the source.
-| **displayAs**              | string  | How to display the information about the person or group chosen. See below.
-| **chooseFromType**         | string  | Whether to allow selection of people only, or people and groups. Must be one of `peopleAndGroups` or `peopleOnly`.
+| Property name              | Type    | Description                                                                                                        |
+| :------------------------- | :------ | :----------------------------------------------------------------------------------------------------------------- |
+| **allowMultipleSelection** | boolean | Indicates whether multiple values can be selected from the source.                                                 |
+| **displayAs**              | string  | How to display the information about the person or group chosen. See below.                                        |
+| **chooseFromType**         | string  | Whether to allow selection of people only, or people and groups. Must be one of `peopleAndGroups` or `peopleOnly`. |
 
 ## DisplayAs values
 
 | DisplayAs value               | Description                                                                                                 |
-|:------------------------------|:------------------------------------------------------------------------------------------------------------|
+| :---------------------------- | :---------------------------------------------------------------------------------------------------------- |
 | **account**                   | The raw SharePoint encoded claim string for the person or group (eg. `i:0#.f|membership|jane@contoso.com`). |
 | **department**                | The person or group's department.                                                                           |
 | **firstName**                 | The person's first name.                                                                                    |
@@ -71,5 +73,3 @@ Note: Additional DisplayAs types may be returned.
   "suppressions": []
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "List replies"
 description: "Retrieve a list of chatmessage objects."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Retrieve a list of chatmessage objects.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Chat.Read, Chat.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Chat.Read.All, Chat.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Chat.Read, Chat.ReadWrite                   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Chat.Read.All, Chat.ReadWrite.All           |
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -42,8 +42,8 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description   |
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_replies"
@@ -69,20 +70,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-replies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-replies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -131,6 +135,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "List replies",
@@ -140,5 +145,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

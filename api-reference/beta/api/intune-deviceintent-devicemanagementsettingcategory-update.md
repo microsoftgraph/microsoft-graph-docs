@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update deviceManagementSettingCategory"
 description: "Update the properties of a deviceManagementSettingCategory object."
 author: "dougeby"
@@ -18,50 +18,56 @@ Namespace: microsoft.graph
 Update the properties of a [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md) object.
 
 The following table shows the properties that are required when you create the [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The category ID|
-|displayName|String|The category name|
-|hasRequiredSetting|Boolean|The category contains top level required setting|
-
-
+| Property           | Type    | Description                                      |
+| :----------------- | :------ | :----------------------------------------------- |
+| id                 | String  | The category ID                                  |
+| displayName        | String  | The category name                                |
+| hasRequiredSetting | Boolean | The category contains top level required setting |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/categories/{deviceManagementSettingCategoryId}
 Content-type: application/json
 Content-length: 144
@@ -74,8 +80,10 @@ Content-length: 144
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 193
@@ -87,9 +95,3 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
-
-
-
-
-

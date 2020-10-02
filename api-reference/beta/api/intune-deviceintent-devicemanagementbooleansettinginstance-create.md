@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create deviceManagementBooleanSettingInstance"
 description: "Create a new deviceManagementBooleanSettingInstance object."
 author: "dougeby"
@@ -18,20 +18,23 @@ Namespace: microsoft.graph
 Create a new [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/intents/{deviceManagementIntentId}/settings
 POST /deviceManagement/templates/{deviceManagementTemplateId}/settings
 POST /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceManagementIntentSettingCategoryId}/settings
@@ -39,33 +42,36 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the deviceManagementBooleanSettingInstance object.
 
 The following table shows the properties that are required when you create the deviceManagementBooleanSettingInstance.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|definitionId|String|The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|valueJson|String|JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|value|Boolean|The boolean value|
-
-
+| Property     | Type    | Description                                                                                                                                                              |
+| :----------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id           | String  | The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)                            |
+| definitionId | String  | The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) |
+| valueJson    | String  | JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)                   |
+| value        | Boolean | The boolean value                                                                                                                                                        |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/settings
 Content-type: application/json
 Content-length: 176
@@ -79,8 +85,10 @@ Content-length: 176
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 225
@@ -93,9 +101,3 @@ Content-Length: 225
   "value": true
 }
 ```
-
-
-
-
-
-

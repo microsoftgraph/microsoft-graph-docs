@@ -1,4 +1,4 @@
----
+﻿---
 title: "auditResource resource type"
 description: "A class containing the properties for Audit Resource."
 author: "dougeby"
@@ -16,24 +16,29 @@ Namespace: microsoft.graph
 A class containing the properties for Audit Resource.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Display name.|
-|modifiedProperties|[auditProperty](../resources/intune-auditing-auditproperty.md) collection|List of modified properties.|
-|type|String|Audit resource's type.|
-|resourceId|String|Audit resource's Id.|
+
+| Property           | Type                                                                      | Description                  |
+| :----------------- | :------------------------------------------------------------------------ | :--------------------------- |
+| displayName        | String                                                                    | Display name.                |
+| modifiedProperties | [auditProperty](../resources/intune-auditing-auditproperty.md) collection | List of modified properties. |
+| type               | String                                                                    | Audit resource's type.       |
+| resourceId         | String                                                                    | Audit resource's Id.         |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditResource"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.auditResource",
   "displayName": "String",
@@ -49,12 +54,3 @@ Here is a JSON representation of the resource.
   "resourceId": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

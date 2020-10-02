@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileAppIdentifier resource type"
 description: "The identifier for a mobile app."
 author: "dougeby"
@@ -16,30 +16,26 @@ Namespace: microsoft.graph
 The identifier for a mobile app.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppIdentifier"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mobileAppIdentifier"
 }
 ```
-
-
-
-
-
-
-
-
-

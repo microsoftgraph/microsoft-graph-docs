@@ -1,4 +1,4 @@
----
+﻿---
 title: "configurationManagerClientHealthState resource type"
 description: "Configuration manager client health state"
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 Configuration manager client health state
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|state|[configurationManagerClientState](../resources/intune-devices-configurationmanagerclientstate.md)|Current configuration manager client state. Possible values are: `unknown`, `installed`, `healthy`, `installFailed`, `updateFailed`, `communicationError`.|
-|errorCode|Int32|Error code for failed state.|
-|lastSyncDateTime|DateTimeOffset|Datetime for last sync with configuration manager management point.|
+
+| Property         | Type                                                                                              | Description                                                                                                                                                |
+| :--------------- | :------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| state            | [configurationManagerClientState](../resources/intune-devices-configurationmanagerclientstate.md) | Current configuration manager client state. Possible values are: `unknown`, `installed`, `healthy`, `installFailed`, `updateFailed`, `communicationError`. |
+| errorCode        | Int32                                                                                             | Error code for failed state.                                                                                                                               |
+| lastSyncDateTime | DateTimeOffset                                                                                    | Datetime for last sync with configuration manager management point.                                                                                        |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.configurationManagerClientHealthState"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.configurationManagerClientHealthState",
   "state": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "azureActiveDirectoryTenant resource type"
 description: "The azureActiveDirectoryTenant type identifies another Azure Active Directory tenant as an identity source for a connected organization."
 localization_priority: Normal
@@ -17,10 +17,10 @@ Used in the identity sources of an [connectedOrganization](connectedOrganization
 
 ## Properties
 
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| displayName |String | The name of the Azure Active Directory tenant. Read only. |
-| tenantId |String | The ID of the Azure Active Directory tenant. Read only. |
+| Property    | Type   | Description                                               |
+| :---------- | :----- | :-------------------------------------------------------- |
+| displayName | String | The name of the Azure Active Directory tenant. Read only. |
+| tenantId    | String | The ID of the Azure Active Directory tenant. Read only.   |
 
 ## Relationships
 
@@ -48,6 +48,7 @@ The following is a JSON representation of the type.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "azureActiveDirectoryTenant resource type",
@@ -55,5 +56,3 @@ The following is a JSON representation of the type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

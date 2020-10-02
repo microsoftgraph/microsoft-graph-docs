@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSettingSddlConstraint resource type"
 description: "Constraint enforcing the setting is well formed SDDL"
 author: "dougeby"
@@ -17,31 +17,29 @@ Namespace: microsoft.graph
 
 Constraint enforcing the setting is well formed SDDL
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingSddlConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingSddlConstraint"
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get personAward"
 description: "Read the properties and relationships of an personAward object."
 localization_priority: Normal
@@ -18,7 +18,7 @@ Read the properties and relationships of a [personAward](../resources/personawar
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
+| :------------------------------------- | :------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
@@ -29,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /me/profile/awards/{id}
 GET /users/{id | userPrincipalName}/profile/awards/{id}
 ```
@@ -39,11 +40,13 @@ GET /users/{id | userPrincipalName}/profile/awards/{id}
 This method supports the `$select` query parameter. Specify a list of properties to include in the response, separating them by commas. For optimal performance, only select the subset of properties needed.
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -53,24 +56,31 @@ If successful, this method returns a `200 OK` response code and an [personAward]
 ## Examples
 
 ### Request
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_personAward"
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/beta/me/profile/awards/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-personaward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-personaward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-personaward-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -79,13 +89,15 @@ GET https://graph.microsoft.com/beta/me/profile/awards/{id}
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.personAward"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -120,5 +132,3 @@ Content-Type: application/json
   "webUrl": "https://www.iabm.io"
 }
 ```
-
-

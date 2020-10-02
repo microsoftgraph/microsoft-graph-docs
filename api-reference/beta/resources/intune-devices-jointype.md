@@ -1,4 +1,4 @@
----
+﻿---
 title: "joinType enum type"
 description: "Device enrollment join type."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Device enrollment join type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown enrollment join type.|
-|azureADJoined|1|The device is joined by Azure AD.|
-|azureADRegistered|2|The device is registered by Azure AD.|
-|hybridAzureADJoined|3|The device is joined by hybrid Azure AD.|
 
-
-
-
-
-
+| Member              | Value | Description                              |
+| :------------------ | :---- | :--------------------------------------- |
+| unknown             | 0     | Unknown enrollment join type.            |
+| azureADJoined       | 1     | The device is joined by Azure AD.        |
+| azureADRegistered   | 2     | The device is registered by Azure AD.    |
+| hybridAzureADJoined | 3     | The device is joined by hybrid Azure AD. |

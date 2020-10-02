@@ -1,4 +1,4 @@
----
+﻿---
 author: rahmit
 description: "This resource represents a page in the SitePages list."
 ms.date: 03/15/2018
@@ -22,13 +22,13 @@ It contains the title, layout, and a collection of [webPart][]s.
 The following tasks are available for **sitePage** resources.
 All examples below are relative to a [site][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
 
-| Common task                     | HTTP method
-|:--------------------------------|:------------------------------
-| [List pages][]                  | GET /pages
-| [Get page][]                    | GET /pages/{page-id}
-| [Create][]                      | POST /pages
-| [Delete][]                      | DELETE /pages/{page-id}
-| [Publish][]                     | POST /pages/{page-id}/publish
+| Common task    | HTTP method                   |
+| :------------- | :---------------------------- |
+| [List pages][] | GET /pages                    |
+| [Get page][]   | GET /pages/{page-id}          |
+| [Create][]     | POST /pages                   |
+| [Delete][]     | DELETE /pages/{page-id}       |
+| [Publish][]    | POST /pages/{page-id}/publish |
 
 [List pages]: ../api/sitepage-list.md
 [Get page]: ../api/sitepage-get.md
@@ -78,40 +78,40 @@ Here is a JSON representation of a **sitePage** resource.
 
 The **sitePage** resource has the following properties.
 
-| Property name    | Type                         | Description
-|:-----------------|:-----------------------------|:---------------------------
-| contentType      | [contentTypeInfo][]          | The content type of the page.
+| Property name | Type                | Description                   |
+| :------------ | :------------------ | :---------------------------- |
+| contentType   | [contentTypeInfo][] | The content type of the page. |
 
 ## Page Content
 
 The **sitePage** resource has the following content fields.
 
-| Property name      | Type                       | Description
-|:-------------------|:---------------------------|:---------------------------
-| title              | string                     | The title of the page.
-| pageLayout         | string                     | The name of the page layout of the page.
-| webParts           | [webPart][]                | The web parts on the page.
+| Property name | Type        | Description                              |
+| :------------ | :---------- | :--------------------------------------- |
+| title         | string      | The title of the page.                   |
+| pageLayout    | string      | The name of the page layout of the page. |
+| webParts      | [webPart][] | The web parts on the page.               |
 
 ## Authoring Metadata
 
 The **sitePage** resource has the following authoring-related metadata. The publishingState property will reflect the page authoring state like checked out or published.
 
-| Property name          | Type                   | Description
-|:-----------------------|:-----------------------|:---------------------------
-| publishingState        | [publicationFacet][]   | The publishing status and the MM.mm version of the page.
+| Property name   | Type                 | Description                                              |
+| :-------------- | :------------------- | :------------------------------------------------------- |
+| publishingState | [publicationFacet][] | The publishing status and the MM.mm version of the page. |
 
 The following properties are inherited from **[baseItem][]**.
 
-| Property name        | Type              | Description
-|:---------------------|:------------------|:----------------------------------
-| id                   | string            | The unique identifier of the item. Read-only.
-| name                 | string            | The name / title of the item.
-| createdBy            | [identitySet][]   | Identity of the creator of this item. Read-only.
-| eTag                 | string            | ETag for the item. Read-only.
-| lastModifiedBy       | [identitySet][]   | Identity of the last modifier of this item. Read-only.
-| lastModifiedDateTime | DateTimeOffset    | The date and time the item was last modified. Read-only.
-| parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-only.
-| webUrl               | string (url)      | URL that displays the item in the browser. Read-only.
+| Property name        | Type              | Description                                              |
+| :------------------- | :---------------- | :------------------------------------------------------- |
+| id                   | string            | The unique identifier of the item. Read-only.            |
+| name                 | string            | The name / title of the item.                            |
+| createdBy            | [identitySet][]   | Identity of the creator of this item. Read-only.         |
+| eTag                 | string            | ETag for the item. Read-only.                            |
+| lastModifiedBy       | [identitySet][]   | Identity of the last modifier of this item. Read-only.   |
+| lastModifiedDateTime | DateTimeOffset    | The date and time the item was last modified. Read-only. |
+| parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-only. |
+| webUrl               | string (url)      | URL that displays the item in the browser. Read-only.    |
 
 ## Relationships
 
@@ -152,5 +152,3 @@ TODO:
     * Add the URL to the underlying list item resource in the API
 * PATCH for list item patches /item/{item-id}/fields.
 -->
-
-

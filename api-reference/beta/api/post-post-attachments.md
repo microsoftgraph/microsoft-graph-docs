@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add attachment"
 description: "Add an attachment when creating a group post."
 author: "dkershaw10"
@@ -27,49 +27,60 @@ All these types of attachment resources are derived from the [attachment](../res
 resource. 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Group.ReadWrite.All                         |
 
 ## HTTP request
+
 Include an attachment when creating a [post](../resources/post.md) in a [conversationThread](../resources/conversationthread.md) of a group. Specifying the parent [conversation](../resources/conversation.md) is optional.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/threads/{id}/reply
 POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object that includes a **post** parameter.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|post|[post](../resources/post.md)|The new post that is being replied with, which includes one or more attachments in an [attachment](../resources/attachment.md) collection.|
+| Parameter | Type                         | Description                                                                                                                                |
+| :-------- | :--------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| post      | [post](../resources/post.md) | The new post that is being replied with, which includes one or more attachments in an [attachment](../resources/attachment.md) collection. |
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code. It does not return a response body.
 
 ## Examples
+
 ### Example 1: Include a file attachment
+
 #### Request
+
 Here is an example of a request that includes a file as an attachment when creating a post.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_with_post",
   "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
@@ -88,26 +99,33 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-with-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-with-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-with-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
+
 Here is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_with_post"
 } -->
+
 ```http
 HTTP/1.1 202 Accpted
 ```
@@ -115,6 +133,7 @@ HTTP/1.1 202 Accpted
 ### Example 2: Include an item attachment
 
 #### Request
+
 Here is an example of a request that includes an event as an attachment when creating a post.
 
 <!-- {
@@ -122,6 +141,7 @@ Here is an example of a request that includes an event as an attachment when cre
   "name": "create_item_attachment_with_post",
   "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
@@ -156,13 +176,15 @@ Content-type: application/json
 }
 ```
 
-
 #### Response
+
 Here is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_with_post"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -170,15 +192,18 @@ HTTP/1.1 202 Accepted
 ### Example 3: Include a reference attachment
 
 #### Request
+
 Here is an example of a request that includes a reference attachment when creating a post.
 The attachment points to a folder on OneDrive.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_with_post",
   "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
@@ -202,32 +227,38 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-with-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-with-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-with-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_with_post"
 } -->
+
 ```http
 HTTP/1.1 202 Accpted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -239,5 +270,3 @@ HTTP/1.1 202 Accpted
   ]
 }
 -->
-
-

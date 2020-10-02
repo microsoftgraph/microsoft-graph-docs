@@ -1,4 +1,4 @@
----
+﻿---
 title: "comanagementEligibleType enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|comanaged|1|Not yet documented|
-|eligible|2|Not yet documented|
-|eligibleButNotAzureAdJoined|3|Not yet documented|
-|needsOsUpdate|4|Not yet documented|
-|ineligible|5|Not yet documented|
 
-
-
-
-
-
+| Member                      | Value | Description        |
+| :-------------------------- | :---- | :----------------- |
+| comanaged                   | 1     | Not yet documented |
+| eligible                    | 2     | Not yet documented |
+| eligibleButNotAzureAdJoined | 3     | Not yet documented |
+| needsOsUpdate               | 4     | Not yet documented |
+| ineligible                  | 5     | Not yet documented |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get message"
 description: "Retrieve the properties and relationships of a message object."
 author: "svpsiva"
@@ -22,20 +22,22 @@ There are two scenarios where an app can get a message in another user's mail fo
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadBasic, Mail.Read    |
-|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read    |
-|Application | Mail.ReadBasic.All, Mail.Read |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Mail.ReadBasic, Mail.Read                   |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read                   |
+| Application                            | Mail.ReadBasic.All, Mail.Read               |
 
 ## HTTP request
 
 To get the specified message:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/messages/{id}
 GET /users/{id | userPrincipalName}/messages/{id}
@@ -44,8 +46,10 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
 To get the MIME content of the specified message: 
+
 <!-- { "blockType": "ignored" } --> 
-```http 
+
+```http
 GET /me/messages/{id}/$value 
 GET /users/{id | userPrincipalName}/messages/{id}/$value 
 GET /me/mailFolders/{id}/messages/{id}/$value 
@@ -53,16 +57,20 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 Use the `$value` parameter to get the MIME content of a message.
+
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+
+| Name                              | Type   | Description                                                                                                                                                                                                                                                                                                                   |
+| :-------------------------------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization                     | string | Bearer {token}. Required.                                                                                                                                                                                                                                                                                                     |
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -71,47 +79,59 @@ If successful, this method returns a `200 OK` response code and [message](../res
 
 Specifying the `$value` parameter returns the message content in MIME format, and not a **message** resource.
 
-
 ## Examples
+
 ### Example 1
+
 #### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhMGAAA="],
   "name": "get_message"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "get_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -181,44 +201,56 @@ Content-type: application/json
 ```
 
 ### Example 2
+
 #### Request
+
 The next example uses a `$select` query parameter to get the Internet message headers of a message. 
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
   "name": "get_message_headers"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-headers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-headers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
+
 Here is an example of the response. Note: The set of message headers in the response object is truncated for brevity. All of the headers will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "get_message_headers",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -249,50 +281,58 @@ Content-type: application/json
 ```
 
 ### Example 3
+
 #### Request
 
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message_in_text"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-text-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
 
 Here is an example of the response. 
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
+
 <!-- {
   "blockType": "response",
   "name": "get_message_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -316,39 +356,47 @@ Preference-Applied: outlook.body-content-type="text"
 ```
 
 ### Example 4
+
 #### Request
+
 The fourth example gets the MIME content of a message in the signed-in user's mailbox.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_message_in_mime",
   "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
 } -->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-mime-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-mime-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-mime-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-in-mime-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 The following is the response. The MIME content begins with the `MIME-Version` header. 
 
 <!-- {
@@ -357,6 +405,7 @@ The following is the response. The MIME content begins with the `MIME-Version` h
   "truncated": true,
   "@odata.type": "string"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -447,18 +496,18 @@ YW5vdGhlciBtYWlsLg0K
 --_004_4aade2547798441eab5188a7a2436bc1contoso_-- 
 ```
 
-
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)
+
 <!--
 - [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 -->
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get message",
@@ -468,4 +517,3 @@ YW5vdGhlciBtYWlsLg0K
   "suppressions": [
   ]
 }-->
-

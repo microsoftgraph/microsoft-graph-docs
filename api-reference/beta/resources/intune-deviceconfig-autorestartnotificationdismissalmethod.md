@@ -1,4 +1,4 @@
----
+﻿---
 title: "autoRestartNotificationDismissalMethod enum type"
 description: "Auto restart required notification dismissal method"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Auto restart required notification dismissal method
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured|
-|automatic|1|Auto dismissal|
-|user|2|User dismissal|
 
-
-
-
-
-
+| Member        | Value | Description    |
+| :------------ | :---- | :------------- |
+| notConfigured | 0     | Not configured |
+| automatic     | 1     | Auto dismissal |
+| user          | 2     | User dismissal |

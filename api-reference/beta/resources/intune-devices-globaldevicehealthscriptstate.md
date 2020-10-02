@@ -1,4 +1,4 @@
----
+﻿---
 title: "globalDeviceHealthScriptState enum type"
 description: "Indicates whether global device health scripts are enabled and are in which state"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Indicates whether global device health scripts are enabled and are in which state
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Global device health scripts are not configured|
-|pending|1|Global device health scripts are configured but not fully enabled|
-|enabled|2|Global device health scripts are enabled and ready to use|
 
-
-
-
-
-
+| Member        | Value | Description                                                       |
+| :------------ | :---- | :---------------------------------------------------------------- |
+| notConfigured | 0     | Global device health scripts are not configured                   |
+| pending       | 1     | Global device health scripts are configured but not fully enabled |
+| enabled       | 2     | Global device health scripts are enabled and ready to use         |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete conversationMember"
 description: "Delete a conversationMember from a channel."
 author: "clearab"
@@ -22,23 +22,25 @@ Delete a [conversationMember](../resources/conversationmember.md) from a [channe
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission Type                        | Permissions (from least to most privileged)                               |
+| -------------------------------------- | ------------------------------------------------------------------------- |
+| Delegated (work or school account)     | ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                            |
+| Application                            | ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored"} -->
+
 ```http
 DELETE /teams/{id}/channels/{id}/members/{id}
 ```
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -55,27 +57,32 @@ If successful, this method returns a `204 No Content` response code.
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_conversation_member"
 } -->
+
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-conversation-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-conversation-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-conversation-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -84,8 +91,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

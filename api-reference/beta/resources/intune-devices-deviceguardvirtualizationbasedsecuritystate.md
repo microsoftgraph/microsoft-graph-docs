@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceGuardVirtualizationBasedSecurityState enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,18 +18,13 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|running|0|Running|
-|rebootRequired|1|Root required|
-|require64BitArchitecture|2|64 bit architecture required|
-|notLicensed|3|Not licensed|
-|notConfigured|4|Not configured|
-|doesNotMeetHardwareRequirements|5|System does not meet hardware requirements|
-|other|42|Other. Event logs in microsoft-Windows-DeviceGuard have more details.|
 
-
-
-
-
-
+| Member                          | Value | Description                                                           |
+| :------------------------------ | :---- | :-------------------------------------------------------------------- |
+| running                         | 0     | Running                                                               |
+| rebootRequired                  | 1     | Root required                                                         |
+| require64BitArchitecture        | 2     | 64 bit architecture required                                          |
+| notLicensed                     | 3     | Not licensed                                                          |
+| notConfigured                   | 4     | Not configured                                                        |
+| doesNotMeetHardwareRequirements | 5     | System does not meet hardware requirements                            |
+| other                           | 42    | Other. Event logs in microsoft-Windows-DeviceGuard have more details. |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "schedule: share"
 description: "Share a schedule time range with schedule members."
 author: "nkramer"
@@ -21,11 +21,11 @@ Each [shift](../resources/shift.md), [openshift](../resources/openshift.md) and 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Schedule.ReadWrite.All                      |
 
 ## HTTP request
 
@@ -37,20 +37,20 @@ POST /teams/{teamId}/schedule/share
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json. Required.  |
+| Header        | Value                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-|Parameter                   |Type           |Description  |
-|-----------------------|-------------------|--------------|
-| notifyTeam	        |`Boolean`             |Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared. Required.       |
-| startDateTime         |`DateTimeOffset`   |The start time to share shifts on the schedule from. Required.   |
-| endDateTime           |`DateTimeOffset`   | The end time to share shifts on the schedule until.   |
+| Parameter     | Type             | Description                                                                                                                                                         |
+| ------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| notifyTeam    | `Boolean`        | Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared. Required. |
+| startDateTime | `DateTimeOffset` | The start time to share shifts on the schedule from. Required.                                                                                                      |
+| endDateTime   | `DateTimeOffset` | The end time to share shifts on the schedule until.                                                                                                                 |
 
 ## Response
 
@@ -63,10 +63,12 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "schedule-share"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/share
 Content-type: application/json
@@ -77,20 +79,23 @@ Content-type: application/json
   "endDateTime": "2018-10-15T00:00:00.000Z"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-share-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-share-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-share-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -108,6 +113,7 @@ HTTP/1.1 204 No content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -119,5 +125,3 @@ HTTP/1.1 204 No content
   ]
 }
 -->
-
-

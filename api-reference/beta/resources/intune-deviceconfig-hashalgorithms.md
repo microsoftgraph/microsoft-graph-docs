@@ -1,4 +1,4 @@
----
+﻿---
 title: "hashAlgorithms enum type"
 description: "Hash Algorithm Options."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Hash Algorithm Options.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|sha1|1|SHA-1 Hash Algorithm.|
-|sha2|2|SHA-2 Hash Algorithm.|
 
-
-
-
-
-
+| Member | Value | Description           |
+| :----- | :---- | :-------------------- |
+| sha1   | 1     | SHA-1 Hash Algorithm. |
+| sha2   | 2     | SHA-2 Hash Algorithm. |

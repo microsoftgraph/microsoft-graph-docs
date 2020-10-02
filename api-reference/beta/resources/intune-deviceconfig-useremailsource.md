@@ -1,4 +1,4 @@
----
+﻿---
 title: "userEmailSource enum type"
 description: "Possible values for username source or email source."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Possible values for username source or email source.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userPrincipalName|0|User principal name.|
-|primarySmtpAddress|1|Primary SMTP address.|
 
-
-
-
-
-
+| Member             | Value | Description           |
+| :----------------- | :---- | :-------------------- |
+| userPrincipalName  | 0     | User principal name.  |
+| primarySmtpAddress | 1     | Primary SMTP address. |

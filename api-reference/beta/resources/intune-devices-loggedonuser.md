@@ -1,4 +1,4 @@
----
+﻿---
 title: "loggedOnUser resource type"
 description: "Logged On User"
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Logged On User
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|userId|String|User id|
-|lastLogOnDateTime|DateTimeOffset|Date time when user logs on|
+
+| Property          | Type           | Description                 |
+| :---------------- | :------------- | :-------------------------- |
+| userId            | String         | User id                     |
+| lastLogOnDateTime | DateTimeOffset | Date time when user logs on |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.loggedOnUser"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.loggedOnUser",
   "userId": "String",
   "lastLogOnDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

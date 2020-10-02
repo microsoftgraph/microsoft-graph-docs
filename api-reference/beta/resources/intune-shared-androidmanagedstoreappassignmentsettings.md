@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidManagedStoreAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Android Managed Store mobile app to a group."
 author: "dougeby"
@@ -17,25 +17,29 @@ Namespace: microsoft.graph
 
 Contains properties used to assign an Android Managed Store mobile app to a group.
 
-
 Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|androidManagedStoreAppTrackIds|String collection|The track IDs to enable for this app assignment.|
+
+| Property                       | Type              | Description                                      |
+| :----------------------------- | :---------------- | :----------------------------------------------- |
+| androidManagedStoreAppTrackIds | String collection | The track IDs to enable for this app assignment. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidManagedStoreAppAssignmentSettings"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppAssignmentSettings",
   "androidManagedStoreAppTrackIds": [
@@ -43,9 +47,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

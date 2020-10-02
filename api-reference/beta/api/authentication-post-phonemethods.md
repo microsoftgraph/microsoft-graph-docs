@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create phoneAuthenticationMethod"
 description: "Add a new phone authentication method."
 localization_priority: Normal
@@ -23,11 +23,11 @@ Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` n
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegated (work or school account)     | Not supported. | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application                            | Not supported. | Not supported. |
+| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged) |
+| :------------------------------------- | :--------------------------------------------------------- | :----------------------------------------------------------- |
+| Delegated (work or school account)     | Not supported.                                             | UserAuthenticationMethod.ReadWrite.All                       |
+| Delegated (personal Microsoft account) | Not supported.                                             | Not supported.                                               |
+| Application                            | Not supported.                                             | Not supported.                                               |
 
 For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
@@ -46,19 +46,19 @@ POST /users/{id}/authentication/phoneMethods
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply a JSON representation of a [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object. The JSON must include `phoneNumber` and `phoneType`, but not `smsSignInState` (which is read-only).
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.|
-|phoneType|String|Possible values are: `mobile`, `alternateMobile`, and `office`.|
+| Property    | Type   | Description                                                                                                                                                                                                                                                                                               |
+| :---------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| phoneNumber | String | The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format. |
+| phoneType   | String | Possible values are: `mobile`, `alternateMobile`, and `office`.                                                                                                                                                                                                                                           |
 
 ## Response
 
@@ -71,6 +71,7 @@ If successful, this method returns a `201 Created` response code and a new [phon
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_phoneauthenticationmethod_from_authentication"
@@ -85,20 +86,23 @@ Content-type: application/json
   "phoneType": "mobile"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-phoneauthenticationmethod-from-authentication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-phoneauthenticationmethod-from-authentication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-phoneauthenticationmethod-from-authentication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -126,6 +130,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create phoneAuthenticationMethod",

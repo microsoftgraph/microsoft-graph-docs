@@ -1,4 +1,4 @@
----
+﻿---
 title: "edgeSearchEngineBase resource type"
 description: "Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set."
 author: "dougeby"
@@ -16,30 +16,26 @@ Namespace: microsoft.graph
 Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngineBase"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngineBase"
 }
 ```
-
-
-
-
-
-
-
-
-

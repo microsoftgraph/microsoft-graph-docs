@@ -1,4 +1,4 @@
----
+﻿---
 title: "List b2xUserFlows"
 description: "Retrieve a list of b2xUserFlow objects."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Retrieve a list of [b2xUserFlow](../resources/b2xuserflows.md) objects.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                            |
+| Application                            | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 
 The work or school account needs to belong to one of the following roles:
 
@@ -46,9 +46,9 @@ For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-|Name|Description|
-|:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -66,31 +66,34 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_b2xUserFlows"
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-b2xuserflows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-b2xuserflows-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-b2xuserflows-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -132,31 +135,34 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_b2xUserFlows_expand"
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows?$expand=identityProviders
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-b2xuserflows-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-b2xuserflows-expand-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/list-b2xuserflows-expand-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -221,5 +227,3 @@ Content-type: application/json
     "Error: list_b2xUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileAppAssignmentSettings resource type"
 description: "Abstract class to contain properties used to assign a mobile app to a group."
 author: "dougeby"
@@ -16,30 +16,26 @@ Namespace: microsoft.graph
 Abstract class to contain properties used to assign a mobile app to a group.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
-
-
-
-
-
-
-
-
-

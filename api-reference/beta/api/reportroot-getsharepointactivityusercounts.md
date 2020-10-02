@@ -1,4 +1,4 @@
----
+﻿---
 title: "reportRoot: getSharePointActivityUserCounts"
 description: "Get the trend in the number of active users. A user is considered active if he or she has executed a file activity (save, sync, modify, or share) or visited a page within the specified time period."
 localization_priority: Normal
@@ -22,10 +22,10 @@ Get the trend in the number of active users. A user is considered active if he o
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Reports.Read.All                            |
 
 **Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
@@ -41,8 +41,8 @@ GET /reports/getSharePointActivityUserCounts(period='{period_value}')
 
 In the request URL, provide the following parameter with a valid value.
 
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
+| Parameter | Type   | Description                                                                                                                                                                                                                                                       |
+| :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
@@ -86,7 +86,6 @@ The following is an example that outputs CSV.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getsharepointactivityusercounts_csv"
@@ -95,7 +94,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getSharePointActivityUserCounts(period='D7')?$format=text/csv
 ```
-
 
 #### Response
 
@@ -132,7 +130,6 @@ The following is an example that returns JSON.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getsharepointactivityusercounts_json"
@@ -141,7 +138,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getSharePointActivityUserCounts(period='D7')?$format=application/json
 ```
-
 
 #### Response
 
@@ -176,8 +172,10 @@ Content-Length: 302
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",
@@ -187,5 +185,3 @@ Content-Length: 302
   "suppressions": [
   ]
 }-->
-
-

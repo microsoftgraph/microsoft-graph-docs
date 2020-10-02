@@ -1,4 +1,4 @@
----
+﻿---
 title: printConnector resource type
 description: Represents a print connector that has been registered by using a Universal Print subscription. The printConnector resource can be used to view connector status and update properties.
 author: braedenp-msft
@@ -17,24 +17,25 @@ Represents a print connector that has been registered by using a Universal Print
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
-| [Update connector](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object. |
-| [Delete connector](../api/printconnector-delete.md) | None | Unregister the connector from the Universal Print service. |
+| Method                                              | Return Type                         | Description                                                    |
+| :-------------------------------------------------- | :---------------------------------- | :------------------------------------------------------------- |
+| [Get connector](../api/printconnector-get.md)       | [printConnector](printconnector.md) | Read the properties and relationships of the connector object. |
+| [Update connector](../api/printconnector-update.md) | [printConnector](printconnector.md) | Update the connector object.                                   |
+| [Delete connector](../api/printconnector-delete.md) | None                                | Unregister the connector from the Universal Print service.     |
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|id|String| Read-only.|
-|name|String|The name of the connector.|
-|fullyQualifiedDomainName|String|The connector machine's hostname.|
-|operatingSystem|String|The connector machine's operating system version.|
-|appVersion|String|The connector's version.|
-|deviceHealth|[deviceHealth](devicehealth.md)|The connector's device health.|
-|location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the connector.|
-|registeredDateTime|DateTimeOffset|The DateTimeOffset when the connector was registered.|
-|registeredBy|[userIdentity](useridentity.md)|The user who registered the connector.|
+
+| Property                 | Type                                  | Description                                                   |
+| :----------------------- | :------------------------------------ | :------------------------------------------------------------ |
+| id                       | String                                | Read-only.                                                    |
+| name                     | String                                | The name of the connector.                                    |
+| fullyQualifiedDomainName | String                                | The connector machine's hostname.                             |
+| operatingSystem          | String                                | The connector machine's operating system version.             |
+| appVersion               | String                                | The connector's version.                                      |
+| deviceHealth             | [deviceHealth](devicehealth.md)       | The connector's device health.                                |
+| location                 | [printerLocation](printerlocation.md) | The physical and/or organizational location of the connector. |
+| registeredDateTime       | DateTimeOffset                        | The DateTimeOffset when the connector was registered.         |
+| registeredBy             | [userIdentity](useridentity.md)       | The user who registered the connector.                        |
 
 ## JSON representation
 
@@ -64,6 +65,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "printConnector resource",
@@ -71,5 +73,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

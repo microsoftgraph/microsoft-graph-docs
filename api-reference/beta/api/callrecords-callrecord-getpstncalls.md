@@ -1,4 +1,4 @@
----
+﻿---
 title: "callRecord: getPstnCalls"
 description: "Get log of PSTN calls."
 author: "stephenjust"
@@ -19,11 +19,11 @@ Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecor
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | CallRecords.Read.All |
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | CallRecords.Read.All                        |
 
 ## HTTP request
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-``` http
+```http
 GET /communications/callRecords/getPstnCalls
 ```
 
@@ -41,21 +41,21 @@ GET /communications/callRecords/getPstnCalls
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
-|Parameter|Type|Description|
-|:---|:---|:---|
-|fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time.|
-|toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive.|
+| Parameter    | Type           | Description                                                                                   |
+| :----------- | :------------- | :-------------------------------------------------------------------------------------------- |
+| fromDateTime | DateTimeOffset | Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time. |
+| toDateTime   | DateTimeOffset | End of time range to query. UTC, inclusive.                                                   |
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body.
-  
+
 If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Examples
@@ -68,13 +68,14 @@ If there are more than 1000 entries in the date range, the body also includes an
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)
 ```
 
 ### Response
 
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -82,7 +83,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 
 {

@@ -1,4 +1,4 @@
----
+﻿---
 title: "localSecurityOptionsInformationShownOnLockScreenType enum type"
 description: "Possible values for LocalSecurityOptionsInformationShownOnLockScreenType"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for LocalSecurityOptionsInformationShownOnLockScreenType
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not Configured|
-|userDisplayNameDomainUser|1|User display name, domain and user names|
-|userDisplayNameOnly|2|User display name only|
-|doNotDisplayUser|3|Do not display user information|
 
-
-
-
-
-
+| Member                    | Value | Description                              |
+| :------------------------ | :---- | :--------------------------------------- |
+| notConfigured             | 0     | Not Configured                           |
+| userDisplayNameDomainUser | 1     | User display name, domain and user names |
+| userDisplayNameOnly       | 2     | User display name only                   |
+| doNotDisplayUser          | 3     | Do not display user information          |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "groupAssignmentTarget resource type"
 description: "Represents an assignment to a group."
 author: "dougeby"
@@ -15,36 +15,31 @@ Namespace: microsoft.graph
 
 Represents an assignment to a group.
 
-
 Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|groupId|String|The group Id that is the target of the assignment.|
+
+| Property | Type   | Description                                        |
+| :------- | :----- | :------------------------------------------------- |
+| groupId  | String | The group Id that is the target of the assignment. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.groupAssignmentTarget"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.groupAssignmentTarget",
   "groupId": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "user: getMailTips"
 description: "Get the MailTips of one or more recipients as available to the signed-in user."
 author: "svpsiva"
@@ -17,49 +17,61 @@ Note that by making a `POST` call to the `getMailTips` action, you can request s
 be returned for more than one recipient at one time. The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.Read.Shared    |
-|Delegated (personal Microsoft account) | Mail.Read    |
-|Application | Mail.Read |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Mail.Read, Mail.Read.Shared                 |
+| Delegated (personal Microsoft account) | Mail.Read                                   |
+| Application                            | Mail.Read                                   |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
 ## Request headers
-| Header       | Value|
-|:-----------  |:------|
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json  |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|EmailAddresses|String collection|A collection of SMTP addresses of recipients to get MailTips for.|
-|MailTipsOptions|String|A enumeration of flags that represents the requested mailtips. Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.|
+| Property        | Type              | Description                                                                                                                                                                                                                                                                                         |
+| :-------------- | :---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| EmailAddresses  | String collection | A collection of SMTP addresses of recipients to get MailTips for.                                                                                                                                                                                                                                   |
+| MailTipsOptions | String            | A enumeration of flags that represents the requested mailtips. Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`. |
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.
+
 ## Example
+
 ##### Request
+
 The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_getmailtips"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/getMailTips
 Content-Type: application/json
@@ -72,33 +84,40 @@ Content-Type: application/json
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmailtips-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmailtips-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmailtips-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/user-getmailtips-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailTips",
   isCollection: true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -145,6 +164,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "user: getMailTips",
@@ -154,4 +174,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

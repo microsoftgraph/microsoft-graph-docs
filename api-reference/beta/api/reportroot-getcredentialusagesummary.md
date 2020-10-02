@@ -1,4 +1,4 @@
----
+﻿---
 title: "reportRoot: getCredentialUsageSummary"
 description: "Report the current state of how many users in your organization are using self-service password reset capabilities."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Report the current state of how many users in your organization used the self-se
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Reports.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Reports.Read.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Reports.Read.All                            |
 
 ## HTTP request
 
@@ -37,24 +37,24 @@ GET /reports/getCredentialUsageSummary
 
 You can use the following function parameter to adjust the response.
 
-| Parameter | Type | Description |
-|:--------- |:---- |:----------- |
-| period | String | Specifies the time period for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')`. Supported periods: `D1`, `D7`, and `D30`. Period is case insensitive. |
+| Parameter | Type   | Description                                                                                                                                                                                         |
+| :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| period    | String | Specifies the time period for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')`. Supported periods: `D1`, `D7`, and `D30`. Period is case insensitive. |
 
 ## Optional query parameters
 
 This function supports the optional OData query parameter **$filter**. You can apply **$filter** on one or more of the following properties of the [credentialUsageSummary](../resources/credentialusagesummary.md) resource.
 
-| Properties | Description and example |
-|:---- |:----------- |
-| feature | Specifies the type of usage data you want (registration vs. reset). For example: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Supported filter operators: `eq`. |
+| Properties | Description and example                                                                                                                                                                                  |
+| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| feature    | Specifies the type of usage data you want (registration vs. reset). For example: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Supported filter operators: `eq`. |
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token} |
-| Content-Type | application/json |
+| Name          | Description      |
+| :------------ | :--------------- |
+| Authorization | Bearer {token}   |
+| Content-Type  | application/json |
 
 ## Request body
 
@@ -73,6 +73,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "reportroot_getcredentialusagesummary"
@@ -81,20 +82,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getcredentialusagesummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getcredentialusagesummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getcredentialusagesummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -129,6 +133,7 @@ Content-Type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "reportRoot: getCredentialUsageSummary",
@@ -136,5 +141,3 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

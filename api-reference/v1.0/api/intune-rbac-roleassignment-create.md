@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create roleAssignment"
 description: "Create a new roleAssignment object."
 author: "dougeby"
@@ -16,51 +16,57 @@ Namespace: microsoft.graph
 Create a new [roleAssignment](../resources/intune-rbac-roleassignment.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementRBAC.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the roleAssignment object.
 
 The following table shows the properties that are required when you create the roleAssignment.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity. This is read-only and automatically generated.|
-|displayName|String|The display or friendly name of the role Assignment.|
-|description|String|Description of the Role Assignment.|
-|resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
-
-
+| Property       | Type              | Description                                                                                   |
+| :------------- | :---------------- | :-------------------------------------------------------------------------------------------- |
+| id             | String            | Key of the entity. This is read-only and automatically generated.                             |
+| displayName    | String            | The display or friendly name of the role Assignment.                                          |
+| description    | String            | Description of the Role Assignment.                                                           |
+| resourceScopes | String collection | List of ids of role scope member security groups.  These are IDs from Azure Active Directory. |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [roleAssignment](../resources/intune-rbac-roleassignment.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 Content-type: application/json
 Content-length: 193
@@ -76,8 +82,10 @@ Content-length: 193
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 242
@@ -92,12 +100,3 @@ Content-Length: 242
   ]
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsDeviceAzureADAccount resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -15,38 +15,33 @@ Namespace: microsoft.graph
 
 Not yet documented
 
-
 Inherits from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|password|String|Not yet documented Inherited from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|userPrincipalName|String|Not yet documented|
+
+| Property          | Type   | Description                                                                                                   |
+| :---------------- | :----- | :------------------------------------------------------------------------------------------------------------ |
+| password          | String | Not yet documented Inherited from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md) |
+| userPrincipalName | String | Not yet documented                                                                                            |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsDeviceAzureADAccount"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsDeviceAzureADAccount",
   "password": "String",
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "informationProtectionLabel resource type"
 description: "Describes the information protection label that details how to properly apply a sensitivity label to information."
 localization_priority: Normal
@@ -19,10 +19,10 @@ Describes the information protection label that details how to properly apply a 
 
 | Method                                                                                              | Return Type                                                               | Description                                                                                                                                                            |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [List informationProtectionLabel](../api/informationprotectionpolicy-list-labels.md)                | [informationProtectionLabel](informationprotectionlabel.md) collection | List all configured information protection labels for a user or tenant.                                                                                                |
+| [List informationProtectionLabel](../api/informationprotectionpolicy-list-labels.md)                | [informationProtectionLabel](informationprotectionlabel.md) collection    | List all configured information protection labels for a user or tenant.                                                                                                |
 | [Get informationProtectionLabel](../api/informationprotectionlabel-get.md)                          | [informationProtectionLabel](informationprotectionlabel.md)               | Given a specific label ID, return the **informationProtectionLabel**.                                                                                                  |
 | [evaluateapplication](../api/informationprotectionlabel-evaluateapplication.md)                     | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentinfo.md) and [labelingOptions](labelingoptions.md), compute the set of actions require to apply the label.                      |
-| [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentinfo.md) and classification results, compute the set of actions require to apply the label.                                  |
+| [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentinfo.md) and classification results, compute the set of actions require to apply the label.                                     |
 | [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md)                             | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentinfo.md) and [downgradeJustification](downgradejustification.md), compute the actions that should be taken to remove the label. |
 | [extractLabel](../api/informationprotectionlabel-extractlabel.md)                                   | [informationProtectionContentLabel](informationprotectioncontentlabel.md) | Given an input of [contentInfo](contentinfo.md), return details on the [informationProtectionLabel](informationprotectionlabel.md) that the metadata represents.       |
 
@@ -70,6 +70,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "informationProtectionLabel resource",
@@ -77,5 +78,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

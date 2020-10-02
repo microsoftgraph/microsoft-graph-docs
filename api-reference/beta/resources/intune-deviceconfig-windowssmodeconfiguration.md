@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsSModeConfiguration enum type"
 description: "The possible options to configure S mode unlock"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 The possible options to configure S mode unlock
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|noRestriction|0|This option will remove all restrictions to unlock S mode - default|
-|block|1|This option will block the user to unlock the device from S mode|
-|unlock|2|This option will unlock the device from S mode|
 
-
-
-
-
-
+| Member        | Value | Description                                                         |
+| :------------ | :---- | :------------------------------------------------------------------ |
+| noRestriction | 0     | This option will remove all restrictions to unlock S mode - default |
+| block         | 1     | This option will block the user to unlock the device from S mode    |
+| unlock        | 2     | This option will unlock the device from S mode                      |

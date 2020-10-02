@@ -1,4 +1,4 @@
----
+﻿---
 title: "deliveryOptimizationRestrictPeerSelectionByOptions enum type"
 description: "Values to restrict peer selection by."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Values to restrict peer selection by.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured.|
-|subnetMask|1|Subnet mask.|
 
-
-
-
-
-
+| Member        | Value | Description     |
+| :------------ | :---- | :-------------- |
+| notConfigured | 0     | Not configured. |
+| subnetMask    | 1     | Subnet mask.    |

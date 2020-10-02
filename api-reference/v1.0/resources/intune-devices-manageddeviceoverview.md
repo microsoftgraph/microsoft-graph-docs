@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedDeviceOverview resource type"
 description: "Summary data for managed devices"
 author: "dougeby"
@@ -16,33 +16,39 @@ Namespace: microsoft.graph
 Summary data for managed devices
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[Get managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Read properties and relationships of the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.|
-|[Update managedDeviceOverview](../api/intune-devices-manageddeviceoverview-update.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Update the properties of a [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.|
+
+| Method                                                                                | Return Type                                                                   | Description                                                                                                                    |
+| :------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| [Get managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)       | [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) | Read properties and relationships of the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object. |
+| [Update managedDeviceOverview](../api/intune-devices-manageddeviceoverview-update.md) | [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) | Update the properties of a [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.               |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Unique Identifier for the summary|
-|enrolledDeviceCount|Int32|Total enrolled device count. Does not include PC devices managed via Intune PC Agent|
-|mdmEnrolledCount|Int32|The number of devices enrolled in MDM|
-|dualEnrolledDeviceCount|Int32|The number of devices enrolled in both MDM and EAS|
-|deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Device operating system summary.|
-|deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Distribution of Exchange Access State in Intune|
+
+| Property                         | Type                                                                                                | Description                                                                          |
+| :------------------------------- | :-------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
+| id                               | String                                                                                              | Unique Identifier for the summary                                                    |
+| enrolledDeviceCount              | Int32                                                                                               | Total enrolled device count. Does not include PC devices managed via Intune PC Agent |
+| mdmEnrolledCount                 | Int32                                                                                               | The number of devices enrolled in MDM                                                |
+| dualEnrolledDeviceCount          | Int32                                                                                               | The number of devices enrolled in both MDM and EAS                                   |
+| deviceOperatingSystemSummary     | [deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)         | Device operating system summary.                                                     |
+| deviceExchangeAccessStateSummary | [deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md) | Distribution of Exchange Access State in Intune                                      |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceOverview"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
   "id": "String (identifier)",
@@ -68,12 +74,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-
-
-
-

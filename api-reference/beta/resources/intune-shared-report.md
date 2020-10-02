@@ -1,4 +1,4 @@
----
+﻿---
 title: "report resource type"
 description: "Describes the report resource of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
@@ -21,30 +21,29 @@ Returns the content appropriate for the context, including:
 - Enrollment failure reports.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|content|Stream|Report content; details vary by report type.|
+
+| Property | Type   | Description                                  |
+| :------- | :----- | :------------------------------------------- |
+| content  | Stream | Report content; details vary by report type. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.report"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.report",
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
-
-
-
-
-

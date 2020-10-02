@@ -1,4 +1,4 @@
----
+﻿---
 title: "Publish teamsapp"
 description: "Publish an app to the Microsoft Teams app catalog."
 author: "nkramer"
@@ -23,12 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 >**Note:** Only global administrators can call this API.
 
-| Permission Type                        | Permissions (from least to most privileged)|
-|:----------------------------------     |:-------------|
+| Permission Type                        | Permissions (from least to most privileged)       |
+| :------------------------------------- | :------------------------------------------------ |
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | AppCatalog.Submit|
-| Delegated (personal Microsoft account) | Not supported|
-| Application                            | Not supported. |
+| Delegated (work or school account)     | AppCatalog.Submit                                 |
+| Delegated (personal Microsoft account) | Not supported                                     |
+| Application                            | Not supported.                                    |
 
 ## HTTP request
 
@@ -46,14 +46,14 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 ## Query parameters
 
-|Property|Type|Description|
-|----|----|----|
-|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
+| Property       | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                  |
+| -------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| requiresReview | Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly. |
 
 ## Request headers
 
-| Header        | Value           |
-|:--------------|:--------------  |
+| Header        | Value                      |
+| :------------ | :------------------------- |
 | Authorization | Bearer {token}. Required.  |
 | Content-Type  | application/zip. Required. |
 
@@ -70,6 +70,7 @@ If successful, this method returns a `200 OK` response code and a [teamsApp](../
 ## Examples
 
 ### Example 1: Publish an app to the app catalog
+
 #### Request
 
 <!-- {
@@ -86,7 +87,9 @@ Content-length: 244
 ```
 
 For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
+
 <!-- markdownlint-disable MD024 -->
+
 #### Response
 
 <!-- {

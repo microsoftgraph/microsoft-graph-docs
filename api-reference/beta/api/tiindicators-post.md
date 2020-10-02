@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create threat intelligence indicator"
 description: "Create a new tiIndicator."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new [tiIndicator](../resources/tiindicator.md) object.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy  |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ThreatIndicators.ReadWrite.OwnedBy |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ThreatIndicators.ReadWrite.OwnedBy          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ThreatIndicators.ReadWrite.OwnedBy          |
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ POST /security/tiIndicators
 ## Request headers
 
 | Name          | Description   |
-|:--------------|:--------------|
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
@@ -54,6 +54,7 @@ If successful, this method returns `201 Created` response code and a [tiIndicato
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_tiindicator_from_security"
@@ -81,20 +82,23 @@ Content-type: application/json
   "tlpLevel": "green"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-tiindicator-from-security-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-tiindicator-from-security-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-tiindicator-from-security-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -127,6 +131,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create tiIndicator",
@@ -136,5 +141,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

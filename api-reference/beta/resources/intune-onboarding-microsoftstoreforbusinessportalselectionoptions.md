@@ -1,4 +1,4 @@
----
+﻿---
 title: "microsoftStoreForBusinessPortalSelectionOptions enum type"
 description: "Portal to which admin syncs available Microsoft Store for Business apps. This is available in the Intune Admin Console."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Portal to which admin syncs available Microsoft Store for Business apps. This is available in the Intune Admin Console.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|This option is not available for the account|
-|companyPortal|1|Intune Company Portal only.|
-|privateStore|2|MSFB Private store only.|
 
-
-
-
-
-
+| Member        | Value | Description                                  |
+| :------------ | :---- | :------------------------------------------- |
+| none          | 0     | This option is not available for the account |
+| companyPortal | 1     | Intune Company Portal only.                  |
+| privateStore  | 2     | MSFB Private store only.                     |

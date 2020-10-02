@@ -1,4 +1,4 @@
----
+﻿---
 title: "externalSponsors complex type"
 description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
 localization_priority: Normal
@@ -18,8 +18,8 @@ It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#mic
 
 ## Properties
 
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
+| Property | Type    | Description                                                  |
+| :------- | :------ | :----------------------------------------------------------- |
 | isBackup | Boolean | Indicates whether the sponsor is a backup fallback approver. |
 
 ## JSON representation
@@ -42,10 +42,9 @@ The following is a JSON representation of this type.
 }
 ```
 
-
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "externalSponsor complex type",
@@ -53,5 +52,3 @@ The following is a JSON representation of this type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

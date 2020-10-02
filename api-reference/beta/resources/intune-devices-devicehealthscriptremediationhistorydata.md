@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceHealthScriptRemediationHistoryData resource type"
 description: "The number of devices remediated by a device health script on a given date."
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 The number of devices remediated by a device health script on a given date.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|date|Date|The date on which devices were remediated by the device health script.|
-|remediatedDeviceCount|Int32|The number of devices remediated by the device health script.|
-|noIssueDeviceCount|Int32|The number of devices that were found to have no issue by the device health script.|
+
+| Property              | Type  | Description                                                                         |
+| :-------------------- | :---- | :---------------------------------------------------------------------------------- |
+| date                  | Date  | The date on which devices were remediated by the device health script.              |
+| remediatedDeviceCount | Int32 | The number of devices remediated by the device health script.                       |
+| noIssueDeviceCount    | Int32 | The number of devices that were found to have no issue by the device health script. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceHealthScriptRemediationHistoryData"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRemediationHistoryData",
   "date": "String (Date)",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "noIssueDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

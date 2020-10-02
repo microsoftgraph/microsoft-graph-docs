@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get chatMessage"
 description: "Retrieve a single message in a chat."
 author: "nkramer"
@@ -19,11 +19,11 @@ Retrieve a single [message](../resources/chatmessage.md) in a [chat](../resource
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.Read, Chat.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.Read.All, Chat.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Chat.Read, Chat.ReadWrite                   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Chat.Read.All, Chat.ReadWrite.All           |
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/chats/{id}/messages/{id}
 GET /users/{id}/chats/{id}/messages/{id}
@@ -42,11 +43,13 @@ GET /chats/{id}/messages/{id}
 This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -54,41 +57,51 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.
 
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_chat_message"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example of the response. 
 
 >**Note:** The response object shown here is shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -140,6 +153,7 @@ Content-length: 201
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -151,5 +165,3 @@ Content-length: 201
   ]
 }
 -->
-
-

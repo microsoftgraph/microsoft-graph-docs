@@ -1,4 +1,4 @@
----
+﻿---
 title: "plannerChecklistItems resource type"
 description: "The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the task details object. The value in the property-value pair is the checklistItem object."
 localization_priority: Normal
@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.
 
-
 ## Properties
+
 Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.
 
 ## JSON representation
@@ -43,6 +43,7 @@ Here is a JSON representation of the resource
   }
 }
 ```
+
 // Example
 
 ```json
@@ -79,6 +80,7 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -89,5 +91,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

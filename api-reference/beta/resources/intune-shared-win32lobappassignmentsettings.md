@@ -1,4 +1,4 @@
----
+﻿---
 title: "win32LobAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Win32 LOB mobile app to a group."
 author: "dougeby"
@@ -17,28 +17,32 @@ Namespace: microsoft.graph
 
 Contains properties used to assign an Win32 LOB mobile app to a group.
 
-
 Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|notifications|[win32LobAppNotification](../resources/intune-shared-win32lobappnotification.md)|The notification status for this app assignment. Possible values are: `showAll`, `showReboot`, `hideAll`.|
-|restartSettings|[win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)|The reboot settings to apply for this app assignment.|
-|installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-shared-mobileappinstalltimesettings.md)|The install time settings to apply for this app assignment.|
-|deliveryOptimizationPriority|[win32LobAppDeliveryOptimizationPriority](../resources/intune-shared-win32lobappdeliveryoptimizationpriority.md)|The delivery optimization priority for this app assignment. This setting is not supported in National Cloud environments. Possible values are: `notConfigured`, `foreground`.|
+
+| Property                     | Type                                                                                                             | Description                                                                                                                                                                   |
+| :--------------------------- | :--------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| notifications                | [win32LobAppNotification](../resources/intune-shared-win32lobappnotification.md)                                 | The notification status for this app assignment. Possible values are: `showAll`, `showReboot`, `hideAll`.                                                                     |
+| restartSettings              | [win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)                           | The reboot settings to apply for this app assignment.                                                                                                                         |
+| installTimeSettings          | [mobileAppInstallTimeSettings](../resources/intune-shared-mobileappinstalltimesettings.md)                       | The install time settings to apply for this app assignment.                                                                                                                   |
+| deliveryOptimizationPriority | [win32LobAppDeliveryOptimizationPriority](../resources/intune-shared-win32lobappdeliveryoptimizationpriority.md) | The delivery optimization priority for this app assignment. This setting is not supported in National Cloud environments. Possible values are: `notConfigured`, `foreground`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
   "notifications": "String",
@@ -57,9 +61,3 @@ Here is a JSON representation of the resource.
   "deliveryOptimizationPriority": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsAutopilotSyncStatus enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown sync status|
-|inProgress|1|Sync is in progress|
-|completed|2|Sync completed.|
-|failed|3|Sync failed.|
 
-
-
-
-
-
+| Member     | Value | Description         |
+| :--------- | :---- | :------------------ |
+| unknown    | 0     | Unknown sync status |
+| inProgress | 1     | Sync is in progress |
+| completed  | 2     | Sync completed.     |
+| failed     | 3     | Sync failed.        |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "softwareUpdateStatusSummary resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,43 +16,49 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[Get softwareUpdateStatusSummary](../api/intune-deviceconfig-softwareupdatestatussummary-get.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|Read properties and relationships of the [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) object.|
-|[Update softwareUpdateStatusSummary](../api/intune-deviceconfig-softwareupdatestatussummary-update.md)|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|Update the properties of a [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) object.|
+
+| Method                                                                                                 | Return Type                                                                                    | Description                                                                                                                                     |
+| :----------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Get softwareUpdateStatusSummary](../api/intune-deviceconfig-softwareupdatestatussummary-get.md)       | [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) | Read properties and relationships of the [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) object. |
+| [Update softwareUpdateStatusSummary](../api/intune-deviceconfig-softwareupdatestatussummary-update.md) | [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) | Update the properties of a [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) object.               |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|displayName|String|The name of the policy.|
-|compliantDeviceCount|Int32|Number of compliant devices.|
-|nonCompliantDeviceCount|Int32|Number of non compliant devices.|
-|remediatedDeviceCount|Int32|Number of remediated devices.|
-|errorDeviceCount|Int32|Number of devices had error.|
-|unknownDeviceCount|Int32|Number of unknown devices.|
-|conflictDeviceCount|Int32|Number of conflict devices.|
-|notApplicableDeviceCount|Int32|Number of not applicable devices.|
-|compliantUserCount|Int32|Number of compliant users.|
-|nonCompliantUserCount|Int32|Number of non compliant users.|
-|remediatedUserCount|Int32|Number of remediated users.|
-|errorUserCount|Int32|Number of users had error.|
-|unknownUserCount|Int32|Number of unknown users.|
-|conflictUserCount|Int32|Number of conflict users.|
-|notApplicableUserCount|Int32|Number of not applicable users.|
+
+| Property                 | Type   | Description                       |
+| :----------------------- | :----- | :-------------------------------- |
+| id                       | String | Key of the entity.                |
+| displayName              | String | The name of the policy.           |
+| compliantDeviceCount     | Int32  | Number of compliant devices.      |
+| nonCompliantDeviceCount  | Int32  | Number of non compliant devices.  |
+| remediatedDeviceCount    | Int32  | Number of remediated devices.     |
+| errorDeviceCount         | Int32  | Number of devices had error.      |
+| unknownDeviceCount       | Int32  | Number of unknown devices.        |
+| conflictDeviceCount      | Int32  | Number of conflict devices.       |
+| notApplicableDeviceCount | Int32  | Number of not applicable devices. |
+| compliantUserCount       | Int32  | Number of compliant users.        |
+| nonCompliantUserCount    | Int32  | Number of non compliant users.    |
+| remediatedUserCount      | Int32  | Number of remediated users.       |
+| errorUserCount           | Int32  | Number of users had error.        |
+| unknownUserCount         | Int32  | Number of unknown users.          |
+| conflictUserCount        | Int32  | Number of conflict users.         |
+| notApplicableUserCount   | Int32  | Number of not applicable users.   |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.softwareUpdateStatusSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
   "id": "String (identifier)",
@@ -73,12 +79,3 @@ Here is a JSON representation of the resource.
   "notApplicableUserCount": 1024
 }
 ```
-
-
-
-
-
-
-
-
-

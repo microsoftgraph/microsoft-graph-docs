@@ -1,4 +1,4 @@
----
+﻿---
 title: "appLogUploadState enum type"
 description: "AppLogUploadStatus"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 AppLogUploadStatus
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|pending|0|Request is waiting to be processed or under processing|
-|completed|1|Request is completed with file uploaded to Azure blob for download.|
-|failed|2|Request finished processing and in error state.|
 
-
-
-
-
-
+| Member    | Value | Description                                                         |
+| :-------- | :---- | :------------------------------------------------------------------ |
+| pending   | 0     | Request is waiting to be processed or under processing              |
+| completed | 1     | Request is completed with file uploaded to Azure blob for download. |
+| failed    | 2     | Request finished processing and in error state.                     |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "call: answer"
 description: "Answer an incoming call."
 author: "ananmishr"
@@ -18,54 +18,64 @@ Enable a bot to answer an incoming [call](../resources/call.md). The incoming ca
 The bot is expected to answer, [reject](./call-reject.md) or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds.
 
 ## Permissions
+
 You do not need any permissions to answer a peer-to-peer call. You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)                 |
-| :-------------- | :-----------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported                        |
-| Delegated (personal Microsoft account) | Not Supported                        |
-| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All |
+| Permission type                        | Permissions (from least to most privileged)                 |
+| :------------------------------------- | :---------------------------------------------------------- |
+| Delegated (work or school account)     | Not Supported                                               |
+| Delegated (personal Microsoft account) | Not Supported                                               |
+| Application                            | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All |
 
 > **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission. You must have at least one of the following permissions to ensure that the `source` in the incoming call notification is decrypted: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. The `source` is the caller info in the incoming call notification. Without at least one of these permissions, the `source` will remain encrypted.
 
 ## HTTP request
+
 <!-- {"blockType": "ignored" } -->
+
 ```http
 POST /app/calls/{id}/answer
 POST /communications/calls/{id}/answer
 ```
+
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-type  | application/json. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter        | Type                                     |Description                                                                                                                                    |
-|:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
-|acceptedModalities|String collection                         |The list of accept modalities. Possible value are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call. |
-|mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
+| Parameter          | Type                                                                                                                                 | Description                                                                                                                                                                                                      |
+| :----------------- | :----------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| callbackUri        | String                                                                                                                               | Allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`. |
+| acceptedModalities | String collection                                                                                                                    | The list of accept modalities. Possible value are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call.                                                                                   |
+| mediaConfig        | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | The media configuration. (Required)                                                                                                                                                                              |
 
 ## Response
+
 This method returns a `202 Accepted` response code.
 
 ## Examples
+
 The following example shows how to call this API.
 
 ##### Request
+
 The following example shows the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "call-answer"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/{id}/answer
 Content-Type: application/json
@@ -82,24 +92,28 @@ Content-Length: 211
   ]
 }
 ```
+
 This blob is the serialized configuration for media sessions which is generated from the media SDK.
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example of the response. 
 
 <!-- {
@@ -107,6 +121,7 @@ Here is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.None"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -124,6 +139,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -188,6 +204,7 @@ Content-Type: application/json
   "blockType": "ignored",
   "name": "call-answer-service-hosted-media"
 }-->
+
 ```http
 POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Content-Type: application/json
@@ -212,11 +229,13 @@ Content-Type: application/json
 ```
 
 ##### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.None"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -232,6 +251,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -262,6 +282,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -294,6 +315,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -341,12 +363,13 @@ Content-Type: application/json
 
 ##### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "call-answer-app-hosted-media"
 }-->
+
 ```http
 POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Content-Type: application/json
@@ -360,20 +383,23 @@ Content-Type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-app-hosted-media-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-app-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -382,6 +408,7 @@ Content-Type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.None"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -397,6 +424,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -427,6 +455,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -554,6 +583,7 @@ The following is an example of the incoming call notification that a bot would r
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",

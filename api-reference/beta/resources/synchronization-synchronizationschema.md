@@ -1,4 +1,4 @@
----
+﻿---
 title: "synchronizationSchema resource type"
 description: "Defines what objects will be synchronized and how they will be synchronized."
 localization_priority: Normal
@@ -32,31 +32,32 @@ The following sections describe the high-level components of the synchronization
 ## Methods
 
 | Method                                                                                                | Return Type                                                                                                 | Description                                                                                                                |
-|:------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
+| :---------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | [Get schema](../api/synchronization-synchronizationschema-get.md)                                     | [synchronizationSchema](synchronization-synchronizationschema.md)                                           | Read properties and relationships of the **synchronizationSchema** object.                                                 |
 | [Update schema](../api/synchronization-synchronizationschema-update.md)                               | None                                                                                                        | Update the synchronization schema.                                                                                         |
 | [Delete schema](../api/synchronization-synchronizationschema-delete.md)                               | None                                                                                                        | Delete the customized schema, resetting the schema to the default configuration.                                           |
-| [List filter operators](../api/synchronization-synchronizationschema-filteroperators.md)              | [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) collection                      | List all operators supported in the scoping filters.                                                                       |
+| [List filter operators](../api/synchronization-synchronizationschema-filteroperators.md)              | [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) collection                     | List all operators supported in the scoping filters.                                                                       |
 | [List attribute mapping functions](../api/synchronization-synchronizationschema-functions.md)         | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection | List all functions supported in the attribute mapping expressions.                                                         |
 | [Parse attribute mapping expression](../api/synchronization-synchronizationschema-parseexpression.md) | [parseExpressionResponse](synchronization-parseexpressionresponse.md)                                       | Parse a string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object. |
 
-
 ## Properties
 
-| Property      | Type      | Description    |
-|:--------------|:----------|:---------------|
-|id|String|Unique identifier for the schema.|
-|synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md) collection   |A collection of synchronization rules configured for the [synchronizationJob](synchronization-synchronizationjob.md) or [synchronizationTemplate](synchronization-synchronizationtemplate.md). |
-|version                |String                             |The version of the schema, updated automatically with every schema change.|
-
+| Property             | Type                                                                     | Description                                                                                                                                                                                    |
+| :------------------- | :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | String                                                                   | Unique identifier for the schema.                                                                                                                                                              |
+| synchronizationRules | [synchronizationRule](synchronization-synchronizationrule.md) collection | A collection of synchronization rules configured for the [synchronizationJob](synchronization-synchronizationjob.md) or [synchronizationTemplate](synchronization-synchronizationtemplate.md). |
+| version              | String                                                                   | The version of the schema, updated automatically with every schema change.                                                                                                                     |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|directories|[directoryDefinition](../resources/synchronization-directorydefinition.md) collection|Contains the collection of directories and all of their objects.|
+
+| Relationship | Type                                                                                  | Description                                                      |
+| :----------- | :------------------------------------------------------------------------------------ | :--------------------------------------------------------------- |
+| directories  | [directoryDefinition](../resources/synchronization-directorydefinition.md) collection | Contains the collection of directories and all of their objects. |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -65,7 +66,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.synchronizationSchema",
   "id": "String (identifier)",
@@ -77,5 +79,3 @@ The following is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-

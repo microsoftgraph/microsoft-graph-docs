@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create androidDeviceOwnerVpnConfiguration"
 description: "Create a new androidDeviceOwnerVpnConfiguration object."
 author: "dougeby"
@@ -18,71 +18,77 @@ Namespace: microsoft.graph
 Create a new [androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/deviceConfigurations
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the androidDeviceOwnerVpnConfiguration object.
 
 The following table shows the properties that are required when you create the androidDeviceOwnerVpnConfiguration.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
-|connectionName|String|Connection name displayed to the user. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|role|String|Role when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|realm|String|Realm when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.|
-|proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy server.|
-|targetedPackageIds|String collection|Targeted App package IDs.|
-|targetedMobileApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Targeted mobile apps. This collection can contain a maximum of 500 elements.|
-|alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
-|alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
-|microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
-
-
+| Property                                    | Type                                                                                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                                          | String                                                                                                                         | Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                                  |
+| lastModifiedDateTime                        | DateTimeOffset                                                                                                                 | DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                              |
+| roleScopeTagIds                             | String collection                                                                                                              | List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                        |
+| supportsScopeTags                           | Boolean                                                                                                                        | Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) |
+| deviceManagementApplicabilityRuleOsEdition  | [deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)   | The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                       |
+| deviceManagementApplicabilityRuleOsVersion  | [deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)   | The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                  |
+| deviceManagementApplicabilityRuleDeviceMode | [deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md) | The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                 |
+| createdDateTime                             | DateTimeOffset                                                                                                                 | DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                    |
+| description                                 | String                                                                                                                         | Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                             |
+| displayName                                 | String                                                                                                                         | Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                    |
+| version                                     | Int32                                                                                                                          | Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                |
+| authenticationMethod                        | [vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)                                         | Authentication method. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.                                                                                                                                                                                                                                                                  |
+| connectionName                              | String                                                                                                                         | Connection name displayed to the user. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)                                                                                                                                                                                                                                                                                                                                                              |
+| role                                        | String                                                                                                                         | Role when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)                                                                                                                                                                                                                                                                                                                                                   |
+| realm                                       | String                                                                                                                         | Realm when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)                                                                                                                                                                                                                                                                                                                                                  |
+| servers                                     | [vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection                                                          | List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)                                                                                                                                                                                                                                                  |
+| connectionType                              | [androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)                                       | Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.                                                                                                                                                                                                                                                                                                                  |
+| proxyServer                                 | [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)                                                           | Proxy server.                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| targetedPackageIds                          | String collection                                                                                                              | Targeted App package IDs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| targetedMobileApps                          | [appListItem](../resources/intune-deviceconfig-applistitem.md) collection                                                      | Targeted mobile apps. This collection can contain a maximum of 500 elements.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| alwaysOn                                    | Boolean                                                                                                                        | Whether or not to enable always-on VPN connection.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| alwaysOnLockdown                            | Boolean                                                                                                                        | If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.                                                                                                                                                                                                                                                                                                                                                                               |
+| microsoftTunnelSiteId                       | String                                                                                                                         | Microsoft Tunnel site ID.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 2077
@@ -155,8 +161,10 @@ Content-length: 2077
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 2249
@@ -230,9 +238,3 @@ Content-Length: 2249
   "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
-
-
-
-
-
-

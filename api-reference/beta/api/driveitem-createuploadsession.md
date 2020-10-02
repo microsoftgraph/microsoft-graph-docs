@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Upload large files with an upload session
 
 Namespace: microsoft.graph
@@ -25,11 +26,11 @@ To upload a file using an upload session, there are two steps:
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                      |
+| Application                            | Sites.ReadWrite.All                                       |
 
 ## Create an upload session
 
@@ -56,7 +57,9 @@ No request body is required.
 However, you can specify properties in the request body providing additional data about the file being uploaded and customizing the semantics of the upload operation.
 
 For example, the `item` property allows setting the following parameters:
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+
 ```json
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
@@ -69,6 +72,7 @@ For example, the `item` property allows setting the following parameters:
 The following example controls the behavior if the filename is already taken, and also specifies that the final file should not be created until an explicit completion request is made:
 
 <!-- { "blockType": "ignored" } -->
+
 ```json
 {
   "item": {
@@ -80,16 +84,16 @@ The following example controls the behavior if the filename is already taken, an
 
 ### Optional request headers
 
-| Name       | Value | Description                                                                                                                                                            |
-|:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name       | Value | Description                                                                                                                                                             |
+| :--------- | :---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` error response is returned. |
 
 ## Parameters
 
-| Parameter            | Type                          | Description
-|:---------------------|:------------------------------|:---------------------------------
-| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded
-| deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
+| Parameter   | Type                                                                           | Description                                                                                                                    |
+| :---------- | :----------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| item        | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded                                                                                             |
+| deferCommit | Boolean                                                                        | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business. |
 
 ### Request
 
@@ -218,7 +222,6 @@ If `deferCommit` is true, you can explicitly complete the upload in two ways:
 - After the final byte range of the file is PUT to the upload URL, send a final POST request to the upload URL with zero-length content (currently only supported on OneDrive for Business and SharePoint).
 - After the final byte range of the file is PUT to the upload URL, send a final PUT request in the same way that you would [handle upload errors](#handle-upload-errors) (currently only supported on OneDrive Personal).
 
-
 When the upload is completed, the server will respond to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
 The response body will also include the default property set for the **driveItem** representing the completed file.
 
@@ -245,7 +248,6 @@ Content-Type: application/json
   "file": { }
 }
 ```
-
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
 
@@ -424,5 +426,3 @@ how errors are returned.
   "suppressions": []
 }
 -->
-
-

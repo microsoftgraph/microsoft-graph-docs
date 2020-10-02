@@ -1,4 +1,4 @@
----
+﻿---
 title: "wipeManagedAppRegistrationsByDeviceTag action"
 description: "Issues a wipe operation on an app registration with specified device tag."
 author: "dougeby"
@@ -21,13 +21,13 @@ Issues a wipe operation on an app registration with specified device tag.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)||
-| &nbsp; &nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application||
-| &nbsp; &nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     |                                             |
+| &nbsp; &nbsp; **MAM**                  | DeviceManagementApps.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            |                                             |
+| &nbsp; &nbsp; **MAM**                  | DeviceManagementApps.ReadWrite.All          |
 
 ## HTTP Request
 
@@ -35,16 +35,17 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 ```
 
 ## Request headers
 
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
 
@@ -52,9 +53,9 @@ In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|deviceTag|String|device tag|
+| Property  | Type   | Description |
+| :-------- | :----- | :---------- |
+| deviceTag | String | device tag  |
 
 ## Response
 
@@ -66,7 +67,7 @@ If successful, this action returns a `204 No Content` response code.
 
 Here is an example of the request.
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 
 Content-type: application/json
@@ -81,21 +82,6 @@ Content-length: 39
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "recipient resource type"
 description: "Represents information about a user in the sending or receiving end of an event, message or group post. "
 localization_priority: Normal
@@ -16,9 +16,10 @@ Namespace: microsoft.graph
 Represents information about a user in the sending or receiving end of an event, message or group post.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|emailAddress|[EmailAddress](emailaddress.md)|The recipient's email address.|
+
+| Property     | Type                            | Description                    |
+| :----------- | :------------------------------ | :----------------------------- |
+| emailAddress | [EmailAddress](emailaddress.md) | The recipient's email address. |
 
 ## JSON representation
 
@@ -41,6 +42,7 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -51,5 +53,3 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
-
-

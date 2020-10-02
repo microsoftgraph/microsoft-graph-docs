@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update profileCardProperty"
 description: "Update the properties of a profileCardProperty object."
 localization_priority: Normal
@@ -20,7 +20,7 @@ Update the properties of a [profileCardProperty](../resources/profilecardpropert
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
@@ -37,19 +37,19 @@ PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pr
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|annotations|profileCardAnnotation collection| Contains any alternative or localized labels an administrator has chosen to specify.|
-|directoryPropertyName|String|Contains the name of the directory property which is intended to surface on the profile card. |
+| Property              | Type                             | Description                                                                                   |
+| :-------------------- | :------------------------------- | :-------------------------------------------------------------------------------------------- |
+| annotations           | profileCardAnnotation collection | Contains any alternative or localized labels an administrator has chosen to specify.          |
+| directoryPropertyName | String                           | Contains the name of the directory property which is intended to surface on the profile card. |
 
 ## Response
 
@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 The following example adds a localized label "Kostnads Senter" for the locale "no-NB".
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_profilecardproperty"
@@ -84,20 +85,23 @@ Content-type: application/json
   ]
 }
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilecardproperty-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-profilecardproperty-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-profilecardproperty-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -137,6 +141,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update profilecardproperty",
@@ -144,5 +149,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

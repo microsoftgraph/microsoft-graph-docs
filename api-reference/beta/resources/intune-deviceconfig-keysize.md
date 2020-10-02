@@ -1,4 +1,4 @@
----
+﻿---
 title: "keySize enum type"
 description: "Key Size Options."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Key Size Options.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|size1024|0|1024 Bits.|
-|size2048|1|2048 Bits.|
-|size4096|2|4096 Bits.|
 
-
-
-
-
-
+| Member   | Value | Description |
+| :------- | :---- | :---------- |
+| size1024 | 0     | 1024 Bits.  |
+| size2048 | 1     | 2048 Bits.  |
+| size4096 | 2     | 4096 Bits.  |

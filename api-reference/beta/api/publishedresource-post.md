@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create publishedResource"
 description: "Create a new **publishedResource** object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new [publishedResource](../resources/publishedresource.md) object.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All  |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -35,8 +35,8 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -45,10 +45,10 @@ In the request body, supply a JSON representation of a [publishedResource](../re
 
 Supply the values for the following properties.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String|Display Name of the publishedResource.|
-|resourceName|String|Name of the publishedResource.|
+| Property     | Type   | Description                            |
+| :----------- | :----- | :------------------------------------- |
+| displayName  | String | Display Name of the publishedResource. |
+| resourceName | String | Name of the publishedResource.         |
 
 ## Response
 
@@ -61,6 +61,7 @@ If successful, this method returns a `201 Created` response code and [publishedR
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_publishedresource_from_onpremisespublishingprofile"
@@ -75,20 +76,23 @@ Content-Type: application/json
     "resourceName": "domain1.contoso.com"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-publishedresource-from-onpremisespublishingprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-publishedresource-from-onpremisespublishingprofile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-publishedresource-from-onpremisespublishingprofile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -115,6 +119,7 @@ HTTP/1.1 201 Created
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get publishedResource",
@@ -122,5 +127,3 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "The presence of the accessAction resource on an itemActivity indicates that the activity accessed an item."
 ms.date: 09/12/2018
@@ -7,11 +7,10 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
 ---
+
 # accessAction resource type
 
 Namespace: microsoft.graph
-
-
 
 The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.
 
@@ -36,7 +35,6 @@ This resource type has no properties.
 }
 ```
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -47,5 +45,3 @@ This resource type has no properties.
   "suppressions": []
 }
 -->
-
-

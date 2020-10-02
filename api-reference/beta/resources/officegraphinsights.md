@@ -1,4 +1,4 @@
----
+﻿---
 title: "officeGraphInsights resource type"
 description: "Represents the base type for itemInsights. officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API."
 author: "simonhult"
@@ -29,16 +29,16 @@ Each insight is returned with a **resourceVisualization** and **resourceReferenc
 
 ## Relationships
 
-| Relationship      | Type          | Description  |
-| ------------- |---------------| -------------|
-| trending    	| [trending](insights-trending.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md).|
-| used    	| [usedInsight](insights-used.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md).|
-| shared    	| [sharedInsight](insights-shared.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md).|
-
+| Relationship | Type                                           | Description                                                                 |
+| ------------ | ---------------------------------------------- | --------------------------------------------------------------------------- |
+| trending     | [trending](insights-trending.md) collection    | Access this property from the derived type [itemInsights](iteminsights.md). |
+| used         | [usedInsight](insights-used.md) collection     | Access this property from the derived type [itemInsights](iteminsights.md). |
+| shared       | [sharedInsight](insights-shared.md) collection | Access this property from the derived type [itemInsights](iteminsights.md). |
 
 ## JSON representation
 
 Here is a JSON representation of the resource
+
 <!-- {
   "blockType": "resource",
   "keyProperty":"id",
@@ -59,6 +59,3 @@ Here is a JSON representation of the resource
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
-
-
-

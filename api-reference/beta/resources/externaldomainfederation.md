@@ -1,4 +1,4 @@
----
+﻿---
 title: "externalDomainFederation resource type"
 description: "The externalDomainFederation type identifies a non-tenant domain with a configured identity provider as an identity source for a connected organization."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Used in the identity sources of an [connectedOrganization](connectedOrganization
 
 ## Properties
 
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| displayName |String | The name of the identity source, typically also the domain name. Read only. |
-| domainName |String | The domain name. Read only. |
-| issuerUri |String | The issuerURI of the incoming federation. Read only. |
+| Property    | Type   | Description                                                                 |
+| :---------- | :----- | :-------------------------------------------------------------------------- |
+| displayName | String | The name of the identity source, typically also the domain name. Read only. |
+| domainName  | String | The domain name. Read only.                                                 |
+| issuerUri   | String | The issuerURI of the incoming federation. Read only.                        |
 
 ## Relationships
 
@@ -50,6 +50,7 @@ The following is a JSON representation of the type.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "externalDomainFederation resource type",
@@ -57,5 +58,3 @@ The following is a JSON representation of the type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update onPremisesPublishingProfile"
 description: "Update the properties of an onPremisesPublishingProfile object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Update the properties of an [onPremisesPublishingProfile](../resources/onpremise
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:--------------------------------------|:---------------------------------------------------------|
-| Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All  |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -35,17 +35,17 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
 
 In the request body, supply the values for relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|hybridAgentUpdaterConfiguration|hybridAgentUpdaterConfiguration|Represents [hybridAgentUpdaterConfiguration](../resources/hybridagentupdaterconfiguration.md).|
+| Property                        | Type                            | Description                                                                                    |
+| :------------------------------ | :------------------------------ | :--------------------------------------------------------------------------------------------- |
+| hybridAgentUpdaterConfiguration | hybridAgentUpdaterConfiguration | Represents [hybridAgentUpdaterConfiguration](../resources/hybridagentupdaterconfiguration.md). |
 
 ## Response
 
@@ -62,6 +62,7 @@ The following example updates the **updateWindow** in the **hybridAgentUpdaterCo
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_onpremisespublishingprofile"
@@ -79,20 +80,23 @@ Content-Type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-onpremisespublishingprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-onpremisespublishingprofile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-onpremisespublishingprofile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -113,6 +117,7 @@ The following example updates **deferUpdate** in the **hybridAgentUpdaterConfigu
 #### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_onpremisespublishingprofile"
@@ -146,6 +151,7 @@ The following example updates **allowUpdateConfigurationOverride** in the **hybr
 #### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_onpremisespublishingprofile"
@@ -174,6 +180,7 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update onpremisespublishingprofile",
@@ -181,5 +188,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

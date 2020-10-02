@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppFlaggedReason enum type"
 description: "The reason for which a user has been flagged"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 The reason for which a user has been flagged
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|No issue.|
-|rootedDevice|1|The app registration is running on a rooted/unlocked device.|
-|androidBootloaderUnlocked|2|The app registration is running on an Android device on which the bootloader is unlocked.|
-|androidFactoryRomModified|3|The app registration is running on an Android device on which the factory ROM has been modified.|
 
-
-
-
-
-
+| Member                    | Value | Description                                                                                      |
+| :------------------------ | :---- | :----------------------------------------------------------------------------------------------- |
+| none                      | 0     | No issue.                                                                                        |
+| rootedDevice              | 1     | The app registration is running on a rooted/unlocked device.                                     |
+| androidBootloaderUnlocked | 2     | The app registration is running on an Android device on which the bootloader is unlocked.        |
+| androidFactoryRomModified | 3     | The app registration is running on an Android device on which the factory ROM has been modified. |

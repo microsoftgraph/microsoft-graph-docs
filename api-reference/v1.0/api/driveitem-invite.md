@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -8,6 +8,7 @@ ms.prod: "sharepoint"
 description: "Sends a sharing invitation for a driveItem."
 doc_type: apiPageType
 ---
+
 # Send a sharing invitation
 
 Namespace: microsoft.graph
@@ -19,11 +20,11 @@ A sharing invitation provides permissions to the recipients and optionally sends
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                      |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -56,15 +57,15 @@ In the request body, provide a JSON object with the following parameters.
 }
 ```
 
-| Parameter        | Type                           | Description
-|:-----------------|:-------------------------------|:-------------------------
-| recipients       | Collection([DriveRecipient][]) | A collection of recipients who will receive access and the sharing invitation.
-| message          | String                         | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.
-| requireSignIn    | Boolean                        | Specifies whether the recipient of the invitation is required to sign-in to view the shared item.
-| sendInvitation   | Boolean                        | If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.
-| roles            | Collection(String)             | Specify the roles that are to be granted to the recipients of the sharing invitation.
-| expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
-| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only.
+| Parameter          | Type                           | Description                                                                                                                                      |
+| :----------------- | :----------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| recipients         | Collection([DriveRecipient][]) | A collection of recipients who will receive access and the sharing invitation.                                                                   |
+| message            | String                         | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.                                       |
+| requireSignIn      | Boolean                        | Specifies whether the recipient of the invitation is required to sign-in to view the shared item.                                                |
+| sendInvitation     | Boolean                        | If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.                |
+| roles              | Collection(String)             | Specify the roles that are to be granted to the recipients of the sharing invitation.                                                            |
+| expirationDateTime | DateTimeOffset                 | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts. |
+| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only.                                                              |
 
 ## Example
 
@@ -75,8 +76,8 @@ The invitation grants Ryan read-write access to the file.
 
 If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
 ```json
@@ -97,24 +98,28 @@ Content-type: application/json
   "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/send-sharing-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -158,7 +163,6 @@ Content-type: application/json
 Read the [Error Responses][error-response] topic for more information about
 how errors are returned.
 
-
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
 [sharing link]: ../resources/permission.md#sharing-links
@@ -172,4 +176,3 @@ how errors are returned.
   "suppressions": [
   ]
 } -->
-

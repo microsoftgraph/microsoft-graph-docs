@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOSFirewallApplication resource type"
 description: "Represents an app in the list of macOS firewall applications"
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Represents an app in the list of macOS firewall applications
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|bundleId|String|BundleId of the application.|
-|allowsIncomingConnections|Boolean|Whether or not incoming connections are allowed.|
+
+| Property                  | Type    | Description                                      |
+| :------------------------ | :------ | :----------------------------------------------- |
+| bundleId                  | String  | BundleId of the application.                     |
+| allowsIncomingConnections | Boolean | Whether or not incoming connections are allowed. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOSFirewallApplication"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.macOSFirewallApplication",
   "bundleId": "String",
   "allowsIncomingConnections": true
 }
 ```
-
-
-
-
-
-

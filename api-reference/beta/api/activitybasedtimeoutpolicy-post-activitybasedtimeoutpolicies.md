@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create activityBasedTimeoutPolicy"
 description: "Create a new activityBasedTimeoutPolicy."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolic
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration   |
 
 ## HTTP request
 
@@ -35,10 +35,10 @@ POST policies/activityBasedTimeoutPolicies
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token} |
-| Content-type | application/json |
+| Name          | Description      |
+| :------------ | :--------------- |
+| Authorization | Bearer {token}   |
+| Content-type  | application/json |
 
 ## Request body
 
@@ -55,6 +55,7 @@ If successful, this method returns a `201 Created` response code and a new [acti
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_activitybasedtimeoutpolicy_from_activitybasedtimeoutpolicies"
@@ -72,20 +73,23 @@ Content-type: application/json
   "isOrganizationDefault": true
 }
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -115,6 +119,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create activityBasedTimeoutPolicy",
@@ -122,5 +127,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

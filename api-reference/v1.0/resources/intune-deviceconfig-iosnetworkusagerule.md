@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosNetworkUsageRule resource type"
 description: "Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks."
 author: "dougeby"
@@ -16,23 +16,28 @@ Namespace: microsoft.graph
 Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|managedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Information about the managed apps that this rule is going to apply to. This collection can contain a maximum of 500 elements.|
-|cellularDataBlockWhenRoaming|Boolean|If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.|
-|cellularDataBlocked|Boolean|If set to true, corresponding managed apps will not be allowed to use cellular data at any time.|
+
+| Property                     | Type                                                                      | Description                                                                                                                    |
+| :--------------------------- | :------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------- |
+| managedApps                  | [appListItem](../resources/intune-deviceconfig-applistitem.md) collection | Information about the managed apps that this rule is going to apply to. This collection can contain a maximum of 500 elements. |
+| cellularDataBlockWhenRoaming | Boolean                                                                   | If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.                              |
+| cellularDataBlocked          | Boolean                                                                   | If set to true, corresponding managed apps will not be allowed to use cellular data at any time.                               |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosNetworkUsageRule"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosNetworkUsageRule",
   "managedApps": [
@@ -48,12 +53,3 @@ Here is a JSON representation of the resource.
   "cellularDataBlocked": true
 }
 ```
-
-
-
-
-
-
-
-
-

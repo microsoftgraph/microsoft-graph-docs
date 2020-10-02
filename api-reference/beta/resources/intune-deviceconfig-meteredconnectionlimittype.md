@@ -1,4 +1,4 @@
----
+﻿---
 title: "meteredConnectionLimitType enum type"
 description: "Metered Connection Limit Settings."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Metered Connection Limit Settings.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unrestricted|0|Unrestricted|
-|fixed|1|Fixed|
-|variable|2|Variable|
 
-
-
-
-
-
+| Member       | Value | Description  |
+| :----------- | :---- | :----------- |
+| unrestricted | 0     | Unrestricted |
+| fixed        | 1     | Fixed        |
+| variable     | 2     | Variable     |

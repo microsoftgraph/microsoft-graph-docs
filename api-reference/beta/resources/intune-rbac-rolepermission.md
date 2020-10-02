@@ -1,4 +1,4 @@
----
+﻿---
 title: "rolePermission resource type"
 description: "Contains the set of ResourceActions determining the allowed and not allowed permissions for each role."
 author: "dougeby"
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 Contains the set of ResourceActions determining the allowed and not allowed permissions for each role.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|actions|String collection|Allowed Actions - Deprecated|
-|resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) collection|Resource Actions each containing a set of allowed and not allowed permissions.|
+
+| Property        | Type                                                                    | Description                                                                    |
+| :-------------- | :---------------------------------------------------------------------- | :----------------------------------------------------------------------------- |
+| actions         | String collection                                                       | Allowed Actions - Deprecated                                                   |
+| resourceActions | [resourceAction](../resources/intune-rbac-resourceaction.md) collection | Resource Actions each containing a set of allowed and not allowed permissions. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rolePermission"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.rolePermission",
   "actions": [
@@ -52,9 +57,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

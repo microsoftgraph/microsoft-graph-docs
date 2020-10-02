@@ -1,4 +1,4 @@
----
+﻿---
 title: "user: findMeetingTimes"
 description: "Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters."
 localization_priority: Priority
@@ -18,52 +18,55 @@ Based on this value, you can better adjust the parameters and call **findMeeting
 
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time. In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read.Shared, Calendars.ReadWrite.Shared    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged)       |
+| :------------------------------------- | :------------------------------------------------ |
+| Delegated (work or school account)     | Calendars.Read.Shared, Calendars.ReadWrite.Shared |
+| Delegated (personal Microsoft account) | Not supported.                                    |
+| Application                            | Not supported.                                    |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/findMeetingTimes
 POST /users/{id|userPrincipalName}/findMeetingTimes
 ```
+
 ## Request headers
-| Name       | Value|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | A string representing a specific time zone for the response, for example, "Pacific Standard Time". Optional. UTC is used if this header is not specified.|
+
+| Name                     | Value                                                                                                                                                     |
+| :----------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization            | Bearer {token}. Required.                                                                                                                                 |
+| Prefer: outlook.timezone | A string representing a specific time zone for the response, for example, "Pacific Standard Time". Optional. UTC is used if this header is not specified. |
 
 ## Request body
+
 All the supported parameters are listed below. Depending on your scenario, specify a JSON object for each of the necessary parameters in the request body. 
 
-
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) collection|A collection of attendees or resources for the meeting. Since findMeetingTimes assumes that any attendee who is a person is always required, specify `required` for a person and `resource` for a resource in the corresponding **type** property. An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer. Optional.|
-|isOrganizerOptional|Edm.Boolean|Specify `True` if the organizer doesn't necessarily have to attend. The default is `false`. Optional.|
-|locationConstraint|[locationConstraint](../resources/locationconstraint.md)|The organizer's requirements about the meeting location, such as whether a suggestion for a meeting location is required, or there are specific locations only where the meeting can take place. Optional.|
-|maxCandidates|Edm.Int32|The maximum number of meeting time suggestions to be returned. Optional.|
-|meetingDuration|Edm.Duration|The length of the meeting, denoted in [ISO8601](https://www.iso.org/iso/iso8601) format. For example, 1 hour is denoted as 'PT1H', where 'P' is the duration designator, 'T' is the time designator, and 'H' is the hour designator. Use M to indicate minutes for the duration; for example, 2 hours and 30 minutes would be 'PT2H30M'. If no meeting duration is specified, **findMeetingTimes** uses the default of 30 minutes. Optional.|
-|minimumAttendeePercentage|Edm.Double| The minimum required [confidence](#the-confidence-of-a-meeting-suggestion) for a time slot to be returned in the response. It is a % value ranging from 0 to 100. Optional.|
-|returnSuggestionReasons|Edm.Boolean|Specify `True` to return a reason for each meeting suggestion in the **suggestionReason** property. The default is `false` to not return that property. Optional.|
-|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Any time restrictions for a meeting, which can include the nature of the meeting (**activityDomain** property) and possible meeting time periods (**timeSlots** property). **findMeetingTimes** assumes **activityDomain** as `work` if you don't specify this parameter. Optional.|
+| Parameter                 | Type                                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| :------------------------ | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| attendees                 | [attendeeBase](../resources/attendeebase.md) collection  | A collection of attendees or resources for the meeting. Since findMeetingTimes assumes that any attendee who is a person is always required, specify `required` for a person and `resource` for a resource in the corresponding **type** property. An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer. Optional.                                                                             |
+| isOrganizerOptional       | Edm.Boolean                                              | Specify `True` if the organizer doesn't necessarily have to attend. The default is `false`. Optional.                                                                                                                                                                                                                                                                                                                                        |
+| locationConstraint        | [locationConstraint](../resources/locationconstraint.md) | The organizer's requirements about the meeting location, such as whether a suggestion for a meeting location is required, or there are specific locations only where the meeting can take place. Optional.                                                                                                                                                                                                                                   |
+| maxCandidates             | Edm.Int32                                                | The maximum number of meeting time suggestions to be returned. Optional.                                                                                                                                                                                                                                                                                                                                                                     |
+| meetingDuration           | Edm.Duration                                             | The length of the meeting, denoted in [ISO8601](https://www.iso.org/iso/iso8601) format. For example, 1 hour is denoted as 'PT1H', where 'P' is the duration designator, 'T' is the time designator, and 'H' is the hour designator. Use M to indicate minutes for the duration; for example, 2 hours and 30 minutes would be 'PT2H30M'. If no meeting duration is specified, **findMeetingTimes** uses the default of 30 minutes. Optional. |
+| minimumAttendeePercentage | Edm.Double                                               | The minimum required [confidence](#the-confidence-of-a-meeting-suggestion) for a time slot to be returned in the response. It is a % value ranging from 0 to 100. Optional.                                                                                                                                                                                                                                                                  |
+| returnSuggestionReasons   | Edm.Boolean                                              | Specify `True` to return a reason for each meeting suggestion in the **suggestionReason** property. The default is `false` to not return that property. Optional.                                                                                                                                                                                                                                                                            |
+| timeConstraint            | [timeConstraint](../resources/timeconstraint.md)         | Any time restrictions for a meeting, which can include the nature of the meeting (**activityDomain** property) and possible meeting time periods (**timeSlots** property). **findMeetingTimes** assumes **activityDomain** as `work` if you don't specify this parameter. Optional.                                                                                                                                                          |
 
 The following table describes the **activityDomain** restrictions you can further specify in the **timeConstraint** parameter.
 
-|activityDomain value|Suggestions for meeting times|
-|:-----|:-----|
-|work| Suggestions are within the user's work hours which are defined in the user’s calendar configuration and can be customized by the user or administrator. The default work hours are Monday to Friday, 8am to 5pm in the time zone set for the mailbox. This is the default value if no **activityDomain** is specified. |
-|personal| Suggestions are within the user's work hours, and Saturday and Sunday. The default is Monday to Sunday, 8am to 5pm, in the time zone setting for the mailbox.|
-|unrestricted | Suggestions can be from all hours of a day, all days of a week.|
-|unknown | Do not use this value as it will be deprecated in the future. Currently behaves the same as `work`. Change any existing code to use `work`, `personal` or `unrestricted` as appropriate.
-
+| activityDomain value | Suggestions for meeting times                                                                                                                                                                                                                                                                                          |
+| :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| work                 | Suggestions are within the user's work hours which are defined in the user’s calendar configuration and can be customized by the user or administrator. The default work hours are Monday to Friday, 8am to 5pm in the time zone set for the mailbox. This is the default value if no **activityDomain** is specified. |
+| personal             | Suggestions are within the user's work hours, and Saturday and Sunday. The default is Monday to Sunday, 8am to 5pm, in the time zone setting for the mailbox.                                                                                                                                                          |
+| unrestricted         | Suggestions can be from all hours of a day, all days of a week.                                                                                                                                                                                                                                                        |
+| unknown              | Do not use this value as it will be deprecated in the future. Currently behaves the same as `work`. Change any existing code to use `work`, `personal` or `unrestricted` as appropriate.                                                                                                                               |
 
 Based on the specified parameters,**findMeetingTimes** checks the free/busy status in the primary calendars of the organizer and attendees. The action 
 calculates the best possible meeting times, and returns any meeting suggestions.
@@ -97,11 +100,11 @@ high to low. If there are suggestions with the same confidence, the action then 
 
 As an example, if a meeting time suggestion involves 3 attendees with the following free/busy status:
 
-|**Attendee**|**Free/busy status**|**% Chance of attendance**|
-|:-----|:-----|:-----|
-|Dana | Free | 100% |
-|John | Unknown | 49% |
-|Samantha | Busy | 0% |
+| **Attendee** | **Free/busy status** | **% Chance of attendance** |
+| :----------- | :------------------- | :------------------------- |
+| Dana         | Free                 | 100%                       |
+| John         | Unknown              | 49%                        |
+| Samantha     | Busy                 | 0%                         |
 
 Then the confidence of the meeting time suggestion, which is the average chance of attendance, is (100% + 49% + 0%)/3 = 49.66%.
 
@@ -124,13 +127,16 @@ By setting the **returnSuggestionReasons** parameter, you also get an explanatio
 Notice that the request specifies time in the PST time zone. By default, the response returns meeting time suggestions in UTC. You can use the `Prefer: outlook.timezone` request header to specify PST as well for the time values in the response.
 
 ##### Request
+
 Here is the example request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_findmeetingtimes"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/findMeetingTimes
 Prefer: outlook.timezone="Pacific Standard Time"
@@ -177,33 +183,40 @@ Content-Type: application/json
   "minimumAttendeePercentage": "100"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-findmeetingtimes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-findmeetingtimes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/user-findmeetingtimes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/user-findmeetingtimes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -374,6 +387,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "user: findMeetingTimes",
@@ -389,4 +403,3 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   ],
   "tocPath": ""
 }-->
-

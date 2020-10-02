@@ -1,4 +1,4 @@
----
+﻿---
 title: "ndesConnectorState enum type"
 description: "The current status of the Ndes Connector."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 The current status of the Ndes Connector.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|State not available yet for this connector.|
-|active|1|Ndes connector has connected recently|
-|inactive|2|No recent activity for the Ndes connector|
 
-
-
-
-
-
+| Member   | Value | Description                                 |
+| :------- | :---- | :------------------------------------------ |
+| none     | 0     | State not available yet for this connector. |
+| active   | 1     | Ndes connector has connected recently       |
+| inactive | 2     | No recent activity for the Ndes connector   |

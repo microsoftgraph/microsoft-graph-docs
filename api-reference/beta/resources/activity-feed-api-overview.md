@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the activity feed REST API"
 description: "You can use the activity feed API in Microsoft Graph to resume a user's activity across devices and platforms. Activity feed API requests are performed on behalf of a user via delegated permissions and the user activity permission, which can be used with either personal or work and school accounts. "
 localization_priority: Normal
@@ -13,13 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
 You can use the activity feed API in Microsoft Graph to resume a user's activity across devices and platforms. Activity feed API requests are performed on behalf of a user via [delegated permissions](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) and the [user activity permission](/graph/permissions-reference), which can be used with either personal or work and school accounts.
 
 User activities are represented by the [activity](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/projectrome_activity) resource and are organized in a time-based feed represented by the collection me/activities.
+
 <!-- Add missing content.
 Each activity represents a unique...
 -->
+
 ## What makes a great user activity?
 
 User activities don’t just launch apps — they are deep links into specific content within your app. The user activities you create can not only be used in your own app, but will also appear in Cortana and Windows Timeline — driving more app reengagement and making it easier for your users to continue using your app across multiple devices.
@@ -51,6 +52,7 @@ If someone sends the user a message, or @mentions the user within your app, you 
 >**Note:** If you're publishing activities for a web application, it's important to include both an `activationURL` and a `fallbackURL` for each of your activities. The activities will launch the user back into your app as expected from Microsoft experiences like Windows Timeline.
 
 ## App interaction patterns and user activities
+
 The user activities that you create will vary based on the interaction pattern of your app. While every app is different, most will fall into one of the following interaction patterns:
 
 * **Document-based apps** — Create one activity per document with one or more history records reflecting periods of use. It is important to update your activity card as changes are made to the document.
@@ -75,5 +77,3 @@ The user activities that you create will vary based on the interaction pattern o
 
 - See [how Microsoft experiences are using activities](https://channel9.msdn.com/events/Build/2017/B8108).
 - Learn about [the activity feed API and pick up where I left off](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
-
-

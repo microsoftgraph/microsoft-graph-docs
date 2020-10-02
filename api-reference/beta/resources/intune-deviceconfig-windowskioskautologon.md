@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskAutologon resource type"
 description: "The class used to identify an autologon kiosk configuration"
 author: "dougeby"
@@ -17,31 +17,29 @@ Namespace: microsoft.graph
 
 The class used to identify an autologon kiosk configuration
 
-
 Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskAutologon"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskAutologon"
 }
 ```
-
-
-
-
-
-

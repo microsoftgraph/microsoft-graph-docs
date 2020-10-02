@@ -1,4 +1,4 @@
----
+﻿---
 title: "diffieHellmanGroup enum type"
 description: "Diffie Hellman Group values for Windows10 VPN policies with IKEv2 connection type."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Diffie Hellman Group values for Windows10 VPN policies with IKEv2 connection type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|group1|0|Group1|
-|group2|1|Group2|
-|group14|2|Group14|
-|ecp256|3|ECP256|
-|ecp384|4|ECP384|
-|group24|5|Group24|
 
-
-
-
-
-
+| Member  | Value | Description |
+| :------ | :---- | :---------- |
+| group1  | 0     | Group1      |
+| group2  | 1     | Group2      |
+| group14 | 2     | Group14     |
+| ecp256  | 3     | ECP256      |
+| ecp384  | 4     | ECP384      |
+| group24 | 5     | Group24     |

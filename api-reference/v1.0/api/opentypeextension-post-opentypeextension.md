@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create open extension"
 description: "Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource."
 localization_priority: Priority
@@ -19,18 +19,17 @@ Create an open extension ([openTypeExtension](../resources/opentypeextension.md)
 
 Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
-| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
-| [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
-| [group post](../resources/post.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
-| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
-| [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-
+| Supported resource                           | Delegated (work or school account) | Delegated (personal Microsoft account) | Application                |
+| :------------------------------------------- | :--------------------------------- | :------------------------------------- | :------------------------- |
+| [device](../resources/device.md)             | Directory.AccessAsUser.All         | Not supported                          | Device.ReadWrite.All       |
+| [event](../resources/event.md)               | Calendars.ReadWrite                | Calendars.ReadWrite                    | Calendars.ReadWrite        |
+| [group](../resources/group.md)               | Group.ReadWrite.All                | Not supported                          | Group.ReadWrite.All        |
+| [group event](../resources/event.md)         | Group.ReadWrite.All                | Not supported                          | Not supported              |
+| [group post](../resources/post.md)           | Group.ReadWrite.All                | Not supported                          | Group.ReadWrite.All        |
+| [message](../resources/message.md)           | Mail.ReadWrite                     | Mail.ReadWrite                         | Mail.ReadWrite             |
+| [organization](../resources/organization.md) | Organization.ReadWrite.All         | Not supported                          | Organization.ReadWrite.All |
+| [personal contact](../resources/contact.md)  | Contacts.ReadWrite                 | Contacts.ReadWrite                     | Contacts.ReadWrite         |
+| [user](../resources/user.md)                 | User.ReadWrite                     | User.ReadWrite                         | User.ReadWrite.All         |
 
 ## HTTP request
 
@@ -39,6 +38,7 @@ Depending on the resource you're creating the extension in and the permission ty
 Use the same REST request that you use to create the instance.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /users/{id|userPrincipalName}/events
 POST /users/{id|userPrincipalName}/messages
@@ -57,6 +57,7 @@ See the [Request body](#request-body) section about including the properties of 
 Identify the resource instance in the request and do a `POST` to the **extensions** navigation property.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /devices/{id}/extensions
 POST /users/{id|userPrincipalName}/events/{id}/extensions
@@ -75,16 +76,17 @@ extension in it. All other syntaxes that allows you to identify these resource i
 See the [Request body](#request-body) section about including _the extension_ in the request body.
 
 ## Path parameters
-|Parameter|Type|Description|
-|:-----|:-----|:-----|
-|id|string|A unique identifier for an object in the corresponding collection. Required.|
+
+| Parameter | Type   | Description                                                                  |
+| :-------- | :----- | :--------------------------------------------------------------------------- |
+| id        | string | A unique identifier for an object in the corresponding collection. Required. |
 
 ## Request headers
 
-| Name       | Value |
-|:---------------|:----------|
+| Name          | Value                     |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type | application/json |
+| Content-Type  | application/json          |
 
 ## Request body
 
@@ -92,10 +94,10 @@ Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md)
 name-value pairs, and any additional custom data. The data in the JSON payload can be primitive types, or arrays of
 primitive types.
 
-| Name       | Value |
-|:---------------|:----------|
-| @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string% |
+| Name          | Value                             |
+| :------------ | :-------------------------------- |
+| @odata.type   | microsoft.graph.openTypeExtension |
+| extensionName | %unique_string%                   |
 
 When creating an extension in a _new_ resource instance, in addition to the
 new **openTypeExtension** object, provide a JSON representation of the relevant properties to create such a resource instance.
@@ -111,11 +113,11 @@ Refer to the corresponding topics for creating the instance, as listed [above](#
 
 ### Response body
 
-| Scenario       | Resource  | Response body |
-|:---------------|:----------|:--------------|
+| Scenario                                                                  | Resource                                                                                               | Response body                                                                                              |
+| :------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
 | Creating an extension while explicitly creating a _new_ resource instance | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Includes the new instance expanded with the [openTypeExtension](../resources/opentypeextension.md) object. |
-| Creating an extension while implicitly creating a resource instance | [post](../resources/post.md) | The response includes only a response code but not a response body. |
-| Creating an extension in an _existing_ resource instance | All supported resources | Includes the **openTypeExtension** object. |
+| Creating an extension while implicitly creating a resource instance       | [post](../resources/post.md)                                                                           | The response includes only a response code but not a response body.                                        |
+| Creating an extension in an _existing_ resource instance                  | All supported resources                                                                                | Includes the **openTypeExtension** object.                                                                 |
 
 ## Example
 
@@ -134,6 +136,7 @@ The first example creates a message and an extension in the same call. The reque
   "blockType": "ignored",
   "name": "post_opentypeextension_1"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages
 
@@ -172,11 +175,13 @@ and the following for the new extension:
 - The custom data specified in the request stored as 3 custom properties.
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -257,6 +262,7 @@ extension:
   "blockType": "ignored",
   "name": "post_opentypeextension_2"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
 
@@ -282,6 +288,7 @@ Here is the response for the second example. The response body includes the foll
   "truncated": false,
   "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -314,6 +321,7 @@ extension:
   "blockType": "ignored",
   "name": "post_opentypeextension_3"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
 
@@ -335,6 +343,7 @@ Here is the response from the third example request.
   "truncated": false,
   "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -366,6 +375,7 @@ the **body** of the new post, and the following data for the new extension:
   "blockType": "ignored",
   "name": "post_opentypeextension_4"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply
 
@@ -401,6 +411,7 @@ HTTP 202 response code.
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-type: text/plain
@@ -424,6 +435,7 @@ in turn contains the **body** of the new post, and the following data for the ex
   "blockType": "ignored",
   "name": "post_opentypeextension_5"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations
 
@@ -473,6 +485,7 @@ thread, and initially there should be only one. Then apply the post ID and the e
   "truncated": true,
   "@odata.type": "microsoft.graph.conversation"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -491,8 +504,10 @@ Content-type: application/json
 ```
 
 <!-- This page was manually created. -->
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create extension",
@@ -500,4 +515,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

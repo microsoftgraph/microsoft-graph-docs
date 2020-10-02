@@ -1,4 +1,4 @@
----
+﻿---
 title: "ChartAxis resource type"
 description: "Represents a single axis in a chart."
 author: "lumine2008"
@@ -13,30 +13,31 @@ Namespace: microsoft.graph
 
 Represents a single axis in a chart.
 
-
 ## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis-get.md) | [WorkbookChartAxis](chartaxis.md) |Read properties and relationships of chartAxis object.|
-|[Update](../api/chartaxis-update.md) | [WorkbookChartAxis](chartaxis.md)	|Update ChartAxis object. |
+| Method                                   | Return Type                       | Description                                            |
+| :--------------------------------------- | :-------------------------------- | :----------------------------------------------------- |
+| [Get ChartAxis](../api/chartaxis-get.md) | [WorkbookChartAxis](chartaxis.md) | Read properties and relationships of chartAxis object. |
+| [Update](../api/chartaxis-update.md)     | [WorkbookChartAxis](chartaxis.md) | Update ChartAxis object.                               |
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-| id       |string   | Unique identifier. Read-only.|
-|majorUnit|Json|Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.|
-|maximum|Json|Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
-|minimum|Json|Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.|
-|minorUnit|Json|Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.|
+
+| Property  | Type   | Description                                                                                                                                                                 |
+| :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id        | string | Unique identifier. Read-only.                                                                                                                                               |
+| majorUnit | Json   | Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.                             |
+| maximum   | Json   | Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.      |
+| minimum   | Json   | Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.       |
+| minorUnit | Json   | Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number. |
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|format|[WorkbookChartAxisFormat](chartaxisformat.md)|Represents the formatting of a chart object, which includes line and font formatting. Read-only.|
-|majorGridlines|[WorkbookChartGridlines](chartgridlines.md)|Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.|
-|minorGridlines|[WorkbookChartGridlines](chartgridlines.md)|Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.|
-|title|[WorkbookChartAxisTitle](chartaxistitle.md)|Represents the axis title. Read-only.|
+
+| Relationship   | Type                                          | Description                                                                                       |
+| :------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------ |
+| format         | [WorkbookChartAxisFormat](chartaxisformat.md) | Represents the formatting of a chart object, which includes line and font formatting. Read-only.  |
+| majorGridlines | [WorkbookChartGridlines](chartgridlines.md)   | Returns a gridlines object that represents the major gridlines for the specified axis. Read-only. |
+| minorGridlines | [WorkbookChartGridlines](chartgridlines.md)   | Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only. |
+| title          | [WorkbookChartAxisTitle](chartaxistitle.md)   | Represents the axis title. Read-only.                                                             |
 
 ## JSON representation
 
@@ -67,6 +68,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "ChartAxis resource",
@@ -74,4 +76,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

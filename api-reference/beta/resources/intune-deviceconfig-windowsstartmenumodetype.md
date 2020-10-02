@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsStartMenuModeType enum type"
 description: "Type of display modes for the start menu."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Type of display modes for the start menu.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userDefined|0|User defined. Default value.|
-|fullScreen|1|Full screen.|
-|nonFullScreen|2|Non-full screen.|
 
-
-
-
-
-
+| Member        | Value | Description                  |
+| :------------ | :---- | :--------------------------- |
+| userDefined   | 0     | User defined. Default value. |
+| fullScreen    | 1     | Full screen.                 |
+| nonFullScreen | 2     | Non-full screen.             |

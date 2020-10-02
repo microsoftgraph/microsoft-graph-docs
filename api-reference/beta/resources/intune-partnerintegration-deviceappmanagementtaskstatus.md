@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceAppManagementTaskStatus enum type"
 description: "Device app management task status."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Device app management task status.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|State is undefined.|
-|pending|1|The task is ready for review.|
-|active|2|The task has been accepted and is being worked on.|
-|completed|3|The work is complete.|
-|rejected|4|The task was rejected.|
 
-
-
-
-
-
+| Member    | Value | Description                                        |
+| :-------- | :---- | :------------------------------------------------- |
+| unknown   | 0     | State is undefined.                                |
+| pending   | 1     | The task is ready for review.                      |
+| active    | 2     | The task has been accepted and is being worked on. |
+| completed | 3     | The work is complete.                              |
+| rejected  | 4     | The task was rejected.                             |

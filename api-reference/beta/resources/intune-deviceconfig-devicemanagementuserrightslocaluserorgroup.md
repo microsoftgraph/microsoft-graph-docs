@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementUserRightsLocalUserOrGroup resource type"
 description: "Represents information for a local user or group used for user rights setting."
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 Represents information for a local user or group used for user rights setting.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|name|String|The name of this local user or group.|
-|description|String|Admin’s description of this local user or group.|
-|securityIdentifier|String|The security identifier of this local user or group (e.g. *S-1-5-32-544).|
+
+| Property           | Type   | Description                                                               |
+| :----------------- | :----- | :------------------------------------------------------------------------ |
+| name               | String | The name of this local user or group.                                     |
+| description        | String | Admin’s description of this local user or group.                          |
+| securityIdentifier | String | The security identifier of this local user or group (e.g. *S-1-5-32-544). |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
   "name": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "securityIdentifier": "String"
 }
 ```
-
-
-
-
-
-

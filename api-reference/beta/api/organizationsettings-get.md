@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get organizationSettings"
 description: "Retrieve the properties and relationships of organizationSettings object."
 localization_priority: Normal
@@ -22,7 +22,7 @@ This operation does not return [itemInsightsSettings](../resources/iteminsightss
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | User.Read, User.Read.All                    |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
@@ -43,8 +43,8 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name          |Description                  |
-|:--------------|:----------------------------|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
 | Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
@@ -63,6 +63,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_organizationsettings"
@@ -71,20 +72,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/settings
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organizationsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -125,6 +129,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get organizationSettings",
@@ -132,5 +137,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

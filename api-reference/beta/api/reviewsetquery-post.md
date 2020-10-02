@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create reviewSetQuery"
 description: "Use this API to create a new reviewSetQuery."
 localization_priority: Normal
@@ -18,10 +18,10 @@ Create a new [reviewSetQuery](../resources/reviewsetquery.md) object.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | User.Read                                   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -33,17 +33,17 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
 
 In the request body, supply a JSON representation of [reviewSetQuery](../resources/reviewsetquery.md) object. The following table lists the required properties.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-| displayName  | string      | The name of the review set query |
+| Property    | Type   | Description                      |
+| :---------- | :----- | :------------------------------- |
+| displayName | string | The name of the review set query |
 
 ## Response
 
@@ -56,6 +56,7 @@ If successful, this method returns a `201 Created` response code and a new [revi
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "post_reviewsetquery"
@@ -70,20 +71,23 @@ Content-type: application/json
      "query": "(subject:\"Quarterly Financials\")"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reviewsetquery-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-reviewsetquery-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reviewsetquery-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -125,6 +129,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create reviewSetQuery",
@@ -132,5 +137,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

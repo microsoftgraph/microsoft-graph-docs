@@ -1,4 +1,4 @@
----
+﻿---
 author: learafa
 title: Follow site
 description: Follow a user's site/sites.
@@ -6,6 +6,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Follow site 
 
 Namespace: microsoft.graph
@@ -16,7 +17,7 @@ Follow a user's [site](../resources/site.md) or multiple sites.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|            Permission type             | Permissions (from least to most privileged) |
+| Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Sites.ReadWrite.All                         |
 | Delegated (personal Microsoft account) | Not supported.                              |
@@ -34,11 +35,9 @@ POST /users/{user-id}/followedSites/add
 
 In the request body, supply an array of JSON objects with the id parameter mentioned in the table below. 
 
-
-| Name                 | Value  | Description                                                            |
-|:---------------------|:-------|:-----------------------------------------------------------------------|
-|   id                 | string | The [unique identifier](../resources/site.md#id-property) of the item. |
-
+| Name | Value  | Description                                                            |
+| :--- | :----- | :--------------------------------------------------------------------- |
+| id   | string | The [unique identifier](../resources/site.md#id-property) of the item. |
 
 ## Response 
 
@@ -51,8 +50,8 @@ The following example shows how to follow multiple sites.
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -71,15 +70,19 @@ Content-Type: application/json
     ] 
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -166,7 +169,7 @@ Content-type: application/json
         }
     ]
 }
-```  
+```
 
 <!-- {
   "type": "#page.annotation",
@@ -177,5 +180,3 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
-
-

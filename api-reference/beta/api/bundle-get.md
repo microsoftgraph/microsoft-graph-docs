@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: jeremyke
 title: Get bundle
@@ -20,11 +20,11 @@ Retrieve the metadata for a [bundle][] based on the bundle's unique ID.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.                             |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application          | Not supported.                                           |
+| Permission type                        | Permissions (from least to most privileged)                      |
+| :------------------------------------- | :--------------------------------------------------------------- |
+| Delegated (work or school account)     | Not supported.                                                   |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All |
+| Application                            | Not supported.                                                   |
 
 ## HTTP request
 
@@ -41,10 +41,11 @@ You can also use the **bundles** collection as a convenience to ensure you're ge
 You can use the [OData query parameters][odata-parameters] to restrict the shape of the objects returned from this call.
 
 ## Request headers
-| Name          | Description  |
-|:------------- |:------------ |
-| Authorization | Bearer \{token\}. Required. |
-| if-none-match | eTag. Optional. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.
+
+| Name          | Description                                                                                                                                                              |
+| :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer \{token\}. Required.                                                                                                                                              |
+| if-none-match | eTag. Optional. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 ## Request body
 
@@ -62,27 +63,30 @@ Read the [Error Responses][error-response] topic for more info about how errors 
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-metadata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bundle-metadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-metadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -118,27 +122,30 @@ You can use the [`expand`](/graph/query-parameters) query string parameter to in
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-and-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bundle-and-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-and-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -167,12 +174,10 @@ Content-Type: application/json
 
 The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters
-
 
 <!-- {
   "type": "#page.annotation",
@@ -181,5 +186,3 @@ The response object shown here might be shortened for readability. All the prope
   "section": "documentation",
   "tocPath": "Bundles/Get Bundle Metadata"
 } -->
-
-

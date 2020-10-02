@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppDataStorageLocation enum type"
 description: "Storage locations where managed apps can potentially store their data"
 author: "dougeby"
@@ -16,17 +16,9 @@ Namespace: microsoft.graph
 Storage locations where managed apps can potentially store their data
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|oneDriveForBusiness|1|OneDrive for business|
-|sharePoint|2|SharePoint|
-|localStorage|6|Local storage on the device|
 
-
-
-
-
-
-
-
-
+| Member              | Value | Description                 |
+| :------------------ | :---- | :-------------------------- |
+| oneDriveForBusiness | 1     | OneDrive for business       |
+| sharePoint          | 2     | SharePoint                  |
+| localStorage        | 6     | Local storage on the device |

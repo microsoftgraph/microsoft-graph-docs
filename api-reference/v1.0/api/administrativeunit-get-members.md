@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get a member"
 description: "Use this API to get a specific member (user or group) in an administrative unit."
 author: "anandyadavMSFT"
@@ -14,26 +14,29 @@ Namespace: microsoft.graph
 Use this API to get a specific member (user or group) in an administrative unit.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                                                                                            |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                                         |
+| Application                            | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All                             |
 
 ## HTTP request
 
 ```http
 GET /directory/administrativeUnits/{id}/members/{id}
 ```
+
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -41,7 +44,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [user](../resources/user.md) or [group](../resources/group.md) object in the response body.
 
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 
 ```http
@@ -49,6 +54,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/
 ```
 
 ##### Response
+
 Here is an example of the respone. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```http

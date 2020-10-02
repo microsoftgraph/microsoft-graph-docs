@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create attachment"
 description: "Use this API to add an attachment to an outlookTask."
 author: "svpsiva"
@@ -15,18 +15,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
-
 Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md). The attachment can be a file (of [fileAttachment](../resources/fileattachment.md) type) or Outlook item ([itemAttachment](../resources/itemattachment.md) type).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.ReadWrite    |
-|Delegated (personal Microsoft account) | Tasks.ReadWrite    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Tasks.ReadWrite                             |
+| Delegated (personal Microsoft account) | Tasks.ReadWrite                             |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -39,10 +38,10 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## Request headers
 
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Content-Type | A string that represents the type of data in the body of an entity. Required. |
+| Name          | Description                                                                   |
+| :------------ | :---------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required.                                                     |
+| Content-Type  | A string that represents the type of data in the body of an entity. Required. |
 
 ## Request body
 
@@ -60,8 +59,8 @@ If successful, this method returns `201 Created` response code and [attachment](
 
 Here is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "add_file_attachment_to_task"
@@ -77,24 +76,28 @@ Content-type: application/json
     "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-file-attachment-to-task-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-file-attachment-to-task-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/add-file-attachment-to-task-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "add_file_attachment_to_task",
@@ -158,10 +161,10 @@ Content-type: application/json
 }
 ```
 
-
 #### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "add_item_attachment_to_task",
@@ -185,10 +188,9 @@ Content-type: application/json
 }
 ```
 
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -200,5 +202,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

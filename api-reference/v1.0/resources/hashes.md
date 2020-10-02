@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -38,11 +38,11 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property         | Type   | Description                                                       |
-|:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
-| **sha256Hash**   | String | SHA256 hash for the contents of the file (if available). Read-only. |
-| **crc32Hash**    | String | The CRC32 value of the file in little endian (if available). Read-only.            |
+| Property         | Type   | Description                                                                                                                      |
+| :--------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------- |
+| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only.                                                                |
+| **sha256Hash**   | String | SHA256 hash for the contents of the file (if available). Read-only.                                                              |
+| **crc32Hash**    | String | The CRC32 value of the file in little endian (if available). Read-only.                                                          |
 | **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
 
 **Note:** In some cases hash values may not be available. 
@@ -57,7 +57,6 @@ In OneDrive Personal, **quickXorHash** is not available.
 To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-
 <!-- {
   "type": "#page.annotation",
   "description": "The hashes facet provides hash identifiers for a file in OneDrive",
@@ -65,4 +64,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Hashes"
 } -->
-

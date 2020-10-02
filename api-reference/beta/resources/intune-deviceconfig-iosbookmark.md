@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosBookmark resource type"
 description: "iOS URL bookmark"
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 iOS URL bookmark
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|url|String|URL allowed to access|
-|bookmarkFolder|String|The folder into which the bookmark should be added in Safari|
-|displayName|String|The display name of the bookmark|
+
+| Property       | Type   | Description                                                  |
+| :------------- | :----- | :----------------------------------------------------------- |
+| url            | String | URL allowed to access                                        |
+| bookmarkFolder | String | The folder into which the bookmark should be added in Safari |
+| displayName    | String | The display name of the bookmark                             |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosBookmark"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosBookmark",
   "url": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-
-
-
-
-
-

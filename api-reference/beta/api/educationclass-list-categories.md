@@ -1,4 +1,4 @@
----
+﻿---
 title: "List educationCategories"
 description: "Retrieve a list of category objects."
 author: "mmast-msft"
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/classes/{id}/assignmentCategories
 ```
@@ -96,6 +97,7 @@ Content-length: 218
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -106,5 +108,3 @@ Content-length: 218
   "suppressions": []
 }
 -->
-
-

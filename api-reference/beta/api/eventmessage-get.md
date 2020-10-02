@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get eventMessage"
 description: "expand` parameter on the **event**"
 localization_priority: Normal
@@ -31,16 +31,19 @@ If you specify either header, the response will include the corresponding `Prefe
 - For HTML format requests: `Preference-Applied: outlook.body-content-type="html"`
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read    |
-|Delegated (personal Microsoft account) | Mail.Read    |
-|Application | Mail.Read |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Mail.Read                                   |
+| Delegated (personal Microsoft account) | Mail.Read                                   |
+| Application                            | Mail.Read                                   |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/messages/{id}
 GET /users/{id | userPrincipalName}/messages/{id}
@@ -48,55 +51,72 @@ GET /users/{id | userPrincipalName}/messages/{id}
 GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.
+
 ## Examples
 
 ### Example 1
+
 #### Request
+
 The first example shows how to get the properties of an event message based on the event message ID.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_eventmessage"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
   "truncated": true,
   "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -196,42 +216,53 @@ Content-type: application/json
 ```
 
 ### Example 2
+
 #### Request
+
 The second example shows how to get the event associated with an event message. It uses
 the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property,
 and apply an $expand parameter to get the properties of the event.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_event_based_on_eventmessage"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=microsoft.graph.eventMessage/event
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-based-on-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-based-on-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
+
 Here is an example of the response. The properties of the associated event are returned in the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
   "truncated": true,
   "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -424,6 +455,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -435,5 +467,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

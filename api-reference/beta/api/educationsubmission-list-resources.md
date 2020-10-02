@@ -1,4 +1,4 @@
----
+﻿---
 title: "List resources"
 description: "List the resources associated with this submission. The **submissionResource** object is a wrapper around the actual resource object the student is working on. The wrapper also includes a pointer to the resources on the assignment if this was copied from the assignment during the assign process. These resources are the working copy of the assignment. The **submittedResources** are the resources that have officially been submitted to be graded."
 author: "dipakboyed"
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /educationClasses/assignments/{id}/submissions/{id}/resources
 ```
@@ -118,6 +119,7 @@ Content-length: 1045
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -128,5 +130,3 @@ Content-length: 1045
   "suppressions": []
 }
 -->
-
-

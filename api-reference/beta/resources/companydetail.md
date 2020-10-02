@@ -1,4 +1,4 @@
----
+﻿---
 title: "companyDetail resource type"
 description: "companyDetail resource type"
 localization_priority: Normal
@@ -17,14 +17,14 @@ Represents information about companies related to entities within their [profile
 
 ## Properties
 
-| Property       | Type                                | Description                                 |
-|:---------------|:------------------------------------|:--------------------------------------------|
-|address         |[physicalAddress](physicaladdress.md)| Address of the company.                     |
-|department      |String                               | Department Name within a company.           |
-|displayName     |String                               | Company name.                               |
-|officeLocation  |String                               | Office Location of the person referred to.  |
-|pronunciation   |String                               | Pronunciation guide for the company name.   |
-|webUrl          |String                               | Link to the company home page.              |
+| Property       | Type                                  | Description                                |
+| :------------- | :------------------------------------ | :----------------------------------------- |
+| address        | [physicalAddress](physicaladdress.md) | Address of the company.                    |
+| department     | String                                | Department Name within a company.          |
+| displayName    | String                                | Company name.                              |
+| officeLocation | String                                | Office Location of the person referred to. |
+| pronunciation  | String                                | Pronunciation guide for the company name.  |
+| webUrl         | String                                | Link to the company home page.             |
 
 ## JSON representation
 
@@ -52,6 +52,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "companyDetail resource",
@@ -59,4 +60,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "reportRoot: getEmailAppUsageUserDetail"
 description: "Get details about which activities users performed on the various email apps."
 localization_priority: Normal
@@ -20,15 +20,14 @@ Get details about which activities users performed on the various email apps.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Reports.Read.All                            |
 
 **Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
-
 
 <!-- { "blockType": "samples" } --> 
 
@@ -41,18 +40,18 @@ GET /reports/getEmailAppUsageUserDetail(date={date_value})
 
 In the request URL, provide one of the following parameters with a valid value.
 
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
+| Parameter | Type   | Description                                                                                                                                                                                                                                             |
+| :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
-| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
+| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range.          |
 
 > **Note:** You need to set either period or date in the URL.
 
 ## Request headers
 
-| Name          | Description                              |
-| :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Required.                |
+| Name          | Description                                                                                                                                             |
+| :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Authorization | Bearer {token}. Required.                                                                                                                               |
 | If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response
@@ -86,7 +85,6 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-
 <!--{
   "blockType": "ignored",
   "isComposable": true,
@@ -96,7 +94,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getEmailAppUsageUserDetail(period='D7')
 ```
-
 
 #### Response
 
@@ -124,8 +121,10 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Mail For Mac,Outlook For Mac,Outlook For Windows,Outlook For Mobile,Other For Mobile,Outlook For Web,POP3 App,IMAP4 App,SMTP App,Report Period
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",
@@ -135,4 +134,3 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Las
   "suppressions": [
   ]
 }-->
-

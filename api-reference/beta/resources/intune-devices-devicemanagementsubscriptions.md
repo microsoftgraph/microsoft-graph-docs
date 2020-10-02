@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementSubscriptions enum type"
 description: "Tenant mobile device management subscriptions."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Tenant mobile device management subscriptions.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|None|
-|intune|1|Microsoft Intune Subscription|
-|office365|2|Office365 Subscription|
-|intunePremium|4|Microsoft Intune Premium Subscription|
-|intune_EDU|8|Microsoft Intune for Education Subscription|
-|intune_SMB|16|Microsoft Intune for Small Businesses Subscription|
 
-
-
-
-
-
+| Member        | Value | Description                                        |
+| :------------ | :---- | :------------------------------------------------- |
+| none          | 0     | None                                               |
+| intune        | 1     | Microsoft Intune Subscription                      |
+| office365     | 2     | Office365 Subscription                             |
+| intunePremium | 4     | Microsoft Intune Premium Subscription              |
+| intune_EDU    | 8     | Microsoft Intune for Education Subscription        |
+| intune_SMB    | 16    | Microsoft Intune for Small Businesses Subscription |

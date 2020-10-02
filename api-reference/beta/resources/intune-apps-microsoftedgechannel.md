@@ -1,4 +1,4 @@
----
+﻿---
 title: "microsoftEdgeChannel enum type"
 description: "The enum to specify the channels for Microsoft Edge apps."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 The enum to specify the channels for Microsoft Edge apps.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|dev|0|Not yet documented|
-|beta|1|Not yet documented|
-|stable|2|Not yet documented|
 
-
-
-
-
-
+| Member | Value | Description        |
+| :----- | :---- | :----------------- |
+| dev    | 0     | Not yet documented |
+| beta   | 1     | Not yet documented |
+| stable | 2     | Not yet documented |

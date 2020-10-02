@@ -1,4 +1,4 @@
----
+﻿---
 title: "endpointSecurityConfigurationType enum type"
 description: "The endpoint security policy type."
 author: "dougeby"
@@ -18,18 +18,13 @@ Namespace: microsoft.graph
 The endpoint security policy type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown.|
-|antivirus|1|Antivirus.|
-|diskEncryption|2|Disk encryption.|
-|firewall|3|Firewall.|
-|endpointDetectionAndResponse|4|Endpoint detection and response.|
-|attackSurfaceReduction|5|Attack surface reduction.|
-|accountProtection|6|Account protection.|
 
-
-
-
-
-
+| Member                       | Value | Description                      |
+| :--------------------------- | :---- | :------------------------------- |
+| unknown                      | 0     | Unknown.                         |
+| antivirus                    | 1     | Antivirus.                       |
+| diskEncryption               | 2     | Disk encryption.                 |
+| firewall                     | 3     | Firewall.                        |
+| endpointDetectionAndResponse | 4     | Endpoint detection and response. |
+| attackSurfaceReduction       | 5     | Attack surface reduction.        |
+| accountProtection            | 6     | Account protection.              |

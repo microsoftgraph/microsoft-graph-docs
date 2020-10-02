@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
@@ -18,6 +18,7 @@ The **currencyColumn** on a [columnDefinition](columndefinition.md) resource ind
 ## JSON representation
 
 Here is a JSON representation of a **currencyColumn** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.currencyColumn" } -->
 
 ```json
@@ -28,9 +29,9 @@ Here is a JSON representation of a **currencyColumn** resource.
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| **locale**    | string | Specifies the locale from which to infer the currency symbol.
+| Property name | Type   | Description                                                   |
+| :------------ | :----- | :------------------------------------------------------------ |
+| **locale**    | string | Specifies the locale from which to infer the currency symbol. |
 
 <!-- {
   "type": "#page.annotation",
@@ -39,4 +40,3 @@ Here is a JSON representation of a **currencyColumn** resource.
   "section": "documentation",
   "tocPath": "Resources/CurrencyColumn"
 } -->
-

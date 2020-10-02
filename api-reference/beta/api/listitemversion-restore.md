@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Restore a previous version of a ListItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the item."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Restore a previous version of a ListItem
 
 Namespace: microsoft.graph
@@ -19,7 +20,7 @@ Restore a previous version of a ListItem to be the current version. This will cr
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|            Permission type             |         Permissions (from least to most privileged)          |
+| Permission type                        | Permissions (from least to most privileged)                  |
 | :------------------------------------- | :----------------------------------------------------------- |
 | Delegated (work or school account)     | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 | Delegated (personal Microsoft account) | n/a                                                          |
@@ -68,5 +69,3 @@ HTTP/1.1 204 No content
   "suppressions": []
 }
 -->
-
-

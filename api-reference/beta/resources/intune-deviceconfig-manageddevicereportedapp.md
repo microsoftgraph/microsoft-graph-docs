@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedDeviceReportedApp resource type"
 description: "Application data for reporting"
 author: "dougeby"
@@ -18,29 +18,28 @@ Namespace: microsoft.graph
 Application data for reporting
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|appId|String|The application or bundle identifier of the application|
+
+| Property | Type   | Description                                             |
+| :------- | :----- | :------------------------------------------------------ |
+| appId    | String | The application or bundle identifier of the application |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedDeviceReportedApp"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.managedDeviceReportedApp",
   "appId": "String"
 }
 ```
-
-
-
-
-
-

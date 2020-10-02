@@ -1,4 +1,4 @@
----
+﻿---
 title: "eapType enum type"
 description: "Extensible Authentication Protocol (EAP) configuration types."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Extensible Authentication Protocol (EAP) configuration types.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|eapTls|13|EAP-Transport Layer Security (EAP-TLS).|
-|leap|17|Lightweight Extensible Authentication Protocol (LEAP).|
-|eapSim|18|EAP for GSM Subscriber Identity Module (EAP-SIM).|
-|eapTtls|21|EAP-Tunneled Transport Layer Security (EAP-TTLS).|
-|peap|25|Protected Extensible Authentication Protocol (PEAP).|
-|eapFast|43|EAP-Flexible Authentication via Secure Tunneling (EAP-FAST).|
 
-
-
-
-
-
+| Member  | Value | Description                                                  |
+| :------ | :---- | :----------------------------------------------------------- |
+| eapTls  | 13    | EAP-Transport Layer Security (EAP-TLS).                      |
+| leap    | 17    | Lightweight Extensible Authentication Protocol (LEAP).       |
+| eapSim  | 18    | EAP for GSM Subscriber Identity Module (EAP-SIM).            |
+| eapTtls | 21    | EAP-Tunneled Transport Layer Security (EAP-TTLS).            |
+| peap    | 25    | Protected Extensible Authentication Protocol (PEAP).         |
+| eapFast | 43    | EAP-Flexible Authentication via Secure Tunneling (EAP-FAST). |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileAppActionType enum type"
 description: "Defines the Action Types for an Intune Application."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Defines the Action Types for an Intune Application.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Unknown result.|
-|installCommandSent|1|Application install command was sent.|
-|installed|3|Application installed.|
-|uninstalled|4|Application uninstalled.|
-|userRequestedInstall|5|User requested installation|
 
-
-
-
-
-
+| Member               | Value | Description                           |
+| :------------------- | :---- | :------------------------------------ |
+| unknown              | 0     | Unknown result.                       |
+| installCommandSent   | 1     | Application install command was sent. |
+| installed            | 3     | Application installed.                |
+| uninstalled          | 4     | Application uninstalled.              |
+| userRequestedInstall | 5     | User requested installation           |

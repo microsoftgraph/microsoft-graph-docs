@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOSKernelExtension resource type"
 description: "Represents a specific macOS kernel extension. A macOS kernel extension can be described by its team identifier plus its bundle identifier."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Represents a specific macOS kernel extension. A macOS kernel extension can be described by its team identifier plus its bundle identifier.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|teamIdentifier|String|The team identifier that was used to sign the kernel extension.|
-|bundleId|String|Bundle ID of the kernel extension.|
+
+| Property       | Type   | Description                                                     |
+| :------------- | :----- | :-------------------------------------------------------------- |
+| teamIdentifier | String | The team identifier that was used to sign the kernel extension. |
+| bundleId       | String | Bundle ID of the kernel extension.                              |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOSKernelExtension"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.macOSKernelExtension",
   "teamIdentifier": "String",
   "bundleId": "String"
 }
 ```
-
-
-
-
-
-

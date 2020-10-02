@@ -1,4 +1,4 @@
----
+﻿---
 title: "depTokenType enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Token Type is None|
-|dep|1|Token Type is Dep.|
-|appleSchoolManager|2|Token Type is Apple School Manager|
 
-
-
-
-
-
+| Member             | Value | Description                        |
+| :----------------- | :---- | :--------------------------------- |
+| none               | 0     | Token Type is None                 |
+| dep                | 1     | Token Type is Dep.                 |
+| appleSchoolManager | 2     | Token Type is Apple School Manager |

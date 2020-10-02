@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create userExperienceAnalyticsAppHealthDevicePerformanceDetails"
 description: "Create a new userExperienceAnalyticsAppHealthDevicePerformanceDetails object."
 author: "dougeby"
@@ -18,53 +18,59 @@ Namespace: microsoft.graph
 Create a new [userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the userExperienceAnalyticsAppHealthDevicePerformanceDetails object.
 
 The following table shows the properties that are required when you create the userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics device performance object.|
-|eventDateTime|DateTimeOffset|The time the event occurred.|
-|eventType|String|The type of the event.|
-|appDisplayName|String|The friendly name of the application for which the event occurred.|
-|deviceId|String|The id of the device.|
-|deviceDisplayName|String|The name of the device.|
-
-
+| Property          | Type           | Description                                                                       |
+| :---------------- | :------------- | :-------------------------------------------------------------------------------- |
+| id                | String         | The unique identifier of the user experience analytics device performance object. |
+| eventDateTime     | DateTimeOffset | The time the event occurred.                                                      |
+| eventType         | String         | The type of the event.                                                            |
+| appDisplayName    | String         | The friendly name of the application for which the event occurred.                |
+| deviceId          | String         | The id of the device.                                                             |
+| deviceDisplayName | String         | The name of the device.                                                           |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [userExperienceAnalyticsAppHealthDevicePerformanceDetails](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 Content-type: application/json
 Content-length: 325
@@ -80,8 +86,10 @@ Content-length: 325
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 374
@@ -96,9 +104,3 @@ Content-Length: 374
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
-
-
-
-
-

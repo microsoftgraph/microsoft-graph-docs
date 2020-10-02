@@ -1,4 +1,4 @@
----
+﻿---
 title: "List audio routing groups"
 description: "Retrieve a list of **audioRoutingGroup** objects."
 author: "ananmishr"
@@ -16,64 +16,77 @@ Namespace: microsoft.graph
 Retrieve a list of **audioRoutingGroup** objects.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not Supported.                               |
-| Delegated (personal Microsoft account) | Not Supported.                               |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Permission type                        | Permissions (from least to most privileged)            |
+| :------------------------------------- | :----------------------------------------------------- |
+| Delegated (work or school account)     | Not Supported.                                         |
+| Delegated (personal Microsoft account) | Not Supported.                                         |
+| Application                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /app/calls/{id}/audioRoutingGroups
 GET /communications/calls/{id}/audioRoutingGroups
 ```
+
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
+
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [audioRoutingGroup](../resources/audioroutinggroup.md) objects in the response body.
 
 ## Example
 
 ##### Request
+
 The following example shows the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get-audioRoutingGroups"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-audioroutinggroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-audioroutinggroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-audioroutinggroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -85,6 +98,7 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroup
   "@odata.type": "microsoft.graph.audioRoutingGroup",
   "isCollection": true 
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -109,6 +123,7 @@ Content-Length: 302
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -120,5 +135,3 @@ Content-Length: 302
   ]
 }
 -->
-
-

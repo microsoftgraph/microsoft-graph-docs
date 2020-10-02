@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOSSystemExtension resource type"
 description: "Represents a specific macOS system extension."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Represents a specific macOS system extension.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|teamIdentifier|String|Gets or sets the team identifier that was used to sign the system extension.|
-|bundleId|String|Gets or sets the bundle identifier of the system extension.|
+
+| Property       | Type   | Description                                                                  |
+| :------------- | :----- | :--------------------------------------------------------------------------- |
+| teamIdentifier | String | Gets or sets the team identifier that was used to sign the system extension. |
+| bundleId       | String | Gets or sets the bundle identifier of the system extension.                  |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOSSystemExtension"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.macOSSystemExtension",
   "teamIdentifier": "String",
   "bundleId": "String"
 }
 ```
-
-
-
-
-
-

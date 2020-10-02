@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "Get itemActivityStats for the activities that took place under this resource within the specified time interval."
 ms.date: 10/06/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
 ---
+
 # Get item activity stats by interval
 
 Namespace: microsoft.graph
@@ -25,11 +26,11 @@ Analytics aggregates might not be available for all action types.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+| Permission type                        | Permissions (from least to most privileged)                                                           |
+| :------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                                        |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## HTTP request
 
@@ -43,37 +44,40 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## Function parameters
 
-| Parameter      | Type               | Description
-|:---------------|:-------------------|:---------------------------------------
-| startDateTime  | string (timestamp) | The start time over which to aggregate activities.
-| endDateTime    | string (timestamp) | The end time over which to aggregate activities.
-| interval       | string             | The aggregation interval.
+| Parameter     | Type               | Description                                        |
+| :------------ | :----------------- | :------------------------------------------------- |
+| startDateTime | string (timestamp) | The start time over which to aggregate activities. |
+| endDateTime   | string (timestamp) | The end time over which to aggregate activities.   |
+| interval      | string             | The aggregation interval.                          |
 
 ## Example
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "get-activities-by-interval" } -->
 
 ```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-3',interval='day')
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-activities-by-interval-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-activities-by-interval-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-activities-by-interval-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -123,5 +127,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

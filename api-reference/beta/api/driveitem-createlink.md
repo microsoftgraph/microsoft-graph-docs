@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "You can use createLink action to share a DriveItem via a sharing link."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Create a sharing link for a DriveItem
 
 Namespace: microsoft.graph
@@ -24,11 +25,11 @@ DriveItem resources inherit sharing permissions from their ancestors.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                      |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -47,34 +48,32 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 The body of the request defines properties of the sharing link your application is requesting.
 The request should be a JSON object with the following properties.
 
-|   Property                 |  Type  |                                 Description                                                               |
-| :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
-|type               | string | The type of sharing link to create. Either view, edit, or embed.                                    |
-|password           | string | The password of the sharing link that is set by the creator. Optional and OneDrive Personal only.         |
-|expirationDateTime | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
-|scope              | string | Optional. The scope of link to create. Either anonymous or organization.                              |
-
+| Property           | Type   | Description                                                                                               |
+| :----------------- | :----- | :-------------------------------------------------------------------------------------------------------- |
+| type               | string | The type of sharing link to create. Either view, edit, or embed.                                          |
+| password           | string | The password of the sharing link that is set by the creator. Optional and OneDrive Personal only.         |
+| expirationDateTime | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
+| scope              | string | Optional. The scope of link to create. Either anonymous or organization.                                  |
 
 ### Link types
 
 The following values are allowed for the **type** parameter.
 
-| Type value | Description                                                                                  |
-|:-----------|:---------------------------------------------------------------------------------------------|
-| view     | Creates a read-only link to the DriveItem.                                                        |
-| edit     | Creates a read-write link to the DriveItem.                                                       |
-| embed    | Creates an embeddable link to the DriveItem. This option is only available for files in OneDrive personal. |
+| Type value | Description                                                                                                |
+| :--------- | :--------------------------------------------------------------------------------------------------------- |
+| view       | Creates a read-only link to the DriveItem.                                                                 |
+| edit       | Creates a read-write link to the DriveItem.                                                                |
+| embed      | Creates an embeddable link to the DriveItem. This option is only available for files in OneDrive personal. |
 
 ### Scope types
 
 The following values are allowed for the **scope** parameter.
 If the **scope** parameter is not specified, the default link type for the organization is created.
 
-| Value          | Description
-|:---------------|:------------------------------------------------------------
-| anonymous    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization. Anonymous link support may be disabled by an administrator.
-| organization | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
-
+| Value        | Description                                                                                                                                                                    |
+| :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| anonymous    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization. Anonymous link support may be disabled by an administrator. |
+| organization | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.                                          |
 
 ## Response
 
@@ -89,8 +88,8 @@ The sharing link is configured to be read-only and usable by anyone with the lin
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "item_createlink"
@@ -106,20 +105,23 @@ Content-type: application/json
   "scope": "anonymous"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-createlink-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/item-createlink-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/item-createlink-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -153,8 +155,8 @@ To create a company sharable link, use the **scope** parameter with a value of `
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
 
 ```http
@@ -166,20 +168,23 @@ Content-Type: application/json
   "scope": "organization"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-link-scoped-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-link-scoped-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-link-scoped-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -213,8 +218,8 @@ When an embed link is created the `webHtml` property contains the HTML code for 
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
 
 ```http
@@ -225,20 +230,23 @@ Content-Type: application/json
   "type": "embed"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-embedded-link-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-embedded-link-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-embedded-link-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -280,5 +288,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

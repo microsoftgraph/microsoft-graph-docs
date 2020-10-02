@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update trustFrameworkKeySet"
 description: "Update the properties of a **trustFrameworkKeySet** object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Update the properties of a [trustFrameworkKeyset](../resources/trustframeworkkey
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | TrustFrameworkKeySet.ReadWrite.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All          |
 
 ## HTTP request
 
@@ -35,17 +35,16 @@ PUT /trustFramework/keySets/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|keys|[trustFrameworkKey](../resources/trustframeworkkey.md) collection| updates a collection of Trustframeworkkeys|
+| Property | Type                                                              | Description                                |
+| :------- | :---------------------------------------------------------------- | :----------------------------------------- |
+| keys     | [trustFrameworkKey](../resources/trustframeworkkey.md) collection | updates a collection of Trustframeworkkeys |
 
 ## Response
 
@@ -58,6 +57,7 @@ If successful, this method returns a `200 OK` response code and an updated [trus
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_trustframeworkkeyset"
@@ -92,20 +92,23 @@ Content-type: application/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-trustframeworkkeyset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-trustframeworkkeyset-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-trustframeworkkeyset-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -152,6 +155,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update trustframeworkkeyset",
@@ -159,5 +163,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

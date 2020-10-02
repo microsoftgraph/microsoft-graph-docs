@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementDerivedCredentialNotificationType enum type"
 description: "Supported values for the notification type to use."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Supported values for the notification type to use.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|None|
-|companyPortal|1|Company Portal|
-|email|2|Email|
 
-
-
-
-
-
+| Member        | Value | Description    |
+| :------------ | :---- | :------------- |
+| none          | 0     | None           |
+| companyPortal | 1     | Company Portal |
+| email         | 2     | Email          |

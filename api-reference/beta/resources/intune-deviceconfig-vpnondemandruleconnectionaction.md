@@ -1,4 +1,4 @@
----
+﻿---
 title: "vpnOnDemandRuleConnectionAction enum type"
 description: "VPN On-Demand Rule Connection Action."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 VPN On-Demand Rule Connection Action.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|connect|0|Connect.|
-|evaluateConnection|1|Evaluate Connection.|
-|ignore|2|Ignore.|
-|disconnect|3|Disconnect.|
 
-
-
-
-
-
+| Member             | Value | Description          |
+| :----------------- | :---- | :------------------- |
+| connect            | 0     | Connect.             |
+| evaluateConnection | 1     | Evaluate Connection. |
+| ignore             | 2     | Ignore.              |
+| disconnect         | 3     | Disconnect.          |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsDeviceUsageType enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|singleUser|0|Single User Device Type|
-|shared|1|Shared Device Type|
 
-
-
-
-
-
+| Member     | Value | Description             |
+| :--------- | :---- | :---------------------- |
+| singleUser | 0     | Single User Device Type |
+| shared     | 1     | Shared Device Type      |

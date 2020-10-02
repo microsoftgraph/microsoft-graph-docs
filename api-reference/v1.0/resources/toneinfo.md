@@ -1,4 +1,4 @@
----
+﻿---
 title: "toneInfo resource type"
 description: "A single DTMF event."
 author: "ananmishr"
@@ -15,10 +15,10 @@ A single DTMF event.
 
 ## Properties
 
-| Property       | Type    | Description|
-|:---------------|:--------|:----------|
-| sequenceId | Int64 | An incremental identifier used for ordering DTMF events. |
-| tone | String | Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound` |
+| Property   | Type   | Description                                                                                                                    |
+| :--------- | :----- | :----------------------------------------------------------------------------------------------------------------------------- |
+| sequenceId | Int64  | An incremental identifier used for ordering DTMF events.                                                                       |
+| tone       | String | Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound` |
 
 ## JSON representation
 
@@ -31,6 +31,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.toneInfo"
 }-->
+
 ```json
 {
   "sequenceId": 1024,
@@ -40,6 +41,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -50,4 +52,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

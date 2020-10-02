@@ -1,4 +1,4 @@
----
+﻿---
 title: "userIdentity resource type"
 description: "In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity."
 localization_priority: Normal
@@ -15,12 +15,12 @@ In the context of an Azure AD audit log, this represents the user information th
 
 ## Properties
 
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-| displayName | String | The identity's display name. Note that this may not always be available or up-to-date.    |
-| id          | String | Unique identifier for the identity.  |
-| ipAddress   | String| Indicates the client IP address used by user performing the activity (audit log only).|
-| userPrincipalName | String  | The userPrincipalName attribute of the user. |
+| Property          | Type   | Description                                                                            |
+| :---------------- | :----- | :------------------------------------------------------------------------------------- |
+| displayName       | String | The identity's display name. Note that this may not always be available or up-to-date. |
+| id                | String | Unique identifier for the identity.                                                    |
+| ipAddress         | String | Indicates the client IP address used by user performing the activity (audit log only). |
+| userPrincipalName | String | The userPrincipalName attribute of the user.                                           |
 
 >**Note:** In some cases, the unique identifier might not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
 
@@ -58,4 +58,3 @@ Here is a JSON representation of the type.
   ]
 }
 -->
-

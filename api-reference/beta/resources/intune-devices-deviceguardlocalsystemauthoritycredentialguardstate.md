@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceGuardLocalSystemAuthorityCredentialGuardState enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|running|0|Running|
-|rebootRequired|1|Reboot required|
-|notLicensed|2|Not licensed for Credential Guard|
-|notConfigured|3|Not configured|
-|virtualizationBasedSecurityNotRunning|4|Virtualization Based security is not running|
 
-
-
-
-
-
+| Member                                | Value | Description                                  |
+| :------------------------------------ | :---- | :------------------------------------------- |
+| running                               | 0     | Running                                      |
+| rebootRequired                        | 1     | Reboot required                              |
+| notLicensed                           | 2     | Not licensed for Credential Guard            |
+| notConfigured                         | 3     | Not configured                               |
+| virtualizationBasedSecurityNotRunning | 4     | Virtualization Based security is not running |

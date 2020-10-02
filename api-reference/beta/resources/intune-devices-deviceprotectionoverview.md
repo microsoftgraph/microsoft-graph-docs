@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceProtectionOverview resource type"
 description: "Hardware information of a given device."
 author: "dougeby"
@@ -18,31 +18,36 @@ Namespace: microsoft.graph
 Hardware information of a given device.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|totalReportedDeviceCount|Int32|Total device count.|
-|inactiveThreatAgentDeviceCount|Int32|Device with inactive threat agent count|
-|unknownStateThreatAgentDeviceCount|Int32|Device with threat agent state as unknown count.|
-|pendingSignatureUpdateDeviceCount|Int32|Device with old signature count.|
-|cleanDeviceCount|Int32|Clean device count.|
-|pendingFullScanDeviceCount|Int32|Pending full scan device count.|
-|pendingRestartDeviceCount|Int32|Pending restart device count.|
-|pendingManualStepsDeviceCount|Int32|Pending manual steps device count.|
-|pendingOfflineScanDeviceCount|Int32|Pending offline scan device count.|
-|criticalFailuresDeviceCount|Int32|Critical failures device count.|
-|pendingQuickScanDeviceCount|Int32|Pending quick scan device count. Valid values -2147483648 to 2147483647|
+
+| Property                           | Type  | Description                                                             |
+| :--------------------------------- | :---- | :---------------------------------------------------------------------- |
+| totalReportedDeviceCount           | Int32 | Total device count.                                                     |
+| inactiveThreatAgentDeviceCount     | Int32 | Device with inactive threat agent count                                 |
+| unknownStateThreatAgentDeviceCount | Int32 | Device with threat agent state as unknown count.                        |
+| pendingSignatureUpdateDeviceCount  | Int32 | Device with old signature count.                                        |
+| cleanDeviceCount                   | Int32 | Clean device count.                                                     |
+| pendingFullScanDeviceCount         | Int32 | Pending full scan device count.                                         |
+| pendingRestartDeviceCount          | Int32 | Pending restart device count.                                           |
+| pendingManualStepsDeviceCount      | Int32 | Pending manual steps device count.                                      |
+| pendingOfflineScanDeviceCount      | Int32 | Pending offline scan device count.                                      |
+| criticalFailuresDeviceCount        | Int32 | Critical failures device count.                                         |
+| pendingQuickScanDeviceCount        | Int32 | Pending quick scan device count. Valid values -2147483648 to 2147483647 |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceProtectionOverview"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceProtectionOverview",
   "totalReportedDeviceCount": 1024,
@@ -58,9 +63,3 @@ Here is a JSON representation of the resource.
   "pendingQuickScanDeviceCount": 1024
 }
 ```
-
-
-
-
-
-

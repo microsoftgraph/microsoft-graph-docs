@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create bookingBusiness"
 description: "Create a new Microsoft Bookings business in a tenant."
 localization_priority: Normal
@@ -16,42 +16,53 @@ Namespace: microsoft.graph
 Create a new Microsoft Bookings business in a tenant.
 
 This is the first step in setting up a Bookings business where you must specify the business display name. You can include other information such as business address, web site address, and scheduling policy, or set that information later by [updating](bookingbusiness-update.md) the **bookingBusiness**.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.Manage.All  |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Bookings.Manage.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /bookingBusinesses
 
 ```
+
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {code}|
+
+| Name          | Description   |
+| :------------ | :------------ |
+| Authorization | Bearer {code} |
 
 ## Request body
+
 In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.
 
-
 ## Response
+
 If successful, this method returns `201, Created` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
 
 ## Example
+
 ##### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_bookingbusiness_from_bookingbusinesses"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses
 Content-type: application/json
@@ -73,28 +84,36 @@ Content-type: application/json
     "defaultCurrencyIso":"USD"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bookingbusiness-from-bookingbusinesses-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-bookingbusiness-from-bookingbusinesses-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bookingbusiness-from-bookingbusinesses-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.
+
 ##### Response
+
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.bookingBusiness"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -190,6 +209,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -201,5 +221,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

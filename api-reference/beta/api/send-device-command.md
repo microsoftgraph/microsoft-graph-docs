@@ -1,4 +1,4 @@
----
+﻿---
 title: "Send device command"
 description: "This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the "
 localization_priority: Normal
@@ -20,12 +20,11 @@ This API enables Project Rome capabilities to command a device associated with a
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
-|Delegated (personal Microsoft account) | Device.Command    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Device.Command                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -37,11 +36,10 @@ POST me/devices/{id}/commands
 
 ## Request headers
 
-
-| Header |Value
-|:----|:------|
-|Authorization| Bearer {token}. Required. |
-|Accept | application/json |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Accept        | application/json          |
 
 ## Request body
 
@@ -77,19 +75,20 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
+
 ### Command properties
 
-|**Name**|**Type**|**Description**|
-|:----|:------|:------|
-|payload | microsoft.graph.json| Payload to send to an app service or to launch a URI on a device. |
-|responsePayload | microsoft.graph.json| Payload returned from target device. |
-|postBackURI | String | Post back URI to send subsequent notifications of updates. |
-|packageFamilyName | String | Windows Package Family Name of application. |
-|appServiceName | String | Name of app service defined by the target application. Required if launching an app service. |
-|type| String | LaunchURI or AppService. |
-|id| String | The ID of a command that has been sent to the device. |
-|actionStatus | String | The [status](get-device-command-status.md) of a command. |
-|error| String| Any errors associated with the request from the target application. |
+| **Name**          | **Type**             | **Description**                                                                              |
+| :---------------- | :------------------- | :------------------------------------------------------------------------------------------- |
+| payload           | microsoft.graph.json | Payload to send to an app service or to launch a URI on a device.                            |
+| responsePayload   | microsoft.graph.json | Payload returned from target device.                                                         |
+| postBackURI       | String               | Post back URI to send subsequent notifications of updates.                                   |
+| packageFamilyName | String               | Windows Package Family Name of application.                                                  |
+| appServiceName    | String               | Name of app service defined by the target application. Required if launching an app service. |
+| type              | String               | LaunchURI or AppService.                                                                     |
+| id                | String               | The ID of a command that has been sent to the device.                                        |
+| actionStatus      | String               | The [status](get-device-command-status.md) of a command.                                     |
+| error             | String               | Any errors associated with the request from the target application.                          |
 
 ## Examples
 
@@ -105,7 +104,6 @@ The following is an example of a LaunchURI request; it will launch a URI or an a
 } -->
 
 ```http
-
 POST me/devices/{id}/commands
 Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
@@ -113,6 +111,7 @@ Content-Type: application/json; charset=utf-8
 { "type" : "LaunchUri", "payload" : {"uri":"https://bing.com"}}
 
 ```
+
 #### Response
 
 <!-- {
@@ -141,7 +140,6 @@ HTTP/1.1 201 OK
 
 ```
 
-
 ### Example 2: App service
 
 The following example shows how to query an app service on a device. To use an app service, you must do a POST call using the ID of the device (obtained from doing a GET call on `me/devices`). To use the following example, you must install the [Rome app](https://aka.ms/romanapp) on your target device.
@@ -156,7 +154,6 @@ Several additional properties must be set in the call. *Type* must be set to *Ap
 } -->
 
 ```http
-
 POST me/devices/{id}/commands
 Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
@@ -198,5 +195,3 @@ HTTP/1.1 201 OK
   }
 }
 ```
-
-

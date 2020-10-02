@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementScheduledReportRecurrence enum type"
 description: "Possible values for the recurrence of a scheduled report"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for the recurrence of a scheduled report
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Default value, specifies a single occurence|
-|daily|1|Daily|
-|weekly|2|Weekly|
-|monthly|3|Monthly|
 
-
-
-
-
-
+| Member  | Value | Description                                 |
+| :------ | :---- | :------------------------------------------ |
+| none    | 0     | Default value, specifies a single occurence |
+| daily   | 1     | Daily                                       |
+| weekly  | 2     | Weekly                                      |
+| monthly | 3     | Monthly                                     |

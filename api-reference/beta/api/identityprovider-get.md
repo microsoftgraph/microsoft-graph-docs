@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get identityProvider"
 description: "Retrieve the properties and relationships of an identityProvider object."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Retrieve the properties and relationships of an [identityProvider](../resources/
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                            |
+| Application                            | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All |
 
 The work or school account needs to belong to one of the following roles:
 * Global administrator
@@ -36,11 +36,12 @@ The work or school account needs to belong to one of the following roles:
 ```http
 GET /identityProviders/{id}
 ```
+
 ## Request headers
 
-|Name|Description|
-|:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -58,31 +59,34 @@ If successful, this method returns a `200 OK` response code and a JSON represent
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_identityprovider"
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -106,6 +110,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 ### Example 2: Retrieve a specific openIDConnectProvider (only for Azure AD B2C)
 
 #### Request
@@ -118,13 +123,14 @@ The following is an example of the request.
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
 
 #### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -156,5 +162,3 @@ Content-type: application/json
   "scope": "openid"
 }
 ```
-
-

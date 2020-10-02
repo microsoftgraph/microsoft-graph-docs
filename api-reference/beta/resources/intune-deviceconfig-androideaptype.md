@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidEapType enum type"
 description: "Extensible Authentication Protocol (EAP) Configuration Types."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Extensible Authentication Protocol (EAP) Configuration Types.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|eapTls|13|Extensible Authentication Protocol-Transport Layer Security (EAP-TLS).|
-|eapTtls|21|Extensible Authentication Protocol-Tunneled Transport Layer Security (EAP-TTLS).|
-|peap|25|Protected Extensible Authentication Protocol (PEAP).|
 
-
-
-
-
-
+| Member  | Value | Description                                                                      |
+| :------ | :---- | :------------------------------------------------------------------------------- |
+| eapTls  | 13    | Extensible Authentication Protocol-Transport Layer Security (EAP-TLS).           |
+| eapTtls | 21    | Extensible Authentication Protocol-Tunneled Transport Layer Security (EAP-TTLS). |
+| peap    | 25    | Protected Extensible Authentication Protocol (PEAP).                             |

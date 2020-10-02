@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerKioskModeIconSize enum type"
 description: "Android Device Owner Kiosk Mode managed home screen icon size."
 author: "dougeby"
@@ -18,17 +18,12 @@ Namespace: microsoft.graph
 Android Device Owner Kiosk Mode managed home screen icon size.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured; this value is ignored.|
-|smallest|1|Smallest icon size.|
-|small|2|Small icon size.|
-|regular|3|Regular icon size.|
-|large|4|Large icon size.|
-|largest|5|Largest icon size.|
 
-
-
-
-
-
+| Member        | Value | Description                            |
+| :------------ | :---- | :------------------------------------- |
+| notConfigured | 0     | Not configured; this value is ignored. |
+| smallest      | 1     | Smallest icon size.                    |
+| small         | 2     | Small icon size.                       |
+| regular       | 3     | Regular icon size.                     |
+| large         | 4     | Large icon size.                       |
+| largest       | 5     | Largest icon size.                     |

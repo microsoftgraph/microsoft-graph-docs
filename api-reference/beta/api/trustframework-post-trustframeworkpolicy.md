@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create trustFrameworkPolicy"
 description: "This operation creates a new trustFrameworkPolicy object in an Azure AD B2C tenant." 
 localization_priority: Normal
@@ -6,6 +6,7 @@ author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
+
 # Create trustFrameworkPolicy
 
 Namespace: microsoft.graph
@@ -18,27 +19,28 @@ Create new [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Policy.ReadWrite.TrustFramework|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|Policy.ReadWrite.TrustFramework|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.TrustFramework             |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Policy.ReadWrite.TrustFramework             |
 
 The work or school account must be a global administrator of the tenant.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /trustFramework/policies
 ```
 
 ## Request headers
 
-|Name|Description|
-|:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/xml. Required.|
+| Name          | Description                |
+| :------------ | :------------------------- |
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/xml. Required. |
 
 ## Request body
 
@@ -59,6 +61,7 @@ The following example creates a **trustFrameworkPolicy**.
   "truncated": true,
   "name": "create_trustframeworkpolicy_from_trustframeworkpolicy"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/trustFramework/policies
 Content-Type: application/xml
@@ -75,6 +78,7 @@ Content-Type: application/xml
   "truncated": true,
   "@odata.type": "microsoft.graph.trustFrameworkPolicy"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/xml
@@ -84,8 +88,10 @@ Location: /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
     <!---PolicyContent-->
 </TrustFrameworkPolicy>
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create trustFrameworkPolicy",
@@ -93,5 +99,3 @@ Location: /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

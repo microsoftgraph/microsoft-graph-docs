@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create a group setting"
 description: "Create a new setting, based on the templates available in groupSettingTemplates."
 localization_priority: Normal
@@ -17,15 +17,16 @@ Use this API to create a new setting, based on the templates available in [group
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)         |
+| :------------------------------------- | :-------------------------------------------------- |
+| Delegated (work or school account)     | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                      |
+| Application                            | Directory.ReadWrite.All                             |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groupSettings
 POST /groups/{id}/settings
@@ -33,12 +34,13 @@ POST /groups/{id}/settings
 
 ## Request headers
 
-| Name | Description |
-|:---------------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
-| Content-Type | application/json |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. However, the display name for the setting will be set based on the referenced settings template name.
 
 ## Response
@@ -49,12 +51,13 @@ If successful, this method returns `201 Created` response code and [groupSetting
 
 ##### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_groupsetting_from_groupsettings"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groupSettings
 Content-type: application/json
@@ -71,33 +74,41 @@ Content-length: 215
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.
+
 ##### Response
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.groupSetting"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -118,6 +129,7 @@ Content-length: 238
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create groupsetting",
@@ -127,4 +139,3 @@ Content-length: 238
   "suppressions": [
   ]
 }-->
-

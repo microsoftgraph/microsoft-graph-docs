@@ -1,4 +1,4 @@
----
+﻿---
 title: "welcomeScreenMeetingInformation enum type"
 description: "Possible values for welcome screen meeting information."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Possible values for welcome screen meeting information.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userDefined|0|User Defined, default value, no intent.|
-|showOrganizerAndTimeOnly|1|Show organizer and time only.|
-|showOrganizerAndTimeAndSubject|2|Show organizer, time and subject (subject is hidden for private meetings).|
 
-
-
-
-
-
+| Member                         | Value | Description                                                                |
+| :----------------------------- | :---- | :------------------------------------------------------------------------- |
+| userDefined                    | 0     | User Defined, default value, no intent.                                    |
+| showOrganizerAndTimeOnly       | 1     | Show organizer and time only.                                              |
+| showOrganizerAndTimeAndSubject | 2     | Show organizer, time and subject (subject is hidden for private meetings). |

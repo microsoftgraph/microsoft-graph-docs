@@ -1,4 +1,4 @@
----
+﻿---
 title: "omaSettingBoolean resource type"
 description: "OMA Settings Boolean definition."
 author: "dougeby"
@@ -15,28 +15,32 @@ Namespace: microsoft.graph
 
 OMA Settings Boolean definition.
 
-
 Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|value|Boolean|Value.|
+
+| Property    | Type    | Description                                                                               |
+| :---------- | :------ | :---------------------------------------------------------------------------------------- |
+| displayName | String  | Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md) |
+| description | String  | Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)  |
+| omaUri      | String  | OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)          |
+| value       | Boolean | Value.                                                                                    |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingBoolean"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.omaSettingBoolean",
   "displayName": "String",
@@ -45,12 +49,3 @@ Here is a JSON representation of the resource.
   "value": true
 }
 ```
-
-
-
-
-
-
-
-
-

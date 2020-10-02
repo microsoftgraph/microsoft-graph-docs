@@ -1,4 +1,4 @@
----
+﻿---
 title: "attributeMappingFunctionSchema resource type"
 description: "Describes a function that can be used in an attribute mapping to transform values during synchronization."
 localization_priority: Normal
@@ -17,16 +17,16 @@ Describes a function that can be used in an [attribute mapping](synchronization-
 
 ## Methods
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[List](../api/synchronization-synchronizationschema-functions.md) | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection|List supported attribute mapping functions.|
+| Method                                                            | Return Type                                                                                                 | Description                                 |
+| :---------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :------------------------------------------ |
+| [List](../api/synchronization-synchronizationschema-functions.md) | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection | List supported attribute mapping functions. |
 
 ## Properties
 
-| Property                   | Type                      | Description    |
-|:---------------------------|:-------------------------|:---------------|
-|name                        |String                    |Operator name. |
-|parameters                  |[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection  |Collection of function parameters.|
+| Property   | Type                                                                                                          | Description                        |
+| :--------- | :------------------------------------------------------------------------------------------------------------ | :--------------------------------- |
+| name       | String                                                                                                        | Operator name.                     |
+| parameters | [attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection | Collection of function parameters. |
 
 ## JSON representation
 
@@ -50,6 +50,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -60,5 +61,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

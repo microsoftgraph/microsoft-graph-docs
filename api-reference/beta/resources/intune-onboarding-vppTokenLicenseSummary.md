@@ -1,4 +1,4 @@
----
+﻿---
 title: "vppTokenLicenseSummary resource type"
 description: "License summary of a given app in a token."
 author: "dougeby"
@@ -18,25 +18,30 @@ Namespace: microsoft.graph
 License summary of a given app in a token.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|vppTokenId|String|Identifier of the VPP token.|
-|appleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
-|organizationName|String|The organization associated with the Apple Volume Purchase Program Token.|
-|availableLicenseCount|Int32|The number of VPP licenses available.|
-|usedLicenseCount|Int32|The number of VPP licenses in use.|
+
+| Property              | Type   | Description                                                                 |
+| :-------------------- | :----- | :-------------------------------------------------------------------------- |
+| vppTokenId            | String | Identifier of the VPP token.                                                |
+| appleId               | String | The Apple Id associated with the given Apple Volume Purchase Program Token. |
+| organizationName      | String | The organization associated with the Apple Volume Purchase Program Token.   |
+| availableLicenseCount | Int32  | The number of VPP licenses available.                                       |
+| usedLicenseCount      | Int32  | The number of VPP licenses in use.                                          |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vppTokenLicenseSummary"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.vppTokenLicenseSummary",
   "vppTokenId": "String",
@@ -46,9 +51,3 @@ Here is a JSON representation of the resource.
   "usedLicenseCount": 1024
 }
 ```
-
-
-
-
-
-

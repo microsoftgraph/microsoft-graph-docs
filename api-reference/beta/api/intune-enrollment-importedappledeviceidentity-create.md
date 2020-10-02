@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create importedAppleDeviceIdentity"
 description: "Create a new importedAppleDeviceIdentity object."
 author: "dougeby"
@@ -18,59 +18,65 @@ Namespace: microsoft.graph
 Create a new [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementServiceConfig.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementServiceConfig.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the importedAppleDeviceIdentity object.
 
 The following table shows the properties that are required when you create the importedAppleDeviceIdentity.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|serialNumber|String|Device serial number|
-|requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment|
-|requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device|
-|isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/HT202837|
-|discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple device discovery source. Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|isDeleted|Boolean|Indicates if the device is deleted from Apple Business Manager|
-|createdDateTime|DateTimeOffset|Created Date Time of the device|
-|lastContactedDateTime|DateTimeOffset|Last Contacted Date Time of the device|
-|description|String|The description of the device|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|platform|[platform](../resources/intune-enrollment-platform.md)|The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
-
-
+| Property                                     | Type                                                                 | Description                                                                                                                         |
+| :------------------------------------------- | :------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
+| id                                           | String                                                               | Key of the entity.                                                                                                                  |
+| serialNumber                                 | String                                                               | Device serial number                                                                                                                |
+| requestedEnrollmentProfileId                 | String                                                               | Enrollment profile Id admin intends to apply to the device during next enrollment                                                   |
+| requestedEnrollmentProfileAssignmentDateTime | DateTimeOffset                                                       | The time enrollment profile was assigned to the device                                                                              |
+| isSupervised                                 | Boolean                                                              | Indicates if the Apple device is supervised. More information is at: https://support.apple.com/HT202837                             |
+| discoverySource                              | [discoverySource](../resources/intune-enrollment-discoverysource.md) | Apple device discovery source. Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.                            |
+| isDeleted                                    | Boolean                                                              | Indicates if the device is deleted from Apple Business Manager                                                                      |
+| createdDateTime                              | DateTimeOffset                                                       | Created Date Time of the device                                                                                                     |
+| lastContactedDateTime                        | DateTimeOffset                                                       | Last Contacted Date Time of the device                                                                                              |
+| description                                  | String                                                               | The description of the device                                                                                                       |
+| enrollmentState                              | [enrollmentState](../resources/intune-shared-enrollmentstate.md)     | The state of the device in Intune. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. |
+| platform                                     | [platform](../resources/intune-enrollment-platform.md)               | The platform of the Device. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.                  |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAppleDeviceIdentities
 Content-type: application/json
 Content-length: 519
@@ -91,8 +97,10 @@ Content-length: 519
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 627
@@ -113,9 +121,3 @@ Content-Length: 627
   "platform": "ios"
 }
 ```
-
-
-
-
-
-

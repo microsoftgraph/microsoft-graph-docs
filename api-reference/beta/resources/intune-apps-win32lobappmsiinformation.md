@@ -1,4 +1,4 @@
----
+﻿---
 title: "win32LobAppMsiInformation resource type"
 description: "Contains MSI app properties for a Win32 App."
 author: "dougeby"
@@ -18,27 +18,32 @@ Namespace: microsoft.graph
 Contains MSI app properties for a Win32 App.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|productCode|String|The MSI product code.|
-|productVersion|String|The MSI product version.|
-|upgradeCode|String|The MSI upgrade code.|
-|requiresReboot|Boolean|Whether the MSI app requires the machine to reboot to complete installation.|
-|packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|The MSI package type. Possible values are: `perMachine`, `perUser`, `dualPurpose`.|
-|productName|String|The MSI product name.|
-|publisher|String|The MSI publisher.|
+
+| Property       | Type                                                                               | Description                                                                        |
+| :------------- | :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
+| productCode    | String                                                                             | The MSI product code.                                                              |
+| productVersion | String                                                                             | The MSI product version.                                                           |
+| upgradeCode    | String                                                                             | The MSI upgrade code.                                                              |
+| requiresReboot | Boolean                                                                            | Whether the MSI app requires the machine to reboot to complete installation.       |
+| packageType    | [win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md) | The MSI package type. Possible values are: `perMachine`, `perUser`, `dualPurpose`. |
+| productName    | String                                                                             | The MSI product name.                                                              |
+| publisher      | String                                                                             | The MSI publisher.                                                                 |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppMsiInformation"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.win32LobAppMsiInformation",
   "productCode": "String",
@@ -50,9 +55,3 @@ Here is a JSON representation of the resource.
   "publisher": "String"
 }
 ```
-
-
-
-
-
-

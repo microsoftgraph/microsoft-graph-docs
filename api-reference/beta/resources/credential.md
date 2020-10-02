@@ -1,4 +1,4 @@
----
+﻿---
 title: "credential resource type"
 description: "Indicates a single credential used for sign-in to an application."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Indicates a single credential used for sign-in to an application. For example, u
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|fieldId|String|The name of the field for this credential. e.g, username or password or phoneNumber. This is defined by the application. Must match what is in the html field on singleSignOnSettings/password object.|
-|type|String|The type for this credential. Valid values: username, password, or other.|
-|value|String|The value for this credential. e.g, mysuperhiddenpassword. Note the value for passwords is write-only, the value can never be read back.|
+| Property | Type   | Description                                                                                                                                                                                            |
+| :------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| fieldId  | String | The name of the field for this credential. e.g, username or password or phoneNumber. This is defined by the application. Must match what is in the html field on singleSignOnSettings/password object. |
+| type     | String | The type for this credential. Valid values: username, password, or other.                                                                                                                              |
+| value    | String | The value for this credential. e.g, mysuperhiddenpassword. Note the value for passwords is write-only, the value can never be read back.                                                               |
 
 ## JSON representation
 
@@ -46,6 +46,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "credential resource",
@@ -53,5 +54,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

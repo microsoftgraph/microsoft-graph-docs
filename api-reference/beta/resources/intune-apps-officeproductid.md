@@ -1,4 +1,4 @@
----
+﻿---
 title: "officeProductId enum type"
 description: "The Enum to specify the Office365 ProductIds that represent the Office365 Suite SKUs."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 The Enum to specify the Office365 ProductIds that represent the Office365 Suite SKUs.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|o365ProPlusRetail|0|Not yet documented|
-|o365BusinessRetail|1|Not yet documented|
-|visioProRetail|2|Not yet documented|
-|projectProRetail|3|Not yet documented|
 
-
-
-
-
-
+| Member             | Value | Description        |
+| :----------------- | :---- | :----------------- |
+| o365ProPlusRetail  | 0     | Not yet documented |
+| o365BusinessRetail | 1     | Not yet documented |
+| visioProRetail     | 2     | Not yet documented |
+| projectProRetail   | 3     | Not yet documented |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationSynchronizationCustomizations resource type"
 description: "Contains the list of entities to sync and their customizations, if any."
 localization_priority: Normal
@@ -68,5 +68,3 @@ This resource is member of the following data providers:
   }
 }
 ```
-
-

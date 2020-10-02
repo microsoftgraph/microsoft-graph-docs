@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskProfile resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|profileId|String|Key of the entity.|
-|profileName|String|This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.|
-|appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|The App configuration that will be used for this kiosk configuration.|
-|userAccountsConfiguration|[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md) collection|The user accounts that will be locked to this kiosk configuration. This collection can contain a maximum of 100 elements.|
+
+| Property                  | Type                                                                                             | Description                                                                                                                                                              |
+| :------------------------ | :----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| profileId                 | String                                                                                           | Key of the entity.                                                                                                                                                       |
+| profileName               | String                                                                                           | This is a friendly name used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned. |
+| appConfiguration          | [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md) | The App configuration that will be used for this kiosk configuration.                                                                                                    |
+| userAccountsConfiguration | [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md) collection              | The user accounts that will be locked to this kiosk configuration. This collection can contain a maximum of 100 elements.                                                |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskProfile"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskProfile",
   "profileId": "String",
@@ -66,9 +71,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementIntentSettingSecretConstraint resource type"
 description: "Constraint indicating that this value is a secret and will be encrypted."
 author: "dougeby"
@@ -17,31 +17,29 @@ Namespace: microsoft.graph
 
 Constraint indicating that this value is a secret and will be encrypted.
 
-
 Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementIntentSettingSecretConstraint"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingSecretConstraint"
 }
 ```
-
-
-
-
-
-

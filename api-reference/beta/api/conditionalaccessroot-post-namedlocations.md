@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create namedLocation"
 description: "Create a new namedLocation."
 localization_priority: Normal
@@ -19,10 +19,10 @@ Create a new [namedLocation](../resources/namedlocation.md) object.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)            |
+| :------------------------------------- | :----------------------------------------------------- |
 | Delegated (work or school account)     | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
-| Delegated (personal Microsoft account) | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                         |
 | Application                            | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
@@ -35,9 +35,9 @@ POST /identity/conditionalAccess/namedLocations
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 ## Request body
@@ -57,6 +57,7 @@ If successful, this method returns a `201 Created`response code and a new [ipNam
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
@@ -82,20 +83,23 @@ Content-type: application/json
     ]
 }
 ```
+
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-namedlocation-from-conditionalaccessroot-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-namedlocation-from-conditionalaccessroot-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-namedlocation-from-conditionalaccessroot-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -133,11 +137,13 @@ Content-type: application/json
     ]
 }
 ```
+
 ### Example 2: Create a countryNamedLocation
 
 #### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
@@ -191,6 +197,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create namedLocation",
@@ -198,5 +205,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

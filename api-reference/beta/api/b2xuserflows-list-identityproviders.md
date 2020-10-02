@@ -1,4 +1,4 @@
----
+﻿---
 title: "List all identityProviders in a b2xUserFlow"
 description: "List all identityProviders in a b2xUserFlow."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Get the identity providers in a [b2xUserFlow](../resources/b2xuserflows.md) obje
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application| IdentityUserFlow.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | IdentityUserFlow.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | IdentityUserFlow.ReadWrite.All              |
 
 The work or school account needs to belong to one of the following roles:
 
@@ -40,9 +40,9 @@ GET /b2xUserFlows/{id}/identityProviders
 
 ## Request headers
 
-|Name|Description|
-|:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -58,31 +58,34 @@ If successful, this method returns a `200 OK` response code and a JSON represent
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_b2xUserFlow_list_identityProviders"
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-b2xuserflow-list-identityproviders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-b2xuserflow-list-identityproviders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-b2xuserflow-list-identityproviders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -117,5 +120,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

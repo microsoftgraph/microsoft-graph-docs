@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update iosVppEBook"
 description: "Update the properties of a iosVppEBook object."
 author: "dougeby"
@@ -18,66 +18,72 @@ Namespace: microsoft.graph
 Update the properties of a [iosVppEBook](../resources/intune-books-iosvppebook.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementApps.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementApps.ReadWrite.All          |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [iosVppEBook](../resources/intune-books-iosvppebook.md) object.
 
 The following table shows the properties that are required when you create the [iosVppEBook](../resources/intune-books-iosvppebook.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|String|Name of the eBook. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
-|description|String|Description. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
-|publisher|String|Publisher. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
-|publishedDateTime|DateTimeOffset|The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
-|largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Book cover. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
-|createdDateTime|DateTimeOffset|The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the eBook was last modified. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
-|informationUrl|String|The more information Url. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|String|The privacy statement Url. Inherited from [managedEBook](../resources/intune-books-managedebook.md)|
-|vppTokenId|Guid|The Vpp token ID.|
-|appleId|String|The Apple ID associated with Vpp token.|
-|vppOrganizationName|String|The Vpp token's organization name.|
-|genres|String collection|Genres.|
-|language|String|Language.|
-|seller|String|Seller.|
-|totalLicenseCount|Int32|Total license count.|
-|usedLicenseCount|Int32|Used license count.|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
-
-
+| Property              | Type                                                     | Description                                                                                                                  |
+| :-------------------- | :------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| id                    | String                                                   | Key of the entity. Inherited from [managedEBook](../resources/intune-books-managedebook.md)                                  |
+| displayName           | String                                                   | Name of the eBook. Inherited from [managedEBook](../resources/intune-books-managedebook.md)                                  |
+| description           | String                                                   | Description. Inherited from [managedEBook](../resources/intune-books-managedebook.md)                                        |
+| publisher             | String                                                   | Publisher. Inherited from [managedEBook](../resources/intune-books-managedebook.md)                                          |
+| publishedDateTime     | DateTimeOffset                                           | The date and time when the eBook was published. Inherited from [managedEBook](../resources/intune-books-managedebook.md)     |
+| largeCover            | [mimeContent](../resources/intune-shared-mimecontent.md) | Book cover. Inherited from [managedEBook](../resources/intune-books-managedebook.md)                                         |
+| createdDateTime       | DateTimeOffset                                           | The date and time when the eBook file was created. Inherited from [managedEBook](../resources/intune-books-managedebook.md)  |
+| lastModifiedDateTime  | DateTimeOffset                                           | The date and time when the eBook was last modified. Inherited from [managedEBook](../resources/intune-books-managedebook.md) |
+| informationUrl        | String                                                   | The more information Url. Inherited from [managedEBook](../resources/intune-books-managedebook.md)                           |
+| privacyInformationUrl | String                                                   | The privacy statement Url. Inherited from [managedEBook](../resources/intune-books-managedebook.md)                          |
+| vppTokenId            | Guid                                                     | The Vpp token ID.                                                                                                            |
+| appleId               | String                                                   | The Apple ID associated with Vpp token.                                                                                      |
+| vppOrganizationName   | String                                                   | The Vpp token's organization name.                                                                                           |
+| genres                | String collection                                        | Genres.                                                                                                                      |
+| language              | String                                                   | Language.                                                                                                                    |
+| seller                | String                                                   | Seller.                                                                                                                      |
+| totalLicenseCount     | Int32                                                    | Total license count.                                                                                                         |
+| usedLicenseCount      | Int32                                                    | Used license count.                                                                                                          |
+| roleScopeTagIds       | String collection                                        | List of Scope Tags for this Entity instance.                                                                                 |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [iosVppEBook](../resources/intune-books-iosvppebook.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}
 Content-type: application/json
 Content-length: 854
@@ -112,8 +118,10 @@ Content-length: 854
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1026
@@ -149,9 +157,3 @@ Content-Length: 1026
   ]
 }
 ```
-
-
-
-
-
-

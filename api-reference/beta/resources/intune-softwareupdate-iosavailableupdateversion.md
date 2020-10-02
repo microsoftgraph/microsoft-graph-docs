@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosAvailableUpdateVersion resource type"
 description: "iOS available update version details"
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 iOS available update version details
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|productVersion|String|The version of the update.|
-|postingDateTime|DateTimeOffset|The posting date of the update.|
-|expirationDateTime|DateTimeOffset|The expiration date of the update.|
-|supportedDevices|String collection|List of supported devices for the update.|
+
+| Property           | Type              | Description                               |
+| :----------------- | :---------------- | :---------------------------------------- |
+| productVersion     | String            | The version of the update.                |
+| postingDateTime    | DateTimeOffset    | The posting date of the update.           |
+| expirationDateTime | DateTimeOffset    | The expiration date of the update.        |
+| supportedDevices   | String collection | List of supported devices for the update. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosAvailableUpdateVersion"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.iosAvailableUpdateVersion",
   "productVersion": "String",
@@ -46,9 +51,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

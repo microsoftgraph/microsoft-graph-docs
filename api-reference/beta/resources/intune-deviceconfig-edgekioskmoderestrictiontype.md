@@ -1,4 +1,4 @@
----
+﻿---
 title: "edgeKioskModeRestrictionType enum type"
 description: "Specify how the Microsoft Edge settings are restricted based on kiosk mode."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Specify how the Microsoft Edge settings are restricted based on kiosk mode.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured (unrestricted).|
-|digitalSignage|1|Interactive/Digital signage in single-app mode.|
-|normalMode|2|Normal mode (full version of Microsoft Edge).|
-|publicBrowsingSingleApp|3|Public browsing in single-app mode.|
-|publicBrowsingMultiApp|4|Public browsing (inPrivate) in multi-app mode.|
 
-
-
-
-
-
+| Member                  | Value | Description                                     |
+| :---------------------- | :---- | :---------------------------------------------- |
+| notConfigured           | 0     | Not configured (unrestricted).                  |
+| digitalSignage          | 1     | Interactive/Digital signage in single-app mode. |
+| normalMode              | 2     | Normal mode (full version of Microsoft Edge).   |
+| publicBrowsingSingleApp | 3     | Public browsing in single-app mode.             |
+| publicBrowsingMultiApp  | 4     | Public browsing (inPrivate) in multi-app mode.  |

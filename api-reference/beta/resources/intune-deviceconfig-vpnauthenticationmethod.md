@@ -1,4 +1,4 @@
----
+﻿---
 title: "vpnAuthenticationMethod enum type"
 description: "VPN Authentication Method."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 VPN Authentication Method.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|certificate|0|Authenticate with a certificate.|
-|usernameAndPassword|1|Use username and password for authentication.|
-|sharedSecret|2|Use Shared Secret for Authentication.  Only valid for iOS IKEv2.|
-|derivedCredential|3|Use Derived Credential for Authentication.|
-|azureAD|4|Use Azure AD for authentication.|
 
-
-
-
-
-
+| Member              | Value | Description                                                      |
+| :------------------ | :---- | :--------------------------------------------------------------- |
+| certificate         | 0     | Authenticate with a certificate.                                 |
+| usernameAndPassword | 1     | Use username and password for authentication.                    |
+| sharedSecret        | 2     | Use Shared Secret for Authentication.  Only valid for iOS IKEv2. |
+| derivedCredential   | 3     | Use Derived Credential for Authentication.                       |
+| azureAD             | 4     | Use Azure AD for authentication.                                 |

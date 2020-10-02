@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerGlobalProxy resource type"
 description: "Android Device Owner Global Proxy."
 author: "dougeby"
@@ -18,27 +18,26 @@ Namespace: microsoft.graph
 Android Device Owner Global Proxy.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxy"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGlobalProxy"
 }
 ```
-
-
-
-
-
-

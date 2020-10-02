@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update educationRubric"
 description: "Update the properties of educationRubric object."
 localization_priority: Normal
@@ -21,11 +21,11 @@ Updating a rubric attached to an assignment (`PATCH /education/me/assignments/{i
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| Permission type                        | Permissions (from least to most privileged)             |
+| :------------------------------------- | :------------------------------------------------------ |
 | Delegated (work or school account)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (personal Microsoft account) | Not supported.                                          |
+| Application                            | Not supported.                                          |
 
 ## HTTP request
 
@@ -38,21 +38,21 @@ PATCH /education/me/assignments/{id}/rubric
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|description|itemBody|The description of this rubric.|
-|displayName|String|The name of this rubric.|
-|grading|educationAssignmentGradeType|Whether this rubric has points or not.|
-|levels|rubricLevel collection|The collection of levels making up this rubric.|
-|qualities|rubricQuality collection|The collection of qualities making up this rubric.|
+| Property    | Type                         | Description                                        |
+| :---------- | :--------------------------- | :------------------------------------------------- |
+| description | itemBody                     | The description of this rubric.                    |
+| displayName | String                       | The name of this rubric.                           |
+| grading     | educationAssignmentGradeType | Whether this rubric has points or not.             |
+| levels      | rubricLevel collection       | The collection of levels making up this rubric.    |
+| qualities   | rubricQuality collection     | The collection of qualities making up this rubric. |
 
 ## Response
 
@@ -65,6 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_educationrubric"
@@ -78,20 +79,23 @@ Content-type: application/json
   "displayName": "Example Credit Rubric after display name patch"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationrubric-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationrubric-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationrubric-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -187,6 +191,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update educationrubric",
@@ -194,5 +199,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

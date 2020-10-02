@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementCertificationAuthority enum type"
 description: "Device Management Certification Authority Types."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Device Management Certification Authority Types.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured.|
-|microsoft|1|Microsoft Certification Authority type.|
-|digiCert|2|DigiCert Certification Authority type.|
 
-
-
-
-
-
+| Member        | Value | Description                             |
+| :------------ | :---- | :-------------------------------------- |
+| notConfigured | 0     | Not configured.                         |
+| microsoft     | 1     | Microsoft Certification Authority type. |
+| digiCert      | 2     | DigiCert Certification Authority type.  |

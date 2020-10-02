@@ -1,4 +1,4 @@
----
+﻿---
 title: "teamsCatalogApp resource type"
 description: "see teamsApp."
 author: "nkramer"
@@ -12,4 +12,3 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 see [teamsApp](teamsapp.md).
-

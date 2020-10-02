@@ -1,4 +1,4 @@
----
+﻿---
 title: "synchronizationSchema: parseExpression"
 description: "(../resources/synchronization_attributemappingsource.md) object. "
 localization_priority: Normal
@@ -18,48 +18,58 @@ Parse a given string expression into an [attributeMappingSource](../resources/sy
 For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported.|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Directory.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression
 POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpression
 
 ```
+
 ## Request headers
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer {code}|
+
+| Name          | Description   |
+| :------------ | :------------ |
+| Authorization | Bearer {code} |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|expression               |String               |Expression to parse.|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Test data object to evaluate expression against. Optional.|
-|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definition of the attribute that will be mapped to this expression. Optional.|
+| Parameter                 | Type                                                                           | Description                                                                   |
+| :------------------------ | :----------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
+| expression                | String                                                                         | Expression to parse.                                                          |
+| testInputObject           | [expressionInputObject](../resources/synchronization-expressioninputobject.md) | Test data object to evaluate expression against. Optional.                    |
+| targetAttributeDefinition | [attributeDefinition](../resources/synchronization-attributedefinition.md)     | Definition of the attribute that will be mapped to this expression. Optional. |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) object in the response body.
 
 ## Example
 
 ##### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_parseexpression"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression
 Content-type: application/json
@@ -114,22 +124,26 @@ Content-type: application/json
     }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-parseexpression-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-parseexpression-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -139,6 +153,7 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.parseExpressionResponse"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -189,6 +204,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -200,5 +216,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

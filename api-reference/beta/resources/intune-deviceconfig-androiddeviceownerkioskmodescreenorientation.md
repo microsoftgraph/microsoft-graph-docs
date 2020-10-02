@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerKioskModeScreenOrientation enum type"
 description: "Android Device Owner Kiosk Mode managed home screen orientation."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Android Device Owner Kiosk Mode managed home screen orientation.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured; this value is ignored.|
-|portrait|1|Portrait orientation.|
-|landscape|2|Landscape orientation.|
-|autoRotate|3|Auto rotate between portrait and landscape orientations.|
 
-
-
-
-
-
+| Member        | Value | Description                                              |
+| :------------ | :---- | :------------------------------------------------------- |
+| notConfigured | 0     | Not configured; this value is ignored.                   |
+| portrait      | 1     | Portrait orientation.                                    |
+| landscape     | 2     | Landscape orientation.                                   |
+| autoRotate    | 3     | Auto rotate between portrait and landscape orientations. |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "localizedDescription resource type"
 description: "Represents the localized description used to describe a term in the term store."
 author: mohitpcad
@@ -15,24 +15,28 @@ Namespace: microsoft.graph.termStore
 
 Represents the localized description used to describe a [term] in the term [store].
 
-
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|description|String|The description in the localized language.|
-|languageTag|String|The language tag for the label.|
+
+| Property    | Type   | Description                                |
+| :---------- | :----- | :----------------------------------------- |
+| description | String | The description in the localized language. |
+| languageTag | String | The language tag for the label.            |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.termStore.localizedDescription"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.termStore.localizedDescription",
   "description": "String",
@@ -58,5 +62,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

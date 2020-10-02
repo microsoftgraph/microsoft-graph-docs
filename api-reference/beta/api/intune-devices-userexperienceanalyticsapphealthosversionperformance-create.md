@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create userExperienceAnalyticsAppHealthOSVersionPerformance"
 description: "Create a new userExperienceAnalyticsAppHealthOSVersionPerformance object."
 author: "dougeby"
@@ -18,54 +18,60 @@ Namespace: microsoft.graph
 Create a new [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the userExperienceAnalyticsAppHealthOSVersionPerformance object.
 
 The following table shows the properties that are required when you create the userExperienceAnalyticsAppHealthOSVersionPerformance.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics OS version performance object.|
-|osVersion|String|The OS version installed on the device.|
-|osBuildNumber|String|The OS build number installed on the device.|
-|activeDeviceCount|Int32|The number of active devices for the OS version. Valid values -2147483648 to 2147483647|
-|meanTimeToFailureInMinutes|Int32|The mean time to failure for the OS version in minutes. Valid values -2147483648 to 2147483647|
-|osVersionAppHealthScore|Double|The app health score of the OS version. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|osVersionAppHealthStatus|String|The overall app health status of the OS version.|
-
-
+| Property                   | Type   | Description                                                                                          |
+| :------------------------- | :----- | :--------------------------------------------------------------------------------------------------- |
+| id                         | String | The unique identifier of the user experience analytics OS version performance object.                |
+| osVersion                  | String | The OS version installed on the device.                                                              |
+| osBuildNumber              | String | The OS build number installed on the device.                                                         |
+| activeDeviceCount          | Int32  | The number of active devices for the OS version. Valid values -2147483648 to 2147483647              |
+| meanTimeToFailureInMinutes | Int32  | The mean time to failure for the OS version in minutes. Valid values -2147483648 to 2147483647       |
+| osVersionAppHealthScore    | Double | The app health score of the OS version. Valid values -1.79769313486232E+308 to 1.79769313486232E+308 |
+| osVersionAppHealthStatus   | String | The overall app health status of the OS version.                                                     |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [userExperienceAnalyticsAppHealthOSVersionPerformance](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance
 Content-type: application/json
 Content-length: 357
@@ -82,8 +88,10 @@ Content-length: 357
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 406
@@ -99,9 +107,3 @@ Content-Length: 406
   "osVersionAppHealthStatus": "Os Version App Health Status value"
 }
 ```
-
-
-
-
-
-

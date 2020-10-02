@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create trustFrameworkKeySet"
 description: "Create a new **trustFrameworkKeySet** object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). The I
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All	|
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | TrustFrameworkKeySet.ReadWrite.All	 |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All          |
 
 ## HTTP request
 
@@ -35,10 +35,10 @@ POST /trustFramework/keySets
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
-|Content-type | application/json. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -51,6 +51,7 @@ If successful, this method returns a `201 Created` response code, a location hea
 ## Examples
 
 ### Example 1: Create an empty keyset
+
 This is one of the most useful operations. First, you create an empty keyset. Then, in the new keyset, you can generate a key, upload a manual secret, and upload a certificate or a PKCS12 key. 
 
 #### Request
@@ -58,6 +59,7 @@ This is one of the most useful operations. First, you create an empty keyset. Th
 The following example shows the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework1"
@@ -71,20 +73,23 @@ Content-type: application/json
   "id": "keyset1"  
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-trustframeworkkeyset-from-trustframework-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-trustframeworkkeyset-from-trustframework-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-trustframeworkkeyset-from-trustframework-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -116,6 +121,7 @@ This is an advanced scenario where you need to know the [RFC 7517](https://tools
 #### Request
 
 The following example shows the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework"
@@ -198,6 +204,7 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create trustFrameworkKeySet",
@@ -205,5 +212,3 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

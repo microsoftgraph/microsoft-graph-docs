@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidManagedAppSafetyNetDeviceAttestationType enum type"
 description: "An admin enforced Android SafetyNet Device Attestation requirement on a managed app."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 An admin enforced Android SafetyNet Device Attestation requirement on a managed app.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|no requirement set|
-|basicIntegrity|1|require that Android device passes SafetyNet Basic Integrity validation|
-|basicIntegrityAndDeviceCertification|2|require that Android device passes SafetyNet Basic Integrity and Device Certification validations|
 
-
-
-
-
-
+| Member                               | Value | Description                                                                                       |
+| :----------------------------------- | :---- | :------------------------------------------------------------------------------------------------ |
+| none                                 | 0     | no requirement set                                                                                |
+| basicIntegrity                       | 1     | require that Android device passes SafetyNet Basic Integrity validation                           |
+| basicIntegrityAndDeviceCertification | 2     | require that Android device passes SafetyNet Basic Integrity and Device Certification validations |

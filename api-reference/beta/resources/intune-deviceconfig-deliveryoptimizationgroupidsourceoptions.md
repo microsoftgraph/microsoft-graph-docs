@@ -1,4 +1,4 @@
----
+﻿---
 title: "deliveryOptimizationGroupIdSourceOptions resource type"
 description: "Group id options type"
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 Group id options type
 
-
 Inherits from [deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|groupIdSourceOption|[deliveryOptimizationGroupIdOptionsType](../resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)|Set this policy to restrict peer selection to a specific source. Possible values are: `notConfigured`, `adSite`, `authenticatedDomainSid`, `dhcpUserOption`, `dnsSuffix`.|
+
+| Property            | Type                                                                                                                 | Description                                                                                                                                                               |
+| :------------------ | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| groupIdSourceOption | [deliveryOptimizationGroupIdOptionsType](../resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md) | Set this policy to restrict peer selection to a specific source. Possible values are: `notConfigured`, `adSite`, `authenticatedDomainSid`, `dhcpUserOption`, `dnsSuffix`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSourceOptions"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deliveryOptimizationGroupIdSourceOptions",
   "groupIdSourceOption": "String"
 }
 ```
-
-
-
-
-
-

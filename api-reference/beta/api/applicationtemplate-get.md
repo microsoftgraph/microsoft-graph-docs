@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get applicationTemplate"
 description: "Retrieve the properties and relationships of applicationtemplate object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Retrieve the properties of an [applicationTemplate](../resources/applicationtemp
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | None. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | None. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | None.                                       |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | None.                                       |
 
 Additional permissions are not required to call this API, as long as your application has a valid access token to call Microsoft Graph.
 
@@ -43,8 +43,8 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description   |
+| :------------ | :------------ |
 | Authorization | Bearer {code} |
 
 ## Request body
@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and the requested [a
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplate"
@@ -70,20 +71,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -116,6 +120,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get applicationTemplate",
@@ -123,5 +128,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

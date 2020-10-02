@@ -1,4 +1,4 @@
----
+﻿---
 title: "remoteAssistanceOnboardingStatus enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,17 +16,9 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notOnboarded|0|Not yet documented|
-|onboarding|1|Not yet documented|
-|onboarded|2|Not yet documented|
 
-
-
-
-
-
-
-
-
+| Member       | Value | Description        |
+| :----------- | :---- | :----------------- |
+| notOnboarded | 0     | Not yet documented |
+| onboarding   | 1     | Not yet documented |
+| onboarded    | 2     | Not yet documented |

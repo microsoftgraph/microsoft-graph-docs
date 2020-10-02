@@ -1,4 +1,4 @@
----
+﻿---
 title: "userSet complex type"
 description: "The abstract base type for types used in the request, approval, and assignment review settings of an access package assignment policy."
 localization_priority: Normal
@@ -17,8 +17,8 @@ Used in the request, approval, and assignment review settings of an [access pack
 
 ## Properties
 
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
+| Property | Type    | Description                                                                                              |
+| :------- | :------ | :------------------------------------------------------------------------------------------------------- |
 | isBackup | Boolean | For a user in an approval stage, this property indicates whether the user is a backup fallback approver. |
 
 ## JSON representation
@@ -40,10 +40,9 @@ The following is a JSON representation of userSet.  Note that a userSet is an ab
 }
 ```
 
-
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "userSet complex type",
@@ -51,5 +50,3 @@ The following is a JSON representation of userSet.  Note that a userSet is an ab
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

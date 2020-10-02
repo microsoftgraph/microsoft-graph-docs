@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceHealthScriptIntegerParameter resource type"
 description: "Properties of the  Integer script parameter."
 author: "dougeby"
@@ -17,29 +17,33 @@ Namespace: microsoft.graph
 
 Properties of the  Integer script parameter.
 
-
 Inherits from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|name|String|The name of the param Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|String|The description of the param Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|isRequired|Boolean|Whether the param is required Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|Boolean|Whether Apply DefaultValue When Not Assigned Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|defaultValue|Int32|The default value of Integer param. Valid values -2147483648 to 2147483647|
+
+| Property                         | Type    | Description                                                                                                                                           |
+| :------------------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name                             | String  | The name of the param Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)                        |
+| description                      | String  | The description of the param Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)                 |
+| isRequired                       | Boolean | Whether the param is required Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)                |
+| applyDefaultValueWhenNotAssigned | Boolean | Whether Apply DefaultValue When Not Assigned Inherited from [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) |
+| defaultValue                     | Int32   | The default value of Integer param. Valid values -2147483648 to 2147483647                                                                            |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceHealthScriptIntegerParameter"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptIntegerParameter",
   "name": "String",
@@ -49,9 +53,3 @@ Here is a JSON representation of the resource.
   "defaultValue": 1024
 }
 ```
-
-
-
-
-
-

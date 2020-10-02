@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update shiftPreferences"
 description: "Update a user's shift preferences."
 author: "akumar39"
@@ -17,11 +17,11 @@ Update the properties and relationships of a [shiftPreferences](../resources/shi
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | UserShiftPreferences.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | User.ReadWrite.All                          |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | UserShiftPreferences.ReadWrite.All          |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -35,12 +35,13 @@ PATCH /users/{userId}/settings/shiftPreferences
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json. Required.  |
+| Header        | Value                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of a [shiftPreferences](../resources/shiftpreferences.md) object.
 
 ## Response
@@ -53,12 +54,13 @@ If successful, this method returns a `204 NO CONTENT` response code.
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "shift-get"
 }-->
+
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences
 Content-type: application/json
@@ -84,26 +86,30 @@ Content-type: application/json
     ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ---
-
 
 ### Response
 
@@ -120,6 +126,7 @@ HTTP/1.1 204 NO CONTENT
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-12-12 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -131,4 +138,3 @@ HTTP/1.1 204 NO CONTENT
   ]
 }
 -->
-

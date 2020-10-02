@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create reviewSet"
 description: "Create an eDiscovery review set."
 localization_priority: Normal
@@ -18,10 +18,10 @@ Create a new [reviewSet](../resources/reviewset.md) object. The request body con
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | User.Read                                   |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -33,17 +33,17 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
 
 In the request body, supply JSON representation of the [reviewSet](../resources/reviewset.md).  The following table lists the required properties.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-| displayName  | string      | The name of the review set. |
+| Property    | Type   | Description                 |
+| :---------- | :----- | :-------------------------- |
+| displayName | string | The name of the review set. |
 
 ## Response
 
@@ -56,6 +56,7 @@ If successful, this method returns a `201 Created` response code and a [reviewSe
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "post_reviewset"
@@ -69,20 +70,23 @@ Content-type: application/json
   "displayName": "My Reviewset 3",
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reviewset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-reviewset-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reviewset-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -116,6 +120,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update reviewset",
@@ -123,5 +128,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

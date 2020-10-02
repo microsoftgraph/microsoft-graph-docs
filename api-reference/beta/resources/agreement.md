@@ -1,4 +1,4 @@
----
+﻿---
 title: "agreement resource type"
 description: "Represents a tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD)."
 localization_priority: Normal
@@ -17,36 +17,37 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Create agreements](../api/agreement-post-agreements.md) | [agreement](agreement.md) | Create a new agreement by posting to the agreement collection. |
-| [List agreements](../api/agreement-list.md) | [agreement](agreement.md) collection | Get an agreement object collection. |
-| [Get agreement](../api/agreement-get.md) | [agreement](agreement.md) | Read properties and relationships of an agreement object. |
-| [Update agreement](../api/agreement-update.md) | [agreement](agreement.md) | Update an agreement object. |
-| [Delete agreement](../api/agreement-delete.md) | None | Delete an agreement object. |
+| Method                                                   | Return Type                          | Description                                                    |
+| :------------------------------------------------------- | :----------------------------------- | :------------------------------------------------------------- |
+| [Create agreements](../api/agreement-post-agreements.md) | [agreement](agreement.md)            | Create a new agreement by posting to the agreement collection. |
+| [List agreements](../api/agreement-list.md)              | [agreement](agreement.md) collection | Get an agreement object collection.                            |
+| [Get agreement](../api/agreement-get.md)                 | [agreement](agreement.md)            | Read properties and relationships of an agreement object.      |
+| [Update agreement](../api/agreement-update.md)           | [agreement](agreement.md)            | Update an agreement object.                                    |
+| [Delete agreement](../api/agreement-delete.md)           | None                                 | Delete an agreement object.                                    |
+
 <!--
 | [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
 | [List files](../api/agreement-list-files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
 -->
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String|Display name of the agreement. The display name is used for internal tracking of the agreement but is not shown to end users who view the agreement.|
-|id|String| Read-only.|
-|isPerDeviceAcceptanceRequired|Boolean|This setting enables you to require end users to accept this agreement on every device that they are accessing it from. The end user will be required to register their device in Azure AD, if they haven't already done so.|
-|isViewingBeforeAcceptanceRequired|Boolean|Indicates whether the user has to expand the agreement before accepting.|
-|termsExpiration|[termsExpiration](termsexpiration.md)| Expiration schedule and frequency of agreement for all users. |
-|userReacceptRequiredFrequency|Duration|The duration after which the user must re-accept the terms of use. The value is represented in ISO 8601 format for durations.|
 
+| Property                          | Type                                  | Description                                                                                                                                                                                                                  |
+| :-------------------------------- | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName                       | String                                | Display name of the agreement. The display name is used for internal tracking of the agreement but is not shown to end users who view the agreement.                                                                         |
+| id                                | String                                | Read-only.                                                                                                                                                                                                                   |
+| isPerDeviceAcceptanceRequired     | Boolean                               | This setting enables you to require end users to accept this agreement on every device that they are accessing it from. The end user will be required to register their device in Azure AD, if they haven't already done so. |
+| isViewingBeforeAcceptanceRequired | Boolean                               | Indicates whether the user has to expand the agreement before accepting.                                                                                                                                                     |
+| termsExpiration                   | [termsExpiration](termsexpiration.md) | Expiration schedule and frequency of agreement for all users.                                                                                                                                                                |
+| userReacceptRequiredFrequency     | Duration                              | The duration after which the user must re-accept the terms of use. The value is represented in ISO 8601 format for durations.                                                                                                |
 
 ## Relationships
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|acceptances|[agreementAcceptance](agreementacceptance.md) collection|Read-only. Information about acceptances of this agreement.|
-|files|[agreementFileLocalization](agreementfilelocalization.md) collection| PDFs linked to this agreement. **Note:** This property is in the process of being deprecated. Usethe  **file** property instead.|
-|file|[agreementFile](agreementfile.md) | PDFs linked to this agreement.|
 
+| Relationship | Type                                                                 | Description                                                                                                                      |
+| :----------- | :------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| acceptances  | [agreementAcceptance](agreementacceptance.md) collection             | Read-only. Information about acceptances of this agreement.                                                                      |
+| files        | [agreementFileLocalization](agreementfilelocalization.md) collection | PDFs linked to this agreement. **Note:** This property is in the process of being deprecated. Usethe  **file** property instead. |
+| file         | [agreementFile](agreementfile.md)                                    | PDFs linked to this agreement.                                                                                                   |
 
 ## JSON representation
 
@@ -77,6 +78,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -87,5 +89,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

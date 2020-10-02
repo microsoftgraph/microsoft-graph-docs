@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create openShift"
 description: "Create an instance of openshift object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Create an instance of an [openshift](../resources/openshift.md) object.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -35,10 +35,10 @@ POST /teams/{id}/schedule/openShifts
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token}. Required. |
-| Content-type | application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -53,6 +53,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request"
 }-->
@@ -151,6 +152,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get openShift",
@@ -158,5 +160,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

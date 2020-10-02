@@ -1,4 +1,4 @@
----
+﻿---
 title: "vpnClientAuthenticationType enum type"
 description: "The type of VPN client authentication type"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 The type of VPN client authentication type
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|userAuthentication|0|User Authentication|
-|deviceAuthentication|1|Device Authentication|
 
-
-
-
-
-
+| Member               | Value | Description           |
+| :------------------- | :---- | :-------------------- |
+| userAuthentication   | 0     | User Authentication   |
+| deviceAuthentication | 1     | Device Authentication |

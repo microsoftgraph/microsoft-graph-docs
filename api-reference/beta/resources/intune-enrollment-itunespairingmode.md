@@ -1,4 +1,4 @@
----
+﻿---
 title: "iTunesPairingMode enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|disallow|0|Pairing is not allowed|
-|allow|1|Pairing allowed|
-|requiresCertificate|2|Certificate required to pair with iTunes|
 
-
-
-
-
-
+| Member              | Value | Description                              |
+| :------------------ | :---- | :--------------------------------------- |
+| disallow            | 0     | Pairing is not allowed                   |
+| allow               | 1     | Pairing allowed                          |
+| requiresCertificate | 2     | Certificate required to pair with iTunes |

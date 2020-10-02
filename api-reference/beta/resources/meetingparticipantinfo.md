@@ -1,4 +1,4 @@
----
+﻿---
 title: "meetingParticipantInfo resource type"
 description: "Information about a participant in a meeting."
 author: "ananmishr"
@@ -17,10 +17,10 @@ Information about a participant in a meeting.
 
 ## Properties
 
-| Property       | Type                          | Description                              |
-|:---------------|:------------------------------|:-----------------------------------------|
-| identity       | [identitySet](identityset.md) | Identity information of the participant. |
-| upn            | String                        | User principal name of the participant.  |
+| Property | Type                          | Description                              |
+| :------- | :---------------------------- | :--------------------------------------- |
+| identity | [identitySet](identityset.md) | Identity information of the participant. |
+| upn      | String                        | User principal name of the participant.  |
 
 ## JSON representation
 
@@ -33,6 +33,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.meetingParticipantInfo"
 }-->
+
 ```json
 {
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
@@ -42,6 +43,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -52,5 +54,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

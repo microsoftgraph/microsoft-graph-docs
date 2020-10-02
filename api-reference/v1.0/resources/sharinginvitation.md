@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -37,11 +37,11 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-| Property Name  | Type            | Description
-|:---------------|:----------------|:------------------------------------------
-| email          | String          | The email address provided for the recipient of the sharing invitation. Read-only.
-| invitedBy      | [identitySet][] | Provides information about who sent the invitation that created this permission, if that information is available. Read-only.
-| signInRequired | Boolean         | If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.
+| Property Name  | Type            | Description                                                                                                                   |
+| :------------- | :-------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| email          | String          | The email address provided for the recipient of the sharing invitation. Read-only.                                            |
+| invitedBy      | [identitySet][] | Provides information about who sent the invitation that created this permission, if that information is available. Read-only. |
+| signInRequired | Boolean         | If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.                     |
 
 ## Remarks
 
@@ -57,4 +57,3 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/SharingInvitation"
 } -->
-

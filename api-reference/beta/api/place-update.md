@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update place"
 description: "Update the properties of place object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Update the properties of [place](../resources/place.md) object, which can be a [
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Place.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Place.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported                               |
 
 ## HTTP request
 
@@ -35,32 +35,32 @@ PATCH /places/{id | emailAddress}
 
 ## Request headers
 
-| Name       | Value|
-|:-----------|:------|
-| Authorization  | Bearer {token}. Required. |
-| Content-Type | application/json. Required. |
+| Name          | Value                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room** or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property               | Type                                              | Description |
-|:-----------------------|:--------------------------------------------------|:--|
-| address                | [physicalAddress](../resources/physicaladdress.md)             | The street address of the room or roomlist. |
-| audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](../resources/room.md)                            | Type of room. Possible values are `Standard` and `Reserved`. |
-| building               | String                                            | Specifies the building name or building number that the room is in. |
-| capacity               | String                                            | Specifies the capacity of the room. |
-| displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
-| floorLabel             | String                                            | Specifies the floor letter that the room is on. |
-| floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
-| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Specifies the room or roomlist location in latitude, longitude and optionally, altitude coordinates. |
-| isWheelchairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
-| label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
-| nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
-| phone                  | String                                            | The phone number of the room or roomlist. |
-| tags                   | String collection                                 | Specifies additional features of the room, for example, details like the type of view or furniture type. |
-| videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
+| Property               | Type                                                           | Description                                                                                              |
+| :--------------------- | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------- |
+| address                | [physicalAddress](../resources/physicaladdress.md)             | The street address of the room or roomlist.                                                              |
+| audioDeviceName        | String                                                         | Specifies the name of the audio device in the room.                                                      |
+| bookingType            | [bookingType](../resources/room.md)                            | Type of room. Possible values are `Standard` and `Reserved`.                                             |
+| building               | String                                                         | Specifies the building name or building number that the room is in.                                      |
+| capacity               | String                                                         | Specifies the capacity of the room.                                                                      |
+| displayDeviceName      | String                                                         | Specifies the name of the display device in the room.                                                    |
+| floorLabel             | String                                                         | Specifies the floor letter that the room is on.                                                          |
+| floorNumber            | Int32                                                          | Specifies the floor number that the room is on.                                                          |
+| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Specifies the room or roomlist location in latitude, longitude and optionally, altitude coordinates.     |
+| isWheelchairAccessible | Boolean                                                        | Specifies whether the room is wheelchair accessible.                                                     |
+| label                  | String                                                         | Specifies a descriptive label for the room, for example, a number or name.                               |
+| nickname               | String                                                         | Specifies a nickname for the room, for example, "conf room".                                             |
+| phone                  | String                                                         | The phone number of the room or roomlist.                                                                |
+| tags                   | String collection                                              | Specifies additional features of the room, for example, details like the type of view or furniture type. |
+| videoDeviceName        | String                                                         | Specifies the name of the video device in the room.                                                      |
 
 ## Response
 
@@ -70,17 +70,19 @@ If successful, this method returns a `200 OK` response code and an updated [plac
 
 ### Example 1: Update a room
 
+
+
 ### Request
 
 The following is an example of the request.
 
-
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_room"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/places/cf100@contoso.com
 Content-type: application/json
@@ -95,20 +97,23 @@ Content-length: 285
   "isWheelchairAccessible": false
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -165,17 +170,19 @@ Content-type: application/json
 
 ### Example 2: Update a roomlist
 
+
+
 ### Request
 
 The following is an example of the request.
 
-
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_roomlist"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/places/Building1RroomList@contoso.onmicrosoft.com
 Content-type: application/json
@@ -200,20 +207,23 @@ Content-type: application/json
  }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -256,9 +266,9 @@ Content-type: application/json
 }
 ```
 
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update place",
@@ -266,5 +276,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

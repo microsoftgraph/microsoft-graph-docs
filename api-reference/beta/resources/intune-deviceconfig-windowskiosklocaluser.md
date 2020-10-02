@@ -1,4 +1,4 @@
----
+﻿---
 title: "windowsKioskLocalUser resource type"
 description: "The class used to identify a local account for the kiosk configuration"
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 The class used to identify a local account for the kiosk configuration
 
-
 Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|userName|String|The local user that will be locked to this kiosk configuration|
+
+| Property | Type   | Description                                                    |
+| :------- | :----- | :------------------------------------------------------------- |
+| userName | String | The local user that will be locked to this kiosk configuration |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskLocalUser"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.windowsKioskLocalUser",
   "userName": "String"
 }
 ```
-
-
-
-
-
-

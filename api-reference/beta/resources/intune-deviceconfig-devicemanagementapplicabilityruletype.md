@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementApplicabilityRuleType enum type"
 description: "Supported Applicability rule types for Device Configuration"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Supported Applicability rule types for Device Configuration
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|include|0|Include|
-|exclude|1|Exclude|
 
-
-
-
-
-
+| Member  | Value | Description |
+| :------ | :---- | :---------- |
+| include | 0     | Include     |
+| exclude | 1     | Exclude     |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidWorkProfileCrossProfileDataSharingType enum type"
 description: "Android Work Profile cross profile data sharing type."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Android Work Profile cross profile data sharing type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|deviceDefault|0|Device default value, no intent.|
-|preventAny|1|Prevent any sharing.|
-|allowPersonalToWork|2|Allow data sharing request from personal profile to work profile.|
-|noRestrictions|3|No restrictions on sharing.|
 
-
-
-
-
-
+| Member              | Value | Description                                                       |
+| :------------------ | :---- | :---------------------------------------------------------------- |
+| deviceDefault       | 0     | Device default value, no intent.                                  |
+| preventAny          | 1     | Prevent any sharing.                                              |
+| allowPersonalToWork | 2     | Allow data sharing request from personal profile to work profile. |
+| noRestrictions      | 3     | No restrictions on sharing.                                       |

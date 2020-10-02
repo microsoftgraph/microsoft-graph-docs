@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update deviceComplianceUserStatus"
 description: "Update the properties of a deviceComplianceUserStatus object."
 author: "dougeby"
@@ -18,53 +18,59 @@ Namespace: microsoft.graph
 Update the properties of a [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses/{deviceComplianceUserStatusId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.
 
 The following table shows the properties that are required when you create the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|userDisplayName|String|User name of the DevicePolicyStatus.|
-|devicesCount|Int32|Devices count for that user.|
-|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
-|userPrincipalName|String|UserPrincipalName.|
-
-
+| Property             | Type                                                               | Description                                                                                                                                                             |
+| :------------------- | :----------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | String                                                             | Key of the entity.                                                                                                                                                      |
+| userDisplayName      | String                                                             | User name of the DevicePolicyStatus.                                                                                                                                    |
+| devicesCount         | Int32                                                              | Devices count for that user.                                                                                                                                            |
+| status               | [complianceStatus](../resources/intune-shared-compliancestatus.md) | Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`. |
+| lastReportedDateTime | DateTimeOffset                                                     | Last modified date time of the policy report.                                                                                                                           |
+| userPrincipalName    | String                                                             | UserPrincipalName.                                                                                                                                                      |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses/{deviceComplianceUserStatusId}
 Content-type: application/json
 Content-length: 287
@@ -80,8 +86,10 @@ Content-length: 287
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 336
@@ -96,9 +104,3 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
-

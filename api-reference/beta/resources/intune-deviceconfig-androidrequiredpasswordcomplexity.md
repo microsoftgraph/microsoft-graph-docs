@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidRequiredPasswordComplexity enum type"
 description: "The password complexity types that can be set on Android. One of: NONE, LOW, MEDIUM, HIGH. This is an API targeted to Android 11+."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 The password complexity types that can be set on Android. One of: NONE, LOW, MEDIUM, HIGH. This is an API targeted to Android 11+.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|Device default value, no password.|
-|low|1|The required password complexity on the device is of type low as defined by the Android documentation.|
-|medium|2|The required password complexity on the device is of type medium as defined by the Android documentation.|
-|high|3|The required password complexity on the device is of type high as defined by the Android documentation.|
 
-
-
-
-
-
+| Member | Value | Description                                                                                               |
+| :----- | :---- | :-------------------------------------------------------------------------------------------------------- |
+| none   | 0     | Device default value, no password.                                                                        |
+| low    | 1     | The required password complexity on the device is of type low as defined by the Android documentation.    |
+| medium | 2     | The required password complexity on the device is of type medium as defined by the Android documentation. |
+| high   | 3     | The required password complexity on the device is of type high as defined by the Android documentation.   |

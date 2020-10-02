@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update iosDeviceFeaturesConfiguration"
 description: "Update the properties of a iosDeviceFeaturesConfiguration object."
 author: "dougeby"
@@ -18,72 +18,78 @@ Namespace: microsoft.graph
 Update the properties of a [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) object.
 
 The following table shows the properties that are required when you create the [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md) collection|An array of AirPrint printers that should always be shown. This collection can contain a maximum of 500 elements. Inherited from [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
-|assetTagTemplate|String|Asset tag information for the device, displayed on the login window and lock screen.|
-|contentFilterSettings|[iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)|Gets or sets iOS Web Content Filter settings, supervised mode only|
-|lockScreenFootnote|String|A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.|
-|homeScreenDockIcons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection|A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.|
-|homeScreenPages|[iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) collection|A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.|
-|notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
-|singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
-|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. Possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
-|wallpaperImage|[mimeContent](../resources/intune-shared-mimecontent.md)|A wallpaper image must be in either PNG or JPEG format. It requires a supervised device with iOS 8 or later version.|
-|singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Gets or sets a single sign-on extension profile. Deprecated: use IOSSingleSignOnExtension instead.|
-|iosSingleSignOnExtension|[iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
-
-
+| Property                                    | Type                                                                                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                                          | String                                                                                                                         | Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                                  |
+| lastModifiedDateTime                        | DateTimeOffset                                                                                                                 | DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                              |
+| roleScopeTagIds                             | String collection                                                                                                              | List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                        |
+| supportsScopeTags                           | Boolean                                                                                                                        | Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) |
+| deviceManagementApplicabilityRuleOsEdition  | [deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)   | The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                       |
+| deviceManagementApplicabilityRuleOsVersion  | [deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)   | The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                  |
+| deviceManagementApplicabilityRuleDeviceMode | [deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md) | The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                 |
+| createdDateTime                             | DateTimeOffset                                                                                                                 | DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                    |
+| description                                 | String                                                                                                                         | Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                             |
+| displayName                                 | String                                                                                                                         | Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                    |
+| version                                     | Int32                                                                                                                          | Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                |
+| airPrintDestinations                        | [airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md) collection                                      | An array of AirPrint printers that should always be shown. This collection can contain a maximum of 500 elements. Inherited from [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)                                                                                                                                                                                                                                           |
+| assetTagTemplate                            | String                                                                                                                         | Asset tag information for the device, displayed on the login window and lock screen.                                                                                                                                                                                                                                                                                                                                                                                                        |
+| contentFilterSettings                       | [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)                                         | Gets or sets iOS Web Content Filter settings, supervised mode only                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| lockScreenFootnote                          | String                                                                                                                         | A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.                                                                                                                                                                                                                                                                                                                                                                                                 |
+| homeScreenDockIcons                         | [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection                                          | A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.                                                                                                                                                                                                                                                                                                                                                                         |
+| homeScreenPages                             | [iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) collection                                          | A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.                                                                                                                                                                                                                                                                                                                                                                                                  |
+| notificationSettings                        | [iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) collection                              | Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.                                                                                                                                                                                                                                                                                                                         |
+| singleSignOnSettings                        | [iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)                                         | The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.                                                                                                                                                                                                                                                                                                                                                                                                 |
+| wallpaperDisplayLocation                    | [iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)                                 | A wallpaper display location specifier. Possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.                                                                                                                                                                                                                                                                                                                                                             |
+| wallpaperImage                              | [mimeContent](../resources/intune-shared-mimecontent.md)                                                                       | A wallpaper image must be in either PNG or JPEG format. It requires a supervised device with iOS 8 or later version.                                                                                                                                                                                                                                                                                                                                                                        |
+| singleSignOnExtension                       | [singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)                                             | Gets or sets a single sign-on extension profile. Deprecated: use IOSSingleSignOnExtension instead.                                                                                                                                                                                                                                                                                                                                                                                          |
+| iosSingleSignOnExtension                    | [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)                                       | Gets or sets a single sign-on extension profile.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
 Content-length: 6716
@@ -294,8 +300,10 @@ Content-length: 6716
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 6888
@@ -507,9 +515,3 @@ Content-Length: 6888
   }
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "invitationParticipantInfo resource type"
 description: "Represents an entity that is being invited to a group call."
 author: "ananmishr"
@@ -17,11 +17,11 @@ Represents an entity that is being invited to a group call.
 
 ## Properties
 
-| Property                           | Type                          | Description                                                                          |
-| :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | String                        | The type of endpoint. Possible values are: `default`, `voicemail`. |
-| identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                   |
-| replacesCallId                     | String                        | Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added. |
+| Property       | Type                          | Description                                                                                                                  |
+| :------------- | :---------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| endpointType   | String                        | The type of endpoint. Possible values are: `default`, `voicemail`.                                                           |
+| identity       | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                                                           |
+| replacesCallId | String                        | Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added. |
 
 ## JSON representation
 
@@ -35,6 +35,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.invitationParticipantInfo"
 }-->
+
 ```json
 {
   "endpointType": "default | voicemail",
@@ -45,6 +46,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -55,5 +57,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

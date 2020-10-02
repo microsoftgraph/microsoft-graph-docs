@@ -1,4 +1,4 @@
----
+﻿---
 title: "List availableProviderTypes"
 description: "Retrieve all available identity provider types in the directory."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Retrieves all identity provider types available in a directory.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                            |
+| Application                            | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All |
 
 The work or school account needs to belong to one of the following roles:
 * Global administrator
@@ -39,11 +39,12 @@ GET /identityProviders/availableProviderTypes
 
 ## Request headers
 
-|Name|Description|
-|:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -53,33 +54,37 @@ If successful, this function returns a `200 OK` response code and a String colle
 ## Example
 
 ### Request
+
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "identityprovider_availableprovidertypes"
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/identityprovider-availableprovidertypes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/identityprovider-availableprovidertypes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -94,7 +99,7 @@ The following is an example of the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -114,5 +119,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "inferenceData resource type"
 description: "inferenceData resource type"
 localization_priority: Normal
@@ -17,10 +17,10 @@ The [inferenceData](inferencedata.md) resource type provides additional detail a
 
 ## Properties
 
-| Property              | Type        | Description                                                                     |
-|:----------------------|:------------|:--------------------------------------------------------------------------------|
-|confidenceScore        |Double       | Confidence score reflecting the accuracy of the data inferred about the user.   |
-|userHasVerifiedAccuracy|Boolean      | Records if the user has confirmed this inference as being True or False.        |
+| Property                | Type    | Description                                                                   |
+| :---------------------- | :------ | :---------------------------------------------------------------------------- |
+| confidenceScore         | Double  | Confidence score reflecting the accuracy of the data inferred about the user. |
+| userHasVerifiedAccuracy | Boolean | Records if the user has confirmed this inference as being True or False.      |
 
 ## JSON representation
 
@@ -44,6 +44,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "inferenceData resource",
@@ -51,4 +52,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

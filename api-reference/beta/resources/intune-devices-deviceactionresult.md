@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceActionResult resource type"
 description: "Device action result"
 author: "dougeby"
@@ -18,24 +18,29 @@ Namespace: microsoft.graph
 Device action result
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|actionName|String|Action name|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|State of the action. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|startDateTime|DateTimeOffset|Time the action was initiated|
-|lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated|
+
+| Property            | Type                                                     | Description                                                                                                          |
+| :------------------ | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
+| actionName          | String                                                   | Action name                                                                                                          |
+| actionState         | [actionState](../resources/intune-shared-actionstate.md) | State of the action. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`. |
+| startDateTime       | DateTimeOffset                                           | Time the action was initiated                                                                                        |
+| lastUpdatedDateTime | DateTimeOffset                                           | Time the action state was last updated                                                                               |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceActionResult"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceActionResult",
   "actionName": "String",
@@ -44,9 +49,3 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "settingSourceType enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|deviceConfiguration|0|Not yet documented|
-|deviceIntent|1|Not yet documented|
 
-
-
-
-
-
+| Member              | Value | Description        |
+| :------------------ | :---- | :----------------- |
+| deviceConfiguration | 0     | Not yet documented |
+| deviceIntent        | 1     | Not yet documented |

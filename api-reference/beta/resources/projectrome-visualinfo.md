@@ -1,4 +1,4 @@
----
+﻿---
 title: "visualInfo resource type"
 description: "A complex type for representing the **visualElements** property in the activity object."
 localization_priority: Normal
@@ -23,13 +23,13 @@ If a custom card is not provided, a simple card will be generated using displayT
 
 ## Properties
 
-|Name | Type | Description|
-|:----|:------|:-----------|
-|displayText | String | Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)|
-|description | String | Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)|
-|backgroundColor | String | Optional. Background color used to render the activity in the UI - brand color for the application source of the activity. Must be a valid hex color|
-|content | Untyped JSON object | Optional. Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI|
-|attribution | [imageInfo](../resources/projectrome-imageinfo.md) | Optional. JSON object used to represent an icon which represents the application used to generate the activity|
+| Name            | Type                                               | Description                                                                                                                                          |
+| :-------------- | :------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayText     | String                                             | Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)   |
+| description     | String                                             | Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)                            |
+| backgroundColor | String                                             | Optional. Background color used to render the activity in the UI - brand color for the application source of the activity. Must be a valid hex color |
+| content         | Untyped JSON object                                | Optional. Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI                           |
+| attribution     | [imageInfo](../resources/projectrome-imageinfo.md) | Optional. JSON object used to represent an icon which represents the application used to generate the activity                                       |
 
 ## JSON Representation
 
@@ -66,6 +66,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -76,5 +77,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

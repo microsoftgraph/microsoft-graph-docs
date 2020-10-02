@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationUser resource type"
 description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
 author: "mmast-msft"
@@ -122,6 +122,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationUser resource",
@@ -151,4 +152,3 @@ The following is a JSON representation of the resource.
 [assignedlicense]: assignedlicense.md
 [user]: user.md
 [directoryobject]: directoryobject.md
-

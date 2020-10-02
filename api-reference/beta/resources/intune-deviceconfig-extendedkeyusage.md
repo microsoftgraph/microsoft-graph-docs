@@ -1,4 +1,4 @@
----
+﻿---
 title: "extendedKeyUsage resource type"
 description: "Custom Extended Key Usage definition"
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Custom Extended Key Usage definition
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|name|String|Extended Key Usage Name|
-|objectIdentifier|String|Extended Key Usage Object Identifier|
+
+| Property         | Type   | Description                          |
+| :--------------- | :----- | :----------------------------------- |
+| name             | String | Extended Key Usage Name              |
+| objectIdentifier | String | Extended Key Usage Object Identifier |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.extendedKeyUsage"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.extendedKeyUsage",
   "name": "String",
   "objectIdentifier": "String"
 }
 ```
-
-
-
-
-
-

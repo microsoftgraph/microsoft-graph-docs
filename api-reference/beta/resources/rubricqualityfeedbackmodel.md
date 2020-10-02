@@ -1,4 +1,4 @@
----
+﻿---
 title: "rubricQualityFeedbackModel resource type"
 description: "Feedback related to a specific quality of an educationRubric"
 localization_priority: Normal
@@ -17,10 +17,10 @@ Feedback related to a specific [quality](rubricquality.md) of an [educationRubri
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|feedback|[itemBody](itembody.md)|Specific feedback for one quality of this rubric.|
-|qualityId|String|The ID of the [rubricQuality](rubricquality.md) that this feedback is related to.|
+| Property  | Type                    | Description                                                                       |
+| :-------- | :---------------------- | :-------------------------------------------------------------------------------- |
+| feedback  | [itemBody](itembody.md) | Specific feedback for one quality of this rubric.                                 |
+| qualityId | String                  | The ID of the [rubricQuality](rubricquality.md) that this feedback is related to. |
 
 ## JSON representation
 
@@ -44,6 +44,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "rubricQualityFeedbackModel resource",
@@ -51,4 +52,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

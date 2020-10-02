@@ -1,4 +1,4 @@
----
+﻿---
 title: "copyStatusModel resource type"
 description: "Here is a JSON representation of the resource."
 localization_priority: Normal
@@ -33,15 +33,18 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|createdDateTime| DateTimeOffset ||
-|id|string||
-|status|string||
+
+| Property        | Type           | Description |
+| :-------------- | :------------- | :---------- |
+| createdDateTime | DateTimeOffset |             |
+| id              | string         |             |
+| status          | string         |             |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -52,5 +55,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

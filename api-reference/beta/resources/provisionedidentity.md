@@ -1,4 +1,4 @@
----
+﻿---
 title: "provisionedIdentity resource type"
 description: "Describes the identity associated with the provisioning object summary event."
 localization_priority: Normal
@@ -17,12 +17,12 @@ Describes the identity associated with the provisioning object summary event.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|details|[detailsInfo](detailsinfo.md)|Details of the identity.|
-|displayName|String|Display name of the identity. |
-|id|String|Uniquely identifies the identity.|
-|identityType|String|Type of identity that has been provisioned, such as 'user' or 'group'.|
+| Property     | Type                          | Description                                                            |
+| :----------- | :---------------------------- | :--------------------------------------------------------------------- |
+| details      | [detailsInfo](detailsinfo.md) | Details of the identity.                                               |
+| displayName  | String                        | Display name of the identity.                                          |
+| id           | String                        | Uniquely identifies the identity.                                      |
+| identityType | String                        | Type of identity that has been provisioned, such as 'user' or 'group'. |
 
 ## JSON representation
 
@@ -48,6 +48,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "provisionedIdentity resource",
@@ -55,5 +56,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

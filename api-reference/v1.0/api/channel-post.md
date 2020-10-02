@@ -1,7 +1,7 @@
----
-title: "Create channel"
-description: "Create new channel in a Microsoft Team, as specified in the request body."
-localization_priority: Normal
+﻿---
+title: "Create Channel"
+description: "Create a new channel in a Microsoft Team, as specified in the request body."
+localization_priority: Priority
 author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -11,32 +11,36 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
+Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.
+
+> **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](/graph/known-issues#application-permissions).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application |Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Group.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Group.ReadWrite.All                         |
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /teams/{id}/channels
 ```
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json. Required.  |
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
 
@@ -48,12 +52,14 @@ If successful, this method returns a `201 Created` response code and a [channel]
 
 ## Examples
 
-### Example 1: Create a standard channel
-#### Request
+## Example
 
-The following example shows a request to create a standard channel.
+##### Request
+
+Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
@@ -69,19 +75,24 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 ---
@@ -91,11 +102,15 @@ The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
+##### Response
+
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.channel"
-}-->
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -188,8 +203,8 @@ Content-length: 201
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+
+<!-- {
   "type": "#page.annotation",
   "description": "Create Channel",
   "keywords": "",
@@ -197,5 +212,4 @@ Content-length: 201
   "tocPath": "",
   "suppressions": [
   ]
-}
--->
+}-->

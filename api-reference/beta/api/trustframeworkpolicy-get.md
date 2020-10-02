@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get trustFrameworkPolicy"
 description: "This operation retrieves an existing trustFrameworkPolicy content from an Azure AD B2C tenant."
 localization_priority: Normal
@@ -6,6 +6,7 @@ author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
+
 # Get trustFrameworkPolicy
 
 Namespace: microsoft.graph
@@ -18,17 +19,18 @@ Retrieve the contents of an existing [trustFrameworkPolicy](../resources/trustfr
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)| Policy.Read.All, Policy.ReadWrite.TrustFramework|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|Policy.Read.All, Policy.ReadWrite.TrustFramework|
+| Permission type                        | Permissions (from least to most privileged)      |
+| :------------------------------------- | :----------------------------------------------- |
+| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.TrustFramework |
+| Delegated (personal Microsoft account) | Not supported.                                   |
+| Application                            | Policy.Read.All, Policy.ReadWrite.TrustFramework |
 
 The work or school account must be a global administrator of the tenant.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /trustFramework/policies/{id}/$value
 ```
@@ -39,9 +41,9 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 
 ## Request headers
 
-|Name|Description|
-|:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -63,6 +65,7 @@ The following example retrieves a specific **trustFrameworkPolicy**.
   "blockType": "ignored",
   "name": "get_trustFramework"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test/$value
 ```
@@ -74,6 +77,7 @@ GET https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test/$value
   "truncated": true,
   "@odata.type": "microsoft.graph.trustFrameworkPolicy"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/xml
@@ -89,6 +93,7 @@ Content-Type: application/xml
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get trustFramework policy",
@@ -96,5 +101,3 @@ Content-Type: application/xml
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

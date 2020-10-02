@@ -1,4 +1,4 @@
----
+﻿---
 title: "macOSContentCachingClientPolicy enum type"
 description: "Determines which clients a content cache will serve."
 author: "dougeby"
@@ -18,16 +18,11 @@ Namespace: microsoft.graph
 Determines which clients a content cache will serve.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Defaults to clients in local network.|
-|clientsInLocalNetwork|1|Content caches will provide content to devices only in their immediate local network.|
-|clientsWithSamePublicIpAddress|2|Content caches will provide content to devices that share the same public IP address.|
-|clientsInCustomLocalNetworks|3|Content caches will provide content to devices in contentCachingClientListenRanges.|
-|clientsInCustomLocalNetworksWithFallback|4|Content caches will provide content to devices in contentCachingClientListenRanges, contentCachingPeerListenRanges, and contentCachingParents.|
 
-
-
-
-
-
+| Member                                   | Value | Description                                                                                                                                    |
+| :--------------------------------------- | :---- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| notConfigured                            | 0     | Defaults to clients in local network.                                                                                                          |
+| clientsInLocalNetwork                    | 1     | Content caches will provide content to devices only in their immediate local network.                                                          |
+| clientsWithSamePublicIpAddress           | 2     | Content caches will provide content to devices that share the same public IP address.                                                          |
+| clientsInCustomLocalNetworks             | 3     | Content caches will provide content to devices in contentCachingClientListenRanges.                                                            |
+| clientsInCustomLocalNetworksWithFallback | 4     | Content caches will provide content to devices in contentCachingClientListenRanges, contentCachingPeerListenRanges, and contentCachingParents. |

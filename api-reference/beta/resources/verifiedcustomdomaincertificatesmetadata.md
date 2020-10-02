@@ -1,4 +1,4 @@
----
+﻿---
 title: "verifiedCustomDomainCertificatesMetadata resource type"
 description: "Represents the custom cerificate metadata for an on-premises application published via Application Proxy."
 localization_priority: Normal
@@ -17,13 +17,13 @@ Represents the custom domain certificate metadata for the [onPremisesPublishing]
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|expiryDate|DateTimeOffset| The expiry date of the custom domain certificate. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
-|issueDate|DateTimeOffset| The issue date of the custom domain. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
-|issuerName|String| The issuer name of the custom domain certificate. |
-|subjectName|String| The subject name of the custom domain certificate. |
-|thumbprint|String| The thumbprint associated with the custom domain certificate. |
+| Property    | Type           | Description                                                                                                                                                                                                                                         |
+| :---------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| expiryDate  | DateTimeOffset | The expiry date of the custom domain certificate. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
+| issueDate   | DateTimeOffset | The issue date of the custom domain. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.              |
+| issuerName  | String         | The issuer name of the custom domain certificate.                                                                                                                                                                                                   |
+| subjectName | String         | The subject name of the custom domain certificate.                                                                                                                                                                                                  |
+| thumbprint  | String         | The thumbprint associated with the custom domain certificate.                                                                                                                                                                                       |
 
 ## JSON representation
 
@@ -50,6 +50,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "verifiedCustomDomainCertificatesMetadata resource",
@@ -57,4 +58,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

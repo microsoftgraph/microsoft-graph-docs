@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add attachment"
 description: "Use this API to add an attachment to an event. Since there"
 author: "svpsiva"
@@ -16,21 +16,25 @@ Use this API to add an [attachment](../resources/attachment.md) to an existing [
 If an organizer adds an attachment to a meeting event, the organizer can subsequently [update](event-update.md) the event to send the attachment and update the event for each attendee as well.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
-|Application | Calendars.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Calendars.ReadWrite                         |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite                         |
+| Application                            | Calendars.ReadWrite                         |
 
 ## HTTP request
+
 Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
 -->
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/attachments
 POST /users/{id | userPrincipalName}/events/{id}/attachments
@@ -45,7 +49,9 @@ POST /groups/{id}/calendar/events/{id}/attachments
 -->
 
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
@@ -53,19 +59,25 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
 POST /me/calendargroup/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
+
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
+
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+
+| Name          | Type   | Description                                            |
+| :------------ | :----- | :----------------------------------------------------- |
+| Authorization | string | Bearer {token}. Required.                              |
+| Content-Type  | string | Nature of the data in the body of an entity. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
 ## Response
@@ -75,14 +87,17 @@ If successful, this method returns `201 Created` response code and [attachment](
 ## Example (file attachment)
 
 ##### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
   "name": "create_file_attachment_from_event_v1"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
@@ -94,35 +109,42 @@ Content-length: 151
     "contentBytes": "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-v1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-event-v1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-event-v1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-event-v1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
 ##### Response
+
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-type: application/json
@@ -180,15 +202,17 @@ Content-length: 600
 }
 ```
 
-
 ##### Response
+
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-type: application/json
@@ -209,6 +233,7 @@ Content-length: 162
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create Attachment",
@@ -218,4 +243,3 @@ Content-length: 162
   "suppressions": [
   ]
 }-->
-

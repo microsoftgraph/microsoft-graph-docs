@@ -1,4 +1,4 @@
----
+﻿---
 title: "onlineMeeting: createOrGet"
 description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the **onlineMeeting** object with that external ID."
 author: "ananmishr"
@@ -16,36 +16,41 @@ Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom sp
 > **Note**: The meeting does not show on the user's calendar.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
-| Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | Not supported.                |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
 | Content-type  | application/json. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter        | Type                                     |Description                                                                                                                                    |
-|:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| endDateTime      | DateTime                                 | The meeting end time in UTC. |
-| externalId       | String                                   | The external ID. A custom ID. (Required) |
-| participants     | [meetingParticipants](../resources/meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
-| startDateTime    | DateTime                                 | The meeting start time in UTC. |
-| subject          | String                                   | The subject of the online meeting. |
+| Parameter     | Type                                                       | Description                                                                                          |
+| :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| endDateTime   | DateTime                                                   | The meeting end time in UTC.                                                                         |
+| externalId    | String                                                     | The external ID. A custom ID. (Required)                                                             |
+| participants  | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees. |
+| startDateTime | DateTime                                                   | The meeting start time in UTC.                                                                       |
+| subject       | String                                                     | The subject of the online meeting.                                                                   |
 
 > **Notes:**
 >
@@ -56,6 +61,7 @@ In the request body, provide a JSON object with the following parameters.
 > - An error will be thrown if the **endDateTime** is provided without the **startDateTime** or if the **endDateTime** is earlier than the **startDateTime**.
 
 ## Response
+
 If successful, this method returns a `201 Created` response code if a new meeting is created, or a `200 OK` response code if an existing meeting is retrieved. In both cases, an [onlineMeeting](../resources/onlinemeeting.md) object is returned in the response body.
 
 ## Examples
@@ -64,8 +70,8 @@ If successful, this method returns a `201 Created` response code if a new meetin
 
 The following example shows how to create or get an online meeting with an external ID.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
@@ -94,24 +100,28 @@ Content-Type: application/json
     }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-or-get-onlinemeeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-or-get-onlinemeeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -184,6 +194,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -195,4 +206,3 @@ Content-Type: application/json
   ]
 }
 -->
-

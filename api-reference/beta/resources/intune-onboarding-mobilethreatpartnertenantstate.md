@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileThreatPartnerTenantState enum type"
 description: "Partner state of this tenant."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Partner state of this tenant.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unavailable|0|Partner is unavailable.|
-|available|1|Partner is available.|
-|enabled|2|Partner is enabled.|
-|unresponsive|3|Partner is unresponsive.|
 
-
-
-
-
-
+| Member       | Value | Description              |
+| :----------- | :---- | :----------------------- |
+| unavailable  | 0     | Partner is unavailable.  |
+| available    | 1     | Partner is available.    |
+| enabled      | 2     | Partner is enabled.      |
+| unresponsive | 3     | Partner is unresponsive. |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "microsoftStoreForBusinessLicenseType enum type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,16 +16,8 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|offline|0|Not yet documented|
-|online|1|Not yet documented|
 
-
-
-
-
-
-
-
-
+| Member  | Value | Description        |
+| :------ | :---- | :----------------- |
+| offline | 0     | Not yet documented |
+| online  | 1     | Not yet documented |

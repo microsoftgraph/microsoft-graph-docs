@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get ipNamedLocation"
 description: "Retrieve the properties and relationships of an ipnamedlocation object."
 localization_priority: Normal
@@ -20,10 +20,10 @@ Retrieve the properties and relationships of an [ipNamedLocation](../resources/i
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.Read.All                             |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Policy.Read.All                             |
 
 ## HTTP request
 
@@ -39,8 +39,8 @@ This method supports the `select` OData query parameter to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description               |
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and the requested [i
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_ipnamedlocation"
@@ -66,20 +67,23 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-ipnamedlocation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-ipnamedlocation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-ipnamedlocation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -120,6 +124,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get ipNamedLocation",
@@ -127,5 +132,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

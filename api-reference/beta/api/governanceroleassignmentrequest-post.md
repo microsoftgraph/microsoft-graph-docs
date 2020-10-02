@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create governanceRoleAssignmentRequest"
 description: "Create a role assignment request to represent the operation you want on a role assignment. The following table lists the operations."
 localization_priority: Normal
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Create a role assignment request to represent the operation you want on a role assignment. The following table lists the operations.
 
 | Operation                                   | Type        |
-|:--------------------------------------------|:------------|
+| :------------------------------------------ | :---------- |
 | Assign a role assignment                    | AdminAdd    |
 | Activate an eligible role assignment        | UserAdd     |
 | Deactivate an activated role assignment     | UserRemove  |
@@ -32,10 +32,10 @@ Create a role assignment request to represent the operation you want on a role a
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions                               |
-|:---------------------------------------|:------------------------------------------|
+| :------------------------------------- | :---------------------------------------- |
 | Delegated (work or school account)     | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegated (personal Microsoft account) | Not supported.                            |
-| Application                            | Not supported. |
+| Application                            | Not supported.                            |
 
 ## HTTP request
 
@@ -48,7 +48,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 ## Request headers
 
 | Name          | Description      |
-|:--------------|:-----------------|
+| :------------ | :--------------- |
 | Authorization | Bearer {code}    |
 | Content-type  | application/json |
 
@@ -56,15 +56,15 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 In the request body, supply a JSON representation of a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object.
 
-| Property         | Type                                                     | Description |
-|:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | The ID of the resource. Required. |
-| roleDefinitionId | String                                                   | The ID of the role definition. Required. |
-| subjectId        | String                                                   | The ID of the subject. Required. |
-| assignmentState  | String                                                   | The state of assignment. The value can be `Eligible` and `Active`. Required. |
+| Property         | Type                                                     | Description                                                                                                                                                               |
+| :--------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| resourceId       | String                                                   | The ID of the resource. Required.                                                                                                                                         |
+| roleDefinitionId | String                                                   | The ID of the role definition. Required.                                                                                                                                  |
+| subjectId        | String                                                   | The ID of the subject. Required.                                                                                                                                          |
+| assignmentState  | String                                                   | The state of assignment. The value can be `Eligible` and `Active`. Required.                                                                                              |
 | type             | String                                                   | The request type. The value can be `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`and `AdminExtend`. Required. |
-| reason           | String                                                   | The reason needs to be provided for the role assignment request for audit and review purpose. |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | The schedule of the role assignment request. For request type of `UserAdd`, `AdminAdd`, `AdminUpdate`, and `AdminExtend`, it is required. |
+| reason           | String                                                   | The reason needs to be provided for the role assignment request for audit and review purpose.                                                                             |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | The schedule of the role assignment request. For request type of `UserAdd`, `AdminAdd`, `AdminUpdate`, and `AdminExtend`, it is required.                                 |
 
 ## Response
 
@@ -74,14 +74,14 @@ If successful, this method returns a `201 Created` response code and a [governan
 
 This API returns the standard HTTP error codes. In addition, it also returns the error codes listed in the following table.
 
-| Error code     | Error message                               | Details       |
-|:---------------|:--------------------------------------------|:--------------|
-| 400 BadRequest | RoleNotFound                                | The `roleDefinitionId` provided in the request body cannot be found. |
-| 400 BadRequest | ResourceIsLocked                            | The resource provided in the request body is in state of `Locked` and cannot create role assignment requests. |
-| 400 BadRequest | SubjectNotFound                             | The `subjectId` provided in the request body cannot be found. |
-| 400 BadRequest | PendingRoleAssignmentRequest                | There already exists a pending [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) in the system. |
-| 400 BadRequest | RoleAssignmentExists                        | The [governanceRoleAssignment](../resources/governanceroleassignment.md) requested to be created already exists in the system. |
-| 400 BadRequest | RoleAssignmentDoesNotExist                  | The [governanceRoleAssignment](../resources/governanceroleassignment.md) requested to be updated/extended does not exist in the system. |
+| Error code     | Error message                               | Details                                                                                                                                       |
+| :------------- | :------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| 400 BadRequest | RoleNotFound                                | The `roleDefinitionId` provided in the request body cannot be found.                                                                          |
+| 400 BadRequest | ResourceIsLocked                            | The resource provided in the request body is in state of `Locked` and cannot create role assignment requests.                                 |
+| 400 BadRequest | SubjectNotFound                             | The `subjectId` provided in the request body cannot be found.                                                                                 |
+| 400 BadRequest | PendingRoleAssignmentRequest                | There already exists a pending [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) in the system.              |
+| 400 BadRequest | RoleAssignmentExists                        | The [governanceRoleAssignment](../resources/governanceroleassignment.md) requested to be created already exists in the system.                |
+| 400 BadRequest | RoleAssignmentDoesNotExist                  | The [governanceRoleAssignment](../resources/governanceroleassignment.md) requested to be updated/extended does not exist in the system.       |
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | The [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) does not meet internal policies and cannot be created. |
 
 ## Examples
@@ -94,20 +94,20 @@ In this example, an administrator assigns user nawu@fimdev.net to the Billing Re
 
  >**Note:** In addition to the permission, this example requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 
-| Property         | Type                                                     | Required                 | Value |
-|:-----------------|:---------------------------------------------------------|:-------------------------|:--|
-| resourceId       | String                                                   | Yes                      | \<resourceId\> |
+| Property         | Type                                                     | Required                 | Value                |
+| :--------------- | :------------------------------------------------------- | :----------------------- | :------------------- |
+| resourceId       | String                                                   | Yes                      | \<resourceId\>       |
 | roleDefinitionId | String                                                   | Yes                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Yes                      | \<subjectId\> |
-| assignmentState  | String                                                   | Yes                      | Eligible / Active |
-| type             | String                                                   | Yes                      | AdminAdd |
-| reason           | String                                                   | depends on role Settings |   |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Yes                      |   |
+| subjectId        | String                                                   | Yes                      | \<subjectId\>        |
+| assignmentState  | String                                                   | Yes                      | Eligible / Active    |
+| type             | String                                                   | Yes                      | AdminAdd             |
+| reason           | String                                                   | depends on role Settings |                      |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Yes                      |                      |
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "governanceroleassignmentrequest_post"
@@ -131,20 +131,23 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- markdownlint-disable MD024 -->
 
@@ -202,15 +205,15 @@ Content-type: application/json
 
 In this example, the user nawu@fimdev.net activates the eligible Billing Reader role.
 
-| Property         | Type                                                     | Required                 | Value |
-|:-----------------|:---------------------------------------------------------|:-------------------------|:--|
-| resourceId       | String                                                   | Yes                      | \<resourceId\> |
+| Property         | Type                                                     | Required                 | Value                |
+| :--------------- | :------------------------------------------------------- | :----------------------- | :------------------- |
+| resourceId       | String                                                   | Yes                      | \<resourceId\>       |
 | roleDefinitionId | String                                                   | Yes                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Yes                      | \<subjectId\> |
-| assignmentState  | String                                                   | Yes                      | Active |
-| type             | String                                                   | Yes                      | UserAdd |
-| reason           | String                                                   | depends on role Settings |   |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Yes                      |   |
+| subjectId        | String                                                   | Yes                      | \<subjectId\>        |
+| assignmentState  | String                                                   | Yes                      | Active               |
+| type             | String                                                   | Yes                      | UserAdd              |
+| reason           | String                                                   | depends on role Settings |                      |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Yes                      |                      |
 
 #### Request
 
@@ -305,15 +308,15 @@ Content-type: application/json
 
 In this example, the user nawu@fimdev.net deactivates the active Billing Reader role.
 
-| Property         | Type                                                     | Required | Value |
-|:-----------------|:---------------------------------------------------------|:---------|:--|
-| resourceId       | String                                                   | Yes      | \<resourceId\> |
+| Property         | Type                                                     | Required | Value                |
+| :--------------- | :------------------------------------------------------- | :------- | :------------------- |
+| resourceId       | String                                                   | Yes      | \<resourceId\>       |
 | roleDefinitionId | String                                                   | Yes      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Yes      | \<subjectId\> |
-| assignmentState  | String                                                   | Yes      | Active |
-| type             | String                                                   | Yes      | UserRemove |
-| reason           | String                                                   | No       |   |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | No       |   |
+| subjectId        | String                                                   | Yes      | \<subjectId\>        |
+| assignmentState  | String                                                   | Yes      | Active               |
+| type             | String                                                   | Yes      | UserRemove           |
+| reason           | String                                                   | No       |                      |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | No       |                      |
 
 #### Request
 
@@ -375,15 +378,15 @@ In this example, an administrator removes the user nawu@fimdev.net from the Bill
 
  >**Note:** In addition to the permission, this example requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 
-| Property         | Type                                                     | Required | Value |
-|:-----------------|:---------------------------------------------------------|:---------|:--|
-| resourceId       | String                                                   | Yes      | \<resourceId\> |
+| Property         | Type                                                     | Required | Value                |
+| :--------------- | :------------------------------------------------------- | :------- | :------------------- |
+| resourceId       | String                                                   | Yes      | \<resourceId\>       |
 | roleDefinitionId | String                                                   | Yes      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Yes      | \<subjectId\> |
-| assignmentState  | String                                                   | Yes      | Eligible / Active |
-| type             | String                                                   | Yes      | AdminRemove |
-| reason           | String                                                   | No       |   |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | No       |   |
+| subjectId        | String                                                   | Yes      | \<subjectId\>        |
+| assignmentState  | String                                                   | Yes      | Eligible / Active    |
+| type             | String                                                   | Yes      | AdminRemove          |
+| reason           | String                                                   | No       |                      |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | No       |                      |
 
 #### Request
 
@@ -443,15 +446,15 @@ In this example, administrators update the role assignment for the user nawu@fim
 
  >**Note:** In addition to the permission, this example requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 
-| Property         | Type                                                     | Required                | Value |
-|:-----------------|:---------------------------------------------------------|:------------------------|:--|
-| resourceId       | String                                                   | Yes                     | \<resourceId\> |
+| Property         | Type                                                     | Required                | Value                |
+| :--------------- | :------------------------------------------------------- | :---------------------- | :------------------- |
+| resourceId       | String                                                   | Yes                     | \<resourceId\>       |
 | roleDefinitionId | String                                                   | Yes                     | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Yes                     | \<subjectId\> |
-| assignmentState  | String                                                   | Yes                     | Eligible / Active |
-| type             | String                                                   | Yes                     | AdminUpdate |
-| reason           | String                                                   | depends on roleSettings |   |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Yes                     |   |
+| subjectId        | String                                                   | Yes                     | \<subjectId\>        |
+| assignmentState  | String                                                   | Yes                     | Eligible / Active    |
+| type             | String                                                   | Yes                     | AdminUpdate          |
+| reason           | String                                                   | depends on roleSettings |                      |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Yes                     |                      |
 
 #### Request
 
@@ -534,15 +537,15 @@ This example extends the expiring role assignment for user ANUJCUSER to API Mana
 
  >**Note:** In addition to the permission, this example requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 
-| Property         | Type                                                     | Required                | Value |
-|:-----------------|:---------------------------------------------------------|:------------------------|:--|
-| resourceId       | String                                                   | Yes                     | \<resourceId\> |
+| Property         | Type                                                     | Required                | Value                |
+| :--------------- | :------------------------------------------------------- | :---------------------- | :------------------- |
+| resourceId       | String                                                   | Yes                     | \<resourceId\>       |
 | roleDefinitionId | String                                                   | Yes                     | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Yes                     | \<subjectId\> |
-| assignmentState  | String                                                   | Yes                     | Eligible / Active |
-| type             | String                                                   | Yes                     | AdminExtend |
-| reason           | String                                                   | depends on roleSettings |   |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Yes                     |   |
+| subjectId        | String                                                   | Yes                     | \<subjectId\>        |
+| assignmentState  | String                                                   | Yes                     | Eligible / Active    |
+| type             | String                                                   | Yes                     | AdminExtend          |
+| reason           | String                                                   | depends on roleSettings |                      |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Yes                     |                      |
 
 #### Request
 
@@ -622,6 +625,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -633,5 +637,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

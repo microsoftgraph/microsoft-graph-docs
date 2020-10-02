@@ -1,4 +1,4 @@
----
+﻿---
 title: "accessPackageResourceScope resource type"
 description: "In Azure AD entitlement management, an access package resource scope is a reference to a scope within a resource."
 localization_priority: Normal
@@ -19,22 +19,22 @@ You can determine the access package resource scope, for a resource that has alr
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|description|String|The description of the scope.|
-|displayName|String|The display name of the scope.|
-|id|String| Read-only.|
-|isRootScope|Boolean|True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.|
-|originId|String|The unique identifier for the scope in the resource as defined in the origin system.|
-|originSystem|String|The origin system for the scope.|
-|roleOriginId|String|The origin system for the role, if different.|
-|url|String|A resource locator for the scope.|
+| Property     | Type    | Description                                                                                       |
+| :----------- | :------ | :------------------------------------------------------------------------------------------------ |
+| description  | String  | The description of the scope.                                                                     |
+| displayName  | String  | The display name of the scope.                                                                    |
+| id           | String  | Read-only.                                                                                        |
+| isRootScope  | Boolean | True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource. |
+| originId     | String  | The unique identifier for the scope in the resource as defined in the origin system.              |
+| originSystem | String  | The origin system for the scope.                                                                  |
+| roleOriginId | String  | The origin system for the role, if different.                                                     |
+| url          | String  | A resource locator for the scope.                                                                 |
 
 ## Relationships
 
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|accessPackageResource|[accessPackageResource](accesspackageresource.md)| Read-only. Nullable.|
+| Relationship          | Type                                              | Description          |
+| :-------------------- | :------------------------------------------------ | :------------------- |
+| accessPackageResource | [accessPackageResource](accesspackageresource.md) | Read-only. Nullable. |
 
 ## JSON representation
 
@@ -65,6 +65,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "accessPackageResourceScope resource",
@@ -72,5 +73,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

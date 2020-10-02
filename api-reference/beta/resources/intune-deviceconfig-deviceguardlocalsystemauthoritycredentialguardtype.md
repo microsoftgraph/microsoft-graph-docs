@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceGuardLocalSystemAuthorityCredentialGuardType enum type"
 description: "Possible values of Credential Guard settings."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values of Credential Guard settings.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Turns off Credential Guard remotely if configured previously without UEFI Lock.|
-|enableWithUEFILock|1|Turns on Credential Guard with UEFI lock.|
-|enableWithoutUEFILock|2|Turns on Credential Guard without UEFI lock.|
-|disable|3|Disables Credential Guard. This is the default OS value.|
 
-
-
-
-
-
+| Member                | Value | Description                                                                     |
+| :-------------------- | :---- | :------------------------------------------------------------------------------ |
+| notConfigured         | 0     | Turns off Credential Guard remotely if configured previously without UEFI Lock. |
+| enableWithUEFILock    | 1     | Turns on Credential Guard with UEFI lock.                                       |
+| enableWithoutUEFILock | 2     | Turns on Credential Guard without UEFI lock.                                    |
+| disable               | 3     | Disables Credential Guard. This is the default OS value.                        |

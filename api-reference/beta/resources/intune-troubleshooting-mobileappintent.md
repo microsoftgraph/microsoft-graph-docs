@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileAppIntent enum type"
 description: "Indicates the status of the mobile app on the device."
 author: "dougeby"
@@ -18,18 +18,13 @@ Namespace: microsoft.graph
 Indicates the status of the mobile app on the device.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|available|0|Available|
-|notAvailable|1|Not Available|
-|requiredInstall|2|Required Install|
-|requiredUninstall|3|Required Uninstall|
-|requiredAndAvailableInstall|4|RequiredAndAvailableInstall|
-|availableInstallWithoutEnrollment|5|AvailableInstallWithoutEnrollment|
-|exclude|6|Exclude|
 
-
-
-
-
-
+| Member                            | Value | Description                       |
+| :-------------------------------- | :---- | :-------------------------------- |
+| available                         | 0     | Available                         |
+| notAvailable                      | 1     | Not Available                     |
+| requiredInstall                   | 2     | Required Install                  |
+| requiredUninstall                 | 3     | Required Uninstall                |
+| requiredAndAvailableInstall       | 4     | RequiredAndAvailableInstall       |
+| availableInstallWithoutEnrollment | 5     | AvailableInstallWithoutEnrollment |
+| exclude                           | 6     | Exclude                           |

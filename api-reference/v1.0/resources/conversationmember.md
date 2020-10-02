@@ -1,4 +1,4 @@
----
+﻿---
 title: "conversationMember resource type"
 description: "Represents user in a conversation."
 localization_priority: Normal
@@ -18,11 +18,11 @@ See also [aadUserConversationMember](aaduserconversationmember.md).
 
 ## Properties
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|id|String| Read-only. Unique ID of the user.|
-|displayName| string | The display name of the user. |
-|roles| string collection | The roles for that user. |
+| Property    | Type              | Description                       |
+| :---------- | :---------------- | :-------------------------------- |
+| id          | String            | Read-only. Unique ID of the user. |
+| displayName | string            | The display name of the user.     |
+| roles       | string collection | The roles for that user.          |
 
 ## JSON representation
 
@@ -48,6 +48,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "conversationMember resource",
@@ -55,4 +56,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

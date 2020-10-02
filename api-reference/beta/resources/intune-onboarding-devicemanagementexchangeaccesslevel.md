@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementExchangeAccessLevel enum type"
 description: "Access Level in Exchange."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Access Level in Exchange.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0|No device access rule has been configured in Exchange.|
-|allow|1|Allow the device access to Exchange.|
-|block|2|Block the device from accessing Exchange.|
-|quarantine|3|Quarantine the device in Exchange.|
 
-
-
-
-
-
+| Member     | Value | Description                                            |
+| :--------- | :---- | :----------------------------------------------------- |
+| none       | 0     | No device access rule has been configured in Exchange. |
+| allow      | 1     | Allow the device access to Exchange.                   |
+| block      | 2     | Block the device from accessing Exchange.              |
+| quarantine | 3     | Quarantine the device in Exchange.                     |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "reportRoot: getEmailAppUsageUserDetail"
 description: "Get details about which activities users performed on the various email apps."
 localization_priority: Normal
@@ -22,10 +22,10 @@ Get details about which activities users performed on the various email apps.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Reports.Read.All                            |
 
 **Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
@@ -42,10 +42,10 @@ GET /reports/getEmailAppUsageUserDetail(date={date_value})
 
 In the request URL, provide one of the following parameters with a valid value.
 
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
+| Parameter | Type   | Description                                                                                                                                                                                                                                             |
+| :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
-| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
+| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range.          |
 
 > **Note:** You need to set either period or date in the URL.
 
@@ -100,7 +100,6 @@ The following is an example that outputs CSV.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getemailappusageuserdetail_csv"
@@ -109,7 +108,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getEmailAppUsageUserDetail(period='D7')?$format=text/csv
 ```
-
 
 #### Response
 
@@ -146,7 +144,6 @@ The following is an example that returns JSON.
 
 The following is an example of the request.
 
-
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getemailappusageuserdetail_json"
@@ -155,7 +152,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getEmailAppUsageUserDetail(period='D7')?$format=application/json
 ```
-
 
 #### Response
 
@@ -202,8 +198,10 @@ Content-Length: 515
   ]
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",
@@ -213,5 +211,3 @@ Content-Length: 515
   "suppressions": [
   ]
 }-->
-
-

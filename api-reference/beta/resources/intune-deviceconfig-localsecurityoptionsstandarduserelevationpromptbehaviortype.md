@@ -1,4 +1,4 @@
----
+﻿---
 title: "localSecurityOptionsStandardUserElevationPromptBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsStandardUserElevationPromptBehavior"
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Possible values for LocalSecurityOptionsStandardUserElevationPromptBehavior
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not Configured|
-|automaticallyDenyElevationRequests|1|Automatically deny elevation requests|
-|promptForCredentialsOnTheSecureDesktop|2|Prompt for credentials on the secure desktop|
-|promptForCredentials|3|Prompt for credentials|
 
-
-
-
-
-
+| Member                                 | Value | Description                                  |
+| :------------------------------------- | :---- | :------------------------------------------- |
+| notConfigured                          | 0     | Not Configured                               |
+| automaticallyDenyElevationRequests     | 1     | Automatically deny elevation requests        |
+| promptForCredentialsOnTheSecureDesktop | 2     | Prompt for credentials on the secure desktop |
+| promptForCredentials                   | 3     | Prompt for credentials                       |

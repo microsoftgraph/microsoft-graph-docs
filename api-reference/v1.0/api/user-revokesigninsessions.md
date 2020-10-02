@@ -1,4 +1,4 @@
----
+﻿---
 title: "user: revokeSignInSessions"
 description: "Invalidates all the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **signInSessionsValidFromDateTime** user property to the current date-time."
 localization_priority: Normal
@@ -22,26 +22,30 @@ Invalidates all the refresh tokens issued to applications for a user (as well as
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Permission type                        | Permissions (from least to most privileged)                         |
+| :------------------------------------- | :------------------------------------------------------------------ |
+| Delegated (work or school account)     | User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                                      |
+| Application                            | Directory.ReadWrite.All, Directory.AccessAsUser.All                 |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/revokeSignInSessions
 POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
+
 This operation has no request content.
 
 ## Response
@@ -52,48 +56,58 @@ If successful, this method returns a `204 No Content` response code.
 >This API has a [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). It returns a different HTTP response code.
 
 ## Example
+
 The following example shows how to call this API.
 
 ##### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "user_revokesigninsessionss"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/user-revokesigninsessionss-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/user-revokesigninsessionss-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -105,4 +119,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-

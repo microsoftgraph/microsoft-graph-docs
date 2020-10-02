@@ -1,4 +1,4 @@
----
+﻿---
 title: "profile resource type"
 description: "Represents properties that are descriptive of a user and that are surfaced in shared, people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph."
 localization_priority: Normal
@@ -6,7 +6,7 @@ author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"
 ---
- 
+
 # profile resource type
 
 Namespace: microsoft.graph
@@ -20,7 +20,7 @@ Programmatically, these properties are expressed as [relationships](#relationshi
 ## Methods
 
 | Method                                                                     | Return Type                                                    | Description                                                                                  |
-|:---------------------------------------------------------------------------|:---------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
+| :------------------------------------------------------------------------- | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
 | [Get profile](../api/profile-get.md)                                       | [profile](profile.md)                                          | Read properties and relationships of the profile object.                                     |
 | [Delete profile](../api/profile-delete.md)                                 | None                                                           | Delete a **profile** object.                                                                 |
 | [Create userAccountInformation](../api/profile-post-accounts.md)           | [userAccountInformation](useraccountinformation.md)            | Create a new **userAccountInformation** object by posting to the accounts collection.        |
@@ -66,34 +66,34 @@ Programmatically, these properties are expressed as [relationships](#relationshi
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|id            |String       | Read-only.  |
+| Property | Type   | Description |
+| :------- | :----- | :---------- |
+| id       | String | Read-only.  |
 
 ## Relationships
 
-| Relationship          | Type                                                         | Description                                                                                                                                    |
-|:----------------------|:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-|accounts               |[userAccountInformation](useraccountinformation.md) collection| Represents information specifically tied to a user's account.                                                             |
-|addresses              |[itemAddress](itemaddress.md) collection                      | Represents details of addresses associated with the user.                                                             |
-|anniversaries          |[personAnniversary](personanniversary.md) collection          | Represents the details of meaningful dates associated with a person.                                                                  |
-|awards                 |[personAward](personaward.md) collection                      | Represents the details of awards or honors associated with a person.                                                                  |
-|certifications         |[personCertification](personcertification.md) collection      | Represents the details of certifications associated with a person.                                                                  |
-|educationalActivities  |[educationalActivity](educationalactivity.md) collection      | Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities. |
-|emails                 |[itemEmail](itememail.md) collection                          | Represents detailed information about email addresses associated with the user.                       |
-|interests              |[personInterest](personinterest.md) collection                | Provides detailed information about interests the user has associated with themselves in various services.             |
-|languages              |[languageProficiency](languageproficiency.md) collection      | Represents detailed information about languages that a user has added to their profile.                                    |
-|names                  |[personName](personname.md) collection                        | Represents the names a user has added to their profile.                                    |
-|notes                  |[personAnnotation](personannotation.md) collection            | Represents notes that a user has added to their profile.                                    |
-|patents                |[itemPatent](itempatent.md) collection                        | Represents patents that a user has added to their profile.                                    |
-|phones                 |[itemPhone](itemphone.md) collection                          | Represents detailed information about phone numbers associated with a user in various services.                            |
-|positions              |[workPosition](workposition.md) collection                    | Represents detailed information about work positions associated with a user's profile.                                    |
-|projects               |[projectParticipation](projectparticipation.md) collection    | Represents detailed information about projects associated with a user.                                                     |
-|publications           |[itemPublication](itempublication.md) collection              | Represents details of any publications a user has added to their profile.                                                     |
-|responsibilities       |[personResponsibility](personResponsibility.md) collection    | Represents details of responsibilities a user has added to their profile.                                                     |
-|skills                 |[skillProficiency](skillproficiency.md) collection            | Represents detailed information about skills associated with a user in various services.                                   |
-|webAccounts            |[webAccount](webaccount.md) collection                        | Represents web accounts the user has indicated they use or has added to their user profile.                               |
-|websites               |[personWebsite](personwebsite.md) collection                  | Represents detailed information about websites associated with a user in various services.                                 |
+| Relationship          | Type                                                           | Description                                                                                                                |
+| :-------------------- | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| accounts              | [userAccountInformation](useraccountinformation.md) collection | Represents information specifically tied to a user's account.                                                              |
+| addresses             | [itemAddress](itemaddress.md) collection                       | Represents details of addresses associated with the user.                                                                  |
+| anniversaries         | [personAnniversary](personanniversary.md) collection           | Represents the details of meaningful dates associated with a person.                                                       |
+| awards                | [personAward](personaward.md) collection                       | Represents the details of awards or honors associated with a person.                                                       |
+| certifications        | [personCertification](personcertification.md) collection       | Represents the details of certifications associated with a person.                                                         |
+| educationalActivities | [educationalActivity](educationalactivity.md) collection       | Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities. |
+| emails                | [itemEmail](itememail.md) collection                           | Represents detailed information about email addresses associated with the user.                                            |
+| interests             | [personInterest](personinterest.md) collection                 | Provides detailed information about interests the user has associated with themselves in various services.                 |
+| languages             | [languageProficiency](languageproficiency.md) collection       | Represents detailed information about languages that a user has added to their profile.                                    |
+| names                 | [personName](personname.md) collection                         | Represents the names a user has added to their profile.                                                                    |
+| notes                 | [personAnnotation](personannotation.md) collection             | Represents notes that a user has added to their profile.                                                                   |
+| patents               | [itemPatent](itempatent.md) collection                         | Represents patents that a user has added to their profile.                                                                 |
+| phones                | [itemPhone](itemphone.md) collection                           | Represents detailed information about phone numbers associated with a user in various services.                            |
+| positions             | [workPosition](workposition.md) collection                     | Represents detailed information about work positions associated with a user's profile.                                     |
+| projects              | [projectParticipation](projectparticipation.md) collection     | Represents detailed information about projects associated with a user.                                                     |
+| publications          | [itemPublication](itempublication.md) collection               | Represents details of any publications a user has added to their profile.                                                  |
+| responsibilities      | [personResponsibility](personResponsibility.md) collection     | Represents details of responsibilities a user has added to their profile.                                                  |
+| skills                | [skillProficiency](skillproficiency.md) collection             | Represents detailed information about skills associated with a user in various services.                                   |
+| webAccounts           | [webAccount](webaccount.md) collection                         | Represents web accounts the user has indicated they use or has added to their user profile.                                |
+| websites              | [personWebsite](personwebsite.md) collection                   | Represents detailed information about websites associated with a user in various services.                                 |
 
 ## JSON representation
 
@@ -114,5 +114,3 @@ The following is a JSON representation of the resource.
     "id": "String (identifier)"
 }
 ```
-
-

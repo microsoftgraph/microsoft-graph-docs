@@ -1,4 +1,4 @@
----
+﻿---
 title: "lostModeState enum type"
 description: "State of lost mode, indicating if lost mode is enabled or disabled"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 State of lost mode, indicating if lost mode is enabled or disabled
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|disabled|0|Lost mode is disabled.|
-|enabled|1|Lost mode is enabled.|
 
-
-
-
-
-
+| Member   | Value | Description            |
+| :------- | :---- | :--------------------- |
+| disabled | 0     | Lost mode is disabled. |
+| enabled  | 1     | Lost mode is enabled.  |

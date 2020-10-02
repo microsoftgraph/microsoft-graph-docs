@@ -1,4 +1,4 @@
----
+﻿---
 title: "educationSchool resource type"
 description: "A school. The **educationSchool** resource currently corresponds to an administrativeUnit resource and shares the same ID.  "
 localization_priority: Normal
@@ -94,15 +94,12 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "educationSchool resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!"
-  ]
+  "suppressions": []
 }-->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidEnrollmentCompanyCode resource type"
 description: "A class to hold specialty enrollment data used for enrolling via Google's Android Management API, such as Token, Url, and QR code content"
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 A class to hold specialty enrollment data used for enrolling via Google's Android Management API, such as Token, Url, and QR code content
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|enrollmentToken|String|Enrollment Token used by the User to enroll their device.|
-|qrCodeContent|String|String used to generate a QR code for the token.|
-|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Generated QR code for the token.|
+
+| Property        | Type                                                     | Description                                               |
+| :-------------- | :------------------------------------------------------- | :-------------------------------------------------------- |
+| enrollmentToken | String                                                   | Enrollment Token used by the User to enroll their device. |
+| qrCodeContent   | String                                                   | String used to generate a QR code for the token.          |
+| qrCodeImage     | [mimeContent](../resources/intune-shared-mimecontent.md) | Generated QR code for the token.                          |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidEnrollmentCompanyCode"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.androidEnrollmentCompanyCode",
   "enrollmentToken": "String",
@@ -46,9 +51,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

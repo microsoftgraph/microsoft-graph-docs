@@ -1,4 +1,4 @@
----
+﻿---
 title: "directoryObject: delta"
 description: "Get newly created, updated, or deleted directory objects of the following types: user, group and organizational contact, in a single delta query. See Track changes for details."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Get newly created, updated, or deleted directory objects of the following types:
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All  |
-|Delegated (personal Microsoft account) | Not supported.  |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)    |
+| :------------------------------------- | :--------------------------------------------- |
+| Delegated (work or school account)     | Directory.Read.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported.                                 |
+| Application                            | Directory.Read.All, Directory.ReadWrite.All    |
 
 ## HTTP request
 
@@ -43,10 +43,10 @@ You only need to specify any desired query parameters once upfront.
 
 In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
-| Query parameter | Type |Description|
-|:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection. |
+| Query parameter | Type   | Description                                                                                                                                                                                                                                                                                                                                                  |
+| :-------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $deltatoken     | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection. |
+| $skiptoken      | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection.                                                                                                                                                         |
 
 ### OData query parameters
 
@@ -57,11 +57,11 @@ This method supports optional OData Query Parameters to help customize the respo
 
 ## Request headers
 
-| Name       | Description|
-|:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;|
-| Content-Type  | application/json |
-| Prefer | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
+| Name          | Description                                                                                                                                                                    |
+| :------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer &lt;token&gt;                                                                                                                                                           |
+| Content-Type  | application/json                                                                                                                                                               |
+| Prefer        | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
 
 ## Request body
 
@@ -87,7 +87,6 @@ By default, requests using a `deltaLink` or `nextLink` return the same propertie
 - If the property has not changed, the old value is included in the response.
 - If the property has never been set before it will not be included in the response at all.
 
-
 > **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values.
 
 #### Alternative: return only the changed properties
@@ -106,6 +105,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "directory_object_delta"
@@ -114,20 +114,23 @@ The following is an example of the request. There is no `$select` parameter, so 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/directory-object-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/directory-object-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/directory-object-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 1
 
@@ -196,6 +199,7 @@ Content-type: application/json
 The next example shows the use of the alternative minimal response behavior:
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "directoryObject_delta"
@@ -205,20 +209,23 @@ The next example shows the use of the alternative minimal response behavior:
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 Prefer: return=minimal
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 2
 
@@ -264,6 +271,7 @@ Content-type: application/json
 The next example shows the initial request using the `isOf` operator to filter out only user and group entities:
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "directoryobject_delta"
@@ -272,20 +280,23 @@ The next example shows the initial request using the `isOf` operator to filter o
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Microsoft.Graph.User')+or+isOf('Microsoft.Graph.Group')
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response 3
 
@@ -340,6 +351,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -351,5 +363,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create managedDeviceCertificateState"
 description: "Create a new managedDeviceCertificateState object."
 author: "dougeby"
@@ -18,20 +18,23 @@ Namespace: microsoft.graph
 Create a new [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosPkcsCertificateProfile/managedDeviceCertificateStates
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/managedDeviceCertificateStates
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidPkcsCertificateProfile/managedDeviceCertificateStates
@@ -57,54 +60,57 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the managedDeviceCertificateState object.
 
 The following table shows the properties that are required when you create the managedDeviceCertificateState.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity.|
-|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Device platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Key usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
-|certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Validity period units. Possible values are: `days`, `months`, `years`.|
-|certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|Issuance State. Possible values are: `unknown`, `challengeIssued`, `challengeIssueFailed`, `requestCreationFailed`, `requestSubmitFailed`, `challengeValidationSucceeded`, `challengeValidationFailed`, `issueFailed`, `issuePending`, `issued`, `responseProcessingFailed`, `responsePending`, `enrollmentSucceeded`, `enrollmentNotNeeded`, `revoked`, `removedFromCollection`, `renewVerified`, `installFailed`, `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
-|certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|Key Storage Provider. Possible values are: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
-|certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Subject name format. Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
-|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Subject alternative name format. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
-|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revoke status. Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|String|Certificate profile display name|
-|deviceDisplayName|String|Device display name|
-|userDisplayName|String|User display name|
-|certificateExpirationDateTime|DateTimeOffset|Certificate expiry date|
-|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Last certificate issuance state change|
-|lastCertificateStateChangeDateTime|DateTimeOffset|Last certificate issuance state change|
-|certificateIssuer|String|Issuer|
-|certificateThumbprint|String|Thumbprint|
-|certificateSerialNumber|String|Serial number|
-|certificateKeyLength|Int32|Key length|
-|certificateEnhancedKeyUsage|String|Extended key usage|
-|certificateValidityPeriod|Int32|Validity period|
-|certificateSubjectNameFormatString|String|Subject name format string for custom subject name formats|
-|certificateSubjectAlternativeNameFormatString|String|Subject alternative name format string for custom formats|
-|certificateIssuanceDateTime|DateTimeOffset|Issuance date|
-|certificateErrorCode|Int32|Error code|
-
-
+| Property                                      | Type                                                                                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| :-------------------------------------------- | :--------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                                            | String                                                                                               | Key of the entity.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| devicePlatform                                | [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)                               | Device platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.                                                                                                                                                                                                                                                                                                              |
+| certificateKeyUsage                           | [keyUsages](../resources/intune-deviceconfig-keyusages.md)                                           | Key usage. Possible values are: `keyEncipherment`, `digitalSignature`.                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| certificateValidityPeriodUnits                | [certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md) | Validity period units. Possible values are: `days`, `months`, `years`.                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| certificateIssuanceState                      | [certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)           | Issuance State. Possible values are: `unknown`, `challengeIssued`, `challengeIssueFailed`, `requestCreationFailed`, `requestSubmitFailed`, `challengeValidationSucceeded`, `challengeValidationFailed`, `issueFailed`, `issuePending`, `issued`, `responseProcessingFailed`, `responsePending`, `enrollmentSucceeded`, `enrollmentNotNeeded`, `revoked`, `removedFromCollection`, `renewVerified`, `installFailed`, `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`. |
+| certificateKeyStorageProvider                 | [keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)             | Key Storage Provider. Possible values are: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.                                                                                                                                                                                                                                                                                                                             |
+| certificateSubjectNameFormat                  | [subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)                           | Subject name format. Possible values are: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.                                                                                                                                                                                                                                   |
+| certificateSubjectAlternativeNameFormat       | [subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)         | Subject alternative name format. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.                                                                                                                                                                                                                                                                                                                                            |
+| certificateRevokeStatus                       | [certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)       | Revoke status. Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.                                                                                                                                                                                                                                                                                                                                                                                                        |
+| certificateProfileDisplayName                 | String                                                                                               | Certificate profile display name                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| deviceDisplayName                             | String                                                                                               | Device display name                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| userDisplayName                               | String                                                                                               | User display name                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| certificateExpirationDateTime                 | DateTimeOffset                                                                                       | Certificate expiry date                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| certificateLastIssuanceStateChangedDateTime   | DateTimeOffset                                                                                       | Last certificate issuance state change                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| lastCertificateStateChangeDateTime            | DateTimeOffset                                                                                       | Last certificate issuance state change                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| certificateIssuer                             | String                                                                                               | Issuer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| certificateThumbprint                         | String                                                                                               | Thumbprint                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| certificateSerialNumber                       | String                                                                                               | Serial number                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| certificateKeyLength                          | Int32                                                                                                | Key length                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| certificateEnhancedKeyUsage                   | String                                                                                               | Extended key usage                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| certificateValidityPeriod                     | Int32                                                                                                | Validity period                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| certificateSubjectNameFormatString            | String                                                                                               | Subject name format string for custom subject name formats                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| certificateSubjectAlternativeNameFormatString | String                                                                                               | Subject alternative name format string for custom formats                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| certificateIssuanceDateTime                   | DateTimeOffset                                                                                       | Issuance date                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| certificateErrorCode                          | Int32                                                                                                | Error code                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosPkcsCertificateProfile/managedDeviceCertificateStates
 Content-type: application/json
 Content-length: 1517
@@ -139,8 +145,10 @@ Content-length: 1517
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 1566
@@ -174,9 +182,3 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
-
-
-
-
-
-

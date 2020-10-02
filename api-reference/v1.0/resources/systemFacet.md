@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
@@ -36,4 +36,3 @@ None. This facet is a null or not-null value and contains no properties.
   "section": "documentation",
   "tocPath": "Facets/System"
 } -->
-

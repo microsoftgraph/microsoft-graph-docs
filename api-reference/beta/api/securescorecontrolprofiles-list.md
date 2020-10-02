@@ -1,4 +1,4 @@
----
+﻿---
 title: "List secureScoreControlProfiles"
 description: "Retrieve the properties and relationships of a secureScoreControlProfiles object."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Retrieves a list of [secureScoreControlProfile](../resources/securescorecontrolp
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All   |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)           |
+| :------------------------------------- | :---------------------------------------------------- |
+| Delegated (work or school account)     | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                        |
+| Application                            | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## HTTP request
 
@@ -35,9 +35,9 @@ GET /security/secureScoreControlProfiles
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {code}. Required.|
+| Name          | Description              |
+| :------------ | :----------------------- |
+| Authorization | Bearer {code}. Required. |
 
 ## Request body
 
@@ -54,6 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "securescorecontrolprofiles_list"
@@ -62,24 +63,28 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-list-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,7 +139,6 @@ Content-type: application/json
 }
 ```
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -146,5 +150,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

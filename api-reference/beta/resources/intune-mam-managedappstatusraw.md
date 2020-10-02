@@ -1,4 +1,4 @@
----
+﻿---
 title: "managedAppStatusRaw resource type"
 description: "Represents an un-typed status report about organizations app protection and configuration."
 author: "dougeby"
@@ -17,35 +17,40 @@ Namespace: microsoft.graph
 
 Represents an un-typed status report about organizations app protection and configuration.
 
-
 Inherits from [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List managedAppStatusRaws](../api/intune-mam-managedappstatusraw-list.md)|[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) collection|List properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) objects.|
-|[Get managedAppStatusRaw](../api/intune-mam-managedappstatusraw-get.md)|[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md)|Read properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) object.|
+
+| Method                                                                     | Return Type                                                                      | Description                                                                                                             |
+| :------------------------------------------------------------------------- | :------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| [List managedAppStatusRaws](../api/intune-mam-managedappstatusraw-list.md) | [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) collection | List properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) objects. |
+| [Get managedAppStatusRaw](../api/intune-mam-managedappstatusraw-get.md)    | [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md)            | Read properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) object.  |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Friendly name of the status report. Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
-|id|String|Key of the entity. Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
-|version|String|Version of the entity. Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
-|content|[Json](../resources/intune-mam-json.md)|Status report content.|
+
+| Property    | Type                                    | Description                                                                                                        |
+| :---------- | :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| displayName | String                                  | Friendly name of the status report. Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md) |
+| id          | String                                  | Key of the entity. Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)                  |
+| version     | String                                  | Version of the entity. Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)              |
+| content     | [Json](../resources/intune-mam-json.md) | Status report content.                                                                                             |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.managedAppStatusRaw",
   "displayName": "String",
@@ -56,9 +61,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

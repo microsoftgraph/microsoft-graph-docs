@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create deviceManagementSettingDefinition"
 description: "Create a new deviceManagementSettingDefinition object."
 author: "dougeby"
@@ -18,20 +18,23 @@ Namespace: microsoft.graph
 Create a new [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/settingDefinitions
 POST /deviceManagement/categories/{deviceManagementSettingCategoryId}/settingDefinitions
 POST /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceManagementIntentSettingCategoryId}/settingDefinitions
@@ -39,39 +42,42 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the deviceManagementSettingDefinition object.
 
 The following table shows the properties that are required when you create the deviceManagementSettingDefinition.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The ID of the setting definition|
-|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|The data type of the value. Possible values are: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|String|The setting's display name|
-|isTopLevel|Boolean|If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting|
-|description|String|The setting's description|
-|placeholderText|String|Placeholder text as an example of valid input|
-|documentationUrl|String|Url to setting documentation|
-|keywords|String collection|Keywords associated with the setting|
-|constraints|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) collection|Collection of constraints for the setting value|
-|dependencies|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) collection|Collection of dependencies on other settings|
-
-
+| Property         | Type                                                                                                                  | Description                                                                                                                  |
+| :--------------- | :-------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| id               | String                                                                                                                | The ID of the setting definition                                                                                             |
+| valueType        | [deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)              | The data type of the value. Possible values are: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`. |
+| displayName      | String                                                                                                                | The setting's display name                                                                                                   |
+| isTopLevel       | Boolean                                                                                                               | If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting          |
+| description      | String                                                                                                                | The setting's description                                                                                                    |
+| placeholderText  | String                                                                                                                | Placeholder text as an example of valid input                                                                                |
+| documentationUrl | String                                                                                                                | Url to setting documentation                                                                                                 |
+| keywords         | String collection                                                                                                     | Keywords associated with the setting                                                                                         |
+| constraints      | [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) collection               | Collection of constraints for the setting value                                                                              |
+| dependencies     | [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) collection | Collection of dependencies on other settings                                                                                 |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/settingDefinitions
 Content-type: application/json
 Content-length: 928
@@ -113,8 +119,10 @@ Content-length: 928
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 977
@@ -155,9 +163,3 @@ Content-Length: 977
   ]
 }
 ```
-
-
-
-
-
-

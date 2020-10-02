@@ -1,4 +1,4 @@
----
+﻿---
 title: "runAsAccountType enum type"
 description: "Indicates the type of execution context the app runs in."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Indicates the type of execution context the app runs in.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|system|0|System context|
-|user|1|User context|
 
-
-
-
-
-
+| Member | Value | Description    |
+| :----- | :---- | :------------- |
+| system | 0     | System context |
+| user   | 1     | User context   |

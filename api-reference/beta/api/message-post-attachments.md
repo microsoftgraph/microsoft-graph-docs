@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add attachment"
 description: "Use this API to add an attachment to a message. "
 author: "svpsiva"
@@ -30,40 +30,52 @@ message that is being [drafted](../api/user-post-messages.md), or [created and s
 >**Note**: This operation limits the size of the attachment you can add to under 3 MB.
 >
 > However, if you're attaching to a message a file that is between 3MB and 150MB, you can [create an upload session](attachment-createuploadsession.md) and iteratively upload ranges of the file to attach it. See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Mail.ReadWrite                              |
+| Delegated (personal Microsoft account) | Mail.ReadWrite                              |
+| Application                            | Mail.ReadWrite                              |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 Attachments for a [message](../resources/message.md) in a user's mailbox.
+
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
+
 Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.
+
 ```http
 POST /me/mailFolders/{id}/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
+
 Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
 example below shows one level of nesting, but a message can be located in a child of a child and so on.
+
 ```http
 POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
+
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+
+| Name          | Type   | Description                                            |
+| :------------ | :----- | :----------------------------------------------------- |
+| Authorization | string | Bearer {token}. Required.                              |
+| Content-Type  | string | Nature of the data in the body of an entity. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.
 
 ## Response
@@ -73,13 +85,16 @@ If successful, this method returns `201 Created` response code and the [Attachme
 ## Example (file attachment)
 
 ##### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_message_beta"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkpsDRVK/attachments
 Content-type: application/json
@@ -91,30 +106,37 @@ Content-length: 142
   "contentBytes": "a0b1c76de9f7="
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-message-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-message-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-message-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
+
 ##### Response
+
 Here is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_message_beta",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -136,6 +158,7 @@ Content-length: 202
 ## Example (item attachment)
 
 ##### Request
+
 Here is an example of the request.
 
 <!-- {
@@ -171,15 +194,17 @@ Content-length: 200
 
 ```
 
-
 ##### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_beta",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -198,10 +223,12 @@ Content-length: 162
 ## Example (reference attachment)
 
 ##### Request
+
 Here is an example of a request that adds a reference attachment to an existing message.
 The attachment points to a folder on OneDrive.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_message",
@@ -222,29 +249,35 @@ Content-length: 319
     "isFolder": "True" 
 } 
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-from-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-from-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example of a full response.
+
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_from_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
+
 ```http
 HTTP 201 Created
 
@@ -266,9 +299,9 @@ HTTP 201 Created
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -278,5 +311,3 @@ HTTP 201 Created
   "tocPath": ""
 }
 -->
-
-

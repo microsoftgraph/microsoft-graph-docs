@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerEnrollmentMode enum type"
 description: "The enrollment mode for an enrollment profile."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 The enrollment mode for an enrollment profile.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|corporateOwnedDedicatedDevice|0|Not yet documented|
-|corporateOwnedFullyManaged|1|Not yet documented|
-|corporateOwnedWorkProfile|2|Not yet documented|
 
-
-
-
-
-
+| Member                        | Value | Description        |
+| :---------------------------- | :---- | :----------------- |
+| corporateOwnedDedicatedDevice | 0     | Not yet documented |
+| corporateOwnedFullyManaged    | 1     | Not yet documented |
+| corporateOwnedWorkProfile     | 2     | Not yet documented |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "mdmSupportedState enum type"
 description: "Mdm Support Status of the setting."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Mdm Support Status of the setting.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|unknown|0|Mdm support status of the setting is not known.|
-|supported|1|Setting is supported.|
-|unsupported|2|Setting is unsupported.|
-|deprecated|3|Setting is depcrecated.|
 
-
-
-
-
-
+| Member      | Value | Description                                     |
+| :---------- | :---- | :---------------------------------------------- |
+| unknown     | 0     | Mdm support status of the setting is not known. |
+| supported   | 1     | Setting is supported.                           |
+| unsupported | 2     | Setting is unsupported.                         |
+| deprecated  | 3     | Setting is depcrecated.                         |

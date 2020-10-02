@@ -1,4 +1,4 @@
----
+﻿---
 title: "omaSetting resource type"
 description: "OMA Settings definition."
 author: "dougeby"
@@ -18,23 +18,28 @@ Namespace: microsoft.graph
 OMA Settings definition.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|Display Name.|
-|description|String|Description.|
-|omaUri|String|OMA.|
+
+| Property    | Type   | Description   |
+| :---------- | :----- | :------------ |
+| displayName | String | Display Name. |
+| description | String | Description.  |
+| omaUri      | String | OMA.          |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSetting"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.omaSetting",
   "displayName": "String",
@@ -42,9 +47,3 @@ Here is a JSON representation of the resource.
   "omaUri": "String"
 }
 ```
-
-
-
-
-
-

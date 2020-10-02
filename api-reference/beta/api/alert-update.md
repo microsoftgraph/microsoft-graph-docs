@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update alert"
 description: "Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions."
 localization_priority: Normal
@@ -19,15 +19,16 @@ Update an editable **alert** property within any integrated solution to keep ale
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |   SecurityEvents.ReadWrite.All  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | SecurityEvents.ReadWrite.All                |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | SecurityEvents.ReadWrite.All                |
 
 ## HTTP request
 
 > **Note:** You must include the **alert** ID as a parameter and vendorInformation containing the `provider` and `vendor` with this method.
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -36,24 +37,24 @@ PATCH /security/alerts/{alert_id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization  | Bearer {code}. Required.|
-|Prefer | return=representation. Optional. |
+| Name          | Description                      |
+| :------------ | :------------------------------- |
+| Authorization | Bearer {code}. Required.         |
+| Prefer        | return=representation. Optional. |
 
 ## Request body
 
 In the request body, supply a JSON representation of the values for relevant fields that should be updated. The body **must** contain the **vendorInformation** property with valid `provider` and `vendor` fields. The following table lists the fields that can be updated for an alert. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|assignedTo|String|Name of the analyst the alert is assigned to for triage, investigation, or remediation.|
-|closedDateTime|DateTimeOffset|Time at which the alert was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|comments|String collection|Analyst comments on the alert (for customer alert management). This method can update the comments field with the following values only: `Closed in IPC`, `Closed in MCAS`.|
-|feedback|alertFeedback enum|Analyst feedback on the alert. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
-|status|alertStatus enum|Alert life cycle status (stage). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.|
-|tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).|
-|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker). **Provider and vendor fields are required.**|
+| Property          | Type                                                                   | Description                                                                                                                                                                                                                              |
+| :---------------- | :--------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| assignedTo        | String                                                                 | Name of the analyst the alert is assigned to for triage, investigation, or remediation.                                                                                                                                                  |
+| closedDateTime    | DateTimeOffset                                                         | Time at which the alert was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.    |
+| comments          | String collection                                                      | Analyst comments on the alert (for customer alert management). This method can update the comments field with the following values only: `Closed in IPC`, `Closed in MCAS`.                                                              |
+| feedback          | alertFeedback enum                                                     | Analyst feedback on the alert. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.                                                                                                                        |
+| status            | alertStatus enum                                                       | Alert life cycle status (stage). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.                                                                                                                                   |
+| tags              | String collection                                                      | User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).                                                                                                                     |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker). **Provider and vendor fields are required.** |
 
 ## Response
 
@@ -70,6 +71,7 @@ If the optional request header is used, the method returns a `200 OK` response c
 The following is an example of the request without the `Prefer` header.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_alert"
@@ -93,26 +95,30 @@ Content-type: application/json
     }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-alert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-alert-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- markdownlint-disable MD024 -->
 
 #### Response
 
 The following is an example of a successful response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -159,6 +165,7 @@ Prefer: return=representation
 The following is an example of the response when the optional `Prefer: return=representation` request header is used.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -181,6 +188,7 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -192,5 +200,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

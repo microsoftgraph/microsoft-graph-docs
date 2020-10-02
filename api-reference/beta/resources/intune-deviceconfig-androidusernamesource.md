@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidUsernameSource enum type"
 description: "Android username source."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Android username source.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|username|0|The username.|
-|userPrincipalName|1|The user principal name.|
-|samAccountName|2|The user sam account name.|
-|primarySmtpAddress|3|Primary SMTP address.|
 
-
-
-
-
-
+| Member             | Value | Description                |
+| :----------------- | :---- | :------------------------- |
+| username           | 0     | The username.              |
+| userPrincipalName  | 1     | The user principal name.   |
+| samAccountName     | 2     | The user sam account name. |
+| primarySmtpAddress | 3     | Primary SMTP address.      |

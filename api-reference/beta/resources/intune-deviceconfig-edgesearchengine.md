@@ -1,4 +1,4 @@
----
+﻿---
 title: "edgeSearchEngine resource type"
 description: "Allows IT admins to set a predefined default search engine for MDM-Controlled devices."
 author: "dougeby"
@@ -17,33 +17,31 @@ Namespace: microsoft.graph
 
 Allows IT admins to set a predefined default search engine for MDM-Controlled devices.
 
-
 Inherits from [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|edgeSearchEngineType|[edgeSearchEngineType](../resources/intune-deviceconfig-edgesearchenginetype.md)|Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: `default`, `bing`.|
+
+| Property             | Type                                                                             | Description                                                                                                                    |
+| :------------------- | :------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| edgeSearchEngineType | [edgeSearchEngineType](../resources/intune-deviceconfig-edgesearchenginetype.md) | Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: `default`, `bing`. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngine"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngine",
   "edgeSearchEngineType": "String"
 }
 ```
-
-
-
-
-
-

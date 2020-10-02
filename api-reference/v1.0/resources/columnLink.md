@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
@@ -8,6 +8,7 @@ description: "A columnLink on a contentType attaches a site columnDefinition to 
 ms.prod: ""
 doc_type: resourcePageType
 ---
+
 # ColumnLink resource type
 
 Namespace: microsoft.graph
@@ -19,6 +20,7 @@ A **columnLink** on a [contentType][] attaches a site **columnDefinition** to th
 ## JSON representation
 
 Here is a JSON representation of a **columnLink** resource.
+
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
@@ -33,10 +35,10 @@ Here is a JSON representation of a **columnLink** resource.
 
 ## Properties
 
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| **id**        | string | The unique identifier for the column.
-| **name**      | string | The name of the column  in this content type.
+| Property name | Type   | Description                                   |
+| :------------ | :----- | :-------------------------------------------- |
+| **id**        | string | The unique identifier for the column.         |
+| **name**      | string | The name of the column  in this content type. |
 
 <!-- {
   "type": "#page.annotation",
@@ -45,4 +47,3 @@ Here is a JSON representation of a **columnLink** resource.
   "section": "documentation",
   "tocPath": "Resources/ColumnLink"
 } -->
-

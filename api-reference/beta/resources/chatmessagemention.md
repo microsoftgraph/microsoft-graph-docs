@@ -1,4 +1,4 @@
----
+﻿---
 title: "chatMessageMention resource type"
 description: "Represents a mention in a chatMessage entity. The mention can be to a user, team, bot or channel. "
 localization_priority: Normal
@@ -19,7 +19,7 @@ In a **chatMessage** object that contains one or more mentions, the message body
 
 As an example, a chat message contains two mentions, with the mention text "Megan" and "Alex" respectively. Its body **content** property specifies `at` elements for the two mentions as follows:
 
-``` json
+```json
 "body": {
     "contentType": "html",
     "content": "<div><div>Ah, <at id=\"0\">Megan</at>, <at id=\"1\">Alex</at>, I saw them in a separate folder. Thanks!</div>\n</div>"
@@ -33,12 +33,12 @@ The second mention has an `id` attribute of 1, matching the **id** property of t
 For a fuller context of the example, see [List channel message replies](../api/channel-list-messagereplies.md#example).
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|id|Int32|Index of an entity being mentioned in the specified **chatMessage**. Matches the {index} value in the corresponding `<at id="{index}">` tag in the message body.|
-|mentionText|string|String used to represent the mention. For example, a user's display name, a team name.|
-|mentioned|[identitySet](identityset.md)|The entity (user, application, team, or channel) that was mentioned.  If it was a channel or team that was @mentioned, the identitySet contains a **conversation** property giving the ID of the team/channel, and a **conversationIdentityType** property that represents either the team or channel.|
 
+| Property    | Type                          | Description                                                                                                                                                                                                                                                                                            |
+| :---------- | :---------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id          | Int32                         | Index of an entity being mentioned in the specified **chatMessage**. Matches the {index} value in the corresponding `<at id="{index}">` tag in the message body.                                                                                                                                       |
+| mentionText | string                        | String used to represent the mention. For example, a user's display name, a team name.                                                                                                                                                                                                                 |
+| mentioned   | [identitySet](identityset.md) | The entity (user, application, team, or channel) that was mentioned.  If it was a channel or team that was @mentioned, the identitySet contains a **conversation** property giving the ID of the team/channel, and a **conversationIdentityType** property that represents either the team or channel. |
 
 ## JSON representation
 
@@ -59,6 +59,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -69,5 +70,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

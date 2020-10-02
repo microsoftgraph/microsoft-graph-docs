@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get the status of an educationSynchronizationProfile"
 description: "Get the status of a specific school data synchronization profile in the tenant. The response will indicate the status of the sync."
 author: "mmast-msft"
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /synchronizationProfiles/{id}/profileStatus
 ```
@@ -53,22 +54,28 @@ If successful, this method returns a `200 OK` response code and an [educationsyn
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationSynchronizationProfile_status"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/profileStatus
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationsynchronizationprofile-status-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationsynchronizationprofile-status-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-status-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -84,6 +91,7 @@ The following is an example of the response.
   "blockType": "response",
   "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus",
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -99,6 +107,7 @@ Content-length: 232
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",
@@ -108,5 +117,3 @@ Content-length: 232
   "suppressions": [
   ]
 }-->
-
-

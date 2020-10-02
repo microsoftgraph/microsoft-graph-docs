@@ -1,4 +1,4 @@
----
+﻿---
 title: "deviceManagementReportSchedule resource type"
 description: "Entity representing a schedule for which reports are delivered"
 author: "dougeby"
@@ -18,43 +18,49 @@ Namespace: microsoft.graph
 Entity representing a schedule for which reports are delivered
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List deviceManagementReportSchedules](../api/intune-reporting-devicemanagementreportschedule-list.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) collection|List properties and relationships of the [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) objects.|
-|[Get deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-get.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Read properties and relationships of the [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object.|
-|[Create deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-create.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Create a new [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object.|
-|[Delete deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-delete.md)|None|Deletes a [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md).|
-|[Update deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-update.md)|[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Update the properties of a [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object.|
+
+| Method                                                                                                    | Return Type                                                                                                  | Description                                                                                                                                         |
+| :-------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [List deviceManagementReportSchedules](../api/intune-reporting-devicemanagementreportschedule-list.md)    | [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) collection | List properties and relationships of the [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) objects. |
+| [Get deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-get.md)       | [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)            | Read properties and relationships of the [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object.  |
+| [Create deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-create.md) | [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)            | Create a new [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object.                              |
+| [Delete deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-delete.md) | None                                                                                                         | Deletes a [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md).                                        |
+| [Update deviceManagementReportSchedule](../api/intune-reporting-devicemanagementreportschedule-update.md) | [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)            | Update the properties of a [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) object.                |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Unique identifier for this entity|
-|reportScheduleName|String|Name of the schedule|
-|subject|String|Subject of the scheduled reports that are delivered|
-|emails|String collection|Emails to which the scheduled reports are delivered|
-|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequency of scheduled report delivery. Possible values are: `none`, `daily`, `weekly`, `monthly`.|
-|startDateTime|DateTimeOffset|Time that the delivery of the scheduled reports starts|
-|endDateTime|DateTimeOffset|Time that the delivery of the scheduled reports ends|
-|userId|String|The Id of the User who created the report|
-|reportName|String|Name of the report|
-|filter|String|Filters applied on the report|
-|select|String collection|Columns selected from the report|
-|orderBy|String collection|Ordering of columns in the report|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the scheduled report. Possible values are: `csv`, `pdf`.|
+
+| Property           | Type                                                                                                                    | Description                                                                                        |
+| :----------------- | :---------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- |
+| id                 | String                                                                                                                  | Unique identifier for this entity                                                                  |
+| reportScheduleName | String                                                                                                                  | Name of the schedule                                                                               |
+| subject            | String                                                                                                                  | Subject of the scheduled reports that are delivered                                                |
+| emails             | String collection                                                                                                       | Emails to which the scheduled reports are delivered                                                |
+| recurrence         | [deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md) | Frequency of scheduled report delivery. Possible values are: `none`, `daily`, `weekly`, `monthly`. |
+| startDateTime      | DateTimeOffset                                                                                                          | Time that the delivery of the scheduled reports starts                                             |
+| endDateTime        | DateTimeOffset                                                                                                          | Time that the delivery of the scheduled reports ends                                               |
+| userId             | String                                                                                                                  | The Id of the User who created the report                                                          |
+| reportName         | String                                                                                                                  | Name of the report                                                                                 |
+| filter             | String                                                                                                                  | Filters applied on the report                                                                      |
+| select             | String collection                                                                                                       | Columns selected from the report                                                                   |
+| orderBy            | String collection                                                                                                       | Ordering of columns in the report                                                                  |
+| format             | [deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)                   | Format of the scheduled report. Possible values are: `csv`, `pdf`.                                 |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementReportSchedule"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.deviceManagementReportSchedule",
   "id": "String (identifier)",
@@ -78,9 +84,3 @@ Here is a JSON representation of the resource.
   "format": "String"
 }
 ```
-
-
-
-
-
-

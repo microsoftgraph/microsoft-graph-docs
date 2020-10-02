@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create iosUpdateConfiguration"
 description: "Create a new iosUpdateConfiguration object."
 author: "dougeby"
@@ -18,68 +18,74 @@ Namespace: microsoft.graph
 Create a new [iosUpdateConfiguration](../resources/intune-deviceconfig-iosupdateconfiguration.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /deviceManagement/deviceConfigurations
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the iosUpdateConfiguration object.
 
 The following table shows the properties that are required when you create the iosUpdateConfiguration.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|isEnabled|Boolean|Is setting enabled in UI|
-|activeHoursStart|TimeOfDay|Active Hours Start (active hours mean the time window when updates install should not happen)|
-|activeHoursEnd|TimeOfDay|Active Hours End (active hours mean the time window when updates install should not happen)|
-|desiredOsVersion|String|If left unspecified, devices will update to the latest version of the OS.|
-|scheduledInstallDays|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
-|enforcedSoftwareUpdateDelayInDays|Int32|Days before software updates are visible to iOS devices ranging from 0 to 90 inclusive|
-|updateScheduleType|[iosSoftwareUpdateScheduleType](../resources/intune-deviceconfig-iossoftwareupdatescheduletype.md)|Update schedule type. Possible values are: `updateOutsideOfActiveHours`, `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
-|customUpdateTimeWindows|[customUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md) collection|If update schedule type is set to use time window scheduling, custom time windows when updates will be scheduled. This collection can contain a maximum of 20 elements.|
-
-
+| Property                                    | Type                                                                                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                                          | String                                                                                                                         | Key of the entity. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                                  |
+| lastModifiedDateTime                        | DateTimeOffset                                                                                                                 | DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                              |
+| roleScopeTagIds                             | String collection                                                                                                              | List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                        |
+| supportsScopeTags                           | Boolean                                                                                                                        | Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md) |
+| deviceManagementApplicabilityRuleOsEdition  | [deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)   | The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                       |
+| deviceManagementApplicabilityRuleOsVersion  | [deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)   | The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                  |
+| deviceManagementApplicabilityRuleDeviceMode | [deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md) | The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                 |
+| createdDateTime                             | DateTimeOffset                                                                                                                 | DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                    |
+| description                                 | String                                                                                                                         | Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                             |
+| displayName                                 | String                                                                                                                         | Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                    |
+| version                                     | Int32                                                                                                                          | Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)                                                                                                                                                                                                                                                                                                                                                                |
+| isEnabled                                   | Boolean                                                                                                                        | Is setting enabled in UI                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| activeHoursStart                            | TimeOfDay                                                                                                                      | Active Hours Start (active hours mean the time window when updates install should not happen)                                                                                                                                                                                                                                                                                                                                                                                               |
+| activeHoursEnd                              | TimeOfDay                                                                                                                      | Active Hours End (active hours mean the time window when updates install should not happen)                                                                                                                                                                                                                                                                                                                                                                                                 |
+| desiredOsVersion                            | String                                                                                                                         | If left unspecified, devices will update to the latest version of the OS.                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| scheduledInstallDays                        | [dayOfWeek](../resources/intune-deviceconfig-dayofweek.md) collection                                                          | Days in week for which active hours are configured. This collection can contain a maximum of 7 elements. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.                                                                                                                                                                                                                                                                                 |
+| utcTimeOffsetInMinutes                      | Int32                                                                                                                          | UTC Time Offset indicated in minutes                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| enforcedSoftwareUpdateDelayInDays           | Int32                                                                                                                          | Days before software updates are visible to iOS devices ranging from 0 to 90 inclusive                                                                                                                                                                                                                                                                                                                                                                                                      |
+| updateScheduleType                          | [iosSoftwareUpdateScheduleType](../resources/intune-deviceconfig-iossoftwareupdatescheduletype.md)                             | Update schedule type. Possible values are: `updateOutsideOfActiveHours`, `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.                                                                                                                                                                                                                                                                                                                                           |
+| customUpdateTimeWindows                     | [customUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md) collection                                | If update schedule type is set to use time window scheduling, custom time windows when updates will be scheduled. This collection can contain a maximum of 20 elements.                                                                                                                                                                                                                                                                                                                     |
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and a [iosUpdateConfiguration](../resources/intune-deviceconfig-iosupdateconfiguration.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 1596
@@ -137,8 +143,10 @@ Content-length: 1596
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 1768
@@ -197,9 +205,3 @@ Content-Length: 1768
   ]
 }
 ```
-
-
-
-
-
-

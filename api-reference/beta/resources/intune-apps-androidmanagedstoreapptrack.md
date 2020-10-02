@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidManagedStoreAppTrack resource type"
 description: "Contains track information for Android Managed Store apps."
 author: "dougeby"
@@ -18,31 +18,30 @@ Namespace: microsoft.graph
 Contains track information for Android Managed Store apps.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|trackId|String|Unique track identifier.|
-|trackAlias|String|Friendly name for track.|
+
+| Property   | Type   | Description              |
+| :--------- | :----- | :----------------------- |
+| trackId    | String | Unique track identifier. |
+| trackAlias | String | Friendly name for track. |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidManagedStoreAppTrack"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppTrack",
   "trackId": "String",
   "trackAlias": "String"
 }
 ```
-
-
-
-
-
-

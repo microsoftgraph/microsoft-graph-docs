@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "The DriveRecipient resource represents a person, group, or other recipient to share with using the invite action."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # DriveRecipient resource
 
 Namespace: microsoft.graph
@@ -21,6 +22,7 @@ The **DriveRecipient** resource represents a person, group, or other recipient t
   "blockType": "resource", 
   "@odata.type": "microsoft.graph.driveRecipient", 
   "optionalProperties": ["alias", "objectId", "email"] } -->
+
 ```json
 {
   "email": "string",
@@ -30,10 +32,11 @@ The **DriveRecipient** resource represents a person, group, or other recipient t
 ```
 
 ## Properties
+
 The recipients resource has these properties.
 
 | Property name | Type   | Description                                                                                             |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
+| :------------ | :----- | :------------------------------------------------------------------------------------------------------ |
 | email         | String | The email address for the recipient, if the recipient has an associated email address.                  |
 | alias         | String | The alias of the domain object, for cases where an email address is unavailable (e.g. security groups). |
 | objectId      | String | The unique identifier for the recipient in the directory.                                               |
@@ -53,5 +56,3 @@ Only one of these values is required.
   "suppressions": []
 }
 -->
-
-

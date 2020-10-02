@@ -1,4 +1,4 @@
----
+﻿---
 title: "importedWindowsAutopilotDeviceIdentity resource type"
 description: "Imported windows autopilot devices."
 author: "dougeby"
@@ -18,40 +18,46 @@ Namespace: microsoft.graph
 Imported windows autopilot devices.
 
 ## Methods
-|Method|Return Type|Description|
-|:---|:---|:---|
-|[List importedWindowsAutopilotDeviceIdentities](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection|List properties and relationships of the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) objects.|
-|[Get importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Read properties and relationships of the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.|
-|[Create importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Create a new [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.|
-|[Delete importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md)|None|Deletes a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).|
-|[Update importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Update the properties of a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.|
-|[import action](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection|Not yet documented|
+
+| Method                                                                                                                     | Return Type                                                                                                                   | Description                                                                                                                                                          |
+| :------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [List importedWindowsAutopilotDeviceIdentities](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md)   | [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection | List properties and relationships of the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) objects. |
+| [Get importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md)       | [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)            | Read properties and relationships of the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.  |
+| [Create importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md) | [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)            | Create a new [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.                              |
+| [Delete importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md) | None                                                                                                                          | Deletes a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).                                        |
+| [Update importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md) | [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)            | Update the properties of a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.                |
+| [import action](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md)                                 | [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection | Not yet documented                                                                                                                                                   |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The GUID for the object|
-|orderIdentifier|String|Order Id of the Windows autopilot device. - Deprecate|
-|groupTag|String|Group Tag of the Windows autopilot device.|
-|serialNumber|String|Serial number of the Windows autopilot device.|
-|productKey|String|Product Key of the Windows autopilot device.|
-|importId|String|The Import Id of the Windows autopilot device.|
-|hardwareIdentifier|Binary|Hardware Blob of the Windows autopilot device.|
-|state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Current state of the imported device.|
-|assignedUserPrincipalName|String|UPN of the user the device will be assigned|
+
+| Property                  | Type                                                                                                                         | Description                                           |
+| :------------------------ | :--------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------- |
+| id                        | String                                                                                                                       | The GUID for the object                               |
+| orderIdentifier           | String                                                                                                                       | Order Id of the Windows autopilot device. - Deprecate |
+| groupTag                  | String                                                                                                                       | Group Tag of the Windows autopilot device.            |
+| serialNumber              | String                                                                                                                       | Serial number of the Windows autopilot device.        |
+| productKey                | String                                                                                                                       | Product Key of the Windows autopilot device.          |
+| importId                  | String                                                                                                                       | The Import Id of the Windows autopilot device.        |
+| hardwareIdentifier        | Binary                                                                                                                       | Hardware Blob of the Windows autopilot device.        |
+| state                     | [importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md) | Current state of the imported device.                 |
+| assignedUserPrincipalName | String                                                                                                                       | UPN of the user the device will be assigned           |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentity"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "String (identifier)",
@@ -71,9 +77,3 @@ Here is a JSON representation of the resource.
   "assignedUserPrincipalName": "String"
 }
 ```
-
-
-
-
-
-

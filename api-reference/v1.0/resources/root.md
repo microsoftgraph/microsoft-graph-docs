@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -32,10 +32,8 @@ A null (or missing) value indicates the object is not the root.
 
 The **Root** resource has no properties.
 
-
 <!-- {
   "type": "#page.annotation",
   "section": "documentation",
   "tocPath": "Facets/Root"
 } -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "List assignments"
 description: "Returns a list of assignments assigned to a user for all classes. This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace."
 localization_priority: Normal
@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported.                                                                                         |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/assignments/
 GET /education/users/{id}/assignments
@@ -53,12 +55,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ##### Request
+
 The following is an example of the request.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_assignments"
 }-->
-```http 
+
+```http
 GET https://graph.microsoft.com/beta/education/me/assignments
 ```
 
@@ -68,13 +73,13 @@ The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-
 <!-- {
   "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationAssignment",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -123,6 +128,7 @@ Content-length: 344
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -133,5 +139,3 @@ Content-length: 344
   "suppressions": []
 }
 -->
-
-

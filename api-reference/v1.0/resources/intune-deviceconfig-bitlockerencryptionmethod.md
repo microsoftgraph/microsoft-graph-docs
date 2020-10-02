@@ -1,4 +1,4 @@
----
+﻿---
 title: "bitLockerEncryptionMethod enum type"
 description: "BitLockerEncryptionMethod types"
 author: "dougeby"
@@ -16,18 +16,10 @@ Namespace: microsoft.graph
 BitLockerEncryptionMethod types
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|aesCbc128|3|AES-CBC 128-bit.|
-|aesCbc256|4|AES-CBC 256-bit.|
-|xtsAes128|6|XTS-AES 128-bit.|
-|xtsAes256|7|XTS-AES 256-bit.|
 
-
-
-
-
-
-
-
-
+| Member    | Value | Description      |
+| :-------- | :---- | :--------------- |
+| aesCbc128 | 3     | AES-CBC 128-bit. |
+| aesCbc256 | 4     | AES-CBC 256-bit. |
+| xtsAes128 | 6     | XTS-AES 128-bit. |
+| xtsAes256 | 7     | XTS-AES 256-bit. |

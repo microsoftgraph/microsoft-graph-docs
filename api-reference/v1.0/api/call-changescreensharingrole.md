@@ -1,4 +1,4 @@
----
+﻿---
 title: "call: changeScreenSharingRole"
 description: "Allow applications to share screen content with the participants of a group call."
 author: "ananmishr"
@@ -16,47 +16,55 @@ Allow applications to share screen content with the participants of a group call
 > **Note:** This is only supported for group calls that use App-Hosted Media.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not Supported                               |
 | Delegated (personal Microsoft account) | Not Supported                               |
 | Application                            | Calls.AccessMedia.All                       |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /communications/calls/{id}/changeScreenSharingRole
 ```
 
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
+
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter      | Type    |Description|
-|:---------------|:--------|:----------|
-|role|String|Possible values are: 'viewer', 'sharer'|
+| Parameter | Type   | Description                             |
+| :-------- | :----- | :-------------------------------------- |
+| role      | String | Possible values are: 'viewer', 'sharer' |
 
 ## Response
+
 If successful, this method returns a `202 Accepted` response code, and all participants will receive a roster update.
 
 ## Example
 
 ##### Request
+
 The following example shows the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "call-changeScreenSharingRole"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/changeScreenSharingRole
 Content-Type: application/json
@@ -66,26 +74,31 @@ Content-Length: 24
   "role": "viewer"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-changescreensharingrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-changescreensharingrole-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/call-changescreensharingrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/call-changescreensharingrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 Here is an example of the response. 
 
 <!-- {
@@ -93,10 +106,13 @@ Here is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.None"
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
+
 ##### Notification - roster updated with participant sending screen sharing video
+
 Note the `direction: sendOnly` property on the media stream.
 
 ```http
@@ -108,6 +124,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -149,6 +166,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -160,4 +178,3 @@ Content-Type: application/json
   ]
 }
 -->
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "b2cUserFlows resource type"
 description: "Represents a user flow within an Azure Active Directory B2C tenant."
 localization_priority: Priority
@@ -25,29 +25,29 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List user flows](../api/b2cuserflows-list.md)|b2cUserFlow collection|Retrieve all user flows.|
-|[Get user flow](../api/b2cuserflows-get.md)|b2cUserFlow|Retrieve properties of a user flow.|
-|[Create user flow](../api/b2cuserflow-post-b2cuserflows.md)|b2cUserFlow|Create a new user flow.|
-|[Delete user flow](../api/b2cuserflows-delete.md)|None|Delete a user flow.|
-|[List identity providers](../api/b2cuserflows-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a user flow.|
-|[Add identity provider](../api/b2cuserflows-update-identityprovider.md)|None|Add an identity provider to a user flow.|
-|[Delete identity provider](../api/b2cuserflows-delete-identityprovider.md)|None|Delete an identity provider from a user flow.|
+| Method                                                                     | Return Type                                                     | Description                                     |
+| :------------------------------------------------------------------------- | :-------------------------------------------------------------- | :---------------------------------------------- |
+| [List user flows](../api/b2cuserflows-list.md)                             | b2cUserFlow collection                                          | Retrieve all user flows.                        |
+| [Get user flow](../api/b2cuserflows-get.md)                                | b2cUserFlow                                                     | Retrieve properties of a user flow.             |
+| [Create user flow](../api/b2cuserflow-post-b2cuserflows.md)                | b2cUserFlow                                                     | Create a new user flow.                         |
+| [Delete user flow](../api/b2cuserflows-delete.md)                          | None                                                            | Delete a user flow.                             |
+| [List identity providers](../api/b2cuserflows-list-identityproviders.md)   | [identityProvider](../resources/identityProvider.md) collection | Retrieve all identity providers in a user flow. |
+| [Add identity provider](../api/b2cuserflows-update-identityprovider.md)    | None                                                            | Add an identity provider to a user flow.        |
+| [Delete identity provider](../api/b2cuserflows-delete-identityprovider.md) | None                                                            | Delete an identity provider from a user flow.   |
 
 ## Properties
 
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2C_1_` after creation.|
-|userFlowType|String|The [type of user flow](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-versions). The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
-|userFlowVersion|Single|The version of the user flow.|
+| Property        | Type   | Description                                                                                                                                                                                                                                                                                                           |
+| :-------------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id              | String | The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2C_1_` after creation.                                                                                                                                                         |
+| userFlowType    | String | The [type of user flow](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-versions). The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li> |
+| userFlowVersion | Single | The version of the user flow.                                                                                                                                                                                                                                                                                         |
 
 ## Relationships
 
-| Relationship       | Type  |Description|
-|:---------------|:--------|:----------|
-|identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
+| Relationship      | Type                                                            | Description                                       |
+| :---------------- | :-------------------------------------------------------------- | :------------------------------------------------ |
+| identityProviders | [identityProvider](../resources/identityprovider.md) collection | The identity providers included in the user flow. |
 
 ## JSON representation
 
@@ -68,5 +68,3 @@ The following is a JSON representation of the resource.
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
 }
 ```
-
-

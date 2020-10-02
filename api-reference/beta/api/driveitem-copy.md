@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 description: "Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name."
 ms.date: 09/10/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # Copy a DriveItem
 
 Namespace: microsoft.graph
@@ -19,11 +20,11 @@ Asynchronously creates a copy of an [driveItem][item-resource] (including any ch
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All                      |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -41,11 +42,10 @@ POST /users/{userId}/drive/items/{itemId}/copy
 
 In the request body, provide a JSON object with the following parameters.
 
-
-| Name            | Value                                          | Description                                                                                                 |
-|:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-| parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy will be created in.                                         |
-| name            | string                                         | Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.    |
+| Name            | Value                                          | Description                                                                                              |
+| :-------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------------------- |
+| parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy will be created in.                                      |
+| name            | string                                         | Optional. The new name for the copy. If this isn't provided, the same name will be used as the original. |
 
 **Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.
 
@@ -54,8 +54,8 @@ In the request body, provide a JSON object with the following parameters.
 This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.
 The new copy of the file will be named `contoso plan (copy).txt`.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -70,20 +70,23 @@ Content-Type: application/json
   "name": "contoso plan (copy).txt"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/copy-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Response
 
@@ -117,5 +120,3 @@ The response from the API will only indicate that the copy operation was accepte
   ]
 }
 -->
-
-

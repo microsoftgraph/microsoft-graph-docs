@@ -1,4 +1,4 @@
----
+﻿---
 author: learafa
 ms.author: learafa
 title: "Get websocket endpoint"
@@ -27,11 +27,11 @@ Socket.io is a popular notifications library for JavaScript that utilizes WebSoc
 One of the following permissions is required to call this API.
 To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)
-|:---------------------------------------|:-------------------------------------------
-| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
-| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
-| Application                            | Not supported.
+| Permission type                        | Permissions (from least to most privileged)                           |
+| :------------------------------------- | :-------------------------------------------------------------------- |
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.ReadWrite.All                      |
+| Application                            | Not supported.                                                        |
 
 ## HTTP request
 
@@ -49,26 +49,30 @@ GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "drive_root_subscriptions_socketIo" } -->
+
 ```msgraph-interactive
 GET /me/drive/root/subscriptions/socketIo
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/drive-root-subscriptions-socketio-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/drive-root-subscriptions-socketio-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/drive-root-subscriptions-socketio-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -79,6 +83,7 @@ If successful, this method returns a `200 OK` response code and a [subscription]
   "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -113,6 +118,7 @@ socket.on("notification", (data)=>console.log("Notification!", data));
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Example",
@@ -122,5 +128,3 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "suppressions": [
   ]
 }-->
-
-

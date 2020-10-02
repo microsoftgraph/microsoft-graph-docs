@@ -1,4 +1,4 @@
----
+﻿---
 title: "localizedName resource type"
 description: "Represents the localized name used in the term store, which identifies the name in the localized language."
 author: mohitpcad
@@ -17,22 +17,27 @@ Namespace: microsoft.graph.termStore
 Represents the localized name used in the term [store], which identifies the name in the localized language. For more information, see [localizedLabel].
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|languageTag|String|The language tag for the label.|
-|name|String|The name in the localized language.|
+
+| Property    | Type   | Description                         |
+| :---------- | :----- | :---------------------------------- |
+| languageTag | String | The language tag for the label.     |
+| name        | String | The name in the localized language. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.termStore.localizedName"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.termStore.localizedName",
   "name": "String",
@@ -58,5 +63,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

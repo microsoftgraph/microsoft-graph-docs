@@ -1,4 +1,4 @@
----
+﻿---
 title: "windows10VpnAuthenticationMethod enum type"
 description: "Windows 10 VPN connection types."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Windows 10 VPN connection types.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|certificate|0|Authenticate with a certificate.|
-|usernameAndPassword|1|Use username and password for authentication.|
-|customEapXml|2|Authentication method is specified in custom EAP XML.|
-|derivedCredential|3|Use Derived Credential for authentication.|
 
-
-
-
-
-
+| Member              | Value | Description                                           |
+| :------------------ | :---- | :---------------------------------------------------- |
+| certificate         | 0     | Authenticate with a certificate.                      |
+| usernameAndPassword | 1     | Use username and password for authentication.         |
+| customEapXml        | 2     | Authentication method is specified in custom EAP XML. |
+| derivedCredential   | 3     | Use Derived Credential for authentication.            |

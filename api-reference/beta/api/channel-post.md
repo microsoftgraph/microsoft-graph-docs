@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create channel"
 description: "Create new channel in a Microsoft Team, as specified in the request body."
 localization_priority: Normal
@@ -19,28 +19,30 @@ Create a new [channel](../resources/channel.md) in a team, as specified in the r
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Channel.Create.Group*, Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All|
+| Permission type                        | Permissions (from least to most privileged)                                                               |
+| :------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All                                              |
+| Delegated (personal Microsoft account) | Not supported.                                                                                            |
+| Application                            | Channel.Create.Group*, Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /teams/{id}/channels
 ```
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json. Required.  |
+| Header        | Value                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -59,10 +61,12 @@ If successful, this method returns a `201 Created` response code and a [channel]
 The following example shows a request to create a standard channel.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels
 Content-type: application/json
@@ -73,15 +77,19 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,6 +106,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.channel"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -116,8 +125,8 @@ Content-length: 201
 
 The following example shows a request to create a private channel and add a user as an team owner.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_user"
@@ -142,20 +151,23 @@ Content-type: application/json
      ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -186,6 +198,7 @@ Content-length: 201
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -197,5 +210,3 @@ Content-length: 201
   ]
 }
 -->
-
-

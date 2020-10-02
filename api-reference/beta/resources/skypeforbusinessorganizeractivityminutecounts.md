@@ -1,4 +1,4 @@
----
+﻿---
 title: "skypeForBusinessOrganizerActivityMinuteCounts resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 ## Properties
 
-| Property           | Type   |
-| :----------------- | :----- |
-| audioVideo         | Int64  |
-| dialInMicrosoft    | Int64  |
-| dialOutMicrosoft   | Int64  |
-| reportRefreshDate  | Date   |
-| reportDate         | Date   |
-| reportPeriod       | String |
+| Property          | Type   |
+| :---------------- | :----- |
+| audioVideo        | Int64  |
+| dialInMicrosoft   | Int64  |
+| dialOutMicrosoft  | Int64  |
+| reportRefreshDate | Date   |
+| reportDate        | Date   |
+| reportPeriod      | String |
 
 ## JSON representation
 
@@ -41,5 +41,3 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
-
-

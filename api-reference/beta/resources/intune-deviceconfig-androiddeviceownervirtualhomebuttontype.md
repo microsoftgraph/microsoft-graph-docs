@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidDeviceOwnerVirtualHomeButtonType enum type"
 description: "Android Device Owner Kiosk Mode managed home screen virtual home button type."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Android Device Owner Kiosk Mode managed home screen virtual home button type.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notConfigured|0|Not configured; this value is ignored.|
-|swipeUp|1|Swipe-up for home button.|
-|floating|2|Floating home button.|
 
-
-
-
-
-
+| Member        | Value | Description                            |
+| :------------ | :---- | :------------------------------------- |
+| notConfigured | 0     | Not configured; this value is ignored. |
+| swipeUp       | 1     | Swipe-up for home button.              |
+| floating      | 2     | Floating home button.                  |

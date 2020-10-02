@@ -1,4 +1,4 @@
----
+﻿---
 title: "participantMixerLevel resource type"
 description: "Configuration of mixer levels for given audio participant"
 author: "ananmishr"
@@ -17,12 +17,12 @@ Configuration of mixer levels for given audio participant
 
 ## Properties
 
-| Property               | Type                                                      | Description                                                                                         |
-| :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| ducking                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Configuration of ducking (phasing in and out) of other sources for this partipant custom mix.       |
-| exclusiveMode          | boolean                                                   | Whether sources without explicit source level should be removed from the mix.                       |
-| participant            | String                                                    | The participant for whom the mixer is being configured.                                             |
-| sourceLevels           | [audioSourceLevel](audiosourcelevel.md) collection        | Level configuration for other sources.                                                              |
+| Property      | Type                                                      | Description                                                                                   |
+| :------------ | :-------------------------------------------------------- | :-------------------------------------------------------------------------------------------- |
+| ducking       | [audioDuckingConfiguration](audioduckingconfiguration.md) | Configuration of ducking (phasing in and out) of other sources for this partipant custom mix. |
+| exclusiveMode | boolean                                                   | Whether sources without explicit source level should be removed from the mix.                 |
+| participant   | String                                                    | The participant for whom the mixer is being configured.                                       |
+| sourceLevels  | [audioSourceLevel](audiosourcelevel.md) collection        | Level configuration for other sources.                                                        |
 
 ## JSON representation
 
@@ -35,6 +35,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.participantMixerLevel"
 }-->
+
 ```json
 {
   "ducking": { "@odata.type": "#microsoft.graph.audioDuckingConfiguration" },
@@ -50,6 +51,7 @@ The following is a JSON representation of the resource.
   "blockType": "example",
   "@odata.type": "microsoft.graph.participantMixerLevel"
 }-->
+
 ```json
 {
   "ducking": {
@@ -74,6 +76,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -84,5 +87,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

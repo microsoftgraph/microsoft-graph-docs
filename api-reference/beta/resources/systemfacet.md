@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: <descripton>
 ms.date: 09/12/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
+
 # System facet
 
 Namespace: microsoft.graph
@@ -39,5 +40,3 @@ None. This facet is a null or not-null value and contains no properties.
   "suppressions": []
 }
 -->
-
-

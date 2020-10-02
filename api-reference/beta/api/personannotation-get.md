@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get personAnnotation"
 description: "Read the properties and relationships of a personAnnotation object."
 author: "kevinbellinger"
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get personAnnotation
+
 Namespace: microsoft.graph
 
 Read the properties and relationships of a [personAnnotation](../resources/personannotation.md) object from a user's [profile](../resources/profile.md).
@@ -17,7 +18,7 @@ Read the properties and relationships of a [personAnnotation](../resources/perso
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
-|:---------------------------------------|:---------------------------------------------------------------------------------|
+| :------------------------------------- | :------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
@@ -28,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /me/profile/notes/{id}
 GET /users/{id | userPrincipalName}/profile/notes/{id}
 ```
@@ -38,11 +40,13 @@ GET /users/{id | userPrincipalName}/profile/notes/{id}
 This method supports the `$select` query parameter. Specify a list of properties to include in the response, separating them by commas. For optimal performance, only select the subset of properties needed.
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -52,38 +56,48 @@ If successful, this method returns a `200 OK` response code and a [personAnnotat
 ## Examples
 
 ### Request
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_personannotation"
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/beta/me/profile/notes/{id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-personannotation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-personannotation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-personannotation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.personAnnotation"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -116,5 +130,3 @@ Content-Type: application/json
   "displayName": "About Me"
 }
 ```
-
-

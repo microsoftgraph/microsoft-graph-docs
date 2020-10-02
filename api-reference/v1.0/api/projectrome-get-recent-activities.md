@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get recent user activities"
 description: " API. The service will query for the most recent historyItems, and then pull those related activities. Activities will be sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** will not be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate."
 localization_priority: Normal
@@ -17,11 +17,11 @@ Get recent activities for a given user. This OData function has some default beh
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | UserActivity.ReadWrite.CreatedByApp         |
+| Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp         |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
@@ -51,9 +51,9 @@ The following are some examples of supported queries with URL encoding.
 
 ## Request headers
 
-|Name | Type | Description|
-|:----|:-----|:-----------|
-|Authorization | string | Bearer {token}. Required.|
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
 
@@ -69,8 +69,8 @@ If successful, this method returns the `200 OK` response code with the user's re
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_recent_activities"
@@ -79,24 +79,28 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/activities/recent
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-recent-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-recent-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-recent-activities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-recent-activities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 
@@ -160,6 +164,7 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get recent activities",
@@ -181,4 +186,3 @@ Content-Type: application/json
   ],
   "tocPath": ""
 }-->
-

@@ -1,4 +1,4 @@
----
+﻿---
 author: daspek
 description: "The MentionAction resource provides information about an activity that mentioned people."
 ms.date: 09/14/2017
@@ -7,6 +7,7 @@ localization_priority: Normal
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
+
 # MentionAction resource type
 
 Namespace: microsoft.graph
@@ -33,9 +34,9 @@ The **MentionAction** resource provides information about an [activity][] that m
 
 ## Properties
 
-| Property name | Type                       | Description
-|:--------------|:---------------------------|:-----------------------------
-| mentionees    | [identitySet][] collection | The identities of the users mentioned in this action.
+| Property name | Type                       | Description                                           |
+| :------------ | :------------------------- | :---------------------------------------------------- |
+| mentionees    | [identitySet][] collection | The identities of the users mentioned in this action. |
 
 [identitySet]: identityset.md
 
@@ -53,5 +54,3 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "suppressions": []
 }
 -->
-
-

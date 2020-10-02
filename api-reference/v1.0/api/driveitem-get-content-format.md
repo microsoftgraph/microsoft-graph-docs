@@ -1,4 +1,4 @@
----
+﻿---
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
@@ -8,6 +8,7 @@ ms.prod: "sharepoint"
 description: "Use this API to retrieve the contents of an item in a specific format."
 doc_type: apiPageType
 ---
+
 # Download a file in another format
 
 Namespace: microsoft.graph
@@ -32,52 +33,55 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 ## Query parameters
 
-| Parameter      | Type  | Description                                                    |
-|:----------|:-------|:---------------------------------------------------------------|
+| Parameter | Type   | Description                                                    |
+| :-------- | :----- | :------------------------------------------------------------- |
 | _format_  | string | Specify the format the item's content should be downloaded as. |
-
 
 ### Format options
 
 The following values are valid for the **format** parameter:
 
-| Format value | Description                        | Supported source extensions
-|:-------------|:-----------------------------------|----------------------------
-| pdf          | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
+| Format value | Description                        | Supported source extensions                                                                       |
+| :----------- | :--------------------------------- | ------------------------------------------------------------------------------------------------- |
+| pdf          | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx |
 
 ## Optional request headers
 
-| Name            | Value   | Description                                                                                                                                              |
-|:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | String  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
+| Name            | Value  | Description                                                                                                                                              |
+| :-------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _if-none-match_ | String | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 ## Example
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/content?format={format}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-item-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-item-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/convert-item-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## Response
 
@@ -110,4 +114,3 @@ See [Error Responses][error-response] for more information about how errors are 
   "suppressions": [
   ]
 } -->
-

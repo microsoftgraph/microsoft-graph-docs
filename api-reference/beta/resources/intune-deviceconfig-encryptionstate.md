@@ -1,4 +1,4 @@
----
+﻿---
 title: "encryptionState enum type"
 description: "Encryption state"
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 Encryption state
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|notEncrypted|0|Not encrypted|
-|encrypted|1|Encrypted|
 
-
-
-
-
-
+| Member       | Value | Description   |
+| :----------- | :---- | :------------ |
+| notEncrypted | 0     | Not encrypted |
+| encrypted    | 1     | Encrypted     |

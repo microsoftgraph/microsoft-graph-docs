@@ -1,4 +1,4 @@
----
+﻿---
 title: "serviceInformation resource type"
 description: "serviceInformation resource type"
 localization_priority: Normal
@@ -17,10 +17,10 @@ Represents basic descriptive data about cloud services that a user has chosen to
 
 ## Properties
 
-| Property     | Type        | Description                                                      |
-|:-------------|:------------|:-----------------------------------------------------------------|
-|name          | String      | The name of the cloud service (for example, Twitter, Instagram). |
-|webUrl        | String      | Contains the URL for the service being referenced.               |
+| Property | Type   | Description                                                      |
+| :------- | :----- | :--------------------------------------------------------------- |
+| name     | String | The name of the cloud service (for example, Twitter, Instagram). |
+| webUrl   | String | Contains the URL for the service being referenced.               |
 
 ## JSON representation
 
@@ -44,6 +44,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "serviceInformation resource",
@@ -51,5 +52,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

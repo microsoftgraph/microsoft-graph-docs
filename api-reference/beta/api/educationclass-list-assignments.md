@@ -1,4 +1,4 @@
----
+﻿---
 title: "List assignments"
 description: "Retrieve a list of assignment objects. A teacher is allowed to see all assignment objects for the class. Students can only see assignments that are assigned to them."
 author: "mmast-msft"
@@ -28,11 +28,13 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/classes/{id}/assignments
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
@@ -129,6 +131,7 @@ Content-length: 344
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -139,5 +142,3 @@ Content-length: 344
   "suppressions": []
 }
 -->
-
-

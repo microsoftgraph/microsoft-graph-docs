@@ -1,4 +1,4 @@
----
+﻿---
 title: "conversationThread resource type"
 description: "A conversationThread is a collection of posts."
 author: "dkershaw10"
@@ -18,19 +18,20 @@ A new thread is created when a recipient is removed from the thread.
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List threads](../api/group-list-threads.md) | [conversationThread](conversationthread.md) collection |Get all the threads of a group.|
-|[Create thread](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are created in the group.|
-|[Get conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Get a specific thread that belongs to a group. |
-|[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Update conversationThread object. |
-|[Delete](../api/conversationthread-delete.md) | None |Delete conversationThread object. |
-|[Reply](../api/conversationthread-reply.md)|None|Reply to this thread by creating a new Post entity.|
-|[List Posts](../api/conversationthread-list-posts.md) |[post](post.md) collection| Get the posts of the specified thread. |
+| Method                                                     | Return Type                                            | Description                                                                                                                      |
+| :--------------------------------------------------------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| [List threads](../api/group-list-threads.md)               | [conversationThread](conversationthread.md) collection | Get all the threads of a group.                                                                                                  |
+| [Create thread](../api/group-post-threads.md)              | [conversationThread](conversationthread.md)            | Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are created in the group. |
+| [Get conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md)            | Get a specific thread that belongs to a group.                                                                                   |
+| [Update](../api/conversationthread-update.md)              | [conversationThread](conversationthread.md)            | Update conversationThread object.                                                                                                |
+| [Delete](../api/conversationthread-delete.md)              | None                                                   | Delete conversationThread object.                                                                                                |
+| [Reply](../api/conversationthread-reply.md)                | None                                                   | Reply to this thread by creating a new Post entity.                                                                              |
+| [List Posts](../api/conversationthread-list-posts.md)      | [post](post.md) collection                             | Get the posts of the specified thread.                                                                                           |
 
 ## Properties
+
 | Property              | Type                                 | Description                                                                                                                                                                                      |
-|:----------------------|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :-------------------- | :----------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id                    | String                               | Read-only.                                                                                                                                                                                       |
 | toRecipients          | [recipient](recipient.md) collection | The To: recipients for the thread.                                                                                                                                                               |
 | ccRecipients          | [recipient](recipient.md) collection | The Cc: recipients for the thread.                                                                                                                                                               |
@@ -42,9 +43,10 @@ A new thread is created when a recipient is removed from the thread.
 | isLocked              | Boolean                              | Indicates if the thread is locked.                                                                                                                                                               |
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|posts|[post](post.md) collection| Read-only. Nullable.|
+
+| Relationship | Type                       | Description          |
+| :----------- | :------------------------- | :------------------- |
+| posts        | [post](post.md) collection | Read-only. Nullable. |
 
 ## JSON representation
 
@@ -87,9 +89,9 @@ Here is a JSON representation of the resource
 
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "conversationThread resource",
@@ -97,4 +99,3 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
-

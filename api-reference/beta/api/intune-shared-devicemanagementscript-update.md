@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update deviceManagementScript"
 description: "Update the properties of a deviceManagementScript object."
 author: "dougeby"
@@ -18,63 +18,69 @@ Namespace: microsoft.graph
 Update the properties of a [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)||
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp; &nbsp; **Policy Set** | DeviceManagementManagedDevices.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application||
-| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp; &nbsp; **Policy Set** | DeviceManagementManagedDevices.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     |                                              |
+| &nbsp; &nbsp; **Device management**    | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Policy Set**           | DeviceManagementManagedDevices.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            |                                              |
+| &nbsp; &nbsp; **Device management**    | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Policy Set**           | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object.
 
 The following table shows the properties that are required when you create the [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Unique Identifier for the device management script.|
-|displayName|String|Name of the device management script.|
-|description|String|Optional description for the device management script.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|The interval for script to run. If not defined the script will run once|
-|scriptContent|Binary|The script content.|
-|createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked.|
-|fileName|String|Script file name.|
-|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance.|
-|runAs32Bit|Boolean|A value indicating whether the PowerShell script should run as 32-bit|
-
-
+| Property              | Type                                                               | Description                                                                                   |
+| :-------------------- | :----------------------------------------------------------------- | :-------------------------------------------------------------------------------------------- |
+| id                    | String                                                             | Unique Identifier for the device management script.                                           |
+| displayName           | String                                                             | Name of the device management script.                                                         |
+| description           | String                                                             | Optional description for the device management script.                                        |
+| runSchedule           | [runSchedule](../resources/intune-devices-runschedule.md)          | The interval for script to run. If not defined the script will run once                       |
+| scriptContent         | Binary                                                             | The script content.                                                                           |
+| createdDateTime       | DateTimeOffset                                                     | The date and time the device management script was created. This property is read-only.       |
+| lastModifiedDateTime  | DateTimeOffset                                                     | The date and time the device management script was last modified. This property is read-only. |
+| runAsAccount          | [runAsAccountType](../resources/intune-shared-runasaccounttype.md) | Indicates the type of execution context. Possible values are: `system`, `user`.               |
+| enforceSignatureCheck | Boolean                                                            | Indicate whether the script signature needs be checked.                                       |
+| fileName              | String                                                             | Script file name.                                                                             |
+| roleScopeTagIds       | String collection                                                  | List of Scope Tag IDs for this PowerShellScript instance.                                     |
+| runAs32Bit            | Boolean                                                            | A value indicating whether the PowerShell script should run as 32-bit                         |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 Content-type: application/json
 Content-length: 443
@@ -98,8 +104,10 @@ Content-length: 443
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 615
@@ -124,12 +132,3 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
-
-
-
-
-
-
-
-

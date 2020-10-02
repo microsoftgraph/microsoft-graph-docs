@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create event"
 description: "Use this API to create a new event in the default or the specified calendar."
 author: "harini84"
@@ -14,22 +14,28 @@ Namespace: microsoft.graph
 Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md). 
 
 ## Permissions
+
 Depending on the type of calendar that the event is created in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
-|:-----|:-----|:-----|:-----|
-| user calendar | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| group calendar | Group.ReadWrite.All | Not supported. | Not supported. |
+| Calendar       | Delegated (work or school account) | Delegated (personal Microsoft account) | Application         |
+| :------------- | :--------------------------------- | :------------------------------------- | :------------------ |
+| user calendar  | Calendars.ReadWrite                | Calendars.ReadWrite                    | Calendars.ReadWrite |
+| group calendar | Group.ReadWrite.All                | Not supported.                         | Not supported.      |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 A user's or group's default [calendar](../resources/calendar.md).
+
 ```http
 POST /me/calendar/events
 POST /users/{id | userPrincipalName}/calendar/events
 POST /groups/{id}/calendar/events
 ```
+
 A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).
+
 ```http
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
@@ -37,18 +43,23 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 POST /me/calendarGroup/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
+
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
+
 ```http
 POST /me/calendarGroups/{id}/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json. Required.  |
+
+| Header        | Value                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 
 ## Response
@@ -60,14 +71,17 @@ If successful, this method returns `201 Created` response code and [event](../re
 ### Example 1: Create an event in a specific calendar
 
 #### Request
+
 The following example creates an event in a specific calendar and assigns the event an optional **transactionId** value.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
   "name": "create_event_from_calendar"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events
 Content-type: application/json
@@ -101,34 +115,41 @@ Content-type: application/json
   "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 Here is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 }-->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -216,17 +237,21 @@ Content-type: application/json
     }
 }
 ```
+
 ### Example 2: Create and enable an event as an online meeting
 
 #### Request
+
 The following example creates an event in the specified calendar of the signed-in user's and enables it as an online meeting.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU9zAAAAAGtlAAA="],
   "name": "create_event_from_calendar_with_online_meeting"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/calendars/AAMkAGViNDU9zAAAAAGtlAAA=/events
 Content-type: application/json
@@ -261,35 +286,42 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-with-online-meeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-with-online-meeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-with-online-meeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-calendar-with-online-meeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 Here is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "name": "create_event_from_calendar_with_online_meeting",
   "@odata.type": "microsoft.graph.event"
 }-->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -380,8 +412,10 @@ Content-type: application/json
     }
 }
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create event",
@@ -391,4 +425,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

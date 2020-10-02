@@ -1,4 +1,4 @@
----
+﻿---
 title: "sharedPCAccountDeletionPolicyType enum type"
 description: "Possible values for when accounts are deleted on a shared PC."
 author: "dougeby"
@@ -18,14 +18,9 @@ Namespace: microsoft.graph
 Possible values for when accounts are deleted on a shared PC.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|immediate|0|Delete immediately.|
-|diskSpaceThreshold|1|Delete at disk space threshold.|
-|diskSpaceThresholdOrInactiveThreshold|2|Delete at disk space threshold or inactive threshold.|
 
-
-
-
-
-
+| Member                                | Value | Description                                           |
+| :------------------------------------ | :---- | :---------------------------------------------------- |
+| immediate                             | 0     | Delete immediately.                                   |
+| diskSpaceThreshold                    | 1     | Delete at disk space threshold.                       |
+| diskSpaceThresholdOrInactiveThreshold | 2     | Delete at disk space threshold or inactive threshold. |

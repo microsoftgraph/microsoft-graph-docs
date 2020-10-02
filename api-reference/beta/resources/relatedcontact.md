@@ -1,4 +1,4 @@
----
+﻿---
 title: "relatedContact resource type"
 description: "Contact record related to an educationUser that provides information for guardians, aides, doctors, and so on."
 author: "mmast-msft"
@@ -51,6 +51,7 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 720F9AB6-6E7A-4A66-8B0A-37A556FF99C5
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -62,5 +63,3 @@ The following is a JSON representation of the resource.
   ]
 }
 -->
-
-

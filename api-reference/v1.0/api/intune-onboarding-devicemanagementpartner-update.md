@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update deviceManagementPartner"
 description: "Update the properties of a deviceManagementPartner object."
 author: "dougeby"
@@ -16,56 +16,62 @@ Namespace: microsoft.graph
 Update the properties of a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementServiceConfig.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.
 
 The following table shows the properties that are required when you create the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Id of the entity|
-|lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin enabled option Connect to Device management Partner|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Partner App type. Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.|
-|singleTenantAppId|String|Partner Single tenant App id|
-|displayName|String|Partner display name|
-|isConfigured|Boolean|Whether device management partner is configured or not|
-|whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be removed|
-|whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime in UTC when PartnerDevices will be marked as NonCompliant|
-
-
+| Property                                             | Type                                                                                                       | Description                                                                                                                       |
+| :--------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| id                                                   | String                                                                                                     | Id of the entity                                                                                                                  |
+| lastHeartbeatDateTime                                | DateTimeOffset                                                                                             | Timestamp of last heartbeat after admin enabled option Connect to Device management Partner                                       |
+| partnerState                                         | [deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md) | Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`. |
+| partnerAppType                                       | [deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)         | Partner App type. Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.                                            |
+| singleTenantAppId                                    | String                                                                                                     | Partner Single tenant App id                                                                                                      |
+| displayName                                          | String                                                                                                     | Partner display name                                                                                                              |
+| isConfigured                                         | Boolean                                                                                                    | Whether device management partner is configured or not                                                                            |
+| whenPartnerDevicesWillBeRemovedDateTime              | DateTimeOffset                                                                                             | DateTime in UTC when PartnerDevices will be removed                                                                               |
+| whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime | DateTimeOffset                                                                                             | DateTime in UTC when PartnerDevices will be marked as NonCompliant                                                                |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 Content-type: application/json
 Content-length: 502
@@ -84,8 +90,10 @@ Content-length: 502
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 551
@@ -103,12 +111,3 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
-
-
-
-
-
-
-
-
-

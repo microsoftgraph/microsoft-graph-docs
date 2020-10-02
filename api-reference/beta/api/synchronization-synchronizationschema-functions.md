@@ -1,4 +1,4 @@
----
+﻿---
 title: "synchronizationSchema: functions"
 description: "List all the functions currently supported in the attributeMappingSource."
 localization_priority: Normal
@@ -16,16 +16,19 @@ Namespace: microsoft.graph
 List all the functions currently supported in the [attributeMappingSource](../resources/synchronization-attributemappingsource.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
-|Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported. | 
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Directory.ReadWrite.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP Request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
 GET /servicePrincipals/{id}/synchronization/templates/{templateId}/schema/functions
@@ -34,9 +37,9 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 
 ## Request headers
 
-| Name           | Type    | Description|
-|:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Type   | Description               |
+| :------------ | :----- | :------------------------ |
+| Authorization | string | Bearer {token}. Required. |
 
 ## Request body
 
@@ -49,32 +52,39 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ##### Request
+
 The following is an example of a request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_functions"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationschema-functions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-functions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-functions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### Response
+
 The following is an example of a response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
@@ -86,6 +96,7 @@ The following is an example of a response.
   "@odata.type": "microsoft.graph.attributeMappingFunctionSchema",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -409,6 +420,7 @@ non-string type names like "Integer" or "Boolean"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -420,5 +432,3 @@ non-string type names like "Integer" or "Boolean"
   ]
 }
 -->
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "website resource type"
 description: "Represents a web site."
 localization_priority: Normal
@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 Represents a web site.
 
-
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|type|String| Possible values are: `other`, `home`, `work`, `blog`, `profile`.|
-|address|string|The URL of the website.|
-|displayName|string|The display name of the web site.|
+
+| Property    | Type   | Description                                                      |
+| :---------- | :----- | :--------------------------------------------------------------- |
+| type        | String | Possible values are: `other`, `home`, `work`, `blog`, `profile`. |
+| address     | string | The URL of the website.                                          |
+| displayName | string | The display name of the web site.                                |
 
 ## JSON representation
 
@@ -46,6 +46,7 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -56,5 +57,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

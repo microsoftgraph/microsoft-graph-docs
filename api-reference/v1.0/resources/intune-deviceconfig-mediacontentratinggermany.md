@@ -1,4 +1,4 @@
----
+﻿---
 title: "mediaContentRatingGermany resource type"
 description: "Not yet documented"
 author: "dougeby"
@@ -16,34 +16,30 @@ Namespace: microsoft.graph
 Not yet documented
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|movieRating|[ratingGermanyMoviesType](../resources/intune-deviceconfig-ratinggermanymoviestype.md)|Movies rating selected for Germany. Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
-|tvRating|[ratingGermanyTelevisionType](../resources/intune-deviceconfig-ratinggermanytelevisiontype.md)|TV rating selected for Germany. Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
+
+| Property    | Type                                                                                           | Description                                                                                                                                           |
+| :---------- | :--------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| movieRating | [ratingGermanyMoviesType](../resources/intune-deviceconfig-ratinggermanymoviestype.md)         | Movies rating selected for Germany. Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`. |
+| tvRating    | [ratingGermanyTelevisionType](../resources/intune-deviceconfig-ratinggermanytelevisiontype.md) | TV rating selected for Germany. Possible values are: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.     |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingGermany"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingGermany",
   "movieRating": "String",
   "tvRating": "String"
 }
 ```
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "iosSoftwareUpdateScheduleType enum type"
 description: "Update schedule type for iOS software updates."
 author: "dougeby"
@@ -18,15 +18,10 @@ Namespace: microsoft.graph
 Update schedule type for iOS software updates.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|updateOutsideOfActiveHours|0|Update outside of active hours.|
-|alwaysUpdate|1|Always update.|
-|updateDuringTimeWindows|2|Update during time windows.|
-|updateOutsideOfTimeWindows|3|Update outside of time windows.|
 
-
-
-
-
-
+| Member                     | Value | Description                     |
+| :------------------------- | :---- | :------------------------------ |
+| updateOutsideOfActiveHours | 0     | Update outside of active hours. |
+| alwaysUpdate               | 1     | Always update.                  |
+| updateDuringTimeWindows    | 2     | Update during time windows.     |
+| updateOutsideOfTimeWindows | 3     | Update outside of time windows. |

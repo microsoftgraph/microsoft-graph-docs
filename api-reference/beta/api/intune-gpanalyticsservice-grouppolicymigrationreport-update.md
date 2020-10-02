@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update groupPolicyMigrationReport"
 description: "Update the properties of a groupPolicyMigrationReport object."
 author: "dougeby"
@@ -18,60 +18,66 @@ Namespace: microsoft.graph
 Update the properties of a [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object.
 
 ## Prerequisites
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | DeviceManagementConfiguration.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | DeviceManagementConfiguration.ReadWrite.All |
 
 ## HTTP Request
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}
 ```
 
 ## Request headers
-|Header|Value|
-|:---|:---|
-|Authorization|Bearer &lt;token&gt; Required.|
-|Accept|application/json|
+
+| Header        | Value                          |
+| :------------ | :----------------------------- |
+| Authorization | Bearer &lt;token&gt; Required. |
+| Accept        | application/json               |
 
 ## Request body
+
 In the request body, supply a JSON representation for the [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object.
 
 The following table shows the properties that are required when you create the [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md).
 
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|Not yet documented|
-|groupPolicyObjectId|Guid|The Group Policy Object GUID from GPO Xml content|
-|displayName|String|The name of Group Policy Object from the GPO Xml Content|
-|ouDistinguishedName|String|The distinguished name of the OU.|
-|createdDateTime|DateTimeOffset|The date and time at which the GroupPolicyMigrationReport was created.|
-|lastModifiedDateTime|DateTimeOffset|The date and time at which the GroupPolicyMigrationReport was last modified.|
-|groupPolicyCreatedDateTime|DateTimeOffset|The date and time at which the GroupPolicyMigrationReport was created.|
-|groupPolicyLastModifiedDateTime|DateTimeOffset|The date and time at which the GroupPolicyMigrationReport was last modified.|
-|migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|The Intune coverage for the associated Group Policy Object file. Possible values are: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|targetedInActiveDirectory|Boolean|The Targeted in AD property from GPO Xml Content|
-|totalSettingsCount|Int32|The total number of Group Policy Settings from GPO file.|
-|supportedSettingsCount|Int32|The number of Group Policy Settings supported by Intune.|
-|supportedSettingsPercent|Int32|The Percentage of Group Policy Settings supported by Intune.|
-
-
+| Property                        | Type                                                                                                     | Description                                                                                                                                    |
+| :------------------------------ | :------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                              | String                                                                                                   | Not yet documented                                                                                                                             |
+| groupPolicyObjectId             | Guid                                                                                                     | The Group Policy Object GUID from GPO Xml content                                                                                              |
+| displayName                     | String                                                                                                   | The name of Group Policy Object from the GPO Xml Content                                                                                       |
+| ouDistinguishedName             | String                                                                                                   | The distinguished name of the OU.                                                                                                              |
+| createdDateTime                 | DateTimeOffset                                                                                           | The date and time at which the GroupPolicyMigrationReport was created.                                                                         |
+| lastModifiedDateTime            | DateTimeOffset                                                                                           | The date and time at which the GroupPolicyMigrationReport was last modified.                                                                   |
+| groupPolicyCreatedDateTime      | DateTimeOffset                                                                                           | The date and time at which the GroupPolicyMigrationReport was created.                                                                         |
+| groupPolicyLastModifiedDateTime | DateTimeOffset                                                                                           | The date and time at which the GroupPolicyMigrationReport was last modified.                                                                   |
+| migrationReadiness              | [groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md) | The Intune coverage for the associated Group Policy Object file. Possible values are: `none`, `partial`, `complete`, `error`, `notApplicable`. |
+| targetedInActiveDirectory       | Boolean                                                                                                  | The Targeted in AD property from GPO Xml Content                                                                                               |
+| totalSettingsCount              | Int32                                                                                                    | The total number of Group Policy Settings from GPO file.                                                                                       |
+| supportedSettingsCount          | Int32                                                                                                    | The number of Group Policy Settings supported by Intune.                                                                                       |
+| supportedSettingsPercent        | Int32                                                                                                    | The Percentage of Group Policy Settings supported by Intune.                                                                                   |
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and an updated [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object in the response body.
 
 ## Example
 
 ### Request
+
 Here is an example of the request.
-``` http
+
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}
 Content-type: application/json
 Content-length: 544
@@ -92,8 +98,10 @@ Content-length: 544
 ```
 
 ### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 716
@@ -115,9 +123,3 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
-
-
-
-
-

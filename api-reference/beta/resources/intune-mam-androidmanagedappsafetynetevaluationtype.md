@@ -1,4 +1,4 @@
----
+﻿---
 title: "androidManagedAppSafetyNetEvaluationType enum type"
 description: "An admin enforced Android SafetyNet evaluation type requirement on a managed app."
 author: "dougeby"
@@ -18,13 +18,8 @@ Namespace: microsoft.graph
 An admin enforced Android SafetyNet evaluation type requirement on a managed app.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|basic|0|Require basic evaluation|
-|hardwareBacked|1|Require hardware backed evaluation|
 
-
-
-
-
-
+| Member         | Value | Description                        |
+| :------------- | :---- | :--------------------------------- |
+| basic          | 0     | Require basic evaluation           |
+| hardwareBacked | 1     | Require hardware backed evaluation |

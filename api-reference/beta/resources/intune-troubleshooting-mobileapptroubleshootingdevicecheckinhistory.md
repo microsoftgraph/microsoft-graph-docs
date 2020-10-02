@@ -1,4 +1,4 @@
----
+﻿---
 title: "mobileAppTroubleshootingDeviceCheckinHistory resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
 author: "dougeby"
@@ -17,26 +17,30 @@ Namespace: microsoft.graph
 
 History Item contained in the Mobile App Troubleshooting Event.
 
-
 Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+
+| Property                    | Type                                                                                                                              | Description                                                                                                                                                                                                  |
+| :-------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| occurrenceDateTime          | DateTimeOffset                                                                                                                    | Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)                                        |
+| troubleshootingErrorDetails | [deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md) | Object containing detailed information about the error and its remediation. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) |
 
 ## Relationships
+
 None
 
 ## JSON Representation
+
 Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppTroubleshootingDeviceCheckinHistory"
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.mobileAppTroubleshootingDeviceCheckinHistory",
   "occurrenceDateTime": "String (timestamp)",
@@ -56,9 +60,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
-
-
-
-

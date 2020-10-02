@@ -1,4 +1,4 @@
----
+﻿---
 title: "attachment: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of a file so as to attach the file to the specified message."
 localization_priority: Normal
@@ -37,16 +37,17 @@ See [attach large files to Outlook messages or events](/graph/outlook-large-atta
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Calendars.ReadWrite, Mail.ReadWrite |
-| Delegated (personal Microsoft account) | Calendars.ReadWrite, Mail.ReadWrite |
-| Application                            | Calendars.ReadWrite, Mail.ReadWrite |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Calendars.ReadWrite, Mail.ReadWrite         |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite, Mail.ReadWrite         |
+| Application                            | Calendars.ReadWrite, Mail.ReadWrite         |
 
 ## HTTP request
 
 To create an upload session for attaching a file to an **event**: 
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/attachments/createUploadSession
 ```
@@ -54,24 +55,24 @@ POST /me/events/{id}/attachments/createUploadSession
 To create an upload session for attaching a file to a **message**: 
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/attachments/createUploadSession
 ```
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
-
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type        | Description |
-|:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|Represents attributes of the item to be uploaded and attached. At minimum, specify the attachment type (`file`), a name, and the size of the file.|
+| Parameter      | Type                                             | Description                                                                                                                                        |
+| :------------- | :----------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AttachmentItem | [attachmentItem](../resources/attachmentitem.md) | Represents attributes of the item to be uploaded and attached. At minimum, specify the attachment type (`file`), a name, and the size of the file. |
 
 ## Response
 
@@ -85,15 +86,14 @@ If successful, this method returns a `201 Created` response code and a new [uplo
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 
-
 ## Examples
 
 The following example shows how to create an upload session that you can use in subsequent file upload operations to the specified message.
 
 ### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "attachment_createuploadsession",
@@ -112,24 +112,28 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/attachment-createuploadsession-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/attachment-createuploadsession-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -158,6 +162,7 @@ Content-type: application/json
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "attachment: createUploadSession",
@@ -165,4 +170,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
