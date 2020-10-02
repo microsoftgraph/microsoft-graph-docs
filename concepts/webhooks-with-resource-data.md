@@ -438,7 +438,7 @@ This section contains some useful code snippets that use C# and .NET for each st
 ```csharp
 // Initialize with the private key that matches the encryptionCertificateId.
 RSACryptoServiceProvider rsaProvider = ...;        
-byte[] encryptedSymmetricKey = Convert.FromBase64String(<value from dataKey property>);
+byte[] encryptedSymmetricKey = Convert.FromBase64String(<value from data property>);
 
 // Decrypt using OAEP padding.
 byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP: true);
