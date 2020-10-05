@@ -51,7 +51,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ### Request
 
-Here is an example of the request to delete an app role assignment from the resource service principal.
+Here is an example of the request to delete a permission classification for delegated permission.
 
 
 # [HTTP](#tab/http)
@@ -63,6 +63,8 @@ Here is an example of the request to delete an app role assignment from the reso
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionClassifications/{id}
 ```
+
+---
 
 ### Response
 

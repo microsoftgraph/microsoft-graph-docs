@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Classify a delegated permission by adding a delegatedPermissionClassification to the [servicePrincipal](../resources/servicePrincipal.md) representing the API.
+Classify a delegated permission by adding a [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) to the [servicePrincipal](../resources/servicePrincipal.md) representing the API.
 
 ## Permissions
 
@@ -51,10 +51,10 @@ If successful, this method returns a `201 Created` response code and an [delegat
 
 ### Request
 
-Here is an example of the request.
-
+In this example, the delegated permission "User.Read" is being classified "low".
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_create_delegatedpermissionclassification"
@@ -72,7 +72,7 @@ Content-Length: 110
 }
 ```
 
-In this example, the delegated permission "User.Read" is being classified "low".
+---
 
 ### Response
 

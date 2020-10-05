@@ -1387,7 +1387,7 @@ The following usages are valid for both delegated and application permissions:
 * _Policy.Read.All_: Read your organization's policies (`GET /policies`)
 * _Policy.Read.All_: Read your organization's trust framework policies (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_: Read your organization's feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.ApplicationConfiguration: Read and write your organization's application configuration policies (`POST /beta/policies/tokenLifetimePolicies`)
+* _Policy.ReadWrite.ApplicationConfiguration_: Read and write your organization's application configuration policies (`POST /beta/policies/tokenLifetimePolicies`)
 * _Policy.ReadWrite.AuthenticationFlows_: Read and write your organization's authentication flows policy (`PATCH /beta/policies/authenticationFlowsPolicy`)
 * _Policy.ReadWrite.ConditionalAccess_: Read and write your organization's conditional access policies (`POST /beta/identity/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_: Read and write your organization's feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)

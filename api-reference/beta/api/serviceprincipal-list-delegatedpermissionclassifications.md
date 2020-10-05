@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
+|Delegated (work or school account) | Application.Read.All, Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
 
@@ -54,10 +54,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request to retrieve the app roles assignments that have been granted for a given resource service principal.
-
+The following is an example of the request to retrieve the delegated permission classifications for a service principal.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_get_delegatedpermissionclassification"
@@ -67,6 +67,7 @@ The following is an example of the request to retrieve the app roles assignments
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionClassifications
 ```
 
+---
 
 ### Response
 

@@ -922,12 +922,13 @@ items:
           - name: List delegated permission grants
             href: api/serviceprincipal-list-oauth2permissiongrants.md
         - name: Delegated permission classifications
+          href: resources/delegatedpermissionclassification.md
           items:
-          - name: List delegated permission classifications
+          - name: List
             href: api/serviceprincipal-list-delegatedpermissionclassifications.md
-          - name: Add delegated permission classification
+          - name: Add
             href: api/serviceprincipal-post-delegatedpermissionclassifications.md
-          - name: Remove delegated permission classification
+          - name: Remove
             href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
         - name: Membership
           items:
@@ -10163,6 +10164,34 @@ items:
               href: api/homerealmdiscoverypolicy-delete.md
             - name: List applied to applications
               href: api/homerealmdiscoverypolicy-list-appliesto.md
+          - name: Permission grant policy
+            href: resources/permissiongrantpolicy.md
+            items:
+            - name: Create
+              href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+            - name: List
+              href: api/permissiongrantpolicy-list.md
+            - name: Get
+              href: api/permissiongrantpolicy-get.md
+            - name: Update
+              href: api/permissiongrantpolicy-update.md
+            - name: Delete
+              href: api/permissiongrantpolicy-delete.md
+            - name: Permission grant condition sets
+              href: resources/permissiongrantconditionset.md
+              items:
+                - name: List includes
+                  href: api/permissiongrantpolicy-list-includes.md
+                - name: Add to includes
+                  href: api/permissiongrantpolicy-post-includes.md
+                - name: Remove from includes
+                  href: api/permissiongrantpolicy-delete-includes.md
+                - name: List excludes
+                  href: api/permissiongrantpolicy-list-excludes.md
+                - name: Add to excludes
+                  href: api/permissiongrantpolicy-post-excludes.md
+                - name: Remove from excludes
+                  href: api/permissiongrantpolicy-delete-excludes.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:

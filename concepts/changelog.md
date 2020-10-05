@@ -32,6 +32,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added [chatMessage](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
 
 ### Cloud communications
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.|
@@ -106,6 +107,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **schedule** property to [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) and [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) in entitlement management.|
+| Addition | beta | Added the [per,issionGrantPolicy](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta) resource type.|
 | Addition | beta | Added the [bitlockerRecoveryKey](/graph/api/resources/bitlockerRecoveryKey?view=graph-rest-beta) resource type.|
 | Addition | beta | Added the **volumeType** enumeration type.|
 | Addition | beta | Added the **directorySizeQuota** complex type to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
@@ -117,9 +119,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Introduced the [administrative units API](/graph/api/resources/administrativeunit?view=graph-rest-1.0). Administrative units allow organizations to subdivide their Azure Active Directory, and delegate administrative duties to those subdivisions. Subdivisions can represent regions, departments, cost centers, and so on. This can now be managed through the Microsoft Graph API.|
 
 ### Identity and access | Identity and sign-in
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added the [continuousAccessEvaluationPolicy](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta) resource type.|
+| Addition | beta | Added the [permissionGrantPolicy](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta) resource type. Permission grant policies describe the conditions which must be met for permissions to be granted to apps. |
 
 ### Reports
 

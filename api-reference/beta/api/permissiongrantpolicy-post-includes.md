@@ -1,5 +1,5 @@
 ---
-title: "Add an include condition set to a permission grant policy"
+title: "Add an includes condition set to a permission grant policy"
 description: "Add conditions under which a permission grant event is included in a permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,13 +7,13 @@ ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Add an include condition set to a permission grant policy
+# Add an includes condition set to a permission grant policy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add conditions under which a permission grant event is *included* in a permission grant policy by adding a [permissionGrantConditionSet](../resources/permissionGrantConditionSet.md) to the **includes** collection of a  [permissionGrantPolicy](../resources/permissionGrantPolicy.md).
+Add conditions under which a permission grant event is *included* in a permission grant policy by adding a [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) to the **includes** collection of a  [permissionGrantPolicy](../resources/permissionGrantPolicy.md).
 
 ## Permissions
 
@@ -21,13 +21,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PermissionGrantPolicy.ReadWrite.All |
+|Delegated (work or school account) | Policy.ReadWrite.PermissionGrant |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | PermissionGrantPolicy.ReadWrite.All |
+|Application | Policy.ReadWrite.PermissionGrant |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /policies/permissionGrantPolicies/{id}/includes
 ```
@@ -51,10 +52,10 @@ If successful, this method returns a `201 Created` response code and an [permiss
 
 ### Request
 
-Here is an example of the request.
-
+In this example, *all* delegated permissions for client apps from verified publishers are included in the permission grant policy. Because all the other conditions from the [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) were omitted, they will take their default values, which in each case is the most-inclusive.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "truncated": true,
@@ -72,7 +73,7 @@ Content-Length: 110
 }
 ```
 
-In this example, *all* delegated permissions for client apps from verified publishers are included in the consent policy. Because all the other conditions from the permissionGrantConditionSet were omitted, they will take their most-inclusive default values.
+---
 
 ### Response
 
@@ -100,6 +101,6 @@ Content-length: 253
   "clientApplicationIds": ["all"],
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
-  "clientApplicationsFromVerifiedPublisherOnly": true
+  "clientApplicationsFromVerifiedPublisherOnly": false
 }
 ```

@@ -1,36 +1,36 @@
 ---
-title: "Delete a delegatedPermissionClassification from a service principal"
-description: "Remove a permission classification from API's service principal."
+title: "Delete an includes condition set from a permissionGrantPolicy"
+description: "Deletes an included condition set from permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# Remove a delegatedPermissionClassification from a service principal
+# Remove a includes condition set from a permission grant policy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [delegatedPermissionClassification](../resources/delegatedPermissionClassification.md) which had previously been set for a delegated permission.
+Deletes a [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) from the **includes** collection of a [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
+| Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PermissionGrantPolicy.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PermissionGrantPolicy.ReadWrite.All |
+| Delegated (work or school account) | PermissionGrantPolicy.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.    |
+| Application | PermissionGrantPolicy.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/delegatedPermissionClassifications/{id}
+DELETE /policies/permissionGrantPolicies/{id}/includes/{id}
 ```
 
 ## Request headers
@@ -51,18 +51,20 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ### Request
 
-Here is an example of the request to delete an app role assignment from the resource service principal.
-
+Here is an example of the request to delete an **includes** condition set from a custom permission grant policy.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_delete_delegatedpermissionclassifications"
+  "name": "permissiongrantpolicy_delete_includes"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionClassifications/{id}
+DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-custom-consent-policy/includes/198d8d6b-ecf6-47bc-a3dd-eaa2fe0544c5
 ```
+
+---
 
 ### Response
 

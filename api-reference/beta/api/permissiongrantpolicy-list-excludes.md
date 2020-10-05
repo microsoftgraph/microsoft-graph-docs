@@ -1,19 +1,19 @@
 ---
-title: "List delegatedPermissionClassifications for a service principal"
-description: "Retrieve a list of classifications given to delegated permissions exposed by an API's service principal."
+title: "List excludes condition sets for a permission grant policy"
+description: "Retrieve a list of the condition sets which describe conditions under which a permission grant event is excluded in a permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# List delegatedPermissionClassifications granted for a service principal
+# List excludes condition sets for a permission grant policy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) currently configured for the delegated permissions exposed by an API.
+Retrieve the condition sets which are *excluded* in a [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## Permissions
 
@@ -21,15 +21,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
+|Delegated (work or school account) | Policy.Read.PermissionGrant, Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
+|Application | Policy.Read.PermissionGrant, Directory.Read.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/delegatedPermissionClassifications
+GET /policies/permissionGrantPolicies/{id}/excludes
 ```
 
 ## Optional query parameters
@@ -48,51 +48,69 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) objects in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of the request to retrieve the app roles assignments that have been granted for a given resource service principal.
-
+The following is an example of the request to retrieve the **excludes** condition sets of the built-on permission grant policy `microsoft-application-admin`. This permission grant policy includes all delegated permissions, and all application permissions excluding application permissions for Microsoft Graph and application permissions for Azure AD Graph.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_get_delegatedpermissionclassification"
+  "name": "permissiongrantpolicy_get_excludes"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionClassifications
+GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-application-admin/excludes
 ```
 
+---
 
 ### Response
 
-Here is an example of the response. 
+Here is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.delegatedPermissionClassification",
+  "@odata.type": "microsoft.graph.permissionGrantConditionSet",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
+Content-length: 784
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-application-admin')/excludes",
   "value": [
     {
-        "id": "2G3-4TG6YU2J54hjnaRoPQE",
-        "permissionId": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
-        "permissionName": "User.Read",
-        "classification": "low"
+      "id": "c85b029f-4abf-47d8-ae61-d2a38299033a",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "00000003-0000-0000-c000-000000000000",
+      "permissions": [ "all" ]´,
+      "clientApplicationIds": [ "all" ]´,
+      "clientApplicationTenantIds": [ "all" ]´,
+      "clientApplicationPublisherIds": [ "all" ]´,
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    },
+    {
+      "id": "2a1fbb36-9d9a-42d8-8804-de2aa45aca80",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "00000002-0000-0000-c000-000000000000",
+      "permissions": [ "all" ]´,
+      "clientApplicationIds": [ "all" ]´,
+      "clientApplicationTenantIds": [ "all" ]´,
+      "clientApplicationPublisherIds": [ "all" ]´,
+      "clientApplicationsFromVerifiedPublisherOnly": false
     }
   ]
 }

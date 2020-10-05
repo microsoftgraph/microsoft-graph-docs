@@ -1,13 +1,13 @@
 ---
-title: "List include condition sets for a permission grant policy"
-description: "Retrieve a list of the condition sets which describe conditions under which a permission grant event is included in a permission grant policy"
+title: "List includes condition sets for a permission grant policy"
+description: "Retrieve a list of the condition sets which describe conditions under which a permission grant event is included in a permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "psignoret"
 ---
 
-# List include condition sets for a permission grant policy
+# List includes condition sets for a permission grant policy
 
 Namespace: microsoft.graph
 
@@ -21,15 +21,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
+|Delegated (work or school account) | Policy.Read.PermissionGrant, Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
+|Application | Policy.Read.PermissionGrant, Directory.Read.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/includes
+GET /policies/permissionGrantPolicies/{id}/includes
 ```
 
 ## Optional query parameters
@@ -54,23 +54,24 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request to retrieve the app roles assignments that have been granted for a given resource service principal.
-
+The following is an example of the request to retrieve the **includes** condition sets of the built-on permission grant policy `microsoft-application-admin`. This permission grant policy includes all delegated permissions, and all application permissions excluding application permissions for Microsoft Graph and application permissions for Azure AD Graph.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_get_permissiongrantconditionset"
+  "name": "permissiongrantpolicy_get_includes"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/includes
+GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-application-admin/includes
 ```
 
+---
 
 ### Response
 
-Here is an example of the response. 
+Here is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -84,15 +85,31 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
+Content-length: 784
 
 {
   "value": [
     {
-        "id": "2G3-4TG6YU2J54hjnaRoPQE",
-        "permissionId": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
-        "permissionName": "User.Read",
-        "classification": "low"
+      "id": "811d2da7-443c-43da-96e7-28d285b234e9",
+      "permissionClassification": "all",
+      "permissionType": "application",
+      "resourceApplication": "any",
+      "permissions": [ "all" ],
+      "clientApplicationIds": [ "all" ],
+      "clientApplicationTenantIds": [ "all" ],
+      "clientApplicationPublisherIds": [ "all" ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
+    },
+    {
+      "id": "60461179-740e-4d8b-9e00-1456a338c44b",
+      "permissionClassification": "all",
+      "permissionType": "delegated",
+      "resourceApplication": "any",
+      "permissions": [ "all" ],
+      "clientApplicationIds": [ "all" ],
+      "clientApplicationTenantIds": [ "all" ],
+      "clientApplicationPublisherIds": [ "all" ],
+      "clientApplicationsFromVerifiedPublisherOnly": false
     }
   ]
 }
