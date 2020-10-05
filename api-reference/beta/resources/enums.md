@@ -1385,3 +1385,9 @@ Possible values for user account types (group membership), per Windows definitio
 |ready|
 |obsolete|
 |limitExceeded|
+
+### permissionClassificationType values
+
+| Member | Value |
+|:-------| :---- |
+| low    | Low impact permission. |

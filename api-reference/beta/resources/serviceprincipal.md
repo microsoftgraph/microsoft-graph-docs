@@ -41,6 +41,10 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Remove password](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from a servicePrincipal.|
 |[Add key](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|Add a key credential to a servicePrincipal.|
 |[Remove key](../api/serviceprincipal-removekey.md)|None|Remove a key credential from a servicePrincipal.|
+|**Delegated permission classifications**| | |
+|[List delegated permission classifications](../api/serviceprincipal-list-delegatedpermissionclassifications.md) |[delegatedPermissionClassification](delegatedPermissionClassification.md) collection| Get the permission classifications for delegated permissions exposed by this service principal.|
+|[Add delegated permission classification](../api/serviceprincipal-post-delegatedpermissionclassifications.md) |[delegatedPermissionClassification](delegatedPermissionClassification.md) | Add a permission classification for a delegated permission exposed by this service principal. |
+|[Remove delegated permission classification](../api/serviceprincipal-delete-delegatedpermissionclassifications.md) | None | Remove a permission classification for a delegated permission exposed by this service principal.|
 |**Delegated permission grants**| | |
 |[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) collection| Get the delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.|
 |**Membership**| | |

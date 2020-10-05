@@ -921,6 +921,14 @@ items:
           items:
           - name: List delegated permission grants
             href: api/serviceprincipal-list-oauth2permissiongrants.md
+        - name: Delegated permission classifications
+          items:
+          - name: List delegated permission classifications
+            href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+          - name: Add delegated permission classification
+            href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+          - name: Remove delegated permission classification
+            href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
         - name: Membership
           items:
           - name: List memberOf
