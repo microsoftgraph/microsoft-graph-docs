@@ -1,0 +1,218 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "9cf5f205-8e2c-46c0-926a-74cf575ac2b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCanSeePrivacyMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCanSeePrivacyMessage** property to [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "9cf5f205-8e2c-46c0-926a-74cf575ac2b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyMessage",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **customPrivacyMessage** property in the [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "9cf5f205-8e2c-46c0-926a-74cf575ac2b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCantSeePrivacyMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCantSeePrivacyMessage** property to [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "9cf5f205-8e2c-46c0-926a-74cf575ac2b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "disableClientTelemetry",
+          "ChangeType": "Addition",
+          "Description": "Added the **disableClientTelemetry** property to [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "9cf5f205-8e2c-46c0-926a-74cf575ac2b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "windowsHomeSkuRestriction",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsHomeSkuRestriction** property to [deviceEnrollmentPlatformRestrictionsConfiguration](/?view=graph-rest-beta) resource",
+          "Target": "deviceEnrollmentPlatformRestrictionsConfiguration"
+        },
+        {
+          "Id": "9cf5f205-8e2c-46c0-926a-74cf575ac2b9",
+          "ApiChange": "Action",
+          "ChangedApiName": "revokeLicenses",
+          "ChangeType": "Addition",
+          "Description": "Added the [revokeLicenses](/graph/api/intune-revokeLicenses-revokeLicenses?view=graph-rest-beta) method to the [revokeLicenses](/graph/api/intune-revokeLicenses-revokeLicenses?view=graph-rest-beta) resource",
+          "Target": "revokeLicenses"
+        },
+        {
+          "Id": "9cf5f205-8e2c-46c0-926a-74cf575ac2b9",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200622",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **edm_50200622** resource type *@\u0026*",
+          "Target": "edm_50200622"
+        },
+        {
+          "Id": "9cf5f205-8e2c-46c0-926a-74cf575ac2b9",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200818",
+          "ChangeType": "Addition",
+          "Description": "Added the [edm_50200818](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "edm_50200818"
+        }
+      ],
+      "Id": "9cf5f205-8e2c-46c0-926a-74cf575ac2b9",
+      "Cloud": "Fairfax",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3089052Z",
+      "WorkloadArea": "Microsoft.Intune.DeviceEnrollment",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "33225d4f-9508-4285-8528-1276dedec0fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCanSeePrivacyMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCanSeePrivacyMessage** property to [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "33225d4f-9508-4285-8528-1276dedec0fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCantSeePrivacyMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCantSeePrivacyMessage** property to [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "33225d4f-9508-4285-8528-1276dedec0fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "windowsHomeSkuRestriction",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsHomeSkuRestriction** property to [deviceEnrollmentPlatformRestrictionsConfiguration](/?view=graph-rest-beta) resource",
+          "Target": "deviceEnrollmentPlatformRestrictionsConfiguration"
+        },
+        {
+          "Id": "33225d4f-9508-4285-8528-1276dedec0fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyMessage",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **customPrivacyMessage** property in the [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "33225d4f-9508-4285-8528-1276dedec0fc",
+          "ApiChange": "Action",
+          "ChangedApiName": "revokeLicenses",
+          "ChangeType": "Deletion",
+          "Description": "Changed the return type for [revokeLicenses](/graph/api/intune-revokeLicenses-revokeLicenses?view=graph-rest-beta) method",
+          "Target": "revokeLicenses"
+        },
+        {
+          "Id": "33225d4f-9508-4285-8528-1276dedec0fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "disableClientTelemetry",
+          "ChangeType": "Addition",
+          "Description": "Added the **disableClientTelemetry** property to [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "33225d4f-9508-4285-8528-1276dedec0fc",
+          "ApiChange": "Action",
+          "ChangedApiName": "revokeLicenses",
+          "ChangeType": "Addition",
+          "Description": "Added the [revokeLicenses](/graph/api/intune-revokeLicenses-revokeLicenses?view=graph-rest-beta) method to the [revokeLicenses](/graph/api/intune-revokeLicenses-revokeLicenses?view=graph-rest-beta) resource",
+          "Target": "revokeLicenses"
+        },
+        {
+          "Id": "33225d4f-9508-4285-8528-1276dedec0fc",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200622",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **edm_50200622** resource type *@\u0026*",
+          "Target": "edm_50200622"
+        }
+      ],
+      "Id": "33225d4f-9508-4285-8528-1276dedec0fc",
+      "Cloud": "Mooncake",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3089209Z",
+      "WorkloadArea": "Microsoft.Intune.DeviceEnrollment",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "545c3a84-3620-424a-89bf-fdc26dc245ae",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyMessage",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **customPrivacyMessage** property in the [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "545c3a84-3620-424a-89bf-fdc26dc245ae",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCantSeePrivacyMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCantSeePrivacyMessage** property to [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "545c3a84-3620-424a-89bf-fdc26dc245ae",
+          "ApiChange": "Property",
+          "ChangedApiName": "disableClientTelemetry",
+          "ChangeType": "Addition",
+          "Description": "Added the **disableClientTelemetry** property to [intuneBrand](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrand"
+        },
+        {
+          "Id": "545c3a84-3620-424a-89bf-fdc26dc245ae",
+          "ApiChange": "Action",
+          "ChangedApiName": "revokeLicenses",
+          "ChangeType": "Deletion",
+          "Description": "Changed the return type for [revokeLicenses](/graph/api/intune-revokeLicenses-revokeLicenses?view=graph-rest-beta) method",
+          "Target": "revokeLicenses"
+        },
+        {
+          "Id": "545c3a84-3620-424a-89bf-fdc26dc245ae",
+          "ApiChange": "Action",
+          "ChangedApiName": "revokeLicenses",
+          "ChangeType": "Addition",
+          "Description": "Added the [revokeLicenses](/graph/api/intune-revokeLicenses-revokeLicenses?view=graph-rest-beta) method to the [revokeLicenses](/graph/api/intune-revokeLicenses-revokeLicenses?view=graph-rest-beta) resource",
+          "Target": "revokeLicenses"
+        },
+        {
+          "Id": "545c3a84-3620-424a-89bf-fdc26dc245ae",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200622",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **edm_50200622** resource type *@\u0026*",
+          "Target": "edm_50200622"
+        },
+        {
+          "Id": "545c3a84-3620-424a-89bf-fdc26dc245ae",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200818",
+          "ChangeType": "Addition",
+          "Description": "Added the [edm_50200818](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "edm_50200818"
+        }
+      ],
+      "Id": "545c3a84-3620-424a-89bf-fdc26dc245ae",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3089356Z",
+      "WorkloadArea": "Microsoft.Intune.DeviceEnrollment",
+      "SubArea": "Corporate management"
+    }
+  ]
+}

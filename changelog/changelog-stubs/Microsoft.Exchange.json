@@ -1,0 +1,46 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "02ccfa26-1d21-4b99-abf4-367f18408973",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDraft",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDraft** property to [event](/?view=graph-rest-1.0) resource",
+          "Target": "event"
+        },
+        {
+          "Id": "02ccfa26-1d21-4b99-abf4-367f18408973",
+          "ApiChange": "Property",
+          "ChangedApiName": "hexColor",
+          "ChangeType": "Addition",
+          "Description": "Added the **hexColor** property to [calendar](/?view=graph-rest-1.0) resource",
+          "Target": "calendar"
+        },
+        {
+          "Id": "02ccfa26-1d21-4b99-abf4-367f18408973",
+          "ApiChange": "Action",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](/graph/api/cancel-cancel?view=graph-rest-1.0) method to the [cancel](/graph/api/cancel-cancel?view=graph-rest-1.0) resource",
+          "Target": "cancel"
+        },
+        {
+          "Id": "02ccfa26-1d21-4b99-abf4-367f18408973",
+          "ApiChange": "Action",
+          "ChangedApiName": "forward",
+          "ChangeType": "Addition",
+          "Description": "Added the [forward](/graph/api/forward-forward?view=graph-rest-1.0) method to the [forward](/graph/api/forward-forward?view=graph-rest-1.0) resource",
+          "Target": "forward"
+        }
+      ],
+      "Id": "02ccfa26-1d21-4b99-abf4-367f18408973",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-06T14:38:26.3084679Z",
+      "WorkloadArea": "Microsoft.Exchange",
+      "SubArea": ""
+    }
+  ]
+}

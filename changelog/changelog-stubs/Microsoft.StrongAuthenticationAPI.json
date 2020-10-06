@@ -1,0 +1,62 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "authenticationMethodsPolicyEvaluation",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationMethodsPolicyEvaluation](/graph/api/resources/authenticationMethodsPolicyEvaluation?view=graph-rest-beta) resource type",
+          "Target": "authenticationMethodsPolicyEvaluation"
+        },
+        {
+          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "policy",
+          "ChangeType": "Addition",
+          "Description": "Added the **policy** property to [authentication](/?view=graph-rest-beta) resource",
+          "Target": "authentication"
+        },
+        {
+          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to [microsoftAuthenticatorAuthenticationMethod](/?view=graph-rest-beta) resource",
+          "Target": "microsoftAuthenticatorAuthenticationMethod"
+        },
+        {
+          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "creationDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **creationDateTime** property to [microsoftAuthenticatorAuthenticationMethod](/?view=graph-rest-beta) resource",
+          "Target": "microsoftAuthenticatorAuthenticationMethod"
+        },
+        {
+          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deviceName** property from [microsoftAuthenticatorAuthenticationMethod](/?view=graph-rest-beta) resource",
+          "Target": "microsoftAuthenticatorAuthenticationMethod"
+        },
+        {
+          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "device",
+          "ChangeType": "Addition",
+          "Description": "Added the **device** relationship to [microsoftAuthenticatorAuthenticationMethod](/?view=graph-rest-beta) resource",
+          "Target": "microsoftAuthenticatorAuthenticationMethod"
+        }
+      ],
+      "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+      "Cloud": "PPE",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3093378Z",
+      "WorkloadArea": "Microsoft.StrongAuthenticationAPI",
+      "SubArea": "Identity and sign-in"
+    }
+  ]
+}

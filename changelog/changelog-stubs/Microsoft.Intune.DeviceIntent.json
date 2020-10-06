@@ -1,0 +1,298 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "securityBaselinePolicySourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityBaselinePolicySourceType](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "securityBaselinePolicySourceType"
+        },
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "settingSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the [settingSourceType](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "settingSourceType"
+        },
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "securityBaselineContributingPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityBaselineContributingPolicy](/graph/api/resources/intune-securityBaselineContributingPolicy?view=graph-rest-beta) resource type",
+          "Target": "securityBaselineContributingPolicy"
+        },
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "settingSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [settingSource](/graph/api/resources/intune-settingSource?view=graph-rest-beta) resource type",
+          "Target": "settingSource"
+        },
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "Property",
+          "ChangedApiName": "sourcePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **sourcePolicies** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "Property",
+          "ChangedApiName": "contributingPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **contributingPolicies** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorCode** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "Property",
+          "ChangedApiName": "settingCategoryName",
+          "ChangeType": "Addition",
+          "Description": "Added the **settingCategoryName** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "Property",
+          "ChangedApiName": "settingId",
+          "ChangeType": "Addition",
+          "Description": "Added the **settingId** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50171031",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **edm_50171031** resource type *@\u0026*",
+          "Target": "edm_50171031"
+        },
+        {
+          "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPrincipalName** property to [securityBaselineState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineState"
+        }
+      ],
+      "Id": "5ee9f03e-9aaf-455c-9788-3ac6cbebb367",
+      "Cloud": "Fairfax",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3089505Z",
+      "WorkloadArea": "Microsoft.Intune.DeviceIntent",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "securityBaselinePolicySourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityBaselinePolicySourceType](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "securityBaselinePolicySourceType"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "securityBaselineContributingPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityBaselineContributingPolicy](/graph/api/resources/intune-securityBaselineContributingPolicy?view=graph-rest-beta) resource type",
+          "Target": "securityBaselineContributingPolicy"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "settingSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the [settingSourceType](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "settingSourceType"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "settingSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [settingSource](/graph/api/resources/intune-settingSource?view=graph-rest-beta) resource type",
+          "Target": "settingSource"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "Property",
+          "ChangedApiName": "contributingPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **contributingPolicies** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "Property",
+          "ChangedApiName": "sourcePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **sourcePolicies** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorCode** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "Property",
+          "ChangedApiName": "settingCategoryName",
+          "ChangeType": "Addition",
+          "Description": "Added the **settingCategoryName** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPrincipalName** property to [securityBaselineState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineState"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "Property",
+          "ChangedApiName": "settingId",
+          "ChangeType": "Addition",
+          "Description": "Added the **settingId** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50171031",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **edm_50171031** resource type *@\u0026*",
+          "Target": "edm_50171031"
+        },
+        {
+          "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200821",
+          "ChangeType": "Addition",
+          "Description": "Added the [edm_50200821](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "edm_50200821"
+        }
+      ],
+      "Id": "3979871a-acd7-44ab-bec5-38c6fd2b35fb",
+      "Cloud": "Mooncake",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3089666Z",
+      "WorkloadArea": "Microsoft.Intune.DeviceIntent",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "securityBaselinePolicySourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityBaselinePolicySourceType](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "securityBaselinePolicySourceType"
+        },
+        {
+          "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "settingSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the [settingSourceType](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "settingSourceType"
+        },
+        {
+          "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "contributingPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **contributingPolicies** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorCode** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "securityBaselineContributingPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityBaselineContributingPolicy](/graph/api/resources/intune-securityBaselineContributingPolicy?view=graph-rest-beta) resource type",
+          "Target": "securityBaselineContributingPolicy"
+        },
+        {
+          "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "settingSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [settingSource](/graph/api/resources/intune-settingSource?view=graph-rest-beta) resource type",
+          "Target": "settingSource"
+        },
+        {
+          "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "sourcePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **sourcePolicies** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "settingId",
+          "ChangeType": "Addition",
+          "Description": "Added the **settingId** property to [securityBaselineSettingState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineSettingState"
+        },
+        {
+          "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPrincipalName** property to [securityBaselineState](/?view=graph-rest-beta) resource",
+          "Target": "securityBaselineState"
+        },
+        {
+          "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200821",
+          "ChangeType": "Addition",
+          "Description": "Added the [edm_50200821](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "edm_50200821"
+        }
+      ],
+      "Id": "5ee1e020-f8f5-498b-bb92-6f61a8212f3f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3089806Z",
+      "WorkloadArea": "Microsoft.Intune.DeviceIntent",
+      "SubArea": "Corporate management"
+    }
+  ]
+}

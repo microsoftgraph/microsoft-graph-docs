@@ -1,0 +1,38 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "6afe2cf1-7a17-4a64-8b39-9211a99495f0",
+          "ApiChange": "Property",
+          "ChangedApiName": "deleted",
+          "ChangeType": "Addition",
+          "Description": "Added the **deleted** property to [site](/?view=graph-rest-beta) resource",
+          "Target": "site"
+        },
+        {
+          "Id": "6afe2cf1-7a17-4a64-8b39-9211a99495f0",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-beta) method to the [delta](/graph/api/delta-delta?view=graph-rest-beta) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "6afe2cf1-7a17-4a64-8b39-9211a99495f0",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-beta) method to the [delta](/graph/api/delta-delta?view=graph-rest-beta) resource",
+          "Target": "delta"
+        }
+      ],
+      "Id": "6afe2cf1-7a17-4a64-8b39-9211a99495f0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3085022Z",
+      "WorkloadArea": "Microsoft.FileServices",
+      "SubArea": ""
+    }
+  ]
+}

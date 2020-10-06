@@ -1,0 +1,130 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "da854b25-1375-4028-b01a-d0238e32f0bc",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "suggestedEnrollmentLimit",
+          "ChangeType": "Addition",
+          "Description": "Added the [suggestedEnrollmentLimit](/graph/api/resources/intune-suggestedEnrollmentLimit?view=graph-rest-beta) resource type",
+          "Target": "suggestedEnrollmentLimit"
+        },
+        {
+          "Id": "da854b25-1375-4028-b01a-d0238e32f0bc",
+          "ApiChange": "Function",
+          "ChangedApiName": "getSuggestedEnrollmentLimit",
+          "ChangeType": "Addition",
+          "Description": "Added the [getSuggestedEnrollmentLimit](/graph/api/intune-getSuggestedEnrollmentLimit-getSuggestedEnrollmentLimit?view=graph-rest-beta) method to the [getSuggestedEnrollmentLimit](/graph/api/intune-getSuggestedEnrollmentLimit-getSuggestedEnrollmentLimit?view=graph-rest-beta) resource",
+          "Target": "getSuggestedEnrollmentLimit"
+        },
+        {
+          "Id": "da854b25-1375-4028-b01a-d0238e32f0bc",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50191015",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **edm_50191015** resource type *@\u0026*",
+          "Target": "edm_50191015"
+        },
+        {
+          "Id": "da854b25-1375-4028-b01a-d0238e32f0bc",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200610",
+          "ChangeType": "Addition",
+          "Description": "Added the [edm_50200610](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "edm_50200610"
+        }
+      ],
+      "Id": "da854b25-1375-4028-b01a-d0238e32f0bc",
+      "Cloud": "Fairfax",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3090441Z",
+      "WorkloadArea": "Microsoft.Intune.Enrollment",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "82688277-c1a6-4053-9258-fd2c6b9c90f8",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "suggestedEnrollmentLimit",
+          "ChangeType": "Addition",
+          "Description": "Added the [suggestedEnrollmentLimit](/graph/api/resources/intune-suggestedEnrollmentLimit?view=graph-rest-beta) resource type",
+          "Target": "suggestedEnrollmentLimit"
+        },
+        {
+          "Id": "82688277-c1a6-4053-9258-fd2c6b9c90f8",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50191015",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **edm_50191015** resource type *@\u0026*",
+          "Target": "edm_50191015"
+        },
+        {
+          "Id": "82688277-c1a6-4053-9258-fd2c6b9c90f8",
+          "ApiChange": "Function",
+          "ChangedApiName": "getSuggestedEnrollmentLimit",
+          "ChangeType": "Addition",
+          "Description": "Added the [getSuggestedEnrollmentLimit](/graph/api/intune-getSuggestedEnrollmentLimit-getSuggestedEnrollmentLimit?view=graph-rest-beta) method to the [getSuggestedEnrollmentLimit](/graph/api/intune-getSuggestedEnrollmentLimit-getSuggestedEnrollmentLimit?view=graph-rest-beta) resource",
+          "Target": "getSuggestedEnrollmentLimit"
+        },
+        {
+          "Id": "82688277-c1a6-4053-9258-fd2c6b9c90f8",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200610",
+          "ChangeType": "Addition",
+          "Description": "Added the [edm_50200610](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "edm_50200610"
+        }
+      ],
+      "Id": "82688277-c1a6-4053-9258-fd2c6b9c90f8",
+      "Cloud": "Mooncake",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3090582Z",
+      "WorkloadArea": "Microsoft.Intune.Enrollment",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c68d7a2d-3c88-4d57-847f-5299d0ad8c82",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "suggestedEnrollmentLimit",
+          "ChangeType": "Addition",
+          "Description": "Added the [suggestedEnrollmentLimit](/graph/api/resources/intune-suggestedEnrollmentLimit?view=graph-rest-beta) resource type",
+          "Target": "suggestedEnrollmentLimit"
+        },
+        {
+          "Id": "c68d7a2d-3c88-4d57-847f-5299d0ad8c82",
+          "ApiChange": "Function",
+          "ChangedApiName": "getSuggestedEnrollmentLimit",
+          "ChangeType": "Addition",
+          "Description": "Added the [getSuggestedEnrollmentLimit](/graph/api/intune-getSuggestedEnrollmentLimit-getSuggestedEnrollmentLimit?view=graph-rest-beta) method to the [getSuggestedEnrollmentLimit](/graph/api/intune-getSuggestedEnrollmentLimit-getSuggestedEnrollmentLimit?view=graph-rest-beta) resource",
+          "Target": "getSuggestedEnrollmentLimit"
+        },
+        {
+          "Id": "c68d7a2d-3c88-4d57-847f-5299d0ad8c82",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50191015",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **edm_50191015** resource type *@\u0026*",
+          "Target": "edm_50191015"
+        },
+        {
+          "Id": "c68d7a2d-3c88-4d57-847f-5299d0ad8c82",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200610",
+          "ChangeType": "Addition",
+          "Description": "Added the [edm_50200610](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "edm_50200610"
+        }
+      ],
+      "Id": "c68d7a2d-3c88-4d57-847f-5299d0ad8c82",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3090762Z",
+      "WorkloadArea": "Microsoft.Intune.Enrollment",
+      "SubArea": "Corporate management"
+    }
+  ]
+}

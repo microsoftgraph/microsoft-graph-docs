@@ -1,0 +1,54 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "57ca7d6c-1d9b-4131-a909-0965ed39bb4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isLocationOnline",
+          "ChangeType": "Addition",
+          "Description": "Added the **isLocationOnline** property to [bookingAppointment](/?view=graph-rest-beta) resource",
+          "Target": "bookingAppointment"
+        },
+        {
+          "Id": "57ca7d6c-1d9b-4131-a909-0965ed39bb4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "onlineMeetingUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **onlineMeetingUrl** property to [bookingAppointment](/?view=graph-rest-beta) resource",
+          "Target": "bookingAppointment"
+        },
+        {
+          "Id": "57ca7d6c-1d9b-4131-a909-0965ed39bb4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isLocationOnline",
+          "ChangeType": "Addition",
+          "Description": "Added the **isLocationOnline** property to [bookingService](/?view=graph-rest-beta) resource",
+          "Target": "bookingService"
+        },
+        {
+          "Id": "57ca7d6c-1d9b-4131-a909-0965ed39bb4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "additionalInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **additionalInformation** property to [bookingService](/?view=graph-rest-beta) resource",
+          "Target": "bookingService"
+        },
+        {
+          "Id": "57ca7d6c-1d9b-4131-a909-0965ed39bb4a",
+          "ApiChange": "Property",
+          "ChangedApiName": "additionalInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **additionalInformation** property to [bookingAppointment](/?view=graph-rest-beta) resource",
+          "Target": "bookingAppointment"
+        }
+      ],
+      "Id": "57ca7d6c-1d9b-4131-a909-0965ed39bb4a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3079547Z",
+      "WorkloadArea": "Microsoft.Bookings",
+      "SubArea": ""
+    }
+  ]
+}

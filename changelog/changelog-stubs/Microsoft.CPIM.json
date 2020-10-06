@@ -1,0 +1,86 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "apiAuthenticationConfigurationBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [apiAuthenticationConfigurationBase](/graph/api/resources/apiAuthenticationConfigurationBase?view=graph-rest-beta) resource type",
+          "Target": "apiAuthenticationConfigurationBase"
+        },
+        {
+          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "authenticationSourceFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationSourceFilter](/graph/api/resources/authenticationSourceFilter?view=graph-rest-beta) resource type",
+          "Target": "authenticationSourceFilter"
+        },
+        {
+          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "basicAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [basicAuthentication](/graph/api/resources/basicAuthentication?view=graph-rest-beta) resource type",
+          "Target": "basicAuthentication"
+        },
+        {
+          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "userFlowApiConnectorConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [userFlowApiConnectorConfiguration](/graph/api/resources/userFlowApiConnectorConfiguration?view=graph-rest-beta) resource type",
+          "Target": "userFlowApiConnectorConfiguration"
+        },
+        {
+          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "authenticationAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationAction](/graph/api/resources/authenticationAction?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "authenticationAction"
+        },
+        {
+          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "authenticationEventsPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationEventsPolicy](/graph/api/resources/authenticationEventsPolicy?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "authenticationEventsPolicy"
+        },
+        {
+          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "events",
+          "ChangeType": "Addition",
+          "Description": "Added the **events** relationship to [identityContainer](/?view=graph-rest-beta) resource",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "invokeUserFlowAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [invokeUserFlowAction](/graph/api/resources/invokeUserFlowAction?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "invokeUserFlowAction"
+        },
+        {
+          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "b2cAuthenticationMethodsPolicy",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **b2cAuthenticationMethodsPolicy** relationship from [policyRoot](/?view=graph-rest-beta) resource",
+          "Target": "policyRoot"
+        }
+      ],
+      "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3080132Z",
+      "WorkloadArea": "Microsoft.CPIM",
+      "SubArea": "Identity and sign-in"
+    }
+  ]
+}

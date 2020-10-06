@@ -1,0 +1,2216 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "allowInvitesFrom",
+          "ChangeType": "Addition",
+          "Description": "Added the [allowInvitesFrom](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "allowInvitesFrom"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "defaultUserRolePermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the [defaultUserRolePermissions](/graph/api/resources/defaultUserRolePermissions?view=graph-rest-beta) resource type",
+          "Target": "defaultUserRolePermissions"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "spaApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the [spaApplication](/graph/api/resources/spaApplication?view=graph-rest-beta) resource type",
+          "Target": "spaApplication"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "claimsMappingPolicies",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **claimsMappingPolicies** relationship from [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToSignUpEmailBasedSubscriptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToSignUpEmailBasedSubscriptions** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToUseSSPR",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToUseSSPR** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "unifiedRolePermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRolePermission](/graph/api/resources/unifiedRolePermission?view=graph-rest-beta) resource type",
+          "Target": "unifiedRolePermission"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "spa",
+          "ChangeType": "Addition",
+          "Description": "Added the **spa** property to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "uniqueName",
+          "ChangeType": "Addition",
+          "Description": "Added the **uniqueName** property to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowEmailVerifiedUsersToJoinOrganization",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowEmailVerifiedUsersToJoinOrganization** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowInvitesFrom",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowInvitesFrom** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultUserRolePermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultUserRolePermissions** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "infoCatalogs",
+          "ChangeType": "Addition",
+          "Description": "Added the **infoCatalogs** property to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceCategory** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceOwnership",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceOwnership** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "domainName",
+          "ChangeType": "Addition",
+          "Description": "Added the **domainName** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentProfileName",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentProfileName** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "managementType",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementType** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Function",
+          "ChangedApiName": "linkCount",
+          "ChangeType": "Addition",
+          "Description": "Added the [linkCount](/graph/api/linkCount-linkCount?view=graph-rest-beta) method to the [linkCount](/graph/api/linkCount-linkCount?view=graph-rest-beta) resource",
+          "Target": "linkCount"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentType** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationDateTime** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRooted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRooted** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+          "ApiChange": "Property",
+          "ChangedApiName": "infoCatalogs",
+          "ChangeType": "Addition",
+          "Description": "Added the **infoCatalogs** property to [group](/?view=graph-rest-beta) resource",
+          "Target": "group"
+        }
+      ],
+      "Id": "abd4ef2f-c1fa-41cb-89e3-405e39c3ec45",
+      "Cloud": "Blackforest",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3081986Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "delegatedPermissionClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedPermissionClassification](/graph/api/resources/delegatedPermissionClassification?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "delegatedPermissionClassification"
+        },
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "permissionGrantConditionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantConditionSet](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionGrantConditionSet"
+        },
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "permissionGrantPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantPolicy](/graph/api/resources/permissionGrantPolicy?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionGrantPolicy"
+        },
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "permissionGrantPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrantPolicies** relationship to [policyRoot](/?view=graph-rest-1.0) resource",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "permissionClassificationType",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionClassificationType](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionClassificationType"
+        },
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "permissionType",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionType](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionType"
+        },
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "tokenIssuancePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenIssuancePolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "delegatedPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedPermissionClassifications** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "homeRealmDiscoveryPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **homeRealmDiscoveryPolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "claimsMappingPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimsMappingPolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "982831c1-62f4-49a8-974a-46864549b06a",
+      "Cloud": "Blackforest",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-06T14:38:26.3082202Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "allowInvitesFrom",
+          "ChangeType": "Addition",
+          "Description": "Added the [allowInvitesFrom](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "allowInvitesFrom"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "defaultUserRolePermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the [defaultUserRolePermissions](/graph/api/resources/defaultUserRolePermissions?view=graph-rest-beta) resource type",
+          "Target": "defaultUserRolePermissions"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "spaApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the [spaApplication](/graph/api/resources/spaApplication?view=graph-rest-beta) resource type",
+          "Target": "spaApplication"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "unifiedRolePermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRolePermission](/graph/api/resources/unifiedRolePermission?view=graph-rest-beta) resource type",
+          "Target": "unifiedRolePermission"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "spa",
+          "ChangeType": "Addition",
+          "Description": "Added the **spa** property to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "uniqueName",
+          "ChangeType": "Addition",
+          "Description": "Added the **uniqueName** property to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceCategory** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToUseSSPR",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToUseSSPR** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceOwnership",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceOwnership** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "domainName",
+          "ChangeType": "Addition",
+          "Description": "Added the **domainName** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowEmailVerifiedUsersToJoinOrganization",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowEmailVerifiedUsersToJoinOrganization** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowInvitesFrom",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowInvitesFrom** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultUserRolePermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultUserRolePermissions** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentProfileName",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentProfileName** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentType** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "managementType",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementType** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationDateTime** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+          "ApiChange": "Property",
+          "ChangedApiName": "infoCatalogs",
+          "ChangeType": "Addition",
+          "Description": "Added the **infoCatalogs** property to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        }
+      ],
+      "Id": "7a17bd3d-e414-4a1f-8c7a-9ce830ac58a9",
+      "Cloud": "Fairfax",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3082365Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "permissionClassificationType",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionClassificationType](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionClassificationType"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "permissionType",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionType](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionType"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "delegatedPermissionClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedPermissionClassification](/graph/api/resources/delegatedPermissionClassification?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "delegatedPermissionClassification"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "permissionGrantConditionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantConditionSet](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionGrantConditionSet"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "permissionGrantPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantPolicy](/graph/api/resources/permissionGrantPolicy?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionGrantPolicy"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "permissionGrantPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrantPolicies** relationship to [policyRoot](/?view=graph-rest-1.0) resource",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "delegatedPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedPermissionClassifications** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "homeRealmDiscoveryPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **homeRealmDiscoveryPolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasPermissionClassifications** property to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "claimsMappingPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimsMappingPolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "tokenIssuancePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenIssuancePolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "tokenLifetimePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenLifetimePolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        }
+      ],
+      "Id": "92e59f26-441b-4fa7-b209-9aac07b64ae4",
+      "Cloud": "Fairfax",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-06T14:38:26.3082521Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "allowInvitesFrom",
+          "ChangeType": "Addition",
+          "Description": "Added the [allowInvitesFrom](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "allowInvitesFrom"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "defaultUserRolePermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the [defaultUserRolePermissions](/graph/api/resources/defaultUserRolePermissions?view=graph-rest-beta) resource type",
+          "Target": "defaultUserRolePermissions"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToUseSSPR",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToUseSSPR** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "spaApplication",
+          "ChangeType": "Addition",
+          "Description": "Added the [spaApplication](/graph/api/resources/spaApplication?view=graph-rest-beta) resource type",
+          "Target": "spaApplication"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "claimsMappingPolicies",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **claimsMappingPolicies** relationship from [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultUserRolePermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultUserRolePermissions** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentProfileName",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentProfileName** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentType** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "extensionAttributes",
+          "ChangeType": "Addition",
+          "Description": "Added the **extensionAttributes** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceCategory** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceOwnership",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceOwnership** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "domainName",
+          "ChangeType": "Addition",
+          "Description": "Added the **domainName** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRooted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRooted** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "managementType",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementType** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrationDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationDateTime** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "infoCatalogs",
+          "ChangeType": "Addition",
+          "Description": "Added the **infoCatalogs** property to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Function",
+          "ChangedApiName": "linkCount",
+          "ChangeType": "Addition",
+          "Description": "Added the [linkCount](/graph/api/linkCount-linkCount?view=graph-rest-beta) method to the [linkCount](/graph/api/linkCount-linkCount?view=graph-rest-beta) resource",
+          "Target": "linkCount"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Function",
+          "ChangedApiName": "linkCount",
+          "ChangeType": "Addition",
+          "Description": "Added the [linkCount](/graph/api/linkCount-linkCount?view=graph-rest-beta) method to the [linkCount](/graph/api/linkCount-linkCount?view=graph-rest-beta) resource",
+          "Target": "linkCount"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "expirationDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expirationDateTime** property to [group](/?view=graph-rest-beta) resource",
+          "Target": "group"
+        },
+        {
+          "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+          "ApiChange": "Property",
+          "ChangedApiName": "infoCatalogs",
+          "ChangeType": "Addition",
+          "Description": "Added the **infoCatalogs** property to [group](/?view=graph-rest-beta) resource",
+          "Target": "group"
+        }
+      ],
+      "Id": "e8cb436f-c17f-478e-9022-3bed0f90c512",
+      "Cloud": "Mooncake",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3082656Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "permissionClassificationType",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionClassificationType](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionClassificationType"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "homeRealmDiscoveryPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **homeRealmDiscoveryPolicies** relationship to [application](/?view=graph-rest-1.0) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "permissionGrantConditionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantConditionSet](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionGrantConditionSet"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "delegatedPermissionClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedPermissionClassification](/graph/api/resources/delegatedPermissionClassification?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "delegatedPermissionClassification"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "permissionGrantPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantPolicy](/graph/api/resources/permissionGrantPolicy?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionGrantPolicy"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "claimsMappingPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimsMappingPolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "delegatedPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedPermissionClassifications** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "permissionGrantPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrantPolicies** relationship to [policyRoot](/?view=graph-rest-1.0) resource",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasPermissionClassifications** property to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "tokenLifetimePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenLifetimePolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "tokenIssuancePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenIssuancePolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        }
+      ],
+      "Id": "738bf414-43c2-4cae-ba87-ab555d2a164a",
+      "Cloud": "Mooncake",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-06T14:38:26.3082804Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e9e452f6-b49d-4617-8839-8702320ed975",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "transitiveReports",
+          "ChangeType": "Addition",
+          "Description": "Added the **transitiveReports** relationship to [orgContact](/?view=graph-rest-beta) resource",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "e9e452f6-b49d-4617-8839-8702320ed975",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "employeeOrgData",
+          "ChangeType": "Addition",
+          "Description": "Added the [employeeOrgData](/graph/api/resources/employeeOrgData?view=graph-rest-beta) resource type",
+          "Target": "employeeOrgData"
+        },
+        {
+          "Id": "e9e452f6-b49d-4617-8839-8702320ed975",
+          "ApiChange": "Property",
+          "ChangedApiName": "infoCatalogs",
+          "ChangeType": "Addition",
+          "Description": "Added the **infoCatalogs** property to [group](/?view=graph-rest-beta) resource",
+          "Target": "group"
+        },
+        {
+          "Id": "e9e452f6-b49d-4617-8839-8702320ed975",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeOrgData",
+          "ChangeType": "Addition",
+          "Description": "Added the **employeeOrgData** property to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "e9e452f6-b49d-4617-8839-8702320ed975",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeHireDate",
+          "ChangeType": "Addition",
+          "Description": "Added the **employeeHireDate** property to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "e9e452f6-b49d-4617-8839-8702320ed975",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **employeeType** property to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "e9e452f6-b49d-4617-8839-8702320ed975",
+          "ApiChange": "Property",
+          "ChangedApiName": "infoCatalogs",
+          "ChangeType": "Addition",
+          "Description": "Added the **infoCatalogs** property to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "e9e452f6-b49d-4617-8839-8702320ed975",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "transitiveReports",
+          "ChangeType": "Addition",
+          "Description": "Added the **transitiveReports** relationship to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        }
+      ],
+      "Id": "e9e452f6-b49d-4617-8839-8702320ed975",
+      "Cloud": "PPE",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3082945Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "settingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [settingValue](/graph/api/resources/settingValue?view=graph-rest-1.0) resource type",
+          "Target": "settingValue"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "model",
+          "ChangeType": "Addition",
+          "Description": "Added the **model** property to [domain](/?view=graph-rest-1.0) resource",
+          "Target": "domain"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "mobilePhone",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **mobilePhone** property from [orgContact](/?view=graph-rest-1.0) resource",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to [application](/?view=graph-rest-1.0) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "notes",
+          "ChangeType": "Addition",
+          "Description": "Added the **notes** property to [application](/?view=graph-rest-1.0) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "phones",
+          "ChangeType": "Addition",
+          "Description": "Added the **phones** property to [orgContact](/?view=graph-rest-1.0) resource",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "passwordValidityPeriodInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the **passwordValidityPeriodInDays** property to [domain](/?view=graph-rest-1.0) resource",
+          "Target": "domain"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "certificateAuthority",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateAuthority](/graph/api/resources/certificateAuthority?view=graph-rest-1.0) resource type",
+          "Target": "certificateAuthority"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationPolicy](/graph/api/resources/authorizationPolicy?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignedLabels",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignedLabels** property to [group](/?view=graph-rest-1.0) resource",
+          "Target": "group"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "streetAddress",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **streetAddress** property from [orgContact](/?view=graph-rest-1.0) resource",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "groupSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupSetting](/graph/api/resources/groupSetting?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "groupSetting"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "employeeOrgData",
+          "ChangeType": "Addition",
+          "Description": "Added the [employeeOrgData](/graph/api/resources/employeeOrgData?view=graph-rest-1.0) resource type",
+          "Target": "employeeOrgData"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "transitiveReports",
+          "ChangeType": "Addition",
+          "Description": "Added the **transitiveReports** relationship to [orgContact](/?view=graph-rest-1.0) resource",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "preferredSingleSignOnMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **preferredSingleSignOnMode** property to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **description** property from [policyBase](/?view=graph-rest-1.0) resource",
+          "Target": "policyBase"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "expirationDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expirationDateTime** property to [group](/?view=graph-rest-1.0) resource",
+          "Target": "group"
+        },
+        null,
+        null,
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastPasswordChangeDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastPasswordChangeDateTime** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "onPremisesExtensionAttributes",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesExtensionAttributes](/graph/api/resources/onPremisesExtensionAttributes?view=graph-rest-1.0) resource type",
+          "Target": "onPremisesExtensionAttributes"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "privacyProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the **privacyProfile** property to [organization](/?view=graph-rest-1.0) resource",
+          "Target": "organization"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "mdmAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **mdmAppId** property to [device](/?view=graph-rest-1.0) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesDomainName",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesDomainName** property to [group](/?view=graph-rest-1.0) resource",
+          "Target": "group"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "ageGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **ageGroup** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "addresses",
+          "ChangeType": "Addition",
+          "Description": "Added the **addresses** property to [orgContact](/?view=graph-rest-1.0) resource",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesExtensionAttributes",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesExtensionAttributes** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "privacyProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [privacyProfile](/graph/api/resources/privacyProfile?view=graph-rest-1.0) resource type",
+          "Target": "privacyProfile"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesSamAccountName",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesSamAccountName** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesUserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesUserPrincipalName** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "otherMails",
+          "ChangeType": "Addition",
+          "Description": "Added the **otherMails** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "showInAddressList",
+          "ChangeType": "Addition",
+          "Description": "Added the **showInAddressList** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **employeeId** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "signInSessionsValidFromDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **signInSessionsValidFromDateTime** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "licenseDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the **licenseDetails** relationship to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **employeeType** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "faxNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the **faxNumber** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "identities",
+          "ChangeType": "Addition",
+          "Description": "Added the **identities** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Action",
+          "ChangedApiName": "forceDelete",
+          "ChangeType": "Addition",
+          "Description": "Added the [forceDelete](/graph/api/forceDelete-forceDelete?view=graph-rest-1.0) method to the [forceDelete](/graph/api/forceDelete-forceDelete?view=graph-rest-1.0) resource",
+          "Target": "forceDelete"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Property",
+          "ChangedApiName": "imAddresses",
+          "ChangeType": "Addition",
+          "Description": "Added the **imAddresses** property to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Action",
+          "ChangedApiName": "getAvailableExtensionProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAvailableExtensionProperties](/graph/api/getAvailableExtensionProperties-getAvailableExtensionProperties?view=graph-rest-1.0) method to the [getAvailableExtensionProperties](/graph/api/getAvailableExtensionProperties-getAvailableExtensionProperties?view=graph-rest-1.0) resource",
+          "Target": "getAvailableExtensionProperties"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Action",
+          "ChangedApiName": "getByIds",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByIds](/graph/api/getByIds-getByIds?view=graph-rest-1.0) method to the [getByIds](/graph/api/getByIds-getByIds?view=graph-rest-1.0) resource",
+          "Target": "getByIds"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Action",
+          "ChangedApiName": "invalidateAllRefreshTokens",
+          "ChangeType": "Deletion",
+          "Description": "Changed the return type for [invalidateAllRefreshTokens](/graph/api/invalidateAllRefreshTokens-invalidateAllRefreshTokens?view=graph-rest-1.0) method",
+          "Target": "invalidateAllRefreshTokens"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Action",
+          "ChangedApiName": "revokeSignInSessions",
+          "ChangeType": "Addition",
+          "Description": "Added the [revokeSignInSessions](/graph/api/revokeSignInSessions-revokeSignInSessions?view=graph-rest-1.0) method to the [revokeSignInSessions](/graph/api/revokeSignInSessions-revokeSignInSessions?view=graph-rest-1.0) resource",
+          "Target": "revokeSignInSessions"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Action",
+          "ChangedApiName": "validateProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [validateProperties](/graph/api/validateProperties-validateProperties?view=graph-rest-1.0) method to the [validateProperties](/graph/api/validateProperties-validateProperties?view=graph-rest-1.0) resource",
+          "Target": "validateProperties"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Action",
+          "ChangedApiName": "validateProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [validateProperties](/graph/api/validateProperties-validateProperties?view=graph-rest-1.0) method to the [validateProperties](/graph/api/validateProperties-validateProperties?view=graph-rest-1.0) resource",
+          "Target": "validateProperties"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Action",
+          "ChangedApiName": "verify",
+          "ChangeType": "Addition",
+          "Description": "Added the [verify](/graph/api/verify-verify?view=graph-rest-1.0) method to the [verify](/graph/api/verify-verify?view=graph-rest-1.0) resource",
+          "Target": "verify"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Deletion",
+          "Description": "Changed the return type for [delta](/graph/api/delta-delta?view=graph-rest-1.0) method",
+          "Target": "delta"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "certificateBasedAuthConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateBasedAuthConfiguration](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "certificateBasedAuthConfiguration"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "contracts",
+          "ChangeType": "Addition",
+          "Description": "Added the [contracts](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "contracts"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "groupSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupSettings](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "groupSettings"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "groupSettingTemplates",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupSettingTemplates](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "groupSettingTemplates"
+        },
+        {
+          "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "mipLabels",
+          "ChangeType": "Addition",
+          "Description": "Added the [mipLabels](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "mipLabels"
+        }
+      ],
+      "Id": "cfbc4815-1a1b-4e30-b7e8-35e4909f28ca",
+      "Cloud": "PPE",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-06T14:38:26.3083094Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "employeeOrgData",
+          "ChangeType": "Addition",
+          "Description": "Added the [employeeOrgData](/graph/api/resources/employeeOrgData?view=graph-rest-beta) resource type",
+          "Target": "employeeOrgData"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "createdOnBehalfOf",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdOnBehalfOf** relationship to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "homeRealmDiscoveryPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **homeRealmDiscoveryPolicies** relationship to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "owners",
+          "ChangeType": "Addition",
+          "Description": "Added the **owners** relationship to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "policies",
+          "ChangeType": "Addition",
+          "Description": "Added the **policies** relationship to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "tokenIssuancePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenIssuancePolicies** relationship to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "tokenLifetimePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenLifetimePolicies** relationship to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "administrativeUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **administrativeUnits** relationship to [directory](/?view=graph-rest-beta) resource",
+          "Target": "directory"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "bannerLogo",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **bannerLogo** property from [organizationalBranding](/?view=graph-rest-beta) resource",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "ownedObjects",
+          "ChangeType": "Addition",
+          "Description": "Added the **ownedObjects** relationship to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **id** property from [organizationalBranding](/?view=graph-rest-beta) resource",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "ownedObjects",
+          "ChangeType": "Addition",
+          "Description": "Added the **ownedObjects** relationship to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "locale",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **locale** property from [organizationalBranding](/?view=graph-rest-beta) resource",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Singleton",
+          "ChangedApiName": "branding",
+          "ChangeType": "Addition",
+          "Description": "Added the [branding](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "branding"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "signInPageText",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **signInPageText** property from [organizationalBranding](/?view=graph-rest-beta) resource",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "organizationalBrandingProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationalBrandingProperties](/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "privateLinkResourcePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **privateLinkResourcePolicies** relationship to [policyRoot](/?view=graph-rest-beta) resource",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "privateLinkResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [privateLinkResource](/graph/api/resources/privateLinkResource?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "privateLinkResource"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "branding",
+          "ChangeType": "Addition",
+          "Description": "Added the **branding** relationship to [organization](/?view=graph-rest-beta) resource",
+          "Target": "organization"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "brandings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **brandings** relationship from [organization](/?view=graph-rest-beta) resource",
+          "Target": "organization"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "backgroundColor",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **backgroundColor** property from [organizationalBranding](/?view=graph-rest-beta) resource",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "backgroundImage",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **backgroundImage** property from [organizationalBranding](/?view=graph-rest-beta) resource",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "squareLogo",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **squareLogo** property from [organizationalBranding](/?view=graph-rest-beta) resource",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "usernameHintText",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **usernameHintText** property from [organizationalBranding](/?view=graph-rest-beta) resource",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "localizations",
+          "ChangeType": "Addition",
+          "Description": "Added the **localizations** relationship to [organizationalBranding](/?view=graph-rest-beta) resource",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "organizationalBrandingLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationalBrandingLocalization](/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "organizationalBrandingLocalization"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeHireDate",
+          "ChangeType": "Addition",
+          "Description": "Added the **employeeHireDate** property to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeOrgData",
+          "ChangeType": "Addition",
+          "Description": "Added the **employeeOrgData** property to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **employeeType** property to [user](/?view=graph-rest-beta) resource",
+          "Target": "user"
+        }
+      ],
+      "Id": "692575f1-a440-4cb6-831c-c6a449d3c564",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3083324Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "permissionClassificationType",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionClassificationType](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionClassificationType"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to [administrativeUnit](/?view=graph-rest-1.0) resource",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "permissionType",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionType](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionType"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to [administrativeUnit](/?view=graph-rest-1.0) resource",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "Property",
+          "ChangedApiName": "visibility",
+          "ChangeType": "Addition",
+          "Description": "Added the **visibility** property to [administrativeUnit](/?view=graph-rest-1.0) resource",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "members",
+          "ChangeType": "Addition",
+          "Description": "Added the **members** relationship to [administrativeUnit](/?view=graph-rest-1.0) resource",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "scopedRoleMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopedRoleMembers** relationship to [administrativeUnit](/?view=graph-rest-1.0) resource",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "permissionGrantConditionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantConditionSet](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionGrantConditionSet"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "permissionGrantPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantPolicy](/graph/api/resources/permissionGrantPolicy?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "permissionGrantPolicy"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "delegatedPermissionClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedPermissionClassification](/graph/api/resources/delegatedPermissionClassification?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "delegatedPermissionClassification"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "administrativeUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **administrativeUnits** relationship to [directory](/?view=graph-rest-1.0) resource",
+          "Target": "directory"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "scopedRoleMemberOf",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopedRoleMemberOf** relationship to [user](/?view=graph-rest-1.0) resource",
+          "Target": "user"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "scopedMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopedMembers** relationship to [directoryRole](/?view=graph-rest-1.0) resource",
+          "Target": "directoryRole"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "scopedRoleMembership",
+          "ChangeType": "Addition",
+          "Description": "Added the [scopedRoleMembership](/graph/api/resources/scopedRoleMembership?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "scopedRoleMembership"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "scopedRoleMemberships",
+          "ChangeType": "Addition",
+          "Description": "Added the [scopedRoleMemberships](/?view=graph-rest-1.0) resource *@\u0026*",
+          "Target": "scopedRoleMemberships"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasPermissionClassifications** property to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "delegatedPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedPermissionClassifications** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "00276c8d-e91f-4963-9b8e-c1d75816e12c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-06T14:38:26.3083583Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "permissionConditionSet",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **permissionConditionSet** resource type",
+          "Target": "permissionConditionSet"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "permissionGrantConditionSet",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **permissionGrantConditionSet** resource type",
+          "Target": "permissionGrantConditionSet"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludedResourceActions",
+          "ChangeType": "Addition",
+          "Description": "Added the **excludedResourceActions** property to [unifiedRolePermission](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRolePermission"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "notes",
+          "ChangeType": "Addition",
+          "Description": "Added the **notes** property to [application](/?view=graph-rest-beta) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludes",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **excludes** property from [permissionGrantPolicy](/?view=graph-rest-beta) resource",
+          "Target": "permissionGrantPolicy"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "includes",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **includes** property from [permissionGrantPolicy](/?view=graph-rest-beta) resource",
+          "Target": "permissionGrantPolicy"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "excludes",
+          "ChangeType": "Addition",
+          "Description": "Added the **excludes** relationship to [permissionGrantPolicy](/?view=graph-rest-beta) resource",
+          "Target": "permissionGrantPolicy"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "includes",
+          "ChangeType": "Addition",
+          "Description": "Added the **includes** relationship to [permissionGrantPolicy](/?view=graph-rest-beta) resource",
+          "Target": "permissionGrantPolicy"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **id** property from [policyBase](/?view=graph-rest-beta) resource",
+          "Target": "policyBase"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "blockMsolPowerShell",
+          "ChangeType": "Addition",
+          "Description": "Added the **blockMsolPowerShell** property to [authorizationPolicy](/?view=graph-rest-beta) resource",
+          "Target": "authorizationPolicy"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "extensionAttributes",
+          "ChangeType": "Addition",
+          "Description": "Added the **extensionAttributes** property to [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdByAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdByAppId** property to [group](/?view=graph-rest-beta) resource",
+          "Target": "group"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "expirationDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expirationDateTime** property to [group](/?view=graph-rest-beta) resource",
+          "Target": "group"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "permissionGrantConditionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantConditionSet](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "permissionGrantConditionSet"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **authorizationPolicy** relationship from [policyRoot](/?view=graph-rest-beta) resource",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "permissionGrantPolicies",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **permissionGrantPolicies** relationship from [policyRoot](/?view=graph-rest-beta) resource",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "roleAssignments",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **roleAssignments** relationship from [rbacApplication](/?view=graph-rest-beta) resource",
+          "Target": "rbacApplication"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "roleDefinitions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **roleDefinitions** relationship from [rbacApplication](/?view=graph-rest-beta) resource",
+          "Target": "rbacApplication"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "appDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **appDescription** property to [servicePrincipal](/?view=graph-rest-beta) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to [servicePrincipal](/?view=graph-rest-beta) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "notes",
+          "ChangeType": "Addition",
+          "Description": "Added the **notes** property to [servicePrincipal](/?view=graph-rest-beta) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **id** property from [unifiedRoleAssignment](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "principalId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **principalId** property from [unifiedRoleAssignment](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceScope",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceScope** property from [unifiedRoleAssignment](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "roleDefinitionId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **roleDefinitionId** property from [unifiedRoleAssignment](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "principal",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **principal** relationship from [unifiedRoleAssignment](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "roleDefinition",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **roleDefinition** relationship from [unifiedRoleAssignment](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **description** property from [unifiedRoleDefinition](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceScopes",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceScopes** property from [unifiedRoleDefinition](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **id** property from [unifiedRoleDefinition](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "rolePermissions",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **rolePermissions** property from [unifiedRoleDefinition](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isBuiltIn",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **isBuiltIn** property from [unifiedRoleDefinition](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "version",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **version** property from [unifiedRoleDefinition](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEnabled",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **isEnabled** property from [unifiedRoleDefinition](/?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleDefinition"
+        }
+      ],
+      "Id": "4f1340c6-575b-41fd-ac53-63341c4f543a",
+      "Cloud": "USNat",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3083739Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to [application](/?view=graph-rest-1.0) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "Property",
+          "ChangedApiName": "notes",
+          "ChangeType": "Addition",
+          "Description": "Added the **notes** property to [application](/?view=graph-rest-1.0) resource",
+          "Target": "application"
+        },
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantType",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantType** property to [organization](/?view=graph-rest-1.0) resource",
+          "Target": "organization"
+        },
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "Property",
+          "ChangedApiName": "notes",
+          "ChangeType": "Addition",
+          "Description": "Added the **notes** property to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "tokenIssuancePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenIssuancePolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "claimsMappingPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimsMappingPolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "homeRealmDiscoveryPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **homeRealmDiscoveryPolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "tokenLifetimePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenLifetimePolicies** relationship to [servicePrincipal](/?view=graph-rest-1.0) resource",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        },
+        {
+          "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+          "ApiChange": "Function",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](/graph/api/delta-delta?view=graph-rest-1.0) method to the [delta](/graph/api/delta-delta?view=graph-rest-1.0) resource",
+          "Target": "delta"
+        }
+      ],
+      "Id": "17067e33-b553-41cc-aadc-1d13ae5ccdde",
+      "Cloud": "USNat",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-06T14:38:26.3083898Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3d8a10b4-4665-4545-ab87-80209311e4cd",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "unifiedRolePermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRolePermission](/graph/api/resources/unifiedRolePermission?view=graph-rest-beta) resource type",
+          "Target": "unifiedRolePermission"
+        }
+      ],
+      "Id": "3d8a10b4-4665-4545-ab87-80209311e4cd",
+      "Cloud": "USSec",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3084049Z",
+      "WorkloadArea": "Microsoft.DirectoryServices",
+      "SubArea": "Directory management"
+    }
+  ]
+}

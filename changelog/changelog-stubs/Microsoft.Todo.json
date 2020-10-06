@@ -1,0 +1,22 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "23281aa4-58f9-452f-969a-70e4b49585f2",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "Container",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **Container** resource type *@\u0026*",
+          "Target": "Container"
+        }
+      ],
+      "Id": "23281aa4-58f9-452f-969a-70e4b49585f2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3094413Z",
+      "WorkloadArea": "Microsoft.Todo",
+      "SubArea": ""
+    }
+  ]
+}

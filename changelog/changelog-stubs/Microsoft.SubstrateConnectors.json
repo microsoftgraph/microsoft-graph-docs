@@ -1,0 +1,30 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "a118d25f-218e-4fc4-93a8-cf18122553f4",
+          "ApiChange": "Property",
+          "ChangedApiName": "state",
+          "ChangeType": "Addition",
+          "Description": "Added the **state** property to [externalConnection](/?view=graph-rest-beta) resource",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "a118d25f-218e-4fc4-93a8-cf18122553f4",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "connectionState",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectionState](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "connectionState"
+        }
+      ],
+      "Id": "a118d25f-218e-4fc4-93a8-cf18122553f4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:38:26.3093677Z",
+      "WorkloadArea": "Microsoft.SubstrateConnectors",
+      "SubArea": ""
+    }
+  ]
+}
