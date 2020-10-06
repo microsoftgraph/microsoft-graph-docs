@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "648f0d75-6fd5-441f-80b4-b93341390dea",
+          "Id": "241845f1-3308-42fd-8218-cd0b602988fe",
           "ApiChange": "EntityType",
           "ChangedApiName": "rbacApplicationMultiple",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "rbacApplicationMultiple"
         },
         {
-          "Id": "648f0d75-6fd5-441f-80b4-b93341390dea",
+          "Id": "241845f1-3308-42fd-8218-cd0b602988fe",
           "ApiChange": "EntityType",
           "ChangedApiName": "roleManagement",
           "ChangeType": "Addition",
@@ -19,15 +19,7 @@
           "Target": "roleManagement"
         },
         {
-          "Id": "648f0d75-6fd5-441f-80b4-b93341390dea",
-          "ApiChange": "Singleton",
-          "ChangedApiName": "roleManagement",
-          "ChangeType": "Addition",
-          "Description": "Added the [roleManagement](/?view=graph-rest-beta) resource *@\u0026*",
-          "Target": "roleManagement"
-        },
-        {
-          "Id": "648f0d75-6fd5-441f-80b4-b93341390dea",
+          "Id": "241845f1-3308-42fd-8218-cd0b602988fe",
           "ApiChange": "EntityType",
           "ChangedApiName": "unifiedRoleAssignmentMultiple",
           "ChangeType": "Addition",
@@ -35,25 +27,33 @@
           "Target": "unifiedRoleAssignmentMultiple"
         },
         {
-          "Id": "648f0d75-6fd5-441f-80b4-b93341390dea",
+          "Id": "241845f1-3308-42fd-8218-cd0b602988fe",
           "ApiChange": "EntityType",
           "ChangedApiName": "unifiedRoleDefinition",
           "ChangeType": "Addition",
           "Description": "Added the [unifiedRoleDefinition](/graph/api/resources/intune-unifiedRoleDefinition?view=graph-rest-beta) resource *@\u0026*",
           "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "241845f1-3308-42fd-8218-cd0b602988fe",
+          "ApiChange": "Singleton",
+          "ChangedApiName": "roleManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleManagement](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "roleManagement"
         }
       ],
-      "Id": "648f0d75-6fd5-441f-80b4-b93341390dea",
+      "Id": "241845f1-3308-42fd-8218-cd0b602988fe",
       "Cloud": "Fairfax",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3091854Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0526026Z",
       "WorkloadArea": "Microsoft.Intune.Rbac",
       "SubArea": "Corporate management"
     },
     {
       "ChangeList": [
         {
-          "Id": "dc8ec872-6005-4ddd-9aea-ff1540769500",
+          "Id": "3c432afa-d4e1-4003-ad00-c2509366be5a",
           "ApiChange": "EntityType",
           "ChangedApiName": "rbacApplicationMultiple",
           "ChangeType": "Addition",
@@ -61,7 +61,15 @@
           "Target": "rbacApplicationMultiple"
         },
         {
-          "Id": "dc8ec872-6005-4ddd-9aea-ff1540769500",
+          "Id": "3c432afa-d4e1-4003-ad00-c2509366be5a",
+          "ApiChange": "Singleton",
+          "ChangedApiName": "roleManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleManagement](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "3c432afa-d4e1-4003-ad00-c2509366be5a",
           "ApiChange": "EntityType",
           "ChangedApiName": "roleManagement",
           "ChangeType": "Addition",
@@ -69,15 +77,7 @@
           "Target": "roleManagement"
         },
         {
-          "Id": "dc8ec872-6005-4ddd-9aea-ff1540769500",
-          "ApiChange": "EntityType",
-          "ChangedApiName": "unifiedRoleAssignmentMultiple",
-          "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleAssignmentMultiple](/graph/api/resources/intune-unifiedRoleAssignmentMultiple?view=graph-rest-beta) resource *@\u0026*",
-          "Target": "unifiedRoleAssignmentMultiple"
-        },
-        {
-          "Id": "dc8ec872-6005-4ddd-9aea-ff1540769500",
+          "Id": "3c432afa-d4e1-4003-ad00-c2509366be5a",
           "ApiChange": "EntityType",
           "ChangedApiName": "unifiedRoleDefinition",
           "ChangeType": "Addition",
@@ -85,18 +85,18 @@
           "Target": "unifiedRoleDefinition"
         },
         {
-          "Id": "dc8ec872-6005-4ddd-9aea-ff1540769500",
-          "ApiChange": "Singleton",
-          "ChangedApiName": "roleManagement",
+          "Id": "3c432afa-d4e1-4003-ad00-c2509366be5a",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "unifiedRoleAssignmentMultiple",
           "ChangeType": "Addition",
-          "Description": "Added the [roleManagement](/?view=graph-rest-beta) resource *@\u0026*",
-          "Target": "roleManagement"
+          "Description": "Added the [unifiedRoleAssignmentMultiple](/graph/api/resources/intune-unifiedRoleAssignmentMultiple?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "unifiedRoleAssignmentMultiple"
         }
       ],
-      "Id": "dc8ec872-6005-4ddd-9aea-ff1540769500",
+      "Id": "3c432afa-d4e1-4003-ad00-c2509366be5a",
       "Cloud": "Mooncake",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3092004Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0526175Z",
       "WorkloadArea": "Microsoft.Intune.Rbac",
       "SubArea": "Corporate management"
     }

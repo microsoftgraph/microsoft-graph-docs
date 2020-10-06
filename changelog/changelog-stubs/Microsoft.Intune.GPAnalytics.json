@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "3aae464f-a14e-4170-92b2-8fddfd385376",
+          "Id": "8412f4a2-18a9-4767-ba84-4d85f8839a2a",
           "ApiChange": "Property",
           "ChangedApiName": "admxSettingDefinitionId",
           "ChangeType": "Addition",
@@ -11,17 +11,17 @@
           "Target": "groupPolicySettingMapping"
         }
       ],
-      "Id": "3aae464f-a14e-4170-92b2-8fddfd385376",
+      "Id": "8412f4a2-18a9-4767-ba84-4d85f8839a2a",
       "Cloud": "Fairfax",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3090899Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0525144Z",
       "WorkloadArea": "Microsoft.Intune.GPAnalytics",
       "SubArea": "Corporate management"
     },
     {
       "ChangeList": [
         {
-          "Id": "0581b16b-fd7d-4a79-89e7-d0c3822dd6dc",
+          "Id": "ac429a57-3ab9-46c4-9aa0-fa7eedac796e",
           "ApiChange": "Property",
           "ChangedApiName": "admxSettingDefinitionId",
           "ChangeType": "Addition",
@@ -29,17 +29,17 @@
           "Target": "groupPolicySettingMapping"
         }
       ],
-      "Id": "0581b16b-fd7d-4a79-89e7-d0c3822dd6dc",
+      "Id": "ac429a57-3ab9-46c4-9aa0-fa7eedac796e",
       "Cloud": "Mooncake",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3091046Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0525304Z",
       "WorkloadArea": "Microsoft.Intune.GPAnalytics",
       "SubArea": "Corporate management"
     },
     {
       "ChangeList": [
         {
-          "Id": "709691b0-1372-48e0-93c9-6fce8d167008",
+          "Id": "e30d119a-7459-4d0e-9be3-8f8ca03ad509",
           "ApiChange": "Property",
           "ChangedApiName": "admxSettingDefinitionId",
           "ChangeType": "Addition",
@@ -47,10 +47,10 @@
           "Target": "groupPolicySettingMapping"
         }
       ],
-      "Id": "709691b0-1372-48e0-93c9-6fce8d167008",
+      "Id": "e30d119a-7459-4d0e-9be3-8f8ca03ad509",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3091178Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.052545Z",
       "WorkloadArea": "Microsoft.Intune.GPAnalytics",
       "SubArea": "Corporate management"
     }

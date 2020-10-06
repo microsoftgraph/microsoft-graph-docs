@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "appServiceName",
           "ChangeType": "Change",
@@ -11,7 +11,7 @@
           "Target": "command"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "error",
           "ChangeType": "Change",
@@ -19,7 +19,7 @@
           "Target": "command"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "id",
           "ChangeType": "Change",
@@ -27,7 +27,7 @@
           "Target": "command"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "packageFamilyName",
           "ChangeType": "Change",
@@ -35,7 +35,7 @@
           "Target": "command"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "payload",
           "ChangeType": "Change",
@@ -43,7 +43,7 @@
           "Target": "command"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "payload",
           "ChangeType": "Change",
@@ -51,7 +51,7 @@
           "Target": "command"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "kind",
           "ChangeType": "Change",
@@ -59,7 +59,7 @@
           "Target": "device"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "manufacturer",
           "ChangeType": "Change",
@@ -67,7 +67,7 @@
           "Target": "device"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "type",
           "ChangeType": "Change",
@@ -75,31 +75,7 @@
           "Target": "command"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
-          "ApiChange": "Property",
-          "ChangedApiName": "id",
-          "ChangeType": "Change",
-          "Description": "Changed the type of the **id** property in the [device](/?view=graph-rest-beta) resource",
-          "Target": "device"
-        },
-        {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
-          "ApiChange": "Property",
-          "ChangedApiName": "model",
-          "ChangeType": "Change",
-          "Description": "Changed the type of the **model** property in the [device](/?view=graph-rest-beta) resource",
-          "Target": "device"
-        },
-        {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
-          "ApiChange": "Property",
-          "ChangedApiName": "name",
-          "ChangeType": "Change",
-          "Description": "Changed the type of the **name** property in the [device](/?view=graph-rest-beta) resource",
-          "Target": "device"
-        },
-        {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "msIgnoredParameter",
           "ChangeType": "Change",
@@ -107,15 +83,7 @@
           "Target": "payloadResponse"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
-          "ApiChange": "Property",
-          "ChangedApiName": "platform",
-          "ChangeType": "Change",
-          "Description": "Changed the type of the **platform** property in the [device](/?view=graph-rest-beta) resource",
-          "Target": "device"
-        },
-        {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "id",
           "ChangeType": "Change",
@@ -123,34 +91,26 @@
           "Target": "user"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
-          "ChangedApiName": "permissionTicket",
+          "ChangedApiName": "platform",
           "ChangeType": "Change",
-          "Description": "Changed the type of the **permissionTicket** property in the [command](/?view=graph-rest-beta) resource",
-          "Target": "command"
+          "Description": "Changed the type of the **platform** property in the [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
         },
         {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
-          "ApiChange": "Property",
-          "ChangedApiName": "postBackUri",
-          "ChangeType": "Change",
-          "Description": "Changed the type of the **postBackUri** property in the [command](/?view=graph-rest-beta) resource",
-          "Target": "command"
-        },
-        {
-          "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+          "Id": "320877e4-5e7f-4139-b909-1da238f56297",
           "ApiChange": "Property",
           "ChangedApiName": "status",
           "ChangeType": "Change",
-          "Description": "Changed the type of the **status** property in the [command](/?view=graph-rest-beta) resource",
-          "Target": "command"
+          "Description": "Changed the type of the **status** property in the [device](/?view=graph-rest-beta) resource",
+          "Target": "device"
         }
       ],
-      "Id": "97a274d8-b09b-4ca4-8428-182ebebd6b66",
+      "Id": "320877e4-5e7f-4139-b909-1da238f56297",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3093063Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0527284Z",
       "WorkloadArea": "Microsoft.ProjectRome",
       "SubArea": ""
     }

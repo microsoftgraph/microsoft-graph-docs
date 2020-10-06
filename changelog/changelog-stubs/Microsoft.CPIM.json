@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
           "ApiChange": "ComplexType",
           "ChangedApiName": "apiAuthenticationConfigurationBase",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "apiAuthenticationConfigurationBase"
         },
         {
-          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
           "ApiChange": "ComplexType",
           "ChangedApiName": "authenticationSourceFilter",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "authenticationSourceFilter"
         },
         {
-          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
           "ApiChange": "ComplexType",
           "ChangedApiName": "basicAuthentication",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "basicAuthentication"
         },
         {
-          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
           "ApiChange": "ComplexType",
           "ChangedApiName": "userFlowApiConnectorConfiguration",
           "ChangeType": "Addition",
@@ -35,7 +35,23 @@
           "Target": "userFlowApiConnectorConfiguration"
         },
         {
-          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "b2cAuthenticationMethodsPolicy",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **b2cAuthenticationMethodsPolicy** relationship from [policyRoot](/?view=graph-rest-beta) resource",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "identityApiConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityApiConnector](/graph/api/resources/identityApiConnector?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "identityApiConnector"
+        },
+        {
+          "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
           "ApiChange": "EntityType",
           "ChangedApiName": "authenticationAction",
           "ChangeType": "Addition",
@@ -43,23 +59,15 @@
           "Target": "authenticationAction"
         },
         {
-          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
-          "ApiChange": "EntityType",
-          "ChangedApiName": "authenticationEventsPolicy",
-          "ChangeType": "Addition",
-          "Description": "Added the [authenticationEventsPolicy](/graph/api/resources/authenticationEventsPolicy?view=graph-rest-beta) resource *@\u0026*",
-          "Target": "authenticationEventsPolicy"
-        },
-        {
-          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
           "ApiChange": "NavigationProperty",
-          "ChangedApiName": "events",
+          "ChangedApiName": "apiConnectors",
           "ChangeType": "Addition",
-          "Description": "Added the **events** relationship to [identityContainer](/?view=graph-rest-beta) resource",
+          "Description": "Added the **apiConnectors** relationship to [identityContainer](/?view=graph-rest-beta) resource",
           "Target": "identityContainer"
         },
         {
-          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
           "ApiChange": "EntityType",
           "ChangedApiName": "invokeUserFlowAction",
           "ChangeType": "Addition",
@@ -67,18 +75,18 @@
           "Target": "invokeUserFlowAction"
         },
         {
-          "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+          "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
           "ApiChange": "NavigationProperty",
-          "ChangedApiName": "b2cAuthenticationMethodsPolicy",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **b2cAuthenticationMethodsPolicy** relationship from [policyRoot](/?view=graph-rest-beta) resource",
-          "Target": "policyRoot"
+          "ChangedApiName": "events",
+          "ChangeType": "Addition",
+          "Description": "Added the **events** relationship to [identityContainer](/?view=graph-rest-beta) resource",
+          "Target": "identityContainer"
         }
       ],
-      "Id": "8c25f585-eff4-4faf-894b-2441a4a0b85c",
+      "Id": "ac92b132-5119-4d4f-8a6a-7da202defd21",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3080132Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0510541Z",
       "WorkloadArea": "Microsoft.CPIM",
       "SubArea": "Identity and sign-in"
     }

@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "1db3e7cf-bcd1-4352-bc29-4e927996f2d0",
+          "Id": "d14f53c6-3c69-4837-bdb5-d911773d1063",
           "ApiChange": "EnumType",
           "ChangedApiName": "lifecycleEventType",
           "ChangeType": "Addition",
@@ -11,15 +11,15 @@
           "Target": "lifecycleEventType"
         },
         {
-          "Id": "1db3e7cf-bcd1-4352-bc29-4e927996f2d0",
+          "Id": "d14f53c6-3c69-4837-bdb5-d911773d1063",
           "ApiChange": "Property",
-          "ChangedApiName": "lifecycleEvent",
+          "ChangedApiName": "encryptedContent",
           "ChangeType": "Addition",
-          "Description": "Added the **lifecycleEvent** property to [changeNotification](/?view=graph-rest-1.0) resource",
+          "Description": "Added the **encryptedContent** property to [changeNotification](/?view=graph-rest-1.0) resource",
           "Target": "changeNotification"
         },
         {
-          "Id": "1db3e7cf-bcd1-4352-bc29-4e927996f2d0",
+          "Id": "d14f53c6-3c69-4837-bdb5-d911773d1063",
           "ApiChange": "Property",
           "ChangedApiName": "validationTokens",
           "ChangeType": "Addition",
@@ -27,7 +27,15 @@
           "Target": "changeNotificationCollection"
         },
         {
-          "Id": "1db3e7cf-bcd1-4352-bc29-4e927996f2d0",
+          "Id": "d14f53c6-3c69-4837-bdb5-d911773d1063",
+          "ApiChange": "Property",
+          "ChangedApiName": "lifecycleEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the **lifecycleEvent** property to [changeNotification](/?view=graph-rest-1.0) resource",
+          "Target": "changeNotification"
+        },
+        {
+          "Id": "d14f53c6-3c69-4837-bdb5-d911773d1063",
           "ApiChange": "ComplexType",
           "ChangedApiName": "changeNotificationEncryptedContent",
           "ChangeType": "Addition",
@@ -35,7 +43,7 @@
           "Target": "changeNotificationEncryptedContent"
         },
         {
-          "Id": "1db3e7cf-bcd1-4352-bc29-4e927996f2d0",
+          "Id": "d14f53c6-3c69-4837-bdb5-d911773d1063",
           "ApiChange": "Property",
           "ChangedApiName": "encryptionCertificate",
           "ChangeType": "Addition",
@@ -43,7 +51,15 @@
           "Target": "subscription"
         },
         {
-          "Id": "1db3e7cf-bcd1-4352-bc29-4e927996f2d0",
+          "Id": "d14f53c6-3c69-4837-bdb5-d911773d1063",
+          "ApiChange": "Property",
+          "ChangedApiName": "encryptionCertificateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **encryptionCertificateId** property to [subscription](/?view=graph-rest-1.0) resource",
+          "Target": "subscription"
+        },
+        {
+          "Id": "d14f53c6-3c69-4837-bdb5-d911773d1063",
           "ApiChange": "Property",
           "ChangedApiName": "lifecycleNotificationUrl",
           "ChangeType": "Addition",
@@ -51,7 +67,7 @@
           "Target": "subscription"
         },
         {
-          "Id": "1db3e7cf-bcd1-4352-bc29-4e927996f2d0",
+          "Id": "d14f53c6-3c69-4837-bdb5-d911773d1063",
           "ApiChange": "Property",
           "ChangedApiName": "includeResourceData",
           "ChangeType": "Addition",
@@ -59,10 +75,10 @@
           "Target": "subscription"
         }
       ],
-      "Id": "1db3e7cf-bcd1-4352-bc29-4e927996f2d0",
+      "Id": "d14f53c6-3c69-4837-bdb5-d911773d1063",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-10-06T14:38:26.3093523Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0527749Z",
       "WorkloadArea": "Microsoft.SubscriptionServices",
       "SubArea": ""
     }

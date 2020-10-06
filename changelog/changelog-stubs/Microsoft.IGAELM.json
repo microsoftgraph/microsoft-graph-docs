@@ -3,15 +3,15 @@
     {
       "ChangeList": [
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
-          "ChangedApiName": "accessPackageAnswer",
+          "ChangedApiName": "accessPackageLocalizedText",
           "ChangeType": "Addition",
-          "Description": "Added the [accessPackageAnswer](/graph/api/resources/accessPackageAnswer?view=graph-rest-beta) resource type",
-          "Target": "accessPackageAnswer"
+          "Description": "Added the [accessPackageLocalizedText](/graph/api/resources/accessPackageLocalizedText?view=graph-rest-beta) resource type",
+          "Target": "accessPackageLocalizedText"
         },
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
           "ChangedApiName": "accessPackageMultipleChoiceQuestion",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "accessPackageMultipleChoiceQuestion"
         },
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
           "ChangedApiName": "accessPackageQuestion",
           "ChangeType": "Addition",
@@ -27,24 +27,23 @@
           "Target": "accessPackageQuestion"
         },
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
-          "ChangedApiName": "accessPackageAnswerChoice",
+          "ChangedApiName": "accessPackageResourceAttribute",
           "ChangeType": "Addition",
-          "Description": "Added the [accessPackageAnswerChoice](/graph/api/resources/accessPackageAnswerChoice?view=graph-rest-beta) resource type",
-          "Target": "accessPackageAnswerChoice"
+          "Description": "Added the [accessPackageResourceAttribute](/graph/api/resources/accessPackageResourceAttribute?view=graph-rest-beta) resource type",
+          "Target": "accessPackageResourceAttribute"
         },
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
           "ChangedApiName": "accessPackageAnswerString",
           "ChangeType": "Addition",
           "Description": "Added the [accessPackageAnswerString](/graph/api/resources/accessPackageAnswerString?view=graph-rest-beta) resource type",
           "Target": "accessPackageAnswerString"
         },
-        null,
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
           "ChangedApiName": "accessPackageLocalizedContent",
           "ChangeType": "Addition",
@@ -52,15 +51,7 @@
           "Target": "accessPackageLocalizedContent"
         },
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "accessPackageTextInputQuestion",
-          "ChangeType": "Addition",
-          "Description": "Added the [accessPackageTextInputQuestion](/graph/api/resources/accessPackageTextInputQuestion?view=graph-rest-beta) resource type",
-          "Target": "accessPackageTextInputQuestion"
-        },
-        {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
           "ChangedApiName": "accessPackageUserDirectoryAttributeStore",
           "ChangeType": "Addition",
@@ -68,63 +59,7 @@
           "Target": "accessPackageUserDirectoryAttributeStore"
         },
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "answer",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **answer** resource type",
-          "Target": "answer"
-        },
-        {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "answerChoice",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **answerChoice** resource type",
-          "Target": "answerChoice"
-        },
-        {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "answerString",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **answerString** resource type",
-          "Target": "answerString"
-        },
-        {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
-          "ApiChange": "Property",
-          "ChangedApiName": "attributes",
-          "ChangeType": "Change",
-          "Description": "Changed the type of the **attributes** property in the [accessPackageResource](/?view=graph-rest-beta) resource",
-          "Target": "accessPackageResource"
-        },
-        {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "resourceAttribute",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **resourceAttribute** resource type",
-          "Target": "resourceAttribute"
-        },
-        {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "resourceAttributeDestination",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **resourceAttributeDestination** resource type",
-          "Target": "resourceAttributeDestination"
-        },
-        {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "resourceAttributeQuestion",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **resourceAttributeQuestion** resource type",
-          "Target": "resourceAttributeQuestion"
-        },
-        {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
           "ChangedApiName": "entitlementManagementLocalizedContent",
           "ChangeType": "Deletion",
@@ -132,15 +67,15 @@
           "Target": "entitlementManagementLocalizedContent"
         },
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
-          "ChangedApiName": "localizedText",
+          "ChangedApiName": "answer",
           "ChangeType": "Deletion",
-          "Description": "Removed the **localizedText** resource type",
-          "Target": "localizedText"
+          "Description": "Removed the **answer** resource type",
+          "Target": "answer"
         },
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
           "ChangedApiName": "multipleChoiceQuestion",
           "ChangeType": "Deletion",
@@ -148,18 +83,75 @@
           "Target": "multipleChoiceQuestion"
         },
         {
-          "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
           "ApiChange": "ComplexType",
           "ChangedApiName": "question",
           "ChangeType": "Deletion",
           "Description": "Removed the **question** resource type",
           "Target": "question"
+        },
+        {
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
+          "ApiChange": "Property",
+          "ChangedApiName": "attributes",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **attributes** property in the [accessPackageResource](/?view=graph-rest-beta) resource",
+          "Target": "accessPackageResource"
+        },
+        {
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "accessPackageResourceAttributeDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageResourceAttributeDestination](/graph/api/resources/accessPackageResourceAttributeDestination?view=graph-rest-beta) resource type",
+          "Target": "accessPackageResourceAttributeDestination"
+        },
+        {
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "userDirectoryAttributeStore",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **userDirectoryAttributeStore** resource type",
+          "Target": "userDirectoryAttributeStore"
+        },
+        {
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
+          "ApiChange": "Property",
+          "ChangedApiName": "state",
+          "ChangeType": "Addition",
+          "Description": "Added the **state** property to [connectedOrganization](/?view=graph-rest-beta) resource",
+          "Target": "connectedOrganization"
+        },
+        {
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "resourceAttributeSource",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceAttributeSource** resource type",
+          "Target": "resourceAttributeSource"
+        },
+        {
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "accessPackageResourceAttributeSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageResourceAttributeSource](/graph/api/resources/accessPackageResourceAttributeSource?view=graph-rest-beta) resource type",
+          "Target": "accessPackageResourceAttributeSource"
+        },
+        null,
+        {
+          "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "accessPackageTextInputQuestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageTextInputQuestion](/graph/api/resources/accessPackageTextInputQuestion?view=graph-rest-beta) resource type",
+          "Target": "accessPackageTextInputQuestion"
         }
       ],
-      "Id": "2b775526-b483-41e9-b078-a6d9b01caed0",
+      "Id": "89274ab2-4ce5-47dd-9975-fe98425d6ac0",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.308732Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0517872Z",
       "WorkloadArea": "Microsoft.IGAELM",
       "SubArea": "Identity governance"
     }

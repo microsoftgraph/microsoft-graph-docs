@@ -3,79 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "geoCoordinates",
-          "ChangeType": "Addition",
-          "Description": "Added the [geoCoordinates](/graph/api/resources/geoCoordinates?view=graph-rest-beta) resource type",
-          "Target": "geoCoordinates"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "itemBody",
-          "ChangeType": "Addition",
-          "Description": "Added the [itemBody](/graph/api/resources/itemBody?view=graph-rest-beta) resource type",
-          "Target": "itemBody"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "timeCardBreak",
-          "ChangeType": "Addition",
-          "Description": "Added the [timeCardBreak](/graph/api/resources/timeCardBreak?view=graph-rest-beta) resource type",
-          "Target": "timeCardBreak"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "Property",
-          "ChangedApiName": "timeClockSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the **timeClockSettings** property to [schedule](/?view=graph-rest-beta) resource",
-          "Target": "schedule"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "NavigationProperty",
-          "ChangedApiName": "timeCards",
-          "ChangeType": "Addition",
-          "Description": "Added the **timeCards** relationship to [schedule](/?view=graph-rest-beta) resource",
-          "Target": "schedule"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "timeCardEntry",
-          "ChangeType": "Addition",
-          "Description": "Added the [timeCardEntry](/graph/api/resources/timeCardEntry?view=graph-rest-beta) resource type",
-          "Target": "timeCardEntry"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "timeCardEvent",
-          "ChangeType": "Addition",
-          "Description": "Added the [timeCardEvent](/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource type",
-          "Target": "timeCardEvent"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "timeClockSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the [timeClockSettings](/graph/api/resources/timeClockSettings?view=graph-rest-beta) resource type",
-          "Target": "timeClockSettings"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "Property",
-          "ChangedApiName": "createdBy",
-          "ChangeType": "Addition",
-          "Description": "Added the **createdBy** property to [changeTrackedEntity](/?view=graph-rest-beta) resource",
-          "Target": "changeTrackedEntity"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
           "ApiChange": "EnumType",
           "ChangedApiName": "bodyType",
           "ChangeType": "Addition",
@@ -83,15 +11,7 @@
           "Target": "bodyType"
         },
         {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "Action",
-          "ChangedApiName": "clockOut",
-          "ChangeType": "Addition",
-          "Description": "Added the [clockOut](/graph/api/clockOut-clockOut?view=graph-rest-beta) method to the [clockOut](/graph/api/clockOut-clockOut?view=graph-rest-beta) resource",
-          "Target": "clockOut"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
           "ApiChange": "EnumType",
           "ChangedApiName": "confirmedBy",
           "ChangeType": "Addition",
@@ -99,7 +19,63 @@
           "Target": "confirmedBy"
         },
         {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "timeCardState",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCardState](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "timeCardState"
+        },
+        {
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "geoCoordinates",
+          "ChangeType": "Addition",
+          "Description": "Added the [geoCoordinates](/graph/api/resources/geoCoordinates?view=graph-rest-beta) resource type",
+          "Target": "geoCoordinates"
+        },
+        {
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "timeCardEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCardEntry](/graph/api/resources/timeCardEntry?view=graph-rest-beta) resource type",
+          "Target": "timeCardEntry"
+        },
+        {
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
+          "ApiChange": "Property",
+          "ChangedApiName": "timeClockSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **timeClockSettings** property to [schedule](/?view=graph-rest-beta) resource",
+          "Target": "schedule"
+        },
+        {
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "timeCardEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeCardEvent](/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource type",
+          "Target": "timeCardEvent"
+        },
+        {
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "timeCards",
+          "ChangeType": "Addition",
+          "Description": "Added the **timeCards** relationship to [schedule](/?view=graph-rest-beta) resource",
+          "Target": "schedule"
+        },
+        {
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
+          "ApiChange": "ComplexType",
+          "ChangedApiName": "timeClockSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeClockSettings](/graph/api/resources/timeClockSettings?view=graph-rest-beta) resource type",
+          "Target": "timeClockSettings"
+        },
+        {
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
           "ApiChange": "EntityType",
           "ChangedApiName": "timeCard",
           "ChangeType": "Addition",
@@ -107,15 +83,7 @@
           "Target": "timeCard"
         },
         {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
-          "ApiChange": "Action",
-          "ChangedApiName": "endBreak",
-          "ChangeType": "Addition",
-          "Description": "Added the [endBreak](/graph/api/endBreak-endBreak?view=graph-rest-beta) method to the [endBreak](/graph/api/endBreak-endBreak?view=graph-rest-beta) resource",
-          "Target": "endBreak"
-        },
-        {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
           "ApiChange": "Action",
           "ChangedApiName": "clockIn",
           "ChangeType": "Addition",
@@ -123,7 +91,23 @@
           "Target": "clockIn"
         },
         {
-          "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
+          "ApiChange": "Action",
+          "ChangedApiName": "clockOut",
+          "ChangeType": "Addition",
+          "Description": "Added the [clockOut](/graph/api/clockOut-clockOut?view=graph-rest-beta) method to the [clockOut](/graph/api/clockOut-clockOut?view=graph-rest-beta) resource",
+          "Target": "clockOut"
+        },
+        {
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
+          "ApiChange": "Action",
+          "ChangedApiName": "confirm",
+          "ChangeType": "Addition",
+          "Description": "Added the [confirm](/graph/api/confirm-confirm?view=graph-rest-beta) method to the [confirm](/graph/api/confirm-confirm?view=graph-rest-beta) resource",
+          "Target": "confirm"
+        },
+        {
+          "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
           "ApiChange": "Action",
           "ChangedApiName": "startBreak",
           "ChangeType": "Addition",
@@ -131,10 +115,10 @@
           "Target": "startBreak"
         }
       ],
-      "Id": "f9360f65-3794-49db-a7b0-c848602ecd5b",
+      "Id": "a77bf7fe-72c8-470f-a4ac-e594ea343b88",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3094249Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0528378Z",
       "WorkloadArea": "Microsoft.Teams.Shifts",
       "SubArea": "Shifts"
     }

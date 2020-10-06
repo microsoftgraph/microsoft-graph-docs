@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "Id": "3058c0e1-7157-4738-bc30-069b6246d543",
           "ApiChange": "ComplexType",
           "ChangedApiName": "authenticationMethodsPolicyEvaluation",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "authenticationMethodsPolicyEvaluation"
         },
         {
-          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "Id": "3058c0e1-7157-4738-bc30-069b6246d543",
           "ApiChange": "Property",
           "ChangedApiName": "policy",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "authentication"
         },
         {
-          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "Id": "3058c0e1-7157-4738-bc30-069b6246d543",
           "ApiChange": "Property",
           "ChangedApiName": "displayName",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "microsoftAuthenticatorAuthenticationMethod"
         },
         {
-          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "Id": "3058c0e1-7157-4738-bc30-069b6246d543",
           "ApiChange": "Property",
           "ChangedApiName": "creationDateTime",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "microsoftAuthenticatorAuthenticationMethod"
         },
         {
-          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "Id": "3058c0e1-7157-4738-bc30-069b6246d543",
           "ApiChange": "Property",
           "ChangedApiName": "deviceName",
           "ChangeType": "Deletion",
@@ -43,7 +43,7 @@
           "Target": "microsoftAuthenticatorAuthenticationMethod"
         },
         {
-          "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+          "Id": "3058c0e1-7157-4738-bc30-069b6246d543",
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "device",
           "ChangeType": "Addition",
@@ -51,10 +51,10 @@
           "Target": "microsoftAuthenticatorAuthenticationMethod"
         }
       ],
-      "Id": "228a480f-c541-4f6c-9714-fc29393fb7fc",
+      "Id": "3058c0e1-7157-4738-bc30-069b6246d543",
       "Cloud": "PPE",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3093378Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0527602Z",
       "WorkloadArea": "Microsoft.StrongAuthenticationAPI",
       "SubArea": "Identity and sign-in"
     }

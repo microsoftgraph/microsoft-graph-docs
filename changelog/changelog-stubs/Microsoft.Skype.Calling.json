@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "68b463f5-f5c9-4501-b8a5-347c4e4160bb",
+          "Id": "03fdb187-a6d7-4516-a029-951135d8e088",
           "ApiChange": "EnumType",
           "ChangedApiName": "onlineMeetingPresenters",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "onlineMeetingPresenters"
         },
         {
-          "Id": "68b463f5-f5c9-4501-b8a5-347c4e4160bb",
+          "Id": "03fdb187-a6d7-4516-a029-951135d8e088",
           "ApiChange": "EnumType",
           "ChangedApiName": "onlineMeetingRole",
           "ChangeType": "Addition",
@@ -19,26 +19,26 @@
           "Target": "onlineMeetingRole"
         },
         {
-          "Id": "68b463f5-f5c9-4501-b8a5-347c4e4160bb",
-          "ApiChange": "Property",
-          "ChangedApiName": "role",
-          "ChangeType": "Addition",
-          "Description": "Added the **role** property to [meetingParticipantInfo](/?view=graph-rest-beta) resource",
-          "Target": "meetingParticipantInfo"
-        },
-        {
-          "Id": "68b463f5-f5c9-4501-b8a5-347c4e4160bb",
+          "Id": "03fdb187-a6d7-4516-a029-951135d8e088",
           "ApiChange": "Property",
           "ChangedApiName": "allowedPresenters",
           "ChangeType": "Addition",
           "Description": "Added the **allowedPresenters** property to [onlineMeeting](/?view=graph-rest-beta) resource",
           "Target": "onlineMeeting"
+        },
+        {
+          "Id": "03fdb187-a6d7-4516-a029-951135d8e088",
+          "ApiChange": "Property",
+          "ChangedApiName": "role",
+          "ChangeType": "Addition",
+          "Description": "Added the **role** property to [meetingParticipantInfo](/?view=graph-rest-beta) resource",
+          "Target": "meetingParticipantInfo"
         }
       ],
-      "Id": "68b463f5-f5c9-4501-b8a5-347c4e4160bb",
+      "Id": "03fdb187-a6d7-4516-a029-951135d8e088",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3093218Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0527449Z",
       "WorkloadArea": "Microsoft.Skype.Calling",
       "SubArea": ""
     }

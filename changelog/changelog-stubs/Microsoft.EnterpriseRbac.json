@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "857f047e-499d-4939-8acf-120c1b1e9c41",
+          "Id": "dd186c65-b237-4fc4-8da7-b1244c445da9",
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "resourceScope",
           "ChangeType": "Change",
@@ -11,7 +11,7 @@
           "Target": "unifiedRbacResourceAction"
         },
         {
-          "Id": "857f047e-499d-4939-8acf-120c1b1e9c41",
+          "Id": "dd186c65-b237-4fc4-8da7-b1244c445da9",
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "resourceActions",
           "ChangeType": "Change",
@@ -19,17 +19,17 @@
           "Target": "unifiedRbacResourceNamespace"
         }
       ],
-      "Id": "857f047e-499d-4939-8acf-120c1b1e9c41",
+      "Id": "dd186c65-b237-4fc4-8da7-b1244c445da9",
       "Cloud": "PPE",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3084177Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0514549Z",
       "WorkloadArea": "Microsoft.EnterpriseRbac",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "ec96655a-7ba7-48d5-a121-3b71f102911d",
+          "Id": "5627ff36-e1bc-4a0d-9bd3-cfdba30dbf76",
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "resourceNamespaces",
           "ChangeType": "Addition",
@@ -37,7 +37,7 @@
           "Target": "rbacApplication"
         },
         {
-          "Id": "ec96655a-7ba7-48d5-a121-3b71f102911d",
+          "Id": "5627ff36-e1bc-4a0d-9bd3-cfdba30dbf76",
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "resourceNamespaces",
           "ChangeType": "Addition",
@@ -45,7 +45,7 @@
           "Target": "rbacApplicationMultiple"
         },
         {
-          "Id": "ec96655a-7ba7-48d5-a121-3b71f102911d",
+          "Id": "5627ff36-e1bc-4a0d-9bd3-cfdba30dbf76",
           "ApiChange": "EntityType",
           "ChangedApiName": "unifiedRbacResourceScope",
           "ChangeType": "Addition",
@@ -53,15 +53,7 @@
           "Target": "unifiedRbacResourceScope"
         },
         {
-          "Id": "ec96655a-7ba7-48d5-a121-3b71f102911d",
-          "ApiChange": "EntityType",
-          "ChangedApiName": "unifiedRbacResourceNamespace",
-          "ChangeType": "Addition",
-          "Description": "Added the [unifiedRbacResourceNamespace](/graph/api/resources/unifiedRbacResourceNamespace?view=graph-rest-beta) resource *@\u0026*",
-          "Target": "unifiedRbacResourceNamespace"
-        },
-        {
-          "Id": "ec96655a-7ba7-48d5-a121-3b71f102911d",
+          "Id": "5627ff36-e1bc-4a0d-9bd3-cfdba30dbf76",
           "ApiChange": "EntityType",
           "ChangedApiName": "unifiedRbacResourceAction",
           "ChangeType": "Addition",
@@ -69,7 +61,15 @@
           "Target": "unifiedRbacResourceAction"
         },
         {
-          "Id": "ec96655a-7ba7-48d5-a121-3b71f102911d",
+          "Id": "5627ff36-e1bc-4a0d-9bd3-cfdba30dbf76",
+          "ApiChange": "EntityType",
+          "ChangedApiName": "unifiedRbacResourceNamespace",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRbacResourceNamespace](/graph/api/resources/unifiedRbacResourceNamespace?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "unifiedRbacResourceNamespace"
+        },
+        {
+          "Id": "5627ff36-e1bc-4a0d-9bd3-cfdba30dbf76",
           "ApiChange": "Action",
           "ChangedApiName": "importResourceActions",
           "ChangeType": "Addition",
@@ -77,10 +77,10 @@
           "Target": "importResourceActions"
         }
       ],
-      "Id": "ec96655a-7ba7-48d5-a121-3b71f102911d",
+      "Id": "5627ff36-e1bc-4a0d-9bd3-cfdba30dbf76",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3084323Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0514698Z",
       "WorkloadArea": "Microsoft.EnterpriseRbac",
       "SubArea": ""
     }

@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "EnumType",
           "ChangedApiName": "bucketAggregationSortProperty",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "bucketAggregationSortProperty"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "ComplexType",
           "ChangedApiName": "aggregationOption",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "aggregationOption"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "ComplexType",
           "ChangedApiName": "bucketAggregationDefinition",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "bucketAggregationDefinition"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "ComplexType",
           "ChangedApiName": "bucketAggregationRange",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "bucketAggregationRange"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "ComplexType",
           "ChangedApiName": "searchAggregation",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "searchAggregation"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "ComplexType",
           "ChangedApiName": "searchBucket",
           "ChangeType": "Addition",
@@ -51,7 +51,7 @@
           "Target": "searchBucket"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "NavigationProperty",
           "ChangedApiName": "resource",
           "ChangeType": "Addition",
@@ -59,7 +59,7 @@
           "Target": "searchHit"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "Property",
           "ChangedApiName": "aggregations",
           "ChangeType": "Addition",
@@ -67,7 +67,7 @@
           "Target": "searchHitsContainer"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "Property",
           "ChangedApiName": "query_string",
           "ChangeType": "Change",
@@ -75,31 +75,31 @@
           "Target": "searchQuery"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "Property",
-          "ChangedApiName": "_sortField",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **_sortField** property from [searchHit](/?view=graph-rest-beta) resource",
-          "Target": "searchHit"
-        },
-        {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
-          "ApiChange": "Property",
-          "ChangedApiName": "contentSource",
+          "ChangedApiName": "rank",
           "ChangeType": "Addition",
-          "Description": "Added the **contentSource** property to [searchHit](/?view=graph-rest-beta) resource",
+          "Description": "Added the **rank** property to [searchHit](/?view=graph-rest-beta) resource",
           "Target": "searchHit"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "Property",
-          "ChangedApiName": "hitId",
+          "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the **hitId** property to [searchHit](/?view=graph-rest-beta) resource",
+          "Description": "Added the **summary** property to [searchHit](/?view=graph-rest-beta) resource",
           "Target": "searchHit"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
+          "ApiChange": "NavigationProperty",
+          "ChangedApiName": "_source",
+          "ChangeType": "Addition",
+          "Description": "Added the **_source** relationship to [searchHit](/?view=graph-rest-beta) resource",
+          "Target": "searchHit"
+        },
+        {
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "Property",
           "ChangedApiName": "queryString",
           "ChangeType": "Addition",
@@ -107,7 +107,7 @@
           "Target": "searchQuery"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "Property",
           "ChangedApiName": "aggregationFilters",
           "ChangeType": "Addition",
@@ -115,7 +115,15 @@
           "Target": "searchRequest"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
+          "ApiChange": "Property",
+          "ChangedApiName": "hitId",
+          "ChangeType": "Addition",
+          "Description": "Added the **hitId** property to [searchHit](/?view=graph-rest-beta) resource",
+          "Target": "searchHit"
+        },
+        {
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "Property",
           "ChangedApiName": "aggregations",
           "ChangeType": "Addition",
@@ -123,15 +131,7 @@
           "Target": "searchRequest"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
-          "ApiChange": "Property",
-          "ChangedApiName": "entityType",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **entityType** property from [searchRequest](/?view=graph-rest-beta) resource",
-          "Target": "searchRequest"
-        },
-        {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "Property",
           "ChangedApiName": "sortProperties",
           "ChangeType": "Addition",
@@ -139,7 +139,7 @@
           "Target": "searchRequest"
         },
         {
-          "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+          "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
           "ApiChange": "ComplexType",
           "ChangedApiName": "sortProperty",
           "ChangeType": "Addition",
@@ -147,10 +147,10 @@
           "Target": "sortProperty"
         }
       ],
-      "Id": "d1f552e5-efab-471b-915d-b5e0f9784a73",
+      "Id": "66dae87f-6c16-4c6d-a357-0196838afebc",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.309258Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0526771Z",
       "WorkloadArea": "Microsoft.MicrosoftSearch",
       "SubArea": "Analytics"
     }

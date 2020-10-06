@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "805b37c8-de10-47ac-ae9b-3f7cce9a192d",
+          "Id": "e6c7c398-b32e-4cd2-9fcb-bbc34795536b",
           "ApiChange": "Property",
           "ChangedApiName": "disableClientTelemetry",
           "ChangeType": "Addition",
@@ -11,59 +11,7 @@
           "Target": "intuneBrandingProfile"
         },
         {
-          "Id": "805b37c8-de10-47ac-ae9b-3f7cce9a192d",
-          "ApiChange": "EntityContainer",
-          "ChangedApiName": "edm_50200810",
-          "ChangeType": "Addition",
-          "Description": "Added the [edm_50200810](/?view=graph-rest-beta) resource *@\u0026*",
-          "Target": "edm_50200810"
-        }
-      ],
-      "Id": "805b37c8-de10-47ac-ae9b-3f7cce9a192d",
-      "Cloud": "Fairfax",
-      "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3092137Z",
-      "WorkloadArea": "Microsoft.Intune.Wip",
-      "SubArea": "Corporate management"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "304f3738-18ba-4fa0-b72e-756c30029ee4",
-          "ApiChange": "Property",
-          "ChangedApiName": "disableClientTelemetry",
-          "ChangeType": "Addition",
-          "Description": "Added the **disableClientTelemetry** property to [intuneBrandingProfile](/?view=graph-rest-beta) resource",
-          "Target": "intuneBrandingProfile"
-        },
-        {
-          "Id": "304f3738-18ba-4fa0-b72e-756c30029ee4",
-          "ApiChange": "EntityContainer",
-          "ChangedApiName": "edm_50200810",
-          "ChangeType": "Addition",
-          "Description": "Added the [edm_50200810](/?view=graph-rest-beta) resource *@\u0026*",
-          "Target": "edm_50200810"
-        }
-      ],
-      "Id": "304f3738-18ba-4fa0-b72e-756c30029ee4",
-      "Cloud": "Mooncake",
-      "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3092295Z",
-      "WorkloadArea": "Microsoft.Intune.Wip",
-      "SubArea": "Corporate management"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "ddeac393-b5d0-417e-aa4a-b2c726d4a649",
-          "ApiChange": "Property",
-          "ChangedApiName": "disableClientTelemetry",
-          "ChangeType": "Addition",
-          "Description": "Added the **disableClientTelemetry** property to [intuneBrandingProfile](/?view=graph-rest-beta) resource",
-          "Target": "intuneBrandingProfile"
-        },
-        {
-          "Id": "ddeac393-b5d0-417e-aa4a-b2c726d4a649",
+          "Id": "e6c7c398-b32e-4cd2-9fcb-bbc34795536b",
           "ApiChange": "EntityContainer",
           "ChangedApiName": "edm_50200702",
           "ChangeType": "Deletion",
@@ -71,7 +19,7 @@
           "Target": "edm_50200702"
         },
         {
-          "Id": "ddeac393-b5d0-417e-aa4a-b2c726d4a649",
+          "Id": "e6c7c398-b32e-4cd2-9fcb-bbc34795536b",
           "ApiChange": "EntityContainer",
           "ChangedApiName": "edm_50200810",
           "ChangeType": "Addition",
@@ -79,10 +27,78 @@
           "Target": "edm_50200810"
         }
       ],
-      "Id": "ddeac393-b5d0-417e-aa4a-b2c726d4a649",
+      "Id": "e6c7c398-b32e-4cd2-9fcb-bbc34795536b",
+      "Cloud": "Fairfax",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:48:31.0526321Z",
+      "WorkloadArea": "Microsoft.Intune.Wip",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7aa7b499-727e-489b-a7e7-3b1857ad180e",
+          "ApiChange": "Property",
+          "ChangedApiName": "disableClientTelemetry",
+          "ChangeType": "Addition",
+          "Description": "Added the **disableClientTelemetry** property to [intuneBrandingProfile](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrandingProfile"
+        },
+        {
+          "Id": "7aa7b499-727e-489b-a7e7-3b1857ad180e",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200702",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **edm_50200702** resource type *@\u0026*",
+          "Target": "edm_50200702"
+        },
+        {
+          "Id": "7aa7b499-727e-489b-a7e7-3b1857ad180e",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200810",
+          "ChangeType": "Addition",
+          "Description": "Added the [edm_50200810](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "edm_50200810"
+        }
+      ],
+      "Id": "7aa7b499-727e-489b-a7e7-3b1857ad180e",
+      "Cloud": "Mooncake",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-06T14:48:31.0526471Z",
+      "WorkloadArea": "Microsoft.Intune.Wip",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a185cc7f-3fe0-4f93-be10-c007aeece826",
+          "ApiChange": "Property",
+          "ChangedApiName": "disableClientTelemetry",
+          "ChangeType": "Addition",
+          "Description": "Added the **disableClientTelemetry** property to [intuneBrandingProfile](/?view=graph-rest-beta) resource",
+          "Target": "intuneBrandingProfile"
+        },
+        {
+          "Id": "a185cc7f-3fe0-4f93-be10-c007aeece826",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200702",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **edm_50200702** resource type *@\u0026*",
+          "Target": "edm_50200702"
+        },
+        {
+          "Id": "a185cc7f-3fe0-4f93-be10-c007aeece826",
+          "ApiChange": "EntityContainer",
+          "ChangedApiName": "edm_50200810",
+          "ChangeType": "Addition",
+          "Description": "Added the [edm_50200810](/?view=graph-rest-beta) resource *@\u0026*",
+          "Target": "edm_50200810"
+        }
+      ],
+      "Id": "a185cc7f-3fe0-4f93-be10-c007aeece826",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-06T14:38:26.3092424Z",
+      "CreatedDateTime": "2020-10-06T14:48:31.0526612Z",
       "WorkloadArea": "Microsoft.Intune.Wip",
       "SubArea": "Corporate management"
     }
