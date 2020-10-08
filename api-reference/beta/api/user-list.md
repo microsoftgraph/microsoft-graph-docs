@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/users
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -105,7 +105,7 @@ Content-type: application/json
       "mail":"'contoso1@gmail.com",
       "mailNickname":"contoso1_gmail.com#EXT#",
       "otherMails":["contoso1@gmail.com"],
-      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "proxyAddresses":["SMTP:contoso1@gmail.com"],
       "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
@@ -147,7 +147,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -200,7 +200,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -269,7 +269,7 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric'
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -329,7 +329,7 @@ GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateT
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -409,10 +409,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
 893
-
+```
 
 ### Example 7: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects
 
@@ -555,7 +554,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -583,7 +582,7 @@ Content-type: application/json
       "displayName":"contoso1",
       "mail":"'contoso1@gmail.com",
       "mailNickname":"contoso1_gmail.com#EXT#",
-      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "proxyAddresses":["SMTP:contoso1@gmail.com"],
       "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
