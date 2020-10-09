@@ -49,7 +49,7 @@ The following is an example of the request.
   "name": "delete_member_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/{group-id}/members/{directory-object-id}/$ref
+DELETE https://graph.microsoft.com/v1.0/groups/{group-id}/members/{directory-object-id}/$ref
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-member-from-group-csharp-snippets.md)]
