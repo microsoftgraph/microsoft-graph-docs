@@ -2150,6 +2150,25 @@ With these permissions, all authentication methods can be read and managed on a 
 * Second factor of multi-factor authentication/MFA (phone numbers)
 * Self-Service Password Reset/SSPR (email address)
 
+## Authentication methods policy permissions ([preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|Permission                              |Display String                        |Description        |Admin Consent Required | Microsoft Account supported |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
+|_Policy.ReadWrite.AuthenticationMethod_ (preview)        |Read and write all authentication methods policies.       |Allows the app to read and write all authentication methods policies on an Azure AD tenant. Additionally, the signed-in user must have the Global Administrator role assigned. |Yes|No|
+
+#### Application permissions
+
+|Permission                              |Display String                        |Description        |Admin Consent Required |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
+|_Policy.ReadWrite.AuthenticationMethod_ (private preview)   |Read and write all authentication methods policies.    |Allows the app to read and write all authentication methods policies on an Azure AD tenant. |Yes|
+
+
+### Remarks
+
+Authentication methods policy permissions are used to manage settings in the authentication methods policy, including enabling and disabling authentication methods, allowing users and groups to use those methods, and configuring other settings related to the authentication methods that users may register and use in a tenant.
+
 ## Permission scenarios
 
 This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](auth/auth-concepts.md#microsoft-graph-permissions).

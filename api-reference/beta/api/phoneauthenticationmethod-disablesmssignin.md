@@ -39,7 +39,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ```http
 POST /me/authentication/phoneMethods/{id}/disableSmsSignIn
-POST /users/{id}/authentication/phoneMethods/{id}/disableSmsSignIn
+POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/disableSmsSignIn
 ```
 
 ## Request headers

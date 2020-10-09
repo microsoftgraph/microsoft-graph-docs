@@ -38,7 +38,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ```http
 GET /me/authentication/phoneMethods/{id}
-GET /users/{id}/authentication/phoneMethods/{id}
+GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
 
 ## Optional query parameters

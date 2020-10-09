@@ -41,7 +41,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ```http
 PUT /me/authentication/phoneMethods/{id}
-PUT /users/{id}/authentication/phoneMethods/{id}
+PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
 
 ## Request headers

@@ -17,6 +17,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [fido2AuthenticationMethodConfiguration](/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' FIDO2 Security Keys authentication method policy. |
+| Addition | beta | Added the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' Microsoft Authenticator Passwordless Phone Sign-in authentication method policy. |
+| Addition | beta | Added the [fido2authenticationmethod](/graph/api/resources/fido2authenticationmethod?view=graph-rest-beta) entity for managing users' FIDO2 security keys authentication method. |
+| Addition | beta | Added the [passwordlessmicrosoftauthenticatorauthenticationmethod](/graph/api/resources/passwordlessmicrosoftauthenticatorauthenticationmethod?view=graph-rest-beta) entity for managing users' Microsoft Authenticator Passwordless Phone Sign-in authentication method. |
+| Addition | beta | Added the [emailauthenticationmethod](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) entity for managing users' email authentication method. |
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added the **allowInvitesFrom** property to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource.|
 |Addition|beta|Added the [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) and [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
 |Addition|beta|Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [Permissions reference](permissions-reference.md#policy-permissions).|
@@ -156,6 +164,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta| Added the **createdDateTime** property to the [channel](/graph/api/resources/channel?view=graph-rest-beta) and [team](/graph/api/resources/team?view=graph-rest-beta) resources.|
 |Addition|beta and v1.0| Added the [Update chatMessage](/graph/api/chatmessage-update) method to the [chatMessage](/graph/api/resources/chatmessage) resource.|
 |Addition|v1.0| Added the [List members](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Add members](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true), and [Remove members](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true) methods.|
+
+### Identity and access | Identity and sign-in
 
 ### Users
 

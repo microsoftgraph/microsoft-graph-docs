@@ -43,7 +43,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ```http
 DELETE /me/authentication/phoneMethods/{id}
-DELETE /users/{id}/authentication/phoneMethods/{id}
+DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
 
 ## Request headers

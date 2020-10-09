@@ -44,7 +44,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/authentication/operations/{id}
+GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
 ## Optional query parameters
@@ -78,7 +78,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET /users/{id}/authentication/operations/{id}
+GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-operation-csharp-snippets.md)]

@@ -3,6 +3,66 @@
     {
       "ChangeList": [
         {
+          "Id": "9fa14fd0-66d5-4d6d-b819-e785a4fd90cd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2AuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [fido2AuthenticationMethodConfiguration](https://docs.microsoft.com/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' FIDO2 Security Keys authentication method policy.",
+          "Target": ""
+        },
+        {
+          "Id": "9fa14fd0-66d5-4d6d-b819-e785a4fd90cd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' Microsoft Authenticator Passwordless Phone Sign-in authentication method policy.",
+          "Target": ""
+        }
+      ],
+      "Id": "9fa14fd0-66d5-4d6d-b819-e785a4fd90cd",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-08T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3d465a4e-7c56-448f-a3bf-0613baa03bb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2authenticationmethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [fido2authenticationmethod](https://docs.microsoft.com/graph/api/resources/fido2authenticationmethod?view=graph-rest-beta) entity for managing users' FIDO2 security keys authentication method.",
+          "Target": ""
+        },
+        {
+          "Id": "3d465a4e-7c56-448f-a3bf-0613baa03bb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordlessmicrosoftauthenticatorauthenticationmethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordlessmicrosoftauthenticatorauthenticationmethod](https://docs.microsoft.com/graph/api/resources/passwordlessmicrosoftauthenticatorauthenticationmethod?view=graph-rest-beta) entity for managing users' Microsoft Authenticator Passwordless Phone Sign-in authentication method.",
+          "Target": ""
+        },
+        {
+          "Id": "3d465a4e-7c56-448f-a3bf-0613baa03bb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailauthenticationmethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailauthenticationmethod](https://docs.microsoft.com/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) entity for managing users' email authentication method.",
+          "Target": ""
+        }
+      ],
+      "Id": "3d465a4e-7c56-448f-a3bf-0613baa03bb2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-08T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c61f3da2-e7fe-43ee-aa34-f76945c4bfa0",
           "ApiChange": "Resource",
           "ChangedApiName": "b2cAuthenticationMethodsPolicy",
