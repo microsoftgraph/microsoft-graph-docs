@@ -171,6 +171,12 @@ The following resources are provided by the Outlook service.
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
 
+The following request rate limits apply to [callRecords](/graph/api/resources/callRecords-callrecord) for an organization:
+
+- 10,000 requests per 20 second period
+- 1000 requests per 20 second period for each application
+- 100 requests per 20 second period for each callRecord for each application
+
 ### OneNote service limits
 
 | Limit type | Limit per app per user (delegated context) | Limit per app (app-only context) |
