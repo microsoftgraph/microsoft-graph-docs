@@ -16,15 +16,33 @@ Namespace: microsoft.graph
 Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) that are in status of `PendingAdminDecision`.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
 
 >**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource that the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) belongs to. 
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+### Azure resources
+
+| Permission type | Permissions |
+|:--------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
+
+### Azure AD
+
+| Permission type | Permissions |
+|:--------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
+
+### Groups
+
+|Permission type | Permissions |
+|:-------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

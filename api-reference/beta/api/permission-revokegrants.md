@@ -66,6 +66,8 @@ If successful, this action returns a `200 OK` response code and a [permission](.
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "permission-revokegrants"
@@ -85,6 +87,12 @@ Content-length: 95
   ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/permission-revokegrants-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

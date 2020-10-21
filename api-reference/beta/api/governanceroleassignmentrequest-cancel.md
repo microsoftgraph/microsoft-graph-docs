@@ -16,13 +16,31 @@ Namespace: microsoft.graph
 Cancel a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+### Azure resources
+
+| Permission type | Permissions |
+|:-------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
+
+### Azure AD
+
+| Permission type | Permissions |
+|:--------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
+
+### Groups
+
+|Permission type | Permissions |
+|:-------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Not supported. |
 
 ## Optional query parameters
 This method does **not** support [OData Query Parameters](/graph/query-parameters).

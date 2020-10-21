@@ -1,5 +1,41 @@
 {
   "changelog": [
+        {
+          "ChangeList": [
+        {
+          "Id": "3516a214-222c-4462-9a86-8ca089325e99",
+          "ApiChange": "Property",
+          "ChangedApiName": "definition",
+          "ChangeType": "Addition",
+          "Description": "Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](https://docs.microsoft.com/en-us/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta) policy definition property.",
+          "Target": "homerealmdiscovery"
+        }
+      ],
+      "Id": "3516a214-222c-4462-9a86-8ca089325e99",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-02T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
+        {
+          "ChangeList": [
+        {
+          "Id": "7b357f0c-34ad-4c27-a43f-296b63334ff5",
+          "ApiChange": "Property",
+          "ChangedApiName": "definition",
+          "ChangeType": "Addition",
+          "Description": "Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](https://docs.microsoft.com/en-us/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0) policy definition property.",
+          "Target": "homerealmdiscovery"
+        }
+      ],
+      "Id": "7b357f0c-34ad-4c27-a43f-296b63334ff5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-02T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

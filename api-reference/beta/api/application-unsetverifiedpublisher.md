@@ -51,6 +51,8 @@ If successful, this method returns a `204 No Content` response code.
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_unsetverifiedpublisher"
@@ -59,6 +61,16 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-unsetverifiedpublisher-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/application-unsetverifiedpublisher-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

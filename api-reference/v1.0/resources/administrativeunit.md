@@ -43,7 +43,7 @@ This topic provides descriptions of the declared properties and navigation prope
 |description|string|An optional description for the administrative unit.|
 |displayName|string|Display name for the administrative unit.|
 |id|string|Unique identifier for the administrative unit. Read-only.|
-|visibility|string|Controls whether the adminstrative unit and its members are hidden or public. Can be set to HiddenMembership or Public. If not set, default behavior is Public. When set to HiddenMembership, only members of the administrative unit can list other members of the adminstrative unit.|
+|visibility|string|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, default behavior is Public. When set to HiddenMembership, only members of the administrative unit can list other members of the adminstrative unit.|
 
 ## Relationships
 | Relationship | Type	|Description|

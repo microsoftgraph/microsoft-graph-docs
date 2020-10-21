@@ -138,6 +138,7 @@ Content-Type: application/json
           "displayName": "Heidi Steen"
         }
       },
+      "role": "presenter",
       "upn": "upn-value"
     }
   },
@@ -213,6 +214,7 @@ Content-Type: application/json
           "displayName": "Heidi Steen"
         }
       },
+      "role": "presenter",
       "upn": "upn-value"
     }
   },

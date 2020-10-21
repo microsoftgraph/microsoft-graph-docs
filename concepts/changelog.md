@@ -17,8 +17,19 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0) policy definition.|
+| Addition | beta | Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta) policy definition.|
+| Addition | beta | Added the [fido2AuthenticationMethodConfiguration](/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' FIDO2 Security Keys authentication method policy. |
+| Addition | beta | Added the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' Microsoft Authenticator Passwordless Phone Sign-in authentication method policy. |
+| Addition | beta | Added the [emailauthenticationmethod](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) entity for managing users' email authentication method. |
 | Addition | beta and v1.0 | Added [verified publisher](/graph/api/resources/verifiedPublisher) properties to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources. |
 | Addition | beta and v1.0 | Added [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) and [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) methods to the [application](/graph/api/resources/application) resource. |
+
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **role** property to the [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta) entity.|
 
 ### Files
 
@@ -36,6 +47,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **allowInvitesFrom** property to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource.|
 |Addition|beta|Added the [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) resource type and the following opertations: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) and [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
 |Addition|beta|Added the **Policy.ReadWrite.AuthenticationMethod** permission to the [Permissions reference](permissions-reference.md#policy-permissions).|
+
+### Users
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | beta and v1.0 | Added the **employeeType**, **employeeOrgData**, and **employeeHireDate** properties to the [user](/graph/api/resources/user) entity. |
 
 ## September 2020
 

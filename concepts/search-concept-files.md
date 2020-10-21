@@ -83,7 +83,8 @@ Content-type: application/json
                   }
                 },
                 "parentReference": {
-                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
+                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
                 }
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
@@ -297,7 +298,8 @@ Content-type: application/json
                   }
                 },
                 "parentReference": {
-                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
+                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b”
                 }
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",

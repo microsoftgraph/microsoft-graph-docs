@@ -57,7 +57,7 @@ The following is a JSON representation of the resource.
     "orientation": "String",
     "duplexConfiguration": "String",
     "copies": 123456,
-    "colorConfiguration": "String",
+    "colorConfiguration": "String"
   }
 }
 

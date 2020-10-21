@@ -118,6 +118,7 @@ Content-Type: application/json
    "participants":{
       "organizer":{
          "upn":"upn",
+         "role": "presenter",
          "identity":{
             "azureApplicationInstance":null,
             "applicationInstance":null,

@@ -10,13 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-const invitation = {
-  invitedUserEmailAddress: "yyy@test.com",
-  inviteRedirectUrl: "https://myapp.contoso.com"
-};
-
-let res = await client.api('/invitations')
+let res = await client.api('/applications/{id}/unsetVerifiedPublisher')
 	.version('beta')
-	.post(invitation);
+	.post();
 
 ```

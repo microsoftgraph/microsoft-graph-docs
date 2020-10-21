@@ -44,6 +44,10 @@ items:
             href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Azure Functions
             href: /graph/tutorials/azure-functions
+          - name: Blazor WebAssembly
+            href: /graph/tutorials/blazor
+          - name: Bot Framework
+            href: /graph/tutorials/bot-framework
           - name: iOS Objective-C
             href: /graph/tutorials/ios-objectivec
           - name: iOS Swift

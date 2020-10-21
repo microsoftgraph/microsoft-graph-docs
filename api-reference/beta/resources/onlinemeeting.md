@@ -45,7 +45,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | externalId            | String                                        | The external ID. A custom ID. Optional.                                                                                                                                                                                                                     |
 | isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                                                                                                                                                      |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                                                                                                                                                                                                  |
-| allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are listed below.                                                                                                                                                                            |
+| allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                                                                                            |
 
 > [!IMPORTANT]
 > The **autoAdmittedUsers** property is obsolete. Use **lobbyBypassSettings.scope** instead for meeting option configurations.
@@ -59,6 +59,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Unknow future value.                                          |
+
+**Note**: If the value of **allowedPresenters** is set to `roleIsPresenter`, please specify each meeting participant's meeting role using **role** property in [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
 
 ## JSON representation
 
@@ -84,7 +86,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "everyone | organization | roleIsPresenter | organizer | unknownFutureValue"
+  "allowedPresenters": "String"
 }
 ```
 

@@ -106,6 +106,7 @@ Content-Type: application/json
                         "id": "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
                     }
                 },
+                "role": "presenter",
                 "upn": "test1@contoso.com"
             }
         ]
