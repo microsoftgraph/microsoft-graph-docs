@@ -1,6 +1,6 @@
 ﻿---
-title: printJobConfiguration resource type
-description: A group of settings that a printer should use to print a job.
+title: printerDocumentConfiguration resource type
+description: A group of settings that a printer should use to print a document.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
@@ -22,7 +22,7 @@ A group of settings that a printer should use to print a job.
 | pageRanges      | [integerRange](integerrange.md) collection | The page ranges to print. Read-only.                                                                                                                            |
 | quality         | printQuality                               | The print quality to use when printing the job. Valid values are described in the table below. Read-only.                                                       |
 | dpi             | Int32                                      | The resolution to use when printing the job, expressed in dots per inch (DPI). Read-only.                                                                       |
-| feedOrientation | printerFeedOrientation                     | The orientation to use when feeding media into the printer. Valid values are described in the following table. Read-only.                                       |
+| feedDirection   | printerFeedDirection                       | The direction to use when feeding media into the printer. Valid values are described in the following table. Read-only.                                         |
 | orientation     | printOrientation                           | The orientation setting the printer should use when printing the job. Valid values are described in the following table.                                        |
 | duplexMode      | printDuplexMode                            | The duplex mode the printer should use when printing the job. Valid values are described in the table below. Read-only.                                         |
 | copies          | Int32                                      | The number of copies that should be printed. Read-only.                                                                                                         |

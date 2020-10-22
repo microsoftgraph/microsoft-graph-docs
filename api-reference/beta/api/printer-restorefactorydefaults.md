@@ -1,5 +1,5 @@
 ﻿---
-title: "printer: restoreFactoryDefaults"
+title: "printer: resetDefaults"
 description: Reset a printer's default settings.
 author: braedenp-msft
 localization_priority: Normal
@@ -53,9 +53,11 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following example shows how to call this API.
 
-### Request
+##### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -66,7 +68,24 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/print/printers/{id}/restoreFactoryDefaults
 ```
 
-### Response
+# [C#](#tab/csharp)
+
+[!INCLUDE [sample-code](../includes/snippets/csharp/printer-resetdefaults-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [sample-code](../includes/snippets/javascript/printer-resetdefaults-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+
+[!INCLUDE [sample-code](../includes/snippets/objc/printer-resetdefaults-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
 
 The following is an example of the response. 
 

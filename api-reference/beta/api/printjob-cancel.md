@@ -1,5 +1,5 @@
 ﻿---
-title: "printJob: cancel"
+title: "printJob: cancelPrintJob"
 description: Cancel a print job.
 author: braedenp-msft
 localization_priority: Normal
@@ -53,9 +53,11 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following example shows how to call this API.
 
-### Request
+##### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -66,7 +68,24 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 ```
 
-### Response
+# [C#](#tab/csharp)
+
+[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-cancelprintjob-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-cancelprintjob-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+
+[!INCLUDE [sample-code](../includes/snippets/objc/printjob-cancelprintjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
 
 The following is an example of the response. 
 
