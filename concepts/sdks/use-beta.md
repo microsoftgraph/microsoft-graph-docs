@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Graph SDKs with the beta API"
 description: "Describes how use the Microsoft Graph SDKs with the beta version of the API."
 localization_priority: Normal
@@ -28,7 +28,7 @@ The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgrap
 
 - You can set the version on the `MicrosoftGraph.Client` when you create it. All requests made by the client will go to the specified version.
 
-    ```typescript
+```typescript
     const clientOptions: ClientOptions = {
       defaultVersion: 'beta',
       ...
@@ -36,16 +36,16 @@ The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgrap
 
     // Initialize Graph client
     const client = MicrosoftGraph.Client.initWithMiddleware(clientOptions);
-    ```
+```
 
 - You can set the version on a specific request by using the `version` function on the `GraphRequest` object.
 
-    ```typescript
+```typescript
     const user = await client
       .api('/me')
       .version('beta')
       .get();
-    ```
+```
 
 # [Java](#tab/Java)
 

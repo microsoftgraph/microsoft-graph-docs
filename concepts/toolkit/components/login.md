@@ -1,4 +1,4 @@
----
+﻿---
 title: "Login component in the Microsoft Graph Toolkit"
 description: "A Login component is a button and flyout control to facilitate Microsoft identity platform authentication."
 localization_priority: Normal
@@ -23,8 +23,8 @@ The following example shows the `mgt-login` component with a signed-in user.
 
 The component works with a provider and Microsoft Graph out of the box. However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed in user's details. 
 
-| Attribute | Property | Description |
-| --- | --- | -- |
+| Attribute    | Property    | Description                                                |
+| ------------ | ----------- | ---------------------------------------------------------- |
 | user-details | userDetails | Set the user object that will be displayed on the control. |
 
 The following example sets the person details.
@@ -69,24 +69,24 @@ To learn more, see [styling components](../style.md).
 
 The following events are fired from the control.
 
-| Event | Description |
-| --- | --- |
-| `loginInitiated` | The user clicked the sign in button to start the login process - cancelable.|
-| `loginCompleted` | the login process was successful and the user is now signed in. |
-| `loginFailed` | The user canceled the login process or was unable to sign in.|
-| `logoutInitiated` | The user started to logout - cancelable. |
-| `logoutCompleted` | The user signed out. |
+| Event             | Description                                                                  |
+| ----------------- | ---------------------------------------------------------------------------- |
+| `loginInitiated`  | The user clicked the sign in button to start the login process - cancelable. |
+| `loginCompleted`  | the login process was successful and the user is now signed in.              |
+| `loginFailed`     | The user canceled the login process or was unable to sign in.                |
+| `logoutInitiated` | The user started to logout - cancelable.                                     |
+| `logoutCompleted` | The user signed out.                                                         |
 
 ## Templates
 
 The `mgt-login` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the values listed in the following table. 
 
-| Data type | Data context | Description |
-| --- | --- | --- |
-| signed-in-button-content | personDetails: person object, `personImage`: person image string | The template used to render the content in the button when the user is signed in. |
-| signed-out-button-content | null | The template used to render the content in the button when the user is not signed in. |
-| flyout-commands | handleSignOut: sign out function | The template used to render the commands in the flyout |
-| flyout-person-details | personDetails: person object, personImage: person image string | The template used to render the person details in the flyout. |
+| Data type                 | Data context                                                     | Description                                                                           |
+| ------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| signed-in-button-content  | personDetails: person object, `personImage`: person image string | The template used to render the content in the button when the user is signed in.     |
+| signed-out-button-content | null                                                             | The template used to render the content in the button when the user is not signed in. |
+| flyout-commands           | handleSignOut: sign out function                                 | The template used to render the commands in the flyout                                |
+| flyout-person-details     | personDetails: person object, personImage: person image string   | The template used to render the person details in the flyout.                         |
 
 ## Microsoft Graph permissions
 
@@ -100,16 +100,16 @@ The login control uses the global authentication provider described in the [auth
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
 
-| Method | Description |
-| - | - |
-| renderButton | Renders the button chrome. |
-| renderButtonContent | Renders the button content. |
-| renderSignedInButtonContent | Render the button content when the user is signed in. |
+| Method                       | Description                                               |
+| ---------------------------- | --------------------------------------------------------- |
+| renderButton                 | Renders the button chrome.                                |
+| renderButtonContent          | Renders the button content.                               |
+| renderSignedInButtonContent  | Render the button content when the user is signed in.     |
 | renderSignedOutButtonContent | Render the button content when the user is not signed in. |
-| renderFlyout | Renders the flyout chrome. |
-| renderFlyoutContent | Renders the flyout content. |
-| renderFlyoutPersonDetails | Render the flyout person details. |
-| renderFlyoutCommands | Render the flyout commands. |
+| renderFlyout                 | Renders the flyout chrome.                                |
+| renderFlyoutContent          | Renders the flyout content.                               |
+| renderFlyoutPersonDetails    | Render the flyout person details.                         |
+| renderFlyoutCommands         | Render the flyout commands.                               |
 
 ### Bring your own flyout
 
@@ -117,8 +117,8 @@ It is possible to use your own flyout component in place of the built-in one, by
 
 In this case, ensure the login component continues to work as expected by overriding the `protected` flyout display methods to update the visibility of your alternative flyout.
 
-| Method | Description |
-| - | - |
-| hideFlyout | Dismisses the flyout. |
-| showFlyout | Displays the flyout. |
+| Method       | Description                      |
+| ------------ | -------------------------------- |
+| hideFlyout   | Dismisses the flyout.            |
+| showFlyout   | Displays the flyout.             |
 | toggleFlyout | Toggles the state of the flyout. |

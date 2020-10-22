@@ -35,6 +35,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 In particular, you can use the $expand query parameter to include all of the post attachments

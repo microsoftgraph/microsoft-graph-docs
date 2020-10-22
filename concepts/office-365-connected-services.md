@@ -1,4 +1,4 @@
----
+﻿---
 title: "Call Microsoft 365 services in Visual Studio 2017 with the Microsoft Graph API"
 description: "You can use the Connected Services in Visual Studio to configure your app to call the Microsoft Graph API. This article describes how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo."
 localization_priority: Priority
@@ -42,22 +42,22 @@ The starter sample is configured to send a simple email. You can use Microsoft G
 
 2. Find and **Uncomment** calls to the SDK in the following methods. This shows how to call Microsoft Graph to get a profile photo, upload a file to OneDrive, and get a sharing link.
 
-    ```csharp
+```csharp
         GetCurrentUserPhotoStream(GraphServiceClient graphClient)
-    ```
-    
-    ```csharp
-        UploadFileToOneDrive(GraphServiceClient graphClient, byte[] file)
-    ```
+```
 
-    ```csharp
+```csharp
+        UploadFileToOneDrive(GraphServiceClient graphClient, byte[] file)
+```
+
+```csharp
         GetSharingLink(GraphServiceClient graphClient, string Id)
-    ```
- 
+```
+
 > **Tip:** Each comment starts with '//Uncomment:'
- 
 
 ## Run the sample
+
 Build and run the sample. Next, choose the **Sign-in** link on the top right, and then choose **Get email address** followed by **Send email**.
 
 This will send an email that includes a link to your profile photo.
@@ -66,7 +66,6 @@ This will send an email that includes a link to your profile photo.
 
 >- If you stop and rerun the sample from Visual Studio, you might need to explicitly sign out for the sample to work.
 >- If you get an exception that indicates that the User is not authenticated, you might need to repeat the [Add the Connected Service](#add-the-connected-service) step.
-    
 
 ## Explore the code
 
@@ -85,7 +84,6 @@ The starter sample includes the following files:
 - Controllers\\[HomeController.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Controllers/HomeController.cs) - Contains methods that use the **GraphServiceClient** to build and send calls to the Microsoft Graph service and to process the response.
 
 - Views\\Home\\[Graph.cshtml](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Views/Home/Graph.cshtml) - Contains the UI for the sample. 
-
 
 ## Need help?
 

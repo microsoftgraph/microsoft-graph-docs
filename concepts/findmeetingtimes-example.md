@@ -1,4 +1,4 @@
----
+﻿---
 title: "Find possible meeting times on the Outlook calendar"
 description: "In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use "
 localization_priority: Priority
@@ -17,6 +17,7 @@ during the work hours of the organizer and attendees, and suggestions where requ
 In Microsoft 365, work hours and time zones are configurable per mailbox. The **findMeetingTimes** action handles time zone variations among the organizer 
 and attendees. By default, **findMeetingTimes** returns suggestions in UTC. You can use the following request header to have **findMeetingTimes** return suggestions 
 expressed in a specific time zone.
+
 ```
 Prefer: outlook.timezone="{time-zone-string}}"
 ```
@@ -67,6 +68,7 @@ Look for a 2-hour free time slot for both users over April 18-20.
   "blockType": "ignored",
   "name": "findmeetingtimes_example_first"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/findMeetingTimes
 Prefer: outlook.timezone="Pacific Standard Time"
@@ -114,13 +116,16 @@ Content-type: application/json
 ```
 
 ### First response
+
 There is no 2-hour time slot during the work hours of April 18-20 when both users are available.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -137,11 +142,14 @@ Content-Length: 184
 ```
 
 ### Second request
+
 Look for a 2-hour time slot on April 21.
+
 <!-- {
   "blockType": "ignored",
   "name": "findmeetingtimes_example_second"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/findMeetingTimes
 Prefer: outlook.timezone="Pacific Standard Time"
@@ -189,13 +197,16 @@ Content-type: application/json
 ```
 
 ### Second response
+
 The second **findMeetingTimes** request suggests April 21, 2-4pm for both users to meet.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -240,8 +251,6 @@ Content-Length: 714
     ]
 }
 ```
-
-
 
 ## Next steps
 

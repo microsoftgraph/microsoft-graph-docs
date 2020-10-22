@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create, update, and delete connections in the Microsoft Graph"
 description: "Learn how to use Microsoft Graph to create and manage connections"
 localization_priority: Priority
@@ -18,6 +18,7 @@ The Microsoft Graph connectors platform offers a simple way to add your external
 Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections you created or were explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
 
 <!-- markdownlint-disable MD036 -->
+
 ![Sample custom helpdesk system Tickets Connector Structure](./images/search-index-manage-connections-connector-structure.png)
 
 *Sample custom helpdesk system Tickets Connector Structure*
@@ -35,7 +36,7 @@ You can model a connection anyway you want, but creating one connection for ever
 Your connection can exist in one of the following states.
 
 | State             | Description                                                                                                                                               |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Draft**         | An empty connection is provisioned. The data source, schema, or any settings have not been configured yet.                                                |
 | **Ready**         | The connection is provisioned with registered schema and is ready for ingestion.                                                                          |
 | **Obsolete**      | This occurs when a dependent feature, such as an API, has been deprecated. Deleting the connection is the only valid operation.                           |
@@ -44,7 +45,7 @@ Your connection can exist in one of the following states.
 The following table specifies which operations are available in each state.
 
 | Operation         | Draft              | Ready              | Obsolete           | LimitExceeded      |
-|-------------------|--------------------|--------------------|--------------------|--------------------|
+| ----------------- | ------------------ | ------------------ | ------------------ | ------------------ |
 | Create connection | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 | Read connection   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Update connection | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: |

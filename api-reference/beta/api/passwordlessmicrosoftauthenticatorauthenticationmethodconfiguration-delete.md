@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Delete a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object."
 author: "mmcla"
@@ -8,6 +8,7 @@ doc_type: "apiPageType"
 ---
 
 # Delete passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -18,13 +19,14 @@ Remove changes made to the [Microsoft Authenticator Phone Sign-in authentication
 > Substantial schema changes are planned for APIs that manage the Microsoft Authenticator app while the APIs are in Mirosoft Graph beta. Because the calling patterns will change, we recommend that you do not take a production dependency on these APIs.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.AuthenticationMethod       |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 For delegated scenarios, the administrator needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
@@ -39,16 +41,19 @@ For delegated scenarios, the administrator needs one of the following [roles](/a
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -58,15 +63,16 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "delete_passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration"
 }
 -->
-``` http
+
+```http
 DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/passwordlessMicrosoftAuthenticator
 ```
-
 
 ### Response
 
@@ -75,7 +81,7 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
   "truncated": true
 }
 -->
-``` http
+
+```http
 HTTP/1.1 204 No Content
 ```
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Search API to sort search results"
 description: "You sort search results using the Microsoft Search API."
 author: "nmoreau"

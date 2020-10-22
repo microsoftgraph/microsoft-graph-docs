@@ -19,11 +19,13 @@ Delete the [channel](../resources/channel.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Group.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Group.ReadWrite.All                         |
+| Permission type                        | Permissions (from least to most privileged)                                             |
+| :------------------------------------- | :-------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | Channel.Delete.All, Group.ReadWrite.All, Directory.ReadWrite.All                        |
+| Delegated (personal Microsoft account) | Not supported.                                                                          |
+| Application                            | Channel.Delete.All, Channel.Delete.Group*, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -50,11 +52,13 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
+
 <!-- markdownlint-disable MD001 -->
 
 ### Request
 
 The following is an example of the request.
+
 <!-- markdownlint-disable MD025 -->
 
 # [HTTP](#tab/http)
@@ -89,11 +93,12 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 <!-- markdownlint-disable MD024 -->
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -107,7 +112,8 @@ HTTP/1.1 204 No Content
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete channel",
   "keywords": "",
@@ -115,4 +121,5 @@ HTTP/1.1 204 No Content
   "tocPath": "",
   "suppressions": [
   ]
-}-->
+}
+-->

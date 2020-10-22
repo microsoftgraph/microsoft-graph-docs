@@ -33,6 +33,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers

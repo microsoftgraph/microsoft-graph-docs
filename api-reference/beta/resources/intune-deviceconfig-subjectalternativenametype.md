@@ -19,10 +19,11 @@ Subject Alternative Name Options.
 
 ## Members
 
-| Member                 | Value | Description                  |
-| :--------------------- | :---- | :--------------------------- |
-| none                   | 0     | No subject alternative name. |
-| emailAddress           | 1     | Email address.               |
-| userPrincipalName      | 2     | User Principal Name (UPN).   |
-| customAzureADAttribute | 4     | Custom Azure AD Attribute.   |
-| domainNameService      | 8     | Domain Name Service (DNS).   |
+| Member                      | Value | Description                          |
+| :-------------------------- | :---- | :----------------------------------- |
+| none                        | 0     | No subject alternative name.         |
+| emailAddress                | 1     | Email address.                       |
+| userPrincipalName           | 2     | User Principal Name (UPN).           |
+| customAzureADAttribute      | 4     | Custom Azure AD Attribute.           |
+| domainNameService           | 8     | Domain Name Service (DNS).           |
+| universalResourceIdentifier | 16    | Universal Resource Identifier (URI). |

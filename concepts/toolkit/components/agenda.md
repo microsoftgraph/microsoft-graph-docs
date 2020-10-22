@@ -1,4 +1,4 @@
----
+﻿---
 title: "Agenda component in the Microsoft Graph Toolkit"
 description: "The mgt-agenda web component is used to represent events in a user or group calendar."
 localization_priority: Normal
@@ -21,15 +21,15 @@ The following example shows the signed-in user's calendar events displayed using
 
 By default, the `mgt-agenda` component fetches events from the `/me/calendarview` endpoint and displays events for the current day. There are several properties you can use to change this behavior.
 
-| Attribute | Property | Description |
-| --- | --- | --- |
-| date | date | A string that represents the start date of the events to fetch from Microsoft Graph. Value should be in a format that can be parsed by the [Date constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - value has no effect if `event-query` attribute is set. |
-| days | days | A number of days to fetch from Microsoft Graph - default is 3 - value has no effect if `event-query` attribute is set. |
-| show-max | showMax | A number to indicate the maximum number of events to show. The default value is not set (no maximum). |
-| group-id | groupId | A string ID for a group calendar to use instead of the current signed in user's calendar. |
-| event-query | eventQuery | A string that represents an alternative query to be used when fetching events from Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
-| events | events | An array of events to get or set the list of events rendered by the component - use this property to access the events loaded by the component. Set this value to load your own events - if value is set by developer, the `date`, `days`, or `event-query` attributes have no effect. |
-| group-by-day | groupByDay | A Boolean value to group events by day - by default events are not grouped. |
+| Attribute    | Property   | Description                                                                                                                                                                                                                                                                                                   |
+| ------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| date         | date       | A string that represents the start date of the events to fetch from Microsoft Graph. Value should be in a format that can be parsed by the [Date constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - value has no effect if `event-query` attribute is set. |
+| days         | days       | A number of days to fetch from Microsoft Graph - default is 3 - value has no effect if `event-query` attribute is set.                                                                                                                                                                                        |
+| show-max     | showMax    | A number to indicate the maximum number of events to show. The default value is not set (no maximum).                                                                                                                                                                                                         |
+| group-id     | groupId    | A string ID for a group calendar to use instead of the current signed in user's calendar.                                                                                                                                                                                                                     |
+| event-query  | eventQuery | A string that represents an alternative query to be used when fetching events from Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`).                                                  |
+| events       | events     | An array of events to get or set the list of events rendered by the component - use this property to access the events loaded by the component. Set this value to load your own events - if value is set by developer, the `date`, `days`, or `event-query` attributes have no effect.                        |
+| group-by-day | groupByDay | A Boolean value to group events by day - by default events are not grouped.                                                                                                                                                                                                                                   |
 
 The following example changes the behavior of the component to fetch data for a specific date and up to three days.
 
@@ -82,14 +82,14 @@ To learn more, see [styling components](../style.md).
 
 The `mgt-agenda` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
 
-| Data type | Data context | Description |
-| --- | --- | --- |
-| `default` | `events`: list of event objects | The default template replaces the entire component with your own. |
-| `event` | `event`: event object | The template used to render each event. |
-| `event-other` | `event`: event object | The template used to render additional content for each event. |
-| `header` | `header`: string | The template used to render the header for each day. |
-| `loading` | No data context is passed | The template used when data is loading. |
-| `no-data` | No data context is passed | The template used when no events are available. |
+| Data type     | Data context                    | Description                                                       |
+| ------------- | ------------------------------- | ----------------------------------------------------------------- |
+| `default`     | `events`: list of event objects | The default template replaces the entire component with your own. |
+| `event`       | `event`: event object           | The template used to render each event.                           |
+| `event-other` | `event`: event object           | The template used to render additional content for each event.    |
+| `header`      | `header`: string                | The template used to render the header for each day.              |
+| `loading`     | No data context is passed       | The template used when data is loading.                           |
+| `no-data`     | No data context is passed       | The template used when no events are available.                   |
 
 The following examples illustrates how to use the `event` template:
 
@@ -119,27 +119,27 @@ To learn more, see [templates](../templates.md).
 
 The following events are fired from the control.
 
-| Event | Description |
-| --- | --- |
-| eventClick | The user clicks or taps an event.|
+| Event      | Description                       |
+| ---------- | --------------------------------- |
+| eventClick | The user clicks or taps an event. |
 
 ## Permissions
 
 This component uses the following Microsoft Graph APIs and permissions:
 
-| Resource | Permission |
-| - | - |
+| Resource                                                                      | Permission     |
+| ----------------------------------------------------------------------------- | -------------- |
 | [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | Calendars.Read |
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
 
 When using the default template and default `renderAttendees` template, additional APIs and permissions are required. The default template for this component uses a [mgt-people](people.md) component for events that have attendees, which requires the following.
 
-| Resource | Permission |
-| - | - |
-| [/users](/graph/api/user-list?view=graph-rest-1.0) | Users.ReadBasic.All |
-| [/me/calendarview](/graph/api/user-list-people?view=graph-rest-1.0) | People.Read |
-| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
+| Resource                                                              | Permission          |
+| --------------------------------------------------------------------- | ------------------- |
+| [/users](/graph/api/user-list?view=graph-rest-1.0)                    | Users.ReadBasic.All |
+| [/me/calendarview](/graph/api/user-list-people?view=graph-rest-1.0)   | People.Read         |
+| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read       |
 
 ## Authentication
 
@@ -149,15 +149,15 @@ The login control leverages the global authentication provider described in the 
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected` render* methods for override in component extensions.
 
-| Method | Description |
-| - | - |
-| renderLoading | Renders a loading state while the component loads. |
-| renderNoData | Renders an empty data state. |
-| renderGroups | Sorts event data into groups and renders them with group headers. |
-| renderHeader | Renders a group header. |
-| renderEvents | Renders a list of event objects. |
-| renderEvent | Renders a singular event and all of its parts.
-| renderTitle | Renders the event title part. |
-| renderLocation | Renders the event location part. |
-| renderAttendees | Renders the event attendees part. |
-| renderOther | Renders additional event content. |
+| Method          | Description                                                       |
+| --------------- | ----------------------------------------------------------------- |
+| renderLoading   | Renders a loading state while the component loads.                |
+| renderNoData    | Renders an empty data state.                                      |
+| renderGroups    | Sorts event data into groups and renders them with group headers. |
+| renderHeader    | Renders a group header.                                           |
+| renderEvents    | Renders a list of event objects.                                  |
+| renderEvent     | Renders a singular event and all of its parts.                    |
+| renderTitle     | Renders the event title part.                                     |
+| renderLocation  | Renders the event location part.                                  |
+| renderAttendees | Renders the event attendees part.                                 |
+| renderOther     | Renders additional event content.                                 |

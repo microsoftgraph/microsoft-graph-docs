@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tips for using Microsoft Graph data connect"
 description: "Get tips that will help you take advantage of Microsoft Graph data connect."
 author: "tlenig"

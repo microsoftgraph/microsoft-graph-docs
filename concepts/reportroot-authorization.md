@@ -1,4 +1,4 @@
----
+﻿---
 title: "Authorization for APIs to read Microsoft 365 usage reports"
 description: "Reports data accessible via the Microsoft Graph reports API is sensitive and protected by both permissions and Azure Active Directory (Azure AD) roles."
 author: "kszb"

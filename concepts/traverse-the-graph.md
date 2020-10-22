@@ -1,4 +1,4 @@
----
+﻿---
 title: "Access data and methods by navigating Microsoft Graph"
 description: "In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph."
 localization_priority: Priority
@@ -14,6 +14,7 @@ In addition to using the Microsoft Graph API to read and write data, you can use
 The metadata document ($metadata) is published at the service root. You can view the service document for the v1.0 and beta versions of the Microsoft Graph API via the following URLs.
 
 **Microsoft Graph API v1.0 metadata**
+
 ```
 	https://graph.microsoft.com/v1.0/$metadata
 ```
@@ -136,9 +137,6 @@ Content-type: application/json
 }
 ```
 
-
-
-
 ## View a specific resource from a collection by ID
 
 Continuing with using **user** as an example - to view the information about a user, use an HTTPS GET request to get a specific user by the user's ID. For a **user** entity, you can use either the **id** or **userPrincipalName** property as the identifier.
@@ -172,6 +170,7 @@ content-length: 982
 ```
 
 ## Read specific properties of a resource
+
 To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](query-parameters.md) query parameter to the previous request, as shown in the following example.
 
 ```no-highlight
@@ -197,9 +196,11 @@ content-length: 169
     ]
 }
 ```
+
 Here, instead of the entire property sets on the **user** entity, only the **aboutMe**, **displayName**, and **skills** basic properties are returned.
 
 ## Read specific properties of the resources in a collection
+
 In addition to reading specific properties of a single resource, you can also apply the similar [$select](query-parameters.md) query parameter to a collection to get back all resources in the collection with just the specific properties returned on each.
 
 For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request.
@@ -232,6 +233,7 @@ The successful response returns a 200 OK status code and a payload that contains
 ```
 
 ## Traverse from one resource to another via relationship
+
 A manager holds a **directReports** relationship with the other users reporting to him or her.
 To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal.
 
@@ -262,15 +264,12 @@ Similarly, you can follow a relationship to navigate to related resources.
 For example, the user-messages relationship enables traversal from an Azure Active Directory (Azure AD) User to a set of Outlook mail messages.
 The following example shows how to do this in a REST API call.
 
-
 ```no-highlight
 GET https://graph.microsoft.com/v1.0/me/messages HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-
 The successful response returns the 200 OK status and a payload, as shown.
-
 
 ```no-highlight
 HTTP/1.1 200 OK
@@ -305,9 +304,11 @@ content-length: 147
   ]
 }
 ```
+
 You can see all the relationships on a given resource by going to the metadata, finding the `EntityType`, and looking at each `NavigationProperty` for that `EntityType`.
 
 ## Call actions and functions
+
 Microsoft Graph also supports _actions_ and _functions_ to manipulate resources in ways that are not simply create, read, update, and delete (CRUD) operations. They are often in the shape of HTTPS POST requests in order to intake arguments for the action or function. For example, the following action lets the signed-in user (`me`) send an email message.
 
 ```no-highlight

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Call Microsoft Graph from a Cloud Solution Provider application"
 description: "This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the authorization code grant flow or the service to service client credentials flow."
 author: "jackson-woods"
@@ -40,27 +40,27 @@ Finally grant your partner-managed app those configured permissions for all your
 
 1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
 
-    ```PowerShell
+```PowerShell
     Connect-AzureAd
-    ```
+```
 
 2. Find the group that represents the *Adminagents*.
 
-    ```PowerShell
+```PowerShell
     $group = Get-AzureADGroup -Filter "displayName eq 'Adminagents'"
-    ```
+```
 
 3. Find the service principal that has the same *appId* as your app.
 
-    ```PowerShell
+```PowerShell
     $sp = Get-AzureADServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
-    ```
+```
 
 4. Finally, add the service principal to the *Adminagents* group.
 
-    ```PowerShell
+```PowerShell
     Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
-    ```
+```
 
 ## Token acquisition flows
 
@@ -76,24 +76,25 @@ This is a standard [authorization code grant flow](/azure/active-directory/devel
 
 1. [Acquire an authorization code:](/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Your app makes a request to the ```/authorize``` endpoint and must use a **customer tenant**, in our example ```customer.com```, for the target tenant. Your agents would still sign-in with their ```username@partner.com``` account.
 
-    ```http
+```http
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
-    ```
+```
 
 2. [Acquire an access token using the authorization code:](/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Your app must use a **customer tenant** as the target tenant, in our example ```customer.com```, when making the request to the ```token``` endpoint:
 
-    ```http
+```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token
-    ```
+```
 
 3. Now you have an access token, call Microsoft Graph, putting the access token in the HTTP authorization header:
 
-    ```http
+```http
     GET https://graph.microsoft.com/beta/users
     Authorization: Bearer <token>
-    ```
+```
 
 ## Register your app in the regions you support
+
 <a name="region"></a>
 
 CSP customer engagement is currently limited to a single region. Partner-managed applications carry the same limitation. This means you must have a separate tenant for each region you sell in. For example, if your partner-managed app is registered in a tenant in the US but your customer is in the EU – the partner-managed app will not work.  Each of your regional partner tenants must maintain their own set of partner-managed apps to manage customers within the same region. This might require additional logic in your app (prior to sign-in) to get your customers' sign-in username to decide which region-specific partner-managed app identity to use, to serve the user.

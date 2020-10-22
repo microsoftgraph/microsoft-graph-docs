@@ -76,7 +76,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2400
+Content-Length: 2734
 
 {
   "value": {
@@ -145,7 +145,21 @@ Content-Length: 2400
     ],
     "alwaysOn": true,
     "alwaysOnLockdown": true,
-    "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
+    "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+    "customData": [
+      {
+        "@odata.type": "microsoft.graph.keyValue",
+        "key": "Key value",
+        "value": "Value value"
+      }
+    ],
+    "customKeyValueData": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
+        "value": "Value value"
+      }
+    ]
   }
 }
 ```

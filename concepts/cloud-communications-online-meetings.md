@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the cloud communications API to create or join online meetings"
 description: "You'll have the flexibility to create a meeting that takes place in the future, or instantaneously"
 author: "ananmishr"
@@ -23,6 +23,7 @@ When all the participants leave the group call, the group call will end. Partici
 >**Note:** The created meetings do not appear on calendars.
 
 ## Join an online meeting
+
 After an online meeting is created, users can join in two ways:
 
 1. Through the browser, using the **joinWebURL** that was returned as part of the [meeting coordinates](/graph/api/resources/onlinemeeting).

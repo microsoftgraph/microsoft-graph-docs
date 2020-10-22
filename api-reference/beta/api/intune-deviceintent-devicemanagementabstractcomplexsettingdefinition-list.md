@@ -73,7 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1228
+Content-Length: 1322
 
 {
   "value": [
@@ -86,6 +86,8 @@ Content-Length: 1228
       "description": "Description value",
       "placeholderText": "Placeholder Text value",
       "documentationUrl": "https://example.com/documentationUrl/",
+      "headerTitle": "Header Title value",
+      "headerSubtitle": "Header Subtitle value",
       "keywords": [
         "Keywords value"
       ],

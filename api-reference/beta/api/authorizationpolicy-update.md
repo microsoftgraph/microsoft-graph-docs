@@ -44,18 +44,18 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|  
-|displayName|String| Display name for this policy. |  
-|description|String| Description of this policy. |  
-|guestUserRoleId|Guid| Represents role templateId for the role that should be granted to guest user. Refer to [List unifiedRoleDefinitions](./rbacapplication-list-roledefinitions.md) to find the list of available role templates. Only supported roles today are User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
-|enabledPreviewFeatures|Collection(string)| List of features enabled for private preview on the tenant. | 
-|blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell, set this property to `true`. Setting to `true` will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph. | 
-|defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Specifies certain customizable permissions for default user role. | 
-|allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. | 
-|allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. | 
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. |
-| permissionGrantPolicyIdsAssignedToDefaultUserRole | String collection | Indicates whether user consent to apps is allowed, and if it is, which [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies) governs the permission for users to grant consent. Values should be in the format `managePermissionGrantsForSelf.{id}`, where `{id}` is the **id** of a built-in or custom [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies). An empty list indicates user consent to apps is disabled. |
+| Property                                          | Type                                                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| :------------------------------------------------ | :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName                                       | String                                                                   | Display name for this policy.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| description                                       | String                                                                   | Description of this policy.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| guestUserRoleId                                   | Guid                                                                     | Represents role templateId for the role that should be granted to guest user. Refer to [List unifiedRoleDefinitions](./rbacapplication-list-roledefinitions.md) to find the list of available role templates. Only supported roles today are User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).                                                                           |
+| enabledPreviewFeatures                            | Collection(string)                                                       | List of features enabled for private preview on the tenant.                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| blockMsolPowerShell                               | Boolean                                                                  | To disable the use of MSOL PowerShell, set this property to `true`. Setting to `true` will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph.                                                                                                                                                                                                                                              |
+| defaultUserRolePermissions                        | [defaultUserRolePermissions](../resources/defaultUserRolePermissions.md) | Specifies certain customizable permissions for default user role.                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| allowedToUseSSPR                                  | Boolean                                                                  | Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant.                                                                                                                                                                                                                                                                                                                                                                                              |
+| allowedToSignUpEmailBasedSubscriptions            | Boolean                                                                  | Indicates whether users can sign up for email based subscriptions.                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| allowEmailVerifiedUsersToJoinOrganization         | Boolean                                                                  | Indicates whether a user can join the tenant by email validation.                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| permissionGrantPolicyIdsAssignedToDefaultUserRole | String collection                                                        | Indicates whether user consent to apps is allowed, and if it is, which [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies) governs the permission for users to grant consent. Values should be in the format `managePermissionGrantsForSelf.{id}`, where `{id}` is the **id** of a built-in or custom [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies). An empty list indicates user consent to apps is disabled. |
 
 ## Response
 
@@ -318,8 +318,8 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_authZPolicy_disableUserConsent"
@@ -332,20 +332,23 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
     "permissionGrantPolicyIdsAssignedToDefaultUserRole": [ ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-disableuserconsent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-disableuserconsent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-disableuserconsent-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -367,8 +370,8 @@ HTTP/1.1 204 No Content
 
 The following is an example of the request that allows user consent to apps, subject to the built-in [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low`, which allows delegated permissions classified "low", for client apps from verified publishers or registered in the same tenant.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_authZPolicy_enableUserConsentLow"
@@ -383,20 +386,23 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
     ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-enableuserconsentlow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-enableuserconsentlow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-enableuserconsentlow-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

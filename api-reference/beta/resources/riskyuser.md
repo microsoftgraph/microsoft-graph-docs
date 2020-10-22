@@ -31,17 +31,17 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 ## Properties
 
-| Property   | Type|Description|
-|:---------------|:--------|:----------|
-|`id`|`string`|Unique ID of the user at risk.|
-|`isDeleted`|`bool`|Indicates whether the user is deleted. Possible values are: `true`, `false`.|
-|`isProcessing`|`bool`|Indicates whether a user's risky state is being processed by the backend.|
-|`riskLastUpdatedDateTime`|`datetime`|The date and time that the risky user was last updated|
-|`riskLevel`|`riskLevel`| The possible values are low, medium, high, hidden, none, unknownFutureValue.  |
-|`riskState`|`riskState`| The possible values are none, confirmedSafe, remediated, atRisk, unknownFutureValue.  |
-|`riskDetail`|`riskDetail`| The possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue.  |
-|`userDisplayName`|`string`|Risky user display name.|
-|`userPrincipalName`|`string`|Risky user principal name.|
+| Property                  | Type         | Description                                                                                                                                                                                                                                                                                                                                            |
+| :------------------------ | :----------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `id`                      | `string`     | Unique ID of the user at risk.                                                                                                                                                                                                                                                                                                                         |
+| `isDeleted`               | `bool`       | Indicates whether the user is deleted. Possible values are: `true`, `false`.                                                                                                                                                                                                                                                                           |
+| `isProcessing`            | `bool`       | Indicates whether a user's risky state is being processed by the backend.                                                                                                                                                                                                                                                                              |
+| `riskLastUpdatedDateTime` | `datetime`   | The date and time that the risky user was last updated                                                                                                                                                                                                                                                                                                 |
+| `riskLevel`               | `riskLevel`  | The possible values are low, medium, high, hidden, none, unknownFutureValue.                                                                                                                                                                                                                                                                           |
+| `riskState`               | `riskState`  | The possible values are none, confirmedSafe, remediated, atRisk, unknownFutureValue.                                                                                                                                                                                                                                                                   |
+| `riskDetail`              | `riskDetail` | The possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue. |
+| `userDisplayName`         | `string`     | Risky user display name.                                                                                                                                                                                                                                                                                                                               |
+| `userPrincipalName`       | `string`     | Risky user principal name.                                                                                                                                                                                                                                                                                                                             |
 
 ## Relationships
 

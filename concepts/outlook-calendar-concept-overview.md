@@ -1,4 +1,4 @@
----
+﻿---
 title: "Outlook calendar API overview"
 description: "Outlook calendar is part of the Outlook messaging hub in Microsoft 365 that also lets you manage emails and contacts, find information about users in an organization,"
 author: "angelgolfer-ms"
@@ -15,6 +15,7 @@ initiate online conversations, share files, and collaborate in groups.
 > [!VIDEO https://www.youtube-nocookie.com/embed/_ST4nyz4g9E]
 
 ## Why integrate with Outlook calendar?
+
 The rich features of Outlook calendar and its API open up many app opportunities. The following sections list a few of them.
 
 ## Reach hundreds of millions of customers and build rich scenarios

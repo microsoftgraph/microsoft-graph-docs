@@ -1,4 +1,4 @@
----
+﻿---
 title: "Azure AD authentication methods policy API overview"
 description: "Authentication methods policies define which authentication methods can be used by users in Azure AD."
 localization_priority: Normal
@@ -22,10 +22,10 @@ The authentication method policies APIs are used to manage policy settings. For 
 
 ## What authentication methods policies can be managed in Microsoft Graph?
 
-|Authentication method policy       | Description |
-|:---------------------------|:------------|:------------|
-|[fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)| Define FIDO2 security key restrictions and users who can use them to sign in to Azure AD.|
-|[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)|Define users who can use Passwordless Phone Sign-in to sign in to Azure AD.|
+| Authentication method policy                                                                                                                  | Description                                                                               |     |
+| :-------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- | :-- |
+| [fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)                                                           | Define FIDO2 security key restrictions and users who can use them to sign in to Azure AD. |     |
+| [passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) | Define users who can use Passwordless Phone Sign-in to sign in to Azure AD.               |     |
 
 ## Next steps
 

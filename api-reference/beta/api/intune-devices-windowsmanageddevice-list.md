@@ -73,7 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8844
+Content-Length: 8941
 
 {
   "value": [
@@ -118,7 +118,9 @@ Content-Length: 8844
         "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
         "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
         "osBuildNumber": "Os Build Number value",
-        "operatingSystemProductType": 10
+        "operatingSystemProductType": 10,
+        "ipAddressV4": "Ip Address V4 value",
+        "subnetAddress": "Subnet Address value"
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",

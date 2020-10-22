@@ -70,7 +70,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5542
+Content-Length: 5714
 
 {
   "value": [
@@ -188,7 +188,10 @@ Content-Length: 5542
       "customDialerAppPackageId": "Custom Dialer App Package Id value",
       "customDialerAppDisplayName": "Custom Dialer App Display Name value",
       "biometricAuthenticationBlocked": true,
-      "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
+      "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
+      "blockAfterCompanyPortalUpdateDeferralInDays": 11,
+      "warnAfterCompanyPortalUpdateDeferralInDays": 10,
+      "wipeAfterCompanyPortalUpdateDeferralInDays": 10
     }
   ]
 }

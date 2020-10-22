@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add custom data to groups using schema extensions "
 description: "This article walks you through an example to demonstrate how to use *schema extensions*. "
 author: "dkershaw10"
@@ -28,18 +28,21 @@ resource types as well.  You can carry out operations similar to the request exa
 available only in the beta endpoint.
 
 ## 1. View available schema extensions
+
 First, as a developer, you might want to find any other schema extension definitions that our app could reuse.  This can be done by querying the **schemaExtension** resource.  
 In the example below, you're going to query for a specific schema extension by **id**.
 
 Notice that the extension returned in the response has **Available** as the **status** value, which indicates that any app which has permission to the resources in the **targetTypes** property can use and update the extension
 with additive changes. In general, this operation returns any schema extensions that satisfy the specified filter regardless of **status**, so do check the extension status before using it.
 
-
 ### Request
+
 ```http
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_test'
 ```
+
 ### Response
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -64,7 +67,9 @@ Content-length: 420
     ]
 }
 ```
+
 ## 2. Register a schema extension definition that describes a training course
+
 If you can't find a schema extension that *is* appropriate for your needs, you can create and register a new extension definition for training courses on the **group** resource.  
 
 When creating a schema extension definition, you should provide a string for the **id** property. There are two ways to do this. The following example shows the preferred
@@ -81,6 +86,7 @@ Notice that when you initially create a schema extension, its status is **InDeve
 during which only your app that created it can update it with additive changes or delete it. When you are ready to share the extension for use by other apps, set **status** to **Available**.
 
 ### Request
+
 ```http
 POST https://graph.microsoft.com/v1.0/schemaExtensions
 Content-type: application/json
@@ -106,7 +112,9 @@ Content-type: application/json
     ]
 }
 ```
+
 ### Response
+
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -137,11 +145,13 @@ Content-length: 420
 ```
 
 ## 3. Create a new group with extended data 
+
 Create a _new_ group and extend it with extra data using the `graphlearn_courses` schema extension definition that we just registered.  This is a standard ```POST``` 
 to the **group** resource, with the additional `graphlearn_courses` complex type extension defined in the request body.  The response will not mirror back any data extensions. 
 We need to explicitly ```$select``` the extension by name using a ```GET``` operation.
 
 ### Request
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
@@ -159,7 +169,9 @@ Content-type: application/json
     }
 }
 ```
+
 ### Response
+
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -182,9 +194,11 @@ Content-length: 420
 ```
 
 ## 4. Add, update, or remove custom data in an existing group
+
 You can extend and add custom data to an _existing_ group instance with the additional `graphlearn_courses` complex type extension defined in the body of a ```PATCH``` request.  
 
 ### Request
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/dfc8016f-db97-4c47-a582-49cb8f849355
 Content-type: application/json
@@ -197,7 +211,9 @@ Content-length: 230
     }   
 }
 ```
+
 ### Response
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -208,8 +224,8 @@ You can also remove custom data added to a resource instance by setting the corr
 
 To remove a schema extension from a resource instance, set the extension complex type in that instance to null.
 
-
 ## 5. Get a group and its extension data
+
 A handy way to look for a group (or groups) is to use `$filter` to match for specific extension property values,
 such as an extension name or ID. 
 
@@ -224,8 +240,8 @@ group properties **displayName**, **id**, and **description**, and the custom da
 GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq ‘123’&$select=displayName,id,description,graphlearn_courses
 ```
 
-
 ### Response
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json

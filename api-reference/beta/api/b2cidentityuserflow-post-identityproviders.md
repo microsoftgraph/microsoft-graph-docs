@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add identityProvider to a b2cIdentityUserFlow"
 description: "Add identityProvider to a b2cIdentityUserFlow."
 localization_priority: Normal

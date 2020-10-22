@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Teams API overview"
 description: "Microsoft Teams is the ultimate hub for teamwork and intelligent communications. "
 author: "nkramer"
@@ -13,9 +13,7 @@ ms.custom: scenarios:getting-started
 Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, 
 Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
 
-
 > [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
-
 
 ## Why integrate with Microsoft Teams?
 
@@ -87,17 +85,17 @@ These collaboration tools include Microsoft Graph-enabled tabs or bots running i
 
 Microsoft Teams APIs can enhance apps inside and outside of Teams:
 
-|App type|Scenario description|
-|:-------|:-------------------|
-| [Tabs](/microsoftteams/platform/concepts/tabs/tabs-overview) |Surface your content in Microsoft Teams.|
-| [Bots](/microsoftteams/platform/concepts/bots/bots-overview) |Help users get tasks done in conversations.|
-| [Connectors](/microsoftteams/platform/concepts/connectors/connectors) |Post updates from external services to channels.|
-| [Actionable messaging](/microsoftteams/platform/concepts/cards/cards) |Add enhanced interaction to your connector cards.|
-| [Messaging extensions](/microsoftteams/platform/concepts/messaging-extensions) |Allow users to query and share information in conversations.|
-|Websites| Surface enhanced content in your web pages.|
-|Services|Enhance your client applications with Microsoft Graph data via your web service.|
-| [Activity feed](/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
-| [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
+| App type                                                                                  | Scenario description                                                                                                                                                                                    |
+| :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Tabs](/microsoftteams/platform/concepts/tabs/tabs-overview)                              | Surface your content in Microsoft Teams.                                                                                                                                                                |
+| [Bots](/microsoftteams/platform/concepts/bots/bots-overview)                              | Help users get tasks done in conversations.                                                                                                                                                             |
+| [Connectors](/microsoftteams/platform/concepts/connectors/connectors)                     | Post updates from external services to channels.                                                                                                                                                        |
+| [Actionable messaging](/microsoftteams/platform/concepts/cards/cards)                     | Add enhanced interaction to your connector cards.                                                                                                                                                       |
+| [Messaging extensions](/microsoftteams/platform/concepts/messaging-extensions)            | Allow users to query and share information in conversations.                                                                                                                                            |
+| Websites                                                                                  | Surface enhanced content in your web pages.                                                                                                                                                             |
+| Services                                                                                  | Enhance your client applications with Microsoft Graph data via your web service.                                                                                                                        |
+| [Activity feed](/microsoftteams/platform/concepts/activity-feed)                          | Engage users via feed notifications.                                                                                                                                                                    |
+| [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) | Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings. |
 
 ## API reference
 

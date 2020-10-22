@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Graph Toolkit with React"
 description: "Get started using the Microsoft Graph Toolkit in a React application."
 localization_priority: Normal
@@ -25,6 +25,7 @@ class App extends Component {
   }
 }
 ```
+
 Because React implements its own synthetic event system, it cannot listen for DOM events coming from custom elements without the use of a workaround. You will need to use a ref to reference the Toolkit components and manually attach event listeners with addEventListener, as shown in the following example.
 
 ```jsx
@@ -57,6 +58,7 @@ declare global {
   }
 }
 ```
+
 You can then use it in your tsx as `<mgt-login></mgt-login>`.
 
 ## Using mgt-react
@@ -64,15 +66,19 @@ You can then use it in your tsx as `<mgt-login></mgt-login>`.
 We recommend using `mgt-react` to simplify usage of Microsoft Graph Toolkit components and avoid having to implement workarounds. The library wraps all components and exports them as React components. 
 
 ### Install the library
+
 Add the library to your project using:
 
 ```bash
 npm install @microsoft/mgt-react
 ```
+
 or
+
 ```bash
 yarn add @microsoft/mgt-react
 ```
+
 ### Using components
 
 All the Microsoft Graph Toolkit components are available in the library. The names of the React components are in PascalCase and do not include the `Mgt` prefix. For example, the `mgt-person` component is available as `Person`, and the `mgt-people-picker` component is available as `PeoplePicker`.
@@ -82,11 +88,13 @@ To use the components, first import the Toolkit in your application; `mgt-react`
 ```jsx
 import '@microsoft/mgt'
 ```
+
 Now, you can import and use any of the components as regular React components. For example, to use the [Person component](../components/person.md), import it at the top of your file:
 
 ```jsx
 import { Person } from 'mgt-react';
 ```
+
 and now, you can use `Person` anywhere in your JSX.
 
 #### Use properties instead of attributes
@@ -116,6 +124,7 @@ const App = (props) => {
   return <PeoplePicker selectionChanged={this.handleSelectionChanged} />;
 };
 ```
+
 All properties and events map exactly as they are defined on the web component.
 
 #### Templates
@@ -125,6 +134,7 @@ All Microsoft Graph Toolkit components support [custom templates](../templates.m
 First, define a React component that uses the `MgtTemplateProps` object as its type of props, then use it as a child of the wrapped component.
 
 For example, to create a template to be used for rendering events in the `mgt-agenda` component, first define a component to be used for rendering an event:
+
 ```jsx
 import { MgtTemplateProps } from 'mgt-react';
 
@@ -133,7 +143,9 @@ const MyEvent = (props: MgtTemplateProps) => {
   return <div>{event.subject}</div>;
 };
 ```
+
 Then use it as a child of the wrapped `Agenda` component and set the template prop to `event`:
+
 ```jsx
 import { Agenda } from 'mgt-react';
 
@@ -147,6 +159,7 @@ const App = (props) => {
 The `template` prop allows you to specify which template to overwrite. In this case, the `MyEvent` component will be repeated for every event, and the `event` object will be passed as part of the `dataContext` prop.
 
 ## Next steps
+
 - Check out this step-by-step tutorial on [building a React app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-13-using-microsoft-graph-toolkit-with-react/).
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).

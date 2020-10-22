@@ -1,4 +1,4 @@
----
+﻿---
 title: "Calls overview"
 description: "Learn about the supported call types and how they're used for the signaling process."
 author: "ananmishr"
@@ -11,6 +11,7 @@ ms.prod: "cloud-communications"
 The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calls and online meetings. This article describes the supported call types and how they're used for the signaling process.
 
 ## Peer-to-peer calls
+
 A call is peer-to-peer (P2P) when one participant is directly calling another participant. If a bot calls a user, and the user is the only calling target specified, this is an example of a P2P call.
 
 ![P2P call diagram](images/communications-p2p-call.PNG)

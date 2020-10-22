@@ -1,4 +1,4 @@
----
+﻿---
 title: "SharePoint provider"
 description: "Use the SharePoint provider inside your SharePoint web parts to power the components with Microsoft Graph access."
 localization_priority: Normal
@@ -16,7 +16,6 @@ To learn more, see [Providers](../providers.md).
 Initialize the provider inside the `onInit()` method of your web part.
 
 ```ts
-
 // import the providers at the top of the page
 import {Providers, SharePointProvider} from '@microsoft/mgt';
 
@@ -29,7 +28,6 @@ protected async onInit() {
 Now you can add any component in your `render()` method and it will use the SharePoint context to access Microsoft Graph.
 
 ```ts
-
 public render(): void {
     this.domElement.innerHTML = `
       <mgt-agenda></mgt-agenda>

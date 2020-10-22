@@ -3,7 +3,25 @@
     {
       "ChangeList": [
         {
-          "Id": "595f33e2-39cc-4745-b5d9-2978fcd18eb5",
+          "Id": "99cf28e5-e342-44ff-a7c0-fda902bee921",
+          "ApiChange": "Property",
+          "ChangedApiName": "outlookM365,outlook2019",
+          "ChangeType": "Addition",
+          "Description": "Added the **outlookM365** and **outlook2019** properties to the [getEmailAppUsageVersionsUserCounts](https://docs.microsoft.com/en-us/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) entity.",
+          "Target": "getEmailAppUsageVersionsUserCounts"
+        }
+      ],
+      "Id": "99cf28e5-e342-44ff-a7c0-fda902bee921",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-09-01T00:00:00",
+      "WorkloadArea": "Reports",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c4cd5204-988d-4c82-8086-b362483ef807",
           "ApiChange": "method",
           "ChangedApiName": "getM365AppUserDetail",
           "ChangeType": "Addition",
@@ -11,7 +29,7 @@
           "Target": "getM365AppUserDetail"
         },
         {
-          "Id": "595f33e2-39cc-4745-b5d9-2978fcd18eb5",
+          "Id": "c4cd5204-988d-4c82-8086-b362483ef807",
           "ApiChange": "method",
           "ChangedApiName": "getM365AppUserCounts",
           "ChangeType": "Addition",
@@ -19,7 +37,7 @@
           "Target": "getM365AppUserCounts"
         },
         {
-          "Id": "595f33e2-39cc-4745-b5d9-2978fcd18eb5",
+          "Id": "c4cd5204-988d-4c82-8086-b362483ef807",
           "ApiChange": "method",
           "ChangedApiName": "getM365AppPlatformUserCounts",
           "ChangeType": "Addition",
@@ -27,7 +45,7 @@
           "Target": "getM365AppPlatformUserCounts"
         }
       ],
-      "Id": "595f33e2-39cc-4745-b5d9-2978fcd18eb5",
+      "Id": "c4cd5204-988d-4c82-8086-b362483ef807",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
@@ -37,7 +55,7 @@
     {
       "ChangeList": [
         {
-          "Id": "dca6467b-d026-4316-8353-2c6c02598af3",
+          "Id": "ea6e337c-a593-4cad-a41c-e0d954931164",
           "ApiChange": "Resource",
           "ChangedApiName": "relyingPartyDetailedSummary,listing",
           "ChangeType": "Addition",
@@ -45,7 +63,7 @@
           "Target": "relyingPartyDetailedSummary,listing"
         }
       ],
-      "Id": "dca6467b-d026-4316-8353-2c6c02598af3",
+      "Id": "ea6e337c-a593-4cad-a41c-e0d954931164",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
@@ -55,7 +73,7 @@
     {
       "ChangeList": [
         {
-          "Id": "8d2923b0-a7ff-4172-ae33-20a70e1d2f05",
+          "Id": "f763b86c-edd0-4326-9a89-5b97376313e2",
           "ApiChange": "Property",
           "ChangedApiName": "Meeting Created,Meeting Interacted",
           "ChangeType": "Addition",
@@ -63,7 +81,7 @@
           "Target": "getEmailActivityCounts"
         },
         {
-          "Id": "8d2923b0-a7ff-4172-ae33-20a70e1d2f05",
+          "Id": "f763b86c-edd0-4326-9a89-5b97376313e2",
           "ApiChange": "Property",
           "ChangedApiName": "Meeting Created,Meeting Interacted",
           "ChangeType": "Addition",
@@ -71,7 +89,7 @@
           "Target": "getEmailActivityUserCounts"
         },
         {
-          "Id": "8d2923b0-a7ff-4172-ae33-20a70e1d2f05",
+          "Id": "f763b86c-edd0-4326-9a89-5b97376313e2",
           "ApiChange": "Property",
           "ChangedApiName": "Meeting Created,Meeting Interacted",
           "ChangeType": "Addition",
@@ -79,7 +97,7 @@
           "Target": "getEmailActivityuserDetail"
         }
       ],
-      "Id": "8d2923b0-a7ff-4172-ae33-20a70e1d2f05",
+      "Id": "f763b86c-edd0-4326-9a89-5b97376313e2",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
@@ -89,7 +107,7 @@
     {
       "ChangeList": [
         {
-          "Id": "3ce049e7-31e0-4fb5-9d54-1d7edd7acc18",
+          "Id": "fe091b7f-fd11-4c96-88ba-9d3861d8b171",
           "ApiChange": "Property",
           "ChangedApiName": "networkDisplayName",
           "ChangeType": "Addition",
@@ -97,7 +115,7 @@
           "Target": "yammerGroupsActivityDetail"
         }
       ],
-      "Id": "3ce049e7-31e0-4fb5-9d54-1d7edd7acc18",
+      "Id": "fe091b7f-fd11-4c96-88ba-9d3861d8b171",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -107,7 +125,7 @@
     {
       "ChangeList": [
         {
-          "Id": "3ce049e7-31e0-4fb5-9d54-1d7edd7acc18",
+          "Id": "fe091b7f-fd11-4c96-88ba-9d3861d8b171",
           "ApiChange": "Resource",
           "ChangedApiName": "Authorization for APIs to read Microsoft 365 usage reports",
           "ChangeType": "Change",
@@ -115,7 +133,7 @@
           "Target": "Authorization for APIs to read Microsoft 365 usage reports"
         }
       ],
-      "Id": "3ce049e7-31e0-4fb5-9d54-1d7edd7acc18",
+      "Id": "fe091b7f-fd11-4c96-88ba-9d3861d8b171",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -125,7 +143,7 @@
     {
       "ChangeList": [
         {
-          "Id": "c4cc0da5-3358-4684-83a1-6d474cc6d627",
+          "Id": "cfe0efcf-2bde-4923-b6bf-397c1379b3e5",
           "ApiChange": "Resource",
           "ChangedApiName": "Authorization for APIs to read Microsoft 365 usage reports",
           "ChangeType": "Change",
@@ -133,7 +151,7 @@
           "Target": "Authorization for APIs to read Microsoft 365 usage reports"
         }
       ],
-      "Id": "c4cc0da5-3358-4684-83a1-6d474cc6d627",
+      "Id": "cfe0efcf-2bde-4923-b6bf-397c1379b3e5",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
@@ -143,7 +161,7 @@
     {
       "ChangeList": [
         {
-          "Id": "3f7ea2a3-12ed-4d95-a186-8425c194ecf4",
+          "Id": "ed1cd122-6fc3-4d57-85a6-018b8149e7ec",
           "ApiChange": "Property",
           "ChangedApiName": "deletedItemCount,deletedItemSizeInBytes",
           "ChangeType": "Addition",
@@ -151,7 +169,7 @@
           "Target": "mailboxUsageDetail"
         },
         {
-          "Id": "3f7ea2a3-12ed-4d95-a186-8425c194ecf4",
+          "Id": "ed1cd122-6fc3-4d57-85a6-018b8149e7ec",
           "ApiChange": "Property",
           "ChangedApiName": "groupId",
           "ChangeType": "Addition",
@@ -159,7 +177,7 @@
           "Target": "office365GroupsActivityDetail"
         },
         {
-          "Id": "3f7ea2a3-12ed-4d95-a186-8425c194ecf4",
+          "Id": "ed1cd122-6fc3-4d57-85a6-018b8149e7ec",
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
@@ -167,7 +185,7 @@
           "Target": "oneDriveUsageAccountDetail"
         },
         {
-          "Id": "3f7ea2a3-12ed-4d95-a186-8425c194ecf4",
+          "Id": "ed1cd122-6fc3-4d57-85a6-018b8149e7ec",
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
@@ -175,7 +193,7 @@
           "Target": "sharePointSiteUsageDetail"
         },
         {
-          "Id": "3f7ea2a3-12ed-4d95-a186-8425c194ecf4",
+          "Id": "ed1cd122-6fc3-4d57-85a6-018b8149e7ec",
           "ApiChange": "Property",
           "ChangedApiName": "office365Active,office365Inactive",
           "ChangeType": "Addition",
@@ -183,7 +201,7 @@
           "Target": "office365ServicesUserCounts"
         }
       ],
-      "Id": "3f7ea2a3-12ed-4d95-a186-8425c194ecf4",
+      "Id": "ed1cd122-6fc3-4d57-85a6-018b8149e7ec",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-08-01T00:00:00",
@@ -193,7 +211,7 @@
     {
       "ChangeList": [
         {
-          "Id": "71d54252-febf-49f0-9017-01713b39f286",
+          "Id": "a4e8adf9-8a59-4a3e-bda9-68d1c79216da",
           "ApiChange": "Property",
           "ChangedApiName": "deletedItemCount",
           "ChangeType": "Addition",
@@ -201,7 +219,7 @@
           "Target": "mailboxUsageDetail"
         },
         {
-          "Id": "71d54252-febf-49f0-9017-01713b39f286",
+          "Id": "a4e8adf9-8a59-4a3e-bda9-68d1c79216da",
           "ApiChange": "Property",
           "ChangedApiName": "deletedItemSizeInBytes",
           "ChangeType": "Addition",
@@ -209,7 +227,7 @@
           "Target": "mailboxUsageDetail"
         },
         {
-          "Id": "71d54252-febf-49f0-9017-01713b39f286",
+          "Id": "a4e8adf9-8a59-4a3e-bda9-68d1c79216da",
           "ApiChange": "Property",
           "ChangedApiName": "groupId",
           "ChangeType": "Addition",
@@ -217,7 +235,7 @@
           "Target": "office365GroupsActivityDetail"
         }
       ],
-      "Id": "71d54252-febf-49f0-9017-01713b39f286",
+      "Id": "a4e8adf9-8a59-4a3e-bda9-68d1c79216da",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
@@ -227,7 +245,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5ad8a04b-327b-429a-98e3-f6c412318e34",
+          "Id": "8717f785-3993-41ed-86f6-faf6427cd2da",
           "ApiChange": "Resource",
           "ChangedApiName": "reportroot-getcredentialusagesummary,reportroot-getcredentialuserregistrationcount,reportroot-list-credentialuserregistrationdetails,reportroot-list-usercredentialusagedetails",
           "ChangeType": "Addition",
@@ -235,7 +253,7 @@
           "Target": "reportroot-getcredentialusagesummary,reportroot-getcredentialuserregistrationcount,reportroot-list-credentialuserregistrationdetails,reportroot-list-usercredentialusagedetails"
         }
       ],
-      "Id": "5ad8a04b-327b-429a-98e3-f6c412318e34",
+      "Id": "8717f785-3993-41ed-86f6-faf6427cd2da",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
@@ -245,7 +263,7 @@
     {
       "ChangeList": [
         {
-          "Id": "2d19e6ab-be29-4cdf-b1fc-d83998939b85",
+          "Id": "dd604555-5789-4916-9e74-1c88d05b7c89",
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
@@ -253,7 +271,7 @@
           "Target": "oneDriveUsageAccountDetail"
         },
         {
-          "Id": "2d19e6ab-be29-4cdf-b1fc-d83998939b85",
+          "Id": "dd604555-5789-4916-9e74-1c88d05b7c89",
           "ApiChange": "Property",
           "ChangedApiName": "ownerPrincipalName",
           "ChangeType": "Addition",
@@ -261,7 +279,7 @@
           "Target": "sharePointSiteUsageDetail"
         }
       ],
-      "Id": "2d19e6ab-be29-4cdf-b1fc-d83998939b85",
+      "Id": "dd604555-5789-4916-9e74-1c88d05b7c89",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
@@ -271,7 +289,7 @@
     {
       "ChangeList": [
         {
-          "Id": "6101368c-42d5-44fb-acef-f3e1278b6002",
+          "Id": "2db23f4c-2ff5-4fed-85e5-fa17156b7dd3",
           "ApiChange": "Property",
           "ChangedApiName": "office365Active,office365Inactive",
           "ChangeType": "Addition",
@@ -279,7 +297,7 @@
           "Target": "office365ServicesUserCounts"
         }
       ],
-      "Id": "6101368c-42d5-44fb-acef-f3e1278b6002",
+      "Id": "2db23f4c-2ff5-4fed-85e5-fa17156b7dd3",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-01-01T00:00:00",
@@ -289,7 +307,7 @@
     {
       "ChangeList": [
         {
-          "Id": "59bfd381-6131-4d00-b60c-13fde5e71c47",
+          "Id": "86282ca1-aee4-465a-a31e-764d73b4b156",
           "ApiChange": "Resource",
           "ChangedApiName": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts",
           "ChangeType": "Addition",
@@ -297,7 +315,7 @@
           "Target": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts"
         }
       ],
-      "Id": "59bfd381-6131-4d00-b60c-13fde5e71c47",
+      "Id": "86282ca1-aee4-465a-a31e-764d73b4b156",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-11-01T00:00:00",
@@ -307,7 +325,7 @@
     {
       "ChangeList": [
         {
-          "Id": "6b91e5ba-3d44-44f1-b862-92e5957db77a",
+          "Id": "a88dc26c-0c96-486f-88a1-406b9d04d896",
           "ApiChange": "Property",
           "ChangedApiName": "conditionalAccessPolicies,appliedConditionalAccessPolicy",
           "ChangeType": "Change",
@@ -315,7 +333,7 @@
           "Target": ""
         },
         {
-          "Id": "6b91e5ba-3d44-44f1-b862-92e5957db77a",
+          "Id": "a88dc26c-0c96-486f-88a1-406b9d04d896",
           "ApiChange": "Property",
           "ChangedApiName": "riskDetail,riskLevelAggregated,riskLevelDuringSignIn,riskEventTypes,riskState",
           "ChangeType": "Addition",
@@ -323,7 +341,7 @@
           "Target": "signIn API"
         },
         {
-          "Id": "6b91e5ba-3d44-44f1-b862-92e5957db77a",
+          "Id": "a88dc26c-0c96-486f-88a1-406b9d04d896",
           "ApiChange": "Property",
           "ChangedApiName": "authenticationProcessingDetails,originalRequestID,isInteractive,tokenIssuerName,tokenIssuerType,correlationId,processingTimeinMilliseconds",
           "ChangeType": "Addition",
@@ -331,7 +349,7 @@
           "Target": "signIn API"
         }
       ],
-      "Id": "6b91e5ba-3d44-44f1-b862-92e5957db77a",
+      "Id": "a88dc26c-0c96-486f-88a1-406b9d04d896",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00",
@@ -341,7 +359,7 @@
     {
       "ChangeList": [
         {
-          "Id": "c057b082-f6d4-4ad8-9178-744f2f97a3a6",
+          "Id": "44fb4940-d143-4829-a1e0-8d5f0ac3e4c7",
           "ApiChange": "Property",
           "ChangedApiName": "Site ID",
           "ChangeType": "Addition",
@@ -349,7 +367,7 @@
           "Target": "getSharePointSiteUsageDetail"
         }
       ],
-      "Id": "c057b082-f6d4-4ad8-9178-744f2f97a3a6",
+      "Id": "44fb4940-d143-4829-a1e0-8d5f0ac3e4c7",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-10-01T00:00:00",
@@ -359,7 +377,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a7972913-d45f-4f75-99f5-d126a270409a",
+          "Id": "e3e8c2e9-958d-40f2-9de7-88f4d90a5805",
           "ApiChange": "Resource",
           "ChangedApiName": "directoryAudit,signIn",
           "ChangeType": "Addition",
@@ -367,7 +385,7 @@
           "Target": "directoryAudit,signIn"
         },
         {
-          "Id": "a7972913-d45f-4f75-99f5-d126a270409a",
+          "Id": "e3e8c2e9-958d-40f2-9de7-88f4d90a5805",
           "ApiChange": "Resource",
           "ChangedApiName": "appIndentity,auditActivityInitiator,conditionalAccessPolicy,deviceDetail,mfaDetail,modifiedProperty,signinLocation,signinStatus,targetResource,targetResourceApp,targetResourceDevice,targetResourceDirectory,targetResourceGroup,targetResourceOther,targetResourcePolicy,targetResourceRole,targetResourceServicePrincipal,targetResourceUser,userIdentity",
           "ChangeType": "Addition",
@@ -375,7 +393,7 @@
           "Target": "appIndentity,auditActivityInitiator,conditionalAccessPolicy,deviceDetail,mfaDetail,modifiedProperty,signinLocation,signinStatus,targetResource,targetResourceApp,targetResourceDevice,targetResourceDirectory,targetResourceGroup,targetResourceOther,targetResourcePolicy,targetResourceRole,targetResourceServicePrincipal,targetResourceUser,userIdentity"
         }
       ],
-      "Id": "a7972913-d45f-4f75-99f5-d126a270409a",
+      "Id": "e3e8c2e9-958d-40f2-9de7-88f4d90a5805",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",
@@ -385,7 +403,7 @@
     {
       "ChangeList": [
         {
-          "Id": "94402af7-fc91-4ce6-8448-c255e8087c50",
+          "Id": "fbd6fc8d-2d29-43d7-b955-1d205c4b8e0b",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -393,7 +411,7 @@
           "Target": ""
         }
       ],
-      "Id": "94402af7-fc91-4ce6-8448-c255e8087c50",
+      "Id": "fbd6fc8d-2d29-43d7-b955-1d205c4b8e0b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",
@@ -403,7 +421,7 @@
     {
       "ChangeList": [
         {
-          "Id": "94402af7-fc91-4ce6-8448-c255e8087c50",
+          "Id": "fbd6fc8d-2d29-43d7-b955-1d205c4b8e0b",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -411,7 +429,7 @@
           "Target": ""
         }
       ],
-      "Id": "94402af7-fc91-4ce6-8448-c255e8087c50",
+      "Id": "fbd6fc8d-2d29-43d7-b955-1d205c4b8e0b",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-04-01T00:00:00",
@@ -421,7 +439,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a04f0a36-27a7-4b15-8e6e-0814590c86e5",
+          "Id": "eccb399a-8c03-448e-9246-5c1d5636eb14",
           "ApiChange": "Property",
           "ChangedApiName": "siteId",
           "ChangeType": "Addition",
@@ -429,7 +447,7 @@
           "Target": "sharePointSiteUsageDetail"
         }
       ],
-      "Id": "a04f0a36-27a7-4b15-8e6e-0814590c86e5",
+      "Id": "eccb399a-8c03-448e-9246-5c1d5636eb14",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-03-01T00:00:00",
@@ -439,7 +457,7 @@
     {
       "ChangeList": [
         {
-          "Id": "0839f0e5-53cd-461a-99e2-21658b14c162",
+          "Id": "1c74a859-b4e2-4644-a7c4-83d94a600a3d",
           "ApiChange": "Property",
           "ChangedApiName": "activatedOnSharedComputer",
           "ChangeType": "Addition",
@@ -447,7 +465,7 @@
           "Target": "userActivationCounts"
         },
         {
-          "Id": "0839f0e5-53cd-461a-99e2-21658b14c162",
+          "Id": "1c74a859-b4e2-4644-a7c4-83d94a600a3d",
           "ApiChange": "Property",
           "ChangedApiName": "sharedComputerActivation",
           "ChangeType": "Addition",
@@ -455,7 +473,7 @@
           "Target": "office365ActivationsUserCounts"
         }
       ],
-      "Id": "0839f0e5-53cd-461a-99e2-21658b14c162",
+      "Id": "1c74a859-b4e2-4644-a7c4-83d94a600a3d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-02-01T00:00:00",
@@ -465,7 +483,7 @@
     {
       "ChangeList": [
         {
-          "Id": "039e1505-4ba1-4f78-afbd-8b0476e804a0",
+          "Id": "5a47f68b-6e4a-45a8-8365-973f028be22f",
           "ApiChange": "Resource",
           "ChangedApiName": "getTeamsUserActivityUserDetail,getTeamsUserActivityCounts,getTeamsUserActivityUserCounts,getTeamsDeviceUsageUserDetail,getTeamsDeviceUsageUserCounts,getTeamsDeviceUsageDistributionUserCounts",
           "ChangeType": "Addition",
@@ -473,7 +491,7 @@
           "Target": "getTeamsUserActivityUserDetail,getTeamsUserActivityCounts,getTeamsUserActivityUserCounts,getTeamsDeviceUsageUserDetail,getTeamsDeviceUsageUserCounts,getTeamsDeviceUsageDistributionUserCounts"
         }
       ],
-      "Id": "039e1505-4ba1-4f78-afbd-8b0476e804a0",
+      "Id": "5a47f68b-6e4a-45a8-8365-973f028be22f",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-12-01T00:00:00",
@@ -483,7 +501,7 @@
     {
       "ChangeList": [
         {
-          "Id": "039e1505-4ba1-4f78-afbd-8b0476e804a0",
+          "Id": "5a47f68b-6e4a-45a8-8365-973f028be22f",
           "ApiChange": "Resource",
           "ChangedApiName": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts,getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts,getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts,getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts",
           "ChangeType": "Addition",
@@ -491,7 +509,7 @@
           "Target": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts,getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts,getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts,getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts"
         }
       ],
-      "Id": "039e1505-4ba1-4f78-afbd-8b0476e804a0",
+      "Id": "5a47f68b-6e4a-45a8-8365-973f028be22f",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-12-01T00:00:00",
@@ -501,7 +519,7 @@
     {
       "ChangeList": [
         {
-          "Id": "aa4f4b89-d0ec-4fcb-baf4-1688761c3cae",
+          "Id": "c418f360-f6c1-49e4-ba2d-2c8afea82476",
           "ApiChange": "Resource",
           "ChangedApiName": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts,getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts,getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts,getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts",
           "ChangeType": "Addition",
@@ -509,7 +527,7 @@
           "Target": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts,getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts,getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage,getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts,getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts,getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts,getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts,getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage,getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages,getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages,getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts,getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts,getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts,getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts,getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts,getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts,getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts,getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts"
         }
       ],
-      "Id": "aa4f4b89-d0ec-4fcb-baf4-1688761c3cae",
+      "Id": "c418f360-f6c1-49e4-ba2d-2c8afea82476",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-11-01T00:00:00",
@@ -519,7 +537,7 @@
     {
       "ChangeList": [
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts",
           "ChangeType": "Change",
@@ -527,7 +545,7 @@
           "Target": "getEmailActivityUserDetail,getEmailActivityCounts,getEmailActivityUserCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts",
           "ChangeType": "Change",
@@ -535,7 +553,7 @@
           "Target": "getEmailAppUsageUserDetail,getEmailAppUsageAppsUserCounts,getEmailAppUsageUserCounts,getEmailAppUsageVersionsUserCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage",
           "ChangeType": "Change",
@@ -543,7 +561,7 @@
           "Target": "getMailboxUsageDetail,getMailboxUsageMailboxCounts,getMailboxUsageQuotaStatusMailboxCounts,getMailboxUsageStorage"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts",
           "ChangeType": "Change",
@@ -551,7 +569,7 @@
           "Target": "getOffice365ActivationsUserDetail,getOffice365ActivationCounts,getOffice365ActivationsUserCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts",
           "ChangeType": "Change",
@@ -559,7 +577,7 @@
           "Target": "getOffice365ActiveUserDetail,getOffice365ActiveUserCounts,getOffice365ServicesUserCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts",
           "ChangeType": "Change",
@@ -567,7 +585,7 @@
           "Target": "getOffice365GroupsActivityDetail,getOffice365GroupsActivityCounts,getOffice365GroupsActivityGroupCounts,getOffice365GroupsActivityStorage,getOffice365GroupsActivityFileCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts",
           "ChangeType": "Change",
@@ -575,7 +593,7 @@
           "Target": "getOneDriveActivityUserDetail,getOneDriveActivityUserCounts,getOneDriveActivityFileCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage",
           "ChangeType": "Change",
@@ -583,7 +601,7 @@
           "Target": "getOneDriveUsageAccountDetail,getOneDriveUsageAccountCounts,getOneDriveUsageFileCounts,getOneDriveUsageStorage"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages",
           "ChangeType": "Change",
@@ -591,7 +609,7 @@
           "Target": "getSharePointActivityUserDetail,getSharePointActivityFileCounts,getSharePointActivityUserCounts,getSharePointActivityPages"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages",
           "ChangeType": "Change",
@@ -599,7 +617,7 @@
           "Target": "getSharePointSiteUsageDetail,getSharePointSiteUsageFileCounts,getSharePointSiteUsageSiteCounts,getSharePointSiteUsageStorage,getSharePointSiteUsagePages"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts",
           "ChangeType": "Change",
@@ -607,7 +625,7 @@
           "Target": "getSkypeForBusinessActivityUserDetail,getSkypeForBusinessActivityCounts,getSkypeForBusinessActivityUserCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts",
           "ChangeType": "Change",
@@ -615,7 +633,7 @@
           "Target": "getSkypeForBusinessDeviceUsageUserDetail,getSkypeForBusinessDeviceUsageDistributionUserCounts,getSkypeForBusinessDeviceUsageUserCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts",
           "ChangeType": "Change",
@@ -623,7 +641,7 @@
           "Target": "getSkypeForBusinessOrganizerActivityCounts,getSkypeForBusinessOrganizerActivityUserCounts,getSkypeForBusinessOrganizerActivityMinuteCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts",
           "ChangeType": "Change",
@@ -631,7 +649,7 @@
           "Target": "getSkypeForBusinessParticipantActivityCounts,getSkypeForBusinessParticipantActivityUserCounts,getSkypeForBusinessParticipantActivityMinuteCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts",
           "ChangeType": "Change",
@@ -639,7 +657,7 @@
           "Target": "getSkypeForBusinessPeerToPeerActivityCounts,getSkypeForBusinessPeerToPeerActivityUserCounts,getSkypeForBusinessPeerToPeerActivityMinuteCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts",
           "ChangeType": "Change",
@@ -647,7 +665,7 @@
           "Target": "getYammerActivityUserDetail,getYammerActivityCounts,getYammerActivityUserCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts",
           "ChangeType": "Change",
@@ -655,7 +673,7 @@
           "Target": "getYammerDeviceUsageUserDetail,getYammerDeviceUsageDistributionUserCounts,getYammerDeviceUsageUserCounts"
         },
         {
-          "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+          "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
           "ApiChange": "Resource",
           "ChangedApiName": "getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts",
           "ChangeType": "Change",
@@ -663,7 +681,7 @@
           "Target": "getYammerGroupsActivityDetail,getYammerGroupsActivityGroupCounts,getYammerGroupsActivityCounts"
         }
       ],
-      "Id": "ae45ed68-453e-4b2a-9843-66bb1e8b1f49",
+      "Id": "956a2a61-b060-449b-97a0-299da94dedc2",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-10-01T00:00:00",
@@ -673,7 +691,7 @@
     {
       "ChangeList": [
         {
-          "Id": "13322544-770d-4e94-ad52-208353218989",
+          "Id": "3e486b61-1220-49a7-bed5-7573268d1b21",
           "ApiChange": "Resource",
           "ChangedApiName": "report",
           "ChangeType": "Addition",
@@ -681,7 +699,7 @@
           "Target": "report"
         }
       ],
-      "Id": "13322544-770d-4e94-ad52-208353218989",
+      "Id": "3e486b61-1220-49a7-bed5-7573268d1b21",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-03-01T00:00:00",

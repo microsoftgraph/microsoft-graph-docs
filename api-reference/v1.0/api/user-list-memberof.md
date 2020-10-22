@@ -36,6 +36,7 @@ GET /users/{id | userPrincipalName}/memberOf
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response. $filter is not supported. 
 
 ## Request headers

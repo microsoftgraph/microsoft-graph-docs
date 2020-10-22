@@ -1,4 +1,4 @@
----
+﻿---
 title: "Reduce missing subscriptions and change notifications for Outlook resources (preview)"
 description: "Outlook might suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `subscriptionRemoved` and `missed` - need to be handled to ensure uninterrupted delivery of change notifications."
 author: "davidmu1"
@@ -49,7 +49,7 @@ Content-Type: application/json
   "clientState": "<secretClientState>"
 }
 ```
- 
+
 > **Important:** Use the same hostname for both notifications URLs. 
 
 > **Note:** You need to validate both endpoints as described in [Managing subscriptions](webhooks.md#managing-subscriptions).
@@ -64,7 +64,7 @@ The `subscriptionRemoved` lifecycle notification informs you that a subscription
 You can create a long-lived subscription (3 days), and change notifications will start flowing to the **notificationUrl**. However, the conditions of access to the resource data might change over time. For example, an event in the Outlook service might occur that requires the app to re-authenticate the user. In such a case, the flow is as follows:
 
 1. Outlook detects that a subscription needs to be removed from Microsoft Graph.
-    
+
     There is no set cadence for these events. They might occur frequently for some resources, and almost never for others.
 
 2. Microsoft Graph sends a `subscriptionRemoved` lifecycle notification to the **lifecycleNotificationUrl** (if specified).  
@@ -158,7 +158,7 @@ You can create a long-lived subscription (3 days), which enables change notifica
 The following steps represent the flow of an authorization challenge for an active subscription:
 
 1. Microsoft Graph requires a subscription to be reauthorized.
-    
+
     The reasons for this may vary from resource to resource, and may change over time. You must respond to a reauthorization event no matter what caused it.
 
 2. Microsoft Graph sends an authorization challenge notification to the **lifecycleNotificationUrl**.
@@ -207,22 +207,25 @@ A few things to note about this type of notification:
 4. Call either of the following two APIs. If the API call succeeds, the change notification flow resumes.
 
     - Call the `/reauthorize` action to reauthorize the subscription without extending its expiration date:
-        ```http
+
+```http
         POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
         Content-type: application/json
-        ```
+```
+
     - Perform a regular renew action to reauthorize and renew the subscription at the same time:
-        ```http
+
+```http
         PATCH https://graph.microsoft.com/beta/subscriptions/{id}
         Content-Type: application/json
 
         {
            "expirationDateTime": "2019-09-21T11:00:00.0000000Z"
         }
-        ```
+```
 
       Renewing may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully reauthorize a subscription. 
-      
+
       You may retry these actions later, at any time, and succeed if the conditions of access change. Any notifications about resource changes that happen between the time the lifecycle notification was sent and the time when the app successfully creates the subscription again, would be lost. In such cases, the app should separately fetch those changes.
 
 ### Additional information

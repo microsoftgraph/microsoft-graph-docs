@@ -1,11 +1,10 @@
----
+﻿---
 title: "Create absolute positioned elements in OneNote pages"
 description: "The body of a OneNote page can contain multiple direct `div`, `img`, and `object` child elements that can be positioned independently on the page."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
 ---
-
 
 # Create absolute positioned elements in OneNote pages
 
@@ -31,14 +30,13 @@ Use the `data-absolute-enabled` and [`style`](#supported-css-style-attributes) a
 
 - Absolute positioned elements cannot be nested or contain positioned elements. The API ignores any position settings specified on nested elements inside an absolute positioned div, renders the nested content inside the absolute positioned parent div, and returns a warning in the **api.diagnostics** property in the response.
 
-
 ### Example
 
 The following example contains a direct `p` child, an absolute positioned div, and a non-absolute positioned div.
 
 #### Input HTML  
 
-   ```html 
+```html
    <body data-absolute-enabled="true">
        <p>This content will appear in the _default div.</p>
        <div style="position:absolute;top:175px;left:100px" data-id="div1">
@@ -48,13 +46,13 @@ The following example contains a direct `p` child, an absolute positioned div, a
            <p>This content will also appear in the _default div.</p>
        </div>
    </body>
-   ```
+```
 
 The API renders the non-absolute positioned div in the default div. Note that the nested `<div>` tags are discarded because they do not define any semantic information (such as `data-id`).
 
 #### Output HTML 
 
-   ```html 
+```html
    <body data-absolute-enabled="true" style="font-family:Calibri;font-size:11pt">
        <div data-id="_default" style="position:absolute;left:48px;top:120px;width:624px">
            <p>This content will appear in the _default div.</p>
@@ -64,16 +62,15 @@ The API renders the non-absolute positioned div in the default div. Note that th
            <p>This content will appear in an absolute positioned div.</p>
        </div>
    </body>
-   ```
+```
 
 ### Example
 
 The following example creates a page that contains one absolute positioned div and one absolute positioned image.
 
-
 #### Input HTML  
 
-```html 
+```html
 <html>
     <head>
         <title>Page Title</title>
@@ -90,7 +87,7 @@ The following example creates a page that contains one absolute positioned div a
     </body>
 </html>
 ```
- 
+
 The OneNote API evaluates the input HTML and preserves all semantic content and any structural information that is supported by OneNote. The resulting page renders as shown in the following image (but without the visible borders for the div and image). 
 
 ![Resulting page with absolute positioned div and image](images/abs-pos.png)
@@ -109,15 +106,14 @@ All absolute positioned elements can specify top and left positions. Divs and im
 <img style="position:absolute;top:140px;left:95px;width:480px;height:665px" src="..." />
 ```
 
-| Attribute | Supported element | Description |  
-|:------|:------|:------|  
-| top | div, img, object | The y-axis coordinate of the element's top border, in pixels only. Default is 120 pixels.<br/><br/>Example: `top:140px` |  
-| left |  div, img, object  | The x-axis coordinate of the element's left border, in pixels only. Default is 48 pixels.<br/><br/>Example: `left:95px` |  
-| width |  div, img  | The width of the element, in pixels only.<br/><br/>Example: `width:480px` |  
-| height | img | The height of the element, in pixels only. For divs, height is calculated at runtime and any specified height value is ignored.<br/><br/>Example: `height:665px` |  
- 
-Other position attributes, such as `z-index`, are ignored. Absolute positioned images can use either the `data-render-src` or `src` attribute.
+| Attribute | Supported element | Description                                                                                                                                                      |
+| :-------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| top       | div, img, object  | The y-axis coordinate of the element's top border, in pixels only. Default is 120 pixels.<br/><br/>Example: `top:140px`                                          |
+| left      | div, img, object  | The x-axis coordinate of the element's left border, in pixels only. Default is 48 pixels.<br/><br/>Example: `left:95px`                                          |
+| width     | div, img          | The width of the element, in pixels only.<br/><br/>Example: `width:480px`                                                                                        |
+| height    | img               | The height of the element, in pixels only. For divs, height is calculated at runtime and any specified height value is ignored.<br/><br/>Example: `height:665px` |
 
+Other position attributes, such as `z-index`, are ignored. Absolute positioned images can use either the `data-render-src` or `src` attribute.
 
 <a name="request-response-info"></a>
 
@@ -125,12 +121,10 @@ Other position attributes, such as `z-index`, are ignored. Absolute positioned i
 
 The OneNote API returns the following information in the response.
 
-| Response data | Description |  
-|:------|:------|  
-| Success code | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request. |  
-| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
-  
-
+| Response data | Description                                                                                                                                   |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| Success code  | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request.                              |
+| Errors        | Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |
 
 <a name="permissions"></a>
 
@@ -144,14 +138,12 @@ To create or update OneNote pages, you'll need to request appropriate permission
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
-
 #### Permissions for PATCH pages 
 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
 
 For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md#notes-permissions).
-
 
 <a name="see-also"></a>
 
@@ -163,4 +155,3 @@ For more information about permission scopes and how they work, see [OneNote per
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
-

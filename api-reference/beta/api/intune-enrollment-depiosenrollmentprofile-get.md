@@ -74,7 +74,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2200
+Content-Length: 2288
 
 {
   "value": {
@@ -89,7 +89,6 @@ Content-Length: 2200
     "isDefault": true,
     "supervisedModeEnabled": true,
     "supportDepartment": "Support Department value",
-    "passCodeDisabled": true,
     "isMandatory": true,
     "locationDisabled": true,
     "supportPhoneNumber": "Support Phone Number value",
@@ -99,7 +98,6 @@ Content-Length: 2200
     "termsAndConditionsDisabled": true,
     "touchIdDisabled": true,
     "applePayDisabled": true,
-    "zoomDisabled": true,
     "siriDisabled": true,
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
@@ -131,7 +129,11 @@ Content-Length: 2200
     "expressLanguageScreenDisabled": true,
     "preferredLanguageScreenDisabled": true,
     "deviceToDeviceMigrationDisabled": true,
-    "welcomeScreenDisabled": true
+    "welcomeScreenDisabled": true,
+    "passCodeDisabled": true,
+    "zoomDisabled": true,
+    "restoreCompletedScreenDisabled": true,
+    "updateCompleteScreenDisabled": true
   }
 }
 ```

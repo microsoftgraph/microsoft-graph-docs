@@ -1,4 +1,4 @@
----
+﻿---
 title: "Branding guidelines for OneNote API developers "
 description: " "
 author: "jewan-microsoft"
@@ -7,7 +7,7 @@ ms.prod: "onenote"
 ---
 
 # Branding guidelines for OneNote API developers 
- 
+
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
 Follow the guidance in this article to best integrate the OneNote brand within your product and satisfy OneNote branding requirements.
@@ -42,7 +42,6 @@ Treat the logo with respect and give it room to breathe. A minimum clear space e
 
 ![Logo showing clear psace that is the height of the symbol](images/onenotelogoclearspace.png)
 
-
 <a name="size"></a>
 
 ## Minimum size 
@@ -50,11 +49,10 @@ Treat the logo with respect and give it room to breathe. A minimum clear space e
 The logo should be at least 16 pixels high when it appears on-screen and at least 5 mm (0.2 inches) high when it appears in print.
 
 **Screen:**&nbsp;&nbsp;16 pixels
- 
+
 **Print:**&nbsp;&nbsp;5 mm (0.2 inches) 
 
 ![Logo showing the minimum size for screen and print](images/onenotelogominsize.png)
-
 
 <a name="color"></a>
 
@@ -67,8 +65,9 @@ When the OneNote logo is used on white or light backgrounds, the preferred logo 
 **Print:**&nbsp;&nbsp;C75 M100 Y0 K0 
 
   ![Logo shwoing the preferred brand color with white and brand color backgrounds](images/onenotelogobgs.png)
- 
+
 In color-limited environments and one-color designs, the logo can appear in black. However, the logo should never appear in gray.
+
 <!--or white?-->
 
 <a name="do-nots"></a>
@@ -121,7 +120,6 @@ In color-limited environments and one-color designs, the logo can appear in blac
 
 ![Custom icon](images/onenotelogodonts8.png)
 
- 
 <a name="name"></a>
 
 ## Referencing the OneNote name
@@ -129,16 +127,16 @@ In color-limited environments and one-color designs, the logo can appear in blac
 **Full name:**&nbsp;&nbsp;Microsoft OneNote 
 
 **Short name:**&nbsp;&nbsp;OneNote
- 
+
 See the following table for details about how to refer to OneNote in various contexts.
 
-| Context | Usage |
-|------|------|
-| App names | To avoid confusing consumers within the app stores, we prefer that *OneNote* not be included in the name of your app. If it’s determined that *OneNote* must be used in the app name, *OneNote* must be modified by a preposition (for example, *for OneNote* or *with OneNote*).<br/><br/>Example:&nbsp;&nbsp;*Proseware for OneNote*<br/><br/>Under no circumstances can the name of your app begin with *OneNote*.
-| Publisher names | The publisher’s name may not include a reference to *OneNote*. The publisher’s name may not infringe upon any Microsoft trademarks. |
-| Indicating interoperability with OneNote | **Recommended:**&nbsp;&nbsp;Send to OneNote<br/><br/>**Acceptable:**&nbsp;&nbsp;Share with OneNote<br/>Acceptable when used in reference to "sharing" with other applications—for example, *Share with OneNote, Facebook, or Twitter.*)<br/><br/>**Never:**&nbsp;&nbsp;Save to OneNote<br/>This is technically incorrect. |
-| General marketing (including app descriptions) | The first mention in a communication should use the full name: *Microsoft OneNote*.<br /><br />Subsequent references in the communication can use the short name: *OneNote*.
- 
+| Context                                        | Usage                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| App names                                      | To avoid confusing consumers within the app stores, we prefer that *OneNote* not be included in the name of your app. If it’s determined that *OneNote* must be used in the app name, *OneNote* must be modified by a preposition (for example, *for OneNote* or *with OneNote*).<br/><br/>Example:&nbsp;&nbsp;*Proseware for OneNote*<br/><br/>Under no circumstances can the name of your app begin with *OneNote*. |
+| Publisher names                                | The publisher’s name may not include a reference to *OneNote*. The publisher’s name may not infringe upon any Microsoft trademarks.                                                                                                                                                                                                                                                                                   |
+| Indicating interoperability with OneNote       | **Recommended:**&nbsp;&nbsp;Send to OneNote<br/><br/>**Acceptable:**&nbsp;&nbsp;Share with OneNote<br/>Acceptable when used in reference to "sharing" with other applications—for example, *Share with OneNote, Facebook, or Twitter.*)<br/><br/>**Never:**&nbsp;&nbsp;Save to OneNote<br/>This is technically incorrect.                                                                                             |
+| General marketing (including app descriptions) | The first mention in a communication should use the full name: *Microsoft OneNote*.<br /><br />Subsequent references in the communication can use the short name: *OneNote*.                                                                                                                                                                                                                                          |
+
 <a name="examples"></a>
 
 ## Examples
@@ -167,7 +165,6 @@ See the following table for details about how to refer to OneNote in various con
 
 ![Another view of a good example of logo in packaging](images/onenoteusagepackaging2.png)
 
-
 If you have any questions about these guidelines or are creating new communications using the brand assets shown here, contact us at [@onenotedev](https://twitter.com/onenotedev).
 
 ## See also
@@ -177,5 +174,3 @@ If you have any questions about these guidelines or are creating new communicati
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
-

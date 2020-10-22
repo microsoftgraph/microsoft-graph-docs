@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Graph Toolkit providers"
 description: "The Microsoft Graph Toolkit providers enable authentication and Microsoft Graph access for all components."
 localization_priority: Normal

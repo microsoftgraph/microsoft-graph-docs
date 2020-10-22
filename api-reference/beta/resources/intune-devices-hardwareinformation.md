@@ -48,6 +48,8 @@ Hardware information of a given device.
 | deviceGuardLocalSystemAuthorityCredentialGuardState            | [deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)                       | Local System Authority (LSA) credential guard status. . Possible values are: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.                               |
 | osBuildNumber                                                  | String                                                                                                                                                          | Operating System Build Number on Android device                                                                                                                                                                  |
 | operatingSystemProductType                                     | Int32                                                                                                                                                           | Int that specifies the Windows Operating System ProductType. More details here https://go.microsoft.com/fwlink/?linkid=2126950. Valid values 0 to 2147483647                                                     |
+| ipAddressV4                                                    | String                                                                                                                                                          | IPAddressV4                                                                                                                                                                                                      |
+| subnetAddress                                                  | String                                                                                                                                                          | SubnetAddress                                                                                                                                                                                                    |
 
 ## Relationships
 
@@ -100,6 +102,8 @@ Here is a JSON representation of the resource.
   "deviceGuardVirtualizationBasedSecurityState": "String",
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
   "osBuildNumber": "String",
-  "operatingSystemProductType": 1024
+  "operatingSystemProductType": 1024,
+  "ipAddressV4": "String",
+  "subnetAddress": "String"
 }
 ```

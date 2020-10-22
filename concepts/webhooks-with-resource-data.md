@@ -1,4 +1,4 @@
----
+﻿---
 title: "Set up change notifications that include resource data"
 description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Change notifications can include resource properties."
 author: "davidmu1"
@@ -23,7 +23,6 @@ In general, this type of change notifications include the following resource dat
 - ID and type of the changed resource instance, returned in the **resourceData** property.
 - All the property values of that resource instance, encrypted as specified in the subscription, returned in the **encryptedContent** property.
 - Or, depending on the resource, specific properties returned in the **resourceData** property. To get only specific properties, specify them as part of the **resource** URL in the subscription, using a `$select` parameter.  
-
 
 ## Supported resources
 
@@ -69,6 +68,7 @@ Content-Type: application/json
 ```
 
 ### Subscription response
+
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -164,12 +164,10 @@ Use the following steps to validate tokens and apps that generate tokens:
     - Validate the "audience" in the token matches your app ID.
     - If you have more than one app receiving change notifications, make sure to check for multiple IDs.
 
-
 4. **Critical**: Validate that the app that generated the token represents the Microsoft Graph change notification publisher. 
 
     - Check that the **appid** property in the token matches the expected value of `0bf30f3b-4a52-48df-9a82-234910c4a086`.
     - This ensures that change notifications are not sent by a different app that is not Microsoft Graph.
-
 
 ### Example JWT token
 
@@ -225,6 +223,7 @@ public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable
     }
 }
 ```
+
 ```java
 private boolean IsValidationTokenValid(String[] appIds, String tenantId, String serializedToken) {
 	try {
@@ -248,6 +247,7 @@ private boolean IsValidationTokenValid(String[] appIds, String tenantId, String 
 	}
 }
 ```
+
 ```JavaScript
 import jwt from 'jsonwebtoken';
 import jkwsClient from 'jwks-rsa';
@@ -281,7 +281,9 @@ export function isTokenValid(token, appId, tenantId) {
   });
 }
 ```
+
 For the Java sample to work, you will also need to implement the `JwkKeyResolver`.  
+
 ```java
 package com.example.restservice;
 
@@ -342,7 +344,7 @@ In this section:
 
     - Provide the certificate in the **encryptionCertificate** property, using the base64-encoded content that the certificate was exported in.
     - Provide your own identifier in the **encryptionCertificateId** property. 
-  
+
         This identifier allows you to match your certificates to the change notifications you receive, and to retrieve certificates from your certificate store. The identifier can be up to 128 characters.
 
 4. Manage the private key securely, so that your change notification processing code can access the private key to decrypt resource data.
@@ -382,7 +384,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
     Use Optimal Asymmetric Encryption Padding (OAEP) for the decryption algorithm.
 
 4. Use the symmetric key to calculate the HMAC-SHA256 signature of the value in **data**.
-  
+
     Compare it to the value in **dataSignature**. If they do not match, assume the payload has been tampered with and do not decrypt it.
 
 5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **data**.
@@ -394,7 +396,6 @@ To decrypt resource data, your app should perform the reverse steps, using the p
     - Set the "initialization vector" by copying the first 16 bytes of the symmetric key used for decryption.
 
 6. The decrypted value is a JSON string that represents the resource instance in the change notification.
-
 
 ### Example: decrypting a notification with encrypted resource data
 
@@ -430,7 +431,6 @@ The following is an example change notification that includes encrypted property
 
 > **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
-
 This section contains some useful code snippets that use C# and .NET for each stage of decryption.
 
 #### Decrypt the symmetric key
@@ -445,6 +445,7 @@ byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP:
 
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
+
 ```Java
 String storename = ""; //name/path of the jks store
 String storepass = ""; //password used to open the jks store
@@ -458,6 +459,7 @@ cipher.init(Cipher.DECRYPT_MODE, asymmetricKey);
 byte[] decryptedSymmetricKey = cipher.doFinal(encryptedSymetricKey);
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
+
 ```JavaScript
 const base64encodedKey = 'base 64 encoded dataKey value';
 const asymetricPrivateKey = 'pem encoded private key';
@@ -487,6 +489,7 @@ else
     // Do not attempt to decrypt encryptedPayload. Assume notification payload has been tampered with and investigate.
 }
 ```
+
 ```Java
 byte[] decryptedSymmetricKey = "<the aes key decrypted in the previous step>";
 byte[] decodedEncryptedData = Base64.decodeBase64("data property from encryptedContent object");
@@ -504,6 +507,7 @@ else
     // Do not attempt to decrypt encryptedPayload. Assume notification payload has been tampered with and investigate.
 }
 ```
+
 ```JavaScript
 const decryptedSymetricKey = []; //Buffer provided by previous step
 const base64encodedSignature = 'base64 encodded value from the dataSignature property';
@@ -553,6 +557,7 @@ using (var decryptor = aesProvider.CreateDecryptor())
 
 // decryptedResourceData now contains a JSON string that represents the resource.
 ```
+
 ```Java
 SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "AES");
 IvParameterSpec ivspec = new IvParameterSpec(Arrays.copyOf(decryptedSymmetricKey, 16));
@@ -560,6 +565,7 @@ Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
 cipher.init(Cipher.DECRYPT_MODE, skey, ivspec);
 String decryptedResourceData = new String(cipher.doFinal(Base64.decodeBase64(encryptedData)));
 ```
+
 ```JavaScript
 const base64encodedPayload = 'base64 encoded value from data property';
 const decryptedSymetricKey = []; //Buffer provided by previous step

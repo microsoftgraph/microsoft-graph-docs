@@ -1,4 +1,4 @@
----
+﻿---
 title: "Propose new meeting times in Outlook"
 description: "In Outlook, a meeting organizer can allow invitees to propose alternative meeting times."
 author: "angelgolfer-ms"
@@ -11,6 +11,7 @@ ms.prod: "outlook"
 In Outlook, a meeting organizer can allow invitees to propose alternative meeting times, if they cannot meet at the original set date/time and accept tentatively or decline. The organizer can accept a proposal by adjusting the meeting time as appropriate.
 
 ## Example: attendee responds tentative and suggests a different date/time
+
 The following is an example where Alex invites Adele to lunch, Adele tentatively accepts and proposes an alternative date and time, and Alex accepts the proposal by adjusting the meeting accordingly:
 
 1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-1.0) to `true` to let Adele suggest another time if she needs to.
@@ -19,7 +20,8 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "blockType": "request",
       "name": "create_event"
     }-->
-    ```http
+
+```http
     POST https://graph.microsoft.com/v1.0/me/events
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
@@ -52,16 +54,18 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
         }
       ]
     }
-    ```
+```
 
     Alex gets the following response: 
+
     <!-- {
       "blockType": "response",
       "name": "create_event",
       "truncated": true,
       "@odata.type": "microsoft.graph.event"
     } -->
-    ```http
+
+```http
     HTTP/1.1 201 Created
     Content-type: application/json
 
@@ -144,7 +148,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
         }
       }
     }
-    ```
+```
 
 2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0). She notices the **allowNewTimeProposals** property is set. [Using the **event** associated](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
 
@@ -152,7 +156,8 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "blockType": "request",
       "name": "event_tentativelyaccept"
     }-->
-    ```http
+
+```http
     POST https://graph.microsoft.com/v1.0/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
     Content-type: application/json
 
@@ -170,7 +175,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
          }
       }
     } 
-    ```
+```
 
     Adele's reply succeeds and she gets the following response:
 
@@ -179,9 +184,10 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "name": "event_tentativelyaccept"
       "truncated": true
     } -->
-    ```http
+
+```http
     HTTP/1.1 202 Accepted
-    ```
+```
 
 3. Alex receives an email of the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) type. He notices the following:
 
@@ -194,10 +200,11 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "blockType": "request",
       "name": "get_messages"
     }-->
-    ```http
+
+```http
     GET https://graph.microsoft.com/v1.0/me/messages?$top=1
     Prefer: outlook.timezone="Pacific Standard Time"
-    ```
+```
 
     For demonstration purpose, assume Adele's reply is the latest message in Alex' mailbox, and Alex can simply request that latest message.
 
@@ -208,7 +215,8 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "@odata.type": "microsoft.graph.message",
       "isCollection": true
     } -->
-    ```http
+
+```http
     HTTP/1.1 200 OK
     Content-type: application/json
     Preference-Applied: outlook.timezone="Pacific Standard Time"
@@ -306,7 +314,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
          }
         ]
     }
-    ```
+```
 
 4. Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal. This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) instance if the corresponding attendee has suggested an alternative meeting time. 
 
@@ -314,10 +322,11 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "blockType": "request",
       "name": "event_get"
     }-->
-    ```http
+
+```http
     GET https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
     Prefer: outlook.timezone="Pacific Standard Time"
-    ```
+```
 
     <!-- {
       "blockType": "response",
@@ -325,7 +334,8 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "truncated": true,
       "@odata.type": "microsoft.graph.event"
     } -->
-    ```http
+
+```http
     HTTP/1.1 200 Ok
 
     {
@@ -372,8 +382,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             }
         }
     }
-    ```
-
+```
 
 5. Alex decides to accept Adele's proposal by updating the **event** to the proposed **start** and **end** date/time.
 
@@ -381,7 +390,8 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "blockType": "request",
       "name": "event_update"
     }-->
-    ```http
+
+```http
     PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
@@ -396,7 +406,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             "timeZone": "Pacific Standard Time"
         }
     }
-    ```
+```
 
     Alex's update succeeds and gets the following response.
 
@@ -406,7 +416,8 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
       "truncated": true,
       "@odata.type": "microsoft.graph.event"
     } -->
-    ```http
+
+```http
     HTTP/1.1 200 Ok
 
     {
@@ -488,8 +499,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
         }
       }
     }
-    ```
-
+```
 
 ## No attendee proposes alternative time
 
@@ -499,6 +509,7 @@ In step 2, if Adele replied tentative or declined, and did not propose a differe
 - In step 4, Alex would not find a **proposedNewTime** property in the associated **event** either.
 
 ## See also
+
 - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
 - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
 - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)

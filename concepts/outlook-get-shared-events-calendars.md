@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get shared or delegated Outlook calendar and its events"
 description: "In Outlook, a calendar owner can share a calendar with other users and let them view or modify events in that calendar; the calendar can be a custom calendar or the primary calendar. The owner can also grant a delegate to act on their behalf, to receive or respond to meeting requests, or create or change items in the primary calendar of the email account."
 author: "angelgolfer-ms"
@@ -26,6 +26,7 @@ The three examples specify the owner's identity (Alex' user ID or user principal
 Signed in as Megan, get the primary calendar that Alex has shared with Megan, directly from Alex' mailbox:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/v1.0/users/{Alex-userId | Alex-userPrincipalName}/calendar
 ```
@@ -37,6 +38,7 @@ On successful completion, you'll get HTTP 200 OK and a [calendar](/graph/api/res
 Signed in as Megan, your app can get a specific event in the primary calendar that Alex has shared with Megan, directly from Alex' mailbox:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/v1.0/users/{Alex-userId | Alex-userPrincipalName}/calendar/events/{id}
 ```
@@ -48,6 +50,7 @@ On successful completion, you'll get HTTP 200 OK and the [event](/graph/api/reso
 Signed in as Megan, get all the events in the primary calendar that Alex has shared with Megan, directly from Alex' mailbox:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/v1.0/users/{Alex-userId | Alex-userPrincipalName}/calendar/events
 ```
@@ -57,7 +60,6 @@ On successful completion, you'll get HTTP 200 OK and a collection of [event](/gr
 The same GET capabilities apply if Alex has delegated Megan access to Alex' primary calendar, or if Alex has delegated Megan his entire mailbox.
 
 If Alex has not shared nor delegated his primary calendar with Megan, specifying Alex’s user ID or user principal name in the preceding GET operations will return an error. 
-
 
 ## Sharee: Get shared, custom calendar or its events from sharee's mailbox
 
@@ -69,10 +71,11 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
       "blockType": "request",
       "name": "get_all_Adele_calendars"
     }-->
-    ```http
+
+```http
     GET https://graph.microsoft.com/v1.0/me/calendars
     GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars
-    ```
+```
 
     A successful response includes the response code HTTP 200, and the collection of calendars that Adele has access to, including the calendar ("Kids parties") that has the owner name as "Alex Wilber" as the second calendar in the response. For a sharee, Adele, the **canShare** property of the shared calendar is always false.
 
@@ -83,7 +86,8 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
       "@odata.type": "microsoft.graph.calendar",
       "isCollection": true
     } -->
-    ```http
+
+```http
     HTTP/1.1 200 OK
     Content-type: application/json
 
@@ -118,12 +122,13 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
             }
         ]
     }
-    ```
+```
 
 2. Signed in as Adele, get the shared calendar, or get one or more events in the shared calendar, using the second calendar ID in the response from step 1. The IDs of the shared calendar and its event correspond to the local copy of Alex' calendar in Adele's mailbox.
 
     <!-- { "blockType": "ignored" } -->
-    ```http
+
+```http
     GET https://graph.microsoft.com/v1.0/me/calendars/AAMkADAABf0JlyAAA=
     GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars/AAMkADAABf0JlyAAA=
 
@@ -132,10 +137,9 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
 
     GET https://graph.microsoft.com/v1.0/me/calendars/AAMkADAABf0JlyAAA=/events
     GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars/AAMkADAABf0JlyAAA=/events
-    ```
+```
 
 On successful completion, you'll get HTTP 200 OK and the requested event, events, or calendar that Alex has shared with Adele.
-
 
 ## Next steps
 

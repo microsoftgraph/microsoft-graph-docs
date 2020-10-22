@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The deviceManagement resource represents a container whose contents vary according to workflow, including:  
+The deviceManagement resource represents a container whose contents vary according to workflow, including:
 
 - Android for Work settings
 - Auditing events
-- Corporate terms and conditions 
+- Corporate terms and conditions
 - Corporate enrollment profiles
 - Device configuration settings
 - Device intent settings

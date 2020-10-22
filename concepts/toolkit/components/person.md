@@ -1,4 +1,4 @@
----
+﻿---
 title: "Person component in the Microsoft Graph Toolkit"
 description: "The person component is used to display a person or contact by using their photo, name, and/or email address."
 localization_priority: Normal
@@ -33,15 +33,14 @@ You can use three properties to set the person details. Use only one of the foll
 
 * Use the `person-details` attribute or `personDetails` property to manually set the person details, as shown in the following example.
 
-
-    ```js
+```js
     let personControl = document.getElementById('myPersonControl');
     personControl.personDetails = {
         displayName: 'Nikola Metulev',
         mail: 'nikola@contoso.com',
         personImage: 'url'
     }
-    ```
+```
 
   If no image is provided, one will be fetched (if available).
 
@@ -49,20 +48,20 @@ You can use three properties to set the person details. Use only one of the foll
 
 You can use several properties to customize the component.
 
-| Attribute       | Property       | Description                                                   |
-| -----------     | ----------     | ------------------------------------------------------------- |
-| user-id         | userId         | Set to a user id to fetch that user's details and image from Microsoft Graph.|
-| person-query    | personQuery    | Set to a name or email of a person to search for a person in Microsoft Graph and fetch the first person's details and image.|
-| person-details  | personDetails  | Set to an object representing a person. Works with object from the people, users, contacts, or group, resources. |
-| person-image    | personImage    | Set the image to show for the person. |
-| person-presence | personPresence | Set the presence for the person. |
-| fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
-| view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `mail` by default)|
-| line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
-| line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.|
-| show-presence   | showPresence   | Set flag to display person presence - default is `false`.|
-| show-name       | showName       | **DEPRECATED - use `view`.**  Set flag to display person display name - default is `false`. |
-| show-email      | showEmail      | **DEPRECATED - use `view`.** Set flag to display person email - default is `false`.        |
+| Attribute       | Property       | Description                                                                                                                                                                                                                                                            |
+| --------------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| user-id         | userId         | Set to a user id to fetch that user's details and image from Microsoft Graph.                                                                                                                                                                                          |
+| person-query    | personQuery    | Set to a name or email of a person to search for a person in Microsoft Graph and fetch the first person's details and image.                                                                                                                                           |
+| person-details  | personDetails  | Set to an object representing a person. Works with object from the people, users, contacts, or group, resources.                                                                                                                                                       |
+| person-image    | personImage    | Set the image to show for the person.                                                                                                                                                                                                                                  |
+| person-presence | personPresence | Set the presence for the person.                                                                                                                                                                                                                                       |
+| fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user.                                                                                                                                           |
+| view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `mail` by default) |
+| line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.                                                                                                                                                                    |
+| line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.                                                                                                                                                                          |
+| show-presence   | showPresence   | Set flag to display person presence - default is `false`.                                                                                                                                                                                                              |
+| show-name       | showName       | **DEPRECATED - use `view`.**  Set flag to display person display name - default is `false`.                                                                                                                                                                            |
+| show-email      | showEmail      | **DEPRECATED - use `view`.** Set flag to display person email - default is `false`.                                                                                                                                                                                    |
 
 ## CSS custom properties
 
@@ -95,11 +94,11 @@ To learn more, see [styling components](../style.md).
 
 The `mgt-person` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
 
-| Data type | Data context | Description |
-| --------- | ------------ | ----------- |
-| loading | none | The template to render while the component is in a laoding state. |
-| no-data | none | The template to render when no person image or data is available. | 
-| default | person: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
+| Data type   | Data context                                                               | Description                                                             |
+| ----------- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| loading     | none                                                                       | The template to render while the component is in a laoding state.       |
+| no-data     | none                                                                       | The template to render when no person image or data is available.       |
+| default     | person: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own.       |
 | person-card | person: The person details object <br> `personImage`: The URL of the image | The template to update the mgt-person-card displayed on hover or click. |
 
 The following example defines a template for the person component.
@@ -122,14 +121,14 @@ The following example defines a template for the person component.
 The `mgt-person` component can show an `mgt-person-card` on either hover or click.
 
 ### Add the control to the HTML page
+
 ```html
 <mgt-person person-query="me" person-card="hover"></mgt-person>
 ```
 
-| Attribute    |  Property     | Description                                                                     |
-| ------------ | ------------- | ------------------------------------------------------------------------------- |
+| Attribute   | Property              | Description                                                                                                              |
+| ----------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | person-card | personCardInteraction | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
-
 
 For more information about templating, styling, and attributes, see [Person Card component](./person-card.md).
 
@@ -137,15 +136,15 @@ For more information about templating, styling, and attributes, see [Person Card
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| Resource                                                                                                    | Permission     |
-| ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/people/?$search=](/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| Resource                                                                     | Permission         |
+| ---------------------------------------------------------------------------- | ------------------ |
+| [/me](/graph/api/user-get?view=graph-rest-1.0)                               | User.Read          |
+| [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)         | User.Read          |
+| [/me/people/?$search=](/graph/api/user-list-people?view=graph-rest-1.0)      | People.Read        |
 | [/me/contacts/\*](/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
-| [/me/presence](/graph/api/presence-get?view=graph-rest-beta)                | Presence.Read |
-| [/users/{id}/presence](/graph/api/presence-get?view=graph-rest-beta)        | Presence.Read.All |
+| [/users/{id}/photo/$value](/graph/api/user-list-people?view=graph-rest-1.0)  | User.ReadBasic.All |
+| [/me/presence](/graph/api/presence-get?view=graph-rest-beta)                 | Presence.Read      |
+| [/users/{id}/presence](/graph/api/presence-get?view=graph-rest-beta)         | Presence.Read.All  |
 
 > **Note:** to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
 
@@ -157,9 +156,9 @@ The control uses the global authentication provider described in the [authentica
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
 
-| Method | Description |
-| - | - |
-| renderLoading | Renders the loading state. |
-| renderNoData | Renders when no image or person data is available. |
-| renderAvatar | Renders the avatar. |
-| renderDetails | Renders the person details part. |
+| Method        | Description                                        |
+| ------------- | -------------------------------------------------- |
+| renderLoading | Renders the loading state.                         |
+| renderNoData  | Renders when no image or person data is available. |
+| renderAvatar  | Renders the avatar.                                |
+| renderDetails | Renders the person details part.                   |

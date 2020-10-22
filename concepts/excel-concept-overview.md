@@ -1,4 +1,4 @@
----
+﻿---
 title: "Excel workbooks and charts API overview"
 description: "Excel is an indispensable productivity tool. Users across all industries and job functions embrace it as a tool for storing, tracking, and manipulating all kinds of data. It's used for everything from simple task tracking and data management, to complex calculations and professional reporting. You can use the Excel REST API in Microsoft Graph to extend the value of your data, calculations, reporting, and dashboards."
 localization_priority: Priority
@@ -32,6 +32,7 @@ Excel is also a great tool to store and track data. If your information is store
 >**Note:** The Excel REST API supports only Office Open XML file formatted workbooks (files with the`.xlsx` extension). The `.xls` extension workbooks are not supported. 
 
 ### Using the Excel REST API
+
 You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the Drive API by identifying the location of the file in the URL. For example:
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`
@@ -41,6 +42,7 @@ You can use Microsoft Graph to allow web and mobile applications to read and mod
 You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook.
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Excel API in Microsoft Graph v1.0](/graph/api/resources/excel?view=graph-rest-1.0)

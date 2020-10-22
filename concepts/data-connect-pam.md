@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Graph data connect integration with Privileged Access Management"
 description: "Microsoft Graph data connect relies on Privileged Access Management to allow Microsoft 365 administrators to approve data movement requests."
 author: "tlenig"
@@ -49,27 +49,27 @@ Use the following steps to interact with a request using the Exchange Online Pow
 
 3. Sign in with your account. Note that you must be part of the configured data access approver group in order to be able to approve, deny, or revoke requests. Guest users cannot approve requests, even if they are in the approver group. 
 
-   ```powershell
+```powershell
    Connect-EXOPSSession
-   ```
+```
 
 4. Find all pending requests.
    >**Note:** The value in the **Identity** property will be used to identify and approve or deny the request. Note this value and use it in the -RequestId parameter. 
 
-   ```powershell
+```powershell
    Get-ElevatedAccessRequest | ?{$_.RequestStatus -eq 'Pending'}
-   ```
+```
 
 4. Take a closer look at the **context** field of the request you are interested in. 
    >**Note:** The context field of the data access request describes the parameters and properties of the copy activity.
 
-   ```powershell
+```powershell
    (Get-ElevatedAccessRequest -RequestId $requestId).Context | ConvertFrom-Json
-   ```
+```
 
    You'll get a response that looks like the following.
 
-   ```powershell
+```powershell
    Key                          Value
    ---                          -----
    ApplicationName
@@ -85,32 +85,34 @@ Use the following steps to interact with a request using the Exchange Online Pow
    DataTable                    Calendar Events
    DestinationTenantId          942229f8-4656-4fb0-828b-e938dad4019a
    Columns                      Subject:string, HasAttachments:bool, End:DateTime, Start:DateTime, ResponseStatus:string, Organizer:Object, Attendees:string, Importance:string, Sensitivity:...
-   ```
+```
 
 5. Approve/deny the request using the value for **Identity** for the -RequestId parameter.
 
-   ```powershell
+```powershell
    Approve-ElevatedAccessRequest -RequestId $requestId -Comment "Yay!!"
    Deny-ElevatedAccessRequest -RequestId $requestId -Comment "Nay!!"
-   ```
+```
 
 You can also approve the request with a deny list to ensure data from certain users is not included. To do so, you need to modify the context of the request to add the `object Id` of the group that you want to omit and then approve the request. 
 
-   ```powershell
+```powershell
    $request = Get-ElevatedAccessRequest -RequestId
    $hash = $request.Context
    $hash["DenyList"] = <Object ID of denied user group>;
    Approve-ElevatedAccessRequest -RequestId $requestId -Comment "Yay!!" -RequestContext $hash
    Deny-ElevatedAccessRequest -RequestId $requestId -Comment "Nay!!"
-   ```
+```
+
 You can also revoke requests that were previously approved. Similar to approving requests, the value for **Identity** is what is required in the -RequestId parameter. 
 
-   ```powershell 
+```powershell
    Revoke-ElevatedAccessAuthorization -Comment "Revoking this request!" -RequestId $requestId
-   ```
+```
+
    You'll see a response similar to the following.
-   
-   ```powershell
+
+```powershell
    AuthorizedBy          : user@tenant.onmicrosoft.com
    Type                  : Task
    AuthorizedAccess      : Data Access Request
@@ -123,7 +125,7 @@ You can also revoke requests that were previously approved. Similar to approving
    Identity              : bda75607-0d87-43cb-bdf1-284b18446b34
    DateCreatedUtc        : 1/1/0001 12:00:00 AM
    DateUpdatedUtc        : 7/24/2018 9:12:55 PM
-   ```
+```
 
 ### Approving, denying, and revoking requests by using the PAM user experience
 
@@ -149,17 +151,18 @@ Data conenct approval requests have particular characteristics that are importan
 - An approval request will expire in 24 hours unless a Microsoft 365 data access approver acts on the request. A new request will be submitted once every 24 hours for approval. If you see your copy activity waiting for approval (in the Consent Pending stage), then work with Microsoft 365 data access approvers to get your request approved.
 
 ## Privacy scrubbing 
+
 The member of the approver group who approves the request can specify the name of one user group whose data would be scrubbed out of extracted data. The rows containing email addresses corresponding to the members of the denied group will be scrubbed out of extracted data. Groups nested within the denied group will be expanded and only users will be scrubbed out. Refer to the approving requests section of this topic for details on how to apply the deny list during approval, through either PowerShell or the PAM UX. 
 
 The following table shows the names of the datasets and the columns for which the contents are checked for privacy scrubbing.
 
-| Dataset name                     | Columns used for deny list-based scrubbing                                                  |
-|---------------------------------------------------------------------|----------------------------------------------------------|
-| **BasicDataSet_v0.Message_v0**<br>**BasicDataSet_v0.Message_v1**   | Sender, From, ToRecipients, CcRecipients, BccRecipients    |                                                                               
-| **BasicDataSet_v0.SentItem_v0**<br>**BasicDataSet_v0.SentItem_v1**  | Sender, From, ToRecipients, CcRecipients, BccRecipients  |
-| **BasicDataSet_v0.Event_v0**<br>**BasicDataSet_v0.Event_v1**     | Organizer, Attendees                                        |
-| **BasicDataSet_v0.Contact_v0**<br>**BasicDataSet_v0.Contact_v1**  | EmailAddresses                                            |
-| **BasicDataSet_v0.CalendarView_v0**                                | Organizer, Attendees                                      |
+| Dataset name                                                       | Columns used for deny list-based scrubbing              |
+| ------------------------------------------------------------------ | ------------------------------------------------------- |
+| **BasicDataSet_v0.Message_v0**<br>**BasicDataSet_v0.Message_v1**   | Sender, From, ToRecipients, CcRecipients, BccRecipients |
+| **BasicDataSet_v0.SentItem_v0**<br>**BasicDataSet_v0.SentItem_v1** | Sender, From, ToRecipients, CcRecipients, BccRecipients |
+| **BasicDataSet_v0.Event_v0**<br>**BasicDataSet_v0.Event_v1**       | Organizer, Attendees                                    |
+| **BasicDataSet_v0.Contact_v0**<br>**BasicDataSet_v0.Contact_v1**   | EmailAddresses                                          |
+| **BasicDataSet_v0.CalendarView_v0**                                | Organizer, Attendees                                    |
 
 ## Next Steps
 

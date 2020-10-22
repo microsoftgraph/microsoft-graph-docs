@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create OneNote pages"
 description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
@@ -18,10 +18,8 @@ To create a OneNote page, you send a POST request to a *pages* endpoint. For exa
 
 Send the HTML that defines the page in the message body. If the request is successful, Microsoft Graph returns a 201 HTTP status code.
 
-
 > **Note:**
 > To learn about the POST requests you can send to create sections, section groups, and notebooks, see our [interactive REST reference](https://dev.onenote.com/docs).
-
 
 <a name="request-uri"></a>
 
@@ -42,8 +40,6 @@ Then append the *pages* endpoint:
 If you're creating pages in the user's personal notebook, Microsoft Graph also provides endpoints you can use to create pages in the default notebook:
 
 - **Create a page in the default section of the default notebook**<br/><br/>`../pages` 
-
-
 
 Your full request URI will look like one of these examples:
 
@@ -72,7 +68,6 @@ Because sections are created if they don't exist, it's safe to use this call wit
 
 > **Note:**
 > The links returned by the API for pages in a renamed section will still reach those older pages. 
-
 
 <a name="message-body"></a>
 
@@ -109,7 +104,6 @@ If you're sending binary data, you must use a [multipart request](#example-reque
 > **Note:**
 > To simplify programming and consistency in your app, you can use multipart requests to create all pages. It's a good idea to use a library to construct multipart messages. This reduces the risk of creating malformed payloads.
 
-
 <a name="input-html-rules"></a>
 
 ### Requirements and limitations for input HTML in POST pages requests
@@ -125,7 +119,6 @@ When sending input HTML, be aware of these general requirements and limitations:
 - Microsoft Graph supports a [subset of HTML elements](#supported-html-and-css-for-onenote-pages). 
 
 - Microsoft Graph supports a subset of common HTML attributes and a set of custom attributes, such as the **data-id** attribute used for updating pages. For supported attributes, see [Input and output HTML](onenote-input-output-html.md).
-
 
 <a name="supported-html"></a>
 
@@ -147,7 +140,6 @@ The following list shows the basic element types that Microsoft Graph supports:
 - `<b>` and `<i>` for bold and italic character styles</p>
 
 Microsoft Graph preserves the semantic content and basic structure of the input HTML when it creates pages, but it converts the input HTML to use the supported set of HTML and CSS. Features that don't exist in OneNote have nothing to be translated to, so they might not be recognized in the source HTML. 
-
 
 <a name="example"></a>
 
@@ -203,28 +195,26 @@ If you do receive a 400 status for a malformed payload, check the formatting of 
 
 See [requirements and limitations for input HTML](#requirements-and-limitations-for-input-html-in-post-pages-requests) and [size limits for POST requests](onenote-images-files.md#size-limitations-for-post-pages-requests).
 
-
 <a name="request-response-info"></a>
 
 ## Request and response information for *POST pages* requests
 
-| Request data | Description |  
-|------|------|  
-| Protocol | All requests use the SSL/TLS HTTPS protocol. |  
-| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions-reference.md).</p> |  
-| Content-Type header | <p>`text/html` or `application/xhtml+xml` for the HTML content, whether it's sent directly in the message body or in the required "Presentation" part of multipart requests.</p><p>Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where `{part-boundary}` is a string that signals the start and end of each data part.</p> |  
-| Accept header | `application/json` | 
+| Request data         | Description                                                                                                                                                                                                                                                                                                                                                                                                    |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Protocol             | All requests use the SSL/TLS HTTPS protocol.                                                                                                                                                                                                                                                                                                                                                                   |
+| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions-reference.md).</p>                                                                                                                                                                     |
+| Content-Type header  | <p>`text/html` or `application/xhtml+xml` for the HTML content, whether it's sent directly in the message body or in the required "Presentation" part of multipart requests.</p><p>Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where `{part-boundary}` is a string that signals the start and end of each data part.</p> |
+| Accept header        | `application/json`                                                                                                                                                                                                                                                                                                                                                                                             |
 
 <br/>
 
-| Response data | Description |  
-|------|------|  
-| Success code | A 201 HTTP status code. |  
-| Response body | A OData representation of the new page in JSON format. |  
-| Errors | If the request fails, the API returns errors in the **\@api.diagnostics** object in the response body. |  
-| Location header | The resource URL for the new page. |  
-| X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |  
-
+| Response data          | Description                                                                                                                                                             |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Success code           | A 201 HTTP status code.                                                                                                                                                 |
+| Response body          | A OData representation of the new page in JSON format.                                                                                                                  |
+| Errors                 | If the request fails, the API returns errors in the **\@api.diagnostics** object in the response body.                                                                  |
+| Location header        | The resource URL for the new page.                                                                                                                                      |
+| X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |
 
 <a name="root-url"></a>
 
@@ -241,6 +231,7 @@ Use `me` for OneNote content that the current user can access (owned and shared)
 <a name="limitations"></a>
 
 ## OneNote section size limitations
+
 There is a limit to the number of pages that you can add to a section using the OneNote API. When this limit is reached for a section and an attempt is made to create a new page in that section, you will see a response with HTTP status code `507` and message "Exceeded the maximum number of pages allowed per section". For more information about this error code, see [OneNote error codes](onenote-error-codes.md).
 
 You can use one of the following workarounds:
@@ -260,9 +251,6 @@ Choose from:
 - Notes.ReadWrite.All
 
 For more information about permission scopes and how they work, see [Microsoft Graph permissions reference](permissions-reference.md).
-
-
-
 
 <a name="see-also"></a>
 

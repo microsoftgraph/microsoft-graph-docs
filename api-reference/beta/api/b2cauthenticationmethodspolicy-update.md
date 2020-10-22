@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update b2cAuthenticationMethodsPolicy"
 description: "Update properties of a b2cAuthenticationMethodsPolicy object."
 localization_priority: Priority
@@ -19,11 +19,11 @@ Update the properties of a [b2cAuthenticationMethodsPolicy](../resources/b2cauth
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions|
-|:---------------------------------------|:---------------|
-| Delegated (work or school account)     | Policy.ReadWrite.AuthenticationMethod|
-| Delegated (personal Microsoft account) | Policy.ReadWrite.AuthenticationMethod|
-| Application                            | Policy.ReadWrite.AuthenticationMethod|
+| Permission type                        | Permissions                           |
+| :------------------------------------- | :------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.AuthenticationMethod |
+| Delegated (personal Microsoft account) | Policy.ReadWrite.AuthenticationMethod |
+| Application                            | Policy.ReadWrite.AuthenticationMethod |
 
 ## HTTP request
 
@@ -35,10 +35,10 @@ PATCH /policies/b2cAuthenticationMethodsPolicy
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -46,10 +46,10 @@ In the request body, supply a JSON representation of the [b2cAuthenticationMetho
 
 The following table shows the properties that are required when you update the [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md).
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|isEmailPasswordAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using email if the email and password authentication method is enabled.|
-|isUserNameAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using username if the user name and password authentication method is enabled.|
+| Property                             | Type    | Description                                                                                                                  |
+| :----------------------------------- | :------ | :--------------------------------------------------------------------------------------------------------------------------- |
+| isEmailPasswordAuthenticationEnabled | Boolean | The tenant admin can configure local accounts using email if the email and password authentication method is enabled.        |
+| isUserNameAuthenticationEnabled      | Boolean | The tenant admin can configure local accounts using username if the user name and password authentication method is enabled. |
 
 ## Response
 
@@ -61,8 +61,8 @@ If successful, this method returns a `204 No Content` response code and an empty
 
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "patch_b2cauthenticationmethodspolicy"
@@ -76,20 +76,23 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
     "isUserNameAuthenticationEnabled": true
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/patch-b2cauthenticationmethodspolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/patch-b2cauthenticationmethodspolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-b2cauthenticationmethodspolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -107,6 +110,7 @@ HTTP/1.1 204 NO CONTENT
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update b2cauthenticationmethodspolicy",

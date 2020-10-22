@@ -1,4 +1,4 @@
----
+﻿---
 title: "Register your app with the Azure AD v2.0 endpoint"
 description: "Your app must be registered with Azure AD. Registering your app establishes a unique application ID and other values that your app uses to authenticate with Azure AD and get tokens."
 author: "jackson-woods"
@@ -23,11 +23,11 @@ This page shows you how to add and register an application using the **App regis
    - **Name** - Enter a meaningful application name that will be displayed to users of the app.
    - **Supported account types** - Select which accounts you would like your application to support.
 
-       | Supported account types | Description |
-       |-------------------------|-------------|
-       | **Accounts in this organizational directory only** | Select this option if you're building a line-of-business (LOB) application. This option is not available if you're not registering the application in a directory.<br><br>This option maps to Azure AD only single-tenant.<br><br>This is the default option unless you're registering the app outside of a directory. In cases where the app is registered outside of a directory, the default is Azure AD multi-tenant and personal Microsoft accounts. |
-       | **Accounts in any organizational directory** | Select this option if you would like to target all business and educational customers.<br><br>This option maps to an Azure AD only multi-tenant.<br><br>If you registered the app as Azure AD only single-tenant, you can update it to be Azure AD multi-tenant and back to single-tenant through the **Authentication** blade. |
-       | **Accounts in any organizational directory and personal Microsoft accounts** | Select this option to target the widest set of customers.<br><br>This option maps to Azure AD multi-tenant and personal Microsoft accounts.<br><br>If you registered the app as Azure AD multi-tenant and personal Microsoft accounts, you cannot change this in the UI. Instead, you must use the application manifest editor to change the supported account types. |
+| Supported account types                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Accounts in this organizational directory only**                           | Select this option if you're building a line-of-business (LOB) application. This option is not available if you're not registering the application in a directory.<br><br>This option maps to Azure AD only single-tenant.<br><br>This is the default option unless you're registering the app outside of a directory. In cases where the app is registered outside of a directory, the default is Azure AD multi-tenant and personal Microsoft accounts. |
+| **Accounts in any organizational directory**                                 | Select this option if you would like to target all business and educational customers.<br><br>This option maps to an Azure AD only multi-tenant.<br><br>If you registered the app as Azure AD only single-tenant, you can update it to be Azure AD multi-tenant and back to single-tenant through the **Authentication** blade.                                                                                                                           |
+| **Accounts in any organizational directory and personal Microsoft accounts** | Select this option to target the widest set of customers.<br><br>This option maps to Azure AD multi-tenant and personal Microsoft accounts.<br><br>If you registered the app as Azure AD multi-tenant and personal Microsoft accounts, you cannot change this in the UI. Instead, you must use the application manifest editor to change the supported account types.                                                                                     |
 
    - **Redirect URI (optional)** - Select the type of app you're building, **Web** or **Public client (mobile & desktop)**, and then enter the redirect URI (or reply URL) for your application.
        - For web applications, provide the base URL of your app. For example, `http://localhost:31544` might be the URL for a web app running on your local machine. Users would use this URL to sign in to a web client application.
@@ -45,16 +45,14 @@ Azure AD assigns a unique application (client) ID to your app, and you're taken 
 
 ## Platform-specific properties
 
-
 The following table shows the properties that you need to configure and copy for different kinds of apps. _Assigned_ means that you should use the value assigned by Azure AD.
 
-
-| App type | Platform | Application (client) ID | Client Secret | Redirect URI/URL | Implicit Flow 
-| --- | --- | --- | --- | --- | --- |
-| Native/Mobile | Native | Assigned  | No | Assigned | No |
-| Web App | Web | Assigned | Yes | Yes | Optional <br/>Open ID Connect middleware uses hybrid flow by default (Yes) | 
-| Single Page App (SPA) | Web | Assigned | Yes | Yes | Yes <br/> SPAs use Open ID Connect implicit Flow |
-| Service/Daemon | Web | Assigned | Yes | Yes | No |
+| App type              | Platform | Application (client) ID | Client Secret | Redirect URI/URL | Implicit Flow                                                              |
+| --------------------- | -------- | ----------------------- | ------------- | ---------------- | -------------------------------------------------------------------------- |
+| Native/Mobile         | Native   | Assigned                | No            | Assigned         | No                                                                         |
+| Web App               | Web      | Assigned                | Yes           | Yes              | Optional <br/>Open ID Connect middleware uses hybrid flow by default (Yes) |
+| Single Page App (SPA) | Web      | Assigned                | Yes           | Yes              | Yes <br/> SPAs use Open ID Connect implicit Flow                           |
+| Service/Daemon        | Web      | Assigned                | Yes           | Yes              | No                                                                         |
 
 ## Next steps
 

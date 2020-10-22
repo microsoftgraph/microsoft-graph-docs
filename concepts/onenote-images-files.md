@@ -1,11 +1,10 @@
----
+﻿---
 title: "Add images, videos, and files to OneNote pages"
 description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
 localization_priority: Priority
 ms.prod: "onenote"
 ---
-
 
 # Add images, videos, and files to OneNote pages
 
@@ -16,7 +15,6 @@ You can use **img**, **object**, and **iframe** elements to add images, videos, 
 - Use **img** to render an image on the page.
 - Use **iframe** to embed a video on the page.
 - Use **object** to add a file attachment to the page.
-
 
 <a name="images"></a>
 
@@ -48,10 +46,8 @@ Use `<img data-render-src="name:part-name" />` and send the PDF file in the data
 
 Use `object` with `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` and send an image file in the data part of a multipart request. Adds a file attachment to the OneNote page and displays a file icon.
 
-
 > **Note:**
 > To get images on a OneNote page, first send a [GET request for the page content](onenote-get-content.md#page-html-content). This returns the URLs to the image resources on the page. You then separate [GET requests to the image resources](onenote-get-content.md#image-or-other-file-resource).
-
 
 #### Image attributes 
 
@@ -63,9 +59,8 @@ Microsoft Graph supports TIFF, PNG, GIF, JPEG, and BMP image types. To capture a
 
 > **Note:**
 > The API detects the original input image type, and returns it as the **data-fullres-src-type** attribute in the [output HTML](onenote-input-output-html.md#output-html). The API also returns the image type of the optimized image in **data-src-type**.
- 
-See [limitations](#size-limitations-for-post-pages-requests) that apply when creating pages that contain media.
 
+See [limitations](#size-limitations-for-post-pages-requests) that apply when creating pages that contain media.
 
 <a name="image-img-url-src"></a>
 
@@ -131,7 +126,6 @@ Content-Type: image/jpeg
 --MyAppPartBoundary--  
 ```
 
-
 <a name="image-img-url-data-render-src"></a>
 
 ### Add a webpage snapshot
@@ -163,7 +157,6 @@ Content-Type: text/html
 --MyAppPartBoundary--  
 ```
 
-
 <a name="image-img-binary-data-render-src"></a>
 
 ### Add an image rendered from HTML
@@ -171,7 +164,6 @@ Content-Type: text/html
 When you pass the HTML as a data-block, be sure there is no active content that would require user credentials, or a pre-loaded browser plug-in. The engine that Microsoft Graph uses to render the HTML page into an image has no ability to log in a user, and doesn't include plug-ins like Adobe Flash, Apple QuickTime, and so on. That also means that dynamically-loaded content, such as might come with an AJAX script, won't appear if getting the data requires user login credentials or cookies.
 
 In the input HTML of your request's **Presentation** part, include `<img data-render-src="name:part-name" />`, where *part-name* is the unique identifier for the data part in your [multipart request](onenote-create-page.md#example-request) that contains the HTML.
-
 
 ```html
 Content-Type: multipart/form-data; boundary=MyAppPartBoundary
@@ -209,7 +201,6 @@ it won't work. Instead, use URL-based real images like this:</p>
 --MyAppPartBoundary--  
 ```
 
-
 <a name="image-object"></a>
 
 ### Add an image file as an attachment
@@ -246,8 +237,6 @@ Content-Type: image/jpeg
 ```
 
 Learn more about [file media types](#file-media-types).
-
-
 
 <a name="adding-videos"></a>
 
@@ -311,7 +300,6 @@ Content-Type: text/html
 --MyAppPartBoundary--
 ```
 
-
 <a name="adding-files"></a>
 
 ## Adding files
@@ -348,7 +336,6 @@ The file media type, used to determine the file icon to use on the page, and whi
 
 Example: `type="application/pdf"`
 
-
 <a name="file-media-types"></a>
 
 #### File media types  
@@ -369,7 +356,6 @@ Microsoft Graph uses predefined file-types icon for attached files, or a generic
 - application/excel
 
 See [limitations](#size-limitations-for-post-pages-requests) that apply when creating pages that contain media.
-
 
 <a name="file-object"></a>
 
@@ -405,7 +391,6 @@ Content-Type: image/jpeg
 --MyAppPartBoundary--
 ```
 
-
 <a name="file-binary-data-render-src"></a>
 
 ### Add images of PDF file contents
@@ -440,7 +425,6 @@ Content-Type: application/pdf
 --MyAppPartBoundary--  
 ```
 
-
 <a name="size-limits"></a>
 
 ## Size limitations for POST pages requests
@@ -461,7 +445,6 @@ When sending image and file data, be aware of these limitations: <!--TODO: check
 
 - The maximum number of images in a single POST is 30, no matter which method you use to send them to the API. Additional images are ignored. If you want to capture a webpage that contains a lot of images, consider [capturing the whole page as a snapshot](#add-a-webpage-snapshot).
 
-
 ## When to use HTML versus data-render-src 
 
 When trying to decide between putting HTML directly onto the OneNote page instead of using the **data-render-src** attribute, consider the following:
@@ -479,7 +462,6 @@ When trying to decide between putting HTML directly onto the OneNote page instea
 - Very large images, or images in formats that OneNote doesn't directly accept, can sometimes be thumbnailed and converted with the **data-render-src** attribute more easily than by doing it in your own code. Even if the image is also available online, embedding the data in your POST can sometimes make the captured page available to OneNote users sooner, by reducing the total number of round-trips needed to build the OneNote page.
 
 Sometimes, the best way to determine which method will work best for your users is to try it both ways as you develop your app.
-
 
 <a name="permissions"></a>
 
@@ -499,7 +481,6 @@ To create or update OneNote pages, you'll need to request appropriate permission
 - Notes.ReadWrite.All
 
 For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md#notes-permissions).
-
 
 <a name="see-also"></a>
 

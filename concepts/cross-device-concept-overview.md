@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cross-device experiences in Microsoft Graph"
 description: "In today's multi-device world, the way consumers use devices spans different platforms and form factors: they might read the morning news on their tablets, check email during the morning commute on their phones, and use their desktop PCs when at work. At night, they might watch movies on their home media consoles and use smart speakers to catch up on news from the day. The average customer engages with multiple devices and platforms throughout the day. "
 localization_priority: Priority
@@ -17,18 +17,19 @@ Microsoft is building a platform for creating experiences that transcend a singl
 ## Why invest in cross-device experiences?
 
 ### Let customers pick up where they leave off with the activity feed API 
+
 With activities, you have a way to capture the unique tasks for users of your app that flow seamlessly across any platform and device, allowing them to quickly resume working on their preferred screen. Using the activity feed, you can create a human-centric view of the tasks most important to users, helping reduce friction when switching from web to mobile to PC and beyond. 
 
 ### Build rich cross-device experiences by using the device relay API 
+
 In addition to Microsoft devices (PCs, Windows Phones, Xbox, IoT, HoloLens, and more), the device relay API also exposes Android and iOS devices. This enables you to truly break down boundaries between your users' devices. You can build apps that utilize the user’s environment and create rich experiences that transcend a single device in real-time. 
 
-
 ## API reference
+
 Looking for the API reference for these services?
 
 - [API for cross-device experiences in Microsoft Graph v1.0](/graph/api/resources/project-rome-overview?view=graph-rest-1.0)
 - [API for cross-device experiences in Microsoft Graph beta](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
-
 
 ## Next steps
 

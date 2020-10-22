@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get b2cIdentityUserFlow"
 description: "Retrieve the properties and relationships a b2cIdentityUserFlow object."
 localization_priority: Normal

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Input and output HTML in OneNote pages"
 description: "The HTML that defines the page content and structure when you create or update a OneNote page is called *input HTML*. "
 author: "jewan-microsoft"
@@ -13,7 +13,7 @@ The HTML that defines the page content and structure when you [create](onenote-c
 The HTML that's returned when you [get page content](onenote-get-content.md) is called *output HTML*. Output HTML won't be the same as input HTML.
 
 The OneNote APIs in Microsoft Graph preserve the semantic content and basic structure of the input HTML, but convert it to a set of [supported HTML elements and CSS properties](onenote-create-page.md#supported-html-and-css-for-onenote-pages). The APIs also add custom attributes that support OneNote features.
- 
+
 This article describes the principal elements and attributes of input and output HTML. It can be helpful to understand input HTML when you're creating or updating page content, and output HTML when you're parsing returned page content. 
 
 ## body element
@@ -22,19 +22,17 @@ The HTML content in the page body represents the page content and structure, inc
 
 #### Input attributes
 
-|Input attribute|Description|
-|:------|:------|
-| data-absolute-enabled | Indicates whether the input body supports [absolute positioned](onenote-abs-pos.md) elements. |
-| style | <p>The CSS [style](#styles) properties of the body. In the output HTML, input settings might be returned inline on appropriate child elements.</p><p>Background color is not currently supported for the **body** element.</p> |
- 
+| Input attribute       | Description                                                                                                                                                                                                                    |
+| :-------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data-absolute-enabled | Indicates whether the input body supports [absolute positioned](onenote-abs-pos.md) elements.                                                                                                                                  |
+| style                 | <p>The CSS [style](#styles) properties of the body. In the output HTML, input settings might be returned inline on appropriate child elements.</p><p>Background color is not currently supported for the **body** element.</p> |
 
 #### Output attributes
 
-|Output attribute|Description|
-|:------|:------|
+| Output attribute      | Description                                                                                                             |
+| :-------------------- | :---------------------------------------------------------------------------------------------------------------------- |
 | data-absolute-enabled | Indicates whether the body supports [absolute positioned](onenote-abs-pos.md) elements. Always **true** in output HTML. |
-| style | The **font-family** and **font-size** properties of the body. |
-
+| style                 | The **font-family** and **font-size** properties of the body.                                                           |
 
 ## div elements
 
@@ -42,14 +40,13 @@ The HTML content in the page body represents the page content and structure, inc
 
 #### Input attributes
 
-|Input attribute|Description|
-|:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| data-render-fallback | The fallback action if the [extraction](onenote-extract-data.md) fails: **render** (default) or **none** |
-| data-render-method | The [extraction](onenote-extract-data.md) method to perform, for example:<br/>`extract.businesscard` or `extract.recipe` |
-| data-render-src | The content source for the [extraction](onenote-extract-data.md). |
-| style | The position, size, font, and color properties for the div: <ul><li>**position** (**absolute** only), **left**, **top**, and **width** (height is auto-configured for divs)<br/><br/>Used to create an [absolute positioned](onenote-abs-pos.md) div, only if the div is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<div style="position:absolute;width:360px;top:350px;left:300px" ... />`</li><li>The CSS [style](#styles) properties of the element. In the output HTML, these values are returned inline on appropriate child elements.</li></ul> |
- 
+| Input attribute      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| :------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data-id              | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| data-render-fallback | The fallback action if the [extraction](onenote-extract-data.md) fails: **render** (default) or **none**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| data-render-method   | The [extraction](onenote-extract-data.md) method to perform, for example:<br/>`extract.businesscard` or `extract.recipe`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| data-render-src      | The content source for the [extraction](onenote-extract-data.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| style                | The position, size, font, and color properties for the div: <ul><li>**position** (**absolute** only), **left**, **top**, and **width** (height is auto-configured for divs)<br/><br/>Used to create an [absolute positioned](onenote-abs-pos.md) div, only if the div is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<div style="position:absolute;width:360px;top:350px;left:300px" ... />`</li><li>The CSS [style](#styles) properties of the element. In the output HTML, these values are returned inline on appropriate child elements.</li></ul> |
 
 The OneNote APIs in Microsoft Graph wrap all body content in at least one div. The API creates a default div (attributed with `data-id="_default"`) to contain the body content if:
 
@@ -57,15 +54,14 @@ The OneNote APIs in Microsoft Graph wrap all body content in at least one div. T
 
 - The input body element's **data-absolute-enabled** attribute is **true**, but the input HTML contains direct children that aren't [absolute positioned](onenote-abs-pos.md)&nbsp;**div**, **img**, or **object** elements. In this case, direct children that aren't [absolute positioned](onenote-abs-pos.md)&nbsp;**div**, **img**, or **object** elements are put in the default div.
 
-
 #### Output attributes
 
-|Output attribute|Description|
-|:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| style | The position and size properties of the div. |
- 
+| Output attribute | Description                                                                                                                                                                                                                                                 |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data-id          | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md).                                                                                                                                                                |
+| id               | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| style            | The position and size properties of the div.                                                                                                                                                                                                                |
+
 ### Non-contributing divs
 
 When a **div** element in the input HTML does not contribute to the page structure or carry information that OneNote uses, the API moves the div's content into the parent or default div. This is illustrated in the following examples.
@@ -109,45 +105,42 @@ Contains a non-contributing, nested div.
 </html>
 ```
 
-
 ## img elements
 
 Images on OneNote pages are represented by **img** elements. An **img** element can contain the following attributes in the input and output HTML.
 
 #### Input attributes
 
-|Input attribute|Description|
-|:------|:------|
-| alt | The supplied alt text for the image. |
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| data-render-src |Either **data-render-src** or **src** is required.<br/><br/>The webpage to render as a bit-mapped image on the OneNote page:<br/><br/> - `data-render-src="https://..."` for a public URL.<br/><br/> - `data-render-src="name:BlockName"` for an image part in the "Presentation" block of a [multipart request](/graph/api/section-post-pages?view=graph-rest-1.0#example).<br/><br/>This method is useful when the webpage is more complex than the OneNote page can faithfully render, or when the page requires login credentials.|
-| data-tag | A [note tag](onenote-note-tags.md) on the element. |
-| style |The position and size properties for the image: **position** (**absolute** only), **left**, **top**, **width**, and **height**.<br/><br/>Size can be set on any image.<br/><br/>Position properties are used to create an [absolute positioned](onenote-abs-pos.md) image, only if the image is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>In the output HTML, the image size is returned separately in **width** and **height** attributes. |
-| src |Either **src** or **data-render-src** is required.<br/><br/>The image to render on the OneNote page:<br/><br/>- `src="https://..."` for a URL to a publicly available image on the Internet.<br/><br/> - `src="name:BlockName"` for a named part in a multipart request that represents the image.|
-| width, height | The width or height of the image, in pixels but without the px. Example: `width="400"` |
- 
+| Input attribute | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| alt             | The supplied alt text for the image.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| data-id         | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| data-render-src | Either **data-render-src** or **src** is required.<br/><br/>The webpage to render as a bit-mapped image on the OneNote page:<br/><br/> - `data-render-src="https://..."` for a public URL.<br/><br/> - `data-render-src="name:BlockName"` for an image part in the "Presentation" block of a [multipart request](/graph/api/section-post-pages?view=graph-rest-1.0#example).<br/><br/>This method is useful when the webpage is more complex than the OneNote page can faithfully render, or when the page requires login credentials.                                              |
+| data-tag        | A [note tag](onenote-note-tags.md) on the element.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| style           | The position and size properties for the image: **position** (**absolute** only), **left**, **top**, **width**, and **height**.<br/><br/>Size can be set on any image.<br/><br/>Position properties are used to create an [absolute positioned](onenote-abs-pos.md) image, only if the image is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>In the output HTML, the image size is returned separately in **width** and **height** attributes. |
+| src             | Either **src** or **data-render-src** is required.<br/><br/>The image to render on the OneNote page:<br/><br/>- `src="https://..."` for a URL to a publicly available image on the Internet.<br/><br/> - `src="name:BlockName"` for a named part in a multipart request that represents the image.                                                                                                                                                                                                                                                                                  |
+| width, height   | The width or height of the image, in pixels but without the px. Example: `width="400"`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+
 > **Note:** 
 > The OneNote APIs automatically detect the input image type, and return it as the **data-fullres-src-type** in the output HTML. The API also returns the image type of the optimized image in **data-src-type**.
- 
 
 #### Output attributes
 
-|Output attribute|Description|
-|:------|:------|
-| alt | The supplied alt text for the image. |
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| data-index | The position of the image. For [split image](#split-images) support. |
-| data-fullres-src | The endpoint for the version of the image resource that was originally embedded in the page. |
-| data-fullres-src-type | The media type of the **data-fullres-src** resource, for example: `image/png` or `image/jpeg`. |
-| data-options | The source type: **printout** for PDF files or **splitimage** for all others. Applies only to [split images](#split-images) created with the **data-render-src** attribute. |
-| data-render-original-src | The original source URL of the image, if the source image is from the public internet and was created with the **data-render-src** attribute. |
-| data-src-type | The media type of the **src** resource, for example: `image/png` or `image/jpeg`. |
-| data-tag | A [note tag](onenote-note-tags.md) on the element. |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| src | The endpoint for the version of the image resource that has been optimized for web browsers and mobile and tablet form factors. |
-| style | The position properties of the image. |
-| width, height | The width or height of the image, in pixels. |
- 
+| Output attribute         | Description                                                                                                                                                                                                                                                 |
+| :----------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| alt                      | The supplied alt text for the image.                                                                                                                                                                                                                        |
+| data-id                  | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md).                                                                                                                                                                |
+| data-index               | The position of the image. For [split image](#split-images) support.                                                                                                                                                                                        |
+| data-fullres-src         | The endpoint for the version of the image resource that was originally embedded in the page.                                                                                                                                                                |
+| data-fullres-src-type    | The media type of the **data-fullres-src** resource, for example: `image/png` or `image/jpeg`.                                                                                                                                                              |
+| data-options             | The source type: **printout** for PDF files or **splitimage** for all others. Applies only to [split images](#split-images) created with the **data-render-src** attribute.                                                                                 |
+| data-render-original-src | The original source URL of the image, if the source image is from the public internet and was created with the **data-render-src** attribute.                                                                                                               |
+| data-src-type            | The media type of the **src** resource, for example: `image/png` or `image/jpeg`.                                                                                                                                                                           |
+| data-tag                 | A [note tag](onenote-note-tags.md) on the element.                                                                                                                                                                                                          |
+| id                       | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| src                      | The endpoint for the version of the image resource that has been optimized for web browsers and mobile and tablet form factors.                                                                                                                             |
+| style                    | The position properties of the image.                                                                                                                                                                                                                       |
+| width, height            | The width or height of the image, in pixels.                                                                                                                                                                                                                |
 
 ### Output HTML examples for images
 
@@ -241,19 +234,19 @@ OneNote pages can contain embedded videos represented by **iframe** elements.
 
 #### Input attributes
 
-|Input attribute|Description|
-|:------|:------|
+| Input attribute   | Description                                                                                                                                                                                                   |
+| :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | data-original-src | Required. The URL of the video source. See the [list of supported video sources](onenote-images-files.md#adding-videos). <br/><br/>Example: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |
-| width, height | The width or height of the iframe, in pixels. Example: `width=300` |
+| width, height     | The width or height of the iframe, in pixels. Example: `width=300`                                                                                                                                            |
 
 #### Output attributes
 
-|Output attribute|Description|
-|:------|:------|
-| data-original-src | The URL of the video source. |
-| src | A link to the video that is embedded in the OneNote page. |
-| width, height | The width or height of the iframe, in pixels.<br/><br/>Example: `width=300` |
- 
+| Output attribute  | Description                                                                 |
+| :---------------- | :-------------------------------------------------------------------------- |
+| data-original-src | The URL of the video source.                                                |
+| src               | A link to the video that is embedded in the OneNote page.                   |
+| width, height     | The width or height of the iframe, in pixels.<br/><br/>Example: `width=300` |
+
 ### Output HTML example for videos
 
 Output **iframe** elements contain endpoints that link to the source page and video, as shown. 
@@ -263,7 +256,7 @@ Output **iframe** elements contain endpoints that link to the source page and vi
     width="340" height="280" 
     data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8" 
     src="https://www.youtube.com/embed/3Ztr44aKmQ8?feature=oembed&autoplay=true" />
-``` 
+```
 
 ## object elements
 
@@ -272,30 +265,29 @@ OneNote pages can contain file attachments represented by **object** elements. A
 > **Note:** 
 > The OneNote APIs can also render file content as images in a page when the file is sent as an image and uses the **data-render-src** attribute.
 > Example: `<img data-render-src="name:part-name" ... />`
- 
 
 #### Input attributes
 
-|Input attribute|Description|
-|:------|:------|
-| data | Required. The name of the part that represents the file in the [multipart request](/graph/api/section-post-pages?view=graph-rest-1.0#example). |
-| data-attachment | Required. The file name. |
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| style | The position and size properties for the object: **position** (**absolute** only), **left**, **top**, and **width**.<br/><br/>Used to create an [absolute positioned](onenote-abs-pos.md) object, only if the object is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<object style="position:absolute;top:350px;left:300px" ... />` |
-| type | Required.<br/><br/>The standard media file type. Known file types display the icon associated with the file type on the OneNote page. Unknown file types display a generic file icon. |
-<!--todo: add link to known file types--> 
+| Input attribute | Description                                                                                                                                                                                                                                                                                                                                                                             |
+| :-------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data            | Required. The name of the part that represents the file in the [multipart request](/graph/api/section-post-pages?view=graph-rest-1.0#example).                                                                                                                                                                                                                                          |
+| data-attachment | Required. The file name.                                                                                                                                                                                                                                                                                                                                                                |
+| data-id         | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md).                                                                                                                                                                                                                                                                                            |
+| style           | The position and size properties for the object: **position** (**absolute** only), **left**, **top**, and **width**.<br/><br/>Used to create an [absolute positioned](onenote-abs-pos.md) object, only if the object is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<object style="position:absolute;top:350px;left:300px" ... />` |
+| type            | Required.<br/><br/>The standard media file type. Known file types display the icon associated with the file type on the OneNote page. Unknown file types display a generic file icon.                                                                                                                                                                                                   |
+
+<!--todo: add link to known file types-->
 
 #### Output attributes
 
-|Output attribute|Description|
-|:------|:------|
-| data | The endpoint for the file resource. |
-| data-attachment | The file name. |
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| style | The position properties of the object. |
-| type | The standard media file type. |
- 
+| Output attribute | Description                                                                                                                                                                                                                                                 |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data             | The endpoint for the file resource.                                                                                                                                                                                                                         |
+| data-attachment  | The file name.                                                                                                                                                                                                                                              |
+| data-id          | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md).                                                                                                                                                                |
+| id               | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| style            | The position properties of the object.                                                                                                                                                                                                                      |
+| type             | The standard media file type.                                                                                                                                                                                                                               |
 
 #### Output HTML example for objects
 
@@ -307,7 +299,7 @@ Output **object** elements contain endpoints that link to the file resources in 
     data-attachment="fileName.pdf" 
     type="application/pdf" 
     [style="..."] />
-``` 
+```
 
 ## Paragraphs and headings
 
@@ -315,22 +307,20 @@ Paragraphs, headings, and other text containers can contain the following attrib
 
 #### Input attributes
 
-|Input attribute|Description|
-|:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| data-tag | A [note tag](onenote-note-tags.md) on a **p** or **h1** - **h6** element. |
-| style | The CSS [style](#styles) properties of the element. |
- 
+| Input attribute | Description                                                                                  |
+| :-------------- | :------------------------------------------------------------------------------------------- |
+| data-id         | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| data-tag        | A [note tag](onenote-note-tags.md) on a **p** or **h1** - **h6** element.                    |
+| style           | The CSS [style](#styles) properties of the element.                                          |
 
 #### Output attributes
 
-|Output attribute|Description|
-|:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| data-tag | A [note tag](onenote-note-tags.md) on a **p** or **h1** - **h6** element. |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| style | The CSS [style](#styles) properties of the element. In the output HTML, these values may be returned inline on appropriate child elements or on **span** elements. |
- 
+| Output attribute | Description                                                                                                                                                                                                                                                 |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data-id          | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md).                                                                                                                                                                |
+| data-tag         | A [note tag](onenote-note-tags.md) on a **p** or **h1** - **h6** element.                                                                                                                                                                                   |
+| id               | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| style            | The CSS [style](#styles) properties of the element. In the output HTML, these values may be returned inline on appropriate child elements or on **span** elements.                                                                                          |
 
 The following examples show input HTML that uses different ways to define styles on text containers and the output HTML that's returned.
 
@@ -340,7 +330,7 @@ The following examples show input HTML that uses different ways to define styles
 <h1>Heading <i>One</i> text</h1>
 <p style="font-size:8pt;color:green;font-family:Courier;text-align:center">Some text</p>
 <p>Some <span  style="font-size:16px;color:#ff0000;font-family:Segoe UI Black">more</span> text</p>
-``` 
+```
 
 #### Output HTML with the `<i>` character style and the font settings in the `<p>` start tag returned as inline CSS styles on span elements.
 
@@ -348,8 +338,7 @@ The following examples show input HTML that uses different ways to define styles
 <h1 style="font-size:16pt;color:#1e4e79;margin-top:11pt;margin-bottom:11pt">Heading <span style="font-style:italic">One</span> text</h1>
 <p style="text-align:center"><span style="font-family:Courier;font-size:8pt;color:green">Some text</span></p>
 <p>Some <span style="font-family:Segoe UI Black;font-size:12pt;color:red">more</span> text</p>
-``` 
-
+```
 
 ## Lists
 
@@ -359,35 +348,34 @@ Lists and list items can contain the following attributes in the input and outpu
 
 #### Input attributes
 
-|Input attribute|Description|
-|:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| data-tag | A [note tag](onenote-note-tags.md) on a **ul**, **ol**, or **li** element. |
-| style | The **list-style-type** and the CSS [style](#styles) properties for the list or list item. |
- 
+| Input attribute | Description                                                                                  |
+| :-------------- | :------------------------------------------------------------------------------------------- |
+| data-id         | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| data-tag        | A [note tag](onenote-note-tags.md) on a **ul**, **ol**, or **li** element.                   |
+| style           | The **list-style-type** and the CSS [style](#styles) properties for the list or list item.   |
 
 #### Output attributes
 
-|Output attribute|Description|
-|:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| data-tag |  A [note tag](onenote-note-tags.md) on a span in an **li** element. |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| style | The **list-style-type** and CSS [style](#styles) properties of the element. In the output HTML, list-level settings are returned on list items. Default properties are not returned. |
- 
+| Output attribute | Description                                                                                                                                                                                                                                                 |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data-id          | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md).                                                                                                                                                                |
+| data-tag         | A [note tag](onenote-note-tags.md) on a span in an **li** element.                                                                                                                                                                                          |
+| id               | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| style            | The **list-style-type** and CSS [style](#styles) properties of the element. In the output HTML, list-level settings are returned on list items. Default properties are not returned.                                                                        |
+
 ### List styles
 
 The OneNote APIs in Microsoft Graph support the following list styles:
 
-|Ordered list|Unordered list|
-|:------|:------|
-| none | none |
+| Ordered list      | Unordered list |
+| :---------------- | :------------- |
+| none              | none           |
 | decimal (default) | disc (default) |
-| lower-alpha | circle |
-| lower-roman | square |
-| upper-alpha | &nbsp; |
-| upper-roman | &nbsp; |
- 
+| lower-alpha       | circle         |
+| lower-roman       | square         |
+| upper-alpha       | &nbsp;         |
+| upper-roman       | &nbsp;         |
+
 You can apply global styles for a list on the **ol** or **ul** element in the input HTML, but styles are returned on the **li** elements.
 
 #### Homogenous list style
@@ -400,7 +388,7 @@ This example shows input HTML that sets the list style type on the **ol** elemen
     <li style="text-decoration:line-through">Orlando</li>
     <li style="font-family:Courier">Naples</li>
 </ol>
-``` 
+```
 
 This is the output HTML. Notice that styles are returned inline on the individual **li** or **span** elements.
 
@@ -410,7 +398,7 @@ This is the output HTML. Notice that styles are returned inline on the individua
     <li style="list-style-type:upper-roman"><span style="color:blue;text-decoration:line-through">Orlando</span></li>
     <li style="list-style-type:upper-roman"><span style="font-family:Courier;color:blue">Naples</span></li>
 </ol>
-``` 
+```
 
 #### Variable list styles
 
@@ -422,7 +410,7 @@ This example shows input HTML that sets different list style types on the **li**
     <li style="list-style-type:circle">circle style</li>
     <li style="list-style-type:disc">disc style (default)</li>
 </ul>
-``` 
+```
 
 This is the output HTML. Notice that styles are returned inline on the individual **li** or **span** elements.
 
@@ -432,8 +420,7 @@ This is the output HTML. Notice that styles are returned inline on the individua
     <li style="list-style-type:circle"><span style="font-style:italic">circle style</span></li>
     <li><span style="font-style:italic">disc style (default)</span></li>
 </ul>
-``` 
-
+```
 
 ## Tables
 
@@ -443,25 +430,23 @@ Tables can contain the following attributes in the input and output HTML. The On
 
 #### Input attributes
 
-|Input attribute|Description|
-|:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| style | The CSS [style](#styles) properties of the element, and also:<br/> - **width**. Supported by **table** and **td** as pixels or percentage of page width.<br/><br/>Example: `width="100px"` or `width="60%"` |
-| border | Adds border to table with specified width |
-| width | Width of the table |
-| bgcolor | The background color of the table |
+| Input attribute | Description                                                                                                                                                                                                 |
+| :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data-id         | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md).                                                                                                                |
+| style           | The CSS [style](#styles) properties of the element, and also:<br/> - **width**. Supported by **table** and **td** as pixels or percentage of page width.<br/><br/>Example: `width="100px"` or `width="60%"` |
+| border          | Adds border to table with specified width                                                                                                                                                                   |
+| width           | Width of the table                                                                                                                                                                                          |
+| bgcolor         | The background color of the table                                                                                                                                                                           |
 
 **Note:** The use of the **border** property in the style attribute of a table is not supported in input html. 
- 
 
 #### Output attributes
 
-|Output attribute|Description|
-|:------|:------|
-| data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| style | The CSS [style](#styles) properties of the element. |
- 
+| Output attribute | Description                                                                                                                                                                                                                                                 |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| data-id          | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md).                                                                                                                                                                |
+| id               | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| style            | The CSS [style](#styles) properties of the element.                                                                                                                                                                                                         |
 
 The following examples show input HTML that uses different ways to define styles on tables and the output HTML that's returned.
 
@@ -481,7 +466,7 @@ The following examples show input HTML that uses different ways to define styles
     </tr> 
 </table>
 ```
- 
+
 #### Output HTML with CSS styles returned inline on the td elements
 
 ```html
@@ -497,25 +482,23 @@ The following examples show input HTML that uses different ways to define styles
         <td style="background-color:blue;width:166;border:0px">Right</td>
     </tr>
 </table>
-``` 
-
+```
 
 ## Styles
 
 OneNote APIs in Microsoft Graph support the following inline CSS **style** properties for elements in the page body, such as **body**, **div**, **p**, **li**, and **span**.
 
-|Property|Example|
-|:------|:------|
-| background-color | `style="background-color:#66cc66"` (defaults to white)<br/><br/>Both hexadecimal format and named colors are supported. |
-| color | `style="color:#ffffff"` (defaults to black) |
-| font-family | `style="font-family:Courier"` (defaults to Calibri) |
-| font-size | `style="font-size:10pt"` (defaults to 11pt)<br/><br/>The APIs accept font size in *pt* or *px*, but converts *px* to *pt*. Decimal values are rounded to the nearest n.0pt or n.5pt. |
-| font-style | `style="font-style:italic"` (normal or italic only) |
-| font-weight | `style="font-weight:bold"` (normal or bold only) |
-| strike-through | `style="text-decoration:line-through"` |
-| text-align | `style="text-align:center"` (for block elements only) |
-| text-decoration | `style="text-decoration:underline"` (none or underline only) |
- 
+| Property         | Example                                                                                                                                                                              |
+| :--------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| background-color | `style="background-color:#66cc66"` (defaults to white)<br/><br/>Both hexadecimal format and named colors are supported.                                                              |
+| color            | `style="color:#ffffff"` (defaults to black)                                                                                                                                          |
+| font-family      | `style="font-family:Courier"` (defaults to Calibri)                                                                                                                                  |
+| font-size        | `style="font-size:10pt"` (defaults to 11pt)<br/><br/>The APIs accept font size in *pt* or *px*, but converts *px* to *pt*. Decimal values are rounded to the nearest n.0pt or n.5pt. |
+| font-style       | `style="font-style:italic"` (normal or italic only)                                                                                                                                  |
+| font-weight      | `style="font-weight:bold"` (normal or bold only)                                                                                                                                     |
+| strike-through   | `style="text-decoration:line-through"`                                                                                                                                               |
+| text-align       | `style="text-align:center"` (for block elements only)                                                                                                                                |
+| text-decoration  | `style="text-decoration:underline"` (none or underline only)                                                                                                                         |
 
 The following inline character styles are also supported:
 
@@ -542,7 +525,6 @@ The following inline character styles are also supported:
 </tr>
 </table>
 
- 
 ## Input and output HTML example
 
 The following image shows a simple page that was created with Microsoft Graph.
@@ -582,7 +564,7 @@ This is the input HTML sent in the message body to create the page.
         <p><a href="https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html">https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html</a></p>
     </body>
 </html>
-``` 
+```
 
 <br/>
 
@@ -625,7 +607,7 @@ This is the output HTML that Microsoft Graph returns when you [get page content]
         </div>
     </body>
 </html>
-``` 
+```
 
 ## See also
 

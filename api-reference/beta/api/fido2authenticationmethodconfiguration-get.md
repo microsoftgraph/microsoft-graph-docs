@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get fido2AuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a fido2AuthenticationMethodConfiguration object."
 author: "mmcla"
@@ -8,6 +8,7 @@ doc_type: "apiPageType"
 ---
 
 # Get fido2AuthenticationMethodConfiguration
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph
 Retrieve the properties and relationships of the [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the FIDO2 Security Keys [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+| Permission type                        | Permissions (from most to least privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Policy.ReadWrite.AuthenticationMethod       |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 For delegated scenarios the administrator needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
@@ -36,16 +38,19 @@ For delegated scenarios the administrator needs one of the following [roles](/az
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -55,27 +60,31 @@ If successful, this method returns a `200 OK` response code and a [fido2Authenti
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "get_fido2authenticationmethodconfiguration"
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 
-
 ### Response
+
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.fido2AuthenticationMethodConfiguration"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 491
@@ -105,4 +114,3 @@ Content-length: 491
    }
 }
 ```
-

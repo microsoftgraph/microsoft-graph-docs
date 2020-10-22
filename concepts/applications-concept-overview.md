@@ -1,4 +1,4 @@
----
+﻿---
 title: "Applications API overview"
 description: "Register your application with Azure AD to create an identity configuration for it that allows it to integrate with Azure AD."
 author: "davidmu1"
@@ -80,5 +80,6 @@ To learn about using the synchronization APIs, see the following tutorials and t
     - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 
 ## Next steps
+
 - Try the Microsoft Graph API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Learn about how to add authentication and authorization to your web applications and web APIs using [these samples](/azure/active-directory/develop/sample-v2-code).

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Graph SDKs overview"
 description: "Describes the SDKs that are available, the platforms they support, and the value they provide to developers."
 localization_priority: Normal
@@ -15,7 +15,6 @@ The service library contains models and request builders that are generated from
 The core library provide a set of features that enhance working with all the Microsoft Graph services. Embedded support for retry handling, secure redirects, transparent authentication, and payload compression, improve the quality of your application's interactions with Microsoft Graph, with no added complexity, while leaving you completely in control. The core library also provides support for common tasks such as paging through collections and creating batch requests.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/hDnsd2nJf88]
-
 
 ## Supported platforms
 

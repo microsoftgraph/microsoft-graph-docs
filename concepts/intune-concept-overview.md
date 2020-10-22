@@ -1,4 +1,4 @@
----
+﻿---
 title: "Intune devices and apps API overview"
 description: "Microsoft Intune helps enterprises manage devices and apps within an organization. You can use the Intune API in Microsoft Graph to manage devices, apps, and even configure Intune while using your preferred tools. "
 author: "rolyon"
@@ -45,6 +45,7 @@ Automate Intune by using the Intune API to:
 - Manage [telecom expenses](/graph/api/resources/intune-tem-conceptual?view=graph-rest-1.0).
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Intune API in Microsoft Graph v1.0](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)

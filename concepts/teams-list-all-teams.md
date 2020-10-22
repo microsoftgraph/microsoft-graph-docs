@@ -1,4 +1,4 @@
----
+﻿---
 title: "List all teams in Microsoft Teams for an organization"
 description: "To list all teams "
 author: "nkramer"
@@ -120,11 +120,13 @@ GET /teams/{group-id}
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

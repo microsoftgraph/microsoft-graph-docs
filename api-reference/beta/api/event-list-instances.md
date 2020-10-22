@@ -61,6 +61,7 @@ In the request URL, provide the following required query parameters with values.
 | endDateTime   | String | The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".   |
 
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
 | Name                     | Type   | Description                                                                                                                                   |

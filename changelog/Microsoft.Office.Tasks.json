@@ -3,7 +3,33 @@
     {
       "ChangeList": [
         {
-          "Id": "30577ef7-b20d-4ec0-adf6-cca014b19bf7",
+          "Id": "3a22446c-e65a-43dc-aca4-999146a95ca8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "todoTask,todoTaskList,linkedResource",
+          "ChangeType": "Addition",
+          "Description": "Introduced the To Do API. Added the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](https://docs.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-beta), and [linkedResource](https://docs.microsoft.com/en-us/graph/api/resources/linkedresource?view=graph-rest-beta) resources, and CRUD operations.",
+          "Target": "todoTask,todoTaskList,linkedResource"
+        },
+        {
+          "Id": "3a22446c-e65a-43dc-aca4-999146a95ca8",
+          "ApiChange": "method",
+          "ChangedApiName": "outlookTask,outlookTaskFolder,outlookTaskGroup",
+          "ChangeType": "Change",
+          "Description": "Deprecated the Outlook tasks API, including [outlookTask](https://docs.microsoft.com/en-us/graph/api/resources/outlooktask?view=graph-rest-beta), [outlookTaskFolder](https://docs.microsoft.com/en-us/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), [outlookTaskGroup](https://docs.microsoft.com/en-us/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), and related operations and methods.",
+          "Target": "outlookTask,outlookTaskFolder,outlookTaskGroup"
+        }
+      ],
+      "Id": "3a22446c-e65a-43dc-aca4-999146a95ca8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-08-01T00:00:00",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d09e8b60-aacb-45e7-9691-253940c1b408",
           "ApiChange": "Property",
           "ChangedApiName": "priority",
           "ChangeType": "Addition",
@@ -11,7 +37,7 @@
           "Target": "plannerTask"
         }
       ],
-      "Id": "30577ef7-b20d-4ec0-adf6-cca014b19bf7",
+      "Id": "d09e8b60-aacb-45e7-9691-253940c1b408",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
@@ -21,7 +47,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d48be916-1903-4c58-acbf-56aea283c94d",
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
           "ApiChange": "Resource",
           "ChangedApiName": "plannerPlanContext,plannerPlanContextDetails,plannerPlanContextCollection,plannerPlanContextDetailsCollection,plannerFavoritePlanReference,plannerRecentPlanReference,plannerFavoritePlanReferenceCollection,plannerRecentPlanReferenceCollection",
           "ChangeType": "Addition",
@@ -29,7 +55,7 @@
           "Target": "plannerPlanContext,plannerPlanContextDetails,plannerPlanContextCollection,plannerPlanContextDetailsCollection,plannerFavoritePlanReference,plannerRecentPlanReference,plannerFavoritePlanReferenceCollection,plannerRecentPlanReferenceCollection"
         },
         {
-          "Id": "d48be916-1903-4c58-acbf-56aea283c94d",
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
           "ApiChange": "Property",
           "ChangedApiName": "favoritePlanReferences,recentPlanReferences",
           "ChangeType": "Addition",
@@ -37,7 +63,7 @@
           "Target": "plannerUser"
         },
         {
-          "Id": "d48be916-1903-4c58-acbf-56aea283c94d",
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
           "ApiChange": "Property",
           "ChangedApiName": "favoritePlans,recentPlans",
           "ChangeType": "Addition",
@@ -45,7 +71,7 @@
           "Target": "plannerUser"
         },
         {
-          "Id": "d48be916-1903-4c58-acbf-56aea283c94d",
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
           "ApiChange": "Property",
           "ChangedApiName": "contexts",
           "ChangeType": "Addition",
@@ -53,7 +79,7 @@
           "Target": "plannerPlan"
         },
         {
-          "Id": "d48be916-1903-4c58-acbf-56aea283c94d",
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
           "ApiChange": "Property",
           "ChangedApiName": "contextDetails",
           "ChangeType": "Addition",
@@ -61,7 +87,7 @@
           "Target": "plannerPlanDetails"
         },
         {
-          "Id": "d48be916-1903-4c58-acbf-56aea283c94d",
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
           "ApiChange": "Resource",
           "ChangedApiName": "delta query",
           "ChangeType": "Addition",
@@ -69,7 +95,7 @@
           "Target": "delta query"
         }
       ],
-      "Id": "d48be916-1903-4c58-acbf-56aea283c94d",
+      "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-02-01T00:00:00",
@@ -79,7 +105,7 @@
     {
       "ChangeList": [
         {
-          "Id": "c1980c5c-d8c3-4ad8-acde-39c16d686e8f",
+          "Id": "46f0da80-1dbc-4931-8d66-f8c1a1b6d6b2",
           "ApiChange": "Resource",
           "ChangedApiName": "task,plan,bucket,taskDetails,planDetails,taskBoardTaskFormat,planTaskBoard",
           "ChangeType": "Deletion",
@@ -87,7 +113,7 @@
           "Target": ""
         }
       ],
-      "Id": "c1980c5c-d8c3-4ad8-acde-39c16d686e8f",
+      "Id": "46f0da80-1dbc-4931-8d66-f8c1a1b6d6b2",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -97,7 +123,7 @@
     {
       "ChangeList": [
         {
-          "Id": "b0eea28a-3c06-4193-b247-4ac43b180576",
+          "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
           "ApiChange": "Property",
           "ChangedApiName": "outlook",
           "ChangeType": "Addition",
@@ -105,7 +131,7 @@
           "Target": "user"
         },
         {
-          "Id": "b0eea28a-3c06-4193-b247-4ac43b180576",
+          "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
           "ApiChange": "Resource",
           "ChangedApiName": "outlookuser,outlookTaskGroup,outlookTaskFolder,outlookTask",
           "ChangeType": "Addition",
@@ -113,7 +139,7 @@
           "Target": "outlookuser,outlookTaskGroup,outlookTaskFolder,outlookTask"
         },
         {
-          "Id": "b0eea28a-3c06-4193-b247-4ac43b180576",
+          "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
           "ApiChange": "Resource",
           "ChangedApiName": "attachment,fileAttachment,itemAttachment,referenceAttachment",
           "ChangeType": "Addition",
@@ -121,7 +147,7 @@
           "Target": "attachment,fileAttachment,itemAttachment,referenceAttachment"
         },
         {
-          "Id": "b0eea28a-3c06-4193-b247-4ac43b180576",
+          "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
           "ApiChange": "Property",
           "ChangedApiName": "extended properties,singleValueLegacyExtendedProperty,multiValueLegacyExtendedProperty",
           "ChangeType": "Addition",
@@ -129,7 +155,7 @@
           "Target": "extended properties,singleValueLegacyExtendedProperty,multiValueLegacyExtendedProperty"
         }
       ],
-      "Id": "b0eea28a-3c06-4193-b247-4ac43b180576",
+      "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -139,7 +165,7 @@
     {
       "ChangeList": [
         {
-          "Id": "b0a54465-ef92-4f65-a9f7-b74aeac8da61",
+          "Id": "30092d1a-95ae-4207-b2a6-59245ab06159",
           "ApiChange": "Resource",
           "ChangedApiName": "Planner API,plannerPlan,plannerTask,plannerPlanDetails,plannerTaskDetails,plannerBucket,plannerAssignedToTaskBoardTaskFormat,plannerBucketTaskBoardTaskFormat,plannerProgressTaskBoardTaskFormat",
           "ChangeType": "Addition",
@@ -147,7 +173,7 @@
           "Target": "Planner API,plannerPlan,plannerTask,plannerPlanDetails,plannerTaskDetails,plannerBucket,plannerAssignedToTaskBoardTaskFormat,plannerBucketTaskBoardTaskFormat,plannerProgressTaskBoardTaskFormat"
         }
       ],
-      "Id": "b0a54465-ef92-4f65-a9f7-b74aeac8da61",
+      "Id": "30092d1a-95ae-4207-b2a6-59245ab06159",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -157,7 +183,7 @@
     {
       "ChangeList": [
         {
-          "Id": "715f4b90-d57e-4fc2-a2a4-8adf8643d31a",
+          "Id": "b5842b87-9a53-423a-b3a2-215bb3585996",
           "ApiChange": "Resource",
           "ChangedApiName": "Planner API,plannerPlan,plannerTask,plannerPlanDetails,plannerTaskDetails,plannerBucket,plannerAssignedToTaskBoardTaskFormat,plannerBucketTaskBoardTaskFormat,plannerProgressTaskBoardTaskFormat",
           "ChangeType": "Addition",
@@ -165,7 +191,7 @@
           "Target": "Planner API,plannerPlan,plannerTask,plannerPlanDetails,plannerTaskDetails,plannerBucket,plannerAssignedToTaskBoardTaskFormat,plannerBucketTaskBoardTaskFormat,plannerProgressTaskBoardTaskFormat"
         }
       ],
-      "Id": "715f4b90-d57e-4fc2-a2a4-8adf8643d31a",
+      "Id": "b5842b87-9a53-423a-b3a2-215bb3585996",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00",

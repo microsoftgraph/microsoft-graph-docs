@@ -37,6 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignments
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAssignments
+POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/groupAssignments
 ```
 
 ## Request headers

@@ -37,6 +37,7 @@ GET /sites/{id}/onenote/sectionGroups
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 The default sort order is `name asc`.

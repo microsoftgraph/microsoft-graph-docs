@@ -1,4 +1,4 @@
----
+﻿---
 title: "Automate creating, sending, and processing messages"
 description: "Emails are represented by the message resource in Microsoft Graph."
 author: "angelgolfer-ms"
@@ -34,7 +34,6 @@ When a message is being composed, in most cases, Outlook sets the **from** and *
 Use [MailTips](/graph/api/resources/mailtips?view=graph-rest-beta) to make smart decisions before sending an email.
 MailTips can tell you information such as the recipient's mailbox is restricted to specific senders, or approval is required for emailing the recipient.
 
-
 ## Reading messages with control over the body format returned
 
 You can [read a message](/graph/api/message-get?view=graph-rest-1.0) in a mailbox by referencing its ID:
@@ -43,6 +42,7 @@ You can [read a message](/graph/api/message-get?view=graph-rest-1.0) in a mailbo
   "blockType": "ignored",
   "sampleKeys": ["AAMkADhMGAAA="]
 }-->
+
 ```http
 GET /me/messages/AAMkADhMGAAA=
 ```
@@ -50,6 +50,7 @@ GET /me/messages/AAMkADhMGAAA=
 Or, you can [get the messages](/graph/api/user-list-messages?view=graph-rest-1.0) in a specific folder. For example, to read messages in the signed-in user's Drafts folder:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailfolders('Drafts')
 ```

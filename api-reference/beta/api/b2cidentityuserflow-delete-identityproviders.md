@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete identityProvider from a b2cIdentityUserFlow"
 description: "Delete an identityProvider from a b2cIdentityUserFlow."
 localization_priority: Normal

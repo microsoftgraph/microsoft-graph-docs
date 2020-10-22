@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get access without a user"
 description: "Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these are background services or daemons that run on a server without the presence of a signed-in user."
 author: "jackson-woods"
@@ -67,12 +67,12 @@ GET https://login.microsoftonline.com/{tenant}/adminconsent
 &redirect_uri=https://localhost/myapp/permissions
 ```
 
-| Parameter     | Condition   | Description 
-|:--------------|:------------|:------------
-| tenant        | Required    | The directory tenant that you want to request permission from. This can be in GUID or friendly name format. If you don't know which tenant the user belongs to and you want to let them sign in with any tenant, use `common`.
-| client_id     | Required    | The Application ID that the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned to your app.
-| redirect_uri  | Required    | The redirect URI where you want the response to be sent for your app to handle. It must exactly match one of the redirect URIs that you registered in the portal, except that it must be URL encoded, and it can have additional path segments.
-| state         | Recommended | A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.
+| Parameter    | Condition   | Description                                                                                                                                                                                                                                                                                        |
+| :----------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tenant       | Required    | The directory tenant that you want to request permission from. This can be in GUID or friendly name format. If you don't know which tenant the user belongs to and you want to let them sign in with any tenant, use `common`.                                                                     |
+| client_id    | Required    | The Application ID that the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned to your app.                                                                                                                                                                 |
+| redirect_uri | Required    | The redirect URI where you want the response to be sent for your app to handle. It must exactly match one of the redirect URIs that you registered in the portal, except that it must be URL encoded, and it can have additional path segments.                                                    |
+| state        | Recommended | A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on. |
 
 ### Administrator consent experience
 
@@ -94,12 +94,11 @@ GET https://localhost/myapp/permissions
 &admin_consent=True
 ```
 
-| Parameter     | Description
-|:--------------|:------------
-| tenant        | The directory tenant that granted your application the permissions that it requested, in GUID format.
-| state         | A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.
-| admin_consent | Set to **true**.
-
+| Parameter     | Description                                                                                                                                                                                                                                                                                        |
+| :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tenant        | The directory tenant that granted your application the permissions that it requested, in GUID format.                                                                                                                                                                                              |
+| state         | A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on. |
+| admin_consent | Set to **true**.                                                                                                                                                                                                                                                                                   |
 
 > **Try**: You can try this for yourself by pasting the following request in a browser. If you sign in as a Global administrator for an Azure AD tenant, you will be presented with the administrator consent dialog box for the app. (This will be a different app than that in the consent dialog box screenshot shown earlier.)
 > 
@@ -128,13 +127,13 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 &grant_type=client_credentials
 ```
 
-| Parameter     | Condition | Description 
-|:--------------|:----------|:------------
-| tenant        | Required  | The directory tenant that you want to request permission from. This can be in GUID or friendly name format.
-| client_id     | Required  | The Application ID that the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned when you registered your app.
-| scope         | Required  | The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the Microsoft identity platform endpoint that of all the application permissions you have configured for your app, it should issue a token for the ones associated with the resource you want to use.
-| client_secret | Required  | The Application Secret that you generated for your app in the app registration portal.
-| grant_type    | Required  | Must be `client_credentials`.
+| Parameter     | Condition | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| :------------ | :-------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| tenant        | Required  | The directory tenant that you want to request permission from. This can be in GUID or friendly name format.                                                                                                                                                                                                                                                                                                                                                                        |
+| client_id     | Required  | The Application ID that the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned when you registered your app.                                                                                                                                                                                                                                                                                                                                |
+| scope         | Required  | The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the Microsoft identity platform endpoint that of all the application permissions you have configured for your app, it should issue a token for the ones associated with the resource you want to use. |
+| client_secret | Required  | The Application Secret that you generated for your app in the app registration portal.                                                                                                                                                                                                                                                                                                                                                                                             |
+| grant_type    | Required  | Must be `client_credentials`.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 #### Token response
 
@@ -148,11 +147,11 @@ A successful response looks like this:
 }
 ```
 
-| Parameter     | Description
-|:--------------|:------------
-| access_token  | The requested access token. Your app can use this token in calls to Microsoft Graph.
-| token_type    | Indicates the token type value. The only type that Azure AD supports is `bearer`.
-| expires_in    | How long the access token is valid (in seconds).
+| Parameter    | Description                                                                          |
+| :----------- | :----------------------------------------------------------------------------------- |
+| access_token | The requested access token. Your app can use this token in calls to Microsoft Graph. |
+| token_type   | Indicates the token type value. The only type that Azure AD supports is `bearer`.    |
+| expires_in   | How long the access token is valid (in seconds).                                     |
 
 ## 5. Use the access token to call Microsoft Graph
 
@@ -163,6 +162,7 @@ GET https://graph.microsoft.com/v1.0/users/12345678-73a6-4952-a53a-e9916737ff7f
 Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
 Host: graph.microsoft.com
 ```
+
 A successful response will look similar to this (some response headers have been removed):
 
 ```http

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Proxy provider"
 description: "The proxy provider allows you to use your own server-side authentication with the Microsoft Graph Toolkit."
 localization_priority: Normal
@@ -31,10 +31,9 @@ Initializing the proxy provider in HTML is the simplest way to define your own r
 <mgt-proxy-provider graph-proxy-url="https://myurl.com/api/GraphProxy"></mgt-proxy-provider>
 ```
 
-| Attribute | Description |
-| --- | --- |
-| graph-proxy-url  | Base URL for the proxy API. |
-
+| Attribute       | Description                 |
+| --------------- | --------------------------- |
+| graph-proxy-url | Base URL for the proxy API. |
 
 ### Initialize in JavaScript
 
@@ -72,4 +71,3 @@ provider.logout = () => { /* will be called when "Sign Out" is called */ };
 
 Providers.globalProvider = provider;
 ```
-

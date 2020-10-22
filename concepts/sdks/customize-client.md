@@ -1,4 +1,4 @@
----
+﻿---
 title: "Customize the Microsoft Graph SDK service client"
 description: "Provides instructions on how to change the default behavior of the Microsoft Graph SDK service client."
 localization_priority: Normal

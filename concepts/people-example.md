@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the People API in Microsoft Graph to get information about the people most relevant to you"
 description: "Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. "
 ms.date: 4/9/2019
@@ -471,12 +471,15 @@ Content-type: application/json
   ]
 }
 ```
+
 ### Types of results included
+
 By default, Microsoft Graph serves mailbox-only results, which do not include directory/organization results. To retrieve directory results, specify an HTTP header, as shown.
 
 ```http
 "X-PeopleQuery-QuerySources: Mailbox,Directory”
 ```
+
 ### Select the fields to return
 
 You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The `@odata.id` field is always returned.
@@ -949,30 +952,30 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //
 ```
 
 ### Working with feature implementation
- 
+
 There must be a public relationship between the profile owner and the other people in order for those people to show up on the profile owner's list. The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.
 
 ![Image of working with relationships](images/working-with.png)
- 
+
 The following are examples of public relationships:
 
 - Individuals connected in the org chart: Manager, Direct report, Peers (share the same manager) 
 - Members of a public group or distribution list with fewer than 30 people. Public groups have membership lists that are available in the directory.
- 
+
 If the profile owner communicates with someone and there is no public relationship between them, such as an org chart connection or a group in common, the fact that they've been communicating will not be visible to others.
 
 The ranking of people - that is, the order in which they appear on the profile owner's page - is determined by the private and public communication between the profile owner and the person on the list.
- 
+
 Examples of private communication include:
 - Sending emails to each other where the name of the other person is in the TO line
 - Inviting users to meetings by including their name in the calendar invite 
- 
+
 Examples of public interaction include:
 - Sending or receiving emails to/from each other as part of a public group 
 - Inviting users to meetings as part of group, or where more than X people are invited
- 
+
 The ranking doesn’t change based on who User A is (the person looking at someone else's page). The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).
- 
+
 In order for User C to appear, the profile owner must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory).
- 
+
 People external to the organization will not show on the profile owner's list. People they email or meet with, but who are not part of the same organization, will not show up in the Working with section.

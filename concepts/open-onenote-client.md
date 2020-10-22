@@ -1,4 +1,4 @@
----
+﻿---
 title: "Open the OneNote client"
 description: "You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. "
 author: "Jewan-microsoft"
@@ -33,7 +33,6 @@ The **links** property is a JSON object that contains two URLs. The URLs will op
 
   - Opens OneNote on the web if the default browser on the device supports it. 
   - Uses the browser language setting.
-
 
 The OneNote API returns the **links** property in the HTTP response for the following operations:
 
@@ -87,7 +86,7 @@ The following example gets the OneNote client URLs from the JSON response. It us
                   }
             }
       }
-``` 
+```
 
 <br/>
 
@@ -161,7 +160,7 @@ public ApiResponse getResponse() throws Exception {
 
 Using the response properties, your app can open OneNote on the web, as shown in the following example.
 
-```java 
+```java
 if (response.getResponseCode() == 201) {
     Uri uriUrl = Uri.parse(response.getOneNoteWebUrl);  
     Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl); 
@@ -173,7 +172,7 @@ if (response.getResponseCode() == 201) {
 
 Or your app can open the OneNote client on an Android device. When using the `oneNoteClientUrl` property, you must surround the GUID strings with braces `{ }` before starting the Intent. The following example shows how to do that.
 
-```java 
+```java
 if (response.getResponseCode() == 201) {
 
     // Get the URL from the OneNote API JSON response.

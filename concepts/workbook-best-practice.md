@@ -1,4 +1,4 @@
----
+﻿---
 title: "Best practices for Excel APIs in Microsoft Graph"
 description: "List best practices and examples for Excel APIs in Microsoft Graph"
 author: "grangeryy"
@@ -29,6 +29,7 @@ Content-length: 52
   "persistChanges": true
 }
 ```
+
 #### Response
 
 The following is a successful response.
@@ -148,6 +149,7 @@ Content-type: application/json
 ```
 
 #### Response
+
 The long-running operation pattern will return a `202 Accepted` response similar to the following.
 
 ```http
@@ -197,7 +199,6 @@ Content-type: application/json
 ```
 
 ### Poll status of the long-running create session
-
 
 With the long-running operation pattern, you can get the creation status at specified location by using the following request. The suggested interval to poll status is around 30 seconds. The maximum interval should be no more than 4 minutes.
 
@@ -275,6 +276,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ses
 ```
 
 #### Response
+
 The following is the response.
 
 ```http

@@ -399,5 +399,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->

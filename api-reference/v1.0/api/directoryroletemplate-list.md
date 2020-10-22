@@ -32,6 +32,7 @@ GET /directoryRoleTemplates
 ```
 
 ## Optional query parameters
+
 This method does **not** support the [OData Query Parameters](/graph/query-parameters) to help customize the response (e.g. $filter is not supported here).
 
 ## Request headers

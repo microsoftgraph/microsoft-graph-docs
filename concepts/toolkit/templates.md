@@ -1,4 +1,4 @@
----
+﻿---
 title: "Templates in the Microsoft Graph Toolkit"
 description: "Use custom templates to modify the content of a component."
 localization_priority: Normal
@@ -78,7 +78,7 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 The following properties can also be used with the data context object in your templates.
 
 | Property | Description                                                                                                    |
-|----------|----------------------------------------------------------------------------------------------------------------|
+| -------- | -------------------------------------------------------------------------------------------------------------- |
 | $index   | Numerical index of item being rendered while being looped with `data-for`.                                     |
 | $parent  | If a template is rendered inside another template, this property allows you to access the parent data context. |
 
@@ -135,7 +135,7 @@ In scenarios where you need to convert data in your bindings, bind to events, or
 
     Each component defines the `templateContext` property, which you can use to pass additional data to any template in the component.
 
-    ```ts
+```ts
     document.querySelector('mgt-agenda').templateContext = {
 
       someObject: {},
@@ -143,7 +143,7 @@ In scenarios where you need to convert data in your bindings, bind to events, or
       someEventHandler: (e) => { /* handleEvent */  }
 
     }
-    ```
+```
 
     The properties in the `templateContext` object will now be available to be used in the binding expressions in the template.
 
@@ -151,15 +151,13 @@ In scenarios where you need to convert data in your bindings, bind to events, or
 
     The `TemplateHelper` class exposes the `globalContext` object to add data or functions that should be globally available for all components.
 
-    ```ts
+```ts
     import { TemplateHelper } from '@microsoft/mgt';
 
     TemplateHelper.globalContext.someObject = {};
     TemplateHelper.globalContext.formatDate = (date: Date) => { /* format date and return */ };
     TemplateHelper.globalContext.someEventHandler = (e) => { /* handleEvent */  }
-    ```
-
-
+```
 
 ### Converters
 
@@ -217,7 +215,6 @@ document.querySelector('mgt-agenda').templateContext = {
 ```
 
 The event args, data context, and the root element of the template are passed to the event handler as parameters.
-
 
 ## Template rendered event
 

@@ -51,33 +51,34 @@ In the request body, supply a JSON representation for the iosCompliancePolicy ob
 
 The following table shows the properties that are required when you create the iosCompliancePolicy.
 
-| Property                                       | Type                                                                                           | Description                                                                                                                                                    |
-| :--------------------------------------------- | :--------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| roleScopeTagIds                                | String collection                                                                              | List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                     |
-| id                                             | String                                                                                         | Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                                               |
-| createdDateTime                                | DateTimeOffset                                                                                 | DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                                 |
-| description                                    | String                                                                                         | Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)          |
-| lastModifiedDateTime                           | DateTimeOffset                                                                                 | DateTime the object was last modified. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                           |
-| displayName                                    | String                                                                                         | Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                 |
-| version                                        | Int32                                                                                          | Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                             |
-| passcodeBlockSimple                            | Boolean                                                                                        | Indicates whether or not to block simple passcodes.                                                                                                            |
-| passcodeExpirationDays                         | Int32                                                                                          | Number of days before the passcode expires. Valid values 1 to 65535                                                                                            |
-| passcodeMinimumLength                          | Int32                                                                                          | Minimum length of passcode. Valid values 4 to 14                                                                                                               |
-| passcodeMinutesOfInactivityBeforeLock          | Int32                                                                                          | Minutes of inactivity before a passcode is required.                                                                                                           |
-| passcodeMinutesOfInactivityBeforeScreenTimeout | Int32                                                                                          | Minutes of inactivity before the screen times out.                                                                                                             |
-| passcodePreviousPasscodeBlockCount             | Int32                                                                                          | Number of previous passcodes to block. Valid values 1 to 24                                                                                                    |
-| passcodeMinimumCharacterSetCount               | Int32                                                                                          | The number of character sets required in the password.                                                                                                         |
-| passcodeRequiredType                           | [requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)               | The required passcode type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.                                                                   |
-| passcodeRequired                               | Boolean                                                                                        | Indicates whether or not to require a passcode.                                                                                                                |
-| osMinimumVersion                               | String                                                                                         | Minimum IOS version.                                                                                                                                           |
-| osMaximumVersion                               | String                                                                                         | Maximum IOS version.                                                                                                                                           |
-| osMinimumBuildVersion                          | String                                                                                         | Minimum IOS build version.                                                                                                                                     |
-| osMaximumBuildVersion                          | String                                                                                         | Maximum IOS build version.                                                                                                                                     |
-| securityBlockJailbrokenDevices                 | Boolean                                                                                        | Devices must not be jailbroken or rooted.                                                                                                                      |
-| deviceThreatProtectionEnabled                  | Boolean                                                                                        | Require that devices have enabled device threat protection .                                                                                                   |
-| deviceThreatProtectionRequiredSecurityLevel    | [deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md) | Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`. |
-| managedEmailProfileRequired                    | Boolean                                                                                        | Indicates whether or not to require a managed email profile.                                                                                                   |
-| restrictedApps                                 | [appListItem](../resources/intune-deviceconfig-applistitem.md) collection                      | Require the device to not have the specified apps installed. This collection can contain a maximum of 100 elements.                                            |
+| Property                                       | Type                                                                                           | Description                                                                                                                                                          |
+| :--------------------------------------------- | :--------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| roleScopeTagIds                                | String collection                                                                              | List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                           |
+| id                                             | String                                                                                         | Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                                                     |
+| createdDateTime                                | DateTimeOffset                                                                                 | DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                                       |
+| description                                    | String                                                                                         | Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                |
+| lastModifiedDateTime                           | DateTimeOffset                                                                                 | DateTime the object was last modified. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                                 |
+| displayName                                    | String                                                                                         | Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                       |
+| version                                        | Int32                                                                                          | Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)                                   |
+| passcodeBlockSimple                            | Boolean                                                                                        | Indicates whether or not to block simple passcodes.                                                                                                                  |
+| passcodeExpirationDays                         | Int32                                                                                          | Number of days before the passcode expires. Valid values 1 to 65535                                                                                                  |
+| passcodeMinimumLength                          | Int32                                                                                          | Minimum length of passcode. Valid values 4 to 14                                                                                                                     |
+| passcodeMinutesOfInactivityBeforeLock          | Int32                                                                                          | Minutes of inactivity before a passcode is required.                                                                                                                 |
+| passcodeMinutesOfInactivityBeforeScreenTimeout | Int32                                                                                          | Minutes of inactivity before the screen times out.                                                                                                                   |
+| passcodePreviousPasscodeBlockCount             | Int32                                                                                          | Number of previous passcodes to block. Valid values 1 to 24                                                                                                          |
+| passcodeMinimumCharacterSetCount               | Int32                                                                                          | The number of character sets required in the password.                                                                                                               |
+| passcodeRequiredType                           | [requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)               | The required passcode type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.                                                                         |
+| passcodeRequired                               | Boolean                                                                                        | Indicates whether or not to require a passcode.                                                                                                                      |
+| osMinimumVersion                               | String                                                                                         | Minimum IOS version.                                                                                                                                                 |
+| osMaximumVersion                               | String                                                                                         | Maximum IOS version.                                                                                                                                                 |
+| osMinimumBuildVersion                          | String                                                                                         | Minimum IOS build version.                                                                                                                                           |
+| osMaximumBuildVersion                          | String                                                                                         | Maximum IOS build version.                                                                                                                                           |
+| securityBlockJailbrokenDevices                 | Boolean                                                                                        | Devices must not be jailbroken or rooted.                                                                                                                            |
+| deviceThreatProtectionEnabled                  | Boolean                                                                                        | Require that devices have enabled device threat protection .                                                                                                         |
+| deviceThreatProtectionRequiredSecurityLevel    | [deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md) | Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.       |
+| advancedThreatProtectionRequiredSecurityLevel  | [deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md) | MDATP Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`. |
+| managedEmailProfileRequired                    | Boolean                                                                                        | Indicates whether or not to require a managed email profile.                                                                                                         |
+| restrictedApps                                 | [appListItem](../resources/intune-deviceconfig-applistitem.md) collection                      | Require the device to not have the specified apps installed. This collection can contain a maximum of 100 elements.                                                  |
 
 ## Response
 
@@ -92,7 +93,7 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1241
+Content-length: 1304
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -118,6 +119,7 @@ Content-length: 1241
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "advancedThreatProtectionRequiredSecurityLevel": "secured",
   "managedEmailProfileRequired": true,
   "restrictedApps": [
     {
@@ -138,7 +140,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1413
+Content-Length: 1476
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -167,6 +169,7 @@ Content-Length: 1413
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "advancedThreatProtectionRequiredSecurityLevel": "secured",
   "managedEmailProfileRequired": true,
   "restrictedApps": [
     {

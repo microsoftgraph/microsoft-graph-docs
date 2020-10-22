@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cloud communications API overview"
 description: "The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings."
 author: "ananmishr"
@@ -7,6 +7,7 @@ ms.prod: "cloud-communications"
 ---
 
 # Cloud communications API overview
+
 The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings. Grow your business by expediting how you respond to your customers’ needs and how your employees collaborate with each other.
 
 ## Why integrate with the cloud communications APIs?
@@ -23,8 +24,8 @@ You can use the cloud communications APIs to:
 - Have a bot [redirect the incoming call](/graph/api/call-redirect?view=graph-rest-1.0) to the appropriate agent if necessary.
 - Have a bot [answer](/graph/api/call-answer?view=graph-rest-1.0) or [reject](/graph/api/call-reject?view=graph-rest-1.0) the call.
 
-
 ### Simplify the customer service experience
+
 Whether you own a large helpdesk service or a small storefront, it can be difficult to handle multiple customer requests, especially if you don’t have any context of what problem they’re trying to solve beforehand. Handle incoming calls from customers through an **Interactive Voice Response** (IVR) system, where a bot will initially interact with them.
 
 When a customer is prompted for a response from the bot, the customer can press a key on their keypad that corresponds to their selection. The bot can then gather the dial-tone multi-frequency (DTMF) from the customer.
@@ -55,6 +56,7 @@ You can use the cloud communications APIs to build a bot that:
 ![Image of a bot that prompts a user to give a voice response](images/communications-ivr.PNG)
 
 ### Collaborate through group calls
+
 Enable users to engage with coworkers or customers by creating a group call so that everyone can contribute to the conversation.
 
 You can use the cloud communications APIs to build a bot that:
@@ -66,6 +68,7 @@ You can use the cloud communications APIs to build a bot that:
 - [Mutes another participant](/graph/api/participant-mute?view=graph-rest-1.0).
 
 ### Send reminders reliably
+
 To enable users to send customers a reminder for an appointment or a reminder for a payment deadline that’s approaching, you can have a bot call the customer automatically. <!--If the customer misses the call, it will leave a voicemail with the automated message. (Add this back once bot to PSTN calling works)-->
 
 You can use the cloud communications APIs to build a bot that:
@@ -74,8 +77,8 @@ You can use the cloud communications APIs to build a bot that:
 - [Plays a recorded prompt](/graph/api/call-playprompt?view=graph-rest-1.0) to serve as a reminder.
 - [Ends the call](/graph/api/call-delete?view=graph-rest-1.0).
 
-
 ### Set up online meetings
+
 Whether scheduling a meeting between a doctor and a patient or between a user and their direct reports, you can build solutions that generate meetings that users can rely on. For added flexibility, users can call other users and invite them to the meeting while it's ongoing.
 
 You can use the cloud communications APIs to:
@@ -85,6 +88,7 @@ You can use the cloud communications APIs to:
 - Have a bot or a user [join an online meeting](/graph/api/application-post-calls?view=graph-rest-1.0#example-5-join-scheduled-meeting-with-service-hosted-media).
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Cloud Communications APIs in Microsoft Graph (v1.0)](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)

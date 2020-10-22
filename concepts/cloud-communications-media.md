@@ -1,4 +1,4 @@
----
+﻿---
 title: "Media overview"
 description: "Enable your bots to send and receive audio and video related content."
 author: "ananmishr"
@@ -13,6 +13,7 @@ The cloud communications APIs in Microsoft Graph add a new dimension to how your
 This article will help you discover which media hosting option is right for you based on your needs.
 
 ## Service-hosted media (remote hosting)
+
 If you want your bot to play a custom prompt when a customer dials your business's number, or to detect phone tones, record short voice clips, or perform any of the various Interactive Voice Response ([IVR](/graph/api/resources/calls-api-ivr-overview)) scenarios, consider using the [service-hosted media APIs](/graph/api/resources/communications-api-overview).
 
 **If your media needs are simpler, explore this option first**. Because the heavy media processing is offloaded remotely, this is a lighter weight solution that allows you to build your bot in a more flexible way.
@@ -22,6 +23,7 @@ For an example that shows you how to create a bot that uses service-hosted media
 ![Remote hosting diagram](images/communications-remote-media.PNG)
 
 ## Application-hosted media (local hosting)
+
 If you want your bot to access a live stream of your customers' audio and video to use for recording, transcribing, translating, or sentiment analysis through a natural language processing service, consider hosting your media locally.
 
 >**Note:** You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.

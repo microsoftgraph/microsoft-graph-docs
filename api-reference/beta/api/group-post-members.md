@@ -50,7 +50,7 @@ In the request body, supply a JSON representation of a [directoryObject](../reso
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist. 
 
 ## Example
 

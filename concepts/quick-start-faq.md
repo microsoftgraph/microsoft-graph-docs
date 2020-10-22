@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Graph quick start FAQ"
 description: "This FAQ answers questions related to the Microsoft Graph Quick Starts."
 author: jasonjoh
@@ -47,20 +47,20 @@ Absolutely! Each quick start download is based on a [Microsoft Graph tutorial](t
 
 The following table lists the corresponding tutorial and GitHub repository for each quick start sample.
 
-| Quick start | Tutorial | GitHub repository |
-|-------------|----------|-------------------|
-| Android | [Tutorial](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/msgraph-training-android) |
-| Angular | [Tutorial](/graph/tutorials/angular) | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa) |
-| ASP.NET MVC | [Tutorial](/learn/modules/msgraph-build-aspnetmvc-apps) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
-| iOS Swift | [Tutorial](/graph/tutorials/ios-swift) | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift) |
-| iOS Objective-C | [Tutorial](/graph/tutorials/ios-objectivec) | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec) |
-| Node.js | [Tutorial](/graph/tutorials/node) | [GitHub](https://github.com/microsoftgraph/msgraph-training-nodeexpressapp) |
-| PHP | [Tutorial](/graph/tutorials/php) | [GitHub](https://github.com/microsoftgraph/msgraph-training-phpapp) |
-| Python | [Tutorial](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
-| React | [Tutorial](/graph/tutorials/react) | [GitHub](https://github.com/microsoftgraph/msgraph-training-reactspa) |
-| Ruby | [Tutorial](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
-| UWP | [Tutorial](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
-| Xamarin | [Tutorial](/graph/tutorials/xamarin) | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin) |
+| Quick start     | Tutorial                                                | GitHub repository                                                            |
+| --------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Android         | [Tutorial](/graph/tutorials/android)                    | [GitHub](https://github.com/microsoftgraph/msgraph-training-android)         |
+| Angular         | [Tutorial](/graph/tutorials/angular)                    | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa)      |
+| ASP.NET MVC     | [Tutorial](/learn/modules/msgraph-build-aspnetmvc-apps) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp)    |
+| iOS Swift       | [Tutorial](/graph/tutorials/ios-swift)                  | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift)       |
+| iOS Objective-C | [Tutorial](/graph/tutorials/ios-objectivec)             | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec)  |
+| Node.js         | [Tutorial](/graph/tutorials/node)                       | [GitHub](https://github.com/microsoftgraph/msgraph-training-nodeexpressapp)  |
+| PHP             | [Tutorial](/graph/tutorials/php)                        | [GitHub](https://github.com/microsoftgraph/msgraph-training-phpapp)          |
+| Python          | [Tutorial](/graph/tutorials/python)                     | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
+| React           | [Tutorial](/graph/tutorials/react)                      | [GitHub](https://github.com/microsoftgraph/msgraph-training-reactspa)        |
+| Ruby            | [Tutorial](/graph/tutorials/ruby)                       | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp)    |
+| UWP             | [Tutorial](/graph/tutorials/uwp)                        | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp)             |
+| Xamarin         | [Tutorial](/graph/tutorials/xamarin)                    | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin)         |
 
 ### Why don't any of the quick start samples show advanced authentication use cases?
 

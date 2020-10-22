@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Teams provider"
 description: "Use the Teams provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components."
 localization_priority: Normal
@@ -16,6 +16,7 @@ To learn more, see [providers](../providers.md).
 Before using the Teams provider, you will need to make sure you have referenced the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) in your page.
 
 ### via script tag
+
 The following example uses the provider in HTML (via CDN).
 
 ```html
@@ -30,16 +31,16 @@ The following example uses the provider in HTML (via CDN).
 ></mgt-teams-provider>
 ```
 
-| Attribute | Description |
-| --- | --- |
-| client-id   | String client ID (see [Configure your Teams app](#configure-your-teams-app). Required. |
-| auth-popup-url  | Absolute or relative path to the page that will handle auth in the popup (see [Create the popup page](#create-the-popup-page)). Required. |
-| scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional. |
-| depends-on | Element selector string of another higher-priority provider component. Optional. |
-| authority    | Authority string. The default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
-
+| Attribute      | Description                                                                                                                                                                                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| client-id      | String client ID (see [Configure your Teams app](#configure-your-teams-app). Required.                                                                                                                                                                                   |
+| auth-popup-url | Absolute or relative path to the page that will handle auth in the popup (see [Create the popup page](#create-the-popup-page)). Required.                                                                                                                                |
+| scopes         | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                        |
+| depends-on     | Element selector string of another higher-priority provider component. Optional.                                                                                                                                                                                         |
+| authority      | Authority string. The default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 
 ### via NPM
+
 The following example uses the provider in JS modules (via NPM).
 
 Make sure to install both the toolkit and the Microsoft Teams SDK.

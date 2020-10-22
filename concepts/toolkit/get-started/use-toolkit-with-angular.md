@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Graph Toolkit with Angular"
 description: "Get started using the Microsoft Graph Toolkit in an Angular application."
 localization_priority: Normal
@@ -12,6 +12,7 @@ Microsoft Graph Toolkit components work great with web frameworks like Angular i
 ## Add the Microsoft Graph Toolkit
 
 First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENT_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
+
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -27,10 +28,13 @@ import { AppComponent } from './app.component';
 })
 export class AppModule {}
 ```
+
 Next, add the Microsoft Graph Toolkit to your project by installing the npm package with:
+
 ```bash
 npm install @microsoft/mgt
 ```
+
 ## Initialize a provider
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers.md). The provider you use depends on the context in which your solution will be used.
@@ -56,7 +60,9 @@ export class AppComponent implements OnInit {
     }
 }
 ```
+
 ### Create an app/client ID
+
 In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD. 
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**.
 
@@ -105,6 +111,7 @@ export class AppComponent implements OnInit {
     }
 }
 ```
+
 Now, you can use your custom binding syntax to define custom templates.
 
 ```html
@@ -116,6 +123,7 @@ Now, you can use your custom binding syntax to define custom templates.
 ```
 
 ## Next steps
+
 - Check out this step-by-step tutorial on [building an Angular app](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/).
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).

@@ -35,6 +35,7 @@ GET /sites/{id}/onenote/notebooks/{id}
 ```
 
 ## Optional query parameters
+
 This method supports the `select` and `expand` [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 Valid `expand` values for notebooks are `sections` and `sectionGroups`.

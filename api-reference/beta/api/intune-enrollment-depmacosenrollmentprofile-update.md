@@ -63,7 +63,6 @@ The following table shows the properties that are required when you create the [
 | isDefault                                           | Boolean | Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                          |
 | supervisedModeEnabled                               | Boolean | Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) |
 | supportDepartment                                   | String  | Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                                    |
-| passCodeDisabled                                    | Boolean | Indicates if Passcode setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                      |
 | isMandatory                                         | Boolean | Indicates if the profile is mandatory Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                             |
 | locationDisabled                                    | Boolean | Indicates if Location service setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                              |
 | supportPhoneNumber                                  | String  | Support phone number Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                                              |
@@ -73,7 +72,6 @@ The following table shows the properties that are required when you create the [
 | termsAndConditionsDisabled                          | Boolean | Indicates if 'Terms and Conditions' setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                        |
 | touchIdDisabled                                     | Boolean | Indicates if touch id setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                      |
 | applePayDisabled                                    | Boolean | Indicates if Apple pay setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                     |
-| zoomDisabled                                        | Boolean | Indicates if zoom setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                          |
 | siriDisabled                                        | Boolean | Indicates if siri setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                          |
 | diagnosticsDisabled                                 | Boolean | Indicates if diagnostics setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                   |
 | displayToneSetupDisabled                            | Boolean | Indicates if displaytone setup screen is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)                                                                                                                 |
@@ -84,8 +82,11 @@ The following table shows the properties that are required when you create the [
 | registrationDisabled                                | Boolean | Indicates if registration is disabled                                                                                                                                                                                                                                   |
 | fileVaultDisabled                                   | Boolean | Indicates if file vault is disabled                                                                                                                                                                                                                                     |
 | iCloudDiagnosticsDisabled                           | Boolean | Indicates if iCloud Analytics screen is disabled                                                                                                                                                                                                                        |
+| passCodeDisabled                                    | Boolean | Indicates if Passcode setup pane is disabled                                                                                                                                                                                                                            |
+| zoomDisabled                                        | Boolean | Indicates if zoom setup pane is disabled                                                                                                                                                                                                                                |
 | iCloudStorageDisabled                               | Boolean | Indicates if iCloud Documents and Desktop screen is disabled                                                                                                                                                                                                            |
 | chooseYourLockScreenDisabled                        | Boolean | Indicates if iCloud Documents and Desktop screen is disabled                                                                                                                                                                                                            |
+| accessibilityScreenDisabled                         | Boolean | Indicates if Accessibility screen is disabled                                                                                                                                                                                                                           |
 
 ## Response
 
@@ -100,7 +101,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 Content-type: application/json
-Content-length: 1260
+Content-length: 1300
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -113,7 +114,6 @@ Content-length: 1260
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "Support Phone Number value",
@@ -123,7 +123,6 @@ Content-length: 1260
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
@@ -134,8 +133,11 @@ Content-length: 1260
   "registrationDisabled": true,
   "fileVaultDisabled": true,
   "iCloudDiagnosticsDisabled": true,
+  "passCodeDisabled": true,
+  "zoomDisabled": true,
   "iCloudStorageDisabled": true,
-  "chooseYourLockScreenDisabled": true
+  "chooseYourLockScreenDisabled": true,
+  "accessibilityScreenDisabled": true
 }
 ```
 
@@ -146,7 +148,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1309
+Content-Length: 1349
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -160,7 +162,6 @@ Content-Length: 1309
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "Support Phone Number value",
@@ -170,7 +171,6 @@ Content-Length: 1309
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
@@ -181,7 +181,10 @@ Content-Length: 1309
   "registrationDisabled": true,
   "fileVaultDisabled": true,
   "iCloudDiagnosticsDisabled": true,
+  "passCodeDisabled": true,
+  "zoomDisabled": true,
   "iCloudStorageDisabled": true,
-  "chooseYourLockScreenDisabled": true
+  "chooseYourLockScreenDisabled": true,
+  "accessibilityScreenDisabled": true
 }
 ```

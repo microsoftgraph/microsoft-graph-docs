@@ -61,7 +61,9 @@ The following table shows the properties that are required when you create the m
 | modifiedDateTime    | DateTimeOffset                                                                                | The time the management condition statement was last modified. Updated service side.                                          |
 | expression          | [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md) | The management condition statement expression used to evaluate if a management condition statement was activated/deactivated. |
 | eTag                | String                                                                                        | ETag of the management condition statement. Updated service side.                                                             |
-| applicablePlatforms | [devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection             | The applicable platforms for this management condition statement. This is calculated from looking the management conditions associated to the management condition statement and finding the intersection of applicable platforms. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+| applicablePlatforms | [devicePlatformType](../resources/intune-shared-deviceplatformtype.md) collection             | The applicable platforms for this management condition statement.                                                             |
+
+This is calculated from looking the management conditions associated to the management condition statement and finding the intersection of applicable platforms. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 
 ## Response
 

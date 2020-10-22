@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tasks component in the Microsoft Graph Toolkit"
 description: "The Tasks component enables the user to view, add, remove, complete, or edit tasks. It works with any tasks in Microsoft Planner or Microsoft To-Do."
 localization_priority: Normal
@@ -21,19 +21,19 @@ The following example displays the signed-in user's Microsoft Planner tasks usin
 
 ## Properties
 
-| Attribute | Property | Description |
-| -- | -- | -- |
-| data-source="todo/planner" | dataSource | An enumeration to configure the data source for tasks - either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
-| read-only | readOnly | A Boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`. |
-| hide-header | hideHeader | A Boolean to show or hide the header of the component. Default is `false`. |
-| hide-options | hideOptions | A Boolean to show or hide the options in tasks. Default is `false`.
-| initial-id="planner_id/folder_id" | initialId | A string ID to set the initially displayed planner or folder to the provided ID. |
-| initial-bucket-id="bucket_id" | initialBucketId | A string ID to set the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
-| target-id="planner_id/folder_id"| targetId | A string ID to lock the tasks interface to the provided planner or folder ID. |
-| target-bucket-id="bucket_id" |targetBucketId  | A string ID to lock the tasks interface to the provided bucket ID (Planner Data-Source Only). |
-| group-id | groupId  | A string ID to lock the tasks interface to the group ID (Planner Data-Source Only). |
-| N/A | isNewTaskVisible  | Determines whether new task view is visible at render. |
-| N/A | taskFilter  | An optional function to filter which tasks are shown to the user. |
+| Attribute                         | Property         | Description                                                                                                                 |
+| --------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| data-source="todo/planner"        | dataSource       | An enumeration to configure the data source for tasks - either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
+| read-only                         | readOnly         | A Boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`.                      |
+| hide-header                       | hideHeader       | A Boolean to show or hide the header of the component. Default is `false`.                                                  |
+| hide-options                      | hideOptions      | A Boolean to show or hide the options in tasks. Default is `false`.                                                         |
+| initial-id="planner_id/folder_id" | initialId        | A string ID to set the initially displayed planner or folder to the provided ID.                                            |
+| initial-bucket-id="bucket_id"     | initialBucketId  | A string ID to set the initially displayed bucket (Planner Data-Source Only) to the provided ID.                            |
+| target-id="planner_id/folder_id"  | targetId         | A string ID to lock the tasks interface to the provided planner or folder ID.                                               |
+| target-bucket-id="bucket_id"      | targetBucketId   | A string ID to lock the tasks interface to the provided bucket ID (Planner Data-Source Only).                               |
+| group-id                          | groupId          | A string ID to lock the tasks interface to the group ID (Planner Data-Source Only).                                         |
+| N/A                               | isNewTaskVisible | Determines whether new task view is visible at render.                                                                      |
+| N/A                               | taskFilter       | An optional function to filter which tasks are shown to the user.                                                           |
 
 The following example shows only tasks from Planner with ID *12345* and does not allow the user to create new tasks.
 
@@ -50,7 +50,7 @@ taskView.taskFilter = task => task.appliedCategories.category3 === true;
 
 ## Custom CSS variables
 
-````css
+```css
 mgt-tasks {
 --tasks-header-padding
 --tasks-header-margin 
@@ -112,20 +112,21 @@ mgt-tasks {
 
 --task-icon-alignment: flex-start (default) | center | flex-end
 }
-````
+```
 
 ## Events
-| Event | Detail | Description |
-| --- | --- | --- |
+
+| Event     | Detail                                           | Description                                   |
+| --------- | ------------------------------------------------ | --------------------------------------------- |
 | taskClick | The detail contains the respective `task` object | Fired when the user clicks or taps on a task. |
 
 ## Templates
 
 The `tasks` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
 
-| Data type     | Data context              | Description                                                       |
-| ---------     | ------------------------- | ----------------------------------------------------------------- |
-| task     | task: a planner or to-do task object | replaces the whole default task. |
+| Data type    | Data context                         | Description                                        |
+| ------------ | ------------------------------------ | -------------------------------------------------- |
+| task         | task: a planner or to-do task object | replaces the whole default task.                   |
 | task-details | task: a planner or to-do task object | template replaces the details section of the task. |
 
 The following example defines a template for the tasks component.
@@ -147,14 +148,14 @@ The following example defines a template for the tasks component.
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| Resource | Permission |
-| - | - |
-| /me/planner/plans | Group.Read.All |
-| /planner/plans/${id} | Group.Read.All, Group.ReadWrite.All |
-| /planner/tasks | Group.ReadWrite.All |
-| /me/outlook/taskGroups | Tasks.Read |
-| /me/outlook/taskFolders | Tasks.Read, Tasks.ReadWrite |
-| /me/outlook/tasks | Tasks.ReadWrite |
+| Resource                          | Permission                          |
+| --------------------------------- | ----------------------------------- |
+| /me/planner/plans                 | Group.Read.All                      |
+| /planner/plans/${id}              | Group.Read.All, Group.ReadWrite.All |
+| /planner/tasks                    | Group.ReadWrite.All                 |
+| /me/outlook/taskGroups            | Tasks.Read                          |
+| /me/outlook/taskFolders           | Tasks.Read, Tasks.ReadWrite         |
+| /me/outlook/tasks                 | Tasks.ReadWrite                     |
 | /groups/${group-id}/planner/plans | Group.Read.All, Group.ReadWrite.All |
 
 For the Microsoft Planner data source, fetching and reading tasks requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.

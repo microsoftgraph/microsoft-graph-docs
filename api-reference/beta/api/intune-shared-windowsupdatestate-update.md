@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Update the properties of a [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.
+Update the properties of a windowsUpdateState object.
 
 ## Prerequisites
 
@@ -55,18 +55,18 @@ In the request body, supply a JSON representation for the [windowsUpdateState](.
 
 The following table shows the properties that are required when you create the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md).
 
-| Property             | Type                                                                     | Description                                                                                               |
-| :------------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| id                   | String                                                                   | This is Id of the entity.                                                                                 |
-| deviceId             | String                                                                   | The id of the device.                                                                                     |
-| userId               | String                                                                   | The id of the user.                                                                                       |
-| deviceDisplayName    | String                                                                   | Device display name.                                                                                      |
-| userPrincipalName    | String                                                                   | User principal name.                                                                                      |
-| status               | [windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md) | Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`. |
-| qualityUpdateVersion | String                                                                   | The Quality Update Version of the device.                                                                 |
-| featureUpdateVersion | String                                                                   | The current feature update version of the device.                                                         |
-| lastScanDateTime     | DateTimeOffset                                                           | The date time that the Windows Update Agent did a successful scan.                                        |
-| lastSyncDateTime     | DateTimeOffset                                                           | Last date time that the device sync with with Microsoft Intune.                                           |
+| Property             | Type                                                                           | Description                                                                                               |
+| :------------------- | :----------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| id                   | String                                                                         | This is Id of the entity.                                                                                 |
+| deviceId             | String                                                                         | The id of the device.                                                                                     |
+| userId               | String                                                                         | The id of the user.                                                                                       |
+| deviceDisplayName    | String                                                                         | Device display name.                                                                                      |
+| userPrincipalName    | String                                                                         | User principal name.                                                                                      |
+| status               | [windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md) | Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`. |
+| qualityUpdateVersion | String                                                                         | The Quality Update Version of the device.                                                                 |
+| featureUpdateVersion | String                                                                         | The current feature update version of the device.                                                         |
+| lastScanDateTime     | DateTimeOffset                                                                 | The date time that the Windows Update Agent did a successful scan.                                        |
+| lastSyncDateTime     | DateTimeOffset                                                                 | Last date time that the device sync with with Microsoft Intune.                                           |
 
 ## Response
 

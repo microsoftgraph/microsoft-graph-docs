@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Search API in Microsoft Graph to search calendar events"
 description: "You are able to search in user’s own calendar."
 author: "knightsu"

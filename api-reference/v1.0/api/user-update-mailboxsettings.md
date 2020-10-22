@@ -48,7 +48,9 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
 | Name          | Type   | Description               |

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use note tags in OneNote pages"
 description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
@@ -14,7 +14,6 @@ Use the `data-tag` attribute to add and update check boxes, stars, and other bui
 
 ![Three note tags displayed on a OneNote page.](images/note-tags-example.png)
 
-
 <a name="attributes"></a>
 
 ## Note tag attributes
@@ -29,11 +28,10 @@ In the HTML of a OneNote page, a note tag is represented by the `data-tag` attri
 
 A `data-tag` value is composed of a shape, and sometimes a status (see all [supported values](#built-in-note-tags-for-onenote)).
 
-| Property | Description |
-|:------|:------|
-| shape | The identifier of the note tag (example: `to-do` or `important`). |
-| status | The status of check box note tags. This is used only to set check boxes as completed. |
-
+| Property | Description                                                                           |
+| :------- | :------------------------------------------------------------------------------------ |
+| shape    | The identifier of the note tag (example: `to-do` or `important`).                     |
+| status   | The status of check box note tags. This is used only to set check boxes as completed. |
 
 <a name="note-tags"></a>
 
@@ -161,7 +159,6 @@ Authorization: Bearer {token}
 
 For more information about creating pages, see [Create OneNote pages](onenote-create-page.md). For more about updating pages, see [Update OneNote pages](onenote-update-page.md).
 
-
 <a name="note-tags-lists"></a>
 
 ## Note tags on lists
@@ -191,7 +188,6 @@ Here are some guidelines for working with note tags on lists:
 - Unnested `li` elements sent in input HTML are returned in a `ul` in the output HTML.
 
 - In output HTML, all `data-tag` list settings are defined on `span` elements on the list items.
-
 
 The following code shows how some of these rules are applied. The input HTML creates two lists with note tags. The output HTML is what's returned for the lists when you retrieve page content.
 
@@ -266,9 +262,6 @@ Note that the `data-tag` attribute defined at the list level is pushed to its li
 > **Note:**
 > In the output HTML, the definition and remember-for-later note tags are both returned as `data-tag="remember-for-later"`. The `title` element doesn't return any note tag information.
 
-
-
-
 <a name="built-in-tags"></a>
 
 ## Built-in note tags for OneNote
@@ -319,18 +312,16 @@ The values you can assign to the `data-tag` attribute are shown in the following
 - `client-request`
 - `client-request:completed`
 
-
 <a name="request-response-info"></a>
 
 ## Response information
 
 Microsoft Graph returns the following information in the response.
 
-| Response data | Description |
-|------|------|
-| Success code | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request. |
-| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |
-
+| Response data | Description                                                                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Success code  | A 201 HTTP status code for a successful POST request, and a 204 HTTP status code for a successful PATCH request.                              |
+| Errors        | Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |
 
 <a name="permissions"></a>
 
@@ -351,7 +342,6 @@ To create or update OneNote pages, you'll need to request appropriate permission
 
 For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).
 
-
 <a name="see-also"></a>
 
 ## See also
@@ -362,6 +352,3 @@ For more information about permission scopes and how they work, see [OneNote per
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)
-
-
-

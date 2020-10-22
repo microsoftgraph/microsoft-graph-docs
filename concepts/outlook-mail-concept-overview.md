@@ -1,4 +1,4 @@
----
+﻿---
 title: "Outlook mail API overview"
 description: "Outlook is a messaging communication hub in Microsoft 365. It also lets you manage contacts, schedule meetings, find information about users in an organization,"
 author: "angelgolfer-ms"
@@ -49,7 +49,6 @@ Use Microsoft Graph to suggest contextual data to your app users:
 
 - Offer app users a smart file picker and suggest files that they have recently interacted with, to add as attachments when composing a message. [Insights (preview)](/graph/api/resources/insights?view=graph-rest-beta) use advanced analytics to suggest files that are trending around a user, recently viewed or edited by the user, or shared with the user.
 
-
 ### Store app data in a resource or resource instance
 
 Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets you simply include app data as Internet message headers when [creating](/graph/api/user-post-messages?view=graph-rest-1.0#request-2) or [sending](/graph/api/user-sendmail?view=graph-rest-1.0#request-2) a new message, or a reply to a message.
@@ -61,11 +60,11 @@ If you need to add and subsequently update custom data, you can [store the data 
 [!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Outlook mail API in Microsoft Graph v1.0](/graph/api/resources/mail-api-overview?view=graph-rest-1.0)
 - [Outlook mail API in Microsoft Graph beta](/graph/api/resources/mail-api-overview?view=graph-rest-beta)
-
 
 ## Next steps
 
@@ -81,5 +80,3 @@ Looking for the API reference for this service?
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
 
 - Find out more about [using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
-
-

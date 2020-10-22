@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete b2xIdentityUserFlow"
 description: "Delete a b2xIdentityUserFlow object."
 localization_priority: Normal

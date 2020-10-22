@@ -1,4 +1,4 @@
----
+﻿---
 title: "Best practices for working with Microsoft Graph"
 description: "This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users."
 localization_priority: Priority
@@ -33,7 +33,9 @@ Apply the following best practices for consent and authorization in your app:
 - **Use the correct permission type based on scenarios**. If you're building an interactive application where a signed in user is present, your application should use *delegated* permissions, where the application is delegated permission to act as the signed-in user when making calls to Microsoft Graph. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use application permissions.
 
     >**Note:** Using application permissions for interactive scenarios can put your application at compliance and security risk. It can inadvertently elevate a user's privileges to access data, circumnavigating policies configured by an administrator.
+
 <!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
+
 - **Be thoughtful when configuring your app**. This will directly affect end user and admin experiences, along with application adoption and security. For example:
 
   - Your application's privacy statement, terms of use, name, logo and domain will show up in consent and other experiences - so make sure to configure these carefully so they are understood by your end-users.
@@ -73,12 +75,12 @@ For more details, see [paging](paging.md).
 
 While your application should handle all error responses (in the 400 and 500 ranges), pay special attention to certain expected errors and responses, listed in the following table.
 
-| Topic   | HTTP error code    | Best practice|
-|:-----------|:--------|:----------|
-| User does not have access | 403 | If your application is up and running, it could encounter this error even if it has been granted the necessary permissions through a consent experience.  In this case, it's most likely that the signed-in user does not have privileges to access the resource requested. Your application should provide a generic "Access denied" error back to the signed-in user. |
-|Not found| 404 | In certain cases, a requested resource might not be found. For example a resource might not exist, because it has not yet been provisioned (like a user's photo) or because it has been deleted. Some deleted resources *might* be fully restored within 30 days of deletion - such as user, group and application resources, so your application should also take this into account.|
-|Throttling|429|APIs might throttle at any time for a variety of reasons, so your application must **always** be prepared to handle 429 responses. This error response includes the *Retry-After* field in the HTTP response header. Backing off requests using the *Retry-After* delay is the fastest way to recover from throttling. For more information, see [throttling](throttling.md).|
-|Service unavailable| 503 | This is likely because the services is busy. You should employ a back-off strategy similar to 429. Additionally, you should **always** make new retry requests over a new HTTP connection.|
+| Topic                     | HTTP error code | Best practice                                                                                                                                                                                                                                                                                                                                                                         |
+| :------------------------ | :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| User does not have access | 403             | If your application is up and running, it could encounter this error even if it has been granted the necessary permissions through a consent experience.  In this case, it's most likely that the signed-in user does not have privileges to access the resource requested. Your application should provide a generic "Access denied" error back to the signed-in user.               |
+| Not found                 | 404             | In certain cases, a requested resource might not be found. For example a resource might not exist, because it has not yet been provisioned (like a user's photo) or because it has been deleted. Some deleted resources *might* be fully restored within 30 days of deletion - such as user, group and application resources, so your application should also take this into account. |
+| Throttling                | 429             | APIs might throttle at any time for a variety of reasons, so your application must **always** be prepared to handle 429 responses. This error response includes the *Retry-After* field in the HTTP response header. Backing off requests using the *Retry-After* delay is the fastest way to recover from throttling. For more information, see [throttling](throttling.md).         |
+| Service unavailable       | 503             | This is likely because the services is busy. You should employ a back-off strategy similar to 429. Additionally, you should **always** make new retry requests over a new HTTP connection.                                                                                                                                                                                            |
 
 ### Evolvable enums
 
@@ -86,7 +88,6 @@ Client applications can be broken by the addition of members to an existing enum
 By default, unknown members are not returned by Microsoft Graph. If, however, your application is written to handle the appearance of unknown members, it can opt-in to receive unknown enum members, using an HTTP *Prefer* request header.
 
 >**Note:** If your application is prepared to handle unknown enum members, it should opt-in by using an HTTP *prefer* request header: `Prefer: include-unknown-enum-members`.
-
 
 ## Storing data locally
 
@@ -137,6 +138,7 @@ JSON batching allows you to optimize your application by combining multiple requ
 Use [batching](json-batching.md) where significant network latency can have a big impact on the performance.
 
 ## Reliability and support
+
 To ensure reliability and facilitate support for your application:
 
 - Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Graph Security API overview"
 description: "You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities. The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple Microsoft Graph Security providers (also called security providers or providers). Requests to the Microsoft Graph Security API are federated to all applicable security providers. The results are aggregated and returned to the requesting application in a common schema, as shown in the following diagram. For details, see Microsoft Graph Security API data flow."
 author: "preetikr"
@@ -67,13 +67,14 @@ Use the Microsoft Secure Score (preview) to provide visibility into your organiz
 
 The following table lists the benefits that different security solutions can access by integrating with the Microsoft Graph Security API.  
 
-|**Area**     | **Benefits**|
-|:---------------|:---------|
-|**Managed Security Service Providers (MSSPs)**|<ul><li>Streamlined integration with security operations tools, workflows, and reporting.</li> <li>Reduced deployment and maintenance time and efforts.</li> <li>Automated response to alerts by taking action on threats.</li> <li>Ability to deliver more value to MSSP customers.</li></ul>|
-|**SIEM and IT Risk management solutions**|<ul><li>Smooth integration with Microsoft security solutions and ecosystem partners.</li> <li>Rich alert metadata.</li> <li>Better alert correlation.</li></ul>|
-|**Applications** <br>(Threat intelligence, mobile, cloud, IOT, fraud detection, identity & access, risk & compliance, firewall, and so on)|<ul><li>Unified threat management, prevention, and risk management across various security solutions.</li> <li>Alerts, actions, and customer threat intelligence exposed through Microsoft Graph.</li> <li>Instant integration with Microsoft Graph-enabled solutions.</li> <li>Gain deep security insights to train other security solutions.</li> </ul>|
+| **Area**                                                                                                                                   | **Benefits**                                                                                                                                                                                                                                                                                                                                              |
+| :----------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Managed Security Service Providers (MSSPs)**                                                                                             | <ul><li>Streamlined integration with security operations tools, workflows, and reporting.</li> <li>Reduced deployment and maintenance time and efforts.</li> <li>Automated response to alerts by taking action on threats.</li> <li>Ability to deliver more value to MSSP customers.</li></ul>                                                            |
+| **SIEM and IT Risk management solutions**                                                                                                  | <ul><li>Smooth integration with Microsoft security solutions and ecosystem partners.</li> <li>Rich alert metadata.</li> <li>Better alert correlation.</li></ul>                                                                                                                                                                                           |
+| **Applications** <br>(Threat intelligence, mobile, cloud, IOT, fraud detection, identity & access, risk & compliance, firewall, and so on) | <ul><li>Unified threat management, prevention, and risk management across various security solutions.</li> <li>Alerts, actions, and customer threat intelligence exposed through Microsoft Graph.</li> <li>Instant integration with Microsoft Graph-enabled solutions.</li> <li>Gain deep security insights to train other security solutions.</li> </ul> |
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Security API in Microsoft Graph v1.0](/graph/api/resources/security-api-overview?view=graph-rest-1.0)

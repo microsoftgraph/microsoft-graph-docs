@@ -82,7 +82,7 @@ Singleton entity that acts as a container for all device app management function
 
 ## JSON Representation
 
-Here is a JSON representation of the resource.  Note that this is only an example; query responses to actual queries will contain the properties appropriate for the context.  
+Here is a JSON representation of the resource.  Note that this is only an example; query responses to actual queries will contain the properties appropriate for the context.
 
 <!-- {
   "blockType": "resource",

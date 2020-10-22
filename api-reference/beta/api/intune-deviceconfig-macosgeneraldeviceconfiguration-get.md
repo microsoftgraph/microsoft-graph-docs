@@ -76,7 +76,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5047
+Content-Length: 5135
 
 {
   "value": {
@@ -134,6 +134,8 @@ Content-Length: 5047
     "passwordPreviousPasswordBlockCount": 2,
     "passwordRequiredType": "alphanumeric",
     "passwordRequired": true,
+    "passwordMaximumAttemptCount": 11,
+    "passwordMinutesUntilFailedLoginReset": 4,
     "keychainBlockCloudSync": true,
     "airPrintBlocked": true,
     "airPrintForceTrustedTLS": true,

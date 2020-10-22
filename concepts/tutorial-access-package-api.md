@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tutorial: Create an access package using Microsoft Graph APIs"
 description: "Learn how to create an access package and request access to it using Microsoft Graph APIs."
 author: "davidmu1"
@@ -26,11 +26,11 @@ To successfully complete this tutorial, make sure that you have the required pre
     3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
         ![Select the Microsoft Graph permissions](./images/tutorial-access-package-api/set-permissions.png)
-        
+
     4. Scroll through the list of permissions to the `Group` permissions, expand **Group (2)**, select the **Group.ReadWrite.All** permission. Scroll further down the list of permissions to the `User` permissions, expand **User (8)**, and select the **User.ReadWrite.All** permission.
 
         ![Search for the user, group, and entitlementmanagement permissions](./images/tutorial-access-package-api/set-user-permission.png)
-    
+
     5. Select **Consent**, and then select **Accept** to accept the consent of the permissions. You do not need to consent on behalf of your organization for these permissions.
     6. Search for the `EntitlementManagement` permissions, expand **EntitlementManagement (2)**, select the **Entitlement.ReadWrite.All** permission, and then select **Consent**. Because this permission requires admin consent and is needed by a user account that you create in this tutorial, you must select **Consent on behalf of your organization**.
 
@@ -48,7 +48,7 @@ For this tutorial, you create a user account that is used to request access to t
 
 #### Request
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/users
 Content-type: application/json
 
@@ -380,7 +380,7 @@ The access package now has one resource role, which is group membership. The rol
 Now that you created the access package and added resources and roles, you can decide who can access it by creating an access package policy. In this tutorial, you enable the **Requestor1** account that you created to request access to the resources in the access package. For this task, you need these values:
 - **id** of the access package for the value of the **accessPackageId** property
 - **id** of the **Requestor1** user account for the value of the **id** property in **allowedRequestors**
- 
+
 The value of the **durationInDays** property enables the **Requestor1** account to access the resources in the access package for up to 30 days. Record the value of the **id** property that is returned to use later in this tutorial. 
 
 #### Request
@@ -718,7 +718,6 @@ No Content - 204
 ## See also
 
 In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do.
-
 
 - [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
 - [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)

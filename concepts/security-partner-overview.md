@@ -1,4 +1,4 @@
----
+﻿---
 title: "Partnering with Microsoft Graph Security API – technology partner opportunities "
 description: "This This article describes partnering opportunities enabled by the Microsoft Graph Security API and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions. "
 localization_priority: Normal
@@ -27,10 +27,10 @@ Microsoft enables technology partner integration in two key ways.
 1. As a consumer of information from Microsoft Graph, you can enrich your solutions with information contained in Microsoft Graph as well as use the Microsoft Graph API to perform tasks on behalf of a customer.
 2. You can also contribute your alerts and actions to Microsoft Graph alongside Microsoft providers.
 
-|How do you integrate?|Data available|Capabilities supported|
-|:--------------------|:-------------|:---------------------|
-|Integrate your application with the Microsoft Graph Security API.|<li>Alerts from Microsoft Graph Security Providers</li><li>Secure Scores from Microsoft</li>| <li>Query alerts/Secure Score</li> <li>Call a Microsoft Graph Security Action</li> <li>Update a Microsoft Graph Security alert</li> <li>Upload Customer threat indicators to Microsoft</li> |
-|Enable others to integrate with your products through the Microsoft Graph Security API.|<li>Alerts from your security products</li>|<li>Security Actions for your security product</li>|
+| How do you integrate?                                                                   | Data available                                                                               | Capabilities supported                                                                                                                                                                      |
+| :-------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Integrate your application with the Microsoft Graph Security API.                       | <li>Alerts from Microsoft Graph Security Providers</li><li>Secure Scores from Microsoft</li> | <li>Query alerts/Secure Score</li> <li>Call a Microsoft Graph Security Action</li> <li>Update a Microsoft Graph Security alert</li> <li>Upload Customer threat indicators to Microsoft</li> |
+| Enable others to integrate with your products through the Microsoft Graph Security API. | <li>Alerts from your security products</li>                                                  | <li>Security Actions for your security product</li>                                                                                                                                         |
 
 Let’s delve a little deeper and explore some common scenarios where Microsoft Graph Security API integration magnifies security integration investments and the benefits to customers that we can achieve together.
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Integrate your Windows UWP app with the client-side SDK for user notifications"
 description: "Integrate your Windows UWP app with user notifications client SDK."
 localization_priority: Priority
@@ -86,13 +86,11 @@ For more details about including and consuming NuGet packages from your UWP app,
 * [Use packages from nuget.org](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts)
 * [Quickstart: Install and use a package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
-
 ## Initializing the Connected Device Platforms
 
 The client-side SDK is built on top of an infrastructure called Connected Device Platform. Before you can use any features, the platform must be initialized within your app. The initialization steps should occur in your main class **OnLaunched** or **onActivated** method, because they are required before the notification scenarios can take place.
 
 You must construct and initialize the platform by instantiating the **ConnectedDevicesPlatform** class. Before doing that, make sure to hook up event handlers, as shown, because after platform is started, the events might begin to fire. 
-
 
 ```C#
 var platform = new ConnectedDevicesPlatform();
@@ -173,7 +171,6 @@ If you're using a Microsoft account, you will need to include the following perm
 
 If you're using an Azure AD account, you'll need to request the following audience: `https://cdpcs.access.microsoft.com`.
 
-
 ## Adding the user account to the platform 
 
 You need to register the signed in user account with the SDK. This involves adding the account and registering a push channel to receive the initial push notifications through WNS. 
@@ -249,7 +246,6 @@ private async void Reader_DataChanged(UserNotificationReader reader, object args
     }
 }
 ```
-
 
 ### Update state of a notification
 

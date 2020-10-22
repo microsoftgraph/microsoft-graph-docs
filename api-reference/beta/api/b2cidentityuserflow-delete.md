@@ -1,4 +1,4 @@
----
+﻿---
 title: "Delete b2cIdentityUserFlow"
 description: "Delete a b2cIdentityUserFlow object."
 localization_priority: Normal

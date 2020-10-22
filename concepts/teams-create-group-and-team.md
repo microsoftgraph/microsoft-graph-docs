@@ -1,4 +1,4 @@
----
+﻿---
 title: "Creating teams and managing members using Microsoft Graph"
 description: "Creating a group that includes a team involves the following steps: "
 author: "hachandr"
@@ -9,7 +9,6 @@ ms.prod: "microsoft-teams"
 # Creating teams and managing members using Microsoft Graph
 
 You can use the Microsoft Teams API in Microsoft Graph to create teams in multiple ways. This article describes the approach that we recommend for the best results.
-
 
 ## Initial team creation
 
@@ -23,7 +22,7 @@ All teams are backed by Microsoft 365 groups. The quickest way to get your team 
     - **mailEnabled** = true
     - **securityEnabled** = false
 
-    ```http
+```http
     POST /groups
     {
         "displayName":"Flight 157",
@@ -44,13 +43,13 @@ All teams are backed by Microsoft 365 groups. The quickest way to get your team 
             "https://graph.microsoft.com/v1.0/users/eab978dd-35d0-4885-8c46-891b7d618783"
         ]
     }
-    ```
+```
 
     The following example shows the response. 
 
     >**Note:** The response object shown might be shortened for readability. All the properties will be returned from an actual call.
 
-    ```http
+```http
     HTTP/1.1 200 OK
     Content-type: application/json
     Content-length: xxx
@@ -58,7 +57,7 @@ All teams are backed by Microsoft 365 groups. The quickest way to get your team 
         "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
         "id":"b7f968af-ca51-42f6-a77e-82c7147bc8f2"
     }
-    ```
+```
 
 2. Ensure the group has two or more owners. You can do so via the [add owner](/graph/api/group-post-owners?view=graph-rest-1.0) operation. These should be real user accounts and not service accounts. Having two owners helps handle cases where one owner leaves the company or is unavailable to perform team management operations.
 
@@ -66,27 +65,27 @@ All teams are backed by Microsoft 365 groups. The quickest way to get your team 
 
 4. After the group is successfully created, which can take up to 15 minutes after completing Step 1, create a Microsoft Teams team using the [create team from group](/graph/api/team-post?view=graph-rest-beta#example-4-create-a-team-from-group) operation. If you run into an error, the group creation process might not be completed; try waiting a few more minutes. 
 
-    ```http
+```http
     POST https://graph.microsoft.com/beta/teams
     Content-Type: application/json
     {
       "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
       "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
     }
-    ```
+```
 
     The following example shows the response. 
 
     >**Note:** The response object shown might be shortened for readability. All the properties will be returned from an actual call.
 
-    ```http
+```http
     HTTP/1.1 202 Accepted
     Content-Type: application/json
     Location: /teams/{teamId}/operations/{operationId}
     Content-Location: /teams/{teamId}
     {
     }
-    ```
+```
 
     The created team has the same ID as the group.
 

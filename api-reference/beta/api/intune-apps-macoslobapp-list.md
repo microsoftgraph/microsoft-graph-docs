@@ -70,7 +70,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2114
+Content-Length: 2147
 
 {
   "value": [
@@ -133,7 +133,8 @@ Content-Length: 2114
       "md5Hash": [
         "Md5Hash value"
       ],
-      "ignoreVersionDetection": true
+      "ignoreVersionDetection": true,
+      "installAsManaged": true
     }
   ]
 }

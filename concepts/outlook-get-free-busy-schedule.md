@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get free/busy schedule of users and resources"
 description: "In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period."
 author: "angelgolfer-ms"
@@ -20,6 +20,7 @@ A simple example is to find the free/busy schedule of a coworker, Alex, on a spe
   "blockType": "ignored",
   "name": "calendar_getSchedule_concept"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
 Prefer: outlook.timezone="Pacific Standard Time"
@@ -47,6 +48,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.scheduleInformation",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -151,6 +153,7 @@ It is appropriate for scenarios that depend on [streamlining appointment booking
 **getSchedule** supports both delegated and app-only scenarios. In the latter, an administrator consents the app to access all calendars without a signed-in user.
 
 ### Permissions
+
 The least privileged permissions required by **findmeetingtimes** is Calendars.Read.Shared.
 
 The least privileged permission required by **getSchedule** is Calendars.Read. 
@@ -159,8 +162,8 @@ The least privileged permission required by **getSchedule** is Calendars.Read.
 
 **findmeetingtimes** and **getSchedule** are both generally available and appropriate for use in production apps.
 
-
 ## Event data returned
+
 The least privileged permission required by **getSchedule** for an app to get free/busy information is Calendars.Read. Depending on your app scenario, this can be consented by the signed-in user or administrator.
 
 While the consented permission lets an app use **getSchedule** on the requested users' calendars, through Outlook, the requested user controls which event data, if any, that **getSchedule** returns. 
@@ -176,19 +179,22 @@ AND one or more of the following conditions apply:
 These conditions apply regardless of whether the signed-in user is an administrator in the organization. The requested user has control over the event data returned.
 
 ## Time zone representation
+
 By default, the start and end times of the returned schedule items are represented in UTC. You can use a `Prefer` header to specify a time zone appropriate for your app. As an example: 
+
 ```
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
 ## Limits and error conditions
+
 Be aware of the following limits and error condition:
 
 - **getSchedule** can support looking up free/busy information for up to 20 entities at once. This limit applies to the number of users identified individually or as members of a distribution list, and to the number of resources as well.
 - The time period to look up must be less than 42 days.
 - If **getSchedule** cannot identify a specified user or resource, it returns a single schedule item and indicates the error. 
 
-
 ## See also
+
 - [Permissions reference](permissions-reference.md#calendars-permissions)
 - [Find possible meeting times on the Outlook calendar](findmeetingtimes-example.md)

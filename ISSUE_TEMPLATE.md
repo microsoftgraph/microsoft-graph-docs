@@ -1,4 +1,5 @@
-# Important!
+﻿# Important!
+
 Thank you for helping us to improve the Microsoft Graph documentation. This issue will be closed if you create it here, because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.
 
 To provide feedback on [Microsoft Graph documentation](https://docs.microsoft.com/en-us/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.

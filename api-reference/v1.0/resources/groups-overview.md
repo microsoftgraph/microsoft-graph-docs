@@ -13,12 +13,12 @@ Groups are collections of [users](user.md) and other principals who share access
 
 > **Note**: Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
 
-| Type                                                                              | Use case                                                                                                                                     | groupTypes    | mail-enabled | security-enabled | Can be created and managed via API? |
-| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------ | ---------------- | ----------------------------------- |
-| [Microsoft 365 groups](#microsoft-365-groups)                                     | Facilitating user collaboration with shared Microsoft online resources.                                                                      | `["Unified"]` | `true`       | `false`          | Yes                                 |
-| [Security groups](#security-groups-and-mail-enabled-security-groups)              | Controlling user access to in-app resources.                                                                                                 | `[]`          | `false`      | `true`           | Yes                                 |
-| [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources, with a shared group mailbox.                                                                    | `[]`          | `true`       | `true`           | No                                  |
-| Distribution groups                                                               | Distributing mail to the members of the group. It is recommended to use Microsoft 365 groups due to the richer set of resources it provides. | `[]`          | `true`       | `false`          | No                                  |
+| Type                                                                              | Use case                                                                                                                                     | groupTypes    | mailEnabled | securityEnabled   | Created and managed via API |
+| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------- | ----------------- | --------------------------- |
+| [Microsoft 365 groups](#microsoft-365-groups)                                     | Facilitating user collaboration with shared Microsoft online resources.                                                                      | `["Unified"]` | `true`      | `true` or `false` | Yes                         |
+| [Security groups](#security-groups-and-mail-enabled-security-groups)              | Controlling user access to in-app resources.                                                                                                 | `[]`          | `false`     | `true`            | Yes                         |
+| [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources, with a shared group mailbox.                                                                    | `[]`          | `true`      | `true`            | No                          |
+| Distribution groups                                                               | Distributing mail to the members of the group. It is recommended to use Microsoft 365 groups due to the richer set of resources it provides. | `[]`          | `true`      | `false`           | No                          |
 
 ## Microsoft 365 groups
 
@@ -140,4 +140,5 @@ Using Microsoft Graph, you can perform the following common operations.
 | List the owners of a group, and add or remove owners.                                                                                                                             | [user](user.md) <br/> [group](group.md) | [List owners](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md)                                     |
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

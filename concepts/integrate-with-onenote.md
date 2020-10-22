@@ -1,4 +1,4 @@
----
+﻿---
 title: "OneNote API overview"
 description: "OneNote is a digital notebook that lets customers track ideas and notes for home, school, or work, by typing, sketching, or voice, on the web, phone, tablet, or desktop. They can freely organize notes, switch devices and pick up where they left off, and collaborate on notes with others in real time."
 author: "Jewan-microsoft"
@@ -39,16 +39,15 @@ Use OneNote to increase your app usage. OneNote is preinstalled on new Windows d
 
 The following are some of the most popular requests for working with OneNote resources.
 
-|Operation|URL|
-|:--------|:--|
-|GET my notebooks|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/notebooks&version=v1.0)|
-|GET my sections|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/sections&version=v1.0)|
-|GET my pages|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/pages&version=v1.0)|
+| Operation        | URL                                                                                                                                                     |
+| :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| GET my notebooks | [https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/notebooks&version=v1.0) |
+| GET my sections  | [https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/sections&version=v1.0)   |
+| GET my pages     | [https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/pages&version=v1.0)         |
 
 ## Learn more about OneNote APIs
 
 Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content updating capabilities. The topics in the following list show you how to create new OneNote pages and update existing pages with new content. You'll also learn about best practices in using Microsoft Graph to update OneNote notebooks. 
-
 
 ### Work with OneNote
 
@@ -73,6 +72,7 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 * [Use OneNote API div tags to extract data from captures](onenote-extract-data.md)
 
 ## See also
+
 Find out about a few other OneNote features that are exposed only on the OneNote service-specific REST endpoint.
 
 - [OneNote development](/previous-versions/office/office-365-api/how-to/onenote-landing)
@@ -85,6 +85,7 @@ Find out about a few other OneNote features that are exposed only on the OneNote
 - [Subscribe to webhooks](/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [OneNote API in Microsoft Graph v1.0](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)

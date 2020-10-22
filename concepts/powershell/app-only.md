@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use app-only authentication with the Microsoft Graph PowerShell SDK"
 description: "Learn how to use app-only authentication to enable non-interactive scenarios with the Microsoft Graph PowerShell SDK."
 localization_priority: Normal
@@ -74,9 +74,9 @@ You may be wondering: "I can use the PowerShell SDK to register an app, so that 
 
 1. Save the file. Open PowerShell in the directory that contains **RegisterAppOnly.ps1** and run the following command.
 
-    ```powershell
+```powershell
     .\RegisterAppOnly.ps1 -AppName "Graph PowerShell Script" -CertPath "PATH_TO_PUBLIC_KEY_FILE"
-    ```
+```
 
 1. Open your browser as prompted. Sign in with an administrator account and accept the permissions.
 

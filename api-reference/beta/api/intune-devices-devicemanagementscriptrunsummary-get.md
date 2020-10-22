@@ -37,6 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
+GET /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/runSummary
 ```
 
 ## Optional query parameters

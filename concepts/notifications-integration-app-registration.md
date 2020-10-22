@@ -1,4 +1,4 @@
----
+﻿---
 title: "Manage app registration and API permission for Microsoft Graph notifications"
 description: "In order to receive notifications sent via Microsoft Graph, you first need to register your application on the Microsoft Azure portal."
 localization_priority: Priority
@@ -19,22 +19,21 @@ For information about how to register your apps, see [Register an application wi
 > [!NOTE]
 > If you don't already have a Microsoft account and would like to use one, go to the [Microsoft account](https://account.microsoft.com/account) page. If you're writing an app that needs to use Azure AD v1.0 as an authentication and identity framework for work or school accounts, see [Azure Active Directory Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries). If you’re interested in learning about or using the new converged Microsoft identity platform (v2.0), see [Comparing the Microsoft identity platform endpoint and Azure AD v1.0 endpoint](/azure/active-directory/develop/azure-ad-endpoint-comparison).
 
-
 ## App certificates and secrets
 
 To enable your application to identify and authenticate itself when obtaining auth tokens, you can either upload your own certificate or create a new client secret by going to **Certificates & secrets** in the Azure portal.
-    
+
 ![Screenshot of app certificates and secrets in the Azure portal](images/notifications-app-secrets.png)
-    
+
 > [!NOTE]
 > If you opt to generate a new client secret, be sure to copy and keep it in a safe place. You won’t be able to access it again after you leave the portal.
 
 ## API permissions
 
 You'll need to add additional permissions in order to use Microsoft Graph notifications. Choose **Add a permission**, and under Microsoft APIs, select **Microsoft Graph**, and then select **Delegated permissions**.
-    
+
 ![Screenshot of the Request API permissions page of the Azure portal](images/notifications-api-permissions.png)
-    
+
 Add the following permissions:
 
 - User.Read - allows your application to sign-in your user

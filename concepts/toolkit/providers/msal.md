@@ -1,4 +1,4 @@
----
+﻿---
 title: "MSAL provider"
 description: "The MSAL provider uses MSAL.js to sign in users and acquire tokens to use with the Microsoft Graph"
 localization_priority: Normal
@@ -28,7 +28,7 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
 ```
 
 | Attribute    | Description                                                                                                                                                                                                                                                           |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | client-id    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |
 | login-type   | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional.                                                                                                                                                                                   |
 | scopes       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |

@@ -60,7 +60,6 @@ The following table shows the properties that are required when you create the d
 | id                    | String                                                             | Unique Identifier for the device management script.                                           |
 | displayName           | String                                                             | Name of the device management script.                                                         |
 | description           | String                                                             | Optional description for the device management script.                                        |
-| runSchedule           | [runSchedule](../resources/intune-devices-runschedule.md)          | The interval for script to run. If not defined the script will run once                       |
 | scriptContent         | Binary                                                             | The script content.                                                                           |
 | createdDateTime       | DateTimeOffset                                                     | The date and time the device management script was created. This property is read-only.       |
 | lastModifiedDateTime  | DateTimeOffset                                                     | The date and time the device management script was last modified. This property is read-only. |
@@ -89,9 +88,6 @@ Content-length: 443
   "@odata.type": "#microsoft.graph.deviceManagementScript",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,

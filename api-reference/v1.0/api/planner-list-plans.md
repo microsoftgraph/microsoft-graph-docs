@@ -32,6 +32,7 @@ GET /planner/plans
 ```
 
 ## Optional query parameters
+
 This method requires owner [filter](/graph/query-parameters) to be specified.
 
 ## Request headers

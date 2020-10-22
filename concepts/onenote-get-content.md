@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get OneNote content and structure with Microsoft Graph"
 description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
@@ -17,7 +17,6 @@ To get OneNote content and structure, you send a GET request to the target endpo
 If the request is successful, Microsoft Graph returns a 200 HTTP status code and the entities or content that you requested. OneNote entities are returned as JSON objects that conform to the OData version 4.0 specification.
 
 By using query string options, you can filter your queries and improve performance.
-
 
 <a name="request-uri"></a>
 
@@ -72,7 +71,7 @@ Get pages (metadata) from a specific section.
 `../sections/{section-id}/pages[?filter,orderby,select,expand,top,skip,search,count,pagelevel]`
 
 <br/>
- 
+
 The `search` query string option is available for consumer notebooks only.
 
 The default sort order for pages is `lastModifiedTime desc`.
@@ -86,8 +85,6 @@ For the pages collection in a section, use **pagelevel** to return the indentati
 #### Example
 
 `GET ../sections/{section-id}/pages?pagelevel=true`
-
-
 
 <a name="get-page"></a> 
 
@@ -109,8 +106,6 @@ Use **pagelevel** to return the indentation level of the page and its order with
 
 `GET ../pages/{page-id}?pagelevel=true`
 
-
-
 <a name="get-page-preview"></a> 
 
 ### Page preview
@@ -120,7 +115,6 @@ Get text and image preview content for a page.
 `../pages/{page-id}/preview`
 
 <br/>
-
 
 The JSON response contains the preview content, which you can use to help users identify what's in the page.
 
@@ -144,7 +138,6 @@ If the page has an image that can be used to build a preview UI, the **href** pr
 
 `<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`
 
-
 <a name="get-page-content"></a> 
 
 ### Page HTML content
@@ -158,8 +151,6 @@ Get the HTML content of a page.
 <br/>
 
 Use the **includeIDs=true** query string option to get generated IDs used to [update the page](onenote-update-page.md).
-
-
 
 <a name="get-sections"></a>
 
@@ -189,8 +180,6 @@ The default sort order for sections is `name asc`.
 
 The default query expands the parent notebook and parent section group and selects their `id`, `name`, and `self` properties.
 
-
-
 <a name="get-section"></a>
 
 ### Section entity
@@ -204,8 +193,6 @@ Get a specific section.
 Sections can expand the **parentNotebook** and **parentSectionGroup** properties.
 
 The default query expands the parent notebook and parent section group and selects their `id`, `name`, and `self` properties.
-
-
 
 <a name="get-section-groups"></a>
 
@@ -229,8 +216,6 @@ The default sort order for section groups is `name asc`.
 
 The default query expands the parent notebook and parent section group and selects their `id`, `name`, and `self` properties.
 
-
-
 <a name="get-section-group"></a>
 
 ### SectionGroup entity
@@ -244,8 +229,6 @@ Get a specific section group.
 Section groups can expand the **sections**, **sectionGroups**, **parentNotebook**, and **parentSectionGroup** properties.
 
 The default query expands the parent notebook and parent section group and selects their `id`, `name`, and `self` properties.
-
-
 
 <a name="get-notebooks"></a>
 
@@ -261,8 +244,6 @@ Notebooks can expand the **sections** and **sectionGroups** properties.
 
 The default sort order for notebooks is `name asc`. 
 
-
-
 <a name="get-notebook"></a>
 
 ### Notebook entity
@@ -274,8 +255,6 @@ Get a specific notebook.
 <br/>
 
 Notebooks can expand the **sections** and **sectionGroups** properties.
-
-
 
 <a name="get-resource"></a>
 
@@ -324,9 +303,6 @@ For more information about GET requests, see the following resources in the Micr
 - [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
 - [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
 
-
-
-
 <a name="example"></a>
 
 ## Example GET requests
@@ -340,7 +316,6 @@ You can query for OneNote entities and search page content to get just the infor
 - Spaces in the URL query string must use %20 encoding.<br/><br/>**Example**: `filter=title%20eq%20'biology'`
 
 - Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br/><br/>**Example**: `filter=tolower(name) eq 'spring'`
- 
 
 ### search & filter  
 
@@ -349,7 +324,7 @@ Get all pages that contain the term *recipe* that were created by a specific app
 ```
 [GET] ../pages?search=recipe&filter=createdByAppId eq 'WLID-000000004C12821A'
 ```
- 
+
 ### search & select  
 
 Get the title, OneNote client links, and **contentUrl** link for all pages that contain the term *golgi app* (`search` is available for consumer notebooks only).
@@ -357,7 +332,7 @@ Get the title, OneNote client links, and **contentUrl** link for all pages that 
 ```
 [GET] ../pages?search=golgi app&select=title,links,contentUrl
 ```
- 
+
 ### expand 
 
 Get all notebooks and expand their sections and section groups.  
@@ -389,11 +364,10 @@ Get all notebooks and expand their sections and section groups, and expand all s
 ```
 [GET] ../notebooks?expand=sections,sectionGroups(expand=sections)
 ```
- 
+
 > **Note:**
 > Expanding parents of child entities or expanding children of parent entities creates a circular reference and is not supported.
 
- 
 ### expand & select (multiple levels)  
 
 Get the name and **self** link for a specific section group, and get the name and **self** links for all its sections.  
@@ -411,7 +385,7 @@ Get the name and **self** link for all sections, and get the name and created ti
 ```
 
 <br/>
- 
+
 Get the title and ID for all pages, and get the name of the parent section and parent notebook.
 
 ```
@@ -425,7 +399,7 @@ Get all notebooks, sections, and section groups.
 ```
 [GET] ../notebooks?expand=sections,sectionGroups(expand=sections,sectionGroups(levels=max;expand=sections))
 ```
- 
+
 ### filter
 
 Get all sections that were created in October 2014.
@@ -465,7 +439,7 @@ Get the name and **pagesUrl** link for all sections that contain the term *sprin
 ```
 [GET] ../sections?filter=contains(tolower(name),'spring')&select=name,pagesUrl&orderby=lastModifiedTime desc
 ```
- 
+
 ### orderby
 
 Get the first 20 pages ordered by **createdByAppId** property and then by most recent created time. The API returns 20 entries by default.
@@ -500,7 +474,7 @@ And the next five (`search` is available for consumer notebooks only).
 
 > **Note:**
 > If both **search** and **filter** are applied to the same request, the results include only those entities that match both criteria.
- 
+
 ### select
 
 Get the name, created time, and **self** link for all sections in the user's notebooks.
@@ -543,7 +517,6 @@ Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100
 
 > **Note:**
 > GET requests for pages that retrieve the default number of entries (that is, they don't specify a **top** expression) return an **\@odata.nextLink** link in the response that you can use to get the next 20 entries.
- 
 
 <a name="supported-odata-query-string-options"></a>
 
@@ -553,17 +526,17 @@ When sending GET requests to Microsoft Graph, you can use OData query string opt
 
 > **Note:**
 > For readability, the examples in this article don't use the %20 percent-encoding required for spaces in the URL query string: `filter=isDefault%20eq%20true`
- 
-| Query option | Example and description |  
-|------|------|  
-| count | <p>`count=true`</p><p>The count of entities in the collection. The value is returned in the **\@odata.count** property in the response.</p> |  
-| expand | <p>`expand=sections,sectionGroups`</p><p>The navigation properties to return inline in the response. The following properties are supported for **expand** expressions:<br /> - Pages: **parentNotebook**, **parentSection**<br /> - Sections: **parentNotebook**, **parentSectionGroup**<br /> - Section groups: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**<br /> - Notebooks: **sections**, **sectionGroups**</p><p>By default, GET requests for pages expands **parentSection** and select the section's **id**, **name**, and **self** properties. Default GET requests for sections and section groups expand both **parentNotebook** and **parentSectionGroup**, and select the parents' **id**, **name**, and **self** properties. </p><p>Can be used for a single entity or a collection.<br />Separate multiple properties with commas.<br />Property names are case-sensitive.</p> |   
-| filter | <p>`filter=isDefault eq true`</p><p>A Boolean expression for whether to include an entry in the result set. Supports the following OData operators and functions:<br /> - Comparison operators: **eq**, **ne**, **gt**, **ge**, **lt**, **le**<br /> - Logical operators: **and**, **or**, **not**<br /> - String functions: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**</p><p>[Property](#onenote-entity-properties) names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br /><br />**Example**: `filter=tolower(name) eq 'spring'`</p> |  
-| orderby | <p>`orderby=title,createdTime desc`</p><p>The [properties](#onenote-entity-properties) to sort by, with an optional **asc** (default) or **desc** sort order. You can sort by any property of the entity in the requested collection.</p><p>The default sort order for notebooks, section groups, and sections is `name asc`, and for pages is `lastModifiedTime desc` (last modified page first).</p><p>Separate multiple properties with commas, and list them in the order that you want them applied. Property names are case-sensitive.</p> |  
-| search | <p>`search=cell div`</p><p>Available for consumer notebooks only.</p><p>The term or phrase to search for in the page title, page body, image alt text, and image OCR text. By default, search queries return results sorted by relevance.</p><p>OneNote uses Bing full-text search to support phrase search, stemming, spelling forgiveness, relevance and ranking, word breaking, multiple languages, and other full-text search features. Search strings are case-insensitive.</p><p>Applies only to pages in notebooks owned by the user. Indexed content is private and can only be accessed by the owner. Password-protected pages are not indexed. Applies only to the `pages` endpoint.</p> |  
-| select | <p>`select=id,title`</p><p>The [properties](#onenote-entity-properties) to return. Can be used for a single entity or for a collection. Separate multiple properties with commas. Property names are case-sensitive.</p> |  
-| skip | <p>`skip=10`</p><p>The number of entries to skip in the result set. Typically used for paging results.</p> |  
-| top | <p>`top=50`</p><p>The number of entries to return in the result set, up to a maximum of 100. The default value is 20.</p> |  
+
+| Query option | Example and description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| count        | <p>`count=true`</p><p>The count of entities in the collection. The value is returned in the **\@odata.count** property in the response.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| expand       | <p>`expand=sections,sectionGroups`</p><p>The navigation properties to return inline in the response. The following properties are supported for **expand** expressions:<br /> - Pages: **parentNotebook**, **parentSection**<br /> - Sections: **parentNotebook**, **parentSectionGroup**<br /> - Section groups: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**<br /> - Notebooks: **sections**, **sectionGroups**</p><p>By default, GET requests for pages expands **parentSection** and select the section's **id**, **name**, and **self** properties. Default GET requests for sections and section groups expand both **parentNotebook** and **parentSectionGroup**, and select the parents' **id**, **name**, and **self** properties. </p><p>Can be used for a single entity or a collection.<br />Separate multiple properties with commas.<br />Property names are case-sensitive.</p> |
+| filter       | <p>`filter=isDefault eq true`</p><p>A Boolean expression for whether to include an entry in the result set. Supports the following OData operators and functions:<br /> - Comparison operators: **eq**, **ne**, **gt**, **ge**, **lt**, **le**<br /> - Logical operators: **and**, **or**, **not**<br /> - String functions: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**</p><p>[Property](#onenote-entity-properties) names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br /><br />**Example**: `filter=tolower(name) eq 'spring'`</p>                                                                                                                                                                                                                  |
+| orderby      | <p>`orderby=title,createdTime desc`</p><p>The [properties](#onenote-entity-properties) to sort by, with an optional **asc** (default) or **desc** sort order. You can sort by any property of the entity in the requested collection.</p><p>The default sort order for notebooks, section groups, and sections is `name asc`, and for pages is `lastModifiedTime desc` (last modified page first).</p><p>Separate multiple properties with commas, and list them in the order that you want them applied. Property names are case-sensitive.</p>                                                                                                                                                                                                                                                                                                                                                                              |
+| search       | <p>`search=cell div`</p><p>Available for consumer notebooks only.</p><p>The term or phrase to search for in the page title, page body, image alt text, and image OCR text. By default, search queries return results sorted by relevance.</p><p>OneNote uses Bing full-text search to support phrase search, stemming, spelling forgiveness, relevance and ranking, word breaking, multiple languages, and other full-text search features. Search strings are case-insensitive.</p><p>Applies only to pages in notebooks owned by the user. Indexed content is private and can only be accessed by the owner. Password-protected pages are not indexed. Applies only to the `pages` endpoint.</p>                                                                                                                                                                                                                            |
+| select       | <p>`select=id,title`</p><p>The [properties](#onenote-entity-properties) to return. Can be used for a single entity or for a collection. Separate multiple properties with commas. Property names are case-sensitive.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| skip         | <p>`skip=10`</p><p>The number of entries to skip in the result set. Typically used for paging results.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| top          | <p>`top=50`</p><p>The number of entries to return in the result set, up to a maximum of 100. The default value is 20.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 Microsoft Graph also provides the `pagelevel` query string option you can use to get the level and order of pages within the parent section. Applies only to queries for pages in a specific section or queries for a specific page. 
 
@@ -580,39 +553,37 @@ Microsoft Graph supports the following OData operators and functions in **filter
 
 - Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br/><br/>**Example:** `filter=tolower(name) eq 'spring'`
 
+| Comparison operator                | Example                                    |
+| ---------------------------------- | ------------------------------------------ |
+| eq<br />(equal to)                 | `createdByAppId eq '{app-id}'`             |
+| ne<br />(not equal to)             | `userRole ne 'Owner'`                      |
+| gt<br />(greater than)             | `createdTime gt 2014-02-23`                |
+| ge<br />(greater than or equal to) | `lastModifiedTime ge 2014-05-05T07:00:00Z` |
+| lt<br />(less than)                | `createdTime lt 2014-02-23`                |
+| le<br />(less than or equal to)    | `lastModifiedTime le 2014-02-23`           |
 
-| Comparison operator | Example |  
-|------|------|  
-| eq<br />(equal to) | `createdByAppId eq '{app-id}'` |  
-| ne<br />(not equal to) | `userRole ne 'Owner'` |  
-| gt<br />(greater than) | `createdTime gt 2014-02-23` |  
-| ge<br />(greater than or equal to) | `lastModifiedTime ge 2014-05-05T07:00:00Z` |  
-| lt<br />(less than) | `createdTime lt 2014-02-23` |  
-| le<br />(less than or equal to) | `lastModifiedTime le 2014-02-23` |  
+<br/>
+
+| Logical operator | Example                                                        |
+| ---------------- | -------------------------------------------------------------- |
+| and              | `createdTime le 2014-01-30 and createdTime gt 2014-01-23`      |
+| or               | `createdByAppId eq '{app-id}' or createdByAppId eq '{app-id}'` |
+| not              | `not contains(tolower(title),'school')`                        |
 
 <br/>
 
-| Logical operator | Example |  
-|------|------|  
-| and | `createdTime le 2014-01-30 and createdTime gt 2014-01-23` |  
-| or | `createdByAppId eq '{app-id}' or createdByAppId eq '{app-id}'` |  
-| not | `not contains(tolower(title),'school')` |  
-
-<br/>
-  
-| String function | Example |  
-|------|------|   
-| contains | `contains(tolower(title),'spring')` |  
-| endswith | `endswith(tolower(title),'spring')` |  
-| startswith | `startswith(tolower(title),'spring')` |  
-| length | `length(title) eq 19` |  
-| indexof | `indexof(tolower(title),'spring') eq 1` |  
-| substring | `substring(tolower(title),1) eq 'spring'` |  
-| tolower | `tolower(title) eq 'spring'` |  
-| toupper | `toupper(title) eq 'SPRING'` |  
-| trim | `trim(tolower(title)) eq 'spring'` |  
-| concat | `concat(title,'- by MyRecipesApp') eq 'Carrot Cake Recipe - by MyRecipesApp'` |  
- 
+| String function | Example                                                                       |
+| --------------- | ----------------------------------------------------------------------------- |
+| contains        | `contains(tolower(title),'spring')`                                           |
+| endswith        | `endswith(tolower(title),'spring')`                                           |
+| startswith      | `startswith(tolower(title),'spring')`                                         |
+| length          | `length(title) eq 19`                                                         |
+| indexof         | `indexof(tolower(title),'spring') eq 1`                                       |
+| substring       | `substring(tolower(title),1) eq 'spring'`                                     |
+| tolower         | `tolower(title) eq 'spring'`                                                  |
+| toupper         | `toupper(title) eq 'SPRING'`                                                  |
+| trim            | `trim(tolower(title)) eq 'spring'`                                            |
+| concat          | `concat(title,'- by MyRecipesApp') eq 'Carrot Cake Recipe - by MyRecipesApp'` |
 
 <a name="properties"></a>
 
@@ -633,8 +604,6 @@ For the list of properties and property types, see the following resources in th
 - [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
 - [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
 
-
-
 The **expand** query string option can be used with the following navigation properties:
 
 - Pages: **parentNotebook**, **parentSection**
@@ -642,26 +611,24 @@ The **expand** query string option can be used with the following navigation pro
 - Section groups: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**
 - Notebooks: **sections**, **sectionGroups**
 
-
 <a name="request-response-info"></a>
 
 ## Request and response information for *GET* requests
 
-| Request data | Description |  
-|------|------|  
-| Protocol | All requests use the SSL/TLS HTTPS protocol. |  
-| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions-reference.md).</p> |  
-| Accept header | <p> `application/json` for OneNote entities and entity sets</p><p> `text/html` for page content</p> | 
+| Request data         | Description                                                                                                                                                                                                                                |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Protocol             | All requests use the SSL/TLS HTTPS protocol.                                                                                                                                                                                               |
+| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions-reference.md).</p> |
+| Accept header        | <p> `application/json` for OneNote entities and entity sets</p><p> `text/html` for page content</p>                                                                                                                                        |
 
 <br/>
 
-| Response data | Description |  
-|------|------|  
-| Success code | A 200 HTTP status code. |  
-| Response body | An OData representation of the entity or entity set in JSON format, the page HTML, or file resource binary data.  |  
-| Errors | If the request fails, the API returns [errors](onenote-error-codes.md) in the **\@api.diagnostics** object in the response body. |  
-| X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |  
-
+| Response data          | Description                                                                                                                                                             |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Success code           | A 200 HTTP status code.                                                                                                                                                 |
+| Response body          | An OData representation of the entity or entity set in JSON format, the page HTML, or file resource binary data.                                                        |
+| Errors                 | If the request fails, the API returns [errors](onenote-error-codes.md) in the **\@api.diagnostics** object in the response body.                                        |
+| X-CorrelationId header | A GUID that uniquely identifies the request. You can use this value along with the value of the Date header when working with Microsoft support to troubleshoot issues. |
 
 <a name="root-url"></a>
 
@@ -674,7 +641,6 @@ The Microsoft Graph notes root URL uses the following format for all calls to Mi
 The `version` segment in the URL represents the version of Microsoft Graph that you want to use. Use `v1.0` for stable production code. Use `beta` to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code. 
 
 Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
-
 
 <a name="permissions"></a>
 

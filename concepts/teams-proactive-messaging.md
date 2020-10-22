@@ -1,10 +1,11 @@
----
+﻿---
 title: "Proactive messaging using a bot in Microsoft Teams"
 description: "Sending a proactive message to a Microsoft Teams user with a custom app by first installing the bot using Microsoft Graph."
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
+
 # Proactive messaging using a bot in Microsoft Teams
 
 A proactive message is a message sent to a Microsoft Teams user without a user initiating the conversation. Custom apps in Microsoft Teams can send proactive messages to users using a bot. However, to do so, the bot needs to be installed either as a personal app, or in a team that the user is a member of. This requirement can be prohibitive in scenarios where you need to proactively message a group of users that might or might not have the Teams app installed.

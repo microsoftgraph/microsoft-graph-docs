@@ -17,9 +17,10 @@ The user's settings and activity statistics.
 
 ## Methods
 
-| Method                                               | Return Type             | Description                                          |
-| :--------------------------------------------------- | :---------------------- | :--------------------------------------------------- |
-| [Get settings](../api/useranalytics-get-settings.md) | [settings](settings.md) | Get the user's settings for using the analytics API. |
+| Method | Return Type | Description |
+| :----- | :---------- | :---------- |
+
+[Get settings](../api/useranalytics-get-settings.md) | [settings](settings.md) | Get the user's settings for using the analytics API.|
 
 ## Properties
 

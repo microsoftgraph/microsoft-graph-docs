@@ -11,21 +11,21 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Reboot device.
+Reboot device
 
 ## Prerequisites
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from most to least privileged)             |
-| :------------------------------------- | :------------------------------------------------------ |
-| Delegated (work or school account)     | DeviceManagementManagedDevices.PrivilegedOperations.All |
-| Delegated (personal Microsoft account) | Not supported.                                          |
-| Application                            | DeviceManagementManagedDevices.PrivilegedOperations.All |
+| Permission type                        | Permissions (from most to least privileged)            |
+| :------------------------------------- | :----------------------------------------------------- |
+| Delegated (work or school account)     | DeviceManagementManagedDevices.PriviligedOperation.All |
+| Delegated (personal Microsoft account) | Not supported.                                         |
+| Application                            | DeviceManagementManagedDevices.PriviligedOperation.All |
 
 ## HTTP Request
 

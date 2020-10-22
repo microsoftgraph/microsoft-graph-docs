@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Search API in Microsoft Graph to search files"
 description: "You can use the Microsoft Search API to search files stored in OneDrive or SharePoint."
 author: "nmoreau"
@@ -20,7 +20,6 @@ The Search API lets you scope the types of content to retrieve in OneDrive or Sh
 - [Example 4: Search all content in OneDrive and SharePoint](#example-4-search-all-content-in-onedrive-and-sharepoint)
 - [Example 5: Use filters in search queries](#example-5-use-filters-in-search-queries)
 - [Example 6: Specify select properties](#example-6-specify-select-properties)
-
 
 ## Example 1: Search files
 
@@ -83,7 +82,8 @@ Content-type: application/json
                   }
                 },
                 "parentReference": {
-                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
+                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
                 }
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
@@ -297,7 +297,8 @@ Content-type: application/json
                   }
                 },
                 "parentReference": {
-                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
+                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b”
                 }
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",

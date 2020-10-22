@@ -1,4 +1,4 @@
-# Microsoft Graph documentation
+﻿# Microsoft Graph documentation
 
 Thank you for your interest in Microsoft Graph documentation! For the best experience, we recommend you view this content on the [Microsoft Graph Developer Portal](https://docs.microsoft.com/graph).
 

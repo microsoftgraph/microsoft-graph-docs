@@ -1,4 +1,4 @@
----
+﻿---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration resource type"
 description: "Represents a Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy."
 author: "mmcla"
@@ -19,26 +19,30 @@ Represents a Microsoft Authenticator Passwordless Phone Sign-in authentication m
 > Substantial schema changes are planned for APIs that manage the Microsoft Authenticator app while the APIs are in Mirosoft Graph beta. Because the calling patterns will change, we recommend that you do not take a production dependency on these APIs.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md)|[passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)|Read the properties and relationships of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object.|
-|[Update](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md)|[passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)|Update the properties of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object.|
-|[Delete](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md)|None|Reverts the passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object to its default configuration.|
 
+| Method                                                                                         | Return type                                                                                                                                                | Description                                                                                                            |
+| :--------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| [Get](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md)       | [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) | Read the properties and relationships of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object. |
+| [Update](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md) | [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) | Update the properties of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object.                 |
+| [Delete](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md) | None                                                                                                                                                       | Reverts the passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object to its default configuration.   |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The authentication method policy identifier.|
-|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
+
+| Property | Type                      | Description                                  |
+| :------- | :------------------------ | :------------------------------------------- |
+| id       | String                    | The authentication method policy identifier. |
+| state    | authenticationMethodState | Possible values are: `enabled`, `disabled`.  |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|includeTargets|[passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) collection|A collection of users or groups who are enabled to use the authentication method.|
+
+| Relationship   | Type                                                                                                                                                    | Description                                                                       |
+| :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------- |
+| includeTargets | [passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md) collection | A collection of users or groups who are enabled to use the authentication method. |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -47,7 +51,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
   "id": "String (identifier)",

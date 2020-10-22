@@ -1,4 +1,4 @@
----
+﻿---
 title: "Licenses for subscribing to chat messages"
 description: "Licenses for subscribing to chat messages"
 author: "nkramer"

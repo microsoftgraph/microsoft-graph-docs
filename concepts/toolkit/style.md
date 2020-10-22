@@ -1,4 +1,4 @@
----
+﻿---
 title: "Styling the Microsoft Graph Toolkit"
 description: "Use CSS custom properties to modify the component styles"
 localization_priority: Normal
@@ -25,7 +25,6 @@ For more flexibility, consider using [custom templates](./templates.md).
 
 You can disable the shadow dom, and directly style internal elements using normal browser stylesheets, by setting the static property `useShadowDom` of the `MgtBaseComponent` class to false before using any MGT tags.
 
-
 ```html
 <script type="module">
   import { MgtBaseComponent } from './dist/es6/components/baseComponent.js';
@@ -33,4 +32,4 @@ You can disable the shadow dom, and directly style internal elements using norma
 </script>
 
 <script type="module" src="./dist/es6/components/mgt-tasks/mgt-tasks.js"></script>
-````
+```

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Page through a collection using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph API requests using the Microsoft Graph SDKs."
 localization_priority: Normal
@@ -89,6 +89,7 @@ while(messagesPage != null) {
 Some scenarios require stopping the iteration process in order to perform other actions. It is possible to pause the iteration by returning `false` from the iteration callback. Iteration can be resumed by calling the `resume` method on the **PageIterator**.
 
 <!-- markdownlint-disable MD024 -->
+
 ### [C#](#tab/csharp)
 
 ```csharp
@@ -165,4 +166,5 @@ while (!pageIterator.isComplete()) {
 ```
 
 ---
+
 <!-- markdownlint-enable MD024 -->

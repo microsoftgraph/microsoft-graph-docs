@@ -1,4 +1,4 @@
----
+﻿---
 title: "Install the Microsoft Graph SDK"
 description: "Provides instructions for installing the C#, Java, Javascript, Objective-C, PHP, and Ruby Microsoft Graph SDKs."
 localization_priority: Normal
@@ -94,10 +94,10 @@ Perform the following steps to install the Microsoft Graph Objective-C SDK and M
 
 1. Create a **Cartfile** that specifies the Objective-C SDK GitHub repository and [release tag](https://github.com/microsoftgraph/msgraph-sdk-objc/releases) to target.
 
-    ```text
+```text
     github "microsoftgraph/msgraph-sdk-objc" "tags/<latest_release_tag>"
     github "microsoftgraph/msgraph-sdk-objc-auth" "tags/<latest_release_tag>"
-    ```
+```
 
 1. Run `carthage update`. This will fetch dependencies into a Carthage/Checkouts folder and then builds the MSGraphClientSDK library.
 
@@ -105,16 +105,16 @@ Perform the following steps to install the Microsoft Graph Objective-C SDK and M
 
 1. On your application target's **Build Phases** settings tab, click the **+** icon and choose **New Run Script Phase**. Create a run script in which you specify your shell (ex: /bin/sh), and add the following contents to the script:
 
-    ```Shell
+```Shell
     /usr/local/bin/carthage copy-frameworks
-    ```
+```
 
 1. Add the paths to the frameworks you want to use under **Input Files**.
 
-    ```Shell
+```Shell
     $(SRCROOT)/Carthage/Build/iOS/MSGraphClientSDK.framework
     $(SRCROOT)/Carthage/Build/iOS/MSGraphMSALAuthProvider.framework
-    ```
+```
 
 ## Install the Microsoft Graph PHP SDK
 

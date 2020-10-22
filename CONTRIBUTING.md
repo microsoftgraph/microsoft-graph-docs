@@ -1,4 +1,4 @@
-# Contribute to Microsoft Graph documentation
+﻿# Contribute to Microsoft Graph documentation
 
 Thank you for your interest in Microsoft Graph documentation!
 

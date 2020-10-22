@@ -17,7 +17,7 @@ Update the properties of [governanceRoleSetting](../resources/governancerolesett
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
 
 >**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 
@@ -26,6 +26,30 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegated (personal Microsoft account) | Not supported.                            |
 | Application                            | Not supported.                            |
+
+### Azure resources
+
+| Permission type                        | Permissions                               |
+| :------------------------------------- | :---------------------------------------- |
+| Delegated (work or school account)     | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported.                            |
+| Application                            | Not supported.                            |
+
+### Azure AD
+
+| Permission type                        | Permissions                        |
+| :------------------------------------- | :--------------------------------- |
+| Delegated (work or school account)     | PrivilegedAccess.ReadWrite.AzureAD |
+| Delegated (personal Microsoft account) | Not supported.                     |
+| Application                            | Not supported.                     |
+
+### Groups
+
+| Permission type                        | Permissions                              |
+| :------------------------------------- | :--------------------------------------- |
+| Delegated (work or school account)     | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Delegated (personal Microsoft account) | Not supported.                           |
+| Application                            | Not supported.                           |
 
 ## HTTP request
 

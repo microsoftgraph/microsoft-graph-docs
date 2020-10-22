@@ -33,6 +33,7 @@ GET /workbook/worksheets/{id|name}/tables
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
@@ -117,6 +118,7 @@ Content-length: 158
   ]
 }
 ```
+
 > **Note:** Use the [$top](/graph/query-parameters#top) and [$skip](/graph/query-parameters#top) query parameters to page through large numbers of tables.
 
 Example: 

@@ -21,9 +21,11 @@ Inherits from [deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfi
 
 ## Properties
 
-| Property                    | Type  | Description                                                                                                                                                                                                                                                      |
-| :-------------------------- | :---- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| maximumCacheSizeInGigabytes | Int64 | Specifies the maximum size in GB of Delivery Optimization cache. Valid values 0 to 4294967295. The value 0 (zero) means "unlimited" cache. Delivery Optimization will clear the cache when the device is running low on disk space. Valid values 0 to 4294967295 |
+| Property                    | Type  | Description                                                                                   |
+| :-------------------------- | :---- | :-------------------------------------------------------------------------------------------- |
+| maximumCacheSizeInGigabytes | Int64 | Specifies the maximum size in GB of Delivery Optimization cache. Valid values 0 to 4294967295 |
+
+The value 0 (zero) means "unlimited" cache. Delivery Optimization will clear the cache when the device is running low on disk space. Valid values 0 to 4294967295|
 
 ## Relationships
 

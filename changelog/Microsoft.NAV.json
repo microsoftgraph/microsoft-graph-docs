@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d46bdb12-7a96-4a7a-895a-af40c11df09f",
+          "Id": "c36c0bbc-95e7-46e9-b461-85c0b8975fce",
           "ApiChange": "Resource",
           "ChangedApiName": "Financials API reference",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "Financials API reference"
         }
       ],
-      "Id": "d46bdb12-7a96-4a7a-895a-af40c11df09f",
+      "Id": "c36c0bbc-95e7-46e9-b461-85c0b8975fce",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
@@ -21,7 +21,7 @@
     {
       "ChangeList": [
         {
-          "Id": "7c2814f0-ba04-4bdf-a1cd-faf7065fcc91",
+          "Id": "29e14f5e-7cb8-432e-9be7-5f5665a4185c",
           "ApiChange": "Resource",
           "ChangedApiName": "Financials API reference",
           "ChangeType": "Addition",
@@ -29,7 +29,7 @@
           "Target": "Financials API reference"
         }
       ],
-      "Id": "7c2814f0-ba04-4bdf-a1cd-faf7065fcc91",
+      "Id": "29e14f5e-7cb8-432e-9be7-5f5665a4185c",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",

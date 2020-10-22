@@ -56,21 +56,9 @@ If successful, this method returns a `204 No Content` response code.
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
-
-<!-- {
-  "blockType": "request",
-  "name": "patch_channel"
-}-->
-
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
-
-# [Objective-C](#tab/objc)
-
-[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 <!-- {
   "blockType": "request",
@@ -94,7 +82,8 @@ HTTP/1.1 204 No Content
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Patch channel",
   "keywords": "",
@@ -102,4 +91,5 @@ HTTP/1.1 204 No Content
   "tocPath": "",
   "suppressions": [
   ]
-}-->
+}
+-->

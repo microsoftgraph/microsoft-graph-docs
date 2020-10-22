@@ -28,3 +28,4 @@ Android VPN connection type.
 | checkPointCapsuleVpn       | 4     | Check Point Capsule VPN.          |
 | citrix                     | 5     | Citrix                            |
 | microsoftTunnel            | 7     | Microsoft Tunnel.                 |
+| netMotionMobility          | 8     | NetMotion Mobility.               |

@@ -19,9 +19,10 @@ For the analytics API to return results for users, they must have a cloud-hosted
 
 ## Methods
 
-| Method                                               | Return Type             | Description                                     |
-| :--------------------------------------------------- | :---------------------- | :---------------------------------------------- |
-| [Get settings](../api/useranalytics-get-settings.md) | [settings](settings.md) | Get the following property settings for a user. |
+| Method | Return Type | Description |
+| :----- | :---------- | :---------- |
+
+[Get settings](../api/useranalytics-get-settings.md) | [settings](settings.md) | Get the following property settings for a user.|
 
 ## Properties
 

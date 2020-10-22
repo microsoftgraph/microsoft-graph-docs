@@ -1,4 +1,4 @@
----
+﻿---
 title: "Generating proof of possession tokens for rolling keys"
 description: "As part of the request validation for the addKey and removeKey methods, a proof of possession token is required. This document provides guidance for generating the proof of possession token."
 localization_priority: Priority

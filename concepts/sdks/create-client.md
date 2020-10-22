@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create a Microsoft Graph client"
 description: "Describes how to create a client to use to make calls to Microsoft Graph. Includes how to set up authentication and select a sovereign cloud."
 localization_priority: Normal
@@ -121,4 +121,5 @@ $user = $graph->createRequest("GET", "/me")
 				->setReturnType(Model\User::class)
 				->execute();
 ```
+
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add custom data to resources using extensions"
 description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as user and message. You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store."
 author: "dkershaw10"
@@ -23,20 +23,20 @@ Microsoft Graph offers two types of extensions. Choose the extension type that b
 
 The following table lists the resources that support open and schema extensions, and indicates whether they have reached general availability (GA - available in both the v1.0 and beta endpoints) or are in preview (available only in the beta endpoint).
 
-|Resource |Open extensions |Schema extensions |
-|:------- |:------ |:------ |
-| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta) | Preview only | Preview only |
-| [Calendar event](/graph/api/resources/event?view=graph-rest-1.0) | GA | GA |
-| [Device](/graph/api/resources/device?view=graph-rest-1.0) | GA | GA |
-| [Group](/graph/api/resources/group?view=graph-rest-1.0) | GA | GA |
-| [Group calendar event](/graph/api/resources/event?view=graph-rest-1.0) | GA | GA |
-| [Group conversation post](/graph/api/resources/post?view=graph-rest-1.0) | GA | GA |
-| [Message](/graph/api/resources/message?view=graph-rest-1.0) | GA | GA |
-| [Organization](/graph/api/resources/organization?view=graph-rest-1.0) | GA | GA |
-| [Personal contact](/graph/api/resources/contact?view=graph-rest-1.0)| GA | GA |
-| [User](/graph/api/resources/user?view=graph-rest-1.0) | GA | GA |
-| [Task](/graph/api/resources/todotask?view=graph-rest-beta) | Preview only | Preview only |
-| [Task list](/graph/api/resources/todotasklist?view=graph-rest-beta) | Preview only | Preview only |
+| Resource                                                                            | Open extensions | Schema extensions |
+| :---------------------------------------------------------------------------------- | :-------------- | :---------------- |
+| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta) | Preview only    | Preview only      |
+| [Calendar event](/graph/api/resources/event?view=graph-rest-1.0)                    | GA              | GA                |
+| [Device](/graph/api/resources/device?view=graph-rest-1.0)                           | GA              | GA                |
+| [Group](/graph/api/resources/group?view=graph-rest-1.0)                             | GA              | GA                |
+| [Group calendar event](/graph/api/resources/event?view=graph-rest-1.0)              | GA              | GA                |
+| [Group conversation post](/graph/api/resources/post?view=graph-rest-1.0)            | GA              | GA                |
+| [Message](/graph/api/resources/message?view=graph-rest-1.0)                         | GA              | GA                |
+| [Organization](/graph/api/resources/organization?view=graph-rest-1.0)               | GA              | GA                |
+| [Personal contact](/graph/api/resources/contact?view=graph-rest-1.0)                | GA              | GA                |
+| [User](/graph/api/resources/user?view=graph-rest-1.0)                               | GA              | GA                |
+| [Task](/graph/api/resources/todotask?view=graph-rest-beta)                          | Preview only    | Preview only      |
+| [Task list](/graph/api/resources/todotasklist?view=graph-rest-beta)                 | Preview only    | Preview only      |
 
 You can use extensions on all these resources when signed in with a work or school account. In addition, you can use extensions on the **event**, **post**, **group**, **message**, **contact**, and **user** resources when signed in with a personal account.
 
@@ -64,10 +64,8 @@ Open extension example: [Add custom data to users using open extensions](extensi
 
 ## Schema extensions
 
-
 [Schema extensions](/graph/api/resources/schemaextension?view=graph-rest-1.0) allow you to define a schema that you can use to extend a resource type. First, you create your schema extension definition. Then, use it to extend resource instances with strongly-typed custom data. In addition, you can control the [status](#schema-extensions-lifecycle) of your schema extension and let it
 be discoverable by other apps. These apps can in turn use the extension for their data and build further experiences on top of it.
-
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
@@ -97,11 +95,11 @@ When your app creates a schema extension definition, the app is marked as the ow
 The owner app can move the extension through different states of a lifecycle, using a PATCH operation on its **status** property.
 Depending on the current state, the owner app may be able to update or delete the extension. Any updates to a schema extension should always only be additive and non-breaking.
 
-|State |Lifecycle state behavior |
-|:-------------|:------------|
-| InDevelopment | <ul><li>Initial state after creation. The owner app is still developing the schema extension. </li><li>In this state, any app in the same directory where the owner app is registered can extend resource instances with this schema definition (as long as the app has permissions to that resource). </li><li>Only the owner app can update the extension definition with additive changes or delete it. </li><li>The owner app can move the extension from **InDevelopment** to the **Available** state.</li></ul> |
-| Available | <ul><li>The schema extension is available for use by all apps in any tenant. </li><li>After the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (as long as the app has permissions to that resource). The app can assign custom data when creating a new instance or updating an existing instance. </li><li>Only the owner app can update the extension definition with additive changes. No app can delete the extension definition in this state. </li><li>The owner app can move the schema extension from **Available** to the **Deprecated** state.</li></ul> |
-| Deprecated | <ul><li>The schema extension definition can no longer be read or modified. </li><li>No app can view, update, add new properties, or delete the extension. </li><li>Apps can, however, still read, update, or delete existing extension _property values_. </li></ul> |
+| State         | Lifecycle state behavior                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| InDevelopment | <ul><li>Initial state after creation. The owner app is still developing the schema extension. </li><li>In this state, any app in the same directory where the owner app is registered can extend resource instances with this schema definition (as long as the app has permissions to that resource). </li><li>Only the owner app can update the extension definition with additive changes or delete it. </li><li>The owner app can move the extension from **InDevelopment** to the **Available** state.</li></ul>                                                                                                                                                  |
+| Available     | <ul><li>The schema extension is available for use by all apps in any tenant. </li><li>After the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (as long as the app has permissions to that resource). The app can assign custom data when creating a new instance or updating an existing instance. </li><li>Only the owner app can update the extension definition with additive changes. No app can delete the extension definition in this state. </li><li>The owner app can move the schema extension from **Available** to the **Deprecated** state.</li></ul> |
+| Deprecated    | <ul><li>The schema extension definition can no longer be read or modified. </li><li>No app can view, update, add new properties, or delete the extension. </li><li>Apps can, however, still read, update, or delete existing extension _property values_. </li></ul>                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 > **Note:** Schema extension definitions (marked as `Available`) created by other developers from other tenants are visible to all developers (by listing all schema extensions). This is different from other APIs that only return tenant-specific data. On the other hand, extension data created based on schema extension definitions, is tenant-specific and can only be accessed by apps explicitly granted permission. 
 
@@ -109,13 +107,13 @@ Depending on the current state, the owner app may be able to update or delete th
 
 The following data types are supported when defining a property in a schema extension:
 
-| Property Type | Remarks |
-|:-------------|:------------|
-| Binary | 256 bytes maximum. |
-| Boolean | Not supported for messages, events and posts. |
-| DateTime | Must be specified in ISO 8601 format. Will be stored in UTC. |
-| Integer | 32-bit value. Not supported for messages, events and posts. |
-| String | 256 characters maximum. |
+| Property Type | Remarks                                                      |
+| :------------ | :----------------------------------------------------------- |
+| Binary        | 256 bytes maximum.                                           |
+| Boolean       | Not supported for messages, events and posts.                |
+| DateTime      | Must be specified in ISO 8601 format. Will be stored in UTC. |
+| Integer       | 32-bit value. Not supported for messages, events and posts.  |
+| String        | 256 characters maximum.                                      |
 
 > **Note:** Multi-value properties are not supported.
 

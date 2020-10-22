@@ -1,4 +1,4 @@
----
+﻿---
 title: "Make API calls using the Microsoft Graph SDKs"
 description: "Provides instructions for creating Microsoft Graph HTTP requests using the SDKs."
 localization_priority: Normal
@@ -38,6 +38,7 @@ To read information from Microsoft Graph, you first need to create a request obj
 When retrieving an entity, not all properties are automatically retrieved; sometimes they need to be explicitly selected. Also, in some scenarios it isn't necessary to return the default set of properties. Selecting just the required properties can improve the performance of the request. You can customize the request to include the `$select` query parameter with a list of properties.
 
 <!-- markdownlint-disable MD024 -->
+
 # [C#](#tab/CS)
 
 [!INCLUDE [sample-code](includes/snippets/csharp/create-requests-select.md)]

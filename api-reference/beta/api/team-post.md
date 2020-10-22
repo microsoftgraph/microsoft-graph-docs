@@ -19,10 +19,10 @@ Create a new [team](../resources/team.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                              |
+| Permission type                        | Permissions (from least to most privileged)                                     |
+| :------------------------------------- | :------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All                       |
+| Delegated (personal Microsoft account) | Not supported.                                                                  |
 | Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request

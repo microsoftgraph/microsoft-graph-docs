@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get Outlook messages in a shared or delegated folder"
 description: "Outlook lets customers share mail folders with one another and provide read, create, modify, or delete access to individual folders. Outlook also allows a customer to delegate another user to act on the customer's behalf."
 author: "angelgolfer-ms"
@@ -21,6 +21,7 @@ As an example, Garth has shared with John and given read access to Garth's Inbox
 You can get a specific message in Garth's Inbox:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')/messages/{id}
 ```
@@ -32,6 +33,7 @@ On successful completion, you'll get HTTP 200 OK and the [message](/graph/api/re
 Get all the messages in Garth's Inbox:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')/messages
 ```
@@ -43,6 +45,7 @@ On successful completion, you'll get HTTP 200 OK and a collection of [message](/
 Get the folder (Inbox) that Garth has shared with John.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/mailfolders('Inbox')
 ```
@@ -52,7 +55,6 @@ On successful completion, you'll get HTTP 200 OK and a [mailFolder](/graph/api/r
 The same GET capabilities apply if Garth had delegated John further access to Garth's Inbox, or if Garth had delegated John his entire mailbox.
 
 If Garth has not shared his Inbox with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error. 
-
 
 ## Next steps
 

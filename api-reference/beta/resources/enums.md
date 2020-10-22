@@ -35,10 +35,10 @@ Namespace: microsoft.graph
 
 ### attestationLevel values
 
-|Member|
-|:---|
-|attested|
-|notAttested|
+| Member      |
+| :---------- |
+| attested    |
+| notAttested |
 
 ### emailType values
 
@@ -52,31 +52,31 @@ Namespace: microsoft.graph
 
 ### authenticationMethodTargetType values
 
-|Member|
-|:---|
-|user|
-|group|
+| Member |
+| :----- |
+| user   |
+| group  |
 
 ### authenticationMethodState values
 
-|Member|
-|:---|
-|enabled|
-|disabled|
+| Member   |
+| :------- |
+| enabled  |
+| disabled |
 
 ### fido2RestrictionEnforcementType values
 
-|Member|
-|:---|
-|allow|
-|block|
+| Member |
+| :----- |
+| allow  |
+| block  |
 
 ### authenticatorAppContextType values
 
-|Member|
-|:---|
-|location|
-|app|
+| Member   |
+| :------- |
+| location |
+| app      |
 
 ### anniversaryType values
 
@@ -1388,23 +1388,23 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### connectionState values
 
-|Member|
-|:---|
-|draft|
-|ready|
-|obsolete|
-|limitExceeded|
+| Member        |
+| :------------ |
+| draft         |
+| ready         |
+| obsolete      |
+| limitExceeded |
 
 ### permissionClassificationType values
 
-| Member
-|:-------
-| low
+| Member |
+| :----- |
+| low    |
 
 ### permissionType values
 
-| Member
-|:-------------------------
-| application
-| delegated
-| delegatedUserConsentable
+| Member                   |
+| :----------------------- |
+| application              |
+| delegated                |
+| delegatedUserConsentable |

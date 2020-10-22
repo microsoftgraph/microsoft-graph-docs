@@ -74,7 +74,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1504
+Content-Length: 1569
 
 {
   "value": {
@@ -104,6 +104,7 @@ Content-Length: 1504
     "securityBlockJailbrokenDevices": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "advancedThreatProtectionRequiredSecurityLevel": "secured",
     "managedEmailProfileRequired": true,
     "restrictedApps": [
       {

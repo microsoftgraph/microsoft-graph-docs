@@ -39,10 +39,12 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 ## Request headers
 
-| Header        | Value                                                                                                                                                              |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Authorization | Bearer {token}. Required.                                                                                                                                          |
-| If-Match      | Required. When this request header is included and the eTag provided does not match the current tag on the **currencies**, the **currencies** will not be updated. |
+| Header        | Value                                                                                                                                                     |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required.                                                                                                                                 |
+| If-Match      | Required. When this request header is included and the eTag provided does not match the current tag on the **currencies**, the **currencies** will not be |
+
+updated. |
 
 ## Request body
 

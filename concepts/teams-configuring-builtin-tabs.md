@@ -1,4 +1,4 @@
----
+﻿---
 title: "Configuring the built-in tab types in Microsoft Teams"
 description: "To create or configure a Microsoft Teams tab using Microsoft Graph APIs"
 author: "nkramer"
@@ -26,32 +26,32 @@ The `teamsAppId` is the same as the `id` in the [app manifest schema for Microso
 
 For website tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.web`. The following is the configuration.
 
-| Property   | Type        | Description                                              |
-| ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | Null                                                     |
-| contentUrl | string      | URL of the website                                       |
-| removeUrl  | string      | Null                                                     |
-| websiteUrl | string      | URL of the website                                       |
+| Property   | Type   | Description        |
+| ---------- | ------ | ------------------ |
+| entityId   | string | Null               |
+| contentUrl | string | URL of the website |
+| removeUrl  | string | Null               |
+| websiteUrl | string | URL of the website |
 
 ## Word, Excel, PowerPoint, and PDF tabs
 
 The following table lists the `teamsAppId` for each app.
 
-| App   | teamsAppId | type (extension)                                              |
-| ---------- | ----------- | -------------------------------------------------------- |
-| Word | `com.microsoft.teamspace.tab.file.staticviewer.word` | `docx` |
-| Excel | `com.microsoft.teamspace.tab.file.staticviewer.excel` | `xlsx` |
-| PowerPoint  | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx` |
-| PDF | `com.microsoft.teamspace.tab.file.staticviewer.pdf` | `pdf` |
+| App        | teamsAppId                                                 | type (extension) |
+| ---------- | ---------------------------------------------------------- | ---------------- |
+| Word       | `com.microsoft.teamspace.tab.file.staticviewer.word`       | `docx`           |
+| Excel      | `com.microsoft.teamspace.tab.file.staticviewer.excel`      | `xlsx`           |
+| PowerPoint | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx`           |
+| PDF        | `com.microsoft.teamspace.tab.file.staticviewer.pdf`        | `pdf`            |
 
 The following is the configuration.
 
-| Property   | Type        | Description                                              |
-| ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | The sourceDoc ID of the file. You can find this by opening the file in SharePoint and looking at the address bar – the URL will have a `sourcedoc=%7B{sourceDocId}%7D` clause. You can also derive this from the webUrl of the SharePoint drive item for the document. For details, see [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
-| contentUrl | string      | The URL of file in the format `{folder-webUrl}/{item-name}`. {folder-webUrl} is the webUrl of the SharePoint folder containing the file, which can be found by opening the file in SharePoint and looking at the address bar, or by using the webUrl property from [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} is the file name (for example, file.docx), which is the `name` property in [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
-| removeUrl  | string      | Null                                                     |
-| websiteUrl | string      | Null                                       |
+| Property   | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ---------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| entityId   | string | The sourceDoc ID of the file. You can find this by opening the file in SharePoint and looking at the address bar – the URL will have a `sourcedoc=%7B{sourceDocId}%7D` clause. You can also derive this from the webUrl of the SharePoint drive item for the document. For details, see [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta).                                                                                                                                                                         |
+| contentUrl | string | The URL of file in the format `{folder-webUrl}/{item-name}`. {folder-webUrl} is the webUrl of the SharePoint folder containing the file, which can be found by opening the file in SharePoint and looking at the address bar, or by using the webUrl property from [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} is the file name (for example, file.docx), which is the `name` property in [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| removeUrl  | string | Null                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| websiteUrl | string | Null                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 ### Example: Create a configured Word tab
 
@@ -76,12 +76,12 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 For document library tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.files.sharepoint`. 
 The following is the configuration.
 
-| Property   | Type        | Description                                              |
-| ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | Empty string ("")                                        |
-| contentUrl | string      | The URL of the root folder of the document library. You can find this URL by opening the SharePoint folder in your browser, copying the URL, and deleting "/Forms/AllItems.aspx" and everything after that. |
-| removeUrl  | string      | Null                                                     |
-| websiteUrl | string      | Null                                                     |
+| Property   | Type   | Description                                                                                                                                                                                                 |
+| ---------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| entityId   | string | Empty string ("")                                                                                                                                                                                           |
+| contentUrl | string | The URL of the root folder of the document library. You can find this URL by opening the SharePoint folder in your browser, copying the URL, and deleting "/Forms/AllItems.aspx" and everything after that. |
+| removeUrl  | string | Null                                                                                                                                                                                                        |
+| websiteUrl | string | Null                                                                                                                                                                                                        |
 
 ### Example: Create a configured document library tab
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Graph data connect policies and licensing"
 description: "Describes what policies are supported and how to assign ISV access SKUs to organizations."
 author: "tlenig"
@@ -27,6 +27,7 @@ Access to the Microsoft Graph data connect toolset is available through Workplac
 If you’re an ISV, we also provide an option for you to build applications for customers who have not purchased Workplace Analytics. To do so, you must purchase enough licenses to associate them with all the users your application will access through Microsoft Graph data connect, for each customer who purchases your application. You can use this option along with Workplace Analytics licenses. You’ll need to take steps to associate instances of the Microsoft Graph data connect license with each of their customer installations.
 
 ### ISVs using the Microsoft Graph data connect license
+
 If you're an ISV using the data connect license, you must utilized [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to store and process the license assignment. You will need to [create a Key Vault](/azure/key-vault/quick-create-portal). During creation, note the Key Vault URI value. It will be used in the application definition to reference the Key Vault. After you create the Key Vault, ensure that the SPN used in the Source Linked Service of the application's ARM template has access to it. To do so, go to the **Access Policies** pane of the Key Vault instance, create an access policy for the application referenced by the SPN, and assign **Get** and **List** permissions to the application. 
 
 ![Creating access policy to Key Vault](images/data-connect-keyvault-access.png)
@@ -64,4 +65,5 @@ The assignment of Microsoft Graph data connect licenses to organizations is prov
 Data connect will reference the secret in the Key Vault before each pipeline run. It will fail the pipeline if there aren't enough licenses assigned to the organization to provide data for each user, or if the Key Vault is inaccessible. 
 
 ## Next Steps
+
 If you would like to request support for additional policies, let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581). To learn more about Workplace Analytics, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).

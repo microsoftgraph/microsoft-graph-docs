@@ -36,7 +36,9 @@ GET /users/{id | userPrincipalName}/ownedDevices
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
 | Header        | Value                     |

@@ -120,6 +120,9 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 | customDialerAppDisplayName                         | String                                                                                                                        | Friendly name of a custom dialer app to click-to-open a phone number on Android.                                                                                                                                                                                                                                                           |
 | biometricAuthenticationBlocked                     | Boolean                                                                                                                       | Indicates whether use of the biometric authentication is allowed in place of a pin if PinRequired is set to True. (Android Only)                                                                                                                                                                                                           |
 | requiredAndroidSafetyNetEvaluationType             | [androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)               | Defines the Android SafetyNet evaluation type requirement for a managed app to work. (Android Only). Possible values are: `basic`, `hardwareBacked`.                                                                                                                                                                                       |
+| blockAfterCompanyPortalUpdateDeferralInDays        | Int32                                                                                                                         | Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.                                                                                                                                                                                                                                  |
+| warnAfterCompanyPortalUpdateDeferralInDays         | Int32                                                                                                                         | Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning                                                                                                                                                                                                                            |
+| wipeAfterCompanyPortalUpdateDeferralInDays         | Int32                                                                                                                         | Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped                                                                                                                                                                                                                    |
 
 ## Relationships
 
@@ -254,6 +257,9 @@ Here is a JSON representation of the resource.
   "customDialerAppPackageId": "String",
   "customDialerAppDisplayName": "String",
   "biometricAuthenticationBlocked": true,
-  "requiredAndroidSafetyNetEvaluationType": "String"
+  "requiredAndroidSafetyNetEvaluationType": "String",
+  "blockAfterCompanyPortalUpdateDeferralInDays": 1024,
+  "warnAfterCompanyPortalUpdateDeferralInDays": 1024,
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 1024
 }
 ```

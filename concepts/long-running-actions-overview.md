@@ -1,11 +1,11 @@
----
+﻿---
 title: "Working with long running actions (beta)"
 description: "This article describes working with long running actions."
 localization_priority: Normal
 author: "daspek"
 ---
-# Working with long running actions (beta)
 
+# Working with long running actions (beta)
 
 Some API responses require indeterminate time to complete.
 Instead of waiting until the action is complete before returning a response, Microsoft Graph may use a long running actions pattern.
@@ -24,8 +24,8 @@ Let's walk through the steps for an example [DriveItem Copy](/graph/api/driveite
 In this scenario, your app requests to copy a folder that contains a large amount of data.
 This request will likely take several seconds to complete since the amount of data is large.
 
-
 # [HTTP](#tab/http)
+
 <!-- { "blockType": "request", "name": "lro-copy-item-example", "scopes": "files.readwrite" } -->
 
 ```http
@@ -39,20 +39,23 @@ Content-Type: application/json
   "name": "Copy of LargeFolder1"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/lro-copy-item-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 The API responds that the action was accepted and the URL for retrieving the status of the long running action.
 
@@ -128,8 +131,8 @@ Content-type: application/json
 Once the job has completed, the monitor URL returns the resourceId of the result, in this case the new copy of the original item.
 You can address this new item using the resourceId, for example:
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "lro-copy-item-example-complete",
@@ -139,20 +142,23 @@ You can address this new item using the resourceId, for example:
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/lro-copy-item-example-complete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-complete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-complete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -172,16 +178,13 @@ Content-type: application/json
 
 Long running actions are supported on the following API methods
 
-| **Resource** | **API** |
-|:------ | :------ |
-| DriveItem | [Copy](/graph/api/driveitem-copy?view=graph-rest-beta) |
+| **Resource** | **API**                                                |
+| :----------- | :----------------------------------------------------- |
+| DriveItem    | [Copy](/graph/api/driveitem-copy?view=graph-rest-beta) |
 
 ## Prerequisites
 
 The same [permissions](./permissions-reference.md) that are required to perform a long running action are also required to query the status of a long running action.
-
-
-
 
 <!-- {
   "type": "#page.annotation",

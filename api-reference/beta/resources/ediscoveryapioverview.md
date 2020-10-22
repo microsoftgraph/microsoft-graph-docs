@@ -23,8 +23,8 @@ The Microsoft Graph APIs for eDiscovery provide functionality for organizations 
 
 The Microsoft Graph API includes the following key entities.
 
-| Name | Type       | Use case |
-|:-|:-|:-|
-| eDiscovery case | [ediscoveryCase](ediscoverycase.md) | eDiscovery cases are the container for all eDiscovery objects including custodians, holds, searches, review set and exports. |
-| eDiscovery review set| [reviewSet](reviewset.md) | eDiscovery review sets are static set of electronically stored information collected for use in a litigation, investigation or regulatory request. |
-| eDiscovery review set query | [reviewSetQuery](reviewsetquery.md) | eDiscovery review set queries are used to discover, cull, review and tag [ESI](https://en.wikipedia.org/wiki/Electronically_stored_information_(Federal_Rules_of_Civil_Procedure)) with the ultimate goal of production to the requestor or opposing counsel.
+| Name                        | Type                                | Use case                                                                                                                                                                                                                                                      |
+| :-------------------------- | :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| eDiscovery case             | [ediscoveryCase](ediscoverycase.md) | eDiscovery cases are the container for all eDiscovery objects including custodians, holds, searches, review set and exports.                                                                                                                                  |
+| eDiscovery review set       | [reviewSet](reviewset.md)           | eDiscovery review sets are static set of electronically stored information collected for use in a litigation, investigation or regulatory request.                                                                                                            |
+| eDiscovery review set query | [reviewSetQuery](reviewsetquery.md) | eDiscovery review set queries are used to discover, cull, review and tag [ESI](https://en.wikipedia.org/wiki/Electronically_stored_information_(Federal_Rules_of_Civil_Procedure)) with the ultimate goal of production to the requestor or opposing counsel. |

@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "4bf1f9d6-d52e-4df5-af39-8ea8f7a576e6",
+          "Id": "98886165-009f-4b17-91dc-1f3189706890",
           "ApiChange": "method",
           "ChangedApiName": "getNotebookFromWebUrl",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "getNotebookFromWebUrl"
         }
       ],
-      "Id": "4bf1f9d6-d52e-4df5-af39-8ea8f7a576e6",
+      "Id": "98886165-009f-4b17-91dc-1f3189706890",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-02-01T00:00:00",
@@ -21,7 +21,7 @@
     {
       "ChangeList": [
         {
-          "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
+          "Id": "175f2086-d8fe-41b3-97c5-8105f6780490",
           "ApiChange": "Parameter",
           "ChangedApiName": "CopyNotebook",
           "ChangeType": "Addition",
@@ -29,7 +29,7 @@
           "Target": "CopyNotebook"
         }
       ],
-      "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
+      "Id": "175f2086-d8fe-41b3-97c5-8105f6780490",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-08-01T00:00:00",
@@ -39,7 +39,7 @@
     {
       "ChangeList": [
         {
-          "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
+          "Id": "175f2086-d8fe-41b3-97c5-8105f6780490",
           "ApiChange": "Property",
           "ChangedApiName": "site",
           "ChangeType": "Addition",
@@ -47,7 +47,7 @@
           "Target": "onenote"
         }
       ],
-      "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
+      "Id": "175f2086-d8fe-41b3-97c5-8105f6780490",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-08-01T00:00:00",

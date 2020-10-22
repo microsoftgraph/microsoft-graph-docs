@@ -44,6 +44,10 @@ items:
             href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Azure Functions
             href: /graph/tutorials/azure-functions
+          - name: Blazor WebAssembly
+            href: /graph/tutorials/blazor
+          - name: Bot Framework
+            href: /graph/tutorials/bot-framework
           - name: iOS Objective-C
             href: /graph/tutorials/ios-objectivec
           - name: iOS Swift
@@ -175,8 +179,14 @@ items:
         expanded: true
         items:
           - name: Cloud printing (preview)
-            href: universal-print-concept-overview.md
-            displayName: Universal Print
+            expanded: true
+            items: 
+              - name: Overview
+                href: universal-print-concept-overview.md
+                displayName: Universal Print                
+              - name: Upload data to upload session
+                href: upload-data-to-upload-session.md
+                displayName: Universal Print Job Submission
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune

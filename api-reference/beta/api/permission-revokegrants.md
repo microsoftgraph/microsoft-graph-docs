@@ -1,4 +1,4 @@
----
+﻿---
 title: "permission: revokeGrants"
 description: "Update an item's sharing permissions"
 author: "learafa"
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # permission: revokeGrants
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -21,13 +22,14 @@ Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by r
 [recipient]: ../resources/driverecipient.md
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Files.ReadWrite.All, Sites.ReadWrite.All|
+| Permission type                        | Permissions (from most to least privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported                                             |
+| Application                            | Files.ReadWrite.All, Sites.ReadWrite.All                  |
 
 ## HTTP request
 
@@ -35,7 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 POST /drives/{drive-id}/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
@@ -45,19 +48,21 @@ POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
+
 In the request body, supply JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
-|Parameter|Type|Description|
-|:---|:---|:---|
-|grantees|[driveRecipient](../resources/driverecipient.md) collection|A collection of recipients who will be revoked access to the sharing link.|
+| Parameter | Type                                                        | Description                                                                |
+| :-------- | :---------------------------------------------------------- | :------------------------------------------------------------------------- |
+| grantees  | [driveRecipient](../resources/driverecipient.md) collection | A collection of recipients who will be revoked access to the sharing link. |
 
 ## Response
 
@@ -66,12 +71,16 @@ If successful, this action returns a `200 OK` response code and a [permission](.
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "permission-revokegrants"
 }
 -->
-``` http
+
+```http
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 
 Content-Type: application/json
@@ -86,6 +95,12 @@ Content-length: 95
 }
 ```
 
+# [JavaScript](#tab/javascript)
+
+[!INCLUDE [sample-code](../includes/snippets/javascript/permission-revokegrants-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -100,7 +115,7 @@ If successful, this method returns a [Permission](../resources/permission.md) re
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -118,7 +133,6 @@ Content-Type: application/json
   }
 }
 ```
-
 
 <!-- {
   "type": "#page.annotation",

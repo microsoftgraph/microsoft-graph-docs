@@ -1,4 +1,4 @@
----
+﻿---
 title: "National cloud deployments"
 description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds."
 author: "arpitha-dhanapathi"
@@ -26,26 +26,25 @@ This article provides information about the different Microsoft Graph national c
 
 Before calling the Microsoft Graph APIs, you should first register your application and acquire a token. The following table lists the base URLs for the Azure Active Directory (Azure AD) endpoints to register your application and acquire tokens for each national cloud.
 
-| National cloud | Azure AD portal endpoint| Azure AD endpoint|
-|---------------------------|----------------|----------------|
-|Azure AD (global service)|https://portal.azure.com |`https://login.microsoftonline.com`|
-|Azure AD for US Government |https://portal.azure.us|`https://login.microsoftonline.us`|
-|Azure AD Germany |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
-|Azure AD China operated by 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
+| National cloud                      | Azure AD portal endpoint         | Azure AD endpoint                   |
+| ----------------------------------- | -------------------------------- | ----------------------------------- |
+| Azure AD (global service)           | https://portal.azure.com         | `https://login.microsoftonline.com` |
+| Azure AD for US Government          | https://portal.azure.us          | `https://login.microsoftonline.us`  |
+| Azure AD Germany                    | https://portal.microsoftazure.de | `https://login.microsoftonline.de`  |
+| Azure AD China operated by 21Vianet | https://portal.azure.cn          | `https://login.chinacloudapi.cn`    |
 
 To learn more about Azure AD access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](/azure/active-directory/develop/authentication-scenarios).
-
 
 ## Microsoft Graph and Graph Explorer service root endpoints
 
 The following table shows the service root endpoints for Microsoft Graph and [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) for each national cloud.
 
-| National Cloud | Microsoft Graph | Graph Explorer |
-|---------------------------|----------------|----------------|
-| Microsoft Graph global service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
-| Microsoft Graph for US Government L4 | https://graph.microsoft.us | Not supported. |
-| Microsoft Graph for US Government L5 (DOD) | https://dod-graph.microsoft.us | Not supported. |
-| Microsoft Graph Germany | https://graph.microsoft.de | Not supported. |
+| National Cloud                             | Microsoft Graph                         | Graph Explorer                                                   |
+| ------------------------------------------ | --------------------------------------- | ---------------------------------------------------------------- |
+| Microsoft Graph global service             | https://graph.microsoft.com             | https://developer.microsoft.com/graph/graph-explorer             |
+| Microsoft Graph for US Government L4       | https://graph.microsoft.us              | Not supported.                                                   |
+| Microsoft Graph for US Government L5 (DOD) | https://dod-graph.microsoft.us          | Not supported.                                                   |
+| Microsoft Graph Germany                    | https://graph.microsoft.de              | Not supported.                                                   |
 | Microsoft Graph China operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 
 > [!IMPORTANT]
@@ -64,28 +63,28 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 
 The following Microsoft Graph features are generally available on the `/v1.0` endpoint across all national cloud deployments, except where noted.
 
-| Microsoft Graph features | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
-|---------------------------|----------------|----------------|----------------|
-| Users | ✔ | ✔ | ✔ |
-| Groups | ✔ | ✔ | ✔ |
-| Excel | ✔| ✔* | ✔ |
-| OneDrive | ✔ | ✔* | ✔ |
-| Outlook Mail | ✔ | ✔ | ✔ |
-| Outlook Calendar | ✔ | ✔ | ✔ |
-| Personal Contacts | ✔ | ✔ | ✔ |
-| Security | ✔ | ✔ | ✔ |
-| SharePoint| ✔ | ✔ | ✔ |
-| Teams | ✔ | ✔ | ✔ |
-| Planner|✔ |✔ |✔ |
-| Reports  |➖| ✔ |➖|
-| Organizational contacts  |✔| ➖ |➖|
-| Applications  |✔| ➖ |➖|
-| Service principals  |✔| ➖ |➖|
-| Change notifications (webhooks)  | ✔ |✔ |✔* |
-| Delta query | ✔ | ✔ | ➖ |
-| Directory schema extensions |✔|➖|➖|
-| Open type extensions|➖|➖|➖|
-  
+| Microsoft Graph features        | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
+| ------------------------------- | --------------------------------- | ------------------------------------------ | ----------------------- |
+| Users                           | ✔                                 | ✔                                          | ✔                       |
+| Groups                          | ✔                                 | ✔                                          | ✔                       |
+| Excel                           | ✔                                 | ✔*                                         | ✔                       |
+| OneDrive                        | ✔                                 | ✔*                                         | ✔                       |
+| Outlook Mail                    | ✔                                 | ✔                                          | ✔                       |
+| Outlook Calendar                | ✔                                 | ✔                                          | ✔                       |
+| Personal Contacts               | ✔                                 | ✔                                          | ✔                       |
+| Security                        | ✔                                 | ✔                                          | ✔                       |
+| SharePoint                      | ✔                                 | ✔                                          | ✔                       |
+| Teams                           | ✔                                 | ✔                                          | ✔                       |
+| Planner                         | ✔                                 | ✔                                          | ✔                       |
+| Reports                         | ➖                                 | ✔                                          | ➖                       |
+| Organizational contacts         | ✔                                 | ➖                                          | ➖                       |
+| Applications                    | ✔                                 | ➖                                          | ➖                       |
+| Service principals              | ✔                                 | ➖                                          | ➖                       |
+| Change notifications (webhooks) | ✔                                 | ✔                                          | ✔*                      |
+| Delta query                     | ✔                                 | ✔                                          | ➖                       |
+| Directory schema extensions     | ✔                                 | ➖                                          | ➖                       |
+| Open type extensions            | ➖                                 | ➖                                          | ➖                       |
+
 The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
 
 * Organizational contacts
@@ -96,7 +95,6 @@ The following Microsoft Graph features are available in preview (on the `/beta` 
 
 > [!IMPORTANT]
 > Certain services and features that are in specific regions of the global service might not be available in all of the national clouds. To find out what services are available, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
-
 
 To learn more about National clouds, see the following topics:
 - [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)

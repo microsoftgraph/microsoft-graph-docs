@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Search API in Microsoft Graph to search messages"
 description: "You can use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience."
 author: "knightsu"
@@ -114,6 +114,7 @@ Content-type: application/json
 The following example uses the search query shown in Example 1, and sorts the results by relevance. 
 
 <!-- markdownlint-disable MD024 -->
+
 ### Request
 
 ```HTTP
@@ -138,6 +139,7 @@ Content-Type: application/json
 ```
 
 #### Response
+
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json

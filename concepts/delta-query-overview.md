@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use delta query to track changes in Microsoft Graph data"
 description: "Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store."
 author: "davidmu1"
@@ -75,6 +75,7 @@ For the [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph
   "blockType": "request",
   "name": "group_delta"
 }-->
+
 ```http
 https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e'
 ```
@@ -103,31 +104,30 @@ The `@removed` object can be returned in the initial delta query response and in
 
 Delta query is currently supported for the following resources. Note that some resources which are available in v1.0 have their corresponding **delta** functions still in preview status, as indicated.
 
-| **Resource collection**                                        | **API**                                                                                                                                                                                          |
-|:---------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applications                                                   | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                                                                                   |
-| Administrative units (preview)                         | [delta](/graph/api/administrativeunit-delta) function (preview) of the [administrativeUnit](/graph/api/resources/administrativeunit) resource                                                    |
-| Chat messages in a channel                            | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                                                                            |
-| Classes                                               | [delta](/graph/api/educationclass-delta) function (preview) of the [educationClass](/graph/api/resources/educationclass) resource                                                                 |
-| Directory objects                                     | [delta](/graph/api/directoryobject-delta) function (preview) of the [directoryObject](/graph/api/resources/directoryobject) resource                                                              |
-| Directory roles                                                | [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) function of the [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) resource                                     |
-| Drive items\*                                                  | [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) function of the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource                                                 |
-| Education users                                       | [delta](/graph/api/educationuser-delta) function (preview) of the [educationUser](/graph/api/resources/educationuser) resource                                                                    |
-| Events in a calendar view (date range) of the primary calendar | [delta](/graph/api/event-delta?view=graph-rest-1.0) function of the [event](/graph/api/resources/event?view=graph-rest-1.0) resource                                                             |
-| Groups                                                         | [delta](/graph/api/group-delta?view=graph-rest-1.0) function of the [group](/graph/api/resources/group?view=graph-rest-1.0) resource                                                             |
-| Mail folders                                                   | [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) function of the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resource                                              |
-| Messages in a folder                                           | [delta](/graph/api/message-delta?view=graph-rest-1.0) function of the [message](/graph/api/resources/message?view=graph-rest-1.0) resource                                                       |
-| Organizational contacts                                        | [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) function of the [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource                                              |
-| OAuth2PermissionGrants                               | [delta](/graph/api/oauth2permissiongrant-delta) function of the [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) resource |
-| Personal contact folders                                       | [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) function of the [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) resource                                     |
-| Personal contacts in a folder                                  | [delta](/graph/api/contact-delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource                                                       |
-| Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta) function (preview) of the all segment of [plannerUser](/graph/api/resources/planneruser) resource                                                      |
-| Schools                                               | [delta](/graph/api/educationschool-delta) function (preview) of the [educationSchool](/graph/api/resources/educationschool) resource                                                              |
-| Service principals                                   | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource                                                          |
-| Tasks in a task list (preview)                                 | [delta](/graph/api/todotask-delta) function (preview) of the [todoTask](/graph/api/resources/todotask) resource                                                         |
-| Task lists (preview)                                           | [delta](/graph/api/todotasklist-delta) function (preview) of the [todoTaskList](/graph/api/resources/todotasklist) resource                                                         |
-| Users                                                          | [delta](/graph/api/user-delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource                                                                |
-
+| **Resource collection**                                        | **API**                                                                                                                                                      |
+| :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Applications                                                   | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                                               |
+| Administrative units (preview)                                 | [delta](/graph/api/administrativeunit-delta) function (preview) of the [administrativeUnit](/graph/api/resources/administrativeunit) resource                |
+| Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                              |
+| Classes                                                        | [delta](/graph/api/educationclass-delta) function (preview) of the [educationClass](/graph/api/resources/educationclass) resource                            |
+| Directory objects                                              | [delta](/graph/api/directoryobject-delta) function (preview) of the [directoryObject](/graph/api/resources/directoryobject) resource                         |
+| Directory roles                                                | [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) function of the [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) resource |
+| Drive items\*                                                  | [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) function of the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource             |
+| Education users                                                | [delta](/graph/api/educationuser-delta) function (preview) of the [educationUser](/graph/api/resources/educationuser) resource                               |
+| Events in a calendar view (date range) of the primary calendar | [delta](/graph/api/event-delta?view=graph-rest-1.0) function of the [event](/graph/api/resources/event?view=graph-rest-1.0) resource                         |
+| Groups                                                         | [delta](/graph/api/group-delta?view=graph-rest-1.0) function of the [group](/graph/api/resources/group?view=graph-rest-1.0) resource                         |
+| Mail folders                                                   | [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) function of the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resource          |
+| Messages in a folder                                           | [delta](/graph/api/message-delta?view=graph-rest-1.0) function of the [message](/graph/api/resources/message?view=graph-rest-1.0) resource                   |
+| Organizational contacts                                        | [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) function of the [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource          |
+| OAuth2PermissionGrants                                         | [delta](/graph/api/oauth2permissiongrant-delta) function of the [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) resource                 |
+| Personal contact folders                                       | [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) function of the [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) resource |
+| Personal contacts in a folder                                  | [delta](/graph/api/contact-delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource                   |
+| Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta) function (preview) of the all segment of [plannerUser](/graph/api/resources/planneruser) resource                 |
+| Schools                                                        | [delta](/graph/api/educationschool-delta) function (preview) of the [educationSchool](/graph/api/resources/educationschool) resource                         |
+| Service principals                                             | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource                                |
+| Tasks in a task list (preview)                                 | [delta](/graph/api/todotask-delta) function (preview) of the [todoTask](/graph/api/resources/todotask) resource                                              |
+| Task lists (preview)                                           | [delta](/graph/api/todotasklist-delta) function (preview) of the [todoTaskList](/graph/api/resources/todotasklist) resource                                  |
+| Users                                                          | [delta](/graph/api/user-delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource                            |
 
 > \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
 [Track changes for a drive](/graph/api/driveitem-delta?view=graph-rest-1.0).

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Install the Microsoft Graph PowerShell SDK"
 description: "Provides instructions for installing the Microsoft Graph PowerShell SDK."
 localization_priority: Normal

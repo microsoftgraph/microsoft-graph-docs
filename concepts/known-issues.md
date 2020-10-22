@@ -1,4 +1,4 @@
----
+﻿---
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
@@ -34,6 +34,7 @@ As a workaround, you can limit the set of businesses returned by the request by 
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 ```
+
 ## Calendars
 
 ### Accessing a shared calendar
@@ -51,7 +52,6 @@ are referred to as the "old" approach and "new" approach.
 - The new approach is currently available for sharing calendars with view or edit permissions, but not with delegate permissions.
 - You can use the calendar REST API to view or edit shared calendars only if the calendars were shared using the **new** approach.
 - You cannot use the calendar REST API to view or edit such calendars (or their events) if the calendars were shared using the **old** approach.
-
 
 If a calendar was shared with view or edit permissions but using the old approach, you can now work around the error and manually upgrade the calendar sharing to use the new approach.
 Over time, Outlook will automatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions.
@@ -78,6 +78,7 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 * You can also [list the events](/graph/api/calendar-list-events?view=graph-rest-1.0) of an ICS-based calendar.
 
 ### Attaching large files to events
+
 An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) succeeds only if the message or event is in the signed-in user's mailbox.
 
 ### onlineMeetingUrl property support for Microsoft Teams
@@ -121,15 +122,16 @@ In the meantime, to unblock development and testing you can use the following wo
 
 1. Open an Azure AD v2 PowerShell session and connect to your `customer` tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
 
-    ```PowerShell
+```PowerShell
     Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
-    ```
+```
 
 2. Create the Microsoft Graph service principal.
 
-    ```PowerShell
+```PowerShell
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
-    ```
+```
+
 ## Contacts
 
 ### Organization contacts available in only beta
@@ -151,7 +153,6 @@ In the above query:
 
 1. `/me/contacts?$top=1` gets the properties of a [contact](/graph/api/resources/contact?view=graph-rest-1.0) in the default contacts folder.
 2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
-
 
 ### Accessing contacts via a contact folder in beta
 
@@ -179,6 +180,7 @@ since GET /contacts in the `/beta` version applies to all the contacts in the us
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
+
 ## Delta query
 
 * OData context is sometimes returned incorrectly when tracking changes to relationships.
@@ -313,6 +315,7 @@ As JSON batching matures, these limitations will be removed.
 ## Mail (Outlook)
 
 ### Attaching large files to messages
+
 An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) succeeds only if the message or event is in the signed-in user's mailbox.
 
 ### The comment parameter for creating a draft
@@ -333,6 +336,7 @@ To get a list of teams, see [list all teams](teams-list-all-teams.md) and
 [list your teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
 
 ### POST /teams is only available in beta
+
 To create teams in v1.0, see [create team](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### Missing teams in list all teams
@@ -392,7 +396,6 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
 * `$search`:
   * Full-text search is only available for a subset of entities such as messages.
   * Cross-workload searching is not supported.
-
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs
 

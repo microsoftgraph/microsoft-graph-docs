@@ -1,4 +1,4 @@
----
+﻿---
 title: "Upload large files using the Microsoft Graph SDKs"
 description: "Provides guidance for uploading large files using the Microsoft Graph SDKs."
 localization_priority: Normal
@@ -156,6 +156,7 @@ chunkedUploadProvider.upload(callback, customConfig);
 The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload). If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.
 
 <!-- markdownlint-disable MD024 -->
+
 ### [C#](#tab/csharp)
 
 ```csharp
@@ -174,4 +175,5 @@ const resumedFile: DriveItem = await uploadTask.resume();
 > The Java SDK does not currently support resuming in-progress downloads.
 
 ---
+
 <!-- markdownlint-enable MD024 -->

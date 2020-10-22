@@ -78,6 +78,8 @@ The following table shows the properties that are required when you create the [
 | passwordPreviousPasswordBlockCount             | Int32                                                                                                                          | Number of previous passwords to block.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | passwordRequiredType                           | [requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)                                               | Type of password that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.                                                                                                                                                                                                                                                                                                                                                                                         |
 | passwordRequired                               | Boolean                                                                                                                        | Whether or not to require a password.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| passwordMaximumAttemptCount                    | Int32                                                                                                                          | The number of allowed failed attempts to enter the passcode at the device's lock screen. Valid values 2 to 11                                                                                                                                                                                                                                                                                                                                                                               |
+| passwordMinutesUntilFailedLoginReset           | Int32                                                                                                                          | The number of minutes before the login is reset after the maximum number of unsuccessful login attempts is reached.                                                                                                                                                                                                                                                                                                                                                                         |
 | keychainBlockCloudSync                         | Boolean                                                                                                                        | Indicates whether or not iCloud keychain synchronization is blocked (macOS 10.12 and later).                                                                                                                                                                                                                                                                                                                                                                                                |
 | airPrintBlocked                                | Boolean                                                                                                                        | Indicates whether or not AirPrint is blocked (macOS 10.12 and later).                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | airPrintForceTrustedTLS                        | Boolean                                                                                                                        | Indicates if trusted certificates are required for TLS printing communication (macOS 10.13 and later).                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -130,7 +132,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4596
+Content-length: 4680
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -184,6 +186,8 @@ Content-length: 4596
   "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true,
+  "passwordMaximumAttemptCount": 11,
+  "passwordMinutesUntilFailedLoginReset": 4,
   "keychainBlockCloudSync": true,
   "airPrintBlocked": true,
   "airPrintForceTrustedTLS": true,
@@ -270,7 +274,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4768
+Content-Length: 4852
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -327,6 +331,8 @@ Content-Length: 4768
   "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true,
+  "passwordMaximumAttemptCount": 11,
+  "passwordMinutesUntilFailedLoginReset": 4,
   "keychainBlockCloudSync": true,
   "airPrintBlocked": true,
   "airPrintForceTrustedTLS": true,

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Build a Microsoft Teams tab with the Microsoft Graph Toolkit"
 description: "Get started building a Microsoft Teams tab using the Microsoft Graph Toolkit."
 localization_priority: Normal
@@ -28,6 +28,7 @@ In order to test your application later, you will need to host your application 
 ```bash
 ngrok http 3000
 ```
+
 In your project directory, locate the `.publish\Development.env` file and replace the value for `baseUrl0` with your ngrok URL.
 
 ## Add the Microsoft Graph Toolkit
@@ -35,6 +36,7 @@ In your project directory, locate the `.publish\Development.env` file and replac
 You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package. To use the Toolkit, you will also need the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest).
 
 ### Use via mgt-loader
+
 To use the Toolkit and the Teams SDK via the loaders, add the following references to `public/index.html`:
 
 ```html
@@ -43,6 +45,7 @@ To use the Toolkit and the Teams SDK via the loaders, add the following referenc
 ```
 
 ### Use via npm (ES6 modules)
+
 Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm packages for both the Toolkit and the Microsoft Teams SDK to your project:
 
 ```bash
@@ -82,9 +85,11 @@ Providers.globalProvider = new TeamsProvider ({
     authPopupUrl: '/auth.html'
 })
 ```
+
 Replace `<YOUR_CLIENT_ID>` with the client ID for your application.
 
 ### Creating an app/client ID
+
 In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD. Make sure to add your ngrok URL with the full path to the auth popup page to your redirect URIs (for example, `https://<YOUR_NGROK_URL>/auth.html`).
 >**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
 
@@ -140,6 +145,7 @@ render() {
 ## Test your application
 
 Build and run your application using the following commands:
+
 ```bash
 npm install
 npm start
@@ -152,6 +158,7 @@ Locate your project directory and upload the **Development.zip** file inside of 
 After your app has loaded, scroll down on the left menu and select **Test and Distribute**. Click the **Install** button and then click **Add**. You will be redirected to the tab you created.
 
 ## Next Steps
+
 - Check out this step-by-step tutorial on [building a Teams tab](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/).
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).

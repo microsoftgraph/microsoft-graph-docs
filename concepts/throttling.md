@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
 author: "davidmu1"
@@ -13,11 +13,15 @@ Throttling limits the number of concurrent calls to a service to prevent overuse
 Throttling limits vary based on the scenario. For example, if you are performing a large volume of writes, the possibility for throttling is higher than if you are only performing reads.
 
 <!-- markdownlint-disable MD034 -->
+
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
+
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD026 -->
+
 ## What happens when throttling occurs?
+
 <!-- markdownlint-enable MD026 -->
 
 When a throttling threshold is exceeded, Microsoft Graph limits any further requests from that client for a period of time. When throttling occurs, Microsoft Graph returns HTTP status code 429 (Too many requests), and the requests fail. A suggested wait time is returned in the response header of the failed request. Throttling behavior can depend on the type and number of requests. For example, if you have a high volume of requests, all requests types are throttled. Threshold limits vary based on the request type. Therefore, you could encounter a scenario where writes are throttled but reads are still permitted.
@@ -95,9 +99,9 @@ Microsoft Graph allows you to access data in [multiple services](overview-major-
 
 Any request can be evaluated against multiple limits, depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, and so on), the request type (GET, POST, PATCH, and so on), and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific-limits described in the section, the following global limits apply:
 
-| Request type | Per app across all tenants  |
-| ------------ | ------------------------ |
-| Any          | 2000 requests per second |
+| Request type | Per app across all tenants |
+| ------------ | -------------------------- |
+| Any          | 2000 requests per second   |
 
 > [!NOTE]
 > The specific limits described here are subject to change.
@@ -108,11 +112,11 @@ Any request can be evaluated against multiple limits, depending on the scope of 
 
 Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
 
-| Limit                                                      | Applies to      |
-|------------------------------------------------------------|-----------------|
-| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
-| 4 concurrent requests                                      | v1.0 and beta endpoints   |
-| 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
+| Limit                                                             | Applies to              |
+| ----------------------------------------------------------------- | ----------------------- |
+| 10,000 API requests in a 10 minute period                         | v1.0 and beta endpoints |
+| 4 concurrent requests                                             | v1.0 and beta endpoints |
+| 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints |
 
 #### Outlook service resources
 
@@ -165,18 +169,18 @@ The following resources are provided by the Outlook service.
 
 ### Cloud communication service limits
 
-| Resource      | Limits per app per tenant    |
-| -------------- | ------------ |
-| [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
-| [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
+| Resource                                                | Limits per app per tenant                   |
+| ------------------------------------------------------- | ------------------------------------------- |
+| [Calls](/graph/api/resources/call)                      | 10,000 calls/month and 100 concurrent calls |
+| [Meeting information](/graph/api/resources/meetinginfo) | 2000 meetings/user each month               |
+| [Presence](/graph/api/resources/presence) (preview)     | 2 rps                                       |
 
 ### OneNote service limits
 
-| Limit type | Limit per app per user (delegated context) | Limit per app (app-only context) |
-| ------------ | ------- | ------- |
-| Requests rate | 120 requests per 1 minute and 400 per 1 hour | 240 requests per 1 minute and 800 per 1 hour |
-| Concurrent requests | 5 concurrent requests | 20 concurrent requests |
+| Limit type          | Limit per app per user (delegated context)   | Limit per app (app-only context)             |
+| ------------------- | -------------------------------------------- | -------------------------------------------- |
+| Requests rate       | 120 requests per 1 minute and 400 per 1 hour | 240 requests per 1 minute and 800 per 1 hour |
+| Concurrent requests | 5 concurrent requests                        | 20 concurrent requests                       |
 
 The preceding limits apply to the following resources:  
 onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
@@ -187,10 +191,10 @@ You can find additional information about best practices in [OneNote API throttl
 
 ### Project Rome service limits
 
-| Request type | Limit per user for all apps |
-| ------------ | --------------------------- |
-| GET          | 400 requests per 5 minutes and 12000 requests per 1 day |
-| POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
+| Request type             | Limit per user for all apps                             |
+| ------------------------ | ------------------------------------------------------- |
+| GET                      | 400 requests per 5 minutes and 12000 requests per 1 day |
+| POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day  |
 
 The preceding limits apply to the following resources:  
 activityHistoryItem, userActivity
@@ -199,22 +203,22 @@ activityHistoryItem, userActivity
 
 Limits are expressed as requests per second (rps).
 
-| Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
-|------------------------------------------------------|---------------------------------|------------|
-| Any Graph API calls for Microsoft Teams              | 15000 requests every 10 seconds | n/a |
-| GET team, channel, tab, installedApps, appCatalogs   | 60 rps                          | 600 rps |
-| POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
-| PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
-| DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
-| GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
-| GET channel message  | 5 rps | 100 rps |
-| GET 1:1/group chat message  | 3 rps | 30 rps |
-| POST channel message | 2 rps | 20 rps |
-| POST 1:1/group chat message | 2 rps | 20 rps |
-| GET /teams/```{team-id}```/schedule and all APIs under this path | 60 rps | 600 rps |
-| POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
-| DELETE /teams/```{team-id}```/schedule and all APIs under this path | 15 rps | 150 rps |
+| Teams request type                                                            | Limit per app per tenant        | Limit per app across all tenants |
+| ----------------------------------------------------------------------------- | ------------------------------- | -------------------------------- |
+| Any Graph API calls for Microsoft Teams                                       | 15000 requests every 10 seconds | n/a                              |
+| GET team, channel, tab, installedApps, appCatalogs                            | 60 rps                          | 600 rps                          |
+| POST/PUT channel, tab, installedApps, appCatalogs                             | 30 rps                          | 300 rps                          |
+| PATCH team, channel, tab, installedApps, appCatalogs                          | 30 rps                          | 300 rps                          |
+| DELETE channel, tab, installedApps, appCatalogs                               | 15 rps                          | 150 rps                          |
+| GET /teams/```{team-id}```, joinedTeams                                       | 30 rps                          | 300 rps                          |
+| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone          | 6 rps                           | 150 rps                          |
+| GET channel message                                                           | 5 rps                           | 100 rps                          |
+| GET 1:1/group chat message                                                    | 3 rps                           | 30 rps                           |
+| POST channel message                                                          | 2 rps                           | 20 rps                           |
+| POST 1:1/group chat message                                                   | 2 rps                           | 20 rps                           |
+| GET /teams/```{team-id}```/schedule and all APIs under this path              | 60 rps                          | 600 rps                          |
+| POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps                          | 300 rps                          |
+| DELETE /teams/```{team-id}```/schedule and all APIs under this path           | 15 rps                          | 150 rps                          |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 A maximum of 3000 messages per app per day can be sent to a given channel.
@@ -271,45 +275,45 @@ These service limits apply to the following entities:
 
 Throttling is based on a token bucket algorithm, which works by adding individual costs of requests. The sum of request costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached, in situations when the services are under an important load or based on data volume for a specific tenant. The following table lists existing limits.
 
-| Limit type | Resource unit quota | Write quota |
-| ---------- | ----------- | -------------- |
+| Limit type              | Resource unit quota                    | Write quota                       |
+| ----------------------- | -------------------------------------- | --------------------------------- |
 | application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
-| application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
-| tenant | Not Applicable | 9000 per 5 minutes |
+| application             | 150,000 per 20 seconds                 | 70,000 per 5 minutes              |
+| tenant                  | Not Applicable                         | 9000 per 5 minutes                |
 
 > **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 
 The following table lists base request costs. Any requests not listed have a base cost of 1.
 
-| Operation | Request Path | Base Resource Unit Cost | Write Cost |
-| --------- | ------------ | ----------------- | ------------------ |
-| GET | `applications` | 2 | 0 |
-| GET | `applications/{id}/extensionProperties` | 2 | 0 |
-| GET | `contracts` | 3 | 0 |
-| POST | `directoryObjects/getByIds` |  3 | 0 |
-| GET | `domains/{id}/domainNameReferences` | 4 | 0 |
-| POST | `getObjectsById` | 3 | 0 |
-| GET | `groups/{id}/members` | 3 | 0 |
-| GET | `groups/{id}/transitiveMembers` | 5 | 0 |
-| POST | `isMemberOf` | 4 | 0 |
-| POST | `me/checkMemberGroups` | 4 | 0 |
-| POST | `me/checkMemberObjects` | 4 | 0 |
-| POST | `me/getMemberGroups` | 2 | 0 |
-| POST | `me/getMemberObjects` | 2 | 0 |
-| GET | `me/licenseDetails` | 2 | 0 |
-| GET | `me/memberOf` | 2 | 0 |
-| GET | `me/ownedObjects` | 2 | 0 |
-| GET | `me/transitiveMemberOf` | 2 | 0 |
-| GET | `oauth2PermissionGrants` | 2 | 0 |
-| GET | `oauth2PermissionGrants/{id}` | 2 | 0 |
-| GET | `servicePrincipals/{id}/appRoleAssignments` | 2 | 0 |
-| GET | `subscribedSkus` | 3 | 0 |
-| GET | `users` | 2 | 0 |
-| GET | Any identity path not listed in the table | 1 | 0 |
-| POST | Any identity path not listed in the table | 1 | 1 |
-| PATCH | Any identity path not listed in the table | 1 | 1 |
-| PUT | Any identity path not listed in the table | 1 | 1 |
-| DELETE | Any identity path not listed in the table | 1 | 1 |
+| Operation | Request Path                                | Base Resource Unit Cost | Write Cost |
+| --------- | ------------------------------------------- | ----------------------- | ---------- |
+| GET       | `applications`                              | 2                       | 0          |
+| GET       | `applications/{id}/extensionProperties`     | 2                       | 0          |
+| GET       | `contracts`                                 | 3                       | 0          |
+| POST      | `directoryObjects/getByIds`                 | 3                       | 0          |
+| GET       | `domains/{id}/domainNameReferences`         | 4                       | 0          |
+| POST      | `getObjectsById`                            | 3                       | 0          |
+| GET       | `groups/{id}/members`                       | 3                       | 0          |
+| GET       | `groups/{id}/transitiveMembers`             | 5                       | 0          |
+| POST      | `isMemberOf`                                | 4                       | 0          |
+| POST      | `me/checkMemberGroups`                      | 4                       | 0          |
+| POST      | `me/checkMemberObjects`                     | 4                       | 0          |
+| POST      | `me/getMemberGroups`                        | 2                       | 0          |
+| POST      | `me/getMemberObjects`                       | 2                       | 0          |
+| GET       | `me/licenseDetails`                         | 2                       | 0          |
+| GET       | `me/memberOf`                               | 2                       | 0          |
+| GET       | `me/ownedObjects`                           | 2                       | 0          |
+| GET       | `me/transitiveMemberOf`                     | 2                       | 0          |
+| GET       | `oauth2PermissionGrants`                    | 2                       | 0          |
+| GET       | `oauth2PermissionGrants/{id}`               | 2                       | 0          |
+| GET       | `servicePrincipals/{id}/appRoleAssignments` | 2                       | 0          |
+| GET       | `subscribedSkus`                            | 3                       | 0          |
+| GET       | `users`                                     | 2                       | 0          |
+| GET       | Any identity path not listed in the table   | 1                       | 0          |
+| POST      | Any identity path not listed in the table   | 1                       | 1          |
+| PATCH     | Any identity path not listed in the table   | 1                       | 1          |
+| PUT       | Any identity path not listed in the table   | 1                       | 1          |
+| DELETE    | Any identity path not listed in the table   | 1                       | 1          |
 
 Other factors that affect a request cost:
 
@@ -357,9 +361,9 @@ Other factors that affect a request cost:
 
 The following limits apply to any request on `/informationProtection`.
 
-| Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
-|---------------------------|-------------------------------------------------------------|------------------------------------------------------|
-| POST                      | 150 requests per 15 minutes and 10000 requests per 24 hours | 1 request per 15 minutes and 3 requests per 24 hours |
+| Operation | Limit per tenant                                            | Limit per resource (email, URL, file)                |
+| --------- | ----------------------------------------------------------- | ---------------------------------------------------- |
+| POST      | 150 requests per 15 minutes and 10000 requests per 24 hours | 1 request per 15 minutes and 3 requests per 24 hours |
 
 The preceding limits apply to the following resources:  
 threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
@@ -367,8 +371,8 @@ threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFil
 ### Identity protection and conditional access service limits
 
 | Request type | Limit per tenant for all apps |
-| ------------ | ------- |
-| Any | 1 request per second |
+| ------------ | ----------------------------- |
+| Any          | 1 request per second          |
 
 The preceding limits apply to the following resources:  
 riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
@@ -379,10 +383,10 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 
 The following limits apply to any request on `me/insights` or `users/{id}/insights`.
 
-| Limit                                                      | Applies to      |
-|------------------------------------------------------------|-----------------|
-| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
-| 4 concurrent requests                                      | v1.0 and beta endpoints   |
+| Limit                                     | Applies to              |
+| ----------------------------------------- | ----------------------- |
+| 10,000 API requests in a 10 minute period | v1.0 and beta endpoints |
+| 4 concurrent requests                     | v1.0 and beta endpoints |
 
 The preceding limits apply to the following resources:  
 people, trending, usedinsight, sharedInsight.
@@ -391,10 +395,10 @@ people, trending, usedinsight, sharedInsight.
 
 The following limits apply to any request on `/reports`.
 
-| Operation                 | Limit per app per tenant     | Limit per tenant for all apps |
-|---------------------------|------------------------------|----------------------------|
-| Any request (CSV)         | 14 requests per 10 minutes   | 40 requests per 10 minutes |
-| Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
+| Operation                | Limit per app per tenant    | Limit per tenant for all apps |
+| ------------------------ | --------------------------- | ----------------------------- |
+| Any request (CSV)        | 14 requests per 10 minutes  | 40 requests per 10 minutes    |
+| Any request (JSON, beta) | 100 requests per 10 minutes | n/a                           |
 
 The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
 
@@ -404,25 +408,25 @@ The preceding limits apply to the **report** resource.
 
 The following limits apply to any request on `/invitations`.
 
-| Operation                 | Limit per tenant for all apps |
-|---------------------------|------------------------------|
-| Any operation             | 150 requests per 5 seconds   |
+| Operation     | Limit per tenant for all apps |
+| ------------- | ----------------------------- |
+| Any operation | 150 requests per 5 seconds    |
 
 ### Security detections and incidents service limits
 
 The following limits apply to any request on `/security`.
 
-| Operation                  | Limit per app per tenant     |
-|----------------------------|------------------------------|
-| Any operation on `alert`, `securityActions`,  `secureScore` | 150 requests per minute      |
-| Any operation on `tiIndicator` | 1000 requests per minute |
+| Operation                                                     | Limit per app per tenant                  |
+| ------------------------------------------------------------- | ----------------------------------------- |
+| Any operation on `alert`, `securityActions`,  `secureScore`   | 150 requests per minute                   |
+| Any operation on `tiIndicator`                                | 1000 requests per minute                  |
 | Any operation on `secureScore` or `secureScorecontrolProfile` | 10,000 API requests in a 10 minute period |
-| Any operation on `secureScore` or `secureScorecontrolProfile` | 4 concurrent requests |
+| Any operation on `secureScore` or `secureScorecontrolProfile` | 4 concurrent requests                     |
 
 ### Open and schema extensions service limits
 
-| Request type | Limit per app per tenant |
-| ------------ | ------------------------ |
+| Request type | Limit per app per tenant    |
+| ------------ | --------------------------- |
 | Any          | 455 requests per 10 seconds |
 
 The preceding limits apply to the following resources: 
@@ -444,10 +448,10 @@ planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskB
 
 ### Identity and access data policy operation service limits
 
-| Request type | Limit per tenant |
-| ------------ | ---------------- |
+| Request type                 | Limit per tenant                                                  |
+| ---------------------------- | ----------------------------------------------------------------- |
 | POST on `exportPersonalData` | 1000 requests per day for any subject and 100 per subject per day |
-| Any other request | 10000 requests per hour |
+| Any other request            | 10000 requests per hour                                           |
 
 The preceding limits apply to the following resources: 
 dataPolicyOperation.
@@ -455,6 +459,7 @@ dataPolicyOperation.
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 <!-- { "blockType": "throttlinggenstart" } -->
+
 ### Education service limits
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]

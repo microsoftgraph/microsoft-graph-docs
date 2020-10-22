@@ -34,6 +34,7 @@ GET /synchronizationProfiles
 ```
 
 ## Optional query parameters
+
 This method supports the following [OData Query Parameters](/graph/query-parameters) to help customize the response: $filter, $orderby, $top, $skip, and $count.
 
 ## Request headers

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Microsoft Teams Channel Picker component in the Microsoft Graph Toolkit"
 description: "You can use mgt-teams-channel-picker to search for channels and teams associated with the user from the Microsoft Graph."
 localization_priority: Normal
@@ -41,7 +41,6 @@ channelPicker.selectChannelById(channelId);
 
 > **Note:** The provided channel (and subsequent ID) must belong to a team that the authenticated user has joined. 
 
-
 ## CSS custom properties
 
 The `mgt-teams-channel-picker` component defines the following CSS custom properties.
@@ -71,19 +70,19 @@ mgt-teams-channel-picker {
 ```
 
 ## Events
-| Event | Detail | Description |
-| --- | --- | --- |
+
+| Event            | Detail                                                                                                                                                                                                                       | Description                                               |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team?view=graph-rest-1.0)`}` | Fired when user makes a change in selection of a channel. |
 
 ## Templates
 
  `mgt-teams-channel-picker` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
-| Data type | Data context | Description |
-| --- | --- | --- |
-| loading | null: no data | The template used to render the state of the picker while the request to Microsoft Graph is being made. |
-| error | null: no data| The template used if user search returns no users. |
-
+| Data type | Data context  | Description                                                                                             |
+| --------- | ------------- | ------------------------------------------------------------------------------------------------------- |
+| loading   | null: no data | The template used to render the state of the picker while the request to Microsoft Graph is being made. |
+| error     | null: no data | The template used if user search returns no users.                                                      |
 
 The following example shows how to use the `error` template.
 
@@ -99,10 +98,10 @@ The following example shows how to use the `error` template.
 
 This component uses the following Microsoft Graph APIs and permissions.
 
-| API                                                                                                              | Permission  |
-| ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0)                    | User.Read.All        |
-| [/teams/${id}/channels](/graph/api/channel-list?view=graph-rest-1.0) | Group.Read.All        |
+| API                                                                     | Permission     |
+| ----------------------------------------------------------------------- | -------------- |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0) | User.Read.All  |
+| [/teams/${id}/channels](/graph/api/channel-list?view=graph-rest-1.0)    | Group.Read.All |
 
 ## Authentication
 
@@ -112,13 +111,13 @@ The control uses the global authentication provider described in the [authentica
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions:
 
-| Method | Description |
-| - | - |
-| renderSelected | Renders the selected team and channel in the input box. |
-| renderInput | Renders the input box. |
-| renderDropdown | Renders the dropdown. |
-| renderDropdownList | Renders the items in the dropdown recursively. |
-| renderItem | Renders a team or a channel in the dropdown list. |
+| Method                | Description                                             |
+| --------------------- | ------------------------------------------------------- |
+| renderSelected        | Renders the selected team and channel in the input box. |
+| renderInput           | Renders the input box.                                  |
+| renderDropdown        | Renders the dropdown.                                   |
+| renderDropdownList    | Renders the items in the dropdown recursively.          |
+| renderItem            | Renders a team or a channel in the dropdown list.       |
 | renderHighlightedText | Renders the channel text, highlighting the input query. |
-| renderLoading | Renders the loading dropdown state. |
-| renderError | Renders the dropdown error state. |
+| renderLoading         | Renders the loading dropdown state.                     |
+| renderError           | Renders the dropdown error state.                       |

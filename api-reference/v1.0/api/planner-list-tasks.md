@@ -32,6 +32,7 @@ GET /planner/tasks
 ```
 
 ## Optional query parameters
+
 This method requires planId [filter](/graph/query-parameters) to be specified.
 
 ## Request headers

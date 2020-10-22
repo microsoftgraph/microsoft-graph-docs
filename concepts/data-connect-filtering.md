@@ -1,4 +1,4 @@
----
+﻿---
 title: "User selection and filtering Microsoft Graph data connect supports"
 description: "Describes how to use Microsoft Graph data connect to select users to extract data for and filter the data returned."
 author: "tlenig"
@@ -29,15 +29,14 @@ You can limit the results extracted for your query using DateTime properties. De
 
 The following datasets require a filter to be provided on one of the corresponding DateTime properties.
 
-| Dataset name                                                   | Properties that support filtering                                           | 
-|----------------------------------------------------------------|-----------------------------------------------------------------------------| 
-| BasicDataSet_v0.Event_v0<br>BasicDataSet_v0.Event_v1           | CreatedDateTime<br>LastModifiedDateTime                                     | 
-| BasicDataSet_v0.Message_v0<br>BasicDataSet_v0.Message_v1       | CreatedDateTime<br>LastModifiedDateTime<br>ReceivedDateTime<br>SentDateTime | 
-| BasicDataSet_v0.SentItem_v0<br>BasicDataSet_v0.SentItem_v1     | CreatedDateTime<br>LastModifiedDateTime<br>ReceivedDateTime<br>SentDateTime |
+| Dataset name                                               | Properties that support filtering                                           |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------- |
+| BasicDataSet_v0.Event_v0<br>BasicDataSet_v0.Event_v1       | CreatedDateTime<br>LastModifiedDateTime                                     |
+| BasicDataSet_v0.Message_v0<br>BasicDataSet_v0.Message_v1   | CreatedDateTime<br>LastModifiedDateTime<br>ReceivedDateTime<br>SentDateTime |
+| BasicDataSet_v0.SentItem_v0<br>BasicDataSet_v0.SentItem_v1 | CreatedDateTime<br>LastModifiedDateTime<br>ReceivedDateTime<br>SentDateTime |
 
 >**Note** Pipelines requesting BasicDataSet_v0.CalendarView_v0 also require a DateTime filter, but no **dateFilterColumn** is specified in the SourceDataSet. However, a **startTime** and **endTime** are required and only events that begin after the **startTime** and finish before the **endTime** are provided.
 
 ## Next Steps 
 
 For more information about how to modify the user selected for extractoin and filtering in data connect pipelines, see the [Azure Data Factory Office 365 connector documentation](/azure/data-factory/connector-office-365).  
-

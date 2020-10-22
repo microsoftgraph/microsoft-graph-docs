@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get incremental changes for users"
 description: "Delta query lets you query for additions, deletions, or updates to users, by way of a series of delta function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes."
 author: "davidmu1"
@@ -37,7 +37,7 @@ Note the following:
 - The optional $select query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.
 - The initial request does not include a state token. State tokens will be used in subsequent requests.
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
 
@@ -75,7 +75,7 @@ Content-type: application/json
 
 The second request specifies the `skipToken` returned from the previous response. Notice the `$select` parameter is not required, as the `skipToken` encodes and includes it.
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
 
@@ -111,7 +111,7 @@ Content-type: application/json
 
 The third request continues to use the latest `skipToken` returned from the last sync request. 
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
 
@@ -147,7 +147,7 @@ Content-type: application/json
 
 Using the `deltaToken` from the [last response](#final-nextlink-response), you will be able to get changed (by being added, deleted, or updated) users since the last request.
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
 
@@ -201,4 +201,5 @@ Some things to note about the example response above:
 - When the user is created, or restored, there is no annotation.
 
 ## See also
+
 [Microsoft Graph delta query](delta-query-overview.md) overview.

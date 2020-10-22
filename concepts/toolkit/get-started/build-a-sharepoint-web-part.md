@@ -1,4 +1,4 @@
----
+﻿---
 title: "Build a SharePoint web part with the Microsoft Graph Toolkit"
 description: "Get started using the Microsoft Graph Toolkit to build a SharePoint web part."
 localization_priority: Normal
@@ -29,11 +29,13 @@ The Microsoft Graph Toolkit requires Typescript 3.x. Before adding the Toolkit t
 ```bash
 npm install @microsoft/rush-stack-compiler-3.7 --save-dev
 ```
+
 Then, locate the `tsconfig.json` file in your project folder, open the file, and look for this line:
 
 ```json
 "extends": "./node_modules/@microsoft/rush-stack-compiler-3.3/includes/tsconfig-web.json",
 ```
+
 Replace the line with:
 
 ```json
@@ -47,15 +49,18 @@ Install the Microsoft Graph Toolkit npm package and polyfills with the following
 ```bash
 npm install @microsoft/mgt
 ```
+
 If you plan to support IE11 in your web parts, you'll need to follow additional steps to ensure cross-browser compatibility:
 
 1. Install the following packages:
+
 ```bash
 npm install -D babel-loader @babel/core @babel/preset-env webpack
 npm install -D @webcomponents/webcomponentsjs regenerator-runtime core-js
 ```
 
 2. Add the following code to `gulpfile.js`, right above `build.initialize(gulp)`:
+
 ```ts
 build.configureWebpack.mergeConfig({
   additionalConfiguration: (generatedConfiguration) => {
@@ -81,6 +86,7 @@ build.configureWebpack.mergeConfig({
   }
 });
 ```
+
 3. In your `src\webparts\<your-project>\<your-web-part>.ts` file, import the following polyfills before the SharePoint provider in the next step.
 
 ```ts
@@ -154,6 +160,7 @@ Determine which Microsoft Graph API permissions you need depending on the compon
   }
 ]
 ```
+
 ## Build and deploy your web part
 
 Now, you will build your application and deploy it to SharePoint. Build your application by running the following commands:
@@ -175,9 +182,11 @@ Go to your **SharePoint Admin center**. In the left-hand navigation, select **Ad
 You're now ready to add your web part to a SharePoint page and test it out. You will need to use the hosted workbench to test web parts that use the Microsoft Graph Toolkit because the components need the authenticated context in order to call Microsoft Graph. You can find your hosted workbench at **https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx**.
 
 Open the `config\serve.json` file in your project and replace the  value of `initialPage` with the url for your hosted workbench:
+
 ```json
 "initialPage": "https://<YOUR_TENANT>.sharepoint.com/_layouts/15/workbench.aspx",
 ```
+
 Save the file and then run the following command in the console to build and preview your web part:
 
 ```bash
@@ -187,6 +196,7 @@ gulp serve
 Your hosted workbench will automatically open in your browser. Add your web part to the page and you should see your web part with the Microsoft Graph Toolkit components in action! As long as the gulp serve command is still running in your console, you can continue to make edits to your code and then just refresh your browser to see your changes.
 
 ## Next Steps
+
 - Check out this step-by-step tutorial on [building a SharePoint web part](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/).
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Stack Overflow](https://aka.ms/mgt-question).

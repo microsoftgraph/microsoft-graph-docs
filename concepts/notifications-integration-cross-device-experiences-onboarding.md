@@ -1,4 +1,4 @@
----
+﻿---
 title: "Onboarding to cross-device experiences for Microsoft Graph notifications "
 description: "Register your application on the Windows Dev Center to enable your app clients to receive cross-device notifications sent through Microsoft Graph."
 localization_priority: Priority
@@ -45,7 +45,7 @@ To get started, sign in to the [Partner Center dashboard](https://partner.micros
 > For Windows UWP apps, enabling WNS push notification is a prerequisite to using Microsoft Graph notifications. For details, see [WNS overview](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview). After you onboard, you can provide push credentials via Partner Center to the Connected Device Platform.
 
 6.  Verify your cross-device app domain, which serves as a verification process to prove that your application has ownership of this domain. This acts like a cross-device app identity for the application or applications you registered, as shown.
-    
+
     ![Verify domain](images/notifications-crossdevice-domain-verify.png)
 
 That’s it! You've now registered your applications to receive notifications. Next, learn how to set up your [app service](notifications-integrating-app-server.md) and start sending notifications.

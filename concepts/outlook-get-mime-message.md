@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get MIME content of a message"
 description: "Multipurpose Internet Mail Extensions (MIME) is an industry email standard. You can now use a `$value` segment to get the MIME content of an Outlook message."
 author: "angelgolfer-ms"
@@ -18,7 +18,6 @@ Even though Outlook _does not save_ messages in MIME format, there are two ways 
 In either case, your app must have the appropriate [permissions to access](permissions-reference.md#mail-permissions) the Outlook item or group post in order to apply the get-message or get-attachment operation. 
 
 You can then save the message body content in a .EML file and attach the file to records in business systems, such as those for CRM, ERP, and bug tracking. 
-
 
 ## What is MIME?
 
@@ -45,6 +44,7 @@ You can get the MIME representation of a message by appending the `$value` segme
 [getting the message](/graph/api/message-get?view=graph-rest-1.0): 
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /users/{id}/messages/{id}/$value
 ```
@@ -54,6 +54,7 @@ GET /users/{id}/messages/{id}/$value
 The following is an example that requests a message in the signed-in user's mailbox to be returned with its MIME content.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
@@ -61,6 +62,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc
 The following is the response. The MIME content begins with the `MIME-Version` header. 
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 Received: from contoso.com (10.194.241.197) by 
 contoso.com (10.194.241.197) with Microsoft 
@@ -98,25 +100,26 @@ X-MS-TNEF-Correlator:
 X-MS-Exchange-Organization-RecordReviewCfmType: 0 
 x-ms-publictraffictype: Emai
 
-```http
+```
+
 MIME-Version: 1.0 
 Content-Type: multipart/mixed; 
                 boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 
- 
+
 --_004_4aade2547798441eab5188a7a2436bc1contoso_ 
 Content-Type: multipart/alternative; 
                 boundary="_000_4aade2547798441eab5188a7a2436bc1contoso_" 
- 
+
 --_000_4aade2547798441eab5188a7a2436bc1contoso_ 
 Content-Type: text/plain; charset="iso-8859-1" 
 Content-Transfer-Encoding: quoted-printable 
- 
+
 The attachment is an email. 
- 
+
 --_000_4aade2547798441eab5188a7a2436bc1contoso_ 
 Content-Type: text/html; charset="iso-8859-1" 
 Content-Transfer-Encoding: quoted-printable 
- 
+
 <html> 
 <head> 
 <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-= 
@@ -131,9 +134,9 @@ n-bottom:0;} --></style>
 </div> 
 </body> 
 </html> 
- 
+
 --_000_4aade2547798441eab5188a7a2436bc1contoso_-- 
- 
+
 --_004_4aade2547798441eab5188a7a2436bc1contoso_ 
 Content-Type: application/octet-stream; name="Attachment email.eml" 
 Content-Description: Attachment email.eml 
@@ -141,15 +144,15 @@ Content-Disposition: attachment; filename="Attachment email.eml"; size=408;
                 creation-date="Mon, 04 Sep 2017 09:59:43 GMT"; 
                 modification-date="Mon, 04 Sep 2017 09:59:43 GMT" 
 Content-Transfer-Encoding: base64 
- 
+
 RnJvbToJQWRtaW5pc3RyYXRvciA8YWRtaW5AdGVuYW50LUVYSEItMTQ3MS5jb20+DQpTZW50OglN 
 b25kYXksIFNlcHRlbWJlciA0LCAyMDE3IDM6MjYgUE0NClRvOglTcml2YXJkaGFuIEhlYmJhcg0K 
 U3ViamVjdDoJQXR0YWNobWVudCBlbWFpbA0KDQpJIHdpbGwgYXR0YWNoIHRoaXMgZW1haWwgdG8g 
 YW5vdGhlciBtYWlsLg0K 
- 
---_004_4aade2547798441eab5188a7a2436bc1contoso_-- 
-```
 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_-- 
+
+```
 ## Get MIME content of an Outlook message attached to an Outlook item or group post
 
 You can also get the MIME representation of an Outlook message, if the message has been attached to an Outlook [event](/graph/api/resources/event?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [task](/graph/api/resources/outlooktask?view=graph-rest-beta), or group [post](/graph/api/resources/post?view=graph-rest-1.0) that your app can access.
@@ -160,41 +163,47 @@ To do that, identify the message attachment, and append the `$value` segment whe
 
 If the message is attached to an event in the user's default calendar:
 <!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/events/{id}/attachments/{id}/$value
 ```
 
+GET /users/{id}/events/{id}/attachments/{id}/$value
+
+```
 If the message is attached to another message in the user's mailbox:
 <!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/messages/{id}/attachments/{id}/$value
 ```
 
+GET /users/{id}/messages/{id}/attachments/{id}/$value
+
+```
 If the message is attached to an Outlook task in the user's default task folder:
 <!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
+GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
+
+```
 If the message is attached to the specified group post:
 <!-- { "blockType": "ignored" } -->
-```http
-GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 
+GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
+
+```
 ### Example
 
 The following is an example that gets a message that has been attached to another message, and returns the body in MIME format.
 
 <!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUAAA7XW-lAAA=/attachments/AAMkAGUAAA7XW-lAAABEgAQAFBZJBq4EN5FlCSvNV-M-FI=/$value
 ```
 
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUAAA7XW-lAAA=/attachments/AAMkAGUAAA7XW-lAAABEgAQAFBZJBq4EN5FlCSvNV-M-FI=/$value
+
+```
 The following is the response. The MIME content begins with the `MIME-Version` header. 
 
 <!-- { "blockType": "ignored" } -->
-```http
+```
+
 Received: from MWHPR22MB0302.namprd22.prod.outlook.com (2603:10b6:104:5::23)
  by MWHPR2201MB1053.namprd22.prod.outlook.com with HTTPS via
  CO2PR04CA0193.NAMPRD04.PROD.OUTLOOK.COM; Mon, 22 Apr 2019 19:48:20 +0000
@@ -271,8 +280,8 @@ e.</p>
 </html>
 
 --_000_MWHPR22MB100769D1513B3DC0F007B2ECD4220MWHPR22MB1007namp_--
-```
 
+```
 ## Next steps
 
 Find out more about:
@@ -280,3 +289,4 @@ Find out more about:
 - [Get the MIME content of an item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
 - [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0
+```

@@ -145,7 +145,8 @@ Content-Length: 1574
             "displayName": "Tyler Stein"
           }
         },
-        "upn": "upn-value"
+        "upn": "upn-value",
+        "role": "attendee"
       }
     ],
     "organizer": {
@@ -158,7 +159,8 @@ Content-Length: 1574
           "displayName": "Jasmine Miller"
         }
       },
-      "upn": "upn-value"
+      "upn": "upn-value",
+      "role": "presenter"
     }
   },
   "startDateTime": "2018-05-30T00:30:00Z",

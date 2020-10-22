@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Search API in Microsoft Graph to search custom types"
 description: "You can use the Microsoft Search API to import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resource, and run search queries on this external content."
 author: "nmoreau"

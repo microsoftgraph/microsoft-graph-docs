@@ -1,4 +1,4 @@
----
+﻿---
 title: "Navigating the Microsoft Graph PowerShell SDK"
 description: "The Microsoft Graph PowerShell SDK contains a large number of commands. Learn how to find the right command for what you want to achieve."
 localization_priority: Normal
@@ -19,13 +19,13 @@ PowerShell commands are named using a verb-noun pair, such as `Get-Command` or `
 
 For basic REST operations, the verb is determined by the HTTP method used for the API.
 
-| HTTP method | Command verb | Example |
-|-------------|--------------|---|
-| GET         | Get          | `Get-MgUser` [API reference](/graph/api/user-get?view=graph-rest-1.0) |
+| HTTP method | Command verb | Example                                                                                |
+| ----------- | ------------ | -------------------------------------------------------------------------------------- |
+| GET         | Get          | `Get-MgUser` [API reference](/graph/api/user-get?view=graph-rest-1.0)                  |
 | POST        | New          | `New-MgUserMessage` [API reference](/graph/api/user-post-messages?view=graph-rest-1.0) |
-| PUT         | New          | `New-MgTeam` [API reference](/graph/api/team-put-teams?view=graph-rest-1.0) |
-| PATCH       | Update       | `Update-MgUserEvent` [API reference](/graph/api/event-update?view=graph-rest-1.0) |
-| DELETE      | Remove       | `Remove-MgDriveItem` [API reference](/graph/api/driveitem-delete?view=graph-rest-1.0) |
+| PUT         | New          | `New-MgTeam` [API reference](/graph/api/team-put-teams?view=graph-rest-1.0)            |
+| PATCH       | Update       | `Update-MgUserEvent` [API reference](/graph/api/event-update?view=graph-rest-1.0)      |
+| DELETE      | Remove       | `Remove-MgDriveItem` [API reference](/graph/api/driveitem-delete?view=graph-rest-1.0)  |
 
 For functions and actions, it's a little more complicated. APIs in Microsoft Graph that are implemented as OData functions or actions are typically named with at least a verb. The corresponding command's verb is based on the verb in the function or action name. However, command verbs in PowerShell have to conform to specific [naming rules](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands), so this can result in non-intuitive name-to-command mappings.
 

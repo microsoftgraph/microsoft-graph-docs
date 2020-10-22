@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Graph SDKs to batch requests"
 description: "Provides instructions for creating a batch of API requests using the Microsoft Graph SDKs."
 localization_priority: Normal
@@ -234,6 +234,7 @@ This example shows how to send multiple requests in a batch that are dependent o
 > If the add event request fails, the get calendar view request will fail with a `424 Failed Dependency` error.
 
 <!-- markdownlint-disable MD024 -->
+
 ### [C#](#tab/csharp)
 
 ```csharp
@@ -519,4 +520,5 @@ if (calendarViewResponse.isSuccessful()) {
 ```
 
 ---
+
 <!-- markdownlint-enable MD024 -->

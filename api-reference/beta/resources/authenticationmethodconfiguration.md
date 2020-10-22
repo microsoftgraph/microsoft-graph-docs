@@ -1,4 +1,4 @@
----
+﻿---
 title: "authenticationMethodConfigurations"
 description: "authenticationMethodConfigurations object."
 author: "mmcla"
@@ -8,6 +8,7 @@ doc_type: "apiPageType"
 ---
 
 # authenticationMethodConfiguration resource type
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,16 +16,20 @@ Namespace: microsoft.graph
 Represents an authentication method policy.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|The policy name.|
-|state|authenticationMethodState|The state of the policy. Possible values are: `enabled`, `disabled`.|
+
+| Property | Type                      | Description                                                          |
+| :------- | :------------------------ | :------------------------------------------------------------------- |
+| id       | String                    | The policy name.                                                     |
+| state    | authenticationMethodState | The state of the policy. Possible values are: `enabled`, `disabled`. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -33,7 +38,8 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-``` json
+
+```json
 {
   "@odata.type": "#microsoft.graph.authenticationMethodConfiguration",
   "id": "String (identifier)",

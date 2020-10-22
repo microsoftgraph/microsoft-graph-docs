@@ -1,4 +1,4 @@
----
+﻿---
 title: "Migrate Azure AD Graph .NET apps to Microsoft Graph"
 description: "Describes how to migrate Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
 author: "dkershaw10"
@@ -29,15 +29,15 @@ The following steps assume your app is already using ADAL to acquire access toke
 
 2. In your app, update references to the Microsoft Graph client library by changing:
 
-    ``` csharp
+```csharp
     using Microsoft.Azure.ActiveDirectory.GraphClient;
-    ```
+```
 
     To:
 
-    ``` csharp
+```csharp
     using Microsoft.Graph;
-    ```
+```
 
 3. Use your package manager to download and update the [Microsoft Graph NuGet package](https://www.nuget.org/packages/Microsoft.Graph/) and update dependencies.
 
@@ -45,35 +45,35 @@ The following steps assume your app is already using ADAL to acquire access toke
 
     Change:
 
-    ``` csharp
+```csharp
     ActiveDirectoryClient client = new ActiveDirectoryClient(serviceRoot,
     async () => await AcquireTokenAsyncForUser());
-    ```
+```
 
     To:
 
-    ``` csharp
+```csharp
     GraphServiceClient graphClient = new GraphServiceClient(serviceRoot,
        new DelegateAuthenticationProvider(async (requestMessage) => {
           var token = await AcquireTokenAsyncForUser();
           requestMessage.Headers.Authorization = new
              AuthenticationHeaderValue("bearer", token);
        }));
-    ```
+```
 
     For Microsoft Graph client library, the `serviceRoot` value also includes the version number. Currently, that value is `https://graph.microsoft.com/v1.0`.
 
 5. Update requests to use the Microsoft Graph client request builder syntax, by changing:
 
-    ``` csharp
+```csharp
     signedInUser = (User)await client.Me.ExecuteAsync();
-    ```
+```
 
     To:
 
-    ``` csharp
+```csharp
     signedInUser = (User)await client.Me.Request().GetAsync();
-    ```
+```
 
     >[!NOTE]
     >The Azure AD Graph client library supported LINQ-based query
@@ -81,23 +81,23 @@ The following steps assume your app is already using ADAL to acquire access toke
 
     To do so, change:
 
-    ``` csharp
+```csharp
     var groups = await
     client.Groups.Where(g => g.DisplayName.StartsWith("a")).ExecuteAsync();
-    ```
+```
 
     To:
 
-    ``` csharp
+```csharp
     var groups = await
     client.Groups.Request().Filter("startswith(displayName,'a')").GetAsync();
-    ```
+```
 
 6. If your code pages through collections, make the following minor adjustments. The following example compares and contrasts fetching a group and paging through its members, 5 at a time. While the code for Azure AD Graph requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement. Other than that, the code is relatively similar.  To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single-threaded console app.
 
     As an example, change the following code using the Azure AD Graph .NET client library:
 
-    ```csharp
+```csharp
     Group retrievedGroup = client.Groups.
         Where(g => g.ObjectId.Equals(id)).ExecuteAsync().Result;
     IGroupFetcher retrievedGroupFetcher = (IGroupFetcher) retrievedGroup;
@@ -118,11 +118,11 @@ The following steps assume your app is already using ADAL to acquire access toke
         membersPage = membersPage.GetNextPageAsync().Result;
     } while (membersPage != null);
 
-    ```
+```
 
     To the following code using the Microsoft Graph .NET client library:
 
-    ```csharp
+```csharp
     var membersPage = client.Groups[id].Members.Request().Top(5).GetAsync().Result;
     Console.WriteLine(" Members:");
     do
@@ -141,7 +141,7 @@ The following steps assume your app is already using ADAL to acquire access toke
         else membersPage = null;
     } while (membersPage != null);
 
-    ```
+```
 
 7. Build and fix any resource, property, navigation, and service action errors, generally related to name changes.
 

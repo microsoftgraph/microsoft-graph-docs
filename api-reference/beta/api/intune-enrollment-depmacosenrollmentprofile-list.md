@@ -70,7 +70,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1478
+Content-Length: 1522
 
 {
   "value": [
@@ -86,7 +86,6 @@ Content-Length: 1478
       "isDefault": true,
       "supervisedModeEnabled": true,
       "supportDepartment": "Support Department value",
-      "passCodeDisabled": true,
       "isMandatory": true,
       "locationDisabled": true,
       "supportPhoneNumber": "Support Phone Number value",
@@ -96,7 +95,6 @@ Content-Length: 1478
       "termsAndConditionsDisabled": true,
       "touchIdDisabled": true,
       "applePayDisabled": true,
-      "zoomDisabled": true,
       "siriDisabled": true,
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
@@ -107,8 +105,11 @@ Content-Length: 1478
       "registrationDisabled": true,
       "fileVaultDisabled": true,
       "iCloudDiagnosticsDisabled": true,
+      "passCodeDisabled": true,
+      "zoomDisabled": true,
       "iCloudStorageDisabled": true,
-      "chooseYourLockScreenDisabled": true
+      "chooseYourLockScreenDisabled": true,
+      "accessibilityScreenDisabled": true
     }
   ]
 }

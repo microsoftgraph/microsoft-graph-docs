@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response."
 author: "mumbi-o"
@@ -19,39 +19,39 @@ Query parameters can be OData system query options or other query parameters.
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
 ## OData system query options
+
 A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query].
 
 >**Note:** OData 4.0 supports system query options in only GET operations.
 
 Click the examples to try them in [Graph Explorer][graph-explorer].
 
-| Name                     | Description | Example
-|:-------------------------|:------------|:---------|
-| [$count](#count-parameter)         | Retrieves the total count of matching resources. | [`/me/messages?$top=2&$count=true`][count-example]
-| [$expand](#expand-parameter)       | Retrieves related resources.|[`/groups?$expand=members`][expand-example]
-| [$filter](#filter-parameter)       | Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
-| [$format](#format-parameter)       | Returns the results in the specified media format.|[`/users?$format=json`][format-example]
-| [$orderby](#orderby-parameter)     | Orders results.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | Returns results based on search criteria. |[`/me/messages?$search=pizza`][search-example]
-| [$select](#select-parameter)       | Filters properties (columns).|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
-| [$top](#top-parameter)             | Sets the page size of results. |[`/users?$top=2`][top-example]
-
+| Name                           | Description                                                                                                                          | Example                                                      |
+| :----------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------- |
+| [$count](#count-parameter)     | Retrieves the total count of matching resources.                                                                                     | [`/me/messages?$top=2&$count=true`][count-example]           |
+| [$expand](#expand-parameter)   | Retrieves related resources.                                                                                                         | [`/groups?$expand=members`][expand-example]                  |
+| [$filter](#filter-parameter)   | Filters results (rows).                                                                                                              | [`/users?$filter=startswith(givenName,'J')`][filter-example] |
+| [$format](#format-parameter)   | Returns the results in the specified media format.                                                                                   | [`/users?$format=json`][format-example]                      |
+| [$orderby](#orderby-parameter) | Orders results.                                                                                                                      | [`/users?$orderby=displayName desc`][orderby-example]        |
+| [$search](#search-parameter)   | Returns results based on search criteria.                                                                                            | [`/me/messages?$search=pizza`][search-example]               |
+| [$select](#select-parameter)   | Filters properties (columns).                                                                                                        | [`/users?$select=givenName,surname`][select-example]         |
+| [$skip](#skip-parameter)       | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]                      |
+| [$top](#top-parameter)         | Sets the page size of results.                                                                                                       | [`/users?$top=2`][top-example]                               |
 
 ## Other query parameters
 
-| Name                     | Description | Example
-|:-------------------------|:------------|:---------|
-| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
+| Name                               | Description                                                                                                    | Example                                           |
+| :--------------------------------- | :------------------------------------------------------------------------------------------------------------- | :------------------------------------------------ |
+| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...` |
 
 ## Other OData URL capabilities
 
 The following OData 4.0 capabilities are URL segments, not query parameters.
 
-| Name                     | Description | Example 
-|:-------------------------|:------------|:---------|
-| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` |
-| [$value](/graph/api/profilephoto-get) | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` |
+| Name                                                                | Description                                       | Example                          |
+| :------------------------------------------------------------------ | :------------------------------------------------ | :------------------------------- |
+| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | Updates entities membership to a collection.      | `POST /groups/{id}/members/$ref` |
+| [$value](/graph/api/profilephoto-get)                               | Retrieves or updates the binary value of an item. | `GET /me/photo/$value`           |
 
 ## Encoding query parameters
 
@@ -88,7 +88,6 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
-
 
 The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
 - [application](/graph/api/resources/application?view=graph-rest-beta)
@@ -158,16 +157,16 @@ The following table shows some examples that use the `$filter` query parameter.
 
 > **Note:** Click the examples to try them in [Graph Explorer][graph-explorer].
 
-| Description | Example
-|:------------|:--------|
-| Get all users with the name Mary across multiple properties. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
-| Get all users with mail domain equal to 'hotmail.com' | [`https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@hotmail.com')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
-| Get all the signed-in user's events that start after 7/1/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
-| Get all emails from a specific address received by the signed-in user. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
-| Get all emails received by the signed-in user in April 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
-| Get all unread mail in the signed-in user's Inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| List all Microsoft 365 groups in an organization. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
-| Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
+| Description                                                                                                                           | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| :------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Get all users with the name Mary across multiple properties.                                                                          | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| Get all users with mail domain equal to 'hotmail.com'                                                                                 | [`https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@hotmail.com')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d)                                                                   |
+| Get all the signed-in user's events that start after 7/1/2017.                                                                        | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0)                                                                                                                                                                                                                                               |
+| Get all emails from a specific address received by the signed-in user.                                                                | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0)                                                                                                                                                                                                                    |
+| Get all emails received by the signed-in user in April 2017.                                                                          | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0)                                                                                                                                             |
+| Get all unread mail in the signed-in user's Inbox.                                                                                    | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0)                                                                                                                                                                                                                                                 |
+| List all Microsoft 365 groups in an organization.                                                                                     | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0)                                                                                                                                                                                                                                                             |
+| Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0)                                                                                                                                               |
 
 ## format parameter
 
@@ -192,6 +191,7 @@ For example, the following request returns the users in the organization ordered
 ```http
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
+
 [Try in Graph Explorer][orderby-example]
 
 You can also sort by complex type entities. The following request gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
@@ -199,6 +199,7 @@ You can also sort by complex type entities. The following request gets messages 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
 ```
+
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
 
 To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space; for example, `?$orderby=name%20desc`.
@@ -213,7 +214,6 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 > **Note:** When you specify $filter the server will infer a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers 
 a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query).
-
 
 The following example shows a query filtered by the **subject** and **importance** properties, and then sorted by the **subject**, **importance**, and 
 **receivedDateTime** properties in descending order.
@@ -260,25 +260,23 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 Alternatively, you can search messages by specifying message property names in the following table, that are recognized by the Keyword Query Language (KQL) syntax. These property names correspond to properties defined in the **message** entity of Microsoft Graph. Outlook and other Microsoft 365 applications such as SharePoint support KQL syntax, providing the convenience of a common discovery domain for their data stores.
 
-
-| Searchable email property                | Description | Example 
-|:-------------------------|:------------|:---------|
-| **attachment**           | The names of files attached to an email message.|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
-| **bcc**           | The **bcc** field of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
-| **body**           | The body of an email message.|[`me/messages?$search="body:excitement"`][search-body-example]
-| **cc**           | The **cc** field of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
-| **from**           | The sender of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
-| **hasAttachment** | True if an email message contains an attachment that is not an inline attachment, false otherwise. |[`me/messages?$search="hasAttachments:true"`][search-from-example]
-| **importance**           | The importance of an email message, which a sender can specify when sending a message. The possible values are `low`, `medium`, or `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
-| **kind**           | The type of message. The possible values are `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks`, or `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
-| **participants**           | The **from**, **to**, **cc**, and **bcc** fields of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="participants:danas"`][search-part-example]
-| **received**           | The date that an email message was received by a recipient.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
-| **recipients**           | The **to**, **cc**, and **bcc** fields of an email meesage, specified as an SMTP address, display name, or alias.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
-| **sent**           | The date that an email message was sent by the sender.|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
-| **size**           | The size of an item in bytes.|[`me/messages?$search="size:1..500000"`][search-size-example]
-| **subject**           | The text in the subject line of an email message. .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
-| **to**           | The **to** field of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
-
+| Searchable email property | Description                                                                                                                                                             | Example                                                                                                                   |
+| :------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
+| **attachment**            | The names of files attached to an email message.                                                                                                                        | [`me/messages?$search="attachment:api-catalog.md"`][search-att-example]                                                   |
+| **bcc**                   | The **bcc** field of an email message, specified as an SMTP address, display name, or alias.                                                                            | [`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]                     |
+| **body**                  | The body of an email message.                                                                                                                                           | [`me/messages?$search="body:excitement"`][search-body-example]                                                            |
+| **cc**                    | The **cc** field of an email message, specified as an SMTP address, display name, or alias.                                                                             | [`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]                                        |
+| **from**                  | The sender of an email message, specified as an SMTP address, display name, or alias.                                                                                   | [`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]                                           |
+| **hasAttachment**         | True if an email message contains an attachment that is not an inline attachment, false otherwise.                                                                      | [`me/messages?$search="hasAttachments:true"`][search-from-example]                                                        |
+| **importance**            | The importance of an email message, which a sender can specify when sending a message. The possible values are `low`, `medium`, or `high`.                              | [`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]                                  |
+| **kind**                  | The type of message. The possible values are `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks`, or `voicemail`. | [`me/messages?$search="kind:voicemail"`][search-kind-example]                                                             |
+| **participants**          | The **from**, **to**, **cc**, and **bcc** fields of an email message, specified as an SMTP address, display name, or alias.                                             | [`me/messages?$search="participants:danas"`][search-part-example]                                                         |
+| **received**              | The date that an email message was received by a recipient.                                                                                                             | [`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]                       |
+| **recipients**            | The **to**, **cc**, and **bcc** fields of an email meesage, specified as an SMTP address, display name, or alias.                                                       | [`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example] |
+| **sent**                  | The date that an email message was sent by the sender.                                                                                                                  | [`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]                               |
+| **size**                  | The size of an item in bytes.                                                                                                                                           | [`me/messages?$search="size:1..500000"`][search-size-example]                                                             |
+| **subject**               | The text in the subject line of an email message. .                                                                                                                     | [`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]                                                 |
+| **to**                    | The **to** field of an email message, specified as an SMTP address, display name, or alias.                                                                             | [`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]                                       |
 
 For more information about searchable email properties, KQL syntax, supported operators, and tips on searching, see the following articles:
 
@@ -386,12 +384,12 @@ The syntax of search follows these rules:
 
 The following table shows some examples.
 
-| Object class | Description | Example |
-| ------------ | ----------- | ------- |
-| User | Address book display name of the user. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
-| User | Address book display name or mail of the user. | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
-| Group | Address book display name or description of the group. | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
-| Group | Address book display name on a mail-enabled group. | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
+| Object class | Description                                            | Example                                                                                                              |
+| ------------ | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| User         | Address book display name of the user.                 | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"`                                                 |
+| User         | Address book display name or mail of the user.         | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"`                                 |
+| Group        | Address book display name or description of the group. | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
+| Group        | Address book display name on a mail-enabled group.     | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"`                 |
 
 Both the string inputs you provide in `$search`, as well as the searchable properties, are split up into parts by spaces, different casing, and character types (numbers and special characters).
 
@@ -419,6 +417,7 @@ For example, the following request returns events for the user sorted by date cr
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
+
 [Try in Graph Explorer][skip-example]
 
 > **Note:** Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
@@ -444,7 +443,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
 [Try in Graph Explorer][top-example]
-
 
 ## Error handling for query parameters
 
@@ -500,8 +498,6 @@ However, it is important to note that query parameters specified in a request mi
 
 [search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.0
 [search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
-
-
 
 ## See also
 

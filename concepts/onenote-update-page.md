@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update OneNote page content"
 description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
@@ -10,13 +10,11 @@ ms.prod: "onenote"
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
-
 To update the content of a OneNote page, you send a PATCH request to the page's *content* endpoint:
 
 `PATCH ../notes/pages/{id}/content`</p>
 
 Send a JSON change object in the message body. If the request is successful, Microsoft Graph returns a 204 HTTP status code.
-
 
 <a name="request-uri"></a>
 
@@ -36,12 +34,9 @@ Then append the page's *content* endpoint:
 
 The **data-id** and **id** values are used as **target** identifiers for the elements you want to update.
 
- 
 Your full request URI will look like this:<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
-
 Learn more about the [service root URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
-
 
 <a name="message-body"></a>
 
@@ -74,7 +69,6 @@ The following array defines two changes. The first inserts an image above a para
 
 See [more examples](#example-requests).
 
-
 ### Attributes for JSON change objects
 
 Use the **target**, **action**, **position**, and **content** attributes to define JSON objects for PATCH requests.
@@ -83,41 +77,41 @@ Use the **target**, **action**, **position**, and **content** attributes to defi
 
 The element to update. The value must be one of the following identifiers:
 
-| Identifier | Description |  
-|------|------|  
-| #{data-id} | <p>This ID is optionally defined on elements in the input HTML when [creating a page](onenote-create-page.md) or [updating a page](onenote-update-page.md). Prefix the value with a #.</p><p> Example:<br/>`'target':'#intro'` targets the element `<div data-id="intro" ...>`</p> |  
-| id | <p>This is the [generated ID](#generated-ids) from Microsoft Graph, and is required for most replace operations. Do not prefix with a #.</p><p> Example:<br/>`'target':'div:{33f8a2...}{37}'` targets the element `<div id="div:{33f8a2...}{37}" ...>`</p><p>Don't confuse these with any **id** values defined in the [input HTML](onenote-input-output-html.md). All **id** values sent in the input HTML are discarded.</p> |  
-| body | The keyword that targets the first div on the page. Do not prefix with a #. |  
-| title | The keyword that targets the page title. Do not prefix with a #. |  
- 
+| Identifier | Description                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| #{data-id} | <p>This ID is optionally defined on elements in the input HTML when [creating a page](onenote-create-page.md) or [updating a page](onenote-update-page.md). Prefix the value with a #.</p><p> Example:<br/>`'target':'#intro'` targets the element `<div data-id="intro" ...>`</p>                                                                                                                                             |
+| id         | <p>This is the [generated ID](#generated-ids) from Microsoft Graph, and is required for most replace operations. Do not prefix with a #.</p><p> Example:<br/>`'target':'div:{33f8a2...}{37}'` targets the element `<div id="div:{33f8a2...}{37}" ...>`</p><p>Don't confuse these with any **id** values defined in the [input HTML](onenote-input-output-html.md). All **id** values sent in the input HTML are discarded.</p> |
+| body       | The keyword that targets the first div on the page. Do not prefix with a #.                                                                                                                                                                                                                                                                                                                                                    |
+| title      | The keyword that targets the page title. Do not prefix with a #.                                                                                                                                                                                                                                                                                                                                                               |
+
 #### action
 
 The action to perform on the target element. See [supported actions for elements](#supported-elements-and-actions).
 
-| Action | Description |  
-|------|------|  
-| append | <p>Adds the supplied content to the target as a first or last child, as determined by the **position** attribute.</p><p>Applies only to **body**, **div**, **ol**, and **ul** elements.</p> |  
-| insert | Adds the supplied content as a sibling before or after the target, as determined by the **position** attribute. |  
-| prepend | <p>Adds the supplied content to the target as a first child. Shortcut for **append** + **before**.</p><p>Applies only to **body**, **div**, **ol**, and **ul** elements.</p> |  
-| replace | <p>Replaces the target with the supplied content.</p><p>Most **replace** actions require using the [generated ID](#generated-ids) for the target (except **img** and **object** elements within a div, which also support using **data-id**).</p> |  
- 
+| Action  | Description                                                                                                                                                                                                                                       |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| append  | <p>Adds the supplied content to the target as a first or last child, as determined by the **position** attribute.</p><p>Applies only to **body**, **div**, **ol**, and **ul** elements.</p>                                                       |
+| insert  | Adds the supplied content as a sibling before or after the target, as determined by the **position** attribute.                                                                                                                                   |
+| prepend | <p>Adds the supplied content to the target as a first child. Shortcut for **append** + **before**.</p><p>Applies only to **body**, **div**, **ol**, and **ul** elements.</p>                                                                      |
+| replace | <p>Replaces the target with the supplied content.</p><p>Most **replace** actions require using the [generated ID](#generated-ids) for the target (except **img** and **object** elements within a div, which also support using **data-id**).</p> |
+
 #### position
 
 The location to add the supplied content, relative to the target element. Defaults to **after** if omitted.
 
-| Position | Description |  
-|------|------|  
-| after (default) |<p>With **append**: The last child of the target element.</p><p>With **insert**: The subsequent sibling of the target element.</p> |
-| before | <p>With **append**: The first child of the target element.</p><p>With **insert**: The preceding sibling of the target element.</p> |
+| Position        | Description                                                                                                                        |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| after (default) | <p>With **append**: The last child of the target element.</p><p>With **insert**: The subsequent sibling of the target element.</p> |
+| before          | <p>With **append**: The first child of the target element.</p><p>With **insert**: The preceding sibling of the target element.</p> |
 
 #### content
 
 A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the `multipart/form-data` content type with a "Commands" part (see an [example](#multipart-request-with-binary-content)). 
- 
 
 <a name="generated-ids"></a>
 
 ### Generated IDs
+
 Microsoft Graph generates **id** values for the elements on the page that can be updated. To get generated IDs, use the `includeIDs=true` query string expression in your GET request:
 
 `GET ../notes/pages/{page-id}/content?includeIDs=true` 
@@ -133,7 +127,7 @@ The following example shows generated IDs for a paragraph and an image in the [o
 ```
 
 Generated **id** values might change after a page update, so you should get the current values before building a PATCH request that uses them.
- 
+
 You can specify target elements by using the **data-id** or **id** value, as follows:
 
 - For **append** and **insert** actions, you can use either ID as the target value.
@@ -160,17 +154,17 @@ The following example uses the **id** value for the target. Don't use the # pref
 
 Many elements on the page can be updated, but each element type supports specific actions. The following table shows supported target elements and the update actions that they support.
 
-| Element | Replace | Append child | Insert sibling |  
-|------|:------:|:------:|:------:|  
-| body<br /> (targets first div on the page) | no | **yes** | no |  
-| div<br /> ([absolute positioned](onenote-abs-pos.md)) | no | **yes** | no |  
-| div<br /> (within a div) | **yes**<br/>(id only) | **yes** | **yes** |   
-| img, object<br /> (within a div) | **yes** | no | **yes** |   
-| ol, ul | **yes**<br/>(id only) | **yes** | **yes** |   
-| table | **yes**<br/>(id only) | no | **yes** |   
-| p, li, h1-h6 | **yes**<br/>(id only) | no | **yes** |   
-| title | **yes** | no | no |  
- 
+| Element                                               | Replace               | Append child | Insert sibling |
+| ----------------------------------------------------- | :-------------------: | :----------: | :------------: |
+| body<br /> (targets first div on the page)            | no                    | **yes**      | no             |
+| div<br /> ([absolute positioned](onenote-abs-pos.md)) | no                    | **yes**      | no             |
+| div<br /> (within a div)                              | **yes**<br/>(id only) | **yes**      | **yes**        |
+| img, object<br /> (within a div)                      | **yes**               | no           | **yes**        |
+| ol, ul                                                | **yes**<br/>(id only) | **yes**      | **yes**        |
+| table                                                 | **yes**<br/>(id only) | no           | **yes**        |
+| p, li, h1-h6                                          | **yes**<br/>(id only) | no           | **yes**        |
+| title                                                 | **yes**               | no           | no             |
+
 <br/>
 
 The following elements do not support any update actions.
@@ -184,7 +178,6 @@ The following elements do not support any update actions.
 - a
 - style tags
 
-
 <a name="examples"></a>
 
 ## Example requests
@@ -197,7 +190,6 @@ The following examples include JSON objects used in PATCH requests and complete 
 - [Insert sibling elements](#insert-sibling-elements)
 - [Replace elements](#replace-elements)
 - [Complete PATCH requests](#complete-patch-request-examples)
-
 
 <a name="append-examples"></a>
 
@@ -224,7 +216,6 @@ The following example adds two child nodes to the **div1** element. It adds an i
   }
 ]
 ```
- 
 
 #### Append to the *body* element
 
@@ -246,7 +237,6 @@ The following example adds two paragraphs as the first child and the last child 
   }
 ]
 ```
- 
 
 #### Append to a list
 
@@ -261,7 +251,6 @@ The following example adds a list item as a last child to the target list. The *
   }
 ]
 ```
- 
 
 <a name="insert-examples"></a>
 
@@ -288,7 +277,6 @@ The following example adds two sibling nodes to the page. It adds an image above
   }
 ]
 ```
- 
 
 <a name="replace-examples"></a>
 
@@ -309,7 +297,6 @@ The following example replaces an image with a div by using the image's **data-i
   }
 ]
 ```
- 
 
 #### Update a table 
 
@@ -328,7 +315,6 @@ This example shows how to update a table by using its generated ID. Replacing **
   }
 ]
 ```
- 
 
 #### Change the title 
 
@@ -343,7 +329,6 @@ This example shows how to change the title of a page. To change the title, use t
   }
 ]
 ```
- 
 
 #### Update a to-do item
 
@@ -360,7 +345,6 @@ The following example uses the replace action to change a to-do check box item t
 ```
 
 See [Use note tags](onenote-note-tags.md) for more about using the **data-tag** attribute.
-
 
 <a name="complete-requests"></a>
 
@@ -392,7 +376,7 @@ Authorization: Bearer {token}
   }
 ]
 ```
- 
+
 <a name="multipart"></a>
 
 #### Multipart request with binary content 
@@ -435,20 +419,18 @@ Content-Type: image/png
 
 ## Request and response information for PATCH requests
 
-| Request data | Description |  
-|------|------|  
-| Protocol | All requests use the SSL/TLS HTTPS protocol. |  
-| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions-reference.md).</p> |  
-| Content-Type header | <p>`application/json` for the array of JSON change objects, whether sent directly in the message body or in the required "Commands" part of [multipart requests](#multipart-request-with-binary-content).</p><p>Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where `{part-boundary}` is a string that signals the start and end of each data part.</p> |  
+| Request data         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Protocol             | All requests use the SSL/TLS HTTPS protocol.                                                                                                                                                                                                                                                                                                                                                                                                |
+| Authorization header | <p>`Bearer {token}`, where `{token}` is a valid OAuth 2.0 access token for your registered app.</p><p>If missing or invalid, the request fails with a 401 status code. See [Authentication and permissions](permissions-reference.md).</p>                                                                                                                                                                                                  |
+| Content-Type header  | <p>`application/json` for the array of JSON change objects, whether sent directly in the message body or in the required "Commands" part of [multipart requests](#multipart-request-with-binary-content).</p><p>Multipart requests are required when sending binary data, and use the `multipart/form-data; boundary=part-boundary` content type, where `{part-boundary}` is a string that signals the start and end of each data part.</p> |
 
 <br/> 
 
-| Response data | Description |  
-|------|------|  
-| Success code | A 204 HTTP status code. No JSON data is returned for a PATCH request. |  
-| Errors | Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |  
- 
- 
+| Response data | Description                                                                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Success code  | A 204 HTTP status code. No JSON data is returned for a PATCH request.                                                                         |
+| Errors        | Read [Error codes for OneNote APIs in Microsoft Graph](onenote-error-codes.md) to learn about OneNote errors that Microsoft Graph can return. |
 
 <a name="root-url"></a>
 
@@ -462,11 +444,8 @@ The `version` segment in the URL represents the version of Microsoft Graph that 
 
 `me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Azure AD Graph API](/previous-versions/azure/ad/graph/api/api-catalog).
 
-
 > **Note:**
 > You can get user ids by making a GET request on `https://graph.microsoft.com/v1.0/users`.
-
-
 
 <a name="permissions"></a>
 
@@ -478,7 +457,6 @@ To update OneNote pages, you'll need to request appropriate permissions. Choose 
 - Notes.ReadWrite.All
 
 For more information about permission scopes and how they work, see [OneNote permission scopes](permissions-reference.md).
-   
 
 <a name="see-also"></a>
 

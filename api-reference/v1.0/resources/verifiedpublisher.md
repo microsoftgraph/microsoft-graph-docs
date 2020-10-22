@@ -1,4 +1,4 @@
----
+﻿---
 title: "verifiedPublisher resource type"
 description: "Represents the verified publisher of the application."
 localization_priority: Normal
@@ -15,14 +15,14 @@ Represents the verified publisher of the [application](application.md). For more
 
 ## Properties
 
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-|displayName|String|The verified publisher name from the app publisher's Partner Center account.|
-|verifiedPublisherId|String| The ID of the verified publisher from the app publisher's Partner Center account. |
-|addedDateTime|DateTimeOffSet| The timestamp when the verified publisher was first added or most recently updated. |
-
+| Property            | Type           | Description                                                                         |
+| :------------------ | :------------- | :---------------------------------------------------------------------------------- |
+| displayName         | String         | The verified publisher name from the app publisher's Partner Center account.        |
+| verifiedPublisherId | String         | The ID of the verified publisher from the app publisher's Partner Center account.   |
+| addedDateTime       | DateTimeOffSet | The timestamp when the verified publisher was first added or most recently updated. |
 
 ## JSON representation
+
 Here is a JSON representation of the resource.
 
 <!-- {
@@ -42,9 +42,9 @@ Here is a JSON representation of the resource.
 
 ```
 
-
 <!-- uuid: 7a355221-34dd-4579-9bdd-4c3e1909e1bb
 2020-09-09 20:45:56 UTC -->
+
 <!--
 {
   "type": "#page.annotation",

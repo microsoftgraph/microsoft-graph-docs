@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use workbook functions in Excel with Microsoft Graph"
 description: "You can invoke any workbook function by using the following syntax: `POST /workbook/functions/{function-name}`. You provide the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function."
 localization_priority: Normal
@@ -31,8 +31,8 @@ Inside a cell, the `vlookup` function looks like this:
 
 (See the documentation for the [VLOOKUP Excel function](https://support.office.com/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)
 
-
 ##### Request:
+
 The following example shows how to call the `vlookup` function and pass these parameters with the Excel REST API.
 
 ```http
@@ -75,6 +75,7 @@ Inside a cell, the `median` function looks like this example:
 (See the documentation for the [MEDIAN Excel function](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)
 
 ##### Request
+
 The following example shows how to call the `median` function and one or more input ranges with the Excel REST API.
 
 ```http
@@ -107,6 +108,7 @@ content-type: application/json;odata.metadata
 ```
 
 ## See also
+
 * [Manage sessions in Excel with Microsoft Graph](excel-manage-sessions.md)
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 * [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)

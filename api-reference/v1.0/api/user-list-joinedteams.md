@@ -38,6 +38,7 @@ GET /users/{id}/joinedTeams
 ```
 
 ## Optional query parameters
+
 The [OData Query Parameters](/graph/query-parameters) are not currently supported.
 
 ## Request headers

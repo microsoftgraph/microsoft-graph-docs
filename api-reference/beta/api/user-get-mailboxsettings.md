@@ -85,7 +85,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
 
 ## Optional query parameters
+
 This method supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
 | Name          | Type   | Description               |

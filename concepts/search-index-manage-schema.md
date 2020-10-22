@@ -1,4 +1,4 @@
----
+﻿---
 title: "Register schema for the Microsoft Graph Connection"
 description: "Learn how to use Microsoft Graph to register schema for your Microsoft Graph connection"
 localization_priority: Priority
@@ -18,7 +18,7 @@ The connection [schema](/graph/api/resources/schema?view=graph-rest-beta&preserv
 The following table represents an example of a possible schema for a work ticket system connector.
 
 | Property       | Type             | Searchable         | Queryable          | Retrievable        | Refinable          | Labels               | Aliases    |
-|----------------|------------------|--------------------|--------------------|--------------------|--------------------|----------------------|------------|
+| -------------- | ---------------- | ------------------ | ------------------ | ------------------ | ------------------ | -------------------- | ---------- |
 | ticketId       | String           |                    |                    |                    |                    |                      | ID         |
 | title          | String           | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    | title                |            |
 | createdBy      | String           | :heavy_check_mark: | :heavy_check_mark: |                    |                    | createdBy            | creator    |
@@ -39,6 +39,7 @@ The following table represents an example of a possible schema for a work ticket
 If a property is searchable, its value is added to the full text index. When a user performs a search, we return results if there is a search hit in one of the searchable fields or its [content](search-index-manage-items.md#content).
 
 <!-- markdownlint-disable MD036 -->
+
 ![A search for "design" displaying results for hits against properties and content](./images/search-index-manage-items-schema-1.svg)
 
 *A search for "design" displaying results for hits against properties (`title`, `tags`) and content*
@@ -78,17 +79,17 @@ If a property is refinable, an admin can configure it as a custom filter in the 
 
 A label is a well known tag published by Microsoft that you can add against a property in your schema. Adding a label helps various Microsoft products understand the property and provide a better experience.
 
-| Label                 | Description                                                                          |
-|---------------------- |------------------------------------------------------------------------------------- |
-| title                 | The title of the item that you want shown in search & other experiences              |
-| url                   | The target URL of the item in the data source                                        |
-| createdBy             | Name of the person who created the item in the data source                           |
-| lastModifiedBy        | Name of the person who most recently edited the item in the data source              |
-| authors               | Name of all the people who participated/collaborated on the item in the data source  |
-| createdDateTime       | Date & time that the item was created in the data source                             |
-| lastModifiedDateTime  | Date & time the item was last modified in the data source                            |
-| fileName              | In case of a file, the name of the file in the data source                           |
-| fileExtension         | In case of a file, the extension of the file in the data source                      |
+| Label                | Description                                                                         |
+| -------------------- | ----------------------------------------------------------------------------------- |
+| title                | The title of the item that you want shown in search & other experiences             |
+| url                  | The target URL of the item in the data source                                       |
+| createdBy            | Name of the person who created the item in the data source                          |
+| lastModifiedBy       | Name of the person who most recently edited the item in the data source             |
+| authors              | Name of all the people who participated/collaborated on the item in the data source |
+| createdDateTime      | Date & time that the item was created in the data source                            |
+| lastModifiedDateTime | Date & time the item was last modified in the data source                           |
+| fileName             | In case of a file, the name of the file in the data source                          |
+| fileExtension        | In case of a file, the extension of the file in the data source                     |
 
 For example, the connection property *lastEditedBy* has the same meaning as the Microsoft label *lastModifiedBy*.
 

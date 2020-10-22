@@ -40,7 +40,6 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 | isDefault                                           | Boolean | Indicates if this is the default profile                                                                                                                                |
 | supervisedModeEnabled                               | Boolean | Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.       |
 | supportDepartment                                   | String  | Support department information                                                                                                                                          |
-| passCodeDisabled                                    | Boolean | Indicates if Passcode setup pane is disabled                                                                                                                            |
 | isMandatory                                         | Boolean | Indicates if the profile is mandatory                                                                                                                                   |
 | locationDisabled                                    | Boolean | Indicates if Location service setup pane is disabled                                                                                                                    |
 | supportPhoneNumber                                  | String  | Support phone number                                                                                                                                                    |
@@ -50,7 +49,6 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 | termsAndConditionsDisabled                          | Boolean | Indicates if 'Terms and Conditions' setup pane is disabled                                                                                                              |
 | touchIdDisabled                                     | Boolean | Indicates if touch id setup pane is disabled                                                                                                                            |
 | applePayDisabled                                    | Boolean | Indicates if Apple pay setup pane is disabled                                                                                                                           |
-| zoomDisabled                                        | Boolean | Indicates if zoom setup pane is disabled                                                                                                                                |
 | siriDisabled                                        | Boolean | Indicates if siri setup pane is disabled                                                                                                                                |
 | diagnosticsDisabled                                 | Boolean | Indicates if diagnostics setup pane is disabled                                                                                                                         |
 | displayToneSetupDisabled                            | Boolean | Indicates if displaytone setup screen is disabled                                                                                                                       |
@@ -87,7 +85,6 @@ Here is a JSON representation of the resource.
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "String",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "String",
@@ -97,7 +94,6 @@ Here is a JSON representation of the resource.
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,

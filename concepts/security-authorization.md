@@ -1,4 +1,4 @@
----
+﻿---
 title: "Authorization and the Microsoft Graph Security API"
 description: "Security data accessible via the Microsoft Graph Security API is sensitive and protected by both permissions and Azure Active Directory (Azure AD) roles."
 author: "preetikr"
@@ -32,12 +32,12 @@ If you're calling the Microsoft Graph Security API from a custom or your own app
 
 Security data provided via the Microsoft Graph Security API is sensitive and must be protected by appropriate authentication and authorization mechanisms. The following table lists the steps to register and create a client application that can access the Microsoft Graph Security API.
 
-| **Who** | **Action** |
-|:---------------------|:------------------|
-|Application developer or owner|Register the application as an enterprise application.|
-|Tenant admin|Grant permissions to the application.|
-|Tenant admin|Assign roles to users.|
-|Application developer|Sign in as the user and use the application to access the Microsoft Graph Security API.|
+| **Who**                        | **Action**                                                                              |
+| :----------------------------- | :-------------------------------------------------------------------------------------- |
+| Application developer or owner | Register the application as an enterprise application.                                  |
+| Tenant admin                   | Grant permissions to the application.                                                   |
+| Tenant admin                   | Assign roles to users.                                                                  |
+| Application developer          | Sign in as the user and use the application to access the Microsoft Graph Security API. |
 
 Application registration only defines which permissions the application needs in order to run. It does NOT grant these permissions to the application.
 
@@ -77,13 +77,13 @@ To register your application:
 
     >**Note:** The Microsoft Graph Security API requires the *.Read.All scope for GET queries, and the *.ReadWrite.All scope for PATCH/POST/DELETE queries.
 
-    |Permission | Entity | Supported requests |
-    |:----------|:-------|:-------------------|
-    |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview) | GET |
-    |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview) | GET, POST |
-    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET |
-    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET, POST, PATCH |
-    |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (preview) | GET, POST, PATCH, DELETE|
+| Permission                         | Entity                                                                                                                                                                                                                                                             | Supported requests       |
+| :--------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------- |
+| SecurityActions.Read.All           | &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview)                                                                                                                                                                       | GET                      |
+| SecurityActions.ReadWrite.All      | &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview)                                                                                                                                                                       | GET, POST                |
+| SecurityEvents.Read.All            | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET                      |
+| SecurityEvents.ReadWrite.All       | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET, POST, PATCH         |
+| ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (preview)                                                                                                                                                                              | GET, POST, PATCH, DELETE |
 
 7. Choose **Add permissions**.
 
@@ -140,14 +140,14 @@ To create an authentication code, you'll need:
 
 The following table lists resources that you can use to create an authentication code.
 
-|**Type of application**|**Authentication library**|
-|------------------------|----------------------------|
-|[Desktop apps - iOS](/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Microsoft Authentication Library Preview for iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Desktop apps - Android](/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[Desktop apps - .Net](/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Web apps - JavaScript SPA](/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Microsoft Authentication Library for JavaScript Preview](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Web apps - .NET Web Server](/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
-|[Web apps - NodeJS Web App](/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+| **Type of application**                                                                                  | **Authentication library**                                                                                                               |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [Desktop apps - iOS](/azure/active-directory/develop/guidedsetups/active-directory-ios)                  | [MSAL.framework: Microsoft Authentication Library Preview for iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc) |
+| [Desktop apps - Android](/azure/active-directory/develop/guidedsetups/active-directory-android)          | [Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)                                     |
+| [Desktop apps - .Net](/azure/active-directory/develop/guidedsetups/active-directory-windesktop)          | [Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)                                      |
+| [Web apps - JavaScript SPA](/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa) | [Microsoft Authentication Library for JavaScript Preview](https://github.com/AzureAD/microsoft-authentication-library-for-js)            |
+| [Web apps - .NET Web Server](/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp) | OpenIdConnection, Cookies, SystemWeb                                                                                                     |
+| [Web apps - NodeJS Web App](/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web) |                                                                                                                                          |
 
 For applications that don't use any of the existing libraries, see [Get access on behalf of a user](auth-v2-user.md).
 

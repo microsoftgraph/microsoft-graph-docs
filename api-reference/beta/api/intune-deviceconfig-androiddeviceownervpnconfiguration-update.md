@@ -71,13 +71,15 @@ The following table shows the properties that are required when you create the [
 | role                                        | String                                                                                                                         | Role when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)                                                                                                                                                                                                                                                                                                                                                   |
 | realm                                       | String                                                                                                                         | Realm when connection type is set to Pulse Secure. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)                                                                                                                                                                                                                                                                                                                                                  |
 | servers                                     | [vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection                                                          | List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements. Inherited from [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)                                                                                                                                                                                                                                                  |
-| connectionType                              | [androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)                                       | Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.                                                                                                                                                                                                                                                                                                                  |
+| connectionType                              | [androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)                                       | Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`, `netMotionMobility`.                                                                                                                                                                                                                                                                                             |
 | proxyServer                                 | [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)                                                           | Proxy server.                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | targetedPackageIds                          | String collection                                                                                                              | Targeted App package IDs.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | targetedMobileApps                          | [appListItem](../resources/intune-deviceconfig-applistitem.md) collection                                                      | Targeted mobile apps. This collection can contain a maximum of 500 elements.                                                                                                                                                                                                                                                                                                                                                                                                                |
 | alwaysOn                                    | Boolean                                                                                                                        | Whether or not to enable always-on VPN connection.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | alwaysOnLockdown                            | Boolean                                                                                                                        | If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.                                                                                                                                                                                                                                                                                                                                                                               |
 | microsoftTunnelSiteId                       | String                                                                                                                         | Microsoft Tunnel site ID.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| customData                                  | [keyValue](../resources/intune-deviceconfig-keyvalue.md) collection                                                            | Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.                                                                                                                                                                                                                                                                                                                                                                     |
+| customKeyValueData                          | [keyValuePair](../resources/intune-shared-keyvaluepair.md) collection                                                          | Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.                                                                                                                                                                                                                                                                                                                                                                     |
 
 ## Response
 
@@ -92,7 +94,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2077
+Content-length: 2383
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
@@ -157,7 +159,21 @@ Content-length: 2077
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+  "customData": [
+    {
+      "@odata.type": "microsoft.graph.keyValue",
+      "key": "Key value",
+      "value": "Value value"
+    }
+  ],
+  "customKeyValueData": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
 
@@ -168,7 +184,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2249
+Content-Length: 2555
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
@@ -236,6 +252,20 @@ Content-Length: 2249
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+  "customData": [
+    {
+      "@odata.type": "microsoft.graph.keyValue",
+      "key": "Key value",
+      "value": "Value value"
+    }
+  ],
+  "customKeyValueData": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Scoping application permissions to specific Exchange Online mailboxes"
 description: "To scope an app's application permissions to specific Exchange Online mailboxes, you will need to create application access policies."
 author: "svpsiva"
@@ -27,20 +27,25 @@ To configure an application access policy and limit the scope of application per
 3.	Create an application access policy. 
 
     Run the following command, replacing the **AppId**, **PolicyScopeGroupId**, and **Description** arguments.
-    ```sh 
+
+```sh
     New-ApplicationAccessPolicy -AppId e7e4dbfc-046f-4074-9b3b-2ae8f144f59b -PolicyScopeGroupId EvenUsers@contoso.com -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group EvenUsers."
-    ```
+```
+
 4.	Test the newly created application access policy.
 
     Run the following command, replacing the **AppId** and **Identity** arguments.
-    ```sh
+
+```sh
     Test-ApplicationAccessPolicy -Identity user1@contoso.com -AppId e7e4dbfc-046-4074-9b3b-2ae8f144f59b 
-    ```
+```
+
     The output of this command will indicate whether the app has access to User1’s mailbox.
 
 Note: Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 
 ## Supported permissions and additional resources
+
 Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access of an app that has been granted any of the following application permissions: 
 - Mail.Read
 - Mail.ReadBasic
@@ -57,7 +62,9 @@ Administrators can use ApplicationAccessPolicy cmdlets to control mailbox access
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/exchange/organization/new-applicationaccesspolicy). 
 
 ## Handling API errors
+
 You might encounter the following error when an API call is denied access due to a configured application access policy. 
+
 ```json
 {
     "error": {
@@ -70,9 +77,8 @@ You might encounter the following error when an API call is denied access due to
     }
 }
 ```
+
 If Microsoft Graph API calls from your app return this error, work with the Exchange Online administrator for the organization to ensure that your app has permission to access the mailbox resource.
-
-
 
 ## See also
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get incremental changes for groups"
 description: "Delta query lets you query for additions, deletions, or updates to groups, by way of a series of delta function calls. Delta query enables you discover changes to groups"
 author: "davidmu1"
@@ -40,7 +40,7 @@ Note the following:
 - The optional `$select` query parameter is also used to show how group members can be retrieved together with group objects. This allows tracking of membership changes, such as when users are added or removed from groups.
 - The initial request does not include a state token. State tokens will be used in subsequent requests.
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
@@ -88,7 +88,7 @@ Content-type: application/json
 
 The second request uses the `nextLink` from the previous response, which contains the `skipToken`. Notice the `$select` parameter is not explicitly present as it is encoded in the token.
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
 ```
 
@@ -138,7 +138,7 @@ Content-type: application/json
 
 The third request again uses the latest `nextLink`.
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
 
@@ -176,7 +176,7 @@ Using the `deltaLink` from the [last response](#final-nextlink-response), you wi
 - Group objects for which a property has changed (e.g. **displayName** has been modified).
 - Group objects for which member objects have been added or removed.
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
 ```
 
@@ -247,7 +247,7 @@ The `members@delta` property is included in group objects by default, when the `
 
 Let's assume you are executing the following delta query - either to capture the initial full state of groups, or later on to get delta changes:
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
@@ -328,6 +328,6 @@ We recommend the following best practices to correctly handle this pattern:
 - Always follow `nextLink` and locally merge each group's state: as you receive responses related to the same group, use them to build the full membership list in your application.
 - It is best not to assume a specific sequence of the responses. Assume that the same group could show up anywhere in the `nextLink` sequence and handle that in your merge logic.
 
-
 ## See also
+
 [Microsoft Graph delta query](delta-query-overview.md) overview.

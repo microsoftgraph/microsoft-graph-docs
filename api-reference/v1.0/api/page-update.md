@@ -42,6 +42,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 | Content-Type  | string | `application/json`        |
 
 ## Request body
+
 In the request body, supply an array of [patchContentCommand](../resources/patchcontentcommand.md) objects that represent the changes to the page. For more information and examples, see <a href="/graph/onenote-update-page">Update OneNote pages</a>.
 
 ## Response

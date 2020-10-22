@@ -1,4 +1,4 @@
----
+﻿---
 title: "Enabling human-centric notification experiences using Microsoft Graph notifications "
 description: "The Microsoft Graph notifications platform provides a human-centric approach that gives you the ability to target your users across any and all device endpoints."
 localization_priority: Priority
@@ -48,6 +48,7 @@ Our push-to-pull model ensures that notifications never leave trusted boundaries
 To get started, see the [integration overview](notifications-integration-e2e-overview.md) section to learn how you can integrate user-centric notifications within your application.
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Use the notifications REST API in Microsoft Graph](/graph/api/resources/notifications-api-overview?view=graph-rest-beta)

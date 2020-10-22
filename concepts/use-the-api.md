@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use the Microsoft Graph API"
 description: "Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you register your app and get authentication tokens for a user or service, you can make requests to the Microsoft Graph API."
 author: "jackson-woods"
@@ -25,6 +25,7 @@ To read from or write to a resource such as a user or an email message, you cons
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 {HTTP method} https://graph.microsoft.com/{version}/{resource}?{query-parameters}
 ```
@@ -46,13 +47,13 @@ After you make a request, a response is returned that includes:
 
 Microsoft Graph uses the HTTP method on your request to determine what your request is doing. The API supports the following methods.
 
-|**Method** |**Description**                             |
-| :----- | :------------------------------------------- |
-| GET    | Read data from a resource.                   |
-| POST   | Create a new resource, or perform an action. |
-| PATCH  | Update a resource with new values.           |
-| PUT    | Replace a resource with a new one.           |
-| DELETE | Remove a resource.                           |
+| **Method** | **Description**                              |
+| :--------- | :------------------------------------------- |
+| GET        | Read data from a resource.                   |
+| POST       | Create a new resource, or perform an action. |
+| PATCH      | Update a resource with new values.           |
+| PUT        | Replace a resource with a new one.           |
+| DELETE     | Remove a resource.                           |
 
 * For the CRUD methods `GET` and `DELETE`, no request body is required.
 * The `POST`, `PATCH`, and `PUT` methods require a request body, usually specified in JSON format, that contains additional information, such as the values for properties of the resource.
@@ -89,6 +90,7 @@ For example, adding the following `filter` parameter restricts the messages retu
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
 ```
@@ -100,6 +102,7 @@ Aside from OData query options, some methods require parameter values specified 
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:00.0000000&endDateTime=2019-09-01T17:00:00.0000000
 ```

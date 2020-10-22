@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get Outlook contacts in a shared folder"
 description: "Outlook lets customers share folders with one another and provide read, create, modify, or delete access to individual contact folders. Outlook also allows a customer to delegate another user to act on the customer's behalf."
 author: "angelgolfer-ms"
@@ -21,6 +21,7 @@ As an example, Garth has shared with John a custom contact folder and given John
 You can get a specific contact in the custom contact folder that Garth has shared with John:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/contactFolders/{folder-id}/contacts/{id}
 ```
@@ -32,6 +33,7 @@ On successful completion, you'll get HTTP 200 OK and the [contact](/graph/api/re
 Get all the contacts in Garth's shared contact folder:
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/contactFolders/{folder-id}/contacts
 ```
@@ -43,6 +45,7 @@ On successful completion, you'll get HTTP 200 OK and a collection of [contact](/
 Get the contact folder that Garth has shared with John.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/contactFolders/{folder-id}
 ```
@@ -52,7 +55,6 @@ On successful completion, you'll get HTTP 200 OK and a [contactFolder](/graph/ap
 The same GET capabilities apply if Garth had delegated John his entire mailbox.
 
 If Garth has not shared the contact folder with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error. 
-
 
 ## Next steps
 

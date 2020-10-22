@@ -1,4 +1,4 @@
----
+﻿---
 title: "Calling the Microsoft Graph API"
 description: "To access and manipulate a Microsoft Graph resource, you call and specify the resource URLs using one of the following operations:   "
 localization_priority: Normal
@@ -38,14 +38,18 @@ When using `me`, do not specify the tenant.
 For a list of common requests, see [Overview of Microsoft Graph](overview.md).
 
 ## Microsoft Graph API metadata
+
 The metadata document ($metadata) is published at the service root.
 For example, you can view the service document for the v1.0 and beta versions via the following URLs.
 
 Microsoft Graph API `v1.0` metadata.
+
 ```
 	https://graph.microsoft.com/v1.0/$metadata
 ```
+
 Microsoft Graph API `beta` metadata.
+
 ```
 	https://graph.microsoft.com/beta/$metadata
 ```
@@ -65,14 +69,14 @@ To view the information about a user, you get the `User` entity from the `users`
 For a `User` entity, either the `id` or `userPrincipalName` property can be used as the identifier.
 The following example request uses the `userPrincipalName` value as the user's id. 
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
 If successful, you should get a 200 OK response containing the user resource representation in the payload, as shown as follows:
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 982
@@ -91,19 +95,19 @@ content-length: 982
 }
 ```
 
-
 ## Project from an entity to properties
+
 To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the _select_ query parameter to the previous request.
 For example:
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
 The successful response returns the 200 OK status and a payload of the following format:
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 169
@@ -123,17 +127,18 @@ content-length: 169
 Here, instead of the entire property sets on the `user` entity, only the `aboutMe`, `displayName`, and `skills` properties are returned.
 
 ## Traverse to another resource via relationship
+
 A manager holds a `directReports` relationship with the other users reporting to him or her.
 To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal. 
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
 The successful response returns the 200 OK status and a payload of the following format:
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 152
@@ -153,17 +158,14 @@ Similarly, you can follow a relationship to navigate to related resources.
 For example, the `user => messages` relationship enables traversal from an Azure AD User to a set of Outlook mail messages.
 The following example shows how to do this in a REST API call:
 
-
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/me/messages HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
-    
 The successful response returns the 200 OK status and a payload of the following format:
 
-
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 odata-version: 4.0
@@ -198,17 +200,18 @@ content-length: 147
 ```
 
 ## Project from entities to properties
+
 In addition to projection from a single entity to its properties, you can also apply the similar `select` query option to an entity collection to project them to a collection of some of their properties.
 For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request:
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
 The successful response returns a 200 OK status code and a payload containing the names and types of the shared files, as shown in the following example:
 
-```no-highlight 
+```no-highlight
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/drive/root/children(name,type)",
   "value": [
@@ -229,18 +232,18 @@ The successful response returns a 200 OK status code and a payload containing th
 ```
 
 ## Query a subset of users with the filtering query option
+
 To find the employees of a specific job title within an organization, you can navigate from the users collection and then specify a _filter_ query option.
 An example is shown as follows:
 
-    
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/users/?$filter=jobTitle+eq+%27Helper%27 HTTP/1.1
 Authorization : Bearer <access_token>
 ```
 
 The successful response returns the 200 OK status code and a list of users with the specified job title (`'Helper'`), as shown in the following example:
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
 odata-version: 4.0
@@ -276,9 +279,11 @@ content-length: 986
 ```
 
 ## Call actions or functions
+
 Microsoft Graph also supports _actions_ and _functions_ to manipulate resources in ways that are not a simple fit with standard HTTP methods. 
 For example, the following HTTPS POST request lets the signed-in user (`me`) send an email message:
-```no-highlight 
+
+```no-highlight
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer <access_token>
 content-type: application/json
@@ -313,6 +318,7 @@ content-length: 96
 The request payload contains the input to the `sendMail` action, which is also defined in the $metadata.
 
 ## Use Microsoft Graph client libraries
+
 Like the power and ease of SDKs? While you can always call Microsoft Graph using the REST API, we also provide SDKs for many popular platforms.
 
 Explore our [code samples and SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks).

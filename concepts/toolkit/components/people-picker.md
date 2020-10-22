@@ -1,4 +1,4 @@
----
+﻿---
 title: "People-Picker component"
 description: "You can use the mgt-people-picker web component to search for a specified number of people and render the list of results via Microsoft Graph."
 localization_priority: Normal
@@ -21,15 +21,15 @@ The following example shows the `mgt-people-picker` component. Start searching f
 
 By default, the `mgt-people-picker` component fetches people from the `/me/people` and `/users` endpoints. Use the following attributes to change this behavior.
 
-| Attribute | Property | Description                                                                                                                                                                            |
-| -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| show-max | showMax   | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
-| group-id    | groupId     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
-| type     | type      | The type of entities to search for. Available options are: `person`, `group`, `any`. Default value is `person`. This attribute has no effect if `group-id` property is set.                                                                            |
-| group-type     | groupType      | The group type to search for. Available options are: `unified`, `security`, `mailenabledsecurity`, `distribution`, `any`. Default value is `any`. This attribute has no effect if the `type` property is set to `person`.                                                                           |
-|  selected-people  | selectedPeople     | An array of selected people. Set this value to select people programmatically.|
-| people   | people    | An array of people found and rendered in the search result |
-| default-selected-user-ids | defaultSelectedUserIds | When provided a string of comma-separated Microsoft Graph user IDs, the component renders the respective users as selected upon initialization.
+| Attribute                 | Property               | Description                                                                                                                                                                                                               |
+| ------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| show-max                  | showMax                | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                                                                  |
+| group-id                  | groupId                | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                                                               |
+| type                      | type                   | The type of entities to search for. Available options are: `person`, `group`, `any`. Default value is `person`. This attribute has no effect if `group-id` property is set.                                               |
+| group-type                | groupType              | The group type to search for. Available options are: `unified`, `security`, `mailenabledsecurity`, `distribution`, `any`. Default value is `any`. This attribute has no effect if the `type` property is set to `person`. |
+| selected-people           | selectedPeople         | An array of selected people. Set this value to select people programmatically.                                                                                                                                            |
+| people                    | people                 | An array of people found and rendered in the search result                                                                                                                                                                |
+| default-selected-user-ids | defaultSelectedUserIds | When provided a string of comma-separated Microsoft Graph user IDs, the component renders the respective users as selected upon initialization.                                                                           |
 
 The following is a `show-max` example.
 
@@ -47,27 +47,27 @@ You can populate selected people data by doing one of the following:
 
 - Setting the `selectedPeople` property directly, as shown in the following example.  
 
-    ```javascript
+```javascript
     // personObject = User or Person from Microsoft Graph
     document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
-    ```
+```
 
 - Using the `selectUsersById()` method, which accepts an array of Microsoft graph [user ids](/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
 
      >**Note:** If no user is found for an `id`, no data will be rendered for that `id`.
 
-    ```javascript
+```javascript
     // id = Mirosoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
-    ```
+```
 
 ## Events
 
 The following events are fired from the component.
 
-| Event | Description |
-| --- | --- |
-| `selectionChanged` | The user added or removed a person from the list of selected/picked people.|
+| Event              | Description                                                                 |
+| ------------------ | --------------------------------------------------------------------------- |
+| `selectionChanged` | The user added or removed a person from the list of selected/picked people. |
 
 ## CSS custom properties
 
@@ -102,14 +102,14 @@ mgt-people-picker {
 
  `mgt-people-picker` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
-| Data type | Data context | Description |
-| --- | --- | --- |
-| default | null: no data | The template used to override the rendering of the entire component.
-| loading | null: no data | The template used to render the state of picker while request to graph is being made. |
-| error | null: no data | The template used if user search returns no users. |
-| no-data | null: no data | An alternative template used if user search returns no users. |
-| selected-person | person: The person details object | The template to render selected people. |
-| person | person: The person details object | The template to render people in the dropdown. |
+| Data type       | Data context                      | Description                                                                           |
+| --------------- | --------------------------------- | ------------------------------------------------------------------------------------- |
+| default         | null: no data                     | The template used to override the rendering of the entire component.                  |
+| loading         | null: no data                     | The template used to render the state of picker while request to graph is being made. |
+| error           | null: no data                     | The template used if user search returns no users.                                    |
+| no-data         | null: no data                     | An alternative template used if user search returns no users.                         |
+| selected-person | person: The person details object | The template to render selected people.                                               |
+| person          | person: The person details object | The template to render people in the dropdown.                                        |
 
 The following examples shows how to use the `error` template.
 
@@ -125,13 +125,13 @@ The following examples shows how to use the `error` template.
 
 This component uses the following Microsoft Graph APIs and permissions.
 
-| API                                                                                                              | Permission  |
-| ---------------------------------------------------------------------------------------------------------------- | ----------- |
+| API                                                                              | Permission         |
+| -------------------------------------------------------------------------------- | ------------------ |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
-| [/users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
-| [/groups](/group-list?view=graph-rest-beta)  | Group.Read.All |
-| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All        |
-| [/users/${userPrincipleName} ](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
+| [/users](/graph/api/user-list?view=graph-rest-1.0)                               | User.ReadBasic.All |
+| [/groups](/group-list?view=graph-rest-beta)                                      | Group.Read.All     |
+| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/users/${userPrincipleName} ](/graph/api/user-get?view=graph-rest-1.0)          | User.Read          |
 
 ## Authentication
 
@@ -141,14 +141,14 @@ The control uses the global authentication provider described in the [authentica
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
 
-| Method | Description |
-| - | - |
-| renderInput | Renders the input text box. |
-| renderSelectedPeople | Renders the selected people tokens. |
-| renderSelectedPerson | Renders an individual person token. |
-| renderFlyout | Renders the flyout chrome. |
-| renderFlyoutContent | Renders the appropriate state in the results flyout. |
-| renderLoading | Renders the loading state. |
-| renderNoData | Renders the state when no results are found for the search query. |
-| renderSearchResults | Renders the list of search results. |
-| renderPersonResult | Renders an individual person search result. |
+| Method               | Description                                                       |
+| -------------------- | ----------------------------------------------------------------- |
+| renderInput          | Renders the input text box.                                       |
+| renderSelectedPeople | Renders the selected people tokens.                               |
+| renderSelectedPerson | Renders an individual person token.                               |
+| renderFlyout         | Renders the flyout chrome.                                        |
+| renderFlyoutContent  | Renders the appropriate state in the results flyout.              |
+| renderLoading        | Renders the loading state.                                        |
+| renderNoData         | Renders the state when no results are found for the search query. |
+| renderSearchResults  | Renders the list of search results.                               |
+| renderPersonResult   | Renders an individual person search result.                       |

@@ -21,10 +21,15 @@ Inherits from [deliveryOptimizationBandwidth](../resources/intune-deviceconfig-d
 
 ## Properties
 
-| Property                             | Type  | Description                                                                                                                                                                                                                                                                                                                                                                  |
-| :----------------------------------- | :---- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| maximumBackgroundBandwidthPercentage | Int32 | Specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth (0-100). Valid values 0 to 100. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for background downloads. Valid values 0 to 100 |
-| maximumForegroundBandwidthPercentage | Int32 | Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth (0-100). Valid values 0 to 100. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. Valid values 0 to 100 |
+| Property                             | Type  | Description                                                                                                                                                                                                  |
+| :----------------------------------- | :---- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| maximumBackgroundBandwidthPercentage | Int32 | Specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth (0-100). Valid values 0 to 100 |
+
+The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for background downloads. Valid values 0 to 100|
+
+| maximumForegroundBandwidthPercentage | Int32 | Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth (0-100). Valid values 0 to 100 |
+
+The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. Valid values 0 to 100|
 
 ## Relationships
 

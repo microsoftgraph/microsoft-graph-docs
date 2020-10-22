@@ -43,6 +43,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ```
 
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 You can use the `$filter` query parameter to filter shared items. For example, based on **type**:

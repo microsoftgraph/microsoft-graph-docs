@@ -1,4 +1,4 @@
----
+﻿---
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
 author: "davidmu1"
@@ -13,9 +13,8 @@ The Microsoft Graph API uses a webhook mechanism to deliver change notifications
 
 After Microsoft Graph accepts the subscription request, it pushes change notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
 
-
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
- 
+
 > [!div class="nextstepaction"]
 > [Tutorial: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
 
@@ -159,10 +158,10 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
 1. Microsoft Graph encodes a validation token and includes it in a POST request to the notification URL:
 
-    ``` http
+```http
     Content-Type: text/plain; charset=utf-8
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
-    ```
+```
 
 1. The client must properly decode the `validationToken` provided in the preceding step, and escape any HTML/JavaScript.
 
@@ -282,20 +281,20 @@ You can optionally configure the firewall that protects your notification URL to
 
 The following table lists the latency to expect between an event happening in the service and the delivery of the change notification.
 
-| Resource | Average latency | Maximum latency |
-|:-----|:-----|:-----|
-|[callRecord][] | Less than 15 minutes | 60 minutes |
-|[chatMessage][] | Less than 10 seconds | 1 minute |
-|[contact][] | Unknown | Unknown |
-|[driveItem][] | Less than 1 minute | 5 minutes |
-|[event][] | Unknown | Unknown |
-|[group][] | Less than 2 minutes | 15 minutes |
-|[conversation][] | Unknown | Unknown |
-|[list][] | Less than 1 minute | 5 minutes |
-|[message][] | Unknown | Unknown |
-|[alert][] | Less than 3 minutes | 5 minutes |
-|[presence][] (preview) | Less than 10 seconds | 1 minute |
-|[user][] | Less than 2 minutes | 15 minutes |
+| Resource               | Average latency      | Maximum latency |
+| :--------------------- | :------------------- | :-------------- |
+| [callRecord][]         | Less than 15 minutes | 60 minutes      |
+| [chatMessage][]        | Less than 10 seconds | 1 minute        |
+| [contact][]            | Unknown              | Unknown         |
+| [driveItem][]          | Less than 1 minute   | 5 minutes       |
+| [event][]              | Unknown              | Unknown         |
+| [group][]              | Less than 2 minutes  | 15 minutes      |
+| [conversation][]       | Unknown              | Unknown         |
+| [list][]               | Less than 1 minute   | 5 minutes       |
+| [message][]            | Unknown              | Unknown         |
+| [alert][]              | Less than 3 minutes  | 5 minutes       |
+| [presence][] (preview) | Less than 10 seconds | 1 minute        |
+| [user][]               | Less than 2 minutes  | 15 minutes      |
 
 >**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 

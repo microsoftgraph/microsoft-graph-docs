@@ -1,4 +1,4 @@
----
+﻿---
 title: "b2xIdentityUserFlow resource type"
 description: "Represents a user flow within an Azure Active Directory tenant."
 localization_priority: Priority
@@ -19,29 +19,29 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List user flows](../api/identitycontainer-list-b2xuserflows.md)|b2xIdentityUserFlow collection|Retrieve all B2X user flows.|
-|[Get user flow](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Retrieve properties of a B2X user flow.|
-|[Create user flow](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Create a new B2X user flow.|
-|[Delete user flow](../api/b2xidentityuserflow-delete.md)|None|Delete a B2X user flow.|
-|[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2X user flow.|
-|[Add identity provider](../api/b2xidentityuserflow-post-identityproviders.md)|None|Add an identity provider to a B2X user flow.|
-|[Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a B2X user flow.|
+| Method                                                                             | Return Type                                                     | Description                                         |
+| :--------------------------------------------------------------------------------- | :-------------------------------------------------------------- | :-------------------------------------------------- |
+| [List user flows](../api/identitycontainer-list-b2xuserflows.md)                   | b2xIdentityUserFlow collection                                  | Retrieve all B2X user flows.                        |
+| [Get user flow](../api/b2xidentityuserflow-get.md)                                 | b2xIdentityUserFlow                                             | Retrieve properties of a B2X user flow.             |
+| [Create user flow](../api/identitycontainer-post-b2xuserflows.md)                  | b2xIdentityUserFlow                                             | Create a new B2X user flow.                         |
+| [Delete user flow](../api/b2xidentityuserflow-delete.md)                           | None                                                            | Delete a B2X user flow.                             |
+| [List identity providers](../api/b2xidentityuserflow-list-identityproviders.md)    | [identityProvider](../resources/identityProvider.md) collection | Retrieve all identity providers in a B2X user flow. |
+| [Add identity provider](../api/b2xidentityuserflow-post-identityproviders.md)      | None                                                            | Add an identity provider to a B2X user flow.        |
+| [Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md) | None                                                            | Remove an identity provider from a B2X user flow.   |
 
 ## Properties
 
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2X_1_` after creation.|
-|userFlowType|String|The type of user flow. For self-service sign up user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.|
-|userFlowTypeVersion|Single|The version of the user flow. For B2X user flows, the version is always `1`.|
+| Property            | Type   | Description                                                                                                                                                   |
+| :------------------ | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                  | String | The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2X_1_` after creation. |
+| userFlowType        | String | The type of user flow. For self-service sign up user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.                     |
+| userFlowTypeVersion | Single | The version of the user flow. For B2X user flows, the version is always `1`.                                                                                  |
 
 ## Relationships
 
-| Relationship       | Type  |Description|
-|:---------------|:--------|:----------|
-|identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
+| Relationship      | Type                                                            | Description                                       |
+| :---------------- | :-------------------------------------------------------------- | :------------------------------------------------ |
+| identityProviders | [identityProvider](../resources/identityprovider.md) collection | The identity providers included in the user flow. |
 
 ## JSON representation
 

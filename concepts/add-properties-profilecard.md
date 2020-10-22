@@ -1,4 +1,4 @@
----
+﻿---
 title: "Customize the profile card using the profile API in Microsoft Graph (preview)"
 description: "This article describes how you can customize the profile card by making additional attributes visible, or adding custom attributes."
 author: "PollyNincevic"
@@ -35,14 +35,14 @@ You can make the following attributes from Azure Active Directory (Azure AD) vis
 
 The following table shows how the Azure AD attributes correspond with properties of the Microsoft Graph [user](/graph/api/resources/user?view=graph-rest-beta) entity.
 
-|Azure AD attribute |User entity property|
-|:---------------|:----------|
-|UserPrincipalName|userPrincipalName |
-|Fax|faxNumber|
-|StreetAddress|streetAddress|
-|PostalCode|postalCode|
-|StateOrProvince|state
-|Alias|mailNickname
+| Azure AD attribute | User entity property |
+| :----------------- | :------------------- |
+| UserPrincipalName  | userPrincipalName    |
+| Fax                | faxNumber            |
+| StreetAddress      | streetAddress        |
+| PostalCode         | postalCode           |
+| StateOrProvince    | state                |
+| Alias              | mailNickname         |
 
 You can add any of these attributes to the profile card by configuring your [organization settings](/graph/api/resources/organizationsettings?view=graph-rest-beta) and adding the attribute as the *directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
 
@@ -84,23 +84,23 @@ Custom properties are not searchable and can't be used to search for people acro
 
 The following table shows how the Azure AD custom extension attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta) resource. These Azure AD custom extension attribute names are *not case-sensitive*:
 
-|Azure AD custom extension attribute | Value to specify as directoryPropertyName |
-|:--------------------|:-----------------|
-| extensionAttribute1 | customAttribute1 |
-| extensionAttribute2 | customAttribute2 |
-| extensionAttribute3 | customAttribute3 |
-| extensionAttribute4 | customAttribute4 |
-| extensionAttribute5 | customAttribute5 |
-| extensionAttribute6 | customAttribute6 |
-| extensionAttribute7 | customAttribute7 |
-| extensionAttribute8 | customAttribute8 |
-| extensionAttribute9 | customAttribute9 |
-| extensionAttribute10 | customAttribute10 |
-| extensionAttribute11 | customAttribute11 |
-| extensionAttribute12 | customAttribute12 |
-| extensionAttribute13 | customAttribute13 |
-| extensionAttribute14 | customAttribute14 |
-| extensionAttribute15 | customAttribute15 |
+| Azure AD custom extension attribute | Value to specify as directoryPropertyName |
+| :---------------------------------- | :---------------------------------------- |
+| extensionAttribute1                 | customAttribute1                          |
+| extensionAttribute2                 | customAttribute2                          |
+| extensionAttribute3                 | customAttribute3                          |
+| extensionAttribute4                 | customAttribute4                          |
+| extensionAttribute5                 | customAttribute5                          |
+| extensionAttribute6                 | customAttribute6                          |
+| extensionAttribute7                 | customAttribute7                          |
+| extensionAttribute8                 | customAttribute8                          |
+| extensionAttribute9                 | customAttribute9                          |
+| extensionAttribute10                | customAttribute10                         |
+| extensionAttribute11                | customAttribute11                         |
+| extensionAttribute12                | customAttribute12                         |
+| extensionAttribute13                | customAttribute13                         |
+| extensionAttribute14                | customAttribute14                         |
+| extensionAttribute15                | customAttribute15                         |
 
 ## Example
 

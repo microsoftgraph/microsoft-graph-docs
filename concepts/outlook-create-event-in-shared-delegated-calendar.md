@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create Outlook events in a shared or delegated calendar"
 description: "In Outlook, customers can share a calendar with other users and let them view or modify events in that calendar. Customers can also grant a delegate to act on their  behalf, to receive or respond to meeting requests, or create or change items in the calendar."
 author: "angelgolfer-ms"
@@ -32,33 +32,38 @@ If Alex has shared and not delegated his calendar with Adele:
 
 Signed in as Adele, get the calendars she has access to and identify the one Alex has delegated to her, so to use it in the next step to create an event in that calendar. 
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_Adele_calendars"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendars
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-adele-calendars-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-adele-calendars-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-adele-calendars-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-adele-calendars-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 Notice a successful response includes the response code HTTP 200, Adele's own primary calendar, and a copy of the calendar delegated by Alex in Adele's mailbox, with the following properties:
 
@@ -73,6 +78,7 @@ Notice a successful response includes the response code HTTP 200, Adele's own pr
   "@odata.type": "microsoft.graph.calendar",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -122,6 +128,7 @@ Signed in as Adele, use the calendar ID obtained from step 1 to create an [event
   "sampleKeys": ["AAMkADRpAABf0JlzAAA="],
   "name": "create_send_invitation"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/calendars/AAMkADRpAABf0JlzAAA=/events
 
@@ -177,6 +184,7 @@ Notice a successful response includes HTTP 201 and the following [event](/graph/
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -272,41 +280,45 @@ Content-type: application/json
 }
 ```
 
-
 ## Step 3: Christie receives meeting request and inspects the associated event in her calendar
 
 Upon delivering the meeting request, Outlook automatically creates a tentative [event](/graph/api/resources/event?view=graph-rest-1.0) in Christie's calendar.
 
 Signed in as Christie, get the [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) and **event** that are associated with the meeting request from step 2:
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADADVj3fyAABZ5hYdAAA="],
   "name": "get_eventmessage_and_event"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADADVj3fyAABZ5hYdAAA=?$expand=microsoft.graph.eventMessage/event
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-eventmessage-and-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-and-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-and-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-eventmessage-and-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 Notice a successful response includes the response code HTTP 200 and the following [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) properties:
 
@@ -328,6 +340,7 @@ Adele's identity appears only in the **sender** property of the **eventMessage**
   "truncated": true,
   "@odata.type": "microsoft.graph.eventmessage"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -497,18 +510,18 @@ Content-type: application/json
 }
 ```
 
-
 ## Step 4: Christie responds to the meeting request
 
 Signed in as Christie, reply to the **event** as tentative, and include a reply message in the response:
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADADVj3fyAABZ5ieyAAA="],
   "name": "event_reply_tentativelyaccept"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkADADVj3fyAABZ5ieyAAA=/tentativelyAccept
 Content-type: application/json
@@ -518,24 +531,28 @@ Content-type: application/json
   "sendResponse": true
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-reply-tentativelyaccept-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-reply-tentativelyaccept-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/event-reply-tentativelyaccept-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/event-reply-tentativelyaccept-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 A successful response returns HTTP 202 Accepted.
 
@@ -543,10 +560,10 @@ A successful response returns HTTP 202 Accepted.
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```
-
 
 ## Step 5: Adele receives the response message
 
@@ -554,34 +571,39 @@ Because Adele is a delegate of Alex' primary calendar, Adele receives all meetin
 
 Signed in as Adele, get the [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) that represents the response from Christie in step 4:
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADI4oeRpAABf0HJUAAA="],
   "name": "message_get_reply"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADI4oeRpAABf0HJUAAA=
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-get-reply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-get-reply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/message-get-reply-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/message-get-reply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 Notice a successful response includes the response code HTTP 200 and the following [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) properties:
 
@@ -595,6 +617,7 @@ Notice a successful response includes the response code HTTP 200 and the followi
   "truncated": true,
   "@odata.type": "microsoft.graph.eventmessage"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -664,34 +687,39 @@ Because Alex kept the default to have Outlook direct all meeting requests and re
 
 Signed in as Alex, get the [event](/graph/api/resources/event?view=graph-rest-1.0) that Adele created in step 2 and get responses from the **attendees** property:
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADJXJGu0AABf02qwAAA="],
   "name": "event_get_responses"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendar/events/AAMkADJXJGu0AABf02qwAAA=
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-get-responses-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-get-responses-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/event-get-responses-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/event-get-responses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 Notice a successful response includes the response code HTTP 200 and the following [event](/graph/api/resources/event?view=graph-rest-1.0) properties:
 
@@ -709,6 +737,7 @@ Notice a successful response includes the response code HTTP 200 and the followi
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -803,7 +832,6 @@ Content-type: application/json
     }
 }
 ```
-
 
 ## Next steps
 

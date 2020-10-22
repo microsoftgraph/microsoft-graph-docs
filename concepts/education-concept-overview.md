@@ -1,4 +1,4 @@
----
+﻿---
 title: "Education API overview"
 description: "The education API in Microsoft Graph enhances Microsoft 365 resources with information that is relevant for education scenarios, including information about schools, classes, users (students and teachers), assignments, and submissions. This makes it easy for you to build solutions that integrate with educational resources for various school and classroom scenarios."
 author: "mmast-msft"
@@ -25,9 +25,7 @@ The following are some of the scenarios that the roster APIs enable:
 - [Get all users in a class](/graph/api/educationclass-list-members?view=graph-rest-1.0)
 - [Get all the classes I teach](/graph/api/educationuser-list-classes?view=graph-rest-1.0)
 
-
 ### Use Microsoft Teams to create class assignments in an assignments tab
-
 
 You can use the assignments API to create a web app that manages class assignments and then integrate your app into Microsoft Teams on a new custom tab.  
 
@@ -39,14 +37,12 @@ The following image shows a web app for managing assignments in an Assignments c
 
 ![Screenshot of an Assignments tab in Microsoft Teams for a Science - Biology class](images/assignmentsinteams.png)
 
-
 With the assignment API, your app can interact with the assignment service outside of Microsoft Teams. Microsoft Teams will handle distribution, due dates, and grading while your system can provide a rich learning experience to students.
 The following are examples of a few scenarios enabled by the assignments API:
 
 - [Add an assignment that links to your application](/graph/api/educationclass-post-assignments?view=graph-rest-beta) 
 - [Assign outcomes like grades to individual students for assignments linked to your application](/graph/api/educationoutcome-update?view=graph-rest-beta)
 - [Create a student dashboard to show which assignments are due by when](/graph/api/educationclass-list-assignments?view=graph-rest-beta)
-
 
 ### Enable school admins to manage identity and roster sync using School Data Sync Management (preview)
 
@@ -58,11 +54,11 @@ School Data Sync management APIs support end-to-end scenarios for managing sync;
 - Manage sync lifecycle with [pause](/graph/api/educationsynchronizationprofile-pause?view=graph-rest-beta), [resume](/graph/api/educationsynchronizationprofile-resume?view=graph-rest-beta) and [reset](/graph/api/educationsynchronizationprofile-reset?view=graph-rest-beta) operations
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Education API in Microsoft Graph v1.0](/graph/api/resources/education-overview?view=graph-rest-1.0)
 - [Education API in Microsoft Graph beta](/graph/api/resources/education-overview?view=graph-rest-beta)
-
 
 ## Next Steps
 
@@ -74,6 +70,3 @@ Looking for the API reference for this service?
 - Explore the following education-related samples:
   - [.NET sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
   - [Sample for profile management APIs](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
-
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 title: "List all identityProviders in a b2xIdentityUserFlow"
 description: "List all identityProviders in a b2xIdentityUserFlow."
 localization_priority: Normal

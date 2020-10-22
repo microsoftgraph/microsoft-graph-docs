@@ -1,4 +1,4 @@
----
+﻿---
 title: "Use REST APIs to access mailboxes in Exchange hybrid deployments (preview)"
 description: "Microsoft Graph has always provided access to customer mailboxes in the cloud on Exchange Online as part of Microsoft 365."
 localization_priority: Priority
@@ -14,7 +14,6 @@ REST API integration with Microsoft 365. If your app uses v1.0 of the
 [Contacts](/graph/api/resources/contact?view=graph-rest-1.0) API, you will now also find a seamless 
 authentication and application experience in _hybrid_ deployments, regardless of whether the mailbox 
 is on-premises or in the cloud, provided that the deployment meets specific [requirements](#requirements-for-the-rest-api-to-work-in-hybrid-deployments). 
-
 
 Behind the scenes, when Microsoft Graph identifies that a REST API call is attempting to access an on-premises 
 mailbox in a hybrid deployment, it proxies the REST request to an on-premises REST endpoint which then processes
@@ -49,7 +48,6 @@ be aware of the following deployment requirements:
 
   - From a DNS perspective, the Autodiscover namespace and on-premises client namespace must have Internet DNS records. 
   - If you have a firewall or application gateway that inspects and restricts access, update the appropriate settings to allow discovery and access.
-
 
 IT administrators can find more information in the following resources:
 

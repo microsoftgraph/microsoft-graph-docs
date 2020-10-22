@@ -1,4 +1,4 @@
----
+﻿---
 title: "Overview of the Microsoft Search API in Microsoft Graph (preview)"
 description: "Use the Microsoft Search API to index content and add search across your Office and indexed content to your apps."
 localization_priority: Priority
@@ -14,6 +14,7 @@ Microsoft Search is an enterprise search engine that delivers productivity gains
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 <!-- markdownlint-disable MD026 -->
+
 ## Why use the Microsoft Search API?
 
 ### One unified search endpoint for Microsoft cloud data
@@ -55,7 +56,7 @@ Looking for the API reference for this service?
   - [Search external content](search-concept-custom-types.md)
   - [Sort search results](search-concept-sort.md)
   - [Refine search results](search-concept-aggregation.md)
-  
+
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
 

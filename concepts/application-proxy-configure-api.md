@@ -1,4 +1,4 @@
----
+﻿---
 title: Configure Application Proxy using Microsoft Graph APIs
 description: Automatically configure Application Proxy using the Microsoft Graph APIs to provide remote access and single sign-on to on-premises applications.
 author: davidmu1
@@ -15,12 +15,12 @@ This article assumes you have already installed a connector and completed the [p
 
 Make sure you have the corresponding permissions to call the following APIs.
 
-|Resource type |Method |
-|---------|---------|
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Create application](https://docs.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta&tabs=http) <br> [Update application](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Add application to connectorGroup](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
-|[connector](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [Get connectors](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
-|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Create connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Add connector to connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Create servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta&tabs=http) <br> [Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+| Resource type                                                                                                                                                                                                       | Method                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta) | [Create application](https://docs.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta&tabs=http) <br> [Update application](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Add application to connectorGroup](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)                                    |
+| [connector](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)                                                                                                                          | [Get connectors](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)                                                                                                                                                                                                                                                                                                              |
+| [connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)                                                                                                                | [Create connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Add connector to connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br>                                                                                                                                                             |
+| [servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)                                                                                                            | [Create servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta&tabs=http) <br> [Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta) |
 
 > [!NOTE]
 > The requests shown in this article use sample values. You will need update these. The response objects shown might also be shortened for readability. 
@@ -39,8 +39,8 @@ To configure Application Proxy for an app using the API, you create an applicati
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_application"
@@ -55,20 +55,23 @@ Content-type: application/json
   "signInAudience":"AzureADMyOrg"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -115,20 +118,24 @@ Content-type: application/json
 ```
 
 ### Retrieve the application object ID and appId
+
 Use the response from the previous call to retrieve and save the application object ID and app ID.
+
 ```
 "application": {
   "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
   "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
 }
 ```
+
 ### Create a servicePrincipal for the application and add required tags
+
 Use the **appId** to create a service principal for the application. Then add the tags required for configuring Application Proxy for an app.
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_servicePrincipal"
@@ -146,22 +153,26 @@ Content-type: appplication/json
   ]
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -218,8 +229,8 @@ Use the application object ID from the previous step to configure Application Pr
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -237,20 +248,23 @@ Content-type: appplication/json
     }
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -262,10 +276,13 @@ Content-type: appplication/json
 ```http
 HTTP/1.1 204 No content
 ```
+
 ### Complete the configuration of the application
+
 Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** properties to the external UR configured in the **onPremisesPublishing** property. Then update [implicitGrantSettings](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
 
 #### Request
+
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -307,8 +324,8 @@ List the connectors and use the response to retrieve and save the connector obje
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "connector"
@@ -318,20 +335,23 @@ List the connectors and use the response to retrieve and save the connector obje
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
 
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/connector-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/connector-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/connector-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -372,6 +392,7 @@ Content-type: application/json
 ```
 
 ### Create a connectorGroup
+
 For this example, a new connectorGroup is created named "IWA Demo Connector Group" that is used for the application. You can also skip this step if your connector is already assigned to the appropriate connectorGroup. Retrieve and save the connectorGroup object ID to use in the next step.
 
 #### Request
@@ -443,8 +464,8 @@ HTTP/1.1 204 No content
 
 #### Request
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "connectorGroup"
@@ -458,20 +479,23 @@ Content-type: application/json
 "@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/connectorgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/connectorgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/connectorgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -485,6 +509,7 @@ HTTP/1.1 204 No content
 ```
 
 ## Step 4: Configure single sign-on
+
 This application uses Integrated Windows Authentication (IWA). To configure IWA, set the single sign-on properties in the [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) resource type.
 
 #### Request
@@ -523,34 +548,38 @@ HTTP/1.1 204 No content
 ```
 
 ## Step 5: Assign users
+
 ### Retrieve appRole for the applicaiton
 
 #### Request
 
-
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -558,6 +587,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-8
   "blockType": "response",
   "truncated": true,
 } -->
+
 ```http
 HTTP/1.1 200
 Content-type: application/json
@@ -592,6 +622,7 @@ Content-type: application/json
 ```
 
 Use the response from the previous call to retrieve and save the appRole ID to use for the next step.
+
 ```
       {
             "description": "User",
@@ -604,12 +635,12 @@ Use the response from the previous call to retrieve and save the appRole ID to u
 
 Use the following properties to assign a user to the application.
 
-| Property  | Description |ID  |
-|---------|---------|---------|
-| principalId | User ID of the user that will be assigned to the app | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
-| principalType | Type of user | User |
-| appRoleId |  The App role ID of the default app role of the app | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
-| resourceId | The servicePrincipal ID of the app | a8cac399-cde5-4516-a674-819503c61313 |
+| Property      | Description                                          | ID                                   |
+| ------------- | ---------------------------------------------------- | ------------------------------------ |
+| principalId   | User ID of the user that will be assigned to the app | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
+| principalType | Type of user                                         | User                                 |
+| appRoleId     | The App role ID of the default app role of the app   | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
+| resourceId    | The servicePrincipal ID of the app                   | a8cac399-cde5-4516-a674-819503c61313 |
 
 #### Request
 
@@ -617,6 +648,7 @@ Use the following properties to assign a user to the application.
   "blockType": "ignored",
   "name": "servicePrincipals"
 }-->
+
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments
 
@@ -636,6 +668,7 @@ Content-type: appRoleAssignments/json
   "blockType": "response",
   "truncated": true,
 } -->
+
 ```http
 HTTP/1.1 200
 Content-type: application/json
@@ -655,7 +688,7 @@ Content-type: application/json
 
 For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta) resource type.
 
-
 ## Additional steps
+
 - [Automate configuration using PowerShell samples for Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
 - [Automate SAML-based SSO app configuration with Microsoft Graph API](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
