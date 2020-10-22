@@ -3,6 +3,146 @@
     {
       "ChangeList": [
         {
+          "Id": "9fa14fd0-66d5-4d6d-b819-e785a4fd90cd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2AuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [fido2AuthenticationMethodConfiguration](https://docs.microsoft.com/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' FIDO2 Security Keys authentication method policy.",
+          "Target": ""
+        },
+        {
+          "Id": "9fa14fd0-66d5-4d6d-b819-e785a4fd90cd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](https://docs.microsoft.com/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users' Microsoft Authenticator Passwordless Phone Sign-in authentication method policy.",
+          "Target": ""
+        }
+      ],
+      "Id": "9fa14fd0-66d5-4d6d-b819-e785a4fd90cd",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-08T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3d465a4e-7c56-448f-a3bf-0613baa03bb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fido2authenticationmethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [fido2authenticationmethod](https://docs.microsoft.com/graph/api/resources/fido2authenticationmethod?view=graph-rest-beta) entity for managing users' FIDO2 security keys authentication method.",
+          "Target": ""
+        },
+        {
+          "Id": "3d465a4e-7c56-448f-a3bf-0613baa03bb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordlessmicrosoftauthenticatorauthenticationmethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordlessmicrosoftauthenticatorauthenticationmethod](https://docs.microsoft.com/graph/api/resources/passwordlessmicrosoftauthenticatorauthenticationmethod?view=graph-rest-beta) entity for managing users' Microsoft Authenticator Passwordless Phone Sign-in authentication method.",
+          "Target": ""
+        },
+        {
+          "Id": "3d465a4e-7c56-448f-a3bf-0613baa03bb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailauthenticationmethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailauthenticationmethod](https://docs.microsoft.com/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) entity for managing users' email authentication method.",
+          "Target": ""
+        }
+      ],
+      "Id": "3d465a4e-7c56-448f-a3bf-0613baa03bb2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-08T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c61f3da2-e7fe-43ee-aa34-f76945c4bfa0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2cAuthenticationMethodsPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) resource type and the following operations: [Get b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) and [Update b2cAuthenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).",
+          "Target": ""
+        },
+        {
+          "Id": "c61f3da2-e7fe-43ee-aa34-f76945c4bfa0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Policy.ReadWrite.AuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added delegated and application permission [Policy.ReadWrite.AuthenticationMethod](https://docs.microsoft.com/en-us/graph/permissions-reference#policy-permissions).",
+          "Target": "Policy.ReadWrite.AuthenticationMethod"
+        }
+      ],
+      "Id": "c61f3da2-e7fe-43ee-aa34-f76945c4bfa0",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-08T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f441d7f8-7f77-4e1d-9f40-9c3c88b1bd96",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionGrantPolicyIdsAssignedToDefaultUserRole",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrantPolicyIdsAssignedToDefaultUserRole** property to the [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "c3354cc0-3a57-4f4a-89d0-d0474224ffb3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-09-01T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c63feb50-6eee-4be2-b2ad-17ac331ae887",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionGrantPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantPolicy](https://docs.microsoft.com/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta) resource type.",
+          "Target": "permissionGrantPolicy"
+        }
+      ],
+      "Id": "b7b778df-24ed-47ae-939a-c80785ef4275",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-09-01T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8064b74f-02c1-4b4b-ade7-90f83d00a858",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedPermissionClassifications",
+          "ChangeType": "Addition",
+          "Description": "Added [delegatedPermissionClassification](https://docs.microsoft.com/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta) navigation to the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "e224d14c-5408-4f20-93d2-f9dcc678d393",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-09-01T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Application"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4d0e93d9-7b06-4b52-91d9-9766a15d3615",
           "ApiChange": "Property",
           "ChangedApiName": "settings",

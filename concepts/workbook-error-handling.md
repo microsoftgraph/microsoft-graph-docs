@@ -127,7 +127,7 @@ For some of the responses in the regular pattern, a recovery cooldown duration i
 
 ## Special case handling
 
-For [sessionful requests](excel-manage-sessions.md#request-types), we recommend that you recreate the session if you encounter a `503/serviceUnavailable` or `502/badGateway` error.
+For [sessionful requests](excel-manage-sessions.md#request-types), if you encounter a `502/badGateway` or `503/serviceUnavailable` error, when a second-level error code is listed in [Detailed error codes](workbook-error-codes.md#detailed-error-code), parse the second-level code and follow the corresponding instructions; otherwise, we reconmmend that you recreate the session directly.
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",

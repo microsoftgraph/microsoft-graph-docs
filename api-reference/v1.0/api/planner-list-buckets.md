@@ -32,8 +32,7 @@ GET /planner/buckets
 ```
 
 ## Optional query parameters
-
-This method requires planId [filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to be specified.
+This method requires planId [filter](/graph/query-parameters) to be specified.
 
 ## Request headers
 

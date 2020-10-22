@@ -35,7 +35,7 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 
 ## Known limitations
 
-The following are current knownlimitations:
+The following are current known limitations:
 
 - Organizations are limited to a maximum of 10 connections.
 - Only Azure Active Directory identities are supported.

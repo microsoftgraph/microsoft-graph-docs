@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var set = new Set
+var set = new Microsoft.Graph.TermStore.Set
 {
 	Description = "mySet"
 };

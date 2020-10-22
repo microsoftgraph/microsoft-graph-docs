@@ -11,7 +11,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphSet *set = [[MSGraphSet alloc] init];
+MSGraphTermStoreSet *set = [[MSGraphTermStoreSet alloc] init];
 [set setDescription:@"mySet"];
 
 NSError *error;

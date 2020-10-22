@@ -3,6 +3,14 @@
     {
       "ChangeList": [
         {
+          "Id":"b13547bc-fc6d-11ea-b9b8-2d2715abeafd",
+          "ApiChange":"Method",
+          "ChangedApiName":"revokeGrants",
+          "ChangeType":"Addition",
+          "Description":"Added the [revokeGrants](https://docs.microsoft.com/en-us/graph/api/permission-revokeGrants?view=graph-rest-beta) method to the [permission](https://docs.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) resource.",
+          "Target":"permission"
+        },
+        {
           "Id": "0d1e22ba-ddea-45b5-8aa4-7a5111e9a936",
           "ApiChange": "Resource",
           "ChangedApiName": "pendingOperations",

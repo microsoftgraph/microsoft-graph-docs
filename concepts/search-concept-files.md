@@ -18,92 +18,9 @@ The Search API lets you scope the types of content to retrieve in OneDrive or Sh
 - [Example 2: Search list items](#example-2-search-list-items)
 - [Example 3: Search sites](#example-3-search-sites)
 - [Example 4: Search all content in OneDrive and SharePoint](#example-4-search-all-content-in-onedrive-and-sharepoint)
+- [Example 5: Use filters in search queries](#example-5-use-filters-in-search-queries)
+- [Example 6: Specify select properties](#example-6-specify-select-properties)
 
-## Specify select properties
-
-You can specify the fields you want back in the response, as part of the **fields** sub-property of a [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
-
-Note that property selection is only available for **listItem** since this is the only SharePoint entity in Microsoft Graph that supports custom properties.
-
-To retrieve a custom property for a **driveItem**, query **listItem** instead.
-
-### Request
-
-```HTTP
-POST /search/query
-Content-Type: application/json
-
-{
-  "requests": [
-    {
-      "entityTypes": [
-        "listItem"
-      ],
-      "query": {
-        "queryString": "contoso"
-      },
-      "fields": [
-          "title",
-          "contentclass"
-      ]
-    }
-  ]
-}
-```
-
-### Response
-
-```HTTP
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
-  "value": [
-    {
-      "searchTerms": [
-        "contoso"
-      ],
-      "hitsContainers": [
-        {
-          "total": 1,
-          "moreResultsAvailable": false,
-          "hits": [
-            {
-              "hitId": "contoso.sharepoint.com,6598ee0b-0f5f-4416-a0ae-66d864efb43a,60024ce8-e74d-4d63-a939-ad00cd738670",
-              "rank": 1,
-              "summary": "",
-              "resource": {
-                "@odata.type": "#microsoft.graph.listItem",
-                "createdDateTime": "2019-06-10T06:37:43Z",
-                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
-                "parentReference": {
-                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
-                },
-                "fields": {
-                  "contentclass": "STS_ListItem_GenericList",
-                  "title": "Contoso issue "
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-## Use filters in search queries
-
-You can use KQL in search terms of queries for OneDrive and SharePoint. For example:
-
-- `"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.
-- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.
-- `"query": "contoso AND isDocument=true"` scopes the query to only return documents. Any container (folder, document library) will not be returned.
-- `"query": "contoso contentclass:STS_List_Events"` scopes the query to Calendar events stored in SharePoint.
-
-In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.
 
 ## Example 1: Search files
 
@@ -404,6 +321,92 @@ Content-type: application/json
                 "siteId": "microsoft.sharepoint-df.com,220fd155-0ea2-477c-a816-5c08fdc45f5d,fad16ab6-0736-4fbc-a053-087296b47c99"
                 },
                 "webUrl": "https://microsoft.sharepoint-df.com/teams/spoppe/collab/TaskBoard/Contoso/Shared Documents/Forms/AllItems.aspx"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+## Example 5: Use filters in search queries
+
+You can use KQL in search terms of queries for OneDrive and SharePoint. For example:
+
+- `"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.
+- `"query": "contoso AND isDocument=true"` scopes the query to only return documents. Any container (folder, document library) will not be returned.
+- `"query": "contoso contentclass:STS_List_Events"` scopes the query to Calendar events stored in SharePoint.
+
+In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.
+
+## Example 6: Specify select properties
+
+You can specify the fields you want back in the response, as part of the **fields** sub-property of a [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
+
+Note that property selection is only available for **listItem** since this is the only SharePoint entity in Microsoft Graph that supports custom properties.
+
+To retrieve a custom property for a **driveItem**, query **listItem** instead.
+
+### Request
+
+```HTTP
+POST /search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "listItem"
+      ],
+      "query": {
+        "queryString": "contoso"
+      },
+      "fields": [
+          "title",
+          "contentclass"
+      ]
+    }
+  ]
+}
+```
+
+### Response
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "value": [
+    {
+      "searchTerms": [
+        "contoso"
+      ],
+      "hitsContainers": [
+        {
+          "total": 1,
+          "moreResultsAvailable": false,
+          "hits": [
+            {
+              "hitId": "contoso.sharepoint.com,6598ee0b-0f5f-4416-a0ae-66d864efb43a,60024ce8-e74d-4d63-a939-ad00cd738670",
+              "rank": 1,
+              "summary": "",
+              "resource": {
+                "@odata.type": "#microsoft.graph.listItem",
+                "createdDateTime": "2019-06-10T06:37:43Z",
+                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
+                "parentReference": {
+                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
+                },
+                "fields": {
+                  "contentclass": "STS_ListItem_GenericList",
+                  "title": "Contoso issue "
+                }
               }
             }
           ]

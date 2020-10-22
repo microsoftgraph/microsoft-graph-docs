@@ -68,7 +68,7 @@ To learn more about Microsoft 365 groups and the administrator experiences, see 
 
 Security groups are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users and other security groups as members.
 
-Mail-enabled security groups are used in the same way that security groups are, but with the added feature of a shared mailbox for the groups. Mail-enabled security groups can't be created through the API, but other group operations work. Mail-enabled security groups are read only. Learn more in the [Manage mail-enabled security groups Exchange article](https://technet.microsoft.com/library/bb123521%28v=exchg.160%29.aspx).
+Mail-enabled security groups are used in the same way that security groups are, but with the added feature of a shared mailbox for the groups. Mail-enabled security groups can't be created through the API, but other group operations work. Mail-enabled security groups are read only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups).
 
 ### Security group example
 
@@ -124,7 +124,7 @@ Microsoft 365 groups in Yammer are used to facilitate user collaboration through
 
 ## Group-based licensing
 
-Group-based licensing capability can be used to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups, and Microsoft 365 groups that have securityEnabled=TRUE. To learn more about group-based licensing see [here](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+Group-based licensing capability can be used to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups, and Microsoft 365 groups that have securityEnabled=TRUE. To learn more about group-based licensing see [here](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## Common use cases
 
@@ -140,5 +140,4 @@ Using Microsoft Graph, you can perform the following common operations.
 | List the owners of a group, and add or remove owners.                                                                                                                             | [user](user.md) <br/> [group](group.md) | [List owners](../api/group-list-members.md) <br/> [Add member](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md)                                     |
 
 ## What's new
-
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

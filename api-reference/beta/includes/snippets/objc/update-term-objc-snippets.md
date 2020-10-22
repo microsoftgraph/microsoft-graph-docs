@@ -11,9 +11,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphTerm *term = [[MSGraphTerm alloc] init];
+MSGraphTermStoreTerm *term = [[MSGraphTermStoreTerm alloc] init];
 NSMutableArray *labelsList = [[NSMutableArray alloc] init];
-MSGraphLocalizedLabel *labels = [[MSGraphLocalizedLabel alloc] init];
+MSGraphTermStoreLocalizedLabel *labels = [[MSGraphTermStoreLocalizedLabel alloc] init];
 [labels setName:@"changedLabel"];
 [labels setLanguageTag:@"en-US"];
 [labels setIsDefault: true];

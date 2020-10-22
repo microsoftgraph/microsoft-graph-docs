@@ -17,11 +17,12 @@ Create a new [team](../resources/team.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)  |
-| :------------------------------------- | :------------------------------------------- |
-| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All|
+
 
 ## HTTP request
 
@@ -123,16 +124,18 @@ POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-  "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
-  "members@odata.bind": [
-            {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "roles": ["owner"],
-            "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
-        }
-  ]
+   "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+   "displayName":"My Sample Team",
+   "description":"My Sample Team’s Description",
+   "members@odata.bind":[
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "roles":[
+            "owner"
+         ],
+         "userId":"0040b377-61d8-43db-94f5-81374122dc7e"
+      }
+   ]
 }
 ```
 
@@ -287,7 +290,7 @@ Content-Length: 0
 
 The following example shows how you can create a new [team](../resources/team.md) from a [group](../resources/group.md), given a **groupId**.
 
-A few thing to note about this call:
+A few things to note about this call:
 
 * In order to create a team, the group you're creating it from must have a least one owner.
 * The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.
@@ -296,7 +299,6 @@ A few thing to note about this call:
 #### Request
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "create_team_from_group"
@@ -354,7 +356,6 @@ To learn more about supported base template types and supported properties, see 
 #### Request
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_group"
@@ -365,33 +366,33 @@ POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
-  "channels": [
-        {
-            "displayName": "Class Announcements 📢",
-            "isFavoriteByDefault": true
-        },
-        {
-            "displayName": "Homework 🏋️",
-            "isFavoriteByDefault": true,
-        }
-    ],
-    "memberSettings": {
-        "allowCreateUpdateChannels": false,
-        "allowDeleteChannels": false,
-        "allowAddRemoveApps": false,
-        "allowCreateUpdateRemoveTabs": false,
-        "allowCreateUpdateRemoveConnectors": false
-    },
-    "installedApps": [
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
-        },
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
-        }
-    ]
+   "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+   "group@odata.bind":"https://graph.microsoft.com/v1.0/groups('groupId')",
+   "channels":[
+      {
+         "displayName":"Class Announcements 📢",
+         "isFavoriteByDefault":true
+      },
+      {
+         "displayName":"Homework 🏋️",
+         "isFavoriteByDefault":true
+      }
+   ],
+   "memberSettings":{
+      "allowCreateUpdateChannels":false,
+      "allowDeleteChannels":false,
+      "allowAddRemoveApps":false,
+      "allowCreateUpdateRemoveTabs":false,
+      "allowCreateUpdateRemoveConnectors":false
+   },
+   "installedApps":[
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+      },
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+      }
+   ]
 }
 ```
 
@@ -439,7 +440,6 @@ To learn more about supported base template types, see [Get started with Teams t
 #### Request
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard"
@@ -502,7 +502,6 @@ To learn more about supported base template types and supported properties, see 
 #### Request
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard2"
@@ -513,34 +512,34 @@ POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
-  "displayName": "My Class Team",
-  "description": "My Class Team’s Description",
-  "channels": [
-        {
-            "displayName": "Class Announcements 📢",
-            "isFavoriteByDefault": true
-        },
-        {
-            "displayName": "Homework 🏋️",
-            "isFavoriteByDefault": true,
-        }
-    ],
-    "memberSettings": {
-        "allowCreateUpdateChannels": false,
-        "allowDeleteChannels": false,
-        "allowAddRemoveApps": false,
-        "allowCreateUpdateRemoveTabs": false,
-        "allowCreateUpdateRemoveConnectors": false
-    },
-    "installedApps": [
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
-        },
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
-        }
-    ]
+   "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
+   "displayName":"My Class Team",
+   "description":"My Class Team’s Description",
+   "channels":[
+      {
+         "displayName":"Class Announcements 📢",
+         "isFavoriteByDefault":true
+      },
+      {
+         "displayName":"Homework 🏋️",
+         "isFavoriteByDefault":true
+      }
+   ],
+   "memberSettings":{
+      "allowCreateUpdateChannels":false,
+      "allowDeleteChannels":false,
+      "allowAddRemoveApps":false,
+      "allowCreateUpdateRemoveTabs":false,
+      "allowCreateUpdateRemoveConnectors":false
+   },
+   "installedApps":[
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+      },
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+      }
+   ]
 }
 ```
 
@@ -582,6 +581,6 @@ Content-Length: 0
 ## See also
 
 - [Available templates](/MicrosoftTeams/get-started-with-teams-templates)
-- [Getting started with Retail Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Getting started with Healthcare Teams templates](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
+- [Getting started with Retail Teams templates](/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Getting started with Healthcare Teams templates](/MicrosoftTeams/healthcare/healthcare-templates)
 - [Creating a group with a team](/graph/teams-create-group-and-team)

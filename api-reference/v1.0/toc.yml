@@ -1,7 +1,7 @@
 name: Reference
 items:
   - name: Overview of Microsoft Graph
-    href: /graph/overview
+    href: ./overview.md
   - name: Get auth tokens
     items:
     - name: Overview
@@ -75,7 +75,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
+        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252f1.0
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
       - name: "1: Review differences"
@@ -410,6 +410,16 @@ items:
       - name: Group
         href: resources/group.md
         items:
+        - name: List groups
+          href: api/group-list.md
+        - name: Create group
+          href: api/group-post-groups.md
+        - name: Get group
+          href: api/group-get.md
+        - name: Update group
+          href: api/group-update.md
+        - name: Delete group
+          href: api/group-delete.md
         - name: Add favorite
           href: api/group-addfavorite.md
         - name: Add member
@@ -421,15 +431,11 @@ items:
         - name: Check member groups
           href: api/group-checkmembergroups.md
         - name: Check member objects
-          href: api/group-checkmemberobjects.md
-        - name: Create group
-          href: api/group-post-groups.md
-        - name: Delete group
-          href: api/group-delete.md
+          href: api/group-checkmemberobjects.md 
         - name: Get delta
           href: api/group-delta.md
-        - name: Get group
-          href: api/group-get.md
+        - name: Get endpoint
+          href: api/endpoint-get.md
         - name: Get member groups
           href: api/group-getmembergroups.md
         - name: Get member objects
@@ -454,8 +460,8 @@ items:
             href: api/groupsettingtemplate-list.md
           - name: Get group setting template
             href: api/groupsettingtemplate-get.md
-        - name: List groups
-          href: api/group-list.md
+        - name: List endpoints
+          href: api/group-list-endpoints.md
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
@@ -470,8 +476,6 @@ items:
           href: api/group-list-owners.md
         - name: List photos
           href: api/group-list-photos.md
-        - name: Update group
-          href: api/group-update.md
         - name: Remove favorite
           href: api/group-removefavorite.md
         - name: Remove member

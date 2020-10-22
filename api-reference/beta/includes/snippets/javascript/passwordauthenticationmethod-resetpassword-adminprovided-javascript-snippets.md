@@ -14,7 +14,7 @@ const passwordResetResponse = {
   newPassword: "newPassword-value",
 };
 
-let res = await client.api('/users/{id}/authentication/passwordMethods/{id}/resetPassword')
+let res = await client.api('/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword')
 	.version('beta')
 	.post(passwordResetResponse);
 

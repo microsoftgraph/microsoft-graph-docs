@@ -41,7 +41,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ```http
 POST /me/authentication/phoneMethods
-POST /users/{id}/authentication/phoneMethods
+POST /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 
 ## Request headers

@@ -235,15 +235,16 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 
 ## Methods
 
-| Method                                                   | REST Path                                             |
-| :------------------------------------------------------- | :---------------------------------------------------- |
-| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`              |
-| [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`         |
-| [Create link][createLink]                                | `POST /drive/items/{item-id}/createLink`              |
-| [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`                  |
-| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`       |
-| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`      |
-| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant` |
+| Method                                                   | REST Path
+|:---------------------------------------------------------|:-----------------------
+| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Get permission](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
+| [Create link][createLink]                                | `POST /drive/items/{item-id}/createLink`
+| [Invite people][invite]                                  | `POST /drive/items/{item-id}/invite`
+| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
+| [Revoke grants](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
 
 [createLink]: ../api/driveitem-createlink.md
 [grant]: ../api/permission-grant.md

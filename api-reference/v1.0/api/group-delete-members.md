@@ -59,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/{group-id}/members/{directory-object-id}/$ref
+DELETE https://graph.microsoft.com/v1.0/groups/{group-id}/members/{directory-object-id}/$ref
 ```
 
 # [C#](#tab/csharp)

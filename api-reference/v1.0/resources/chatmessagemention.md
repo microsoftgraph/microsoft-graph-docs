@@ -28,7 +28,7 @@ In the **content** property, the first mention has an HTML `id` attribute of 0. 
 
 The second mention has an `id` attribute of 1, matching the **id** property of the second instance, which is 1.
 
-For a fuller context of the example, see [List channel message replies](/graph/api/channel-list-messagereplies?view=graph-rest-beta).
+For a fuller context of the example, see [List channel message replies](/graph/api/channel-list-messagereplies).
 
 ## Properties
 

@@ -37,7 +37,7 @@ Current **targetProduct** support includes the following:
 
    There is a limit of 15000 indicators per tenant for Microsoft Defender ATP.
 
-For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## Methods
 

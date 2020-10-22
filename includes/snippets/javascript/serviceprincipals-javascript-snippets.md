@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const servicePrincipal = Content-type: servicePrincipals/json
+const servicePrincipal = Content-type: application/json
 
 {
     preferredTokenSigningKeyThumbprint: "AC09FEF18DDE6983EE2A164FBA3C4DD7518BD787"

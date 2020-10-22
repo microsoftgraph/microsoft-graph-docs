@@ -2,7 +2,7 @@
 title: "session resource type"
 description: "The session type"
 localization_priority: Normal
-author: "stephenjust"
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---

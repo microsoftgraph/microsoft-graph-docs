@@ -4,7 +4,7 @@ description: "Delete a subscription."
 localization_priority: Normal 
 author: "davidmu1"
 doc_type: apiPageType 
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete subscription
@@ -72,7 +72,7 @@ Additional limitations apply for subscriptions on Outlook items. The limitations
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /subscriptions/{id}
+DELETE /subscriptions/{subscription-id}
 ```
 
 ## Request headers
@@ -105,7 +105,7 @@ Here is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/subscriptions/{id}
+DELETE https://graph.microsoft.com/beta/subscriptions/7f105c7d-2dc5-4530-97cd-4e7ae6534c07
 ```
 
 # [C#](#tab/csharp)

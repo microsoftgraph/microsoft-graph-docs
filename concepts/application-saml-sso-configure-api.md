@@ -232,8 +232,8 @@ Before this query will work you need to provide consent on the **Modify permissi
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-Content-type: servicePrincipal/json
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+Content-type: application/json
 
 {
     "preferredSingleSignOnMode": "saml"
@@ -343,7 +343,7 @@ For more information, see [Configure the role claim issued in the SAML token](/a
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/serviceprincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-Content-type: serviceprincipals/json
+Content-type: application/json
 
 {
 "appRoles": [
@@ -441,11 +441,11 @@ For more information, see [Customize claims emitted in token](/azure/active-dire
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
     "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
     ],
     "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
@@ -481,14 +481,14 @@ Content-type: claimsMappingPolicies/json
 
 ```http
 HTTP/1.1 201 OK
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
     "id": "a7b19e62-9adb-4edb-8521-cd35305f095d",
     "deletedDateTime": null,
     "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
     ],
     "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
@@ -506,7 +506,7 @@ Content-type: claimsMappingPolicies/json
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/claimsMappingPolicies/$ref
 
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/6b33aa8e-51f3-41a6-a0fd-d660d276197a"
@@ -674,7 +674,7 @@ Make sure that the keyId for the keyCredential used for "Sign" matches the keyId
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
     "keyCredentials":[
@@ -735,7 +735,7 @@ You need to set the `preferredTokenSigningKeyThumbprint` property to the thumbpr
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
     "preferredTokenSigningKeyThumbprint": "AC09FEF18DDE6983EE2A164FBA3C4DD7518BD787"
@@ -773,7 +773,7 @@ Assign the following user to the service principal and assign the AWS_Role1.
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/appRoleAssignments
 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
   "principalId": "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
@@ -791,7 +791,7 @@ Content-type: appRoleAssignments/json
 } -->
 ```http
 HTTP/1.1 201 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
     "id": "rq7hyzl4yECaNZleMrTpDV-OCe5TEl5Ao_o76XMrRFU",

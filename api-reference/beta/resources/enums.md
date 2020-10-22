@@ -33,6 +33,13 @@ Namespace: microsoft.graph
 | everyone               |
 | unknownFutureValue     |
 
+### attestationLevel values
+
+|Member|
+|:---|
+|attested|
+|notAttested|
+
 ### emailType values
 
 | Member   |
@@ -42,6 +49,34 @@ Namespace: microsoft.graph
 | personal |
 | main     |
 | other    |
+
+### authenticationMethodTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### authenticationMethodState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### fido2RestrictionEnforcementType values
+
+|Member|
+|:---|
+|allow|
+|block|
+
+### authenticatorAppContextType values
+
+|Member|
+|:---|
+|location|
+|app|
 
 ### anniversaryType values
 
@@ -719,7 +754,7 @@ Possible feedback values on the alert provided by an analyst.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -744,7 +779,7 @@ Operation that changed the registry key name and/or value.
 
 ### registryValueType values
 
-Enum for registry value types as defined by [Registry value types](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).
+Enum for registry value types as defined by [Registry value types](/windows/desktop/sysinfo/registry-value-types).
 
 | Member            | Value | Description                                  |
 | :---------------- | :---- | :------------------------------------------- |
@@ -1353,9 +1388,23 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### connectionState values
 
-| Member        |
-| :------------ |
-| draft         |
-| ready         |
-| obsolete      |
-| limitExceeded |
+|Member|
+|:---|
+|draft|
+|ready|
+|obsolete|
+|limitExceeded|
+
+### permissionClassificationType values
+
+| Member
+|:-------
+| low
+
+### permissionType values
+
+| Member
+|:-------------------------
+| application
+| delegated
+| delegatedUserConsentable
