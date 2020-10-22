@@ -298,7 +298,7 @@ Content-type: application/json
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 OK
 Content-type: application/json
 
 {
@@ -336,9 +336,9 @@ Test the connection with the third-party application. The following example is f
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 { 
-    credentials: [ 
-        { key: "ClientSecret", value: "xxxxxxxxxxxxxxxxxxxxx" },
-        { key: "SecretToken", value: "xxxxxxxxxxxxxxxxxxxxx" }
+    "credentials": [ 
+        { "key": "ClientSecret", "value": "xxxxxxxxxxxxxxxxxxxxx" },
+        { "key": "SecretToken", "value": "xxxxxxxxxxxxxxxxxxxxx" }
     ]
 }
 ```
@@ -365,9 +365,9 @@ Configuring provisioning requires establishing a trust between Azure AD and the 
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secrets 
  
 { 
-    value: [ 
-        { key: "ClientSecret", value: "xxxxxxxxxxxxxxxxxxxxx" },
-        { key: "SecretToken", value: "xxxxxxxxxxxxxxxxxxxxx" }
+    "value": [ 
+        { "key": "ClientSecret", "value": "xxxxxxxxxxxxxxxxxxxxx" },
+        { "key": "SecretToken", "value": "xxxxxxxxxxxxxxxxxxxxx" }
     ]
 }
 ```
