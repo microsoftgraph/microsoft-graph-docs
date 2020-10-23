@@ -1317,52 +1317,52 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### userFlowType values
 
-| Member                                |
-| :------------------------------------ |
-| signUp                                |
-| signIn                                |
-| signUpOrSignIn                        |
-| passwordReset                         |
-| profileUpdate                         |
-| resourceOwnerPasswordCredentialSignIn |
-| unknownFutureValue                    |
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwnerPasswordCredentialSignIn
+| unknownFutureValue
 
 ### openIdConnectResponseMode values
 
-| Member             |
-| :----------------- |
-| none               |
-| form_post          |
-| query              |
-| unknownFutureValue |
+| Member
+|:----------------------
+| none
+| form_post
+| query
+| unknownFutureValue
 
 ### openIdConnectResponseTypes values
 
-| Member   |
-| :------- |
-| none     |
-| code     |
-| id_token |
-| token    |
+| Member
+|:----------------------
+| none
+| code
+| id_token
+| token
 
 ### wellknownListName values
 
-| Member             |
-| :----------------- |
-| none               |
-| defaultList        |
-| flaggedEmails      |
-| unknownFutureValue |
+| Member
+|:----------------------
+| none
+| defaultList
+| flaggedEmails
+| unknownFutureValue
 
 ### taskStatus values
 
-| Member          |
-| :-------------- |
-| notStarted      |
-| inProgress      |
-| completed       |
-| waitingOnOthers |
-| deferred        |
+| Member
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred
 
 ### connectedOrganizationState values
 
@@ -1385,6 +1385,24 @@ Possible values for user account types (group membership), per Windows definitio
 | :----- |
 | user   |
 | group  |
+
+### identityUserFlowAttributeDataType values
+
+| Member                | Value | Description                         |
+|:----------------------|:------|:------------------------------------|
+| string                | 1     | String data type                    |
+| boolean               | 2     | Boolean data type                   |
+| int64                 | 3     | Int data type                       |
+| stringCollection      | 4     | String collection data type         |
+| unknownFutureValue    | 5     | A sentinel member.                  |
+
+### identityUserFlowAttributeType values
+
+| Member                | Value | Description                                                        |
+|:----------------------|:------|:-------------------------------------------------------------------|
+| builtIn               | 1     | This user flow attribute type denotes it was created by the system |
+| custom                | 2     | This user flow attribute type denotes it was created by the user   |
+| unknownFutureValue    | 3     | A sentinel member.                                                 |
 
 ### connectionState values
 

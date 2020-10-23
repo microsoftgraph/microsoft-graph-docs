@@ -79,6 +79,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b4207eda-007b-4f10-8ebb-4089b55023c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityUserFlowAttribute",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityUserFlowAttribute](https://docs.microsoft.com/graph/api/resources/identityuserflowattribute?view=graph-rest-beta) entity for managing user flow attributes in an Azure Active Directory or Azure Active Directory B2C tenant.",
+          "Target": ""
+        }
+      ],
+      "Id": "b4207eda-007b-4f10-8ebb-4089b55023c6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-08T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+      },
+     {
+        "ChangeList": [
+         {
           "Id": "f2f991a4-d767-42a0-929a-eb01a6cbef42",
           "ApiChange": "Property",
           "ChangedApiName": "schedule",
