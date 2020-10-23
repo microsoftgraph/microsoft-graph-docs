@@ -1,17 +1,26 @@
+---
+title: "licenseUnitsDetail resource type"
+description: "The **prepaidUnits** property of the subscribedSku entity is of type **licenseUnitsDetail**."
+localization_priority: Normal
+author: "krbain"
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # licenseUnitsDetail resource type
+
+Namespace: microsoft.graph
 
 The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|enabled|Int32|            |
-|suspended|Int32|            |
-|warning|Int32|            |
+|:-------------|:-----|:----------|
+|enabled|Int32| The number of units that are enabled. |
+|suspended|Int32| The number of units that are suspended. |
+|warning|Int32| The number of units that are in warning status. |
 
-
-
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -20,7 +29,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.licenseunitsdetail"
+  "@odata.type": "microsoft.graph.licenseUnitsDetail"
 }-->
 
 ```json
@@ -41,3 +50,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

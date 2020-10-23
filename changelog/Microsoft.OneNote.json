@@ -1,0 +1,58 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "98886165-009f-4b17-91dc-1f3189706890",
+          "ApiChange": "method",
+          "ChangedApiName": "getNotebookFromWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [getNotebookFromWebUrl](https://docs.microsoft.com/en-us/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) method.",
+          "Target": "getNotebookFromWebUrl"
+        }
+      ],
+      "Id": "98886165-009f-4b17-91dc-1f3189706890",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-02-01T00:00:00",
+      "WorkloadArea": "Notes",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "175f2086-d8fe-41b3-97c5-8105f6780490",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "CopyNotebook",
+          "ChangeType": "Addition",
+          "Description": "Added the target *siteCollectionId* and target *siteId* parameters for the copy operations. For example: [CopyNotebook](https://docs.microsoft.com/en-us/graph/api/notebook-copynotebook?view=graph-rest-1.0).",
+          "Target": "CopyNotebook"
+        }
+      ],
+      "Id": "175f2086-d8fe-41b3-97c5-8105f6780490",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-08-01T00:00:00",
+      "WorkloadArea": "Notes",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "175f2086-d8fe-41b3-97c5-8105f6780490",
+          "ApiChange": "Property",
+          "ChangedApiName": "site",
+          "ChangeType": "Addition",
+          "Description": "Added the [onenote](https://docs.microsoft.com/en-us/graph/api/resources/onenote?view=graph-rest-1.0) navigation property to **site**.",
+          "Target": "onenote"
+        }
+      ],
+      "Id": "175f2086-d8fe-41b3-97c5-8105f6780490",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-08-01T00:00:00",
+      "WorkloadArea": "Notes",
+      "SubArea": ""
+    }
+  ]
+}

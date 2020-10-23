@@ -1,0 +1,43 @@
+{
+  "api-requirements":
+  {
+    "httpRequest": {
+      "maxUrlLength": 2083,
+      "httpMethods": ["GET", "PUT", "DELETE", "POST", "HEAD", "PATCH", "OPTIONS"],
+      "standardHeaders": [
+        "Authorization",
+        "Date",
+        "Accept",
+        "Accept-Encoding",
+        "Accept-Language",
+        "Accept-Charset",
+        "Content-Type",
+        "Prefer",
+        "If-Match",
+        "If-None-Match",
+        "If-Range",
+        "Content-Length",
+        "Content-Range",
+        "Range"
+      ],
+      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg", "application/octet-stream"]
+    },
+    "httpResponse": {
+      "contentTypes": ["application/json", "multipart/related", "text/plain", "text/csv", "image/jpeg", "application/octet-stream"],
+      "standardHeaders":
+      [
+        "Content-Range"
+      ]
+    },
+    "ignorableProperties": [
+      "@odata.context",
+      "@odata.type",
+      "@odata.id",
+      "@odata.etag"
+    ],
+    "jsonSerialization": {
+      "collectionPropertyNames": ["value"],
+      "dateTimeFormats": ["yyyy-MM-ddThh:MM:SSz"]
+    }
+  }
+}

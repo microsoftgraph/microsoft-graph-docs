@@ -1,15 +1,26 @@
+---
+title: "responseStatus resource type"
+description: "The response status of a meeting request."
+localization_priority: Normal
+author: "harini84"
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # responseStatus resource type
+
+Namespace: microsoft.graph
 
 The response status of a meeting request.
 
+## Properties
 
-### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|response|String|The response type: None = 0, Organizer = 1, TentativelyAccepted = 2, Accepted = 3, Declined = 4, NotResponded = 5. Possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.|
-|time|DateTimeOffset|<!--Need description! -->The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+| Property | Type           | Description |
+|:---------|:---------------|:------------|
+| response | responseType   | The response type. The possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
+| time     | DateTimeOffset | The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -18,7 +29,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.responsestatus"
+  "@odata.type": "microsoft.graph.responseStatus"
 }-->
 
 ```json
@@ -26,7 +37,6 @@ Here is a JSON representation of the resource
   "response": "String",
   "time": "String (timestamp)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -38,3 +48,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

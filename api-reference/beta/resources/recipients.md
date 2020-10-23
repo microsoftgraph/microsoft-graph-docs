@@ -1,8 +1,19 @@
+---
+title: "recipients resource type"
+description: "Here is a JSON representation of the resource"
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: "MSGraphDocsVteam"
+---
+
 # recipients resource type
 
+Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -23,7 +34,7 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |alias|String||
@@ -33,10 +44,15 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "recipients resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+

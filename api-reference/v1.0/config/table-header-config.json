@@ -1,0 +1,89 @@
+{
+  "tableDefinitions": {
+    "tables": [
+      {
+        "type": "AuthScopes",
+        "titles": [ "Permissions" ],
+        "parseAs": "AuthScopeDefinition"
+      },
+      {
+        "type": "EnumerationValues",
+        "titles": [ "Enumerated Values", "{x} enumeration", "{x} enumeration values", "{x} members", "{x} values" , "{x} flags", "Members" ],
+        "parents": [ "{x} enum type" ],
+        "parseAs": "EnumerationDefinition"
+      },
+      {
+        "type": "ErrorCodes",
+        "parseAs": "ErrorDefinition",
+        "titles": [ "Error Response" ]
+      },
+      {
+        "type": "HttpHeaders",
+        "titles": [ "Request Headers", "Response Headers", "Optional request headers" ],
+        "parseAs": "ParameterDefinition"
+      },
+      {
+        "type": "PathParameters",
+        "titles": [ "Path Parameters", "Function Parameters" ],
+        "parseAs": "ParameterDefinition"
+      },
+      {
+        "type": "QueryStringParameters",
+        "titles": [ "Query parameters", "Optional query parameters" ],
+        "parseAs": "ParameterDefinition"
+      },
+      {
+        "type": "RequestObjectProperties",
+        "titles": [ "Request Body" ],
+        "parseAs": "ParameterDefinition"
+      },
+      {
+        "type": "ResourceNavigationPropertyDescriptions",
+        "titles": [ "Relationships" ],
+        "parseAs": "ParameterDefinition"
+      },
+      {
+        "type": "ResourcePropertyDescriptions",
+        "titles": [ "Properties", "Instance Attributes" ],
+        "parseAs": "ParameterDefinition"
+      }
+    ],
+    "parsingRules": [
+      {
+        "type": "ErrorDefinition",
+        "columns": {
+          "httpStatusCode": [ "HTTP Code" ],
+          "httpStatusMessage": [ "Http Error Message" ],
+          "errorCode": [ "Error Code" ],
+          "description": [ "Error Message" ]
+        }
+      },
+      {
+        "type": "ParameterDefinition",
+        "columns": {
+          "name": [ "Parameter Name", "Parameter", "Property Name", "Property", "Name", "Relationship name", "Relationship", "Header", "Query parameter", "Header Name" ],
+          "type": [ "Type", "Value" ],
+          "description": [ "Description" ],
+          "required": [ "Description" ]
+        }
+      },
+      {
+        "type": "EnumerationDefinition",
+        "columns": {
+          "memberName": [ "Member", "Name", "Value" ],
+          "numericValue": ["Numeric Value", "Value"],
+          "description": [ "Description" ]
+        }
+      },
+      {
+        "type": "AuthScopeDefinition",
+        "columns": {
+          "scope": [ "Permissions (from least to most privileged)" ],
+          "title": [ "Permission type" ],
+          "description": [ "Description" ],
+          "required": [ "Required" ]
+        }
+      }
+    ]
+  }
+  }

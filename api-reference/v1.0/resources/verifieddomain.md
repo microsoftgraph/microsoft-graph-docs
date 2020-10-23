@@ -1,9 +1,20 @@
+---
+title: "verifiedDomain resource type"
+description: "Specifies a domain for a tenant. The **verifiedDomains** property of the organization entity is a collection of **VerifiedDomain**."
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # verifiedDomain resource type
+
+Namespace: microsoft.graph
 
 Specifies a domain for a tenant. The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |capabilities|String|For example, “Email”, “OfficeCommunicationsOnline”.|
@@ -12,8 +23,7 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 |name|String|The domain name; for example, “contoso.onmicrosoft.com”|
 |type|String|For example, “Managed”.|
 
-
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -22,7 +32,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.verifieddomain"
+  "@odata.type": "microsoft.graph.verifiedDomain"
 }-->
 
 ```json
@@ -45,3 +55,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

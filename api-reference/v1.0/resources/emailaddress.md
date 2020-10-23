@@ -1,16 +1,25 @@
+---
+title: "emailAddress resource type"
+description: "The name and email address of a contact or message recipient."
+localization_priority: Normal
+author: "svpsiva"
+ms.prod: "outlook"
+doc_type: resourcePageType
+---
+
 # emailAddress resource type
+
+Namespace: microsoft.graph
 
 The name and email address of a contact or message recipient.
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|String|The email address of the person or entity.|
 |name|String|The display name of the person or entity.|
 
-
-
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -19,7 +28,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.emailaddress"
+  "@odata.type": "microsoft.graph.emailAddress"
 }-->
 
 ```json
@@ -39,3 +48,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

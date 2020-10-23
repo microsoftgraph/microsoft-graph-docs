@@ -1,39 +1,55 @@
-# searchResult resource type
+---
+author: JeremyKelley
+description: "The SearchResult resource indicates than an item is the response to a search query."
+ms.date: 09/10/2017
+title: SearchResult
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+---
+# SearchResult resource type
 
-The **searchResult** resource indicates than an item is the response to a search.
+Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+The **SearchResult** resource indicates than an item is the response to a search query.
 
-### Properties
-| Property         | Type     | Description                                                                                                                             |
-|:----------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------------------|
-| onClickTelemetryUrl | String | A callback URL that is used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item. |
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-### JSON representation
-
-Here is a JSON representation of the resource.
+## JSON representation
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-  "onClickTelemtryUrl"
-  ],
-  "@odata.type": "microsoft.graph.searchresult"
+  "optionalProperties": [ "onClickTelemtryUrl" ],
+  "@odata.type": "microsoft.graph.searchResult"
 }-->
 
 ```json
 {
-  "onClickTelemetryUrl": "string"
+  "onClickTelemetryUrl": "url"
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
+## Properties
+
+| Property            | Type   | Description
+|:--------------------|:-------|:----------------------------------------------
+| onClickTelemetryUrl | String | A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.
+
+## Remarks
+
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+
+<!--
+{
   "type": "#page.annotation",
-  "description": "searchResult resource",
-  "keywords": "",
+  "description": "The search result facet indicates an item is from a search.",
+  "keywords": "search result facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SearchResult",
+  "suppressions": []
+}
+-->
+
+

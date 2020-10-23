@@ -1,18 +1,28 @@
+---
+title: "servicePlanInfo resource type"
+description: "Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the subscribedSku entity is a collection of **servicePlanInfo**."
+localization_priority: Normal
+author: "krbain"
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # servicePlanInfo resource type
+
+Namespace: microsoft.graph
 
 Contains information about a service plan associated with a subscribed SKU. The **servicePlans** property of the [subscribedSku](subscribedsku.md) entity is a collection of **servicePlanInfo**.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|The unique identifier of the service plan.|
 |servicePlanName|String|The name of the service plan.|
-|provisioningStatus|String|The provisioning status of the service plan.|
-|appliesTo|String||
+|provisioningStatus|String|The provisioning status of the service plan. Possible values:<br/>"Success" - Service is fully provisioned.<br/>"Disabled" - Service has been disabled.<br/>"PendingInput" - Service is not yet provisioned; awaiting service confirmation.<br/>"PendingActivation" - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)<br/>"PendingProvisioning" - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.|
+|appliesTo|String|The object the service plan can be assigned to. Possible values:<br/>"User" - service plan can be assigned to individual users.<br/>"Company" - service plan can be assigned to the entire tenant.|
 
-
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -21,7 +31,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.serviceplaninfo"
+  "@odata.type": "microsoft.graph.servicePlanInfo"
 }-->
 
 ```json
@@ -43,3 +53,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

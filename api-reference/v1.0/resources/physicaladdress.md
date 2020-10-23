@@ -1,18 +1,29 @@
+---
+title: "physicalAddress resource type"
+description: "Represents the street address of a resource such as a contact or event."
+localization_priority: Normal
+author: "kevinbellinger"
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # physicalAddress resource type
 
-The physical address of a contact.
+Namespace: microsoft.graph
+
+Represents the street address of a resource such as a contact or event.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |city|String|The city.|
-|countryOrRegion|String|The country or region.|
+|countryOrRegion|String|The country or region. It's a free-format string value, for example, "United States".|
 |postalCode|String|The postal code.|
 |state|String|The state.|
 |street|String|The street.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -21,7 +32,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.physicaladdress"
+  "@odata.type": "microsoft.graph.physicalAddress"
 }-->
 
 ```json
@@ -44,3 +55,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

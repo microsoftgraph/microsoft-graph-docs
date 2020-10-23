@@ -1,19 +1,35 @@
+---
+title: "dateTimeTimeZone resource type"
+description: "Describes the date, time, and time zone of a point in time."
+localization_priority: Priority
+doc_type: resourcePageType
+author: "harini84"
+ms.prod: "outlook"
+---
+
 # dateTimeTimeZone resource type
 
-### Properties
+Namespace: microsoft.graph
+
+Describes the date, time, and time zone of a point in time.
+
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|DateTime|String|A single point of time in a combined date and time representation (`<date>T<time>`).|
-|TimeZone|String|One of the following time zone names.|
+|dateTime|String|A single point of time in a combined date and time representation (`{date}T{time}`; for example, `2017-08-29T04:00:00.0000000`).|
+|timeZone|String|Represents a time zone, for example, "Pacific Standard Time". See below for more possible values.|
 
+In general, the **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones), as well as the additional [time zones supported by the calendar API](#additional-time-zones).
 
-The _TimeZone_ property can be set to any of the time zones supported by Windows, as well as the following time zones names.
- 
-Etc/GMT+12 
+When using **dateTimeTimeZone** in conjunction with a method (such as [creating](../api/user-post-events.md) or [updating](../api/event-update.md) an event), take note of the actual time zones supported, which can be a smaller subset.
 
-Etc/GMT+11 
+### Additional time zones
 
-Pacific/Honolulu 
+Etc/GMT+12
+
+Etc/GMT+11
+
+Pacific/Honolulu
 
 America/Anchorage
 
@@ -103,7 +119,7 @@ Asia/Damascus
 
 Africa/Johannesburg
 
-Europe/Kiev
+Europe/Kyiv (Kiev)
 
 Europe/Istanbul
 
@@ -117,7 +133,7 @@ Europe/Kaliningrad
 
 Asia/Riyadh
 
-Africa//Nairobi
+Africa/Nairobi
 
 Asia/Tehran
 
@@ -137,7 +153,7 @@ Asia/Kabul
 
 Asia/Karachi
 
-Asia/Tashkent
+Asia/Toshkent (Tashkent)
 
 Asia/Kolkata
 
@@ -145,13 +161,13 @@ Asia/Colombo
 
 Asia/Kathmandu
 
-Asia/Almaty
+Asia/Astana (Almaty)
 
 Asia/Dhaka
 
 Asia/Yekaterinburg
 
-Asia/Rangoon
+Asia/Yangon (Rangoon)
 
 Asia/Bangkok
 
@@ -163,7 +179,7 @@ Asia/Krasnoyarsk
 
 Asia/Singapore
 
-Australia//Perth
+Australia/Perth
 
 Asia/Taipei
 
@@ -207,7 +223,7 @@ Pacific/Apia
 
 Pacific/Kiritimati
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -216,7 +232,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.datetimetimezone"
+  "@odata.type": "microsoft.graph.dateTimeTimeZone"
 }-->
 
 ```json
@@ -236,3 +252,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

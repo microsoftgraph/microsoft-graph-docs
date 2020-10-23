@@ -1,47 +1,52 @@
-# image resource type
+---
+author: JeremyKelley
+ms.author: JeremyKelley
+ms.date: 09/10/2017
+title: Image
+localization_priority: Normal
+description: "The Image resource groups image-related properties into a single structure."
+ms.prod: ""
+doc_type: resourcePageType
+---
 
-The **image** resource is available on items that represent a bitmap or image.
+# Image resource type
 
+Namespace: microsoft.graph
 
-### Properties
-| Property      | Type    | Description                     |
-|:--------------|:--------|:--------------------------------|
-| **height**    | Int32   | Height of the image, in pixels. |
-| **width**     | Int32   | Width of the image, in pixels.  |
+The **Image** resource groups image-related properties into a single structure.
+If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item represents a bitmap image.
 
+**Note:** If the service is unable to determine the width and height of the image, the **Image** resource may be empty.
 
-## Notes
+## JSON representation
 
-In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension. This resource returns no properties in OneDrive for Business.
-
-
-
-### JSON representation
-
-Here is a JSON representation of the resource.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.image"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
 ```json
 {
-  "height": 1024,
-  "width": 1024
+  "width": 100,
+  "height": 200
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+## Properties
+
+| Property   | Type  | Description                                |
+|:-----------|:------|:-------------------------------------------|
+| **height** | Int32 | Optional. Height of the image, in pixels. Read-only. |
+| **width**  | Int32 | Optional. Width of the image, in pixels. Read-only.  |
+
+## Remarks
+
+In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension.
+
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+
+
 <!-- {
   "type": "#page.annotation",
-  "description": "image resource",
-  "keywords": "",
+  "description": "The image facet describes properties of an image like width and height",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Image"
+} -->
+

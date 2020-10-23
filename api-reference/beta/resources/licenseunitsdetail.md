@@ -1,9 +1,28 @@
+---
+title: "licenseUnitsDetail resource type"
+description: "The **prepaidUnits** property of the subscribedSku entity is of type **licenseUnitsDetail**."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: "krbain"
+---
+
 # licenseUnitsDetail resource type
 
-The **prepaidUnits** property of the [SubscribedSku] entity is of type **LicenseUnitsDetail**.
+Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-### JSON representation
+The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.
+
+## Properties
+| Property	   | Type	|Description|
+|:-------------|:-----|:----------|
+|enabled|Int32| The number of units that are enabled. |
+|suspended|Int32| The number of units that are suspended. |
+|warning|Int32| The number of units that are in warning status. |
+
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -12,7 +31,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.licenseunitsdetail"
+  "@odata.type": "microsoft.graph.licenseUnitsDetail"
 }-->
 
 ```json
@@ -23,19 +42,18 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|enabled|Int32|            |
-|suspended|Int32|            |
-|warning|Int32|            |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "licenseUnitsDetail resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+

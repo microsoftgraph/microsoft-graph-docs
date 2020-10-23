@@ -1,0 +1,7 @@
+# These files are text and should be normalized (convert crlf => lf)
+*.md    text
+*.yml   text
+*.ps1   text
+*.cmd   text
+*.json  text
+*.xml   text

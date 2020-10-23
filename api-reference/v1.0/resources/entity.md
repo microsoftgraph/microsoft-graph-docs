@@ -1,31 +1,32 @@
+---
+title: "entity resource type"
+description: ""
+localization_priority: Normal
+author: "MSGraphDocsVteam"
+ms.prod: "keylimesoda"
+doc_type: resourcePageType
+---
+
 # entity resource type
 
+Namespace: microsoft.graph
 
-### Methods
-
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Get entity](../api/entity_get.md) | [entity](entity.md) |Read properties and relationships of entity object.|
-|[Delete](../api/entity_delete.md) | None |Delete entity object. |
-
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 
-### Relationships
+## Relationships
 None
 
-
-
-
-
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "abstract": "true",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -48,3 +49,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

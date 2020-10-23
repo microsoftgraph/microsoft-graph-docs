@@ -1,14 +1,24 @@
+---
+title: "recipient resource type"
+description: "Represents information about a user in the sending or receiving end of an event, message or group post. "
+localization_priority: Normal
+author: "svpsiva"
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # recipient resource type
 
-A sender or receiver for a message.
+Namespace: microsoft.graph
 
-### Properties
+Represents information about a user in the sending or receiving end of an event, message or group post.
+
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|The recipient's email address.|
 
-
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -36,3 +46,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

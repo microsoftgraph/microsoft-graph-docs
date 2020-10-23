@@ -1,8 +1,21 @@
+---
+title: "timeSlot resource type"
+description: "A time period."
+localization_priority: Normal
+doc_type: resourcePageType
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+---
+
 # timeSlot resource type
 
+Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-### JSON representation
+Represents a time slot for a meeting.
+
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -11,28 +24,33 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeslot"
+  "@odata.type": "microsoft.graph.timeSlot"
 }-->
 
 ```json
 {
-  "end": {"@odata.type": "microsoft.graph.timeStamp"},
-  "start": {"@odata.type": "microsoft.graph.timeStamp"}
+  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"}
 }
 
 ```
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|end|[TimeStamp](timestamp.md)||
-|start|[TimeStamp](timestamp.md)||
+|end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that a period begins. |
+|start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that a period ends.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "timeSlot resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+

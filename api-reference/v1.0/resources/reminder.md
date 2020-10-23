@@ -1,21 +1,31 @@
+---
+title: "reminder resource type"
+description: "A reminder for an event in a user calendar."
+localization_priority: Normal
+author: "harini84"
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # reminder resource type
 
+Namespace: microsoft.graph
 
+A reminder for an [event](event.md) in a user [calendar](calendar.md).
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|changeKey|String||
-|eventEndTime|[DateTimeTimeZone](datetimetimezone.md)||
-|eventId|String||
-|eventLocation|[Location](location.md)||
-|eventStartTime|[DateTimeTimeZone](datetimetimezone.md)||
-|eventSubject|String||
-|eventWebLink|String||
-|reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)||
+|changeKey|String|Identifies the version of the reminder. Every time the reminder is changed, **changeKey** changes as well. This allows Exchange to apply changes to the correct version of the object.|
+|eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time and time zone that the event ends.|
+|eventId|String|The unique ID of the event. Read only.|
+|eventLocation|[Location](location.md)|The location of the event.|
+|eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts.|
+|eventSubject|String|The text of the event's subject line.|
+|eventWebLink|String|The URL to open the event in Outlook on the web.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
+|reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the reminder is set to occur.|
 
-
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -50,3 +60,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

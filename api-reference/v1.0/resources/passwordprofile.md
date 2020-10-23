@@ -1,16 +1,27 @@
+---
+title: "passwordProfile resource type"
+description: "Contains the password profile associated with a user. The **passwordProfile** property of the user entity is a **passwordProfile** object."
+localization_priority: Priority
+author: "eketo-msft"
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # passwordProfile resource type
+
+Namespace: microsoft.graph
 
 Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.
 
 
-### Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Boolean| **true** if the user must change her password on the next login; otherwise **false**. |
+|forceChangePasswordNextSignInWithMfa|Boolean| If **true**, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to **forceChangePasswordNextSignIn** except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to **false**. If not set, default is **false**. |
 |password|String|The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s **passwordPolicies** property. By default, a strong password is required.|
 
-
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -19,12 +30,13 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json
 {
   "forceChangePasswordNextSignIn": true,
+  "forceChangePasswordNextSignInWithMfa": false,
   "password": "string"
 }
 
@@ -39,3 +51,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

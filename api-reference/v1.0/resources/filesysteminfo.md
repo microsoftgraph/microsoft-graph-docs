@@ -1,54 +1,76 @@
-# fileSystemInfo resource type
+---
+author: JeremyKelley
+ms.author: JeremyKelley
+ms.date: 09/10/2017
+title: FileSystemInfo
+localization_priority: Normal
+description: "The FileSystemInfo resource contains properties that are reported by the device's local file system for the local version of an item."
+ms.prod: ""
+doc_type: resourcePageType
+---
 
-The **fileSystemInfo** resource contains properties that are reported by the
-device's local file system for the local version of an item. This facet can be used to specify the last modified date or created date of the item as it was on the local device.
+# FileSystemInfo facet
 
+Namespace: microsoft.graph
 
-### Properties
+The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item.
+This facet can be used to specify the last modified date or created date of the item as it was on the local device.
 
-| Property                 | Type                      | Description                                                   |
-|:-------------------------|:--------------------------|:--------------------------------------------------------------|
-| **createdDateTime**      | DateTimeOffset | The UTC date and time the file was created on a client.       |
-| **lastModifiedDateTime** | DateTimeOffset | The UTC date and time the file was last modified on a client. |
+It is available on the fileSystemInfo property of [driveItem][item-resource] resources.
 
-### Notes
-Values for createdDateTime and lastModifiedDateTime vary from the same
-properties on the [driveitem](driveitem.md) resource. The values on the item
-resource are the created and modified date and time as seen from the service.
-The values stored in the **fileSystemInfo** facet are provided by the client.
-
-For example, if a file was created on the device on on Monday, but not uploaded to the service until Tuesday, the client that uploads the file should write the `fileSystemInfo` facet to include the created date on Monday. When the item metadata is retrieved, the created date for the item will reflect Tuesday, but the `fileSystemInfo` facet will show the orignal created date on Monday.
-
-These properties are read/write. If you are uploading a file and know the
-local client values for these fields, you should include them in the request.
-
-### JSON representation
-
-Here is a JSON representation of the resource.
+## JSON representation
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "lastAccessedDateTime"
   ],
-  "@odata.type": "microsoft.graph.filesysteminfo"
+  "@odata.type": "microsoft.graph.fileSystemInfo"
 }-->
 
 ```json
 {
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "createdDateTime" : "datetime",
+  "lastAccessedDateTime": "datetime",
+  "lastModifiedDateTime" : "datetime"
 }
-
 ```
 
+## Properties
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+| Property                 | Type           | Description                                                                                                          |
+| :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
+| **createdDateTime**      | DateTimeOffset | The UTC date and time the file was created on a client.                                                              |
+| **lastAccessedDateTime** | DateTimeOffset | The UTC date and time the file was last accessed. Available for the [recent file list](../api/drive-recent.md) only. |
+| **lastModifiedDateTime** | DateTimeOffset | The UTC date and time the file was last modified on a client.                                                        |
+
+## Notes
+
+Values for **createdDateTime** and **lastModifiedDateTime** vary from the same properties on the [DriveItem](driveitem.md) resource.
+The values on the DriveItem resource are the created and modified date and time as seen from the service.
+The values stored in the **FileSystemInfo** resource are provided by the client.
+
+For example, if a file was created on the device on Monday, but not uploaded to the service until Tuesday, the client that uploads the file should write the `fileSystemInfo` facet to include the created date on Monday. 
+When the item metadata is retrieved, the created date for the item will reflect Tuesday, but the `fileSystemInfo` facet will show the original created date on Monday.
+
+These properties are read/write.
+If you are uploading a file and know the local client values for these fields, you should include them in the request.
+
+If the file's content is updated and these properties are not provided, **lastModifiedDateTime** automatically resets to the current time.
+
+## Remarks
+
+* **lastAccessedDateTime** is not available for items in SharePoint online or OneDrive for Business.
+
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+
+[item-resource]: ../resources/driveitem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "fileSystemInfo resource",
-  "keywords": "",
+  "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
+  "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/FileSystemInfo"
+} -->
+

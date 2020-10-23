@@ -1,8 +1,54 @@
+---
+title: "conversationThread resource type"
+description: "A conversationThread is a collection of posts."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
+doc_type: resourcePageType
+---
+
 # conversationThread resource type
 
+Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-### JSON representation
+A conversationThread is a collection of [posts](post.md).
+
+The last post's recipients collection is the aggregated recipients of the entire thread. A thread can have a growing collection of recipients.
+A new thread is created when a recipient is removed from the thread.
+
+## Methods
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[List threads](../api/group-list-threads.md) | [conversationThread](conversationthread.md) collection |Get all the threads of a group.|
+|[Create thread](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are created in the group.|
+|[Get conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Get a specific thread that belongs to a group. |
+|[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Update conversationThread object. |
+|[Delete](../api/conversationthread-delete.md) | None |Delete conversationThread object. |
+|[reply](../api/conversationthread-reply.md)|None|Reply to this thread by creating a new Post entity.|
+|[List Posts](../api/conversationthread-list-posts.md) |[post](post.md) collection| Get the posts of the specified thread. |
+
+## Properties
+| Property              | Type                                 | Description                                                                                                                                                                                      |
+|:----------------------|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id                    | String                               | Read-only.                                                                                                                                                                                       |
+| toRecipients          | [recipient](recipient.md) collection | The To: recipients for the thread.                                                                                                                                                               |
+| ccRecipients          | [recipient](recipient.md) collection | The Cc: recipients for the thread.                                                                                                                                                               |
+| topic                 | String                               | The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.                                                                              |
+| hasAttachments        | Boolean                              | Indicates whether any of the posts within this thread has at least one attachment.                                                                                                               |
+| lastDeliveredDateTime | DateTimeOffset                       | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
+| uniqueSenders         | String collection                    | All the users that sent a message to this thread.                                                                                                                                                |
+| preview               | String                               | A short summary from the body of the latest post in this conversation.                                                                                                                           |
+| isLocked              | Boolean                              | Indicates if the thread is locked.                                                                                                                                                               |
+
+## Relationships
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|posts|[post](post.md) collection| Read-only. Nullable.|
+
+## JSON representation
 
 Here is a JSON representation of the resource
 
@@ -11,7 +57,8 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "posts"
   ],
-  "@odata.type": "microsoft.graph.conversationthread"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.conversationThread"
 }-->
 
 ```json
@@ -28,41 +75,19 @@ Here is a JSON representation of the resource
 }
 
 ```
-### Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|ccRecipients|[Recipient](recipient.md) collection||
-|hasAttachments|Boolean||
-|id|String| Read-only.|
-|isLocked|Boolean||
-|lastDeliveredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|preview|String||
-|toRecipients|[Recipient](recipient.md) collection||
-|topic|String||
-|uniqueSenders|String collection||
 
-### Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|posts|[Post](post.md) collection| Read-only. Nullable.|
-
-### Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Read properties and relationships of conversationThread object.|
-|[Create Post](../api/conversationthread_post_posts.md) |[Post](post.md)| Create a new Post by posting to the posts collection.|
-|[List posts](../api/conversationthread_list_posts.md) |[Post](post.md) collection| Get a Post object collection.|
-|[Update](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)	|Update conversationThread object. |
-|[Delete](../api/conversationthread_delete.md) | None |Delete conversationThread object. |
-|[reply](../api/conversationthread_reply.md)|None||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "conversationThread resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+

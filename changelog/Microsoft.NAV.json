@@ -1,0 +1,40 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "c36c0bbc-95e7-46e9-b461-85c0b8975fce",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Financials API reference",
+          "ChangeType": "Addition",
+          "Description": "Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](https://docs.microsoft.com/en-us/graph/api/resources/dynamics-graph-reference?view=graph-rest-1.0).",
+          "Target": "Financials API reference"
+        }
+      ],
+      "Id": "c36c0bbc-95e7-46e9-b461-85c0b8975fce",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-03-01T00:00:00",
+      "WorkloadArea": "Financials",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "29e14f5e-7cb8-432e-9be7-5f5665a4185c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Financials API reference",
+          "ChangeType": "Addition",
+          "Description": "Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](https://docs.microsoft.com/en-us/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta)",
+          "Target": "Financials API reference"
+        }
+      ],
+      "Id": "29e14f5e-7cb8-432e-9be7-5f5665a4185c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-09-01T00:00:00",
+      "WorkloadArea": "Financials",
+      "SubArea": ""
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+### YamlMime:Landing
+
+title: Microsoft Graph auth overview
+summary: Learn how to authenticate and work with permissions to securely access data through Microsoft Graph. Explore the documentation below to learn about app registration, authentication libraries, authorization, and other parts of the Microsoft identity platform that support Microsoft Graph development.
+
+metadata: 
+  ms.topic: landing-page
+  ms.date: 05/07/2020
+  author: CelesteDG
+  ms.author: celested
+  services: active-directory
+  ms.service: active-directory
+  ms.workload: identity
+  ms.reviewer: jawoods  
+  ms.custom: graphiamtop20   
+
+landingContent:
+  - title: Get started
+    linkLists:     
+      - linkListType: concept
+        links:
+          - text: Authentication and authorization basics
+            url: ./auth-concepts.md
+          - text: App registration
+            url: ../auth-register-app-v2.md
+      - linkListType: video
+        links:
+          - text: Microsoft Graph and app registration (7:29)
+            url: https://www.youtube.com/watch?v=93j0MmRruFo
+  - title: Enhance your app
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Get access on behalf of a user
+            url: ../auth-v2-user.md
+          - text: Get access without a user
+            url: ../auth-v2-service.md
+      - linkListType: reference
+        links:
+          - text: Permissions reference
+            url: ../permissions-reference.md
+  - title: Manage your app
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage app access
+            url: ../auth-cloudsolutionprovider.md
+          - text: Limit mailbox access
+            url: ../auth-limit-mailbox-access.md
+      - linkListType: reference
+        links:
+          - text: Authorization errors
+            url: ../resolve-auth-errors.md
+  - title: Auth SDKs - MSAL
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Android
+            url: https://github.com/AzureAD/microsoft-authentication-library-for-android
+          - text: Angular
+            url: https://github.com/AzureAD/microsoft-authentication-library-for-js
+          - text: ASP.NET
+            url: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
+          - text: iOS
+            url: https://github.com/AzureAD/microsoft-authentication-library-for-objc
+          - text: JavaScript
+            url: https://github.com/AzureAD/microsoft-authentication-library-for-js
+          - text: Python
+            url: https://github.com/AzureAD/microsoft-authentication-library-for-python
+          - text: UWP
+            url: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
+          - text: Xamarin
+            url: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
+  - title: Auth SDKs - Open source
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Android
+            url: https://github.com/openid/AppAuth-Android
+          - text: iOS
+            url: https://github.com/openid/AppAuth-iOS
+          - text: Java
+            url: https://github.com/scribejava/scribejava
+          - text: JavaScript
+            url: https://adodson.com/hello.js/
+          - text: Node.js
+            url: https://github.com/panva/node-openid-client
+          - text: PHP
+            url: https://github.com/thephpleague/oauth2-client
+          - text: Python
+            url: https://github.com/requests/requests-oauthlib
+          - text: Ruby
+            url: https://github.com/omniauth/omniauth/wiki
+          - text: React Native
+            url: https://github.com/FormidableLabs/react-native-app-auth
