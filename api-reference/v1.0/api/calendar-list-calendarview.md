@@ -72,6 +72,18 @@ This method also supports some of the [OData Query Parameters](/graph/query-para
 | Authorization  | string | Bearer {token}. Required.  |
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
+For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.
+```http
+Prefer: outlook.timezone="Eastern Standard Time"
+```
+
+If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. 
+See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end 
+times are returned in UTC.
+
+You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to 
+find out the time zone used when the event was created.
+
 ## Request body
 Do not supply a request body for this method.
 
