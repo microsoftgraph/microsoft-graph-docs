@@ -921,17 +921,17 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _IdentityUserFlow.Read.All_ |   Read all identity user flows in a tenant  | Allows the app to read your organization's user flows. | Yes | No |
-| _IdentityUserFlow.ReadWrite.All_ |   Read and write all identity user flows in a tenant.    | Allows teh app to read or write your organization's user flows. | Yes | No |
+| Permission                       | Display String                                      | Description                                                     | Admin Consent Required | Microsoft Account supported |
+| :------------------------------- | :-------------------------------------------------- | :-------------------------------------------------------------- | :--------------------- | :-------------------------- |
+| _IdentityUserFlow.Read.All_      | Read all identity user flows in a tenant            | Allows the app to read your organization's user flows.          | Yes                    | No                          |
+| _IdentityUserFlow.ReadWrite.All_ | Read and write all identity user flows in a tenant. | Allows teh app to read or write your organization's user flows. | Yes                    | No                          |
 
 #### Application permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _IdentityUserFlow.Read.All_ |   Read all identity user flows in a tenant  | Allows the app to read your organization's user flows. | Yes | No |
-| _IdentityUserFlow.ReadWrite.All_ |   Read and write all identity user flows in a tenant.    | Allows teh app to read or write your organization's user flows. | Yes | No |
+| Permission                       | Display String                                      | Description                                                     | Admin Consent Required | Microsoft Account supported |
+| :------------------------------- | :-------------------------------------------------- | :-------------------------------------------------------------- | :--------------------- | :-------------------------- |
+| _IdentityUserFlow.Read.All_      | Read all identity user flows in a tenant            | Allows the app to read your organization's user flows.          | Yes                    | No                          |
+| _IdentityUserFlow.ReadWrite.All_ | Read and write all identity user flows in a tenant. | Allows teh app to read or write your organization's user flows. | Yes                    | No                          |
 
 ### Remarks
 

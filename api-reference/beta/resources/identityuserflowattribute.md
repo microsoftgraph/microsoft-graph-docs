@@ -1,4 +1,4 @@
----
+﻿---
 title: "identityUserFlowAttribute resource type"
 description: "Represents user flow attributes in an Azure Active Directory tenant and an Azure AD B2C tenant."
 localization_priority: Priority
@@ -19,23 +19,23 @@ Configuring user flow attributes in your Azure AD or Azure AD B2C tenant allows 
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List](../api/identityuserflowattribute-list.md)|identityUserFlowAttributes collection|Retrieve all built-in and custom user flow attributes.|
-|[Create](../api/identityuserflowattribute-post.md)|identityUserFlowAttribute|Create a new custom user flow attribute.|
-|[Get](../api/identityuserflowattribute-get.md) |identityUserFlowAttribute|Retrieve properties of a user flow attribute.|
-|[Update](../api/identityuserflowattribute-update.md)|None|Update a custom user flow attribute.|
-|[Delete](../api/identityuserflowattribute-delete.md)|None|Delete a custom user flow attribute.|
+| Method                                               | Return Type                           | Description                                            |
+| :--------------------------------------------------- | :------------------------------------ | :----------------------------------------------------- |
+| [List](../api/identityuserflowattribute-list.md)     | identityUserFlowAttributes collection | Retrieve all built-in and custom user flow attributes. |
+| [Create](../api/identityuserflowattribute-post.md)   | identityUserFlowAttribute             | Create a new custom user flow attribute.               |
+| [Get](../api/identityuserflowattribute-get.md)       | identityUserFlowAttribute             | Retrieve properties of a user flow attribute.          |
+| [Update](../api/identityuserflowattribute-update.md) | None                                  | Update a custom user flow attribute.                   |
+| [Delete](../api/identityuserflowattribute-delete.md) | None                                  | Delete a custom user flow attribute.                   |
 
 ## Properties
 
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|id|String|The identifier of the user flow attribute. This is a read-only attribute that is automatically created.|
-|displayName|String|The display name of the user flow attribute.|
-|description|String|The description of the user flow attribute that's shown to the user at the time of sign-up.|
-|userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property will be `builtIn` or `custom`.|
-|dataType|String|The data type of the user flow attribute. This cannot be modified after the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` - denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`boolean` - denotes that the dataType for the identityUserFlowAttribute is a Boolean.</li><li>`int64` - denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul>|
+| Property              | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| :-------------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id                    | String | The identifier of the user flow attribute. This is a read-only attribute that is automatically created.                                                                                                                                                                                                                                                                                                                                                             |
+| displayName           | String | The display name of the user flow attribute.                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| description           | String | The description of the user flow attribute that's shown to the user at the time of sign-up.                                                                                                                                                                                                                                                                                                                                                                         |
+| userFlowAttributeType | String | The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property will be `builtIn` or `custom`.                                                                                                                                                                                                                                                                       |
+| dataType              | String | The data type of the user flow attribute. This cannot be modified after the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` - denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`boolean` - denotes that the dataType for the identityUserFlowAttribute is a Boolean.</li><li>`int64` - denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul> |
 
 ## JSON representation
 

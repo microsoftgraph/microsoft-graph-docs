@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get identityUserFlowAttribute"
 description: "Retrieve the properties and relationships of an identityUserFlowAttribute object."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Retrieve the properties and relationships of a [identityUserFlowAttribute](../re
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged)               |
+| :------------------------------------- | :-------------------------------------------------------- |
+| Delegated (work or school account)     | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                            |
+| Application                            | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 
 The work or school account needs to belong to one of the following roles:
 
@@ -40,9 +40,9 @@ GET /identity/userFlowAttributes/{id}
 
 ## Request headers
 
-|Name|Description|
-|:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a JSON represent
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 ```
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Create identityUserFlowAttribute"
 description: "Create a new identityUserFlowAttribute object."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Create a new [identityUserFlowAttribute](../resources/identityuserflowattribute.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | IdentityUserFlow.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | IdentityUserFlow.ReadWrite.All              |
 
 The work or school account needs to belong to one of the following roles:
 
@@ -40,22 +40,22 @@ POST /identity/userFlowAttributes
 
 ## Request headers
 
-|Name|Description|
-|:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON representation of [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|id|String|The identifier of the user flow attribute. This is a read-only attribute that is automatically created.|
-|displayName|String|The display name of the user flow attribute.|
-|description|String|The description of the user flow attribute. It's shown to the user at the time of sign-up.|
-|userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property will be `builtIn` or `custom`.|
-|dataType|String|The data type of the user flow attribute. This cannot be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` : denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`boolean` : denotes that the dataType for the identityUserFlowAttribute is a boolean.</li><li>`int64` : denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul>|
+| Property              | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| :-------------------- | :----- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                    | String | The identifier of the user flow attribute. This is a read-only attribute that is automatically created.                                                                                                                                                                                                                                                                                                                                                            |
+| displayName           | String | The display name of the user flow attribute.                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| description           | String | The description of the user flow attribute. It's shown to the user at the time of sign-up.                                                                                                                                                                                                                                                                                                                                                                         |
+| userFlowAttributeType | String | The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property will be `builtIn` or `custom`.                                                                                                                                                                                                                                                                      |
+| dataType              | String | The data type of the user flow attribute. This cannot be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` : denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`boolean` : denotes that the dataType for the identityUserFlowAttribute is a boolean.</li><li>`int64` : denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul> |
 
 ## Response
 
@@ -73,7 +73,7 @@ The following is an example of the request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/userFlowAttributes
 Content-type: application/json
 

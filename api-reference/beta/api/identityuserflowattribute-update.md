@@ -1,4 +1,4 @@
----
+﻿---
 title: "Update identityUserFlowAttribute"
 description: "Update properties of an identityUserFlowAttribute."
 localization_priority: Normal
@@ -19,11 +19,11 @@ Update the properties of a [identityUserFlowAttribute](../resources/identityuser
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application| IdentityUserFlow.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | IdentityUserFlow.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | IdentityUserFlow.ReadWrite.All              |
 
 The work or school account needs to belong to one of the following roles:
 
@@ -40,10 +40,10 @@ PATCH /userFlowAttributes/{id}
 
 ## Request headers
 
-|Name|Description|
-|:---------------|:----------|
-|Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -51,9 +51,9 @@ In the request body, provide a JSON object with one or more properties that need
 
 >**Note:** Only the **description** property can be updated.
 
-|Property|Type|Description|
-|:---------------|:--------|:----------|
-|description|String|The description of the user flow attribute. It is shown to the user at the time of sign up.|
+| Property    | Type   | Description                                                                                 |
+| :---------- | :----- | :------------------------------------------------------------------------------------------ |
+| description | String | The description of the user flow attribute. It is shown to the user at the time of sign up. |
 
 ## Response
 
@@ -71,7 +71,7 @@ The following is an example of the request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identity/userFlowAttributes/extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby
 Content-type: application/json
 
