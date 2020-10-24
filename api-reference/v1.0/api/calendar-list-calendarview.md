@@ -81,7 +81,7 @@ If the event was created in a different time zone, the start and end times will 
 See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end 
 times are returned in UTC.
 
-You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to 
+You can use the **originalStartTimeZone** and **originalEndTimeZone** properties on the **event** resource to 
 find out the time zone used when the event was created.
 
 ## Request body
