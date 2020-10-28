@@ -17,7 +17,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | v1.0        | Added [applicationTemplate](/graph/api/resources/applicationtemplate.md?view=graph-rest-1.0). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md?view=graph-rest-1.0), [list](/graph/api/applicationtemplate-instantiate.md?view=graph-rest-1.0) and [get](/graph/api/applicationtemplate-get.md?view=graph-rest-1.0) applications from the Azure AD application gallery.  
+| Addition        | v1.0        | Added [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0), [list](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0) and [get](/graph/api/applicationtemplate-get?view=graph-rest-1.0) applications from the Azure AD application gallery.  
 
 ## October 2020
 
