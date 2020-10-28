@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Add an instance of an application from the Azure AD application gallery into your directory.
+Add an instance of an application from the Azure AD application gallery into your directory. To learn more about creating and configuring Azure AD gallery applications end-to-end visit [Automate SAML-based SSO app configuration with Microsoft Graph API](https://docs.microsoft.com/graph/application-saml-sso-configure-api).
 
 ## Permissions
 
