@@ -68,7 +68,9 @@ else {
 		& $nugetPath $nugetParams
 			
 		# Build ApiDoctor
-		Install-Module -Name Invoke-MsBuild -Scope CurrentUser -Force 
+        if (!(Get-Module -ListAvailable -Name Invoke-MsBuild)) {
+		    Install-Module -Name Invoke-MsBuild -Scope CurrentUser -Force 
+        }
 		Write-Host "`r`nBuilding API Doctor..."
 		Invoke-MsBuild -Path "$apidocPath\SourceCode\ApiDoctor.sln" -MsBuildParameters "/t:Rebuild /p:Configuration=Release /p:OutputPath=$apidocPath\ApiDoctor\tools"
 
