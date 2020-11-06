@@ -54,7 +54,7 @@ GET /subscriptions
 
 ## Optional query parameters
 
-This method does not support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method does not support the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -129,9 +129,13 @@ Content-length: 586
       "changeType": "updated,deleted",
       "clientState": null,
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
+      "lifecycleNotificationUrl":"https://webhook.azurewebsites.net/api/send/lifecycleNotifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
       "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-      "latestSupportedTlsVersion": "v1_2"
+      "latestSupportedTlsVersion": "v1_2",
+      "encryptionCertificate": "",
+      "encryptionCertificateId": "",
+      "includeResourceData": false
     }
   ]
 }

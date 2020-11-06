@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsDevicePerformance resource type"
 description: "The user experience analytics device performance entity contains device boot performance details."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -45,6 +45,10 @@ The user experience analytics device performance entity contains device boot per
 |groupPolicyLoginTimeInMs|Int32|The user experience analytics device group policy login time in milliseconds.|
 |deviceCount|Int64|User experience analytics summarized device count.|
 |responsiveDesktopTimeInMs|Int32|The user experience analytics responsive desktop time in milliseconds.|
+|blueScreenCount|Int32|Number of Blue Screens in the last 14 days. Valid values 0 to 9999999|
+|restartCount|Int32|Number of Restarts in the last 14 days. Valid values 0 to 9999999|
+|averageBlueScreens|Double|Average (mean) number of Blue Screens per device in the last 14 days. Valid values 0 to 9999999|
+|averageRestarts|Double|Average (mean) number of Restarts per device in the last 14 days. Valid values 0 to 9999999|
 
 ## Relationships
 None
@@ -74,9 +78,15 @@ Here is a JSON representation of the resource.
   "coreLoginTimeInMs": 1024,
   "groupPolicyLoginTimeInMs": 1024,
   "deviceCount": 1024,
-  "responsiveDesktopTimeInMs": 1024
+  "responsiveDesktopTimeInMs": 1024,
+  "blueScreenCount": 1024,
+  "restartCount": 1024,
+  "averageBlueScreens": "4.2",
+  "averageRestarts": "4.2"
 }
 ```
+
+
 
 
 

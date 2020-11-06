@@ -4,7 +4,7 @@ description: "Provides the sign-in status (Success or Failure) of the sign-in"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "SarahBar"
 ---
 
 # signInStatus resource type
@@ -51,3 +51,5 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

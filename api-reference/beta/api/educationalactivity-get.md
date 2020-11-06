@@ -31,19 +31,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/educationalActivities/{id}
+GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-|Name            |Value    |Description                                                                                                                                                                 |
-|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Limits the response to only those objects which contain the specified criteria.                                                                                             |
-|$orderby        |string   |By default the objects in the response are sorted by their createdDateTime value in a query. You can change the order of the of the response using the `$orderby` parameter.|
-|$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                        |
-|$skip           |int      |Skip the first n results, useful for paging.                                                                                                                                |
-|$top            |int      |Number of results to be returned.                                                                                                                                           |
+This method supports the `$select` query parameter. Specify a list of properties to include in the response, separating them by commas. For optimal performance, only select the subset of properties needed.
 
 ## Request headers
 
@@ -106,43 +99,57 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "completionMonthYear": "Date",
+  "endMonthYear": "Date",
   "institution": {
-    "description": "description-value",
-    "displayName": "displayName-value",
+    "description": null,
+    "displayName": "Colorado State University",
     "location": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+      "type": "business",
+      "postOfficeBox": null,
+      "street": "12000 E Prospect Rd",
+      "city": "Fort Collins",
+      "state": "Colorado",
+      "countryOrRegion": "USA",
+      "postalCode": "80525"
     },
-    "webUrl": "webUrl-value"
+    "webUrl": "https://www.colostate.edu"
   },
   "program": {
-    "abbreviation": "abbreviation-value",
-    "activities": "activities-value",
-    "awards": "awards-value",
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "fieldsOfStudy": "fieldsOfStudy-value",
-    "grade": "grade-value",
-    "notes": "notes-value",
-    "webUrl": "webUrl-value"
+    "abbreviation": "MBA",
+    "activities": null,
+    "awards": null,
+    "description": "Master of Business Administration with a major in Entreprenuership and Finance.",
+    "displayName": "Master of Business Administration",
+    "fieldsOfStudy": null,
+    "grade": "3.9",
+    "notes": null,
+    "webUrl": "https://biz.colostate.edu"
   },
-  "startMonthYear": "datetime-value"
+  "startMonthYear": "Date"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get educationalActivity",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

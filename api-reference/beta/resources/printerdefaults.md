@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the printer's default settings. Check the printer's [capabilities](../api/printer-getcapabilities.md) to see all the values that it supports.
+Represents the printer's default settings. Check the printer's [capabilities](printercapabilities.md) to see all the values that it supports.
 
 ## Properties
 | Property     | Type        | Description |
@@ -26,7 +26,7 @@ Represents the printer's default settings. Check the printer's [capabilities](..
 |mediaSize|String|The default media size to use. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.
 |pagesPerSheet|Int32|The default number of document pages to print on each sheet.
 |orientation|printOrientation|The default orientation to use when printing the document. Valid values are described in the following table.|
-|outputBin|String|The default output bin to place completed prints into. See the printer's [capabilities](../api/printer-getcapabilities.md) for a list of supported output bins.|
+|outputBin|String|The default output bin to place completed prints into. See the printer's [capabilities](printercapabilities.md) for a list of supported output bins.|
 |fitPdfToPage|Boolean|The default fitPdfToPage setting. True to fit each page of a PDF document to a physical sheet of media; false to let the printer decide how to lay out impressions.|
 |multipageLayout|printMultipageLayout|The default direction to lay out pages when multiple pages are being printed per sheet. Valid values are described in the following table.|
 |colorMode|printColorMode|The default color mode to use when printing the document. Valid values are described in the following table.|
@@ -152,7 +152,7 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-* [resetDefaults](../api/printer-resetdefaults.md)
+* [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -163,3 +163,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

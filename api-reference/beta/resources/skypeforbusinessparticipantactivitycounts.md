@@ -4,7 +4,7 @@ description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "kszb"
 ---
 
 # skypeForBusinessParticipantActivityCounts resource type
@@ -35,13 +35,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "im": 1024, 
-  "audioVideo": 1024, 
-  "appSharing": 1024, 
-  "web": 1024, 
-  "dialInOut3rdParty": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "im": 1024,
+  "audioVideo": 1024,
+  "appSharing": 1024,
+  "web": 1024,
+  "dialInOut3rdParty": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```
+
+

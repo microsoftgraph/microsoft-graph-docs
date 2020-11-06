@@ -2,7 +2,7 @@
 title: "verifiedDomain resource type"
 description: "Specifies a domain for a tenant. The **verifiedDomains** property of the organization entity is a collection of **VerifiedDomain**."
 localization_priority: Normal
-author: ""
+author: "davidmu1"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -55,3 +55,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

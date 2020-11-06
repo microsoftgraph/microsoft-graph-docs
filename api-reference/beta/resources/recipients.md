@@ -4,7 +4,7 @@ description: "Here is a JSON representation of the resource"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "MSGraphDocsVteam"
 ---
 
 # recipients resource type
@@ -54,3 +54,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

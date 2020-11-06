@@ -3,7 +3,7 @@ title: "appleAppListItem resource type"
 description: "Represents an app in the list of managed Apple applications"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,7 @@ Inherits from [appListItem](../resources/intune-deviceconfig-applistitem.md)
 |name|String|The application name Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 |publisher|String|The publisher of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 |appStoreUrl|String|The Store URL of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
-|appId|String|The bundle identifier of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
+|appId|String|The application or bundle identifier of the application Inherited from [appListItem](../resources/intune-deviceconfig-applistitem.md)|
 
 ## Relationships
 None
@@ -47,6 +47,8 @@ Here is a JSON representation of the resource.
   "appId": "String"
 }
 ```
+
+
 
 
 

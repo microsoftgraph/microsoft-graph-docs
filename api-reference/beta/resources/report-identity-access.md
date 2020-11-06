@@ -3,7 +3,7 @@ title: "Identity and access reports API overview"
 description: "Access identity and access reports to get the information about how people in your business are using applications in your Azure Active Directory tenant."
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
-author: "kholtz"
+author: "khotz"
 doc_type: conceptualPageType
 ---
 
@@ -43,3 +43,5 @@ Reports resources and APIs can open up new ways for you to engage with users and
 
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+
+

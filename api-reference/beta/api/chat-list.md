@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -141,3 +141,5 @@ Content-length: 262
   ]
 }
 -->
+
+

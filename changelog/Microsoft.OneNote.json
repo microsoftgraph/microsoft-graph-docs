@@ -1,9 +1,9 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "4bf1f9d6-d52e-4df5-af39-8ea8f7a576e6",
+          "Id": "7f1afeea-1c73-4e84-af08-8c9cd0fe27d5",
           "ApiChange": "method",
           "ChangedApiName": "getNotebookFromWebUrl",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "getNotebookFromWebUrl"
         }
       ],
-      "Id": "4bf1f9d6-d52e-4df5-af39-8ea8f7a576e6",
+      "Id": "7f1afeea-1c73-4e84-af08-8c9cd0fe27d5",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-02-01T00:00:00",
@@ -21,7 +21,7 @@
     {
       "ChangeList": [
         {
-          "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
+          "Id": "e3abed08-0a42-41d2-9ab1-86ad52ffee4d",
           "ApiChange": "Parameter",
           "ChangedApiName": "CopyNotebook",
           "ChangeType": "Addition",
@@ -29,7 +29,7 @@
           "Target": "CopyNotebook"
         }
       ],
-      "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
+      "Id": "e3abed08-0a42-41d2-9ab1-86ad52ffee4d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-08-01T00:00:00",
@@ -39,7 +39,7 @@
     {
       "ChangeList": [
         {
-          "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
+          "Id": "e3abed08-0a42-41d2-9ab1-86ad52ffee4d",
           "ApiChange": "Property",
           "ChangedApiName": "site",
           "ChangeType": "Addition",
@@ -47,7 +47,7 @@
           "Target": "onenote"
         }
       ],
-      "Id": "573c9746-7134-40fc-bc4a-5dd851bcd909",
+      "Id": "e3abed08-0a42-41d2-9ab1-86ad52ffee4d",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-08-01T00:00:00",

@@ -3,7 +3,7 @@ title: "deviceComplianceScriptDeviceState resource type"
 description: "Contains properties for device run state of the device compliance script."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -62,6 +62,8 @@ Here is a JSON representation of the resource.
   "scriptError": "String"
 }
 ```
+
+
 
 
 

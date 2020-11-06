@@ -3,7 +3,7 @@ title: "iosLobApp resource type"
 description: "Contains properties and inherited properties for iOS Line Of Business apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -113,6 +113,8 @@ Here is a JSON representation of the resource.
   "buildNumber": "String"
 }
 ```
+
+
 
 
 

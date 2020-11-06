@@ -19,7 +19,8 @@ const connectedOrganization = {
       domainName: "example.com",
       displayName: "example.com"
       }
-  ]
+  ],
+  state:"proposed"
 };
 
 let res = await client.api('/identityGovernance/entitlementManagement/connectedOrganizations/')

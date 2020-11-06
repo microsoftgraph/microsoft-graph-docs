@@ -18,7 +18,7 @@ var certificateBasedAuthConfiguration = new CertificateBasedAuthConfiguration
 	}
 };
 
-await graphClient.Organization["{id}"].CertificateBasedAuthConfiguration
+await graphClient.Organization["{id}"].CertificateBasedAuthConfiguration.References
 	.Request()
 	.AddAsync(certificateBasedAuthConfiguration);
 

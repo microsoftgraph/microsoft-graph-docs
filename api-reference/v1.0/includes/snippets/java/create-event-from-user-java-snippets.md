@@ -36,6 +36,7 @@ attendees.type = AttendeeType.REQUIRED;
 attendeesList.add(attendees);
 event.attendees = attendeesList;
 event.allowNewTimeProposals = true;
+event.transactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7";
 
 graphClient.me().events()
 	.buildRequest( requestOptions )

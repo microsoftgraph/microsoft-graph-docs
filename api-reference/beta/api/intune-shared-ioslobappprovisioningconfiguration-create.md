@@ -3,7 +3,7 @@ title: "Create iosLobAppProvisioningConfiguration"
 description: "Create a new iosLobAppProvisioningConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -114,6 +114,8 @@ Content-Length: 547
   "version": 7
 }
 ```
+
+
 
 
 

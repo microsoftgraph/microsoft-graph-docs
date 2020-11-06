@@ -3,7 +3,7 @@ title: "List depIOSEnrollmentProfiles"
 description: "List properties and relationships of the depIOSEnrollmentProfile objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2322
+Content-Length: 2414
 
 {
   "value": [
@@ -76,7 +76,6 @@ Content-Length: 2322
       "isDefault": true,
       "supervisedModeEnabled": true,
       "supportDepartment": "Support Department value",
-      "passCodeDisabled": true,
       "isMandatory": true,
       "locationDisabled": true,
       "supportPhoneNumber": "Support Phone Number value",
@@ -86,7 +85,6 @@ Content-Length: 2322
       "termsAndConditionsDisabled": true,
       "touchIdDisabled": true,
       "applePayDisabled": true,
-      "zoomDisabled": true,
       "siriDisabled": true,
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
@@ -118,11 +116,17 @@ Content-Length: 2322
       "expressLanguageScreenDisabled": true,
       "preferredLanguageScreenDisabled": true,
       "deviceToDeviceMigrationDisabled": true,
-      "welcomeScreenDisabled": true
+      "welcomeScreenDisabled": true,
+      "passCodeDisabled": true,
+      "zoomDisabled": true,
+      "restoreCompletedScreenDisabled": true,
+      "updateCompleteScreenDisabled": true
     }
   ]
 }
 ```
+
+
 
 
 

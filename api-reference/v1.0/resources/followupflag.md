@@ -2,7 +2,7 @@
 title: "followupFlag resource type"
 description: "Allows setting a flag in an item for the user to follow up on later. "
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 
-Allows setting a flag in an item for the user to follow up on later. 
+Allows setting a flag in an item for the user to follow up on later.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -53,3 +53,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -41,3 +41,4 @@ Here is a JSON representation of the resource
 | sharingType     		  | String        | Determines the way the document was shared, can be by a "Link", "Attachment", "Group", "Site".     |
 | sharedBy      	      | [insightIdentity](insights-insightidentity.md)	    | The user who shared the document.  |
 | sharingReference		  | [resourceReference](insights-resourcereference.md)	    |  |
+

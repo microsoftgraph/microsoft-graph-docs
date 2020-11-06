@@ -152,7 +152,7 @@ Content-type: application/json
 
 ## See also
 
-[Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
+[Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id)
 
 [onPremisesExtensionAttributes resource type](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
 

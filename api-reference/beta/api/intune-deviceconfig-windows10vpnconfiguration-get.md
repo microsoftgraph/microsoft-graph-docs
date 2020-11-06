@@ -3,7 +3,7 @@ title: "Get windows10VpnConfiguration"
 description: "Read properties and relationships of the windows10VpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -220,6 +220,8 @@ Content-Length: 4950
   }
 }
 ```
+
+
 
 
 

@@ -19,9 +19,9 @@ The following table lists the three scenarios where you can get an open extensio
 
 |**GET scenario**|**Supported resources**|**Response body**|
 |:-----|:-----|:-----|
-|Get a specific extension from a known resource instance.| [Administrative unit](../resources/administrativeunit.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Open extension only.|
-|Get a known resource instance expanded with a specific extension.|Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user |A resource instance expanded with the open extension.|
-|Find and expand resource instances with a specific extension. | Event, group event, group post, message, personal contact |Resource instances expanded with the open extension.|
+|Get a specific extension from a known resource instance.| [Administrative unit](../resources/administrativeunit.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md), [task](../resources/todotask.md), [tasklist](../resources/todotasklist.md)  | Open extension only.|
+|Get a known resource instance expanded with a specific extension.|Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user, task, task list. |A resource instance expanded with the open extension.|
+|Find and expand resource instances with a specific extension. | Event, group event, group post, message, personal contact, task, task list |Resource instances expanded with the open extension.|
 
 ## Permissions
 
@@ -38,6 +38,8 @@ Depending on the resource that contains the extension and the permission type (d
 | [organization](../resources/organization.md) | User.Read | Not supported | Organization.Read.All |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## HTTP request
 
@@ -60,11 +62,13 @@ GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
 ### Get a known resource instance expanded with a matching extension 
 
-For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, 
+For the event, group event, group post, message, personal contact, task, task list resource types, you can use the same REST request as getting the resource instance, 
 look for an extension that matches a filter on its **id** property, and expand the instance with the extension. The response includes 
 most of the resource properties.
 
@@ -75,6 +79,8 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
 
@@ -552,3 +558,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

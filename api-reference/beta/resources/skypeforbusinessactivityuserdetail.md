@@ -4,7 +4,7 @@ description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "kszb"
 ---
 
 # skypeForBusinessActivityUserDetail resource type
@@ -62,40 +62,42 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "totalPeerToPeerSessionCount": 1024, 
-  "totalOrganizedConferenceCount": 1024, 
-  "totalParticipatedConferenceCount": 1024, 
-  "peerToPeerLastActivityDate": "Date", 
-  "organizedConferenceLastActivityDate": "Date", 
-  "participatedConferenceLastActivityDate": "Date", 
-  "peerToPeerIMCount": 1024, 
-  "peerToPeerAudioCount": 1024, 
-  "peerToPeerAudioMinutes": 1024, 
-  "peerToPeerVideoCount": 1024, 
-  "peerToPeerVideoMinutes": 1024, 
-  "peerToPeerAppSharingCount": 1024, 
-  "peerToPeerFileTransferCount": 1024, 
-  "organizedConferenceIMCount": 1024, 
-  "organizedConferenceAudioVideoCount": 1024, 
-  "organizedConferenceAudioVideoMinutes": 1024, 
-  "organizedConferenceAppSharingCount": 1024, 
-  "organizedConferenceWebCount": 1024, 
-  "organizedConferenceDialInOut3rdPartyCount": 1024, 
-  "organizedConferenceCloudDialInOutMicrosoftCount": 1024, 
-  "organizedConferenceCloudDialInMicrosoftMinutes": 1024, 
-  "organizedConferenceCloudDialOutMicrosoftMinutes": 1024, 
-  "participatedConferenceIMCount": 1024, 
-  "participatedConferenceAudioVideoCount": 1024, 
-  "participatedConferenceAudioVideoMinutes": 1024, 
-  "participatedConferenceAppSharingCount": 1024, 
-  "participatedConferenceWebCount": 1024, 
-  "participatedConferenceDialInOut3rdPartyCount": 1024, 
-  "reportRefreshDate": "Date", 
-  "userPrincipalName": "String", 
-  "isDeleted": true, 
-  "deletedDate": "Date", 
-  "lastActivityDate": "Date", 
-  "assignedProducts": ["String"], 
+  "totalPeerToPeerSessionCount": 1024,
+  "totalOrganizedConferenceCount": 1024,
+  "totalParticipatedConferenceCount": 1024,
+  "peerToPeerLastActivityDate": "Date",
+  "organizedConferenceLastActivityDate": "Date",
+  "participatedConferenceLastActivityDate": "Date",
+  "peerToPeerIMCount": 1024,
+  "peerToPeerAudioCount": 1024,
+  "peerToPeerAudioMinutes": 1024,
+  "peerToPeerVideoCount": 1024,
+  "peerToPeerVideoMinutes": 1024,
+  "peerToPeerAppSharingCount": 1024,
+  "peerToPeerFileTransferCount": 1024,
+  "organizedConferenceIMCount": 1024,
+  "organizedConferenceAudioVideoCount": 1024,
+  "organizedConferenceAudioVideoMinutes": 1024,
+  "organizedConferenceAppSharingCount": 1024,
+  "organizedConferenceWebCount": 1024,
+  "organizedConferenceDialInOut3rdPartyCount": 1024,
+  "organizedConferenceCloudDialInOutMicrosoftCount": 1024,
+  "organizedConferenceCloudDialInMicrosoftMinutes": 1024,
+  "organizedConferenceCloudDialOutMicrosoftMinutes": 1024,
+  "participatedConferenceIMCount": 1024,
+  "participatedConferenceAudioVideoCount": 1024,
+  "participatedConferenceAudioVideoMinutes": 1024,
+  "participatedConferenceAppSharingCount": 1024,
+  "participatedConferenceWebCount": 1024,
+  "participatedConferenceDialInOut3rdPartyCount": 1024,
+  "reportRefreshDate": "Date",
+  "userPrincipalName": "String",
+  "isDeleted": true,
+  "deletedDate": "Date",
+  "lastActivityDate": "Date",
+  "assignedProducts": ["String"],
   "reportPeriod": "String"
 }
 ```
+
+

@@ -29,6 +29,30 @@ The most common causes of throttling of clients include:
 - A large number of requests across all applications in a tenant.
 - A large number of requests from a particular application across all tenants.
 
+## Sample response
+
+Whenever the throttling threshold is exceeded, Microsoft Graph responds with a response similar to this one.
+
+```http
+HTTP/1.1 429 Too Many Requests
+Content-Type: application/json
+Retry-After: 2.128
+
+{
+  "error": {
+    "code": "TooManyRequests",
+    "innerError": {
+      "code": "429",
+      "date": "2020-08-18T12:51:51",
+      "message": "Please retry after",
+      "request-id": "94fb3b52-452a-4535-a601-69e0a90e3aa2",
+      "status": "429"
+    },
+    "message": "Please retry again later."
+  }
+}
+```
+
 ## Best practices to handle throttling
 
 The following are best practices for handling throttling:
@@ -45,10 +69,10 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 
 All the resources and APIs described in the [Service-specific limits](#service-specific-limits) section provide a `Retry-After` header except when noted.
 
-For a broader discussion of throttling in the Microsoft Cloud, see [Throttling pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
+For a broader discussion of throttling in the Microsoft Cloud, see [Throttling pattern](/azure/architecture/patterns/throttling).
 
 > [!NOTE]
-> If no `Retry-After` header is provided by the response, we recommend implementing an exponential backoff retry policy. You can also implement [more advanced patterns](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) when building large-scale applications.
+> If no `Retry-After` header is provided by the response, we recommend implementing an exponential backoff retry policy. You can also implement [more advanced patterns](/azure/architecture/patterns/category/resiliency) when building large-scale applications.
 >
 > Microsoft Graph SDKs already implement handlers that rely on the `Retry-After` header or default to an exponential backoff retry policy.
 
@@ -57,7 +81,13 @@ For a broader discussion of throttling in the Microsoft Cloud, see [Throttling p
 Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
 
 >[!NOTE]
->[Best practices for discovering files and detecting changes at scale](https://docs.microsoft.com/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) describes best practices in details.
+>[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) describes best practices in details.
+
+## Throttling and batching
+
+[JSON batching](./json-batching.md) allows you to optimize your application by combining multiple requests into a single JSON object. Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a `status` of `429` and an error similar to the one provided above. The batch itself fails with a status code of `424` (Failed Dependency). It is possible for multiple requests to be throttled in a single batch. You should retry each failed request from the batch using the value provided in the `retry-after` response header from the JSON content. You may retry all the failed requests in a new batch after the longest `retry-after` value.
+
+If SDKs retry throttled requests automatically when they are not batched, throttled requests that were part of a batch are not retried automatically.
 
 ## Service-specific limits
 
@@ -76,7 +106,7 @@ Any request can be evaluated against multiple limits, depending on the scope of 
 
 ### Outlook service limits
 
-Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](/graph/deployments).
+Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
 
 | Limit                                                      | Applies to      |
 |------------------------------------------------------------|-----------------|
@@ -139,7 +169,7 @@ The following resources are provided by the Outlook service.
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
+| [Presence](/graph/api/resources/presence) (preview)   | 50 requests per second |
 
 ### OneNote service limits
 

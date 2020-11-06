@@ -1,0 +1,59 @@
+---
+title: "verifiedPublisher resource type"
+description: "Represents the verified publisher of the application."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+author: "jesakowi"
+---
+
+# verifiedPublisher resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a verified publisher of an [application](application.md). For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview). Verified publishers are set using [setVerifiedPublisher](../api/application-setverifiedpublisher.md) and can only be removed using [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md).
+
+## Properties
+
+| Property | Type | Description |
+|:---------------|:--------|:----------|
+|displayName|String|The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.|
+|verifiedPublisherId|String| The ID of the verified publisher from the app publisher's Partner Center account. |
+|addedDateTime|DateTimeOffSet| The timestamp when the verified publisher was first added or most recently updated. |
+
+
+## JSON representation
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.verifiedPublisher"
+}-->
+
+```json
+{
+  "displayName": "String",
+  "verifiedPublisherId": "String",
+  "addedDateTime": "DateTimeOffSet"
+}
+
+```
+
+
+<!-- uuid: e9aa37e1-f0b7-4201-a6b2-d26ce091dff6
+2020-09-09 20:42:32 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "verifiedPublisher resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

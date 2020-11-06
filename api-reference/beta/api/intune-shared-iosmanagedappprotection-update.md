@@ -3,7 +3,7 @@ title: "Update iosManagedAppProtection"
 description: "Update the properties of a iosManagedAppProtection object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -262,6 +262,8 @@ Content-Length: 2795
   "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
+
+
 
 
 

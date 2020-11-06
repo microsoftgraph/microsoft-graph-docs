@@ -4,7 +4,7 @@ description: "Represents the format protection of a range object."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # FormatProtection resource type
@@ -65,3 +65,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,7 +1,7 @@
 ---
 title: "Get free/busy schedule of users and resources"
 description: "In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period."
-author: "angelgolfer-ms"
+author: "tariq-sharif"
 localization_priority: Priority
 ms.prod: "outlook"
 ---

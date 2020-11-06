@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getPstnCalls"
 description: "Get log of PSTN calls."
-author: "stephenjust"
+author: "williamlooney"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application| CallRecords.Read.PstnCalls|
+| Application                            | CallRecords.Read.All |
 
 ## HTTP request
 
@@ -117,5 +117,5 @@ HTTP/1.1 200 OK
 
 ## See also
 
-* [Microsoft Teams PSTN usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+* [Microsoft Teams PSTN usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 * [Direct routing report in Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)

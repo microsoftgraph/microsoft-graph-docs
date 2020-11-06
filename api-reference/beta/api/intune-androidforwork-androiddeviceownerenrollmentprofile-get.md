@@ -3,7 +3,7 @@ title: "Get androidDeviceOwnerEnrollmentProfile"
 description: "Read properties and relationships of the androidDeviceOwnerEnrollmentProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 911
+Content-Length: 993
 
 {
   "value": {
@@ -73,6 +73,7 @@ Content-Length: 911
     "displayName": "Display Name value",
     "description": "Description value",
     "enrollmentMode": "corporateOwnedFullyManaged",
+    "enrollmentTokenType": "corporateOwnedDedicatedDeviceWithAzureADSharedMode",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "tokenValue": "Token Value value",
@@ -91,6 +92,8 @@ Content-Length: 911
   }
 }
 ```
+
+
 
 
 

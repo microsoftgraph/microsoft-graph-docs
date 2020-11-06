@@ -7,10 +7,11 @@ author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
 
+# Enum values
 
 Namespace: microsoft.graph
 
-### activityType values 
+### activityType values
 
 |Member|
 |:---|
@@ -18,7 +19,7 @@ Namespace: microsoft.graph
 |user|
 |unknownFutureValue|
 
-### riskDetectionTimingType values 
+### riskDetectionTimingType values
 
 |Member|
 |:---|
@@ -28,7 +29,7 @@ Namespace: microsoft.graph
 |offline|
 |unknownFutureValue|
 
-### tokenIssuerType values 
+### tokenIssuerType values
 
 |Member|
 |:---|
@@ -861,3 +862,45 @@ Possible values for user account types (group membership), per Windows definitio
 | junk                  | 14    | Blocked due to junk.                |
 | unknownFutureValue    | 15    | A sentinel member.                  |
 
+### chatMessagePolicyViolationDlpActionType values
+
+| Value |
+|:-----------------|
+| none |
+| NotifySender |
+| BlockAccess |
+| BlockAccessExternal |
+
+### chatMessagePolicyViolationUserActionType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
+| Override | 1 | Sender has overridden the message verdict and sent the message anyway.|
+| ReportFalsePositive | 2 | Sender has reported the message verdict to the admins as a false positive.|
+
+### chatMessagePolicyViolationVerdictDetailsType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 |  User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive.|
+| AllowFalsePositiveOverride | 1 |  User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
+| AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
+
+### wellknownListName values
+| Member
+|:----------------------
+| none
+| defaultList
+| flaggedEmails
+| unknownFutureValue
+
+### taskStatus values
+| Member
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred

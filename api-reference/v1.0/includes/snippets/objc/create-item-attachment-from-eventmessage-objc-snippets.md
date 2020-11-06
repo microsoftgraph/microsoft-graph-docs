@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphAttachment *attachment = [[MSGraphAttachment alloc] init];
 [attachment setName:@"name-value"];
-[attachment setItem:@"{message or event entity}"];
+[attachment setItem:@"message or event entity"];
 
 NSError *error;
 NSData *attachmentData = [attachment getSerializedDataWithError:&error];

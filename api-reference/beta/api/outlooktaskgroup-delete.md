@@ -7,11 +7,14 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Delete outlookTaskGroup
+# Delete outlookTaskGroup (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Delete the specified [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## Permissions
@@ -90,3 +93,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

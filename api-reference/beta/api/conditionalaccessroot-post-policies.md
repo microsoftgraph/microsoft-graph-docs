@@ -87,7 +87,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "locations": {
             "includeLocations": [
@@ -216,7 +216,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "locations": {
             "includeLocations": [
@@ -564,7 +564,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "devices": {
             "includeDeviceStates": [
@@ -663,3 +663,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

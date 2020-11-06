@@ -3,7 +3,7 @@ title: "Get androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5824
+Content-Length: 6589
 
 {
   "value": {
@@ -205,10 +205,26 @@ Content-Length: 5824
     "vpnAlwaysOnLockdownMode": true,
     "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "wifiBlockEditConfigurations": true,
-    "wifiBlockEditPolicyDefinedConfigurations": true
+    "wifiBlockEditPolicyDefinedConfigurations": true,
+    "personalProfileAppsAllowInstallFromUnknownSources": true,
+    "personalProfileCameraBlocked": true,
+    "personalProfileScreenCaptureBlocked": true,
+    "workProfilePasswordExpirationDays": 1,
+    "workProfilePasswordMinimumLength": 0,
+    "workProfilePasswordMinimumNumericCharacters": 11,
+    "workProfilePasswordMinimumNonLetterCharacters": 13,
+    "workProfilePasswordMinimumLetterCharacters": 10,
+    "workProfilePasswordMinimumLowerCaseCharacters": 13,
+    "workProfilePasswordMinimumUpperCaseCharacters": 13,
+    "workProfilePasswordMinimumSymbolCharacters": 10,
+    "workProfilePasswordPreviousPasswordCountToBlock": 15,
+    "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+    "workProfilePasswordRequiredType": "required"
   }
 }
 ```
+
+
 
 
 

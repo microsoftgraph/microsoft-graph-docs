@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/positions
+POST /users/{id | userPrincipalName}/profile/positions
 ```
 
 ## Request headers
@@ -44,6 +45,19 @@ POST /me/profile/positions
 
 In the request body, supply a JSON representation of [workPosition](../resources/workposition.md) object.
 
+The following table shows the properties that are possible to set when you create a new [workPosition](../resources/workPosition.md) object in a user's [profile](../resources/profile.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Categories that the user has associated with this position.|
+|colleagues|[relatedPerson](../resources/relatedperson.md) collection|Colleagues that are associated with this position.|
+|detail|[positionDetail](../resources/positiondetail.md)|Contains detailed information about the position. |
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|isCurrent|Boolean|Denotes whether or not the position is current.|
+|manager|[relatedPerson](../resources/relatedperson.md)|Contains detail of the user's manager in this position.|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+
 ## Response
 
 If successful, this method returns `201, Created` response code and a new [workPosition](../resources/workposition.md) object in the response body.
@@ -53,45 +67,52 @@ If successful, this method returns `201, Created` response code and a new [workP
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_workposition_from_profile"
 }-->
 
 ```http
-POST https://graph.microsoft.com/Beta/me/profile/positions
+POST https://graph.microsoft.com/beta/me/profile/positions
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
+      "displayName": "Adventureworks Ltd.",
+      "department": "Consulting",
+      "officeLocation": "AW23/344",
       "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+        "type": "business",
+        "street": "123 Patriachy Ponds",
+        "city": "Moscow",
+        "countryOrRegion": "Russian Federation",
+        "postalCode": "RU-34621"
       },
-      "webUrl": "webUrl-value"
+      "webUrl": "https://www.adventureworks.com"
     },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  }
+    "jobTitle": "Senior Product Branding Manager II",
+    "role": "consulting"
+  },
+  "isCurrent": true
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-workposition-from-profile-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-workposition-from-profile-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-workposition-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -110,42 +131,57 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "categories": null,
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
+      "displayName": "Adventureworks Ltd.",
+      "pronunciation": null,
+      "department": "Consulting",
+      "officeLocation": "AW23/344",
       "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+        "type": "business",
+        "postOfficeBox": null,
+        "street": "123 Patriachy Ponds",
+        "city": "Moscow",
+        "state": null,
+        "countryOrRegion": "Russian Federation",
+        "postalCode": "RU-34621"
       },
-      "webUrl": "webUrl-value"
+      "webUrl": "https://www.adventureworks.com"
     },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
+    "description": null,
+    "endMonthYear": null,
+    "jobTitle": "Senior Product Branding Manager II",
+    "role": "consulting",
     "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  }
+    "summary": null
+  },
+  "manager": null,
+  "colleagues": null,
+  "isCurrent": true
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create workPosition",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

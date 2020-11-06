@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |fromTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The from [term] of the relation. The term from which the relationship is defined. A null value would indicate the relation is directly with the [set]. |
 |set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|The [set] in which the relation is relevant.|
-|toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The to [term] of the relation. The term to which the realtionship is defined.|
+|toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The to [term] of the relation. The term to which the relationship is defined.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -80,3 +80,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

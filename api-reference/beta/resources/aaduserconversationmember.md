@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents an Azure Active Directory user in a [chat](chat.md) or [channel](channel.md). This type inherits from [conversationMember](conversationmember.md).
 
 ## Methods
@@ -51,7 +53,6 @@ The following is a JSON representation of the resource.
   "userId" : "string",
   "email" : "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -66,3 +67,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

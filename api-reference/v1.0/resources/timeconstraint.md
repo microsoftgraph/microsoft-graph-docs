@@ -2,7 +2,7 @@
 title: "timeConstraint resource type"
 description: "Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots."
 localization_priority: Normal
-author: ""
+author: "harini84"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -47,3 +47,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

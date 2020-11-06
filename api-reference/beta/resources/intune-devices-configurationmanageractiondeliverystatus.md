@@ -3,7 +3,7 @@ title: "configurationManagerActionDeliveryStatus enum type"
 description: "Delivery state of Configuration Manager device action"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -25,6 +25,8 @@ Delivery state of Configuration Manager device action
 |deliveredToConnectorService|2|Action is sent to ConfigurationManager Connector service (cloud)|
 |failedToDeliverToConnectorService|3|Failed to send the action to ConfigurationManager Connector service (cloud)|
 |deliveredToOnPremisesServer|4|Action is delivered to ConfigurationManager on-prem server|
+
+
 
 
 

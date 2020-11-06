@@ -3,7 +3,7 @@ title: "Get intuneBrandingProfile"
 description: "Read properties and relationships of the intuneBrandingProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2095
+Content-Length: 2284
 
 {
   "value": {
@@ -106,6 +106,8 @@ Content-Length: 2095
     "onlineSupportSiteName": "Online Support Site Name value",
     "privacyUrl": "https://example.com/privacyUrl/",
     "customPrivacyMessage": "Custom Privacy Message value",
+    "customCanSeePrivacyMessage": "Custom Can See Privacy Message value",
+    "customCantSeePrivacyMessage": "Custom Cant See Privacy Message value",
     "isRemoveDeviceDisabled": true,
     "isFactoryResetDisabled": true,
     "companyPortalBlockedActions": [
@@ -120,12 +122,15 @@ Content-Length: 2095
     "showOfficeWebApps": true,
     "sendDeviceOwnershipChangePushNotification": true,
     "enrollmentAvailability": "availableWithoutPrompts",
+    "disableClientTelemetry": true,
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ]
   }
 }
 ```
+
+
 
 
 

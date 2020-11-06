@@ -110,7 +110,7 @@ To see them when showing **field** values on [listItems][listItem], include the 
 [fields]: fieldvalueset.md
 [listItem]: listitem.md
 
-[SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
+[SPFieldType]: /previous-versions/office/sharepoint-server/ms428806(v=office.15)
 
 <!-- {
   "type": "#page.annotation",

@@ -10,7 +10,7 @@ String keyId = "f0b0b335-1d71-4883-8f98-567911bfdca6";
 
 String proof = "eyJ0eXAiOiJ...";
 
-graphClient.serviceprincipals("{id}")
+graphClient.servicePrincipals("{id}")
 	.removeKey(keyId,proof)
 	.buildRequest()
 	.post();

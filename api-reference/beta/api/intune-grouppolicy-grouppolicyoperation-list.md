@@ -3,7 +3,7 @@ title: "List groupPolicyOperations"
 description: "List properties and relationships of the groupPolicyOperation objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -75,6 +75,8 @@ Content-Length: 342
   ]
 }
 ```
+
+
 
 
 

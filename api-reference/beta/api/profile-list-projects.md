@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/projects
+GET /users/{id | userPrincipalName}/profile/projects
 ```
 
 ## Optional query parameters
@@ -109,75 +110,61 @@ Content-type: application/json
 {
   "value": [
     {
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
       "categories": [
-        "categories-value"
+        "Branding"
       ],
       "client": {
-        "displayName": "displayName-value",
-        "pronunciation": "pronunciation-value",
-        "department": "department-value",
-        "officeLocation": "officeLocation-value",
-        "address": {
-          "type": "type-value",
-          "postOfficeBox": "postOfficeBox-value",
-          "street": "street-value",
-          "city": "city-value",
-          "state": "state-value",
-          "countryOrRegion": "countryOrRegion-value",
-          "postalCode": "postalCode-value"
-        },
-        "webUrl": "webUrl-value"
+        "displayName": "Contoso Ltd.",
+        "pronunciation": null,
+        "department": "Corporate Marketing",
+        "officeLocation": null,
+        "address": null,
+        "webUrl": "https://www.contoso.com"
       },
-      "displayName": "displayName-value",
+      "displayName": "Contoso Re-branding Project",
       "detail": {
         "company": {
-          "displayName": "displayName-value",
-          "pronunciation": "pronunciation-value",
-          "department": "department-value",
-          "officeLocation": "officeLocation-value",
-          "address": {
-            "type": "type-value",
-            "postOfficeBox": "postOfficeBox-value",
-            "street": "street-value",
-            "city": "city-value",
-            "state": "state-value",
-            "countryOrRegion": "countryOrRegion-value",
-            "postalCode": "postalCode-value"
-          },
-          "webUrl": "webUrl-value"
+          "displayName": "Adventureworks Inc.",
+          "pronunciation": null,
+          "department": "Consulting",
+          "officeLocation": null,
+          "address": null,
+          "webUrl": "https://adventureworks.com"
         },
-        "description": "description-value",
+        "description": "Rebranding of Contoso Ltd.",
         "endMonthYear": "datetime-value",
-        "jobTitle": "jobTitle-value",
-        "role": "role-value",
+        "jobTitle": "Lead PM Rebranding",
+        "role": "project management",
         "startMonthYear": "datetime-value",
-        "summary": "summary-value"
+        "summary": "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
       },
-      "colleagues": [
-        {
-          "displayName": "displayName-value",
-          "relationship": "relationship-value",
-          "userPrincipalName": "userPrincipalName-value"
-        }
-      ],
-      "sponsors": [
-        {
-          "displayName": "displayName-value",
-          "relationship": "relationship-value",
-          "userPrincipalName": "userPrincipalName-value"
-        }
-      ]
+      "colleagues": null,
+      "sponsors": null
     }
   ]
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List projects",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

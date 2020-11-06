@@ -45,7 +45,7 @@ For an example that shows you how to use the various components in your SharePoi
 
 ## Test in the workbench
 
-If you're just getting started with SharePoint web parts, you can follow the [Build your first web part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) guidance.
+If you're just getting started with SharePoint web parts, you can follow the [Build your first web part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) guidance.
 
 After you've created a web part, and you're ready to use the components, you will need to make sure that your web part has the right permissions to access Microsoft Graph. For details, see [Consume Microsoft Graph in the SharePoint Framework](/sharepoint/dev/spfx/use-aad-tutorial).
 
@@ -57,4 +57,4 @@ In short, it's important to add the right permission to your `package-solution.j
 
 If you plan to support IE11 in your SPFx webparts, you must use polyfills.
 
-To learn more, see [get-started](../get-started.md#sharepoint).
+To learn more, see [Getting started with Microsoft Graph Toolkit](../get-started/overview.md#polyfills).

@@ -4,7 +4,7 @@ description: "expand`."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "svpsiva"
 ---
 
 # Get multiValueLegacyExtendedProperty
@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
 Get a resource instance that contains a multi-value extended property by using `$expand`.
 
-Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended 
+Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended
 property. This is currently the only way to get the [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)
 object that represents an extended property.
 
@@ -23,10 +25,10 @@ The following user resources are supported:
 
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md) 
+- [message](../resources/message.md)
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
 
@@ -34,9 +36,9 @@ As well as the following group resources:
 
 - group [calendar](../resources/calendar.md)
 - group [event](../resources/event.md)
-- group [post](../resources/post.md) 
+- group [post](../resources/post.md)
 
-See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
+See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
@@ -55,11 +57,11 @@ Depending on the resource you're getting the extended property from and the perm
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [Outlook task](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Not supported |
 | [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Not supported |
- 
+
 ## HTTP request
 
-Get a resource instance expanded with the extended property which matches a filter on the 
-**id** property. Make sure you apply 
+Get a resource instance expanded with the extended property which matches a filter on the
+**id** property. Make sure you apply
 [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
 
 Get a **message** instance:
@@ -150,14 +152,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. 
+If successful, this method returns a `200 OK` response code.
 
-The response body includes an object representing the requested resource instance, expanded with the matching 
+The response body includes an object representing the requested resource instance, expanded with the matching
 [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object.
 
 ## Example
 ##### Request
-This example gets and expands the specified event by including a multi-value extended property. The filter returns the 
+This example gets and expands the specified event by including a multi-value extended property. The filter returns the
 extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation`
 (with URL encoding removed here for ease of reading).
 
@@ -220,3 +222,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

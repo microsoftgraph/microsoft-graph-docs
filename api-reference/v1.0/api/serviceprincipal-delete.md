@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /servicePrincipals/{id}
-
 ```
 ## Request headers
 | Name       | Description|
@@ -97,3 +96,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

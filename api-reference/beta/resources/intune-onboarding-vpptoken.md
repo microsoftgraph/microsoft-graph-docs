@@ -3,7 +3,7 @@ title: "vppToken resource type"
 description: "You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education. This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP Business or Education token to Intune. You can then synchronize your volume purchase information with Intune and track your volume-purchased app use. You can upload multiple Apple VPP Business or Education tokens."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -28,6 +28,7 @@ You purchase multiple licenses for iOS apps through the Apple Volume Purchase Pr
 |[syncLicenses action](../api/intune-onboarding-vpptoken-synclicenses.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|Syncs licenses associated with a specific appleVolumePurchaseProgramToken|
 |[revokeLicenses action](../api/intune-onboarding-vpptoken-revokelicenses.md)|None|Revoke licenses associated with a specific appleVolumePurchaseProgramToken|
 |[getLicensesForApp function](../api/intune-onboarding-vpptoken-getlicensesforapp.md)|[vppTokenLicenseSummary](../resources/intune-onboarding-vpptokenlicensesummary.md) collection|Not yet documented|
+|[syncLicenseCounts action](../api/intune-onboarding-vpptoken-synclicensecounts.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -95,6 +96,8 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
 
 
 

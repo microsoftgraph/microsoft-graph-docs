@@ -3,7 +3,7 @@ title: "Update mobileAppTroubleshootingEvent"
 description: "Describes the Update mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
 author: "dougeby"
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -94,6 +94,8 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
+
+
 
 
 

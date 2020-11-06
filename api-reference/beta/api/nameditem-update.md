@@ -4,7 +4,7 @@ description: "Update the properties of nameditem object."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # Update nameditem
@@ -116,3 +116,5 @@ Content-length: 87
   ]
 }
 -->
+
+

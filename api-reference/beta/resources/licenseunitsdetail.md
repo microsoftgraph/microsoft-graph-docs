@@ -4,7 +4,7 @@ description: "The **prepaidUnits** property of the subscribedSku entity is of ty
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "krbain"
 ---
 
 # licenseUnitsDetail resource type
@@ -55,3 +55,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

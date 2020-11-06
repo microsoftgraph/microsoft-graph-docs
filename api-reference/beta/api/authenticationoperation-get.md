@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. | Not supported. |
 | Application                            | Not supported. | Not supported. |
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Global admin
 * Global reader
@@ -44,7 +44,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/authentication/operations/{id}
+GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
 ## Optional query parameters
@@ -78,7 +78,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET /users/{id}/authentication/operations/{id}
+GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-operation-csharp-snippets.md)]

@@ -4,7 +4,7 @@ description: "OneDrive and SharePoint can be configured to retain the history fo
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # Listing versions of a DriveItem
@@ -142,3 +142,5 @@ When your app retrieves the list of available versions for a file, a [DriveItemV
   ]
 }
 -->
+
+

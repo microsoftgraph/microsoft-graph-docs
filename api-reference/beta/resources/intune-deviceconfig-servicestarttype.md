@@ -3,7 +3,7 @@ title: "serviceStartType enum type"
 description: "Possible values of xbox service start type"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,6 +23,8 @@ Possible values of xbox service start type
 |manual|0|Manual service start type(default)|
 |automatic|1|Automatic service start type|
 |disabled|2|Service start type disabled|
+
+
 
 
 

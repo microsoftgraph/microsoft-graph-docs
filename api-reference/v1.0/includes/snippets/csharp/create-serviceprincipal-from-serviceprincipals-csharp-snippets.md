@@ -11,7 +11,7 @@ var servicePrincipal = new ServicePrincipal
 	AppId = "65415bb1-9267-4313-bbf5-ae259732ee12"
 };
 
-await graphClient.Serviceprincipals
+await graphClient.ServicePrincipals
 	.Request()
 	.AddAsync(servicePrincipal);
 

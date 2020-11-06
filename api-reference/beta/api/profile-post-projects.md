@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/projects
+POST /users/{id | userPrincipalName}/profile/projects
 ```
 
 ## Request headers
@@ -43,6 +44,23 @@ POST /me/profile/projects
 ## Request body
 
 In the request body, supply a JSON representation of [projectParticipation](../resources/projectparticipation.md) object.
+
+The following table shows the properties that are possible to set when you create a new [projectParticipation](../resources/projectParticipation.md) object in a user's [profile](../resources/profile.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Contains categories a user has associated with the project (for example, digital transformation, oil rig). |
+|client|[companyDetail](../resources/companydetail.md)|Contains detailed information about the client the project was for. |
+|collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
+|colleagues|[relatedPerson](../resources/relatedperson.md) collection|Lists people that also worked on the project. |
+|detail|[positionDetail](../resources/positiondetail.md)|Contains detail about the user's role on the project.|
+|displayName|String|Contains a friendly name for the project.|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+|sponsors|[relatedPerson](../resources/relatedperson.md) collection|The Person or people who sponsored the project.    |
+
+## Relationships
 
 ## Response
 
@@ -66,63 +84,25 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "Branding"
   ],
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
+    "displayName": "Contoso Ltd.",
+    "department": "Corporate Marketing",
+    "webUrl": "https://www.contoso.com"
   },
-  "displayName": "displayName-value",
+  "displayName": "Contoso Re-branding Project",
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
+      "displayName": "Adventureworks Inc.",
+      "department": "Consulting",
+      "webUrl": "https://adventureworks.com"
     },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+    "description": "Rebranding of Contoso Ltd.",
+    "jobTitle": "Lead PM Rebranding",
+    "role": "project management",
+    "summary": "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -157,73 +137,59 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
   "categories": [
-    "categories-value"
+    "Branding"
   ],
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
+    "displayName": "Contoso Ltd.",
+    "pronunciation": null,
+    "department": "Corporate Marketing",
+    "officeLocation": null,
+    "address": null,
+    "webUrl": "https://www.contoso.com"
   },
-  "displayName": "displayName-value",
+  "displayName": "Contoso Re-branding Project",
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
+      "displayName": "Adventureworks Inc.",
+      "pronunciation": null,
+      "department": "Consulting",
+      "officeLocation": null,
+      "address": null,
+      "webUrl": "https://adventureworks.com"
     },
-    "description": "description-value",
+    "description": "Rebranding of Contoso Ltd.",
     "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
+    "jobTitle": "Lead PM Rebranding",
+    "role": "project management",
     "startMonthYear": "datetime-value",
-    "summary": "summary-value"
+    "summary": "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
   },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+  "colleagues": null,
+  "sponsors": null
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create projectParticipation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

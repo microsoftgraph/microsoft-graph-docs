@@ -3,7 +3,7 @@ title: "Property differences between Azure AD Graph and Microsoft Graph"
 description: "Describes property differences between Azure AD Graph resources (entities) and Microsoft Graph, in order to help migrate apps accordingly."
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "azure-active-directory"
 ---
 
 # Property differences between Azure AD Graph and Microsoft Graph
@@ -197,5 +197,5 @@ The Azure AD Graph CertificateAuthorityInformation is renamed to **certificateAu
 ## Next Steps
 
 - Learn about [method differences](migrate-azure-ad-graph-method-differences.md) between Azure AD Graph and Microsoft Graph.
-- Explore [Microsoft Graph](/graph/overview) concepts and practices.
-- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+

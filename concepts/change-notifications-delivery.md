@@ -1,7 +1,7 @@
 ---
 title: "Get change notifications delivered in different ways (preview)"
 description: "Change notifications can be delivered via different technologies, including webhooks and Azure Event Hubs."
-author: "baywet"
+author: "davidmu1"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
@@ -9,6 +9,8 @@ ms.custom: graphiamtop20
 # Get change notifications delivered in different ways (preview)
 
 Change notifications can be delivered in different ways to subscribers. If the main delivery mode for change notifications is through webhooks, it can be challenging to take advantage of webhooks for high throughput scenarios or when the receiver cannot expose a publicly available notificiation URL.  
+
+This change notifications delivery mode is available for all resources that support Microsoft Graph change notifications.
 
 Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency, and multi-tenant applications that subscribe to resources accross a large set of organizations.
 
@@ -18,7 +20,7 @@ Good examples of high throughput scenarios include applications subscribing to a
 Using Azure Event Hubs to receive change notifications differs from webhooks in a few ways, including:
 
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK will relay the notifications to your application.
-- You don't need to implement the [notification URL validation](webhooks.md#notification-endpoint-validation).
+- You don't need to reply to the [notification URL validation](webhooks.md#notification-endpoint-validation). You can ignore the validation message that you receive.
 - You'll need to provision an Azure Event Hub.
 - You'll need to provision an Azure Key Vault.
 
@@ -130,11 +132,32 @@ The main difference during subscription creation will be the **notificationUrl**
 
 #### Receiving notifications
 
-Events will be now delivered to your application by Event Hubs. For details, see [receiving events](https://docs.microsoft.com/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) in the Event Hubs documentation.
+Events will be now delivered to your application by Event Hubs. For details, see [receiving events](/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) in the Event Hubs documentation.
 
 Before you can receive the notifications in your application, you'll need to create another shared access policy with a "Listen" permission and obtain the connection string, similar to the steps listed in [Configuring the Azure Event Hub](#configuring-the-azure-event-hub).
 
 > **Note:** Create a separate policy for the application that listens to Event Hubs messages instead of reusing the same connection string you set in Azure KeyVault. This ensures that each component of the solution has only the permissions it needs and follows the least permissions security principle.
+
+> **Note:** Your application receives validation messages whenever it creates a new subscription. You should ignore these notifications. The following example represents the body of a validation message.
+
+```json
+ {
+    "value":[
+        {
+            "subscriptionId":"NA",
+            "subscriptionExpirationDateTime":"NA",
+            "clientState":"NA",
+            "changeType":"Validation: Testing client application reachability for subscription Request-Id: 522a8e7e-096a-494c-aaf1-ac0dcfca45b7",
+            "resource":"NA",
+            "resourceData":{
+                "@odata.type":"NA",
+                "@odata.id":"NA",
+                "id":"NA"
+            }
+        }
+    ]
+}
+```
 
 ### What happens if the Microsoft Graph change tracking application is missing?
 
@@ -153,7 +176,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **Note:** This API only works with a school or work account, not with a personal account. Make sure that you are signed in with an account on your domain.
 
-Alternatively, you can use this [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) script to add the missing service principal.
+Alternatively, you can use this [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) script to add the missing service principal.
 
 ```PowerShell
 Connect-AzureAD -TenantId <tenant-id>

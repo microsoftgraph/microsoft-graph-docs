@@ -19,7 +19,7 @@ At a high level, you'll need to:
 
 ## Create your Teams app and bot
 
-If you do not already have a Microsoft Teams app with a bot that can send the message, you'll need to create one. See [Add bots to Teams apps](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-overview) in the Teams platform documentation. For specifics about creating a bot for proactive messaging, see [Proactive messaging for bots](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
+If you do not already have a Microsoft Teams app with a bot that can send the message, you'll need to create one. See [Add bots to Teams apps](/microsoftteams/platform/concepts/bots/bots-overview) in the Teams platform documentation. For specifics about creating a bot for proactive messaging, see [Proactive messaging for bots](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
 
 You can also use the [Company Communicator app template](https://github.com/OfficeDev/microsoft-teams-company-communicator-app) as a good starting point for your app. This app template is a production-ready Microsoft Teams app capable of creating, scheduling, and distributing company-wide messages.
 
@@ -29,7 +29,7 @@ If you're doing this for a large organization, the welcome messages from your bo
 
 ## Deploy your app to your tenant app catalog
 
-Microsoft Graph can only install apps that have been added to your tenant app catalog, or are available in the public Microsoft Teams app store. If you're working with a new app, you'll need to make sure it is [tenant app catalog](https://docs.microsoft.com/microsoftteams/platform/publishing/apps-publish#microsoft-teams-tenant-app-catalog).
+Microsoft Graph can only install apps that have been added to your tenant app catalog, or are available in the public Microsoft Teams app store. If you're working with a new app, you'll need to make sure it is [tenant app catalog](/microsoftteams/platform/publishing/apps-publish#microsoft-teams-tenant-app-catalog).
 
 ## Install the app for your users
 
@@ -64,7 +64,7 @@ If the user has Microsoft Teams running, they might or might not see the app ins
 
 ## Get the chat thread ID
 
-When the app is installed for the user, the bot will get a `conversationUpdate` event that will contain the necessary information for it to send the proactive message. For more information, see [Bot events](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-notifications).
+When the app is installed for the user, the bot will get a `conversationUpdate` event that will contain the necessary information for it to send the proactive message. For more information, see [Bot events](/microsoftteams/platform/concepts/bots/bots-notifications).
 
 If you lose the `chatThreadId`, you can find it again by calling:
 
@@ -76,7 +76,7 @@ The **id** property of the result is the chatThread ID.
 
 ## Sending the message
 
-Now that your bot has the necessary information, you can [send a proactive message](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
+Now that your bot has the necessary information, you can [send a proactive message](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
 
 ## C# sample
 

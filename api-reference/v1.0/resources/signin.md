@@ -1,7 +1,7 @@
 ---
 title: "signIn resource type"
 description: "Details user and application sign-in activity for a tenant (directory)."
-author: "kholtz"
+author: "khotz"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
@@ -103,3 +103,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

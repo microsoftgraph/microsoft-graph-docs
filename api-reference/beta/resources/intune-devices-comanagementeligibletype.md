@@ -3,7 +3,7 @@ title: "comanagementEligibleType enum type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -25,6 +25,8 @@ Not yet documented
 |eligibleButNotAzureAdJoined|3|Not yet documented|
 |needsOsUpdate|4|Not yet documented|
 |ineligible|5|Not yet documented|
+
+
 
 
 

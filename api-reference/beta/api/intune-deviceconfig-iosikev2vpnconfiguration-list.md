@@ -3,7 +3,7 @@ title: "List iosikEv2VpnConfigurations"
 description: "List properties and relationships of the iosikEv2VpnConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6070
+Content-Length: 6281
 
 {
   "value": [
@@ -148,6 +148,11 @@ Content-Length: 6070
           "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
         }
       ],
+      "providerType": "appProxy",
+      "excludedDomains": [
+        "Excluded Domains value"
+      ],
+      "disableOnDemandUserOverride": true,
       "proxyServer": {
         "@odata.type": "microsoft.graph.vpnProxyServer",
         "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -155,7 +160,6 @@ Content-Length: 6070
         "port": 4
       },
       "optInToDeviceIdSharing": true,
-      "providerType": "appProxy",
       "userDomain": "User Domain value",
       "strictEnforcement": true,
       "cloudName": "Cloud Name value",
@@ -171,6 +175,7 @@ Content-Length: 6070
           "appId": "App Id value"
         }
       ],
+      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
       "childSecurityAssociationParameters": {
         "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
         "securityEncryptionAlgorithm": "des",
@@ -221,11 +226,14 @@ Content-Length: 6070
         "natKeepAliveIntervalInSeconds": 13,
         "natKeepAliveOffloadEnable": true
       },
-      "enableAlwaysOnConfiguration": true
+      "enableAlwaysOnConfiguration": true,
+      "mtuSizeInBytes": 14
     }
   ]
 }
 ```
+
+
 
 
 

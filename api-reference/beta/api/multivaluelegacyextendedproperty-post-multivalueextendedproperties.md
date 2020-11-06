@@ -4,7 +4,7 @@ description: "Create one or more multi-value extended properties in a new or exi
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "svpsiva"
 ---
 
 # Create multi-value extended property
@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create one or more multi-value extended properties in a new or existing instance of a resource. 
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
+Create one or more multi-value extended properties in a new or existing instance of a resource.
 
 The following user resources are supported:
 
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
@@ -30,9 +32,9 @@ As well as the following group resources:
 
 - group [calendar](../resources/calendar.md)
 - group [event](../resources/event.md)
-- group [post](../resources/post.md) 
+- group [post](../resources/post.md)
 
-See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
+See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
@@ -62,9 +64,9 @@ see the corresponding topics for creating a [message](../resources/message.md), 
 [event](../api/user-post-events.md), [calendar](../api/user-post-calendars.md),
 [contact](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md),
 [Outlook task](../resources/outlooktask.md), [Outlook task folder](../resources/outlooktaskfolder.md),
-[group event](../api/group-post-events.md), and [group post](../resources/post.md). 
- 
-The following is the syntax of the requests. 
+[group event](../api/group-post-events.md), and [group post](../resources/post.md).
+
+The following is the syntax of the requests.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -158,7 +160,7 @@ PATCH /groups/{id}/events/{id}
 
 ## Request body
 
-Provide a JSON body of each [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object in the 
+Provide a JSON body of each [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object in the
 **multiValueExtendedProperties** collection property of the resource instance.
 
 |**Property**|**Type**|**Description**|
@@ -167,39 +169,39 @@ Provide a JSON body of each [multiValueLegacyExtendedProperty](../resources/mult
 |id|String|For each property in the **multiValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
 |value|string|For each property in the **multiValueExtendedProperties** collection, specify the property value. Required.|
 
-When creating an extended property in a _new_ resource instance, in addition to the 
-new **multiValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 
+When creating an extended property in a _new_ resource instance, in addition to the
+new **multiValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md),
 [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
 
 ## Response
 
 #### Response code
-An operation successful in creating an extended property in a new resource instance returns `201 Created`, except in a new group post, 
+An operation successful in creating an extended property in a new resource instance returns `201 Created`, except in a new group post,
 depending on the method used, the operation can return `200 OK` or `202 Accepted`.
 
-In an existing resource instance, a successful create operation returns `200 OK`. 
+In an existing resource instance, a successful create operation returns `200 OK`.
 
 
 #### Response body
 
-When creating an extended property in a supported resource other than [group post](../resources/post.md), the response includes only 
+When creating an extended property in a supported resource other than [group post](../resources/post.md), the response includes only
 the new or existing instance but not the new extended property. To see the newly
 created extended property, [get the instance expanded with the extended property](../api/multivaluelegacyextendedproperty-get.md).
 
-When creating an extended property in a _new_ group post, the response includes only a response code but not the new post nor 
+When creating an extended property in a _new_ group post, the response includes only a response code but not the new post nor
 the extended property. You cannot create an extended property in an existing group post.
 
 
 ## Example
 ##### Request 1
 
-The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally 
-include for a new event, the request body includes the **multiValueExtendedProperties** collection which contains one extended property. 
+The first example creates a multi-value extended property in a new event all in the same POST operation. Apart from the properties you'd normally
+include for a new event, the request body includes the **multiValueExtendedProperties** collection which contains one extended property.
 The request body includes the following for that multi-value extended property:
 
-- **id** which specifies the property as an array of strings with the specified GUID and the name `Recreation`. 
+- **id** which specifies the property as an array of strings with the specified GUID and the name `Recreation`.
 - **value** which specifies `Recreation` as an array of 3 string values, `["Food", "Hiking", "Swimming"]`.
- 
+
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -247,8 +249,8 @@ Content-Type: application/json
 
 ##### Response 1
 
-A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event 
-in the response body, similar to the response from [creating just an event](../api/user-post-events.md). 
+A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event
+in the response body, similar to the response from [creating just an event](../api/user-post-events.md).
 The response does not include any newly created extended properties.
 
 To see the newly created extended property, [get the event expanded with the extended property](../api/multivaluelegacyextendedproperty-get.md).
@@ -259,7 +261,7 @@ To see the newly created extended property, [get the event expanded with the ext
 ##### Request 2
 
 The second example creates one multi-value extended property for the specified message. That extended property is the only
-element in the **multiValueExtendedProperties** collection. The request body includes the following for the 
+element in the **multiValueExtendedProperties** collection. The request body includes the following for the
 extended property:
 
 - **id** specifies the property as an array of strings with the specified GUID and the name `Palette`.
@@ -283,8 +285,8 @@ Content-Type: application/json
 
 ##### Response 2
 
-A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body, 
-similar to the response from [updating a message](../api/message-update.md). The response does not 
+A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body,
+similar to the response from [updating a message](../api/message-update.md). The response does not
 include the newly created extended property.
 
 To see the newly created extended property, [get the message expanded with the extended property](../api/multivaluelegacyextendedproperty-get.md).
@@ -303,6 +305,8 @@ To see the newly created extended property, [get the message expanded with the e
   "suppressions": []
 }
 -->
+
+
 
 
 

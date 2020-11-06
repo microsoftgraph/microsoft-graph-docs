@@ -3,7 +3,7 @@ title: "ListItemVersion resource type"
 description: "The **listItemVersion** resource represents a previous version of a ListItem resource."
 localization_priority: Normal
 ms.prod: "sharepoint"
-author: ""
+author: "JeremyKelley"
 doc_type: resourcePageType
 ---
 
@@ -73,3 +73,4 @@ The following table defines the relationships that the **driveItemVersion** reso
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
+

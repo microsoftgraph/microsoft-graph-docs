@@ -22,3 +22,5 @@ Use the Microsoft 365 Apps usage reports to get insights into the usage of Micro
 | [Get user detail](../api/reportroot-getm365appuserdetail.md)                  | [report](../resources/intune-shared-report.md) | Get details about the usage of Microsoft 365 Apps by user. |
 | [Get user counts](../api/reportroot-getm365appusercounts.md)                  | [report](../resources/intune-shared-report.md) | Get the number of daily unique users by app.               |
 | [Get platform user counts](../api/reportroot-getm365appplatformusercounts.md) | [report](../resources/intune-shared-report.md) | Get the number of daily unique users by platform.          |
+
+

@@ -92,8 +92,7 @@ When using the default templates, additional APIs and permissions are required. 
 
 | Resource | Permission |
 | - | - |
-| [/users](/graph/api/user-list?view=graph-rest-1.0) | Users.ReadBasic.All |
-| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
+| [/users](/graph/api/user-list?view=graph-rest-1.0) | User.ReadBasic.All |
 
 ## Authentication
 

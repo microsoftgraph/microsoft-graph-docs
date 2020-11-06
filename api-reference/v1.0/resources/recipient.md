@@ -2,7 +2,7 @@
 title: "recipient resource type"
 description: "Represents information about a user in the sending or receiving end of an event, message or group post. "
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents information about a user in the sending or receiving end of an event, message or group post. 
+Represents information about a user in the sending or receiving end of an event, message or group post.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -46,3 +46,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

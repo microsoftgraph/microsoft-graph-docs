@@ -3,7 +3,7 @@ title: "androidForWorkRequiredPasswordType enum type"
 description: "Android For Work required password type."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -28,6 +28,8 @@ Android For Work required password type.
 |atLeastAlphabetic|5|At least alphabetic password required.|
 |atLeastAlphanumeric|6|At least alphanumeric password required.|
 |alphanumericWithSymbols|7|At least alphanumeric with symbols password required.|
+
+
 
 
 

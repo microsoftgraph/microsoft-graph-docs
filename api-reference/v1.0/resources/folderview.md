@@ -94,3 +94,4 @@ The following values are defined for the **viewType** property.
   ],
   "tocPath": "Facets/FolderView"
 } -->
+

@@ -3,7 +3,7 @@ title: "exportMobileConfig function"
 description: "Exports the mobile configuration"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -66,6 +66,8 @@ Content-Length: 45
   "value": "Export Mobile Config value"
 }
 ```
+
+
 
 
 

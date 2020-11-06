@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/skills
+GET /users/{id | userPrincipalName}/profile/skills
 ```
 
 ## Optional query parameters
@@ -110,23 +111,40 @@ Content-type: application/json
 {
   "value": [
     {
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
       "categories": [
-        "categories-value"
+        "Professional"
       ],
-      "displayName": "displayName-value",
-      "proficiency": "proficiency-value",
-      "webUrl": "webUrl-value"
+      "displayName": "API Design",
+      "proficiency": "advancedProfessional",
+      "webUrl": null,
+      "collaborationTags": [
+        "ableToMentor"
+      ]
     }
   ]
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List skills",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

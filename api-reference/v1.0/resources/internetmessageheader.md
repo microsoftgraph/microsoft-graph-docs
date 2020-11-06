@@ -2,7 +2,7 @@
 title: "internetMessageHeader resource type"
 description: "A key-value pair that represents an Internet message header, as defined by RFC5322, that provides "
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -12,10 +12,10 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 
-A key-value pair that represents an Internet message header, as defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provides 
-details of the network path taken by a message from the sender to the recipient. 
+A key-value pair that represents an Internet message header, as defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provides
+details of the network path taken by a message from the sender to the recipient.
 
-For examples of an Internet message header, see 
+For examples of an Internet message header, see
 [View e-mail message headers](https://support.office.com/en-us/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4).
 
 
@@ -54,3 +54,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

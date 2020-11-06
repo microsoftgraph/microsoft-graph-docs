@@ -4,7 +4,7 @@ description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "kszb"
 ---
 
 # skypeForBusinessActivityCounts resource type
@@ -33,11 +33,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "peerToPeer": 1024, 
-  "organized": 1024, 
-  "participated": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "peerToPeer": 1024,
+  "organized": 1024,
+  "participated": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```
+
+

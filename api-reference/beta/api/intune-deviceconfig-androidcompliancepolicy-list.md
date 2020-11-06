@@ -3,7 +3,7 @@ title: "List androidCompliancePolicies"
 description: "List properties and relationships of the androidCompliancePolicy objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2091
+Content-Length: 2135
 
 {
   "value": [
@@ -78,6 +78,7 @@ Content-Length: 2091
       "passwordRequired": true,
       "passwordMinimumLength": 5,
       "passwordRequiredType": "alphabetic",
+      "requiredPasswordComplexity": "low",
       "passwordMinutesOfInactivityBeforeLock": 5,
       "passwordExpirationDays": 6,
       "passwordPreviousPasswordBlockCount": 2,
@@ -113,6 +114,8 @@ Content-Length: 2091
   ]
 }
 ```
+
+
 
 
 

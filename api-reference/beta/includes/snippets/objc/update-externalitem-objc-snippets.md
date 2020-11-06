@@ -14,10 +14,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphExternalItem *externalItem = [[MSGraphExternalItem alloc] init];
 NSMutableArray *aclList = [[NSMutableArray alloc] init];
 MSGraphAcl *acl = [[MSGraphAcl alloc] init];
-[acl setType: [MSGraphAclType user]];
-[acl setValue:@"49103559-feac-4575-8b94-254814dfca72"];
+[acl setType: [MSGraphAclType everyone]];
+[acl setValue:@"67a141d8-cf4e-4528-ba07-bed21bfacd2d"];
 [acl setAccessType: [MSGraphAccessType grant]];
-[acl setIdentitySource:@"Azure Active Directory"];
+[acl setIdentitySource:@"azureActiveDirectory"];
 [aclList addObject: acl];
 [externalItem setAcl:aclList];
 

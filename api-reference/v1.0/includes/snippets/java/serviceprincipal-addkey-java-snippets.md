@@ -16,7 +16,7 @@ passwordCredential.secretText = "MKTr0w1...";
 
 String proof = "eyJ0eXAiOiJ...";
 
-graphClient.serviceprincipals("{id}")
+graphClient.servicePrincipals("{id}")
 	.addKey(keyCredential,passwordCredential,proof)
 	.buildRequest()
 	.post();

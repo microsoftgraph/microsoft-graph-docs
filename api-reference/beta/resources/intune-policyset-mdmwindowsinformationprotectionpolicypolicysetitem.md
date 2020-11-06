@@ -3,7 +3,7 @@ title: "mdmWindowsInformationProtectionPolicyPolicySetItem resource type"
 description: "A class containing the properties used for mdm windows information protection policy PolicySetItem."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -69,6 +69,8 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
 
 
 

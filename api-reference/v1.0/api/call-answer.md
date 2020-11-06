@@ -433,7 +433,7 @@ Content-Type: application/json
 
 ### Example 3: Answer a policy-based recording call
 
-Under the [Policy-based recording scenario](https://docs.microsoft.com/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an incoming call notification will be sent to the bot associated with the policy.
+Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an incoming call notification will be sent to the bot associated with the policy.
 The join information can be found under the **botData** property. The bot can then choose to answer the call and [update the recording status](call-updaterecordingstatus.md) accordingly.
 
 Here is an example of the incoming call notification that a bot would recieve in this case.

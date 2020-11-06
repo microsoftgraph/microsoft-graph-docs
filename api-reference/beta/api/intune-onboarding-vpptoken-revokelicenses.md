@@ -3,7 +3,7 @@ title: "revokeLicenses action"
 description: "Revoke licenses associated with a specific appleVolumePurchaseProgramToken"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -49,6 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |notifyManagedDevices|Boolean|Not yet documented|
+|revokeUntrackedLicenses|Boolean|Not yet documented|
 
 
 
@@ -63,10 +64,11 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 
 Content-type: application/json
-Content-length: 36
+Content-length: 72
 
 {
-  "notifyManagedDevices": true
+  "notifyManagedDevices": true,
+  "revokeUntrackedLicenses": true
 }
 ```
 
@@ -75,6 +77,8 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

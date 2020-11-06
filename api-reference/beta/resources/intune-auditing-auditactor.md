@@ -3,7 +3,7 @@ title: "auditActor resource type"
 description: "A class containing the properties for Audit Actor."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -29,6 +29,8 @@ A class containing the properties for Audit Actor.
 |ipAddress|String|IPAddress.|
 |userId|String|User Id.|
 |userRoleScopeTags|[roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md) collection|List of user scope tags when the audit was performed.|
+|remoteTenantId|String|Remote Tenant Id|
+|remoteUserId|String|Remote User Id|
 
 ## Relationships
 None
@@ -59,9 +61,13 @@ Here is a JSON representation of the resource.
       "displayName": "String",
       "roleScopeTagId": "String"
     }
-  ]
+  ],
+  "remoteTenantId": "String",
+  "remoteUserId": "String"
 }
 ```
+
+
 
 
 

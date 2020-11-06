@@ -2,7 +2,7 @@
 title: "List callRecord sessions"
 description: "Retrieve the list of session objects for a callRecord."
 localization_priority: Normal
-author: "stephenjust"
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
@@ -143,7 +143,7 @@ Content-type: application/json
             }
         }
     ],
-    "@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$skiptoken=abc"
+    "@odata.nextLink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$skiptoken=abc"
 }
 ```
 
@@ -374,7 +374,7 @@ Content-type: application/json
             ]
         }
     ],
-    "@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
+    "@odata.nextLink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
 }
 ```
 
@@ -387,3 +387,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

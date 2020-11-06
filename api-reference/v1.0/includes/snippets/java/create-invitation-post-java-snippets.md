@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Invitation invitation = new Invitation();
 invitation.invitedUserEmailAddress = "yyy@test.com";
-invitation.inviteRedirectUrl = "https://myapp.com";
+invitation.inviteRedirectUrl = "https://myapp.contoso.com";
 
 graphClient.invitations()
 	.buildRequest()

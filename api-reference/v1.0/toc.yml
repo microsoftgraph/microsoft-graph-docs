@@ -40,8 +40,10 @@ items:
         href: /graph/webhooks?context=graph/api/1.0
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
-      - name: Missing Outlook notifications (preview)
-        href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+      - name: Missing change notifications
+        href: /graph/webhooks-lifecycle
+      - name: Notifications with resource data
+        href: /graph/webhooks-with-resource-data?context=graph/api/1.0
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
       items:
@@ -73,7 +75,7 @@ items:
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
+        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252f1.0
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
       - name: "1: Review differences"
@@ -122,10 +124,26 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/1.0
       - name: Upload large files
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
+      - name: Use beta API
+        href: /graph/sdks/use-beta?context=graph/api/1.0
   - name: Use the toolkit
     items:
       - name: Toolkit overview
         href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: Get started
+        items:
+          - name: Overview
+            href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+          - name: Build a web application (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: Build a SharePoint web part
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
+          - name: Build a Microsoft Teams tab
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
+          - name: Use the Toolkit with React
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
+          - name: Use the Toolkit with Angular
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
       - name: Components
         items:
           - name: Login
@@ -303,8 +321,9 @@ items:
           - name: Update settings
             href: api/usersettings-update.md
       - name: Mail
-        href: resources/message.md
         items:
+        - name: Message
+          href: resources/message.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
         - name: Create message
@@ -326,8 +345,9 @@ items:
         - name: Send mail
           href: api/user-sendmail.md
       - name: Notes
-        href: resources/onenote.md
         items:
+        - name: Onenote
+          href: resources/onenote.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
         - name: List notebooks
@@ -385,6 +405,18 @@ items:
         items:
         - name: List tasks
           href: api/planneruser-list-tasks.md
+      - name: To-do tasks
+        items:
+        - name: Task
+          href: resources/todotask.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: List task lists
+          href: api/todo-list-lists.md
     - name: Groups
       items:
       - name: Overview
@@ -392,6 +424,16 @@ items:
       - name: Group
         href: resources/group.md
         items:
+        - name: List groups
+          href: api/group-list.md
+        - name: Create group
+          href: api/group-post-groups.md
+        - name: Get group
+          href: api/group-get.md
+        - name: Update group
+          href: api/group-update.md
+        - name: Delete group
+          href: api/group-delete.md
         - name: Add favorite
           href: api/group-addfavorite.md
         - name: Add member
@@ -403,15 +445,11 @@ items:
         - name: Check member groups
           href: api/group-checkmembergroups.md
         - name: Check member objects
-          href: api/group-checkmemberobjects.md
-        - name: Create group
-          href: api/group-post-groups.md
-        - name: Delete group
-          href: api/group-delete.md
+          href: api/group-checkmemberobjects.md 
         - name: Get delta
           href: api/group-delta.md
-        - name: Get group
-          href: api/group-get.md
+        - name: Get endpoint
+          href: api/endpoint-get.md
         - name: Get member groups
           href: api/group-getmembergroups.md
         - name: Get member objects
@@ -436,8 +474,8 @@ items:
             href: api/groupsettingtemplate-list.md
           - name: Get group setting template
             href: api/groupsettingtemplate-get.md
-        - name: List groups
-          href: api/group-list.md
+        - name: List endpoints
+          href: api/group-list-endpoints.md
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
@@ -452,8 +490,6 @@ items:
           href: api/group-list-owners.md
         - name: List photos
           href: api/group-list-photos.md
-        - name: Update group
-          href: api/group-update.md
         - name: Remove favorite
           href: api/group-removefavorite.md
         - name: Remove member
@@ -560,7 +596,7 @@ items:
         - name: Create rejected sender
           href: api/group-post-rejectedsenders.md
         - name: Remove rejected senders
-          href: api/group-delete-rejectedsenders.md
+          href: api/group-delete-rejectedsenders.md  
       - name: Conversation thread
         href: resources/conversationthread.md
         items:
@@ -584,18 +620,21 @@ items:
         - name: List children
           href: api/driveitem-list-children.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -970,8 +1009,9 @@ items:
         - name: Delete
           href: api/calendarpermission-delete.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -983,36 +1023,39 @@ items:
         - name: Delete category
           href: api/outlookcategory-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+      - name: Place
+        items:
         - name: Place
-          items:
-          - name: Place
-            href: resources/place.md
-          - name: Room type
-            href: resources/room.md
-          - name: Room list type
-            href: resources/roomlist.md
-          - name: List places
-            href: api/place-list.md
-          - name: Get place
-            href: api/place-get.md
-          - name: Update place
-            href: api/place-update.md
+          href: resources/place.md
+        - name: Room type
+          href: resources/room.md
+        - name: Room list type
+          href: resources/roomlist.md
+        - name: List places
+          href: api/place-list.md
+        - name: Get place
+          href: api/place-get.md
+        - name: Update place
+          href: api/place-update.md
     - name: Change notifications
       displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
@@ -1062,15 +1105,19 @@ items:
             href: api/call-playprompt.md
           - name: Record response
             href: api/call-record.md
+          - name: Cancel media processing
+            href: api/call-cancelmediaprocessing.md
           - name: Subscribe to tone
             href: api/call-subscribetotone.md
         - name: Participant
           href: resources/participant.md
           items:
-          - name: Get
-            href: api/participant-get.md
           - name: List
             href: api/call-list-participants.md
+          - name: Get
+            href: api/participant-get.md
+          - name: Delete
+            href: api/participant-delete.md
           - name: Mute participant
             href: api/participant-mute.md
           - name: Invite participants
@@ -3527,7 +3574,7 @@ items:
         - name: Update schema extension
           href: api/schemaextension-update.md
         - name: Delete schema extension
-          href: api/schemaextension-delete.md 
+          href: api/schemaextension-delete.md
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
@@ -3623,6 +3670,35 @@ items:
         href: resources/azure-ad-overview.md
       - name: Directory management
         items:
+        - name: Administrative unit
+          href: resources/administrativeunit.md
+          items:
+          - name: List
+            href: api/administrativeunit-list.md
+          - name: Create
+            href: api/administrativeunit-post-administrativeunits.md
+          - name: Get
+            href: api/administrativeunit-get.md
+          - name: Update
+            href: api/administrativeunit-update.md
+          - name: Delete
+            href: api/administrativeunit-delete.md
+          - name: Add a member
+            href: api/administrativeunit-post-members.md
+          - name: List members
+            href: api/administrativeunit-list-members.md
+          - name: Get a member
+            href: api/administrativeunit-get-members.md
+          - name: Remove a member
+            href: api/administrativeunit-delete-members.md
+          - name: Add a scoped-role administrator
+            href: api/administrativeunit-post-scopedrolemembers.md
+          - name: List scoped-role administrators
+            href: api/administrativeunit-list-scopedrolemembers.md
+          - name: Get a scoped-role administrator
+            href: api/administrativeunit-get-scopedrolemembers.md
+          - name: Remove a scoped-role administrator
+            href: api/administrativeunit-delete-scopedrolemembers.md
         - name: Contracts
           href: resources/contract.md
           items:
@@ -3904,7 +3980,7 @@ items:
           href: resources/invitation.md
           items:
           - name: Create invitation
-            href: api/invitation-post.md    
+            href: api/invitation-post.md
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -4054,8 +4130,9 @@ items:
         - name: Delete attachment
           href: api/attachment-delete.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -4137,18 +4214,21 @@ items:
         - name: Delete rule
           href: api/messagerule-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -4321,8 +4401,9 @@ items:
         - name: Get contact delta
           href: api/contact-delta.md
       - name: Categories
-        href: resources/outlookcategory.md
         items:
+        - name: Category
+          href: resources/outlookcategory.md
         - name: List categories
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
@@ -4334,18 +4415,21 @@ items:
         - name: Delete category
           href: api/outlookcategory-delete.md
       - name: Extended properties
-        href: resources/extended-properties-overview.md
         items:
-        - name: Single-value extended property
-          href: resources/singlevaluelegacyextendedproperty.md
+        - name: Overview
+          href: resources/extended-properties-overview.md
+        - name: Single-value extended properties
           items:
+          - name: Single-value extended property
+            href: resources/singlevaluelegacyextendedproperty.md
           - name: Create single-value property
             href: api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
           - name: Get single-value property
             href: api/singlevaluelegacyextendedproperty-get.md
-        - name: Multi-value extended property
-          href: resources/multivaluelegacyextendedproperty.md
+        - name: Multi-value extended properties
           items:
+          - name: Multi-value extended property
+            href: resources/multivaluelegacyextendedproperty.md
           - name: Create multi-value property
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
@@ -4757,11 +4841,21 @@ items:
         href: resources/team.md
         items:
         - name: Create team
+          href: api/team-post.md
+        - name: Create team from group
           href: api/team-put-teams.md
         - name: Get team
           href: api/team-get.md
         - name: Update team
           href: api/team-update.md
+        - name: Delete team
+          href: api/group-delete.md
+        - name: List members
+          href: api/team-list-members.md
+        - name: Add members
+          href: api/team-post-members.md
+        - name: Remove members
+          href: api/team-delete-members.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
@@ -4770,8 +4864,6 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
-        - name: List all teams
-          href: /graph/teams-list-all-teams?context=graph/api/1.0
         - name: Get primary channel
           href: api/team-get-primarychannel.md
       - name: Group (team)
@@ -4822,27 +4914,81 @@ items:
         items:
         - name: List channels
           href: api/channel-list.md
-        - name: Get channel
-          href: api/channel-get.md
         - name: Create channel
           href: api/channel-post.md
+        - name: Get channel
+          href: api/channel-get.md
         - name: Update channel
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
         - name: Get files folder
           href: api/channel-get-filesfolder.md
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-messages.md
+          href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Add a member to a channel
+          href: api/conversationmember-add.md
+        - name: Remove a member from a channel
+          href: api/conversationmember-delete.md
+        - name: Update the role of a member in channel
+          href: api/conversationmember-update.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-messages.md
+          href: api/chatmessage-post.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Update message
+          href: api/chatmessage-update.md
+      - name: Conversation member
+        href: resources/conversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md
+      - name: Azure AD user conversation member
+        href: resources/aaduserconversationmember.md
+        items:
+        - name: List members
+          href: api/conversationmember-list.md
+        - name: Get member
+          href: api/conversationmember-get.md
+        - name: Add member
+          href: api/conversationmember-add.md
+        - name: Update member
+          href: api/conversationmember-update.md
+        - name: Delete member
+          href: api/conversationmember-delete.md         
       - name: App catalog
         items:
         - name: App in catalog
@@ -4853,7 +4999,7 @@ items:
           href: api/teamsapp-list.md
         - name: Update app in catalog
           href: api/teamsapp-update.md
-        - name: Remove app from catalog
+        - name: Delete app from catalog
           href: api/teamsapp-delete.md
       - name: App
         items:
@@ -5068,6 +5214,62 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+    - name: To-do tasks
+      displayName: Microsoft To Do
+      items:
+      - name: Overview
+        href: resources/todo-overview.md
+      - name: Task list
+        href: resources/todotasklist.md
+        items:
+        - name: List task lists
+          href: api/todo-list-lists.md
+        - name: Create task list
+          href: api/todo-post-lists.md
+        - name: Get task list
+          href: api/todotasklist-get.md
+        - name: Update task list
+          href: api/todotasklist-update.md
+        - name: Delete task list
+          href: api/todotasklist-delete.md
+        - name: Get task list delta
+          href: api/todotasklist-delta.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+      - name: Task
+        href: resources/todotask.md
+        items:
+        - name: List tasks
+          href: api/todotasklist-list-tasks.md
+        - name: Create task
+          href: api/todotasklist-post-tasks.md
+        - name: Get task
+          href: api/todotask-get.md
+        - name: Update task
+          href: api/todotask-update.md
+        - name: Delete task
+          href: api/todotask-delete.md
+        - name: Get task delta
+          href: api/todotask-delta.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+      - name: Linked resource
+        href: resources/linkedresource.md
+        items:
+        - name: List
+          href: api/todotask-list-linkedresources.md
+        - name: Create
+          href: api/todotask-post-linkedresources.md
+        - name: Get
+          href: api/linkedresource-get.md
+        - name: Update
+          href: api/linkedresource-update.md
+        - name: Delete
+          href: api/linkedresource-delete.md
     - name: Workbooks and charts
       displayName: Excel
       items:

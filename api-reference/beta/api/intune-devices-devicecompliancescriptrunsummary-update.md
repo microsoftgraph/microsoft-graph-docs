@@ -3,7 +3,7 @@ title: "Update deviceComplianceScriptRunSummary"
 description: "Update the properties of a deviceComplianceScriptRunSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -96,6 +96,8 @@ Content-Length: 344
   "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
 }
 ```
+
+
 
 
 

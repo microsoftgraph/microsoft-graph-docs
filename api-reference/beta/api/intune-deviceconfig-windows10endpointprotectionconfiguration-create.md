@@ -3,7 +3,7 @@ title: "Create windows10EndpointProtectionConfiguration"
 description: "Create a new windows10EndpointProtectionConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -167,6 +167,7 @@ The following table shows the properties that are required when you create the w
 |firewallBlockStatefulFTP|Boolean|Blocks stateful FTP connections to the device|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600|
 |firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Select the preshared key encoding to be used. Possible values are: `deviceDefault`, `none`, `utF8`.|
+|firewallIPSecExemptionsNone|Boolean|Configures IPSec exemptions to no exemptions|
 |firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|Configures IPSec exemptions to allow neighbor discovery IPv6 ICMP type-codes|
 |firewallIPSecExemptionsAllowICMP|Boolean|Configures IPSec exemptions to allow ICMP|
 |firewallIPSecExemptionsAllowRouterDiscovery|Boolean|Configures IPSec exemptions to allow router discovery IPv6 ICMP type-codes|
@@ -295,7 +296,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 31005
+Content-length: 31045
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -781,6 +782,7 @@ Content-length: 31005
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
   "firewallPreSharedKeyEncodingMethod": "none",
+  "firewallIPSecExemptionsNone": true,
   "firewallIPSecExemptionsAllowNeighborDiscovery": true,
   "firewallIPSecExemptionsAllowICMP": true,
   "firewallIPSecExemptionsAllowRouterDiscovery": true,
@@ -1039,7 +1041,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 31177
+Content-Length: 31217
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1528,6 +1530,7 @@ Content-Length: 31177
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
   "firewallPreSharedKeyEncodingMethod": "none",
+  "firewallIPSecExemptionsNone": true,
   "firewallIPSecExemptionsAllowNeighborDiscovery": true,
   "firewallIPSecExemptionsAllowICMP": true,
   "firewallIPSecExemptionsAllowRouterDiscovery": true,
@@ -1780,6 +1783,8 @@ Content-Length: 31177
   }
 }
 ```
+
+
 
 
 

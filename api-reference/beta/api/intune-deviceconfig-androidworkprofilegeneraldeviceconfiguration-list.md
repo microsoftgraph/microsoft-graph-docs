@@ -3,7 +3,7 @@ title: "List androidWorkProfileGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidWorkProfileGeneralDeviceConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3402
+Content-Length: 3584
 
 {
   "value": [
@@ -98,7 +98,9 @@ Content-Length: 3402
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "passwordBlockFaceUnlock": true,
       "passwordBlockFingerprintUnlock": true,
+      "passwordBlockIrisUnlock": true,
       "passwordBlockTrustAgents": true,
       "passwordExpirationDays": 6,
       "passwordMinimumLength": 5,
@@ -116,7 +118,9 @@ Content-Length: 3402
       "workProfileBlockCrossProfileContactsSearch": true,
       "workProfileBlockCrossProfileCopyPaste": true,
       "workProfileDefaultAppPermissionPolicy": "prompt",
+      "workProfilePasswordBlockFaceUnlock": true,
       "workProfilePasswordBlockFingerprintUnlock": true,
+      "workProfilePasswordBlockIrisUnlock": true,
       "workProfilePasswordBlockTrustAgents": true,
       "workProfilePasswordExpirationDays": 1,
       "workProfilePasswordMinimumLength": 0,
@@ -140,6 +144,8 @@ Content-Length: 3402
   ]
 }
 ```
+
+
 
 
 

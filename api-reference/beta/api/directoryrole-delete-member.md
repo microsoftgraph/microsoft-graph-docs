@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryroles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{id}/members/{id}/$ref
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ Here is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/directoryroles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/beta/directoryRoles/{id}/members/{id}/$ref
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-csharp-snippets.md)]
@@ -103,3 +103,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

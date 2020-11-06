@@ -38,3 +38,5 @@ Represents the mapping between an education user type and the domain the user's 
   "name": "String"
 }
 ```
+
+

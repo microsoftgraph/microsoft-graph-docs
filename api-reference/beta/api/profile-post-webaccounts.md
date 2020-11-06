@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/webAccounts
+POST /users/{id | userPrincipalName}/profile/webAccounts
 ```
 
 ## Request headers
@@ -43,6 +44,19 @@ POST /me/profile/webAccounts
 ## Request body
 
 In the request body, supply a JSON representation of [webAccount](../resources/webaccount.md) object.
+
+The following table shows the properties that are possible to set when you create a new [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Contains the description the user has provided for the account on the service being referenced.|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|service|[serviceInformation](../resources/serviceinformation.md)| Contains basic detail about the service that is being associated. |
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+|statusMessage|String|Contains a status message from the cloud service if provided or synchronized. |
+|userId|String|The user name  displayed for the webaccount.  |
+|webUrl|String|Contains a link to the user's profile on the cloud service if one exists.|
 
 ## Response
 
@@ -65,14 +79,12 @@ POST https://graph.microsoft.com/beta/me/profile/webAccounts
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "userId": "userId-value",
+  "description": "My Github contributions!",
+  "userId": "innocenty.popov",
   "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
-  },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+    "name": "GitHub",
+    "webUrl": "https://github.com"
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -107,23 +119,37 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "userId": "userId-value",
-  "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
+    "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "description": "My Github contributions!",
+  "userId": "innocenty.popov",
+  "service": {
+    "name": "GitHub",
+    "webUrl": "https://github.com"
+  },
+  "statusMessage": null,
+  "webUrl": "https://github.com/innocenty.popov"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create webAccount",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

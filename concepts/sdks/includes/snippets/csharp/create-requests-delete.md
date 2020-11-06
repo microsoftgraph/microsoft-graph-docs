@@ -1,9 +1,10 @@
+<!-- markdownlint-disable MD041 -->
+
 ```csharp
-    // DELETE https://graph.microsoft.com/v1.0/me/messages/<guid>
+// DELETE https://graph.microsoft.com/v1.0/me/messages/{message-id}
 
-     string messageId = "<guid>";
-     Message message = await graphClient.Me.Messages[messageId]
-                .Request()
-                .DeleteAsync();
-
+string messageId = "AQMkAGUy...";
+var message = await graphClient.Me.Messages[messageId]
+    .Request()
+    .DeleteAsync();
 ```

@@ -3,7 +3,7 @@ title: "windowsAppStartLayoutTileSize enum type"
 description: "The tile size of Windows app in the start layout."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -25,6 +25,8 @@ The tile size of Windows app in the start layout.
 |medium|2|Medium 2x2.|
 |wide|3|Wide 4x2.|
 |large|4|Large 4x4.|
+
+
 
 
 

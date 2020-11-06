@@ -3,7 +3,7 @@ title: "deviceManagementSettingDefinition resource type"
 description: "Entity representing the defintion for a given setting"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -36,6 +36,8 @@ Entity representing the defintion for a given setting
 |description|String|The setting's description|
 |placeholderText|String|Placeholder text as an example of valid input|
 |documentationUrl|String|Url to setting documentation|
+|headerTitle|String|title of the setting header represents a category/section of a setting/settings|
+|headerSubtitle|String|subtitle of the setting header for more details about the category/section|
 |keywords|String collection|Keywords associated with the setting|
 |constraints|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) collection|Collection of constraints for the setting value|
 |dependencies|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) collection|Collection of dependencies on other settings|
@@ -61,6 +63,8 @@ Here is a JSON representation of the resource.
   "description": "String",
   "placeholderText": "String",
   "documentationUrl": "String",
+  "headerTitle": "String",
+  "headerSubtitle": "String",
   "keywords": [
     "String"
   ],
@@ -88,6 +92,8 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
 
 
 

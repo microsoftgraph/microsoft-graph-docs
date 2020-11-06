@@ -3,7 +3,7 @@ title: "List windowsPhone81SCEPCertificateProfiles"
 description: "List properties and relationships of the windowsPhone81SCEPCertificateProfile objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -123,6 +123,8 @@ Content-Length: 2222
   ]
 }
 ```
+
+
 
 
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IDirectoryObjectCollectionPage transitiveMemberOf = graphClient.me().transitiveMemberOf()
+IDirectoryObjectCollectionPage transitiveMemberOf = graphClient.users("{id}").transitiveMemberOf()
 	.buildRequest()
 	.get();
 

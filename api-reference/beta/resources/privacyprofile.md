@@ -4,7 +4,7 @@ description: "Represents a company's privacy profile, which includes a privacy s
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "davidmu1"
 ---
 
 # privacyProfile resource type
@@ -39,3 +39,5 @@ Here is a JSON representation of the resource
   "statementUrl": "string"
 }
 ```
+
+

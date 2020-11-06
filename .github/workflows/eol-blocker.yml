@@ -1,0 +1,17 @@
+name: EOL Blocker
+
+on:
+  pull_request_target:
+    branches: [ master, live ]
+
+jobs:
+  check_pull_request_job:
+    runs-on: ubuntu-latest
+    name: Check files for CRLF
+    steps:
+    - name: Validate files
+      with:
+        repoToken: ${{ secrets.GITHUB_TOKEN }}
+        excludeFiles: '**/**.{png,PNG,jpg,JPG,jpeg,JPEG,gif,GIF,bmp,BMP}' 
+      id: validate
+      uses: microsoftgraph/eol-blocker@v1.0.8

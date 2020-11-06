@@ -3,7 +3,7 @@ title: "deviceManagementTemplateSubtype enum type"
 description: "Template subtype"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -27,6 +27,8 @@ Template subtype
 |endpointDetectionReponse|4|Endpoint security endpoint detection and response subtype|
 |accountProtection|5|Endpoint security account protection subtype|
 |antivirus|6|Endpoint security anitivirus subtype|
+
+
 
 
 

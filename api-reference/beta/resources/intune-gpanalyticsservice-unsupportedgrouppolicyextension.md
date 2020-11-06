@@ -3,7 +3,7 @@ title: "unsupportedGroupPolicyExtension resource type"
 description: "Unsupported Group Policy Extension."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -56,6 +56,8 @@ Here is a JSON representation of the resource.
   "nodeName": "String"
 }
 ```
+
+
 
 
 

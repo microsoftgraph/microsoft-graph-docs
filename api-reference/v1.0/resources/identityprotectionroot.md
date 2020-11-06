@@ -37,7 +37,5 @@ Azure AD Identity Protection is a premium feature. You need an Azure AD Premium 
 
 ## See also
 
-* [About Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-* [Get started with Azure Active Directory identity protection and Microsoft Graph](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
-
-
+* [About Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+* [Get started with Azure Active Directory identity protection and Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

@@ -21,3 +21,6 @@ The following Graph resources are available to manage enrollment in Intune:
 - [User PFX certificate](intune-raimportcerts-userpfxcertificate.md)
 - [User PFX intended purpose](intune-raimportcerts-userpfxintendedpurpose.md)
 - [User PFX padding scheme](intune-raimportcerts-userpfxpaddingscheme.md)
+
+
+

@@ -3,7 +3,7 @@ title: "Create androidGeneralDeviceConfiguration"
 description: "Create a new androidGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -88,6 +88,7 @@ The following table shows the properties that are required when you create the a
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset. Valid values 1 to 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is an API targeted to Android 11+. Possible values are: `none`, `low`, `medium`, `high`.|
 |passwordRequired|Boolean|Indicates whether or not to require a password.|
 |powerOffBlocked|Boolean|Indicates whether or not to block powering off the device.|
 |factoryResetBlocked|Boolean|Indicates whether or not to block user performing a factory reset.|
@@ -122,7 +123,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3934
+Content-length: 3974
 
 {
   "@odata.type": "#microsoft.graph.androidGeneralDeviceConfiguration",
@@ -198,6 +199,7 @@ Content-length: 3934
   "passwordPreviousPasswordBlockCount": 2,
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "passwordRequiredType": "alphabetic",
+  "requiredPasswordComplexity": "low",
   "passwordRequired": true,
   "powerOffBlocked": true,
   "factoryResetBlocked": true,
@@ -251,7 +253,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4106
+Content-Length: 4146
 
 {
   "@odata.type": "#microsoft.graph.androidGeneralDeviceConfiguration",
@@ -330,6 +332,7 @@ Content-Length: 4106
   "passwordPreviousPasswordBlockCount": 2,
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "passwordRequiredType": "alphabetic",
+  "requiredPasswordComplexity": "low",
   "passwordRequired": true,
   "powerOffBlocked": true,
   "factoryResetBlocked": true,
@@ -377,6 +380,8 @@ Content-Length: 4106
   "securityRequireVerifyApps": true
 }
 ```
+
+
 
 
 

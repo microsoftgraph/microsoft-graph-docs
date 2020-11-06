@@ -2,7 +2,7 @@
 title: "alternativeSecurityId resource type"
 description: "For internal use only."
 localization_priority: Normal
-author: ""
+author: "spunukol"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -34,3 +34,4 @@ For internal use only. This complex type will be deprecated in the future.
 | type             | Int32      | For internal use only
 | identityProvider | string     | For internal use only
 | key              | Edm.Binary | For internal use only
+

@@ -9,6 +9,8 @@ author: "yyuank"
 
 # Get endpoint
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a specific [endpoint](../resources/endpoint.md) object.
 
 ## Permissions
@@ -27,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /groups/{id}/endpoints/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -65,7 +67,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 Here is an example of the response.

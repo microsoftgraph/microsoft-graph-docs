@@ -9,6 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 Channel channel = new Channel();
 channel.displayName = "Architecture Discussion";
 channel.description = "This channel is where we debate all future architecture plans";
+channel.membershipType = ChannelMembershipType.STANDARD;
 
 graphClient.teams("{id}").channels()
 	.buildRequest()

@@ -6,10 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var groups = await graphClient.Groups
+var group = await graphClient.Groups["{id}"].MemberOf
 	.Request()
 	.Header("ConsistencyLevel","eventual")
 	.Search("displayName:Video")
+	.OrderBy("displayName ")
 	.GetAsync();
 
 ```

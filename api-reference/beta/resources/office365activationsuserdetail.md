@@ -37,3 +37,5 @@ The following is a JSON representation of the resource.
   "userActivationCounts": [{"@odata.type":"microsoft.graph.userActivationCounts"}]
 }
 ```
+
+

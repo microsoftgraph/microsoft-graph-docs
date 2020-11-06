@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment could state that user 'Alice' has the been assigned access via the access package 'Sales' for the period January 2019 through July 2019.
+In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment can state that user Alice has been assigned access via the access package Sales for the period January 2019 through July 2019.
 
 ## Methods
 
@@ -36,6 +36,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |id|String| Read-only.|
 |isExtended|Boolean|Indicates whether the access package assignment is extended. Read-only.|
 |targetId|String| The ID of the subject with the assignment. Read-only.|
+|schedule|[requestSchedule](requestschedule.md)| When the access assignment is to be in place. Read-only.|
 
 ## Relationships
 
@@ -43,7 +44,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| Read-only. Nullable.|
 |accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Read-only. Nullable.|
-|accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection| Read-only. Nullable.|
+|accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection| The resource roles delivered to the target user for this assignment. Read-only. Nullable.|
 |target|[accessPackageSubject](accesspackagesubject.md)| The subject of the access package assignment. Read-only. Nullable.|
 
 ## JSON representation
@@ -62,15 +63,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-            "id": "9bdae7b4-6ece-487b-9eb8-9679dbd67aa2",
-            "catalogId": "cc30dc98-6d3c-4fa0-bed8-fd76d0efd993",
-            "accessPackageId": "e3f47362-993f-4fcb-8a38-532ffca16150",
-            "assignmentPolicyId": "63ebd106-8116-40e7-a0ab-01ae475d11bb",
-            "targetId": "ab4291f6-66b7-42bf-b597-a05b29414f5c",
-            "assignmentStatus": "ExpiredNotificationTriggered",
-            "assignmentState": "Expired",
-            "isExtended": false,
-            "expiredDateTime": "2019-04-25T23:45:40.42Z"
+   "id":"9bdae7b4-6ece-487b-9eb8-9679dbd67aa2",
+   "catalogId":"cc30dc98-6d3c-4fa0-bed8-fd76d0efd993",
+   "accessPackageId":"e3f47362-993f-4fcb-8a38-532ffca16150",
+   "assignmentPolicyId":"63ebd106-8116-40e7-a0ab-01ae475d11bb",
+   "targetId":"ab4291f6-66b7-42bf-b597-a05b29414f5c",
+   "assignmentStatus":"ExpiredNotificationTriggered",
+   "assignmentState":"Expired",
+   "isExtended":false,
+   "expiredDateTime":"2019-04-25T23:45:40.42Z"
 }
 ```
 
@@ -83,3 +84,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,7 +3,7 @@ title: "Get windowsUpdateForBusinessConfiguration"
 description: "Read properties and relationships of the windowsUpdateForBusinessConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -143,6 +143,8 @@ Content-Length: 3127
   }
 }
 ```
+
+
 
 
 

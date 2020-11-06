@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/members/$ref
+POST /groups/{group-id}/members/$ref
 ```
 
 ## Request headers
@@ -44,7 +44,7 @@ POST /groups/{id}/members/$ref
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object to be added.
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist. 
 
 ## Example
 ### Request
@@ -56,7 +56,7 @@ The following is an example of the request.
   "name": "add_group_member"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/members/$ref
+POST https://graph.microsoft.com/beta/groups/{group-id}/members/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

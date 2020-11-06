@@ -25,8 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.ReadWrite.All |
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -63,7 +61,7 @@ The following is an example of the request.
   "name": "schedule-put-schedulinggroups"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 Content-type: application/json
 Prefer: return=representation
 
@@ -148,3 +146,4 @@ Content-length: 401
   ]
 }
 -->
+

@@ -4,7 +4,7 @@ description: "The basic representation of a time zone."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "svpsiva"
 ---
 
 # timeZoneBase resource type
@@ -53,3 +53,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

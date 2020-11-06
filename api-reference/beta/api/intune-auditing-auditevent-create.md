@@ -3,7 +3,7 @@ title: "Create auditEvent"
 description: "Create a new auditEvent object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -73,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1603
+Content-length: 1697
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -97,7 +97,9 @@ Content-length: 1603
         "displayName": "Display Name value",
         "roleScopeTagId": "Role Scope Tag Id value"
       }
-    ]
+    ],
+    "remoteTenantId": "Remote Tenant Id value",
+    "remoteUserId": "Remote User Id value"
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -130,7 +132,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1652
+Content-Length: 1746
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -155,7 +157,9 @@ Content-Length: 1652
         "displayName": "Display Name value",
         "roleScopeTagId": "Role Scope Tag Id value"
       }
-    ]
+    ],
+    "remoteTenantId": "Remote Tenant Id value",
+    "remoteUserId": "Remote User Id value"
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -182,6 +186,8 @@ Content-Length: 1652
   "category": "Category value"
 }
 ```
+
+
 
 
 

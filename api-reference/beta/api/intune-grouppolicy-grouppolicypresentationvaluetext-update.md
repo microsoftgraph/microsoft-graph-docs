@@ -3,7 +3,7 @@ title: "Update groupPolicyPresentationValueText"
 description: "Update the properties of a groupPolicyPresentationValueText object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -88,6 +88,8 @@ Content-Length: 273
   "value": "Value value"
 }
 ```
+
+
 
 
 

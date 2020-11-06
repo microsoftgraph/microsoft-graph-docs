@@ -43,3 +43,5 @@ The following is a JSON representation of the resource.
   "windows10Mobile": 1024
 }
 ```
+
+

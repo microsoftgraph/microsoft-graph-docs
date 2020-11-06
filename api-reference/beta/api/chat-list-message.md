@@ -109,7 +109,8 @@ Content-length: 201
             "etag": "1555631722147",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:55:22.147Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
@@ -149,7 +150,8 @@ Content-length: 201
             "etag": "1555631540287",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:52:20.287Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": "",
             "summary": null,
@@ -180,7 +182,8 @@ Content-length: 201
             "etag": "1555631512068",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:51:52.068Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
@@ -220,7 +223,8 @@ Content-length: 201
             "etag": "1555631511115",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:51:51.115Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
@@ -271,3 +275,5 @@ Content-length: 201
   ]
 }
 -->
+
+

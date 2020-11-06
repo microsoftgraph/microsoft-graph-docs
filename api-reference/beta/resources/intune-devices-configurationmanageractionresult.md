@@ -3,7 +3,7 @@ title: "configurationManagerActionResult resource type"
 description: "Result of the ConfigurationManager action"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -51,6 +51,8 @@ Here is a JSON representation of the resource.
   "errorCode": 1024
 }
 ```
+
+
 
 
 

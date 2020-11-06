@@ -81,7 +81,7 @@ For both the long-running operation pattern and the regular pattern, we recommen
 | **conflictUncategorized**                   | The failed request conflicts with certain server state. The Microsoft Graph client is not expected to resend the failed request until the conflict is resolved. An end user can choose to manually perform the same operations with Excel Online to get more details about the conflict.
 | **filteredRangeConflict**                   | The operation failed because it conflicts with a filtered range. The Microsoft Graph client is not expected to resend the failed request.
 | **forbiddenUncategorized**                    | The failed request is not allowed. The Microsoft Graph client is not expected to resend the failed request. An end user can choose to manually perform the same operations with Excel Online to get more details about the restrictions.
-| **gatewayTimeoutUncategorized**         | The service wasn’t able to complete the request within the time limit. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes.
+| **gatewayTimeoutUncategorized**         | The service wasn’t able to complete the request within the time limit.
 | **generalException**         | An internal error occurred while processing the request. The Microsoft Graph client is not expected to resend the failed request.
 | **insertDeleteConflict**         | The insert or delete operation attempted resulted in a conflict. The Microsoft Graph client is not expected to resend the failed request.
 | **internalServerErrorUncategorized**       | An unspecified error has occurred. The Microsoft Graph client is not expected to resend the failed request. If a session is specified in the failed request, further access to the session is not expected either.
@@ -115,7 +115,7 @@ For both the long-running operation pattern and the regular pattern, we recommen
 
 ### 3. Parse the top-level error code
 
-If you can't find the second-level error code listed in the [Error codes](/concepts/workbook-error-codes.md) topic, we recommend that you follow the instructions provided for top-level errors, which are bound to the status code. For details about top-level error codes and messages, see [Error codes](/concepts/workbook-error-codes.md).
+If you can't find the second-level error code listed in the [Detailed error codes](workbook-error-codes.md#detailed-error-code) topic, we recommend that you follow the instructions provided for top-level errors. The top-level error codes are bound to the status code and you can take action according to the corresponding status codes. For details about top-level error codes and messages, see [Error codes](workbook-error-codes.md#error-code).
 
 ### 4. Parse the status code
 
@@ -124,6 +124,10 @@ If the error code you encounter is not in the second-level list or the top-level
 ### 5. Error recovery cooldown
 
 For some of the responses in the regular pattern, a recovery cooldown duration in seconds might be provided via a `Retry-After` header. When a recovery cooldown duration is present, the Microsoft Graph client is not expected to send any followup requests before the specified duration passes.
+
+## Special case handling
+
+For [sessionful requests](excel-manage-sessions.md#request-types), if you encounter a `502/badGateway` or `503/serviceUnavailable` error, when a second-level error code is listed in [Detailed error codes](workbook-error-codes.md#detailed-error-code), parse the second-level code and follow the corresponding instructions; otherwise, we reconmmend that you recreate the session directly.
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",

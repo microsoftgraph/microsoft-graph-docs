@@ -52,7 +52,7 @@ You can populate selected people data by doing one of the following:
     document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
     ```
 
-- Using the `selectUsersById()` method, which accepts an array of Microsoft graph [user ids](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
+- Using the `selectUsersById()` method, which accepts an array of Microsoft graph [user ids](/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
 
      >**Note:** If no user is found for an `id`, no data will be rendered for that `id`.
 

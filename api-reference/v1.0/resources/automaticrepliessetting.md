@@ -2,7 +2,7 @@
 title: "automaticRepliesSetting resource type"
 description: "Configuration settings to automatically notify the sender of an incoming email with a message from the "
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Configuration settings to automatically notify the sender of an incoming email with a message from the 
-signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to 
-respond to emails. 
+Configuration settings to automatically notify the sender of an incoming email with a message from the
+signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to
+respond to emails.
 
 
 ## Properties
@@ -59,3 +59,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

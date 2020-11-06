@@ -2,7 +2,7 @@
 title: "recentNotebookLinks resource type"
 description: "Links for opening a OneNote notebook. This resource type exists as a property on a recentNotebook resource."
 localization_priority: Normal
-author: ""
+author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -48,3 +48,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

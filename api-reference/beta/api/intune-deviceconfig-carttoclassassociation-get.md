@@ -3,7 +3,7 @@ title: "Get cartToClassAssociation"
 description: "Read properties and relationships of the cartToClassAssociation object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -83,6 +83,8 @@ Content-Length: 488
   }
 }
 ```
+
+
 
 
 

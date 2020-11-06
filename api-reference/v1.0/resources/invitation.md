@@ -35,8 +35,8 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 |invitedUserEmailAddress|String|The email address of the user being invited. Required. The following special characters are not permitted in the email address:<br><ul><li>Tilde (~)</li><li>Exclamation point (`!`)</li><li>Number sign (`#`)</li><li>Dollar sign (`$`)</li><li>Percent (`%`)</li><li>Circumflex (`^`)</li><li>Ampersand (`&`)</li><li>Asterisk (`*`)</li><li>Parentheses (`( )`)</li><li>Plus sign (`+`)</li><li>Equal sign (`=`)</li><li>Brackets (`[ ]`)</li><li>Braces (`{ }`)</li><li>Backslash (`\`)</li><li>Slash mark (`/`)</li><li>Pipe (`\|`)</li><li>Semicolon (`;`)</li><li>Colon (`:`)</li><li>Quotation marks (`"`)</li><li>Angle brackets (`< >`)</li><li>Question mark (`?`)</li><li>Comma (`,`)</li></ul><br>However, the following exceptions apply:<br><ul><li>A period (`.`) or a hyphen (`-`) is permitted anywhere in the user name, except at the beginning or end of the name.</li><li>An underscore (`_`) is permitted anywhere in the user name. This includes at the beginning or end of the name.</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Additional configuration for the message being sent to the invited user, including customizing message text, language and cc recipient list.|
 |sendInvitationMessage|Boolean|Indicates whether an email should be sent to the user being invited or not. The default is false.|
-|inviteRedirectUrl|String|The URL user should be redirected to once the invitation is redeemed. Required.|
-|inviteRedeemUrl|String|The URL user can use to redeem his invitation. Read-Only|
+|inviteRedirectUrl|String|The URL the user should be redirected to once the invitation is redeemed. Required.|
+|inviteRedeemUrl|String|The URL the user can use to redeem their invitation. Read-only|.
 |invitedUserType|String|The userType of the user being invited. By default, this is Guest. You can invite as Member if you are a company administrator. |
 |status|String|The status of the invitation. Possible values: PendingAcceptance, Completed, InProgress, and Error|
 
@@ -73,3 +73,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

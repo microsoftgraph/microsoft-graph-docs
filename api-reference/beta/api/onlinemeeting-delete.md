@@ -17,21 +17,37 @@ Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Permissions
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | OnlineMeetings.ReadWrite              |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | Not Supported.                                  |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | OnlineMeetings.ReadWrite.All*                |
+
+> [!IMPORTANT]
+> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to delete an online meeting on behalf of that user (user ID specified in the reuqest path) has created.
 
 ## HTTP request
+
+Request when using a delegated token
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{id}
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
+
+Request when using an application token:
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+```
+
+> **Note:**
+>
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
 
 ## Request headers
 | Name          | Description               |
-|:--------------|:--------------------------|
+| :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
@@ -93,3 +109,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

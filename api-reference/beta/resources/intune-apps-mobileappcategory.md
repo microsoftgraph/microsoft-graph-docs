@@ -3,7 +3,7 @@ title: "mobileAppCategory resource type"
 description: "Contains properties for a single Intune app category."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -52,6 +52,8 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

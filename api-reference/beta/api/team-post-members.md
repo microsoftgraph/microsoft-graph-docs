@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)| TeamMember.ReadWrite.All|
+|Delegated (work or school account)| TeamMember.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application| TeamMember.ReadWrite.All|
+|Application| TeamMember.ReadWrite.All |
 
 ## HTTP request
 
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /teams/{teamsId}/members
+POST /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## Request headers
@@ -44,7 +45,9 @@ In the request body, supply a JSON representation of the [conversationMember](..
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body. For best results, stagger calls with 2 seconds of buffer.
+
+For best results, stagger calls with a 2 second buffer.
 
 ## Examples
 
@@ -106,3 +109,5 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+
+

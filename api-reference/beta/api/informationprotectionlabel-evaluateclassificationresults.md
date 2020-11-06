@@ -48,7 +48,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
+POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 ```
 
 ## Request headers
@@ -87,7 +87,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateClassificationResults
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/evaluateClassificationResults
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
@@ -213,3 +213,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

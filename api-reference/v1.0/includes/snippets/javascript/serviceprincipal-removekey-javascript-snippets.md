@@ -15,7 +15,7 @@ const removeKey = {
     proof:"eyJ0eXAiOiJ..."
 };
 
-let res = await client.api('/serviceprincipals/{id}/removeKey')
+let res = await client.api('/servicePrincipals/{id}/removeKey')
 	.post(removeKey);
 
 ```

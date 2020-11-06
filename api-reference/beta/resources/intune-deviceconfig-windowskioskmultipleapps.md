@@ -3,7 +3,7 @@ title: "windowsKioskMultipleApps resource type"
 description: "The class used to identify the MultiMode app configuration for the kiosk configuration"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -60,6 +60,8 @@ Here is a JSON representation of the resource.
   "startMenuLayoutXml": "binary"
 }
 ```
+
+
 
 
 

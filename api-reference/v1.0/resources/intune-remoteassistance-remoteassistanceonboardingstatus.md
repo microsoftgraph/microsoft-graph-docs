@@ -3,7 +3,7 @@ title: "remoteAssistanceOnboardingStatus enum type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -21,6 +21,8 @@ Not yet documented
 |notOnboarded|0|Not yet documented|
 |onboarding|1|Not yet documented|
 |onboarded|2|Not yet documented|
+
+
 
 
 

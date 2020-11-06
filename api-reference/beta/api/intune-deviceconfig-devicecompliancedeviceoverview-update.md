@@ -3,7 +3,7 @@ title: "Update deviceComplianceDeviceOverview"
 description: "Update the properties of a deviceComplianceDeviceOverview object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -108,6 +108,8 @@ Content-Length: 391
   "configurationVersion": 4
 }
 ```
+
+
 
 
 

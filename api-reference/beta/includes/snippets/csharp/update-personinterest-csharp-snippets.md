@@ -10,11 +10,8 @@ var personInterest = new PersonInterest
 {
 	Categories = new List<String>()
 	{
-		"categories-value"
-	},
-	Description = "description-value",
-	DisplayName = "displayName-value",
-	WebUrl = "webUrl-value"
+		"Sports"
+	}
 };
 
 await graphClient.Me.Profile.Interests["{id}"]

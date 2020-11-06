@@ -14,7 +14,7 @@ Represents information about a detected risk in an Azure AD tenant.
 
 Azure AD continually evaluates [user risks](riskyuser.md) and app or user [sign-in](signin.md) risks based on various signals and machine learning. This API provides programmatic access to all risk detections in your Azure AD environment.
 
-For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
+For more information about risk events, see [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >[!NOTE]
 >You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
@@ -90,4 +90,3 @@ The following is a JSON representation of the resource.
   "additionalInfo": "String"
 }
 ```
-

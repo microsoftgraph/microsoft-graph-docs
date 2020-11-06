@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite |
+|Application | Not supported. |
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
@@ -112,3 +112,5 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
+

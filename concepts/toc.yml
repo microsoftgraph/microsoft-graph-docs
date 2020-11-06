@@ -1,4 +1,3 @@
-name: Graph Docs
 metadata:
   experimental: true
   experiment_id: "b8938daf-1bcb-4f"
@@ -43,8 +42,12 @@ items:
             href: /graph/tutorials/aspnet-core
           - name: ASP.NET
             href: /learn/modules/msgraph-build-aspnetmvc-apps
-          - name: Microsoft Flow
-            href: /graph/tutorials/flow
+          - name: Azure Functions
+            href: /graph/tutorials/azure-functions
+          - name: Blazor WebAssembly
+            href: /graph/tutorials/blazor
+          - name: Bot Framework
+            href: /graph/tutorials/bot-framework
           - name: iOS Objective-C
             href: /graph/tutorials/ios-objectivec
           - name: iOS Swift
@@ -57,6 +60,8 @@ items:
             href: /graph/tutorials/node
           - name: PHP
             href: /graph/tutorials/php
+          - name: Power Automate
+            href: /graph/tutorials/power-automate
           - name: Python
             href: /graph/tutorials/python
           - name: React
@@ -65,6 +70,8 @@ items:
             href: /graph/tutorials/react-native
           - name: Ruby
             href: /graph/tutorials/ruby
+          - name: SharePoint Framework
+            href: /graph/tutorials/spfx
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -81,7 +88,7 @@ items:
       - name: Groups
         href: office365-groups-concept-overview.md
       - name: Applications
-        items:    
+        items:
           - name: Overview
             href: applications-concept-overview.md
           - name: Automate SAML-based SSO configuration
@@ -131,6 +138,8 @@ items:
             href: cloud-communications-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
+          - name: Configure application access
+            href: cloud-communication-online-meeting-application-access-policy.md
           - name: Call records
             href: cloud-communications-callrecords.md
           - name: Manage phone numbers for bots
@@ -170,8 +179,14 @@ items:
         expanded: true
         items:
           - name: Cloud printing (preview)
-            href: universal-print-concept-overview.md
-            displayName: Universal Print
+            expanded: true
+            items: 
+              - name: Overview
+                href: universal-print-concept-overview.md
+                displayName: Universal Print                
+              - name: Upload data to upload session
+                href: upload-data-to-upload-session.md
+                displayName: Universal Print Job Submission
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
@@ -186,7 +201,7 @@ items:
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
-        displayname: Dynamics, Dynamics 365 Business Central
+        displayName: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
         displayName: Azure AD, Microsoft identity platform
         items:
@@ -194,6 +209,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Authentication methods
             href: authenticationmethods-get-started.md
+          - name: Governance
+            items:
+              - name: Create an access package
+                href: tutorial-access-package-api.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -302,14 +321,20 @@ items:
                 href: search-concept-messages.md
               - name: Search events
                 href: search-concept-events.md
-              - name: Search files
+              - name: Search content in OneDrive and SharePoint
                 href: search-concept-files.md
               - name: Search connectors
                 href: search-concept-custom-types.md
+              - name: Sort search results
+                href: search-concept-sort.md
+              - name: Refine search results
+                href: search-concept-aggregation.md
           - name: Index
             items:
               - name: Manage connections
                 href: search-index-manage-connections.md
+              - name: Manage schema
+                href: search-index-manage-schema.md
               - name: Manage items
                 href: search-index-manage-items.md
       - name: Security
@@ -351,6 +376,9 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
+      - name: To-do tasks
+        href: todo-concept-overview.md
+        displayName: Microsoft To Do
       - name: Workbooks and charts
         displayName: Excel
         items:
@@ -417,9 +445,9 @@ items:
                 href: webhooks.md
               - name: Tutorial
                 href: /learn/modules/msgraph-changenotifications-trackchanges
-              - name: Missing Outlook notifications (preview)
-                href: webhooks-outlook-authz.md
-              - name: Notifications with resource data (preview)
+              - name: Missing change notifications
+                href: webhooks-lifecycle.md
+              - name: Notifications with resource data
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways (preview)
                 href: change-notifications-delivery.md
@@ -437,7 +465,7 @@ items:
               - name: Get changes to users (example)
                 href: delta-query-users.md
           - name: Add custom data
-            displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+            displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
             items:
               - name: Overview
                 href: extensibility-overview.md
@@ -451,10 +479,8 @@ items:
         expanded: false
         items:
           - name: Azure AD Graph
-            displayname: Migration, Azure AD Graph
+            displayName: Migration, Azure AD Graph
             items:
-              - name: Overview
-                href: migrate-azure-ad-graph-overview.md
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
@@ -503,12 +529,36 @@ items:
             href: sdks/batch-requests.md
           - name: Upload large files
             href: sdks/large-file-upload.md
-      - name: Use the toolkit
+          - name: Use beta API
+            href: sdks/use-beta.md
+          - name: Use PowerShell
+            items:
+              - name: Installation
+                href: powershell/installation.md
+              - name: Get started
+                href: powershell/get-started.md
+              - name: Navigating the SDK
+                href: powershell/navigating.md
+              - name: App-only authentication
+                href: powershell/app-only.md
+      - name: Use the Toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
           - name: Get started
-            href: toolkit/get-started.md
+            items:
+              - name: Overview
+                href: toolkit/get-started/overview.md
+              - name: Build a web application (JavaScript)
+                href: toolkit/get-started/build-a-web-app.md
+              - name: Build a SharePoint web part
+                href: toolkit/get-started/build-a-sharepoint-web-part.md
+              - name: Build a Microsoft Teams tab
+                href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Use the Toolkit with React
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: Use the Toolkit with Angular
+                href: toolkit/get-started/use-toolkit-with-angular.md
           - name: Components
             items:
               - name: Login
@@ -533,7 +583,7 @@ items:
             items:
               - name: Using the providers
                 href: toolkit/providers.md
-              - name: Msal provider
+              - name: MSAL provider
                 href: toolkit/providers/msal.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
@@ -559,6 +609,6 @@ items:
           - name: Errors
             href: errors.md
       - name: v1.0 reference
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0
       - name: Beta reference
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta

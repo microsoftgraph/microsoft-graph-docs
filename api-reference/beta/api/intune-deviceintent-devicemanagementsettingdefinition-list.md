@@ -3,7 +3,7 @@ title: "List deviceManagementSettingDefinitions"
 description: "List properties and relationships of the deviceManagementSettingDefinition objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1142
+Content-Length: 1236
 
 {
   "value": [
@@ -76,6 +76,8 @@ Content-Length: 1142
       "description": "Description value",
       "placeholderText": "Placeholder Text value",
       "documentationUrl": "https://example.com/documentationUrl/",
+      "headerTitle": "Header Title value",
+      "headerSubtitle": "Header Subtitle value",
       "keywords": [
         "Keywords value"
       ],
@@ -105,6 +107,8 @@ Content-Length: 1142
   ]
 }
 ```
+
+
 
 
 

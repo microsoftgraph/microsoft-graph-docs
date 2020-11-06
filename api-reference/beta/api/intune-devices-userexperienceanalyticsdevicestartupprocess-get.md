@@ -3,7 +3,7 @@ title: "Get userExperienceAnalyticsDeviceStartupProcess"
 description: "Read properties and relationships of the userExperienceAnalyticsDeviceStartupProcess object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -77,6 +77,8 @@ Content-Length: 358
   }
 }
 ```
+
+
 
 
 

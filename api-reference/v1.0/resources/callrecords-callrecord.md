@@ -2,7 +2,7 @@
 title: "callRecord resource type"
 description: "The callRecord type"
 localization_priority: Normal
-author: "stephenjust"
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---

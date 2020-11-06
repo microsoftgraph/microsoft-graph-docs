@@ -18,11 +18,13 @@ Retrieve the properties and relationships of a [printOperation](../resources/pri
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| User.Read.All |
+|Delegated (work or school account)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not supported.|
+|Application| Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

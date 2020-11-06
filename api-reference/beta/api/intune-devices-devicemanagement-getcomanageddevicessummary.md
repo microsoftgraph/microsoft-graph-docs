@@ -3,7 +3,7 @@ title: "getComanagedDevicesSummary function"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 348
+Content-Length: 379
 
 {
   "value": {
@@ -72,10 +72,13 @@ Content-Length: 348
     "windowsUpdateForBusinessCount": 13,
     "endpointProtectionCount": 7,
     "modernAppsCount": 15,
-    "officeAppsCount": 15
+    "officeAppsCount": 15,
+    "totalComanagedCount": 3
   }
 }
 ```
+
+
 
 
 

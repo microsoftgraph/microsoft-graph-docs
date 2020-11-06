@@ -2,7 +2,7 @@
 title: "List signIns"
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API."
 localization_priority: Normal
-author: "kholtz"
+author: "khotz"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -203,3 +203,4 @@ Content-length: 264
   "suppressions": [
   ]
 }-->
+

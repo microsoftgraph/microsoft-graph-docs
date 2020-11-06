@@ -34,7 +34,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header        | Value                     |
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories
 
 ##### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -84,7 +84,8 @@ Content-length: 85
 {
     "displayName": "Quizzes",
     "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
-}```
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

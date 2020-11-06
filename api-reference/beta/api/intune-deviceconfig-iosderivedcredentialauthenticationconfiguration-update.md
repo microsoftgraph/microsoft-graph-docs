@@ -3,7 +3,7 @@ title: "Update iosDerivedCredentialAuthenticationConfiguration"
 description: "Update the properties of a iosDerivedCredentialAuthenticationConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -151,6 +151,8 @@ Content-Length: 1222
   "version": 7
 }
 ```
+
+
 
 
 

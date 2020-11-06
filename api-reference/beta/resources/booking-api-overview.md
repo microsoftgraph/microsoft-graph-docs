@@ -99,3 +99,5 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 - Learn how to choose [permissions](/graph/permissions-reference) in Microsoft Graph.
+
+

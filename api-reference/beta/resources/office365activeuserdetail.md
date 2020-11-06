@@ -77,3 +77,5 @@ The following is a JSON representation of the resource.
   "assignedProducts": ["String"]
 }
 ```
+
+

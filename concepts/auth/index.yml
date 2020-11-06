@@ -20,9 +20,9 @@ landingContent:
       - linkListType: concept
         links:
           - text: Authentication and authorization basics
-            url: /graph/auth/auth-concepts
+            url: ./auth-concepts.md
           - text: App registration
-            url: /graph/auth-register-app-v2
+            url: ../auth-register-app-v2.md
       - linkListType: video
         links:
           - text: Microsoft Graph and app registration (7:29)
@@ -32,25 +32,25 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Get access on behalf of a user
-            url: /graph/auth-v2-user
+            url: ../auth-v2-user.md
           - text: Get access without a user
-            url: /graph/auth-v2-service
+            url: ../auth-v2-service.md
       - linkListType: reference
         links:
           - text: Permissions reference
-            url: /graph/permissions-reference
+            url: ../permissions-reference.md
   - title: Manage your app
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Manage app access
-            url: /graph/auth-cloudsolutionprovider
+            url: ../auth-cloudsolutionprovider.md
           - text: Limit mailbox access
-            url: /graph/auth-limit-mailbox-access
+            url: ../auth-limit-mailbox-access.md
       - linkListType: reference
         links:
           - text: Authorization errors
-            url: /graph/resolve-auth-errors
+            url: ../resolve-auth-errors.md
   - title: Auth SDKs - MSAL
     linkLists:
       - linkListType: download

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a list of [itemEmail](../resources/itememail.md) objects from a user's [profile](../resources/profile.md).
+Retrieve a list of [itemEmail](../resources/itememail.md) objects from a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/emails
+GET /users/{id | userPrincipalName}/profile/emails
 ```
 
 ## Optional query parameters
@@ -53,7 +54,6 @@ This method supports the following OData query parameters to help customize the 
 
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
@@ -62,17 +62,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
-
-The following is an example of the request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_emails"
-}-->
-
-```msgraph-interactive
+}
+-->
+``` http
 GET https://graph.microsoft.com/beta/me/profile/emails
 ```
 # [C#](#tab/csharp)
@@ -89,41 +85,50 @@ GET https://graph.microsoft.com/beta/me/profile/emails
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemEmail",
   "isCollection": true
-} -->
+}
+-->
 
-```http
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
   "value": [
     {
-      "address": "address-value",
-      "displayName": "displayName-value",
-      "type": "type-value"
+      "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "user": {
+            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+            "displayName": "Innocenty Popov"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "user": {
+            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+            "displayName": "Innocenty Popov"
+        }
+      },
+      "source": {
+        "type": "User"
+      },
+      "address": "innocenty.popov@adventureworks.com",
+      "displayName": "Innocenty Popov",
+      "type": "work"
     }
   ]
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List emails",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

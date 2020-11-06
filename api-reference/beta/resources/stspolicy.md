@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for policy types that control [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/) behavior.
+Represents an abstract base type for policy types that control [Microsoft identity platform](/azure/active-directory/develop/) behavior.
 
 Inherits from [policyBase](policyBase.md).
 

@@ -21,3 +21,4 @@ You can use the Microsoft 365 active users reports to find out how many product 
 | [Get user detail](../api/reportroot-getoffice365activeuserdetail.md) | Stream      | Get details about Microsoft 365 active users. |
 | [Get user counts](../api/reportroot-getoffice365activeusercounts.md) | Stream      | Get the count of daily active users in the reporting period by product. |
 | [Get services user counts](../api/reportroot-getoffice365servicesusercounts.md) | Stream      | Get the count of users by activity type and service. |
+

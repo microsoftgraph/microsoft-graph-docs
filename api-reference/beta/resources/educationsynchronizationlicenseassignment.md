@@ -38,3 +38,5 @@ Represents the license information to assign to user accounts. The resource will
   "skuIds": ["String"]
 }
 ```
+
+

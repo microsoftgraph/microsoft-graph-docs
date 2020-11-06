@@ -3,7 +3,7 @@ title: "androidWorkProfileCertificateProfileBase resource type"
 description: "Android Work Profile certificate profile base."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -45,7 +45,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Scale for the Certificate Validity Period. Possible values are: `days`, `months`, `years`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -115,6 +115,8 @@ Here is a JSON representation of the resource.
   "subjectAlternativeNameType": "String"
 }
 ```
+
+
 
 
 

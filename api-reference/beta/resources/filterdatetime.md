@@ -4,7 +4,7 @@ description: "Represents how to filter a date when filtering on values."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # FilterDatetime resource type
@@ -57,3 +57,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

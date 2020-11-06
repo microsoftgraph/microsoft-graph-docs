@@ -1,18 +1,18 @@
 ---
-title: "Set up change notifications that include resource data (preview)"
+title: "Set up change notifications that include resource data"
 description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Change notifications can include resource properties."
 author: "davidmu1"
 ms.prod: "non-product-specific"
 localization_priority: Priority
 ---
 
-# Set up change notifications that include resource data (preview)
+# Set up change notifications that include resource data
 
 Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Your app can then run its business logic without having to make a separate API call to fetch the changed resource. As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.
 
 Including resource data as part of change notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
-- [Handle](#subscription-lifecycle-notifications) special subscription lifecycle notifications to maintain an uninterrupted flow of data. Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.
+- [Handle](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications) special subscription lifecycle notifications (preview) to maintain an uninterrupted flow of data. Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.
 - [Validate](#validating-the-authenticity-of-notifications) the authenticity of change notifications as having originated from Microsoft Graph.
 - [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through change notifications.
 
@@ -27,13 +27,13 @@ In general, this type of change notifications include the following resource dat
 
 ## Supported resources
 
-Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (preview) as well as the Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta) (preview) resources supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
+Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) as well as the Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta) (preview) resources supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
 
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
 - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
 - User's presence information update: `/communications/presences/{id}`
 
-The **chatMessage** and the **presence** resources support including all the properties of a changed instance in a change notification. They do not support returning only selective properties of the instance. 
+The **chatMessage** and the **presence** (preview) resources support including all the properties of a changed instance in a change notification. They do not support returning only selective properties of the instance. 
 
 This article walks through an example of subscribing to change notifications of messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance.
 
@@ -42,30 +42,23 @@ This article walks through an example of subscribing to change notifications of 
 To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when [creating a subscription](webhooks.md#creating-a-subscription):
 
 - **includeResourceData** which should be set to `true` to explicitly request resource data.
-- **lifecycleNotificationUrl** which is an endpoint where [lifecycle notifications](#subscription-lifecycle-notifications) are delivered. This can be the same or different as **notificationUrl**.
 - **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId** which is your own identifier for the certificate. Use this ID to match in each change notification, which certificate to use for decryption.
 
 Keep the following in mind:
 
-- Use the same host name for both change notification endpoints (**notificationUrl** and **lifecycleNotificationUrl**).
-- Validate both endpoints as described [here](webhooks.md#notification-endpoint-validation). If you choose to use the same URL for both endpoints, you will receive and respond to two validation requests.
-- You cannot update (`PATCH`) an existing subscription to add the **lifecycleNotificationUrl** property. You should remove the existing subscription, and create a new subscription to include the **lifecycleNotificationUrl** property.
+- Validate both endpoints as described in [Notification endpoint validation](webhooks.md#notification-endpoint-validation). If you choose to use the same URL for both endpoints, you will receive and respond to two validation requests.
 
 ### Subscription request example
 
-The following example subscribes to two types of notifications: 
-
-- Resource changes - channel messages being created or updated in Microsoft Teams
-- Subscription lifecycle events which can affect the flow of change notifications. See more details about lifecycle notifications in the [next section](#subscription-lifecycle-notifications).
+The following example subscribes to channel messages being created or updated in Microsoft Teams.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
@@ -83,7 +76,6 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificateId": "{custom ID}",
@@ -92,138 +84,17 @@ Content-Type: application/json
 }
 ```
 
-## Subscription lifecycle notifications
+## Subscription lifecycle notifications (preview)
 
 Certain events can interfere with change notification flow in an existing subscription. Subscription lifecycle notifications inform you actions to take in order to maintain an uninterrupted flow. Unlike a resource change notification which informs a change to a resource instance, a lifecycle notification is about the subscription itself, and its current state in the lifecycle. 
 
-Lifecycle notifications are delivered to the **lifecycleNotificationUrl**. 
-
-In this section:
-
-- [Lifecycle notification that challenges subscription authorization](#lifecycle-notification-that-challenges-subscription-authorization)
-- [Authorization challenge flow](#authorization-challenge-flow)
-- [Example authorization challenge](#example-authorization-challenge)
-- [Responding to an authorization challenge](#responding-to-an-authorization-challenge)
-- [Tips](#tips)
-- [Future-proof your code to handle other types of lifecycle notifications](#future-proof-your-code-to-handle-other-types-of-lifecycle-notifications)
-
-### Lifecycle notification that challenges subscription authorization
-
-One type of lifecycle notifications challenges the authorized state of an active subscription. When the **lifecycleEvent** property in a notification indicates `reauthorizationRequired`, you must re-authorize the subscription to maintain the data flow.
-
-When you create a long-lived subscription (for example, one that lasts for 3 days), change notifications flows to the location indicated in **notificationUrl**. However, at any point in time, Microsoft Graph may require that you re-authorize the subscription to prove that you still have access to resource data, in case the conditions of access have changed since the subscription was created. The following are examples of changes that affect your access to data:
-
-- A tenant administrator may revoke your app's permissions to read a resource.
-- In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assesment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to re-authorize the subscription. For more information on dynamic policies that control access, see [Azure AD conditional access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). 
-
-### Authorization challenge flow
-
-The flow of an authorization challenge for an active, non-expired subscription looks as follows:
-
-1. Microsoft Graph requires a subscription to be re-authorized
-    
-    The reasons for this may vary from resource to resource, and may change over time. Regardless of the cause of the re-authorization event, you will need to respond to it.
-
-2. Microsoft Graph sends an authorization challenge notification to the **lifecycleNotificationUrl**
-
-    Note that the flow of change notifications may continue for a while, giving you extra time to respond. However, eventually change notification delivery will pause, until you take the required action.
-
-3. Respond to this lifecycle notification in one of two ways:
-    1. Re-authorize the subscription. This does not extend the expiry date of the subscription.
-    2. Renew the subscription. This both re-authorizes and extends the expiry date.
-
-    Note: Both actions require you to present a valid authentication token, similar to [creating a new subscription](webhooks.md#creating-a-subscription) or [renewing a subscription before its expiry](webhooks.md#renewing-a-subscription).
-
-4. If you successfully re-authorize or renew the subscription, change notifications continue. Otherwise, change notifications remain paused.
-    
-### Example authorization challenge
-
-Below is an example lifecycle notification that requests re-authorizing a subscription. 
-
-Note the following:
-
-- The `"lifecycleEvent": "reauthorizationRequired"` field identifies this notification as an authorization challenge.
-- The lifecycle notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change.
-- Similar to change notifications, you can batch lifecycle notifications together (in the **value** collection), each with a possibly different **lifecycleEvent** value. Process each lifecycle notification in the batch accordingly.
-
-```json
-{
-  "value": [
-    {
-      "lifecycleEvent": "reauthorizationRequired",
-      "subscriptionId": "e3898f08-5cd0-4a6a-80fc-6addbfb73b7b",
-      "subscriptionExpirationDateTime": "2019-09-18T00:52:45.9696658+00:00",
-      "clientState": "{secret client state}",
-      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95"
-    }
-  ]
-}
-```
-
-> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
-
-### Responding to an authorization challenge
-
-Take the following steps to process an authorization challenge lifecycle notification. The first two steps of acknowledging and validating the lifecycle notification is similar to [responding to a resource change notification](webhooks.md#processing-the-change-notification).
-
-1. Acknowledge the receipt of the lifecycle notification, by responding to the POST call with `HTTP 202 Accepted`.
-2. Validate the authenticity of the lifecycle notification. Further details [below](#validating-the-authenticity-of-notifications).
-3. Ensure the app has a valid access token to take the next step. 
-
-    If you are using one of the [authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries), the library handles this for you by either reusing a valid cached token, or obtaining a new token from prompting the user to log in again with a new password. However, obtaining a new token may fail, since the conditions of access may have changed, and the user may no longer be allowed access to the resource data.
-
-4. Call either of the following two APIs. If the API call succeeds, the change notification flow resumes.
-
-    - Call the `/reauthorize` action to re-authorize the subscription without extending its expiration date:
-        ```http
-        POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
-        Content-type: application/json
-        ```
-    - Perform a regular renew action to re-authorize and renew the subscription at the same time:
-        ```http
-        PATCH https://graph.microsoft.com/beta/subscriptions/{id}
-        Content-Type: application/json
-
-        {
-           "expirationDateTime": "2019-09-21T11:00:00.0000000Z"
-        }
-        ```
-
-      Renewing may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully re-authorize a subscription. 
-      
-      You may retry these actions later, at any time, and succeed if the conditions of access change. Any notifications about resource changes that happen between the time the lifecycle notification was sent, and the time when the app eventually re-creates the subscription successfully, would be lost. In such cases, the app should separately fetch those changes.
-
-### Tips
-
-Keep the following in mind:
-
-1. Authorization challenges do not replace the need to renew a resource change subscription before it expires. 
-
-    While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that does not have any activity and has no change notifications pending delivery may not signal any re-authorization challenges to your app. Make sure to [renew subscriptions](webhooks.md#renewing-a-subscription) before they expire.
-
-2. The frequency of authorization challenges is subject to change.
-
-    Do not make assumptions about the frequency of authorization challenges. These lifecycle notifications tell you when to take actions, saving you from having to track which subscriptions require re-authorization. Be ready to handle authorization challenges anywhere from once a few minutes for every subscription, to rarely for only some of your subscriptions.
-
-### Future-proof your code to handle other types of lifecycle notifications
-
-Expect subscription lifecycle notifications to be posted to the same endpoint specified by **lifecycleNotificationUrl**. They differentiate by the **lifecycleEvent** property and may contain slightly different schema and properties to serve the scenarios they address.
-
-Implement your code in anticipation of new types of lifecycle notifications:
-
-1. Use the **lifecycleEvent** property to identify the type of notification so to determine the appropriate response. For example, look for the `"lifecycleEvent": "reauthorizationRequired"` property to identify a specific event, and handle it.
-
-1. Log any lifecycle events that your app does not recognize to gain awareness.
-
-1. Subscribe to the [Microsoft Graph Developer Blog](https://developer.microsoft.com/graph/blogs/) to watch for announcements of lifecycle notifications for new scenarios.
-
-1. Look up related documentation for new lifecycle notifications and implement support for them as appropriate.
+For more information about how to receive, and respond to, lifecycle notifications (preview), see [Reduce missing subscriptions and change notifications (preview)](webhooks-outlook-authz.md)
 
 ## Validating the authenticity of notifications
 
-Apps often execute business logic based on resource data included in change notifications. Having first verified the authenticity of each change notification is important. Otherwise, a third party could spoof your app with false change notifications, make it execute its business logic incorrectly, and lead to a security incident.
+Apps often run business logic based on resource data included in change notifications. Verifying the authenticity of each change notification first is important. Otherwise, a third party can spoof your app with false change notifications and make it run its business logic incorrectly, and this can lead to a security incident.
 
-For basic change notifications which do not contain resource data, simply validate them based on the **clientState** value as described [here](webhooks.md#processing-the-change-notification). This is acceptable, as you can make subsequent trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. 
+For basic change notifications that do not contain resource data, simply validate them based on the **clientState** value as described in [Processing the change notification](webhooks.md#processing-the-change-notification). This is acceptable, as you can make subsequent trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. 
 
 For change notifications that deliver resource data, perform a more thorough validation before processing the data.
 
@@ -271,7 +142,7 @@ If you're new to token validation, see [Principles of Token Validation](http://w
 Be mindful of the following: 
 
 - Make sure to always send an `HTTP 202 Accepted` status code as part of the response to the change notification. 
-- Do that before validating the change notification (for example, if you store change notifications in queues for later processing) or after (if you process them on the fly), even if validation failed.
+- Respond before validating the change notification (for example, if you store change notifications in queues for later processing) or after (if you process them on the fly), even if validation failed.
 - Accepting a change notification prevents unnecessary delivery retries and it also prevents any potential rogue actors from finding out if they passed or failed validation. You can always choose to ignore an invalid change notification after you have accepted it.
 
 In particular, perform validation on every JWT token in the **validationTokens** collection. If any tokens fail, consider the change notification suspicious and investigate further. 
@@ -280,7 +151,7 @@ Use the following steps to validate tokens and apps that generate tokens:
 
 1. Validate that the token has not expired.
 
-2. Validate the token has not been tampered with and was issued by the expected authority, Microsoft Azure Active Directory:
+2. Validate the token has not been tampered with and was issued by the expected authority, Microsoft identity platform:
 
     - Obtain the signing keys from the common configuration endpoint: `https://login.microsoftonline.com/common/.well-known/openid-configuration`. This configuration is cached by your app for a period of time. Be aware that the configuration is updated frequently as signing keys are rotated daily.
     - Verify the signature of the JWT token using those keys.
@@ -460,7 +331,7 @@ In this section:
 1. Obtain a certificate with a pair of asymmetric keys.
 
     - You can self-sign the certificate, since Microsoft Graph does not verify the certificate issuer, and uses the public key for only encryption. 
-    - Use [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) as the solution to create, rotate, and securely manage certificates. Make sure the keys satisfy the following criteria:
+    - Use [Azure Key Vault](/azure/key-vault/key-vault-whatis) as the solution to create, rotate, and securely manage certificates. Make sure the keys satisfy the following criteria:
 
         - The key must be of type `RSA`
         - The key size must be between 2048 and 4096 bits
@@ -504,7 +375,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 
 1. Use the **encryptionCertificateId** property to identify the certificate to use.
 
-2. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](https://docs.microsoft.com/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) with the private key.
+2. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) with the private key.
 
 3. Decrypt the symmetric key delivered in the **dataKey** property of each item in the change notification.
 
@@ -514,7 +385,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
   
     Compare it to the value in **dataSignature**. If they do not match, assume the payload has been tampered with and do not decrypt it.
 
-5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](https://docs.microsoft.com/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **data**.
+5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **data**.
 
     - Use the following decryption parameters for the AES algorithm:
 

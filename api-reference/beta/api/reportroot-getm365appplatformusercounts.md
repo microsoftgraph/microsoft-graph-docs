@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a report that provides the trend of active users across all apps for each platform – Windows, Mac, web, and mobile - in your organization.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft 365 Apps usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft 365 Apps usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
 ## Permissions
 

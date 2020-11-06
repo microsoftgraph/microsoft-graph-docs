@@ -4,7 +4,7 @@ description: "Delete an existing user activity for your app."
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
-author: ""
+author: "ailae"
 ---
 
 # Delete an activity
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

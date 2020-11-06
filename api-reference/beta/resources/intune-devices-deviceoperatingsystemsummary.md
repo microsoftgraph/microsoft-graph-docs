@@ -3,7 +3,7 @@ title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -32,6 +32,7 @@ Device operating system summary.
 |androidWorkProfileCount|Int32|Number of work profile Android devices.|
 |androidCorporateWorkProfileCount|Int32|The count of Corporate work profile Android devices. Also known as Corporate Owned Personally Enabled (COPE). Valid values -1 to 2147483647|
 |configMgrDeviceCount|Int32|Number of ConfigMgr managed devices.|
+|aospUserlessCount|Int32|Number of AOSP dedicated Android devices. Valid values 0 to 2147483647|
 
 ## Relationships
 None
@@ -57,9 +58,12 @@ Here is a JSON representation of the resource.
   "androidFullyManagedCount": 1024,
   "androidWorkProfileCount": 1024,
   "androidCorporateWorkProfileCount": 1024,
-  "configMgrDeviceCount": 1024
+  "configMgrDeviceCount": 1024,
+  "aospUserlessCount": 1024
 }
 ```
+
+
 
 
 

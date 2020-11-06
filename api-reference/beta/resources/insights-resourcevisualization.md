@@ -93,3 +93,5 @@ The supported types can differ based on containers from which [itemInsights](ite
 
 Example query:
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+
+

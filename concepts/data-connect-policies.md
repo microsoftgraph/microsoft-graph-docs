@@ -8,13 +8,13 @@ ms.prod: "data-connect"
 
 # Microsoft Graph data connect policies and licensing
 
-Microsoft Graph data connect uses [Azure managed applications](https://docs.microsoft.com/azure/managed-applications/overview) to allow you to create and deploy your solutions in your customer's Azure environment. Managed applications allow you to support certain Azure policies, giving customers greater confidence and comfortability when using your applications. Additionally, you must purchase and apply licenses from Microsoft your organization or the organizations that install your applications, in order to allow the application to access data through data connect.
+Microsoft Graph data connect uses [Azure managed applications](/azure/managed-applications/overview) to allow you to create and deploy your solutions in your customer's Azure environment. Managed applications allow you to support certain Azure policies, giving customers greater confidence and comfortability when using your applications. Additionally, you must purchase and apply licenses from Microsoft your organization or the organizations that install your applications, in order to allow the application to access data through data connect.
 
 ## Policies
 
 The following Azure policies are supported for an Azure managed application built using Microsoft 365 data:
 
-- [ADLS Gen1 Encryption Required Policy](https://docs.microsoft.com/azure/azure-policy/scripts/enforce-datalakestore-encryption)
+- [ADLS Gen1 Encryption Required Policy](/azure/azure-policy/scripts/enforce-datalakestore-encryption)
 
 When you select any of the policies during Azure marketplace publishing, the policy compliance status will be checked and enforced for all installations of your application. All selected policies that are compliant will be shown to the data approvers as part of the data request. Any policy compliance violation would cause the pipeline run to fail and stop the data extraction.
 
@@ -27,7 +27,7 @@ Access to the Microsoft Graph data connect toolset is available through Workplac
 If you’re an ISV, we also provide an option for you to build applications for customers who have not purchased Workplace Analytics. To do so, you must purchase enough licenses to associate them with all the users your application will access through Microsoft Graph data connect, for each customer who purchases your application. You can use this option along with Workplace Analytics licenses. You’ll need to take steps to associate instances of the Microsoft Graph data connect license with each of their customer installations.
 
 ### ISVs using the Microsoft Graph data connect license
-If you're an ISV using the data connect license, you must utilized [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to store and process the license assignment. You will need to [create a Key Vault](https://docs.microsoft.com/azure/key-vault/quick-create-portal). During creation, note the Key Vault URI value. It will be used in the application definition to reference the Key Vault. After you create the Key Vault, ensure that the SPN used in the Source Linked Service of the application's ARM template has access to it. To do so, go to the **Access Policies** pane of the Key Vault instance, create an access policy for the application referenced by the SPN, and assign **Get** and **List** permissions to the application. 
+If you're an ISV using the data connect license, you must utilized [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to store and process the license assignment. You will need to [create a Key Vault](/azure/key-vault/quick-create-portal). During creation, note the Key Vault URI value. It will be used in the application definition to reference the Key Vault. After you create the Key Vault, ensure that the SPN used in the Source Linked Service of the application's ARM template has access to it. To do so, go to the **Access Policies** pane of the Key Vault instance, create an access policy for the application referenced by the SPN, and assign **Get** and **List** permissions to the application. 
 
 ![Creating access policy to Key Vault](images/data-connect-keyvault-access.png)
 

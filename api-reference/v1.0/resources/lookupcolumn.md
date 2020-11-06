@@ -47,3 +47,4 @@ Here is a JSON representation of a **lookupColumn** resource.
   "section": "documentation",
   "tocPath": "Resources/LookupColumn"
 } -->
+

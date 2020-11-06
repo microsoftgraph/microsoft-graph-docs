@@ -1,13 +1,13 @@
 ---
 title: "MSAL provider"
-description: "The MSAL Provider uses MSAL.js to sign in users and acquire tokens to use with the Microsoft Graph"
+description: "The MSAL provider uses MSAL.js to sign in users and acquire tokens to use with the Microsoft Graph"
 localization_priority: Normal
 author: nmetulev
 ---
 
 # MSAL provider
 
-The MSAL Provider uses [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with the Microsoft Graph.
+The MSAL provider uses [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with Microsoft Graph.
 
 To learn more, see [providers](../providers.md).
 
@@ -63,7 +63,7 @@ interface MsalConfig {
 
 You must provide a `clientId` (to create a new `UserAgentApplication`).
 
-To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](https://docs.microsoft.com/azure/active-directory/develop/msal-js-initializing-client-applications).
+To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](/azure/active-directory/develop/msal-js-initializing-client-applications).
 
 ## Creating an app/client ID
 

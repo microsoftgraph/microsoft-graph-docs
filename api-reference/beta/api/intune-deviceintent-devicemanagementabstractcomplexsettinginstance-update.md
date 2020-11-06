@@ -3,7 +3,7 @@ title: "Update deviceManagementAbstractComplexSettingInstance"
 description: "Update the properties of a deviceManagementAbstractComplexSettingInstance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -93,6 +93,8 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
+
+
 
 
 

@@ -3,7 +3,7 @@ title: "Create iosVppApp"
 description: "Create a new iosVppApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -170,6 +170,9 @@ Content-Length: 1394
   "bundleId": "Bundle Id value"
 }
 ```
+
+
+
 
 
 

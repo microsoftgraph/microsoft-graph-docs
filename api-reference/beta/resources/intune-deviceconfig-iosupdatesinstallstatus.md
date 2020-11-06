@@ -3,7 +3,7 @@ title: "iosUpdatesInstallStatus enum type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -24,6 +24,8 @@ Not yet documented
 |available|1|Not yet documented|
 |idle|2|Not yet documented|
 |unknown|3|Not yet documented|
+|mdmClientCrashed|-2016336109|Not yet documented|
+|timeout|-2016333898|Not yet documented|
 |downloading|-2016330712|Not yet documented|
 |downloadFailed|-2016330711|Not yet documented|
 |downloadRequiresComputer|-2016330710|Not yet documented|
@@ -37,7 +39,11 @@ Not yet documented
 |installFailed|-2016330702|Not yet documented|
 |notSupportedOperation|-2016330701|Not yet documented|
 |sharedDeviceUserLoggedInError|-2016330699|Not yet documented|
+|updateError|-2016330697|Not yet documented|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Not yet documented|
+|updateScanFailed|-2016324062|Not yet documented|
+
+
 
 
 

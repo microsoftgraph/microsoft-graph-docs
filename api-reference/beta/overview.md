@@ -34,4 +34,3 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 - [Overview of Microsoft Graph](/graph/overview)
 - [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start)
-

@@ -3,7 +3,7 @@ title: "Update managedDeviceOverview"
 description: "Update the properties of a managedDeviceOverview object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -69,7 +69,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1158
+Content-length: 1187
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -89,7 +89,8 @@ Content-length: 1158
     "androidFullyManagedCount": 8,
     "androidWorkProfileCount": 7,
     "androidCorporateWorkProfileCount": 0,
-    "configMgrDeviceCount": 4
+    "configMgrDeviceCount": 4,
+    "aospUserlessCount": 1
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -116,7 +117,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1271
+Content-Length: 1300
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -137,7 +138,8 @@ Content-Length: 1271
     "androidFullyManagedCount": 8,
     "androidWorkProfileCount": 7,
     "androidCorporateWorkProfileCount": 0,
-    "configMgrDeviceCount": 4
+    "configMgrDeviceCount": 4,
+    "aospUserlessCount": 1
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -159,6 +161,8 @@ Content-Length: 1271
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 

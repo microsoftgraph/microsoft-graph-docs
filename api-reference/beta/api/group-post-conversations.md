@@ -51,9 +51,8 @@ The response includes the IDs for the new conversation and thread, which you can
 #### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_conversation_from_group"
 }-->
 ```http
@@ -61,43 +60,29 @@ POST https://graph.microsoft.com/beta/groups/29981b6a-0e57-42dc-94c9-cd24f530619
 Content-type: application/json
 
 {
-    "topic":"New head count",
-    "threads":[
+  "topic":"New head count",
+  "threads":[
+    {
+      "posts":[
         {
-            "posts":[
-                {
-                    "body":{
-                        "contentType":"html",
-                        "content":"The confirmation will come by the end of the week."
-                    },
-                    "newParticipants":[
-                        {
-                            "emailAddress":{
-                                "name":"Adele Vance",
-                                "address":"AdeleV@contoso.onmicrosoft.com"
-                            }
-                        }
-                    ]
-                }
-            ]
+          "body":{
+            "contentType":"html",
+            "content":"The confirmation will come by the end of the week."
+          },
+          "newParticipants":[
+            {
+              "emailAddress":{
+                "name":"Adele Vance",
+                "address":"AdeleV@contoso.onmicrosoft.com"
+              }
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 The following is an example of the response.
@@ -112,14 +97,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
-    "id":"AAQkADPxBgqECsrFDTuM=",
-    "threads@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADPxBgqECsrFDTuM%3D')/threads",
-    "threads":[
-        {
-            "id":"AAQkADUNO4xAAMbGA93Sw-EGCoQKysUNO4w=="
-        }
-    ]
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+  "id":"AAQkADPxBgqECsrFDTuM=",
+  "threads@odata.context":"https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADPxBgqECsrFDTuM%3D')/threads",
+  "threads":[
+    {
+      "id":"AAQkADUNO4xAAMbGA93Sw-EGCoQKysUNO4w=="
+    }
+  ]
 }
 ```
 
@@ -136,3 +121,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

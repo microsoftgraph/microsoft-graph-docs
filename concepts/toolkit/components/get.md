@@ -55,7 +55,7 @@ The `mgt-get` component supports several [templates](../templates.md) that you c
 
 ## Microsoft Graph permissions
 
-For more information about permissions, see the Microsoft Graph [permissions reference](https://docs.microsoft.com/graph/permissions-reference). 
+For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md). 
 
 ## Authentication
 

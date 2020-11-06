@@ -17,7 +17,7 @@ Create a new [chatMessage](../resources/chatmessage.md) in the specified [channe
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
-> **Note**: It is a violation of the [terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 ## Permissions
 
@@ -141,7 +141,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,
@@ -221,7 +222,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,
@@ -317,7 +319,8 @@ Content-length: 160
     "etag": "1554837297516",
     "messageType": "message",
     "createdDateTime": "2019-04-09T19:14:57.516Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
@@ -403,7 +406,8 @@ Content-type: application/json
     "etag": "1589481435511",
     "messageType": "message",
     "createdDateTime": "2020-05-14T18:37:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2020-07-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
@@ -492,7 +496,8 @@ Content-length: 160
     "etag": "1596261390440",
     "messageType": "message",
     "createdDateTime": "2020-08-01T05:56:30.44Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2020-09-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
@@ -586,7 +591,8 @@ Content-type: application/json
     "etag": "1597182390555",
     "messageType": "message",
     "createdDateTime": "2020-08-11T21:46:30.555Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2020-09-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,

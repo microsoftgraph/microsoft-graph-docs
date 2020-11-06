@@ -3,7 +3,7 @@ title: "List windowsDefenderApplicationControlSupplementalPolicyAssignments"
 description: "List properties and relationships of the windowsDefenderApplicationControlSupplementalPolicyAssignment objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -76,6 +76,8 @@ Content-Length: 478
   ]
 }
 ```
+
+
 
 
 

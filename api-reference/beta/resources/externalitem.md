@@ -1,6 +1,6 @@
 ---
 title: "externalItem resource type"
-description: "An item indexed via a Microsoft Search connection."
+description: "An item added to a Microsoft Graph connection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: "search"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An item indexed via a Microsoft Search [connection](externalconnection.md).
+An item added to a Microsoft Graph [connection](externalconnection.md). 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -31,7 +31,7 @@ An item indexed via a Microsoft Search [connection](externalconnection.md).
 | Property   | Type                     | Description                          |
 |:-----------|:-------------------------|:-------------------------------------|
 | acl        | [acl](acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. Required. |
-| content    | [externalItemContent](externalitemcontent.md) | A plain-text or HTML representation of the contents of the item. The text in this property is full-text indexed. Optional. |
+| content    | [externalItemContent](externalitemcontent.md) | A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional. |
 | id         | String                   | Developer-provided unique ID of the item within the containing [externalConnection](externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required. |
 | properties | Object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [externalConnection](externalconnection.md). Required. |
 

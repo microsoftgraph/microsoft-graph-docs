@@ -3,7 +3,7 @@ title: "androidDeviceOwnerWiFiSecurityType enum type"
 description: "Wi-Fi Security Types for Android Device Owner."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -24,6 +24,8 @@ Wi-Fi Security Types for Android Device Owner.
 |wep|1|WEP Encryption.|
 |wpaPersonal|2|WPA-Personal/WPA2-Personal.|
 |wpaEnterprise|4|WPA-Enterprise/WPA2-Enterprise. Must use AndroidDeviceOwnerEnterpriseWifiConfiguration type to configure enterprise options.|
+
+
 
 
 

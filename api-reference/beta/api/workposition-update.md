@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 PATCH /me/profile/positions/{id}
+PATCH /users/{id | userPrincipalName}/profile/positions/{id}
 ```
 
 ## Request headers
@@ -45,10 +46,16 @@ PATCH /me/profile/positions/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type                                        | Description                                                                                                 |
-|:-------------|:--------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-|categories|String collection                                | Contains categories a user has associated with the position. (eg: digital transformation, ms graph, people) |
-|detail    |[positionDetail](../resources/positiondetail.md) | Contains detail about a users work position.                                                                |
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Categories that the user has associated with this position.|
+|colleagues|[relatedPerson](../resources/relatedperson.md) collection|Colleagues that are associated with this position.|
+|detail|[positionDetail](../resources/positiondetail.md)|Contains detailed information about the position. |
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|isCurrent|Boolean|Denotes whether or not the position is current.|
+|manager|[relatedPerson](../resources/relatedperson.md)|Contains detail of the user's manager in this position.|
 
 ## Response
 
@@ -71,33 +78,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/positions/{id}
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
-  "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  }
+  "isCurrent": true
 }
 ```
 # [C#](#tab/csharp)
@@ -132,33 +113,56 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "categories": null,
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
+      "displayName": "Adventureworks Ltd.",
+      "pronunciation": null,
+      "department": "Consulting",
+      "officeLocation": "AW23/344",
       "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+        "type": "business",
+        "postOfficeBox": null,
+        "street": "123 Patriachy Ponds",
+        "city": "Moscow",
+        "state": null,
+        "countryOrRegion": "Russian Federation",
+        "postalCode": "RU-34621"
       },
-      "webUrl": "webUrl-value"
+      "webUrl": "https://www.adventureworks.com"
     },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
+    "description": null,
+    "endMonthYear": null,
+    "jobTitle": "Senior Product Branding Manager II",
+    "role": "consulting",
     "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  }
+    "summary": null
+  },
+  "manager": null,
+  "colleagues": null,
+  "isCurrent": true
 }
 ```
 
@@ -171,3 +175,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

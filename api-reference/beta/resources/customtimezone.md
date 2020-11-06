@@ -4,7 +4,7 @@ description: "Represents a time zone where the transition from standard to dayli
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "svpsiva"
 ---
 
 # customTimeZone resource type
@@ -59,3 +59,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

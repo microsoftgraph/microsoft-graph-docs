@@ -20,13 +20,11 @@ const searchResponse = {
         "/external/connections/connectionfriendlyname"
       ],
       query: {
-        query_string: {
-          query: "contoso product"
-        }
+        queryString: "contoso product"
       },
       from: 0,
       size: 25,
-      stored_fields: [
+      fields: [
         "title",
         "description"
       ]

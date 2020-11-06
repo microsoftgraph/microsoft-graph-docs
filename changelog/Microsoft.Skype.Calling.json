@@ -1,9 +1,113 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "12f99ae8-420d-409b-843b-10571e8c087c",
+          "Id": "65dabc09-b9d1-4292-93eb-830585daefc6",
+          "ApiChange": "Property",
+          "ChangedApiName": "role",
+          "ChangeType": "Addition",
+          "Description": "Added the **role** property to the [meetingParticipantInfo](https://docs.microsoft.com/en-us/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta) complex type.",
+          "Target": "meetingParticipantInfo"
+        },
+        {
+          "Id": "65dabc09-b9d1-4292-93eb-830585daefc6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added new action to retrieve an [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) by JoinWebUrl.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "65dabc09-b9d1-4292-93eb-830585daefc6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-15T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "670bfe8b-e88a-4610-b593-38c6edfe81b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "lobbyBypassSettings,isEntryExitAnnounced,allowedPresenters",
+          "ChangeType": "Addition",
+          "Description": "Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "670bfe8b-e88a-4610-b593-38c6edfe81b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permissions to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) entity and associated methods.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "670bfe8b-e88a-4610-b593-38c6edfe81b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "participant",
+          "ChangeType": "Addition",
+          "Description": "Added delete method to the [participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) entity.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "670bfe8b-e88a-4610-b593-38c6edfe81b9",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-09-01T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "670bfe8b-e88a-4610-b593-38c6edfe81b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "participant",
+          "ChangeType": "Addition",
+          "Description": "Added delete method to the [participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) entity.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "670bfe8b-e88a-4610-b593-38c6edfe81b9",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-09-01T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "51343f6b-5e10-4747-ab05-d7825853ab69",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cancelMediaProcessing",
+          "ChangeType": "Addition",
+          "Description": "Added the **cancelMediaProcessing** API to the [call](https://docs.microsoft.com/en-us/graph/api/resources/call) entity.",
+          "Target": "call"
+        },
+        {
+          "Id": "51343f6b-5e10-4747-ab05-d7825853ab69",
+          "ApiChange": "Property",
+          "ChangedApiName": "transcription",
+          "ChangeType": "Addition",
+          "Description": "Added the **transcription** property to the [call](https://docs.microsoft.com/en-us/graph/api/resources/call) entity.",
+          "Target": "call"
+        }
+      ],
+      "Id": "51343f6b-5e10-4747-ab05-d7825853ab69",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-08-01T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "73f93d98-e53b-48f1-9b7c-c3884dea98b8",
           "ApiChange": "Resource",
           "ChangedApiName": "Update onlineMeeting",
           "ChangeType": "Addition",
@@ -11,7 +115,7 @@
           "Target": "Update onlineMeeting"
         },
         {
-          "Id": "12f99ae8-420d-409b-843b-10571e8c087c",
+          "Id": "73f93d98-e53b-48f1-9b7c-c3884dea98b8",
           "ApiChange": "Resource",
           "ChangedApiName": "presence,change notifications",
           "ChangeType": "Addition",
@@ -19,7 +123,7 @@
           "Target": "presence,change notifications"
         }
       ],
-      "Id": "12f99ae8-420d-409b-843b-10571e8c087c",
+      "Id": "73f93d98-e53b-48f1-9b7c-c3884dea98b8",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
@@ -29,7 +133,7 @@
     {
       "ChangeList": [
         {
-          "Id": "fe14abc5-375b-4d00-90b7-462934e2a6a9",
+          "Id": "095a2c9c-7ec1-4f96-8aa6-640092ba513a",
           "ApiChange": "Resource",
           "ChangedApiName": "get PSTN call report,get a direct routing report",
           "ChangeType": "Addition",
@@ -37,7 +141,7 @@
           "Target": "get PSTN call report,get a direct routing report"
         },
         {
-          "Id": "fe14abc5-375b-4d00-90b7-462934e2a6a9",
+          "Id": "095a2c9c-7ec1-4f96-8aa6-640092ba513a",
           "ApiChange": "Resource",
           "ChangedApiName": "pstnCallLogRow,directRoutingLogRow",
           "ChangeType": "Addition",
@@ -45,7 +149,7 @@
           "Target": "pstnCallLogRow,directRoutingLogRow"
         }
       ],
-      "Id": "fe14abc5-375b-4d00-90b7-462934e2a6a9",
+      "Id": "095a2c9c-7ec1-4f96-8aa6-640092ba513a",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
@@ -55,7 +159,7 @@
     {
       "ChangeList": [
         {
-          "Id": "40e8100a-aba1-47b2-92b2-ad7a2149af97",
+          "Id": "4ce90099-db9c-4866-8a4c-0c63d965933e",
           "ApiChange": "Resource",
           "ChangedApiName": "Get presence",
           "ChangeType": "Addition",
@@ -63,7 +167,7 @@
           "Target": "Get presence"
         }
       ],
-      "Id": "40e8100a-aba1-47b2-92b2-ad7a2149af97",
+      "Id": "4ce90099-db9c-4866-8a4c-0c63d965933e",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -73,7 +177,7 @@
     {
       "ChangeList": [
         {
-          "Id": "40e8100a-aba1-47b2-92b2-ad7a2149af97",
+          "Id": "4ce90099-db9c-4866-8a4c-0c63d965933e",
           "ApiChange": "method",
           "ChangedApiName": "onlineMeeting: createOrGet",
           "ChangeType": "Addition",
@@ -81,7 +185,7 @@
           "Target": "onlineMeeting: createOrGet"
         },
         {
-          "Id": "40e8100a-aba1-47b2-92b2-ad7a2149af97",
+          "Id": "4ce90099-db9c-4866-8a4c-0c63d965933e",
           "ApiChange": "Property",
           "ChangedApiName": "externalId",
           "ChangeType": "Addition",
@@ -89,7 +193,7 @@
           "Target": ""
         },
         {
-          "Id": "40e8100a-aba1-47b2-92b2-ad7a2149af97",
+          "Id": "4ce90099-db9c-4866-8a4c-0c63d965933e",
           "ApiChange": "Resource",
           "ChangedApiName": "Accept-Language",
           "ChangeType": "Addition",
@@ -97,7 +201,7 @@
           "Target": "online meetings"
         }
       ],
-      "Id": "40e8100a-aba1-47b2-92b2-ad7a2149af97",
+      "Id": "4ce90099-db9c-4866-8a4c-0c63d965933e",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -107,7 +211,7 @@
     {
       "ChangeList": [
         {
-          "Id": "4a4afc17-ba1b-4f99-8620-56c54b04b529",
+          "Id": "48bf6848-1feb-4805-ab00-7833f3196493",
           "ApiChange": "Resource",
           "ChangedApiName": "Get callRecord",
           "ChangeType": "Addition",
@@ -115,7 +219,7 @@
           "Target": "Get callRecord"
         },
         {
-          "Id": "4a4afc17-ba1b-4f99-8620-56c54b04b529",
+          "Id": "48bf6848-1feb-4805-ab00-7833f3196493",
           "ApiChange": "Resource",
           "ChangedApiName": "callRecord,session,segment",
           "ChangeType": "Addition",
@@ -123,7 +227,7 @@
           "Target": "callRecord,session,segment"
         },
         {
-          "Id": "4a4afc17-ba1b-4f99-8620-56c54b04b529",
+          "Id": "48bf6848-1feb-4805-ab00-7833f3196493",
           "ApiChange": "Resource",
           "ChangedApiName": "endpoint,participantEndpoint,serviceEndpoint,userAgent,serviceUserAgent,clientUserAgent,userfeedback,feedbackTokenSet,media,mediaStream,networkInfo,deviceInfo,failureInfo",
           "ChangeType": "Addition",
@@ -131,7 +235,7 @@
           "Target": "endpoint,participantEndpoint,serviceEndpoint,userAgent,serviceUserAgent,clientUserAgent,userfeedback,feedbackTokenSet,media,mediaStream,networkInfo,deviceInfo,failureInfo"
         },
         {
-          "Id": "4a4afc17-ba1b-4f99-8620-56c54b04b529",
+          "Id": "48bf6848-1feb-4805-ab00-7833f3196493",
           "ApiChange": "Resource",
           "ChangedApiName": "webhook",
           "ChangeType": "Addition",
@@ -139,7 +243,7 @@
           "Target": "webhook"
         },
         {
-          "Id": "4a4afc17-ba1b-4f99-8620-56c54b04b529",
+          "Id": "48bf6848-1feb-4805-ab00-7833f3196493",
           "ApiChange": "Resource",
           "ChangedApiName": "frequency60GHz,unknownFutureValue,microsoft.graph.callRecords.wifiBand",
           "ChangeType": "Change",
@@ -147,7 +251,7 @@
           "Target": ""
         },
         {
-          "Id": "4a4afc17-ba1b-4f99-8620-56c54b04b529",
+          "Id": "48bf6848-1feb-4805-ab00-7833f3196493",
           "ApiChange": "Resource",
           "ChangedApiName": "voicemail,microsoft.graph.callRecords.serviceRole",
           "ChangeType": "Change",
@@ -155,7 +259,7 @@
           "Target": ""
         },
         {
-          "Id": "4a4afc17-ba1b-4f99-8620-56c54b04b529",
+          "Id": "48bf6848-1feb-4805-ab00-7833f3196493",
           "ApiChange": "Resource",
           "ChangedApiName": "List sessions",
           "ChangeType": "Addition",
@@ -163,7 +267,7 @@
           "Target": "List sessions"
         }
       ],
-      "Id": "4a4afc17-ba1b-4f99-8620-56c54b04b529",
+      "Id": "48bf6848-1feb-4805-ab00-7833f3196493",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
@@ -173,7 +277,7 @@
     {
       "ChangeList": [
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "initiator",
           "ChangeType": "Addition",
@@ -181,7 +285,7 @@
           "Target": "recordingInfo"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Resource",
           "ChangedApiName": "recordingInfo,callRoute,incomingContext",
           "ChangeType": "Addition",
@@ -189,7 +293,7 @@
           "Target": "recordingInfo,callRoute,incomingContext"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "recordingInfo",
           "ChangeType": "Addition",
@@ -197,7 +301,7 @@
           "Target": "participant"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "recordingStatus",
           "ChangeType": "Addition",
@@ -205,7 +309,7 @@
           "Target": "recordingInfo"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Resource",
           "ChangedApiName": "updateRecordingStatus,call",
           "ChangeType": "Addition",
@@ -213,7 +317,7 @@
           "Target": "updateRecordingStatus,call"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "endpointType",
           "ChangeType": "Addition",
@@ -221,7 +325,7 @@
           "Target": "participantInfo"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "countryCode",
           "ChangeType": "Addition",
@@ -229,7 +333,7 @@
           "Target": "participantInfo"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "incomingContext",
           "ChangeType": "Addition",
@@ -237,7 +341,7 @@
           "Target": "call"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "sourceParticipantId",
           "ChangeType": "Addition",
@@ -245,7 +349,7 @@
           "Target": "incomingContext"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "observedParticipantId",
           "ChangeType": "Addition",
@@ -253,7 +357,7 @@
           "Target": "incomingContext"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "onBehalfOf",
           "ChangeType": "Addition",
@@ -261,7 +365,7 @@
           "Target": "incomingContext"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "transferor",
           "ChangeType": "Addition",
@@ -269,7 +373,7 @@
           "Target": "incomingContext"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "CallRoutes",
           "ChangeType": "Addition",
@@ -277,7 +381,7 @@
           "Target": "call"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "final",
           "ChangeType": "Addition",
@@ -285,7 +389,7 @@
           "Target": "callRoute"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "original",
           "ChangeType": "Addition",
@@ -293,7 +397,7 @@
           "Target": "callRoute"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "routingType",
           "ChangeType": "Addition",
@@ -301,7 +405,7 @@
           "Target": "callRoute"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Resource",
           "ChangedApiName": "logTeleconferenceDeviceQuality,call",
           "ChangeType": "Addition",
@@ -309,7 +413,7 @@
           "Target": "logTeleconferenceDeviceQuality,call"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Property",
           "ChangedApiName": "callChainId",
           "ChangeType": "Addition",
@@ -317,7 +421,7 @@
           "Target": "call"
         },
         {
-          "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+          "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
           "ApiChange": "Resource",
           "ChangedApiName": "teleconferenceDeviceQuality,teleconferenceDeviceMediaQuality,teleconferenceDeviceAudioQuality,teleconferenceDeviceVideoQuality,teleconferenceDeviceScreenSharingQuality",
           "ChangeType": "Addition",
@@ -325,7 +429,7 @@
           "Target": "teleconferenceDeviceQuality,teleconferenceDeviceMediaQuality,teleconferenceDeviceAudioQuality,teleconferenceDeviceVideoQuality,teleconferenceDeviceScreenSharingQuality"
         }
       ],
-      "Id": "90646f34-bb87-47c4-bd9a-14f6f7bfe02e",
+      "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -335,7 +439,7 @@
     {
       "ChangeList": [
         {
-          "Id": "cc11e55a-18b5-4f89-afd7-bd10b863299b",
+          "Id": "4b658708-b0e0-43b3-ad64-c2aff937d6c9",
           "ApiChange": "method",
           "ChangedApiName": "onlineMeeting: createOrGet",
           "ChangeType": "Addition",
@@ -343,7 +447,7 @@
           "Target": "onlineMeeting: createOrGet"
         },
         {
-          "Id": "cc11e55a-18b5-4f89-afd7-bd10b863299b",
+          "Id": "4b658708-b0e0-43b3-ad64-c2aff937d6c9",
           "ApiChange": "Property",
           "ChangedApiName": "externalId",
           "ChangeType": "Addition",
@@ -351,7 +455,7 @@
           "Target": "onlineMeeting"
         },
         {
-          "Id": "cc11e55a-18b5-4f89-afd7-bd10b863299b",
+          "Id": "4b658708-b0e0-43b3-ad64-c2aff937d6c9",
           "ApiChange": "Resource",
           "ChangedApiName": "Accept-Language",
           "ChangeType": "Addition",
@@ -359,7 +463,7 @@
           "Target": "online meetings"
         }
       ],
-      "Id": "cc11e55a-18b5-4f89-afd7-bd10b863299b",
+      "Id": "4b658708-b0e0-43b3-ad64-c2aff937d6c9",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -369,7 +473,7 @@
     {
       "ChangeList": [
         {
-          "Id": "dc4a8290-16f5-4732-a536-c649244ccced",
+          "Id": "a08ef648-377b-49a2-ad7f-dd2dd416dadb",
           "ApiChange": "Property",
           "ChangedApiName": "initiator",
           "ChangeType": "Addition",
@@ -377,7 +481,7 @@
           "Target": "recordingInfo"
         }
       ],
-      "Id": "dc4a8290-16f5-4732-a536-c649244ccced",
+      "Id": "a08ef648-377b-49a2-ad7f-dd2dd416dadb",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
@@ -387,7 +491,7 @@
     {
       "ChangeList": [
         {
-          "Id": "9f180f21-d17a-4005-b795-739ecc35ce93",
+          "Id": "5147562b-c599-4456-be5f-76b83c818aa2",
           "ApiChange": "Resource",
           "ChangedApiName": "Get callRecord",
           "ChangeType": "Addition",
@@ -395,7 +499,7 @@
           "Target": "Get callRecord"
         },
         {
-          "Id": "9f180f21-d17a-4005-b795-739ecc35ce93",
+          "Id": "5147562b-c599-4456-be5f-76b83c818aa2",
           "ApiChange": "Resource",
           "ChangedApiName": "callRecord,session,segment",
           "ChangeType": "Addition",
@@ -403,7 +507,7 @@
           "Target": "callRecord,session,segment"
         },
         {
-          "Id": "9f180f21-d17a-4005-b795-739ecc35ce93",
+          "Id": "5147562b-c599-4456-be5f-76b83c818aa2",
           "ApiChange": "Resource",
           "ChangedApiName": "endpoint,participantEndpoint,serviceEndpoint,userAgent,serviceUserAgent,clientUserAgent,userfeedback,feedbackTokenSet,media,mediaStream,networkInfo,deviceInfo,failureInfo",
           "ChangeType": "Addition",
@@ -411,7 +515,7 @@
           "Target": "endpoint,participantEndpoint,serviceEndpoint,userAgent,serviceUserAgent,clientUserAgent,userfeedback,feedbackTokenSet,media,mediaStream,networkInfo,deviceInfo,failureInfo"
         },
         {
-          "Id": "9f180f21-d17a-4005-b795-739ecc35ce93",
+          "Id": "5147562b-c599-4456-be5f-76b83c818aa2",
           "ApiChange": "Resource",
           "ChangedApiName": "webhook",
           "ChangeType": "Addition",
@@ -419,7 +523,7 @@
           "Target": "webhook"
         }
       ],
-      "Id": "9f180f21-d17a-4005-b795-739ecc35ce93",
+      "Id": "5147562b-c599-4456-be5f-76b83c818aa2",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
@@ -429,7 +533,7 @@
     {
       "ChangeList": [
         {
-          "Id": "2e5cb31d-e037-4e50-a494-beea73bc2f85",
+          "Id": "bbc3a0df-e4a6-494e-bee9-89be9910ebd3",
           "ApiChange": "Resource",
           "ChangedApiName": "presence",
           "ChangeType": "Addition",
@@ -437,7 +541,7 @@
           "Target": "presence"
         },
         {
-          "Id": "2e5cb31d-e037-4e50-a494-beea73bc2f85",
+          "Id": "bbc3a0df-e4a6-494e-bee9-89be9910ebd3",
           "ApiChange": "Resource",
           "ChangedApiName": "recordResponse",
           "ChangeType": "Change",
@@ -445,7 +549,7 @@
           "Target": "recordResponse"
         },
         {
-          "Id": "2e5cb31d-e037-4e50-a494-beea73bc2f85",
+          "Id": "bbc3a0df-e4a6-494e-bee9-89be9910ebd3",
           "ApiChange": "Property",
           "ChangedApiName": "isCanceled,canceledDateTime,entryExitAnnouncement,joinUrl,joinWebUrl",
           "ChangeType": "Change",
@@ -453,7 +557,7 @@
           "Target": "onlineMeeting"
         }
       ],
-      "Id": "2e5cb31d-e037-4e50-a494-beea73bc2f85",
+      "Id": "bbc3a0df-e4a6-494e-bee9-89be9910ebd3",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00",
@@ -463,7 +567,7 @@
     {
       "ChangeList": [
         {
-          "Id": "2e5cb31d-e037-4e50-a494-beea73bc2f85",
+          "Id": "bbc3a0df-e4a6-494e-bee9-89be9910ebd3",
           "ApiChange": "Resource",
           "ChangedApiName": "create call,call answer,call reject,call get,call delete,call mute,call-unmute,call change screen sharing role,call transfer,call redirect,Play a prompt,Record Response,Subscribe to tne,list participants,invite participants,get participants,mute participants,create online meeting,get online meeting,call keep alive",
           "ChangeType": "Addition",
@@ -471,7 +575,7 @@
           "Target": "create call,call answer,call reject,call get,call delete,call mute,call-unmute,call change screen sharing role,call transfer,call redirect,Play a prompt,Record Response,Subscribe to tne,list participants,invite participants,get participants,mute participants,create online meeting,get online meeting,call keep alive"
         },
         {
-          "Id": "2e5cb31d-e037-4e50-a494-beea73bc2f85",
+          "Id": "bbc3a0df-e4a6-494e-bee9-89be9910ebd3",
           "ApiChange": "Resource",
           "ChangedApiName": "call,participant,onlineMeeting",
           "ChangeType": "Addition",
@@ -479,7 +583,7 @@
           "Target": "call,participant,onlineMeeting"
         },
         {
-          "Id": "2e5cb31d-e037-4e50-a494-beea73bc2f85",
+          "Id": "bbc3a0df-e4a6-494e-bee9-89be9910ebd3",
           "ApiChange": "Resource",
           "ChangedApiName": "delete onlineMeeting",
           "ChangeType": "Addition",
@@ -487,7 +591,7 @@
           "Target": "delete onlineMeeting"
         }
       ],
-      "Id": "2e5cb31d-e037-4e50-a494-beea73bc2f85",
+      "Id": "bbc3a0df-e4a6-494e-bee9-89be9910ebd3",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
@@ -497,7 +601,7 @@
     {
       "ChangeList": [
         {
-          "Id": "953070e8-3940-4ce7-a7e7-4b1e7138a8ef",
+          "Id": "659b8848-21a2-4dd5-89b5-60d502cd8fe4",
           "ApiChange": "method",
           "ChangedApiName": "mute,mute participant,commsOperation,muteParticipantOperation",
           "ChangeType": "Change",
@@ -505,7 +609,7 @@
           "Target": "mute,mute participant,commsOperation,muteParticipantOperation"
         },
         {
-          "Id": "953070e8-3940-4ce7-a7e7-4b1e7138a8ef",
+          "Id": "659b8848-21a2-4dd5-89b5-60d502cd8fe4",
           "ApiChange": "method",
           "ChangedApiName": "unmute,commsOperation,unmuteParticipantOperation",
           "ChangeType": "Change",
@@ -513,7 +617,7 @@
           "Target": "unmute,commsOperation,unmuteParticipantOperation"
         },
         {
-          "Id": "953070e8-3940-4ce7-a7e7-4b1e7138a8ef",
+          "Id": "659b8848-21a2-4dd5-89b5-60d502cd8fe4",
           "ApiChange": "Resource",
           "ChangedApiName": "keepAlive,call",
           "ChangeType": "Addition",
@@ -521,7 +625,7 @@
           "Target": "keepAlive,call"
         }
       ],
-      "Id": "953070e8-3940-4ce7-a7e7-4b1e7138a8ef",
+      "Id": "659b8848-21a2-4dd5-89b5-60d502cd8fe4",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -531,7 +635,7 @@
     {
       "ChangeList": [
         {
-          "Id": "177a9b8b-32c3-44a9-a0b5-d340a59e31ce",
+          "Id": "03abf87b-e8bc-4041-b12a-92cb7651271c",
           "ApiChange": "Resource",
           "ChangedApiName": "updateRecordingStatus,call",
           "ChangeType": "Addition",
@@ -539,7 +643,7 @@
           "Target": "updateRecordingStatus,call"
         },
         {
-          "Id": "177a9b8b-32c3-44a9-a0b5-d340a59e31ce",
+          "Id": "03abf87b-e8bc-4041-b12a-92cb7651271c",
           "ApiChange": "Resource",
           "ChangedApiName": "incomingContext",
           "ChangeType": "Addition",
@@ -547,7 +651,7 @@
           "Target": "incomingContext"
         },
         {
-          "Id": "177a9b8b-32c3-44a9-a0b5-d340a59e31ce",
+          "Id": "03abf87b-e8bc-4041-b12a-92cb7651271c",
           "ApiChange": "Property",
           "ChangedApiName": "incomingContext",
           "ChangeType": "Addition",
@@ -555,7 +659,7 @@
           "Target": "call"
         },
         {
-          "Id": "177a9b8b-32c3-44a9-a0b5-d340a59e31ce",
+          "Id": "03abf87b-e8bc-4041-b12a-92cb7651271c",
           "ApiChange": "Property",
           "ChangedApiName": "endpointType",
           "ChangeType": "Addition",
@@ -563,7 +667,7 @@
           "Target": "participantInfo"
         },
         {
-          "Id": "177a9b8b-32c3-44a9-a0b5-d340a59e31ce",
+          "Id": "03abf87b-e8bc-4041-b12a-92cb7651271c",
           "ApiChange": "Property",
           "ChangedApiName": "endpointType",
           "ChangeType": "Addition",
@@ -571,7 +675,7 @@
           "Target": "invitationParticipantInfo"
         },
         {
-          "Id": "177a9b8b-32c3-44a9-a0b5-d340a59e31ce",
+          "Id": "03abf87b-e8bc-4041-b12a-92cb7651271c",
           "ApiChange": "Property",
           "ChangedApiName": "recordingStatus",
           "ChangeType": "Addition",
@@ -579,7 +683,7 @@
           "Target": "recordingInfo"
         },
         {
-          "Id": "177a9b8b-32c3-44a9-a0b5-d340a59e31ce",
+          "Id": "03abf87b-e8bc-4041-b12a-92cb7651271c",
           "ApiChange": "Property",
           "ChangedApiName": "status",
           "ChangeType": "Deletion",
@@ -587,7 +691,7 @@
           "Target": "recordingInfo"
         },
         {
-          "Id": "177a9b8b-32c3-44a9-a0b5-d340a59e31ce",
+          "Id": "03abf87b-e8bc-4041-b12a-92cb7651271c",
           "ApiChange": "Resource",
           "ChangedApiName": "participantInfo,invitationParticipantInfo",
           "ChangeType": "Deletion",
@@ -595,7 +699,7 @@
           "Target": "participantInfo,invitationParticipantInfo"
         }
       ],
-      "Id": "177a9b8b-32c3-44a9-a0b5-d340a59e31ce",
+      "Id": "03abf87b-e8bc-4041-b12a-92cb7651271c",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -605,7 +709,7 @@
     {
       "ChangeList": [
         {
-          "Id": "f771b8a0-0895-4c6e-95d7-1f8712f68b68",
+          "Id": "1fa26c7b-50bb-48c8-90f2-aa0e0979321c",
           "ApiChange": "Resource",
           "ChangedApiName": "/app,/communications",
           "ChangeType": "Addition",
@@ -613,7 +717,7 @@
           "Target": ""
         },
         {
-          "Id": "f771b8a0-0895-4c6e-95d7-1f8712f68b68",
+          "Id": "1fa26c7b-50bb-48c8-90f2-aa0e0979321c",
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime,lastActionDateTime",
           "ChangeType": "Deletion",
@@ -621,7 +725,7 @@
           "Target": "commsOperation"
         },
         {
-          "Id": "f771b8a0-0895-4c6e-95d7-1f8712f68b68",
+          "Id": "1fa26c7b-50bb-48c8-90f2-aa0e0979321c",
           "ApiChange": "Property",
           "ChangedApiName": "meetingType",
           "ChangeType": "Deletion",
@@ -629,7 +733,7 @@
           "Target": "onlineMeeting"
         },
         {
-          "Id": "f771b8a0-0895-4c6e-95d7-1f8712f68b68",
+          "Id": "1fa26c7b-50bb-48c8-90f2-aa0e0979321c",
           "ApiChange": "Property",
           "ChangedApiName": "isBroadcast",
           "ChangeType": "Addition",
@@ -637,7 +741,7 @@
           "Target": "onlineMeeting"
         },
         {
-          "Id": "f771b8a0-0895-4c6e-95d7-1f8712f68b68",
+          "Id": "1fa26c7b-50bb-48c8-90f2-aa0e0979321c",
           "ApiChange": "Property",
           "ChangedApiName": "resource,resourceUrl",
           "ChangeType": "Change",
@@ -645,7 +749,7 @@
           "Target": "commsNotification"
         },
         {
-          "Id": "f771b8a0-0895-4c6e-95d7-1f8712f68b68",
+          "Id": "1fa26c7b-50bb-48c8-90f2-aa0e0979321c",
           "ApiChange": "Property",
           "ChangedApiName": "code,subCode",
           "ChangeType": "Change",
@@ -653,7 +757,7 @@
           "Target": "resultInfo"
         },
         {
-          "Id": "f771b8a0-0895-4c6e-95d7-1f8712f68b68",
+          "Id": "1fa26c7b-50bb-48c8-90f2-aa0e0979321c",
           "ApiChange": "Property",
           "ChangedApiName": "subcode,subCode",
           "ChangeType": "Change",
@@ -661,7 +765,7 @@
           "Target": "resultInfo"
         }
       ],
-      "Id": "f771b8a0-0895-4c6e-95d7-1f8712f68b68",
+      "Id": "1fa26c7b-50bb-48c8-90f2-aa0e0979321c",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
@@ -671,7 +775,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5f3792c9-f755-4cdc-a70c-e0f0ee56ef4f",
+          "Id": "95f2638f-73ee-4195-8471-5580b972ee0d",
           "ApiChange": "Property",
           "ChangedApiName": "mediaState",
           "ChangeType": "Addition",
@@ -679,7 +783,7 @@
           "Target": "call"
         },
         {
-          "Id": "5f3792c9-f755-4cdc-a70c-e0f0ee56ef4f",
+          "Id": "95f2638f-73ee-4195-8471-5580b972ee0d",
           "ApiChange": "Property",
           "ChangedApiName": "recordResourceLocation,recordingLocation",
           "ChangeType": "Change",
@@ -687,7 +791,7 @@
           "Target": "recordOperation"
         },
         {
-          "Id": "5f3792c9-f755-4cdc-a70c-e0f0ee56ef4f",
+          "Id": "95f2638f-73ee-4195-8471-5580b972ee0d",
           "ApiChange": "Property",
           "ChangedApiName": "recordResourceAccessToken,recordingAccessToken",
           "ChangeType": "Change",
@@ -695,7 +799,7 @@
           "Target": "recordOperation"
         },
         {
-          "Id": "5f3792c9-f755-4cdc-a70c-e0f0ee56ef4f",
+          "Id": "95f2638f-73ee-4195-8471-5580b972ee0d",
           "ApiChange": "Property",
           "ChangedApiName": "capabilities",
           "ChangeType": "Addition",
@@ -703,7 +807,7 @@
           "Target": "onlineMeeting"
         },
         {
-          "Id": "5f3792c9-f755-4cdc-a70c-e0f0ee56ef4f",
+          "Id": "95f2638f-73ee-4195-8471-5580b972ee0d",
           "ApiChange": "Property",
           "ChangedApiName": "videoTeleconferenceId",
           "ChangeType": "Addition",
@@ -711,7 +815,7 @@
           "Target": "onlineMeeting"
         },
         {
-          "Id": "5f3792c9-f755-4cdc-a70c-e0f0ee56ef4f",
+          "Id": "95f2638f-73ee-4195-8471-5580b972ee0d",
           "ApiChange": "Property",
           "ChangedApiName": "producers",
           "ChangeType": "Addition",
@@ -719,7 +823,7 @@
           "Target": "meetingParticipants"
         },
         {
-          "Id": "5f3792c9-f755-4cdc-a70c-e0f0ee56ef4f",
+          "Id": "95f2638f-73ee-4195-8471-5580b972ee0d",
           "ApiChange": "Property",
           "ChangedApiName": "contributors",
           "ChangeType": "Addition",
@@ -727,7 +831,7 @@
           "Target": "meetingParticipants"
         }
       ],
-      "Id": "5f3792c9-f755-4cdc-a70c-e0f0ee56ef4f",
+      "Id": "95f2638f-73ee-4195-8471-5580b972ee0d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
@@ -737,7 +841,7 @@
     {
       "ChangeList": [
         {
-          "Id": "8e2896f0-4a9e-49f6-b2d3-0baa1c974b77",
+          "Id": "7810391a-83ce-453a-87a9-34f761a51763",
           "ApiChange": "Resource",
           "ChangedApiName": "application",
           "ChangeType": "Change",
@@ -745,7 +849,7 @@
           "Target": "application"
         },
         {
-          "Id": "8e2896f0-4a9e-49f6-b2d3-0baa1c974b77",
+          "Id": "7810391a-83ce-453a-87a9-34f761a51763",
           "ApiChange": "Resource",
           "ChangedApiName": "operation",
           "ChangeType": "Change",
@@ -753,7 +857,7 @@
           "Target": "operation"
         },
         {
-          "Id": "8e2896f0-4a9e-49f6-b2d3-0baa1c974b77",
+          "Id": "7810391a-83ce-453a-87a9-34f761a51763",
           "ApiChange": "Resource",
           "ChangedApiName": "call,creating calls,retrieving a call,deleting (hanging up) a call,answering a call,rejecting a call,redirecting a call,transferring a call,IVR scenarios,playing a prompt,recording a call,cancel media processing,subscribing to touch tone notifications",
           "ChangeType": "Addition",
@@ -761,7 +865,7 @@
           "Target": "call,creating calls,retrieving a call,deleting (hanging up) a call,answering a call,rejecting a call,redirecting a call,transferring a call,IVR scenarios,playing a prompt,recording a call,cancel media processing,subscribing to touch tone notifications"
         },
         {
-          "Id": "8e2896f0-4a9e-49f6-b2d3-0baa1c974b77",
+          "Id": "7810391a-83ce-453a-87a9-34f761a51763",
           "ApiChange": "Resource",
           "ChangedApiName": "participant,retrieving a participant object,configuring the audio mixer for a participant,one,all,retrieving a list of the participants,inviting participants",
           "ChangeType": "Addition",
@@ -769,7 +873,7 @@
           "Target": "participant,retrieving a participant object,configuring the audio mixer for a participant,one,all,retrieving a list of the participants,inviting participants"
         },
         {
-          "Id": "8e2896f0-4a9e-49f6-b2d3-0baa1c974b77",
+          "Id": "7810391a-83ce-453a-87a9-34f761a51763",
           "ApiChange": "Resource",
           "ChangedApiName": "share content,mute and unmute itself,update the metadata associated with a call",
           "ChangeType": "Addition",
@@ -777,7 +881,7 @@
           "Target": "share content,mute and unmute itself,update the metadata associated with a call"
         },
         {
-          "Id": "8e2896f0-4a9e-49f6-b2d3-0baa1c974b77",
+          "Id": "7810391a-83ce-453a-87a9-34f761a51763",
           "ApiChange": "Resource",
           "ChangedApiName": "audio routing group,creating audio routing groups,retrieving a list of them,updating,deleting",
           "ChangeType": "Addition",
@@ -785,7 +889,7 @@
           "Target": "audio routing group,creating audio routing groups,retrieving a list of them,updating,deleting"
         },
         {
-          "Id": "8e2896f0-4a9e-49f6-b2d3-0baa1c974b77",
+          "Id": "7810391a-83ce-453a-87a9-34f761a51763",
           "ApiChange": "Resource",
           "ChangedApiName": "online meeting,retrieve an online meeting object,audio conference information",
           "ChangeType": "Addition",
@@ -793,7 +897,7 @@
           "Target": "online meeting,retrieve an online meeting object,audio conference information"
         },
         {
-          "Id": "8e2896f0-4a9e-49f6-b2d3-0baa1c974b77",
+          "Id": "7810391a-83ce-453a-87a9-34f761a51763",
           "ApiChange": "Resource",
           "ChangedApiName": "calling-specific operations,playing audio prompts,recording",
           "ChangeType": "Addition",
@@ -801,7 +905,7 @@
           "Target": "calling-specific operations,playing audio prompts,recording"
         }
       ],
-      "Id": "8e2896f0-4a9e-49f6-b2d3-0baa1c974b77",
+      "Id": "7810391a-83ce-453a-87a9-34f761a51763",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",

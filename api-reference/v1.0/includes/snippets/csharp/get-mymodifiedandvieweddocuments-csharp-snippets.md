@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var used = await graphClient.Me.Insights.Used
 	.Request()
-	.OrderBy("LastUsed/LastAccessedDateTime")
+	.OrderBy("LastUsed/LastAccessedDateTime desc")
 	.GetAsync();
 
 ```

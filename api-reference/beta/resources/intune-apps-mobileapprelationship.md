@@ -3,7 +3,7 @@ title: "mobileAppRelationship resource type"
 description: "Describes a relationship between two mobile apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -29,6 +29,7 @@ Describes a relationship between two mobile apps.
 |id|String|The relationship entity id.|
 |targetId|String|The target mobile app's app id.|
 |targetDisplayName|String|The target mobile app's display name.|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target is a parent or child. Possible values are: `child`, `parent`.|
 
 ## Relationships
 None
@@ -46,9 +47,12 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.mobileAppRelationship",
   "id": "String (identifier)",
   "targetId": "String",
-  "targetDisplayName": "String"
+  "targetDisplayName": "String",
+  "targetType": "String"
 }
 ```
+
+
 
 
 

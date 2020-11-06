@@ -1,6 +1,6 @@
 ---
 title: "Add directory role member"
-description: "Use this API to create a new directory role member."
+description: "Create a new directory role member."
 author: "abhijeetsinha"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new directory role member.
+Create a new directory role member.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -27,23 +27,25 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/{id}/members/$ref
-
 ```
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 
-## Example
-##### Request
-Here is an example of the request.
+## Examples
+
+### Example 1: Assign a built-in role to a user
+#### Request
+The following example assigns a built-in role to a user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -51,13 +53,12 @@ Here is an example of the request.
   "name": "create_directoryobject_from_directoryrole"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/directoryRoles/{id}/members/$ref
+POST https://graph.microsoft.com/beta/directoryRoles/0afed502-2456-4fd4-988e-3c21924c28a7/members/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "directoryObject": {
-  }
+    "@odata.id":"https://graph.microsoft.com/beta/users/0f933635-5b77-4cf4-a577-f78a5eb090a2"
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -68,26 +69,52 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-directoryrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directoryrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+The following example shows the response. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No content
+```
+
+### Example 2: Assign a built-in role to a group
+#### Request
+You can use a specific resource set like users or groups in the request body, or you can use generic **directoryObjects**. This example shows how you can use **directoryObjects**.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_directoryobject_from_directoryrole"
+}-->
+```http
+POST https://graph.microsoft.com/beta/directoryRoles/0afed502-2456-4fd4-988e-3c21924c28a7/members/$ref
 Content-type: application/json
-Content-length: 51
+Content-length: 30
 
 {
-  "directoryObject": {
-    "id": "id-value"
-  }
+    "@odata.id":"https://graph.microsoft.com/beta/directoryObjects/2c891f12-928d-4da2-8d83-7d2434a0d8dc"
 }
+```
+
+#### Response
+The following example shows the response. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+} -->
+```http
+HTTP/1.1 204 No content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -103,3 +130,5 @@ Content-length: 51
   ]
 }
 -->
+
+

@@ -3,7 +3,7 @@ title: "Create deviceManagementScriptDeviceState"
 description: "Create a new deviceManagementScriptDeviceState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/deviceRunStates
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
+POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/deviceRunStates
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates
 ```
 
@@ -98,6 +99,8 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
+
+
 
 
 

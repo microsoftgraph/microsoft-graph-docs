@@ -12,8 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphPersonAnniversary *personAnniversary = [[MSGraphPersonAnniversary alloc] init];
-[personAnniversary setType: [MSGraphAnniversaryType birthday]];
-[personAnniversary setDate:@"datetime-value"];
+[personAnniversary setAllowedAudiences: [MSGraphAllowedAudiences contacts]];
 
 NSError *error;
 NSData *personAnniversaryData = [personAnniversary getSerializedDataWithError:&error];

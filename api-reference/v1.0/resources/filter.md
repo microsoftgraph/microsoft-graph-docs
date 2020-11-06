@@ -2,7 +2,7 @@
 title: "Filter resource type"
 description: "Manages the filtering of a table's column."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -55,3 +55,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

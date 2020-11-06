@@ -4,7 +4,7 @@ description: "A scoped-role membership describes a user's membership of a direct
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "abhijeetsinha"
 ---
 
 # scopedRoleMembership resource type
@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A scoped-role membership describes a user's membership of a directory role, that is further scoped to an Administrative Unit (AU).  This provides a mechanism to allow a tenant-wide company adminsistrator to delegate administrative privileges to a user to manage users and groups in a subset of the organization (the subset being defined by an AU).
+A scoped-role membership describes a user's membership of a directory role, that is further scoped to an Administrative Unit (AU).  This provides a mechanism to allow a tenant-wide company administrator to delegate administrative privileges to a user to manage users and groups in a subset of the organization (the subset being defined by an AU).
 
 ## Methods
-Direct queries to this resource are not supported.  Please see the [adminstrative units](administrativeunit.md) topic to see information on how to query for scoped-role memberships, as well as adding and removing scoped-role memberships. 
+Direct queries to this resource are not supported.  Please see the [administrative units](administrativeunit.md) topic to see information on how to query for scoped-role memberships, as well as adding and removing scoped-role memberships.
 
 ## Properties
 | Property   | Type | Description |
@@ -64,3 +64,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 PATCH /me/profile/interests/{id}
+PATCH /users/{id | userPrincipalName}/profile/interests/{id}
 ```
 
 ## Request headers
@@ -44,12 +45,17 @@ PATCH /me/profile/interests/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type             | Description                                                                         |
-|:-------------|:-----------------|:------------------------------------------------------------------------------------|
-|categories    |String collection | Contains categories a user has associated with the interest (eg: personal, recipies)|
-|description   |String            | Contains a description of the interest.                                             |
-|displayName   |String            | Contains a friendly name for the interest.                                          |
-|webUrl        |String            | Contains a link to an information source about the interest.                        |
+The following table shows the properties that are possible to update within an existing [personInterest](../resources/personinterest.md) object in a user's [profile](../resources/profile.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Contains categories a user has associated with the interest (for example, personal, recipies). |
+|collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
+|description|String|Contains a description of the interest.|
+|displayName|String|Contains a friendly name for the interest.  |
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|webUrl|String|Contains a link to a web page or resource about the interest. |
 
 ## Response
 
@@ -73,11 +79,8 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
-  ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+    "Sports"
+  ]
 }
 ```
 # [C#](#tab/csharp)
@@ -112,21 +115,35 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
   "categories": [
-    "categories-value"
+    "Sports"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "World's greatest football club",
+  "displayName": "Chelsea FC",
+  "webUrl": "https://www.chelseafc.com",
+  "collaborationTags": null
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update personinterest",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

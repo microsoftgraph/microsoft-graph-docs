@@ -3,7 +3,7 @@ title: "defenderProtectionType enum type"
 description: "Possible values of Defender PUA Protection"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,6 +23,8 @@ Possible values of Defender PUA Protection
 |userDefined|0|Device default value, no intent.|
 |enable|1|Block functionality.|
 |auditMode|2|Allow functionality but generate logs.|
+
+
 
 
 

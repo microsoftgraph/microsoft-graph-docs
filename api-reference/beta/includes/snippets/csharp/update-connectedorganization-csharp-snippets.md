@@ -9,7 +9,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var connectedOrganization = new ConnectedOrganization
 {
 	DisplayName = "Connected organization new name",
-	Description = "Connected organization new description"
+	Description = "Connected organization new description",
+	State = ConnectedOrganizationState.Configured
 };
 
 await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{id}"]

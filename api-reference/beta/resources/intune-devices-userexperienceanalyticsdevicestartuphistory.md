@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsDeviceStartupHistory resource type"
 description: "The user experience analytics device startup history entity contains device boot performance history details."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -43,6 +43,9 @@ The user experience analytics device startup history entity contains device boot
 |isFirstLogin|Boolean|The user experience analytics device first login.|
 |isFeatureUpdate|Boolean|The user experience analytics device boot record is a feature update.|
 |operatingSystemVersion|String|The user experience analytics device boot record's operating system version.|
+|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|OS restart category. Possible values are: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`.|
+|restartStopCode|String|OS restart stop code. This shows the bug check code which can be used to look up the blue screen reason.|
+|restartFaultBucket|String|OS restart fault bucket. The fault bucket is used to find additional information about a system crash.|
 
 ## Relationships
 None
@@ -71,9 +74,14 @@ Here is a JSON representation of the resource.
   "totalLoginTimeInMs": 1024,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
-  "operatingSystemVersion": "String"
+  "operatingSystemVersion": "String",
+  "restartCategory": "String",
+  "restartStopCode": "String",
+  "restartFaultBucket": "String"
 }
 ```
+
+
 
 
 

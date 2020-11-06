@@ -3,7 +3,7 @@ title: "operator enum type"
 description: "Operator for rules."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -45,6 +45,8 @@ Operator for rules.
 |orderedSetEquals|22|OrderedSetEquals operator.|
 |subsetOf|23|SubsetOf operator.|
 |excludesAll|24|ExcludesAll operator.|
+
+
 
 
 

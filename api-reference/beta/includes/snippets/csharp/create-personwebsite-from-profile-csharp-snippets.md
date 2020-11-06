@@ -10,11 +10,10 @@ var personWebsite = new PersonWebsite
 {
 	Categories = new List<String>()
 	{
-		"categories-value"
+		"football"
 	},
-	Description = "description-value",
-	DisplayName = "displayName-value",
-	WebUrl = "webUrl-value"
+	DisplayName = "Lyn Damer",
+	WebUrl = "www.lyndamer.no"
 };
 
 await graphClient.Me.Profile.Websites

@@ -3,7 +3,7 @@ title: "diskType enum type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,6 +23,8 @@ Not yet documented
 |unkown|0|Not yet documented|
 |hdd|1|Not yet documented|
 |ssd|2|Not yet documented|
+
+
 
 
 

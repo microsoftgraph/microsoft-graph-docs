@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/educationalActivities/{id} 
+PATCH /me/profile/educationalActivities/{id}
+PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
 ## Request headers
@@ -44,13 +45,15 @@ PATCH /me/profile/educationalActivities/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property           | Type                                                                  | Description                                                                |
-|:-------------------|:----------------------------------------------------------------------|:---------------------------------------------------------------------------|
-|completionMonthYear |Date                                                                   | The month and year the user graduated or completed the activity.           |
-|endMonthYear        |Date                                                                   | The month and year the user completed the educational activity referenced. |
-|institution         |[institutionData](../resources/institutiondata.md)                     | Contains details of the institution studied at.                            |
-|program             |[educationalActivityDetail](../resources/educationalactivitydetail.md) | Contains extended information about the program or course.                 |
-|startMonthYear      |Date                                                                   | The month and year the user commenced the activity referenced.             |
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Date|The month and year the user graduated or completed the activity. |
+|endMonthYear|Date|The month and year the user completed the educational activity referenced.|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|institution|[institutionData](../resources/institutiondata.md)|Contains details of the institution studied at. |
+|program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contains extended information about the program or course.|
+|startMonthYear|Date|The month and year the user commenced the activity referenced.|
 
 ## Response
 
@@ -74,34 +77,17 @@ PATCH https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 Content-type: application/json
 
 {
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
   "institution": {
-    "description": "description-value",
-    "displayName": "displayName-value",
     "location": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
-  },
-  "program": {
-    "abbreviation": "abbreviation-value",
-    "activities": "activities-value",
-    "awards": "awards-value",
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "fieldsOfStudy": "fieldsOfStudy-value",
-    "grade": "grade-value",
-    "notes": "notes-value",
-    "webUrl": "webUrl-value"
-  },
-  "startMonthYear": "datetime-value"
+      "type": "business",
+      "postOfficeBox": null,
+      "street": "12000 E Prospect Rd",
+      "city": "Fort Collins",
+      "state": "Colorado",
+      "countryOrRegion": "USA",
+      "postalCode": "80525"
+    }
+  }
 }
 ```
 
@@ -136,43 +122,57 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "completionMonthYear": "Date",
+  "endMonthYear": "Date",
   "institution": {
-    "description": "description-value",
-    "displayName": "displayName-value",
+    "description": null,
+    "displayName": "Colorado State University",
     "location": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+      "type": "business",
+      "postOfficeBox": null,
+      "street": "12000 E Prospect Rd",
+      "city": "Fort Collins",
+      "state": "Colorado",
+      "countryOrRegion": "USA",
+      "postalCode": "80525"
     },
-    "webUrl": "webUrl-value"
+    "webUrl": "https://www.colostate.edu"
   },
   "program": {
-    "abbreviation": "abbreviation-value",
-    "activities": "activities-value",
-    "awards": "awards-value",
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "fieldsOfStudy": "fieldsOfStudy-value",
-    "grade": "grade-value",
-    "notes": "notes-value",
-    "webUrl": "webUrl-value"
+    "abbreviation": "MBA",
+    "activities": null,
+    "awards": null,
+    "description": "Master of Business Administration with a major in Entreprenuership and Finance.",
+    "displayName": "Master of Business Administration",
+    "fieldsOfStudy": null,
+    "grade": "3.9",
+    "notes": null,
+    "webUrl": "https://biz.colostate.edu"
   },
-  "startMonthYear": "datetime-value"
+  "startMonthYear": "Date"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update educationalactivity",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

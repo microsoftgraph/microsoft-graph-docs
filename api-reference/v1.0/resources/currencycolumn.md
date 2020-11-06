@@ -39,3 +39,4 @@ Here is a JSON representation of a **currencyColumn** resource.
   "section": "documentation",
   "tocPath": "Resources/CurrencyColumn"
 } -->
+

@@ -4,7 +4,7 @@ description: "Allows setting a flag for the user to follow up on an item later. 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "svpsiva"
 ---
 
 # followupFlag resource type
@@ -57,3 +57,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

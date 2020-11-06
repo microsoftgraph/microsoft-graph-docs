@@ -12,4 +12,4 @@ ms.topic: include
 | Any | 5000 requests per 10 seconds |
 
 The preceding limits apply to the following resources:  
-call, cloudCommunications, commsOperation, inviteParticipantsOperation, muteParticipantOperation, onlineMeeting, participant, playPromptOperation, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation.
+call, cancelMediaProcessingOperation, cloudCommunications, commsOperation, inviteParticipantsOperation, muteParticipantOperation, onlineMeeting, participant, playPromptOperation, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation.

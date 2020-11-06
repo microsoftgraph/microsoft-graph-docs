@@ -4,7 +4,7 @@ description: "Represents a tenant's secure score per control data. By default, i
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # secureScoreControlProfile resource type
@@ -100,3 +100,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

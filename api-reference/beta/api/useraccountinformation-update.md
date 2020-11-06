@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [userAccountInformation](../resources/useraccountinformation.md) object in a user's [profile](../resources/profile.md).
+Update the properties of an [userAccountInformation](../resources/useraccountinformation.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/account/{id}
+PATCH /me/profile/accounts/{id}
+PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
 ```
 
 ## Request headers
@@ -44,12 +45,12 @@ PATCH /me/profile/account/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property            | Type                                    | Description                                                                                    |
-|:--------------------|:----------------------------------------|:-----------------------------------------------------------------------------------------------|
-|ageGroup             |String                                   |Shows the age group of user. Allowed values `null`, `minor`, `notAdult` and `adult`. Read Only. |
-|countryCode          |String                                   |Contains the two-character countryCode associated with the users account.                       |
-|preferredLanguageTag |[localeInfo](../resources/localeinfo.md) |Contains the language the user has associated as preferred for the account.                     |
-|userPrincipalName    |String                                   |The user principal name (UPN) of the user associated with the account.                          |
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|countryCode|String|Contains the two-character country code associated with the users account.  |
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contains the language the user has associated as preferred for the account.   |
 
 ## Response
 
@@ -72,13 +73,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/account/{id}
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
-  "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
-  },
-  "userPrincipalName": "userPrincipalName-value"
+  "countryCode": "NO"
 }
 ```
 # [C#](#tab/csharp)
@@ -113,22 +108,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
-  "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "userPrincipalName": "userPrincipalName-value"
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "ageGroup": "adult",
+  "countryCode": "NO",
+  "preferredLanguageTag": null,
+  "userPrincipalName": "innocenty.popov@adventureworks.com"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update useraccountinformation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

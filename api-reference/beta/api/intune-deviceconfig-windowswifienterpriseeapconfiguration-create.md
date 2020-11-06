@@ -3,7 +3,7 @@ title: "Create windowsWifiEnterpriseEAPConfiguration"
 description: "Create a new windowsWifiEnterpriseEAPConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -86,6 +86,9 @@ The following table shows the properties that are required when you create the w
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Specify the authentication method. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Specify inner authentication protocol for EAP TTLS. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Specify the string to replace usernames for privacy when using EAP TTLS or PEAP.|
+|requireCryptographicBinding|Boolean|Specify whether to enable cryptographic binding when EAP type is selected as PEAP.|
+|performServerValidation|Boolean|Specify whether to enable verification of server's identity by validating the certificate when EAP type is selected as PEAP.|
+|disableUserPromptForServerValidation|Boolean|Specify whether to prevent the user from being prompted to authorize new servers for trusted certification authorities when EAP type is selected as PEAP.|
 
 
 
@@ -99,7 +102,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2277
+Content-length: 2402
 
 {
   "@odata.type": "#microsoft.graph.windowsWifiEnterpriseEAPConfiguration",
@@ -158,7 +161,10 @@ Content-length: 2277
   ],
   "authenticationMethod": "usernameAndPassword",
   "innerAuthenticationProtocolForEAPTTLS": "challengeHandshakeAuthenticationProtocol",
-  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+  "requireCryptographicBinding": true,
+  "performServerValidation": true,
+  "disableUserPromptForServerValidation": true
 }
 ```
 
@@ -167,7 +173,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2449
+Content-Length: 2574
 
 {
   "@odata.type": "#microsoft.graph.windowsWifiEnterpriseEAPConfiguration",
@@ -229,9 +235,14 @@ Content-Length: 2449
   ],
   "authenticationMethod": "usernameAndPassword",
   "innerAuthenticationProtocolForEAPTTLS": "challengeHandshakeAuthenticationProtocol",
-  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+  "requireCryptographicBinding": true,
+  "performServerValidation": true,
+  "disableUserPromptForServerValidation": true
 }
 ```
+
+
 
 
 

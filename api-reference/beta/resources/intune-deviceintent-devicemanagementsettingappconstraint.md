@@ -3,7 +3,7 @@ title: "deviceManagementSettingAppConstraint resource type"
 description: "Constraint enforcing the setting contains only vaild app types."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -43,6 +43,8 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
 
 
 

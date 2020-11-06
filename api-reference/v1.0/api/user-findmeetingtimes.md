@@ -147,11 +147,11 @@ Content-Type: application/json
     }
   ],  
   "locationConstraint": { 
-    "isRequired": "false",  
-    "suggestLocation": "false",  
+    "isRequired": false,  
+    "suggestLocation": false,  
     "locations": [ 
       { 
-        "resolveAvailability": "false",
+        "resolveAvailability": false,
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -389,3 +389,4 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   ],
   "tocPath": ""
 }-->
+

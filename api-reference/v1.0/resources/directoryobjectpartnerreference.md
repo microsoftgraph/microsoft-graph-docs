@@ -45,7 +45,7 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-- [Get directory objects from a list of ids](/graph/api/directoryobject-getbyids?view=graph-rest-v1.0)
+- [Get directory objects from a list of ids](../api/directoryobject-getbyids.md)
 
 <!-- uuid: fbec8cd7-cfe4-431d-87fc-d102cd2841a4
 2018-12-06 02:01:30 UTC -->

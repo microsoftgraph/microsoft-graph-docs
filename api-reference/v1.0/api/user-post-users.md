@@ -58,7 +58,7 @@ The following table lists the properties that are required when you create a use
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
 >[!NOTE]
->Federated users created using this API will be forced to sign-in every 12 hours by default.  For more information on how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+>Federated users created using this API will be forced to sign-in every 12 hours by default.  For more information on how to change this, see [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 ## Response
 

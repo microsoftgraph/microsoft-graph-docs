@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/deviceManagement
 
 ### Response
 
-Here are example of the response. 
+Here are example of the response.
 
 Note: The response objects shown here may be truncated for brevity.
 
@@ -156,6 +156,8 @@ Content-Length: 918
   }
 }
 ```
+
+
 
 
 

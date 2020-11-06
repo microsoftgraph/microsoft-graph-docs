@@ -3,7 +3,7 @@ title: "List win32LobApps"
 description: "List properties and relationships of the win32LobApp objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3933
+Content-Length: 3946
 
 {
   "value": [
@@ -90,6 +90,8 @@ Content-Length: 3933
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -169,12 +171,13 @@ Content-Length: 3933
         "publisher": "Publisher value"
       },
       "setupFilePath": "Setup File Path value",
-      "installLanguage": "Install Language value",
       "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
     }
   ]
 }
 ```
+
+
 
 
 

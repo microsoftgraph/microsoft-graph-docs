@@ -10,16 +10,13 @@ const options = {
 
 const client = Client.init(options);
 
-const appRoleAssignment = Content-type: appRoleAssignments/json
+const servicePrincipal = Content-type: application/json
 
 {
-  principalId: "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
-  principalType: "User",
-  appRoleId:"454dc4c2-8176-498e-99df-8c4efcde41ef",
-  resourceId:"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
+    preferredTokenSigningKeyThumbprint: "AC09FEF18DDE6983EE2A164FBA3C4DD7518BD787"
 };
 
-let res = await client.api('/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/appRoleAssignments')
-	.post(appRoleAssignment);
+let res = await client.api('/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e')
+	.update(servicePrincipal);
 
 ```

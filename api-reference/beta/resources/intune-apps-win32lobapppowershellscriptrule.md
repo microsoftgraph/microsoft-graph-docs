@@ -3,7 +3,7 @@ title: "win32LobAppPowerShellScriptRule resource type"
 description: "A complex type to store the PowerShell script rule data for a Win32 LOB app."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -29,7 +29,7 @@ Inherits from [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |runAs32Bit|Boolean|A value indicating whether the script should run as 32-bit.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|The execution context of the script. Do not specify this value if the rule is used for detection. Script detection rules will run in the same context as the associated app install context. Possible values are: `system`, `user`.|
 |scriptContent|String|The base64-encoded script content.|
-|operationType|[win32LobPowerShellScriptRuleOperationType](../resources/intune-apps-win32lobpowershellscriptruleoperationtype.md)|The script output comparison operation type. Use NotConfigured (the default value) if the rule is used for detection. Possible values are: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|
+|operationType|[win32LobAppPowerShellScriptRuleOperationType](../resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md)|The script output comparison operation type. Use NotConfigured (the default value) if the rule is used for detection. Possible values are: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|The script output operator. Use NotConfigured (the default value) if the rule is used for detection. Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |comparisonValue|String|The script output comparison value. Do not specify a value if the rule is used for detection.|
 
@@ -57,6 +57,8 @@ Here is a JSON representation of the resource.
   "comparisonValue": "String"
 }
 ```
+
+
 
 
 

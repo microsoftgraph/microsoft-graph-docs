@@ -4,7 +4,7 @@ description: ""
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "sureshja"
 ---
 
 # publicError resource type
@@ -27,3 +27,4 @@ Here is a JSON representation of the resource.
 {
 }
 ```
+

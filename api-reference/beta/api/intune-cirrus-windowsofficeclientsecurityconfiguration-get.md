@@ -3,7 +3,7 @@ title: "Get windowsOfficeClientSecurityConfiguration"
 description: "Get a specific security policy windowsOfficeClientSecurityConfiguration object."
 localization_priority: Normal
 author: "dougeby"
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -98,6 +98,8 @@ Content-Length: 1152
   }
 }
 ```
+
+
 
 
 

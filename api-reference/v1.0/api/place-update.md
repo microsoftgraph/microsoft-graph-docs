@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Place.ReadWrite.All. |
+| Delegated (work or school account)     | Place.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported |
 
@@ -183,7 +183,7 @@ PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.onmicro
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.roomlist",
+  "@odata.type": "microsoft.graph.roomList",
   "displayName": "Building 1",
   "phone":"555-555-0100",
   "address": {
@@ -273,3 +273,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,7 +3,7 @@ title: "Create deviceEnrollmentLimitConfiguration"
 description: "Create a new deviceEnrollmentLimitConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -98,6 +98,9 @@ Content-Length: 377
   "limit": 5
 }
 ```
+
+
+
 
 
 

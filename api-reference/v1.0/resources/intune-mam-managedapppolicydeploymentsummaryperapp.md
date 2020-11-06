@@ -3,7 +3,7 @@ title: "managedAppPolicyDeploymentSummaryPerApp resource type"
 description: "Represents policy deployment summary per app."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -40,6 +40,8 @@ Here is a JSON representation of the resource.
   "configurationAppliedUserCount": 1024
 }
 ```
+
+
 
 
 

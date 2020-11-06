@@ -3,7 +3,7 @@ title: "List windows81TrustedRootCertificates"
 description: "List properties and relationships of the windows81TrustedRootCertificate objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -104,6 +104,8 @@ Content-Length: 1543
   ]
 }
 ```
+
+
 
 
 

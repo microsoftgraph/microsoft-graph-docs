@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsDevicePerformance"
 description: "Create a new userExperienceAnalyticsDevicePerformance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,6 +63,10 @@ The following table shows the properties that are required when you create the u
 |groupPolicyLoginTimeInMs|Int32|The user experience analytics device group policy login time in milliseconds.|
 |deviceCount|Int64|User experience analytics summarized device count.|
 |responsiveDesktopTimeInMs|Int32|The user experience analytics responsive desktop time in milliseconds.|
+|blueScreenCount|Int32|Number of Blue Screens in the last 14 days. Valid values 0 to 9999999|
+|restartCount|Int32|Number of Restarts in the last 14 days. Valid values 0 to 9999999|
+|averageBlueScreens|Double|Average (mean) number of Blue Screens per device in the last 14 days. Valid values 0 to 9999999|
+|averageRestarts|Double|Average (mean) number of Restarts per device in the last 14 days. Valid values 0 to 9999999|
 
 
 
@@ -76,7 +80,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance
 Content-type: application/json
-Content-length: 529
+Content-length: 635
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -93,7 +97,11 @@ Content-length: 529
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "deviceCount": 11,
-  "responsiveDesktopTimeInMs": 9
+  "responsiveDesktopTimeInMs": 9,
+  "blueScreenCount": 15,
+  "restartCount": 12,
+  "averageBlueScreens": 6.0,
+  "averageRestarts": 5.0
 }
 ```
 
@@ -102,7 +110,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 578
+Content-Length: 684
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -120,9 +128,15 @@ Content-Length: 578
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "deviceCount": 11,
-  "responsiveDesktopTimeInMs": 9
+  "responsiveDesktopTimeInMs": 9,
+  "blueScreenCount": 15,
+  "restartCount": 12,
+  "averageBlueScreens": 6.0,
+  "averageRestarts": 5.0
 }
 ```
+
+
 
 
 

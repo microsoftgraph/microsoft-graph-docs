@@ -3,7 +3,7 @@ title: "Create importedWindowsAutopilotDeviceIdentity"
 description: "Create a new importedWindowsAutopilotDeviceIdentity object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -107,6 +107,9 @@ Content-Length: 590
   }
 }
 ```
+
+
+
 
 
 

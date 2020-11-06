@@ -4,7 +4,7 @@ description: "Adds a new name to the collection of the given scope using the use
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # Add Named Item
@@ -127,3 +127,5 @@ Content-length: 109
   ]
 }
 -->
+
+

@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPolicies
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPolicies/$ref
 Content-Type: application/json
 
 {
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

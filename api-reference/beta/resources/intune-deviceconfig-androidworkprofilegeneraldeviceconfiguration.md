@@ -3,7 +3,7 @@ title: "androidWorkProfileGeneralDeviceConfiguration resource type"
 description: "Android Work Profile general device configuration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -43,7 +43,9 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|passwordBlockFaceUnlock|Boolean|Indicates whether or not to block face unlock.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
+|passwordBlockIrisUnlock|Boolean|Indicates whether or not to block iris unlock.|
 |passwordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents.|
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Minimum length of passwords. Valid values 4 to 16|
@@ -61,7 +63,9 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |workProfileBlockCrossProfileContactsSearch|Boolean|Block work profile contacts availability in personal profile.|
 |workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
+|workProfilePasswordBlockFaceUnlock|Boolean|Indicates whether or not to block face unlock for work profile.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
+|workProfilePasswordBlockIrisUnlock|Boolean|Indicates whether or not to block iris unlock for work profile.|
 |workProfilePasswordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents for work profile.|
 |workProfilePasswordExpirationDays|Int32|Number of days before the work profile password expires. Valid values 1 to 365|
 |workProfilePasswordMinimumLength|Int32|Minimum length of work profile password. Valid values 4 to 16|
@@ -135,7 +139,9 @@ Here is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "version": 1024,
+  "passwordBlockFaceUnlock": true,
   "passwordBlockFingerprintUnlock": true,
+  "passwordBlockIrisUnlock": true,
   "passwordBlockTrustAgents": true,
   "passwordExpirationDays": 1024,
   "passwordMinimumLength": 1024,
@@ -153,7 +159,9 @@ Here is a JSON representation of the resource.
   "workProfileBlockCrossProfileContactsSearch": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "String",
+  "workProfilePasswordBlockFaceUnlock": true,
   "workProfilePasswordBlockFingerprintUnlock": true,
+  "workProfilePasswordBlockIrisUnlock": true,
   "workProfilePasswordBlockTrustAgents": true,
   "workProfilePasswordExpirationDays": 1024,
   "workProfilePasswordMinimumLength": 1024,
@@ -175,6 +183,8 @@ Here is a JSON representation of the resource.
   "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
+
+
 
 
 

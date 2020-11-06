@@ -4,7 +4,7 @@ description: "Returns the range object that is associated with the name. Throws 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # NamedItem: Range
@@ -104,3 +104,5 @@ Content-length: 169
   ]
 }
 -->
+
+

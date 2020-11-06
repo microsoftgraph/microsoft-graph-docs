@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Roomlist place = new Roomlist();
+RoomList place = new RoomList();
 place.displayName = "Building 1";
 place.phone = "555-555-0100";
 PhysicalAddress address = new PhysicalAddress();

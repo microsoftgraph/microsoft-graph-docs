@@ -61,3 +61,4 @@ Represents an attachment to a [chatMessage](./chatmessage.md) entity.
   "suppressions": []
 }
 -->
+

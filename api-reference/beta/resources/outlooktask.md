@@ -7,11 +7,13 @@ ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
-# outlookTask resource type
+# outlookTask resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 An Outlook item that can track a work item.
 
@@ -134,3 +136,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

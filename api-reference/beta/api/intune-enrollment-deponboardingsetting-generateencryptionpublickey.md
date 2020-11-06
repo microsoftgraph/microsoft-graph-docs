@@ -3,7 +3,7 @@ title: "generateEncryptionPublicKey action"
 description: "Generate a public key to use to encrypt the Apple device enrollment program token"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -66,6 +66,8 @@ Content-Length: 55
   "value": "Generate Encryption Public Key value"
 }
 ```
+
+
 
 
 

@@ -2,7 +2,7 @@
 title: "standardTimeZoneOffset resource type"
 description: "Specifies when a time zone switches from daylight saving time to standard time."
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -63,3 +63,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

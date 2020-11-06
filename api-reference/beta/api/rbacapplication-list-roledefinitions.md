@@ -123,6 +123,12 @@ Content-type: application/json
                     ],
                     "condition": null
                 }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('729827e3-9c14-49f7-bb1b-9608f156bbb8')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+                }
             ]
         },
         {
@@ -143,6 +149,12 @@ Content-type: application/json
                         "microsoft.office365.supportTickets/allEntities/allTasks"
                     ],
                     "condition": null
+                }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('f023fd81-a637-4b56-95fd-791ac0226033')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
                 }
             ]
         },
@@ -167,6 +179,12 @@ Content-type: application/json
                     ],
                     "condition": null
                 }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('b0f54661-2d74-4c50-afa3-1ec803f12efe')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+                }
             ]
         }
     ]
@@ -182,3 +200,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

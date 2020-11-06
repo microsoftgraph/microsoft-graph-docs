@@ -3,7 +3,7 @@ title: "defaultManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -117,6 +117,11 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |customDialerAppProtocol|String|Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.|
 |customDialerAppPackageId|String|PackageId of a custom dialer app to click-to-open a phone number on Android.|
 |customDialerAppDisplayName|String|Friendly name of a custom dialer app to click-to-open a phone number on Android.|
+|biometricAuthenticationBlocked|Boolean|Indicates whether use of the biometric authentication is allowed in place of a pin if PinRequired is set to True. (Android Only)|
+|requiredAndroidSafetyNetEvaluationType|[androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|Defines the Android SafetyNet evaluation type requirement for a managed app to work. (Android Only). Possible values are: `basic`, `hardwareBacked`.|
+|blockAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.|
+|warnAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning|
+|wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -245,9 +250,16 @@ Here is a JSON representation of the resource.
   "appActionIfAndroidDeviceModelNotAllowed": "String",
   "customDialerAppProtocol": "String",
   "customDialerAppPackageId": "String",
-  "customDialerAppDisplayName": "String"
+  "customDialerAppDisplayName": "String",
+  "biometricAuthenticationBlocked": true,
+  "requiredAndroidSafetyNetEvaluationType": "String",
+  "blockAfterCompanyPortalUpdateDeferralInDays": 1024,
+  "warnAfterCompanyPortalUpdateDeferralInDays": 1024,
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 1024
 }
 ```
+
+
 
 
 

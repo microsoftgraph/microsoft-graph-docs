@@ -3,7 +3,7 @@ title: "appLockerApplicationControlType enum type"
 description: "Possible values of AppLocker Application Control Types"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,6 +23,8 @@ Possible values of AppLocker Application Control Types
 |auditComponentsAndStoreApps|2|Audit Windows component and store apps.|
 |enforceComponentsStoreAppsAndSmartlocker|3|Enforce Windows components, store apps and smart locker.|
 |auditComponentsStoreAppsAndSmartlocker|4|Audit Windows components, store apps and smart locker​.|
+
+
 
 
 

@@ -11,6 +11,125 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### volumeType values
+
+| Member
+|:--------------
+| operatingSystemVolume
+| fixedDataVolume
+| removableDataVolume
+| unknownFutureValue
+
+### allowedAudiences values
+
+|Member|
+|:---|
+|me|
+|family|
+|contacts|
+|groupMembers|
+|organization|
+|federatedOrganizations|
+|everyone|
+|unknownFutureValue|
+
+### attestationLevel values
+
+|Member|
+|:---|
+|attested|
+|notAttested|
+
+### emailType values
+
+|Member|
+|:---|
+|unknown|
+|work|
+|personal|
+|main|
+|other|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### authenticationMethodState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### fido2RestrictionEnforcementType values
+
+|Member|
+|:---|
+|allow|
+|block|
+
+### authenticatorAppContextType values
+
+|Member|
+|:---|
+|location|
+|app|
+
+### anniversaryType values
+
+|Member|
+|:---|
+|birthday|
+|wedding|
+|unknownFutureValue|
+
+### skillProficiencyLevel values
+
+|Member|
+|:---|
+|elementary|
+|limitedWorking|
+|generalProfessional|
+|advancedProfessional|
+|expert|
+|unknownFutureValue|
+
+### languageProficiencyLevel values
+
+|Member|
+|:---|
+|elementary|
+|conversational|
+|limitedWorking|
+|professionalWorking|
+|fullProfessional|
+|nativeOrBilingual|
+|unknownFutureValue|
+
+### personRelationship values
+
+|Member|
+|:---|
+|manager|
+|colleague|
+|directReport|
+|dotLineReport|
+|assistant|
+|dotLineManager|
+|alternateContact|
+|friend|
+|spouse|
+|sibling|
+|child|
+|parent|
+|sponsor|
+|emergencyContact|
+|other|
+|unknownFutureValue|
+
 ### attachmentType values
 
 | Member
@@ -49,6 +168,18 @@ Namespace: microsoft.graph
 |message|
 |driveItem|
 |externalItem|
+|site|
+|list|
+|listItem|
+|drive|
+
+### bucketAggregationSortProperty values
+
+|Member|
+|:---|
+|count|
+|keyAsString|
+|keyAsNumber|
 
 ### contactRelationship values
 
@@ -654,7 +785,7 @@ Possible feedback values on the alert provided by an analyst.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -679,7 +810,7 @@ Operation that changed the registry key name and/or value.
 
 ### registryValueType values
 
-Enum for registry value types as defined by [Registry value types](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).
+Enum for registry value types as defined by [Registry value types](/windows/desktop/sysinfo/registry-value-types).
 
 | Member            | Value | Description                                  |
 | :---------------- | :---- | :------------------------------------------- |
@@ -752,6 +883,15 @@ Possible values for user account types (group membership), per Windows definitio
 | standard      | 0     | Member of Standard Users group. |
 | power         | 1     | Member of Power Users group.    |
 | administrator | 2     | Member of Administrators group. |
+
+### chatMessagePolicyViolationDlpActionType values
+
+| Value |
+|:-----------------|
+| none |
+| NotifySender |
+| BlockAccess |
+| BlockAccessExternal |
 
 ### scopeOperatorMultiValuedComparisonType values
 
@@ -941,6 +1081,23 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
+
+### chatMessagePolicyViolationUserActionType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
+| Override | 1 | Sender has overridden the message verdict and sent the message anyway.|
+| ReportFalsePositive | 2 | Sender has reported the message verdict to the admins as a false positive.|
+
+### chatMessagePolicyViolationVerdictDetailsType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 |  User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive.|
+| AllowFalsePositiveOverride | 1 |  User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
+| AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
 
 ### entityType values
 
@@ -1189,18 +1346,114 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
-### openIdConnectResponseMode
-| Member                
+### userFlowType values
+
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwnerPasswordCredentialSignIn
+| unknownFutureValue
+
+### openIdConnectResponseMode values
+
+| Member
 |:----------------------
 | none
 | form_post
-| query 
-| unknownFutureValue 
+| query
+| unknownFutureValue
 
-### openIdConnectResponseTypes
-| Member                
+### openIdConnectResponseTypes values
+
+| Member
 |:----------------------
 | none
 | code
 | id_token
 | token
+
+### wellknownListName values
+
+| Member
+|:----------------------
+| none
+| defaultList
+| flaggedEmails
+| unknownFutureValue
+
+### taskStatus values
+
+| Member
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred
+
+### connectedOrganizationState values
+
+| Member                | Value | Description                                                                                                                                                                                                        |
+|:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| configured            | 0     | Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.                                                          |
+| proposed              | 1     | Connected Organizations that are automatically created by the system have this state value. They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.   |
+| unknownFutureValue    | 2     | A sentinel member.                                                                                                                                                                                                 |
+
+### identitySourceType values
+
+|Member|
+|:---|
+|azureActiveDirectory|
+|external|
+
+### externalGroupMemberType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### identityUserFlowAttributeDataType values
+
+| Member                | Value | Description                         |
+|:----------------------|:------|:------------------------------------|
+| string                | 1     | String data type                    |
+| boolean               | 2     | Boolean data type                   |
+| int64                 | 3     | Int data type                       |
+| stringCollection      | 4     | String collection data type         |
+| unknownFutureValue    | 5     | A sentinel member.                  |
+
+### identityUserFlowAttributeType values
+
+| Member                | Value | Description                                                        |
+|:----------------------|:------|:-------------------------------------------------------------------|
+| builtIn               | 1     | This user flow attribute type denotes it was created by the system |
+| custom                | 2     | This user flow attribute type denotes it was created by the user   |
+| unknownFutureValue    | 3     | A sentinel member.                                                 |
+
+### connectionState values
+
+|Member|
+|:---|
+|draft|
+|ready|
+|obsolete|
+|limitExceeded|
+
+### permissionClassificationType values
+
+| Member
+|:-------
+| low
+
+### permissionType values
+
+| Member
+|:-------------------------
+| application
+| delegated
+| delegatedUserConsentable

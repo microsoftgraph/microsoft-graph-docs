@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.TrustFramework.KeySets["{id}"]
+var trustFrameworkKey = await graphClient.TrustFramework.KeySets["{id}"]
 	.GetActiveKey()
 	.Request()
-	.PostAsync();
+	.GetAsync();
 
 ```

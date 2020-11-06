@@ -19,7 +19,6 @@ Returns the content appropriate for the context, including:
 
 - Device Configuration profile history reports.
 - Enrollment failure reports.
-- Microsoft 365 usage reports
 
 ## Properties
 |Property|Type|Description|
@@ -43,6 +42,8 @@ Here is a JSON representation of the resource.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
+
 
 
 

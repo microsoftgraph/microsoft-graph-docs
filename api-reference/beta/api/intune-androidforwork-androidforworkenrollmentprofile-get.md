@@ -3,7 +3,7 @@ title: "Get androidForWorkEnrollmentProfile"
 description: "Read properties and relationships of the androidForWorkEnrollmentProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -86,6 +86,8 @@ Content-Length: 719
   }
 }
 ```
+
+
 
 
 

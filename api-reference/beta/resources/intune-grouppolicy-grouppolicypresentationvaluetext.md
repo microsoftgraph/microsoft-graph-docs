@@ -3,7 +3,7 @@ title: "groupPolicyPresentationValueText resource type"
 description: "The entity represents a string value for a drop-down list, combo box, or text box presentation on a policy definition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -60,6 +60,8 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
+
+
 
 
 

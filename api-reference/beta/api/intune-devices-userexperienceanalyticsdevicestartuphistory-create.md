@@ -3,7 +3,7 @@ title: "Create userExperienceAnalyticsDeviceStartupHistory"
 description: "Create a new userExperienceAnalyticsDeviceStartupHistory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -62,6 +62,9 @@ The following table shows the properties that are required when you create the u
 |isFirstLogin|Boolean|The user experience analytics device first login.|
 |isFeatureUpdate|Boolean|The user experience analytics device boot record is a feature update.|
 |operatingSystemVersion|String|The user experience analytics device boot record's operating system version.|
+|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|OS restart category. Possible values are: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`.|
+|restartStopCode|String|OS restart stop code. This shows the bug check code which can be used to look up the blue screen reason.|
+|restartFaultBucket|String|OS restart fault bucket. The fault bucket is used to find additional information about a system crash.|
 
 
 
@@ -75,7 +78,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 Content-type: application/json
-Content-length: 533
+Content-length: 680
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -91,7 +94,10 @@ Content-length: 533
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
-  "operatingSystemVersion": "Operating System Version value"
+  "operatingSystemVersion": "Operating System Version value",
+  "restartCategory": "restartWithUpdate",
+  "restartStopCode": "Restart Stop Code value",
+  "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
 
@@ -100,7 +106,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 582
+Content-Length: 729
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -117,9 +123,14 @@ Content-Length: 582
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
-  "operatingSystemVersion": "Operating System Version value"
+  "operatingSystemVersion": "Operating System Version value",
+  "restartCategory": "restartWithUpdate",
+  "restartStopCode": "Restart Stop Code value",
+  "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
+
+
 
 
 

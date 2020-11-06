@@ -2,7 +2,7 @@
 title: "Filter: clear"
 description: "Clear the filter on the given column."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -73,7 +73,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -93,3 +93,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

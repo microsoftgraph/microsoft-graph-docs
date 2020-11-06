@@ -2,7 +2,7 @@
 title: "provisionedPlan resource type"
 description: "The **provisionedPlans** property of the user entity and the organization entity is a collection of **provisionedPlan**."
 localization_priority: Normal
-author: ""
+author: "davidmu1"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -51,3 +51,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

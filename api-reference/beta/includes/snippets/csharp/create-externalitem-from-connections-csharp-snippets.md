@@ -13,9 +13,16 @@ var externalItem = new ExternalItem
 		new Acl
 		{
 			Type = AclType.User,
-			Value = "49103559-feac-4575-8b94-254814dfca72",
+			Value = "e811976d-83df-4cbd-8b9b-5215b18aa874",
+			AccessType = AccessType.Grant,
+			IdentitySource = "azureActiveDirectory"
+		},
+		new Acl
+		{
+			Type = AclType.Group,
+			Value = "14m1b9c38qe647f6a",
 			AccessType = AccessType.Deny,
-			IdentitySource = "Azure Active Directory"
+			IdentitySource = "external"
 		}
 	},
 	Properties = new Properties
@@ -29,8 +36,8 @@ var externalItem = new ExternalItem
 	},
 	Content = new ExternalItemContent
 	{
-		Value = "<h1>Error in payment gateway</h1><p>Error details...</p>",
-		Type = ExternalItemContentType.Html
+		Value = "Error in payment gateway...",
+		Type = ExternalItemContentType.Text
 	}
 };
 

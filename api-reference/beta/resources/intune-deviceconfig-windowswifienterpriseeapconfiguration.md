@@ -3,7 +3,7 @@ title: "windowsWifiEnterpriseEAPConfiguration resource type"
 description: "This entity provides descriptions of the declared methods, properties and relationships exposed by the Wifi CSP."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -69,6 +69,9 @@ Inherits from [windowsWifiConfiguration](../resources/intune-deviceconfig-window
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Specify the authentication method. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Specify inner authentication protocol for EAP TTLS. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Specify the string to replace usernames for privacy when using EAP TTLS or PEAP.|
+|requireCryptographicBinding|Boolean|Specify whether to enable cryptographic binding when EAP type is selected as PEAP.|
+|performServerValidation|Boolean|Specify whether to enable verification of server's identity by validating the certificate when EAP type is selected as PEAP.|
+|disableUserPromptForServerValidation|Boolean|Specify whether to prevent the user from being prompted to authorize new servers for trusted certification authorities when EAP type is selected as PEAP.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -153,9 +156,14 @@ Here is a JSON representation of the resource.
   ],
   "authenticationMethod": "String",
   "innerAuthenticationProtocolForEAPTTLS": "String",
-  "outerIdentityPrivacyTemporaryValue": "String"
+  "outerIdentityPrivacyTemporaryValue": "String",
+  "requireCryptographicBinding": true,
+  "performServerValidation": true,
+  "disableUserPromptForServerValidation": true
 }
 ```
+
+
 
 
 

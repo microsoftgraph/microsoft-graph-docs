@@ -14,6 +14,14 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphTeam *team = [[MSGraphTeam alloc] init];
 [team setDisplayName:@"My Sample Team"];
 [team setDescription:@"My Sample Team’s Description"];
+NSMutableArray *membersList = [[NSMutableArray alloc] init];
+MSGraphConversationMember *members = [[MSGraphConversationMember alloc] init];
+NSMutableArray *rolesList = [[NSMutableArray alloc] init];
+[rolesList addObject: @"owner"];
+[members setRoles:rolesList];
+[members setUserId:@"0040b377-61d8-43db-94f5-81374122dc7e"];
+[membersList addObject: members];
+[team setMembers:membersList];
 
 NSError *error;
 NSData *teamData = [team getSerializedDataWithError:&error];

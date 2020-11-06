@@ -3,7 +3,7 @@ title: "Update macOSDeviceFeaturesConfiguration"
 description: "Update the properties of a macOSDeviceFeaturesConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,8 @@ The following table shows the properties that are required when you create the [
 |powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
 |logOutDisabledWhileLoggedIn|Boolean|Whether the Log Out menu item on the login window will be disabled while the user is logged in.|
 |screenLockDisableImmediate|Boolean|Whether to disable the immediate screen lock functions.|
-|associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Gets or sets a list that maps apps to their associated domains. The key should match the app's ID, and the value should be a string in the form of "service:domain" where domain is a fully qualified hostname (e.g. webcredentials:example.com). This collection can contain a maximum of 500 elements.|
+|associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|DEPRECATED: use appAssociatedDomains instead. Gets or sets a list that maps apps to their associated domains. The key should match the app's ID, and the value should be a string in the form of "service:domain" where domain is a fully qualified hostname (e.g. webcredentials:example.com). This collection can contain a maximum of 500 elements.|
+|appAssociatedDomains|[macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md) collection|Gets or sets a list that maps apps to their associated domains. Application identifiers must be unique. This collection can contain a maximum of 500 elements.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Gets or sets a single sign-on extension profile. Deprecated: use MacOSSingleSignOnExtension instead.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
 |contentCachingEnabled|Boolean|Enables content caching and prevents it from being disabled by the user.|
@@ -115,7 +116,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 5388
+Content-length: 5662
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -185,6 +186,16 @@ Content-length: 5388
       "@odata.type": "microsoft.graph.keyValuePair",
       "name": "Name value",
       "value": "Value value"
+    }
+  ],
+  "appAssociatedDomains": [
+    {
+      "@odata.type": "microsoft.graph.macOSAssociatedDomainsItem",
+      "applicationIdentifier": "Application Identifier value",
+      "domains": [
+        "Domains value"
+      ],
+      "directDownloadsEnabled": true
     }
   ],
   "singleSignOnExtension": {
@@ -286,7 +297,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5560
+Content-Length: 5834
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -359,6 +370,16 @@ Content-Length: 5560
       "@odata.type": "microsoft.graph.keyValuePair",
       "name": "Name value",
       "value": "Value value"
+    }
+  ],
+  "appAssociatedDomains": [
+    {
+      "@odata.type": "microsoft.graph.macOSAssociatedDomainsItem",
+      "applicationIdentifier": "Application Identifier value",
+      "domains": [
+        "Domains value"
+      ],
+      "directDownloadsEnabled": true
     }
   ],
   "singleSignOnExtension": {
@@ -454,6 +475,8 @@ Content-Length: 5560
   "contentCachingPort": 2
 }
 ```
+
+
 
 
 

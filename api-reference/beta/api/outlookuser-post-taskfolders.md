@@ -7,11 +7,14 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create outlookTaskFolder
+# Create outlookTaskFolder (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Create a task folder in the default task group (`My Tasks`) of the user's mailbox.
 
@@ -109,3 +112,5 @@ Content-length: 151
   ]
 }
 -->
+
+

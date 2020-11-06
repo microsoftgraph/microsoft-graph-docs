@@ -3,7 +3,7 @@ title: "Filter: apply"
 description: "Apply the given filter criteria on the given column."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 ---
 
@@ -95,7 +95,7 @@ Content-length: 321
 
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,3 +118,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

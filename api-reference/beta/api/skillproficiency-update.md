@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 PATCH /me/profile/skills/{id}
+PATCH /users/{id | userPrincipalName}/profile/skills/{id}
 ```
 
 ## Request headers
@@ -45,12 +46,14 @@ PATCH /me/profile/skills/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type            | Description                                                                                                                        |
-|:-------------|:----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-|categories    |String collection| Contains categories a user has associated with the skill (eg: personal, professional, hobby)                                       |
-|displayName   |String           | Contains a friendly name for the skill.                                                                                            |
-|proficiency   |string           | Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
-|webUrl        |String           | Contains a link to an information source about the skill.                                                                          |
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Contains categories a user has associated with the skill (for example, personal, professional, hobby). |
+|collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
+|displayName|String|Contains a friendly name for the skill. |
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|proficiency|skillProficiencyLevel|Detail of the users proficiency with this skill. Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
 
 ## Response
 
@@ -74,11 +77,9 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "Professional"
   ],
-  "displayName": "displayName-value",
-  "proficiency": "proficiency-value",
-  "webUrl": "webUrl-value"
+  "proficiency": "advancedProfessional"
 }
 ```
 # [C#](#tab/csharp)
@@ -113,21 +114,38 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
   "categories": [
-    "categories-value"
+    "Professional"
   ],
-  "displayName": "displayName-value",
-  "proficiency": "proficiency-value",
-  "webUrl": "webUrl-value"
+  "displayName": "API Design",
+  "proficiency": "advancedProfessional",
+  "webUrl": null,
+  "collaborationTags": [
+    "ableToMentor"
+  ]
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update skillproficiency",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

@@ -4,7 +4,7 @@ description: "Represents a history item for an activity in an app. User activiti
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: resourcePageType
-author: ""
+author: "ailae"
 ---
 
 # historyItem resource type
@@ -85,3 +85,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

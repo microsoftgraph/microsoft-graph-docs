@@ -31,11 +31,20 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/names
+GET /users/{id | userPrincipalName}/profile/names
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+|Name            |Value    |Description                                                                                                                                                                 |
+|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|$filter         |string   |Limits the response to only those objects which contain the specified criteria.                                                                                             |
+|$orderby        |string   |By default the objects in the response are sorted by their createdDateTime value in a query. You can change the order of the of the response using the *$orderby* parameter.|
+|$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                        |
+|$skip           |int      |Skip the first n results, useful for paging.                                                                                                                                |
+|$top            |int      |Number of results to be returned.                                                                                                                                           |
 
 ## Request headers
 
@@ -81,7 +90,6 @@ GET https://graph.microsoft.com/beta/me/profile/names
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
@@ -102,23 +110,47 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "first": "first-value",
-      "initials": "initials-value",
-      "last": "last-value",
-      "languageTag": "languageTag-value",
-      "maiden": "maiden-value"
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "displayName": "Innocenty Popov",
+      "first": "Innocenty",
+      "initials": "IP",
+      "last": "Popov",
+      "languageTag": "en-US",
+      "maiden": null,
+      "middle": null,
+      "nickname": "Kesha",
+      "suffix": null,
+      "title": null,
+      "pronunciation": {
+        "displayName": "In-no ken-te ",
+        "first": "In-no ken-te Pop-ov",
+        "maiden": null,
+        "middle": null,
+        "last": "Pop-ov"
+      }
     }
   ]
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List names",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

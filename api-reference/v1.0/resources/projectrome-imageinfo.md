@@ -3,7 +3,7 @@ title: "imageInfo resource type"
 description: "A complex type for representing the **attribution** property in the visualInfo part of the activity object."
 localization_priority: Normal
 ms.prod: "project-rome"
-author: ""
+author: "ailae"
 doc_type: resourcePageType
 ---
 
@@ -53,3 +53,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

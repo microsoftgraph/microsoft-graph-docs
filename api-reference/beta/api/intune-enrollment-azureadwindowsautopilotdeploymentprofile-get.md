@@ -3,7 +3,7 @@ title: "Get azureADWindowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the azureADWindowsAutopilotDeploymentProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -105,6 +105,8 @@ Content-Length: 1416
   }
 }
 ```
+
+
 
 
 

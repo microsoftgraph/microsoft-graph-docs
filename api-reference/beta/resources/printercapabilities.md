@@ -20,7 +20,7 @@ Represents the capabilities reported by a printer.
 |:-------------|:------------|:------------|
 |contentTypes|String collection|A list of supported content (MIME) types that the printer supports. It is not guaranteed that the Universal Print service supports printing all of these MIME types.|
 |isColorPrintingSupported|Boolean|True if color printing is supported by the printer; false otherwise. Read-only.|
-|feedDirections|printerFeedDirection collection|The list of feed directions that are supported by the printer.|
+|feedOrientations|printerFeedOrientation collection|The list of feed orientations that are supported by the printer.|
 |isPageRangeSupported|Boolean|True if the printer supports printing by page ranges; false otherwise.|
 |qualities|printQuality collection|The print qualities supported by the printer.|
 |dpis|Int32 collection|The list of print resolutions in DPI that are supported by the printer.|
@@ -45,7 +45,7 @@ Represents the capabilities reported by a printer.
 |collation|Boolean|True if the printer supports collating when printing muliple copies of a multi-page document; false otherwise.|
 |scalings|printScaling collection|Supported print scalings.|
 
-## printerFeedDirection values
+## printerFeedOrientation values
 
 |Member|Value|Description|
 |:---|:---|
@@ -153,7 +153,7 @@ The following is a JSON representation of the resource.
 {
   "contentTypes": [""],
   "isColorPrintingSupported": true,
-  "feedDirections": [{"@odata.type": "microsoft.graph.printerFeedDirection"}],
+  "feedOrientations": [{"@odata.type": "microsoft.graph.printerFeedOrientation"}],
   "isPageRangeSupported": true,
   "qualities": [{"@odata.type": "microsoft.graph.printQuality"}],
   "dpis": [12345],
@@ -190,3 +190,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

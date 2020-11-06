@@ -15,53 +15,68 @@ Namespace: microsoft.graph
 
 Represents detailed information about email addresses associated with the user.
 
-## Methods
+Inherits from [itemFacet](../resources/itemfacet.md).
 
-| Method                                   | Return Type               | Description                                                      |
-|:-----------------------------------------|:--------------------------|:-----------------------------------------------------------------|
-| [Get](../api/itememail-get.md)           | [itemEmail](itememail.md) | Read properties and relationships of an **itemEmail** object.    |
-| [Update](../api/itememail-update.md)     | [itemEmail](itememail.md) | Update an **itemEmail** object.                                  |
-| [Delete](../api/itememail-delete.md)     | None                      | Delete an **itemEmail** object.                                  |
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List emails](../api/profile-list-emails.md)|[itemEmail](../resources/itememail.md) collection|Get the itemEmail resources from the emails navigation property.|
+|[Create itemEmail](../api/profile-post-emails.md)|[itemEmail](../resources/itememail.md)|Create a new itemEmail object.|
+|[Get itemEmail](../api/itememail-get.md)|[itemEmail](../resources/itememail.md)|Read the properties and relationships of an [itemEmail](../resources/itememail.md) object.|
+|[Update itemEmail](../api/itememail-update.md)|[itemEmail](../resources/itememail.md)|Update the properties of an [itemEmail](../resources/itememail.md) object.|
+|[Delete itemEmail](../api/itememail-delete.md)|None|Deletes an [itemEmail](../resources/itememail.md) object.|
 
 ## Properties
-
-| Property     | Type        | Description                                                               |
-|:-------------|:------------|:--------------------------------------------------------------------------|
-|address       |String       | The email address itself.                                                 |
-|displayName   |String       | The name or label a user has associated with a particular email address.  |
-|type          |string       | Possible values are: `unknown`, `work`, `personal`, `main`, `other`.      |
+|Property|Type|Description|
+|:---|:---|:---|
+|address|String|The email address itself.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
+|displayName|String|The name or label a user has associated with a particular email address.|
+|id|String|Identifier used for individually addressing the entity. Inherited from [entity](../resources/entity.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+|type|emailType|The type of email address. Possible values are: `unknown`, `work`, `personal`, `main`, `other`.|
 
 ## Relationships
-
-None
+None.
 
 ## JSON representation
-
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.itemEmail",
-  "baseType": ""
-}-->
-
-```json
+  "baseType": "microsoft.graph.itemFacet",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.itemEmail",
+  "id": "0f30bf5d-bf5d-0f30-5dbf-300f5dbf300f",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
   "address": "String",
   "displayName": "String",
-  "type": "string"
+  "type": "String"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "itemEmail resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

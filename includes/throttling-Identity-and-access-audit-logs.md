@@ -9,7 +9,6 @@ ms.topic: include
 
 | Request type | Limit per app per tenant |
 | ------------ | ------- |
-| /auditLogs/directoryAudits | 25 requests per 10 seconds |
 | Any | 100 requests per 10 seconds |
 
 The preceding limits apply to the following resources:  

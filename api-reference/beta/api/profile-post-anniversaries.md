@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/profile/anniversaries 
+POST /me/profile/anniversaries
+POST /users/{id | userPrincipalName}/profile/anniversaries
 ```
 
 ## Request headers
@@ -43,6 +44,16 @@ POST /me/profile/anniversaries
 ## Request body
 
 In the request body, supply a JSON representation of [personAnniversary](../resources/personanniversary.md) object.
+
+The following table shows the properties that are possible to set within a new **personAnniversary**** object in a user's [profile](../resources/profile.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|date|Date|Contains the date associated with the anniversary type.|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+|type|anniversaryType|The type of anniversary the date represents. Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## Response
 
@@ -65,8 +76,8 @@ POST https://graph.microsoft.com/beta/me/profile/anniversaries
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "type": "birthday",
+  "date": "1980-01-08"
 }
 ```
 # [C#](#tab/csharp)
@@ -82,7 +93,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -101,17 +111,30 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "type": "birthday",
+  "date": "Date"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create personAnniversary",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

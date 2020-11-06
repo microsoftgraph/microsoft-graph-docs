@@ -22,3 +22,5 @@ The following Graph resources are available to manage telecom expenses in Intune
 
 
 
+
+

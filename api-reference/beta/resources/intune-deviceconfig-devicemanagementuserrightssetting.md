@@ -3,7 +3,7 @@ title: "deviceManagementUserRightsSetting resource type"
 description: "Represents a user rights setting."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -47,6 +47,8 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
 
 
 

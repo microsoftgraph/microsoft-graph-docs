@@ -20,16 +20,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | File.Read.All, Group.Read.All, File.ReadWrite.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | File.Read.All, Group.Read.All, File.ReadWrite.All, Group.ReadWrite.All     |
+|Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/filesFolder
-
 ```
 
 ## Optional query parameters
@@ -93,6 +92,7 @@ Content-length: 401
     "id": "01H7CFEKENJSSIUHGADZBKODARINQC5JMD",
     "createdDateTime": "0001-01-01T00:00:00Z",
     "lastModifiedDateTime": "2020-01-23T18:47:13Z",
+    "lastEditedDateTime": null,
     "name": "Documentation Planning",
     "webUrl": "https://microsoft.sharepoint.com/teams/ExtensibilityandFundamentals/Shared%20Documents/Documentation%20Planning",
     "size": 2374080,
@@ -102,7 +102,7 @@ Content-length: 401
     },
     "fileSystemInfo": {
         "createdDateTime": "2020-01-23T18:47:12Z",
-        "lastModifiedDateTime": "2020-01-23T18:47:13Z"
+        "lastModifiedDateTime": "2020-01-23T18:47:13Z",
     },
     "folder": {
         "childCount": 7
@@ -121,4 +121,6 @@ Content-length: 401
   "suppressions": [
   ]
 }-->
+
+
 

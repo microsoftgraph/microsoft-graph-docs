@@ -3,7 +3,7 @@ title: "vpnProviderType enum type"
 description: "Provider type for per-app VPN."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,6 +23,8 @@ Provider type for per-app VPN.
 |notConfigured|0|Tunnel traffic is not explicitly configured.|
 |appProxy|1|Tunnel traffic at the application layer.|
 |packetTunnel|2|Tunnel traffic at the IP layer.|
+
+
 
 
 

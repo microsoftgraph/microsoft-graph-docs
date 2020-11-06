@@ -3,7 +3,7 @@ title: "safeSearchFilterType enum type"
 description: "Specifies what level of safe search (filtering adult content) is required"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -21,6 +21,8 @@ Specifies what level of safe search (filtering adult content) is required
 |userDefined|0|User Defined, default value, no intent.|
 |strict|1|Strict, highest filtering against adult content.|
 |moderate|2|Moderate filtering against adult content (valid search results will not be filtered).|
+
+
 
 
 

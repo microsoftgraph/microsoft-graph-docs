@@ -40,7 +40,7 @@ By default, all review set fields are returned; however, you can specify certain
 Because a request can return many cases, you can filter them by using **displayName**.  To filter by **displayName**, add the following to your query: `$filter=displayName eq 'rs1'`, where the review set name is rs1.
 
 For more information about filtering and specifying fields, see [Using Filter Expressions in OData URIs
-](https://docs.microsoft.com/dynamics-nav/using-filter-expressions-in-odata-uris).
+](/dynamics-nav/using-filter-expressions-in-odata-uris).
 
 ## Request headers
 

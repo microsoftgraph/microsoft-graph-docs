@@ -18,7 +18,7 @@ Each national cloud environment is unique and different than the Microsoft globa
 
 This article provides information about the different Microsoft Graph national cloud deployments and the capabilities that are available to developers within each.
 
->**Note:** [Microsoft Graph data connect](https://docs.microsoft.com/graph/data-connect-concept-overview?view=graph-rest-1.0) does not support any of the national cloud deployments. 
+>**Note:** [Microsoft Graph data connect](./data-connect-concept-overview.md?view=graph-rest-1.0) does not support any of the national cloud deployments. 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
@@ -33,7 +33,7 @@ Before calling the Microsoft Graph APIs, you should first register your applicat
 |Azure AD Germany |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |Azure AD China operated by 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 
-To learn more about Azure AD access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
+To learn more about Azure AD access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](/azure/active-directory/develop/authentication-scenarios).
 
 
 ## Microsoft Graph and Graph Explorer service root endpoints
@@ -83,10 +83,10 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Service principals  |✔| ➖ |➖|
 | Change notifications (webhooks)  | ✔ |✔ |✔* |
 | Delta query | ✔ | ✔ | ➖ |
-| Directory schema extensions |✔|➖|➖|
+| Directory schema extensions |✔|✔|➖|
 | Open type extensions|➖|➖|➖|
   
-The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are availalbe in Microsoft Cloud for US Government only):
+The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
 
 * Organizational contacts
 * Applications
@@ -100,9 +100,9 @@ The following Microsoft Graph features are available in preview (on the `/beta` 
 
 To learn more about National clouds, see the following topics:
 - [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
-- [Microsoft 365 for US Government](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-- [Microsoft 365 operated by 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
-- [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
+- [Microsoft 365 for US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [Microsoft 365 operated by 21Vianet](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+- [Office 365 Germany](/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
-- [Azure China 21Vianet](https://docs.microsoft.com/azure/china/)
-- [Azure Germany](https://docs.microsoft.com/azure/germany/)
+- [Azure China 21Vianet](/azure/china/)
+- [Azure Germany](/azure/germany/)

@@ -94,7 +94,6 @@ Prefer: respond-async
       "type": "String",
       "isQueryable": "true",
       "isRetrievable": "true",
-      "isRefinable": "true",
       "isSearchable": "false"
     },
     {
@@ -144,3 +143,5 @@ Location: https://graph.microsoft.com/beta/external/connections/contosohr/operat
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

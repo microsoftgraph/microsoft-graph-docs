@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/{id}/members/$ref
-
 ```
 ## Request headers
 | Name       | Type | Description|
@@ -86,8 +85,6 @@ Note: The response object shown here may be truncated for brevity.
 } -->
 ```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -101,3 +98,4 @@ Content-type: text/plain
   "suppressions": [
   ]
 }-->
+

@@ -3,7 +3,7 @@ title: "managedDeviceCleanupSettings resource type"
 description: "Define the rule when the admin wants the devices to be cleaned up."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -38,6 +38,8 @@ Here is a JSON representation of the resource.
   "deviceInactivityBeforeRetirementInDays": "String"
 }
 ```
+
+
 
 
 

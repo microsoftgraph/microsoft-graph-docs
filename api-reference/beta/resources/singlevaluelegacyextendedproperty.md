@@ -4,7 +4,7 @@ description: "An extended property that contains a single value. "
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "svpsiva"
 ---
 
 # singleValueLegacyExtendedProperty resource type
@@ -13,10 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An extended property that contains a single value. 
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
-open extensions or extended properties, and how to specify extended properties. 
+An extended property that contains a single value.
+
+See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
+open extensions or extended properties, and how to specify extended properties.
 
 
 ## Methods
@@ -68,3 +70,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

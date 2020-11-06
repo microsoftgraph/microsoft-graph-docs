@@ -2,7 +2,7 @@
 title: "licenseUnitsDetail resource type"
 description: "The **prepaidUnits** property of the subscribedSku entity is of type **licenseUnitsDetail**."
 localization_priority: Normal
-author: ""
+author: "krbain"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -50,3 +50,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

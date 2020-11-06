@@ -1,5 +1,5 @@
 ---
-title: "Permissions"
+title: "Publish teamsapp"
 description: "Publish an app to the Microsoft Teams apps catalog. "
 author: "nkramer"
 localization_priority: Normal
@@ -7,19 +7,17 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Publish apps to your organization's app catalog
+# Publish teamsapp
 
 Namespace: microsoft.graph
 
-
-
 Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);
-the created resource will have `distributionMethod` = `organization`.
+the created resource will have a **distributionMethod** property value of `organization`.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 >**Note:** Only global administrators can call this API.
 
@@ -40,21 +38,23 @@ POST /appCatalogs/teamsApps
 | Header        | Value           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Required.  |
-| Content-Type  | application/zip |
+| Content-Type  | application/zip. Required. |
 
 ## Request body
 
-Teams Zip Manifest Payload.
-For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
-You can't create an app for an organization that has the same manifest ID as another app in that organization.
+In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
+
+Each app in the app catalog must have a unique manifest id.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamsapp.md) object.
+If successful, this method returns a `200 OK` response code and a [teamsApp](../resources/teamsapp.md) object.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Publish an app to the app catalog
+
+#### Request
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
@@ -66,9 +66,15 @@ Content-length: 244
 
 For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 
-### Response
+#### Response
 
-```
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true
+} -->
+
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

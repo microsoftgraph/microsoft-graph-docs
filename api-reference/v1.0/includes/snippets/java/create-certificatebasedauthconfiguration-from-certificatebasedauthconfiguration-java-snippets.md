@@ -14,7 +14,7 @@ certificateAuthorities.certificate = "Binary";
 certificateAuthoritiesList.add(certificateAuthorities);
 certificateBasedAuthConfiguration.certificateAuthorities = certificateAuthoritiesList;
 
-graphClient.organization("{id}").certificateBasedAuthConfiguration()
+graphClient.organization("{id}").certificateBasedAuthConfiguration().references()
 	.buildRequest()
 	.post(certificateBasedAuthConfiguration);
 

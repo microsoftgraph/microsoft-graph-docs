@@ -21,9 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Delegated (work or school account)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Application| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 ## HTTP request
 
@@ -33,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /teams/{teamsId}/members
+GET /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## Optional query parameters
@@ -117,3 +120,5 @@ Content-Type: application/json
     ]
 }
 ```
+
+

@@ -3,7 +3,7 @@ title: "Get iosVppAppAssignedLicense"
 description: "Read properties and relationships of the iosVppAppAssignedLicense object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -76,6 +76,8 @@ Content-Length: 314
   }
 }
 ```
+
+
 
 
 

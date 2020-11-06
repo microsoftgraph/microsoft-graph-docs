@@ -3,12 +3,16 @@ title: "App migration planning checklist"
 description: "Checklist for migrating your apps from Azure AD Graph to Microsoft Graph"
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "azure-active-directory"
 ---
 
 # App migration planning checklist
 
-Use the following checklist to plan your migration:
+> [!Important]
+> Azure AD Graph API is now deprecated. We will continue to provide technical support and security updates but will no longer provide feature updates.
+> Starting June 30th, 2022, we will end support for Azure AD Graph and will no longer provide technical support or security updates. Apps using Azure AD Graph after this time will no longer receive responses from the Azure AD Graph endpoint.
+
+Use the following checklist to plan your migration.
 
 ## Step 1: Review the differences between the APIs
 
@@ -46,11 +50,8 @@ Before updating your app for everyone, ensure you test thoroughly and stage your
 
 Now you've made the switch to Microsoft Graph, it's never been easier for you to unlock many more datasets and features that are now at your fingertips. You can get a taste of what's possible by looking at some [examples](/graph/examples).
 
-If you're currently using the [AD authentication library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), consider switching to the [Microsoft authentication library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL).
+If you're currently using the [AD authentication library](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), consider switching to the [Microsoft authentication library](/azure/active-directory/develop/reference-v2-libraries) (MSAL).
 
 ## Next Steps
 
-- Learn about [resquest call syntax](migrate-azure-ad-graph-request-differences.md) to start step 1: reviewing API differences.
-- Explore [Microsoft Graph](/graph/overview) concepts and practices.
-- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
-- To learn more about progress updates and timelines, see [Microsoft Graph or the Azure AD Graph](https://developer.microsoft.com/en-us/graph/blogs/microsoft-graph-or-azure-ad-graph/).
+- Learn about [request call syntax](migrate-azure-ad-graph-request-differences.md) to start step 1: reviewing API differences.

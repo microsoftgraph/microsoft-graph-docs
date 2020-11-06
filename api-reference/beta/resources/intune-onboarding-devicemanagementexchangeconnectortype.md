@@ -3,7 +3,7 @@ title: "deviceManagementExchangeConnectorType enum type"
 description: "The type of Exchange Connector."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -24,6 +24,8 @@ The type of Exchange Connector.
 |hosted|1|Connects to O365 multi-tenant Exchange environment|
 |serviceToService|2|Intune Service connects directly to O365 multi-tenant Exchange environment|
 |dedicated|3|Connects to O365 Dedicated Exchange environment.|
+
+
 
 
 
