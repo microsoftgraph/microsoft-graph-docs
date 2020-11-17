@@ -451,6 +451,8 @@ items:
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways (preview)
                 href: change-notifications-delivery.md
+              - name: Get change notifications for chat and channel messages
+                href: teams-changenotifications-chatmessage.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
@@ -549,6 +551,8 @@ items:
             items:
               - name: Overview
                 href: toolkit/get-started/overview.md
+              - name: Create an Azure Active Directory app
+                href: toolkit/get-started/add-aad-app-registration.md
               - name: Build a web application (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
               - name: Build a SharePoint web part

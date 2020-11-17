@@ -265,6 +265,10 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-delta-calendarview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -465,7 +469,7 @@ Content-type: application/json
 }
 ```
 
-### See also
+## See also
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
 - [Get incremental changes to events in a folder](/graph/delta-query-events)

@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/termStore/sets/{setId}/relations
 [!INCLUDE [sample-code](../includes/snippets/objc/get-relation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-relation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
+The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
 
 OneDrive users will always have at least one drive available, their default drive.
 Users without a OneDrive license may not have a default drive available.

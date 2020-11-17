@@ -1,17 +1,20 @@
 ---
-title: "Azure AD access reviews"
-description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights."
+title: "Azure AD access reviews (all resources)"
+description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights. This documentation serves the legacy APIs."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews
+# Azure AD access reviews (all resources)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!NOTE]
+>For access review APIs that apply to group memberships, see [Access Reviews (group memberships)](accessreviewsv2-root.md). These access review APIs apply to all other resource types.
 
 You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 
@@ -66,11 +69,11 @@ The following directory roles are required for a calling user to manage access r
 
 | Target resource | Operation | Application permissions | Required directory role of the calling user |
 |:----------------|:------------------|:------------|:--------------------------------------------|
-|[accessReview](accessreview.md) of an Azure AD role | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or Privileged Role Administrator |
+|[accessReview](accessreview.md) of an Azure AD role | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or Privileged Role Administrator |
 |[accessReview](accessreview.md) of an Azure AD role | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or Privileged Role Administrator |
-|[accessReview](accessreview.md) of a group or app | Read | AccessReview.Read.All, AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or User Administrator |
+|[accessReview](accessreview.md) of a group or app | Read | AccessReview.Read.All, AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
 |[accessReview](accessreview.md) of a group or app | Create, Update or Delete | AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator or User Administrator |
-| [program](program.md) and [programControl](programcontrol.md)| Read | ProgramControl.Read.All or ProgramControl.ReadWrite.All |  Global Administrator, Security Administrator, Security Reader or User Administrator |
+| [program](program.md) and [programControl](programcontrol.md)| Read | ProgramControl.Read.All or ProgramControl.ReadWrite.All |  Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
 | [program](program.md) and [programControl](programcontrol.md) | Create, Update or Delete | ProgramControl.ReadWrite.All | Global Administrator or User Administrator |
 
 In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.

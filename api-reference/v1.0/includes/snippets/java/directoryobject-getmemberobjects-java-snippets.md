@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-boolean securityEnabledOnly = true;
+Boolean securityEnabledOnly = true;
 
 graphClient.directoryObjects("{object-id}")
 	.getMemberObjects(securityEnabledOnly)

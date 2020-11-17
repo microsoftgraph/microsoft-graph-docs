@@ -107,6 +107,10 @@ Content-length: 285
 [!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-room-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -181,7 +185,7 @@ PATCH https://graph.microsoft.com/beta/places/Building1RroomList@contoso.onmicro
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.roomlist",
+  "@odata.type": "microsoft.graph.roomList",
   "displayName": "Building 1",
   "phone":"555-555-0100",
   "address": {
@@ -210,6 +214,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

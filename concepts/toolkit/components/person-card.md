@@ -101,6 +101,24 @@ mgt-person {
 
 To learn more, see [styling components](../style.md).
 
+## Global component configuration
+
+The `MgtPersonCard` class exposes a static `config` object that configures all person card components in the application.
+
+The following example shows how to use the config object.
+
+```ts
+import { MgtPersonCard } from `@microsoft/mgt`;
+
+MgtPersonCard.config.useContactApis = false;
+```
+
+The following properties are available on the config object:
+
+| Property | Description |
+| ------------ | ------------- |
+| useContactApis | `boolean` - Whether the person card component can use the Microsoft Graph Contact API to search for contact details and photos - default is `true`.  |
+
 ## Microsoft Graph permissions
 
 This component uses the [Person component](./person.md) to display the user and inherits all permissions. 

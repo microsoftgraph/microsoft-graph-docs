@@ -61,7 +61,7 @@ This format can also be used inside attributes:
 </template>
 ```
 
-> **Note:** You can also expand objects such as `{{event}}` and they will render as JSON strings. This can be useful when you're developing the templates.
+> **Note:** You can also expand objects such as `{{event}}` or `{{this}}` and they will render as JSON strings. This can be useful when you're developing the templates.
 
 ### Change binding syntax
 

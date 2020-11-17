@@ -50,6 +50,11 @@ The following example changes the behavior of the component to fetch data from a
   ></mgt-agenda>
 ```
 
+## Methods
+| Method | Description |
+| --- | --- |
+| reload() | Call the method to reload the component with potential new data based on its properties. |
+
 ## CSS custom properties
 
 The `mgt-agenda` component defines these CSS custom properties

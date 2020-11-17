@@ -8,8 +8,8 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 int index = 3;
 
-LinkedList<Json> valuesList = new LinkedList<Json>();
-Json values = new Json();
+LinkedList<JsonElement> valuesList = new LinkedList<JsonElement>();
+JsonElement values = new JsonObject();
 
 valuesList.add(values);
 

@@ -13,7 +13,7 @@ homeAddress.city = "Seattle";
 homeAddress.state = "WA";
 homeAddress.postalCode = "98121";
 contact.homeAddress = homeAddress;
-contact.birthday = "1974-07-22";
+contact.birthday = CalendarSerializer.deserialize("1974-07-22");
 
 graphClient.me().contacts("{id}")
 	.buildRequest()

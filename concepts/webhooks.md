@@ -40,6 +40,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [callRecord][]
 - Teams [chatMessage][]
 - Teams [presence][] (preview)
+- Print [printTaskDefinition][]
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -164,7 +165,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-1. The client must properly decode the `validationToken` provided in the preceding step, and escape any HTML/JavaScript.
+1. The client must properly URL decode the `validationToken` query parameter provided in the preceding step, and escape any HTML/JavaScript.
 
    Escaping is a good practice because malicious actors can use the notification endpoint for cross-site scripting type of attacks.
 
@@ -174,7 +175,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
     - A status code of `HTTP 200 OK`.
     - A content type of `text/plain`.
-    - A body that includes the _decoded_ validation token.
+    - A body that includes the _URL decoded_ validation token. Simply reflect back the same string that was sent in the `validationToken` query parameter.
 
     The client should discard the validation token after providing it in the response.
 
@@ -295,6 +296,7 @@ The following table lists the latency to expect between an event happening in th
 |[message][] | Unknown | Unknown |
 |[alert][] | Less than 3 minutes | 5 minutes |
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[printTaskDefinition][] | Less than 1 minute | 5 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
 
 >**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
@@ -321,3 +323,4 @@ The following table lists the latency to expect between an event happening in th
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[printTaskDefinition]: /graph/api/resources/printtaskdefinition

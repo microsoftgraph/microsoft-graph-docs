@@ -66,7 +66,7 @@ Instance attributes are properties with special behaviors. These properties are 
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.teamCreationMode|string|Indicates that the team is in migration state and is currently being used for migration purposes. It accepts one value: `migration`.|
 
-For a POST request example, see [Request (create team in migration state)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state).
+For a POST request example, see [Request (create team in migration state)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## Relationships
 

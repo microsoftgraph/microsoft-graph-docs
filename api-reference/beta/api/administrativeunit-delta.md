@@ -89,7 +89,7 @@ For details and an example, see [Using delta query](/graph/delta-query-overview)
   "name": "administrativeunit_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/administrativeunits/delta
+GET https://graph.microsoft.com/beta/administrativeUnits/delta
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/administrativeunit-delta-csharp-snippets.md)]
@@ -101,6 +101,10 @@ GET https://graph.microsoft.com/beta/administrativeunits/delta
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/administrativeunit-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/administrativeunit-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

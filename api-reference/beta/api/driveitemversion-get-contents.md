@@ -74,6 +74,10 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 [!INCLUDE [sample-code](../includes/snippets/objc/get-version-contents-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-version-contents-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

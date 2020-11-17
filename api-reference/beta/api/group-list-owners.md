@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/owners
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-owners-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-get-owners-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

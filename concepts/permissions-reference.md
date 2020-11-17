@@ -531,6 +531,34 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _ChatMessage.Send_ (private preview) | Send user chat messages | Allows an app to send 1:1 and group chat messages in Microsoft Teams, on behalf of the signed-in user. | No | No |
 
+---
+
+## Cloud PC permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_CloudPC.Read.All_ | Read Cloud PCs | Allows the app to read Cloud PC objects such as provisioning policies, on behalf of the signed-in user. | No | No |
+|_CloudPC.ReadWrite.All_ | Read and write Cloud PCs | Allows the app to create, read, update, and delete Cloud PC objects such as on-premises connections, provisioning policies, and device images, on behalf of the user. | Yes | No |
+
+#### Application permissions
+
+None.
+
+### Example usage
+
+#### Delegated
+
+* _CloudPC.Read.All_: View the properties of all Cloud PCs (`GET /deviceManagement/virtualEndpoint/cloudPCs`).
+* _CloudPC.ReadWrite.All_: Edit the Cloud PC provisioning policy (`PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}`).
+
+#### Application
+
+None.
+
+---
+
 ## Cloud printing permissions
 
 #### Application permissions
@@ -1554,7 +1582,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _RoleManagement.Read.All_ | Read role management data for all RBAC providers | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](https://docs.microsoft.com/graph/api/resources/rolemanagement?view=graph-rest-beta), on behalf of the signed-in user. This includes reading role definitions and role assignments. | Yes | No |
+| _RoleManagement.Read.All_ | Read role management data for all RBAC providers | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta), on behalf of the signed-in user. This includes reading role definitions and role assignments. | Yes | No |
 | _RoleManagement.Read.Directory_ | Read role management data for Azure AD | Allows the app to read the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes | No |
 | _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes | No |
 
@@ -1562,7 +1590,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _RoleManagement.Read.All_ | Read role management data for all RBAC providers | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](https://docs.microsoft.com/graph/api/resources/rolemanagement?view=graph-rest-beta), without a signed-in user. This includes reading role definitions and role assignments. | Yes |
+| _RoleManagement.Read.All_ | Read role management data for all RBAC providers | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta), without a signed-in user. This includes reading role definitions and role assignments. | Yes |
 | _RoleManagement.Read.Directory_ | Read role management data for Azure AD | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes |
 | _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes |
 

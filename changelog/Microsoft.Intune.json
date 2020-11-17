@@ -38,7 +38,7 @@
       "Id": "bfd56b1b-1c1f-445d-ba7e-0280fd1fad7c",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-01T00:00:00",
+      "CreatedDateTime": "2020-10-15T00:00:00",
       "WorkloadArea": "Applications",
       "SubArea": ""
     },
@@ -72,7 +72,7 @@
       "Id": "bfd56b1b-1c1f-445d-ba7e-0280fd1fad7c",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-10-01T00:00:00",
+      "CreatedDateTime": "2020-10-15T00:00:00",
       "WorkloadArea": "Applications",
       "SubArea": ""
     },
@@ -226,7 +226,7 @@
       "Id": "ed30cbb7-490f-4371-a82f-19352612d6ea",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-01T00:00:00",
+      "CreatedDateTime": "2020-10-15T00:00:00",
       "WorkloadArea": "Devices and apps ",
       "SubArea": " Cloud printing"
     },
@@ -428,7 +428,7 @@
       "Id": "0fd98180-ae87-4014-99aa-820bc1543f6a",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-01T00:00:00",
+      "CreatedDateTime": "2020-10-15T00:00:00",
       "WorkloadArea": "Devices and apps ",
       "SubArea": " Corporate management"
     },

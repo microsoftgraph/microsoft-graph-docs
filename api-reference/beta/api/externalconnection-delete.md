@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/connections/contosohr
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-connection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

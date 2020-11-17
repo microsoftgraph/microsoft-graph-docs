@@ -85,7 +85,7 @@ The following is the configuration.
 
 ### Example: Create a configured document library tab
 
-The following example creates a configured Word tab.
+The following example creates a configured document library tab.
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
@@ -104,13 +104,13 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 ## Wiki tabs
 
 For wiki tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.wiki`.
-Wiki tabs do not support configuration through Graph.
-Note, however, that there isn't much to configure --
-in an un-configured wiki tab, the first user just needs to select **Set up tab** to configure it.
+Wiki tabs do not support configuration through Microsoft Graph.
+Note, however, that there isn't much to configure -
+in an unconfigured wiki tab, the first user just needs to select **Set up tab** to configure it.
 
 ## Planner tabs
 
-For Planner tabs, the teamsAppId is `com.microsoft.teamspace.tab.planner`. 
+For Planner tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.planner`. 
 Configuration is not supported.
 
 ## Microsoft Stream tabs

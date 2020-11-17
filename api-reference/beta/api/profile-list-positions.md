@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/me/profile/positions
 [!INCLUDE [sample-code](../includes/snippets/objc/get-positions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-positions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

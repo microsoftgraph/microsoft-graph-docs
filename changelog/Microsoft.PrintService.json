@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser",
           "ChangeType": "Change",
-          "Description": "Added new permission requirements to: \u003Cul\u003E\u003Cli\u003E[Get printUsageSummaryByPrinter](/graph/api/printusagesummarybyprinter-get.md?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[getPrinterArchivedPrintJobs](/graph/api/reports-getprinterarchivedprintjobs.md?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter.md?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter.md?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Get printUsageSummaryByUser](/graph/api/printusagesummarybyuser-get.md?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[getUserArchivedPrintJobs](/graph/api/reports-getuserarchivedprintjobs.md?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[getGroupArchivedPrintJobs](/graph/api/reports-getgrouparchivedprintjobs.md?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser.md?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[List monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser.md?view=graph-rest-beta)\u003C/li\u003E\u003C/ul\u003E",
+          "Description": "Added new permission requirements to: [Get printUsageSummaryByPrinter](https://docs.microsoft.com/en-us/graph/api/printusagesummarybyprinter-get?view=graph-rest-beta), [getPrinterArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByPrinter](https://docs.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyprinter?view=graph-rest-beta), [List monthlyPrintUsageSummariesByPrinter](https://docs.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta), [Get printUsageSummaryByUser](https://docs.microsoft.com/en-us/graph/api/printusagesummarybyuser-get?view=graph-rest-beta), [getUserArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta), [getGroupArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByUser](https://docs.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta), [List monthlyPrintUsageSummariesByUser](https://docs.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyuser?view=graph-rest-beta)",
           "Target": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedUsers",
           "ChangeType": "Change",
-          "Description": "Removed **allowedUsers** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Removed the **allowedUsers** property on the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedGroups",
           "ChangeType": "Change",
-          "Description": "Removed **allowedGroups** property on [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Removed the **allowedGroups** property on the [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         }        
       ],

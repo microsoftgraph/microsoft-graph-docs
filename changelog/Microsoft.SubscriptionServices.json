@@ -5,16 +5,34 @@
         {
           "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
           "ApiChange": "Resource",
+          "ChangedApiName": "printTaskDefinition, change notifications",
+          "ChangeType": "Addition",
+          "Description": "Added [printTaskDefinition](https://docs.microsoft.com/en-us/graph/api/resources/printtaskdefinition?view=graph-rest-beta) to the resources supported for [change notifications](https://docs.microsoft.com/en-us/graph/webhooks).",
+          "Target": "printTaskDefinition, change notifications"
+        }
+      ],
+      "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-04T00:00:00",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
+          "ApiChange": "Resource",
           "ChangedApiName": "lifecycle notifications,chatMessage,contact,event,message",
           "ChangeType": "Addition",
-          "Description": "Added [lifecycle notifications](./webhooks-lifecycle.md) for personal [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0), [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0), and [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0).",
+          "Description": "Added [lifecycle notifications](https://docs.microsoft.com/en-us/graph/webhooks-lifecycle) for personal [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0), [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0), and [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0).",
           "Target": "lifecycle notifications,chatMessage,contact,event,message"
         }
       ],
       "Id": "4db99971-9137-4010-aa6b-7a53dbfb0c23",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-10-01T00:00:00",
+      "CreatedDateTime": "2020-10-15T00:00:00",
       "WorkloadArea": "Change notifications",
       "SubArea": ""
     },

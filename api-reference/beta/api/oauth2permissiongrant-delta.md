@@ -32,7 +32,7 @@ To begin tracking changes, you make a request including the delta function on th
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /oauth2permissiongrants/delta
+GET /oauth2PermissionGrants/delta
 ```
 
 ## Query parameters
@@ -85,7 +85,7 @@ For details, see [Using delta query](/graph/delta-query-overview). For example r
   "name": "oauth2permissiongrant_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/oauth2permissiongrants/delta
+GET https://graph.microsoft.com/beta/oauth2PermissionGrants/delta
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/oauth2permissiongrant-delta-csharp-snippets.md)]
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/oauth2permissiongrants/delta
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/oauth2permissiongrant-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/oauth2permissiongrant-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

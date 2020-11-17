@@ -129,7 +129,7 @@ This resource supports:
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property. <br>Read-only for users synced from on-premises directory. |
 |city|String|The city in which the user is located. Supports `$filter`.|
-|companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 chararcters.<br><br>Returned only on `$select`. Supports `$filter`.|
+|companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 chararcters.<br><br>Returned only on `$select`.|
 |consentProvidedForMinor|String|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
 |country|String|The country/region in which the user is located; for example, "US" or "UK". Supports `$filter`.|
 |createdDateTime | DateTimeOffset |The created date of the user object. |
@@ -483,7 +483,6 @@ Here is a JSON representation of the resource
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
   "postalCode": "string",
-  "preferredDataLocation": "string",
   "preferredLanguage": "string",
   "preferredName": "string",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],

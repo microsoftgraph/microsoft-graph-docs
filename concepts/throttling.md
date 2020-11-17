@@ -169,7 +169,7 @@ The following resources are provided by the Outlook service.
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
+| [Presence](/graph/api/resources/presence) (preview)   | 50 requests per second |
 
 ### OneNote service limits
 
@@ -275,7 +275,7 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 | ---------- | ----------- | -------------- |
 | application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
 | application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
-| tenant | Not Applicable | 9000 per 5 minutes |
+| tenant | Not Applicable | 18,000 per 5 minutes |
 
 > **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 

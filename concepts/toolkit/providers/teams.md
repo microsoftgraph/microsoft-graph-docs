@@ -9,7 +9,9 @@ author: nmetulev
 
 Use the Teams provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components.
 
-To learn more, see [providers](../providers.md).
+To learn more about authentication providers, see [providers](../providers.md).
+
+>**Tip:** For details about how to get started with creating a Microsot Teams application with the Teams Provider, see the [Build a Microsoft Teams tab](../get-started/build-a-microsoft-teams-tab.md) getting started guide.
 
 ## Get started
 
@@ -86,7 +88,7 @@ If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams
 After you install your app with a tab, and you're ready to use the components, you need to make sure that your app has the right permissions to access Microsoft Graph. To configure your app with the necessary permissions:
 
 1. [Retrieve your domain name](/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
-2. [Create a new app registration](/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
+2. [Create a new app registration](../get-started/add-aad-app-registration.md)
 3. [Grant your application permission](/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
 
 It's important to add the right permission on the **Add API access page**. You will need an administrator to add and approve the permissions, depending on which component you need.

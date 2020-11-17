@@ -48,7 +48,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST me/informationprotection/policy/labels/evaluateApplication
+POST me/informationProtection/policy/labels/evaluateApplication
 POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 ```
 
@@ -88,7 +88,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateApplication
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/evaluateApplication
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
@@ -161,6 +161,10 @@ User-agent: ContosoLOBApp/1.0
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-evaluateapplication-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

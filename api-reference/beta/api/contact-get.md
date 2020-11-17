@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=
 [!INCLUDE [sample-code](../includes/snippets/objc/get-contact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-contact-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

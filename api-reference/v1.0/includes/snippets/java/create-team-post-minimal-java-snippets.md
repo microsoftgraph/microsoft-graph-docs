@@ -17,7 +17,10 @@ rolesList.add("owner");
 members.roles = rolesList;
 members.userId = "0040b377-61d8-43db-94f5-81374122dc7e";
 membersList.add(members);
-team.members = membersList;
+ConversationMemberCollectionResponse conversationMemberCollectionResponse = new ConversationMemberCollectionResponse();
+conversationMemberCollectionResponse.value = membersList;
+ConversationMemberCollectionPage conversationMemberCollectionPage = new ConversationMemberCollectionPage(conversationMemberCollectionResponse, null);
+team.members = conversationMemberCollectionPage;
 
 graphClient.teams()
 	.buildRequest()

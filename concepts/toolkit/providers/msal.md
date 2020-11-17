@@ -84,6 +84,4 @@ To learn more about MSAL.js and for additional options you can use when initiali
 
 ## Creating an app/client ID
 
-For details about how to register an app and get a client ID, see the [Register an app quick start](/azure/active-directory/develop/quickstart-register-app).
-
->**Note:** MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. To use the common authority, set **Account in any organizational directory**. To use a specific tenant, set the `authority` during initialization.
+For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).

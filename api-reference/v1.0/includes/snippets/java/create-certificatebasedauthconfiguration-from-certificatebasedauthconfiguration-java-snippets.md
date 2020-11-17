@@ -10,7 +10,7 @@ CertificateBasedAuthConfiguration certificateBasedAuthConfiguration = new Certif
 LinkedList<CertificateAuthority> certificateAuthoritiesList = new LinkedList<CertificateAuthority>();
 CertificateAuthority certificateAuthorities = new CertificateAuthority();
 certificateAuthorities.isRootAuthority = true;
-certificateAuthorities.certificate = "Binary";
+certificateAuthorities.certificate = Base64.getDecoder().decode("Binary");
 certificateAuthoritiesList.add(certificateAuthorities);
 certificateBasedAuthConfiguration.certificateAuthorities = certificateAuthoritiesList;
 

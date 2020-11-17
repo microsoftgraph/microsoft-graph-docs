@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/me/profile/certifications/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-personcertification-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-personcertification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

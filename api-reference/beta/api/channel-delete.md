@@ -71,6 +71,10 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-channel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

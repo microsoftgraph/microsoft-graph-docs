@@ -82,8 +82,6 @@ Follow these steps to enable pull printing:
 
 7. When the user selects one or more jobs to print, your application can [redirect the print job(s)](/graph/api/printjob-redirect?view=graph-rest-beta) to the physical printer and the job will start printing! The redirect call will only succeed if there is a [printTask](/graph/api/resources/printtask?view=graph-rest-beta) in `processing` state on the associated printer started by a trigger that this app created in step 4. The task will automatically be set to `completed` state after redirecting it.
 
-   >**NOTE:** Paused print jobs that are not redirected within 2 days will be deleted.
-
 ## API reference
 Looking for the API reference for this service?
 

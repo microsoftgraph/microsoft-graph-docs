@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-85
 [!INCLUDE [sample-code](../includes/snippets/objc/get-taskdefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-taskdefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -9,18 +9,18 @@ ms.prod: microsoft-identity-platform
 
 # Automate the configuration of Application Proxy using the Microsoft Graph API
 
-In this article, you'll learn how to create and configure Azure Active Directory (Azure AD) [Application Proxy](https://aka.ms/whyappproxy) for an application. Application Proxy provides secure remote access and single sign-on to on-premises web applications. After configuring Application Proxy for an application, users can access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
+In this article, you'll learn how to create and configure Azure Active Directory (Azure AD) [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy) for an application. Application Proxy provides secure remote access and single sign-on to on-premises web applications. After configuring Application Proxy for an application, users can access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
 
-This article assumes you have already installed a connector and completed the [prerequisites](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) for Application Proxy so that connectors can communicate with Azure AD services.
+This article assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) for Application Proxy so that connectors can communicate with Azure AD services.
 
 Make sure you have the corresponding permissions to call the following APIs.
 
 |Resource type |Method |
 |---------|---------|
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Create application](https://docs.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta&tabs=http) <br> [Update application](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Add application to connectorGroup](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
-|[connector](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [Get connectors](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
-|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Create connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Add connector to connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Create servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta&tabs=http) <br> [Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+|[applications](/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Create application](/graph/api/application-post-applications?tabs=http&view=graph-rest-beta) <br> [Update application](/graph/api/application-update?view=graph-rest-beta)<br> [Add application to connectorGroup](/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
+|[connector](/graph/api/resources/connector?view=graph-rest-beta)| [Get connectors](/graph/api/connector-get?view=graph-rest-beta)
+|[connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Create connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Add connector to connectorGroup](/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
+|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Create servicePrincipal](/graph/api/serviceprincipal-post-serviceprincipals?tabs=http&view=graph-rest-beta) <br> [Update servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Create appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 > [!NOTE]
 > The requests shown in this article use sample values. You will need update these. The response objects shown might also be shortened for readability. 
@@ -263,7 +263,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 ### Complete the configuration of the application
-Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** properties to the external UR configured in the **onPremisesPublishing** property. Then update [implicitGrantSettings](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
+Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** properties to the external UR configured in the **onPremisesPublishing** property. Then update [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
 
 #### Request
 <!-- {
@@ -485,7 +485,7 @@ HTTP/1.1 204 No content
 ```
 
 ## Step 4: Configure single sign-on
-This application uses Integrated Windows Authentication (IWA). To configure IWA, set the single sign-on properties in the [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) resource type.
+This application uses Integrated Windows Authentication (IWA). To configure IWA, set the single sign-on properties in the [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) resource type.
 
 #### Request
 
@@ -653,9 +653,9 @@ Content-type: application/json
 }
 ```
 
-For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta) resource type.
+For more information, see [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta) resource type.
 
 
 ## Additional steps
-- [Automate configuration using PowerShell samples for Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
-- [Automate SAML-based SSO app configuration with Microsoft Graph API](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
+- [Automate configuration using PowerShell samples for Application Proxy](/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
+- [Automate SAML-based SSO app configuration with Microsoft Graph API](/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)

@@ -36,10 +36,10 @@ Represents a printer device that has been registered with the Universal Print se
 |:-------------|:------------|:------------|
 |id|String|The document's identifier. Read-only.|
 |displayName|String|The name of the printer.|
-|manufacturer|String|The manufacturer reported by the printer. Read-only.|
-|model|String|The model name reported by the printer. Read-only.|
+|manufacturer|String|The manufacturer reported by the printer.|
+|model|String|The model name reported by the printer.|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the printer was registered. Read-only.|
-|status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors. Read-only.|
+|status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors.|
 |isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
 |isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer.|

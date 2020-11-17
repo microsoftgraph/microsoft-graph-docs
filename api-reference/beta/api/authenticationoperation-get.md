@@ -92,6 +92,10 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-operation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-operation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

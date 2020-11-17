@@ -46,6 +46,8 @@ items:
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
       - name: Get notifications delivered different ways (preview)
         href: /graph/change-notifications-delivery?context=graph/api/beta
+      - name: Get change notifications for chat and channel messages
+        href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
@@ -10199,21 +10201,28 @@ items:
           items:
           - name: Get data policy operation
             href: api/datapolicyoperation-get.md
-        - name: Delegated permission grants
-          href: resources/oauth2permissiongrant.md
-          items:
-          - name: List delegated permission grants
-            href: api/oauth2permissiongrant-list.md
-          - name: Get delegated permission grants
-            href: api/oauth2permissiongrant-get.md
-          - name: Create delegated permission grant
-            href: api/oauth2permissiongrant-post.md
-          - name: Update delegated permission grant
-            href: api/oauth2permissiongrant-update.md
-          - name: Delete delegated permission grant
-            href: api/oauth2permissiongrant-delete.md
-          - name: Get delta
-            href: api/oauth2permissiongrant-delta.md
+          - name: Delegated permission grants
+            href: resources/oauth2permissiongrant.md
+            items:
+            - name: List delegated permission grants
+              href: api/oauth2permissiongrant-list.md
+            - name: Get delegated permission grants
+              href: api/oauth2permissiongrant-get.md
+            - name: Create delegated permission grant
+              href: api/oauth2permissiongrant-post.md
+            - name: Update delegated permission grant
+              href: api/oauth2permissiongrant-update.md
+            - name: Delete delegated permission grant
+              href: api/oauth2permissiongrant-delete.md
+            - name: Get delta
+              href: api/oauth2permissiongrant-delta.md
+            - name: Organization
+              href: resources/organization.md
+              items:
+              - name: Get org details
+                href: api/organization-get.md
+              - name: Update org details
+                href: api/organization-update.md
         - name: Identity protection
           href: resources/identityprotection-root.md
           items:
@@ -10293,7 +10302,41 @@ items:
           href: resources/invitation.md
           items:
           - name: Create invitation
-            href: api/invitation-post.md
+            href: api/invitation-post.md        
+        - name: Organizational branding
+          href: resources/organizationalbrandingproperties.md
+          items:
+          - name: Create
+            href: api/organizationalbrandingproperties-create.md
+          - name: Get 
+            href: api/organizationalbrandingproperties-get.md
+          - name: Update
+            href: api/organizationalbrandingproperties-update.md
+          - name: Delete
+            href: api/organizationalbrandingproperties-delete.md
+          - name: Create localized 
+            href: api/organizationalbrandingpropertieslocalization-create.md
+          - name: Get localized
+            href: api/organizationalbrandingpropertieslocalization-get.md
+          - name: Update localized
+            href: api/organizationalbrandingpropertieslocalization-update.md
+          - name: Delete localized
+            href: api/organizationalbrandingpropertieslocalization-delete.md 
+        - name: Organizational contacts
+          href: resources/orgcontact.md
+          items:
+          - name: List org contacts
+            href: api/orgcontact-list.md
+          - name: Get org contact
+            href: api/orgcontact-get.md
+          - name: Update org contact
+            href: api/orgcontact-update.md
+          - name: Delete org contact
+            href: api/orgcontact-delete.md
+          - name: Get org contact delta
+            href: api/orgcontact-delta.md
+          - name: Groups
+            href: resources/group.md       
         - name: Policy
           href: resources/policy-overview.md
           items:
@@ -10521,7 +10564,49 @@ items:
                href: api/identityuserflowattribute-delete.md
       - name: Governance
         items:
-        - name: Access reviews
+        - name: Access reviews (groups)
+          href: resources/accessreviewsv2-root.md
+          items:
+          - name: Access review schedule definition
+            href: resources/accessreviewscheduledefinition.md
+            items:
+            - name: List
+              href: api/accessreviewscheduledefinition-list.md
+            - name: Get
+              href: api/accessreviewscheduledefinition-get.md
+            - name: Create
+              href: api/accessreviewscheduledefinition-create.md
+            - name: Delete
+              href: api/accessreviewscheduledefinition-delete.md 
+            - name: Update
+              href: api/accessreviewscheduledefinition-update.md
+          - name: Access review instance
+            href: resources/accessreviewinstance.md
+            items:
+            - name: List
+              href: api/accessreviewinstance-list.md
+            - name: Get
+              href: api/accessreviewinstance-get.md
+            - name: List pending approval
+              href: api/accessreviewinstance-pendingaccessreviewinstances.md
+            - name: Send reminder
+              href: api/accessreviewinstance-sendreminder.md
+            - name: Stop
+              href: api/accessreviewinstance-stop.md
+            - name: Accept recommendations
+              href: api/accessreviewinstance-acceptrecommendations.md
+            - name: Apply decisions
+              href: api/accessreviewinstance-applydecisions.md
+          - name: Access review instance decision item
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: List
+              href: api/accessreviewinstancedecisionitem-list.md
+            - name: List pending approval
+              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+        - name: Access reviews (all resources)
           href: resources/accessreviews-root.md
           items:
           - name: Access review

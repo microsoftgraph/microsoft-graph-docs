@@ -80,6 +80,10 @@ PATCH https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-
 [!INCLUDE [sample-code](../includes/snippets/objc/update-task-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-task-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

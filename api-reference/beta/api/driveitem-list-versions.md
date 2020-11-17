@@ -71,6 +71,10 @@ GET /me/drive/items/{item-id}/versions
 [!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

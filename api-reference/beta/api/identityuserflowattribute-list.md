@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/identity/userFlowAttributes
 [!INCLUDE [sample-code](../includes/snippets/objc/list-userflowattributes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

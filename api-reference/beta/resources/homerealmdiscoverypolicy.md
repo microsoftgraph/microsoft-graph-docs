@@ -62,7 +62,7 @@ The properties below form the JSON object that represents a token lifetime polic
 |AccelerateToFederatedDomain|Boolean| Set to `true` for auto-acceleration (bypass home realm discovery). If `true` and there is only one verified and federated domain in the tenant, then users will be taken straight to the federated identity provider (such as ADFS) for sign in. If `true` and there is more than one verified domain in the tenant, **PreferredDomain** must be specified. Optional.|
 |PreferredDomain|String| Specifies a domain to accelerate sign-in to. It can be omitted if the tenant has only one federated domain. If it is omitted, and there is more than one verified federated domain, this policy has no effect. Required if **AccelerateToFederatedDomain** is `true`.|
 |AllowCloudPasswordValidation|Boolean| Set to `true` to allow an application to authenticate a federated user by presenting username/password credentials directly to the Azure Active Directory token endpoint. Only works if Password Hash Sync is enabled. Optional.|
-|AlternateIdLogin| Json |Set to {"Enabled": true} to allow Azure AD sign-in using email as [an alternate login ID](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-use-email-signin). Only works when **IsOrganizationDefault** is set to `true`. Optional.|
+|AlternateIdLogin| Json |Set to {"Enabled": true} to allow Azure AD sign-in using email as [an alternate login ID](/azure/active-directory/authentication/howto-authentication-use-email-signin). Only works when **IsOrganizationDefault** is set to `true`. Optional.|
 
 ## Relationships
 
@@ -90,7 +90,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "isOrganizationDefault": true,
+  "isOrganizationDefault": true
 }
 ```
 
