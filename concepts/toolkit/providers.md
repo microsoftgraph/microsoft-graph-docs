@@ -26,6 +26,7 @@ The toolkit implements the following providers:
 - [TeamsProvider](./providers/teams.md)
 - [ProxyProvider](./providers/proxy.md)
 - [SimpleProvider](./providers/custom.md)
+- [TeamsSSOProvider](./providers/teamssso.md)
 
 You can create a provider at any time. We recommend that you create the provider before you use any of the components. This section describes how to initialize a provider.
 

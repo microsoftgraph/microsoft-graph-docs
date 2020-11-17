@@ -43,6 +43,7 @@ The components work best when used with a [provider](/providers/providers.md). P
 |[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
 |[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
 |[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
+|[TeamsSSO](./providers/teamssso.md)|Authenticates using single sign on (SSO) and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
 |[Custom](./providers/custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
 
 ## Why use the Microsoft Graph Toolkit?
