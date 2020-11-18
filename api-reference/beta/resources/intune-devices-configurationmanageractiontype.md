@@ -28,4 +28,3 @@ Action type on Configuration Manager client
 
 
 
-

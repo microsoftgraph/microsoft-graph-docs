@@ -138,6 +138,8 @@ The following table shows the properties that are required when you create the d
 |blockAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.|
 |warnAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning|
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped|
+|deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
+|appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
 
 
 
@@ -151,7 +153,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 5041
+Content-length: 5114
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -267,7 +269,9 @@ Content-length: 5041
   "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
   "blockAfterCompanyPortalUpdateDeferralInDays": 11,
   "warnAfterCompanyPortalUpdateDeferralInDays": 10,
-  "wipeAfterCompanyPortalUpdateDeferralInDays": 10
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+  "deviceLockRequired": true,
+  "appActionIfDeviceLockNotSet": "wipe"
 }
 ```
 
@@ -276,7 +280,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5213
+Content-Length: 5286
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -395,10 +399,11 @@ Content-Length: 5213
   "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
   "blockAfterCompanyPortalUpdateDeferralInDays": 11,
   "warnAfterCompanyPortalUpdateDeferralInDays": 10,
-  "wipeAfterCompanyPortalUpdateDeferralInDays": 10
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+  "deviceLockRequired": true,
+  "appActionIfDeviceLockNotSet": "wipe"
 }
 ```
-
 
 
 

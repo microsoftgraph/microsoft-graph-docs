@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 971
+Content-Length: 1083
 
 {
   "value": {
@@ -85,11 +85,13 @@ Content-Length: 971
     "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
     "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
     "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+    "productStatus": "serviceNotRunning",
+    "isVirtualMachine": true,
+    "tamperProtectionEnabled": true
   }
 }
 ```
-
 
 
 

@@ -29,6 +29,24 @@
     {
       "ChangeList": [
         {
+          "Id": "65dabc09-b9d1-4292-93eb-830585daefc6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** properties to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) to support meeting option configuration.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "65dabc09-b9d1-4292-93eb-830585daefc6",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-11-17T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "670bfe8b-e88a-4610-b593-38c6edfe81b9",
           "ApiChange": "Property",
           "ChangedApiName": "lobbyBypassSettings,isEntryExitAnnounced,allowedPresenters",

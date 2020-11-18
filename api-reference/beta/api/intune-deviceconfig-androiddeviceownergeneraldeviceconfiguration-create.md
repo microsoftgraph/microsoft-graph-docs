@@ -86,6 +86,11 @@ The following table shows the properties that are required when you create the a
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Proxy is set up directly with host, port and excluded hosts.|
 |googleAccountsBlocked|Boolean|Indicates whether or not google accounts will be blocked.|
+|kioskCustomizationDeviceSettingsBlocked|Boolean|Indicates whether a user can access the device's Settings app while in Kiosk Mode.|
+|kioskCustomizationPowerButtonActionsBlocked|Boolean|Whether the power menu is shown when a user long presses the Power button of a device in Kiosk Mode.|
+|kioskCustomizationStatusBar|[androidDeviceOwnerKioskCustomizationStatusBar](../resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md)|Indicates whether system info and notifications are disabled in Kiosk Mode. Possible values are: `notConfigured`, `notificationsAndSystemInfoEnabled`, `systemInfoOnly`.|
+|kioskCustomizationSystemErrorWarnings|Boolean|Indicates whether system error dialogs for crashed or unresponsive apps are shown in Kiosk Mode.|
+|kioskCustomizationSystemNavigation|[androidDeviceOwnerKioskCustomizationSystemNavigation](../resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md)|Indicates which navigation features are enabled in Kiosk Mode. Possible values are: `notConfigured`, `navigationEnabled`, `homeButtonOnly`.|
 |kioskModeScreenSaverConfigurationEnabled|Boolean|Whether or not to enable screen saver mode or not in Kiosk Mode.|
 |kioskModeScreenSaverImageUrl|String|URL for an image that will be the device's screen saver in Kiosk Mode.|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|The number of seconds that the device will display the screen saver for in Kiosk Mode. Valid values 0 to 9999999|
@@ -173,7 +178,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6096
+Content-length: 6387
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -236,6 +241,11 @@ Content-length: 6096
     "proxyAutoConfigURL": "Proxy Auto Config URL value"
   },
   "googleAccountsBlocked": true,
+  "kioskCustomizationDeviceSettingsBlocked": true,
+  "kioskCustomizationPowerButtonActionsBlocked": true,
+  "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+  "kioskCustomizationSystemErrorWarnings": true,
+  "kioskCustomizationSystemNavigation": "navigationEnabled",
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
   "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -332,7 +342,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6268
+Content-Length: 6559
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -398,6 +408,11 @@ Content-Length: 6268
     "proxyAutoConfigURL": "Proxy Auto Config URL value"
   },
   "googleAccountsBlocked": true,
+  "kioskCustomizationDeviceSettingsBlocked": true,
+  "kioskCustomizationPowerButtonActionsBlocked": true,
+  "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+  "kioskCustomizationSystemErrorWarnings": true,
+  "kioskCustomizationSystemNavigation": "navigationEnabled",
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
   "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -488,7 +503,6 @@ Content-Length: 6268
   "workProfilePasswordRequiredType": "required"
 }
 ```
-
 
 
 

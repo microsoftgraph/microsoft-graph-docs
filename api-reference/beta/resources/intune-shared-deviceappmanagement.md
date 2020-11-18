@@ -78,7 +78,7 @@ Singleton entity that acts as a container for all device app management function
 |wdacSupplementalPolicies|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) collection|The collection of Windows Defender Application Control Supplemental Policies.|
 
 ## JSON Representation
-Here is a JSON representation of the resource.  Note that this is only an example; query responses to actual queries will contain the properties appropriate for the context.
+Here is a JSON representation of the resource.  Note that this is only an example; query responses to actual queries will contain the properties appropriate for the context.  
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -95,7 +95,6 @@ Here is a JSON representation of the resource.  Note that this is only an exampl
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
 }
 ```
-
 
 
 

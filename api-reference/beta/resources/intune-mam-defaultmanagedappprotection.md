@@ -122,6 +122,8 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |blockAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.|
 |warnAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning|
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped|
+|deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
+|appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -255,10 +257,11 @@ Here is a JSON representation of the resource.
   "requiredAndroidSafetyNetEvaluationType": "String",
   "blockAfterCompanyPortalUpdateDeferralInDays": 1024,
   "warnAfterCompanyPortalUpdateDeferralInDays": 1024,
-  "wipeAfterCompanyPortalUpdateDeferralInDays": 1024
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 1024,
+  "deviceLockRequired": true,
+  "appActionIfDeviceLockNotSet": "String"
 }
 ```
-
 
 
 

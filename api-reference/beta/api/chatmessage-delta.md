@@ -111,7 +111,7 @@ The request specifies the optional request header, odata.top, returning 2 events
   "blockType": "request",
   "name": "get_channel_messages_delta_1"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$top=2
 ```
 # [C#](#tab/csharp)
@@ -212,7 +212,7 @@ The second request specifies the `nextLink` URL returned from the previous respo
   "blockType": "request",
   "name": "get_channel_messages_delta_2"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d
 ```
 # [C#](#tab/csharp)
@@ -313,7 +313,7 @@ The third request continues to use the latest `nextLink` returned from the last 
   "blockType": "request",
   "name": "get_channel_messages_delta_3"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA%3d
 ```
 # [C#](#tab/csharp)
@@ -393,7 +393,7 @@ Using the `deltaLink` from the last request in the last round, you will be able 
   "blockType": "request",
   "name": "get_channel_messages_delta_4"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc1ODA0OTAmcGFnZVNpemU9MjA%3d
 ```
 # [C#](#tab/csharp)

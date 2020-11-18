@@ -62,6 +62,7 @@ The following table shows the properties that are required when you create the d
 |windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows mobile restrictions based on platform, platform operating system version, and device ownership|
 |androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Android restrictions based on platform, platform operating system version, and device ownership|
 |androidForWorkRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Android for work restrictions based on platform, platform operating system version, and device ownership|
+|aospRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|AOSP restrictions based on platform, platform operating system version, and device ownership|
 |macRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Mac restrictions based on platform, platform operating system version, and device ownership|
 |macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Mac restrictions based on platform, platform operating system version, and device ownership|
 
@@ -77,7 +78,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 3197
+Content-length: 4081
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -96,6 +97,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsRestriction": {
@@ -106,6 +110,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsHomeSkuRestriction": {
@@ -116,6 +123,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsMobileRestriction": {
@@ -126,6 +136,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "androidRestriction": {
@@ -136,6 +149,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "androidForWorkRestriction": {
@@ -146,6 +162,22 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
+    ]
+  },
+  "aospRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "Os Minimum Version value",
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "macRestriction": {
@@ -156,6 +188,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "macOSRestriction": {
@@ -166,6 +201,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   }
 }
@@ -176,7 +214,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3369
+Content-Length: 4253
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -198,6 +236,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsRestriction": {
@@ -208,6 +249,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsHomeSkuRestriction": {
@@ -218,6 +262,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsMobileRestriction": {
@@ -228,6 +275,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "androidRestriction": {
@@ -238,6 +288,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "androidForWorkRestriction": {
@@ -248,6 +301,22 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
+    ]
+  },
+  "aospRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "Os Minimum Version value",
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "macRestriction": {
@@ -258,6 +327,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "macOSRestriction": {
@@ -268,11 +340,13 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   }
 }
 ```
-
 
 
 

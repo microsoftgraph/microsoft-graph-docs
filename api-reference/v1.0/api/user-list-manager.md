@@ -37,22 +37,22 @@ Get the management chain:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
-GET /users?$expand=manager($levels=max)
-GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+GET /users?$expand=manager($levels=n)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.  
 
-If your request includes the `$expand=manager($levels=max)` parameter to get the manager's chain, you must also include the following:
+If your request includes the `$expand=manager($levels=n)` parameter to get the manager's chain, you must also include the following:
 
 - `$count=true` query string parameter
 - `ConsistencyLevel=eventual` request header
 
->**Note:** `max` is the only allowed value for `$levels`.
-> When `$level` parameter is not specified, only the immediate manager is returned.  
-> You can specify `$select` inside `$expand` to select the individual managers' properties: `$expand=manager($levels=max;$select=id,displayName)`
+>**Note:** the `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
+> When the `$level` parameter is not specified, only the immediate manager is returned.  
+> You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`
 
 ## Request headers
 

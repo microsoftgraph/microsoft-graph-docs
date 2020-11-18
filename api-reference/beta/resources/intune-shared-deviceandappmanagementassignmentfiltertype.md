@@ -26,4 +26,3 @@ Represents type of the assignment filter.
 
 
 
-

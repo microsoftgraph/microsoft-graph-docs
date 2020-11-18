@@ -73,6 +73,7 @@ The following Graph resources are available to manage app protection polices in 
 - [iOS VPP e-book](intune-books-iosvppebook.md)
 - [iOS VPP e-book assignment](intune-books-iosvppebookassignment.md)
 - [macOS LOB app](intune-apps-macoslobapp.md)
+- [macOS LOB app assignment settings](intune-apps-macoslobappassignmentsettings.md)
 - [macOS LOB child app](intune-apps-macoslobchildapp.md)
 - [macOS mdatp app](intune-apps-macosmdatpapp.md)
 - [macOS microsoft edge app](intune-apps-macosmicrosoftedgeapp.md)

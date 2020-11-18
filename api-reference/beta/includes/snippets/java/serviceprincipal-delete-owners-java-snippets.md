@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.serviceprincipals("{id}").owners("{id}").reference()
+graphClient.servicePrincipals("{id}").owners("{id}").reference()
 	.buildRequest()
 	.delete();
 

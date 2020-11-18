@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 382
+Content-Length: 497
 
 {
   "value": [
@@ -69,6 +69,8 @@ Content-Length: 382
       "id": "c0254204-4204-c025-0442-25c0044225c0",
       "targetId": "Target Id value",
       "targetDisplayName": "Target Display Name value",
+      "targetDisplayVersion": "Target Display Version value",
+      "targetPublisher": "Target Publisher value",
       "targetType": "parent",
       "supersedenceType": "replace",
       "supersededAppCount": 2,
@@ -77,7 +79,6 @@ Content-Length: 382
   ]
 }
 ```
-
 
 
 

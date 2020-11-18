@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2859
+Content-Length: 3184
 
 {
   "value": [
@@ -113,6 +113,7 @@ Content-Length: 2859
       "forceFIPSCompliance": true,
       "networkSingleSignOn": "prelogon",
       "maximumAuthenticationTimeoutInSeconds": 5,
+      "userBasedVirtualLan": true,
       "promptForAdditionalAuthenticationCredentials": true,
       "enablePairwiseMasterKeyCaching": true,
       "maximumPairwiseMasterKeyCacheTimeInMinutes": 10,
@@ -128,12 +129,18 @@ Content-Length: 2859
       "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
       "requireCryptographicBinding": true,
       "performServerValidation": true,
-      "disableUserPromptForServerValidation": true
+      "disableUserPromptForServerValidation": true,
+      "authenticationPeriodInSeconds": 13,
+      "authenticationRetryDelayPeriodInSeconds": 7,
+      "eapolStartPeriodInSeconds": 9,
+      "maximumEAPOLStartMessages": 9,
+      "maximumAuthenticationFailures": 13,
+      "cacheCredentials": true,
+      "authenticationType": "user"
     }
   ]
 }
 ```
-
 
 
 

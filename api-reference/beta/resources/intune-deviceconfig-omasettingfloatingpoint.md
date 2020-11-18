@@ -26,6 +26,7 @@ Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|isEncrypted|Boolean|Indicates whether the value field is encrypted. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Single|Value.|
 
 ## Relationships
@@ -44,10 +45,10 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
+  "isEncrypted": true,
   "value": 4.2
 }
 ```
-
 
 
 

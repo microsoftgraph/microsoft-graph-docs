@@ -39,20 +39,20 @@ Get the management chain:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
-GET /users?$expand=manager($levels=max)
-GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+GET /users?$expand=manager($levels=n)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.  
 
-If your request includes the `$expand=manager($levels=max)` parameter to get the manager's chain, you must also include the following:
+If your request includes the `$expand=manager($levels=n)` parameter to get the manager's chain, you must also include the following:
 
 - `$count=true` query string parameter
 - `ConsistencyLevel=eventual` request header
 
->**Note:** `max` is the only allowed value for `$levels`.
+>**Note:** the `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
 > When the `$level` parameter is not specified, only the immediate manager is returned.  
 > You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`
 
@@ -87,6 +87,24 @@ The following example shows a request to get the manager.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

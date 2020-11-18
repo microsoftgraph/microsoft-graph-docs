@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5714
+Content-Length: 5795
 
 {
   "value": [
@@ -181,12 +181,13 @@ Content-Length: 5714
       "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
       "blockAfterCompanyPortalUpdateDeferralInDays": 11,
       "warnAfterCompanyPortalUpdateDeferralInDays": 10,
-      "wipeAfterCompanyPortalUpdateDeferralInDays": 10
+      "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+      "deviceLockRequired": true,
+      "appActionIfDeviceLockNotSet": "wipe"
     }
   ]
 }
 ```
-
 
 
 

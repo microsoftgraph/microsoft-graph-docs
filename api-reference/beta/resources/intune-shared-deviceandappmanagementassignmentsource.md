@@ -26,4 +26,3 @@ Represents source of assignment.
 
 
 
-

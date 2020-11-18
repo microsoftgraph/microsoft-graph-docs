@@ -64,6 +64,8 @@ This is an example of creating an access review series with a specific user, who
 ### Request
 In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition"
@@ -109,6 +111,12 @@ Content-type: application/json
   }
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.

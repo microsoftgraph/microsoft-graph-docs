@@ -28,4 +28,3 @@ Android Device Owner possible values for states of the device's plugged-in power
 
 
 
-

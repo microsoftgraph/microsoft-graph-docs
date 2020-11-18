@@ -2176,6 +2176,8 @@ items:
               href: api/intune-apps-macoslobapp-delete.md
             - name: Update
               href: api/intune-apps-macoslobapp-update.md
+          - name: macOS LOB app assignment settings
+            href: resources/intune-apps-macoslobappassignmentsettings.md
           - name: macOS LOB child app
             href: resources/intune-apps-macoslobchildapp.md
           - name: macOS mdatp app
@@ -3439,6 +3441,10 @@ items:
               href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
+          - name: Android device owner kiosk customization status bar
+            href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md
+          - name: Android device owner kiosk customization system navigation
+            href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md
           - name: Android device owner kiosk mode folder icon
             href: resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md
           - name: Android device owner kiosk mode icon size
@@ -4087,16 +4093,10 @@ items:
               href: api/intune-deviceconfig-carttoclassassociation-delete.md
             - name: Update
               href: api/intune-deviceconfig-carttoclassassociation-update.md
-          - name: Certificate destination store
-            href: resources/intune-deviceconfig-certificatedestinationstore.md
           - name: Certificate issuance states
             href: resources/intune-deviceconfig-certificateissuancestates.md
           - name: Certificate revocation status
             href: resources/intune-deviceconfig-certificaterevocationstatus.md
-          - name: Certificate store
-            href: resources/intune-deviceconfig-certificatestore.md
-          - name: Certificate validity period scale
-            href: resources/intune-deviceconfig-certificatevalidityperiodscale.md
           - name: Change uefi settings permission
             href: resources/intune-deviceconfig-changeuefisettingspermission.md
           - name: Code
@@ -4503,8 +4503,6 @@ items:
             href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
           - name: Encryption state
             href: resources/intune-deviceconfig-encryptionstate.md
-          - name: Extended key usage
-            href: resources/intune-deviceconfig-extendedkeyusage.md
           - name: File vault state
             href: resources/intune-deviceconfig-filevaultstate.md
           - name: Firewall certificate revocation list check method type
@@ -4885,8 +4883,6 @@ items:
               href: api/intune-grouppolicy-grouppolicyuploadedpresentation-delete.md
             - name: Update
               href: api/intune-grouppolicy-grouppolicyuploadedpresentation-update.md
-          - name: Hash algorithms
-            href: resources/intune-deviceconfig-hashalgorithms.md
           - name: Ink access setting
             href: resources/intune-deviceconfig-inkaccesssetting.md
           - name: Intended purpose
@@ -5078,6 +5074,8 @@ items:
             href: resources/intune-deviceconfig-iosnetworkusagerule.md
           - name: iOS notification alert type
             href: resources/intune-deviceconfig-iosnotificationalerttype.md
+          - name: iOS notification preview visibility
+            href: resources/intune-deviceconfig-iosnotificationpreviewvisibility.md
           - name: iOS notification settings
             href: resources/intune-deviceconfig-iosnotificationsettings.md
           - name: iOS PKCS certificate profile
@@ -5212,16 +5210,10 @@ items:
             href: resources/intune-deviceconfig-keyintegervaluepair.md
           - name: Key real value pair
             href: resources/intune-deviceconfig-keyrealvaluepair.md
-          - name: Key size
-            href: resources/intune-deviceconfig-keysize.md
-          - name: Key storage provider option
-            href: resources/intune-deviceconfig-keystorageprovideroption.md
           - name: Key string value pair
             href: resources/intune-deviceconfig-keystringvaluepair.md
           - name: Key typed value pair
             href: resources/intune-deviceconfig-keytypedvaluepair.md
-          - name: Key usages
-            href: resources/intune-deviceconfig-keyusages.md
           - name: Key value
             href: resources/intune-deviceconfig-keyvalue.md
           - name: LAN manager authentication level
@@ -5823,8 +5815,6 @@ items:
             href: resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md
           - name: State management setting
             href: resources/intune-deviceconfig-statemanagementsetting.md
-          - name: Subject alternative name type
-            href: resources/intune-deviceconfig-subjectalternativenametype.md
           - name: Subject name format
             href: resources/intune-deviceconfig-subjectnameformat.md
           - name: Unsupported device configuration
@@ -5922,6 +5912,8 @@ items:
             href: resources/intune-deviceconfig-welcomescreenmeetinginformation.md
           - name: Wi-Fi authentication method
             href: resources/intune-deviceconfig-wifiauthenticationmethod.md
+          - name: Wi-Fi authentication type
+            href: resources/intune-deviceconfig-wifiauthenticationtype.md
           - name: Wi-Fi proxy setting
             href: resources/intune-deviceconfig-wifiproxysetting.md
           - name: Wi-Fi security type
@@ -7668,6 +7660,8 @@ items:
             href: resources/intune-notification-notificationtemplatebrandingoptions.md
           - name: Os version count
             href: resources/intune-devices-osversioncount.md
+          - name: Platform type
+            href: resources/intune-esim-platformtype.md
           - name: Remediation state
             href: resources/intune-devices-remediationstate.md
           - name: Remote action
@@ -8016,6 +8010,8 @@ items:
             href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
           - name: Windows autopilot enrollment type
             href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
+          - name: Windows defender product status
+            href: resources/intune-devices-windowsdefenderproductstatus.md
           - name: Windows defender scan action result
             href: resources/intune-devices-windowsdefenderscanactionresult.md
           - name: Windows device account
@@ -8448,6 +8444,19 @@ items:
             href: resources/intune-onboarding-compliancemanagementpartnerassignment.md
           - name: Device and app management data
             href: resources/intune-onboarding-deviceandappmanagementdata.md
+          - name: Device comanagement authority configuration
+            href: resources/intune-onboarding-devicecomanagementauthorityconfiguration.md
+            items:
+            - name: List
+              href: api/intune-onboarding-devicecomanagementauthorityconfiguration-list.md
+            - name: Get
+              href: api/intune-onboarding-devicecomanagementauthorityconfiguration-get.md
+            - name: Create
+              href: api/intune-onboarding-devicecomanagementauthorityconfiguration-create.md
+            - name: Delete
+              href: api/intune-onboarding-devicecomanagementauthorityconfiguration-delete.md
+            - name: Update
+              href: api/intune-onboarding-devicecomanagementauthorityconfiguration-update.md
           - name: Device enrollment limit configuration
             href: resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
             items:
@@ -8803,6 +8812,12 @@ items:
               href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
           - name: Android managed store app assignment settings
             href: resources/intune-shared-androidmanagedstoreappassignmentsettings.md
+          - name: Certificate destination store
+            href: resources/intune-shared-certificatedestinationstore.md
+          - name: Certificate store
+            href: resources/intune-shared-certificatestore.md
+          - name: Certificate validity period scale
+            href: resources/intune-shared-certificatevalidityperiodscale.md
           - name: Company portal action
             href: resources/intune-shared-companyportalaction.md
           - name: Company portal blocked action
@@ -8904,6 +8919,29 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
+          - name: Device management reports
+            href: resources/intune-shared-devicemanagementreports.md
+            items:
+            - name: Get
+              href: api/intune-reporting-devicemanagementreports-get.md
+            - name: Update
+              href: api/intune-reporting-devicemanagementreports-update.md
+            - name: getDeviceNonComplianceReport action
+              href: api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md
+            - name: getPolicyNonComplianceReport action
+              href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md
+            - name: getPolicyNonComplianceMetadata action
+              href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md
+            - name: getPolicyNonComplianceSummaryReport action
+              href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md
+            - name: getSettingNonComplianceReport action
+              href: api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md
+            - name: getReportFilters action
+              href: api/intune-reporting-devicemanagementreports-getreportfilters.md
+            - name: getHistoricalReport action
+              href: api/intune-reporting-devicemanagementreports-gethistoricalreport.md
+            - name: getCachedReport action
+              href: api/intune-reporting-devicemanagementreports-getcachedreport.md
           - name: Device management script
             href: resources/intune-shared-devicemanagementscript.md
             items:
@@ -8933,8 +8971,12 @@ items:
             href: resources/intune-shared-enrollmentstate.md
           - name: Exclusion group assignment target
             href: resources/intune-shared-exclusiongroupassignmenttarget.md
+          - name: Extended key usage
+            href: resources/intune-shared-extendedkeyusage.md
           - name: Group assignment target
             href: resources/intune-shared-groupassignmenttarget.md
+          - name: Hash algorithms
+            href: resources/intune-shared-hashalgorithms.md
           - name: Install intent
             href: resources/intune-shared-installintent.md
           - name: iOS LOB app assignment settings
@@ -8981,6 +9023,12 @@ items:
             href: resources/intune-shared-ipv4range.md
           - name: IPv6 range
             href: resources/intune-shared-ipv6range.md
+          - name: Key size
+            href: resources/intune-shared-keysize.md
+          - name: Key storage provider option
+            href: resources/intune-shared-keystorageprovideroption.md
+          - name: Key usages
+            href: resources/intune-shared-keyusages.md
           - name: Key/value pair
             href: resources/intune-shared-keyvaluepair.md
           - name: macOS VPP app assignment settings
@@ -9067,6 +9115,8 @@ items:
             href: resources/intune-shared-saveduistategenerationoptions.md
           - name: Setting source type
             href: resources/intune-shared-settingsourcetype.md
+          - name: Subject alternative name type
+            href: resources/intune-shared-subjectalternativenametype.md
           - name: Targeted managed app configuration
             href: resources/intune-shared-targetedmanagedappconfiguration.md
             items:
@@ -9173,7 +9223,7 @@ items:
             - name: Delete
               href: api/intune-tem-telecomexpensemanagementpartner-delete.md
             - name: Update
-              href: api/intune-tem-telecomexpensemanagementpartner-update.md  
+              href: api/intune-tem-telecomexpensemanagementpartner-update.md        
     - name: Education
       items:
       - name: Overview

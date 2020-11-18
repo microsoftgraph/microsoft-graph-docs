@@ -31,7 +31,7 @@ Template type
 |deviceCompliance|8|Device compliance template|
 |deviceConfigurationForOffice365|9|Device Configuration for Microsoft Office 365 settings|
 |cloudPC|10|Cloud PC security baseline template|
-
+|firewallSharedSettings|11|Firewall Shared Object templates for reference settings|
 
 
 

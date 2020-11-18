@@ -196,7 +196,8 @@ Here is a JSON representation of the resource.
       "showOnLockScreen": true,
       "alertType": "String",
       "badgesEnabled": true,
-      "soundsEnabled": true
+      "soundsEnabled": true,
+      "previewVisibility": "String"
     }
   ],
   "singleSignOnSettings": {
@@ -285,7 +286,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

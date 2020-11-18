@@ -51,6 +51,8 @@ The following table shows the properties that are required when you create the m
 |id|String|The relationship entity id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|The target mobile app's app id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayName|String|The target mobile app's display name. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|The target mobile app's display version. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|The target mobile app's publisher. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target is a parent or child. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Possible values are: `child`, `parent`.|
 |supersedenceType|[mobileAppSupersedenceType](../resources/intune-apps-mobileappsupersedencetype.md)|The supersedence relationship type between the parent and child apps. Possible values are: `update`, `replace`.|
 |supersededAppCount|Int32|The total number of apps directly or indirectly superseded by the child app.|
@@ -68,12 +70,14 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships
 Content-type: application/json
-Content-length: 268
+Content-length: 375
 
 {
   "@odata.type": "#microsoft.graph.mobileAppSupersedence",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetDisplayVersion": "Target Display Version value",
+  "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "supersedenceType": "replace",
   "supersededAppCount": 2,
@@ -86,20 +90,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 424
 
 {
   "@odata.type": "#microsoft.graph.mobileAppSupersedence",
   "id": "c0254204-4204-c025-0442-25c0044225c0",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetDisplayVersion": "Target Display Version value",
+  "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "supersedenceType": "replace",
   "supersededAppCount": 2,
   "supersedingAppCount": 3
 }
 ```
-
 
 
 
