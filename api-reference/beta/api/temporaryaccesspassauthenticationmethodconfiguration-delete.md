@@ -1,25 +1,32 @@
 ---
 title: "Delete temporaryAccessPassAuthenticationMethodConfiguration"
 description: "Deletes a temporaryAccessPassAuthenticationMethodConfiguration object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "*inbarckms"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Delete temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Deletes a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Remove changes made to the[temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+For delegated scenarios, the administrator needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global admin
 
 ## HTTP request
 
@@ -28,8 +35,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /temporaryAccessPassAuthenticationMethodConfiguration
+DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
 ```
+
 
 ## Request headers
 |Name|Description|
@@ -48,16 +56,16 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_temporaryaccesspassauthenticationmethodconfiguration"
+  "name": "delete_fido2authenticationmethodconfiguration"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/temporaryAccessPassAuthenticationMethodConfiguration
+DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
 ```
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -66,4 +74,3 @@ DELETE https://graph.microsoft.com/beta/temporaryAccessPassAuthenticationMethodC
 ``` http
 HTTP/1.1 204 No Content
 ```
-
