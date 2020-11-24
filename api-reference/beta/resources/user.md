@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
+Represents an Azure Active Directory (Azure AD) user account. Inherits from [directoryObject](directoryobject.md).
 
 The **user** resource let apps specify user preferences for languages, and date/time formats for the user's primary Exchange mailboxes, and for the user's Azure AD profile. For more details, see [user preferences for languages and regional formats](#user-preferences-for-languages-and-regional-formats).
 
