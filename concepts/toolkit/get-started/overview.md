@@ -29,7 +29,7 @@ To use the Toolkit via mgt-loader, add the reference in a script to your code:
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 ```
 
-# [npm](#tab/npm)
+# [npm](#tab/javascript)
 ```bash
 npm install @microsoft/mgt
 ```
