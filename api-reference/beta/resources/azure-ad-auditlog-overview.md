@@ -4,7 +4,7 @@ description: "Use the activity reports API in Microsoft Graph to access the repo
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: "microsoft-identity-platform"
-author: "khotz"
+author: "besiler"
 ---
 
 # Activity reports API overview
@@ -69,8 +69,8 @@ To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/detail
 
 ## Next steps
 
-- [Register your app](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites. 
-- Learn from [audit log](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
+- [Register your app](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites. 
+- Learn from [audit log](/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
 - Review the [directoryAudit](directoryaudit.md) resource and actions.
 - Review the [signIn](signin.md) resource and actions. 
 - Review the [provisioningObjectSummary](provisioningobjectsummary.md) resource.

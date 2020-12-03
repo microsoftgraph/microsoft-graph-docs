@@ -85,6 +85,10 @@ Content-length: 54
 [!INCLUDE [sample-code](../includes/snippets/objc/tablecollection-add-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tablecollection-add-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -122,3 +126,5 @@ Content-length: 109
   ]
 }
 -->
+
+

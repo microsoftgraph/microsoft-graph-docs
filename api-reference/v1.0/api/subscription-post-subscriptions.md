@@ -22,6 +22,10 @@ Subscribes a listener application to receive change notifications when the reque
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Not supported | Not supported |  ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Not supported | Not supported | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
@@ -33,16 +37,33 @@ Subscribes a listener application to receive change notifications when the reque
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note:** There are additional limitations for subscriptions on OneDrive and Outlook items. The limitations apply to creating as well as managing subscriptions (getting, updating, and deleting subscriptions).
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
-- On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
+### chatMessage
 
-- In Outlook, delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. That means, for example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user's mailbox.
+**chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
+
+> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the
+[required licenses](https://aka.ms/teams-changenotification-licenses).
+
+> **Note:** `/chats/getAllMessages` only returns messages from chats owned by the tenant. 
+If a chat thread is initiated by a user outside the tenant, that chat thread is not owned by the tenant, and does not create change notifications.
+
+### driveItem
+
+Additional limitations apply for subscriptions on OneDrive items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
+
+On a personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
+
+### contact, event, and message
+
+Additional limitations apply for subscriptions on Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
+
+- Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.
 - To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
 
   - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
-  - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders. 
-
+  - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.
 
 ## HTTP request
 
@@ -116,16 +137,19 @@ The following are valid values for the resource property of the subscription:
 
 | Resource type | Examples |
 |:------ |:----- |
-|Mail|me/mailfolders('inbox')/messages<br />me/messages|
-|Contacts|me/contacts|
-|Calendars|me/events|
-|Users|users|
-|Groups|groups|
-|Conversations|groups('*{id}*')/conversations|
-|Drives|me/drive/root|
-|List|sites/{site-id}/lists/{list-id}|
-|Security alert|security/alerts?$filter=status eq 'NewAlert'|
-|Call records|communications/callRecords|
+|[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
+|[Contacts](../resources/contact.md)|`me/contacts`|
+|[Conversations](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[Drives](../resources/driveitem.md)|`me/drive/root`|
+|[Events](../resources/event.md)|`me/events`|
+|[Groups](../resources/group.md)|`groups`|
+|[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
+|[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[Users](../resources/user.md)|`users`|
+|[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+
+> **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
 ##### Response
 
@@ -172,3 +196,4 @@ The subscription notification endpoint (specified in the `notificationUrl` prope
   "suppressions": [
   ]
 }-->
+

@@ -61,7 +61,7 @@ Working with synchronization API primarily involves accessing the [synchronizati
 
 ### Authorization
 
-The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making any requests to the API, you need to get an access token. For more information, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). To access synchronization resources, your application needs Directory.ReadWrite.All permissions. For more information, see [Directory permissions](/graph/permissions-reference#directory-permissions).
+The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making any requests to the API, you need to get an access token. For more information, see [Get access tokens to call Microsoft Graph](/graph/auth/). To access synchronization resources, your application needs Directory.ReadWrite.All permissions. For more information, see [Directory permissions](/graph/permissions-reference#directory-permissions).
 
 ### Find the service principal object by display name
 
@@ -200,6 +200,3 @@ HTTP/1.1 200 OK
 
 * [Configure synchronization with directory extension attributes](../resources/synchronization-configure-with-directory-extension-attributes.md)
 * [Configure synchronization with custom target attributes](../resources/synchronization-configure-with-custom-target-attributes.md)
-
-
-

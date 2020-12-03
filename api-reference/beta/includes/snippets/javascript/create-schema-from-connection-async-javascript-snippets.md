@@ -27,7 +27,6 @@ const schema = {
       type: "String",
       isQueryable: "true",
       isRetrievable: "true",
-      isRefinable: "true",
       isSearchable: "false"
     },
     {

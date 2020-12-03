@@ -1,7 +1,7 @@
 ---
 title: "Working with the call records API in Microsoft Graph"
 description: "The Microsoft Graph call records API allows you to retrieve usage and diagnostics data for calls and online meetings within your organization."
-author: "stephenjust"
+author: "williamlooney"
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
@@ -40,3 +40,5 @@ In the diagram above, the numbers denote how many children of each type can be p
 ## See also
 
 - [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta)
+
+

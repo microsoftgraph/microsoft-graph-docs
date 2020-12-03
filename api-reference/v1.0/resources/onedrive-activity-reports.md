@@ -23,3 +23,4 @@ Use the OneDrive activity reports to get the activity of every user licensed to 
 | [Get user counts](../api/reportroot-getonedriveactivityusercounts.md) | Stream      | Get the trend in the number of active OneDrive users. |
 | [Get file counts](../api/reportroot-getonedriveactivityfilecounts.md) | Stream      | Get the number of unique, licensed users that performed file interactions against any OneDrive account. |
 
+

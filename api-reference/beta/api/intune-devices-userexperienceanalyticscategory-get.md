@@ -3,7 +3,7 @@ title: "Get userExperienceAnalyticsCategory"
 description: "Read properties and relationships of the userExperienceAnalyticsCategory object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -32,8 +32,10 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/userExperienceAnalyticsAppHealthOverview
 GET /deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
 GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/bestPracticesMetrics
+GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/rebootAnalyticsMetrics
 GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics
 ```
 
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and [userExperienceA
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthOverview
 ```
 
 ### Response
@@ -90,6 +92,7 @@ Content-Length: 657
   }
 }
 ```
+
 
 
 

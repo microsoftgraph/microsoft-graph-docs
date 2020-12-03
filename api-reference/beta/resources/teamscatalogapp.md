@@ -12,3 +12,5 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 see [teamsApp](teamsapp.md).
+
+

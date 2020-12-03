@@ -123,17 +123,3 @@ After you create a team, you can use the following checklist to verify that the 
 1. Verify that newly members show up in the group via the Azure AD or Microsoft 365 admin center.
 
 2. Verify that newly added members can see the team after signing into the Teams desktop or web client.
-
-
-
-## How Microsoft 365 group membership changes are synchronized to Microsoft Teams
-
-Membership changes made to a Microsoft 365 group backing a team via the Microsoft Graph API or through the admin portal (outside of the Teams client) have to sync to the Teams service in order for newly added users to be able to see and participate in the team. Changes made directly to the group membership are synchronized to the Teams service via a background process. This background process runs in the Teams service and is triggered by user activity in Teams desktop and web clients.
-
-For the process to get triggered, a current owner or member of that team (someone who can see the team in the Teams client) must have the Teams desktop (ideally) or web client open. Mobile clients do not trigger this sync.
-
-The current SLA for synchronizing membership changes made to groups to Teams is up to 24 hours after the sync is triggered by client activity. It can take longer under certain circumstances (due to service load, for example).
-
-
-![Process for roster sync.](images/teams-roster-sync.png)
-

@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. | Not supported. |
 | Application                            | Not supported. | Not supported. |
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Global admin
 * Privileged authentication admin
@@ -41,7 +41,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ```http
 POST /me/authentication/phoneMethods
-POST /users/{id}/authentication/phoneMethods
+POST /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 
 ## Request headers
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-phoneauthenticationmethod-from-authentication-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-phoneauthenticationmethod-from-authentication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

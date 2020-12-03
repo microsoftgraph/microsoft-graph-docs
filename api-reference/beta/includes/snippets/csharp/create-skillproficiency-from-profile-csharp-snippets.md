@@ -10,11 +10,15 @@ var skillProficiency = new SkillProficiency
 {
 	Categories = new List<String>()
 	{
-		"categories-value"
+		"Professional"
 	},
-	DisplayName = "displayName-value",
-	Proficiency = SkillProficiencyLevel.Elementary,
-	WebUrl = "webUrl-value"
+	AllowedAudiences = AllowedAudiences.Organization,
+	DisplayName = "API Design",
+	Proficiency = SkillProficiencyLevel.GeneralProfessional,
+	CollaborationTags = new List<String>()
+	{
+		"ableToMentor"
+	}
 };
 
 await graphClient.Me.Profile.Skills

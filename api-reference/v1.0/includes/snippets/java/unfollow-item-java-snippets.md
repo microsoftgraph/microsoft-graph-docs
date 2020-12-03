@@ -9,6 +9,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 graphClient.me().drive().items("{item-id}")
 	.unfollow()
 	.buildRequest()
-	.delete();
+	.post();
 
 ```

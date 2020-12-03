@@ -3,7 +3,7 @@ title: "Create managedDeviceEncryptionState"
 description: "Create a new managedDeviceEncryptionState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create the m
 |:---|:---|:---|
 |id|String|Key of the entity.|
 |userPrincipalName|String|User name|
-|deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |osVersion|String|Operating system version of the device|
 |tpmSpecificationVersion|String|Device TPM Version|
 |deviceName|String|Device name|
@@ -126,6 +126,7 @@ Content-Length: 753
   ]
 }
 ```
+
 
 
 

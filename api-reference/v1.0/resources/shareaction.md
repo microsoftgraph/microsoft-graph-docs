@@ -49,3 +49,4 @@ The **shareAction** resource provides information about an [activity][activity] 
   "suppressions": []
 }
 -->
+

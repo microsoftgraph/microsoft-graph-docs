@@ -3,7 +3,7 @@ title: "Create defaultManagedAppProtection"
 description: "Create a new defaultManagedAppProtection object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -133,6 +133,13 @@ The following table shows the properties that are required when you create the d
 |customDialerAppProtocol|String|Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.|
 |customDialerAppPackageId|String|PackageId of a custom dialer app to click-to-open a phone number on Android.|
 |customDialerAppDisplayName|String|Friendly name of a custom dialer app to click-to-open a phone number on Android.|
+|biometricAuthenticationBlocked|Boolean|Indicates whether use of the biometric authentication is allowed in place of a pin if PinRequired is set to True. (Android Only)|
+|requiredAndroidSafetyNetEvaluationType|[androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|Defines the Android SafetyNet evaluation type requirement for a managed app to work. (Android Only). Possible values are: `basic`, `hardwareBacked`.|
+|blockAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.|
+|warnAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning|
+|wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped|
+|deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
+|appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
 
 
 
@@ -146,7 +153,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 4775
+Content-length: 5114
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -257,7 +264,14 @@ Content-length: 4775
   "appActionIfAndroidDeviceModelNotAllowed": "wipe",
   "customDialerAppProtocol": "Custom Dialer App Protocol value",
   "customDialerAppPackageId": "Custom Dialer App Package Id value",
-  "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+  "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+  "biometricAuthenticationBlocked": true,
+  "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
+  "blockAfterCompanyPortalUpdateDeferralInDays": 11,
+  "warnAfterCompanyPortalUpdateDeferralInDays": 10,
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+  "deviceLockRequired": true,
+  "appActionIfDeviceLockNotSet": "wipe"
 }
 ```
 
@@ -266,7 +280,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4947
+Content-Length: 5286
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -380,9 +394,17 @@ Content-Length: 4947
   "appActionIfAndroidDeviceModelNotAllowed": "wipe",
   "customDialerAppProtocol": "Custom Dialer App Protocol value",
   "customDialerAppPackageId": "Custom Dialer App Package Id value",
-  "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+  "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+  "biometricAuthenticationBlocked": true,
+  "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
+  "blockAfterCompanyPortalUpdateDeferralInDays": 11,
+  "warnAfterCompanyPortalUpdateDeferralInDays": 10,
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+  "deviceLockRequired": true,
+  "appActionIfDeviceLockNotSet": "wipe"
 }
 ```
+
 
 
 

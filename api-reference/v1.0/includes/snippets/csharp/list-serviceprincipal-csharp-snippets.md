@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var serviceprincipals = await graphClient.Serviceprincipals
+var servicePrincipals = await graphClient.ServicePrincipals
 	.Request()
 	.GetAsync();
 

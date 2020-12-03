@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/me/insights/used')
-	.orderby('LastUsed/LastAccessedDateTime')
+	.orderby('LastUsed/LastAccessedDateTime desc')
 	.get();
 
 ```

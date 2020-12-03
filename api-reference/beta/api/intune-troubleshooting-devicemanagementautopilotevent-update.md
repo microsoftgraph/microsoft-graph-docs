@@ -3,7 +3,7 @@ title: "Update deviceManagementAutopilotEvent"
 description: "Update the properties of a deviceManagementAutopilotEvent object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -150,6 +150,7 @@ Content-Length: 1406
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
+
 
 
 

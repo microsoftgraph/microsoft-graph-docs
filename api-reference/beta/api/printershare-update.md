@@ -20,7 +20,7 @@ For example, if a physical printer device breaks, an administrator can register 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription. The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
@@ -80,6 +80,10 @@ Content-length: 109
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-printershare-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-printershare-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

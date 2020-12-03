@@ -92,18 +92,18 @@ For the Microsoft identity platform endpoint:
 - Server middleware from Microsoft is available for .NET core and ASP.NET (OWIN OpenID Connect and OAuth) and for Node.js (Microsoft the Microsoft identity platform Passport.js).
 - The Microsoft identity platform is compatible with many third-party authentication libraries.
 
-For a complete list of Microsoft client libraries, Microsoft server middleware, and compatible third-party libraries, see [Microsoft identity platform authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
+For a complete list of Microsoft client libraries, Microsoft server middleware, and compatible third-party libraries, see [Microsoft identity platform authentication libraries](/azure/active-directory/develop/active-directory-v2-libraries).
 
 You do not need to use an authentication library to get an access token. To learn about directly using the Microsoft identity platform endpoints without the help of an authentication library, see [Microsoft identity platform authentication](/azure/active-directory/develop/authentication-scenarios)
 
 ## Next steps
 
 - For quick steps for getting an access token for apps that call Microsoft Graph, choose the type of app that matches your scenario:
-  - [Desktop app](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
-  - [Mobile app](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
-  - [Web app](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
-  - [Single page app](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
-  - [Daemon / background service](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+  - [Desktop app](/azure/active-directory/develop/scenario-desktop-overview)
+  - [Mobile app](/azure/active-directory/develop/scenario-mobile-overview)
+  - [Web app](/azure/active-directory/develop/scenario-web-app-call-api-overview)
+  - [Single page app](/azure/active-directory/develop/scenario-spa-overview)
+  - [Daemon / background service](/azure/active-directory/develop/scenario-daemon-overview)
 - To see the permissions that you can use with Microsoft Graph, see [Permissions](../permissions-reference.md).
 - If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](../auth-cloudsolutionprovider.md).
 
@@ -121,10 +121,10 @@ To help you get started quickly, we've created a series of training modules and 
 
 The Microsoft identity platform documentation contains articles and samples that specifically focus on authentication and authorization with the Microsoft identity platform.
 
-- The easiest place to start is in the [Microsoft identity platform endpoint documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview). This article contains links to overviews, protocol documentation and getting started articles for different platforms all organized by the type of app you're developing.
-- For samples listed by client or server authentication library, see [Microsoft identity platform authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
+- The easiest place to start is in the [Microsoft identity platform endpoint documentation](/azure/active-directory/develop/active-directory-appmodel-v2-overview). This article contains links to overviews, protocol documentation and getting started articles for different platforms all organized by the type of app you're developing.
+- For samples listed by client or server authentication library, see [Microsoft identity platform authentication libraries](/azure/active-directory/develop/active-directory-v2-libraries).
 - Explore the Microsoft identity platform samples by platform in the [Azure Code gallery](https://azure.microsoft.com/resources/samples/?service=active-directory).
 
 ## See also
 
-- [Microsoft identity platform endpoint documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)
+- [Microsoft identity platform endpoint documentation](/azure/active-directory/develop/active-directory-appmodel-v2-overview)

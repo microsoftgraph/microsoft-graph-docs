@@ -3,7 +3,7 @@ title: "Create deviceManagementIntentAssignment"
 description: "Create a new deviceManagementIntentAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -92,6 +92,7 @@ Content-Length: 376
   }
 }
 ```
+
 
 
 

@@ -2,7 +2,7 @@
 title: "operationError resource type"
 description: "Describes errors in teamsAsyncOperation."
 localization_priority: Normal
-author: ""
+author: "billbliss"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -46,3 +46,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

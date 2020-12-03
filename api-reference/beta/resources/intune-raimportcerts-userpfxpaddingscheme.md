@@ -3,7 +3,7 @@ title: "userPfxPaddingScheme enum type"
 description: "Supported values for the padding scheme used by encryption provider."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -26,6 +26,7 @@ Supported values for the padding scheme used by encryption provider.
 |oaepSha256|3|Use OAEP SHA-256 padding.|
 |oaepSha384|4|Use OAEP SHA-384 padding.|
 |oaepSha512|5|Use OAEP SHA-512 padding.|
+
 
 
 

@@ -57,3 +57,4 @@ Here is a JSON representation of the resource
   "resourceReference": { "@odata.type": "microsoft.graph.resourceReference" }
 }
 ```
+

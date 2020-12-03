@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a secureScores object
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # List secureScores
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.   |
+|Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All   |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All. |
+|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## HTTP request
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescores-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securescores-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -157,3 +161,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

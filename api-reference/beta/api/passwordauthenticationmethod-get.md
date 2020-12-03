@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. | Not supported. |
 | Application                            | Not supported. | Not supported. |
 
-For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Global admin
 * Global reader
@@ -38,7 +38,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 
 ```http
 GET /me/authentication/passwordMethods/{id}
-GET /users/{id}/authentication/passwordMethods/{id}
+GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
 ```
 
 ## Optional query parameters
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordMethods/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-passwordauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-passwordauthenticationmethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

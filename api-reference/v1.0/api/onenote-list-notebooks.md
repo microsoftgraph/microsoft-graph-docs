@@ -30,7 +30,7 @@ GET /groups/{id}/onenote/notebooks
 GET /sites/{id}/onenote/notebooks
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 The default sort order is `name asc`. 
 

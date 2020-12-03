@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-892
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-ediscoverycase-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-ediscoverycase-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -97,3 +101,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

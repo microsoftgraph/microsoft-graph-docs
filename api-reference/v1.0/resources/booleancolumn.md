@@ -35,3 +35,4 @@ The **booleanColumn** resource contains no properties.
   "section": "documentation",
   "tocPath": "Resources/BooleanColumn"
 } -->
+

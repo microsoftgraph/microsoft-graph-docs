@@ -3,7 +3,7 @@ title: "Get deviceConfigurationUserOverview"
 description: "Read properties and relationships of the deviceConfigurationUserOverview object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -77,6 +77,9 @@ Content-Length: 368
   }
 }
 ```
+
+
+
 
 
 

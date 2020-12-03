@@ -3,7 +3,7 @@ title: "Update iosWiFiConfiguration"
 description: "Update the properties of a iosWiFiConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -70,6 +70,7 @@ The following table shows the properties that are required when you create the [
 |proxyManualAddress|String|IP Address or DNS hostname of the proxy server when manual configuration is selected.|
 |proxyManualPort|Int32|Port of the proxy server when manual configuration is selected.|
 |proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
+|disableMacAddressRandomization|Boolean|If set to true, forces devices connecting using this Wi-Fi profile to present their actual Wi-Fi MAC address instead of a random MAC address. Applies to iOS 14 and later.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
 
@@ -84,7 +85,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1448
+Content-length: 1491
 
 {
   "@odata.type": "#microsoft.graph.iosWiFiConfiguration",
@@ -125,6 +126,7 @@ Content-length: 1448
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "disableMacAddressRandomization": true,
   "preSharedKey": "Pre Shared Key value"
 }
 ```
@@ -134,7 +136,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1620
+Content-Length: 1663
 
 {
   "@odata.type": "#microsoft.graph.iosWiFiConfiguration",
@@ -178,9 +180,11 @@ Content-Length: 1620
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+  "disableMacAddressRandomization": true,
   "preSharedKey": "Pre Shared Key value"
 }
 ```
+
 
 
 

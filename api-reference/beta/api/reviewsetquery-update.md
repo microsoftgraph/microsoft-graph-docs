@@ -44,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | displayName | String | Display name for they review set query. |
-| query | String | The query string in KQL (Keyword Query Language) query. For details, see [Document metadata fields](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). |
+| query | String | The query string in KQL (Keyword Query Language) query. For details, see [Document metadata fields](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). |
 
 ## Response
 

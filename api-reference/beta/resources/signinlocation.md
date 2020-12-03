@@ -4,7 +4,7 @@ description: "Provides the city, state and country/region from where the sign-in
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "SarahBar"
 ---
 
 # signInLocation resource type
@@ -53,3 +53,5 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

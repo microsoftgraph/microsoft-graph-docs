@@ -35,13 +35,14 @@ Here is a JSON representation of the resource
 }
 ```
 
-// Example
+### Example
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id
   "f117339e-c914-4a9c-9b66-1c062b027556": true,
   "e886d105-23b9-47e2-bde1-757e75ee4a28": true
 }
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -52,3 +53,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 An event in a [user](user.md) calendar, or the default calendar of a Microsoft 365 [group](group.md).
 
-The maximum number of attendees included in an **event**, and the maximum number of recipients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+The maximum number of attendees included in an **event**, and the maximum number of recipients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 This resource supports:
 
@@ -146,8 +146,8 @@ Here is a JSON representation of the resource
 |subject|String|The text of the event's subject line.|
 |transactionId|String|A custom identifier specified by a client app for the server to avoid redundant [POST](../api/calendar-post-events.md) operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set **transactionId** when creating an event, you cannot change **transactionId** in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.|
 |type|String|The event type. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only|
-|uid|String|A unique identifier for calendar events. For recurring events, the value is the same for the series master and all of its occurrences including exceptions. This property will replace the current iCalUid property defined in the [event resource](/graph/api/resources/event?view=graph-rest-1.0), which is different for each instance in a series.|
-|webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL can be accessed from within an iFrame.|
+|uid|String|A unique identifier for calendar events. For recurring events, the value is the same for the series master and all of its occurrences including exceptions. This property will replace the current iCalUid property defined in the [event resource](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), which is different for each instance in a series.|
+|webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL cannot be accessed from within an iFrame.|
 
 > [!NOTE]
 > The **webLink** property specifies a URL that opens the event in only earlier versions of Outlook on the web. The following is its URL format, with _{event-id}_ being the _**URL-encoded**_ value of the **id** property:

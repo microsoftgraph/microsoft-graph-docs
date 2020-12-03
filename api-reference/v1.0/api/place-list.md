@@ -23,7 +23,7 @@ Both **room** and **roomList** are derived from the **place** object.
 
 By default, this operation returns 100 places per page.
 
-Compared with the [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) and [findRoomLists](https://docs.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
+Compared with the [findRooms](/graph/api/user-findrooms?view=graph-rest-beta) and [findRoomLists](/graph/api/user-findroomlists?view=graph-rest-beta) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
 ## Permissions
 

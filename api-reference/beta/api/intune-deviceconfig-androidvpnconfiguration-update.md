@@ -3,7 +3,7 @@ title: "Update androidVpnConfiguration"
 description: "Update the properties of a androidVpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |connectionName|String|Connection name displayed to the user.|
-|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.|
+|connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`, `netMotionMobility`.|
 |role|String|Role when connection type is set to Pulse Secure.|
 |realm|String|Realm when connection type is set to Pulse Secure.|
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements.|
@@ -216,6 +216,7 @@ Content-Length: 1923
   "authenticationMethod": "usernameAndPassword"
 }
 ```
+
 
 
 

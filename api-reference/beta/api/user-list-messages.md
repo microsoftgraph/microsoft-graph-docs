@@ -66,7 +66,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 You can use the `$filter` query parameter on the **mentionsPreview** property to get those messages that mention the signed-in user.
 
@@ -117,6 +117,10 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -258,6 +262,10 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-with-mentions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-with-mentions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response 2
@@ -334,6 +342,10 @@ Prefer: outlook.body-content-type="text"
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-in-text-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

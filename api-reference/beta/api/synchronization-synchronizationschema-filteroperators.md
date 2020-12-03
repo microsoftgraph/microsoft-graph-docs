@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-filteroperators-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationschema-filteroperators-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -200,3 +204,5 @@ non-string type names like "Integer" or "Boolean"
   ]
 }
 -->
+
+

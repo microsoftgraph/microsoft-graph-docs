@@ -241,7 +241,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
 [workbook]: workbook.md
-[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[user]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md
 
 [DriveItemVersion]: driveitemversion.md

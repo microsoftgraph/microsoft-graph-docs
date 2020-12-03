@@ -11,8 +11,8 @@ String callbackUri = "callbackUri-value";
 AppHostedMediaConfig mediaConfig = new AppHostedMediaConfig();
 mediaConfig.blob = "<Media Session Configuration Blob>";
 
-LinkedList<String> acceptedModalitiesList = new LinkedList<String>();
-acceptedModalitiesList.add("audio");
+LinkedList<Modality> acceptedModalitiesList = new LinkedList<Modality>();
+acceptedModalitiesList.add(Modality.AUDIO);
 
 graphClient.communications().calls("{id}")
 	.answer(callbackUri,mediaConfig,acceptedModalitiesList)

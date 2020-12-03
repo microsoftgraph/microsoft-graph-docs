@@ -40,3 +40,4 @@ Possible values for the network protocol.
 |ipx|1000| Internet Packet Exchange Protocol.|
 |spx|1256| Sequenced Packet Exchange protocol.|
 |spxII|1257| Sequenced Packet Exchange version 2 protocol.|
+

@@ -3,7 +3,7 @@ title: "List windows10EnterpriseModernAppManagementConfigurations"
 description: "List properties and relationships of the windows10EnterpriseModernAppManagementConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -103,6 +103,7 @@ Content-Length: 1424
   ]
 }
 ```
+
 
 
 

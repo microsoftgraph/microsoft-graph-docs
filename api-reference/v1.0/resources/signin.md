@@ -1,7 +1,7 @@
 ---
 title: "signIn resource type"
 description: "Details user and application sign-in activity for a tenant (directory)."
-author: "khotz"
+author: "besiler"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
@@ -43,7 +43,7 @@ Details user and application sign-in activity for a tenant (directory).
 |riskLevelAggregated|riskLevel|Aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
 |riskLevelDuringSignIn|riskLevel|Risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
 |riskState|riskState|Reports status of the risky user, sign-in, or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|status|[signInStatus](signinstatus.md)|Sign-in status. Possible values include `Success` and `Failure`.|
+|status|[signInStatus](signinstatus.md)|Sign-in status. Includes the error code and description of the error (in case of a sign-in failure).|
 |userDisplayName|String|Display name of the user that initiated the sign-in.|
 |userId|String|ID of the user that initiated the sign-in.|
 |userPrincipalName|String|User principal name of the user that initiated the sign-in.|
@@ -103,3 +103,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

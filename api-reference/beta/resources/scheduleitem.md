@@ -4,7 +4,7 @@ description: "An item that describes the availability of a user corresponding to
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-teams"
-author: ""
+author: "harini84"
 ---
 
 # scheduleItem resource type
@@ -12,7 +12,7 @@ author: ""
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 An item that describes the availability of a user corresponding to an actual event on the user's default calendar. This item applies to a resource (room or equipment) as well.
 
 ## Properties
@@ -64,3 +64,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

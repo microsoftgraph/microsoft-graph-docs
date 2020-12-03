@@ -21,7 +21,7 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notifications, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
+An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. For details about how to work with these notifications, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
 ## Supported resources
 
@@ -38,8 +38,9 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - Security [alert][]
 - Teams [callRecord][]
-- Teams [chatMessage][] (preview)
+- Teams [chatMessage][]
 - Teams [presence][] (preview)
+- Print [printTaskDefinition][]
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -98,7 +99,7 @@ Each Teams resource has different subscription quotas.
 - For subscriptions to **callRecords**:
   - Per organization: 100 total subscriptions
 
-- For subscriptions to **chatMessages** (channels or chats) (preview):
+- For subscriptions to **chatMessages** (channels or chats):
   - Per app and channel or chat combination: 1 subscription
   - Per organization: 10,000 total subscriptions
 
@@ -164,7 +165,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-1. The client must properly decode the `validationToken` provided in the preceding step, and escape any HTML/JavaScript.
+1. The client must properly URL decode the `validationToken` query parameter provided in the preceding step, and escape any HTML/JavaScript.
 
    Escaping is a good practice because malicious actors can use the notification endpoint for cross-site scripting type of attacks.
 
@@ -174,7 +175,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
     - A status code of `HTTP 200 OK`.
     - A content type of `text/plain`.
-    - A body that includes the _decoded_ validation token.
+    - A body that includes the _URL decoded_ validation token. Simply reflect back the same string that was sent in the `validationToken` query parameter.
 
     The client should discard the validation token after providing it in the response.
 
@@ -274,7 +275,7 @@ The following code samples are available on GitHub.
 
 ## Firewall configuration
 
-You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
+You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
@@ -285,7 +286,7 @@ The following table lists the latency to expect between an event happening in th
 | Resource | Average latency | Maximum latency |
 |:-----|:-----|:-----|
 |[callRecord][] | Less than 15 minutes | 60 minutes |
-|[chatMessage][] (preview) | Less than 10 seconds | 1 minute |
+|[chatMessage][] | Less than 10 seconds | 1 minute |
 |[contact][] | Unknown | Unknown |
 |[driveItem][] | Less than 1 minute | 5 minutes |
 |[event][] | Unknown | Unknown |
@@ -295,6 +296,7 @@ The following table lists the latency to expect between an event happening in th
 |[message][] | Unknown | Unknown |
 |[alert][] | Less than 3 minutes | 5 minutes |
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[printTaskDefinition][] | Less than 1 minute | 5 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
 
 >**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
@@ -307,7 +309,7 @@ The following table lists the latency to expect between an event happening in th
 - [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type
 - [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
-- [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
+- [Lifecycle notifications](/graph/webhooks-lifecycle)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
@@ -321,3 +323,4 @@ The following table lists the latency to expect between an event happening in th
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[printTaskDefinition]: /graph/api/resources/printtaskdefinition

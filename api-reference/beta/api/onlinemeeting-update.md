@@ -17,24 +17,39 @@ Update the **startDateTime**, **endDateTime**, **participants**, and **subject**
 
 ## Permissions
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | OnlineMeetings.ReadWrite              |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | Not Supported.                                  |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
+| Delegated (personal Microsoft account) | Not Supported.                              |
+| Application                            | OnlineMeetings.ReadWrite.All*                |
 
+> [!IMPORTANT]
+> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to update an online meeting on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
+
+Request using a delegated token:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
+PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
 ```
 
+Request using an application token:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
+```
+
+> **Notes:**
+>
+> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> - `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
+
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-| Content-type  | application/json. Required.|
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object. Only the **startDateTime**, **endDateTime**, **participants**, and **subject** properties can be modified. The **startDateTime** and **endDateTime** must appear in pairs.
@@ -73,6 +88,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-onlinemeeting-request-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-onlinemeeting-request-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,6 +122,7 @@ Content-Type: application/json
    "participants":{
       "organizer":{
          "upn":"upn",
+         "role": "presenter",
          "identity":{
             "azureApplicationInstance":null,
             "applicationInstance":null,
@@ -139,3 +159,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

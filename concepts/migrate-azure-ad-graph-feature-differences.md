@@ -3,7 +3,7 @@ title: "Feature differences between Azure AD Graph and Microsoft Graph"
 description: "Describes feature differences between Azure Active Directory (Azure AD) API and Microsoft Graph API, in order to help you migrate apps quickly and easily."
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "azure-active-directory"
 ---
 
 # Feature differences between Azure AD Graph and Microsoft Graph
@@ -20,7 +20,7 @@ This article explores how Microsoft Graph handles:
 
 ## Directory schema extensions
 
-If your app uses Azure AD Graph directory schema extensions, you can continue to use the same basic APIs (with Microsoft Graph request URLs) to:
+If your app uses Azure AD Graph directory extensions, you can continue to use the same basic APIs (with Microsoft Graph request URLs) to:
 
 - Manage extension property definitions using the **extensionProperties** property on the [application][/graph/api/resources/application?view=graph-rest-v1.0) resource.
 - Get available extension properties using the [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0) action.
@@ -29,20 +29,21 @@ If your app uses Azure AD Graph directory schema extensions, you can continue to
 - Update extension values using PATCH
 - Remove extension values using PATCH (set to **null**)
 
-Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory schema extentions. To learn more, see [schema extensions in add custom data](/graph/extensibility-overview#schema-extensions).
+Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory extensions. To learn more, see [schema extensions in add custom data](./extensibility-overview.md#schema-extensions).
 
 ### Recommended migration approach
 
-If your Azure AD Graph app uses directory schema extensions, take an incremental approach to migrate the app to Microsoft Graph.
+If your Azure AD Graph app uses directory extensions, take an incremental approach to migrate the app to Microsoft Graph.
 
-First, switch your app to using Microsoft Graph API calls, but let the app continue to leverage Azure AD Graph directory schema extensions.
+First, switch your app to using Microsoft Graph API calls, but let the app continue to leverage Azure AD Graph directory extensions.
 
 Then, you can switch to using Microsoft Graph schema extensions. In some cases, switching will not be appropriate. Do not switch if:
 
-- Your app uses directory schema extensions created through AD Connect, or
-- Your app relies on directory schema extension values in token claims.
+- Your app uses directory extensions created through AD Connect
+- Your app sets directory extension values that are used in token claims by other apps
+- Your app sets directory extension values that are used in dynamic membership rules 
 
->**NOTE**: Using Microsoft Graph schema extension properties as claims in a token using optional claims or in a dynamic membership rule is also not yet supported.
+>**NOTE**: Using Microsoft Graph schema extension properties as claims in a token using optional claims or in a dynamic membership rule is not yet supported.
 
 To switch to the newer Microsoft Graph schema extension model, you'll need to:
 
@@ -54,7 +55,7 @@ To switch to the newer Microsoft Graph schema extension model, you'll need to:
 
 Azure AD Graph and Microsoft Graph let you track changes using queries.  The high-level approach is similar between the two APIs, but the syntax is different.
 
-Azure AD Graph calls these differential queries.  In Microsoft Graph, they're [delta queries](/graph/delta-query-overview).
+Azure AD Graph calls these differential queries.  In Microsoft Graph, they're [delta queries](./delta-query-overview.md).
 
 The following table highlights key similarities and differences:
 
@@ -77,10 +78,7 @@ Azure AD Graph used a system called multi-part MIME messages to manage batching.
 ## Next Steps
 
 - Learn about [resource differences](migrate-azure-ad-graph-resource-differences.md) between Azure AD Graph and Microsoft Graph.
-- Explore [add custom data](/graph/extensibility-overview) for information about open and schema extensions.
-- Explore [delta queries](/graph/delta-query-overview) to learn about Microsoft Graph's version of differential query.
-- Explore [JSON batching](json-batching.md) to understand how batching works in Microsoft Graph.
-- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
 
 <!-- {
   "type": "#page.annotation",

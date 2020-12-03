@@ -31,3 +31,5 @@ Azure Active Directory (Azure AD) uses policies to control Azure AD feature beha
 
 * Review the different policy resouce types listed above and their various methods.
 * Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+
+

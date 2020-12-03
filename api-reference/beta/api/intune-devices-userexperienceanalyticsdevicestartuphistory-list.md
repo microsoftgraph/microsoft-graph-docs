@@ -3,7 +3,7 @@ title: "List userExperienceAnalyticsDeviceStartupHistories"
 description: "List properties and relationships of the userExperienceAnalyticsDeviceStartupHistory objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 675
+Content-Length: 834
 
 {
   "value": [
@@ -79,11 +79,15 @@ Content-Length: 675
       "totalLoginTimeInMs": 2,
       "isFirstLogin": true,
       "isFeatureUpdate": true,
-      "operatingSystemVersion": "Operating System Version value"
+      "operatingSystemVersion": "Operating System Version value",
+      "restartCategory": "restartWithUpdate",
+      "restartStopCode": "Restart Stop Code value",
+      "restartFaultBucket": "Restart Fault Bucket value"
     }
   ]
 }
 ```
+
 
 
 

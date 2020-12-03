@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /planner/plans
 ```
 ## Optional query parameters
-This method requires owner [filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to be specified.
+This method requires owner [filter](/graph/query-parameters) to be specified.
 
 ## Request headers
 | Name      |Description|
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/planner/plans
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-plans-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-plans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

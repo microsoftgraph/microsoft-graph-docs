@@ -3,7 +3,7 @@ title: "termsAndConditions resource type"
 description: "A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -65,6 +65,8 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
+
+
 
 
 

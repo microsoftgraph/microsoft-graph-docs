@@ -10,9 +10,9 @@ var claimsMappingPolicy = new ClaimsMappingPolicy
 {
 	Definition = new List<String>()
 	{
-		"{\"ClaimsMappingPolicy\": {\r\n                \"Version\": 1,\r\n                \"IncludeBasicClaimSet\": \"true\",\r\n                \"ClaimsSchema\": [\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"assignedroles\",\r\n                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"userprincipalname\",\r\n                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"900\",\r\n                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"assignedroles\",\r\n                        \"SamlClaimType\": \"appRoles\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"userprincipalname\",\r\n                        \"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"\r\n                    }\r\n                ]\r\n            }\r\n        }"
+		"{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
 	},
-	DisplayName = "AWS Claims policy",
+	DisplayName = "AWS Claims Policy",
 	IsOrganizationDefault = false
 };
 

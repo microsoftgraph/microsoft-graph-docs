@@ -4,7 +4,7 @@ description: "Configuration settings to automatically notify the sender of an in
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "svpsiva"
 ---
 
 # automaticRepliesSetting resource type
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuration settings to automatically notify the sender of an incoming email with a message from the 
-signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to 
-respond to emails. 
+Configuration settings to automatically notify the sender of an incoming email with a message from the
+signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to
+respond to emails.
 
 
 ## Properties
@@ -64,3 +64,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

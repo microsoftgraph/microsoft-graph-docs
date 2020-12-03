@@ -19,7 +19,7 @@ Describes the status of the provisioning summary event.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|String| Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.|
+|status|String| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
 
 ## JSON representation
 
@@ -49,3 +49,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

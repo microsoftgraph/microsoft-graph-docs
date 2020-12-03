@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/oauth2permissiongrants/delta')
+let res = await client.api('/oauth2PermissionGrants/delta')
 	.get();
 
 ```

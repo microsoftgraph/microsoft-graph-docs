@@ -4,7 +4,7 @@ description: "Specifies a domain for a tenant. The **verifiedDomains** property 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "davidmu1"
 ---
 
 # verifiedDomain resource type
@@ -60,3 +60,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

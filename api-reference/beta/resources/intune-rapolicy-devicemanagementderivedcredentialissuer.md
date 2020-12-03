@@ -3,7 +3,7 @@ title: "deviceManagementDerivedCredentialIssuer enum type"
 description: "Supported values for the derived credential issuer."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -24,6 +24,7 @@ Supported values for the derived credential issuer.
 |entrustDatacard|1|Entrust Datacard|
 |purebred|2|Purebred|
 |xTec|3|XTec|
+
 
 
 

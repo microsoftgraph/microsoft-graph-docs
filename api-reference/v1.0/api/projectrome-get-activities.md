@@ -3,7 +3,7 @@ title: "Get user activities"
 description: "Get activities for a given user. Unlike the **recent** OData function, activities without histories will be returned. The permission UserActivity.ReadWrite.CreatedByApp will apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate."
 localization_priority: Normal
 ms.prod: "project-rome"
-author: ""
+author: "ailae"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ GET /me/activities
 
 ## Optional query parameters
 
-This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response. The following query parameters are supported:
+This method supports some [OData Query Parameters](/graph/query-parameters) to help customize the response. The following query parameters are supported:
 
 - $expand for the **historyItems** navigation property.
 - $top to limit the maximum number of items across pages.

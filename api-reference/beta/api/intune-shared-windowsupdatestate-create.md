@@ -3,7 +3,7 @@ title: "Create windowsUpdateState"
 description: "Create a new windowsUpdateState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the w
 |userId|String|The id of the user.|
 |deviceDisplayName|String|Device display name.|
 |userPrincipalName|String|User principal name.|
-|status||Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |qualityUpdateVersion|String|The Quality Update Version of the device.|
 |featureUpdateVersion|String|The current feature update version of the device.|
 |lastScanDateTime|DateTimeOffset|The date time that the Windows Update Agent did a successful scan.|
@@ -112,6 +112,7 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
 
 
 

@@ -15,9 +15,15 @@ const externalItem = {
   acl: [
     {
       type: "user",
-      value: "49103559-feac-4575-8b94-254814dfca72",
+      value: "e811976d-83df-4cbd-8b9b-5215b18aa874",
+      accessType: "grant",
+      identitySource: "azureActiveDirectory"
+    },
+    {
+      type: "group",
+      value: "14m1b9c38qe647f6a",
       accessType: "deny",
-      identitySource: "Azure Active Directory"
+      identitySource: "external"
     }
   ],
   properties: {
@@ -26,8 +32,8 @@ const externalItem = {
     assignee: "john@contoso.com"
   },
   content: {
-    value: "<h1>Error in payment gateway</h1><p>Error details...</p>",
-    type: "html"
+    value: "Error in payment gateway...",
+    type: "text"
   }
 };
 

@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-oauth2permissiongrant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-oauth2permissiongrant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -109,3 +113,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

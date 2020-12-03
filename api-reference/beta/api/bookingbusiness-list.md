@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /bookingBusinesses
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 This method also supports the `query` parameter which accepts a string value. This parameter limits the GET results to businesses that match the specified string. You can see an [example](#request-2) below.
 
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bookingbusinesses-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -124,6 +128,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/query-bookingbusinesses-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/query-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

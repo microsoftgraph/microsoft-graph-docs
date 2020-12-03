@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-boolean bargeInAllowed = true;
+Boolean bargeInAllowed = true;
 
 String clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
 
@@ -25,7 +25,7 @@ int initialSilenceTimeoutInSeconds = 5;
 
 int maxSilenceTimeoutInSeconds = 2;
 
-boolean playBeep = true;
+Boolean playBeep = true;
 
 LinkedList<String> stopTonesList = new LinkedList<String>();
 stopTonesList.add("#");

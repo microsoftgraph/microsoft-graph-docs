@@ -23,3 +23,4 @@ You can use the SharePoint activity reports to get the activity of every user li
 | [Get file counts](../api/reportroot-getsharepointactivityfilecounts.md) | Stream      | Get the number of unique, licensed users who interacted with files stored on SharePoint sites. |
 | [Get user counts](../api/reportroot-getsharepointactivityusercounts.md) | Stream      | Get the trend in the number of active users. A user is considered active if he or she has executed a file activity (save, sync, modify, or share) or visited a page within the specified time period. |
 | [Get pages](../api/reportroot-getsharepointactivitypages.md) | Stream      | Get the number of unique pages visited by users. |
+

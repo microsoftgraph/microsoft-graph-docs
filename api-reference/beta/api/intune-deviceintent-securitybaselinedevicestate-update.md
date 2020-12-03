@@ -3,7 +3,7 @@ title: "Update securityBaselineDeviceState"
 description: "Update the properties of a securityBaselineDeviceState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -96,6 +96,7 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
 
 
 

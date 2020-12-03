@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const personName = {
-  displayName: "displayName-value",
-  first: "first-value",
-  initials: "initials-value",
-  last: "last-value",
-  languageTag: "languageTag-value",
-  maiden: "maiden-value"
+  displayName: "Innocenty Popov",
+  first: "Innocenty",
+  initials: "IP",
+  last: "Popov",
+  languageTag: "en-US",
+  maiden: null
 };
 
 let res = await client.api('/me/profile/names')

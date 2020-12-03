@@ -1,19 +1,19 @@
 ---
-title: "Create Channel"
-description: "Create a new channel in a Microsoft Team, as specified in the request body."
+title: "Create channel"
+description: "Create new channel in a Microsoft Team, as specified in the request body."
 localization_priority: Normal
-author: "clearab"
+author: "laujan"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create Channel
+# Create channel
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.
+Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Channel.Create.Group*, Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All    |
+|Application | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -40,7 +40,7 @@ POST /teams/{id}/channels
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -48,7 +48,12 @@ In the request body, supply a JSON representation of [channel](../resources/chan
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [channel](../resources/channel.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body.
+
+If the request is unsuccessful, this method returns a `400 Bad Request` response code. The following are common reasons for this response:
+
+* **createdDateTime** is set in the future.
+* **createdDateTime** is correctly specified but the **channelCreationMode** instance attribute is missing or set to an invalid value.
 
 ## Examples
 
@@ -73,6 +78,7 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,6 +89,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -116,7 +126,6 @@ Content-length: 201
 
 The following example shows a request to create a private channel and add a user as an team owner.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -142,6 +151,7 @@ Content-type: application/json
      ]
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -154,9 +164,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-
+<!-- markdownlint-disable MD001 -->
+<!-- markdownlint-disable MD024 -->
 #### Response
 
 The following example shows the response.
@@ -183,6 +198,39 @@ Content-length: 201
     "membershipType": "private"
 }
 ```
+
+### Example 3: Create a channel in migration mode
+
+#### Request
+
+The following example shows how to create a channel for imported messages.
+
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels
+Content-Type: application/json
+
+{
+  "@microsoft.graph.channelCreationMode": "migration",
+  "displayName": "Architecture Discussion",
+  "description": "This channel is where we debate all future architecture plans",
+  "membershipType": "standard",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+#### Response
+
+```http
+HTTP/1.1 202 Accepted
+Location: /teams/{teamId}/channels/{channelId}/operations/{operationId}
+Content-Location: /teams/{teamId}/channels/{channelId}
+```
+
+## See also
+
+* [Complete migration for a channel](channel-completemigration.md)
+* [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [Create team](team-post.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

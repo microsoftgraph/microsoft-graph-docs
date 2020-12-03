@@ -3,7 +3,7 @@ title: "Get circularGeofenceManagementCondition"
 description: "Read properties and relationships of the circularGeofenceManagementCondition object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -85,6 +85,7 @@ Content-Length: 586
   }
 }
 ```
+
 
 
 

@@ -32,7 +32,7 @@ GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
 ## Optional query parameters
-This method supports the `select` and `expand` [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the `select` and `expand` [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 Valid `expand` values for notebooks are `sections` and `sectionGroups`.
 
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-notebook-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-notebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -7,11 +7,14 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create outlookTask
+# Create outlookTask (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.
 
@@ -87,6 +90,10 @@ Content-length: 276
 [!INCLUDE [sample-code](../includes/snippets/objc/create-outlooktask-from-outlookuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-outlooktask-from-outlookuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
@@ -154,3 +161,5 @@ Content-length: 576
   ]
 }
 -->
+
+

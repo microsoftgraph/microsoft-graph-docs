@@ -12,13 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphUserAccountInformation *userAccountInformation = [[MSGraphUserAccountInformation alloc] init];
-[userAccountInformation setAgeGroup:@"ageGroup-value"];
-[userAccountInformation setCountryCode:@"countryCode-value"];
-MSGraphLocaleInfo *preferredLanguageTag = [[MSGraphLocaleInfo alloc] init];
-[preferredLanguageTag setLocale:@"locale-value"];
-[preferredLanguageTag setDisplayName:@"displayName-value"];
-[userAccountInformation setPreferredLanguageTag:preferredLanguageTag];
-[userAccountInformation setUserPrincipalName:@"userPrincipalName-value"];
+[userAccountInformation setCountryCode:@"NO"];
 
 NSError *error;
 NSData *userAccountInformationData = [userAccountInformation getSerializedDataWithError:&error];

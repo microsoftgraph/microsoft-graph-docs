@@ -8,9 +8,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var languageProficiency = new LanguageProficiency
 {
-	DisplayName = "displayName-value",
-	Tag = "tag-value",
-	Proficiency = LanguageProficiencyLevel.Elementary
+	DisplayName = "Norwegian Bokmål",
+	Tag = "nb-NO",
+	Spoken = LanguageProficiencyLevel.NativeOrBilingual,
+	Written = LanguageProficiencyLevel.NativeOrBilingual,
+	Reading = LanguageProficiencyLevel.NativeOrBilingual
 };
 
 await graphClient.Me.Profile.Languages

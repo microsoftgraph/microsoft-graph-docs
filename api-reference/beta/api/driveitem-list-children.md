@@ -75,6 +75,10 @@ GET /me/drive/root/children
 [!INCLUDE [sample-code](../includes/snippets/objc/list-children-root-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-children-root-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -100,6 +104,10 @@ GET /drives/{drive-id}/items/{item-id}/children
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-children-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -140,7 +148,7 @@ Content-type: application/json
 
 **Note:** If a collection exceeds the default page size (200 items), the **\@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
 
-You can control the page size through [optional query string parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
+You can control the page size through [optional query string parameters](/graph/query-parameters)
 
 ### Error responses
 

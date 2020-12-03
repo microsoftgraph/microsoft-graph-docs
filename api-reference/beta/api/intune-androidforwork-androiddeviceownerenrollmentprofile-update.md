@@ -3,7 +3,7 @@ title: "Update androidDeviceOwnerEnrollmentProfile"
 description: "Update the properties of a androidDeviceOwnerEnrollmentProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,8 @@ The following table shows the properties that are required when you create the [
 |id|String|Unique GUID for the enrollment profile.|
 |displayName|String|Display name for the enrollment profile.|
 |description|String|Description for the enrollment profile.|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`.|
+|enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|The enrollment token type for an enrollment profile. Possible values are: `default`, `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
 |lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
 |tokenValue|String|Value of the most recently created token for this enrollment profile.|
@@ -75,7 +76,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
-Content-length: 678
+Content-length: 758
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -83,6 +84,7 @@ Content-length: 678
   "displayName": "Display Name value",
   "description": "Description value",
   "enrollmentMode": "corporateOwnedFullyManaged",
+  "enrollmentTokenType": "corporateOwnedDedicatedDeviceWithAzureADSharedMode",
   "tokenValue": "Token Value value",
   "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
@@ -104,7 +106,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 850
+Content-Length: 930
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -113,6 +115,7 @@ Content-Length: 850
   "displayName": "Display Name value",
   "description": "Description value",
   "enrollmentMode": "corporateOwnedFullyManaged",
+  "enrollmentTokenType": "corporateOwnedDedicatedDeviceWithAzureADSharedMode",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "tokenValue": "Token Value value",
@@ -130,6 +133,7 @@ Content-Length: 850
   ]
 }
 ```
+
 
 
 

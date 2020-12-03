@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents identity providers with [External Identities](https://docs.microsoft.com/azure/active-directory/external-identities/) for both Azure Active Directory tenant and an Azure AD B2C tenant.
+Represents identity providers with [External Identities](/azure/active-directory/external-identities/) for both Azure Active Directory tenant and an Azure AD B2C tenant.
 
 For Azure AD B2B scenarios in an Azure AD tenant, the identity provider type can be Google or Facebook.
 
@@ -57,7 +57,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityProvider"
 } -->
 
 ```json

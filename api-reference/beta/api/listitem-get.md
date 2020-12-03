@@ -24,9 +24,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+|Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All |
+
+> **Note**: The application permission Sites.Manage.All is required if the SharePoint list has content approval settings turned on. Otherwise, Microsoft Graph won't retrieve list items that have an approval status other than Approved.
 
 ## HTTP request
 
@@ -57,6 +59,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -92,3 +98,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

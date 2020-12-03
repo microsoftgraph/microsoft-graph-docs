@@ -141,7 +141,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 #### Response
 
-The following is an example of the response. If the sessions list is truncated, a `sessions@odata.nextlink` value will be provided to retrieve the next page of sessions.
+The following is an example of the response. If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -383,7 +383,7 @@ Content-type: application/json
             ]
         }
     ],
-    "sessions@odata.nextlink": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
+    "sessions@odata.nextLink": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
 }
 ```
 
@@ -396,3 +396,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,7 +3,7 @@ title: "iosGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iosGeneralDeviceConfiguration resource."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -166,7 +166,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passcodeMinimumCharacterSetCount|Int32|Number of character sets a passcode must contain. Valid values 0 to 4|
 |passcodePreviousPasscodeBlockCount|Int32|Number of previous passcodes to block. Valid values 1 to 24|
-|passcodeSignInFailureCountBeforeWipe|Int32|Number of sign in failures allowed before wiping the device. Valid values 4 to 11|
+|passcodeSignInFailureCountBeforeWipe|Int32|Number of sign in failures allowed before wiping the device. Valid values 2 to 11|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Type of passcode that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Boolean|Indicates whether or not to require a passcode.|
 |podcastsBlocked|Boolean|Indicates whether or not to block the user from using podcasts on the supervised device (iOS 8.0 and later).|
@@ -219,6 +219,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |findMyFriendsInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Friends when the device is supervised (iOS 13 or later).|
 |iTunesBlocked|Boolean|Indicates whether or not to block the iTunes app. Requires a supervised device for iOS 13 and later.|
 |sharedDeviceBlockTemporarySessions|Boolean|Indicates whether or not to block temporary sessions on Shared iPads (iOS 13.4 or later).|
+|appClipsBlocked|Boolean|Prevents a user from adding any App Clips and removes any existing App Clips on the device.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 ## Relationships
@@ -531,9 +532,11 @@ Here is a JSON representation of the resource.
   "findMyFriendsInFindMyAppBlocked": true,
   "iTunesBlocked": true,
   "sharedDeviceBlockTemporarySessions": true,
+  "appClipsBlocked": true,
   "kioskModeAppType": "String"
 }
 ```
+
 
 
 

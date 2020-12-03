@@ -38,7 +38,7 @@ GET /users/{id}/joinedTeams
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+The [OData Query Parameters](/graph/query-parameters) are not currently supported.
 
 ## Request headers
 | Header       | Value |
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-joinedteams-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-joinedteams-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,7 +3,7 @@ title: "windowsInformationProtectionWipeAction resource type"
 description: "Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) Windows devices."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -60,6 +60,7 @@ Here is a JSON representation of the resource.
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

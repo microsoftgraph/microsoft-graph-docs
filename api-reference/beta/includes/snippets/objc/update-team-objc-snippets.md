@@ -12,6 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphTeam *team = [[MSGraphTeam alloc] init];
+[team setIsMembershipLimitedToOwners: true];
 MSGraphTeamMemberSettings *memberSettings = [[MSGraphTeamMemberSettings alloc] init];
 [memberSettings setAllowCreateUpdateChannels: true];
 [team setMemberSettings:memberSettings];

@@ -71,7 +71,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/extractLabel
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/extractLabel
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
@@ -136,6 +136,10 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-extractlabel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-extractlabel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -180,3 +184,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

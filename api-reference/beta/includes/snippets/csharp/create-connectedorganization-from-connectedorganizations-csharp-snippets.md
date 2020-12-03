@@ -17,7 +17,8 @@ var connectedOrganization = new ConnectedOrganization
 			DomainName = "example.com",
 			DisplayName = "example.com"
 		}
-	}
+	},
+	State = ConnectedOrganizationState.Proposed
 };
 
 await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations

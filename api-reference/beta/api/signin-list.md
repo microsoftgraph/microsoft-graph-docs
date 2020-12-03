@@ -3,7 +3,7 @@ title: "List signIns"
 doc_type: apiPageType
 description: "Get a list of the user sign-ins in an Azure Active Directory tenant."
 localization_priority: Normal
-author: "khotz"
+author: "besiler"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -39,9 +39,9 @@ This method supports the following OData Query Parameters to help customize the 
 
 | Name | Description | Example |
 |:---- |:----------- |:------- |
-| [$filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)| Filters results (rows). | `/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24` |
-| [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter) | Sets the page size of results. | `/auditLogs/signIns?$top=1` |
-| [$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. |`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
+| [$filter](/graph/query-parameters#filter-parameter)| Filters results (rows). | `/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24` |
+| [$top](/graph/query-parameters#top-parameter) | Sets the page size of results. | `/auditLogs/signIns?$top=1` |
+| [$skiptoken](/graph/query-parameters#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. |`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
 ### Attributes supported by $filter parameter
 
@@ -124,6 +124,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signins-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signins-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -273,6 +277,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signins-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signins-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

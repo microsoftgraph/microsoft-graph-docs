@@ -3,7 +3,7 @@ title: "Update windows10VpnConfiguration"
 description: "Update the properties of a windows10VpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -75,7 +75,7 @@ The following table shows the properties that are required when you create the [
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |enableConditionalAccess|Boolean|Enable conditional access.|
 |enableSingleSignOnWithAlternateCertificate|Boolean|Enable single sign-on (SSO) with alternate certificate.|
-|singleSignOnEku|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Single sign-on Extended Key Usage (EKU).|
+|singleSignOnEku|[extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md)|Single sign-on Extended Key Usage (EKU).|
 |singleSignOnIssuerHash|String|Single sign-on issuer hash.|
 |eapXml|Binary|Extensible Authentication Protocol (EAP) XML. (UTF8 encoded byte array)|
 |proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Proxy Server.|
@@ -409,6 +409,7 @@ Content-Length: 4635
   }
 }
 ```
+
 
 
 

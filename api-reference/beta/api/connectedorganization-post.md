@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|The connected organization name. |
 |description|String|The connected organization description.|
 |identitySources|[identitySource](../resources/identitysource.md) collection|A collection with one element, the initial identity source in this connected organization.|
-
+|state|connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
 
 ## Response
 
@@ -82,7 +82,8 @@ Content-length: 100
       "domainName": "example.com",
       "displayName": "example.com"
       }
-  ]
+  ],
+  "state":"proposed"
 }
 ```
 # [C#](#tab/csharp)
@@ -95,6 +96,10 @@ Content-length: 100
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-connectedorganization-from-connectedorganizations-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-connectedorganization-from-connectedorganizations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -119,7 +124,8 @@ Content-type: application/json
   "createdBy": "admin@contoso.com",
   "createdDateTime": "2020-06-08T20:13:53.7099947Z",
   "modifiedBy": "admin@contoso.com",
-  "modifiedDateTime": "2020-06-08T20:13:53.7099947Z"
+  "modifiedDateTime": "2020-06-08T20:13:53.7099947Z",
+  "state":"proposed"
 }
 ```
 
@@ -132,3 +138,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

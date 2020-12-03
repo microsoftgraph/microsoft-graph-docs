@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/phones/{id}')
+let res = await client.api('/me/profile/phones')
 	.version('beta')
 	.get();
 

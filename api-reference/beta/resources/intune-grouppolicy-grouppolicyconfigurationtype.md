@@ -3,7 +3,7 @@ title: "groupPolicyConfigurationType enum type"
 description: "Group Policy Configuration Type"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -22,6 +22,7 @@ Group Policy Configuration Type
 |:---|:---|:---|
 |policy|0|The policy type does not tattoo the value, which means the value is removed allowing the original configuration value to be used. The policy type supercedes application configuration setting so the application is always aware of the value. The policy type prevents the user from modifying the value through the application's user interface.|
 |preference|1|The preference type does tattoo the value, which means the value is not removed from the registry. The preference type will overwrite the user configured-value and does not retain the previous value. The preference type does not prevent the user from modifying the value through the application's user interface.|
+
 
 
 

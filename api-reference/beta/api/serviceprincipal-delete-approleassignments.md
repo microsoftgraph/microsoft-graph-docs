@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Deletes an [appRoleAssignment](../resources/approleassignment.md) that a service principal has been granted.
 
-App roles which are assigned to service principals are also known as [application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
+App roles which are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
 
 ## Permissions
 
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignment
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delete-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

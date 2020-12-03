@@ -23,3 +23,4 @@ You can use the Skype for Business peer-to-peer activity reports to get details 
 | [Get user counts](../api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md) | Stream      | Get usage trends on the number of unique users and type of peer-to-peer sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions. |
 | [Get minute counts](../api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md) | Stream      | Get usage trends on the length in minutes and type of peer-to-peer sessions held in your organization. Types of sessions include audio and video. |
 
+

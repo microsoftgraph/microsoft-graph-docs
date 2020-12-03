@@ -19,7 +19,7 @@ var acceptedModalities = new List<Modality>()
 };
 
 await graphClient.Communications.Calls["{id}"]
-	.Answer(callbackUri,mediaConfig,acceptedModalities)
+	.Answer(callbackUri,mediaConfig,acceptedModalities,null)
 	.Request()
 	.PostAsync();
 

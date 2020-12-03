@@ -27,7 +27,7 @@ Represents a print connector that has been registered by using a Universal Print
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String| Read-only.|
-|name|String|The name of the connector.|
+|displayName|String|The name of the connector.|
 |fullyQualifiedDomainName|String|The connector machine's hostname.|
 |operatingSystem|String|The connector machine's operating system version.|
 |appVersion|String|The connector's version.|
@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
+  "displayName": "String",
   "fullyQualifiedDomainName": "String",
   "operatingSystem": "String",
   "appVersion": "String",
@@ -71,3 +71,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

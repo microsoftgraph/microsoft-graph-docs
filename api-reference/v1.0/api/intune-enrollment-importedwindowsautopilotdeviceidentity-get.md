@@ -3,7 +3,7 @@ title: "Get importedWindowsAutopilotDeviceIdentity"
 description: "Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -82,6 +82,9 @@ Content-Length: 635
   }
 }
 ```
+
+
+
 
 
 

@@ -3,7 +3,7 @@ title: "Create deviceComplianceScheduledActionForRule"
 description: "Create a new deviceComplianceScheduledActionForRule object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -84,6 +84,7 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
+
 
 
 

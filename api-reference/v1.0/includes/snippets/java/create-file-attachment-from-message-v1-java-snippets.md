@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 FileAttachment attachment = new FileAttachment();
 attachment.name = "smile";
-attachment.contentBytes = "R0lGODdhEAYEAA7";
+attachment.contentBytes = Base64.getDecoder().decode("R0lGODdhEAYEAA7");
 
 graphClient.me().messages("AAMkpsDRVK").attachments()
 	.buildRequest()

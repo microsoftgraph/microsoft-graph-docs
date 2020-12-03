@@ -3,7 +3,7 @@ title: "iosWallpaperDisplayLocation enum type"
 description: "An enum type for wallpaper display location specifier."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -24,6 +24,7 @@ An enum type for wallpaper display location specifier.
 |lockScreen|1|A configured wallpaper image is displayed on Lock screen.|
 |homeScreen|2|A configured wallpaper image is displayed on Home (icon list) screen.|
 |lockAndHomeScreens|3|A configured wallpaper image is displayed on Lock screen and Home screen.|
+
 
 
 

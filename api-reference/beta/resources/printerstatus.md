@@ -18,9 +18,9 @@ Represents the processing status of the printer, including any errors.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|processingState|printerProcessingState|The current processing state. Valid values are described in the following table. Read-only.|
-|processingStateReasons|printerProcessingStateReason collection|The list of reasons describing why the printer is in the current state. Valid values are described in the following table. Read-only.|
-|processingStateDescription|String|A human-readable description of the printer's current processing state. Read-only.|
+|state|printerProcessingState|The current processing state. Valid values are described in the following table. Read-only.|
+|details|printerProcessingStateDetail collection|The list of details describing why the printer is in the current state. Valid values are described in the following table. Read-only.|
+|description|String|A human-readable description of the printer's current processing state. Read-only.|
 
 ### printerProcessingState values
 
@@ -29,10 +29,10 @@ Represents the processing status of the printer, including any errors.
 |unknown|0|The processing state reported by the printer is unknown.|
 |idle|1|The printer is idle and ready to accept new print jobs.|
 |processing|2|The printer is currently processing a print job and will process any pending jobs upon completion.|
-|stopped|3|The printer encountered an issue (for example, ran out of paper in the active tray) and cannot continue the current print job until the issue is addressed. See the **printerProcessingStateReasons** value(s) or the **printerProcessingStateDescription** value for more information.|
+|stopped|3|The printer encountered an issue (for example, ran out of paper in the active tray) and cannot continue the current print job until the issue is addressed. See the **details** value(s) or the **description** value for more information.|
 |unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
 
-### printerProcessingStateReason values
+### printerProcessingStateDetail values
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -72,9 +72,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "processingState": "String",
-    "processingStateReasons": ["String"],
-    "processingStateDescription": "String"
+    "state": "String",
+    "details": ["String"],
+    "description": "String"
 }
 ```
 
@@ -87,3 +87,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

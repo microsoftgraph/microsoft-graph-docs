@@ -2,7 +2,7 @@
 title: "attendee resource type"
 description: "An event attendee. This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant."
 localization_priority: Normal
-author: ""
+author: "harini84"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -56,3 +56,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

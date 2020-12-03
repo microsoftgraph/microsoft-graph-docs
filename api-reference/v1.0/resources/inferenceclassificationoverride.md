@@ -2,7 +2,7 @@
 title: "inferenceClassificationOverride resource type"
 description: "Represents a user's override for how incoming messages from a specific sender should always be classified as."
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -63,3 +63,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,7 +3,7 @@ title: "Get managedMobileLobApp"
 description: "Read properties and relationships of the managedMobileLobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1153
+Content-Length: 1214
 
 {
   "value": {
@@ -94,6 +94,8 @@ Content-Length: 1153
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appAvailability": "lineOfBusiness",
     "version": "Version value",
     "committedContentVersion": "Committed Content Version value",
@@ -102,6 +104,7 @@ Content-Length: 1153
   }
 }
 ```
+
 
 
 

@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create an new chat; you must use the [list chats](chat-list.md) method to retreive the ID of an existing chat before creating a chat message.
+Create a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before creating a chat message.
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
-> **Note**: It is a violation of the [terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 ## Permissions
 
@@ -72,7 +72,7 @@ Content-type: application/json
 
 {
   "body": {
-     "content" : "Hello world"
+     "content": "Hello world"
   }
 }
 ```
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-chat-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

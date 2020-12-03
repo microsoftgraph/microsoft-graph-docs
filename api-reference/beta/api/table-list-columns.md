@@ -30,7 +30,7 @@ GET /workbook/tables/{id|name}/columns
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response. For reliable results, use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through the results. This will help avoid performance problems related to large result sets.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response. For reliable results, use the [$top](/graph/query-parameters#top) and [$skip](/graph/query-parameters#skip-parameter) query parameters to page through the results. This will help avoid performance problems related to large result sets.
 
 ## Request headers
 | Name      |Description|
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|nam
 [!INCLUDE [sample-code](../includes/snippets/objc/get-columns-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-columns-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -95,7 +99,7 @@ Content-length: 126
 }
 ```
 
-> **Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through large numbers of columns.
+> **Note:** Use the [$top](/graph/query-parameters#top) and [$skip](/graph/query-parameters#skip-parameter) query parameters to page through large numbers of columns.
 
 Example: 
 

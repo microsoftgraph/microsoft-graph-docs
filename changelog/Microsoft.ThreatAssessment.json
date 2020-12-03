@@ -1,9 +1,9 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "e3622b25-a722-40ba-992f-197418e8cfa3",
+          "Id": "6990ba5d-3fd0-4c0f-836d-2ce020b1d2f5",
           "ApiChange": "Property",
           "ChangedApiName": "incidentIds,resource,resourceType,sourceLocation,destinationLocation",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "alert,securityResources,networkConnection"
         }
       ],
-      "Id": "e3622b25-a722-40ba-992f-197418e8cfa3",
+      "Id": "6990ba5d-3fd0-4c0f-836d-2ce020b1d2f5",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -21,7 +21,7 @@
     {
       "ChangeList": [
         {
-          "Id": "7489b2ae-0ad0-45a0-8f81-4aca5a0d36a9",
+          "Id": "7f201f04-85ef-49cb-849f-4885fdd08870",
           "ApiChange": "Resource",
           "ChangedApiName": "create,get,list,threatAssessmentRequest",
           "ChangeType": "Addition",
@@ -29,7 +29,7 @@
           "Target": "create,get,list,threatAssessmentRequest"
         }
       ],
-      "Id": "7489b2ae-0ad0-45a0-8f81-4aca5a0d36a9",
+      "Id": "7f201f04-85ef-49cb-849f-4885fdd08870",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-02-01T00:00:00",
@@ -39,7 +39,7 @@
     {
       "ChangeList": [
         {
-          "Id": "c4724881-15ff-4313-94c4-5392feccfabe",
+          "Id": "403de8ef-1aea-40ed-a4f8-2549073bf79e",
           "ApiChange": "method",
           "ChangedApiName": "comments,Closed in IPC,Closed in MCAS",
           "ChangeType": "Change",
@@ -47,7 +47,7 @@
           "Target": "Update alert"
         }
       ],
-      "Id": "c4724881-15ff-4313-94c4-5392feccfabe",
+      "Id": "403de8ef-1aea-40ed-a4f8-2549073bf79e",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-01-01T00:00:00",
@@ -57,7 +57,7 @@
     {
       "ChangeList": [
         {
-          "Id": "dc24feab-df7f-4790-b841-341a736d1621",
+          "Id": "9e9df8b7-5a68-4629-a6dc-fc1c4e0a1766",
           "ApiChange": "Resource",
           "ChangedApiName": "create,get,list,threatAssessmentRequest",
           "ChangeType": "Addition",
@@ -65,7 +65,7 @@
           "Target": "create,get,list,threatAssessmentRequest"
         },
         {
-          "Id": "dc24feab-df7f-4790-b841-341a736d1621",
+          "Id": "9e9df8b7-5a68-4629-a6dc-fc1c4e0a1766",
           "ApiChange": "Resource",
           "ChangedApiName": "evaluate application,evaluate classification,evaluate removal,extract label,list label,get label",
           "ChangeType": "Addition",
@@ -73,7 +73,7 @@
           "Target": "evaluate application,evaluate classification,evaluate removal,extract label,list label,get label"
         }
       ],
-      "Id": "dc24feab-df7f-4790-b841-341a736d1621",
+      "Id": "9e9df8b7-5a68-4629-a6dc-fc1c4e0a1766",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00",
@@ -83,7 +83,7 @@
     {
       "ChangeList": [
         {
-          "Id": "30c4b758-b116-455f-9844-fa45678aa3cd",
+          "Id": "2b9eca99-9c5d-486c-bac6-22d71dde6b4b",
           "ApiChange": "Resource",
           "ChangedApiName": "ThreatAssessment.ReadWrite.All,ThreatAssessment.Read.All",
           "ChangeType": "Addition",
@@ -91,7 +91,7 @@
           "Target": "ThreatAssessment.ReadWrite.All,ThreatAssessment.Read.All"
         }
       ],
-      "Id": "30c4b758-b116-455f-9844-fa45678aa3cd",
+      "Id": "2b9eca99-9c5d-486c-bac6-22d71dde6b4b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -101,7 +101,7 @@
     {
       "ChangeList": [
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "detectedSensitiveContent",
           "ChangeType": "Change",
@@ -109,7 +109,7 @@
           "Target": "classificationResult"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "displayName,uniqueCount,matches",
           "ChangeType": "Deletion",
@@ -117,7 +117,7 @@
           "Target": "classificationResult"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "id,sensitiveTypeId",
           "ChangeType": "Change",
@@ -125,7 +125,7 @@
           "Target": "classificationResult"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "confidence,confidenceLevel",
           "ChangeType": "Change",
@@ -133,7 +133,7 @@
           "Target": "classificationResult"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "count",
           "ChangeType": "Addition",
@@ -141,7 +141,7 @@
           "Target": "classificationResult"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "actionSource",
           "ChangeType": "Deletion",
@@ -149,7 +149,7 @@
           "Target": "labelingOptions"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "auditInfo",
           "ChangeType": "Deletion",
@@ -157,7 +157,7 @@
           "Target": ""
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "protectByDoNotForwardAction",
           "ChangeType": "Change",
@@ -165,7 +165,7 @@
           "Target": "protectDoNotForwardAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "alignment",
           "ChangeType": "Addition",
@@ -173,7 +173,7 @@
           "Target": "addContentHeaderAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "labelId,label",
           "ChangeType": "Change",
@@ -181,7 +181,7 @@
           "Target": "recommendLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "classificationIds,responsibleSensitivityTypeIds",
           "ChangeType": "Change",
@@ -189,7 +189,7 @@
           "Target": "recommendLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "actionSource",
           "ChangeType": "Addition",
@@ -197,7 +197,7 @@
           "Target": "recommendLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "labelId,label",
           "ChangeType": "Change",
@@ -205,7 +205,7 @@
           "Target": "applyLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "classificationIds,responsibleSensitivityTypeIds",
           "ChangeType": "Change",
@@ -213,7 +213,7 @@
           "Target": "applyLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Property",
           "ChangedApiName": "actionSource",
           "ChangeType": "Addition",
@@ -221,7 +221,7 @@
           "Target": "applyLabelAction"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "file,default",
           "ChangeType": "Change",
@@ -229,7 +229,7 @@
           "Target": "contentFormat"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "mandatory",
           "ChangeType": "Deletion",
@@ -237,7 +237,7 @@
           "Target": "actionSource"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "policyDefault,default",
           "ChangeType": "Change",
@@ -245,7 +245,7 @@
           "Target": "actionSource"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "auditMetadataKey",
           "ChangeType": "Deletion",
@@ -253,7 +253,7 @@
           "Target": ""
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "applyLabel",
           "ChangeType": "Change",
@@ -261,7 +261,7 @@
           "Target": "evaluateApplication"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "applyLabelFromClassification",
           "ChangeType": "Change",
@@ -269,7 +269,7 @@
           "Target": "evaluateClassificationResults"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "removeLabel",
           "ChangeType": "Change",
@@ -277,7 +277,7 @@
           "Target": "evaluateRemoval"
         },
         {
-          "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+          "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
           "ApiChange": "Resource",
           "ChangedApiName": "auditInfo",
           "ChangeType": "Deletion",
@@ -285,7 +285,7 @@
           "Target": "extractLabel"
         }
       ],
-      "Id": "57227a83-1c66-46e7-beeb-b0d89ac1449b",
+      "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -295,7 +295,7 @@
     {
       "ChangeList": [
         {
-          "Id": "94cf540d-3458-4c1d-adc7-bc3a16929f15",
+          "Id": "dff64024-cfa4-48d8-b8db-fa879298b292",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile",
           "ChangeType": "Addition",
@@ -303,7 +303,7 @@
           "Target": "security API,secureScore,List secureScores,secureScoreControlProfile,List secureScoreControlProfiles,Update secureScoreControlProfile"
         }
       ],
-      "Id": "94cf540d-3458-4c1d-adc7-bc3a16929f15",
+      "Id": "dff64024-cfa4-48d8-b8db-fa879298b292",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-05-01T00:00:00",
@@ -313,7 +313,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
+          "Id": "86a33091-37a8-4c62-9e2c-1700e89fc265",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators",
           "ChangeType": "Addition",
@@ -321,7 +321,7 @@
           "Target": "security API,tiindicator,Get tiIndicator,Create tiIndicator,List tiIndicators,Update tiIndicator,Delete tiIndicator,deleteTiIndicators,deleteTiIndicatorsByExternalId,submitTiIndicators,updateTiIndicators"
         },
         {
-          "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
+          "Id": "86a33091-37a8-4c62-9e2c-1700e89fc265",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction",
           "ChangeType": "Addition",
@@ -329,7 +329,7 @@
           "Target": "security API,securityAction,Get securityAction,Create securityAction,List securityAction,Cancel securityAction"
         },
         {
-          "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
+          "Id": "86a33091-37a8-4c62-9e2c-1700e89fc265",
           "ApiChange": "Resource",
           "ChangedApiName": "historyStates,updateAlerts",
           "ChangeType": "Addition",
@@ -337,7 +337,7 @@
           "Target": "historyStates,updateAlerts"
         }
       ],
-      "Id": "a7bc0c1f-b315-4bec-820d-562d75f8be7d",
+      "Id": "86a33091-37a8-4c62-9e2c-1700e89fc265",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
@@ -347,7 +347,7 @@
     {
       "ChangeList": [
         {
-          "Id": "f5e333e7-7650-4edb-b501-4889506269ac",
+          "Id": "8d86b64a-99eb-41e6-bf09-7c3c9ab59164",
           "ApiChange": "Resource",
           "ChangedApiName": "complianceInformation",
           "ChangeType": "Addition",
@@ -355,7 +355,7 @@
           "Target": "complianceInformation"
         },
         {
-          "Id": "f5e333e7-7650-4edb-b501-4889506269ac",
+          "Id": "8d86b64a-99eb-41e6-bf09-7c3c9ab59164",
           "ApiChange": "Resource",
           "ChangedApiName": "certificationControl",
           "ChangeType": "Addition",
@@ -363,7 +363,7 @@
           "Target": "certificationControl"
         }
       ],
-      "Id": "f5e333e7-7650-4edb-b501-4889506269ac",
+      "Id": "8d86b64a-99eb-41e6-bf09-7c3c9ab59164",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-12-01T00:00:00",
@@ -373,7 +373,7 @@
     {
       "ChangeList": [
         {
-          "Id": "17c7650a-dfb5-4fee-a5c5-47fa69e7e26e",
+          "Id": "ec36f8cb-0fd5-4cc7-bac0-fa3894ee48c4",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles",
           "ChangeType": "Addition",
@@ -381,7 +381,7 @@
           "Target": "security API,secureScores,List secureScores,secureScoreControlProfiles,List secureScoreControlProfiles,Update secureScoreControlProfiles"
         },
         {
-          "Id": "17c7650a-dfb5-4fee-a5c5-47fa69e7e26e",
+          "Id": "ec36f8cb-0fd5-4cc7-bac0-fa3894ee48c4",
           "ApiChange": "Resource",
           "ChangedApiName": "secureScoreControlStateUpdate",
           "ChangeType": "Addition",
@@ -389,7 +389,7 @@
           "Target": "secureScoreControlStateUpdate"
         }
       ],
-      "Id": "17c7650a-dfb5-4fee-a5c5-47fa69e7e26e",
+      "Id": "ec36f8cb-0fd5-4cc7-bac0-fa3894ee48c4",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
@@ -399,7 +399,7 @@
     {
       "ChangeList": [
         {
-          "Id": "0d2991d0-bac7-47f2-8bd3-8051d474856d",
+          "Id": "03100c5f-2c9d-43ef-aed7-6e3da35c371d",
           "ApiChange": "Resource",
           "ChangedApiName": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType",
           "ChangeType": "Addition",
@@ -407,7 +407,7 @@
           "Target": "alertFeedback,alertStatus,alertType,applicationPermissionsRequired,logonType,processIntegrityLevel,securityNetworkProtocol,userAccountSecurityType"
         }
       ],
-      "Id": "0d2991d0-bac7-47f2-8bd3-8051d474856d",
+      "Id": "03100c5f-2c9d-43ef-aed7-6e3da35c371d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00",
@@ -417,7 +417,7 @@
     {
       "ChangeList": [
         {
-          "Id": "790c5bc8-4999-48e0-b1eb-8e1493ff5b9c",
+          "Id": "f0b26b58-db86-4c69-b339-8896fd929d18",
           "ApiChange": "Resource",
           "ChangedApiName": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API",
           "ChangeType": "Addition",
@@ -425,7 +425,7 @@
           "Target": "security API,alert,Get alert,List alerts,Update alert,Errors,Security solution integrations using the Microsoft Graph Security API"
         }
       ],
-      "Id": "790c5bc8-4999-48e0-b1eb-8e1493ff5b9c",
+      "Id": "f0b26b58-db86-4c69-b339-8896fd929d18",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",

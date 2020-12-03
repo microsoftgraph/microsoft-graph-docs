@@ -3,7 +3,7 @@ title: "Get managedApp"
 description: "Read properties and relationships of the managedApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1025
+Content-Length: 1086
 
 {
   "value": {
@@ -94,11 +94,14 @@ Content-Length: 1025
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appAvailability": "lineOfBusiness",
     "version": "Version value"
   }
 }
 ```
+
 
 
 

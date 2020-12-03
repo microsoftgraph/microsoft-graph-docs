@@ -3,7 +3,7 @@ title: "Update groupPolicyPresentationDecimalTextBox"
 description: "Update the properties of a groupPolicyPresentationDecimalTextBox object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -105,6 +105,7 @@ Content-Length: 334
   "maxValue": 8
 }
 ```
+
 
 
 

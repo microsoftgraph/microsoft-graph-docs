@@ -3,7 +3,7 @@ title: "List iosVpnConfigurations"
 description: "List properties and relationships of the iosVpnConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3697
+Content-Length: 3879
 
 {
   "value": [
@@ -148,6 +148,11 @@ Content-Length: 3697
           "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
         }
       ],
+      "providerType": "appProxy",
+      "excludedDomains": [
+        "Excluded Domains value"
+      ],
+      "disableOnDemandUserOverride": true,
       "proxyServer": {
         "@odata.type": "microsoft.graph.vpnProxyServer",
         "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -155,7 +160,6 @@ Content-Length: 3697
         "port": 4
       },
       "optInToDeviceIdSharing": true,
-      "providerType": "appProxy",
       "userDomain": "User Domain value",
       "strictEnforcement": true,
       "cloudName": "Cloud Name value",
@@ -170,11 +174,13 @@ Content-Length: 3697
           "appStoreUrl": "https://example.com/appStoreUrl/",
           "appId": "App Id value"
         }
-      ]
+      ],
+      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
     }
   ]
 }
 ```
+
 
 
 

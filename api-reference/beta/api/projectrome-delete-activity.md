@@ -4,7 +4,7 @@ description: "Delete an existing user activity for your app."
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
-author: ""
+author: "ailae"
 ---
 
 # Delete an activity
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-activity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -105,3 +109,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

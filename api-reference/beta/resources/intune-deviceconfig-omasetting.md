@@ -3,7 +3,7 @@ title: "omaSetting resource type"
 description: "OMA Settings definition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -23,6 +23,7 @@ OMA Settings definition.
 |displayName|String|Display Name.|
 |description|String|Description.|
 |omaUri|String|OMA.|
+|isEncrypted|Boolean|Indicates whether the value field is encrypted.|
 
 ## Relationships
 None
@@ -39,9 +40,11 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.omaSetting",
   "displayName": "String",
   "description": "String",
-  "omaUri": "String"
+  "omaUri": "String",
+  "isEncrypted": true
 }
 ```
+
 
 
 

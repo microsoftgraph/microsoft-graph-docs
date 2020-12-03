@@ -2,7 +2,7 @@
 title: "keyValue resource type"
 description: "Provides additional relevant information about the sign-in request"
 localization_priority: Normal
-author: "khotz"
+author: "besiler"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
@@ -53,3 +53,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

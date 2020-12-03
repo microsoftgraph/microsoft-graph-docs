@@ -4,7 +4,7 @@ description: "The SharePoint API in Microsoft Graph supports the following core 
 localization_priority: Priority
 ms.prod: "sharepoint"
 doc_type: conceptualPageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # Working with SharePoint sites in Microsoft Graph
@@ -128,3 +128,5 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
   "tocPath": "Getting Started",
   "tocIndex": -100
 } -->
+
+

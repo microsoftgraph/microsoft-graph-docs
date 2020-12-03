@@ -105,6 +105,10 @@ Content-length: 508
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -176,3 +180,5 @@ Content-length: 508
 
 [physicaladdress]: ../resources/physicaladdress.md
 [educationstudent]: ../resources/educationstudent.md
+
+

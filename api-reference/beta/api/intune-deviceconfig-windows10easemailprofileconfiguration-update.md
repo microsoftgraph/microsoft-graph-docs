@@ -3,7 +3,7 @@ title: "Update windows10EasEmailProfileConfiguration"
 description: "Update the properties of a windows10EasEmailProfileConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -190,6 +190,7 @@ Content-Length: 1698
   "requireSsl": true
 }
 ```
+
 
 
 

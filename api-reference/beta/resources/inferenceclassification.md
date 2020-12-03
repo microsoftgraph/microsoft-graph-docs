@@ -4,7 +4,7 @@ description: "Classification of a user's messages to enable focus on those that 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "svpsiva"
 ---
 
 # inferenceClassification resource type
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Classification of a user's messages to enable focus on those that are more relevant or important to the user. 
+Classification of a user's messages to enable focus on those that are more relevant or important to the user.
 
 For more information, see [Manage Focused Inbox](manage-focused-inbox.md).
 
@@ -67,3 +67,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getDirectRoutingCalls"
 description: "Get a log of direct routing calls."
-author: "stephenjust"
+author: "williamlooney"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application| CallRecords.Read.PstnCalls|
+| Application                            | CallRecords.Read.All |
 
 ## HTTP request
 
@@ -118,6 +118,6 @@ HTTP/1.1 200 OK
 
 ## See also
 
-* [Microsoft Teams direct routing usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center
-* [Health Dashboard for direct routing](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center
+* [Microsoft Teams direct routing usage report](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center
+* [Health Dashboard for direct routing](/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center
 * [PSTN call report in Microsoft Graph](callrecords-callrecord-getpstncalls.md)

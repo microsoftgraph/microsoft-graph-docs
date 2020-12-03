@@ -12,63 +12,25 @@ const client = Client.init(options);
 
 const projectParticipation = {
   categories: [
-    "categories-value"
+    "Branding"
   ],
   client: {
-    displayName: "displayName-value",
-    pronunciation: "pronunciation-value",
-    department: "department-value",
-    officeLocation: "officeLocation-value",
-    address: {
-      type: "type-value",
-      postOfficeBox: "postOfficeBox-value",
-      street: "street-value",
-      city: "city-value",
-      state: "state-value",
-      countryOrRegion: "countryOrRegion-value",
-      postalCode: "postalCode-value"
-    },
-    webUrl: "webUrl-value"
+    displayName: "Contoso Ltd.",
+    department: "Corporate Marketing",
+    webUrl: "https://www.contoso.com"
   },
-  displayName: "displayName-value",
+  displayName: "Contoso Re-branding Project",
   detail: {
     company: {
-      displayName: "displayName-value",
-      pronunciation: "pronunciation-value",
-      department: "department-value",
-      officeLocation: "officeLocation-value",
-      address: {
-        type: "type-value",
-        postOfficeBox: "postOfficeBox-value",
-        street: "street-value",
-        city: "city-value",
-        state: "state-value",
-        countryOrRegion: "countryOrRegion-value",
-        postalCode: "postalCode-value"
-      },
-      webUrl: "webUrl-value"
+      displayName: "Adventureworks Inc.",
+      department: "Consulting",
+      webUrl: "https://adventureworks.com"
     },
-    description: "description-value",
-    endMonthYear: "datetime-value",
-    jobTitle: "jobTitle-value",
-    role: "role-value",
-    startMonthYear: "datetime-value",
-    summary: "summary-value"
-  },
-  colleagues: [
-    {
-      displayName: "displayName-value",
-      relationship: "relationship-value",
-      userPrincipalName: "userPrincipalName-value"
-    }
-  ],
-  sponsors: [
-    {
-      displayName: "displayName-value",
-      relationship: "relationship-value",
-      userPrincipalName: "userPrincipalName-value"
-    }
-  ]
+    description: "Rebranding of Contoso Ltd.",
+    jobTitle: "Lead PM Rebranding",
+    role: "project management",
+    summary: "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
+  }
 };
 
 let res = await client.api('/me/profile/projects')

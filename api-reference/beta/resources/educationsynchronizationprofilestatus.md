@@ -49,3 +49,5 @@ Represents the synchronization status of a school data [synchronization profile]
   "lastSynchronizationDateTime": "DateTimeOffset"
 }
 ```
+
+

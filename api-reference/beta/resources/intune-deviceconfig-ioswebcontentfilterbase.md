@@ -3,7 +3,7 @@ title: "iosWebContentFilterBase resource type"
 description: "Represents an iOS Web Content Filter setting base type. An empty and abstract base. Caller should use one of derived types for configurations."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -36,6 +36,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.iosWebContentFilterBase"
 }
 ```
+
 
 
 

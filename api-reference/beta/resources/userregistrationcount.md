@@ -2,7 +2,7 @@
 title: "userRegistrationCount resource type"
 description: "Represents the registration count and status for users in your tenant."
 localization_priority: Normal
-author: "khotz"
+author: "besiler"
 ms.prod: "reports"
 doc_type: "resourcePageType"
 ---
@@ -51,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

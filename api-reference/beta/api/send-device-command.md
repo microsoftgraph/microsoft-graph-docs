@@ -4,7 +4,7 @@ description: "This API enables Project Rome capabilities to command a device ass
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "ailae"
 ---
 
 # Send device command
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the 
+This API enables Project Rome capabilities to command a device associated with a Microsoft account. After doing a GET call on `me/devices`, pass in the ID of the device to issue a command to your device. Two types of commands are supported: LaunchURI and AppServices. If you're using LaunchURI, specify the *type* and *payload* parameters. For an AppService call, specify the
 *type*, *payload*, *packageFamilyName*, and *appServiceName* parameters.
 
 ## Permissions
@@ -77,7 +77,7 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-### Command properties 
+### Command properties
 
 |**Name**|**Type**|**Description**|
 |:----|:------|:------|
@@ -93,7 +93,7 @@ HTTP/1.1 201 OK
 
 ## Examples
 
-### Example 1: Launch URI 
+### Example 1: Launch URI
 
 The following is an example of a LaunchURI request; it will launch a URI or an application on the target device. To launch a URI or an app, issue a POST using the ID of the device (obtained from doing a GET call on `me/devices`). Set the *Type* parameters to *LaunchURI* and provide a URI value such as https://bing.com.
 
@@ -113,7 +113,7 @@ Content-Type: application/json; charset=utf-8
 { "type" : "LaunchUri", "payload" : {"uri":"https://bing.com"}}
 
 ```
-#### Response 
+#### Response
 
 <!-- {
   "blockType": "ignored",
@@ -198,3 +198,5 @@ HTTP/1.1 201 OK
   }
 }
 ```
+
+

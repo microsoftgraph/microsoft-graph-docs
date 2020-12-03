@@ -7,11 +7,14 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# List tasks
+# List tasks (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Get all the Outlook tasks in the user's mailbox.
 
@@ -35,7 +38,7 @@ GET /me/outlook/tasks
 GET /users/{id|userPrincipalName}/outlook/tasks
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -71,6 +74,10 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/outlookuser-get-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/outlookuser-get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

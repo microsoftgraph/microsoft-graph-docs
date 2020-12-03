@@ -1,9 +1,27 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "39cd76e7-31c8-41fd-84d0-e7a5502668fe",
+          "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications",
+          "ChangeType": "Addition",
+          "Description": "Added the following new relationships to the [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta) API with associated entities and methods: \u003Cul\u003E\u003Cli\u003E[addresses](https://docs.microsoft.com/en-us/graph/api/resources/itemAddress?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[anniversaries](https://docs.microsoft.com/en-us/graph/api/resources/personAnniversary?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[awards](https://docs.microsoft.com/en-us/graph/api/resources/personAward?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[certifications](https://docs.microsoft.com/en-us/graph/api/resources/personCertification?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[notes](https://docs.microsoft.com/en-us/graph/api/resources/personAnnotation?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[patents](https://docs.microsoft.com/en-us/graph/api/resources/itemPatent?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[publications](https://docs.microsoft.com/en-us/graph/api/resources/itemPublication?view=graph-rest-beta)\u003C/li\u003E\u003C/ul\u003E",
+          "Target": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications"
+        }
+      ],
+      "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-08-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": " Profile"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8c224202-825a-4190-9b47-ff758248262d",
           "ApiChange": "Property",
           "ChangedApiName": "itemInsights,organizationSettings",
           "ChangeType": "Addition",
@@ -11,7 +29,7 @@
           "Target": ""
         },
         {
-          "Id": "39cd76e7-31c8-41fd-84d0-e7a5502668fe",
+          "Id": "8c224202-825a-4190-9b47-ff758248262d",
           "ApiChange": "Resource",
           "ChangedApiName": "itemInsightsSettings",
           "ChangeType": "Addition",
@@ -19,7 +37,7 @@
           "Target": "Get itemInsightSettings,Update itemInsightSettings"
         }
       ],
-      "Id": "39cd76e7-31c8-41fd-84d0-e7a5502668fe",
+      "Id": "8c224202-825a-4190-9b47-ff758248262d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
@@ -29,7 +47,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5354e7a9-2d2b-4cd8-b478-8f89e7c36f04",
+          "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
           "ApiChange": "Property",
           "ChangedApiName": "profileCardProperties",
           "ChangeType": "Addition",
@@ -37,7 +55,7 @@
           "Target": "organizationSettings"
         },
         {
-          "Id": "5354e7a9-2d2b-4cd8-b478-8f89e7c36f04",
+          "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
           "ApiChange": "Resource",
           "ChangedApiName": "profileCardProperty",
           "ChangeType": "Addition",
@@ -45,7 +63,7 @@
           "Target": "List,Create,Get,Update,Delete"
         }
       ],
-      "Id": "5354e7a9-2d2b-4cd8-b478-8f89e7c36f04",
+      "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
@@ -55,7 +73,7 @@
     {
       "ChangeList": [
         {
-          "Id": "28f86740-f007-448c-ada2-5ba822a0b140",
+          "Id": "99f277e8-b0bb-4193-8248-095bb0842f78",
           "ApiChange": "Resource",
           "ChangedApiName": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?",
           "ChangeType": "Addition",
@@ -63,7 +81,7 @@
           "Target": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?"
         }
       ],
-      "Id": "28f86740-f007-448c-ada2-5ba822a0b140",
+      "Id": "99f277e8-b0bb-4193-8248-095bb0842f78",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
@@ -73,7 +91,7 @@
     {
       "ChangeList": [
         {
-          "Id": "fda65e4d-7e3c-4f9a-a621-608c1fb920b2",
+          "Id": "8010b2c9-d937-436f-84b1-74b9a5eb67cf",
           "ApiChange": "method",
           "ChangedApiName": "profile API",
           "ChangeType": "Addition",
@@ -81,7 +99,7 @@
           "Target": "profile API"
         }
       ],
-      "Id": "fda65e4d-7e3c-4f9a-a621-608c1fb920b2",
+      "Id": "8010b2c9-d937-436f-84b1-74b9a5eb67cf",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -91,7 +109,7 @@
     {
       "ChangeList": [
         {
-          "Id": "cfed112a-8f2d-4519-ace5-01e8656738ec",
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
           "ApiChange": "Resource",
           "ChangedApiName": "analytics API",
           "ChangeType": "Addition",
@@ -99,7 +117,7 @@
           "Target": "analytics API"
         },
         {
-          "Id": "cfed112a-8f2d-4519-ace5-01e8656738ec",
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
           "ApiChange": "Resource",
           "ChangedApiName": "settings API,analytics API",
           "ChangeType": "Addition",
@@ -107,7 +125,7 @@
           "Target": "settings API,analytics API"
         },
         {
-          "Id": "cfed112a-8f2d-4519-ace5-01e8656738ec",
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
           "ApiChange": "Resource",
           "ChangedApiName": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics",
           "ChangeType": "Addition",
@@ -115,7 +133,7 @@
           "Target": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics"
         }
       ],
-      "Id": "cfed112a-8f2d-4519-ace5-01e8656738ec",
+      "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
@@ -125,7 +143,7 @@
     {
       "ChangeList": [
         {
-          "Id": "7168f13b-8878-4147-89d9-0aaf287e0601",
+          "Id": "45a46158-d7bc-42b2-bcfd-6aa75db1d410",
           "ApiChange": "Resource",
           "ChangedApiName": "settings,Get,Update",
           "ChangeType": "Addition",
@@ -133,7 +151,7 @@
           "Target": "settings,Get,Update"
         }
       ],
-      "Id": "7168f13b-8878-4147-89d9-0aaf287e0601",
+      "Id": "45a46158-d7bc-42b2-bcfd-6aa75db1d410",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-05-01T00:00:00",
@@ -143,7 +161,7 @@
     {
       "ChangeList": [
         {
-          "Id": "6b0698b1-1ff2-4c3e-8b86-5739626414a1",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "People APIs,Get relevant information about people",
           "ChangeType": "Addition",
@@ -151,7 +169,7 @@
           "Target": "People APIs,Get relevant information about people"
         },
         {
-          "Id": "6b0698b1-1ff2-4c3e-8b86-5739626414a1",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "Permissions",
           "ChangeType": "Addition",
@@ -159,7 +177,7 @@
           "Target": "Permissions"
         },
         {
-          "Id": "6b0698b1-1ff2-4c3e-8b86-5739626414a1",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "personType",
           "ChangeType": "Addition",
@@ -167,7 +185,7 @@
           "Target": "personType"
         },
         {
-          "Id": "6b0698b1-1ff2-4c3e-8b86-5739626414a1",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "rankedEmailAddress",
           "ChangeType": "Change",
@@ -175,7 +193,7 @@
           "Target": "scoredEmailAddress"
         },
         {
-          "Id": "6b0698b1-1ff2-4c3e-8b86-5739626414a1",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Property",
           "ChangedApiName": "scoredEmailAddresses,emailAddresses,jobTitle,title,sources,mailboxType,personType,sources,mailboxType,imAddress",
           "ChangeType": "Change",
@@ -183,7 +201,7 @@
           "Target": "person,scoredEmailAddress,personType"
         },
         {
-          "Id": "6b0698b1-1ff2-4c3e-8b86-5739626414a1",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "personDataSource",
           "ChangeType": "Deletion",
@@ -191,7 +209,7 @@
           "Target": ""
         }
       ],
-      "Id": "6b0698b1-1ff2-4c3e-8b86-5739626414a1",
+      "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-08-01T00:00:00",
@@ -201,7 +219,7 @@
     {
       "ChangeList": [
         {
-          "Id": "df27cc03-9c73-411c-ab7d-410ffeda25a0",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Resource",
           "ChangedApiName": "Shared API,sharingDetail,insightIdentity",
           "ChangeType": "Addition",
@@ -209,7 +227,7 @@
           "Target": "Shared API,sharingDetail,insightIdentity"
         },
         {
-          "Id": "df27cc03-9c73-411c-ab7d-410ffeda25a0",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Resource",
           "ChangedApiName": "Used API,usageDetails",
           "ChangeType": "Addition",
@@ -217,7 +235,7 @@
           "Target": "Used API,usageDetails"
         },
         {
-          "Id": "df27cc03-9c73-411c-ab7d-410ffeda25a0",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Property",
           "ChangedApiName": "Type",
           "ChangeType": "Change",
@@ -225,7 +243,7 @@
           "Target": "resourceVisualization"
         },
         {
-          "Id": "df27cc03-9c73-411c-ab7d-410ffeda25a0",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Resource",
           "ChangedApiName": "workingWith,trendingAround",
           "ChangeType": "Deletion",
@@ -233,7 +251,7 @@
           "Target": ""
         }
       ],
-      "Id": "df27cc03-9c73-411c-ab7d-410ffeda25a0",
+      "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -243,7 +261,7 @@
     {
       "ChangeList": [
         {
-          "Id": "79c5ffdd-8e13-4d5e-84c9-53ba9481f4d5",
+          "Id": "52a2d5fe-1db2-46ff-af8b-2dd5179fb20b",
           "ApiChange": "Resource",
           "ChangedApiName": "Upcoming changes to Contacts and People APIs",
           "ChangeType": "Change",
@@ -251,7 +269,7 @@
           "Target": "Upcoming changes to Contacts and People APIs"
         }
       ],
-      "Id": "79c5ffdd-8e13-4d5e-84c9-53ba9481f4d5",
+      "Id": "52a2d5fe-1db2-46ff-af8b-2dd5179fb20b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-08-01T00:00:00",
@@ -261,7 +279,7 @@
     {
       "ChangeList": [
         {
-          "Id": "b37d00b9-93e9-4469-a010-081f54a9da07",
+          "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -269,7 +287,7 @@
           "Target": ""
         },
         {
-          "Id": "b37d00b9-93e9-4469-a010-081f54a9da07",
+          "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -277,7 +295,7 @@
           "Target": ""
         }
       ],
-      "Id": "b37d00b9-93e9-4469-a010-081f54a9da07",
+      "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-03-01T00:00:00",

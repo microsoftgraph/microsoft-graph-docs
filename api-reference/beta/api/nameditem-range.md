@@ -4,7 +4,7 @@ description: "Returns the range object that is associated with the name. Throws 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: ""
+author: "ruoyingl"
 ---
 
 # NamedItem: Range
@@ -66,6 +66,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 [!INCLUDE [sample-code](../includes/snippets/objc/nameditem-range-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/nameditem-range-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -104,3 +108,5 @@ Content-length: 169
   ]
 }
 -->
+
+

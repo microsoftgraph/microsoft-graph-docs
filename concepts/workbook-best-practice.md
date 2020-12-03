@@ -185,7 +185,7 @@ Content-type: application/json
     "code": "internalServerError",
     "message": "An internal server error occurred while processing the request.",
     "innerError": {
-      "code": ""internalServerErrorUncategorized",
+      "code": "internalServerErrorUncategorized",
       "message": "An unspecified error has occurred.",
       "innerError": {
         "code": "GenericFileOpenError",

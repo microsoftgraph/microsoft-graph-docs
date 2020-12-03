@@ -3,7 +3,7 @@ title: "Update deviceLogCollectionResponse"
 description: "Update the properties of a deviceLogCollectionResponse object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -105,6 +105,7 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Update iosUpdateDeviceStatus"
 description: "Update the properties of a iosUpdateDeviceStatus object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|The installation status of the policy report. Possible values are: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`, `deviceOsHigherThanDesiredOsVersion`.|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|The installation status of the policy report. Possible values are: `success`, `available`, `idle`, `unknown`, `mdmClientCrashed`, `timeout`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`, `updateError`, `deviceOsHigherThanDesiredOsVersion`, `updateScanFailed`.|
 |osVersion|String|The device version that is being reported.|
 |deviceId|String|The device id that is being reported.|
 |userId|String|The User id that is being reported.|
@@ -117,6 +117,7 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

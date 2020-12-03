@@ -36,3 +36,5 @@ Abstract base class for all school data profile identity synchronization configu
 ```json
 {}
 ```
+
+

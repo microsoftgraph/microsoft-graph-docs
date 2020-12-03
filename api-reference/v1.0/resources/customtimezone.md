@@ -2,7 +2,7 @@
 title: "customTimeZone resource type"
 description: "Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard."
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -55,3 +55,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

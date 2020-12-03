@@ -2,7 +2,7 @@
 title: "Get singleValueLegacyExtendedProperty"
 description: "You can get a single resource instance expanded with a specific extended property, or a collection of resource instances"
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -14,34 +14,34 @@ Namespace: microsoft.graph
 You can get a single resource instance expanded with a specific extended property, or a collection of resource instances
 that include extended properties matching a filter.
 
-Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended 
-property. Use a `$filter` and `eq` operator on the **id** property to specify the extended property. This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object that represents an extended property. 
+Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended
+property. Use a `$filter` and `eq` operator on the **id** property to specify the extended property. This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object that represents an extended property.
 
-To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator 
-on the **id** property. In addition, for numeric extended properties, apply one of the following operators on the **value** property: 
+To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator
+on the **id** property. In addition, for numeric extended properties, apply one of the following operators on the **value** property:
 `eq`, `ne`,`ge`, `gt`, `le`, or `lt`. For string-typed extended properties, apply a `contains`, `startswith`, `eq`, or `ne` operator on **value**.
 
-The filter is applied to all instances of the resource in the signed-in user's mailbox. 
+The filter is applied to all instances of the resource in the signed-in user's mailbox.
 
-Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive. Filtering the **value** property of an extended 
+Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive. Filtering the **value** property of an extended
 property is case-insensitive.
 
 The following user resources are supported:
 
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md) 
+- [message](../resources/message.md)
 
 As well as the following group resources:
 
 - group [calendar](../resources/calendar.md)
 - group [event](../resources/event.md)
-- group [post](../resources/post.md) 
+- group [post](../resources/post.md)
 
-See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use 
+See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
 open extensions or extended properties, and how to specify extended properties.
 
 ## Permissions
@@ -62,8 +62,8 @@ Depending on the resource you're getting the extended property from and the perm
 ## HTTP request
 
 #### GET a resource instance expanded with an extended property that matches a filter
-Get a resource instance expanded with the extended property which matches a filter on the 
-**id** property. Make sure you apply 
+Get a resource instance expanded with the extended property which matches a filter on the
+**id** property. Make sure you apply
 [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.
 
 Get a **message** instance:
@@ -121,13 +121,13 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### GET resource instances that include numeric extended properties matching a filter
 
-Get instances of a supported resource that have a numeric extended property matching a filter. The filter uses an `eq` operator on the 
-**id** property, and one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`. 
-Make sure you apply 
-[URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, 
+Get instances of a supported resource that have a numeric extended property matching a filter. The filter uses an `eq` operator on the
+**id** property, and one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.
+Make sure you apply
+[URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon,
 forward slash, and space.
 
-The following syntax lines show a filter that uses an `eq` operator on the id, and another `eq` operator on the property value. You can substitute the 
+The following syntax lines show a filter that uses an `eq` operator on the id, and another `eq` operator on the property value. You can substitute the
 `eq` operator on the **value** by any one of the other operators (`ne`,`ge`, `gt`, `le`, or `lt`) that apply to numeric values.
 
 Get **message** instances:
@@ -185,9 +185,9 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 
 #### GET resource instances with string-typed extended properties matching a filter
 
-Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter. The filter uses an `eq` operator on the 
-**id** property, and one of the following operators on the **value** property: `contains`, `startswith`, `eq`, or `ne`. Make sure you apply 
-[URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, 
+Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter. The filter uses an `eq` operator on the
+**id** property, and one of the following operators on the **value** property: `contains`, `startswith`, `eq`, or `ne`. Make sure you apply
+[URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon,
 forward slash, and space.
 
 
@@ -256,14 +256,14 @@ If successful, this method returns a `200 OK` response code.
 
 #### GET resource instance expanded with a matching extended property
 The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.
-  
+
 #### GET resource instances that contain an extended property matching a filter
 The response body includes one or more objects representing the resource instances that contain a matching extended property. The response body does not include the extended property.
 
 ## Example
 #### Request 1
 
-The first example gets and expands the specified message by including a single-value extended property. The filter returns the 
+The first example gets and expands the specified message by including a single-value extended property. The filter returns the
 extended property that has its **id** matching the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`
 (with URL encoding removed here for ease of reading).
 
@@ -341,7 +341,7 @@ Content-type: application/json
 
 #### Request 2
 
-The second example gets messages that have the string-typed single-value extended property specified in the filter. The filter 
+The second example gets messages that have the string-typed single-value extended property specified in the filter. The filter
 looks for the extended property that has:
 
 - Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`
@@ -356,21 +356,21 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 
 #### Response 2
 
-A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all 
+A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all
 the properties of the messages that have the extended property matching the filter. The response body is
-similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not 
+similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
 include the matching extended property.
 
 
 #### Request 3
 
-The third example gets messages that have the string-typed single-value extended property specified in the filter. The filter 
+The third example gets messages that have the string-typed single-value extended property specified in the filter. The filter
 looks for the extended property that has:
 
 - Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`
 (with URL encoding removed here for ease of reading).
 
-- Its **value** containing the string `green`. 
+- Its **value** containing the string `green`.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -379,18 +379,18 @@ GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProp
 
 #### Response 3
 
-A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all 
+A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all
 the properties of the messages that have the extended property matching the filter. For example, a message that has
-a single-value extended property with the **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, and 
+a single-value extended property with the **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, and
 the **value** `Light green`, would match the filter and be included in the response.
 
-The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not 
+The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
 include the matching extended property.
 
 
 #### Request 4
 
-The next 2 examples show how to get messages that have non-string typed single-value extended properties. For ease of reading, they do not 
+The next 2 examples show how to get messages that have non-string typed single-value extended properties. For ease of reading, they do not
 include the necessary URL encoding.
 
 The following example shows a filter that looks for the extended property that has:
@@ -420,9 +420,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 
 #### Response 4
 
-For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all 
+For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all
 the properties of the messages that have the extended property matching the corresponding filter. The response body is
-similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not 
+similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not
 include the matching extended property.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -436,3 +436,4 @@ include the matching extended property.
   "suppressions": [
   ]
 }-->
+

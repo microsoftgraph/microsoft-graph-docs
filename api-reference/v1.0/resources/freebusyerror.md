@@ -2,7 +2,7 @@
 title: "freeBusyError resource type"
 description: "Represents error information from attempting to get the availability of a user, distribution list, or resource."
 localization_priority: Normal
-author: ""
+author: "harini84"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -51,3 +51,4 @@ The following is a JSON representation of the resource.
   "tocPath": ""
 }
 -->
+

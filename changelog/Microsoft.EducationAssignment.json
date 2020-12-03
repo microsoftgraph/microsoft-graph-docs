@@ -1,9 +1,9 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "13cc376b-dd21-41e5-bed8-faff3e87cc64",
+          "Id": "3365a6d2-1e3f-45e8-807f-5d7d4ec9e8e7",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDate,educationSynchronizationProfile",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "**educationSynchronizationProfile**"
         }
       ],
-      "Id": "13cc376b-dd21-41e5-bed8-faff3e87cc64",
+      "Id": "3365a6d2-1e3f-45e8-807f-5d7d4ec9e8e7",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
@@ -21,7 +21,7 @@
     {
       "ChangeList": [
         {
-          "Id": "48e0620e-acee-47f6-b9b9-dbca1b922f40",
+          "Id": "6a22954b-9b58-4e75-89c7-97a0483b2843",
           "ApiChange": "Property",
           "ChangedApiName": "externalId",
           "ChangeType": "Change",
@@ -29,7 +29,7 @@
           "Target": "educationTeacher"
         },
         {
-          "Id": "48e0620e-acee-47f6-b9b9-dbca1b922f40",
+          "Id": "6a22954b-9b58-4e75-89c7-97a0483b2843",
           "ApiChange": "Property",
           "ChangedApiName": "externalId",
           "ChangeType": "Change",
@@ -37,7 +37,7 @@
           "Target": "educationStudent"
         },
         {
-          "Id": "48e0620e-acee-47f6-b9b9-dbca1b922f40",
+          "Id": "6a22954b-9b58-4e75-89c7-97a0483b2843",
           "ApiChange": "Resource",
           "ChangedApiName": "lms,educationExternalSource",
           "ChangeType": "Change",
@@ -45,7 +45,7 @@
           "Target": ""
         }
       ],
-      "Id": "48e0620e-acee-47f6-b9b9-dbca1b922f40",
+      "Id": "6a22954b-9b58-4e75-89c7-97a0483b2843",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -55,7 +55,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d6699ad5-2b43-46c1-a994-2cfe324bcaba",
+          "Id": "2413720e-8809-4e98-8eba-d3bcaf7bed26",
           "ApiChange": "Property",
           "ChangedApiName": "classSettings,team",
           "ChangeType": "Addition",
@@ -63,7 +63,7 @@
           "Target": "classSettings,team"
         }
       ],
-      "Id": "d6699ad5-2b43-46c1-a994-2cfe324bcaba",
+      "Id": "2413720e-8809-4e98-8eba-d3bcaf7bed26",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
@@ -73,7 +73,7 @@
     {
       "ChangeList": [
         {
-          "Id": "bc8eae08-841e-4a6c-b0e2-94fb9b9af836",
+          "Id": "ccddd49b-4795-4600-970b-439a12eda0fa",
           "ApiChange": "Property",
           "ChangedApiName": "classSettings,team",
           "ChangeType": "Addition",
@@ -81,7 +81,7 @@
           "Target": "classSettings,team"
         }
       ],
-      "Id": "bc8eae08-841e-4a6c-b0e2-94fb9b9af836",
+      "Id": "ccddd49b-4795-4600-970b-439a12eda0fa",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -91,7 +91,7 @@
     {
       "ChangeList": [
         {
-          "Id": "27ec1bbc-82d0-4555-8da4-54b73cedfbc1",
+          "Id": "3167c637-ec97-4035-8a14-e23ae4414aeb",
           "ApiChange": "Property",
           "ChangedApiName": "grade,feedback",
           "ChangeType": "Deletion",
@@ -99,7 +99,7 @@
           "Target": "previously announced,educationSubmission,educationOutcome"
         }
       ],
-      "Id": "27ec1bbc-82d0-4555-8da4-54b73cedfbc1",
+      "Id": "3167c637-ec97-4035-8a14-e23ae4414aeb",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -109,7 +109,7 @@
     {
       "ChangeList": [
         {
-          "Id": "24b3b707-07de-4b0b-97cc-278169ff4fce",
+          "Id": "9f018844-1373-4528-aeb9-840349a9f65e",
           "ApiChange": "Property",
           "ChangedApiName": "closeDateTime",
           "ChangeType": "Addition",
@@ -117,7 +117,7 @@
           "Target": "educationAssignment"
         },
         {
-          "Id": "24b3b707-07de-4b0b-97cc-278169ff4fce",
+          "Id": "9f018844-1373-4528-aeb9-840349a9f65e",
           "ApiChange": "Property",
           "ChangedApiName": "mkcd,projectId,url,hostWebUrl",
           "ChangeType": "Change",
@@ -125,7 +125,7 @@
           "Target": "educationMakeCodeResource"
         }
       ],
-      "Id": "24b3b707-07de-4b0b-97cc-278169ff4fce",
+      "Id": "9f018844-1373-4528-aeb9-840349a9f65e",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
@@ -135,7 +135,7 @@
     {
       "ChangeList": [
         {
-          "Id": "484e589d-667b-4155-a43c-14f5efcfd251",
+          "Id": "785baf39-1a91-4551-a749-ed44124512ba",
           "ApiChange": "Property",
           "ChangedApiName": "grade",
           "ChangeType": "Addition",
@@ -143,7 +143,7 @@
           "Target": "educationClass"
         },
         {
-          "Id": "484e589d-667b-4155-a43c-14f5efcfd251",
+          "Id": "785baf39-1a91-4551-a749-ed44124512ba",
           "ApiChange": "Resource",
           "ChangedApiName": "educationRubric",
           "ChangeType": "Addition",
@@ -151,7 +151,7 @@
           "Target": "educationRubric"
         },
         {
-          "Id": "484e589d-667b-4155-a43c-14f5efcfd251",
+          "Id": "785baf39-1a91-4551-a749-ed44124512ba",
           "ApiChange": "Resource",
           "ChangedApiName": "educationRubric,educationUser,educationAssignment",
           "ChangeType": "Addition",
@@ -159,7 +159,7 @@
           "Target": "educationRubric,educationUser,educationAssignment"
         },
         {
-          "Id": "484e589d-667b-4155-a43c-14f5efcfd251",
+          "Id": "785baf39-1a91-4551-a749-ed44124512ba",
           "ApiChange": "Resource",
           "ChangedApiName": "educationOutcome",
           "ChangeType": "Addition",
@@ -167,7 +167,7 @@
           "Target": "educationOutcome"
         },
         {
-          "Id": "484e589d-667b-4155-a43c-14f5efcfd251",
+          "Id": "785baf39-1a91-4551-a749-ed44124512ba",
           "ApiChange": "Resource",
           "ChangedApiName": "educationOutcome,educationSubmission",
           "ChangeType": "Addition",
@@ -175,7 +175,7 @@
           "Target": "educationOutcome,educationSubmission"
         },
         {
-          "Id": "484e589d-667b-4155-a43c-14f5efcfd251",
+          "Id": "785baf39-1a91-4551-a749-ed44124512ba",
           "ApiChange": "Resource",
           "ChangedApiName": "educationMakeCodeResource",
           "ChangeType": "Addition",
@@ -183,7 +183,7 @@
           "Target": "educationMakeCodeResource"
         },
         {
-          "Id": "484e589d-667b-4155-a43c-14f5efcfd251",
+          "Id": "785baf39-1a91-4551-a749-ed44124512ba",
           "ApiChange": "Property",
           "ChangedApiName": "grade",
           "ChangeType": "Addition",
@@ -191,7 +191,7 @@
           "Target": "educationClass"
         }
       ],
-      "Id": "484e589d-667b-4155-a43c-14f5efcfd251",
+      "Id": "785baf39-1a91-4551-a749-ed44124512ba",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
@@ -201,7 +201,7 @@
     {
       "ChangeList": [
         {
-          "Id": "4688d0c5-8fb9-4282-a7af-8751fbac3194",
+          "Id": "6124ef3f-4075-41d0-ae3a-6e903801ea19",
           "ApiChange": "Resource",
           "ChangedApiName": "educationUser",
           "ChangeType": "Addition",
@@ -209,7 +209,7 @@
           "Target": "educationUser"
         },
         {
-          "Id": "4688d0c5-8fb9-4282-a7af-8751fbac3194",
+          "Id": "6124ef3f-4075-41d0-ae3a-6e903801ea19",
           "ApiChange": "Resource",
           "ChangedApiName": "educationCourse,educationClass",
           "ChangeType": "Addition",
@@ -217,7 +217,7 @@
           "Target": "educationCourse,educationClass"
         },
         {
-          "Id": "4688d0c5-8fb9-4282-a7af-8751fbac3194",
+          "Id": "6124ef3f-4075-41d0-ae3a-6e903801ea19",
           "ApiChange": "Resource",
           "ChangedApiName": "delta,educationUser",
           "ChangeType": "Addition",
@@ -225,7 +225,7 @@
           "Target": "delta,educationUser"
         },
         {
-          "Id": "4688d0c5-8fb9-4282-a7af-8751fbac3194",
+          "Id": "6124ef3f-4075-41d0-ae3a-6e903801ea19",
           "ApiChange": "Resource",
           "ChangedApiName": "delta,educationSchool",
           "ChangeType": "Addition",
@@ -233,7 +233,7 @@
           "Target": "delta,educationSchool"
         },
         {
-          "Id": "4688d0c5-8fb9-4282-a7af-8751fbac3194",
+          "Id": "6124ef3f-4075-41d0-ae3a-6e903801ea19",
           "ApiChange": "Resource",
           "ChangedApiName": "delta,educationClass",
           "ChangeType": "Addition",
@@ -241,7 +241,7 @@
           "Target": "delta,educationClass"
         },
         {
-          "Id": "4688d0c5-8fb9-4282-a7af-8751fbac3194",
+          "Id": "6124ef3f-4075-41d0-ae3a-6e903801ea19",
           "ApiChange": "Resource",
           "ChangedApiName": "faculty",
           "ChangeType": "Addition",
@@ -249,7 +249,7 @@
           "Target": "educationUserRole"
         }
       ],
-      "Id": "4688d0c5-8fb9-4282-a7af-8751fbac3194",
+      "Id": "6124ef3f-4075-41d0-ae3a-6e903801ea19",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
@@ -259,7 +259,7 @@
     {
       "ChangeList": [
         {
-          "Id": "fe527e8e-f8b2-497b-beb9-ab543c95e950",
+          "Id": "5f96fb86-d75d-459d-9d0b-4d7e5c1c7f19",
           "ApiChange": "Resource",
           "ChangedApiName": "educationCategory",
           "ChangeType": "Addition",
@@ -267,7 +267,7 @@
           "Target": "educationCategory"
         },
         {
-          "Id": "fe527e8e-f8b2-497b-beb9-ab543c95e950",
+          "Id": "5f96fb86-d75d-459d-9d0b-4d7e5c1c7f19",
           "ApiChange": "Resource",
           "ChangedApiName": "educationCategory,educationClass,educationAssignment",
           "ChangeType": "Addition",
@@ -275,7 +275,7 @@
           "Target": "educationCategory,educationClass,educationAssignment"
         },
         {
-          "Id": "fe527e8e-f8b2-497b-beb9-ab543c95e950",
+          "Id": "5f96fb86-d75d-459d-9d0b-4d7e5c1c7f19",
           "ApiChange": "Resource",
           "ChangedApiName": "educationFormResource",
           "ChangeType": "Addition",
@@ -283,7 +283,7 @@
           "Target": "educationFormResource"
         },
         {
-          "Id": "fe527e8e-f8b2-497b-beb9-ab543c95e950",
+          "Id": "5f96fb86-d75d-459d-9d0b-4d7e5c1c7f19",
           "ApiChange": "Property",
           "ChangedApiName": "recipients",
           "ChangeType": "Addition",
@@ -291,7 +291,7 @@
           "Target": "educationAssignmentIndividualRecipient"
         }
       ],
-      "Id": "fe527e8e-f8b2-497b-beb9-ab543c95e950",
+      "Id": "5f96fb86-d75d-459d-9d0b-4d7e5c1c7f19",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
@@ -301,7 +301,7 @@
     {
       "ChangeList": [
         {
-          "Id": "db5eb487-5a0b-47b0-bf7d-b482ff48a374",
+          "Id": "b11f5efc-a95c-465f-a0c7-521bc3c41349",
           "ApiChange": "Property",
           "ChangedApiName": "educationUser",
           "ChangeType": "Addition",
@@ -309,7 +309,7 @@
           "Target": "educationUser"
         }
       ],
-      "Id": "db5eb487-5a0b-47b0-bf7d-b482ff48a374",
+      "Id": "b11f5efc-a95c-465f-a0c7-521bc3c41349",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
@@ -319,7 +319,7 @@
     {
       "ChangeList": [
         {
-          "Id": "db5eb487-5a0b-47b0-bf7d-b482ff48a374",
+          "Id": "b11f5efc-a95c-465f-a0c7-521bc3c41349",
           "ApiChange": "Property",
           "ChangedApiName": "educationUser",
           "ChangeType": "Addition",
@@ -327,7 +327,7 @@
           "Target": "educationUser"
         }
       ],
-      "Id": "db5eb487-5a0b-47b0-bf7d-b482ff48a374",
+      "Id": "b11f5efc-a95c-465f-a0c7-521bc3c41349",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-02-01T00:00:00",
@@ -337,7 +337,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d0f71254-bd92-4662-bd4d-b62ccf0bba8e",
+          "Id": "871423e9-0f0c-4970-9645-bbdc7caface0",
           "ApiChange": "Property",
           "ChangedApiName": "educationSubmissionStatus",
           "ChangeType": "Change",
@@ -345,7 +345,7 @@
           "Target": "educationsubmission"
         },
         {
-          "Id": "d0f71254-bd92-4662-bd4d-b62ccf0bba8e",
+          "Id": "871423e9-0f0c-4970-9645-bbdc7caface0",
           "ApiChange": "Property",
           "ChangedApiName": "educationAssignmentIndividualRecipient",
           "ChangeType": "Change",
@@ -353,7 +353,7 @@
           "Target": "educationAssignment"
         },
         {
-          "Id": "d0f71254-bd92-4662-bd4d-b62ccf0bba8e",
+          "Id": "871423e9-0f0c-4970-9645-bbdc7caface0",
           "ApiChange": "Property",
           "ChangedApiName": "unsubmittedBy,unsubmittedDate,returnedBy,returnedDate",
           "ChangeType": "Change",
@@ -361,7 +361,7 @@
           "Target": "educationSubmission"
         },
         {
-          "Id": "d0f71254-bd92-4662-bd4d-b62ccf0bba8e",
+          "Id": "871423e9-0f0c-4970-9645-bbdc7caface0",
           "ApiChange": "Resource",
           "ChangedApiName": "return,unsubmit,educationSubmission",
           "ChangeType": "Addition",
@@ -369,7 +369,7 @@
           "Target": "return,unsubmit,educationSubmission"
         },
         {
-          "Id": "d0f71254-bd92-4662-bd4d-b62ccf0bba8e",
+          "Id": "871423e9-0f0c-4970-9645-bbdc7caface0",
           "ApiChange": "Resource",
           "ChangedApiName": "educationSubmission",
           "ChangeType": "Change",
@@ -377,7 +377,7 @@
           "Target": "educationSubmission"
         }
       ],
-      "Id": "d0f71254-bd92-4662-bd4d-b62ccf0bba8e",
+      "Id": "871423e9-0f0c-4970-9645-bbdc7caface0",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-05-01T00:00:00",
@@ -387,7 +387,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d0f71254-bd92-4662-bd4d-b62ccf0bba8e",
+          "Id": "871423e9-0f0c-4970-9645-bbdc7caface0",
           "ApiChange": "Resource",
           "ChangedApiName": "Members.Read.Hidden,Members",
           "ChangeType": "Change",
@@ -395,7 +395,7 @@
           "Target": "educationClass"
         }
       ],
-      "Id": "d0f71254-bd92-4662-bd4d-b62ccf0bba8e",
+      "Id": "871423e9-0f0c-4970-9645-bbdc7caface0",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-05-01T00:00:00",
@@ -405,7 +405,7 @@
     {
       "ChangeList": [
         {
-          "Id": "6d2a662d-d4f0-4e16-9c5f-a4d841506e1d",
+          "Id": "b6c7e518-f296-40e6-a235-b192435c79af",
           "ApiChange": "Property",
           "ChangedApiName": "educationsynchronizationerror",
           "ChangeType": "Change",
@@ -413,7 +413,7 @@
           "Target": "educationsynchronizationerror"
         },
         {
-          "Id": "6d2a662d-d4f0-4e16-9c5f-a4d841506e1d",
+          "Id": "b6c7e518-f296-40e6-a235-b192435c79af",
           "ApiChange": "Resource",
           "ChangedApiName": "uploadUrl",
           "ChangeType": "Change",
@@ -421,7 +421,7 @@
           "Target": "uploadUrl"
         },
         {
-          "Id": "6d2a662d-d4f0-4e16-9c5f-a4d841506e1d",
+          "Id": "b6c7e518-f296-40e6-a235-b192435c79af",
           "ApiChange": "Resource",
           "ChangedApiName": "educationSynchronizationError",
           "ChangeType": "Change",
@@ -429,7 +429,7 @@
           "Target": "educationSynchronizationError"
         },
         {
-          "Id": "6d2a662d-d4f0-4e16-9c5f-a4d841506e1d",
+          "Id": "b6c7e518-f296-40e6-a235-b192435c79af",
           "ApiChange": "Resource",
           "ChangedApiName": "get sync errors",
           "ChangeType": "Change",
@@ -437,7 +437,7 @@
           "Target": "get sync errors"
         }
       ],
-      "Id": "6d2a662d-d4f0-4e16-9c5f-a4d841506e1d",
+      "Id": "b6c7e518-f296-40e6-a235-b192435c79af",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",
@@ -447,7 +447,7 @@
     {
       "ChangeList": [
         {
-          "Id": "2ea3dc52-e4a0-423d-92f7-212393e42ac3",
+          "Id": "53492d4a-48ce-4a56-9492-ff30b3088528",
           "ApiChange": "Resource",
           "ChangedApiName": "Schools,Classes,Users,Assignments,Submissions",
           "ChangeType": "Addition",
@@ -455,7 +455,7 @@
           "Target": "Schools,Classes,Users,Assignments,Submissions"
         }
       ],
-      "Id": "2ea3dc52-e4a0-423d-92f7-212393e42ac3",
+      "Id": "53492d4a-48ce-4a56-9492-ff30b3088528",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-11-01T00:00:00",

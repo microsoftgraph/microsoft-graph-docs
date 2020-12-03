@@ -3,7 +3,7 @@ title: "Update deviceHealthScriptAssignment"
 description: "Update the properties of a deviceHealthScriptAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -109,6 +109,7 @@ Content-Length: 575
   }
 }
 ```
+
 
 
 

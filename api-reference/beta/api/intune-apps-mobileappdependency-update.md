@@ -3,7 +3,7 @@ title: "Update mobileAppDependency"
 description: "Update the properties of a mobileAppDependency object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -51,6 +51,9 @@ The following table shows the properties that are required when you create the [
 |id|String|The relationship entity id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|The target mobile app's app id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayName|String|The target mobile app's display name. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|The target mobile app's display version. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|The target mobile app's publisher. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target is a parent or child. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Possible values are: `child`, `parent`.|
 |dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|The type of dependency relationship between the parent and child apps. Possible values are: `detect`, `autoInstall`.|
 |dependentAppCount|Int32|The total number of dependencies the child app has.|
 
@@ -66,12 +69,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRelationshipId}
 Content-type: application/json
-Content-length: 211
+Content-length: 345
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetDisplayVersion": "Target Display Version value",
+  "targetPublisher": "Target Publisher value",
+  "targetType": "parent",
   "dependencyType": "autoInstall",
   "dependentAppCount": 1
 }
@@ -82,17 +88,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 260
+Content-Length: 394
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
   "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetDisplayVersion": "Target Display Version value",
+  "targetPublisher": "Target Publisher value",
+  "targetType": "parent",
   "dependencyType": "autoInstall",
   "dependentAppCount": 1
 }
 ```
+
 
 
 

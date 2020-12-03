@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All, Group.Read.All |
+|Application | Group.Read.All, Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-posts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-posts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

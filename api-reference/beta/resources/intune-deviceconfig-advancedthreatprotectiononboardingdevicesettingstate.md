@@ -3,7 +3,7 @@ title: "advancedThreatProtectionOnboardingDeviceSettingState resource type"
 description: "ATP onboarding State for a given device."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -30,7 +30,7 @@ ATP onboarding State for a given device.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `blackberry`, `palm`, `unknown`.|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `cloudPC`, `blackberry`, `palm`, `unknown`.|
 |setting|String|The setting class name and property name.|
 |settingName|String|The Setting Name that is being reported|
 |deviceId|String|The Device Id that is being reported|
@@ -72,6 +72,7 @@ Here is a JSON representation of the resource.
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

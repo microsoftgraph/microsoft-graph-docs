@@ -3,7 +3,7 @@ title: "Update defaultManagedAppProtection"
 description: "Update the properties of a defaultManagedAppProtection object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -219,6 +219,9 @@ Content-Length: 2181
   "faceIdBlocked": true
 }
 ```
+
+
+
 
 
 

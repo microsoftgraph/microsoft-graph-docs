@@ -1,6 +1,6 @@
 ---
 title: "Reply to a message in a channel"
-description: "Reply to an existing message in a channel."
+description: "Reply to existing message in a channel."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -17,7 +17,11 @@ Create a new reply to a [chatMessage](../resources/chatmessage.md) in a specifie
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
-> **Note**: It is a violation of the [terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD022 -->
+<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD001 -->
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,13 +30,14 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | ChannelMessage.Send, Group.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Teamwork.Migrate.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/channels/{id}/messages/{id}/replies
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -45,7 +50,7 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
-## Example
+## Example 1: Create a new reply to a chatMessage
 
 For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).
 
@@ -57,6 +62,7 @@ The following is an example of a request.
   "blockType": "request",
   "name": "post_reply_message"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
@@ -68,6 +74,7 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -80,8 +87,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reply-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-reply-message-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -91,6 +101,7 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -103,7 +114,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,
@@ -127,6 +139,96 @@ Content-length: 160
     "attachments": [],
     "mentions": [],
     "reactions": []
+}
+```
+
+### Example 2: Import messages
+
+> **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
+
+#### Request
+<!-- { "blockType": "ignored" } -->
+The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
+
+```http
+POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
+
+{
+   "replyToId":null,
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
+}
+```
+
+---
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+{
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#teams/{teamId}/channels/{channelId}/messages/$entity",
+   "id":"id-value",
+   "replyToId":null,
+   "etag":"id-value",
+   "messageType":"message",
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "lastModifiedDateTime":null,
+   "deleted":false,
+   "subject":null,
+   "summary":null,
+   "importance":"normal",
+   "locale":"en-us",
+   "policyViolation":null,
+   "from":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"id-value",
+         "displayName":"Joh Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
+   "body":{
+      "contentType":"html",
+      "content":"Hello World"
+   },
+   "attachments":[ ],
+   "mentions":[ ],
+   "reactions":[ ]
 }
 ```
 

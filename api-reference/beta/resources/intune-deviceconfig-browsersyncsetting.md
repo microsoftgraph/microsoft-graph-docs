@@ -3,7 +3,7 @@ title: "browserSyncSetting enum type"
 description: "Allow(Not Configured) or prevent(Block) the syncing of Microsoft Edge Browser settings. Option to prevent syncing across devices, but allow user override."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,6 +23,7 @@ Allow(Not Configured) or prevent(Block) the syncing of Microsoft Edge Browser se
 |notConfigured|0|Default – Allow syncing of browser settings across devices.|
 |blockedWithUserOverride|1|Prevent syncing of browser settings across user devices, allow user override of setting.|
 |blocked|2|Absolutely prevent syncing of browser settings across user devices.|
+
 
 
 

@@ -11,13 +11,13 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You will need to [register the calling bot](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.
+Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You will need to [register the calling bot](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.
 
 > **Note:** Currently, only VoIP calls are supported. 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 
 | Permission type                        | Permissions (from least to most privileged)                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
@@ -184,6 +184,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "toneInfo": null
 }
 ```
@@ -387,6 +388,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "toneInfo": null
 }
 ```
@@ -649,6 +651,7 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   },
+  "transcription": null,
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",

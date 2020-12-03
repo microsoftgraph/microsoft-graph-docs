@@ -3,7 +3,7 @@ title: "Get userExperienceAnalyticsDevicePerformance"
 description: "Read properties and relationships of the userExperienceAnalyticsDevicePerformance object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 629
+Content-Length: 743
 
 {
   "value": {
@@ -82,10 +82,15 @@ Content-Length: 629
     "coreLoginTimeInMs": 1,
     "groupPolicyLoginTimeInMs": 8,
     "deviceCount": 11,
-    "responsiveDesktopTimeInMs": 9
+    "responsiveDesktopTimeInMs": 9,
+    "blueScreenCount": 15,
+    "restartCount": 12,
+    "averageBlueScreens": 6.0,
+    "averageRestarts": 5.0
   }
 }
 ```
+
 
 
 

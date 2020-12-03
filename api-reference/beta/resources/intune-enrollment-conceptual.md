@@ -45,6 +45,7 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Management certificate with thumbprint](intune-enrollment-managementcertificatewiththumbprint.md)
 - [Out of box experience settings](intune-enrollment-outofboxexperiencesettings.md)
 - [Platform](intune-enrollment-platform.md)
+- [Suggested enrollment limit](intune-enrollment-suggestedenrollmentlimit.md)
 - [Windows autopilot deployment profile assignment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Windows autopilot device identity](intune-enrollment-windowsautopilotdeviceidentity.md)
 - [Windows autopilot device type](intune-enrollment-windowsautopilotdevicetype.md)

@@ -3,7 +3,7 @@ title: "Get windowsProtectionState"
 description: "Read properties and relationships of the windowsProtectionState object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsProtectionState
 ```
 
@@ -56,7 +55,7 @@ If successful, this method returns a `200 OK` response code and [windowsProtecti
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsProtectionState
 ```
 
 ### Response
@@ -64,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 971
+Content-Length: 1083
 
 {
   "value": {
@@ -86,10 +85,14 @@ Content-Length: 971
     "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
     "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
     "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+    "productStatus": "serviceNotRunning",
+    "isVirtualMachine": true,
+    "tamperProtectionEnabled": true
   }
 }
 ```
+
 
 
 

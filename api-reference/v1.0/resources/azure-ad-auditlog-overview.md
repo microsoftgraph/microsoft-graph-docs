@@ -2,7 +2,7 @@
 title: "Activity reports API overview"
 description: "Use the activity reports API in Microsoft Graph to access the reports that Azure Active Directory creates to help you track user activity in a tenant."
 localization_priority: Priority
-author: "khotz"
+author: "besiler"
 ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
@@ -15,10 +15,10 @@ Azure Active Directory (Azure AD) tracks user activity and creates reports that 
 
 ## What are Azure AD activity logs?
 
-Azure AD provides three types of activity reports:
+Azure AD provides the following types of activity reports:
 
-- audit logs
-- sign-in logs
+- Directory audits
+- Sign-ins
 
 ### Directory audits
 
@@ -57,8 +57,8 @@ To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/detail
 
 ## Next Steps
 
-- [Register your app](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites. 
-- Learn from [audit log](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
+- [Register your app](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites. 
+- Learn from [audit log](/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
 - Review [directoryAudit](directoryaudit.md) resource and actions.
 - Review [signIn](signin.md) resource and actions. 
 <!--

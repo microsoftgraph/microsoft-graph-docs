@@ -14,16 +14,16 @@ recipientsList.add(recipients);
 
 String message = "Here's the file that we're collaborating on.";
 
-boolean requireSignIn = true;
+Boolean requireSignIn = true;
 
-boolean sendInvitation = true;
+Boolean sendInvitation = true;
 
 LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("write");
 
 String password = "password123";
 
-int expirationDateTime = 7/15/2018 2:00:00 PM;
+String expirationDateTime = "7/15/2018 2:00:00 PM";
 
 graphClient.me().drive().items("{item-id}")
 	.invite(requireSignIn,rolesList,sendInvitation,message,recipientsList,expirationDateTime,password)

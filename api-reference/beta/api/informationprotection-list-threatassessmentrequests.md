@@ -28,9 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatAssessment.ReadWrite.All.             |
+| Delegated (work or school account)     | ThreatAssessment.ReadWrite.All             |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | ThreatAssessment.Read.All.                  |
+| Application                            | ThreatAssessment.Read.All                  |
 
 ## HTTP request
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-threatassessmentrequests-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-threatassessmentrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -202,3 +206,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

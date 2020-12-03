@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     |Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account) |Not supported. |
-|Application                            |Not supported. | 
+|Application                            |Not supported. |
 
 ## HTTP request
 
@@ -70,10 +70,10 @@ Content-Type: application/json
 Content-length: 122
 
 {
-    "parameters" [{
+    "parameters": [{
       "subjects": [{
           "objectId": "9bb0f679-a883-4a6f-8260-35b491b8b8c8",
-          "objectType": "User"
+          "objectTypeName": "User"
       }],
       "ruleId": "ea807875-5618-4f0a-9125-0b46a05298ca"
     }]
@@ -95,7 +95,7 @@ Content-length: 122
   "@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair"
 }
 -->
-``` 
+```
 HTTP/1.1 200 OK
 Content-Type: application/json
 

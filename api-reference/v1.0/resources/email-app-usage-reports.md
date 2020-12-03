@@ -23,3 +23,4 @@ Use the email app usage reports to see how many email apps are used to connect t
 | [Get apps user counts](../api/reportroot-getemailappusageappsusercounts.md) | Stream      | Get the count of unique users per email app. |
 | [Get user counts](../api/reportroot-getemailappusageusercounts.md) | Stream      | Get the count of unique users that connected to Exchange Online using any email app. |
 | [Get versions user counts](../api/reportroot-getemailappusageversionsusercounts.md) | Stream      | Get the count of unique users by Outlook desktop version. |
+

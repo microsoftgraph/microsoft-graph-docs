@@ -3,7 +3,7 @@ title: "Update windowsFeatureUpdateProfileAssignment"
 description: "Update the properties of a windowsFeatureUpdateProfileAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -92,6 +92,7 @@ Content-Length: 393
   }
 }
 ```
+
 
 
 

@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 [!INCLUDE [sample-code](../includes/snippets/objc/get-device-memberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-device-memberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -116,30 +120,14 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_count_only"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/memberOf/$count
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -164,30 +152,14 @@ Content-type: text/plain
 
 The following is an example of the request. 
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$search="displayName:Video"
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-video-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-video-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-video-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -224,7 +196,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
@@ -274,3 +246,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

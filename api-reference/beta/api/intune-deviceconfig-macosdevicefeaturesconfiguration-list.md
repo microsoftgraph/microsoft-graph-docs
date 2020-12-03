@@ -3,7 +3,7 @@ title: "List macOSDeviceFeaturesConfigurations"
 description: "List properties and relationships of the macOSDeviceFeaturesConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6245
+Content-Length: 6559
 
 {
   "value": [
@@ -136,6 +136,16 @@ Content-Length: 6245
           "@odata.type": "microsoft.graph.keyValuePair",
           "name": "Name value",
           "value": "Value value"
+        }
+      ],
+      "appAssociatedDomains": [
+        {
+          "@odata.type": "microsoft.graph.macOSAssociatedDomainsItem",
+          "applicationIdentifier": "Application Identifier value",
+          "domains": [
+            "Domains value"
+          ],
+          "directDownloadsEnabled": true
         }
       ],
       "singleSignOnExtension": {
@@ -233,6 +243,7 @@ Content-Length: 6245
   ]
 }
 ```
+
 
 
 

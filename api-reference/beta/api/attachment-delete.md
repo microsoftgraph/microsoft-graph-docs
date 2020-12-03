@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
 Delete an attachment from a user calendar [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 
 ## Permissions
@@ -149,6 +151,10 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-attachment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -177,3 +183,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

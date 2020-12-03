@@ -3,7 +3,7 @@ title: "androidGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the androidGeneralDeviceConfiguration resource."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -71,6 +71,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset. Valid values 1 to 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Type of password that is required. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is an API targeted to Android 11+. Possible values are: `none`, `low`, `medium`, `high`.|
 |passwordRequired|Boolean|Indicates whether or not to require a password.|
 |powerOffBlocked|Boolean|Indicates whether or not to block powering off the device.|
 |factoryResetBlocked|Boolean|Indicates whether or not to block user performing a factory reset.|
@@ -190,6 +191,7 @@ Here is a JSON representation of the resource.
   "passwordPreviousPasswordBlockCount": 1024,
   "passwordSignInFailureCountBeforeFactoryReset": 1024,
   "passwordRequiredType": "String",
+  "requiredPasswordComplexity": "String",
   "passwordRequired": true,
   "powerOffBlocked": true,
   "factoryResetBlocked": true,
@@ -237,6 +239,7 @@ Here is a JSON representation of the resource.
   "securityRequireVerifyApps": true
 }
 ```
+
 
 
 

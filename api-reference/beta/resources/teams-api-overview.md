@@ -28,6 +28,7 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 |[call](../resources/call.md)| [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [update metadata](../api/call-updatemetadata.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md), [mute all participants](../api/participant-muteall.md) |
 |[schedule](../resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
+|activityFeedNotification| [Send notification to user in scope of a chat](../api/chat-sendactivitynotification.md), [Send notification to user in scope of a team](../api/team-sendactivitynotification.md), [Send notification to user in personal scope](../api/userteamwork-sendactivitynotification.md)|
 |[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
 |[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
@@ -121,7 +122,7 @@ For example, it is okay to GET /me/joinedTeams every time the user visits/refres
 but it is not okay to GET /me/joinedTeams in a loop every 30 seconds to refresh that web page.
 
 Apps that don't follow these polling requirements will be considered in violation of the
-[Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
+[Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
 or the suspension or termination of your use of the Microsoft APIs.
 
 ## What's new

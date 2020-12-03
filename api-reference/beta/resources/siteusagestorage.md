@@ -4,7 +4,7 @@ description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # siteUsageStorage resource type
@@ -32,10 +32,12 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "siteType": "String", 
-  "storageUsedInBytes": 1024, 
-  "reportDate": "Date", 
+  "reportRefreshDate": "Date",
+  "siteType": "String",
+  "storageUsedInBytes": 1024,
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```
+
+

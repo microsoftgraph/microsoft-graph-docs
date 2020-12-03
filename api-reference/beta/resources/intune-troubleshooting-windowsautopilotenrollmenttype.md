@@ -3,7 +3,7 @@ title: "windowsAutopilotEnrollmentType enum type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -29,6 +29,7 @@ Not yet documented
 |azureADJoinedWithWhiteGlove|6|Not yet documented|
 |offlineDomainJoinedWithWhiteGlove|7|Not yet documented|
 |offlineDomainJoinedWithOfflineAutopilotProfile|8|Not yet documented|
+
 
 
 

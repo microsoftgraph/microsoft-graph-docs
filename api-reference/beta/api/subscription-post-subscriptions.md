@@ -24,10 +24,10 @@ Creating a subscription requires read permission to the resource. For example, t
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Not supported | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/allMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Not supported | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Not supported | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/allMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
@@ -37,8 +37,11 @@ Creating a subscription requires read permission to the resource. For example, t
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 ### chatMessage
 
@@ -46,24 +49,23 @@ Creating a subscription requires read permission to the resource. For example, t
 
 **chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Note:** `/teams/allMessages` and `/chats/allMessages` are currently in preview,
-and you may use this API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). 
-Starting in August 2020, it will only be available to users and tenants that have the [required licenses](/graph/teams-licenses). 
-Because `/teams/allMessages` and `/chats/allMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed;
-attempts to create subscriptions without the proper licenses will result in a 401 error code.
-In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the 
+[required licenses](https://aka.ms/teams-changenotification-licenses).
+
+> **Note:** `/chats/getAllMessages` only returns messages from chats owned by the tenant. 
+If a chat thread is initiated by a user outside the tenant, that chat thread is not owned by the tenant, and does not create change notifications.
 
 ### driveItem
 
-Additional limitations apply for subscriptions on OneDrive  items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
+Additional limitations apply for subscriptions on OneDrive items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
 
-On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
+On a personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
 
 ### contact, event, and message
 
 Additional limitations apply for subscriptions on Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
 
-- Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. That means, for example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.
+- Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.
 - To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
 
   - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
@@ -133,14 +135,23 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subscription-from-subscriptions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
+
+In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
+The `clientState` and `latestSupportedTlsVersion` fields are optional.
+
+#### Resources examples
 
 The following are valid values for the resource property.
 
 | Resource type | Examples |
 |:------ |:----- |
 |[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
+|[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Contacts](../resources/contact.md)|`me/contacts`|
 |[Conversations](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[Drives](../resources/driveitem.md)|`me/drive/root`|
@@ -149,6 +160,7 @@ The following are valid values for the resource property.
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ({id},{id}…)` (multiple users)|
+|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Users](../resources/user.md)|`users`|
 |[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
@@ -203,3 +215,5 @@ The subscription notification endpoint (specified in the **notificationUrl** pro
   ]
 }
 -->
+
+

@@ -4,7 +4,7 @@ description: "Contains the password profile associated with a user. The **passwo
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "eketo-msft"
 ---
 
 # passwordProfile resource type
@@ -56,3 +56,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

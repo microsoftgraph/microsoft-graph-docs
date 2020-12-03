@@ -1,5 +1,5 @@
 ---
-title: "List members"
+title: "List members of team"
 description: "Get the conversationMembers of a team."
 author: "nkramer"
 localization_priority: Priority
@@ -7,23 +7,28 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List members
+# List members of team
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [conversationMember](../resources/conversationmember.md) of a [team](../resources/team.md).
+Get the [conversationMember](../resources/conversationmember.md) collection of a [team](../resources/team.md).
 
->Note: This API currently does not support pagination, so if there's too many members to fit into one request, you won't get all the members.
+> [!NOTE]
+> The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
+>
+> The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Delegated (work or school account)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Application| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 ## HTTP request
 
@@ -32,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teams/{teamsId}/members
+GET /teams/{team-id}/members
 ```
 
 ## Optional query parameters
@@ -61,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/members
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationmember-csharp-snippets.md)]
@@ -73,6 +78,10 @@ GET https://graph.microsoft.com/beta/teams/{teamsId}/members
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-conversationmember-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-conversationmember-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -117,3 +126,7 @@ Content-Type: application/json
     ]
 }
 ```
+
+## See also
+
+- [List members in channel](channel-list-members.md)

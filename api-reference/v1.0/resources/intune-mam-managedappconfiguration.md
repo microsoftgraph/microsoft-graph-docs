@@ -3,7 +3,7 @@ title: "managedAppConfiguration resource type"
 description: "Configuration used to deliver a set of custom settings as-is to apps for users to whom the configuration is scoped"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -64,6 +64,8 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
+
 
 
 

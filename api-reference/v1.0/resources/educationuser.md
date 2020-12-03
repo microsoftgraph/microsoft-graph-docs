@@ -151,3 +151,4 @@ The following is a JSON representation of the resource.
 [assignedlicense]: assignedlicense.md
 [user]: user.md
 [directoryobject]: directoryobject.md
+

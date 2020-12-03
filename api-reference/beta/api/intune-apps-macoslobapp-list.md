@@ -3,7 +3,7 @@ title: "List macOSLobApps"
 description: "List properties and relationships of the macOSLobApp objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2049
+Content-Length: 2147
 
 {
   "value": [
@@ -90,6 +90,8 @@ Content-Length: 2049
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -121,11 +123,13 @@ Content-Length: 2049
       "md5Hash": [
         "Md5Hash value"
       ],
-      "ignoreVersionDetection": true
+      "ignoreVersionDetection": true,
+      "installAsManaged": true
     }
   ]
 }
 ```
+
 
 
 

@@ -17,6 +17,9 @@ Redirect a [print job](../resources/printjob.md) to a different [printer](../res
 
 For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
+> [!IMPORTANT]
+> Paused print jobs that are not redirected within 2 days will be deleted.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -78,6 +81,10 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
 [!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -121,3 +128,5 @@ Content-length: 437
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

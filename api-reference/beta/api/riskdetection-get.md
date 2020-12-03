@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/riskDetections
 [!INCLUDE [sample-code](../includes/snippets/objc/get-riskdetection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-riskdetection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -138,6 +142,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-riskdetection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-riskdetection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -188,4 +196,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
 

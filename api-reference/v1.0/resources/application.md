@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an application. Any application that outsources authentication to Azure Active Directory (Azure AD) must be registered in a directory. Application registration involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more. For more information, see [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Inherits from [directoryObject](directoryobject.md).
+Represents an application. Any application that outsources authentication to Azure Active Directory (Azure AD) must be registered in a directory. Application registration involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more. For more information, see [Basics of Registering an Application in Azure AD](/azure/active-directory/develop/authentication-vs-authorization#basics-of-registering-an-application-in-azure-ad). Inherits from [directoryObject](directoryobject.md).
 
 This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/application-delta.md) function.
 
@@ -50,13 +50,15 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Assign tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Assign a tokenLifetimePolicy to this object.|
 |[List tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Get all tokenLifetimePolicies assigned to this object.|
 |[Remove tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) collection| Remove a tokenLifetimePolicy from this object.|
-
+|**Verified publisher**| | |
+|[Set verified publisher](../api/application-setverifiedpublisher.md)| None | Set the verified publisher of an application.|
+|[Unset verified publisher](../api/application-unsetverifiedpublisher.md)| None | Unset the verified publisher of an application.|
 
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| addIns | [addIn](addin.md) collection| Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on. |
+| addIns | [addIn](addin.md) collection| Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on. |
 | api | [apiApplication](apiapplication.md) | Specifies settings for an application that implements a web API. |
 | appId | String | The unique identifier for the application that is assigned to an application by Azure AD. Not nullable. Read-only. |
 | appRoles | [appRole](approle.md) collection | The collection of roles the application declares. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or other applications' service principals. Not nullable. |
@@ -65,20 +67,21 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | displayName | String | The display name for the application. |
 | groupMembershipClaims | String | Configures the `groups` claim issued in a user or OAuth 2.0 access token that the application expects. To set this attribute, use one of the following valid string values:<ul><li>`None`</li><li>`SecurityGroup`: For security groups and Azure AD roles</li><li>`All`: This will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of</li></ul> |
 | id | String | The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
-| identifierUris | String collection | The URIs that identify the application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. For more information see [Application Objects and Service Principal Objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). The *any* operator is required for filter expressions on multi-valued properties. Not nullable. |
-| info | [informationalUrl](informationalurl.md) | Basic profile information of the application such as  app's marketing, support, terms of service and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. For more info, see How to: [Add Terms of service and privacy statement for registered Azure AD apps](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
+| identifierUris | String collection | The URIs that identify the application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. For more information see [Application Objects and Service Principal Objects](/azure/active-directory/develop/app-objects-and-service-principals). The *any* operator is required for filter expressions on multi-valued properties. Not nullable. |
+| info | [informationalUrl](informationalurl.md) | Basic profile information of the application such as  app's marketing, support, terms of service and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. For more info, see How to: [Add Terms of service and privacy statement for registered Azure AD apps](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false` which means the fallback application type is confidential client such as web app. There are certain scenarios where Azure AD cannot determine the client application type (e.g. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it is configured without specifying a redirect URI). In those cases Azure AD will interpret the application type based on the value of this property.|
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application Not nullable. |
 | logo | Stream | The main logo for the application. Not nullable. |
-| optionalClaims | [optionalClaims](optionalclaims.md) | Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [provide optional claims to your Azure AD app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) for more information.|
+| optionalClaims | [optionalClaims](optionalclaims.md) | Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [provide optional claims to your Azure AD app](/azure/active-directory/develop/active-directory-optional-claims) for more information.|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Specifies parental control settings for an application. |
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Specifies settings for installed clients such as desktop or mobile devices. |
 | publisherDomain | String | The verified publisher domain for the application. Read-only.|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
-| signInAudience | String | Specifies what Microsoft accounts are supported for the current application. Supported values are:<ul><li>`AzureADMyOrg`: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>`AzureADMultipleOrgs`: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>`AzureADandPersonalMicrosoftAccount`: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul> |
+| signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. Supported values are:<ul><li>`AzureADMyOrg`: Users with a Microsoft work or school account in my organization’s Azure AD tenant (single tenant)</li><li>`AzureADMultipleOrgs`: Users with a Microsoft work or school account in any organization’s Azure AD tenant (multi-tenant).</li><li>`AzureADandPersonalMicrosoftAccount`: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant.</li><li>`PersonalMicrosoftAccount`: Users with a personal Microsoft account only.</li></ul>For authenticating users with Azure AD B2C user flows, use `AzureADandPersonalMicrosoftAccount`. This value allows for the widest set of user identities including local accounts and user identities from Microsoft, Facebook, Google, Twitter, or any OpenID Connect provider. |
 | tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable.|
 | tokenEncryptionKeyId |String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Specifies the verified publisher of the application.|
 | web |[webApplication](webapplication.md)| Specifies settings for a web application. |
 
 ## Relationships
@@ -128,6 +131,7 @@ The following is a JSON representation of the resource.
   "signInAudience": "String",
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
+  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```

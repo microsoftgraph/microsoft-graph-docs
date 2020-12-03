@@ -3,7 +3,7 @@ title: "Create remoteAssistancePartner"
 description: "Create a new remoteAssistancePartner object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the r
 |onboardingUrl|String|URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|A friendly description of the current TeamViewer connector status. Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Timestamp of the last request sent to Intune by the TEM partner.|
+|onboardingRequestExpiryDateTime|DateTimeOffset|When the OnboardingStatus is Onboarding, This is the date time when the onboarding request expires.|
 
 
 
@@ -66,14 +67,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners
 Content-type: application/json
-Content-length: 266
+Content-length: 341
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistancePartner",
   "displayName": "Display Name value",
   "onboardingUrl": "https://example.com/onboardingUrl/",
   "onboardingStatus": "onboarding",
-  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
+  "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
 }
 ```
 
@@ -82,7 +84,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 315
+Content-Length: 390
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistancePartner",
@@ -90,9 +92,11 @@ Content-Length: 315
   "displayName": "Display Name value",
   "onboardingUrl": "https://example.com/onboardingUrl/",
   "onboardingStatus": "onboarding",
-  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
+  "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
 }
 ```
+
 
 
 

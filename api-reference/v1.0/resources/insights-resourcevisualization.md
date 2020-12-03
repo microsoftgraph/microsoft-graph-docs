@@ -95,3 +95,4 @@ The supported types can differ based on containers from which [officeGraphInsigh
 
 Example query:
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+

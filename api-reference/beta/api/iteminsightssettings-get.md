@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.Read, User.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read, User.ReadWrite  |
+|Application | Not supported. |
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/item
 [!INCLUDE [sample-code](../includes/snippets/objc/get-iteminsightssettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-iteminsightssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -101,3 +105,5 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
+

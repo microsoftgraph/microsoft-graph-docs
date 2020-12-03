@@ -12,14 +12,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphWebAccount *webAccount = [[MSGraphWebAccount alloc] init];
-[webAccount setDescription:@"description-value"];
-[webAccount setUserId:@"userId-value"];
+[webAccount setDescription:@"My Github contributions!"];
+[webAccount setUserId:@"innocenty.popov"];
 MSGraphServiceInformation *service = [[MSGraphServiceInformation alloc] init];
-[service setName:@"name-value"];
-[service setWebUrl:@"webUrl-value"];
+[service setName:@"GitHub"];
+[service setWebUrl:@"https://github.com"];
 [webAccount setService:service];
-[webAccount setStatusMessage:@"statusMessage-value"];
-[webAccount setWebUrl:@"webUrl-value"];
 
 NSError *error;
 NSData *webAccountData = [webAccount getSerializedDataWithError:&error];

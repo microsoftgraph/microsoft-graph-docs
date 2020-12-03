@@ -3,7 +3,7 @@ title: "Update windowsPhone81CustomConfiguration"
 description: "Update the properties of a windowsPhone81CustomConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -75,7 +75,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1248
+Content-length: 1276
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CustomConfiguration",
@@ -112,7 +112,8 @@ Content-length: 1248
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
@@ -123,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1420
+Content-Length: 1448
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CustomConfiguration",
@@ -163,11 +164,13 @@ Content-Length: 1420
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
 ```
+
 
 
 

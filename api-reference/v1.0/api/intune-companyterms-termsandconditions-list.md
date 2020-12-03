@@ -1,13 +1,13 @@
 ---
-title: "List termsAndConditionses"
+title: "List termsAndConditions"
 description: "List properties and relationships of the termsAndConditions objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# List termsAndConditionses
+# List termsAndConditions
 
 Namespace: microsoft.graph
 
@@ -77,6 +77,9 @@ Content-Length: 518
   ]
 }
 ```
+
+
+
 
 
 

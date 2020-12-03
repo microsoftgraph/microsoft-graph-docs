@@ -20,7 +20,7 @@ For this scenario, this article will show you how to:
 4. Delete the user's roaming profile information.
 
 >**Note:** This topic shows you how to add, read, update and delete open extensions on a **user** resource. These methods are also supported for 
-the **administrativeUnit**, **contact**, **device**, **event**, **group**, **post** and **organizaton** resource types.  
+the **administrativeUnit**, **contact**, **device**, **event**, **group**, **organizaton**, **post**, **todoTask**, and **todoTaskList** resource types.  
 You can update the request examples using any of those resource types. The responses shown in the examples might be shortened for readability. 
 
 ## 1. Add roaming profile information

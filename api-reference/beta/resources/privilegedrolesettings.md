@@ -4,7 +4,7 @@ description: "Represents the settings for a privileged role."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "shauliu"
 ---
 
 # privilegedRoleSettings resource type
@@ -82,3 +82,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

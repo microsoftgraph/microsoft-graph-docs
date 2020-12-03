@@ -39,6 +39,5 @@ The following datasets require a filter to be provided on one of the correspondi
 
 ## Next Steps 
 
-For more information about how to modify the user selected for extractoin and filtering in data connect pipelines, see the [Azure Data Factory Office 365 connector documentation](https://docs.microsoft.com/azure/data-factory/connector-office-365).  
+For more information about how to modify the user selected for extractoin and filtering in data connect pipelines, see the [Azure Data Factory Office 365 connector documentation](/azure/data-factory/connector-office-365).  
 
-  

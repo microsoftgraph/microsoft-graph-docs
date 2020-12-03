@@ -20,13 +20,15 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List apps installed in team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in a team.|
+|[Get app installed in a team](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
 |[Add app to team](../api/teamsappinstallation-add.md) |None | Adds (installs) an app to a team.|
 |[Remove app from team](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
 |[Upgrade app installed in team](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in team.|
-|[List apps installed for user](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in the personal scope of a user.|
-|[Add app for user](../api/user-add-teamsappinstallation.md) | | Adds (installs) an app in the personal scope of a user.|
-|[Remove app for user](../api/user-delete-teamsappinstallation.md) | None | Removes (uninstalls) an app in the personal scope of a user.|
-|[Upgrade app installed for user](../api/user-upgrade-teamsappinstallation.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
+|[List apps installed for user](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user.|
+|[Gets the installed app for user](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
+|[Add app for user](../api/userteamwork-add-installedapps.md) | | Adds (installs) an app in the personal scope of a user.|
+|[Remove app for user](../api/userteamwork-delete-installedapps.md) | None | Removes (uninstalls) an app in the personal scope of a user.|
+|[Upgrade app installed for user](../api/userteamwork-upgrade-installedapps.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
 
 ## Properties
 
@@ -60,6 +62,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
+- [userScopeTeamsAppInstallation](../resources/userscopeteamsappinstallation.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -73,3 +76,5 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
   "suppressions": []
 }
 -->
+
+

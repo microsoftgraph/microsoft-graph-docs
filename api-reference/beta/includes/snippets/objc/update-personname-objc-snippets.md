@@ -12,12 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphPersonName *personName = [[MSGraphPersonName alloc] init];
-[personName setDisplayName:@"displayName-value"];
-[personName setFirst:@"first-value"];
-[personName setInitials:@"initials-value"];
-[personName setLast:@"last-value"];
-[personName setLanguageTag:@"languageTag-value"];
-[personName setMaiden:@"maiden-value"];
+[personName setNickname:@"Kesha"];
 
 NSError *error;
 NSData *personNameData = [personName getSerializedDataWithError:&error];

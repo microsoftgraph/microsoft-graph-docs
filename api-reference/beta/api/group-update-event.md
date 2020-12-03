@@ -77,6 +77,10 @@ Content-length: 211
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-group-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -104,3 +108,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

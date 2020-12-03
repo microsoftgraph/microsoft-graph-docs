@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.AccessReviews["2975E9B5-44CE-4E71-93D3-30F03B5AA992"]
+await graphClient.IdentityGovernance.AccessReviews.Definitions["04e5c3b2-9db2-40d3-a204-128f4956ae8e"].Instances["70463350-742e-4909-bfa5-bc23447bd002"]
 	.SendReminder()
 	.Request()
 	.PostAsync();

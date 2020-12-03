@@ -18,7 +18,7 @@ You can access [users](user.md) through Microsoft Graph in two ways:
 
 ## Authorization
 
-One of the following [permissions](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
+One of the following [permissions](/graph/permissions-reference) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
 
 - User.ReadBasic.All
 - User.Read

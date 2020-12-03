@@ -38,7 +38,6 @@ Here is a JSON representation of the resource.
   "labelId": "String",
   "displayName": "String"
 }
-
 ```
 
 
@@ -54,3 +53,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

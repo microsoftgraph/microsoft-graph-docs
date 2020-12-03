@@ -2,7 +2,7 @@
 title: "PublicationFacet resource type"
 description: "The **publicationFacet** resource provides details on the published status of a driveItemVersion or driveItem resource."
 localization_priority: Normal
-author: ""
+author: "JeremyKelley"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -47,3 +47,4 @@ The **publicationFacet** resource provides details on the published status of a 
   ],
   "tocPath": "Facets/Photo"
 } -->
+

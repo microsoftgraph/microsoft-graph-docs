@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const team = {
+ isMembershipLimitedToOwners: true,
   memberSettings: {
     allowCreateUpdateChannels: true
   },

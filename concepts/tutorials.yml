@@ -54,10 +54,24 @@ landingContent:
         links:
           - text: Angular
             url: /graph/tutorials/angular
+          - text: Blazor WebAssembly
+            url: /graph/tutorials/blazor
           - text: JavaScript
             url: /graph/tutorials/javascript
           - text: React
             url: /graph/tutorials/react
+  - title: Microsoft platforms
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Azure Functions
+            url: /graph/tutorials/azure-functions
+          - text: Bot Framework
+            url: /graph/tutorials/bot-framework
+          - text: Power Automate
+            url: /graph/tutorials/power-automate
+          - text: SharePoint Framework
+            url: /graph/tutorials/spfx
   - title: Scenarios
     linkLists:
       - linkListType: tutorial

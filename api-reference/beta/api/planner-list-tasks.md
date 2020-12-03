@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /planner/tasks
 ```
 ## Optional query parameters
-This method requires planId [filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to be specified.
+This method requires planId [filter](/graph/query-parameters) to be specified.
 
 ## Request headers
 | Name      |Description|
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/planner/tasks
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/planner-get-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/planner-get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

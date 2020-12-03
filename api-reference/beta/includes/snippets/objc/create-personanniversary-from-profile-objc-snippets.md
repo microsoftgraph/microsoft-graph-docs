@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphPersonAnniversary *personAnniversary = [[MSGraphPersonAnniversary alloc] init];
 [personAnniversary setType: [MSGraphAnniversaryType birthday]];
-[personAnniversary setDate:@"datetime-value"];
+[personAnniversary setDate:@"1980-01-08"];
 
 NSError *error;
 NSData *personAnniversaryData = [personAnniversary getSerializedDataWithError:&error];

@@ -31,5 +31,5 @@ After an online meeting is created, users can join in two ways:
 
 ## See also
 
-- [Online meeting permissions](/graph/permissions-reference#online-meetings-permissions)
+- [Online meeting permissions](./permissions-reference.md#online-meetings-permissions)
 - [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md)

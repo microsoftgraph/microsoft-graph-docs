@@ -12,10 +12,10 @@ var externalItem = new ExternalItem
 	{
 		new Acl
 		{
-			Type = AclType.User,
-			Value = "49103559-feac-4575-8b94-254814dfca72",
+			Type = AclType.Everyone,
+			Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
 			AccessType = AccessType.Grant,
-			IdentitySource = "Azure Active Directory"
+			IdentitySource = "azureActiveDirectory"
 		}
 	}
 };

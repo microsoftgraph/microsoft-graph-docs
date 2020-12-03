@@ -4,7 +4,7 @@ description: "Represents a condition in a sorting operation."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "excel"
-author: ""
+author: "ruoyingl"
 ---
 
 # workbookSortField resource type
@@ -66,3 +66,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -63,6 +63,10 @@ DELETE https://graph.microsoft.com/beta/agreements/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-agreement-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-agreement-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -88,3 +92,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

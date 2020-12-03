@@ -13,7 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a term used in a term [store]. A term can be used to represent an object which can then be used as a metadata to tag conent. Multiple terms can be organized in a hierarchical manner within a [set].
+Represents a term used in a term [store]. A term can be used to represent an object which can then be used as a metadata to tag content. Multiple terms can be organized in a hierarchical manner within a [set].
 
 Inherits from [entity](../resources/entity.md).
 
@@ -97,3 +97,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

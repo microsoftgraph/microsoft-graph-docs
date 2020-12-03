@@ -4,7 +4,7 @@ description: "Contains information about a service plan associated with a subscr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "krbain"
 ---
 
 # servicePlanInfo resource type
@@ -58,3 +58,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

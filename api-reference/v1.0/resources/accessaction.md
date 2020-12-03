@@ -45,3 +45,4 @@ This resource type has no properties.
   "suppressions": []
 }
 -->
+

@@ -54,7 +54,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ### Using filter and orderby in the same query
 When using `$filter` and `$orderby` in the same query to get messages, make sure to specify properties in the following ways:

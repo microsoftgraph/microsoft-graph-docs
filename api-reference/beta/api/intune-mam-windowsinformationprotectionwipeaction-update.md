@@ -3,7 +3,7 @@ title: "Update windowsInformationProtectionWipeAction"
 description: "Update the properties of a windowsInformationProtectionWipeAction object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -99,6 +99,7 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

@@ -22,16 +22,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All. |
+| Delegated (work or school account)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All. |
+| Application                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /trustFramework/keySets/{id}/getActiveKey
+GET /trustFramework/keySets/{id}/getActiveKey
 ```
 
 ## Request headers
@@ -60,8 +60,8 @@ The following is an example of the request.
   "name": "trustframeworkkeyset_getactivekey"
 }-->
 
-```http
-POST https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-getactivekey-csharp-snippets.md)]
@@ -73,6 +73,10 @@ POST https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-getactivekey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-getactivekey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -115,3 +119,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -28,10 +28,10 @@ Make sure you have the corresponding permissions to call the following APIs.
 
 |Resource type |Method |
 |---------|---------|
-|[applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[List applicationTemplate](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) <br>[Instantiate applicationTemplate](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)|
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0&tabs=http) <br> [Assign claimsMappingPolicies](https://docs.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)|
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)|[Update application](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-1.0&tabs=http)|
-|[claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Create claimsMappingPolicy](https://docs.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)
+|[applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[List applicationTemplate](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[Instantiate applicationTemplate](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
+|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Update servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Create appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [Assign claimsMappingPolicies](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
+|[applications](/graph/api/resources/application?view=graph-rest-1.0)|[Update application](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
+|[claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Create claimsMappingPolicy](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
 
 >[!NOTE]
 >The response objects shown in this article might be shortened for readability. All the properties will be returned from an actual call.
@@ -46,7 +46,7 @@ Make sure you have the corresponding permissions to call the following APIs.
 
 ### Retrieve the gallery application template identifier
 
-Applications in the Azure AD application gallery each have an [application template](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) that describes the metadata for that application. Using this template, you can create an instance of the application and service principal in your tenant for management.
+Applications in the Azure AD application gallery each have an [application template](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) that describes the metadata for that application. Using this template, you can create an instance of the application and service principal in your tenant for management.
 
 #### Request
 
@@ -114,10 +114,10 @@ Content-type: application/json
 
 ### Create the gallery application
 
-Using the template ID that you retrieved for your application in the last step, [create an instance](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http) of the application and service principal in your tenant.
+Using the template ID that you retrieved for your application in the last step, [create an instance](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) of the application and service principal in your tenant.
 
 > [!NOTE] 
-> You can use applicationTemplate API to instantiate [Non-Gallery apps](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+> You can use applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 > [!NOTE]
 > Allow some time for the app to be provisioned into your Azure AD tenant. It is not instant. One strategy is to do a GET query on the application / service principal object every 5-10 seconds until the query is successful.
@@ -208,17 +208,17 @@ Content-type: application/json
 
 Use the response from the previous call to retrieve and save the application object ID and service principal object ID.
 
-```
-"application": {
-        "objectId": "cbc071a6-0fa5-4859-8g55-e983ef63df63"
-}
-"servicePrincipal": {
-        "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
+```json
+"application":{
+  "objectId":"cbc071a6-0fa5-4859-8g55-e983ef63df63"
+},
+"servicePrincipal":{
+  "objectId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
 ```
 ### Set single sign-on mode
 
-In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.
+In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.
 
 Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer. Also, make sure you are using the **servicePrincipal** ID that you obtained earlier.
 
@@ -232,8 +232,8 @@ Before this query will work you need to provide consent on the **Modify permissi
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-Content-type: servicePrincipal/json
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+Content-type: application/json
 
 {
     "preferredSingleSignOnMode": "saml"
@@ -281,7 +281,7 @@ Make sure you are using the **application** id obtained earlier.
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/applications/cbc071a6-0fa5-4859-8g55-e983ef63df63
+PATCH https://graph.microsoft.com/v1.0/applications/cbc071a6-0fa5-4859-8g55-e983ef63df63
 Content-type: applications/json
 
 {
@@ -307,6 +307,10 @@ Content-type: applications/json
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -321,9 +325,9 @@ HTTP/1.1 204
 ```
 ### Add app roles (Optional)
 
-If the application requires the role information in the token, add the definition of the roles in the application object. For AWS, you can [enable user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. 
+If the application requires the role information in the token, add the definition of the roles in the application object. For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. 
 
-For more information, see [Configure the role claim issued in the SAML token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management).
+For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 
 > [!NOTE] 
 > When adding app roles, don't modify the default app roles msiam_access. 
@@ -338,8 +342,8 @@ For more information, see [Configure the role claim issued in the SAML token](ht
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/serviceprincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-Content-type: serviceprincipals/json
+PATCH https://graph.microsoft.com/v1.0/serviceprincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+Content-type: application/json
 
 {
 "appRoles": [
@@ -390,6 +394,10 @@ Content-type: serviceprincipals/json
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -417,7 +425,7 @@ In addition to the basic claims, configure the following claims for Azure AD to 
 | roles | assignedroles |
 | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | userprincipalname |
 
-For more information, see [Customize claims emitted in token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping).
+For more information, see [Customize claims emitted in token](/azure/active-directory/develop/active-directory-claims-mapping).
 
 > [!NOTE]
 > Some keys in the claims mapping policy are case sensitive (for example, "Version"). If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.
@@ -432,12 +440,12 @@ For more information, see [Customize claims emitted in token](https://docs.micro
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/policies/claimsMappingPolicies
-Content-type: claimsMappingPolicies/json
+POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
+Content-type: application/json
 
 {
     "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
     ],
     "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
@@ -455,6 +463,10 @@ Content-type: claimsMappingPolicies/json
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -469,14 +481,14 @@ Content-type: claimsMappingPolicies/json
 
 ```http
 HTTP/1.1 201 OK
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/claimsMappingPolicies/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
     "id": "a7b19e62-9adb-4edb-8521-cd35305f095d",
     "deletedDateTime": null,
     "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
     ],
     "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
@@ -492,9 +504,9 @@ Content-type: claimsMappingPolicies/json
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/claimsMappingPolicies/$ref
+POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/claimsMappingPolicies/$ref
 
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/6b33aa8e-51f3-41a6-a0fd-d660d276197a"
@@ -514,7 +526,7 @@ HTTP/1.1 204
 
 ## Step 4: Configure signing certificate
 
-Using the [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default. Create your custom signing cert and assign it to the application. 
+Using the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default. Create your custom signing cert and assign it to the application. 
 
 ### Create a custom signing certificate
 
@@ -646,7 +658,7 @@ Add the following information to the service principal:
 * Password
 * Public key 
 
-Extract the private and public key Base64 encoded from the PFX file. To learn more about the properties, see [keyCredential resource type](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).
+Extract the private and public key Base64 encoded from the PFX file. To learn more about the properties, see [keyCredential resource type](/graph/api/resources/keycredential?view=graph-rest-1.0).
 
 Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential. You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint. See the previous C# reference code.
 
@@ -662,7 +674,7 @@ Make sure that the keyId for the keyCredential used for "Sign" matches the keyId
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
     "keyCredentials":[
@@ -723,7 +735,7 @@ You need to set the `preferredTokenSigningKeyThumbprint` property to the thumbpr
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
     "preferredTokenSigningKeyThumbprint": "AC09FEF18DDE6983EE2A164FBA3C4DD7518BD787"
@@ -761,7 +773,7 @@ Assign the following user to the service principal and assign the AWS_Role1.
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/appRoleAssignments
 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
   "principalId": "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
@@ -779,7 +791,7 @@ Content-type: appRoleAssignments/json
 } -->
 ```http
 HTTP/1.1 201 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
     "id": "rq7hyzl4yECaNZleMrTpDV-OCe5TEl5Ao_o76XMrRFU",
@@ -793,7 +805,7 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).
+For more information, see [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).
 
 ## Step 6: Configure the application side
 
@@ -803,6 +815,11 @@ Use the following URL to get the Azure AD SAML metadata for the specific configu
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
+> [!NOTE]
+> The application should be capable of parsing the byte order mark present in the federation metadata XML data rendered using `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`. Byte order mark is represented as a nonprintable ASCII character `»¿` and in Hex it is represented as `EF BB BF` when reviewing the XML data.
+
+ 
+
 ## Next steps
-- [Use Microsoft Graph APIs to configure user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-- [Use the AD FS application activity report to migrate applications to Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-application-activity)
+- [Use Microsoft Graph APIs to configure user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [Use the AD FS application activity report to migrate applications to Azure AD](/azure/active-directory/manage-apps/migrate-adfs-application-activity)

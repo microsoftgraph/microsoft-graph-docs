@@ -4,7 +4,7 @@ description: "This resource contains a tenant score and description for an indiv
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 #  controlScore resource type
@@ -50,3 +50,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

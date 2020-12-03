@@ -40,3 +40,5 @@ Derived from [educationSynchronizationConnectionSettings].
   "clientSecret": "String"
 }
 ```
+
+

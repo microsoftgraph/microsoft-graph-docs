@@ -23,13 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All* |
-
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
-
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+|Application | Schedule.ReadWrite.All |
 
 ## HTTP request
 
@@ -131,6 +127,10 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/objc/shift-put-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shift-put-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -218,3 +218,5 @@ Content-length: 401
   ]
 }
 -->
+
+

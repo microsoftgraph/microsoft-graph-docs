@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD.
 
-For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
+For more information about risk events, see [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -33,15 +33,15 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|`id`|`string`|Unique id of the user at risk|
-|`isDeleted`|`bool`|Indicates whether the user is deleted. Possible values are: `true`, `false`|
-|`isProcessing`|`bool`|Indicates wehther a user's risky state is being processed by the backend|
+|`id`|`string`|Unique ID of the user at risk.|
+|`isDeleted`|`bool`|Indicates whether the user is deleted. Possible values are: `true`, `false`.|
+|`isProcessing`|`bool`|Indicates whether a user's risky state is being processed by the backend.|
 |`riskLastUpdatedDateTime`|`datetime`|The date and time that the risky user was last updated|
 |`riskLevel`|`riskLevel`| The possible values are low, medium, high, hidden, none, unknownFutureValue.  |
 |`riskState`|`riskState`| The possible values are none, confirmedSafe, remediated, atRisk, unknownFutureValue.  |
 |`riskDetail`|`riskDetail`| The possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue.  |
-|`userDisplayName`|`string`|Risky user display name|
-|`userPrincipalName`|`string`|Risky user principal name|
+|`userDisplayName`|`string`|Risky user display name.|
+|`userPrincipalName`|`string`|Risky user principal name.|
 
 ## Relationships
 

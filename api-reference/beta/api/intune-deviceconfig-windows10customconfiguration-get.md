@@ -3,7 +3,7 @@ title: "Get windows10CustomConfiguration"
 description: "Read properties and relationships of the windows10CustomConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1514
+Content-Length: 1544
 
 {
   "value": {
@@ -106,12 +106,14 @@ Content-Length: 1514
         "@odata.type": "microsoft.graph.omaSetting",
         "displayName": "Display Name value",
         "description": "Description value",
-        "omaUri": "Oma Uri value"
+        "omaUri": "Oma Uri value",
+        "isEncrypted": true
       }
     ]
   }
 }
 ```
+
 
 
 

@@ -40,7 +40,8 @@ var @event = new Event
 			Type = AttendeeType.Required
 		}
 	},
-	AllowNewTimeProposals = true
+	AllowNewTimeProposals = true,
+	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
 };
 
 await graphClient.Me.Events

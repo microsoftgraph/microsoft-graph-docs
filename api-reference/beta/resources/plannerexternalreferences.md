@@ -45,7 +45,7 @@ Here is a JSON representation of the resource
 }
 ```
 
-// Example
+## Example
 
 ```json
 {
@@ -78,3 +78,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

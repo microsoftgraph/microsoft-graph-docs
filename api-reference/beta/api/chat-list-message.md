@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../resources/chat.md). 
+Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../resources/chat.md).
+
+> **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
 
 ## Permissions
 
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request.
 
@@ -81,9 +83,13 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chat-messages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-messages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 Here is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -109,7 +115,8 @@ Content-length: 201
             "etag": "1555631722147",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:55:22.147Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
@@ -149,7 +156,8 @@ Content-length: 201
             "etag": "1555631540287",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:52:20.287Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": "",
             "summary": null,
@@ -180,7 +188,8 @@ Content-length: 201
             "etag": "1555631512068",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:51:52.068Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
@@ -220,7 +229,8 @@ Content-length: 201
             "etag": "1555631511115",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:51:51.115Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
@@ -271,3 +281,4 @@ Content-length: 201
   ]
 }
 -->
+

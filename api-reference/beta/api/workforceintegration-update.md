@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |WorkforceIntegration.ReadWrite.All |
+| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-workforceintegration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -234,3 +238,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

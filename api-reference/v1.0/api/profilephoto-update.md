@@ -2,7 +2,7 @@
 title: "Update profilephoto"
 description: "Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there"
 localization_priority: Priority
-author: ""
+author: "kevinbellinger"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -85,6 +85,10 @@ Binary data for the image
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilephoto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-profilephoto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -109,3 +113,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

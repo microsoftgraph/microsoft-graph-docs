@@ -4,7 +4,7 @@ description: "Retrieve the metadata for a specific version of a DriveItem."
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # Get a DriveItemVersion resource (preview)
@@ -68,6 +68,10 @@ GET /me/drive/items/{item-id}/versions/{version-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-single-version-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-single-version-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -112,3 +116,5 @@ When your app retrieves the list of available versions for a file, a [DriveItemV
   ]
 }
 -->
+
+

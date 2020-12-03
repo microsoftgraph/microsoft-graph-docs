@@ -58,3 +58,4 @@ Here is a JSON representation of the **thumbnail** resource.
   "section": "documentation",
   "tocPath": "Resources/Thumbnail"
 } -->
+

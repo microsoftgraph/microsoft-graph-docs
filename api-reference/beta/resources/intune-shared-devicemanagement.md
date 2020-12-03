@@ -94,6 +94,10 @@ The deviceManagement resource represents a container whose contents vary accordi
 |auditEvents|[auditEvent](../resources/intune-auditing-auditevent.md) collection|The Audit Events|
 |**Company terms**|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) collection|The terms and conditions associated with device management of the company.|
+|**Configuration Policies**|
+|configurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-deviceManagementConfigurationPolicy.md) collection|List of all Configuration policies|
+|configurationSettings|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-deviceManagementConfigurationSettingDefinition.md) collection|List of all ConfigurationSettings|
+|configurationCategories|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-deviceManagementConfigurationCategory.md) collection|List of all Configuration Categories|
 |**Corporate enrollment**|
 |enrollmentProfiles|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) collection|The enrollment profiles.|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) collection|The imported Apple device identities.|
@@ -129,14 +133,14 @@ The deviceManagement resource represents a container whose contents vary accordi
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) collection|The list of device remote action audits with the tenant.|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) collection|The collection property of MobileAppTroubleshootingEvent.|
-|userExperienceAnalyticsOverview||User experience analytics overview|
-|userExperienceAnalyticsBaselines||User experience analytics baselines|
-|userExperienceAnalyticsCategories||User experience analytics categories|
-|userExperienceAnalyticsDevicePerformance||User experience analytics device performance|
-|userExperienceAnalyticsRegressionSummary||User experience analytics regression summary|
-|userExperienceAnalyticsDeviceStartupHistory||User experience analytics device Startup History|
-|userExperienceAnalyticsDeviceStartupProcesses||User experience analytics device Startup Processes|
-|userExperienceAnalyticsDeviceStartupProcessPerformance||User experience analytics device Startup Process Performance|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userExperienceAnalyticsOverview.md)|User experience analytics overview|
+|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userExperienceAnalyticsBaseline.md) collection|User experience analytics baselines|
+|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/intune-devices-userExperienceAnalyticsCategory.md) collection|User experience analytics categories|
+|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userExperienceAnalyticsDevicePerformance.md) collection|User experience analytics device performance|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userExperienceAnalyticsRegressionSummary.md)|User experience analytics regression summary|
+|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md) collection|User experience analytics device Startup History|
+|userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcess.md) collection|User experience analytics device Startup Processes|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcessPerformance.md) collection|User experience analytics device Startup Process Performance|
 |**Enrollment**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) collection|This collections of multiple DEP tokens per-tenant.|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|The imported device identities.|
@@ -151,6 +155,9 @@ The deviceManagement resource represents a container whose contents vary accordi
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) collection|The management condition statements associated with device management of the company.|
 |**Group Policy Analytics**|
 |groupPolicyMigrationReports|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) collection|A list of Group Policy migration reports.|
+|**MicrosoftTunnel**|
+|microsoftTunnelConfigurations|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsoftTunnelConfiguration.md) collection|Collection of MicrosoftTunnelConfiguration settings associated with account.|
+|microsoftTunnelSites|[microsoftTunnelSite](../resources/intune-mstunnel-microsoftTunnelSite.md) collection|Collection of MicrosoftTunnelSite settings associated with account.|
 |**Notifications**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) collection|The Notification Message Templates.|
 |**Onboarding**|
@@ -180,7 +187,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |roleDefinitions|[roleDefinition](../resources/intune-rbac-roledefinition.md) collection|The Role Definitions.|
 |roleScopeTags|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection|The Role Scope Tags.|
 |**Reporting**|
-|reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Reports singleton|
+|reports|[deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)|Reports singleton|
 |**Software Update**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) collection|A collection of windows feature update profiles|
 |**Telecom expense management (TEM)**|
@@ -208,6 +215,7 @@ Here is a JSON representation of the resource.
   "subscriptionState": "String"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "windows10VpnConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Windows 10 device (desktop or mobile) to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -57,7 +57,7 @@ Inherits from [windowsVpnConfiguration](../resources/intune-deviceconfig-windows
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |enableConditionalAccess|Boolean|Enable conditional access.|
 |enableSingleSignOnWithAlternateCertificate|Boolean|Enable single sign-on (SSO) with alternate certificate.|
-|singleSignOnEku|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Single sign-on Extended Key Usage (EKU).|
+|singleSignOnEku|[extendedKeyUsage](../resources/intune-shared-extendedkeyusage.md)|Single sign-on Extended Key Usage (EKU).|
 |singleSignOnIssuerHash|String|Single sign-on issuer hash.|
 |eapXml|Binary|Extensible Authentication Protocol (EAP) XML. (UTF8 encoded byte array)|
 |proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Proxy Server.|
@@ -242,6 +242,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

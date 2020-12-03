@@ -2,7 +2,7 @@
 title: "sizeRange resource type"
 description: "Specifies the maximum and minimum sizes (in kilobytes) that an incoming message must have in order for a condition or exception to apply."
 localization_priority: Normal
-author: ""
+author: "svpsiva"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -48,3 +48,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

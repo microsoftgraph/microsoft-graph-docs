@@ -4,7 +4,7 @@ description: "Represents an individual template setting definition, including th
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "dkershaw10"
 ---
 
 # settingTemplateValue resource type
@@ -58,3 +58,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

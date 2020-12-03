@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups?$search=%22displayName:Video%22&$count=true"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search=%22displayName:Video%22"]]];
 [urlRequest setHTTPMethod:@"GET"];
 [urlRequest setValue:@"eventual" forHTTPHeaderField:@"ConsistencyLevel"];
 

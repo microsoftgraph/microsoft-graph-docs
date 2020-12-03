@@ -3,7 +3,7 @@ title: "getSettingNonComplianceReport action"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -103,6 +103,7 @@ Content-Length: 99
   "value": "Z2V0U2V0dGluZ05vbkNvbXBsaWFuY2VSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgMTEwMDk1MTE2MA=="
 }
 ```
+
 
 
 

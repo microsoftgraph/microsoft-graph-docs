@@ -3,7 +3,7 @@ title: "List windows10EndpointProtectionConfigurations"
 description: "List properties and relationships of the windows10EndpointProtectionConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 34154
+Content-Length: 34198
 
 {
   "value": [
@@ -552,6 +552,7 @@ Content-Length: 34154
       "firewallBlockStatefulFTP": true,
       "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
       "firewallPreSharedKeyEncodingMethod": "none",
+      "firewallIPSecExemptionsNone": true,
       "firewallIPSecExemptionsAllowNeighborDiscovery": true,
       "firewallIPSecExemptionsAllowICMP": true,
       "firewallIPSecExemptionsAllowRouterDiscovery": true,
@@ -806,6 +807,7 @@ Content-Length: 34154
   ]
 }
 ```
+
 
 
 

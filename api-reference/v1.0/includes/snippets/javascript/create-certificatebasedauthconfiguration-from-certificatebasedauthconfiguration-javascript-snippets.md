@@ -19,7 +19,7 @@ const certificateBasedAuthConfiguration = {
   ]
 };
 
-let res = await client.api('/organization/{id}/certificateBasedAuthConfiguration')
+let res = await client.api('/organization/{id}/certificateBasedAuthConfiguration/$ref')
 	.post(certificateBasedAuthConfiguration);
 
 ```

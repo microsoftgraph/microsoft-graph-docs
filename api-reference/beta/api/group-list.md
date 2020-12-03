@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/groups
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -189,30 +193,14 @@ Content-type: application/json
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_groups_withlicenseerrors_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$count=true&$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-withlicenseerrors-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-withlicenseerrors-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-groups-withlicenseerrors-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -250,30 +238,14 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_count_only"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/$count
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -300,7 +272,7 @@ Content-type: text/plain
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
@@ -341,30 +313,14 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$search="displayName:Video"&$count=true
 ConsistencyLevel: eventual
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-video-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-video-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-video-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -401,7 +357,7 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
@@ -455,3 +411,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

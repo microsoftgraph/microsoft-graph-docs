@@ -3,7 +3,7 @@ title: "Update formatprotection"
 description: "Update the properties of formatprotection object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 ---
 
@@ -77,6 +77,10 @@ Content-length: 45
 [!INCLUDE [sample-code](../includes/snippets/objc/update-formatprotection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-formatprotection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -110,3 +114,5 @@ Content-length: 45
   ]
 }
 -->
+
+

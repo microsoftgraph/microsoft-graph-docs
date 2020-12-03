@@ -3,7 +3,7 @@ title: "Get policySetAssignment"
 description: "Read properties and relationships of the policySetAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -78,6 +78,7 @@ Content-Length: 462
   }
 }
 ```
+
 
 
 

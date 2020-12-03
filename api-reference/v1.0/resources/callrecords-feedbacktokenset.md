@@ -2,7 +2,7 @@
 title: "feedbackTokenSet resource type"
 description: "The feedbackTokenSet type"
 localization_priority: Normal
-author: "stephenjust"
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -15,7 +15,7 @@ This is an _open type_ that represents the set of feedback tokens provided by th
 
 ## Properties
 
-Explicit property names will not be documented since the feedback token names can change, hence this is an [open type](https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).
+Explicit property names will not be documented since the feedback token names can change, hence this is an [open type](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).
 
 ## JSON representation
 

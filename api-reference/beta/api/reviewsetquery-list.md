@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-4
 [!INCLUDE [sample-code](../includes/snippets/objc/list-reviewsetquery-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-reviewsetquery-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -152,3 +156,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

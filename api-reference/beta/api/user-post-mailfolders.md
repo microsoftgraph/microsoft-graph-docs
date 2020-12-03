@@ -62,7 +62,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value"
+  "displayName": "Clutter"
 }
 ```
 # [C#](#tab/csharp)
@@ -75,6 +75,10 @@ Content-length: 159
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailfolder-from-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-mailfolder-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -93,12 +97,12 @@ Content-type: application/json
 Content-length: 179
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
+  "displayName": "Clutter",
+  "parentFolderId": "AQMkADlmOGQwZmU3LWVjOWMtNDhiYgAtODcxNy1",
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "id-value"
+  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1"
 }
 ```
 
@@ -115,3 +119,5 @@ Content-length: 179
   ]
 }
 -->
+
+

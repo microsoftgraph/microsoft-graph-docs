@@ -2,7 +2,7 @@
 title: "reportRoot: getCredentialUserRegistrationCount"
 description: "Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities."
 localization_priority: Normal
-author: "khotz"
+author: "besiler"
 ms.prod: "reports"
 doc_type: "apiPageType"
 ---
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getcredentialuserregistrationcount-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getcredentialuserregistrationcount-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -122,3 +126,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

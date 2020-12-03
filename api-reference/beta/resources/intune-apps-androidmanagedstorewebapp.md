@@ -3,7 +3,7 @@ title: "androidManagedStoreWebApp resource type"
 description: "Contains properties and inherited properties for web apps configured to be distributed via the managed Android app store."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -45,11 +45,13 @@ Inherits from [androidManagedStoreApp](../resources/intune-apps-androidmanagedst
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|uploadState|Int32|The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|The package identifier. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appIdentifier|String|The Identity Name. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |usedLicenseCount|Int32|The number of VPP licenses in use. Inherited from [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
@@ -68,7 +70,7 @@ Inherits from [androidManagedStoreApp](../resources/intune-apps-androidmanagedst
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Mobile App Install Summary. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|The list of installation states for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|List of relationships for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|The set of direct relationships for this app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -105,6 +107,8 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "dependentAppCount": 1024,
+  "supersedingAppCount": 1024,
+  "supersededAppCount": 1024,
   "packageId": "String",
   "appIdentifier": "String",
   "usedLicenseCount": 1024,
@@ -122,6 +126,7 @@ Here is a JSON representation of the resource.
   "supportsOemConfig": true
 }
 ```
+
 
 
 

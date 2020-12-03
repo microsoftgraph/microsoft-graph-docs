@@ -13,15 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a search query that contains search terms and optional filters.
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Represents a search query that contains search terms and optional filters.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)|The search query containing the search terms.|
+|queryString|String|The search query containing the search terms. Required.|
+|query_string (deprecated)|[searchQueryString](searchquerystring.md)|This is now replaced by the **queryString** property. The search query containing the search terms.|
+
 
 ## JSON representation
 
@@ -38,6 +40,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "queryString": "String",
   "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
 }
 ```
@@ -51,3 +54,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

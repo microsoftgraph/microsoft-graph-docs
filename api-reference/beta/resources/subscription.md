@@ -24,6 +24,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [message][], [event][], or [contact][] in Outlook
 - The [presence][] of a user in Microsoft Teams
 - A [user][] or [group][] in Azure Active Directory
+- A [printTaskDefinition][] in Print Service
 
 See [Use the Microsoft Graph API to get change notifications](webhooks.md) for the possible resource path values for each supported resource.
 
@@ -43,7 +44,7 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 |:---------|:-----|:------------|
 | changeType | string | Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. Required. <br><br>Note: Drive root item and list change notifications support only the `updated` changeType. User and group change notifications support `updated` and `deleted` changeType. |
 | notificationUrl | string | The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol. Required. |
-| lifecycleNotificationUrl | string | The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved` and `missed` notifications. If not provided, those notifications will be delivered to **notificationUrl**. This URL must make use of the HTTPS protocol. Optional. <br><br>[Read more](/graph/webhooks-outlook-authz) about how Outlook resources use lifecycle notifications. |
+| lifecycleNotificationUrl | string | The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved` and `missed` notifications. This URL must make use of the HTTPS protocol. Optional. <br><br>[Read more](/graph/webhooks-lifecycle) about how Outlook resources use lifecycle notifications. |
 | resource | string | Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/beta/`). See the possible resource path [values](webhooks.md) for each supported resource. Required. |
 | expirationDateTime | DateTimeOffset | Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. Required. |
 | clientState | string | Specifies the value of the **clientState** property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the **clientState** property sent with the subscription with the value of the **clientState** property received with each change notification. Optional. |
@@ -68,6 +69,7 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
 | **user**, **group**, other directory resources   | 4230 minutes (under 3 days)    |
 | **presence**        | 60 minutes (1 hour) |
+| Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
 
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
@@ -80,12 +82,25 @@ None.
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.subscription"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscription",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false,
+        "sortable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -119,6 +134,7 @@ Here is a JSON representation of the resource.
 [chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
 [presence]: ./presence.md
+[printTaskDefinition]: ./printtaskdefinition.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -132,3 +148,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+
