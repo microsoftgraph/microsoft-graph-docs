@@ -22,13 +22,6 @@ To develop with the Toolkit, you will need a text editor or IDE. You can use the
 ## Using the Microsoft Graph Toolkit
 You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm package.
 
-### Use via mgt-loader
-
-
-```html
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-```
-
 # [npm](#tab/javascript)
 Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm package to your project:
 
@@ -41,7 +34,9 @@ To use the Toolkit via mgt-loader, add the reference in a script to your code:
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 ```
+
 ---
+
 
 ### Packages
 
