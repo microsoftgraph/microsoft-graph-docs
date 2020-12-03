@@ -309,9 +309,9 @@ None.
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Calendars.Read_ |Read user calendars |Allows the app to read events in user calendars. |No | Yes |
-| _Calendars.Read.Shared_ |Read user and shared calendars |Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |No | No |
+| _Calendars.Read.Shared_ |Read user and shared calendars |Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |No | No |
 | _Calendars.ReadWrite_ |Have full access to user calendars |Allows the app to create, read, update, and delete events in user calendars. |No | Yes |
-| _Calendars.ReadWrite.Shared_ |Read and write user and shared calendars |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|No | No |
+| _Calendars.ReadWrite.Shared_ |Read and write user and shared calendars |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|No | No |
 
 <br/>
 
@@ -482,7 +482,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMessage.Read.All_ |Read all channel messages  |Allows the app to read all channel messages in Microsoft Teams, without a signed-in user. |Yes | No |
+|_ChannelMessage.Read.All_ |Read all channel messages  |Allows the app to read all channel messages in Microsoft Teams, without a signed-in user. |Yes | No |
 |_ChannelMessage.UpdatePolicyViolation.All_ |Flag channel messages for violating policy |Allows the app to update Microsoft Teams channel messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 
 > **Note:** See also [Group.Read.All](#group-permissions).
@@ -509,15 +509,15 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_Chat.Read_ |Read your chat messages  |Allows an app to read your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
+|_Chat.Read_ |Read your chat messages  |Allows an app to read your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
 |_Chat.ReadBasic_ |Read names and members of user chat threads  |Allows an app to read the members and descriptions of 1:1 and group chats threads, on behalf of the signed-in user. |No | No |
-|_Chat.ReadWrite_ |Read your chat messages and send new ones  |Allows an app to read and send your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
+|_Chat.ReadWrite_ |Read your chat messages and send new ones  |Allows an app to read and send your 1:1 or group chat messages in Microsoft Teams, on your behalf. |No | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_Chat.Read.All_ |Read all chat messages  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
+|_Chat.Read.All_ |Read all chat messages  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
 |_Chat.ReadBasic.All_ |Read names and members of user chat threads  |Read names and members of all chat threads. |Yes | No |
 |_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 
@@ -579,8 +579,8 @@ None.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_Contacts.Read_ |Read user contacts  |Allows the app to read user contacts. |No | Yes |
-|_Contacts.Read.Shared_ |Read user and shared contacts |Allows the app to read contacts that the user has permissions to access, including the user's own and shared contacts. |No |No|
+|_Contacts.Read_ |Read user contacts  |Allows the app to read user contacts. |No | Yes |
+|_Contacts.Read.Shared_ |Read user and shared contacts |Allows the app to read contacts that the user has permissions to access, including the user's own and shared contacts. |No |No|
 |_Contacts.ReadWrite_ |Have full access to user contacts |Allows the app to create, read, update, and delete user contacts. |No |Yes|
 |_Contacts.ReadWrite.Shared_ |Read and write user and shared contacts |Allows the app to create, read, update and delete contacts that the user has permissions to, including the user's own and shared contacts. |No |No|
 
@@ -588,7 +588,7 @@ None.
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_Contacts.Read_ |Read contacts in all mailboxes |Allows the app to read all contacts in all mailboxes without a signed-in user. |Yes |
+|_Contacts.Read_ |Read contacts in all mailboxes |Allows the app to read all contacts in all mailboxes without a signed-in user. |Yes |
 |_Contacts.ReadWrite_ |Read and write contacts in all mailboxes |Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user. |Yes |
 
 > **Important**
@@ -1103,15 +1103,15 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Mail.Read_ |    Read user mail | Allows the app to read email in user mailboxes. | No | Yes
+| _Mail.Read_ |    Read user mail | Allows the app to read email in user mailboxes. | No | Yes
 | _Mail.ReadBasic_ |    Read user basic mail | Allows the app to read email in the signed-in user's mailbox, except for **body**, **bodyPreview**, **uniqueBody**, **attachments**, **extensions**, and any extended properties. Does not include permissions to search messages. | No | No
-| _Mail.ReadWrite_ |    Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.| No | Yes
-| _Mail.Read.Shared_ |    Read user and shared mail | Allows the app to read mail that the user can access, including the user's own and shared mail. | No | No
-| _Mail.ReadWrite.Shared_ |    Read and write user and shared mail | Allows the app to create, read, update, and delete mail that the user has permission to access, including the user's own and shared mail. Does not include permission to send mail. | No | No
-| _Mail.Send_ |    Send mail as a user | Allows the app to send mail as users in the organization. | No | Yes
-| _Mail.Send.Shared_ |    Send mail on behalf of others | Allows the app to send mail as the signed-in user, including sending on-behalf of others. | No | No
-| _MailboxSettings.Read_ |  Read user mailbox settings | Allows the app to the read user's mailbox settings. Does not include permission to send mail. | No | Yes
-| _MailboxSettings.ReadWrite_ |  Read and write user mailbox settings | Allows the app to create, read, update, and delete user's mailbox settings. Does not include permission to directly send mail, but allows the app to create rules that can forward or redirect messages. | No | Yes
+| _Mail.ReadWrite_ |    Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.| No | Yes
+| _Mail.Read.Shared_ |    Read user and shared mail | Allows the app to read mail that the user can access, including the user's own and shared mail. | No | No
+| _Mail.ReadWrite.Shared_ |    Read and write user and shared mail | Allows the app to create, read, update, and delete mail that the user has permission to access, including the user's own and shared mail. Does not include permission to send mail. | No | No
+| _Mail.Send_ |    Send mail as a user | Allows the app to send mail as users in the organization. | No | Yes
+| _Mail.Send.Shared_ |    Send mail on behalf of others | Allows the app to send mail as the signed-in user, including sending on-behalf of others. | No | No
+| _MailboxSettings.Read_ |  Read user mailbox settings | Allows the app to the read user's mailbox settings. Does not include permission to send mail. | No | Yes
+| _MailboxSettings.ReadWrite_ |  Read and write user mailbox settings | Allows the app to create, read, update, and delete user's mailbox settings. Does not include permission to directly send mail, but allows the app to create rules that can forward or redirect messages. | No | Yes
 
 #### Application permissions
 
@@ -1340,8 +1340,8 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Organization.Read.All_ |Read organization information | Allows the app to read the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information.|Yes | No |
-| _Organization.ReadWrite.All_ |Read and write organization information | Allows the app to read and write the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information. |Yes | No |
+| _Organization.Read.All_ |Read organization information | Allows the app to read the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information.|Yes | No |
+| _Organization.ReadWrite.All_ |Read and write organization information | Allows the app to read and write the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information. |Yes | No |
 
 <br/>
 
@@ -1349,8 +1349,8 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Organization.Read.All_ |Read organization information | Allows the app to read the organization and related resources, without a signed-in user. Related resources include things like subscribed SKUs and tenant branding information. | Yes |
-| _Organization.ReadWrite.All_ |Read and write organization information | Allows the app to read and write the organization and related resources, without a signed-in user. Related resources include things like subscribed SKUs and tenant branding information. |Yes |
+| _Organization.Read.All_ |Read organization information | Allows the app to read the organization and related resources, without a signed-in user. Related resources include things like subscribed SKUs and tenant branding information. | Yes |
+| _Organization.ReadWrite.All_ |Read and write organization information | Allows the app to read and write the organization and related resources, without a signed-in user. Related resources include things like subscribed SKUs and tenant branding information. |Yes |
 
 
 ### Example usage
@@ -1397,13 +1397,13 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _People.Read_ |    Read users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). | No | Yes |
-| _People.Read.All_ | Read all users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes | No |
+| _People.Read.All_ | Read all users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read.All_ | Read all users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. <br/><br/>The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes |
+| _People.Read.All_ | Read all users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. <br/><br/>The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes |
 
 ### Remarks
 
@@ -1635,9 +1635,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ## Search permissions
 
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _ExternalConnection.Read.OwnedBy_| Read external connections | Allows the app to read external connections without a signed-in user. The app can only read external connections that it is authorized to. | Yes | No |
 | _ExternalConnection.ReadWrite.OwnedBy_ | Read and write external connections | Allows the app to read and write external connections without a signed-in user. The app can only read and write external connections that it is authorized to, or it can create new external connections. | Yes | No |
@@ -1676,13 +1673,14 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ### Remarks
 Search permissions are only valid for work or school accounts.
 
-The search permission is only applicable to ingested data from the indexing API.
+This search permission is only applicable to ingested data from the indexing API.
 
 Access to data via search requires the read permission to the item. Ex : _Files.Read.All_ to access files via search.
 
 #### Delegated
-When search permissions are used for indexing APIs (ex, `POST /external/connections`), the signed-in user must be a Global Administrator or Search Administrator.
-When _ExternalItem.Read.All_ permission is used for query API (`POST /search/query`), the signed-in user can be any valid user in the organization and only items the signed-user has access permission to will be returned.
+When delegated search permissions are used for indexing APIs (ex, `POST /external/connections`), the signed-in user must be a Global Administrator or Search Administrator.
+
+When _ExternalItem.Read.All_ delegated permission is used for query API (`POST /search/query`), the signed-in user can be any valid user in the organization and only items the signed-user has access permission to will be returned.
 
 ### Example usage
 
@@ -2092,17 +2090,17 @@ Threat assessment permissions are valid only on work or school accounts.
 | _Printer.Create_ | Register printers | Allows the application to create (register) printers on behalf of the signed-in user. | Yes | No |
 | _Printer.FullControl.All_ | Register, read, update, and unregister printers | Allows the application to create (register), read, update, and delete (unregister) printers on behalf of the signed-in user. | Yes | No |
 | _Printer.Read.All_ | Read printers | Allows the application to read printers on behalf of the signed-in user. | Yes | No |
-| _Printer.ReadWrite.All_ | Read and update printers | Allows the application to read and update printers on behalf of the signed-in user. Does not allow creating (registering) or deleting (unregistering) printers. | Yes | No |
+| _Printer.ReadWrite.All_ | Read and update printers | Allows the application to read and update printers on behalf of the signed-in user. Does not allow creating (registering) or deleting (unregistering) printers. | Yes | No |
 | _PrinterShare.Read.All_ | Read printer shares | Allows the application to read printer shares on behalf of the signed-in user. | No | No |
 | _PrinterShare.ReadWrite.All_ | Read and write printer shares | Allows the application to read and update printer shares on behalf of the signed-in user. | Yes | No |
 | _PrintJob.Read_ | Read user's print jobs | Allows the application to read the metadata and document content of print jobs that the signed-in user created. | No | No |
 | _PrintJob.Read.All_ | Read print jobs | Allows the application to read the metadata and document content of print jobs on behalf of the signed-in user. | Yes | No |
 | _PrintJob.ReadBasic_ | Read basic information of user's print jobs | Allows the application to read the metadata of print jobs that the signed-in user created. Does not allow access to print job document content. | No | No |
-| _PrintJob.ReadBasic.All_ | Read basic information of print jobs | Allows the application to read the metadata of print jobs on behalf of the signed-in user. Does not allow access to print job document content. | Yes | No |
+| _PrintJob.ReadBasic.All_ | Read basic information of print jobs | Allows the application to read the metadata of print jobs on behalf of the signed-in user. Does not allow access to print job document content. | Yes | No |
 | _PrintJob.ReadWrite_ | Read and write user's print jobs | Allows the application to read and update the metadata and document content of print jobs that the signed-in user created. | No | No |
 | _PrintJob.ReadWrite.All_ | Read and write print jobs | Allows the application to read and update the metadata and document content of print jobs on behalf of the signed-in user. | Yes | No |
 | _PrintJob.ReadWriteBasic_ | Read and write basic information of user's print jobs | Allows the application to read and update the metadata of print jobs that the signed-in user created. Does not allow access to print job document content. | No | No |
-| _PrintJob.ReadWriteBasic.All_ | Read and write basic information of print jobs | Allows the application to read and update the metadata of print jobs on behalf of the signed-in user. Does not allow access to print job document content. | Yes | No |
+| _PrintJob.ReadWriteBasic.All_ | Read and write basic information of print jobs | Allows the application to read and update the metadata of print jobs on behalf of the signed-in user. Does not allow access to print job document content. | Yes | No |
 
 #### Application permissions
 
@@ -2112,9 +2110,9 @@ Threat assessment permissions are valid only on work or school accounts.
 | _Printer.ReadWrite.All_ | Read and update printers | Allows the application to read and update printers without a signed-in user. Does not allow creating (registering) or deleting (unregistering) printers. | Yes |
 | _PrintJob.Manage.All_ | Perform advanced operations on print jobs | Allows the application to perform advanced operations like redirecting a print job to another printer without a signed-in user. Also allows the application to read and update the metadata of print jobs. | Yes |
 | _PrintJob.Read.All_ | Read print jobs | Allows the application to read the metadata and document content of print jobs without a signed-in user. | Yes |
-| _PrintJob.ReadBasic.All_ | Read basic information for print jobs | Allows the application to read the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Yes |
+| _PrintJob.ReadBasic.All_ | Read basic information for print jobs | Allows the application to read the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Yes |
 | _PrintJob.ReadWrite.All_ | Read and write print jobs | Allows the application to read and update the metadata and document content of print jobs without a signed-in user. | Yes |
-| _PrintJob.ReadWriteBasic.All_ | Read and write basic information for print jobs | Allows the application to read and update the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Yes |
+| _PrintJob.ReadWriteBasic.All_ | Read and write basic information for print jobs | Allows the application to read and update the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Yes |
 | _PrintTaskDefinition.ReadWrite.All_ | Read, write and update print task definitions | Allows the application to read and update print task definitions without a signed-in user. | Yes |
 
 ### Remarks
