@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-pecifies the index of the URLs where user tokens are sent for sign-in. This is only valid for applications using SAML.
+Specifies the index of the URLs where user tokens are sent for sign-in. This is only valid for applications using SAML.
 
 ## Properties
 
