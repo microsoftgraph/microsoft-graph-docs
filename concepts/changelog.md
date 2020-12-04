@@ -18,6 +18,11 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
 ## December 2020
+### Identity and access
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition| beta| Added a new property to [applications](/graph/api/resources/applications.md): defaultRedirectUri|
+| Addition| beta | Added a new resource type to [webApplication](/graph/api/resources/webapplications.md): [redirectUriSettings](/graph/api/resources/redirecturisettings.md)
 
 ### Teamwork
 
