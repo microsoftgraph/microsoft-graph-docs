@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+      "ChangeList":[
+        {
+           "Id":"9ccea54d-3609-11eb-9836-6aeb5ee7dda6",
+           "ApiChange":"Member",
+           "ChangedApiName":"warning",
+           "ChangeType":"Addition",
+           "Description":"Added the `warning` member to the **provisioningResult** enumeration",
+           "Target":"provisioningResult"
+        }
+      ],
+      "Id":"9ccc42ac-3609-11eb-9836-6aeb5ee7dda6",
+      "Cloud":"prd",
+      "Version":"beta",
+      "CreatedDateTime":"2020-12-04T08:20:47.816Z",
+      "WorkloadArea":"Reports and audit",
+      "SubArea":"Identity and access reports"
+    },
+    {
       "ChangeList": [
         {
           "Id": "15159f16-343c-45d6-861f-105ebf2d5982",

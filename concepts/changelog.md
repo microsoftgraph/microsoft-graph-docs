@@ -12,6 +12,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## December 2020
 
+### Reports and audit
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the `warning` member to the **provisioningResult** enumeration|
+
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
