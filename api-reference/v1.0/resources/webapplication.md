@@ -1,24 +1,27 @@
-title: "redirectUriSettings resource type"
-description: "Specifies the index for a redirectUri"
+---
+title: "webApplication resource type"
+description: "Specifies settings for a web application."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "luleon"
+author: "sureshja"
 ---
 
-# redirectUriSettings resource type
+# webApplication resource type
 
 Namespace: microsoft.graph
 
-Specifies the index of the URLs where user tokens are sent for sign-in. This is only valid for applications using SAML.
+Specifies settings for a web application.
 
 ## Properties
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| `uri` | String | Specifies the URI that tokens are sent to. |
-|`index`|int|Identifies specific URI with in the redirectURIs collection in SAML SSO flows. Defaults to null. The index is unique across all the returnUris for the application.|
-
+| `homePageUrl` | String | Home page or landing page of the application. |
+| `implicitGrantSettings` | [implicitGrantSettings](implicitgrantsettings.md)| Specifies whether this web application can request tokens using the OAuth 2.0 implicit flow. |
+| `logoutUrl` | String | Specifies the URL that will be used by Microsoft's authorization service to logout an user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols. |
+| `redirectUris` | String collection | Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. |
+|`redirectUriSettings`| [redirectUriSettings](redirecturisettings.md) | Specifies the index of the URLs where user tokens are sent for sign-in. This is only valid for applications using SAML.|	
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -26,15 +29,20 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+
   ],
-  "@odata.type": "microsoft.graph.redirectUriSettings"
+  "@odata.type": "microsoft.graph.webApplication"
 }-->
 
 ```json
-{                
-    "uri": "string",
-    "index": "int"
+{
+  "homePageUrl": "String",
+  "implicitGrantSettings": {"@odata.type": "microsoft.graph.implicitGrantSettings"},
+  "logoutUrl": "String",
+  "redirectUris": ["String"],
+  "redirectUriSettings":{"@odata.type": "microsoft.graph.redirectUriSettings"}
 }
+
 ```
 
 
@@ -43,10 +51,12 @@ Here is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "redirectUriSettings resource",
+  "description": "webApplication resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": []
 }
 -->
+
+
