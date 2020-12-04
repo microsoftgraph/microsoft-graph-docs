@@ -63,6 +63,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | appId | String | The unique identifier for the application that is assigned to an application by Azure AD. Not nullable. Read-only. |
 | appRoles | [appRole](approle.md) collection | The collection of roles the application declares. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or other applications' service principals. Not nullable. |
 | createdDateTime | DateTimeOffset | The date and time the application was registered. Read-only. |
+|defaultRedirectUri|string|Default redirect Uri. If specified, Azure AD is going to send the token to that redirect Uri if there is no explicit redirect Uri in the sign-in request for SAML and OIDC flows. Also, Azure AD is going to send the token to the default redirect Uri in SAML IdP initiated single sign-on. The value needs to match one of the configured redirect Uris for the application.|
 | deletedDateTime | DateTimeOffset | The date and time the application was deleted. Read-only. |
 | displayName | String | The display name for the application. |
 | groupMembershipClaims | String | Configures the `groups` claim issued in a user or OAuth 2.0 access token that the application expects. To set this attribute, use one of the following valid string values:<ul><li>`None`</li><li>`SecurityGroup`: For security groups and Azure AD roles</li><li>`All`: This will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of</li></ul> |
