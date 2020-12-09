@@ -110,12 +110,20 @@ Content-Length: 1574
 	"value": [{
 			"id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
 			"availability": "Busy",
-			"activity": "InAMeeting"
+      "activity": "InAMeeting",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": false
+      }
 		},
 		{
 			"id": "66825e03-7ef5-42da-9069-724602c31f6b",
 			"availability": "Away",
-			"activity": "Away"
+			"activity": "Away",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": true
+      }
 		}
 	]
 }
