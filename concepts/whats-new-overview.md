@@ -41,6 +41,7 @@ Get or set the version and creation metadata for an Azure AD [terms of use](/gra
   - [OneDrive and SharePoint resources](/graph/search-concept-files).
 
 ### Teamwork
+
 - GA of resource-specific consent (RSC) permissions. RSC permissions allow team owners to grant granular consent to a production app to access and/or modify specific data of a team, for example, reading the team's settings, or modifying channel names, descriptions, and other settings.
 - GA of APIs that apply to a [channel](/graph/api/resources/channel) or messages within a channel. The APIs include:
   - [Create](/graph/api/conversationmember-add) or [delete](/graph/api/conversationmember-delete) a conversation member from a channel.

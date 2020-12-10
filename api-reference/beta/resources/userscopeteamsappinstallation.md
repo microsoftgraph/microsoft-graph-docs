@@ -22,9 +22,9 @@ This type inherits from [teamsAppInstallation](teamsappinstallation.md).
 |:---------------|:--------|:----------|
 |[List apps installed for user](../api/userteamwork-list-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | List apps installed in the personal scope of a user. |
 |[Get the installed app for user](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | List the specified app installed in the personal scope of a user. |
-|[Add app for user](../api/userteamwork-add-installedapps.md) | None | Adds (installs) an app in the personal scope of a user. |
+|[Add app for user](../api/userteamwork-post-installedapps.md) | None | Adds (installs) an app in the personal scope of a user. |
 |[Remove app for user](../api/userteamwork-delete-installedapps.md) | None | Removes (uninstalls) an app in the personal scope of a user. |
-|[Upgrade app installed for user](../api/userteamwork-upgrade-installedapps.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
+|[Upgrade app installed for user](../api/userteamwork-teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
 |[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md) | Lists one-on-one chat between the user and the app. |
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # ediscoveryCase resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 eDiscovery cases are containers that contain custodians, holds, collections, review sets, and exports.  Learn more about cases and [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
@@ -17,11 +19,17 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/ediscoverycase-list.md) | [ediscoveryCase](ediscoverycase.md) collection | Get a list of eDiscovery cases.|
-| [Get](../api/ediscoverycase-get.md) | [ediscoveryCase](ediscoverycase.md) | Read eDiscovery case properties. |
-| [Create](../api/ediscoverycase-post.md) | [ediscoveryCase](ediscoverycase.md) | Create a new **ediscoveryCase** by posting to the cases collection. |
-| [Update](../api/ediscoverycase-update.md) | [ediscoveryCase](ediscoverycase.md) | Update an eDiscovery case. |
-| [Delete](../api/ediscoverycase-delete.md) | None | Delete an eDiscovery case. |
+| [List ediscoveryCases](../api/ediscoverycase-list.md)          | [ediscoveryCase](ediscoverycase.md) collection   | Get a list of eDiscovery cases.|
+| [Get ediscoveryCase](../api/ediscoverycase-get.md)            | [ediscoveryCase](ediscoverycase.md)               | Read eDiscovery case properties. |
+| [Create ediscoveryCase](../api/ediscoverycase-post.md)        | [ediscoveryCase](ediscoverycase.md)               | Create a new **ediscoveryCase** by posting to the cases collection. |
+| [Update ediscoveryCase](../api/ediscoverycase-update.md)      | [ediscoveryCase](ediscoverycase.md)               | Update an eDiscovery case. |
+| [Delete ediscoveryCase](../api/ediscoverycase-delete.md)      | None                                              | Delete an eDiscovery case. |
+| [Close ediscoveryCase](../api/ediscoverycase-close.md)        | None                                              | Close an eDiscovery case. |
+| [Reopen ediscoveryCase](../api/ediscoverycase-reopen.md)      | None                                              | Reopen a closed eDiscovery case.|
+| [List custodians](../api/custodian-get.md)   | [custodian](../resources/custodian.md) collection |Get the custodian resources from the custodians navigation property.|
+| [Create custodians](../api/ediscoverycase-post-custodians.md)  | [custodian](../resources/custodian.md)           |Create a new custodian object.|
+| [List reviewSets](../api/reviewset-list.md)   | [reviewSet](../resources/reviewset.md) collection | Get the reviewSet resources from the reviewSets navigation property.|
+| [Create reviewSets](../api/reviewset-post.md)  | [reviewSet](../resources/reviewset.md)           | Create a new reviewSet object.|
 
 ## Properties
 
@@ -54,7 +62,8 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|Review sets|[reviewSet](reviewset.md) collection| Collection of review sets in the case. Read-only. Nullable. |
+|custodians|[custodian](../resources/custodian.md) collection| People in an organization who may possess data relevant to the case. |
+|reviewSets|[reviewSet](reviewset.md) collection| Collection of review sets in the case. Read-only. Nullable. |
 
 ## JSON representation
 
@@ -71,17 +80,21 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "closedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "closedDateTime": "String (timestamp)",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
+  "@odata.type": "#microsoft.graph.ediscoveryCase",
   "description": "String",
-  "displayName": "String",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "status": "String",
+  "closedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "closedDateTime": "String (timestamp)",
   "externalId": "String",
   "id": "String (identifier)",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)",
-  "status": "string"
+  "displayName": "String",
+  "createdDateTime": "String (timestamp)"
 }
 ```
 

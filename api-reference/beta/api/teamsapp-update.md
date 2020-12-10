@@ -54,7 +54,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 
->**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./appcatalogs-list-teamsapps.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 

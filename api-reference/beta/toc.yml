@@ -451,13 +451,13 @@ items:
         - name: Installed app
           href: resources/teamsappinstallation.md
         - name: Add app for user
-          href: api/userteamwork-add-installedapps.md
+          href: api/userteamwork-post-installedapps.md
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
-        - name: Gets installed app for user
+        - name: Get installed app for user
           href: api/userteamwork-get-installedapps.md
         - name: Upgrade installed app for user
-          href: api/userteamwork-upgrade-installedapps.md
+          href: api/userteamwork-teamsappinstallation-upgrade.md
         - name: Remove app for user
           href: api/userteamwork-delete-installedapps.md
         - name: Get chat between user and app
@@ -1451,6 +1451,21 @@ items:
             href: api/ediscoverycase-update.md
           - name: Delete
             href: api/ediscoverycase-delete.md
+        - name: Custodian
+          href: resources/custodian.md
+          items:
+          - name: List
+            href: api/ediscoverycase-list-custodians.md
+          - name: Create
+            href: api/ediscoverycase-post-custodians.md
+          - name: Get
+            href: api/custodian-get.md
+          - name: Update
+            href: api/custodian-update.md
+          - name: Activate
+            href: api/custodian-activate.md
+          - name: Release
+            href: api/custodian-release.md
         - name: eDiscovery Review set
           href: resources/reviewset.md
           items:
@@ -1473,6 +1488,39 @@ items:
             href: api/reviewsetquery-update.md
           - name: Delete
             href: api/reviewsetquery-delete.md
+        - name: Site source
+          href: resources/sitesource.md
+          items:
+          - name: List
+            href: api/custodian-list-sitesources.md
+          - name: Create
+            href: api/custodian-post-sitesources.md
+          - name: Get
+            href: api/sitesource-get.md
+          - name: Delete
+            href: api/sitesource-delete.md
+        - name: Unified group source
+          href: resources/unifiedgroupsource.md
+          items:
+          - name: List
+            href: api/custodian-list-unifiedgroupsources.md
+          - name: Create
+            href: api/custodian-post-unifiedgroupsources.md
+          - name: Get
+            href: api/unifiedgroupsource-get.md
+          - name: Delete
+            href: api/unifiedgroupsource-delete.md
+        - name: User source
+          href: resources/usersource.md
+          items:
+          - name: List
+            href: api/custodian-list-usersources.md
+          - name: Create
+            href: api/custodian-post-usersources.md
+          - name: Get
+            href: api/usersource-get.md
+          - name: Delete
+            href: api/usersource-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -10231,6 +10279,15 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+          - name: Email policy
+            href: resources/emailauthenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/emailauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/emailauthenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/emailauthenticationmethodconfiguration-delete.md
         - name: B2C authentication methods policy
           href: resources/b2cauthenticationmethodspolicy.md
           items:
@@ -12572,6 +12629,8 @@ items:
           href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Get messages across all channels
+          href: api/channels-getallmessages.md  
       - name: Chat
         href: resources/chat.md
         items:
@@ -12610,6 +12669,8 @@ items:
           href: api/channel-post-messagereply.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Get all chat messages
+          href: api/chats-getallmessages.md  
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
@@ -12621,7 +12682,7 @@ items:
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
-          href: api/teamsapp-list.md
+          href: api/appcatalogs-list-teamsapps.md
         - name: Update app in catalog
           href: api/teamsapp-update.md
         - name: Delete app from catalog
@@ -12631,27 +12692,37 @@ items:
         - name: Installed app
           href: resources/teamsappinstallation.md
         - name: List apps in team
-          href: api/teamsappinstallation-list.md
-        - name: Get app installed in a team
+          href: api/team-list-installedapps.md
+        - name: Get app installed in team
           href: api/team-get-installedapps.md
         - name: Add app to team
-          href: api/teamsappinstallation-add.md
+          href: api/team-post-installedapps.md
         - name: Remove app from team
-          href: api/teamsappinstallation-delete.md
+          href: api/team-delete-installedapps.md
         - name: Upgrade installed app for team
-          href: api/teamsappinstallation-upgrade.md
+          href: api/team-teamsappinstallation-upgrade.md
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
-        - name: Gets installed app for user
+        - name: Get app installed for user
           href: api/userteamwork-get-installedapps.md
         - name: Add app for user
-          href: api/userteamwork-add-installedapps.md
+          href: api/userteamwork-post-installedapps.md
         - name: Remove app for user
           href: api/userteamwork-delete-installedapps.md
         - name: Upgrade installed app for user
-          href: api/userteamwork-upgrade-installedapps.md
+          href: api/userteamwork-teamsappinstallation-upgrade.md
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
+        - name: List apps in chat
+          href: api/chat-list-installedapps.md
+        - name: Get app installed in chat
+          href: api/chat-get-installedapps.md
+        - name: Add app in chat
+          href: api/chat-post-installedapps.md
+        - name: Remove app from chat
+          href: api/chat-delete-installedapps.md
+        - name: Upgrade installed app in chat
+          href: api/chat-teamsappinstallation-upgrade.md
       - name: Activity feed
         items:
         - name: Send notification to user in chat
@@ -12663,16 +12734,26 @@ items:
       - name: Tab
         href: resources/teamstab.md
         items:
-        - name: List tabs
-          href: api/teamstab-list.md
-        - name: Get tab
-          href: api/teamstab-get.md
-        - name: Add tab
-          href: api/teamstab-add.md
-        - name: Update tab
-          href: api/teamstab-update.md
-        - name: Delete tab
-          href: api/teamstab-delete.md
+        - name: List tabs in channel
+          href: api/channel-list-tabs.md
+        - name: Get tab in channel
+          href: api/channel-get-tabs.md
+        - name: Add tab to cannel
+          href: api/channel-post-tabs.md
+        - name: Update tab in channel
+          href: api/channel-patch-tabs.md
+        - name: Remove tab from channel
+          href: api/channel-delete-tabs.md
+        - name: List tabs in chat
+          href: api/channel-list-tabs.md
+        - name: Get tab in chat
+          href: api/chat-get-tabs.md
+        - name: Add tab to chat
+          href: api/chat-post-tabs.md
+        - name: Update tab in chat
+          href: api/chat-patch-tabs.md
+        - name: Remove tab from chat
+          href: api/chat-delete-tabs.md
       - name: Calendar
         href: resources/event.md
         items:

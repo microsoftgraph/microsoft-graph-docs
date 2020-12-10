@@ -12,15 +12,7 @@ Use the Microsoft Search API to search content stored in OneDrive or SharePoint:
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-The Search API lets you scope the types of content to retrieve in OneDrive or SharePoint by specifying the **entityTypes** property on the [searchRequest](/graph/api/resources/searchRequest). The later part of this article shows a few examples:
-
-- [Example 1: Search files](#example-1-search-files)
-- [Example 2: Search list items](#example-2-search-list-items)
-- [Example 3: Search sites](#example-3-search-sites)
-- [Example 4: Search all content in OneDrive and SharePoint](#example-4-search-all-content-in-onedrive-and-sharepoint)
-- [Example 5: Use filters in search queries](#example-5-use-filters-in-search-queries)
-- [Example 6: Specify select properties](#example-6-specify-select-properties)
-
+The Search API lets you scope the types of content to retrieve in OneDrive or SharePoint by specifying the **entityTypes** property on the [searchRequest](/graph/api/resources/searchRequest). This article describes some examples.
 
 ## Example 1: Search files
 
@@ -84,7 +76,12 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
-                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b",
+                  "sharepointIds": {
+                      "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                      "listItemId": "1027",
+                      "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                  }
                 },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
@@ -150,6 +147,10 @@ Content-type: application/json
                 "lastModifiedDateTime": "2019-06-10T06:37:43Z",
                 "name": "web_part_test_long Notebook",
                 "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/Lists/Issue tracker list/DispForm.aspx?ID=1",
+                "sharepointIds": {
+                    "listId": "33498de0-d695-4d23-ac26-e1bf95a3206e",
+                    "listItemId": "13"
+                },
                 "createdBy": {
                  "user": {
                    "displayName": "Michaelvincent Santos;Provisioning User"
@@ -302,7 +303,12 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
-                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b",
+                  "sharepointIds": {
+                      "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                      "listItemId": "1027",
+                      "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                  }
                 },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
@@ -405,10 +411,11 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.listItem",
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
+                "sharepointIds": {
+                    "listId": "33498de0-d695-4d23-ac26-e1bf95a3206e",
+                    "listItemId": "13"
+                },
                 "parentReference": {
-                  "sharepointIds":{
-                    "listId":"da61a2b0-4120-4a3f-812b-0fc0d79bf16b"  
-                  },
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
                 },
                 "fields": {

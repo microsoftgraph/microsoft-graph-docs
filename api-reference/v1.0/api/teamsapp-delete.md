@@ -55,7 +55,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 Do not supply a request body for this method.
 
->**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./appcatalogs-list-teamsapps.md) call to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 

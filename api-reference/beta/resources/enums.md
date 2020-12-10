@@ -11,14 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### invitationStatus values
+### externalEmailOtpState values
 
-| Member
-|:---
-|PendingAcceptance
-|Completed
-|InProgress
-|Error
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
 
 ### volumeType values
 

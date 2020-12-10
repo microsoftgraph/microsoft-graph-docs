@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Azure Active Directory (Azure AD) tracks user activity and creates reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.
 
+The availability of these activity reports is governed by the Azure AD data retention policies. For more information, see [data retention policies](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+
 ## What are Azure AD activity logs?
 
 Azure AD provides the following types of activity reports:

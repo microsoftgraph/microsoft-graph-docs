@@ -410,13 +410,13 @@ items:
         - name: Installed app
           href: resources/teamsappinstallation.md
         - name: Add app for user
-          href: api/userteamwork-add-installedapps.md
+          href: api/userteamwork-post-installedapps.md
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
         - name: Gets installed app for user
           href: api/userteamwork-get-installedapps.md
         - name: Upgrade installed app for user
-          href: api/userteamwork-upgrade-installedapps.md
+          href: api/userteamwork-teamsappinstallation-upgrade.md
         - name: Remove app for user
           href: api/userteamwork-delete-installedapps.md
         - name: Get chat between user and app
@@ -5091,7 +5091,7 @@ items:
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
-          href: api/teamsapp-list.md
+          href: api/appcatalogs-list-teamsapps.md
         - name: Update app in catalog
           href: api/teamsapp-update.md
         - name: Delete app from catalog
@@ -5101,40 +5101,40 @@ items:
         - name: Installed app
           href: resources/teamsappinstallation.md
         - name: List apps in team
-          href: api/teamsappinstallation-list.md
+          href: api/team-list-installedapps.md
         - name: Get app installed in a team
           href: api/team-get-installedapps.md
         - name: Add app to team
-          href: api/teamsappinstallation-add.md
+          href: api/team-post-installedapps.md
         - name: Remove app from team
-          href: api/teamsappinstallation-delete.md
+          href: api/team-delete-installedapps.md
         - name: Upgrade installed app for team
-          href: api/teamsappinstallation-upgrade.md
+          href: api/team-teamsappinstallation-upgrade.md
         - name: List apps for user
           href: api/userteamwork-list-installedapps.md
         - name: Gets installed app for user
           href: api/userteamwork-get-installedapps.md
         - name: Add app for user
-          href: api/userteamwork-add-installedapps.md
+          href: api/userteamwork-post-installedapps.md
         - name: Remove app for user
           href: api/userteamwork-delete-installedapps.md
         - name: Upgrade installed app for user
-          href: api/userteamwork-upgrade-installedapps.md
+          href: api/userteamwork-teamsappinstallation-upgrade.md
         - name: Get chat between user and app
           href: api/userscopeteamsappinstallation-get-chat.md
       - name: Tab
         href: resources/teamstab.md
         items:
-        - name: List tabs
-          href: api/teamstab-list.md
-        - name: Get tab
-          href: api/teamstab-get.md
-        - name: Update tab
-          href: api/teamstab-update.md
-        - name: Delete tab
-          href: api/teamstab-delete.md
-        - name: Add tab
-          href: api/teamstab-add.md
+        - name: List tabs in channel
+          href: api/channel-list-tabs.md
+        - name: Get tab in channel
+          href: api/channel-get-tabs.md
+        - name: Add tab to cannel
+          href: api/channel-post-tabs.md
+        - name: Update tab in channel
+          href: api/channel-patch-tabs.md
+        - name: Remove tab from channel
+          href: api/channel-delete-tabs.md
       - name: Calendar
         href: resources/event.md
         items:
