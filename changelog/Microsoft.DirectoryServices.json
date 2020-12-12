@@ -4733,6 +4733,42 @@
       "CreatedDateTime": "2016-02-01T00:00:00",
       "WorkloadArea": "Users",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id":"863a1a86-3c04-11eb-822d-0179b911e3f8",
+          "ApiChange":"Resource",
+          "ChangedApiName":"spaApplication",
+          "ChangeType":"Addition",
+          "Description":"Added the [spaApplication](https://docs.microsoft.com/en-us/graph/api/resources/spaApplication?view=graph-rest-1.0) resource type",
+          "Target":"spaApplication"
+        }
+      ],
+      "Id":"8635551e-3c04-11eb-822d-0179b911e3f8",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2020-12-11T22:59:29.410Z",
+      "WorkloadArea":"Identity and access",
+      "SubArea":"Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id":"8637b96a-3c04-11eb-822d-0179b911e3f8",
+          "ApiChange":"Property",
+          "ChangedApiName":"spa",
+          "ChangeType":"Addition",
+          "Description":"Added the **spa** property to [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource",
+          "Target":"application"
+        }
+      ],
+      "Id":"8635551e-3c04-11eb-822d-0179b911e3f8",
+      "Cloud":"prd",
+      "Version":"v1.0",
+      "CreatedDateTime":"2020-12-11T22:59:29.410Z",
+      "WorkloadArea":"Applications",
+      "SubArea":""
     }
   ]
 }

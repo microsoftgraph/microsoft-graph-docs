@@ -5663,3 +5663,10 @@ Added support for dynamic group membership through the public preview API, inclu
 | Fix             | v1.0 and beta | Fixed being able to select certain user properties on other users, when referencing the user by user principal name (UPN). For example: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Fix             | v1.0 and beta | Fixed calling the _microsoft.graph.reminderView_ user bound function, which was failing with the following error: Could not find a property named businessPhones on type  Microsoft.OutlookServices.Reminder. |
 | Fix             | v1.0 and beta | Fixed user creation and update (POST/PATCH /v1.0/users), which was failing with a 400 error. |
+
+### Identity and access
+
+| **Change type** | **Version**   | **Description** |
+| :---------------| :-------------| :---------------|
+|Addition         | v1.0          | Added the **spa** property to [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource|
+|Addition         | v1.0          | Added the [spaApplication](https://docs.microsoft.com/en-us/graph/api/resources/spaApplication?view=graph-rest-1.0) resource type|
