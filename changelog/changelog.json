@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "28fc12fd-48ce-4212-9980-dc78b1ab3183",
+          "ApiChange": "Resource",
+          "ChangedApiName": "presence",
+          "ChangeType": "Addition",
+          "Description": "Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) property to the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type",
+          "Target": "outOfOfficeSettings"
+        }
+      ],
+      "Id": "28fc12fd-48ce-4212-9980-dc78b1ab3183",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-15T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6a6c7aa0-4b67-4d07-9ebf-c2bc1bcef553",
           "ApiChange": "Resource",
           "ChangedApiName": "ediscoveryCase,reviewSet,reviewSetQuery",
