@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "presence",
           "ChangeType": "Addition",
-          "Description": "Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type",
+          "Description": "Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) complex type. Added the **outOfOfficeSettings** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type",
           "Target": "outOfOfficeSettings"
         }
       ],
