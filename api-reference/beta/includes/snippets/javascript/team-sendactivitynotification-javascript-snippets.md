@@ -10,9 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const sendActivityNotification = Content-Type: application/json
-
-{
+const sendActivityNotification = {
     topic: {
         source: "text",
         value: "Deployment Approvals Channel",

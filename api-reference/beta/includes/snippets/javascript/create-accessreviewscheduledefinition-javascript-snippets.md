@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const accessReview = {
+const accessReviewScheduleDefinition = {
   displayName: "Test create",
   descriptionForAdmins: "New scheduled access review",
   descriptionForReviewers: "If you have any questions, contact jerry@contoso.com",
@@ -47,8 +47,8 @@ const accessReview = {
   }
 };
 
-let res = await client.api('/accessReviews')
+let res = await client.api('/identityGovernance/accessReviews/definitions')
 	.version('beta')
-	.post(accessReview);
+	.post(accessReviewScheduleDefinition);
 
 ```

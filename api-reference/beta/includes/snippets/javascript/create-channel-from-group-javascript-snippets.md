@@ -16,7 +16,7 @@ const channel = {
   membershipType: "standard"
 };
 
-let res = await client.api('/teams/{id}/channels')
+let res = await client.api('/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels')
 	.version('beta')
 	.post(channel);
 
