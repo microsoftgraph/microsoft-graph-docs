@@ -19,6 +19,7 @@ event.reminderMinutesBeforeStart = 99;
 event.isOnlineMeeting = true;
 event.onlineMeetingProvider = OnlineMeetingProviderType.TEAMS_FOR_BUSINESS;
 event.isReminderOn = true;
+event.hideAttendees = false;
 LinkedList<String> categoriesList = new LinkedList<String>();
 categoriesList.add("Red category");
 event.categories = categoriesList;

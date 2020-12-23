@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const extensionProperty = Content-Type: application/json
-Content-length: 43
-
-{
+const extensionProperty = {
   isSyncedFromOnPremises: "Boolean"
 };
 

@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const setOrder = Content-Type: application/json
-Content-length: 90
-
-{
+const setOrder = {
   newAssignmentOrder: {
     order: [
         "City",
