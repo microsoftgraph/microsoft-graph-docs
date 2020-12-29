@@ -11,7 +11,7 @@ requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standa
 
 Event event = graphClient.me().events("AAMkAGIAAAoZDOFAAA=")
 	.buildRequest( requestOptions )
-	.select("subject,body,bodyPreview,organizer,attendees,start,end,location")
+	.select("subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees")
 	.get();
 
 ```

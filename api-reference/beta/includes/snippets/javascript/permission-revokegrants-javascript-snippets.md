@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const permission = Content-Type: application/json
-Content-length: 95
-
-{
+const permission = {
   grantees: [
     {
       email: "ryan@contoso.com"
