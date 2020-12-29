@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private`.
+Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ## Permissions
 
@@ -53,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 ## Examples
 
-### Example 1: Add a member to a channel
+### Example 1: Add a member to a private channel
 
 #### Request
 
@@ -109,7 +109,7 @@ Content-length: 468
 }
 ```
 
-### Example 2: Add a member with the owner role to a channel
+### Example 2: Add a member with the owner role to a private channel
 
 #### Request
 <!-- {
@@ -152,6 +152,98 @@ Content-length: 468
   "roles": ["owner"],
   "displayName": "John Doe",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+  "email": null
+}
+```
+### Example 3: Add an intra-tenant member to a shared channel
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "shared_channel_add_intra_tenant_member"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/
+content-type: application/json
+{
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "roles": [],
+  "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+}
+```
+
+#### Response
+
+Here is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 468
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+  "roles": [],
+  "displayName": "John Doe",
+  "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+  "tenantId": "01c476f0-5a80-4ff3-a3ba-832d2543766a"
+  "email": null
+}
+```
+
+### Example 4: Add an x-tenant member to a shared channel
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "shared_channel_add_x_tenant_member"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/
+content-type: application/json
+{
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "roles": [],
+  "user@odata.bind": "https://graph.microsoft.com/beta/users/97a12240-0fe9-407a-8a82-2dde9be892e0",
+  "tenantId": "f2eea028-3898-4e55-b611-2e2d960f7512"
+}
+```
+
+#### Response
+
+Here is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 468
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "id": "97a12240-0fe9-407a-8a82-2dde9be892e0",
+  "roles": [],
+  "displayName": "John Doe",
+  "userId": "97a12240-0fe9-407a-8a82-2dde9be892e0",
+  "tenantId": "f2eea028-3898-4e55-b611-2e2d960f7512",
   "email": null
 }
 ```
