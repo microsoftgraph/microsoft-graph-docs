@@ -115,6 +115,7 @@ Content-length: 201
         "roles": [],
         "displayName": "Jane Doe",
         "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
+        "tenantId": "f2eea028-3898-4e55-b611-2e2d960f7512",
         "email": "jdoe@teamsip.onmicrosoft.com"
     },
     {
@@ -125,6 +126,7 @@ Content-length: 201
         ],
         "displayName": "Ace John",
         "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
+        "tenantId": "f2eea028-3898-4e55-b611-2e2d960f7512",
         "email": "ajohn@teamsip.onmicrosoft.com"
     }
 ]
