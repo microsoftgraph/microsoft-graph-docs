@@ -178,6 +178,21 @@ Content-type: application/json
 }
 ```
 
+Here is an example of the response for a shared channel.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 201
+
+{
+    displayName": "My First Shared Channel",
+    "description": "This is my first shared channels",
+    "id": "19:PZC_kAPAm12RPBMkEaJyXaY_d2PE6mJV6MzO1EiCbnk1@thread.tacv2",
+    "membershipType": "shared"
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
