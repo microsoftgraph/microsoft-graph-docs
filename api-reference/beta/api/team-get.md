@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [team](../resources/team.md) object in the response body.
-## Example
+## Example 1: Get channel when member is from host tenant 
 #### Request
 The following is an example of the request.
 
@@ -121,6 +121,40 @@ Content-length: 401
   "discoverySettings": {
     "showInTeamsSearchAndSuggestions": true
   }
+}
+```
+
+## Example 2: Get channel when member is from x-tenant 
+#### Request
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_team_x_tenant"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/teams/{id}
+```
+
+#### Response
+The following is an example of the response. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.team"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams/$entity",
+    "id": "af55e84c-dc67-4e48-9005-86e0b07272f9",
+    "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+    "displayName": "Microsoft Teams",
+    "description": "Microsoft Teams",
+    "internalId": "19:skypespaces_d9f124bec58948d0b4dec8869416a38d@thread.skype"
 }
 ```
 
