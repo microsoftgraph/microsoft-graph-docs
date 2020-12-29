@@ -164,8 +164,52 @@ Content-length: 201
     "membershipType": "private"
 }
 ```
+### Example 3: Create shared channel on behalf of user
 
-### Example 3: Create a channel in migration mode
+#### Request
+
+The following example shows how to create a shared channel.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_shared_channel_with_members"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+{
+  "@odata.type": "#Microsoft.Teams.Core.channel",
+  "membershipType": "shared",
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channels"
+  "members":
+     [
+        {
+           "@odata.type":"#microsoft.graph.aadUserConversationMember",
+           "user@odata.bind":"https://graph.microsoft.com/beta/users('{user_id}')",
+           "roles":["owner"]
+        }
+     ]
+}
+```
+
+#### Response
+
+The following example shows the response. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "create_shared_channel_with_members",
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{operationId}
+```
+
+### Example 4: Create a channel in migration mode
 
 #### Request
 
@@ -206,7 +250,7 @@ Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}/opera
 Content-Location: /teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/{channelId}
 ```
 
-### Example 4: Create standard channel with moderation settings
+### Example 5: Create standard channel with moderation settings
 
 #### Request
 
