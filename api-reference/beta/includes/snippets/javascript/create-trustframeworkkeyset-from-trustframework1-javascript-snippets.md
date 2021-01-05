@@ -10,13 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const mailFolder = {
-  displayName: "Clutter",
-  isHidden: true
+const trustFrameworkKeySet = {
+  id: "keyset1"  
 };
 
-let res = await client.api('/me/mailFolders')
+let res = await client.api('/trustFramework/keySets')
 	.version('beta')
-	.post(mailFolder);
+	.post(trustFrameworkKeySet);
 
 ```

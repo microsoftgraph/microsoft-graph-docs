@@ -6,12 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-MailFolder mailFolder = new MailFolder();
-mailFolder.displayName = "Clutter";
-mailFolder.isHidden = true;
-
-graphClient.me().mailFolders()
+MailboxSettings mailboxSettings = graphClient.customRequest("/me/mailboxSettings", MailboxSettings.class)
 	.buildRequest()
-	.post(mailFolder);
+	.get();
 
 ```

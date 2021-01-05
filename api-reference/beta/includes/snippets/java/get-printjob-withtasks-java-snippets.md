@@ -6,12 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-MailFolder mailFolder = new MailFolder();
-mailFolder.displayName = "Clutter";
-mailFolder.isHidden = true;
-
-graphClient.me().mailFolders()
+PrintJob printJob = graphClient.print().printers("c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb").jobs("5182")
 	.buildRequest()
-	.post(mailFolder);
+	.expand("tasks")
+	.get();
 
 ```

@@ -10,13 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-const mailFolder = {
-  displayName: "Clutter",
-  isHidden: true
-};
-
-let res = await client.api('/me/mailFolders')
+let res = await client.api('/me/calendar/events/delta?startDateTime=2020-06-12T00:00:00Z')
 	.version('beta')
-	.post(mailFolder);
+	.get();
 
 ```

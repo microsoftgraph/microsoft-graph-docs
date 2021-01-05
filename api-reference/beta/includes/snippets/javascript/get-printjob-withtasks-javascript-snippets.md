@@ -10,13 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-const mailFolder = {
-  displayName: "Clutter",
-  isHidden: true
-};
-
-let res = await client.api('/me/mailFolders')
+let res = await client.api('/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182')
 	.version('beta')
-	.post(mailFolder);
+	.expand('tasks')
+	.get();
 
 ```

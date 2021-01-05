@@ -6,12 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-MailFolder mailFolder = new MailFolder();
-mailFolder.displayName = "Clutter";
-mailFolder.isHidden = true;
+TrustFrameworkKeySet trustFrameworkKeySet = new TrustFrameworkKeySet();
+trustFrameworkKeySet.id = "keyset1";
 
-graphClient.me().mailFolders()
+graphClient.trustFramework().keySets()
 	.buildRequest()
-	.post(mailFolder);
+	.post(trustFrameworkKeySet);
 
 ```
