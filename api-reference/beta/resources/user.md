@@ -151,6 +151,7 @@ This resource supports:
 
 | Property       | Type    | Description |
 |:---------------|:--------|:------------|
+| newProp | String | description for prop. |
 | aboutMe | String | A freeform text entry field for the user to describe themselves. <br><br>Returned only on `$select`. |
 | accountEnabled | Boolean | `true` if the account is enabled; otherwise, `false`. This property is required when a user is created. <br><br>Returned only on `$select`. Supports $filter. |
 | ageGroup | String | Sets the age group of the user. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Returned only on `$select`. |
@@ -355,6 +356,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
+  "newProp": "string",
   "aboutMe": "string",
   "accountEnabled": true,
   "ageGroup": "string",
