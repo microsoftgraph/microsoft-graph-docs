@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /agreements/{id}
+PATCH /identityGovernance/termsOfUse/agreements/{id}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an updated [agre
   "name": "update_agreement"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/agreements/{id}
+PATCH https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
 Content-type: application/json
 Content-length: 85
 
