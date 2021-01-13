@@ -107,7 +107,7 @@ ClientCredentialProvider authProvider = new ClientCredentialProvider(
                                                     scopes,
                                                     clientSecret,
                                                     tenant,
-                                                    endpoint);
+                                                    NationalCloud.Global);
 ```
 
 # [Android](#tab/Android)

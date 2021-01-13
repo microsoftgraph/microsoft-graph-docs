@@ -2,7 +2,7 @@
 title: "credentialUserRegistrationDetails resource type"
 description: "Represents the details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users."
 localization_priority: Normal
-author: "khotz"
+author: "besiler"
 ms.prod: "reports"
 doc_type: "resourcePageType"
 ---

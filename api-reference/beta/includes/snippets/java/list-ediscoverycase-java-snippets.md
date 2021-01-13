@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IEdiscoveryCaseCollectionPage cases = graphClient.compliance().ediscovery().cases()
+ICaseCollectionPage cases = graphClient.compliance().ediscovery().cases()
 	.buildRequest()
 	.get();
 

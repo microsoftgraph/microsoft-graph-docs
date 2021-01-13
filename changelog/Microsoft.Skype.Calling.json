@@ -3,6 +3,68 @@
     {
       "ChangeList": [
         {
+          "Id": "b8406963-d747-4399-b0e6-a90e6d547ca4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "presence",
+          "ChangeType": "Addition",
+          "Description": "Added the **outOfOfficeSettings** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "outOfOfficeSettings"
+        },
+         {
+          "Id": "b8406963-d747-4399-b0e6-a90e6d547ca4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "presence",
+          "ChangeType": "Addition",
+          "Description": "Added the [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta) complex type.",
+          "Target": "outOfOfficeSettings"
+        }
+      ],
+      "Id": "b8406963-d747-4399-b0e6-a90e6d547ca4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-08T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "edb25912-4b47-4396-82c0-132c22fe7699",
+          "ApiChange": "Resource",
+          "ChangedApiName": "presence",
+          "ChangeType": "Addition",
+          "Description": "Added the [presence](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true) resource type.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "edb25912-4b47-4396-82c0-132c22fe7699",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-04T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8ff3f9a7-f4f2-4b78-b6d7-97c5ef078f00",
+          "ApiChange": "Property",
+          "ChangedApiName": "participantInfole",
+          "ChangeType": "Addition",
+          "Description": "Added the **platformId** property to the [participantInfo](https://docs.microsoft.com/en-us/graph/api/resources/participantInfo?view=graph-rest-beta) resource.",
+          "Target": "participantInfo"
+        }
+      ],
+      "Id": "8ff3f9a7-f4f2-4b78-b6d7-97c5ef078f00",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-30T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "65dabc09-b9d1-4292-93eb-830585daefc6",
           "ApiChange": "Property",
           "ChangedApiName": "role",
@@ -23,6 +85,24 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-10-15T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "65dabc09-b9d1-4292-93eb-830585daefc6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeeting",
+          "ChangeType": "Addition",
+          "Description": "Added the **lobbyBypassSettings**, **isEntryExitAnnounced**, and **allowedPresenters** properties to [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) to support meeting option configuration.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "65dabc09-b9d1-4292-93eb-830585daefc6",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-11-17T00:00:00",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },

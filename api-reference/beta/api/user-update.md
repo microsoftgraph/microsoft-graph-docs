@@ -114,9 +114,9 @@ Content-type: application/json
 
 {
   "businessPhones": [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  "officeLocation": "city-value"
+  "officeLocation": "18/2111"
 }
 ```
 # [C#](#tab/csharp)
@@ -167,9 +167,9 @@ Content-type: application/json
 
 {
   "businessPhones": [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  "officeLocation": "city-value"
+  "officeLocation": "18/2111"
 }
 ```
 # [C#](#tab/csharp)

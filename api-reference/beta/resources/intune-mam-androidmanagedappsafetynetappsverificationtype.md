@@ -26,4 +26,3 @@ An admin enforced Android SafetyNet Device Attestation requirement on a managed 
 
 
 
-

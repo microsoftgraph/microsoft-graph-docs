@@ -143,8 +143,7 @@ Aliases are friendly names for properties that you assign. These will be used in
 
 ## Next steps
 
-- [Add items to the connection](/graph/concepts/search-index-manage-items.md)
+- [Add items to the connection](/graph/search-index-manage-items)
 - [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
-- [Customize Microsoft Search results page](/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page)
 - [Search custom types (externalItem)](search-concept-custom-types.md)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub

@@ -27,20 +27,21 @@ An app can also subscribe to change notifications that include resource data, to
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
-- Outlook [message][]
-- Outlook [event][]
-- Outlook personal [contact][]
-- [list][]
-- [user][]
-- [group][]
-- Microsoft 365 group [conversation][]
+- Cloud printing [printTaskDefinition][]
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
+- [group][]
+- Microsoft 365 group [conversation][]
+- Outlook [event][]
+- Outlook [message][]
+- Outlook personal [contact][]
 - Security [alert][]
+- SharePoint [list][]
 - Teams [callRecord][]
 - Teams [chatMessage][]
 - Teams [presence][] (preview)
-- Print [printTaskDefinition][]
+- [todoTask][] (preview)
+- [user][]
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -61,6 +62,9 @@ Or to the root folder of a SharePoint/OneDrive for Business drive:
 Or to a new [Security API](security-concept-overview.md) alert:
 `/security/alerts?$filter=status eq 'newAlert'`,
 `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
+
+Or to the tasks in a user's To Do list:
+`/me/todo/lists/{todoTaskListId}/tasks`
 
 ### Azure AD resource limitations
 
@@ -285,18 +289,19 @@ The following table lists the latency to expect between an event happening in th
 
 | Resource | Average latency | Maximum latency |
 |:-----|:-----|:-----|
+|[alert][] | Less than 3 minutes | 5 minutes |
 |[callRecord][] | Less than 15 minutes | 60 minutes |
 |[chatMessage][] | Less than 10 seconds | 1 minute |
 |[contact][] | Unknown | Unknown |
+|[conversation][] | Unknown | Unknown |
 |[driveItem][] | Less than 1 minute | 5 minutes |
 |[event][] | Unknown | Unknown |
 |[group][] | Less than 2 minutes | 15 minutes |
-|[conversation][] | Unknown | Unknown |
 |[list][] | Less than 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
-|[alert][] | Less than 3 minutes | 5 minutes |
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
 |[printTaskDefinition][] | Less than 1 minute | 5 minutes |
+|[todoTask][] | Less than 2 minutes | 15 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
 
 >**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
@@ -309,7 +314,7 @@ The following table lists the latency to expect between an event happening in th
 - [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type
 - [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
-- [Lifecycle notifications](/graph/concepts/webhooks-lifecycle.md)
+- [Lifecycle notifications](/graph/webhooks-lifecycle)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
@@ -324,3 +329,4 @@ The following table lists the latency to expect between an event happening in th
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[todoTask]: /graph/api/resources/todotask

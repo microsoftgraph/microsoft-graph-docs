@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ITeamsAppInstallationCollectionPage installedApps = graphClient.teams("{id}").installedApps()
+TeamsAppInstallation teamsAppInstallation = graphClient.teams("{id}").installedApps("{id}")
 	.buildRequest()
 	.get();
 

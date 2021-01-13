@@ -2,7 +2,7 @@
 title: "teamsTab resource type"
 description: "A teamsTab is a tab that's pinned (attached) to a channel within a team. "
 localization_priority: Normal
-author: "nkramer"
+author: "AkJo"
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -19,11 +19,11 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
-|[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
-|[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
-|[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
+|[List tabs](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a channel.|
+|[Get tab](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Read a tab pinned to a channel.|
+|[Add tab](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a channel.|
+|[Update tab](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Update the tab properties.|
+|[Remove tab](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
 
 
 ## Properties

@@ -44,8 +44,10 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |acceptances|[agreementAcceptance](agreementacceptance.md) collection|Read-only. Information about acceptances of this agreement.|
-|files|[agreementFileLocalization](agreementfilelocalization.md) collection| PDFs linked to this agreement. **Note:** This property is in the process of being deprecated. Usethe  **file** property instead.|
-|file|[agreementFile](agreementfile.md) | PDFs linked to this agreement.|
+|files|[agreementFileLocalization](agreementfilelocalization.md) collection| PDFs linked to this agreement. **Note:** This property is in the process of being deprecated. Use the  **file** property instead.|
+|file|[agreementFile](agreementfile.md) | Default PDF linked to this agreement.|
+|file/localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized versions of the agreement files attached to the agreement.|
+|file/localizations/{localizationId}/versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
 
 
 ## JSON representation
@@ -72,7 +74,6 @@ The following is a JSON representation of the resource.
     "frequency": "PT1M"
   }
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

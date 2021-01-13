@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of the [message](../resources/message.md) object.
 
-For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.
+For instance, you can get a message and expand all the [mention](../resources/mention.md) instances in the message. See an [example](#example-2-get-all-mentions-in-a-specific-message) below.
 
-You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).
+You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message). See also an [example](#example-5-get-mime-content) below.
 
 There are two scenarios where an app can get a message in another user's mail folder:
 
@@ -91,7 +91,7 @@ If successful, this method returns a `200 OK` response code and [message](../res
 Specifying the `$value` parameter returns the message content in MIME format, and not a **message** resource.
 
 ## Examples
-### Example 1
+### Example 1: Get a specific message
 #### Request
 The first example gets the specified message. It does not specify any header to indicate the desired format of the body to be returned.
 
@@ -154,7 +154,7 @@ Content-length: 523
 ```
 
 
-### Example 2
+### Example 2: Get all mentions in a specific message
 #### Request
 In the next example, the signed-in user is Dana Swope. The example shows getting the details of all the mentions in the specified message in Dana's mailbox.
 
@@ -284,7 +284,7 @@ Content-length: 2248
 }
 ```
 
-### Example 3
+### Example 3: Get message body in text format
 #### Request
 
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.
@@ -351,7 +351,7 @@ Preference-Applied: outlook.body-content-type="text"
     }
 }
 ```
-### Example 4
+### Example 4: Get Internet message headers
 #### Request
 
 The fourth example shows how to get the Internet message headers of a specific message.  
@@ -431,7 +431,7 @@ Content-type: application/json
 ```
 
 
-### Example 5
+### Example 5: Get MIME content
 #### Request
 The fifth example gets the MIME content of a message in the signed-in user's mailbox.
 

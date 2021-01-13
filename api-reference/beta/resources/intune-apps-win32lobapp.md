@@ -71,6 +71,7 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|The MSI details if this Win32 app is an MSI app.|
 |setupFilePath|String|The relative path of the setup file in the encrypted Win32LobApp package.|
 |minimumSupportedWindowsRelease|String|The value for the minimum supported windows release.|
+|displayVersion|String|The version displayed in the UX for this app.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -199,10 +200,10 @@ Here is a JSON representation of the resource.
     "publisher": "String"
   },
   "setupFilePath": "String",
-  "minimumSupportedWindowsRelease": "String"
+  "minimumSupportedWindowsRelease": "String",
+  "displayVersion": "String"
 }
 ```
-
 
 
 

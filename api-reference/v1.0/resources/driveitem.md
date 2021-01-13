@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: driveItem resource type
 description: Item is the main data model in the OneDrive API. Everything is an item.
 localization_priority: Priority
@@ -12,7 +11,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 The **driveItem** resource represents a file, folder, or other item stored in a drive.
-All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
+
+All file system objects in OneDrive and SharePoint are returned as **driveItem** resources. Items in SharePoint document libraries can be represented as [listItem][] or **driveItem** resources.
 
 There are two primary ways of addressing a **driveItem** resource:
 
@@ -68,7 +68,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | webDavUrl            | String             | WebDAV compatible URL for the item.
 | webUrl               | String             | URL that displays the resource in the browser. Read-only.
 
-**Note:** The eTag and cTag properties work differently on containers (folders).
+>**Note:** The eTag and cTag properties work differently on containers (folders).
 The cTag value is modified when content or metadata of any descendant of the folder is changed.
 The eTag value is only modified when the folder's properties are changed, except for properties that are derived from descendants (like **childCount** or **lastModifiedDateTime**).
 
@@ -99,11 +99,13 @@ These properties are temporary and either a) define behavior the service should 
 | @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication is not required with this URL. Read-only.
 | @microsoft.graph.sourceUrl        | string | When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.
 
-**Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
-The URL will only be available for a short period of time (1 hour) before it is invalidated.
-Removing file permissions for a user may not immediately invalidate the URL.
-
->**Note:** The parameter @microsoft.graph.conflictBehavior should be included in the URL instead of the body of the request.
+>**Notes:** 
+>The parameter `@microsoft.graph.conflictBehavior` should be included in the URL instead of the body of the request.
+>
+>The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached. The URL will only be available for a short period of time (1 hour) before it is invalidated.
+Removing file permissions for a user might not immediately invalidate the URL.
+>
+>Using the `@microsoft.graph.sourceUrl` property for file uploading is [not supported](/onedrive/developer/rest-api/api/driveitem_upload_url?view=odsp-graph-online#remarks&preserve-view=true) in OneDrive for Business, SharePoint Online, and SharePoint Server 2016.
 
 ## JSON representation
 

@@ -11,12 +11,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphEdiscoveryCase *ediscoveryCase = [[MSGraphEdiscoveryCase alloc] init];
-[ediscoveryCase setDisplayName:@"My Case 1"];
+MSGraphCase *case = [[MSGraphCase alloc] init];
+[case setDisplayName:@"My Case 1"];
 
 NSError *error;
-NSData *ediscoveryCaseData = [ediscoveryCase getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:ediscoveryCaseData];
+NSData *caseData = [case getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:caseData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

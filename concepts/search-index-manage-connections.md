@@ -80,7 +80,7 @@ You can [delete a connection](/graph/api/externalconnection-delete?view=graph-re
 
 ## Next steps
 
-- [Register the connection schema](/graph/concepts/search-index-manage-schema.md)
+- [Register the connection schema](/graph/search-index-manage-schema)
 - [Review the Graph Connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Overview for Microsoft Graph Connectors](/microsoftsearch/connectors-overview)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub

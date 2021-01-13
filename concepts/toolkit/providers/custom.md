@@ -16,7 +16,7 @@ This article describes each approach in more detail.
 
 ## SimpleProvider
 
-Instantiate the `SimpleProvider` class by passing in a function that will return an access token for passed-in scopes.
+Instantiate the `SimpleProvider` class by passing in a function that will return an access token for passed-in scopes. 
 
 ```ts
 let provider = new SimpleProvider((scopes: string[]) => {
@@ -26,13 +26,17 @@ let provider = new SimpleProvider((scopes: string[]) => {
 
 In addition, you can also provide an optional `login` and `logout` functions that can handle the sign in and sign out calls from the [Login](../components/login.md) component.
 
+> [!IMPORTANT] 
+> To indicate to the components that they can start calling the Microsoft Graph APIs after a user successfully signs in, you need to call `Providers.setState(ProviderState.SignedIn)`. An example of this is shown in the `login` function below.
+
 ```ts
 function getAccessToken(scopes: string[]) {
   // return a promise with accessToken string
 }
 
 function login() {
-  // login code
+  //login code
+  Providers.globalProvider.setState(ProviderState.SignedIn)
 }
 
 function logout() {

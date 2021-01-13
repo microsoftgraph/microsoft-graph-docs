@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # reviewSetQuery resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Review set queries are used to query and cull data stored in an eDiscovery [reviewSet](reviewset.md).
@@ -17,11 +19,11 @@ Review set queries are used to query and cull data stored in an eDiscovery [revi
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/reviewsetquery-list.md) | [reviewSetQuery](reviewsetquery.md) collection | List the review set queries in a review set. |
-| [Create](../api/reviewsetquery-post.md) | [reviewSetQuery](reviewsetquery.md) | Create a new review set query. |
-| [Get](../api/reviewsetquery-get.md) | [reviewSetQuery](reviewsetquery.md) | Read the properties and relationships of a **reviewSetQuery** object. |
-| [Update](../api/reviewsetquery-update.md) | None | Update a review set query. |
-| [Delete](../api/reviewsetquery-delete.md) | None | Delete review set query. |
+| [List queries](../api/reviewsetquery-list.md) | [reviewSetQuery](reviewsetquery.md) collection | List the review set queries in a review set. |
+| [Create queries](../api/reviewsetquery-post.md) | [reviewSetQuery](reviewsetquery.md) | Create a new review set query. |
+| [Get queries](../api/reviewsetquery-get.md) | [reviewSetQuery](reviewsetquery.md) | Read the properties and relationships of a **reviewSetQuery** object. |
+| [Update queries](../api/reviewsetquery-update.md) | None | Update a review set query. |
+| [Delete queries](../api/reviewsetquery-delete.md) | None | Delete review set query. |
 
 ## Properties
 
@@ -33,7 +35,7 @@ Review set queries are used to query and cull data stored in an eDiscovery [revi
 | id |String| The unique identifier of the query. Read-only.|
 | lastModifiedBy | [identitySet](/graph/api/resources/identityset) | The user who last modified the query. |
 | lastModifiedDateTime |DateTimeOffset | The date and time the query was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-| query | String | The query string in KQL (Keyword Query Language) query. Please refer to https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery for more details.  This field maps directly to the keywords condition.  You can refine searches by using fields listed in the *searchable field name* paired with values, e.g. *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016* |
+| query | String | The query string in KQL (Keyword Query Language) query. For details, see [Document metadata fields in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).  This field maps directly to the keywords condition.  You can refine searches by using fields listed in the *searchable field name* paired with values; for example, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016* |
 
 ## Relationships
 
@@ -55,13 +57,18 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "createdBy": "String",
-  "createdDateTime": "String (timestamp)",
-  "displayName": "String",
-  "id": "String (identifier)",
-  "lastModifiedBy": "String",
+  "@odata.type": "#microsoft.graph.reviewSetQuery",
+  "query": "String",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
   "lastModifiedDateTime": "String (timestamp)",
-  "query": "String"
+  "id": "String (identifier)",
+  "displayName": "String",
+  "createdDateTime": "String (timestamp)"
 }
 ```
 

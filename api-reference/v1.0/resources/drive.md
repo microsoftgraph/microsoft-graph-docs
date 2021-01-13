@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: "The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint."
+description: "The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint."
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
+The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
 
 OneDrive users will always have at least one drive available, their default drive.
 Users without a OneDrive license may not have a default drive available.

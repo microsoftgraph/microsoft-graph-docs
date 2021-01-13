@@ -11,7 +11,7 @@ ItemBody body = new ItemBody();
 body.content = "Hello world";
 chatMessage.body = body;
 
-graphClient.teams("{id}").channels("{id}").messages()
+graphClient.chats("{id}").messages()
 	.buildRequest()
 	.post(chatMessage);
 

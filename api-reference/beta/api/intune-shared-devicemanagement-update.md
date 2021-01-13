@@ -152,7 +152,7 @@ Content-length: 751
 
 ### Response
 
-Here is an example of the response.
+Here is an example of the response. 
 
 Note: The response object shown here may be truncated for brevity. Returned properties vary according to workflow and context.
 
@@ -186,7 +186,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

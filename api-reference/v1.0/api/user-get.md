@@ -82,18 +82,18 @@ Content-length: 491
 
 {
   "businessPhones": [
-       "businessPhones-value"
+       "+1 425 555 0109"
    ],
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "jobTitle": "jobTitle-value",
-   "mail": "mail-value",
-   "mobilePhone": "mobilePhone-value",
-   "officeLocation": "officeLocation-value",
-   "preferredLanguage": "preferredLanguage-value",
-   "surname": "surname-value",
-   "userPrincipalName": "userPrincipalName-value",
-   "id": "id-value"
+   "displayName": "Adele Vance",
+   "givenName": "Adele",
+   "jobTitle": "Retail Manager",
+   "mail": "AdeleV@contoso.onmicrosoft.com",
+   "mobilePhone": "+1 425 555 0109",
+   "officeLocation": "18/2111",
+   "preferredLanguage": "en-US",
+   "surname": "Vance",
+   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+   "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
 
@@ -145,18 +145,18 @@ Content-length: 491
 
 {
   "businessPhones": [
-       "businessPhones-value"
+       "+1 425 555 0109"
    ],
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "jobTitle": "jobTitle-value",
-   "mail": "mail-value",
-   "mobilePhone": "mobilePhone-value",
-   "officeLocation": "officeLocation-value",
-   "preferredLanguage": "preferredLanguage-value",
-   "surname": "surname-value",
-   "userPrincipalName": "userPrincipalName-value",
-   "id": "id-value"
+   "displayName": "Adele Vance",
+   "givenName": "Adele",
+   "jobTitle": "Retail Manager",
+   "mail": "AdeleV@contoso.onmicrosoft.com",
+   "mobilePhone": "+1 425 555 0109",
+   "officeLocation": "18/2111",
+   "preferredLanguage": "en-US",
+   "surname": "Vance",
+   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+   "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
 
@@ -177,9 +177,9 @@ Content-type: application/json
 Content-length: 491
 
 {
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "postalCode": "postalCode-value"
+   "displayName": "Adele Vance",
+   "givenName": "Adele",
+   "postalCode": "98004"
 }
 ```
 

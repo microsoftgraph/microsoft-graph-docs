@@ -11,6 +11,48 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### authenticationMethodKeyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### educationAddedStudentAction values
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
+|unknownFutureValue|
+
+### externalEmailOtpState values
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### replyRestriction values
+
+| Member
+|:--------------
+| everyone
+| authorAndModerators
+| unknownFutureValue
+
+### userNewMessageRestriction values
+
+| Member
+|:--------------
+|everyone
+|everyoneExceptGuests
+|moderators
+|unknownFutureValue
+
 ### volumeType values
 
 | Member
@@ -1355,7 +1397,7 @@ Possible values for user account types (group membership), per Windows definitio
 | signUpOrSignIn
 | passwordReset
 | profileUpdate
-| resourceOwnerPasswordCredentialSignIn
+| resourceOwner
 | unknownFutureValue
 
 ### openIdConnectResponseMode values
@@ -1457,3 +1499,101 @@ Possible values for user account types (group membership), per Windows definitio
 | application
 | delegated
 | delegatedUserConsentable
+
+### identityUserFlowAttributeInputType values
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
+
+### teamworkActivityTopicSource values
+
+| Member
+|:---
+| entityUrl
+| text
+
+### cloudPcDeviceImageStatus values
+
+|Member|
+|:---|
+|pending|
+|ready|
+|failed|
+
+### cloudPcDeviceImageStatusDetails values
+
+|Member|
+|:---|
+|internalServerError|
+|sourceImageNotFound|
+
+### cloudPcOnPremisesConnectionHealthCheckErrorType values
+
+|Member|
+|:---|
+|dnsCheckFqdnNotFound|
+|dnsCheckUnknownError|
+|adJoinCheckFqdnNotFound|
+|adJoinCheckIncorrectCredentials|
+|adJoinCheckOrganizationalUnitNotFound|
+|adJoinCheckOrganizationalUnitIncorrectFormat|
+|adJoinCheckUnknownError|
+|endpointConnectivityCheckUrlNotWhitelisted|
+|endpointConnectivityCheckUnknownError|
+|aadConnectivityCheckUnknownError|
+|resourceAvailabilityCheckNoSubnetIP|
+|resourceAvailabilityCheckSubscriptionDisabled|
+|resourceAvailabilityCheckUnknownError|
+|permissionCheckNoSubscriptionReaderRole|
+|permissionCheckNoResourceGroupOwnerRole|
+|permissionCheckNoVNetContributorRole|
+|permissionCheckUnknownError|
+|internalServerUnknownError|
+
+### cloudPcOnPremisesConnectionStatus values
+
+|Member|
+|:---|
+|pending|
+|running|
+|passed|
+|failed|
+|unknownFutureValue|
+
+### cloudPcProvisioningPolicyImageType values
+
+|Member|
+|:---|
+|custom|
+|gallery|
+
+### cloudPcStatus values
+
+|Member|
+|:---|
+|notProvisioned|
+|provisioning|
+|provisioned|
+|upgrading|
+|inGracePeriod|
+|deprovisioning|
+|failed|
+|upgradeFailed|
+|provisionFailed|
+|deprovisionFailed|
+|reprovisionFailed|
+
+### chatType values 
+
+| Member             | Value | Description               |
+| :----------------- | :---- | :------------------------ |
+|oneOnOne            | 0     | Indicates that the chat is a 1:1 chat. The roster size is fixed for this type of chat, the member cannot be removed / added.                  |
+|group               | 1     | Indicates that the chat is a Group chat. The roster size (of at least 2 person) can be updated for this type of chat. The members can be removed / added later on.   |
+|meeting             | 2     | Indicates that the chat is a Meeting chat, which is created as a side effect of creation of an OnlineMeeting.  |
+|unknownFutureValue  | 3     | Sentinel value to indicate future values. |

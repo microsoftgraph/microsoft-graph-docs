@@ -27,7 +27,9 @@ Template subtype
 |endpointDetectionReponse|4|Endpoint security endpoint detection and response subtype|
 |accountProtection|5|Endpoint security account protection subtype|
 |antivirus|6|Endpoint security anitivirus subtype|
-
+|firewallSharedAppList|7|Endpoint security firewall shared app subtype|
+|firewallSharedIpList|8|Endpoint security firewall shared ip range list subtype|
+|firewallSharedPortlist|9|Endpoint security firewall shared port range list subtype|
 
 
 

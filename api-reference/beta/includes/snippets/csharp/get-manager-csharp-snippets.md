@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.Contacts["{id}"].Manager
+var directoryObject = await graphClient.Users["{id|userPrincipalName}"].Manager
 	.Request()
 	.GetAsync();
 

@@ -1,14 +1,14 @@
 ---
-title: "Use the Microsoft Search API to sort search results"
+title: "Use the Microsoft Search API to sort search results (preview)"
 description: "You sort search results using the Microsoft Search API."
 author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Sort search results
+# "Use the Microsoft Search API to sort search results (preview)
 
-Sort search results by specifying the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object, identifying a property of a resource in **entityTypes** to sort matches by, in ascending or descending order.
+You can use the Microsoft Search API in Microsoft Graph to sort search results. To sort the results, specify the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object and identify a resource property in **entityTypes** to sort matches by, in ascending or descending order.
 
 Sorting is supported only for SharePoint and OneDrive items.
 The property to be sorted on should be *Sortable* in the search schema.
@@ -85,7 +85,13 @@ Content-type: application/json
                         "lastModifiedDateTime": "2018-09-12T16:20:16+00:00",
                         "name": "Our Water Our Future.docx",
                         "parentReference": {
-                            "siteId": "Contoso066a,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
+                            "siteId": "Contoso066a,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
+                            "driveId": "b!NAe_rKr80k-n7e5zlCVIqSnIwTNsGBVBlusjEvRHgjMmmcA3Ubc7R4Kyao9hbgL4",
+                            "sharepointIds": {
+                                "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                                "listItemId": "1027",
+                                "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                            }
                         },
                         "webUrl": "https://Contoso066a/sites/GlobalSales/Shared Documents/Q1 2019/Our Water Our Future.docx"
                     }
@@ -117,7 +123,13 @@ Content-type: application/json
                         "lastModifiedDateTime": "2012-10-29T17:52:10+00:00",
                         "name": "QT300 Accessories Specs.xlsx",
                         "parentReference": {
-                            "siteId": "Contoso066a,893378cb-d2cd-4076-a2c9-e50587a26832,04120cf2-7863-4701-8541-eb26266a25e6"
+                            "siteId": "Contoso066a,893378cb-d2cd-4076-a2c9-e50587a26832,04120cf2-7863-4701-8541-eb26266a25e6",
+                            "driveId": "b!H9kkVwxlEEiDzGGogYkX1twlusOfLMtIg750zfaOpaBq9eOBX6MXQapv1hTT-bIt",
+                            "sharepointIds": {
+                                "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                                "listItemId": "1027",
+                                "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                            }
                         },
                         "webUrl": "https://Contoso066a/sites/contosoteam/Shared Documents/QT300 Accessories Specs.xlsx"
                     }
@@ -133,7 +145,7 @@ Content-type: application/json
 ### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
@@ -204,7 +216,13 @@ Content-type: application/json
                         "lastModifiedDateTime": "2019-01-11T22:41:06+00:00",
                         "name": "Build an Approval Process with Microsoft Flow Click Through.pptx",
                         "parentReference": {
-                            "siteId": "Contoso066a,506e4b2b-4af3-41e6-904c-668e67911889,04120cf2-7863-4701-8541-eb26266a25e6"
+                            "siteId": "Contoso066a,506e4b2b-4af3-41e6-904c-668e67911889,04120cf2-7863-4701-8541-eb26266a25e6",
+                            "driveId": "b!K0tuUPNK5kGQTGaOZ5EYifIMEgRjeAFHhUHrJiZqJeZq9eOBX6MXQapv1hTT-bIt",
+                            "sharepointIds": {
+                                "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                                "listItemId": "1027",
+                                "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                            }
                         },
                         "webUrl": "https://Contoso066a/sites/DigitalInitiativePublicRelations/Shared Documents/General/PowerApps/Build an Approval Process with Microsoft Flow Click Through.pptx"
                     }
@@ -236,7 +254,13 @@ Content-type: application/json
                         "lastModifiedDateTime": "2017-09-15T14:20:00+00:00",
                         "name": "CR -227 Camera briefing.docx",
                         "parentReference": {
-                            "siteId": "Contoso066a,7955f1b7-70eb-4a26-8fa7-313ad3a45126,04120cf2-7863-4701-8541-eb26266a25e6"
+                            "siteId": "Contoso066a,7955f1b7-70eb-4a26-8fa7-313ad3a45126,04120cf2-7863-4701-8541-eb26266a25e6",
+                            "driveId": "b!t_FVeetwJkqPpzE606RRJvIMEgRjeAFHhUHrJiZqJeYmmcA3Ubc7R4Kyao9hbgL4",
+                            "sharepointIds": {
+                                "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                                "listItemId": "1027",
+                                "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                            }
                         },
                         "webUrl": "https://Contoso066a/sites/Mark8ProjectTeam/Shared Documents/Research and Development/CR -227 Camera briefing.docx"
                     }
@@ -268,7 +292,13 @@ Content-type: application/json
                         "lastModifiedDateTime": "2016-06-09T16:23:00+00:00",
                         "name": "Manufacturing and delivery plan.docx",
                         "parentReference": {
-                            "siteId": "Contoso066a,7955f1b7-70eb-4a26-8fa7-313ad3a45126,04120cf2-7863-4701-8541-eb26266a25e6"
+                            "siteId": "Contoso066a,7955f1b7-70eb-4a26-8fa7-313ad3a45126,04120cf2-7863-4701-8541-eb26266a25e6",
+                            "driveId": "b!NAe_rKr80k-n7e5zlCVIqfIMEgRjeAFHhUHrJiZqJeYmmcA3Ubc7R4Kyao9hbgL4",
+                            "sharepointIds": {
+                                "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                                "listItemId": "1027",
+                                "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                            }
                         },
                         "webUrl": "https://Contoso066a/sites/Mark8ProjectTeam/Shared Documents/Research and Development/Manufacturing and delivery plan.docx"
                     }

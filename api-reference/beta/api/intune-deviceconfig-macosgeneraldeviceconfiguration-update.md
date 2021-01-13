@@ -101,7 +101,6 @@ The following table shows the properties that are required when you create the [
 |passwordBlockProximityRequests|Boolean|Indicates whether or not to block requesting passwords from nearby devices.|
 |passwordBlockAirDropSharing|Boolean|Indicates whether or not to block sharing passwords with the AirDrop passwords feature.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90|
-|softwareUpdatesForceDelayed|Boolean|Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.|
 |updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Determines whether to delay OS and/or app updates for macOS. Possible values are: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`.|
 |contentCachingBlocked|Boolean|Indicates whether or not to allow content caching.|
 |iCloudBlockPhotoLibrary|Boolean|Indicates whether or not to block iCloud Photo Library.|
@@ -126,7 +125,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4680
+Content-length: 4640
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -208,7 +207,6 @@ Content-length: 4680
   "passwordBlockProximityRequests": true,
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 2,
-  "softwareUpdatesForceDelayed": true,
   "updateDelayPolicy": "delayOSUpdateVisibility",
   "contentCachingBlocked": true,
   "iCloudBlockPhotoLibrary": true,
@@ -266,7 +264,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4852
+Content-Length: 4812
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -351,7 +349,6 @@ Content-Length: 4852
   "passwordBlockProximityRequests": true,
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 2,
-  "softwareUpdatesForceDelayed": true,
   "updateDelayPolicy": "delayOSUpdateVisibility",
   "contentCachingBlocked": true,
   "iCloudBlockPhotoLibrary": true,
@@ -403,7 +400,6 @@ Content-Length: 4852
   ]
 }
 ```
-
 
 
 

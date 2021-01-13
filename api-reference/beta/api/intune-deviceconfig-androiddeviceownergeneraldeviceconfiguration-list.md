@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6905
+Content-Length: 7216
 
 {
   "value": [
@@ -129,6 +129,11 @@ Content-Length: 6905
         "proxyAutoConfigURL": "Proxy Auto Config URL value"
       },
       "googleAccountsBlocked": true,
+      "kioskCustomizationDeviceSettingsBlocked": true,
+      "kioskCustomizationPowerButtonActionsBlocked": true,
+      "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+      "kioskCustomizationSystemErrorWarnings": true,
+      "kioskCustomizationSystemNavigation": "navigationEnabled",
       "kioskModeScreenSaverConfigurationEnabled": true,
       "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
       "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -221,7 +226,6 @@ Content-Length: 6905
   ]
 }
 ```
-
 
 
 

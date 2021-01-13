@@ -21,7 +21,7 @@ To create the app in Azure Active Directory:
 1. From the top menu, select the **New registration** button.
 1. Enter the name for your app; for exampe, `My M365 app`.
 1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
-1. In the **Redirect URI** field, in the dropdown, select **Web**, and in the URL field, enter `https://localhost:3000`.
+1. In the **Redirect URI** field, in the dropdown, select **Web**, and in the URL field, enter `http://localhost:3000`.
 1. Confirm changes by selecting the **Register** button.
 
 ## Enable OAuth implicit flow

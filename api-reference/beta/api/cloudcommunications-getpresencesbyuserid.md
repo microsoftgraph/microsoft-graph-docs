@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/communications/getPresencesByUserId
 Content-Type: application/json
 
 {
-	"ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
+  "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
 # [C#](#tab/csharp)
@@ -107,17 +107,25 @@ Content-Length: 1574
 ```
 ```json
 {
-	"value": [{
-			"id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-			"availability": "Busy",
-			"activity": "InAMeeting"
-		},
-		{
-			"id": "66825e03-7ef5-42da-9069-724602c31f6b",
-			"availability": "Away",
-			"activity": "Away"
-		}
-	]
+  "value": [{
+      "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+      "availability": "Busy",
+      "activity": "InAMeeting",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": false
+      }
+    },
+    {
+      "id": "66825e03-7ef5-42da-9069-724602c31f6b",
+      "availability": "Away",
+      "activity": "Away",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": true
+      }
+    }
+  ]
 }
 ```
 

@@ -159,9 +159,11 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
+- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
+
 ## Schema change deprecation warning
 
-Properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
+**In the beta version**, properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the following table.
 
 Start updating any existing apps to use current property and type names, and to get current property names in the response.
 For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
@@ -177,7 +179,7 @@ For backward compatibility, the original properties and types are accessible and
 | [searchHit](./searchhit.md)        | Rename property | **_source** | **resource** |
 | [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
 
-## Search samples
+## See also
 
 - Learn more about a few key use cases:
   - [Search Outlook messages](/graph/search-concept-messages)
@@ -188,8 +190,4 @@ For backward compatibility, the original properties and types are accessible and
   - [Refine search results](/graph/search-concept-aggregation)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+- Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

@@ -3,6 +3,146 @@
     {
       "ChangeList": [
         {
+          "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob, printerShare",
+          "ChangeType": "Addition",
+          "Description": "Added new [Delegated permissions](/graph/permissions-reference#universal-print-permissions): \u003Cul\u003E\u003Cli\u003EPrintJob.Create\u003C/li\u003E\u003Cli\u003EPrinterShare.ReadBasic.All\u003C/li\u003E\u003C/ul\u003E",
+          "Target": "printJob, printerShare"
+        }
+      ],
+      "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-07T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+   {
+      "ChangeList": [
+        {
+          "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+          "ApiChange": "Property",
+          "ChangedApiName": "floorNumber,floor",
+          "ChangeType": "Change",
+          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
+          "Target": "printerLocation"
+        },
+        {
+          "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+          "ApiChange": "Property",
+          "ChangedApiName": "roomNumber,roomName",
+          "ChangeType": "Change",
+          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
+          "Target": "printerLocation"
+        }
+      ],
+      "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-10T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2241d4d1-9372-4ce3-9888-61cf63abea21",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [update configuration](https://docs.microsoft.com/en-us/graph/api/printjob-update-configuration?view=graph-rest-beta) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "2241d4d1-9372-4ce3-9888-61cf63abea21",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-16T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Change",
+          "Description": "Changed type of allowedUsers relationship on [printerShare](https://docs.microsoft.com/en-us/graph/api/resources/printershare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Change",
+          "Description": "Changed type of allowedGroups relationship on [printerShare](https://docs.microsoft.com/en-us/graph/api/resources/printershare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        }
+      ],
+      "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-10T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "62d9370f-55fe-465c-9041-644ef9f55a83",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerStatus",
+          "ChangeType": "Change",
+          "Description": "Updated the **printerProcessingStateDetail** enum type in the [printerStatus](https://docs.microsoft.com/en-us/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values) resource.",
+          "Target": "printerStatus"
+        }
+      ],
+      "Id": "62d9370f-55fe-465c-9041-644ef9f55a83",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-09T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+          "ApiChange": "Property",
+          "ChangedApiName": "printer",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasPhysicalDevice** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        },
+        {
+          "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "abort,printJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [abort](https://docs.microsoft.com/en-us/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "abort,printJob"
+        },
+        {
+          "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+          "ApiChange": "Property",
+          "ChangedApiName": "redirect",
+          "ChangeType": "Addition",
+          "Description": "Added the configuration property to the [redirect](https://docs.microsoft.com/en-us/graph/api/printjob-redirect?view=graph-rest-beta) action on the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "redirect"
+        }
+      ],
+      "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-02T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
           "ApiChange": "Resource",
           "ChangedApiName": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser",
@@ -23,9 +163,9 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedGroups",
           "ChangeType": "Change",
-          "Description": "Removed the **allowedGroups** property on the [printer](/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Description": "Removed the **allowedGroups** property on the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
-        }        
+        }
       ],
       "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
       "Cloud": "prd",

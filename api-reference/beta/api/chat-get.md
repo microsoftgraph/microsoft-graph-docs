@@ -30,9 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/chats/{id}
-GET /users/{id}/chats/{id}
-GET /chats/{id}
+GET /me/chats/{chat-id}
+GET /users/{user-id}/chats/{chat-id}
+GET /chats/{chat-id}
 ```
 
 ## Optional query parameters
@@ -61,29 +61,31 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_chat_message"
+  "name": "get_chat"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/chats/{id}
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-message-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-message-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-message-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-chat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chat-message-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+
+---
 
 ##### Response
 Here is an example of the response. 
@@ -92,7 +94,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
+  "@odata.type": "microsoft.graph.chat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -104,7 +106,8 @@ Content-length: 201
     "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces",
     "topic": null,
     "createdDateTime": "2019-04-18T23:51:42.099Z",
-    "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z"
+    "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z",
+    "chatType": "oneOnOne"
 }
 ```
 

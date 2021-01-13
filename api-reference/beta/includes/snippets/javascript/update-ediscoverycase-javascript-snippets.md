@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const ediscoveryCase = {
+const _case = {
   displayName: "My Case 1 - Renamed",
   description: "Updated description",
   externalId: "Updated externalId"
@@ -18,6 +18,6 @@ const ediscoveryCase = {
 
 let res = await client.api('/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583')
 	.version('beta')
-	.update(ediscoveryCase);
+	.update(_case);
 
 ```

@@ -9,13 +9,13 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var user = new User
 {
 	AccountEnabled = true,
-	DisplayName = "displayName-value",
-	MailNickname = "mailNickname-value",
-	UserPrincipalName = "upn-value@tenant-value.onmicrosoft.com",
+	DisplayName = "Adele Vance",
+	MailNickname = "AdeleV",
+	UserPrincipalName = "AdeleV@contoso.onmicrosoft.com",
 	PasswordProfile = new PasswordProfile
 	{
 		ForceChangePasswordNextSignIn = true,
-		Password = "password-value"
+		Password = "xWwvJ]6NMw+bWH-d"
 	}
 };
 

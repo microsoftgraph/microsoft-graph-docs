@@ -15,7 +15,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
 		NSError *jsonError = nil;
 		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-		MSGraphEdiscoveryCase *ediscoveryCase = [[MSGraphEdiscoveryCase alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+		MSGraphCase *case = [[MSGraphCase alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

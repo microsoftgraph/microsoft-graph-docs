@@ -81,7 +81,7 @@ The following is a JSON representation of the resource.
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "externalId": "String",
-  "phone": "String",
+  "phone": "String"
 }
 ```
 

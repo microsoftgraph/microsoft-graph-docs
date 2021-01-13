@@ -18,7 +18,10 @@ var team = new Team
 			{
 				"owner"
 			},
-			UserId = "0040b377-61d8-43db-94f5-81374122dc7e"
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"user@odata.bind", "https://graph.microsoft.com/beta/users('0040b377-61d8-43db-94f5-81374122dc7e')"}
+			}
 		}
 	},
 	AdditionalData = new Dictionary<string, object>()

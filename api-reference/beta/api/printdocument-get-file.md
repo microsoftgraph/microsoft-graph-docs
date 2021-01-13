@@ -3,7 +3,7 @@ title: "Download printDocument binary file"
 description: Download the binary file associated with the document.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -18,7 +18,7 @@ Download the binary file associated with a [printDocument](../resources/printdoc
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access.
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access in case of user's access tokens and either the Printer.Read.All or Printer.ReadWrite.All application permission in case of app-only access tokens. 
 
 | Permission type                        | Permissions (from least to most privileged)                  |
 | :------------------------------------- | :----------------------------------------------------------- |

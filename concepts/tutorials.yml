@@ -68,10 +68,14 @@ landingContent:
             url: /graph/tutorials/azure-functions
           - text: Bot Framework
             url: /graph/tutorials/bot-framework
+          - text: Office Add-in
+            url: /graph/tutorials/office-addin
           - text: Power Automate
             url: /graph/tutorials/power-automate
           - text: SharePoint Framework
             url: /graph/tutorials/spfx
+          - text: Teams
+            url: /graph/tutorials/teams
   - title: Scenarios
     linkLists:
       - linkListType: tutorial

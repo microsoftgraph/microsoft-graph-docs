@@ -83,7 +83,6 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |passwordBlockProximityRequests|Boolean|Indicates whether or not to block requesting passwords from nearby devices.|
 |passwordBlockAirDropSharing|Boolean|Indicates whether or not to block sharing passwords with the AirDrop passwords feature.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90|
-|softwareUpdatesForceDelayed|Boolean|Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.|
 |updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Determines whether to delay OS and/or app updates for macOS. Possible values are: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`.|
 |contentCachingBlocked|Boolean|Indicates whether or not to allow content caching.|
 |iCloudBlockPhotoLibrary|Boolean|Indicates whether or not to block iCloud Photo Library.|
@@ -199,7 +198,6 @@ Here is a JSON representation of the resource.
   "passwordBlockProximityRequests": true,
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 1024,
-  "softwareUpdatesForceDelayed": true,
   "updateDelayPolicy": "String",
   "contentCachingBlocked": true,
   "iCloudBlockPhotoLibrary": true,
@@ -251,7 +249,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

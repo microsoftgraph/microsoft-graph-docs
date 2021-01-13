@@ -17,7 +17,7 @@ Your API implementation should then call Microsoft Graph on behalf of the user a
 
 For an implementation example, see the [ASP.NET MVC sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/proxy-provider-asp-net-mvc). 
 
-To learn more about authentication providers, see [providers](../providers.md).
+To learn more about authentication providers, see [providers](./providers.md).
 
 ## Get started
 

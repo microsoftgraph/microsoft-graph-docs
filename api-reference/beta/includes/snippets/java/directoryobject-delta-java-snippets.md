@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 DirectoryObject directoryObject = graphClient.directoryObjects("delta")
 	.buildRequest()
-	.filter("isOf('Microsoft.Graph.User')+or+isOf('Microsoft.Graph.Group')")
+	.filter("isOf('Microsoft.Graph.User') or isOf('Microsoft.Graph.Group')")
 	.get();
 
 ```

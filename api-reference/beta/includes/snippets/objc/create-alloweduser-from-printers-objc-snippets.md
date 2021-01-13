@@ -11,11 +11,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphPrintUserIdentity *printUserIdentity = [[MSGraphPrintUserIdentity alloc] init];
+MSGraphUser *user = [[MSGraphUser alloc] init];
 
 NSError *error;
-NSData *printUserIdentityData = [printUserIdentity getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:printUserIdentityData];
+NSData *userData = [user getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:userData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

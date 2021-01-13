@@ -888,6 +888,13 @@ Possible values for user account types (group membership), per Windows definitio
 | AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
 | AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
 
+### channelMembershipType values
+
+| Member             | Value |Description|
+| :----------------- | :---- |:-----------|
+| standard           | 0     |Channel inherits the list of members of the parent team.|
+| private            | 1     |Channel can have members that are a subset of all the members on the parent team.|
+| unknownFutureValue | 2     |      |
 ### wellknownListName values
 | Member
 |:----------------------
@@ -904,3 +911,17 @@ Possible values for user account types (group membership), per Windows definitio
 | completed
 | waitingOnOthers
 | deferred
+
+### permissionClassificationType values
+
+| Member
+|:-------
+| low
+
+### permissionType values
+
+| Member
+|:-------------------------
+| application
+| delegated
+| delegatedUserConsentable

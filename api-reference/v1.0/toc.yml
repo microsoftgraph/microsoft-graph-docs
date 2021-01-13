@@ -44,6 +44,8 @@ items:
         href: /graph/webhooks-lifecycle
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/1.0
+      - name: Get change notifications for chat and channel messages
+        href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
       items:
@@ -405,6 +407,22 @@ items:
         items:
         - name: List tasks
           href: api/planneruser-list-tasks.md
+      - name: Teamwork
+        items:
+        - name: Installed app
+          href: resources/teamsappinstallation.md
+        - name: List apps for user
+          href: api/userteamwork-list-installedapps.md
+        - name: Add app for user
+          href: api/userteamwork-post-installedapps.md
+        - name: Gets installed app for user
+          href: api/userteamwork-get-installedapps.md
+        - name: Upgrade installed app for user
+          href: api/userteamwork-teamsappinstallation-upgrade.md
+        - name: Remove app for user
+          href: api/userteamwork-delete-installedapps.md
+        - name: Get chat between user and app
+          href: api/userscopeteamsappinstallation-get-chat.md 
       - name: To-do tasks
         items:
         - name: Task
@@ -796,6 +814,15 @@ items:
           items:
           - name: List
             href: api/serviceprincipal-list-oauth2permissiongrants.md
+        - name: Delegated permission classifications
+          href: resources/delegatedpermissionclassification.md
+          items:
+          - name: List
+            href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+          - name: Create
+            href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+          - name: Delete
+            href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
         - name: Membership
           items:
           - name: List member of
@@ -838,6 +865,34 @@ items:
               href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
             - name: Remove
               href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Permission grant policy
+            href: resources/permissiongrantpolicy.md
+            items:
+            - name: Create
+              href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+            - name: List
+              href: api/permissiongrantpolicy-list.md
+            - name: Get
+              href: api/permissiongrantpolicy-get.md
+            - name: Update
+              href: api/permissiongrantpolicy-update.md
+            - name: Delete
+              href: api/permissiongrantpolicy-delete.md
+            - name: Permission grant condition sets
+              href: resources/permissiongrantconditionset.md
+              items:
+                - name: List includes
+                  href: api/permissiongrantpolicy-list-includes.md
+                - name: Create in includes
+                  href: api/permissiongrantpolicy-post-includes.md
+                - name: Delete from includes
+                  href: api/permissiongrantpolicy-delete-includes.md
+                - name: List excludes
+                  href: api/permissiongrantpolicy-list-excludes.md
+                - name: Create in excludes
+                  href: api/permissiongrantpolicy-post-excludes.md
+                - name: Delete from excludes
+                  href: api/permissiongrantpolicy-delete-excludes.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -876,6 +931,10 @@ items:
           href: api/event-delete.md
         - name: Get delta
           href: api/event-delta.md
+        - name: Forward event
+          href: api/event-forward.md
+        - name: Cancel event
+          href: api/event-cancel.md
         - name: Accept event
           href: api/event-accept.md
         - name: Tentatively accept
@@ -1159,6 +1218,13 @@ items:
           href: api/onlinemeeting-delete.md
         - name: Create or get
           href: api/onlinemeeting-createorget.md
+      - name: Presence
+        href: resources/presence.md
+        items:
+        - name: Get presence
+          href: api/presence-get.md
+        - name: Get presence for multiple users
+          href: api/cloudcommunications-getpresencesbyuserid.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -3997,6 +4063,13 @@ items:
               href: api/activitybasedtimeoutpolicy-update.md
             - name: Delete
               href: api/activitybasedtimeoutpolicy-delete.md
+          - name: Authorization policy
+            href: resources/authorizationpolicy.md
+            items:
+            - name: Get
+              href: api/authorizationpolicy-get.md
+            - name: Update
+              href: api/authorizationpolicy-update.md
           - name: Home realm discovery policy
             href: resources/homerealmdiscoverypolicy.md
             items:
@@ -4651,6 +4724,19 @@ items:
           href: api/reportroot-getyammergroupsactivitygroupcounts.md
         - name: Get activity counts
           href: api/reportroot-getyammergroupsactivitycounts.md
+    - name: Search
+      displayname: Microsoft Search API
+      items:
+      - name: Query
+        items:
+        - name: Overview
+          href: resources/search-api-overview.md
+        - name: Search request type
+          href: resources/searchrequest.md
+        - name: Search response type
+          href: resources/searchresponse.md
+        - name: Query data
+          href: api/search-query.md
     - name: Security
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
@@ -4852,10 +4938,14 @@ items:
           href: api/group-delete.md
         - name: List members
           href: api/team-list-members.md
-        - name: Add members
+        - name: Add member
           href: api/team-post-members.md
-        - name: Remove members
+        - name: Get member
+          href: api/team-get-members.md
+        - name: Remove member
           href: api/team-delete-members.md
+        - name: Update member
+          href: api/team-update-members.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
@@ -4866,6 +4956,8 @@ items:
           href: api/user-list-joinedteams.md
         - name: Get primary channel
           href: api/team-get-primarychannel.md
+        - name: List all teams
+          href: /graph/teams-list-all-teams?context=graph/api/1.0
       - name: Group (team)
         href: resources/group.md
         items:
@@ -4922,6 +5014,16 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: List members
+          href: api/channel-list-members.md
+        - name: Add member 
+          href: api/channel-post-members.md
+        - name: Get member
+          href: api/channel-get-members.md
+        - name: Update member role
+          href: api/channel-update-members.md   
+        - name: Remove member
+          href: api/channel-delete-members.md
         - name: Get files folder
           href: api/channel-get-filesfolder.md
         - name: List channel messages
@@ -4934,16 +5036,12 @@ items:
           href: api/channel-list-messagereplies.md
         - name: Get message reply
           href: api/channel-get-messagereply.md
-        - name: Send message
-          href: api/channel-post-message.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
-        - name: Add a member to a channel
-          href: api/conversationmember-add.md
-        - name: Remove a member from a channel
-          href: api/conversationmember-delete.md
-        - name: Update the role of a member in channel
-          href: api/conversationmember-update.md
+        - name: Update message
+          href: api/chatmessage-update.md
+        - name: Send message
+          href: api/channel-post-message.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -4957,38 +5055,15 @@ items:
           href: api/channel-list-messagereplies.md
         - name: Get message reply
           href: api/channel-get-messagereply.md
-        - name: Send message
-          href: api/chatmessage-post.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
         - name: Update message
           href: api/chatmessage-update.md
-      - name: Conversation member
-        href: resources/conversationmember.md
+      - name: Chat
+        href: resources/chat.md
         items:
-        - name: List members
-          href: api/conversationmember-list.md
-        - name: Get member
-          href: api/conversationmember-get.md
-        - name: Add member
-          href: api/conversationmember-add.md
-        - name: Update member
-          href: api/conversationmember-update.md
-        - name: Delete member
-          href: api/conversationmember-delete.md
-      - name: Azure AD user conversation member
-        href: resources/aaduserconversationmember.md
-        items:
-        - name: List members
-          href: api/conversationmember-list.md
-        - name: Get member
-          href: api/conversationmember-get.md
-        - name: Add member
-          href: api/conversationmember-add.md
-        - name: Update member
-          href: api/conversationmember-update.md
-        - name: Delete member
-          href: api/conversationmember-delete.md         
+        - name: Get chat between user and app
+          href: api/userscopeteamsappinstallation-get-chat.md
       - name: App catalog
         items:
         - name: App in catalog
@@ -4996,7 +5071,7 @@ items:
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
-          href: api/teamsapp-list.md
+          href: api/appcatalogs-list-teamsapps.md
         - name: Update app in catalog
           href: api/teamsapp-update.md
         - name: Delete app from catalog
@@ -5005,27 +5080,47 @@ items:
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: List apps in team
-          href: api/teamsappinstallation-list.md
-        - name: Add app to team
-          href: api/teamsappinstallation-add.md
-        - name: Remove app from team
-          href: api/teamsappinstallation-delete.md
-        - name: Upgrade installed app for team
-          href: api/teamsappinstallation-upgrade.md
+        - name: App in team
+          items:
+          - name: List apps in team
+            href: api/team-list-installedapps.md
+          - name: Get app installed in team
+            href: api/team-get-installedapps.md
+          - name: Add app to team
+            href: api/team-post-installedapps.md
+          - name: Upgrade app installed in team
+            href: api/team-teamsappinstallation-upgrade.md
+          - name: Remove app from team
+            href: api/team-delete-installedapps.md
+        - name: App in personal scope of user
+          items:
+          - name: List apps for user
+            href: api/userteamwork-list-installedapps.md
+          - name: Add app for user
+            href: api/userteamwork-post-installedapps.md
+          - name: Get app installed for user
+            href: api/userteamwork-get-installedapps.md
+          - name: Get chat between user and app
+            href: api/userscopeteamsappinstallation-get-chat.md
+          - name: Upgrade installed app for user
+            href: api/userteamwork-teamsappinstallation-upgrade.md
+          - name: Remove app for user
+            href: api/userteamwork-delete-installedapps.md
       - name: Tab
         href: resources/teamstab.md
         items:
-        - name: List tabs
-          href: api/teamstab-list.md
-        - name: Get tab
-          href: api/teamstab-get.md
-        - name: Update tab
-          href: api/teamstab-update.md
-        - name: Delete tab
-          href: api/teamstab-delete.md
-        - name: Add tab
-          href: api/teamstab-add.md
+        - name: Tab in channel
+          items:
+          - name: List tabs in channel
+            href: api/channel-list-tabs.md          
+          - name: Add tab to channel
+            href: api/channel-post-tabs.md
+          - name: Get tab in channel
+            href: api/channel-get-tabs.md
+          - name: Update tab in channel
+            href: api/channel-patch-tabs.md
+          - name: Remove tab from channel
+            href: api/channel-delete-tabs.md
       - name: Calendar
         href: resources/event.md
         items:

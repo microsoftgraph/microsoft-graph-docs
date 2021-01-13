@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-PrintUserIdentity printUserIdentity = new PrintUserIdentity();
-printUserIdentity.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/users/{id}"));
+User user = new User();
+user.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/users/{id}"));
 
 graphClient.print().shares("{id}").allowedUsers().references()
 	.buildRequest()
-	.post(printUserIdentity);
+	.post(user);
 
 ```

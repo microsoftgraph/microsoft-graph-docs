@@ -21,7 +21,7 @@ Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipu
 
 You can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user. See an [example](#request-2) below. 
 By default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
-to [find details of each mention in a message](../api/message-get.md#example-2).
+to [find details of each mention in a message](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message).
 
 There are two scenarios where an app can get messages in another user's mail folder:
 

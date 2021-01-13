@@ -2,7 +2,7 @@
 title: "networkLocationDetail resource type"
 description: "Provides the name and type of network from which the user signed in."
 localization_priority: Normal
-author: "khotz"
+author: "besiler"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---

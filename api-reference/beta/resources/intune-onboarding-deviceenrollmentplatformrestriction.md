@@ -25,6 +25,7 @@ Platform specific enrollment restrictions
 |osMinimumVersion|String|Min OS version supported|
 |osMaximumVersion|String|Max OS version supported|
 |blockedManufacturers|String collection|Collection of blocked Manufacturers.|
+|blockedSkus|String collection|Collection of blocked Skus.|
 
 ## Relationships
 None
@@ -45,10 +46,12 @@ Here is a JSON representation of the resource.
   "osMaximumVersion": "String",
   "blockedManufacturers": [
     "String"
+  ],
+  "blockedSkus": [
+    "String"
   ]
 }
 ```
-
 
 
 

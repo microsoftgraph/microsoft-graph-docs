@@ -10,14 +10,11 @@ const options = {
 
 const client = Client.init(options);
 
-const stringKeyStringValuePair = Content-Type: application/json
-Content-length: 122
-
-{
-    "parameters" [{
+const stringKeyStringValuePair = {
+    parameters: [{
       subjects: [{
           objectId: "9bb0f679-a883-4a6f-8260-35b491b8b8c8",
-          objectType: "User"
+          objectTypeName: "User"
       }],
       ruleId: "ea807875-5618-4f0a-9125-0b46a05298ca"
     }]

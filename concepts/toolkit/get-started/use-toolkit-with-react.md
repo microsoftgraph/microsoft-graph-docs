@@ -7,9 +7,9 @@ author: waldekmastykarz
 
 # Use the Microsoft Graph Toolkit with React
 
-Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead. Microsoft Graph Toolkit is available as a generic set of web components distributed through the **@microsoft/mgt** npm package.
+Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead. Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt` npm package.
 
-If you're building apps with React, you can use the **@microsoft/mgt-react** package, which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.
+If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.
 
 This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
 
@@ -31,22 +31,25 @@ Change the working directory to the newly created app.
 cd my-m365-app
 ```
 
-Next, install the **mgt-react** npm package, which contains the Microsoft Graph Toolkit React components.
+Next, install the `mgt-react` npm package, which contains the Microsoft Graph Toolkit React components.
 
 ```cmd
 npm i @microsoft/mgt-react
 ```
 
+Install the `mgt-msal-provider` and `mgt-element` npm package as well, which contains the MSAL auth provider.
+
+```cmd
+npm i @microsoft/mgt-element @microsoft/mgt-msal-provider
+```
+
 Confirm that you can run the app.
 
 ```cmd
-HTTPS=true npm start
+npm start
 ```
 
-> [!IMPORTANT]
-> Your app need to run on HTTPS in order to be able to authenticate against Microsoft 365. For local testing, with the React scripts, you can configure the local web server to run on HTTPS by setting the `HTTPS` environment variable to `true`. You can do this either each time, by prefixing the `npm start` command with `HTTPS=true` (works only in bash) or by setting the environment variable globally on your computer.
-
-You should be able to open your app in the browser via `https://localhost:3000`.
+You should be able to open your app in the browser via `http://localhost:3000`.
 
 [!INCLUDE [AAD with implicit flow app registration](../includes/aad-app-registration-spa.md)]
 
@@ -62,12 +65,13 @@ Now that you have registered your application with Azure Active Directory (Azure
 
 ### Configure the Microsoft Graph Toolkit authentication provider
 
-Next, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, you'll use MSAL, which is a good default for building standalone applications. If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers.md).
+Next, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, you'll use MSAL, which is a good default for building standalone applications. If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers/providers.md).
 
 1. In the code editor, open the **src/index.** file, and to the list of imports, add:
 
     ```tsx
-    import { MsalProvider, Providers } from '@microsoft/mgt';
+    import { Providers } from '@microsoft/mgt-element';
+    import { MsalProvider } from '@microsoft/mgt-msal-provider';
     ```
 
 1. After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.
@@ -83,12 +87,14 @@ Next, configure the authentication provider that the Microsoft Graph Toolkit sho
 With these changes, the **src/index.tsx** file will look like the following.
 
   ```tsx
-  import { MsalProvider, Providers } from '@microsoft/mgt';
   import React from 'react';
   import ReactDOM from 'react-dom';
   import App from './App';
   import './index.css';
   import * as serviceWorker from './serviceWorker';
+
+  import { Providers } from '@microsoft/mgt-element';
+  import { MsalProvider } from '@microsoft/mgt-msal-provider';
   
   Providers.globalProvider = new MsalProvider({
     clientId: 'REPLACE_WITH_CLIENTID'
@@ -129,16 +135,12 @@ Add the **Login** Microsoft Graph Toolkit React component, which will display th
 
 With these changes, the **src/App.tsx** file will look like the following.
 ```tsx
-import { MsalProvider, Providers } from '@microsoft/mgt';
+
 import { Login } from '@microsoft/mgt-react';
 import React from 'react';
 import './App.css';
 
 function App() {
-  Providers.globalProvider = new MsalProvider({
-    clientId: 'REPLACE_WITH_CLIENTID'
-  });
-
   return (
     <div className="App">
       <header>
@@ -167,7 +169,7 @@ Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but
 
 ### Specify permissions needed for your application
 
-Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data. These scopes differ depending on what kind of information you want to show. In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0).
+Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data. These scopes differ depending on what kind of information you want to show. In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).
 
 1. In the code editor, open the **src/index.tsx** file, and update the provider initialization code.
 
@@ -192,10 +194,10 @@ To track the user's sign in state in your application, you will use the React `u
     import React, { useState, useEffect } from 'react';
     ```
 
-1. Import the `Provider` and `ProviderState` types from Microsoft Graph Toolkit, by adding to imports.
+1. Import the `Provider` and `ProviderState` types from `mgt-element`, by adding to imports.
 
     ```tsx
-    import { Providers, ProviderState } from '@microsoft/mgt';
+    import { Providers, ProviderState } from '@microsoft/mgt-element';
     ```
 
 1. Add a custom function named `useIsSignedIn` that enables tracking the user's sign in state in your application.
@@ -296,7 +298,7 @@ export default App;
 
 With these changes, after signing in to your application with your Microsoft account, you should see your calendar.
 
-1. To see the changes, close the browser and open it again, and go to `https://localhost:3000`. You do this because you changed the value of the `scopes` property, which affects the access token that you request from Azure AD.
+1. To see the changes, close the browser and open it again, and go to `http://localhost:3000`. You do this because you changed the value of the `scopes` property, which affects the access token that you request from Azure AD.
 1. Choose the **Sign In** button and sign in using your Microsoft account. Notice the additions to the list of permissions requested in the consent prompt. This is because you included additional permissions in the `scope` property.
 1. After consenting to the use of the application, you should see information about the current user and their calendar.
 

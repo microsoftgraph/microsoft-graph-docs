@@ -3,6 +3,184 @@
     {
       "ChangeList": [
         {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceComanagementAuthorityConfiguration,deviceManagementConfigurationCategory,deviceManagementConfigurationChoiceSettingCollectionDefinition,deviceManagementConfigurationChoiceSettingDefinition,deviceManagementConfigurationPolicy,deviceManagementConfigurationPolicyAssignment,deviceManagementConfigurationSetting,deviceManagementConfigurationSettingDefinition,deviceManagementConfigurationSettingGroupCollectionDefinition,deviceManagementConfigurationSettingGroupDefinition,deviceManagementConfigurationSimpleSettingCollectionDefinition,deviceManagementConfigurationSimpleSettingDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added new entities:, [deviceComanagementAuthorityConfiguration](/graph/api/resources/intune-onboarding-devicecomanagementauthorityconfiguration?view=graph-rest-beta), [deviceManagementConfigurationCategory](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationcategory?view=graph-rest-beta), [deviceManagementConfigurationChoiceSettingCollectionDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingcollectiondefinition?view=graph-rest-beta), [deviceManagementConfigurationChoiceSettingDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition?view=graph-rest-beta), [deviceManagementConfigurationPolicy](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy?view=graph-rest-beta), [deviceManagementConfigurationPolicyAssignment](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment?view=graph-rest-beta), [deviceManagementConfigurationSetting](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsetting?view=graph-rest-beta), [deviceManagementConfigurationSettingDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition?view=graph-rest-beta), [deviceManagementConfigurationSettingGroupCollectionDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupcollectiondefinition?view=graph-rest-beta), [deviceManagementConfigurationSettingGroupDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupdefinition?view=graph-rest-beta), [deviceManagementConfigurationSimpleSettingCollectionDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition?view=graph-rest-beta), [deviceManagementConfigurationSimpleSettingDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition?view=graph-rest-beta), ",
+          "Target": "deviceComanagementAuthorityConfiguration,deviceManagementConfigurationCategory,deviceManagementConfigurationChoiceSettingCollectionDefinition,deviceManagementConfigurationChoiceSettingDefinition,deviceManagementConfigurationPolicy,deviceManagementConfigurationPolicyAssignment,deviceManagementConfigurationSetting,deviceManagementConfigurationSettingDefinition,deviceManagementConfigurationSettingGroupCollectionDefinition,deviceManagementConfigurationSettingGroupDefinition,deviceManagementConfigurationSimpleSettingCollectionDefinition,deviceManagementConfigurationSimpleSettingDefinition"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingCollectionInstance,deviceManagementConfigurationChoiceSettingInstance,deviceManagementConfigurationChoiceSettingValue,deviceManagementConfigurationDependentOn,deviceManagementConfigurationGroupSettingCollectionInstance,deviceManagementConfigurationGroupSettingInstance,deviceManagementConfigurationGroupSettingValue,deviceManagementConfigurationIntegerSettingValue,deviceManagementConfigurationIntegerSettingValueDefinition,deviceManagementConfigurationOptionDefinition,deviceManagementConfigurationSettingApplicability,deviceManagementConfigurationSettingDependedOnBy,deviceManagementConfigurationSettingGroupCollectionInstance,deviceManagementConfigurationSettingGroupInstance,deviceManagementConfigurationSettingInstance,deviceManagementConfigurationSettingOccurrence,deviceManagementConfigurationSettingValue,deviceManagementConfigurationSettingValueDefinition,deviceManagementConfigurationSimpleSettingCollectionInstance,deviceManagementConfigurationSimpleSettingInstance,deviceManagementConfigurationSimpleSettingValue,deviceManagementConfigurationStringSettingValue,deviceManagementConfigurationStringSettingValueDefinition,deviceManagementConfigurationWindowsSettingApplicability",
+          "ChangeType": "Addition",
+          "Description": "Added new complex types:, [deviceManagementConfigurationChoiceSettingCollectionInstance](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingcollectioninstance?view=graph-rest-beta), [deviceManagementConfigurationChoiceSettingInstance](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettinginstance?view=graph-rest-beta), [deviceManagementConfigurationChoiceSettingValue](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvalue?view=graph-rest-beta), [deviceManagementConfigurationDependentOn](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationdependenton?view=graph-rest-beta), [deviceManagementConfigurationGroupSettingCollectionInstance](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationgroupsettingcollectioninstance?view=graph-rest-beta), [deviceManagementConfigurationGroupSettingInstance](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationgroupsettinginstance?view=graph-rest-beta), [deviceManagementConfigurationGroupSettingValue](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationgroupsettingvalue?view=graph-rest-beta), [deviceManagementConfigurationIntegerSettingValue](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationintegersettingvalue?view=graph-rest-beta), [deviceManagementConfigurationIntegerSettingValueDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationintegersettingvaluedefinition?view=graph-rest-beta), [deviceManagementConfigurationOptionDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationoptiondefinition?view=graph-rest-beta), [deviceManagementConfigurationSettingApplicability](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability?view=graph-rest-beta), [deviceManagementConfigurationSettingDependedOnBy](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdependedonby?view=graph-rest-beta), [deviceManagementConfigurationSettingGroupCollectionInstance](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupcollectioninstance?view=graph-rest-beta), [deviceManagementConfigurationSettingGroupInstance](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupinstance?view=graph-rest-beta), [deviceManagementConfigurationSettingInstance](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance?view=graph-rest-beta), [deviceManagementConfigurationSettingOccurrence](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence?view=graph-rest-beta), [deviceManagementConfigurationSettingValue](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue?view=graph-rest-beta), [deviceManagementConfigurationSettingValueDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluedefinition?view=graph-rest-beta), [deviceManagementConfigurationSimpleSettingCollectionInstance](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectioninstance?view=graph-rest-beta), [deviceManagementConfigurationSimpleSettingInstance](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettinginstance?view=graph-rest-beta), [deviceManagementConfigurationSimpleSettingValue](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvalue?view=graph-rest-beta), [deviceManagementConfigurationStringSettingValue](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationstringsettingvalue?view=graph-rest-beta), [deviceManagementConfigurationStringSettingValueDefinition](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationstringsettingvaluedefinition?view=graph-rest-beta), [deviceManagementConfigurationWindowsSettingApplicability](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationwindowssettingapplicability?view=graph-rest-beta), ",
+          "Target": "deviceManagementConfigurationChoiceSettingCollectionInstance,deviceManagementConfigurationChoiceSettingInstance,deviceManagementConfigurationChoiceSettingValue,deviceManagementConfigurationDependentOn,deviceManagementConfigurationGroupSettingCollectionInstance,deviceManagementConfigurationGroupSettingInstance,deviceManagementConfigurationGroupSettingValue,deviceManagementConfigurationIntegerSettingValue,deviceManagementConfigurationIntegerSettingValueDefinition,deviceManagementConfigurationOptionDefinition,deviceManagementConfigurationSettingApplicability,deviceManagementConfigurationSettingDependedOnBy,deviceManagementConfigurationSettingGroupCollectionInstance,deviceManagementConfigurationSettingGroupInstance,deviceManagementConfigurationSettingInstance,deviceManagementConfigurationSettingOccurrence,deviceManagementConfigurationSettingValue,deviceManagementConfigurationSettingValueDefinition,deviceManagementConfigurationSimpleSettingCollectionInstance,deviceManagementConfigurationSimpleSettingInstance,deviceManagementConfigurationSimpleSettingValue,deviceManagementConfigurationStringSettingValue,deviceManagementConfigurationStringSettingValueDefinition,deviceManagementConfigurationWindowsSettingApplicability"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "androidDeviceOwnerKioskCustomizationStatusBar,androidDeviceOwnerKioskCustomizationSystemNavigation,deviceManagementConfigurationAzureAdTrustType,deviceManagementConfigurationDeviceMode,deviceManagementConfigurationPlatforms,deviceManagementConfigurationSettingAccessTypes,deviceManagementConfigurationSettingUsage,deviceManagementConfigurationStringFormat,deviceManagementConfigurationTechnologies,deviceManagementConfigurationWindowsSkus,iosNotificationPreviewVisibility,wifiAuthenticationType,windowsDefenderProductStatus",
+          "ChangeType": "Addition",
+          "Description": "Added new enum types:, [androidDeviceOwnerKioskCustomizationStatusBar](/graph/api/resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar?view=graph-rest-beta), [androidDeviceOwnerKioskCustomizationSystemNavigation](/graph/api/resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation?view=graph-rest-beta), [deviceManagementConfigurationAzureAdTrustType](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationazureadtrusttype?view=graph-rest-beta), [deviceManagementConfigurationDeviceMode](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationdevicemode?view=graph-rest-beta), [deviceManagementConfigurationPlatforms](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms?view=graph-rest-beta), [deviceManagementConfigurationSettingAccessTypes](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes?view=graph-rest-beta), [deviceManagementConfigurationSettingUsage](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage?view=graph-rest-beta), [deviceManagementConfigurationStringFormat](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationstringformat?view=graph-rest-beta), [deviceManagementConfigurationTechnologies](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies?view=graph-rest-beta), [deviceManagementConfigurationWindowsSkus](/graph/api/resources/intune-deviceconfigv2-devicemanagementconfigurationwindowsskus?view=graph-rest-beta), [iosNotificationPreviewVisibility](/graph/api/resources/intune-deviceconfig-iosnotificationpreviewvisibility?view=graph-rest-beta), [wifiAuthenticationType](/graph/api/resources/intune-deviceconfig-wifiauthenticationtype?view=graph-rest-beta), [windowsDefenderProductStatus](/graph/api/resources/intune-devices-windowsdefenderproductstatus?view=graph-rest-beta), ",
+          "Target": "androidDeviceOwnerKioskCustomizationStatusBar,androidDeviceOwnerKioskCustomizationSystemNavigation,deviceManagementConfigurationAzureAdTrustType,deviceManagementConfigurationDeviceMode,deviceManagementConfigurationPlatforms,deviceManagementConfigurationSettingAccessTypes,deviceManagementConfigurationSettingUsage,deviceManagementConfigurationStringFormat,deviceManagementConfigurationTechnologies,deviceManagementConfigurationWindowsSkus,iosNotificationPreviewVisibility,wifiAuthenticationType,windowsDefenderProductStatus"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "kioskCustomizationDeviceSettingsBlocked,kioskCustomizationPowerButtonActionsBlocked,kioskCustomizationStatusBar,kioskCustomizationSystemErrorWarnings,kioskCustomizationSystemNavigation",
+          "ChangeType": "Addition",
+          "Description": "Added the **kioskCustomizationDeviceSettingsBlocked**, **kioskCustomizationPowerButtonActionsBlocked**, **kioskCustomizationStatusBar**, **kioskCustomizationSystemErrorWarnings** and **kioskCustomizationSystemNavigation** properties to the [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta) entity",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "aospRestriction",
+          "ChangeType": "Addition",
+          "Description": "Added the **aospRestriction** property to the [deviceEnrollmentPlatformRestrictionsConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration?view=graph-rest-beta) entity",
+          "Target": "deviceEnrollmentPlatformRestrictionsConfiguration"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCachingMaxSizeBytes,contentCachingPort",
+          "ChangeType": "Change",
+          "Description": "Changed the following properties on the [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta) entity:, **contentCachingMaxSizeBytes** from required to optional, **contentCachingPort** from required to optional, ",
+          "Target": "macOSDeviceFeaturesConfiguration"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "softwareUpdatesForceDelayed",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **softwareUpdatesForceDelayed** property from the [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta) entity",
+          "Target": "macOSGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "targetDisplayVersion,targetPublisher",
+          "ChangeType": "Addition",
+          "Description": "Added the **targetDisplayVersion** and **targetPublisher** properties to the [mobileAppRelationship](/graph/api/resources/intune-apps-mobileapprelationship?view=graph-rest-beta) entity",
+          "Target": "mobileAppRelationship"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayVersion** property to the [win32LobApp](/graph/api/resources/intune-apps-win32lobapp?view=graph-rest-beta) entity",
+          "Target": "win32LobApp"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "productStatus,isVirtualMachine,tamperProtectionEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **productStatus**, **isVirtualMachine** and **tamperProtectionEnabled** properties to the [windowsProtectionState](/graph/api/resources/intune-devices-windowsprotectionstate?view=graph-rest-beta) entity",
+          "Target": "windowsProtectionState"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "userBasedVirtualLan,authenticationPeriodInSeconds,authenticationRetryDelayPeriodInSeconds,eapolStartPeriodInSeconds,maximumEAPOLStartMessages,maximumAuthenticationFailures,cacheCredentials,authenticationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **userBasedVirtualLan**, **authenticationPeriodInSeconds**, **authenticationRetryDelayPeriodInSeconds**, **eapolStartPeriodInSeconds**, **maximumEAPOLStartMessages**, **maximumAuthenticationFailures**, **cacheCredentials** and **authenticationType** properties to the [windowsWifiEnterpriseEAPConfiguration](/graph/api/resources/intune-deviceconfig-windowswifienterpriseeapconfiguration?view=graph-rest-beta) entity",
+          "Target": "windowsWifiEnterpriseEAPConfiguration"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "configurationPolicies,configurationSettings,configurationCategories,configManagerCollections",
+          "ChangeType": "Addition",
+          "Description": "Added the **configurationPolicies**, **configurationSettings**, **configurationCategories** and **configManagerCollections** navigation properties to the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) entity",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "blockedSkus",
+          "ChangeType": "Addition",
+          "Description": "Added the **blockedSkus** property to the [deviceEnrollmentPlatformRestriction](/graph/api/resources/intune-onboarding-deviceenrollmentplatformrestriction?view=graph-rest-beta) complex type",
+          "Target": "deviceEnrollmentPlatformRestriction"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "previewVisibility",
+          "ChangeType": "Addition",
+          "Description": "Added the **previewVisibility** property to the [iosNotificationSettings](/graph/api/resources/intune-deviceconfig-iosnotificationsettings?view=graph-rest-beta) complex type",
+          "Target": "iosNotificationSettings"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEncrypted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isEncrypted** property to the [omaSetting](/graph/api/resources/intune-deviceconfig-omasetting?view=graph-rest-beta) complex type",
+          "Target": "omaSetting"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "corporateOwnedAOSPUserlessDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the **corporateOwnedAOSPUserlessDevice** member to the [androidDeviceOwnerEnrollmentMode](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentmode?view=graph-rest-beta) enum type",
+          "Target": "androidDeviceOwnerEnrollmentMode"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "warn,disable",
+          "ChangeType": "Addition",
+          "Description": "Added the **warn** and **disable** members to the [defenderAttackSurfaceType](/graph/api/resources/intune-deviceconfig-defenderattacksurfacetype?view=graph-rest-beta) enum type",
+          "Target": "defenderAttackSurfaceType"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "warn,notConfigured",
+          "ChangeType": "Addition",
+          "Description": "Added the **warn** and **notConfigured** members to the [defenderProtectionType](/graph/api/resources/intune-deviceconfig-defenderprotectiontype?view=graph-rest-beta) enum type",
+          "Target": "defenderProtectionType"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "firewallSharedAppList,firewallSharedIpList,firewallSharedPortlist",
+          "ChangeType": "Addition",
+          "Description": "Added the **firewallSharedAppList**, **firewallSharedIpList** and **firewallSharedPortlist** members to the [deviceManagementTemplateSubtype](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesubtype?view=graph-rest-beta) enum type",
+          "Target": "deviceManagementTemplateSubtype"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "firewallSharedSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **firewallSharedSettings** member to the [deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype?view=graph-rest-beta) enum type",
+          "Target": "deviceManagementTemplateType"
+        },
+        {
+          "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+          "ApiChange": "Resource",
+          "ChangedApiName": "upgradeFailed",
+          "ChangeType": "Addition",
+          "Description": "Added the **upgradeFailed** member to the [microsoftTunnelServerHealthStatus](/graph/api/resources/intune-mstunnel-microsofttunnelserverhealthstatus?view=graph-rest-beta) enum type",
+          "Target": "microsoftTunnelServerHealthStatus"
+        }
+      ],
+      "Id": "2168b27e-50a8-451e-b79e-69bb5e6bfb24",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-16T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bfd56b1b-1c1f-445d-ba7e-0280fd1fad7c",
           "ApiChange": "Resource",
           "ChangedApiName": "AlternateIdLogin",

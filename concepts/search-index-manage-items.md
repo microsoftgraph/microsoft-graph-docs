@@ -29,7 +29,7 @@ External groups can consist of another external group, Azure Active Directory us
 
 ## Properties
 
-The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](/graph/concepts/search-index-manage-schema.md) for the connection before adding items into it and convert datatypes into [supported datatypes](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
+The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](/graph/search-index-manage-schema) for the connection before adding items into it and convert datatypes into [supported datatypes](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
 
 ![An example property component](./images/search-index-manage-items-1.png)
 
@@ -37,7 +37,7 @@ The properties component is used to add item metadata that is useful in Microsof
 
 The content component is used to add the bulk of the item that needs to be full text indexed. Examples include ticket description, parsed text from a file body, or a wiki page body.
 
-Content is one of the key fields influencing [relevance](/graph/concepts/search-index-manage-schema.md) across Microsoft experiences. We support content of the type `text` and `HTML`. If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
+Content is one of the key fields influencing [relevance](/graph/search-index-manage-schema.md/#relevance) across Microsoft experiences. We support content of the type `text` and `HTML`. If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
 
 ![An example content component](./images/search-index-manage-items-2.png)
 
@@ -92,6 +92,6 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 
 - [Query using the Microsoft Search API](search-concept-overview.md#why-use-the-microsoft-search-api)
 - [Review the Indexing API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
-- [Customize Microsoft Search results page](/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page)
+- [Customize Microsoft Search results page](/MicrosoftSearch/customize-search-page)
 - [Search custom types (externalItem)](search-concept-custom-types.md)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub

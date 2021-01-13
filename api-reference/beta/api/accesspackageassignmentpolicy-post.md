@@ -274,6 +274,209 @@ Content-type: application/json
 }
 ```
 
+### Example 3: Create assignment policy with questions
+
+Questions configured in an assignment policy will be asked to requestors in scope of the policy. Their answers will be shown to their approvers. Question IDs are read-only and are included in the response by default.
+
+#### Request
+
+The following example shows a request to create an access package assignment policy. 
+
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies_questions"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
+Content-type: application/json
+
+{
+    "accessPackageId": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
+    "displayName": "Users from connected organizations can request",
+    "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
+    "canExtend": false,
+    "durationInDays": 365,
+    "expirationDateTime": null,
+    "requestorSettings": {
+        "scopeType": "AllExistingConnectedOrganizationSubjects",
+        "acceptRequests": true
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": true,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": true,
+        "approvalMode": "SingleStage",
+        "approvalStages": [{
+                "approvalStageTimeOutInDays": 14,
+                "isApproverJustificationRequired": true,
+                "isEscalationEnabled": true,
+                "escalationTimeInMinutes": 11520,
+                "primaryApprovers": [{
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "isBackup": true,
+                        "id": "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
+                        "description": "group for users from connected organizations which have no external sponsor"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.externalSponsors",
+                        "isBackup": false
+                    }
+                ]
+            }
+        ]
+    },
+    "accessReviewSettings": {
+        "isEnabled": false
+    },
+    "questions": [{
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": [{
+                "text": "¿De qué estado eres?",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "AZ",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Arizona",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "CA",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "California",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "OH",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Ohio",
+                    "languageCode": "es"
+                }]
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "isRequired": false,
+        "text": {
+            "defaultText": "Who is your manager?",
+            "localizedTexts": [{
+                "text": "por qué necesita acceso a este paquete",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isSingleLineQuestion": false
+    }]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+---
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "4c02f928-7752-49aa-8fc8-e286d973a965",
+  "accessPackageId": "string (identifier)",
+  "displayName": "Users from connected organizations can request",
+  "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
+  "questions": [{
+        "id" : "BD3F6B95-458D-4BC8-A9A6-8D4B29F64F3D",
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": [{
+                "text": "¿De qué estado eres?",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "AZ",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Arizona?",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "CA",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "California",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "OH",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Ohio",
+                    "languageCode": "es"
+                }]
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "id" : "F652C13C-A660-4E4C-A1E0-CE9FEC6EE57A",
+        "isRequired": false,
+        "text": {
+            "defaultText": "Who is your manager?",
+            "localizedTexts": [{
+                "text": "por qué necesita acceso a este paquete",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isSingleLineQuestion": false
+    }]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

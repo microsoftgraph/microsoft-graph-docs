@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "8c2766a4-3c0b-11eb-822d-0179b911e3f8",
+          "ApiChange": "Property",
+          "ChangedApiName": "notificationChannelUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **notificationChannelUrl** property to [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "8c29c7f3-3c0b-11eb-822d-0179b911e3f8",
+          "ApiChange": "Property",
+          "ChangedApiName": "addedStudentAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **addedStudentAction** property to [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "8c2c2b8a-3c0b-11eb-822d-0179b911e3f8",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "educationAddedStudentAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationAddedStudentAction** enumeration type",
+          "Target": "educationAddedStudentAction"
+        }
+      ],
+      "Id": "8c25041b-3c0b-11eb-822d-0179b911e3f8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-11T23:49:45.847Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3365a6d2-1e3f-45e8-807f-5d7d4ec9e8e7",
           "ApiChange": "Property",
           "ChangedApiName": "expirationDate,educationSynchronizationProfile",

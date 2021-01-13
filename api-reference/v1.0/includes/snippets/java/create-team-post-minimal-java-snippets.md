@@ -15,7 +15,7 @@ AadUserConversationMember members = new AadUserConversationMember();
 LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("owner");
 members.roles = rolesList;
-members.userId = "0040b377-61d8-43db-94f5-81374122dc7e";
+members.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')"));
 membersList.add(members);
 ConversationMemberCollectionResponse conversationMemberCollectionResponse = new ConversationMemberCollectionResponse();
 conversationMemberCollectionResponse.value = membersList;

@@ -25,13 +25,14 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
 | group-id    | groupId     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
-| type     | type      | The type of entities to search for. Available options are: `person`, `group`, `any`. Default value is `person`. This attribute has no effect if `group-id` property is set.                                                                            |
+| type     | type      | The type of entities to search for. Available options are: `person`, `group`, `any`. Default value is `person`. This attribute has no effect if `group-id` property is set.         
+| transitive-search     | transitiveSearch      | A Boolean value to perform a transitive search returning a flat list of all nested members - by default transitive search is not used.|
 | group-type     | groupType      | The group type to search for. Available options are: `unified`, `security`, `mailenabledsecurity`, `distribution`, `any`. Default value is `any`. This attribute has no effect if the `type` property is set to `person`.                                                                           |
 |  selected-people  | selectedPeople     | An array of selected people. Set this value to select people programmatically.|
 | people   | people    | An array of people found and rendered in the search result |
+| placeholder   | placeholder    | The default text that appears to explain how to use the component. Default value is `Start typing a name`.
 | default-selected-user-ids | defaultSelectedUserIds | When provided a string of comma-separated Microsoft Graph user IDs, the component renders the respective users as selected upon initialization.
-| selection-mode | selectionMode | Used to indicate whether to allow selecting multiple users or just a single user. Available options are: `single`, `multiple`. Default value is `multiple`.
-| placeholder | placeholder | The default text that appears to explain how to use the component. Default value is `Start typing a name`.
+| selection-mode | selectionMode | Used to indicate whether to allow selecting multiple items (users or groups) or just a single item. Available options are: `single`, `multiple`. Default value is `multiple`.
 
 The following is a `show-max` example.
 
@@ -54,7 +55,7 @@ You can populate selected people data by doing one of the following:
     document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
     ```
 
-- Using the `selectUsersById()` method, which accepts an array of Microsoft graph [user ids](/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
+- Using the `selectUsersById()` method, which accepts an array of Microsoft graph [user ids](/graph/api/resources/users) to find associated user details for selection.
 
      >**Note:** If no user is found for an `id`, no data will be rendered for that `id`.
 
@@ -86,23 +87,23 @@ mgt-people-picker {
     --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
 
     --input-background-color: #1f1f1f; /* input area background color */
-    --input-hover-color: #008394; /* input area border hover color */
-    --input-focus-color: #0f78d4; /* input area border focus color */
+    --input-border-color--hover: #008394; /* input area border hover color */
+    --input-border-color--focus: #0f78d4; /* input area border focus color */
 
     --dropdown-background-color: #1f1f1f; /* selection area background color */
     --dropdown-item-hover-background: #333d47; /* person background color on hover */
     
     --selected-person-background-color: #f1f1f1; /* person item background color */
     
-    --font-color: white; /* input area border focus color */
-    --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
-    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
+    --color: white; /* input area border focus color */
+    --placeholder-color: #f1f1f1; /* placeholder text color */
+    --placeholder-color--focus: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
 }
 ```
 
 ## Templates
 
- `mgt-people-picker` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+ `mgt-people-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -129,15 +130,15 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
-| [/users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
-| [/groups](/group-list?view=graph-rest-beta)  | Group.Read.All |
-| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All        |
-| [/users/${userPrincipleName} ](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
+| [/me/people](/graph/api/user-list-people)                    | People.Read        |
+| [/users](/graph/api/user-list)  | User.ReadBasic.All |
+| [/groups](/group-list)  | Group.Read.All |
+| [/groups/\${groupId}/members](/graph/api/group-list-members) | User.ReadBasic.All        |
+| [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
 
 ## Authentication
 
-The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Extend for more control
 

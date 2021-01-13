@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-EdiscoveryCase ediscoveryCase = new EdiscoveryCase();
-ediscoveryCase.displayName = "My Case 1";
+Case _case = new Case();
+_case.displayName = "My Case 1";
 
 graphClient.compliance().ediscovery().cases()
 	.buildRequest()
-	.post(ediscoveryCase);
+	.post(_case);
 
 ```
