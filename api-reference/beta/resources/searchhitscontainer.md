@@ -21,7 +21,7 @@ Represent the list of search results.
 |:-------------|:------------|:------------|
 |hits|[searchHit](searchhit.md) collection|A collection of the search results.|
 |moreResultsAvailable|Boolean|Provides information if more results are available. Based on this information, you can adjust the **from** and **size** properties of the [searchRequest](searchrequest.md) accordingly.|
-|total|Int32|The total number of results. Note this is not the number of results on the page, but the total number of results satisfying the query.|
+|total|Int32|The estimated total number of results satisfying the query. Note this is not the number of results on the page, but the total number of results satisfying the query.|
 |aggregations|[searchAggregation](searchaggregation.md) collection|Contains the collection of aggregations computed based on the provided [aggregationOption](aggregationoption.md) specified in the request.|
 
 ## JSON representation
