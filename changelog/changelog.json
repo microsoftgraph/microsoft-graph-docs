@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "da2e0aa4-fcae-4c05-8e30-e673ec56db9d";
+          "Id": "da2e0aa4-fcae-4c05-8e30-e673ec56db9d",
           "ApiChange": "Resource",
           "ChangedApiName": "Update application",
           "ChangeType": "Addition",
