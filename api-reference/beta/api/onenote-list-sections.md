@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/me/onenote/sections
 [!INCLUDE [sample-code](../includes/snippets/objc/onenote-get-sections-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/onenote-get-sections-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

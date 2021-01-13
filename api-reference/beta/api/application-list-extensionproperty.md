@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/applications/{id}/extensionProperties
 [!INCLUDE [sample-code](../includes/snippets/objc/get-extensionproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-extensionproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

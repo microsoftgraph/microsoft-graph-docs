@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/me/profile/skills
 [!INCLUDE [sample-code](../includes/snippets/objc/get-skills-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-skills-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

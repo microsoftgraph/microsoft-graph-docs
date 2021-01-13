@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedUsers
 [!INCLUDE [sample-code](../includes/snippets/objc/get-allowedusers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-allowedusers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

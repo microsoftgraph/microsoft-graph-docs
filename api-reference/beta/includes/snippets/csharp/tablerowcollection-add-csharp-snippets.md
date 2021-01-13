@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var index = null;
+Int32? index = null;
 
 var values = JToken.Parse("[[1,2,3],[4,5,6]]");
 

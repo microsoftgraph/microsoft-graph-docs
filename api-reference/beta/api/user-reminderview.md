@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T1
 [!INCLUDE [sample-code](../includes/snippets/objc/user-reminderview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-reminderview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

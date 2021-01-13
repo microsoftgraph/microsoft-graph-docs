@@ -77,6 +77,10 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/completeMigration
 [!INCLUDE [sample-code](../includes/snippets/objc/completemigration-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/completemigration-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 <!-- markdownlint-disable MD001 -->

@@ -12,7 +12,7 @@ var printSettings = new PrintSettings
 };
 
 var print = new Print();
-print.Settings = settings;
+print.Settings = printSettings;
 
 await graphClient.Print
 	.Request()

@@ -815,6 +815,11 @@ Use the following URL to get the Azure AD SAML metadata for the specific configu
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
+> [!NOTE]
+> The application should be capable of parsing the byte order mark present in the federation metadata XML data rendered using `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`. Byte order mark is represented as a nonprintable ASCII character `»¿` and in Hex it is represented as `EF BB BF` when reviewing the XML data.
+
+ 
+
 ## Next steps
 - [Use Microsoft Graph APIs to configure user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
 - [Use the AD FS application activity report to migrate applications to Azure AD](/azure/active-directory/manage-apps/migrate-adfs-application-activity)

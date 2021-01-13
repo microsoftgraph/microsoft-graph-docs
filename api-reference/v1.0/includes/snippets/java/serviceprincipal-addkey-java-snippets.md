@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 KeyCredential keyCredential = new KeyCredential();
 keyCredential.type = "X509CertAndPassword";
 keyCredential.usage = "Sign";
-keyCredential.key = "MIIDYDCCAki...";
+keyCredential.key = Base64.getDecoder().decode("MIIDYDCCAki...");
 
 PasswordCredential passwordCredential = new PasswordCredential();
 passwordCredential.secretText = "MKTr0w1...";

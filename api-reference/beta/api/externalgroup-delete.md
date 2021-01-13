@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-externalgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -113,7 +113,7 @@ You can add components to your HTML as you normally would. For example, to add t
 <mgt-login></mgt-login>
 ```
 
-Or, you can add the components in JSX to the Tab component. We recommend using the `mgt-react` library if you created your Teams app using the Microsoft Teams Toolkit extension. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md#using-mgt-react)
+Or, you can add the components in JSX to the Tab component. We recommend using the `mgt-react` library if you created your Teams app using the Microsoft Teams Toolkit extension. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
 
 First, install `mgt-react`:
 

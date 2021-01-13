@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/jobs
 [!INCLUDE [sample-code](../includes/snippets/objc/get-jobs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-jobs-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

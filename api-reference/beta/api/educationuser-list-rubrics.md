@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/education/me/rubrics
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rubrics-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-rubrics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

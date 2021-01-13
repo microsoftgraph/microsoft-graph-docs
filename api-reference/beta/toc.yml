@@ -10194,11 +10194,52 @@ items:
                 href: api/ipnamedlocation-update.md
               - name: Delete
                 href: api/ipnamedlocation-delete.md
-        - name: Data policy operation
-          href: resources/datapolicyoperation.md
-          items:
-          - name: Get data policy operation
-            href: api/datapolicyoperation-get.md
+      - name: Organization
+        href: resources/organization.md
+        items:
+        - name: Get org details
+          href: api/organization-get.md
+        - name: Update org details
+          href: api/organization-update.md
+      - name: Organizational branding
+        href: resources/organizationalbrandingproperties.md
+        items:
+        - name: Create
+          href: api/organizationalbrandingproperties-create.md
+        - name: Get 
+          href: api/organizationalbrandingproperties-get.md
+        - name: Update
+          href: api/organizationalbrandingproperties-update.md
+        - name: Delete
+          href: api/organizationalbrandingproperties-delete.md
+        - name: Create localized 
+          href: api/organizationalbrandingpropertieslocalization-create.md
+        - name: Get localized
+          href: api/organizationalbrandingpropertieslocalization-get.md
+        - name: Update localized
+          href: api/organizationalbrandingpropertieslocalization-update.md
+        - name: Delete localized
+          href: api/organizationalbrandingpropertieslocalization-delete.md 
+      - name: Organizational contacts
+        href: resources/orgcontact.md
+        items:
+        - name: List org contacts
+          href: api/orgcontact-list.md
+        - name: Get org contact
+          href: api/orgcontact-get.md
+        - name: Update org contact
+          href: api/orgcontact-update.md
+        - name: Delete org contact
+          href: api/orgcontact-delete.md
+        - name: Get org contact delta
+          href: api/orgcontact-delta.md
+        - name: Groups
+          href: resources/group.md
+      - name: Data policy operation
+        href: resources/datapolicyoperation.md
+        items:
+        - name: Get data policy operation
+          href: api/datapolicyoperation-get.md
         - name: Delegated permission grants
           href: resources/oauth2permissiongrant.md
           items:
@@ -10521,6 +10562,62 @@ items:
                href: api/identityuserflowattribute-delete.md
       - name: Governance
         items:
+        - name: Access reviews
+          href: resources/accessreviewsv2-root.md
+          items:
+          - name: Access review schedule definition
+            href: resources/accessreviewscheduledefinition.md
+            items:
+            - name: List
+              href: api/accessreviewscheduledefinition-list.md
+            - name: Get
+              href: api/accessreviewscheduledefinition-get.md
+            - name: Create
+              href: api/accessreviewscheduledefinition-create.md
+            - name: Delete
+              href: api/accessreviewscheduledefinition-delete.md 
+            - name: Update
+              href: api/accessreviewscheduledefinition-update.md
+          - name: Access review schedule settings
+            href: resources/accessreviewschedulesettings.md
+          - name: Access review apply action
+            href: resources/accessreviewapplyaction.md
+          - name: Access review scope
+            href: resources/accessreviewscope.md
+          - name: Access review reviewer scope
+            href: resources/accessreviewreviewerscope.md
+          - name: Access review instance
+            href: resources/accessreviewinstance.md
+            items:
+            - name: List
+              href: api/accessreviewinstance-list.md
+            - name: Get
+              href: api/accessreviewinstance-get.md
+            - name: List pending approval
+              href: api/accessreviewinstance-pendingaccessreviewinstances.md
+            - name: Send reminder
+              href: api/accessreviewinstance-sendreminder.md
+            - name: Stop
+              href: api/accessreviewinstance-stop.md
+            - name: Accept recommendations
+              href: api/accessreviewinstance-acceptrecommendations.md
+            - name: Apply decisions
+              href: api/accessreviewinstance-applydecisions.md
+          - name: Access review instance decision item
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: List
+              href: api/accessreviewinstancedecisionitem-list.md
+            - name: List pending approval
+              href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+          - name: Access review instance decision item target
+            href: resources/accessreviewinstancedecisionitemtarget.md
+          - name: Access review instance decision item user target
+            href: resources/accessreviewinstancedecisionitemusertarget.md
+          - name: Access review instance decision item service principal target
+            href: resources/accessreviewinstancedecisionitemserviceprincipaltarget.md
         - name: Access reviews
           href: resources/accessreviews-root.md
           items:

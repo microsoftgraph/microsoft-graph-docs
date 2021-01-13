@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permission
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

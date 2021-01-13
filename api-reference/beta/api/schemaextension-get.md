@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schemaextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

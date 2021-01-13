@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/p
 [!INCLUDE [sample-code](../includes/snippets/objc/get-publishedresource-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-publishedresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

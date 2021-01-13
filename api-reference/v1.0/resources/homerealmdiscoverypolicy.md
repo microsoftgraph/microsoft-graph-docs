@@ -85,7 +85,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "isOrganizationDefault": true,
+  "isOrganizationDefault": true
 }
 ```
 

@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/education/schools/delta
 [!INCLUDE [sample-code](../includes/snippets/objc/educationschool-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationschool-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

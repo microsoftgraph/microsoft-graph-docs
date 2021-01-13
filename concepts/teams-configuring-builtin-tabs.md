@@ -85,7 +85,7 @@ The following is the configuration.
 
 ### Example: Create a configured document library tab
 
-The following example creates a configured Word tab.
+The following example creates a configured document library tab.
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs

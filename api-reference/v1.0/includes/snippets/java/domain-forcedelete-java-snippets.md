@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-boolean disableUserAccounts = true;
+Boolean disableUserAccounts = true;
 
 graphClient.domains("{id}")
 	.forceDelete(disableUserAccounts)
