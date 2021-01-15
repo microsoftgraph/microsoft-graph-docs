@@ -17,15 +17,16 @@ Make sure you have the corresponding permissions to call the following APIs.
 
 |Resource type |Method |
 |---------|---------|
-|[applications](/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Create application](/graph/api/application-post-applications?tabs=http&view=graph-rest-beta) <br> [Update application](/graph/api/application-update?view=graph-rest-beta)<br> [Add application to connectorGroup](/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
+|[applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0) | [Instantiate applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)|
+|[applications](/graph/api/resources/application?view=graph-rest-beta)<br> [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Create application](/graph/api/application-post-applications?tabs=http&view=graph-rest-beta) <br> [Update application](/graph/api/application-update?view=graph-rest-beta)<br> [Add application to connectorGroup](/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
 |[connector](/graph/api/resources/connector?view=graph-rest-beta)| [Get connectors](/graph/api/connector-get?view=graph-rest-beta)
 |[connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Create connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Add connector to connectorGroup](/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
 |[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Create servicePrincipal](/graph/api/serviceprincipal-post-serviceprincipals?tabs=http&view=graph-rest-beta) <br> [Update servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Create appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 > [!NOTE]
-> The requests shown in this article use sample values. You will need update these. The response objects shown might also be shortened for readability. 
+> The requests shown in this article use sample values. You will need update these. The response objects shown might also be shortened for readability.
 
-## Step 1: Create an application
+## Step 1: Create a custom application
 
 ### Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use
 
@@ -33,9 +34,9 @@ Make sure you have the corresponding permissions to call the following APIs.
 2. Select **Sign-in with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
 3. Upon successful sign in, you'll see the user account details in the left pane.
 
-### Create an application
+### Create a custom application
 
-To configure Application Proxy for an app using the API, you create an application, add a service principal to the app, and then update the application's **onPremisesPublishing** property to configure the App Proxy settings. When creating the application, set the application's **signInAudience** to "AzureADMyOrg".
+To configure Application Proxy for an app using the API, you must first create a custom application, then update the application's [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta) property for the app to configure the App Proxy settings. Use [instantiate applicationTemplate](graph/api/applicationtemplate-instantiate?view=graph-rest-1.0) to create an instance of a custom application and service principal in your tenant for management. The template ID for a custom application is: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
 
 #### Request
 
@@ -47,12 +48,11 @@ To configure Application Proxy for an app using the API, you create an applicati
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/applications
+POST https://graph.microsoft.com/v1.0/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
 
 {
-  "displayName": "Contoso IWA App",
-  "signInAudience":"AzureADMyOrg"
+  "displayName": "Contoso IWA App"
 }
 ```
 # [C#](#tab/csharp)
