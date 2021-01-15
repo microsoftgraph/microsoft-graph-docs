@@ -38,6 +38,9 @@ Make sure you have the corresponding permissions to call the following APIs.
 
 To configure Application Proxy for an app using the API, you must first create a custom application, then update the application's [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta) property for the app to configure the App Proxy settings. Use [instantiate applicationTemplate](graph/api/applicationtemplate-instantiate?view=graph-rest-1.0) to create an instance of a custom application and service principal in your tenant for management. The template ID for a custom application is: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
 
+> [!NOTE]
+> The follow call uses the V1.0 Microsoft Graph endpoint, all other API calls use the beta endpoint.
+
 #### Request
 
 
@@ -114,99 +117,14 @@ Content-type: application/json
 }
 ```
 
-### Retrieve the application object ID and appId
+### Retrieve the application object ID and service principal object ID
 Use the response from the previous call to retrieve and save the application object ID and app ID.
 ```
 "application": {
-  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
-  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
+  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83"
 }
-```
-### Create a servicePrincipal for the application and add required tags
-Use the **appId** to create a service principal for the application. Then add the tags required for configuring Application Proxy for an app.
-
-#### Request
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_servicePrincipal"
-}-->
-
-```msgraph-interactive
-POST https://graph.microsoft.com/beta/serviceprincipals
-Content-type: appplication/json
-
-{
-  "appId":"d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "tags": [
-    "WindowsAzureActiveDirectoryIntegratedApp",
-    "WindowsAzureActiveDirectoryOnPremApp"
-  ]
-}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application",
-  "isCollection": true
-} -->
-
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
-  "id": "a8cac399-cde5-4516-a674-819503c61313",
-  "deletedDateTime": null,
-  "accountEnabled": true,
-  "alternativeNames": [],
-  "createdDateTime": null,
-  "deviceManagementAppType": null,
-  "appDescription": null,
-  "appDisplayName": "Contoso IWA App",
-  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-  "applicationTemplateId": null,
-  "appOwnerOrganizationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece",
-  "appRoleAssignmentRequired": false,
-  "description": null,
-  "displayName": "vtestapi2",
-  "errorUrl": null,
-  "homepage": null,
-  "isAuthorizationServiceEnabled": false,
-  "loginUrl": null,
-  "logoutUrl": null,
-  "notes": null,
-  "notificationEmailAddresses": [],
-  "preferredSingleSignOnMode": null,
-  "preferredTokenSigningKeyEndDateTime": null,
-  "preferredTokenSigningKeyThumbprint": null,
-  "publisherName": "f/128 Photography",
-  "replyUrls": [],
-  "samlMetadataUrl": null,
-  "samlSingleSignOnSettings": null,
-  "servicePrincipalNames": [
-      "b92b92d4-3874-46a5-b715-a00ea01cff93"
-  ],
-  "servicePrincipalType": "Application",
+"servicePrincipal": {
+	"objectId": "b00c693f-9658-4c06-bd1b-c402c4653dea"
 }
 ```
 
@@ -214,7 +132,7 @@ Content-type: application/json
 
 ### Set the onPremisesPublishing configuration
 
-Use the application object ID from the previous step to configure Application Proxy for the app and update the **onPremisesPublishing** property to the desired configuration. In this example, you're using an app with the internal URL: `https://contosoiwaapp.com` and using the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`. 
+Use the application object ID from the previous step to configure Application Proxy for the app and update the **onPremisesPublishing** property to the desired configuration. In this example, you're using an app with the internal URL: `https://contosoiwaapp.com` and using the default domain for the external URL: `https://contosoiwaapp-contoso.msappproxy.net`.
 
 #### Request
 
@@ -263,7 +181,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 ### Complete the configuration of the application
-Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** properties to the external UR configured in the **onPremisesPublishing** property. Then update [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
+Update the application's **redirectUri**, **identifierUri**, **logoutUrl**, and **homepageUrl** properties to the external UR configured in the **onPremisesPublishing** property. Then update [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) to `true` for **enabledTokenIssuance** and `false` for **enabledAccessTokenIssuance**.
 
 #### Request
 <!-- {
@@ -280,6 +198,7 @@ Content-type: appplication/json
   "web": {
     "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
     "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net",
+    "logoutUrl": "https://contosoiwaapp-contoso.msappproxy.net/?appproxy=logout",
     "implicitGrantSettings": {
       "enableIdTokenIssuance": true,
       "enableAccessTokenIssuance": false
@@ -351,13 +270,13 @@ Content-type: application/json
     "value": [
         {
             "id": "d2b1e8e8-8511-49d6-a4ba-323cb083fbb0",
-            "machineName": "connectorA.redmond.contoso.com"",
+            "machineName": "connectorA.redmond.contoso.com",
             "externalIp": "131.137.147.164",
             "status": "active"
         },
         {
             "id": "f2cab422-a1c8-4d70-a47e-2cb297a2e051",
-            "machineName": "connectorB.contoso.com"",
+            "machineName": "connectorB.contoso.com",
             "externalIp": "68.0.191.210",
             "status": "active"
         },
