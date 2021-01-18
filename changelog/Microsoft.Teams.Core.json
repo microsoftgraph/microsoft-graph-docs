@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "shared",
+          "ChangeType": "Addition",
+          "Description": "Introducing channels(https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) of new membership type.",
+          "Target": "channelMembershipType"
+        },
+		{
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamifyGroup",
+          "ChangeType": "Addition",
+          "Description": "Added new async operation type(https://docs.microsoft.com/en-us/graph/api/resources/teamsasyncoperation?view=graph-rest-beta) to teamify a group.",
+          "Target": "teamsAsyncOperationType"
+        }
+		{
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "createChannel",
+          "ChangeType": "Addition",
+          "Description": "Added new async operation type(https://docs.microsoft.com/en-us/graph/api/resources/teamsasyncoperation?view=graph-rest-beta) to create a channel.",
+          "Target": "teamsAsyncOperationType"
+        }
+      ],
+      "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-15T21:46:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
           "Id": "a38f6f66-acdd-495e-8b76-9f32878e2c0a",
           "ApiChange": "method",
           "ChangedApiName": "Remove chat member",
