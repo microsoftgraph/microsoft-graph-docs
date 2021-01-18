@@ -7,7 +7,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "shared",
           "ChangeType": "Addition",
-          "Description": "Introducing channels(https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) of new membership type.",
+          "Description": "Added a new enum member `shared` to channelMembershipType.",
           "Target": "channelMembershipType"
         },
 		{
@@ -15,7 +15,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "teamifyGroup",
           "ChangeType": "Addition",
-          "Description": "Added new async operation type(https://docs.microsoft.com/en-us/graph/api/resources/teamsasyncoperation?view=graph-rest-beta) to teamify a group.",
+          "Description": "Added a new enum member `teamifyGroup` to teamsAsyncOperationType.",
           "Target": "teamsAsyncOperationType"
         }
 		{
@@ -23,7 +23,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "createChannel",
           "ChangeType": "Addition",
-          "Description": "Added new async operation type(https://docs.microsoft.com/en-us/graph/api/resources/teamsasyncoperation?view=graph-rest-beta) to create a channel.",
+          "Description": "Added a new enum member `createChannel` to teamsAsyncOperationType.",
           "Target": "teamsAsyncOperationType"
         }
       ],
@@ -34,7 +34,7 @@
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
-	{
+    {
       "ChangeList": [
         {
           "Id": "a38f6f66-acdd-495e-8b76-9f32878e2c0a",
