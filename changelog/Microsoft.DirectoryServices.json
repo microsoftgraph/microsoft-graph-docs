@@ -3,6 +3,23 @@
     {
       "ChangeList": [
         {
+          "Id": "da2e0aa4-fcae-4c05-8e30-e673ec56db9d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Update application",
+          "ChangeType": "Addition",
+          "Description": "Introduced the [Single Page Application type]((https://docs.microsoft.com/en-us/graph/api/resources/spaaplication.md)",
+          "Target": "updateApplication"
+        }
+        ],
+        "Id": "da2e0aa4-fcae-4c05-8e30-e673ec56db9d",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2020-01-13T00:00:00.000Z",
+        "WorkloadArea": "Identity and Access",
+        "SubArea": "Identity and sign-in"
+      },
+      "ChangeList": [
+        {
           "Id": "118736d5-b41d-43c0-9328-355d05cff91c",
           "ApiChange": "resource, methods",
           "ChangedApiName": "organizationalBrandingProperties",
