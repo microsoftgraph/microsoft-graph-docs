@@ -11,6 +11,51 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### requirementProvider values 
+
+|Member|
+|:---|
+|user|
+|request|
+|servicePrincipal|
+|v1ConditionalAccess|
+|multiConditionalAccess|
+|tenantSessionRiskPolicy|
+|accountCompromisePolicies|
+|v1ConditionalAccessDependency|
+|v1ConditionalAccessPolicyIdRequested|
+|mfaRegistrationRequiredByIdentityProtectionPolicy|
+|baselineProtection|
+|mfaRegistrationRequiredByBaselineProtection|
+|mfaRegistrationRequiredByMultiConditionalAccess|
+|enforcedForCspAdmins|
+|securityDefaults|
+|mfaRegistrationRequiredBySecurityDefaults|
+|proofUpCodeRequest|
+|crossTenantOutboundRule|
+|gpsLocationCondition|
+|riskBasedPolicy|
+|unknownFutureValue|
+
+### signInIdentifierType values 
+
+|Member|
+|:---|
+|userPrincipalName|
+|phoneNumber|
+|proxyAddress|
+|qrCode|
+|onPremisesUserPrincipalName|
+|unknownFutureValue|
+
+### signInUserType values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
 ### authenticationMethodKeyStrength values
 
 |Member|

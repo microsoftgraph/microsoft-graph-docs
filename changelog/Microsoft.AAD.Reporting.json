@@ -1,6 +1,264 @@
 {
   "changelog": [
     {
+         "ChangeList":[
+            {
+               "Id":"15975b51-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Property",
+               "ChangedApiName":"flaggedForReview",
+               "ChangeType":"Addition",
+               "Description":"Added the **flaggedForReview** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
+               "Target":"signIn"
+            },
+            {
+               "Id":"1599b78f-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Property",
+               "ChangedApiName":"homeTenantId",
+               "ChangeType":"Addition",
+               "Description":"Added the **homeTenantId** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
+               "Target":"signIn"
+            },
+            {
+               "Id":"159c1997-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Property",
+               "ChangedApiName":"ipAddressFromResourceProvider",
+               "ChangeType":"Addition",
+               "Description":"Added the **ipAddressFromResourceProvider** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
+               "Target":"signIn"
+            },
+            {
+               "Id":"159e7dc0-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Property",
+               "ChangedApiName":"signInIdentifier",
+               "ChangeType":"Addition",
+               "Description":"Added the **signInIdentifier** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
+               "Target":"signIn"
+            },
+            {
+               "Id":"15a0dfbd-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Property",
+               "ChangedApiName":"signInIdentifierType",
+               "ChangeType":"Addition",
+               "Description":"Added the **signInIdentifierType** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
+               "Target":"signIn"
+            },
+            {
+               "Id":"15a342a2-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Property",
+               "ChangedApiName":"userType",
+               "ChangeType":"Addition",
+               "Description":"Added the **userType** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource",
+               "Target":"signIn"
+            },
+            {
+               "Id":"15a5a44c-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"user",
+               "ChangeType":"Addition",
+               "Description":"Added the `user` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15a806af-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"request",
+               "ChangeType":"Addition",
+               "Description":"Added the `request` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15aa6a00-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"servicePrincipal",
+               "ChangeType":"Addition",
+               "Description":"Added the `servicePrincipal` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15accc3c-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"v1ConditionalAccess",
+               "ChangeType":"Addition",
+               "Description":"Added the `v1ConditionalAccess` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15af2e2b-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"multiConditionalAccess",
+               "ChangeType":"Addition",
+               "Description":"Added the `multiConditionalAccess` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15b18f9b-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"tenantSessionRiskPolicy",
+               "ChangeType":"Addition",
+               "Description":"Added the `tenantSessionRiskPolicy` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15b41acf-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"accountCompromisePolicies",
+               "ChangeType":"Addition",
+               "Description":"Added the `accountCompromisePolicies` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15b67ed0-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"v1ConditionalAccessDependency",
+               "ChangeType":"Addition",
+               "Description":"Added the `v1ConditionalAccessDependency` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15b8e135-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"v1ConditionalAccessPolicyIdRequested",
+               "ChangeType":"Addition",
+               "Description":"Added the `v1ConditionalAccessPolicyIdRequested` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15bb4437-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"mfaRegistrationRequiredByIdentityProtectionPolicy",
+               "ChangeType":"Addition",
+               "Description":"Added the `mfaRegistrationRequiredByIdentityProtectionPolicy` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15bda923-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"baselineProtection",
+               "ChangeType":"Addition",
+               "Description":"Added the `baselineProtection` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15c006f6-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"mfaRegistrationRequiredByBaselineProtection",
+               "ChangeType":"Addition",
+               "Description":"Added the `mfaRegistrationRequiredByBaselineProtection` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15c26a23-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"mfaRegistrationRequiredByMultiConditionalAccess",
+               "ChangeType":"Addition",
+               "Description":"Added the `mfaRegistrationRequiredByMultiConditionalAccess` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15c4da2b-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"enforcedForCspAdmins",
+               "ChangeType":"Addition",
+               "Description":"Added the `enforcedForCspAdmins` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15c730f6-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"securityDefaults",
+               "ChangeType":"Addition",
+               "Description":"Added the `securityDefaults` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15c991e2-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"mfaRegistrationRequiredBySecurityDefaults",
+               "ChangeType":"Addition",
+               "Description":"Added the `mfaRegistrationRequiredBySecurityDefaults` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15cbf854-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"proofUpCodeRequest",
+               "ChangeType":"Addition",
+               "Description":"Added the `proofUpCodeRequest` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15ce56a2-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"crossTenantOutboundRule",
+               "ChangeType":"Addition",
+               "Description":"Added the `crossTenantOutboundRule` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15d0b792-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"gpsLocationCondition",
+               "ChangeType":"Addition",
+               "Description":"Added the `gpsLocationCondition` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15d31bba-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"riskBasedPolicy",
+               "ChangeType":"Addition",
+               "Description":"Added the `riskBasedPolicy` member to the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15d57dd5-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Enum type",
+               "ChangedApiName":"signInIdentifierType",
+               "ChangeType":"Addition",
+               "Description":"Added the **signInIdentifierType** enumeration type",
+               "Target":"signInIdentifierType"
+            },
+            {
+               "Id":"15d81a83-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Enum type",
+               "ChangedApiName":"signInUserType",
+               "ChangeType":"Addition",
+               "Description":"Added the **signInUserType** enumeration type",
+               "Target":"signInUserType"
+            },
+            {
+               "Id":"15da826c-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"MFA",
+               "ChangeType":"Deletion",
+               "Description":"Removed the `MFA` member from the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15dce09a-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"CA",
+               "ChangeType":"Deletion",
+               "Description":"Removed the `CA` member from the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            },
+            {
+               "Id":"15df4375-5c44-11eb-8de9-f7f8b8b7f046",
+               "ApiChange":"Member",
+               "ChangedApiName":"unknownFutureValue",
+               "ChangeType":"Deletion",
+               "Description":"Removed the `unknownFutureValue` member from the **requirementProvider** enumeration",
+               "Target":"requirementProvider"
+            }
+         ],
+         "Id":"1594f40e-5c44-11eb-8de9-f7f8b8b7f046",
+         "Cloud":"prd",
+         "Version":"beta",
+         "CreatedDateTime":"2021-01-21T23:55:05.454Z",
+         "WorkloadArea":"Reports and audit",
+         "SubArea":"Identity and access reports"
+      },
+    {
       "ChangeList": [
         {
           "Id": "15159f16-343c-45d6-861f-105ebf2d5982",
