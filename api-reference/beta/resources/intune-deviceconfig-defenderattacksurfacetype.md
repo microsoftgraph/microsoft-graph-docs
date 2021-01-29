@@ -20,10 +20,11 @@ Possible values of Defender Attack Surface Reduction Rules
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|userDefined|0|Device default value, no intent.|
-|block|1|Block functionality.|
-|auditMode|2|Does not change functionality but generate logs.|
-
+|userDefined|0|Default, which disables attack surface reduction rule.|
+|block|1|Enable the attack surface reduction rule.|
+|auditMode|2|Evaluate how the ASR rule would impact your organization if enabled. Does not change functionality but generate logs.|
+|warn|6|Warning message to end user with ability to bypass block from attack surface reduction rule.|
+|disable|99|Disable the attack surface reduction rule|
 
 
 

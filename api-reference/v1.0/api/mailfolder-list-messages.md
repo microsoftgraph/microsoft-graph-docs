@@ -86,15 +86,15 @@ Content-length: 317
 {
   "value": [
     {
-      "receivedDateTime": "datetime-value",
-      "sentDateTime": "datetime-value",
+      "receivedDateTime": "2018-02-13T03:53:55Z",
+      "sentDateTime": "2018-02-13T03:53:55Z",
       "hasAttachments": true,
-      "subject": "subject-value",
+      "subject": "MyAnalytics | Your past week",
       "body": {
-        "contentType": "",
-        "content": "content-value"
+        "contentType": "html",
+        "content": "<html lang=\"en\">\r\n<head></head>\r\n<body> </body>\r\n</html>\r\n"
       },
-      "bodyPreview": "bodyPreview-value"
+      "bodyPreview": "February 4-10, 2018\r\n\r\n\r\nHi Megan Bowen,\r\n\r\nWe've got your highlights from last week\r\n\r\n\r\n\r\nYour time\r\n\r\n\r\nEmail hours\r\n\r\n\r\n\r\n\r\n0 hrs\r\n\r\n\r\n\r\nMeeting hours\r\n\r\n\r\n\r\n\r\n12 hrs\r\n\r\n\r\n\r\n\r\nFocus hours\r\n\r\n\r\n\r\n\r\n30 hrs\r\n\r\n\r\n\r\n\r\n\r\nGoals keep you motivated. Set them"
     }
   ]
 }

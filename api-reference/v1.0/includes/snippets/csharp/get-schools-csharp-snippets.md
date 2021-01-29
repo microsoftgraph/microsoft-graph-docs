@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var schools = await graphClient.Education.Me.Schools
+var schools = await graphClient.Education.Classes["{class-id}"].Schools
 	.Request()
 	.GetAsync();
 

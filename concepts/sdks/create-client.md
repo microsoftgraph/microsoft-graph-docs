@@ -43,7 +43,7 @@ const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphS
 # [Java](#tab/Java)
 
 ```java
-ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NATIONAL_CLOUD);
+ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NationalCloud.Global);
 
 IGraphServiceClient graphClient = GraphServiceClient
 				.builder()

@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var workbookTableColumn = new WorkbookTableColumn
 {
-	Id = 99,
+	Id = "99",
 	Name = "name-value",
 	Index = 99,
 	Values = "values-value"

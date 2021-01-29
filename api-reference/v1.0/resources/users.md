@@ -31,7 +31,7 @@ One of the following [permissions](/graph/permissions-reference) is required to 
 
 ## Common properties
 
-The following represent the default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter.
+The following represent the default set of properties that are returned when getting a user or listing users. These are a subset of all available properties. To get more user properties, use the `$select` query parameter. Learn [how to use the $select query parameter](/graph/query-parameters#select-parameter) and see [properties that support the $select query parameter](../resources/user.md#properties).
 
 |Property |Description |
 |:----------|:-------------|

@@ -37,7 +37,7 @@ ServicePrincipals that don’t have any existing valid certificates (i.e.: no ce
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /serviceprincipals/{id}/addKey
+POST /servicePrincipals/{id}/addKey
 ```
 
 ## Request headers
@@ -78,7 +78,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals/{id}/addKey
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/addKey
 Content-type: application/json
 
 {
@@ -141,7 +141,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals/{id}/addKey
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/addKey
 Content-type: application/json
 
 {

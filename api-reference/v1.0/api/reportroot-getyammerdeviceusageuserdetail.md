@@ -3,7 +3,7 @@ title: "reportRoot: getYammerDeviceUsageUserDetail function"
 description: "Get details about Yammer device usage by user."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

@@ -55,7 +55,7 @@ var post = new Post
 	InReplyTo = new Post
 	{
 	},
-	Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
+	Attachments = new PostAttachmentsCollectionPage()
 	{
 		new Attachment
 		{

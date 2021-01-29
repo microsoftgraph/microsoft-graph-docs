@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 348
+Content-Length: 463
 
 {
   "value": [
@@ -69,6 +69,8 @@ Content-Length: 348
       "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
       "targetId": "Target Id value",
       "targetDisplayName": "Target Display Name value",
+      "targetDisplayVersion": "Target Display Version value",
+      "targetPublisher": "Target Publisher value",
       "targetType": "parent",
       "dependencyType": "autoInstall",
       "dependentAppCount": 1
@@ -76,7 +78,6 @@ Content-Length: 348
   ]
 }
 ```
-
 
 
 

@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "35a17b87-2c83-4eb2-ad67-e4bbf9e96ffd",
+          "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
           "ApiChange": "Resource",
           "ChangedApiName": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications",
           "ChangeType": "Addition",
@@ -11,17 +11,17 @@
           "Target": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications"
         }
       ],
-      "Id": "35a17b87-2c83-4eb2-ad67-e4bbf9e96ffd",
+      "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Profile"
+      "SubArea": "Profile"
     },
     {
       "ChangeList": [
         {
-          "Id": "d8dd05b6-6422-4092-8e37-5c69f3906830",
+          "Id": "8c224202-825a-4190-9b47-ff758248262d",
           "ApiChange": "Property",
           "ChangedApiName": "itemInsights,organizationSettings",
           "ChangeType": "Addition",
@@ -29,7 +29,7 @@
           "Target": ""
         },
         {
-          "Id": "d8dd05b6-6422-4092-8e37-5c69f3906830",
+          "Id": "8c224202-825a-4190-9b47-ff758248262d",
           "ApiChange": "Resource",
           "ChangedApiName": "itemInsightsSettings",
           "ChangeType": "Addition",
@@ -37,17 +37,17 @@
           "Target": "Get itemInsightSettings,Update itemInsightSettings"
         }
       ],
-      "Id": "d8dd05b6-6422-4092-8e37-5c69f3906830",
+      "Id": "8c224202-825a-4190-9b47-ff758248262d",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
+      "SubArea": "Insights"
     },
     {
       "ChangeList": [
         {
-          "Id": "a7696d8d-0373-4dad-ab37-b5c8948dcf58",
+          "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
           "ApiChange": "Property",
           "ChangedApiName": "profileCardProperties",
           "ChangeType": "Addition",
@@ -55,7 +55,7 @@
           "Target": "organizationSettings"
         },
         {
-          "Id": "a7696d8d-0373-4dad-ab37-b5c8948dcf58",
+          "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
           "ApiChange": "Resource",
           "ChangedApiName": "profileCardProperty",
           "ChangeType": "Addition",
@@ -63,17 +63,17 @@
           "Target": "List,Create,Get,Update,Delete"
         }
       ],
-      "Id": "a7696d8d-0373-4dad-ab37-b5c8948dcf58",
+      "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Profile"
+      "SubArea": "Profile"
     },
     {
       "ChangeList": [
         {
-          "Id": "28f5ba3f-f2d5-45f3-b0ae-c3df090654ba",
+          "Id": "99f277e8-b0bb-4193-8248-095bb0842f78",
           "ApiChange": "Resource",
           "ChangedApiName": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?",
           "ChangeType": "Addition",
@@ -81,17 +81,17 @@
           "Target": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?"
         }
       ],
-      "Id": "28f5ba3f-f2d5-45f3-b0ae-c3df090654ba",
+      "Id": "99f277e8-b0bb-4193-8248-095bb0842f78",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
+      "SubArea": "Insights"
     },
     {
       "ChangeList": [
         {
-          "Id": "44444de4-9783-4da3-97f2-5579ebd93964",
+          "Id": "8010b2c9-d937-436f-84b1-74b9a5eb67cf",
           "ApiChange": "method",
           "ChangedApiName": "profile API",
           "ChangeType": "Addition",
@@ -99,7 +99,7 @@
           "Target": "profile API"
         }
       ],
-      "Id": "44444de4-9783-4da3-97f2-5579ebd93964",
+      "Id": "8010b2c9-d937-436f-84b1-74b9a5eb67cf",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -109,7 +109,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d1adffe0-9302-4a5c-859f-5ebe37bbb582",
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
           "ApiChange": "Resource",
           "ChangedApiName": "analytics API",
           "ChangeType": "Addition",
@@ -117,7 +117,7 @@
           "Target": "analytics API"
         },
         {
-          "Id": "d1adffe0-9302-4a5c-859f-5ebe37bbb582",
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
           "ApiChange": "Resource",
           "ChangedApiName": "settings API,analytics API",
           "ChangeType": "Addition",
@@ -125,7 +125,7 @@
           "Target": "settings API,analytics API"
         },
         {
-          "Id": "d1adffe0-9302-4a5c-859f-5ebe37bbb582",
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
           "ApiChange": "Resource",
           "ChangedApiName": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics",
           "ChangeType": "Addition",
@@ -133,7 +133,7 @@
           "Target": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics"
         }
       ],
-      "Id": "d1adffe0-9302-4a5c-859f-5ebe37bbb582",
+      "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
@@ -143,7 +143,7 @@
     {
       "ChangeList": [
         {
-          "Id": "e67ee466-3712-4fef-82a2-a016b381c21e",
+          "Id": "45a46158-d7bc-42b2-bcfd-6aa75db1d410",
           "ApiChange": "Resource",
           "ChangedApiName": "settings,Get,Update",
           "ChangeType": "Addition",
@@ -151,17 +151,17 @@
           "Target": "settings,Get,Update"
         }
       ],
-      "Id": "e67ee466-3712-4fef-82a2-a016b381c21e",
+      "Id": "45a46158-d7bc-42b2-bcfd-6aa75db1d410",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-05-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
+      "SubArea": "Insights"
     },
     {
       "ChangeList": [
         {
-          "Id": "5455e598-3b0c-4dd2-abc3-89189966e8ce",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "People APIs,Get relevant information about people",
           "ChangeType": "Addition",
@@ -169,7 +169,7 @@
           "Target": "People APIs,Get relevant information about people"
         },
         {
-          "Id": "5455e598-3b0c-4dd2-abc3-89189966e8ce",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "Permissions",
           "ChangeType": "Addition",
@@ -177,7 +177,7 @@
           "Target": "Permissions"
         },
         {
-          "Id": "5455e598-3b0c-4dd2-abc3-89189966e8ce",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "personType",
           "ChangeType": "Addition",
@@ -185,7 +185,7 @@
           "Target": "personType"
         },
         {
-          "Id": "5455e598-3b0c-4dd2-abc3-89189966e8ce",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "rankedEmailAddress",
           "ChangeType": "Change",
@@ -193,7 +193,7 @@
           "Target": "scoredEmailAddress"
         },
         {
-          "Id": "5455e598-3b0c-4dd2-abc3-89189966e8ce",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Property",
           "ChangedApiName": "scoredEmailAddresses,emailAddresses,jobTitle,title,sources,mailboxType,personType,sources,mailboxType,imAddress",
           "ChangeType": "Change",
@@ -201,7 +201,7 @@
           "Target": "person,scoredEmailAddress,personType"
         },
         {
-          "Id": "5455e598-3b0c-4dd2-abc3-89189966e8ce",
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
           "ApiChange": "Resource",
           "ChangedApiName": "personDataSource",
           "ChangeType": "Deletion",
@@ -209,17 +209,17 @@
           "Target": ""
         }
       ],
-      "Id": "5455e598-3b0c-4dd2-abc3-89189966e8ce",
+      "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-08-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " People"
+      "SubArea": "People"
     },
     {
       "ChangeList": [
         {
-          "Id": "ed79d5a5-81cd-411f-9b73-63e79709abab",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Resource",
           "ChangedApiName": "Shared API,sharingDetail,insightIdentity",
           "ChangeType": "Addition",
@@ -227,7 +227,7 @@
           "Target": "Shared API,sharingDetail,insightIdentity"
         },
         {
-          "Id": "ed79d5a5-81cd-411f-9b73-63e79709abab",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Resource",
           "ChangedApiName": "Used API,usageDetails",
           "ChangeType": "Addition",
@@ -235,7 +235,7 @@
           "Target": "Used API,usageDetails"
         },
         {
-          "Id": "ed79d5a5-81cd-411f-9b73-63e79709abab",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Property",
           "ChangedApiName": "Type",
           "ChangeType": "Change",
@@ -243,7 +243,7 @@
           "Target": "resourceVisualization"
         },
         {
-          "Id": "ed79d5a5-81cd-411f-9b73-63e79709abab",
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
           "ApiChange": "Resource",
           "ChangedApiName": "workingWith,trendingAround",
           "ChangeType": "Deletion",
@@ -251,17 +251,17 @@
           "Target": ""
         }
       ],
-      "Id": "ed79d5a5-81cd-411f-9b73-63e79709abab",
+      "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
+      "SubArea": "Insights"
     },
     {
       "ChangeList": [
         {
-          "Id": "650a96ca-b082-4f22-ab16-e9dff4dab06c",
+          "Id": "52a2d5fe-1db2-46ff-af8b-2dd5179fb20b",
           "ApiChange": "Resource",
           "ChangedApiName": "Upcoming changes to Contacts and People APIs",
           "ChangeType": "Change",
@@ -269,17 +269,17 @@
           "Target": "Upcoming changes to Contacts and People APIs"
         }
       ],
-      "Id": "650a96ca-b082-4f22-ab16-e9dff4dab06c",
+      "Id": "52a2d5fe-1db2-46ff-af8b-2dd5179fb20b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-08-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " People"
+      "SubArea": "People"
     },
     {
       "ChangeList": [
         {
-          "Id": "a5a15128-e76d-42ae-aa0e-1988cb778ee2",
+          "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -287,7 +287,7 @@
           "Target": ""
         },
         {
-          "Id": "a5a15128-e76d-42ae-aa0e-1988cb778ee2",
+          "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -295,12 +295,12 @@
           "Target": ""
         }
       ],
-      "Id": "a5a15128-e76d-42ae-aa0e-1988cb778ee2",
+      "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-03-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " People"
+      "SubArea": "People"
     }
   ]
 }

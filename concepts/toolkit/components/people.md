@@ -50,12 +50,13 @@ The `mgt-people` component defines the following CSS custom properties.
 mgt-people {
   --list-margin: 8px 4px 8px 8px; /* Margin for component */
   --avatar-margin: 0 4px 0 0; /* Margin for each person */
+  --color: #000000 /* Text color *?
 }
 ```
 
 ## Templates
 
-The `mgt-people` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+The `mgt-people` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -86,17 +87,17 @@ This component uses the following Microsoft Graph APIs and permissions:
 
 | Resource | Permission |
 | - | - |
-| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+| [/me/people](/graph/api/user-list-people) | `People.Read` |
 
 When using the default templates, additional APIs and permissions are required. The default template for this component uses a [mgt-person](person.md) component, which requires the following.
 
 | Resource | Permission |
 | - | - |
-| [/users](/graph/api/user-list?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/users](/graph/api/user-list) | User.ReadBasic.All |
 
 ## Authentication
 
-The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Extend for more control
 

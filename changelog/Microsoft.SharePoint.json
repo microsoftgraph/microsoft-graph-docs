@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a7d3e2be-9671-4a76-9622-cc5de62b3522",
+          "Id": "a0d55ae3-01e6-42c2-8763-efdea7afc8f3",
           "ApiChange": "Resource",
           "ChangedApiName": "termStore.store,termStore.term,termStore.set,termStore.relation",
           "ChangeType": "Addition",
@@ -11,17 +11,17 @@
           "Target": "termStore.store,termStore.term,termStore.set,termStore.relation"
         }
       ],
-      "Id": "a7d3e2be-9671-4a76-9622-cc5de62b3522",
+      "Id": "a0d55ae3-01e6-42c2-8763-efdea7afc8f3",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Sites and lists ",
-      "SubArea": " Taxonomy"
+      "SubArea": "Taxonomy"
     },
     {
       "ChangeList": [
         {
-          "Id": "9905039f-23a2-4ff8-b8fc-931f5ba70745",
+          "Id": "ee925251-5d5e-4491-a03c-cb29a6fb431d",
           "ApiChange": "Resource",
           "ChangedApiName": "geolocationColumn",
           "ChangeType": "Addition",
@@ -29,7 +29,7 @@
           "Target": "geolocationColumn,columnDefinition"
         }
       ],
-      "Id": "9905039f-23a2-4ff8-b8fc-931f5ba70745",
+      "Id": "ee925251-5d5e-4491-a03c-cb29a6fb431d",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -39,7 +39,7 @@
     {
       "ChangeList": [
         {
-          "Id": "77813f14-6993-45f9-861f-6d88738c2476",
+          "Id": "62b1f3c3-aefe-472d-9cfa-c0999e244b58",
           "ApiChange": "Property",
           "ChangedApiName": "followedSites",
           "ChangeType": "Addition",
@@ -47,7 +47,7 @@
           "Target": "user,list the sites followed by the signed-in user"
         }
       ],
-      "Id": "77813f14-6993-45f9-861f-6d88738c2476",
+      "Id": "62b1f3c3-aefe-472d-9cfa-c0999e244b58",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
@@ -57,7 +57,7 @@
     {
       "ChangeList": [
         {
-          "Id": "77813f14-6993-45f9-861f-6d88738c2476",
+          "Id": "62b1f3c3-aefe-472d-9cfa-c0999e244b58",
           "ApiChange": "Property",
           "ChangedApiName": "followedSites",
           "ChangeType": "Addition",
@@ -65,7 +65,7 @@
           "Target": "user,list the sites followed by the signed-in user"
         },
         {
-          "Id": "77813f14-6993-45f9-861f-6d88738c2476",
+          "Id": "62b1f3c3-aefe-472d-9cfa-c0999e244b58",
           "ApiChange": "Property",
           "ChangedApiName": "dataLocatonCode",
           "ChangeType": "Addition",
@@ -73,7 +73,7 @@
           "Target": "siteCollection"
         },
         {
-          "Id": "77813f14-6993-45f9-861f-6d88738c2476",
+          "Id": "62b1f3c3-aefe-472d-9cfa-c0999e244b58",
           "ApiChange": "Property",
           "ChangedApiName": "tenantId",
           "ChangeType": "Addition",
@@ -81,7 +81,7 @@
           "Target": "sharepointIds"
         }
       ],
-      "Id": "77813f14-6993-45f9-861f-6d88738c2476",
+      "Id": "62b1f3c3-aefe-472d-9cfa-c0999e244b58",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-04-01T00:00:00",
@@ -91,7 +91,7 @@
     {
       "ChangeList": [
         {
-          "Id": "8ef4a453-de39-4fb5-9191-697a8aceb0fe",
+          "Id": "6d6fee0f-f73b-47fe-b626-b5fa40a073f3",
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
@@ -99,7 +99,7 @@
           "Target": "followSite,user"
         },
         {
-          "Id": "8ef4a453-de39-4fb5-9191-697a8aceb0fe",
+          "Id": "6d6fee0f-f73b-47fe-b626-b5fa40a073f3",
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
@@ -107,7 +107,7 @@
           "Target": "unfollowSite,user"
         },
         {
-          "Id": "8ef4a453-de39-4fb5-9191-697a8aceb0fe",
+          "Id": "6d6fee0f-f73b-47fe-b626-b5fa40a073f3",
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
@@ -115,7 +115,7 @@
           "Target": "list"
         }
       ],
-      "Id": "8ef4a453-de39-4fb5-9191-697a8aceb0fe",
+      "Id": "6d6fee0f-f73b-47fe-b626-b5fa40a073f3",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -125,7 +125,7 @@
     {
       "ChangeList": [
         {
-          "Id": "8982ceff-6388-4e34-bf19-0c573e39a8ee",
+          "Id": "c941c079-a79f-4f2b-a080-e77d0e54888a",
           "ApiChange": "Property",
           "ChangedApiName": "subscriptions",
           "ChangeType": "Addition",
@@ -133,7 +133,7 @@
           "Target": "list"
         }
       ],
-      "Id": "8982ceff-6388-4e34-bf19-0c573e39a8ee",
+      "Id": "c941c079-a79f-4f2b-a080-e77d0e54888a",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
@@ -143,7 +143,7 @@
     {
       "ChangeList": [
         {
-          "Id": "599effec-92db-490d-85b8-5b7c56f32009",
+          "Id": "81237144-15c6-409f-8bc3-efe213752cae",
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
@@ -151,7 +151,7 @@
           "Target": "followSite,user"
         },
         {
-          "Id": "599effec-92db-490d-85b8-5b7c56f32009",
+          "Id": "81237144-15c6-409f-8bc3-efe213752cae",
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
@@ -159,7 +159,7 @@
           "Target": "unfollowSite,user"
         }
       ],
-      "Id": "599effec-92db-490d-85b8-5b7c56f32009",
+      "Id": "81237144-15c6-409f-8bc3-efe213752cae",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
@@ -169,7 +169,7 @@
     {
       "ChangeList": [
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
@@ -177,7 +177,7 @@
           "Target": "driveItem"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
@@ -185,7 +185,7 @@
           "Target": "site"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Property",
           "ChangedApiName": "analytics",
           "ChangeType": "Addition",
@@ -193,7 +193,7 @@
           "Target": "listItem"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
@@ -201,7 +201,7 @@
           "Target": "driveItem"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
@@ -209,7 +209,7 @@
           "Target": "site"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Resource",
           "ChangedApiName": "getActivitiesByInterval",
           "ChangeType": "Addition",
@@ -217,7 +217,7 @@
           "Target": "listItem"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Resource",
           "ChangedApiName": "itemAnalytics",
           "ChangeType": "Addition",
@@ -225,7 +225,7 @@
           "Target": "itemAnalytics"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Resource",
           "ChangedApiName": "itemActivityStat",
           "ChangeType": "Addition",
@@ -233,7 +233,7 @@
           "Target": "itemActivityStat"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Resource",
           "ChangedApiName": "itemActionStat",
           "ChangeType": "Addition",
@@ -241,7 +241,7 @@
           "Target": "itemActionStat"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Resource",
           "ChangedApiName": "accessAction",
           "ChangeType": "Addition",
@@ -249,7 +249,7 @@
           "Target": "accessAction"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Resource",
           "ChangedApiName": "incompleteData",
           "ChangeType": "Addition",
@@ -257,7 +257,7 @@
           "Target": "incompleteData"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Property",
           "ChangedApiName": "access",
           "ChangeType": "Addition",
@@ -265,7 +265,7 @@
           "Target": "itemActivity"
         },
         {
-          "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+          "Id": "83975882-ac83-4904-9709-f8a210fde177",
           "ApiChange": "Property",
           "ChangedApiName": "location",
           "ChangeType": "Addition",
@@ -273,7 +273,7 @@
           "Target": "itemActivity"
         }
       ],
-      "Id": "02e3a2f9-79be-4147-99d2-a5a231e90fbe",
+      "Id": "83975882-ac83-4904-9709-f8a210fde177",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-04-01T00:00:00",
@@ -283,7 +283,7 @@
     {
       "ChangeList": [
         {
-          "Id": "e1e3d753-ac6b-46f1-ae4e-c296496bf36f",
+          "Id": "b63055e3-f7b8-4a0f-a908-27c3dd21e624",
           "ApiChange": "Resource",
           "ChangedApiName": "site",
           "ChangeType": "Change",
@@ -291,7 +291,7 @@
           "Target": ""
         }
       ],
-      "Id": "e1e3d753-ac6b-46f1-ae4e-c296496bf36f",
+      "Id": "b63055e3-f7b8-4a0f-a908-27c3dd21e624",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -301,7 +301,7 @@
     {
       "ChangeList": [
         {
-          "Id": "e1e3d753-ac6b-46f1-ae4e-c296496bf36f",
+          "Id": "b63055e3-f7b8-4a0f-a908-27c3dd21e624",
           "ApiChange": "Resource",
           "ChangedApiName": "site,siteCollection",
           "ChangeType": "Addition",
@@ -309,7 +309,7 @@
           "Target": ""
         }
       ],
-      "Id": "e1e3d753-ac6b-46f1-ae4e-c296496bf36f",
+      "Id": "b63055e3-f7b8-4a0f-a908-27c3dd21e624",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -319,7 +319,7 @@
     {
       "ChangeList": [
         {
-          "Id": "8c237ba8-7eda-482e-a997-23e47437c5ae",
+          "Id": "54c8f6cc-3d14-4c83-9d87-e93e1318f7c8",
           "ApiChange": "Property",
           "ChangedApiName": "sharepoint,sites,fieldDefinition,columnDefinition,siteCollectionId,siteId,site,sharepointIds,listItemId,listItem,sharepointIds,columnSet,listItem,fields,site",
           "ChangeType": "Change",
@@ -327,7 +327,7 @@
           "Target": ""
         },
         {
-          "Id": "8c237ba8-7eda-482e-a997-23e47437c5ae",
+          "Id": "54c8f6cc-3d14-4c83-9d87-e93e1318f7c8",
           "ApiChange": "Property",
           "ChangedApiName": "booleanColumn,calculatedColumn,choiceColumn,dateTimeColumn,lookupColumn,numberColumn,personOrGroupColumn,textColumn,displayName,site,columns,site,list,listItem,sharedDriveItem,sharepointIds,list,listItem,site,columnDefinition",
           "ChangeType": "Addition",
@@ -335,7 +335,7 @@
           "Target": ""
         }
       ],
-      "Id": "8c237ba8-7eda-482e-a997-23e47437c5ae",
+      "Id": "54c8f6cc-3d14-4c83-9d87-e93e1318f7c8",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
@@ -345,7 +345,7 @@
     {
       "ChangeList": [
         {
-          "Id": "ccda3c06-16d6-43da-9bee-794de8d60ad6",
+          "Id": "9f645b9a-c6e2-495c-8443-f7f1216750ba",
           "ApiChange": "Resource",
           "ChangedApiName": "lists by ID,path/URL",
           "ChangeType": "Addition",
@@ -353,7 +353,7 @@
           "Target": "lists by ID,path/URL"
         },
         {
-          "Id": "ccda3c06-16d6-43da-9bee-794de8d60ad6",
+          "Id": "9f645b9a-c6e2-495c-8443-f7f1216750ba",
           "ApiChange": "Resource",
           "ChangedApiName": "listing, creating, getting, and deleting instances of listItem",
           "ChangeType": "Addition",
@@ -361,7 +361,7 @@
           "Target": "listing, creating, getting, and deleting instances of listItem"
         }
       ],
-      "Id": "ccda3c06-16d6-43da-9bee-794de8d60ad6",
+      "Id": "9f645b9a-c6e2-495c-8443-f7f1216750ba",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-09-01T00:00:00",

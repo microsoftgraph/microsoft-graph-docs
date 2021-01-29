@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphMailFolder *mailFolder = [[MSGraphMailFolder alloc] init];
-[mailFolder setDisplayName:@"displayName-value"];
+[mailFolder setDisplayName:@"Clutter"];
 
 NSError *error;
 NSData *mailFolderData = [mailFolder getSerializedDataWithError:&error];

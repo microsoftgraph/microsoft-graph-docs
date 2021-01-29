@@ -51,7 +51,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Notes | OneNote | Lets users plan and organize ideas and information. | [OneNote notes overview](integrate-with-onenote.md) |
 | Personal contacts | Outlook | Contacts manager on the web, mobile and desktop devices. It is part of the Outlook messaging communication hub in Microsoft 365 that also lets users manage emails and schedule meetings.  | [Outlook personal contacts overview](outlook-contacts-concept-overview.md) |
 | Workbooks and charts | Excel | Lets users use Excel spreadsheets to do complex calculations, track, analyze, and visualize data, and generate professional reports. | [Excel workbooks and charts overview](excel-concept-overview.md) |
-| To-do tasks (preview) | To Do | Lets users manage their personal tasks across work and life. It is also integrated with Outlook, Teams, Planner and Cortana which makes it the single destination for user's personal tasks in Microsoft 365 | [To Do tasks overview](todo-concept-overview.md) |
+| To-do tasks | To Do | Lets users manage their personal tasks across work and life. It is also integrated with Outlook, Teams, Planner and Cortana which makes it the single destination for user's personal tasks in Microsoft 365 | [To Do tasks overview](todo-concept-overview.md) |
 
 ## Collaboration
 

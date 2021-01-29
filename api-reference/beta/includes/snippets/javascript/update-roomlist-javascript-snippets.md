@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const place = {
-  @odata.type: "microsoft.graph.roomlist",
+  @odata.type: "microsoft.graph.roomList",
   displayName: "Building 1",
   phone:"555-555-0100",
   address: {

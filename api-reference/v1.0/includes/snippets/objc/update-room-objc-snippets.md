@@ -15,8 +15,8 @@ MSGraphPlace *place = [[MSGraphPlace alloc] init];
 [place setNickname:@"Conf Room"];
 [place setBuilding:@"1"];
 [place setLabel:@"100"];
-[place setCapacity:@"50"];
-[place setIsWheelchairAccessible: false];
+[place setCapacity: 50];
+[place setIsWheelChairAccessible: false];
 
 NSError *error;
 NSData *placeData = [place getSerializedDataWithError:&error];

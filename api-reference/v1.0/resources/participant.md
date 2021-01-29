@@ -28,7 +28,7 @@ Represents a participant in a call.
 | Property             | Type                                     | Description                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | The participant ID.                                          |
-| info                 | [participantInfo](participantinfo.md)    | The participant of the participant.                          |
+| info                 | [participantInfo](participantinfo.md)    | Information about the participant.                          |
 | isInLobby            | Boolean                                  | `true` if the participant is in lobby.                          |
 | isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |

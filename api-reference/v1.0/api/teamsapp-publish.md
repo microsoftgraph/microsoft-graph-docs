@@ -44,7 +44,7 @@ POST /appCatalogs/teamsApps
 
 In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 
-Each app in the app catalog must have a unique manifest id.
+Each app in the app catalog must have a unique manifest ID.
 
 ## Response
 

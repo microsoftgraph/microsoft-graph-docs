@@ -32,7 +32,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
 | bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, and `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
-| capacity               | String                                            | Specifies the capacity of the room. |
+| capacity               | Int32                                             | Specifies the capacity of the room. |
 | displayName            | String                                            | The name associated with the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
 | emailAddress           | String                                            | Email address of the room. |
@@ -40,7 +40,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and optionally, altitude coordinates. |
 | id                     | String                                            | Unique identifier for the room. Read-only. |
-| isWheelchairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
+| isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
 | phone                  | String                                            | The phone number of the room. |
@@ -77,7 +77,7 @@ The following is a JSON representation of the resource.
   "audioDeviceName": "String",
   "bookingType": "String",
   "building": "String",
-  "capacity": "String",
+  "capacity": 1024,
   "displayName": "String",
   "displayDeviceName": "String",
   "emailAddress": "String",
@@ -85,7 +85,7 @@ The following is a JSON representation of the resource.
   "floorNumber": 1024,
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "id": "String (identifier)",
-  "isWheelchairAccessible": true,
+  "isWheelChairAccessible": true,
   "label": "String",
   "nickname": "String",
   "phone": "String",

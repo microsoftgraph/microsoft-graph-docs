@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphMessage *message = [[MSGraphMessage alloc] init];
-[message setIsRead:@"true"];
+[message setIsRead: true];
 
 NSError *error;
 NSData *messageData = [message getSerializedDataWithError:&error];

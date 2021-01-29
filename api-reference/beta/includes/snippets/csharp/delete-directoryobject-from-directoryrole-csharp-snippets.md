@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Directoryroles["{id}"].Members["{id}"].Reference
+await graphClient.DirectoryRoles["{id}"].Members["{id}"].Reference
 	.Request()
 	.DeleteAsync();
 

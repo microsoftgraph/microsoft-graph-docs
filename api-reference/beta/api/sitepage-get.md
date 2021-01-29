@@ -58,6 +58,10 @@ GET /sites/{site-id}/pages/{page-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-page-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-page-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -77,16 +81,16 @@ Content-type: application/json
     "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
     "createdBy": {
         "user": {
-            "email": "rahmit@microsoft.com",
+            "email": "AdeleV@contoso.com",
             "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal (ODSP)"
+            "displayName": "Adele Vance (Marketing Manager)"
         }
     },
     "lastModifiedBy": {
         "user": {
-            "email": "rahmit@microsoft.com",
+            "email": "AdeleV@contoso.com",
             "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal (ODSP)"
+            "displayName": "Adele Vance (Marketing Manager)"
         }
     },
     "parentReference": {

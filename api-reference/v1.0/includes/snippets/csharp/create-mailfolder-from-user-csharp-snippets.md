@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailFolder = new MailFolder
 {
-	DisplayName = "displayName-value"
+	DisplayName = "Clutter"
 };
 
 await graphClient.Me.MailFolders

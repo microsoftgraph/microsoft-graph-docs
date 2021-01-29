@@ -17,7 +17,10 @@ LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("owner");
 members.roles = rolesList;
 membersList.add(members);
-channel.members = membersList;
+ConversationMemberCollectionResponse conversationMemberCollectionResponse = new ConversationMemberCollectionResponse();
+conversationMemberCollectionResponse.value = membersList;
+ConversationMemberCollectionPage conversationMemberCollectionPage = new ConversationMemberCollectionPage(conversationMemberCollectionResponse, null);
+channel.members = conversationMemberCollectionPage;
 
 graphClient.teams("{group_id}").channels()
 	.buildRequest()

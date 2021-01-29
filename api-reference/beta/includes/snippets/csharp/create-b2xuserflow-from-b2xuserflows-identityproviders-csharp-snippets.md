@@ -11,7 +11,7 @@ var b2xIdentityUserFlow = new B2xIdentityUserFlow
 	Id = "Partner",
 	UserFlowType = UserFlowType.SignUpOrSignIn,
 	UserFlowTypeVersion = 1f,
-	IdentityProviders = (IB2xIdentityUserFlowIdentityProvidersCollectionPage)new List<IdentityProvider>()
+	IdentityProviders = new B2xIdentityUserFlowIdentityProvidersCollectionPage()
 	{
 		new IdentityProvider
 		{

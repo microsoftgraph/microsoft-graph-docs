@@ -20,6 +20,6 @@ const schedulingGroup = {
 };
 
 let res = await client.api('/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}')
-	.update(schedulingGroup);
+	.put(schedulingGroup);
 
 ```

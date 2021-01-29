@@ -83,7 +83,7 @@ When the last byte range of a file is received, the server will response with an
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "printjob.readwrite" } -->
 
-```
+```http
 PUT https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
 Content-Length: 10
 Content-Range: bytes 4533312-4533321/4533322

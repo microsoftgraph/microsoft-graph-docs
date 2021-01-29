@@ -3,7 +3,7 @@ title: "Yammer groups activity reports"
 description: "You can gain insights into the activity of Yammer groups in your organization and see how many Yammer groups are being created and used."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: conceptualPageType
 ---
 

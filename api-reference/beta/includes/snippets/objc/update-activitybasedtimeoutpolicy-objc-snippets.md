@@ -17,7 +17,6 @@ NSMutableArray *definitionList = [[NSMutableArray alloc] init];
 [activityBasedTimeoutPolicy setDefinition:definitionList];
 [activityBasedTimeoutPolicy setDisplayName:@"displayName-value"];
 [activityBasedTimeoutPolicy setIsOrganizationDefault: true];
-[activityBasedTimeoutPolicy setType:@"type-value"];
 
 NSError *error;
 NSData *activityBasedTimeoutPolicyData = [activityBasedTimeoutPolicy getSerializedDataWithError:&error];

@@ -26,7 +26,7 @@ var chatMessage = new ChatMessage
 			ThumbnailUrl = null
 		}
 	},
-	HostedContents = (IChatMessageHostedContentsCollectionPage)new List<ChatMessageHostedContent>()
+	HostedContents = new ChatMessageHostedContentsCollectionPage()
 	{
 		new ChatMessageHostedContent
 		{

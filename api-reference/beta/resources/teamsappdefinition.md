@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The details of one version of a [teamsApp](teamsapp.md).
+The details of a version of a [teamsApp](teamsapp.md).
 
 ## Properties
 
@@ -25,6 +25,12 @@ The details of one version of a [teamsApp](teamsapp.md).
 | azureADAppId        | string   | The WebApplicationInfo.id from the Teams App manifest. |
 | displayName         | string   | The name of the app provided by the app developer. |
 | version             | string   | The version number of the application. |
+
+## Relationships
+
+| Relationship | Type	| Description |
+|:---------------|:--------|:----------|
+|bot|[teamworkBot](teamworkbot.md) | The details of the bot specified in the Teams App manifest. |
 
 ## JSON representation
 

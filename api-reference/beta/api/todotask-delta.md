@@ -73,11 +73,7 @@ If successful, this method returns a `200 OK` response code and [todoTask](../re
 
 ## Example
 ### Request
-The following example shows how to make a single **delta** function call, and limit the maximum number of **todoTask** 
-in the response body to 2.
-
-To track changes in the **todoTask** resources in a **todoTaskList**, you would make one or more **delta** function calls to get the set
-of incremental changes since the last delta query. 
+To track changes in the **todoTask** resources in a **todoTaskList** since the last round of change tracking, you would make one or more **delta** function calls to get the set of incremental changes. The following example shows how to begin a next round of change tracking, using the URL in the `deltaLink` returned from the last **delta** function call of the last round, which contains a `deltaToken`. This **delta** function call limits the maximum number of **todoTask** in the response body to 2.
  
 
 ### HTTP Request

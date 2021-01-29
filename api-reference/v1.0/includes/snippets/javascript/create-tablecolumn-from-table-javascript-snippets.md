@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const workbookTableColumn = {
-  id: 99,
+  id: "99",
   name: "name-value",
   index: 99,
   values: "values-value"

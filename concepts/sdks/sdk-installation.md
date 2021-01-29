@@ -41,23 +41,63 @@ Add the repository and a compile dependency for microsoft-graph to your project'
 ```Gradle
 repository {
     jcenter()
+    jcenter{
+        url 'https://oss.jfrog.org/artifactory/oss-snapshot-local'
+    }
 }
 
 dependency {
     // Include the sdk as a dependency
     implementation 'com.microsoft.graph:microsoft-graph:2.+'
+    implementation 'com.microsoft.graph:microsoft-graph-auth:0.3.0'
 }
 ```
 
 ### Install the Microsoft Graph Java SDK via Maven
 
-Add the dependency in the dependencies element in pom.xml:
+Add the repositories in the `profiles` element in pom.xml:
+
+```xml
+<profiles>
+    <profile>
+        <repositories>
+            <repository>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+                <id>bintray-microsoftgraph-Maven</id>
+                <name>bintray</name>
+                <url>https://dl.bintray.com/microsoftgraph/Maven</url>
+            </repository>
+        </repositories>
+    </profile>
+    <profile>
+       <id>allow-snapshots</id>
+          <activation><activeByDefault>true</activeByDefault></activation>
+       <repositories>
+         <repository>
+           <id>snapshots-repo</id>
+           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+           <releases><enabled>false</enabled></releases>
+           <snapshots><enabled>true</enabled></snapshots>
+         </repository>
+       </repositories>
+     </profile>
+</profiles>
+```
+
+Add the dependency in the `dependencies` element in pom.xml:
 
 ```xml
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
     <version>[2.0,)</version>
+</dependency>
+<dependency>
+    <groupId>com.microsoft.graph</groupId>
+    <artifactId>microsoft-graph-auth</artifactId>
+    <version>0.3.0</version>
 </dependency>
 ```
 
@@ -71,7 +111,7 @@ The Microsoft Graph Javascript SDK is included in the following packages:
 You can use [npm](https://www.npmjs.com) to install the Microsoft Graph Javascript SDK:
 
 ```Shell
-npm install @microsoft/microsoft-graph-client
+npm install @microsoft/microsoft-graph-client --save
 npm install @microsoft/microsoft-graph-types --save-dev
 ```
 

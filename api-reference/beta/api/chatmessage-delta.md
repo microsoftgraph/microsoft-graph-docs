@@ -111,7 +111,7 @@ The request specifies the optional request header, odata.top, returning 2 events
   "blockType": "request",
   "name": "get_channel_messages_delta_1"
 }-->
-```
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$top=2
 ```
 # [C#](#tab/csharp)
@@ -124,6 +124,10 @@ GET /teams/{id}/channels/{id}/messages/delta?$top=2
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-delta-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-channel-messages-delta-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,7 +155,7 @@ Content-type: application/json
 		{
 			"id": "id-value",
 			"replyToId": "id-value",
-			"from" : {
+			"from": {
 				"user": { 
 					"id": "id-value",
 					"displayName": "John Doe"
@@ -174,7 +178,7 @@ Content-type: application/json
 		{
 			"id": "id-value",
 			"replyToId": "id-value",
-			"from" : {
+			"from": {
 				"user": { 
 					"id": "id-value",
 					"displayName": "John Doe"
@@ -208,7 +212,7 @@ The second request specifies the `nextLink` URL returned from the previous respo
   "blockType": "request",
   "name": "get_channel_messages_delta_2"
 }-->
-```
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d
 ```
 # [C#](#tab/csharp)
@@ -221,6 +225,10 @@ GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUz
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-delta-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-channel-messages-delta-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -248,7 +256,7 @@ Content-type: application/json
 		{
 			"id": "id-value",
 			"replyToId": "id-value",
-			"from" : {
+			"from": {
 				"user": { 
 					"id": "id-value",
 					"displayName": "John Doe"
@@ -271,7 +279,7 @@ Content-type: application/json
 		{
 			"id": "id-value",
 			"replyToId": "id-value",
-			"from" : {
+			"from": {
 				"user": { 
 					"id": "id-value",
 					"displayName": "John Doe"
@@ -305,7 +313,7 @@ The third request continues to use the latest `nextLink` returned from the last 
   "blockType": "request",
   "name": "get_channel_messages_delta_3"
 }-->
-```
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA%3d
 ```
 # [C#](#tab/csharp)
@@ -318,6 +326,10 @@ GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcy
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-delta-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-channel-messages-delta-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -345,7 +357,7 @@ Content-type: application/json
 		{
 			"id": "id-value",
 			"replyToId": "id-value",
-			"from" : {
+			"from": {
 				"user": { 
 					"id": "id-value",
 					"displayName": "John Doe"
@@ -381,7 +393,7 @@ Using the `deltaLink` from the last request in the last round, you will be able 
   "blockType": "request",
   "name": "get_channel_messages_delta_4"
 }-->
-```
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc1ODA0OTAmcGFnZVNpemU9MjA%3d
 ```
 # [C#](#tab/csharp)
@@ -394,6 +406,10 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-delta-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-channel-messages-delta-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -419,7 +435,7 @@ Content-type: application/json
 		{
 			"id": "id-value",
 			"replyToId": "id-value",
-			"from" : {
+			"from": {
 				"user": { 
 					"id": "id-value",
 					"displayName": "John Doe"

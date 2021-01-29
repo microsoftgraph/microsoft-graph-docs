@@ -22,7 +22,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| User.Read |
+|Delegated (work or school account)| Reports.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
@@ -72,7 +72,7 @@ Content-length: 251
 
 {
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "userPrincipalName": "username@microsoft.com",
+  "userPrincipalName": "username@contoso.com",
   "usageDate": "2020-02-04T00:00:00.0000000Z",
   "completedBlackAndWhiteJobCount": 42,
   "completedColorJobCount": 0,

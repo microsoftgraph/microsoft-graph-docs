@@ -28,4 +28,3 @@ The classes of apps that are allowed to click-to-open a phone number, for making
 
 
 
-

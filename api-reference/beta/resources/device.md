@@ -29,6 +29,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a member of. This operation is transitive. |
 |[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
 |[List registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
+|[List usageRights](../api/device-list-usagerights.md) | [usageRight](usageright.md) collection | Get a collection of usage rights granted to the device.|
 |[checkMemberObjects](../api/device-checkmemberobjects.md) | String collection | Check for membership in a list of groups, directory role, or administrative unit objects. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
@@ -60,6 +61,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |physicalIds|String collection| For internal use only. Not nullable. |
 |profileType|String|The profile type of the device. Possible values:<br />**RegisteredDevice** (default)<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**IoT**|
 |systemLabels|String collection| List of labels applied to the device by the system. |
+|hostNames|String collection| List of hostNames for the device.|
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: <br />**Workplace** - indicates *bring your own personal devices*<br />**AzureAd** - Cloud only joined devices<br />**ServerAd** - on-premises domain joined devices joined to Azure AD. For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
 |Name| String | Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |Status | String| Device is online or offline. Only returned if user signs in with a Microsoft account as part of Project Rome. |
@@ -78,6 +80,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |registeredOwners|[directoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
 |registeredUsers|[directoryObject](directoryobject.md) collection|Users that are registered users of the device. Read-only. Nullable.|
 |commands | [command](command.md) collection | Set of commands sent to this device|
+|usageRight|[usageRight](usageright.md) collection|Represents the usage rights a device has been granted. |
 
 ## JSON representation
 
@@ -114,6 +117,7 @@ The following is a JSON representation of the resource.
   "physicalIds": ["string"],
   "profileType": "string",
   "systemLabels": ["string"],
+  "hostNames" : ["string"],
   "trustType": "string",
   "Name": "string",
   "Status": "string",

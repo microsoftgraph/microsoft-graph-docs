@@ -30,8 +30,7 @@ The following is a JSON representation of userSet.  Note that a userSet is an ab
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.userSet",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.userSet"
 }-->
 
 ```json

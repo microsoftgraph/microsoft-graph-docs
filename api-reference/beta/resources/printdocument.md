@@ -19,7 +19,7 @@ Represents a document being printed.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create upload session](../api/printdocument-get-file.md) | [uploadSession](uploadsession.md) | Create an upload session to iteratively upload ranges of binary file of **printDocument**. |
+| [Create upload session](../api/printdocument-createuploadsession.md) | [uploadSession](uploadsession.md) | Create an upload session to iteratively upload ranges of binary file of the **printDocument**. |
 | [Download binary file](../api/printdocument-get-file.md) | Download Url | Download the binary file associated with the **printDocument**. |
 
 ## Properties

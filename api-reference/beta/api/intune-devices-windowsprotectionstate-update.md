@@ -66,6 +66,9 @@ The following table shows the properties that are required when you create the [
 |lastQuickScanSignatureVersion|String|Last quick scan signature version|
 |lastFullScanSignatureVersion|String|Last full scan signature version|
 |lastReportedDateTime|DateTimeOffset|Last device health status reported time|
+|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Product Status of Windows Defender Antivirus. Possible values are: `noStatus`, `serviceNotRunning`, `serviceStartedWithoutMalwareProtection`, `pendingFullScanDueToThreatAction`, `pendingRebootDueToThreatAction`, `pendingManualStepsDueToThreatAction`, `avSignaturesOutOfDate`, `asSignaturesOutOfDate`, `noQuickScanHappenedForSpecifiedPeriod`, `noFullScanHappenedForSpecifiedPeriod`, `systemInitiatedScanInProgress`, `systemInitiatedCleanInProgress`, `samplesPendingSubmission`, `productRunningInEvaluationMode`, `productRunningInNonGenuineMode`, `productExpired`, `offlineScanRequired`, `serviceShutdownAsPartOfSystemShutdown`, `threatRemediationFailedCritically`, `threatRemediationFailedNonCritically`, `noStatusFlagsSet`, `platformOutOfDate`, `platformUpdateInProgress`, `platformAboutToBeOutdated`, `signatureOrPlatformEndOfLifeIsPastOrIsImpending`, `windowsSModeSignaturesInUseOnNonWin10SInstall`.|
+|isVirtualMachine|Boolean|Indicates whether the device is a virtual machine.|
+|tamperProtectionEnabled|Boolean|Indicates whether the Windows Defender tamper protection feature is enabled.|
 
 
 
@@ -79,7 +82,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsProtectionState
 Content-type: application/json
-Content-length: 865
+Content-length: 971
 
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
@@ -99,7 +102,10 @@ Content-length: 865
   "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
   "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
   "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "productStatus": "serviceNotRunning",
+  "isVirtualMachine": true,
+  "tamperProtectionEnabled": true
 }
 ```
 
@@ -108,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 914
+Content-Length: 1020
 
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
@@ -129,10 +135,12 @@ Content-Length: 914
   "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
   "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
   "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "productStatus": "serviceNotRunning",
+  "isVirtualMachine": true,
+  "tamperProtectionEnabled": true
 }
 ```
-
 
 
 

@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-int startDateTime = 2/6/2020 1:49:21 AM;
+Calendar startDateTime = CalendarSerializer.deserialize("02/06/2020 01:49:21");
 
-int endDateTime = 2/6/2020 2:19:21 AM;
+Calendar endDateTime = CalendarSerializer.deserialize("02/06/2020 02:19:21");
 
 String subject = "Create a meeting with customId provided";
 

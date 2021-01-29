@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 WorkbookRangeFont workbookRangeFont = new WorkbookRangeFont();
 workbookRangeFont.underline = "Single";
 workbookRangeFont.color = "#FFFFFF";
-workbookRangeFont.size = 26;
+workbookRangeFont.size = 26d;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
 	.range("$C$1").format().font()

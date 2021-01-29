@@ -108,7 +108,7 @@ The following examples show how to use this API.
 
 ### Example 1: Administrator assigns user to a role
 
-In this example, an administrator assigns user nawu@fimdev.net to the Billing Reader role.
+In this example, an administrator assigns user nawu@contoso.com to the Billing Reader role.
 
  >**Note:** In addition to the permission, this example requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 
@@ -159,6 +159,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -218,7 +222,7 @@ Content-type: application/json
 
 ### Example 2: User activates eligible role
 
-In this example, the user nawu@fimdev.net activates the eligible Billing Reader role.
+In this example, the user nawu@contoso.com activates the eligible Billing Reader role.
 
 | Property         | Type                                                     | Required                 | Value |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
@@ -321,7 +325,7 @@ Content-type: application/json
 
 ### Example 3: User deactivates an assigned role
 
-In this example, the user nawu@fimdev.net deactivates the active Billing Reader role.
+In this example, the user nawu@contoso.com deactivates the active Billing Reader role.
 
 | Property         | Type                                                     | Required | Value |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
@@ -389,7 +393,7 @@ Content-type: application/json
 
 ### Example 4: Administrator removes user from a role
 
-In this example, an administrator removes the user nawu@fimdev.net from the Billing Reader role.
+In this example, an administrator removes the user nawu@contoso.com from the Billing Reader role.
 
  >**Note:** In addition to the permission, this example requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 
@@ -457,7 +461,7 @@ Content-type: application/json
 
 ### Example 5: Administrator updates role assignment
 
-In this example, administrators update the role assignment for the user nawu@fimdev.net to Owner.
+In this example, administrators update the role assignment for the user nawu@contoso.com to Owner.
 
  >**Note:** In addition to the permission, this example requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.
 

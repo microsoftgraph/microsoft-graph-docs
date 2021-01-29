@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var ediscoveryCase = new EdiscoveryCase
+var @case = new Case
 {
 	DisplayName = "My Case 1"
 };
 
 await graphClient.Compliance.Ediscovery.Cases
 	.Request()
-	.AddAsync(ediscoveryCase);
+	.AddAsync(@case);
 
 ```

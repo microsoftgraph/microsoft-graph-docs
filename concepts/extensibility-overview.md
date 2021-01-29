@@ -35,8 +35,8 @@ The following table lists the resources that support open and schema extensions,
 | [Organization](/graph/api/resources/organization?view=graph-rest-1.0) | GA | GA |
 | [Personal contact](/graph/api/resources/contact?view=graph-rest-1.0)| GA | GA |
 | [User](/graph/api/resources/user?view=graph-rest-1.0) | GA | GA |
-| [Task](/graph/api/resources/todotask?view=graph-rest-beta) | Preview only | Preview only |
-| [Task list](/graph/api/resources/todotasklist?view=graph-rest-beta) | Preview only | Preview only |
+| [Task](/graph/api/resources/todotask?view=graph-rest-beta) | GA | GA |
+| [Task list](/graph/api/resources/todotasklist?view=graph-rest-beta) | GA | GA |
 
 You can use extensions on all these resources when signed in with a work or school account. In addition, you can use extensions on the **event**, **post**, **group**, **message**, **contact**, and **user** resources when signed in with a personal account.
 

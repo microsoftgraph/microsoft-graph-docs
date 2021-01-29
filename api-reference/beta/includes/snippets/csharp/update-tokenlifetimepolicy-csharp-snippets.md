@@ -13,8 +13,7 @@ var tokenLifetimePolicy = new TokenLifetimePolicy
 		"definition-value"
 	},
 	DisplayName = "displayName-value",
-	IsOrganizationDefault = true,
-	Type = "type-value"
+	IsOrganizationDefault = true
 };
 
 await graphClient.Policies.TokenLifetimePolicies["{id}"]

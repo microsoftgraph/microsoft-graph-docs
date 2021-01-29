@@ -52,9 +52,17 @@ In the request body, supply the values for relevant fields that should be update
 Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 For best performance you shouldn't include existing values that haven't changed.
 
-| Property     | Type   | Description                   |
-|:-------------|:-------|:------------------------------|
-| **roles**    | String collection | An array of permission types. |
+The following properties on these permission types can be modified.
+
+| Permission Type        | Property | Type              | Description                   |
+|:-----------------------|:---------|:------------------|:------------------------------|
+| User                   | roles    | String collection | An array of permission types. |
+| Anonymous Sharing Link | expirationDateTime | DateTimeOffset | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset for the expiration time of the permission. |
+
+### Remarks
+Unsupported permission modifications include the following:
+- Organizational sharing links
+- People sharing links
 
 ## Response
 
@@ -86,6 +94,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

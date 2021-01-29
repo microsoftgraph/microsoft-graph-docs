@@ -13,8 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get user's manager. Returns the user or contact assigned as the user's manager.
+Returns the user or organizational contact assigned as the user's manager. Optionally, you can expand the manager's chain up to the root node.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -26,56 +28,152 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
+Get the manager:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
+Get the management chain:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me?$expand=manager
+GET /users?$expand=manager($levels=n)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
+```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.  
+
+If your request includes the `$expand=manager($levels=n)` parameter to get the manager's chain, you must also include the following:
+
+- `$count=true` query string parameter
+- `ConsistencyLevel=eventual` request header
+
+>**Note:** the `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
+> When the `$level` parameter is not specified, only the immediate manager is returned.  
+> You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`
+
 ## Request headers
+
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
+| ConsistencyLevel | eventual. Required when the request includes the `$expand=manager($levels=max)` parameter. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
-## Example
-##### Request
-Here is an example of the request.
-<!-- { "blockType": "ignored" } -->
-```http
+
+## Examples
+
+### Example 1: Get manager
+
+The following example shows a request to get the manager.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_manager"
+}-->
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
-##### Response
-Here is an example of the response.
-<!-- { "blockType": "ignored" } -->
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+>**Note**: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": false
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "objectType": "User",
-  "id": "111048d2-2761-4347-b978-07354283363b",
-  "accountEnabled": true,
-  "city": "San Diego",
-  "country": "United States",
-  "department": "Sales & Marketing",
+  "id": "<user-id>",
   "displayName": "Sara Davis",
-  "givenName": "Sara",
   "jobTitle": "Finance VP",
   "mail": "SaraD@contoso.onmicrosoft.com",
-  "mailNickname": "SaraD",
-  "state": "CA",
-  "streetAddress": "9256 Towne Center Dr., Suite 400",
-  "surname": "Davis",
-  "usageLocation": "US",
   "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
+}
+```
+
+### Example 2: Get manager chain up to the root level
+
+The following example shows a request to get the manager chain up to the root level.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_transitive_managers"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+The following is an example of the response. Transitive managers are displayed hierarchically.
+
+>**Note**: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": false
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "<user1-id>",
+    "displayName": "Individual Contributor",
+    "manager": {
+        "id": "<manager1-id>",
+        "displayName": "Manager 1",
+        "manager": {
+            "id": "<manager2-id>",
+            "displayName": "Manager 2",
+            "manager": {
+                "id": "<manager3-id>",
+                "displayName": "Manager 3"
+            }
+        }
+    }
 }
 ```
 

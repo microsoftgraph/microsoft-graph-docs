@@ -6,16 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var teamsAppInstallation = new TeamsAppInstallation
-{
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"teamsApp@odata.bind", "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"}
-	}
-};
-
-await graphClient.Teams["{id}"].InstalledApps
+var team = await graphClient.Teams["{id}"]
 	.Request()
-	.AddAsync(teamsAppInstallation);
+	.GetAsync();
 
 ```

@@ -77,8 +77,8 @@ Follow the steps in this article to create and/or grant an application access po
 ## See also
 
 - [Permissions reference](permissions-reference.md)
-- [New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)
-- [Grant-ApplicationAccessPolicy](/powershell/module/skype/grant-csapplicationaccesspolicy)
-- [Get-ApplicationAccessPolicy](/powershell/module/skype/get-csapplicationaccesspolicy)
-- [Set-ApplicationAccessPolicy](/powershell/module/skype/set-csapplicationaccesspolicy)
-- [Remove-ApplicationAccessPolicy](/powershell/module/skype/remove-csapplicationaccesspolicy)
+- [New-CsApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)
+- [Grant-CsApplicationAccessPolicy](/powershell/module/skype/grant-csapplicationaccesspolicy)
+- [Get-CsApplicationAccessPolicy](/powershell/module/skype/get-csapplicationaccesspolicy)
+- [Set-CsApplicationAccessPolicy](/powershell/module/skype/set-csapplicationaccesspolicy)
+- [Remove-CsApplicationAccessPolicy](/powershell/module/skype/remove-csapplicationaccesspolicy)

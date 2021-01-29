@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: "The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint."
+description: "The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint."
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
+The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
 
 OneDrive users will always have at least one drive available, their default drive.
 Users without a OneDrive license may not have a default drive available.
@@ -108,7 +108,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | [Get root folder for user's default Drive][item-get]       | `GET /drive/root`           |
 | [List children under the Drive][item-children]             | `GET /drive/root/children`  |
 | [List changes for all Items in the Drive][item-changes]    | `GET /drive/root/delta`     |
-| [List user's followed driveItems][drive-following]         | `Get /drive/followed`       |
+| [List user's followed driveItems][drive-following]         | `Get /drive/following`       |
 | [Search for Items in the Drive][item-search]               | `GET /drive/root/search`    |
 | [Access special folder](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 

@@ -10,7 +10,7 @@ var agreement = new Agreement
 {
 	DisplayName = "MSGraph Sample",
 	IsViewingBeforeAcceptanceRequired = true,
-	Files = (IAgreementFilesCollectionPage)new List<AgreementFileLocalization>()
+	Files = new AgreementFilesCollectionPage()
 	{
 		new AgreementFileLocalization
 		{

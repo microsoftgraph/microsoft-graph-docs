@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| In teams: TeamMember.ReadWrite.All. In channels: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All. |
+|Delegated (work or school account)| In teams: TeamMember.ReadWrite.All<br/>In channels: ChannelMember.ReadWrite.All  |
 |Delegated (personal Microsoft account)|Not supported|
-|Application| In teams: TeamMember.ReadWrite.All. In channels:  ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All. |
+|Application| In teams: TeamMember.ReadWrite.All<br/>In channels:  ChannelMember.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->

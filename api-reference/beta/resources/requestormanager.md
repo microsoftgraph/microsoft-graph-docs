@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# requestoManager complex type
+# requestorManager complex type
 
 Namespace: microsoft.graph
 
@@ -23,6 +23,8 @@ It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#mic
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | isBackup | Boolean | For a manager in an approval stage, indicates whether the manager is a backup fallback approver. |
+|managerLevel | Int32 | The hierarchical level of the manager with respect to the requestor. For example, the direct manager of a requestor would have a managerLevel of 1, while the manager of the requestor's manager would have a managerLevel of 2. Default value for managerLevel is 1. Possible values for this property range from 1 to 2. |
+
 
 ## JSON representation
 
@@ -39,7 +41,8 @@ The following is a JSON representation of the type.
 
 ```json
 {
-  "isBackup": false
+  "isBackup": false,
+  "managerLevel": 1
 }
 ```
 

@@ -9,11 +9,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversation = new Conversation
 {
 	Topic = "Does anyone have a second?",
-	Threads = (IConversationThreadsCollectionPage)new List<ConversationThread>()
+	Threads = new ConversationThreadsCollectionPage()
 	{
 		new ConversationThread
 		{
-			Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
+			Posts = new ConversationThreadPostsCollectionPage()
 			{
 				new Post
 				{
@@ -22,7 +22,7 @@ var conversation = new Conversation
 						ContentType = BodyType.Html,
 						Content = "This is urgent!"
 					},
-					Extensions = (IPostExtensionsCollectionPage)new List<Extension>()
+					Extensions = new PostExtensionsCollectionPage()
 					{
 						new OpenTypeExtension
 						{

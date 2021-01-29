@@ -12,22 +12,14 @@ Use the Microsoft Search API to search content stored in OneDrive or SharePoint:
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-The Search API lets you scope the types of content to retrieve in OneDrive or SharePoint by specifying the **entityTypes** property on the [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true). The later part of this article shows a few examples:
-
-- [Example 1: Search files](#example-1-search-files)
-- [Example 2: Search list items](#example-2-search-list-items)
-- [Example 3: Search sites](#example-3-search-sites)
-- [Example 4: Search all content in OneDrive and SharePoint](#example-4-search-all-content-in-onedrive-and-sharepoint)
-- [Example 5: Use filters in search queries](#example-5-use-filters-in-search-queries)
-- [Example 6: Specify select properties](#example-6-specify-select-properties)
-
+The Search API lets you scope the types of content to retrieve in OneDrive or SharePoint by specifying the **entityTypes** property on the [searchRequest](/graph/api/resources/searchRequest). This article describes some examples.
 
 ## Example 1: Search files
 
 ### Request
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST /search/query
 Content-Type: application/json
 
 {
@@ -51,7 +43,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -84,8 +76,13 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
-                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
-                }
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b",
+                  "sharepointIds": {
+                      "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                      "listItemId": "1027",
+                      "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                  }
+                },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
                   "lastModifiedDateTime": "2019-06-10T06:37:43Z"
@@ -129,7 +126,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -149,7 +146,11 @@ Content-type: application/json
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "lastModifiedDateTime": "2019-06-10T06:37:43Z",
                 "name": "web_part_test_long Notebook",
-                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/Lists/Issue tracker list/DispForm.aspx?ID=1"
+                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/Lists/Issue tracker list/DispForm.aspx?ID=1",
+                "sharepointIds": {
+                    "listId": "33498de0-d695-4d23-ac26-e1bf95a3206e",
+                    "listItemId": "13"
+                },
                 "createdBy": {
                  "user": {
                    "displayName": "Michaelvincent Santos;Provisioning User"
@@ -161,6 +162,9 @@ Content-type: application/json
                   }
                 },
                 "parentReference": {
+                  "sharepointIds":{
+                    "listId":"da61a2b0-4120-4a3f-812b-0fc0d79bf16b"  
+                  },
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
                 }
               }
@@ -202,7 +206,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -265,7 +269,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -299,8 +303,13 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
-                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b”
-                }
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b",
+                  "sharepointIds": {
+                      "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                      "listItemId": "1027",
+                      "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                  }
+                },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
                   "lastModifiedDateTime": "2019-06-10T06:37:43Z"
@@ -320,7 +329,7 @@ Content-type: application/json
                 "lastModifiedDateTime": "2020-07-08T18:17:59+00:00",
                 "name": "Shared Documents",
                 "parentReference": {
-                "siteId": "microsoft.sharepoint-df.com,220fd155-0ea2-477c-a816-5c08fdc45f5d,fad16ab6-0736-4fbc-a053-087296b47c99"
+                  "siteId": "microsoft.sharepoint-df.com,220fd155-0ea2-477c-a816-5c08fdc45f5d,fad16ab6-0736-4fbc-a053-087296b47c99"
                 },
                 "webUrl": "https://microsoft.sharepoint-df.com/teams/spoppe/collab/TaskBoard/Contoso/Shared Documents/Forms/AllItems.aspx"
               }
@@ -346,7 +355,7 @@ In order to be valid, properties restriction should specify a valid, queryable m
 
 ## Example 6: Specify select properties
 
-You can specify the fields you want back in the response, as part of the **fields** sub-property of a [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
+You can specify the fields you want back in the response, as part of the **fields** sub-property of a [searchHit](/graph/api/resources/searchhit) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
 
 Note that property selection is only available for **listItem** since this is the only SharePoint entity in Microsoft Graph that supports custom properties.
 
@@ -383,7 +392,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -402,6 +411,10 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.listItem",
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
+                "sharepointIds": {
+                    "listId": "33498de0-d695-4d23-ac26-e1bf95a3206e",
+                    "listItemId": "13"
+                },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
                 },
@@ -425,4 +438,4 @@ When searching for **drive**, you need to include in the **queryString** a term 
 
 ## Next steps
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)

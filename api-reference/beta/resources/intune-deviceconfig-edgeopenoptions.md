@@ -29,4 +29,3 @@ Possible values for the EdgeOpensWith setting.
 
 
 
-

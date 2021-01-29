@@ -208,12 +208,12 @@ Content-type: application/json
 
 Use the response from the previous call to retrieve and save the application object ID and service principal object ID.
 
-```
-"application": {
-        "objectId": "cbc071a6-0fa5-4859-8g55-e983ef63df63"
-}
-"servicePrincipal": {
-        "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
+```json
+"application":{
+  "objectId":"cbc071a6-0fa5-4859-8g55-e983ef63df63"
+},
+"servicePrincipal":{
+  "objectId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
 ```
 ### Set single sign-on mode
@@ -814,6 +814,11 @@ For more information, see [appRoleAssignment](/graph/api/resources/approleassign
 Use the following URL to get the Azure AD SAML metadata for the specific configured application. The metadata contains information such as the signing certificate, Azure AD entityID, and Azure AD SingleSignOnService, among others.
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
+
+> [!NOTE]
+> The application should be capable of parsing the byte order mark present in the federation metadata XML data rendered using `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`. Byte order mark is represented as a nonprintable ASCII character `»¿` and in Hex it is represented as `EF BB BF` when reviewing the XML data.
+
+ 
 
 ## Next steps
 - [Use Microsoft Graph APIs to configure user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api)

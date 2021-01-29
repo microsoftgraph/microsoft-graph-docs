@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workforceIntegrations = new WorkforceIntegration
+var workforceIntegration = new WorkforceIntegration
 {
 	DisplayName = "displayName-value",
 	ApiVersion = 99,
@@ -20,8 +20,8 @@ var workforceIntegrations = new WorkforceIntegration
 	Supports = WorkforceIntegrationSupportedEntities.None
 };
 
-await graphClient.Teamwork.WorkforceIntegrations
+await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegrationId}"]
 	.Request()
-	.UpdateAsync(workforceIntegrations);
+	.UpdateAsync(workforceIntegration);
 
 ```

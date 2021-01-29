@@ -2,7 +2,7 @@
 title: "signIn resource type"
 doc_type: resourcePageType
 description: "Provides details about user or application sign-in activity in your directory."
-author: "khotz"
+author: "besiler"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides details about user or application sign-in activity in your directory. 
+Provides details about user or application sign-in activity in your directory. You must have an Azure AD Premium P1 or P2 license to download sign-in logs using the Microsoft Graph API.
 
 ## Methods
 
@@ -56,7 +56,7 @@ Provides details about user or application sign-in activity in your directory.
 |riskState|riskState|The risk state of a risky user, sign-in, or a risk event. Possible values: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, or `unknownFutureValue`.|
 |servicePrincipalId|String|The application identifier used for sign-in. This field is populated when you are signing in using an application.|
 |servicePrincipalName|String|The application name used for sign-in. This field is populated when you are signing in using an application.|
-|status|[signInStatus](signinstatus.md)|The sign-in status. Possible values: `Success` or `Failure`.|
+|status|[signInStatus](signinstatus.md)|The sign-in status. Includes the error code and description of the error (in case of a sign-in failure).|
 |tokenIssuerName|String|The name of the identity provider. For example, `sts.microsoft.com`.|
 |tokenIssuerType|String|The type of identity provider. Possible values: `AzureAD`, `ADFederationServices`, or `UnknownFutureValue`.|
 |userAgent|String|The user agent information related to sign-in.|

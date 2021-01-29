@@ -15,8 +15,8 @@ const place = {
   nickname: "Conf Room",
   building: "1",
   label: "100",
-  capacity: "50",
-  isWheelchairAccessible: false
+  capacity: 50,
+  isWheelChairAccessible: false
 };
 
 let res = await client.api('/places/cf100@contoso.com')

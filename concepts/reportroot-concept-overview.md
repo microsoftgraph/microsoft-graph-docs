@@ -3,7 +3,7 @@ title: "Microsoft Graph reports API overview"
 description: "The reports API in Microsoft Graph enables understanding of application and tenant resource activity."
 localization_priority: Priority
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 ms.custom: scenarios:getting-started
 ---
 

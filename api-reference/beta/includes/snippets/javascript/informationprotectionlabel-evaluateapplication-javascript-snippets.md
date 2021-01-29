@@ -69,7 +69,7 @@ const informationProtectionAction = {
   }
 };
 
-let res = await client.api('/informationprotection/policy/labels/evaluateApplication')
+let res = await client.api('/informationProtection/policy/labels/evaluateApplication')
 	.version('beta')
 	.post(informationProtectionAction);
 

@@ -11,14 +11,14 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphEdiscoveryCase *ediscoveryCase = [[MSGraphEdiscoveryCase alloc] init];
-[ediscoveryCase setDisplayName:@"My Case 1 - Renamed"];
-[ediscoveryCase setDescription:@"Updated description"];
-[ediscoveryCase setExternalId:@"Updated externalId"];
+MSGraphCase *case = [[MSGraphCase alloc] init];
+[case setDisplayName:@"My Case 1 - Renamed"];
+[case setDescription:@"Updated description"];
+[case setExternalId:@"Updated externalId"];
 
 NSError *error;
-NSData *ediscoveryCaseData = [ediscoveryCase getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:ediscoveryCaseData];
+NSData *caseData = [case getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:caseData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

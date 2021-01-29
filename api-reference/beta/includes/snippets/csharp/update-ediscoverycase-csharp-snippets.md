@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var ediscoveryCase = new EdiscoveryCase
+var @case = new Case
 {
 	DisplayName = "My Case 1 - Renamed",
 	Description = "Updated description",
@@ -15,6 +15,6 @@ var ediscoveryCase = new EdiscoveryCase
 
 await graphClient.Compliance.Ediscovery.Cases["061b9a92-8926-4bd9-b41d-abf35edc7583"]
 	.Request()
-	.UpdateAsync(ediscoveryCase);
+	.UpdateAsync(@case);
 
 ```

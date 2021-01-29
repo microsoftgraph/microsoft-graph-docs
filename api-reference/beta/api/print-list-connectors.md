@@ -22,7 +22,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| User.Read |
+|Delegated (work or school account)| PrintConnector.Read.All, PrintConnector.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application| Not Supported. |
 
@@ -36,7 +36,7 @@ GET /print/connectors
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Exceptions
-Some operators are not supported: `$count`, `$orderby`, `$search`, `$filter`.
+Some operators are not supported: `$count`, `$search`, `$filter`.
 
 ## Request headers
 | Name      |Description|
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/print/connectors
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-connectors-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-connectors-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

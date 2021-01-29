@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/connections/contosohr/operations/3ed1595a-4
 [!INCLUDE [sample-code](../includes/snippets/objc/get-connectionoperation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-connectionoperation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

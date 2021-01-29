@@ -1,43 +1,652 @@
 {
   "changelog": [
-     {
+    {
       "ChangeList": [
         {
-          "Id": "02e69865-7b7d-4b24-986c-78b906237f31",
-          "ApiChange": "Method",
-          "ChangedApiName": "completeMigration",
+          "Id": "a38f6f66-acdd-495e-8b76-9f32878e2c0a",
+          "ApiChange": "method",
+          "ChangedApiName": "Remove chat member",
           "ChangeType": "Addition",
-          "Description": "Added support for **completeMigration** to the [channel](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta) and [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta) resources.",
-          "Target": "channel,team"
-        },
-        {
-          "Id": "2294de07-b926-4fc7-87d5-3d1cf4e55d57",
-          "ApiChange": "Property",
-          "ChangedApiName": "teamCreationMode",
-          "ChangeType": "Addition",
-          "Description": "Added the **teamCreationMode** property to the  [team](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta) resource.",
-          "Target": "team"
+          "Description": "Added the [Remove member from chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-members?view=graph-rest-beta) method.",
+          "Target": "Chat"
         }
       ],
-      "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
+      "Id": "a38f6f66-acdd-495e-8b76-9f32878e2c0a",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-27T00:00:00",
+      "CreatedDateTime": "2020-12-17T21:46:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "e592c67e-815f-44f6-8002-fe55a0c120fd",
+          "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
           "ApiChange": "Property",
-          "ChangedApiName": "channelCreationMode",
+          "ChangedApiName": "chatType",
           "ChangeType": "Addition",
-          "Description": "Added the **channelCreationMode** property to the [channel](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the **chatType** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "13c8a17d-1e1e-11eb-aa81-6d719f0c7da5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "chatType",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatType** enumeration type.",
+          "Target": "chatType"
+        },
+        {
+          "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
+          "ApiChange": "method",
+          "ChangedApiName": "Create chat, Update chat",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource: <ul><li>[Create chat](https://docs.microsoft.com/en-us/graph/api/chat-post?view=graph-rest-beta&preserve-view=true)</li><li>[Update chat](https://docs.microsoft.com/en-us/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true)</li></ul>.",
+          "Target": "Create chat, Update chat"
+        }
+      ],
+      "Id": "13c3dcc8-1e1e-11eb-aa81-6d719f0c7da5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-16T21:46:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "df2ac698-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to [aadUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/aadUserConversationMember?view=graph-rest-beta) resource",
+          "Target": "aadUserConversationMember"
+        },
+        {
+          "Id": "df2d2808-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "visibleHistoryStartDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **visibleHistoryStartDateTime** property to [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationMember?view=graph-rest-beta) resource",
+          "Target": "conversationMember"
+        },
+        {
+          "Id": "df2d2808-353d-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "method",
+          "ChangedApiName": "Add chat member, Delete chat member",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource: <ul><li>[Add chat member](https://docs.microsoft.com/en-us/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true)</li><li>[Delete chat member](https://docs.microsoft.com/en-us/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true)</li></ul>",
+          "Target": "Add chat member, Delete chat member"
+        }
+      ],
+      "Id": "df28662b-353d-11eb-9836-6aeb5ee7dda6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-03T08:02:21.817Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a659bbcb-28bb-11eb-9746-158983535857",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "bot",
+          "ChangeType": "Addition",
+          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "a65c2d4b-28bb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkBot",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource type.",
+          "Target": "teamworkBot"
+        }
+      ],
+      "Id": "a6575ac5-28bb-11eb-9746-158983535857",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-14T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "31b49e7e-38e9-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "moderationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **moderationSettings** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "31c7b2f0-38e9-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelModerationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelModerationSettings](https://docs.microsoft.com/en-us/graph/api/resources/channelModerationSettings?view=graph-rest-beta) resource type.",
+          "Target": "channelModerationSettings"
+        },
+        {
+          "Id": "31ced9c7-38e9-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "replyRestriction",
+          "ChangeType": "Addition",
+          "Description": "Added the **replyRestriction** enumeration type.",
+          "Target": "replyRestriction"
+        },
+        {
+          "Id": "31d13b58-38e9-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "userNewMessageRestriction",
+          "ChangeType": "Addition",
+          "Description": "Added the **userNewMessageRestriction** enumeration type.",
+          "Target": "userNewMessageRestriction"
+        }
+      ],
+      "Id": "31b23bd2-38e9-11eb-9836-6aeb5ee7dda6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-16T00:06:17.723Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicInnerError",
+          "ChangeType": "Addition",
+          "Description": "Added the [PublicInnerError](https://docs.microsoft.com/en-us/graph/resources/publicinnererror?view=graph-rest-beta) resource.",
+          "Target": "publicInnerError"
+        },
+        {
+          "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicErrorDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [PublicErrorDetail](https://docs.microsoft.com/en-us/graph/resources/publicerrordetail?view=graph-rest-beta) resource.",
+          "Target": "publicErrorDetail"
+        },
+        {
+          "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aadUserConversationMemberResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [AadUserConversationMemberResult](https://docs.microsoft.com/en-us/graph/resources/aaduserconversationmemberresult?view=graph-rest-beta) method.",
+          "Target": "aadUserConversationMemberResult"
+        },
+        {
+          "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionresultpart",
+          "ChangeType": "Addition",
+          "Description": "Added the [ActionResultPart](https://docs.microsoft.com/en-us/graph/resources/actionresultpart?view=graph-rest-beta) resource.",
+          "Target": "actionresultpart"
+        },
+        {
+          "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+          "ApiChange": "Method",
+          "ChangedApiName": "conversationmembers-add",
+          "ChangeType": "Addition",
+          "Description": "Added the [Add members in bulk to team](https://docs.microsoft.com/en-us/graph/api/conversationmembers-add?view=graph-rest-beta) method.",
+          "Target": "conversationmember"
+        }
+      ],
+      "Id": "f69c822d-8c2a-4f34-9882-406e4ddc0273",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-09T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-delete-tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the [Remove tab from chat](https://docs.microsoft.com/en-us/graph/api/chat-delete-tabs?view=graph-rest-beta) method",
+          "Target": "chat"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-get-tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get specified tab in chat](https://docs.microsoft.com/en-us/graph/api/chat-get-tabs?view=graph-rest-beta) method.",
+          "Target": "chat"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-list-tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the [List tabs in chat](https://docs.microsoft.com/en-us/graph/api/chat-list-tabs?view=graph-rest-beta) method.",
+          "Target": "chat"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-patch-tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update tab in chat](https://docs.microsoft.com/en-us/graph/api/chat-patch-tabs?view=graph-rest-beta) method.",
+          "Target": "chat"
+        },
+        {
+          "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-post-tabs",
+          "ChangeType": "Addition",
+          "Description": "Added the [Add tab to chat](https://docs.microsoft.com/en-us/graph/api/chat-post-tabs?view=graph-rest-beta) method.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "cc9d7c96-12b8-44b3-868d-65f2e6603019",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-08T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userScopeTeamsAppInstallation",
+          "ChangeType": "Addition",
+          "Description": "Added new API [userScopeTeamsAppInstallation](https://docs.microsoft.com/en-us/graph/api/resources/userscopeteamsappinstallation?view=graph-rest-beta).",
+          "Target": "userscopeteamsappinstallation"
+        },
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsappinstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get installed app in team](https://docs.microsoft.com/en-us/graph/api/team-get-installedapps?view=graph-rest-beta) method.",
+          "Target": "team-get-installedapps"
+        },
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsappinstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get intalled app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-get-installedapps?view=graph-rest-beta) method.",
+          "Target": "userteamwork-get-installedapps"
+        },
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Method",
+          "ChangedApiName": "userScopeTeamsAppInstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get chat between user and teamsApp](https://docs.microsoft.com/en-us/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta) method.",
+          "Target": "userscopeteamsappinstallation-get-chat"
+        }
+      ],
+      "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-02T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userScopeTeamsAppInstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [userScopeTeamsAppInstallation](https://docs.microsoft.com/en-us/graph/api/resources/userscopeteamsappinstallation?view=graph-rest-v1.0) resource type.",
+          "Target": "userscopeteamsappinstallation"
+        },
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsappinstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get installed app in team](https://docs.microsoft.com/en-us/graph/api/team-get-installedapps?view=graph-rest-v1.0) method.",
+          "Target": "team-get-installedapps"
+        },
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsappinstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [List apps for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-list-installedapps?view=graph-rest-v1.0) method.",
+          "Target": "userteamwork-list-installedapps"
+        },
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsappinstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get intalled app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-get-installedapps?view=graph-rest-v1.0) method.",
+          "Target": "userteamwork-get-installedapps"
+        },
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsappinstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [Add app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-post-installedapps?view=graph-rest-v1.0) method.",
+          "Target": "userteamwork-post-installedapps"
+        },
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsappinstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [Remove app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-delete-installedapps?view=graph-rest-v1.0) method.",
+          "Target": "userteamwork-delete-installedapps"
+        },
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsappinstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [Upgrade installed app for user](https://docs.microsoft.com/en-us/graph/api/userteamwork-teamsappinstallation-upgrade?view=graph-rest-v1.0) method.",
+          "Target": "userteamwork-teamsappinstallation-upgrade"
+        },
+        {
+          "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsappinstallation",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get chat between user and app](https://docs.microsoft.com/en-us/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-v1.0) method.",
+          "Target": "userscopeteamsappinstallation-get-chat"
+        }
+      ],
+      "Id": "4956bb66-f860-4cc5-a6fd-547b2980a459",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-02T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppInstallation",
+          "ChangeType": "Update",
+          "Description": "Added methods to [teamsAppInstallation](https://docs.microsoft.com/en-us/graph/api/resources/teamsappinstallation?view=graph-rest-beta).",
+          "Target": "teamsappinstallation"
+        },
+        {
+          "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-post-installedApps",
+          "ChangeType": "Addition",
+          "Description": "Added [install app in chat APIs](https://docs.microsoft.com/en-us/graph/api/chat-post-installedapps?view=graph-rest-beta).",
+          "Target": "chat-post-installedapps"
+        },
+        {
+          "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-list-installedApps",
+          "ChangeType": "Addition",
+          "Description": "Added [list apps in chat  APIs](https://docs.microsoft.com/en-us/graph/api/chat-list-installedapps.md?view=graph-rest-beta).",
+          "Target": "chat-list-installedApps"
+        },
+        {
+          "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-get-installedApps",
+          "ChangeType": "Addition",
+          "Description": "Added [get app in chat APIs](https://docs.microsoft.com/en-us/graph/api/chat-get-installedapps?view=graph-rest-v1.0).",
+          "Target": "chat-get-installedApps"
+        },
+        {
+          "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-teamsappinstallation-upgrade",
+          "ChangeType": "Addition",
+          "Description": "Added [Upgrade an app in chat APIs](https://docs.microsoft.com/en-us/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-beta).",
+          "Target": "chat-teamsappinstallation-upgrade"
+        },
+        {
+          "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat-delete-installedApps",
+          "ChangeType": "Addition",
+          "Description": "Added [Uninstall app from chat APIs](https://docs.microsoft.com/en-us/graph/api/chat-delete-installedapps?view=graph-rest-beta).",
+          "Target": "chat-delete-installedApps"
+        }
+      ],
+      "Id": "d8bd8f81-7086-40bf-aef9-a4424a42bee2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-02T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-beta) method to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource type collection.",
+          "Target": "chats-getallmessages"
+        },
+        {
+          "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/channels-getallmessages?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource type collection.",
+          "Target": "channels-getallmessages"
+        },
+        {
+          "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/teams-getallmessages?view=graph-rest-beta) method to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type collection.",
+          "Target": "teams-getallmessages"
+        }
+      ],
+      "Id": "250c3bd7-7a88-404b-a7ae-bd9423595b3f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-07T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5577ef08-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkActivityTopic",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkActivityTopic](https://docs.microsoft.com/en-us/graph/api/resources/teamworkActivityTopic?view=graph-rest-beta) resource type.",
+          "Target": "teamworkActivityTopic"
+        },
+        {
+          "Id": "5577ef08-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkNotificationAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkNotificationAudience](https://docs.microsoft.com/en-us/graph/api/resources/teamworkNotificationAudience?view=graph-rest-beta) resource type.",
+          "Target": "teamworkNotificationAudience"
+        },
+        {
+          "Id": "557a53e7-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aadUserNotificationAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the [aadUserNotificationAudience](https://docs.microsoft.com/en-us/graph/api/resources/aadUserNotificationAudience?view=graph-rest-beta) resource type.",
+          "Target": "aadUserNotificationAudience"
+        },
+        {
+          "Id": "557a53e7-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendActivityNotification** to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource type.",
+          "Target": "chat"
+        },
+        {
+          "Id": "557a53e7-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendActivityNotification** to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource type.",
+          "Target": "chat"
+        },
+        {
+          "Id": "557a53e7-28cb-11eb-9746-158983535857",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendActivityNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendActivityNotification** to then [userTeamwork](https://docs.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource type.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "556bfff5-28cb-11eb-9746-158983535857",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-17T11:52:14.154Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resource-specific consent",
+          "ChangeType": "Addition",
+          "Description": "Added support for [resource-specific consent](https://aka.ms/teams-rsc) (RSC) permissions to v1.0 APIs.",
+          "Target": "resource-specific consent"
+        },
+        {
+          "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
+          "ApiChange": "Method",
+          "ChangedApiName": "read channel message",
+          "ChangeType": "Addition",
+          "Description": "Added [read channel message APIs](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-v1.0).",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "5421a0d9-a155-43d1-ac9c-8d8e00529c2f",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-11-02T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f9c592f2-d73c-410d-9542-21623e8e6de9",
+          "ApiChange": "Method",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource: [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-beta), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-beta) [Create member in channel](https://docs.microsoft.com/en-us/graph/api/channel-post-members?view=graph-rest-beta),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-beta), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-beta).",
+          "Target": "channel"
+        }
+      ],
+      "Id": "f9c592f2-d73c-410d-9542-21623e8e6de9",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-11-20T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b921111b-b37e-4043-ba34-c87145bcbfd6",
+          "ApiChange": "Method",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Added the following methods to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-v1.0) resource: [List members of channel](https://docs.microsoft.com/en-us/graph/api/channel-list-members?view=graph-rest-v1.0), [Get member of channel](https://docs.microsoft.com/en-us/graph/api/channel-get-members?view=graph-rest-v1.0) [Create member in channel](https://docs.microsoft.com/en-us/graph/api/channel-post-members?view=graph-rest-v1.0),  [Update role of member in channel](https://docs.microsoft.com/en-us/graph/api/channel-update-members?view=graph-rest-v1.0), [Delete member from channel](https://docs.microsoft.com/en-us/graph/api/channel-delete-members?view=graph-rest-v1.0).",
+          "Target": "channel"
+        }
+      ],
+      "Id": "b921111b-b37e-4043-ba34-c87145bcbfd6",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-11-20T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "completeMigration",
+          "ChangeType": "Addition",
+          "Description": "Added support for **completeMigration** to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) and [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resources",
           "Target": "channel,team"
         },
         {
-          "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
+          "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamCreationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamCreationMode** property to the  [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "channelCreationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **channelCreationMode** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "channelCreationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **channelCreationMode** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-15T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conversationMember,aadUserConversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [List members](https://docs.microsoft.com/en-us/graph/api/conversationmember-list?view=graph-rest-beta), [Get member](https://docs.microsoft.com/en-us/graph/api/conversationmember-get?view=graph-rest-beta), [Add member](https://docs.microsoft.com/en-us/graph/api/conversationmember-add?view=graph-rest-beta), [Update member](https://docs.microsoft.com/en-us/graph/api/conversationmember-update?view=graph-rest-beta), and [Delete member](https://docs.microsoft.com/en-us/graph/api/conversationmember-delete?view=graph-rest-beta) methods to the [conversationMember](https://docs.microsoft.com/en-us/graph/api/resources/conversationmember?view=graph-rest-beta) and [aadUserConversationMember](https://docs.microsoft.com/en-us/graph/api/resources/aaduserconversationmember?view=graph-rest-beta) resources.",
+          "Target": "conversationMember,aadUserConversationMember"
+        }
+      ],
+      "Id": "e94cb262-641b-4376-9451-00741b7e48cc",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-10-15T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+
+    {
+      "ChangeList": [
+        {
+          "Id": "426b7709-5f5b-48b1-b1da-b6ad6d690c19",
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime",
           "ChangeType": "Addition",
@@ -45,17 +654,17 @@
           "Target": "channel,team"
         }
       ],
-      "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
+      "Id": "426b7709-5f5b-48b1-b1da-b6ad6d690c19",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork ",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
+          "Id": "426b7709-5f5b-48b1-b1da-b6ad6d690c19",
           "ApiChange": "Property",
           "ChangedApiName": "lastEditedDateTime",
           "ChangeType": "Addition",
@@ -63,7 +672,7 @@
           "Target": "chatMessage"
         },
         {
-          "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
+          "Id": "426b7709-5f5b-48b1-b1da-b6ad6d690c19",
           "ApiChange": "Property",
           "ChangedApiName": "lastModifiedDateTime,null",
           "ChangeType": "Change",
@@ -71,7 +680,7 @@
           "Target": "chatMessage"
         },
         {
-          "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
+          "Id": "426b7709-5f5b-48b1-b1da-b6ad6d690c19",
           "ApiChange": "Resource",
           "ChangedApiName": "Update chatMessage,chatMessage",
           "ChangeType": "Addition",
@@ -79,25 +688,25 @@
           "Target": "Update chatMessage,chatMessage"
         },
         {
-          "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
+          "Id": "426b7709-5f5b-48b1-b1da-b6ad6d690c19",
           "ApiChange": "method",
           "ChangedApiName": "List members,Add members,Remove members",
           "ChangeType": "Addition",
           "Description": "Added the [List members](https://docs.microsoft.com/en-us/graph/api/team-list-members?view=graph-rest-1.0\u0026preserve-view=true), [Add members](https://docs.microsoft.com/en-us/graph/api/team-post-members?view=graph-rest-1.0\u0026preserve-view=true), and [Remove members](https://docs.microsoft.com/en-us/graph/api/team-delete-members?view=graph-rest-1.0\u0026preserve-view=true) methods.",
-          "Target": "List members,Add members,Remove members"
+          "Target": "channel"
         }
       ],
-      "Id": "4b1a936b-7bc2-4419-9fb1-f61c09d06697",
+      "Id": "426b7709-5f5b-48b1-b1da-b6ad6d690c19",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-09-01T00:00:00",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork ",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
           "ApiChange": "Property",
           "ChangedApiName": "contentBytes",
           "ChangeType": "Addition",
@@ -105,7 +714,7 @@
           "Target": "chatMessageHostedContent"
         },
         {
-          "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
           "ApiChange": "Property",
           "ChangedApiName": "contentType",
           "ChangeType": "Addition",
@@ -113,7 +722,7 @@
           "Target": "chatMessageHostedContent"
         },
         {
-          "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
@@ -121,7 +730,7 @@
           "Target": "chatMessage"
         },
         {
-          "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
           "ApiChange": "Property",
           "ChangedApiName": "isMembershipLimitedToOwners",
           "ChangeType": "Addition",
@@ -129,7 +738,7 @@
           "Target": "team"
         }
       ],
-      "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+      "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
@@ -139,7 +748,7 @@
     {
       "ChangeList": [
         {
-          "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
           "ApiChange": "Property",
           "ChangedApiName": "publishingState",
           "ChangeType": "Addition",
@@ -147,7 +756,7 @@
           "Target": "teamsAppDefinition"
         },
         {
-          "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
           "ApiChange": "Resource",
           "ChangedApiName": "AppCatalog.Submit",
           "ChangeType": "Addition",
@@ -155,7 +764,7 @@
           "Target": "Publish apps,Delete app"
         },
         {
-          "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
           "ApiChange": "Parameter",
           "ChangedApiName": "requiresReview",
           "ChangeType": "Addition",
@@ -163,7 +772,7 @@
           "Target": "Publish apps,Update app"
         },
         {
-          "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
           "ApiChange": "Resource",
           "ChangedApiName": "creating a team",
           "ChangeType": "Addition",
@@ -171,7 +780,7 @@
           "Target": "creating a team"
         },
         {
-          "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+          "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
           "ApiChange": "Property",
           "ChangedApiName": "members,team",
           "ChangeType": "Addition",
@@ -179,7 +788,7 @@
           "Target": "members,team"
         }
       ],
-      "Id": "692b1056-57c4-44e6-a78a-c751d56c72db",
+      "Id": "f833e41f-7221-42bd-a12f-d74488ddb1c3",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-08-01T00:00:00",
@@ -189,7 +798,7 @@
     {
       "ChangeList": [
         {
-          "Id": "cc426e2e-be19-4f96-823c-ae2694359228",
+          "Id": "e473f528-d700-4803-9985-6db1bde5c18e",
           "ApiChange": "Resource",
           "ChangedApiName": "notifications",
           "ChangeType": "Addition",
@@ -197,7 +806,7 @@
           "Target": "notifications"
         }
       ],
-      "Id": "cc426e2e-be19-4f96-823c-ae2694359228",
+      "Id": "e473f528-d700-4803-9985-6db1bde5c18e",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
@@ -207,7 +816,7 @@
     {
       "ChangeList": [
         {
-          "Id": "cc426e2e-be19-4f96-823c-ae2694359228",
+          "Id": "e473f528-d700-4803-9985-6db1bde5c18e",
           "ApiChange": "Resource",
           "ChangedApiName": "TeamsAppInstallation.ReadForTeam,TeamsAppInstallation.ReadWriteForTeam,TeamsAppInstallation.ReadForTeam.All,TeamsAppInstallation.ReadWriteForTeam.All",
           "ChangeType": "Addition",
@@ -215,7 +824,7 @@
           "Target": "TeamsAppInstallation.ReadForTeam,TeamsAppInstallation.ReadWriteForTeam,TeamsAppInstallation.ReadForTeam.All,TeamsAppInstallation.ReadWriteForTeam.All"
         }
       ],
-      "Id": "cc426e2e-be19-4f96-823c-ae2694359228",
+      "Id": "e473f528-d700-4803-9985-6db1bde5c18e",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-07-01T00:00:00",
@@ -225,7 +834,7 @@
     {
       "ChangeList": [
         {
-          "Id": "8196aca7-01de-409e-8014-05739e7d104f",
+          "Id": "b5e31260-b5da-487a-aeb8-4251f169c7f4",
           "ApiChange": "Property",
           "ChangedApiName": "members,team",
           "ChangeType": "Addition",
@@ -233,7 +842,7 @@
           "Target": "members,team"
         }
       ],
-      "Id": "8196aca7-01de-409e-8014-05739e7d104f",
+      "Id": "b5e31260-b5da-487a-aeb8-4251f169c7f4",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -243,7 +852,7 @@
     {
       "ChangeList": [
         {
-          "Id": "8196aca7-01de-409e-8014-05739e7d104f",
+          "Id": "b5e31260-b5da-487a-aeb8-4251f169c7f4",
           "ApiChange": "Resource",
           "ChangedApiName": "AppCatalog.Read.All,ChatMessage.Send,Teams.Create,TeamsAppInstallation.ReadForUser,TeamsAppInstallation.ReadWriteForUser,TeamsAppInstallation.ReadWriteSelfForUser",
           "ChangeType": "Addition",
@@ -251,7 +860,7 @@
           "Target": "AppCatalog.Read.All,ChatMessage.Send,Teams.Create,TeamsAppInstallation.ReadForUser,TeamsAppInstallation.ReadWriteForUser,TeamsAppInstallation.ReadWriteSelfForUser"
         },
         {
-          "Id": "8196aca7-01de-409e-8014-05739e7d104f",
+          "Id": "b5e31260-b5da-487a-aeb8-4251f169c7f4",
           "ApiChange": "Resource",
           "ChangedApiName": "Teams.Create,TeamsAppInstallation.ReadForUser.All,TeamsAppInstallation.ReadWriteForUser.All,TeamsAppInstallation.ReadWriteSelfForUser.All",
           "ChangeType": "Addition",
@@ -259,7 +868,7 @@
           "Target": "Teams.Create,TeamsAppInstallation.ReadForUser.All,TeamsAppInstallation.ReadWriteForUser.All,TeamsAppInstallation.ReadWriteSelfForUser.All"
         },
         {
-          "Id": "8196aca7-01de-409e-8014-05739e7d104f",
+          "Id": "b5e31260-b5da-487a-aeb8-4251f169c7f4",
           "ApiChange": "Resource",
           "ChangedApiName": "filesFolder,channel",
           "ChangeType": "Addition",
@@ -267,7 +876,7 @@
           "Target": "filesFolder,channel"
         },
         {
-          "Id": "8196aca7-01de-409e-8014-05739e7d104f",
+          "Id": "b5e31260-b5da-487a-aeb8-4251f169c7f4",
           "ApiChange": "Property",
           "ChangedApiName": "primaryChannel,team",
           "ChangeType": "Addition",
@@ -275,7 +884,7 @@
           "Target": "primaryChannel,team"
         }
       ],
-      "Id": "8196aca7-01de-409e-8014-05739e7d104f",
+      "Id": "b5e31260-b5da-487a-aeb8-4251f169c7f4",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-06-01T00:00:00",
@@ -285,7 +894,7 @@
     {
       "ChangeList": [
         {
-          "Id": "df055349-37a1-466e-94ab-72da43217cd4",
+          "Id": "7523cc04-6c4b-41d5-a7ac-613188384d9c",
           "ApiChange": "Property",
           "ChangedApiName": "azureADAppId",
           "ChangeType": "Addition",
@@ -293,7 +902,7 @@
           "Target": "teamsAppDefinition"
         },
         {
-          "Id": "df055349-37a1-466e-94ab-72da43217cd4",
+          "Id": "7523cc04-6c4b-41d5-a7ac-613188384d9c",
           "ApiChange": "Resource",
           "ChangedApiName": "resource-specific consent",
           "ChangeType": "Addition",
@@ -301,7 +910,7 @@
           "Target": "resource-specific consent"
         }
       ],
-      "Id": "df055349-37a1-466e-94ab-72da43217cd4",
+      "Id": "7523cc04-6c4b-41d5-a7ac-613188384d9c",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-05-01T00:00:00",
@@ -311,7 +920,7 @@
     {
       "ChangeList": [
         {
-          "Id": "df055349-37a1-466e-94ab-72da43217cd4",
+          "Id": "7523cc04-6c4b-41d5-a7ac-613188384d9c",
           "ApiChange": "Resource",
           "ChangedApiName": "channel messages",
           "ChangeType": "Addition",
@@ -319,7 +928,7 @@
           "Target": "channel messages"
         }
       ],
-      "Id": "df055349-37a1-466e-94ab-72da43217cd4",
+      "Id": "7523cc04-6c4b-41d5-a7ac-613188384d9c",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
@@ -329,7 +938,7 @@
     {
       "ChangeList": [
         {
-          "Id": "dc587f5e-7fba-4762-a27f-a99dc2753b5e",
+          "Id": "cffd2ba0-5707-4a1b-bcb8-6ce790be95c2",
           "ApiChange": "method",
           "ChangedApiName": "shift,workforceintegration",
           "ChangeType": "Addition",
@@ -337,7 +946,7 @@
           "Target": "shift,workforceintegration"
         }
       ],
-      "Id": "dc587f5e-7fba-4762-a27f-a99dc2753b5e",
+      "Id": "cffd2ba0-5707-4a1b-bcb8-6ce790be95c2",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-05-01T00:00:00",
@@ -347,7 +956,7 @@
     {
       "ChangeList": [
         {
-          "Id": "f4fa3e15-7b2f-4922-a8a9-af69b5268176",
+          "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
           "ApiChange": "Property",
           "ChangedApiName": "supportedEntities",
           "ChangeType": "Addition",
@@ -355,7 +964,7 @@
           "Target": "workforceintegration"
         },
         {
-          "Id": "f4fa3e15-7b2f-4922-a8a9-af69b5268176",
+          "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessages",
           "ChangeType": "Addition",
@@ -363,7 +972,7 @@
           "Target": "chatMessages"
         }
       ],
-      "Id": "f4fa3e15-7b2f-4922-a8a9-af69b5268176",
+      "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -373,7 +982,7 @@
     {
       "ChangeList": [
         {
-          "Id": "f4fa3e15-7b2f-4922-a8a9-af69b5268176",
+          "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
           "ApiChange": "Resource",
           "ChangedApiName": "teamwork",
           "ChangeType": "Addition",
@@ -381,7 +990,7 @@
           "Target": "teamwork"
         }
       ],
-      "Id": "f4fa3e15-7b2f-4922-a8a9-af69b5268176",
+      "Id": "fc4a8ddc-cb9d-43bc-920e-af609987276b",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
@@ -391,7 +1000,7 @@
     {
       "ChangeList": [
         {
-          "Id": "973e0cb1-dea8-4901-8ca3-5b75549d2f06",
+          "Id": "7ba0adc9-67dc-4729-a58f-cdff01e392ef",
           "ApiChange": "Resource",
           "ChangedApiName": "notifications",
           "ChangeType": "Addition",
@@ -399,7 +1008,7 @@
           "Target": "notifications"
         },
         {
-          "Id": "973e0cb1-dea8-4901-8ca3-5b75549d2f06",
+          "Id": "7ba0adc9-67dc-4729-a58f-cdff01e392ef",
           "ApiChange": "Resource",
           "ChangedApiName": "swapShiftsChangeRequest",
           "ChangeType": "Addition",
@@ -407,7 +1016,7 @@
           "Target": "swapShiftsChangeRequest: decline"
         }
       ],
-      "Id": "973e0cb1-dea8-4901-8ca3-5b75549d2f06",
+      "Id": "7ba0adc9-67dc-4729-a58f-cdff01e392ef",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-02-01T00:00:00",
@@ -417,7 +1026,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5cd84ecc-cb53-4c01-b8cd-6dbb81e92931",
+          "Id": "fcb4d8eb-00f7-432a-8c87-06189c7aae73",
           "ApiChange": "Resource",
           "ChangedApiName": "notifications",
           "ChangeType": "Addition",
@@ -425,7 +1034,7 @@
           "Target": "notifications"
         },
         {
-          "Id": "5cd84ecc-cb53-4c01-b8cd-6dbb81e92931",
+          "Id": "fcb4d8eb-00f7-432a-8c87-06189c7aae73",
           "ApiChange": "Resource",
           "ChangedApiName": "shiftpreferences",
           "ChangeType": "Addition",
@@ -433,7 +1042,7 @@
           "Target": "shiftpreferences"
         },
         {
-          "Id": "5cd84ecc-cb53-4c01-b8cd-6dbb81e92931",
+          "Id": "fcb4d8eb-00f7-432a-8c87-06189c7aae73",
           "ApiChange": "Resource",
           "ChangedApiName": "shiftPreferences",
           "ChangeType": "Addition",
@@ -441,7 +1050,7 @@
           "Target": "userSettings"
         },
         {
-          "Id": "5cd84ecc-cb53-4c01-b8cd-6dbb81e92931",
+          "Id": "fcb4d8eb-00f7-432a-8c87-06189c7aae73",
           "ApiChange": "Resource",
           "ChangedApiName": "Note:",
           "ChangeType": "Change",
@@ -449,7 +1058,7 @@
           "Target": "schedule,schedulingGroup,shift,timeOff,timeOffReason,timeOffRequest,swapShiftChangeRequest,openShiftChangeRequest"
         }
       ],
-      "Id": "5cd84ecc-cb53-4c01-b8cd-6dbb81e92931",
+      "Id": "fcb4d8eb-00f7-432a-8c87-06189c7aae73",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-12-01T00:00:00",
@@ -459,7 +1068,7 @@
     {
       "ChangeList": [
         {
-          "Id": "1726e915-4917-4d9e-b85d-718f58e679f9",
+          "Id": "b2f50aa5-d499-45d0-bce1-931728d2225e",
           "ApiChange": "Resource",
           "ChangedApiName": "openshift,openshiftChangeRequest,swapShiftChangeRequest,timeoffrequest",
           "ChangeType": "Addition",
@@ -467,7 +1076,7 @@
           "Target": "openshift,openshiftChangeRequest,swapShiftChangeRequest,timeoffrequest"
         },
         {
-          "Id": "1726e915-4917-4d9e-b85d-718f58e679f9",
+          "Id": "b2f50aa5-d499-45d0-bce1-931728d2225e",
           "ApiChange": "Property",
           "ChangedApiName": "timeClockEnabled,openShiftsEnabled,swapShiftsRequestsEnabled,offerShiftRequestsEnabled,timeOffRequestsEnabled",
           "ChangeType": "Addition",
@@ -475,7 +1084,7 @@
           "Target": "schedule"
         },
         {
-          "Id": "1726e915-4917-4d9e-b85d-718f58e679f9",
+          "Id": "b2f50aa5-d499-45d0-bce1-931728d2225e",
           "ApiChange": "Resource",
           "ChangedApiName": "driveItem,get driveItem",
           "ChangeType": "Addition",
@@ -483,7 +1092,7 @@
           "Target": "driveItem,get driveItem"
         }
       ],
-      "Id": "1726e915-4917-4d9e-b85d-718f58e679f9",
+      "Id": "b2f50aa5-d499-45d0-bce1-931728d2225e",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -493,7 +1102,7 @@
     {
       "ChangeList": [
         {
-          "Id": "85bb9bf6-45b3-43b5-ac93-986017d2261b",
+          "Id": "d6d59722-4db2-4c6a-9fbe-1128d1bfe7db",
           "ApiChange": "method",
           "ChangedApiName": "Get team photo,Update team photo",
           "ChangeType": "Addition",
@@ -501,7 +1110,7 @@
           "Target": "Get team photo,Update team photo"
         },
         {
-          "Id": "85bb9bf6-45b3-43b5-ac93-986017d2261b",
+          "Id": "d6d59722-4db2-4c6a-9fbe-1128d1bfe7db",
           "ApiChange": "Resource",
           "ChangedApiName": "Reading images in messages",
           "ChangeType": "Addition",
@@ -509,7 +1118,7 @@
           "Target": "Reading images in messages"
         }
       ],
-      "Id": "85bb9bf6-45b3-43b5-ac93-986017d2261b",
+      "Id": "d6d59722-4db2-4c6a-9fbe-1128d1bfe7db",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
@@ -519,7 +1128,7 @@
     {
       "ChangeList": [
         {
-          "Id": "33db37fd-d348-4fdf-9055-8d74360ea9a5",
+          "Id": "f7b8cfec-1cf0-4c68-a17c-ab87d5733ebd",
           "ApiChange": "Property",
           "ChangedApiName": "primaryChannel,team",
           "ChangeType": "Addition",
@@ -527,7 +1136,7 @@
           "Target": "primaryChannel,team"
         },
         {
-          "Id": "33db37fd-d348-4fdf-9055-8d74360ea9a5",
+          "Id": "f7b8cfec-1cf0-4c68-a17c-ab87d5733ebd",
           "ApiChange": "Property",
           "ChangedApiName": "allowCreatePrivateChannels",
           "ChangeType": "Addition",
@@ -535,7 +1144,7 @@
           "Target": "teamMemberSettings"
         }
       ],
-      "Id": "33db37fd-d348-4fdf-9055-8d74360ea9a5",
+      "Id": "f7b8cfec-1cf0-4c68-a17c-ab87d5733ebd",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-09-01T00:00:00",
@@ -545,7 +1154,7 @@
     {
       "ChangeList": [
         {
-          "Id": "f292cc91-7d61-4363-b74f-5e918e77e1c0",
+          "Id": "a63f2e0f-a55e-43b2-9583-5b92ca3c0526",
           "ApiChange": "Resource",
           "ChangedApiName": "channel messages delta query API",
           "ChangeType": "Addition",
@@ -553,7 +1162,7 @@
           "Target": "channel messages delta query API"
         },
         {
-          "Id": "f292cc91-7d61-4363-b74f-5e918e77e1c0",
+          "Id": "a63f2e0f-a55e-43b2-9583-5b92ca3c0526",
           "ApiChange": "Resource",
           "ChangedApiName": "add members to a private channel",
           "ChangeType": "Addition",
@@ -561,7 +1170,7 @@
           "Target": "add members to a private channel"
         },
         {
-          "Id": "f292cc91-7d61-4363-b74f-5e918e77e1c0",
+          "Id": "a63f2e0f-a55e-43b2-9583-5b92ca3c0526",
           "ApiChange": "Resource",
           "ChangedApiName": "remove members from a private channel",
           "ChangeType": "Addition",
@@ -569,7 +1178,7 @@
           "Target": "remove members from a private channel"
         },
         {
-          "Id": "f292cc91-7d61-4363-b74f-5e918e77e1c0",
+          "Id": "a63f2e0f-a55e-43b2-9583-5b92ca3c0526",
           "ApiChange": "Resource",
           "ChangedApiName": "update a member\u0027s role in a private channel",
           "ChangeType": "Addition",
@@ -577,7 +1186,7 @@
           "Target": "update a member\u0027s role in a private channel"
         },
         {
-          "Id": "f292cc91-7d61-4363-b74f-5e918e77e1c0",
+          "Id": "a63f2e0f-a55e-43b2-9583-5b92ca3c0526",
           "ApiChange": "Property",
           "ChangedApiName": "membershipType",
           "ChangeType": "Addition",
@@ -585,7 +1194,7 @@
           "Target": "channel"
         }
       ],
-      "Id": "f292cc91-7d61-4363-b74f-5e918e77e1c0",
+      "Id": "a63f2e0f-a55e-43b2-9583-5b92ca3c0526",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-08-01T00:00:00",
@@ -595,7 +1204,7 @@
     {
       "ChangeList": [
         {
-          "Id": "799f124b-91ec-47b6-b098-a197d65896dc",
+          "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Resource",
           "ChangedApiName": "List channel messages,Get channel message,List replies to a message,Get a reply to a message",
           "ChangeType": "Addition",
@@ -603,7 +1212,7 @@
           "Target": "List channel messages,Get channel message,List replies to a message,Get a reply to a message"
         },
         {
-          "Id": "799f124b-91ec-47b6-b098-a197d65896dc",
+          "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Resource",
           "ChangedApiName": "List messages in a chat,Get message in chat",
           "ChangeType": "Addition",
@@ -611,7 +1220,7 @@
           "Target": "List messages in a chat,Get message in chat"
         },
         {
-          "Id": "799f124b-91ec-47b6-b098-a197d65896dc",
+          "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Property",
           "ChangedApiName": "installedApps",
           "ChangeType": "Addition",
@@ -619,7 +1228,7 @@
           "Target": "chat"
         },
         {
-          "Id": "799f124b-91ec-47b6-b098-a197d65896dc",
+          "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Property",
           "ChangedApiName": "chats",
           "ChangeType": "Addition",
@@ -627,7 +1236,7 @@
           "Target": "user"
         },
         {
-          "Id": "799f124b-91ec-47b6-b098-a197d65896dc",
+          "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Resource",
           "ChangedApiName": "teamwork",
           "ChangeType": "Addition",
@@ -635,7 +1244,7 @@
           "Target": "teamwork"
         },
         {
-          "Id": "799f124b-91ec-47b6-b098-a197d65896dc",
+          "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Resource",
           "ChangedApiName": "userTeamwork",
           "ChangeType": "Addition",
@@ -643,7 +1252,7 @@
           "Target": "userTeamwork"
         },
         {
-          "Id": "799f124b-91ec-47b6-b098-a197d65896dc",
+          "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
           "ApiChange": "Resource",
           "ChangedApiName": "user,List apps installed for user,Install app for user,Uninstall app for user,Upgrade app installed for user",
           "ChangeType": "Addition",
@@ -651,7 +1260,7 @@
           "Target": "user,List apps installed for user,Install app for user,Uninstall app for user,Upgrade app installed for user"
         }
       ],
-      "Id": "799f124b-91ec-47b6-b098-a197d65896dc",
+      "Id": "a0a2d994-e70d-45b9-8b43-20da79eef2d9",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
@@ -661,7 +1270,7 @@
     {
       "ChangeList": [
         {
-          "Id": "20bed7fc-5fe0-416f-9ace-e4b89785c980",
+          "Id": "fa78f2b8-3b10-4cd3-b385-351a2d9fd678",
           "ApiChange": "Resource",
           "ChangedApiName": "teamDiscoverySettings",
           "ChangeType": "Addition",
@@ -669,7 +1278,7 @@
           "Target": "teamDiscoverySettings"
         }
       ],
-      "Id": "20bed7fc-5fe0-416f-9ace-e4b89785c980",
+      "Id": "fa78f2b8-3b10-4cd3-b385-351a2d9fd678",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
@@ -679,7 +1288,7 @@
     {
       "ChangeList": [
         {
-          "Id": "21d48f7e-982b-4cf2-986e-5ec0cb28f89e",
+          "Id": "d2ba1e7d-5b16-41de-9e2b-66abe9d787fe",
           "ApiChange": "Property",
           "ChangedApiName": "urgent,chatMessageImportance",
           "ChangeType": "Addition",
@@ -687,7 +1296,7 @@
           "Target": ""
         },
         {
-          "Id": "21d48f7e-982b-4cf2-986e-5ec0cb28f89e",
+          "Id": "d2ba1e7d-5b16-41de-9e2b-66abe9d787fe",
           "ApiChange": "Property",
           "ChangedApiName": "hostedContents",
           "ChangeType": "Addition",
@@ -695,7 +1304,7 @@
           "Target": "chatMessage"
         },
         {
-          "Id": "21d48f7e-982b-4cf2-986e-5ec0cb28f89e",
+          "Id": "d2ba1e7d-5b16-41de-9e2b-66abe9d787fe",
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessageHostedContent",
           "ChangeType": "Addition",
@@ -703,7 +1312,7 @@
           "Target": "chatMessage"
         }
       ],
-      "Id": "21d48f7e-982b-4cf2-986e-5ec0cb28f89e",
+      "Id": "d2ba1e7d-5b16-41de-9e2b-66abe9d787fe",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
@@ -713,7 +1322,7 @@
     {
       "ChangeList": [
         {
-          "Id": "0a5e5695-8486-4054-bec5-1b05b877d3e0",
+          "Id": "2ead8a2e-75ab-4899-8f59-0a8b9e5fe076",
           "ApiChange": "Resource",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
@@ -721,7 +1330,7 @@
           "Target": "chat"
         },
         {
-          "Id": "0a5e5695-8486-4054-bec5-1b05b877d3e0",
+          "Id": "2ead8a2e-75ab-4899-8f59-0a8b9e5fe076",
           "ApiChange": "Resource",
           "ChangedApiName": "images",
           "ChangeType": "Addition",
@@ -729,7 +1338,7 @@
           "Target": "images"
         },
         {
-          "Id": "0a5e5695-8486-4054-bec5-1b05b877d3e0",
+          "Id": "2ead8a2e-75ab-4899-8f59-0a8b9e5fe076",
           "ApiChange": "Resource",
           "ChangedApiName": "conversation member",
           "ChangeType": "Addition",
@@ -737,7 +1346,7 @@
           "Target": "conversation member"
         }
       ],
-      "Id": "0a5e5695-8486-4054-bec5-1b05b877d3e0",
+      "Id": "2ead8a2e-75ab-4899-8f59-0a8b9e5fe076",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-04-01T00:00:00",
@@ -747,7 +1356,7 @@
     {
       "ChangeList": [
         {
-          "Id": "0a5e5695-8486-4054-bec5-1b05b877d3e0",
+          "Id": "2ead8a2e-75ab-4899-8f59-0a8b9e5fe076",
           "ApiChange": "Resource",
           "ChangedApiName": "installedApps",
           "ChangeType": "Addition",
@@ -755,7 +1364,7 @@
           "Target": "installedApps"
         },
         {
-          "Id": "0a5e5695-8486-4054-bec5-1b05b877d3e0",
+          "Id": "2ead8a2e-75ab-4899-8f59-0a8b9e5fe076",
           "ApiChange": "Property",
           "ChangedApiName": "email,webUrl",
           "ChangeType": "Addition",
@@ -763,7 +1372,7 @@
           "Target": "channel"
         }
       ],
-      "Id": "0a5e5695-8486-4054-bec5-1b05b877d3e0",
+      "Id": "2ead8a2e-75ab-4899-8f59-0a8b9e5fe076",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-04-01T00:00:00",
@@ -773,7 +1382,7 @@
     {
       "ChangeList": [
         {
-          "Id": "e763ba06-9463-4d06-b060-4ac0e0abae4d",
+          "Id": "6f69ace1-6b5e-4c52-8eef-333b9f6324e3",
           "ApiChange": "Resource",
           "ChangedApiName": "schedule,schedulingGroup,shift,timeOffReason,timeOff",
           "ChangeType": "Addition",
@@ -781,7 +1390,7 @@
           "Target": "schedule,schedulingGroup,shift,timeOffReason,timeOff"
         }
       ],
-      "Id": "e763ba06-9463-4d06-b060-4ac0e0abae4d",
+      "Id": "6f69ace1-6b5e-4c52-8eef-333b9f6324e3",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-03-01T00:00:00",
@@ -791,7 +1400,7 @@
     {
       "ChangeList": [
         {
-          "Id": "845cca02-7f1d-4d5b-94ba-a8bb8fffdeae",
+          "Id": "8d126277-6e4a-4f11-bd20-69755459b990",
           "ApiChange": "Resource",
           "ChangedApiName": "Send a message to a channel",
           "ChangeType": "Addition",
@@ -799,7 +1408,7 @@
           "Target": "Send a message to a channel"
         },
         {
-          "Id": "845cca02-7f1d-4d5b-94ba-a8bb8fffdeae",
+          "Id": "8d126277-6e4a-4f11-bd20-69755459b990",
           "ApiChange": "Resource",
           "ChangedApiName": "Reply to a message in a channel",
           "ChangeType": "Addition",
@@ -807,7 +1416,7 @@
           "Target": "Reply to a message in a channel"
         },
         {
-          "Id": "845cca02-7f1d-4d5b-94ba-a8bb8fffdeae",
+          "Id": "8d126277-6e4a-4f11-bd20-69755459b990",
           "ApiChange": "Resource",
           "ChangedApiName": "Create a message in a channel",
           "ChangeType": "Deletion",
@@ -815,7 +1424,7 @@
           "Target": "Create a message in a channel"
         },
         {
-          "Id": "845cca02-7f1d-4d5b-94ba-a8bb8fffdeae",
+          "Id": "8d126277-6e4a-4f11-bd20-69755459b990",
           "ApiChange": "Resource",
           "ChangedApiName": "installedApps",
           "ChangeType": "Addition",
@@ -823,7 +1432,7 @@
           "Target": "installedApps"
         }
       ],
-      "Id": "845cca02-7f1d-4d5b-94ba-a8bb8fffdeae",
+      "Id": "8d126277-6e4a-4f11-bd20-69755459b990",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-02-01T00:00:00",
@@ -833,7 +1442,7 @@
     {
       "ChangeList": [
         {
-          "Id": "845cca02-7f1d-4d5b-94ba-a8bb8fffdeae",
+          "Id": "8d126277-6e4a-4f11-bd20-69755459b990",
           "ApiChange": "Property",
           "ChangedApiName": "internalId",
           "ChangeType": "Addition",
@@ -841,7 +1450,7 @@
           "Target": "team"
         },
         {
-          "Id": "845cca02-7f1d-4d5b-94ba-a8bb8fffdeae",
+          "Id": "8d126277-6e4a-4f11-bd20-69755459b990",
           "ApiChange": "Resource",
           "ChangedApiName": "tabs",
           "ChangeType": "Addition",
@@ -849,7 +1458,7 @@
           "Target": "tabs"
         }
       ],
-      "Id": "845cca02-7f1d-4d5b-94ba-a8bb8fffdeae",
+      "Id": "8d126277-6e4a-4f11-bd20-69755459b990",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2019-02-01T00:00:00",
@@ -859,7 +1468,7 @@
     {
       "ChangeList": [
         {
-          "Id": "3ac69d2b-b577-4aa4-949c-0b0fcc06abee",
+          "Id": "b9eac1d1-d508-46c3-bd3b-3fade82a46fc",
           "ApiChange": "Resource",
           "ChangedApiName": "teamSpecialization",
           "ChangeType": "Addition",
@@ -867,7 +1476,7 @@
           "Target": "teamSpecialization"
         }
       ],
-      "Id": "3ac69d2b-b577-4aa4-949c-0b0fcc06abee",
+      "Id": "b9eac1d1-d508-46c3-bd3b-3fade82a46fc",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2019-01-01T00:00:00",
@@ -877,7 +1486,7 @@
     {
       "ChangeList": [
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsTemplate",
           "ChangeType": "Addition",
@@ -885,7 +1494,7 @@
           "Target": "teamsTemplate"
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Resource",
           "ChangedApiName": "teamSpecialization",
           "ChangeType": "Addition",
@@ -893,7 +1502,7 @@
           "Target": "teamSpecialization"
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Property",
           "ChangedApiName": "channel",
           "ChangeType": "Addition",
@@ -901,7 +1510,7 @@
           "Target": "channel"
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Property",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
@@ -909,7 +1518,7 @@
           "Target": "team"
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Property",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
@@ -917,7 +1526,7 @@
           "Target": "team"
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Property",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
@@ -925,7 +1534,7 @@
           "Target": "team"
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Property",
           "ChangedApiName": "specialization,team",
           "ChangeType": "Addition",
@@ -933,7 +1542,7 @@
           "Target": "specialization,team"
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Property",
           "ChangedApiName": "visibility,team",
           "ChangeType": "Addition",
@@ -941,7 +1550,7 @@
           "Target": "visibility,team"
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Property",
           "ChangedApiName": "template,team",
           "ChangeType": "Addition",
@@ -949,7 +1558,7 @@
           "Target": "template,team"
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Resource",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
@@ -957,7 +1566,7 @@
           "Target": "team"
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -965,7 +1574,7 @@
           "Target": ""
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -973,7 +1582,7 @@
           "Target": ""
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -981,7 +1590,7 @@
           "Target": ""
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -989,7 +1598,7 @@
           "Target": ""
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -997,7 +1606,7 @@
           "Target": ""
         },
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Resource",
           "ChangedApiName": "/teamsTemplates",
           "ChangeType": "Addition",
@@ -1005,7 +1614,7 @@
           "Target": "/teamsTemplates"
         }
       ],
-      "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+      "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-12-01T00:00:00",
@@ -1015,7 +1624,7 @@
     {
       "ChangeList": [
         {
-          "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+          "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
           "ApiChange": "Resource",
           "ChangedApiName": "team,channel,tab",
           "ChangeType": "Addition",
@@ -1023,7 +1632,7 @@
           "Target": "team,channel,tab"
         }
       ],
-      "Id": "7fbc8644-dd46-486b-9aec-020eb184a85e",
+      "Id": "73edb398-0c88-4d74-a5b0-141a1c999e78",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-12-01T00:00:00",
@@ -1033,7 +1642,7 @@
     {
       "ChangeList": [
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "clone team",
           "ChangeType": "Addition",
@@ -1041,7 +1650,7 @@
           "Target": "clone team"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "/teams/{id}/installedApps",
           "ChangeType": "Addition",
@@ -1049,7 +1658,7 @@
           "Target": "/teams/{id}/installedApps"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Property",
           "ChangedApiName": "/appCatalogs/teamsApps/{id}/appDefinition,/appCatalogs/teamsApps/{id}",
           "ChangeType": "Addition",
@@ -1057,7 +1666,7 @@
           "Target": "/appCatalogs/teamsApps/{id}/appDefinition,/appCatalogs/teamsApps/{id}"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "/appCatalogs/teamsApps",
           "ChangeType": "Change",
@@ -1065,7 +1674,7 @@
           "Target": "/appCatalogs/teamsApps"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Property",
           "ChangedApiName": "/appCatalogs/teamsApps",
           "ChangeType": "Change",
@@ -1073,7 +1682,7 @@
           "Target": "/appCatalogs/teamsApps"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "/teams/{id}/installedApps",
           "ChangeType": "Addition",
@@ -1081,7 +1690,7 @@
           "Target": "/teams/{id}/installedApps"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Property",
           "ChangedApiName": "teamsTab",
           "ChangeType": "Addition",
@@ -1089,7 +1698,7 @@
           "Target": "teamsTab"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Property",
           "ChangedApiName": "teamsTab",
           "ChangeType": "Addition",
@@ -1097,7 +1706,7 @@
           "Target": "teamsTab"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Property",
           "ChangedApiName": "teamsTab",
           "ChangeType": "Addition",
@@ -1105,7 +1714,7 @@
           "Target": "teamsTab"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppInstallation",
           "ChangeType": "Addition",
@@ -1113,7 +1722,7 @@
           "Target": "teamsAppInstallation"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsApp",
           "ChangeType": "Addition",
@@ -1121,7 +1730,7 @@
           "Target": "teamsApp"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppDefinition",
           "ChangeType": "Addition",
@@ -1129,7 +1738,7 @@
           "Target": "teamsAppDefinition"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1137,7 +1746,7 @@
           "Target": ""
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1145,7 +1754,7 @@
           "Target": ""
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -1153,7 +1762,7 @@
           "Target": ""
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "/teams/{id}/installedApps",
           "ChangeType": "Addition",
@@ -1161,7 +1770,7 @@
           "Target": "/teams/{id}/installedApps"
         }
       ],
-      "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+      "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-11-01T00:00:00",
@@ -1171,7 +1780,7 @@
     {
       "ChangeList": [
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
@@ -1179,7 +1788,7 @@
           "Target": "team"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "channel",
           "ChangeType": "Addition",
@@ -1187,7 +1796,7 @@
           "Target": "channel"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsApp",
           "ChangeType": "Addition",
@@ -1195,7 +1804,7 @@
           "Target": "teamsApp"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppDefinition",
           "ChangeType": "Addition",
@@ -1203,7 +1812,7 @@
           "Target": "teamsAppDefinition"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppInstallation",
           "ChangeType": "Addition",
@@ -1211,7 +1820,7 @@
           "Target": "teamsAppInstallation"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAsyncOperation",
           "ChangeType": "Addition",
@@ -1219,7 +1828,7 @@
           "Target": "teamsAsyncOperation"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamGuestSettings",
           "ChangeType": "Addition",
@@ -1227,7 +1836,7 @@
           "Target": "teamGuestSettings"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamMemberSettings",
           "ChangeType": "Addition",
@@ -1235,7 +1844,7 @@
           "Target": "teamMemberSettings"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamMessagingSettings",
           "ChangeType": "Addition",
@@ -1243,7 +1852,7 @@
           "Target": "teamMessagingSettings"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "teamFunSettings",
           "ChangeType": "Addition",
@@ -1251,7 +1860,7 @@
           "Target": "teamFunSettings"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "Clone team",
           "ChangeType": "Addition",
@@ -1259,7 +1868,7 @@
           "Target": "Clone team"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "Archive team",
           "ChangeType": "Addition",
@@ -1267,7 +1876,7 @@
           "Target": "Archive team"
         },
         {
-          "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+          "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
           "ApiChange": "Resource",
           "ChangedApiName": "Unarchive team",
           "ChangeType": "Addition",
@@ -1275,7 +1884,7 @@
           "Target": "Unarchive team"
         }
       ],
-      "Id": "b8c8d2a6-19c6-438c-aa31-4d2b075886c9",
+      "Id": "6669d406-1932-4c73-aaf7-4909808e90d8",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-11-01T00:00:00",
@@ -1285,7 +1894,7 @@
     {
       "ChangeList": [
         {
-          "Id": "60a1aa35-6b05-45eb-a4fd-128d323bca27",
+          "Id": "4ffa234f-de25-4cf1-a402-db45320a0e68",
           "ApiChange": "Resource",
           "ChangedApiName": "archive team,unarchive team",
           "ChangeType": "Addition",
@@ -1293,7 +1902,7 @@
           "Target": "archive team,unarchive team"
         }
       ],
-      "Id": "60a1aa35-6b05-45eb-a4fd-128d323bca27",
+      "Id": "4ffa234f-de25-4cf1-a402-db45320a0e68",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-10-01T00:00:00",
@@ -1303,7 +1912,7 @@
     {
       "ChangeList": [
         {
-          "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+          "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Resource",
           "ChangedApiName": "Tabs",
           "ChangeType": "Addition",
@@ -1311,7 +1920,7 @@
           "Target": "Tabs"
         },
         {
-          "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+          "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Resource",
           "ChangedApiName": "publishing apps for your organization",
           "ChangeType": "Addition",
@@ -1319,7 +1928,7 @@
           "Target": "publishing apps for your organization"
         },
         {
-          "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+          "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Resource",
           "ChangedApiName": "GET /teams/{id}",
           "ChangeType": "Addition",
@@ -1327,7 +1936,7 @@
           "Target": "GET /teams/{id}"
         },
         {
-          "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+          "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Resource",
           "ChangedApiName": "GET /teams/{id}/channels",
           "ChangeType": "Addition",
@@ -1335,7 +1944,7 @@
           "Target": "GET /teams/{id}/channels"
         },
         {
-          "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+          "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Resource",
           "ChangedApiName": "GET /teams/{id}/channels/{id}",
           "ChangeType": "Addition",
@@ -1343,7 +1952,7 @@
           "Target": "GET /teams/{id}/channels/{id}"
         },
         {
-          "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+          "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Resource",
           "ChangedApiName": "PUT /groups/{id}/team",
           "ChangeType": "Addition",
@@ -1351,7 +1960,7 @@
           "Target": "PUT /groups/{id}/team"
         },
         {
-          "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+          "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Resource",
           "ChangedApiName": "PATCH /teams/{id}",
           "ChangeType": "Addition",
@@ -1359,7 +1968,7 @@
           "Target": "PATCH /teams/{id}"
         },
         {
-          "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+          "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Resource",
           "ChangedApiName": "Create channel,Update channel,Delete channel",
           "ChangeType": "Addition",
@@ -1367,7 +1976,7 @@
           "Target": "Create channel,Update channel,Delete channel"
         },
         {
-          "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+          "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Property",
           "ChangedApiName": "teamsApp",
           "ChangeType": "Deletion",
@@ -1375,7 +1984,7 @@
           "Target": "teamsApp"
         },
         {
-          "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+          "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Property",
           "ChangedApiName": "teamsApp",
           "ChangeType": "Change",
@@ -1383,7 +1992,7 @@
           "Target": "teamsApp"
         }
       ],
-      "Id": "1c875b3d-1556-43d7-8a80-800ca4aa492f",
+      "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-09-01T00:00:00",
@@ -1393,7 +2002,7 @@
     {
       "ChangeList": [
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "chatmessage",
           "ChangeType": "Change",
@@ -1401,7 +2010,7 @@
           "Target": "chatmessage"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Chat attachment",
           "ChangeType": "Addition",
@@ -1409,7 +2018,7 @@
           "Target": "Chat attachment"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Chat mention",
           "ChangeType": "Addition",
@@ -1417,7 +2026,7 @@
           "Target": "Chat mention"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Chat reaction",
           "ChangeType": "Addition",
@@ -1425,7 +2034,7 @@
           "Target": "Chat reaction"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Get all channel messages API",
           "ChangeType": "Addition",
@@ -1433,7 +2042,7 @@
           "Target": "Get all channel messages API"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Get channel message API",
           "ChangeType": "Addition",
@@ -1441,7 +2050,7 @@
           "Target": "Get channel message API"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Get all message replies API",
           "ChangeType": "Addition",
@@ -1449,7 +2058,7 @@
           "Target": "Get all message replies API"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Get reply to a message API",
           "ChangeType": "Addition",
@@ -1457,7 +2066,7 @@
           "Target": "Get reply to a message API"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "/users/{id}/joinedTeams",
           "ChangeType": "Addition",
@@ -1465,7 +2074,7 @@
           "Target": "/users/{id}/joinedTeams"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Get all channel messages API",
           "ChangeType": "Addition",
@@ -1473,7 +2082,7 @@
           "Target": "Get all channel messages API"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Get channel message API",
           "ChangeType": "Addition",
@@ -1481,7 +2090,7 @@
           "Target": "Get channel message API"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Get all message replies API",
           "ChangeType": "Addition",
@@ -1489,7 +2098,7 @@
           "Target": "Get all message replies API"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Get reply to a message API",
           "ChangeType": "Addition",
@@ -1497,7 +2106,7 @@
           "Target": "Get reply to a message API"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Chat attachment",
           "ChangeType": "Addition",
@@ -1505,7 +2114,7 @@
           "Target": "Chat attachment"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Chat mention",
           "ChangeType": "Addition",
@@ -1513,7 +2122,7 @@
           "Target": "Chat mention"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "Chat reaction",
           "ChangeType": "Addition",
@@ -1521,7 +2130,7 @@
           "Target": "Chat reaction"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "chatmessage",
           "ChangeType": "Change",
@@ -1529,7 +2138,7 @@
           "Target": "chatmessage"
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1537,7 +2146,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1545,7 +2154,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1553,7 +2162,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1561,7 +2170,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1569,7 +2178,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1577,7 +2186,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1585,7 +2194,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1593,7 +2202,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1601,7 +2210,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1609,7 +2218,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1617,7 +2226,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1625,7 +2234,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "",
           "ChangeType": "Deletion",
@@ -1633,7 +2242,7 @@
           "Target": ""
         },
         {
-          "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+          "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
           "ApiChange": "Resource",
           "ChangedApiName": "list all teams in organization",
           "ChangeType": "Addition",
@@ -1641,7 +2250,7 @@
           "Target": "list all teams in organization"
         }
       ],
-      "Id": "ef333152-fcef-40b6-9fc0-9b47d87c8712",
+      "Id": "e2660e6f-8565-48f2-aa36-7cb307fa2b5f",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-07-01T00:00:00",
@@ -1651,7 +2260,7 @@
     {
       "ChangeList": [
         {
-          "Id": "313095f0-040e-427b-8ecf-47f5b0161160",
+          "Id": "a15ed052-b326-4262-8af8-346e54bec90f",
           "ApiChange": "Resource",
           "ChangedApiName": "archive,unarchive",
           "ChangeType": "Addition",
@@ -1659,7 +2268,7 @@
           "Target": "archive,unarchive"
         },
         {
-          "Id": "313095f0-040e-427b-8ecf-47f5b0161160",
+          "Id": "a15ed052-b326-4262-8af8-346e54bec90f",
           "ApiChange": "Resource",
           "ChangedApiName": "clone",
           "ChangeType": "Addition",
@@ -1667,7 +2276,7 @@
           "Target": "clone"
         },
         {
-          "Id": "313095f0-040e-427b-8ecf-47f5b0161160",
+          "Id": "a15ed052-b326-4262-8af8-346e54bec90f",
           "ApiChange": "Resource",
           "ChangedApiName": "apps",
           "ChangeType": "Addition",
@@ -1675,7 +2284,7 @@
           "Target": "apps"
         },
         {
-          "Id": "313095f0-040e-427b-8ecf-47f5b0161160",
+          "Id": "a15ed052-b326-4262-8af8-346e54bec90f",
           "ApiChange": "Resource",
           "ChangedApiName": "team",
           "ChangeType": "Change",
@@ -1683,7 +2292,7 @@
           "Target": "team"
         },
         {
-          "Id": "313095f0-040e-427b-8ecf-47f5b0161160",
+          "Id": "a15ed052-b326-4262-8af8-346e54bec90f",
           "ApiChange": "Resource",
           "ChangedApiName": "channel",
           "ChangeType": "Change",
@@ -1691,7 +2300,7 @@
           "Target": "channel"
         }
       ],
-      "Id": "313095f0-040e-427b-8ecf-47f5b0161160",
+      "Id": "a15ed052-b326-4262-8af8-346e54bec90f",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-06-01T00:00:00",
@@ -1701,7 +2310,7 @@
     {
       "ChangeList": [
         {
-          "Id": "eb33cfce-8e8e-41a1-ab14-d8bfb284c505",
+          "Id": "86ba11c7-5a72-4c9d-8a98-dca781caadd9",
           "ApiChange": "Resource",
           "ChangedApiName": "teamMemberSettings",
           "ChangeType": "Addition",
@@ -1709,7 +2318,7 @@
           "Target": "teamMemberSettings"
         },
         {
-          "Id": "eb33cfce-8e8e-41a1-ab14-d8bfb284c505",
+          "Id": "86ba11c7-5a72-4c9d-8a98-dca781caadd9",
           "ApiChange": "Resource",
           "ChangedApiName": "teamGuestSettings",
           "ChangeType": "Addition",
@@ -1717,7 +2326,7 @@
           "Target": "teamGuestSettings"
         },
         {
-          "Id": "eb33cfce-8e8e-41a1-ab14-d8bfb284c505",
+          "Id": "86ba11c7-5a72-4c9d-8a98-dca781caadd9",
           "ApiChange": "Resource",
           "ChangedApiName": "teamMessagingSettings",
           "ChangeType": "Addition",
@@ -1725,7 +2334,7 @@
           "Target": "teamMessagingSettings"
         },
         {
-          "Id": "eb33cfce-8e8e-41a1-ab14-d8bfb284c505",
+          "Id": "86ba11c7-5a72-4c9d-8a98-dca781caadd9",
           "ApiChange": "Resource",
           "ChangedApiName": "teamFunSettings",
           "ChangeType": "Addition",
@@ -1733,7 +2342,7 @@
           "Target": "teamFunSettings"
         },
         {
-          "Id": "eb33cfce-8e8e-41a1-ab14-d8bfb284c505",
+          "Id": "86ba11c7-5a72-4c9d-8a98-dca781caadd9",
           "ApiChange": "Resource",
           "ChangedApiName": "delete channel",
           "ChangeType": "Addition",
@@ -1741,7 +2350,7 @@
           "Target": "delete channel"
         },
         {
-          "Id": "eb33cfce-8e8e-41a1-ab14-d8bfb284c505",
+          "Id": "86ba11c7-5a72-4c9d-8a98-dca781caadd9",
           "ApiChange": "Resource",
           "ChangedApiName": "patch channel",
           "ChangeType": "Addition",
@@ -1749,7 +2358,7 @@
           "Target": "patch channel"
         },
         {
-          "Id": "eb33cfce-8e8e-41a1-ab14-d8bfb284c505",
+          "Id": "86ba11c7-5a72-4c9d-8a98-dca781caadd9",
           "ApiChange": "Property",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
@@ -1757,7 +2366,7 @@
           "Target": "team"
         },
         {
-          "Id": "eb33cfce-8e8e-41a1-ab14-d8bfb284c505",
+          "Id": "86ba11c7-5a72-4c9d-8a98-dca781caadd9",
           "ApiChange": "Resource",
           "ChangedApiName": "channel",
           "ChangeType": "Change",
@@ -1765,7 +2374,7 @@
           "Target": "channel"
         }
       ],
-      "Id": "eb33cfce-8e8e-41a1-ab14-d8bfb284c505",
+      "Id": "86ba11c7-5a72-4c9d-8a98-dca781caadd9",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2018-04-01T00:00:00",
@@ -1775,7 +2384,7 @@
     {
       "ChangeList": [
         {
-          "Id": "b33551f8-46f8-408b-81aa-1762206562de",
+          "Id": "914d38f6-9b2b-4e35-8935-4454404a98a2",
           "ApiChange": "Resource",
           "ChangedApiName": "team",
           "ChangeType": "Addition",
@@ -1783,7 +2392,7 @@
           "Target": "team"
         },
         {
-          "Id": "b33551f8-46f8-408b-81aa-1762206562de",
+          "Id": "914d38f6-9b2b-4e35-8935-4454404a98a2",
           "ApiChange": "Resource",
           "ChangedApiName": "create,get,update,team",
           "ChangeType": "Addition",
@@ -1791,7 +2400,7 @@
           "Target": "create,get,update,team"
         }
       ],
-      "Id": "b33551f8-46f8-408b-81aa-1762206562de",
+      "Id": "914d38f6-9b2b-4e35-8935-4454404a98a2",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2017-10-01T00:00:00",

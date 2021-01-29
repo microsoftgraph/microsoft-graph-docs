@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 const workbookTableRow = {
-  index: 5,
   values: [
     [1, 2, 3],
     [4, 5, 6]

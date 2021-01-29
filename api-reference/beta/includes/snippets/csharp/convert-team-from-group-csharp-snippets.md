@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var team = new Team
 {
-	Channels = (ITeamChannelsCollectionPage)new List<Channel>()
+	Channels = new TeamChannelsCollectionPage()
 	{
 		new Channel
 		{
@@ -29,7 +29,7 @@ var team = new Team
 		AllowCreateUpdateRemoveTabs = false,
 		AllowCreateUpdateRemoveConnectors = false
 	},
-	InstalledApps = (ITeamInstalledAppsCollectionPage)new List<TeamsAppInstallation>()
+	InstalledApps = new TeamInstalledAppsCollectionPage()
 	{
 		new TeamsAppInstallation
 		{

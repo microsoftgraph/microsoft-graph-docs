@@ -11,7 +11,7 @@ var b2cIdentityUserFlow = new B2cIdentityUserFlow
 	Id = "Customer",
 	UserFlowType = UserFlowType.SignUpOrSignIn,
 	UserFlowTypeVersion = 3f,
-	IdentityProviders = (IB2cIdentityUserFlowIdentityProvidersCollectionPage)new List<IdentityProvider>()
+	IdentityProviders = new B2cIdentityUserFlowIdentityProvidersCollectionPage()
 	{
 		new IdentityProvider
 		{

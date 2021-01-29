@@ -19,7 +19,6 @@ MSGraphPrivilegedRoleAssignmentRequest *privilegedRoleAssignmentRequest = [[MSGr
 MSGraphGovernanceSchedule *schedule = [[MSGraphGovernanceSchedule alloc] init];
 [schedule setStartDateTime: "2018-02-08T02:35:17.903Z"];
 [privilegedRoleAssignmentRequest setSchedule:schedule];
-[privilegedRoleAssignmentRequest setEvaluateOnly: false];
 [privilegedRoleAssignmentRequest setType:@"UserAdd"];
 [privilegedRoleAssignmentRequest setAssignmentState:@"Active"];
 [privilegedRoleAssignmentRequest setRoleId:@"88d8e3e3-8f55-4a1e-953a-9b9898b8876b"];

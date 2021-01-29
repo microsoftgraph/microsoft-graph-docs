@@ -122,7 +122,9 @@ Content-length: 100
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
   "name": "name-value",
-  "item": "{message or event entity}"
+  "item": {
+    "@odata.type": "microsoft.graph.message"
+  }
 }
 ```
 # [C#](#tab/csharp)

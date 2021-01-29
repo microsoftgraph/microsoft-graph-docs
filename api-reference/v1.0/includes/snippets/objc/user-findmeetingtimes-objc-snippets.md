@@ -25,11 +25,11 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 payloadDictionary[@"attendees"] = attendeesList;
 
 MSGraphLocationConstraint *locationConstraint = [[MSGraphLocationConstraint alloc] init];
-[locationConstraint setIsRequired:@"false"];
-[locationConstraint setSuggestLocation:@"false"];
+[locationConstraint setIsRequired: false];
+[locationConstraint setSuggestLocation: false];
 NSMutableArray *locationsList = [[NSMutableArray alloc] init];
 MSGraphLocationConstraintItem *locations = [[MSGraphLocationConstraintItem alloc] init];
-[locations setResolveAvailability:@"false"];
+[locations setResolveAvailability: false];
 [locations setDisplayName:@"Conf room Hood"];
 [locationsList addObject: locations];
 [locationConstraint setLocations:locationsList];

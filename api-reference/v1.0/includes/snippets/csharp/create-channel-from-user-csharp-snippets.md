@@ -11,7 +11,7 @@ var channel = new Channel
 	MembershipType = ChannelMembershipType.Private,
 	DisplayName = "My First Private Channel",
 	Description = "This is my first private channels",
-	Members = (IChannelMembersCollectionPage)new List<ConversationMember>()
+	Members = new ChannelMembersCollectionPage()
 	{
 		new AadUserConversationMember
 		{

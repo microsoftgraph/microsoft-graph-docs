@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var delta = await graphClient.Oauth2permissiongrants
+var delta = await graphClient.Oauth2PermissionGrants
 	.Delta()
 	.Request()
 	.GetAsync();

@@ -24,7 +24,7 @@ var message = new Message
 			}
 		}
 	},
-	Extensions = (IMessageExtensionsCollectionPage)new List<Extension>()
+	Extensions = new MessageExtensionsCollectionPage()
 	{
 		new OpenTypeExtension
 		{

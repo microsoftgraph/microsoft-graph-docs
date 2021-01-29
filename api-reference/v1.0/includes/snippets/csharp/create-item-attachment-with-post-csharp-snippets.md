@@ -13,7 +13,7 @@ var post = new Post
 		ContentType = BodyType.Text,
 		Content = "I attached an event."
 	},
-	Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
+	Attachments = new PostAttachmentsCollectionPage()
 	{
 		new ItemAttachment
 		{

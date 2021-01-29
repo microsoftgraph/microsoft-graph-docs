@@ -16,7 +16,7 @@ Represents the objects that will be provisioned and the synchronization rules ex
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ruleId|String|The identifier of a the synchronizationRule to be applied; optional for a synchronizationJob with a single synchronizationRule.|
+|ruleId|String|The identifier of a the synchronizationRule to be applied.|
 |subjects|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md) collection|The identifiers of one or more objects to which a synchronizationJob is to be applied.|
 
 ## Relationships

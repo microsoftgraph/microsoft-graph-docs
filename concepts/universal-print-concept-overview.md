@@ -29,7 +29,7 @@ Follow these steps to submit print jobs to printerShare:
 
 1. [Create a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta) and store the resulting document ID.
 2. [Create an uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) for the document. 
-3. [Upload bytes to the created upload session](/upload-data-to-upload-session).
+3. [Upload bytes to the created upload session](./upload-data-to-upload-session.md).
 4. [Start the print job](/graph/api/printjob-start?view=graph-rest-beta).
 
 ### Manage printers
@@ -45,12 +45,12 @@ Keeping track of an organization's printers, printer configurations, and printer
   * [List monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta)
 
 * **Configure user permissions** by modifying user and group membership on printers:
-  * [List allowedUsers](/graph/api/printer-list-allowedusers?view=graph-rest-beta)
-  * [Add allowedUser](/graph/api/printer-post-allowedusers?view=graph-rest-beta)
-  * [Remove allowedUser](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)
-  * [List allowedGroups](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)
-  * [Add allowedGroup](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)
-  * [Remove allowedGroup](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)
+  * [List allowedUsers](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)
+  * [Add allowedUser](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)
+  * [Remove allowedUser](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)
+  * [List allowedGroups](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)
+  * [Add allowedGroup](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)
+  * [Remove allowedGroup](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)
 
 ### Seamlessly replace or update printer hardware
 
@@ -81,8 +81,6 @@ Follow these steps to enable pull printing:
 6. When the user swipes a badge at a physical printer device, the printer will notify your application. At that time, your application can [fetch the jobs of the associated virtual printer](/graph/api/printer-list-jobs?view=graph-rest-beta) and filter the list to jobs created by the current user.
 
 7. When the user selects one or more jobs to print, your application can [redirect the print job(s)](/graph/api/printjob-redirect?view=graph-rest-beta) to the physical printer and the job will start printing! The redirect call will only succeed if there is a [printTask](/graph/api/resources/printtask?view=graph-rest-beta) in `processing` state on the associated printer started by a trigger that this app created in step 4. The task will automatically be set to `completed` state after redirecting it.
-
-   >**NOTE:** Paused print jobs that are not redirected within 2 days will be deleted.
 
 ## API reference
 Looking for the API reference for this service?

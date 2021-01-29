@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const workbookNamedItem = {
-  name: "test7",
-  formula: "=SUM(Sheet2!$A$1+Sheet2!$A$2)",
+  name: "test5",
+  reference: "=Sheet1!$F$15:$N$27",
   comment: "Comment for the named item"
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/addFormulaLocal')
+let res = await client.api('/me/drive/items/{id}/workbook/names/add')
 	.post(workbookNamedItem);
 
 ```

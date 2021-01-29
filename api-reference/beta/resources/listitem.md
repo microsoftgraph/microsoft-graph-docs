@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource represents an item in a SharePoint **[list][]**.
+Represents an item in a SharePoint [list][].
+
+All items in a SharePoint document library can be represented as a **listItem** or [driveItem][] resource.
+
 Column values in the list are available through the `fieldValueSet` dictionary.
 
 ## Tasks on a listItem

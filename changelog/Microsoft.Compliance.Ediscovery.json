@@ -1,0 +1,86 @@
+{
+	"changelog": [
+		{
+			"ChangeList": [
+				{
+					"Id": "7830257c-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "custodians",
+					"ChangeType": "Addition",
+					"Description": "Added the **custodians** relationship to [ediscoveryCase](https://docs.microsoft.com/graph/api/resources/ediscoveryCase?view=graph-rest-beta) resource",
+					"Target": "ediscoveryCase"
+				},
+				{
+					"Id": "783286cc-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "custodian",
+					"ChangeType": "Addition",
+					"Description": "Added the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource type",
+					"Target": "custodian"
+				},
+				{
+					"Id": "783ac40d-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "unifiedGroupSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedGroupSource?view=graph-rest-beta) resource type",
+					"Target": "unifiedGroupSource"
+				},
+				{
+					"Id": "783d27dc-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "siteSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [siteSource](https://docs.microsoft.com/graph/api/resources/siteSource?view=graph-rest-beta) resource type",
+					"Target": "siteSource"
+				},
+				{
+					"Id": "783f8b3b-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "userSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [userSource](https://docs.microsoft.com/graph/api/resources/userSource?view=graph-rest-beta) resource type",
+					"Target": "userSource"
+				},
+				{
+					"Id": "7842c333-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "custodianStatus",
+					"ChangeType": "Addition",
+					"Description": "Added the **custodianStatus** enumeration type to [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta)",
+					"Target": "custodianStatus"
+				},
+				{
+					"Id": "78452752-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "sourceType",
+					"ChangeType": "Addition",
+					"Description": "Added the **sourceType** enumeration type to [userSource](https://docs.microsoft.com/graph/api/resources/usersource?view=graph-rest-beta) and [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedgroupsource?view=graph-rest-beta)",
+					"Target": "sourceType"
+				},
+				{
+					"Id": "784c4f76-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Method",
+					"ChangedApiName": "release",
+					"ChangeType": "Addition",
+					"Description": "Added the [release](https://docs.microsoft.com/graph/api/custodian-release?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource",
+					"Target": "custodian"
+				},
+				{
+					"Id": "784eb056-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Method",
+					"ChangedApiName": "activate",
+					"ChangeType": "Addition",
+					"Description": "Added the [activate](https://docs.microsoft.com/graph/api/custodian-activate?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource",
+					"Target": "custodian"
+				}
+			],
+			"Id": "782dc913-17be-11eb-baa1-5b13c31fb2cd",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2020-12-07T19:07:19.242Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
+		}
+	]
+}

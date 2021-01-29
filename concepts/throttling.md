@@ -169,7 +169,7 @@ The following resources are provided by the Outlook service.
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
+| [Presence](/graph/api/resources/presence) (preview)   | 1500 requests in a 30 second period, per application per tenant |
 
 ### OneNote service limits
 
@@ -275,7 +275,7 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 | ---------- | ----------- | -------------- |
 | application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
 | application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
-| tenant | Not Applicable | 9000 per 5 minutes |
+| tenant | Not Applicable | 18,000 per 5 minutes |
 
 > **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 
@@ -498,3 +498,17 @@ dataPolicyOperation.
 [!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
 
 <!-- { "blockType": "throttlinggenend" } -->
+
+### Assignment service limits
+
+The following limits apply to requests on the assignment service beta API:
+
+| Request Type                 | Limit per app per tenant     | Limit per tenant for all apps |
+|---------------------------|------------------------------|----------------------------|
+| Any         | 5000 requests per 10 seconds   | 15 000 requests per 10 seconds |
+| GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |  
+
+The preceding limits apply to the following resources: 
+[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
+[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
+[educationResource](/graph/api/resources/educationresource?view=graph-rest-beta)

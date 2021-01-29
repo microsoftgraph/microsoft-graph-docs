@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "9563736b-dcdb-4e44-9482-b03dbeb69738",
+          "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",
           "ApiChange": "Resource",
           "ChangedApiName": "workbookOperation,workbook",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "workbookOperation,workbook"
         },
         {
-          "Id": "9563736b-dcdb-4e44-9482-b03dbeb69738",
+          "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",
           "ApiChange": "Resource",
           "ChangedApiName": "Get workbookOperation,workbookOperation",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "Get workbookOperation,workbookOperation"
         }
       ],
-      "Id": "9563736b-dcdb-4e44-9482-b03dbeb69738",
+      "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2020-07-01T00:00:00",
@@ -29,7 +29,7 @@
     {
       "ChangeList": [
         {
-          "Id": "f7114a5e-a183-43f3-823f-699e1a0b343a",
+          "Id": "fcbd588d-a8f1-46f1-9725-365c357f2f02",
           "ApiChange": "Property",
           "ChangedApiName": "legacyId,id,legacyId",
           "ChangeType": "Change",
@@ -37,7 +37,7 @@
           "Target": "Excel Table"
         }
       ],
-      "Id": "f7114a5e-a183-43f3-823f-699e1a0b343a",
+      "Id": "fcbd588d-a8f1-46f1-9725-365c357f2f02",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2018-03-01T00:00:00",
@@ -47,7 +47,7 @@
     {
       "ChangeList": [
         {
-          "Id": "5913805d-0cdc-493c-bfdf-6c1574c68974",
+          "Id": "bacce3a8-5bf2-4c2e-aec1-e03176910c02",
           "ApiChange": "Property",
           "ChangedApiName": "",
           "ChangeType": "Addition",
@@ -55,7 +55,7 @@
           "Target": ""
         }
       ],
-      "Id": "5913805d-0cdc-493c-bfdf-6c1574c68974",
+      "Id": "bacce3a8-5bf2-4c2e-aec1-e03176910c02",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-12-01T00:00:00",
@@ -65,7 +65,7 @@
     {
       "ChangeList": [
         {
-          "Id": "933b0222-6e61-439a-b072-f5423d1449fe",
+          "Id": "97f0ddf6-07f8-45b1-b74e-ef8070b80d97",
           "ApiChange": "Resource",
           "ChangedApiName": "Power your apps with the new Excel REST API on the Microsoft Graph",
           "ChangeType": "Addition",
@@ -73,7 +73,7 @@
           "Target": "Power your apps with the new Excel REST API on the Microsoft Graph"
         }
       ],
-      "Id": "933b0222-6e61-439a-b072-f5423d1449fe",
+      "Id": "97f0ddf6-07f8-45b1-b74e-ef8070b80d97",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2016-08-01T00:00:00",
@@ -83,7 +83,7 @@
     {
       "ChangeList": [
         {
-          "Id": "64d7d358-a3c2-4ce8-a1e8-e504216caae3",
+          "Id": "c26b71a5-2e97-4529-ae9c-93dfa37dabb3",
           "ApiChange": "Resource",
           "ChangedApiName": "Working with Excel in Microsoft Graph",
           "ChangeType": "Addition",
@@ -91,7 +91,7 @@
           "Target": "Working with Excel in Microsoft Graph"
         }
       ],
-      "Id": "64d7d358-a3c2-4ce8-a1e8-e504216caae3",
+      "Id": "c26b71a5-2e97-4529-ae9c-93dfa37dabb3",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2016-03-01T00:00:00",

@@ -26,8 +26,8 @@ A group of settings that a printer should use to print a job.
 |duplexMode|printDuplexMode|The duplex mode the printer should use when printing the job. Valid values are described in the table below. Read-only.|
 |copies|Int32|The number of copies that should be printed. Read-only.|
 |colorMode|printColorMode|The color mode the printer should use to print the job. Valid values are described in the table below. Read-only.|
-|inputBin|String|The input bin (tray) to use when printing. See the printer's [capabilities](../api/printer-getcapabilities.md) for a list of supported input bins.|
-|outputBin|String|The output bin to place completed prints into. See the printer's [capabilities](../api/printer-getcapabilities.md) for a list of supported output bins.|
+|inputBin|String|The input bin (tray) to use when printing. See the printer's [capabilities](printercapabilities.md) for a list of supported input bins.|
+|outputBin|String|The output bin to place completed prints into. See the printer's [capabilities](printercapabilities.md) for a list of supported output bins.|
 |mediaSize|String|The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.|
 |margin|[printMargin](printmargin.md)|The margin settings to use when printing.|
 |mediaType|String|The default media (such as paper) type to print the document on. Valid values are described in the following table.|
@@ -162,7 +162,6 @@ The following is a JSON representation of the resource.
   "collate": true,
   "scaling": {"@odata.type": "microsoft.graph.printScaling"}
 }
-
 ```
 
 

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Used to specify the classification of a delegated permission.
 
-Delegated permission classifications can be used in combination with user consent settings to choose which permissions a user is allowed to consent to. See [Configure how end-users consent to applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-user-consent) to learn more about permission classifications.
+Delegated permission classifications can be used in combination with user consent settings to choose which permissions a user is allowed to consent to. See [Configure how end-users consent to applications](/azure/active-directory/manage-apps/configure-user-consent) to learn more about permission classifications.
 
 ## Properties
 

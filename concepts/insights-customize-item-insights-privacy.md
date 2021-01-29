@@ -23,39 +23,38 @@ Item insights settings provide flexibility for administrators to use Azure AD to
 The next section describes using PowerShell cmdlets to configure insights settings. If you're using the REST API, skip the next section and continue with [Configure item insights using REST API](#configure-item-insights-using-rest-api). Then refer to the [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
 
 ### How to configure item insights setting via PowerShell?
-Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](/graph/powershell/installation) to set item insights for an entire organization or for specific groups.
+Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](./powershell/installation.md) to set item insights for an entire organization or for specific groups.
 
 #### Additional prerequisites
 * **PowerShell module** - Install [module version 0.9.1 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
 * **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
 #### Command examples
+> [!NOTE]
+> Because item insights commands are only available in beta, switch to the beta profile before calling it.
+> ```powershell
+>    Select-MgProfile beta
+> ```
 To get item insights configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$OrgID` with your applicable ID organization:
 ```powershell
    Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
 ```
 
-By default, item insights are enabled for the entire organization. You can use the Microsoft Graph PowerShell module  to change that and disable item insights for everyone in the organization. Use the following command, where you replace `$OrgID` with your organization ID and specify `-IsEnabledInOrganization` as `false` :
+By default, item insights are enabled for the entire organization. You can use the Microsoft Graph PowerShell module to change that and disable item insights for everyone in the organization. 
+> [!NOTE]
+> The update method requires additional `User.ReadWrite` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> ```powershell
+>    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
+> ```
+
+Use the following command, where you replace `$OrgID` with your organization ID and specify `-IsEnabledInOrganization` as `false`.
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
 ```
-Alternatively, you can change the default and disable item insights for a specific Azure AD group. Use the following command, where you replace `$OrgID` with your organization ID, and `$GroupID` with the Azure AD group ID:
+Alternatively, you can change the default and disable item insights for a specific Azure AD group. Use the following command, where you replace `$OrgID` with your organization ID, and `$GroupID` with the Azure AD group ID.
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
 ```
-
-#### Using earlier versions of the PowerShell module
-
-If you use Microsoft Graph PowerShell module version 0.9.0 or lower, use one of two ways to call the `Update-MgOrganizationSettingItemInsight` cmdlet, as shown in the following examples: 
-
-- Add `-AdditionalProperties @{}` to the end of command:
-  ```powershell
-  Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup 28f9ceac-39aa-4829-9a67-b8f1db11eaa1 -AdditionalProperties @{}
-  ```
-- Or, use `-BodyParameter`: 
-  ```powershell
-  Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -BodyParameter @{DisabledForGroup = "85f741b4-e924-41a8-abf8-d61a7b950bb5"; IsEnabledInOrganization = $false}
-  ```
 
 ### Configure item insights using REST API
 As stated earlier, by default, item insights privacy settings are enabled for the entire organization. You can change the default in one of two ways:
@@ -82,6 +81,8 @@ Keep the following in mind when updating item insights settings:
 Some [trending](/graph/api/resources/insights-trending) or [used](/graph/api/resources/insights-used) insights may be affected as described below. Over time, the scope and types of these insights will be extended. 
 
 - The profile card of a user who has disabled item insights does not show their **used** documents. The same limitation applies to the profile result of Microsoft Search in Bing, where the **Recent Files** panel becomes empty. Furthermore, the precision of acronym-expansion in search is reduced.
+
+- Disabling item insights will stop [suggested meeting hours](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US) from being calculated and shown to the user on their profile card. 
 
 - In Delve, a user who has disabled item insights has their documents hidden. 
 

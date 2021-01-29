@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 MailFolder mailFolder = new MailFolder();
-mailFolder.displayName = "displayName-value";
+mailFolder.displayName = "Clutter";
 
 graphClient.me().mailFolders()
 	.buildRequest()

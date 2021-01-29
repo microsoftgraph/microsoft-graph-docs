@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphWorkbookTableColumn *workbookTableColumn = [[MSGraphWorkbookTableColumn alloc] init];
-[workbookTableColumn setId: 99];
+[workbookTableColumn setId:@"99"];
 [workbookTableColumn setName:@"name-value"];
 [workbookTableColumn setIndex: 99];
 [workbookTableColumn setValues:@"values-value"];

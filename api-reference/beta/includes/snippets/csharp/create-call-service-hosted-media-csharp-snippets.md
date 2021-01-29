@@ -9,16 +9,29 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var call = new Call
 {
 	CallbackUri = "https://bot.contoso.com/callback",
+	Source = new ParticipantInfo
+	{
+		Identity = new IdentitySet
+		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"applicationInstance", "{\"@odata.type\":\"#microsoft.graph.identity\",\"displayName\":\"Calling Bot\",\"id\":\"3d913abb-aec0-4964-8fa6-3c6850c4f278\"}"}
+			}
+		},
+		CountryCode = null,
+		EndpointType = null,
+		Region = null,
+		LanguageId = null
+	},
 	Targets = new List<InvitationParticipantInfo>()
 	{
 		new InvitationParticipantInfo
 		{
 			Identity = new IdentitySet
 			{
-				User = new Identity
+				AdditionalData = new Dictionary<string, object>()
 				{
-					DisplayName = "John",
-					Id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+					{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
 				}
 			}
 		}
@@ -27,8 +40,9 @@ var call = new Call
 	{
 		Modality.Audio
 	},
-	MediaConfig = new ServiceHostedMediaConfig
+	MediaConfig = new AppHostedMediaConfig
 	{
+		Blob = "<Media Session Configuration>"
 	}
 };
 

@@ -7,24 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teamwork/workforceIntegrations"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teamwork/workforceIntegrations/{workforceIntegrationId}"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphWorkforceIntegration *workforceIntegrations = [[MSGraphWorkforceIntegration alloc] init];
-[workforceIntegrations setDisplayName:@"displayName-value"];
-[workforceIntegrations setApiVersion: 99];
+MSGraphWorkforceIntegration *workforceIntegration = [[MSGraphWorkforceIntegration alloc] init];
+[workforceIntegration setDisplayName:@"displayName-value"];
+[workforceIntegration setApiVersion: 99];
 MSGraphWorkforceIntegrationEncryption *encryption = [[MSGraphWorkforceIntegrationEncryption alloc] init];
 [encryption setProtocol: [MSGraphWorkforceIntegrationEncryptionProtocol sharedSecret]];
 [encryption setSecret:@"secret-value"];
-[workforceIntegrations setEncryption:encryption];
-[workforceIntegrations setIsActive: true];
-[workforceIntegrations setUrl:@"url-value"];
-[workforceIntegrations setSupports: [MSGraphWorkforceIntegrationSupportedEntities none]];
+[workforceIntegration setEncryption:encryption];
+[workforceIntegration setIsActive: true];
+[workforceIntegration setUrl:@"url-value"];
+[workforceIntegration setSupports: [MSGraphWorkforceIntegrationSupportedEntities none]];
 
 NSError *error;
-NSData *workforceIntegrationsData = [workforceIntegrations getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:workforceIntegrationsData];
+NSData *workforceIntegrationData = [workforceIntegration getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:workforceIntegrationData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

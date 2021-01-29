@@ -3,7 +3,7 @@ title: "Microsoft 365 activations reports"
 description: "The Microsoft 365 activation report gives you a view of which users have activated their Microsoft 365 subscriptions on at least one device. It provides a breakdown of the Microsoft 365 ProPlus, Project, and Visio Pro for Microsoft 365 subscription activations, as well as the breakdown of activations across desktop and devices. This report could help you identify users who might need additional support to activate their Office subscription."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: conceptualPageType
 ---
 

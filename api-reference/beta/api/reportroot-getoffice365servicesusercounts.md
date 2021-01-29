@@ -3,7 +3,7 @@ title: "reportRoot: getOffice365ServicesUserCounts"
 description: "Get the count of users by activity type and service."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

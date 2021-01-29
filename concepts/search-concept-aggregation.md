@@ -6,9 +6,9 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Refine search results using aggregations
+# Refine search results using aggregations (preview)
 
-Refine search results and show their distribution in the index. 
+Refine search results and show their distribution in the index.
 
 ## Example 1: Request aggregations by string fields
 
@@ -125,7 +125,7 @@ Content-type: application/json
 
 In this example, we apply an aggregation filter that is based on the **aggregationFilterToken** returned for `docx` as the `FileType` field in example 1.
 
-The string value assigned to the **aggregationFilters** property follows the format **"{field}:\\"{aggregationFilterToken}\\""**.
+The string value assigned to the **aggregationFilters** property follows the format **"{field}:\\"{aggregationFilterToken}\\""**. If multiple values for the same filter are required, the string value assigned to the **aggregationFilters** property should follow this format : **"{field}:or(\\"{aggregationFilterToken1}\\",\\"{aggregationFilterToken2}\\")"**.
 
 ### Request
 
@@ -212,7 +212,7 @@ The response includes 3 **searchBucket** objects, one for each size range aggreg
 ### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
@@ -303,7 +303,7 @@ Content-type: application/json
 
 ## Known limitations
 
-Aggregations are supported only for SharePoint or OneDrive items. They are not supported for **message**, **event**, and **externalItem**.
+Aggregations are supported only for SharePoint or OneDrive items. They are not supported for **message** or **event**.
 
 ## Next steps
 

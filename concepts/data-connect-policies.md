@@ -22,46 +22,13 @@ If you would like to request support for additional policies , let us know on [U
 
 ## Licensing
 
-Access to the Microsoft Graph data connect toolset is available through Workplace Analytics, which is licensed on a per-user, per-month basis.  Organizations with Workplace Analytics can extend their insights from Microsoft 365 data by granting and governing access to their data at scale to applications developed in-house or by independent software vendors (ISVs). To learn more, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).
+Microsoft Graph data connect is currently available as part of the Workplace Analytics license, which is available on a per-user, per-month basis. Organizations with Workplace Analytics can extend their insights from Microsoft 365 data by granting and governing access to their data at scale. To learn more, including how to purchase, visit the  [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).
 
-If you’re an ISV, we also provide an option for you to build applications for customers who have not purchased Workplace Analytics. To do so, you must purchase enough licenses to associate them with all the users your application will access through Microsoft Graph data connect, for each customer who purchases your application. You can use this option along with Workplace Analytics licenses. You’ll need to take steps to associate instances of the Microsoft Graph data connect license with each of their customer installations.
+Starting February 1, 2021, Microsoft Graph data connect will transition to Azure Billing for all customers. The bill will be associated with the Azure Subscription of the Azure Data Factory you are using. The price in this new billing model is based on the number of Microsoft Graph objects you are accessing.
 
-### ISVs using the Microsoft Graph data connect license
-If you're an ISV using the data connect license, you must utilized [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to store and process the license assignment. You will need to [create a Key Vault](/azure/key-vault/quick-create-portal). During creation, note the Key Vault URI value. It will be used in the application definition to reference the Key Vault. After you create the Key Vault, ensure that the SPN used in the Source Linked Service of the application's ARM template has access to it. To do so, go to the **Access Policies** pane of the Key Vault instance, create an access policy for the application referenced by the SPN, and assign **Get** and **List** permissions to the application. 
+While this new billing capability is in preview, the rate is $0.375 for 1,000 Microsoft Graph objects. For example, if you access 10,000 total objects, you will receive an Azure bill for $3.75. At the end of the preview period, the rate will be $0.75 per 1,000 Microsoft Graph objects. The rates noted above will apply to Exchange message and Teams chat objects, including: BasicDataSet_v0.Contact, BasicDataSet_v0.Event, BasicDataSet_v0.Message, BasicDataSet_v0.SentItem, BasicDataSet_v0.MailFolder, and BasicDataSet_v0.CalendarView.
 
-![Creating access policy to Key Vault](images/data-connect-keyvault-access.png)
-
-The assignment of Microsoft Graph data connect licenses to organizations is provided as a secret in the Key Vault. To do so:
-1. Go to the Key Vault and under **Generate/Import**, create a manual secret. The name of the secret must be **MGdcSKUMapping** and the value of the secret must contain the ID of the tenant and the number of licenses allocated to that tenant, in the following format.
-
-`{"tenantId1" : 20, "tenantId2" : 35, "tenantId3" : 12}`
-
-2. After setting the value, make sure that it is enabled and select **Create** to begin the deployment. 
-
-![Creating the secret in Key Vault](images/data-connect-keyvault-create.png)
-
-3. You also need to update the application's ARM template to reference the Key Vault that you created. To do so, populated the **LicenseKeyVaultUri** property, which must be populated with the **KeyVaultUri** value you noted during creation. This property is provided in the Source Linked Service of the application's ARM template, as shown. 
-
-```
-"properties": {
-        "type": "Office365",
-	        "description": "Source O365 linked service",
-	        "typeProperties": {
-	               "office365tenantId": "[subscription().tenantId]",
-		"PrivacyPolicyUri": "http://www.wkw.com/privacy",
-		"TermsOfUseUri": "http://www.wkw.com/tos",
-		"servicePrincipalId": "[variables('sourceLinkedServicePrincipalId')]",
-		"servicePrincipalKey": {
-	                       "type": "SecureString",
-		        "value": "[variables('sourceLinkedServicePrincipalKey')]"
-		},
-		"servicePrincipalTenantId": "[variables('sourceLinkedServicePrincipalTenantId')]",
-	    "LicenseKeyVaultUri": "<KeyVaultUri>",
-	        }
-	}
-```
-
-Data connect will reference the secret in the Key Vault before each pipeline run. It will fail the pipeline if there aren't enough licenses assigned to the organization to provide data for each user, or if the Key Vault is inaccessible. 
+Objects for directory objects will not be charged, including: BasicDataSet_v0.User, BasicDataSet_v0.MailboxSettings, BasicDataSet_v0.Manager, and BasicDataSet_v0.DirectReport.
 
 ## Next Steps
-If you would like to request support for additional policies, let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581). To learn more about Workplace Analytics, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).
+If you would like to request support for additional policies or datasets, let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581). To learn more about Workplace Analytics, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).

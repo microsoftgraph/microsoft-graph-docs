@@ -21,11 +21,11 @@ const meetingTimeSuggestionsResult = {
     }
   ],  
   locationConstraint: { 
-    isRequired: "false",  
-    suggestLocation: "false",  
+    isRequired: false,  
+    suggestLocation: false,  
     locations: [ 
       { 
-        resolveAvailability: "false",
+        resolveAvailability: false,
         displayName: "Conf room Hood" 
       } 
     ] 

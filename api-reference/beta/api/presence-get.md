@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/me/presence
 [!INCLUDE [sample-code](../includes/snippets/objc/get-your-presence-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-your-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -92,9 +96,13 @@ Content-Type: application/json
 Content-Length: 1574
 
 {  
-	"id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-	"availability": "Available",
-	"activity": "Available"
+  "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+  "availability": "Available",
+  "activity": "Available",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
@@ -124,6 +132,10 @@ GET https://graph.microsoft.com/beta/users/66825e03-7ef5-42da-9069-724602c31f6b/
 [!INCLUDE [sample-code](../includes/snippets/objc/get-user-presence-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -142,9 +154,13 @@ Content-Type: application/json
 Content-Length: 1574
 
 {
-	"id": "66825e03-7ef5-42da-9069-724602c31f6b",
-	"availability": "DoNotDisturb",
-	"activity": "Presenting"
+  "id": "66825e03-7ef5-42da-9069-724602c31f6b",
+  "availability": "DoNotDisturb",
+  "activity": "Presenting",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
@@ -176,6 +192,10 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 [!INCLUDE [sample-code](../includes/snippets/objc/get-user-presences-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presences-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -192,13 +212,13 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 HTTP/1.1 200 OK
 
 {
-    "value": [
-        {
-            "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
-            "availability": "Away",
-            "activity": "BeRightBack"
-        }
-    ]
+  "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+  "availability": "Away",
+  "activity": "BeRightBack",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 

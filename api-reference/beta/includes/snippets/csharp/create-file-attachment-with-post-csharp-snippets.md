@@ -13,7 +13,7 @@ var post = new Post
 		ContentType = BodyType.Text,
 		Content = "Which quarter does that file cover? See my attachment."
 	},
-	Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
+	Attachments = new PostAttachmentsCollectionPage()
 	{
 		new FileAttachment
 		{

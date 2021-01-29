@@ -15,16 +15,16 @@ The profile API lets you, as app developers, model and represent people in Micro
 
 As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
 
-- "Who should this user contact for information on this topic?"
+- "Search for People who’s name starts with ‘J’"
 - "Which documents are most interesting to this person?"
 
 You can use the people API and insights API in Microsoft Graph to build smarter apps that can, respectively, access the relevant people and documents for a user.
 
-The people API returns people ordered by relevance to a user, based on that user's contacts, social networks, organization directory, and recent communications on email and Skype. This is particularly useful for people-picking scenarios.
+The people API returns people ordered by relevance to a user, based on that user's contacts, social networks, organization directory, and recent communications on email. This is particularly useful for people-picking scenarios.
 
 The insights API uses advanced analytics and machine learning to provide the most relevant files users need throughout their work day. The API powers familiar Microsoft 365 experiences, including Office Delve, SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
 
-![People and insights API return relevant people and documents for a user](images/social-intel-concept-overview-data.png)
+![People and insights API return relevant people and documents for a user](images/social-intel-concept-overview-data-update2020-1.png)
 
 ## Why integrate with people data?
 
@@ -44,19 +44,6 @@ Fuzzy searches return results based on an exact match and also on inferences abo
 ```http
 GET /me/people/?$search=j
 ```
-
-### Fuzzy searches based on topic criteria
-
-The people API also lets you perform searches for people who are relevant to the signed-in user, and have expressed an interest in communicating with that user over certain "topics". Topics are just words that have been used most by users in email conversations. Microsoft extracts such words, free of their contexts, and creates an index for this data to facilitate fuzzy searches.
-
-The following example illustrates inferences about the intent of a search on the topic "beetle":
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/people/?$search="topic:beetle" 
-```
-
-A fuzzy search in the topic data index return instances that mean the beetle insect, the iconic Volkswagen Beetle car, the Beatles band, and other definitions.
 
 ## Why integrate with the profile API (preview)?
 

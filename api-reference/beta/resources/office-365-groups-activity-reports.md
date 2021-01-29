@@ -3,7 +3,7 @@ title: "Microsoft 365 groups activity reports"
 description: "You can gain insights into the activity of Microsoft 365 groups in your organization and see how many Microsoft 365 groups are being created and used."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: conceptualPageType
 ---
 

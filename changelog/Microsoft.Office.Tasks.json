@@ -1,5 +1,71 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "a4350937-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "creationSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **creationSource** property to the [plannerTask](https://docs.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "a4376b5e-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "container",
+          "ChangeType": "Addition",
+          "Description": "Added the **container** property to the [plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "a439cfbe-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanContainer](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContainer?view=graph-rest-beta) resource,",
+          "Target": "plannerPlanContainer"
+        },
+        {
+          "Id": "a43c357f-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskCreation",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskCreation](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskCreation?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskCreation"
+        },
+        {
+          "Id": "a43e93b1-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTeamsPublicationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTeamsPublicationInfo](https://docs.microsoft.com/en-us/graph/api/resources/plannerTeamsPublicationInfo?view=graph-rest-beta) resource.",
+          "Target": "plannerTeamsPublicationInfo"
+        },
+        {
+          "Id": "a440f891-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "plannerContainerType",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerContainerType** enumeration type.",
+          "Target": "plannerContainerType"
+        },
+        {
+          "Id": "a440f891-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "owner",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **owner** property on the [plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        }
+      ],
+      "Id": "a432a5b2-340e-11eb-9836-6aeb5ee7dda6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-01-13T19:51:45.390Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

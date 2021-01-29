@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource request is a request to a add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages.
+In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource request is a request to a add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages, or to remove a resource from a catalog that is no longer needed by the access packages.
 
 ## Methods
 
@@ -30,10 +30,10 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String| Read-only.|
 |isValidationOnly|Boolean|If set, does not add the resource.|
-|justification|String|The requestor's justification for adding the resource.|
-|requestState|String| The outcome of whether the service was able to add the resource to the catalog.  The value is `Delivered` if the resource was added. Read-Only.|
+|justification|String|The requestor's justification for adding or removing the resource.|
+|requestState|String| The outcome of whether the service was able to add the resource to the catalog.  The value is `Delivered` if the resource was added or removed. Read-Only.|
 |requestStatus|String|Read-only.|
-|requestType|String|Use `AdminAdd` to add a resource, if the caller is an administrator or resource owner. |
+|requestType|String|Use `AdminAdd` to add a resource, if the caller is an administrator or resource owner, or `AdminRemove` to remove a resource. |
 
 ## Relationships
 

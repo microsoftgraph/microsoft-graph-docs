@@ -3,7 +3,7 @@ title: "reportRoot: getSkypeForBusinessActivityUserDetail"
 description: "Get details about Skype for Business activity by user."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

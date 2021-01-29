@@ -54,7 +54,7 @@ Let customers to create new [teams](/graph/api/resources/team?view=graph-rest-1.
 [Install](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) your 
 [Teams app](/microsoftteams/platform/#pivot=home&panel=home-all) in the new teams. 
 [Pin your app to a tab](/graph/api/teamstab-add?view=graph-rest-1.0) in the new channel. 
-[Send messages](/graph/api/channel-post-messages?view=graph-rest-beta) to the channel linking back to your website.
+[Send messages](/graph/api/channel-post-message?view=graph-rest-beta) to the channel linking back to your website.
 
 ### Create and manage multiple teams and channels
 
@@ -98,6 +98,10 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
 | [Activity feed](/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
 | [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
+
+### Get notified about changes
+
+Microsoft Teams supports subscribing to changes (create, update, and delete) to messages in [channels](/graph/api/resources/channel?preserve-view=true) and [chats](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) to allow apps to get near-instant updates. For details about how to subscribe to changes, see [Get change notifications for messages in channels and chats](teams-changenotifications-chatmessage).
 
 ## API reference
 

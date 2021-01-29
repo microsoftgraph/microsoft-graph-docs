@@ -66,8 +66,8 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-
 Content-type: application/json
 
 {
-     "displayName" : "My Query 1",
-     "query": "(subject:\"Quarterly Financials\")"
+   "displayName":"My Query 1",
+   "query":"(subject:\"Quarterly Financials\")"
 }
 ```
 # [C#](#tab/csharp)
@@ -80,6 +80,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reviewsetquery-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-reviewsetquery-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

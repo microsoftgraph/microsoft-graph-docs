@@ -95,6 +95,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -151,7 +155,7 @@ Content-length: 160
 
 ### Example 2: Import messages (text only)
 
-> **Note**: No special permission scopes are required for this scenario because the request is part of **chatMessage**; scopes for **chatMessage** apply here as well.
+> **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
 #### Request
 <!-- { "blockType": "ignored" } -->
@@ -243,7 +247,7 @@ HTTP/1.1 200 OK
 > [!NOTE]
 > Currently, inline images are the only media type supported by the import message API schema.
 
-> **Note**: No special permission scopes are required for this scenario because the request is part of **chatMessage**; scopes for **chatMessage** apply here as well.
+> **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
 
 #### Request
 <!-- { "blockType": "ignored" } -->
@@ -252,6 +256,15 @@ The following example shows how to import back-in-time messages containing inlin
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
 
+{
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "from":{
+      "user":{
+         "id":"id-value",
+         "displayName":"John Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
 {
    "body":{
       "contentType":"html",

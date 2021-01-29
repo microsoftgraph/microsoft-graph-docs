@@ -38,8 +38,7 @@ The following is a JSON representation of the access review settings property of
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.assignmentReviewSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.assignmentReviewSettings"
 }-->
 
 ```json

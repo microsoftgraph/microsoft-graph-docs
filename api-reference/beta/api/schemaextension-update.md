@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md).
+Update properties in the definition of the specified [schemaExtension](../resources/schemaextension.md). Additive updates to the extension can only be made when the extension is in the **InDevelopment** or **Available** status. 
+This means custom properties or target resource types cannot be removed from the definition, but new custom properties can be added and the description of the extension changed.
 
 The update applies to all the resources that are included in the **targetTypes** property of the extension. These resources are among the 
 [supporting resource types](/graph/extensibility-overview#supported-resources).
 
-Only the app that created a schema extension (owner app) can make additive updates to the extension when the extension is in the **InDevelopment** or **Available** status. 
-That means the app cannot remove custom properties or target resource types from the definition. The app can, however, change the description of the extension.
+For delegated flows, the signed-in user can update a schema extension as long as the **owner** property of the extension is set to the **appId** of an application the signed-in user owns. That application can be the one that initially created the extension, or some other application owned by the signed-in user. 
+
+This criteria for the **owner** property allows a signed-in user to make updates through other applications they don't own, such as Microsoft Graph Explorer. When using Graph Explorer to update a **schemaExtension** resource, include the **owner** property in the PATCH request body. For more information, see the [Extensions](/graph/known-issues#extensions) section in [Known issues with Microsoft Graph](/graph/known-issues).
 
 ## Permissions
 
@@ -31,9 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
-
-> [!NOTE]
-> Additionally for the delegated flow, the signed-in user can only update schemaExtensions they own (where the **owner** property of the schemaExtension is the `appId` of an application the signed-in user owns).
 
 ## HTTP request
 
@@ -69,6 +68,7 @@ If successful, this method returns a `204 No Content` response code.
 ##### Request
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -102,6 +102,10 @@ Content-length: 201
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-schemaextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-schemaextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

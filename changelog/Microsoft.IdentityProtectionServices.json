@@ -1,0 +1,25 @@
+{
+    "changelog": [{
+        "ChangeList": [{
+            "Id": "d4673d1c-2924-11eb-9746-158983535857",
+            "ApiChange": "Property",
+            "ChangedApiName": "userRiskLevels",
+            "ChangeType": "Addition",
+            "Description": "Added the **userRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-1.0) resource.",
+            "Target": "conditionalAccessConditionSet"
+        }, {
+            "Id": "d469a259-2924-11eb-9746-158983535857",
+            "ApiChange": "Member",
+            "ChangedApiName": "passwordChange",
+            "ChangeType": "Addition",
+            "Description": "Added the `passwordChange` member to the **conditionalAccessGrantControl** enumeration.",
+            "Target": "conditionalAccessGrantControl"
+        }],
+        "Id": "d464db13-2924-11eb-9746-158983535857",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2020-11-17T22:32:52.387Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Identity and sign-in"
+    }]
+}

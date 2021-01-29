@@ -20,7 +20,7 @@ Technology partners can integrate with the Microsoft platform using the Microsof
 
 The Microsoft Graph Security API is a unified API that provides a standard interface and uniform schema to integrate security alerts and threat intelligence from multiple sources, enrich alerts and data with contextual information, and automate security operations.
 
-The security API is part of the Microsoft Graph, which is a unified REST API for integrating data and intelligence from Microsoft and partner products and services. Using Microsoft Graph, customers and partners can rapidly build solutions that authenticate once and use a single API call to access or act on security insights from multiple security solutions. Additional value is uncovered when you explore the other [Microsoft Graph entities](https://docs.microsoft.com/graph/overview) (Microsoft 365, Azure Active Directory, Intune, and more) to tie business context with your security insights.
+The security API is part of the Microsoft Graph, which is a unified REST API for integrating data and intelligence from Microsoft and partner products and services. Using Microsoft Graph, customers and partners can rapidly build solutions that authenticate once and use a single API call to access or act on security insights from multiple security solutions. Additional value is uncovered when you explore the other [Microsoft Graph entities](./overview.md) (Microsoft 365, Azure Active Directory, Intune, and more) to tie business context with your security insights.
 
 Microsoft enables technology partner integration in two key ways.
 
@@ -73,21 +73,21 @@ The Microsoft Graph Security API partnering opportunities are made available via
 
 Supported entities:
 
-- **Alerts** are “conclusions with a security impact” rather than raw log data or other uncorrelated information. [Learn more](https://aka.ms/graphsecurityalerts).
-- **Threat Indicators**, also referred to as indicators of compromise or IoCs, represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers may generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. [Learn more](https://aka.ms/graphsecuritytiindicators).
-- **Security Actions** enable technology partners to expose functional capabilities via the Graph.  For example, if your security solution supports the ability to block IP addresses you can expose “Block IP” as a capability in the Graph. Other Graph Security API products can call your action via the Graph. [Learn more](https://aka.ms/graphsecurityaction).
-- **Secure Score**… [Learn more](https://aka.ms/graphsecurescore).
+- **Alerts** are “conclusions with a security impact” rather than raw log data or other uncorrelated information. [Learn more](/graph/api/resources/security-api-overview#alerts).
+- **Threat Indicators**, also referred to as indicators of compromise or IoCs, represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers may generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. [Learn more](/graph/api/resources/tiindicator).
+- **Security Actions** enable technology partners to expose functional capabilities via the Graph.  For example, if your security solution supports the ability to block IP addresses you can expose “Block IP” as a capability in the Graph. Other Graph Security API products can call your action via the Graph. [Learn more](/graph/api/resources/securityaction).
+- **Secure Score**… [Learn more](/graph/api/resources/securescores).
 
 ### Integrate your application with the Microsoft Graph Security API
 
-All integrated applications [must be registered](https://docs.microsoft.com/graph/auth-register-app-v2) with Microsoft Graph. Both applications used by a single customer as well as those used by many customers (multi-tenant) are supported.  In either case, the customer must grant consent for your application. When calling the Microsoft Graph, each request from your application will contain your application identifier and the customer you are calling on behalf of. The following types of requests are supported:
+All integrated applications [must be registered](./auth-register-app-v2.md) with Microsoft Graph. Both applications used by a single customer as well as those used by many customers (multi-tenant) are supported.  In either case, the customer must grant consent for your application. When calling the Microsoft Graph, each request from your application will contain your application identifier and the customer you are calling on behalf of. The following types of requests are supported:
 
 - **Get Alerts** – Get alert information with filtering as needed.  For example: Show me all the high priority alerts, or “all the high priority alerts” for a specific user, host, etc.
 - **Update Alert Status** – Enabling management of an alert lifecycle.  For example: setting an alerts status to “resolved” from “in progress” or adding comments to an alert.
 - **Get Secure Score** – Microsoft Secure Score is a “credit rating” type value for security configurations of Microsoft Products.
 - **Subscribe** - Allowing notification of changes to alerts or queries.
 - **Feed custom threat indicators** - Automatically send your threat indicators to Microsoft security solutions to enable Alert, Block, or Allow actions. Use the Microsoft Graph Security API directly or leverage integrations with leading threat intelligence platforms.
-- **Invoke a Microsoft Graph Security Action** – Take immediate action to defend against threats using the Microsoft Graph Security [securityActions](https://aka.ms/graphsecurityaction) entity.
+- **Invoke a Microsoft Graph Security Action** – Take immediate action to defend against threats using the Microsoft Graph Security [securityActions](/graph/api/resources/securityaction) entity.
 
 ### Enable others to integrate with your products through the Microsoft Graph Security API
 
@@ -101,12 +101,12 @@ Provider scenarios are widely varied. A curated onboarding process begins with i
 
 ### Onboarding guides and technical documentation
 
-- [Overview of the Microsoft Graph Security API](https://aka.ms/graphsecuritydocs)
-- [API reference](https://aka.ms/graphsecurityreferencebetadocs)
-- [alert schema](https://aka.ms/graphsecurityalertschema)
-- [tiIndicator schema](https://aka.ms/graphsecuritytiindicators)
-- [Security Actions schema](https://aka.ms/graphsecurityaction)
-- [Secure Score schema](https://aka.ms/graphsecurescore)
+- [Overview of the Microsoft Graph Security API](./security-concept-overview.md)
+- [API reference](/graph/api/resources/security-api-overview)
+- [alert schema](/graph/api/resources/alert)
+- [tiIndicator schema](/graph/api/resources/tiindicator)
+- [Security Actions schema](/graph/api/resources/securityaction)
+- [Secure Score schema](/graph/api/resources/securescores)
 
 ### Sample code
 

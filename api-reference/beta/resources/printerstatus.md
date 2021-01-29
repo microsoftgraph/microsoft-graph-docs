@@ -37,26 +37,40 @@ Represents the processing status of the printer, including any errors.
 |Member|Value|Description|
 |:---|:---|:---|
 |paused|0| An ongoing print job was paused.|
-|disconnected|1|The connection to the printer was lost or cannot be established.|
 |mediaJam|2|Media in one or more trays is jammed.|
 |mediaNeeded|3|Media in the currently-used input tray needs to be replaced before the job can continue.|
 |mediaLow|4|Media in one or more trays is almost exhausted.|
 |mediaEmpty|5|Media in one or more trays is exhausted.|
 |coverOpen|6|One or more covers are open.|
 |interlockOpen|7|One or more interlock devices are open.|
-|queueFull|8|The printer's spooler queue is full and new jobs cannot be queued.|
 |outputTrayMissing|9|One or more output trays are missing.|
 |outputAreaFull|10|One or more output trays are full and cannot accept more media.|
 |markerSupplyLow|11|One or more marker sources (for example, ink, toner or ribbon) are low.|
 |markerSupplyEmpty|12|One or more marker sources (for example, ink, toner or ribbon) are exhausted.|
 |inputTrayMissing|13|One or more input trays are not in the device.|
-|outputAlmostFull|14|One or more output area is almost full (for example, tray, stacker, collator).|
+|outputAreaAlmostFull|14|One or more output area is almost full (for example, tray, stacker, collator).|
 |markerWasteAlmostFull|15|The device marker supply waste receptacle is almost full.|
 |markerWasteFull|16|The device marker supply waste receptacle is full.|
 |fuserOverTemp|17|The fuser temperature is above normal.|
 |fuserUnderTemp|18|The fuser temperature is below normal.|
 |other|19|Any other reason that does not fall in rest of the reasons.|
-|unknownFutureValue|20|Evolvable enumeration sentinel value. Do not use.|
+|none|20|No reasons.|
+|movingToPaused|21|Someone paused the Printer using the Pause-Printer operation.|
+|shutdown|22|Someone removed a Printer object from service, and the device may be powered down or physically removed.|
+|connectingToDevice|23|Printer is in the process of connecting to a shared network Output Device.|
+|timedOut|24|The server was unable to get a response from the output device.|
+|stopping|25|The Printer object is in the process of stopping the device.|
+|stoppedPartially|26|One or more output devices are stopped.|
+|tonerLow|27|The device is low on toner.|
+|tonerEmpty|28|The device is out of toner.|
+|spoolAreaFull|29|The limit of persistent storage allocated for spooling has been reached.|
+|doorOpen|30|One or more doors on the device are open.|
+|opticalPhotoConductorNearEndOfLife|31|The optical photo conductor is near end of life.|
+|opticalPhotoConductorLifeOver|32|The optical photo conductor is no longer functioning.|
+|developerLow|33|The device is low on developer.|
+|developerEmpty|34|The device is out of developer.|
+|interpreterResourceUnavailable|35|An interpreter resource is unavailable (e.g. font, form).|
+|unknownFutureValue|36|Evolvable enumeration sentinel value. Do not use.|
 
 ## JSON representation
 

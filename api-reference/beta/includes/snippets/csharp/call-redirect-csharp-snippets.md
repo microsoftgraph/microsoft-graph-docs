@@ -12,10 +12,9 @@ var targets = new List<InvitationParticipantInfo>()
 	{
 		Identity = new IdentitySet
 		{
-			Application = new Identity
+			AdditionalData = new Dictionary<string, object>()
 			{
-				DisplayName = "test bot 2",
-				Id = "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
+				{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
 			}
 		}
 	}

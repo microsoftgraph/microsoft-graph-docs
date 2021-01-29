@@ -3,7 +3,7 @@ title: Get printer
 description: Retrieve the properties and relationships of a printer object.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -24,7 +24,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| Not Supported. |
+|Application| Printer.Read.All, Printer.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,8 +34,12 @@ GET /print/shares/{id}/printer
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters including $select, $expand to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+e.g. 
+```http
+GET /print/printers/{id}?$select=id,displayName,capabilities
+```
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
@@ -44,9 +48,11 @@ This method supports some of the OData query parameters to help customize the re
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [printer](../resources/printer.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [printer](../resources/printer.md) object in the response body.
+By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
+
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -69,9 +75,13 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
@@ -135,6 +145,72 @@ Content-length: 1313
 }
 ```
 
+The following is an example of the response, when using $select=id,displayName,capabilities
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printer"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1313
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
+  "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+  "displayName": "PrinterName",
+  "capabilities": {
+    "isColorPrintingSupported": true,
+    "supportsFitPdfToPage": false,
+    "contentTypes": [
+      "application/pdf",
+      "image/pwg-raster",
+      "application/PCLm"
+    ],
+    "isPageRangeSupported": false,
+    "qualities": [
+      "medium"
+    ],
+    "dpis": [
+      600
+    ],
+    "duplexModes": [
+      "oneSided",
+      "flipOnLongEdge",
+      "flipOnShortEdge"
+    ],
+    "finishings": [
+      "none"
+    ],
+    "mediaTypes": [
+      "stationery"
+    ],
+    "mediaSizes": [
+      "North America Letter"
+    ],
+    "outputBins": [
+      "tray-1"
+    ],
+    "colorModes": [
+      "grayscale",
+      "color"
+    ],
+    "inputBins": [
+      "tray-1"
+    ],
+    "collation": true,
+    "scalings": [
+      "fill"
+    ],
+    "copiesPerJob": {
+      "start": 1,
+      "end": 38
+    }
+  }
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

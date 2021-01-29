@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors
+# Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors (preview) 
 
 Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](/microsoftsearch/connectors-overview). The content is imported either via [built-in connectors](/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
 
@@ -27,6 +27,8 @@ TODOSEARCHAPI - Bug 1653398
 - The **entityTypes** property as `externalItem`.
 
 - The **fields** property to include the fields in the external item to retrieve. Note that if you do not include any **fields** in the request, the response will contain all the fields marked as *retrievable* in the data schema specified for the specified connections in the **contentSources** property.
+
+In addition, you can aggregate search results based on properties in an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) that are numeric or string type, and that are set to be refinable in the [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). For more information, see [Refine search results using aggregations](search-concept-aggregation.md).
 
 ## Example
 

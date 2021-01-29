@@ -19,7 +19,7 @@ Represents a collection of allowed resource actions and the conditions that must
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|allowedResourceActions|String collection| Set of tasks that can be perfomed on a resource. |
+|allowedResourceActions|String collection| Set of tasks that can be performed on a resource. |
 |condition|String| Optional constraints that must be met for the permission to be effective. |
 
 ### allowedResourceActions property
@@ -48,8 +48,8 @@ For example: `microsoft.directory/applications/credentials/update`.
 ### condition property
 Conditions define constraints that must be met. For example, a requirement that the principal be an "owner" of the target. The following are the supported conditions:
 
-- Self: "@Subject.objectId == @Resource.objectId"
-- Owner: "@Subject.objectId Any_of @Resource.owners"
+- Self: "$ResourceIsSelf"
+- Owner: "$SubjectIsOwner"
 
 The following is an example of a role permission with a condition.
 
@@ -60,7 +60,7 @@ The following is an example of a role permission with a condition.
                 "microsoft.directory/applications/basic/update",
                 "microsoft.directory/applications/credentials/update"
             ],
-            "condition":  "@Subject.objectId Any_of @Resource.owners"
+            "condition":  "$SubjectIsOwner"
         }
     ]
 

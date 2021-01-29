@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRangeFormat workbookRangeFormat = new WorkbookRangeFormat();
-workbookRangeFormat.columnWidth = 135;
+workbookRangeFormat.columnWidth = 135d;
 workbookRangeFormat.verticalAlignment = "Top";
-workbookRangeFormat.rowHeight = 49;
+workbookRangeFormat.rowHeight = 49d;
 workbookRangeFormat.wrapText = false;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")

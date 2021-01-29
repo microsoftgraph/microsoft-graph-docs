@@ -3,7 +3,7 @@ title: printer resource type
 description: Represents a physical printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 
@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Represents a printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
 
+This resource supports:
+* [Subscribing to change notifications](/graph/universal-print-webhook-notifications).
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -23,7 +26,7 @@ Represents a printer device that has been registered with the Universal Print se
 | [Get](../api/printer-get.md) | [printer](printer.md) | Read the properties and relationships of the printer object. |
 | [Update](../api/printer-update.md) | [printer](printer.md) | Update the printer object. |
 | [Delete](../api/printer-delete.md) | None | Unregister the physical printer from the Universal Print service. |
-| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | None | Restore a printer's defaults settings to factory defaults. |
+| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | None | Restore a printer's default settings to the values specified by the manufacturer. |
 | [List jobs](../api/printer-list-jobs.md) | [printJob](printjob.md) collection | Get a list of print jobs that are queued for processing by the printer. |
 | [Create job](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job for the printer. To start printing the job, use [start](../api/printjob-start.md). |
 | [List connectors](../api/printer-list-connectors.md) | [printConnector](printconnector.md) collection | Get a list of connectors that this printer is associated with. |
@@ -36,14 +39,16 @@ Represents a printer device that has been registered with the Universal Print se
 |:-------------|:------------|:------------|
 |id|String|The document's identifier. Read-only.|
 |displayName|String|The name of the printer.|
-|manufacturer|String|The manufacturer reported by the printer. Read-only.|
-|model|String|The model name reported by the printer. Read-only.|
+|manufacturer|String|The manufacturer reported by the printer.|
+|model|String|The model name reported by the printer.|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the printer was registered. Read-only.|
-|status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors. Read-only.|
+|status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors.|
 |isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
+|hasPhysicalDevice|Boolean|True if the printer has a physical device for printing. Read-only.|
 |isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer.|
 |defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings.|
+|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share.|
 
 ## Relationships
 | Relationship | Type        | Description |
@@ -70,16 +75,17 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
+  "displayName": "String",
   "manufacturer": "String",
   "model": "String",
   "isShared": true,
   "registeredDateTime": "String (timestamp)",
-  "acceptingJobs": true,
-  "registeredBy": {"@odata.type": "microsoft.graph.printUserIdentity"},
+  "isAcceptingJobs": true,
+  "hasPhysicalDevice": true,
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
-  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"}
+  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
+  "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"}
 }
 ```
 

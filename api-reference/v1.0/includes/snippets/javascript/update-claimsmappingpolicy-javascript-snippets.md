@@ -15,8 +15,7 @@ const claimsMappingPolicy = {
     "definition-value"
   ],
   displayName: "displayName-value",
-  isOrganizationDefault: true,
-  type: "type-value"
+  isOrganizationDefault: true
 };
 
 let res = await client.api('/policies/claimsMappingPolicies/{id}')

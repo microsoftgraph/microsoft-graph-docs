@@ -46,6 +46,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Who can request this access package from this policy.|
+|questions|[accessPackageQuestion](accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
 
 
 ## Relationships
@@ -70,26 +71,42 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-    "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
-    "displayName": "All Users",
-    "description": "All users can request for access to the directory.",
+    "id": "string",
+    "accessPackageId": "string",
+    "displayName": "string",
+    "description": "string",
     "isDenyPolicy": false,
     "canExtend": false,
     "durationInDays": 365,
-    "requestorSettings" : {
-      "scopeType": "AllExistingDirectorySubjects",
-      "acceptRequests": true,
-      "allowedRequestors": []
+    "requestorSettings": {
+        "scopeType": "string",
+        "acceptRequests": true,
+        "allowedRequestors": [{
+            "@odata.type": "#microsoft.graph.userSet"
+        }]
     },
-    "requestApprovalSettings" : {
-      "isApprovalRequired": false,
-      "isApprovalRequiredForExtension": false,
-      "isRequestorJustificationRequired": false,
-      "approvalMode": "NoApproval",
-      "approvalStages": []
+    "requestApprovalSettings": {
+        "isApprovalRequired": false,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": false,
+        "approvalMode": "string",
+        "approvalStages": [{
+            "approvalStageTimeOutInDays": 14,
+            "isApproverJustificationRequired": true,
+            "isEscalationEnabled": true,
+            "escalationTimeInMinutes": 11520,
+            "primaryApprovers": [{
+                "@odata.type": "#microsoft.graph.userSet"
+            }],
+            "escalationApprovers": [{
+                "@odata.type": "#microsoft.graph.userSet"
+            }]
+        }]
     },
-    "accessReviewSettings" : null
+    "accessReviewSettings": null,
+    "questions": [{
+        "@odata.type": "#microsoft.graph.question"
+    }]
 }
 ```
 
@@ -102,5 +119,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

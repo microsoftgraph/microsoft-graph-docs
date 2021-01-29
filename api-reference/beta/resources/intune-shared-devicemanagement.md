@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The deviceManagement resource represents a container whose contents vary according to workflow, including:
+The deviceManagement resource represents a container whose contents vary according to workflow, including:  
 
 - Android for Work settings
 - Auditing events
-- Corporate terms and conditions
+- Corporate terms and conditions 
 - Corporate enrollment profiles
 - Device configuration settings
 - Device intent settings
@@ -94,6 +94,10 @@ The deviceManagement resource represents a container whose contents vary accordi
 |auditEvents|[auditEvent](../resources/intune-auditing-auditevent.md) collection|The Audit Events|
 |**Company terms**|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) collection|The terms and conditions associated with device management of the company.|
+|**Configuration Policies**|
+|configurationPolicies|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-deviceManagementConfigurationPolicy.md) collection|List of all Configuration policies|
+|configurationSettings|[deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-deviceManagementConfigurationSettingDefinition.md) collection|List of all ConfigurationSettings|
+|configurationCategories|[deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-deviceManagementConfigurationCategory.md) collection|List of all Configuration Categories|
 |**Corporate enrollment**|
 |enrollmentProfiles|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) collection|The enrollment profiles.|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) collection|The imported Apple device identities.|
@@ -151,6 +155,9 @@ The deviceManagement resource represents a container whose contents vary accordi
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) collection|The management condition statements associated with device management of the company.|
 |**Group Policy Analytics**|
 |groupPolicyMigrationReports|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) collection|A list of Group Policy migration reports.|
+|**MicrosoftTunnel**|
+|microsoftTunnelConfigurations|[microsoftTunnelConfiguration](../resources/intune-mstunnel-microsoftTunnelConfiguration.md) collection|Collection of MicrosoftTunnelConfiguration settings associated with account.|
+|microsoftTunnelSites|[microsoftTunnelSite](../resources/intune-mstunnel-microsoftTunnelSite.md) collection|Collection of MicrosoftTunnelSite settings associated with account.|
 |**Notifications**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) collection|The Notification Message Templates.|
 |**Onboarding**|
@@ -180,7 +187,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |roleDefinitions|[roleDefinition](../resources/intune-rbac-roledefinition.md) collection|The Role Definitions.|
 |roleScopeTags|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection|The Role Scope Tags.|
 |**Reporting**|
-|reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Reports singleton|
+|reports|[deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)|Reports singleton|
 |**Software Update**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) collection|A collection of windows feature update profiles|
 |**Telecom expense management (TEM)**|
@@ -208,7 +215,6 @@ Here is a JSON representation of the resource.
   "subscriptionState": "String"
 }
 ```
-
 
 
 

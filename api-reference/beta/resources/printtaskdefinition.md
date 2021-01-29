@@ -3,7 +3,7 @@ title: printTaskDefinition resource type
 description: Represents a task that can be triggered when various events occur within Universal Print.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 
@@ -16,6 +16,9 @@ Namespace: microsoft.graph
 Represents an abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+
+This resource supports:
+* [Subscribing to change notifications](/graph/universal-print-webhook-notifications).
 
 ## Methods
 

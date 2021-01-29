@@ -45,7 +45,7 @@ var printJob = new PrintJob
 	}
 };
 
-await graphClient.Print.Shares["{id}"].Jobs
+await graphClient.Print.Printers["{id}"].Jobs
 	.Request()
 	.AddAsync(printJob);
 

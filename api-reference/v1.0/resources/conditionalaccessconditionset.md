@@ -22,7 +22,8 @@ Represents the type of conditions that govern when the policy applies.
 |clientAppTypes|String collection| Client application types included in the policy. Possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy. |
 |platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy. |
-|signInRiskLevels|String collection| Risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
+|signInRiskLevels|String collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
+|userRiskLevels|String collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`.|
 
 ## Relationships
 
@@ -38,7 +39,8 @@ The following is a JSON representation of the resource.
     "clientAppTypes",
     "locations",
     "platforms",
-    "signInRiskLevels"
+    "signInRiskLevels",
+    "userRiskLevels"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessConditionSet",
   "baseType": null
@@ -51,7 +53,8 @@ The following is a JSON representation of the resource.
   "clientAppTypes": ["String"],
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
-  "signInRiskLevels": ["String"]
+  "signInRiskLevels": ["String"],
+  "userRiskLevels": ["String"]
 }
 ```
 

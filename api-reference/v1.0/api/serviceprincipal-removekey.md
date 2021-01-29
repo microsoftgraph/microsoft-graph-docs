@@ -35,7 +35,7 @@ As part of the request validation for this method, a proof of possession of an e
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /serviceprincipals/{id}/removeKey
+POST /servicePrincipals/{id}/removeKey
 ```
 
 ## Request headers
@@ -74,7 +74,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals/{id}/removeKey
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/removeKey
 Content-Type: application/json
 
 {

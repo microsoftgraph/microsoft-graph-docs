@@ -68,16 +68,15 @@ If successful, this method returns a `200 OK` response code and [todoTaskList](.
 
 ## Example
 ### Request
-The following example shows how to make a single **delta** function call, and limit the maximum number of **todoTaskList** in the response body to 2.
+The following example shows how to make an initial **delta** function call, and limit the maximum number of **todoTaskList** in the response body to 2.
 
 To track changes in the **todoTaskList**, you would make one or more **delta** function calls, with appropriate state tokens, to get the set of incremental changes since the last delta query. 
 
 The main differences between tracking **todoTaskList** and tracking **todoTask** resources in a list are in the delta query request URLs, and the query responses returning **todoTaskList** rather than **todoTask** collections.
 
-### HTTP Request
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET https://graph.microsoft.com/beta/me/todo/lists/delta?$skiptoken=l7WI41swwioT5csv4k99nvQqyku0jaGqMhc6XyFff5qQTQ7RJOr
+GET https://graph.microsoft.com/beta/me/todo/lists/delta
 Prefer: odata.maxpagesize=2
 ```
 ### Response

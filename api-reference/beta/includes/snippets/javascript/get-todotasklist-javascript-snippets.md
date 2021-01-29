@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/todo/lists/AAMkADIyAAAAABrJAAA=')
+let res = await client.api('/me/todo/lists')
 	.version('beta')
 	.get();
 
