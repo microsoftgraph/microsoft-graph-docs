@@ -26,9 +26,9 @@ they are stored in SharePoint or OneDrive.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id            |String       | Read-only. Represents the chat message hosted content identifier.|
-|contentBytes  |Edm.Binary   | Write-only. When posting new chat message hosted content, represents the bytes of the payload. These are represented as a base64Encoded string.|
-|contentType   |String       | Write-only. When posting new chat message hosted content, represents the type of content, such as image/png.|
+|id            |String       | Represents the chat message hosted content identifier. Read-only. |
+|contentBytes  |Edm.Binary   | When posting new chat message hosted content, represents the bytes of the payload. These are represented as a base64Encoded string. Write-only. |
+|contentType   |String       | When posting new chat message hosted content, represents the type of content, such as image/png. Write-only. |
 
 ### Instance attributes
 
@@ -37,7 +37,7 @@ These properties are temporary and either define behavior the service should per
 
 | Property name                     | Type   | Description
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.temporaryId      | string | Write-only. Represents the temporaryId for the hosted content while posting a message to refer to the hosted content in **chatMessage** resource being sent.|
+| @microsoft.graph.temporaryId      | string | Represents the temporaryId for the hosted content while posting a message to refer to the hosted content in **chatMessage** resource being sent. Write-only. |
 
 ## Relationships
 
