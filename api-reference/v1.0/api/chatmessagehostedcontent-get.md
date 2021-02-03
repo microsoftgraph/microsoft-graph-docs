@@ -1,6 +1,6 @@
 ---
 title: "Get chatMessageHostedContent"
-description: "Retrieve the properties and relationships of chatMessageHostedContent object."
+description: "Retrieve the properties and relationships of a chatMessageHostedContent object."
 localization_priority: Normal
 author: "clearab"
 ms.prod: "microsoft-teams"
@@ -44,7 +44,7 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {code}. Required. |
 
 ## Request body
 
