@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/host
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hostedcontents-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/csharp/get-hostedcontents-csharp-snippets.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-hostedcontents-javascript-snippets.md)]
