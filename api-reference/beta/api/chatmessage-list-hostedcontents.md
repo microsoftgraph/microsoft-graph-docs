@@ -1,5 +1,5 @@
 ---
-title: "List chatMessageHostedContents"
+title: "List hostedContents"
 description: "Retrieve the list of chatMessageHostedContent objects from a message."
 localization_priority: Normal
 author: "clearab"
@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message.
 
 ## Permissions
@@ -19,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| For **channel** resource: ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
+|Delegated (work or school account)| For **user** or **chat** resource: Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource: ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| For **channel** resource: ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application| For **user** or **chat** resource: Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource: ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -33,6 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
+GET /chats/{id}/messages/{id}/hostedContents
+GET /users/{id}/chats/{id}/messages/{id}/hostedContents
 GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 ```
 
@@ -67,11 +71,11 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/hostedContents
+GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hostedcontents-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/csharp/get-hostedcontents-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-hostedcontents-javascript-snippets.md)]
