@@ -21,7 +21,7 @@ they are stored in SharePoint or OneDrive.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List chatMessageHostedContent](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Retrieve the list of **chatMessageHostedContent** for a message. |
+| [List chatMessageHostedContent](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Retrieve the list of **chatMessageHostedContent** for a message. |
 | [Get chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Read the properties and relationships of a **chatMessageHostedContent** object. |
 
 ## Properties
