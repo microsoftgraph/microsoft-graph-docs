@@ -1997,6 +1997,14 @@ The following usages are valid for both delegated permissions:
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Agreement.Read.All_ | Read all terms of use agreements | Allows the app to read terms of use agreements, without a signed in user. | Yes | No |
+| _Agreement.ReadWrite.All_ | Read and write all terms of use agreements | Allows the app to read and write terms of use agreements, without a signed in user. | Yes | No |
+| _AgreementAcceptance.Read.All_ | Read all terms of use acceptance statuses | Allows the app to read terms of use acceptance statuses, without a signed in user. | Yes | No |
+
 ---
 
 ## Teams app installation permissions ([private preview](#permissions-availability-status))
