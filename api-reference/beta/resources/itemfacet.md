@@ -26,6 +26,7 @@ Represents the abstract base type that all resource types in the [profile](profi
 |inference             |[inferenceData](inferencedata.md)| Contains inference detail if the entity is inferred.                                                                                                                                           |
 |lastModifiedBy        |[identitySet](identityset.md)    | Identifier of the partner or user who last modified the entity.                                                                                                                                |
 |lastModifiedDateTime  |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|isSearchable  |boolean                   |Denotes that the entity has been marked as searchable by the Tenant Administrator or end-user. |
 
 ## Relationships
 
