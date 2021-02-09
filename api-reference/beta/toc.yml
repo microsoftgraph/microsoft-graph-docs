@@ -12818,7 +12818,7 @@ items:
         - name: Get all chat messages
           href: api/chats-getallmessages.md  
         - name: List hosted content
-          href: api/chatmessage-list-chatmessagehostedcontents.md
+          href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: App catalog
