@@ -5,24 +5,24 @@
         {
           "Id": "5aa19517-d47a-4b98-add1-abf6087b6d8c",
           "ApiChange": "method",
-          "ChangedApiName": "List hostedContents",
+          "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
           "Description": "Added the [List hostedContents](https://docs.microsoft.com/en-us/graph/api/chatmessage-list-hostedcontents?view=graph-rest-v1.0) method.",
-          "Target": "Chat message"
+          "Target": "chatMessage"
         },
         {
           "Id": "5aa19517-d47a-4b98-add1-abf6087b6d8c",
           "ApiChange": "method",
-          "ChangedApiName": "Get hostedContents",
+          "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
           "Description": "Added the [Get hostedContents](https://docs.microsoft.com/en-us/graph/api/chatmessage-get-hostedcontents?view=graph-rest-v1.0) method.",
-          "Target": "Chat message"
+          "Target": "chatMessage"
         }
       ],
       "Id": "5aa19517-d47a-4b98-add1-abf6087b6d8c",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-02-04T08:46:49.407Z",
+      "CreatedDateTime": "2021-02-08T08:46:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
